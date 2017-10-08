@@ -1,46 +1,41 @@
-if pfUI then return end
+-- Initialize pfUI core table for non-pfUI environments
+if not pfUI then
+  pfUI = {
+    ["api"] = {},
+    ["cache"] = {},
+    ["backdrop"] = {
+      bgFile = "Interface\\AddOns\\pfQuest\\compat\\col", tile = true, tileSize = 8,
+      edgeFile = "Interface\\AddOns\\pfQuest\\compat\\border", edgeSize = 8,
+      insets = {left = -1, right = -1, top = -1, bottom = -1},
+    },
+    ["backdrop_small"] = {
+      bgFile = "Interface\\AddOns\\pfQuest\\compat\\col", tile = true, tileSize = 8,
+      insets = {left = -1, right = -1, top = -1, bottom = -1},
+    },
+    ["font_default"] = "Fonts\\ARIALN.TTF",
+   }
 
--- initialize pfUI core table
-pfUI = {
-  ["api"] = {},
-  ["cache"] = {},
-  ["backdrop"] = {
-    bgFile = "Interface\\AddOns\\pfQuest\\compat\\col", tile = true, tileSize = 8,
-    edgeFile = "Interface\\AddOns\\pfQuest\\compat\\border", edgeSize = 8,
-    insets = {left = -1, right = -1, top = -1, bottom = -1},
-  },
-  ["backdrop_small"] = {
-    bgFile = "Interface\\AddOns\\pfQuest\\compat\\col", tile = true, tileSize = 8,
-    insets = {left = -1, right = -1, top = -1, bottom = -1},
-  },
-  ["font_default"] = "Fonts\\ARIALN.TTF",
- }
-
-pfUI_config = {
-  ["appearance"] = {
-    ["border"] = {
-      ["background"] = "0,0,0,1",
-      ["color"] = "0.3,0.3,0.3,1",
-      ["default"] = "3",
+  pfUI_config = {
+    ["appearance"] = {
+      ["border"] = {
+        ["background"] = "0,0,0,1",
+        ["color"] = "0.3,0.3,0.3,1",
+        ["default"] = "3",
+      }
+    },
+    ["global"] = {
+      ["font_size"] = 12
     }
-  },
-  ["global"] = {
-    ["font_size"] = 12
   }
-}
+end
 
---[[
-
-  api.lua:
-    - strsplit
-    - CreateBackdrop
-    - SkinButton
-
-  ui-widgets.lua:
-    - CreateScrollFrame
-    - CreateScrollChild
-
-]]
+-- Add API support non-pfUI environments and for old pfUI versions:
+-- strsplit, CreateBackdrop, SkinButton, CreateScrollFrame, CreateScrollChild
+if pfUI.api and pfUI.api.strsplit and pfUI.api.CreateBackdrop and
+   pfUI.api.SkinButton and pfUI.api.CreateScrollFrame and
+   pfUI.api.CreateScrollChild then
+     return
+end
 
 function pfUI.api.strsplit(delimiter, subject)
   local delimiter, fields = delimiter or ":", {}
