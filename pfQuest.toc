@@ -1,0 +1,69 @@
+## Interface: 11200
+## Title: |cff33ffccpf|cffffffffQuest
+## Author: Shagu
+## Notes: A lightweight Questhelper and Database
+## Version: NORELEASE
+## OptionalDeps: pfUI
+## SavedVariablesPerCharacter: pfQuest_config, pfDatabase_fav
+
+# database index
+db\init.lua
+
+# database enUS
+db\enUS\items.lua
+db\enUS\quests.lua
+db\enUS\spawns.lua
+db\enUS\vendors.lua
+db\enUS\zones.lua
+
+# database koKR
+db\koKR\items.lua
+db\koKR\quests.lua
+db\koKR\spawns.lua
+db\koKR\vendors.lua
+db\koKR\zones.lua
+
+# database frFR
+db\frFR\items.lua
+db\frFR\quests.lua
+db\frFR\spawns.lua
+db\frFR\vendors.lua
+db\frFR\zones.lua
+
+# database deDE
+db\deDE\items.lua
+db\deDE\quests.lua
+db\deDE\spawns.lua
+db\deDE\vendors.lua
+db\deDE\zones.lua
+
+# database zhCN
+db\zhCN\items.lua
+db\zhCN\quests.lua
+db\zhCN\spawns.lua
+db\zhCN\vendors.lua
+db\zhCN\zones.lua
+
+# database esES
+db\esES\items.lua
+db\esES\quests.lua
+db\esES\spawns.lua
+db\esES\vendors.lua
+db\esES\zones.lua
+
+# database ruRU
+db\ruRU\items.lua
+db\ruRU\quests.lua
+db\ruRU\spawns.lua
+db\ruRU\vendors.lua
+db\ruRU\zones.lua
+
+# core api
+compat\pfUI.lua
+
+# main
+pfDatabase.lua
+pfMap.lua
+pfMiniMap.lua
+pfQuest.lua
+pfBrowser.lua
