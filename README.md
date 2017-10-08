@@ -5,7 +5,7 @@ This is an addon for World of Warcraft Classic (1.12). It helps players to find 
 
 The addon is not designed to be a quest- or tourguide and won't ever going to be like that. Instead the goals are more like an ingame version of [AoWoW](http://db.vanillagaming.org/) or [Wowhead](http://www.wowhead.com/). By default it uses the opensource database provided by the [Elysium Project](https://elysium-project.org).
 
-pfQuest is the successor of [ShaguQuest](http://shagu.org/shaguquest/) and has been entirely written from scratch. In comparison to [ShaguQuest](http://shagu.org/shaguquest/), this addon does not depend on any specific map- or questlog addon. It's designed to support the default interface aswell as every other addon. In case you experience any addon conflicts, please add an issue to the bugtracker.
+pfQuest is the successor of [ShaguQuest](http://shagu.org/archive/) and has been entirely written from scratch. In comparison to [ShaguQuest](http://shagu.org/archive/), this addon does not depend on any specific map- or questlog addon. It's designed to support the default interface aswell as every other addon. In case you experience any addon conflicts, please add an issue to the bugtracker.
 
 # Downloads
 The release page provides downloads for several gameclients. Every build includes a specifically crafted database to match the gameclient. Using the `master`-zip instead, would include **all** languages, which cost more than 100MB of language-data and will dramatically increase your loading screen times. Please select only **one** language.
@@ -48,7 +48,7 @@ The database GUI allows you to bookmark and browse through all entries within th
 # Questlog Integration
 <img src="http://shagu.org/pfQuest/img/questlog-integration.png" align="left" width="300">
 
-shift-click on a selected quest will add a questlink into chat. Those links are similar to the known questlinks from TBC+ and are compatible to ones produced by [ShaguQuest](http://shagu.org/shaguquest/), [Questie](https://github.com/AeroScripts/QuestieDev) and [QuestLink](http://addons.us.to/addon/questlink-0). Additionally a manual quest tracking is available by 3 buttons that show up on every quest in your questlog.
+shift-click on a selected quest will add a questlink into chat. Those links are similar to the known questlinks from TBC+ and are compatible to ones produced by [ShaguQuest](http://shagu.org/archive/), [Questie](https://github.com/AeroScripts/QuestieDev) and [QuestLink](http://addons.us.to/addon/questlink-0). Additionally a manual quest tracking is available by 3 buttons that show up on every quest in your questlog.
 
 ### Show
 The "Show" button will add the questobjectives of the current quest to the map.
