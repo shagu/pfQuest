@@ -66,4 +66,5 @@ pfDatabase.lua
 pfMap.lua
 pfMiniMap.lua
 pfQuest.lua
+pfQuestConfig.lua
 pfBrowser.lua

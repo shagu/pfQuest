@@ -1,7 +1,26 @@
 -- default config
-pfQuest_config = {
+pfQuest_defconfig = {
   ["trackingmethod"] = 3,
+  ["allquestgivers"] = "0",
+  ["currentquestgivers"] = "1",
+  ["minimapnodes"] = "1",
+  ["questlogbuttons"] = "1",
+  ["worldmapmenu"] = "1",
+  ["worldmaptransp"] = "1.0",
+  ["minimaptransp"] = "1.0",
 }
+
+local function LoadConfig()
+  if not pfQuest_config then pfQuest_config = {} end
+
+  for key, val in pairs(pfQuest_defconfig) do
+    if not pfQuest_config[key] then
+      pfQuest_config[key] = val
+    end
+  end
+end
+
+LoadConfig()
 
 local questParse = {
   ["deDE"] = {
@@ -144,8 +163,17 @@ end
 pfQuest = CreateFrame("Frame")
 pfQuest:RegisterEvent("QUEST_LOG_UPDATE")
 pfQuest:RegisterEvent("QUEST_WATCH_UPDATE")
+pfQuest:RegisterEvent("ADDON_LOADED")
 
 pfQuest:SetScript("OnEvent", function()
+  if event == "ADDON_LOADED" then
+    if arg1 == "pfQuest" then
+      LoadConfig()
+    else
+      return
+    end
+  end
+
   if event == "QUEST_LOG_UPDATE" or "QUEST_FINISHED" then
     this:Show()
   elseif event == "QUEST_WATCH_UPDATE" then
