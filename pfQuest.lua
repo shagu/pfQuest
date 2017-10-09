@@ -1,6 +1,6 @@
 -- default config
 pfQuest_config = {
-  ["trackingmethod"] = 1,
+  ["trackingmethod"] = 3,
 }
 
 local questParse = {
