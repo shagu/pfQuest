@@ -385,10 +385,27 @@ pfBrowserIcon:SetClampedToScreen(true)
 pfBrowserIcon:SetMovable(true)
 pfBrowserIcon:EnableMouse(true)
 pfBrowserIcon:RegisterForDrag('LeftButton')
+pfBrowserIcon:RegisterForClicks('LeftButtonUp', 'RightButtonUp')
 pfBrowserIcon:SetScript("OnDragStart", function() this:StartMoving() end)
 pfBrowserIcon:SetScript("OnDragStop", function() this:StopMovingOrSizing() end)
 pfBrowserIcon:SetScript("OnClick", function()
-  if pfBrowser:IsShown() then pfBrowser:Hide() else pfBrowser:Show() end
+  if arg1 == "RightButton" then
+    if pfQuestConfig:IsShown() then pfQuestConfig:Hide() else pfQuestConfig:Show() end
+  else
+    if pfBrowser:IsShown() then pfBrowser:Hide() else pfBrowser:Show() end
+  end
+end)
+
+pfBrowserIcon:SetScript("OnEnter", function()
+  GameTooltip:SetOwner(this, ANCHOR_BOTTOMLEFT)
+  GameTooltip:SetText("pfQuest")
+  GameTooltip:AddDoubleLine("Left-Click", "Open Browser", 1, 1, 1, 1, 1, 1)
+  GameTooltip:AddDoubleLine("Right-Click", "Open Configuration", 1, 1, 1, 1, 1, 1)
+  GameTooltip:Show()
+end)
+
+pfBrowserIcon:SetScript("OnLeave", function()
+  GameTooltip:Hide()
 end)
 
 pfBrowserIcon:SetFrameStrata('LOW')

@@ -2,13 +2,15 @@
 pfQuest_defconfig = {
   ["trackingmethod"] = 3,
   ["allquestgivers"] = "0",
-  ["currentquestgivers"] = "1",
-  ["minimapnodes"] = "1",
-  ["questlogbuttons"] = "1",
-  ["worldmapmenu"] = "1",
+  ["currentquestgivers"] = "1", -- show quest givers for active quests
+  ["minimapnodes"] = "1", -- hide all minimap entries
+  ["questlogbuttons"] = "1", -- shows buttons inside the questlog
+  ["worldmapmenu"] = "1", -- shows the dropdown selection in worldmap
   ["worldmaptransp"] = "1.0",
   ["minimaptransp"] = "1.0",
 }
+
+pfQuest_config = {}
 
 local function LoadConfig()
   if not pfQuest_config then pfQuest_config = {} end
@@ -40,6 +42,132 @@ local questCache = {}
 local locale = GetLocale()
 if not questParse[locale] then
   locale = "enUS"
+end
+
+local function AddQuestLogIntegration()
+  if pfQuest_config["questlogbuttons"] ==  "0" then return end
+
+  local dockFrame = EQL3_QuestLogDetailScrollChildFrame or ShaguQuest_QuestLogDetailScrollChildFrame or QuestLogDetailScrollChildFrame
+  local dockTitle = EQL3_QuestLogDescriptionTitle or ShaguQuest_QuestLogDescriptionTitle or QuestLogDescriptionTitle
+
+  dockTitle:SetHeight(dockTitle:GetHeight() + 30)
+  dockTitle:SetJustifyV("BOTTOM")
+
+  pfQuest.buttonShow = pfQuest.buttonShow or CreateFrame("Button", "pfQuestShow", dockFrame, "UIPanelButtonTemplate")
+  pfQuest.buttonShow:SetWidth(90)
+  pfQuest.buttonShow:SetHeight(23)
+  pfQuest.buttonShow:SetText("Show")
+  pfQuest.buttonShow:SetPoint("TOP", dockTitle, "TOP", -95, 0)
+  pfQuest.buttonShow:SetScript("OnClick", function()
+    local map = UpdateQuestLogID(GetQuestLogSelection(), "ADD")
+    pfMap:ShowMapID(map)
+  end)
+
+  pfQuest.buttonClean = pfQuest.buttonClean or CreateFrame("Button", "pfQuestClean", dockFrame, "UIPanelButtonTemplate")
+  pfQuest.buttonClean:SetWidth(90)
+  pfQuest.buttonClean:SetHeight(23)
+  pfQuest.buttonClean:SetText("Clean")
+  pfQuest.buttonClean:SetPoint("TOP", dockTitle, "TOP", 0, 0)
+  pfQuest.buttonClean:SetScript("OnClick", function()
+    pfMap:DeleteNode("PFQUEST")
+    pfMap:UpdateNodes()
+  end)
+
+  pfQuest.buttonReset = pfQuest.buttonReset or CreateFrame("Button", "pfQuestHide", dockFrame, "UIPanelButtonTemplate")
+  pfQuest.buttonReset:SetWidth(90)
+  pfQuest.buttonReset:SetHeight(23)
+  pfQuest.buttonReset:SetText("Reset")
+  pfQuest.buttonReset:SetPoint("TOP", dockTitle, "TOP", 95, 0)
+  pfQuest.buttonReset:SetScript("OnClick", function()
+    pfMap:DeleteNode("PFQUEST")
+    pfMap:UpdateNodes()
+
+    questCache = {}
+    pfQuest:Show()
+  end)
+end
+
+local function AddWorldMapIntegration()
+  if pfQuest_config["worldmapmenu"] ==  "0" then return end
+
+  -- Quest Update Indicator
+  pfQuest.mapUpdate = WorldMapButton:CreateFontString("Status", "OVERLAY", "GameFontNormalSmall")
+  pfQuest.mapUpdate:SetPoint("BOTTOMLEFT", 10, 10)
+  pfQuest.mapUpdate:SetJustifyH("LEFT")
+  pfQuest.mapUpdate:SetJustifyV("BOTTOM")
+
+  pfQuest.mapUpdate:SetWidth(150)
+  pfQuest.mapUpdate:SetHeight(15)
+  pfQuest.mapUpdate:SetFontObject(GameFontWhite)
+  pfQuest.mapUpdate:Show()
+
+  -- Quest Display Selection
+  pfQuest.mapButton = CreateFrame("Frame", "pfQuestMapDropdown", WorldMapButton, "UIDropDownMenuTemplate")
+  pfQuest.mapButton:ClearAllPoints()
+  pfQuest.mapButton:SetPoint("TOPRIGHT" , 0, -10)
+  pfQuest.mapButton:SetScript("OnShow", function()
+    pfQuest.mapButton.current = tonumber(pfQuest_config["trackingmethod"])
+    pfQuest.mapButton:UpdateMenu()
+  end)
+
+  pfQuest.mapButton.point = "TOPLEFT"
+  pfQuest.mapButton.relativePoint = "BOTTOMLEFT"
+
+  function pfQuest.mapButton:UpdateMenu()
+    local function CreateEntries()
+      local info = {}
+      info.text = "All Quests"
+      info.checked = false
+      info.func = function()
+        UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
+        pfQuest_config["trackingmethod"] = this:GetID()
+
+        -- rescan
+        questCache = {}
+        pfQuest:Show()
+      end
+      UIDropDownMenu_AddButton(info)
+
+      local info = {}
+      info.text = "Tracked Quests"
+      info.checked = false
+      info.func = function()
+        UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
+        pfQuest_config["trackingmethod"] = this:GetID()
+        questCache = {}
+        pfQuest:Show()
+      end
+      UIDropDownMenu_AddButton(info)
+
+      local info = {}
+      info.text = "Manual Selection"
+      info.checked = false
+      info.func = function()
+        UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
+        pfQuest_config["trackingmethod"] = this:GetID()
+        questCache = {}
+        pfQuest:Show()
+      end
+      UIDropDownMenu_AddButton(info)
+
+      local info = {}
+      info.text = "Hide Quests"
+      info.checked = false
+      info.func = function()
+        UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
+        pfQuest_config["trackingmethod"] = this:GetID()
+        pfMap:DeleteNode("PFQUEST")
+        pfMap:UpdateNodes()
+      end
+      UIDropDownMenu_AddButton(info)
+    end
+
+    UIDropDownMenu_Initialize(pfQuest.mapButton, CreateEntries)
+    UIDropDownMenu_SetWidth(120, pfQuest.mapButton)
+    UIDropDownMenu_SetButtonWidth(125, pfQuest.mapButton)
+    UIDropDownMenu_JustifyText("RIGHT", pfQuest.mapButton)
+    UIDropDownMenu_SetSelectedID(pfQuest.mapButton, pfQuest.mapButton.current)
+  end
 end
 
 local function NeedQuestUpdate(questIndex)
@@ -126,8 +254,10 @@ local function UpdateQuestLogID(questIndex, action)
   end
 
   -- show quest givers
-  zone, score = pfDatabase:SearchQuest(title, meta)
-  if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+  if pfQuest_config["currentquestgivers"] ==  "1" then
+    zone, score = pfDatabase:SearchQuest(title, meta)
+    if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+  end
 
   -- calculate best map results
   local bestmap, bestscore = nil, 0
@@ -169,6 +299,8 @@ pfQuest:SetScript("OnEvent", function()
   if event == "ADDON_LOADED" then
     if arg1 == "pfQuest" then
       LoadConfig()
+      AddQuestLogIntegration()
+      AddWorldMapIntegration()
     else
       return
     end
@@ -188,137 +320,29 @@ pfQuest:SetScript("OnUpdate", function()
   this.scan = this.scan and this.scan + 1 or 1
   this.smax = GetNumQuestLogEntries()
 
-  pfQuest.mapUpdate:Show()
-  this.mapUpdate:SetText("Quest Update [ " .. this.scan .. " / " .. this.smax .. " ]")
+  if pfQuest.mapUpdate then
+    pfQuest.mapUpdate:Show()
+    pfQuest.mapUpdate:SetText("Quest Update [ " .. this.scan .. " / " .. this.smax .. " ]")
+  end
 
   UpdateQuestLogID(this.scan)
 
   if this.scan >= this.smax then
+
+    if pfQuest_config["allquestgivers"] == "1" then
+      local meta = { ["allquests"] = true }
+      pfDatabase:SearchQuests(nil, meta)
+    end
+
     pfMap:UpdateNodes()
     this:Hide()
-    pfQuest.mapUpdate:Hide()
     this.scan = nil
+
+    if pfQuest.mapUpdate then
+      pfQuest.mapUpdate:Hide()
+    end
   end
 end)
-
--- add questlog buttons
-local dockFrame = EQL3_QuestLogDetailScrollChildFrame or ShaguQuest_QuestLogDetailScrollChildFrame or QuestLogDetailScrollChildFrame
-local dockTitle = EQL3_QuestLogDescriptionTitle or ShaguQuest_QuestLogDescriptionTitle or QuestLogDescriptionTitle
-
-dockTitle:SetHeight(dockTitle:GetHeight() + 30)
-dockTitle:SetJustifyV("BOTTOM")
-
-pfQuest.buttonShow = pfQuest.buttonShow or CreateFrame("Button", "pfQuestShow", dockFrame, "UIPanelButtonTemplate")
-pfQuest.buttonShow:SetWidth(90)
-pfQuest.buttonShow:SetHeight(23)
-pfQuest.buttonShow:SetText("Show")
-pfQuest.buttonShow:SetPoint("TOP", dockTitle, "TOP", -95, 0)
-pfQuest.buttonShow:SetScript("OnClick", function()
-  local map = UpdateQuestLogID(GetQuestLogSelection(), "ADD")
-  pfMap:ShowMapID(map)
-end)
-
-pfQuest.buttonClean = pfQuest.buttonClean or CreateFrame("Button", "pfQuestClean", dockFrame, "UIPanelButtonTemplate")
-pfQuest.buttonClean:SetWidth(90)
-pfQuest.buttonClean:SetHeight(23)
-pfQuest.buttonClean:SetText("Clean")
-pfQuest.buttonClean:SetPoint("TOP", dockTitle, "TOP", 0, 0)
-pfQuest.buttonClean:SetScript("OnClick", function()
-  pfMap:DeleteNode("PFQUEST")
-  pfMap:UpdateNodes()
-end)
-
-pfQuest.buttonReset = pfQuest.buttonReset or CreateFrame("Button", "pfQuestHide", dockFrame, "UIPanelButtonTemplate")
-pfQuest.buttonReset:SetWidth(90)
-pfQuest.buttonReset:SetHeight(23)
-pfQuest.buttonReset:SetText("Reset")
-pfQuest.buttonReset:SetPoint("TOP", dockTitle, "TOP", 95, 0)
-pfQuest.buttonReset:SetScript("OnClick", function()
-  pfMap:DeleteNode("PFQUEST")
-  pfMap:UpdateNodes()
-
-  questCache = {}
-  pfQuest:Show()
-end)
-
--- Quest Update Indicator
-pfQuest.mapUpdate = WorldMapButton:CreateFontString("Status", "OVERLAY", "GameFontNormalSmall")
-pfQuest.mapUpdate:SetPoint("BOTTOMLEFT", 10, 10)
-pfQuest.mapUpdate:SetJustifyH("LEFT")
-pfQuest.mapUpdate:SetJustifyV("BOTTOM")
-
-pfQuest.mapUpdate:SetWidth(150)
-pfQuest.mapUpdate:SetHeight(15)
-pfQuest.mapUpdate:SetFontObject(GameFontWhite)
-pfQuest.mapUpdate:Show()
-
--- Quest Display Selection
-pfQuest.mapButton = CreateFrame("Frame", "pfQuestMapDropdown", WorldMapButton, "UIDropDownMenuTemplate")
-pfQuest.mapButton:ClearAllPoints()
-pfQuest.mapButton:SetPoint("TOPRIGHT" , 0, -10)
-pfQuest.mapButton:SetScript("Onshow", function()
-  pfQuest.mapButton.current = tonumber(pfQuest_config["trackingmethod"])
-  pfQuest.mapButton:UpdateMenu()
-end)
-
-pfQuest.mapButton.point = "TOPLEFT"
-pfQuest.mapButton.relativePoint = "BOTTOMLEFT"
-
-function pfQuest.mapButton:UpdateMenu()
-  local function CreateEntries()
-    local info = {}
-    info.text = "All Quests"
-    info.checked = false
-    info.func = function()
-      UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
-      pfQuest_config["trackingmethod"] = this:GetID()
-
-      -- rescan
-      questCache = {}
-      pfQuest:Show()
-    end
-    UIDropDownMenu_AddButton(info)
-
-    local info = {}
-    info.text = "Tracked Quests"
-    info.checked = false
-    info.func = function()
-      UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
-      pfQuest_config["trackingmethod"] = this:GetID()
-      questCache = {}
-      pfQuest:Show()
-    end
-    UIDropDownMenu_AddButton(info)
-
-    local info = {}
-    info.text = "Manual Selection"
-    info.checked = false
-    info.func = function()
-      UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
-      pfQuest_config["trackingmethod"] = this:GetID()
-      questCache = {}
-      pfQuest:Show()
-    end
-    UIDropDownMenu_AddButton(info)
-
-    local info = {}
-    info.text = "Hide Quests"
-    info.checked = false
-    info.func = function()
-      UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
-      pfQuest_config["trackingmethod"] = this:GetID()
-      pfMap:DeleteNode("PFQUEST")
-      pfMap:UpdateNodes()
-    end
-    UIDropDownMenu_AddButton(info)
-  end
-
-  UIDropDownMenu_Initialize(pfQuest.mapButton, CreateEntries)
-  UIDropDownMenu_SetWidth(120, pfQuest.mapButton)
-  UIDropDownMenu_SetButtonWidth(125, pfQuest.mapButton)
-  UIDropDownMenu_JustifyText("RIGHT", pfQuest.mapButton)
-  UIDropDownMenu_SetSelectedID(pfQuest.mapButton, pfQuest.mapButton.current)
-end
 
 -- questlink integration
 local pfHookQuestLogTitleButton_OnClick = QuestLogTitleButton_OnClick

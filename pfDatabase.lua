@@ -21,6 +21,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
   if (input == "" or input == nil) then
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest (v" .. tostring(GetAddOnMetadata("pfQuest", "Version")) .. "):")
     DEFAULT_CHAT_FRAME:AddMessage("/db show |cffaaaaaa - show database interface")
+    DEFAULT_CHAT_FRAME:AddMessage("/db config |cffaaaaaa - show configuration interface")
     DEFAULT_CHAT_FRAME:AddMessage("/db spawn <mob|gameobject> |cffaaaaaa - search objects")
     DEFAULT_CHAT_FRAME:AddMessage("/db item <item> |cffaaaaaa - search loot")
     DEFAULT_CHAT_FRAME:AddMessage("/db vendor <item> |cffaaaaaa - vendors for item")
@@ -98,6 +99,11 @@ SlashCmdList["PFDB"] = function(input, editbox)
   if (arg1 == "show") then
     if pfBrowser then pfBrowser:Show() end
   end
+
+  -- argument: show
+  if (arg1 == "config") then
+    if pfQuestConfig then pfQuestConfig:Show() end
+  end
 end
 
 function pfDatabase:BuildTooltipInfo(meta)
@@ -160,7 +166,7 @@ function pfDatabase:SearchMob(mob, meta)
       if pfMap:IsValidMap(zone) and zone > 0 then
         maps[zone] = maps[zone] and maps[zone] + 1 or 1
         local title, description = pfDatabase:BuildTooltipInfo(meta)
-        pfMap:AddNode(meta["addon"] or "PFDB", zone, x .. "|" .. y, meta["texture"], title, description, func)
+        pfMap:AddNode(meta["addon"] or "PFDB", zone, x .. "|" .. y, meta["texture"], title, description, meta["translucent"], func)
       end
     end
 
@@ -282,13 +288,19 @@ function pfDatabase:SearchQuests(zone, meta)
 
   for title, questgivers in pairs(quests) do
     for questgiver in pairs(questgivers) do
-      if spawns[questgiver] and strfind(spawns[questgiver]["faction"], faction) and tonumber(spawns[questgiver]["zone"]) == zone then
+      if spawns[questgiver] and strfind(spawns[questgiver]["faction"], faction) then
 
         meta = meta or {}
         meta["quest"] = title
         meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
 
-        local zone, score = pfDatabase:SearchMob(questgiver, meta)
+        if meta["allquests"] then
+          meta["translucent"] = true
+        end
+
+        if tonumber(spawns[questgiver]["zone"]) == zone or meta["allquests"] then
+          local zone, score = pfDatabase:SearchMob(questgiver, meta)
+        end
       end
     end
   end

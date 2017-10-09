@@ -185,12 +185,12 @@ function pfMap:GetMapID(cid, mid)
   return pfMap:GetMapIDByName(name)
 end
 
-function pfMap:AddNode(addon, map, coords, icon, title, description, func)
+function pfMap:AddNode(addon, map, coords, icon, title, description, translucent, func)
   if not pfMap.nodes[addon] then pfMap.nodes[addon] = {} end
   if not pfMap.nodes[addon][map] then pfMap.nodes[addon][map] = {} end
 
   if not pfMap.nodes[addon][map][coords] then
-    pfMap.nodes[addon][map][coords] = { icon = icon, title = title, description = description, addon = addon, func = func}
+    pfMap.nodes[addon][map][coords] = { icon = icon, title = title, description = description, addon = addon, translucent = translucent, func = func}
   end
 end
 
@@ -277,6 +277,12 @@ function pfMap:UpdateNodes()
 
         pfMap:UpdateNode(pfMap.pins[i], node)
 
+        if node.translucent then
+          pfMap.pins[i]:SetAlpha((tonumber(pfQuest_config["worldmaptransp"]) or 1)/2)
+        else
+          pfMap.pins[i]:SetAlpha((tonumber(pfQuest_config["worldmaptransp"]) or 1))
+        end
+
         -- set position
         local _, _, x, y = strfind(coords, "(.*)|(.*)")
         x = ( x / 100 * WorldMapButton:GetWidth() ) - pfMap.pins[i]:GetWidth()/2
@@ -293,7 +299,16 @@ function pfMap:UpdateNodes()
 end
 
 function pfMap:UpdateMinimap()
-  minimap_indoor()
+  -- hide existing nodes
+  for pins, pin in pairs(pfMap.mpins) do
+    pin:Hide()
+  end
+
+  if pfQuest_config["minimapnodes"] == "0" then
+    pfMap:Hide()
+    return
+  end
+
   local xPlayer, yPlayer = GetPlayerMapPosition("player")
   local mZoom = Minimap:GetZoom()
   xPlayer, yPlayer = xPlayer * 100, yPlayer * 100
@@ -314,11 +329,6 @@ function pfMap:UpdateMinimap()
   local yRange = mapZoom / mapWidth * Minimap:GetWidth()/2 -- 16 as icon size
 
   local i = 0
-
-  -- hide existing nodes
-  for pins, pin in pairs(pfMap.mpins) do
-    pin:Hide()
-  end
 
   -- refresh all nodes
   for addon, _ in pairs(pfMap.nodes) do
@@ -348,6 +358,12 @@ function pfMap:UpdateMinimap()
           end
 
           pfMap:UpdateNode(pfMap.mpins[i], node)
+
+          if node.translucent then
+            pfMap.mpins[i]:SetAlpha((tonumber(pfQuest_config["minimaptransp"]) or 1)/2)
+          else
+            pfMap.mpins[i]:SetAlpha((tonumber(pfQuest_config["minimaptransp"]) or 1))
+          end
 
           pfMap.mpins[i]:ClearAllPoints()
           pfMap.mpins[i]:SetPoint("CENTER", Minimap, "CENTER", -xPos, yPos)
