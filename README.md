@@ -74,7 +74,4 @@ The addon features a CLI interface which allows you to easilly create macros to 
 <img src="http://shagu.org/pfQuest/img/minimap-nodes.png" width="412">
 
 # TODO
-- Add option to disable questgiver nodes
-- Add option to disable minimap nodes
 - Add option to disable minimap icon
-- Add option to always display all questhubs
