@@ -12,10 +12,11 @@ enUS koKR frFR deDE zhCN esES ruRU:
 	cp -rf img release/$@/pfQuest/
 	cp -rf db/init.lua release/$@/pfQuest/db
 	cp -rf db/$@ release/$@/pfQuest/db
-	cp -rf pfBrowser.lua pfDatabase.lua pfMap.lua pfQuest.lua pfQuest.toc release/$@/pfQuest/
+	cp -rf pfBrowser.lua pfDatabase.lua pfMap.lua pfQuest.lua release/$@/pfQuest/
+	cp -rf !pfQuest.toc release/$@/pfQuest/pfQuest.toc
 	sed -i "s/NORELEASE/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
 	cd release/$@ && zip -qr9 ../pfQuest-$(VERSION)-$@.zip pfQuest
-	
+
 database:
 	$(MAKE) -C toolbox/ all
 	$(MAKE) -C toolbox/ install
