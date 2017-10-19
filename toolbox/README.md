@@ -1,5 +1,9 @@
 # Fetch Databases
 
+## Setup Dependencies
+
+	pacman -S lxc libmariadbclient php php-gd
+
 ## Setup Database LXC Container
 
     lxc-create -n pfQuest -t ubuntu
@@ -29,7 +33,7 @@
     mysql -u mangos -p aowow -h 127.0.0.1 < aowow.sql
 
 # Copy CSVs to DBC/
-    
+
     $ ls -1 DBC/
     AreaTable_deDE.dbc.csv
     AreaTable_enUS.dbc.csv
@@ -55,4 +59,3 @@
 ## Build Every Database
 
     make
-
