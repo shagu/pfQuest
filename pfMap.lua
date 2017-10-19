@@ -217,16 +217,16 @@ function pfMap:BuildNode(name, parent)
   f:SetFrameLevel(112)
 
   f:SetScript("OnEnter", function()
-    GameTooltip:SetOwner(this, ANCHOR_BOTTOMLEFT)
-    GameTooltip:SetText(this.node.title, .3, 1, .8)
+    WorldMapTooltip:SetOwner(this, ANCHOR_BOTTOMLEFT)
+    WorldMapTooltip:SetText(this.node.title, .3, 1, .8)
     for id, desc in pairs(this.node.description) do
-      GameTooltip:AddLine(desc, 1, 1, 1)
+      WorldMapTooltip:AddLine(desc, 1, 1, 1)
     end
-    GameTooltip:Show()
+    WorldMapTooltip:Show()
   end)
 
   f:SetScript("OnLeave", function()
-    GameTooltip:Hide()
+    WorldMapTooltip:Hide()
   end)
 
   f.tex = f:CreateTexture("OVERLAY")
