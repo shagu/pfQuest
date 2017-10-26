@@ -183,16 +183,9 @@ local function CreateItemEntry(i)
   end)
 
   f:SetScript("OnClick", function()
-    if IsShiftKeyDown() then
-      ChatFrameEditBox:Show()
-      ChatFrameEditBox:Insert(this.itemColor .."|Hitem:"..this.itemID..":0:0:0|h["..this.itemName.."]|h|r")
-    elseif IsControlKeyDown() then
-      DressUpItemLink(this.itemID)
-    else
-      ShowUIPanel(ItemRefTooltip)
-      ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
-      ItemRefTooltip:SetHyperlink("item:" .. this.itemID .. ":0:0:0")
-    end
+    local link = "item:"..this.itemID..":0:0:0"
+    local text = this.itemColor .."|H" .. link .. "|h["..this.itemName.."]|h|r"
+    SetItemRef(link, text, arg1)
   end)
 
   f.text = f:CreateFontString("Caption", "LOW", "GameFontWhite")
