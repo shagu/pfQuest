@@ -37,14 +37,20 @@ local questParse = {
   },
 }
 
-local questCache = {}
+local questLogCache     = { }
+local questTrackedCache = { }
 
 local locale = GetLocale()
 if not questParse[locale] then
   locale = "enUS"
 end
 
-local function NeedQuestUpdate(questIndex)
+local function ClearQuest(quest)
+  pfMap:DeleteNode("PFQUEST", quest)
+  questTrackedCache[quest] = nil
+end
+
+local function QuestNeedsUpdate(questIndex)
   local title, level = GetQuestLogTitle(questIndex)
 
   if not title then return nil end
@@ -53,7 +59,7 @@ local function NeedQuestUpdate(questIndex)
   local objectives = GetNumQuestLeaderBoards(questIndex)
   local hash = title
 
-  questCache[title] = questCache[title] or "init"
+  questTrackedCache[title] = questTrackedCache[title] or "init"
 
   if objectives then
     for i=1, objectives, 1 do
@@ -65,8 +71,8 @@ local function NeedQuestUpdate(questIndex)
     end
   end
 
-  if questCache[title] ~= hash then
-    questCache[title] = hash
+  if questTrackedCache[title] ~= hash then
+    questTrackedCache[title] = hash
     return true
   else
     return nil
@@ -74,75 +80,103 @@ local function NeedQuestUpdate(questIndex)
 end
 
 local function UpdateQuestLogID(questIndex, action)
+  -- never add nodes in hidden mode
   if pfQuest_config["trackingmethod"] == 4 then return end
 
-  local title, level = GetQuestLogTitle(questIndex)
-  local watched = IsQuestWatched(questIndex)
+  -- specified index
+  if questIndex then
+    local title, level = GetQuestLogTitle(questIndex)
+    local watched = IsQuestWatched(questIndex)
+    if not title then return end
 
-  if action == "REMOVE" or
-  ( not action and not watched and pfQuest_config["trackingmethod"] == 2 ) or
-  ( not action and pfQuest_config["trackingmethod"] == 3 ) then
+    if action == "REMOVE" or
+    ( not action and not watched and pfQuest_config["trackingmethod"] == 2 ) or
+    ( not action and pfQuest_config["trackingmethod"] == 3 ) then
+      ClearQuest(title)
+      return nil
+    end
+
+    -- abort with available cache when no action was given
+    if not action and not QuestNeedsUpdate(questIndex) then return nil end
+
+    -- hide old nodes and apply changes
     pfMap:DeleteNode("PFQUEST", title)
-    return nil
-  end
 
-  -- abort with available cache when no action was given
-  if not action and not NeedQuestUpdate(questIndex) then return nil end
+    local objectives = GetNumQuestLeaderBoards(questIndex)
+    local meta = { ["quest"] = title, ["addon"] = "PFQUEST" }
+    local zone, score, maps = nil, 0, {}
 
-  -- clean map and apply changes
-  pfMap:DeleteNode("PFQUEST", title)
+    if objectives then
+      for i=1, objectives, 1 do
+        local text, type, finished = GetQuestLogLeaderBoard(i, questIndex)
+        local i, j, itemName, numItems, numNeeded = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
 
-  local objectives = GetNumQuestLeaderBoards(questIndex)
-  local meta = { ["quest"] = title, ["addon"] = "PFQUEST" }
-  local zone, score, maps = nil, 0, {}
-
-  if objectives then
-    for i=1, objectives, 1 do
-      local text, type, finished = GetQuestLogLeaderBoard(i, questIndex)
-      local i, j, itemName, numItems, numNeeded = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
-
-      if not finished then
-        -- spawn data
-        if type == "monster" then
-          local i, j, monsterName = strfind(itemName, "(.*)")
-          zone, score = pfDatabase:SearchMob(monsterName, meta)
-          if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
-
-          for id, query in pairs(questParse[locale]) do
-            local i, j, monsterName = strfind(itemName, query)
+        if not finished then
+          -- spawn data
+          if type == "monster" then
+            local i, j, monsterName = strfind(itemName, "(.*)")
             zone, score = pfDatabase:SearchMob(monsterName, meta)
+            if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+
+            for id, query in pairs(questParse[locale]) do
+              local i, j, monsterName = strfind(itemName, query)
+              zone, score = pfDatabase:SearchMob(monsterName, meta)
+              if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+            end
+          end
+
+          -- item data
+          if type == "item" then
+            zone, score = pfDatabase:SearchItem(itemName, meta)
+            if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+
+            zone, score = pfDatabase:SearchVendor(itemName, meta)
             if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
           end
         end
-
-        -- item data
-        if type == "item" then
-          zone, score = pfDatabase:SearchItem(itemName, meta)
-          if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
-
-          zone, score = pfDatabase:SearchVendor(itemName, meta)
-          if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
-        end
       end
     end
-  end
 
-  -- show quest givers
-  if pfQuest_config["currentquestgivers"] ==  "1" then
-    zone, score = pfDatabase:SearchQuest(title, meta)
-    if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
-  end
-
-  -- calculate best map results
-  local bestmap, bestscore = nil, 0
-  for map, count in pairs(maps) do
-    if count > bestscore then
-      bestscore = count
-      bestmap   = map
+    -- show quest givers
+    if pfQuest_config["currentquestgivers"] ==  "1" then
+      zone, score = pfDatabase:SearchQuest(title, meta)
+      if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
     end
-  end
 
-  return bestmap, bestscore
+    -- calculate best map results
+    local bestmap, bestscore = nil, 0
+    for map, count in pairs(maps) do
+      if count > bestscore then
+        bestscore = count
+        bestmap   = map
+      end
+    end
+
+    pfMap:UpdateNodes()
+
+    return bestmap, bestscore
+  else
+    -- check for questlog changes
+    local cur = {}
+    for id=1, GetNumQuestLogEntries() do
+      local title = GetQuestLogTitle(id)
+      cur[title] = true
+    end
+
+    -- remove already deleted or done quests
+    local exists = nil
+    for quest in pairs(questLogCache) do
+      if not cur[quest] then
+        ClearQuest(quest)
+      end
+    end
+
+    -- trigger update loop
+    pfQuest:Show()
+
+    -- update questlog cache
+    questLogCache = cur
+  end
 end
 
 local function AddQuestLogIntegration()
@@ -183,7 +217,7 @@ local function AddQuestLogIntegration()
     pfMap:DeleteNode("PFQUEST")
     pfMap:UpdateNodes()
 
-    questCache = {}
+    questTrackedCache = {}
     pfQuest:Show()
   end)
 end
@@ -224,7 +258,7 @@ local function AddWorldMapIntegration()
         pfQuest_config["trackingmethod"] = this:GetID()
 
         -- rescan
-        questCache = {}
+        questTrackedCache = {}
         pfQuest:Show()
       end
       UIDropDownMenu_AddButton(info)
@@ -235,7 +269,7 @@ local function AddWorldMapIntegration()
       info.func = function()
         UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
         pfQuest_config["trackingmethod"] = this:GetID()
-        questCache = {}
+        questTrackedCache = {}
         pfQuest:Show()
       end
       UIDropDownMenu_AddButton(info)
@@ -246,7 +280,7 @@ local function AddWorldMapIntegration()
       info.func = function()
         UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
         pfQuest_config["trackingmethod"] = this:GetID()
-        questCache = {}
+        questTrackedCache = {}
         pfQuest:Show()
       end
       UIDropDownMenu_AddButton(info)
@@ -275,7 +309,6 @@ local pfHookRemoveQuestWatch = RemoveQuestWatch
 RemoveQuestWatch = function(questIndex)
   if pfQuest_config["trackingmethod"] == 2 then
     UpdateQuestLogID(questIndex, "REMOVE")
-    pfMap:UpdateNodes()
   end
   return pfHookRemoveQuestWatch(questIndex)
 end
@@ -284,7 +317,6 @@ local pfHookAddQuestWatch = AddQuestWatch
 AddQuestWatch = function(questIndex)
   if pfQuest_config["trackingmethod"] ~= 3 then
     local map = UpdateQuestLogID(questIndex, "ADD")
-    pfMap:UpdateNodes()
     pfMap:SetMapByID(map)
   end
   return pfHookAddQuestWatch(questIndex)
@@ -304,13 +336,12 @@ pfQuest:SetScript("OnEvent", function()
     else
       return
     end
-  end
+  else
+    -- never update in manual and hidden mode
+    if pfQuest_config["trackingmethod"] == 3 then return end
+    if pfQuest_config["trackingmethod"] == 4 then return end
 
-  if event == "QUEST_LOG_UPDATE" or "QUEST_FINISHED" then
-    this:Show()
-  elseif event == "QUEST_WATCH_UPDATE" then
     UpdateQuestLogID(arg1)
-    pfMap:UpdateNodes()
   end
 end)
 
@@ -328,7 +359,6 @@ pfQuest:SetScript("OnUpdate", function()
   UpdateQuestLogID(this.scan)
 
   if this.scan >= this.smax then
-
     if pfQuest_config["allquestgivers"] == "1" then
       local meta = { ["allquests"] = true }
       pfDatabase:SearchQuests(nil, meta)
