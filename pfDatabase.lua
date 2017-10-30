@@ -106,6 +106,15 @@ SlashCmdList["PFDB"] = function(input, editbox)
   end
 end
 
+function pfDatabase:HexDifficultyColor(level, force)
+  if force and UnitLevel("player") < level then
+    return "|cffff5555"
+  else
+    local c = GetDifficultyColor(level)
+    return string.format("|cff%02x%02x%02x", c.r*255, c.g*255, c.b*255)
+  end
+end
+
 function pfDatabase:BuildTooltipInfo(meta)
   local title, description = nil, {}
 
@@ -126,6 +135,10 @@ function pfDatabase:BuildTooltipInfo(meta)
     table.insert(description, meta["spawntype"] .. ": " .. meta["spawn"] .. "|cffaaaaaa (" .. meta["x"] .. "," .. meta["y"] .. ")")
     if meta["item"] and meta["droprate"] then
       table.insert(description, "Loot: " .. ( meta["itemlink"] or meta["item"] ) .. "|cffaaaaaa (" .. meta["droprate"] .. "%)")
+    else
+      if meta["qlvl"] then
+        table.insert(description, "Level: " .. pfDatabase:HexDifficultyColor(meta["qlvl"]) .. meta["qlvl"] .. "|r" .. ( meta["qmin"] and " / Required: " .. pfDatabase:HexDifficultyColor(meta["qmin"], true) .. meta["qmin"] .. "|r"  or ""))
+      end
     end
   elseif meta["sellcount"] then
     title = meta["item"]
@@ -166,7 +179,7 @@ function pfDatabase:SearchMob(mob, meta)
       if pfMap:IsValidMap(zone) and zone > 0 then
         maps[zone] = maps[zone] and maps[zone] + 1 or 1
         local title, description = pfDatabase:BuildTooltipInfo(meta)
-        pfMap:AddNode(meta["addon"] or "PFDB", zone, x .. "|" .. y, meta["texture"], title, description, meta["translucent"], func)
+        pfMap:AddNode(meta["addon"] or "PFDB", zone, x .. "|" .. y, meta["texture"], title, description, meta["translucent"], func, meta["vertex"])
       end
     end
 
@@ -225,7 +238,7 @@ function pfDatabase:SearchVendor(item, meta)
       meta = meta or {}
       meta["sellcount"] = sellCount
       meta["item"] = item
-      meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\vendor"
+      meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\icon_vendor"
 
       if spawns[vendorName] and spawns[vendorName]["coords"] then
         local zone, score = pfDatabase:SearchMob(vendorName, meta)
@@ -251,16 +264,89 @@ end
 function pfDatabase:SearchQuest(quest, meta)
   local maps = {}
 
+  if not quests[quest] then
+    local qname = nil
+    for name, tab in pairs(quests) do
+      local f, t, questname, _ = strfind(name, "(.*),.*")
+      if questname == quest then
+        quest = name
+      end
+    end
+  end
+
   if quests[quest] then
-    for questGiver, field in pairs(quests[quest]) do
-      local objectType = field
+    if quests[quest]["start"] then
+      for questGiver, field in pairs(quests[quest]["start"]) do
+        local objectType = field
 
-      meta = meta or {}
-      meta["quest"] = quest
-      meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\quest"
+        meta = meta or {}
+        _, _, meta["quest"] = strfind(quest, "(.*),.*")
 
-      local zone, score = pfDatabase:SearchMob(questGiver, meta)
-      if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+        if quests[quest]["end"][questGiver] then
+          if meta["qstate"] == "progress" then
+            meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\startendstart"
+          else
+            meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\startend"
+          end
+        else
+          meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available_c"
+        end
+
+        local zone, score = pfDatabase:SearchMob(questGiver, meta)
+        if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+      end
+    end
+
+    if quests[quest]["end"] then
+      for questGiver, field in pairs(quests[quest]["end"]) do
+        local objectType = field
+
+        meta = meta or {}
+        _, _, meta["quest"] = strfind(quest, "(.*),.*")
+
+        if quests[quest]["start"][questGiver] then
+          if meta["qstate"] == "progress" then
+            meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\startendstart"
+          else
+            meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\startend"
+          end
+        else
+          if meta["qstate"] == "done" or meta["dbobj"] then
+            meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
+          else
+            meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete"
+          end
+        end
+
+        local zone, score = pfDatabase:SearchMob(questGiver, meta)
+        if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+      end
+    end
+
+    -- query database objects
+    if meta["dbobj"] then
+      meta["texture"] = nil
+
+      -- spawns
+      if quests[quest]["spawn"] then
+        for mob in pairs(quests[quest]["spawn"]) do
+          local _, _, mob = strfind(mob, "(.*),.*")
+          zone, score = pfDatabase:SearchMob(mob, meta)
+          if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+        end
+      end
+
+      -- items
+      if quests[quest]["item"] then
+        for item in pairs(quests[quest]["item"]) do
+          local _, _, item = strfind(item, "(.*),.*")
+          zone, score = pfDatabase:SearchItem(item, meta)
+          if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+
+          zone, score = pfDatabase:SearchVendor(item, meta)
+          if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+        end
+      end
     end
 
     -- calculate best map results
@@ -280,22 +366,46 @@ end
 
 function pfDatabase:SearchQuests(zone, meta)
   local faction = ( UnitFactionGroup("player") == "Horde" ) and "H" or "A"
+  local level = UnitLevel("player")
 
   zone = pfMap:GetMapIDByName(zone)
   if not pfMap:IsValidMap(zone) then
     zone = pfMap:GetMapID(GetCurrentMapContinent(), GetCurrentMapZone())
   end
 
-  for title, questgivers in pairs(quests) do
-    for questgiver in pairs(questgivers) do
+  for title in pairs(quests) do
+    for questgiver in pairs(quests[title]["start"]) do
       if spawns[questgiver] and strfind(spawns[questgiver]["faction"], faction) then
 
         meta = meta or {}
-        meta["quest"] = title
+        _, _, meta["quest"] = strfind(title, "(.*),.*")
+        meta["qlvl"] = quests[title]["lvl"]
+        meta["qmin"] = quests[title]["min"]
+
         meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
 
         if meta["allquests"] then
-          meta["translucent"] = true
+          meta["addon"] = "PFQUEST"
+          meta["vertex"] = { 0, 0, 0 }
+
+          if pfQuest_history[meta["quest"]] then
+            break
+          elseif quests[title]["pre"] then
+            _, _, pre = strfind(quests[title]["pre"], "(.*),.*")
+            if not pfQuest_history[pre] then break end
+          elseif quests[title]["lvl"] and quests[title]["lvl"] > level + 10 then
+            break
+          elseif quests[title]["min"] and quests[title]["min"] > level + 2 then
+            break
+          elseif quests[title]["min"] and quests[title]["min"] > level then
+            meta["vertex"] = { 1, .6, .6 }
+          end
+
+          -- treat highlevel quests with low requirements as dailies
+          if quests[title]["min"] and quests[title]["lvl"] and
+          quests[title]["min"] == 1 and quests[title]["lvl"] > 50 then
+            meta["vertex"] = { .2, .8, 1 }
+          end
         end
 
         if tonumber(spawns[questgiver]["zone"]) == zone or meta["allquests"] then

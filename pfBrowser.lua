@@ -314,6 +314,24 @@ local function CreateQuestEntry(i)
 
   f:SetScript("OnEnter", function()
     this.tex:SetTexture(1,1,1,.1)
+
+    GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
+    GameTooltip:SetText(this.questname, .3, 1, .8)
+
+
+    if quests[this.quest]["obj"] then
+      GameTooltip:AddLine(quests[this.quest]["obj"], 1,1,1,true)
+    end
+
+    if quests[this.quest]["log"] and quests[this.quest]["objectives"] then
+      GameTooltip:AddLine("-", 0,0,0)
+    end
+
+    if quests[this.quest]["log"] then
+      GameTooltip:AddLine(quests[this.quest]["log"], .6,1,.9,true)
+    end
+
+    GameTooltip:Show()
   end)
 
   f:SetScript("OnLeave", function()
@@ -322,14 +340,16 @@ local function CreateQuestEntry(i)
     else
       this.tex:SetTexture(1,1,1,.04)
     end
+    GameTooltip:Hide()
   end)
 
   f:SetScript("OnClick", function()
     if IsShiftKeyDown() then
       ChatFrameEditBox:Show()
-      ChatFrameEditBox:Insert("|cffffff00|Hquest:0:0:0:0|h[" .. this.quest .. "]|h|r")
+      ChatFrameEditBox:Insert("|cffffff00|Hquest:0:0:0:0|h[" .. this.questname .. "]|h|r")
     else
-      local map = pfDatabase:SearchQuest(this.quest)
+      local meta = { ["dbobj"] = true }
+      local map = pfDatabase:SearchQuest(this.quest, meta)
       pfMap:ShowMapID(map)
     end
   end)
@@ -670,7 +690,9 @@ function pfBrowser:SearchQuest(search)
 
   local i = 0
   for quest, object in pairs(database) do
-    if (strfind(strlower(quest), strlower(search))) then
+    local f, t, questname, _ = strfind(quest, "(.*),.*")
+
+    if (strfind(strlower(questname), strlower(search))) then
       i = i + 1
 
       if i >= search_limit then break end
@@ -704,14 +726,15 @@ function pfBrowser:SearchQuest(search)
       end
 
       if quests[quest] then
-        button.text:SetText("|cffffcc00|Hquest:0:0:0:0|h[" .. quest .. "]|h|r")
+        button.text:SetText("|cffffcc00|Hquest:0:0:0:0|h[" .. questname .. "]|h|r")
       else
-        button.text:SetText("|cffff5555[?] |cffffcc00|Hquest:0:0:0:0|h[" .. quest .. "]|h|r")
+        button.text:SetText("|cffff5555[?] |cffffcc00|Hquest:0:0:0:0|h[" .. questname .. "]|h|r")
       end
       button.text:SetWidth(button.text:GetStringWidth())
       button.quest = quest
+      button.questname = questname
 
-      if pfDatabase_fav["quest"][quest] then
+      if pfDatabase_fav["quest"][questname] then
         button.fav.icon:SetVertexColor(1,1,1,1)
       else
         button.fav.icon:SetVertexColor(1,1,1,.1)

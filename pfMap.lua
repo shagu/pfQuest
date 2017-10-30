@@ -94,7 +94,8 @@ local function minimap_indoor()
 end
 
 local function str2rgb(text)
-  if rgbcache[text] ~= nil then return unpack(rgbcache[text]) end
+  if pfQuest_colors[text] then return unpack(pfQuest_colors[text]) end
+  if rgbcache[text] then return unpack(rgbcache[text]) end
   local counter = 1
   local l = string.len(text)
   for i = 1, l, 3 do
@@ -185,12 +186,48 @@ function pfMap:GetMapID(cid, mid)
   return pfMap:GetMapIDByName(name)
 end
 
-function pfMap:AddNode(addon, map, coords, icon, title, description, translucent, func)
+function pfMap:AddNode(addon, map, coords, icon, title, description, translucent, func, vertex)
   if not pfMap.nodes[addon] then pfMap.nodes[addon] = {} end
   if not pfMap.nodes[addon][map] then pfMap.nodes[addon][map] = {} end
 
-  if not pfMap.nodes[addon][map][coords] then
-    pfMap.nodes[addon][map][coords] = { icon = icon, title = title, description = description, addon = addon, translucent = translucent, func = func}
+  if pfMap.nodes[addon][map][coords] then
+    -- return early on already added nodes
+    if pfMap.nodes[addon][map][coords].title == title then return end
+    for id,data in pairs(pfMap.nodes[addon][map][coords].description) do
+      if strfind(data, title) then return end
+    end
+
+    -- extend current description
+    table.insert(pfMap.nodes[addon][map][coords].description, "\n|cff33ffcc" ..  title .. "|r")
+    table.insert(pfMap.nodes[addon][map][coords].description, description[2])
+
+    -- prioritize symbols of empties and plain colors over custom
+    if pfMap.nodes[addon][map][coords].icon ~= icon then
+      if strfind(icon, "startend") then
+        pfMap.nodes[addon][map][coords].vertex = vertex
+        pfMap.nodes[addon][map][coords].icon = icon
+      elseif not strfind(pfMap.nodes[addon][map][coords].icon, "_c") and strfind(icon, "_c") then
+        pfMap.nodes[addon][map][coords].vertex = vertex
+        pfMap.nodes[addon][map][coords].icon = icon
+      elseif not strfind(pfMap.nodes[addon][map][coords].icon, "_c") and
+      not strfind(pfMap.nodes[addon][map][coords].icon, "startend") and
+      ( vertex and vertex[1] == 0 and vertex[2] == 0 and vertex[3] == 0 ) then
+        pfMap.nodes[addon][map][coords].vertex = vertex
+        pfMap.nodes[addon][map][coords].icon = icon
+        return
+      end
+    end
+  else
+    -- create new node
+    pfMap.nodes[addon][map][coords] = {
+      icon = icon,
+      title = title,
+      description = description,
+      addon = addon,
+      translucent = translucent,
+      func = func,
+      vertex = vertex,
+    }
   end
 end
 
@@ -245,12 +282,25 @@ function pfMap:UpdateNode(frame, node)
     frame.tex:SetVertexColor(r,g,b,1)
   end
 
+  if node.icon and node.vertex then
+    local r, g, b = unpack(node.vertex)
+    if r > 0 or g > 0 or b > 0 then
+      frame.tex:SetVertexColor(r, g, b, 1)
+    end
+  end
+
   if node.func then
     frame:SetScript("OnClick", node.func)
   else
     frame:SetScript("OnClick", function()
-      pfMap:DeleteNode(this.node.addon, this.node.title)
-      pfMap:UpdateNodes()
+      if IsShiftKeyDown() then
+        pfMap:DeleteNode(this.node.addon, this.node.title)
+        pfQuest_history[this.node.title] = true
+        pfMap:UpdateNodes()
+      else
+        pfQuest_colors[this.node.title] = { str2rgb(this.node.title .. GetTime()) }
+        pfMap:UpdateNodes()
+      end
     end)
   end
 

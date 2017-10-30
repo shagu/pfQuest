@@ -107,7 +107,7 @@ end)
 pfQuestConfig:RegisterEvent("ADDON_LOADED")
 pfQuestConfig:SetScript("OnEvent", function()
   if arg1 == "pfQuest" then
-    CreateConfigEntry("allquestgivers",      "Show All Questgiver Nodes",      "checkbox")
+    CreateConfigEntry("allquestgivers",      "Show Available Questgivers",     "checkbox")
     CreateConfigEntry("currentquestgivers",  "Show Current Questgiver Nodes",  "checkbox")
     CreateConfigEntry("minimapnodes",        "Show MiniMap Nodes",             "checkbox")
     CreateConfigEntry("questlogbuttons",     "Show QuestLog Buttons",          "checkbox")
