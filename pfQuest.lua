@@ -427,7 +427,11 @@ end)
 
 local HookAbandonQuest = AbandonQuest
 function AbandonQuest()
-  pfQuest_history[GetAbandonQuestName()] = nil
+  local quest = GetAbandonQuestName()
+  questLogCache[quest] = nil
+  pfQuest_history[quest] = nil
+  questTrackedCache[quest] = "ABANDONED"
+  pfMap:DeleteNode("PFQUEST", quest)
   HookAbandonQuest()
 end
 
