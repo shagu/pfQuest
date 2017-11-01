@@ -72,6 +72,13 @@ local minimap_zoom = {
         },
 }
 
+local function IsEmpty(tabl)
+  for k,v in pairs(tabl) do
+    return false
+  end
+  return true
+end
+
 local function minimap_indoor()
   local tempzoom = 0
 	local state = 1
