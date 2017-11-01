@@ -179,7 +179,7 @@ function pfDatabase:SearchMob(mob, meta)
       if pfMap:IsValidMap(zone) and zone > 0 then
         maps[zone] = maps[zone] and maps[zone] + 1 or 1
         local title, description = pfDatabase:BuildTooltipInfo(meta)
-        pfMap:AddNode(meta["addon"] or "PFDB", zone, x .. "|" .. y, meta["texture"], title, description, meta["translucent"], func, meta["vertex"])
+        pfMap:AddNode(meta["addon"] or "PFDB", zone, x .. "|" .. y, meta["texture"], title, description, meta["translucent"], func, meta["vertex"], meta["layer"])
       end
     end
 
@@ -239,6 +239,7 @@ function pfDatabase:SearchVendor(item, meta)
       meta["sellcount"] = sellCount
       meta["item"] = item
       meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\icon_vendor"
+      meta["layer"] = 6
 
       if spawns[vendorName] and spawns[vendorName]["coords"] then
         local zone, score = pfDatabase:SearchMob(vendorName, meta)
@@ -285,11 +286,14 @@ function pfDatabase:SearchQuest(quest, meta)
         if quests[quest]["end"][questGiver] then
           if meta["qstate"] == "progress" then
             meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\startendstart"
+            meta["layer"] = 5
           else
             meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\startend"
+            meta["layer"] = 7
           end
         else
           meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available_c"
+          meta["layer"] = 4
         end
 
         local zone, score = pfDatabase:SearchMob(questGiver, meta)
@@ -307,14 +311,18 @@ function pfDatabase:SearchQuest(quest, meta)
         if quests[quest]["start"][questGiver] then
           if meta["qstate"] == "progress" then
             meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\startendstart"
+            meta["layer"] = 5
           else
             meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\startend"
+            meta["layer"] = 7
           end
         else
           if meta["qstate"] == "done" or meta["dbobj"] then
             meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
+            meta["layer"] = 8
           else
             meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete"
+            meta["layer"] = 1
           end
         end
 
@@ -387,6 +395,7 @@ function pfDatabase:SearchQuests(zone, meta)
         if meta["allquests"] then
           meta["addon"] = "PFQUEST"
           meta["vertex"] = { 0, 0, 0 }
+          meta["layer"] = 3
 
           if pfQuest_history[meta["quest"]] then
             break
@@ -399,12 +408,14 @@ function pfDatabase:SearchQuests(zone, meta)
             break
           elseif quests[title]["min"] and quests[title]["min"] > level then
             meta["vertex"] = { 1, .6, .6 }
+            meta["layer"] = 2
           end
 
           -- treat highlevel quests with low requirements as dailies
           if quests[title]["min"] and quests[title]["lvl"] and
           quests[title]["min"] == 1 and quests[title]["lvl"] > 50 then
             meta["vertex"] = { .2, .8, 1 }
+            meta["layer"] = 2
           end
         end
 
