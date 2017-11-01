@@ -122,27 +122,44 @@ local function UpdateQuestLogID(questIndex, action)
         local text, type, finished = GetQuestLogLeaderBoard(i, questIndex)
         local i, j, itemName, numItems, numNeeded = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
 
+        local match = nil
         if not finished then
           -- spawn data
           if type == "monster" then
             local i, j, monsterName = strfind(itemName, "(.*)")
             zone, score = pfDatabase:SearchMob(monsterName, meta)
-            if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+            if zone then
+              match = true
+              maps[zone] = maps[zone] and maps[zone] + score or 1
+            end
 
             for id, query in pairs(questParse[locale]) do
               local i, j, monsterName = strfind(itemName, query)
               zone, score = pfDatabase:SearchMob(monsterName, meta)
-              if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+              if zone then
+                match = true
+                maps[zone] = maps[zone] and maps[zone] + score or 1
+              end
             end
           end
 
           -- item data
           if type == "item" then
             zone, score = pfDatabase:SearchItem(itemName, meta)
-            if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+            if zone then
+              match = true
+              maps[zone] = maps[zone] and maps[zone] + score or 1
+            end
 
             zone, score = pfDatabase:SearchVendor(itemName, meta)
-            if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
+            if zone then
+              match = true
+              maps[zone] = maps[zone] and maps[zone] + score or 1
+            end
+          end
+
+          if not match then
+            meta.dbobj = true
           end
         end
       end
