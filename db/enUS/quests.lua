@@ -8199,6 +8199,8 @@ pfDB["quests"]["enUS"] = {
       ["Krusk"] = "NPC",
     },
     ["spawn"] = {
+      ["Locked ball and chain,1"] = "OBJECT",
+      ["Locked ball and chain,1"] = "OBJECT",
     },
     ["item"] = {
     },
@@ -8834,6 +8836,7 @@ pfDB["quests"]["enUS"] = {
     ["spawn"] = {
       ["Magistrate Burnside,1"] = "NPC",
       ["Hillsbrad Councilman,4"] = "NPC",
+      ["Hillsbrad Proclamation,1"] = "OBJECT",
     },
     ["item"] = {
       ["Hillsbrad Town Registry,1"] = "ITEM",
@@ -9183,6 +9186,9 @@ pfDB["quests"]["enUS"] = {
       ["Helcular\'s Grave"] = "OBJECT",
     },
     ["spawn"] = {
+      ["Flame of Azel,1"] = "OBJECT",
+      ["Flame of Veraz,1"] = "OBJECT",
+      ["Flame of Uzel,1"] = "OBJECT",
     },
     ["item"] = {
       ["Rod of Helcular,1"] = "ITEM",
@@ -10539,6 +10545,7 @@ pfDB["quests"]["enUS"] = {
       ["Rhag Garmason"] = "NPC",
     },
     ["spawn"] = {
+      ["Cache of Explosives,1"] = "OBJECT",
     },
   },
   ["Plea To The Alliance,Seek out C"] = {
@@ -13085,6 +13092,9 @@ pfDB["quests"]["enUS"] = {
       ["Lar Prowltusk"] = "NPC",
     },
     ["spawn"] = {
+      ["Attack Plan: Valley of Trials,1"] = "OBJECT",
+      ["Attack Plan: Sen\'jin Village,1"] = "OBJECT",
+      ["Attack Plan: Orgrimmar,1"] = "OBJECT",
     },
   },
   ["The New Horde,Report to "] = {
@@ -13914,6 +13924,7 @@ pfDB["quests"]["enUS"] = {
       ["Gann Stonespire"] = "NPC",
     },
     ["spawn"] = {
+      ["Bael Modan Flying Machine,1"] = "OBJECT",
     },
   },
   ["Kolkar Leaders,Bring Bara"] = {
@@ -14362,6 +14373,7 @@ pfDB["quests"]["enUS"] = {
       ["Tonga Runetotem"] = "NPC",
     },
     ["spawn"] = {
+      ["Bubbling Fissure,1"] = "OBJECT",
     },
   },
   ["Tribes at War,Kill 6 Bri"] = {
@@ -14761,6 +14773,9 @@ pfDB["quests"]["enUS"] = {
       ["Control Console"] = "OBJECT",
     },
     ["spawn"] = {
+      ["Main Control Valve,1"] = "OBJECT",
+      ["Fuel Control Valve,1"] = "OBJECT",
+      ["Regulator Valve,1"] = "OBJECT",
     },
   },
   ["Samophlange,Get the Co"] = {
@@ -14833,6 +14848,9 @@ pfDB["quests"]["enUS"] = {
       ["Sergra Darkthorn"] = "NPC",
     },
     ["spawn"] = {
+      ["Blue Raptor Nest,1"] = "OBJECT",
+      ["Yellow Raptor Nest,1"] = "OBJECT",
+      ["Red Raptor Nest,1"] = "OBJECT",
     },
     ["item"] = {
     },
@@ -15576,6 +15594,8 @@ pfDB["quests"]["enUS"] = {
       ["Sentinel Tysha Moonblade"] = "NPC",
     },
     ["spawn"] = {
+      ["The Lay of Ameth\'Aran,1"] = "OBJECT",
+      ["The Fall of Ameth\'Aran,1"] = "OBJECT",
     },
   },
   ["Bashal\'Aran,Find the s"] = {
@@ -15642,6 +15662,7 @@ pfDB["quests"]["enUS"] = {
       ["Asterion"] = "NPC",
     },
     ["spawn"] = {
+      ["Ancient Flame,1"] = "OBJECT",
     },
   },
   ["Tools of the Highborne,Retrieve 7"] = {
@@ -16558,6 +16579,7 @@ pfDB["quests"]["enUS"] = {
       ["Sentinel Melyria Frostshadow"] = "NPC",
     },
     ["spawn"] = {
+      ["Tome of Mel\'Thandris,1"] = "OBJECT",
     },
   },
   ["Raene\'s Cleansing,Find the G"] = {
@@ -16927,6 +16949,7 @@ pfDB["quests"]["enUS"] = {
       ["Jonathan Carevin"] = "NPC",
     },
     ["spawn"] = {
+      ["Mound of Dirt,1"] = "OBJECT",
     },
   },
   ["Answered Questions,Return to "] = {
@@ -18525,6 +18548,8 @@ pfDB["quests"]["enUS"] = {
       ["Delgren the Purifier"] = "NPC",
     },
     ["spawn"] = {
+      ["Circle of Imprisonment,1"] = "OBJECT",
+      ["Circle of Imprisonment,1"] = "OBJECT",
     },
   },
   ["The Family and the Fishing Pole,Catch 6 Da"] = {
@@ -18944,6 +18969,7 @@ pfDB["quests"]["enUS"] = {
       ["Draz\'Zilb"] = "NPC",
     },
     ["spawn"] = {
+      ["Egg of Onyxia,5"] = "OBJECT",
     },
   },
   ["Challenge Overlord Mok\'Morokk,Defeat Mok"] = {
@@ -25181,6 +25207,7 @@ pfDB["quests"]["enUS"] = {
       ["Un\'Thuwa"] = "NPC",
     },
     ["spawn"] = {
+      ["Ju-Ju Heap,4"] = "OBJECT",
     },
   },
   ["Mennet Carkad,Speak with"] = {
@@ -30080,6 +30107,9 @@ pfDB["quests"]["enUS"] = {
       ["Gryphon Master Talonaxe"] = "NPC",
     },
     ["spawn"] = {
+      ["First Witherbark Cage,1"] = "OBJECT",
+      ["Second Witherbark Cage,1"] = "OBJECT",
+      ["Third Witherbark Cage,1"] = "OBJECT",
     },
   },
   ["The Altar of Zul,Check the "] = {
@@ -30183,6 +30213,7 @@ pfDB["quests"]["enUS"] = {
       ["Gryphon Master Talonaxe"] = "NPC",
     },
     ["spawn"] = {
+      ["Sharpbeak\'s Cage,1"] = "OBJECT",
     },
     ["item"] = {
     },
@@ -30201,6 +30232,9 @@ pfDB["quests"]["enUS"] = {
       ["Oran Snakewrithe"] = "NPC",
     },
     ["spawn"] = {
+      ["Highvale Records,1"] = "OBJECT",
+      ["Highvale Notes,1"] = "OBJECT",
+      ["Highvale Report,1"] = "OBJECT",
     },
   },
   ["Seeking Strahad,Speak to S"] = {
@@ -32152,6 +32186,10 @@ pfDB["quests"]["enUS"] = {
       ["Squire Maltrake"] = "NPC",
     },
     ["spawn"] = {
+      ["Sentry Brazier,1"] = "OBJECT",
+      ["Sentry Brazier,1"] = "OBJECT",
+      ["Sentry Brazier,1"] = "OBJECT",
+      ["Sentry Brazier,1"] = "OBJECT",
     },
   },
   ["Trinkets...,Open the c"] = {
@@ -33306,6 +33344,7 @@ pfDB["quests"]["enUS"] = {
       ["Royal Historian Archesonus"] = "NPC",
     },
     ["spawn"] = {
+      ["Thaurissan Relic,12"] = "OBJECT",
     },
   },
   ["The Smoldering Ruins of Thaurissan,Listen to "] = {
@@ -33779,6 +33818,7 @@ pfDB["quests"]["enUS"] = {
       ["Oralius"] = "NPC",
     },
     ["spawn"] = {
+      ["Soft Dirt Mound,1"] = "OBJECT",
     },
   },
   ["An Orphan Looking For a Home,Speak to Q"] = {
@@ -40477,6 +40517,10 @@ pfDB["quests"]["enUS"] = {
       ["Greta Mosshoof"] = "NPC",
     },
     ["spawn"] = {
+      ["Brazier of Pain,1"] = "OBJECT",
+      ["Brazier of Malice,1"] = "OBJECT",
+      ["Brazier of Suffering,1"] = "OBJECT",
+      ["Brazier of Hatred,1"] = "OBJECT",
     },
   },
   ["Breastplate of the Chromatic Flight,To forge t"] = {
@@ -41334,6 +41378,7 @@ pfDB["quests"]["enUS"] = {
     },
     ["spawn"] = {
       ["Archivist Galford,1"] = "NPC",
+      ["Scarlet Archive,1"] = "OBJECT",
     },
   },
   ["Remorseful Highborne,Speak with"] = {
@@ -41752,6 +41797,8 @@ pfDB["quests"]["enUS"] = {
     },
     ["spawn"] = {
       ["Doctor Theolen Krastinov,1"] = "NPC",
+      ["Remains of Eva Sarkhoff,1"] = "OBJECT",
+      ["Remains of Lucien Sarkhoff,1"] = "OBJECT",
     },
   },
   ["Kirtonos the Herald,Return to "] = {
@@ -46402,6 +46449,7 @@ pfDB["quests"]["enUS"] = {
       ["Tammra Windfield"] = "NPC",
     },
     ["spawn"] = {
+      ["Gaea Dirt Mound,10"] = "OBJECT",
     },
     ["item"] = {
       ["Enchanted Gaea Seeds,1"] = "ITEM",
@@ -46648,6 +46696,7 @@ pfDB["quests"]["enUS"] = {
       ["Novice Elreth"] = "NPC",
     },
     ["spawn"] = {
+      ["Marla\'s Grave,1"] = "OBJECT",
     },
     ["item"] = {
     },
@@ -49882,6 +49931,7 @@ pfDB["quests"]["enUS"] = {
       ["Sage Korolusk"] = "NPC",
     },
     ["spawn"] = {
+      ["Skeletal Remains of Kariel Winthalus,1"] = "OBJECT",
     },
   },
   ["Elven Legends,Search Dir"] = {
@@ -57805,6 +57855,7 @@ pfDB["quests"]["enUS"] = {
       ["Ak\'Zeloth"] = "NPC",
     },
     ["spawn"] = {
+      ["The Altar of Fire,1"] = "OBJECT",
     },
   },
   ["Shrouded in Nightmare,Find someo"] = {
@@ -62401,6 +62452,8 @@ pfDB["quests"]["enUS"] = {
       ["Lunar Festival Harbinger"] = "NPC",
     },
     ["spawn"] = {
+      ["Firework Launcher,8"] = "OBJECT",
+      ["Cluster Launcher,2"] = "OBJECT",
     },
   },
   ["Elune\'s Blessing,Summon Ome"] = {
@@ -67908,6 +67961,10 @@ pfDB["quests"]["enUS"] = {
     ["end"] = {
     },
     ["spawn"] = {
+      ["Flame of Dire Maul,1"] = "OBJECT",
+      ["Flame of Blackrock Spire,1"] = "OBJECT",
+      ["Flame of Stratholme,1"] = "OBJECT",
+      ["Flame of the Scholomance,1"] = "OBJECT",
     },
   },
   ["Major Mana Potion,"] = {
@@ -67936,6 +67993,10 @@ pfDB["quests"]["enUS"] = {
     ["end"] = {
     },
     ["spawn"] = {
+      ["Flame of Azshara,1"] = "OBJECT",
+      ["Flame of Silithus,1"] = "OBJECT",
+      ["Flame of Un\'Goro,1"] = "OBJECT",
+      ["Flame of Winterspring,1"] = "OBJECT",
     },
   },
   ["Wild Fires in the Eastern Kingdoms,Visit the "] = {
@@ -67949,6 +68010,10 @@ pfDB["quests"]["enUS"] = {
     ["end"] = {
     },
     ["spawn"] = {
+      ["Flame of the Blasted Lands,1"] = "OBJECT",
+      ["Flame of the Plaguelands,1"] = "OBJECT",
+      ["Flame of the Hinterlands,1"] = "OBJECT",
+      ["Flame of Searing Gorge,1"] = "OBJECT",
     },
   },
   ["Stealing Orgrimmar\'s Flame,Return the"] = {
@@ -68124,6 +68189,9 @@ pfDB["quests"]["enUS"] = {
       ["Festival Talespinner"] = "NPC",
     },
     ["spawn"] = {
+      ["Flame of Orgrimmar,1"] = "OBJECT",
+      ["Flame of Thunder Bluff,1"] = "OBJECT",
+      ["Flame of the Undercity,1"] = "OBJECT",
     },
   },
   ["A Light in Dark Places,Find and t"] = {
@@ -68139,6 +68207,10 @@ pfDB["quests"]["enUS"] = {
     ["end"] = {
     },
     ["spawn"] = {
+      ["Flame of Dire Maul,1"] = "OBJECT",
+      ["Flame of Blackrock Spire,1"] = "OBJECT",
+      ["Flame of Stratholme,1"] = "OBJECT",
+      ["Flame of the Scholomance,1"] = "OBJECT",
     },
   },
   ["Report to Marshal Bluewall,Speak with"] = {

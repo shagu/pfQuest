@@ -8199,6 +8199,8 @@ pfDB["quests"]["koKR"] = {
       ["크루스크"] = "NPC",
     },
     ["spawn"] = {
+      ["Locked ball and chain,1"] = "OBJECT",
+      ["Locked ball and chain,1"] = "OBJECT",
     },
     ["item"] = {
     },
@@ -8834,6 +8836,7 @@ pfDB["quests"]["koKR"] = {
     ["spawn"] = {
       ["집정관 번사이드,1"] = "NPC",
       ["언덕마루 원로,4"] = "NPC",
+      ["Hillsbrad Proclamation,1"] = "OBJECT",
     },
     ["item"] = {
       ["언덕마루 마을 기록부,1"] = "ITEM",
@@ -9183,6 +9186,9 @@ pfDB["quests"]["koKR"] = {
       ["헬쿨라의 무덤"] = "OBJECT",
     },
     ["spawn"] = {
+      ["Flame of Azel,1"] = "OBJECT",
+      ["Flame of Veraz,1"] = "OBJECT",
+      ["Flame of Uzel,1"] = "OBJECT",
     },
     ["item"] = {
       ["헬쿨라의 마력봉,1"] = "ITEM",
@@ -10539,6 +10545,7 @@ pfDB["quests"]["koKR"] = {
       ["라그 가마슨"] = "NPC",
     },
     ["spawn"] = {
+      ["Cache of Explosives,1"] = "OBJECT",
     },
   },
   ["Plea To The Alliance,Seek out C"] = {
@@ -13085,6 +13092,9 @@ pfDB["quests"]["koKR"] = {
       ["라르 프라울터스크"] = "NPC",
     },
     ["spawn"] = {
+      ["Attack Plan: Valley of Trials,1"] = "OBJECT",
+      ["Attack Plan: Sen\'jin Village,1"] = "OBJECT",
+      ["Attack Plan: Orgrimmar,1"] = "OBJECT",
     },
   },
   ["The New Horde,Report to "] = {
@@ -13914,6 +13924,7 @@ pfDB["quests"]["koKR"] = {
       ["갠 스톤스파이어"] = "NPC",
     },
     ["spawn"] = {
+      ["Bael Modan Flying Machine,1"] = "OBJECT",
     },
   },
   ["Kolkar Leaders,Bring Bara"] = {
@@ -14362,6 +14373,7 @@ pfDB["quests"]["koKR"] = {
       ["통가 룬토템"] = "NPC",
     },
     ["spawn"] = {
+      ["Bubbling Fissure,1"] = "OBJECT",
     },
   },
   ["Tribes at War,Kill 6 Bri"] = {
@@ -14761,6 +14773,9 @@ pfDB["quests"]["koKR"] = {
       ["제어 장치"] = "OBJECT",
     },
     ["spawn"] = {
+      ["Main Control Valve,1"] = "OBJECT",
+      ["Fuel Control Valve,1"] = "OBJECT",
+      ["Regulator Valve,1"] = "OBJECT",
     },
   },
   ["Samophlange,Get the Co"] = {
@@ -14833,6 +14848,9 @@ pfDB["quests"]["koKR"] = {
       ["셀그라 다크쏜"] = "NPC",
     },
     ["spawn"] = {
+      ["Blue Raptor Nest,1"] = "OBJECT",
+      ["Yellow Raptor Nest,1"] = "OBJECT",
+      ["Red Raptor Nest,1"] = "OBJECT",
     },
     ["item"] = {
     },
@@ -15576,6 +15594,8 @@ pfDB["quests"]["koKR"] = {
       ["파수꾼 티샤 문블레이드"] = "NPC",
     },
     ["spawn"] = {
+      ["The Lay of Ameth\'Aran,1"] = "OBJECT",
+      ["The Fall of Ameth\'Aran,1"] = "OBJECT",
     },
   },
   ["Bashal\'Aran,Find the s"] = {
@@ -15642,6 +15662,7 @@ pfDB["quests"]["koKR"] = {
       ["아스테리온"] = "NPC",
     },
     ["spawn"] = {
+      ["Ancient Flame,1"] = "OBJECT",
     },
   },
   ["Tools of the Highborne,Retrieve 7"] = {
@@ -16558,6 +16579,7 @@ pfDB["quests"]["koKR"] = {
       ["파수꾼 멜리리아 프로스트섀도"] = "NPC",
     },
     ["spawn"] = {
+      ["Tome of Mel\'Thandris,1"] = "OBJECT",
     },
   },
   ["Raene\'s Cleansing,Find the G"] = {
@@ -16927,6 +16949,7 @@ pfDB["quests"]["koKR"] = {
       ["조나단 카레빈"] = "NPC",
     },
     ["spawn"] = {
+      ["Mound of Dirt,1"] = "OBJECT",
     },
   },
   ["Answered Questions,Return to "] = {
@@ -18525,6 +18548,8 @@ pfDB["quests"]["koKR"] = {
       ["[4.x 미사용]수호자 델그렌"] = "NPC",
     },
     ["spawn"] = {
+      ["Circle of Imprisonment,1"] = "OBJECT",
+      ["Circle of Imprisonment,1"] = "OBJECT",
     },
   },
   ["The Family and the Fishing Pole,Catch 6 Da"] = {
@@ -18944,6 +18969,7 @@ pfDB["quests"]["koKR"] = {
       ["드자리블"] = "NPC",
     },
     ["spawn"] = {
+      ["Egg of Onyxia,5"] = "OBJECT",
     },
   },
   ["Challenge Overlord Mok\'Morokk,Defeat Mok"] = {
@@ -25181,6 +25207,7 @@ pfDB["quests"]["koKR"] = {
       ["운투와"] = "NPC",
     },
     ["spawn"] = {
+      ["Ju-Ju Heap,4"] = "OBJECT",
     },
   },
   ["Mennet Carkad,Speak with"] = {
@@ -30080,6 +30107,9 @@ pfDB["quests"]["koKR"] = {
       ["그리핀 조련사 탈론액스"] = "NPC",
     },
     ["spawn"] = {
+      ["First Witherbark Cage,1"] = "OBJECT",
+      ["Second Witherbark Cage,1"] = "OBJECT",
+      ["Third Witherbark Cage,1"] = "OBJECT",
     },
   },
   ["The Altar of Zul,Check the "] = {
@@ -30183,6 +30213,7 @@ pfDB["quests"]["koKR"] = {
       ["그리핀 조련사 탈론액스"] = "NPC",
     },
     ["spawn"] = {
+      ["Sharpbeak\'s Cage,1"] = "OBJECT",
     },
     ["item"] = {
     },
@@ -30201,6 +30232,9 @@ pfDB["quests"]["koKR"] = {
       ["오란 스네이크레이드"] = "NPC",
     },
     ["spawn"] = {
+      ["Highvale Records,1"] = "OBJECT",
+      ["Highvale Notes,1"] = "OBJECT",
+      ["Highvale Report,1"] = "OBJECT",
     },
   },
   ["Seeking Strahad,Speak to S"] = {
@@ -32152,6 +32186,10 @@ pfDB["quests"]["koKR"] = {
       ["수습기사 몰트레이크"] = "NPC",
     },
     ["spawn"] = {
+      ["Sentry Brazier,1"] = "OBJECT",
+      ["Sentry Brazier,1"] = "OBJECT",
+      ["Sentry Brazier,1"] = "OBJECT",
+      ["Sentry Brazier,1"] = "OBJECT",
     },
   },
   ["Trinkets...,Open the c"] = {
@@ -33306,6 +33344,7 @@ pfDB["quests"]["koKR"] = {
       ["왕실사학자 아케소누스"] = "NPC",
     },
     ["spawn"] = {
+      ["Thaurissan Relic,12"] = "OBJECT",
     },
   },
   ["The Smoldering Ruins of Thaurissan,Listen to "] = {
@@ -33779,6 +33818,7 @@ pfDB["quests"]["koKR"] = {
       ["오랄리우스"] = "NPC",
     },
     ["spawn"] = {
+      ["Soft Dirt Mound,1"] = "OBJECT",
     },
   },
   ["An Orphan Looking For a Home,Speak to Q"] = {
@@ -40477,6 +40517,10 @@ pfDB["quests"]["koKR"] = {
       ["그레타 모스후프"] = "NPC",
     },
     ["spawn"] = {
+      ["Brazier of Pain,1"] = "OBJECT",
+      ["Brazier of Malice,1"] = "OBJECT",
+      ["Brazier of Suffering,1"] = "OBJECT",
+      ["Brazier of Hatred,1"] = "OBJECT",
     },
   },
   ["Breastplate of the Chromatic Flight,To forge t"] = {
@@ -41334,6 +41378,7 @@ pfDB["quests"]["koKR"] = {
     },
     ["spawn"] = {
       ["교관 갈포드,1"] = "NPC",
+      ["Scarlet Archive,1"] = "OBJECT",
     },
   },
   ["Remorseful Highborne,Speak with"] = {
@@ -41752,6 +41797,8 @@ pfDB["quests"]["koKR"] = {
     },
     ["spawn"] = {
       ["의사 테올렌 크라스티노브,1"] = "NPC",
+      ["Remains of Eva Sarkhoff,1"] = "OBJECT",
+      ["Remains of Lucien Sarkhoff,1"] = "OBJECT",
     },
   },
   ["Kirtonos the Herald,Return to "] = {
@@ -46402,6 +46449,7 @@ pfDB["quests"]["koKR"] = {
       ["탐라 윈드필드"] = "NPC",
     },
     ["spawn"] = {
+      ["Gaea Dirt Mound,10"] = "OBJECT",
     },
     ["item"] = {
       ["마력 깃든 가이아 씨앗,1"] = "ITEM",
@@ -46648,6 +46696,7 @@ pfDB["quests"]["koKR"] = {
       ["수련사제 엘레스"] = "NPC",
     },
     ["spawn"] = {
+      ["Marla\'s Grave,1"] = "OBJECT",
     },
     ["item"] = {
     },
@@ -49882,6 +49931,7 @@ pfDB["quests"]["koKR"] = {
       ["현자 코로루스크"] = "NPC",
     },
     ["spawn"] = {
+      ["Skeletal Remains of Kariel Winthalus,1"] = "OBJECT",
     },
   },
   ["Elven Legends,Search Dir"] = {
@@ -57805,6 +57855,7 @@ pfDB["quests"]["koKR"] = {
       ["아크젤로스"] = "NPC",
     },
     ["spawn"] = {
+      ["The Altar of Fire,1"] = "OBJECT",
     },
   },
   ["Shrouded in Nightmare,Find someo"] = {
@@ -62401,6 +62452,8 @@ pfDB["quests"]["koKR"] = {
       ["달의 축제 사절"] = "NPC",
     },
     ["spawn"] = {
+      ["Firework Launcher,8"] = "OBJECT",
+      ["Cluster Launcher,2"] = "OBJECT",
     },
   },
   ["Elune\'s Blessing,Summon Ome"] = {
@@ -67908,6 +67961,10 @@ pfDB["quests"]["koKR"] = {
     ["end"] = {
     },
     ["spawn"] = {
+      ["Flame of Dire Maul,1"] = "OBJECT",
+      ["Flame of Blackrock Spire,1"] = "OBJECT",
+      ["Flame of Stratholme,1"] = "OBJECT",
+      ["Flame of the Scholomance,1"] = "OBJECT",
     },
   },
   ["Major Mana Potion,"] = {
@@ -67936,6 +67993,10 @@ pfDB["quests"]["koKR"] = {
     ["end"] = {
     },
     ["spawn"] = {
+      ["Flame of Azshara,1"] = "OBJECT",
+      ["Flame of Silithus,1"] = "OBJECT",
+      ["Flame of Un\'Goro,1"] = "OBJECT",
+      ["Flame of Winterspring,1"] = "OBJECT",
     },
   },
   ["Wild Fires in the Eastern Kingdoms,Visit the "] = {
@@ -67949,6 +68010,10 @@ pfDB["quests"]["koKR"] = {
     ["end"] = {
     },
     ["spawn"] = {
+      ["Flame of the Blasted Lands,1"] = "OBJECT",
+      ["Flame of the Plaguelands,1"] = "OBJECT",
+      ["Flame of the Hinterlands,1"] = "OBJECT",
+      ["Flame of Searing Gorge,1"] = "OBJECT",
     },
   },
   ["Stealing Orgrimmar\'s Flame,Return the"] = {
@@ -68124,6 +68189,9 @@ pfDB["quests"]["koKR"] = {
       ["한여름 축제 이야기꾼"] = "NPC",
     },
     ["spawn"] = {
+      ["Flame of Orgrimmar,1"] = "OBJECT",
+      ["Flame of Thunder Bluff,1"] = "OBJECT",
+      ["Flame of the Undercity,1"] = "OBJECT",
     },
   },
   ["A Light in Dark Places,Find and t"] = {
@@ -68139,6 +68207,10 @@ pfDB["quests"]["koKR"] = {
     ["end"] = {
     },
     ["spawn"] = {
+      ["Flame of Dire Maul,1"] = "OBJECT",
+      ["Flame of Blackrock Spire,1"] = "OBJECT",
+      ["Flame of Stratholme,1"] = "OBJECT",
+      ["Flame of the Scholomance,1"] = "OBJECT",
     },
   },
   ["Report to Marshal Bluewall,Speak with"] = {

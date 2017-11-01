@@ -8199,6 +8199,8 @@ pfDB["quests"]["zhCN"] = {
       ["克鲁斯克"] = "NPC",
     },
     ["spawn"] = {
+      ["Locked ball and chain,1"] = "OBJECT",
+      ["Locked ball and chain,1"] = "OBJECT",
     },
     ["item"] = {
     },
@@ -8834,6 +8836,7 @@ pfDB["quests"]["zhCN"] = {
     ["spawn"] = {
       ["波恩塞德镇长,1"] = "NPC",
       ["希尔斯布莱德议员,4"] = "NPC",
+      ["Hillsbrad Proclamation,1"] = "OBJECT",
     },
     ["item"] = {
       ["希尔斯布莱德城镇文档,1"] = "ITEM",
@@ -9183,6 +9186,9 @@ pfDB["quests"]["zhCN"] = {
       ["赫尔库拉的墓地"] = "OBJECT",
     },
     ["spawn"] = {
+      ["Flame of Azel,1"] = "OBJECT",
+      ["Flame of Veraz,1"] = "OBJECT",
+      ["Flame of Uzel,1"] = "OBJECT",
     },
     ["item"] = {
       ["赫尔库拉魔棒,1"] = "ITEM",
@@ -10539,6 +10545,7 @@ pfDB["quests"]["zhCN"] = {
       ["拉格·加玛森"] = "NPC",
     },
     ["spawn"] = {
+      ["Cache of Explosives,1"] = "OBJECT",
     },
   },
   ["请求援助,去避难�"] = {
@@ -13085,6 +13092,9 @@ pfDB["quests"]["zhCN"] = {
       ["拉尔·猎齿"] = "NPC",
     },
     ["spawn"] = {
+      ["Attack Plan: Valley of Trials,1"] = "OBJECT",
+      ["Attack Plan: Sen\'jin Village,1"] = "OBJECT",
+      ["Attack Plan: Orgrimmar,1"] = "OBJECT",
     },
   },
   ["新的部落,与高内�"] = {
@@ -13914,6 +13924,7 @@ pfDB["quests"]["zhCN"] = {
       ["加恩·石塔"] = "NPC",
     },
     ["spawn"] = {
+      ["Bael Modan Flying Machine,1"] = "OBJECT",
     },
   },
   ["科卡尔首领,把巴拉�"] = {
@@ -14362,6 +14373,7 @@ pfDB["quests"]["zhCN"] = {
       ["图加·符文图腾"] = "NPC",
     },
     ["spawn"] = {
+      ["Bubbling Fissure,1"] = "OBJECT",
     },
   },
   ["野猪人的内战,杀掉6个"] = {
@@ -14761,6 +14773,9 @@ pfDB["quests"]["zhCN"] = {
       ["控制台"] = "OBJECT",
     },
     ["spawn"] = {
+      ["Main Control Valve,1"] = "OBJECT",
+      ["Fuel Control Valve,1"] = "OBJECT",
+      ["Regulator Valve,1"] = "OBJECT",
     },
   },
   ["什么什么平衡器,从工匠�"] = {
@@ -14833,6 +14848,9 @@ pfDB["quests"]["zhCN"] = {
       ["瑟格拉·黑棘"] = "NPC",
     },
     ["spawn"] = {
+      ["Blue Raptor Nest,1"] = "OBJECT",
+      ["Yellow Raptor Nest,1"] = "OBJECT",
+      ["Red Raptor Nest,1"] = "OBJECT",
     },
     ["item"] = {
     },
@@ -15576,6 +15594,8 @@ pfDB["quests"]["zhCN"] = {
       ["哨兵坦莎·月刃"] = "NPC",
     },
     ["spawn"] = {
+      ["The Lay of Ameth\'Aran,1"] = "OBJECT",
+      ["The Fall of Ameth\'Aran,1"] = "OBJECT",
     },
   },
   ["巴莎兰,到巴莎�"] = {
@@ -15642,6 +15662,7 @@ pfDB["quests"]["zhCN"] = {
       ["阿斯特利安"] = "NPC",
     },
     ["spawn"] = {
+      ["Ancient Flame,1"] = "OBJECT",
     },
   },
   ["上层精灵的工具,帮奥伯�"] = {
@@ -16558,6 +16579,7 @@ pfDB["quests"]["zhCN"] = {
       ["哨兵梅丽瑞亚·霜影"] = "NPC",
     },
     ["spawn"] = {
+      ["Tome of Mel\'Thandris,1"] = "OBJECT",
     },
   },
   ["莱恩的净化,找到发�"] = {
@@ -16927,6 +16949,7 @@ pfDB["quests"]["zhCN"] = {
       ["乔纳森·卡尔文"] = "NPC",
     },
     ["spawn"] = {
+      ["Mound of Dirt,1"] = "OBJECT",
     },
   },
   ["问题的答案,回到达�"] = {
@@ -18525,6 +18548,8 @@ pfDB["quests"]["zhCN"] = {
       ["净化者德尔葛兰"] = "NPC",
     },
     ["spawn"] = {
+      ["Circle of Imprisonment,1"] = "OBJECT",
+      ["Circle of Imprisonment,1"] = "OBJECT",
     },
   },
   ["钓鱼世家,为奥伯�"] = {
@@ -18944,6 +18969,7 @@ pfDB["quests"]["zhCN"] = {
       ["德拉兹辛比"] = "NPC",
     },
     ["spawn"] = {
+      ["Egg of Onyxia,5"] = "OBJECT",
     },
   },
   ["挑战莫格穆洛克,打败莫�"] = {
@@ -25181,6 +25207,7 @@ pfDB["quests"]["zhCN"] = {
       ["安苏瓦"] = "NPC",
     },
     ["spawn"] = {
+      ["Ju-Ju Heap,4"] = "OBJECT",
     },
   },
   ["米奈特·卡加德,与幽暗�"] = {
@@ -30080,6 +30107,9 @@ pfDB["quests"]["zhCN"] = {
       ["狮鹫兽管理员沙拉克·鹰斧"] = "NPC",
     },
     ["spawn"] = {
+      ["First Witherbark Cage,1"] = "OBJECT",
+      ["Second Witherbark Cage,1"] = "OBJECT",
+      ["Third Witherbark Cage,1"] = "OBJECT",
     },
   },
   ["祖尔祭坛,检查祖�"] = {
@@ -30183,6 +30213,7 @@ pfDB["quests"]["zhCN"] = {
       ["狮鹫兽管理员沙拉克·鹰斧"] = "NPC",
     },
     ["spawn"] = {
+      ["Sharpbeak\'s Cage,1"] = "OBJECT",
     },
     ["item"] = {
     },
@@ -30201,6 +30232,9 @@ pfDB["quests"]["zhCN"] = {
       ["奥兰·斯内克威瑟"] = "NPC",
     },
     ["spawn"] = {
+      ["Highvale Records,1"] = "OBJECT",
+      ["Highvale Notes,1"] = "OBJECT",
+      ["Highvale Report,1"] = "OBJECT",
     },
   },
   ["寻找斯坦哈德,与棘齿�"] = {
@@ -32152,6 +32186,10 @@ pfDB["quests"]["zhCN"] = {
       ["侍卫玛特拉克"] = "NPC",
     },
     ["spawn"] = {
+      ["Sentry Brazier,1"] = "OBJECT",
+      ["Sentry Brazier,1"] = "OBJECT",
+      ["Sentry Brazier,1"] = "OBJECT",
+      ["Sentry Brazier,1"] = "OBJECT",
     },
   },
   ["打开箱子…,打开箱�"] = {
@@ -33306,6 +33344,7 @@ pfDB["quests"]["zhCN"] = {
       ["皇家历史学家阿克瑟努斯"] = "NPC",
     },
     ["spawn"] = {
+      ["Thaurissan Relic,12"] = "OBJECT",
     },
   },
   ["索瑞森废墟,听皇家�"] = {
@@ -33779,6 +33818,7 @@ pfDB["quests"]["zhCN"] = {
       ["奥拉留斯"] = "NPC",
     },
     ["spawn"] = {
+      ["Soft Dirt Mound,1"] = "OBJECT",
     },
   },
   ["领养孤儿,与千针�"] = {
@@ -40477,6 +40517,10 @@ pfDB["quests"]["zhCN"] = {
       ["格雷塔·苔蹄"] = "NPC",
     },
     ["spawn"] = {
+      ["Brazier of Pain,1"] = "OBJECT",
+      ["Brazier of Malice,1"] = "OBJECT",
+      ["Brazier of Suffering,1"] = "OBJECT",
+      ["Brazier of Hatred,1"] = "OBJECT",
     },
   },
   ["多彩巨龙胸甲,为了铸�"] = {
@@ -41334,6 +41378,7 @@ pfDB["quests"]["zhCN"] = {
     },
     ["spawn"] = {
       ["档案管理员加尔福特,1"] = "NPC",
+      ["Scarlet Archive,1"] = "OBJECT",
     },
   },
   ["悔恨的上层精灵,和坠星�"] = {
@@ -41752,6 +41797,8 @@ pfDB["quests"]["zhCN"] = {
     },
     ["spawn"] = {
       ["瑟尔林·卡斯迪诺夫教授,1"] = "NPC",
+      ["Remains of Eva Sarkhoff,1"] = "OBJECT",
+      ["Remains of Lucien Sarkhoff,1"] = "OBJECT",
     },
   },
   ["传令官基尔图诺斯,带着无�"] = {
@@ -46402,6 +46449,7 @@ pfDB["quests"]["zhCN"] = {
       ["塔姆拉·荒原"] = "NPC",
     },
     ["spawn"] = {
+      ["Gaea Dirt Mound,10"] = "OBJECT",
     },
     ["item"] = {
       ["附有魔法的盖亚之种,1"] = "ITEM",
@@ -46648,6 +46696,7 @@ pfDB["quests"]["zhCN"] = {
       ["新兵艾尔雷斯"] = "NPC",
     },
     ["spawn"] = {
+      ["Marla\'s Grave,1"] = "OBJECT",
     },
     ["item"] = {
     },
@@ -49882,6 +49931,7 @@ pfDB["quests"]["zhCN"] = {
       ["先知科鲁拉克"] = "NPC",
     },
     ["spawn"] = {
+      ["Skeletal Remains of Kariel Winthalus,1"] = "OBJECT",
     },
   },
   ["精灵的传说,到厄运�"] = {
@@ -57805,6 +57855,7 @@ pfDB["quests"]["zhCN"] = {
       ["雅克塞罗斯"] = "NPC",
     },
     ["spawn"] = {
+      ["The Altar of Fire,1"] = "OBJECT",
     },
   },
   ["梦魇的缠绕,寻找能�"] = {
@@ -62401,6 +62452,8 @@ pfDB["quests"]["zhCN"] = {
       ["新年预告者"] = "NPC",
     },
     ["spawn"] = {
+      ["Firework Launcher,8"] = "OBJECT",
+      ["Cluster Launcher,2"] = "OBJECT",
     },
   },
   ["艾露恩的祝福,召唤年�"] = {
@@ -67908,6 +67961,10 @@ pfDB["quests"]["zhCN"] = {
     ["end"] = {
     },
     ["spawn"] = {
+      ["Flame of Dire Maul,1"] = "OBJECT",
+      ["Flame of Blackrock Spire,1"] = "OBJECT",
+      ["Flame of Stratholme,1"] = "OBJECT",
+      ["Flame of the Scholomance,1"] = "OBJECT",
     },
   },
   ["极效法力药水,"] = {
@@ -67936,6 +67993,10 @@ pfDB["quests"]["zhCN"] = {
     ["end"] = {
     },
     ["spawn"] = {
+      ["Flame of Azshara,1"] = "OBJECT",
+      ["Flame of Silithus,1"] = "OBJECT",
+      ["Flame of Un\'Goro,1"] = "OBJECT",
+      ["Flame of Winterspring,1"] = "OBJECT",
     },
   },
   ["东部王国的野火,造访诅�"] = {
@@ -67949,6 +68010,10 @@ pfDB["quests"]["zhCN"] = {
     ["end"] = {
     },
     ["spawn"] = {
+      ["Flame of the Blasted Lands,1"] = "OBJECT",
+      ["Flame of the Plaguelands,1"] = "OBJECT",
+      ["Flame of the Hinterlands,1"] = "OBJECT",
+      ["Flame of Searing Gorge,1"] = "OBJECT",
     },
   },
   ["盗取奥格瑞玛的烈焰,将奥格�"] = {
@@ -68124,6 +68189,9 @@ pfDB["quests"]["zhCN"] = {
       ["节日诗人"] = "NPC",
     },
     ["spawn"] = {
+      ["Flame of Orgrimmar,1"] = "OBJECT",
+      ["Flame of Thunder Bluff,1"] = "OBJECT",
+      ["Flame of the Undercity,1"] = "OBJECT",
     },
   },
   ["黑暗中的光明,找到并�"] = {
@@ -68139,6 +68207,10 @@ pfDB["quests"]["zhCN"] = {
     ["end"] = {
     },
     ["spawn"] = {
+      ["Flame of Dire Maul,1"] = "OBJECT",
+      ["Flame of Blackrock Spire,1"] = "OBJECT",
+      ["Flame of Stratholme,1"] = "OBJECT",
+      ["Flame of the Scholomance,1"] = "OBJECT",
     },
   },
   ["向布鲁沃尔元帅报告,与佐拉�"] = {

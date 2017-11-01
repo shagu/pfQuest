@@ -183,7 +183,7 @@ while q1:fetch(quest_template, "a") do
         local q2 = con:execute(" \
           select * from gameobject_template \
           INNER JOIN locales_gameobject ON gameobject_template.entry = locales_gameobject.entry \
-          WHERE gameobject_template.entry = " .. quest_template["ReqCreatureOrGOId" .. i]
+          WHERE gameobject_template.entry = " .. math.abs(quest_template["ReqCreatureOrGOId" .. i])
         )
 
         while q2:fetch(spawns, "a") do
