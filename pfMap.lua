@@ -101,6 +101,7 @@ local function minimap_indoor()
 end
 
 local function str2rgb(text)
+  if not text then return 1, 1, 1 end
   if pfQuest_colors[text] then return unpack(pfQuest_colors[text]) end
   if rgbcache[text] then return unpack(rgbcache[text]) end
   local counter = 1
