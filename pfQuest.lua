@@ -382,7 +382,13 @@ pfQuest:SetScript("OnEvent", function()
     -- never update in manual and hidden mode
     if pfQuest_config["trackingmethod"] == 3 then return end
     if pfQuest_config["trackingmethod"] == 4 then return end
-    if event == "PLAYER_LEVEL_UP" or event == "QUEST_FINISHED" then
+    if event == "PLAYER_LEVEL_UP" then
+      pfMap:DeleteNode("PFQUEST")
+      pfMap:UpdateNodes()
+
+      questTrackedCache = {}
+      pfQuest:Show()
+    elseif event == "QUEST_FINISHED" then
       UpdateQuestLogID(nil)
     else
       UpdateQuestLogID(arg1)
