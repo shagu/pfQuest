@@ -360,6 +360,7 @@ end
 
 pfQuest = CreateFrame("Frame")
 pfQuest:RegisterEvent("QUEST_LOG_UPDATE")
+pfQuest:RegisterEvent("QUEST_FINISHED")
 pfQuest:RegisterEvent("QUEST_WATCH_UPDATE")
 pfQuest:RegisterEvent("PLAYER_LEVEL_UP")
 pfQuest:RegisterEvent("ADDON_LOADED")
@@ -381,7 +382,7 @@ pfQuest:SetScript("OnEvent", function()
     -- never update in manual and hidden mode
     if pfQuest_config["trackingmethod"] == 3 then return end
     if pfQuest_config["trackingmethod"] == 4 then return end
-    if event == "PLAYER_LEVEL_UP" then
+    if event == "PLAYER_LEVEL_UP" or event == "QUEST_FINISHED" then
       UpdateQuestLogID(nil)
     else
       UpdateQuestLogID(arg1)
