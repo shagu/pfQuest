@@ -454,32 +454,50 @@ end
 
 local pfQuestHookSetItemRef = SetItemRef
 function SetItemRef(link, text, button)
-  local isQuest, _, _    = string.find(link, "quest:(%d+):.*")
+  local isQuest, _, id    = string.find(link, "quest:(%d+):.*")
   local isQuest2, _, _   = string.find(link, "quest2:.*")
   local _, _, questLevel = string.find(link, "quest:%d+:(%d+)")
 
   local playerHasQuest = false
 
   if isQuest or isQuest2 then
+    local quests = pfDatabase["quests"]
+
     ShowUIPanel(ItemRefTooltip)
     ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
 
     local hasTitle, _, questTitle = string.find(text, ".*|h%[(.*)%]|h.*")
     if hasTitle then ItemRefTooltip:AddLine(questTitle, 1,1,0) end
 
+    -- scan for questdb entry
+    local qname = nil
+    for name, tab in pairs(quests) do
+      local f, t, questname, _ = strfind(name, "(.*),.*")
+      if questname == questTitle then
+        qname = name
+        if id and tab.id == id then break end
+      end
+    end
+
+    -- add database entries if existing
+    if quests[qname] then
+      if quests[qname]["obj"] then
+        ItemRefTooltip:AddLine(quests[qname]["obj"], 1,1,1,true)
+      end
+
+      if quests[qname]["log"] and quests[qname]["objectives"] then
+        ItemRefTooltip:AddLine(" ", 0,0,0)
+      end
+
+      if quests[qname]["log"] then
+        ItemRefTooltip:AddLine(quests[qname]["log"], .6,1,.9,true)
+      end
+    end
+
+    -- check questlog for active quest
     for i=1, GetNumQuestLogEntries() do
       if GetQuestLogTitle(i) == questTitle then
         playerHasQuest = true
-        SelectQuestLogEntry(i)
-        local _, text = GetQuestLogQuestText()
-        ItemRefTooltip:AddLine(text,1,1,1,true)
-
-        for j=1, GetNumQuestLeaderBoards() do
-          if j == 1 and GetNumQuestLeaderBoards() > 0 then ItemRefTooltip:AddLine("|cffffffff ") end
-          local desc, type, done = GetQuestLogLeaderBoard(j)
-          if done then ItemRefTooltip:AddLine("|cffaaffaa"..desc.."|r")
-          else ItemRefTooltip:AddLine("|cffffffff"..desc.."|r") end
-        end
       end
     end
 
@@ -487,6 +505,7 @@ function SetItemRef(link, text, button)
       ItemRefTooltip:AddLine("You don't have this quest.", 1, .8, .8)
     end
 
+    -- extract quest level
     if questLevel and questLevel ~= 0 and questLevel ~= "0" then
       local color = GetDifficultyColor(questLevel)
       ItemRefTooltip:AddLine("Quest Level " .. questLevel, color.r, color.g, color.b)
