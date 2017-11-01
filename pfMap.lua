@@ -194,42 +194,20 @@ function pfMap:GetMapID(cid, mid)
   return pfMap:GetMapIDByName(name)
 end
 
-function pfMap:AddNode(addon, map, coords, icon, title, description, translucent, func, vertex)
+function pfMap:AddNode(addon, map, coords, icon, title, description, translucent, func, vertex, layer)
   if not pfMap.nodes[addon] then pfMap.nodes[addon] = {} end
   if not pfMap.nodes[addon][map] then pfMap.nodes[addon][map] = {} end
+  if not pfMap.nodes[addon][map][coords] then pfMap.nodes[addon][map][coords] = {} end
 
-  if pfMap.nodes[addon][map][coords] then
-    -- return early on already added nodes
-    if pfMap.nodes[addon][map][coords].title == title then return end
-    for id,data in pairs(pfMap.nodes[addon][map][coords].description) do
-      if strfind(data, title) then return end
-    end
-
-    -- extend current description
-    table.insert(pfMap.nodes[addon][map][coords].description, "\n|cff33ffcc" ..  title .. "|r")
-    table.insert(pfMap.nodes[addon][map][coords].description, description[2])
-
-    -- prioritize symbols of empties and plain colors over custom
-    if pfMap.nodes[addon][map][coords].icon ~= icon then
-      if strfind(icon, "startend") then
-        pfMap.nodes[addon][map][coords].vertex = vertex
-        pfMap.nodes[addon][map][coords].icon = icon
-      elseif not strfind(pfMap.nodes[addon][map][coords].icon, "_c") and strfind(icon, "_c") then
-        pfMap.nodes[addon][map][coords].vertex = vertex
-        pfMap.nodes[addon][map][coords].icon = icon
-      elseif not strfind(pfMap.nodes[addon][map][coords].icon, "_c") and
-      not strfind(pfMap.nodes[addon][map][coords].icon, "startend") and
-      ( vertex and vertex[1] == 0 and vertex[2] == 0 and vertex[3] == 0 ) then
-        pfMap.nodes[addon][map][coords].vertex = vertex
-        pfMap.nodes[addon][map][coords].icon = icon
-        return
-      end
-    end
+  if pfMap.nodes[addon][map][coords][title] and pfMap.nodes[addon][map][coords][title].layer and layer and
+   pfMap.nodes[addon][map][coords][title].layer >= layer then
+     -- node with same title but higher layer already exists
+    return
   else
     -- create new node
-    pfMap.nodes[addon][map][coords] = {
+    pfMap.nodes[addon][map][coords][title] = {
+      layer = layer,
       icon = icon,
-      title = title,
       description = description,
       addon = addon,
       translucent = translucent,
@@ -247,8 +225,11 @@ function pfMap:DeleteNode(addon, title)
   elseif pfMap.nodes[addon] then
     for map, foo in pairs(pfMap.nodes[addon]) do
       for coords, node in pairs(pfMap.nodes[addon][map]) do
-        if pfMap.nodes[addon][map][coords].title == title then
-          pfMap.nodes[addon][map][coords] = nil
+        if pfMap.nodes[addon][map][coords][title] then
+          pfMap.nodes[addon][map][coords][title] = nil
+          if IsEmpty(pfMap.nodes[addon][map][coords]) then
+            pfMap.nodes[addon][map][coords] = nil
+          end
         end
       end
     end
@@ -263,9 +244,16 @@ function pfMap:BuildNode(name, parent)
 
   f:SetScript("OnEnter", function()
     WorldMapTooltip:SetOwner(this, ANCHOR_BOTTOMLEFT)
-    WorldMapTooltip:SetText(this.node.title, .3, 1, .8)
-    for id, desc in pairs(this.node.description) do
-      WorldMapTooltip:AddLine(desc, 1, 1, 1)
+    WorldMapTooltip:SetText(this.title, .3, 1, .8)
+
+    for title, point in pairs(this.node) do
+      if title ~= this.title then
+        WorldMapTooltip:AddLine(" ", .3, 1, .8)
+        WorldMapTooltip:AddLine(title, .3, 1, .8)
+      end
+      for id, desc in pairs(point.description) do
+        WorldMapTooltip:AddLine(desc, 1, 1, 1)
+      end
     end
     WorldMapTooltip:Show()
   end)
@@ -281,35 +269,46 @@ function pfMap:BuildNode(name, parent)
 end
 
 function pfMap:UpdateNode(frame, node)
-  if node.icon then
-    frame.tex:SetTexture(node.icon)
-    frame.tex:SetVertexColor(1,1,1)
-  else
-    frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\node")
-    local r,g,b = str2rgb(node.title)
-    frame.tex:SetVertexColor(r,g,b,1)
-  end
+  frame.layer = -1
 
-  if node.icon and node.vertex then
-    local r, g, b = unpack(node.vertex)
-    if r > 0 or g > 0 or b > 0 then
-      frame.tex:SetVertexColor(r, g, b, 1)
-    end
-  end
+  for title, tab in pairs(node) do
+    tab.layer = tab.layer or 0
+    if tab.layer > frame.layer then
+      -- set title and texture to the entry with highest layer
+      frame.layer = tab.layer
+      frame.title = title
 
-  if node.func then
-    frame:SetScript("OnClick", node.func)
-  else
-    frame:SetScript("OnClick", function()
-      if IsShiftKeyDown() then
-        pfMap:DeleteNode(this.node.addon, this.node.title)
-        pfQuest_history[this.node.title] = true
-        pfMap:UpdateNodes()
+      if tab.icon then
+        frame.tex:SetTexture(tab.icon)
+        frame.tex:SetVertexColor(1,1,1)
       else
-        pfQuest_colors[this.node.title] = { str2rgb(this.node.title .. GetTime()) }
-        pfMap:UpdateNodes()
+        frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\node")
+        local r,g,b = str2rgb(title)
+        frame.tex:SetVertexColor(r,g,b,1)
       end
-    end)
+
+      if tab.icon and tab.vertex then
+        local r, g, b = unpack(tab.vertex)
+        if r > 0 or g > 0 or b > 0 then
+          frame.tex:SetVertexColor(r, g, b, 1)
+        end
+      end
+
+      if tab.func then
+        frame:SetScript("OnClick", tab.func)
+      else
+        frame:SetScript("OnClick", function()
+          if IsShiftKeyDown() then
+            pfMap:DeleteNode(this.node[this.title].addon, this.title)
+            pfQuest_history[this.title] = true
+            pfMap:UpdateNodes()
+          else
+            pfQuest_colors[this.title] = { str2rgb(this.title .. GetTime()) }
+            pfMap:UpdateNodes()
+          end
+        end)
+      end
+    end
   end
 
   frame.node = node
@@ -328,7 +327,6 @@ function pfMap:UpdateNodes()
   for addon, _ in pairs(pfMap.nodes) do
     if pfMap.nodes[addon][map] then
       for coords, node in pairs(pfMap.nodes[addon][map]) do
-
         if not pfMap.pins[i] then
           pfMap.pins[i] = pfMap:BuildNode("pfMapPin" .. i, WorldMapButton)
         end
