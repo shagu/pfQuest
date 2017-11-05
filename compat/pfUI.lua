@@ -25,6 +25,10 @@ if not pfUI then
     },
     ["global"] = {
       ["font_size"] = 12
+    },
+    -- fix for old questie releases
+    ["disabled"] = {
+      ["minimap"] = "1"
     }
   }
 end
