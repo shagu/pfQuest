@@ -2,7 +2,7 @@
 
 ## Setup Dependencies
 
-	pacman -S lxc libmariadbclient php php-gd
+	pacman -S lxc libmariadbclient php php-gd lua lua-sql-mysql
 
 ## Setup Database LXC Container
 
