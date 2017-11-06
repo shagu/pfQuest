@@ -66,6 +66,7 @@ foreach ($locales as $loc_id => $loc_name) {
       creature.position_x AS x,
       creature.position_y AS y,
       creature.map AS map,
+      creature.spawntimesecs AS respawn,
       aowow.aowow_zones.mapID AS mapID,
       aowow.aowow_zones.areatableID AS zone,
       aowow.aowow_zones.x_max AS x_max,
@@ -100,6 +101,7 @@ foreach ($locales as $loc_id => $loc_name) {
       gameobject.position_x AS x,
       gameobject.position_y AS y,
       gameobject.map AS map,
+      gameobject.spawntimesecs AS respawn,
       aowow.aowow_zones.mapID AS mapID,
       aowow.aowow_zones.areatableID AS zone,
       aowow.aowow_zones.x_max AS x_max,
@@ -177,6 +179,7 @@ foreach ($locales as $loc_id => $loc_name) {
       $A = $creature_fetch["A"];
       $minlevel = $creature_fetch["minlevel"];
       $maxlevel = $creature_fetch["maxlevel"];
+      $respawn = $creature_fetch["respawn"];
 
       if(isset($y) && isset($y_min)){
         $tx = round(100 - ($y - $y_min) / (($y_max - $y_min)/100),1);
@@ -208,6 +211,9 @@ foreach ($locales as $loc_id => $loc_name) {
         if (@ImageColorAt($map, round($tx * 10), round($ty * 10)) === 0) {
           $spawnSection1 = "  ['$name'] =\n";
           $spawnSection2 = "  {\n    ['type'] = '$type',\n    ['faction'] = '$faction',\n    ['level'] = '$level',\n";
+          if (isset($respawn)) {
+            $spawnSection2 = $spawnSection2 . "    ['respawn'] = '$respawn',\n";
+          }
           $spawnSection3 = "    ['coords'] = \n    {\n";
           $spawnSection4 = $spawnSection4 . "      [$count] = '$tx,$ty,$zone',\n";
           $spawnSection5 = "    },\n  },\n";
@@ -223,6 +229,9 @@ foreach ($locales as $loc_id => $loc_name) {
         if($spawnSection1 == "") {
           $spawnSection1 = "  ['$name'] =\n";
           $spawnSection2 = "  {\n    ['type'] = '$type',\n    ['faction'] = '$faction',\n    ['level'] = '$level',\n";
+          if (isset($respawn)) {
+            $spawnSection2 = $spawnSection2 . "    ['respawn'] = '$respawn',\n";
+          }
           $spawnSection5 = "  },\n";
         }
       }
