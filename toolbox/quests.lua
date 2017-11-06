@@ -84,9 +84,11 @@ while q1:fetch(quest_template, "a") do
     end
   end
 
+  --[[ maybe later
   if quest_template.NextQuestInChain and quest_template.NextQuestInChain ~= "0" then
     print("    [\"next\"] = " .. quest_template.NextQuestInChain .. ",")
   end
+  ]]--
 
   if quest_template.Details and quest_template.Details ~= "" then
     print("    [\"log\"] = \"" .. sanitize(details) .. "\",")
