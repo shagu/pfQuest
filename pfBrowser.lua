@@ -184,7 +184,7 @@ local function CreateItemEntry(i)
 
   f:SetScript("OnClick", function()
     local link = "item:"..this.itemID..":0:0:0"
-    local text = this.itemColor .."|H" .. link .. "|h["..this.itemName.."]|h|r"
+    local text = ( this.itemColor or "|cffffffff" ) .."|H" .. link .. "|h["..this.itemName.."]|h|r"
     SetItemRef(link, text, arg1)
   end)
 
