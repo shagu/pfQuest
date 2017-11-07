@@ -692,7 +692,7 @@ function pfBrowser:SearchQuest(search)
   for quest, object in pairs(database) do
     local f, t, questname, _ = strfind(quest, "(.*),.*")
 
-    if (strfind(strlower(questname), strlower(search))) then
+    if questname and (strfind(strlower(questname), strlower(search))) then
       i = i + 1
 
       if i >= search_limit then break end
