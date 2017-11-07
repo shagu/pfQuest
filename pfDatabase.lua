@@ -403,6 +403,8 @@ function pfDatabase:SearchQuests(zone, meta)
 
           if pfQuest_history[meta["quest"]] then
             break
+          elseif meta["hidelow"] and quests[title]["lvl"] and quests[title]["lvl"] < UnitLevel("player") - 9 then
+            break
           elseif quests[title]["pre"] then
             _, _, pre = strfind(quests[title]["pre"], "(.*),.*")
             if not pfQuest_history[pre] then break end

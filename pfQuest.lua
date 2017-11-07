@@ -3,6 +3,7 @@ pfQuest_defconfig = {
   ["trackingmethod"] = 1,
   ["allquestgivers"] = "1",
   ["currentquestgivers"] = "1", -- show quest givers for active quests
+  ["showlowlevel"] = "1",
   ["minimapnodes"] = "1", -- hide all minimap entries
   ["questlogbuttons"] = "1", -- shows buttons inside the questlog
   ["worldmapmenu"] = "1", -- shows the dropdown selection in worldmap
@@ -412,6 +413,9 @@ pfQuest:SetScript("OnUpdate", function()
   if this.scan >= this.smax then
     if pfQuest_config["allquestgivers"] == "1" then
       local meta = { ["allquests"] = true }
+      if pfQuest_config["showlowlevel"] == "0" then
+        meta["hidelow"] = true
+      end
       pfDatabase:SearchQuests(nil, meta)
     end
 
