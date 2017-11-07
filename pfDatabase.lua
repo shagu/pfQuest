@@ -133,6 +133,7 @@ function pfDatabase:BuildTooltipInfo(meta)
   if meta["quest"] then
     title = meta["quest"]
     table.insert(description, meta["spawntype"] .. ": " .. meta["spawn"] .. "|cffaaaaaa (" .. meta["x"] .. "," .. meta["y"] .. ")")
+    if not meta["texture"] and meta["respawn"] then table.insert(description, "Respawn: " .. meta["respawn"]) end
     if meta["item"] and meta["droprate"] then
       table.insert(description, "Loot: " .. ( meta["itemlink"] or meta["item"] ) .. "|cffaaaaaa (" .. meta["droprate"] .. "%)")
     else
@@ -148,10 +149,12 @@ function pfDatabase:BuildTooltipInfo(meta)
   elseif meta["item"] then
     title = meta["item"]
     table.insert(description, meta["spawntype"] .. ": " .. meta["spawn"] .. "|cffaaaaaa (" .. meta["x"] .. "," .. meta["y"] .. ")")
+    if meta["respawn"] then table.insert(description, "Respawn: " .. meta["respawn"]) end
     table.insert(description, "Loot: " .. ( meta["itemlink"] or meta["item"] ) .. "|cffaaaaaa (" .. meta["droprate"] .. "%)")
   elseif meta["spawn"] then
     title = meta["spawn"]
     table.insert(description, meta["spawntype"] .. ": " .. meta["spawn"] .. "|cffaaaaaa (" .. meta["x"] .. "," .. meta["y"] .. ")")
+    if meta["respawn"] then table.insert(description, "Respawn: " .. meta["respawn"]) end
   else
     title = UNKNOWN
     description[0] = UNKNOWN
@@ -174,7 +177,8 @@ function pfDatabase:SearchMob(mob, meta)
       meta["y"]     = y
       meta["zone"]  = zone
       meta["spawn"] = mob
-      meta["spawntype"]  = spawns[mob]["type"] or UNKNOWN
+      meta["respawn"] = spawns[mob]["respawn"] and SecondsToTime(spawns[mob]["respawn"])
+      meta["spawntype"] = spawns[mob]["type"] or UNKNOWN
 
       if pfMap:IsValidMap(zone) and zone > 0 then
         maps[zone] = maps[zone] and maps[zone] + 1 or 1
