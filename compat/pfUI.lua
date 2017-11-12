@@ -34,10 +34,10 @@ if not pfUI then
 end
 
 -- Add API support non-pfUI environments and for old pfUI versions:
--- strsplit, CreateBackdrop, SkinButton, CreateScrollFrame, CreateScrollChild
+-- strsplit, SanitizePattern, CreateBackdrop, SkinButton, CreateScrollFrame, CreateScrollChild
 if pfUI.api and pfUI.api.strsplit and pfUI.api.CreateBackdrop and
    pfUI.api.SkinButton and pfUI.api.CreateScrollFrame and
-   pfUI.api.CreateScrollChild then
+   pfUI.api.CreateScrollChild and pfUI.api.SanitizePattern then
      return
 end
 
@@ -46,6 +46,23 @@ function pfUI.api.strsplit(delimiter, subject)
   local pattern = string.format("([^%s]+)", delimiter)
   string.gsub(subject, pattern, function(c) fields[table.getn(fields)+1] = c end)
   return unpack(fields)
+end
+
+function pfUI.api.SanitizePattern(pattern)
+  -- escape brackets
+  pattern = gsub(pattern, "%(", "%%(")
+  pattern = gsub(pattern, "%)", "%%)")
+
+  -- remove bad capture indexes
+  pattern = gsub(pattern, "%d%$s","s") -- %1$s to %s
+  pattern = gsub(pattern, "%d%$d","d") -- %1$d to %d
+  pattern = gsub(pattern, "%ds","s") -- %2s to %s
+
+  -- add capture to all findings
+  pattern = gsub(pattern, "%%s", "(.+)")
+  pattern = gsub(pattern, "%%d", "(%%d+)")
+
+  return pattern
 end
 
 function pfUI.api.CreateBackdrop(f, inset, legacy, transp)
