@@ -376,9 +376,32 @@ function pfDatabase:SearchQuest(quest, meta)
   return nil
 end
 
+local bitraces = { [1] = "Human", [2] = "Orc", [4] = "Dwarf", [8] = "NightElf",
+  [16] = "Scourge", [32] = "Tauren", [64] = "Gnome", [128] = "Troll" }
+local function GetBitByRace(model)
+  -- local _, model == UnitRace("player")
+  for bit, v in pairs(bitraces) do
+    if model == v then return bit end
+  end
+end
+
+local bitclasses = { [1] = "WARRIOR", [2] = "PALADIN", [4] = "HUNTER",
+  [8] = "ROGUE", [16] = "PRIEST", [64] = "SHAMAN", [128] = "MAGE",
+  [256] = "WARLOCK", [1024] = "DRUID" }
+local function GetBitByClass(class)
+  -- local _, class == UnitClass("player")
+  for bit, v in pairs(bitclasses) do
+    if class == v then return bit end
+  end
+end
+
 function pfDatabase:SearchQuests(zone, meta)
   local faction = ( UnitFactionGroup("player") == "Horde" ) and "H" or "A"
   local level = UnitLevel("player")
+  local _, race = UnitRace("player")
+  local brace = GetBitByRace(race)
+  local _, class = UnitClass("player")
+  local bclass = GetBitByClass(class)
 
   zone = pfMap:GetMapIDByName(zone)
   if not pfMap:IsValidMap(zone) then
@@ -403,23 +426,29 @@ function pfDatabase:SearchQuests(zone, meta)
 
           if pfQuest_history[meta["quest"]] then
             break
+          elseif quests[title]["race"] and not ( bit.band(quests[title]["race"], brace) == brace ) then
+            break
+          elseif quests[title]["class"] and not ( bit.band(quests[title]["class"], bclass) == bclass ) then
+            break
           elseif meta["hidelow"] and quests[title]["lvl"] and quests[title]["lvl"] < UnitLevel("player") - 9 then
+            break
+          elseif quests[title]["lvl"] and quests[title]["lvl"] > level + 10 then
+            break
+          elseif quests[title]["min"] and quests[title]["min"] > level + 3 then
             break
           elseif quests[title]["pre"] then
             _, _, pre = strfind(quests[title]["pre"], "(.*),.*")
             if not pfQuest_history[pre] then break end
-          elseif quests[title]["lvl"] and quests[title]["lvl"] > level + 10 then
-            break
-          elseif quests[title]["min"] and quests[title]["min"] > level + 2 then
-            break
-          elseif quests[title]["min"] and quests[title]["min"] > level then
+          end
+
+          -- tint high level quests red
+          if quests[title]["min"] and quests[title]["min"] > level then
             meta["vertex"] = { 1, .6, .6 }
             meta["layer"] = 2
           end
 
           -- treat highlevel quests with low requirements as dailies
-          if quests[title]["min"] and quests[title]["lvl"] and
-          quests[title]["min"] == 1 and quests[title]["lvl"] > 50 then
+          if quests[title]["min"] and quests[title]["lvl"] and quests[title]["min"] == 1 and quests[title]["lvl"] > 50 then
             meta["vertex"] = { .2, .8, 1 }
             meta["layer"] = 2
           end
