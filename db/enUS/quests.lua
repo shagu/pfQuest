@@ -2080,7 +2080,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Ghoulish Effigy,Gather 7 G"] = {
     ["id"] = 133,
-    ["min"] = 22,
+    ["min"] = 20,
     ["lvl"] = 27,
     ["race"] = 77,
     ["pre"] = "Juice Delivery,Bring the ",
@@ -2098,7 +2098,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Ogre Thieves,Return Abe"] = {
     ["id"] = 134,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Ghoulish Effigy,Gather 7 G",
@@ -2134,9 +2134,8 @@ pfDB["quests"]["enUS"] = {
   },
   ["Captain Sander\'s Hidden Treasure,Find Capta"] = {
     ["id"] = 136,
-    ["min"] = 11,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["log"] = "If ye be readin\' this, it means that Ol\' Captain Sanders is in a watery grave.  So my treasure is yours now, ye jest need to follow the clues. $b$bFirst ye need to find me footlocker.  It\'s probably half-buried in sand by now, along the Western Coast of Westfall near the shipwreck.  There be lots of shipwrecks but only one rusty anchor on the coast.  Find that anchor and you\'ll find me locker!  Look in there for the next clue.",
     ["obj"] = "Find Captain Sanders\' footlocker and search it for the next clue.",
     ["start"] = {
@@ -2147,9 +2146,8 @@ pfDB["quests"]["enUS"] = {
   },
   ["Captain Sander\'s Hidden Treasure (Part 2),Find the o"] = {
     ["id"] = 138,
-    ["min"] = 14,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["pre"] = "Captain Sander\'s Hidden Treasure,Find Capta",
     ["log"] = "The clue to the treasure reads: Good work, matey!  Now ye need to head due east.  East up the bluffs, east to the road.  Look for the ol\' chimney ruins near the side of the road.  There you\'ll find an old barrel with your next clue.",
     ["obj"] = "Find the old barrel near the ruined chimney and search it for your next clue.",
@@ -2162,9 +2160,8 @@ pfDB["quests"]["enUS"] = {
   },
   ["Captain Sander\'s Hidden Treasure (Part 3),Search the"] = {
     ["id"] = 139,
-    ["min"] = 14,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["pre"] = "Captain Sander\'s Hidden Treasure (Part 2),Find the o",
     ["log"] = "Searching through the barrel you discover another piece of parchment.  This one reads:  Now from this here barrel, face ye North.  Straight as the crow flies, keep ye walkin\' till you see the empty jug next to the lone windmill on the sea bluffs.  If ye poke around that jug, ye just might find what you\'re lookin\' for.",
     ["obj"] = "Search the empty jug next to the windmill for the next clue.",
@@ -2177,9 +2174,8 @@ pfDB["quests"]["enUS"] = {
   },
   ["Captain Sander\'s Hidden Treasure (Part 4),Locate Cap"] = {
     ["id"] = 140,
-    ["min"] = 14,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["pre"] = "Captain Sander\'s Hidden Treasure (Part 3),Search the",
     ["log"] = "Sure enough, deep within the Old Jug there is another clue to Sander\'s treasure.  The ink has run in some places and the paper smells like whiskey but you can make out some of the text:  Now that ye found me ol\' whiskey jug, you\'re almost to the treasure!  Just face West from the bottle and walk down to the shore.  Once ye get to the water, keep going!  Swim straight west till you find the island with me treasure chest!",
     ["obj"] = "Locate Captain Sanders\' chest and open it for your reward.",
@@ -2522,7 +2518,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Note to the Mayor,Bring Aber"] = {
     ["id"] = 160,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Ogre Thieves,Return Abe",
@@ -3030,7 +3026,7 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 28,
     ["lvl"] = 31,
     ["pre"] = "Welcome to the Jungle,Speak with",
-    ["log"] = "If you want to be a part of the hunt with this crack group under Hemet Jr.\'s leadership, you\'re going to need to prove yourself an able panther hunter.  We\'ll start you out easy -- don\'t you worry.  Let\'s see you kill 10 young panthers to start.$b$bTracking them down is only half the challenge...",
+    ["log"] = "If you want to be a part of the hunt with this crack group Hemet has assembled, you\'re going to need to prove yourself an able panther hunter. We\'ll start you out easy -- don\'t you worry. Let\'s see you kill 10 young panthers to start.  Tracking them down is only half the challenge...",
     ["obj"] = "Sir S. J. Erlgadin of Nesingwary\'s Expedition wants you to kill 10 Young Panthers.",
     ["start"] = {
       ["Sir S. J. Erlgadin"] = "NPC",
@@ -3099,7 +3095,7 @@ pfDB["quests"]["enUS"] = {
     ["lvl"] = 34,
     ["pre"] = "Welcome to the Jungle,Speak with",
     ["log"] = "So you think your hunting skills are in tip-top shape?  I can put them to the test in a jiffy.  Head out into that jungle and kill 10 Stranglethorn Raptors.  We\'ll see just how much of a big game hunter you are.$b$bAnd no, I won\'t tell you where you can find them!  Locating the beasts is half the challenge.",
-    ["obj"] = "Hemet Nesingwary Jr. wants you to kill 10 Stranglethorn Raptors.",
+    ["obj"] = "Hemet Nesingwary wants you to kill 10 Stranglethorn Raptors.",
     ["start"] = {
       ["Hemet Nesingwary"] = "NPC",
     },
@@ -3116,7 +3112,7 @@ pfDB["quests"]["enUS"] = {
     ["lvl"] = 36,
     ["pre"] = "Raptor Mastery,Hemet Nesi",
     ["log"] = "Now let\'s step up the challenge and see if you\'re up to it.  Venture into the jungle and bag yourself 10 of those bloody Lashtail Raptors.  Let\'s see what you\'ve got!",
-    ["obj"] = "Hemet Nesingwary Jr. wants you to kill 10 Lashtail Raptors.",
+    ["obj"] = "Hemet Nesingwary wants you to kill 10 Lashtail Raptors.",
     ["start"] = {
       ["Hemet Nesingwary"] = "NPC",
     },
@@ -3133,7 +3129,7 @@ pfDB["quests"]["enUS"] = {
     ["lvl"] = 41,
     ["pre"] = "Raptor Mastery,Hemet Nesi",
     ["log"] = "Let\'s see how you handle this next challenge.  There is a cagey breed of raptor out there.  We call them Jungle Stalkers.  They are far more difficult to track down and kill than the other breeds you\'ve been trying your luck at.  Kill 10 Jungle Stalkers and I\'ll tip you off to the best hunting yet.",
-    ["obj"] = "Hemet Nesingwary Jr. wants you to kill 10 Jungle Stalkers.",
+    ["obj"] = "Hemet Nesingwary wants you to kill 10 Jungle Stalkers.",
     ["start"] = {
       ["Hemet Nesingwary"] = "NPC",
     },
@@ -3150,7 +3146,7 @@ pfDB["quests"]["enUS"] = {
     ["lvl"] = 43,
     ["pre"] = "Raptor Mastery,Hemet Nesi",
     ["log"] = "Because you proved yourself to be such a go-getter in the jungle, let me tell you about a ferocious raptor that even I have failed to kill.  Ajeck here calls this wily raptor Tethis.$b$bIf you want to prove yourself a true master, kill Tethis and bring me his talon.  It would be a feat that no other big game hunter has accomplished.",
-    ["obj"] = "Hemet Nesingwary Jr. wants you to kill Tethis, an elusive, dangerous raptor in Stranglethorn.",
+    ["obj"] = "Hemet Nesingwary wants you to kill Tethis, an elusive, dangerous raptor in Stranglethorn.",
     ["start"] = {
       ["Hemet Nesingwary"] = "NPC",
     },
@@ -3343,7 +3339,7 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 29,
     ["lvl"] = 43,
     ["log"] = "$N, you are a hunter worthy of our company.  From the battlefields of Lordaeron to the deepest jungle, I have rarely witnessed such prowess with weaponry as you have demonstrated.$b$bYou have killed the ferocious Sin\'Dall, the elusive Bag\'thera and the treacherous Tethis.  But the true prize is the head of King Bangalash.  That white tiger is the reason I am here.  I\'ve had my sights on him for quite some time now.  Kill King Bangalash and your hunting prowess is proven to be second to none.",
-    ["obj"] = "Hemet Nesingwary Jr. wants you to bring him the head of King Bangalash, the great white tiger.",
+    ["obj"] = "Hemet Nesingwary wants you to bring him the head of King Bangalash, the great white tiger.",
     ["start"] = {
       ["Hemet Nesingwary"] = "NPC",
     },
@@ -4011,7 +4007,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Translate Abercrombie\'s Note,Bring the "] = {
     ["id"] = 251,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Note to the Mayor,Bring Aber",
@@ -4029,7 +4025,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Translation to Ello,Bring the "] = {
     ["id"] = 252,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Wait for Sirra to Finish,Wait a mom",
@@ -4047,7 +4043,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Bride of the Embalmer,Find Eliza"] = {
     ["id"] = 253,
-    ["min"] = 24,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Translation to Ello,Bring the ",
@@ -4065,7 +4061,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Digging Through the Dirt,"] = {
     ["id"] = 254,
-    ["min"] = 24,
+    ["min"] = 20,
     ["lvl"] = 35,
     ["start"] = {
       ["Eliza\'s Grave Dirt"] = "OBJECT",
@@ -4736,6 +4732,7 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Cursed Eye of Paleth,1"] = "ITEM",
+      ["Cursed Eye of Paleth,1"] = "ITEM",
     },
   },
   ["Cleansing the Eye,Bring Arch"] = {
@@ -4752,6 +4749,7 @@ pfDB["quests"]["enUS"] = {
       ["Archbishop Benedictus"] = "NPC",
     },
     ["item"] = {
+      ["Cursed Eye of Paleth,1"] = "ITEM",
       ["Cursed Eye of Paleth,1"] = "ITEM",
     },
   },
@@ -9446,8 +9444,8 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 583,
     ["min"] = 28,
     ["lvl"] = 30,
-    ["log"] = "Welcome to Stranglethorn!$b$bPerhaps you\'re not aware of this, but that dwarf over there is the son of the one and only Hemet Nesingwary, renowned war hero of the Alliance and master big game hunter.  Like his father, he\'s not one for welcoming strangers into his camp, but you look like you\'ve seen quite a bit of action in your day, $c.$b$bGo and speak with him.  He\'s a chip off the old block, so perhaps he can give you some hunting pointers.",
-    ["obj"] = "Speak with Hemet Nesingwary Jr.",
+    ["log"] = "Welcome to Stranglethorn!  Perhaps you\'re not aware of this, but that dwarf over there is the one and only Hemet Nesingwary, renowned war hero of the Alliance and master big game hunter. He\'s not one for welcoming strangers into his camp, but you look like you\'ve seen quite a bit of action in your day, %c.  Being a veteran of many battles himself, Master Nesingwary has a soft spot for fellow heroes.  Go and speak with him. Perhaps he can give you some hunting pointers.",
+    ["obj"] = "Speak with Hemet Nesingwary.",
     ["start"] = {
       ["Barnil Stonepot"] = "NPC",
     },
@@ -14485,6 +14483,38 @@ pfDB["quests"]["enUS"] = {
       ["Thunder Lizard Blood,3"] = "ITEM",
     },
   },
+  ["Amongst the Ruins,Bring the "] = {
+    ["id"] = 908,
+    ["min"] = 25,
+    ["lvl"] = 27,
+    ["race"] = 178,
+    ["pre"] = "The Essence of Aku\'Mai,Bring 20 S",
+    ["log"] = "The Twilight\'s Hammer has moved into the Moonshrine Ruins of Blackfathom Deeps.  Their presence can only serve to coerce the elements into working against us.  If left unchecked, this region will be theirs for good.$B$B$N, go into Blackfathom and find the ruin\'s fathom stone; it should be somewhere close in the water.  In it is a fathom core - a device that when properly read it will relate a history of all elemental activity.  If I have it, I and the Earthen Ring can maybe do something to stop them!",
+    ["obj"] = "Bring the Fathom Core to Je\'neu Sancrea at Zoram\'gar Outpost, Ashenvale.",
+    ["start"] = {
+    },
+    ["end"] = {
+    },
+    ["item"] = {
+      ["Fathom Core,1"] = "ITEM",
+    },
+  },
+  ["Baron Aquanis,Bring the "] = {
+    ["id"] = 909,
+    ["min"] = 21,
+    ["lvl"] = 30,
+    ["race"] = 178,
+    ["log"] = "The defeated water elemental has left behind a strange water globe.  You surmise that the object somehow fed the beast energy.  Inside the globe, a putrid-looking form of water sloshes about.  The globe itself seems impervious to any sort of physical force.$B$BIf anyone can make any sense of this item, it would be Je\'neu Sancrea of the Earthen Ring.  He is located at the Horde\'s Zoram\'gar Outpost in Ashenvale.",
+    ["obj"] = "Bring the Strange Water Globe to Je\'neu Sancrea at Zoram\'gar Outpost, Ashenvale.",
+    ["start"] = {
+    },
+    ["end"] = {
+      ["Je\'neu Sancrea"] = "NPC",
+    },
+    ["item"] = {
+      ["Strange Water Globe,1"] = "ITEM",
+    },
+  },
   ["Down at the Docks,Take your "] = {
     ["id"] = 910,
     ["min"] = 10,
@@ -15265,6 +15295,15 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["99-Year-Old Port,1"] = "ITEM",
+    },
+  },
+  ["Onu is meditating,"] = {
+    ["id"] = 960,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["start"] = {
+    },
+    ["end"] = {
     },
   },
   ["Onu is meditating,"] = {
@@ -16185,7 +16224,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Raene\'s Cleansing,Find the W"] = {
     ["id"] = 1026,
-    ["min"] = 20,
+    ["min"] = 18,
     ["lvl"] = 27,
     ["race"] = 77,
     ["pre"] = "Raene\'s Cleansing,Find Shael",
@@ -16203,7 +16242,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Raene\'s Cleansing,Find the f"] = {
     ["id"] = 1027,
-    ["min"] = 24,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "Raene\'s Cleansing,Find the W",
@@ -16239,7 +16278,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Raene\'s Cleansing,Return to "] = {
     ["id"] = 1029,
-    ["min"] = 24,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "Raene\'s Cleansing,Return to ",
@@ -16254,7 +16293,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Raene\'s Cleansing,Find an un"] = {
     ["id"] = 1030,
-    ["min"] = 25,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "Raene\'s Cleansing,Return to ",
@@ -16499,7 +16538,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Raene\'s Cleansing,Kill Ran B"] = {
     ["id"] = 1045,
-    ["min"] = 26,
+    ["min"] = 18,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Raene\'s Cleansing,Find an un",
@@ -16518,7 +16557,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Raene\'s Cleansing,Bring Ran "] = {
     ["id"] = 1046,
-    ["min"] = 30,
+    ["min"] = 18,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Raene\'s Cleansing,Kill Ran B",
@@ -16677,7 +16716,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Raene\'s Cleansing,Return to "] = {
     ["id"] = 1055,
-    ["min"] = 24,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "Raene\'s Cleansing,Find the h",
@@ -17084,7 +17123,6 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 19,
     ["lvl"] = 22,
     ["race"] = 77,
-    ["pre"] = "Ineptitude + Chemicals = Fun,Bring the ",
     ["log"] = "This is it, $N. Pay close attention. The devices are done, and ready to be used.$B$BTake these pages--they\'ll explain more about the detonators and explosives, and where you should place them.$B$BRemember, the success of your mission doesn\'t depend on how much destruction you cause. Plan Alpha\'s success depends on you bringing back the Venture Co.\'s engineering plans from inside the lumber mill south of Cragpool Lake.",
     ["obj"] = "Retrieve the Venture Co.\'s Engineering Plans from the lumber mill in Windshear Crag.",
     ["start"] = {
@@ -17102,7 +17140,7 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 19,
     ["lvl"] = 22,
     ["race"] = 77,
-    ["pre"] = "Special Delivery for Gaxim,Bring the ",
+    ["pre"] = "Covert Ops - Alpha,Retrieve t",
     ["log"] = "Plan Beta\'s just like Plan Alpha, $N.$B$BWe cause a distraction and then steal their precious letters.$B$BThe key is to get their letters... remember that.$B$BThe pages I gave you already will tell you where to plant the explosives. Just get back here alive and with those letters....",
     ["obj"] = "Retrieve the Venture Co. Letters from Windshear Mine at the east end of Windshear Crag.",
     ["start"] = {
@@ -17135,6 +17173,7 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 26,
     ["lvl"] = 28,
     ["race"] = 77,
+    ["pre"] = "Wounded Ancients,Bring a pi",
     ["log"] = "$N, you have done a great deed by lending a hand here.$B$BThe Sentinels of Ashenvale will reward you well if you informed them that Gaxim and I are alive. Tell them we are well on our way to stopping the Venture Co. and healing the lands.$B$BFind Tara Thenysil in Astranaar; she will be pleased to see you\'ve returned with good news.",
     ["obj"] = "Return to Sentinel Thenysil in Ashenvale.",
     ["start"] = {
@@ -17167,7 +17206,7 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 22,
     ["lvl"] = 28,
     ["race"] = 77,
-    ["pre"] = "Kaela\'s Update,Bring the ",
+    ["pre"] = "Enraged Spirits,Bring 8 Sm",
     ["log"] = "It seems obvious to me that the protectors of the Vale--the treants--had something to do with the Venture Co. being driven back. Unfortunately, even those once great guardians have now become corrupt.$B$BGaxim thinks their corruption is somehow linked to the weapons the goblins used during their retreat.$B$BI told him I\'d collect a sample from a wounded treant and allow him to study it in order to figure out if that\'s true.$B$BBring me some of the shrapnel so the gnome can tell me more...",
     ["obj"] = "Bring a piece of Corroded Shrapnel to Kaela Shadowspear in Stonetalon.",
     ["start"] = {
@@ -17185,6 +17224,7 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 18,
     ["lvl"] = 21,
     ["race"] = 77,
+    ["pre"] = "On Guard in Stonetalon,Find Kaela",
     ["log"] = "The situation here in Stonetalon is obviously grave for a night elf and gnome to be working together.$B$BThe Venture Co. has devastated these lands and I\'ve spent most of my time putting an end to the destruction.$B$BDo not judge Gaxim prematurely; he understands the need for us to work together.$B$BIf you wish to aid us, then start by speaking to Gaxim.$B$BI\'m sorry I cannot send you back to Tara with good news yet. Perhaps soon.",
     ["obj"] = "Speak to Gaxim.",
     ["start"] = {
@@ -17285,6 +17325,7 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 20,
     ["lvl"] = 22,
     ["race"] = 77,
+    ["pre"] = "Covert Ops - Beta,Retrieve t",
     ["log"] = "$N, take these letters to Kaela. I\'m sure she\'ll want to know about this. Or at least the Sentinels will.$B$BMake sure you tell her how successful we were and how we couldn\'t have done it without a little bit of magic.",
     ["obj"] = "Bring the Venture Co. Letters to Kaela Shadowspear.",
     ["start"] = {
@@ -19422,7 +19463,7 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 28,
     ["lvl"] = 33,
     ["race"] = 77,
-    ["pre"] = "The Missing Diplomat,Subdue Tap",
+    ["pre"] = "The Missing Diplomat,Speak to M",
     ["log"] = "The beginning of every month the Kul Tiras Marines all get paid and usually leave Theramore for somewhere else. A lot of them come here to womanize, carouse, and just have a good time. One of those groups I\'d consider regulars here at the tavern, and I believe this Hendel is among them.$B$BCommander Samaul in Theramore would be able to help you find him if Hendel\'s still stationed there. He\'s completely loyal to Proudmoore, but if you drop Elling\'s name, he should help you out... discreetly.",
     ["obj"] = "Find Commander Samaul in Dustwallow Marsh.",
     ["start"] = {
@@ -19462,15 +19503,14 @@ pfDB["quests"]["enUS"] = {
       ["Private Hendel"] = "NPC",
     },
   },
-  ["The Missing Diplomat,Speak to J"] = {
+  ["The Missing Diplomat,"] = {
     ["id"] = 1267,
     ["min"] = 28,
     ["lvl"] = 38,
     ["race"] = 77,
     ["pre"] = "The Missing Diplomat,Defeat Pri",
-    ["obj"] = "Speak to Jaina Proudmore in Dustwallow Swamp.",
     ["start"] = {
-      ["Archmage Tervosh"] = "NPC",
+      ["Lady Jaina Proudmoore"] = "NPC",
     },
     ["end"] = {
       ["Lady Jaina Proudmoore"] = "NPC",
@@ -19671,14 +19711,17 @@ pfDB["quests"]["enUS"] = {
   },
   ["Vimes\'s Report,Bring Vime"] = {
     ["id"] = 1288,
-    ["min"] = 33,
+    ["min"] = 32,
     ["lvl"] = 38,
     ["race"] = 77,
+    ["pre"] = "The Deserters,Speak with",
     ["log"] = "You\'ve done some good work, $n, best I\'ve seen from an amateur.$b$bLady Proudmoore asked that I keep her apprised of this delicate situation, and I haven\'t spoken to her for some time now.$b$bI was going to deliver my report to her later, but it seems more fitting that you should be the one to speak with her about it. You can probably answer her questions better than I could.",
     ["obj"] = "Bring Vimes\'s Report to Lady Jaina Proudmoore in Theramore.",
     ["start"] = {
+      ["Captain Garran Vimes"] = "NPC",
     },
     ["end"] = {
+      ["Lady Jaina Proudmoore"] = "NPC",
     },
     ["item"] = {
       ["Vimes\'s Report,1"] = "ITEM",
@@ -20199,7 +20242,7 @@ pfDB["quests"]["enUS"] = {
     ["lvl"] = 42,
     ["race"] = 178,
     ["pre"] = "Nothing But The Truth,Speak with",
-    ["log"] = "I have just the right serum in mind. It will deal with the truth in precisely the way the truth should be dealt with.$b$bFor this concoction I will need several Shadow Panther hearts from the Swamp. I also require the enchanted fungus off of the Mire Lord who resides there. I am sure one as able as you, $n, can persuade him to part with some.$b$bThe last item I\'ll need for the serum is the blood of a dreaming whelp, like the ones that live outside Itharius\' cave in the swamp.$b$bNow, off you go!",
+    ["log"] = "I have just the right serum in mind. It will deal with the truth in precisely the way the truth should be dealt with.  For this concoction I will need several Shadow Panther hearts from the Swamp. I also require the enchanted fungus off of the Mire Lord who resides there. I am sure one as able as you, $N, can persuade him to part with some.  Now the hard part will be locating a Deepstrider tumor from far-off Desolace. Very rarely the giants there become ill and a tumor forms.  Now, off you go!",
     ["obj"] = "Apothecary Faustin at Beggar\'s Haunt needs 5 Shadow Panther Hearts, Mire Lord Fungus and some Green Whelp Blood.",
     ["start"] = {
       ["Apothecary Faustin"] = "NPC",
@@ -22719,7 +22762,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Crashing the Wickerman Festival (PvP),Locate the"] = {
     ["id"] = 1658,
-    ["min"] = 25,
+    ["min"] = 35,
     ["lvl"] = 60,
     ["race"] = 77,
     ["log"] = "I need brave individuals to head up to Tirisfal Glade and check out the Wickerman Festival.  I\'m not going to lie - heading up there will be dangerous.  The guards at the festival will be exceptionally vicious.  Still, we need to know how big the festival is this year, and how much trouble the Forsaken are going to cause us during Hallow\'s End.$B$BIf you\'re up for it, head to Tirisfal and scout out the festival.  Return to me with the information, and I\'ll make sure you\'re well compensated.",
@@ -28250,7 +28293,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Cuergo\'s Gold,Find Cuerg"] = {
     ["id"] = 2882,
-    ["min"] = 42,
+    ["min"] = 40,
     ["lvl"] = 45,
     ["log"] = "This map shows a stretch of beach with a southern face.  Below the map are words, elegantly written...$B$B$BSouth of Wheedle$BSouth of home$BFind a mast and flag and bones$BDig you there, if you be bold$BDig and claim Cuergo\'s gold!$BA key you\'ll need and a key you\'ll see$BThe men you face take blood as fee.",
     ["obj"] = "Find Cuergo\'s gold!",
@@ -28697,7 +28740,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Seeing What Happens,Bring the "] = {
     ["id"] = 2946,
-    ["min"] = 48,
+    ["min"] = 45,
     ["lvl"] = 50,
     ["race"] = 77,
     ["pre"] = "Portents of Uldum,Speak with",
@@ -28961,7 +29004,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Freedom for All Creatures,Using the "] = {
     ["id"] = 2969,
-    ["min"] = 40,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["log"] = "The filthy Grimtotem clan are capturing faerie dragons, $N. Jer\'kai and I have no idea what they plan on doing with them, but they\'re obviously up to no good.$B$BWe\'re not powerful enough to fight our way into the camp and free the captured dragons, but perhaps with your help...$B$BIf you\'re willing, and you have some strong friends, release the creatures from their cage with this key and make sure they escape with their lives. I\'ll be by your side the entire time. Jer\'kai will remain here.",
@@ -28975,7 +29018,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Doling Justice,Kill 12 Gr"] = {
     ["id"] = 2970,
-    ["min"] = 40,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["log"] = "As she\'s already told you, Kindal and I will now take the fight to the Grimtotem. Together, we should still be able to pick off some of the tauren without much threat to ourselves, but we\'d love some help if you\'re willing and able.$B$BYou\'ve seen the camp below us, but there are more to the east. Using your own tactics, deal as much damage to the tauren as you can. We can all meet back here after they\'ve felt the sting of Kindal\'s arrows and your own weapons.",
@@ -28994,7 +29037,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Doling Justice,Take Jer\'k"] = {
     ["id"] = 2972,
-    ["min"] = 42,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["log"] = "Out here in the wilderness, Kindal and I have meager means to reward your help, but we don\'t want you to feel unappreciated. Take my signet ring. If you ever find yourself in the boughs of Teldrassil, go to the Temple of the Moon in the heart of Darnassus. There you will find my High Priestess Tyrande Whisperwind. The ring will let her know that we are well and give credit to your story.$B$BWe both thank you, $N.",
@@ -29082,7 +29125,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Return to Ironforge,Speak with"] = {
     ["id"] = 2977,
-    ["min"] = 48,
+    ["min"] = 46,
     ["lvl"] = 50,
     ["race"] = 77,
     ["pre"] = "The Stone Watcher,Learn the ",
@@ -30517,7 +30560,7 @@ pfDB["quests"]["enUS"] = {
   ["The Horn of the Beast,Take Margo"] = {
     ["id"] = 3181,
     ["min"] = 40,
-    ["lvl"] = 43,
+    ["lvl"] = 48,
     ["race"] = 77,
     ["log"] = "The gigantic horn has numerous scratches and cracks. An unusual metal object is lodged into the rough surface.$B$BUpon further examination, you notice that the metal is actually a broken axe head. On the metal, the following words are etched:$B$BProperty of Mountaineer Pebblebitty.$B$BWhen you try and dislodge the broken axe head, it shatters into a million pieces.$B$BWoops!",
     ["obj"] = "Take Margol\'s Gigantic Horn to Mountaineer Pebblebitty.",
@@ -30746,6 +30789,21 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Nori\'s Mug,1"] = "ITEM",
+    },
+  },
+  ["The Glowing Shard,Travel to "] = {
+    ["id"] = 3366,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["log"] = "The shard is a brilliant green, and although solid, what looks like smoke swirls just below the surface. You can\'t help staring into the depths of the crystal; at the same time, you know there is something very disturbing about it.$B$BMaybe you should see if anyone in Ratchet can tell you more about this strange shard.",
+    ["obj"] = "Travel to Ratchet to find the meaning behind the Nightmare Shard.",
+    ["start"] = {
+    },
+    ["end"] = {
+      ["Falla Sagewind"] = "NPC",
+    },
+    ["item"] = {
+      ["Glowing Shard,1"] = "ITEM",
     },
   },
   ["Suntara Stones,Help Doriu"] = {
@@ -31732,6 +31790,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 3526,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 178,
     ["log"] = "Expert engineering yields two distinct disciplines: gnome and goblin.  Clearly, goblin engineering is the choice of all brilliant engineers.  Learn to master the world through the judicious use of high explosives and fantastic gear!$B$B$N, read this manual.  If you want to learn about goblin engineering, then take it to Nixx Sprocketspring in Gadgetzan.   Remember - membership is permanent and prevents joining the other discipline, so make sure this is what you want before finishing his task.",
     ["obj"] = "If you wish to learn more about Goblin Engineering, take the Manual of Engineering Disciplines to Nixx Sprocketspring in Gadgetzan.",
     ["start"] = {
@@ -31833,7 +31892,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Magatha\'s Payment to Jediga,Deliver Ma"] = {
     ["id"] = 3562,
-    ["min"] = 51,
+    ["min"] = 45,
     ["lvl"] = 52,
     ["race"] = 178,
     ["pre"] = "Delivery to Magatha,Bring the ",
@@ -32101,6 +32160,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 3629,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "Expert engineering yields two distinct disciplines: gnome and goblin.  I only bother to mention goblin engineering because I\'m a fair trainer.  They like to make things that blow up, and they rarely care what is in the way - even themselves.$B$B$N, read this manual.  If you want to learn how to blow yourself up, then take it to Nixx Sprocketspring in Gadgetzan.   Remember - membership is permanent and prevents joining the other discipline, so make sure this is what you want before finishing his task.",
     ["obj"] = "If you wish to learn more about Goblin Engineering, take the Manual of Engineering Disciplines to Nixx Sprocketspring in Gadgetzan.",
     ["start"] = {
@@ -32117,6 +32177,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 3630,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "Engineering at the expert level breaks into two disciplines: gnome and goblin.  Gnome engineering represents by far the superior of the two!  It\'s about the construction of wonderful gadgets and devices that make life better!$B$B$N, read this manual.  If you want to learn more on gnome engineering, then take that manual to Tinkmaster Overspark in Ironforge.   Remember - membership is permanent and prevents joining the other discipline, so make sure you are sure before finishing his task!",
     ["obj"] = "If you wish to learn more about Gnome Engineering, take the Manual of Engineering Disciplines to Tinkmaster Overspark in Ironforge.",
     ["start"] = {
@@ -32148,6 +32209,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 3632,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "Engineering at the expert level breaks into two disciplines: gnome and goblin.  Gnome engineering represents by far the superior of the two!  It\'s about the construction of wonderful gadgets and devices that make life better!$B$B$N, read this manual.  If you want to learn more on gnome engineering, then take that manual to Tinkmaster Overspark here in Ironforge.   Remember - membership is permanent and prevents joining the other discipline, so make sure you are sure before finishing his task!",
     ["obj"] = "If you wish to learn more about Gnome Engineering, take the Manual of Engineering Disciplines to Tinkmaster Overspark in Ironforge.",
     ["start"] = {
@@ -32180,6 +32242,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 3634,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "Engineering at the expert level breaks into two disciplines: gnome and goblin.  While I think it is a waste, you should be aware of gnome specialization.  They make items and gadgets that claim to change the world, but rarely often work.$B$B$N, read this manual.  If you wish to learn how to make metal paper weights, then take that manual to Tinkmaster Overspark in Ironforge.   Remember - membership is permanent and prevents joining the other discipline, so make sure you are sure before finishing his task!",
     ["obj"] = "If you wish to learn more about Gnome Engineering, take the Manual of Engineering Disciplines to Tinkmaster Overspark in Ironforge.",
     ["start"] = {
@@ -32196,6 +32259,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 3635,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 178,
     ["log"] = "Engineering at the expert level breaks into two disciplines: gnome and goblin.  While I think it is a waste, you should be aware of gnome specialization.  They make items and gadgets that claim to change the world, but rarely work.$B$B$N, read this manual.  If you wish to learn how to make metal paper weights, then take the manual to Oglethorpe Obnoticus in Booty Bay.   Remember - membership is permanent and prevents joining the other discipline, so make sure you are sure before finishing his task.",
     ["obj"] = "If you wish to learn more about Gnome Engineering, take the Manual of Engineering Disciplines to Oglethorpe Obnoticus in Booty Bay.",
     ["start"] = {
@@ -32229,6 +32293,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 3637,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 178,
     ["log"] = "Engineering at the expert level breaks into two disciplines: gnome and goblin.  While I think it is a waste, you should be aware of gnome specialization.  They make items and gadgets that claim to change the world, but rarely work.$B$B$N, read this manual.  If you wish to learn how to make metal paper weights, then take the manual to Oglethorpe Obnoticus in Booty Bay.   Remember - membership is permanent and prevents joining the other discipline, so make sure you are sure before finishing his task.",
     ["obj"] = "If you wish to learn more about Gnome Engineering, take the Manual of Engineering Disciplines to Oglethorpe Obnoticus in Booty Bay.",
     ["start"] = {
@@ -32909,7 +32974,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["An Orphan Looking For a Home,Speak to Q"] = {
     ["id"] = 3841,
-    ["min"] = 45,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "Doling Justice,Take Jer\'k",
@@ -32927,7 +32992,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["A Short Incubation,Bring 2 El"] = {
     ["id"] = 3842,
-    ["min"] = 40,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "An Orphan Looking For a Home,Speak to Q",
@@ -32945,7 +33010,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["The Newest Member of the Family,Take your "] = {
     ["id"] = 3843,
-    ["min"] = 42,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "A Short Incubation,Bring 2 El",
@@ -33112,7 +33177,7 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 3,
     ["lvl"] = 4,
     ["race"] = 77,
-    ["pre"] = "Wolves Across the Border,Bring 8 pi",
+    ["pre"] = "Brotherhood of Thieves,Bring 12 R",
     ["log"] = "You\'ve shown yourself a dependable $c, $N.  Dependable, and not afraid to get your hands dirty, eh?$B$BI have a friend, Milly Osworth, who\'s in some trouble.  She\'s over with her wagon on the other side of the abbey, near the stable.  I\'m sure she could use a pair of hands like yours.",
     ["obj"] = "Speak with Milly Osworth.",
     ["start"] = {
@@ -34306,7 +34371,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["A Visit to Gregan,Take a Blo"] = {
     ["id"] = 4142,
-    ["min"] = 52,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 77,
     ["pre"] = "Muigin and Larion,Collect 15",
@@ -34324,7 +34389,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Haze of Evil,Collect 5 "] = {
     ["id"] = 4143,
-    ["min"] = 50,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 77,
     ["pre"] = "A Visit to Gregan,Take a Blo",
@@ -34342,7 +34407,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Bloodpetal Sprouts,"] = {
     ["id"] = 4144,
-    ["min"] = 53,
+    ["min"] = 50,
     ["lvl"] = 60,
     ["race"] = 77,
     ["pre"] = "Haze of Evil,Collect 5 ",
@@ -34358,7 +34423,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Larion and Muigin,Hunt 5 Blo"] = {
     ["id"] = 4145,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 178,
     ["log"] = "See Muigin over there? It\'s HIS fault we\'re lost!$B$BI\'m the one that knew the way, but he insisted he knew a shortcut, and we ended up here!$B$BTo make matters worse, now he keeps sending his crazy plant pests to annoy me. I\'m so angry that I\'m not planning on talking to him any time soon, but these pests are too much to handle.$B$BWhy don\'t we try to limit his supply, first thing. Go out and hunt some Bloodpetals, then return to me.",
@@ -34378,7 +34443,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Zapper Fuel,Deliver th"] = {
     ["id"] = 4146,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 178,
     ["pre"] = "Marvon\'s Workshop,Travel to ",
@@ -34397,7 +34462,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Marvon\'s Workshop,Travel to "] = {
     ["id"] = 4147,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 178,
     ["pre"] = "Larion and Muigin,Hunt 5 Blo",
@@ -34446,6 +34511,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 4181,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "Expert engineering yields two distinct disciplines: gnome and goblin.  I only bother to mention goblin engineering because I\'m a fair trainer.  They like to make things that blow up, and they rarely care what is in the way - even themselves.$B$B$N, read this manual.  If you want to learn how to blow yourself up, then take it to Nixx Sprocketspring in Gadgetzan.   Remember - membership is permanent and prevents joining the other discipline, so make sure this is what you want before finishing his task.",
     ["obj"] = "If you wish to learn more about Goblin Engineering, take the Manual of Engineering Disciplines to Nixx Sprocketspring in Gadgetzan.",
     ["start"] = {
@@ -34930,7 +34996,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["The Western Pylon,Discover t"] = {
     ["id"] = 4288,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Crystals of Power,Collect 7 ",
     ["log"] = "My experiments so far have not yielded any positive results, $N. I can\'t help but hope that you can find a solution by searching for one of the pylons that I have heard exist.$B$BPerhaps if we combine certain colors at them... but I get ahead of myself. Let\'s find them first!$B$B$N, search the western area of the crater; a pylon is said to be somewhere in that area.",
@@ -35079,7 +35145,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Food for Baby,Bring 5 Si"] = {
     ["id"] = 4297,
-    ["min"] = 44,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "The Newest Member of the Family,Take your ",
@@ -35097,7 +35163,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Becoming a Parent,Speak to A"] = {
     ["id"] = 4298,
-    ["min"] = 45,
+    ["min"] = 38,
     ["lvl"] = 48,
     ["race"] = 77,
     ["pre"] = "Food for Baby,Bring 5 Si",
@@ -35145,7 +35211,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Making Sense of It,Speak with"] = {
     ["id"] = 4321,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["log"] = "The information you have given me about the pylons is very interesting...$B$BGive me a moment to do some calculations, $N. Speak to me again in a moment and I should be able to give you the answer we have been looking for.",
     ["obj"] = "Speak with J.D. Collie in a moment.",
@@ -35278,7 +35344,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Crystal Restore,"] = {
     ["id"] = 4381,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Making Sense of It,Speak with",
     ["start"] = {
@@ -35294,7 +35360,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Crystal Force,"] = {
     ["id"] = 4382,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Making Sense of It,Speak with",
     ["start"] = {
@@ -35310,7 +35376,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Crystal Ward,"] = {
     ["id"] = 4383,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Making Sense of It,Speak with",
     ["start"] = {
@@ -35326,7 +35392,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Crystal Yield,"] = {
     ["id"] = 4384,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Making Sense of It,Speak with",
     ["start"] = {
@@ -35342,7 +35408,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Crystal Charge,"] = {
     ["id"] = 4385,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Making Sense of It,Speak with",
     ["start"] = {
@@ -35358,7 +35424,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Crystal Spire,"] = {
     ["id"] = 4386,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Making Sense of It,Speak with",
     ["start"] = {
@@ -40871,7 +40937,7 @@ pfDB["quests"]["enUS"] = {
   ["Fish in a Bucket,"] = {
     ["id"] = 5421,
     ["min"] = 25,
-    ["lvl"] = 25,
+    ["lvl"] = 1,
     ["race"] = 178,
     ["start"] = {
       ["Jinar\'Zillen"] = "NPC",
@@ -42620,8 +42686,8 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 5762,
     ["min"] = 31,
     ["lvl"] = 31,
-    ["log"] = "I have a package for a new customer of mine, a dwarf named Hemet Nesingwary Jr..  The package took weeks to arrive, and Hemet\'s long gone by now.  He said he was going to Stranglethorn to take his father\'s place and hunt the beasts there, but he left me some money to send his delivery when I could.  $B$BJunior\'s a rich dwarf and it\'s a good idea to keep up relations with the rich ones, yeah?  So... you want to deliver the package for me?$B$BI heard he has a camp in Stranglethorn, north of Grom\'gol.",
-    ["obj"] = "Take Kravel\'s Crate to Hemet Nesingwary Jr. in Stranglethorn.",
+    ["log"] = "I have a package for an old customer of mine, a dwarf named Hemet Nesingwary. The package took weeks to arrive, and Hemet\'s long gone by now. He said he was going to Stranglethorn to hunt the beasts there, but he left me some money to send his delivery when I could.  Hemet\'s a rich dwarf and it\'s a good idea to keep up relations with the rich ones, yeah? So... you want to deliver the package for me?  I heard Hemet has a camp in Stranglethorn, north of Grom\'gol.",
+    ["obj"] = "Take Kravel\'s Crate to Hemet Nesingwary in Stranglethorn.",
     ["start"] = {
       ["Kravel Koalbeard"] = "NPC",
     },
@@ -42637,8 +42703,8 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 28,
     ["lvl"] = 31,
     ["race"] = 178,
-    ["log"] = "Long ago, a dwarf came to this land.  His name was Hemet and he wished to hunt great beasts.  His skills with the rifle were uncanny, and we spent many days hunting together.  Even the enmity between our peoples was forgotten.$B$BWhen he left for Stranglethorn, I vowed to one day welcome him back.  Now he has gone on to hunt in lands unknown, but his son has taken his place.$B$BTake this kodo horn as a gift to Hemet Jr..  You will find him in Stranglethorn, north of the Grom\'gol Base camp.",
-    ["obj"] = "Bring Roon\'s Kodo Horn to Hemet Nesingwary Jr. in Stranglethorn.",
+    ["log"] = "Long ago, a dwarf came to this land. His name was Hemet and he wished to hunt great beasts. His skills with the rifle were uncanny, and we spent many days hunting together. Even the enmity between our peoples were forgotten.  When he left Desolace for Stranglethorn, I vowed to one day welcome him back so that we may hunt again. Now is that time.  Take this kodo horn to Hemet. He will know it is from me. You will find him in Stranglethorn, north of the Grom\'gol Base camp.",
+    ["obj"] = "Bring Roon\'s Kodo Horn to Hemet Nesingwary in Stranglethorn.",
     ["start"] = {
       ["Roon Wildmane"] = "NPC",
     },
@@ -43164,7 +43230,7 @@ pfDB["quests"]["enUS"] = {
       ["Plagueland Termites,100"] = "ITEM",
     },
   },
-  ["A Plague Upon Thee (part 2),Find somep"] = {
+  ["A Plague Upon Thee,Find somep"] = {
     ["id"] = 5902,
     ["min"] = 54,
     ["lvl"] = 55,
@@ -43960,7 +44026,7 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 10,
     ["lvl"] = 10,
     ["class"] = 4,
-    ["race"] = 77,
+    ["race"] = 8,
     ["log"] = "Hello, young hunter. You look to me like you are skilled enough to handle a beast and train it as your companion.$B$BYou must see Dazalar in Dolanaar. He can put you on the path to earning a pet of your own.",
     ["obj"] = "Speak with Dazalar in Dolanaar.",
     ["start"] = {
@@ -44424,22 +44490,17 @@ pfDB["quests"]["enUS"] = {
       ["Turak Runetotem"] = "NPC",
     },
   },
-  ["Timbermaw Ally,Grazle wan"] = {
+  ["[DISABLED] Timbermaw Ally,Grazle wan"] = {
     ["id"] = 6131,
-    ["min"] = 45,
+    ["min"] = 61,
     ["lvl"] = 48,
-    ["log"] = "The Timbermaw are the only furbolg tribe to escape the corruption. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.$B$BAre you interested in proving yourself? Drive back the corrupted Deadwood tribe of Felwood and we may one day consider you an ally. You\'ll find the first Deadwood tribe - warriors, pathfinders and gardeners - to my west.",
+    ["log"] = "Timbermaw AllyThis quest is disabled until patch 1.9.",
     ["obj"] = "Grazle wants you to prove yourself by killing 5 Deadwood Warriors, 5 Deadwood Pathfinders, and 5 Deadwood Gardeners.",
     ["start"] = {
       ["Grazle"] = "NPC",
     },
     ["end"] = {
       ["Grazle"] = "NPC",
-    },
-    ["spawn"] = {
-      ["Deadwood Warrior,5"] = "NPC",
-      ["Deadwood Pathfinder,5"] = "NPC",
-      ["Deadwood Gardener,5"] = "NPC",
     },
   },
   ["Get Me Out of Here!,Escort Mel"] = {
@@ -44559,7 +44620,7 @@ pfDB["quests"]["enUS"] = {
       ["Soft-shelled Clam Meat,10"] = "QUEST",
     },
   },
-  ["Other Fish to Fry ,Slay 7 Sli"] = {
+  ["Other Fish to Fry,Slay 7 Sli"] = {
     ["id"] = 6143,
     ["min"] = 32,
     ["lvl"] = 36,
@@ -44713,8 +44774,8 @@ pfDB["quests"]["enUS"] = {
   },
   ["Augustus\' Receipt Book,Bring Augu"] = {
     ["id"] = 6164,
-    ["min"] = 10,
-    ["lvl"] = 10,
+    ["min"] = 50,
+    ["lvl"] = 55,
     ["log"] = "I\'m ready for business!  What you do want?$B$BOh wait... I can\'t open up shop without my receipt book.  How am I to keep track of things without my receipt book?$B$BI must have left it in town somewhere.  I had a room in the inn... the book must be there.$B$BBring me my book.  Please, bring it to me!  Bring me my book and you\'ll see!  I\'ll set up shop and you\'ll see that my prices are INSANE!",
     ["obj"] = "Bring Augustus\' Receipt Book to Augustus the Touched in Terrordale.",
     ["start"] = {
@@ -45380,12 +45441,12 @@ pfDB["quests"]["enUS"] = {
       ["Barrel of Plagueland Termites,1"] = "ITEM",
     },
   },
-  ["A Plague Upon Thee (part 3),Release th"] = {
+  ["A Plague Upon Thee,Release th"] = {
     ["id"] = 6390,
     ["min"] = 50,
     ["lvl"] = 55,
     ["race"] = 178,
-    ["pre"] = "A Plague Upon Thee (part 2),Find somep",
+    ["pre"] = "A Plague Upon Thee,Find somep",
     ["log"] = "You look around the lumber mill for something suitable to open the barrel with. You find a crowbar that looks like it will do the trick.$B$BYou set your feet and pray that you\'ll be able to get out of the mill before the termites get to you.",
     ["obj"] = "Release the Plagueland Termites in the Northridge Lumber Mill, then return with the Barrel of Plagueland Termites to Mickey Levine at the Bulwark in Tirisfal Glades.",
     ["start"] = {
@@ -46008,13 +46069,13 @@ pfDB["quests"]["enUS"] = {
       ["Rexxar"] = "NPC",
     },
   },
-  ["The Testament of Rexxar,Deliver Ro"] = {
+  ["The Testament of Rexxar,Deliver Re"] = {
     ["id"] = 6568,
     ["min"] = 55,
     ["lvl"] = 60,
     ["pre"] = "The Champion of the Horde,Seek out R",
-    ["log"] = "Illusion and disguise. That is how you will fool the Black Dragonflight, and gain what you seek.$b$bThough I could teach you something of the skills of deception, you need the help of a master.$b$bI know of one who could do this. In the Western Plaguelands, you will find Myranda the Hag, once a master illusionist of Lordaeron. She has helped us in the past, and if she believes the cause worthy, she may help you.$b$bTake this message to her.",
-    ["obj"] = "Deliver Rokaro\'s Letter to Myranda the Hag in the Western Plaguelands.",
+    ["log"] = "What do you know of illusions, $N? For you see, it is an illusion that you must create in order to circumvent the Black Flight\'s defenses.  I know of one that may be willing to assist you in your quest of deception. She has assisted our kind in the past when she has deemed the cause worthy.  In the Western Plaguelands you will find Myranda the Hag, master illusionist - an exile of the Lordaeron alliance. Travel there and take with you this message.",
+    ["obj"] = "Deliver Rexxar\'s Testament to Myranda the Hag in the Western Plaguelands.",
     ["start"] = {
       ["Rexxar"] = "NPC",
     },
@@ -46029,7 +46090,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 6569,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["pre"] = "The Testament of Rexxar,Deliver Ro",
+    ["pre"] = "The Testament of Rexxar,Deliver Re",
     ["log"] = "So the $r wishes to become one of the Black Flight, eh?$B$BThe creation of the illusion you require is trivial, but the components required for the divination are quite difficult to obtain. The Warchief has entrusted you with this mission, so Myranda must assume you as capable.$B$BTravel to the upper citadel of Blackrock Spire and slay enough of the black dragonspawn to fill up one of your packs with their eyes.$B$BReturn to Myranda when you have gathered enough of the reagent.",
     ["obj"] = "Travel to Blackrock Spire and collect 20 Black Dragonspawn Eyes. Return to Myranda the Hag when the task is complete.",
     ["start"] = {
@@ -46163,8 +46224,8 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 55,
     ["lvl"] = 60,
     ["pre"] = "The Test of Skulls, Axtroz,Travel to ",
-    ["log"] = "From the skulls of our enemies is shaped a medallion. You know this medallion, yesss? You have no doubt seen it worn by your elders.$B$BTake it, whelp. Return to the Spire and present it to General Drakkisath. The General will place the final enchantment upon the medallion, attuning the trinket to your spirit.$B$BYou will wear the finished medallion as a badge of honor, symbolizing your ascension to one of our most guarded ranks: Guardian to the brood mother.$B$BGo!",
-    ["obj"] = "It would appear as if the charade is over. You know that the Amulet of Draconic Subversion that Myranda the Hag created for you will not function inside Blackrock Spire. Perhaps you should find Rokaro and explain your predicament. Show him the Dull Drakefire Amulet. Hopefully he will know what to do next.",
+    ["log"] = "From the skulls of our enemies is shaped a medallion. You know this medallion, yesss? You have no doubt seen it worn by your elders.  Take it, whelp. Return to the Spire and present it to General Drakkisath. The General will place the final enchantment upon the medallion, attuning the trinket to your spirit.  You will wear the finished medallion as a badge of honor, symbolizing your ascension to one of our most guarded ranks: Guardian to the brood mother.  Go!",
+    ["obj"] = "It would appear as if the charade is over. You know that the Amulet of Draconic Subversion that Myranda the Hag created for you will not function inside Blackrock Spire. Perhaps you should find Rexxar and explain your predicament. Show him the Dull Drakefire Amulet. Hopefully he will know what to do next.",
     ["start"] = {
       ["Emberstrife"] = "NPC",
     },
@@ -46180,8 +46241,8 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 59,
     ["lvl"] = 60,
     ["pre"] = "Ascension...,It would a",
-    ["log"] = "How would you feel about paying a visit to the General? No illusions, this time.$b$bCeremony? A pretty word to describe the bloodletting that amuses the Black Dragonflight.$b$bAll this amulet requires is the blood of General Drakkisath. Primitive security. There are other ways to receive the General\'s blood.$b$bGo to Blackrock Spire and kill Drakkisath. Return with his blood and I will activate the key to Onyxia\'s lair.",
-    ["obj"] = "Travel to Blackrock Spire and slay General Drakkisath. Gather his blood and return it to Rokaro.",
+    ["log"] = "You will pay the General a visit, yes, but not as one of the Black Dragonflight.  You see, a ceremony is merely another term for blood letting to the Black Flight.  The latent amulet merely needs the blood of the General in order to become active. One of their crude failsafe mechanisms.  Return to Blackrock Spire and destroy Drakkisath. Bring his blood back here and I shall activate the key to Onyxia\'s lair.",
+    ["obj"] = "Travel to Blackrock Spire and slay General Drakkisath. Gather his blood and return it to Rexxar.",
     ["start"] = {
       ["Rexxar"] = "NPC",
     },
@@ -46268,7 +46329,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["You Too Good!,You think "] = {
     ["id"] = 6608,
-    ["min"] = 40,
+    ["min"] = 35,
     ["lvl"] = 45,
     ["race"] = 178,
     ["log"] = "Lumak no can teach $N no more. You too good! Find Lumak friend, Nat Pagle. Is human but no eat! Is Lumak friend! Nat teach you fish gooder.$B$BYou find Nat in Dustwallow Marsh, south of Humie town, Thermorosomethinglikedat. Nat probably fishing. Go now!",
@@ -46282,7 +46343,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["I Got Nothin\' Left!,Travel to "] = {
     ["id"] = 6609,
-    ["min"] = 41,
+    ["min"] = 35,
     ["lvl"] = 45,
     ["race"] = 77,
     ["log"] = "I\'m a dwarf fer cryin\' out loud, $g lad:missy;! I ain\'t been designed to fish! I mean look at me! I\'m practically made outta stone.$B$BI got nothin\' left - ye tapped me out. I\'ve taught ye all I know, flipflop!$B$BDon\'t ye get it? Ah, fine. I got an ol\' friend over on Kalimdor who can help ye out. \'Is name be Nat Pagle, a fine lad. Find him on the islands south o\' Theramore. Git goin\'!",
@@ -46642,7 +46703,7 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 10,
     ["lvl"] = 10,
     ["class"] = 4,
-    ["race"] = 77,
+    ["race"] = 8,
     ["log"] = "Hello, young hunter. You look to me like you are skilled enough to handle a beast and train it as your companion.$B$BYou must see Dazalar in Dolanaar. He can put you on the path to earning a pet of your own.",
     ["obj"] = "Speak with Dazalar in Dolanaar.",
     ["start"] = {
@@ -49990,9 +50051,12 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 7660,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Ogunaro Wolfrunner"] = "NPC",
     },
     ["end"] = {
+      ["Ogunaro Wolfrunner"] = "NPC",
     },
     ["item"] = {
       ["Horn of the Arctic Wolf,1"] = "ITEM",
@@ -50002,9 +50066,12 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 7661,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Ogunaro Wolfrunner"] = "NPC",
     },
     ["end"] = {
+      ["Ogunaro Wolfrunner"] = "NPC",
     },
     ["item"] = {
       ["Horn of the Red Wolf,1"] = "ITEM",
@@ -50014,9 +50081,12 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 7662,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Harb Clawhoof"] = "NPC",
     },
     ["end"] = {
+      ["Harb Clawhoof"] = "NPC",
     },
     ["item"] = {
       ["Teal Kodo,1"] = "ITEM",
@@ -50026,9 +50096,12 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 7663,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Harb Clawhoof"] = "NPC",
     },
     ["end"] = {
+      ["Harb Clawhoof"] = "NPC",
     },
     ["item"] = {
       ["Green Kodo,1"] = "ITEM",
@@ -50038,9 +50111,12 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 7664,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["end"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["item"] = {
       ["Whistle of the Ivory Raptor,1"] = "ITEM",
@@ -50050,9 +50126,12 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 7665,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["end"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["item"] = {
       ["Whistle of the Mottled Red Raptor,1"] = "ITEM",
@@ -50095,9 +50174,12 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 7671,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Lelanai"] = "NPC",
     },
     ["end"] = {
+      ["Lelanai"] = "NPC",
     },
     ["item"] = {
       ["Reins of the Ancient Frostsaber,1"] = "ITEM",
@@ -50107,9 +50189,12 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 7672,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Lelanai"] = "NPC",
     },
     ["end"] = {
+      ["Lelanai"] = "NPC",
     },
     ["item"] = {
       ["Reins of the Nightsaber,1"] = "ITEM",
@@ -50119,9 +50204,12 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 7673,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Veron Amberstill"] = "NPC",
     },
     ["end"] = {
+      ["Veron Amberstill"] = "NPC",
     },
     ["item"] = {
       ["Frost Ram,1"] = "ITEM",
@@ -50131,9 +50219,12 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 7674,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Veron Amberstill"] = "NPC",
     },
     ["end"] = {
+      ["Veron Amberstill"] = "NPC",
     },
     ["item"] = {
       ["Black Ram,1"] = "ITEM",
@@ -50143,9 +50234,12 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 7675,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Milli Featherwhistle"] = "NPC",
     },
     ["end"] = {
+      ["Milli Featherwhistle"] = "NPC",
     },
     ["item"] = {
       ["Icy Blue Mechanostrider Mod A,1"] = "ITEM",
@@ -50155,23 +50249,27 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 7676,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Milli Featherwhistle"] = "NPC",
     },
     ["end"] = {
+      ["Milli Featherwhistle"] = "NPC",
     },
     ["item"] = {
       ["White Mechanostrider Mod A,1"] = "ITEM",
     },
   },
-  ["White Stallion Exchange,If you bri"] = {
+  ["White Stallion Exchange,"] = {
     ["id"] = 7677,
     ["min"] = 60,
-    ["lvl"] = 60,
-    ["log"] = "If you bring me your white stallion, I\'ll trade you for one from the new herd. The new horse will be just as fast as your old one, but have a different look to it. You can look at the swift steeds here to see what it will look like.$B$B$BMUST PAY 500 Gold too....",
-    ["obj"] = "If you bring me your white stallion, I\'ll trade you for one from the new herd. The new horse will be just as fast as your old one, but have a different look to it. You can look at the swift steeds here to see what it will look like.$B$BMUST PAY 500 Gold too....",
+    ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Katie Hunter"] = "NPC",
     },
     ["end"] = {
+      ["Katie Hunter"] = "NPC",
     },
     ["item"] = {
       ["White Stallion Bridle,1"] = "ITEM",
@@ -50181,9 +50279,12 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 7678,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Katie Hunter"] = "NPC",
     },
     ["end"] = {
+      ["Katie Hunter"] = "NPC",
     },
     ["item"] = {
       ["Palomino Bridle,1"] = "ITEM",
@@ -50530,6 +50631,9 @@ pfDB["quests"]["enUS"] = {
     ["end"] = {
       ["Drakkisath\'s Brand"] = "OBJECT",
     },
+    ["item"] = {
+      ["Blackhand\'s Command,1"] = "ITEM",
+    },
   },
   ["The Lord of Blackrock,Return the"] = {
     ["id"] = 7781,
@@ -50608,12 +50712,11 @@ pfDB["quests"]["enUS"] = {
       ["Vessel of Rebirth,1"] = "ITEM",
     },
   },
-  ["Thunderaan the Windseeker,To free Th"] = {
+  ["[DISABLED] Thunderaan the Windseeker,To free Th"] = {
     ["id"] = 7786,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["pre"] = "Examine the Vessel,Examine th",
-    ["log"] = "I have told you all that I know, $N. It is you who must find elementium. It is you who must destroy the Firelord\'s corporeal form.$B$BDo this and gain the blessing of Thunderaan.",
+    ["log"] = "Thunderaan the WindseekerThis quest is disabled until patch 1.6",
     ["obj"] = "To free Thunderaan the Windseeker from his prison, you must present the right and left halves of the Bindings of the Windseeker, 10 bars of Elementium, and the Essence of the Firelord to Highlord Demitrian in Silithus.",
     ["start"] = {
       ["Highlord Demitrian"] = "NPC",
@@ -50621,17 +50724,12 @@ pfDB["quests"]["enUS"] = {
     ["end"] = {
       ["Highlord Demitrian"] = "NPC",
     },
-    ["item"] = {
-      ["Elementium Bar,10"] = "ITEM",
-      ["Essence of the Firelord,1"] = "ITEM",
-      ["Bindings of the Windseeker,1"] = "ITEM",
-      ["Bindings of the Windseeker,1"] = "ITEM",
-    },
   },
   ["Rise, Thunderfury!,Present th"] = {
     ["id"] = 7787,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "[DISABLED] Thunderaan the Windseeker,To free Th",
     ["pre"] = "Thunderaan the Windseeker,To free Th",
     ["log"] = "You have defeated the Wind Seeker. Take the dormant blade and force the lying wretch, Demitrian, to use the materials you provided for his betrayal to wake Thunderfury.",
     ["obj"] = "Present the Dormant Wind Kissed Blade to Highlord Demitrian.",
@@ -50644,38 +50742,21 @@ pfDB["quests"]["enUS"] = {
       ["Dormant Wind Kissed Blade,1"] = "ITEM",
     },
   },
-  ["Vanquish the Invaders!,Enter Wars"] = {
-    ["id"] = 7788,
-    ["min"] = 20,
-    ["lvl"] = 29,
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8081,
+    ["min"] = 50,
+    ["lvl"] = 55,
     ["race"] = 77,
-    ["log"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a Mark of Honor.  Bring it to me, $N, and I shall reward you.",
-    ["obj"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["start"] = {
-      ["Sentinel Farsong"] = "NPC",
+      ["Sergeant Maclear"] = "NPC",
     },
     ["end"] = {
-      ["Sentinel Farsong"] = "NPC",
+      ["Sergeant Maclear"] = "NPC",
     },
     ["item"] = {
-      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
-    },
-  },
-  ["Quell the Silverwing Usurpers,Enter Wars"] = {
-    ["id"] = 7789,
-    ["min"] = 20,
-    ["lvl"] = 29,
-    ["race"] = 178,
-    ["log"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Mark of Honor.  Return to me with such a Mark, $N, and you will be rewarded.",
-    ["obj"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
-    ["start"] = {
-      ["Captain Shatterskull"] = "NPC",
-    },
-    ["end"] = {
-      ["Captain Shatterskull"] = "NPC",
-    },
-    ["item"] = {
-      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
+      ["Arathi Resource Crate,1"] = "ITEM",
     },
   },
   ["Claiming Arathi Basin,Bring 3 Ar"] = {
@@ -51557,98 +51638,45 @@ pfDB["quests"]["enUS"] = {
       ["Kelm Hargunth"] = "NPC",
     },
   },
-  ["Vanquish the Invaders!,Enter Wars"] = {
-    ["id"] = 7871,
-    ["min"] = 30,
-    ["lvl"] = 39,
-    ["race"] = 77,
-    ["log"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a Mark of Honor.  Bring it to me, $N, and I shall reward you.",
-    ["obj"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
-    ["start"] = {
-      ["Sentinel Farsong"] = "NPC",
-    },
-    ["end"] = {
-      ["Sentinel Farsong"] = "NPC",
-    },
-    ["item"] = {
-      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
-    },
-  },
-  ["Vanquish the Invaders!,Enter Wars"] = {
-    ["id"] = 7872,
-    ["min"] = 40,
-    ["lvl"] = 49,
-    ["race"] = 77,
-    ["log"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a Mark of Honor.  Bring it to me, $N, and I shall reward you.",
-    ["obj"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
-    ["start"] = {
-      ["Sentinel Farsong"] = "NPC",
-    },
-    ["end"] = {
-      ["Sentinel Farsong"] = "NPC",
-    },
-    ["item"] = {
-      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
-    },
-  },
-  ["Vanquish the Invaders!,Enter Wars"] = {
-    ["id"] = 7873,
+  ["Arathi Basin Mark of Honor!,Win the ba"] = {
+    ["id"] = 8080,
     ["min"] = 50,
     ["lvl"] = 59,
     ["race"] = 77,
-    ["log"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a Mark of Honor.  Bring it to me, $N, and I shall reward you.",
-    ["obj"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
+    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
     ["start"] = {
-      ["Sentinel Farsong"] = "NPC",
+      ["Sergeant Maclear"] = "NPC",
     },
     ["end"] = {
-      ["Sentinel Farsong"] = "NPC",
+      ["Sergeant Maclear"] = "NPC",
     },
     ["item"] = {
-      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
+      ["Arathi Basin Mark of Honor,1"] = "ITEM",
     },
   },
-  ["Quell the Silverwing Usurpers,Enter Wars"] = {
-    ["id"] = 7874,
-    ["min"] = 30,
-    ["lvl"] = 39,
-    ["race"] = 178,
-    ["log"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Mark of Honor.  Return to me with such a Mark, $N, and you will be rewarded.",
-    ["obj"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
-    ["start"] = {
-      ["Captain Shatterskull"] = "NPC",
-    },
-    ["end"] = {
-      ["Captain Shatterskull"] = "NPC",
-    },
-    ["item"] = {
-      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
-    },
-  },
-  ["Quell the Silverwing Usurpers,Enter Wars"] = {
-    ["id"] = 7875,
-    ["min"] = 40,
-    ["lvl"] = 49,
-    ["race"] = 178,
-    ["log"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Mark of Honor.  Return to me with such a Mark, $N, and you will be rewarded.",
-    ["obj"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
-    ["start"] = {
-      ["Captain Shatterskull"] = "NPC",
-    },
-    ["end"] = {
-      ["Captain Shatterskull"] = "NPC",
-    },
-    ["item"] = {
-      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
-    },
-  },
-  ["Quell the Silverwing Usurpers,Enter Wars"] = {
-    ["id"] = 7876,
+  ["Arathi Basin Resources!,Win the ba"] = {
+    ["id"] = 8080,
     ["min"] = 50,
-    ["lvl"] = 59,
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Mark of Honor,"] = {
+    ["id"] = 7925,
+    ["min"] = 20,
+    ["lvl"] = 25,
     ["race"] = 178,
-    ["log"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Mark of Honor.  Return to me with such a Mark, $N, and you will be rewarded.",
-    ["obj"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
     ["start"] = {
       ["Captain Shatterskull"] = "NPC",
     },
@@ -51656,7 +51684,147 @@ pfDB["quests"]["enUS"] = {
       ["Captain Shatterskull"] = "NPC",
     },
     ["item"] = {
-      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Mark of Honor,You obtain"] = {
+    ["id"] = 7925,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["pre"] = "Quell the Silverwing Usurpers,Enter Wars",
+    ["pre"] = "Quell the Silverwing Usurpers,Enter Wars",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
+    ["obj"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Mark of Honor,"] = {
+    ["id"] = 7924,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Mark of Honor,You obtain"] = {
+    ["id"] = 7924,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["pre"] = "Quell the Silverwing Usurpers,Enter Wars",
+    ["pre"] = "Quell the Silverwing Usurpers,Enter Wars",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
+    ["obj"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Mark of Honor,You obtain"] = {
+    ["id"] = 7922,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["pre"] = "Quell the Silverwing Usurpers,Enter Wars",
+    ["pre"] = "Quell the Silverwing Usurpers,Enter Wars",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
+    ["obj"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Mark of Honor,"] = {
+    ["id"] = 7923,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Mark of Honor,You obtain"] = {
+    ["id"] = 7923,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["pre"] = "Quell the Silverwing Usurpers,Enter Wars",
+    ["pre"] = "Quell the Silverwing Usurpers,Enter Wars",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
+    ["obj"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Talismans of Merit,You obtain"] = {
+    ["id"] = 7921,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["pre"] = "Vanquish the Invaders!,Enter Wars",
+    ["pre"] = "Vanquish the Invaders!,Enter Wars",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
+    ["obj"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
+    },
+  },
+  ["Mark of Honor,"] = {
+    ["id"] = 7922,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
     },
   },
   ["The Treasure of the Shen\'dralar,Return to "] = {
@@ -52241,6 +52409,7 @@ pfDB["quests"]["enUS"] = {
     ["start"] = {
     },
     ["end"] = {
+      ["Mysterious Wailing Caverns Chest"] = "OBJECT",
     },
     ["item"] = {
       ["Sayge\'s Fortune #25,1"] = "ITEM",
@@ -52914,21 +53083,53 @@ pfDB["quests"]["enUS"] = {
       ["Primal Hakkari Kossack,1"] = "ITEM",
     },
   },
-  ["Arathi Basin Mark of Honor!,Win the ba"] = {
-    ["id"] = 8080,
-    ["min"] = 50,
-    ["lvl"] = 59,
+  ["Talismans of Merit,"] = {
+    ["id"] = 7888,
+    ["min"] = 40,
+    ["lvl"] = 45,
     ["race"] = 77,
-    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
-    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
     ["start"] = {
-      ["Sergeant Maclear"] = "NPC",
+      ["Sentinel Farsong"] = "NPC",
     },
     ["end"] = {
-      ["Sergeant Maclear"] = "NPC",
+      ["Sentinel Farsong"] = "NPC",
     },
     ["item"] = {
-      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
+    },
+  },
+  ["Talismans of Merit,You obtain"] = {
+    ["id"] = 7888,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["pre"] = "Vanquish the Invaders!,Enter Wars",
+    ["pre"] = "Vanquish the Invaders!,Enter Wars",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
+    ["obj"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
+    },
+  },
+  ["Talismans of Merit,"] = {
+    ["id"] = 7921,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
     },
   },
   ["The Pebble of Kajaro,"] = {
@@ -53265,21 +53466,57 @@ pfDB["quests"]["enUS"] = {
       ["Deathmaster Dwire"] = "NPC",
     },
   },
-  ["Cut Arathor Supply Lines,Win the ba"] = {
-    ["id"] = 8123,
+  ["Talismans of Merit,You obtain"] = {
+    ["id"] = 7886,
     ["min"] = 50,
-    ["lvl"] = 59,
-    ["race"] = 178,
-    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
-    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["pre"] = "Vanquish the Invaders!,Enter Wars",
+    ["pre"] = "Vanquish the Invaders!,Enter Wars",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
+    ["obj"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
     ["start"] = {
-      ["Deathstalker Mortis"] = "NPC",
+      ["Sentinel Farsong"] = "NPC",
     },
     ["end"] = {
-      ["Deathstalker Mortis"] = "NPC",
+      ["Sentinel Farsong"] = "NPC",
     },
     ["item"] = {
-      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
+    },
+  },
+  ["Talismans of Merit,"] = {
+    ["id"] = 7887,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
+    },
+  },
+  ["Talismans of Merit,You obtain"] = {
+    ["id"] = 7887,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["pre"] = "Vanquish the Invaders!,Enter Wars",
+    ["pre"] = "Vanquish the Invaders!,Enter Wars",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
+    ["obj"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
     },
   },
   ["Zandalrian Shadow Talisman,"] = {
@@ -53464,106 +53701,104 @@ pfDB["quests"]["enUS"] = {
       ["Perfect Courser Antler,2"] = "ITEM",
     },
   },
-  ["Arathi Basin Mark of Honor!,Win the ba"] = {
-    ["id"] = 8154,
+  ["Talismans of Merit,"] = {
+    ["id"] = 7886,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
+    },
+  },
+  ["Quell the Silverwing Usurpers,Enter Wars"] = {
+    ["id"] = 7876,
+    ["min"] = 50,
+    ["lvl"] = 59,
+    ["race"] = 178,
+    ["log"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Mark of Honor.  Return to me with such a Mark, $N, and you will be rewarded.",
+    ["obj"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Quell the Silverwing Usurpers,Enter Wars"] = {
+    ["id"] = 7876,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["log"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Warsong mark of honor.  Return to me with such a mark, $N, and you will be rewarded.$B",
+    ["obj"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Quell the Silverwing Usurpers,Enter Wars"] = {
+    ["id"] = 7875,
     ["min"] = 40,
-    ["lvl"] = 49,
-    ["race"] = 77,
-    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
-    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["log"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Warsong mark of honor.  Return to me with such a mark, $N, and you will be rewarded.$B",
+    ["obj"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
     ["start"] = {
-      ["Sergeant Maclear"] = "NPC",
+      ["Captain Shatterskull"] = "NPC",
     },
     ["end"] = {
-      ["Sergeant Maclear"] = "NPC",
+      ["Captain Shatterskull"] = "NPC",
     },
     ["item"] = {
-      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+      ["Warsong Mark of Honor,1"] = "ITEM",
     },
   },
-  ["Arathi Basin Mark of Honor!,Win the ba"] = {
-    ["id"] = 8155,
-    ["min"] = 20,
-    ["lvl"] = 29,
-    ["race"] = 77,
-    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
-    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["start"] = {
-      ["Sergeant Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Sergeant Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Arathi Basin Mark of Honor,1"] = "ITEM",
-    },
-  },
-  ["Arathi Basin Mark of Honor!,Win the ba"] = {
-    ["id"] = 8156,
+  ["Quell the Silverwing Usurpers,Enter Wars"] = {
+    ["id"] = 7874,
     ["min"] = 30,
     ["lvl"] = 39,
-    ["race"] = 77,
-    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
-    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["start"] = {
-      ["Sergeant Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Sergeant Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Arathi Basin Mark of Honor,1"] = "ITEM",
-    },
-  },
-  ["Cut Arathor Supply Lines,Win the ba"] = {
-    ["id"] = 8160,
-    ["min"] = 40,
-    ["lvl"] = 49,
     ["race"] = 178,
-    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
-    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
+    ["log"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Mark of Honor.  Return to me with such a Mark, $N, and you will be rewarded.",
+    ["obj"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
     ["start"] = {
-      ["Deathstalker Mortis"] = "NPC",
+      ["Captain Shatterskull"] = "NPC",
     },
     ["end"] = {
-      ["Deathstalker Mortis"] = "NPC",
+      ["Captain Shatterskull"] = "NPC",
     },
     ["item"] = {
-      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
     },
   },
-  ["Cut Arathor Supply Lines,Win the ba"] = {
-    ["id"] = 8161,
+  ["Quell the Silverwing Usurpers,Enter Wars"] = {
+    ["id"] = 7874,
     ["min"] = 30,
-    ["lvl"] = 39,
+    ["lvl"] = 35,
     ["race"] = 178,
-    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
-    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
+    ["log"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Warsong mark of honor.  Return to me with such a mark, $N, and you will be rewarded.$B",
+    ["obj"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
     ["start"] = {
-      ["Deathstalker Mortis"] = "NPC",
+      ["Captain Shatterskull"] = "NPC",
     },
     ["end"] = {
-      ["Deathstalker Mortis"] = "NPC",
+      ["Captain Shatterskull"] = "NPC",
     },
     ["item"] = {
-      ["Arathi Basin Mark of Honor,1"] = "ITEM",
-    },
-  },
-  ["Cut Arathor Supply Lines,Win the ba"] = {
-    ["id"] = 8162,
-    ["min"] = 20,
-    ["lvl"] = 29,
-    ["race"] = 178,
-    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
-    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
-    ["start"] = {
-      ["Deathstalker Mortis"] = "NPC",
-    },
-    ["end"] = {
-      ["Deathstalker Mortis"] = "NPC",
-    },
-    ["item"] = {
-      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+      ["Warsong Mark of Honor,1"] = "ITEM",
     },
   },
   ["Invaders of Alterac Valley,Bring 3 Al"] = {
@@ -53750,7 +53985,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Could I get a Fishing Flier?,"] = {
     ["id"] = 8228,
-    ["min"] = 55,
+    ["min"] = 35,
     ["lvl"] = 60,
     ["start"] = {
       ["Barrus"] = "NPC",
@@ -53761,7 +53996,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Could I get a Fishing Flier?,"] = {
     ["id"] = 8229,
-    ["min"] = 55,
+    ["min"] = 35,
     ["lvl"] = 60,
     ["start"] = {
       ["Grinkle"] = "NPC",
@@ -54116,7 +54351,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["The Darkreaver Menace,Use the Di"] = {
     ["id"] = 8258,
-    ["min"] = 60,
+    ["min"] = 58,
     ["lvl"] = 60,
     ["class"] = 64,
     ["race"] = 178,
@@ -54205,64 +54440,72 @@ pfDB["quests"]["enUS"] = {
       ["Rutherford Twing"] = "NPC",
     },
   },
-  ["Ribbons of Sacrifice,Bring the "] = {
-    ["id"] = 8266,
-    ["min"] = 10,
-    ["lvl"] = 39,
-    ["race"] = 178,
-    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-    ["obj"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
-    ["start"] = {
-    },
-    ["end"] = {
-    },
-    ["item"] = {
-      ["Warsong Gulch Ribbon of Sacrifice,1"] = "ITEM",
-    },
-  },
-  ["Ribbons of Sacrifice,Bring the "] = {
-    ["id"] = 8267,
-    ["min"] = 40,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-    ["obj"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
-    ["start"] = {
-    },
-    ["end"] = {
-    },
-    ["item"] = {
-      ["Warsong Gulch Ribbon of Sacrifice,1"] = "ITEM",
-    },
-  },
-  ["Ribbons of Sacrifice,Bring the "] = {
-    ["id"] = 8268,
-    ["min"] = 10,
-    ["lvl"] = 39,
+  ["Vanquish the Invaders!,Enter Wars"] = {
+    ["id"] = 7873,
+    ["min"] = 50,
+    ["lvl"] = 59,
     ["race"] = 77,
-    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-    ["obj"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
+    ["log"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a Mark of Honor.  Bring it to me, $N, and I shall reward you.",
+    ["obj"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
     ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
     },
     ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
     },
     ["item"] = {
-      ["Warsong Gulch Ribbon of Sacrifice,1"] = "ITEM",
+      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
     },
   },
-  ["Ribbons of Sacrifice,Bring the "] = {
-    ["id"] = 8269,
-    ["min"] = 40,
-    ["lvl"] = 60,
+  ["Vanquish the Invaders!,Enter Wars"] = {
+    ["id"] = 7873,
+    ["min"] = 50,
+    ["lvl"] = 55,
     ["race"] = 77,
-    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-    ["obj"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
+    ["log"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a talisman of merit.  Bring me such a talisman, $N, and I shall reward you.",
+    ["obj"] = "Enter Warsong Gulch and defeat the Horde, obtain a Silverwing Talisman of Merit, and return to Sentinel Farsong at the Silverwing Grove.",
     ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
     },
     ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
     },
     ["item"] = {
-      ["Warsong Gulch Ribbon of Sacrifice,1"] = "ITEM",
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
+    },
+  },
+  ["Vanquish the Invaders!,Enter Wars"] = {
+    ["id"] = 7872,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 77,
+    ["log"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a Mark of Honor.  Bring it to me, $N, and I shall reward you.",
+    ["obj"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Vanquish the Invaders!,Enter Wars"] = {
+    ["id"] = 7872,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["log"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a talisman of merit.  Bring me such a talisman, $N, and I shall reward you.",
+    ["obj"] = "Enter Warsong Gulch and defeat the Horde, obtain a Silverwing Talisman of Merit, and return to Sentinel Farsong at the Silverwing Grove.",
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
     },
   },
   ["Taking Back Silithus,Talk to Wi"] = {
@@ -54496,9 +54739,9 @@ pfDB["quests"]["enUS"] = {
     },
   },
   ["Vanquish the Invaders!,Enter Wars"] = {
-    ["id"] = 8291,
-    ["min"] = 60,
-    ["lvl"] = 60,
+    ["id"] = 7871,
+    ["min"] = 30,
+    ["lvl"] = 39,
     ["race"] = 77,
     ["log"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a Mark of Honor.  Bring it to me, $N, and I shall reward you.",
     ["obj"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
@@ -54512,11 +54755,13 @@ pfDB["quests"]["enUS"] = {
       ["Warsong Gulch Mark of Honor,1"] = "ITEM",
     },
   },
-  ["Marks of Honor,"] = {
-    ["id"] = 8292,
-    ["min"] = 10,
-    ["lvl"] = 60,
+  ["Vanquish the Invaders!,Enter Wars"] = {
+    ["id"] = 7871,
+    ["min"] = 30,
+    ["lvl"] = 35,
     ["race"] = 77,
+    ["log"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a talisman of merit.  Bring me such a talisman, $N, and I shall reward you.",
+    ["obj"] = "Enter Warsong Gulch and defeat the Horde, obtain a Silverwing Talisman of Merit, and return to Sentinel Farsong at the Silverwing Grove.",
     ["start"] = {
       ["Sentinel Farsong"] = "NPC",
     },
@@ -54524,28 +54769,13 @@ pfDB["quests"]["enUS"] = {
       ["Sentinel Farsong"] = "NPC",
     },
     ["item"] = {
-      ["Warsong Gulch Mark of Honor,3"] = "ITEM",
-    },
-  },
-  ["Marks of Honor,"] = {
-    ["id"] = 8293,
-    ["min"] = 10,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["start"] = {
-      ["Captain Shatterskull"] = "NPC",
-    },
-    ["end"] = {
-      ["Captain Shatterskull"] = "NPC",
-    },
-    ["item"] = {
-      ["Warsong Gulch Mark of Honor,3"] = "ITEM",
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
     },
   },
   ["Quell the Silverwing Usurpers,Enter Wars"] = {
-    ["id"] = 8294,
-    ["min"] = 60,
-    ["lvl"] = 60,
+    ["id"] = 7789,
+    ["min"] = 20,
+    ["lvl"] = 29,
     ["race"] = 178,
     ["log"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Mark of Honor.  Return to me with such a Mark, $N, and you will be rewarded.",
     ["obj"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
@@ -54559,68 +54789,55 @@ pfDB["quests"]["enUS"] = {
       ["Warsong Gulch Mark of Honor,1"] = "ITEM",
     },
   },
-  ["Arathi Basin Mark of Honor!,Win the ba"] = {
-    ["id"] = 8297,
-    ["min"] = 60,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
-    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["start"] = {
-      ["Sergeant Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Sergeant Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Arathi Basin Mark of Honor,1"] = "ITEM",
-    },
-  },
-  ["More Arathi Basin Marks of Honor,"] = {
-    ["id"] = 8298,
+  ["Quell the Silverwing Usurpers,Enter Wars"] = {
+    ["id"] = 7789,
     ["min"] = 20,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["start"] = {
-      ["Sergeant Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Sergeant Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Arathi Basin Mark of Honor,3"] = "ITEM",
-    },
-  },
-  ["Cut Arathor Supply Lines,Win the ba"] = {
-    ["id"] = 8299,
-    ["min"] = 60,
-    ["lvl"] = 60,
+    ["lvl"] = 25,
     ["race"] = 178,
-    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
-    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
+    ["log"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Warsong mark of honor.  Return to me with such a mark, $N, and you will be rewarded.$B",
+    ["obj"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
     ["start"] = {
-      ["Deathstalker Mortis"] = "NPC",
+      ["Captain Shatterskull"] = "NPC",
     },
     ["end"] = {
-      ["Deathstalker Mortis"] = "NPC",
+      ["Captain Shatterskull"] = "NPC",
     },
     ["item"] = {
-      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+      ["Warsong Mark of Honor,1"] = "ITEM",
     },
   },
-  ["More Arathi Basin Marks of Honor,"] = {
-    ["id"] = 8300,
+  ["Vanquish the Invaders!,Enter Wars"] = {
+    ["id"] = 7788,
     ["min"] = 20,
-    ["lvl"] = 60,
-    ["race"] = 178,
+    ["lvl"] = 29,
+    ["race"] = 77,
+    ["log"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a Mark of Honor.  Bring it to me, $N, and I shall reward you.",
+    ["obj"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
     ["start"] = {
-      ["Deathstalker Mortis"] = "NPC",
+      ["Sentinel Farsong"] = "NPC",
     },
     ["end"] = {
-      ["Deathstalker Mortis"] = "NPC",
+      ["Sentinel Farsong"] = "NPC",
     },
     ["item"] = {
-      ["Arathi Basin Mark of Honor,3"] = "ITEM",
+      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Vanquish the Invaders!,Enter Wars"] = {
+    ["id"] = 7788,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["log"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a talisman of merit.  Bring me such a talisman, $N, and I shall reward you.",
+    ["obj"] = "Enter Warsong Gulch and defeat the Horde, obtain a Silverwing Talisman of Merit, and return to Sentinel Farsong at the Silverwing Grove.",
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
     },
   },
   ["The Path of the Righteous,Collect 20"] = {
@@ -54788,7 +55005,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Hallow\'s End Treats for Jesper!,Speak with"] = {
     ["id"] = 8311,
-    ["min"] = 50,
+    ["min"] = 10,
     ["lvl"] = 60,
     ["log"] = "I want to go trick-or-treating, but I can\'t because I\'m sick.  If you go for me, I\'d trade you the candy you get for some I already have!  I think you\'d like this candy - it makes you turn into things both funny and scary!$B$BEach of the innkeepers in the big cities have candy they give for Hallow\'s End - talk to them and do the tricks they ask for!  Also, a little gnome named Talvash in Ironforge is handing out candy as well.  When you have all the candy, bring them back to me here!",
     ["obj"] = "Speak with the innkeepers of Stormwind, Ironforge, and Darnassus, as well as Talvash del Kissel in Ironforge.  Perform the tricks they ask of you in exchange for the treats they offer.$B$BReturn to Jesper at the Stormwind Orphanage with a Darnassus Marzipan, Gnomeregan Gumdrop, Stormwind Nougat, and Ironforge Mint.",
@@ -54807,7 +55024,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Hallow\'s End Treats for Spoops!,Speak with"] = {
     ["id"] = 8312,
-    ["min"] = 50,
+    ["min"] = 10,
     ["lvl"] = 60,
     ["log"] = "I want to go trick-or-treating, but I can\'t because I\'m sick.  If you go for me, I\'d trade you the candy you get for some I already have!  I think you\'d like this candy - it makes you turn into things both funny and scary!$B$BEach of the innkeepers in the big cities have candy they give for Hallow\'s End - talk to them and do the tricks they ask for!  Also, a troll named Kali Remik in Sen\'jin Village is handing out candy as well.  When you have all the candy, bring them back to me here!",
     ["obj"] = "Speak with the innkeepers of Orgrimmar, Undercity, and Thunder Bluff, as well as Kali Remik in Sen\'jin Village.  Perform the tricks they ask of you in exchange for the treats they offer.$B$BReturn to Spoops at the Orgrimmar Orphanage with a Thunder Bluff Marzipan, Darkspear Gumdrop, Orgrimmar Nougat, and Undercity Mint.",
@@ -54957,7 +55174,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Rotten Eggs,Place the "] = {
     ["id"] = 8322,
-    ["min"] = 60,
+    ["min"] = 30,
     ["lvl"] = 60,
     ["race"] = 178,
     ["log"] = "The humans of Southshore love their ale, and as such they prize the ale served at the Southshore Inn.  With the chaos of Hallow\'s End now upon them, we can use it to ruin their latest batch of beverages for weeks - if not months to come!$B$BTake these rotten eggs and place them in the main brew keg inside the Southshore Inn.  Your presence alone will cause strife, so be prepared to defend yourself!$B$BOnce you\'ve given Southshore a taste they\'ll not soon forget, return to me here at the festival!",
@@ -55762,6 +55979,7 @@ pfDB["quests"]["enUS"] = {
     ["lvl"] = 60,
     ["race"] = 77,
     ["pre"] = "Korrak the Bloodrager,According ",
+    ["pre"] = "Korrak the Bloodrager,According ",
     ["log"] = "There\'s something not quite right about all of this... Did anybody think to burn Korrak\'s corpse? Those trolls will stop at nothing to revive their fallen leader - as blue skinned pagan man-beasts often do.$B$BJust keep your eyes out, $N. Don\'t be alarmed if Korrak makes a surprise appearance; and if he does, I want him executed - his corpse burned to ashes.$B$BFor good measure, lop off his head and bring me his skull before you ignite the lifeless mass.",
     ["obj"] = "Should Korrak the Bloodrager make a return to the Field of Strife, seek him out and destroy him.$B$BReturn the Skull of Korrak to Lieutenant Haggerdin in the Hillsbrad Foothills.",
     ["start"] = {
@@ -55779,6 +55997,7 @@ pfDB["quests"]["enUS"] = {
     ["min"] = 51,
     ["lvl"] = 60,
     ["race"] = 178,
+    ["pre"] = "The Legend of Korrak,According ",
     ["pre"] = "The Legend of Korrak,According ",
     ["log"] = "While it is true that Korrak has been slain, one question remains: Will he remain dead? Trolls are notorious for their other-worldly tribal magics. I would not be surprised if the fallen leader was raised from the dead to once more rule over his clan.$B$BYou know what to do should this ever occur.$B$B<Warmaster Laggrond makes a cutting motion across his neck with his index finger.>$B$BAnd  this time, I want his skull. Just keep your eyes peeled, soldier.$B$BDismissed!",
     ["obj"] = "Should Korrak the Bloodrager make a return to the Field of Strife, seek him out and destroy him.$B$BReturn the Skull of Korrak to Warmaster Laggrond in the Hillsbrad Foothills.",
@@ -55828,7 +56047,7 @@ pfDB["quests"]["enUS"] = {
   },
   ["Ruined Kegs,Return to "] = {
     ["id"] = 8409,
-    ["min"] = 60,
+    ["min"] = 25,
     ["lvl"] = 60,
     ["race"] = 178,
     ["pre"] = "Rotten Eggs,Place the ",
@@ -56582,6 +56801,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 8462,
     ["min"] = 53,
     ["lvl"] = 55,
+    ["pre"] = "[DISABLED] Timbermaw Ally,Grazle wan",
     ["pre"] = "Timbermaw Ally,Grazle wan",
     ["log"] = "Perhaps you are capable of handling a larger threat that we Timbermaw face.  You certainly have shown yourself capable here...$B$BAnother of my kind stands guard outside the entrance to Timbermaw Hold, along this road far to the north.  His name is Nafien; while he may appear to be a feral and unsavory beast, fear him not.  He only seeks aid against the malign forces that threaten our home.",
     ["obj"] = "Travel north along the main road in Felwood and speak with the furbolg named Nafien.  He stands guard outside the entrance to Timbermaw Hold.",
@@ -56609,6 +56829,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 8466,
     ["min"] = 45,
     ["lvl"] = 55,
+    ["pre"] = "[DISABLED] Timbermaw Ally,Grazle wan",
     ["pre"] = "Timbermaw Ally,Grazle wan",
     ["obj"] = "Some of the Deadwood furbolgs wear a distinctive headdress that may be used as a means of proof in thinning their numbers. Bring me a feather from any headdresses you acquire; for every set of five you bring me, you will earn recognition amongst the Timbermaw.",
     ["start"] = {
@@ -57597,11 +57818,14 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 8548,
     ["min"] = 55,
     ["lvl"] = 60,
+    ["pre"] = "Cenarion Battlegear,Talk to Va",
     ["log"] = "The badges you collect from performing combat, logistics and tactical assignments for Cenarion Hold are more than just for show, $N.$B$BYou\'d be wise to hold on to them.  As you prove your loyalty to our organization I can offer you some of the gear we reserve for our closest allies in exchange for those badges.  ",
     ["obj"] = "Bring 5 Cenarion Combat Badges, 3 Cenarion Logistics Badges and 7 Cenarion Tactical Badges to Vargus at Cenarion Hold in Silithus.  You must also attain Friendly reputation with Cenarion Circle to be able to complete this quest.",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Cenarion Combat Badge,5"] = "ITEM",
@@ -57852,11 +58076,14 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 8572,
     ["min"] = 55,
     ["lvl"] = 60,
+    ["pre"] = "Cenarion Battlegear,Talk to Va",
     ["log"] = "The badges you collect from performing combat, logistics and tactical assignments for Cenarion Hold are more than just for show, $N.$B$BYou\'d be wise to hold on to them.  As you prove your loyalty to our organization I can offer you some of the gear we reserve for our closest allies in exchange for those badges.",
     ["obj"] = "Bring 7 Cenarion Combat Badges, 4 Cenarion Logistics Badges and 4 Cenarion Tactical Badges to Vargus at Cenarion Hold in Silithus.  You must also attain Honored reputation with Cenarion Circle to be able to complete this quest.",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Cenarion Combat Badge,7"] = "ITEM",
@@ -57868,11 +58095,14 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 8573,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Cenarion Battlegear,Talk to Va",
     ["log"] = "The badges you collect from performing combat, logistics and tactical assignments for Cenarion Hold are more than just for show, $N.$B$BYou\'d be wise to hold on to them.  As you prove your loyalty to our organization I can offer you some of the gear we reserve for our closest allies in exchange for those badges.",
     ["obj"] = "Bring 15 Cenarion Combat Badges, 20 Cenarion Logistics Badges, 20 Cenarion Tactical Badges and 1 Mark of Cenarius to Vargus at Cenarion Hold in Silithus.  You must also attain Exalted reputation with Cenarion Circle to be able to complete this quest.",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Cenarion Combat Badge,15"] = "ITEM",
@@ -57881,19 +58111,16 @@ pfDB["quests"]["enUS"] = {
       ["Mark of Cenarius,1"] = "ITEM",
     },
   },
-  ["Azuregos\'s Magical Ledger,Deliver Az"] = {
+  ["[DISABLED] Azuregos\'s Magical Ledger,Deliver Az"] = {
     ["id"] = 8575,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["log"] = "You cannot understand a single word on this ledger. You don\'t even know what language it is written in!",
+    ["log"] = "Azuregos\'s Magical LedgerThis quest is disabled until patch 1.9.",
     ["obj"] = "Deliver Azuregos\'s Magical Ledger to Narain Soothfancy in Tanaris.",
     ["start"] = {
     },
     ["end"] = {
       ["Narain Soothfancy"] = "NPC",
-    },
-    ["item"] = {
-      ["Magical Ledger,1"] = "ITEM",
     },
   },
   ["Stewvul, Ex-B.F.F.,Narain Soo"] = {
@@ -58271,20 +58498,17 @@ pfDB["quests"]["enUS"] = {
       ["Ransom Letter,1"] = "ITEM",
     },
   },
-  ["Love Song for Narain,Take Merid"] = {
+  ["[DISABLED] Love Song for Narain,Take Merid"] = {
     ["id"] = 8599,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["log"] = "It isn\'t often that I get visitors. As a matter of fact, the last time I had a visitor was when I rescued that dear, sweet gnome from the wreckage of the crashed flying machine.$B$B<Meridith gazes into nothingness, lost in a memory.>$B$BDo you know him? Narain? Narain Soothfancy? Oh it would mean so much to me if somebody would deliver a message to him for me. I must tell him how I feel! I know it\'s love! I just know it!$B$BCould you possibly deliver a message to Narain? I would be forever indebted to you!",
+    ["log"] = "Love Song for NarainThis quest is disabled until patch 1.9.",
     ["obj"] = "Take Meridith\'s Love Letter to Narain Soothfancy in Tanaris.",
     ["start"] = {
       ["Meridith the Mermaiden"] = "NPC",
     },
     ["end"] = {
       ["Narain Soothfancy"] = "NPC",
-    },
-    ["item"] = {
-      ["Meridith\'s Love Letter,1"] = "ITEM",
     },
   },
   ["The Horde Needs Rugged Leather!,Bring 10 R"] = {
@@ -58583,21 +58807,17 @@ pfDB["quests"]["enUS"] = {
       ["Baked Salmon,20"] = "ITEM",
     },
   },
-  ["The Only Prescription,Recover th"] = {
+  ["[DISABLED] The Only Prescription,Recover th"] = {
     ["id"] = 8620,
-    ["min"] = 55,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["pre"] = "Decoy!,Narain Soo",
-    ["log"] = "I should have known. My arch-enemy, Doctor Weavil, up to his old tricks! And now, thanks to your failure in Winterspring, Doctor Weavil has destroyed my book! How are you going to save the world now, hero?$B$BThe note I received stated that the only known copy of \"Draconic for Dummies: Volume II\" was ripped into 8 parts and scattered to the wind! If you somehow manage to find those missing chapters, use this magical binding to put them back together and return to me.",
+    ["log"] = "The Only PrescriptionThis quest is disabled until patch 1.9",
     ["obj"] = "Recover the 8 lost chapters of Draconic for Dummies and combine them with the Magical Book Binding and return the completed book of Draconic for Dummies: Volume II to Narain Soothfancy in Tanaris.",
     ["start"] = {
       ["Narain Soothfancy"] = "NPC",
     },
     ["end"] = {
       ["Narain Soothfancy"] = "NPC",
-    },
-    ["item"] = {
-      ["Draconic For Dummies: Volume II,1"] = "ITEM",
     },
   },
   ["Stormcaller\'s Footguards,Bring the "] = {
@@ -59828,6 +60048,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 8733,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "[DISABLED] The Charge of the Dragonflights,",
     ["pre"] = "The Charge of the Dragonflights,",
     ["log"] = "This is a journey of redemption, hero. Would it be that I was slain today, I would have died for a just and righteous cause. You must recover the green scepter shard. You must cleanse Eranikus of the taint placed upon him by the Old Gods.$B$BTravel to Darnassus. Just outside the city walls you will find one of my agents. This agent will set things in motion for us and inform Tyrande of our plans without alerting Staghelm.$B$B<Malfurion sighs.>$B$BA fall from grace a thousand years in the making...",
     ["obj"] = "Travel to the continent of Teldrassil and find Malfurion\'s agent somewhere outside the walls of Darnassus.",
@@ -60208,6 +60429,7 @@ pfDB["quests"]["enUS"] = {
     ["start"] = {
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Enchanted Thorium Bar,2"] = "ITEM",
@@ -60462,6 +60684,7 @@ pfDB["quests"]["enUS"] = {
     ["start"] = {
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Enchanted Thorium Bar,2"] = "ITEM",
@@ -60487,216 +60710,8 @@ pfDB["quests"]["enUS"] = {
       ["Logistics Task Briefing X,1"] = "ITEM",
     },
   },
-  ["One Commendation Signet,"] = {
-    ["id"] = 8811,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "The Alliance Needs Your Help!,Speak with",
-    ["start"] = {
-      ["Officer Lunalight"] = "NPC",
-    },
-    ["end"] = {
-      ["Officer Lunalight"] = "NPC",
-    },
-    ["item"] = {
-      ["Alliance Commendation Signet,1"] = "ITEM",
-    },
-  },
-  ["One Commendation Signet,"] = {
-    ["id"] = 8812,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "The Alliance Needs Your Help!,Speak with",
-    ["start"] = {
-      ["Officer Porterhouse"] = "NPC",
-    },
-    ["end"] = {
-      ["Officer Porterhouse"] = "NPC",
-    },
-    ["item"] = {
-      ["Alliance Commendation Signet,1"] = "ITEM",
-    },
-  },
-  ["One Commendation Signet,"] = {
-    ["id"] = 8813,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "The Alliance Needs Your Help!,Speak with",
-    ["start"] = {
-      ["Officer Ironbeard"] = "NPC",
-    },
-    ["end"] = {
-      ["Officer Ironbeard"] = "NPC",
-    },
-    ["item"] = {
-      ["Alliance Commendation Signet,1"] = "ITEM",
-    },
-  },
-  ["One Commendation Signet,"] = {
-    ["id"] = 8814,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "The Alliance Needs Your Help!,Speak with",
-    ["start"] = {
-      ["Officer Maloof"] = "NPC",
-    },
-    ["end"] = {
-      ["Officer Maloof"] = "NPC",
-    },
-    ["item"] = {
-      ["Alliance Commendation Signet,1"] = "ITEM",
-    },
-  },
-  ["One Commendation Signet,"] = {
-    ["id"] = 8815,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "The Horde Needs Your Help!,Speak with",
-    ["start"] = {
-      ["Officer Redblade"] = "NPC",
-    },
-    ["end"] = {
-      ["Officer Redblade"] = "NPC",
-    },
-    ["item"] = {
-      ["Horde Commendation Signet,1"] = "ITEM",
-    },
-  },
-  ["One Commendation Signet,"] = {
-    ["id"] = 8816,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "The Horde Needs Your Help!,Speak with",
-    ["start"] = {
-      ["Officer Vu\'Shalay"] = "NPC",
-    },
-    ["end"] = {
-      ["Officer Vu\'Shalay"] = "NPC",
-    },
-    ["item"] = {
-      ["Horde Commendation Signet,1"] = "ITEM",
-    },
-  },
-  ["One Commendation Signet,"] = {
-    ["id"] = 8817,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "The Horde Needs Your Help!,Speak with",
-    ["start"] = {
-      ["Officer Gothena"] = "NPC",
-    },
-    ["end"] = {
-      ["Officer Gothena"] = "NPC",
-    },
-    ["item"] = {
-      ["Horde Commendation Signet,1"] = "ITEM",
-    },
-  },
-  ["One Commendation Signet,"] = {
-    ["id"] = 8818,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "The Horde Needs Your Help!,Speak with",
-    ["start"] = {
-      ["Officer Thunderstrider"] = "NPC",
-    },
-    ["end"] = {
-      ["Officer Thunderstrider"] = "NPC",
-    },
-    ["item"] = {
-      ["Horde Commendation Signet,1"] = "ITEM",
-    },
-  },
   ["Ten Commendation Signets,"] = {
-    ["id"] = 8819,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "The Alliance Needs Your Help!,Speak with",
-    ["start"] = {
-      ["Officer Lunalight"] = "NPC",
-    },
-    ["end"] = {
-      ["Officer Lunalight"] = "NPC",
-    },
-    ["item"] = {
-      ["Alliance Commendation Signet,10"] = "ITEM",
-    },
-  },
-  ["Ten Commendation Signets,"] = {
-    ["id"] = 8820,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "The Alliance Needs Your Help!,Speak with",
-    ["start"] = {
-      ["Officer Porterhouse"] = "NPC",
-    },
-    ["end"] = {
-      ["Officer Porterhouse"] = "NPC",
-    },
-    ["item"] = {
-      ["Alliance Commendation Signet,10"] = "ITEM",
-    },
-  },
-  ["Ten Commendation Signets,"] = {
-    ["id"] = 8821,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "The Alliance Needs Your Help!,Speak with",
-    ["start"] = {
-      ["Officer Ironbeard"] = "NPC",
-    },
-    ["end"] = {
-      ["Officer Ironbeard"] = "NPC",
-    },
-    ["item"] = {
-      ["Alliance Commendation Signet,10"] = "ITEM",
-    },
-  },
-  ["Ten Commendation Signets,"] = {
-    ["id"] = 8822,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "The Alliance Needs Your Help!,Speak with",
-    ["start"] = {
-      ["Officer Maloof"] = "NPC",
-    },
-    ["end"] = {
-      ["Officer Maloof"] = "NPC",
-    },
-    ["item"] = {
-      ["Alliance Commendation Signet,10"] = "ITEM",
-    },
-  },
-  ["Ten Commendation Signets,"] = {
-    ["id"] = 8823,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "The Horde Needs Your Help!,Speak with",
-    ["start"] = {
-      ["Officer Redblade"] = "NPC",
-    },
-    ["end"] = {
-      ["Officer Redblade"] = "NPC",
-    },
-    ["item"] = {
-      ["Horde Commendation Signet,10"] = "ITEM",
-    },
-  },
-  ["Ten Commendation Signets,"] = {
-    ["id"] = 8824,
+    ["id"] = 8826,
     ["min"] = 1,
     ["lvl"] = 60,
     ["race"] = 178,
@@ -60728,7 +60743,7 @@ pfDB["quests"]["enUS"] = {
     },
   },
   ["Ten Commendation Signets,"] = {
-    ["id"] = 8826,
+    ["id"] = 8824,
     ["min"] = 1,
     ["lvl"] = 60,
     ["race"] = 178,
@@ -60741,6 +60756,214 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Horde Commendation Signet,10"] = "ITEM",
+    },
+  },
+  ["Ten Commendation Signets,"] = {
+    ["id"] = 8823,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "The Horde Needs Your Help!,Speak with",
+    ["start"] = {
+      ["Officer Redblade"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Redblade"] = "NPC",
+    },
+    ["item"] = {
+      ["Horde Commendation Signet,10"] = "ITEM",
+    },
+  },
+  ["Ten Commendation Signets,"] = {
+    ["id"] = 8822,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "The Alliance Needs Your Help!,Speak with",
+    ["start"] = {
+      ["Officer Porterhouse"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Porterhouse"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,10"] = "ITEM",
+    },
+  },
+  ["Ten Commendation Signets,"] = {
+    ["id"] = 8821,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "The Alliance Needs Your Help!,Speak with",
+    ["start"] = {
+      ["Officer Lunalight"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Lunalight"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,10"] = "ITEM",
+    },
+  },
+  ["Ten Commendation Signets,"] = {
+    ["id"] = 8820,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "The Alliance Needs Your Help!,Speak with",
+    ["start"] = {
+      ["Officer Ironbeard"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Ironbeard"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,10"] = "ITEM",
+    },
+  },
+  ["Ten Commendation Signets,"] = {
+    ["id"] = 8819,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "The Alliance Needs Your Help!,Speak with",
+    ["start"] = {
+      ["Officer Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,10"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8818,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "The Horde Needs Your Help!,Speak with",
+    ["start"] = {
+      ["Officer Vu\'Shalay"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Vu\'Shalay"] = "NPC",
+    },
+    ["item"] = {
+      ["Horde Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8817,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "The Horde Needs Your Help!,Speak with",
+    ["start"] = {
+      ["Officer Thunderstrider"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Thunderstrider"] = "NPC",
+    },
+    ["item"] = {
+      ["Horde Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8816,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "The Horde Needs Your Help!,Speak with",
+    ["start"] = {
+      ["Officer Gothena"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Gothena"] = "NPC",
+    },
+    ["item"] = {
+      ["Horde Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8815,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "The Horde Needs Your Help!,Speak with",
+    ["start"] = {
+      ["Officer Redblade"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Redblade"] = "NPC",
+    },
+    ["item"] = {
+      ["Horde Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8814,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "The Alliance Needs Your Help!,Speak with",
+    ["start"] = {
+      ["Officer Porterhouse"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Porterhouse"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8813,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "The Alliance Needs Your Help!,Speak with",
+    ["start"] = {
+      ["Officer Lunalight"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Lunalight"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8811,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "The Alliance Needs Your Help!,Speak with",
+    ["start"] = {
+      ["Officer Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8812,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "The Alliance Needs Your Help!,Speak with",
+    ["start"] = {
+      ["Officer Ironbeard"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Ironbeard"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,1"] = "ITEM",
     },
   },
   ["The Ultimate Deception,Bring a Sk"] = {
@@ -61067,8 +61290,8 @@ pfDB["quests"]["enUS"] = {
   },
   ["New Year Celebrations!,Bring the "] = {
     ["id"] = 8860,
-    ["min"] = 60,
-    ["lvl"] = 70,
+    ["min"] = 1,
+    ["lvl"] = 60,
     ["race"] = 77,
     ["log"] = "Stormwind is holding a celebration for the new year!  All day long today you can get free booze, and at night they\'ll put on a firework show!  It should be pretty nice... but Booty Bay is also having a party today; I bet it\'ll be even better!$B$BWell anyway, Innkeeper Allison in Stormwind needs a supply of Smoky Wood Pasture fare to help feed all the party goers.  Can you do me a favor and deliver it!$B$BThanks, $N!  Innkeeper Allison is in the Gilded Rose, in the Trade District of Stormwind.",
     ["obj"] = "Bring the Smokywood Supplies to Innkeeper Allison in Stormwind.",
@@ -61084,8 +61307,8 @@ pfDB["quests"]["enUS"] = {
   },
   ["New Year Celebrations!,Bring the "] = {
     ["id"] = 8861,
-    ["min"] = 60,
-    ["lvl"] = 70,
+    ["min"] = 1,
+    ["lvl"] = 60,
     ["race"] = 178,
     ["log"] = "Thunder Bluff is holding a celebration for the new year!  All day you\'ll find free booze there, and at night they\'ll put on a firework show!$B$BIt should be pretty nice... but Booty Bay is also having a party today; I bet it\'ll be even better!$B$BWell anyway, Innkeeper Pala in Thunder Bluff needs a supply of Smoky Wood Pasture fare to help feed all the party goers.  Can you do me a favor and deliver it!$B$BThanks, $N!  Innkeeper Pala is in the inn near the bridge to Hunter\'s Rise.",
     ["obj"] = "Bring the Smokywood Supplies to Innkeeper Pala in Thunder Bluff.",
@@ -61384,6 +61607,7 @@ pfDB["quests"]["enUS"] = {
     ["item"] = {
       ["Winterspring Blood Sample,15"] = "ITEM",
       ["Beaststalker\'s Bindings,1"] = "ITEM",
+      ["Beaststalker\'s Bindings,1"] = "ITEM",
     },
   },
   ["An Earnest Proposition,Acquire 15"] = {
@@ -61402,6 +61626,7 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Winterspring Blood Sample,15"] = "ITEM",
+      ["Magister\'s Bindings,1"] = "ITEM",
       ["Magister\'s Bindings,1"] = "ITEM",
     },
   },
@@ -61440,6 +61665,7 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Winterspring Blood Sample,15"] = "ITEM",
+      ["Devout Bracers,1"] = "ITEM",
       ["Devout Bracers,1"] = "ITEM",
     },
   },
@@ -61536,6 +61762,7 @@ pfDB["quests"]["enUS"] = {
     ["item"] = {
       ["Silithus Venom Sample,15"] = "ITEM",
       ["Beaststalker\'s Bindings,1"] = "ITEM",
+      ["Beaststalker\'s Bindings,1"] = "ITEM",
     },
   },
   ["An Earnest Proposition,Acquire 15"] = {
@@ -61555,6 +61782,7 @@ pfDB["quests"]["enUS"] = {
     ["item"] = {
       ["Silithus Venom Sample,15"] = "ITEM",
       ["Magister\'s Bindings,1"] = "ITEM",
+      ["Magister\'s Bindings,1"] = "ITEM",
     },
   },
   ["An Earnest Proposition,Acquire 15"] = {
@@ -61573,6 +61801,7 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Silithus Venom Sample,15"] = "ITEM",
+      ["Devout Bracers,1"] = "ITEM",
       ["Devout Bracers,1"] = "ITEM",
     },
   },
@@ -61611,6 +61840,8 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Silithus Venom Sample,15"] = "ITEM",
+      ["Bindings of Elements,1"] = "ITEM",
+      ["Bindings of Elements,1"] = "ITEM",
       ["Bindings of Elements,1"] = "ITEM",
     },
   },
@@ -61841,6 +62072,8 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Beaststalker\'s Belt,1"] = "ITEM",
+      ["Beaststalker\'s Belt,1"] = "ITEM",
+      ["Beaststalker\'s Gloves,1"] = "ITEM",
       ["Beaststalker\'s Gloves,1"] = "ITEM",
     },
   },
@@ -61860,6 +62093,8 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Magister\'s Belt,1"] = "ITEM",
+      ["Magister\'s Belt,1"] = "ITEM",
+      ["Magister\'s Gloves,1"] = "ITEM",
       ["Magister\'s Gloves,1"] = "ITEM",
     },
   },
@@ -61898,6 +62133,9 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Devout Belt,1"] = "ITEM",
+      ["Devout Belt,1"] = "ITEM",
+      ["Devout Gloves,1"] = "ITEM",
+      ["Devout Gloves,1"] = "ITEM",
       ["Devout Gloves,1"] = "ITEM",
     },
   },
@@ -61937,6 +62175,7 @@ pfDB["quests"]["enUS"] = {
     ["item"] = {
       ["Dreadmist Belt,1"] = "ITEM",
       ["Dreadmist Wraps,1"] = "ITEM",
+      ["Dreadmist Wraps,1"] = "ITEM",
     },
   },
   ["Just Compensation,Bring a Be"] = {
@@ -61974,6 +62213,8 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Beaststalker\'s Belt,1"] = "ITEM",
+      ["Beaststalker\'s Belt,1"] = "ITEM",
+      ["Beaststalker\'s Gloves,1"] = "ITEM",
       ["Beaststalker\'s Gloves,1"] = "ITEM",
     },
   },
@@ -61993,6 +62234,8 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Magister\'s Belt,1"] = "ITEM",
+      ["Magister\'s Belt,1"] = "ITEM",
+      ["Magister\'s Gloves,1"] = "ITEM",
       ["Magister\'s Gloves,1"] = "ITEM",
     },
   },
@@ -62012,6 +62255,9 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Devout Belt,1"] = "ITEM",
+      ["Devout Belt,1"] = "ITEM",
+      ["Devout Gloves,1"] = "ITEM",
+      ["Devout Gloves,1"] = "ITEM",
       ["Devout Gloves,1"] = "ITEM",
     },
   },
@@ -62050,6 +62296,10 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Cord of Elements,1"] = "ITEM",
+      ["Cord of Elements,1"] = "ITEM",
+      ["Cord of Elements,1"] = "ITEM",
+      ["Gauntlets of Elements,1"] = "ITEM",
+      ["Gauntlets of Elements,1"] = "ITEM",
       ["Gauntlets of Elements,1"] = "ITEM",
     },
   },
@@ -62069,6 +62319,7 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Dreadmist Belt,1"] = "ITEM",
+      ["Dreadmist Wraps,1"] = "ITEM",
       ["Dreadmist Wraps,1"] = "ITEM",
     },
   },
@@ -62138,6 +62389,8 @@ pfDB["quests"]["enUS"] = {
       ["Dark Iron Bar,3"] = "ITEM",
       ["Enchanted Leather,20"] = "ITEM",
       ["Mooncloth,3"] = "ITEM",
+      ["Cured Rugged Hide,4"] = "ITEM",
+      ["Cured Rugged Hide,4"] = "ITEM",
       ["Cured Rugged Hide,4"] = "ITEM",
     },
   },
@@ -62213,6 +62466,7 @@ pfDB["quests"]["enUS"] = {
       ["Wildheart Boots,1"] = "ITEM",
       ["Wildheart Kilt,1"] = "ITEM",
       ["Wildheart Spaulders,1"] = "ITEM",
+      ["Wildheart Spaulders,1"] = "ITEM",
     },
   },
   ["Anthion\'s Parting Words,Return to "] = {
@@ -62232,7 +62486,10 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Beaststalker\'s Boots,1"] = "ITEM",
+      ["Beaststalker\'s Boots,1"] = "ITEM",
       ["Beaststalker\'s Pants,1"] = "ITEM",
+      ["Beaststalker\'s Pants,1"] = "ITEM",
+      ["Beaststalker\'s Mantle,1"] = "ITEM",
       ["Beaststalker\'s Mantle,1"] = "ITEM",
     },
   },
@@ -62254,6 +62511,8 @@ pfDB["quests"]["enUS"] = {
     ["item"] = {
       ["Magister\'s Boots,1"] = "ITEM",
       ["Magister\'s Leggings,1"] = "ITEM",
+      ["Magister\'s Leggings,1"] = "ITEM",
+      ["Magister\'s Mantle,1"] = "ITEM",
       ["Magister\'s Mantle,1"] = "ITEM",
     },
   },
@@ -62295,7 +62554,11 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Devout Sandals,1"] = "ITEM",
+      ["Devout Sandals,1"] = "ITEM",
       ["Devout Skirt,1"] = "ITEM",
+      ["Devout Skirt,1"] = "ITEM",
+      ["Devout Skirt,1"] = "ITEM",
+      ["Devout Mantle,1"] = "ITEM",
       ["Devout Mantle,1"] = "ITEM",
     },
   },
@@ -62315,6 +62578,7 @@ pfDB["quests"]["enUS"] = {
       ["Deliana"] = "NPC",
     },
     ["item"] = {
+      ["Shadowcraft Boots,1"] = "ITEM",
       ["Shadowcraft Boots,1"] = "ITEM",
       ["Shadowcraft Pants,1"] = "ITEM",
       ["Shadowcraft Spaulders,1"] = "ITEM",
@@ -62337,7 +62601,12 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Boots of Elements,1"] = "ITEM",
+      ["Boots of Elements,1"] = "ITEM",
+      ["Boots of Elements,1"] = "ITEM",
       ["Kilt of Elements,1"] = "ITEM",
+      ["Kilt of Elements,1"] = "ITEM",
+      ["Kilt of Elements,1"] = "ITEM",
+      ["Pauldrons of Elements,1"] = "ITEM",
       ["Pauldrons of Elements,1"] = "ITEM",
     },
   },
@@ -62358,6 +62627,7 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Dreadmist Sandals,1"] = "ITEM",
+      ["Dreadmist Leggings,1"] = "ITEM",
       ["Dreadmist Leggings,1"] = "ITEM",
       ["Dreadmist Mantle,1"] = "ITEM",
     },
@@ -62954,6 +63224,7 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Wildheart Cowl,1"] = "ITEM",
+      ["Wildheart Cowl,1"] = "ITEM",
       ["Wildheart Vest,1"] = "ITEM",
     },
   },
@@ -62974,6 +63245,8 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Beaststalker\'s Cap,1"] = "ITEM",
+      ["Beaststalker\'s Cap,1"] = "ITEM",
+      ["Beaststalker\'s Tunic,1"] = "ITEM",
       ["Beaststalker\'s Tunic,1"] = "ITEM",
     },
   },
@@ -62994,6 +63267,9 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Magister\'s Crown,1"] = "ITEM",
+      ["Magister\'s Crown,1"] = "ITEM",
+      ["Magister\'s Crown,1"] = "ITEM",
+      ["Magister\'s Robes,1"] = "ITEM",
       ["Magister\'s Robes,1"] = "ITEM",
     },
   },
@@ -63013,6 +63289,7 @@ pfDB["quests"]["enUS"] = {
       ["Deliana"] = "NPC",
     },
     ["item"] = {
+      ["Lightforge Helm,1"] = "ITEM",
       ["Lightforge Helm,1"] = "ITEM",
       ["Lightforge Breastplate,1"] = "ITEM",
     },
@@ -63034,6 +63311,8 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Devout Crown,1"] = "ITEM",
+      ["Devout Crown,1"] = "ITEM",
+      ["Devout Robe,1"] = "ITEM",
       ["Devout Robe,1"] = "ITEM",
     },
   },
@@ -63074,6 +63353,7 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Dreadmist Mask,1"] = "ITEM",
+      ["Dreadmist Mask,1"] = "ITEM",
       ["Dreadmist Robe,1"] = "ITEM",
     },
   },
@@ -63093,6 +63373,7 @@ pfDB["quests"]["enUS"] = {
       ["Deliana"] = "NPC",
     },
     ["item"] = {
+      ["Helm of Valor,1"] = "ITEM",
       ["Helm of Valor,1"] = "ITEM",
       ["Breastplate of Valor,1"] = "ITEM",
     },
@@ -63114,6 +63395,7 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Wildheart Cowl,1"] = "ITEM",
+      ["Wildheart Cowl,1"] = "ITEM",
       ["Wildheart Vest,1"] = "ITEM",
     },
   },
@@ -63134,6 +63416,8 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Beaststalker\'s Cap,1"] = "ITEM",
+      ["Beaststalker\'s Cap,1"] = "ITEM",
+      ["Beaststalker\'s Tunic,1"] = "ITEM",
       ["Beaststalker\'s Tunic,1"] = "ITEM",
     },
   },
@@ -63154,6 +63438,8 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Devout Crown,1"] = "ITEM",
+      ["Devout Crown,1"] = "ITEM",
+      ["Devout Robe,1"] = "ITEM",
       ["Devout Robe,1"] = "ITEM",
     },
   },
@@ -63194,6 +63480,9 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Coif of Elements,1"] = "ITEM",
+      ["Coif of Elements,1"] = "ITEM",
+      ["Vest of Elements,1"] = "ITEM",
+      ["Vest of Elements,1"] = "ITEM",
       ["Vest of Elements,1"] = "ITEM",
     },
   },
@@ -63213,6 +63502,7 @@ pfDB["quests"]["enUS"] = {
       ["Mokvar"] = "NPC",
     },
     ["item"] = {
+      ["Dreadmist Mask,1"] = "ITEM",
       ["Dreadmist Mask,1"] = "ITEM",
       ["Dreadmist Robe,1"] = "ITEM",
     },
@@ -63234,6 +63524,7 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Helm of Valor,1"] = "ITEM",
+      ["Helm of Valor,1"] = "ITEM",
       ["Breastplate of Valor,1"] = "ITEM",
     },
   },
@@ -63254,6 +63545,9 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Magister\'s Crown,1"] = "ITEM",
+      ["Magister\'s Crown,1"] = "ITEM",
+      ["Magister\'s Crown,1"] = "ITEM",
+      ["Magister\'s Robes,1"] = "ITEM",
       ["Magister\'s Robes,1"] = "ITEM",
     },
   },
@@ -63293,6 +63587,7 @@ pfDB["quests"]["enUS"] = {
       ["Wildheart Boots,1"] = "ITEM",
       ["Wildheart Kilt,1"] = "ITEM",
       ["Wildheart Spaulders,1"] = "ITEM",
+      ["Wildheart Spaulders,1"] = "ITEM",
     },
   },
   ["Anthion\'s Parting Words,Return to "] = {
@@ -63312,7 +63607,10 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Beaststalker\'s Boots,1"] = "ITEM",
+      ["Beaststalker\'s Boots,1"] = "ITEM",
       ["Beaststalker\'s Pants,1"] = "ITEM",
+      ["Beaststalker\'s Pants,1"] = "ITEM",
+      ["Beaststalker\'s Mantle,1"] = "ITEM",
       ["Beaststalker\'s Mantle,1"] = "ITEM",
     },
   },
@@ -63334,6 +63632,8 @@ pfDB["quests"]["enUS"] = {
     ["item"] = {
       ["Magister\'s Boots,1"] = "ITEM",
       ["Magister\'s Leggings,1"] = "ITEM",
+      ["Magister\'s Leggings,1"] = "ITEM",
+      ["Magister\'s Mantle,1"] = "ITEM",
       ["Magister\'s Mantle,1"] = "ITEM",
     },
   },
@@ -63354,7 +63654,11 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Devout Sandals,1"] = "ITEM",
+      ["Devout Sandals,1"] = "ITEM",
       ["Devout Skirt,1"] = "ITEM",
+      ["Devout Skirt,1"] = "ITEM",
+      ["Devout Skirt,1"] = "ITEM",
+      ["Devout Mantle,1"] = "ITEM",
       ["Devout Mantle,1"] = "ITEM",
     },
   },
@@ -63374,6 +63678,7 @@ pfDB["quests"]["enUS"] = {
       ["Mokvar"] = "NPC",
     },
     ["item"] = {
+      ["Shadowcraft Boots,1"] = "ITEM",
       ["Shadowcraft Boots,1"] = "ITEM",
       ["Shadowcraft Pants,1"] = "ITEM",
       ["Shadowcraft Spaulders,1"] = "ITEM",
@@ -63396,6 +63701,7 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Dreadmist Sandals,1"] = "ITEM",
+      ["Dreadmist Leggings,1"] = "ITEM",
       ["Dreadmist Leggings,1"] = "ITEM",
       ["Dreadmist Mantle,1"] = "ITEM",
     },
@@ -63488,6 +63794,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 9033,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "The Dread Citadel - Naxxramas,Archmage A",
     ["log"] = "Five years since the last war...$B$BTens of thousands of lives were lost and for what? The threat was never fully extinguished.$B$BAnd so the Lich King stirs once more... His yes-man, Kel\'Thuzad, amassing for another attack upon our lands.$B$BWe will not allow it! Prove your dedication. Prove that you are willing to risk life and limb to stop this madness and the combined might of the Dawn and the Crusade will be at your beck and call.$B$BEnter Naxxramas and destroy the Scourge within...",
     ["obj"] = "Commander Eligor Dawnbringer at Light\'s Hope Chapel in the Eastern Plaguelands wants you to slay 5 Living Monstrosities, 5 Stoneskin Gargoyles, 8 Deathknight Captains and 3 Venom Stalkers.",
     ["start"] = {
@@ -63497,7 +63804,7 @@ pfDB["quests"]["enUS"] = {
       ["Commander Eligor Dawnbringer"] = "NPC",
     },
     ["spawn"] = {
-      ["Death Knight Captain,8"] = "NPC",
+      ["Deathknight Captain,8"] = "NPC",
       ["Venom Stalker,3"] = "NPC",
       ["Living Monstrosity,5"] = "NPC",
       ["Stoneskin Gargoyle,5"] = "NPC",
@@ -63543,6 +63850,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Plate Scrap,20"] = "ITEM",
       ["Arcanite Bar,4"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
   ["Dreadnaught Helmet,Korfax at "] = {
@@ -63585,6 +63894,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Plate Scrap,12"] = "ITEM",
       ["Arcanite Bar,2"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
   ["Dreadnaught Sabatons,Korfax at "] = {
@@ -63605,6 +63916,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Sabatons,1"] = "ITEM",
       ["Wartorn Plate Scrap,12"] = "ITEM",
       ["Arcanite Bar,2"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
@@ -63627,6 +63940,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Plate Scrap,8"] = "ITEM",
       ["Arcanite Bar,1"] = "ITEM",
       ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
     },
   },
   ["Dreadnaught Waistguard,Korfax at "] = {
@@ -63647,6 +63962,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Waistguard,1"] = "ITEM",
       ["Wartorn Plate Scrap,8"] = "ITEM",
       ["Arcanite Bar,1"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
       ["Cured Rugged Hide,5"] = "ITEM",
     },
   },
@@ -63690,6 +64007,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Plate Scrap,25"] = "ITEM",
       ["Arcanite Bar,4"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
   ["Redemption Legguards,Commander "] = {
@@ -63731,6 +64050,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Headpiece,1"] = "ITEM",
       ["Wartorn Plate Scrap,15"] = "ITEM",
       ["Arcanite Bar,5"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
       ["Cured Rugged Hide,2"] = "ITEM",
     },
   },
@@ -63774,6 +64095,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Plate Scrap,12"] = "ITEM",
       ["Arcanite Bar,2"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
   ["Redemption Handguards,Commander "] = {
@@ -63794,6 +64117,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Handguards,1"] = "ITEM",
       ["Wartorn Plate Scrap,8"] = "ITEM",
       ["Arcanite Bar,1"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
       ["Cured Rugged Hide,5"] = "ITEM",
     },
   },
@@ -63836,6 +64161,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Wristguards,1"] = "ITEM",
       ["Wartorn Plate Scrap,6"] = "ITEM",
       ["Arcanite Bar,1"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
       ["Cured Rugged Hide,2"] = "ITEM",
     },
   },
@@ -63910,6 +64237,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Chain Scrap,25"] = "ITEM",
       ["Arcanite Bar,4"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
   ["Cryptstalker Legguards,Huntsman L"] = {
@@ -63930,6 +64259,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Legguards,1"] = "ITEM",
       ["Wartorn Chain Scrap,20"] = "ITEM",
       ["Arcanite Bar,3"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
       ["Cured Rugged Hide,5"] = "ITEM",
     },
   },
@@ -63973,6 +64304,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Chain Scrap,12"] = "ITEM",
       ["Arcanite Bar,2"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
   ["Cryptstalker Boots,Huntsman L"] = {
@@ -64015,6 +64348,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Chain Scrap,8"] = "ITEM",
       ["Arcanite Bar,1"] = "ITEM",
       ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
     },
   },
   ["Cryptstalker Girdle,Huntsman L"] = {
@@ -64056,6 +64391,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Wristguards,1"] = "ITEM",
       ["Wartorn Chain Scrap,6"] = "ITEM",
       ["Arcanite Bar,1"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
       ["Cured Rugged Hide,2"] = "ITEM",
     },
   },
@@ -64100,6 +64437,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Chain Scrap,25"] = "ITEM",
       ["Arcanite Bar,4"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
   ["Earthshatter Legguards,Rimblat Ea"] = {
@@ -64120,6 +64459,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Legguards,1"] = "ITEM",
       ["Wartorn Chain Scrap,20"] = "ITEM",
       ["Arcanite Bar,3"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
       ["Cured Rugged Hide,5"] = "ITEM",
     },
   },
@@ -64205,6 +64546,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Chain Scrap,8"] = "ITEM",
       ["Arcanite Bar,1"] = "ITEM",
       ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
     },
   },
   ["Earthshatter Girdle,Rimblat Ea"] = {
@@ -64247,6 +64590,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Chain Scrap,6"] = "ITEM",
       ["Arcanite Bar,1"] = "ITEM",
       ["Cured Rugged Hide,2"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
     },
   },
   ["Bonescythe Breastplate,Rohan the "] = {
@@ -64268,12 +64613,15 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Leather Scrap,25"] = "ITEM",
       ["Arcanite Bar,2"] = "ITEM",
       ["Cured Rugged Hide,6"] = "ITEM",
+      ["Cured Rugged Hide,6"] = "ITEM",
+      ["Cured Rugged Hide,6"] = "ITEM",
     },
   },
   ["Bonescythe Legplates,Rohan the "] = {
     ["id"] = 9078,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["class"] = 8,
     ["pre"] = "Echoes of War,Commander ",
     ["log"] = "If you want Bonescythe made, you\'re going to have to supply the materials.$B$BEnter Naxxramas, the big floating city of death in the sky up there, and find desecrated armor and wartorn armor scraps. Bring those back along with the materials to put everything together and you\'ll have your Bonescythe. Oh, and you\'ll need to pay me for my troubles... I\'ll supply the bones.",
     ["obj"] = "Rohan the Assassin at Light\'s Hope Chapel in the Eastern Plaguelands will make Bonescythe Legplates if you bring him the following: 1 Desecrated Legplates, 20 Wartorn Leather Scraps, 1 Arcanite Bar, 8 Cured Rugged Hides and 100 gold pieces.",
@@ -64287,6 +64635,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Legplates,1"] = "ITEM",
       ["Wartorn Leather Scrap,20"] = "ITEM",
       ["Arcanite Bar,1"] = "ITEM",
+      ["Cured Rugged Hide,8"] = "ITEM",
+      ["Cured Rugged Hide,8"] = "ITEM",
       ["Cured Rugged Hide,8"] = "ITEM",
     },
   },
@@ -64307,6 +64657,8 @@ pfDB["quests"]["enUS"] = {
     ["item"] = {
       ["Desecrated Helmet,1"] = "ITEM",
       ["Wartorn Leather Scrap,15"] = "ITEM",
+      ["Cured Rugged Hide,8"] = "ITEM",
+      ["Cured Rugged Hide,8"] = "ITEM",
       ["Cured Rugged Hide,8"] = "ITEM",
       ["Nexus Crystal,1"] = "ITEM",
     },
@@ -64329,6 +64681,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Pauldrons,1"] = "ITEM",
       ["Wartorn Leather Scrap,12"] = "ITEM",
       ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
       ["Nexus Crystal,1"] = "ITEM",
     },
   },
@@ -64349,6 +64703,8 @@ pfDB["quests"]["enUS"] = {
     ["item"] = {
       ["Desecrated Sabatons,1"] = "ITEM",
       ["Wartorn Leather Scrap,12"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
       ["Nexus Crystal,2"] = "ITEM",
     },
@@ -64372,6 +64728,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Leather Scrap,8"] = "ITEM",
       ["Arcanite Bar,1"] = "ITEM",
       ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
     },
   },
   ["Bonescythe Waistguard,Rohan the "] = {
@@ -64391,6 +64749,8 @@ pfDB["quests"]["enUS"] = {
     ["item"] = {
       ["Desecrated Waistguard,1"] = "ITEM",
       ["Wartorn Leather Scrap,8"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
       ["Cured Rugged Hide,5"] = "ITEM",
       ["Nexus Crystal,1"] = "ITEM",
     },
@@ -64413,6 +64773,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Bracers,1"] = "ITEM",
       ["Wartorn Leather Scrap,6"] = "ITEM",
       ["Arcanite Bar,1"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
       ["Cured Rugged Hide,2"] = "ITEM",
     },
   },
@@ -64451,6 +64813,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Tunic,1"] = "ITEM",
       ["Wartorn Leather Scrap,25"] = "ITEM",
       ["Cured Rugged Hide,6"] = "ITEM",
+      ["Cured Rugged Hide,6"] = "ITEM",
+      ["Cured Rugged Hide,6"] = "ITEM",
       ["Nexus Crystal,2"] = "ITEM",
     },
   },
@@ -64471,6 +64835,8 @@ pfDB["quests"]["enUS"] = {
     ["item"] = {
       ["Desecrated Legguards,1"] = "ITEM",
       ["Wartorn Leather Scrap,20"] = "ITEM",
+      ["Cured Rugged Hide,8"] = "ITEM",
+      ["Cured Rugged Hide,8"] = "ITEM",
       ["Cured Rugged Hide,8"] = "ITEM",
       ["Nexus Crystal,1"] = "ITEM",
     },
@@ -64493,6 +64859,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Headpiece,1"] = "ITEM",
       ["Wartorn Leather Scrap,15"] = "ITEM",
       ["Cured Rugged Hide,6"] = "ITEM",
+      ["Cured Rugged Hide,6"] = "ITEM",
+      ["Cured Rugged Hide,6"] = "ITEM",
       ["Nexus Crystal,2"] = "ITEM",
     },
   },
@@ -64513,6 +64881,8 @@ pfDB["quests"]["enUS"] = {
     ["item"] = {
       ["Desecrated Spaulders,1"] = "ITEM",
       ["Wartorn Leather Scrap,12"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
       ["Cured Rugged Hide,5"] = "ITEM",
       ["Nexus Crystal,1"] = "ITEM",
     },
@@ -64536,6 +64906,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Leather Scrap,12"] = "ITEM",
       ["Mooncloth,3"] = "ITEM",
       ["Cured Rugged Hide,2"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
     },
   },
   ["Dreamwalker Handguards,Rayne at L"] = {
@@ -64555,6 +64927,8 @@ pfDB["quests"]["enUS"] = {
     ["item"] = {
       ["Desecrated Handguards,1"] = "ITEM",
       ["Wartorn Leather Scrap,8"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
       ["Cured Rugged Hide,5"] = "ITEM",
       ["Nexus Crystal,1"] = "ITEM",
     },
@@ -64578,6 +64952,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Leather Scrap,8"] = "ITEM",
       ["Mooncloth,3"] = "ITEM",
       ["Cured Rugged Hide,2"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
     },
   },
   ["Dreamwalker Wristguards,Rayne at L"] = {
@@ -64598,6 +64974,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Wristguards,1"] = "ITEM",
       ["Wartorn Leather Scrap,6"] = "ITEM",
       ["Arcane Crystal,1"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
+      ["Cured Rugged Hide,2"] = "ITEM",
       ["Cured Rugged Hide,2"] = "ITEM",
     },
   },
@@ -64698,6 +65076,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Cloth Scrap,12"] = "ITEM",
       ["Mooncloth,2"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
   ["Frostfire Sandals,Archmage A"] = {
@@ -64718,6 +65098,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Sandals,1"] = "ITEM",
       ["Wartorn Cloth Scrap,12"] = "ITEM",
       ["Mooncloth,2"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
@@ -64865,6 +65247,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Cloth Scrap,12"] = "ITEM",
       ["Mooncloth,2"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
   ["Plagueheart Sandals,Mataus the"] = {
@@ -64885,6 +65269,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Sandals,1"] = "ITEM",
       ["Wartorn Cloth Scrap,12"] = "ITEM",
       ["Mooncloth,2"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
@@ -65032,6 +65418,8 @@ pfDB["quests"]["enUS"] = {
       ["Wartorn Cloth Scrap,12"] = "ITEM",
       ["Mooncloth,2"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
   ["Sandals of Faith,Father Ini"] = {
@@ -65052,6 +65440,8 @@ pfDB["quests"]["enUS"] = {
       ["Desecrated Sandals,1"] = "ITEM",
       ["Wartorn Cloth Scrap,12"] = "ITEM",
       ["Mooncloth,2"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
@@ -65990,6 +66380,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 9232,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Echoes of War,Commander ",
     ["log"] = "You fancy yourself a hero of the Dawn, eh? I\'ve seen our greatest soldiers get rolled over by Kel\'Thuzad\'s plebes! How well could someone so clueless possibly fare in Naxxramas?$B$B<Wilhelm sighs.>$B$BBah, what choice do I got? You\'re the best I can do; I may as well help you.$B$BOmarion left me with one recipe. It\'s the only song I know... I can make a few variations of these pants; you just gotta supply the materials.",
     ["obj"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants you to bring him 2 Frozen Runes, 2 Essence of Water, 2 Blue Sapphires and 30 gold pieces.",
     ["start"] = {
@@ -66023,6 +66414,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 9234,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarion\'s Handbook,Take Omari",
     ["log"] = "Thanks to you and Omarion, may he rest in peace, I am now able to create Icebane gauntlets. All you need to do is bring me the materials and pay a small crafting fee.",
     ["obj"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants 5 Frozen Runes, 12 Thorium Bars, 2 Arcanite Bars, 2 Essences of Water and 200 gold.",
     ["start"] = {
@@ -66042,6 +66434,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 9235,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarion\'s Handbook,Take Omari",
     ["log"] = "Thanks to you and Omarion (May he rest in peace), I am now able to create Icebane bracers. All you need to do is bring me the materials and pay a small crafting fee.",
     ["obj"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants 4 Frozen Runes, 12 Thorium Bars, 2 Arcanite Bars, 2 Essence of Water and 200 gold.",
     ["start"] = {
@@ -66061,6 +66454,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 9236,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarion\'s Handbook,Take Omari",
     ["log"] = "Thanks to you and Omarion (May he rest in peace), I am now able to create an Icebane breastplate. All you need to do is bring me the materials and pay a small crafting fee.",
     ["obj"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants 8 Frozen Runes, 16 Thorium Bars, 2 Arcanite Bars, 4 Essence of Water and 300 gold. You will also need to be of Exalted reputation with the Argent Dawn.",
     ["start"] = {
@@ -66080,6 +66474,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 9237,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarion\'s Handbook,Take Omari",
     ["log"] = "Thanks to you and Omarion, may he rest in peace, I am now able to create a Glacial cloak. All you need to do is bring me the materials and pay a small crafting fee.",
     ["obj"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants 5 Frozen Runes, 4 Bolts of Runecloth, 2 Essences of Water, 4 Ironweb Spider Silks and 200 gold. You must also be of Exalted reputation with the Argent Dawn.",
     ["start"] = {
@@ -66099,6 +66494,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 9238,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarion\'s Handbook,Take Omari",
     ["log"] = "Thanks to you and Omarion, may he rest in peace, I am now able to create Glacial wrists. All you need to do is bring me the materials and pay a small crafting fee.",
     ["obj"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants 4 Frozen Runes, 2 Bolts of Runecloth, 2 Essences of Water, 2 Ironweb Spider Silks and 200 gold.",
     ["start"] = {
@@ -66118,6 +66514,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 9239,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarion\'s Handbook,Take Omari",
     ["log"] = "Thanks to you and Omarion, may he rest in peace, I am now able to create Glacial gloves. All you need to do is bring me the materials and pay a small crafting fee.",
     ["obj"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants 5 Frozen Runes, 4 Bolts of Runecloth, 4 Essences of Water, 2 Ironweb Spider Silks and 200 gold.",
     ["start"] = {
@@ -66137,6 +66534,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 9240,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarion\'s Handbook,Take Omari",
     ["log"] = "Thanks to you and Omarion, may he rest in peace, I am now able to create a Glacial vest. All you need to do is bring me the materials and pay a small crafting fee.",
     ["obj"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants 8 Frozen Runes, 8 Bolts of Runecloth, 6 Essences of Water, 4 Ironweb Spider Silks and 300 gold. You must also be of Exalted reputation with the Argent Dawn.",
     ["start"] = {
@@ -66156,6 +66554,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 9241,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarion\'s Handbook,Take Omari",
     ["log"] = "Thanks to you and Omarion (May he rest in peace), I am now able to create Polar bracers. All you need to do is bring me the materials and pay a small crafting fee.",
     ["obj"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants 4 Frozen Runes, 12 Enchanted Leather, 3 Essence of Water, 3 Cured Rugged Hides and 200 gold. ",
     ["start"] = {
@@ -66169,12 +66568,15 @@ pfDB["quests"]["enUS"] = {
       ["Enchanted Leather,12"] = "ITEM",
       ["Essence of Water,3"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
   ["Polar Gloves,Craftsman "] = {
     ["id"] = 9242,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarion\'s Handbook,Take Omari",
     ["log"] = "Thanks to you and Omarion (May he rest in peace), I am now able to create Polar gloves. All you need to do is bring me the materials and pay a small crafting fee.",
     ["obj"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants 5 Frozen Runes, 12 Enchanted Leather, 3 Essence of Water, 3 Cured Rugged Hides and 200 gold.",
     ["start"] = {
@@ -66188,12 +66590,15 @@ pfDB["quests"]["enUS"] = {
       ["Enchanted Leather,12"] = "ITEM",
       ["Essence of Water,3"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
   ["Polar Tunic,Craftsman "] = {
     ["id"] = 9243,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarion\'s Handbook,Take Omari",
     ["log"] = "Thanks to you and Omarion, may he rest in peace, I am now able to create a Polar tunic. All you need to do is bring me the materials and pay a small crafting fee.",
     ["obj"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants 8 Frozen Runes, 16 Enchanted Leathers, 5 Essences of Water, 5 Cured Rugged Hides and 300 gold. You must also be of Exalted reputation with the Argent Dawn.",
     ["start"] = {
@@ -66207,12 +66612,15 @@ pfDB["quests"]["enUS"] = {
       ["Enchanted Leather,16"] = "ITEM",
       ["Essence of Water,5"] = "ITEM",
       ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
     },
   },
   ["Icy Scale Bracers,Craftsman "] = {
     ["id"] = 9244,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarion\'s Handbook,Take Omari",
     ["log"] = "Thanks to you and Omarion, may he rest in peace, I am now able to create Icy Scale bracers. All you need to do is bring me the materials and pay a small crafting fee.",
     ["obj"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants 4 Frozen Runes, 16 Heavy Scorpid Scales, 5 Essences of Water, 3 Cured Rugged Hides and 200 gold.",
     ["start"] = {
@@ -66226,12 +66634,15 @@ pfDB["quests"]["enUS"] = {
       ["Heavy Scorpid Scale,16"] = "ITEM",
       ["Essence of Water,5"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
   ["Icy Scale Gauntlets,Craftsman "] = {
     ["id"] = 9245,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarion\'s Handbook,Take Omari",
     ["log"] = "Thanks to you and Omarion (May he rest in peace), I am now able to create Icy Scale gauntlets. All you need to do is bring me the materials and pay a small crafting fee.",
     ["obj"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants 5 Frozen Runes, 16 Heavy Scorpid Scale, 5 Essence of Water, 3 Cured Rugged Hides and 200 gold.",
     ["start"] = {
@@ -66245,12 +66656,15 @@ pfDB["quests"]["enUS"] = {
       ["Heavy Scorpid Scale,16"] = "ITEM",
       ["Essence of Water,5"] = "ITEM",
       ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
+      ["Cured Rugged Hide,3"] = "ITEM",
     },
   },
   ["Icy Scale Breastplate,Craftsman "] = {
     ["id"] = 9246,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarion\'s Handbook,Take Omari",
     ["log"] = "Thanks to you and Omarion (May he rest in peace), I am now able to create an Icy Scale breastplate. All you need to do is bring me the materials and pay a small crafting fee.",
     ["obj"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants 8 Frozen Runes, 24 Heavy Scorpid Scale, 7 Essence of Water, 5 Cured Rugged Hides and 300 gold. You must also be of Exalted reputation with the Argent Dawn.",
     ["start"] = {
@@ -66263,6 +66677,8 @@ pfDB["quests"]["enUS"] = {
       ["Frozen Rune,8"] = "ITEM",
       ["Heavy Scorpid Scale,24"] = "ITEM",
       ["Essence of Water,7"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
+      ["Cured Rugged Hide,5"] = "ITEM",
       ["Cured Rugged Hide,5"] = "ITEM",
     },
   },
@@ -66917,6 +67333,7 @@ pfDB["quests"]["enUS"] = {
     ["lvl"] = 38,
     ["race"] = 77,
     ["pre"] = "Vimes\'s Report,Bring Vime",
+    ["pre"] = "Vimes\'s Report,Bring Vime",
     ["log"] = "Well. judging from Captain Vimes\'s report. you\'ve been a huge help to his investigation. and for that I thank you.$B$BI can put my mind more at ease knowing that the matter is in such capable hands. If you would. I would request that you return to Captain Vimes and help him in getting to the bottom of this mystery.",
     ["obj"] = "Return to Captain Garran Vimes in Theramore.",
     ["start"] = {
@@ -67004,8 +67421,8 @@ pfDB["quests"]["enUS"] = {
     ["obj"] = "Speak with Warlord Gorchuk in Orgrimmar\'s Valley of Spirits.",
     ["start"] = {
       ["Senior Sergeant Taiga"] = "NPC",
-      ["Senior Sergeant Grimsford"] = "NPC",
       ["Senior Sergeant Kai\'jin"] = "NPC",
+      ["Senior Sergeant Grimsford"] = "NPC",
     },
     ["end"] = {
       ["Warlord Gorchuk"] = "NPC",
@@ -67250,7 +67667,8 @@ pfDB["quests"]["enUS"] = {
   },
   ["Stinking Up Southshore,Toss three"] = {
     ["id"] = 1657,
-    ["min"] = 58,
+    ["min"] = 25,
+    ["lvl"] = 60,
     ["log"] = "Celebrate Hallow\'s End in style... by bringing grief to our enemies in Southshore!$B$BTake one of these specially crafted stink bombs.  It is filled with an odiferous funk that no human - or any weak-willed beast for that matter - can stand to smell.  You\'ll need to throw it right in the heart of Southshore for it to do its job, so be prepared for a fight against the Alliance!$B$BWhen you\'ve completed this task... this tribute to our liberation, return to me!",
     ["obj"] = "Toss three Forsaken Stink Bombs into the heart of Southshore in Hillsbrad, and return to Darkcaller Yanka at the Wickerman Festival in Tirisfal Glade.",
     ["start"] = {
@@ -67293,12 +67711,13 @@ pfDB["quests"]["enUS"] = {
       ["Dark Iron Ale Mug,1"] = "ITEM",
     },
   },
-  ["Presence of Might,Bring me t"] = {
+  ["Presence of Might,Bring me a"] = {
     ["id"] = 8184,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter $B$Bthis foul place. Look inside the jinxed hoodoo. Bring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 1,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza the Restless"] = "NPC",
     },
@@ -67306,16 +67725,18 @@ pfDB["quests"]["enUS"] = {
       ["Zanza the Restless"] = "NPC",
     },
     ["item"] = {
-      ["Primal Hakkari Idol,1"] = "ITEM",
       ["Punctured Voodoo Doll,1"] = "ITEM",
+      ["Arcanum of Protection,1"] = "ITEM",
+      ["Primal Hakkari Aegis,1"] = "ITEM",
     },
   },
-  ["Syncretist\'s Sigil,Bring me t"] = {
+  ["Syncretist\'s Sigil,Bring me a"] = {
     ["id"] = 8185,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 2,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza the Restless"] = "NPC",
     },
@@ -67323,16 +67744,18 @@ pfDB["quests"]["enUS"] = {
       ["Zanza the Restless"] = "NPC",
     },
     ["item"] = {
-      ["Primal Hakkari Idol,1"] = "ITEM",
       ["Punctured Voodoo Doll,1"] = "ITEM",
+      ["Arcanum of Protection,1"] = "ITEM",
+      ["Primal Hakkari Shawl,1"] = "ITEM",
     },
   },
-  ["Death\'s Embrace,Bring me t"] = {
+  ["Death\'s Embrace,Bring me a"] = {
     ["id"] = 8186,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 8,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza the Restless"] = "NPC",
     },
@@ -67340,16 +67763,18 @@ pfDB["quests"]["enUS"] = {
       ["Zanza the Restless"] = "NPC",
     },
     ["item"] = {
-      ["Primal Hakkari Idol,1"] = "ITEM",
       ["Punctured Voodoo Doll,1"] = "ITEM",
+      ["Arcanum of Rapidity,1"] = "ITEM",
+      ["Primal Hakkari Kossack,1"] = "ITEM",
     },
   },
-  ["Falcon\'s Call,Bring me t"] = {
+  ["Falcon\'s Call,Bring me a"] = {
     ["id"] = 8187,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 4,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza the Restless"] = "NPC",
     },
@@ -67357,16 +67782,18 @@ pfDB["quests"]["enUS"] = {
       ["Zanza the Restless"] = "NPC",
     },
     ["item"] = {
-      ["Primal Hakkari Idol,1"] = "ITEM",
       ["Punctured Voodoo Doll,1"] = "ITEM",
+      ["Arcanum of Rapidity,1"] = "ITEM",
+      ["Primal Hakkari Stanchion,1"] = "ITEM",
     },
   },
-  ["Vodouisant\'s Vigilant Embrace,Bring me t"] = {
+  ["Vodouisant\'s Vigilant Embrace,Bring me a"] = {
     ["id"] = 8188,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 64,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza the Restless"] = "NPC",
     },
@@ -67374,16 +67801,18 @@ pfDB["quests"]["enUS"] = {
       ["Zanza the Restless"] = "NPC",
     },
     ["item"] = {
-      ["Primal Hakkari Idol,1"] = "ITEM",
       ["Punctured Voodoo Doll,1"] = "ITEM",
+      ["Arcanum of Focus,1"] = "ITEM",
+      ["Primal Hakkari Sash,1"] = "ITEM",
     },
   },
-  ["Presence of Sight,Bring me t"] = {
+  ["Presence of Sight,Bring me a"] = {
     ["id"] = 8189,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 128,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza the Restless"] = "NPC",
     },
@@ -67391,16 +67820,18 @@ pfDB["quests"]["enUS"] = {
       ["Zanza the Restless"] = "NPC",
     },
     ["item"] = {
-      ["Primal Hakkari Idol,1"] = "ITEM",
       ["Punctured Voodoo Doll,1"] = "ITEM",
+      ["Arcanum of Focus,1"] = "ITEM",
+      ["Primal Hakkari Girdle,1"] = "ITEM",
     },
   },
-  ["Hoodoo Hex,Bring me t"] = {
+  ["Hoodoo Hex,Bring me a"] = {
     ["id"] = 8190,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 256,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza the Restless"] = "NPC",
     },
@@ -67408,16 +67839,18 @@ pfDB["quests"]["enUS"] = {
       ["Zanza the Restless"] = "NPC",
     },
     ["item"] = {
-      ["Primal Hakkari Idol,1"] = "ITEM",
       ["Punctured Voodoo Doll,1"] = "ITEM",
+      ["Arcanum of Focus,1"] = "ITEM",
+      ["Primal Hakkari Armsplint,1"] = "ITEM",
     },
   },
-  ["Prophetic Aura,Bring me t"] = {
+  ["Prophetic Aura,Bring me a"] = {
     ["id"] = 8191,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 16,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza the Restless"] = "NPC",
     },
@@ -67425,16 +67858,18 @@ pfDB["quests"]["enUS"] = {
       ["Zanza the Restless"] = "NPC",
     },
     ["item"] = {
-      ["Primal Hakkari Idol,1"] = "ITEM",
       ["Punctured Voodoo Doll,1"] = "ITEM",
+      ["Arcanum of Focus,1"] = "ITEM",
+      ["Primal Hakkari Tabard,1"] = "ITEM",
     },
   },
-  ["Animist\'s Caress,Bring me t"] = {
+  ["Animist\'s Caress,Bring me a"] = {
     ["id"] = 8192,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 1024,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza the Restless"] = "NPC",
     },
@@ -67442,8 +67877,9 @@ pfDB["quests"]["enUS"] = {
       ["Zanza the Restless"] = "NPC",
     },
     ["item"] = {
-      ["Primal Hakkari Idol,1"] = "ITEM",
       ["Punctured Voodoo Doll,1"] = "ITEM",
+      ["Arcanum of Protection,1"] = "ITEM",
+      ["Primal Hakkari Bindings,1"] = "ITEM",
     },
   },
   ["Master Angler,"] = {
@@ -67594,20 +68030,14 @@ pfDB["quests"]["enUS"] = {
   },
   ["Hero of the Stormpike,"] = {
     ["id"] = 8271,
-    ["min"] = 61,
+    ["min"] = 51,
+    ["lvl"] = 60,
     ["pre"] = "The Battle of Alterac,Enter Alte",
     ["start"] = {
+      ["Prospector Stonehewer"] = "NPC",
     },
     ["end"] = {
-    },
-  },
-  ["Hero of the Frostwolf,"] = {
-    ["id"] = 8272,
-    ["min"] = 61,
-    ["pre"] = "The Battle for Alterac,Enter Alte",
-    ["start"] = {
-    },
-    ["end"] = {
+      ["Prospector Stonehewer"] = "NPC",
     },
   },
   ["Oran\'s Gratitude,"] = {
@@ -67682,11 +68112,11 @@ pfDB["quests"]["enUS"] = {
       ["Large Brilliant Shard,5"] = "ITEM",
     },
   },
-  ["Chicken Clucking for a Mint,Do a chick"] = {
+  ["[DISABLED] Chicken Clucking for a Mint,Do a chick"] = {
     ["id"] = 8353,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["log"] = "Ah, trick-or-treating for a sick child, are we?  I was going to say, you\'re a little old to be rummaging about for candies...$B$BWell, for my treat - an Ironforge Mint - you will need to... cluck like a chicken!  Yes, chickens love mints... well OK, maybe they don\'t LOVE them... but I won\'t give you a mint unless you chicken cluck for me!$B$BWell $c, are you up to the challenge or not?!  Time to earn your treat!",
+    ["log"] = "Chicken Clucking for a MintThis quest is disabled until patch 1.8",
     ["obj"] = "Do a chicken emote at Innkeeper Firebrew, and in exchange you\'ll receive an Ironforge Mint!",
     ["start"] = {
       ["Innkeeper Firebrew"] = "NPC",
@@ -67695,11 +68125,11 @@ pfDB["quests"]["enUS"] = {
       ["Innkeeper Firebrew"] = "NPC",
     },
   },
-  ["Incoming Gumdrop,Do a train"] = {
+  ["[DISABLED] Incoming Gumdrop,Do a train"] = {
     ["id"] = 8355,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["log"] = "A trick-or-treater!  Huzzah!$B$BWell now, even though you\'re doing something noble and collecting candies for a sick child, I can\'t let you off the hook that easily.  I have a yummy Gnomeregan Gumdrop to give to the sick child... if you make a train noise for me!  Haha, yes, that\'ll be the trick!  The price of this gumdrop is one train noise!$B$BChugga-chugga, $c!",
+    ["log"] = "Incoming GumdropThis quest is disabled until patch 1.8",
     ["obj"] = "Do a train emote at Talvash del Kissel, and in exchange you\'ll receive a Gnomeregan Gumdrop!",
     ["start"] = {
       ["Talvash del Kissel"] = "NPC",
@@ -67708,11 +68138,11 @@ pfDB["quests"]["enUS"] = {
       ["Talvash del Kissel"] = "NPC",
     },
   },
-  ["Flexing for Nougat,Do a flex "] = {
+  ["[DISABLED] Flexing for Nougat,Do a flex "] = {
     ["id"] = 8356,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["log"] = "That\'s an... interesting costume you have on.  Even though you\'re being nice and helping a sick child trick-or-treat this year, I\'m afraid I\'m going to have to ask you perform a trick for me!$B$BLet\'s see... you look so strong and buff in that... costume... let\'s see you flex!  Yes, go on now and flex for me, strong $g man : woman;!$B$BWhen and only when you flex, I\'ll give you some tasty Stormwind Nougat.  It\'s a great Hallow\'s End treat.",
+    ["log"] = "Flexing for NougatThis quest is disabled until patch 1.8",
     ["obj"] = "Do a flex emote at Innkeeper Allison, and in exchange you\'ll receive Stormwind Nougat!",
     ["start"] = {
       ["Innkeeper Allison"] = "NPC",
@@ -67721,11 +68151,11 @@ pfDB["quests"]["enUS"] = {
       ["Innkeeper Allison"] = "NPC",
     },
   },
-  ["Dancing for Marzipan,Do a dance"] = {
+  ["[DISABLED] Dancing for Marzipan,Do a dance"] = {
     ["id"] = 8357,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["log"] = "Even though you\'re trick-or-treating for a sick child, you still need to perform a trick for the treat!  We can\'t very well change the tradition, now can we...$B$BI believe the cost of a piece of marzipan nowadays is to bust out and DANCE!  That\'s right, let me see your moves!  Dance for me, and I\'ll give you some tasty marzipan!",
+    ["log"] = "Dancing for MarzipanThis quest is disabled until patch 1.8",
     ["obj"] = "Do a dance emote at Innkeeper Saelienne, and in exchange you\'ll receive Darnassus Marzipan!",
     ["start"] = {
       ["Innkeeper Saelienne"] = "NPC",
@@ -67781,7 +68211,8 @@ pfDB["quests"]["enUS"] = {
   },
   ["The Power of Pine,Use a Stin"] = {
     ["id"] = 8373,
-    ["min"] = 59,
+    ["min"] = 25,
+    ["lvl"] = 60,
     ["log"] = "The thing I hate the most about Hallow\'s End are the stink bombs the Forsaken use on Southshore.  Who knew that celebrating liberation would have to involve such a smelly mess?$B$BDuring Hallow\'s End, use this cleaner to remove any nasty stink bombs the Horde may drop here in the village.  It uses the power of pine to fight funky smells.$B$BDo your part to keep Southshore clean, and I\'ll give you some Hallow\'s End treats I\'m sure you\'ll enjoy.  We have a deal?",
     ["obj"] = "Use a Stink Bomb Cleaner to remove any Forsaken Stink Bomb that\'s been dropped on Southshore.  Return to Sergeant Hartman in Southshore when you\'re done.",
     ["start"] = {
@@ -67795,6 +68226,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 8467,
     ["min"] = 45,
     ["lvl"] = 55,
+    ["pre"] = "[DISABLED] Timbermaw Ally,Grazle wan",
     ["pre"] = "Timbermaw Ally,Grazle wan",
     ["obj"] = "Some of the Deadwood furbolgs wear a distinctive headdress that may be used as a means of proof in thinning their numbers. Bring me a feather from any headdresses you acquire; for every set of five you bring me, you will earn recognition amongst the Timbermaw.",
     ["start"] = {
@@ -67822,11 +68254,11 @@ pfDB["quests"]["enUS"] = {
       ["Prepared Field Duty Papers,1"] = "ITEM",
     },
   },
-  ["The Charge of the Dragonflights,"] = {
+  ["[DISABLED] The Charge of the Dragonflights,"] = {
     ["id"] = 8555,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["pre"] = "A Pawn on the Eternal Board,Learn all ",
+    ["log"] = "The Charge of the DragonflightsThis quest is disabled until patch 1.9.",
     ["start"] = {
       ["Anachronos"] = "NPC",
     },
@@ -67842,8 +68274,10 @@ pfDB["quests"]["enUS"] = {
     ["log"] = "The badges you collect from performing combat, logistics and tactical assignments for Windcaller Proudhorn are more than just for show, $N.$B$BYou\'d be wise to hold on to them.  As you prove your loyalty to our organization I can offer you some of the gear we reserve for our closest allies in exchange for those badges.",
     ["obj"] = "Bring 15 Cenarion Combat Badges, 20 Cenarion Logistics Badges, 17 Cenarion Tactical Badges and 1 Mark of Remulos to Vargus at Cenarion Hold in Silithus.  You must also attain Revered reputation with Cenarion Circle to be able to complete this quest.",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Cenarion Combat Badge,15"] = "ITEM",
@@ -67856,6 +68290,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 8576,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "[DISABLED] Azuregos\'s Magical Ledger,Deliver Az",
     ["pre"] = "Azuregos\'s Magical Ledger,Deliver Az",
     ["start"] = {
       ["Narain Soothfancy"] = "NPC",
@@ -68665,8 +69100,8 @@ pfDB["quests"]["enUS"] = {
     ["log"] = "Hello, I\'m glad that you\'ve decided to hear me out. The Alliance needs all of the help that it can get to prepare for the Ahn\'Qiraj War, and that means that we need you! Even now as we speak, official collectors are gathering the necessary material needed for the upcoming war, but we won\'t be able to meet our goals without your assistance, $N!$B$BYou should go speak with the guy in charge, Field Marshal Snowfall. What do you say, $c? Will you help out with the vital preparations?",
     ["obj"] = "Speak with Field Marshal Snowfall in Ironforge\'s Military Ward.",
     ["start"] = {
-      ["Master Sergeant Fizzlebolt"] = "NPC",
       ["Master Sergeant Maclure"] = "NPC",
+      ["Master Sergeant Fizzlebolt"] = "NPC",
       ["Master Sergeant Moonshadow"] = "NPC",
     },
     ["end"] = {
@@ -68695,6 +69130,7 @@ pfDB["quests"]["enUS"] = {
       ["Windcaller Kaldon"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
   },
   ["A Festive Gift,"] = {
@@ -68877,6 +69313,7 @@ pfDB["quests"]["enUS"] = {
   ["Traitor to the Bloodsail,"] = {
     ["id"] = 9259,
     ["min"] = 30,
+    ["lvl"] = 60,
     ["start"] = {
       ["Bloodsail Traitor"] = "NPC",
     },
@@ -68890,7 +69327,8 @@ pfDB["quests"]["enUS"] = {
   },
   ["Mending Old Wounds,"] = {
     ["id"] = 9267,
-    ["min"] = 10,
+    ["min"] = 15,
+    ["lvl"] = 60,
     ["start"] = {
       ["Mupsi Shacklefridd"] = "NPC",
     },
@@ -68905,6 +69343,7 @@ pfDB["quests"]["enUS"] = {
   ["War at Sea,"] = {
     ["id"] = 9268,
     ["min"] = 40,
+    ["lvl"] = 60,
     ["start"] = {
       ["Rumsen Fizzlebrack"] = "NPC",
     },
@@ -68993,6 +69432,7 @@ pfDB["quests"]["enUS"] = {
     ["id"] = 8730,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "[DISABLED] The Charge of the Dragonflights,",
     ["pre"] = "The Charge of the Dragonflights,",
     ["log"] = "Champion, is it you? A thousand years it has been since I was entrusted the shard and it is at my darkest hour that one should rise to relieve me of it... But what would tragedy be without cruelty?$B$B<Vaelastrasz coughs weakly.>$B$BNe... Nefarius now holds the scepter shard.$B$BTime is of the essence. Nefarius plans to destroy the shard. You must hurry!",
     ["obj"] = "Slay Nefarian and recover the Red Scepter Shard. Return the Red Scepter Shard to Anachronos at the Caverns of Time in Tanaris. You have one and a half hours to complete this task.",
@@ -69004,6 +69444,18 @@ pfDB["quests"]["enUS"] = {
     },
     ["item"] = {
       ["Red Scepter Shard,1"] = "ITEM",
+    },
+  },
+  ["Hero of the Frostwolf,"] = {
+    ["id"] = 8272,
+    ["min"] = 51,
+    ["lvl"] = 60,
+    ["pre"] = "The Battle for Alterac,Enter Alte",
+    ["start"] = {
+      ["Voggah Deathgrip"] = "NPC",
+    },
+    ["end"] = {
+      ["Voggah Deathgrip"] = "NPC",
     },
   },
   ["Metzen the Reindeer,Find Metze"] = {
@@ -69472,6 +69924,7 @@ pfDB["quests"]["enUS"] = {
     ["obj"] = "Deliver the Call to Arms Announcement to the Keeper of the Rolls at Light\'s Hope Chapel in the Eastern Plaguelands.",
     ["start"] = {
       ["Argent Recruiter"] = "NPC",
+      ["Argent Scout"] = "NPC",
     },
     ["end"] = {
       ["Keeper of the Rolls"] = "NPC",
@@ -69664,6 +70117,502 @@ pfDB["quests"]["enUS"] = {
       ["Coin of Ancestry,5"] = "ITEM",
     },
   },
+  ["Vimes\'s Report,Bring Vime"] = {
+    ["id"] = 1288,
+    ["min"] = 33,
+    ["lvl"] = 38,
+    ["race"] = 77,
+    ["log"] = "You\'ve done some good work, $n, best I\'ve seen from an amateur.$b$bLady Proudmoore asked that I keep her apprised of this delicate situation, and I haven\'t spoken to her for some time now.$b$bI was going to deliver my report to her later, but it seems more fitting that you should be the one to speak with her about it. You can probably answer her questions better than I could.",
+    ["obj"] = "Bring Vimes\'s Report to Lady Jaina Proudmoore in Theramore.",
+    ["start"] = {
+      ["Captain Garran Vimes"] = "NPC",
+    },
+    ["end"] = {
+      ["Lady Jaina Proudmoore"] = "NPC",
+    },
+    ["item"] = {
+      ["Vimes\'s Report,1"] = "ITEM",
+    },
+  },
+  ["[DISABLED] Chicken Clucking for a Mint,Do a chick"] = {
+    ["id"] = 8354,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Chicken Clucking for a MintThis quest is disabled until patch 1.8",
+    ["obj"] = "Do a chicken emote at Innkeeper Norman, and in exchange you\'ll receive an Undercity Mint!",
+    ["start"] = {
+      ["Innkeeper Norman"] = "NPC",
+    },
+    ["end"] = {
+      ["Innkeeper Norman"] = "NPC",
+    },
+  },
+  ["[DISABLED] Incoming Gumdrop,Do a train"] = {
+    ["id"] = 8358,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Incoming GumdropThis quest is disabled until patch 1.8",
+    ["obj"] = "Do a train emote at Kali Remik, and in exchange you\'ll receive a Darkspear Gumdrop!",
+    ["start"] = {
+      ["Kali Remik"] = "NPC",
+    },
+    ["end"] = {
+      ["Kali Remik"] = "NPC",
+    },
+  },
+  ["[DISABLED] Flexing for Nougat,Do a flex "] = {
+    ["id"] = 8359,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Flexing for NougatThis quest is disabled until patch 1.8",
+    ["obj"] = "Do a flex emote at Innkeeper Gryshka, and in exchange you\'ll receive Orgrimmar Nougat!",
+    ["start"] = {
+      ["Innkeeper Gryshka"] = "NPC",
+    },
+    ["end"] = {
+      ["Innkeeper Gryshka"] = "NPC",
+    },
+  },
+  ["[DISABLED] Dancing for Marzipan,Do a dance"] = {
+    ["id"] = 8360,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Dancing for MarzipanThis quest is disabled until patch 1.8",
+    ["obj"] = "Do a dance emote at Innkeeper Pala, and in exchange you\'ll receive Thunder Bluff Marzipan!",
+    ["start"] = {
+      ["Innkeeper Pala"] = "NPC",
+    },
+    ["end"] = {
+      ["Innkeeper Pala"] = "NPC",
+    },
+  },
+  ["Quell the Silverwing Usurpers,Enter Wars"] = {
+    ["id"] = 7875,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 178,
+    ["log"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Mark of Honor.  Return to me with such a Mark, $N, and you will be rewarded.",
+    ["obj"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Druid of the Claw,Oben Ragec"] = {
+    ["id"] = 2561,
+    ["min"] = 7,
+    ["lvl"] = 10,
+    ["pre"] = "The Sleeping Druid,Bring a Sh",
+    ["log"] = "After examining this charm, $N, I see now what must be done. Please take it, and do as I ask.$B$BYou are to explore the deepest areas of the Ban\'ethil Barrow Den. There, you will find my soulless body... Although I regret what I am about to tell you, I see no other way to free myself from the control of the Gnarlpine.$B$BIn order for me to escape them, you must kill my physical form.  Once that is done, use the voodoo charm on my fallen body. After you have completed this task, please return to me.",
+    ["obj"] = "Oben Rageclaw wants you to kill his soulless body, and then use the Voodoo Charm.",
+    ["start"] = {
+      ["Oben Rageclaw"] = "NPC",
+    },
+    ["end"] = {
+      ["Oben Rageclaw"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Rageclaw,1"] = "NPC",
+    },
+  },
+  ["The Active Agent,Travel to "] = {
+    ["id"] = 5213,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["pre"] = "The Flesh Does Not Lie,Recover 10",
+    ["log"] = "You will have to delve deeper into Stratholme, $N.$B$BBeyond the first gates you will find the ziggurats. We know that the Scourge draws great power from these structures. Search the Ziggurats and return with any information that you may discover.",
+    ["obj"] = "Travel to Stratholme and search the ziggurats. Find and return new Scourge Data to Betina Bigglezink.",
+    ["start"] = {
+      ["Betina Bigglezink"] = "NPC",
+    },
+    ["end"] = {
+      ["Betina Bigglezink"] = "NPC",
+    },
+    ["item"] = {
+      ["Scourge Data,1"] = "ITEM",
+    },
+  },
+  ["Ramstein,Travel to "] = {
+    ["id"] = 6163,
+    ["min"] = 54,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "Duskwing, Oh How I Hate Thee...,Find Duskw",
+    ["log"] = "I was overwhelmed. On this very stead, I stood... held my ground in defense of Lordaeron. The farm and all on it were waylaid by a gigantic wave of Scourge.$B$BThe wretch. The filth. It hovered above me, entrails hanging from its gaping chest cavity.$B$BI woke as Scourge. For so long I was helpless. My mind had coalesced with the Lich King\'s.$B$BShe came for me... somewhere, somehow, I knew she would. Free.$B$BAnd now, I must have my vengeance - my vengeance on that which took from me my life. Destroy it.",
+    ["obj"] = "Travel to Stratholme and slay Ramstein the Gorger. Take his head as a souvenir for Nathanos.",
+    ["start"] = {
+      ["Nathanos Blightcaller"] = "NPC",
+    },
+    ["end"] = {
+      ["Nathanos Blightcaller"] = "NPC",
+    },
+    ["item"] = {
+      ["Head of Ramstein the Gorger,1"] = "ITEM",
+    },
+  },
+  ["Winterfall Activity,Salfa want"] = {
+    ["id"] = 6241,
+    ["min"] = 51,
+    ["lvl"] = 56,
+    ["log"] = "The Timbermaw tend to stay to themselves, $N. While we do allow safe passage to those that have proven they can be trusted, we try to avoid other furbolg tribes if at all possible.$B$BLately I have noticed that the Winterfall tribe has become increasingly hostile towards us. They seem to be in a state of rage, completely engulfed by their own fear and hatred of anything they do not understand.$B$BIf you could reduce their numbers this would help us greatly, $N.",
+    ["obj"] = "Salfa wants you to kill 6 Winterfall Totemics, 6 Winterfall Den Watchers, and 6 Winterfall Pathfinders.",
+    ["start"] = {
+      ["Salfa"] = "NPC",
+    },
+    ["end"] = {
+      ["Salfa"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Winterfall Totemic,6"] = "NPC",
+      ["Winterfall Den Watcher,6"] = "NPC",
+      ["Winterfall Pathfinder,6"] = "NPC",
+    },
+  },
+  ["The Legend of Korrak,According "] = {
+    ["id"] = 7181,
+    ["min"] = 51,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "The invading Stormpike are not the only threat in the region, soldier. The war in the Valley is waged on two fronts. The cannibal Winterax trolls also vie for power.$B$BThey are lead by Korrak the Bloodrager - a cruel and cunning beast.$B$BA strike against Korrak could prove to be a crushing blow to the Winterax clan. Slay the beast and be rewarded!",
+    ["obj"] = "According to legend, the leader of the mighty Winterax trolls appears at will to wreak havoc on the denizens of Alterac Valley.$B$BShould Korrak make himself known, destroy him and return to Warmaster Laggrond.",
+    ["start"] = {
+      ["Warmaster Laggrond"] = "NPC",
+    },
+    ["end"] = {
+      ["Warmaster Laggrond"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Korrak the Bloodrager,1"] = "NPC",
+    },
+  },
+  ["Korrak the Bloodrager,According "] = {
+    ["id"] = 7202,
+    ["min"] = 51,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "The indigenous Winterax trolls of the region are ruthless savages that would love nothing more than to have our bones added to their foul stew.$B$BWe must show them our might!$B$BWe have recovered tomes from their caves that detail their leadership hierarchy. The artifacts indicate that their leader, Korrak the Bloodrager, tends to remain hidden until given a reason to make his presence known.$B$BDeath to Korrak would mean death to Winterax Clan! Slay him and return.",
+    ["obj"] = "According to legend, the leader of the mighty Winterax trolls appears at will to wreak havoc on the denizens of Alterac Valley.$B$BShould Korrak make himself known, destroy him and return to Lieutenant Haggerdin in the Alterac Mountains.",
+    ["start"] = {
+      ["Lieutenant Haggerdin"] = "NPC",
+    },
+    ["end"] = {
+      ["Lieutenant Haggerdin"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Korrak the Bloodrager,1"] = "NPC",
+    },
+  },
+  ["Presence of Might,Bring me t"] = {
+    ["id"] = 8184,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 1,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["item"] = {
+      ["Primal Hakkari Idol,1"] = "ITEM",
+      ["Punctured Voodoo Doll,1"] = "ITEM",
+    },
+  },
+  ["Syncretist\'s Sigil,Bring me t"] = {
+    ["id"] = 8185,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 2,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["item"] = {
+      ["Primal Hakkari Idol,1"] = "ITEM",
+      ["Punctured Voodoo Doll,1"] = "ITEM",
+    },
+  },
+  ["Death\'s Embrace,Bring me t"] = {
+    ["id"] = 8186,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 8,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["item"] = {
+      ["Primal Hakkari Idol,1"] = "ITEM",
+      ["Punctured Voodoo Doll,1"] = "ITEM",
+    },
+  },
+  ["Falcon\'s Call,Bring me t"] = {
+    ["id"] = 8187,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 4,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["item"] = {
+      ["Primal Hakkari Idol,1"] = "ITEM",
+      ["Punctured Voodoo Doll,1"] = "ITEM",
+    },
+  },
+  ["Vodouisant\'s Vigilant Embrace,Bring me t"] = {
+    ["id"] = 8188,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 64,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["item"] = {
+      ["Primal Hakkari Idol,1"] = "ITEM",
+      ["Punctured Voodoo Doll,1"] = "ITEM",
+    },
+  },
+  ["Presence of Sight,Bring me t"] = {
+    ["id"] = 8189,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 128,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["item"] = {
+      ["Primal Hakkari Idol,1"] = "ITEM",
+      ["Punctured Voodoo Doll,1"] = "ITEM",
+    },
+  },
+  ["Hoodoo Hex,Bring me t"] = {
+    ["id"] = 8190,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 256,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["item"] = {
+      ["Primal Hakkari Idol,1"] = "ITEM",
+      ["Punctured Voodoo Doll,1"] = "ITEM",
+    },
+  },
+  ["Prophetic Aura,Bring me t"] = {
+    ["id"] = 8191,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 16,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["item"] = {
+      ["Primal Hakkari Idol,1"] = "ITEM",
+      ["Punctured Voodoo Doll,1"] = "ITEM",
+    },
+  },
+  ["Animist\'s Caress,Bring me t"] = {
+    ["id"] = 8192,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 1024,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza the Restless"] = "NPC",
+    },
+    ["item"] = {
+      ["Primal Hakkari Idol,1"] = "ITEM",
+      ["Punctured Voodoo Doll,1"] = "ITEM",
+    },
+  },
+  ["Zanza\'s Potent Potables,I will all"] = {
+    ["id"] = 8243,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["log"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
+    ["obj"] = "I will allow you to choose one from the three I offer; in exchange, I require one Zandalar Honor Token. Note that only the effects of a single one may course through your spirit at any given time.",
+    ["start"] = {
+      ["Rin\'wosho the Trader"] = "NPC",
+    },
+    ["end"] = {
+      ["Rin\'wosho the Trader"] = "NPC",
+    },
+    ["item"] = {
+      ["Zandalar Honor Token,1"] = "ITEM",
+    },
+  },
+  ["Thunderaan the Windseeker,To free Th"] = {
+    ["id"] = 7786,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["pre"] = "Examine the Vessel,Examine th",
+    ["log"] = "I have told you all that I know, $N. It is you who must find elementium. It is you who must destroy the Firelord\'s corporeal form.$B$BDo this and gain the blessing of Thunderaan.",
+    ["obj"] = "To free Thunderaan the Windseeker from his prison, you must present the right and left halves of the Bindings of the Windseeker, 10 bars of Elementium, and the Essence of the Firelord to Highlord Demitrian in Silithus.",
+    ["start"] = {
+      ["Highlord Demitrian"] = "NPC",
+    },
+    ["end"] = {
+      ["Highlord Demitrian"] = "NPC",
+    },
+    ["item"] = {
+      ["Elementium Bar,10"] = "ITEM",
+      ["Essence of the Firelord,1"] = "ITEM",
+      ["Bindings of the Windseeker,1"] = "ITEM",
+      ["Bindings of the Windseeker,1"] = "ITEM",
+    },
+  },
+  ["Timbermaw Ally,Grazle wan"] = {
+    ["id"] = 6131,
+    ["min"] = 45,
+    ["lvl"] = 48,
+    ["log"] = "The Timbermaw are the only furbolg tribe to escape the corruption. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.$B$BAre you interested in proving yourself? Drive back the corrupted Deadwood tribe of Felwood and we may one day consider you an ally. You\'ll find the first Deadwood tribe - warriors, pathfinders and gardeners - to my west.",
+    ["obj"] = "Grazle wants you to prove yourself by killing 5 Deadwood Warriors, 5 Deadwood Pathfinders, and 5 Deadwood Gardeners.",
+    ["start"] = {
+      ["Grazle"] = "NPC",
+    },
+    ["end"] = {
+      ["Grazle"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Deadwood Warrior,5"] = "NPC",
+      ["Deadwood Pathfinder,5"] = "NPC",
+      ["Deadwood Gardener,5"] = "NPC",
+    },
+  },
+  ["The Charge of the Dragonflights,"] = {
+    ["id"] = 8555,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["pre"] = "A Pawn on the Eternal Board,Learn all ",
+    ["start"] = {
+      ["Anachronos"] = "NPC",
+    },
+    ["end"] = {
+      ["Anachronos"] = "NPC",
+    },
+  },
+  ["Azuregos\'s Magical Ledger,Deliver Az"] = {
+    ["id"] = 8575,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["log"] = "You cannot understand a single word on this ledger. You don\'t even know what language it is written in!",
+    ["obj"] = "Deliver Azuregos\'s Magical Ledger to Narain Soothfancy in Tanaris.",
+    ["start"] = {
+    },
+    ["end"] = {
+      ["Narain Soothfancy"] = "NPC",
+    },
+    ["item"] = {
+      ["Magical Ledger,1"] = "ITEM",
+    },
+  },
+  ["Love Song for Narain,Take Merid"] = {
+    ["id"] = 8599,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["log"] = "It isn\'t often that I get visitors. As a matter of fact, the last time I had a visitor was when I rescued that dear, sweet gnome from the wreckage of the crashed flying machine.$B$B<Meridith gazes into nothingness, lost in a memory.>$B$BDo you know him? Narain? Narain Soothfancy? Oh it would mean so much to me if somebody would deliver a message to him for me. I must tell him how I feel! I know it\'s love! I just know it!$B$BCould you possibly deliver a message to Narain? I would be forever indebted to you!",
+    ["obj"] = "Take Meridith\'s Love Letter to Narain Soothfancy in Tanaris.",
+    ["start"] = {
+      ["Meridith the Mermaiden"] = "NPC",
+    },
+    ["end"] = {
+      ["Narain Soothfancy"] = "NPC",
+    },
+    ["item"] = {
+      ["Meridith\'s Love Letter,1"] = "ITEM",
+    },
+  },
+  ["Incoming Gumdrop,Do a train"] = {
+    ["id"] = 8355,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "A trick-or-treater!  Huzzah!$B$BWell now, even though you\'re doing something noble and collecting candies for a sick child, I can\'t let you off the hook that easily.  I have a yummy Gnomeregan Gumdrop to give to the sick child... if you make a train noise for me!  Haha, yes, that\'ll be the trick!  The price of this gumdrop is one train noise!$B$BChugga-chugga, $c!",
+    ["obj"] = "Do a train emote at Talvash del Kissel, and in exchange you\'ll receive a Gnomeregan Gumdrop!",
+    ["start"] = {
+      ["Talvash del Kissel"] = "NPC",
+    },
+    ["end"] = {
+      ["Talvash del Kissel"] = "NPC",
+    },
+  },
+  ["The Only Prescription,Recover th"] = {
+    ["id"] = 8620,
+    ["min"] = 55,
+    ["lvl"] = 60,
+    ["pre"] = "Decoy!,Narain Soo",
+    ["log"] = "I should have known. My arch-enemy, Doctor Weavil, up to his old tricks! And now, thanks to your failure in Winterspring, Doctor Weavil has destroyed my book! How are you going to save the world now, hero?$B$BThe note I received stated that the only known copy of \"Draconic for Dummies: Volume II\" was ripped into 8 parts and scattered to the wind! If you somehow manage to find those missing chapters, use this magical binding to put them back together and return to me.",
+    ["obj"] = "Recover the 8 lost chapters of Draconic for Dummies and combine them with the Magical Book Binding and return the completed book of Draconic for Dummies: Volume II to Narain Soothfancy in Tanaris.",
+    ["start"] = {
+      ["Narain Soothfancy"] = "NPC",
+    },
+    ["end"] = {
+      ["Narain Soothfancy"] = "NPC",
+    },
+    ["item"] = {
+      ["Draconic For Dummies: Volume II,1"] = "ITEM",
+    },
+  },
+  ["Chicken Clucking for a Mint,Do a chick"] = {
+    ["id"] = 8353,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "Ah, trick-or-treating for a sick child, are we?  I was going to say, you\'re a little old to be rummaging about for candies...$B$BWell, for my treat - an Ironforge Mint - you will need to... cluck like a chicken!  Yes, chickens love mints... well OK, maybe they don\'t LOVE them... but I won\'t give you a mint unless you chicken cluck for me!$B$BWell $c, are you up to the challenge or not?!  Time to earn your treat!",
+    ["obj"] = "Do a chicken emote at Innkeeper Firebrew, and in exchange you\'ll receive an Ironforge Mint!",
+    ["start"] = {
+      ["Innkeeper Firebrew"] = "NPC",
+    },
+    ["end"] = {
+      ["Innkeeper Firebrew"] = "NPC",
+    },
+  },
   ["Chicken Clucking for a Mint,Do a chick"] = {
     ["id"] = 8354,
     ["min"] = 10,
@@ -69676,6 +70625,32 @@ pfDB["quests"]["enUS"] = {
     },
     ["end"] = {
       ["Innkeeper Norman"] = "NPC",
+    },
+  },
+  ["Flexing for Nougat,Do a flex "] = {
+    ["id"] = 8356,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "That\'s an... interesting costume you have on.  Even though you\'re being nice and helping a sick child trick-or-treat this year, I\'m afraid I\'m going to have to ask you perform a trick for me!$B$BLet\'s see... you look so strong and buff in that... costume... let\'s see you flex!  Yes, go on now and flex for me, strong $g man : woman;!$B$BWhen and only when you flex, I\'ll give you some tasty Stormwind Nougat.  It\'s a great Hallow\'s End treat.",
+    ["obj"] = "Do a flex emote at Innkeeper Allison, and in exchange you\'ll receive Stormwind Nougat!",
+    ["start"] = {
+      ["Innkeeper Allison"] = "NPC",
+    },
+    ["end"] = {
+      ["Innkeeper Allison"] = "NPC",
+    },
+  },
+  ["Dancing for Marzipan,Do a dance"] = {
+    ["id"] = 8357,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "Even though you\'re trick-or-treating for a sick child, you still need to perform a trick for the treat!  We can\'t very well change the tradition, now can we...$B$BI believe the cost of a piece of marzipan nowadays is to bust out and DANCE!  That\'s right, let me see your moves!  Dance for me, and I\'ll give you some tasty marzipan!",
+    ["obj"] = "Do a dance emote at Innkeeper Saelienne, and in exchange you\'ll receive Darnassus Marzipan!",
+    ["start"] = {
+      ["Innkeeper Saelienne"] = "NPC",
+    },
+    ["end"] = {
+      ["Innkeeper Saelienne"] = "NPC",
     },
   },
   ["Incoming Gumdrop,Do a train"] = {
@@ -69718,6 +70693,1284 @@ pfDB["quests"]["enUS"] = {
     },
     ["end"] = {
       ["Innkeeper Pala"] = "NPC",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8081,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["pre"] = "Arathi Basin Resources!,Win the ba",
+    ["pre"] = "Arathi Basin Mark of Honor!,Win the ba",
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Cut Arathor Supply Lines,Win the ba"] = {
+    ["id"] = 8123,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Cut Arathor Supply Lines,Win the ba"] = {
+    ["id"] = 8123,
+    ["min"] = 50,
+    ["lvl"] = 59,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8124,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8124,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["pre"] = "Cut Arathor Supply Lines,Win the ba",
+    ["pre"] = "Cut Arathor Supply Lines,Win the ba",
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Arathi Basin Resources!,Win the ba"] = {
+    ["id"] = 8154,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Arathi Basin Mark of Honor!,Win the ba"] = {
+    ["id"] = 8154,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Arathi Basin Resources!,Win the ba"] = {
+    ["id"] = 8155,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Arathi Basin Mark of Honor!,Win the ba"] = {
+    ["id"] = 8155,
+    ["min"] = 20,
+    ["lvl"] = 29,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Arathi Basin Resources!,Win the ba"] = {
+    ["id"] = 8156,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Arathi Basin Mark of Honor!,Win the ba"] = {
+    ["id"] = 8156,
+    ["min"] = 30,
+    ["lvl"] = 39,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8157,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8157,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["pre"] = "Arathi Basin Resources!,Win the ba",
+    ["pre"] = "Arathi Basin Mark of Honor!,Win the ba",
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8158,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8158,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["pre"] = "Arathi Basin Resources!,Win the ba",
+    ["pre"] = "Arathi Basin Mark of Honor!,Win the ba",
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8159,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8159,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["pre"] = "Arathi Basin Resources!,Win the ba",
+    ["pre"] = "Arathi Basin Mark of Honor!,Win the ba",
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Cut Arathor Supply Lines,Win the ba"] = {
+    ["id"] = 8160,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Cut Arathor Supply Lines,Win the ba"] = {
+    ["id"] = 8160,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Cut Arathor Supply Lines,Win the ba"] = {
+    ["id"] = 8161,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Cut Arathor Supply Lines,Win the ba"] = {
+    ["id"] = 8161,
+    ["min"] = 30,
+    ["lvl"] = 39,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Cut Arathor Supply Lines,Win the ba"] = {
+    ["id"] = 8162,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Cut Arathor Supply Lines,Win the ba"] = {
+    ["id"] = 8162,
+    ["min"] = 20,
+    ["lvl"] = 29,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8163,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8163,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["pre"] = "Cut Arathor Supply Lines,Win the ba",
+    ["pre"] = "Cut Arathor Supply Lines,Win the ba",
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8164,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8164,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["pre"] = "Cut Arathor Supply Lines,Win the ba",
+    ["pre"] = "Cut Arathor Supply Lines,Win the ba",
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8165,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8165,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["pre"] = "Cut Arathor Supply Lines,Win the ba",
+    ["pre"] = "Cut Arathor Supply Lines,Win the ba",
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Ribbons of Sacrifice,Bring the "] = {
+    ["id"] = 8266,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 178,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Ribbon of Sacrifice,1"] = "ITEM",
+    },
+  },
+  ["Ribbons of Sacrifice,Bring the "] = {
+    ["id"] = 8266,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 178,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Ribbon of Sacrifice,1"] = "ITEM",
+    },
+  },
+  ["Ribbons of Sacrifice,Bring the "] = {
+    ["id"] = 8267,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Ribbon of Sacrifice,1"] = "ITEM",
+    },
+  },
+  ["Ribbons of Sacrifice,Bring the "] = {
+    ["id"] = 8267,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Ribbon of Sacrifice,1"] = "ITEM",
+    },
+  },
+  ["Ribbons of Sacrifice,Bring the "] = {
+    ["id"] = 8268,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 77,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Ribbon of Sacrifice,1"] = "ITEM",
+    },
+  },
+  ["Ribbons of Sacrifice,Bring the "] = {
+    ["id"] = 8268,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 77,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Ribbon of Sacrifice,1"] = "ITEM",
+    },
+  },
+  ["Ribbons of Sacrifice,Bring the "] = {
+    ["id"] = 8269,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Ribbon of Sacrifice,1"] = "ITEM",
+    },
+  },
+  ["Ribbons of Sacrifice,Bring the "] = {
+    ["id"] = 8269,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Ribbon of Sacrifice,1"] = "ITEM",
+    },
+  },
+  ["Talismans of Merit,"] = {
+    ["id"] = 8289,
+    ["min"] = 10,
+    ["lvl"] = 15,
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
+    },
+  },
+  ["Vanquish the Invaders!,Enter Wars"] = {
+    ["id"] = 8291,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a talisman of merit.  Bring me such a talisman, $N, and I shall reward you.",
+    ["obj"] = "Enter Warsong Gulch and defeat the Horde, obtain a Silverwing Talisman of Merit, and return to Sentinel Farsong at the Silverwing Grove.",
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
+    },
+  },
+  ["Vanquish the Invaders!,Enter Wars"] = {
+    ["id"] = 8291,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a Mark of Honor.  Bring it to me, $N, and I shall reward you.",
+    ["obj"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Talismans of Merit,"] = {
+    ["id"] = 8292,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
+    },
+  },
+  ["Marks of Honor,"] = {
+    ["id"] = 8292,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Mark of Honor,3"] = "ITEM",
+    },
+  },
+  ["Mark of Honor,"] = {
+    ["id"] = 8293,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Marks of Honor,"] = {
+    ["id"] = 8293,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Mark of Honor,3"] = "ITEM",
+    },
+  },
+  ["Quell the Silverwing Usurpers,Enter Wars"] = {
+    ["id"] = 8294,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Warsong mark of honor.  Return to me with such a mark, $N, and you will be rewarded.",
+    ["obj"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Quell the Silverwing Usurpers,Enter Wars"] = {
+    ["id"] = 8294,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Mark of Honor.  Return to me with such a Mark, $N, and you will be rewarded.",
+    ["obj"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
+    ["start"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["end"] = {
+      ["Captain Shatterskull"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Mark of Honor,"] = {
+    ["id"] = 8296,
+    ["min"] = 10,
+    ["lvl"] = 15,
+    ["start"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinel Farsong"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Arathi Basin Resources!,Win the ba"] = {
+    ["id"] = 8297,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Arathi Basin Mark of Honor!,Win the ba"] = {
+    ["id"] = 8297,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8298,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["More Arathi Basin Marks of Honor,"] = {
+    ["id"] = 8298,
+    ["min"] = 20,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergeant Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Basin Mark of Honor,3"] = "ITEM",
+    },
+  },
+  ["Cut Arathor Supply Lines,Win the ba"] = {
+    ["id"] = 8299,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Cut Arathor Supply Lines,Win the ba"] = {
+    ["id"] = 8299,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Basin Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8300,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["More Arathi Basin Marks of Honor,"] = {
+    ["id"] = 8300,
+    ["min"] = 20,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Deathstalker Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Basin Mark of Honor,3"] = "ITEM",
+    },
+  },
+  ["Past Victories in Arathi,"] = {
+    ["id"] = 8565,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 77,
+    ["start"] = {
+      ["Alliance Brigadier General"] = "NPC",
+    },
+    ["end"] = {
+      ["Alliance Brigadier General"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Past Victories in Arathi,"] = {
+    ["id"] = 8566,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 178,
+    ["start"] = {
+      ["Horde Warbringer"] = "NPC",
+    },
+    ["end"] = {
+      ["Horde Warbringer"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathi Resource Crate,1"] = "ITEM",
+    },
+  },
+  ["Past Victories in Warsong Gulch,"] = {
+    ["id"] = 8567,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 77,
+    ["start"] = {
+      ["Alliance Brigadier General"] = "NPC",
+    },
+    ["end"] = {
+      ["Alliance Brigadier General"] = "NPC",
+    },
+    ["item"] = {
+      ["Silverwing Talisman of Merit,1"] = "ITEM",
+    },
+  },
+  ["Past Victories in Warsong Gulch,"] = {
+    ["id"] = 8568,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 178,
+    ["start"] = {
+      ["Horde Warbringer"] = "NPC",
+    },
+    ["end"] = {
+      ["Horde Warbringer"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Past Efforts in Warsong Gulch,"] = {
+    ["id"] = 8569,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 77,
+    ["start"] = {
+      ["Alliance Brigadier General"] = "NPC",
+    },
+    ["end"] = {
+      ["Alliance Brigadier General"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Ribbon of Sacrifice,1"] = "ITEM",
+    },
+  },
+  ["Past Efforts in Warsong Gulch,"] = {
+    ["id"] = 8570,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 178,
+    ["start"] = {
+      ["Horde Warbringer"] = "NPC",
+    },
+    ["end"] = {
+      ["Horde Warbringer"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Gulch Ribbon of Sacrifice,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8811,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officer Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8812,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officer Ironbeard"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Ironbeard"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8813,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officer Lunalight"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Lunalight"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8814,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officer Porterhouse"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Porterhouse"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8815,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officer Redblade"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Redblade"] = "NPC",
+    },
+    ["item"] = {
+      ["Horde Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8816,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officer Gothena"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Gothena"] = "NPC",
+    },
+    ["item"] = {
+      ["Horde Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8817,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officer Thunderstrider"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Thunderstrider"] = "NPC",
+    },
+    ["item"] = {
+      ["Horde Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["One Commendation Signet,"] = {
+    ["id"] = 8818,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officer Vu\'Shalay"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Vu\'Shalay"] = "NPC",
+    },
+    ["item"] = {
+      ["Horde Commendation Signet,1"] = "ITEM",
+    },
+  },
+  ["Ten Commendation Signets,"] = {
+    ["id"] = 8819,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officer Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,10"] = "ITEM",
+    },
+  },
+  ["Ten Commendation Signets,"] = {
+    ["id"] = 8820,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officer Ironbeard"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Ironbeard"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,10"] = "ITEM",
+    },
+  },
+  ["Ten Commendation Signets,"] = {
+    ["id"] = 8821,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officer Lunalight"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Lunalight"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,10"] = "ITEM",
+    },
+  },
+  ["Ten Commendation Signets,"] = {
+    ["id"] = 8822,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officer Porterhouse"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Porterhouse"] = "NPC",
+    },
+    ["item"] = {
+      ["Alliance Commendation Signet,10"] = "ITEM",
+    },
+  },
+  ["Ten Commendation Signets,"] = {
+    ["id"] = 8823,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officer Redblade"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Redblade"] = "NPC",
+    },
+    ["item"] = {
+      ["Horde Commendation Signet,10"] = "ITEM",
+    },
+  },
+  ["Ten Commendation Signets,"] = {
+    ["id"] = 8824,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officer Gothena"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Gothena"] = "NPC",
+    },
+    ["item"] = {
+      ["Horde Commendation Signet,10"] = "ITEM",
+    },
+  },
+  ["Ten Commendation Signets,"] = {
+    ["id"] = 8825,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officer Thunderstrider"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Thunderstrider"] = "NPC",
+    },
+    ["item"] = {
+      ["Horde Commendation Signet,10"] = "ITEM",
+    },
+  },
+  ["Ten Commendation Signets,"] = {
+    ["id"] = 8826,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officer Vu\'Shalay"] = "NPC",
+    },
+    ["end"] = {
+      ["Officer Vu\'Shalay"] = "NPC",
+    },
+    ["item"] = {
+      ["Horde Commendation Signet,10"] = "ITEM",
+    },
+  },
+  ["Making Amends,"] = {
+    ["id"] = 9266,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["start"] = {
+      ["Bronn Fitzwrench"] = "NPC",
+    },
+    ["end"] = {
+      ["Bronn Fitzwrench"] = "NPC",
+    },
+    ["item"] = {
+      ["Runecloth,40"] = "ITEM",
+      ["Coal,4"] = "ITEM",
     },
   },
 }

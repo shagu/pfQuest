@@ -2080,7 +2080,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Ein Ghulbildnis,Sammelt 7 "] = {
     ["id"] = 133,
-    ["min"] = 22,
+    ["min"] = 20,
     ["lvl"] = 27,
     ["race"] = 77,
     ["pre"] = "Saftlieferung,Bringt Cal",
@@ -2098,7 +2098,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Ogerdiebe,Bringt Cal"] = {
     ["id"] = 134,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Ein Ghulbildnis,Sammelt 7 ",
@@ -2134,9 +2134,8 @@ pfDB["quests"]["deDE"] = {
   },
   ["Käpt\'n Sanders\' versteckter Schatz,Findet Kä"] = {
     ["id"] = 136,
-    ["min"] = 11,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["log"] = "Wenn Ihr das hier lesen tut, dann heißt das, dass der alte Käpt\'n Sanders in den Fluten begraben is\'. Also tut mein Schatz jetz\' Euch gehör\'n, Ihr braucht bloß den Hinweisen folgen. $b$bErst müsst Ihr ma\' meine Schließkiste finden. Wahrscheinlich is\' die jetz\' da an der Westküste von Westfall in der Nähe von dem Schiffswrack schon halb im Sand verschwunden. \'s gibt da an der Küste massig Schiffswracks, aber bloß einen rostigen Anker. Wenn Ihr den Anker finden tut, dann habt Ihr auch meine Schließkiste gefunden. Da müsst ihr reingucken, denn da steht der nächste Hinweis drin.",
     ["obj"] = "Findet Käpt\'n Sanders Schließkiste und durchsucht sie, um den nächsten Hinweis zu erhalten.",
     ["start"] = {
@@ -2147,9 +2146,8 @@ pfDB["quests"]["deDE"] = {
   },
   ["Käpt\'n Sanders\' versteckter Schatz,Findet das"] = {
     ["id"] = 138,
-    ["min"] = 14,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["pre"] = "Käpt\'n Sanders\' versteckter Schatz,Findet Kä",
     ["log"] = "Der Hinweis auf den Schatz lautet folgendermaßen: Gut gemacht, Kumpel! Jetz\' müsst Ihr Euch imma nach Osten halten. Im Osten die Steilhänge hoch, dann weiter nach Osten bis zur Straße. Schaut Euch nach so \'nem ollen verfallenen Kamin nahe bei der Straße um. Dort findet Ihr \'n altes Fass mit Eurem nächsten Hinweis drin.",
     ["obj"] = "Findet das alte Fass in der Nähe des verfallenen Kamins und durchsucht es nach Eurem nächsten Hinweis.",
@@ -2162,9 +2160,8 @@ pfDB["quests"]["deDE"] = {
   },
   ["Käpt\'n Sanders\' versteckter Schatz,Durchsucht"] = {
     ["id"] = 139,
-    ["min"] = 14,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["pre"] = "Käpt\'n Sanders\' versteckter Schatz,Findet das",
     ["log"] = "Als Ihr das Fass durchsucht, findet Ihr ein weiteres Stück Pergament. Darauf steht: Also, von dem Fass dort müsst Ihr Euch nach Norden halten tun. Un\' dann geht Ihr immer der Nase nach schnurstracks geradeaus, bis Ihr den leeren Henkelkrug sehen tut, der da irgendwo bei so \'ner einzeln stehenden Windmühle oben auf dem Steilhang über dem Meer liegt. Wenn Ihr Euch den Henkelkrug mal genau anguckt, dann findet Ihr vielleicht sogar, was Ihr sucht.",
     ["obj"] = "Durchsucht den leeren Henkelkrug neben der Windmühle nach dem nächsten Hinweis.",
@@ -2177,9 +2174,8 @@ pfDB["quests"]["deDE"] = {
   },
   ["Käpt\'n Sanders\' versteckter Schatz,Findet Kä"] = {
     ["id"] = 140,
-    ["min"] = 14,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["pre"] = "Käpt\'n Sanders\' versteckter Schatz,Durchsucht",
     ["log"] = "Und tatsächlich, ganz unten, fast am Boden des alten Henkelkruges findet sich der nächste Hinweis auf Sanders Schatz. An manchen Stellen ist die Tinte verwischt und das Papier riecht nach Whisky, aber zum Teil kann man den Text noch lesen: Jetz\', wo Ihr mein\'n alten Whiskykrug gefunden habt, habt Ihr den Schatz schon so gut wie in der Tasche. Von der Flasche aus müsst Ihr Euch einfach nach Westen halten und runter zum Strand geh\'n. Und dann heißt es schwimmen! Schwimmt schnurstracks nach Westen, bis Ihr an der Insel seid, da wo meine Schatztruhe drauf is\'!",
     ["obj"] = "Findet Käpt\'n Sanders\' Truhe und öffnet sie. Darin befindet sich Eure Belohnung.",
@@ -2522,7 +2518,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Ein Brief für den Bürgermeister,Bringt Cal"] = {
     ["id"] = 160,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Ogerdiebe,Bringt Cal",
@@ -4011,7 +4007,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Übersetzung von Calvinius\' Notiz,Bringt den"] = {
     ["id"] = 251,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Ein Brief für den Bürgermeister,Bringt Cal",
@@ -4029,7 +4025,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Übersetzung für Ello,Bringt Lor"] = {
     ["id"] = 252,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Wartet, bis Sirra fertig ist,Wartet ein",
@@ -4047,7 +4043,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Braut des Einbalsamierers,Findet Eli"] = {
     ["id"] = 253,
-    ["min"] = 24,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Übersetzung für Ello,Bringt Lor",
@@ -4065,7 +4061,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Graben in der Erde,"] = {
     ["id"] = 254,
-    ["min"] = 24,
+    ["min"] = 20,
     ["lvl"] = 35,
     ["start"] = {
       ["Elizas Graberde"] = "OBJECT",
@@ -4736,6 +4732,7 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Verfluchtes Auge von Paleth,1"] = "ITEM",
+      ["Verfluchtes Auge von Paleth,1"] = "ITEM",
     },
   },
   ["Die Reinigung des Auges,Bringt Erz"] = {
@@ -4752,6 +4749,7 @@ pfDB["quests"]["deDE"] = {
       ["Erzbischof Benedictus"] = "NPC",
     },
     ["item"] = {
+      ["Verfluchtes Auge von Paleth,1"] = "ITEM",
       ["Verfluchtes Auge von Paleth,1"] = "ITEM",
     },
   },
@@ -14485,6 +14483,38 @@ pfDB["quests"]["deDE"] = {
       ["Donnerechsenblut,3"] = "ITEM",
     },
   },
+  ["Inmitten der Ruinen,Bringt den"] = {
+    ["id"] = 908,
+    ["min"] = 25,
+    ["lvl"] = 27,
+    ["race"] = 178,
+    ["pre"] = "Die Essenz von Aku\'mai,Bringt 20 ",
+    ["log"] = "Die Anhänger des Schattenhammers sind in die Mondschreinruinen der Tiefschwarzen Grotte eingezogen. Ihre Gegenwart kann nur dazu dienen, die Elemente gegen uns aufzubringen. Wenn dem kein Einhalt geboten wird, gehört ihnen diese Region bald ganz und gar.$B$B$n, geht in die Tiefschwarze Grotte und findet den Tiefenstein der Ruinen. Er dürfte irgendwo in deren Nähe im Wasser liegen. Darin ist ein Tiefenkern. Das ist ein Gerät, das, wenn man es richtig abliest, eine Aufstellung über alle Aktivitäten der Elementare liefert. Wenn ich es habe, können der Irdene Ring und ich vielleicht etwas tun, um sie aufzuhalten.",
+    ["obj"] = "Bringt den Tiefenkern zu Je\'neu Sancrea beim Außenposten von Zoram\'gar im Eschental.",
+    ["start"] = {
+    },
+    ["end"] = {
+    },
+    ["item"] = {
+      ["Tiefenkern,1"] = "ITEM",
+    },
+  },
+  ["Baron Aquanis,Bringt die"] = {
+    ["id"] = 909,
+    ["min"] = 21,
+    ["lvl"] = 30,
+    ["race"] = 178,
+    ["log"] = "Der besiegte Wasserelementar hat eine seltsame Wasserkugel zurückgelassen. Ihr vermutet, dass das Objekt die Kreatur irgendwie mit Energie versorgt hat. In der Kugel schwappt faulig aussehendes Wasser herum. Die Kugel selbst zeigt sich unbeeindruckt von jeder äußerlichen Krafteinwirkung.$B$BWenn irgendwer aus diesem Gegenstand schlau werden kann, ist das wohl Je\'neu Sancrea vom Irdenen Ring. Er befindet sich beim Außenposten von Zoram\'gar der Horde im Eschental.",
+    ["obj"] = "Bringt die seltsame Wasserkugel zu Je\'neu Sancrea beim Außenposten von Zoram\'gar im Eschental.",
+    ["start"] = {
+    },
+    ["end"] = {
+      ["Je\'neu Sancrea"] = "NPC",
+    },
+    ["item"] = {
+      ["Seltsame Wasserkugel,1"] = "ITEM",
+    },
+  },
   ["Unten an den Docks,Bringt Eur"] = {
     ["id"] = 910,
     ["min"] = 10,
@@ -15265,6 +15295,15 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["99 Jahre alter Portwein,1"] = "ITEM",
+    },
+  },
+  ["Onu meditiert,"] = {
+    ["id"] = 960,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["start"] = {
+    },
+    ["end"] = {
     },
   },
   ["Onu meditiert,"] = {
@@ -16185,7 +16224,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Durchsucht den Baumstamm,Sucht den "] = {
     ["id"] = 1026,
-    ["min"] = 20,
+    ["min"] = 18,
     ["lvl"] = 27,
     ["race"] = 77,
     ["pre"] = "Dryadenlieferung,Sucht Shae",
@@ -16203,7 +16242,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Sich tot stellen,Erhaltet d"] = {
     ["id"] = 1027,
-    ["min"] = 24,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "Durchsucht den Baumstamm,Sucht den ",
@@ -16239,7 +16278,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Rückkehr zu Raene,Liefert Da"] = {
     ["id"] = 1029,
-    ["min"] = 24,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "Raenes Säuberung,Kehrt zu S",
@@ -16254,7 +16293,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Dartols Rute,Benutzt Da"] = {
     ["id"] = 1030,
-    ["min"] = 25,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "Rückkehr zu Raene,Liefert Da",
@@ -16499,7 +16538,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Eine neue Verzierung,Erhaltet R"] = {
     ["id"] = 1045,
-    ["min"] = 26,
+    ["min"] = 18,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Dartols Rute,Benutzt Da",
@@ -16518,7 +16557,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Die wahre Macht der Rute,Benutzt Da"] = {
     ["id"] = 1046,
-    ["min"] = 30,
+    ["min"] = 18,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Eine neue Verzierung,Erhaltet R",
@@ -16677,7 +16716,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Raenes Säuberung,Kehrt zu S"] = {
     ["id"] = 1055,
-    ["min"] = 24,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "Raenes Säuberung,Sucht den ",
@@ -17084,7 +17123,6 @@ pfDB["quests"]["deDE"] = {
     ["min"] = 19,
     ["lvl"] = 22,
     ["race"] = 77,
-    ["pre"] = "Stümperhaftigkeit + Chemikalien = Riesenspaß!,Bringt Gax",
     ["log"] = "Das ist es, $n. Seht genau hin. Die Geräte sind fertig und einsatzbereit.$B$BNehmt diese Blätter - sie erklären mehr über die Zünder und den Sprengstoff und wo Ihr ihn platzieren solltet.$B$BDenkt daran, der Erfolg Eurer Mission hängt nicht davon ab, wie viel Schaden Ihr anrichtet. Der Erfolg von Plan Alpha hängt davon ab, dass Ihr die Ingenieurspläne der Venture Company aus dem Sägewerk südlich des Felskesselsees holt.",
     ["obj"] = "Holt die Ingenieurspläne der Venture Company aus dem Sägewerk auf der Scherwindklippe.",
     ["start"] = {
@@ -17102,7 +17140,7 @@ pfDB["quests"]["deDE"] = {
     ["min"] = 19,
     ["lvl"] = 22,
     ["race"] = 77,
-    ["pre"] = "Speziallieferung für Gaxim,Bringt Gax",
+    ["pre"] = "Geheimoperation Alpha,Holt die I",
     ["log"] = "Plan Beta funktioniert genau wie Plan Alpha, $n.$B$BWir stiften Verwirrung und stehlen dann ihre wertvollen Dokumente.$B$BWir müssen unbedingt diese Dokumente haben... vergesst das nicht.$B$BDie Blätter, die Ihr bereits habt, zeigen Euch, wo Ihr den Sprengstoff platzieren müsst. Kommt mir nur heil und mit diesen Dokumenten zurück...",
     ["obj"] = "Holt die Dokumente der Venture Company aus der Scherwindmine am Ostende der Scherwindklippe.",
     ["start"] = {
@@ -17135,6 +17173,7 @@ pfDB["quests"]["deDE"] = {
     ["min"] = 26,
     ["lvl"] = 28,
     ["race"] = 77,
+    ["pre"] = "Verletzte Urtume,Bringt Kae",
     ["log"] = "$n, Ihr habt Großes geleistet, indem Ihr uns hier geholfen habt.$B$BDie Schildwachen des Eschentals werden Euch reichlich belohnen, wenn Ihr ihnen mitteilt, dass Gaxim und ich noch am Leben sind. Sagt ihnen, dass wir beim Aufhalten der Venture Company und der Heilung des Landes gute Fortschritte machen.$B$BSucht Tara Thenysil in Astranaar auf. Sie wird sich freuen, dass Ihr mit guten Neuigkeiten kommt.",
     ["obj"] = "Kehrt zu Schildwache Thenysil im Eschental zurück.",
     ["start"] = {
@@ -17167,7 +17206,7 @@ pfDB["quests"]["deDE"] = {
     ["min"] = 22,
     ["lvl"] = 28,
     ["race"] = 77,
-    ["pre"] = "Kaelas Update,Bringt Kae",
+    ["pre"] = "Wütende Geister,Bringt Kae",
     ["log"] = "Es scheint mir offensichtlich, dass die Beschützer des Tales - die Treants - irgendetwas damit zu tun hatten, dass die Venture Company zurückgeschlagen wurde. Leider wurden selbst diese einst so großen Wächter jetzt verderbt.$B$BGaxim glaubt, dass ihre Verderbnis irgendwie mit den Waffen zusammenhängt, die die Goblins während ihres Rückzuges benutzten.$B$BIch bat ihn, eine Probe von einem verwundeten Treant zu nehmen und sie zu untersuchen, um herauszufinden, ob das wirklich stimmt.$B$BBringt mir ein paar Späne, damit der Gnom mehr darüber herausfinden kann...",
     ["obj"] = "Bringt Kaela Schattenspeer im Steinkrallengebirge ein Stück eines zerfressenen Spans.",
     ["start"] = {
@@ -17185,6 +17224,7 @@ pfDB["quests"]["deDE"] = {
     ["min"] = 18,
     ["lvl"] = 21,
     ["race"] = 77,
+    ["pre"] = "Wache halten im Steinkrallengebirge,Sucht Kael",
     ["log"] = "Die Lage hier im Steinkrallengebirge ist offensichtlich düster, wenn Nachtelfen und Gnome zusammenarbeiten.$B$BDie Venture Company hat das Land verwüstet und ich habe einen Großteil meines Leben damit zugebracht, der Zerstörung ein Ende zu setzen.$B$BMan sollte Gaxim nicht vorschnell beurteilen; er versteht die Notwendigkeit, warum wir zusammenarbeiten müssen.$B$BWenn Ihr uns helfen wollt, sprecht zunächst mit Gaxim.$B$BEs tut mir leid, dass ich Euch jetzt noch nicht mit guten Neuigkeiten zu Tara zurückschicken kann. Aber vielleicht schon bald.",
     ["obj"] = "Sprecht mit Gaxim im Steinkrallengebirge.",
     ["start"] = {
@@ -17285,6 +17325,7 @@ pfDB["quests"]["deDE"] = {
     ["min"] = 20,
     ["lvl"] = 22,
     ["race"] = 77,
+    ["pre"] = "Geheimoperation Beta,Holt die D",
     ["log"] = "$n, bringt Kaela diese Briefe. Ich bin mir sicher, dass sie das interessiert. Oder zumindest die Schildwachen.$B$BErzählt Ihr unbedingt, wie erfolgreich wir waren und dass wir es ohne ein bisschen Magie nie geschafft hätten.",
     ["obj"] = "Bringt Kaela Schattenspeer im Steinkrallengebirge die Dokumente der Venture Company.",
     ["start"] = {
@@ -19422,7 +19463,7 @@ pfDB["quests"]["deDE"] = {
     ["min"] = 28,
     ["lvl"] = 33,
     ["race"] = 77,
-    ["pre"] = "Der vermisste Diplomat,Schnappt T",
+    ["pre"] = "Der vermisste Diplomat,Sprecht mi",
     ["log"] = "Am Anfang jedes Monats werden die Marinesoldaten von Kul Tiras bezahlt und verlassen Theramore meist mit anderen Zielen. Viele kommen hierher, um Frauen aufzureißen, zu zechen und ihren Spaß zu haben. Eine dieser Gruppen betrachte ich als Stammgäste der Taverne, und ich glaube, dieser Hendel ist dabei.$B$BKommandant Samaul in Theramore könnte Euch helfen, ihn zu finden, wenn Hendel noch hier stationiert ist. Er ist Prachtmeer treu ergeben, aber wenn Ihr Ellings Namen erwähnt, dürfte er Euch helfen... diskret.",
     ["obj"] = "Sucht Kommandant Samaul in den Düstermarschen.",
     ["start"] = {
@@ -19468,9 +19509,8 @@ pfDB["quests"]["deDE"] = {
     ["lvl"] = 38,
     ["race"] = 77,
     ["pre"] = "Der vermisste Diplomat,Besiegt de",
-    ["obj"] = "Sprecht mit Jaina Prachtmeer im Sumpf der Düstermarschen.",
     ["start"] = {
-      ["Erzmagier Tervosh"] = "NPC",
+      ["Lady Jaina Prachtmeer"] = "NPC",
     },
     ["end"] = {
       ["Lady Jaina Prachtmeer"] = "NPC",
@@ -19671,14 +19711,17 @@ pfDB["quests"]["deDE"] = {
   },
   ["Mumms Bericht,Bringt Mum"] = {
     ["id"] = 1288,
-    ["min"] = 33,
+    ["min"] = 32,
     ["lvl"] = 38,
     ["race"] = 77,
+    ["pre"] = "Die Deserteure,Sprecht mi",
     ["log"] = "Ihr habt gute Arbeit geleistet, $N, die Beste, die ich je von einem Amateur sah.$B$BLady Prachtmeer bat mich, sie über diese delikate Situation auf dem Laufenden zu halten, aber ich habe eine Weile nicht mit ihr gesprochen.$B$BIch wollte ihr meinen Bericht sp?ter bringen, aber es scheint mir passender, wenn Ihr mit ihr darüber sprecht. Ihr k?nnt ihre Fragen wahrscheinlich besser beantworten als ich.",
     ["obj"] = "Bringt Mumms Bericht zu Lady Jaina Prachtmeer in Theramore.",
     ["start"] = {
+      ["Hauptmann Garran Mumm"] = "NPC",
     },
     ["end"] = {
+      ["Lady Jaina Prachtmeer"] = "NPC",
     },
     ["item"] = {
       ["Mumms Bericht,1"] = "ITEM",
@@ -22719,7 +22762,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Bespitzelt das Fest des Weidenmanns,Macht das "] = {
     ["id"] = 1658,
-    ["min"] = 25,
+    ["min"] = 35,
     ["lvl"] = 60,
     ["race"] = 77,
     ["log"] = "Ich brauche mutige Freiwillige, die nach Tirisfal ziehen und das Fest des Weidenmanns auskundschaften. Ich möchte nicht lügen - diese Mission ist äußerst gefährlich. Die Wachen des Fests werden besonders bösartig sein. Trotzdem, wir müssen in Erfahrung bringen, wie groß das Fest dieses Jahr ist und wie viel Schaden die Verlassenen dieses Mal während der Schlotternächte anrichten.$B$BSolltet Ihr dabei sein, dann geht nach Tirisfal und kundschaftet das Fest aus. Kehrt mit den Informationen zu mir zurück und ich werde für eine angemessene Belohnung sorgen.",
@@ -28250,7 +28293,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Cuergos Gold,Findet Cue"] = {
     ["id"] = 2882,
-    ["min"] = 42,
+    ["min"] = 40,
     ["lvl"] = 45,
     ["log"] = "Diese Karte zeigt ein Stück Strand an einer Südküste. Unter der Karte stehen elegant geschriebene Worte:$B$B$BSüdlich des Piers$BDürft Ihr drauf hoffen$BFindet Flagge, Mast und Knochen$BGrabt dort, wenn Ihr tapfer sein wollt$BGrabt und erbt Cuergos Gold!$BEinen Schlüssel werdet Ihr brauchen, einen Schlüssel werdet Ihr sehen$BDie Mannen dort woll\'n als Bezahlung Euer Blut Euch nehm\'n.",
     ["obj"] = "Findet Cuergos Gold!",
@@ -28697,7 +28740,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Mal sehen, was passiert...,Bringt die"] = {
     ["id"] = 2946,
-    ["min"] = 48,
+    ["min"] = 45,
     ["lvl"] = 50,
     ["race"] = 77,
     ["pre"] = "Omen von Uldum,Sprecht mi",
@@ -28961,7 +29004,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Freiheit für alle Kreaturen,Befreit mi"] = {
     ["id"] = 2969,
-    ["min"] = 40,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["log"] = "Der dreckige Grimmtotemklan fängt Feendrachen ein, $n. Jer\'kai und ich haben keine Ahnung, was sie mit ihnen vorhaben, aber es ist bestimmt nichts Gutes.$B$BWir sind nicht stark genug, um uns durch das Lager zu kämpfen und die gefangenen Drachen zu befreien, aber mit Eurer Hilfe...$B$BWenn Ihr willens seid und ein paar starke Freunde habt, dann befreit mit diesem Schlüssel die Kreaturen aus ihrem Käfig und stellt sicher, dass sie mit ihrem Leben davonkommen. Ich werde die ganze Zeit an Eurer Seite sein. Jer\'kai wird hier bleiben.",
@@ -28975,7 +29018,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Gerechtigkeit üben,Tötet 12 "] = {
     ["id"] = 2970,
-    ["min"] = 40,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["log"] = "Wie sie Euch ja schon mitgeteilt hat, tragen Kindal und ich den Kampf jetzt zu den Grimmtotem. Gemeinsam sollten wir in der Lage sein, einige der Tauren ohne große Gefahr für uns selbst auszuschalten, aber wir würden etwas Hilfe sehr begrüßen, wenn Ihr dazu bereit wärt.$B$BIhr habt das Lager unterhalb von uns ja schon gesehen, aber es gibt mehr davon im Osten. Verwendet Eure eigenen Taktiken, um den Tauren so viel Schaden wie möglich zuzufügen. Wir können uns alle wieder hier treffen, nachdem sie Kindals Pfeile und Eure Waffen geschmeckt haben!",
@@ -28994,7 +29037,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Gerechtigkeit üben,Bringt Jer"] = {
     ["id"] = 2972,
-    ["min"] = 42,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["log"] = "Hier draußen in der Wildnis haben Kindal und ich nur geringe Mittel, um Euch für Eure Hilfe zu entlohnen, aber wir wollen nicht, dass Ihr Euch nicht wertgeschätzt fühlt. Nehmt meinen Siegelring. Solltet Ihr Euch jemals in Teldrassil wiederfinden, geht zum Tempel des Mondes im Herzen von Darnassus. Dort werdet Ihr meine Hohepriesterin vorfinden, Tyrande Wisperwind. Der Ring wird sie wissen lassen, dass es uns gut geht, und Eure Geschichte untermauern.$B$BWir beide danken Euch, $n.",
@@ -29082,7 +29125,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Rückkehr nach Eisenschmiede,Sprecht mi"] = {
     ["id"] = 2977,
-    ["min"] = 48,
+    ["min"] = 46,
     ["lvl"] = 50,
     ["race"] = 77,
     ["pre"] = "Der Steinbehüter,Findet den",
@@ -30517,7 +30560,7 @@ pfDB["quests"]["deDE"] = {
   ["Das Horn der Bestie,Bringt Mar"] = {
     ["id"] = 3181,
     ["min"] = 40,
-    ["lvl"] = 43,
+    ["lvl"] = 48,
     ["race"] = 77,
     ["log"] = "Das gigantische Horn hat viele Kratzer und Risse. Ein ungewöhnliches Metallobjekt klemmt in der rauen Oberfläche fest.$B$BBeim näheren Hinschauen entdeckt Ihr, dass das Metall in Wirklichkeit ein zerbrochener Axtkopf ist. In das Metall wurden diese Wörter eingeätzt:$B$BEigentum von Gebirgsjägerin Feinkiesel.$B$BAls Ihr versucht, den zerbrochenen Axtkopf herauszuziehen, zerfällt er in unzählige Teile.$B$BUps!",
     ["obj"] = "Bringt Margols gigantisches Horn zu Gebirgsjägerin Feinkiesel.",
@@ -30746,6 +30789,21 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Noris Becher,1"] = "ITEM",
+    },
+  },
+  ["Der leuchtende Splitter,Reist nach"] = {
+    ["id"] = 3366,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["log"] = "Der Splitter ist von einem glänzenden Grün und obwohl er fest ist, scheint etwas wie Rauch genau unterhalb der Oberfläche herumzuwirbeln. Ihr möchtet am liebsten in die Tiefen des Kristalls schauen, aber gleichzeitig wisst Ihr, dass es etwas sehr Beunruhigendes damit auf sich hat.$B$BVielleicht solltet Ihr in Ratschet nach jemandem suchen, der Euch mehr über diesen seltsamen Splitter erzählen kann.",
+    ["obj"] = "Reist nach Ratschet, um die Bedeutung des Alptraumsplitters herauszufinden.",
+    ["start"] = {
+    },
+    ["end"] = {
+      ["Falla Weisenwind"] = "NPC",
+    },
+    ["item"] = {
+      ["Leuchtender Splitter,1"] = "ITEM",
     },
   },
   ["Suntarasteine,Helft Dori"] = {
@@ -31732,6 +31790,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 3526,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 178,
     ["log"] = "Bei der Experteningenieurskunst gibt es zwei unterschiedliche Disziplinen: Gnom und Goblin. Natürlich ist die Gobliningenieurskunst die Wahl aller brillanten Ingenieure. Durch den klugen Einsatz von hochempfindlichen Sprengstoffen und phantastischen Ausrüstungsgegenständen lernt Ihr, die Welt zu meistern!$B$B$n, lest diese Anleitung. Wenn Ihr etwas über Gobliningenieurskunst wissen wollt, dann bringt sie zu Nixx Sprossfeder nach Gadgetzan. Denkt daran - das ist eine dauerhafte Mitgliedschaft. Es ist also nicht möglich, auch in die andere Disziplin einzutreten, daher solltet Ihr genau wissen, was Ihr wollt, bevor Ihr seine Aufgabe ausführt.",
     ["obj"] = "Wenn Ihr etwas über die Gobliningenieurskunst erlernen wollt, dann bringt die Anleitung der Ingenieurskunstdisziplinen zu Nixx Sprossfeder nach Gadgetzan.",
     ["start"] = {
@@ -31833,7 +31892,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Magathas Bezahlung für Jediga,Bringt Mag"] = {
     ["id"] = 3562,
-    ["min"] = 51,
+    ["min"] = 45,
     ["lvl"] = 52,
     ["race"] = 178,
     ["pre"] = "Lieferung an Magatha,Bringt die",
@@ -32101,6 +32160,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 3629,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "Experteningenieurskunst beinhaltet zwei unterschiedliche Disziplinen: für Gnome und für Goblins. Ich erwähne Gobliningenieurskunst nur, weil ich ein gerechter Lehrer bin. Sie machen gern Dinge, die in die Luft gehen und es ist ihnen dabei meistens egal, ob was im Weg herumsteht - auch wenn sie es selbst sind.$B$B$n, lest diese Anleitung. Wenn Ihr lernen wollt, Euch selbst in die Luft zu jagen, dann bringt sie zu Nixx Sprossfeder nach Gadgetzan. Denkt daran - das ist eine dauerhafte Mitgliedschaft, es ist nicht möglich, in die andere Disziplin einzutreten, also solltet Ihr genau wissen, was Ihr wollt, bevor Ihr seine Aufgabe ausführt.",
     ["obj"] = "Wenn Ihr etwas über die Gobliningenieurskunst erlernen wollt, dann bringt das Handbuch der Ingenieurskunstdisziplinen zu Nixx Sprossfeder nach Gadgetzan.",
     ["start"] = {
@@ -32117,6 +32177,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 3630,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "Ingenieurskunst auf Expertenniveau gliedert sich in zwei Disziplinen auf: für Gnome und für Goblins. Gnomeningenieurskunst ist die weit Überlegenere der beiden! Es geht um die Konstruktion von wunderbaren Apparaten und Geräten, die das Leben schöner machen.$B$B$n, lest diese Anleitung. Wenn Ihr mehr über Gnomeningenieurskunst lernen wollt, dann bringt sie zu Tüftlermeister Oberfunks in Eisenschmiede. Denkt daran - das ist eine dauerhafte Mitgliedschaft und es ist nicht möglich, in die andere Disziplin einzutreten, also solltet Ihr Euch absolut sicher sein, dass Ihr Euch sicher seid, bevor Ihr seine Aufgabe ausführt.",
     ["obj"] = "Wenn Ihr etwas über die Gnomeningenieurskunst erlernen wollt, dann bringt die Anleitung der Ingenieurskunstdisziplinen zu Tüftlermeister Oberfunks nach Eisenschmiede.",
     ["start"] = {
@@ -32148,6 +32209,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 3632,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "Ingenieurskunst auf Expertenniveau gliedert sich in zwei Disziplinen auf: Gnom und Goblin. Gnomeningenieurskunst ist die weit Überlegenere der beiden! Es geht um die Konstruktion von wunderbaren Apparaten und Geräten, die das Leben schöner machen.$B$B$n, lest diese Anleitung. Wenn Ihr mehr über Gnomeningenieurskunst lernen wollt, dann bringt sie zu Tüftlermeister Oberfunks hier in Eisenschmiede. Denkt daran - das ist eine dauerhafte Mitgliedschaft und es ist nicht möglich, in die andere Disziplin einzutreten, also solltet Ihr Euch absolut sicher sein, dass Ihr Euch sicher seid, bevor Ihr seine Aufgabe ausführt.",
     ["obj"] = "Wenn Ihr etwas über die Gnomeningenieurskunst erlernen wollt, dann bringt die Anleitung der Ingenieurskunstdisziplinen zu Tüftlermeister Oberfunks nach Eisenschmiede.",
     ["start"] = {
@@ -32180,6 +32242,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 3634,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "Ingenieurskunst auf Expertenniveau gliedert sich in zwei Disziplinen auf: für Gnome und für Goblins. Ich bin zwar der Meinung, dass es Verschwendung ist, aber Ihr solltet doch etwas über die Gnomenspezialisierung wissen. Sie machen Geräte und Apparate, die angeblich die Welt verändern, aber meistens gar nicht funktionieren.$B$B$n, lest diese Anleitung. Wenn Ihr lernen wollt, wie man Briefbeschwerer aus Metall herstellt, dann bringt sie zu Tüftlermeister Oberfunks in Eisenschmiede. Denkt daran - das ist eine dauerhafte Mitgliedschaft und es ist nicht möglich, in die andere Disziplin einzutreten, also solltet Ihr Euch absolut sicher sein, dass Ihr Euch sicher seid, bevor Ihr seine Aufgabe ausführt.",
     ["obj"] = "Wenn Ihr etwas über die Gnomeningenieurskunst erlernen wollt, dann bringt die Anleitung der Ingenieurskunstdisziplinen zu Tüftlermeister Oberfunks nach Eisenschmiede.",
     ["start"] = {
@@ -32196,6 +32259,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 3635,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 178,
     ["log"] = "Ingenieurskunst auf Expertenniveau gliedert sich in zwei Disziplinen: Gnom und Goblin. Ich bin zwar der Meinung, dass es reine Verschwendung ist, aber Ihr solltet doch etwas über die Spezialisierung der Gnome wissen. Sie machen Gegenstände und Apparate, die angeblich die Welt verändern, aber meistens gar nicht funktionieren.$B$B$n, lest diese Anleitung. Wenn Ihr lernen wollt, wie man Briefbeschwerer aus Metall herstellt, dann bringt sie zu Glotz Widrikus in Beutebucht. Denkt daran - das ist eine dauerhafte Mitgliedschaft. Es ist also nicht möglich, auch in die andere Disziplin einzutreten, daher solltet Ihr genau wissen, was Ihr wollt, bevor Ihr seine Aufgabe ausführt.",
     ["obj"] = "Wenn Ihr mehr über die Gnomeningenieurskunst erlernen wollt, dann bringt die Anleitung der Ingenieurskunstdisziplinen zu Glotz Widrikus nach Beutebucht.",
     ["start"] = {
@@ -32229,6 +32293,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 3637,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 178,
     ["log"] = "Ingenieurskunst auf Expertenniveau gliedert sich in zwei Disziplinen: Gnom und Goblin. Ich bin zwar der Meinung, dass es reine Verschwendung ist, aber Ihr solltet doch etwas über die Spezialisierung der Gnome wissen. Sie machen Gegenstände und Apparate, die angeblich die Welt verändern, aber meistens gar nicht funktionieren.$B$B$n, lest diese Anleitung. Wenn Ihr lernen wollt, wie man Briefbeschwerer aus Metall herstellt, dann bringt sie zu Glotz Widrikus in Beutebucht. Denkt daran - das ist eine dauerhafte Mitgliedschaft. Es ist also nicht möglich, auch in die andere Disziplin einzutreten, daher solltet Ihr genau wissen, was Ihr wollt, bevor Ihr seine Aufgabe ausführt.",
     ["obj"] = "Wenn Ihr mehr über die Gnomeningenieurskunst erlernen wollt, dann bringt die Anleitung der Ingenieurskunstdisziplinen zu Glotz Widrikus nach Beutebucht.",
     ["start"] = {
@@ -32909,7 +32974,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Waise sucht Zuhause,Sprecht mi"] = {
     ["id"] = 3841,
-    ["min"] = 45,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "Gerechtigkeit üben,Bringt Jer",
@@ -32927,7 +32992,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Kurz vor dem Schlüpfen,Bringt 2 E"] = {
     ["id"] = 3842,
-    ["min"] = 40,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "Waise sucht Zuhause,Sprecht mi",
@@ -32945,7 +33010,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Das neueste Mitglied der Familie,Bringt Eue"] = {
     ["id"] = 3843,
-    ["min"] = 42,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "Kurz vor dem Schlüpfen,Bringt 2 E",
@@ -33112,7 +33177,7 @@ pfDB["quests"]["deDE"] = {
     ["min"] = 3,
     ["lvl"] = 4,
     ["race"] = 77,
-    ["pre"] = "Wölfe an der Grenze,Bringt Eag",
+    ["pre"] = "Bruderschaft der Diebe,Bringt 8 r",
     ["log"] = "Ihr habt Euch als verlässlich erwiesen, $n. Verlässlich und ohne Angst, Euch auch mal die Hände schmutzig zu machen, wie?$B$BTja, eine Freundin von mir, Milly Geltmark, hat ein paar Probleme. Sie ist mit ihrem Wagen auf der anderen Seite der Abtei, in der Nähe des Stalls. Ich bin mir sicher, sie könnte Eure Hilfe gut gebrauchen.",
     ["obj"] = "Sprecht mit Milly Geltmark.",
     ["start"] = {
@@ -34306,7 +34371,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Ein Besuch bei Gregan,Bringt Gre"] = {
     ["id"] = 4142,
-    ["min"] = 52,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 77,
     ["pre"] = "Muigin und Larion,Sammelt 15",
@@ -34324,7 +34389,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Der Dunst des Bösen,Sammelt 5 "] = {
     ["id"] = 4143,
-    ["min"] = 50,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 77,
     ["pre"] = "Ein Besuch bei Gregan,Bringt Gre",
@@ -34342,7 +34407,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Blutblütensprösslinge,"] = {
     ["id"] = 4144,
-    ["min"] = 53,
+    ["min"] = 50,
     ["lvl"] = 60,
     ["race"] = 77,
     ["pre"] = "Der Dunst des Bösen,Sammelt 5 ",
@@ -34358,7 +34423,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Larion und Muigin,Jagt 5 Blu"] = {
     ["id"] = 4145,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 178,
     ["log"] = "Seht Ihr Muigin da drüben? Es ist SEINE Schuld, dass wir uns verirrt haben!$B$BIch kannte den richtigen Weg, aber er bestand darauf, eine Abkürzung zu nehmen, und so sind wir hier gelandet!$B$BUnd um die Lage noch zu verschlimmern, schickt er mir jetzt auch noch seine verrückten Pflanzen, um mich zu ärgern. Ich bin so wütend, dass ich bis auf weiteres kein Wort mehr mit ihm reden werde, aber diese Quälgeister sind wirklich unerträglich.$B$BWarum versuchen wir nicht als Erstes, seinen Bestand ein bisschen zu dezimieren? Geht hinaus und jagt einige Blutblüten und kehrt dann zu mir zurück.",
@@ -34378,7 +34443,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Treibstoff für die Unkrautvernichtung,Bringt Lar"] = {
     ["id"] = 4146,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 178,
     ["pre"] = "Marvons Werkstatt,Reist zu M",
@@ -34397,7 +34462,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Marvons Werkstatt,Reist zu M"] = {
     ["id"] = 4147,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 178,
     ["pre"] = "Larion und Muigin,Jagt 5 Blu",
@@ -34446,6 +34511,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 4181,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "Bei der Experteningenieurskunst gibt es zwei unterschiedliche Disziplinen: Gnom und Goblin. Ich erwähne die Ingenieurskunst der Goblins nur, weil ich ein gerechter und unvoreingenommener Lehrer bin. Sie machen gern Dinge, die in die Luft gehen und es ist ihnen dabei meistens egal, ob dabei was im Weg herumsteht - auch wenn sie es selbst sind.$B$BLest dieses Handbuch, $n. Wenn Ihr lernen wollt, wie Ihr Euch selbst in die Luft jagt, dann bringt es zu Nixx Sprossfeder nach Gadgetzan. Denkt daran - das ist eine dauerhafte Mitgliedschaft. Es ist also nicht möglich, auch in die andere Disziplin einzutreten, daher solltet Ihr genau wissen, was Ihr wollt, bevor Ihr seine Aufgabe ausführt.",
     ["obj"] = "Wenn Ihr mehr über die Gobliningenieurskunst wissen wollt, dann bringt das Handbuch der Ingenieurskunstdisziplinen zu Nixx Sprossfeder nach Gadgetzan.",
     ["start"] = {
@@ -34930,7 +34996,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Der Westpylon,Findet den"] = {
     ["id"] = 4288,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Machtkristalle,Sammelt 7 ",
     ["log"] = "Meine Experimente haben bis jetzt noch keine positiven Ergebnisse erzielt, $n. Ich kann nur hoffen, dass Ihr eine Lösung findet, indem Ihr einen der Pylonen entdeckt, von denen ich gehört habe.$B$BWas, wenn wir bestimmte Farben mit ihnen kombinieren würden... ach, eines nach dem anderen. Zuerst müssen wir sie finden!$B$B$n, sucht im westlichen Teil des Kraters. In diesem Gebiet soll sich irgendwo ein Pylon befinden.",
@@ -35079,7 +35145,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Essen für das Baby,Bringt Agn"] = {
     ["id"] = 4297,
-    ["min"] = 44,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "Das neueste Mitglied der Familie,Bringt Eue",
@@ -35097,7 +35163,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Elternfreuden,Sprecht mi"] = {
     ["id"] = 4298,
-    ["min"] = 45,
+    ["min"] = 38,
     ["lvl"] = 48,
     ["race"] = 77,
     ["pre"] = "Essen für das Baby,Bringt Agn",
@@ -35145,7 +35211,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Die Sache verstehen,Sprecht de"] = {
     ["id"] = 4321,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["log"] = "Die Information über die Pylonen, die Ihr mir gabt, ist sehr interessant...$B$BGebt mir einen Moment Zeit, um ein paar Berechnungen anzustellen, $n. Sprecht mich demnächst noch einmal an, dann sollte ich Euch die Antwort geben können, nach der wir gesucht haben.",
     ["obj"] = "Sprecht demnächst mit J. D. Collie.",
@@ -35278,7 +35344,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Kristallflicker,"] = {
     ["id"] = 4381,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Die Sache verstehen,Sprecht de",
     ["start"] = {
@@ -35294,7 +35360,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Kristallkraft,"] = {
     ["id"] = 4382,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Die Sache verstehen,Sprecht de",
     ["start"] = {
@@ -35310,7 +35376,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Kristallbarriere,"] = {
     ["id"] = 4383,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Die Sache verstehen,Sprecht de",
     ["start"] = {
@@ -35326,7 +35392,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Kristallschwächer,"] = {
     ["id"] = 4384,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Die Sache verstehen,Sprecht de",
     ["start"] = {
@@ -35342,7 +35408,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Kristallsprengladung,"] = {
     ["id"] = 4385,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Die Sache verstehen,Sprecht de",
     ["start"] = {
@@ -35358,7 +35424,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Kristallspitze,"] = {
     ["id"] = 4386,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Die Sache verstehen,Sprecht de",
     ["start"] = {
@@ -40871,7 +40937,7 @@ pfDB["quests"]["deDE"] = {
   ["Fisch im Eimer,Jinar\'Zill"] = {
     ["id"] = 5421,
     ["min"] = 25,
-    ["lvl"] = 25,
+    ["lvl"] = 1,
     ["race"] = 178,
     ["start"] = {
       ["Jinar\'Zillen"] = "NPC",
@@ -43960,7 +44026,7 @@ pfDB["quests"]["deDE"] = {
     ["min"] = 10,
     ["lvl"] = 10,
     ["class"] = 4,
-    ["race"] = 77,
+    ["race"] = 8,
     ["log"] = "Hallo, so jung und schon auf der Jagd. Ihr seht mir talentiert genug aus, um ein Tier zu führen und es zu Eurem Gefährten abzurichten.$B$BIhr müsst Dazalar in Dolanaar aufsuchen. Er kann Euch auf den Weg zu einem eigenen Tier führen.",
     ["obj"] = "Sprecht mit Dazalar in Dolanaar in Teldrassil.",
     ["start"] = {
@@ -44426,7 +44492,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Verbündeter der Holzschlundfeste,Grazle m?c"] = {
     ["id"] = 6131,
-    ["min"] = 45,
+    ["min"] = 61,
     ["lvl"] = 48,
     ["log"] = "Die Einwohner der Holzschlundfeste sind die einzigen Furbolgs, die von der Verderbnis verschont blieben. Aber viele andere V?lker t?ten die Furbolgs jetzt blindwütig und scheren sich nicht darum, ob sie Freund oder Feind sind. Deswegen trauen die Furbolgs der Holzschlundfeste auch kaum jemandem.$B$BSeid Ihr daran interessiert, Euch zu beweisen? Treibt den verderbten Stamm der Totenwaldfelle vom Teufelswald zurück, dann betrachten wir Euch eines Tages vielleicht als Verbündeten. Ihr findet den ersten Stamm der Totenwaldfelle - Krieger, Pfadfinder und G?rtner - westlich von hier.",
     ["obj"] = "Grazle m?chte, dass Ihr Euch beweist, indem Ihr 5 Krieger der Totenwaldfelle, 5 Pfadfinder der Totenwaldfelle und 5 G?rtner der Totenwaldfelle besiegt.",
@@ -44435,11 +44501,6 @@ pfDB["quests"]["deDE"] = {
     },
     ["end"] = {
       ["Grazle"] = "NPC",
-    },
-    ["spawn"] = {
-      ["Krieger der Totenwaldfelle,5"] = "NPC",
-      ["Pfadfinder der Totenwaldfelle,5"] = "NPC",
-      ["Gärtner der Totenwaldfelle,5"] = "NPC",
     },
   },
   ["Holt mich hier raus!,Eskortiert"] = {
@@ -44713,8 +44774,8 @@ pfDB["quests"]["deDE"] = {
   },
   ["Augustus\' Quittungsbuch,Beschafft "] = {
     ["id"] = 6164,
-    ["min"] = 10,
-    ["lvl"] = 10,
+    ["min"] = 50,
+    ["lvl"] = 55,
     ["log"] = "Ich bin jetzt bereit fürs Geschäftliche! Was wollt Ihr?$B$BOh, Moment mal... ohne mein Quittungsbuch kann ich kein Geschäft eröffnen. Wie soll ich ohne mein Quittungsbuch den Überblick behalten?$B$BIch muss es in der Stadt gelassen haben. Ich hatte ein Zimmer im Gasthaus... dort muss das Buch sein.$B$BBringt mir mein Buch. Bitte, bringt es mir! Bringt mir mein Buch und Ihr werdet sehen! Ich eröffne mein Geschäft und Ihr werdet sehen, dass meine Preise der WAHNSINN sind!",
     ["obj"] = "Beschafft Euch Augustus\' Quittungsbuch aus dem Gasthaus im Schreckenstal.",
     ["start"] = {
@@ -46268,7 +46329,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Ihr zu gut,Ihr nehmt "] = {
     ["id"] = 6608,
-    ["min"] = 40,
+    ["min"] = 35,
     ["lvl"] = 45,
     ["race"] = 178,
     ["log"] = "Lumak können $n nix mehr beibringen. Ihr zu gut! Finden Freund von Lumak, Nat Pagle. Er sein Mensch, aber nix Futter! Ist Freund von Lumak! Nat Euch zeigen, wie besserer angeln.$B$BIhr finden Nat in den Düstermarschen, Süden von Thermoro-odersoähnlich. Nat bestimmt angeln. Ihr jetzt gehen!",
@@ -46282,7 +46343,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Ich hab nix mehr!,Reist nach"] = {
     ["id"] = 6609,
-    ["min"] = 41,
+    ["min"] = 35,
     ["lvl"] = 45,
     ["race"] = 77,
     ["log"] = "Ich bin ein Zwerg, zum Donnerwetter nochmal, $g Jungchen:junge Dame;! Ich hab mit Angeln nichts am Hut! Ich meine, seht mich doch mal an! Ich bestehe praktisch aus Stein.$B$BIch hab nichts mehr - Ihr habt mich ausgelaugt. Ich hab Euch alles beigebracht, was ich weiß, flipflop!$B$BKapiert Ihr\'s nicht? Ah, gut. Ich hab in Kalimdor einen alten Freund, der Euch weiterhelfen kann. Heißt Nat Pagle, guter Junge. Findet ihn auf den Inseln südlich von Theramore. Jetzt verfatzt Euch!",
@@ -46642,7 +46703,7 @@ pfDB["quests"]["deDE"] = {
     ["min"] = 10,
     ["lvl"] = 10,
     ["class"] = 4,
-    ["race"] = 77,
+    ["race"] = 8,
     ["log"] = "Hallo, so jung und schon auf der Jagd. Ihr seht mir talentiert genug aus, um ein Tier zu führen und es zu Eurem Gefährten abzurichten.$B$BIhr müsst Dazalar in Dolanaar aufsuchen. Er kann Euch auf den Weg zu einem eigenen Tier führen.",
     ["obj"] = "Sprecht mit Dazalar in Dolanaar in Teldrassil.",
     ["start"] = {
@@ -49990,9 +50051,12 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 7660,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Ogunaro Wolfsläufer"] = "NPC",
     },
     ["end"] = {
+      ["Ogunaro Wolfsläufer"] = "NPC",
     },
     ["item"] = {
       ["Horn des arktischen Wolfs,1"] = "ITEM",
@@ -50002,9 +50066,12 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 7661,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Ogunaro Wolfsläufer"] = "NPC",
     },
     ["end"] = {
+      ["Ogunaro Wolfsläufer"] = "NPC",
     },
     ["item"] = {
       ["Horn des roten Wolfs,1"] = "ITEM",
@@ -50014,9 +50081,12 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 7662,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Harb Klauenhuf"] = "NPC",
     },
     ["end"] = {
+      ["Harb Klauenhuf"] = "NPC",
     },
     ["item"] = {
       ["Graublauer Kodo,1"] = "ITEM",
@@ -50026,9 +50096,12 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 7663,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Harb Klauenhuf"] = "NPC",
     },
     ["end"] = {
+      ["Harb Klauenhuf"] = "NPC",
     },
     ["item"] = {
       ["Grüner Kodo,1"] = "ITEM",
@@ -50038,9 +50111,12 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 7664,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["end"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["item"] = {
       ["Pfeife des elfenbeinfarbenen Raptors,1"] = "ITEM",
@@ -50050,9 +50126,12 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 7665,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["end"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["item"] = {
       ["Pfeife des scheckigen roten Raptors,1"] = "ITEM",
@@ -50095,9 +50174,12 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 7671,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Lelanai"] = "NPC",
     },
     ["end"] = {
+      ["Lelanai"] = "NPC",
     },
     ["item"] = {
       ["Zügel des uralten Frostsäblers,1"] = "ITEM",
@@ -50107,9 +50189,12 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 7672,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Lelanai"] = "NPC",
     },
     ["end"] = {
+      ["Lelanai"] = "NPC",
     },
     ["item"] = {
       ["Zügel des Nachtsäblers,1"] = "ITEM",
@@ -50119,9 +50204,12 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 7673,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Veron Bernruh"] = "NPC",
     },
     ["end"] = {
+      ["Veron Bernruh"] = "NPC",
     },
     ["item"] = {
       ["Frostwidder,1"] = "ITEM",
@@ -50131,9 +50219,12 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 7674,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Veron Bernruh"] = "NPC",
     },
     ["end"] = {
+      ["Veron Bernruh"] = "NPC",
     },
     ["item"] = {
       ["Schwarzer Widder,1"] = "ITEM",
@@ -50143,9 +50234,12 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 7675,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Milli Federpfiff"] = "NPC",
     },
     ["end"] = {
+      ["Milli Federpfiff"] = "NPC",
     },
     ["item"] = {
       ["Eisblauer Roboschreiter Mod. A,1"] = "ITEM",
@@ -50155,9 +50249,12 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 7676,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Milli Federpfiff"] = "NPC",
     },
     ["end"] = {
+      ["Milli Federpfiff"] = "NPC",
     },
     ["item"] = {
       ["Weißer Roboschreiter Mod. B,1"] = "ITEM",
@@ -50166,12 +50263,13 @@ pfDB["quests"]["deDE"] = {
   ["Austausch Eures Schimmels,"] = {
     ["id"] = 7677,
     ["min"] = 60,
-    ["lvl"] = 60,
-    ["log"] = "",
-    ["obj"] = "",
+    ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Katie Weidmann"] = "NPC",
     },
     ["end"] = {
+      ["Katie Weidmann"] = "NPC",
     },
     ["item"] = {
       ["Zaumzeug des Schimmels,1"] = "ITEM",
@@ -50181,9 +50279,12 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 7678,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Katie Weidmann"] = "NPC",
     },
     ["end"] = {
+      ["Katie Weidmann"] = "NPC",
     },
     ["item"] = {
       ["Zaumzeug des Palomino,1"] = "ITEM",
@@ -50530,6 +50631,9 @@ pfDB["quests"]["deDE"] = {
     ["end"] = {
       ["Drakkisaths Brandzeichen"] = "OBJECT",
     },
+    ["item"] = {
+      ["Schwarzfausts Befehl,1"] = "ITEM",
+    },
   },
   ["Der Herrscher des Schwarzfels,Bringt Kö"] = {
     ["id"] = 7781,
@@ -50610,9 +50714,8 @@ pfDB["quests"]["deDE"] = {
   },
   ["Donneraan der Windsucher,Um Donnera"] = {
     ["id"] = 7786,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["pre"] = "Untersuchung des Gefäßes,Untersucht",
     ["log"] = "Ich habe Euch alles gesagt was ich weiß, $n. Es ist nun Eure Aufgabe Elementium zu finden. Ihr seid es, der die körperliche Form des Feuerfürsten zerstören muss.$B$BGewinnt dadurch den Segen von Donneraan.",
     ["obj"] = "Um Donneraan den Windsucher aus seiner Gefangenschaft zu befreien, müsst Ihr Hochlord Demitrian die rechten und linken Hälften der Fesseln des Windsuchers, 10 verzauberte Elementiumbarren und die Essenz des Feuerfürsten bringen.",
     ["start"] = {
@@ -50621,17 +50724,12 @@ pfDB["quests"]["deDE"] = {
     ["end"] = {
       ["Hochlord Demitrian"] = "NPC",
     },
-    ["item"] = {
-      ["Verzauberter Elementiumbarren,10"] = "ITEM",
-      ["Essenz des Feuerfürsten,1"] = "ITEM",
-      ["Fesseln des Windsuchers,1"] = "ITEM",
-      ["Fesseln des Windsuchers,1"] = "ITEM",
-    },
   },
   ["Donnerzorn erwache!,Präsentie"] = {
     ["id"] = 7787,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Donneraan der Windsucher,Um Donnera",
     ["pre"] = "Donneraan der Windsucher,Um Donnera",
     ["log"] = "Ihr habt den Windsucher bezwungen. Nehmt die schlummernde Klinge und die Materialen, die Ihr Demitrian für seinen Verrat geliefert habt, und zwingt den verlogenen Schuft, Donnerzorn zu erwecken.",
     ["obj"] = "Präsentiert Hochlord Demitrian die vom Wind berührte, schlummernde Klinge.",
@@ -50644,38 +50742,21 @@ pfDB["quests"]["deDE"] = {
       ["Schlummernde vom Wind berührte Klinge,1"] = "ITEM",
     },
   },
-  ["Besiegt die Eindringlinge!,Betretet d"] = {
-    ["id"] = 7788,
-    ["min"] = 20,
-    ["lvl"] = 29,
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8081,
+    ["min"] = 50,
+    ["lvl"] = 55,
     ["race"] = 77,
-    ["log"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
-    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
+    ["log"] = "",
+    ["obj"] = "",
     ["start"] = {
-      ["Schildwache Weltensang"] = "NPC",
+      ["Unteroffizier Maclear"] = "NPC",
     },
     ["end"] = {
-      ["Schildwache Weltensang"] = "NPC",
+      ["Unteroffizier Maclear"] = "NPC",
     },
     ["item"] = {
-      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
-    },
-  },
-  ["Bezwingt die Eindringlinge der Silberschwingen,Betretet d"] = {
-    ["id"] = 7789,
-    ["min"] = 20,
-    ["lvl"] = 29,
-    ["race"] = 178,
-    ["log"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
-    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
-    ["start"] = {
-      ["Hauptmann Schädelbrecher"] = "NPC",
-    },
-    ["end"] = {
-      ["Hauptmann Schädelbrecher"] = "NPC",
-    },
-    ["item"] = {
-      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+      ["Arathivorratskiste,1"] = "ITEM",
     },
   },
   ["Inbesitznahme des Arathibeckens,"] = {
@@ -51557,98 +51638,45 @@ pfDB["quests"]["deDE"] = {
       ["Kelm Hargunth"] = "NPC",
     },
   },
-  ["Besiegt die Eindringlinge!,Betretet d"] = {
-    ["id"] = 7871,
-    ["min"] = 30,
-    ["lvl"] = 39,
-    ["race"] = 77,
-    ["log"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
-    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
-    ["start"] = {
-      ["Schildwache Weltensang"] = "NPC",
-    },
-    ["end"] = {
-      ["Schildwache Weltensang"] = "NPC",
-    },
-    ["item"] = {
-      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
-    },
-  },
-  ["Besiegt die Eindringlinge!,Betretet d"] = {
-    ["id"] = 7872,
-    ["min"] = 40,
-    ["lvl"] = 49,
-    ["race"] = 77,
-    ["log"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
-    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
-    ["start"] = {
-      ["Schildwache Weltensang"] = "NPC",
-    },
-    ["end"] = {
-      ["Schildwache Weltensang"] = "NPC",
-    },
-    ["item"] = {
-      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
-    },
-  },
-  ["Besiegt die Eindringlinge!,Betretet d"] = {
-    ["id"] = 7873,
+  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
+    ["id"] = 8080,
     ["min"] = 50,
     ["lvl"] = 59,
     ["race"] = 77,
-    ["log"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
-    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
+    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
+    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
     ["start"] = {
-      ["Schildwache Weltensang"] = "NPC",
+      ["Unteroffizier Maclear"] = "NPC",
     },
     ["end"] = {
-      ["Schildwache Weltensang"] = "NPC",
+      ["Unteroffizier Maclear"] = "NPC",
     },
     ["item"] = {
-      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
     },
   },
-  ["Bezwingt die Eindringlinge der Silberschwingen,Betretet d"] = {
-    ["id"] = 7874,
-    ["min"] = 30,
-    ["lvl"] = 39,
-    ["race"] = 178,
-    ["log"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
-    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
-    ["start"] = {
-      ["Hauptmann Schädelbrecher"] = "NPC",
-    },
-    ["end"] = {
-      ["Hauptmann Schädelbrecher"] = "NPC",
-    },
-    ["item"] = {
-      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
-    },
-  },
-  ["Bezwingt die Eindringlinge der Silberschwingen,Betretet d"] = {
-    ["id"] = 7875,
-    ["min"] = 40,
-    ["lvl"] = 49,
-    ["race"] = 178,
-    ["log"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
-    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
-    ["start"] = {
-      ["Hauptmann Schädelbrecher"] = "NPC",
-    },
-    ["end"] = {
-      ["Hauptmann Schädelbrecher"] = "NPC",
-    },
-    ["item"] = {
-      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
-    },
-  },
-  ["Bezwingt die Eindringlinge der Silberschwingen,Betretet d"] = {
-    ["id"] = 7876,
+  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
+    ["id"] = 8080,
     ["min"] = 50,
-    ["lvl"] = 59,
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
+    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Ehrenabzeichen,"] = {
+    ["id"] = 7925,
+    ["min"] = 20,
+    ["lvl"] = 25,
     ["race"] = 178,
-    ["log"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
-    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
     ["start"] = {
       ["Hauptmann Schädelbrecher"] = "NPC",
     },
@@ -51656,7 +51684,147 @@ pfDB["quests"]["deDE"] = {
       ["Hauptmann Schädelbrecher"] = "NPC",
     },
     ["item"] = {
-      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Ehrenabzeichen,"] = {
+    ["id"] = 7925,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["pre"] = "Bezwingt die Eindringlinge der Silberschwingen,Betretet d",
+    ["pre"] = "Bezwingt die Eindringlinge der Silberschwingen,Betretet d",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Ehrenabzeichen,"] = {
+    ["id"] = 7924,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Ehrenabzeichen,"] = {
+    ["id"] = 7924,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["pre"] = "Bezwingt die Eindringlinge der Silberschwingen,Betretet d",
+    ["pre"] = "Bezwingt die Eindringlinge der Silberschwingen,Betretet d",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Ehrenabzeichen,"] = {
+    ["id"] = 7922,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["pre"] = "Bezwingt die Eindringlinge der Silberschwingen,Betretet d",
+    ["pre"] = "Bezwingt die Eindringlinge der Silberschwingen,Betretet d",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Ehrenabzeichen,"] = {
+    ["id"] = 7923,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Ehrenabzeichen,"] = {
+    ["id"] = 7923,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["pre"] = "Bezwingt die Eindringlinge der Silberschwingen,Betretet d",
+    ["pre"] = "Bezwingt die Eindringlinge der Silberschwingen,Betretet d",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Verdienstabzeichen,"] = {
+    ["id"] = 7921,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["pre"] = "Besiegt die Eindringlinge!,Betretet d",
+    ["pre"] = "Besiegt die Eindringlinge!,Betretet d",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
+    },
+  },
+  ["Ehrenabzeichen,"] = {
+    ["id"] = 7922,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
     },
   },
   ["Der Schatz der Shen\'dralar,Kehrt in d"] = {
@@ -52241,6 +52409,7 @@ pfDB["quests"]["deDE"] = {
     ["start"] = {
     },
     ["end"] = {
+      ["Mysterious Wailing Caverns Chest"] = "OBJECT",
     },
     ["item"] = {
       ["Sayges Horoskop Nr. 25,1"] = "ITEM",
@@ -52914,21 +53083,53 @@ pfDB["quests"]["deDE"] = {
       ["Urzeitlicher Hakkarikosak,1"] = "ITEM",
     },
   },
-  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
-    ["id"] = 8080,
-    ["min"] = 50,
-    ["lvl"] = 59,
+  ["Verdienstabzeichen,"] = {
+    ["id"] = 7888,
+    ["min"] = 40,
+    ["lvl"] = 45,
     ["race"] = 77,
-    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
-    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
     ["start"] = {
-      ["Unteroffizier Maclear"] = "NPC",
+      ["Schildwache Weltensang"] = "NPC",
     },
     ["end"] = {
-      ["Unteroffizier Maclear"] = "NPC",
+      ["Schildwache Weltensang"] = "NPC",
     },
     ["item"] = {
-      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
+    },
+  },
+  ["Verdienstabzeichen,"] = {
+    ["id"] = 7888,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["pre"] = "Besiegt die Eindringlinge!,Betretet d",
+    ["pre"] = "Besiegt die Eindringlinge!,Betretet d",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
+    },
+  },
+  ["Verdienstabzeichen,"] = {
+    ["id"] = 7921,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
     },
   },
   ["Der Stein des Kajaro,"] = {
@@ -53265,21 +53466,57 @@ pfDB["quests"]["deDE"] = {
       ["Todesmeister Dunkels"] = "NPC",
     },
   },
-  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
-    ["id"] = 8123,
+  ["Verdienstabzeichen,"] = {
+    ["id"] = 7886,
     ["min"] = 50,
-    ["lvl"] = 59,
-    ["race"] = 178,
-    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
-    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["pre"] = "Besiegt die Eindringlinge!,Betretet d",
+    ["pre"] = "Besiegt die Eindringlinge!,Betretet d",
+    ["log"] = "",
+    ["obj"] = "",
     ["start"] = {
-      ["Todespirscher Mortis"] = "NPC",
+      ["Schildwache Weltensang"] = "NPC",
     },
     ["end"] = {
-      ["Todespirscher Mortis"] = "NPC",
+      ["Schildwache Weltensang"] = "NPC",
     },
     ["item"] = {
-      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
+    },
+  },
+  ["Verdienstabzeichen,"] = {
+    ["id"] = 7887,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
+    },
+  },
+  ["Verdienstabzeichen,"] = {
+    ["id"] = 7887,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["pre"] = "Besiegt die Eindringlinge!,Betretet d",
+    ["pre"] = "Besiegt die Eindringlinge!,Betretet d",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
     },
   },
   ["Zandalarischattentalisman,"] = {
@@ -53464,106 +53701,104 @@ pfDB["quests"]["deDE"] = {
       ["Perfektes Rennergeweih,2"] = "ITEM",
     },
   },
-  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
-    ["id"] = 8154,
+  ["Verdienstabzeichen,"] = {
+    ["id"] = 7886,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
+    },
+  },
+  ["Bezwingt die Eindringlinge der Silberschwingen,Betretet d"] = {
+    ["id"] = 7876,
+    ["min"] = 50,
+    ["lvl"] = 59,
+    ["race"] = 178,
+    ["log"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Bezwingt die Eindringlinge der Silberschwingen,Betretet d"] = {
+    ["id"] = 7876,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["log"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Bezwingt die Eindringlinge der Silberschwingen,Betretet d"] = {
+    ["id"] = 7875,
     ["min"] = 40,
-    ["lvl"] = 49,
-    ["race"] = 77,
-    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
-    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["log"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
     ["start"] = {
-      ["Unteroffizier Maclear"] = "NPC",
+      ["Hauptmann Schädelbrecher"] = "NPC",
     },
     ["end"] = {
-      ["Unteroffizier Maclear"] = "NPC",
+      ["Hauptmann Schädelbrecher"] = "NPC",
     },
     ["item"] = {
-      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+      ["Warsong Mark of Honor,1"] = "ITEM",
     },
   },
-  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
-    ["id"] = 8155,
-    ["min"] = 20,
-    ["lvl"] = 29,
-    ["race"] = 77,
-    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
-    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
-    ["start"] = {
-      ["Unteroffizier Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Unteroffizier Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
-    },
-  },
-  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
-    ["id"] = 8156,
+  ["Bezwingt die Eindringlinge der Silberschwingen,Betretet d"] = {
+    ["id"] = 7874,
     ["min"] = 30,
     ["lvl"] = 39,
-    ["race"] = 77,
-    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
-    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
-    ["start"] = {
-      ["Unteroffizier Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Unteroffizier Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
-    },
-  },
-  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
-    ["id"] = 8160,
-    ["min"] = 40,
-    ["lvl"] = 49,
     ["race"] = 178,
-    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
-    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
+    ["log"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
     ["start"] = {
-      ["Todespirscher Mortis"] = "NPC",
+      ["Hauptmann Schädelbrecher"] = "NPC",
     },
     ["end"] = {
-      ["Todespirscher Mortis"] = "NPC",
+      ["Hauptmann Schädelbrecher"] = "NPC",
     },
     ["item"] = {
-      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
     },
   },
-  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
-    ["id"] = 8161,
+  ["Bezwingt die Eindringlinge der Silberschwingen,Betretet d"] = {
+    ["id"] = 7874,
     ["min"] = 30,
-    ["lvl"] = 39,
+    ["lvl"] = 35,
     ["race"] = 178,
-    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
-    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
+    ["log"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
     ["start"] = {
-      ["Todespirscher Mortis"] = "NPC",
+      ["Hauptmann Schädelbrecher"] = "NPC",
     },
     ["end"] = {
-      ["Todespirscher Mortis"] = "NPC",
+      ["Hauptmann Schädelbrecher"] = "NPC",
     },
     ["item"] = {
-      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
-    },
-  },
-  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
-    ["id"] = 8162,
-    ["min"] = 20,
-    ["lvl"] = 29,
-    ["race"] = 178,
-    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
-    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
-    ["start"] = {
-      ["Todespirscher Mortis"] = "NPC",
-    },
-    ["end"] = {
-      ["Todespirscher Mortis"] = "NPC",
-    },
-    ["item"] = {
-      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+      ["Warsong Mark of Honor,1"] = "ITEM",
     },
   },
   ["Die Invasoren des Alteractals,Bringt 3 E"] = {
@@ -53750,7 +53985,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Könnte ich einen Flugzettel für den Angelwettbewerb bekommen?,"] = {
     ["id"] = 8228,
-    ["min"] = 55,
+    ["min"] = 35,
     ["lvl"] = 60,
     ["start"] = {
       ["Barrus"] = "NPC",
@@ -53761,7 +53996,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Könnte ich einen Flugzettel für den Angelwettbewerb bekommen?,"] = {
     ["id"] = 8229,
-    ["min"] = 55,
+    ["min"] = 35,
     ["lvl"] = 60,
     ["start"] = {
       ["Grinkel"] = "NPC",
@@ -54116,7 +54351,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Die Bedrohung durch Schattensichel,Wendet das"] = {
     ["id"] = 8258,
-    ["min"] = 60,
+    ["min"] = 58,
     ["lvl"] = 60,
     ["class"] = 64,
     ["race"] = 178,
@@ -54205,64 +54440,72 @@ pfDB["quests"]["deDE"] = {
       ["Rutherford Twing"] = "NPC",
     },
   },
-  ["Aufopferungsabzeichen,"] = {
-    ["id"] = 8266,
-    ["min"] = 10,
-    ["lvl"] = 39,
-    ["race"] = 178,
-    ["log"] = "",
-    ["obj"] = "",
-    ["start"] = {
-    },
-    ["end"] = {
-    },
-    ["item"] = {
-      ["Aufopferungsabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
-    },
-  },
-  ["Aufopferungsabzeichen,"] = {
-    ["id"] = 8267,
-    ["min"] = 40,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["log"] = "",
-    ["obj"] = "",
-    ["start"] = {
-    },
-    ["end"] = {
-    },
-    ["item"] = {
-      ["Aufopferungsabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
-    },
-  },
-  ["Aufopferungsabzeichen,"] = {
-    ["id"] = 8268,
-    ["min"] = 10,
-    ["lvl"] = 39,
+  ["Besiegt die Eindringlinge!,Betretet d"] = {
+    ["id"] = 7873,
+    ["min"] = 50,
+    ["lvl"] = 59,
     ["race"] = 77,
-    ["log"] = "",
-    ["obj"] = "",
+    ["log"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
     ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
     },
     ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
     },
     ["item"] = {
-      ["Aufopferungsabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
     },
   },
-  ["Aufopferungsabzeichen,"] = {
-    ["id"] = 8269,
-    ["min"] = 40,
-    ["lvl"] = 60,
+  ["Besiegt die Eindringlinge!,Betretet d"] = {
+    ["id"] = 7873,
+    ["min"] = 50,
+    ["lvl"] = 55,
     ["race"] = 77,
-    ["log"] = "",
-    ["obj"] = "",
+    ["log"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
     ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
     },
     ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
     },
     ["item"] = {
-      ["Aufopferungsabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
+    },
+  },
+  ["Besiegt die Eindringlinge!,Betretet d"] = {
+    ["id"] = 7872,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 77,
+    ["log"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Besiegt die Eindringlinge!,Betretet d"] = {
+    ["id"] = 7872,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["log"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
     },
   },
   ["Die Rückeroberung von Silithus,Sprecht mi"] = {
@@ -54496,9 +54739,9 @@ pfDB["quests"]["deDE"] = {
     },
   },
   ["Besiegt die Eindringlinge!,Betretet d"] = {
-    ["id"] = 8291,
-    ["min"] = 60,
-    ["lvl"] = 60,
+    ["id"] = 7871,
+    ["min"] = 30,
+    ["lvl"] = 39,
     ["race"] = 77,
     ["log"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
     ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
@@ -54512,11 +54755,13 @@ pfDB["quests"]["deDE"] = {
       ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
     },
   },
-  ["Verdienstabzeichen,"] = {
-    ["id"] = 8292,
-    ["min"] = 10,
-    ["lvl"] = 60,
+  ["Besiegt die Eindringlinge!,Betretet d"] = {
+    ["id"] = 7871,
+    ["min"] = 30,
+    ["lvl"] = 35,
     ["race"] = 77,
+    ["log"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
     ["start"] = {
       ["Schildwache Weltensang"] = "NPC",
     },
@@ -54524,28 +54769,13 @@ pfDB["quests"]["deDE"] = {
       ["Schildwache Weltensang"] = "NPC",
     },
     ["item"] = {
-      ["Ehrenabzeichen der Kriegshymnenschlucht,3"] = "ITEM",
-    },
-  },
-  ["Ehrenabzeichen,"] = {
-    ["id"] = 8293,
-    ["min"] = 10,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["start"] = {
-      ["Hauptmann Schädelbrecher"] = "NPC",
-    },
-    ["end"] = {
-      ["Hauptmann Schädelbrecher"] = "NPC",
-    },
-    ["item"] = {
-      ["Ehrenabzeichen der Kriegshymnenschlucht,3"] = "ITEM",
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
     },
   },
   ["Bezwingt die Eindringlinge der Silberschwingen,Betretet d"] = {
-    ["id"] = 8294,
-    ["min"] = 60,
-    ["lvl"] = 60,
+    ["id"] = 7789,
+    ["min"] = 20,
+    ["lvl"] = 29,
     ["race"] = 178,
     ["log"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
     ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
@@ -54559,68 +54789,55 @@ pfDB["quests"]["deDE"] = {
       ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
     },
   },
-  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
-    ["id"] = 8297,
-    ["min"] = 60,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
-    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
-    ["start"] = {
-      ["Unteroffizier Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Unteroffizier Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
-    },
-  },
-  ["Noch mehr Vorratskisten,"] = {
-    ["id"] = 8298,
+  ["Bezwingt die Eindringlinge der Silberschwingen,Betretet d"] = {
+    ["id"] = 7789,
     ["min"] = 20,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["start"] = {
-      ["Unteroffizier Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Unteroffizier Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Ehrenabzeichen des Arathibeckens,3"] = "ITEM",
-    },
-  },
-  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
-    ["id"] = 8299,
-    ["min"] = 60,
-    ["lvl"] = 60,
+    ["lvl"] = 25,
     ["race"] = 178,
-    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
-    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
+    ["log"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
     ["start"] = {
-      ["Todespirscher Mortis"] = "NPC",
+      ["Hauptmann Schädelbrecher"] = "NPC",
     },
     ["end"] = {
-      ["Todespirscher Mortis"] = "NPC",
+      ["Hauptmann Schädelbrecher"] = "NPC",
     },
     ["item"] = {
-      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+      ["Warsong Mark of Honor,1"] = "ITEM",
     },
   },
-  ["Noch mehr Vorratskisten,"] = {
-    ["id"] = 8300,
+  ["Besiegt die Eindringlinge!,Betretet d"] = {
+    ["id"] = 7788,
     ["min"] = 20,
-    ["lvl"] = 60,
-    ["race"] = 178,
+    ["lvl"] = 29,
+    ["race"] = 77,
+    ["log"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
     ["start"] = {
-      ["Todespirscher Mortis"] = "NPC",
+      ["Schildwache Weltensang"] = "NPC",
     },
     ["end"] = {
-      ["Todespirscher Mortis"] = "NPC",
+      ["Schildwache Weltensang"] = "NPC",
     },
     ["item"] = {
-      ["Ehrenabzeichen des Arathibeckens,3"] = "ITEM",
+      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Besiegt die Eindringlinge!,Betretet d"] = {
+    ["id"] = 7788,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["log"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
     },
   },
   ["Der Pfad des Gerechten,Kehrt zu B"] = {
@@ -54788,7 +55005,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Schlotternachtssüßigkeiten für Jesper!,Sprecht mi"] = {
     ["id"] = 8311,
-    ["min"] = 50,
+    ["min"] = 10,
     ["lvl"] = 60,
     ["log"] = "Ich darf nicht zum Süßigkeitensammeln gehen. Nach Todesschwinges Angriff habe ich schon Glück, dass die Waisenmatrone Nachtigall mich so weit hinaus lässt.$b$bWenn Ihr für mich loszieht, dann werde ich Euch Eure gesammelten Süßigkeiten gegen welche eintauschen, die ich bereits hier habe!$B$BAlle Gastwirte in den größeren Städten verteilen während der Schlotternächte Süßigkeiten - sprecht mit ihnen und führt ihnen vor, nach was sie Euch fragen! In Eisenschmiede verteilt auch ein kleiner Gnom namens Talvash Süßes. Sobald Ihr die Süßigkeiten habt, kommt hierher zu mir zurück!",
     ["obj"] = "Sprecht mit den Gastwirten in Sturmwind, Eisenschmiede und Darnassus sowie mit Talvash del Kissel in Eisenschmiede. Führt ihnen vor, nach was sie im Gegenzug für die Süßigkeiten verlangen.$B$BKehrt zu Jesper außerhalb von Sturmwind mit einem Marzipan aus Darnassus, einer Kaugummikugel aus Gnomeregan, Nugat aus Sturmwind und einem Pfefferminzbonbon aus Eisenschmiede zurück.",
@@ -54807,7 +55024,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Schlotternachtssüßigkeiten für Spuks!,Sprecht mi"] = {
     ["id"] = 8312,
-    ["min"] = 50,
+    ["min"] = 10,
     ["lvl"] = 60,
     ["log"] = "Ich würde gerne während der Schlotternächte zum Süßigkeitensammeln gehen, aber ich kann nicht, weil die Matrone mich nicht lässt. Wenn Ihr für mich loszieht, dann werde ich Euch Eure gesammelten Süßigkeiten gegen welche eintauschen, die ich bereits hier habe! Ich glaube Ihr werdet sie mögen - sie verwandeln Euch entweder in etwas Lustiges oder Gruseliges!$B$BAlle Gastwirte in den größeren Städten verteilen während der Schlotternächte Süßigkeiten - sprecht mit ihnen und führt ihnen vor, nach was sie Euch fragen! In Orgrimmar verteilt auch ein Troll namens Kali Remik Süßes. Sobald Ihr die Süßigkeiten habt, kommt hierher zu mir zurück!",
     ["obj"] = "Sprecht mit den Gastwirten in Orgrimmar, Unterstadt und Donnerfels sowie mit Kali Remik im Tal der Geister in Orgrimmar. Führt ihnen vor, nach was sie im Gegenzug für die Süßigkeiten verlangen.$B$BKehrt zu Spuks in den Ruinen von Lordaeron mit einem Marzipan aus Donnerfels, einer Kaugummikugel der Dunkelspeere, Nugat aus Orgrimmar und einem Pfefferminzbonbon aus Unterstadt zurück.",
@@ -54957,7 +55174,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Faule Eier,Werft die "] = {
     ["id"] = 8322,
-    ["min"] = 60,
+    ["min"] = 30,
     ["lvl"] = 60,
     ["race"] = 178,
     ["log"] = "Die Menschen von Süderstade lieben ihr Bier und deshalb schätzen sie das Bier, das im Gasthaus von Süderstade serviert wird, auch besonders. Wir können von dem Chaos während der Schlotternächte profitieren und ihre letzte Ladung Bier für Wochen - wenn nicht sogar Monate, verderben!$B$BNehmt diese faulen Eier und werft sie in die großen Braufässchen im Gasthaus von Süderstade. Allein Eure Anwesenheit wird für Unruhe sorgen, Ihr solltet Euch also zu verteidigen wissen!$B$BWenn Ihr Süderstade dieses unvergessliche Geschmackserlebnis überbracht habt, kommt hierher zu mir aufs Fest zurück!",
@@ -55762,6 +55979,7 @@ pfDB["quests"]["deDE"] = {
     ["lvl"] = 60,
     ["race"] = 77,
     ["pre"] = "Korrak der Blutrünstige,Der Legend",
+    ["pre"] = "Korrak der Blutrünstige,Der Legend",
     ["log"] = "Irgendetwas stimmt an dieser Sache nicht... Hat jemand daran gedacht Korraks Körper zu verbrennen? Diese Trolle werden vor nichts halt machen, um ihren gefallenen Anführer wiederzubeleben - so wie es die blauhäutigen Heiden des öfteren tun.$B$BHaltet immer ein Auge offen, $n. Seid nicht beunruhigt, wenn Karrak überraschend wieder auftaucht. Und wenn er das tut, will ich ihn tot sehen - seinen Körper zu Asche verbrannt.$B$BObendrein, schlagt ihm seinen Kopf ab und bringt mir seinen Schädel, bevor Ihr seinen leblosen Körper verbrennt.",
     ["obj"] = "Sollte Korrak der Blutrünstige wieder in den Winteraxhöhlen auftauchen, sucht ihn auf und tötet ihn.$B$BBringt Korraks Schädel zu Leutnant Haggerdin in Dun Baldar.",
     ["start"] = {
@@ -55779,6 +55997,7 @@ pfDB["quests"]["deDE"] = {
     ["min"] = 51,
     ["lvl"] = 60,
     ["race"] = 178,
+    ["pre"] = "Die Legende von Korrak,Der Legend",
     ["pre"] = "Die Legende von Korrak,Der Legend",
     ["log"] = "Es ist zwar eine Tatsache, dass Korrak gefallen ist, jedoch bleibt eine Frage offen: Wird er auch tot bleiben? Trolle sind berüchtigt für ihre außerweltliche Stammesmagie. Mich würde es nicht überraschen, wenn ihr toter Anführer wiedererweckt würde, um wieder einmal über seinen Klan zu herrschen.$B$BIhr wisst ja was in einem solchen Fall zu tun ist.$B$B<Kriegsmeister Laggrond deutet mit seinem Finger eine Schneidebewegung an seinem Hals an.>$B$BUnd nächstes mal möchte ich seinen Schädel. Haltet einfach die Augen offen, Soldat.$B$BWegtreten!",
     ["obj"] = "Sollte Korrak der Blutrünstige wieder in den Winteraxhöhlen auftauchen, sucht ihn auf und tötet ihn.$B$BBringt Korraks Schädel zu Kriegsmeister Laggrond auf Burg Frostwolf.",
@@ -55828,7 +56047,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Verdorbenes Bier,Kehrt zur "] = {
     ["id"] = 8409,
-    ["min"] = 60,
+    ["min"] = 25,
     ["lvl"] = 60,
     ["race"] = 178,
     ["pre"] = "Faule Eier,Werft die ",
@@ -56583,6 +56802,7 @@ pfDB["quests"]["deDE"] = {
     ["min"] = 53,
     ["lvl"] = 55,
     ["pre"] = "Verbündeter der Holzschlundfeste,Grazle m?c",
+    ["pre"] = "Verbündeter der Holzschlundfeste,Grazle m?c",
     ["log"] = "Vielleicht seid Ihr stark genug, um Euch einer noch größeren Bedrohung entgegenzustellen. Die Furbolgs der Holzschlundfeste brauchen Eure Hilfe und ich denke, Ihr habt hier bereits Eure Tauglichkeit im Kampf ausreichend bewiesen.$B$BReist auf dieser Straße in Richtung Norden, bis zum Eingang der Holzschlundfeste, wo einer meiner Brüder Wache steht. Sein Name ist Nafien. Im ersten Augenblick mag er vielleicht wie ein ungezügeltes, wildes Tier wirken, doch braucht Ihr ihn nicht zu fürchten. Er ist auf der Suche nach tapferen Abenteurern, die ihm im Kampf gegen die dunkle Verderbnis unterstützen, welche unsere Heimat bedroht.",
     ["obj"] = "Reist nach Norden entlang der Hauptstraße des Teufelswalds und sprecht mit einem Furbolg namens Nafien. Er hält außerhalb des Eingangs zur Holzschlundfeste Wache.",
     ["start"] = {
@@ -56609,6 +56829,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 8466,
     ["min"] = 45,
     ["lvl"] = 55,
+    ["pre"] = "Verbündeter der Holzschlundfeste,Grazle m?c",
     ["pre"] = "Verbündeter der Holzschlundfeste,Grazle m?c",
     ["obj"] = "",
     ["start"] = {
@@ -57597,11 +57818,14 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 8548,
     ["min"] = 55,
     ["lvl"] = 60,
+    ["pre"] = "Schlachtrüstung des Cenarius,Sprecht mi",
     ["log"] = "Die Abzeichen, die Ihr für Eure Erfüllung von Kampf-, Logistik- und taktischen Aufträgen für Burg Cenarius erhalten habt, dienen zu weit mehr als der Angeberei, $n.$B$BIhr solltet deren Wert besser zu schätzen wissen. Da Ihr gegenüber unserer Organisation Loyalität bewiesen habt, kann ich Euch bestimmte Ausrüstungsgegenstände anbieten, die wir lediglich für unsere engsten Verbündeten im Austausch gegen diese Abzeichen bereithalten.",
     ["obj"] = "Bringt 5 cenarische Gefechtsabzeichen, 3 cenarische Versorgungsabzeichen und 7 cenarische Strategieabzeichen zu Vargus auf Burg Cenarius in Silithus. Diese Aufgabe erfordert zum Abschluss auch einen freundlichen Ruf beim Zirkel des Cenarius.",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Cenarisches Gefechtsabzeichen,5"] = "ITEM",
@@ -57852,11 +58076,14 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 8572,
     ["min"] = 55,
     ["lvl"] = 60,
+    ["pre"] = "Schlachtrüstung des Cenarius,Sprecht mi",
     ["log"] = "Die Abzeichen, die Ihr für Eure Erfüllung von Kampf-, Logistik- und taktischen Aufträgen für Burg Cenarius erhalten habt, dienen zu weit mehr als der Angeberei, $n.$B$BIhr solltet deren Wert besser zu schätzen wissen. Da Ihr gegenüber unserer Organisation Loyalität bewiesen habt, kann ich Euch bestimmte Ausrüstungsgegenstände anbieten, die wir lediglich für unsere engsten Verbündeten im Austausch gegen diese Abzeichen bereithalten.",
     ["obj"] = "Bringt 7 cenarische Gefechtsabzeichen, 4 cenarische Versorgungsabzeichen und 4 cenarische Strategieabzeichen zu Vargus auf Burg Cenarius in Silithus. Diese Aufgabe erfordert zum Abschluss auch einen wohlwollenden Ruf beim Zirkel des Cenarius.",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Cenarisches Gefechtsabzeichen,7"] = "ITEM",
@@ -57868,11 +58095,14 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 8573,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Schlachtrüstung des Cenarius,Sprecht mi",
     ["log"] = "Die Abzeichen, die Ihr für Eure Erfüllung von Kampf-, Logistik- und taktischen Aufträgen für Burg Cenarius erhalten habt, dienen zu weit mehr als der Angeberei, $n.$B$BIhr solltet deren Wert besser zu schätzen wissen. Da Ihr gegenüber unserer Organisation Loyalität bewiesen habt, kann ich Euch bestimmte Ausrüstungsgegenstände anbieten, die wir lediglich für unsere engsten Verbündeten im Austausch gegen diese Abzeichen bereithalten.",
     ["obj"] = "Bringt 15 cenarische Gefechtsabzeichen, 20 cenarische Versorgungsabzeichen, 20 cenarische Strategieabzeichen und 1 Mal des Cenarius zu Vargus auf Burg Cenarius in Silithus. Diese Aufgabe erfordert zum Abschluss auch einen ehrfürchtigen Ruf beim Zirkel des Cenarius.",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Cenarisches Gefechtsabzeichen,15"] = "ITEM",
@@ -57883,7 +58113,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Azuregos\' magisches Buch,Bringt Azu"] = {
     ["id"] = 8575,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "Ihr könnt kein einziges Wort in diesem Buch verstehen. Ihr wisst nicht einmal in welcher Sprache es geschrieben wurde!",
     ["obj"] = "Bringt Azuregos\' magisches Buch zu Narain Pfauentraum in Tanaris.",
@@ -57891,9 +58121,6 @@ pfDB["quests"]["deDE"] = {
     },
     ["end"] = {
       ["Narain Pfauentraum"] = "NPC",
-    },
-    ["item"] = {
-      ["Magisches Buch,1"] = "ITEM",
     },
   },
   ["Stewvul, ehemals allerbester Freund,Narain Pfa"] = {
@@ -58273,7 +58500,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Liebesbrief für Narain,Bringt Mer"] = {
     ["id"] = 8599,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "Es kommt nicht häufig vor, dass ich Besuch bekomme. Genaugenommen hatte ich das letzte Mal einen Besucher, als ich diesen liebreizenden, süßen Gnom nach dem Absturz mit seiner Flugmaschine gerettet habe.$B$B<Meridith starrt gedankenverloren ins Nichts.>$B$BKennt Ihr ihn? Narain? Narain Pfauentraum? Oh, es würde mir so viel bedeuten, wenn ihm jemand eine Nachricht von mir überbringen würde. Ich muss ihm mitteilen, was ich empfinde! Ich weiß, dass es Liebe ist! Ich weiß es einfach!$B$BKönntet Ihr Narain vielleicht eine Nachricht zustellen? Ich wäre Euch für immer zu Dank verpflichtet!",
     ["obj"] = "Bringt Meridiths Liebesbrief zu Narain Pfauentraum in Tanaris.",
@@ -58282,9 +58509,6 @@ pfDB["quests"]["deDE"] = {
     },
     ["end"] = {
       ["Narain Pfauentraum"] = "NPC",
-    },
-    ["item"] = {
-      ["Meridiths Liebesbrief,1"] = "ITEM",
     },
   },
   ["Die Horde braucht unverwüstliches Leder!,Bringt 10 "] = {
@@ -58585,9 +58809,8 @@ pfDB["quests"]["deDE"] = {
   },
   ["Der einzige Weg,Findet die"] = {
     ["id"] = 8620,
-    ["min"] = 55,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["pre"] = "Lockvogel!,Narain Pfa",
     ["log"] = "Ich hätte es wissen müssen. Mein Erzfeind, Doktor Weavil, hat wieder seine dreckigen Finger im Spiel! Jetzt, nach Eurem Versagen in Winterquell, hat Doktor Weavil mein Buch zerstört! Wie wollt Ihr jetzt die Welt retten, Held?$B$BDie Nachricht die ich erhalten habe, gab an, dass die einzig bekannte Kopie von \"Drachisch für Dummies: Band 2\" in 8 Teile zerrissen und im Wind zerstreut wurde! Solltet Ihr diese fehlenden Kapitel irgendwie finden können, dann verwendet diesen magischen Bucheinband, um sie wieder zusammen zu flicken. Kehrt dann zu mir zurück.",
     ["obj"] = "Findet die 8 verlorenen Kapitel von Drachisch für Dummies und vereint sie mit dem magischen Bucheinband. Bringt das vollständige Buch Drachisch für Dummies: Band 2 zu Narain Pfauentraum in Tanaris.",
     ["start"] = {
@@ -58595,9 +58818,6 @@ pfDB["quests"]["deDE"] = {
     },
     ["end"] = {
       ["Narain Pfauentraum"] = "NPC",
-    },
-    ["item"] = {
-      ["Drakonisch für Dummies: Band 2,1"] = "ITEM",
     },
   },
   ["Fußschützer des Sturmrufers,Bringt die"] = {
@@ -59829,6 +60049,7 @@ pfDB["quests"]["deDE"] = {
     ["min"] = 60,
     ["lvl"] = 60,
     ["pre"] = "Der Bund der Drachenschwärme,",
+    ["pre"] = "Der Bund der Drachenschwärme,",
     ["log"] = "Dies ist der Weg der Begleichung, Held. Würde ich heute getötet werden, dann würde ich für den gerechten Zweck sterben. Ihr müsst den grünen Szeptersplitter wiedererlangen. Ihr müsst Eranikus von der Besudelung, die die Alten Götter über ihn verhängt haben, reinigen.$B$BReist nach Darnassus. Ihr werdet einen meiner Agenten genau vor den Stadtmauern finden. Dieser Agent wird die Dinge für uns in Bewegung setzen und Tyrande über unsere Pläne informieren, ohne Hirschhaupt zu alarmieren.$B$B<Malfurion seufzt.>$B$BEin Bruch mit der in tausend Jahren geschaffenen Gunst...",
     ["obj"] = "Reist nach Teldrassil und sucht Malfurions Agenten irgendwo außerhalb der Stadtmauern von Darnassus auf.",
     ["start"] = {
@@ -60208,6 +60429,7 @@ pfDB["quests"]["deDE"] = {
     ["start"] = {
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Verzauberter Thoriumbarren,2"] = "ITEM",
@@ -60462,6 +60684,7 @@ pfDB["quests"]["deDE"] = {
     ["start"] = {
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Verzauberter Thoriumbarren,2"] = "ITEM",
@@ -60487,216 +60710,8 @@ pfDB["quests"]["deDE"] = {
       ["Logistikeinsatz X,1"] = "ITEM",
     },
   },
-  ["Ein Belobigungsabzeichen,"] = {
-    ["id"] = 8811,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
-    ["start"] = {
-      ["Offizier Mondlicht"] = "NPC",
-    },
-    ["end"] = {
-      ["Offizier Mondlicht"] = "NPC",
-    },
-    ["item"] = {
-      ["Belobigungsabzeichen der Allianz,1"] = "ITEM",
-    },
-  },
-  ["Ein Belobigungsabzeichen,"] = {
-    ["id"] = 8812,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
-    ["start"] = {
-      ["Offizier Packhäuser"] = "NPC",
-    },
-    ["end"] = {
-      ["Offizier Packhäuser"] = "NPC",
-    },
-    ["item"] = {
-      ["Belobigungsabzeichen der Allianz,1"] = "ITEM",
-    },
-  },
-  ["Ein Belobigungsabzeichen,"] = {
-    ["id"] = 8813,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
-    ["start"] = {
-      ["Offizier Eisenbart"] = "NPC",
-    },
-    ["end"] = {
-      ["Offizier Eisenbart"] = "NPC",
-    },
-    ["item"] = {
-      ["Belobigungsabzeichen der Allianz,1"] = "ITEM",
-    },
-  },
-  ["Ein Belobigungsabzeichen,"] = {
-    ["id"] = 8814,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
-    ["start"] = {
-      ["Offizier Maloof"] = "NPC",
-    },
-    ["end"] = {
-      ["Offizier Maloof"] = "NPC",
-    },
-    ["item"] = {
-      ["Belobigungsabzeichen der Allianz,1"] = "ITEM",
-    },
-  },
-  ["Ein Belobigungsabzeichen,"] = {
-    ["id"] = 8815,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "Die Horde braucht Euch!,Sprecht mi",
-    ["start"] = {
-      ["Offizier Rotklinge"] = "NPC",
-    },
-    ["end"] = {
-      ["Offizier Rotklinge"] = "NPC",
-    },
-    ["item"] = {
-      ["Belobigungsabzeichen der Horde,1"] = "ITEM",
-    },
-  },
-  ["Ein Belobigungsabzeichen,"] = {
-    ["id"] = 8816,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "Die Horde braucht Euch!,Sprecht mi",
-    ["start"] = {
-      ["Offizier Vu\'Shalay"] = "NPC",
-    },
-    ["end"] = {
-      ["Offizier Vu\'Shalay"] = "NPC",
-    },
-    ["item"] = {
-      ["Belobigungsabzeichen der Horde,1"] = "ITEM",
-    },
-  },
-  ["Ein Belobigungsabzeichen,"] = {
-    ["id"] = 8817,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "Die Horde braucht Euch!,Sprecht mi",
-    ["start"] = {
-      ["Offizier Gothena"] = "NPC",
-    },
-    ["end"] = {
-      ["Offizier Gothena"] = "NPC",
-    },
-    ["item"] = {
-      ["Belobigungsabzeichen der Horde,1"] = "ITEM",
-    },
-  },
-  ["Ein Belobigungsabzeichen,"] = {
-    ["id"] = 8818,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "Die Horde braucht Euch!,Sprecht mi",
-    ["start"] = {
-      ["Offizier Donnerschreiter"] = "NPC",
-    },
-    ["end"] = {
-      ["Offizier Donnerschreiter"] = "NPC",
-    },
-    ["item"] = {
-      ["Belobigungsabzeichen der Horde,1"] = "ITEM",
-    },
-  },
   ["Zehn Belobigungsabzeichen,"] = {
-    ["id"] = 8819,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
-    ["start"] = {
-      ["Offizier Mondlicht"] = "NPC",
-    },
-    ["end"] = {
-      ["Offizier Mondlicht"] = "NPC",
-    },
-    ["item"] = {
-      ["Belobigungsabzeichen der Allianz,10"] = "ITEM",
-    },
-  },
-  ["Zehn Belobigungsabzeichen,"] = {
-    ["id"] = 8820,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
-    ["start"] = {
-      ["Offizier Packhäuser"] = "NPC",
-    },
-    ["end"] = {
-      ["Offizier Packhäuser"] = "NPC",
-    },
-    ["item"] = {
-      ["Belobigungsabzeichen der Allianz,10"] = "ITEM",
-    },
-  },
-  ["Zehn Belobigungsabzeichen,"] = {
-    ["id"] = 8821,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
-    ["start"] = {
-      ["Offizier Eisenbart"] = "NPC",
-    },
-    ["end"] = {
-      ["Offizier Eisenbart"] = "NPC",
-    },
-    ["item"] = {
-      ["Belobigungsabzeichen der Allianz,10"] = "ITEM",
-    },
-  },
-  ["Zehn Belobigungsabzeichen,"] = {
-    ["id"] = 8822,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
-    ["start"] = {
-      ["Offizier Maloof"] = "NPC",
-    },
-    ["end"] = {
-      ["Offizier Maloof"] = "NPC",
-    },
-    ["item"] = {
-      ["Belobigungsabzeichen der Allianz,10"] = "ITEM",
-    },
-  },
-  ["Zehn Belobigungsabzeichen,"] = {
-    ["id"] = 8823,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "Die Horde braucht Euch!,Sprecht mi",
-    ["start"] = {
-      ["Offizier Rotklinge"] = "NPC",
-    },
-    ["end"] = {
-      ["Offizier Rotklinge"] = "NPC",
-    },
-    ["item"] = {
-      ["Belobigungsabzeichen der Horde,10"] = "ITEM",
-    },
-  },
-  ["Zehn Belobigungsabzeichen,"] = {
-    ["id"] = 8824,
+    ["id"] = 8826,
     ["min"] = 1,
     ["lvl"] = 60,
     ["race"] = 178,
@@ -60728,7 +60743,7 @@ pfDB["quests"]["deDE"] = {
     },
   },
   ["Zehn Belobigungsabzeichen,"] = {
-    ["id"] = 8826,
+    ["id"] = 8824,
     ["min"] = 1,
     ["lvl"] = 60,
     ["race"] = 178,
@@ -60741,6 +60756,214 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Belobigungsabzeichen der Horde,10"] = "ITEM",
+    },
+  },
+  ["Zehn Belobigungsabzeichen,"] = {
+    ["id"] = 8823,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "Die Horde braucht Euch!,Sprecht mi",
+    ["start"] = {
+      ["Offizier Rotklinge"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Rotklinge"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Horde,10"] = "ITEM",
+    },
+  },
+  ["Zehn Belobigungsabzeichen,"] = {
+    ["id"] = 8822,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
+    ["start"] = {
+      ["Offizier Packhäuser"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Packhäuser"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,10"] = "ITEM",
+    },
+  },
+  ["Zehn Belobigungsabzeichen,"] = {
+    ["id"] = 8821,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
+    ["start"] = {
+      ["Offizier Mondlicht"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Mondlicht"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,10"] = "ITEM",
+    },
+  },
+  ["Zehn Belobigungsabzeichen,"] = {
+    ["id"] = 8820,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
+    ["start"] = {
+      ["Offizier Eisenbart"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Eisenbart"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,10"] = "ITEM",
+    },
+  },
+  ["Zehn Belobigungsabzeichen,"] = {
+    ["id"] = 8819,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
+    ["start"] = {
+      ["Offizier Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,10"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8818,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "Die Horde braucht Euch!,Sprecht mi",
+    ["start"] = {
+      ["Offizier Vu\'Shalay"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Vu\'Shalay"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Horde,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8817,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "Die Horde braucht Euch!,Sprecht mi",
+    ["start"] = {
+      ["Offizier Donnerschreiter"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Donnerschreiter"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Horde,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8816,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "Die Horde braucht Euch!,Sprecht mi",
+    ["start"] = {
+      ["Offizier Gothena"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Gothena"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Horde,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8815,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "Die Horde braucht Euch!,Sprecht mi",
+    ["start"] = {
+      ["Offizier Rotklinge"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Rotklinge"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Horde,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8814,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
+    ["start"] = {
+      ["Offizier Packhäuser"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Packhäuser"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8813,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
+    ["start"] = {
+      ["Offizier Mondlicht"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Mondlicht"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8811,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
+    ["start"] = {
+      ["Offizier Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8812,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "Die Allianz braucht Euch!,Sprecht mi",
+    ["start"] = {
+      ["Offizier Eisenbart"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Eisenbart"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,1"] = "ITEM",
     },
   },
   ["Die ultimative Täuschung,Bringt 1 S"] = {
@@ -61067,8 +61290,8 @@ pfDB["quests"]["deDE"] = {
   },
   ["Neujahrsfeier!,Bringt die"] = {
     ["id"] = 8860,
-    ["min"] = 60,
-    ["lvl"] = 70,
+    ["min"] = 1,
+    ["lvl"] = 60,
     ["race"] = 77,
     ["log"] = "In Sturmwind wird das neue Jahr ganz groß gefeiert! Den ganzen Tag lang gibt es kostenlosen Hochprozentigen und nachts ein fantastisches Feuerwerk! Das wird sicher ein Riesenspaß... allerdings findet heute auch in Beutebucht eine Neujahrsfeier statt. Ich wette, dort ist sogar noch mehr los!$B$BEgal! Jedenfalls braucht Gastwirtin Allison in Sturmwind eine Ladung Kokelwälder Festtagsspeisen, um alle Partylöwen satt in das neue Jahr zu bringen. Würdet Ihr mir den Gefallen tun und die Vorräte für mich abliefern?$B$BDanke, $n! Ihr findet Gastwirtin Allison in der Güldenen Rose, drüben im Handelsdistrikt von Sturmwind.",
     ["obj"] = "Bringt die Vorräte von Kokelwälder zu Gastwirtin Allison in Sturmwind.",
@@ -61084,8 +61307,8 @@ pfDB["quests"]["deDE"] = {
   },
   ["Neujahrsfeier!,Bringt die"] = {
     ["id"] = 8861,
-    ["min"] = 60,
-    ["lvl"] = 70,
+    ["min"] = 1,
+    ["lvl"] = 60,
     ["race"] = 178,
     ["log"] = "In Donnerfels wird das neue Jahr ganz groß gefeiert! Den ganzen Tag lang gibt es kostenlosen Hochprozentigen und nachts ein fantastisches Feuerwerk!$B$BDas wird sicher ein Riesenspaß... allerdings findet auch in Beutebucht eine Neujahrsfeier statt. Ich wette, dort ist sogar noch mehr los!$B$BEgal! Jedenfalls braucht Gastwirtin Pala eine Ladung Kokelwälder Festtagsspeisen, um alle Partylöwen satt in das neue Jahr zu bringen. Würdet Ihr mir den Gefallen tun und die Vorräte für mich abliefern?$B$BDanke, $n! Ihr findet Gastwirtin Pala in der Taverne nahe der Brücke zur Anhöhe der Jäger.",
     ["obj"] = "Bringt die Vorräte von Kokelwälder zu Gastwirtin Pala in Donnerfels.",
@@ -61384,6 +61607,7 @@ pfDB["quests"]["deDE"] = {
     ["item"] = {
       ["Blutprobe aus Winterquell,15"] = "ITEM",
       ["Bindungen des Bestienjägers,1"] = "ITEM",
+      ["Bindungen des Bestienjägers,1"] = "ITEM",
     },
   },
   ["Ein aufrichtiges Angebot,Sammelt 15"] = {
@@ -61402,6 +61626,7 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Blutprobe aus Winterquell,15"] = "ITEM",
+      ["Bindungen des Magisters,1"] = "ITEM",
       ["Bindungen des Magisters,1"] = "ITEM",
     },
   },
@@ -61440,6 +61665,7 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Blutprobe aus Winterquell,15"] = "ITEM",
+      ["Armschienen des Gläubigen,1"] = "ITEM",
       ["Armschienen des Gläubigen,1"] = "ITEM",
     },
   },
@@ -61536,6 +61762,7 @@ pfDB["quests"]["deDE"] = {
     ["item"] = {
       ["Giftprobe aus Silithus,15"] = "ITEM",
       ["Bindungen des Bestienjägers,1"] = "ITEM",
+      ["Bindungen des Bestienjägers,1"] = "ITEM",
     },
   },
   ["Ein aufrichtiges Angebot,Sammelt 15"] = {
@@ -61555,6 +61782,7 @@ pfDB["quests"]["deDE"] = {
     ["item"] = {
       ["Giftprobe aus Silithus,15"] = "ITEM",
       ["Bindungen des Magisters,1"] = "ITEM",
+      ["Bindungen des Magisters,1"] = "ITEM",
     },
   },
   ["Ein aufrichtiges Angebot,Sammelt 15"] = {
@@ -61573,6 +61801,7 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Giftprobe aus Silithus,15"] = "ITEM",
+      ["Armschienen des Gläubigen,1"] = "ITEM",
       ["Armschienen des Gläubigen,1"] = "ITEM",
     },
   },
@@ -61611,6 +61840,8 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Giftprobe aus Silithus,15"] = "ITEM",
+      ["Bindungen der Elemente,1"] = "ITEM",
+      ["Bindungen der Elemente,1"] = "ITEM",
       ["Bindungen der Elemente,1"] = "ITEM",
     },
   },
@@ -61841,6 +62072,8 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Gürtel des Bestienjägers,1"] = "ITEM",
+      ["Gürtel des Bestienjägers,1"] = "ITEM",
+      ["Handschuhe des Bestienjägers,1"] = "ITEM",
       ["Handschuhe des Bestienjägers,1"] = "ITEM",
     },
   },
@@ -61860,6 +62093,8 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Gürtel des Magisters,1"] = "ITEM",
+      ["Gürtel des Magisters,1"] = "ITEM",
+      ["Handschuhe des Magisters,1"] = "ITEM",
       ["Handschuhe des Magisters,1"] = "ITEM",
     },
   },
@@ -61898,6 +62133,9 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Gürtel des Gläubigen,1"] = "ITEM",
+      ["Gürtel des Gläubigen,1"] = "ITEM",
+      ["Handschuhe des Gläubigen,1"] = "ITEM",
+      ["Handschuhe des Gläubigen,1"] = "ITEM",
       ["Handschuhe des Gläubigen,1"] = "ITEM",
     },
   },
@@ -61937,6 +62175,7 @@ pfDB["quests"]["deDE"] = {
     ["item"] = {
       ["Gürtel der Furcht,1"] = "ITEM",
       ["Wickeltücher der Furcht,1"] = "ITEM",
+      ["Wickeltücher der Furcht,1"] = "ITEM",
     },
   },
   ["Die angemessene Entlohnung,Bringt Del"] = {
@@ -61974,6 +62213,8 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Gürtel des Bestienjägers,1"] = "ITEM",
+      ["Gürtel des Bestienjägers,1"] = "ITEM",
+      ["Handschuhe des Bestienjägers,1"] = "ITEM",
       ["Handschuhe des Bestienjägers,1"] = "ITEM",
     },
   },
@@ -61993,6 +62234,8 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Gürtel des Magisters,1"] = "ITEM",
+      ["Gürtel des Magisters,1"] = "ITEM",
+      ["Handschuhe des Magisters,1"] = "ITEM",
       ["Handschuhe des Magisters,1"] = "ITEM",
     },
   },
@@ -62012,6 +62255,9 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Gürtel des Gläubigen,1"] = "ITEM",
+      ["Gürtel des Gläubigen,1"] = "ITEM",
+      ["Handschuhe des Gläubigen,1"] = "ITEM",
+      ["Handschuhe des Gläubigen,1"] = "ITEM",
       ["Handschuhe des Gläubigen,1"] = "ITEM",
     },
   },
@@ -62050,6 +62296,10 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Kordel der Elemente,1"] = "ITEM",
+      ["Kordel der Elemente,1"] = "ITEM",
+      ["Kordel der Elemente,1"] = "ITEM",
+      ["Stulpen der Elemente,1"] = "ITEM",
+      ["Stulpen der Elemente,1"] = "ITEM",
       ["Stulpen der Elemente,1"] = "ITEM",
     },
   },
@@ -62069,6 +62319,7 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Gürtel der Furcht,1"] = "ITEM",
+      ["Wickeltücher der Furcht,1"] = "ITEM",
       ["Wickeltücher der Furcht,1"] = "ITEM",
     },
   },
@@ -62138,6 +62389,8 @@ pfDB["quests"]["deDE"] = {
       ["Dunkeleisenbarren,3"] = "ITEM",
       ["Verzaubertes Leder,20"] = "ITEM",
       ["Mondstoff,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,4"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,4"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,4"] = "ITEM",
     },
   },
@@ -62213,6 +62466,7 @@ pfDB["quests"]["deDE"] = {
       ["Stiefel des Wildherzens,1"] = "ITEM",
       ["Kilt des Wildherzens,1"] = "ITEM",
       ["Schiftung des Wildherzens,1"] = "ITEM",
+      ["Schiftung des Wildherzens,1"] = "ITEM",
     },
   },
   ["Anthions Abschiedsworte,Kehrt mit "] = {
@@ -62232,7 +62486,10 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Stiefel des Bestienjägers,1"] = "ITEM",
+      ["Stiefel des Bestienjägers,1"] = "ITEM",
       ["Hose des Bestienjägers,1"] = "ITEM",
+      ["Hose des Bestienjägers,1"] = "ITEM",
+      ["Mantel des Bestienjägers,1"] = "ITEM",
       ["Mantel des Bestienjägers,1"] = "ITEM",
     },
   },
@@ -62254,6 +62511,8 @@ pfDB["quests"]["deDE"] = {
     ["item"] = {
       ["Stiefel des Magisters,1"] = "ITEM",
       ["Gamaschen des Magisters,1"] = "ITEM",
+      ["Gamaschen des Magisters,1"] = "ITEM",
+      ["Mantel des Magisters,1"] = "ITEM",
       ["Mantel des Magisters,1"] = "ITEM",
     },
   },
@@ -62295,7 +62554,11 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Sandalen des Gläubigen,1"] = "ITEM",
+      ["Sandalen des Gläubigen,1"] = "ITEM",
       ["Rock des Gläubigen,1"] = "ITEM",
+      ["Rock des Gläubigen,1"] = "ITEM",
+      ["Rock des Gläubigen,1"] = "ITEM",
+      ["Mantel des Gläubigen,1"] = "ITEM",
       ["Mantel des Gläubigen,1"] = "ITEM",
     },
   },
@@ -62315,6 +62578,7 @@ pfDB["quests"]["deDE"] = {
       ["Deliana"] = "NPC",
     },
     ["item"] = {
+      ["Stiefel der Schattenkunst,1"] = "ITEM",
       ["Stiefel der Schattenkunst,1"] = "ITEM",
       ["Hose der Schattenkunst,1"] = "ITEM",
       ["Schiftung der Schattenkunst,1"] = "ITEM",
@@ -62337,7 +62601,12 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Stiefel der Elemente,1"] = "ITEM",
+      ["Stiefel der Elemente,1"] = "ITEM",
+      ["Stiefel der Elemente,1"] = "ITEM",
       ["Kilt der Elemente,1"] = "ITEM",
+      ["Kilt der Elemente,1"] = "ITEM",
+      ["Kilt der Elemente,1"] = "ITEM",
+      ["Schulterstücke der Elemente,1"] = "ITEM",
       ["Schulterstücke der Elemente,1"] = "ITEM",
     },
   },
@@ -62358,6 +62627,7 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Sandalen der Furcht,1"] = "ITEM",
+      ["Gamaschen der Furcht,1"] = "ITEM",
       ["Gamaschen der Furcht,1"] = "ITEM",
       ["Mantel der Furcht,1"] = "ITEM",
     },
@@ -62954,6 +63224,7 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Gugel des Wildherzens,1"] = "ITEM",
+      ["Gugel des Wildherzens,1"] = "ITEM",
       ["Weste des Wildherzens,1"] = "ITEM",
     },
   },
@@ -62974,6 +63245,8 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Kappe des Bestienjägers,1"] = "ITEM",
+      ["Kappe des Bestienjägers,1"] = "ITEM",
+      ["Tunika des Bestienjägers,1"] = "ITEM",
       ["Tunika des Bestienjägers,1"] = "ITEM",
     },
   },
@@ -62994,6 +63267,9 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Krone des Magisters,1"] = "ITEM",
+      ["Krone des Magisters,1"] = "ITEM",
+      ["Krone des Magisters,1"] = "ITEM",
+      ["Roben des Magisters,1"] = "ITEM",
       ["Roben des Magisters,1"] = "ITEM",
     },
   },
@@ -63013,6 +63289,7 @@ pfDB["quests"]["deDE"] = {
       ["Deliana"] = "NPC",
     },
     ["item"] = {
+      ["Helm des Lichts,1"] = "ITEM",
       ["Helm des Lichts,1"] = "ITEM",
       ["Brustplatte des Lichts,1"] = "ITEM",
     },
@@ -63034,6 +63311,8 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Krone des Gläubigen,1"] = "ITEM",
+      ["Krone des Gläubigen,1"] = "ITEM",
+      ["Robe des Gläubigen,1"] = "ITEM",
       ["Robe des Gläubigen,1"] = "ITEM",
     },
   },
@@ -63074,6 +63353,7 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Maske der Furcht,1"] = "ITEM",
+      ["Maske der Furcht,1"] = "ITEM",
       ["Robe der Furcht,1"] = "ITEM",
     },
   },
@@ -63093,6 +63373,7 @@ pfDB["quests"]["deDE"] = {
       ["Deliana"] = "NPC",
     },
     ["item"] = {
+      ["Helm der Ehre,1"] = "ITEM",
       ["Helm der Ehre,1"] = "ITEM",
       ["Brustplatte der Ehre,1"] = "ITEM",
     },
@@ -63114,6 +63395,7 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Gugel des Wildherzens,1"] = "ITEM",
+      ["Gugel des Wildherzens,1"] = "ITEM",
       ["Weste des Wildherzens,1"] = "ITEM",
     },
   },
@@ -63134,6 +63416,8 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Kappe des Bestienjägers,1"] = "ITEM",
+      ["Kappe des Bestienjägers,1"] = "ITEM",
+      ["Tunika des Bestienjägers,1"] = "ITEM",
       ["Tunika des Bestienjägers,1"] = "ITEM",
     },
   },
@@ -63154,6 +63438,8 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Krone des Gläubigen,1"] = "ITEM",
+      ["Krone des Gläubigen,1"] = "ITEM",
+      ["Robe des Gläubigen,1"] = "ITEM",
       ["Robe des Gläubigen,1"] = "ITEM",
     },
   },
@@ -63194,6 +63480,9 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Helmkappe der Elemente,1"] = "ITEM",
+      ["Helmkappe der Elemente,1"] = "ITEM",
+      ["Weste der Elemente,1"] = "ITEM",
+      ["Weste der Elemente,1"] = "ITEM",
       ["Weste der Elemente,1"] = "ITEM",
     },
   },
@@ -63213,6 +63502,7 @@ pfDB["quests"]["deDE"] = {
       ["Mokvar"] = "NPC",
     },
     ["item"] = {
+      ["Maske der Furcht,1"] = "ITEM",
       ["Maske der Furcht,1"] = "ITEM",
       ["Robe der Furcht,1"] = "ITEM",
     },
@@ -63234,6 +63524,7 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Helm der Ehre,1"] = "ITEM",
+      ["Helm der Ehre,1"] = "ITEM",
       ["Brustplatte der Ehre,1"] = "ITEM",
     },
   },
@@ -63254,6 +63545,9 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Krone des Magisters,1"] = "ITEM",
+      ["Krone des Magisters,1"] = "ITEM",
+      ["Krone des Magisters,1"] = "ITEM",
+      ["Roben des Magisters,1"] = "ITEM",
       ["Roben des Magisters,1"] = "ITEM",
     },
   },
@@ -63293,6 +63587,7 @@ pfDB["quests"]["deDE"] = {
       ["Stiefel des Wildherzens,1"] = "ITEM",
       ["Kilt des Wildherzens,1"] = "ITEM",
       ["Schiftung des Wildherzens,1"] = "ITEM",
+      ["Schiftung des Wildherzens,1"] = "ITEM",
     },
   },
   ["Anthions Abschiedsworte,Kehrt mit "] = {
@@ -63312,7 +63607,10 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Stiefel des Bestienjägers,1"] = "ITEM",
+      ["Stiefel des Bestienjägers,1"] = "ITEM",
       ["Hose des Bestienjägers,1"] = "ITEM",
+      ["Hose des Bestienjägers,1"] = "ITEM",
+      ["Mantel des Bestienjägers,1"] = "ITEM",
       ["Mantel des Bestienjägers,1"] = "ITEM",
     },
   },
@@ -63334,6 +63632,8 @@ pfDB["quests"]["deDE"] = {
     ["item"] = {
       ["Stiefel des Magisters,1"] = "ITEM",
       ["Gamaschen des Magisters,1"] = "ITEM",
+      ["Gamaschen des Magisters,1"] = "ITEM",
+      ["Mantel des Magisters,1"] = "ITEM",
       ["Mantel des Magisters,1"] = "ITEM",
     },
   },
@@ -63354,7 +63654,11 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Sandalen des Gläubigen,1"] = "ITEM",
+      ["Sandalen des Gläubigen,1"] = "ITEM",
       ["Rock des Gläubigen,1"] = "ITEM",
+      ["Rock des Gläubigen,1"] = "ITEM",
+      ["Rock des Gläubigen,1"] = "ITEM",
+      ["Mantel des Gläubigen,1"] = "ITEM",
       ["Mantel des Gläubigen,1"] = "ITEM",
     },
   },
@@ -63374,6 +63678,7 @@ pfDB["quests"]["deDE"] = {
       ["Mokvar"] = "NPC",
     },
     ["item"] = {
+      ["Stiefel der Schattenkunst,1"] = "ITEM",
       ["Stiefel der Schattenkunst,1"] = "ITEM",
       ["Hose der Schattenkunst,1"] = "ITEM",
       ["Schiftung der Schattenkunst,1"] = "ITEM",
@@ -63396,6 +63701,7 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Sandalen der Furcht,1"] = "ITEM",
+      ["Gamaschen der Furcht,1"] = "ITEM",
       ["Gamaschen der Furcht,1"] = "ITEM",
       ["Mantel der Furcht,1"] = "ITEM",
     },
@@ -63488,6 +63794,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 9033,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Die Zitadelle des Schreckens - Naxxramas,Erzmagieri",
     ["log"] = "Fünf Jahre sind seit dem letzten Krieg vergangen...$B$BZehntausende mussten dabei ihr Leben lassen - und für was? Die Bedrohung wurde niemals gänzlich ausgelöscht.$B$BJetzt verbreitet der Lichkönig erneut Angst und Schrecken... sein getreuer Jünger, Kel\'Thuzad, zieht seine Truppen für einen weiteren Angriff auf unser Land zusammen.$B$BWir werden es nicht zulassen! Beweist Euer Engagement. Zeigt, dass Ihr gewillt seid, Leib und Leben zu riskieren, um diesen Wahnsinn aufzuhalten! Die vereinigte Macht der Argentumdämmerung und des Kreuzzugs wird Euch mit allen Mitteln zur Seite stehen.$B$BGeht nach Naxxramas und zerstört die Geißel...",
     ["obj"] = "Kommandant Eligor Morgenbringer bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern möchte, dass Ihr 5 lebende Monstrositäten, 5 Steinhautgargoyles, 8 Hauptmänner der Todesritter und 3 Giftpirscher tötet.",
     ["start"] = {
@@ -63543,6 +63850,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Plattenstück,20"] = "ITEM",
       ["Arkanitbarren,4"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
   ["Helm des Schreckenspanzers,Korfax bei"] = {
@@ -63585,6 +63894,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Plattenstück,12"] = "ITEM",
       ["Arkanitbarren,2"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
   ["Sabatons des Schreckenspanzers,Korfax bei"] = {
@@ -63605,6 +63916,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihte Sabatons,1"] = "ITEM",
       ["Kampfzerschlissenes Plattenstück,12"] = "ITEM",
       ["Arkanitbarren,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
@@ -63627,6 +63940,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Plattenstück,8"] = "ITEM",
       ["Arkanitbarren,1"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
     },
   },
   ["Taillenschutz des Schreckenspanzers,Korfax bei"] = {
@@ -63647,6 +63962,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihter Taillenschutz,1"] = "ITEM",
       ["Kampfzerschlissenes Plattenstück,8"] = "ITEM",
       ["Arkanitbarren,1"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
     },
   },
@@ -63690,6 +64007,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Plattenstück,25"] = "ITEM",
       ["Arkanitbarren,4"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
   ["Beinschützer der Erlösung,Kommandant"] = {
@@ -63731,6 +64050,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihtes Kopfstück,1"] = "ITEM",
       ["Kampfzerschlissenes Plattenstück,15"] = "ITEM",
       ["Arkanitbarren,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
     },
   },
@@ -63774,6 +64095,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Plattenstück,12"] = "ITEM",
       ["Arkanitbarren,2"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
   ["Handschützer der Erlösung,Kommandant"] = {
@@ -63794,6 +64117,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihte Handschützer,1"] = "ITEM",
       ["Kampfzerschlissenes Plattenstück,8"] = "ITEM",
       ["Arkanitbarren,1"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
     },
   },
@@ -63836,6 +64161,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihte Handgelenksschützer,1"] = "ITEM",
       ["Kampfzerschlissenes Plattenstück,6"] = "ITEM",
       ["Arkanitbarren,1"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
     },
   },
@@ -63910,6 +64237,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Kettenstück,25"] = "ITEM",
       ["Arkanitbarren,4"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
   ["Beinschützer des Gruftpirschers,Jäger Leo"] = {
@@ -63930,6 +64259,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihte Beinschützer,1"] = "ITEM",
       ["Kampfzerschlissenes Kettenstück,20"] = "ITEM",
       ["Arkanitbarren,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
     },
   },
@@ -63973,6 +64304,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Kettenstück,12"] = "ITEM",
       ["Arkanitbarren,2"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
   ["Stiefel des Gruftpirschers,Jäger Leo"] = {
@@ -64015,6 +64348,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Kettenstück,8"] = "ITEM",
       ["Arkanitbarren,1"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
     },
   },
   ["Gurt des Gruftpirschers,Jäger Leo"] = {
@@ -64056,6 +64391,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihte Handgelenksschützer,1"] = "ITEM",
       ["Kampfzerschlissenes Kettenstück,6"] = "ITEM",
       ["Arkanitbarren,1"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
     },
   },
@@ -64100,6 +64437,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Kettenstück,25"] = "ITEM",
       ["Arkanitbarren,4"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
   ["Beinschützer des Erdspalters,Rimblat Er"] = {
@@ -64120,6 +64459,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihte Beinschützer,1"] = "ITEM",
       ["Kampfzerschlissenes Kettenstück,20"] = "ITEM",
       ["Arkanitbarren,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
     },
   },
@@ -64205,6 +64546,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Kettenstück,8"] = "ITEM",
       ["Arkanitbarren,1"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
     },
   },
   ["Gurt des Erdspalters,Rimblat Er"] = {
@@ -64247,6 +64590,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Kettenstück,6"] = "ITEM",
       ["Arkanitbarren,1"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
     },
   },
   ["Brustplatte der Knochensense,Rohan der "] = {
@@ -64268,12 +64613,15 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Lederstück,25"] = "ITEM",
       ["Arkanitbarren,2"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,6"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,6"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,6"] = "ITEM",
     },
   },
   ["Beinplatten der Knochensense,Rohan der "] = {
     ["id"] = 9078,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["class"] = 8,
     ["pre"] = "Echo des Krieges,Kommandant",
     ["log"] = "Wenn Ihr etwas von der Knochensensenrüstung wollt, dann werdet Ihr die Materialien dafür auftreiben müssen.$B$BGeht nach Naxxramas, der schwebenden Metropole des Todes, hier oben im Himmel, und sucht nach entweihter Rüstung sowie kampfzerschlissenen Rüstungsstücken. Bringt alles mitsamt der Materialien zum Zusammenfügen zurück und Ihr bekommt Eure Knochensensenrüstung. Oh, Ihr werdet mich natürlich auch für meine Mühen entschädigen müssen... Ich stelle die Knochen zur Verfügung.",
     ["obj"] = "Rohan der Assassine bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern wird für Euch Beinplatten der Knochensense anfertigen, wenn Ihr ihm folgende Gegenstände bringt: 1 Paar entweihte Beinplatten, 20 kampfzerschlissene Lederstücke, 1 Arkanitbarren, 8 geschmeidige unverwüstliche Bälge und 100 Goldstücke.",
@@ -64287,6 +64635,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihte Beinplatten,1"] = "ITEM",
       ["Kampfzerschlissenes Lederstück,20"] = "ITEM",
       ["Arkanitbarren,1"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,8"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,8"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,8"] = "ITEM",
     },
   },
@@ -64307,6 +64657,8 @@ pfDB["quests"]["deDE"] = {
     ["item"] = {
       ["Entweihter Helm,1"] = "ITEM",
       ["Kampfzerschlissenes Lederstück,15"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,8"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,8"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,8"] = "ITEM",
       ["Nexuskristall,1"] = "ITEM",
     },
@@ -64329,6 +64681,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihte Schulterstücke,1"] = "ITEM",
       ["Kampfzerschlissenes Lederstück,12"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
       ["Nexuskristall,1"] = "ITEM",
     },
   },
@@ -64349,6 +64703,8 @@ pfDB["quests"]["deDE"] = {
     ["item"] = {
       ["Entweihte Sabatons,1"] = "ITEM",
       ["Kampfzerschlissenes Lederstück,12"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
       ["Nexuskristall,2"] = "ITEM",
     },
@@ -64372,6 +64728,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Lederstück,8"] = "ITEM",
       ["Arkanitbarren,1"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
     },
   },
   ["Taillenschutz der Knochensense,Rohan der "] = {
@@ -64391,6 +64749,8 @@ pfDB["quests"]["deDE"] = {
     ["item"] = {
       ["Entweihter Taillenschutz,1"] = "ITEM",
       ["Kampfzerschlissenes Lederstück,8"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
       ["Nexuskristall,1"] = "ITEM",
     },
@@ -64413,6 +64773,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihte Armschienen,1"] = "ITEM",
       ["Kampfzerschlissenes Lederstück,6"] = "ITEM",
       ["Arkanitbarren,1"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
     },
   },
@@ -64451,6 +64813,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihte Tunika,1"] = "ITEM",
       ["Kampfzerschlissenes Lederstück,25"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,6"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,6"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,6"] = "ITEM",
       ["Nexuskristall,2"] = "ITEM",
     },
   },
@@ -64471,6 +64835,8 @@ pfDB["quests"]["deDE"] = {
     ["item"] = {
       ["Entweihte Beinschützer,1"] = "ITEM",
       ["Kampfzerschlissenes Lederstück,20"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,8"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,8"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,8"] = "ITEM",
       ["Nexuskristall,1"] = "ITEM",
     },
@@ -64493,6 +64859,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihtes Kopfstück,1"] = "ITEM",
       ["Kampfzerschlissenes Lederstück,15"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,6"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,6"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,6"] = "ITEM",
       ["Nexuskristall,2"] = "ITEM",
     },
   },
@@ -64513,6 +64881,8 @@ pfDB["quests"]["deDE"] = {
     ["item"] = {
       ["Entweihte Schiftung,1"] = "ITEM",
       ["Kampfzerschlissenes Lederstück,12"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
       ["Nexuskristall,1"] = "ITEM",
     },
@@ -64536,6 +64906,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Lederstück,12"] = "ITEM",
       ["Mondstoff,3"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
     },
   },
   ["Handschützer des Traumwandlers,Rayne bei "] = {
@@ -64555,6 +64927,8 @@ pfDB["quests"]["deDE"] = {
     ["item"] = {
       ["Entweihte Handschützer,1"] = "ITEM",
       ["Kampfzerschlissenes Lederstück,8"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
       ["Nexuskristall,1"] = "ITEM",
     },
@@ -64578,6 +64952,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Lederstück,8"] = "ITEM",
       ["Mondstoff,3"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
     },
   },
   ["Handgelenksschützer des Traumwandlers,Rayne bei "] = {
@@ -64598,6 +64974,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihte Handgelenksschützer,1"] = "ITEM",
       ["Kampfzerschlissenes Lederstück,6"] = "ITEM",
       ["Arkankristall,1"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,2"] = "ITEM",
     },
   },
@@ -64698,6 +65076,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Stoffstück,12"] = "ITEM",
       ["Mondstoff,2"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
   ["Frostfeuersandalen,Erzmagieri"] = {
@@ -64718,6 +65098,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihte Sandalen,1"] = "ITEM",
       ["Kampfzerschlissenes Stoffstück,12"] = "ITEM",
       ["Mondstoff,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
@@ -64865,6 +65247,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Stoffstück,12"] = "ITEM",
       ["Mondstoff,2"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
   ["Sandalen des verseuchten Herzens,Mataus der"] = {
@@ -64885,6 +65269,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihte Sandalen,1"] = "ITEM",
       ["Kampfzerschlissenes Stoffstück,12"] = "ITEM",
       ["Mondstoff,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
@@ -65032,6 +65418,8 @@ pfDB["quests"]["deDE"] = {
       ["Kampfzerschlissenes Stoffstück,12"] = "ITEM",
       ["Mondstoff,2"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
   ["Sandalen des Glaubens,Vater Inig"] = {
@@ -65052,6 +65440,8 @@ pfDB["quests"]["deDE"] = {
       ["Entweihte Sandalen,1"] = "ITEM",
       ["Kampfzerschlissenes Stoffstück,12"] = "ITEM",
       ["Mondstoff,2"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
@@ -65990,6 +66380,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 9232,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Echo des Krieges,Kommandant",
     ["log"] = "Ihr haltet Euch für einen Helden der Dämmerung, ja? Ich habe gesehen, wie unsere besten Soldaten von Kel\'Thuzads Gefolgsleuten überrannt wurden. Wie könnte jemand, der so ahnungslos ist wie Ihr, in Naxxramas bestehen?$B$B<Wilhelm seufzt.>$B$BPah, was für eine Wahl habe ich denn? Ihr seid das Beste, das ich zur Verfügung habe; warum sollte ich Euch nicht helfen?$B$BOmarion hat mir einen Plan hinterlassen. Es ist das Einzige, das ich kann... Ich kann ein paar Varianten dieser Hosen herstellen, Ihr müsst mich nur mit den Materialien versorgen.",
     ["obj"] = "Handwerker Wilhelm in der Kapelle des Hoffnungsvollen Lichts möchte, dass Ihr ihm 2 gefrorene Runen, 2 Essenzen des Wassers, 2 blaue Saphire und 30 Goldstücke bringt.",
     ["start"] = {
@@ -66023,6 +66414,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 9234,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarions Leitfaden,Bringt Oma",
     ["log"] = "Dank Euch und Omarion, möge er in Frieden ruhen, bin ich nun im Stande, Eisfluchstulpen herzustellen. Ihr müsst mir lediglich die Materialien dafür bringen und eine geringe Handwerksgebühr zahlen.",
     ["obj"] = "Handwerker Wilhelm bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern möchte 5 gefrorene Runen, 12 Thoriumbarren, 2 Arkanitbarren, 2 Essenzen des Wassers und 200 Gold.",
     ["start"] = {
@@ -66042,6 +66434,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 9235,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarions Leitfaden,Bringt Oma",
     ["log"] = "Dank Euch und Omarion (Möge er in Frieden ruhen), bin ich nun im Stande, Eisflucharmschienen herzustellen. Ihr müsst mir lediglich die Materialien dafür bringen und eine geringe Handwerksgebühr zahlen.",
     ["obj"] = "Handwerker Wilhelm bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern möchte 4 gefrorene Runen, 12 Thoriumbarren, 2 Arkanitbarren, 2 Essenzen des Wassers und 200 Gold.",
     ["start"] = {
@@ -66061,6 +66454,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 9236,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarions Leitfaden,Bringt Oma",
     ["log"] = "Dank Euch und Omarion (Möge er in Frieden ruhen), bin ich nun im Stande, eine Eisfluchbrustplatte herzustellen. Ihr müsst mir lediglich die Materialien dafür bringen und eine geringe Handwerksgebühr zahlen.",
     ["obj"] = "Handwerker Wilhelm bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern möchte 8 gefrorene Runen, 16 Thoriumbarren, 2 Arkanitbarren, 4 Essenzen des Wassers und 300 Gold. Euer Ruf bei der Argentumdämmerung muss außerdem ehrfürchtig sein.",
     ["start"] = {
@@ -66080,6 +66474,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 9237,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarions Leitfaden,Bringt Oma",
     ["log"] = "Dank Euch und Omarion, möge er in Frieden ruhen, bin ich nun im Stande, einen Gletscherumhang herzustellen. Ihr müsst mir lediglich die Materialien dafür bringen und eine geringe Handwerksgebühr zahlen.",
     ["obj"] = "Handwerker Wilhelm bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern möchte 5 gefrorene Runen, 4 Runenstoffballen, 2 Essenzen des Wassers, 4 Einheiten Eisenweberseide und 200 Gold. Euer Ruf bei der Argentumdämmerung muss außerdem ehrfürchtig sein.",
     ["start"] = {
@@ -66099,6 +66494,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 9238,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarions Leitfaden,Bringt Oma",
     ["log"] = "Dank Euch und Omarion, möge er in Frieden ruhen, bin ich nun im Stande, einen Gletscherhandschutz herzustellen. Ihr müsst mir lediglich die Materialien dafür bringen und eine geringe Handwerksgebühr zahlen.",
     ["obj"] = "Handwerker Wilhelm bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern möchte 4 gefrorene Runen, 2 Runenstoffballen, 2 Essenzen des Wassers, 2 Einheiten Eisenweberseide und 200 Gold.",
     ["start"] = {
@@ -66118,6 +66514,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 9239,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarions Leitfaden,Bringt Oma",
     ["log"] = "Dank Euch und Omarion, möge er in Frieden ruhen, bin ich nun im Stande, Gletscherhandschuhe herzustellen. Ihr müsst mir lediglich die Materialien dafür bringen und eine geringe Handwerksgebühr zahlen.",
     ["obj"] = "Handwerker Wilhelm bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern möchte 5 gefrorene Runen, 4 Runenstoffballen, 4 Essenzen des Wassers, 2 Einheiten Eisenweberseide und 200 Gold.",
     ["start"] = {
@@ -66137,6 +66534,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 9240,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarions Leitfaden,Bringt Oma",
     ["log"] = "Dank Euch und Omarion, möge er in Frieden ruhen, bin ich nun im Stande, eine Gletscherweste herzustellen. Ihr müsst mir lediglich die Materialien dafür bringen und eine geringe Handwerksgebühr zahlen.",
     ["obj"] = "Handwerker Wilhelm bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern möchte 8 gefrorene Runen, 8 Runenstoffballen, 6 Essenzen des Wassers, 4 Einheiten Eisenweberseide und 300 Gold. Euer Ruf bei der Argentumdämmerung muss außerdem ehrfürchtig sein.",
     ["start"] = {
@@ -66156,6 +66554,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 9241,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarions Leitfaden,Bringt Oma",
     ["log"] = "Dank Euch und Omarion (Möge er in Frieden ruhen), bin ich nun im Stande, Polararmschienen herzustellen. Ihr müsst mir lediglich die Materialien dafür bringen und eine geringe Handwerksgebühr zahlen.",
     ["obj"] = "Handwerker Wilhelm bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern möchte 4 gefrorene Runen, 12 Einheiten verzaubertes Leder, 3 Essenzen des Wassers, 3 geschmeidige unverwüstliche Bälge und 200 Gold.",
     ["start"] = {
@@ -66169,12 +66568,15 @@ pfDB["quests"]["deDE"] = {
       ["Verzaubertes Leder,12"] = "ITEM",
       ["Essenz des Wassers,3"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
   ["Polarhandschuhe,Handwerker"] = {
     ["id"] = 9242,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarions Leitfaden,Bringt Oma",
     ["log"] = "Dank Euch und Omarion (Möge er in Frieden ruhen), bin ich nun im Stande, Polarhandschuhe herzustellen. Ihr müsst mir lediglich die Materialien dafür bringen und eine geringe Handwerksgebühr zahlen.",
     ["obj"] = "Handwerker Wilhelm bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern möchte 5 gefrorene Runen, 12 Einheiten verzaubertes Leder, 3 Essenzen des Wassers, 3 geschmeidige unverwüstliche Bälge und 200 Gold.",
     ["start"] = {
@@ -66188,12 +66590,15 @@ pfDB["quests"]["deDE"] = {
       ["Verzaubertes Leder,12"] = "ITEM",
       ["Essenz des Wassers,3"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
   ["Polartunika,Handwerker"] = {
     ["id"] = 9243,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarions Leitfaden,Bringt Oma",
     ["log"] = "Dank Euch und Omarion, möge er in Frieden ruhen, bin ich nun im Stande, eine Polartunika herzustellen. Ihr müsst mir lediglich die Materialien dafür bringen und eine geringe Handwerksgebühr zahlen.",
     ["obj"] = "Handwerker Wilhelm bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern möchte 8 gefrorene Runen, 16 Einheiten verzaubertes Leder, 5 Essenzen des Wassers, 5 geschmeidige unverwüstliche Bälge und 300 Gold. Euer Ruf bei der Argentumdämmerung muss außerdem ehrfürchtig sein.",
     ["start"] = {
@@ -66207,12 +66612,15 @@ pfDB["quests"]["deDE"] = {
       ["Verzaubertes Leder,16"] = "ITEM",
       ["Essenz des Wassers,5"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
     },
   },
   ["Eisschuppenarmschienen,Handwerker"] = {
     ["id"] = 9244,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarions Leitfaden,Bringt Oma",
     ["log"] = "Dank Euch und Omarion, möge er in Frieden ruhen, bin ich nun im Stande, Eisschuppenarmschienen herzustellen. Ihr müsst mir lediglich die Materialien dafür bringen und eine geringe Handwerksgebühr zahlen.",
     ["obj"] = "Handwerker Wilhelm bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern möchte 4 gefrorene Runen, 16 schwere Skorpidschuppen, 5 Essenzen des Wassers, 3 geschmeidige unverwüstliche Bälge und 200 Gold.",
     ["start"] = {
@@ -66226,12 +66634,15 @@ pfDB["quests"]["deDE"] = {
       ["Schwere Skorpidschuppe,16"] = "ITEM",
       ["Essenz des Wassers,5"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
   ["Eisschuppenstulpen,Handwerker"] = {
     ["id"] = 9245,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarions Leitfaden,Bringt Oma",
     ["log"] = "Dank Euch und Omarion (Möge er in Frieden ruhen), bin ich nun im Stande, Eisschuppenstulpen herzustellen. Ihr müsst mir lediglich die Materialien dafür bringen und eine geringe Handwerksgebühr zahlen.",
     ["obj"] = "Handwerker Wilhelm bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern möchte 5 gefrorene Runen, 16 schwere Skorpidschuppen, 5 Essenzen des Wassers, 3 geschmeidige unverwüstliche Bälge und 200 Gold.",
     ["start"] = {
@@ -66245,12 +66656,15 @@ pfDB["quests"]["deDE"] = {
       ["Schwere Skorpidschuppe,16"] = "ITEM",
       ["Essenz des Wassers,5"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,3"] = "ITEM",
     },
   },
   ["Eisschuppenbrustplatte,Handwerker"] = {
     ["id"] = 9246,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Omarions Leitfaden,Bringt Oma",
     ["log"] = "Dank Euch und Omarion (Möge er in Frieden ruhen), bin ich nun im Stande, eine Eisschuppenbrustplatte herzustellen. Ihr müsst mir lediglich die Materialien dafür bringen und eine geringe Handwerksgebühr zahlen.",
     ["obj"] = "Handwerker Wilhelm bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern möchte 8 gefrorene Runen, 24 schwere Skorpidschuppen, 7 Essenzen des Wassers, 5 geschmeidige unverwüstliche Bälge und 300 Gold. Euer Ruf bei der Argentumdämmerung muss außerdem ehrfürchtig sein.",
     ["start"] = {
@@ -66263,6 +66677,8 @@ pfDB["quests"]["deDE"] = {
       ["Gefrorene Rune,8"] = "ITEM",
       ["Schwere Skorpidschuppe,24"] = "ITEM",
       ["Essenz des Wassers,7"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
+      ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
       ["Geschmeidiger unverwüstlicher Balg,5"] = "ITEM",
     },
   },
@@ -66917,6 +67333,7 @@ pfDB["quests"]["deDE"] = {
     ["lvl"] = 38,
     ["race"] = 77,
     ["pre"] = "Mumms Bericht,Bringt Mum",
+    ["pre"] = "Mumms Bericht,Bringt Mum",
     ["log"] = "Dem Bericht von Hauptmann Mumm entnehme ich, dass Ihr eine gro?e Hilfe bei den Ermittlungen gewesen seid, und dafür danke ich Euch.$B$BIch bin beruhigt, da ich wei?, dass die Angelegenheit in so tüchtigen H?nden ruht. Wenn es Euch Recht ist, würde ich Euch bitten, zu Hauptmann Mumm zurückzukehren und mit ihm zusammen dem R?tsel auf den Grund zu gehen.",
     ["obj"] = "Kehrt zu Hauptmann Garran Mumm in Theramore zurück.",
     ["start"] = {
@@ -67004,8 +67421,8 @@ pfDB["quests"]["deDE"] = {
     ["obj"] = "Sprecht mit Kriegsherr Gorchuk im Tal der Geister in Orgrimmar.",
     ["start"] = {
       ["Schlachtruferin Taiga"] = "NPC",
-      ["Schlachtrufer Grimmwald"] = "NPC",
       ["Schlachtruferin Kai\'jin"] = "NPC",
+      ["Schlachtrufer Grimmwald"] = "NPC",
     },
     ["end"] = {
       ["Kriegsherr Gorchuk"] = "NPC",
@@ -67250,7 +67667,8 @@ pfDB["quests"]["deDE"] = {
   },
   ["Die Verpestung von Süderstade,Werft drei"] = {
     ["id"] = 1657,
-    ["min"] = 58,
+    ["min"] = 25,
+    ["lvl"] = 60,
     ["log"] = "Feiert die Schlotternächte mit Stil... bereitet unseren Feinden in Süderstade Kummer!$B$BNehmt eine dieser speziell angefertigten Stinkbomben. Sie sind mit einem derartig furchtbaren Schrecken gefüllt, dessen Geruch kein Mensch - oder anderes Wesen mit schwachem Gemüt - ertragen kann. Ihr müsst die Stinkbombe direkt ins Herz von Süderstade werfen, damit sie richtig wirken kann. Seid also auf eine Auseinandersetzung mit der Allianz gefasst!$B$BSolltet Ihr diese Aufgabe bewältigt haben, kehrt zu mir zurück... es ist ein Beitrag zu unserer Befreiung!",
     ["obj"] = "Werft drei Stinkbomben der Verlassenen ins Herz von Süderstade im Hügelland und kehrt zu Ruferin der Dunkelheit Yanka beim Fest des Weidenmanns in Tirisfal zurück.",
     ["start"] = {
@@ -67297,6 +67715,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 8184,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 1,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67306,14 +67725,16 @@ pfDB["quests"]["deDE"] = {
       ["Zanza der Ruhelose"] = "NPC",
     },
     ["item"] = {
-      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
       ["Durchstochene Voodoopuppe,1"] = "ITEM",
+      ["Arkanum des Schutzes,1"] = "ITEM",
+      ["Urzeitliche Aegis der Hakkari,1"] = "ITEM",
     },
   },
   ["Siegelzeichen des Synkretisten,"] = {
     ["id"] = 8185,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 2,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67323,14 +67744,16 @@ pfDB["quests"]["deDE"] = {
       ["Zanza der Ruhelose"] = "NPC",
     },
     ["item"] = {
-      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
       ["Durchstochene Voodoopuppe,1"] = "ITEM",
+      ["Arkanum des Schutzes,1"] = "ITEM",
+      ["Urzeitlicher Hakkarischal,1"] = "ITEM",
     },
   },
   ["Umarmung des Todes,"] = {
     ["id"] = 8186,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 8,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67340,14 +67763,16 @@ pfDB["quests"]["deDE"] = {
       ["Zanza der Ruhelose"] = "NPC",
     },
     ["item"] = {
-      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
       ["Durchstochene Voodoopuppe,1"] = "ITEM",
+      ["Arkanum der Schnelligkeit,1"] = "ITEM",
+      ["Urzeitlicher Hakkarikosak,1"] = "ITEM",
     },
   },
   ["Ruf des Falken,"] = {
     ["id"] = 8187,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 4,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67357,14 +67782,16 @@ pfDB["quests"]["deDE"] = {
       ["Zanza der Ruhelose"] = "NPC",
     },
     ["item"] = {
-      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
       ["Durchstochene Voodoopuppe,1"] = "ITEM",
+      ["Arkanum der Schnelligkeit,1"] = "ITEM",
+      ["Urzeitliche Hakkaristütze,1"] = "ITEM",
     },
   },
   ["Vodouisants wachsame Umarmung,"] = {
     ["id"] = 8188,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 64,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67374,14 +67801,16 @@ pfDB["quests"]["deDE"] = {
       ["Zanza der Ruhelose"] = "NPC",
     },
     ["item"] = {
-      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
       ["Durchstochene Voodoopuppe,1"] = "ITEM",
+      ["Arkanum des Fokus,1"] = "ITEM",
+      ["Urzeitliche Hakkarischärpe,1"] = "ITEM",
     },
   },
   ["Allgegenwärtige Sicht,"] = {
     ["id"] = 8189,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 128,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67391,14 +67820,16 @@ pfDB["quests"]["deDE"] = {
       ["Zanza der Ruhelose"] = "NPC",
     },
     ["item"] = {
-      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
       ["Durchstochene Voodoopuppe,1"] = "ITEM",
+      ["Arkanum des Fokus,1"] = "ITEM",
+      ["Urzeitlicher Hakkarigurt,1"] = "ITEM",
     },
   },
   ["Verhexung des Hoodoo,"] = {
     ["id"] = 8190,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 256,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67408,14 +67839,16 @@ pfDB["quests"]["deDE"] = {
       ["Zanza der Ruhelose"] = "NPC",
     },
     ["item"] = {
-      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
       ["Durchstochene Voodoopuppe,1"] = "ITEM",
+      ["Arkanum des Fokus,1"] = "ITEM",
+      ["Urzeitliche Hakkariarmsplinte,1"] = "ITEM",
     },
   },
   ["Prophetische Aura,"] = {
     ["id"] = 8191,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 16,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67425,14 +67858,16 @@ pfDB["quests"]["deDE"] = {
       ["Zanza der Ruhelose"] = "NPC",
     },
     ["item"] = {
-      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
       ["Durchstochene Voodoopuppe,1"] = "ITEM",
+      ["Arkanum des Fokus,1"] = "ITEM",
+      ["Urzeitlicher Hakkariwappenrock,1"] = "ITEM",
     },
   },
   ["Liebkosung des Animisten,"] = {
     ["id"] = 8192,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 1024,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67442,8 +67877,9 @@ pfDB["quests"]["deDE"] = {
       ["Zanza der Ruhelose"] = "NPC",
     },
     ["item"] = {
-      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
       ["Durchstochene Voodoopuppe,1"] = "ITEM",
+      ["Arkanum des Schutzes,1"] = "ITEM",
+      ["Urzeitliche Hakkaribindungen,1"] = "ITEM",
     },
   },
   ["Die große Beute,"] = {
@@ -67594,20 +68030,14 @@ pfDB["quests"]["deDE"] = {
   },
   ["Held der Sturmlanzen,"] = {
     ["id"] = 8271,
-    ["min"] = 61,
+    ["min"] = 51,
+    ["lvl"] = 60,
     ["pre"] = "Die Schlacht um Alterac,Betretet d",
     ["start"] = {
+      ["Ausgrabungsleiter Steinhauer"] = "NPC",
     },
     ["end"] = {
-    },
-  },
-  ["Held der Frostwölfe,"] = {
-    ["id"] = 8272,
-    ["min"] = 61,
-    ["pre"] = "Die Schlacht ums Alteractal,Betretet d",
-    ["start"] = {
-    },
-    ["end"] = {
+      ["Ausgrabungsleiter Steinhauer"] = "NPC",
     },
   },
   ["Orans Dankbarkeit,"] = {
@@ -67684,7 +68114,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Hühnchengegacker für ein Pfefferminzbonbon,Spielt Gas"] = {
     ["id"] = 8353,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "Ah, wir gehen also Süßigkeitensammeln für ein Kind? Ich dachte mir schon, dass Ihr etwas zu alt seid, um für Süßes loszuziehen...$B$BNa ja, für meine Leckerei - ein Pfefferminzbonbon aus Eisenschmiede - müsst Ihr... wie ein Hühnchen gackern! Ja, Hühnchen lieben Pfefferminzbonbons... nun ja, OK, vielleicht LIEBEN sie sie nicht... aber ich gebe Euch trotzdem kein Pfefferminzbonbon, wenn Ihr nicht wie ein Hühnchen für mich gackert!$B$BSo $C, seid Ihr dazu bereit oder nicht?! Verdient Euch Eure Süßigkeit!",
     ["obj"] = "Spielt Gastwirt Feuerbräu ein Huhn vor, er wird Euch dafür ein Pfefferminzbonbon aus Eisenschmiede geben!",
@@ -67697,7 +68127,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Kaugummikugelexpress,Ahmt für "] = {
     ["id"] = 8355,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "Ah, Süßes oder Saures! Hurra!$B$BNun, auch wenn Ihr etwas Ehrenhaftes tut und Süßigkeiten für ein Kind sammelt, so kann ich Euch doch nicht so einfach davonkommen lassen. Ich hätte da eine leckere Kaugummikugel aus Gnomeregan für das Kind... wenn Ihr mir einen Zug vorführt! Haha, ja, das wär\'s! Der Preis für diese Kaugummikugel ist das Imitieren eines Zuges!$B$BTschugga-tschugga, $C!",
     ["obj"] = "Ahmt für Talvash del Kissel einen Zug nach und er wird Euch dafür eine Kaugummikugel aus Gnomeregan geben!",
@@ -67710,7 +68140,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Muskelspiel für Nugat,Ihr müsst"] = {
     ["id"] = 8356,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "Das ist ein... interessantes Kostüm, welches Ihr da tragt. Auch wenn Ihr nett seid und einem Kind dieses Jahr beim Süßigkeitensammeln helft, so fürchte ich doch, dass ich Euch um eine kleine Vorstellung bitten muss!$B$BMal sehen... Ihr seht in diesem... Kostüm stark und muskulös aus... jetzt gebt doch mal ein bisschen an! Ja, lasst Eure Muskeln für mich spielen, $g starker Mann : starke Frau;!$B$BWenn ich Euch angeben sehe, und auch nur dann, werde ich Euch etwas von dem leckeren Nugat aus Sturmwind geben. Es ist eine großartige Schlotternachtssüßigkeit.",
     ["obj"] = "Ihr müsst vor Gastwirtin Allison angeben, damit sie Euch im Gegenzug etwas vom Nugat aus Sturmwind gibt!",
@@ -67723,7 +68153,7 @@ pfDB["quests"]["deDE"] = {
   },
   ["Tanzen für Marzipan,Tanzt für"] = {
     ["id"] = 8357,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "Auch wenn Ihr einem Kind beim Süßigkeitensammeln helft, so müsst Ihr mir noch immer etwas für Eure Belohnung vorführen! Man kann nicht so einfach mit der Tradition brechen, nicht wahr... ?$B$BIch denke, dass ein Stück Marzipan heute eine ordentliche Tanzvorstellung wert ist! Ja genau, zeigt mal, was Ihr so drauf habt! Tanzt für mich und ich werde Euch etwas von dem leckeren Marzipan geben!",
     ["obj"] = "Tanzt für Gastwirtin Saelienne und Ihr werdet im Gegenzug etwas von dem Marzipan aus Darnassus bekommen!",
@@ -67781,7 +68211,8 @@ pfDB["quests"]["deDE"] = {
   },
   ["Die Kraft der Pinie,Verwendet "] = {
     ["id"] = 8373,
-    ["min"] = 59,
+    ["min"] = 25,
+    ["lvl"] = 60,
     ["log"] = "Was ich während der Schlotternächte am meisten hasse, sind die Stinkbomben, die die Verlassenen hier inmitten von Süderstade loslassen. Wer hätte gedacht, dass eine Gedenkfeier zur Freilassung mit einer so stinkigen Sache einhergehen würde?$B$BVerwendet diesen Stinkbombenreiniger während der Schlotternächte, um die scheußlichen Stinkbomben, die die Horde womöglich hier in der Stadt loslässt, zu vernichten. Er bekämpft, dank der Kraft von Pinien, schreckliche Gerüche.$B$BHelft mit Süderstade sauber zu halten und ich werde Euch dafür ein paar Schlotternachtssüßigkeiten geben, die Ihr sicherlich mögen werdet. Abgemacht?",
     ["obj"] = "Verwendet einen Stinkbombenreiniger, um alle Stinkbomben der Verlassenen zu vernichten, die hier in Süderstade losgelassen wurden. Kehrt zu Unteroffizier Hartman in Süderstade zurück, wenn Ihr fertig seid.",
     ["start"] = {
@@ -67795,6 +68226,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 8467,
     ["min"] = 45,
     ["lvl"] = 55,
+    ["pre"] = "Verbündeter der Holzschlundfeste,Grazle m?c",
     ["pre"] = "Verbündeter der Holzschlundfeste,Grazle m?c",
     ["obj"] = "",
     ["start"] = {
@@ -67824,9 +68256,9 @@ pfDB["quests"]["deDE"] = {
   },
   ["Der Bund der Drachenschwärme,"] = {
     ["id"] = 8555,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["pre"] = "Eine Spielfigur auf dem Schachbrett der Ewigkeit,Lernt so v",
+    ["log"] = "",
     ["start"] = {
       ["Anachronos"] = "NPC",
     },
@@ -67842,8 +68274,10 @@ pfDB["quests"]["deDE"] = {
     ["log"] = "Die Abzeichen, die Ihr für Eure Erfüllung von Kampf-, Logistik- und taktischen Aufträgen für Windruferin Prachthorn erhalten habt, dienen zu weit mehr als der Angeberei, $n.$B$BIhr solltet deren Wert besser zu schätzen wissen. Da Ihr gegenüber unserer Organisation Loyalität bewiesen habt, kann ich Euch bestimmte Ausrüstungsgegenstände anbieten, die wir lediglich für unsere engsten Verbündeten im Austausch gegen diese Abzeichen bereithalten.",
     ["obj"] = "Bringt 15 cenarische Gefechtsabzeichen, 20 cenarische Versorgungsabzeichen, 17 cenarische Strategieabzeichen und 1 Mal von Remulos zu Vargus auf Burg Cenarius in Silithus. Diese Aufgabe erfordert zum Abschluss auch einen respektvollen Ruf beim Zirkel des Cenarius.",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Cenarisches Gefechtsabzeichen,15"] = "ITEM",
@@ -67856,6 +68290,7 @@ pfDB["quests"]["deDE"] = {
     ["id"] = 8576,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Azuregos\' magisches Buch,Bringt Azu",
     ["pre"] = "Azuregos\' magisches Buch,Bringt Azu",
     ["start"] = {
       ["Narain Pfauentraum"] = "NPC",
@@ -68665,8 +69100,8 @@ pfDB["quests"]["deDE"] = {
     ["log"] = "Hallo, schön, dass Ihr Euch entschieden habt, mir zuzuhören, was ich zu sagen habe. Die Allianz braucht jede Hilfe, die sie kriegen kann, um sich auf den Krieg in Ahn\'Qiraj vorzubereiten. Die Allianz braucht Euch! Während wir uns unterhalten, haben die offiziellen Sammler bereits damit begonnen, kriegstaugliche Materialien aller Art zu sammeln. Doch ohne Eure Mithilfe sind all diese Mühen vergebens, $n! Wir brauchen Eure Unterstützung!$B$BAm besten unterhaltet Ihr Euch mit dem verantwortlichen Offizier, Feldmarschall Schneefall. Können wir auf Euch zählen, $C? Werdet Ihr uns bei den Kriegsvorbereitungen zur Seite stehen?",
     ["obj"] = "Sprecht mit Feldmarschall Schneefall im Militärviertel von Eisenschmiede.",
     ["start"] = {
-      ["Hauptfeldwebel Zischelbolz"] = "NPC",
       ["Hauptfeldwebel Maclure"] = "NPC",
+      ["Hauptfeldwebel Zischelbolz"] = "NPC",
       ["Hauptfeldwebel Mondnacht"] = "NPC",
     },
     ["end"] = {
@@ -68695,6 +69130,7 @@ pfDB["quests"]["deDE"] = {
       ["Windrufer Kaldon"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
   },
   ["Ein Festtagsgeschenk,"] = {
@@ -68877,6 +69313,7 @@ pfDB["quests"]["deDE"] = {
   ["Verrat am Blutsegel,"] = {
     ["id"] = 9259,
     ["min"] = 30,
+    ["lvl"] = 60,
     ["start"] = {
       ["Verräter der Blutsegelbukaniere"] = "NPC",
     },
@@ -68890,7 +69327,8 @@ pfDB["quests"]["deDE"] = {
   },
   ["Heilen alter Wunden,"] = {
     ["id"] = 9267,
-    ["min"] = 10,
+    ["min"] = 15,
+    ["lvl"] = 60,
     ["start"] = {
       ["Mupsi Kettelfridd"] = "NPC",
     },
@@ -68905,6 +69343,7 @@ pfDB["quests"]["deDE"] = {
   ["Krieg zur See,"] = {
     ["id"] = 9268,
     ["min"] = 40,
+    ["lvl"] = 60,
     ["start"] = {
       ["Rumsen Zischelbrack"] = "NPC",
     },
@@ -68994,6 +69433,7 @@ pfDB["quests"]["deDE"] = {
     ["min"] = 60,
     ["lvl"] = 60,
     ["pre"] = "Der Bund der Drachenschwärme,",
+    ["pre"] = "Der Bund der Drachenschwärme,",
     ["log"] = "Held, seid Ihr es? Es ist tausend Jahre her, seitdem man mir den Splitter anvertraut hat. Jetzt, in meiner finstersten Stunde soll jemand erscheinen, um mich davon zu entlasten... aber was wäre eine Tragödie ohne Grausamkeit?$B$B<Vaelastrasz hustet geschwächt.>$B$BNe... Nefarius besitzt nun den Szeptersplitter.$B$BDie Zeit ist entscheidend. Nefarius hat vor den Splitter zu zerstören. Ihr müsst Euch beeilen!",
     ["obj"] = "Tötet Nefarian und bringt den roten Szeptersplitter wieder in Euren Besitz. Bringt den roten Szeptersplitter zu Anachronos in den Höhlen der Zeit in Tanaris. Euch bleiben ein und halb Stunden, um diese Aufgabe zu erfüllen.",
     ["start"] = {
@@ -69004,6 +69444,18 @@ pfDB["quests"]["deDE"] = {
     },
     ["item"] = {
       ["Roter Szeptersplitter,1"] = "ITEM",
+    },
+  },
+  ["Held der Frostwölfe,"] = {
+    ["id"] = 8272,
+    ["min"] = 51,
+    ["lvl"] = 60,
+    ["pre"] = "Die Schlacht ums Alteractal,Betretet d",
+    ["start"] = {
+      ["Voggah Todesgriff"] = "NPC",
+    },
+    ["end"] = {
+      ["Voggah Todesgriff"] = "NPC",
     },
   },
   ["Metzen das Rentier,Befreit Me"] = {
@@ -69472,6 +69924,7 @@ pfDB["quests"]["deDE"] = {
     ["obj"] = "Bringt den Ruf zu den Waffen zum Bewahrer der Schriften in der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern.",
     ["start"] = {
       ["Argentumrekrutierungsoffizier"] = "NPC",
+      ["Argentumspäher"] = "NPC",
     },
     ["end"] = {
       ["Bewahrer der Schriften"] = "NPC",
@@ -69664,6 +70117,502 @@ pfDB["quests"]["deDE"] = {
       ["Münze der Urahnen,5"] = "ITEM",
     },
   },
+  ["Mumms Bericht,Bringt Mum"] = {
+    ["id"] = 1288,
+    ["min"] = 33,
+    ["lvl"] = 38,
+    ["race"] = 77,
+    ["log"] = "Ihr habt gute Arbeit geleistet, $N, die Beste, die ich je von einem Amateur sah.$B$BLady Prachtmeer bat mich, sie über diese delikate Situation auf dem Laufenden zu halten, aber ich habe eine Weile nicht mit ihr gesprochen.$B$BIch wollte ihr meinen Bericht sp?ter bringen, aber es scheint mir passender, wenn Ihr mit ihr darüber sprecht. Ihr k?nnt ihre Fragen wahrscheinlich besser beantworten als ich.",
+    ["obj"] = "Bringt Mumms Bericht zu Lady Jaina Prachtmeer in Theramore.",
+    ["start"] = {
+      ["Hauptmann Garran Mumm"] = "NPC",
+    },
+    ["end"] = {
+      ["Lady Jaina Prachtmeer"] = "NPC",
+    },
+    ["item"] = {
+      ["Mumms Bericht,1"] = "ITEM",
+    },
+  },
+  ["Hühnchengegacker für ein Pfefferminzbonbon,Spielt Gas"] = {
+    ["id"] = 8354,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Ah, wir gehen also Süßigkeitensammeln für ein Kind? Ich dachte mir schon, dass Ihr etwas zu alt seid, um für Süßes loszuziehen...$B$BNaja, für meine Leckerei - ein Pfefferminzbonbon aus Unterstadt - müsst Ihr... wie ein Hühnchen gackern! Ja, Hühnchen lieben Pfefferminzbonbons... nun ja, OK, vielleicht LIEBEN sie sie nicht... aber ich gebe Euch trotzdem kein Pfefferminzbonbon, wenn Ihr nicht wie ein Hühnchen für mich gackert!$B$BSo $C, seid Ihr dazu bereit oder nicht?! Verdient Euch Eure Süßigkeit!",
+    ["obj"] = "Spielt Gastwirt Norman ein Huhn vor, er wird Euch dafür ein Pfefferminzbonbon aus Unterstadt geben!",
+    ["start"] = {
+      ["Gastwirt Norman"] = "NPC",
+    },
+    ["end"] = {
+      ["Gastwirt Norman"] = "NPC",
+    },
+  },
+  ["Kaugummikugelexpress,Ahmt für "] = {
+    ["id"] = 8358,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Ah, Süßes oder Saures! Ja genau, Mann!$B$BNun, auch wenn Ihr etwas Ehrenhaftes tut und Süßigkeiten für ein Kind sammelt, so kann ich Euch doch nicht so einfach davonkommen lassen. Ich hätte da eine leckere Kaugummikugel der Dunkelspeere für das Kind... wenn Ihr mir einen Zug vorführt! Haha, ja, das wär\'s! Der Preis für diese Kaugummikugel ist das Imitieren eines Zuges!$B$BTschugga-tschugga, $C!",
+    ["obj"] = "Ahmt für Kali Remik einen Zug nach und sie wird Euch dafür eine Kaugummikugel der Dunkelspeere geben!",
+    ["start"] = {
+      ["Kali Remik"] = "NPC",
+    },
+    ["end"] = {
+      ["Kali Remik"] = "NPC",
+    },
+  },
+  ["Muskelspiel für Nugat,Ihr müsst"] = {
+    ["id"] = 8359,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Das ist ein... interessantes Kostüm, welches Ihr da tragt. Auch wenn Ihr nett seid und einem Kind dieses Jahr beim Süßigkeitensammeln helft, so fürchte ich doch, dass ich Euch um eine kleine Vorstellung bitten muss!$B$BMal sehen... Ihr seht in diesem... Kostüm stark und muskulös aus... jetzt gebt doch mal ein bisschen an! Ja, lasst Eure Muskeln für mich spielen, $g starker Mann : starke Frau;!$B$BWenn ich Euch angeben sehe, und auch nur dann, werde ich Euch etwas von dem leckeren Nugat aus Orgrimmar geben. Es ist eine großartige Schlotternachtssüßigkeit.",
+    ["obj"] = "Ihr müsst vor Gastwirtin Gryshka angeben, damit sie Euch im Gegenzug etwas vom Nugat aus Orgrimmar gibt!",
+    ["start"] = {
+      ["Gastwirtin Gryshka"] = "NPC",
+    },
+    ["end"] = {
+      ["Gastwirtin Gryshka"] = "NPC",
+    },
+  },
+  ["Tanzen für Marzipan,Tanzt für"] = {
+    ["id"] = 8360,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Auch wenn Ihr einem Kind beim Süßigkeitensammeln helft, so müsst Ihr mir noch immer etwas für Eure Belohnung vorführen! Man kann nicht so einfach mit der Tradition brechen, nicht wahr... ?$B$BIch denke, dass ein Stück Marzipan heute eine ordentliche Tanzvorstellung wert ist! Ja genau, zeigt mal, was Ihr so drauf habt! Tanzt für mich und ich werde Euch etwas von dem leckeren Marzipan geben!",
+    ["obj"] = "Tanzt für Gastwirtin Pala und Ihr werdet im Gegenzug etwas von dem Marzipan aus Donnerfels bekommen!",
+    ["start"] = {
+      ["Gastwirtin Pala"] = "NPC",
+    },
+    ["end"] = {
+      ["Gastwirtin Pala"] = "NPC",
+    },
+  },
+  ["Bezwingt die Eindringlinge der Silberschwingen,Betretet d"] = {
+    ["id"] = 7875,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 178,
+    ["log"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Druide der Klaue,Tötet den"] = {
+    ["id"] = 2561,
+    ["min"] = 7,
+    ["lvl"] = 10,
+    ["pre"] = "Der schlafende Druide,Bringt ein",
+    ["log"] = "Nachdem ich den Glücksbringer untersucht habe, weiß ich jetzt, was zu tun ist, $n. Bitte nehmt ihn und führt aus, worum ich Euch bitte.$B$BIhr müsst Euch der Tür zu der nahegelegenen Kammer nähern. Dahinter findet Ihr meinen seelenlosen Körper. Und obwohl es mich sehr schmerzt, Euch das jetzt zu sagen, sehe ich keine andere Möglichkeit, wie ich mich der Kontrolle der Knarzklauen entziehen kann.$B$BDamit ich mich von ihnen befreien kann, müsst Ihr meinen physischen Körper töten. Sobald das getan ist, wendet den Voodooglücksbringer auf meinen gefallenen Körper an. Und wenn Ihr diese Aufgabe erfüllt habt, kommt zu mir zurück.",
+    ["obj"] = "Tötet den seelenlosen Körper von Oben Zornklaue und benutzt dann den Voodooglücksbringer.",
+    ["start"] = {
+      ["Oben Zornklaue"] = "NPC",
+    },
+    ["end"] = {
+      ["Oben Zornklaue"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Zornklaue,1"] = "NPC",
+    },
+  },
+  ["Der aktive Wirkstoff,Reist nach"] = {
+    ["id"] = 5213,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["pre"] = "Das Fleisch lügt nicht,Sammelt 10",
+    ["log"] = "Ihr müsst tiefer nach Stratholme vordringen, $n.$B$BHinter den ersten Toren werdet Ihr die Ziggurats finden. Wir wissen, dass die Geißel große Macht aus diesen Gebäuden zieht. Durchsucht die Ziggurats und kehrt mit den Informationen zurück, die Ihr aufspürt.",
+    ["obj"] = "Reist nach Stratholme und durchsucht die Ziggurats. Sucht neue Geißeldaten und bringt sie zu Betina Moppelzink zurück.",
+    ["start"] = {
+      ["Betina Moppelzink"] = "NPC",
+    },
+    ["end"] = {
+      ["Betina Moppelzink"] = "NPC",
+    },
+    ["item"] = {
+      ["Geißeldaten,1"] = "ITEM",
+    },
+  },
+  ["Ramstein,Reist nach"] = {
+    ["id"] = 6163,
+    ["min"] = 54,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "Dämmerschwinge, oh, wie ich Euch hasse...,Sucht Däm",
+    ["log"] = "Ich war überwältigt. Ich stand in dieser Siedlung... und blieb standhaft bei der Verteidigung von Lordaeron. Der Hof und alles darauf wurde von einer gigantischen Welle der Geißel belagert.$B$BDer Dreck. Der Schmutz. Er stand über mir und die Eingeweide hingen ihm aus einem klaffenden Loch in der Brust.$B$BIch erwachte als Geißel. Lange Zeit war ich hilflos. Meine Gedanken waren mit denen des Lichkönigs verschmolzen.$B$BSie kam zu mir... irgendwo, irgendwie wusste ich es. Frei.$B$BDoch jetzt muss ich meine Rache haben - Rache an dem, der mir das Leben genommen hat. Vernichtet ihn.",
+    ["obj"] = "Reist nach Stratholme und tötet Ramstein den Würger. Bringt seinen Kopf als Souvenir zu Nathanos.",
+    ["start"] = {
+      ["Nathanos Pestrufer"] = "NPC",
+    },
+    ["end"] = {
+      ["Nathanos Pestrufer"] = "NPC",
+    },
+    ["item"] = {
+      ["Kopf von Ramstein dem Verschlinger,1"] = "ITEM",
+    },
+  },
+  ["Aktivit?t der Winterfelle,Salfa m?ch"] = {
+    ["id"] = 6241,
+    ["min"] = 51,
+    ["lvl"] = 56,
+    ["log"] = "Die Furbolgs der Holzschlundfeste bleiben meist unter sich, $N. Wir gew?hren allen, die ihre Vertrauenswürdigkeit unter Beweis gestellt haben, freies Geleit, meiden aber wenn m?glich andere Furbolgst?mme.$B$BIn letzter Zeit ist mir aufgefallen, dass der Winterfellstamm uns gegenüber immer gr??ere Feindseligkeit zeigt. Sie scheinen in Rage zu sein, und ganz von ihrem Hass auf alles beseelt, das sie nicht verstehen.$B$BWenn Ihr ihre Anzahl reduzieren k?nntet, würde uns das sehr helfen, $N.",
+    ["obj"] = "Salfa m?chte, dass Ihr 6 Totemiker der Winterfelle, 6 H?hlenbehüter der Winterfelle und 6 Pfadfinder der Winterfelle erledigt.",
+    ["start"] = {
+      ["Salfa"] = "NPC",
+    },
+    ["end"] = {
+      ["Salfa"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Totemiker der Winterfelle,6"] = "NPC",
+      ["Höhlenbehüter der Winterfelle,6"] = "NPC",
+      ["Pfadfinder der Winterfelle,6"] = "NPC",
+    },
+  },
+  ["Die Legende von Korrak,Der Legend"] = {
+    ["id"] = 7181,
+    ["min"] = 51,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Die angreifenden Sturmlanzen sind nicht die einzige Bedrohung in dieser Region, Soldat. Der Krieg in diesem Tal tobt an zwei Fronten. Den kannibalistischen Winteraxtrollen dürstet es ebenso nach Macht.$B$BAngeführt werden sie von Korrak dem Blutrünstigen - einem grausamen und verschlagenen Biest.$B$BEin Streich gegen Korrak könnte sich als vernichtender Schlag für den Winteraxklan erweisen. Tötet diesen Bastard und Ihr werdet entlohnt.",
+    ["obj"] = "Der Legende zufolge erscheint der mächtige Anführer der Winteraxtrolle nach gutdünken, um Angst und Schrecken unter den Bewohnen des Alteractals zu verbreiten.$B$BSollte Korrak auftauchen, tötet ihn und kehrt zu Kriegsmeister Laggrond zurück.",
+    ["start"] = {
+      ["Kriegsmeister Laggrond"] = "NPC",
+    },
+    ["end"] = {
+      ["Kriegsmeister Laggrond"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Korrak der Blutrünstige,1"] = "NPC",
+    },
+  },
+  ["Korrak der Blutrünstige,Der Legend"] = {
+    ["id"] = 7202,
+    ["min"] = 51,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Die eingeborenen Winteraxtrolle dieser Region sind unbarmherzige Wilde, die nichts lieber täten, als unsere Knochen in einer ihrer widerlichen Mahlzeiten zu sehen.$B$BWir müssen ihnen unsere Macht vor Augen führen!$B$BWir konnten einige Schriftstücke aus ihren Höhlen entwenden, die Aufzeichnungen über ihre Führungshierarchie enthalten. Diese Schriftstücke lassen vermuten, dass ihr Anführer, Korrak der Blutrünstige, sich solange versteckt hält, bis er einen Grund hat sich zu zeigen.$B$BDer Tod Korraks, würde den Tod des Winteraxklans bedeuten! Tötet ihn und kehrt zu mir zurück.",
+    ["obj"] = "Der Legende zufolge erscheint der mächtige Anführer der Winteraxtrolle nach gutdünken, um Angst und Schrecken unter den Bewohnen des Alteractals zu verbreiten.$B$BSollte Korrak auftauchen, tötet ihn und kehrt zu Leutnant Haggerdin im Alteracgebirge zurück.",
+    ["start"] = {
+      ["Leutnant Haggerdin"] = "NPC",
+    },
+    ["end"] = {
+      ["Leutnant Haggerdin"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Korrak der Blutrünstige,1"] = "NPC",
+    },
+  },
+  ["Präsenz der Macht,"] = {
+    ["id"] = 8184,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 1,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["item"] = {
+      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
+      ["Durchstochene Voodoopuppe,1"] = "ITEM",
+    },
+  },
+  ["Siegelzeichen des Synkretisten,"] = {
+    ["id"] = 8185,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 2,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["item"] = {
+      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
+      ["Durchstochene Voodoopuppe,1"] = "ITEM",
+    },
+  },
+  ["Umarmung des Todes,"] = {
+    ["id"] = 8186,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 8,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["item"] = {
+      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
+      ["Durchstochene Voodoopuppe,1"] = "ITEM",
+    },
+  },
+  ["Ruf des Falken,"] = {
+    ["id"] = 8187,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 4,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["item"] = {
+      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
+      ["Durchstochene Voodoopuppe,1"] = "ITEM",
+    },
+  },
+  ["Vodouisants wachsame Umarmung,"] = {
+    ["id"] = 8188,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 64,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["item"] = {
+      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
+      ["Durchstochene Voodoopuppe,1"] = "ITEM",
+    },
+  },
+  ["Allgegenwärtige Sicht,"] = {
+    ["id"] = 8189,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 128,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["item"] = {
+      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
+      ["Durchstochene Voodoopuppe,1"] = "ITEM",
+    },
+  },
+  ["Verhexung des Hoodoo,"] = {
+    ["id"] = 8190,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 256,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["item"] = {
+      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
+      ["Durchstochene Voodoopuppe,1"] = "ITEM",
+    },
+  },
+  ["Prophetische Aura,"] = {
+    ["id"] = 8191,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 16,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["item"] = {
+      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
+      ["Durchstochene Voodoopuppe,1"] = "ITEM",
+    },
+  },
+  ["Liebkosung des Animisten,"] = {
+    ["id"] = 8192,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 1024,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza der Ruhelose"] = "NPC",
+    },
+    ["item"] = {
+      ["Urzeitlicher Hakkarigötze,1"] = "ITEM",
+      ["Durchstochene Voodoopuppe,1"] = "ITEM",
+    },
+  },
+  ["Zanzas wirksame Tränke,"] = {
+    ["id"] = 8243,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Rin\'wosho der Händler"] = "NPC",
+    },
+    ["end"] = {
+      ["Rin\'wosho der Händler"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenmünze der Zandalari,1"] = "ITEM",
+    },
+  },
+  ["Donneraan der Windsucher,Um Donnera"] = {
+    ["id"] = 7786,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["pre"] = "Untersuchung des Gefäßes,Untersucht",
+    ["log"] = "Ich habe Euch alles gesagt was ich weiß, $n. Es ist nun Eure Aufgabe Elementium zu finden. Ihr seid es, der die körperliche Form des Feuerfürsten zerstören muss.$B$BGewinnt dadurch den Segen von Donneraan.",
+    ["obj"] = "Um Donneraan den Windsucher aus seiner Gefangenschaft zu befreien, müsst Ihr Hochlord Demitrian die rechten und linken Hälften der Fesseln des Windsuchers, 10 verzauberte Elementiumbarren und die Essenz des Feuerfürsten bringen.",
+    ["start"] = {
+      ["Hochlord Demitrian"] = "NPC",
+    },
+    ["end"] = {
+      ["Hochlord Demitrian"] = "NPC",
+    },
+    ["item"] = {
+      ["Verzauberter Elementiumbarren,10"] = "ITEM",
+      ["Essenz des Feuerfürsten,1"] = "ITEM",
+      ["Fesseln des Windsuchers,1"] = "ITEM",
+      ["Fesseln des Windsuchers,1"] = "ITEM",
+    },
+  },
+  ["Verbündeter der Holzschlundfeste,Grazle m?c"] = {
+    ["id"] = 6131,
+    ["min"] = 45,
+    ["lvl"] = 48,
+    ["log"] = "Die Einwohner der Holzschlundfeste sind die einzigen Furbolgs, die von der Verderbnis verschont blieben. Aber viele andere V?lker t?ten die Furbolgs jetzt blindwütig und scheren sich nicht darum, ob sie Freund oder Feind sind. Deswegen trauen die Furbolgs der Holzschlundfeste auch kaum jemandem.$B$BSeid Ihr daran interessiert, Euch zu beweisen? Treibt den verderbten Stamm der Totenwaldfelle vom Teufelswald zurück, dann betrachten wir Euch eines Tages vielleicht als Verbündeten. Ihr findet den ersten Stamm der Totenwaldfelle - Krieger, Pfadfinder und G?rtner - westlich von hier.",
+    ["obj"] = "Grazle m?chte, dass Ihr Euch beweist, indem Ihr 5 Krieger der Totenwaldfelle, 5 Pfadfinder der Totenwaldfelle und 5 G?rtner der Totenwaldfelle besiegt.",
+    ["start"] = {
+      ["Grazle"] = "NPC",
+    },
+    ["end"] = {
+      ["Grazle"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Krieger der Totenwaldfelle,5"] = "NPC",
+      ["Pfadfinder der Totenwaldfelle,5"] = "NPC",
+      ["Gärtner der Totenwaldfelle,5"] = "NPC",
+    },
+  },
+  ["Der Bund der Drachenschwärme,"] = {
+    ["id"] = 8555,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["pre"] = "Eine Spielfigur auf dem Schachbrett der Ewigkeit,Lernt so v",
+    ["start"] = {
+      ["Anachronos"] = "NPC",
+    },
+    ["end"] = {
+      ["Anachronos"] = "NPC",
+    },
+  },
+  ["Azuregos\' magisches Buch,Bringt Azu"] = {
+    ["id"] = 8575,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["log"] = "Ihr könnt kein einziges Wort in diesem Buch verstehen. Ihr wisst nicht einmal in welcher Sprache es geschrieben wurde!",
+    ["obj"] = "Bringt Azuregos\' magisches Buch zu Narain Pfauentraum in Tanaris.",
+    ["start"] = {
+    },
+    ["end"] = {
+      ["Narain Pfauentraum"] = "NPC",
+    },
+    ["item"] = {
+      ["Magisches Buch,1"] = "ITEM",
+    },
+  },
+  ["Liebesbrief für Narain,Bringt Mer"] = {
+    ["id"] = 8599,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["log"] = "Es kommt nicht häufig vor, dass ich Besuch bekomme. Genaugenommen hatte ich das letzte Mal einen Besucher, als ich diesen liebreizenden, süßen Gnom nach dem Absturz mit seiner Flugmaschine gerettet habe.$B$B<Meridith starrt gedankenverloren ins Nichts.>$B$BKennt Ihr ihn? Narain? Narain Pfauentraum? Oh, es würde mir so viel bedeuten, wenn ihm jemand eine Nachricht von mir überbringen würde. Ich muss ihm mitteilen, was ich empfinde! Ich weiß, dass es Liebe ist! Ich weiß es einfach!$B$BKönntet Ihr Narain vielleicht eine Nachricht zustellen? Ich wäre Euch für immer zu Dank verpflichtet!",
+    ["obj"] = "Bringt Meridiths Liebesbrief zu Narain Pfauentraum in Tanaris.",
+    ["start"] = {
+      ["Meridith die Meerjungfrau"] = "NPC",
+    },
+    ["end"] = {
+      ["Narain Pfauentraum"] = "NPC",
+    },
+    ["item"] = {
+      ["Meridiths Liebesbrief,1"] = "ITEM",
+    },
+  },
+  ["Kaugummikugelexpress,Ahmt für "] = {
+    ["id"] = 8355,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "Ah, Süßes oder Saures! Hurra!$B$BNun, auch wenn Ihr etwas Ehrenhaftes tut und Süßigkeiten für ein Kind sammelt, so kann ich Euch doch nicht so einfach davonkommen lassen. Ich hätte da eine leckere Kaugummikugel aus Gnomeregan für das Kind... wenn Ihr mir einen Zug vorführt! Haha, ja, das wär\'s! Der Preis für diese Kaugummikugel ist das Imitieren eines Zuges!$B$BTschugga-tschugga, $C!",
+    ["obj"] = "Ahmt für Talvash del Kissel einen Zug nach und er wird Euch dafür eine Kaugummikugel aus Gnomeregan geben!",
+    ["start"] = {
+      ["Talvash del Kissel"] = "NPC",
+    },
+    ["end"] = {
+      ["Talvash del Kissel"] = "NPC",
+    },
+  },
+  ["Der einzige Weg,Findet die"] = {
+    ["id"] = 8620,
+    ["min"] = 55,
+    ["lvl"] = 60,
+    ["pre"] = "Lockvogel!,Narain Pfa",
+    ["log"] = "Ich hätte es wissen müssen. Mein Erzfeind, Doktor Weavil, hat wieder seine dreckigen Finger im Spiel! Jetzt, nach Eurem Versagen in Winterquell, hat Doktor Weavil mein Buch zerstört! Wie wollt Ihr jetzt die Welt retten, Held?$B$BDie Nachricht die ich erhalten habe, gab an, dass die einzig bekannte Kopie von \"Drachisch für Dummies: Band 2\" in 8 Teile zerrissen und im Wind zerstreut wurde! Solltet Ihr diese fehlenden Kapitel irgendwie finden können, dann verwendet diesen magischen Bucheinband, um sie wieder zusammen zu flicken. Kehrt dann zu mir zurück.",
+    ["obj"] = "Findet die 8 verlorenen Kapitel von Drachisch für Dummies und vereint sie mit dem magischen Bucheinband. Bringt das vollständige Buch Drachisch für Dummies: Band 2 zu Narain Pfauentraum in Tanaris.",
+    ["start"] = {
+      ["Narain Pfauentraum"] = "NPC",
+    },
+    ["end"] = {
+      ["Narain Pfauentraum"] = "NPC",
+    },
+    ["item"] = {
+      ["Drakonisch für Dummies: Band 2,1"] = "ITEM",
+    },
+  },
+  ["Hühnchengegacker für ein Pfefferminzbonbon,Spielt Gas"] = {
+    ["id"] = 8353,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "Ah, wir gehen also Süßigkeitensammeln für ein Kind? Ich dachte mir schon, dass Ihr etwas zu alt seid, um für Süßes loszuziehen...$B$BNa ja, für meine Leckerei - ein Pfefferminzbonbon aus Eisenschmiede - müsst Ihr... wie ein Hühnchen gackern! Ja, Hühnchen lieben Pfefferminzbonbons... nun ja, OK, vielleicht LIEBEN sie sie nicht... aber ich gebe Euch trotzdem kein Pfefferminzbonbon, wenn Ihr nicht wie ein Hühnchen für mich gackert!$B$BSo $C, seid Ihr dazu bereit oder nicht?! Verdient Euch Eure Süßigkeit!",
+    ["obj"] = "Spielt Gastwirt Feuerbräu ein Huhn vor, er wird Euch dafür ein Pfefferminzbonbon aus Eisenschmiede geben!",
+    ["start"] = {
+      ["Gastwirt Feuerbräu"] = "NPC",
+    },
+    ["end"] = {
+      ["Gastwirt Feuerbräu"] = "NPC",
+    },
+  },
   ["Hühnchengegacker für ein Pfefferminzbonbon,Spielt Gas"] = {
     ["id"] = 8354,
     ["min"] = 10,
@@ -69676,6 +70625,32 @@ pfDB["quests"]["deDE"] = {
     },
     ["end"] = {
       ["Gastwirt Norman"] = "NPC",
+    },
+  },
+  ["Muskelspiel für Nugat,Ihr müsst"] = {
+    ["id"] = 8356,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "Das ist ein... interessantes Kostüm, welches Ihr da tragt. Auch wenn Ihr nett seid und einem Kind dieses Jahr beim Süßigkeitensammeln helft, so fürchte ich doch, dass ich Euch um eine kleine Vorstellung bitten muss!$B$BMal sehen... Ihr seht in diesem... Kostüm stark und muskulös aus... jetzt gebt doch mal ein bisschen an! Ja, lasst Eure Muskeln für mich spielen, $g starker Mann : starke Frau;!$B$BWenn ich Euch angeben sehe, und auch nur dann, werde ich Euch etwas von dem leckeren Nugat aus Sturmwind geben. Es ist eine großartige Schlotternachtssüßigkeit.",
+    ["obj"] = "Ihr müsst vor Gastwirtin Allison angeben, damit sie Euch im Gegenzug etwas vom Nugat aus Sturmwind gibt!",
+    ["start"] = {
+      ["Gastwirtin Allison"] = "NPC",
+    },
+    ["end"] = {
+      ["Gastwirtin Allison"] = "NPC",
+    },
+  },
+  ["Tanzen für Marzipan,Tanzt für"] = {
+    ["id"] = 8357,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "Auch wenn Ihr einem Kind beim Süßigkeitensammeln helft, so müsst Ihr mir noch immer etwas für Eure Belohnung vorführen! Man kann nicht so einfach mit der Tradition brechen, nicht wahr... ?$B$BIch denke, dass ein Stück Marzipan heute eine ordentliche Tanzvorstellung wert ist! Ja genau, zeigt mal, was Ihr so drauf habt! Tanzt für mich und ich werde Euch etwas von dem leckeren Marzipan geben!",
+    ["obj"] = "Tanzt für Gastwirtin Saelienne und Ihr werdet im Gegenzug etwas von dem Marzipan aus Darnassus bekommen!",
+    ["start"] = {
+      ["Gastwirtin Saelienne"] = "NPC",
+    },
+    ["end"] = {
+      ["Gastwirtin Saelienne"] = "NPC",
     },
   },
   ["Kaugummikugelexpress,Ahmt für "] = {
@@ -69718,6 +70693,1284 @@ pfDB["quests"]["deDE"] = {
     },
     ["end"] = {
       ["Gastwirtin Pala"] = "NPC",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8081,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["pre"] = "Die Ressourcen des Arathibeckens,Gewinnt di",
+    ["pre"] = "Die Ressourcen des Arathibeckens,Gewinnt di",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
+    ["id"] = 8123,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
+    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
+    ["id"] = 8123,
+    ["min"] = 50,
+    ["lvl"] = 59,
+    ["race"] = 178,
+    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
+    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8124,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8124,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["pre"] = "Zerschlagt die Versorgungslinien Arathors,Entscheide",
+    ["pre"] = "Zerschlagt die Versorgungslinien Arathors,Entscheide",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
+    ["id"] = 8154,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
+    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
+    ["id"] = 8154,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 77,
+    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
+    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+    },
+  },
+  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
+    ["id"] = 8155,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
+    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
+    ["id"] = 8155,
+    ["min"] = 20,
+    ["lvl"] = 29,
+    ["race"] = 77,
+    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
+    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+    },
+  },
+  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
+    ["id"] = 8156,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
+    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
+    ["id"] = 8156,
+    ["min"] = 30,
+    ["lvl"] = 39,
+    ["race"] = 77,
+    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
+    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8157,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8157,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["pre"] = "Die Ressourcen des Arathibeckens,Gewinnt di",
+    ["pre"] = "Die Ressourcen des Arathibeckens,Gewinnt di",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8158,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8158,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["pre"] = "Die Ressourcen des Arathibeckens,Gewinnt di",
+    ["pre"] = "Die Ressourcen des Arathibeckens,Gewinnt di",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8159,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8159,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["pre"] = "Die Ressourcen des Arathibeckens,Gewinnt di",
+    ["pre"] = "Die Ressourcen des Arathibeckens,Gewinnt di",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
+    ["id"] = 8160,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
+    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
+    ["id"] = 8160,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 178,
+    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
+    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+    },
+  },
+  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
+    ["id"] = 8161,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
+    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
+    ["id"] = 8161,
+    ["min"] = 30,
+    ["lvl"] = 39,
+    ["race"] = 178,
+    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
+    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+    },
+  },
+  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
+    ["id"] = 8162,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
+    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
+    ["id"] = 8162,
+    ["min"] = 20,
+    ["lvl"] = 29,
+    ["race"] = 178,
+    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
+    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8163,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8163,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["pre"] = "Zerschlagt die Versorgungslinien Arathors,Entscheide",
+    ["pre"] = "Zerschlagt die Versorgungslinien Arathors,Entscheide",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8164,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8164,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["pre"] = "Zerschlagt die Versorgungslinien Arathors,Entscheide",
+    ["pre"] = "Zerschlagt die Versorgungslinien Arathors,Entscheide",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8165,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8165,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["pre"] = "Zerschlagt die Versorgungslinien Arathors,Entscheide",
+    ["pre"] = "Zerschlagt die Versorgungslinien Arathors,Entscheide",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Aufopferungsabzeichen,"] = {
+    ["id"] = 8266,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Aufopferungsabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Aufopferungsabzeichen,"] = {
+    ["id"] = 8266,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Aufopferungsabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Aufopferungsabzeichen,"] = {
+    ["id"] = 8267,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Aufopferungsabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Aufopferungsabzeichen,"] = {
+    ["id"] = 8267,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Aufopferungsabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Aufopferungsabzeichen,"] = {
+    ["id"] = 8268,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Aufopferungsabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Aufopferungsabzeichen,"] = {
+    ["id"] = 8268,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Aufopferungsabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Aufopferungsabzeichen,"] = {
+    ["id"] = 8269,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Aufopferungsabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Aufopferungsabzeichen,"] = {
+    ["id"] = 8269,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Aufopferungsabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Verdienstabzeichen,"] = {
+    ["id"] = 8289,
+    ["min"] = 10,
+    ["lvl"] = 15,
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
+    },
+  },
+  ["Besiegt die Eindringlinge!,Betretet d"] = {
+    ["id"] = 8291,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
+    },
+  },
+  ["Besiegt die Eindringlinge!,Betretet d"] = {
+    ["id"] = 8291,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Verdienstabzeichen,"] = {
+    ["id"] = 8292,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
+    },
+  },
+  ["Verdienstabzeichen,"] = {
+    ["id"] = 8292,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen der Kriegshymnenschlucht,3"] = "ITEM",
+    },
+  },
+  ["Ehrenabzeichen,"] = {
+    ["id"] = 8293,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Ehrenabzeichen,"] = {
+    ["id"] = 8293,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen der Kriegshymnenschlucht,3"] = "ITEM",
+    },
+  },
+  ["Bezwingt die Eindringlinge der Silberschwingen,Betretet d"] = {
+    ["id"] = 8294,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Bezwingt die Eindringlinge der Silberschwingen,Betretet d"] = {
+    ["id"] = 8294,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
+    ["obj"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
+    ["start"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["end"] = {
+      ["Hauptmann Schädelbrecher"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Ehrenabzeichen,"] = {
+    ["id"] = 8296,
+    ["min"] = 10,
+    ["lvl"] = 15,
+    ["start"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["end"] = {
+      ["Schildwache Weltensang"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
+    ["id"] = 8297,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
+    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Die Ressourcen des Arathibeckens,Gewinnt di"] = {
+    ["id"] = 8297,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
+    ["obj"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8298,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8298,
+    ["min"] = 20,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Unteroffizier Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen des Arathibeckens,3"] = "ITEM",
+    },
+  },
+  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
+    ["id"] = 8299,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
+    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Zerschlagt die Versorgungslinien Arathors,Entscheide"] = {
+    ["id"] = 8299,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
+    ["obj"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen des Arathibeckens,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8300,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Noch mehr Vorratskisten,"] = {
+    ["id"] = 8300,
+    ["min"] = 20,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Todespirscher Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Ehrenabzeichen des Arathibeckens,3"] = "ITEM",
+    },
+  },
+  ["Vergangene Siege im Arathibecken,"] = {
+    ["id"] = 8565,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 77,
+    ["start"] = {
+      ["Brigadegeneral der Allianz"] = "NPC",
+    },
+    ["end"] = {
+      ["Brigadegeneral der Allianz"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Vergangene Siege im Arathibecken,"] = {
+    ["id"] = 8566,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 178,
+    ["start"] = {
+      ["Kriegshetzer der Horde"] = "NPC",
+    },
+    ["end"] = {
+      ["Kriegshetzer der Horde"] = "NPC",
+    },
+    ["item"] = {
+      ["Arathivorratskiste,1"] = "ITEM",
+    },
+  },
+  ["Vergangene Siege in der Kriegshymnenschlucht,"] = {
+    ["id"] = 8567,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 77,
+    ["start"] = {
+      ["Brigadegeneral der Allianz"] = "NPC",
+    },
+    ["end"] = {
+      ["Brigadegeneral der Allianz"] = "NPC",
+    },
+    ["item"] = {
+      ["Verdienstabzeichen der Silberschwingen,1"] = "ITEM",
+    },
+  },
+  ["Vergangene Siege in der Kriegshymnenschlucht,"] = {
+    ["id"] = 8568,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 178,
+    ["start"] = {
+      ["Kriegshetzer der Horde"] = "NPC",
+    },
+    ["end"] = {
+      ["Kriegshetzer der Horde"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Vergangene Bemühungen in der Kriegshymnenschlucht,"] = {
+    ["id"] = 8569,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 77,
+    ["start"] = {
+      ["Brigadegeneral der Allianz"] = "NPC",
+    },
+    ["end"] = {
+      ["Brigadegeneral der Allianz"] = "NPC",
+    },
+    ["item"] = {
+      ["Aufopferungsabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Vergangene Bemühungen in der Kriegshymnenschlucht,"] = {
+    ["id"] = 8570,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 178,
+    ["start"] = {
+      ["Kriegshetzer der Horde"] = "NPC",
+    },
+    ["end"] = {
+      ["Kriegshetzer der Horde"] = "NPC",
+    },
+    ["item"] = {
+      ["Aufopferungsabzeichen der Kriegshymnenschlucht,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8811,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Offizier Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8812,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Offizier Eisenbart"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Eisenbart"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8813,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Offizier Mondlicht"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Mondlicht"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8814,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Offizier Packhäuser"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Packhäuser"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8815,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Offizier Rotklinge"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Rotklinge"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Horde,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8816,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Offizier Gothena"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Gothena"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Horde,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8817,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Offizier Donnerschreiter"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Donnerschreiter"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Horde,1"] = "ITEM",
+    },
+  },
+  ["Ein Belobigungsabzeichen,"] = {
+    ["id"] = 8818,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Offizier Vu\'Shalay"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Vu\'Shalay"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Horde,1"] = "ITEM",
+    },
+  },
+  ["Zehn Belobigungsabzeichen,"] = {
+    ["id"] = 8819,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Offizier Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,10"] = "ITEM",
+    },
+  },
+  ["Zehn Belobigungsabzeichen,"] = {
+    ["id"] = 8820,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Offizier Eisenbart"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Eisenbart"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,10"] = "ITEM",
+    },
+  },
+  ["Zehn Belobigungsabzeichen,"] = {
+    ["id"] = 8821,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Offizier Mondlicht"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Mondlicht"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,10"] = "ITEM",
+    },
+  },
+  ["Zehn Belobigungsabzeichen,"] = {
+    ["id"] = 8822,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Offizier Packhäuser"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Packhäuser"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Allianz,10"] = "ITEM",
+    },
+  },
+  ["Zehn Belobigungsabzeichen,"] = {
+    ["id"] = 8823,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Offizier Rotklinge"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Rotklinge"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Horde,10"] = "ITEM",
+    },
+  },
+  ["Zehn Belobigungsabzeichen,"] = {
+    ["id"] = 8824,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Offizier Gothena"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Gothena"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Horde,10"] = "ITEM",
+    },
+  },
+  ["Zehn Belobigungsabzeichen,"] = {
+    ["id"] = 8825,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Offizier Donnerschreiter"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Donnerschreiter"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Horde,10"] = "ITEM",
+    },
+  },
+  ["Zehn Belobigungsabzeichen,"] = {
+    ["id"] = 8826,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Offizier Vu\'Shalay"] = "NPC",
+    },
+    ["end"] = {
+      ["Offizier Vu\'Shalay"] = "NPC",
+    },
+    ["item"] = {
+      ["Belobigungsabzeichen der Horde,10"] = "ITEM",
+    },
+  },
+  ["Wiedergutmachung,"] = {
+    ["id"] = 9266,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["start"] = {
+      ["Bronn Fitzzang"] = "NPC",
+    },
+    ["end"] = {
+      ["Bronn Fitzzang"] = "NPC",
+    },
+    ["item"] = {
+      ["Runenstoff,40"] = "ITEM",
+      ["Kohle,4"] = "ITEM",
     },
   },
 }

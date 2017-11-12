@@ -847,26 +847,27 @@ pfDB["vendors"]["deDE"] = {
     [75] = 'Gnaz Dusselflamm,0',
     [76] = 'Mazk Zielschuss,0',
     [77] = 'Rizz Wackelbolz,0',
-    [78] = 'Fradd Schnellschalt,0',
-    [79] = 'Christoph Jeffkott,0',
-    [80] = 'Micha Yance,0',
-    [81] = 'Zora Guthrek,0',
-    [82] = 'Abigail Shiel,0',
-    [83] = 'Loslor Rudge,0',
-    [84] = 'Golorn Frostbart,0',
-    [85] = 'Thrawn Boltar,0',
-    [86] = 'Drac Grobschnitt,0',
-    [87] = 'Kersok Prond,0',
-    [88] = 'Neal Allen,0',
-    [89] = 'Edna Mullby,0',
-    [90] = 'Drake Lindgren,0',
-    [91] = 'Nerrist,0',
-    [92] = 'Banalash,0',
-    [93] = 'Gunder Dornbusch,0',
-    [94] = 'Gina MacGregor,0',
-    [95] = 'Karen Schneyder,0',
-    [96] = 'Amy Davenport,0',
-    [97] = 'Tharynn Bouden,0',
+    [78] = 'Namdo Blitzzischel,0',
+    [79] = 'Fradd Schnellschalt,0',
+    [80] = 'Christoph Jeffkott,0',
+    [81] = 'Micha Yance,0',
+    [82] = 'Zora Guthrek,0',
+    [83] = 'Abigail Shiel,0',
+    [84] = 'Loslor Rudge,0',
+    [85] = 'Golorn Frostbart,0',
+    [86] = 'Thrawn Boltar,0',
+    [87] = 'Drac Grobschnitt,0',
+    [88] = 'Kersok Prond,0',
+    [89] = 'Neal Allen,0',
+    [90] = 'Edna Mullby,0',
+    [91] = 'Drake Lindgren,0',
+    [92] = 'Nerrist,0',
+    [93] = 'Banalash,0',
+    [94] = 'Gunder Dornbusch,0',
+    [95] = 'Gina MacGregor,0',
+    [96] = 'Karen Schneyder,0',
+    [97] = 'Amy Davenport,0',
+    [98] = 'Tharynn Bouden,0',
   },
   ['Gewöhnliches Pergament'] =
   {
@@ -891,10 +892,11 @@ pfDB["vendors"]["deDE"] = {
     [19] = 'Gnaz Dusselflamm,0',
     [20] = 'Mazk Zielschuss,0',
     [21] = 'Rizz Wackelbolz,0',
-    [22] = 'Fradd Schnellschalt,0',
-    [23] = 'Loslor Rudge,0',
-    [24] = 'Neal Allen,0',
-    [25] = 'Adair Gilroy,0',
+    [22] = 'Namdo Blitzzischel,0',
+    [23] = 'Fradd Schnellschalt,0',
+    [24] = 'Loslor Rudge,0',
+    [25] = 'Neal Allen,0',
+    [26] = 'Adair Gilroy,0',
   },
   ['Bleiche'] =
   {
@@ -989,6 +991,14 @@ pfDB["vendors"]["deDE"] = {
     [2] = 'Argentumrüstmeister Funkellicht,0',
     [3] = 'Argentumrüstmeister Hasana,0',
   },
+  ['Kettenstiefel des Blutgardisten'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Kettenstulpen des Blutgardisten'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Kettenschienbeinschützer des Blutgardisten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
@@ -997,11 +1007,27 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
+  ['Drachenlederstiefel des Blutgardisten'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Drachenlederstulpen des Blutgardisten'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Drachenlederhandschutz des Blutgardisten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Drachenledertreter des Blutgardisten'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Schreckenszwirnstiefel des Blutgardisten'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Schreckenszwirnhandschuhe des Blutgardisten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
@@ -1017,6 +1043,14 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
+  ['Ledertreter des Blutgardisten'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Lederklemmen des Blutgardisten'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Lederlaufschuhe des Blutgardisten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
@@ -1025,7 +1059,19 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
+  ['Panzerhandschutz des Blutgardisten'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Panzerklemmen des Blutgardisten'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Panzerlaufschuhe des Blutgardisten'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Plattenstiefel des Blutgardisten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
@@ -1033,7 +1079,19 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
+  ['Plattenhandschuhe des Blutgardisten'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Plattenschienbeinschützer des Blutgardisten'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Satinstiefel des Blutgardisten'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Satinhandschuhe des Blutgardisten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
@@ -1133,7 +1191,11 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Javnir Nashak,0',
     [2] = 'Wagner Hammerschlag,0',
-    [3] = 'Lillian Singh,0',
+    [3] = 'Kizzak Funks,0',
+    [4] = 'Jaxxil Funks,0',
+    [5] = 'Lillian Singh,0',
+    [6] = 'Hexknall Kawumms,0',
+    [7] = 'Ziggle Funks,0',
   },
   ['Blauer Roboschreiter'] =
   {
@@ -1167,7 +1229,11 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Blauer Funkler'] =
   {
-    [1] = 'Lillian Singh,0',
+    [1] = 'Kizzak Funks,0',
+    [2] = 'Jaxxil Funks,0',
+    [3] = 'Lillian Singh,0',
+    [4] = 'Hexknall Kawumms,0',
+    [5] = 'Ziggle Funks,0',
   },
   ['Verschwommene Axt'] =
   {
@@ -1472,9 +1538,10 @@ pfDB["vendors"]["deDE"] = {
     [6] = 'Elizabeth Van Talen,1',
     [7] = 'Herble Butzentand,1',
     [8] = 'Rizz Wackelbolz,1',
-    [9] = 'Fradd Schnellschalt,1',
-    [10] = 'Loslor Rudge,1',
-    [11] = 'Neal Allen,1',
+    [9] = 'Namdo Blitzzischel,1',
+    [10] = 'Fradd Schnellschalt,1',
+    [11] = 'Loslor Rudge,1',
+    [12] = 'Neal Allen,1',
   },
   ['Bronzeröhre'] =
   {
@@ -1488,9 +1555,10 @@ pfDB["vendors"]["deDE"] = {
     [8] = 'Gnaz Dusselflamm,2',
     [9] = 'Mazk Zielschuss,2',
     [10] = 'Rizz Wackelbolz,2',
-    [11] = 'Fradd Schnellschalt,2',
-    [12] = 'Loslor Rudge,2',
-    [13] = 'Neal Allen,2',
+    [11] = 'Namdo Blitzzischel,2',
+    [12] = 'Fradd Schnellschalt,2',
+    [13] = 'Loslor Rudge,2',
+    [14] = 'Neal Allen,2',
   },
   ['Zaumzeug des braunen Pferdes'] =
   {
@@ -1810,7 +1878,15 @@ pfDB["vendors"]["deDE"] = {
     [15] = 'Aldric Moor,0',
     [16] = 'Morhan Kupferzunge,0',
   },
+  ['Kettenkopfschutz des Feldherrn'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Kettenhelm des Feldherrn'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Kettenschulterstücke des Feldherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
@@ -1822,7 +1898,15 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
+  ['Drachenlederhelm des Feldherrn'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Drachenlederschultern des Feldherrn'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Drachenlederschiftung des Feldherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
@@ -1830,11 +1914,27 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
+  ['Schreckenszwirnkapuze des Feldherrn'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Schreckenszwirnschultern des Feldherrn'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Schreckenszwirnschiftung des Feldherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
+  ['Lederkopfschutz des Feldherrn'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Lederhelm des Feldherrn'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Ledermantel des Feldherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
@@ -1846,7 +1946,19 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
+  ['Panzerhelm des Feldherrn'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Panzerschulterstücke des Feldherrn'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Panzerschultern des Feldherrn'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Plattenkopfschutz des Feldherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
@@ -1854,7 +1966,15 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
+  ['Plattenschulterstücke des Feldherrn'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Plattenschultern des Feldherrn'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Satingugel des Feldherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
@@ -1863,6 +1983,10 @@ pfDB["vendors"]["deDE"] = {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Satinmantel des Feldherrn'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Satinschulterpolster des Feldherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
@@ -1920,7 +2044,9 @@ pfDB["vendors"]["deDE"] = {
   ['Aschenstoffgamaschen'] =
   {
     [1] = 'Vinasia,1',
-    [2] = 'Thralosh,0',
+    [2] = 'Vinasia,1',
+    [3] = 'Thralosh,0',
+    [4] = 'Thralosh,0',
   },
   ['Muschelfleisch'] =
   {
@@ -2080,9 +2206,10 @@ pfDB["vendors"]["deDE"] = {
     [17] = 'Gnaz Dusselflamm,4',
     [18] = 'Mazk Zielschuss,4',
     [19] = 'Rizz Wackelbolz,4',
-    [20] = 'Fradd Schnellschalt,4',
-    [21] = 'Loslor Rudge,4',
-    [22] = 'Neal Allen,4',
+    [20] = 'Namdo Blitzzischel,4',
+    [21] = 'Fradd Schnellschalt,4',
+    [22] = 'Loslor Rudge,4',
+    [23] = 'Neal Allen,4',
   },
   ['Grober Faden'] =
   {
@@ -2283,9 +2410,10 @@ pfDB["vendors"]["deDE"] = {
     [6] = 'Elizabeth Van Talen,2',
     [7] = 'Herble Butzentand,2',
     [8] = 'Rizz Wackelbolz,2',
-    [9] = 'Fradd Schnellschalt,2',
-    [10] = 'Loslor Rudge,2',
-    [11] = 'Neal Allen,2',
+    [9] = 'Namdo Blitzzischel,2',
+    [10] = 'Fradd Schnellschalt,2',
+    [11] = 'Loslor Rudge,2',
+    [12] = 'Neal Allen,2',
   },
   ['Kupferrute'] =
   {
@@ -2364,9 +2492,10 @@ pfDB["vendors"]["deDE"] = {
     [5] = 'Herble Butzentand,2',
     [6] = 'Mazk Zielschuss,2',
     [7] = 'Rizz Wackelbolz,2',
-    [8] = 'Fradd Schnellschalt,2',
-    [9] = 'Loslor Rudge,2',
-    [10] = 'Neal Allen,2',
+    [8] = 'Namdo Blitzzischel,2',
+    [9] = 'Fradd Schnellschalt,2',
+    [10] = 'Loslor Rudge,2',
+    [11] = 'Neal Allen,2',
   },
   ['Gesprungener Ledergürtel'] =
   {
@@ -2702,34 +2831,33 @@ pfDB["vendors"]["deDE"] = {
     [24] = 'Barkeeper Morag,0',
     [25] = 'Sognar Klippenbart,0',
     [26] = 'Gastwirt Feuerbräu,0',
-    [27] = 'Mikhail,0',
-    [28] = 'Uttnar,0',
-    [29] = 'Craig Nollwacht,0',
-    [30] = 'Dwane Wertle,0',
-    [31] = 'Ogg\'marr,0',
-    [32] = 'Turhaw,0',
-    [33] = 'Truk Wildbart,0',
-    [34] = 'Brogus Donnerbräu,0',
-    [35] = 'Jaeana,0',
-    [36] = 'Chylina,0',
-    [37] = 'Ulthaan,0',
-    [38] = 'Toddrick,0',
-    [39] = 'Hai\'zan,0',
-    [40] = 'Zlagk,0',
-    [41] = 'Grimtak,0',
-    [42] = 'Gahroot,0',
-    [43] = 'Kurll,0',
-    [44] = 'Zargh,0',
-    [45] = 'Denni\'ka,0',
-    [46] = 'Borstan,0',
-    [47] = 'Olvia,0',
-    [48] = 'Sherman Femmel,0',
-    [49] = 'Kaga Nebelläufer,0',
-    [50] = 'Narj Schnitzelschnitt,0',
-    [51] = 'Gastwirt Shay,0',
-    [52] = 'Bront Kaltgleve,0',
-    [53] = 'Gastwirt Helbrek,0',
-    [54] = 'Thultash,0',
+    [27] = 'Uttnar,0',
+    [28] = 'Craig Nollwacht,0',
+    [29] = 'Dwane Wertle,0',
+    [30] = 'Ogg\'marr,0',
+    [31] = 'Turhaw,0',
+    [32] = 'Truk Wildbart,0',
+    [33] = 'Brogus Donnerbräu,0',
+    [34] = 'Jaeana,0',
+    [35] = 'Chylina,0',
+    [36] = 'Ulthaan,0',
+    [37] = 'Toddrick,0',
+    [38] = 'Hai\'zan,0',
+    [39] = 'Zlagk,0',
+    [40] = 'Grimtak,0',
+    [41] = 'Gahroot,0',
+    [42] = 'Kurll,0',
+    [43] = 'Zargh,0',
+    [44] = 'Denni\'ka,0',
+    [45] = 'Borstan,0',
+    [46] = 'Olvia,0',
+    [47] = 'Sherman Femmel,0',
+    [48] = 'Kaga Nebelläufer,0',
+    [49] = 'Narj Schnitzelschnitt,0',
+    [50] = 'Gastwirt Shay,0',
+    [51] = 'Bront Kaltgleve,0',
+    [52] = 'Gastwirt Helbrek,0',
+    [53] = 'Thultash,0',
   },
   ['Geschmeidige Lederrüstung'] =
   {
@@ -3852,10 +3980,11 @@ pfDB["vendors"]["deDE"] = {
     [19] = 'Gnaz Dusselflamm,0',
     [20] = 'Mazk Zielschuss,0',
     [21] = 'Rizz Wackelbolz,0',
-    [22] = 'Fradd Schnellschalt,0',
-    [23] = 'Loslor Rudge,0',
-    [24] = 'Neal Allen,0',
-    [25] = 'Adair Gilroy,0',
+    [22] = 'Namdo Blitzzischel,0',
+    [23] = 'Fradd Schnellschalt,0',
+    [24] = 'Loslor Rudge,0',
+    [25] = 'Neal Allen,0',
+    [26] = 'Adair Gilroy,0',
   },
   ['Angereicherter Mannakeks'] =
   {
@@ -4034,98 +4163,122 @@ pfDB["vendors"]["deDE"] = {
   ['Kettenbrustplatte des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Kettenhelm des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Kettenschiftung des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Koronale des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Kronenreif des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Drachenlederbrustplatte des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Drachenlederhelm des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Drachenlederschiftung des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Schreckenszwirnrobe des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Schreckenszwirnschultern des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Kopfputz des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lamellenbrustharnisch des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lamellengesichtsschutz des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lamellenschulterstücke des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lederner Brustharnisch des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lederne Schulterklappen des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lederne Maske des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Plattenrüstung des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Plattenhelm des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Plattenschulterschutz des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Satinmantel des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Satintracht des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Seidene Schiftung des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Seidene Tracht des Feldmarschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Feldtestset'] =
   {
@@ -4165,8 +4318,11 @@ pfDB["vendors"]["deDE"] = {
   ['Feine leichte Armbrust'] =
   {
     [1] = 'Thalgus Donnerfaust,0',
-    [2] = 'Benijah Fenner,0',
-    [3] = 'Marda Weller,0',
+    [2] = 'Thalgus Donnerfaust,0',
+    [3] = 'Benijah Fenner,0',
+    [4] = 'Benijah Fenner,0',
+    [5] = 'Marda Weller,0',
+    [6] = 'Marda Weller,0',
   },
   ['Feiner Langbogen'] =
   {
@@ -4399,19 +4555,18 @@ pfDB["vendors"]["deDE"] = {
     [3] = 'Edris Gerstenbart,0',
     [4] = 'Gwenna Feuerbräu,0',
     [5] = 'Gastwirt Feuerbräu,0',
-    [6] = 'Mikhail,0',
-    [7] = 'Nixxrax Ozapft,0',
-    [8] = 'Barkeeper Kelly,0',
-    [9] = 'Keeg Gibn,0',
-    [10] = 'Gastwirt Helbrek,0',
-    [11] = 'Elly Langstein,0',
-    [12] = 'Joachim Brenloh,0',
-    [13] = 'Jarel Moor,0',
-    [14] = 'Julia Gallina,0',
-    [15] = 'Unteroffizier De Vries,0',
-    [16] = 'Barkeeper Dobbins,0',
-    [17] = 'Roberto Pupellyverbos,0',
-    [18] = 'Joshua Maclure,0',
+    [6] = 'Nixxrax Ozapft,0',
+    [7] = 'Barkeeper Kelly,0',
+    [8] = 'Keeg Gibn,0',
+    [9] = 'Gastwirt Helbrek,0',
+    [10] = 'Elly Langstein,0',
+    [11] = 'Joachim Brenloh,0',
+    [12] = 'Jarel Moor,0',
+    [13] = 'Julia Gallina,0',
+    [14] = 'Unteroffizier De Vries,0',
+    [15] = 'Barkeeper Dobbins,0',
+    [16] = 'Roberto Pupellyverbos,0',
+    [17] = 'Joshua Maclure,0',
   },
   ['Dreschflegel'] =
   {
@@ -4597,6 +4752,10 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Rin\'wosho der Händler,0',
   },
+  ['Formel: Zweihandwaffe - Beweglichkeit'] =
+  {
+    [1] = 'Meilosh,0',
+  },
   ['Formel: Zweihandwaffe - Geringe Intelligenz'] =
   {
     [1] = 'Tilli Distelflaum,0',
@@ -4656,6 +4815,14 @@ pfDB["vendors"]["deDE"] = {
     [8] = 'Nata Morgenwandler,1',
     [9] = 'Jessara Cordell,1',
   },
+  ['Formel: Umhang - Großer Feuerwiderstand'] =
+  {
+    [1] = 'Kania,0',
+  },
+  ['Formel: Umhang - Großer Naturwiderstand'] =
+  {
+    [1] = 'Kania,0',
+  },
   ['Formel: Umhang - Schwache Beweglichkeit'] =
   {
     [1] = 'Kulwia,1',
@@ -4676,15 +4843,15 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Formel: Waffe - Mächtige Intelligenz'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Formel: Waffe - Mächtige Willenskraft'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Formel: Waffe - Stärke'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Formel: Geringes Manaöl'] =
   {
@@ -4739,6 +4906,10 @@ pfDB["vendors"]["deDE"] = {
   ['Formel: Zauberöl'] =
   {
     [1] = 'Kania,0',
+  },
+  ['Stinkbomben der Verlassenen'] =
+  {
+    [1] = 'Ruferin der Dunkelheit Yanka,0',
   },
   ['Franziska'] =
   {
@@ -4893,98 +5064,122 @@ pfDB["vendors"]["deDE"] = {
   ['Kettenstiefel des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Kettenhandschuhe des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Kettenbeinschützer des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Drachenlederstiefel des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Drachenlederhandschuhe des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Drachenledergamaschen des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Schreckenszwirnstiefel des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Schreckenszwirnhandschuhe des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Schreckenszwirnhose des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Lederbeinschützer des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Lederfäustlinge des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Ledertreter des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Panzerstiefel des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Panzerstulpen des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Panzergamaschen des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Plattenstiefel des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Plattenstulpen des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Plattengamaschen des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Satinstiefel des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Satinhandschuhe des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Satingamaschen des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Seidene Stiefel des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Seidene Handschützer des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Seidene Beinkleider des Kriegsherrn'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Geisterpilz'] =
   {
@@ -5149,18 +5344,22 @@ pfDB["vendors"]["deDE"] = {
   ['Aegis des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Schlachthammer des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Volltreffer des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Claymore des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Verwüster des Großmarschalls'] =
   {
@@ -5169,26 +5368,32 @@ pfDB["vendors"]["deDE"] = {
   ['Langdolch des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Gleve des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Handkanone des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Handaxt des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Linke Handklinge des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Langschwert des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Magierklinge des Großmarschalls'] =
   {
@@ -5197,22 +5402,27 @@ pfDB["vendors"]["deDE"] = {
   ['Prügler des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Repetierarmbrust des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Rechte Handklinge des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Stab des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Zerreißer des Großmarschalls'] =
   {
     [1] = 'Leutnant Jackspring,0',
+    [2] = 'Leutnant Jackspring,0',
   },
   ['Flinke Klinge des Großmarschalls'] =
   {
@@ -5452,7 +5662,11 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Javnir Nashak,0',
     [2] = 'Wagner Hammerschlag,0',
-    [3] = 'Lillian Singh,0',
+    [3] = 'Kizzak Funks,0',
+    [4] = 'Jaxxil Funks,0',
+    [5] = 'Lillian Singh,0',
+    [6] = 'Hexknall Kawumms,0',
+    [7] = 'Ziggle Funks,0',
   },
   ['Grüner Gartentee'] =
   {
@@ -6216,9 +6430,10 @@ pfDB["vendors"]["deDE"] = {
     [4] = 'Herble Butzentand,0',
     [5] = 'Ruppo Reißspule,1',
     [6] = 'Rizz Wackelbolz,0',
-    [7] = 'Fradd Schnellschalt,0',
-    [8] = 'Loslor Rudge,0',
-    [9] = 'Neal Allen,0',
+    [7] = 'Namdo Blitzzischel,1',
+    [8] = 'Fradd Schnellschalt,0',
+    [9] = 'Loslor Rudge,0',
+    [10] = 'Neal Allen,0',
   },
   ['Kürbisdrops der Schlotternächte'] =
   {
@@ -6314,34 +6529,33 @@ pfDB["vendors"]["deDE"] = {
     [20] = 'Barkeeper Morag,0',
     [21] = 'Sognar Klippenbart,0',
     [22] = 'Gastwirt Feuerbräu,0',
-    [23] = 'Mikhail,0',
-    [24] = 'Uttnar,0',
-    [25] = 'Craig Nollwacht,0',
-    [26] = 'Dwane Wertle,0',
-    [27] = 'Ogg\'marr,0',
-    [28] = 'Turhaw,0',
-    [29] = 'Truk Wildbart,0',
-    [30] = 'Brogus Donnerbräu,0',
-    [31] = 'Jaeana,0',
-    [32] = 'Chylina,0',
-    [33] = 'Ulthaan,0',
-    [34] = 'Toddrick,0',
-    [35] = 'Hai\'zan,0',
-    [36] = 'Zlagk,0',
-    [37] = 'Grimtak,0',
-    [38] = 'Gahroot,0',
-    [39] = 'Kurll,0',
-    [40] = 'Zargh,0',
-    [41] = 'Denni\'ka,0',
-    [42] = 'Borstan,0',
-    [43] = 'Olvia,0',
-    [44] = 'Sherman Femmel,0',
-    [45] = 'Kaga Nebelläufer,0',
-    [46] = 'Narj Schnitzelschnitt,0',
-    [47] = 'Gastwirt Shay,0',
-    [48] = 'Bront Kaltgleve,0',
-    [49] = 'Gastwirt Helbrek,0',
-    [50] = 'Thultash,0',
+    [23] = 'Uttnar,0',
+    [24] = 'Craig Nollwacht,0',
+    [25] = 'Dwane Wertle,0',
+    [26] = 'Ogg\'marr,0',
+    [27] = 'Turhaw,0',
+    [28] = 'Truk Wildbart,0',
+    [29] = 'Brogus Donnerbräu,0',
+    [30] = 'Jaeana,0',
+    [31] = 'Chylina,0',
+    [32] = 'Ulthaan,0',
+    [33] = 'Toddrick,0',
+    [34] = 'Hai\'zan,0',
+    [35] = 'Zlagk,0',
+    [36] = 'Grimtak,0',
+    [37] = 'Gahroot,0',
+    [38] = 'Kurll,0',
+    [39] = 'Zargh,0',
+    [40] = 'Denni\'ka,0',
+    [41] = 'Borstan,0',
+    [42] = 'Olvia,0',
+    [43] = 'Sherman Femmel,0',
+    [44] = 'Kaga Nebelläufer,0',
+    [45] = 'Narj Schnitzelschnitt,0',
+    [46] = 'Gastwirt Shay,0',
+    [47] = 'Bront Kaltgleve,0',
+    [48] = 'Gastwirt Helbrek,0',
+    [49] = 'Thultash,0',
   },
   ['Sperbereule'] =
   {
@@ -6363,23 +6577,22 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Ruhestein'] =
   {
-    [1] = 'Spuks,0',
-    [2] = 'Gastwirtin Lyshaerya,0',
-    [3] = 'Gastwirtin Heather,0',
-    [4] = 'Gastwirt Thulfram,0',
-    [5] = 'Gastwirtin Shyria,0',
-    [6] = 'Gastwirt Karakul,0',
-    [7] = 'Gastwirtin Trelayne,0',
-    [8] = 'Gastwirtin Kimlya,0',
-    [9] = 'Gastwirtin Shaussiy,0',
-    [10] = 'Gastwirt Ofenglut,0',
-    [11] = 'Gastwirtin Brianna,0',
-    [12] = 'Gastwirtin Janene,0',
-    [13] = 'Gastwirt Feuerbräu,0',
-    [14] = 'Gastwirt Anderson,0',
-    [15] = 'Gastwirt Helbrek,0',
-    [16] = 'Gastwirt Belm,0',
-    [17] = 'Gastwirt Farley,0',
+    [1] = 'Gastwirtin Lyshaerya,0',
+    [2] = 'Gastwirtin Heather,0',
+    [3] = 'Gastwirt Thulfram,0',
+    [4] = 'Gastwirtin Shyria,0',
+    [5] = 'Gastwirt Karakul,0',
+    [6] = 'Gastwirtin Trelayne,0',
+    [7] = 'Gastwirtin Kimlya,0',
+    [8] = 'Gastwirtin Shaussiy,0',
+    [9] = 'Gastwirt Ofenglut,0',
+    [10] = 'Gastwirtin Brianna,0',
+    [11] = 'Gastwirtin Janene,0',
+    [12] = 'Gastwirt Feuerbräu,0',
+    [13] = 'Gastwirt Anderson,0',
+    [14] = 'Gastwirt Helbrek,0',
+    [15] = 'Gastwirt Belm,0',
+    [16] = 'Gastwirt Farley,0',
   },
   ['Himmlischer Pfirsich'] =
   {
@@ -6735,17 +6948,18 @@ pfDB["vendors"]["deDE"] = {
     [47] = 'Gnaz Dusselflamm,0',
     [48] = 'Mazk Zielschuss,0',
     [49] = 'Rizz Wackelbolz,0',
-    [50] = 'Fradd Schnellschalt,0',
-    [51] = 'Christoph Jeffkott,0',
-    [52] = 'Micha Yance,0',
-    [53] = 'Zora Guthrek,0',
-    [54] = 'Loslor Rudge,0',
-    [55] = 'Kersok Prond,0',
-    [56] = 'Neal Allen,0',
-    [57] = 'Edna Mullby,0',
-    [58] = 'Nerrist,0',
-    [59] = 'Banalash,0',
-    [60] = 'Gunder Dornbusch,0',
+    [50] = 'Namdo Blitzzischel,0',
+    [51] = 'Fradd Schnellschalt,0',
+    [52] = 'Christoph Jeffkott,0',
+    [53] = 'Micha Yance,0',
+    [54] = 'Zora Guthrek,0',
+    [55] = 'Loslor Rudge,0',
+    [56] = 'Kersok Prond,0',
+    [57] = 'Neal Allen,0',
+    [58] = 'Edna Mullby,0',
+    [59] = 'Nerrist,0',
+    [60] = 'Banalash,0',
+    [61] = 'Gunder Dornbusch,0',
   },
   ['Zerbrochener schwerer Wurfdolch'] =
   {
@@ -6903,6 +7117,7 @@ pfDB["vendors"]["deDE"] = {
   ['Streitaxt des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Streitkolben des Obersten Kriegsfürsten'] =
   {
@@ -6911,18 +7126,22 @@ pfDB["vendors"]["deDE"] = {
   ['Schwert des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Knüttel des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Spaltbeil des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Armbrust des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Zerstörer des Obersten Kriegsfürsten'] =
   {
@@ -6931,18 +7150,22 @@ pfDB["vendors"]["deDE"] = {
   ['Großschwert des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Linke Klaue des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Schweinestecher des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Pulverisierer des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Schnellklinge des Obersten Kriegsfürsten'] =
   {
@@ -6951,18 +7174,22 @@ pfDB["vendors"]["deDE"] = {
   ['Schneide des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Doppelbogen des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Rechte Klaue des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Schildwall des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Zauberklinge des Obersten Kriegsfürsten'] =
   {
@@ -6971,6 +7198,7 @@ pfDB["vendors"]["deDE"] = {
   ['Der Straßenfeger des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Zerstörungsfoliant des Obersten Kriegsfürsten'] =
   {
@@ -6983,6 +7211,7 @@ pfDB["vendors"]["deDE"] = {
   ['Kriegsstab des Obersten Kriegsfürsten'] =
   {
     [1] = 'Steingardist Zarg,0',
+    [2] = 'Steingardist Zarg,0',
   },
   ['Kettengurt des Highlanders'] =
   {
@@ -7485,78 +7714,77 @@ pfDB["vendors"]["deDE"] = {
     [70] = 'Gwenna Feuerbräu,0',
     [71] = 'Gastwirt Feuerbräu,0',
     [72] = 'Ben Trias,0',
-    [73] = 'Mikhail,0',
-    [74] = 'Schankkellnerin Lillian,0',
-    [75] = 'Ogg\'marr,0',
-    [76] = 'Jawn Hochfeld,0',
-    [77] = 'Turhaw,0',
-    [78] = 'Truk Wildbart,0',
-    [79] = 'Morley Bates,0',
-    [80] = 'Eleanor Altbrot,0',
-    [81] = 'Tawny Grisette,0',
-    [82] = 'Danlyia,0',
-    [83] = 'Brogus Donnerbräu,0',
-    [84] = 'Tiyani,0',
-    [85] = 'Taldan,0',
-    [86] = 'Allyndia,0',
-    [87] = 'Kyndri,0',
-    [88] = 'Dalmond,0',
-    [89] = 'Fyrenna,0',
-    [90] = 'Jaeana,0',
-    [91] = 'Dendrythis,0',
-    [92] = 'Chylina,0',
-    [93] = 'Grawnal,0',
-    [94] = 'Haljan Eichenherz,0',
-    [95] = 'Maliynn,0',
-    [96] = 'Nantar,0',
-    [97] = 'Kira Liederschein,0',
-    [98] = 'Gastwirt Boorand Steppenwind,0',
-    [99] = 'Jhawna Saatwind,0',
-    [100] = 'Moodan Sonnenkorn,0',
-    [101] = 'Zlagk,0',
-    [102] = 'Grimtak,0',
-    [103] = 'Gruna,0',
-    [104] = 'Laer Steppenläufer,0',
-    [105] = 'Kurll,0',
-    [106] = 'Braumeister von Mühlenbern,0',
-    [107] = 'Bernie Heisten,0',
-    [108] = 'Sarah Lichthof,0',
-    [109] = 'Jazzik,0',
-    [110] = 'Barg,0',
-    [111] = 'Denni\'ka,0',
-    [112] = 'Trak\'gen,0',
-    [113] = 'Gabrielle Chase,0',
-    [114] = 'Gretchen Vogel,0',
-    [115] = 'Nixxrax Ozapft,0',
-    [116] = 'Bale,0',
-    [117] = 'Malygen,0',
-    [118] = 'Kayren Rußgrub,0',
-    [119] = 'Gastwirt Shay,0',
-    [120] = 'Barkeeper Kelly,0',
-    [121] = 'Neema,0',
-    [122] = 'Gastwirt Anderson,0',
-    [123] = 'Lyranne Federklang,0',
-    [124] = 'Edwin Harly,0',
-    [125] = 'Keeg Gibn,0',
-    [126] = 'Xandar Gutbart,0',
-    [127] = 'Yanni Wagemut,0',
-    [128] = 'Gastwirt Helbrek,0',
-    [129] = 'Gruham Rumdnul,0',
-    [130] = 'Neal Allen,0',
-    [131] = 'Elly Langstein,0',
-    [132] = 'Thurman Mullby,0',
-    [133] = 'Gastwirt Belm,0',
-    [134] = 'Kazan Mogosh,0',
-    [135] = 'Thultash,0',
-    [136] = 'Unteroffizier De Vries,0',
-    [137] = 'Lindsay Aschenlocke,0',
-    [138] = 'Korporal Bluth,0',
-    [139] = 'Rüstmeister Lewis,0',
-    [140] = 'Barkeeper Dobbins,0',
-    [141] = 'Gastwirt Farley,0',
-    [142] = 'Barkeeper Hann,0',
-    [143] = 'Joshua Maclure,0',
-    [144] = 'Mabel Solaj,0',
+    [73] = 'Schankkellnerin Lillian,0',
+    [74] = 'Ogg\'marr,0',
+    [75] = 'Jawn Hochfeld,0',
+    [76] = 'Turhaw,0',
+    [77] = 'Truk Wildbart,0',
+    [78] = 'Morley Bates,0',
+    [79] = 'Eleanor Altbrot,0',
+    [80] = 'Tawny Grisette,0',
+    [81] = 'Danlyia,0',
+    [82] = 'Brogus Donnerbräu,0',
+    [83] = 'Tiyani,0',
+    [84] = 'Taldan,0',
+    [85] = 'Allyndia,0',
+    [86] = 'Kyndri,0',
+    [87] = 'Dalmond,0',
+    [88] = 'Fyrenna,0',
+    [89] = 'Jaeana,0',
+    [90] = 'Dendrythis,0',
+    [91] = 'Chylina,0',
+    [92] = 'Grawnal,0',
+    [93] = 'Haljan Eichenherz,0',
+    [94] = 'Maliynn,0',
+    [95] = 'Nantar,0',
+    [96] = 'Kira Liederschein,0',
+    [97] = 'Gastwirt Boorand Steppenwind,0',
+    [98] = 'Jhawna Saatwind,0',
+    [99] = 'Moodan Sonnenkorn,0',
+    [100] = 'Zlagk,0',
+    [101] = 'Grimtak,0',
+    [102] = 'Gruna,0',
+    [103] = 'Laer Steppenläufer,0',
+    [104] = 'Kurll,0',
+    [105] = 'Braumeister von Mühlenbern,0',
+    [106] = 'Bernie Heisten,0',
+    [107] = 'Sarah Lichthof,0',
+    [108] = 'Jazzik,0',
+    [109] = 'Barg,0',
+    [110] = 'Denni\'ka,0',
+    [111] = 'Trak\'gen,0',
+    [112] = 'Gabrielle Chase,0',
+    [113] = 'Gretchen Vogel,0',
+    [114] = 'Nixxrax Ozapft,0',
+    [115] = 'Bale,0',
+    [116] = 'Malygen,0',
+    [117] = 'Kayren Rußgrub,0',
+    [118] = 'Gastwirt Shay,0',
+    [119] = 'Barkeeper Kelly,0',
+    [120] = 'Neema,0',
+    [121] = 'Gastwirt Anderson,0',
+    [122] = 'Lyranne Federklang,0',
+    [123] = 'Edwin Harly,0',
+    [124] = 'Keeg Gibn,0',
+    [125] = 'Xandar Gutbart,0',
+    [126] = 'Yanni Wagemut,0',
+    [127] = 'Gastwirt Helbrek,0',
+    [128] = 'Gruham Rumdnul,0',
+    [129] = 'Neal Allen,0',
+    [130] = 'Elly Langstein,0',
+    [131] = 'Thurman Mullby,0',
+    [132] = 'Gastwirt Belm,0',
+    [133] = 'Kazan Mogosh,0',
+    [134] = 'Thultash,0',
+    [135] = 'Unteroffizier De Vries,0',
+    [136] = 'Lindsay Aschenlocke,0',
+    [137] = 'Korporal Bluth,0',
+    [138] = 'Rüstmeister Lewis,0',
+    [139] = 'Barkeeper Dobbins,0',
+    [140] = 'Gastwirt Farley,0',
+    [141] = 'Barkeeper Hann,0',
+    [142] = 'Joshua Maclure,0',
+    [143] = 'Mabel Solaj,0',
   },
   ['Eisgewirkter Pfeil'] =
   {
@@ -7945,6 +8173,11 @@ pfDB["vendors"]["deDE"] = {
   ['Kettenhalsberge des Kürassiers'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Kettengamaschen des Kürassiers'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
   },
   ['Kettenbeinschützer des Kürassiers'] =
   {
@@ -7957,8 +8190,21 @@ pfDB["vendors"]["deDE"] = {
   ['Drachenledergamaschen des Kürassiers'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Drachenledertunika des Kürassiers'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Schreckenszwirnbeinlinge des Kürassiers'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
   },
   ['Schreckenszwirnbeinschützer des Kürassiers'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Schreckenszwirnrobe des Kürassiers'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
@@ -7969,8 +8215,14 @@ pfDB["vendors"]["deDE"] = {
   ['Lamellenbrustplatte des Kürassiers'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lamellengamaschen des Kürassiers'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Lederrüstung des Kürassiers'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
@@ -7981,6 +8233,11 @@ pfDB["vendors"]["deDE"] = {
   ['Lederbeinschützer des Kürassiers'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Plattenbrustschutz des Kürassiers'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
   },
   ['Plattenhalsberge des Kürassiers'] =
   {
@@ -7989,8 +8246,17 @@ pfDB["vendors"]["deDE"] = {
   ['Plattengamaschen des Kürassiers'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Satingamaschen des Kürassiers'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
   },
   ['Satinbeinschützer des Kürassiers'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Satinroben des Kürassiers'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
@@ -7998,11 +8264,27 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
+  ['Seidene Beinlinge des Kürassiers'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
   ['Seidenbeinschützer des Kürassiers'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
+  ['Seidene Gewandung des Kürassiers'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
   ['Seidentunika des Kürassiers'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Kettenstiefel des Hauptmanns'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Kettenstulpen des Hauptmanns'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
@@ -8014,11 +8296,27 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
+  ['Drachenlederfußlappen des Hauptmanns'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Drachenlederhandschuhe des Hauptmanns'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
   ['Drachenlederhandschutz des Hauptmanns'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
   ['Drachenledertreter des Hauptmanns'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Schreckenszwirnstiefel des Hauptmanns'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Schreckenszwirnhandschuhe des Hauptmanns'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
@@ -8033,8 +8331,18 @@ pfDB["vendors"]["deDE"] = {
   ['Lamellenstulpen des Hauptmanns'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lamellensabatons des Hauptmanns'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Lederstiefel des Hauptmanns'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Lederstulpen des Hauptmanns'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
@@ -8046,11 +8354,24 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
-  ['Plattenstulpen des Hauptmanns'] =
+  ['Plattenstiefel des Hauptmanns'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
+  ['Plattenstulpen des Hauptmanns'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
+  },
   ['Plattenschienbeinschützer des Hauptmanns'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Satinstiefel des Hauptmanns'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Satinhandschuhe des Hauptmanns'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
@@ -8059,6 +8380,14 @@ pfDB["vendors"]["deDE"] = {
     [1] = 'Stabsfeldwebel Clate,0',
   },
   ['Satinlaufschuhe des Hauptmanns'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Seidene Stiefel des Hauptmanns'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Seidene Handschuhe des Hauptmanns'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
@@ -8407,11 +8736,23 @@ pfDB["vendors"]["deDE"] = {
     [4] = 'Kelm Hargunth,0',
     [5] = 'Kelm Hargunth,0',
   },
+  ['Kettenbrustplatte des Zornbringers'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Kettenhalsberge des Zornbringers'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
+  ['Kettengamaschen des Zornbringers'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Kettenbeinschützer des Zornbringers'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Drachenlederbrustplatte des Zornbringers'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
@@ -8423,7 +8764,19 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
+  ['Drachenlederbeinkleider des Zornbringers'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Schreckenszwirngamaschen des Zornbringers'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Schreckenszwirnbeinschützer des Zornbringers'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Schreckenszwirnrobe des Zornbringers'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
@@ -8432,6 +8785,14 @@ pfDB["vendors"]["deDE"] = {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Lederbrustharnisch des Zornbringers'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Lederhalsberge des Zornbringers'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Ledergamaschen des Zornbringers'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
@@ -8446,11 +8807,23 @@ pfDB["vendors"]["deDE"] = {
     [3] = 'Grazlix,1',
     [4] = 'Morg Knarzbaum,0',
   },
+  ['Panzerbrustharnisch des Zornbringers'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Panzerhalsberge des Zornbringers'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
+  ['Panzergamaschen des Zornbringers'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Panzerbeinschützer des Zornbringers'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Plattenrüstung des Zornbringers'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
@@ -8462,11 +8835,23 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
+  ['Plattenbeinschützer des Zornbringers'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Satinbeinschützer des Zornbringers'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
+  ['Satinbeinkleider des Zornbringers'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
   ['Satintunika des Zornbringers'] =
+  {
+    [1] = 'Stabsfeldwebel Hola\'mahi,0',
+  },
+  ['Satintracht des Zornbringers'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
   },
@@ -8583,7 +8968,27 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
+  ['Kettenkopfschutz des Feldkommandanten'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Kettenschulterstücke des Feldkommandanten'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
   ['Kettenschultern des Feldkommandanten'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Krone des Feldkommandanten'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Diadem des Feldkommandanten'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Drachenlederschulterklappen des Feldkommandanten'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
@@ -8595,7 +9000,15 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
+  ['Drachenledertuch des Feldkommandanten'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
   ['Schreckenszwirngugel des Feldkommandanten'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Schreckenszwirnmantel des Feldkommandanten'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
@@ -8603,13 +9016,19 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
+  ['Kopfschutz des Feldkommandanten'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
   ['Lamellenkopfschutz des Feldkommandanten'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lamellenschultern des Feldkommandanten'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lederhelm des Feldkommandanten'] =
   {
@@ -8619,11 +9038,31 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
+  ['Lederschiftung des Feldkommandanten'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Lederschleier des Feldkommandanten'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
   ['Plattenkopfschutz des Feldkommandanten'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
+  ['Plattenhelm des Feldkommandanten'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Plattenschulterstücke des Feldkommandanten'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
   ['Plattenschultern des Feldkommandanten'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Satinamicia des Feldkommandanten'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
@@ -8640,6 +9079,10 @@ pfDB["vendors"]["deDE"] = {
     [1] = 'Stabsfeldwebel Clate,0',
   },
   ['Seidenmantel des Feldkommandanten'] =
+  {
+    [1] = 'Stabsfeldwebel Clate,0',
+  },
+  ['Seidene Schiftung des Feldkommandanten'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
   },
@@ -9098,98 +9541,122 @@ pfDB["vendors"]["deDE"] = {
   ['Kettenstiefel des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Kettenhandschutz des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Kettenbeinschützer des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Drachenlederstiefel des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Drachenlederstulpen des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Drachenlederbeinschützer des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Schreckenszwirnstiefel des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Schreckenszwirnhandschuhe des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Schreckenszwirngamaschen des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lamellenstiefel des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lamellenhandschuhe des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lamellenbeinplatten des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lederne Fußschützer des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lederner Handschutz des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Lederne Gamaschen des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Plattenstiefel des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Plattenstulpen des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Plattenbeinschützer des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Satinhandschuhe des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Satinhose des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Satinsandalen des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Seidene Fußlappen des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Seidene Handschuhe des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Seidene Gamaschen des Marschalls'] =
   {
     [1] = 'Stabsfeldwebel Clate,0',
+    [2] = 'Stabsfeldwebel Clate,0',
   },
   ['Massiver Langbogen'] =
   {
@@ -9346,82 +9813,81 @@ pfDB["vendors"]["deDE"] = {
     [78] = 'Gastwirt Feuerbräu,0',
     [79] = 'Bryllia Eisenmal,0',
     [80] = 'Ben Trias,0',
-    [81] = 'Mikhail,0',
-    [82] = 'Charity Mipsy,0',
-    [83] = 'Schankkellnerin Lillian,0',
-    [84] = 'Ogg\'marr,0',
-    [85] = 'Jawn Hochfeld,0',
-    [86] = 'Turhaw,0',
-    [87] = 'Truk Wildbart,0',
-    [88] = 'Morley Bates,0',
-    [89] = 'Eleanor Altbrot,0',
-    [90] = 'Tawny Grisette,0',
-    [91] = 'Danlyia,0',
-    [92] = 'Brogus Donnerbräu,0',
-    [93] = 'Mydrannul,0',
-    [94] = 'Tiyani,0',
-    [95] = 'Taldan,0',
-    [96] = 'Allyndia,0',
-    [97] = 'Kyndri,0',
-    [98] = 'Fyrenna,0',
-    [99] = 'Ellandrieth,0',
-    [100] = 'Jaeana,0',
-    [101] = 'Dendrythis,0',
-    [102] = 'Chylina,0',
-    [103] = 'Grawnal,0',
-    [104] = 'Haljan Eichenherz,0',
-    [105] = 'Maliynn,0',
-    [106] = 'Nantar,0',
-    [107] = 'Kira Liederschein,0',
-    [108] = 'Gastwirt Boorand Steppenwind,0',
-    [109] = 'Jhawna Saatwind,0',
-    [110] = 'Moodan Sonnenkorn,0',
-    [111] = 'Zlagk,0',
-    [112] = 'Grimtak,0',
-    [113] = 'Gruna,0',
-    [114] = 'Laer Steppenläufer,0',
-    [115] = 'Rarck,0',
-    [116] = 'Kurll,0',
-    [117] = 'Braumeister von Mühlenbern,0',
-    [118] = 'Bernie Heisten,0',
-    [119] = 'Sarah Lichthof,0',
-    [120] = 'Jazzik,0',
-    [121] = 'Denni\'ka,0',
-    [122] = 'Asoran,0',
-    [123] = 'Trak\'gen,0',
-    [124] = 'Gabrielle Chase,0',
-    [125] = 'Gretchen Vogel,0',
-    [126] = 'Grawl,0',
-    [127] = 'Nixxrax Ozapft,0',
-    [128] = 'Graud,0',
-    [129] = 'Vikki Lonsav,0',
-    [130] = 'Bale,0',
-    [131] = 'Malygen,0',
-    [132] = 'Kayren Rußgrub,0',
-    [133] = 'Gastwirt Shay,0',
-    [134] = 'Barkeeper Kelly,0',
-    [135] = 'Neema,0',
-    [136] = 'Gastwirt Anderson,0',
-    [137] = 'Lyranne Federklang,0',
-    [138] = 'Natheril Regenrufer,0',
-    [139] = 'Keeg Gibn,0',
-    [140] = 'Gastwirt Helbrek,0',
-    [141] = 'Gruham Rumdnul,0',
-    [142] = 'Neal Allen,0',
-    [143] = 'Elly Langstein,0',
-    [144] = 'Thurman Mullby,0',
-    [145] = 'Gastwirt Belm,0',
-    [146] = 'Kazan Mogosh,0',
-    [147] = 'Uthok,0',
-    [148] = 'Thultash,0',
-    [149] = 'Unteroffizier De Vries,0',
-    [150] = 'Lindsay Aschenlocke,0',
-    [151] = 'Korporal Bluth,0',
-    [152] = 'Barkeeper Dobbins,0',
-    [153] = 'Gastwirt Farley,0',
-    [154] = 'Barkeeper Hann,0',
-    [155] = 'Joshua Maclure,0',
-    [156] = 'Mabel Solaj,0',
+    [81] = 'Charity Mipsy,0',
+    [82] = 'Schankkellnerin Lillian,0',
+    [83] = 'Ogg\'marr,0',
+    [84] = 'Jawn Hochfeld,0',
+    [85] = 'Turhaw,0',
+    [86] = 'Truk Wildbart,0',
+    [87] = 'Morley Bates,0',
+    [88] = 'Eleanor Altbrot,0',
+    [89] = 'Tawny Grisette,0',
+    [90] = 'Danlyia,0',
+    [91] = 'Brogus Donnerbräu,0',
+    [92] = 'Mydrannul,0',
+    [93] = 'Tiyani,0',
+    [94] = 'Taldan,0',
+    [95] = 'Allyndia,0',
+    [96] = 'Kyndri,0',
+    [97] = 'Fyrenna,0',
+    [98] = 'Ellandrieth,0',
+    [99] = 'Jaeana,0',
+    [100] = 'Dendrythis,0',
+    [101] = 'Chylina,0',
+    [102] = 'Grawnal,0',
+    [103] = 'Haljan Eichenherz,0',
+    [104] = 'Maliynn,0',
+    [105] = 'Nantar,0',
+    [106] = 'Kira Liederschein,0',
+    [107] = 'Gastwirt Boorand Steppenwind,0',
+    [108] = 'Jhawna Saatwind,0',
+    [109] = 'Moodan Sonnenkorn,0',
+    [110] = 'Zlagk,0',
+    [111] = 'Grimtak,0',
+    [112] = 'Gruna,0',
+    [113] = 'Laer Steppenläufer,0',
+    [114] = 'Rarck,0',
+    [115] = 'Kurll,0',
+    [116] = 'Braumeister von Mühlenbern,0',
+    [117] = 'Bernie Heisten,0',
+    [118] = 'Sarah Lichthof,0',
+    [119] = 'Jazzik,0',
+    [120] = 'Denni\'ka,0',
+    [121] = 'Asoran,0',
+    [122] = 'Trak\'gen,0',
+    [123] = 'Gabrielle Chase,0',
+    [124] = 'Gretchen Vogel,0',
+    [125] = 'Grawl,0',
+    [126] = 'Nixxrax Ozapft,0',
+    [127] = 'Graud,0',
+    [128] = 'Vikki Lonsav,0',
+    [129] = 'Bale,0',
+    [130] = 'Malygen,0',
+    [131] = 'Kayren Rußgrub,0',
+    [132] = 'Gastwirt Shay,0',
+    [133] = 'Barkeeper Kelly,0',
+    [134] = 'Neema,0',
+    [135] = 'Gastwirt Anderson,0',
+    [136] = 'Lyranne Federklang,0',
+    [137] = 'Natheril Regenrufer,0',
+    [138] = 'Keeg Gibn,0',
+    [139] = 'Gastwirt Helbrek,0',
+    [140] = 'Gruham Rumdnul,0',
+    [141] = 'Neal Allen,0',
+    [142] = 'Elly Langstein,0',
+    [143] = 'Thurman Mullby,0',
+    [144] = 'Gastwirt Belm,0',
+    [145] = 'Kazan Mogosh,0',
+    [146] = 'Uthok,0',
+    [147] = 'Thultash,0',
+    [148] = 'Unteroffizier De Vries,0',
+    [149] = 'Lindsay Aschenlocke,0',
+    [150] = 'Korporal Bluth,0',
+    [151] = 'Barkeeper Dobbins,0',
+    [152] = 'Gastwirt Farley,0',
+    [153] = 'Barkeeper Hann,0',
+    [154] = 'Joshua Maclure,0',
+    [155] = 'Mabel Solaj,0',
   },
   ['Gnadenlose Axt'] =
   {
@@ -9629,27 +10095,28 @@ pfDB["vendors"]["deDE"] = {
     [84] = 'Gnaz Dusselflamm,0',
     [85] = 'Mazk Zielschuss,0',
     [86] = 'Rizz Wackelbolz,0',
-    [87] = 'Fradd Schnellschalt,0',
-    [88] = 'Christoph Jeffkott,0',
-    [89] = 'Micha Yance,0',
-    [90] = 'Zora Guthrek,0',
-    [91] = 'Abigail Shiel,0',
-    [92] = 'Loslor Rudge,0',
-    [93] = 'Golorn Frostbart,0',
-    [94] = 'Thrawn Boltar,0',
-    [95] = 'Drac Grobschnitt,0',
-    [96] = 'Kersok Prond,0',
-    [97] = 'Neal Allen,0',
-    [98] = 'Edna Mullby,0',
-    [99] = 'Drake Lindgren,0',
-    [100] = 'Nerrist,0',
-    [101] = 'Banalash,0',
-    [102] = 'Gunder Dornbusch,0',
-    [103] = 'Gina MacGregor,0',
-    [104] = 'Karen Schneyder,0',
-    [105] = 'Amy Davenport,0',
-    [106] = 'Karm Eisenkiel,0',
-    [107] = 'Tharynn Bouden,0',
+    [87] = 'Namdo Blitzzischel,0',
+    [88] = 'Fradd Schnellschalt,0',
+    [89] = 'Christoph Jeffkott,0',
+    [90] = 'Micha Yance,0',
+    [91] = 'Zora Guthrek,0',
+    [92] = 'Abigail Shiel,0',
+    [93] = 'Loslor Rudge,0',
+    [94] = 'Golorn Frostbart,0',
+    [95] = 'Thrawn Boltar,0',
+    [96] = 'Drac Grobschnitt,0',
+    [97] = 'Kersok Prond,0',
+    [98] = 'Neal Allen,0',
+    [99] = 'Edna Mullby,0',
+    [100] = 'Drake Lindgren,0',
+    [101] = 'Nerrist,0',
+    [102] = 'Banalash,0',
+    [103] = 'Gunder Dornbusch,0',
+    [104] = 'Gina MacGregor,0',
+    [105] = 'Karen Schneyder,0',
+    [106] = 'Amy Davenport,0',
+    [107] = 'Karm Eisenkiel,0',
+    [108] = 'Tharynn Bouden,0',
   },
   ['Winzigkleiner Diamantring'] =
   {
@@ -9821,73 +10288,72 @@ pfDB["vendors"]["deDE"] = {
     [78] = 'Gastwirt Feuerbräu,0',
     [79] = 'Bryllia Eisenmal,0',
     [80] = 'Ben Trias,0',
-    [81] = 'Mikhail,0',
-    [82] = 'Charity Mipsy,0',
-    [83] = 'Schankkellnerin Lillian,0',
-    [84] = 'Ogg\'marr,0',
-    [85] = 'Turhaw,0',
-    [86] = 'Truk Wildbart,0',
-    [87] = 'Morley Bates,0',
-    [88] = 'Eleanor Altbrot,0',
-    [89] = 'Tawny Grisette,0',
-    [90] = 'Danlyia,0',
-    [91] = 'Brogus Donnerbräu,0',
-    [92] = 'Mydrannul,0',
-    [93] = 'Tiyani,0',
-    [94] = 'Taldan,0',
-    [95] = 'Allyndia,0',
-    [96] = 'Kyndri,0',
-    [97] = 'Fyrenna,0',
-    [98] = 'Ellandrieth,0',
-    [99] = 'Jaeana,0',
-    [100] = 'Dendrythis,0',
-    [101] = 'Maliynn,0',
-    [102] = 'Nantar,0',
-    [103] = 'Kira Liederschein,0',
-    [104] = 'Gastwirt Boorand Steppenwind,0',
-    [105] = 'Jhawna Saatwind,0',
-    [106] = 'Moodan Sonnenkorn,0',
-    [107] = 'Zlagk,0',
-    [108] = 'Grimtak,0',
-    [109] = 'Gruna,0',
-    [110] = 'Laer Steppenläufer,0',
-    [111] = 'Rarck,0',
-    [112] = 'Kurll,0',
-    [113] = 'Braumeister von Mühlenbern,0',
-    [114] = 'Bernie Heisten,0',
-    [115] = 'Sarah Lichthof,0',
-    [116] = 'Denni\'ka,0',
-    [117] = 'Asoran,0',
-    [118] = 'Trak\'gen,0',
-    [119] = 'Gabrielle Chase,0',
-    [120] = 'Gretchen Vogel,0',
-    [121] = 'Grawl,0',
-    [122] = 'Nixxrax Ozapft,0',
-    [123] = 'Graud,0',
-    [124] = 'Vikki Lonsav,0',
-    [125] = 'Bale,0',
-    [126] = 'Malygen,0',
-    [127] = 'Kayren Rußgrub,0',
-    [128] = 'Gastwirt Shay,0',
-    [129] = 'Barkeeper Kelly,0',
-    [130] = 'Neema,0',
-    [131] = 'Gastwirt Anderson,0',
-    [132] = 'Lyranne Federklang,0',
-    [133] = 'Natheril Regenrufer,0',
-    [134] = 'Keeg Gibn,0',
-    [135] = 'Gastwirt Helbrek,0',
-    [136] = 'Elly Langstein,0',
-    [137] = 'Thurman Mullby,0',
-    [138] = 'Gastwirt Belm,0',
-    [139] = 'Kazan Mogosh,0',
-    [140] = 'Uthok,0',
-    [141] = 'Thultash,0',
-    [142] = 'Unteroffizier De Vries,0',
-    [143] = 'Korporal Bluth,0',
-    [144] = 'Barkeeper Dobbins,0',
-    [145] = 'Gastwirt Farley,0',
-    [146] = 'Barkeeper Hann,0',
-    [147] = 'Joshua Maclure,0',
+    [81] = 'Charity Mipsy,0',
+    [82] = 'Schankkellnerin Lillian,0',
+    [83] = 'Ogg\'marr,0',
+    [84] = 'Turhaw,0',
+    [85] = 'Truk Wildbart,0',
+    [86] = 'Morley Bates,0',
+    [87] = 'Eleanor Altbrot,0',
+    [88] = 'Tawny Grisette,0',
+    [89] = 'Danlyia,0',
+    [90] = 'Brogus Donnerbräu,0',
+    [91] = 'Mydrannul,0',
+    [92] = 'Tiyani,0',
+    [93] = 'Taldan,0',
+    [94] = 'Allyndia,0',
+    [95] = 'Kyndri,0',
+    [96] = 'Fyrenna,0',
+    [97] = 'Ellandrieth,0',
+    [98] = 'Jaeana,0',
+    [99] = 'Dendrythis,0',
+    [100] = 'Maliynn,0',
+    [101] = 'Nantar,0',
+    [102] = 'Kira Liederschein,0',
+    [103] = 'Gastwirt Boorand Steppenwind,0',
+    [104] = 'Jhawna Saatwind,0',
+    [105] = 'Moodan Sonnenkorn,0',
+    [106] = 'Zlagk,0',
+    [107] = 'Grimtak,0',
+    [108] = 'Gruna,0',
+    [109] = 'Laer Steppenläufer,0',
+    [110] = 'Rarck,0',
+    [111] = 'Kurll,0',
+    [112] = 'Braumeister von Mühlenbern,0',
+    [113] = 'Bernie Heisten,0',
+    [114] = 'Sarah Lichthof,0',
+    [115] = 'Denni\'ka,0',
+    [116] = 'Asoran,0',
+    [117] = 'Trak\'gen,0',
+    [118] = 'Gabrielle Chase,0',
+    [119] = 'Gretchen Vogel,0',
+    [120] = 'Grawl,0',
+    [121] = 'Nixxrax Ozapft,0',
+    [122] = 'Graud,0',
+    [123] = 'Vikki Lonsav,0',
+    [124] = 'Bale,0',
+    [125] = 'Malygen,0',
+    [126] = 'Kayren Rußgrub,0',
+    [127] = 'Gastwirt Shay,0',
+    [128] = 'Barkeeper Kelly,0',
+    [129] = 'Neema,0',
+    [130] = 'Gastwirt Anderson,0',
+    [131] = 'Lyranne Federklang,0',
+    [132] = 'Natheril Regenrufer,0',
+    [133] = 'Keeg Gibn,0',
+    [134] = 'Gastwirt Helbrek,0',
+    [135] = 'Elly Langstein,0',
+    [136] = 'Thurman Mullby,0',
+    [137] = 'Gastwirt Belm,0',
+    [138] = 'Kazan Mogosh,0',
+    [139] = 'Uthok,0',
+    [140] = 'Thultash,0',
+    [141] = 'Unteroffizier De Vries,0',
+    [142] = 'Korporal Bluth,0',
+    [143] = 'Barkeeper Dobbins,0',
+    [144] = 'Gastwirt Farley,0',
+    [145] = 'Barkeeper Hann,0',
+    [146] = 'Joshua Maclure,0',
   },
   ['Tumulttoffee aus Mondbruch'] =
   {
@@ -9976,58 +10442,57 @@ pfDB["vendors"]["deDE"] = {
     [72] = 'Gwenna Feuerbräu,0',
     [73] = 'Gastwirt Feuerbräu,0',
     [74] = 'Ben Trias,0',
-    [75] = 'Mikhail,0',
-    [76] = 'Schankkellnerin Lillian,0',
-    [77] = 'Ogg\'marr,0',
-    [78] = 'Turhaw,0',
-    [79] = 'Truk Wildbart,0',
-    [80] = 'Morley Bates,0',
-    [81] = 'Eleanor Altbrot,0',
-    [82] = 'Tawny Grisette,0',
-    [83] = 'Danlyia,0',
-    [84] = 'Brogus Donnerbräu,0',
-    [85] = 'Tiyani,0',
-    [86] = 'Taldan,0',
-    [87] = 'Allyndia,0',
-    [88] = 'Kyndri,0',
-    [89] = 'Fyrenna,0',
-    [90] = 'Jaeana,0',
-    [91] = 'Dendrythis,0',
-    [92] = 'Maliynn,0',
-    [93] = 'Nantar,0',
-    [94] = 'Kira Liederschein,0',
-    [95] = 'Gastwirt Boorand Steppenwind,0',
-    [96] = 'Jhawna Saatwind,0',
-    [97] = 'Moodan Sonnenkorn,0',
-    [98] = 'Zlagk,0',
-    [99] = 'Grimtak,0',
-    [100] = 'Gruna,0',
-    [101] = 'Laer Steppenläufer,0',
-    [102] = 'Kurll,0',
-    [103] = 'Braumeister von Mühlenbern,0',
-    [104] = 'Bernie Heisten,0',
-    [105] = 'Denni\'ka,0',
-    [106] = 'Gabrielle Chase,0',
-    [107] = 'Gretchen Vogel,0',
-    [108] = 'Nixxrax Ozapft,0',
-    [109] = 'Malygen,0',
-    [110] = 'Gastwirt Shay,0',
-    [111] = 'Barkeeper Kelly,0',
-    [112] = 'Neema,0',
-    [113] = 'Gastwirt Anderson,0',
-    [114] = 'Lyranne Federklang,0',
-    [115] = 'Keeg Gibn,0',
-    [116] = 'Gastwirt Helbrek,0',
-    [117] = 'Elly Langstein,0',
-    [118] = 'Gastwirt Belm,0',
-    [119] = 'Kazan Mogosh,0',
-    [120] = 'Thultash,0',
-    [121] = 'Unteroffizier De Vries,0',
-    [122] = 'Korporal Bluth,0',
-    [123] = 'Barkeeper Dobbins,0',
-    [124] = 'Gastwirt Farley,0',
-    [125] = 'Barkeeper Hann,0',
-    [126] = 'Joshua Maclure,0',
+    [75] = 'Schankkellnerin Lillian,0',
+    [76] = 'Ogg\'marr,0',
+    [77] = 'Turhaw,0',
+    [78] = 'Truk Wildbart,0',
+    [79] = 'Morley Bates,0',
+    [80] = 'Eleanor Altbrot,0',
+    [81] = 'Tawny Grisette,0',
+    [82] = 'Danlyia,0',
+    [83] = 'Brogus Donnerbräu,0',
+    [84] = 'Tiyani,0',
+    [85] = 'Taldan,0',
+    [86] = 'Allyndia,0',
+    [87] = 'Kyndri,0',
+    [88] = 'Fyrenna,0',
+    [89] = 'Jaeana,0',
+    [90] = 'Dendrythis,0',
+    [91] = 'Maliynn,0',
+    [92] = 'Nantar,0',
+    [93] = 'Kira Liederschein,0',
+    [94] = 'Gastwirt Boorand Steppenwind,0',
+    [95] = 'Jhawna Saatwind,0',
+    [96] = 'Moodan Sonnenkorn,0',
+    [97] = 'Zlagk,0',
+    [98] = 'Grimtak,0',
+    [99] = 'Gruna,0',
+    [100] = 'Laer Steppenläufer,0',
+    [101] = 'Kurll,0',
+    [102] = 'Braumeister von Mühlenbern,0',
+    [103] = 'Bernie Heisten,0',
+    [104] = 'Denni\'ka,0',
+    [105] = 'Gabrielle Chase,0',
+    [106] = 'Gretchen Vogel,0',
+    [107] = 'Nixxrax Ozapft,0',
+    [108] = 'Malygen,0',
+    [109] = 'Gastwirt Shay,0',
+    [110] = 'Barkeeper Kelly,0',
+    [111] = 'Neema,0',
+    [112] = 'Gastwirt Anderson,0',
+    [113] = 'Lyranne Federklang,0',
+    [114] = 'Keeg Gibn,0',
+    [115] = 'Gastwirt Helbrek,0',
+    [116] = 'Elly Langstein,0',
+    [117] = 'Gastwirt Belm,0',
+    [118] = 'Kazan Mogosh,0',
+    [119] = 'Thultash,0',
+    [120] = 'Unteroffizier De Vries,0',
+    [121] = 'Korporal Bluth,0',
+    [122] = 'Barkeeper Dobbins,0',
+    [123] = 'Gastwirt Farley,0',
+    [124] = 'Barkeeper Hann,0',
+    [125] = 'Joshua Maclure,0',
   },
   ['Morgenstern'] =
   {
@@ -10125,34 +10590,33 @@ pfDB["vendors"]["deDE"] = {
     [24] = 'Barkeeper Morag,0',
     [25] = 'Sognar Klippenbart,0',
     [26] = 'Gastwirt Feuerbräu,0',
-    [27] = 'Mikhail,0',
-    [28] = 'Uttnar,0',
-    [29] = 'Craig Nollwacht,0',
-    [30] = 'Dwane Wertle,0',
-    [31] = 'Ogg\'marr,0',
-    [32] = 'Turhaw,0',
-    [33] = 'Truk Wildbart,0',
-    [34] = 'Brogus Donnerbräu,0',
-    [35] = 'Jaeana,0',
-    [36] = 'Chylina,0',
-    [37] = 'Ulthaan,0',
-    [38] = 'Toddrick,0',
-    [39] = 'Hai\'zan,0',
-    [40] = 'Zlagk,0',
-    [41] = 'Grimtak,0',
-    [42] = 'Gahroot,0',
-    [43] = 'Kurll,0',
-    [44] = 'Zargh,0',
-    [45] = 'Denni\'ka,0',
-    [46] = 'Borstan,0',
-    [47] = 'Olvia,0',
-    [48] = 'Sherman Femmel,0',
-    [49] = 'Kaga Nebelläufer,0',
-    [50] = 'Narj Schnitzelschnitt,0',
-    [51] = 'Gastwirt Shay,0',
-    [52] = 'Bront Kaltgleve,0',
-    [53] = 'Gastwirt Helbrek,0',
-    [54] = 'Thultash,0',
+    [27] = 'Uttnar,0',
+    [28] = 'Craig Nollwacht,0',
+    [29] = 'Dwane Wertle,0',
+    [30] = 'Ogg\'marr,0',
+    [31] = 'Turhaw,0',
+    [32] = 'Truk Wildbart,0',
+    [33] = 'Brogus Donnerbräu,0',
+    [34] = 'Jaeana,0',
+    [35] = 'Chylina,0',
+    [36] = 'Ulthaan,0',
+    [37] = 'Toddrick,0',
+    [38] = 'Hai\'zan,0',
+    [39] = 'Zlagk,0',
+    [40] = 'Grimtak,0',
+    [41] = 'Gahroot,0',
+    [42] = 'Kurll,0',
+    [43] = 'Zargh,0',
+    [44] = 'Denni\'ka,0',
+    [45] = 'Borstan,0',
+    [46] = 'Olvia,0',
+    [47] = 'Sherman Femmel,0',
+    [48] = 'Kaga Nebelläufer,0',
+    [49] = 'Narj Schnitzelschnitt,0',
+    [50] = 'Gastwirt Shay,0',
+    [51] = 'Bront Kaltgleve,0',
+    [52] = 'Gastwirt Helbrek,0',
+    [53] = 'Thultash,0',
   },
   ['Mystikersarong'] =
   {
@@ -10531,7 +10995,7 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Muster: Schwarze Drachenschuppenstiefel'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Muster: Schwarze Drachenschuppenbrustplatte'] =
   {
@@ -10595,9 +11059,25 @@ pfDB["vendors"]["deDE"] = {
     [3] = 'Alexandra Bolero,0',
     [4] = 'Gina MacGregor,0',
   },
+  ['Muster: Dornenholzgürtel'] =
+  {
+    [1] = 'Aendel Windspeer,0',
+  },
+  ['Muster: Dornenholzstiefel'] =
+  {
+    [1] = 'Aendel Windspeer,0',
+  },
+  ['Muster: Dornenholzhelm'] =
+  {
+    [1] = 'Aendel Windspeer,0',
+  },
   ['Muster: Hellgelbes Hemd'] =
   {
     [1] = 'Danielle Stichelnaht,0',
+  },
+  ['Muster: Cenarische Kräutertasche'] =
+  {
+    [1] = 'Mishta,0',
   },
   ['Muster: Schimärenhandschuhe'] =
   {
@@ -10613,7 +11093,7 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Muster: Kernhundstiefel'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Muster: Purpurroter Seidenumhang'] =
   {
@@ -10691,7 +11171,7 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Muster: Flimmerkernhandschuhe'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Muster: Flimmerkerngamaschen'] =
   {
@@ -10699,15 +11179,19 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Muster: Flimmerkernmantel'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Muster: Flimmerkernrobe'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Muster: Frostsäblerstiefel'] =
   {
     [1] = 'Qia,1',
+  },
+  ['Muster: Gaeas Umarmung'] =
+  {
+    [1] = 'Mishta,0',
   },
   ['Muster: Edelsteinbesetzter Ledergürtel'] =
   {
@@ -10770,7 +11254,7 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Muster: Lavagürtel'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Muster: Lavendelfarbenes Magiestoffhemd'] =
   {
@@ -10796,7 +11280,7 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Muster: Schmelzhelm'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Muster: Mondstoff'] =
   {
@@ -10835,7 +11319,7 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Muster: Rosa Magiestoffhemd'] =
   {
-    [1] = 'Ausstatter Eric,0',
+    [1] = 'Ausstatter Eric,1',
     [2] = 'Borya,1',
   },
   ['Muster: Urzeitliche Fledermaushautarmschienen'] =
@@ -10915,6 +11399,10 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Aendel Windspeer,0',
   },
+  ['Muster: Cenarischer Ranzen'] =
+  {
+    [1] = 'Mishta,0',
+  },
   ['Muster: Schattenhauthandschuhe'] =
   {
     [1] = 'Rikqiz,1',
@@ -10939,6 +11427,18 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Werg Breitklinge,1',
     [2] = 'Leonard Porter,0',
+  },
+  ['Muster: Sylvankrone'] =
+  {
+    [1] = 'Mishta,0',
+  },
+  ['Muster: Sylvanschultern'] =
+  {
+    [1] = 'Mishta,0',
+  },
+  ['Muster: Sylvanweste'] =
+  {
+    [1] = 'Mishta,0',
   },
   ['Muster: Dicke Murlocrüstung'] =
   {
@@ -11132,13 +11632,17 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Rin\'wosho der Händler,0',
   },
-  ['Pläne: Dunkeleisenarmschienen'] =
+  ['Pläne: Dunkeleisenstiefel'] =
   {
     [1] = 'Lokhtos Düsterfeilsch,0',
   },
+  ['Pläne: Dunkeleisenarmschienen'] =
+  {
+    [1] = 'Lokhtos Düsterfeilsch,1',
+  },
   ['Pläne: Dunkeleisenzerstörer'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Pläne: Dunkeleisenstulpen'] =
   {
@@ -11146,7 +11650,7 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Pläne: Dunkeleisenhelm'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Pläne: Dunkeleisengamaschen'] =
   {
@@ -11154,7 +11658,7 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Pläne: Dunkeleisenhäscher'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Pläne: Dunkelseelenbrustplatte'] =
   {
@@ -11178,7 +11682,7 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Pläne: Feuriger Kettengurt'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Pläne: Feurige Kettenschultern'] =
   {
@@ -11206,6 +11710,10 @@ pfDB["vendors"]["deDE"] = {
     [2] = 'Sumi,1',
     [3] = 'Jutak,1',
   },
+  ['Pläne: Schwerer Obsidiangürtel'] =
+  {
+    [1] = 'Vargus,0',
+  },
   ['Pläne: Schwerer Gürtel der Holzschlundfeste'] =
   {
     [1] = 'Meilosh,0',
@@ -11217,6 +11725,26 @@ pfDB["vendors"]["deDE"] = {
   ['Pläne: Gewaltige Thoriumstreitaxt'] =
   {
     [1] = 'Magnus Frostrufer,0',
+  },
+  ['Pläne: Eisenrankengürtel'] =
+  {
+    [1] = 'Vargus,0',
+  },
+  ['Pläne: Eisenrankenbrustplatte'] =
+  {
+    [1] = 'Vargus,0',
+  },
+  ['Pläne: Eisenrankenhandschuhe'] =
+  {
+    [1] = 'Vargus,0',
+  },
+  ['Pläne: Gezackter Obsidianschild'] =
+  {
+    [1] = 'Generalleutnant Andorov,1',
+  },
+  ['Pläne: Leichter Obsidiangürtel'] =
+  {
+    [1] = 'Vargus,0',
   },
   ['Pläne: Massive Eisenaxt'] =
   {
@@ -11235,6 +11763,10 @@ pfDB["vendors"]["deDE"] = {
   ['Pläne: Nachtlauer'] =
   {
     [1] = 'Lokhtos Düsterfeilsch,0',
+  },
+  ['Pläne: Obsidianpanzertunika'] =
+  {
+    [1] = 'Generalleutnant Andorov,1',
   },
   ['Pläne: Verschnörkelte Thoriumhandaxt'] =
   {
@@ -12201,7 +12733,7 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Rezept: Elementarfeuer transmutieren'] =
   {
-    [1] = 'Lokhtos Düsterfeilsch,0',
+    [1] = 'Lokhtos Düsterfeilsch,1',
   },
   ['Rezept: Feuer zu Erde transmutieren'] =
   {
@@ -12324,15 +12856,23 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Javnir Nashak,0',
     [2] = 'Wagner Hammerschlag,0',
-    [3] = 'Lillian Singh,0',
+    [3] = 'Kizzak Funks,0',
+    [4] = 'Jaxxil Funks,0',
+    [5] = 'Lillian Singh,0',
+    [6] = 'Hexknall Kawumms,0',
+    [7] = 'Ziggle Funks,0',
   },
   ['Rote Feuerwerksrakete'] =
   {
-    [1] = 'Lillian Singh,0',
-    [2] = 'Zischknall Krawumms,0',
-    [3] = 'Unternehmer der Dunkeleisenzwerge,0',
-    [4] = 'Crazk Funks,0',
-    [5] = 'Darian Singh,0',
+    [1] = 'Kizzak Funks,0',
+    [2] = 'Jaxxil Funks,0',
+    [3] = 'Lillian Singh,0',
+    [4] = 'Hexknall Kawumms,0',
+    [5] = 'Ziggle Funks,0',
+    [6] = 'Zischknall Krawumms,0',
+    [7] = 'Unternehmer der Dunkeleisenzwerge,0',
+    [8] = 'Crazk Funks,0',
+    [9] = 'Darian Singh,0',
   },
   ['Würzige Hähnchenschlegel'] =
   {
@@ -12384,13 +12924,21 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Roter Funkler'] =
   {
-    [1] = 'Lillian Singh,0',
+    [1] = 'Kizzak Funks,0',
+    [2] = 'Jaxxil Funks,0',
+    [3] = 'Lillian Singh,0',
+    [4] = 'Hexknall Kawumms,0',
+    [5] = 'Ziggle Funks,0',
   },
   ['Feuerwerk mit roten Streifen'] =
   {
     [1] = 'Javnir Nashak,0',
     [2] = 'Wagner Hammerschlag,0',
-    [3] = 'Lillian Singh,0',
+    [3] = 'Kizzak Funks,0',
+    [4] = 'Jaxxil Funks,0',
+    [5] = 'Lillian Singh,0',
+    [6] = 'Hexknall Kawumms,0',
+    [7] = 'Ziggle Funks,0',
   },
   ['Roter traditioneller Hanbok'] =
   {
@@ -12398,7 +12946,11 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Rotes, weißes und blaues Feuerwerk'] =
   {
-    [1] = 'Lillian Singh,0',
+    [1] = 'Kizzak Funks,0',
+    [2] = 'Jaxxil Funks,0',
+    [3] = 'Lillian Singh,0',
+    [4] = 'Hexknall Kawumms,0',
+    [5] = 'Ziggle Funks,0',
   },
   ['Rotgetupfter Pilz'] =
   {
@@ -12502,110 +13054,109 @@ pfDB["vendors"]["deDE"] = {
     [79] = 'Gastwirt Feuerbräu,0',
     [80] = 'Bryllia Eisenmal,0',
     [81] = 'Ben Trias,0',
-    [82] = 'Mikhail,0',
-    [83] = 'Charity Mipsy,0',
-    [84] = 'Schankkellnerin Lillian,0',
-    [85] = 'Ogg\'marr,0',
-    [86] = 'Jawn Hochfeld,0',
-    [87] = 'Turhaw,0',
-    [88] = 'Truk Wildbart,0',
-    [89] = 'Morley Bates,0',
-    [90] = 'Eleanor Altbrot,0',
-    [91] = 'Tawny Grisette,0',
-    [92] = 'Ronald Burch,0',
-    [93] = 'Danlyia,0',
-    [94] = 'Nyoma,0',
-    [95] = 'Brogus Donnerbräu,0',
-    [96] = 'Mydrannul,0',
-    [97] = 'Fyldan,0',
-    [98] = 'Tiyani,0',
-    [99] = 'Taldan,0',
-    [100] = 'Allyndia,0',
-    [101] = 'Kyndri,0',
-    [102] = 'Dalmond,0',
-    [103] = 'Fyrenna,0',
-    [104] = 'Ellandrieth,0',
-    [105] = 'Jaeana,0',
-    [106] = 'Dendrythis,0',
-    [107] = 'Chylina,0',
-    [108] = 'Grawnal,0',
-    [109] = 'Haljan Eichenherz,0',
-    [110] = 'Maliynn,0',
-    [111] = 'Nantar,0',
-    [112] = 'Kira Liederschein,0',
-    [113] = 'Gastwirt Boorand Steppenwind,0',
-    [114] = 'Jhawna Saatwind,0',
-    [115] = 'Moodan Sonnenkorn,0',
-    [116] = 'Zlagk,0',
-    [117] = 'Grimtak,0',
-    [118] = 'Gruna,0',
-    [119] = 'Laer Steppenläufer,0',
-    [120] = 'Rarck,0',
-    [121] = 'Kurll,0',
-    [122] = 'Aldia,0',
-    [123] = 'Lyrai,0',
-    [124] = 'Bernie Heisten,0',
-    [125] = 'Sarah Lichthof,0',
-    [126] = 'Jazzik,0',
-    [127] = 'Barg,0',
-    [128] = 'Denni\'ka,0',
-    [129] = 'Xen\'to,0',
-    [130] = 'Asoran,0',
-    [131] = 'Trak\'gen,0',
-    [132] = 'Gabrielle Chase,0',
-    [133] = 'K\'waii,0',
-    [134] = 'Jark,0',
-    [135] = 'Duokna,0',
-    [136] = 'Gretchen Vogel,0',
-    [137] = 'Gloria Femmel,0',
-    [138] = 'Moorat Langschreiter,0',
-    [139] = 'Kawnie Sanfthauch,0',
-    [140] = 'Naal Nebelläufer,0',
-    [141] = 'Grawl,0',
-    [142] = 'Nixxrax Ozapft,0',
-    [143] = 'Graud,0',
-    [144] = 'Vikki Lonsav,0',
-    [145] = 'Bale,0',
-    [146] = 'Malygen,0',
-    [147] = 'Kelsey Yance,0',
-    [148] = 'Kayren Rußgrub,0',
-    [149] = 'Derak Nachtlauer,0',
-    [150] = 'Gastwirt Shay,0',
-    [151] = 'Micha Yance,0',
-    [152] = 'Barkeeper Kelly,0',
-    [153] = 'Neema,0',
-    [154] = 'Gastwirt Anderson,0',
-    [155] = 'Lyranne Federklang,0',
-    [156] = 'Edwin Harly,0',
-    [157] = 'Frau Winters,0',
-    [158] = 'Joshua Kien,0',
-    [159] = 'Natheril Regenrufer,0',
-    [160] = 'Keeg Gibn,0',
-    [161] = 'Kreg Bilmn,0',
-    [162] = 'Xandar Gutbart,0',
-    [163] = 'Yanni Wagemut,0',
-    [164] = 'Gastwirt Helbrek,0',
-    [165] = 'Gruham Rumdnul,0',
-    [166] = 'Neal Allen,0',
-    [167] = 'Elly Langstein,0',
-    [168] = 'Thurman Mullby,0',
-    [169] = 'Drake Lindgren,0',
-    [170] = 'Gastwirt Belm,0',
-    [171] = 'Kazan Mogosh,0',
-    [172] = 'Uthok,0',
-    [173] = 'Thultash,0',
-    [174] = 'Unteroffizier De Vries,0',
-    [175] = 'Adlin Stolzmut,0',
-    [176] = 'Lindsay Aschenlocke,0',
-    [177] = 'Korporal Bluth,0',
-    [178] = 'Rüstmeister Lewis,0',
-    [179] = 'Barkeeper Dobbins,0',
-    [180] = 'Gastwirt Farley,0',
-    [181] = 'Barkeeper Hann,0',
-    [182] = 'Joshua Maclure,0',
-    [183] = 'Mabel Solaj,0',
-    [184] = 'Bruder Danil,0',
-    [185] = 'Brog Grobschlacht,0',
+    [82] = 'Charity Mipsy,0',
+    [83] = 'Schankkellnerin Lillian,0',
+    [84] = 'Ogg\'marr,0',
+    [85] = 'Jawn Hochfeld,0',
+    [86] = 'Turhaw,0',
+    [87] = 'Truk Wildbart,0',
+    [88] = 'Morley Bates,0',
+    [89] = 'Eleanor Altbrot,0',
+    [90] = 'Tawny Grisette,0',
+    [91] = 'Ronald Burch,0',
+    [92] = 'Danlyia,0',
+    [93] = 'Nyoma,0',
+    [94] = 'Brogus Donnerbräu,0',
+    [95] = 'Mydrannul,0',
+    [96] = 'Fyldan,0',
+    [97] = 'Tiyani,0',
+    [98] = 'Taldan,0',
+    [99] = 'Allyndia,0',
+    [100] = 'Kyndri,0',
+    [101] = 'Dalmond,0',
+    [102] = 'Fyrenna,0',
+    [103] = 'Ellandrieth,0',
+    [104] = 'Jaeana,0',
+    [105] = 'Dendrythis,0',
+    [106] = 'Chylina,0',
+    [107] = 'Grawnal,0',
+    [108] = 'Haljan Eichenherz,0',
+    [109] = 'Maliynn,0',
+    [110] = 'Nantar,0',
+    [111] = 'Kira Liederschein,0',
+    [112] = 'Gastwirt Boorand Steppenwind,0',
+    [113] = 'Jhawna Saatwind,0',
+    [114] = 'Moodan Sonnenkorn,0',
+    [115] = 'Zlagk,0',
+    [116] = 'Grimtak,0',
+    [117] = 'Gruna,0',
+    [118] = 'Laer Steppenläufer,0',
+    [119] = 'Rarck,0',
+    [120] = 'Kurll,0',
+    [121] = 'Aldia,0',
+    [122] = 'Lyrai,0',
+    [123] = 'Bernie Heisten,0',
+    [124] = 'Sarah Lichthof,0',
+    [125] = 'Jazzik,0',
+    [126] = 'Barg,0',
+    [127] = 'Denni\'ka,0',
+    [128] = 'Xen\'to,0',
+    [129] = 'Asoran,0',
+    [130] = 'Trak\'gen,0',
+    [131] = 'Gabrielle Chase,0',
+    [132] = 'K\'waii,0',
+    [133] = 'Jark,0',
+    [134] = 'Duokna,0',
+    [135] = 'Gretchen Vogel,0',
+    [136] = 'Gloria Femmel,0',
+    [137] = 'Moorat Langschreiter,0',
+    [138] = 'Kawnie Sanfthauch,0',
+    [139] = 'Naal Nebelläufer,0',
+    [140] = 'Grawl,0',
+    [141] = 'Nixxrax Ozapft,0',
+    [142] = 'Graud,0',
+    [143] = 'Vikki Lonsav,0',
+    [144] = 'Bale,0',
+    [145] = 'Malygen,0',
+    [146] = 'Kelsey Yance,0',
+    [147] = 'Kayren Rußgrub,0',
+    [148] = 'Derak Nachtlauer,0',
+    [149] = 'Gastwirt Shay,0',
+    [150] = 'Micha Yance,0',
+    [151] = 'Barkeeper Kelly,0',
+    [152] = 'Neema,0',
+    [153] = 'Gastwirt Anderson,0',
+    [154] = 'Lyranne Federklang,0',
+    [155] = 'Edwin Harly,0',
+    [156] = 'Frau Winters,0',
+    [157] = 'Joshua Kien,0',
+    [158] = 'Natheril Regenrufer,0',
+    [159] = 'Keeg Gibn,0',
+    [160] = 'Kreg Bilmn,0',
+    [161] = 'Xandar Gutbart,0',
+    [162] = 'Yanni Wagemut,0',
+    [163] = 'Gastwirt Helbrek,0',
+    [164] = 'Gruham Rumdnul,0',
+    [165] = 'Neal Allen,0',
+    [166] = 'Elly Langstein,0',
+    [167] = 'Thurman Mullby,0',
+    [168] = 'Drake Lindgren,0',
+    [169] = 'Gastwirt Belm,0',
+    [170] = 'Kazan Mogosh,0',
+    [171] = 'Uthok,0',
+    [172] = 'Thultash,0',
+    [173] = 'Unteroffizier De Vries,0',
+    [174] = 'Adlin Stolzmut,0',
+    [175] = 'Lindsay Aschenlocke,0',
+    [176] = 'Korporal Bluth,0',
+    [177] = 'Rüstmeister Lewis,0',
+    [178] = 'Barkeeper Dobbins,0',
+    [179] = 'Gastwirt Farley,0',
+    [180] = 'Barkeeper Hann,0',
+    [181] = 'Joshua Maclure,0',
+    [182] = 'Mabel Solaj,0',
+    [183] = 'Bruder Danil,0',
+    [184] = 'Brog Grobschlacht,0',
   },
   ['Verstärkter Bogen'] =
   {
@@ -12852,34 +13403,33 @@ pfDB["vendors"]["deDE"] = {
     [28] = 'Barkeeper Morag,0',
     [29] = 'Sognar Klippenbart,0',
     [30] = 'Gastwirt Feuerbräu,0',
-    [31] = 'Mikhail,0',
-    [32] = 'Uttnar,0',
-    [33] = 'Craig Nollwacht,0',
-    [34] = 'Dwane Wertle,0',
-    [35] = 'Ogg\'marr,0',
-    [36] = 'Turhaw,0',
-    [37] = 'Truk Wildbart,0',
-    [38] = 'Brogus Donnerbräu,0',
-    [39] = 'Jaeana,0',
-    [40] = 'Chylina,0',
-    [41] = 'Ulthaan,0',
-    [42] = 'Toddrick,0',
-    [43] = 'Hai\'zan,0',
-    [44] = 'Zlagk,0',
-    [45] = 'Grimtak,0',
-    [46] = 'Gahroot,0',
-    [47] = 'Kurll,0',
-    [48] = 'Zargh,0',
-    [49] = 'Denni\'ka,0',
-    [50] = 'Borstan,0',
-    [51] = 'Olvia,0',
-    [52] = 'Sherman Femmel,0',
-    [53] = 'Kaga Nebelläufer,0',
-    [54] = 'Narj Schnitzelschnitt,0',
-    [55] = 'Gastwirt Shay,0',
-    [56] = 'Bront Kaltgleve,0',
-    [57] = 'Gastwirt Helbrek,0',
-    [58] = 'Thultash,0',
+    [31] = 'Uttnar,0',
+    [32] = 'Craig Nollwacht,0',
+    [33] = 'Dwane Wertle,0',
+    [34] = 'Ogg\'marr,0',
+    [35] = 'Turhaw,0',
+    [36] = 'Truk Wildbart,0',
+    [37] = 'Brogus Donnerbräu,0',
+    [38] = 'Jaeana,0',
+    [39] = 'Chylina,0',
+    [40] = 'Ulthaan,0',
+    [41] = 'Toddrick,0',
+    [42] = 'Hai\'zan,0',
+    [43] = 'Zlagk,0',
+    [44] = 'Grimtak,0',
+    [45] = 'Gahroot,0',
+    [46] = 'Kurll,0',
+    [47] = 'Zargh,0',
+    [48] = 'Denni\'ka,0',
+    [49] = 'Borstan,0',
+    [50] = 'Olvia,0',
+    [51] = 'Sherman Femmel,0',
+    [52] = 'Kaga Nebelläufer,0',
+    [53] = 'Narj Schnitzelschnitt,0',
+    [54] = 'Gastwirt Shay,0',
+    [55] = 'Bront Kaltgleve,0',
+    [56] = 'Gastwirt Helbrek,0',
+    [57] = 'Thultash,0',
   },
   ['Robe der Lehrlingszeit'] =
   {
@@ -13051,9 +13601,10 @@ pfDB["vendors"]["deDE"] = {
     [17] = 'Gnaz Dusselflamm,4',
     [18] = 'Mazk Zielschuss,4',
     [19] = 'Rizz Wackelbolz,4',
-    [20] = 'Fradd Schnellschalt,4',
-    [21] = 'Loslor Rudge,4',
-    [22] = 'Neal Allen,4',
+    [20] = 'Namdo Blitzzischel,4',
+    [21] = 'Fradd Schnellschalt,4',
+    [22] = 'Loslor Rudge,4',
+    [23] = 'Neal Allen,4',
   },
   ['Rauer Ledergürtel'] =
   {
@@ -13778,7 +14329,8 @@ pfDB["vendors"]["deDE"] = {
   ['Bauplan: Schwacher Rekombobulator'] =
   {
     [1] = 'Quietschspross,1',
-    [2] = 'Fradd Schnellschalt,1',
+    [2] = 'Namdo Blitzzischel,1',
+    [3] = 'Fradd Schnellschalt,1',
   },
   ['Bauplan: Mechanischer Mithrildrachling'] =
   {
@@ -13787,6 +14339,10 @@ pfDB["vendors"]["deDE"] = {
   ['Bauplan: Mächtige Zephyriumladung'] =
   {
     [1] = 'Xizzer Zischbolz,1',
+  },
+  ['Bauplan: Rotes Feuerwerk'] =
+  {
+    [1] = 'Sovik,1',
   },
   ['Bauplan: Schlangenexplosionsfeuerwerk'] =
   {
@@ -14058,6 +14614,7 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Hauptfeldwebel Biggins,0',
     [2] = 'Hauptfeldwebel Biggins,0',
+    [3] = 'Hauptfeldwebel Biggins,0',
   },
   ['Cape des Landsknechts'] =
   {
@@ -14433,9 +14990,10 @@ pfDB["vendors"]["deDE"] = {
     [6] = 'Sovik,3',
     [7] = 'Herble Butzentand,3',
     [8] = 'Rizz Wackelbolz,3',
-    [9] = 'Fradd Schnellschalt,3',
-    [10] = 'Loslor Rudge,3',
-    [11] = 'Neal Allen,3',
+    [9] = 'Namdo Blitzzischel,3',
+    [10] = 'Fradd Schnellschalt,3',
+    [11] = 'Loslor Rudge,3',
+    [12] = 'Neal Allen,3',
   },
   ['Silberne Ausgehroben'] =
   {
@@ -15189,6 +15747,10 @@ pfDB["vendors"]["deDE"] = {
     [14] = 'Grawn Thromwyn,0',
     [15] = 'Corina Stähler,0',
   },
+  ['Stinkbombenreiniger'] =
+  {
+    [1] = 'Unteroffizier Hartman,0',
+  },
   ['Herold des Steingardisten'] =
   {
     [1] = 'Kriegerheldin Steinfell,0',
@@ -15461,20 +16023,21 @@ pfDB["vendors"]["deDE"] = {
     [75] = 'Gnaz Dusselflamm,0',
     [76] = 'Mazk Zielschuss,0',
     [77] = 'Rizz Wackelbolz,0',
-    [78] = 'Fradd Schnellschalt,0',
-    [79] = 'Christoph Jeffkott,0',
-    [80] = 'Micha Yance,0',
-    [81] = 'Zora Guthrek,0',
-    [82] = 'Loslor Rudge,0',
-    [83] = 'Thrawn Boltar,0',
-    [84] = 'Kersok Prond,0',
-    [85] = 'Neal Allen,0',
-    [86] = 'Edna Mullby,0',
-    [87] = 'Nerrist,0',
-    [88] = 'Banalash,0',
-    [89] = 'Gunder Dornbusch,0',
-    [90] = 'Karen Schneyder,0',
-    [91] = 'Karm Eisenkiel,0',
+    [78] = 'Namdo Blitzzischel,0',
+    [79] = 'Fradd Schnellschalt,0',
+    [80] = 'Christoph Jeffkott,0',
+    [81] = 'Micha Yance,0',
+    [82] = 'Zora Guthrek,0',
+    [83] = 'Loslor Rudge,0',
+    [84] = 'Thrawn Boltar,0',
+    [85] = 'Kersok Prond,0',
+    [86] = 'Neal Allen,0',
+    [87] = 'Edna Mullby,0',
+    [88] = 'Nerrist,0',
+    [89] = 'Banalash,0',
+    [90] = 'Gunder Dornbusch,0',
+    [91] = 'Karen Schneyder,0',
+    [92] = 'Karm Eisenkiel,0',
   },
   ['Beschlagener Gürtel'] =
   {
@@ -15711,74 +16274,73 @@ pfDB["vendors"]["deDE"] = {
     [78] = 'Gastwirt Feuerbräu,0',
     [79] = 'Bryllia Eisenmal,0',
     [80] = 'Ben Trias,0',
-    [81] = 'Mikhail,0',
-    [82] = 'Charity Mipsy,0',
-    [83] = 'Schankkellnerin Lillian,0',
-    [84] = 'Ogg\'marr,0',
-    [85] = 'Turhaw,0',
-    [86] = 'Truk Wildbart,0',
-    [87] = 'Morley Bates,0',
-    [88] = 'Eleanor Altbrot,0',
-    [89] = 'Tawny Grisette,0',
-    [90] = 'Danlyia,0',
-    [91] = 'Brogus Donnerbräu,0',
-    [92] = 'Mydrannul,0',
-    [93] = 'Tiyani,0',
-    [94] = 'Taldan,0',
-    [95] = 'Allyndia,0',
-    [96] = 'Kyndri,0',
-    [97] = 'Fyrenna,0',
-    [98] = 'Ellandrieth,0',
-    [99] = 'Jaeana,0',
-    [100] = 'Dendrythis,0',
-    [101] = 'Maliynn,0',
-    [102] = 'Nantar,0',
-    [103] = 'Kira Liederschein,0',
-    [104] = 'Gastwirt Boorand Steppenwind,0',
-    [105] = 'Jhawna Saatwind,0',
-    [106] = 'Moodan Sonnenkorn,0',
-    [107] = 'Zlagk,0',
-    [108] = 'Grimtak,0',
-    [109] = 'Gruna,0',
-    [110] = 'Laer Steppenläufer,0',
-    [111] = 'Rarck,0',
-    [112] = 'Kurll,0',
-    [113] = 'Braumeister von Mühlenbern,0',
-    [114] = 'Bernie Heisten,0',
-    [115] = 'Sarah Lichthof,0',
-    [116] = 'Denni\'ka,0',
-    [117] = 'Asoran,0',
-    [118] = 'Trak\'gen,0',
-    [119] = 'Gabrielle Chase,0',
-    [120] = 'Gretchen Vogel,0',
-    [121] = 'Ausgrabungsleiter Roggendol,0',
-    [122] = 'Grawl,0',
-    [123] = 'Nixxrax Ozapft,0',
-    [124] = 'Graud,0',
-    [125] = 'Vikki Lonsav,0',
-    [126] = 'Bale,0',
-    [127] = 'Malygen,0',
-    [128] = 'Kayren Rußgrub,0',
-    [129] = 'Gastwirt Shay,0',
-    [130] = 'Barkeeper Kelly,0',
-    [131] = 'Neema,0',
-    [132] = 'Gastwirt Anderson,0',
-    [133] = 'Lyranne Federklang,0',
-    [134] = 'Natheril Regenrufer,0',
-    [135] = 'Keeg Gibn,0',
-    [136] = 'Gastwirt Helbrek,0',
-    [137] = 'Elly Langstein,0',
-    [138] = 'Thurman Mullby,0',
-    [139] = 'Gastwirt Belm,0',
-    [140] = 'Kazan Mogosh,0',
-    [141] = 'Uthok,0',
-    [142] = 'Thultash,0',
-    [143] = 'Unteroffizier De Vries,0',
-    [144] = 'Korporal Bluth,0',
-    [145] = 'Barkeeper Dobbins,0',
-    [146] = 'Gastwirt Farley,0',
-    [147] = 'Barkeeper Hann,0',
-    [148] = 'Joshua Maclure,0',
+    [81] = 'Charity Mipsy,0',
+    [82] = 'Schankkellnerin Lillian,0',
+    [83] = 'Ogg\'marr,0',
+    [84] = 'Turhaw,0',
+    [85] = 'Truk Wildbart,0',
+    [86] = 'Morley Bates,0',
+    [87] = 'Eleanor Altbrot,0',
+    [88] = 'Tawny Grisette,0',
+    [89] = 'Danlyia,0',
+    [90] = 'Brogus Donnerbräu,0',
+    [91] = 'Mydrannul,0',
+    [92] = 'Tiyani,0',
+    [93] = 'Taldan,0',
+    [94] = 'Allyndia,0',
+    [95] = 'Kyndri,0',
+    [96] = 'Fyrenna,0',
+    [97] = 'Ellandrieth,0',
+    [98] = 'Jaeana,0',
+    [99] = 'Dendrythis,0',
+    [100] = 'Maliynn,0',
+    [101] = 'Nantar,0',
+    [102] = 'Kira Liederschein,0',
+    [103] = 'Gastwirt Boorand Steppenwind,0',
+    [104] = 'Jhawna Saatwind,0',
+    [105] = 'Moodan Sonnenkorn,0',
+    [106] = 'Zlagk,0',
+    [107] = 'Grimtak,0',
+    [108] = 'Gruna,0',
+    [109] = 'Laer Steppenläufer,0',
+    [110] = 'Rarck,0',
+    [111] = 'Kurll,0',
+    [112] = 'Braumeister von Mühlenbern,0',
+    [113] = 'Bernie Heisten,0',
+    [114] = 'Sarah Lichthof,0',
+    [115] = 'Denni\'ka,0',
+    [116] = 'Asoran,0',
+    [117] = 'Trak\'gen,0',
+    [118] = 'Gabrielle Chase,0',
+    [119] = 'Gretchen Vogel,0',
+    [120] = 'Ausgrabungsleiter Roggendol,0',
+    [121] = 'Grawl,0',
+    [122] = 'Nixxrax Ozapft,0',
+    [123] = 'Graud,0',
+    [124] = 'Vikki Lonsav,0',
+    [125] = 'Bale,0',
+    [126] = 'Malygen,0',
+    [127] = 'Kayren Rußgrub,0',
+    [128] = 'Gastwirt Shay,0',
+    [129] = 'Barkeeper Kelly,0',
+    [130] = 'Neema,0',
+    [131] = 'Gastwirt Anderson,0',
+    [132] = 'Lyranne Federklang,0',
+    [133] = 'Natheril Regenrufer,0',
+    [134] = 'Keeg Gibn,0',
+    [135] = 'Gastwirt Helbrek,0',
+    [136] = 'Elly Langstein,0',
+    [137] = 'Thurman Mullby,0',
+    [138] = 'Gastwirt Belm,0',
+    [139] = 'Kazan Mogosh,0',
+    [140] = 'Uthok,0',
+    [141] = 'Thultash,0',
+    [142] = 'Unteroffizier De Vries,0',
+    [143] = 'Korporal Bluth,0',
+    [144] = 'Barkeeper Dobbins,0',
+    [145] = 'Gastwirt Farley,0',
+    [146] = 'Barkeeper Hann,0',
+    [147] = 'Joshua Maclure,0',
   },
   ['Schneller blauer Raptor'] =
   {
@@ -16201,9 +16763,13 @@ pfDB["vendors"]["deDE"] = {
   ['Die unaufhaltbare Macht'] =
   {
     [1] = 'Jorek Eisenflanke,0',
-    [2] = 'Grunnda Wolfsherz,0',
-    [3] = 'Thanthaldis Schneeglanz,0',
-    [4] = 'Gaelden Hammerschmied,0',
+    [2] = 'Jorek Eisenflanke,0',
+    [3] = 'Grunnda Wolfsherz,0',
+    [4] = 'Grunnda Wolfsherz,0',
+    [5] = 'Thanthaldis Schneeglanz,0',
+    [6] = 'Thanthaldis Schneeglanz,0',
+    [7] = 'Gaelden Hammerschmied,0',
+    [8] = 'Gaelden Hammerschmied,0',
   },
   ['Therazanes Berührung'] =
   {
@@ -16512,34 +17078,33 @@ pfDB["vendors"]["deDE"] = {
     [20] = 'Barkeeper Morag,0',
     [21] = 'Sognar Klippenbart,0',
     [22] = 'Gastwirt Feuerbräu,0',
-    [23] = 'Mikhail,0',
-    [24] = 'Uttnar,0',
-    [25] = 'Craig Nollwacht,0',
-    [26] = 'Dwane Wertle,0',
-    [27] = 'Ogg\'marr,0',
-    [28] = 'Turhaw,0',
-    [29] = 'Truk Wildbart,0',
-    [30] = 'Brogus Donnerbräu,0',
-    [31] = 'Jaeana,0',
-    [32] = 'Chylina,0',
-    [33] = 'Ulthaan,0',
-    [34] = 'Toddrick,0',
-    [35] = 'Hai\'zan,0',
-    [36] = 'Zlagk,0',
-    [37] = 'Grimtak,0',
-    [38] = 'Gahroot,0',
-    [39] = 'Kurll,0',
-    [40] = 'Zargh,0',
-    [41] = 'Denni\'ka,0',
-    [42] = 'Borstan,0',
-    [43] = 'Olvia,0',
-    [44] = 'Sherman Femmel,0',
-    [45] = 'Kaga Nebelläufer,0',
-    [46] = 'Narj Schnitzelschnitt,0',
-    [47] = 'Gastwirt Shay,0',
-    [48] = 'Bront Kaltgleve,0',
-    [49] = 'Gastwirt Helbrek,0',
-    [50] = 'Thultash,0',
+    [23] = 'Uttnar,0',
+    [24] = 'Craig Nollwacht,0',
+    [25] = 'Dwane Wertle,0',
+    [26] = 'Ogg\'marr,0',
+    [27] = 'Turhaw,0',
+    [28] = 'Truk Wildbart,0',
+    [29] = 'Brogus Donnerbräu,0',
+    [30] = 'Jaeana,0',
+    [31] = 'Chylina,0',
+    [32] = 'Ulthaan,0',
+    [33] = 'Toddrick,0',
+    [34] = 'Hai\'zan,0',
+    [35] = 'Zlagk,0',
+    [36] = 'Grimtak,0',
+    [37] = 'Gahroot,0',
+    [38] = 'Kurll,0',
+    [39] = 'Zargh,0',
+    [40] = 'Denni\'ka,0',
+    [41] = 'Borstan,0',
+    [42] = 'Olvia,0',
+    [43] = 'Sherman Femmel,0',
+    [44] = 'Kaga Nebelläufer,0',
+    [45] = 'Narj Schnitzelschnitt,0',
+    [46] = 'Gastwirt Shay,0',
+    [47] = 'Bront Kaltgleve,0',
+    [48] = 'Gastwirt Helbrek,0',
+    [49] = 'Thultash,0',
   },
   ['Baumfroschkasten'] =
   {
@@ -16703,98 +17268,122 @@ pfDB["vendors"]["deDE"] = {
   ['Kettenbrustharnisch des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Kettenhelm des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Kettenschultern des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Drachenlederschulterklappen des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Drachenlederhalsberge des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Drachenlederhelm des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Schreckenszwirnkapuze des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Schreckenszwirnmantel des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Schreckenszwirnrobe des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Lederbrustplatte des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Lederhelm des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Lederschiftung des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Panzerrüstung des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Panzerhelm des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Panzerschiftung des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Plattenrüstung des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Plattenkopfstück des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Plattenschultern des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Satingugel des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Satinmantel des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Satinroben des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Seidene Amicia des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Seidene Gugel des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Seidene Gewandung des Kriegsfürsten'] =
   {
     [1] = 'Stabsfeldwebel Hola\'mahi,0',
+    [2] = 'Stabsfeldwebel Hola\'mahi,0',
   },
   ['Wappenrock des Kriegshymnenklans'] =
   {
@@ -16918,27 +17507,28 @@ pfDB["vendors"]["deDE"] = {
     [84] = 'Gnaz Dusselflamm,0',
     [85] = 'Mazk Zielschuss,0',
     [86] = 'Rizz Wackelbolz,0',
-    [87] = 'Fradd Schnellschalt,0',
-    [88] = 'Christoph Jeffkott,0',
-    [89] = 'Micha Yance,0',
-    [90] = 'Zora Guthrek,0',
-    [91] = 'Abigail Shiel,0',
-    [92] = 'Loslor Rudge,0',
-    [93] = 'Golorn Frostbart,0',
-    [94] = 'Thrawn Boltar,0',
-    [95] = 'Drac Grobschnitt,0',
-    [96] = 'Kersok Prond,0',
-    [97] = 'Neal Allen,0',
-    [98] = 'Edna Mullby,0',
-    [99] = 'Drake Lindgren,0',
-    [100] = 'Nerrist,0',
-    [101] = 'Banalash,0',
-    [102] = 'Gunder Dornbusch,0',
-    [103] = 'Gina MacGregor,0',
-    [104] = 'Karen Schneyder,0',
-    [105] = 'Amy Davenport,0',
-    [106] = 'Karm Eisenkiel,0',
-    [107] = 'Tharynn Bouden,0',
+    [87] = 'Namdo Blitzzischel,0',
+    [88] = 'Fradd Schnellschalt,0',
+    [89] = 'Christoph Jeffkott,0',
+    [90] = 'Micha Yance,0',
+    [91] = 'Zora Guthrek,0',
+    [92] = 'Abigail Shiel,0',
+    [93] = 'Loslor Rudge,0',
+    [94] = 'Golorn Frostbart,0',
+    [95] = 'Thrawn Boltar,0',
+    [96] = 'Drac Grobschnitt,0',
+    [97] = 'Kersok Prond,0',
+    [98] = 'Neal Allen,0',
+    [99] = 'Edna Mullby,0',
+    [100] = 'Drake Lindgren,0',
+    [101] = 'Nerrist,0',
+    [102] = 'Banalash,0',
+    [103] = 'Gunder Dornbusch,0',
+    [104] = 'Gina MacGregor,0',
+    [105] = 'Karen Schneyder,0',
+    [106] = 'Amy Davenport,0',
+    [107] = 'Karm Eisenkiel,0',
+    [108] = 'Tharynn Bouden,0',
   },
   ['Zerbrochene beschwerte Wurfaxt'] =
   {
@@ -17038,7 +17628,11 @@ pfDB["vendors"]["deDE"] = {
   },
   ['Weißer Funkler'] =
   {
-    [1] = 'Lillian Singh,0',
+    [1] = 'Kizzak Funks,0',
+    [2] = 'Jaxxil Funks,0',
+    [3] = 'Lillian Singh,0',
+    [4] = 'Hexknall Kawumms,0',
+    [5] = 'Ziggle Funks,0',
   },
   ['Zaumzeug des Schimmels'] =
   {
@@ -17153,34 +17747,33 @@ pfDB["vendors"]["deDE"] = {
     [24] = 'Barkeeper Morag,0',
     [25] = 'Sognar Klippenbart,0',
     [26] = 'Gastwirt Feuerbräu,0',
-    [27] = 'Mikhail,0',
-    [28] = 'Uttnar,0',
-    [29] = 'Craig Nollwacht,0',
-    [30] = 'Dwane Wertle,0',
-    [31] = 'Ogg\'marr,0',
-    [32] = 'Turhaw,0',
-    [33] = 'Truk Wildbart,0',
-    [34] = 'Brogus Donnerbräu,0',
-    [35] = 'Jaeana,0',
-    [36] = 'Chylina,0',
-    [37] = 'Ulthaan,0',
-    [38] = 'Toddrick,0',
-    [39] = 'Hai\'zan,0',
-    [40] = 'Zlagk,0',
-    [41] = 'Grimtak,0',
-    [42] = 'Gahroot,0',
-    [43] = 'Kurll,0',
-    [44] = 'Zargh,0',
-    [45] = 'Denni\'ka,0',
-    [46] = 'Borstan,0',
-    [47] = 'Olvia,0',
-    [48] = 'Sherman Femmel,0',
-    [49] = 'Kaga Nebelläufer,0',
-    [50] = 'Narj Schnitzelschnitt,0',
-    [51] = 'Gastwirt Shay,0',
-    [52] = 'Bront Kaltgleve,0',
-    [53] = 'Gastwirt Helbrek,0',
-    [54] = 'Thultash,0',
+    [27] = 'Uttnar,0',
+    [28] = 'Craig Nollwacht,0',
+    [29] = 'Dwane Wertle,0',
+    [30] = 'Ogg\'marr,0',
+    [31] = 'Turhaw,0',
+    [32] = 'Truk Wildbart,0',
+    [33] = 'Brogus Donnerbräu,0',
+    [34] = 'Jaeana,0',
+    [35] = 'Chylina,0',
+    [36] = 'Ulthaan,0',
+    [37] = 'Toddrick,0',
+    [38] = 'Hai\'zan,0',
+    [39] = 'Zlagk,0',
+    [40] = 'Grimtak,0',
+    [41] = 'Gahroot,0',
+    [42] = 'Kurll,0',
+    [43] = 'Zargh,0',
+    [44] = 'Denni\'ka,0',
+    [45] = 'Borstan,0',
+    [46] = 'Olvia,0',
+    [47] = 'Sherman Femmel,0',
+    [48] = 'Kaga Nebelläufer,0',
+    [49] = 'Narj Schnitzelschnitt,0',
+    [50] = 'Gastwirt Shay,0',
+    [51] = 'Bront Kaltgleve,0',
+    [52] = 'Gastwirt Helbrek,0',
+    [53] = 'Thultash,0',
   },
   ['Wildreiskuchen'] =
   {
@@ -17353,17 +17946,18 @@ pfDB["vendors"]["deDE"] = {
     [47] = 'Gnaz Dusselflamm,0',
     [48] = 'Mazk Zielschuss,0',
     [49] = 'Rizz Wackelbolz,0',
-    [50] = 'Fradd Schnellschalt,0',
-    [51] = 'Christoph Jeffkott,0',
-    [52] = 'Micha Yance,0',
-    [53] = 'Zora Guthrek,0',
-    [54] = 'Loslor Rudge,0',
-    [55] = 'Kersok Prond,0',
-    [56] = 'Neal Allen,0',
-    [57] = 'Edna Mullby,0',
-    [58] = 'Nerrist,0',
-    [59] = 'Banalash,0',
-    [60] = 'Gunder Dornbusch,0',
+    [50] = 'Namdo Blitzzischel,0',
+    [51] = 'Fradd Schnellschalt,0',
+    [52] = 'Christoph Jeffkott,0',
+    [53] = 'Micha Yance,0',
+    [54] = 'Zora Guthrek,0',
+    [55] = 'Loslor Rudge,0',
+    [56] = 'Kersok Prond,0',
+    [57] = 'Neal Allen,0',
+    [58] = 'Edna Mullby,0',
+    [59] = 'Nerrist,0',
+    [60] = 'Banalash,0',
+    [61] = 'Gunder Dornbusch,0',
   },
   ['Abgenutzter Langschild'] =
   {
@@ -17526,7 +18120,11 @@ pfDB["vendors"]["deDE"] = {
   {
     [1] = 'Javnir Nashak,0',
     [2] = 'Wagner Hammerschlag,0',
-    [3] = 'Lillian Singh,0',
+    [3] = 'Kizzak Funks,0',
+    [4] = 'Jaxxil Funks,0',
+    [5] = 'Lillian Singh,0',
+    [6] = 'Hexknall Kawumms,0',
+    [7] = 'Ziggle Funks,0',
   },
   ['Bidenhänder'] =
   {

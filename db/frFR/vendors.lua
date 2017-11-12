@@ -847,26 +847,27 @@ pfDB["vendors"]["frFR"] = {
     [75] = 'Gnaz Bourdeflamme,0',
     [76] = 'Mazk Tiraubut,0',
     [77] = 'Rizz Court-boulon,0',
-    [78] = 'Fradd Vifembraye,0',
-    [79] = 'Christoph Jeffcoat,0',
-    [80] = 'Micha Yance,0',
-    [81] = 'Zora Guthrek,0',
-    [82] = 'Abigail Shiel,0',
-    [83] = 'Loslor Rudge,0',
-    [84] = 'Golorn Barbe-de-givre,0',
-    [85] = 'Thrawn Boltar,0',
-    [86] = 'Drac Taillebrute,0',
-    [87] = 'Kersok Prond,0',
-    [88] = 'Neal Allen,0',
-    [89] = 'Edna Mullby,0',
-    [90] = 'Drake Lindgren,0',
-    [91] = 'Nerrist,0',
-    [92] = 'Banalash,0',
-    [93] = 'Gunder Brousseronce,0',
-    [94] = 'Gina MacGregor,0',
-    [95] = 'Karen Taylor,0',
-    [96] = 'Amy Davenport,0',
-    [97] = 'Tharynn Bouden,0',
+    [78] = 'Namdo Ventaperte,0',
+    [79] = 'Fradd Vifembraye,0',
+    [80] = 'Christoph Jeffcoat,0',
+    [81] = 'Micha Yance,0',
+    [82] = 'Zora Guthrek,0',
+    [83] = 'Abigail Shiel,0',
+    [84] = 'Loslor Rudge,0',
+    [85] = 'Golorn Barbe-de-givre,0',
+    [86] = 'Thrawn Boltar,0',
+    [87] = 'Drac Taillebrute,0',
+    [88] = 'Kersok Prond,0',
+    [89] = 'Neal Allen,0',
+    [90] = 'Edna Mullby,0',
+    [91] = 'Drake Lindgren,0',
+    [92] = 'Nerrist,0',
+    [93] = 'Banalash,0',
+    [94] = 'Gunder Brousseronce,0',
+    [95] = 'Gina MacGregor,0',
+    [96] = 'Karen Taylor,0',
+    [97] = 'Amy Davenport,0',
+    [98] = 'Tharynn Bouden,0',
   },
   ['Parchemin commun'] =
   {
@@ -891,10 +892,11 @@ pfDB["vendors"]["frFR"] = {
     [19] = 'Gnaz Bourdeflamme,0',
     [20] = 'Mazk Tiraubut,0',
     [21] = 'Rizz Court-boulon,0',
-    [22] = 'Fradd Vifembraye,0',
-    [23] = 'Loslor Rudge,0',
-    [24] = 'Neal Allen,0',
-    [25] = 'Adair Gilroy,0',
+    [22] = 'Namdo Ventaperte,0',
+    [23] = 'Fradd Vifembraye,0',
+    [24] = 'Loslor Rudge,0',
+    [25] = 'Neal Allen,0',
+    [26] = 'Adair Gilroy,0',
   },
   ['Décolorant'] =
   {
@@ -989,6 +991,14 @@ pfDB["vendors"]["frFR"] = {
     [2] = 'Intendant de l\'Aube d\'argent Feuzopoudre,0',
     [3] = 'Intendante de l\'Aube d\'argent Hasana,0',
   },
+  ['Bottes de garde de sang en anneaux'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Gantelets de garde de sang en anneaux'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Grèves de garde de sang en anneaux'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
@@ -997,11 +1007,27 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
+  ['Bottes de garde de sang en peau de dragon'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Gantelets de champion en peau de dragon'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Poignes de garde de sang en peau de dragon'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
   ['Bottines de garde de sang en peau de dragon'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Bottes de garde de sang en tisse-effroi'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Gants de garde de sang en tisse-effroi'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
@@ -1017,6 +1043,14 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
+  ['Bottines de garde de sang en cuir'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Cestes de garde de sang en cuir'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Brodequins de garde de sang en cuir'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
@@ -1025,7 +1059,19 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
+  ['Poignes de garde de sang en mailles'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Cestes de garde de sang en mailles'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Brodequins de garde de sang en mailles'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Bottes de garde de sang en plaques'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
@@ -1033,7 +1079,19 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
+  ['Gants de garde de sang en plaques'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Grèves de garde de sang en plaques'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Bottes de garde de sang en satin'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Gants de garde de sang en satin'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
@@ -1133,7 +1191,11 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Javnir Nashak,0',
     [2] = 'Wagner Frappemartel,0',
-    [3] = 'Lillian Singh,0',
+    [3] = 'Kizzak Escarbilles,0',
+    [4] = 'Jaxxil Sparks,0',
+    [5] = 'Lillian Singh,0',
+    [6] = 'Crackboum Boomz,0',
+    [7] = 'Ziggle Escarbilles,0',
   },
   ['Mécanotrotteur bleu'] =
   {
@@ -1167,7 +1229,11 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Cierge magique bleu'] =
   {
-    [1] = 'Lillian Singh,0',
+    [1] = 'Kizzak Escarbilles,0',
+    [2] = 'Jaxxil Sparks,0',
+    [3] = 'Lillian Singh,0',
+    [4] = 'Crackboum Boomz,0',
+    [5] = 'Ziggle Escarbilles,0',
   },
   ['Hache de confusion'] =
   {
@@ -1472,9 +1538,10 @@ pfDB["vendors"]["frFR"] = {
     [6] = 'Elizabeth Van Talen,1',
     [7] = 'Herbel Brimborion,1',
     [8] = 'Rizz Court-boulon,1',
-    [9] = 'Fradd Vifembraye,1',
-    [10] = 'Loslor Rudge,1',
-    [11] = 'Neal Allen,1',
+    [9] = 'Namdo Ventaperte,1',
+    [10] = 'Fradd Vifembraye,1',
+    [11] = 'Loslor Rudge,1',
+    [12] = 'Neal Allen,1',
   },
   ['Tube en bronze'] =
   {
@@ -1488,9 +1555,10 @@ pfDB["vendors"]["frFR"] = {
     [8] = 'Gnaz Bourdeflamme,2',
     [9] = 'Mazk Tiraubut,2',
     [10] = 'Rizz Court-boulon,2',
-    [11] = 'Fradd Vifembraye,2',
-    [12] = 'Loslor Rudge,2',
-    [13] = 'Neal Allen,2',
+    [11] = 'Namdo Ventaperte,2',
+    [12] = 'Fradd Vifembraye,2',
+    [13] = 'Loslor Rudge,2',
+    [14] = 'Neal Allen,2',
   },
   ['Bride de cheval bai'] =
   {
@@ -1810,7 +1878,15 @@ pfDB["vendors"]["frFR"] = {
     [15] = 'Aldric Moore,0',
     [16] = 'Morhan Langue-de-cuivre,0',
   },
+  ['Heaume de champion en anneaux'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Casque de champion en anneaux'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Espauliers de champion en anneaux'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
@@ -1822,11 +1898,27 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
+  ['Casque de champion en peau de dragon'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Epaulières de champion en peau de dragon'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
+  ['Spallières de champion en peau de dragon'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Capuche de champion en tisse-effroi'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Chaperon de champion en tisse-effroi'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Epaulières de champion en tisse-effroi'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
@@ -1835,6 +1927,11 @@ pfDB["vendors"]["frFR"] = {
     [1] = 'Sergent Hola\'mahi,0',
   },
   ['Casque de champion en cuir'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
+  },
+  ['Mantelet de champion en cuir'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
@@ -1846,7 +1943,19 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
+  ['Heaume de champion en mailles'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Espauliers de champion en mailles'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Epaulières de champion en mailles'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Heaume de champion en plaques'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
@@ -1854,7 +1963,15 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
+  ['Espauliers de champion en plaques'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Epaulières de champion en plaques'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Capuche de champion en satin'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
@@ -1863,6 +1980,10 @@ pfDB["vendors"]["frFR"] = {
     [1] = 'Sergent Hola\'mahi,0',
   },
   ['Mantelet de champion en satin'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Protège-épaules de champion en satin'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
@@ -1920,7 +2041,9 @@ pfDB["vendors"]["frFR"] = {
   ['Jambières en étoffe cendrée'] =
   {
     [1] = 'Vinasia,1',
-    [2] = 'Thralosh,0',
+    [2] = 'Vinasia,1',
+    [3] = 'Thralosh,0',
+    [4] = 'Thralosh,0',
   },
   ['Chair de palourde'] =
   {
@@ -2080,9 +2203,10 @@ pfDB["vendors"]["frFR"] = {
     [17] = 'Gnaz Bourdeflamme,4',
     [18] = 'Mazk Tiraubut,4',
     [19] = 'Rizz Court-boulon,4',
-    [20] = 'Fradd Vifembraye,4',
-    [21] = 'Loslor Rudge,4',
-    [22] = 'Neal Allen,4',
+    [20] = 'Namdo Ventaperte,4',
+    [21] = 'Fradd Vifembraye,4',
+    [22] = 'Loslor Rudge,4',
+    [23] = 'Neal Allen,4',
   },
   ['Bobine de fil grossier'] =
   {
@@ -2283,9 +2407,10 @@ pfDB["vendors"]["frFR"] = {
     [6] = 'Elizabeth Van Talen,2',
     [7] = 'Herbel Brimborion,2',
     [8] = 'Rizz Court-boulon,2',
-    [9] = 'Fradd Vifembraye,2',
-    [10] = 'Loslor Rudge,2',
-    [11] = 'Neal Allen,2',
+    [9] = 'Namdo Ventaperte,2',
+    [10] = 'Fradd Vifembraye,2',
+    [11] = 'Loslor Rudge,2',
+    [12] = 'Neal Allen,2',
   },
   ['Bâtonnet en cuivre'] =
   {
@@ -2364,9 +2489,10 @@ pfDB["vendors"]["frFR"] = {
     [5] = 'Herbel Brimborion,2',
     [6] = 'Mazk Tiraubut,2',
     [7] = 'Rizz Court-boulon,2',
-    [8] = 'Fradd Vifembraye,2',
-    [9] = 'Loslor Rudge,2',
-    [10] = 'Neal Allen,2',
+    [8] = 'Namdo Ventaperte,2',
+    [9] = 'Fradd Vifembraye,2',
+    [10] = 'Loslor Rudge,2',
+    [11] = 'Neal Allen,2',
   },
   ['Ceinture en cuir craquelé'] =
   {
@@ -2702,34 +2828,33 @@ pfDB["vendors"]["frFR"] = {
     [24] = 'Morag le tavernier,0',
     [25] = 'Sognar Barbe-à-pic,0',
     [26] = 'Brassefeu l\'aubergiste,0',
-    [27] = 'Mikhail,0',
-    [28] = 'Uttnar,0',
-    [29] = 'Craig Nollward,0',
-    [30] = 'Dwane Wertle,0',
-    [31] = 'Ogg\'marr,0',
-    [32] = 'Turhaw,0',
-    [33] = 'Truk Barbe-hirsute,0',
-    [34] = 'Brogus Tonnebière,0',
-    [35] = 'Jaeana,0',
-    [36] = 'Chylina,0',
-    [37] = 'Ulthaan,0',
-    [38] = 'Toddrick,0',
-    [39] = 'Hai\'zan,0',
-    [40] = 'Zlagk,0',
-    [41] = 'Grimtak,0',
-    [42] = 'Gahroot,0',
-    [43] = 'Kurll,0',
-    [44] = 'Zargh,0',
-    [45] = 'Denni\'ka,0',
-    [46] = 'Borstan,0',
-    [47] = 'Olvia,0',
-    [48] = 'Sherman Femmel,0',
-    [49] = 'Kaga Cours-la-brume,0',
-    [50] = 'Narj Tranchefond,0',
-    [51] = 'Shay l\'aubergiste,0',
-    [52] = 'Bront Taillefroid,0',
-    [53] = 'Helbrek l\'aubergiste,0',
-    [54] = 'Thultash,0',
+    [27] = 'Uttnar,0',
+    [28] = 'Craig Nollward,0',
+    [29] = 'Dwane Wertle,0',
+    [30] = 'Ogg\'marr,0',
+    [31] = 'Turhaw,0',
+    [32] = 'Truk Barbe-hirsute,0',
+    [33] = 'Brogus Tonnebière,0',
+    [34] = 'Jaeana,0',
+    [35] = 'Chylina,0',
+    [36] = 'Ulthaan,0',
+    [37] = 'Toddrick,0',
+    [38] = 'Hai\'zan,0',
+    [39] = 'Zlagk,0',
+    [40] = 'Grimtak,0',
+    [41] = 'Gahroot,0',
+    [42] = 'Kurll,0',
+    [43] = 'Zargh,0',
+    [44] = 'Denni\'ka,0',
+    [45] = 'Borstan,0',
+    [46] = 'Olvia,0',
+    [47] = 'Sherman Femmel,0',
+    [48] = 'Kaga Cours-la-brume,0',
+    [49] = 'Narj Tranchefond,0',
+    [50] = 'Shay l\'aubergiste,0',
+    [51] = 'Bront Taillefroid,0',
+    [52] = 'Helbrek l\'aubergiste,0',
+    [53] = 'Thultash,0',
   },
   ['Armure en cuir traité'] =
   {
@@ -3861,10 +3986,11 @@ pfDB["vendors"]["frFR"] = {
     [19] = 'Gnaz Bourdeflamme,0',
     [20] = 'Mazk Tiraubut,0',
     [21] = 'Rizz Court-boulon,0',
-    [22] = 'Fradd Vifembraye,0',
-    [23] = 'Loslor Rudge,0',
-    [24] = 'Neal Allen,0',
-    [25] = 'Adair Gilroy,0',
+    [22] = 'Namdo Ventaperte,0',
+    [23] = 'Fradd Vifembraye,0',
+    [24] = 'Loslor Rudge,0',
+    [25] = 'Neal Allen,0',
+    [26] = 'Adair Gilroy,0',
   },
   ['Biscuit de manne enrichi'] =
   {
@@ -4043,98 +4169,122 @@ pfDB["vendors"]["frFR"] = {
   ['Cuirasse de grand maréchal en anneaux'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Casque de grand maréchal en anneaux'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Spallières de grand maréchal en anneaux'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Couronne de grand maréchal'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Cerclet de grand maréchal'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Cuirasse de grand maréchal en peau de dragon'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Heaume de grand maréchal en peau de dragon'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Spallières de grand maréchal en peau de dragon'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Robe de grand maréchal en tisse-effroi'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Epaulières de grand maréchal en tisse-effroi'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Coiffure de grand maréchal'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Pansière lamellaire de grand maréchal'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Ventaille lamellaire de grand maréchal'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Espauliers lamellaires de grand maréchal'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Plastron de grand maréchal en cuir'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Epaulettes de grand maréchal en cuir'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Masque de grand maréchal en cuir'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Armure de plaques de grand maréchal'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Casque de grand maréchal en plaques'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Garde-épaules de grand maréchal en plaques'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Mantelet de grand maréchal en satin'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Habit de grand maréchal en satin'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Spallières de grand maréchal en soie'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Habit de grand maréchal en soie'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Trousse d\'analyse de terrain'] =
   {
@@ -4174,8 +4324,11 @@ pfDB["vendors"]["frFR"] = {
   ['Arbalète légère raffinée'] =
   {
     [1] = 'Thalgus Tonnepoing,0',
-    [2] = 'Benijah Fenner,0',
-    [3] = 'Marda Weller,0',
+    [2] = 'Thalgus Tonnepoing,0',
+    [3] = 'Benijah Fenner,0',
+    [4] = 'Benijah Fenner,0',
+    [5] = 'Marda Weller,0',
+    [6] = 'Marda Weller,0',
   },
   ['Arc long raffiné'] =
   {
@@ -4408,19 +4561,18 @@ pfDB["vendors"]["frFR"] = {
     [3] = 'Edris Barbe-d\'orge,0',
     [4] = 'Gwenna Brassefeu,0',
     [5] = 'Brassefeu l\'aubergiste,0',
-    [6] = 'Mikhail,0',
-    [7] = 'Nixxrax Razlebock,0',
-    [8] = 'Kelly le serveur,0',
-    [9] = 'Keeg Gibn,0',
-    [10] = 'Helbrek l\'aubergiste,0',
-    [11] = 'Elly Langston,0',
-    [12] = 'Joachim Brenlow,0',
-    [13] = 'Jarel Moor,0',
-    [14] = 'Julia Gallina,0',
-    [15] = 'Sergent De Vries,0',
-    [16] = 'Dobbins le tavernier,0',
-    [17] = 'Roberto Pupellyverbos,0',
-    [18] = 'Joshua Maclure,0',
+    [6] = 'Nixxrax Razlebock,0',
+    [7] = 'Kelly le serveur,0',
+    [8] = 'Keeg Gibn,0',
+    [9] = 'Helbrek l\'aubergiste,0',
+    [10] = 'Elly Langston,0',
+    [11] = 'Joachim Brenlow,0',
+    [12] = 'Jarel Moor,0',
+    [13] = 'Julia Gallina,0',
+    [14] = 'Sergent De Vries,0',
+    [15] = 'Dobbins le tavernier,0',
+    [16] = 'Roberto Pupellyverbos,0',
+    [17] = 'Joshua Maclure,0',
   },
   ['Fléau'] =
   {
@@ -4606,6 +4758,10 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Rin\'wosho le marchand,0',
   },
+  ['Formule : Enchantement d\'arme 2M (Agilité)'] =
+  {
+    [1] = 'Meilosh,0',
+  },
   ['Formule : Enchantement d\'arme 2M (Intelligence inférieure)'] =
   {
     [1] = 'Tilli Duvechardon,0',
@@ -4665,6 +4821,14 @@ pfDB["vendors"]["frFR"] = {
     [8] = 'Nata Aube-glorieuse,1',
     [9] = 'Jessara Cordell,1',
   },
+  ['Formule : Enchantement de cape (Résistance au Feu supérieure)'] =
+  {
+    [1] = 'Kania,0',
+  },
+  ['Formule : Enchantement de cape (Résistance à la Nature supérieure)'] =
+  {
+    [1] = 'Kania,0',
+  },
   ['Formule : Enchantement de cape (Agilité mineure)'] =
   {
     [1] = 'Kulwia,1',
@@ -4685,15 +4849,15 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Formule : Enchantement d\'arme (Intelligence renforcée)'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Formule : Enchantement d\'arme (Esprit renforcé)'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Formule : Enchantement d\'arme (Force)'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Formule : Huile de mana inférieure'] =
   {
@@ -4748,6 +4912,10 @@ pfDB["vendors"]["frFR"] = {
   ['Formule : Huile de sorcier'] =
   {
     [1] = 'Kania,0',
+  },
+  ['Paquet de boules puantes des Réprouvés'] =
+  {
+    [1] = 'Sombre imploratrice Yanka,0',
   },
   ['Francisque'] =
   {
@@ -4902,98 +5070,122 @@ pfDB["vendors"]["frFR"] = {
   ['Bottes de général en anneaux'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Gants de général en anneaux'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Garde-jambes de général en anneaux'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Bottes de général en peau de dragon'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Gants de général en peau de dragon'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Jambières de général en peau de dragon'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Bottes de général en tisse-effroi'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Gants de général en tisse-effroi'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Pantalon de général en tisse-effroi'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Garde-jambes de général en cuir'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Mitaines de général en cuir'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Bottines de général en cuir'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Bottes de général en mailles'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Gantelets de général en mailles'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Jambières de général en mailles'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Bottes de général en plaques'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Gantelets de général en plaques'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Jambières de général en plaques'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Bottes de général en satin'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Gants de général en satin'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Jambières de général en satin'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Bottes de général en soie'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Garde-mains de général en soie'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Chausses de général en soie'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Champignon fantôme'] =
   {
@@ -5158,18 +5350,22 @@ pfDB["vendors"]["frFR"] = {
   ['Egide de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Marteau d\'armes de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Viseur de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Claymore de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Démolisseur de connétable'] =
   {
@@ -5178,26 +5374,32 @@ pfDB["vendors"]["frFR"] = {
   ['Miséricorde de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Couteau de brèche de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Canon à main de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Hache courte de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Lame gauche de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Epée longue de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Magelame de connétable'] =
   {
@@ -5206,22 +5408,27 @@ pfDB["vendors"]["frFR"] = {
   ['Punisseur de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Arbalète à répétition de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Lame droite de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Bâton de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Fendeuse de connétable'] =
   {
     [1] = 'Lieutenant Elascric,0',
+    [2] = 'Lieutenant Elascric,0',
   },
   ['Vivelame de connétable'] =
   {
@@ -5461,7 +5668,11 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Javnir Nashak,0',
     [2] = 'Wagner Frappemartel,0',
-    [3] = 'Lillian Singh,0',
+    [3] = 'Kizzak Escarbilles,0',
+    [4] = 'Jaxxil Sparks,0',
+    [5] = 'Lillian Singh,0',
+    [6] = 'Crackboum Boomz,0',
+    [7] = 'Ziggle Escarbilles,0',
   },
   ['Thé du jardin vert'] =
   {
@@ -6225,9 +6436,10 @@ pfDB["vendors"]["frFR"] = {
     [4] = 'Herbel Brimborion,0',
     [5] = 'Ruppo Filebobine,1',
     [6] = 'Rizz Court-boulon,0',
-    [7] = 'Fradd Vifembraye,0',
-    [8] = 'Loslor Rudge,0',
-    [9] = 'Neal Allen,0',
+    [7] = 'Namdo Ventaperte,1',
+    [8] = 'Fradd Vifembraye,0',
+    [9] = 'Loslor Rudge,0',
+    [10] = 'Neal Allen,0',
   },
   ['Bonbon à la citrouille de la Sanssaint'] =
   {
@@ -6323,34 +6535,33 @@ pfDB["vendors"]["frFR"] = {
     [20] = 'Morag le tavernier,0',
     [21] = 'Sognar Barbe-à-pic,0',
     [22] = 'Brassefeu l\'aubergiste,0',
-    [23] = 'Mikhail,0',
-    [24] = 'Uttnar,0',
-    [25] = 'Craig Nollward,0',
-    [26] = 'Dwane Wertle,0',
-    [27] = 'Ogg\'marr,0',
-    [28] = 'Turhaw,0',
-    [29] = 'Truk Barbe-hirsute,0',
-    [30] = 'Brogus Tonnebière,0',
-    [31] = 'Jaeana,0',
-    [32] = 'Chylina,0',
-    [33] = 'Ulthaan,0',
-    [34] = 'Toddrick,0',
-    [35] = 'Hai\'zan,0',
-    [36] = 'Zlagk,0',
-    [37] = 'Grimtak,0',
-    [38] = 'Gahroot,0',
-    [39] = 'Kurll,0',
-    [40] = 'Zargh,0',
-    [41] = 'Denni\'ka,0',
-    [42] = 'Borstan,0',
-    [43] = 'Olvia,0',
-    [44] = 'Sherman Femmel,0',
-    [45] = 'Kaga Cours-la-brume,0',
-    [46] = 'Narj Tranchefond,0',
-    [47] = 'Shay l\'aubergiste,0',
-    [48] = 'Bront Taillefroid,0',
-    [49] = 'Helbrek l\'aubergiste,0',
-    [50] = 'Thultash,0',
+    [23] = 'Uttnar,0',
+    [24] = 'Craig Nollward,0',
+    [25] = 'Dwane Wertle,0',
+    [26] = 'Ogg\'marr,0',
+    [27] = 'Turhaw,0',
+    [28] = 'Truk Barbe-hirsute,0',
+    [29] = 'Brogus Tonnebière,0',
+    [30] = 'Jaeana,0',
+    [31] = 'Chylina,0',
+    [32] = 'Ulthaan,0',
+    [33] = 'Toddrick,0',
+    [34] = 'Hai\'zan,0',
+    [35] = 'Zlagk,0',
+    [36] = 'Grimtak,0',
+    [37] = 'Gahroot,0',
+    [38] = 'Kurll,0',
+    [39] = 'Zargh,0',
+    [40] = 'Denni\'ka,0',
+    [41] = 'Borstan,0',
+    [42] = 'Olvia,0',
+    [43] = 'Sherman Femmel,0',
+    [44] = 'Kaga Cours-la-brume,0',
+    [45] = 'Narj Tranchefond,0',
+    [46] = 'Shay l\'aubergiste,0',
+    [47] = 'Bront Taillefroid,0',
+    [48] = 'Helbrek l\'aubergiste,0',
+    [49] = 'Thultash,0',
   },
   ['Chouette-faucon'] =
   {
@@ -6372,23 +6583,22 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Pierre de foyer'] =
   {
-    [1] = 'Spoops,0',
-    [2] = 'Aubergiste Lyshaerya,0',
-    [3] = 'Aubergiste Heather,0',
-    [4] = 'Aubergiste Thulfram,0',
-    [5] = 'Aubergiste Shyria,0',
-    [6] = 'Karakul l\'aubergiste,0',
-    [7] = 'Trelayne l\'aubergiste,0',
-    [8] = 'Kimlya l\'aubergiste,0',
-    [9] = 'Shaussiy l\'aubergiste,0',
-    [10] = 'Poêlâtre l\'aubergiste,0',
-    [11] = 'Brianna l\'aubergiste,0',
-    [12] = 'Janene l\'aubergiste,0',
-    [13] = 'Brassefeu l\'aubergiste,0',
-    [14] = 'Anderson l\'aubergiste,0',
-    [15] = 'Helbrek l\'aubergiste,0',
-    [16] = 'Belm l\'aubergiste,0',
-    [17] = 'Aubergiste Farley,0',
+    [1] = 'Aubergiste Lyshaerya,0',
+    [2] = 'Aubergiste Heather,0',
+    [3] = 'Aubergiste Thulfram,0',
+    [4] = 'Aubergiste Shyria,0',
+    [5] = 'Karakul l\'aubergiste,0',
+    [6] = 'Trelayne l\'aubergiste,0',
+    [7] = 'Kimlya l\'aubergiste,0',
+    [8] = 'Shaussiy l\'aubergiste,0',
+    [9] = 'Poêlâtre l\'aubergiste,0',
+    [10] = 'Brianna l\'aubergiste,0',
+    [11] = 'Janene l\'aubergiste,0',
+    [12] = 'Brassefeu l\'aubergiste,0',
+    [13] = 'Anderson l\'aubergiste,0',
+    [14] = 'Helbrek l\'aubergiste,0',
+    [15] = 'Belm l\'aubergiste,0',
+    [16] = 'Aubergiste Farley,0',
   },
   ['Pêche céleste'] =
   {
@@ -6744,17 +6954,18 @@ pfDB["vendors"]["frFR"] = {
     [47] = 'Gnaz Bourdeflamme,0',
     [48] = 'Mazk Tiraubut,0',
     [49] = 'Rizz Court-boulon,0',
-    [50] = 'Fradd Vifembraye,0',
-    [51] = 'Christoph Jeffcoat,0',
-    [52] = 'Micha Yance,0',
-    [53] = 'Zora Guthrek,0',
-    [54] = 'Loslor Rudge,0',
-    [55] = 'Kersok Prond,0',
-    [56] = 'Neal Allen,0',
-    [57] = 'Edna Mullby,0',
-    [58] = 'Nerrist,0',
-    [59] = 'Banalash,0',
-    [60] = 'Gunder Brousseronce,0',
+    [50] = 'Namdo Ventaperte,0',
+    [51] = 'Fradd Vifembraye,0',
+    [52] = 'Christoph Jeffcoat,0',
+    [53] = 'Micha Yance,0',
+    [54] = 'Zora Guthrek,0',
+    [55] = 'Loslor Rudge,0',
+    [56] = 'Kersok Prond,0',
+    [57] = 'Neal Allen,0',
+    [58] = 'Edna Mullby,0',
+    [59] = 'Nerrist,0',
+    [60] = 'Banalash,0',
+    [61] = 'Gunder Brousseronce,0',
   },
   ['Dague de lancer lourde brisée'] =
   {
@@ -6912,6 +7123,7 @@ pfDB["vendors"]["frFR"] = {
   ['Hache d\'armes de grand seigneur de guerre'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Masse d\'armes de grand seigneur de guerre'] =
   {
@@ -6920,18 +7132,22 @@ pfDB["vendors"]["frFR"] = {
   ['Lame de grand seigneur de guerre'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Gourdin de grand seigneur de guerre'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Fendoir de grand seigneur de guerre'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Arbalète de grand seigneur de guerre'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Destructeur de grand seigneur de guerre'] =
   {
@@ -6940,18 +7156,22 @@ pfDB["vendors"]["frFR"] = {
   ['Estramaçon de grand seigneur de guerre'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Griffe gauche de grand seigneur de guerre'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Aiguillon de grand seigneur de guerre'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Pulvériseur de seigneur de guerre'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Prestelame de seigneur de guerre'] =
   {
@@ -6960,18 +7180,22 @@ pfDB["vendors"]["frFR"] = {
   ['Rasoir de grand seigneur de guerre'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Arc de grand seigneur de guerre à double courbure'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Griffe droite de grand seigneur de guerre'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Grand pavois de grand seigneur de guerre'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Sorcelame de grand seigneur de guerre'] =
   {
@@ -6980,6 +7204,7 @@ pfDB["vendors"]["frFR"] = {
   ['Balayeur de rue de grand seigneur de guerre'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Tome de destruction de grand seigneur de guerre'] =
   {
@@ -6992,6 +7217,7 @@ pfDB["vendors"]["frFR"] = {
   ['Bâton de guerre de grand seigneur de guerre'] =
   {
     [1] = 'Stone Guard Zarg,0',
+    [2] = 'Stone Guard Zarg,0',
   },
   ['Ceinturon des Hautes-terres en anneaux'] =
   {
@@ -7494,78 +7720,77 @@ pfDB["vendors"]["frFR"] = {
     [70] = 'Gwenna Brassefeu,0',
     [71] = 'Brassefeu l\'aubergiste,0',
     [72] = 'Ben Trias,0',
-    [73] = 'Mikhail,0',
-    [74] = 'Tavernière Lillian,0',
-    [75] = 'Ogg\'marr,0',
-    [76] = 'Jawn Haute-mesa,0',
-    [77] = 'Turhaw,0',
-    [78] = 'Truk Barbe-hirsute,0',
-    [79] = 'Morley Bates,0',
-    [80] = 'Eleanor Rusk,0',
-    [81] = 'Grisette Fauve,0',
-    [82] = 'Danlyia,0',
-    [83] = 'Brogus Tonnebière,0',
-    [84] = 'Tiyani,0',
-    [85] = 'Taldan,0',
-    [86] = 'Allyndia,0',
-    [87] = 'Kyndri,0',
-    [88] = 'Dalmond,0',
-    [89] = 'Fyrenna,0',
-    [90] = 'Jaeana,0',
-    [91] = 'Dendrythis,0',
-    [92] = 'Chylina,0',
-    [93] = 'Grawnal,0',
-    [94] = 'Haljan Chênecoeur,0',
-    [95] = 'Maliynn,0',
-    [96] = 'Nantar,0',
-    [97] = 'Kira Chantéclat,0',
-    [98] = 'Boorand Vent-des-plaines l\'aubergiste,0',
-    [99] = 'Jhawna Vent-d\'avoine,0',
-    [100] = 'Moodan Blé-du-soleil,0',
-    [101] = 'Zlagk,0',
-    [102] = 'Grimtak,0',
-    [103] = 'Gruna,0',
-    [104] = 'Laer Cours-les-steppes,0',
-    [105] = 'Kurll,0',
-    [106] = 'Brasseur de Dalaran,0',
-    [107] = 'Bernie Heisten,0',
-    [108] = 'Sarah Raycroft,0',
-    [109] = 'Jazzik,0',
-    [110] = 'Barg,0',
-    [111] = 'Denni\'ka,0',
-    [112] = 'Trak\'gen,0',
-    [113] = 'Gabrielle Chase,0',
-    [114] = 'Gretchen Vogel,0',
-    [115] = 'Nixxrax Razlebock,0',
-    [116] = 'Bale,0',
-    [117] = 'Malygen,0',
-    [118] = 'Kayren Sanctesuie,0',
-    [119] = 'Shay l\'aubergiste,0',
-    [120] = 'Kelly le serveur,0',
-    [121] = 'Neema,0',
-    [122] = 'Anderson l\'aubergiste,0',
-    [123] = 'Lyranne Chanteplume,0',
-    [124] = 'Edwin Harly,0',
-    [125] = 'Keeg Gibn,0',
-    [126] = 'Xandar Bonnebarbe,0',
-    [127] = 'Yanni Rudecoeur,0',
-    [128] = 'Helbrek l\'aubergiste,0',
-    [129] = 'Gruham Rumdnul,0',
-    [130] = 'Neal Allen,0',
-    [131] = 'Elly Langston,0',
-    [132] = 'Thurman Mullby,0',
-    [133] = 'Belm l\'aubergiste,0',
-    [134] = 'Kazan Mogosh,0',
-    [135] = 'Thultash,0',
-    [136] = 'Sergent De Vries,0',
-    [137] = 'Lindsay Bouclebise,0',
-    [138] = 'Caporal Bluth,0',
-    [139] = 'Intendant Lewis,0',
-    [140] = 'Dobbins le tavernier,0',
-    [141] = 'Aubergiste Farley,0',
-    [142] = 'Hann le tavernier,0',
-    [143] = 'Joshua Maclure,0',
-    [144] = 'Mabel Solaj,0',
+    [73] = 'Tavernière Lillian,0',
+    [74] = 'Ogg\'marr,0',
+    [75] = 'Jawn Haute-mesa,0',
+    [76] = 'Turhaw,0',
+    [77] = 'Truk Barbe-hirsute,0',
+    [78] = 'Morley Bates,0',
+    [79] = 'Eleanor Rusk,0',
+    [80] = 'Grisette Fauve,0',
+    [81] = 'Danlyia,0',
+    [82] = 'Brogus Tonnebière,0',
+    [83] = 'Tiyani,0',
+    [84] = 'Taldan,0',
+    [85] = 'Allyndia,0',
+    [86] = 'Kyndri,0',
+    [87] = 'Dalmond,0',
+    [88] = 'Fyrenna,0',
+    [89] = 'Jaeana,0',
+    [90] = 'Dendrythis,0',
+    [91] = 'Chylina,0',
+    [92] = 'Grawnal,0',
+    [93] = 'Haljan Chênecoeur,0',
+    [94] = 'Maliynn,0',
+    [95] = 'Nantar,0',
+    [96] = 'Kira Chantéclat,0',
+    [97] = 'Boorand Vent-des-plaines l\'aubergiste,0',
+    [98] = 'Jhawna Vent-d\'avoine,0',
+    [99] = 'Moodan Blé-du-soleil,0',
+    [100] = 'Zlagk,0',
+    [101] = 'Grimtak,0',
+    [102] = 'Gruna,0',
+    [103] = 'Laer Cours-les-steppes,0',
+    [104] = 'Kurll,0',
+    [105] = 'Brasseur de Dalaran,0',
+    [106] = 'Bernie Heisten,0',
+    [107] = 'Sarah Raycroft,0',
+    [108] = 'Jazzik,0',
+    [109] = 'Barg,0',
+    [110] = 'Denni\'ka,0',
+    [111] = 'Trak\'gen,0',
+    [112] = 'Gabrielle Chase,0',
+    [113] = 'Gretchen Vogel,0',
+    [114] = 'Nixxrax Razlebock,0',
+    [115] = 'Bale,0',
+    [116] = 'Malygen,0',
+    [117] = 'Kayren Sanctesuie,0',
+    [118] = 'Shay l\'aubergiste,0',
+    [119] = 'Kelly le serveur,0',
+    [120] = 'Neema,0',
+    [121] = 'Anderson l\'aubergiste,0',
+    [122] = 'Lyranne Chanteplume,0',
+    [123] = 'Edwin Harly,0',
+    [124] = 'Keeg Gibn,0',
+    [125] = 'Xandar Bonnebarbe,0',
+    [126] = 'Yanni Rudecoeur,0',
+    [127] = 'Helbrek l\'aubergiste,0',
+    [128] = 'Gruham Rumdnul,0',
+    [129] = 'Neal Allen,0',
+    [130] = 'Elly Langston,0',
+    [131] = 'Thurman Mullby,0',
+    [132] = 'Belm l\'aubergiste,0',
+    [133] = 'Kazan Mogosh,0',
+    [134] = 'Thultash,0',
+    [135] = 'Sergent De Vries,0',
+    [136] = 'Lindsay Bouclebise,0',
+    [137] = 'Caporal Bluth,0',
+    [138] = 'Intendant Lewis,0',
+    [139] = 'Dobbins le tavernier,0',
+    [140] = 'Aubergiste Farley,0',
+    [141] = 'Hann le tavernier,0',
+    [142] = 'Joshua Maclure,0',
+    [143] = 'Mabel Solaj,0',
   },
   ['Flèche de glace'] =
   {
@@ -7969,6 +8194,11 @@ pfDB["vendors"]["frFR"] = {
   ['Haubert de chevalier-capitaine en anneaux'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
+  },
+  ['Jambières de chevalier-capitaine en anneaux'] =
+  {
+    [1] = 'Sergent-major Clate,0',
   },
   ['Garde-jambes de chevalier-capitaine en anneaux'] =
   {
@@ -7981,8 +8211,21 @@ pfDB["vendors"]["frFR"] = {
   ['Jambières de chevalier-capitaine en peau de dragon'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
+  },
+  ['Tunique de chevalier-capitaine en peau de dragon'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Jambières de chevalier-capitaine en tisse-effroi'] =
+  {
+    [1] = 'Sergent-major Clate,0',
   },
   ['Garde-jambes de chevalier-capitaine en tisse-effroi'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Robe de chevalier-capitaine en tisse-effroi'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
@@ -7993,8 +8236,14 @@ pfDB["vendors"]["frFR"] = {
   ['Cuirasse lamellaire de chevalier-capitaine'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Jambières lamellaires de chevalier-capitaine'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
+  },
+  ['Armure de chevalier-capitaine en cuir'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
@@ -8005,6 +8254,11 @@ pfDB["vendors"]["frFR"] = {
   ['Garde-jambes de chevalier-capitaine en cuir'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
+  },
+  ['Corselet de chevalier-capitaine en plaques'] =
+  {
+    [1] = 'Sergent-major Clate,0',
   },
   ['Haubert de chevalier-capitaine en plaques'] =
   {
@@ -8013,8 +8267,17 @@ pfDB["vendors"]["frFR"] = {
   ['Jambières de chevalier-capitaine en plaques'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
+  },
+  ['Jambières de chevalier-capitaine en satin'] =
+  {
+    [1] = 'Sergent-major Clate,0',
   },
   ['Garde-jambes de chevalier-capitaine en satin'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Robe de chevalier-capitaine en satin'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
@@ -8022,11 +8285,27 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent-major Clate,0',
   },
+  ['Jambières de chevalier-capitaine en soie'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
   ['Garde-jambes de chevalier-capitaine en soie'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
+  ['Grande tenue de chevalier-capitaine en soie'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
   ['Tunique de chevalier-capitaine en soie'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Bottes de chevalier-lieutenant en anneaux'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Gantelets de chevalier-lieutenant en anneaux'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
@@ -8038,11 +8317,27 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent-major Clate,0',
   },
+  ['Bottillons de chevalier-lieutenant en peau de dragon'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Gants de chevalier-lieutenant en peau de dragon'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
   ['Poignes de chevalier-lieutenant en peau de dragon'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
   ['Bottines de chevalier-lieutenant en peau de dragon'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Bottes de chevalier-lieutenant en tisse-effroi'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Gants de chevalier-lieutenant en tisse-effroi'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
@@ -8058,7 +8353,23 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent-major Clate,0',
   },
+  ['Gantelets lamellaires de chevalier-lieutenant'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
   ['Solerets lamellaires de chevalier-capitaine'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Solerets lamellaires de chevalier-lieutenant'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Bottes de chevalier-lieutenant en cuir'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Gantelets de chevalier-lieutenant en cuir'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
@@ -8070,11 +8381,24 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent-major Clate,0',
   },
-  ['Gantelets de chevalier-lieutenant en plaques'] =
+  ['Bottes de chevalier-lieutenant en plaques'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
+  ['Gantelets de chevalier-lieutenant en plaques'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
+  },
   ['Grèves de chevalier-lieutenant en plaques'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Bottes de chevalier-lieutenant en satin'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Gants de chevalier-lieutenant en satin'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
@@ -8083,6 +8407,14 @@ pfDB["vendors"]["frFR"] = {
     [1] = 'Sergent-major Clate,0',
   },
   ['Brodequins de chevalier-lieutenant en satin'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Bottes de chevalier-lieutenant en soie'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Gants de chevalier-lieutenant en soie'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
@@ -8431,11 +8763,23 @@ pfDB["vendors"]["frFR"] = {
     [4] = 'Kelm Hargunth,0',
     [5] = 'Kelm Hargunth,0',
   },
+  ['Cuirasse de légionnaire en anneaux'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Haubert de légionnaire en anneaux'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
+  ['Jambières de légionnaire en anneaux'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Garde-jambes de légionnaire en anneaux'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Cuirasse de légionnaire en peau de dragon'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
@@ -8447,7 +8791,19 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
+  ['Chausses de légionnaire en peau de dragon'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Jambières de légionnaire en tisse-effroi'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Garde-jambes de légionnaire en tisse-effroi'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Robe de légionnaire en tisse-effroi'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
@@ -8456,6 +8812,14 @@ pfDB["vendors"]["frFR"] = {
     [1] = 'Sergent Hola\'mahi,0',
   },
   ['Plastron de légionnaire en cuir'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Haubert de légionnaire en cuir'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Jambières de légionnaire en cuir'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
@@ -8470,11 +8834,23 @@ pfDB["vendors"]["frFR"] = {
     [3] = 'Grazlix,1',
     [4] = 'Morg Boinoueux,0',
   },
+  ['Plastron de légionnaire en mailles'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Haubert de légionnaire en mailles'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
+  ['Jambières de légionnaire en mailles'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Garde-jambes de légionnaire en mailles'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Armure de plaques de légionnaire'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
@@ -8486,11 +8862,23 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
+  ['Garde-jambes de légionnaire en plaques'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Garde-jambes de légionnaire en satin'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
+  ['Chausses de légionnaire en satin'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
   ['Tunique de légionnaire en satin'] =
+  {
+    [1] = 'Sergent Hola\'mahi,0',
+  },
+  ['Habit de légionnaire en satin'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
   },
@@ -8606,8 +8994,25 @@ pfDB["vendors"]["frFR"] = {
   ['Casque de lieutenant-commandant en anneaux'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
+  },
+  ['Espauliers de lieutenant-commandant en anneaux'] =
+  {
+    [1] = 'Sergent-major Clate,0',
   },
   ['Epaulières de lieutenant-commandant en anneaux'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Couronne de lieutenant-commandant'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Diadème de lieutenant-commandant'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Epaulettes de lieutenant-commandant en peau de dragon'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
@@ -8619,7 +9024,15 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent-major Clate,0',
   },
+  ['Voile de lieutenant-commandant en peau de dragon'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
   ['Capuche de lieutenant-commandant en tisse-effroi'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Mantelet de lieutenant-commandant en tisse-effroi'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
@@ -8627,13 +9040,22 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent-major Clate,0',
   },
+  ['Protège-front de lieutenant-commandant'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
   ['Protège-front lamellaire de lieutenant-commandant'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Casque lamellaire de lieutenant-commandant'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
   ['Epaulières lamellaires de lieutenant-commandant'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Casque de lieutenant-commandant en cuir'] =
   {
@@ -8643,11 +9065,31 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent-major Clate,0',
   },
+  ['Spallières de lieutenant-commandant en cuir'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Cagoule de lieutenant-commandant en cuir'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
   ['Casque de lieutenant-commandant en plaques'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
+  ['Heaume de lieutenant-commandant en plaques'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Espauliers de lieutenant-commandant en plaques'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
   ['Epaulières de lieutenant-commandant en plaques'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Amict de lieutenant-commandant en satin'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
@@ -8664,6 +9106,10 @@ pfDB["vendors"]["frFR"] = {
     [1] = 'Sergent-major Clate,0',
   },
   ['Mantelet de lieutenant-commandant en soie'] =
+  {
+    [1] = 'Sergent-major Clate,0',
+  },
+  ['Spallières de lieutenant-commandant en soie'] =
   {
     [1] = 'Sergent-major Clate,0',
   },
@@ -9122,98 +9568,122 @@ pfDB["vendors"]["frFR"] = {
   ['Bottes de maréchal en anneaux'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Poignes de maréchal en anneaux'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Garde-jambes de maréchal en anneaux'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Bottes de maréchal en peau de dragon'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Gantelets de maréchal en peau de dragon'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Garde-jambes de maréchal en peau de dragon'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Bottes de maréchal en tisse-effroi'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Gants de maréchal en tisse-effroi'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Jambières de maréchal en tisse-effroi'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Bottes lamellaires de maréchal'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Gants lamellaires de maréchal'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Cuissards lamellaires de maréchal'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Protège-tibias de maréchal en cuir'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Manicles de maréchal en cuir'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Jambières de maréchal en cuir'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Bottes de maréchal en plaques'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Gantelets de maréchal en plaques'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Garde-jambes de maréchal en plaques'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Gants de maréchal en satin'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Pantalon de maréchal en satin'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Sandales de maréchal en satin'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Bottillons de maréchal en soie'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Gants de maréchal en soie'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Jambières de maréchal en soie'] =
   {
     [1] = 'Sergent-major Clate,0',
+    [2] = 'Sergent-major Clate,0',
   },
   ['Arc long massif'] =
   {
@@ -9370,82 +9840,81 @@ pfDB["vendors"]["frFR"] = {
     [78] = 'Brassefeu l\'aubergiste,0',
     [79] = 'Bryllia Marquefer,0',
     [80] = 'Ben Trias,0',
-    [81] = 'Mikhail,0',
-    [82] = 'Charity Mipsy,0',
-    [83] = 'Tavernière Lillian,0',
-    [84] = 'Ogg\'marr,0',
-    [85] = 'Jawn Haute-mesa,0',
-    [86] = 'Turhaw,0',
-    [87] = 'Truk Barbe-hirsute,0',
-    [88] = 'Morley Bates,0',
-    [89] = 'Eleanor Rusk,0',
-    [90] = 'Grisette Fauve,0',
-    [91] = 'Danlyia,0',
-    [92] = 'Brogus Tonnebière,0',
-    [93] = 'Mydrannul,0',
-    [94] = 'Tiyani,0',
-    [95] = 'Taldan,0',
-    [96] = 'Allyndia,0',
-    [97] = 'Kyndri,0',
-    [98] = 'Fyrenna,0',
-    [99] = 'Ellandrieth,0',
-    [100] = 'Jaeana,0',
-    [101] = 'Dendrythis,0',
-    [102] = 'Chylina,0',
-    [103] = 'Grawnal,0',
-    [104] = 'Haljan Chênecoeur,0',
-    [105] = 'Maliynn,0',
-    [106] = 'Nantar,0',
-    [107] = 'Kira Chantéclat,0',
-    [108] = 'Boorand Vent-des-plaines l\'aubergiste,0',
-    [109] = 'Jhawna Vent-d\'avoine,0',
-    [110] = 'Moodan Blé-du-soleil,0',
-    [111] = 'Zlagk,0',
-    [112] = 'Grimtak,0',
-    [113] = 'Gruna,0',
-    [114] = 'Laer Cours-les-steppes,0',
-    [115] = 'Rarck,0',
-    [116] = 'Kurll,0',
-    [117] = 'Brasseur de Dalaran,0',
-    [118] = 'Bernie Heisten,0',
-    [119] = 'Sarah Raycroft,0',
-    [120] = 'Jazzik,0',
-    [121] = 'Denni\'ka,0',
-    [122] = 'Asoran,0',
-    [123] = 'Trak\'gen,0',
-    [124] = 'Gabrielle Chase,0',
-    [125] = 'Gretchen Vogel,0',
-    [126] = 'Grawl,0',
-    [127] = 'Nixxrax Razlebock,0',
-    [128] = 'Graud,0',
-    [129] = 'Vikki Lonsav,0',
-    [130] = 'Bale,0',
-    [131] = 'Malygen,0',
-    [132] = 'Kayren Sanctesuie,0',
-    [133] = 'Shay l\'aubergiste,0',
-    [134] = 'Kelly le serveur,0',
-    [135] = 'Neema,0',
-    [136] = 'Anderson l\'aubergiste,0',
-    [137] = 'Lyranne Chanteplume,0',
-    [138] = 'Natheril Mande-pluie,0',
-    [139] = 'Keeg Gibn,0',
-    [140] = 'Helbrek l\'aubergiste,0',
-    [141] = 'Gruham Rumdnul,0',
-    [142] = 'Neal Allen,0',
-    [143] = 'Elly Langston,0',
-    [144] = 'Thurman Mullby,0',
-    [145] = 'Belm l\'aubergiste,0',
-    [146] = 'Kazan Mogosh,0',
-    [147] = 'Uthok,0',
-    [148] = 'Thultash,0',
-    [149] = 'Sergent De Vries,0',
-    [150] = 'Lindsay Bouclebise,0',
-    [151] = 'Caporal Bluth,0',
-    [152] = 'Dobbins le tavernier,0',
-    [153] = 'Aubergiste Farley,0',
-    [154] = 'Hann le tavernier,0',
-    [155] = 'Joshua Maclure,0',
-    [156] = 'Mabel Solaj,0',
+    [81] = 'Charity Mipsy,0',
+    [82] = 'Tavernière Lillian,0',
+    [83] = 'Ogg\'marr,0',
+    [84] = 'Jawn Haute-mesa,0',
+    [85] = 'Turhaw,0',
+    [86] = 'Truk Barbe-hirsute,0',
+    [87] = 'Morley Bates,0',
+    [88] = 'Eleanor Rusk,0',
+    [89] = 'Grisette Fauve,0',
+    [90] = 'Danlyia,0',
+    [91] = 'Brogus Tonnebière,0',
+    [92] = 'Mydrannul,0',
+    [93] = 'Tiyani,0',
+    [94] = 'Taldan,0',
+    [95] = 'Allyndia,0',
+    [96] = 'Kyndri,0',
+    [97] = 'Fyrenna,0',
+    [98] = 'Ellandrieth,0',
+    [99] = 'Jaeana,0',
+    [100] = 'Dendrythis,0',
+    [101] = 'Chylina,0',
+    [102] = 'Grawnal,0',
+    [103] = 'Haljan Chênecoeur,0',
+    [104] = 'Maliynn,0',
+    [105] = 'Nantar,0',
+    [106] = 'Kira Chantéclat,0',
+    [107] = 'Boorand Vent-des-plaines l\'aubergiste,0',
+    [108] = 'Jhawna Vent-d\'avoine,0',
+    [109] = 'Moodan Blé-du-soleil,0',
+    [110] = 'Zlagk,0',
+    [111] = 'Grimtak,0',
+    [112] = 'Gruna,0',
+    [113] = 'Laer Cours-les-steppes,0',
+    [114] = 'Rarck,0',
+    [115] = 'Kurll,0',
+    [116] = 'Brasseur de Dalaran,0',
+    [117] = 'Bernie Heisten,0',
+    [118] = 'Sarah Raycroft,0',
+    [119] = 'Jazzik,0',
+    [120] = 'Denni\'ka,0',
+    [121] = 'Asoran,0',
+    [122] = 'Trak\'gen,0',
+    [123] = 'Gabrielle Chase,0',
+    [124] = 'Gretchen Vogel,0',
+    [125] = 'Grawl,0',
+    [126] = 'Nixxrax Razlebock,0',
+    [127] = 'Graud,0',
+    [128] = 'Vikki Lonsav,0',
+    [129] = 'Bale,0',
+    [130] = 'Malygen,0',
+    [131] = 'Kayren Sanctesuie,0',
+    [132] = 'Shay l\'aubergiste,0',
+    [133] = 'Kelly le serveur,0',
+    [134] = 'Neema,0',
+    [135] = 'Anderson l\'aubergiste,0',
+    [136] = 'Lyranne Chanteplume,0',
+    [137] = 'Natheril Mande-pluie,0',
+    [138] = 'Keeg Gibn,0',
+    [139] = 'Helbrek l\'aubergiste,0',
+    [140] = 'Gruham Rumdnul,0',
+    [141] = 'Neal Allen,0',
+    [142] = 'Elly Langston,0',
+    [143] = 'Thurman Mullby,0',
+    [144] = 'Belm l\'aubergiste,0',
+    [145] = 'Kazan Mogosh,0',
+    [146] = 'Uthok,0',
+    [147] = 'Thultash,0',
+    [148] = 'Sergent De Vries,0',
+    [149] = 'Lindsay Bouclebise,0',
+    [150] = 'Caporal Bluth,0',
+    [151] = 'Dobbins le tavernier,0',
+    [152] = 'Aubergiste Farley,0',
+    [153] = 'Hann le tavernier,0',
+    [154] = 'Joshua Maclure,0',
+    [155] = 'Mabel Solaj,0',
   },
   ['Hache impitoyable'] =
   {
@@ -9653,27 +10122,28 @@ pfDB["vendors"]["frFR"] = {
     [84] = 'Gnaz Bourdeflamme,0',
     [85] = 'Mazk Tiraubut,0',
     [86] = 'Rizz Court-boulon,0',
-    [87] = 'Fradd Vifembraye,0',
-    [88] = 'Christoph Jeffcoat,0',
-    [89] = 'Micha Yance,0',
-    [90] = 'Zora Guthrek,0',
-    [91] = 'Abigail Shiel,0',
-    [92] = 'Loslor Rudge,0',
-    [93] = 'Golorn Barbe-de-givre,0',
-    [94] = 'Thrawn Boltar,0',
-    [95] = 'Drac Taillebrute,0',
-    [96] = 'Kersok Prond,0',
-    [97] = 'Neal Allen,0',
-    [98] = 'Edna Mullby,0',
-    [99] = 'Drake Lindgren,0',
-    [100] = 'Nerrist,0',
-    [101] = 'Banalash,0',
-    [102] = 'Gunder Brousseronce,0',
-    [103] = 'Gina MacGregor,0',
-    [104] = 'Karen Taylor,0',
-    [105] = 'Amy Davenport,0',
-    [106] = 'Karm Plume-de-fer,0',
-    [107] = 'Tharynn Bouden,0',
+    [87] = 'Namdo Ventaperte,0',
+    [88] = 'Fradd Vifembraye,0',
+    [89] = 'Christoph Jeffcoat,0',
+    [90] = 'Micha Yance,0',
+    [91] = 'Zora Guthrek,0',
+    [92] = 'Abigail Shiel,0',
+    [93] = 'Loslor Rudge,0',
+    [94] = 'Golorn Barbe-de-givre,0',
+    [95] = 'Thrawn Boltar,0',
+    [96] = 'Drac Taillebrute,0',
+    [97] = 'Kersok Prond,0',
+    [98] = 'Neal Allen,0',
+    [99] = 'Edna Mullby,0',
+    [100] = 'Drake Lindgren,0',
+    [101] = 'Nerrist,0',
+    [102] = 'Banalash,0',
+    [103] = 'Gunder Brousseronce,0',
+    [104] = 'Gina MacGregor,0',
+    [105] = 'Karen Taylor,0',
+    [106] = 'Amy Davenport,0',
+    [107] = 'Karm Plume-de-fer,0',
+    [108] = 'Tharynn Bouden,0',
   },
   ['Anneau à minuscule diamant'] =
   {
@@ -9845,73 +10315,72 @@ pfDB["vendors"]["frFR"] = {
     [78] = 'Brassefeu l\'aubergiste,0',
     [79] = 'Bryllia Marquefer,0',
     [80] = 'Ben Trias,0',
-    [81] = 'Mikhail,0',
-    [82] = 'Charity Mipsy,0',
-    [83] = 'Tavernière Lillian,0',
-    [84] = 'Ogg\'marr,0',
-    [85] = 'Turhaw,0',
-    [86] = 'Truk Barbe-hirsute,0',
-    [87] = 'Morley Bates,0',
-    [88] = 'Eleanor Rusk,0',
-    [89] = 'Grisette Fauve,0',
-    [90] = 'Danlyia,0',
-    [91] = 'Brogus Tonnebière,0',
-    [92] = 'Mydrannul,0',
-    [93] = 'Tiyani,0',
-    [94] = 'Taldan,0',
-    [95] = 'Allyndia,0',
-    [96] = 'Kyndri,0',
-    [97] = 'Fyrenna,0',
-    [98] = 'Ellandrieth,0',
-    [99] = 'Jaeana,0',
-    [100] = 'Dendrythis,0',
-    [101] = 'Maliynn,0',
-    [102] = 'Nantar,0',
-    [103] = 'Kira Chantéclat,0',
-    [104] = 'Boorand Vent-des-plaines l\'aubergiste,0',
-    [105] = 'Jhawna Vent-d\'avoine,0',
-    [106] = 'Moodan Blé-du-soleil,0',
-    [107] = 'Zlagk,0',
-    [108] = 'Grimtak,0',
-    [109] = 'Gruna,0',
-    [110] = 'Laer Cours-les-steppes,0',
-    [111] = 'Rarck,0',
-    [112] = 'Kurll,0',
-    [113] = 'Brasseur de Dalaran,0',
-    [114] = 'Bernie Heisten,0',
-    [115] = 'Sarah Raycroft,0',
-    [116] = 'Denni\'ka,0',
-    [117] = 'Asoran,0',
-    [118] = 'Trak\'gen,0',
-    [119] = 'Gabrielle Chase,0',
-    [120] = 'Gretchen Vogel,0',
-    [121] = 'Grawl,0',
-    [122] = 'Nixxrax Razlebock,0',
-    [123] = 'Graud,0',
-    [124] = 'Vikki Lonsav,0',
-    [125] = 'Bale,0',
-    [126] = 'Malygen,0',
-    [127] = 'Kayren Sanctesuie,0',
-    [128] = 'Shay l\'aubergiste,0',
-    [129] = 'Kelly le serveur,0',
-    [130] = 'Neema,0',
-    [131] = 'Anderson l\'aubergiste,0',
-    [132] = 'Lyranne Chanteplume,0',
-    [133] = 'Natheril Mande-pluie,0',
-    [134] = 'Keeg Gibn,0',
-    [135] = 'Helbrek l\'aubergiste,0',
-    [136] = 'Elly Langston,0',
-    [137] = 'Thurman Mullby,0',
-    [138] = 'Belm l\'aubergiste,0',
-    [139] = 'Kazan Mogosh,0',
-    [140] = 'Uthok,0',
-    [141] = 'Thultash,0',
-    [142] = 'Sergent De Vries,0',
-    [143] = 'Caporal Bluth,0',
-    [144] = 'Dobbins le tavernier,0',
-    [145] = 'Aubergiste Farley,0',
-    [146] = 'Hann le tavernier,0',
-    [147] = 'Joshua Maclure,0',
+    [81] = 'Charity Mipsy,0',
+    [82] = 'Tavernière Lillian,0',
+    [83] = 'Ogg\'marr,0',
+    [84] = 'Turhaw,0',
+    [85] = 'Truk Barbe-hirsute,0',
+    [86] = 'Morley Bates,0',
+    [87] = 'Eleanor Rusk,0',
+    [88] = 'Grisette Fauve,0',
+    [89] = 'Danlyia,0',
+    [90] = 'Brogus Tonnebière,0',
+    [91] = 'Mydrannul,0',
+    [92] = 'Tiyani,0',
+    [93] = 'Taldan,0',
+    [94] = 'Allyndia,0',
+    [95] = 'Kyndri,0',
+    [96] = 'Fyrenna,0',
+    [97] = 'Ellandrieth,0',
+    [98] = 'Jaeana,0',
+    [99] = 'Dendrythis,0',
+    [100] = 'Maliynn,0',
+    [101] = 'Nantar,0',
+    [102] = 'Kira Chantéclat,0',
+    [103] = 'Boorand Vent-des-plaines l\'aubergiste,0',
+    [104] = 'Jhawna Vent-d\'avoine,0',
+    [105] = 'Moodan Blé-du-soleil,0',
+    [106] = 'Zlagk,0',
+    [107] = 'Grimtak,0',
+    [108] = 'Gruna,0',
+    [109] = 'Laer Cours-les-steppes,0',
+    [110] = 'Rarck,0',
+    [111] = 'Kurll,0',
+    [112] = 'Brasseur de Dalaran,0',
+    [113] = 'Bernie Heisten,0',
+    [114] = 'Sarah Raycroft,0',
+    [115] = 'Denni\'ka,0',
+    [116] = 'Asoran,0',
+    [117] = 'Trak\'gen,0',
+    [118] = 'Gabrielle Chase,0',
+    [119] = 'Gretchen Vogel,0',
+    [120] = 'Grawl,0',
+    [121] = 'Nixxrax Razlebock,0',
+    [122] = 'Graud,0',
+    [123] = 'Vikki Lonsav,0',
+    [124] = 'Bale,0',
+    [125] = 'Malygen,0',
+    [126] = 'Kayren Sanctesuie,0',
+    [127] = 'Shay l\'aubergiste,0',
+    [128] = 'Kelly le serveur,0',
+    [129] = 'Neema,0',
+    [130] = 'Anderson l\'aubergiste,0',
+    [131] = 'Lyranne Chanteplume,0',
+    [132] = 'Natheril Mande-pluie,0',
+    [133] = 'Keeg Gibn,0',
+    [134] = 'Helbrek l\'aubergiste,0',
+    [135] = 'Elly Langston,0',
+    [136] = 'Thurman Mullby,0',
+    [137] = 'Belm l\'aubergiste,0',
+    [138] = 'Kazan Mogosh,0',
+    [139] = 'Uthok,0',
+    [140] = 'Thultash,0',
+    [141] = 'Sergent De Vries,0',
+    [142] = 'Caporal Bluth,0',
+    [143] = 'Dobbins le tavernier,0',
+    [144] = 'Aubergiste Farley,0',
+    [145] = 'Hann le tavernier,0',
+    [146] = 'Joshua Maclure,0',
   },
   ['Caramel de Ruisselune'] =
   {
@@ -10000,58 +10469,57 @@ pfDB["vendors"]["frFR"] = {
     [72] = 'Gwenna Brassefeu,0',
     [73] = 'Brassefeu l\'aubergiste,0',
     [74] = 'Ben Trias,0',
-    [75] = 'Mikhail,0',
-    [76] = 'Tavernière Lillian,0',
-    [77] = 'Ogg\'marr,0',
-    [78] = 'Turhaw,0',
-    [79] = 'Truk Barbe-hirsute,0',
-    [80] = 'Morley Bates,0',
-    [81] = 'Eleanor Rusk,0',
-    [82] = 'Grisette Fauve,0',
-    [83] = 'Danlyia,0',
-    [84] = 'Brogus Tonnebière,0',
-    [85] = 'Tiyani,0',
-    [86] = 'Taldan,0',
-    [87] = 'Allyndia,0',
-    [88] = 'Kyndri,0',
-    [89] = 'Fyrenna,0',
-    [90] = 'Jaeana,0',
-    [91] = 'Dendrythis,0',
-    [92] = 'Maliynn,0',
-    [93] = 'Nantar,0',
-    [94] = 'Kira Chantéclat,0',
-    [95] = 'Boorand Vent-des-plaines l\'aubergiste,0',
-    [96] = 'Jhawna Vent-d\'avoine,0',
-    [97] = 'Moodan Blé-du-soleil,0',
-    [98] = 'Zlagk,0',
-    [99] = 'Grimtak,0',
-    [100] = 'Gruna,0',
-    [101] = 'Laer Cours-les-steppes,0',
-    [102] = 'Kurll,0',
-    [103] = 'Brasseur de Dalaran,0',
-    [104] = 'Bernie Heisten,0',
-    [105] = 'Denni\'ka,0',
-    [106] = 'Gabrielle Chase,0',
-    [107] = 'Gretchen Vogel,0',
-    [108] = 'Nixxrax Razlebock,0',
-    [109] = 'Malygen,0',
-    [110] = 'Shay l\'aubergiste,0',
-    [111] = 'Kelly le serveur,0',
-    [112] = 'Neema,0',
-    [113] = 'Anderson l\'aubergiste,0',
-    [114] = 'Lyranne Chanteplume,0',
-    [115] = 'Keeg Gibn,0',
-    [116] = 'Helbrek l\'aubergiste,0',
-    [117] = 'Elly Langston,0',
-    [118] = 'Belm l\'aubergiste,0',
-    [119] = 'Kazan Mogosh,0',
-    [120] = 'Thultash,0',
-    [121] = 'Sergent De Vries,0',
-    [122] = 'Caporal Bluth,0',
-    [123] = 'Dobbins le tavernier,0',
-    [124] = 'Aubergiste Farley,0',
-    [125] = 'Hann le tavernier,0',
-    [126] = 'Joshua Maclure,0',
+    [75] = 'Tavernière Lillian,0',
+    [76] = 'Ogg\'marr,0',
+    [77] = 'Turhaw,0',
+    [78] = 'Truk Barbe-hirsute,0',
+    [79] = 'Morley Bates,0',
+    [80] = 'Eleanor Rusk,0',
+    [81] = 'Grisette Fauve,0',
+    [82] = 'Danlyia,0',
+    [83] = 'Brogus Tonnebière,0',
+    [84] = 'Tiyani,0',
+    [85] = 'Taldan,0',
+    [86] = 'Allyndia,0',
+    [87] = 'Kyndri,0',
+    [88] = 'Fyrenna,0',
+    [89] = 'Jaeana,0',
+    [90] = 'Dendrythis,0',
+    [91] = 'Maliynn,0',
+    [92] = 'Nantar,0',
+    [93] = 'Kira Chantéclat,0',
+    [94] = 'Boorand Vent-des-plaines l\'aubergiste,0',
+    [95] = 'Jhawna Vent-d\'avoine,0',
+    [96] = 'Moodan Blé-du-soleil,0',
+    [97] = 'Zlagk,0',
+    [98] = 'Grimtak,0',
+    [99] = 'Gruna,0',
+    [100] = 'Laer Cours-les-steppes,0',
+    [101] = 'Kurll,0',
+    [102] = 'Brasseur de Dalaran,0',
+    [103] = 'Bernie Heisten,0',
+    [104] = 'Denni\'ka,0',
+    [105] = 'Gabrielle Chase,0',
+    [106] = 'Gretchen Vogel,0',
+    [107] = 'Nixxrax Razlebock,0',
+    [108] = 'Malygen,0',
+    [109] = 'Shay l\'aubergiste,0',
+    [110] = 'Kelly le serveur,0',
+    [111] = 'Neema,0',
+    [112] = 'Anderson l\'aubergiste,0',
+    [113] = 'Lyranne Chanteplume,0',
+    [114] = 'Keeg Gibn,0',
+    [115] = 'Helbrek l\'aubergiste,0',
+    [116] = 'Elly Langston,0',
+    [117] = 'Belm l\'aubergiste,0',
+    [118] = 'Kazan Mogosh,0',
+    [119] = 'Thultash,0',
+    [120] = 'Sergent De Vries,0',
+    [121] = 'Caporal Bluth,0',
+    [122] = 'Dobbins le tavernier,0',
+    [123] = 'Aubergiste Farley,0',
+    [124] = 'Hann le tavernier,0',
+    [125] = 'Joshua Maclure,0',
   },
   ['Etoile du matin'] =
   {
@@ -10149,34 +10617,33 @@ pfDB["vendors"]["frFR"] = {
     [24] = 'Morag le tavernier,0',
     [25] = 'Sognar Barbe-à-pic,0',
     [26] = 'Brassefeu l\'aubergiste,0',
-    [27] = 'Mikhail,0',
-    [28] = 'Uttnar,0',
-    [29] = 'Craig Nollward,0',
-    [30] = 'Dwane Wertle,0',
-    [31] = 'Ogg\'marr,0',
-    [32] = 'Turhaw,0',
-    [33] = 'Truk Barbe-hirsute,0',
-    [34] = 'Brogus Tonnebière,0',
-    [35] = 'Jaeana,0',
-    [36] = 'Chylina,0',
-    [37] = 'Ulthaan,0',
-    [38] = 'Toddrick,0',
-    [39] = 'Hai\'zan,0',
-    [40] = 'Zlagk,0',
-    [41] = 'Grimtak,0',
-    [42] = 'Gahroot,0',
-    [43] = 'Kurll,0',
-    [44] = 'Zargh,0',
-    [45] = 'Denni\'ka,0',
-    [46] = 'Borstan,0',
-    [47] = 'Olvia,0',
-    [48] = 'Sherman Femmel,0',
-    [49] = 'Kaga Cours-la-brume,0',
-    [50] = 'Narj Tranchefond,0',
-    [51] = 'Shay l\'aubergiste,0',
-    [52] = 'Bront Taillefroid,0',
-    [53] = 'Helbrek l\'aubergiste,0',
-    [54] = 'Thultash,0',
+    [27] = 'Uttnar,0',
+    [28] = 'Craig Nollward,0',
+    [29] = 'Dwane Wertle,0',
+    [30] = 'Ogg\'marr,0',
+    [31] = 'Turhaw,0',
+    [32] = 'Truk Barbe-hirsute,0',
+    [33] = 'Brogus Tonnebière,0',
+    [34] = 'Jaeana,0',
+    [35] = 'Chylina,0',
+    [36] = 'Ulthaan,0',
+    [37] = 'Toddrick,0',
+    [38] = 'Hai\'zan,0',
+    [39] = 'Zlagk,0',
+    [40] = 'Grimtak,0',
+    [41] = 'Gahroot,0',
+    [42] = 'Kurll,0',
+    [43] = 'Zargh,0',
+    [44] = 'Denni\'ka,0',
+    [45] = 'Borstan,0',
+    [46] = 'Olvia,0',
+    [47] = 'Sherman Femmel,0',
+    [48] = 'Kaga Cours-la-brume,0',
+    [49] = 'Narj Tranchefond,0',
+    [50] = 'Shay l\'aubergiste,0',
+    [51] = 'Bront Taillefroid,0',
+    [52] = 'Helbrek l\'aubergiste,0',
+    [53] = 'Thultash,0',
   },
   ['Sarong mystique'] =
   {
@@ -10555,7 +11022,7 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Patron : Bottes en écailles de dragon noir'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Patron : Cuirasse en écailles de dragon noir'] =
   {
@@ -10619,9 +11086,25 @@ pfDB["vendors"]["frFR"] = {
     [3] = 'Alexandra Bolero,0',
     [4] = 'Gina MacGregor,0',
   },
+  ['Patron : Ceinture de la ronceraie'] =
+  {
+    [1] = 'Aendel Lancevent,0',
+  },
+  ['Patron : Bottes de la ronceraie'] =
+  {
+    [1] = 'Aendel Lancevent,0',
+  },
+  ['Patron : Casque de la ronceraie'] =
+  {
+    [1] = 'Aendel Lancevent,0',
+  },
   ['Patron : Chemise jaune vif'] =
   {
     [1] = 'Danielle Vivaiguille,0',
+  },
+  ['Patron : Sac d\'herbes cénarien'] =
+  {
+    [1] = 'Mishta,0',
   },
   ['Patron : Gants chimériques'] =
   {
@@ -10637,7 +11120,7 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Patron : Bottes du Magma'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Patron : Cape cramoisie en soie'] =
   {
@@ -10715,7 +11198,7 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Patron : Gants Coeur-de-braise'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Patron : Jambières Coeur-de-braise'] =
   {
@@ -10723,15 +11206,19 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Patron : Mantelet Coeur-de-braise'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Patron : Robe Coeur-de-braise'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Patron : Bottes de sabre-de-givre'] =
   {
     [1] = 'Qia,1',
+  },
+  ['Patron : Etreinte de Gaïa'] =
+  {
+    [1] = 'Mishta,0',
   },
   ['Patron : Ceinture en cuir clouté de gemmes'] =
   {
@@ -10794,7 +11281,7 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Patron : Ceinture de lave'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Patron : Chemise lavande en tisse-mage'] =
   {
@@ -10820,7 +11307,7 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Patron : Casque de la fournaise'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Patron : Etoffe lunaire'] =
   {
@@ -10859,7 +11346,7 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Patron : Chemise rose en tisse-mage'] =
   {
-    [1] = 'Eric le tailleur,0',
+    [1] = 'Eric le tailleur,1',
     [2] = 'Borya,1',
   },
   ['Patron : Brassards en peau de chauve-souris primordiale'] =
@@ -10939,6 +11426,10 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Aendel Lancevent,0',
   },
+  ['Patron : Sacoche de Cénarius'] =
+  {
+    [1] = 'Mishta,0',
+  },
   ['Patron : Gants en peau d\'ombre'] =
   {
     [1] = 'Rikqiz,1',
@@ -10963,6 +11454,18 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Werg Largelame,1',
     [2] = 'Leonard Porter,0',
+  },
+  ['Patron : Couronne sylvestre'] =
+  {
+    [1] = 'Mishta,0',
+  },
+  ['Patron : Epaulières sylvestres'] =
+  {
+    [1] = 'Mishta,0',
+  },
+  ['Patron : Gilet sylvestre'] =
+  {
+    [1] = 'Mishta,0',
   },
   ['Patron : Armure épaisse de murloc'] =
   {
@@ -11156,13 +11659,17 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Rin\'wosho le marchand,0',
   },
-  ['Plans : Brassards en sombrefer'] =
+  ['Plans : Bottes en sombrefer'] =
   {
     [1] = 'Lokhtos Sombrescompte,0',
   },
+  ['Plans : Brassards en sombrefer'] =
+  {
+    [1] = 'Lokhtos Sombrescompte,1',
+  },
   ['Plans : Destructeur en sombrefer'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Plans : Gantelets en sombrefer'] =
   {
@@ -11170,7 +11677,7 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Plans : Heaume en sombrefer'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Plans : Jambières en sombrefer'] =
   {
@@ -11178,7 +11685,7 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Plans : Déchireuse en sombrefer'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Plans : Cuirasse de ténébrâme'] =
   {
@@ -11202,7 +11709,7 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Plans : Ceinturon en anneaux de feu'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Plans : Epaulières en anneaux de feu'] =
   {
@@ -11230,6 +11737,10 @@ pfDB["vendors"]["frFR"] = {
     [2] = 'Sumi,1',
     [3] = 'Jutak,1',
   },
+  ['Plans : Ceinture lourde en obsidienne'] =
+  {
+    [1] = 'Vargus,0',
+  },
   ['Plans : Ceinture épaisse grumegueule'] =
   {
     [1] = 'Meilosh,0',
@@ -11241,6 +11752,26 @@ pfDB["vendors"]["frFR"] = {
   ['Plans : Hache d\'armes énorme en thorium'] =
   {
     [1] = 'Magnus Givréveil,0',
+  },
+  ['Plans : Ceinture de vignefer'] =
+  {
+    [1] = 'Vargus,0',
+  },
+  ['Plans : Cuirasse de vignefer'] =
+  {
+    [1] = 'Vargus,0',
+  },
+  ['Plans : Gants de vignefer'] =
+  {
+    [1] = 'Vargus,0',
+  },
+  ['Plans : Bouclier dentelé en obsidienne'] =
+  {
+    [1] = 'Général de division Andorov,1',
+  },
+  ['Plans : Ceinture légère en obsidienne'] =
+  {
+    [1] = 'Vargus,0',
   },
   ['Plans : Hache massive en fer'] =
   {
@@ -11259,6 +11790,10 @@ pfDB["vendors"]["frFR"] = {
   ['Plans : Crépuscule'] =
   {
     [1] = 'Lokhtos Sombrescompte,0',
+  },
+  ['Plans : Tunique de mailles en obsidienne'] =
+  {
+    [1] = 'Général de division Andorov,1',
   },
   ['Plans : Hache courte ornée en thorium'] =
   {
@@ -12225,7 +12760,7 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Recette : Transmutation du feu élémentaire'] =
   {
-    [1] = 'Lokhtos Sombrescompte,0',
+    [1] = 'Lokhtos Sombrescompte,1',
   },
   ['Recette : Transmutation du Feu en Terre'] =
   {
@@ -12348,15 +12883,23 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Javnir Nashak,0',
     [2] = 'Wagner Frappemartel,0',
-    [3] = 'Lillian Singh,0',
+    [3] = 'Kizzak Escarbilles,0',
+    [4] = 'Jaxxil Sparks,0',
+    [5] = 'Lillian Singh,0',
+    [6] = 'Crackboum Boomz,0',
+    [7] = 'Ziggle Escarbilles,0',
   },
   ['Fusée de feu d\'artifice rouge'] =
   {
-    [1] = 'Lillian Singh,0',
-    [2] = 'Flopboum Boomz,0',
-    [3] = 'Entrepreneur Sombrefer,0',
-    [4] = 'Crazk Escarbilles,0',
-    [5] = 'Darian Singh,0',
+    [1] = 'Kizzak Escarbilles,0',
+    [2] = 'Jaxxil Sparks,0',
+    [3] = 'Lillian Singh,0',
+    [4] = 'Crackboum Boomz,0',
+    [5] = 'Ziggle Escarbilles,0',
+    [6] = 'Flopboum Boomz,0',
+    [7] = 'Entrepreneur Sombrefer,0',
+    [8] = 'Crazk Escarbilles,0',
+    [9] = 'Darian Singh,0',
   },
   ['Ailes de poulet pimentées'] =
   {
@@ -12408,13 +12951,21 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Cierge magique rouge'] =
   {
-    [1] = 'Lillian Singh,0',
+    [1] = 'Kizzak Escarbilles,0',
+    [2] = 'Jaxxil Sparks,0',
+    [3] = 'Lillian Singh,0',
+    [4] = 'Crackboum Boomz,0',
+    [5] = 'Ziggle Escarbilles,0',
   },
   ['Bouquet de feux d\'artifice rouges'] =
   {
     [1] = 'Javnir Nashak,0',
     [2] = 'Wagner Frappemartel,0',
-    [3] = 'Lillian Singh,0',
+    [3] = 'Kizzak Escarbilles,0',
+    [4] = 'Jaxxil Sparks,0',
+    [5] = 'Lillian Singh,0',
+    [6] = 'Crackboum Boomz,0',
+    [7] = 'Ziggle Escarbilles,0',
   },
   ['Hanbok traditionnel rouge'] =
   {
@@ -12422,7 +12973,11 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Feu d\'artifice bleu blanc et rouge'] =
   {
-    [1] = 'Lillian Singh,0',
+    [1] = 'Kizzak Escarbilles,0',
+    [2] = 'Jaxxil Sparks,0',
+    [3] = 'Lillian Singh,0',
+    [4] = 'Crackboum Boomz,0',
+    [5] = 'Ziggle Escarbilles,0',
   },
   ['Champignon à pois rouges'] =
   {
@@ -12526,110 +13081,109 @@ pfDB["vendors"]["frFR"] = {
     [79] = 'Brassefeu l\'aubergiste,0',
     [80] = 'Bryllia Marquefer,0',
     [81] = 'Ben Trias,0',
-    [82] = 'Mikhail,0',
-    [83] = 'Charity Mipsy,0',
-    [84] = 'Tavernière Lillian,0',
-    [85] = 'Ogg\'marr,0',
-    [86] = 'Jawn Haute-mesa,0',
-    [87] = 'Turhaw,0',
-    [88] = 'Truk Barbe-hirsute,0',
-    [89] = 'Morley Bates,0',
-    [90] = 'Eleanor Rusk,0',
-    [91] = 'Grisette Fauve,0',
-    [92] = 'Ronald Burch,0',
-    [93] = 'Danlyia,0',
-    [94] = 'Nyoma,0',
-    [95] = 'Brogus Tonnebière,0',
-    [96] = 'Mydrannul,0',
-    [97] = 'Fyldan,0',
-    [98] = 'Tiyani,0',
-    [99] = 'Taldan,0',
-    [100] = 'Allyndia,0',
-    [101] = 'Kyndri,0',
-    [102] = 'Dalmond,0',
-    [103] = 'Fyrenna,0',
-    [104] = 'Ellandrieth,0',
-    [105] = 'Jaeana,0',
-    [106] = 'Dendrythis,0',
-    [107] = 'Chylina,0',
-    [108] = 'Grawnal,0',
-    [109] = 'Haljan Chênecoeur,0',
-    [110] = 'Maliynn,0',
-    [111] = 'Nantar,0',
-    [112] = 'Kira Chantéclat,0',
-    [113] = 'Boorand Vent-des-plaines l\'aubergiste,0',
-    [114] = 'Jhawna Vent-d\'avoine,0',
-    [115] = 'Moodan Blé-du-soleil,0',
-    [116] = 'Zlagk,0',
-    [117] = 'Grimtak,0',
-    [118] = 'Gruna,0',
-    [119] = 'Laer Cours-les-steppes,0',
-    [120] = 'Rarck,0',
-    [121] = 'Kurll,0',
-    [122] = 'Aldia,0',
-    [123] = 'Lyrai,0',
-    [124] = 'Bernie Heisten,0',
-    [125] = 'Sarah Raycroft,0',
-    [126] = 'Jazzik,0',
-    [127] = 'Barg,0',
-    [128] = 'Denni\'ka,0',
-    [129] = 'Xen\'to,0',
-    [130] = 'Asoran,0',
-    [131] = 'Trak\'gen,0',
-    [132] = 'Gabrielle Chase,0',
-    [133] = 'K\'waii,0',
-    [134] = 'Jark,0',
-    [135] = 'Duokna,0',
-    [136] = 'Gretchen Vogel,0',
-    [137] = 'Gloria Femmel,0',
-    [138] = 'Moorat Long-pas,0',
-    [139] = 'Kawnie Douce-brise,0',
-    [140] = 'Naal Cours-la-brume,0',
-    [141] = 'Grawl,0',
-    [142] = 'Nixxrax Razlebock,0',
-    [143] = 'Graud,0',
-    [144] = 'Vikki Lonsav,0',
-    [145] = 'Bale,0',
-    [146] = 'Malygen,0',
-    [147] = 'Kelsey Yance,0',
-    [148] = 'Kayren Sanctesuie,0',
-    [149] = 'Derak Crépuscule,0',
-    [150] = 'Shay l\'aubergiste,0',
-    [151] = 'Micha Yance,0',
-    [152] = 'Kelly le serveur,0',
-    [153] = 'Neema,0',
-    [154] = 'Anderson l\'aubergiste,0',
-    [155] = 'Lyranne Chanteplume,0',
-    [156] = 'Edwin Harly,0',
-    [157] = 'Mme Winters,0',
-    [158] = 'Joshua Kien,0',
-    [159] = 'Natheril Mande-pluie,0',
-    [160] = 'Keeg Gibn,0',
-    [161] = 'Kreg Bilmn,0',
-    [162] = 'Xandar Bonnebarbe,0',
-    [163] = 'Yanni Rudecoeur,0',
-    [164] = 'Helbrek l\'aubergiste,0',
-    [165] = 'Gruham Rumdnul,0',
-    [166] = 'Neal Allen,0',
-    [167] = 'Elly Langston,0',
-    [168] = 'Thurman Mullby,0',
-    [169] = 'Drake Lindgren,0',
-    [170] = 'Belm l\'aubergiste,0',
-    [171] = 'Kazan Mogosh,0',
-    [172] = 'Uthok,0',
-    [173] = 'Thultash,0',
-    [174] = 'Sergent De Vries,0',
-    [175] = 'Adlin Fièroblique,0',
-    [176] = 'Lindsay Bouclebise,0',
-    [177] = 'Caporal Bluth,0',
-    [178] = 'Intendant Lewis,0',
-    [179] = 'Dobbins le tavernier,0',
-    [180] = 'Aubergiste Farley,0',
-    [181] = 'Hann le tavernier,0',
-    [182] = 'Joshua Maclure,0',
-    [183] = 'Mabel Solaj,0',
-    [184] = 'Frère Danil,0',
-    [185] = 'Brog Lacouenne,0',
+    [82] = 'Charity Mipsy,0',
+    [83] = 'Tavernière Lillian,0',
+    [84] = 'Ogg\'marr,0',
+    [85] = 'Jawn Haute-mesa,0',
+    [86] = 'Turhaw,0',
+    [87] = 'Truk Barbe-hirsute,0',
+    [88] = 'Morley Bates,0',
+    [89] = 'Eleanor Rusk,0',
+    [90] = 'Grisette Fauve,0',
+    [91] = 'Ronald Burch,0',
+    [92] = 'Danlyia,0',
+    [93] = 'Nyoma,0',
+    [94] = 'Brogus Tonnebière,0',
+    [95] = 'Mydrannul,0',
+    [96] = 'Fyldan,0',
+    [97] = 'Tiyani,0',
+    [98] = 'Taldan,0',
+    [99] = 'Allyndia,0',
+    [100] = 'Kyndri,0',
+    [101] = 'Dalmond,0',
+    [102] = 'Fyrenna,0',
+    [103] = 'Ellandrieth,0',
+    [104] = 'Jaeana,0',
+    [105] = 'Dendrythis,0',
+    [106] = 'Chylina,0',
+    [107] = 'Grawnal,0',
+    [108] = 'Haljan Chênecoeur,0',
+    [109] = 'Maliynn,0',
+    [110] = 'Nantar,0',
+    [111] = 'Kira Chantéclat,0',
+    [112] = 'Boorand Vent-des-plaines l\'aubergiste,0',
+    [113] = 'Jhawna Vent-d\'avoine,0',
+    [114] = 'Moodan Blé-du-soleil,0',
+    [115] = 'Zlagk,0',
+    [116] = 'Grimtak,0',
+    [117] = 'Gruna,0',
+    [118] = 'Laer Cours-les-steppes,0',
+    [119] = 'Rarck,0',
+    [120] = 'Kurll,0',
+    [121] = 'Aldia,0',
+    [122] = 'Lyrai,0',
+    [123] = 'Bernie Heisten,0',
+    [124] = 'Sarah Raycroft,0',
+    [125] = 'Jazzik,0',
+    [126] = 'Barg,0',
+    [127] = 'Denni\'ka,0',
+    [128] = 'Xen\'to,0',
+    [129] = 'Asoran,0',
+    [130] = 'Trak\'gen,0',
+    [131] = 'Gabrielle Chase,0',
+    [132] = 'K\'waii,0',
+    [133] = 'Jark,0',
+    [134] = 'Duokna,0',
+    [135] = 'Gretchen Vogel,0',
+    [136] = 'Gloria Femmel,0',
+    [137] = 'Moorat Long-pas,0',
+    [138] = 'Kawnie Douce-brise,0',
+    [139] = 'Naal Cours-la-brume,0',
+    [140] = 'Grawl,0',
+    [141] = 'Nixxrax Razlebock,0',
+    [142] = 'Graud,0',
+    [143] = 'Vikki Lonsav,0',
+    [144] = 'Bale,0',
+    [145] = 'Malygen,0',
+    [146] = 'Kelsey Yance,0',
+    [147] = 'Kayren Sanctesuie,0',
+    [148] = 'Derak Crépuscule,0',
+    [149] = 'Shay l\'aubergiste,0',
+    [150] = 'Micha Yance,0',
+    [151] = 'Kelly le serveur,0',
+    [152] = 'Neema,0',
+    [153] = 'Anderson l\'aubergiste,0',
+    [154] = 'Lyranne Chanteplume,0',
+    [155] = 'Edwin Harly,0',
+    [156] = 'Mme Winters,0',
+    [157] = 'Joshua Kien,0',
+    [158] = 'Natheril Mande-pluie,0',
+    [159] = 'Keeg Gibn,0',
+    [160] = 'Kreg Bilmn,0',
+    [161] = 'Xandar Bonnebarbe,0',
+    [162] = 'Yanni Rudecoeur,0',
+    [163] = 'Helbrek l\'aubergiste,0',
+    [164] = 'Gruham Rumdnul,0',
+    [165] = 'Neal Allen,0',
+    [166] = 'Elly Langston,0',
+    [167] = 'Thurman Mullby,0',
+    [168] = 'Drake Lindgren,0',
+    [169] = 'Belm l\'aubergiste,0',
+    [170] = 'Kazan Mogosh,0',
+    [171] = 'Uthok,0',
+    [172] = 'Thultash,0',
+    [173] = 'Sergent De Vries,0',
+    [174] = 'Adlin Fièroblique,0',
+    [175] = 'Lindsay Bouclebise,0',
+    [176] = 'Caporal Bluth,0',
+    [177] = 'Intendant Lewis,0',
+    [178] = 'Dobbins le tavernier,0',
+    [179] = 'Aubergiste Farley,0',
+    [180] = 'Hann le tavernier,0',
+    [181] = 'Joshua Maclure,0',
+    [182] = 'Mabel Solaj,0',
+    [183] = 'Frère Danil,0',
+    [184] = 'Brog Lacouenne,0',
   },
   ['Arc renforcé'] =
   {
@@ -12876,34 +13430,33 @@ pfDB["vendors"]["frFR"] = {
     [28] = 'Morag le tavernier,0',
     [29] = 'Sognar Barbe-à-pic,0',
     [30] = 'Brassefeu l\'aubergiste,0',
-    [31] = 'Mikhail,0',
-    [32] = 'Uttnar,0',
-    [33] = 'Craig Nollward,0',
-    [34] = 'Dwane Wertle,0',
-    [35] = 'Ogg\'marr,0',
-    [36] = 'Turhaw,0',
-    [37] = 'Truk Barbe-hirsute,0',
-    [38] = 'Brogus Tonnebière,0',
-    [39] = 'Jaeana,0',
-    [40] = 'Chylina,0',
-    [41] = 'Ulthaan,0',
-    [42] = 'Toddrick,0',
-    [43] = 'Hai\'zan,0',
-    [44] = 'Zlagk,0',
-    [45] = 'Grimtak,0',
-    [46] = 'Gahroot,0',
-    [47] = 'Kurll,0',
-    [48] = 'Zargh,0',
-    [49] = 'Denni\'ka,0',
-    [50] = 'Borstan,0',
-    [51] = 'Olvia,0',
-    [52] = 'Sherman Femmel,0',
-    [53] = 'Kaga Cours-la-brume,0',
-    [54] = 'Narj Tranchefond,0',
-    [55] = 'Shay l\'aubergiste,0',
-    [56] = 'Bront Taillefroid,0',
-    [57] = 'Helbrek l\'aubergiste,0',
-    [58] = 'Thultash,0',
+    [31] = 'Uttnar,0',
+    [32] = 'Craig Nollward,0',
+    [33] = 'Dwane Wertle,0',
+    [34] = 'Ogg\'marr,0',
+    [35] = 'Turhaw,0',
+    [36] = 'Truk Barbe-hirsute,0',
+    [37] = 'Brogus Tonnebière,0',
+    [38] = 'Jaeana,0',
+    [39] = 'Chylina,0',
+    [40] = 'Ulthaan,0',
+    [41] = 'Toddrick,0',
+    [42] = 'Hai\'zan,0',
+    [43] = 'Zlagk,0',
+    [44] = 'Grimtak,0',
+    [45] = 'Gahroot,0',
+    [46] = 'Kurll,0',
+    [47] = 'Zargh,0',
+    [48] = 'Denni\'ka,0',
+    [49] = 'Borstan,0',
+    [50] = 'Olvia,0',
+    [51] = 'Sherman Femmel,0',
+    [52] = 'Kaga Cours-la-brume,0',
+    [53] = 'Narj Tranchefond,0',
+    [54] = 'Shay l\'aubergiste,0',
+    [55] = 'Bront Taillefroid,0',
+    [56] = 'Helbrek l\'aubergiste,0',
+    [57] = 'Thultash,0',
   },
   ['Robe d\'apprentissage'] =
   {
@@ -13075,9 +13628,10 @@ pfDB["vendors"]["frFR"] = {
     [17] = 'Gnaz Bourdeflamme,4',
     [18] = 'Mazk Tiraubut,4',
     [19] = 'Rizz Court-boulon,4',
-    [20] = 'Fradd Vifembraye,4',
-    [21] = 'Loslor Rudge,4',
-    [22] = 'Neal Allen,4',
+    [20] = 'Namdo Ventaperte,4',
+    [21] = 'Fradd Vifembraye,4',
+    [22] = 'Loslor Rudge,4',
+    [23] = 'Neal Allen,4',
   },
   ['Ceinture en cuir grossier'] =
   {
@@ -13802,7 +14356,8 @@ pfDB["vendors"]["frFR"] = {
   ['Schéma : Recombobulateur mineur'] =
   {
     [1] = 'Muserouage,1',
-    [2] = 'Fradd Vifembraye,1',
+    [2] = 'Namdo Ventaperte,1',
+    [3] = 'Fradd Vifembraye,1',
   },
   ['Schéma : Petit dragon mécanique en mithril'] =
   {
@@ -13811,6 +14366,10 @@ pfDB["vendors"]["frFR"] = {
   ['Schéma : Puissante charge d\'hydroglycérine'] =
   {
     [1] = 'Xizzer Klaqueboulon,1',
+  },
+  ['Schéma : Feu d\'artifice rouge'] =
+  {
+    [1] = 'Sovik,1',
   },
   ['Schéma : Feu d\'artifice « Explosion serpentine »'] =
   {
@@ -14082,6 +14641,7 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Sergent-chef Socquet,0',
     [2] = 'Sergent-chef Socquet,0',
+    [3] = 'Sergent-chef Socquet,0',
   },
   ['Pèlerine de sergent'] =
   {
@@ -14457,9 +15017,10 @@ pfDB["vendors"]["frFR"] = {
     [6] = 'Sovik,3',
     [7] = 'Herbel Brimborion,3',
     [8] = 'Rizz Court-boulon,3',
-    [9] = 'Fradd Vifembraye,3',
-    [10] = 'Loslor Rudge,3',
-    [11] = 'Neal Allen,3',
+    [9] = 'Namdo Ventaperte,3',
+    [10] = 'Fradd Vifembraye,3',
+    [11] = 'Loslor Rudge,3',
+    [12] = 'Neal Allen,3',
   },
   ['Robe argentée'] =
   {
@@ -15213,6 +15774,10 @@ pfDB["vendors"]["frFR"] = {
     [14] = 'Grawn Thromwyn,0',
     [15] = 'Corina Steele,0',
   },
+  ['Nettoyeur de boules puantes'] =
+  {
+    [1] = 'Sergent Hartman,0',
+  },
   ['Héraut du Garde de pierre'] =
   {
     [1] = 'Brave Stonehide,0',
@@ -15485,20 +16050,21 @@ pfDB["vendors"]["frFR"] = {
     [75] = 'Gnaz Bourdeflamme,0',
     [76] = 'Mazk Tiraubut,0',
     [77] = 'Rizz Court-boulon,0',
-    [78] = 'Fradd Vifembraye,0',
-    [79] = 'Christoph Jeffcoat,0',
-    [80] = 'Micha Yance,0',
-    [81] = 'Zora Guthrek,0',
-    [82] = 'Loslor Rudge,0',
-    [83] = 'Thrawn Boltar,0',
-    [84] = 'Kersok Prond,0',
-    [85] = 'Neal Allen,0',
-    [86] = 'Edna Mullby,0',
-    [87] = 'Nerrist,0',
-    [88] = 'Banalash,0',
-    [89] = 'Gunder Brousseronce,0',
-    [90] = 'Karen Taylor,0',
-    [91] = 'Karm Plume-de-fer,0',
+    [78] = 'Namdo Ventaperte,0',
+    [79] = 'Fradd Vifembraye,0',
+    [80] = 'Christoph Jeffcoat,0',
+    [81] = 'Micha Yance,0',
+    [82] = 'Zora Guthrek,0',
+    [83] = 'Loslor Rudge,0',
+    [84] = 'Thrawn Boltar,0',
+    [85] = 'Kersok Prond,0',
+    [86] = 'Neal Allen,0',
+    [87] = 'Edna Mullby,0',
+    [88] = 'Nerrist,0',
+    [89] = 'Banalash,0',
+    [90] = 'Gunder Brousseronce,0',
+    [91] = 'Karen Taylor,0',
+    [92] = 'Karm Plume-de-fer,0',
   },
   ['Ceinture en cuir clouté'] =
   {
@@ -15735,74 +16301,73 @@ pfDB["vendors"]["frFR"] = {
     [78] = 'Brassefeu l\'aubergiste,0',
     [79] = 'Bryllia Marquefer,0',
     [80] = 'Ben Trias,0',
-    [81] = 'Mikhail,0',
-    [82] = 'Charity Mipsy,0',
-    [83] = 'Tavernière Lillian,0',
-    [84] = 'Ogg\'marr,0',
-    [85] = 'Turhaw,0',
-    [86] = 'Truk Barbe-hirsute,0',
-    [87] = 'Morley Bates,0',
-    [88] = 'Eleanor Rusk,0',
-    [89] = 'Grisette Fauve,0',
-    [90] = 'Danlyia,0',
-    [91] = 'Brogus Tonnebière,0',
-    [92] = 'Mydrannul,0',
-    [93] = 'Tiyani,0',
-    [94] = 'Taldan,0',
-    [95] = 'Allyndia,0',
-    [96] = 'Kyndri,0',
-    [97] = 'Fyrenna,0',
-    [98] = 'Ellandrieth,0',
-    [99] = 'Jaeana,0',
-    [100] = 'Dendrythis,0',
-    [101] = 'Maliynn,0',
-    [102] = 'Nantar,0',
-    [103] = 'Kira Chantéclat,0',
-    [104] = 'Boorand Vent-des-plaines l\'aubergiste,0',
-    [105] = 'Jhawna Vent-d\'avoine,0',
-    [106] = 'Moodan Blé-du-soleil,0',
-    [107] = 'Zlagk,0',
-    [108] = 'Grimtak,0',
-    [109] = 'Gruna,0',
-    [110] = 'Laer Cours-les-steppes,0',
-    [111] = 'Rarck,0',
-    [112] = 'Kurll,0',
-    [113] = 'Brasseur de Dalaran,0',
-    [114] = 'Bernie Heisten,0',
-    [115] = 'Sarah Raycroft,0',
-    [116] = 'Denni\'ka,0',
-    [117] = 'Asoran,0',
-    [118] = 'Trak\'gen,0',
-    [119] = 'Gabrielle Chase,0',
-    [120] = 'Gretchen Vogel,0',
-    [121] = 'Prospecteur Ryedol,0',
-    [122] = 'Grawl,0',
-    [123] = 'Nixxrax Razlebock,0',
-    [124] = 'Graud,0',
-    [125] = 'Vikki Lonsav,0',
-    [126] = 'Bale,0',
-    [127] = 'Malygen,0',
-    [128] = 'Kayren Sanctesuie,0',
-    [129] = 'Shay l\'aubergiste,0',
-    [130] = 'Kelly le serveur,0',
-    [131] = 'Neema,0',
-    [132] = 'Anderson l\'aubergiste,0',
-    [133] = 'Lyranne Chanteplume,0',
-    [134] = 'Natheril Mande-pluie,0',
-    [135] = 'Keeg Gibn,0',
-    [136] = 'Helbrek l\'aubergiste,0',
-    [137] = 'Elly Langston,0',
-    [138] = 'Thurman Mullby,0',
-    [139] = 'Belm l\'aubergiste,0',
-    [140] = 'Kazan Mogosh,0',
-    [141] = 'Uthok,0',
-    [142] = 'Thultash,0',
-    [143] = 'Sergent De Vries,0',
-    [144] = 'Caporal Bluth,0',
-    [145] = 'Dobbins le tavernier,0',
-    [146] = 'Aubergiste Farley,0',
-    [147] = 'Hann le tavernier,0',
-    [148] = 'Joshua Maclure,0',
+    [81] = 'Charity Mipsy,0',
+    [82] = 'Tavernière Lillian,0',
+    [83] = 'Ogg\'marr,0',
+    [84] = 'Turhaw,0',
+    [85] = 'Truk Barbe-hirsute,0',
+    [86] = 'Morley Bates,0',
+    [87] = 'Eleanor Rusk,0',
+    [88] = 'Grisette Fauve,0',
+    [89] = 'Danlyia,0',
+    [90] = 'Brogus Tonnebière,0',
+    [91] = 'Mydrannul,0',
+    [92] = 'Tiyani,0',
+    [93] = 'Taldan,0',
+    [94] = 'Allyndia,0',
+    [95] = 'Kyndri,0',
+    [96] = 'Fyrenna,0',
+    [97] = 'Ellandrieth,0',
+    [98] = 'Jaeana,0',
+    [99] = 'Dendrythis,0',
+    [100] = 'Maliynn,0',
+    [101] = 'Nantar,0',
+    [102] = 'Kira Chantéclat,0',
+    [103] = 'Boorand Vent-des-plaines l\'aubergiste,0',
+    [104] = 'Jhawna Vent-d\'avoine,0',
+    [105] = 'Moodan Blé-du-soleil,0',
+    [106] = 'Zlagk,0',
+    [107] = 'Grimtak,0',
+    [108] = 'Gruna,0',
+    [109] = 'Laer Cours-les-steppes,0',
+    [110] = 'Rarck,0',
+    [111] = 'Kurll,0',
+    [112] = 'Brasseur de Dalaran,0',
+    [113] = 'Bernie Heisten,0',
+    [114] = 'Sarah Raycroft,0',
+    [115] = 'Denni\'ka,0',
+    [116] = 'Asoran,0',
+    [117] = 'Trak\'gen,0',
+    [118] = 'Gabrielle Chase,0',
+    [119] = 'Gretchen Vogel,0',
+    [120] = 'Prospecteur Ryedol,0',
+    [121] = 'Grawl,0',
+    [122] = 'Nixxrax Razlebock,0',
+    [123] = 'Graud,0',
+    [124] = 'Vikki Lonsav,0',
+    [125] = 'Bale,0',
+    [126] = 'Malygen,0',
+    [127] = 'Kayren Sanctesuie,0',
+    [128] = 'Shay l\'aubergiste,0',
+    [129] = 'Kelly le serveur,0',
+    [130] = 'Neema,0',
+    [131] = 'Anderson l\'aubergiste,0',
+    [132] = 'Lyranne Chanteplume,0',
+    [133] = 'Natheril Mande-pluie,0',
+    [134] = 'Keeg Gibn,0',
+    [135] = 'Helbrek l\'aubergiste,0',
+    [136] = 'Elly Langston,0',
+    [137] = 'Thurman Mullby,0',
+    [138] = 'Belm l\'aubergiste,0',
+    [139] = 'Kazan Mogosh,0',
+    [140] = 'Uthok,0',
+    [141] = 'Thultash,0',
+    [142] = 'Sergent De Vries,0',
+    [143] = 'Caporal Bluth,0',
+    [144] = 'Dobbins le tavernier,0',
+    [145] = 'Aubergiste Farley,0',
+    [146] = 'Hann le tavernier,0',
+    [147] = 'Joshua Maclure,0',
   },
   ['Raptor bleu rapide'] =
   {
@@ -16225,9 +16790,13 @@ pfDB["vendors"]["frFR"] = {
   ['La Force irrésistible'] =
   {
     [1] = 'Jekyll Flandring,0',
-    [2] = 'Grunnda Coeur-de-loup,0',
-    [3] = 'Thanthaldis Luireneige,0',
-    [4] = 'Gaelden Forgemartel,0',
+    [2] = 'Jekyll Flandring,0',
+    [3] = 'Grunnda Coeur-de-loup,0',
+    [4] = 'Grunnda Coeur-de-loup,0',
+    [5] = 'Thanthaldis Luireneige,0',
+    [6] = 'Thanthaldis Luireneige,0',
+    [7] = 'Gaelden Forgemartel,0',
+    [8] = 'Gaelden Forgemartel,0',
   },
   ['Toucher de Therazane'] =
   {
@@ -16536,34 +17105,33 @@ pfDB["vendors"]["frFR"] = {
     [20] = 'Morag le tavernier,0',
     [21] = 'Sognar Barbe-à-pic,0',
     [22] = 'Brassefeu l\'aubergiste,0',
-    [23] = 'Mikhail,0',
-    [24] = 'Uttnar,0',
-    [25] = 'Craig Nollward,0',
-    [26] = 'Dwane Wertle,0',
-    [27] = 'Ogg\'marr,0',
-    [28] = 'Turhaw,0',
-    [29] = 'Truk Barbe-hirsute,0',
-    [30] = 'Brogus Tonnebière,0',
-    [31] = 'Jaeana,0',
-    [32] = 'Chylina,0',
-    [33] = 'Ulthaan,0',
-    [34] = 'Toddrick,0',
-    [35] = 'Hai\'zan,0',
-    [36] = 'Zlagk,0',
-    [37] = 'Grimtak,0',
-    [38] = 'Gahroot,0',
-    [39] = 'Kurll,0',
-    [40] = 'Zargh,0',
-    [41] = 'Denni\'ka,0',
-    [42] = 'Borstan,0',
-    [43] = 'Olvia,0',
-    [44] = 'Sherman Femmel,0',
-    [45] = 'Kaga Cours-la-brume,0',
-    [46] = 'Narj Tranchefond,0',
-    [47] = 'Shay l\'aubergiste,0',
-    [48] = 'Bront Taillefroid,0',
-    [49] = 'Helbrek l\'aubergiste,0',
-    [50] = 'Thultash,0',
+    [23] = 'Uttnar,0',
+    [24] = 'Craig Nollward,0',
+    [25] = 'Dwane Wertle,0',
+    [26] = 'Ogg\'marr,0',
+    [27] = 'Turhaw,0',
+    [28] = 'Truk Barbe-hirsute,0',
+    [29] = 'Brogus Tonnebière,0',
+    [30] = 'Jaeana,0',
+    [31] = 'Chylina,0',
+    [32] = 'Ulthaan,0',
+    [33] = 'Toddrick,0',
+    [34] = 'Hai\'zan,0',
+    [35] = 'Zlagk,0',
+    [36] = 'Grimtak,0',
+    [37] = 'Gahroot,0',
+    [38] = 'Kurll,0',
+    [39] = 'Zargh,0',
+    [40] = 'Denni\'ka,0',
+    [41] = 'Borstan,0',
+    [42] = 'Olvia,0',
+    [43] = 'Sherman Femmel,0',
+    [44] = 'Kaga Cours-la-brume,0',
+    [45] = 'Narj Tranchefond,0',
+    [46] = 'Shay l\'aubergiste,0',
+    [47] = 'Bront Taillefroid,0',
+    [48] = 'Helbrek l\'aubergiste,0',
+    [49] = 'Thultash,0',
   },
   ['Boîte à grenouille arboricole'] =
   {
@@ -16727,98 +17295,122 @@ pfDB["vendors"]["frFR"] = {
   ['Plastron de seigneur de guerre en anneaux'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Heaume de seigneur de guerre en anneaux'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Epaulières de seigneur de guerre en anneaux'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Epaulettes de seigneur de guerre en peau de dragon'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Haubert de seigneur de guerre en peau de dragon'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Casque de seigneur de guerre en peau de dragon'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Chaperon de seigneur de guerre en tisse-effroi'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Mantelet de seigneur de guerre en tisse-effroi'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Robe de seigneur de guerre en tisse-effroi'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Cuirasse de seigneur de guerre en cuir'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Casque de seigneur de guerre en cuir'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Spallières de seigneur de guerre en cuir'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Cotte de mailles de seigneur de guerre'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Heaume de seigneur de guerre en mailles'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Spallières de seigneur de guerre en mailles'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Armure de plaques de seigneur de guerre'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Chapel de seigneur de guerre en plaques'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Epaulières de seigneur de guerre en plaques'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Capuche de seigneur de guerre en satin'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Mantelet de seigneur de guerre en satin'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Robe de seigneur de guerre en satin'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Amict de seigneur de guerre en soie'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Capuche de seigneur de guerre en soie'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Grande tenue de seigneur de guerre en soie'] =
   {
     [1] = 'Sergent Hola\'mahi,0',
+    [2] = 'Sergent Hola\'mahi,0',
   },
   ['Tabard de bataille chanteguerre'] =
   {
@@ -16942,27 +17534,28 @@ pfDB["vendors"]["frFR"] = {
     [84] = 'Gnaz Bourdeflamme,0',
     [85] = 'Mazk Tiraubut,0',
     [86] = 'Rizz Court-boulon,0',
-    [87] = 'Fradd Vifembraye,0',
-    [88] = 'Christoph Jeffcoat,0',
-    [89] = 'Micha Yance,0',
-    [90] = 'Zora Guthrek,0',
-    [91] = 'Abigail Shiel,0',
-    [92] = 'Loslor Rudge,0',
-    [93] = 'Golorn Barbe-de-givre,0',
-    [94] = 'Thrawn Boltar,0',
-    [95] = 'Drac Taillebrute,0',
-    [96] = 'Kersok Prond,0',
-    [97] = 'Neal Allen,0',
-    [98] = 'Edna Mullby,0',
-    [99] = 'Drake Lindgren,0',
-    [100] = 'Nerrist,0',
-    [101] = 'Banalash,0',
-    [102] = 'Gunder Brousseronce,0',
-    [103] = 'Gina MacGregor,0',
-    [104] = 'Karen Taylor,0',
-    [105] = 'Amy Davenport,0',
-    [106] = 'Karm Plume-de-fer,0',
-    [107] = 'Tharynn Bouden,0',
+    [87] = 'Namdo Ventaperte,0',
+    [88] = 'Fradd Vifembraye,0',
+    [89] = 'Christoph Jeffcoat,0',
+    [90] = 'Micha Yance,0',
+    [91] = 'Zora Guthrek,0',
+    [92] = 'Abigail Shiel,0',
+    [93] = 'Loslor Rudge,0',
+    [94] = 'Golorn Barbe-de-givre,0',
+    [95] = 'Thrawn Boltar,0',
+    [96] = 'Drac Taillebrute,0',
+    [97] = 'Kersok Prond,0',
+    [98] = 'Neal Allen,0',
+    [99] = 'Edna Mullby,0',
+    [100] = 'Drake Lindgren,0',
+    [101] = 'Nerrist,0',
+    [102] = 'Banalash,0',
+    [103] = 'Gunder Brousseronce,0',
+    [104] = 'Gina MacGregor,0',
+    [105] = 'Karen Taylor,0',
+    [106] = 'Amy Davenport,0',
+    [107] = 'Karm Plume-de-fer,0',
+    [108] = 'Tharynn Bouden,0',
   },
   ['Hache de jet lestée brisée'] =
   {
@@ -17062,7 +17655,11 @@ pfDB["vendors"]["frFR"] = {
   },
   ['Cierge magique blanc'] =
   {
-    [1] = 'Lillian Singh,0',
+    [1] = 'Kizzak Escarbilles,0',
+    [2] = 'Jaxxil Sparks,0',
+    [3] = 'Lillian Singh,0',
+    [4] = 'Crackboum Boomz,0',
+    [5] = 'Ziggle Escarbilles,0',
   },
   ['Bride d\'étalon blanc'] =
   {
@@ -17177,34 +17774,33 @@ pfDB["vendors"]["frFR"] = {
     [24] = 'Morag le tavernier,0',
     [25] = 'Sognar Barbe-à-pic,0',
     [26] = 'Brassefeu l\'aubergiste,0',
-    [27] = 'Mikhail,0',
-    [28] = 'Uttnar,0',
-    [29] = 'Craig Nollward,0',
-    [30] = 'Dwane Wertle,0',
-    [31] = 'Ogg\'marr,0',
-    [32] = 'Turhaw,0',
-    [33] = 'Truk Barbe-hirsute,0',
-    [34] = 'Brogus Tonnebière,0',
-    [35] = 'Jaeana,0',
-    [36] = 'Chylina,0',
-    [37] = 'Ulthaan,0',
-    [38] = 'Toddrick,0',
-    [39] = 'Hai\'zan,0',
-    [40] = 'Zlagk,0',
-    [41] = 'Grimtak,0',
-    [42] = 'Gahroot,0',
-    [43] = 'Kurll,0',
-    [44] = 'Zargh,0',
-    [45] = 'Denni\'ka,0',
-    [46] = 'Borstan,0',
-    [47] = 'Olvia,0',
-    [48] = 'Sherman Femmel,0',
-    [49] = 'Kaga Cours-la-brume,0',
-    [50] = 'Narj Tranchefond,0',
-    [51] = 'Shay l\'aubergiste,0',
-    [52] = 'Bront Taillefroid,0',
-    [53] = 'Helbrek l\'aubergiste,0',
-    [54] = 'Thultash,0',
+    [27] = 'Uttnar,0',
+    [28] = 'Craig Nollward,0',
+    [29] = 'Dwane Wertle,0',
+    [30] = 'Ogg\'marr,0',
+    [31] = 'Turhaw,0',
+    [32] = 'Truk Barbe-hirsute,0',
+    [33] = 'Brogus Tonnebière,0',
+    [34] = 'Jaeana,0',
+    [35] = 'Chylina,0',
+    [36] = 'Ulthaan,0',
+    [37] = 'Toddrick,0',
+    [38] = 'Hai\'zan,0',
+    [39] = 'Zlagk,0',
+    [40] = 'Grimtak,0',
+    [41] = 'Gahroot,0',
+    [42] = 'Kurll,0',
+    [43] = 'Zargh,0',
+    [44] = 'Denni\'ka,0',
+    [45] = 'Borstan,0',
+    [46] = 'Olvia,0',
+    [47] = 'Sherman Femmel,0',
+    [48] = 'Kaga Cours-la-brume,0',
+    [49] = 'Narj Tranchefond,0',
+    [50] = 'Shay l\'aubergiste,0',
+    [51] = 'Bront Taillefroid,0',
+    [52] = 'Helbrek l\'aubergiste,0',
+    [53] = 'Thultash,0',
   },
   ['Gâteau de riz sauvage'] =
   {
@@ -17377,17 +17973,18 @@ pfDB["vendors"]["frFR"] = {
     [47] = 'Gnaz Bourdeflamme,0',
     [48] = 'Mazk Tiraubut,0',
     [49] = 'Rizz Court-boulon,0',
-    [50] = 'Fradd Vifembraye,0',
-    [51] = 'Christoph Jeffcoat,0',
-    [52] = 'Micha Yance,0',
-    [53] = 'Zora Guthrek,0',
-    [54] = 'Loslor Rudge,0',
-    [55] = 'Kersok Prond,0',
-    [56] = 'Neal Allen,0',
-    [57] = 'Edna Mullby,0',
-    [58] = 'Nerrist,0',
-    [59] = 'Banalash,0',
-    [60] = 'Gunder Brousseronce,0',
+    [50] = 'Namdo Ventaperte,0',
+    [51] = 'Fradd Vifembraye,0',
+    [52] = 'Christoph Jeffcoat,0',
+    [53] = 'Micha Yance,0',
+    [54] = 'Zora Guthrek,0',
+    [55] = 'Loslor Rudge,0',
+    [56] = 'Kersok Prond,0',
+    [57] = 'Neal Allen,0',
+    [58] = 'Edna Mullby,0',
+    [59] = 'Nerrist,0',
+    [60] = 'Banalash,0',
+    [61] = 'Gunder Brousseronce,0',
   },
   ['Vieil écu'] =
   {
@@ -17559,7 +18156,11 @@ pfDB["vendors"]["frFR"] = {
   {
     [1] = 'Javnir Nashak,0',
     [2] = 'Wagner Frappemartel,0',
-    [3] = 'Lillian Singh,0',
+    [3] = 'Kizzak Escarbilles,0',
+    [4] = 'Jaxxil Sparks,0',
+    [5] = 'Lillian Singh,0',
+    [6] = 'Crackboum Boomz,0',
+    [7] = 'Ziggle Escarbilles,0',
   },
   ['Zweihander'] =
   {

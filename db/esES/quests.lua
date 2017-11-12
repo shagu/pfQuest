@@ -2080,7 +2080,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Un espantapájaros para necrófagos,Reúne 7 c"] = {
     ["id"] = 133,
-    ["min"] = 22,
+    ["min"] = 20,
     ["lvl"] = 27,
     ["race"] = 77,
     ["pre"] = "Entrega de zumo,Lleva el z",
@@ -2098,7 +2098,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Ladrones ogros,Devuelve a"] = {
     ["id"] = 134,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Un espantapájaros para necrófagos,Reúne 7 c",
@@ -2134,9 +2134,8 @@ pfDB["quests"]["esES"] = {
   },
   ["El tesoro escondido del capitán Sanders,Encuentra "] = {
     ["id"] = 136,
-    ["min"] = 11,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["log"] = "Si estás leyendo esto, el capitán Sanders estará sepultado bajo el agua. Así que mi tesoro es tuyo, solo tienes que seguir las pistas.$B$BPrimero tienes que encontrar mi baúl. Seguramente estará enterrado en la arena, en la costa Oeste de los Páramos de Poniente, cerca de los restos de naufragios. Habrá muchos restos, pero solo un ancla oxidada en la costa. ¡Encuentra el ancla y encontrarás mi baúl! Allí encontrarás también la siguiente pista.",
     ["obj"] = "Encuentra el baúl del capitán Sanders y busca la siguiente pista.",
     ["start"] = {
@@ -2147,9 +2146,8 @@ pfDB["quests"]["esES"] = {
   },
   ["El tesoro escondido del capitán Sanders,Busca el v"] = {
     ["id"] = 138,
-    ["min"] = 14,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["pre"] = "El tesoro escondido del capitán Sanders,Encuentra ",
     ["log"] = "Esto es lo que dice la siguiente pista: ¡Buen trabajo, compañero! Ahora tienes que ir al Este. Al Este hacia los riscos, al Este hacia el camino. Busca las ruinas de chimeneas a orillas del camino. Allí encontrarás un viejo barril con la siguiente pista.",
     ["obj"] = "Busca el viejo barril junto a la chimenea en ruinas y busca la siguiente pista.",
@@ -2162,9 +2160,8 @@ pfDB["quests"]["esES"] = {
   },
   ["El tesoro escondido del capitán Sanders,Busca la j"] = {
     ["id"] = 139,
-    ["min"] = 14,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["pre"] = "El tesoro escondido del capitán Sanders,Busca el v",
     ["log"] = "Buscando en el barril descubres otro fragmento de papiro. En este se puede leer: Desde este barril, ve hacia el Norte. Tan recto como vuela el cuervo, anda hasta que veas una jarra vacía junto al solitario molino de viento sobre los riscos del mar. Si buscas alrededor de la jarra encontrarás lo que estás buscando.",
     ["obj"] = "Busca la jarra vacía junto al molino de viento para encontrar la siguiente pista.",
@@ -2177,9 +2174,8 @@ pfDB["quests"]["esES"] = {
   },
   ["El tesoro escondido del capitán Sanders,Localiza l"] = {
     ["id"] = 140,
-    ["min"] = 14,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["pre"] = "El tesoro escondido del capitán Sanders,Busca la j",
     ["log"] = "Ciertamente, dentro de la vieja jarra hay otra pista sobre el tesoro de Sanders. La tinta se ha borrado en algunas partes y el papel huele a whisky, pero aún puedes entender algo: Ahora que has encontrado mi vieja jarra de whisky ¡casi has llegado al tesoro! Dirígete hacia el Oeste desde la botella y baja hasta la costa. Cuando llegues al agua, ¡sigue adelante! ¡Nada directo hacia el Oeste hasta encontrar la isla con la arqueta!",
     ["obj"] = "Localiza la arqueta del capitán Sanders y ábrela para obtener tu recompensa.",
@@ -2522,7 +2518,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Nota para el alcalde,Lleva la c"] = {
     ["id"] = 160,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Ladrones ogros,Devuelve a",
@@ -4011,7 +4007,7 @@ pfDB["quests"]["esES"] = {
   },
   ["[DEPRECATED]Traduce la nota de Abercrombie,Lleva la c"] = {
     ["id"] = 251,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Nota para el alcalde,Lleva la c",
@@ -4029,7 +4025,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Una traducción para Ello,Lleva la c"] = {
     ["id"] = 252,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Espera a que Sirra acabe,Espera un ",
@@ -4047,7 +4043,7 @@ pfDB["quests"]["esES"] = {
   },
   ["[DEPRECATED]La novia del embalsamador,Encuentra "] = {
     ["id"] = 253,
-    ["min"] = 24,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Una traducción para Ello,Lleva la c",
@@ -4065,7 +4061,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Excavar la tierra,"] = {
     ["id"] = 254,
-    ["min"] = 24,
+    ["min"] = 20,
     ["lvl"] = 35,
     ["start"] = {
       ["Tierra de la tumba de Eliza"] = "OBJECT",
@@ -4736,6 +4732,7 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Ojo maldito de Paleth,1"] = "ITEM",
+      ["Ojo maldito de Paleth,1"] = "ITEM",
     },
   },
   ["Limpieza del ojo,Lleva el O"] = {
@@ -4752,6 +4749,7 @@ pfDB["quests"]["esES"] = {
       ["Arzobispo Benedictus"] = "NPC",
     },
     ["item"] = {
+      ["Ojo maldito de Paleth,1"] = "ITEM",
       ["Ojo maldito de Paleth,1"] = "ITEM",
     },
   },
@@ -14485,6 +14483,38 @@ pfDB["quests"]["esES"] = {
       ["Sangre de truenagarto,3"] = "ITEM",
     },
   },
+  ["Entre ruinas,Llévale e"] = {
+    ["id"] = 908,
+    ["min"] = 25,
+    ["lvl"] = 27,
+    ["race"] = 178,
+    ["pre"] = "La esencia de Aku\'Mai,Llévale 2",
+    ["log"] = "El Martillo Crepuscular se ha trasladado a las ruinas del Santuario Lunar de las Cavernas de Brazanegra. Su presencia solo puede servir para forzar a los elementos a actuar contra nosotros. Si no nos ocupamos de ella, esta región caerá en sus manos definitivamente.$b$b$n, dirígete a Brazanegra y encuentra la piedra de las profundidades en las ruinas; debería estar cerca, en el agua. En su interior hay un núcleo de las profundidades, un dispositivo que cuando se lee correctamente, revela la historia de toda actividad elemental. Si lo consigo, y con la ayuda de los miembros del Anillo de la Tierra, ¡quizás podamos detenerlos!",
+    ["obj"] = "Llévale el núcleo de las profundidades a Je\'neu Sancrea de la Avanzada de Zoram\'gar, Vallefresno.",
+    ["start"] = {
+    },
+    ["end"] = {
+    },
+    ["item"] = {
+      ["Núcleo de las profundidades,1"] = "ITEM",
+    },
+  },
+  ["Barón Aquanis,Llévale e"] = {
+    ["id"] = 909,
+    ["min"] = 21,
+    ["lvl"] = 30,
+    ["race"] = 178,
+    ["log"] = "El elemental de agua derrotado ha dejado tras de sí un extraño globo de agua. Supones que el objeto de alguna forma alimentó la energía de la bestia. En el interior del globo chapotea masa líquida repulsiva. El propio globo parece impermeable a todo tipo de fuerza física.$B$BSi alguien es capaz de interpretar este artilugio, es Je\'neu Sancrea del Anillo de la Tierra. Se encuentra en la Avanzada de Zoram\'gar de la Horda en Vallefresno.",
+    ["obj"] = "Llévale el extraño globo de agua a Je\'neu Sancrea de la Avanzada de Zoram\'gar, Vallefresno.",
+    ["start"] = {
+    },
+    ["end"] = {
+      ["Je\'neu Sancrea"] = "NPC",
+    },
+    ["item"] = {
+      ["Globo de agua extraño,1"] = "ITEM",
+    },
+  },
   ["Un paseo por los embarcaderos,Lleva a tu"] = {
     ["id"] = 910,
     ["min"] = 10,
@@ -15265,6 +15295,15 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Oporto con 99 años de antigüedad,1"] = "ITEM",
+    },
+  },
+  ["Onus lo está meditando,"] = {
+    ["id"] = 960,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["start"] = {
+    },
+    ["end"] = {
     },
   },
   ["Onus lo está meditando,"] = {
@@ -16185,7 +16224,7 @@ pfDB["quests"]["esES"] = {
   },
   ["¿Dónde están las llaves?,Encuentra "] = {
     ["id"] = 1026,
-    ["min"] = 20,
+    ["min"] = 18,
     ["lvl"] = 27,
     ["race"] = 77,
     ["pre"] = "La entrega a la dríade,Habla con ",
@@ -16203,7 +16242,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Hacerse el muerto,Consigue e"] = {
     ["id"] = 1027,
-    ["min"] = 24,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "¿Dónde están las llaves?,Encuentra ",
@@ -16239,7 +16278,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Regresa con Raene,Entrega la"] = {
     ["id"] = 1029,
-    ["min"] = 24,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "La limpieza de Raene,Vuelve jun",
@@ -16254,7 +16293,7 @@ pfDB["quests"]["esES"] = {
   },
   ["La vara de Dartol,Usa la var"] = {
     ["id"] = 1030,
-    ["min"] = 25,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "Regresa con Raene,Entrega la",
@@ -16499,7 +16538,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Un nuevo adorno,Consigue l"] = {
     ["id"] = 1045,
-    ["min"] = 26,
+    ["min"] = 18,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "La vara de Dartol,Usa la var",
@@ -16518,7 +16557,7 @@ pfDB["quests"]["esES"] = {
   },
   ["El verdadero poder de la vara,Usa la var"] = {
     ["id"] = 1046,
-    ["min"] = 30,
+    ["min"] = 18,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Un nuevo adorno,Consigue l",
@@ -16677,7 +16716,7 @@ pfDB["quests"]["esES"] = {
   },
   ["La limpieza de Raene,Vuelve jun"] = {
     ["id"] = 1055,
-    ["min"] = 24,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "La limpieza de Raene,Encuentra ",
@@ -17084,7 +17123,6 @@ pfDB["quests"]["esES"] = {
     ["min"] = 19,
     ["lvl"] = 22,
     ["race"] = 77,
-    ["pre"] = "Ineptitud + Productos químicos = Diversión,Lleva el n",
     ["log"] = "Muy bien, $n. Presta mucha atención. Los dispositivos están terminados y listos para usar.$B$BLlévate estas páginas. Contienen más información sobre los detonadores y explosivos y dónde deberías colocarlos.$B$BRecuerda, el éxito de tu misión no depende de la destrucción que provoques. El éxito del plan A depende de que recuperes los planos de ingeniería de Ventura y Cía. que están dentro de la serrería al sur del Lago del Peñasco.",
     ["obj"] = "Recupera los planos de ingeniería de Ventura y Cía. de la serrería en el Risco Cortaviento.",
     ["start"] = {
@@ -17102,7 +17140,7 @@ pfDB["quests"]["esES"] = {
     ["min"] = 19,
     ["lvl"] = 22,
     ["race"] = 77,
-    ["pre"] = "Entrega especial para Gaxim,Lleva el P",
+    ["pre"] = "Operaciones secretas: plan A,Recupera l",
     ["log"] = "El plan Beta es como el plan Alfa, $n.$B$BCrearemos una distracción y robamos las valiosas cartas.$B$BLo más importante es conseguir sus cartas... No lo olvides.$B$BLas páginas que te he dado te indicarán dónde colocar los explosivos. Solo tienes que volver aquí con vida... y con las cartas...",
     ["obj"] = "Recupera las cartas de Ventura y Cía. de la Mina Cortaviento, en el extremo este del Risco Cortaviento.",
     ["start"] = {
@@ -17135,6 +17173,7 @@ pfDB["quests"]["esES"] = {
     ["min"] = 26,
     ["lvl"] = 28,
     ["race"] = 77,
+    ["pre"] = "Los antárboles corruptos,Lleva una ",
     ["log"] = "$n, nos has prestado un gran servicio.$B$BLas Centinelas de Vallefresno te recompensarán generosamente si les informas de que Gaxim y yo estamos vivos. Diles que vamos de camino a detener a Ventura y Cía. y curar la tierra.$B$BBusca a Tara Thenysil en Astranaar; estará encantada al verte volver con buenas noticias.",
     ["obj"] = "Ve a ver a la centinela Thenysil en Vallefresno.",
     ["start"] = {
@@ -17167,7 +17206,7 @@ pfDB["quests"]["esES"] = {
     ["min"] = 22,
     ["lvl"] = 28,
     ["race"] = 77,
-    ["pre"] = "Noticias para Kaela,Lleva las ",
+    ["pre"] = "Los espíritus iracundos,Lleva 8 as",
     ["log"] = "Me parece que los protectores de La Vega, los antárboles, han tenido algo que ver con la marcha de Ventura y Cía. Por desgracia, incluso esos antiguos guardianes, están corruptos ahora.$B$BGaxim cree que su corrupción está, de alguna forma, vinculada con las armas que los goblins utilizaron en su retirada.$B$BLe dije que conseguiría una muestra de un antárbol muerto para que pudiera estudiarla y descubrir si es cierto.$B$BTráeme metralla para que el gnomo pueda contarme algo más...",
     ["obj"] = "Lleva una pieza de metralla corroída a Kaela Lanzasombra en Espolón.",
     ["start"] = {
@@ -17185,6 +17224,7 @@ pfDB["quests"]["esES"] = {
     ["min"] = 18,
     ["lvl"] = 21,
     ["race"] = 77,
+    ["pre"] = "Estar de guardia en Espolón,Encuentra ",
     ["log"] = "La situación aquí, en Espolón, es obviamente grave para que una elfa de la noche y un gnomo estén trabajando juntos.$B$BVentura y Cía. ha devastado estas tierras y yo he pasado la mayor parte de mi tiempo intentando poner fin a la destrucción.$B$BNo juzgues a Gaxim prematuramente. Comprende la necesidad que tenemos de trabajar juntos.$B$BSi quieres ayudarnos, empieza por hablar con Gaxim.$B$BSiento no poder enviarte de vuelta a ver a Tara con buenas noticias todavía. Quizás pronto...",
     ["obj"] = "Habla con Gaxim en Sierra Espolón.",
     ["start"] = {
@@ -17285,6 +17325,7 @@ pfDB["quests"]["esES"] = {
     ["min"] = 20,
     ["lvl"] = 22,
     ["race"] = 77,
+    ["pre"] = "Operaciones secretas: plan B,Recupera l",
     ["log"] = "$n, lleva estas cartas a Kaela. Seguro que querrá saberlo. O, al menos, las Centinelas querrán.$B$BAsegúrate de decirle que hemos tenido éxito y que no podríamos haberlo logrado sin ayuda de la magia.",
     ["obj"] = "Lleva las cartas de Ventura y Cía. a Kaela Lanzasombra a Sierra Espolón.",
     ["start"] = {
@@ -19422,7 +19463,7 @@ pfDB["quests"]["esES"] = {
     ["min"] = 28,
     ["lvl"] = 33,
     ["race"] = 77,
-    ["pre"] = "El diplomático desaparecido,Vence a Ta",
+    ["pre"] = "El diplomático desaparecido,Habla con ",
     ["log"] = "A principios de mes, todos los marineros de Kul Tiras reciben la paga y, generalmente, se van de Theramore en busca de diversión. Muchos vienen aquí a buscar mujeres, jarana y a pasárselo bien. Hay uno de esos grupos que viene regularmente a la taberna, y creo que ese Hendel está con ellos.$B$BEl comandante Samaul de Theramore podrá ayudarte a encontrarle, si Hendel está destinado allí. Es completamente leal a Valiente, pero si dejas caer el nombre de Elling, te ayudará... discretamente.",
     ["obj"] = "Encuentra al comandante Samaul en el Marjal Revolcafango.",
     ["start"] = {
@@ -19468,9 +19509,8 @@ pfDB["quests"]["esES"] = {
     ["lvl"] = 38,
     ["race"] = 77,
     ["pre"] = "El diplomático desaparecido,Derrota al",
-    ["obj"] = "Habla con Jaina Valiente en el Pantano Revolcafango.",
     ["start"] = {
-      ["Archimago Tervosh"] = "NPC",
+      ["Lady Jaina Valiente"] = "NPC",
     },
     ["end"] = {
       ["Lady Jaina Valiente"] = "NPC",
@@ -19671,14 +19711,17 @@ pfDB["quests"]["esES"] = {
   },
   ["Vimes\'s Report,Bring Vime"] = {
     ["id"] = 1288,
-    ["min"] = 33,
+    ["min"] = 32,
     ["lvl"] = 38,
     ["race"] = 77,
+    ["pre"] = "[DEPRECATED]Los desertores,Ve a Thera",
     ["log"] = "You\'ve done some good work, $n, best I\'ve seen from an amateur.$b$bLady Proudmoore asked that I keep her apprised of this delicate situation, and I haven\'t spoken to her for some time now.$b$bI was going to deliver my report to her later, but it seems more fitting that you should be the one to speak with her about it. You can probably answer her questions better than I could.",
     ["obj"] = "Bring Vimes\'s Report to Lady Jaina Proudmoore in Theramore.",
     ["start"] = {
+      ["Capitán Garran Vimes"] = "NPC",
     },
     ["end"] = {
+      ["Lady Jaina Valiente"] = "NPC",
     },
     ["item"] = {
       ["Informe de Vimes,1"] = "ITEM",
@@ -22719,7 +22762,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Arruinar el Festival del Hombre de Mimbre,Localiza e"] = {
     ["id"] = 1658,
-    ["min"] = 25,
+    ["min"] = 35,
     ["lvl"] = 60,
     ["race"] = 77,
     ["log"] = "Necesito gente valiente para ir a Claros de Tirisfal y echar un ojo al Festival del Hombre de Mimbre. No te voy a mentir: llegar hasta allí es peligroso. Los guardas del festival serán excepcionalmente brutales. Pero tenemos que saber cómo será el festival de este año y cuántos problemas nos van a dar los Renegados en Halloween.$B$BVe a Tirisfal y echa un vistazo por el festival... si te atreves. Vuelve con la información y me aseguraré de que recibes una buena recompensa.",
@@ -28250,7 +28293,7 @@ pfDB["quests"]["esES"] = {
   },
   ["El oro de Cuergo,¡Encuentr"] = {
     ["id"] = 2882,
-    ["min"] = 42,
+    ["min"] = 40,
     ["lvl"] = 45,
     ["log"] = "Este mapa muestra un trecho de playa orientado hacia el sur. Debajo del mapa hay unas palabras escritas de manera elegante...$B$BMás al sur de Bonvapor$BAl sur del lar de tu corazón$BEncontrarás huesos, mástil y bandera$BExcava allí si tienes alma aventurera$BExcava y el oro de Cuergo reclama$BUna llave necesitarás y una llave encontrarás$BLos hombres a los que te enfrentarás$Ben sangre pagarás.",
     ["obj"] = "¡Encuentra el oro de Cuergo!",
@@ -28697,7 +28740,7 @@ pfDB["quests"]["esES"] = {
   },
   ["A ver qué pasa,Lleva los "] = {
     ["id"] = 2946,
-    ["min"] = 48,
+    ["min"] = 45,
     ["lvl"] = 50,
     ["race"] = 77,
     ["pre"] = "Presagios de Uldum,Habla con ",
@@ -28961,7 +29004,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Libertad para todas las criaturas,Utiliza la"] = {
     ["id"] = 2969,
-    ["min"] = 40,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["log"] = "Esos asquerosos del clan Tótem Siniestro están capturando dragones feéricos, $n Jer\'kai y yo no sabemos qué están planeando hacer con ellos, pero está claro que no es nada bueno.$B$BY no podemos entrar en el campamento a liberar a los dragones a brazo partido, pero quizás, con tu ayuda...$B$BSi quieres ayudar y tienes amigos fuertes, libera a las criaturas de sus jaulas con esta llave y asegúrate de que logran escapar. Yo estaré a tu lado todo el tiempo. Jer\'kai se quedará aquí.",
@@ -28975,7 +29018,7 @@ pfDB["quests"]["esES"] = {
   },
   ["La justicia del castigo,Mata a 12 "] = {
     ["id"] = 2970,
-    ["min"] = 40,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["log"] = "Como ya te ha dicho Kindal, ella y yo llevaremos el conflicto a los Tótem Siniestro. Aún deberíamos ser capaces de eliminar a algunos tauren sin sufrir mucho, pero si te apetece ayudar y eres lo suficientemente capaz, nos encantaría que lo hicieras.$B$BYa habrás visto el campamento que tenemos debajo. Pues hay más hacia el este. Usa tus propias tácticas y causa todo el daño que puedas a los tauren. Podremos reunirnos aquí cuando hayan sentido el dolor de las flechas de Kindal y el de tus armas.",
@@ -28994,7 +29037,7 @@ pfDB["quests"]["esES"] = {
   },
   ["La justicia del castigo,Lleva el s"] = {
     ["id"] = 2972,
-    ["min"] = 42,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["log"] = "Kindal y yo no tenemos aquí los medios para recompensar tu ayuda, pero no queremos que sientas que no la apreciamos. Llévate mi sello. Si alguna vez te encuentras en Teldrassil, ve al Templo de la Luna que está en el corazón de Darnassus. Allí encontrarás a la suma sacerdotisa Tyrande Susurravientos. El sello le hará saber que nosotras estamos bien y dará crédito a tu historia.$B$BAmbas te damos las gracias, $n.",
@@ -29082,7 +29125,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Regresa a Forjaz,Habla con "] = {
     ["id"] = 2977,
-    ["min"] = 48,
+    ["min"] = 46,
     ["lvl"] = 50,
     ["race"] = 77,
     ["pre"] = "El vigía de piedra,Averigua q",
@@ -30517,7 +30560,7 @@ pfDB["quests"]["esES"] = {
   ["El cuerno de la bestia,Lleva el c"] = {
     ["id"] = 3181,
     ["min"] = 40,
-    ["lvl"] = 43,
+    ["lvl"] = 48,
     ["race"] = 77,
     ["log"] = "El enorme cuerno está lleno de arañazos y grietas. Hay un objeto metálico peculiar incrustado.$B$BAl observarlo de cerca, ves que es una cabeza de hacha rota. En el metal están inscritas las palabras:$B$BPropiedad de la montaraz Guijarro.$B$BCuando saques la cabeza de hacha, se romperá en mil pedazos.$B$B¡Qué cosas!",
     ["obj"] = "Lleva el cuerno enorme de Margol a la montaraz Guijarro.|n",
@@ -30746,6 +30789,21 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Jarra de Nori,1"] = "ITEM",
+    },
+  },
+  ["El fragmento resplandeciente,Viaja hast"] = {
+    ["id"] = 3366,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["log"] = "El fragmento es verde y brillante y, aunque sólido, parece que hubiera humo arremolinándose bajo su superficie. No se puede evitar perder la mirada en las profundidades del cristal y, al mismo tiempo, uno sabe que hay algo muy desconcertante.$B$BQuizás deberías ir a ver si alguien de Trinquete puede decirte algo más sobre este extraño fragmento.",
+    ["obj"] = "Viaja hasta Trinquete para averiguar el significado oculto tras el Fragmento de Pesadilla.",
+    ["start"] = {
+    },
+    ["end"] = {
+      ["Fala Viento Sabio"] = "NPC",
+    },
+    ["item"] = {
+      ["Fragmento resplandeciente,1"] = "ITEM",
     },
   },
   ["Piedras de Suntara,Ayuda a Do"] = {
@@ -31732,6 +31790,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 3526,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 178,
     ["log"] = "La ingeniería avanzada se divide en dos disciplinas: la de los gnomos y la de los goblins. Claramente, la ingeniería goblin es la elección de todos los ingenieros brillantes. ¡Aprende a controlar el mundo a través del juicioso uso de potentes explosivos e increíbles aparatos!$B$B$n, lee este manual. Si quieres aprender ingeniería goblin, llévaselo a Nixx Muellepiñón que está en Gadgetzan. Recuerda que si te inscribes, no podrás pasarte luego a la otra escuela, ¡así que piénsatelo bien!",
     ["obj"] = "Si quieres saber más sobre ingeniería goblin, llévale el Manual de disciplinas de ingeniería a Nixx Muellepiñón de Gadgetzan.",
     ["start"] = {
@@ -31833,7 +31892,7 @@ pfDB["quests"]["esES"] = {
   },
   ["[DEPRECATED]El pago de Magatha a Jediga,Entrega la"] = {
     ["id"] = 3562,
-    ["min"] = 51,
+    ["min"] = 45,
     ["lvl"] = 52,
     ["race"] = 178,
     ["pre"] = "Entrega a Magatha,Llévale l",
@@ -32101,6 +32160,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 3629,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "La ingeniería avanzada se divide en dos disciplinas: la de los gnomos y la de los goblins. Menciono a los goblins puramente porque existen. Les gustan las cosas que explotan y les da igual quién esté en medio, aun ellos mismos.$B$BLéete este manual, $n. Si quieres hacerte saltar por los aires, ve a ver a Nixx Muellepiñón en Gadgetzan. Recuerda que si te inscribes, no podrás pasarte luego a la otra escuela, ¡así que piénsatelo bien!",
     ["obj"] = "Si quieres saber más sobre ingeniería goblin, llévale el Manual de disciplinas de ingeniería a Nixx Muellepiñón de Gadgetzan.",
     ["start"] = {
@@ -32117,6 +32177,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 3630,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "En ingeniería avanzada te encuentras con dos escuelas: la de los gnomos y la de los goblins. ¡La ingeniería de los gnomos es mejor con diferencia! Se concentra en la creación de aparatos e instrumentos que hacen la vida más fácil.$B$BLéete este manual, $n. Si quieres saber más sobre el tema, llévaselo aI maestro manitas Sobrechispa, en Forjaz. Recuerda que si te inscribes, no podrás pasarte luego a la otra escuela, ¡así que piénsatelo bien!",
     ["obj"] = "Si quieres saber más sobre ingeniería gnómica, lleva el Manual de disciplinas de ingeniería al maestro manitas Sobrechispa en Forjaz.",
     ["start"] = {
@@ -32148,6 +32209,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 3632,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "En ingeniería avanzada te encuentras con dos escuelas: la de los gnomos y la de los goblins. ¡La ingeniería de los gnomos es mejor con diferencia! Se concentra en la creación de aparatos e instrumentos que hacen la vida más fácil.$B$BLéete este manual, $n. Si quieres saber más sobre el tema, llévaselo aI maestro manitas Sobrechispa, aquí en Forjaz. Recuerda que si te inscribes, no podrás pasarte luego a la otra escuela, ¡así que piénsatelo bien!",
     ["obj"] = "Si quieres saber más sobre ingeniería gnómica, lleva el Manual de disciplinas de ingeniería al maestro manitas Sobrechispa en Forjaz.",
     ["start"] = {
@@ -32180,6 +32242,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 3634,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "En ingeniería avanzada te encuentras con dos escuelas: la de los gnomos y la de los goblins. Aunque yo piense que no sirve para nada, deberías de estar al corriente de la especialización de los gnomos. Crean objetos y aparatos que piensan van a cambiar el mundo, pero que raras veces funcionan.$B$B$n, lee este manual. Si deseas aprender a hacer pisapapeles metálicos, lleva el manual aI maestro manitas Sobrechispa que está en Forjaz. Recuerda que si te inscribes, no podrás pasarte luego a la otra escuela, ¡así que piénsatelo bien!",
     ["obj"] = "Si quieres saber más sobre ingeniería gnómica, lleva el Manual de disciplinas de ingeniería al maestro manitas Sobrechispa en Forjaz.",
     ["start"] = {
@@ -32196,6 +32259,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 3635,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 178,
     ["log"] = "En ingeniería avanzada te encuentras con dos escuelas: la de los gnomos y la de los goblins. Aunque yo piense que no sirve para nada, deberías de estar al corriente de la especialización de los gnomos. Crean objetos y aparatos que piensan van a cambiar el mundo, pero que raras veces funcionan.$B$B$n, lee este manual. Si deseas aprender a hacer pisapapeles metálicos, lleva el manual a Oglethorpe Obnoticus que está en Bahía del Botín. Recuerda que si te inscribes, no podrás pasarte luego a la otra escuela, ¡así que piénsatelo bien!",
     ["obj"] = "Si quieres aprender más cosas sobre ingeniería gnómica, lleva el Manual de disciplinas de ingeniería a Oglethorpe Obnoticus en Bahía del Botín.",
     ["start"] = {
@@ -32229,6 +32293,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 3637,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 178,
     ["log"] = "En ingeniería avanzada te encuentras con dos escuelas: la de los gnomos y la de los goblins. Aunque yo piense que no sirve para nada, deberías de estar al corriente de la especialización de los gnomos. Crean objetos y aparatos que piensan van a cambiar el mundo, pero que raras veces funcionan.$B$B$n, lee este manual. Si deseas aprender a hacer pisapapeles metálicos, lleva el manual a Oglethorpe Obnoticus que está en Bahía del Botín. Recuerda que si te inscribes, no podrás pasarte luego a la otra escuela, ¡así que piénsatelo bien!",
     ["obj"] = "Si quieres aprender más cosas sobre ingeniería gnómica, lleva el Manual de disciplinas de ingeniería a Oglethorpe Obnoticus en Bahía del Botín.",
     ["start"] = {
@@ -32909,7 +32974,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Un huérfano que busca un hogar,Ve a Las M"] = {
     ["id"] = 3841,
-    ["min"] = 45,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "La justicia del castigo,Lleva el s",
@@ -32927,7 +32992,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Una corta incubación,Lleva 2 el"] = {
     ["id"] = 3842,
-    ["min"] = 40,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "Un huérfano que busca un hogar,Ve a Las M",
@@ -32945,7 +33010,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Un nuevo miembro en la familia,Lleva tu h"] = {
     ["id"] = 3843,
-    ["min"] = 42,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "Una corta incubación,Lleva 2 el",
@@ -33112,7 +33177,7 @@ pfDB["quests"]["esES"] = {
     ["min"] = 3,
     ["lvl"] = 4,
     ["race"] = 77,
-    ["pre"] = "[DEPRECATED] Los lobos cruzan la frontera,Lleva 8 pe",
+    ["pre"] = "Hermandad de ladrones,Lleva 8 pa",
     ["log"] = "$n, has demostrado que eres $Gun:una; $c de confianza y que no temes al trabajo duro.$b$bMi amiga Milly Osworth está en apuros. Tiene la carreta al otro lado de la abadía, cerca del establo. Seguro que le va bien que le eches una mano.",
     ["obj"] = "Habla con Milly Osworth.",
     ["start"] = {
@@ -34306,7 +34371,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Visita a Gregan,Llévale u"] = {
     ["id"] = 4142,
-    ["min"] = 52,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 77,
     ["pre"] = "Muigin y Larion,Recoge 15 ",
@@ -34324,7 +34389,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Bruma del mal,Reúne 5 m"] = {
     ["id"] = 4143,
-    ["min"] = 50,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 77,
     ["pre"] = "Visita a Gregan,Llévale u",
@@ -34342,7 +34407,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Brotes Sangrepétalo,"] = {
     ["id"] = 4144,
-    ["min"] = 53,
+    ["min"] = 50,
     ["lvl"] = 60,
     ["race"] = 77,
     ["pre"] = "Bruma del mal,Reúne 5 m",
@@ -34358,7 +34423,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Larion y Muigin,Caza 5 azo"] = {
     ["id"] = 4145,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 178,
     ["log"] = "¿Has visto a Muigin por allí? ¡Es culpa SUYA que estemos perdidos!$B$BYo era el que conocía el camino, pero él insistió en coger un atajo, ¡y mira dónde acabamos!$B$BY por si fuera poco no para de mandarme sus plagas vegetales para fastidiarme. Estoy tan enfadado que no pienso hablarle en un buen tiempo, pero estas plagas son demasiado.$B$BLo primero que deberíamos hacer es intentar limitar su suministro. Sal y caza algunos pétalos de sangre, cuando los tengas vuelve a verme.",
@@ -34378,7 +34443,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Combustible de irradior,Entrega el"] = {
     ["id"] = 4146,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 178,
     ["pre"] = "El taller de Marvon,Viaja hast",
@@ -34397,7 +34462,7 @@ pfDB["quests"]["esES"] = {
   },
   ["El taller de Marvon,Viaja hast"] = {
     ["id"] = 4147,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 178,
     ["pre"] = "Larion y Muigin,Caza 5 azo",
@@ -34446,6 +34511,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 4181,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "La ingeniería avanzada se divide en dos disciplinas: la de los gnomos y la de los goblins. Menciono a los goblins puramente porque existen. Les gustan las cosas que explotan y les da igual quién esté en medio, aun ellos mismos.$B$BLéete este manual, $n. Si quieres hacerte saltar por los aires, ve a ver a Nixx Muellepiñón en Gadgetzan. Recuerda que si te inscribes, no podrás pasarte luego a la otra escuela, ¡así que piénsatelo bien!",
     ["obj"] = "Si quieres saber más sobre ingeniería goblin, llévale el Manual de disciplinas de ingeniería a Nixx Muellepiñón de Gadgetzan.",
     ["start"] = {
@@ -34930,7 +34996,7 @@ pfDB["quests"]["esES"] = {
   },
   ["La Torre de cristal del Oeste,Descubre l"] = {
     ["id"] = 4288,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Cristales de poder,Recoge 7 c",
     ["log"] = "Hasta ahora mis experimentos no han dado ningún resultado positivo, $n. No puedo ayudarte, pero espero que puedas encontrar una solución buscando una de las torres de las que he oído hablar.$B$BTal vez si combináramos en ellas determinados colores... Pero estoy yendo demasiado deprisa. ¡Lo primero es dar con ellas!$B$B$n, busca en la zona occidental del Cráter, al parecer por esa zona hay una de esas torres.",
@@ -35079,7 +35145,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Comida para el bebé,Lleva 5 co"] = {
     ["id"] = 4297,
-    ["min"] = 44,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "Un nuevo miembro en la familia,Lleva tu h",
@@ -35097,7 +35163,7 @@ pfDB["quests"]["esES"] = {
   },
   ["El amor parental,Habla con "] = {
     ["id"] = 4298,
-    ["min"] = 45,
+    ["min"] = 38,
     ["lvl"] = 48,
     ["race"] = 77,
     ["pre"] = "Comida para el bebé,Lleva 5 co",
@@ -35145,7 +35211,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Entender el significado,Habla en u"] = {
     ["id"] = 4321,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["log"] = "La información que me has dado sobre las torres es muy interesante...$B$BDame un minuto para hacer algunos cálculos, $n. Vuelve a hablar conmigo en un momento y tendré respuestas para todo lo que hemos estado buscando.",
     ["obj"] = "Habla en un momento con J.D. Collie.",
@@ -35278,7 +35344,7 @@ pfDB["quests"]["esES"] = {
   },
   ["El cristal de restauración,"] = {
     ["id"] = 4381,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Entender el significado,Habla en u",
     ["start"] = {
@@ -35294,7 +35360,7 @@ pfDB["quests"]["esES"] = {
   },
   ["La fuerza de cristal,"] = {
     ["id"] = 4382,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Entender el significado,Habla en u",
     ["start"] = {
@@ -35310,7 +35376,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Resguardo de cristal,"] = {
     ["id"] = 4383,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Entender el significado,Habla en u",
     ["start"] = {
@@ -35326,7 +35392,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Reducción de cristal,"] = {
     ["id"] = 4384,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Entender el significado,Habla en u",
     ["start"] = {
@@ -35342,7 +35408,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Carga de cristal,"] = {
     ["id"] = 4385,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Entender el significado,Habla en u",
     ["start"] = {
@@ -35358,7 +35424,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Aguja de cristal,"] = {
     ["id"] = 4386,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Entender el significado,Habla en u",
     ["start"] = {
@@ -40871,7 +40937,7 @@ pfDB["quests"]["esES"] = {
   ["Pescado en un balde,Jinar\'Zill"] = {
     ["id"] = 5421,
     ["min"] = 25,
-    ["lvl"] = 25,
+    ["lvl"] = 1,
     ["race"] = 178,
     ["start"] = {
       ["Jinar\'Zillen"] = "NPC",
@@ -43960,7 +44026,7 @@ pfDB["quests"]["esES"] = {
     ["min"] = 10,
     ["lvl"] = 10,
     ["class"] = 4,
-    ["race"] = 77,
+    ["race"] = 8,
     ["log"] = "Hola, joven $gcazador:cazadora;. Tienes cara de ser capaz de domar a una bestia.$b$bVe a ver a Dazalar a Dolanaar. Él puede enseñarte a conseguir tu propia mascota.",
     ["obj"] = "Habla con Dazalar en Dolanaar, en Teldrassil.",
     ["start"] = {
@@ -44424,22 +44490,17 @@ pfDB["quests"]["esES"] = {
       ["Turak Tótem de Runa"] = "NPC",
     },
   },
-  ["Timbermaw Ally,Grazle wan"] = {
+  ["[DISABLED] Timbermaw Ally,Grazle wan"] = {
     ["id"] = 6131,
-    ["min"] = 45,
+    ["min"] = 61,
     ["lvl"] = 48,
-    ["log"] = "The Timbermaw are the only furbolg tribe to escape the corruption. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.$B$BAre you interested in proving yourself? Drive back the corrupted Deadwood tribe of Felwood and we may one day consider you an ally. You\'ll find the first Deadwood tribe - warriors, pathfinders and gardeners - to my west.",
+    ["log"] = "Timbermaw AllyThis quest is disabled until patch 1.9.",
     ["obj"] = "Grazle wants you to prove yourself by killing 5 Deadwood Warriors, 5 Deadwood Pathfinders, and 5 Deadwood Gardeners.",
     ["start"] = {
       ["Grazle"] = "NPC",
     },
     ["end"] = {
       ["Grazle"] = "NPC",
-    },
-    ["spawn"] = {
-      ["Guerrero Muertobosque,5"] = "NPC",
-      ["Abrecaminos Muertobosque,5"] = "NPC",
-      ["Jardinero Muertobosque,5"] = "NPC",
     },
   },
   ["¡Sácame de aquí!,Escolta a "] = {
@@ -44713,8 +44774,8 @@ pfDB["quests"]["esES"] = {
   },
   ["Libro de entradas de Augustus,Consigue e"] = {
     ["id"] = 6164,
-    ["min"] = 10,
-    ["lvl"] = 10,
+    ["min"] = 50,
+    ["lvl"] = 55,
     ["log"] = "¡Ya estoy! ¿Qué quieres?$B$BAy, espera... No puedo abrir la tienda sin mi libro de entradas. ¿Cómo voy a hacer nada sin registrarlo en mi libro de entradas?$B$BHe debido de dejarlo en la ciudad, en alguna parte. En mi habitación de la posada... debe de estar allí.$B$BTráeme mi libro. ¡Por favor, tráemelo! ¡Tráeme mi libro y verás! ¡Montaré la tienda y verás mis precios! ¡Son DE LOCOS!",
     ["obj"] = "Consigue el libro de entradas de Augustus en la posada del Valle del Terror.",
     ["start"] = {
@@ -46268,7 +46329,7 @@ pfDB["quests"]["esES"] = {
   },
   ["¡Qué bueno eres!,Parece que"] = {
     ["id"] = 6608,
-    ["min"] = 40,
+    ["min"] = 35,
     ["lvl"] = 45,
     ["race"] = 178,
     ["log"] = "Lumak no puede enseñar nada ya a $n. ¡Lo haces demasiado bien! Busca al Nat Pagle. ¡No te come, es amigo de Lumak! Nat te enseñará a pescar.$B$BEstá en el Marjal Revolcafango, al sur de Humie, Thermornoséqué. Nat seguro está pescando. ¡Ve!",
@@ -46282,7 +46343,7 @@ pfDB["quests"]["esES"] = {
   },
   ["¡Me has dejado seco!,Ve a Kalim"] = {
     ["id"] = 6609,
-    ["min"] = 41,
+    ["min"] = 35,
     ["lvl"] = 45,
     ["race"] = 77,
     ["log"] = "¡Soy un enano, $gniño:niña;! ¡Nací para pescar! ¡Mira, mira! Es como si fuera de piedra.$B$BMe has dejado seco. ¡Te he enseñado todo lo que sé!$B$B¿No lo pillas? En fin, tengo un amigo que puede echarte un cable. Nat Pagle se llama, un buen tipo. Lo encontrarás por las islas que hay al sur de Theramore. Venga, ¡arreando!",
@@ -46642,7 +46703,7 @@ pfDB["quests"]["esES"] = {
     ["min"] = 10,
     ["lvl"] = 10,
     ["class"] = 4,
-    ["race"] = 77,
+    ["race"] = 8,
     ["log"] = "Hola, joven $gcazador:cazadora;. Tienes cara de ser capaz de domar a una bestia.$B$BVe a ver a Dazalar a Dolanaar. Él puede enseñarte a conseguir tu propia mascota.|n",
     ["obj"] = "Habla con Dazalar en Dolanaar, en Teldrassil.",
     ["start"] = {
@@ -49990,9 +50051,12 @@ pfDB["quests"]["esES"] = {
     ["id"] = 7660,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Ogunaro Correlobo"] = "NPC",
     },
     ["end"] = {
+      ["Ogunaro Correlobo"] = "NPC",
     },
     ["item"] = {
       ["Cuerno del lobo ártico,1"] = "ITEM",
@@ -50002,9 +50066,12 @@ pfDB["quests"]["esES"] = {
     ["id"] = 7661,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Ogunaro Correlobo"] = "NPC",
     },
     ["end"] = {
+      ["Ogunaro Correlobo"] = "NPC",
     },
     ["item"] = {
       ["Cuerno del lobo rojo,1"] = "ITEM",
@@ -50014,9 +50081,12 @@ pfDB["quests"]["esES"] = {
     ["id"] = 7662,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Harb Garrapezuña"] = "NPC",
     },
     ["end"] = {
+      ["Harb Garrapezuña"] = "NPC",
     },
     ["item"] = {
       ["Kodo azulado,1"] = "ITEM",
@@ -50026,9 +50096,12 @@ pfDB["quests"]["esES"] = {
     ["id"] = 7663,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Harb Garrapezuña"] = "NPC",
     },
     ["end"] = {
+      ["Harb Garrapezuña"] = "NPC",
     },
     ["item"] = {
       ["Kodo verde,1"] = "ITEM",
@@ -50038,9 +50111,12 @@ pfDB["quests"]["esES"] = {
     ["id"] = 7664,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["end"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["item"] = {
       ["Silbato del raptor marfil,1"] = "ITEM",
@@ -50050,9 +50126,12 @@ pfDB["quests"]["esES"] = {
     ["id"] = 7665,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["end"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["item"] = {
       ["Silbato del raptor rojo jaspeado,1"] = "ITEM",
@@ -50095,9 +50174,12 @@ pfDB["quests"]["esES"] = {
     ["id"] = 7671,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Lelanai"] = "NPC",
     },
     ["end"] = {
+      ["Lelanai"] = "NPC",
     },
     ["item"] = {
       ["Riendas del sable de hielo anciano,1"] = "ITEM",
@@ -50107,9 +50189,12 @@ pfDB["quests"]["esES"] = {
     ["id"] = 7672,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Lelanai"] = "NPC",
     },
     ["end"] = {
+      ["Lelanai"] = "NPC",
     },
     ["item"] = {
       ["Riendas del sable de la noche,1"] = "ITEM",
@@ -50119,9 +50204,12 @@ pfDB["quests"]["esES"] = {
     ["id"] = 7673,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Veron Semperámbar"] = "NPC",
     },
     ["end"] = {
+      ["Veron Semperámbar"] = "NPC",
     },
     ["item"] = {
       ["Carnero de escarcha,1"] = "ITEM",
@@ -50131,9 +50219,12 @@ pfDB["quests"]["esES"] = {
     ["id"] = 7674,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Veron Semperámbar"] = "NPC",
     },
     ["end"] = {
+      ["Veron Semperámbar"] = "NPC",
     },
     ["item"] = {
       ["Carnero negro,1"] = "ITEM",
@@ -50143,9 +50234,12 @@ pfDB["quests"]["esES"] = {
     ["id"] = 7675,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Milli Plumasilba"] = "NPC",
     },
     ["end"] = {
+      ["Milli Plumasilba"] = "NPC",
     },
     ["item"] = {
       ["Mecazancudo azul hielo modelo A,1"] = "ITEM",
@@ -50155,9 +50249,12 @@ pfDB["quests"]["esES"] = {
     ["id"] = 7676,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Milli Plumasilba"] = "NPC",
     },
     ["end"] = {
+      ["Milli Plumasilba"] = "NPC",
     },
     ["item"] = {
       ["Mecazancudo blanco modelo B,1"] = "ITEM",
@@ -50166,12 +50263,13 @@ pfDB["quests"]["esES"] = {
   ["Intercambio de semental blanco,"] = {
     ["id"] = 7677,
     ["min"] = 60,
-    ["lvl"] = 60,
-    ["log"] = "",
-    ["obj"] = "",
+    ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Katie Cazadora"] = "NPC",
     },
     ["end"] = {
+      ["Katie Cazadora"] = "NPC",
     },
     ["item"] = {
       ["Brida de semental blanco,1"] = "ITEM",
@@ -50181,9 +50279,12 @@ pfDB["quests"]["esES"] = {
     ["id"] = 7678,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Katie Cazadora"] = "NPC",
     },
     ["end"] = {
+      ["Katie Cazadora"] = "NPC",
     },
     ["item"] = {
       ["Brida de Palomino,1"] = "ITEM",
@@ -50530,6 +50631,9 @@ pfDB["quests"]["esES"] = {
     ["end"] = {
       ["Enseña de Drakkisath"] = "OBJECT",
     },
+    ["item"] = {
+      ["Orden de Puño Negro,1"] = "ITEM",
+    },
   },
   ["Señor de Roca Negra,Lleva la c"] = {
     ["id"] = 7781,
@@ -50610,9 +50714,8 @@ pfDB["quests"]["esES"] = {
   },
   ["Thunderaan el Hijo del Viento,Para liber"] = {
     ["id"] = 7786,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["pre"] = "Examina la vasija,Examina la",
     ["log"] = "Te he contado todo lo que sé, $n. Eres tú quien debe encontrar elementium y aniquilar la forma corpórea del Señor del Fuego.$b$bSi lo consigues, obtendrás la bendición de Thunderaan.",
     ["obj"] = "Para liberar a Thunderaan el Hijo del Viento de su cárcel, debes entregarle al alto señor Demitrian en Silithus la mitad izquierda y la derecha del vínculo del Hijo del Viento, 10 barras de elementium encantado y la esencia del Señor del Fuego.",
     ["start"] = {
@@ -50621,17 +50724,12 @@ pfDB["quests"]["esES"] = {
     ["end"] = {
       ["Alto señor Demitrian"] = "NPC",
     },
-    ["item"] = {
-      ["Barra de elementium encantado,10"] = "ITEM",
-      ["Esencia del Señor del Fuego,1"] = "ITEM",
-      ["Ataduras del Hijo del Viento,1"] = "ITEM",
-      ["Ataduras del Hijo del Viento,1"] = "ITEM",
-    },
   },
   ["¡Arriba, Trueno Furioso!,Lleva la h"] = {
     ["id"] = 7787,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Thunderaan el Hijo del Viento,Para liber",
     ["pre"] = "Thunderaan el Hijo del Viento,Para liber",
     ["log"] = "Has derrotado al Señor del viento. Toma el acero durmiente y obliga al miserable embustero, Demitrian, a usar los materiales que aportaste para su traición y despertar a Trueno Furioso.",
     ["obj"] = "Lleva la hoja besada por el viento durmiente al alto señor Demitrian.",
@@ -50644,38 +50742,21 @@ pfDB["quests"]["esES"] = {
       ["Hoja besada por el viento durmiente,1"] = "ITEM",
     },
   },
-  ["¡Expulsa al invasor!,Entra en l"] = {
-    ["id"] = 7788,
-    ["min"] = 20,
-    ["lvl"] = 29,
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8081,
+    ["min"] = 50,
+    ["lvl"] = 55,
     ["race"] = 77,
-    ["log"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
-    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
+    ["log"] = "",
+    ["obj"] = "",
     ["start"] = {
-      ["Centinela Cantolejano"] = "NPC",
+      ["Sargento Maclear"] = "NPC",
     },
     ["end"] = {
-      ["Centinela Cantolejano"] = "NPC",
+      ["Sargento Maclear"] = "NPC",
     },
     ["item"] = {
-      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
-    },
-  },
-  ["Acaba con los usurpadores Ala de Plata,Entra en l"] = {
-    ["id"] = 7789,
-    ["min"] = 20,
-    ["lvl"] = 29,
-    ["race"] = 178,
-    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
-    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
-    ["start"] = {
-      ["Capitán Trizacráneo"] = "NPC",
-    },
-    ["end"] = {
-      ["Capitán Trizacráneo"] = "NPC",
-    },
-    ["item"] = {
-      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
     },
   },
   ["Reclamo por la Cuenca de Arathi,"] = {
@@ -51557,98 +51638,45 @@ pfDB["quests"]["esES"] = {
       ["Kelm Hargunth"] = "NPC",
     },
   },
-  ["¡Expulsa al invasor!,Entra en l"] = {
-    ["id"] = 7871,
-    ["min"] = 30,
-    ["lvl"] = 39,
-    ["race"] = 77,
-    ["log"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
-    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
-    ["start"] = {
-      ["Centinela Cantolejano"] = "NPC",
-    },
-    ["end"] = {
-      ["Centinela Cantolejano"] = "NPC",
-    },
-    ["item"] = {
-      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
-    },
-  },
-  ["¡Expulsa al invasor!,Entra en l"] = {
-    ["id"] = 7872,
-    ["min"] = 40,
-    ["lvl"] = 49,
-    ["race"] = 77,
-    ["log"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
-    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
-    ["start"] = {
-      ["Centinela Cantolejano"] = "NPC",
-    },
-    ["end"] = {
-      ["Centinela Cantolejano"] = "NPC",
-    },
-    ["item"] = {
-      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
-    },
-  },
-  ["¡Expulsa al invasor!,Entra en l"] = {
-    ["id"] = 7873,
+  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
+    ["id"] = 8080,
     ["min"] = 50,
     ["lvl"] = 59,
     ["race"] = 77,
-    ["log"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
-    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
+    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
     ["start"] = {
-      ["Centinela Cantolejano"] = "NPC",
+      ["Sargento Maclear"] = "NPC",
     },
     ["end"] = {
-      ["Centinela Cantolejano"] = "NPC",
+      ["Sargento Maclear"] = "NPC",
     },
     ["item"] = {
-      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
+      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
     },
   },
-  ["Acaba con los usurpadores Ala de Plata,Entra en l"] = {
-    ["id"] = 7874,
-    ["min"] = 30,
-    ["lvl"] = 39,
-    ["race"] = 178,
-    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
-    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
-    ["start"] = {
-      ["Capitán Trizacráneo"] = "NPC",
-    },
-    ["end"] = {
-      ["Capitán Trizacráneo"] = "NPC",
-    },
-    ["item"] = {
-      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
-    },
-  },
-  ["Acaba con los usurpadores Ala de Plata,Entra en l"] = {
-    ["id"] = 7875,
-    ["min"] = 40,
-    ["lvl"] = 49,
-    ["race"] = 178,
-    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
-    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
-    ["start"] = {
-      ["Capitán Trizacráneo"] = "NPC",
-    },
-    ["end"] = {
-      ["Capitán Trizacráneo"] = "NPC",
-    },
-    ["item"] = {
-      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
-    },
-  },
-  ["Acaba con los usurpadores Ala de Plata,Entra en l"] = {
-    ["id"] = 7876,
+  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
+    ["id"] = 8080,
     ["min"] = 50,
-    ["lvl"] = 59,
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Marca de Honor,"] = {
+    ["id"] = 7925,
+    ["min"] = 20,
+    ["lvl"] = 25,
     ["race"] = 178,
-    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
-    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
     ["start"] = {
       ["Capitán Trizacráneo"] = "NPC",
     },
@@ -51656,7 +51684,147 @@ pfDB["quests"]["esES"] = {
       ["Capitán Trizacráneo"] = "NPC",
     },
     ["item"] = {
-      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Marca de Honor,"] = {
+    ["id"] = 7925,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["pre"] = "Acaba con los usurpadores Ala de Plata,Entra en l",
+    ["pre"] = "Acaba con los usurpadores Ala de Plata,Entra en l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Marca de Honor,"] = {
+    ["id"] = 7924,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Marca de Honor,"] = {
+    ["id"] = 7924,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["pre"] = "Acaba con los usurpadores Ala de Plata,Entra en l",
+    ["pre"] = "Acaba con los usurpadores Ala de Plata,Entra en l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Marca de Honor,"] = {
+    ["id"] = 7922,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["pre"] = "Acaba con los usurpadores Ala de Plata,Entra en l",
+    ["pre"] = "Acaba con los usurpadores Ala de Plata,Entra en l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Marca de Honor,"] = {
+    ["id"] = 7923,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Marca de Honor,"] = {
+    ["id"] = 7923,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["pre"] = "Acaba con los usurpadores Ala de Plata,Entra en l",
+    ["pre"] = "Acaba con los usurpadores Ala de Plata,Entra en l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Talismanes del mérito,"] = {
+    ["id"] = 7921,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["pre"] = "¡Expulsa al invasor!,Entra en l",
+    ["pre"] = "¡Expulsa al invasor!,Entra en l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
+    },
+  },
+  ["Marca de Honor,"] = {
+    ["id"] = 7922,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
     },
   },
   ["El tesoro de los Shen\'dralar,Vuelve a E"] = {
@@ -52241,6 +52409,7 @@ pfDB["quests"]["esES"] = {
     ["start"] = {
     },
     ["end"] = {
+      ["Mysterious Wailing Caverns Chest"] = "OBJECT",
     },
     ["item"] = {
       ["Fortuna de Sayge n.º 25,1"] = "ITEM",
@@ -52914,21 +53083,53 @@ pfDB["quests"]["esES"] = {
       ["Casaca Hakkari primigenia,1"] = "ITEM",
     },
   },
-  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
-    ["id"] = 8080,
-    ["min"] = 50,
-    ["lvl"] = 59,
+  ["Talismanes del mérito,"] = {
+    ["id"] = 7888,
+    ["min"] = 40,
+    ["lvl"] = 45,
     ["race"] = 77,
-    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
-    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
     ["start"] = {
-      ["Sargento Maclear"] = "NPC",
+      ["Centinela Cantolejano"] = "NPC",
     },
     ["end"] = {
-      ["Sargento Maclear"] = "NPC",
+      ["Centinela Cantolejano"] = "NPC",
     },
     ["item"] = {
-      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
+    },
+  },
+  ["Talismanes del mérito,"] = {
+    ["id"] = 7888,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["pre"] = "¡Expulsa al invasor!,Entra en l",
+    ["pre"] = "¡Expulsa al invasor!,Entra en l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
+    },
+  },
+  ["Talismanes del mérito,"] = {
+    ["id"] = 7921,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
     },
   },
   ["El guijarro de Kajaro,"] = {
@@ -53265,21 +53466,57 @@ pfDB["quests"]["esES"] = {
       ["Maestra de la Muerte Duire"] = "NPC",
     },
   },
-  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
-    ["id"] = 8123,
+  ["Talismanes del mérito,"] = {
+    ["id"] = 7886,
     ["min"] = 50,
-    ["lvl"] = 59,
-    ["race"] = 178,
-    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
-    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["pre"] = "¡Expulsa al invasor!,Entra en l",
+    ["pre"] = "¡Expulsa al invasor!,Entra en l",
+    ["log"] = "",
+    ["obj"] = "",
     ["start"] = {
-      ["Mortacechador Mortis"] = "NPC",
+      ["Centinela Cantolejano"] = "NPC",
     },
     ["end"] = {
-      ["Mortacechador Mortis"] = "NPC",
+      ["Centinela Cantolejano"] = "NPC",
     },
     ["item"] = {
-      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
+    },
+  },
+  ["Talismanes del mérito,"] = {
+    ["id"] = 7887,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
+    },
+  },
+  ["Talismanes del mérito,"] = {
+    ["id"] = 7887,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["pre"] = "¡Expulsa al invasor!,Entra en l",
+    ["pre"] = "¡Expulsa al invasor!,Entra en l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
     },
   },
   ["Dije Zandalar de las Sombras,"] = {
@@ -53464,106 +53701,104 @@ pfDB["quests"]["esES"] = {
       ["Cornamenta perfecta de trotador,2"] = "ITEM",
     },
   },
-  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
-    ["id"] = 8154,
+  ["Talismanes del mérito,"] = {
+    ["id"] = 7886,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
+    },
+  },
+  ["Acaba con los usurpadores Ala de Plata,Entra en l"] = {
+    ["id"] = 7876,
+    ["min"] = 50,
+    ["lvl"] = 59,
+    ["race"] = 178,
+    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["Acaba con los usurpadores Ala de Plata,Entra en l"] = {
+    ["id"] = 7876,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Acaba con los usurpadores Ala de Plata,Entra en l"] = {
+    ["id"] = 7875,
     ["min"] = 40,
-    ["lvl"] = 49,
-    ["race"] = 77,
-    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
-    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
     ["start"] = {
-      ["Sargento Maclear"] = "NPC",
+      ["Capitán Trizacráneo"] = "NPC",
     },
     ["end"] = {
-      ["Sargento Maclear"] = "NPC",
+      ["Capitán Trizacráneo"] = "NPC",
     },
     ["item"] = {
-      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+      ["Warsong Mark of Honor,1"] = "ITEM",
     },
   },
-  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
-    ["id"] = 8155,
-    ["min"] = 20,
-    ["lvl"] = 29,
-    ["race"] = 77,
-    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
-    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
-    ["start"] = {
-      ["Sargento Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Sargento Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
-    },
-  },
-  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
-    ["id"] = 8156,
+  ["Acaba con los usurpadores Ala de Plata,Entra en l"] = {
+    ["id"] = 7874,
     ["min"] = 30,
     ["lvl"] = 39,
-    ["race"] = 77,
-    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
-    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
-    ["start"] = {
-      ["Sargento Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Sargento Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
-    },
-  },
-  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
-    ["id"] = 8160,
-    ["min"] = 40,
-    ["lvl"] = 49,
     ["race"] = 178,
-    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
-    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
+    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
     ["start"] = {
-      ["Mortacechador Mortis"] = "NPC",
+      ["Capitán Trizacráneo"] = "NPC",
     },
     ["end"] = {
-      ["Mortacechador Mortis"] = "NPC",
+      ["Capitán Trizacráneo"] = "NPC",
     },
     ["item"] = {
-      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
     },
   },
-  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
-    ["id"] = 8161,
+  ["Acaba con los usurpadores Ala de Plata,Entra en l"] = {
+    ["id"] = 7874,
     ["min"] = 30,
-    ["lvl"] = 39,
+    ["lvl"] = 35,
     ["race"] = 178,
-    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
-    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
+    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
     ["start"] = {
-      ["Mortacechador Mortis"] = "NPC",
+      ["Capitán Trizacráneo"] = "NPC",
     },
     ["end"] = {
-      ["Mortacechador Mortis"] = "NPC",
+      ["Capitán Trizacráneo"] = "NPC",
     },
     ["item"] = {
-      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
-    },
-  },
-  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
-    ["id"] = 8162,
-    ["min"] = 20,
-    ["lvl"] = 29,
-    ["race"] = 178,
-    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
-    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
-    ["start"] = {
-      ["Mortacechador Mortis"] = "NPC",
-    },
-    ["end"] = {
-      ["Mortacechador Mortis"] = "NPC",
-    },
-    ["item"] = {
-      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+      ["Warsong Mark of Honor,1"] = "ITEM",
     },
   },
   ["Invasores del Valle de Alterac,Entrega 3 "] = {
@@ -53750,7 +53985,7 @@ pfDB["quests"]["esES"] = {
   },
   ["¿Puedo tener un folleto de pesca?,"] = {
     ["id"] = 8228,
-    ["min"] = 55,
+    ["min"] = 35,
     ["lvl"] = 60,
     ["start"] = {
       ["Barrus"] = "NPC",
@@ -53761,7 +53996,7 @@ pfDB["quests"]["esES"] = {
   },
   ["¿Puedo tener un folleto de pesca?,"] = {
     ["id"] = 8229,
-    ["min"] = 55,
+    ["min"] = 35,
     ["lvl"] = 60,
     ["start"] = {
       ["Grinkle"] = "NPC",
@@ -54116,7 +54351,7 @@ pfDB["quests"]["esES"] = {
   },
   ["La amenaza de Atracoscuro,Usa el cri"] = {
     ["id"] = 8258,
-    ["min"] = 60,
+    ["min"] = 58,
     ["lvl"] = 60,
     ["class"] = 64,
     ["race"] = 178,
@@ -54205,64 +54440,72 @@ pfDB["quests"]["esES"] = {
       ["Rutherford Twing"] = "NPC",
     },
   },
-  ["Galón de sacrificio,"] = {
-    ["id"] = 8266,
-    ["min"] = 10,
-    ["lvl"] = 39,
-    ["race"] = 178,
-    ["log"] = "",
-    ["obj"] = "",
-    ["start"] = {
-    },
-    ["end"] = {
-    },
-    ["item"] = {
-      ["Lazo de Sacrificio de la Garganta Grito de Guerra,1"] = "ITEM",
-    },
-  },
-  ["Galón de sacrificio,"] = {
-    ["id"] = 8267,
-    ["min"] = 40,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["log"] = "",
-    ["obj"] = "",
-    ["start"] = {
-    },
-    ["end"] = {
-    },
-    ["item"] = {
-      ["Lazo de Sacrificio de la Garganta Grito de Guerra,1"] = "ITEM",
-    },
-  },
-  ["Galón de sacrificio,"] = {
-    ["id"] = 8268,
-    ["min"] = 10,
-    ["lvl"] = 39,
+  ["¡Expulsa al invasor!,Entra en l"] = {
+    ["id"] = 7873,
+    ["min"] = 50,
+    ["lvl"] = 59,
     ["race"] = 77,
-    ["log"] = "",
-    ["obj"] = "",
+    ["log"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
     ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
     },
     ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
     },
     ["item"] = {
-      ["Lazo de Sacrificio de la Garganta Grito de Guerra,1"] = "ITEM",
+      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
     },
   },
-  ["Galón de sacrificio,"] = {
-    ["id"] = 8269,
-    ["min"] = 40,
-    ["lvl"] = 60,
+  ["¡Expulsa al invasor!,Entra en l"] = {
+    ["id"] = 7873,
+    ["min"] = 50,
+    ["lvl"] = 55,
     ["race"] = 77,
-    ["log"] = "",
-    ["obj"] = "",
+    ["log"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
     ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
     },
     ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
     },
     ["item"] = {
-      ["Lazo de Sacrificio de la Garganta Grito de Guerra,1"] = "ITEM",
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
+    },
+  },
+  ["¡Expulsa al invasor!,Entra en l"] = {
+    ["id"] = 7872,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 77,
+    ["log"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["¡Expulsa al invasor!,Entra en l"] = {
+    ["id"] = 7872,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["log"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
     },
   },
   ["La reconquista de Silithus,Habla con "] = {
@@ -54496,9 +54739,9 @@ pfDB["quests"]["esES"] = {
     },
   },
   ["¡Expulsa al invasor!,Entra en l"] = {
-    ["id"] = 8291,
-    ["min"] = 60,
-    ["lvl"] = 60,
+    ["id"] = 7871,
+    ["min"] = 30,
+    ["lvl"] = 39,
     ["race"] = 77,
     ["log"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
     ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
@@ -54512,11 +54755,13 @@ pfDB["quests"]["esES"] = {
       ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
     },
   },
-  ["Talismanes del mérito,"] = {
-    ["id"] = 8292,
-    ["min"] = 10,
-    ["lvl"] = 60,
+  ["¡Expulsa al invasor!,Entra en l"] = {
+    ["id"] = 7871,
+    ["min"] = 30,
+    ["lvl"] = 35,
     ["race"] = 77,
+    ["log"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
     ["start"] = {
       ["Centinela Cantolejano"] = "NPC",
     },
@@ -54524,30 +54769,15 @@ pfDB["quests"]["esES"] = {
       ["Centinela Cantolejano"] = "NPC",
     },
     ["item"] = {
-      ["Marca de Honor de la Garganta Grito de Guerra,3"] = "ITEM",
-    },
-  },
-  ["Marca de Honor,"] = {
-    ["id"] = 8293,
-    ["min"] = 10,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["start"] = {
-      ["Capitán Trizacráneo"] = "NPC",
-    },
-    ["end"] = {
-      ["Capitán Trizacráneo"] = "NPC",
-    },
-    ["item"] = {
-      ["Marca de Honor de la Garganta Grito de Guerra,3"] = "ITEM",
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
     },
   },
   ["Acaba con los usurpadores Ala de Plata,Entra en l"] = {
-    ["id"] = 8294,
-    ["min"] = 60,
-    ["lvl"] = 60,
+    ["id"] = 7789,
+    ["min"] = 20,
+    ["lvl"] = 29,
     ["race"] = 178,
-    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.",
+    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
     ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
     ["start"] = {
       ["Capitán Trizacráneo"] = "NPC",
@@ -54559,68 +54789,55 @@ pfDB["quests"]["esES"] = {
       ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
     },
   },
-  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
-    ["id"] = 8297,
-    ["min"] = 60,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
-    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
-    ["start"] = {
-      ["Sargento Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Sargento Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
-    },
-  },
-  ["Más cajas de suministros,"] = {
-    ["id"] = 8298,
+  ["Acaba con los usurpadores Ala de Plata,Entra en l"] = {
+    ["id"] = 7789,
     ["min"] = 20,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["start"] = {
-      ["Sargento Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Sargento Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Marca de Honor de la Cuenca de Arathi,3"] = "ITEM",
-    },
-  },
-  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
-    ["id"] = 8299,
-    ["min"] = 60,
-    ["lvl"] = 60,
+    ["lvl"] = 25,
     ["race"] = 178,
-    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
-    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
+    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
     ["start"] = {
-      ["Mortacechador Mortis"] = "NPC",
+      ["Capitán Trizacráneo"] = "NPC",
     },
     ["end"] = {
-      ["Mortacechador Mortis"] = "NPC",
+      ["Capitán Trizacráneo"] = "NPC",
     },
     ["item"] = {
-      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+      ["Warsong Mark of Honor,1"] = "ITEM",
     },
   },
-  ["Más cajas de suministros,"] = {
-    ["id"] = 8300,
+  ["¡Expulsa al invasor!,Entra en l"] = {
+    ["id"] = 7788,
     ["min"] = 20,
-    ["lvl"] = 60,
-    ["race"] = 178,
+    ["lvl"] = 29,
+    ["race"] = 77,
+    ["log"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
     ["start"] = {
-      ["Mortacechador Mortis"] = "NPC",
+      ["Centinela Cantolejano"] = "NPC",
     },
     ["end"] = {
-      ["Mortacechador Mortis"] = "NPC",
+      ["Centinela Cantolejano"] = "NPC",
     },
     ["item"] = {
-      ["Marca de Honor de la Cuenca de Arathi,3"] = "ITEM",
+      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["¡Expulsa al invasor!,Entra en l"] = {
+    ["id"] = 7788,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["log"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
     },
   },
   ["El camino del honrado,Lleva 200 "] = {
@@ -54788,7 +55005,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Golosinas de Halloween para Jesper,Habla con "] = {
     ["id"] = 8311,
-    ["min"] = 50,
+    ["min"] = 10,
     ["lvl"] = 60,
     ["log"] = "No puedo hacer lo del truco o trato. Desde el ataque de Alamuerte, tengo suerte cuando la supervisora Ruiseñor me deja alejarme tanto.$b$bSi vas tú por mí, te cambiaré los caramelos que consigas por otros que tengo.$B$BLos taberneros de las grandes ciudades tienen caramelos y los dan siempre en Halloween. ¡Habla con ellos y haz los trucos que te pidan! También hay un pequeño gnomo llamado Talvash en Forjaz, que está repartiendo caramelos. Cuando tengas todos los caramelos, ¡tráemelos!",
     ["obj"] = "Habla con los taberneros de Ventormenta, Forjaz y Darnassus, así como con Talvash del Kissel en Forjaz. Realiza los trucos que te pidan a cambio de los tratos que ofrecen.$B$BVuelve a ver a Jesper frente a Ventormenta con un mazapán de Darnassus, una gominola de Gnomeregan, un almendrado de Ventormenta y una menta de Forjaz.",
@@ -54807,7 +55024,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Golosinas de Halloween para Pupas,Habla con "] = {
     ["id"] = 8312,
-    ["min"] = 50,
+    ["min"] = 10,
     ["lvl"] = 60,
     ["log"] = "Quiero ir a por regalitos, pero no puedo porque la Supervisora Ruiseñor no me dejaría. Si vas por mí, te cambiaré las golosinas que me traigas por unas que tengo yo. Te gustarán, ¡te transforman en cosas que dan risa y también miedo!$B$BTodos los taberneros de las ciudades dan golosinas por Halloween. Habla con ellos y haz lo que te pidan a cambio de las golosinas. Y el trol Kali Remik, que vive en Orgrimmar, también da golosinas. ¡Vuelve cuando tengas todas las golosinas!",
     ["obj"] = "Habla con los taberneros de Orgrimmar, Entrañas y Cima del Trueno y con Kali Remik en el Valle de los Espíritus de Orgrimmar. Realiza los trucos que te pidan a cambio de los tratos que ofrecen.$b$bVuelve a ver a Pupas en las Ruinas de Lordaeron con un mazapán de Cima del Trueno, una gominola de Lanza Negra, un almendrado de Orgrimmar y una menta de Entrañas.",
@@ -54957,7 +55174,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Huevos podridos,Introduce "] = {
     ["id"] = 8322,
-    ["min"] = 60,
+    ["min"] = 30,
     ["lvl"] = 60,
     ["race"] = 178,
     ["log"] = "Los humanos de Costasur adoran su cerveza y tienen en alta estima la que sirven en la Taberna Costasur. Con el caos que se crea durante Halloween, podemos aprovechar para sabotear sus reservas de cerveza de semanas... ¡e incluso de meses!$B$BCoge estos huevos podridos e introdúcelos en los barriles que encontrarás en la Taberna Costasur. ¡Tu sola presencia causará estragos así que estate alerta!$B$BCuando hayan experimentado en Costasur ese sabor que nunca olvidarán, ven a verme al festival.",
@@ -55762,6 +55979,7 @@ pfDB["quests"]["esES"] = {
     ["lvl"] = 60,
     ["race"] = 77,
     ["pre"] = "Korrak el Sanguinario,Según cue",
+    ["pre"] = "Korrak el Sanguinario,Según cue",
     ["log"] = "Hay algo que no encaja en todo esto... ¿Ha pensado alguien en quemar el cadáver de Korrak? Esos trols no se detendrán ante nada para resucitar a su líder caído <como a menudo hacen los paganos semihombres-semibestias.$B$BAbre bien los ojos, $n. No te asustes si Korrak nos sorprende con una reaparición y, si lo hace, quiero que sea ejecutado y que su cuerpo sea reducido a cenizas.$B$BPara mayor seguridad, córtale la cabeza y tráeme su calavera antes de prenderle fuego al cuerpo sin vida.",
     ["obj"] = "Si Korrak el Sanguinario vuelve por la Tierra de Disputa, encuéntralo y acaba con él.$B$BLlévale la calavera de Korrak al teniente Haggerdin en las Laderas de Trabalomas.|n",
     ["start"] = {
@@ -55779,6 +55997,7 @@ pfDB["quests"]["esES"] = {
     ["min"] = 51,
     ["lvl"] = 60,
     ["race"] = 178,
+    ["pre"] = "La leyenda de Korrak,Según cue",
     ["pre"] = "La leyenda de Korrak,Según cue",
     ["log"] = "Aunque es cierto que Korrak ha sido ejecutado, queda pendiente un asunto: ¿permanecerá muerto? Los trols son famosos por su magia tribal de otro mundo. No me sorprendería que el líder caído resurgiera de entre los muertos para volver a gobernar su clan.$B$BSabes qué hacer si tal cosa ocurriera.$B$B<El maestro de guerra Laggrond se pasa el índice por el cuello como si lo degollaran.>$B$BY esta vez, quiero su calavera. Abre bien los ojos, soldado.$B$B¡Retírese!",
     ["obj"] = "Si Korrak el Sanguinario vuelve por la Tierra de Disputa, encuéntralo y acaba con él.$B$BLlévale la calavera de Korrak al maestro de guerra Laggrond en las Laderas de Trabalomas.",
@@ -55828,7 +56047,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Los barriles dañados,Ve a ver d"] = {
     ["id"] = 8409,
-    ["min"] = 60,
+    ["min"] = 25,
     ["lvl"] = 60,
     ["race"] = 178,
     ["pre"] = "Huevos podridos,Introduce ",
@@ -56582,6 +56801,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 8462,
     ["min"] = 53,
     ["lvl"] = 55,
+    ["pre"] = "[DISABLED] Timbermaw Ally,Grazle wan",
     ["pre"] = "Timbermaw Ally,Grazle wan",
     ["log"] = "Quizás seas capaz de manejarte con una amenaza mayor de las que afrontamos los Fauces de Madera. Desde luego, has demostrado ser muy capaz...$B$BUno de los nuestros hace guardia en la entrada del Bastión Fauces de Madera que está hacia el norte por este camino. Su nombre es Nafien. Parece una bestia salvaje y desagradable, pero no le temas. Solo busca ayuda para luchar contra las fuerzas malignas que amenazan nuestro hogar.",
     ["obj"] = "Viaja hacia el norte por el camino principal de Frondavil y habla con el fúrbolg Nafien. Está haciendo guardia en la entrada del Bastión Fauces de Madera.",
@@ -56609,6 +56829,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 8466,
     ["min"] = 45,
     ["lvl"] = 55,
+    ["pre"] = "[DISABLED] Timbermaw Ally,Grazle wan",
     ["pre"] = "Timbermaw Ally,Grazle wan",
     ["obj"] = "",
     ["start"] = {
@@ -57597,11 +57818,14 @@ pfDB["quests"]["esES"] = {
     ["id"] = 8548,
     ["min"] = 55,
     ["lvl"] = 60,
+    ["pre"] = "Equipamiento de Cenarius,Habla con ",
     ["log"] = "Los distintivos que recibes por misiones de combate, logística y táctica para el Fuerte Cenarion, sirven para algo más que para presumir, $n.$B$BTe aconsejo que los guardes bien. Como prueba de tu lealtad con nuestra organización, puedo ofrecerte equipamiento que reservamos para nuestros aliados más cercanos, a cambio de esos distintivos",
     ["obj"] = "Lleva 5 distintivos de combate Cenarion, 3 distintivos de logística Cenarion y 7 distintivos de táctica Cenarion a Vargus en el Fuerte Cenarion, en Silithus. También debes conseguir un nivel de reputación amistoso con el Círculo Cenarion para poder completar esta misión.",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Distintivo de combate Cenarion,5"] = "ITEM",
@@ -57852,11 +58076,14 @@ pfDB["quests"]["esES"] = {
     ["id"] = 8572,
     ["min"] = 55,
     ["lvl"] = 60,
+    ["pre"] = "Equipamiento de Cenarius,Habla con ",
     ["log"] = "Los distintivos que recibes por misiones de combate, logística y táctica para el Fuerte Cenarion, sirven para algo más que para presumir, $n.$B$BTe aconsejo que los guardes bien. Como prueba de tu lealtad con nuestra organización, puedo ofrecerte equipamiento que reservamos para nuestros aliados más cercanos, a cambio de esos distintivos.",
     ["obj"] = "Lleva 7 distintivos de combate Cenarion, 4 distintivos de logística Cenarion y 4 distintivos de táctica Cenarion a Vargus en el Fuerte Cenarion, en Silithus. También debes conseguir un nivel de reputación de honorable con el Círculo Cenarion para poder completar esta misión.|n",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Distintivo de combate Cenarion,7"] = "ITEM",
@@ -57868,11 +58095,14 @@ pfDB["quests"]["esES"] = {
     ["id"] = 8573,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Equipamiento de Cenarius,Habla con ",
     ["log"] = "Los distintivos que recibes por misiones de combate, logística y táctica para el Fuerte Cenarion, sirven para algo más que para presumir, $n.$B$BTe aconsejo que los guardes bien. Como prueba de tu lealtad con nuestra organización, puedo ofrecerte equipamiento que reservamos para nuestros aliados más cercanos, a cambio de esos distintivos.",
     ["obj"] = "Lleva 15 distintivos de combate Cenarion, 20 distintivos de logística Cenarion, 20 distintivos de táctica Cenarion y 1 Marca de Cenarius a Vargus en el Fuerte Cenarion, en Silithus. También debes conseguir un nivel de reputación exaltado con el Círculo Cenarion para poder completar esta misión.|n",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Distintivo de combate Cenarion,15"] = "ITEM",
@@ -57883,7 +58113,7 @@ pfDB["quests"]["esES"] = {
   },
   ["El libro de contabilidad mágico de Azuregos,Entrega el"] = {
     ["id"] = 8575,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "No entiendes ni una palabra de este libro de contabilidad. ¡Ni siquiera sabes en qué idioma está escrito!",
     ["obj"] = "Entrega el libro de contabilidad mágico de Azuregos a Narain Sabelotodo de Tanaris.",
@@ -57891,9 +58121,6 @@ pfDB["quests"]["esES"] = {
     },
     ["end"] = {
       ["Narain Sabelotodo"] = "NPC",
-    },
-    ["item"] = {
-      ["Libro de contabilidad mágico,1"] = "ITEM",
     },
   },
   ["Guisón, ex mejor amigo,Narain Sab"] = {
@@ -58273,7 +58500,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Una canción de amor para Narain,Lleva la c"] = {
     ["id"] = 8599,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "No recibo muchas visitas. De hecho, la última vez que tuve visita fue cuando rescaté a ese pobre gnomo de una máquina voladora que se estrelló.$B$B<Meridith mira al vacío, perdida en sus recuerdos.>$B$B¿Lo conoces? ¿Narain? ¿Narain Sabelotodo? ¡No sabes lo que significaría para mí que alguien le llevara un mensaje de mi parte! ¡Necesito decirle lo que siento! ¡Sé que es amor! ¡Sencillamente lo sé!$B$B¿No podrías llevar un mensaje a Narain? ¡Estaría en deuda contigo para siempre!",
     ["obj"] = "Lleva la carta de amor de Meridith a Narain Sabelotodo a Tanaris.",
@@ -58282,9 +58509,6 @@ pfDB["quests"]["esES"] = {
     },
     ["end"] = {
       ["Narain Sabelotodo"] = "NPC",
-    },
-    ["item"] = {
-      ["Carta de amor de Meridith,1"] = "ITEM",
     },
   },
   ["¡La Horda necesita pieles de cuero basto!,Llévale 1"] = {
@@ -58585,9 +58809,8 @@ pfDB["quests"]["esES"] = {
   },
   ["La única receta,Recupera l"] = {
     ["id"] = 8620,
-    ["min"] = 55,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["pre"] = "¡Señuelo!,Narain Sab",
     ["log"] = "Tenía que haberme dado cuenta. ¡Mi archienemigo, el doctor Weavil ha vuelto a las andadas! Y después de tu fracaso en la Cuna del Invierno, ¡el doctor Weavil ha destruido mi libro! ¿Cómo piensas salvar al mundo ahora?$B$B¡La nota que recibí decía que la única copia conocida de Dracónico para torpes: Volumen II fue dividida en 8 partes y arrojada al viento! Si consigues encontrar los capítulos perdidos, utiliza esta encuadernación para reunirlos y vuelve a mí.",
     ["obj"] = "Recupera los 8 capítulos perdidos de Dracónico para torpes, únelos con la encuadernación de libro mágico y devuelve el libro completo Dracónico para torpes: Volumen II a Narain Sabelotodo de Tanaris.",
     ["start"] = {
@@ -58595,9 +58818,6 @@ pfDB["quests"]["esES"] = {
     },
     ["end"] = {
       ["Narain Sabelotodo"] = "NPC",
-    },
-    ["item"] = {
-      ["Dracónico para torpes: volumen II,1"] = "ITEM",
     },
   },
   ["Los guardapiés de clamatormentas,Llévale l"] = {
@@ -59829,6 +60049,7 @@ pfDB["quests"]["esES"] = {
     ["min"] = 60,
     ["lvl"] = 60,
     ["pre"] = "Encomienda a los Vuelos,",
+    ["pre"] = "Encomienda a los Vuelos,",
     ["log"] = "Este es un viaje de redención, $ghéroe:heroína;. Si la muerte viniera a buscarme hoy, habría muerto por una causa justa. Debes recuperar el fragmento de cetro verde. Debes librar a Eranikus de la mácula con la que los dioses antiguos le han mancillado.$B$BViaja a Darnassus. Fuera de la ciudad encontrarás a uno de mis agentes. Este agente pondrá el mecanismo en marcha e informará a Tyrande de nuestros planes sin alertar a Corzocelada.$B$B<Malfurion suspira.>$B$BUna caída en desgracia que lleva fraguándose mil años...",
     ["obj"] = "Viaja al continente de Teldrassil y busca al agente de Malfurion. Lo encontrarás a lo largo de los muros de Darnassus.|n",
     ["start"] = {
@@ -60208,6 +60429,7 @@ pfDB["quests"]["esES"] = {
     ["start"] = {
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Barra de torio encantado,2"] = "ITEM",
@@ -60462,6 +60684,7 @@ pfDB["quests"]["esES"] = {
     ["start"] = {
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Barra de torio encantado,2"] = "ITEM",
@@ -60487,216 +60710,8 @@ pfDB["quests"]["esES"] = {
       ["Informe de tareas logísticas X,1"] = "ITEM",
     },
   },
-  ["Un sello de honor,"] = {
-    ["id"] = 8811,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "¡La Alianza te necesita!,Habla con ",
-    ["start"] = {
-      ["Oficial Lunaluz"] = "NPC",
-    },
-    ["end"] = {
-      ["Oficial Lunaluz"] = "NPC",
-    },
-    ["item"] = {
-      ["Sello de mención de honor de la Alianza,1"] = "ITEM",
-    },
-  },
-  ["Un sello de honor,"] = {
-    ["id"] = 8812,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "¡La Alianza te necesita!,Habla con ",
-    ["start"] = {
-      ["Oficial Chatobrian"] = "NPC",
-    },
-    ["end"] = {
-      ["Oficial Chatobrian"] = "NPC",
-    },
-    ["item"] = {
-      ["Sello de mención de honor de la Alianza,1"] = "ITEM",
-    },
-  },
-  ["Un sello de honor,"] = {
-    ["id"] = 8813,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "¡La Alianza te necesita!,Habla con ",
-    ["start"] = {
-      ["Oficial Barbaférrea"] = "NPC",
-    },
-    ["end"] = {
-      ["Oficial Barbaférrea"] = "NPC",
-    },
-    ["item"] = {
-      ["Sello de mención de honor de la Alianza,1"] = "ITEM",
-    },
-  },
-  ["Un sello de honor,"] = {
-    ["id"] = 8814,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "¡La Alianza te necesita!,Habla con ",
-    ["start"] = {
-      ["Oficial Maloof"] = "NPC",
-    },
-    ["end"] = {
-      ["Oficial Maloof"] = "NPC",
-    },
-    ["item"] = {
-      ["Sello de mención de honor de la Alianza,1"] = "ITEM",
-    },
-  },
-  ["Un sello de honor,"] = {
-    ["id"] = 8815,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "¡La Horda te necesita!,Habla con ",
-    ["start"] = {
-      ["Oficial Filorrojo"] = "NPC",
-    },
-    ["end"] = {
-      ["Oficial Filorrojo"] = "NPC",
-    },
-    ["item"] = {
-      ["Sello de mención de honor de la Horda,1"] = "ITEM",
-    },
-  },
-  ["Un sello de honor,"] = {
-    ["id"] = 8816,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "¡La Horda te necesita!,Habla con ",
-    ["start"] = {
-      ["Oficial Vu\'Shalay"] = "NPC",
-    },
-    ["end"] = {
-      ["Oficial Vu\'Shalay"] = "NPC",
-    },
-    ["item"] = {
-      ["Sello de mención de honor de la Horda,1"] = "ITEM",
-    },
-  },
-  ["Un sello de honor,"] = {
-    ["id"] = 8817,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "¡La Horda te necesita!,Habla con ",
-    ["start"] = {
-      ["Oficial Gothena"] = "NPC",
-    },
-    ["end"] = {
-      ["Oficial Gothena"] = "NPC",
-    },
-    ["item"] = {
-      ["Sello de mención de honor de la Horda,1"] = "ITEM",
-    },
-  },
-  ["Un sello de honor,"] = {
-    ["id"] = 8818,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "¡La Horda te necesita!,Habla con ",
-    ["start"] = {
-      ["Oficial Zancada del Trueno"] = "NPC",
-    },
-    ["end"] = {
-      ["Oficial Zancada del Trueno"] = "NPC",
-    },
-    ["item"] = {
-      ["Sello de mención de honor de la Horda,1"] = "ITEM",
-    },
-  },
   ["Diez sellos de honor,"] = {
-    ["id"] = 8819,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "¡La Alianza te necesita!,Habla con ",
-    ["start"] = {
-      ["Oficial Lunaluz"] = "NPC",
-    },
-    ["end"] = {
-      ["Oficial Lunaluz"] = "NPC",
-    },
-    ["item"] = {
-      ["Sello de mención de honor de la Alianza,10"] = "ITEM",
-    },
-  },
-  ["Diez sellos de honor,"] = {
-    ["id"] = 8820,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "¡La Alianza te necesita!,Habla con ",
-    ["start"] = {
-      ["Oficial Chatobrian"] = "NPC",
-    },
-    ["end"] = {
-      ["Oficial Chatobrian"] = "NPC",
-    },
-    ["item"] = {
-      ["Sello de mención de honor de la Alianza,10"] = "ITEM",
-    },
-  },
-  ["Diez sellos de honor,"] = {
-    ["id"] = 8821,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "¡La Alianza te necesita!,Habla con ",
-    ["start"] = {
-      ["Oficial Barbaférrea"] = "NPC",
-    },
-    ["end"] = {
-      ["Oficial Barbaférrea"] = "NPC",
-    },
-    ["item"] = {
-      ["Sello de mención de honor de la Alianza,10"] = "ITEM",
-    },
-  },
-  ["Diez sellos de honor,"] = {
-    ["id"] = 8822,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "¡La Alianza te necesita!,Habla con ",
-    ["start"] = {
-      ["Oficial Maloof"] = "NPC",
-    },
-    ["end"] = {
-      ["Oficial Maloof"] = "NPC",
-    },
-    ["item"] = {
-      ["Sello de mención de honor de la Alianza,10"] = "ITEM",
-    },
-  },
-  ["Diez sellos de honor,"] = {
-    ["id"] = 8823,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "¡La Horda te necesita!,Habla con ",
-    ["start"] = {
-      ["Oficial Filorrojo"] = "NPC",
-    },
-    ["end"] = {
-      ["Oficial Filorrojo"] = "NPC",
-    },
-    ["item"] = {
-      ["Sello de mención de honor de la Horda,10"] = "ITEM",
-    },
-  },
-  ["Diez sellos de honor,"] = {
-    ["id"] = 8824,
+    ["id"] = 8826,
     ["min"] = 1,
     ["lvl"] = 60,
     ["race"] = 178,
@@ -60728,7 +60743,7 @@ pfDB["quests"]["esES"] = {
     },
   },
   ["Diez sellos de honor,"] = {
-    ["id"] = 8826,
+    ["id"] = 8824,
     ["min"] = 1,
     ["lvl"] = 60,
     ["race"] = 178,
@@ -60741,6 +60756,214 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Sello de mención de honor de la Horda,10"] = "ITEM",
+    },
+  },
+  ["Diez sellos de honor,"] = {
+    ["id"] = 8823,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "¡La Horda te necesita!,Habla con ",
+    ["start"] = {
+      ["Oficial Filorrojo"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Filorrojo"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Horda,10"] = "ITEM",
+    },
+  },
+  ["Diez sellos de honor,"] = {
+    ["id"] = 8822,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "¡La Alianza te necesita!,Habla con ",
+    ["start"] = {
+      ["Oficial Chatobrian"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Chatobrian"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,10"] = "ITEM",
+    },
+  },
+  ["Diez sellos de honor,"] = {
+    ["id"] = 8821,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "¡La Alianza te necesita!,Habla con ",
+    ["start"] = {
+      ["Oficial Lunaluz"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Lunaluz"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,10"] = "ITEM",
+    },
+  },
+  ["Diez sellos de honor,"] = {
+    ["id"] = 8820,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "¡La Alianza te necesita!,Habla con ",
+    ["start"] = {
+      ["Oficial Barbaférrea"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Barbaférrea"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,10"] = "ITEM",
+    },
+  },
+  ["Diez sellos de honor,"] = {
+    ["id"] = 8819,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "¡La Alianza te necesita!,Habla con ",
+    ["start"] = {
+      ["Oficial Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,10"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8818,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "¡La Horda te necesita!,Habla con ",
+    ["start"] = {
+      ["Oficial Vu\'Shalay"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Vu\'Shalay"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Horda,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8817,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "¡La Horda te necesita!,Habla con ",
+    ["start"] = {
+      ["Oficial Zancada del Trueno"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Zancada del Trueno"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Horda,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8816,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "¡La Horda te necesita!,Habla con ",
+    ["start"] = {
+      ["Oficial Gothena"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Gothena"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Horda,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8815,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "¡La Horda te necesita!,Habla con ",
+    ["start"] = {
+      ["Oficial Filorrojo"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Filorrojo"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Horda,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8814,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "¡La Alianza te necesita!,Habla con ",
+    ["start"] = {
+      ["Oficial Chatobrian"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Chatobrian"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8813,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "¡La Alianza te necesita!,Habla con ",
+    ["start"] = {
+      ["Oficial Lunaluz"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Lunaluz"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8811,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "¡La Alianza te necesita!,Habla con ",
+    ["start"] = {
+      ["Oficial Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8812,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "¡La Alianza te necesita!,Habla con ",
+    ["start"] = {
+      ["Oficial Barbaférrea"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Barbaférrea"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,1"] = "ITEM",
     },
   },
   ["El último engaño,Lleva 1 pi"] = {
@@ -61067,8 +61290,8 @@ pfDB["quests"]["esES"] = {
   },
   ["¡Las fiestas de Año Nuevo!,Lleva la c"] = {
     ["id"] = 8860,
-    ["min"] = 60,
-    ["lvl"] = 70,
+    ["min"] = 1,
+    ["lvl"] = 60,
     ["race"] = 77,
     ["log"] = "¡Ventormenta celebra un festival por año nuevo! ¡Habrá bebidas gratis todo el día y fuegos artificiales por la noche! Seguro que está muy bien, pero también hay fiesta en la Bahía del Botín y apuesto a que es mejor.$B$BEn todo caso, Allison, la tabernera de Ventormenta, necesita comida de Pastos de Bosquehumeante para los juerguistas. ¿Puedes llevársela tú?$B$B¡Gracias, $n! La tabernera Allison está en La Rosa Áurea, en el Distrito de Mercaderes de Ventormenta.",
     ["obj"] = "Lleva la comida de Pastos de Bosquehumeante a la tabernera Allison de Ventormenta.",
@@ -61084,8 +61307,8 @@ pfDB["quests"]["esES"] = {
   },
   ["¡Las fiestas de Año Nuevo!,Lleva la c"] = {
     ["id"] = 8861,
-    ["min"] = 60,
-    ["lvl"] = 70,
+    ["min"] = 1,
+    ["lvl"] = 60,
     ["race"] = 178,
     ["log"] = "¡Cima del Trueno va a celebrar el Año Nuevo! ¡Habrá bebidas durante todo el día, y por la noche tirarán fuegos artificiales!$B$BSeguro que está muy bien, pero también hay fiesta en la Bahía del Botín y apuesto a que es mejor.$B$BEn todo caso, Pala, la tabernera de Cima del Trueno, necesita provisiones de Pastos de Bosquehumeante para los juerguistas. ¿Puedes llevárselas tú?$B$B¡Gracias, $n! La tabernera Pala está en la posada cerca del puente a Alto de los Cazadores.",
     ["obj"] = "Lleva la comida de Pastos de Bosquehumeante a la tabernera Pala de Cima del Trueno.",
@@ -61384,6 +61607,7 @@ pfDB["quests"]["esES"] = {
     ["item"] = {
       ["Muestra de sangre de Cuna del Invierno,15"] = "ITEM",
       ["Ataduras de acechabestias,1"] = "ITEM",
+      ["Ataduras de acechabestias,1"] = "ITEM",
     },
   },
   ["Una propuesta seria,Lleva 15 m"] = {
@@ -61402,6 +61626,7 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Muestra de sangre de Cuna del Invierno,15"] = "ITEM",
+      ["Ataduras de magister,1"] = "ITEM",
       ["Ataduras de magister,1"] = "ITEM",
     },
   },
@@ -61440,6 +61665,7 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Muestra de sangre de Cuna del Invierno,15"] = "ITEM",
+      ["Brazales de devoto,1"] = "ITEM",
       ["Brazales de devoto,1"] = "ITEM",
     },
   },
@@ -61536,6 +61762,7 @@ pfDB["quests"]["esES"] = {
     ["item"] = {
       ["Muestra de veneno de Silithus,15"] = "ITEM",
       ["Ataduras de acechabestias,1"] = "ITEM",
+      ["Ataduras de acechabestias,1"] = "ITEM",
     },
   },
   ["Una propuesta seria,Lleva 15 m"] = {
@@ -61555,6 +61782,7 @@ pfDB["quests"]["esES"] = {
     ["item"] = {
       ["Muestra de veneno de Silithus,15"] = "ITEM",
       ["Ataduras de magister,1"] = "ITEM",
+      ["Ataduras de magister,1"] = "ITEM",
     },
   },
   ["Una propuesta seria,Lleva 15 m"] = {
@@ -61573,6 +61801,7 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Muestra de veneno de Silithus,15"] = "ITEM",
+      ["Brazales de devoto,1"] = "ITEM",
       ["Brazales de devoto,1"] = "ITEM",
     },
   },
@@ -61611,6 +61840,8 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Muestra de veneno de Silithus,15"] = "ITEM",
+      ["Ataduras de elementos,1"] = "ITEM",
+      ["Ataduras de elementos,1"] = "ITEM",
       ["Ataduras de elementos,1"] = "ITEM",
     },
   },
@@ -61841,6 +62072,8 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Cinturón de acechabestias,1"] = "ITEM",
+      ["Cinturón de acechabestias,1"] = "ITEM",
+      ["Guantes de acechabestias,1"] = "ITEM",
       ["Guantes de acechabestias,1"] = "ITEM",
     },
   },
@@ -61860,6 +62093,8 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Cinturón de magister,1"] = "ITEM",
+      ["Cinturón de magister,1"] = "ITEM",
+      ["Guantes de magister,1"] = "ITEM",
       ["Guantes de magister,1"] = "ITEM",
     },
   },
@@ -61898,6 +62133,9 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Cinturón de devoto,1"] = "ITEM",
+      ["Cinturón de devoto,1"] = "ITEM",
+      ["Guantes de devoto,1"] = "ITEM",
+      ["Guantes de devoto,1"] = "ITEM",
       ["Guantes de devoto,1"] = "ITEM",
     },
   },
@@ -61937,6 +62175,7 @@ pfDB["quests"]["esES"] = {
     ["item"] = {
       ["Cinturón calígine,1"] = "ITEM",
       ["Brazaletes calígine,1"] = "ITEM",
+      ["Brazaletes calígine,1"] = "ITEM",
     },
   },
   ["Una compensación justa,Lleva 1 ci"] = {
@@ -61974,6 +62213,8 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Cinturón de acechabestias,1"] = "ITEM",
+      ["Cinturón de acechabestias,1"] = "ITEM",
+      ["Guantes de acechabestias,1"] = "ITEM",
       ["Guantes de acechabestias,1"] = "ITEM",
     },
   },
@@ -61993,6 +62234,8 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Cinturón de magister,1"] = "ITEM",
+      ["Cinturón de magister,1"] = "ITEM",
+      ["Guantes de magister,1"] = "ITEM",
       ["Guantes de magister,1"] = "ITEM",
     },
   },
@@ -62012,6 +62255,9 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Cinturón de devoto,1"] = "ITEM",
+      ["Cinturón de devoto,1"] = "ITEM",
+      ["Guantes de devoto,1"] = "ITEM",
+      ["Guantes de devoto,1"] = "ITEM",
       ["Guantes de devoto,1"] = "ITEM",
     },
   },
@@ -62050,6 +62296,10 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Cordón de elementos,1"] = "ITEM",
+      ["Cordón de elementos,1"] = "ITEM",
+      ["Cordón de elementos,1"] = "ITEM",
+      ["Guanteletes de elementos,1"] = "ITEM",
+      ["Guanteletes de elementos,1"] = "ITEM",
       ["Guanteletes de elementos,1"] = "ITEM",
     },
   },
@@ -62069,6 +62319,7 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Cinturón calígine,1"] = "ITEM",
+      ["Brazaletes calígine,1"] = "ITEM",
       ["Brazaletes calígine,1"] = "ITEM",
     },
   },
@@ -62138,6 +62389,8 @@ pfDB["quests"]["esES"] = {
       ["Barra de hierro negro,3"] = "ITEM",
       ["Cuero encantado,20"] = "ITEM",
       ["Tela lunar,3"] = "ITEM",
+      ["Pellejo basto curtido,4"] = "ITEM",
+      ["Pellejo basto curtido,4"] = "ITEM",
       ["Pellejo basto curtido,4"] = "ITEM",
     },
   },
@@ -62213,6 +62466,7 @@ pfDB["quests"]["esES"] = {
       ["Botas Corazón Salvaje,1"] = "ITEM",
       ["Falda Corazón Salvaje,1"] = "ITEM",
       ["Bufas Corazón Salvaje,1"] = "ITEM",
+      ["Bufas Corazón Salvaje,1"] = "ITEM",
     },
   },
   ["La despedida de Anthion,Lleva 1 pa"] = {
@@ -62232,7 +62486,10 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Botas de acechabestias,1"] = "ITEM",
+      ["Botas de acechabestias,1"] = "ITEM",
       ["Pantalones de acechabestias,1"] = "ITEM",
+      ["Pantalones de acechabestias,1"] = "ITEM",
+      ["Manto de acechabestias,1"] = "ITEM",
       ["Manto de acechabestias,1"] = "ITEM",
     },
   },
@@ -62254,6 +62511,8 @@ pfDB["quests"]["esES"] = {
     ["item"] = {
       ["Botas de magister,1"] = "ITEM",
       ["Leotardos de magister,1"] = "ITEM",
+      ["Leotardos de magister,1"] = "ITEM",
+      ["Manto de magister,1"] = "ITEM",
       ["Manto de magister,1"] = "ITEM",
     },
   },
@@ -62295,7 +62554,11 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Sandalias de devoto,1"] = "ITEM",
+      ["Sandalias de devoto,1"] = "ITEM",
       ["Saya de devoto,1"] = "ITEM",
+      ["Saya de devoto,1"] = "ITEM",
+      ["Saya de devoto,1"] = "ITEM",
+      ["Manto de devoto,1"] = "ITEM",
       ["Manto de devoto,1"] = "ITEM",
     },
   },
@@ -62315,6 +62578,7 @@ pfDB["quests"]["esES"] = {
       ["Deliana"] = "NPC",
     },
     ["item"] = {
+      ["Botas arte sombrío,1"] = "ITEM",
       ["Botas arte sombrío,1"] = "ITEM",
       ["Pantalones arte sombrío,1"] = "ITEM",
       ["Bufas arte sombrío,1"] = "ITEM",
@@ -62337,7 +62601,12 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Botas de elementos,1"] = "ITEM",
+      ["Botas de elementos,1"] = "ITEM",
+      ["Botas de elementos,1"] = "ITEM",
       ["Falda de elementos,1"] = "ITEM",
+      ["Falda de elementos,1"] = "ITEM",
+      ["Falda de elementos,1"] = "ITEM",
+      ["Espaldares de elementos,1"] = "ITEM",
       ["Espaldares de elementos,1"] = "ITEM",
     },
   },
@@ -62358,6 +62627,7 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Sandalias calígine,1"] = "ITEM",
+      ["Leotardos calígine,1"] = "ITEM",
       ["Leotardos calígine,1"] = "ITEM",
       ["Manto calígine,1"] = "ITEM",
     },
@@ -62954,6 +63224,7 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Capucha Corazón Salvaje,1"] = "ITEM",
+      ["Capucha Corazón Salvaje,1"] = "ITEM",
       ["Jubón Corazón Salvaje,1"] = "ITEM",
     },
   },
@@ -62974,6 +63245,8 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Almete de acechabestias,1"] = "ITEM",
+      ["Almete de acechabestias,1"] = "ITEM",
+      ["Guerrera de acechabestias,1"] = "ITEM",
       ["Guerrera de acechabestias,1"] = "ITEM",
     },
   },
@@ -62994,6 +63267,9 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Corona de magister,1"] = "ITEM",
+      ["Corona de magister,1"] = "ITEM",
+      ["Corona de magister,1"] = "ITEM",
+      ["Togas de magister,1"] = "ITEM",
       ["Togas de magister,1"] = "ITEM",
     },
   },
@@ -63013,6 +63289,7 @@ pfDB["quests"]["esES"] = {
       ["Deliana"] = "NPC",
     },
     ["item"] = {
+      ["Yelmo Forjaluz,1"] = "ITEM",
       ["Yelmo Forjaluz,1"] = "ITEM",
       ["Coraza Forjaluz,1"] = "ITEM",
     },
@@ -63034,6 +63311,8 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Corona de devoto,1"] = "ITEM",
+      ["Corona de devoto,1"] = "ITEM",
+      ["Toga de devoto,1"] = "ITEM",
       ["Toga de devoto,1"] = "ITEM",
     },
   },
@@ -63074,6 +63353,7 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Máscara calígine,1"] = "ITEM",
+      ["Máscara calígine,1"] = "ITEM",
       ["Toga calígine,1"] = "ITEM",
     },
   },
@@ -63093,6 +63373,7 @@ pfDB["quests"]["esES"] = {
       ["Deliana"] = "NPC",
     },
     ["item"] = {
+      ["Yelmo de valor,1"] = "ITEM",
       ["Yelmo de valor,1"] = "ITEM",
       ["Coraza de valor,1"] = "ITEM",
     },
@@ -63114,6 +63395,7 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Capucha Corazón Salvaje,1"] = "ITEM",
+      ["Capucha Corazón Salvaje,1"] = "ITEM",
       ["Jubón Corazón Salvaje,1"] = "ITEM",
     },
   },
@@ -63134,6 +63416,8 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Almete de acechabestias,1"] = "ITEM",
+      ["Almete de acechabestias,1"] = "ITEM",
+      ["Guerrera de acechabestias,1"] = "ITEM",
       ["Guerrera de acechabestias,1"] = "ITEM",
     },
   },
@@ -63154,6 +63438,8 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Corona de devoto,1"] = "ITEM",
+      ["Corona de devoto,1"] = "ITEM",
+      ["Toga de devoto,1"] = "ITEM",
       ["Toga de devoto,1"] = "ITEM",
     },
   },
@@ -63194,6 +63480,9 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Almófar de elementos,1"] = "ITEM",
+      ["Almófar de elementos,1"] = "ITEM",
+      ["Jubón de elementos,1"] = "ITEM",
+      ["Jubón de elementos,1"] = "ITEM",
       ["Jubón de elementos,1"] = "ITEM",
     },
   },
@@ -63213,6 +63502,7 @@ pfDB["quests"]["esES"] = {
       ["Mokvar"] = "NPC",
     },
     ["item"] = {
+      ["Máscara calígine,1"] = "ITEM",
       ["Máscara calígine,1"] = "ITEM",
       ["Toga calígine,1"] = "ITEM",
     },
@@ -63234,6 +63524,7 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Yelmo de valor,1"] = "ITEM",
+      ["Yelmo de valor,1"] = "ITEM",
       ["Coraza de valor,1"] = "ITEM",
     },
   },
@@ -63254,6 +63545,9 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Corona de magister,1"] = "ITEM",
+      ["Corona de magister,1"] = "ITEM",
+      ["Corona de magister,1"] = "ITEM",
+      ["Togas de magister,1"] = "ITEM",
       ["Togas de magister,1"] = "ITEM",
     },
   },
@@ -63293,6 +63587,7 @@ pfDB["quests"]["esES"] = {
       ["Botas Corazón Salvaje,1"] = "ITEM",
       ["Falda Corazón Salvaje,1"] = "ITEM",
       ["Bufas Corazón Salvaje,1"] = "ITEM",
+      ["Bufas Corazón Salvaje,1"] = "ITEM",
     },
   },
   ["La despedida de Anthion,Lleva 1 pa"] = {
@@ -63312,7 +63607,10 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Botas de acechabestias,1"] = "ITEM",
+      ["Botas de acechabestias,1"] = "ITEM",
       ["Pantalones de acechabestias,1"] = "ITEM",
+      ["Pantalones de acechabestias,1"] = "ITEM",
+      ["Manto de acechabestias,1"] = "ITEM",
       ["Manto de acechabestias,1"] = "ITEM",
     },
   },
@@ -63334,6 +63632,8 @@ pfDB["quests"]["esES"] = {
     ["item"] = {
       ["Botas de magister,1"] = "ITEM",
       ["Leotardos de magister,1"] = "ITEM",
+      ["Leotardos de magister,1"] = "ITEM",
+      ["Manto de magister,1"] = "ITEM",
       ["Manto de magister,1"] = "ITEM",
     },
   },
@@ -63354,7 +63654,11 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Sandalias de devoto,1"] = "ITEM",
+      ["Sandalias de devoto,1"] = "ITEM",
       ["Saya de devoto,1"] = "ITEM",
+      ["Saya de devoto,1"] = "ITEM",
+      ["Saya de devoto,1"] = "ITEM",
+      ["Manto de devoto,1"] = "ITEM",
       ["Manto de devoto,1"] = "ITEM",
     },
   },
@@ -63374,6 +63678,7 @@ pfDB["quests"]["esES"] = {
       ["Mokvar"] = "NPC",
     },
     ["item"] = {
+      ["Botas arte sombrío,1"] = "ITEM",
       ["Botas arte sombrío,1"] = "ITEM",
       ["Pantalones arte sombrío,1"] = "ITEM",
       ["Bufas arte sombrío,1"] = "ITEM",
@@ -63396,6 +63701,7 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Sandalias calígine,1"] = "ITEM",
+      ["Leotardos calígine,1"] = "ITEM",
       ["Leotardos calígine,1"] = "ITEM",
       ["Manto calígine,1"] = "ITEM",
     },
@@ -63488,6 +63794,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 9033,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "La ciudadela del terror: Naxxramas,La archima",
     ["log"] = "Hace cinco años que terminó la última guerra...$B$BDecenas de miles de vidas perdidas, ¿y para qué? La amenaza no fue exterminada.$B$BEl Rey Exánime vuelve a la vida... Su lugarteniente, Kel\'Thuzad, prepara otro ataque a nuestras tierras.$B$B¡No podemos permitirlo! Demuéstranos que lo arriesgarás todo para detener esta locura y tendrás a las fuerzas de la Cruzada y de El Alba a tu disposición.$B$BVe a Naxxramas y elimina la Plaga.",
     ["obj"] = "El comandante Eligor Albar de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere que mates 5 monstruosidades vivientes, 5 gárgolas piel de piedra, 8 capitanes caballero de la Muerte y 3 acechadores venenosos.",
     ["start"] = {
@@ -63543,6 +63850,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de coraza,20"] = "ITEM",
       ["Barra de arcanita,4"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
   ["El casco acorator,Korfax de "] = {
@@ -63585,6 +63894,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de coraza,12"] = "ITEM",
       ["Barra de arcanita,2"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
   ["Los escarpes acorator,Korfax de "] = {
@@ -63605,6 +63916,8 @@ pfDB["quests"]["esES"] = {
       ["Escarpes profanados,1"] = "ITEM",
       ["Restos de coraza,12"] = "ITEM",
       ["Barra de arcanita,2"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
@@ -63627,6 +63940,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de coraza,8"] = "ITEM",
       ["Barra de arcanita,1"] = "ITEM",
       ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
     },
   },
   ["Los guardarrenes acorator,Korfax de "] = {
@@ -63647,6 +63962,8 @@ pfDB["quests"]["esES"] = {
       ["Guardarrenes profanados,1"] = "ITEM",
       ["Restos de coraza,8"] = "ITEM",
       ["Barra de arcanita,1"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
       ["Pellejo basto curtido,5"] = "ITEM",
     },
   },
@@ -63690,6 +64007,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de coraza,25"] = "ITEM",
       ["Barra de arcanita,4"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
   ["Las musleras de redención,El comanda"] = {
@@ -63731,6 +64050,8 @@ pfDB["quests"]["esES"] = {
       ["Celada profanada,1"] = "ITEM",
       ["Restos de coraza,15"] = "ITEM",
       ["Barra de arcanita,5"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
       ["Pellejo basto curtido,2"] = "ITEM",
     },
   },
@@ -63774,6 +64095,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de coraza,12"] = "ITEM",
       ["Barra de arcanita,2"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
   ["Las manoplas de redención,El comanda"] = {
@@ -63794,6 +64117,8 @@ pfDB["quests"]["esES"] = {
       ["Manoplas profanadas,1"] = "ITEM",
       ["Restos de coraza,8"] = "ITEM",
       ["Barra de arcanita,1"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
       ["Pellejo basto curtido,5"] = "ITEM",
     },
   },
@@ -63836,6 +64161,8 @@ pfDB["quests"]["esES"] = {
       ["Guardamuñecas profanados,1"] = "ITEM",
       ["Restos de coraza,6"] = "ITEM",
       ["Barra de arcanita,1"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
       ["Pellejo basto curtido,2"] = "ITEM",
     },
   },
@@ -63910,6 +64237,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de malla,25"] = "ITEM",
       ["Barra de arcanita,4"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
   ["Las musleras de acechacriptas,El montero"] = {
@@ -63930,6 +64259,8 @@ pfDB["quests"]["esES"] = {
       ["Musleras profanadas,1"] = "ITEM",
       ["Restos de malla,20"] = "ITEM",
       ["Barra de arcanita,3"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
       ["Pellejo basto curtido,5"] = "ITEM",
     },
   },
@@ -63973,6 +64304,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de malla,12"] = "ITEM",
       ["Barra de arcanita,2"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
   ["Las botas de acechacriptas,El montero"] = {
@@ -64015,6 +64348,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de malla,8"] = "ITEM",
       ["Barra de arcanita,1"] = "ITEM",
       ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
     },
   },
   ["La faja de acechacriptas,El montero"] = {
@@ -64056,6 +64391,8 @@ pfDB["quests"]["esES"] = {
       ["Guardamuñecas profanados,1"] = "ITEM",
       ["Restos de malla,6"] = "ITEM",
       ["Barra de arcanita,1"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
       ["Pellejo basto curtido,2"] = "ITEM",
     },
   },
@@ -64100,6 +64437,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de malla,25"] = "ITEM",
       ["Barra de arcanita,4"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
   ["Las musleras Rompeterra,Rimblat Ro"] = {
@@ -64120,6 +64459,8 @@ pfDB["quests"]["esES"] = {
       ["Musleras profanadas,1"] = "ITEM",
       ["Restos de malla,20"] = "ITEM",
       ["Barra de arcanita,3"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
       ["Pellejo basto curtido,5"] = "ITEM",
     },
   },
@@ -64205,6 +64546,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de malla,8"] = "ITEM",
       ["Barra de arcanita,1"] = "ITEM",
       ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
     },
   },
   ["La faja Rompeterra,Rimblat Ro"] = {
@@ -64247,6 +64590,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de malla,6"] = "ITEM",
       ["Barra de arcanita,1"] = "ITEM",
       ["Pellejo basto curtido,2"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
     },
   },
   ["La coraza Segahuesos,Rohan el A"] = {
@@ -64268,12 +64613,15 @@ pfDB["quests"]["esES"] = {
       ["Restos de cuero,25"] = "ITEM",
       ["Barra de arcanita,2"] = "ITEM",
       ["Pellejo basto curtido,6"] = "ITEM",
+      ["Pellejo basto curtido,6"] = "ITEM",
+      ["Pellejo basto curtido,6"] = "ITEM",
     },
   },
   ["Los quijotes Segahuesos,Rohan el A"] = {
     ["id"] = 9078,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["class"] = 8,
     ["pre"] = "Ecos de Guerra,El comanda",
     ["log"] = "Si quieres objetos Segahuesos, tendrás que traerme el material necesario.$B$BVe a Naxxramas, la ciudad flotante de la muerte, y busca armaduras y restos de armadura profanados. Tráeme eso y los materiales y voilà. Ah, y tendrás que pagarme. Los huesos los pongo yo.",
     ["obj"] = "Rohan el Asesino de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, te hará unos quijotes Segahuesos si le llevas lo siguiente: 1 par de musleras profanadas, 20 restos de cuero, 1 barra de arcanita, 8 pellejos bastos curtidos y 100 piezas de oro.",
@@ -64287,6 +64635,8 @@ pfDB["quests"]["esES"] = {
       ["Quijotes profanados,1"] = "ITEM",
       ["Restos de cuero,20"] = "ITEM",
       ["Barra de arcanita,1"] = "ITEM",
+      ["Pellejo basto curtido,8"] = "ITEM",
+      ["Pellejo basto curtido,8"] = "ITEM",
       ["Pellejo basto curtido,8"] = "ITEM",
     },
   },
@@ -64307,6 +64657,8 @@ pfDB["quests"]["esES"] = {
     ["item"] = {
       ["Casco profanado,1"] = "ITEM",
       ["Restos de cuero,15"] = "ITEM",
+      ["Pellejo basto curtido,8"] = "ITEM",
+      ["Pellejo basto curtido,8"] = "ITEM",
       ["Pellejo basto curtido,8"] = "ITEM",
       ["Cristal nexo,1"] = "ITEM",
     },
@@ -64329,6 +64681,8 @@ pfDB["quests"]["esES"] = {
       ["Espaldares profanados,1"] = "ITEM",
       ["Restos de cuero,12"] = "ITEM",
       ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
       ["Cristal nexo,1"] = "ITEM",
     },
   },
@@ -64349,6 +64703,8 @@ pfDB["quests"]["esES"] = {
     ["item"] = {
       ["Escarpes profanados,1"] = "ITEM",
       ["Restos de cuero,12"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
       ["Cristal nexo,2"] = "ITEM",
     },
@@ -64372,6 +64728,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de cuero,8"] = "ITEM",
       ["Barra de arcanita,1"] = "ITEM",
       ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
     },
   },
   ["Los guardarrenes Segahuesos,Rohan el A"] = {
@@ -64391,6 +64749,8 @@ pfDB["quests"]["esES"] = {
     ["item"] = {
       ["Guardarrenes profanados,1"] = "ITEM",
       ["Restos de cuero,8"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
       ["Pellejo basto curtido,5"] = "ITEM",
       ["Cristal nexo,1"] = "ITEM",
     },
@@ -64413,6 +64773,8 @@ pfDB["quests"]["esES"] = {
       ["Brazales profanados,1"] = "ITEM",
       ["Restos de cuero,6"] = "ITEM",
       ["Barra de arcanita,1"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
       ["Pellejo basto curtido,2"] = "ITEM",
     },
   },
@@ -64451,6 +64813,8 @@ pfDB["quests"]["esES"] = {
       ["Guerrera profanada,1"] = "ITEM",
       ["Restos de cuero,25"] = "ITEM",
       ["Pellejo basto curtido,6"] = "ITEM",
+      ["Pellejo basto curtido,6"] = "ITEM",
+      ["Pellejo basto curtido,6"] = "ITEM",
       ["Cristal nexo,2"] = "ITEM",
     },
   },
@@ -64471,6 +64835,8 @@ pfDB["quests"]["esES"] = {
     ["item"] = {
       ["Musleras profanadas,1"] = "ITEM",
       ["Restos de cuero,20"] = "ITEM",
+      ["Pellejo basto curtido,8"] = "ITEM",
+      ["Pellejo basto curtido,8"] = "ITEM",
       ["Pellejo basto curtido,8"] = "ITEM",
       ["Cristal nexo,1"] = "ITEM",
     },
@@ -64493,6 +64859,8 @@ pfDB["quests"]["esES"] = {
       ["Celada profanada,1"] = "ITEM",
       ["Restos de cuero,15"] = "ITEM",
       ["Pellejo basto curtido,6"] = "ITEM",
+      ["Pellejo basto curtido,6"] = "ITEM",
+      ["Pellejo basto curtido,6"] = "ITEM",
       ["Cristal nexo,2"] = "ITEM",
     },
   },
@@ -64513,6 +64881,8 @@ pfDB["quests"]["esES"] = {
     ["item"] = {
       ["Bufas profanadas,1"] = "ITEM",
       ["Restos de cuero,12"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
       ["Pellejo basto curtido,5"] = "ITEM",
       ["Cristal nexo,1"] = "ITEM",
     },
@@ -64536,6 +64906,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de cuero,12"] = "ITEM",
       ["Tela lunar,3"] = "ITEM",
       ["Pellejo basto curtido,2"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
     },
   },
   ["Las manoplas Caminasueños,Rayne de l"] = {
@@ -64555,6 +64927,8 @@ pfDB["quests"]["esES"] = {
     ["item"] = {
       ["Manoplas profanadas,1"] = "ITEM",
       ["Restos de cuero,8"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
       ["Pellejo basto curtido,5"] = "ITEM",
       ["Cristal nexo,1"] = "ITEM",
     },
@@ -64578,6 +64952,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de cuero,8"] = "ITEM",
       ["Tela lunar,3"] = "ITEM",
       ["Pellejo basto curtido,2"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
     },
   },
   ["Los guardamuñecas Caminasueños,Rayne de l"] = {
@@ -64598,6 +64974,8 @@ pfDB["quests"]["esES"] = {
       ["Guardamuñecas profanados,1"] = "ITEM",
       ["Restos de cuero,6"] = "ITEM",
       ["Cristal Arcano,1"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
+      ["Pellejo basto curtido,2"] = "ITEM",
       ["Pellejo basto curtido,2"] = "ITEM",
     },
   },
@@ -64698,6 +65076,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de ropa,12"] = "ITEM",
       ["Tela lunar,2"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
   ["Los botines de Fuego de Escarcha,La archima"] = {
@@ -64718,6 +65098,8 @@ pfDB["quests"]["esES"] = {
       ["Botines profanados,1"] = "ITEM",
       ["Restos de ropa,12"] = "ITEM",
       ["Tela lunar,2"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
@@ -64865,6 +65247,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de ropa,12"] = "ITEM",
       ["Tela lunar,2"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
   ["Los botines corazón de peste,Mataus el "] = {
@@ -64885,6 +65269,8 @@ pfDB["quests"]["esES"] = {
       ["Botines profanados,1"] = "ITEM",
       ["Restos de ropa,12"] = "ITEM",
       ["Tela lunar,2"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
@@ -65032,6 +65418,8 @@ pfDB["quests"]["esES"] = {
       ["Restos de ropa,12"] = "ITEM",
       ["Tela lunar,2"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
   ["Los botines de fe,El padre �"] = {
@@ -65052,6 +65440,8 @@ pfDB["quests"]["esES"] = {
       ["Botines profanados,1"] = "ITEM",
       ["Restos de ropa,12"] = "ITEM",
       ["Tela lunar,2"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
@@ -65990,6 +66380,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 9232,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Ecos de Guerra,El comanda",
     ["log"] = "Te crees $gun héroe:una heroína; de El Alba, ¿eh? ¡Pues yo he visto a nuestros mejores soldados aplastados por la plebe de Kel\'Thuzad! ¿Qué podría hacer alguien tan negado en Naxxramas?$B$B<Wilhelm suspira.>$B$BBueno... tampoco es que tenga elección. Eres lo mejor que tengo, así que mejor será que te ayude.$B$BOmarion me dejó una receta. Es la única que conozco... Puedo hacer algunas variaciones de estos pantalones... pero tendrás que traerme los materiales.",
     ["obj"] = "El artesano Wilhelm, de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere que le lleves 2 runas heladas, 2 esencias de agua, 2 zafiros azules y 30 piezas de oro.",
     ["start"] = {
@@ -66023,6 +66414,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 9234,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Vademécum de Omarion,Lleva el v",
     ["log"] = "Gracias a ti y a Omarion (que espero que descanse en paz), ahora puedo confeccionar los guantes Deliriohelado. Todo lo que necesito es que me traigas los materiales y pagues una pequeña suma.",
     ["obj"] = "El artesano Wilhelm de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere 5 runas heladas, 12 barras de torio, 2 barras de arcanita, 2 esencias de agua y 200 piezas de oro.",
     ["start"] = {
@@ -66042,6 +66434,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 9235,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Vademécum de Omarion,Lleva el v",
     ["log"] = "Gracias a ti y a Omarion (que en paz descanse), ahora puedo crear brazales Deliriohelado. Solo necesito que me traigas los materiales y que me pagues un pequeño honorario por la mano de obra.",
     ["obj"] = "El artesano Wilhelm de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere 4 runas heladas, 12 barras de torio, 2 barras de arcanita, 2 esencias de agua y 200 piezas de oro.",
     ["start"] = {
@@ -66061,6 +66454,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 9236,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Vademécum de Omarion,Lleva el v",
     ["log"] = "Gracias a ti y a Omarion (que en paz descanse), ahora puedo crear una coraza Deliriohelado. Solo necesito que me traigas los materiales y que me pagues un pequeño honorario por la mano de obra.",
     ["obj"] = "El artesano Wilhelm de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere 8 runas heladas, 16 barras de torio, 2 barras de arcanita, 4 esencias de agua y 300 piezas de oro. Además, debes tener un nivel de reputación de exaltado con El Alba Argenta.|n",
     ["start"] = {
@@ -66080,6 +66474,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 9237,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Vademécum de Omarion,Lleva el v",
     ["log"] = "Gracias a ti y a Omarion (que espero que descanse en paz), ahora puedo confeccionar la capa glacial. Todo lo que necesito es que me traigas los materiales y pagues una pequeña suma.",
     ["obj"] = "El artesano Wilhelm de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere 5 runas heladas, 4 madejas de paño rúnico, 2 esencias de agua, 4 sedas de araña Tejehierro y 200 piezas de oro. Además, debes tener un nivel de reputación de exaltado con El Alba Argenta.",
     ["start"] = {
@@ -66099,6 +66494,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 9238,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Vademécum de Omarion,Lleva el v",
     ["log"] = "Gracias a ti y a Omarion (que espero que descanse en paz), ahora puedo confeccionar las muñequeras glaciales. Todo lo que necesito es que me traigas los materiales y pagues una pequeña suma.",
     ["obj"] = "El artesano Wilhelm de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere 4 runas heladas, 2 madejas de paño rúnico, 2 esencias de agua, 2 sedas de araña Tejehierro y 200 piezas de oro.",
     ["start"] = {
@@ -66118,6 +66514,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 9239,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Vademécum de Omarion,Lleva el v",
     ["log"] = "Gracias a ti y a Omarion (que en paz descanse), ahora puedo crear unos guantes glaciales. Solo necesito que me traigas los materiales y que me pagues un pequeño honorario por la mano de obra.",
     ["obj"] = "El artesano Wilhelm de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere 5 runas heladas, 4 madejas de paño rúnico, 4 esencias de agua, 2 sedas de araña Tejehierro y 200 piezas de oro.",
     ["start"] = {
@@ -66137,6 +66534,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 9240,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Vademécum de Omarion,Lleva el v",
     ["log"] = "Gracias a ti y a Omarion (que espero que descanse en paz), ahora puedo confeccionar el jubón glacial. Todo lo que necesito es que me traigas los materiales y pagues una pequeña suma.",
     ["obj"] = "El artesano Wilhelm de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere 8 runas heladas, 8 madejas de paño rúnico, 6 esencias de agua, 4 sedas de araña Tejehierro y 300 piezas de oro. Además, debes tener un nivel de reputación de exaltado con El Alba Argenta.",
     ["start"] = {
@@ -66156,6 +66554,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 9241,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Vademécum de Omarion,Lleva el v",
     ["log"] = "Gracias a ti y a Omarion (que en paz descanse), ahora puedo crear brazales polares. Solo necesito que me traigas los materiales y que me pagues un pequeño honorario por la mano de obra.",
     ["obj"] = "El artesano Wilhelm de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere 4 runas heladas, 12 cueros encantados, 3 esencias de agua, 3 pellejos bastos curtidos y 200 piezas de oro.|n",
     ["start"] = {
@@ -66169,12 +66568,15 @@ pfDB["quests"]["esES"] = {
       ["Cuero encantado,12"] = "ITEM",
       ["Esencia de agua,3"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
   ["Los guantes polares,El artesan"] = {
     ["id"] = 9242,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Vademécum de Omarion,Lleva el v",
     ["log"] = "Gracias a ti y a Omarion (que en paz descanse), ahora puedo crear guantes polares. Solo necesito que me traigas los materiales y que me pagues un pequeño honorario por la mano de obra.",
     ["obj"] = "El artesano Wilhelm de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere 5 runas heladas, 12 cueros encantados, 3 esencias de agua, 3 pellejos bastos curtidos y 200 piezas de oro.",
     ["start"] = {
@@ -66188,12 +66590,15 @@ pfDB["quests"]["esES"] = {
       ["Cuero encantado,12"] = "ITEM",
       ["Esencia de agua,3"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
   ["La guerrera polar,El artesan"] = {
     ["id"] = 9243,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Vademécum de Omarion,Lleva el v",
     ["log"] = "Gracias a ti y a Omarion (que espero que descanse en paz), ahora puedo confeccionar la guerrera polar. Todo lo que necesito es que me traigas los materiales y pagues una pequeña suma.",
     ["obj"] = "El artesano Wilhelm de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere 8 runas heladas, 16 cueros encantados, 5 esencias de agua, 5 pellejos bastos curtidos y 300 piezas de oro. Además, debes tener un nivel de reputación de exaltado con El Alba Argenta.",
     ["start"] = {
@@ -66207,12 +66612,15 @@ pfDB["quests"]["esES"] = {
       ["Cuero encantado,16"] = "ITEM",
       ["Esencia de agua,5"] = "ITEM",
       ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
     },
   },
   ["Los brazales de escamas heladas,El artesan"] = {
     ["id"] = 9244,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Vademécum de Omarion,Lleva el v",
     ["log"] = "Gracias a ti y a Omarion (que espero que descanse en paz), ahora puedo confeccionar los brazales de escamas heladas. Todo lo que necesito es que me traigas los materiales y pagues una pequeña suma.",
     ["obj"] = "El artesano Wilhelm de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere 4 runas heladas, 16 escamas de escórpido pesado, 5 esencias de agua, 3 pellejos bastos curtidos y 200 piezas de oro.",
     ["start"] = {
@@ -66226,12 +66634,15 @@ pfDB["quests"]["esES"] = {
       ["Escama de escórpido gruesa,16"] = "ITEM",
       ["Esencia de agua,5"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
   ["Los guanteletes de escamas heladas,El artesan"] = {
     ["id"] = 9245,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Vademécum de Omarion,Lleva el v",
     ["log"] = "Gracias a ti y a Omarion (que en paz descanse), ahora puedo crear guanteletes de escamas heladas. Solo necesito que me traigas los materiales y que me pagues un pequeño honorario por la mano de obra.",
     ["obj"] = "El artesano Wilhelm de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere 5 runas heladas, 16 escamas de escórpido pesado, 5 esencias de agua, 3 pellejos bastos curtidos y 200 piezas de oro.",
     ["start"] = {
@@ -66245,12 +66656,15 @@ pfDB["quests"]["esES"] = {
       ["Escama de escórpido gruesa,16"] = "ITEM",
       ["Esencia de agua,5"] = "ITEM",
       ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
+      ["Pellejo basto curtido,3"] = "ITEM",
     },
   },
   ["La coraza de escamas heladas,El artesan"] = {
     ["id"] = 9246,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Vademécum de Omarion,Lleva el v",
     ["log"] = "Gracias a ti y a Omarion (que en paz descanse), ahora puedo crear una coraza de escamas heladas. Solo necesito que me traigas los materiales y que me pagues un pequeño honorario por la mano de obra.",
     ["obj"] = "El artesano Wilhelm de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, quiere 8 runas heladas, 24 escamas de escórpido pesado, 7 esencias de agua, 5 pellejos bastos curtidos y 300 piezas de oro. Además, debes tener un nivel de reputación de exaltado con El Alba Argenta.",
     ["start"] = {
@@ -66263,6 +66677,8 @@ pfDB["quests"]["esES"] = {
       ["Runa congelada,8"] = "ITEM",
       ["Escama de escórpido gruesa,24"] = "ITEM",
       ["Esencia de agua,7"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
+      ["Pellejo basto curtido,5"] = "ITEM",
       ["Pellejo basto curtido,5"] = "ITEM",
     },
   },
@@ -66917,6 +67333,7 @@ pfDB["quests"]["esES"] = {
     ["lvl"] = 38,
     ["race"] = 77,
     ["pre"] = "Vimes\'s Report,Bring Vime",
+    ["pre"] = "Vimes\'s Report,Bring Vime",
     ["log"] = "Well. judging from Captain Vimes\'s report. you\'ve been a huge help to his investigation. and for that I thank you.$B$BI can put my mind more at ease knowing that the matter is in such capable hands. If you would. I would request that you return to Captain Vimes and help him in getting to the bottom of this mystery.",
     ["obj"] = "Return to Captain Garran Vimes in Theramore.",
     ["start"] = {
@@ -67004,8 +67421,8 @@ pfDB["quests"]["esES"] = {
     ["obj"] = "Habla con el señor de la guerra Gorchuk en el Valle de los Espíritus de Orgrimmar.",
     ["start"] = {
       ["Capataz primera Taiga"] = "NPC",
-      ["Capataz primero Grimsford"] = "NPC",
       ["Capataz primera Kai\'jin"] = "NPC",
+      ["Capataz primero Grimsford"] = "NPC",
     },
     ["end"] = {
       ["Señor de la guerra Gorchuk"] = "NPC",
@@ -67250,7 +67667,8 @@ pfDB["quests"]["esES"] = {
   },
   ["Apesta Costasur,Lanza 3 bo"] = {
     ["id"] = 1657,
-    ["min"] = 58,
+    ["min"] = 25,
+    ["lvl"] = 60,
     ["log"] = "Para celebrar la fiesta de Halloween con estilo... ¡infríngeles dolor a nuestros enemigos de Costasur!$B$BCoge una de estas bombas fétidas especialmente diseñadas. Contiene una sustancia apestosa que ningún humano u otra bestia cualquiera de poca voluntad pueden soportar. Tendrás que lanzarla en el mismísimo centro de Costasur para que surta efecto, así que prepárate para una batalla contra la Alianza.$B$BCuando hayas realizado esta tarea, este tributo a nuestra liberación... ¡ven a verme!",
     ["obj"] = "Lanza 3 bombas fétidas de los Renegados en el corazón de Costasur en Trabalomas, y después ve a ver a la clamasombras Yanka, que está en el Festival del Hombre de Mimbre en los Claros de Tirisfal.",
     ["start"] = {
@@ -67297,6 +67715,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 8184,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 1,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67306,14 +67725,16 @@ pfDB["quests"]["esES"] = {
       ["Zanza el Incansable"] = "NPC",
     },
     ["item"] = {
-      ["Ídolo Hakkari primigenio,1"] = "ITEM",
       ["Muñeco de vudú agujereado,1"] = "ITEM",
+      ["Arcanum de protección,1"] = "ITEM",
+      ["Égida Hakkari primigenia,1"] = "ITEM",
     },
   },
   ["Sigilo de Sincretista,"] = {
     ["id"] = 8185,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 2,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67323,14 +67744,16 @@ pfDB["quests"]["esES"] = {
       ["Zanza el Incansable"] = "NPC",
     },
     ["item"] = {
-      ["Ídolo Hakkari primigenio,1"] = "ITEM",
       ["Muñeco de vudú agujereado,1"] = "ITEM",
+      ["Arcanum de protección,1"] = "ITEM",
+      ["Chal Hakkari primigenio,1"] = "ITEM",
     },
   },
   ["Abrazo de la Muerte,"] = {
     ["id"] = 8186,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 8,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67340,14 +67763,16 @@ pfDB["quests"]["esES"] = {
       ["Zanza el Incansable"] = "NPC",
     },
     ["item"] = {
-      ["Ídolo Hakkari primigenio,1"] = "ITEM",
       ["Muñeco de vudú agujereado,1"] = "ITEM",
+      ["Arcanum de rapidez,1"] = "ITEM",
+      ["Casaca Hakkari primigenia,1"] = "ITEM",
     },
   },
   ["Llamada del falcón,"] = {
     ["id"] = 8187,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 4,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67357,14 +67782,16 @@ pfDB["quests"]["esES"] = {
       ["Zanza el Incansable"] = "NPC",
     },
     ["item"] = {
-      ["Ídolo Hakkari primigenio,1"] = "ITEM",
       ["Muñeco de vudú agujereado,1"] = "ITEM",
+      ["Arcanum de rapidez,1"] = "ITEM",
+      ["Puntal Hakkari primigenio,1"] = "ITEM",
     },
   },
   ["Abrazo del vigilante de Vodouisant,"] = {
     ["id"] = 8188,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 64,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67374,14 +67801,16 @@ pfDB["quests"]["esES"] = {
       ["Zanza el Incansable"] = "NPC",
     },
     ["item"] = {
-      ["Ídolo Hakkari primigenio,1"] = "ITEM",
       ["Muñeco de vudú agujereado,1"] = "ITEM",
+      ["Arcanum de enfoque,1"] = "ITEM",
+      ["Fajín Hakkari primigenio,1"] = "ITEM",
     },
   },
   ["Presencia de vista,"] = {
     ["id"] = 8189,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 128,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67391,14 +67820,16 @@ pfDB["quests"]["esES"] = {
       ["Zanza el Incansable"] = "NPC",
     },
     ["item"] = {
-      ["Ídolo Hakkari primigenio,1"] = "ITEM",
       ["Muñeco de vudú agujereado,1"] = "ITEM",
+      ["Arcanum de enfoque,1"] = "ITEM",
+      ["Faja Hakkari primigenia,1"] = "ITEM",
     },
   },
   ["Maleficio hudú,"] = {
     ["id"] = 8190,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 256,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67408,14 +67839,16 @@ pfDB["quests"]["esES"] = {
       ["Zanza el Incansable"] = "NPC",
     },
     ["item"] = {
-      ["Ídolo Hakkari primigenio,1"] = "ITEM",
       ["Muñeco de vudú agujereado,1"] = "ITEM",
+      ["Arcanum de enfoque,1"] = "ITEM",
+      ["Cabestrillo Hakkari primigenio,1"] = "ITEM",
     },
   },
   ["Aura profética,"] = {
     ["id"] = 8191,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 16,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67425,14 +67858,16 @@ pfDB["quests"]["esES"] = {
       ["Zanza el Incansable"] = "NPC",
     },
     ["item"] = {
-      ["Ídolo Hakkari primigenio,1"] = "ITEM",
       ["Muñeco de vudú agujereado,1"] = "ITEM",
+      ["Arcanum de enfoque,1"] = "ITEM",
+      ["Tabardo Hakkari primigenio,1"] = "ITEM",
     },
   },
   ["Caricia del animista,"] = {
     ["id"] = 8192,
     ["min"] = 58,
     ["lvl"] = 60,
+    ["class"] = 1024,
     ["log"] = "",
     ["obj"] = "",
     ["start"] = {
@@ -67442,8 +67877,9 @@ pfDB["quests"]["esES"] = {
       ["Zanza el Incansable"] = "NPC",
     },
     ["item"] = {
-      ["Ídolo Hakkari primigenio,1"] = "ITEM",
       ["Muñeco de vudú agujereado,1"] = "ITEM",
+      ["Arcanum de protección,1"] = "ITEM",
+      ["Ataduras Hakkari primigenias,1"] = "ITEM",
     },
   },
   ["Gran premio,"] = {
@@ -67594,20 +68030,14 @@ pfDB["quests"]["esES"] = {
   },
   ["Héroe Pico Tormenta,"] = {
     ["id"] = 8271,
-    ["min"] = 61,
+    ["min"] = 51,
+    ["lvl"] = 60,
     ["pre"] = "La batalla de Alterac,Adéntrate",
     ["start"] = {
+      ["Prospectora Tallapiedra"] = "NPC",
     },
     ["end"] = {
-    },
-  },
-  ["Héroe de Lobo Gélido,"] = {
-    ["id"] = 8272,
-    ["min"] = 61,
-    ["pre"] = "La batalla por Alterac,Adéntrate",
-    ["start"] = {
-    },
-    ["end"] = {
+      ["Prospectora Tallapiedra"] = "NPC",
     },
   },
   ["La gratitud Oran,"] = {
@@ -67684,7 +68114,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Una menta por cacarear como un pollo,¡Cacarea "] = {
     ["id"] = 8353,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "Ajá, ¿jugando a truco o trato por un niño? Iba a decir que ya eres mayor para andar buscando caramelos por ahí...$B$BBueno, pues para que te dé mi golosina, una menta de Forjaz, tienes que... ¡cacarear como un pollo! Sí, a los pollos les encanta la menta... Bueno, a lo mejor no, ¡pero tienes que cacarear si quieres el dulce!$B$BY bien, $c, ¡¿te atreves con el desafío o no?! ¡Es hora de ganarte la golosina!",
     ["obj"] = "¡Cacarea como un pollo para el tabernero Brebefuego y te dará una menta de Forjaz!",
@@ -67697,7 +68127,7 @@ pfDB["quests"]["esES"] = {
   },
   ["¡Truco o trato!,Haz el tre"] = {
     ["id"] = 8355,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "Buscando regalitos, ¿eh? ¡Genial!$b$bBueno, aunque hagas algo noble como buscar golosinas para una criatura, no te vas a ir de rositas tan fácilmente. Te daré una deliciosa gominola de Gnomeregan para el niño enfermo... ¡si haces ruidos de tren para mí! ¡Ja, ja, sí, ese será el trato! ¡Una gominola a cambio de hacer de tren!$b$b¡Pasajeros al tren, $c!",
     ["obj"] = "Haz el tren para Talvash del Kissel y te dará una gominola de Gnomeregan.",
@@ -67710,7 +68140,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Saca músculo a cambio de almendrados,Saca músc"] = {
     ["id"] = 8356,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "Qué disfraz tan... interesante. Aunque es muy agradable por tu parte que ayudes a un niño a ir de truco o trato este año, ¡me temo que tendré que pedirte que hagas un truco para mí!$B$BPareces tan fuerte y cachas con ese... disfraz... ¡veamos cómo sacas músculo! Sí, ¡empieza a sacar músculos para mí, $ghombretón:mujerona;!$B$BCuando hayas acabado, te daré un sabroso almendrado de Ventormenta. Típico de Halloween.",
     ["obj"] = "Saca músculos para la tabernera Allison y, a cambio, recibirás un almendrado de Ventormenta.|n",
@@ -67723,7 +68153,7 @@ pfDB["quests"]["esES"] = {
   },
   ["Bailando por mazapanes,Baila para"] = {
     ["id"] = 8357,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "Aunque estés haciendo lo de truco o trato por un niño, ¡no te libras de hacer un truco para conseguir el trato! No podemos cambiar la tradición así como así, ¿no te parece?$B$BCreo que el precio de una pieza de mazapán, hoy en día, es... ¡un BAILOTEO! ¡Eso es! ¡Déjame ver tus movimientos! ¡Si bailas para mí, te daré un poco de delicioso mazapán!",
     ["obj"] = "Baila para la tabernera Saelienne, y, a cambio, recibirás mazapán de Darnassus.",
@@ -67781,7 +68211,8 @@ pfDB["quests"]["esES"] = {
   },
   ["El poder del pino,Usa un lim"] = {
     ["id"] = 8373,
-    ["min"] = 59,
+    ["min"] = 25,
+    ["lvl"] = 60,
     ["log"] = "Lo que más odio de Halloween son las bombas fétidas que lanzan los Renegados en Costasur. ¿Quién iba a pensar que la celebración de la liberación acabaría oliendo tan mal?$B$BUsa este limpiador para eliminar las bombas fétidas que tire la Horda durante las celebraciones. Elimina los malos olores gracias a su extracto de pino.$B$BColabora en la limpieza de Costasur y te daré unos regalitos de Halloween que te van a encantar. ¿Trato?",
     ["obj"] = "Usa un limpiador de bombas fétidas para borrar los restos de las que los Renegados hayan lanzado en Costasur. Cuando acabes, ve a ver al sargento Hartman a Costasur.",
     ["start"] = {
@@ -67795,6 +68226,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 8467,
     ["min"] = 45,
     ["lvl"] = 55,
+    ["pre"] = "[DISABLED] Timbermaw Ally,Grazle wan",
     ["pre"] = "Timbermaw Ally,Grazle wan",
     ["obj"] = "",
     ["start"] = {
@@ -67824,9 +68256,9 @@ pfDB["quests"]["esES"] = {
   },
   ["Encomienda a los Vuelos,"] = {
     ["id"] = 8555,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["pre"] = "Un peón en el ajedrez de la vida,Aprende to",
+    ["log"] = "",
     ["start"] = {
       ["Anacronos"] = "NPC",
     },
@@ -67842,8 +68274,10 @@ pfDB["quests"]["esES"] = {
     ["log"] = "Los distintivos que recibes por misiones de combate, logística y táctica para Clamavientos Cuerno Digno, sirven para algo más que para presumir, $n.$B$BTe aconsejo que los guardes bien. Como prueba de tu lealtad con nuestra organización, puedo ofrecerte equipamiento que reservamos para nuestros aliados más cercanos, a cambio de esos distintivos.",
     ["obj"] = "Lleva 15 distintivos de combate Cenarion, 20 distintivos de logística Cenarion, 17 distintivos de táctica Cenarion y 1 Marca de Remulos a Vargus en el Fuerte Cenarion, en Silithus. También debes conseguir un nivel de reputación venerado con el Círculo Cenarion para poder completar esta misión.",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Distintivo de combate Cenarion,15"] = "ITEM",
@@ -67856,6 +68290,7 @@ pfDB["quests"]["esES"] = {
     ["id"] = 8576,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "El libro de contabilidad mágico de Azuregos,Entrega el",
     ["pre"] = "El libro de contabilidad mágico de Azuregos,Entrega el",
     ["start"] = {
       ["Narain Sabelotodo"] = "NPC",
@@ -68665,8 +69100,8 @@ pfDB["quests"]["esES"] = {
     ["log"] = "Hola, ¡qué bien que hayas decidido escucharme! La Alianza necesita toda la ayuda posible para preparar la guerra de Ahn\'Qiraj ¡y eso significa que te necesitamos a ti también! En este mismo instante, los recolectores oficiales están reuniendo el material necesario para la guerra que se avecina, ¡pero no lograremos nuestro objetivo sin tu ayuda, $n!$B$BDeberías hablar con quien está al mando, el mariscal de campo Nevanur. ¿Qué me dices, $c? ¿Nos ayudarás con estos preparativos vitales?",
     ["obj"] = "Habla con el mariscal de campo Nevanur en La Sala Militar de Forjaz.",
     ["start"] = {
-      ["Sargento primero Rayochirriante"] = "NPC",
       ["Sargento primera Maclure"] = "NPC",
+      ["Sargento primero Rayochirriante"] = "NPC",
       ["Sargento primera Umbraluna"] = "NPC",
     },
     ["end"] = {
@@ -68695,6 +69130,7 @@ pfDB["quests"]["esES"] = {
       ["Clamavientos Kaldon"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
   },
   ["Un obsequio festivo,"] = {
@@ -68877,6 +69313,7 @@ pfDB["quests"]["esES"] = {
   ["Un traidor de Velasangre,"] = {
     ["id"] = 9259,
     ["min"] = 30,
+    ["lvl"] = 60,
     ["start"] = {
       ["Traidor Velasangre"] = "NPC",
     },
@@ -68890,7 +69327,8 @@ pfDB["quests"]["esES"] = {
   },
   ["Curar viejas heridas,"] = {
     ["id"] = 9267,
-    ["min"] = 10,
+    ["min"] = 15,
+    ["lvl"] = 60,
     ["start"] = {
       ["Mupsi Fricadena"] = "NPC",
     },
@@ -68905,6 +69343,7 @@ pfDB["quests"]["esES"] = {
   ["Guerra en el mar,"] = {
     ["id"] = 9268,
     ["min"] = 40,
+    ["lvl"] = 60,
     ["start"] = {
       ["Rumsen Esfomolecho"] = "NPC",
     },
@@ -68994,6 +69433,7 @@ pfDB["quests"]["esES"] = {
     ["min"] = 60,
     ["lvl"] = 60,
     ["pre"] = "Encomienda a los Vuelos,",
+    ["pre"] = "Encomienda a los Vuelos,",
     ["log"] = "¿Eres tú, Campeón? Mil años hace que me fue confiado este fragmento, y en triste hora vienen a arrebatármelo... Pero ¿qué sería una tragedia sin crueldad?$B$B<Vaelastrasz tose débilmente.>$B$BEl... El fragmento de cetro está en poder de Nefarius.$B$BEl tiempo corre en nuestra contra. Nefarius planea destruirlo. ¡Apresúrate!",
     ["obj"] = "Mata a Nefarian y recupera del fragmento de cetro rojo. Llévaselo a Anacronos a las Cavernas del Tiempo, en Tanaris. Tienes una hora y media para completar esta tarea.",
     ["start"] = {
@@ -69004,6 +69444,18 @@ pfDB["quests"]["esES"] = {
     },
     ["item"] = {
       ["Fragmento de cetro rojo,1"] = "ITEM",
+    },
+  },
+  ["Héroe de Lobo Gélido,"] = {
+    ["id"] = 8272,
+    ["min"] = 51,
+    ["lvl"] = 60,
+    ["pre"] = "La batalla por Alterac,Adéntrate",
+    ["start"] = {
+      ["Voggah Agarre Letal"] = "NPC",
+    },
+    ["end"] = {
+      ["Voggah Agarre Letal"] = "NPC",
     },
   },
   ["Metzen el reno,Rescata a "] = {
@@ -69472,6 +69924,7 @@ pfDB["quests"]["esES"] = {
     ["obj"] = "Lleva la llamada a las armas al Guardián de los Pergaminos de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este.",
     ["start"] = {
       ["Reclutador Argenta"] = "NPC",
+      ["Explorador Argenta"] = "NPC",
     },
     ["end"] = {
       ["Guardián de los Pergaminos"] = "NPC",
@@ -69664,6 +70117,502 @@ pfDB["quests"]["esES"] = {
       ["Moneda de linaje,5"] = "ITEM",
     },
   },
+  ["Vimes\'s Report,Bring Vime"] = {
+    ["id"] = 1288,
+    ["min"] = 33,
+    ["lvl"] = 38,
+    ["race"] = 77,
+    ["log"] = "You\'ve done some good work, $n, best I\'ve seen from an amateur.$b$bLady Proudmoore asked that I keep her apprised of this delicate situation, and I haven\'t spoken to her for some time now.$b$bI was going to deliver my report to her later, but it seems more fitting that you should be the one to speak with her about it. You can probably answer her questions better than I could.",
+    ["obj"] = "Bring Vimes\'s Report to Lady Jaina Proudmoore in Theramore.",
+    ["start"] = {
+      ["Capitán Garran Vimes"] = "NPC",
+    },
+    ["end"] = {
+      ["Lady Jaina Valiente"] = "NPC",
+    },
+    ["item"] = {
+      ["Informe de Vimes,1"] = "ITEM",
+    },
+  },
+  ["Una menta por cacarear como un pollo,¡Cacarea "] = {
+    ["id"] = 8354,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Ajá, ¿jugando a truco o trato por un niño? Iba a decir que ya eres mayor para andar buscando caramelos por ahí...$B$BBueno, pues para que te dé mi golosina, una menta de Entrañas, tienes que... ¡cacarear como un pollo! Sí, a los pollos les encanta la menta... Bueno, a lo mejor no, ¡pero tienes que cacarear si quieres el dulce!$B$BY bien, $c, ¡¿te atreves con el desafío o no?! ¡Es hora de ganarte la golosina!",
+    ["obj"] = "¡Cacarea como un pollo para el tabernero Norman y a cambio recibirás una menta de Entrañas!",
+    ["start"] = {
+      ["Tabernero Norman"] = "NPC",
+    },
+    ["end"] = {
+      ["Tabernero Norman"] = "NPC",
+    },
+  },
+  ["¡Truco o trato!,Haz el tre"] = {
+    ["id"] = 8358,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Buscando regalitos, ¿eh? ¡Genial!$b$bBueno, aunque hagas algo noble como buscar golosinas para una criatura, no te vas a ir de rositas tan fácilmente. Te daré una deliciosa gominola Lanza Negra para el niño enfermo... ¡si haces ruidos de tren para mí! ¡Ja, ja, sí, ese será el trato! ¡Una gominola a cambio de hacer de tren!$b$b¡Pasajeros al tren, $c!",
+    ["obj"] = "Haz el tren para Kali Remik y a cambio recibirás una gominola Lanza Negra.|n",
+    ["start"] = {
+      ["Kali Remik"] = "NPC",
+    },
+    ["end"] = {
+      ["Kali Remik"] = "NPC",
+    },
+  },
+  ["Saca músculo a cambio de almendrados,Saca músc"] = {
+    ["id"] = 8359,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Qué disfraz tan... interesante. Aunque es muy agradable por tu parte que ayudes a un niño a ir de truco o trato este año, ¡me temo que tendré que pedirte que hagas un truco para mí!$B$BPareces tan fuerte y cachas con ese... disfraz... ¡veamos cómo sacas músculo! Sí, ¡empieza a sacar músculos para mí, $ghombretón:mujerona;!$B$BCuando hayas acabado, te daré un sabroso almendrado de Orgrimmar. Típico de Halloween.",
+    ["obj"] = "Saca músculo para la tabernera Gryshka y te dará unos almendrados de Orgrimmar.",
+    ["start"] = {
+      ["Tabernera Gryshka"] = "NPC",
+    },
+    ["end"] = {
+      ["Tabernera Gryshka"] = "NPC",
+    },
+  },
+  ["Bailando por mazapanes,Baila para"] = {
+    ["id"] = 8360,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Aunque estés haciendo lo de truco o trato por un niño, ¡no te libras de hacer un truco para conseguir el trato! No podemos cambiar la tradición así como así, ¿no te parece?$B$BCreo que el precio de una pieza de mazapán, hoy en día, es... ¡un BAILOTEO! ¡Eso es! ¡Déjame ver tus movimientos! ¡Si bailas para mí, te daré un poco de delicioso mazapán!",
+    ["obj"] = "Baila para la tabernera Pala y, a cambio, recibirás mazapán de Cima del Trueno.",
+    ["start"] = {
+      ["Tabernera Pala"] = "NPC",
+    },
+    ["end"] = {
+      ["Tabernera Pala"] = "NPC",
+    },
+  },
+  ["Acaba con los usurpadores Ala de Plata,Entra en l"] = {
+    ["id"] = 7875,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 178,
+    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["El druida de la Zarpa,Mata el cu"] = {
+    ["id"] = 2561,
+    ["min"] = 7,
+    ["lvl"] = 10,
+    ["pre"] = "El druida durmiente,Llévale u",
+    ["log"] = "Tras haber estudiado el talismán, $n, veo con claridad lo que hay que hacer. Cógelo y haz lo que te digo.$B$BDebes acercarte a la puerta de la cámara cercana. Allí encontrarás mi cuerpo desalmado. Aunque me cueste aceptar lo que voy a decir, no veo otro modo de liberarme del control de los Tuercepinos.$B$BPara que pueda escapar, debes matar mi representación física. Hecho esto, utiliza el talismán vudú sobre mi cuerpo inerte. Vuelve aquí cuando hayas cumplido tu cometido.",
+    ["obj"] = "Mata el cuerpo desalmado de Oben Garrafuria y después utiliza el talismán vudú.",
+    ["start"] = {
+      ["Oben Garrafuria"] = "NPC",
+    },
+    ["end"] = {
+      ["Oben Garrafuria"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Garrafuria,1"] = "NPC",
+    },
+  },
+  ["El agente activo,Viaja a St"] = {
+    ["id"] = 5213,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["pre"] = "La carne no miente,Recoge 10 ",
+    ["log"] = "Tendrás que adentrarte más en Stratholme, $n.$B$BDetrás de las primeras puertas encontrarás a los zigurats. Sabemos que la Plaga extrae un gran poder de esas estructuras. Examina los zigurats y vuelve con cualquier información que consigas.|n",
+    ["obj"] = "Viaja a Stratholme y busca los zigurats. Encuentra información sobre la Plaga y llévasela a Betina Bigglezink.|n",
+    ["start"] = {
+      ["Betina Bigglezink"] = "NPC",
+    },
+    ["end"] = {
+      ["Betina Bigglezink"] = "NPC",
+    },
+    ["item"] = {
+      ["Información sobre la Plaga,1"] = "ITEM",
+    },
+  },
+  ["Ramstein,Viaja a St"] = {
+    ["id"] = 6163,
+    ["min"] = 54,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "Alaocaso, cómo te odio...,Encuentra ",
+    ["log"] = "Me superaron. Estaba en este mismo lugar... firme, defendiendo el terreno por Lordaeron. La granja fue atacada por una gigante ola de la Plaga.$B$BEsos malditos... Esa escoria... Algo planeó sobre mí... Sus vísceras colgaban de su cavidad torácica...$B$BMe desperté como miembro de la Plaga. Durante tanto tiempo me sentí tan impotente... Mi mente se unió a la del Rey Exánime.$B$BElla vino a por mí... de alguna forma, sabía que lo haría. Libre.$B$BY ahora debo cobrar mi venganza. Debo vengarme de lo que se llevó mi vida. Destrúyelo tú.",
+    ["obj"] = "Viaja a Stratholme y mata a Ramstein el Empachador. Coge su cabeza y llévasela como souvenir a Nathanos.",
+    ["start"] = {
+      ["Nathanos Clamañublo"] = "NPC",
+    },
+    ["end"] = {
+      ["Nathanos Clamañublo"] = "NPC",
+    },
+    ["item"] = {
+      ["Cabeza de Ramstein el Empachador,1"] = "ITEM",
+    },
+  },
+  ["Winterfall Activity,Salfa want"] = {
+    ["id"] = 6241,
+    ["min"] = 51,
+    ["lvl"] = 56,
+    ["log"] = "The Timbermaw tend to stay to themselves, $N. While we do allow safe passage to those that have proven they can be trusted, we try to avoid other furbolg tribes if at all possible.$B$BLately I have noticed that the Winterfall tribe has become increasingly hostile towards us. They seem to be in a state of rage, completely engulfed by their own fear and hatred of anything they do not understand.$B$BIf you could reduce their numbers this would help us greatly, $N.",
+    ["obj"] = "Salfa wants you to kill 6 Winterfall Totemics, 6 Winterfall Den Watchers, and 6 Winterfall Pathfinders.",
+    ["start"] = {
+      ["Salfa"] = "NPC",
+    },
+    ["end"] = {
+      ["Salfa"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Totémico Nevada,6"] = "NPC",
+      ["Vigía del cubil Nevada,6"] = "NPC",
+      ["Abrecaminos Nevada,6"] = "NPC",
+    },
+  },
+  ["La leyenda de Korrak,Según cue"] = {
+    ["id"] = 7181,
+    ["min"] = 51,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Los invasores Pico Tormenta no son la única amenaza de la región, soldado. La guerra en el valle se está librando en dos frentes. Los trols caníbales Hacha Invernal también rivalizan por el poder.$B$BSu líder es Korrak el Sanguinario, una cruel y taimada fiera.$B$BUn buen golpe sobre Korrak podría ser aplastante para el clan Hacha Invernal. Ejecuta a la fiera ¡y recibirás tu recompensa!",
+    ["obj"] = "Según cuenta la leyenda, el jefe de los poderosos trols Hacha Invernal parece dispuesto a sembrar el caos entre los habitantes del Valle de Alterac.$B$BSi Korrak se digna aparecer, destrúyelo y vuelve con el maestro de guerra Laggrond.",
+    ["start"] = {
+      ["Maestro de guerra Laggrond"] = "NPC",
+    },
+    ["end"] = {
+      ["Maestro de guerra Laggrond"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Korrak el Sanguinario,1"] = "NPC",
+    },
+  },
+  ["Korrak el Sanguinario,Según cue"] = {
+    ["id"] = 7202,
+    ["min"] = 51,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Los trols indígenas Hacha Invernal de esa región son salvajes despiadados a los que nada complacería más que añadir nuestros huesos a su hediondo estofado.$B$B¡Debemos demostrarles nuestro poder!$B$BHemos recuperado unos libros de sus cuevas donde se describe su jerarquía de poder. Los artefactos apuntan a que su líder, Korrak el Sanguinario, tiende a permanecer oculto hasta que surge un motivo para manifestarse.$B$B¡La muerte de Korrak significaría el fin del clan Hacha Invernal! Mátalo y vuelve aquí.",
+    ["obj"] = "Según cuenta la leyenda, el jefe de los poderosos trols Hacha Invernal parece dispuesto a sembrar el caos entre los habitantes del Valle de Alterac.$B$BSi Korrak se digna aparecer, destrúyelo y vuelve con el teniente Haggerdin en las Montañas de Alterac.",
+    ["start"] = {
+      ["Teniente Haggerdin"] = "NPC",
+    },
+    ["end"] = {
+      ["Teniente Haggerdin"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Korrak el Sanguinario,1"] = "NPC",
+    },
+  },
+  ["Presencia de poderío,"] = {
+    ["id"] = 8184,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 1,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["item"] = {
+      ["Ídolo Hakkari primigenio,1"] = "ITEM",
+      ["Muñeco de vudú agujereado,1"] = "ITEM",
+    },
+  },
+  ["Sigilo de Sincretista,"] = {
+    ["id"] = 8185,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 2,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["item"] = {
+      ["Ídolo Hakkari primigenio,1"] = "ITEM",
+      ["Muñeco de vudú agujereado,1"] = "ITEM",
+    },
+  },
+  ["Abrazo de la Muerte,"] = {
+    ["id"] = 8186,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 8,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["item"] = {
+      ["Ídolo Hakkari primigenio,1"] = "ITEM",
+      ["Muñeco de vudú agujereado,1"] = "ITEM",
+    },
+  },
+  ["Llamada del falcón,"] = {
+    ["id"] = 8187,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 4,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["item"] = {
+      ["Ídolo Hakkari primigenio,1"] = "ITEM",
+      ["Muñeco de vudú agujereado,1"] = "ITEM",
+    },
+  },
+  ["Abrazo del vigilante de Vodouisant,"] = {
+    ["id"] = 8188,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 64,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["item"] = {
+      ["Ídolo Hakkari primigenio,1"] = "ITEM",
+      ["Muñeco de vudú agujereado,1"] = "ITEM",
+    },
+  },
+  ["Presencia de vista,"] = {
+    ["id"] = 8189,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 128,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["item"] = {
+      ["Ídolo Hakkari primigenio,1"] = "ITEM",
+      ["Muñeco de vudú agujereado,1"] = "ITEM",
+    },
+  },
+  ["Maleficio hudú,"] = {
+    ["id"] = 8190,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 256,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["item"] = {
+      ["Ídolo Hakkari primigenio,1"] = "ITEM",
+      ["Muñeco de vudú agujereado,1"] = "ITEM",
+    },
+  },
+  ["Aura profética,"] = {
+    ["id"] = 8191,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 16,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["item"] = {
+      ["Ídolo Hakkari primigenio,1"] = "ITEM",
+      ["Muñeco de vudú agujereado,1"] = "ITEM",
+    },
+  },
+  ["Caricia del animista,"] = {
+    ["id"] = 8192,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 1024,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza el Incansable"] = "NPC",
+    },
+    ["item"] = {
+      ["Ídolo Hakkari primigenio,1"] = "ITEM",
+      ["Muñeco de vudú agujereado,1"] = "ITEM",
+    },
+  },
+  ["Los mejunjes potentes de Zanza,"] = {
+    ["id"] = 8243,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Rin\'wosho el Comerciante"] = "NPC",
+    },
+    ["end"] = {
+      ["Rin\'wosho el Comerciante"] = "NPC",
+    },
+    ["item"] = {
+      ["Muestra de honor Zandalar,1"] = "ITEM",
+    },
+  },
+  ["Thunderaan el Hijo del Viento,Para liber"] = {
+    ["id"] = 7786,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["pre"] = "Examina la vasija,Examina la",
+    ["log"] = "Te he contado todo lo que sé, $n. Eres tú quien debe encontrar elementium y aniquilar la forma corpórea del Señor del Fuego.$b$bSi lo consigues, obtendrás la bendición de Thunderaan.",
+    ["obj"] = "Para liberar a Thunderaan el Hijo del Viento de su cárcel, debes entregarle al alto señor Demitrian en Silithus la mitad izquierda y la derecha del vínculo del Hijo del Viento, 10 barras de elementium encantado y la esencia del Señor del Fuego.",
+    ["start"] = {
+      ["Alto señor Demitrian"] = "NPC",
+    },
+    ["end"] = {
+      ["Alto señor Demitrian"] = "NPC",
+    },
+    ["item"] = {
+      ["Barra de elementium encantado,10"] = "ITEM",
+      ["Esencia del Señor del Fuego,1"] = "ITEM",
+      ["Ataduras del Hijo del Viento,1"] = "ITEM",
+      ["Ataduras del Hijo del Viento,1"] = "ITEM",
+    },
+  },
+  ["Timbermaw Ally,Grazle wan"] = {
+    ["id"] = 6131,
+    ["min"] = 45,
+    ["lvl"] = 48,
+    ["log"] = "The Timbermaw are the only furbolg tribe to escape the corruption. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.$B$BAre you interested in proving yourself? Drive back the corrupted Deadwood tribe of Felwood and we may one day consider you an ally. You\'ll find the first Deadwood tribe - warriors, pathfinders and gardeners - to my west.",
+    ["obj"] = "Grazle wants you to prove yourself by killing 5 Deadwood Warriors, 5 Deadwood Pathfinders, and 5 Deadwood Gardeners.",
+    ["start"] = {
+      ["Grazle"] = "NPC",
+    },
+    ["end"] = {
+      ["Grazle"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Guerrero Muertobosque,5"] = "NPC",
+      ["Abrecaminos Muertobosque,5"] = "NPC",
+      ["Jardinero Muertobosque,5"] = "NPC",
+    },
+  },
+  ["Encomienda a los Vuelos,"] = {
+    ["id"] = 8555,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["pre"] = "Un peón en el ajedrez de la vida,Aprende to",
+    ["start"] = {
+      ["Anacronos"] = "NPC",
+    },
+    ["end"] = {
+      ["Anacronos"] = "NPC",
+    },
+  },
+  ["El libro de contabilidad mágico de Azuregos,Entrega el"] = {
+    ["id"] = 8575,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["log"] = "No entiendes ni una palabra de este libro de contabilidad. ¡Ni siquiera sabes en qué idioma está escrito!",
+    ["obj"] = "Entrega el libro de contabilidad mágico de Azuregos a Narain Sabelotodo de Tanaris.",
+    ["start"] = {
+    },
+    ["end"] = {
+      ["Narain Sabelotodo"] = "NPC",
+    },
+    ["item"] = {
+      ["Libro de contabilidad mágico,1"] = "ITEM",
+    },
+  },
+  ["Una canción de amor para Narain,Lleva la c"] = {
+    ["id"] = 8599,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["log"] = "No recibo muchas visitas. De hecho, la última vez que tuve visita fue cuando rescaté a ese pobre gnomo de una máquina voladora que se estrelló.$B$B<Meridith mira al vacío, perdida en sus recuerdos.>$B$B¿Lo conoces? ¿Narain? ¿Narain Sabelotodo? ¡No sabes lo que significaría para mí que alguien le llevara un mensaje de mi parte! ¡Necesito decirle lo que siento! ¡Sé que es amor! ¡Sencillamente lo sé!$B$B¿No podrías llevar un mensaje a Narain? ¡Estaría en deuda contigo para siempre!",
+    ["obj"] = "Lleva la carta de amor de Meridith a Narain Sabelotodo a Tanaris.",
+    ["start"] = {
+      ["Meridith la Sirenita"] = "NPC",
+    },
+    ["end"] = {
+      ["Narain Sabelotodo"] = "NPC",
+    },
+    ["item"] = {
+      ["Carta de amor de Meridith,1"] = "ITEM",
+    },
+  },
+  ["¡Truco o trato!,Haz el tre"] = {
+    ["id"] = 8355,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "Buscando regalitos, ¿eh? ¡Genial!$b$bBueno, aunque hagas algo noble como buscar golosinas para una criatura, no te vas a ir de rositas tan fácilmente. Te daré una deliciosa gominola de Gnomeregan para el niño enfermo... ¡si haces ruidos de tren para mí! ¡Ja, ja, sí, ese será el trato! ¡Una gominola a cambio de hacer de tren!$b$b¡Pasajeros al tren, $c!",
+    ["obj"] = "Haz el tren para Talvash del Kissel y te dará una gominola de Gnomeregan.",
+    ["start"] = {
+      ["Talvash del Kissel"] = "NPC",
+    },
+    ["end"] = {
+      ["Talvash del Kissel"] = "NPC",
+    },
+  },
+  ["La única receta,Recupera l"] = {
+    ["id"] = 8620,
+    ["min"] = 55,
+    ["lvl"] = 60,
+    ["pre"] = "¡Señuelo!,Narain Sab",
+    ["log"] = "Tenía que haberme dado cuenta. ¡Mi archienemigo, el doctor Weavil ha vuelto a las andadas! Y después de tu fracaso en la Cuna del Invierno, ¡el doctor Weavil ha destruido mi libro! ¿Cómo piensas salvar al mundo ahora?$B$B¡La nota que recibí decía que la única copia conocida de Dracónico para torpes: Volumen II fue dividida en 8 partes y arrojada al viento! Si consigues encontrar los capítulos perdidos, utiliza esta encuadernación para reunirlos y vuelve a mí.",
+    ["obj"] = "Recupera los 8 capítulos perdidos de Dracónico para torpes, únelos con la encuadernación de libro mágico y devuelve el libro completo Dracónico para torpes: Volumen II a Narain Sabelotodo de Tanaris.",
+    ["start"] = {
+      ["Narain Sabelotodo"] = "NPC",
+    },
+    ["end"] = {
+      ["Narain Sabelotodo"] = "NPC",
+    },
+    ["item"] = {
+      ["Dracónico para torpes: volumen II,1"] = "ITEM",
+    },
+  },
+  ["Una menta por cacarear como un pollo,¡Cacarea "] = {
+    ["id"] = 8353,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "Ajá, ¿jugando a truco o trato por un niño? Iba a decir que ya eres mayor para andar buscando caramelos por ahí...$B$BBueno, pues para que te dé mi golosina, una menta de Forjaz, tienes que... ¡cacarear como un pollo! Sí, a los pollos les encanta la menta... Bueno, a lo mejor no, ¡pero tienes que cacarear si quieres el dulce!$B$BY bien, $c, ¡¿te atreves con el desafío o no?! ¡Es hora de ganarte la golosina!",
+    ["obj"] = "¡Cacarea como un pollo para el tabernero Brebefuego y te dará una menta de Forjaz!",
+    ["start"] = {
+      ["Tabernero Brebefuego"] = "NPC",
+    },
+    ["end"] = {
+      ["Tabernero Brebefuego"] = "NPC",
+    },
+  },
   ["Una menta por cacarear como un pollo,¡Cacarea "] = {
     ["id"] = 8354,
     ["min"] = 10,
@@ -69676,6 +70625,32 @@ pfDB["quests"]["esES"] = {
     },
     ["end"] = {
       ["Tabernero Norman"] = "NPC",
+    },
+  },
+  ["Saca músculo a cambio de almendrados,Saca músc"] = {
+    ["id"] = 8356,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "Qué disfraz tan... interesante. Aunque es muy agradable por tu parte que ayudes a un niño a ir de truco o trato este año, ¡me temo que tendré que pedirte que hagas un truco para mí!$B$BPareces tan fuerte y cachas con ese... disfraz... ¡veamos cómo sacas músculo! Sí, ¡empieza a sacar músculos para mí, $ghombretón:mujerona;!$B$BCuando hayas acabado, te daré un sabroso almendrado de Ventormenta. Típico de Halloween.",
+    ["obj"] = "Saca músculos para la tabernera Allison y, a cambio, recibirás un almendrado de Ventormenta.|n",
+    ["start"] = {
+      ["Tabernera Allison"] = "NPC",
+    },
+    ["end"] = {
+      ["Tabernera Allison"] = "NPC",
+    },
+  },
+  ["Bailando por mazapanes,Baila para"] = {
+    ["id"] = 8357,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "Aunque estés haciendo lo de truco o trato por un niño, ¡no te libras de hacer un truco para conseguir el trato! No podemos cambiar la tradición así como así, ¿no te parece?$B$BCreo que el precio de una pieza de mazapán, hoy en día, es... ¡un BAILOTEO! ¡Eso es! ¡Déjame ver tus movimientos! ¡Si bailas para mí, te daré un poco de delicioso mazapán!",
+    ["obj"] = "Baila para la tabernera Saelienne, y, a cambio, recibirás mazapán de Darnassus.",
+    ["start"] = {
+      ["Tabernera Saelienne"] = "NPC",
+    },
+    ["end"] = {
+      ["Tabernera Saelienne"] = "NPC",
     },
   },
   ["¡Truco o trato!,Haz el tre"] = {
@@ -69718,6 +70693,1284 @@ pfDB["quests"]["esES"] = {
     },
     ["end"] = {
       ["Tabernera Pala"] = "NPC",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8081,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["pre"] = "Los recursos de la Cuenca de Arathi,Llévate l",
+    ["pre"] = "Los recursos de la Cuenca de Arathi,Llévate l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
+    ["id"] = 8123,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
+    ["id"] = 8123,
+    ["min"] = 50,
+    ["lvl"] = 59,
+    ["race"] = 178,
+    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8124,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8124,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["pre"] = "Córtale el suministro a la Liga de Arathor,Llévate l",
+    ["pre"] = "Córtale el suministro a la Liga de Arathor,Llévate l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
+    ["id"] = 8154,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
+    ["id"] = 8154,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 77,
+    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
+    ["id"] = 8155,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
+    ["id"] = 8155,
+    ["min"] = 20,
+    ["lvl"] = 29,
+    ["race"] = 77,
+    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
+    ["id"] = 8156,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
+    ["id"] = 8156,
+    ["min"] = 30,
+    ["lvl"] = 39,
+    ["race"] = 77,
+    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8157,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8157,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["pre"] = "Los recursos de la Cuenca de Arathi,Llévate l",
+    ["pre"] = "Los recursos de la Cuenca de Arathi,Llévate l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8158,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8158,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["pre"] = "Los recursos de la Cuenca de Arathi,Llévate l",
+    ["pre"] = "Los recursos de la Cuenca de Arathi,Llévate l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8159,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8159,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["pre"] = "Los recursos de la Cuenca de Arathi,Llévate l",
+    ["pre"] = "Los recursos de la Cuenca de Arathi,Llévate l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
+    ["id"] = 8160,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
+    ["id"] = 8160,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 178,
+    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
+    ["id"] = 8161,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
+    ["id"] = 8161,
+    ["min"] = 30,
+    ["lvl"] = 39,
+    ["race"] = 178,
+    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
+    ["id"] = 8162,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
+    ["id"] = 8162,
+    ["min"] = 20,
+    ["lvl"] = 29,
+    ["race"] = 178,
+    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8163,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8163,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["pre"] = "Córtale el suministro a la Liga de Arathor,Llévate l",
+    ["pre"] = "Córtale el suministro a la Liga de Arathor,Llévate l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8164,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8164,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["pre"] = "Córtale el suministro a la Liga de Arathor,Llévate l",
+    ["pre"] = "Córtale el suministro a la Liga de Arathor,Llévate l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8165,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8165,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["pre"] = "Córtale el suministro a la Liga de Arathor,Llévate l",
+    ["pre"] = "Córtale el suministro a la Liga de Arathor,Llévate l",
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Galón de sacrificio,"] = {
+    ["id"] = 8266,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Lazo de Sacrificio de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["Galón de sacrificio,"] = {
+    ["id"] = 8266,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Lazo de Sacrificio de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["Galón de sacrificio,"] = {
+    ["id"] = 8267,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Lazo de Sacrificio de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["Galón de sacrificio,"] = {
+    ["id"] = 8267,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Lazo de Sacrificio de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["Galón de sacrificio,"] = {
+    ["id"] = 8268,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Lazo de Sacrificio de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["Galón de sacrificio,"] = {
+    ["id"] = 8268,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Lazo de Sacrificio de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["Galón de sacrificio,"] = {
+    ["id"] = 8269,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Lazo de Sacrificio de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["Galón de sacrificio,"] = {
+    ["id"] = 8269,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Lazo de Sacrificio de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["Talismanes del mérito,"] = {
+    ["id"] = 8289,
+    ["min"] = 10,
+    ["lvl"] = 15,
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
+    },
+  },
+  ["¡Expulsa al invasor!,Entra en l"] = {
+    ["id"] = 8291,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
+    },
+  },
+  ["¡Expulsa al invasor!,Entra en l"] = {
+    ["id"] = 8291,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["Talismanes del mérito,"] = {
+    ["id"] = 8292,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
+    },
+  },
+  ["Talismanes del mérito,"] = {
+    ["id"] = 8292,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Garganta Grito de Guerra,3"] = "ITEM",
+    },
+  },
+  ["Marca de Honor,"] = {
+    ["id"] = 8293,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Marca de Honor,"] = {
+    ["id"] = 8293,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Garganta Grito de Guerra,3"] = "ITEM",
+    },
+  },
+  ["Acaba con los usurpadores Ala de Plata,Entra en l"] = {
+    ["id"] = 8294,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Acaba con los usurpadores Ala de Plata,Entra en l"] = {
+    ["id"] = 8294,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.",
+    ["obj"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
+    ["start"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitán Trizacráneo"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["Marca de Honor,"] = {
+    ["id"] = 8296,
+    ["min"] = 10,
+    ["lvl"] = 15,
+    ["start"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["end"] = {
+      ["Centinela Cantolejano"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
+    ["id"] = 8297,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Los recursos de la Cuenca de Arathi,Llévate l"] = {
+    ["id"] = 8297,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8298,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8298,
+    ["min"] = 20,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sargento Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Cuenca de Arathi,3"] = "ITEM",
+    },
+  },
+  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
+    ["id"] = 8299,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Córtale el suministro a la Liga de Arathor,Llévate l"] = {
+    ["id"] = 8299,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
+    ["obj"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Cuenca de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8300,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "",
+    ["obj"] = "",
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Más cajas de suministros,"] = {
+    ["id"] = 8300,
+    ["min"] = 20,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Mortacechador Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Marca de Honor de la Cuenca de Arathi,3"] = "ITEM",
+    },
+  },
+  ["Victorias del pasado en Arathi,"] = {
+    ["id"] = 8565,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 77,
+    ["start"] = {
+      ["General de brigada de la Alianza"] = "NPC",
+    },
+    ["end"] = {
+      ["General de brigada de la Alianza"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Victorias del pasado en Arathi,"] = {
+    ["id"] = 8566,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 178,
+    ["start"] = {
+      ["Belisario de la Horda"] = "NPC",
+    },
+    ["end"] = {
+      ["Belisario de la Horda"] = "NPC",
+    },
+    ["item"] = {
+      ["Cajón de recursos de Arathi,1"] = "ITEM",
+    },
+  },
+  ["Victorias del pasado en la Garganta Grito de Guerra,"] = {
+    ["id"] = 8567,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 77,
+    ["start"] = {
+      ["General de brigada de la Alianza"] = "NPC",
+    },
+    ["end"] = {
+      ["General de brigada de la Alianza"] = "NPC",
+    },
+    ["item"] = {
+      ["Dije de mérito Ala de Plata,1"] = "ITEM",
+    },
+  },
+  ["Victorias del pasado en la Garganta Grito de Guerra,"] = {
+    ["id"] = 8568,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 178,
+    ["start"] = {
+      ["Belisario de la Horda"] = "NPC",
+    },
+    ["end"] = {
+      ["Belisario de la Horda"] = "NPC",
+    },
+    ["item"] = {
+      ["Warsong Mark of Honor,1"] = "ITEM",
+    },
+  },
+  ["Esfuerzos del pasado en la Garganta Grito de Guerra,"] = {
+    ["id"] = 8569,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 77,
+    ["start"] = {
+      ["General de brigada de la Alianza"] = "NPC",
+    },
+    ["end"] = {
+      ["General de brigada de la Alianza"] = "NPC",
+    },
+    ["item"] = {
+      ["Lazo de Sacrificio de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["Esfuerzos del pasado en la Garganta Grito de Guerra,"] = {
+    ["id"] = 8570,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 178,
+    ["start"] = {
+      ["Belisario de la Horda"] = "NPC",
+    },
+    ["end"] = {
+      ["Belisario de la Horda"] = "NPC",
+    },
+    ["item"] = {
+      ["Lazo de Sacrificio de la Garganta Grito de Guerra,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8811,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Oficial Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8812,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Oficial Barbaférrea"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Barbaférrea"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8813,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Oficial Lunaluz"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Lunaluz"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8814,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Oficial Chatobrian"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Chatobrian"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8815,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Oficial Filorrojo"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Filorrojo"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Horda,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8816,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Oficial Gothena"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Gothena"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Horda,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8817,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Oficial Zancada del Trueno"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Zancada del Trueno"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Horda,1"] = "ITEM",
+    },
+  },
+  ["Un sello de honor,"] = {
+    ["id"] = 8818,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Oficial Vu\'Shalay"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Vu\'Shalay"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Horda,1"] = "ITEM",
+    },
+  },
+  ["Diez sellos de honor,"] = {
+    ["id"] = 8819,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Oficial Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,10"] = "ITEM",
+    },
+  },
+  ["Diez sellos de honor,"] = {
+    ["id"] = 8820,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Oficial Barbaférrea"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Barbaférrea"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,10"] = "ITEM",
+    },
+  },
+  ["Diez sellos de honor,"] = {
+    ["id"] = 8821,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Oficial Lunaluz"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Lunaluz"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,10"] = "ITEM",
+    },
+  },
+  ["Diez sellos de honor,"] = {
+    ["id"] = 8822,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Oficial Chatobrian"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Chatobrian"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Alianza,10"] = "ITEM",
+    },
+  },
+  ["Diez sellos de honor,"] = {
+    ["id"] = 8823,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Oficial Filorrojo"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Filorrojo"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Horda,10"] = "ITEM",
+    },
+  },
+  ["Diez sellos de honor,"] = {
+    ["id"] = 8824,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Oficial Gothena"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Gothena"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Horda,10"] = "ITEM",
+    },
+  },
+  ["Diez sellos de honor,"] = {
+    ["id"] = 8825,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Oficial Zancada del Trueno"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Zancada del Trueno"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Horda,10"] = "ITEM",
+    },
+  },
+  ["Diez sellos de honor,"] = {
+    ["id"] = 8826,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Oficial Vu\'Shalay"] = "NPC",
+    },
+    ["end"] = {
+      ["Oficial Vu\'Shalay"] = "NPC",
+    },
+    ["item"] = {
+      ["Sello de mención de honor de la Horda,10"] = "ITEM",
+    },
+  },
+  ["Enmendar los errores,"] = {
+    ["id"] = 9266,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["start"] = {
+      ["Bronn Desgarradar"] = "NPC",
+    },
+    ["end"] = {
+      ["Bronn Desgarradar"] = "NPC",
+    },
+    ["item"] = {
+      ["Paño rúnico,40"] = "ITEM",
+      ["Carbón,4"] = "ITEM",
     },
   },
 }

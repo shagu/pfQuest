@@ -2080,7 +2080,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["L\'épouvantail à goules,Trouvez 7 "] = {
     ["id"] = 133,
-    ["min"] = 22,
+    ["min"] = 20,
     ["lvl"] = 27,
     ["race"] = 77,
     ["pre"] = "Livrer le Suc,Apportez l",
@@ -2098,7 +2098,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Les ogres voleurs,Rapporter "] = {
     ["id"] = 134,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "L\'épouvantail à goules,Trouvez 7 ",
@@ -2134,9 +2134,8 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le trésor caché du capitaine Sanders,Trouver le"] = {
     ["id"] = 136,
-    ["min"] = 11,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["log"] = "Si vous lisez ceci, c\'est que le vieux capitaine Sanders repose sous six pieds de flotte. Mon trésor est à vous. Il vous suffit de suivre le jeu de piste.$b$bD\'abord, trouvez mon coffre. Il doit être à moitié enterré dans le sable, depuis le temps, sur la côte de la marche de l\'Ouest, à côté de l\'épave. Il y a des tas d\'épaves sur la côte, mais une seule ancre rouillée. Qui trouve cette ancre trouve mon coffre ! Et avec le coffre, l\'indice suivant !",
     ["obj"] = "Trouver le Coffre du capitaine Sanders. Le fouiller pour trouver l\'indice suivant.",
     ["start"] = {
@@ -2147,9 +2146,8 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le trésor caché du capitaine Sanders,Trouver le"] = {
     ["id"] = 138,
-    ["min"] = 14,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["pre"] = "Le trésor caché du capitaine Sanders,Trouver le",
     ["log"] = "L\'indice que vous trouvez est le suivant : « Bon travail, matelot ! Maintenant il va falloir cingler vers l\'est. À l\'est, vers le haut des falaises, à l\'est vers la route. Cherchez les ruines des vieilles cheminées, au bord de la route. Là, vous trouverez un vieux tonneau qui contient l\'indice suivant. »",
     ["obj"] = "Trouver le Tonneau à côté des cheminées en ruine. Le fouiller pour trouver l\'indice suivant.",
@@ -2162,9 +2160,8 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le trésor caché du capitaine Sanders,Chercher l"] = {
     ["id"] = 139,
-    ["min"] = 14,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["pre"] = "Le trésor caché du capitaine Sanders,Trouver le",
     ["log"] = "En fouillant le tonneau, vous découvrez un autre parchemin. Il y est écrit : « À partir de ce tonneau, dirigez-vous vers le nord. Marchez droit comme une bande de cadets qui va au réfectoire, jusqu\'à ce que vous voyiez la cruche vide, à côté de l\'éolienne solitaire, sur les falaises. Si vous farfouillez autour de cette cruche, vous pourrez bien trouver ce que vous cherchez. »",
     ["obj"] = "Chercher la Cruche vide à côté de l\'éolienne pour trouver le prochain indice.",
@@ -2177,9 +2174,8 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le trésor caché du capitaine Sanders,Localisez "] = {
     ["id"] = 140,
-    ["min"] = 14,
+    ["min"] = 10,
     ["lvl"] = 16,
-    ["race"] = 77,
     ["pre"] = "Le trésor caché du capitaine Sanders,Chercher l",
     ["log"] = "Bien vu ! Il y a un autre indice au fond de la cruche. L\'encre a coulé par endroits et le papier sent le whisky, mais vous arrivez à reconstituer une partie du texte. « Maintenant que vous avez trouvé la vieille cruche de whisky, vous êtes presque au trésor ! Tournez-vous vers l\'ouest et descendez vers le rivage. Ne vous arrêtez pas au bord de l\'eau, continuez ! Nagez vers l\'ouest jusqu\'à l\'île où se trouve mon coffre au trésor ! »",
     ["obj"] = "Localisez le Coffre au trésor du capitaine Sanders et ouvrez-le pour prendre votre récompense.",
@@ -2522,7 +2518,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Une lettre pour le Maire,Apporter l"] = {
     ["id"] = 160,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Les ogres voleurs,Rapporter ",
@@ -4011,7 +4007,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["La traduction de la lettre d\'Abercrombie,Apportez l"] = {
     ["id"] = 251,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Une lettre pour le Maire,Apporter l",
@@ -4029,7 +4025,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["La traduction pour Ello,Apportez l"] = {
     ["id"] = 252,
-    ["min"] = 23,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Attendre la fin des travaux de Sirra,Attendre u",
@@ -4047,7 +4043,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["La fiancée de l\'Embaumeur,Trouvez la"] = {
     ["id"] = 253,
-    ["min"] = 24,
+    ["min"] = 20,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "La traduction pour Ello,Apportez l",
@@ -4065,7 +4061,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["En creusant la terre,"] = {
     ["id"] = 254,
-    ["min"] = 24,
+    ["min"] = 20,
     ["lvl"] = 35,
     ["start"] = {
       ["Boue du tombeau d\'Eliza"] = "OBJECT",
@@ -4736,6 +4732,7 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Oeil maudit de Paleth,1"] = "ITEM",
+      ["Oeil maudit de Paleth,1"] = "ITEM",
     },
   },
   ["Purifier l\'Œil,Apporter l"] = {
@@ -4752,6 +4749,7 @@ pfDB["quests"]["frFR"] = {
       ["Archevêque Benedictus"] = "NPC",
     },
     ["item"] = {
+      ["Oeil maudit de Paleth,1"] = "ITEM",
       ["Oeil maudit de Paleth,1"] = "ITEM",
     },
   },
@@ -14485,6 +14483,38 @@ pfDB["quests"]["frFR"] = {
       ["Sang de lézard-tonnerre,3"] = "ITEM",
     },
   },
+  ["Parmi les ruines,Apportez l"] = {
+    ["id"] = 908,
+    ["min"] = 25,
+    ["lvl"] = 27,
+    ["race"] = 178,
+    ["pre"] = "L\'Essence d\'Aku\'Mai,Apporter 2",
+    ["log"] = "Le Marteau du crépuscule s\'est déplacé dans les ruines d\'Écrin-de-Lune, dans les profondeurs de Brassenoire. Leur présence forcera les élémentaires à travailler contre nous. Si nous ne nous occupons pas de cette région, ils en prendront complètement le contrôle.$B$B$n, allez à Brassenoire et trouvez la pierre de la Brasse. Elle devrait se trouver quelque part, à proximité, dans l\'eau. À l\'intérieur, se trouve un noyau de la Brasse, un objet qui, s\'il est utilisé correctement, offrira un historique de toute l\'activité des élémentaires. Si je l\'avais, je pourrais, avec l\'aide du Cercle terrestre, faire quelque chose pour les arrêter !",
+    ["obj"] = "Apportez le Noyau de la Brasse à Je\'neu Sancrea, à l’Avant-poste de Zoram\'gar, en Orneval.",
+    ["start"] = {
+    },
+    ["end"] = {
+    },
+    ["item"] = {
+      ["Noyau de la Brasse,1"] = "ITEM",
+    },
+  },
+  ["Baron Aquanis,Apportez l"] = {
+    ["id"] = 909,
+    ["min"] = 21,
+    ["lvl"] = 30,
+    ["race"] = 178,
+    ["log"] = "Sur l\'élémentaire d\'eau vaincu, vous trouvez un étrange globe d\'eau. Vous avez la nette impression que l\'objet a absorbé l\'énergie de la créature. À l\'intérieur du globe, vous discernez une eau aux reflets malsains. Le globe lui-même semble insensible à toute forme d\'action physique.$B$BS\'il y a une personne qui puisse comprendre ce qu\'est cet objet, cela ne peut être que Je\'neu Sancrea du Cercle terrestre. Il se trouve dans l\'avant-poste de Zoram\'gar de la Horde, en Orneval.",
+    ["obj"] = "Apportez le Globe d\'eau étrange à Je\'neu Sancrea, à l’Avant-poste de Zoram\'gar, dans Orneval.",
+    ["start"] = {
+    },
+    ["end"] = {
+      ["Je\'neu Sancrea"] = "NPC",
+    },
+    ["item"] = {
+      ["Globe d\'eau étrange,1"] = "ITEM",
+    },
+  },
   ["Un tour sur les quais,Emmenez vo"] = {
     ["id"] = 910,
     ["min"] = 10,
@@ -15265,6 +15295,15 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Porto vieux de 99 ans,1"] = "ITEM",
+    },
+  },
+  ["Onu réfléchit,"] = {
+    ["id"] = 960,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["start"] = {
+    },
+    ["end"] = {
     },
   },
   ["Onu réfléchit,"] = {
@@ -16185,7 +16224,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le nettoyage selon Raene,Trouver la"] = {
     ["id"] = 1026,
-    ["min"] = 20,
+    ["min"] = 18,
     ["lvl"] = 27,
     ["race"] = 77,
     ["pre"] = "Le nettoyage selon Raene,Trouver Sh",
@@ -16203,7 +16242,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le nettoyage selon Raene,Trouver le"] = {
     ["id"] = 1027,
-    ["min"] = 24,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "Le nettoyage selon Raene,Trouver la",
@@ -16239,7 +16278,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le nettoyage selon Raene,Retourner "] = {
     ["id"] = 1029,
-    ["min"] = 24,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "Le nettoyage selon Raene,Retourner ",
@@ -16254,7 +16293,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le nettoyage selon Raene,Trouver un"] = {
     ["id"] = 1030,
-    ["min"] = 25,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "Le nettoyage selon Raene,Retourner ",
@@ -16499,7 +16538,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le nettoyage selon Raene,Tuez Ran D"] = {
     ["id"] = 1045,
-    ["min"] = 26,
+    ["min"] = 18,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Le nettoyage selon Raene,Trouver un",
@@ -16518,7 +16557,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le nettoyage selon Raene,Apporter l"] = {
     ["id"] = 1046,
-    ["min"] = 30,
+    ["min"] = 18,
     ["lvl"] = 30,
     ["race"] = 77,
     ["pre"] = "Le nettoyage selon Raene,Tuez Ran D",
@@ -16677,7 +16716,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le nettoyage selon Raene,Retourner "] = {
     ["id"] = 1055,
-    ["min"] = 24,
+    ["min"] = 18,
     ["lvl"] = 28,
     ["race"] = 77,
     ["pre"] = "Le nettoyage selon Raene,Trouver l\'",
@@ -17084,7 +17123,6 @@ pfDB["quests"]["frFR"] = {
     ["min"] = 19,
     ["lvl"] = 22,
     ["race"] = 77,
-    ["pre"] = "Inaptitude + Produits chimiques = Rigolo,Apportez l",
     ["log"] = "Ça y est, $n. Faites très attention ! Les dispositifs sont montés et prêts à fonctionner.$b$bPrenez ces explicatifs. Ils résument tout ce qu\'il faut savoir sur les détonateurs et les explosifs, et indiquent également où vous devez les placer.$b$bRappelez-vous, le succès de votre mission ne dépend pas de la somme de destruction que vous provoquerez. Le succès du plan A dépend du fait que vous rapportiez les plans d\'ingénierie de la KapitalRisk de l\'intérieur de la scierie au sud du lac de la Combe.",
     ["obj"] = "Récupérer les Plans d\'ingénierie de la KapitalRisk dans la scierie de la Combe des Cisailles.",
     ["start"] = {
@@ -17102,7 +17140,7 @@ pfDB["quests"]["frFR"] = {
     ["min"] = 19,
     ["lvl"] = 22,
     ["race"] = 77,
-    ["pre"] = "Livraison spéciale pour Gaxim,Apportez l",
+    ["pre"] = "Opérations secrètes – Plan A,Récupére",
     ["log"] = "Le plan B est identique au plan A, $n.$b$bNous faisons diversion et nous volons leurs précieuses notes.$b$bLe plus important est d\'obtenir leurs notes… Rappelez-vous de ça.$b$bLes explicatifs que je vous ai déjà fournis indiquent où placer les explosifs. Revenez simplement ici en vie et avec ces notes...",
     ["obj"] = "Récupérer les Notes de la KapitalRisk dans la mine des Cisailles à l\'extrémité est de la Combe des Cisailles.",
     ["start"] = {
@@ -17135,6 +17173,7 @@ pfDB["quests"]["frFR"] = {
     ["min"] = 26,
     ["lvl"] = 28,
     ["race"] = 77,
+    ["pre"] = "Les Anciens blessés,Apporter u",
     ["log"] = "$n, vous avez accompli un noble geste en nous offrant votre aide.$b$bLes Sentinelles d\'Orneval vous récompenseront si vous leur donnez des nouvelles de Gaxim et de moi. Dites-leur que nous sommes bien partis pour stopper la KapitalRisk et soigner la terre.$b$bTrouvez Tara Thenysil à Astranaar ; elle sera ravie de vous voir revenir avec de bonnes nouvelles.",
     ["obj"] = "Retourner voir la Sentinelle Tara Thenysil en Orneval.",
     ["start"] = {
@@ -17167,7 +17206,7 @@ pfDB["quests"]["frFR"] = {
     ["min"] = 22,
     ["lvl"] = 28,
     ["race"] = 77,
-    ["pre"] = "Des nouvelles pour Kaela,Apportez l",
+    ["pre"] = "Esprits enragés,Apporter 8",
     ["log"] = "Il me semble évident que les protecteurs de la vallée, les tréants, ont quelque chose à voir avec le retrait de la KapitalRisk. Malheureusement, même ceux qui étaient autrefois de grands gardiens sont aujourd\'hui corrompus.$b$bGaxim pense que leur corruption est d\'une certaine manière liée aux armes utilisées par les gobelins pendant le combat.$b$bJe lui ai dit que je collecterais un résidu sur un tréant blessé pour qu’il l\'étudie et découvre l’origine du mal.$b$bApportez-moi un morceau de shrapnel pour que le gnome puisse m\'en dire plus...",
     ["obj"] = "Apporter un morceau de Shrapnel corrodé à Kaela Ombrelance, dans les Serres-Rocheuses.",
     ["start"] = {
@@ -17185,6 +17224,7 @@ pfDB["quests"]["frFR"] = {
     ["min"] = 18,
     ["lvl"] = 21,
     ["race"] = 77,
+    ["pre"] = "De garde dans les Serres-Rocheuses,Retrouver ",
     ["log"] = "La situation ici dans les Serres-Rocheuses est suffisamment grave pour qu\'une elfe de la nuit et un gnome travaillent ensemble.$b$bLa KapitalRisk a dévasté cette région et j\'ai passé la majeure partie de mon temps à mettre un terme à cette destruction.$b$bNe jugez pas Gaxim trop vite, il comprend la nécessité de notre travail commun.$b$bSi vous souhaitez nous aider, alors commencez par parler à Gaxim.$b$bJe suis désolée de ne pas encore pouvoir vous renvoyer à Tara avec de bonnes nouvelles. Bientôt peut-être…",
     ["obj"] = "Parler à Gaxim dans les Serres-Rocheuses.",
     ["start"] = {
@@ -17285,6 +17325,7 @@ pfDB["quests"]["frFR"] = {
     ["min"] = 20,
     ["lvl"] = 22,
     ["race"] = 77,
+    ["pre"] = "Opérations secrètes – Plan B,Récupére",
     ["log"] = "$n, apportez ces notes à Kaela. Il est certain qu\'elle voudra en savoir plus à ce propos. Ou du moins ce sera le cas des Sentinelles.$b$bDites-lui à quel point notre victoire a été éclatante, et à quel point nous n\'aurions pu y parvenir sans l\'aide d\'un peu de magie.",
     ["obj"] = "Apportez les Notes de la KapitalRisk à Kaela Ombrelance aux Serres-Rocheuses.",
     ["start"] = {
@@ -19422,7 +19463,7 @@ pfDB["quests"]["frFR"] = {
     ["min"] = 28,
     ["lvl"] = 33,
     ["race"] = 77,
-    ["pre"] = "Un diplomate a disparu,Soumettre ",
+    ["pre"] = "Un diplomate a disparu,Parler à ",
     ["log"] = "Au début de chaque mois, les soldats de marine de Kul Tiras reçoivent leur paye et quittent généralement Theramore pour un autre endroit. Un grand nombre d\'entre eux viennent ici pour les femmes, faire la bringue et passer un bon moment. L\'un de ces groupes vient régulièrement à cette taverne et je crois que ce Hendel en fait partie.$B$BLe commandant Samaul à Theramore devrait vous aider à le trouver si Hendel est toujours par ici. Il est loyal à Portvaillant, mais si vous citez négligemment le nom de Elling, il devrait vous aider... discrètement.",
     ["obj"] = "Trouver le commandant Samaul, dans le marécage d\'Âprefange.",
     ["start"] = {
@@ -19468,9 +19509,8 @@ pfDB["quests"]["frFR"] = {
     ["lvl"] = 38,
     ["race"] = 77,
     ["pre"] = "Un diplomate a disparu,Battre le ",
-    ["obj"] = "Parler à Jaina Portvaillant au marécage d\'Âprefange.",
     ["start"] = {
-      ["Archimage Tervosh"] = "NPC",
+      ["Dame Jaina Portvaillant"] = "NPC",
     },
     ["end"] = {
       ["Dame Jaina Portvaillant"] = "NPC",
@@ -19671,14 +19711,17 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le rapport de Vimaire,Donner le "] = {
     ["id"] = 1288,
-    ["min"] = 33,
+    ["min"] = 32,
     ["lvl"] = 38,
     ["race"] = 77,
+    ["pre"] = "Les déserteurs,Parler au ",
     ["log"] = "Vous avez fait du bon travail, $N, le meilleur que j\'ai vu de la part de quelqu\'un qui n\'est pas de chez nous.$B$BDame Portvaillant a demandé que je la tienne informée de cette situation délicate et je ne lui ai pas parlé depuis longtemps.$B$BJe m\'apprêtais à lui envoyer mon rapport, mais il me semble plus approprié que cela soit vous qui lui parliez. Vous répondrez mieux à ses questions que moi.",
     ["obj"] = "Donner le Rapport de Vimaire à Dame Portvaillant à Theramore.",
     ["start"] = {
+      ["Capitaine Garran Vimaire"] = "NPC",
     },
     ["end"] = {
+      ["Dame Jaina Portvaillant"] = "NPC",
     },
     ["item"] = {
       [",1"] = "ITEM",
@@ -22719,7 +22762,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Un intrus à la Fête de l\'homme d\'osier,Allez voir"] = {
     ["id"] = 1658,
-    ["min"] = 25,
+    ["min"] = 35,
     ["lvl"] = 60,
     ["race"] = 77,
     ["log"] = "J’ai besoin de personnes courageuses pour se rendre aux clairières de Tirisfal, et voir comment se déroule la Fête de l’homme d’osier. Je ne vais pas vous mentir, aller là-bas sera dangereux : les gardes de faction lors de la fête seront exceptionnellement brutaux. Cependant, nous devons absolument connaître l’ampleur des festivités, et la gravité des problèmes que les Réprouvés nous causeront durant la Sanssaint.$B$BSi vous vous sentez d’attaque, dirigez-vous vers Tirisfal et observez la fête. Revenez me voir avec des informations, et je m’assurerai que vous recevrez une compensation convenable.",
@@ -28250,7 +28293,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["L\'or de Cuergo,Trouvez l\'"] = {
     ["id"] = 2882,
-    ["min"] = 42,
+    ["min"] = 40,
     ["lvl"] = 45,
     ["log"] = "Cette carte montre une plage orientée au sud. Sous la carte, des mots élégamment tracés…$B$BAu sud de Gentepression, avec raison$B$BAu sud de la maison$BTrouvez un drapeau, un mât et des os$BCreusez ici, si vous l\'osez$BCreusez et gagnez l\'or de Cuergo !$BUne clé il faut et une clé vous verrez$BLes hommes d\'en face il faudra tuer.",
     ["obj"] = "Trouvez l\'or de Cuergo !",
@@ -28697,7 +28740,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Questions sans réponses,Porter les"] = {
     ["id"] = 2946,
-    ["min"] = 48,
+    ["min"] = 45,
     ["lvl"] = 50,
     ["race"] = 77,
     ["pre"] = "Prodiges d\'Uldum,Parler à ",
@@ -28961,7 +29004,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Liberté pour toutes les créatures,À l’aid"] = {
     ["id"] = 2969,
-    ["min"] = 40,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["log"] = "L\'odieux clan du Totem-sinistre capture des dragons féeriques, $N. Jer\'kai et moi ne savons pas quels desseins ils poursuivent en faisant cela, mais ce n\'est certainement rien de bon.$B$BNous ne sommes pas assez puissants pour combattre le Totem-sinistre dans son camp et libérer les dragons, mais peut-être qu\'avec votre aide...$B$BSi vous êtes d\'accord et avez quelques amis robustes qui voudraient se joindre à vous, allez libérer les créatures de leurs cages grâce à cette clé et assurez-vous qu\'elles restent en vie. Je serai à vos côtés tout le temps ; Jer\'kai, pour sa part, restera ici, au cas où...",
@@ -28975,7 +29018,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Justice de châtiment,Tuer 12 Na"] = {
     ["id"] = 2970,
-    ["min"] = 40,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["log"] = "Comme vous l\'a déjà dit Kindal, nous allons désormais combattre le clan du Totem-sinistre. Ensemble, nous devrions pouvoir affronter quelques taurens, mais nous apprécierions votre aide, si vous êtes d\'accord.$B$BVous avez vu l\'un des camps, en aval ; il y en a encore d\'autres à l\'est. Faites selon vos compétences et techniques mais infligez autant de dégâts possibles aux taurens. Quand ils auront goûté à la piqûre des flèches de Kindal et à vos propres armes, nous nous retrouverons tous ici, pour faire le point.",
@@ -28994,7 +29037,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Justice de châtiment,Apporter l"] = {
     ["id"] = 2972,
-    ["min"] = 42,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["log"] = "Ici, dans les terres sauvages, Kindal et moi n’avons pas grand-chose à vous offrir, mais nous voulons récompenser votre aide. Prenez ma chevalière. Si un jour vous êtes dans les environs de Teldrassil, allez au Temple de la Lune au cœur de Darnassus. Là, vous trouverez ma Grande prêtresse Tyrande Murmevent. L\'anneau lui dira que nous allons bien et que votre histoire est vraie.$B$BNous vous remercions toutes les deux, $N.",
@@ -29082,7 +29125,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Retour à Forgefer,Parler à "] = {
     ["id"] = 2977,
-    ["min"] = 48,
+    ["min"] = 46,
     ["lvl"] = 50,
     ["race"] = 77,
     ["pre"] = "Le Gardien des pierres,Apprendre ",
@@ -30517,7 +30560,7 @@ pfDB["quests"]["frFR"] = {
   ["La corne de la bête,Porter la "] = {
     ["id"] = 3181,
     ["min"] = 40,
-    ["lvl"] = 43,
+    ["lvl"] = 48,
     ["race"] = 77,
     ["log"] = "La corne gigantesque est couverte d\'égratignures et de fissures. Un objet de métal inhabituel s\'est logé sous la surface dure.$B$BAprès de plus amples observations, vous remarquez qu\'il s\'agit d\'une lame de hache brisée. Sur le métal sont gravés les mots suivants :$B$BPropriété de la montagnarde Minigravillon.$B$BQuand vous essayez de déloger la lame, elle s\'effrite en mille morceaux.$B$BOups !",
     ["obj"] = "Porter la Corne Gigantesque de Margol à la Montagnarde Minigravillon.",
@@ -30746,6 +30789,21 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Chope de Nori,1"] = "ITEM",
+    },
+  },
+  ["L\'Éclat luminescent,Aller à C"] = {
+    ["id"] = 3366,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["log"] = "L\'éclat est d\'un vert brillant, et bien que compact, ce qui ressemble à de la fumée tourbillonne juste au-dessous de sa surface. Vous ne pouvez vous empêcher de contempler les profondeurs du cristal, bien qu\'en même temps, vous sentiez qu\'il y réside quelque chose de très inquiétant.$B$BPeut-être devriez-vous voir si quelqu\'un à Cabestan pourrait vous en apprendre plus à propos de cet étrange éclat...",
+    ["obj"] = "Aller à Cabestan pour trouver la raison d’être de l’Éclat de cauchemar.",
+    ["start"] = {
+    },
+    ["end"] = {
+      ["Falla Vent-de-sagesse"] = "NPC",
+    },
+    ["item"] = {
+      ["Eclat luminescent,1"] = "ITEM",
     },
   },
   ["Les pierres de Suntara,Aider Dori"] = {
@@ -31732,6 +31790,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 3526,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 178,
     ["log"] = "La meilleure ingénierie est représentée par deux disciplines : celle des gnomes et celle des gobelins. L\'Ingénierie des gobelins est clairement le choix de tous les ingénieurs brillants. Apprendre à vaincre le monde par l\'utilisation judicieuse d\'explosifs et d\'incroyables mécanismes !$B$B$N, lisez ce manuel. Si vous voulez en apprendre plus, apportez-le à Nixx Elastirouage à Gadgetzan. Mais attention : l\'adhésion à cette discipline est définitive et exclusive, alors soyez $gsûr:sûre; de faire le bon choix !",
     ["obj"] = "Pour en apprendre davantage sur l\'Ingénierie gobeline, apporter le Manuel d\'Ingénierie à Nixx Elastirouage dans Gadgetzan.",
     ["start"] = {
@@ -31833,7 +31892,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le paiement de Magatha à Jediga,Apporter l"] = {
     ["id"] = 3562,
-    ["min"] = 51,
+    ["min"] = 45,
     ["lvl"] = 52,
     ["race"] = 178,
     ["pre"] = "Livraison à Magatha,Apporter l",
@@ -32101,6 +32160,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 3629,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "L\'ingénierie pratiquée au niveau d\'expert connaît deux disciplines : celle des gnomes et celle des gobelins. Je ne mentionne l\'Ingénierie des gobelins que parce que je suis un Maître juste. Ils aiment faire des choses qui explosent et se soucient rarement des conséquences.$B$B$N, lisez ce manuel. Si vous voulez apprendre comment vous faire sauter, apportez-le à Nixx Elastirouage dans Gadgetzan. Mais le choix de cette discipline est définitif et exclut l\'autre, alors soyez $gsûr:sûre; de votre choix !",
     ["obj"] = "Pour en apprendre davantage sur l\'ingénierie gobeline, apporter le Manuel d\'Ingénierie à Nixx Elastirouage dans Gadgetzan.",
     ["start"] = {
@@ -32117,6 +32177,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 3630,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "L\'ingénierie pratiquée à un niveau d\'expert connaît deux disciplines : celle des gnomes et celle des gobelins. L\'ingénierie gnome est de loin supérieure ! Elle consiste à construire de merveilleux dispositifs qui rendent la vie meilleure !$B$B$N, lisez ce manuel. Si vous voulez en apprendre plus sur l\'ingénierie gnome, apportez ce manuel au maître-artisan Suprétincelle dans Forgefer. Mais le choix de cette discipline est définitif et exclut l\'autre, alors soyez $gsûr:sûre; de votre choix !",
     ["obj"] = "Pour en apprendre davantage sur l\'ingénierie gnome, apporter le Manuel d\'Ingénierie au maître-artisan Suprétincelle, à Forgefer.",
     ["start"] = {
@@ -32148,6 +32209,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 3632,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "L\'ingénierie pratiquée à un niveau d\'expert connaît deux disciplines : celle des gnomes et celle des gobelins. L\'ingénierie gnome est de loin supérieure ! Elle consiste à construire de merveilleux dispositifs qui rendent la vie meilleure !$B$B$N, lisez ce manuel. Si vous voulez en apprendre plus sur l\'ingénierie gnome, apportez ce manuel au maître-artisan Suprétincelle dans Forgefer. Mais le choix de cette discipline est définitif et exclut l\'autre, alors soyez $gsûr:sûre; de votre choix !",
     ["obj"] = "Pour en apprendre davantage sur l\'ingénierie gnome, apporter le Manuel d\'Ingénierie au maître-artisan Suprétincelle, à Forgefer.",
     ["start"] = {
@@ -32180,6 +32242,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 3634,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "L\'ingénierie au niveau d\'expert connaît deux disciplines : celle des gnomes et celle des gobelins. Bien que ce soit du gâchis à mon sens, vous devriez vous spécialiser dans celle des gnomes. Ils fabriquent des objets et des gadgets pour soit-disant changer le monde, mais ça fonctionne rarement.$B$B$N, lisez ce manuel. Si ça vous intéresse, apportez-le au maître-artisan Suprétincelle dans Forgefer. Mais le choix de cette discipline est définitif et exclut l\'autre, alors soyez $gsûr:sûre; de votre choix !",
     ["obj"] = "Pour en apprendre davantage sur l\'ingénierie gnome, apporter le Manuel d\'Ingénierie au maître-artisan Suprétincelle, à Forgefer.",
     ["start"] = {
@@ -32196,6 +32259,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 3635,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 178,
     ["log"] = "L\'ingénierie au niveau d\'expert enseigne deux disciplines : celle des gnomes et celle des gobelins. Bien que ce soit du gâchis à mon sens, vous devriez connaître celle des gnomes. Ils fabriquent des objets et des gadgets pour prétendument changer le monde, mais ils fonctionnent rarement.$B$B$N, lisez ce manuel. Si ça vous intéresse, apportez-le à Orguignard Odipnoticus à Baie-du-Butin. Mais attention : l’adhésion à cette discipline est définitive et exclusive, alors soyez $gsûr:sûre; de faire le bon choix !",
     ["obj"] = "Pour en apprendre davantage sur l\'ingénierie gnome, apporter le Manuel d\'Ingénierie à Orguignard Odipnoticus à Baie-du-Butin.",
     ["start"] = {
@@ -32229,6 +32293,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 3637,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 178,
     ["log"] = "L\'ingénierie au niveau d\'expert enseigne deux disciplines : celle des gnomes et celle des gobelins. Bien que ce soit du gâchis à mon sens, vous devriez connaître celle des gnomes. Ils fabriquent des objets et des gadgets pour prétendument changer le monde, mais ils fonctionnent rarement.$B$B$N, lisez ce manuel. Si ça vous intéresse, apportez-le à Oglethorpe Obnoticus à Baie-du-Butin. Mais attention : l\'adhésion à cette discipline est définitive et exclusive, alors soyez $gsûr:sûre; de faire le bon choix !",
     ["obj"] = "Pour en apprendre davantage sur l\'Ingénierie gnome, apporter le Manuel d\'Ingénierie à Oglethorpe Obnoticus à Baie-du-Butin.",
     ["start"] = {
@@ -32909,7 +32974,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Un orphelin à la recherche d\'un foyer,Parler à "] = {
     ["id"] = 3841,
-    ["min"] = 45,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "Justice de châtiment,Apporter l",
@@ -32927,7 +32992,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Une courte incubation,Apporter 2"] = {
     ["id"] = 3842,
-    ["min"] = 40,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "Un orphelin à la recherche d\'un foyer,Parler à ",
@@ -32945,7 +33010,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Un tout nouveau membre dans la famille,Emmenez vo"] = {
     ["id"] = 3843,
-    ["min"] = 42,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "Une courte incubation,Apporter 2",
@@ -33112,7 +33177,7 @@ pfDB["quests"]["frFR"] = {
     ["min"] = 3,
     ["lvl"] = 4,
     ["race"] = 77,
-    ["pre"] = "Les loups derrière la frontière,Apportez 8",
+    ["pre"] = "La confrérie des voleurs,Apportez 8",
     ["log"] = "Votre fiabilité est démontrée, $c. Vous n\'avez pas peur de vous salir les mains, hein ?$B$BJ\'ai une amie du nom de Milly Osworth, elle a un gros problème. Elle et son chariot se trouvent de l\'autre côté de l\'abbaye, près de l\'étable. Je suis sûr que vos deux bras devraient lui être utiles, $N.",
     ["obj"] = "Parler à Milly Osworth.",
     ["start"] = {
@@ -34306,7 +34371,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Visite à Gregan,Apporter u"] = {
     ["id"] = 4142,
-    ["min"] = 52,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 77,
     ["pre"] = "Muigin et Larion,Récolter ",
@@ -34324,7 +34389,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Brouillard maléfique,Récupére"] = {
     ["id"] = 4143,
-    ["min"] = 50,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 77,
     ["pre"] = "Visite à Gregan,Apporter u",
@@ -34342,7 +34407,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Les pousses de Pétales-de-sang,"] = {
     ["id"] = 4144,
-    ["min"] = 53,
+    ["min"] = 50,
     ["lvl"] = 60,
     ["race"] = 77,
     ["pre"] = "Brouillard maléfique,Récupére",
@@ -34358,7 +34423,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Larion et Muigin,Chasser 5 "] = {
     ["id"] = 4145,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 178,
     ["log"] = "Vous voyez Muigin ? C’est de SA faute si nous sommes perdus !$B$BJe connaissais le chemin, cet idiot a insisté pour nous montrer son raccourci et nous voilà ici !$B$BPour ne rien arranger, il a envoyé ses parasites qui m’importunent. Je suis dans un tel état de fureur qu’il risque de se passer du temps avant que je ne lui adresse de nouveau la parole, mais il faut trouver une solution à ces parasites qui sont insupportables.$B$BEssayons d’en réduire le nombre : allez donc chasser quelques Pétales-de-sang, puis revenez me voir.",
@@ -34378,7 +34443,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Carburant de baguette,Remettre l"] = {
     ["id"] = 4146,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 178,
     ["pre"] = "Atelier de Marvon,Se rendre ",
@@ -34397,7 +34462,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Atelier de Marvon,Se rendre "] = {
     ["id"] = 4147,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 52,
     ["race"] = 178,
     ["pre"] = "Larion et Muigin,Chasser 5 ",
@@ -34446,6 +34511,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 4181,
     ["min"] = 30,
     ["lvl"] = 47,
+    ["race"] = 77,
     ["log"] = "La meilleure ingénierie est représentée par deux disciplines : celle des gnomes et celle des gobelins. Je ne mentionne l\'ingénierie gobeline que par souci d’objectivité. Ces gens-là aiment concevoir des choses qui explosent, en se souciant rarement de ce qui se trouve alentour, et même pas d\'eux.$B$BLisez ce manuel, $N. Si vous voulez apprendre à vous faire sauter le caisson, alors apportez-le à Nixx Elastirouage à Gadgetzan. Et n’oubliez pas : l\'adhésion à l\'une de ces disciplines est irrévocable. Choisir telle discipline aujourd’hui interdit de changer d’avis par la suite. Aussi réfléchissez bien avant d\'accomplir cette tâche.",
     ["obj"] = "Apporter le Manuel d\'ingénierie à Nixx Elastirouage à Gadgetzan si vous souhaitez en apprendre davantage sur l\'ingénierie gobeline.",
     ["start"] = {
@@ -34930,7 +34996,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le Pylône ouest,Découvrir"] = {
     ["id"] = 4288,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Cristaux de puissance,Récupére",
     ["log"] = "Pour l\'heure, mes expériences n\'ont débouché sur aucun résultat positif, $N. Je ne peux qu\'espérer que vous découvrirez l\'un des pylônes dont j\'ai entendu parler.$B$BPeut-être que si nous combinons différentes couleurs… mais je m\'avance trop. Avant toute chose, trouvez-les !$B$B$N, cherchez dans la partie ouest du cratère, on dit qu’un pylône s\'y trouve.",
@@ -35079,7 +35145,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Nourriture pour bébé,Apporter 5"] = {
     ["id"] = 4297,
-    ["min"] = 44,
+    ["min"] = 38,
     ["lvl"] = 47,
     ["race"] = 77,
     ["pre"] = "Un tout nouveau membre dans la famille,Emmenez vo",
@@ -35097,7 +35163,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["L\'amour d\'un parent,Parler à "] = {
     ["id"] = 4298,
-    ["min"] = 45,
+    ["min"] = 38,
     ["lvl"] = 48,
     ["race"] = 77,
     ["pre"] = "Nourriture pour bébé,Apporter 5",
@@ -35145,7 +35211,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Ceci explique cela,Parler à "] = {
     ["id"] = 4321,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["log"] = "L’information que vous m’avez transmise à propos des pylônes est très intéressante...$B$BLaissez-moi réfléchir à certaines choses, $N. Revenez me voir dans un moment, je devrais pouvoir vous donner les réponses que vous cherchez.",
     ["obj"] = "Parler à J.D. Collie dans un moment.",
@@ -35278,7 +35344,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Cristal de restauration,"] = {
     ["id"] = 4381,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Ceci explique cela,Parler à ",
     ["start"] = {
@@ -35294,7 +35360,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Cristal de concentration,"] = {
     ["id"] = 4382,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Ceci explique cela,Parler à ",
     ["start"] = {
@@ -35310,7 +35376,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Cristal de protection,"] = {
     ["id"] = 4383,
-    ["min"] = 48,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Ceci explique cela,Parler à ",
     ["start"] = {
@@ -35326,7 +35392,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Cristal de réduction,"] = {
     ["id"] = 4384,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Ceci explique cela,Parler à ",
     ["start"] = {
@@ -35342,7 +35408,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Cristal d\'explosion,"] = {
     ["id"] = 4385,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Ceci explique cela,Parler à ",
     ["start"] = {
@@ -35358,7 +35424,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Cristal de rétribution,"] = {
     ["id"] = 4386,
-    ["min"] = 53,
+    ["min"] = 47,
     ["lvl"] = 53,
     ["pre"] = "Ceci explique cela,Parler à ",
     ["start"] = {
@@ -40871,7 +40937,7 @@ pfDB["quests"]["frFR"] = {
   ["Poisson dans un seau,"] = {
     ["id"] = 5421,
     ["min"] = 25,
-    ["lvl"] = 25,
+    ["lvl"] = 1,
     ["race"] = 178,
     ["start"] = {
       ["Jinar\'Zillen"] = "NPC",
@@ -43960,7 +44026,7 @@ pfDB["quests"]["frFR"] = {
     ["min"] = 10,
     ["lvl"] = 10,
     ["class"] = 4,
-    ["race"] = 77,
+    ["race"] = 8,
     ["log"] = "Salut, jeune adepte de la chasse. Vous me semblez assez habile pour apprivoiser une bête et en faire votre compagnon.$B$BVous devez aller voir Dazalar, à Dolanaar. Il vous mettra sur la voie, et vous montrera comment avoir votre propre familier.",
     ["obj"] = "Parler à Dazalar, à Dolanaar.",
     ["start"] = {
@@ -44426,7 +44492,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Allié des Grumegueules,Grifleur v"] = {
     ["id"] = 6131,
-    ["min"] = 45,
+    ["min"] = 61,
     ["lvl"] = 48,
     ["log"] = "Les Grumegueules sont les seuls furbolgs à avoir résisté à la corruption. Pourtant, de nombreuses races exécutent maintenant tous les furbolgs, sans distinction, sans même prendre le temps de s\'assure qu\'ils sont amis ou des ennemis. Pour cette raison, les Grumegueules sont devenus farouches et ne font plus confiance à personne.$B$BVoulez-vous faire vos preuves et faire montre de courage ? Si vous forcez la tribu corrompue des Mort-bois à battre en retraite, nous vous considérerons peut-être comme un être digne de confiance. Vous trouverez les guerriers, les guides et les jardiniers Mort-bois plus bas vers le sud.",
     ["obj"] = "Grifleur veut que vous prouviez votre valeur en tuant 5 Guerriers Mort-bois, 5 Guides Mort-bois et 5 Jardiniers Mort-bois.",
@@ -44435,11 +44501,6 @@ pfDB["quests"]["frFR"] = {
     },
     ["end"] = {
       ["Grifleur"] = "NPC",
-    },
-    ["spawn"] = {
-      ["Guerrier Mort-bois,5"] = "NPC",
-      ["Guide Mort-bois,5"] = "NPC",
-      ["Jardinier Mort-bois,5"] = "NPC",
     },
   },
   ["Faites-moi sortir de là !,Escorter M"] = {
@@ -44713,8 +44774,8 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le livre de compte d\'Augustus,Apporter l"] = {
     ["id"] = 6164,
-    ["min"] = 10,
-    ["lvl"] = 10,
+    ["min"] = 50,
+    ["lvl"] = 55,
     ["log"] = "Je suis prêt à faire affaire ! Qu\'est-ce que vous voulez ?$B$BOh attendez !... Je ne peux pas ouvrir le magasin sans mon livre de compte. Comment puis-je suivre les transactions sans mon livre de compte ?$B$BJ\'ai dû le laisser en ville. J\'avais une chambre à l\'auberge... Le livre doit y être.$B$BRapportez-moi mon livre. Je vous en prie, rapportez-le-moi ! Apportez-moi mon livre et vous verrez ! J\'ouvrirai le magasin et vous verrez que mes prix sont FOUS !",
     ["obj"] = "Apporter le Livre de compte d\'Augustus à Augustus le Touché à Val-Terreur.",
     ["start"] = {
@@ -46268,7 +46329,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Vous êtes trop bon,Vous pense"] = {
     ["id"] = 6608,
-    ["min"] = 40,
+    ["min"] = 35,
     ["lvl"] = 45,
     ["race"] = 178,
     ["log"] = "Lumak ne peut plus enseigner à $N. Vous trop bon ! Vous trouver ami de Lumak, Nat Pagle. Est humain, mais pas manger ! Est ami de Lumak ! Nat apprend vous à mieux pêcher.$B$BTrouver Nat dans le marécage d\'Âprefange, au sud de ville de Humie, Thermoroquelquechosecommeça. Nat sûrement en train de pêcher. Partir maintenant !",
@@ -46282,7 +46343,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Il ne me reste rien !,Aller à K"] = {
     ["id"] = 6609,
-    ["min"] = 41,
+    ["min"] = 35,
     ["lvl"] = 45,
     ["race"] = 77,
     ["log"] = "Bon sang, je suis un nain ! Je n\'ai pas été conçu pour pêcher ! Je veux dire, regardez-moi ! Je suis pratiquement fait en pierres.$B$BJe n\'ai rien laissé, je vous ai tout transmis. Je vous ai appris tout ce que je sais, flip flop !$B$BVous avez tout ? Oh, excellent ! J\'ai un vieil ami sur Kalimdor qui peut vous aider. Il s\'appelle Nat Pagle, un garçon très bien. Trouvez-le sur les îles au sud de Theramore. Allez !",
@@ -46642,7 +46703,7 @@ pfDB["quests"]["frFR"] = {
     ["min"] = 10,
     ["lvl"] = 10,
     ["class"] = 4,
-    ["race"] = 77,
+    ["race"] = 8,
     ["log"] = "Salut, jeune adepte de la chasse. Vous me semblez assez habile pour apprivoiser une bête et en faire votre compagnon.$B$BVous devez aller voir Dazalar, à Dolanaar. Il vous mettra sur la voie, et vous montrera comment avoir votre propre familier.",
     ["obj"] = "Parler à Dazalar, à Dolanaar.",
     ["start"] = {
@@ -49990,9 +50051,12 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 7660,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Ogunaro Mène-loup"] = "NPC",
     },
     ["end"] = {
+      ["Ogunaro Mène-loup"] = "NPC",
     },
     ["item"] = {
       ["Cor du loup arctique,1"] = "ITEM",
@@ -50002,9 +50066,12 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 7661,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Ogunaro Mène-loup"] = "NPC",
     },
     ["end"] = {
+      ["Ogunaro Mène-loup"] = "NPC",
     },
     ["item"] = {
       ["Cor du loup rouge,1"] = "ITEM",
@@ -50014,9 +50081,12 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 7662,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Harb Sabot-griffu"] = "NPC",
     },
     ["end"] = {
+      ["Harb Sabot-griffu"] = "NPC",
     },
     ["item"] = {
       ["Kodo bleu,1"] = "ITEM",
@@ -50026,9 +50096,12 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 7663,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Harb Sabot-griffu"] = "NPC",
     },
     ["end"] = {
+      ["Harb Sabot-griffu"] = "NPC",
     },
     ["item"] = {
       ["Kodo vert,1"] = "ITEM",
@@ -50038,9 +50111,12 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 7664,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["end"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["item"] = {
       ["Sifflet de raptor ivoire,1"] = "ITEM",
@@ -50050,9 +50126,12 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 7665,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 178,
     ["start"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["end"] = {
+      ["Zjolnir"] = "NPC",
     },
     ["item"] = {
       ["Sifflet de raptor rouge tacheté,1"] = "ITEM",
@@ -50095,9 +50174,12 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 7671,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Lelanai"] = "NPC",
     },
     ["end"] = {
+      ["Lelanai"] = "NPC",
     },
     ["item"] = {
       ["Rênes d\'ancien sabre-de-givre,1"] = "ITEM",
@@ -50107,9 +50189,12 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 7672,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Lelanai"] = "NPC",
     },
     ["end"] = {
+      ["Lelanai"] = "NPC",
     },
     ["item"] = {
       ["Rênes de sabre-de-nuit,1"] = "ITEM",
@@ -50119,9 +50204,12 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 7673,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Veron Distillambre"] = "NPC",
     },
     ["end"] = {
+      ["Veron Distillambre"] = "NPC",
     },
     ["item"] = {
       ["Bélier de givre,1"] = "ITEM",
@@ -50131,9 +50219,12 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 7674,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Veron Distillambre"] = "NPC",
     },
     ["end"] = {
+      ["Veron Distillambre"] = "NPC",
     },
     ["item"] = {
       ["Bélier noir,1"] = "ITEM",
@@ -50143,9 +50234,12 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 7675,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Milli Siffleplume"] = "NPC",
     },
     ["end"] = {
+      ["Milli Siffleplume"] = "NPC",
     },
     ["item"] = {
       ["Mécanotrotteur bleu clair modèle A,1"] = "ITEM",
@@ -50155,23 +50249,27 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 7676,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Milli Siffleplume"] = "NPC",
     },
     ["end"] = {
+      ["Milli Siffleplume"] = "NPC",
     },
     ["item"] = {
       ["Mécanotrotteur blanc modèle B,1"] = "ITEM",
     },
   },
-  ["Echange d\'étalon blanc,If you bri"] = {
+  ["Echange d\'étalon blanc,"] = {
     ["id"] = 7677,
     ["min"] = 60,
-    ["lvl"] = 60,
-    ["log"] = "If you bring me your white stallion, I\'ll trade you for one from the new herd. The new horse will be just as fast as your old one, but have a different look to it. You can look at the swift steeds here to see what it will look like.$B$B$BMUST PAY 500 Gold too....",
-    ["obj"] = "If you bring me your white stallion, I\'ll trade you for one from the new herd. The new horse will be just as fast as your old one, but have a different look to it. You can look at the swift steeds here to see what it will look like.$B$BMUST PAY 500 Gold too....",
+    ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Katie Hunter"] = "NPC",
     },
     ["end"] = {
+      ["Katie Hunter"] = "NPC",
     },
     ["item"] = {
       ["Bride d\'étalon blanc,1"] = "ITEM",
@@ -50181,9 +50279,12 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 7678,
     ["min"] = 60,
     ["lvl"] = 1,
+    ["race"] = 77,
     ["start"] = {
+      ["Katie Hunter"] = "NPC",
     },
     ["end"] = {
+      ["Katie Hunter"] = "NPC",
     },
     ["item"] = {
       ["Bride de palomino,1"] = "ITEM",
@@ -50530,6 +50631,9 @@ pfDB["quests"]["frFR"] = {
     ["end"] = {
       ["Marque de Drakkisath"] = "OBJECT",
     },
+    ["item"] = {
+      ["Instructions de Main-noire,1"] = "ITEM",
+    },
   },
   ["Le seigneur de Rochenoire,Apporter l"] = {
     ["id"] = 7781,
@@ -50610,9 +50714,8 @@ pfDB["quests"]["frFR"] = {
   },
   ["Tonneraan le Cherchevent,Pour libé"] = {
     ["id"] = 7786,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["pre"] = "Examiner le Calice,Examiner l",
     ["log"] = "Je vous ai dit tout ce que je sais, $N. C\'est à vous de trouver l\'élémentium. C\'est à vous de détruire la forme physique du Seigneur du feu.$B$BSi vous y parvenez, vous recevrez la bénédiction de Tonneraan.",
     ["obj"] = "Pour libérer Tonneraan le Cherchevent de sa prison, vous devez présenter au généralissime Demitrian les moitiés droite et gauche des Liens du Cherchevent, 10 barres d\'élémentium, et l\'Essence du Seigneur du feu.",
     ["start"] = {
@@ -50621,17 +50724,12 @@ pfDB["quests"]["frFR"] = {
     ["end"] = {
       ["Généralissime Demitrian"] = "NPC",
     },
-    ["item"] = {
-      ["Barre d\'élémentium,10"] = "ITEM",
-      ["Essence du Seigneur du feu,1"] = "ITEM",
-      ["Liens du Cherchevent,1"] = "ITEM",
-      ["Liens du Cherchevent,1"] = "ITEM",
-    },
   },
   ["Eveille-toi, Lame-tonnerre !,Présenter"] = {
     ["id"] = 7787,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Tonneraan le Cherchevent,Pour libé",
     ["pre"] = "Tonneraan le Cherchevent,Pour libé",
     ["log"] = "Vous avez vaincu le Cherchevent. Prenez la lame endormie et obligez cet immonde menteur, Demitrian, à utiliser les matériaux que vous lui avez fourni pour sa trahison. Obligez-le à éveiller Lame-tonnerre.",
     ["obj"] = "Présenter la Lame du baiser du vent dormante au généralissime Demitrian.",
@@ -50644,38 +50742,21 @@ pfDB["quests"]["frFR"] = {
       ["Lame du baiser du vent dormante,1"] = "ITEM",
     },
   },
-  ["Triomphez des envahisseurs !,Entrez dan"] = {
-    ["id"] = 7788,
-    ["min"] = 20,
-    ["lvl"] = 29,
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8081,
+    ["min"] = 50,
+    ["lvl"] = 55,
     ["race"] = 77,
-    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le fort d\'Aile-argent. Repoussez les envahisseurs de la Horde.$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
-    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Farsong au bosquet d\'Aile-argent.",
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["start"] = {
-      ["Sentinelle Chanteloin"] = "NPC",
+      ["Sergent Maclear"] = "NPC",
     },
     ["end"] = {
-      ["Sentinelle Chanteloin"] = "NPC",
+      ["Sergent Maclear"] = "NPC",
     },
     ["item"] = {
-      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
-    },
-  },
-  ["Écrasez les usurpateurs d\'Aile-argent,Entrez dan"] = {
-    ["id"] = 7789,
-    ["min"] = 20,
-    ["lvl"] = 29,
-    ["race"] = 178,
-    ["log"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
-    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
-    ["start"] = {
-      ["Capitaine Fracasse-crâne"] = "NPC",
-    },
-    ["end"] = {
-      ["Capitaine Fracasse-crâne"] = "NPC",
-    },
-    ["item"] = {
-      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
     },
   },
   ["Claiming Arathi Basin,Bring 3 Ar"] = {
@@ -51557,98 +51638,45 @@ pfDB["quests"]["frFR"] = {
       ["Kelm Hargunth"] = "NPC",
     },
   },
-  ["Triomphez des envahisseurs !,Entrez dan"] = {
-    ["id"] = 7871,
-    ["min"] = 30,
-    ["lvl"] = 39,
-    ["race"] = 77,
-    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le fort d\'Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
-    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
-    ["start"] = {
-      ["Sentinelle Chanteloin"] = "NPC",
-    },
-    ["end"] = {
-      ["Sentinelle Chanteloin"] = "NPC",
-    },
-    ["item"] = {
-      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
-    },
-  },
-  ["Triomphez des envahisseurs !,Entrez dan"] = {
-    ["id"] = 7872,
-    ["min"] = 40,
-    ["lvl"] = 49,
-    ["race"] = 77,
-    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le Fort Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
-    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
-    ["start"] = {
-      ["Sentinelle Chanteloin"] = "NPC",
-    },
-    ["end"] = {
-      ["Sentinelle Chanteloin"] = "NPC",
-    },
-    ["item"] = {
-      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
-    },
-  },
-  ["Triomphez des envahisseurs !,Entrez dan"] = {
-    ["id"] = 7873,
+  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
+    ["id"] = 8080,
     ["min"] = 50,
     ["lvl"] = 59,
     ["race"] = 77,
-    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le fort d\'Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
-    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
+    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
     ["start"] = {
-      ["Sentinelle Chanteloin"] = "NPC",
+      ["Sergent Maclear"] = "NPC",
     },
     ["end"] = {
-      ["Sentinelle Chanteloin"] = "NPC",
+      ["Sergent Maclear"] = "NPC",
     },
     ["item"] = {
-      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
+      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
     },
   },
-  ["Écrasez les usurpateurs d\'Aile-argent,Entrez dan"] = {
-    ["id"] = 7874,
-    ["min"] = 30,
-    ["lvl"] = 39,
-    ["race"] = 178,
-    ["log"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
-    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
-    ["start"] = {
-      ["Capitaine Fracasse-crâne"] = "NPC",
-    },
-    ["end"] = {
-      ["Capitaine Fracasse-crâne"] = "NPC",
-    },
-    ["item"] = {
-      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
-    },
-  },
-  ["Écrasez les usurpateurs d\'Aile-argent,Entrez dan"] = {
-    ["id"] = 7875,
-    ["min"] = 40,
-    ["lvl"] = 49,
-    ["race"] = 178,
-    ["log"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
-    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
-    ["start"] = {
-      ["Capitaine Fracasse-crâne"] = "NPC",
-    },
-    ["end"] = {
-      ["Capitaine Fracasse-crâne"] = "NPC",
-    },
-    ["item"] = {
-      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
-    },
-  },
-  ["Écrasez les usurpateurs d\'Aile-argent,Entrez dan"] = {
-    ["id"] = 7876,
+  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
+    ["id"] = 8080,
     ["min"] = 50,
-    ["lvl"] = 59,
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Marque d\'honneur,"] = {
+    ["id"] = 7925,
+    ["min"] = 20,
+    ["lvl"] = 25,
     ["race"] = 178,
-    ["log"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
-    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
     ["start"] = {
       ["Capitaine Fracasse-crâne"] = "NPC",
     },
@@ -51656,7 +51684,147 @@ pfDB["quests"]["frFR"] = {
       ["Capitaine Fracasse-crâne"] = "NPC",
     },
     ["item"] = {
-      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
+    },
+  },
+  ["Marque d\'honneur,You obtain"] = {
+    ["id"] = 7925,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["pre"] = "Écrasez les usurpateurs d\'Aile-argent,Entrez dan",
+    ["pre"] = "Écrasez les usurpateurs d\'Aile-argent,Entrez dan",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
+    ["obj"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
+    },
+  },
+  ["Marque d\'honneur,"] = {
+    ["id"] = 7924,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
+    },
+  },
+  ["Marque d\'honneur,You obtain"] = {
+    ["id"] = 7924,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["pre"] = "Écrasez les usurpateurs d\'Aile-argent,Entrez dan",
+    ["pre"] = "Écrasez les usurpateurs d\'Aile-argent,Entrez dan",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
+    ["obj"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
+    },
+  },
+  ["Marque d\'honneur,You obtain"] = {
+    ["id"] = 7922,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["pre"] = "Écrasez les usurpateurs d\'Aile-argent,Entrez dan",
+    ["pre"] = "Écrasez les usurpateurs d\'Aile-argent,Entrez dan",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
+    ["obj"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
+    },
+  },
+  ["Marque d\'honneur,"] = {
+    ["id"] = 7923,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
+    },
+  },
+  ["Marque d\'honneur,You obtain"] = {
+    ["id"] = 7923,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["pre"] = "Écrasez les usurpateurs d\'Aile-argent,Entrez dan",
+    ["pre"] = "Écrasez les usurpateurs d\'Aile-argent,Entrez dan",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
+    ["obj"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
+    },
+  },
+  ["Talismans de vaillance,You obtain"] = {
+    ["id"] = 7921,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["pre"] = "Triomphez des envahisseurs !,Entrez dan",
+    ["pre"] = "Triomphez des envahisseurs !,Entrez dan",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
+    ["obj"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
+    },
+  },
+  ["Marque d\'honneur,"] = {
+    ["id"] = 7922,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
     },
   },
   ["Le trésor des Shen\'dralar,Retournez "] = {
@@ -52241,6 +52409,7 @@ pfDB["quests"]["frFR"] = {
     ["start"] = {
     },
     ["end"] = {
+      [""] = "OBJECT",
     },
     ["item"] = {
       ["Prédiction de Sayge n°25,1"] = "ITEM",
@@ -52914,21 +53083,53 @@ pfDB["quests"]["frFR"] = {
       ["Casaque primordiale hakkari,1"] = "ITEM",
     },
   },
-  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
-    ["id"] = 8080,
-    ["min"] = 50,
-    ["lvl"] = 59,
+  ["Talismans de vaillance,"] = {
+    ["id"] = 7888,
+    ["min"] = 40,
+    ["lvl"] = 45,
     ["race"] = 77,
-    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
-    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
     ["start"] = {
-      ["Sergent Maclear"] = "NPC",
+      ["Sentinelle Chanteloin"] = "NPC",
     },
     ["end"] = {
-      ["Sergent Maclear"] = "NPC",
+      ["Sentinelle Chanteloin"] = "NPC",
     },
     ["item"] = {
-      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
+    },
+  },
+  ["Talismans de vaillance,You obtain"] = {
+    ["id"] = 7888,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["pre"] = "Triomphez des envahisseurs !,Entrez dan",
+    ["pre"] = "Triomphez des envahisseurs !,Entrez dan",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
+    ["obj"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
+    },
+  },
+  ["Talismans de vaillance,"] = {
+    ["id"] = 7921,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
     },
   },
   ["Le caillou de Kajaro,"] = {
@@ -53265,21 +53466,57 @@ pfDB["quests"]["frFR"] = {
       ["Nécromaître Dwire"] = "NPC",
     },
   },
-  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
-    ["id"] = 8123,
+  ["Talismans de vaillance,You obtain"] = {
+    ["id"] = 7886,
     ["min"] = 50,
-    ["lvl"] = 59,
-    ["race"] = 178,
-    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de tous les peuples de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez $gemparé:emparée;.",
-    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["pre"] = "Triomphez des envahisseurs !,Entrez dan",
+    ["pre"] = "Triomphez des envahisseurs !,Entrez dan",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
+    ["obj"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
     ["start"] = {
-      ["Nécrotraqueur Mortis"] = "NPC",
+      ["Sentinelle Chanteloin"] = "NPC",
     },
     ["end"] = {
-      ["Nécrotraqueur Mortis"] = "NPC",
+      ["Sentinelle Chanteloin"] = "NPC",
     },
     ["item"] = {
-      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
+    },
+  },
+  ["Talismans de vaillance,"] = {
+    ["id"] = 7887,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
+    },
+  },
+  ["Talismans de vaillance,You obtain"] = {
+    ["id"] = 7887,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["pre"] = "Triomphez des envahisseurs !,Entrez dan",
+    ["pre"] = "Triomphez des envahisseurs !,Entrez dan",
+    ["log"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
+    ["obj"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
     },
   },
   ["Le talisman d\'ombre zandalarien,"] = {
@@ -53464,106 +53701,104 @@ pfDB["quests"]["frFR"] = {
       ["Ramure de coursier parfaite,2"] = "ITEM",
     },
   },
-  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
-    ["id"] = 8154,
+  ["Talismans de vaillance,"] = {
+    ["id"] = 7886,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
+    },
+  },
+  ["Écrasez les usurpateurs d\'Aile-argent,Entrez dan"] = {
+    ["id"] = 7876,
+    ["min"] = 50,
+    ["lvl"] = 59,
+    ["race"] = 178,
+    ["log"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Écrasez les usurpateurs d\'Aile-argent,Entrez dan"] = {
+    ["id"] = 7876,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["log"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
+    },
+  },
+  ["Écrasez les usurpateurs d\'Aile-argent,Entrez dan"] = {
+    ["id"] = 7875,
     ["min"] = 40,
-    ["lvl"] = 49,
-    ["race"] = 77,
-    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
-    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["log"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
     ["start"] = {
-      ["Sergent Maclear"] = "NPC",
+      ["Capitaine Fracasse-crâne"] = "NPC",
     },
     ["end"] = {
-      ["Sergent Maclear"] = "NPC",
+      ["Capitaine Fracasse-crâne"] = "NPC",
     },
     ["item"] = {
-      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
     },
   },
-  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
-    ["id"] = 8155,
-    ["min"] = 20,
-    ["lvl"] = 29,
-    ["race"] = 77,
-    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
-    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
-    ["start"] = {
-      ["Sergent Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Sergent Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
-    },
-  },
-  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
-    ["id"] = 8156,
+  ["Écrasez les usurpateurs d\'Aile-argent,Entrez dan"] = {
+    ["id"] = 7874,
     ["min"] = 30,
     ["lvl"] = 39,
-    ["race"] = 77,
-    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
-    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
-    ["start"] = {
-      ["Sergent Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Sergent Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
-    },
-  },
-  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
-    ["id"] = 8160,
-    ["min"] = 40,
-    ["lvl"] = 49,
     ["race"] = 178,
-    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de toutes les races de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le Refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
-    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au Traqueur noir Mortis au Trépas-d\'Orgrim.",
+    ["log"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
     ["start"] = {
-      ["Nécrotraqueur Mortis"] = "NPC",
+      ["Capitaine Fracasse-crâne"] = "NPC",
     },
     ["end"] = {
-      ["Nécrotraqueur Mortis"] = "NPC",
+      ["Capitaine Fracasse-crâne"] = "NPC",
     },
     ["item"] = {
-      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
     },
   },
-  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
-    ["id"] = 8161,
+  ["Écrasez les usurpateurs d\'Aile-argent,Entrez dan"] = {
+    ["id"] = 7874,
     ["min"] = 30,
-    ["lvl"] = 39,
+    ["lvl"] = 35,
     ["race"] = 178,
-    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de toutes les races de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le Refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
-    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au Traqueur noir Mortis au Trépas-d\'Orgrim.",
+    ["log"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
     ["start"] = {
-      ["Nécrotraqueur Mortis"] = "NPC",
+      ["Capitaine Fracasse-crâne"] = "NPC",
     },
     ["end"] = {
-      ["Nécrotraqueur Mortis"] = "NPC",
+      ["Capitaine Fracasse-crâne"] = "NPC",
     },
     ["item"] = {
-      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
-    },
-  },
-  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
-    ["id"] = 8162,
-    ["min"] = 20,
-    ["lvl"] = 29,
-    ["race"] = 178,
-    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de toutes les races de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le Refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
-    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
-    ["start"] = {
-      ["Nécrotraqueur Mortis"] = "NPC",
-    },
-    ["end"] = {
-      ["Nécrotraqueur Mortis"] = "NPC",
-    },
-    ["item"] = {
-      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
     },
   },
   ["Les envahisseurs de la vallée d\'Alterac,Apportez 3"] = {
@@ -53750,7 +53985,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Puis-je avoir un prospectus sur la pêche ?,"] = {
     ["id"] = 8228,
-    ["min"] = 55,
+    ["min"] = 35,
     ["lvl"] = 60,
     ["start"] = {
       ["Barrus"] = "NPC",
@@ -53761,7 +53996,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Puis-je avoir un prospectus sur la pêche ?,"] = {
     ["id"] = 8229,
-    ["min"] = 55,
+    ["min"] = 35,
     ["lvl"] = 60,
     ["start"] = {
       ["Grinkle"] = "NPC",
@@ -54116,7 +54351,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["La menace de Ravassombre,Servez-vou"] = {
     ["id"] = 8258,
-    ["min"] = 60,
+    ["min"] = 58,
     ["lvl"] = 60,
     ["class"] = 64,
     ["race"] = 178,
@@ -54205,64 +54440,72 @@ pfDB["quests"]["frFR"] = {
       ["Rutherford Twing"] = "NPC",
     },
   },
-  ["Les rubans de sacrifice,Bring the "] = {
-    ["id"] = 8266,
-    ["min"] = 10,
-    ["lvl"] = 39,
-    ["race"] = 178,
-    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-    ["obj"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
-    ["start"] = {
-    },
-    ["end"] = {
-    },
-    ["item"] = {
-      ["Ruban de sacrifice du goulet des Chanteguerres,1"] = "ITEM",
-    },
-  },
-  ["Les rubans de sacrifice,Bring the "] = {
-    ["id"] = 8267,
-    ["min"] = 40,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-    ["obj"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
-    ["start"] = {
-    },
-    ["end"] = {
-    },
-    ["item"] = {
-      ["Ruban de sacrifice du goulet des Chanteguerres,1"] = "ITEM",
-    },
-  },
-  ["Les rubans de sacrifice,Bring the "] = {
-    ["id"] = 8268,
-    ["min"] = 10,
-    ["lvl"] = 39,
+  ["Triomphez des envahisseurs !,Entrez dan"] = {
+    ["id"] = 7873,
+    ["min"] = 50,
+    ["lvl"] = 59,
     ["race"] = 77,
-    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-    ["obj"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
+    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le fort d\'Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
     ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
     },
     ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
     },
     ["item"] = {
-      ["Ruban de sacrifice du goulet des Chanteguerres,1"] = "ITEM",
+      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
     },
   },
-  ["Les rubans de sacrifice,Bring the "] = {
-    ["id"] = 8269,
-    ["min"] = 40,
-    ["lvl"] = 60,
+  ["Triomphez des envahisseurs !,Entrez dan"] = {
+    ["id"] = 7873,
+    ["min"] = 50,
+    ["lvl"] = 55,
     ["race"] = 77,
-    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-    ["obj"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
+    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le fort d\'Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
     ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
     },
     ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
     },
     ["item"] = {
-      ["Ruban de sacrifice du goulet des Chanteguerres,1"] = "ITEM",
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
+    },
+  },
+  ["Triomphez des envahisseurs !,Entrez dan"] = {
+    ["id"] = 7872,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 77,
+    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le Fort Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Triomphez des envahisseurs !,Entrez dan"] = {
+    ["id"] = 7872,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le Fort Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
     },
   },
   ["La reconquête de Silithus,Parler à "] = {
@@ -54495,12 +54738,12 @@ pfDB["quests"]["frFR"] = {
       ["Tête du seigneur des couvées Lanistaire,1"] = "ITEM",
     },
   },
-  ["Triomphez des envahisseurs !,Entrez dan"] = {
-    ["id"] = 8291,
-    ["min"] = 60,
-    ["lvl"] = 60,
+  ["Triomphez des envahisseurs !,Entrez dan"] = {
+    ["id"] = 7871,
+    ["min"] = 30,
+    ["lvl"] = 39,
     ["race"] = 77,
-    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le Fort Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
+    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le fort d\'Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
     ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
     ["start"] = {
       ["Sentinelle Chanteloin"] = "NPC",
@@ -54512,11 +54755,13 @@ pfDB["quests"]["frFR"] = {
       ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
     },
   },
-  ["Les talismans de vaillance,"] = {
-    ["id"] = 8292,
-    ["min"] = 10,
-    ["lvl"] = 60,
+  ["Triomphez des envahisseurs !,Entrez dan"] = {
+    ["id"] = 7871,
+    ["min"] = 30,
+    ["lvl"] = 35,
     ["race"] = 77,
+    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le fort d\'Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
     ["start"] = {
       ["Sentinelle Chanteloin"] = "NPC",
     },
@@ -54524,28 +54769,13 @@ pfDB["quests"]["frFR"] = {
       ["Sentinelle Chanteloin"] = "NPC",
     },
     ["item"] = {
-      ["Marque d\'honneur du goulet des Chanteguerres,3"] = "ITEM",
-    },
-  },
-  ["La marque d\'honneur,"] = {
-    ["id"] = 8293,
-    ["min"] = 10,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["start"] = {
-      ["Capitaine Fracasse-crâne"] = "NPC",
-    },
-    ["end"] = {
-      ["Capitaine Fracasse-crâne"] = "NPC",
-    },
-    ["item"] = {
-      ["Marque d\'honneur du goulet des Chanteguerres,3"] = "ITEM",
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
     },
   },
   ["Écrasez les usurpateurs d\'Aile-argent,Entrez dan"] = {
-    ["id"] = 8294,
-    ["min"] = 60,
-    ["lvl"] = 60,
+    ["id"] = 7789,
+    ["min"] = 20,
+    ["lvl"] = 29,
     ["race"] = 178,
     ["log"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
     ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
@@ -54559,68 +54789,55 @@ pfDB["quests"]["frFR"] = {
       ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
     },
   },
-  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
-    ["id"] = 8297,
-    ["min"] = 60,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
-    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
-    ["start"] = {
-      ["Sergent Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Sergent Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
-    },
-  },
-  ["More Resource Crates,"] = {
-    ["id"] = 8298,
+  ["Écrasez les usurpateurs d\'Aile-argent,Entrez dan"] = {
+    ["id"] = 7789,
     ["min"] = 20,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["start"] = {
-      ["Sergent Maclear"] = "NPC",
-    },
-    ["end"] = {
-      ["Sergent Maclear"] = "NPC",
-    },
-    ["item"] = {
-      ["Marque d\'honneur du bassin d\'Arathi,3"] = "ITEM",
-    },
-  },
-  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
-    ["id"] = 8299,
-    ["min"] = 60,
-    ["lvl"] = 60,
+    ["lvl"] = 25,
     ["race"] = 178,
-    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de tous les peuples de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
-    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au Traqueur noir Mortis au Trépas-d\'Orgrim.",
+    ["log"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
     ["start"] = {
-      ["Nécrotraqueur Mortis"] = "NPC",
+      ["Capitaine Fracasse-crâne"] = "NPC",
     },
     ["end"] = {
-      ["Nécrotraqueur Mortis"] = "NPC",
+      ["Capitaine Fracasse-crâne"] = "NPC",
     },
     ["item"] = {
-      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
     },
   },
-  ["More Resource Crates,"] = {
-    ["id"] = 8300,
+  ["Triomphez des envahisseurs !,Entrez dan"] = {
+    ["id"] = 7788,
     ["min"] = 20,
-    ["lvl"] = 60,
-    ["race"] = 178,
+    ["lvl"] = 29,
+    ["race"] = 77,
+    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le fort d\'Aile-argent. Repoussez les envahisseurs de la Horde.$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Farsong au bosquet d\'Aile-argent.",
     ["start"] = {
-      ["Nécrotraqueur Mortis"] = "NPC",
+      ["Sentinelle Chanteloin"] = "NPC",
     },
     ["end"] = {
-      ["Nécrotraqueur Mortis"] = "NPC",
+      ["Sentinelle Chanteloin"] = "NPC",
     },
     ["item"] = {
-      ["Marque d\'honneur du bassin d\'Arathi,3"] = "ITEM",
+      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Triomphez des envahisseurs !,Entrez dan"] = {
+    ["id"] = 7788,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le fort d\'Aile-argent. Repoussez les envahisseurs de la Horde.$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Farsong au bosquet d\'Aile-argent.",
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
     },
   },
   ["Le Chemin des Justes,Récupére"] = {
@@ -54788,7 +55005,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Des bonbons de la Sanssaint pour Jesper !,Parler aux"] = {
     ["id"] = 8311,
-    ["min"] = 50,
+    ["min"] = 10,
     ["lvl"] = 60,
     ["log"] = "J’aimerais bien faire la tournée des bonbons et des blagues, mais je ne peux pas, car je suis malade. Si vous voulez y aller pour moi, je vous échangerai les bonbons que vous gagnerez contre ceux que j’ai déjà ! Je pense que vous les aimerez beaucoup - ils vous transforment en des trucs rigolos et effrayants !$B$BTous les aubergistes dans les grandes villes ont des bonbons qu’ils donnent pour la Sanssaint. Parlez-leur et faites les blagues qu’ils vous demanderont ! Ah, et il y a aussi un petit gnome nommé Talvash à Forgefer qui donne des bonbons. Quand vous aurez tous les bonbons, rapportez-les-moi ici !",
     ["obj"] = "Parler aux aubergistes de Hurlevent, de Forgefer, de Darnassus, et à Talvash del Kissel à Forgefer. Accomplissez les blagues qu\'ils vous demanderont de faire en échange de bonbons.$B$BRetournez voir Jesper à l\'orphelinat de Hurlevent avec un Massepain de Darnassus, une Boule de gomme de Gnomeregan, du Nougat de Hurlevent et un Bonbon à la menthe de Forgefer.",
@@ -54807,7 +55024,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Des bonbons de la Sanssaint pour Spoops !,Parler aux"] = {
     ["id"] = 8312,
-    ["min"] = 50,
+    ["min"] = 10,
     ["lvl"] = 60,
     ["log"] = "J’aimerais bien faire la tournée des bonbons et des blagues, mais je ne peux pas, car je suis malade. Si vous voulez y aller pour moi, je vous échangerai les bonbons que vous gagnerez contre ceux que j’ai déjà ! Je pense que vous les aimerez beaucoup - ils vous transforment en des trucs rigolos et effrayants !$B$BTous les aubergistes dans les grandes villes ont des bonbons qu’ils donnent pour la Sanssaint. Parlez-leur et faites les blagues qu’ils vous demanderont ! Ah, et il y a aussi une trollesse qui s\'appelle Kali Remik au village de Sen\'jin qui donne des bonbons. Quand vous aurez tous les bonbons, rapportez-les-moi ici !",
     ["obj"] = "Parler aux aubergistes d\'Orgrimmar, de Fossoyeuse, des Pitons du Tonnerre, et à Kali Remik au village de Sen\'jin. Accomplissez les blagues qu\'ils vous demanderont de faire en échange de bonbons.$B$BRetournez voir Spoops à l\'orphelinat d\'Orgrimmar avec un Massepain des Pitons du Tonnerre, une Boule de gomme de Sombrelance, du Nougat d\'Orgrimmar et un Bonbon à la menthe de Fossoyeuse.",
@@ -54957,7 +55174,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Les œufs pourris,Placez les"] = {
     ["id"] = 8322,
-    ["min"] = 60,
+    ["min"] = 30,
     ["lvl"] = 60,
     ["race"] = 178,
     ["log"] = "Les humains d\'Austrivage adorent la bière, et tout particulièrement celle qui est servie à l\'auberge d\'Austrivage. Nous pouvons profiter du chaos provoqué par la Sanssaint pour gâter leur dernière cuvée de boissons pour des semaines… voire des mois !$B$BPrenez ces œufs pourris et allez les placer dans le tonneau de bière principal de l\'auberge d\'Austrivage. Votre simple présence déclenchera des combats, alors attendez-vous à vous battre !$B$BQuand vous aurez laissé à Austrivage un goût qu\'ils ne risquent pas d\'oublier, revenez me voir ici, à la fête !",
@@ -55762,6 +55979,7 @@ pfDB["quests"]["frFR"] = {
     ["lvl"] = 60,
     ["race"] = 77,
     ["pre"] = "Korrak le Ragesang,D’après",
+    ["pre"] = "Korrak le Ragesang,D’après",
     ["log"] = "Quelque chose cloche dans cette affaire… Est-ce que quelqu\'un a pensé à brûler le corps de Korrak ? Ces trolls sont prêts à tout pour ressusciter leur chef – c\'est une pratique courante chez ces païens semi-humains à la peau bleue.$B$BGardez les yeux ouverts, $N. Ne paniquez pas si Korrak réapparaît. Si cela se produit, je veux qu\'on l\'exécute et qu\'on le réduise en cendres.$B$BEt pour faire bonne mesure, avant d\'allumer le feu, coupez-lui la tête et ramenez-la-moi.",
     ["obj"] = "Si Korrak le Ragesang réapparaît dans le Champ sanglant, traquez-le et tuez-le.$B$BApportez le Crâne de Korrak au lieutenant Haggerdin dans les Contreforts de Hautebrande.",
     ["start"] = {
@@ -55779,6 +55997,7 @@ pfDB["quests"]["frFR"] = {
     ["min"] = 51,
     ["lvl"] = 60,
     ["race"] = 178,
+    ["pre"] = "La légende de Korrak,D’après",
     ["pre"] = "La légende de Korrak,D’après",
     ["log"] = "Korrak a été tué, certes, mais une question demeure : restera-t-il mort ? Les trolls sont réputés pour leurs étranges sorcelleries tribales. Je ne serais pas surpris que leur chef défunt ne se relève d\'entre les morts pour reprendre les rênes de son clan.$B$BVous savez quoi faire si cela se produit.$B$B<Laggrond passe son index sur son cou, un geste très éloquent.>$B$BEt cette fois, je veux sa tête. Gardez les yeux ouverts, soldat.$B$BVous pouvez disposer !",
     ["obj"] = "Si Korrak le Ragesang revient dans les cavernes Winterax de la Vallée d\'Alterac, cherchez-le et tuez-le.$B$BApportez le Crâne de Korrak au Maître de guerre Laggrond, au donjon Frostwolf.",
@@ -55828,7 +56047,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Des tonneaux gâtés,Retournez "] = {
     ["id"] = 8409,
-    ["min"] = 60,
+    ["min"] = 25,
     ["lvl"] = 60,
     ["race"] = 178,
     ["pre"] = "Les œufs pourris,Placez les",
@@ -56583,6 +56802,7 @@ pfDB["quests"]["frFR"] = {
     ["min"] = 53,
     ["lvl"] = 55,
     ["pre"] = "Allié des Grumegueules,Grifleur v",
+    ["pre"] = "Allié des Grumegueules,Grifleur v",
     ["log"] = "Nous autres Grumegueules faisons face à une menace encore plus redoutable. Peut-être serez-vous capable de l’affronter. Vous avez certainement fait la preuve de vos capacités…$B$BUn autre membre de mon espèce monte la garde à l’extérieur de l’entrée du repaire des Grumegueules, assez loin au nord sur cette route. Il s’appelle Nafien. Bien qu’il ait l’air d’un animal farouche et déplaisant, vous n’avez aucune raison de le craindre. Il cherche seulement de l’aide contre les forces maléfiques qui menacent notre foyer.",
     ["obj"] = "Suivre la route principale de Gangrebois vers le nord et parler à Nafien le furbolg. Il monte la garde à côté de l’entrée du repaire des Grumegueules.",
     ["start"] = {
@@ -56609,6 +56829,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 8466,
     ["min"] = 45,
     ["lvl"] = 55,
+    ["pre"] = "Allié des Grumegueules,Grifleur v",
     ["pre"] = "Allié des Grumegueules,Grifleur v",
     ["obj"] = "Some of the Deadwood furbolgs wear a distinctive headdress that may be used as a means of proof in thinning their numbers. Bring me a feather from any headdresses you acquire; for every set of five you bring me, you will earn recognition amongst the Timbermaw.",
     ["start"] = {
@@ -57597,11 +57818,14 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 8548,
     ["min"] = 55,
     ["lvl"] = 60,
+    ["pre"] = "La tenue de combat cénarienne,Parlez à ",
     ["log"] = "Les insignes que vous récupérez à la fin de vos missions tactiques, logistiques et de combat pour le compte du Fort cénarien ne sont pas seulement destinés à faire joli, $N.$B$BConservez-les soigneusement. Au fur et à mesure que vous ferez la preuve de votre loyauté envers notre organisation, vous pourrez les échanger contre le matériel que nous réservons à nos alliés les plus proches.",
     ["obj"] = "Ramener 5 Badges cénariens de combat, 3 Badges cénariens de logistique et 7 Badges cénariens de tactique à Vargus, au Fort cénarien en Silithus. Pour terminer cette quête, il faut aussi que le Cercle cénarien soit au moins Amical à votre égard.",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Badge cénarien de combat,5"] = "ITEM",
@@ -57852,11 +58076,14 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 8572,
     ["min"] = 55,
     ["lvl"] = 60,
+    ["pre"] = "La tenue de combat cénarienne,Parlez à ",
     ["log"] = "Les insignes que vous récupérez à la fin de vos missions tactiques, logistiques et de combat pour le compte du Fort cénarien ne sont pas seulement destinés à faire joli, $N.$B$BConservez-les soigneusement. Au fur et à mesure que vous ferez la preuve de votre loyauté envers notre organisation, vous pourrez les échanger contre le matériel que nous réservons à nos alliés les plus proches.",
     ["obj"] = "Ramener 7 Badges cénariens de combat, 4 Badges cénariens de logistique et 4 Badges cénariens de tactique à Vargus, au Fort cénarien en Silithus. Vous devrez aussi être $gHonoré:Honorée; par le Cercle cénarien pour terminer cette quête.",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Badge cénarien de combat,7"] = "ITEM",
@@ -57868,11 +58095,14 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 8573,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "La tenue de combat cénarienne,Parlez à ",
     ["log"] = "Les insignes que vous récupérez à la fin de vos missions tactiques, logistiques et de combat pour le compte du Fort cénarien ne sont pas seulement destinés à faire joli, $N.$B$BConservez-les soigneusement. Au fur et à mesure que vous ferez la preuve de votre loyauté envers notre organisation, vous pourrez les échanger contre le matériel que nous réservons à nos alliés les plus proches.",
     ["obj"] = "Ramener 15 Badges cénariens de combat, 20 Badges cénariens de logistique, 20 Badges cénariens de tactique et 1 Marque de Cénarius à Vargus, au Fort cénarien en Silithus. Vous devrez aussi être $gExalté:Exaltée; par le Cercle cénarien pour terminer cette quête.",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Badge cénarien de combat,15"] = "ITEM",
@@ -57883,7 +58113,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le grand livre magique d\'Azuregos,Apporter l"] = {
     ["id"] = 8575,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "Vous ne comprenez pas le moindre mot de ce qui est écrit dans ce livre. Vous ne savez même pas dans quelle langue il est rédigé !",
     ["obj"] = "Apporter le Grand livre magique d\'Azuregos à Narain Divinambolesque, en Tanaris.",
@@ -57891,9 +58121,6 @@ pfDB["quests"]["frFR"] = {
     },
     ["end"] = {
       ["Narain Divinambolesque"] = "NPC",
-    },
-    ["item"] = {
-      ["Grand livre magique,1"] = "ITEM",
     },
   },
   ["Stewvul, ex-M.A.P.V.,Narain Div"] = {
@@ -58273,7 +58500,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Une chanson d\'amour pour Narain,Transmettr"] = {
     ["id"] = 8599,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "J’ai très rarement des visiteurs. En fait, je n’avais vu personne depuis la fois où j’ai sauvé ce cher, cher gnome de l’épave de sa machine volante.$B$B<Meredith se plonge dans ses souvenirs, et son regard se perd dans le lointain.>$B$BLe connaissez-vous ? Narain ? Narain Divinambolesque ? J’aimerais beaucoup que quelqu’un lui porte un message. Il faut qu’il sache ce que je ressens pour lui ! C’est de l’amour ! J’en suis sûre !$B$BPourriez-vous me servir de messager ? Je vous en serai éternellement reconnaissante !",
     ["obj"] = "Transmettre la Lettre d’amour de Meredith à Narain Divinambolesque, en Tanaris.",
@@ -58282,9 +58509,6 @@ pfDB["quests"]["frFR"] = {
     },
     ["end"] = {
       ["Narain Divinambolesque"] = "NPC",
-    },
-    ["item"] = {
-      ["Lettre d\'amour de Meridith,1"] = "ITEM",
     },
   },
   ["La Horde a besoin de cuir robuste !,Ramener 10"] = {
@@ -58585,9 +58809,8 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le seul remède,Retrouver "] = {
     ["id"] = 8620,
-    ["min"] = 55,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["pre"] = "Un leurre !,Narain Div",
     ["log"] = "J’aurais dû m’en douter ! Mon ennemi juré, le docteur Dwenfer, a récidivé ! Et maintenant, à cause de votre échec au Berceau-de-l’hiver, le docteur Dwenfer a détruit mon livre ! Comment allez-vous sauver le monde, maintenant ?$B$BD’après le message que j’ai reçu, l’unique exemplaire connu du \"Draconique pour les nuls, volume II\" a été divisé en huit morceaux et dispersé aux quatre vents ! Si par miracle vous parvenez à les récupérer, utilisez cette reliure magique pour les réunir et ramenez-les-moi.",
     ["obj"] = "Retrouver les 8 chapitres perdus du \"Draconique pour les nuls\" et les combiner avec la Reliure magique, puis ramener l’exemplaire réparé du \"Draconique pour les nuls, volume II\" à Narain Divinambolesque, en Tanaris.",
     ["start"] = {
@@ -58595,9 +58818,6 @@ pfDB["quests"]["frFR"] = {
     },
     ["end"] = {
       ["Narain Divinambolesque"] = "NPC",
-    },
-    ["item"] = {
-      ["Le draconique pour les nuls : volume II,1"] = "ITEM",
     },
   },
   ["Les bottes d\'implorateur de tempête,Rapporter "] = {
@@ -59829,6 +60049,7 @@ pfDB["quests"]["frFR"] = {
     ["min"] = 60,
     ["lvl"] = 60,
     ["pre"] = "Le fardeau des Vols draconiques,",
+    ["pre"] = "Le fardeau des Vols draconiques,",
     ["log"] = "C’est un voyage de rédemption, $ghéros:héroïne;. Si seulement j’avais succombé aujourd’hui, j’aurais péri pour une cause juste et bonne. Vous devez retrouver le fragment de sceptre vert. Vous devez purifier Eranikus de la souillure que les Dieux très anciens ont placée sur lui.$B$BRendez-vous à Darnassus. Juste devant les remparts de la ville, vous rencontrerez l’un de mes agents. Cet agent lancera l’opération et informera Tyrande de nos plans sans alerter Forteramure.$B$B<Malfurion soupire.>$B$BUne déchéance qui a mis un millénaire à s’accomplir…",
     ["obj"] = "Rendez-vous sur Teldrassil et trouvez l’agent de Malfurion à l’extérieur des remparts de Darnassus.",
     ["start"] = {
@@ -60208,6 +60429,7 @@ pfDB["quests"]["frFR"] = {
     ["start"] = {
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Barre de thorium enchanté,2"] = "ITEM",
@@ -60462,6 +60684,7 @@ pfDB["quests"]["frFR"] = {
     ["start"] = {
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Barre de thorium enchanté,2"] = "ITEM",
@@ -60487,216 +60710,8 @@ pfDB["quests"]["frFR"] = {
       ["Briefing logistique X,1"] = "ITEM",
     },
   },
-  ["Une chevalière de mérite,"] = {
-    ["id"] = 8811,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
-    ["start"] = {
-      ["Officier Lunelume"] = "NPC",
-    },
-    ["end"] = {
-      ["Officier Lunelume"] = "NPC",
-    },
-    ["item"] = {
-      ["Chevalière de mérite de l\'Alliance,1"] = "ITEM",
-    },
-  },
-  ["Une chevalière de mérite,"] = {
-    ["id"] = 8812,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
-    ["start"] = {
-      ["Officier Tournedos"] = "NPC",
-    },
-    ["end"] = {
-      ["Officier Tournedos"] = "NPC",
-    },
-    ["item"] = {
-      ["Chevalière de mérite de l\'Alliance,1"] = "ITEM",
-    },
-  },
-  ["Une chevalière de mérite,"] = {
-    ["id"] = 8813,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
-    ["start"] = {
-      ["Officier Barbe-de-fer"] = "NPC",
-    },
-    ["end"] = {
-      ["Officier Barbe-de-fer"] = "NPC",
-    },
-    ["item"] = {
-      ["Chevalière de mérite de l\'Alliance,1"] = "ITEM",
-    },
-  },
-  ["Une chevalière de mérite,"] = {
-    ["id"] = 8814,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
-    ["start"] = {
-      ["Officier Maloof"] = "NPC",
-    },
-    ["end"] = {
-      ["Officier Maloof"] = "NPC",
-    },
-    ["item"] = {
-      ["Chevalière de mérite de l\'Alliance,1"] = "ITEM",
-    },
-  },
-  ["Une chevalière de mérite,"] = {
-    ["id"] = 8815,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "La Horde a besoin de votre aide !,Parler au ",
-    ["start"] = {
-      ["Officier Rougelame"] = "NPC",
-    },
-    ["end"] = {
-      ["Officier Rougelame"] = "NPC",
-    },
-    ["item"] = {
-      ["Chevalière de mérite de la Horde,1"] = "ITEM",
-    },
-  },
-  ["Une chevalière de mérite,"] = {
-    ["id"] = 8816,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "La Horde a besoin de votre aide !,Parler au ",
-    ["start"] = {
-      ["Officier Vu\'Shalay"] = "NPC",
-    },
-    ["end"] = {
-      ["Officier Vu\'Shalay"] = "NPC",
-    },
-    ["item"] = {
-      ["Chevalière de mérite de la Horde,1"] = "ITEM",
-    },
-  },
-  ["Une chevalière de mérite,"] = {
-    ["id"] = 8817,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "La Horde a besoin de votre aide !,Parler au ",
-    ["start"] = {
-      ["Officier Gothena"] = "NPC",
-    },
-    ["end"] = {
-      ["Officier Gothena"] = "NPC",
-    },
-    ["item"] = {
-      ["Chevalière de mérite de la Horde,1"] = "ITEM",
-    },
-  },
-  ["Une chevalière de mérite,"] = {
-    ["id"] = 8818,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "La Horde a besoin de votre aide !,Parler au ",
-    ["start"] = {
-      ["Officier Marche-sous-le-tonnerre"] = "NPC",
-    },
-    ["end"] = {
-      ["Officier Marche-sous-le-tonnerre"] = "NPC",
-    },
-    ["item"] = {
-      ["Chevalière de mérite de la Horde,1"] = "ITEM",
-    },
-  },
   ["Dix chevalières de mérite,"] = {
-    ["id"] = 8819,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
-    ["start"] = {
-      ["Officier Lunelume"] = "NPC",
-    },
-    ["end"] = {
-      ["Officier Lunelume"] = "NPC",
-    },
-    ["item"] = {
-      ["Chevalière de mérite de l\'Alliance,10"] = "ITEM",
-    },
-  },
-  ["Dix chevalières de mérite,"] = {
-    ["id"] = 8820,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
-    ["start"] = {
-      ["Officier Tournedos"] = "NPC",
-    },
-    ["end"] = {
-      ["Officier Tournedos"] = "NPC",
-    },
-    ["item"] = {
-      ["Chevalière de mérite de l\'Alliance,10"] = "ITEM",
-    },
-  },
-  ["Dix chevalières de mérite,"] = {
-    ["id"] = 8821,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
-    ["start"] = {
-      ["Officier Barbe-de-fer"] = "NPC",
-    },
-    ["end"] = {
-      ["Officier Barbe-de-fer"] = "NPC",
-    },
-    ["item"] = {
-      ["Chevalière de mérite de l\'Alliance,10"] = "ITEM",
-    },
-  },
-  ["Dix chevalières de mérite,"] = {
-    ["id"] = 8822,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 77,
-    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
-    ["start"] = {
-      ["Officier Maloof"] = "NPC",
-    },
-    ["end"] = {
-      ["Officier Maloof"] = "NPC",
-    },
-    ["item"] = {
-      ["Chevalière de mérite de l\'Alliance,10"] = "ITEM",
-    },
-  },
-  ["Dix chevalières de mérite,"] = {
-    ["id"] = 8823,
-    ["min"] = 1,
-    ["lvl"] = 60,
-    ["race"] = 178,
-    ["pre"] = "La Horde a besoin de votre aide !,Parler au ",
-    ["start"] = {
-      ["Officier Rougelame"] = "NPC",
-    },
-    ["end"] = {
-      ["Officier Rougelame"] = "NPC",
-    },
-    ["item"] = {
-      ["Chevalière de mérite de la Horde,10"] = "ITEM",
-    },
-  },
-  ["Dix chevalières de mérite,"] = {
-    ["id"] = 8824,
+    ["id"] = 8826,
     ["min"] = 1,
     ["lvl"] = 60,
     ["race"] = 178,
@@ -60728,7 +60743,7 @@ pfDB["quests"]["frFR"] = {
     },
   },
   ["Dix chevalières de mérite,"] = {
-    ["id"] = 8826,
+    ["id"] = 8824,
     ["min"] = 1,
     ["lvl"] = 60,
     ["race"] = 178,
@@ -60741,6 +60756,214 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Chevalière de mérite de la Horde,10"] = "ITEM",
+    },
+  },
+  ["Dix chevalières de mérite,"] = {
+    ["id"] = 8823,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "La Horde a besoin de votre aide !,Parler au ",
+    ["start"] = {
+      ["Officier Rougelame"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Rougelame"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de la Horde,10"] = "ITEM",
+    },
+  },
+  ["Dix chevalières de mérite,"] = {
+    ["id"] = 8822,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
+    ["start"] = {
+      ["Officier Tournedos"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Tournedos"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,10"] = "ITEM",
+    },
+  },
+  ["Dix chevalières de mérite,"] = {
+    ["id"] = 8821,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
+    ["start"] = {
+      ["Officier Lunelume"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Lunelume"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,10"] = "ITEM",
+    },
+  },
+  ["Dix chevalières de mérite,"] = {
+    ["id"] = 8820,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
+    ["start"] = {
+      ["Officier Barbe-de-fer"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Barbe-de-fer"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,10"] = "ITEM",
+    },
+  },
+  ["Dix chevalières de mérite,"] = {
+    ["id"] = 8819,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
+    ["start"] = {
+      ["Officier Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,10"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8818,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "La Horde a besoin de votre aide !,Parler au ",
+    ["start"] = {
+      ["Officier Vu\'Shalay"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Vu\'Shalay"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de la Horde,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8817,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "La Horde a besoin de votre aide !,Parler au ",
+    ["start"] = {
+      ["Officier Marche-sous-le-tonnerre"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Marche-sous-le-tonnerre"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de la Horde,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8816,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "La Horde a besoin de votre aide !,Parler au ",
+    ["start"] = {
+      ["Officier Gothena"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Gothena"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de la Horde,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8815,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "La Horde a besoin de votre aide !,Parler au ",
+    ["start"] = {
+      ["Officier Rougelame"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Rougelame"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de la Horde,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8814,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
+    ["start"] = {
+      ["Officier Tournedos"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Tournedos"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8813,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
+    ["start"] = {
+      ["Officier Lunelume"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Lunelume"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8811,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
+    ["start"] = {
+      ["Officier Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8812,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["pre"] = "L\'Alliance a besoin de votre aide !,Parler au ",
+    ["start"] = {
+      ["Officier Barbe-de-fer"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Barbe-de-fer"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,1"] = "ITEM",
     },
   },
   ["L\'ultime ruse,Apporter u"] = {
@@ -61067,8 +61290,8 @@ pfDB["quests"]["frFR"] = {
   },
   ["Les fêtes du Nouvel an !,Apporter l"] = {
     ["id"] = 8860,
-    ["min"] = 60,
-    ["lvl"] = 70,
+    ["min"] = 1,
+    ["lvl"] = 60,
     ["race"] = 77,
     ["log"] = "Hurlevent organise une fête pour le nouvel an ! De l\'alcool sera distribué gratuitement toute la journée, et la nuit, il y aura des feux d\'artifice ! Ce sera sans doute une jolie fête ! Mais Baie-du-Butin ne sera pas en reste et aura sa propre fête ; et je parie qu\'elle sera bien plus belle !$B$BSinon, l\'aubergiste Allison, à Hurlevent, a besoin de marchandises des Gourmandises Fumebois pour nourrir tous les fêtards. Vous pouvez me faire une faveur, et la livrer à ma place ?$B$BMerci, $N ! C\'est pour l\'aubergiste Allison de la Rose dorée, à Hurlevent.",
     ["obj"] = "Apporter les marchandises des Gourmandises Fumebois à l\'aubergiste Allison, à Hurlevent.",
@@ -61084,8 +61307,8 @@ pfDB["quests"]["frFR"] = {
   },
   ["Les fêtes du Nouvel an !,Apporter l"] = {
     ["id"] = 8861,
-    ["min"] = 60,
-    ["lvl"] = 70,
+    ["min"] = 1,
+    ["lvl"] = 60,
     ["race"] = 178,
     ["log"] = "les Pitons du Tonnerre organisent une fête pour le nouvel an ! De l\'alcool sera distribué gratuitement toute la journée, et la nuit, il y aura des feux d\'artifice ! Ce sera sans doute une jolie fête ! Mais Baie-du-Butin ne sera pas en reste et aura sa propre fête ; et je parie qu\'elle sera bien plus belle !$B$BSinon, l\'aubergiste Pala, aux Pitons du Tonnerre, a besoin de marchandises des Gourmandises Fumebois pour nourrir tous les fêtards. Vous pouvez me faire une faveur, et la livrer à ma place ?$B$BMerci, $N ! C\'est pour l\'aubergiste Pala, dont l\'établissement est situé près du pont qui mène à la Cime des chasseurs.",
     ["obj"] = "Apporter les Marchandises des Gourmandises Fumebois à l\'aubergiste Pala, aux Pitons du Tonnerre.",
@@ -61384,6 +61607,7 @@ pfDB["quests"]["frFR"] = {
     ["item"] = {
       ["Echantillon de sang de Berceau-de-l\'Hiver,15"] = "ITEM",
       ["Manchettes de bestiaire,1"] = "ITEM",
+      ["Manchettes de bestiaire,1"] = "ITEM",
     },
   },
   ["Une proposition sérieuse,Procurez-v"] = {
@@ -61402,6 +61626,7 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Echantillon de sang de Berceau-de-l\'Hiver,15"] = "ITEM",
+      ["Manchettes de magistère,1"] = "ITEM",
       ["Manchettes de magistère,1"] = "ITEM",
     },
   },
@@ -61440,6 +61665,7 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Echantillon de sang de Berceau-de-l\'Hiver,15"] = "ITEM",
+      ["Brassards de dévot,1"] = "ITEM",
       ["Brassards de dévot,1"] = "ITEM",
     },
   },
@@ -61536,6 +61762,7 @@ pfDB["quests"]["frFR"] = {
     ["item"] = {
       ["Echantillon de venin de Silithus,15"] = "ITEM",
       ["Manchettes de bestiaire,1"] = "ITEM",
+      ["Manchettes de bestiaire,1"] = "ITEM",
     },
   },
   ["Une proposition sérieuse,Procurez-v"] = {
@@ -61555,6 +61782,7 @@ pfDB["quests"]["frFR"] = {
     ["item"] = {
       ["Echantillon de venin de Silithus,15"] = "ITEM",
       ["Manchettes de magistère,1"] = "ITEM",
+      ["Manchettes de magistère,1"] = "ITEM",
     },
   },
   ["Une proposition sérieuse,Procurez-v"] = {
@@ -61573,6 +61801,7 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Echantillon de venin de Silithus,15"] = "ITEM",
+      ["Brassards de dévot,1"] = "ITEM",
       ["Brassards de dévot,1"] = "ITEM",
     },
   },
@@ -61611,6 +61840,8 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Echantillon de venin de Silithus,15"] = "ITEM",
+      ["Manchettes des éléments,1"] = "ITEM",
+      ["Manchettes des éléments,1"] = "ITEM",
       ["Manchettes des éléments,1"] = "ITEM",
     },
   },
@@ -61841,6 +62072,8 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Ceinture de bestiaire,1"] = "ITEM",
+      ["Ceinture de bestiaire,1"] = "ITEM",
+      ["Gants de bestiaire,1"] = "ITEM",
       ["Gants de bestiaire,1"] = "ITEM",
     },
   },
@@ -61860,6 +62093,8 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Ceinture de magistère,1"] = "ITEM",
+      ["Ceinture de magistère,1"] = "ITEM",
+      ["Gants de magistère,1"] = "ITEM",
       ["Gants de magistère,1"] = "ITEM",
     },
   },
@@ -61898,6 +62133,9 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Ceinture de dévot,1"] = "ITEM",
+      ["Ceinture de dévot,1"] = "ITEM",
+      ["Gants de dévot,1"] = "ITEM",
+      ["Gants de dévot,1"] = "ITEM",
       ["Gants de dévot,1"] = "ITEM",
     },
   },
@@ -61937,6 +62175,7 @@ pfDB["quests"]["frFR"] = {
     ["item"] = {
       ["Ceinture de Brume-funeste,1"] = "ITEM",
       ["Protège-mains de Brume-funeste,1"] = "ITEM",
+      ["Protège-mains de Brume-funeste,1"] = "ITEM",
     },
   },
   ["Une juste compensation,Apportez u"] = {
@@ -61974,6 +62213,8 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Ceinture de bestiaire,1"] = "ITEM",
+      ["Ceinture de bestiaire,1"] = "ITEM",
+      ["Gants de bestiaire,1"] = "ITEM",
       ["Gants de bestiaire,1"] = "ITEM",
     },
   },
@@ -61993,6 +62234,8 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Ceinture de magistère,1"] = "ITEM",
+      ["Ceinture de magistère,1"] = "ITEM",
+      ["Gants de magistère,1"] = "ITEM",
       ["Gants de magistère,1"] = "ITEM",
     },
   },
@@ -62012,6 +62255,9 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Ceinture de dévot,1"] = "ITEM",
+      ["Ceinture de dévot,1"] = "ITEM",
+      ["Gants de dévot,1"] = "ITEM",
+      ["Gants de dévot,1"] = "ITEM",
       ["Gants de dévot,1"] = "ITEM",
     },
   },
@@ -62050,6 +62296,10 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Corde des éléments,1"] = "ITEM",
+      ["Corde des éléments,1"] = "ITEM",
+      ["Corde des éléments,1"] = "ITEM",
+      ["Gantelets des éléments,1"] = "ITEM",
+      ["Gantelets des éléments,1"] = "ITEM",
       ["Gantelets des éléments,1"] = "ITEM",
     },
   },
@@ -62069,6 +62319,7 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Ceinture de Brume-funeste,1"] = "ITEM",
+      ["Protège-mains de Brume-funeste,1"] = "ITEM",
       ["Protège-mains de Brume-funeste,1"] = "ITEM",
     },
   },
@@ -62138,6 +62389,8 @@ pfDB["quests"]["frFR"] = {
       ["Barre de sombrefer,3"] = "ITEM",
       ["Cuir enchanté,20"] = "ITEM",
       ["Etoffe lunaire,3"] = "ITEM",
+      ["Peau robuste traitée,4"] = "ITEM",
+      ["Peau robuste traitée,4"] = "ITEM",
       ["Peau robuste traitée,4"] = "ITEM",
     },
   },
@@ -62213,6 +62466,7 @@ pfDB["quests"]["frFR"] = {
       ["Bottes du Coeur-sauvage,1"] = "ITEM",
       ["Kilt du Coeur-sauvage,1"] = "ITEM",
       ["Spallières du Coeur-sauvage,1"] = "ITEM",
+      ["Spallières du Coeur-sauvage,1"] = "ITEM",
     },
   },
   ["Les adieux d\'Anthion,Retournez "] = {
@@ -62232,7 +62486,10 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Bottes de bestiaire,1"] = "ITEM",
+      ["Bottes de bestiaire,1"] = "ITEM",
       ["Pantalon de bestiaire,1"] = "ITEM",
+      ["Pantalon de bestiaire,1"] = "ITEM",
+      ["Mantelet de bestiaire,1"] = "ITEM",
       ["Mantelet de bestiaire,1"] = "ITEM",
     },
   },
@@ -62254,6 +62511,8 @@ pfDB["quests"]["frFR"] = {
     ["item"] = {
       ["Bottes de magistère,1"] = "ITEM",
       ["Jambières de magistère,1"] = "ITEM",
+      ["Jambières de magistère,1"] = "ITEM",
+      ["Mantelet de magistère,1"] = "ITEM",
       ["Mantelet de magistère,1"] = "ITEM",
     },
   },
@@ -62295,7 +62554,11 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Sandales de dévot,1"] = "ITEM",
+      ["Sandales de dévot,1"] = "ITEM",
       ["Jupe de dévot,1"] = "ITEM",
+      ["Jupe de dévot,1"] = "ITEM",
+      ["Jupe de dévot,1"] = "ITEM",
+      ["Mantelet de dévot,1"] = "ITEM",
       ["Mantelet de dévot,1"] = "ITEM",
     },
   },
@@ -62315,6 +62578,7 @@ pfDB["quests"]["frFR"] = {
       ["Deliana"] = "NPC",
     },
     ["item"] = {
+      ["Bottes sombreruse,1"] = "ITEM",
       ["Bottes sombreruse,1"] = "ITEM",
       ["Pantalon sombreruse,1"] = "ITEM",
       ["Spallières sombreruse,1"] = "ITEM",
@@ -62337,7 +62601,12 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Bottes des éléments,1"] = "ITEM",
+      ["Bottes des éléments,1"] = "ITEM",
+      ["Bottes des éléments,1"] = "ITEM",
       ["Kilt des éléments,1"] = "ITEM",
+      ["Kilt des éléments,1"] = "ITEM",
+      ["Kilt des éléments,1"] = "ITEM",
+      ["Espauliers des éléments,1"] = "ITEM",
       ["Espauliers des éléments,1"] = "ITEM",
     },
   },
@@ -62358,6 +62627,7 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Sandales de Brume-funeste,1"] = "ITEM",
+      ["Jambières de Brume-funeste,1"] = "ITEM",
       ["Jambières de Brume-funeste,1"] = "ITEM",
       ["Mantelet de Brume-funeste,1"] = "ITEM",
     },
@@ -62954,6 +63224,7 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Coiffe du Coeur-sauvage,1"] = "ITEM",
+      ["Coiffe du Coeur-sauvage,1"] = "ITEM",
       ["Gilet du Coeur-sauvage,1"] = "ITEM",
     },
   },
@@ -62974,6 +63245,8 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Coiffe de bestiaire,1"] = "ITEM",
+      ["Coiffe de bestiaire,1"] = "ITEM",
+      ["Tunique de bestiaire,1"] = "ITEM",
       ["Tunique de bestiaire,1"] = "ITEM",
     },
   },
@@ -62994,6 +63267,9 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Collerette de magistère,1"] = "ITEM",
+      ["Collerette de magistère,1"] = "ITEM",
+      ["Collerette de magistère,1"] = "ITEM",
+      ["Robe de magistère,1"] = "ITEM",
       ["Robe de magistère,1"] = "ITEM",
     },
   },
@@ -63013,6 +63289,7 @@ pfDB["quests"]["frFR"] = {
       ["Deliana"] = "NPC",
     },
     ["item"] = {
+      ["Casque de Sancteforge,1"] = "ITEM",
       ["Casque de Sancteforge,1"] = "ITEM",
       ["Cuirasse de Sancteforge,1"] = "ITEM",
     },
@@ -63034,6 +63311,8 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Collerette de dévot,1"] = "ITEM",
+      ["Collerette de dévot,1"] = "ITEM",
+      ["Robe de dévot,1"] = "ITEM",
       ["Robe de dévot,1"] = "ITEM",
     },
   },
@@ -63074,6 +63353,7 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Masque de Brume-funeste,1"] = "ITEM",
+      ["Masque de Brume-funeste,1"] = "ITEM",
       ["Robe de Brume-funeste,1"] = "ITEM",
     },
   },
@@ -63093,6 +63373,7 @@ pfDB["quests"]["frFR"] = {
       ["Deliana"] = "NPC",
     },
     ["item"] = {
+      ["Heaume de vaillance,1"] = "ITEM",
       ["Heaume de vaillance,1"] = "ITEM",
       ["Cuirasse de vaillance,1"] = "ITEM",
     },
@@ -63114,6 +63395,7 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Coiffe du Coeur-sauvage,1"] = "ITEM",
+      ["Coiffe du Coeur-sauvage,1"] = "ITEM",
       ["Gilet du Coeur-sauvage,1"] = "ITEM",
     },
   },
@@ -63134,6 +63416,8 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Coiffe de bestiaire,1"] = "ITEM",
+      ["Coiffe de bestiaire,1"] = "ITEM",
+      ["Tunique de bestiaire,1"] = "ITEM",
       ["Tunique de bestiaire,1"] = "ITEM",
     },
   },
@@ -63154,6 +63438,8 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Collerette de dévot,1"] = "ITEM",
+      ["Collerette de dévot,1"] = "ITEM",
+      ["Robe de dévot,1"] = "ITEM",
       ["Robe de dévot,1"] = "ITEM",
     },
   },
@@ -63194,6 +63480,9 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Coiffe des éléments,1"] = "ITEM",
+      ["Coiffe des éléments,1"] = "ITEM",
+      ["Haubergeon des éléments,1"] = "ITEM",
+      ["Haubergeon des éléments,1"] = "ITEM",
       ["Haubergeon des éléments,1"] = "ITEM",
     },
   },
@@ -63213,6 +63502,7 @@ pfDB["quests"]["frFR"] = {
       ["Mokvar"] = "NPC",
     },
     ["item"] = {
+      ["Masque de Brume-funeste,1"] = "ITEM",
       ["Masque de Brume-funeste,1"] = "ITEM",
       ["Robe de Brume-funeste,1"] = "ITEM",
     },
@@ -63234,6 +63524,7 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Heaume de vaillance,1"] = "ITEM",
+      ["Heaume de vaillance,1"] = "ITEM",
       ["Cuirasse de vaillance,1"] = "ITEM",
     },
   },
@@ -63254,6 +63545,9 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Collerette de magistère,1"] = "ITEM",
+      ["Collerette de magistère,1"] = "ITEM",
+      ["Collerette de magistère,1"] = "ITEM",
+      ["Robe de magistère,1"] = "ITEM",
       ["Robe de magistère,1"] = "ITEM",
     },
   },
@@ -63293,6 +63587,7 @@ pfDB["quests"]["frFR"] = {
       ["Bottes du Coeur-sauvage,1"] = "ITEM",
       ["Kilt du Coeur-sauvage,1"] = "ITEM",
       ["Spallières du Coeur-sauvage,1"] = "ITEM",
+      ["Spallières du Coeur-sauvage,1"] = "ITEM",
     },
   },
   ["Les adieux d\'Anthion,Retournez "] = {
@@ -63312,7 +63607,10 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Bottes de bestiaire,1"] = "ITEM",
+      ["Bottes de bestiaire,1"] = "ITEM",
       ["Pantalon de bestiaire,1"] = "ITEM",
+      ["Pantalon de bestiaire,1"] = "ITEM",
+      ["Mantelet de bestiaire,1"] = "ITEM",
       ["Mantelet de bestiaire,1"] = "ITEM",
     },
   },
@@ -63334,6 +63632,8 @@ pfDB["quests"]["frFR"] = {
     ["item"] = {
       ["Bottes de magistère,1"] = "ITEM",
       ["Jambières de magistère,1"] = "ITEM",
+      ["Jambières de magistère,1"] = "ITEM",
+      ["Mantelet de magistère,1"] = "ITEM",
       ["Mantelet de magistère,1"] = "ITEM",
     },
   },
@@ -63354,7 +63654,11 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Sandales de dévot,1"] = "ITEM",
+      ["Sandales de dévot,1"] = "ITEM",
       ["Jupe de dévot,1"] = "ITEM",
+      ["Jupe de dévot,1"] = "ITEM",
+      ["Jupe de dévot,1"] = "ITEM",
+      ["Mantelet de dévot,1"] = "ITEM",
       ["Mantelet de dévot,1"] = "ITEM",
     },
   },
@@ -63374,6 +63678,7 @@ pfDB["quests"]["frFR"] = {
       ["Mokvar"] = "NPC",
     },
     ["item"] = {
+      ["Bottes sombreruse,1"] = "ITEM",
       ["Bottes sombreruse,1"] = "ITEM",
       ["Pantalon sombreruse,1"] = "ITEM",
       ["Spallières sombreruse,1"] = "ITEM",
@@ -63396,6 +63701,7 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Sandales de Brume-funeste,1"] = "ITEM",
+      ["Jambières de Brume-funeste,1"] = "ITEM",
       ["Jambières de Brume-funeste,1"] = "ITEM",
       ["Mantelet de Brume-funeste,1"] = "ITEM",
     },
@@ -63488,6 +63794,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 9033,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Naxxramas, la citadelle de l\'effroi,L\'archimag",
     ["log"] = "Cinq ans se sont écoulés depuis la dernière guerre…$B$BDes dizaines de milliers de morts, et pour quoi ? La menace n’a jamais été éradiquée.$B$BLe roi-liche s’agite à nouveau. Son lèche-bottes, Kel’Thuzad, ourdit une nouvelle attaque contre nos terres.$B$BNous ne le laisserons pas faire ! Prouvez votre volonté de servir ! Prouvez que vous êtes $gprêt:prête; à risquer votre vie et votre âme pour mettre un terme à cette folie ! Si vous y parvenez, la puissance combinée de l’Aube et de la Croisade seront à votre service.$B$BPénétrez dans Naxxramas et anéantissez le Fléau qui y rôde…",
     ["obj"] = "Le commandant Eligor Portelaube, de la chapelle de l’Espoir de Lumière dans les Maleterres de l\'est, veut que vous tuiez 5 Monstruosités vivantes, 5 Gargouilles peau de pierre, 8 Capitaines des chevaliers de la mort et 3 Traque-venin.",
     ["start"] = {
@@ -63543,6 +63850,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en plaques,20"] = "ITEM",
       ["Barre d\'arcanite,4"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
     },
   },
   ["Casque de cuirassier,Korfax, à"] = {
@@ -63585,6 +63894,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en plaques,12"] = "ITEM",
       ["Barre d\'arcanite,2"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
     },
   },
   ["Solerets de cuirassier,Korfax, à"] = {
@@ -63605,6 +63916,8 @@ pfDB["quests"]["frFR"] = {
       ["Solerets désacralisés,1"] = "ITEM",
       ["Débris d\'armure en plaques,12"] = "ITEM",
       ["Barre d\'arcanite,2"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
     },
   },
@@ -63627,6 +63940,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en plaques,8"] = "ITEM",
       ["Barre d\'arcanite,1"] = "ITEM",
       ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
     },
   },
   ["Sangle de cuirassier,Korfax, à"] = {
@@ -63647,6 +63962,8 @@ pfDB["quests"]["frFR"] = {
       ["Sangle désacralisée,1"] = "ITEM",
       ["Débris d\'armure en plaques,8"] = "ITEM",
       ["Barre d\'arcanite,1"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
       ["Peau robuste traitée,5"] = "ITEM",
     },
   },
@@ -63690,6 +64007,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en plaques,25"] = "ITEM",
       ["Barre d\'arcanite,4"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
     },
   },
   ["Les cuissards de rédemption,Le command"] = {
@@ -63731,6 +64050,8 @@ pfDB["quests"]["frFR"] = {
       ["Chapel désacralisé,1"] = "ITEM",
       ["Débris d\'armure en plaques,15"] = "ITEM",
       ["Barre d\'arcanite,5"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
       ["Peau robuste traitée,2"] = "ITEM",
     },
   },
@@ -63774,6 +64095,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en plaques,12"] = "ITEM",
       ["Barre d\'arcanite,2"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
     },
   },
   ["Les garde-mains de rédemption,Le command"] = {
@@ -63794,6 +64117,8 @@ pfDB["quests"]["frFR"] = {
       ["Garde-mains désacralisés,1"] = "ITEM",
       ["Débris d\'armure en plaques,8"] = "ITEM",
       ["Barre d\'arcanite,1"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
       ["Peau robuste traitée,5"] = "ITEM",
     },
   },
@@ -63836,6 +64161,8 @@ pfDB["quests"]["frFR"] = {
       ["Protège-poignets désacralisés,1"] = "ITEM",
       ["Débris d\'armure en plaques,6"] = "ITEM",
       ["Barre d\'arcanite,1"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
       ["Peau robuste traitée,2"] = "ITEM",
     },
   },
@@ -63910,6 +64237,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en mailles,25"] = "ITEM",
       ["Barre d\'arcanite,4"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
     },
   },
   ["Les garde-jambes de traqueur des cryptes,Le veneur "] = {
@@ -63930,6 +64259,8 @@ pfDB["quests"]["frFR"] = {
       ["Garde-jambes désacralisés,1"] = "ITEM",
       ["Débris d\'armure en mailles,20"] = "ITEM",
       ["Barre d\'arcanite,3"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
       ["Peau robuste traitée,5"] = "ITEM",
     },
   },
@@ -63973,6 +64304,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en mailles,12"] = "ITEM",
       ["Barre d\'arcanite,2"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
     },
   },
   ["Les bottes de traqueur des cryptes,Le veneur "] = {
@@ -64015,6 +64348,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en mailles,8"] = "ITEM",
       ["Barre d\'arcanite,1"] = "ITEM",
       ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
     },
   },
   ["Le ceinturon de traqueur des cryptes,Le veneur "] = {
@@ -64056,6 +64391,8 @@ pfDB["quests"]["frFR"] = {
       ["Protège-poignets désacralisés,1"] = "ITEM",
       ["Débris d\'armure en mailles,6"] = "ITEM",
       ["Barre d\'arcanite,1"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
       ["Peau robuste traitée,2"] = "ITEM",
     },
   },
@@ -64100,6 +64437,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en mailles,25"] = "ITEM",
       ["Barre d\'arcanite,4"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
     },
   },
   ["Le kilt de Brise-terre,Rimblat Br"] = {
@@ -64120,6 +64459,8 @@ pfDB["quests"]["frFR"] = {
       ["Garde-jambes désacralisés,1"] = "ITEM",
       ["Débris d\'armure en mailles,20"] = "ITEM",
       ["Barre d\'arcanite,3"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
       ["Peau robuste traitée,5"] = "ITEM",
     },
   },
@@ -64205,6 +64546,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en mailles,8"] = "ITEM",
       ["Barre d\'arcanite,1"] = "ITEM",
       ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
     },
   },
   ["Le ceinturon de Brise-terre,Rimblat Br"] = {
@@ -64247,6 +64590,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en mailles,6"] = "ITEM",
       ["Barre d\'arcanite,1"] = "ITEM",
       ["Peau robuste traitée,2"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
     },
   },
   ["La cuirasse de la faucheuse d\'os,Rohan l’"] = {
@@ -64268,12 +64613,15 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en cuir,25"] = "ITEM",
       ["Barre d\'arcanite,2"] = "ITEM",
       ["Peau robuste traitée,6"] = "ITEM",
+      ["Peau robuste traitée,6"] = "ITEM",
+      ["Peau robuste traitée,6"] = "ITEM",
     },
   },
   ["Les cuissards de la faucheuse d\'os,Rohan l’"] = {
     ["id"] = 9078,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["class"] = 8,
     ["pre"] = "Les échos de la guerre,Le command",
     ["log"] = "Si vous voulez que je fabrique de la faucheuse d’os, vous allez devoir me fournir les ingrédients.$B$BEntrez dans Naxxramas, la grande nécropole flottante qu’on voit là-haut dans le ciel, et trouvez des débris d’armures détruites pendant la guerre et des morceaux d’armures désacralisées. Ramenez-moi ça avec les ingrédients pour les assembler et vous aurez votre faucheuse d’os. Au fait, il faudra aussi me payer pour le dérangement... c’est moi qui fournit les os.",
     ["obj"] = "Rohan l’assassin, à la chapelle de l’Espoir de Lumière dans les Maleterres de l’est, vous fabriquera des cuissards de la faucheuse d’os si vous lui apportez les éléments suivants : 1 paire de Cuissards désacralisés, 20 Débris d\'armure en cuir, 1 Barre d’arcanite, 8 Peaux robustes traitées et 100 pièces d’or.",
@@ -64287,6 +64635,8 @@ pfDB["quests"]["frFR"] = {
       ["Cuissards désacralisés,1"] = "ITEM",
       ["Débris d\'armure en cuir,20"] = "ITEM",
       ["Barre d\'arcanite,1"] = "ITEM",
+      ["Peau robuste traitée,8"] = "ITEM",
+      ["Peau robuste traitée,8"] = "ITEM",
       ["Peau robuste traitée,8"] = "ITEM",
     },
   },
@@ -64307,6 +64657,8 @@ pfDB["quests"]["frFR"] = {
     ["item"] = {
       ["Heaume désacralisé,1"] = "ITEM",
       ["Débris d\'armure en cuir,15"] = "ITEM",
+      ["Peau robuste traitée,8"] = "ITEM",
+      ["Peau robuste traitée,8"] = "ITEM",
       ["Peau robuste traitée,8"] = "ITEM",
       ["Cristal de nexus,1"] = "ITEM",
     },
@@ -64329,6 +64681,8 @@ pfDB["quests"]["frFR"] = {
       ["Espauliers désacralisés,1"] = "ITEM",
       ["Débris d\'armure en cuir,12"] = "ITEM",
       ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
       ["Cristal de nexus,1"] = "ITEM",
     },
   },
@@ -64349,6 +64703,8 @@ pfDB["quests"]["frFR"] = {
     ["item"] = {
       ["Solerets désacralisés,1"] = "ITEM",
       ["Débris d\'armure en cuir,12"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
       ["Cristal de nexus,2"] = "ITEM",
     },
@@ -64372,6 +64728,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en cuir,8"] = "ITEM",
       ["Barre d\'arcanite,1"] = "ITEM",
       ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
     },
   },
   ["La sangle de la faucheuse d\'os,Rohan l’"] = {
@@ -64391,6 +64749,8 @@ pfDB["quests"]["frFR"] = {
     ["item"] = {
       ["Sangle désacralisée,1"] = "ITEM",
       ["Débris d\'armure en cuir,8"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
       ["Peau robuste traitée,5"] = "ITEM",
       ["Cristal de nexus,1"] = "ITEM",
     },
@@ -64413,6 +64773,8 @@ pfDB["quests"]["frFR"] = {
       ["Brassards désacralisées,1"] = "ITEM",
       ["Débris d\'armure en cuir,6"] = "ITEM",
       ["Barre d\'arcanite,1"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
       ["Peau robuste traitée,2"] = "ITEM",
     },
   },
@@ -64451,6 +64813,8 @@ pfDB["quests"]["frFR"] = {
       ["Tunique désacralisée,1"] = "ITEM",
       ["Débris d\'armure en cuir,25"] = "ITEM",
       ["Peau robuste traitée,6"] = "ITEM",
+      ["Peau robuste traitée,6"] = "ITEM",
+      ["Peau robuste traitée,6"] = "ITEM",
       ["Cristal de nexus,2"] = "ITEM",
     },
   },
@@ -64471,6 +64835,8 @@ pfDB["quests"]["frFR"] = {
     ["item"] = {
       ["Garde-jambes désacralisés,1"] = "ITEM",
       ["Débris d\'armure en cuir,20"] = "ITEM",
+      ["Peau robuste traitée,8"] = "ITEM",
+      ["Peau robuste traitée,8"] = "ITEM",
       ["Peau robuste traitée,8"] = "ITEM",
       ["Cristal de nexus,1"] = "ITEM",
     },
@@ -64493,6 +64859,8 @@ pfDB["quests"]["frFR"] = {
       ["Chapel désacralisé,1"] = "ITEM",
       ["Débris d\'armure en cuir,15"] = "ITEM",
       ["Peau robuste traitée,6"] = "ITEM",
+      ["Peau robuste traitée,6"] = "ITEM",
+      ["Peau robuste traitée,6"] = "ITEM",
       ["Cristal de nexus,2"] = "ITEM",
     },
   },
@@ -64513,6 +64881,8 @@ pfDB["quests"]["frFR"] = {
     ["item"] = {
       ["Spallières désacralisées,1"] = "ITEM",
       ["Débris d\'armure en cuir,12"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
       ["Peau robuste traitée,5"] = "ITEM",
       ["Cristal de nexus,1"] = "ITEM",
     },
@@ -64536,6 +64906,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en cuir,12"] = "ITEM",
       ["Etoffe lunaire,3"] = "ITEM",
       ["Peau robuste traitée,2"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
     },
   },
   ["Les garde-mains de marcherêve,Rayne, à "] = {
@@ -64555,6 +64927,8 @@ pfDB["quests"]["frFR"] = {
     ["item"] = {
       ["Garde-mains désacralisés,1"] = "ITEM",
       ["Débris d\'armure en cuir,8"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
       ["Peau robuste traitée,5"] = "ITEM",
       ["Cristal de nexus,1"] = "ITEM",
     },
@@ -64578,6 +64952,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en cuir,8"] = "ITEM",
       ["Etoffe lunaire,3"] = "ITEM",
       ["Peau robuste traitée,2"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
     },
   },
   ["Les protège-poignets de marcherêve,Rayne, à "] = {
@@ -64598,6 +64974,8 @@ pfDB["quests"]["frFR"] = {
       ["Protège-poignets désacralisés,1"] = "ITEM",
       ["Débris d\'armure en cuir,6"] = "ITEM",
       ["Cristal des arcanes,1"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
+      ["Peau robuste traitée,2"] = "ITEM",
       ["Peau robuste traitée,2"] = "ITEM",
     },
   },
@@ -64698,6 +65076,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en tissu,12"] = "ITEM",
       ["Etoffe lunaire,2"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
     },
   },
   ["Les sandales de givrefeu,L’archim"] = {
@@ -64718,6 +65098,8 @@ pfDB["quests"]["frFR"] = {
       ["Sandales désacralisées,1"] = "ITEM",
       ["Débris d\'armure en tissu,12"] = "ITEM",
       ["Etoffe lunaire,2"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
     },
   },
@@ -64865,6 +65247,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en tissu,12"] = "ITEM",
       ["Etoffe lunaire,2"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
     },
   },
   ["Les sandales de pestecoeur,Mataus la "] = {
@@ -64885,6 +65269,8 @@ pfDB["quests"]["frFR"] = {
       ["Sandales désacralisées,1"] = "ITEM",
       ["Débris d\'armure en tissu,12"] = "ITEM",
       ["Etoffe lunaire,2"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
     },
   },
@@ -65032,6 +65418,8 @@ pfDB["quests"]["frFR"] = {
       ["Débris d\'armure en tissu,12"] = "ITEM",
       ["Etoffe lunaire,2"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
     },
   },
   ["Les sandales de foi,Le père I"] = {
@@ -65052,6 +65440,8 @@ pfDB["quests"]["frFR"] = {
       ["Sandales désacralisées,1"] = "ITEM",
       ["Débris d\'armure en tissu,12"] = "ITEM",
       ["Etoffe lunaire,2"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
     },
   },
@@ -65990,6 +66380,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 9232,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Les échos de la guerre,Le command",
     ["log"] = "Vous vous imaginez être $gun héros:une héroïne; de l’Aube, pas vrai ? J’ai vu nos plus grands soldats submergés par la racaille de Kel’Thuzad ! Après ça, combien pensez-vous que je vais parier sur $gun ahuri fraîchement débarqué:une ahurie fraîchement débarquée; ?$B$B<Wilheim soupire.>$B$BM’enfin, c’est pas comme si j’avais le choix. Y’a personne d’autre, alors autant vous aider.$B$BOmarion m’a laissé avec un seul patron. C’est tout ce que j’ai à mon répertoire... Je peux faire quelques variations sur ce thème de pantalon, il faudra juste que vous me trouviez les matériaux.",
     ["obj"] = "L’artisan Wilhelm de la chapelle de l’Espoir de Lumière, dans les Maleterres de l’est, veut 2 Runes de givre, 2 Essences d\'eau, 2 Saphirs bleus et 30 pièces d’or.",
     ["start"] = {
@@ -66023,6 +66414,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 9234,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Le recueil d\'Omarion,Remettre l",
     ["log"] = "Grâce à vous et Omarion (qu’il repose en paix), je suis maintenant capable de forger des gantelets plaie-de-glace. Vous n\'avez plus qu\'à m\'apporter les matériaux... et à me verser une modeste rétribution.",
     ["obj"] = "L’artisan Wilhelm de la chapelle de l’Espoir de Lumière, dans les Maleterres de l’est, veut 5 Runes de givre, 12 barres de thorium, 2 barres d\'arcanite, 2 Essences d\'eau et 200 pièces d’or.",
     ["start"] = {
@@ -66042,6 +66434,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 9235,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Le recueil d\'Omarion,Remettre l",
     ["log"] = "Grâce à vous et Omarion (qu’il repose en paix), je suis maintenant capable de forger des brassards plaie-de-glace. Vous n\'avez plus qu\'à m\'apporter les matériaux... et à me verser une modeste rétribution.",
     ["obj"] = "L’artisan Wilhelm de la chapelle de l’Espoir de Lumière, dans les Maleterres de l’est, veut 4 Runes de givre, 12 barres de thorium, 2 barres d\'arcanite, 2 Essences d\'eau et 200 pièces d’or.",
     ["start"] = {
@@ -66061,6 +66454,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 9236,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Le recueil d\'Omarion,Remettre l",
     ["log"] = "Grâce à vous et Omarion (qu\'il repose en paix), je suis maintenant capable de forger la cuirasse plaie-de-glace. Vous n\'avez plus qu\'à m\'apporter les matériaux... et à me verser une modeste rétribution.",
     ["obj"] = "L\'artisan Wilhelm de la chapelle de l\'Espoir de Lumière, dans les Maleterres de l\'est, veut 8 Runes de givre, 16 barres de thorium, 2 barres d\'arcanite, 4 Essences d\'eau et 300 pièces d\'or. Vous devez aussi être $gExalté:Exaltée; par l\'Aube d\'argent.",
     ["start"] = {
@@ -66080,6 +66474,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 9237,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Le recueil d\'Omarion,Remettre l",
     ["log"] = "Grâce à vous et Omarion (qu\'il repose en paix), je suis maintenant capable de coudre une cape glaciaire. Vous n\'avez plus qu\'à m\'apporter les matériaux... et à me verser une modeste rétribution.",
     ["obj"] = "L\'artisan Wilhelm de la chapelle de l\'Espoir de Lumière, dans les Maleterres de l\'est, veut 5 Runes de givre, 4 Rouleaux d\'étoffe runique, 2 Essences d\'eau, 4 Soies d\'araignée toilacier et 200 pièces d\'or. Vous devez aussi être $gExalté:Exaltée; par l\'Aube d\'argent.",
     ["start"] = {
@@ -66099,6 +66494,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 9238,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Le recueil d\'Omarion,Remettre l",
     ["log"] = "Grâce à vous et Omarion (qu\'il repose en paix), je suis maintenant capable de coudre des poignets glaciaires. Vous n\'avez plus qu\'à m\'apporter les matériaux... et à me verser une modeste rétribution.",
     ["obj"] = "L\'artisan Wilhelm de la chapelle de l\'Espoir de Lumière, dans les Maleterres de l\'est, veut 4 Runes de givre, 2 Rouleaux d\'étoffe runique, 2 Essences d\'eau, 2 Soies d\'araignée toilacier et 200 pièces d\'or.",
     ["start"] = {
@@ -66118,6 +66514,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 9239,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Le recueil d\'Omarion,Remettre l",
     ["log"] = "Grâce à vous et Omarion (qu\'il repose en paix), je suis maintenant capable de coudre des gants glaciaires. Vous n\'avez plus qu\'à m\'apporter les matériaux... et à me verser une modeste rétribution.",
     ["obj"] = "L\'artisan Wilhelm de la chapelle de l\'Espoir de Lumière, dans les Maleterres de l\'est, veut 5 Runes de givre, 4 Rouleaux d\'étoffe runique, 4 Essences d\'eau, 2 Soies d\'araignée toilacier et 200 pièces d\'or.",
     ["start"] = {
@@ -66137,6 +66534,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 9240,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Le recueil d\'Omarion,Remettre l",
     ["log"] = "Grâce à vous et Omarion (qu\'il repose en paix), je suis maintenant capable de coudre un gilet glaciaire. Vous n\'avez plus qu\'à m\'apporter les matériaux... et à me verser une modeste rétribution.",
     ["obj"] = "L\'artisan Wilhelm de la chapelle de l\'Espoir de Lumière, dans les Maleterres de l\'est, veut 8 Runes de givre, 8 Rouleaux d\'étoffe runique, 6 Essences d\'eau, 4 Soies d\'araignée toilacier et 300 pièces d\'or. Vous devez aussi être $gExalté:Exaltée; par l\'Aube d\'argent.",
     ["start"] = {
@@ -66156,6 +66554,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 9241,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Le recueil d\'Omarion,Remettre l",
     ["log"] = "Grâce à vous et Omarion (qu\'il repose en paix), je suis maintenant capable de confectionner des brassards polaires. Vous n\'avez plus qu\'à m\'apporter les matériaux... et à me verser une modeste rétribution.",
     ["obj"] = "L\'artisan Wilhelm de la chapelle de l\'Espoir de Lumière, dans les Maleterres de l\'est, veut 4 Runes de givre, 12 Cuirs enchantés, 3 Essences d\'eau, 3 Peaux robustes traitées et 200 pièces d\'or.",
     ["start"] = {
@@ -66169,12 +66568,15 @@ pfDB["quests"]["frFR"] = {
       ["Cuir enchanté,12"] = "ITEM",
       ["Essence d\'eau,3"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
     },
   },
   ["Les gants polaires,L\'artisan "] = {
     ["id"] = 9242,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Le recueil d\'Omarion,Remettre l",
     ["log"] = "Grâce à vous et Omarion (qu\'il repose en paix), je suis maintenant capable de confectionner des gants polaires. Vous n\'avez plus qu\'à m\'apporter les matériaux... et à me verser une modeste rétribution.",
     ["obj"] = "L\'artisan Wilhelm de la chapelle de l\'Espoir de Lumière, dans les Maleterres de l\'est, veut 5 Runes de givre, 12 Cuirs enchantés, 3 Essences d\'eau, 3 Peaux robustes traitées et 200 pièces d\'or.",
     ["start"] = {
@@ -66188,12 +66590,15 @@ pfDB["quests"]["frFR"] = {
       ["Cuir enchanté,12"] = "ITEM",
       ["Essence d\'eau,3"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
     },
   },
   ["Les jambières polaires,L\'artisan "] = {
     ["id"] = 9243,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Le recueil d\'Omarion,Remettre l",
     ["log"] = "Grâce à vous et Omarion (qu\'il repose en paix), je suis maintenant capable de confectionner des jambières polaires. Vous n\'avez plus qu\'à m\'apporter les matériaux... et à me verser une modeste rétribution.",
     ["obj"] = "L\'artisan Wilhelm de la chapelle de l\'Espoir de Lumière, dans les Maleterres de l\'est, veut 8 Runes de givre, 16 Cuirs enchantés, 5 Essences d\'eau, 5 Peaux robustes traitées et 300 pièces d\'or. Vous devez aussi être $gExalté:Exaltée; par l\'Aube d\'argent.",
     ["start"] = {
@@ -66207,12 +66612,15 @@ pfDB["quests"]["frFR"] = {
       ["Cuir enchanté,16"] = "ITEM",
       ["Essence d\'eau,5"] = "ITEM",
       ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
     },
   },
   ["Les brassards glacécaille,L\'artisan "] = {
     ["id"] = 9244,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Le recueil d\'Omarion,Remettre l",
     ["log"] = "Grâce à vous et Omarion (qu\'il repose en paix), je suis maintenant capable de confectionner des brassards glacécaille. Vous n\'avez plus qu\'à m\'apporter les matériaux... et à me verser une modeste rétribution.",
     ["obj"] = "L\'artisan Wilhelm de la chapelle de l\'Espoir de Lumière, dans les Maleterres de l\'est, veut 4 Runes de givre, 16 Ecailles de scorpide épaisses, 5 Essences d\'eau, 3 Peaux robustes traitées et 200 pièces d\'or.",
     ["start"] = {
@@ -66226,12 +66634,15 @@ pfDB["quests"]["frFR"] = {
       ["Ecaille de scorpide épaisse,16"] = "ITEM",
       ["Essence d\'eau,5"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
     },
   },
   ["Les gantelets glacécaille,L\'artisan "] = {
     ["id"] = 9245,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Le recueil d\'Omarion,Remettre l",
     ["log"] = "Grâce à vous et Omarion (qu\'il repose en paix), je suis maintenant capable de confectionner des gantelets glacécaille. Vous n\'avez plus qu\'à m\'apporter les matériaux... et à me verser une modeste rétribution.",
     ["obj"] = "L\'artisan Wilhelm de la chapelle de l\'Espoir de Lumière, dans les Maleterres de l\'est, veut 5 Runes de givre, 16 Ecailles de scorpide épaisses, 5 Essences d\'eau, 3 Peaux robustes traitées et 200 pièces d\'or.",
     ["start"] = {
@@ -66245,12 +66656,15 @@ pfDB["quests"]["frFR"] = {
       ["Ecaille de scorpide épaisse,16"] = "ITEM",
       ["Essence d\'eau,5"] = "ITEM",
       ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
+      ["Peau robuste traitée,3"] = "ITEM",
     },
   },
   ["La cuirasse glacécaille,L\'artisan "] = {
     ["id"] = 9246,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Le recueil d\'Omarion,Remettre l",
     ["log"] = "Grâce à vous et Omarion (qu\'il repose en paix), je suis maintenant capable de confectionner une cuirasse glacécaille. Vous n\'avez plus qu\'à m\'apporter les matériaux... et à me verser une modeste rétribution.",
     ["obj"] = "L\'artisan Wilhelm de la chapelle de l\'Espoir de Lumière, dans les Maleterres de l\'est, veut 8 Runes de givre, 24 Ecailles de scorpide épaisses, 7 Essences d\'eau, 5 Peaux robustes traitées et 300 pièces d\'or. Vous devez aussi être $gExalté:Exaltée; par l\'Aube d\'argent.",
     ["start"] = {
@@ -66263,6 +66677,8 @@ pfDB["quests"]["frFR"] = {
       ["Rune de givre,8"] = "ITEM",
       ["Ecaille de scorpide épaisse,24"] = "ITEM",
       ["Essence d\'eau,7"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
+      ["Peau robuste traitée,5"] = "ITEM",
       ["Peau robuste traitée,5"] = "ITEM",
     },
   },
@@ -66917,6 +67333,7 @@ pfDB["quests"]["frFR"] = {
     ["lvl"] = 38,
     ["race"] = 77,
     ["pre"] = "Le rapport de Vimaire,Donner le ",
+    ["pre"] = "Le rapport de Vimaire,Donner le ",
     ["log"] = "Bien, d\'après ce que je déduis du rapport du capitaine Vimaire, vous avez été d\'une aide capitale dans ces investigations, et de cela je vous remercie.$B$BJe peux avoir l\'esprit en paix sachant que vous vous occupez de ce problème. Si vous acceptez, je vous suggère de retourner voir le capitaine Vimaire et de l\'aider à résoudre l\'affaire.",
     ["obj"] = "Retourner voir le capitaine Garran Vimaire à Theramore.",
     ["start"] = {
@@ -67004,8 +67421,8 @@ pfDB["quests"]["frFR"] = {
     ["obj"] = "Parler au seigneur de guerre Gorchuk, dans la vallée des Esprits d’Orgrimmar.",
     ["start"] = {
       ["Sergent-chef Taiga"] = "NPC",
-      ["Sergent-chef Grimsford"] = "NPC",
       ["Sergent-chef Kai\'jin"] = "NPC",
+      ["Sergent-chef Grimsford"] = "NPC",
     },
     ["end"] = {
       ["Seigneur de guerre Gorchuk"] = "NPC",
@@ -67250,7 +67667,8 @@ pfDB["quests"]["frFR"] = {
   },
   ["Empuantir Austrivage,Lancer tro"] = {
     ["id"] = 1657,
-    ["min"] = 58,
+    ["min"] = 25,
+    ["lvl"] = 60,
     ["log"] = "Nous allons célébrer la Sanssaint en grande pompe… en en faisant voir de toutes les couleurs à nos ennemis d’Austrivage !$B$BPrenez l’une de ces boules puantes conçues spécialement pour l’occasion. Elle est remplie d’une substance nauséabonde dont aucun humain - ou aucune bête à l’esprit simple, d’ailleurs - ne peut supporter l’odeur. Il faut la jeter au beau milieu d’Austrivage pour qu’elle agisse correctement, donc attendez-vous à combattre l’Alliance !$B$BQuand vous aurez accompli cette tâche… cet hommage à notre libération, revenez me voir !",
     ["obj"] = "Lancer trois Boules puantes des Réprouvés au milieu d’Austrivage en Hautebrande, puis revenez voir la sombre imploratrice Yanka à la Fête de l’homme d’osier, aux Clairières de Tirisfal.",
     ["start"] = {
@@ -67293,12 +67711,13 @@ pfDB["quests"]["frFR"] = {
       ["Chope de bière sombrefer,1"] = "ITEM",
     },
   },
-  ["La présence de la puissance,Bring me t"] = {
+  ["La présence de la puissance,Bring me a"] = {
     ["id"] = 8184,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter $B$Bthis foul place. Look inside the jinxed hoodoo. Bring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 1,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
@@ -67306,16 +67725,18 @@ pfDB["quests"]["frFR"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
     ["item"] = {
-      ["Idole primordiale hakkari,1"] = "ITEM",
       ["Poupée vaudou percée,1"] = "ITEM",
+      ["Arcanum de protection,1"] = "ITEM",
+      ["Egide primordiale hakkari,1"] = "ITEM",
     },
   },
-  ["Le signe du syncrétiste,Bring me t"] = {
+  ["Le signe du syncrétiste,Bring me a"] = {
     ["id"] = 8185,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 2,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
@@ -67323,16 +67744,18 @@ pfDB["quests"]["frFR"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
     ["item"] = {
-      ["Idole primordiale hakkari,1"] = "ITEM",
       ["Poupée vaudou percée,1"] = "ITEM",
+      ["Arcanum de protection,1"] = "ITEM",
+      ["Châle primordial hakkari,1"] = "ITEM",
     },
   },
-  ["La caresse de la mort,Bring me t"] = {
+  ["La caresse de la mort,Bring me a"] = {
     ["id"] = 8186,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 8,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
@@ -67340,16 +67763,18 @@ pfDB["quests"]["frFR"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
     ["item"] = {
-      ["Idole primordiale hakkari,1"] = "ITEM",
       ["Poupée vaudou percée,1"] = "ITEM",
+      ["Arcanum de rapidité,1"] = "ITEM",
+      ["Casaque primordiale hakkari,1"] = "ITEM",
     },
   },
-  ["L\'appel de l\'épervier,Bring me t"] = {
+  ["L\'appel de l\'épervier,Bring me a"] = {
     ["id"] = 8187,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 4,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
@@ -67357,16 +67782,18 @@ pfDB["quests"]["frFR"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
     ["item"] = {
-      ["Idole primordiale hakkari,1"] = "ITEM",
       ["Poupée vaudou percée,1"] = "ITEM",
+      ["Arcanum de rapidité,1"] = "ITEM",
+      ["Etançon primordial hakkari,1"] = "ITEM",
     },
   },
-  ["L\'étreinte vigilante du vaudouisan,Bring me t"] = {
+  ["L\'étreinte vigilante du vaudouisan,Bring me a"] = {
     ["id"] = 8188,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 64,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
@@ -67374,16 +67801,18 @@ pfDB["quests"]["frFR"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
     ["item"] = {
-      ["Idole primordiale hakkari,1"] = "ITEM",
       ["Poupée vaudou percée,1"] = "ITEM",
+      ["Arcanum de focalisation,1"] = "ITEM",
+      ["Echarpe primordiale hakkari,1"] = "ITEM",
     },
   },
-  ["La présence de la vision,Bring me t"] = {
+  ["La présence de la vision,Bring me a"] = {
     ["id"] = 8189,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 128,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
@@ -67391,16 +67820,18 @@ pfDB["quests"]["frFR"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
     ["item"] = {
-      ["Idole primordiale hakkari,1"] = "ITEM",
       ["Poupée vaudou percée,1"] = "ITEM",
+      ["Arcanum de focalisation,1"] = "ITEM",
+      ["Ceinturon primordial hakkari,1"] = "ITEM",
     },
   },
-  ["Le maléfice porte-guigne,Bring me t"] = {
+  ["Le maléfice porte-guigne,Bring me a"] = {
     ["id"] = 8190,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 256,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
@@ -67408,16 +67839,18 @@ pfDB["quests"]["frFR"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
     ["item"] = {
-      ["Idole primordiale hakkari,1"] = "ITEM",
       ["Poupée vaudou percée,1"] = "ITEM",
+      ["Arcanum de focalisation,1"] = "ITEM",
+      ["Brachiales primordiales hakkari,1"] = "ITEM",
     },
   },
-  ["L\'aura prophétique,Bring me t"] = {
+  ["L\'aura prophétique,Bring me a"] = {
     ["id"] = 8191,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 16,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
@@ -67425,16 +67858,18 @@ pfDB["quests"]["frFR"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
     ["item"] = {
-      ["Idole primordiale hakkari,1"] = "ITEM",
       ["Poupée vaudou percée,1"] = "ITEM",
+      ["Arcanum de focalisation,1"] = "ITEM",
+      ["Tabard primordial hakkari,1"] = "ITEM",
     },
   },
-  ["La caresse de l\'animiste,Bring me t"] = {
+  ["La caresse de l\'animiste,Bring me a"] = {
     ["id"] = 8192,
     ["min"] = 58,
     ["lvl"] = 60,
-    ["log"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
-    ["obj"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+    ["class"] = 1024,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
+    ["obj"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["start"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
@@ -67442,8 +67877,9 @@ pfDB["quests"]["frFR"] = {
       ["Zanza le Sans-Repos"] = "NPC",
     },
     ["item"] = {
-      ["Idole primordiale hakkari,1"] = "ITEM",
       ["Poupée vaudou percée,1"] = "ITEM",
+      ["Arcanum de protection,1"] = "ITEM",
+      ["Manchettes primordiales hakkari,1"] = "ITEM",
     },
   },
   ["Maître pêcheur,"] = {
@@ -67594,20 +68030,14 @@ pfDB["quests"]["frFR"] = {
   },
   ["Héros des Foudrepiques,"] = {
     ["id"] = 8271,
-    ["min"] = 61,
+    ["min"] = 51,
+    ["lvl"] = 60,
     ["pre"] = "La bataille d\'Alterac,Entrez dan",
     ["start"] = {
+      ["Prospectrice Taillepierre"] = "NPC",
     },
     ["end"] = {
-    },
-  },
-  ["Héros des Loups-de-givre,"] = {
-    ["id"] = 8272,
-    ["min"] = 61,
-    ["pre"] = "La bataille pour Alterac,Entrez dan",
-    ["start"] = {
-    },
-    ["end"] = {
+      ["Prospectrice Taillepierre"] = "NPC",
     },
   },
   ["La gratitude d\'Oran,"] = {
@@ -67684,7 +68114,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Caqueter pour un bonbon à la menthe,Utilisez l"] = {
     ["id"] = 8353,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "Ah, vous faites les blagues de la Sanssaint pour un enfant malade, c\'est cela ? Je me disais aussi, vous êtes un peu $gvieux:vieille; pour quémander des bonbons…$B$BEh bien, pour que je vous donne un bonbon - un véritable bonbon à la menthe de Forgefer - vous devrez… caqueter comme un poulet ! Oui, oui, les poulets adorent les bonbons à la menthe… Bon, d\'accord, peut-être qu\'ils ne les ADORENT pas… mais je ne vous en donnerai pas si vous n\'imitez pas le poulet pour moi !$B$BAlors, $C, vous êtes $gprêt:prête; à relever le défi ? C\'est le moment de gagner votre bonbon !",
     ["obj"] = "Utilisez l\'emote /poulet devant l\'aubergiste Brassefeu, et vous recevrez en échange un bonbon à la menthe de Forgefer !",
@@ -67697,7 +68127,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Boule de gomme en approche,Utilisez l"] = {
     ["id"] = 8355,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "$gUn quémandeur:une quémandeuse; de bonbons ! Hourra !$B$BBon, même si vous faites quelque chose de noble en récupérant des bonbons pour un enfant malade, je ne peux pas vous laisser vous en sortir si facilement. J\'ai une délicieuse boule de gomme de Gnomeregan pour le gamin, que je vous donnerai si… vous imitez le bruit du train pour moi ! Haha, oui, c\'est une bonne blague ! Le prix de cette boule de gomme est d\'imiter le train ! Tchou-tchou, $C !",
     ["obj"] = "Utilisez l\'emote /tchou devant Talvash del Kissel, et vous recevrez en échange une boule de gomme de Gnomeregan !",
@@ -67710,7 +68140,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Montrer ses muscles pour du nougat,Utilisez l"] = {
     ["id"] = 8356,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "C’est un costume très... intéressant, que vous avez là, dites-moi. Même si vous vous montrez sympa et que vous aidez cette année un enfant malade à faire ses blagues de la Sanssaint, j’ai bien peur d’être obligée de vous demander d’accomplir un petit tour pour moi !$b$bVoyons… Vous semblez si $gfort:forte; et si $gmis:mise; en valeur dans ce… costume… Faites donc un peu jouer vos muscles ! Allez, ne soyez pas timide, frimez un peu pour moi, jeune $ghomme:femme; !$b$bQuand je vous aurai vu bander vos muscles, je vous donnerai de cet excellent nougat de Hurlevent. C’est un fameux bonbon de la Sanssaint.",
     ["obj"] = "Utilisez l\'emote /frime devant l\'aubergiste Allison, et vous recevrez en échange du nougat de Hurlevent !",
@@ -67723,7 +68153,7 @@ pfDB["quests"]["frFR"] = {
   },
   ["Danser pour du massepain,Utilisez l"] = {
     ["id"] = 8357,
-    ["min"] = 10,
+    ["min"] = 61,
     ["lvl"] = 60,
     ["log"] = "Même si vous faites la tournée de la Sanssaint pour un enfant malade, vous devez quand même faire un petit tour pour obtenir un bonbon ! Nous ne pouvons pas déroger aux traditions, n\'est-ce pas ?$B$BJe crois que le prix d\'un morceau de massepain aujourd\'hui est de se remuer un peu et de DANSER ! C\'est ça, voyons donc vos pas de danse ! Dansez pour moi, et je vous donnerai un excellent massepain !",
     ["obj"] = "Utilisez l\'emote /danser devant l\'aubergiste Saelienne, et vous recevrez en échange du massepain de Darnassus !",
@@ -67781,7 +68211,8 @@ pfDB["quests"]["frFR"] = {
   },
   ["La puissance du pin,Utilisez l"] = {
     ["id"] = 8373,
-    ["min"] = 59,
+    ["min"] = 25,
+    ["lvl"] = 60,
     ["log"] = "La chose que je déteste le plus dans la Sanssaint sont les boules puantes que les Réprouvés lancent sur Austrivage. Qui aurait cru que fêter leur libération impliquerait une pagaille aussi nauséabonde ?$B$BPendant la Sanssaint, servez-vous de ce nettoyeur pour retirer toutes les boules puantes immondes que la Horde aura déposées dans le village. Il utilise la puissance du pin pour chasser les odeurs pestilentielles.$B$BSi vous aidez Austrivage à rester propre, je vous donnerai quelques bonbons de la Sanssaint. Je suis sûre que vous les aimerez. Marché conclu ?",
     ["obj"] = "Utilisez le Nettoyeur de boules puantes pour retirer les Boules puantes que les Réprouvés ont lancées sur Austrivage. Retournez voir le sergent Hartman à Austrivage quand vous aurez terminé.",
     ["start"] = {
@@ -67795,6 +68226,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 8467,
     ["min"] = 45,
     ["lvl"] = 55,
+    ["pre"] = "Allié des Grumegueules,Grifleur v",
     ["pre"] = "Allié des Grumegueules,Grifleur v",
     ["obj"] = "Some of the Deadwood furbolgs wear a distinctive headdress that may be used as a means of proof in thinning their numbers. Bring me a feather from any headdresses you acquire; for every set of five you bring me, you will earn recognition amongst the Timbermaw.",
     ["start"] = {
@@ -67824,9 +68256,9 @@ pfDB["quests"]["frFR"] = {
   },
   ["Le fardeau des Vols draconiques,"] = {
     ["id"] = 8555,
-    ["min"] = 60,
+    ["min"] = 61,
     ["lvl"] = 60,
-    ["pre"] = "Un pion sur l\'Echiquier éternel,Apprenez t",
+    ["log"] = "The Charge of the DragonflightsThis quest is disabled until patch 1.9.",
     ["start"] = {
       ["Anachronos"] = "NPC",
     },
@@ -67842,8 +68274,10 @@ pfDB["quests"]["frFR"] = {
     ["log"] = "Les insignes que vous récupérez à la fin de vos missions tactiques, logistiques et de combat pour le compte de l’Imploratrice céleste Corne-fière ne sont pas seulement destinés à faire joli, $N.$B$BConservez-les soigneusement. Au fur et à mesure que vous ferez la preuve de votre loyauté envers notre organisation, vous pourrez les échanger contre le matériel que nous réservons à nos alliés les plus proches.",
     ["obj"] = "Ramener 15 Badges cénariens de combat, 20 Badges cénariens de logistique, 17 Badges cénariens de tactique et 1 Marque de Remulos à Vargus, au Fort cénarien en Silithus. Vous devrez aussi être $gRévéré:Révérée; par le Cercle cénarien pour terminer cette quête.",
     ["start"] = {
+      ["Vargus"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
     ["item"] = {
       ["Badge cénarien de combat,15"] = "ITEM",
@@ -67856,6 +68290,7 @@ pfDB["quests"]["frFR"] = {
     ["id"] = 8576,
     ["min"] = 60,
     ["lvl"] = 60,
+    ["pre"] = "Le grand livre magique d\'Azuregos,Apporter l",
     ["pre"] = "Le grand livre magique d\'Azuregos,Apporter l",
     ["start"] = {
       ["Narain Divinambolesque"] = "NPC",
@@ -68665,8 +69100,8 @@ pfDB["quests"]["frFR"] = {
     ["log"] = "Bonjour. Que vous ayez accepté de m\'écouter est déjà une bonne chose. L\'Alliance a besoin de toute l\'aide possible pour se préparer à la guerre d\'Ahn\'Qiraj. Cela veut aussi dire votre aide ! Au moment où je vous parle, des collecteurs officiels récoltent tout ce qui sera nécessaire pendant la bataille, mais sans votre aide, $N, nous n\'atteindrons pas nos objectifs ! Vous devriez aller parler au responsable, le grand maréchal Tombeneige. Qu\'en pensez-vous, $C ? Nous aiderez-vous dans ces préparatifs capitaux ?",
     ["obj"] = "Parler au grand maréchal Tombeneige dans la Garde militaire de Forgefer.",
     ["start"] = {
-      ["Sergent-chef Perrunboulon"] = "NPC",
       ["Sergent-chef Maclure"] = "NPC",
+      ["Sergent-chef Perrunboulon"] = "NPC",
       ["Sergent-chef Lunombre"] = "NPC",
     },
     ["end"] = {
@@ -68695,6 +69130,7 @@ pfDB["quests"]["frFR"] = {
       ["Implorateur céleste Kaldon"] = "NPC",
     },
     ["end"] = {
+      ["Vargus"] = "NPC",
     },
   },
   ["Un cadeau de fête,"] = {
@@ -68877,6 +69313,7 @@ pfDB["quests"]["frFR"] = {
   ["Un traître envers la Voile sanglante,"] = {
     ["id"] = 9259,
     ["min"] = 30,
+    ["lvl"] = 60,
     ["start"] = {
       ["Traître de la Voile sanglante"] = "NPC",
     },
@@ -68890,7 +69327,8 @@ pfDB["quests"]["frFR"] = {
   },
   ["Soigner de vieilles blessures,"] = {
     ["id"] = 9267,
-    ["min"] = 10,
+    ["min"] = 15,
+    ["lvl"] = 60,
     ["start"] = {
       ["Mupsi Dizzenchaîne"] = "NPC",
     },
@@ -68905,6 +69343,7 @@ pfDB["quests"]["frFR"] = {
   ["Combat naval,"] = {
     ["id"] = 9268,
     ["min"] = 40,
+    ["lvl"] = 60,
     ["start"] = {
       ["Rumsen Ratsaume"] = "NPC",
     },
@@ -68994,6 +69433,7 @@ pfDB["quests"]["frFR"] = {
     ["min"] = 60,
     ["lvl"] = 60,
     ["pre"] = "Le fardeau des Vols draconiques,",
+    ["pre"] = "Le fardeau des Vols draconiques,",
     ["log"] = "Champion, est-ce bien vous ? Un millier d’années se sont écoulées depuis que le fragment m’a été confié, et c’est à mon heure la plus sombre que quelqu’un se présente pour me le réclamer… Mais que serait une tragédie sans cruauté ?$B$B< Vaelastrasz tousse faiblement.>$B$BNe… Nefarius détient aujourd’hui le fragment du sceptre.$B$BLe temps presse. Nefarius a l’intention de détruire le fragment. Vous devez vous hâter !",
     ["obj"] = "Tuez Nefarian pour récupérer le Fragment de sceptre rouge. Rapportez le Fragment de sceptre rouge à Anachronos aux Grottes du temps en Tanaris. Vous avez une heure et demi pour accomplir cette tâche.",
     ["start"] = {
@@ -69004,6 +69444,18 @@ pfDB["quests"]["frFR"] = {
     },
     ["item"] = {
       ["Fragment de sceptre rouge,1"] = "ITEM",
+    },
+  },
+  ["Héros des Loups-de-givre,"] = {
+    ["id"] = 8272,
+    ["min"] = 51,
+    ["lvl"] = 60,
+    ["pre"] = "La bataille pour Alterac,Entrez dan",
+    ["start"] = {
+      ["Voggah Mortepoigne"] = "NPC",
+    },
+    ["end"] = {
+      ["Voggah Mortepoigne"] = "NPC",
     },
   },
   ["Metzen le renne,Trouvez Me"] = {
@@ -69472,6 +69924,7 @@ pfDB["quests"]["frFR"] = {
     ["obj"] = "Deliver the Call to Arms Announcement to the Keeper of the Rolls at Light\'s Hope Chapel in the Eastern Plaguelands.",
     ["start"] = {
       ["Recruteur de l\'Aube d\'argent"] = "NPC",
+      ["Eclaireur de l\'Aube d\'argent"] = "NPC",
     },
     ["end"] = {
       [""] = "NPC",
@@ -69664,6 +70117,502 @@ pfDB["quests"]["frFR"] = {
       ["Pièce des ancêtres,5"] = "ITEM",
     },
   },
+  ["Le rapport de Vimaire,Donner le "] = {
+    ["id"] = 1288,
+    ["min"] = 33,
+    ["lvl"] = 38,
+    ["race"] = 77,
+    ["log"] = "Vous avez fait du bon travail, $N, le meilleur que j\'ai vu de la part de quelqu\'un qui n\'est pas de chez nous.$B$BDame Portvaillant a demandé que je la tienne informée de cette situation délicate et je ne lui ai pas parlé depuis longtemps.$B$BJe m\'apprêtais à lui envoyer mon rapport, mais il me semble plus approprié que cela soit vous qui lui parliez. Vous répondrez mieux à ses questions que moi.",
+    ["obj"] = "Donner le Rapport de Vimaire à Dame Portvaillant à Theramore.",
+    ["start"] = {
+      ["Capitaine Garran Vimaire"] = "NPC",
+    },
+    ["end"] = {
+      ["Dame Jaina Portvaillant"] = "NPC",
+    },
+    ["item"] = {
+      [",1"] = "ITEM",
+    },
+  },
+  ["Caqueter pour un bonbon à la menthe,Utilisez l"] = {
+    ["id"] = 8354,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Ah, vous faites les blagues de la Sanssaint pour une petite fille malade, c\'est cela ? Je me disais aussi, vous êtes un peu $gvieux:vieille; pour quémander des bonbons…$B$BEh bien, pour que je vous donne un bonbon - un véritable bonbon à la menthe de Fossoyeuse - vous devrez… caqueter comme un poulet ! Oui, oui, les poulets adorent les bonbons à la menthe… Bon, d\'accord, peut-être qu\'ils ne les ADORENT pas… mais je ne vous en donnerai pas si vous n\'imitez pas le poulet pour moi !$B$BAlors, $C, vous êtes $gprêt:prête; à relever le défi ? C\'est le moment de gagner votre bonbon !",
+    ["obj"] = "Utilisez l\'emote /poulet devant l\'aubergiste Norman, et vous recevrez en échange un bonbon à la menthe de Fossoyeuse !",
+    ["start"] = {
+      ["Norman l\'aubergiste"] = "NPC",
+    },
+    ["end"] = {
+      ["Norman l\'aubergiste"] = "NPC",
+    },
+  },
+  ["Boule de gomme en approche,Utilisez l"] = {
+    ["id"] = 8358,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "$gUn quémandeur:Une quémandeuse; de bonbons ! Cool, $gl\'ami:l\'amie; !$B$BBon, même si vous faites quelque chose de noble en récupérant des bonbons pour une petite fille malade, je ne peux pas vous laisser vous en sortir si facilement. J\'ai une délicieuse boule de gomme de Sombrelance pour la gamine, que je vous donnerai si… vous imitez le bruit du train pour moi ! Haha, oui, c\'est une bonne blague ! Le prix de cette boule de gomme est d\'imiter le train ! Tchou-tchou, $C !",
+    ["obj"] = "Utilisez l\'emote /tchou devant Kali Remik, et vous recevrez en échange une boule de gomme de Sombrelance !",
+    ["start"] = {
+      ["Kali Remik"] = "NPC",
+    },
+    ["end"] = {
+      ["Kali Remik"] = "NPC",
+    },
+  },
+  ["Montrer ses muscles pour du nougat,Utilisez l"] = {
+    ["id"] = 8359,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "C\'est un costume très... intéressant, que vous avez là, dites-moi. Même si vous vous montrez sympa et que vous aidez cette année une petite fille malade à faire ses blagues de la Sanssaint, j\'ai bien peur d\'être obligée de vous demander d\'accomplir un petit tour pour moi !$B$BVoyons… Vous semblez si $gfort:forte; et si $gmis:mise; en valeur dans ce… costume… Faites donc un peu jouer vos muscles ! Allez, ne soyez pas timide, frimez un peu pour moi, jeune $ghomme:femme; !$B$BQuand je vous aurai vu bander vos muscles, je vous donnerai de cet excellent nougat d\'Orgrimmar. C\'est un fameux bonbon de la Sanssaint.",
+    ["obj"] = "Utilisez l\'emote /frime devant l\'aubergiste Gryshka, et vous recevrez en échange du nougat d\'Orgrimmar !",
+    ["start"] = {
+      ["Gryshka l\'aubergiste"] = "NPC",
+    },
+    ["end"] = {
+      ["Gryshka l\'aubergiste"] = "NPC",
+    },
+  },
+  ["Danser pour du massepain,Utilisez l"] = {
+    ["id"] = 8360,
+    ["min"] = 61,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Même si vous faites la tournée de la Sanssaint pour une petite fille malade, vous devez quand même faire un petit tour pour obtenir un bonbon ! Nous ne pouvons pas déroger aux traditions, n\'est-ce pas ?$B$BJe crois que le prix d\'un morceau de massepain aujourd\'hui est de se remuer un peu et de DANSER ! C\'est ça, voyons donc vos pas de danse ! Dansez pour moi, et je vous donnerai un excellent massepain !",
+    ["obj"] = "Utilisez l\'emote /danser devant l\'aubergiste Pala, et vous recevrez en échange du massepain des Pitons du Tonnerre !",
+    ["start"] = {
+      ["Pala l\'aubergiste"] = "NPC",
+    },
+    ["end"] = {
+      ["Pala l\'aubergiste"] = "NPC",
+    },
+  },
+  ["Écrasez les usurpateurs d\'Aile-argent,Entrez dan"] = {
+    ["id"] = 7875,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 178,
+    ["log"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Le druide de la Griffe,Oben Griff"] = {
+    ["id"] = 2561,
+    ["min"] = 7,
+    ["lvl"] = 10,
+    ["pre"] = "Le druide dormant,Rapporter ",
+    ["log"] = "J\'ai examiné ce charme, $N, et je vois maintenant ce qu\'il faut faire. Prenez-le et suivez mes instructions.$B$BVous devez explorer les zones les plus reculées du Refuge des saisons de Ban\'ethil pour trouver mon corps sans âme... Je regrette de devoir en arriver à cette extrémité, mais je ne vois pas d\'autre moyen de me libérer du contrôle des Pins-tordus.$B$BVous devez tuer ma forme physique. Ensuite, utilisez le Charme vaudou sur mon corps. Lorsque vous aurez accompli cette tâche, revenez me voir.",
+    ["obj"] = "Oben Grifferage vous demande de tuer son corps privé d\'âme et d\'utiliser ensuite le Charme vaudou.",
+    ["start"] = {
+      ["Oben Grifferage"] = "NPC",
+    },
+    ["end"] = {
+      ["Oben Grifferage"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Grifferage,1"] = "NPC",
+    },
+  },
+  ["L\'agent actif,Se rendre "] = {
+    ["id"] = 5213,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["pre"] = "La chair ne ment pas,Récupére",
+    ["log"] = "Vous devez fouiller plus profond dans Stratholme, $N.$B$BAu-delà des premières portes, vous trouverez les ziggourats. Nous savons que le Fléau tire beaucoup d\'énergie de ces structures. Trouvez les ziggourats et revenez avec toutes les informations que vous pouvez réunir.",
+    ["obj"] = "Se rendre jusqu’à Stratholme et fouiller les ziggourats. Trouver et ramener de nouvelles informations sur le Fléau à Betina Bigglezink.",
+    ["start"] = {
+      ["Betina Bigglezink"] = "NPC",
+    },
+    ["end"] = {
+      ["Betina Bigglezink"] = "NPC",
+    },
+    ["item"] = {
+      ["Donnée du Fléau,1"] = "ITEM",
+    },
+  },
+  ["Ramstein,Aller à S"] = {
+    ["id"] = 6163,
+    ["min"] = 54,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["pre"] = "Crépuscaile, oh comme je te hais !,Trouver Cr",
+    ["log"] = "J\'ai été dépassé. Sur cette terre même, je suis resté debout... J\'ai cherché à défendre Lordaeron. La ferme et tout ce qu\'il y avait dessus ont été balayés par une immense onde du Fléau.$B$BSaleté. Il a plané au-dessus de moi, les entrailles sortant de l’abdomen.$B$BQuand je me suis réveillé, je faisais partie du Fléau. Je suis resté impuissant pendant si longtemps. Mon esprit était lié à celui du roi-liche.$B$BElle est venue pour moi... Quelque part, d\'une façon ou d\'une autre, je savais qu\'elle le ferait. Libre.$B$BEt maintenant, je dois avoir ma vengeance – ma vengeance qui est ma seule raison de vivre. Détruisez-le.",
+    ["obj"] = "Aller à Stratholme et tuer Ramstein Grandgosier. Prendre sa tête, et l’apporter à Nathanos.",
+    ["start"] = {
+      ["Nathanos le Flétrisseur"] = "NPC",
+    },
+    ["end"] = {
+      ["Nathanos le Flétrisseur"] = "NPC",
+    },
+    ["item"] = {
+      ["Tête de Ramstein Grandgosier,1"] = "ITEM",
+    },
+  },
+  ["Les Tombe-hiver s\'agitent,Salfa voud"] = {
+    ["id"] = 6241,
+    ["min"] = 51,
+    ["lvl"] = 56,
+    ["log"] = "Les Grumegueules ont tendance à rester entre eux, $N. Bien que nous laissions passer ceux en qui nous avons toute confiance, nous essayons d\'éviter les autres tribus de furbolgs, si cela est possible.$B$BDernièrement, j\'ai remarqué que la tribu Tombe-hiver montrait des signes d\'hostilité à notre égard. Ils semblent être dans un étrange état de rage, rendus furieux par tout ce qui les effraie et qu\'il ne comprennent pas.$B$BSi vous pouviez en réduire le nombre, cela nous aiderait grandement, $N.",
+    ["obj"] = "Salfa voudrait que vous tuiez 6 Totémiques, 6 Gardes et 6 Guides de la tribu Tombe-hiver.",
+    ["start"] = {
+      ["Salfa"] = "NPC",
+    },
+    ["end"] = {
+      ["Salfa"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Totémique Tombe-hiver,6"] = "NPC",
+      ["Protecteur Tombe-hiver,6"] = "NPC",
+      ["Guide Tombe-hiver,6"] = "NPC",
+    },
+  },
+  ["La légende de Korrak,D’après"] = {
+    ["id"] = 7181,
+    ["min"] = 51,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "Les envahisseurs Foudrepique ne sont pas la seule menace dans la région, soldat. La guerre dans la Vallée se livre sur deux fronts. Les trolls cannibales des Haches-d’hiver ont leurs propres ambitions.$B$BIls sont dirigés par Korrak le Ragesang, une bête cruelle et rusée.$B$BLa mort de Korrak serait un grand coup porté aux Haches-d’hiver. Tuez cet animal, et vous serez $grécompensé:récompensée; !",
+    ["obj"] = "D’après la légende, le chef des puissants trolls Haches-d’hiver se montre quand il le décide pour semer la destruction chez les habitants de la vallée d\'Alterac.$B$BSi Korrak apparaît, détruisez-le et présentez-vous au Maître de guerre Laggrond.",
+    ["start"] = {
+      ["Maître de guerre Laggrond"] = "NPC",
+    },
+    ["end"] = {
+      ["Maître de guerre Laggrond"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Korrak le Ragesang,1"] = "NPC",
+    },
+  },
+  ["Korrak le Ragesang,D’après"] = {
+    ["id"] = 7202,
+    ["min"] = 51,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Les indigènes de la région, les trolls Haches-d’hiver, sont des sauvages cruels qui rêvent d’ajouter nos os à leurs infâmes ragoûts.$B$BNous devons leur montrer notre force !$B$BNous avons récupéré dans leurs cavernes des livres qui détaillent leur hiérarchie. Ils indiquent que leur chef, Korrak le Ragesang, a tendance à rester caché jusqu’à ce qu’il ait une raison de faire connaître sa présence.$B$BLa mort de Korrak signerait la mort du clan Hache-d’hiver ! Tuez-le et revenez.",
+    ["obj"] = "D’après la légende, le chef des puissants trolls Haches-d’hiver se montre quand il le décide pour semer la destruction chez les habitants de la vallée d\'Alterac.$B$BSi Korrak apparaît, détruisez-le et présentez-vous au Lieutenant Haggerdin dans les montagnes d\'Alterac.",
+    ["start"] = {
+      ["Lieutenant Haggerdin"] = "NPC",
+    },
+    ["end"] = {
+      ["Lieutenant Haggerdin"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Korrak le Ragesang,1"] = "NPC",
+    },
+  },
+  ["La présence de la puissance,Bring me t"] = {
+    ["id"] = 8184,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 1,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["item"] = {
+      ["Idole primordiale hakkari,1"] = "ITEM",
+      ["Poupée vaudou percée,1"] = "ITEM",
+    },
+  },
+  ["Le signe du syncrétiste,Bring me t"] = {
+    ["id"] = 8185,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 2,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["item"] = {
+      ["Idole primordiale hakkari,1"] = "ITEM",
+      ["Poupée vaudou percée,1"] = "ITEM",
+    },
+  },
+  ["La caresse de la mort,Bring me t"] = {
+    ["id"] = 8186,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 8,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["item"] = {
+      ["Idole primordiale hakkari,1"] = "ITEM",
+      ["Poupée vaudou percée,1"] = "ITEM",
+    },
+  },
+  ["L\'appel de l\'épervier,Bring me t"] = {
+    ["id"] = 8187,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 4,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["item"] = {
+      ["Idole primordiale hakkari,1"] = "ITEM",
+      ["Poupée vaudou percée,1"] = "ITEM",
+    },
+  },
+  ["L\'étreinte vigilante du vaudouisan,Bring me t"] = {
+    ["id"] = 8188,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 64,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["item"] = {
+      ["Idole primordiale hakkari,1"] = "ITEM",
+      ["Poupée vaudou percée,1"] = "ITEM",
+    },
+  },
+  ["La présence de la vision,Bring me t"] = {
+    ["id"] = 8189,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 128,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["item"] = {
+      ["Idole primordiale hakkari,1"] = "ITEM",
+      ["Poupée vaudou percée,1"] = "ITEM",
+    },
+  },
+  ["Le maléfice porte-guigne,Bring me t"] = {
+    ["id"] = 8190,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 256,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["item"] = {
+      ["Idole primordiale hakkari,1"] = "ITEM",
+      ["Poupée vaudou percée,1"] = "ITEM",
+    },
+  },
+  ["L\'aura prophétique,Bring me t"] = {
+    ["id"] = 8191,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 16,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["item"] = {
+      ["Idole primordiale hakkari,1"] = "ITEM",
+      ["Poupée vaudou percée,1"] = "ITEM",
+    },
+  },
+  ["La caresse de l\'animiste,Bring me t"] = {
+    ["id"] = 8192,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["class"] = 1024,
+    ["log"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
+    ["obj"] = "Bring me these things and I will create a powerful enchantment for you!",
+    ["start"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["end"] = {
+      ["Zanza le Sans-Repos"] = "NPC",
+    },
+    ["item"] = {
+      ["Idole primordiale hakkari,1"] = "ITEM",
+      ["Poupée vaudou percée,1"] = "ITEM",
+    },
+  },
+  ["Puissants breuvages de Zanza,I will all"] = {
+    ["id"] = 8243,
+    ["min"] = 58,
+    ["lvl"] = 60,
+    ["log"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
+    ["obj"] = "I will allow you to choose one from the three I offer; in exchange, I require one Zandalar Honor Token. Note that only the effects of a single one may course through your spirit at any given time.",
+    ["start"] = {
+      ["Rin\'wosho le marchand"] = "NPC",
+    },
+    ["end"] = {
+      ["Rin\'wosho le marchand"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur zandalar,1"] = "ITEM",
+    },
+  },
+  ["Tonneraan le Cherchevent,Pour libé"] = {
+    ["id"] = 7786,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["pre"] = "Examiner le Calice,Examiner l",
+    ["log"] = "Je vous ai dit tout ce que je sais, $N. C\'est à vous de trouver l\'élémentium. C\'est à vous de détruire la forme physique du Seigneur du feu.$B$BSi vous y parvenez, vous recevrez la bénédiction de Tonneraan.",
+    ["obj"] = "Pour libérer Tonneraan le Cherchevent de sa prison, vous devez présenter au généralissime Demitrian les moitiés droite et gauche des Liens du Cherchevent, 10 barres d\'élémentium, et l\'Essence du Seigneur du feu.",
+    ["start"] = {
+      ["Généralissime Demitrian"] = "NPC",
+    },
+    ["end"] = {
+      ["Généralissime Demitrian"] = "NPC",
+    },
+    ["item"] = {
+      ["Barre d\'élémentium,10"] = "ITEM",
+      ["Essence du Seigneur du feu,1"] = "ITEM",
+      ["Liens du Cherchevent,1"] = "ITEM",
+      ["Liens du Cherchevent,1"] = "ITEM",
+    },
+  },
+  ["Allié des Grumegueules,Grifleur v"] = {
+    ["id"] = 6131,
+    ["min"] = 45,
+    ["lvl"] = 48,
+    ["log"] = "Les Grumegueules sont les seuls furbolgs à avoir résisté à la corruption. Pourtant, de nombreuses races exécutent maintenant tous les furbolgs, sans distinction, sans même prendre le temps de s\'assure qu\'ils sont amis ou des ennemis. Pour cette raison, les Grumegueules sont devenus farouches et ne font plus confiance à personne.$B$BVoulez-vous faire vos preuves et faire montre de courage ? Si vous forcez la tribu corrompue des Mort-bois à battre en retraite, nous vous considérerons peut-être comme un être digne de confiance. Vous trouverez les guerriers, les guides et les jardiniers Mort-bois plus bas vers le sud.",
+    ["obj"] = "Grifleur veut que vous prouviez votre valeur en tuant 5 Guerriers Mort-bois, 5 Guides Mort-bois et 5 Jardiniers Mort-bois.",
+    ["start"] = {
+      ["Grifleur"] = "NPC",
+    },
+    ["end"] = {
+      ["Grifleur"] = "NPC",
+    },
+    ["spawn"] = {
+      ["Guerrier Mort-bois,5"] = "NPC",
+      ["Guide Mort-bois,5"] = "NPC",
+      ["Jardinier Mort-bois,5"] = "NPC",
+    },
+  },
+  ["Le fardeau des Vols draconiques,"] = {
+    ["id"] = 8555,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["pre"] = "Un pion sur l\'Echiquier éternel,Apprenez t",
+    ["start"] = {
+      ["Anachronos"] = "NPC",
+    },
+    ["end"] = {
+      ["Anachronos"] = "NPC",
+    },
+  },
+  ["Le grand livre magique d\'Azuregos,Apporter l"] = {
+    ["id"] = 8575,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["log"] = "Vous ne comprenez pas le moindre mot de ce qui est écrit dans ce livre. Vous ne savez même pas dans quelle langue il est rédigé !",
+    ["obj"] = "Apporter le Grand livre magique d\'Azuregos à Narain Divinambolesque, en Tanaris.",
+    ["start"] = {
+    },
+    ["end"] = {
+      ["Narain Divinambolesque"] = "NPC",
+    },
+    ["item"] = {
+      ["Grand livre magique,1"] = "ITEM",
+    },
+  },
+  ["Une chanson d\'amour pour Narain,Transmettr"] = {
+    ["id"] = 8599,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["log"] = "J’ai très rarement des visiteurs. En fait, je n’avais vu personne depuis la fois où j’ai sauvé ce cher, cher gnome de l’épave de sa machine volante.$B$B<Meredith se plonge dans ses souvenirs, et son regard se perd dans le lointain.>$B$BLe connaissez-vous ? Narain ? Narain Divinambolesque ? J’aimerais beaucoup que quelqu’un lui porte un message. Il faut qu’il sache ce que je ressens pour lui ! C’est de l’amour ! J’en suis sûre !$B$BPourriez-vous me servir de messager ? Je vous en serai éternellement reconnaissante !",
+    ["obj"] = "Transmettre la Lettre d’amour de Meredith à Narain Divinambolesque, en Tanaris.",
+    ["start"] = {
+      ["Meridith la Vierge de mer"] = "NPC",
+    },
+    ["end"] = {
+      ["Narain Divinambolesque"] = "NPC",
+    },
+    ["item"] = {
+      ["Lettre d\'amour de Meridith,1"] = "ITEM",
+    },
+  },
+  ["Boule de gomme en approche,Utilisez l"] = {
+    ["id"] = 8355,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "$gUn quémandeur:une quémandeuse; de bonbons ! Hourra !$B$BBon, même si vous faites quelque chose de noble en récupérant des bonbons pour un enfant malade, je ne peux pas vous laisser vous en sortir si facilement. J\'ai une délicieuse boule de gomme de Gnomeregan pour le gamin, que je vous donnerai si… vous imitez le bruit du train pour moi ! Haha, oui, c\'est une bonne blague ! Le prix de cette boule de gomme est d\'imiter le train ! Tchou-tchou, $C !",
+    ["obj"] = "Utilisez l\'emote /tchou devant Talvash del Kissel, et vous recevrez en échange une boule de gomme de Gnomeregan !",
+    ["start"] = {
+      ["Talvash del Kissel"] = "NPC",
+    },
+    ["end"] = {
+      ["Talvash del Kissel"] = "NPC",
+    },
+  },
+  ["Le seul remède,Retrouver "] = {
+    ["id"] = 8620,
+    ["min"] = 55,
+    ["lvl"] = 60,
+    ["pre"] = "Un leurre !,Narain Div",
+    ["log"] = "J’aurais dû m’en douter ! Mon ennemi juré, le docteur Dwenfer, a récidivé ! Et maintenant, à cause de votre échec au Berceau-de-l’hiver, le docteur Dwenfer a détruit mon livre ! Comment allez-vous sauver le monde, maintenant ?$B$BD’après le message que j’ai reçu, l’unique exemplaire connu du \"Draconique pour les nuls, volume II\" a été divisé en huit morceaux et dispersé aux quatre vents ! Si par miracle vous parvenez à les récupérer, utilisez cette reliure magique pour les réunir et ramenez-les-moi.",
+    ["obj"] = "Retrouver les 8 chapitres perdus du \"Draconique pour les nuls\" et les combiner avec la Reliure magique, puis ramener l’exemplaire réparé du \"Draconique pour les nuls, volume II\" à Narain Divinambolesque, en Tanaris.",
+    ["start"] = {
+      ["Narain Divinambolesque"] = "NPC",
+    },
+    ["end"] = {
+      ["Narain Divinambolesque"] = "NPC",
+    },
+    ["item"] = {
+      ["Le draconique pour les nuls : volume II,1"] = "ITEM",
+    },
+  },
+  ["Caqueter pour un bonbon à la menthe,Utilisez l"] = {
+    ["id"] = 8353,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "Ah, vous faites les blagues de la Sanssaint pour un enfant malade, c\'est cela ? Je me disais aussi, vous êtes un peu $gvieux:vieille; pour quémander des bonbons…$B$BEh bien, pour que je vous donne un bonbon - un véritable bonbon à la menthe de Forgefer - vous devrez… caqueter comme un poulet ! Oui, oui, les poulets adorent les bonbons à la menthe… Bon, d\'accord, peut-être qu\'ils ne les ADORENT pas… mais je ne vous en donnerai pas si vous n\'imitez pas le poulet pour moi !$B$BAlors, $C, vous êtes $gprêt:prête; à relever le défi ? C\'est le moment de gagner votre bonbon !",
+    ["obj"] = "Utilisez l\'emote /poulet devant l\'aubergiste Brassefeu, et vous recevrez en échange un bonbon à la menthe de Forgefer !",
+    ["start"] = {
+      ["Brassefeu l\'aubergiste"] = "NPC",
+    },
+    ["end"] = {
+      ["Brassefeu l\'aubergiste"] = "NPC",
+    },
+  },
   ["Caqueter pour un bonbon à la menthe,Utilisez l"] = {
     ["id"] = 8354,
     ["min"] = 10,
@@ -69676,6 +70625,32 @@ pfDB["quests"]["frFR"] = {
     },
     ["end"] = {
       ["Norman l\'aubergiste"] = "NPC",
+    },
+  },
+  ["Montrer ses muscles pour du nougat,Utilisez l"] = {
+    ["id"] = 8356,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "C’est un costume très... intéressant, que vous avez là, dites-moi. Même si vous vous montrez sympa et que vous aidez cette année un enfant malade à faire ses blagues de la Sanssaint, j’ai bien peur d’être obligée de vous demander d’accomplir un petit tour pour moi !$b$bVoyons… Vous semblez si $gfort:forte; et si $gmis:mise; en valeur dans ce… costume… Faites donc un peu jouer vos muscles ! Allez, ne soyez pas timide, frimez un peu pour moi, jeune $ghomme:femme; !$b$bQuand je vous aurai vu bander vos muscles, je vous donnerai de cet excellent nougat de Hurlevent. C’est un fameux bonbon de la Sanssaint.",
+    ["obj"] = "Utilisez l\'emote /frime devant l\'aubergiste Allison, et vous recevrez en échange du nougat de Hurlevent !",
+    ["start"] = {
+      ["Aubergiste Allison"] = "NPC",
+    },
+    ["end"] = {
+      ["Aubergiste Allison"] = "NPC",
+    },
+  },
+  ["Danser pour du massepain,Utilisez l"] = {
+    ["id"] = 8357,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["log"] = "Même si vous faites la tournée de la Sanssaint pour un enfant malade, vous devez quand même faire un petit tour pour obtenir un bonbon ! Nous ne pouvons pas déroger aux traditions, n\'est-ce pas ?$B$BJe crois que le prix d\'un morceau de massepain aujourd\'hui est de se remuer un peu et de DANSER ! C\'est ça, voyons donc vos pas de danse ! Dansez pour moi, et je vous donnerai un excellent massepain !",
+    ["obj"] = "Utilisez l\'emote /danser devant l\'aubergiste Saelienne, et vous recevrez en échange du massepain de Darnassus !",
+    ["start"] = {
+      ["Saelienne l\'aubergiste"] = "NPC",
+    },
+    ["end"] = {
+      ["Saelienne l\'aubergiste"] = "NPC",
     },
   },
   ["Boule de gomme en approche,Utilisez l"] = {
@@ -69718,6 +70693,1284 @@ pfDB["quests"]["frFR"] = {
     },
     ["end"] = {
       ["Pala l\'aubergiste"] = "NPC",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8081,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 77,
+    ["pre"] = "Les ressources du bassin d\'Arathi,Gagnez la ",
+    ["pre"] = "Les ressources du bassin d\'Arathi,Gagnez la ",
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
+    ["id"] = 8123,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de tous les peuples de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez $gemparé:emparée;.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
+    ["id"] = 8123,
+    ["min"] = 50,
+    ["lvl"] = 59,
+    ["race"] = 178,
+    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de tous les peuples de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez $gemparé:emparée;.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8124,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8124,
+    ["min"] = 50,
+    ["lvl"] = 55,
+    ["race"] = 178,
+    ["pre"] = "Couper les voies de ravitaillement d\'Arathor,Gagnez la ",
+    ["pre"] = "Couper les voies de ravitaillement d\'Arathor,Gagnez la ",
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
+    ["id"] = 8154,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
+    ["id"] = 8154,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 77,
+    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
+    ["id"] = 8155,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
+    ["id"] = 8155,
+    ["min"] = 20,
+    ["lvl"] = 29,
+    ["race"] = 77,
+    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
+    ["id"] = 8156,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
+    ["id"] = 8156,
+    ["min"] = 30,
+    ["lvl"] = 39,
+    ["race"] = 77,
+    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8157,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8157,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 77,
+    ["pre"] = "Les ressources du bassin d\'Arathi,Gagnez la ",
+    ["pre"] = "Les ressources du bassin d\'Arathi,Gagnez la ",
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8158,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8158,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 77,
+    ["pre"] = "Les ressources du bassin d\'Arathi,Gagnez la ",
+    ["pre"] = "Les ressources du bassin d\'Arathi,Gagnez la ",
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8159,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8159,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 77,
+    ["pre"] = "Les ressources du bassin d\'Arathi,Gagnez la ",
+    ["pre"] = "Les ressources du bassin d\'Arathi,Gagnez la ",
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
+    ["id"] = 8160,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de toutes les races de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le Refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au Traqueur noir Mortis au Trépas-d\'Orgrim.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
+    ["id"] = 8160,
+    ["min"] = 40,
+    ["lvl"] = 49,
+    ["race"] = 178,
+    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de toutes les races de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le Refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au Traqueur noir Mortis au Trépas-d\'Orgrim.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
+    ["id"] = 8161,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de toutes les races de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le Refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au Traqueur noir Mortis au Trépas-d\'Orgrim.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
+    ["id"] = 8161,
+    ["min"] = 30,
+    ["lvl"] = 39,
+    ["race"] = 178,
+    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de toutes les races de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le Refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au Traqueur noir Mortis au Trépas-d\'Orgrim.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
+    ["id"] = 8162,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de toutes les races de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le Refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
+    ["id"] = 8162,
+    ["min"] = 20,
+    ["lvl"] = 29,
+    ["race"] = 178,
+    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de toutes les races de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le Refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8163,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8163,
+    ["min"] = 40,
+    ["lvl"] = 45,
+    ["race"] = 178,
+    ["pre"] = "Couper les voies de ravitaillement d\'Arathor,Gagnez la ",
+    ["pre"] = "Couper les voies de ravitaillement d\'Arathor,Gagnez la ",
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8164,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8164,
+    ["min"] = 30,
+    ["lvl"] = 35,
+    ["race"] = 178,
+    ["pre"] = "Couper les voies de ravitaillement d\'Arathor,Gagnez la ",
+    ["pre"] = "Couper les voies de ravitaillement d\'Arathor,Gagnez la ",
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8165,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["D\'autres caisses de ressources,Win the ba"] = {
+    ["id"] = 8165,
+    ["min"] = 20,
+    ["lvl"] = 25,
+    ["race"] = 178,
+    ["pre"] = "Couper les voies de ravitaillement d\'Arathor,Gagnez la ",
+    ["pre"] = "Couper les voies de ravitaillement d\'Arathor,Gagnez la ",
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Les rubans de sacrifice,Bring the "] = {
+    ["id"] = 8266,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 178,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["Ruban de sacrifice du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Les rubans de sacrifice,Bring the "] = {
+    ["id"] = 8266,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 178,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["Ruban de sacrifice du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Les rubans de sacrifice,Bring the "] = {
+    ["id"] = 8267,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["Ruban de sacrifice du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Les rubans de sacrifice,Bring the "] = {
+    ["id"] = 8267,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["Ruban de sacrifice du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Les rubans de sacrifice,Bring the "] = {
+    ["id"] = 8268,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 77,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Ruban de sacrifice du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Les rubans de sacrifice,Bring the "] = {
+    ["id"] = 8268,
+    ["min"] = 10,
+    ["lvl"] = 39,
+    ["race"] = 77,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Ruban de sacrifice du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Les rubans de sacrifice,Bring the "] = {
+    ["id"] = 8269,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Ruban de sacrifice du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Les rubans de sacrifice,Bring the "] = {
+    ["id"] = 8269,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
+    ["obj"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Ruban de sacrifice du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Talismans of Merit,"] = {
+    ["id"] = 8289,
+    ["min"] = 10,
+    ["lvl"] = 15,
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
+    },
+  },
+  ["Triomphez des envahisseurs !,Entrez dan"] = {
+    ["id"] = 8291,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le Fort Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
+    },
+  },
+  ["Triomphez des envahisseurs !,Entrez dan"] = {
+    ["id"] = 8291,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le Fort Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Les talismans de vaillance,"] = {
+    ["id"] = 8292,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
+    },
+  },
+  ["Les talismans de vaillance,"] = {
+    ["id"] = 8292,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du goulet des Chanteguerres,3"] = "ITEM",
+    },
+  },
+  ["La marque d\'honneur,"] = {
+    ["id"] = 8293,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
+    },
+  },
+  ["La marque d\'honneur,"] = {
+    ["id"] = 8293,
+    ["min"] = 10,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du goulet des Chanteguerres,3"] = "ITEM",
+    },
+  },
+  ["Écrasez les usurpateurs d\'Aile-argent,Entrez dan"] = {
+    ["id"] = 8294,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
+    },
+  },
+  ["Écrasez les usurpateurs d\'Aile-argent,Entrez dan"] = {
+    ["id"] = 8294,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
+    ["obj"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
+    ["start"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["end"] = {
+      ["Capitaine Fracasse-crâne"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Mark of Honor,"] = {
+    ["id"] = 8296,
+    ["min"] = 10,
+    ["lvl"] = 15,
+    ["start"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["end"] = {
+      ["Sentinelle Chanteloin"] = "NPC",
+    },
+    ["item"] = {
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
+    },
+  },
+  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
+    ["id"] = 8297,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Les ressources du bassin d\'Arathi,Gagnez la "] = {
+    ["id"] = 8297,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8298,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["log"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,"] = {
+    ["id"] = 8298,
+    ["min"] = 20,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["end"] = {
+      ["Sergent Maclear"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du bassin d\'Arathi,3"] = "ITEM",
+    },
+  },
+  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
+    ["id"] = 8299,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de tous les peuples de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au Traqueur noir Mortis au Trépas-d\'Orgrim.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Couper les voies de ravitaillement d\'Arathor,Gagnez la "] = {
+    ["id"] = 8299,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de tous les peuples de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
+    ["obj"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au Traqueur noir Mortis au Trépas-d\'Orgrim.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du bassin d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,Win the ba"] = {
+    ["id"] = 8300,
+    ["min"] = 60,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["log"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["obj"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["More Resource Crates,"] = {
+    ["id"] = 8300,
+    ["min"] = 20,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["end"] = {
+      ["Nécrotraqueur Mortis"] = "NPC",
+    },
+    ["item"] = {
+      ["Marque d\'honneur du bassin d\'Arathi,3"] = "ITEM",
+    },
+  },
+  ["Past Victories in Arathi,"] = {
+    ["id"] = 8565,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 77,
+    ["start"] = {
+      ["Général de brigade de l\'Alliance"] = "NPC",
+    },
+    ["end"] = {
+      ["Général de brigade de l\'Alliance"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Past Victories in Arathi,"] = {
+    ["id"] = 8566,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 178,
+    ["start"] = {
+      ["Porteguerre de la Horde"] = "NPC",
+    },
+    ["end"] = {
+      ["Porteguerre de la Horde"] = "NPC",
+    },
+    ["item"] = {
+      ["Caisse de ressources d\'Arathi,1"] = "ITEM",
+    },
+  },
+  ["Past Victories in Warsong Gulch,"] = {
+    ["id"] = 8567,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 77,
+    ["start"] = {
+      ["Général de brigade de l\'Alliance"] = "NPC",
+    },
+    ["end"] = {
+      ["Général de brigade de l\'Alliance"] = "NPC",
+    },
+    ["item"] = {
+      ["Talisman de vaillance d\'Aile-argent,1"] = "ITEM",
+    },
+  },
+  ["Past Victories in Warsong Gulch,"] = {
+    ["id"] = 8568,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 178,
+    ["start"] = {
+      ["Porteguerre de la Horde"] = "NPC",
+    },
+    ["end"] = {
+      ["Porteguerre de la Horde"] = "NPC",
+    },
+    ["item"] = {
+      ["zz Marque d\'honneur Chanteguerre,1"] = "ITEM",
+    },
+  },
+  ["Past Efforts in Warsong Gulch,"] = {
+    ["id"] = 8569,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 77,
+    ["start"] = {
+      ["Général de brigade de l\'Alliance"] = "NPC",
+    },
+    ["end"] = {
+      ["Général de brigade de l\'Alliance"] = "NPC",
+    },
+    ["item"] = {
+      ["Ruban de sacrifice du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Past Efforts in Warsong Gulch,"] = {
+    ["id"] = 8570,
+    ["min"] = 1,
+    ["lvl"] = 1,
+    ["race"] = 178,
+    ["start"] = {
+      ["Porteguerre de la Horde"] = "NPC",
+    },
+    ["end"] = {
+      ["Porteguerre de la Horde"] = "NPC",
+    },
+    ["item"] = {
+      ["Ruban de sacrifice du goulet des Chanteguerres,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8811,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officier Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8812,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officier Barbe-de-fer"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Barbe-de-fer"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8813,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officier Lunelume"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Lunelume"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8814,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officier Tournedos"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Tournedos"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8815,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officier Rougelame"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Rougelame"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de la Horde,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8816,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officier Gothena"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Gothena"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de la Horde,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8817,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officier Marche-sous-le-tonnerre"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Marche-sous-le-tonnerre"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de la Horde,1"] = "ITEM",
+    },
+  },
+  ["Une chevalière de mérite,"] = {
+    ["id"] = 8818,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officier Vu\'Shalay"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Vu\'Shalay"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de la Horde,1"] = "ITEM",
+    },
+  },
+  ["Dix chevalières de mérite,"] = {
+    ["id"] = 8819,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officier Maloof"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Maloof"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,10"] = "ITEM",
+    },
+  },
+  ["Dix chevalières de mérite,"] = {
+    ["id"] = 8820,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officier Barbe-de-fer"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Barbe-de-fer"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,10"] = "ITEM",
+    },
+  },
+  ["Dix chevalières de mérite,"] = {
+    ["id"] = 8821,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officier Lunelume"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Lunelume"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,10"] = "ITEM",
+    },
+  },
+  ["Dix chevalières de mérite,"] = {
+    ["id"] = 8822,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 77,
+    ["start"] = {
+      ["Officier Tournedos"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Tournedos"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de l\'Alliance,10"] = "ITEM",
+    },
+  },
+  ["Dix chevalières de mérite,"] = {
+    ["id"] = 8823,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officier Rougelame"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Rougelame"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de la Horde,10"] = "ITEM",
+    },
+  },
+  ["Dix chevalières de mérite,"] = {
+    ["id"] = 8824,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officier Gothena"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Gothena"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de la Horde,10"] = "ITEM",
+    },
+  },
+  ["Dix chevalières de mérite,"] = {
+    ["id"] = 8825,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officier Marche-sous-le-tonnerre"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Marche-sous-le-tonnerre"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de la Horde,10"] = "ITEM",
+    },
+  },
+  ["Dix chevalières de mérite,"] = {
+    ["id"] = 8826,
+    ["min"] = 1,
+    ["lvl"] = 60,
+    ["race"] = 178,
+    ["start"] = {
+      ["Officier Vu\'Shalay"] = "NPC",
+    },
+    ["end"] = {
+      ["Officier Vu\'Shalay"] = "NPC",
+    },
+    ["item"] = {
+      ["Chevalière de mérite de la Horde,10"] = "ITEM",
+    },
+  },
+  ["Faire amende honorable,"] = {
+    ["id"] = 9266,
+    ["min"] = 40,
+    ["lvl"] = 60,
+    ["start"] = {
+      ["Bronn Fisseclef"] = "NPC",
+    },
+    ["end"] = {
+      ["Bronn Fisseclef"] = "NPC",
+    },
+    ["item"] = {
+      ["Etoffe runique,40"] = "ITEM",
+      ["Charbon,4"] = "ITEM",
     },
   },
 }

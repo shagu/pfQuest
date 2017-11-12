@@ -2,7 +2,7 @@
 
 ## Setup Dependencies
 
-	pacman -S lxc libmariadbclient php php-gd lua lua-sql-mysql
+	pacman -S lxc php php-gd lua lua-sql-mysql mariadb-clients libmariadbclient
 
 ## Setup Database LXC Container
 
@@ -15,9 +15,9 @@
     apt-get install phpmyadmin mariadb-server wget p7zip
     exit
 
-## Elysium: Core entries + Translations
+## Light's Hope / Elysium: Core entries + Translations
 
-    git clone https://github.com/elysium-project/database.git elysiumdb
+Grab the latest [Light's Hope](https://github.com/LightsHope/server/releases) or [Elysium](https://github.com/elysium-project/database) database
 
 # Create Database Structure
 
@@ -29,7 +29,7 @@
 
 # Import Databases
 
-    mysql -u mangos -p elysium -h 127.0.0.1 < elysiumdb/full_db/world_*.sql
+    mysql -u mangos -p elysium -h 127.0.0.1 < elysiumdb/world_*.sql
     mysql -u mangos -p aowow -h 127.0.0.1 < aowow.sql
 
 # Copy CSVs to DBC/
