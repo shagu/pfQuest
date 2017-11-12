@@ -27,26 +27,8 @@ end
 
 LoadConfig()
 
-local questParse = {
-  ["deDE"] = {
-    [1] = "(.*) getötet",
-  },
-  ["esES"] = {
-    [1] = "Muertes de (.*)",
-  },
-  ["enUS"] = {
-    [1] = "(.*) killed",
-    [2] = "(.*) slain",
-  },
-}
-
 local questLogCache     = { }
 local questTrackedCache = { }
-
-local locale = GetLocale()
-if not questParse[locale] then
-  locale = "enUS"
-end
 
 local function ClearQuest(quest)
   pfMap:DeleteNode("PFQUEST", quest)
@@ -121,31 +103,24 @@ local function UpdateQuestLogID(questIndex, action)
     if objectives then
       for i=1, objectives, 1 do
         local text, type, finished = GetQuestLogLeaderBoard(i, questIndex)
-        local i, j, itemName, numItems, numNeeded = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
 
         local match = nil
         if not finished then
           -- spawn data
           if type == "monster" then
-            local i, j, monsterName = strfind(itemName, "(.*)")
+            local i, j, monsterName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_MONSTERS_KILLED))
+
             zone, score = pfDatabase:SearchMob(monsterName, meta)
             if zone then
               match = true
               maps[zone] = maps[zone] and maps[zone] + score or 1
             end
-
-            for id, query in pairs(questParse[locale]) do
-              local i, j, monsterName = strfind(itemName, query)
-              zone, score = pfDatabase:SearchMob(monsterName, meta)
-              if zone then
-                match = true
-                maps[zone] = maps[zone] and maps[zone] + score or 1
-              end
-            end
           end
 
           -- item data
           if type == "item" then
+            local i, j, itemName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_OBJECTS_FOUND))
+
             zone, score = pfDatabase:SearchItem(itemName, meta)
             if zone then
               match = true
