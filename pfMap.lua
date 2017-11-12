@@ -243,23 +243,25 @@ function pfMap:BuildNode(name, parent)
   f:SetFrameLevel(112)
 
   f:SetScript("OnEnter", function()
-    WorldMapTooltip:SetOwner(this, ANCHOR_BOTTOMLEFT)
-    WorldMapTooltip:SetText(this.title, .3, 1, .8)
+    local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
+    tooltip:SetOwner(this, ANCHOR_BOTTOMLEFT)
+    tooltip:SetText(this.title, .3, 1, .8)
 
     for title, point in pairs(this.node) do
       if title ~= this.title then
-        WorldMapTooltip:AddLine(" ", .3, 1, .8)
-        WorldMapTooltip:AddLine(title, .3, 1, .8)
+        tooltip:AddLine(" ", .3, 1, .8)
+        tooltip:AddLine(title, .3, 1, .8)
       end
       for id, desc in pairs(point.description) do
-        WorldMapTooltip:AddLine(desc, 1, 1, 1)
+        tooltip:AddLine(desc, 1, 1, 1)
       end
     end
-    WorldMapTooltip:Show()
+    tooltip:Show()
   end)
 
   f:SetScript("OnLeave", function()
-    WorldMapTooltip:Hide()
+    local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
+    tooltip:Hide()
   end)
 
   f.tex = f:CreateTexture("OVERLAY")
