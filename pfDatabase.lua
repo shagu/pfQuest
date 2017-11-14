@@ -183,7 +183,7 @@ function pfDatabase:SearchMob(mob, meta)
       if pfMap:IsValidMap(zone) and zone > 0 then
         maps[zone] = maps[zone] and maps[zone] + 1 or 1
         local title, description = pfDatabase:BuildTooltipInfo(meta)
-        pfMap:AddNode(meta["addon"] or "PFDB", zone, x .. "|" .. y, meta["texture"], title, description, meta["translucent"], func, meta["vertex"], meta["layer"])
+        pfMap:AddNode(meta["addon"] or "PFDB", zone, x .. "|" .. y, meta["texture"], title, description, meta["translucent"], meta["func"], meta["vertex"], meta["layer"])
       end
     end
 
