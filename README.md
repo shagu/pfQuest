@@ -63,7 +63,7 @@ The "Reset" button will restore the default visibility of icons to match the set
 # Chat/Macro CLI
 <img src="http://shagu.org/pfQuest/img/chat-cli.png">
 
-The addon features a CLI interface which allows you to easilly create macros to show your favourite herb or mining-veins. Let's say you want to display all **Iron Ore** deposits, then type in chat or create a macro with the text: `/db spawn Iron ore`. If `/db` doesn't work for you, there are also some other aliases available like `/shagu`, `pfquest` and `/pfdb`.
+The addon features a CLI interface which allows you to easilly create macros to show your favourite herb or mining-veins. Let's say you want to display all **Iron Deposit** deposits, then type in chat or create a macro with the text: `/db spawn Iron Deposit`. If `/db` doesn't work for you, there are also some other aliases available like `/shagu`, `pfquest` and `/pfdb`.
 
 
 # Map & Minimap Nodes
