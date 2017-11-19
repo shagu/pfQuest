@@ -372,6 +372,10 @@ pfQuest:SetScript("OnEvent", function()
   end
 end)
 
+pfQuest:SetScript("OnShow", function()
+  this.hadUpdate = nil
+end)
+
 pfQuest:SetScript("OnUpdate", function()
   if pfQuest_config["trackingmethod"] == 4 then this:Hide() return end
 
@@ -383,18 +387,28 @@ pfQuest:SetScript("OnUpdate", function()
     pfQuest.mapUpdate:SetText("Quest Update [ " .. this.scan .. " / " .. this.smax .. " ]")
   end
 
-  UpdateQuestLogID(this.scan)
+  if UpdateQuestLogID(this.scan) then
+    this.hadUpdate = true
+  end
 
   if this.scan >= this.smax then
-    if pfQuest_config["allquestgivers"] == "1" then
-      local meta = { ["allquests"] = true }
-      if pfQuest_config["showlowlevel"] == "0" then
-        meta["hidelow"] = true
+    if this.hadUpdate then
+      local meta = { }
+
+      -- show all questgivers
+      if pfQuest_config["allquestgivers"] == "1" then
+        meta.allquests = true
+
+        -- show lowlevel quests
+        if  pfQuest_config["showlowlevel"] == "0" then
+          meta.hidelow = true
+        end
+
+        pfDatabase:SearchQuests(nil, meta)
       end
-      pfDatabase:SearchQuests(nil, meta)
+      pfMap:UpdateNodes()
     end
 
-    pfMap:UpdateNodes()
     this:Hide()
     this.scan = nil
 
