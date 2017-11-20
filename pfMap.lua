@@ -121,9 +121,184 @@ local function str2rgb(text)
 end
 
 pfMap = CreateFrame("Frame")
+pfMap.tooltips = {}
 pfMap.nodes = {}
 pfMap.pins = {}
 pfMap.mpins = {}
+
+pfMap.tooltip = CreateFrame("Frame" , "pfMapTooltip", GameTooltip)
+pfMap.tooltip:SetScript("OnShow", function()
+  -- abort on pfQuest nodes
+  if GetMouseFocus().title then return end
+
+  local name = getglobal("GameTooltipTextLeft1") and getglobal("GameTooltipTextLeft1"):GetText()
+
+  if name and pfMap.tooltips[name] then
+    for title, meta in pairs(pfMap.tooltips[name]) do
+      pfMap:ShowTooltip(meta, GameTooltip)
+      GameTooltip:Show()
+    end
+  end
+end)
+
+function pfMap.tooltip:GetColor(min, max)
+  local perc = min / max
+  local r1, g1, b1, r2, g2, b2
+  if perc <= 0.5 then
+    perc = perc * 2
+    r1, g1, b1 = 1, 0, 0
+    r2, g2, b2 = 1, 1, 0
+  else
+    perc = perc * 2 - 1
+    r1, g1, b1 = 1, 1, 0
+    r2, g2, b2 = 0, 1, 0
+  end
+  r = r1 + (r2 - r1)*perc
+  g = g1 + (g2 - g1)*perc
+  b = b1 + (b2 - b1)*perc
+
+  return r, g, b
+end
+
+function pfMap:HexDifficultyColor(level, force)
+  if force and UnitLevel("player") < level then
+    return "|cffff5555"
+  else
+    local c = GetDifficultyColor(level)
+    return string.format("|cff%02x%02x%02x", c.r*255, c.g*255, c.b*255)
+  end
+end
+
+function pfMap:ShowTooltip(meta, tooltip)
+  local catch = nil
+  local tooltip = tooltip or GameTooltip
+
+  tooltip:AddLine(" ")
+
+  -- add quest data
+  if meta["quest"] then
+    -- scan all quest entries for matches
+    for qid=1, GetNumQuestLogEntries() do
+      local qtitle, _, _, _, _, complete = GetQuestLogTitle(qid)
+
+      if meta["quest"] == qtitle then
+        -- handle active quests
+        local objectives = GetNumQuestLeaderBoards(qid)
+        catch = true
+
+        local symbol = ( complete or objectives == 0 ) and "|cff555555[|cffffcc00?|cff555555]|r " or "|cff555555[|cffffcc00!|cff555555]|r "
+        tooltip:AddLine(symbol .. meta["quest"], 1, 1, 0)
+
+        local foundObjective = nil
+        if objectives then
+          for i=1, objectives, 1 do
+            local text, type, finished = GetQuestLogLeaderBoard(i, qid)
+
+            if type == "monster" then
+              -- kill
+              local i, j, monsterName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_MONSTERS_KILLED))
+              if meta["spawn"] == monsterName then
+                foundObjective = true
+                local r,g,b = pfMap.tooltip:GetColor(objNum, objNeeded)
+                tooltip:AddLine("|cffaaaaaa- |r" .. monsterName .. ": " .. objNum .. "/" .. objNeeded, r, g, b)
+              end
+            elseif table.getn(meta["item"]) > 0 and type == "item" and meta["droprate"] then
+              -- loot
+              local i, j, itemName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_OBJECTS_FOUND))
+
+              for mid, item in pairs(meta["item"]) do
+                if item == itemName then
+                  foundObjective = true
+                  local r,g,b = pfMap.tooltip:GetColor(objNum, objNeeded)
+                  local dr,dg,db = pfMap.tooltip:GetColor(tonumber(meta["droprate"]), 100)
+                  local lootcolor = string.format("%02x%02x%02x", dr * 255,dg * 255, db * 255)
+                  tooltip:AddLine("|cffaaaaaa- |r" .. itemName .. ": " .. objNum .. "/" .. objNeeded .. " |cff555555[|cff" .. lootcolor .. meta["droprate"] .. "%|cff555555]", r, g, b)
+                end
+              end
+            elseif table.getn(meta["item"]) > 0 and type == "item" and meta["sellcount"] then
+              -- vendor
+              local i, j, itemName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_OBJECTS_FOUND))
+
+              for mid, item in pairs(meta["item"]) do
+                if item == itemName then
+                  foundObjective = true
+                  local r,g,b = pfMap.tooltip:GetColor(objNum, objNeeded)
+                  local sellcount = tonumber(meta["sellcount"]) > 0 and " |cff555555[|cffcccccc" .. meta["sellcount"] .. "x" .. "|cff555555]" or ""
+                  tooltip:AddLine("|cffaaaaaa- |cffffffffBuy: |r" .. itemName .. ": " .. objNum .. "/" .. objNeeded .. sellcount, r, g, b)
+                end
+              end
+            end
+          end
+        end
+
+        if not foundObjective and meta["qlvl"] and meta["texture"] then
+          local qlvlstr = "Level: " .. pfMap:HexDifficultyColor(meta["qlvl"]) .. meta["qlvl"] .. "|r"
+          local qminstr = meta["qmin"] and " / Required: " .. pfMap:HexDifficultyColor(meta["qmin"], true) .. meta["qmin"] .. "|r"  or ""
+          tooltip:AddLine("|cffaaaaaa- |r" .. qlvlstr .. qminstr , .8,.8,.8)
+        end
+      end
+    end
+
+    if not catch then
+      -- handle inactive quests
+      local catchFallback = nil
+      tooltip:AddLine("|cff555555[|cffffcc00!|cff555555]|r " .. meta["quest"], 1, 1, .7)
+
+      if meta["item"] and meta["item"][1] and meta["droprate"] then
+        for mid, item in pairs(meta["item"]) do
+          catchFallback = true
+          local dr,dg,db = pfMap.tooltip:GetColor(tonumber(meta["droprate"]), 100)
+          local lootcolor = string.format("%02x%02x%02x", dr * 255,dg * 255, db * 255)
+          tooltip:AddLine("|cffaaaaaa- |rLoot: " .. item .. " |cff555555[|cff" .. lootcolor .. meta["droprate"] .. "%|cff555555]", 1, .5, .5)
+        end
+      end
+
+      if meta["item"] and meta["item"][1] and meta["sellcount"] then
+        for mid, item in pairs(meta["item"]) do
+          catchFallback = true
+          local sellcount = tonumber(meta["sellcount"]) > 0 and " |cff555555[|cffcccccc" .. meta["sellcount"] .. "x" .. "|cff555555]" or ""
+          tooltip:AddLine("|cffaaaaaa- |rBuy: " .. item .. sellcount, 1, .5, .5)
+        end
+      end
+
+      if not catchFallback and meta["spawn"] and not meta["texture"] then
+        catchFallback = true
+        tooltip:AddLine("|cffaaaaaa- |rKill: " .. meta["spawn"], 1,.5,.5)
+      end
+
+      if not catchFallback and meta["texture"] and meta["qlvl"] then
+        local qlvlstr = "Level: " .. pfMap:HexDifficultyColor(meta["qlvl"]) .. meta["qlvl"] .. "|r"
+        local qminstr = meta["qmin"] and " / Required: " .. pfMap:HexDifficultyColor(meta["qmin"], true) .. meta["qmin"] .. "|r"  or ""
+        tooltip:AddLine("|cffaaaaaa- |r" .. qlvlstr .. qminstr , .8,.8,.8)
+      end
+    end
+  else
+    -- handle non-quest objects
+    if meta["item"][1] and meta["itemid"] and not meta["itemlink"] then
+      local _, _, itemQuality = GetItemInfo(meta["itemid"])
+      if itemQuality then
+        local itemColor = "|c" .. string.format("%02x%02x%02x%02x", 255,
+            ITEM_QUALITY_COLORS[itemQuality].r * 255,
+            ITEM_QUALITY_COLORS[itemQuality].g * 255,
+            ITEM_QUALITY_COLORS[itemQuality].b * 255)
+
+        meta["itemlink"] = itemColor .."|Hitem:".. meta["itemid"] ..":0:0:0|h[".. meta["item"][1] .."]|h|r"
+      end
+    end
+
+    local item = meta["itemlink"] or "[" .. meta["item"][1] .. "]"
+
+    if meta["sellcount"] then
+      local sellcount = tonumber(meta["sellcount"]) > 0 and " |cff555555[|cffcccccc" .. meta["sellcount"] .. "x" .. "|cff555555]" or ""
+      tooltip:AddLine("Vendor: " .. item .. sellcount, 1,1,1)
+    elseif meta["item"] then
+      local r,g,b = pfMap.tooltip:GetColor(tonumber(meta["droprate"]), 100)
+      tooltip:AddLine("|cffffffffLoot: " .. item ..  " |cff555555[|r" .. meta["droprate"] .. "%|cff555555]", r,g,b)
+    end
+  end
+
+  tooltip:Show()
+end
 
 function pfMap:GetMapNameByID(id)
   id = tonumber(id)
@@ -194,30 +369,68 @@ function pfMap:GetMapID(cid, mid)
   return pfMap:GetMapIDByName(name)
 end
 
-function pfMap:AddNode(addon, map, coords, icon, title, description, translucent, func, vertex, layer)
+function pfMap:AddNode(meta)
+
+  local addon = meta["addon"] or "PFDB"
+  local map = meta["zone"]
+  local coords = meta["x"] .. "|" .. meta["y"]
+  local title = meta["title"]
+  local layer = meta["layer"]
+  local spawn = meta["spawn"]
+  local item = meta["item"]
+
   if not pfMap.nodes[addon] then pfMap.nodes[addon] = {} end
   if not pfMap.nodes[addon][map] then pfMap.nodes[addon][map] = {} end
   if not pfMap.nodes[addon][map][coords] then pfMap.nodes[addon][map][coords] = {} end
 
+  if item and pfMap.nodes[addon][map][coords][title] and table.getn(pfMap.nodes[addon][map][coords][title].item) > 0 then
+    -- check if item exists
+    for id, name in pairs(pfMap.nodes[addon][map][coords][title].item) do
+      if name == item then
+        return
+      else
+        table.insert(pfMap.nodes[addon][map][coords][title].item, item)
+      end
+    end
+  end
+
   if pfMap.nodes[addon][map][coords][title] and pfMap.nodes[addon][map][coords][title].layer and layer and
    pfMap.nodes[addon][map][coords][title].layer >= layer then
-     -- node with same title but higher layer already exists
+    -- identical node already exists, exit here
     return
-  else
-    -- create new node
-    pfMap.nodes[addon][map][coords][title] = {
-      layer = layer,
-      icon = icon,
-      description = description,
-      addon = addon,
-      translucent = translucent,
-      func = func,
-      vertex = vertex,
-    }
+  end
+
+  -- create new node from meta data
+  local node = {}
+  for key, val in pairs(meta) do
+    node[key] = val
+  end
+  node.item = { [1] = item }
+
+  pfMap.nodes[addon][map][coords][title] = node
+
+  -- add to gametooltips
+  if spawn and title then
+    pfMap.tooltips[spawn]        = pfMap.tooltips[spawn]        or {}
+    pfMap.tooltips[spawn][title] = pfMap.tooltips[spawn][title] or node
   end
 end
 
 function pfMap:DeleteNode(addon, title)
+  -- remove tooltips
+  if not addon then
+    pfMap.tooltips = {}
+  else
+    for mk, mv in pairs(pfMap.tooltips) do
+      for tk, tv in pairs(mv) do
+        if ( title and tk == title ) or ( not title and tv.addon == addon ) then
+          pfMap.tooltips[mk][tk] = nil
+        end
+      end
+    end
+  end
+
+  -- remove nodes
   if not addon then
     pfMap.nodes = {}
   elseif not title then
@@ -245,18 +458,16 @@ function pfMap:BuildNode(name, parent)
   f:SetScript("OnEnter", function()
     local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
     tooltip:SetOwner(this, ANCHOR_BOTTOMLEFT)
-    tooltip:SetText(this.title, .3, 1, .8)
+    tooltip:SetText(this.spawn, .3, 1, .8)
 
-    for title, point in pairs(this.node) do
-      if title ~= this.title then
-        tooltip:AddLine(" ", .3, 1, .8)
-        tooltip:AddLine(title, .3, 1, .8)
-      end
-      for id, desc in pairs(point.description) do
-        tooltip:AddLine(desc, 1, 1, 1)
-      end
+    tooltip:AddDoubleLine("Level:", (this.level or UNKNOWN), .8,.8,.8, 1,1,1)
+    tooltip:AddDoubleLine("Type:", (this.spawntype or UNKNOWN), .8,.8,.8, 1,1,1)
+    tooltip:AddDoubleLine("Respawn:", (this.respawn or UNKNOWN), .8,.8,.8, 1,1,1)
+
+
+    for title, meta in pairs(this.node) do
+      pfMap:ShowTooltip(meta, tooltip)
     end
-    tooltip:Show()
   end)
 
   f:SetScript("OnLeave", function()
@@ -277,11 +488,16 @@ function pfMap:UpdateNode(frame, node)
     tab.layer = tab.layer or 0
     if tab.layer > frame.layer then
       -- set title and texture to the entry with highest layer
-      frame.layer = tab.layer
-      frame.title = title
+      -- and add core information
+      frame.layer     = tab.layer
+      frame.spawn     = tab.spawn
+      frame.spawntype = tab.spawntype
+      frame.respawn   = tab.respawn
+      frame.level     = tab.level
+      frame.title     = title
 
-      if tab.icon then
-        frame.tex:SetTexture(tab.icon)
+      if tab.texture then
+        frame.tex:SetTexture(tab.texture)
         frame.tex:SetVertexColor(1,1,1)
       else
         frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\node")
@@ -289,7 +505,7 @@ function pfMap:UpdateNode(frame, node)
         frame.tex:SetVertexColor(r,g,b,1)
       end
 
-      if tab.icon and tab.vertex then
+      if tab.texture and tab.vertex then
         local r, g, b = unpack(tab.vertex)
         if r > 0 or g > 0 or b > 0 then
           frame.tex:SetVertexColor(r, g, b, 1)

@@ -348,8 +348,8 @@ local function CreateQuestEntry(i)
       ChatFrameEditBox:Show()
       ChatFrameEditBox:Insert("|cffffff00|Hquest:0:0:0:0|h[" .. this.questname .. "]|h|r")
     else
-      local meta = { ["dbobj"] = true }
-      local map = pfDatabase:SearchQuest(this.quest, meta)
+      local meta = { ["addon"] = "PFDB" }
+      local map = pfDatabase:SearchQuest(this.quest, meta, true)
       pfMap:ShowMapID(map)
     end
   end)

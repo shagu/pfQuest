@@ -115,54 +115,6 @@ function pfDatabase:HexDifficultyColor(level, force)
   end
 end
 
-function pfDatabase:BuildTooltipInfo(meta)
-  local title, description = nil, {}
-
-  if meta["item"] and meta["itemid"] and not meta["itemlink"] then
-    local _, _, itemQuality = GetItemInfo(meta["itemid"])
-    if itemQuality then
-      local itemColor = "|c" .. string.format("%02x%02x%02x%02x", 255,
-          ITEM_QUALITY_COLORS[itemQuality].r * 255,
-          ITEM_QUALITY_COLORS[itemQuality].g * 255,
-          ITEM_QUALITY_COLORS[itemQuality].b * 255)
-
-      meta["itemlink"] = itemColor .."|Hitem:".. meta["itemid"] ..":0:0:0|h[".. meta["item"] .."]|h|r"
-    end
-  end
-
-  if meta["quest"] then
-    title = meta["quest"]
-    table.insert(description, meta["spawntype"] .. ": " .. meta["spawn"] .. "|cffaaaaaa (" .. meta["x"] .. "," .. meta["y"] .. ")")
-    if not meta["texture"] and meta["respawn"] then table.insert(description, "Respawn: " .. meta["respawn"]) end
-    if meta["item"] and meta["droprate"] then
-      table.insert(description, "Loot: " .. ( meta["itemlink"] or meta["item"] ) .. "|cffaaaaaa (" .. meta["droprate"] .. "%)")
-    else
-      if meta["qlvl"] then
-        table.insert(description, "Level: " .. pfDatabase:HexDifficultyColor(meta["qlvl"]) .. meta["qlvl"] .. "|r" .. ( meta["qmin"] and " / Required: " .. pfDatabase:HexDifficultyColor(meta["qmin"], true) .. meta["qmin"] .. "|r"  or ""))
-      end
-    end
-  elseif meta["sellcount"] then
-    title = meta["item"]
-    table.insert(description, "Vendor: " .. meta["spawn"] .. "|cffaaaaaa (" .. meta["x"] .. "," .. meta["y"] .. ")")
-    local sellcount = tonumber(meta["sellcount"]) > 0 and meta["sellcount"] or "Infinite"
-    table.insert(description, "Buy: " .. ( meta["itemlink"] or meta["item"] ) .. "|cffaaaaaa (" .. sellcount .. ")")
-  elseif meta["item"] then
-    title = meta["item"]
-    table.insert(description, meta["spawntype"] .. ": " .. meta["spawn"] .. "|cffaaaaaa (" .. meta["x"] .. "," .. meta["y"] .. ")")
-    if meta["respawn"] then table.insert(description, "Respawn: " .. meta["respawn"]) end
-    table.insert(description, "Loot: " .. ( meta["itemlink"] or meta["item"] ) .. "|cffaaaaaa (" .. meta["droprate"] .. "%)")
-  elseif meta["spawn"] then
-    title = meta["spawn"]
-    table.insert(description, meta["spawntype"] .. ": " .. meta["spawn"] .. "|cffaaaaaa (" .. meta["x"] .. "," .. meta["y"] .. ")")
-    if meta["respawn"] then table.insert(description, "Respawn: " .. meta["respawn"]) end
-  else
-    title = UNKNOWN
-    description[0] = UNKNOWN
-  end
-
-  return title, description
-end
-
 function pfDatabase:SearchMob(mob, meta)
   local maps = {}
 
@@ -171,19 +123,19 @@ function pfDatabase:SearchMob(mob, meta)
       local f, t, x, y, zone = strfind(data, "(.*),(.*),(.*)")
       zone = tonumber(zone)
 
-      -- add all gathered data
-      meta = meta or {}
-      meta["x"]     = x
-      meta["y"]     = y
-      meta["zone"]  = zone
-      meta["spawn"] = mob
-      meta["respawn"] = spawns[mob]["respawn"] and SecondsToTime(spawns[mob]["respawn"])
-      meta["spawntype"] = spawns[mob]["type"] or UNKNOWN
-
       if pfMap:IsValidMap(zone) and zone > 0 then
+        -- add all gathered data
+        meta = meta or {}
+        meta["x"]     = x
+        meta["y"]     = y
+        meta["zone"]  = zone
+        meta["spawn"] = mob
+        meta["respawn"] = spawns[mob]["respawn"] and SecondsToTime(spawns[mob]["respawn"])
+        meta["spawntype"] = spawns[mob]["type"] or UNKNOWN
+        meta["level"] = spawns[mob]["level"] or UNKNOWN
+        meta["title"] = meta["quest"] or meta["item"] or meta["spawn"]
         maps[zone] = maps[zone] and maps[zone] + 1 or 1
-        local title, description = pfDatabase:BuildTooltipInfo(meta)
-        pfMap:AddNode(meta["addon"] or "PFDB", zone, x .. "|" .. y, meta["texture"], title, description, meta["translucent"], meta["func"], meta["vertex"], meta["layer"])
+        pfMap:AddNode(meta)
       end
     end
 
@@ -212,7 +164,6 @@ function pfDatabase:SearchItem(item, meta)
       meta["droprate"] = dropRate
       meta["item"] = item
       meta["itemid"] = items[item]["id"]
-
       local zone, score = pfDatabase:SearchMob(monsterName, meta)
       if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
     end
@@ -242,6 +193,7 @@ function pfDatabase:SearchVendor(item, meta)
       meta = meta or {}
       meta["sellcount"] = sellCount
       meta["item"] = item
+      meta["itemid"] = items[item] and items[item]["id"]
       meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\icon_vendor"
       meta["layer"] = 6
 
@@ -266,7 +218,7 @@ function pfDatabase:SearchVendor(item, meta)
   return nil
 end
 
-function pfDatabase:SearchQuest(quest, meta)
+function pfDatabase:SearchQuest(quest, meta, dbobj)
   local maps = {}
 
   if not quests[quest] then
@@ -286,6 +238,8 @@ function pfDatabase:SearchQuest(quest, meta)
 
         meta = meta or {}
         _, _, meta["quest"] = strfind(quest, "(.*),.*")
+        meta["qlvl"] = quests[quest]["lvl"]
+        meta["qmin"] = quests[quest]["min"]
 
         if quests[quest]["end"][questGiver] then
           if meta["qstate"] == "progress" then
@@ -321,7 +275,7 @@ function pfDatabase:SearchQuest(quest, meta)
             meta["layer"] = 7
           end
         else
-          if meta["qstate"] == "done" or meta["dbobj"] then
+          if meta["qstate"] == "done" or dbobj then
             meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
             meta["layer"] = 8
           else
@@ -336,7 +290,7 @@ function pfDatabase:SearchQuest(quest, meta)
     end
 
     -- query database objects
-    if meta["dbobj"] then
+    if dbobj then
       meta["texture"] = nil
 
       -- spawns
@@ -416,13 +370,25 @@ function pfDatabase:SearchQuests(zone, meta)
         _, _, meta["quest"] = strfind(title, "(.*),.*")
         meta["qlvl"] = quests[title]["lvl"]
         meta["qmin"] = quests[title]["min"]
+        meta["vertex"] = { 0, 0, 0 }
+        meta["layer"] = 3
+
+        -- tint high level quests red
+        if quests[title]["min"] and quests[title]["min"] > level then
+          meta["vertex"] = { 1, .6, .6 }
+          meta["layer"] = 2
+        end
+
+        -- treat highlevel quests with low requirements as dailies
+        if quests[title]["min"] and quests[title]["lvl"] and quests[title]["min"] == 1 and quests[title]["lvl"] > 50 then
+          meta["vertex"] = { .2, .8, 1 }
+          meta["layer"] = 2
+        end
 
         meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
 
         if meta["allquests"] then
           meta["addon"] = "PFQUEST"
-          meta["vertex"] = { 0, 0, 0 }
-          meta["layer"] = 3
 
           if pfQuest_history[meta["quest"]] then
             break
@@ -439,18 +405,6 @@ function pfDatabase:SearchQuests(zone, meta)
           elseif quests[title]["pre"] then
             _, _, pre = strfind(quests[title]["pre"], "(.*),.*")
             if not pfQuest_history[pre] then break end
-          end
-
-          -- tint high level quests red
-          if quests[title]["min"] and quests[title]["min"] > level then
-            meta["vertex"] = { 1, .6, .6 }
-            meta["layer"] = 2
-          end
-
-          -- treat highlevel quests with low requirements as dailies
-          if quests[title]["min"] and quests[title]["lvl"] and quests[title]["min"] == 1 and quests[title]["lvl"] > 50 then
-            meta["vertex"] = { .2, .8, 1 }
-            meta["layer"] = 2
           end
         end
 

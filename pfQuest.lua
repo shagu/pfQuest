@@ -97,8 +97,8 @@ local function UpdateQuestLogID(questIndex, action)
     pfMap:DeleteNode("PFQUEST", title)
 
     local objectives = GetNumQuestLeaderBoards(questIndex)
-    local meta = { ["quest"] = title, ["addon"] = "PFQUEST" }
     local zone, score, maps = nil, 0, {}
+    local dbobj = nil
 
     if objectives then
       for i=1, objectives, 1 do
@@ -109,7 +109,7 @@ local function UpdateQuestLogID(questIndex, action)
           -- spawn data
           if type == "monster" then
             local i, j, monsterName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_MONSTERS_KILLED))
-
+            local meta = { ["quest"] = title, ["addon"] = "PFQUEST" }
             zone, score = pfDatabase:SearchMob(monsterName, meta)
             if zone then
               match = true
@@ -120,13 +120,14 @@ local function UpdateQuestLogID(questIndex, action)
           -- item data
           if type == "item" then
             local i, j, itemName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_OBJECTS_FOUND))
-
+            local meta = { ["quest"] = title, ["addon"] = "PFQUEST", ["item"] = itemName }
             zone, score = pfDatabase:SearchItem(itemName, meta)
             if zone then
               match = true
               maps[zone] = maps[zone] and maps[zone] + score or 1
             end
 
+            local meta = { ["quest"] = title, ["addon"] = "PFQUEST", ["item"] = itemName }
             zone, score = pfDatabase:SearchVendor(itemName, meta)
             if zone then
               match = true
@@ -134,15 +135,14 @@ local function UpdateQuestLogID(questIndex, action)
             end
           end
 
-          if not match then
-            meta.dbobj = true
-          end
+          if not match then dbobj = true end
         end
       end
     end
 
     -- show quest givers
     if pfQuest_config["currentquestgivers"] ==  "1" then
+      local meta = { ["quest"] = title, ["addon"] = "PFQUEST" }
       if complete or objectives == 0 then
         meta.qstate = "done"
       else
@@ -150,7 +150,7 @@ local function UpdateQuestLogID(questIndex, action)
       end
 
       local questIndex = title .. "," .. string.sub(qobj, 1, 10)
-      zone, score = pfDatabase:SearchQuest(questIndex, meta)
+      zone, score = pfDatabase:SearchQuest(questIndex, meta, dbobj)
       if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
     end
 
