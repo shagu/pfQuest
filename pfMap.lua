@@ -481,6 +481,17 @@ function pfMap:BuildNode(name, parent)
   return f
 end
 
+function pfMap:NodeClick()
+  if IsShiftKeyDown() then
+    pfMap:DeleteNode(this.node[this.title].addon, this.title)
+    pfQuest_history[this.title] = true
+    pfMap:UpdateNodes()
+  else
+    pfQuest_colors[this.title] = { str2rgb(this.title .. GetTime()) }
+    pfMap:UpdateNodes()
+  end
+end
+
 function pfMap:UpdateNode(frame, node)
   frame.layer = -1
 
@@ -515,16 +526,7 @@ function pfMap:UpdateNode(frame, node)
       if tab.func then
         frame:SetScript("OnClick", tab.func)
       else
-        frame:SetScript("OnClick", function()
-          if IsShiftKeyDown() then
-            pfMap:DeleteNode(this.node[this.title].addon, this.title)
-            pfQuest_history[this.title] = true
-            pfMap:UpdateNodes()
-          else
-            pfQuest_colors[this.title] = { str2rgb(this.title .. GetTime()) }
-            pfMap:UpdateNodes()
-          end
-        end)
+        frame:SetScript("OnClick", pfMap.NodeClick)
       end
     end
   end
