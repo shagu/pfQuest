@@ -97,7 +97,7 @@ local function UpdateQuestLogID(questIndex, action)
     pfMap:DeleteNode("PFQUEST", title)
 
     local objectives = GetNumQuestLeaderBoards(questIndex)
-    local zone, score, maps = nil, 0, {}
+    local zone, score, maps, meta = nil, 0, {}, {}
     local dbobj = nil
 
     if objectives then
@@ -109,7 +109,7 @@ local function UpdateQuestLogID(questIndex, action)
           -- spawn data
           if type == "monster" then
             local i, j, monsterName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_MONSTERS_KILLED))
-            local meta = { ["quest"] = title, ["addon"] = "PFQUEST" }
+            meta = { ["quest"] = title, ["addon"] = "PFQUEST" }
             zone, score = pfDatabase:SearchMob(monsterName, meta)
             if zone then
               match = true
@@ -120,14 +120,14 @@ local function UpdateQuestLogID(questIndex, action)
           -- item data
           if type == "item" then
             local i, j, itemName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_OBJECTS_FOUND))
-            local meta = { ["quest"] = title, ["addon"] = "PFQUEST", ["item"] = itemName }
+            meta = { ["quest"] = title, ["addon"] = "PFQUEST", ["item"] = itemName }
             zone, score = pfDatabase:SearchItem(itemName, meta)
             if zone then
               match = true
               maps[zone] = maps[zone] and maps[zone] + score or 1
             end
 
-            local meta = { ["quest"] = title, ["addon"] = "PFQUEST", ["item"] = itemName }
+            meta = { ["quest"] = title, ["addon"] = "PFQUEST", ["item"] = itemName }
             zone, score = pfDatabase:SearchVendor(itemName, meta)
             if zone then
               match = true
