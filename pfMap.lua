@@ -173,8 +173,6 @@ function pfMap:ShowTooltip(meta, tooltip)
   local catch = nil
   local tooltip = tooltip or GameTooltip
 
-  tooltip:AddLine(" ")
-
   -- add quest data
   if meta["quest"] then
     -- scan all quest entries for matches
