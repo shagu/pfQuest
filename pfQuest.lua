@@ -238,14 +238,16 @@ local function AddWorldMapIntegration()
   if pfQuest_config["worldmapmenu"] ==  "0" then return end
 
   -- Quest Update Indicator
-  pfQuest.mapUpdate = WorldMapButton:CreateFontString("Status", "OVERLAY", "GameFontNormalSmall")
+  pfQuest.mapUpdate = WorldMapButton:CreateFontString(nil, "OVERLAY")
   pfQuest.mapUpdate:SetPoint("BOTTOMLEFT", 10, 10)
+  pfQuest.mapUpdate:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
+  pfQuest.mapUpdate:SetTextColor(1, 1, 1)
+
   pfQuest.mapUpdate:SetJustifyH("LEFT")
   pfQuest.mapUpdate:SetJustifyV("BOTTOM")
 
   pfQuest.mapUpdate:SetWidth(150)
   pfQuest.mapUpdate:SetHeight(15)
-  pfQuest.mapUpdate:SetFontObject(GameFontWhite)
   pfQuest.mapUpdate:Show()
 
   -- Quest Display Selection
