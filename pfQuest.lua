@@ -394,7 +394,7 @@ pfQuest:SetScript("OnUpdate", function()
   end
 
   if this.scan >= this.smax then
-    if this.hadUpdate then
+    if this.hadUpdate or GetNumQuestLogEntries() == 0 then
       local meta = { }
 
       -- show all questgivers
