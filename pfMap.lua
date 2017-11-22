@@ -284,12 +284,12 @@ function pfMap:ShowTooltip(meta, tooltip)
       end
     end
 
-    local item = meta["itemlink"] or "[" .. meta["item"][1] .. "]"
-
     if meta["sellcount"] then
+      local item = meta["itemlink"] or "[" .. meta["item"][1] .. "]"
       local sellcount = tonumber(meta["sellcount"]) > 0 and " |cff555555[|cffcccccc" .. meta["sellcount"] .. "x" .. "|cff555555]" or ""
       tooltip:AddLine("Vendor: " .. item .. sellcount, 1,1,1)
-    elseif meta["item"] then
+    elseif meta["item"][1] then
+      local item = meta["itemlink"] or "[" .. meta["item"][1] .. "]"
       local r,g,b = pfMap.tooltip:GetColor(tonumber(meta["droprate"]), 100)
       tooltip:AddLine("|cffffffffLoot: " .. item ..  " |cff555555[|r" .. meta["droprate"] .. "%|cff555555]", r,g,b)
     end
