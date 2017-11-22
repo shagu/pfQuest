@@ -449,38 +449,6 @@ function pfMap:DeleteNode(addon, title)
   end
 end
 
-function pfMap:BuildNode(name, parent)
-  local f = CreateFrame("Button", name, parent)
-  f:SetWidth(16)
-  f:SetHeight(16)
-  f:SetFrameLevel(112)
-
-  f:SetScript("OnEnter", function()
-    local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
-    tooltip:SetOwner(this, ANCHOR_BOTTOMLEFT)
-    tooltip:SetText(this.spawn, .3, 1, .8)
-
-    tooltip:AddDoubleLine("Level:", (this.level or UNKNOWN), .8,.8,.8, 1,1,1)
-    tooltip:AddDoubleLine("Type:", (this.spawntype or UNKNOWN), .8,.8,.8, 1,1,1)
-    tooltip:AddDoubleLine("Respawn:", (this.respawn or UNKNOWN), .8,.8,.8, 1,1,1)
-
-
-    for title, meta in pairs(this.node) do
-      pfMap:ShowTooltip(meta, tooltip)
-    end
-  end)
-
-  f:SetScript("OnLeave", function()
-    local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
-    tooltip:Hide()
-  end)
-
-  f.tex = f:CreateTexture("OVERLAY")
-  f.tex:SetAllPoints(f)
-
-  return f
-end
-
 function pfMap:NodeClick()
   if IsShiftKeyDown() then
     pfMap:DeleteNode(this.node[this.title].addon, this.title)
@@ -490,6 +458,40 @@ function pfMap:NodeClick()
     pfQuest_colors[this.title] = { str2rgb(this.title .. GetTime()) }
     pfMap:UpdateNodes()
   end
+end
+
+function pfMap:NodeEnter()
+  local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
+  tooltip:SetOwner(this, ANCHOR_BOTTOMLEFT)
+  tooltip:SetText(this.spawn, .3, 1, .8)
+
+  tooltip:AddDoubleLine("Level:", (this.level or UNKNOWN), .8,.8,.8, 1,1,1)
+  tooltip:AddDoubleLine("Type:", (this.spawntype or UNKNOWN), .8,.8,.8, 1,1,1)
+  tooltip:AddDoubleLine("Respawn:", (this.respawn or UNKNOWN), .8,.8,.8, 1,1,1)
+
+  for title, meta in pairs(this.node) do
+    pfMap:ShowTooltip(meta, tooltip)
+  end
+end
+
+function pfMap:NodeLeave()
+  local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
+  tooltip:Hide()
+end
+
+function pfMap:BuildNode(name, parent)
+  local f = CreateFrame("Button", name, parent)
+  f:SetWidth(16)
+  f:SetHeight(16)
+  f:SetFrameLevel(112)
+
+  f:SetScript("OnEnter", pfMap.NodeEnter)
+  f:SetScript("OnLeave", pfMap.NodeLeave)
+
+  f.tex = f:CreateTexture("OVERLAY")
+  f.tex:SetAllPoints(f)
+
+  return f
 end
 
 function pfMap:UpdateNode(frame, node)
@@ -523,11 +525,7 @@ function pfMap:UpdateNode(frame, node)
         end
       end
 
-      if tab.func then
-        frame:SetScript("OnClick", tab.func)
-      else
-        frame:SetScript("OnClick", pfMap.NodeClick)
-      end
+      frame:SetScript("OnClick", tab.func or pfMap.NodeClick)
     end
   end
 
