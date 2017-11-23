@@ -129,7 +129,7 @@ pfMap.mpins = {}
 pfMap.tooltip = CreateFrame("Frame" , "pfMapTooltip", GameTooltip)
 pfMap.tooltip:SetScript("OnShow", function()
   -- abort on pfQuest nodes
-  if GetMouseFocus().title then return end
+  if GetMouseFocus() and GetMouseFocus().title then return end
 
   local name = getglobal("GameTooltipTextLeft1") and getglobal("GameTooltipTextLeft1"):GetText()
 
