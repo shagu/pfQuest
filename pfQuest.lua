@@ -368,7 +368,7 @@ pfQuest:SetScript("OnEvent", function()
       pfQuest:Show()
     elseif event == "QUEST_FINISHED" then
       UpdateQuestLogID(nil)
-    else
+    elseif not arg1 or type(arg1) == "number" then
       UpdateQuestLogID(arg1)
     end
   end
