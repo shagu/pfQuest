@@ -72,7 +72,7 @@ local function UpdateQuestLogID(questIndex, action)
   if questIndex then
     --local title, level = GetQuestLogTitle(questIndex)
     local title, level, _, header, _, complete = GetQuestLogTitle(questIndex)
-    if header then return end
+    if header or not title then return end
 
     local watched = IsQuestWatched(questIndex)
     if not title then return end
