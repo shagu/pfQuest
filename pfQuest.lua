@@ -7,6 +7,7 @@ pfQuest_defconfig = {
   ["minimapnodes"] = "1", -- hide all minimap entries
   ["questlogbuttons"] = "1", -- shows buttons inside the questlog
   ["worldmapmenu"] = "1", -- shows the dropdown selection in worldmap
+  ["minimapicon"] = "1",
   ["worldmaptransp"] = "1.0",
   ["minimaptransp"] = "1.0",
 }
