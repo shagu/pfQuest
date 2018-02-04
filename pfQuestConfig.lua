@@ -37,8 +37,8 @@ local function CreateConfigEntry(config, description, type)
         pfQuest_config[this.config] = "0"
       end
       -- run option specific function, if it exists
-      if onClickFunctions[this.config] ~= nil then
-          onClickFunctions[this.config]()
+      if pfQuestConfig.onToggleFunctions[this.config] ~= nil then
+          pfQuestConfig.onToggleFunctions[this.config]()
       end
     end)
 
@@ -110,8 +110,8 @@ pfQuestConfig.close:SetScript("OnClick", function()
 end)
 
 -- If changing an option without reloading the UI needs some action, it can be defined in this table
-onClickFunctions = {}
-onClickFunctions.minimapicon = function()
+pfQuestConfig.onToggleFunctions = {}
+pfQuestConfig.onToggleFunctions.minimapicon = function()
   if pfQuest_config["minimapicon"] == "1" then
     pfBrowserIcon:Show()
   else
