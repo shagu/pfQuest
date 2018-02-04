@@ -20,14 +20,25 @@ foreach ($locales as $loc_id => $loc_name) {
     }
   }
 
-  $database = "elysium";
-  // elysium = faction_A ;; mangos = creature_template.FactionAlliance
-  $faction_table = "faction_A";
+  $serverdb = "elysium";
+
+  $dbdiffs = [
+    "elysium" => [
+      "faction" => "faction_A",
+      "respawn" => "spawntimesecsmin",
+    ],
+    "cmangos" => [
+      "faction" => "FactionAlliance",
+      "respawn" => "spawntimesecs",
+    ],
+  ];
+
+  $dbglue = $dbdiffs[$serverdb];
 
   $max_entry = 0;
   $count = 0;
   $file = "output/$loc_name/spawns.lua";
-  $mysql = new mysqli("127.0.0.1", "mangos", "mangos", $database);
+  $mysql = new mysqli("127.0.0.1", "mangos", "mangos", $serverdb);
   $mysql->set_charset("utf8");
 
   $spawnSection = "";
@@ -66,7 +77,7 @@ foreach ($locales as $loc_id => $loc_name) {
       creature.position_x AS x,
       creature.position_y AS y,
       creature.map AS map,
-      creature.spawntimesecs AS respawn,
+      creature.$dbglue[respawn] AS respawn,
       aowow.aowow_zones.mapID AS mapID,
       aowow.aowow_zones.areatableID AS zone,
       aowow.aowow_zones.x_max AS x_max,
@@ -87,7 +98,7 @@ foreach ($locales as $loc_id => $loc_name) {
         AND aowow.aowow_zones.y_max > creature.position_y
         AND aowow.aowow_zones.areatableID > 0
       )
-    LEFT JOIN aowow.aowow_factiontemplate ON aowow.aowow_factiontemplate.factiontemplateID = creature_template.$faction_table
+    LEFT JOIN aowow.aowow_factiontemplate ON aowow.aowow_factiontemplate.factiontemplateID = creature_template.$dbglue[faction]
 
     UNION
 
@@ -101,7 +112,7 @@ foreach ($locales as $loc_id => $loc_name) {
       gameobject.position_x AS x,
       gameobject.position_y AS y,
       gameobject.map AS map,
-      gameobject.spawntimesecs AS respawn,
+      gameobject.$dbglue[respawn] AS respawn,
       aowow.aowow_zones.mapID AS mapID,
       aowow.aowow_zones.areatableID AS zone,
       aowow.aowow_zones.x_max AS x_max,
@@ -150,8 +161,6 @@ foreach ($locales as $loc_id => $loc_name) {
           $spawnSection3 = "    ['zone'] = '" . key($zcount) . "',\n    ['coords'] =\n    {\n";
         }
         $spawnSection = $spawnSection1 . $spawnSection2 . $spawnSection3 . $spawnSection4 . $spawnSection5;
-
-        // echo $count - 1 . "x " . $lname . "\n";
 
         file_put_contents($file, $spawnSection, FILE_APPEND);
         unset($zcount);
