@@ -299,6 +299,16 @@ local function CreateItemEntry(i)
   return f
 end
 
+local function ReplaceQuestDetailWildcards(questText)
+  questText = string.gsub(questText, "$[Nn]", UnitName("player"))
+  questText = string.gsub(questText, "$[Cc]", strlower(UnitClass("player")))
+  questText = string.gsub(questText, "$[Rr]", strlower(UnitRace("player")))
+  questText = string.gsub(questText, "$[Bb]", "\n")
+  -- UnitSex("player") returns 2 for male and 3 for female
+  -- that's why there is an unused capture group around the $[Gg]
+  return string.gsub(questText, "($[Gg])(.+):(.+);", "%"..UnitSex("player"))
+end
+
 local function CreateQuestEntry(i)
   local f = CreateFrame("Button", nil, pfBrowser.tabs.quest.list)
   f:SetPoint("TOPLEFT", pfBrowser.tabs.quest.list, "TOPLEFT", 10, -i*30 + 5)
@@ -328,7 +338,7 @@ local function CreateQuestEntry(i)
     end
 
     if quests[this.quest]["log"] then
-      GameTooltip:AddLine(quests[this.quest]["log"], .6,1,.9,true)
+      GameTooltip:AddLine(ReplaceQuestDetailWildcards(quests[this.quest]["log"]), .6,1,.9,true)
     end
 
     GameTooltip:Show()
