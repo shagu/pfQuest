@@ -28,6 +28,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
     DEFAULT_CHAT_FRAME:AddMessage("/db quest <questname> |cffaaaaaa - show specific questgiver")
     DEFAULT_CHAT_FRAME:AddMessage("/db quests <area> |cffaaaaaa - show all quest spots on the map")
     DEFAULT_CHAT_FRAME:AddMessage("/db clean |cffaaaaaa - clean map")
+    DEFAULT_CHAT_FRAME:AddMessage("/db minimap |cffaaaaaa - toggle minimap button on/off")
   end
 
   local commandlist = { }
@@ -103,6 +104,17 @@ SlashCmdList["PFDB"] = function(input, editbox)
   -- argument: show
   if (arg1 == "config") then
     if pfQuestConfig then pfQuestConfig:Show() end
+  end
+
+
+  -- argument: show
+  if (arg1 == "minimap") then
+    if (pfQuest_config.minimapicon == "1") then
+      pfQuest_config.minimapicon = "0"
+    else
+      pfQuest_config.minimapicon = "1"
+    end
+    pfQuestConfig.onToggleFunctions.minimapicon()
   end
 end
 

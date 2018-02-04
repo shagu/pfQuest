@@ -30,10 +30,15 @@ local function CreateConfigEntry(config, description, type)
     end
 
     frame.input:SetScript("OnClick", function ()
+      -- change the option
       if this:GetChecked() then
         pfQuest_config[this.config] = "1"
       else
         pfQuest_config[this.config] = "0"
+      end
+      -- run option specific function, if it exists
+      if pfQuestConfig.onToggleFunctions[this.config] ~= nil then
+          pfQuestConfig.onToggleFunctions[this.config]()
       end
     end)
 
@@ -66,7 +71,7 @@ end
 pfQuestConfig = CreateFrame("Frame", "pfQuestConfig", UIParent)
 pfQuestConfig:Hide()
 pfQuestConfig:SetWidth(280)
-pfQuestConfig:SetHeight(340)
+pfQuestConfig:SetHeight(370)
 pfQuestConfig:SetPoint("CENTER", 0, 0)
 pfQuestConfig:SetFrameStrata("TOOLTIP")
 pfQuestConfig:SetMovable(true)
@@ -104,15 +109,29 @@ pfQuestConfig.close:SetScript("OnClick", function()
  this:GetParent():Hide()
 end)
 
+-- If changing an option without reloading the UI needs some action, it can be defined in this table
+pfQuestConfig.onToggleFunctions = {}
+pfQuestConfig.onToggleFunctions.minimapicon = function()
+  if pfQuest_config["minimapicon"] == "1" then
+    pfBrowserIcon:Show()
+  else
+    pfBrowserIcon:Hide()
+  end
+end
+
 pfQuestConfig:RegisterEvent("ADDON_LOADED")
 pfQuestConfig:SetScript("OnEvent", function()
   if arg1 == "pfQuest" then
+    if pfQuest_config["minimapicon"] == "0" then
+      pfBrowserIcon:Hide()
+    end
     CreateConfigEntry("allquestgivers",      "Show Available Questgivers",     "checkbox")
     CreateConfigEntry("currentquestgivers",  "Show Current Questgiver Nodes",  "checkbox")
     CreateConfigEntry("showlowlevel",        "Show Lowlevel Questgiver Nodes", "checkbox")
     CreateConfigEntry("minimapnodes",        "Show MiniMap Nodes",             "checkbox")
     CreateConfigEntry("questlogbuttons",     "Show QuestLog Buttons",          "checkbox")
     CreateConfigEntry("worldmapmenu",        "Show WorldMap Menu",             "checkbox")
+    CreateConfigEntry("minimapicon",         "Show MiniMap Icon",              "checkbox")
     CreateConfigEntry("worldmaptransp",      "WorldMap Node Transparency",     "text")
     CreateConfigEntry("minimaptransp",       "MiniMap Node Transparency",      "text")
   end
