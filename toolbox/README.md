@@ -2,7 +2,14 @@
 
 ## Setup Dependencies
 
-	pacman -S lxc php php-gd lua lua-sql-mysql mariadb-clients libmariadbclient
+### Archlinux
+
+    pacman -S lxc php php-gd lua lua-sql-mysql mariadb-clients libmariadbclient
+
+
+### Ubuntu
+
+    sudo apt-get install mariadb-client php php-gd php-mysqli lua5.2 lua-sql-mysql
 
 ## Setup Database LXC Container
 
