@@ -1,7 +1,7 @@
 #!/usr/bin/lua
 -- depends: pacman -S lua-sql-mysql
 
--- map pngs with alpha channel generated with: 
+-- map pngs with alpha channel generated with:
 -- `convert $file  -transparent white -resize '100x100!' $file`
 
 do -- helper functions
@@ -58,6 +58,37 @@ do -- map lookup functions
   end
 end
 
+do -- progress
+  progress = {}
+  progress.cache = {}
+  progress.lastmsg = ""
+
+  function progress:InitTable(sqltable)
+    local ret = {}
+    local query = mysql:execute('SELECT COUNT(*) FROM ' .. sqltable)
+    while query:fetch(ret, "a") do
+      self.cache[sqltable] = { 0, ret['COUNT(*)'] }
+      return true
+    end
+  end
+
+  function progress:Print(sqltable, msg)
+    if not self.cache[sqltable] or msg ~= self.lastmsg then
+      self:InitTable(sqltable)
+      self.lastmsg = msg
+    end
+
+    local cur, max = unpack(self.cache[sqltable])
+    local perc = cur / max * 100
+
+    io.write("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b")
+    io.write(msg .. string.format(": %.1f%%",perc))
+    io.flush()
+
+    self.cache[sqltable][1] = self.cache[sqltable][1] + 1
+  end
+end
+
 do -- locale detection
   locales = {
     ["enUS"] = 0,
@@ -70,15 +101,6 @@ do -- locale detection
     ["esMX"] = 7,
     ["ruRU"] = 8,
   }
-
-  loc_name = arg[1] or "enUS"
-
-  if not locales[loc_name] then
-    print("!! invalid locale !!")
-    return 1
-  end
-
-  local loc_id = locales[loc_name]
 end
 
 do -- database connection
@@ -86,13 +108,7 @@ do -- database connection
   mysql = luasql:connect("elysium","mangos","mangos","127.0.0.1")
 end
 
-local creature_template = {}
-local aowowzones = {}
-local event_scripts = {}
-local spell_template = {}
-local gameobject_template = {}
-
-
+-- functions
 local function GetCreatureCoords(id)
   local creature = {}
   local ret = {}
@@ -108,9 +124,8 @@ local function GetCreatureCoords(id)
     \
     WHERE creature.id = " .. id
 
-  local q2 = mysql:execute(sql)
-  while q2:fetch(creature, "a") do
-
+  local query = mysql:execute(sql)
+  while query:fetch(creature, "a") do
     local zone = creature.areatableID
     local x = creature.position_x
     local y = creature.position_y
@@ -124,7 +139,7 @@ local function GetCreatureCoords(id)
       px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
       py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
       if isValidMap(zone, round(px), round(py)) then
-        local coord = { px, py, zone, ( creature.spawntimesecsmin or 0), ( creature.spawntimesecsmax or 0 ) }
+        local coord = { px, py, zone, ( creature.spawntimesecsmin or 0) }
         table.insert(ret, coord)
       end
     end
@@ -148,8 +163,8 @@ local function GetGameObjectCoords(id)
     \
     WHERE gameobject.id = " .. id
 
-  local q2 = mysql:execute(sql)
-  while q2:fetch(gameobject, "a") do
+  local query = mysql:execute(sql)
+  while query:fetch(gameobject, "a") do
     local zone   = gameobject.areatableID
     local x      = gameobject.position_x
     local y      = gameobject.position_y
@@ -163,7 +178,7 @@ local function GetGameObjectCoords(id)
       px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
       py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
       if isValidMap(zone, round(px), round(py)) then
-        local coord = { px, py, zone, ( gameobject.spawntimesecsmin or 0), ( gameobject.spawntimesecsmax or 0 ) }
+        local coord = { px, py, zone, ( gameobject.spawntimesecsmin or 0) }
         table.insert(ret, coord)
       end
     end
@@ -172,31 +187,16 @@ local function GetGameObjectCoords(id)
   return ret
 end
 
-do -- unitDB
+do -- unitDB [core]
   local file = io.open("unitDB.lua", "w")
+  file:write("pfDB[\"units\"][\"core\"] = {\n")
 
-  local progress = {}
-  local progress_max = 0
-  local progress_cur = 0
-  local chksize = mysql:execute('SELECT COUNT(*) FROM creature_template ORDER BY creature_template.entry ASC')
-  while chksize:fetch(progress, "a") do
-    progress_max = progress['COUNT(*)']
-  end
+  -- iterate over all creatures
+  local creature_template = {}
+  local query = mysql:execute('SELECT * FROM creature_template ORDER BY creature_template.entry ASC')
+  while query:fetch(creature_template, "a") do
+    progress:Print("creature_template", "unitDB (core)")
 
-
-  file:write("pfDB[\"units\"][\"" .. loc_name .. "\"] = {\n")
-  local q1 = mysql:execute('SELECT * FROM creature_template ORDER BY creature_template.entry ASC')
-  while q1:fetch(creature_template, "a") do
-    
-    do -- update progress
-      progress_cur = progress_cur + 1
-      progress_perc = progress_cur / progress_max * 100
-
-      io.write(string.format("unitDB: %.1f%%",progress_perc))
-      io.flush()
-      io.write("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b")
-    end
-  
     local found_spawn = false
     local entry   = creature_template.entry
     local minlvl  = creature_template.minlevel
@@ -214,15 +214,15 @@ do -- unitDB
     do -- detect faction
       local fac = ""
       local faction = {}
-      local q4 = mysql:execute('SELECT A FROM creature_template, aowow.aowow_factiontemplate WHERE aowow.aowow_factiontemplate.factiontemplateID = creature_template.faction_A AND creature_template.entry = ' .. creature_template.entry)
-      while q4:fetch(faction, "a") do
+      local query = mysql:execute('SELECT A FROM creature_template, aowow.aowow_factiontemplate WHERE aowow.aowow_factiontemplate.factiontemplateID = creature_template.faction_A AND creature_template.entry = ' .. creature_template.entry)
+      while query:fetch(faction, "a") do
         local A = faction.A
         if A == "1" then fac = fac .. "A" end
       end
 
       local faction = {}
-      local q5 = mysql:execute('SELECT H FROM creature_template, aowow.aowow_factiontemplate WHERE aowow.aowow_factiontemplate.factiontemplateID = creature_template.faction_H AND creature_template.entry = ' .. creature_template.entry)
-      while q5:fetch(faction, "a") do
+      local query = mysql:execute('SELECT H FROM creature_template, aowow.aowow_factiontemplate WHERE aowow.aowow_factiontemplate.factiontemplateID = creature_template.faction_H AND creature_template.entry = ' .. creature_template.entry)
+      while query:fetch(faction, "a") do
         local H = faction.H
         if H == "1" then fac = fac .. "H" end
       end
@@ -236,29 +236,33 @@ do -- unitDB
       local count = 0
 
       for id,data in pairs(GetCreatureCoords(entry)) do
-        local x,y,zone,min,max = unpack(data)
-        if count == 0 then 
-          file:write("    [\"coords\"] = {\n") 
+        local x,y,zone,respawn = unpack(data)
+        if count == 0 then
+          file:write("    [\"coords\"] = {\n")
         end
         count = count + 1
-        file:write(string.format("      [%s] = { %s, %s, %s, %s, %s },\n", count, x, y, zone, min, max))
+        file:write(string.format("      [%s] = { %s, %s, %s, %s },\n", count, x, y, zone, respawn))
       end
-      
+
       -- search for summoned mobs
-      local q3 = mysql:execute('SELECT * FROM event_scripts WHERE event_scripts.datalong = ' .. creature_template.entry)
-      while q3:fetch(event_scripts, "a") do
+      local event_scripts = {}
+      local query = mysql:execute('SELECT * FROM event_scripts WHERE event_scripts.datalong = ' .. creature_template.entry)
+      while query:fetch(event_scripts, "a") do
         local script = event_scripts.datalong
 
-        local q4 = mysql:execute('SELECT * FROM spell_template WHERE spell_template.requiresSpellFocus > 0 AND spell_template.effectMiscValue1 = ' .. event_scripts.id)
-        while q4:fetch(spell_template, "a") do
+        local spell_template = {}
+        local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.requiresSpellFocus > 0 AND spell_template.effectMiscValue1 = ' .. event_scripts.id)
+        while query:fetch(spell_template, "a") do
           local spellfocus = spell_template.requiresSpellFocus
-          local q5 = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spellfocus)
-          while q5:fetch(gameobject_template, "a") do
+
+          local gameobject_template = {}
+          local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spellfocus)
+          while query:fetch(gameobject_template, "a") do
             local object = gameobject_template.entry
             for id,data in pairs(GetGameObjectCoords(object)) do
               local x,y,zone,min,max = unpack(data)
-              if count == 0 then 
-                file:write("    [\"coords\"] = {\n") 
+              if count == 0 then
+                file:write("    [\"coords\"] = {\n")
               end
 
               count = count + 1
@@ -267,9 +271,9 @@ do -- unitDB
           end
         end
       end
-      
-      if count > 0 then 
-        file:write("    },\n") 
+
+      if count > 0 then
+        file:write("    },\n")
       end
     end
     file:write("  }\n")
@@ -277,4 +281,36 @@ do -- unitDB
 
   file:write("}\n")
   file:close()
+  print()
+end
+
+do -- unitDB [locales]
+  local files = {}
+  for loc in pairs(locales) do
+    files[loc] = io.open("unitDB_" .. loc .. ".lua", "w")
+    files[loc]:write("pfDB[\"units\"][\"" .. loc .. "\"] = {\n")
+  end
+
+  local locales_creature = {}
+  local query = mysql:execute('SELECT * FROM creature_template LEFT JOIN locales_creature ON locales_creature.entry = creature_template.entry ORDER BY creature_template.entry ASC')
+  while query:fetch(locales_creature, "a") do
+    progress:Print("creature_template", "unitDB (lang)")
+
+    local entry = locales_creature.entry
+    local name  = locales_creature.name
+
+    if entry then
+      for loc in pairs(locales) do
+        local name_loc = locales_creature["name_loc" .. locales[loc]]
+        files[loc]:write("  [" .. entry .. "] = \"" .. (name_loc or name) .. "\",\n")
+      end
+    end
+  end
+
+  for loc in pairs(locales) do
+    files[loc]:write("}\n")
+    files[loc]:close()
+  end
+
+  print()
 end
