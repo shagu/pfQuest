@@ -185,6 +185,106 @@ local function GetGameObjectCoords(id)
   return ret
 end
 
+do -- objectDB [core]
+  local file = io.open("objectDB.lua", "w")
+  file:write("pfDB[\"objects\"][\"core\"] = {\n")
+
+  -- iterate over all objects
+  local gameobject_template = {}
+  local query = mysql:execute('SELECT * FROM gameobject_template ORDER BY gameobject_template.entry ASC')
+  while query:fetch(gameobject_template, "a") do
+    progress:Print("gameobject_template", "objectDB (core)")
+
+    local found_spawn = false
+    local entry   = gameobject_template.entry
+    file:write("  [" .. entry .. "] = { -- " .. gameobject_template.name .. "\n")
+
+    do -- detect faction
+      local fac = ""
+      local faction = {}
+      local sql = [[
+        SELECT A FROM gameobject_template, aowow.aowow_factiontemplate
+        WHERE aowow.aowow_factiontemplate.factiontemplateID = gameobject_template.faction
+        AND gameobject_template.entry = ]] .. gameobject_template.entry
+
+      local query = mysql:execute(sql)
+      while query:fetch(faction, "a") do
+        local A = faction.A
+        if A == "1" then fac = fac .. "A" end
+      end
+
+      local faction = {}
+      local sql = [[
+        SELECT H FROM gameobject_template, aowow.aowow_factiontemplate
+        WHERE aowow.aowow_factiontemplate.factiontemplateID = gameobject_template.faction
+        AND gameobject_template.entry = ]] .. gameobject_template.entry
+
+      local query = mysql:execute(sql)
+      while query:fetch(faction, "a") do
+        local H = faction.H
+        if H == "1" then fac = fac .. "H" end
+      end
+
+      if fac ~= "" then
+        file:write("    [\"fac\"] = \"" .. fac .. "\",\n")
+      end
+    end
+
+    do -- coordinates
+      local count = 0
+
+      for id,data in pairs(GetGameObjectCoords(entry)) do
+        local x,y,zone,respawn = unpack(data)
+        if count == 0 then
+          file:write("    [\"coords\"] = {\n")
+        end
+        count = count + 1
+        file:write(string.format("      [%s] = { %s, %s, %s, %s },\n", count, x, y, zone, respawn))
+      end
+
+      if count > 0 then
+        file:write("    },\n")
+      end
+    end
+    file:write("  }\n")
+  end
+
+  file:write("}\n")
+  file:close()
+  print()
+end
+
+do -- objectDB [locales]
+  local files = {}
+  for loc in pairs(locales) do
+    files[loc] = io.open("objectDB_" .. loc .. ".lua", "w")
+    files[loc]:write("pfDB[\"objects\"][\"" .. loc .. "\"] = {\n")
+  end
+
+  local locales_gameobject = {}
+  local query = mysql:execute('SELECT * FROM gameobject_template LEFT JOIN locales_gameobject ON locales_gameobject.entry = gameobject_template.entry ORDER BY gameobject_template.entry ASC')
+  while query:fetch(locales_gameobject, "a") do
+    progress:Print("gameobject_template", "objectDB (lang)")
+
+    local entry = locales_gameobject.entry
+    local name  = locales_gameobject.name
+
+    if entry then
+      for loc in pairs(locales) do
+        local name_loc = locales_gameobject["name_loc" .. locales[loc]]
+        files[loc]:write("  [" .. entry .. "] = \"" .. (name_loc or name) .. "\",\n")
+      end
+    end
+  end
+
+  for loc in pairs(locales) do
+    files[loc]:write("}\n")
+    files[loc]:close()
+  end
+
+  print()
+end
+
 do -- unitDB [core]
   local file = io.open("unitDB.lua", "w")
   file:write("pfDB[\"units\"][\"core\"] = {\n")
