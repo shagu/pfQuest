@@ -319,7 +319,7 @@ do -- unitDB [locales]
       for loc in pairs(locales) do
         local name_loc = locales_creature["name_loc" .. locales[loc]]
         if not name_loc or name_loc == "" then name_loc = name or "" end
-        files[loc]:write("  [" .. entry .. "] = \"" .. name_loc .. "\",\n")
+        files[loc]:write("  [" .. entry .. "] = \"" .. sanitize(name_loc) .. "\",\n")
       end
     end
   end
@@ -419,7 +419,7 @@ do -- objectDB [locales]
       for loc in pairs(locales) do
         local name_loc = locales_gameobject["name_loc" .. locales[loc]]
         if not name_loc or name_loc == "" then name_loc = name or "" end
-        files[loc]:write("  [" .. entry .. "] = \"" .. name_loc .. "\",\n")
+        files[loc]:write("  [" .. entry .. "] = \"" .. sanitize(name_loc) .. "\",\n")
       end
     end
   end
@@ -438,7 +438,7 @@ do -- itemDB [data]
 
   -- iterate over all items
   local item_template = {}
-  local query = mysql:execute('SELECT entry, name FROM item_template WHERE entry > 0 ORDER BY item_template.entry ASC')
+  local query = mysql:execute('SELECT entry, name FROM item_template ORDER BY item_template.entry ASC')
   while query:fetch(item_template, "a") do
     progress:Print("item_template", "itemDB (data)")
 
@@ -508,7 +508,7 @@ do -- itemDB [locales]
       for loc in pairs(locales) do
         local name_loc = locales_item["name_loc" .. locales[loc]]
         if not name_loc or name_loc == "" then name_loc = name or "" end
-        files[loc]:write("  [" .. entry .. "] = \"" .. name_loc .. "\",\n")
+        files[loc]:write("  [" .. entry .. "] = \"" .. sanitize(name_loc) .. "\",\n")
       end
     end
   end
@@ -659,9 +659,9 @@ do -- questDB [locales]
 
       if entry then
         files[loc]:write("  [" .. entry .. "] = {\n")
-        files[loc]:write("    [\"T\"] = \"" .. title_loc .. "\",\n")
-        files[loc]:write("    [\"O\"] = \"" .. objectives_loc .. "\",\n")
-        files[loc]:write("    [\"D\"] = \"" .. details_loc .. "\",\n")
+        files[loc]:write("    [\"T\"] = \"" .. sanitize(title_loc) .. "\",\n")
+        files[loc]:write("    [\"O\"] = \"" .. sanitize(objectives_loc) .. "\",\n")
+        files[loc]:write("    [\"D\"] = \"" .. sanitize(details_loc) .. "\",\n")
         files[loc]:write("  },\n")
       end
     end
