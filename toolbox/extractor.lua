@@ -24,8 +24,10 @@ do -- map lookup functions
       maps[map] = pngImage("maps/" .. map .. ".png")
     end
 
+    -- no mapfile means valid map
+    if not maps[map] then return true end
+
     -- error handling
-    if not maps[map] then return false end
     if not maps[map].getPixel then return false end
     if x == 0 or y == 0 then return false end
 
