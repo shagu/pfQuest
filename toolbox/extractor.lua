@@ -41,6 +41,26 @@ do -- map lookup functions
   end
 end
 
+do -- environment
+  -- available locales
+  locales = {
+    ["enUS"] = 0,
+    ["koKR"] = 1,
+    ["frFR"] = 2,
+    ["deDE"] = 3,
+    ["zhCN"] = 4,
+    ["zhTW"] = 5,
+    ["esES"] = 6,
+    ["esMX"] = 7,
+    ["ruRU"] = 8,
+  }
+
+  -- create required directories
+  for loc in pairs(locales) do
+    os.execute("mkdir -p output/" .. loc)
+  end
+end
+
 do -- helper functions
   function round(input, places)
     if not places then places = 0 end
@@ -60,7 +80,90 @@ do -- helper functions
   end
 end
 
-do -- progress
+do -- database connection
+  luasql = require("luasql.mysql").mysql()
+  mysql = luasql:connect("elysium","mangos","mangos","127.0.0.1")
+end
+
+do -- database query functions
+  function GetCreatureCoords(id)
+    local creature = {}
+    local ret = {}
+
+    local sql = [[
+      SELECT * FROM creature LEFT JOIN aowow.aowow_zones
+      ON ( aowow.aowow_zones.mapID = creature.map
+        AND aowow.aowow_zones.x_min < creature.position_x
+        AND aowow.aowow_zones.x_max > creature.position_x
+        AND aowow.aowow_zones.y_min < creature.position_y
+        AND aowow.aowow_zones.y_max > creature.position_y
+        AND aowow.aowow_zones.areatableID > 0)
+      WHERE creature.id = ]] .. id
+
+    local query = mysql:execute(sql)
+    while query:fetch(creature, "a") do
+      local zone = creature.areatableID
+      local x = creature.position_x
+      local y = creature.position_y
+      local x_max = creature.x_max
+      local x_min = creature.x_min
+      local y_max = creature.y_max
+      local y_min = creature.y_min
+      local px, py = 0, 0
+
+      if x and y and x_min and y_min then
+        px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
+        py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
+        if isValidMap(zone, round(px), round(py)) then
+          local coord = { px, py, zone, ( creature.spawntimesecsmin or 0) }
+          table.insert(ret, coord)
+        end
+      end
+    end
+
+    return ret
+  end
+
+  function GetGameObjectCoords(id)
+    local gameobject = {}
+    local ret = {}
+
+    local sql = [[
+      SELECT * FROM gameobject LEFT JOIN aowow.aowow_zones
+      ON ( aowow.aowow_zones.mapID = gameobject.map
+        AND aowow.aowow_zones.x_min < gameobject.position_x
+        AND aowow.aowow_zones.x_max > gameobject.position_x
+        AND aowow.aowow_zones.y_min < gameobject.position_y
+        AND aowow.aowow_zones.y_max > gameobject.position_y
+        AND aowow.aowow_zones.areatableID > 0)
+      WHERE gameobject.id = ]] .. id
+
+    local query = mysql:execute(sql)
+    while query:fetch(gameobject, "a") do
+      local zone   = gameobject.areatableID
+      local x      = gameobject.position_x
+      local y      = gameobject.position_y
+      local x_max  = gameobject.x_max
+      local x_min  = gameobject.x_min
+      local y_max  = gameobject.y_max
+      local y_min  = gameobject.y_min
+      local px, py = 0, 0
+
+      if x and y and x_min and y_min then
+        px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
+        py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
+        if isValidMap(zone, round(px), round(py)) then
+          local coord = { px, py, zone, ( gameobject.spawntimesecsmin or 0) }
+          table.insert(ret, coord)
+        end
+      end
+    end
+
+    return ret
+  end
+end
+
+do -- nice progress display
   progress = {}
   progress.cache = {}
   progress.lastmsg = ""
@@ -91,432 +194,16 @@ do -- progress
   end
 end
 
-do -- locale detection
-  locales = {
-    ["enUS"] = 0,
-    ["koKR"] = 1,
-    ["frFR"] = 2,
-    ["deDE"] = 3,
-    ["zhCN"] = 4,
-    ["zhTW"] = 5,
-    ["esES"] = 6,
-    ["esMX"] = 7,
-    ["ruRU"] = 8,
-  }
-end
-
-do -- database connection
-  luasql = require("luasql.mysql").mysql()
-  mysql = luasql:connect("elysium","mangos","mangos","127.0.0.1")
-end
-
--- functions
-local function GetCreatureCoords(id)
-  local creature = {}
-  local ret = {}
-
-  local sql = [[
-    SELECT * FROM creature LEFT JOIN aowow.aowow_zones
-    ON ( aowow.aowow_zones.mapID = creature.map
-      AND aowow.aowow_zones.x_min < creature.position_x
-      AND aowow.aowow_zones.x_max > creature.position_x
-      AND aowow.aowow_zones.y_min < creature.position_y
-      AND aowow.aowow_zones.y_max > creature.position_y
-      AND aowow.aowow_zones.areatableID > 0)
-    WHERE creature.id = ]] .. id
-
-  local query = mysql:execute(sql)
-  while query:fetch(creature, "a") do
-    local zone = creature.areatableID
-    local x = creature.position_x
-    local y = creature.position_y
-    local x_max = creature.x_max
-    local x_min = creature.x_min
-    local y_max = creature.y_max
-    local y_min = creature.y_min
-    local px, py = 0, 0
-
-    if x and y and x_min and y_min then
-      px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
-      py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
-      if isValidMap(zone, round(px), round(py)) then
-        local coord = { px, py, zone, ( creature.spawntimesecsmin or 0) }
-        table.insert(ret, coord)
-      end
-    end
-  end
-
-  return ret
-end
-
-local function GetGameObjectCoords(id)
-  local gameobject = {}
-  local ret = {}
-
-  local sql = [[
-    SELECT * FROM gameobject LEFT JOIN aowow.aowow_zones
-    ON ( aowow.aowow_zones.mapID = gameobject.map
-      AND aowow.aowow_zones.x_min < gameobject.position_x
-      AND aowow.aowow_zones.x_max > gameobject.position_x
-      AND aowow.aowow_zones.y_min < gameobject.position_y
-      AND aowow.aowow_zones.y_max > gameobject.position_y
-      AND aowow.aowow_zones.areatableID > 0)
-    WHERE gameobject.id = ]] .. id
-
-  local query = mysql:execute(sql)
-  while query:fetch(gameobject, "a") do
-    local zone   = gameobject.areatableID
-    local x      = gameobject.position_x
-    local y      = gameobject.position_y
-    local x_max  = gameobject.x_max
-    local x_min  = gameobject.x_min
-    local y_max  = gameobject.y_max
-    local y_min  = gameobject.y_min
-    local px, py = 0, 0
-
-    if x and y and x_min and y_min then
-      px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
-      py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
-      if isValidMap(zone, round(px), round(py)) then
-        local coord = { px, py, zone, ( gameobject.spawntimesecsmin or 0) }
-        table.insert(ret, coord)
-      end
-    end
-  end
-
-  return ret
-end
-
-do -- itemDB [core]
-  local file = io.open("itemDB.lua", "w")
-  file:write("pfDB[\"items\"][\"core\"] = {\n")
-
-  -- iterate over all items
-  local item_template = {}
-  local query = mysql:execute('SELECT * FROM item_template ORDER BY item_template.entry ASC')
-  while query:fetch(item_template, "a") do
-    progress:Print("item_template", "itemDB (core)")
-
-    local found_drop = false
-    local entry   = item_template.entry
-
-    file:write("  [" .. entry .. "] = { -- " .. item_template.name .. "\n")
-    file:write("    [\"U\"] = {\n")
-    local creature_loot_template = {}
-    local query = mysql:execute('SELECT * FROM creature_loot_template WHERE entry = ' .. entry)
-    while query:fetch(creature_loot_template, "a") do
-      file:write("      [" .. creature_loot_template.item .. "] = " .. creature_loot_template.ChanceOrQuestChance .. ",\n")
-    end
-    file:write("    }\n")
-
-    file:write("    [\"O\"] = {\n")
-    local gameobject_loot_template = {}
-    local query = mysql:execute('SELECT * FROM gameobject_loot_template WHERE entry = ' .. entry)
-    while query:fetch(gameobject_loot_template, "a") do
-      file:write("      [" .. gameobject_loot_template.item .. "] = " .. gameobject_loot_template.ChanceOrQuestChance .. ",\n")
-    end
-    file:write("    }\n")
-
-    file:write("  }\n")
-  end
-
-  file:write("}\n")
-  file:close()
-  print()
-end
-
-do -- itemDB [locales]
-  local files = {}
-  for loc in pairs(locales) do
-    files[loc] = io.open("itemDB_" .. loc .. ".lua", "w")
-    files[loc]:write("pfDB[\"items\"][\"" .. loc .. "\"] = {\n")
-  end
-
-  local locales_item = {}
-  local query = mysql:execute('SELECT * FROM item_template LEFT JOIN locales_item ON locales_item.entry = item_template.entry ORDER BY item_template.entry ASC')
-  while query:fetch(locales_item, "a") do
-    progress:Print("item_template", "itemDB (lang)")
-
-    local entry = locales_item.entry
-    local name  = locales_item.name
-
-    if entry then
-      for loc in pairs(locales) do
-        local name_loc = locales_item["name_loc" .. locales[loc]]
-        if not name_loc or name_loc == "" then name_loc = name or "" end
-        files[loc]:write("  [" .. entry .. "] = \"" .. name_loc .. "\",\n")
-      end
-    end
-  end
-
-  for loc in pairs(locales) do
-    files[loc]:write("}\n")
-    files[loc]:close()
-  end
-
-  print()
-end
-
-
-do -- questDB [core]
-  local quest_template = {}
-  local file = io.open("questDB.lua", "w")
-  file:write("pfDB[\"quests\"][core] = {\n")
-
-  local sql = [[
-    SELECT * FROM quest_template ]]
-
-  local query = mysql:execute(sql)
-  while query:fetch(quest_template, "a") do
-    progress:Print("quest_template", "questDB (core)")
-    file:write("  [" .. quest_template.entry .. "] = {\n")
-
-    if quest_template.MinLevel and quest_template.MinLevel ~= "0" then
-      file:write("    [\"min\"] = " .. quest_template.MinLevel .. ",\n")
-    end
-
-    if quest_template.QuestLevel and quest_template.QuestLevel ~= "0" then
-      file:write("    [\"lvl\"] = " .. quest_template.QuestLevel .. ",\n")
-    end
-
-    if quest_template.RequiredClasses and quest_template.RequiredClasses ~= "0" then
-      file:write("    [\"class\"] = " .. quest_template.RequiredClasses .. ",\n")
-    end
-
-    if quest_template.RequiredRaces and quest_template.RequiredRaces ~= "0" then
-      file:write("    [\"race\"] = " .. quest_template.RequiredRaces .. ",\n")
-    end
-
-    if quest_template.RequiredSkill and quest_template.RequiredSkill ~= "0" then
-      file:write("    [\"skill\"] = " .. quest_template.RequiredSkill .. ",\n")
-    end
-
-    if quest_template.PrevQuestId and quest_template.PrevQuestId ~= "0" then
-      file:write("    [\"pre\"] = " .. quest_template.PrevQuestId .. ",\n")
-    end
-
-    if quest_template.NextQuestInChain and quest_template.NextQuestInChain ~= "0" then
-      file:write("    [\"next\"] = " .. quest_template.NextQuestInChain .. ",\n")
-    end
-
-    -- quest objectives
-    file:write("    [\"obj\"] = {\n")
-    for i=1,4 do
-      if quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) > 0 then
-        file:write("      [\"U\"] = " .. quest_template["ReqCreatureOrGOId" .. i] .. ",\n")
-      elseif quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) < 0 then
-        file:write("      [\"O\"] = " .. tonumber(quest_template["ReqCreatureOrGOId" .. i])*-1 .. ",\n")
-      end
-      if quest_template["ReqItemId" .. i] and tonumber(quest_template["ReqItemId" .. i]) > 0 then
-        file:write("      [\"I\"] = " .. quest_template["ReqItemId" .. i] .. ",\n")
-      end
-    end
-    file:write("    },\n")
-
-    do -- quest starter
-      file:write("    [\"start\"] = {\n")
-
-      local creature_questrelation = {}
-      local sql = [[
-        SELECT * FROM creature_questrelation WHERE creature_questrelation.quest = ]] .. quest_template.entry
-      local query = mysql:execute(sql)
-      while query:fetch(creature_questrelation, "a") do
-        file:write("      [\"U\"] = " .. creature_questrelation.id .. ",\n")
-      end
-
-      local gameobject_questrelation = {}
-      local sql = [[
-        SELECT * FROM gameobject_questrelation WHERE gameobject_questrelation.quest = ]] .. quest_template.entry
-      local query = mysql:execute(sql)
-      while query:fetch(gameobject_questrelation, "a") do
-        file:write("      [\"O\"] = " .. gameobject_questrelation.id .. ",\n")
-      end
-
-      file:write("    },\n")
-    end
-
-    do -- quest ender
-      file:write("    [\"end\"] = {\n")
-
-      local creature_involvedrelation = {}
-      local sql = [[
-        SELECT * FROM creature_involvedrelation WHERE creature_involvedrelation.quest = ]] .. quest_template.entry
-      local query = mysql:execute(sql)
-      while query:fetch(creature_involvedrelation, "a") do
-        file:write("      [\"U\"] = " .. creature_involvedrelation.id .. ",\n")
-      end
-
-      local gameobject_involvedrelation = {}
-      local sql = [[
-        SELECT * FROM gameobject_involvedrelation WHERE gameobject_involvedrelation.quest = ]] .. quest_template.entry
-      local query = mysql:execute(sql)
-      while query:fetch(gameobject_involvedrelation, "a") do
-        file:write("      [\"O\"] = " .. gameobject_involvedrelation.id .. ",\n")
-      end
-
-      file:write("    },\n")
-    end
-
-    file:write("  },\n")
-  end
-
-  file:write("}\n")
-  print()
-end
-
-do -- questDB [locales]
-  local files = {}
-  for loc in pairs(locales) do
-    files[loc] = io.open("questDB_" .. loc .. ".lua", "w")
-    files[loc]:write("pfDB[\"quests\"][\"" .. loc .. "\"] = {\n")
-  end
-
-  local locales_quest = {}
-  local query = mysql:execute('SELECT * FROM quest_template LEFT JOIN locales_quest ON locales_quest.entry = quest_template.entry ORDER BY quest_template.entry ASC')
-  while query:fetch(locales_quest, "a") do
-    progress:Print("quest_template", "questDB (lang)")
-
-    for loc in pairs(locales) do
-      local entry = locales_quest.entry
-
-      local title_loc = locales_quest["Title_loc" .. locales[loc]]
-      local details_loc = locales_quest["Details_loc" .. locales[loc]]
-      local objectives_loc = locales_quest["Objectives_loc" .. locales[loc]]
-
-      if not title_loc or title_loc == "" then title_loc = locales_quest.Title or "" end
-      if not details_loc or details_loc == "" then details_loc = locales_quest.Details or "" end
-      if not objectives_loc or objectives_loc == "" then objectives_loc = locales_quest.Objectives or "" end
-
-      if entry then
-        files[loc]:write("  [" .. entry .. "] = {\n")
-        files[loc]:write("    [\"T\"] = \"" .. title_loc .. "\",\n")
-        files[loc]:write("    [\"O\"] = \"" .. objectives_loc .. "\",\n")
-        files[loc]:write("    [\"D\"] = \"" .. details_loc .. "\",\n")
-        files[loc]:write("  },\n")
-      end
-    end
-  end
-
-  for loc in pairs(locales) do
-    files[loc]:write("}\n")
-    files[loc]:close()
-  end
-
-  print()
-end
-
-do -- objectDB [core]
-  local file = io.open("objectDB.lua", "w")
-  file:write("pfDB[\"objects\"][\"core\"] = {\n")
-
-  -- iterate over all objects
-  local gameobject_template = {}
-  local query = mysql:execute('SELECT * FROM gameobject_template ORDER BY gameobject_template.entry ASC')
-  while query:fetch(gameobject_template, "a") do
-    progress:Print("gameobject_template", "objectDB (core)")
-
-    local found_spawn = false
-    local entry   = gameobject_template.entry
-    file:write("  [" .. entry .. "] = { -- " .. gameobject_template.name .. "\n")
-
-    do -- detect faction
-      local fac = ""
-      local faction = {}
-      local sql = [[
-        SELECT A FROM gameobject_template, aowow.aowow_factiontemplate
-        WHERE aowow.aowow_factiontemplate.factiontemplateID = gameobject_template.faction
-        AND gameobject_template.entry = ]] .. gameobject_template.entry
-
-      local query = mysql:execute(sql)
-      while query:fetch(faction, "a") do
-        local A = faction.A
-        if A == "1" then fac = fac .. "A" end
-      end
-
-      local faction = {}
-      local sql = [[
-        SELECT H FROM gameobject_template, aowow.aowow_factiontemplate
-        WHERE aowow.aowow_factiontemplate.factiontemplateID = gameobject_template.faction
-        AND gameobject_template.entry = ]] .. gameobject_template.entry
-
-      local query = mysql:execute(sql)
-      while query:fetch(faction, "a") do
-        local H = faction.H
-        if H == "1" then fac = fac .. "H" end
-      end
-
-      if fac ~= "" then
-        file:write("    [\"fac\"] = \"" .. fac .. "\",\n")
-      end
-    end
-
-    do -- coordinates
-      local count = 0
-
-      for id,data in pairs(GetGameObjectCoords(entry)) do
-        local x,y,zone,respawn = unpack(data)
-        if count == 0 then
-          file:write("    [\"coords\"] = {\n")
-        end
-        count = count + 1
-        file:write(string.format("      [%s] = { %s, %s, %s, %s },\n", count, x, y, zone, respawn))
-      end
-
-      if count > 0 then
-        file:write("    },\n")
-      end
-    end
-    file:write("  }\n")
-  end
-
-  file:write("}\n")
-  file:close()
-  print()
-end
-
-do -- objectDB [locales]
-  local files = {}
-  for loc in pairs(locales) do
-    files[loc] = io.open("objectDB_" .. loc .. ".lua", "w")
-    files[loc]:write("pfDB[\"objects\"][\"" .. loc .. "\"] = {\n")
-  end
-
-  local locales_gameobject = {}
-  local query = mysql:execute('SELECT * FROM gameobject_template LEFT JOIN locales_gameobject ON locales_gameobject.entry = gameobject_template.entry ORDER BY gameobject_template.entry ASC')
-  while query:fetch(locales_gameobject, "a") do
-    progress:Print("gameobject_template", "objectDB (lang)")
-
-    local entry = locales_gameobject.entry
-    local name  = locales_gameobject.name
-
-    if entry then
-      for loc in pairs(locales) do
-        local name_loc = locales_gameobject["name_loc" .. locales[loc]]
-        if not name_loc or name_loc == "" then name_loc = name or "" end
-        files[loc]:write("  [" .. entry .. "] = \"" .. name_loc .. "\",\n")
-      end
-    end
-  end
-
-  for loc in pairs(locales) do
-    files[loc]:write("}\n")
-    files[loc]:close()
-  end
-
-  print()
-end
-
-do -- unitDB [core]
-  local file = io.open("unitDB.lua", "w")
-  file:write("pfDB[\"units\"][\"core\"] = {\n")
+do -- unitDB [data]
+  local file = io.open("output/unitDB.lua", "w")
+  file:write("pfDB[\"units\"][\"data\"] = {\n")
 
   -- iterate over all creatures
   local creature_template = {}
   local query = mysql:execute('SELECT * FROM creature_template ORDER BY creature_template.entry ASC')
   while query:fetch(creature_template, "a") do
-    progress:Print("creature_template", "unitDB (core)")
+    progress:Print("creature_template", "unitDB (data)")
 
-    local found_spawn = false
     local entry   = creature_template.entry
     local minlvl  = creature_template.minlevel
     local maxlvl  = creature_template.maxlevel
@@ -616,7 +303,7 @@ end
 do -- unitDB [locales]
   local files = {}
   for loc in pairs(locales) do
-    files[loc] = io.open("unitDB_" .. loc .. ".lua", "w")
+    files[loc] = io.open("output/" .. loc .. "/unitDB_" .. loc .. ".lua", "w")
     files[loc]:write("pfDB[\"units\"][\"" .. loc .. "\"] = {\n")
   end
 
@@ -633,6 +320,349 @@ do -- unitDB [locales]
         local name_loc = locales_creature["name_loc" .. locales[loc]]
         if not name_loc or name_loc == "" then name_loc = name or "" end
         files[loc]:write("  [" .. entry .. "] = \"" .. name_loc .. "\",\n")
+      end
+    end
+  end
+
+  for loc in pairs(locales) do
+    files[loc]:write("}\n")
+    files[loc]:close()
+  end
+
+  print()
+end
+
+do -- objectDB [data]
+  local file = io.open("output/objectDB.lua", "w")
+  file:write("pfDB[\"objects\"][\"data\"] = {\n")
+
+  -- iterate over all objects
+  local gameobject_template = {}
+  local query = mysql:execute('SELECT * FROM gameobject_template ORDER BY gameobject_template.entry ASC')
+  while query:fetch(gameobject_template, "a") do
+    progress:Print("gameobject_template", "objectDB (data)")
+
+    local entry   = gameobject_template.entry
+    file:write("  [" .. entry .. "] = { -- " .. gameobject_template.name .. "\n")
+
+    do -- detect faction
+      local fac = ""
+      local faction = {}
+      local sql = [[
+        SELECT A FROM gameobject_template, aowow.aowow_factiontemplate
+        WHERE aowow.aowow_factiontemplate.factiontemplateID = gameobject_template.faction
+        AND gameobject_template.entry = ]] .. gameobject_template.entry
+
+      local query = mysql:execute(sql)
+      while query:fetch(faction, "a") do
+        local A = faction.A
+        if A == "1" then fac = fac .. "A" end
+      end
+
+      local faction = {}
+      local sql = [[
+        SELECT H FROM gameobject_template, aowow.aowow_factiontemplate
+        WHERE aowow.aowow_factiontemplate.factiontemplateID = gameobject_template.faction
+        AND gameobject_template.entry = ]] .. gameobject_template.entry
+
+      local query = mysql:execute(sql)
+      while query:fetch(faction, "a") do
+        local H = faction.H
+        if H == "1" then fac = fac .. "H" end
+      end
+
+      if fac ~= "" then
+        file:write("    [\"fac\"] = \"" .. fac .. "\",\n")
+      end
+    end
+
+    do -- coordinates
+      local count = 0
+
+      for id,data in pairs(GetGameObjectCoords(entry)) do
+        local x,y,zone,respawn = unpack(data)
+        if count == 0 then
+          file:write("    [\"coords\"] = {\n")
+        end
+        count = count + 1
+        file:write(string.format("      [%s] = { %s, %s, %s, %s },\n", count, x, y, zone, respawn))
+      end
+
+      if count > 0 then
+        file:write("    },\n")
+      end
+    end
+    file:write("  }\n")
+  end
+
+  file:write("}\n")
+  file:close()
+  print()
+end
+
+do -- objectDB [locales]
+  local files = {}
+  for loc in pairs(locales) do
+    files[loc] = io.open("output/" .. loc .. "/objectDB_" .. loc .. ".lua", "w")
+    files[loc]:write("pfDB[\"objects\"][\"" .. loc .. "\"] = {\n")
+  end
+
+  local locales_gameobject = {}
+  local query = mysql:execute('SELECT * FROM gameobject_template LEFT JOIN locales_gameobject ON locales_gameobject.entry = gameobject_template.entry ORDER BY gameobject_template.entry ASC')
+  while query:fetch(locales_gameobject, "a") do
+    progress:Print("gameobject_template", "objectDB (lang)")
+
+    local entry = locales_gameobject.entry
+    local name  = locales_gameobject.name
+
+    if entry then
+      for loc in pairs(locales) do
+        local name_loc = locales_gameobject["name_loc" .. locales[loc]]
+        if not name_loc or name_loc == "" then name_loc = name or "" end
+        files[loc]:write("  [" .. entry .. "] = \"" .. name_loc .. "\",\n")
+      end
+    end
+  end
+
+  for loc in pairs(locales) do
+    files[loc]:write("}\n")
+    files[loc]:close()
+  end
+
+  print()
+end
+
+do -- itemDB [data]
+  local file = io.open("output/itemDB.lua", "w")
+  file:write("pfDB[\"items\"][\"data\"] = {\n")
+
+  -- iterate over all items
+  local item_template = {}
+  local query = mysql:execute('SELECT entry, name FROM item_template WHERE entry > 0 ORDER BY item_template.entry ASC')
+  while query:fetch(item_template, "a") do
+    progress:Print("item_template", "itemDB (data)")
+
+    local entry   = item_template.entry
+    file:write("  [" .. entry .. "] = { -- " .. item_template.name .. "\n")
+
+    local creature_loot_template = {}
+    local count = 0
+    local query = mysql:execute('SELECT entry, ChanceOrQuestChance FROM creature_loot_template WHERE item = ' .. entry .. ' ORDER BY entry')
+    while query:fetch(creature_loot_template, "a") do
+      if count == 0 then
+        file:write("    [\"U\"] = {\n")
+      end
+      file:write("      [" .. creature_loot_template.entry .. "] = " .. math.abs(creature_loot_template.ChanceOrQuestChance) .. ",\n")
+      count = count + 1
+    end
+    if count > 0 then file:write("    },\n") end
+
+    local gameobject_loot_template = {}
+    local count = 0
+    local query = mysql:execute('SELECT entry, ChanceOrQuestChance FROM gameobject_loot_template WHERE item = ' .. entry .. ' ORDER BY entry')
+    while query:fetch(gameobject_loot_template, "a") do
+      if count == 0 then
+        file:write("    [\"O\"] = {\n")
+      end
+      file:write("      [" .. gameobject_loot_template.entry .. "] = " .. math.abs(gameobject_loot_template.ChanceOrQuestChance) .. ",\n")
+      count = count + 1
+    end
+    if count > 0 then file:write("    },\n") end
+
+    local npc_vendor = {}
+    local count = 0
+    local query = mysql:execute('SELECT entry, maxcount FROM npc_vendor WHERE item = ' .. entry .. ' ORDER BY entry')
+    while query:fetch(npc_vendor, "a") do
+      if count == 0 then
+        file:write("    [\"V\"] = {\n")
+      end
+      file:write("      [" .. npc_vendor.entry .. "] = " .. npc_vendor.maxcount .. ",\n")
+      count = count + 1
+    end
+    if count > 0 then file:write("    },\n") end
+
+    file:write("  },\n")
+  end
+
+  file:write("}\n")
+  file:close()
+  print()
+end
+
+do -- itemDB [locales]
+  local files = {}
+  for loc in pairs(locales) do
+    files[loc] = io.open("output/" .. loc .. "/itemDB_" .. loc .. ".lua", "w")
+    files[loc]:write("pfDB[\"items\"][\"" .. loc .. "\"] = {\n")
+  end
+
+  local locales_item = {}
+  local query = mysql:execute('SELECT * FROM item_template LEFT JOIN locales_item ON locales_item.entry = item_template.entry ORDER BY item_template.entry ASC')
+  while query:fetch(locales_item, "a") do
+    progress:Print("item_template", "itemDB (lang)")
+
+    local entry = locales_item.entry
+    local name  = locales_item.name
+
+    if entry then
+      for loc in pairs(locales) do
+        local name_loc = locales_item["name_loc" .. locales[loc]]
+        if not name_loc or name_loc == "" then name_loc = name or "" end
+        files[loc]:write("  [" .. entry .. "] = \"" .. name_loc .. "\",\n")
+      end
+    end
+  end
+
+  for loc in pairs(locales) do
+    files[loc]:write("}\n")
+    files[loc]:close()
+  end
+
+  print()
+end
+
+do -- questDB [data]
+  local quest_template = {}
+  local file = io.open("output/questDB.lua", "w")
+  file:write("pfDB[\"quests\"][\"data\"] = {\n")
+
+  local sql = [[
+    SELECT * FROM quest_template ]]
+
+  local query = mysql:execute(sql)
+  while query:fetch(quest_template, "a") do
+    progress:Print("quest_template", "questDB (data)")
+    file:write("  [" .. quest_template.entry .. "] = {\n")
+
+    if quest_template.MinLevel and quest_template.MinLevel ~= "0" then
+      file:write("    [\"min\"] = " .. quest_template.MinLevel .. ",\n")
+    end
+
+    if quest_template.QuestLevel and quest_template.QuestLevel ~= "0" then
+      file:write("    [\"lvl\"] = " .. quest_template.QuestLevel .. ",\n")
+    end
+
+    if quest_template.RequiredClasses and quest_template.RequiredClasses ~= "0" then
+      file:write("    [\"class\"] = " .. quest_template.RequiredClasses .. ",\n")
+    end
+
+    if quest_template.RequiredRaces and quest_template.RequiredRaces ~= "0" then
+      file:write("    [\"race\"] = " .. quest_template.RequiredRaces .. ",\n")
+    end
+
+    if quest_template.RequiredSkill and quest_template.RequiredSkill ~= "0" then
+      file:write("    [\"skill\"] = " .. quest_template.RequiredSkill .. ",\n")
+    end
+
+    if quest_template.PrevQuestId and quest_template.PrevQuestId ~= "0" then
+      file:write("    [\"pre\"] = " .. quest_template.PrevQuestId .. ",\n")
+    end
+
+    if quest_template.NextQuestInChain and quest_template.NextQuestInChain ~= "0" then
+      file:write("    [\"next\"] = " .. quest_template.NextQuestInChain .. ",\n")
+    end
+
+    -- quest objectives
+    local first = true
+    for i=1,4 do
+      if quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) > 0 then
+        if first then file:write("    [\"obj\"] = {\n"); first = nil end
+        file:write("      [\"U\"] = " .. quest_template["ReqCreatureOrGOId" .. i] .. ",\n")
+      elseif quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) < 0 then
+        if first then file:write("    [\"obj\"] = {\n"); first = nil end
+        file:write("      [\"O\"] = " .. tonumber(quest_template["ReqCreatureOrGOId" .. i])*-1 .. ",\n")
+      end
+      if quest_template["ReqItemId" .. i] and tonumber(quest_template["ReqItemId" .. i]) > 0 then
+        if first then file:write("    [\"obj\"] = {\n"); first = nil end
+        file:write("      [\"I\"] = " .. quest_template["ReqItemId" .. i] .. ",\n")
+      end
+    end
+    if not first then file:write("    },\n") end
+
+    do -- quest starter
+      local first = true
+
+      local creature_questrelation = {}
+      local sql = [[
+        SELECT * FROM creature_questrelation WHERE creature_questrelation.quest = ]] .. quest_template.entry
+      local query = mysql:execute(sql)
+      while query:fetch(creature_questrelation, "a") do
+        if first then file:write("    [\"start\"] = {\n"); first = nil end
+        file:write("      [\"U\"] = " .. creature_questrelation.id .. ",\n")
+      end
+
+      local gameobject_questrelation = {}
+      local sql = [[
+        SELECT * FROM gameobject_questrelation WHERE gameobject_questrelation.quest = ]] .. quest_template.entry
+      local query = mysql:execute(sql)
+      while query:fetch(gameobject_questrelation, "a") do
+        if first then file:write("    [\"start\"] = {\n"); first = nil end
+        file:write("      [\"O\"] = " .. gameobject_questrelation.id .. ",\n")
+      end
+
+      if not first then file:write("    },\n") end
+    end
+
+    do -- quest ender
+      local first = true
+
+      local creature_involvedrelation = {}
+      local sql = [[
+        SELECT * FROM creature_involvedrelation WHERE creature_involvedrelation.quest = ]] .. quest_template.entry
+      local query = mysql:execute(sql)
+      while query:fetch(creature_involvedrelation, "a") do
+        if first then file:write("    [\"end\"] = {\n"); first = nil end
+        file:write("      [\"U\"] = " .. creature_involvedrelation.id .. ",\n")
+      end
+
+      local gameobject_involvedrelation = {}
+      local sql = [[
+        SELECT * FROM gameobject_involvedrelation WHERE gameobject_involvedrelation.quest = ]] .. quest_template.entry
+      local query = mysql:execute(sql)
+      while query:fetch(gameobject_involvedrelation, "a") do
+        if first then file:write("    [\"end\"] = {\n"); first = nil end
+        file:write("      [\"O\"] = " .. gameobject_involvedrelation.id .. ",\n")
+      end
+
+      if not first then file:write("    },\n") end
+    end
+
+    file:write("  },\n")
+  end
+
+  file:write("}\n")
+  print()
+end
+
+do -- questDB [locales]
+  local files = {}
+  for loc in pairs(locales) do
+    files[loc] = io.open("output/" .. loc .. "/questDB_" .. loc .. ".lua", "w")
+    files[loc]:write("pfDB[\"quests\"][\"" .. loc .. "\"] = {\n")
+  end
+
+  local locales_quest = {}
+  local query = mysql:execute('SELECT * FROM quest_template LEFT JOIN locales_quest ON locales_quest.entry = quest_template.entry ORDER BY quest_template.entry ASC')
+  while query:fetch(locales_quest, "a") do
+    progress:Print("quest_template", "questDB (lang)")
+
+    for loc in pairs(locales) do
+      local entry = locales_quest.entry
+
+      local title_loc = locales_quest["Title_loc" .. locales[loc]]
+      local details_loc = locales_quest["Details_loc" .. locales[loc]]
+      local objectives_loc = locales_quest["Objectives_loc" .. locales[loc]]
+
+      if not title_loc or title_loc == "" then title_loc = locales_quest.Title or "" end
+      if not details_loc or details_loc == "" then details_loc = locales_quest.Details or "" end
+      if not objectives_loc or objectives_loc == "" then objectives_loc = locales_quest.Objectives or "" end
+
+      if entry then
+        files[loc]:write("  [" .. entry .. "] = {\n")
+        files[loc]:write("    [\"T\"] = \"" .. title_loc .. "\",\n")
+        files[loc]:write("    [\"O\"] = \"" .. objectives_loc .. "\",\n")
+        files[loc]:write("    [\"D\"] = \"" .. details_loc .. "\",\n")
+        files[loc]:write("  },\n")
       end
     end
   end
