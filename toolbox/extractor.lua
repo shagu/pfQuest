@@ -67,7 +67,7 @@ do -- progress
     local ret = {}
     local query = mysql:execute('SELECT COUNT(*) FROM ' .. sqltable)
     while query:fetch(ret, "a") do
-      self.cache[sqltable] = { 0, ret['COUNT(*)'] }
+      self.cache[sqltable] = { 1, ret['COUNT(*)'] }
       return true
     end
   end
