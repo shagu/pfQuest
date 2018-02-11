@@ -113,16 +113,15 @@ local function GetCreatureCoords(id)
   local creature = {}
   local ret = {}
 
-  local sql = "\
-    SELECT * FROM creature LEFT JOIN aowow.aowow_zones \
-    ON ( aowow.aowow_zones.mapID = creature.map \
-      AND aowow.aowow_zones.x_min < creature.position_x \
-      AND aowow.aowow_zones.x_max > creature.position_x \
-      AND aowow.aowow_zones.y_min < creature.position_y \
-      AND aowow.aowow_zones.y_max > creature.position_y \
-      AND aowow.aowow_zones.areatableID > 0) \
-    \
-    WHERE creature.id = " .. id
+  local sql = [[
+    SELECT * FROM creature LEFT JOIN aowow.aowow_zones
+    ON ( aowow.aowow_zones.mapID = creature.map
+      AND aowow.aowow_zones.x_min < creature.position_x
+      AND aowow.aowow_zones.x_max > creature.position_x
+      AND aowow.aowow_zones.y_min < creature.position_y
+      AND aowow.aowow_zones.y_max > creature.position_y
+      AND aowow.aowow_zones.areatableID > 0)
+    WHERE creature.id = ]] .. id
 
   local query = mysql:execute(sql)
   while query:fetch(creature, "a") do
@@ -152,16 +151,15 @@ local function GetGameObjectCoords(id)
   local gameobject = {}
   local ret = {}
 
-  local sql = "\
-    SELECT * FROM gameobject LEFT JOIN aowow.aowow_zones \
-    ON ( aowow.aowow_zones.mapID = gameobject.map \
-      AND aowow.aowow_zones.x_min < gameobject.position_x \
-      AND aowow.aowow_zones.x_max > gameobject.position_x \
-      AND aowow.aowow_zones.y_min < gameobject.position_y \
-      AND aowow.aowow_zones.y_max > gameobject.position_y \
-      AND aowow.aowow_zones.areatableID > 0) \
-    \
-    WHERE gameobject.id = " .. id
+  local sql = [[
+    SELECT * FROM gameobject LEFT JOIN aowow.aowow_zones
+    ON ( aowow.aowow_zones.mapID = gameobject.map
+      AND aowow.aowow_zones.x_min < gameobject.position_x
+      AND aowow.aowow_zones.x_max > gameobject.position_x
+      AND aowow.aowow_zones.y_min < gameobject.position_y
+      AND aowow.aowow_zones.y_max > gameobject.position_y
+      AND aowow.aowow_zones.areatableID > 0)
+    WHERE gameobject.id = ]] .. id
 
   local query = mysql:execute(sql)
   while query:fetch(gameobject, "a") do
@@ -214,14 +212,24 @@ do -- unitDB [core]
     do -- detect faction
       local fac = ""
       local faction = {}
-      local query = mysql:execute('SELECT A FROM creature_template, aowow.aowow_factiontemplate WHERE aowow.aowow_factiontemplate.factiontemplateID = creature_template.faction_A AND creature_template.entry = ' .. creature_template.entry)
+      local sql = [[
+        SELECT A FROM creature_template, aowow.aowow_factiontemplate
+        WHERE aowow.aowow_factiontemplate.factiontemplateID = creature_template.faction_A
+        AND creature_template.entry = ]] .. creature_template.entry
+
+      local query = mysql:execute(sql)
       while query:fetch(faction, "a") do
         local A = faction.A
         if A == "1" then fac = fac .. "A" end
       end
 
       local faction = {}
-      local query = mysql:execute('SELECT H FROM creature_template, aowow.aowow_factiontemplate WHERE aowow.aowow_factiontemplate.factiontemplateID = creature_template.faction_H AND creature_template.entry = ' .. creature_template.entry)
+      local sql = [[
+        SELECT H FROM creature_template, aowow.aowow_factiontemplate
+        WHERE aowow.aowow_factiontemplate.factiontemplateID = creature_template.faction_H
+        AND creature_template.entry = ]] .. creature_template.entry
+
+      local query = mysql:execute(sql)
       while query:fetch(faction, "a") do
         local H = faction.H
         if H == "1" then fac = fac .. "H" end
