@@ -185,6 +185,77 @@ local function GetGameObjectCoords(id)
   return ret
 end
 
+do -- itemDB [core]
+  local file = io.open("itemDB.lua", "w")
+  file:write("pfDB[\"items\"][\"core\"] = {\n")
+
+  -- iterate over all items
+  local item_template = {}
+  local query = mysql:execute('SELECT * FROM item_template ORDER BY item_template.entry ASC')
+  while query:fetch(item_template, "a") do
+    progress:Print("item_template", "itemDB (core)")
+
+    local found_drop = false
+    local entry   = item_template.entry
+
+    file:write("  [" .. entry .. "] = { -- " .. item_template.name .. "\n")
+    file:write("    [\"U\"] = {\n")
+    local creature_loot_template = {}
+    local query = mysql:execute('SELECT * FROM creature_loot_template WHERE entry = ' .. entry)
+    while query:fetch(creature_loot_template, "a") do
+      file:write("      [" .. creature_loot_template.item .. "] = " .. creature_loot_template.ChanceOrQuestChance .. ",\n")
+    end
+    file:write("    }\n")
+
+    file:write("    [\"O\"] = {\n")
+    local gameobject_loot_template = {}
+    local query = mysql:execute('SELECT * FROM gameobject_loot_template WHERE entry = ' .. entry)
+    while query:fetch(gameobject_loot_template, "a") do
+      file:write("      [" .. gameobject_loot_template.item .. "] = " .. gameobject_loot_template.ChanceOrQuestChance .. ",\n")
+    end
+    file:write("    }\n")
+
+    file:write("  }\n")
+  end
+
+  file:write("}\n")
+  file:close()
+  print()
+end
+
+do -- itemDB [locales]
+  local files = {}
+  for loc in pairs(locales) do
+    files[loc] = io.open("itemDB_" .. loc .. ".lua", "w")
+    files[loc]:write("pfDB[\"items\"][\"" .. loc .. "\"] = {\n")
+  end
+
+  local locales_item = {}
+  local query = mysql:execute('SELECT * FROM item_template LEFT JOIN locales_item ON locales_item.entry = item_template.entry ORDER BY item_template.entry ASC')
+  while query:fetch(locales_item, "a") do
+    progress:Print("item_template", "itemDB (lang)")
+
+    local entry = locales_item.entry
+    local name  = locales_item.name
+
+    if entry then
+      for loc in pairs(locales) do
+        local name_loc = locales_item["name_loc" .. locales[loc]]
+        if not name_loc or name_loc == "" then name_loc = name or "" end
+        files[loc]:write("  [" .. entry .. "] = \"" .. name_loc .. "\",\n")
+      end
+    end
+  end
+
+  for loc in pairs(locales) do
+    files[loc]:write("}\n")
+    files[loc]:close()
+  end
+
+  print()
+end
+
+
 do -- questDB [core]
   local quest_template = {}
   local file = io.open("questDB.lua", "w")
