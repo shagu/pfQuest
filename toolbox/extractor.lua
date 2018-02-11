@@ -376,15 +376,20 @@ do -- questDB [locales]
 
     for loc in pairs(locales) do
       local entry = locales_quest.entry
-      local title_loc = locales_quest["Title_loc" .. locales[loc]] or title
-      local details_loc = locales_quest["Details_loc" .. locales[loc]] or details
-      local objectives_loc = locales_quest["Objectives_loc" .. locales[loc]] or objectives
+
+      local title_loc = locales_quest["Title_loc" .. locales[loc]]
+      local details_loc = locales_quest["Details_loc" .. locales[loc]]
+      local objectives_loc = locales_quest["Objectives_loc" .. locales[loc]]
+
+      if not title_loc or title_loc == "" then title_loc = locales_quest.Title or "" end
+      if not details_loc or details_loc == "" then details_loc = locales_quest.Details or "" end
+      if not objectives_loc or objectives_loc == "" then objectives_loc = locales_quest.Objectives or "" end
 
       if entry then
         files[loc]:write("  [" .. entry .. "] = {\n")
-        files[loc]:write("    [\"T\"] = \"" .. (title_loc or "") .. "\",\n")
-        files[loc]:write("    [\"O\"] = \"" .. (objectives_loc or "") .. "\",\n")
-        files[loc]:write("    [\"D\"] = \"" .. (details_loc or "") .. "\",\n")
+        files[loc]:write("    [\"T\"] = \"" .. title_loc .. "\",\n")
+        files[loc]:write("    [\"O\"] = \"" .. objectives_loc .. "\",\n")
+        files[loc]:write("    [\"D\"] = \"" .. details_loc .. "\",\n")
         files[loc]:write("  },\n")
       end
     end
@@ -485,7 +490,8 @@ do -- objectDB [locales]
     if entry then
       for loc in pairs(locales) do
         local name_loc = locales_gameobject["name_loc" .. locales[loc]]
-        files[loc]:write("  [" .. entry .. "] = \"" .. (name_loc or name) .. "\",\n")
+        if not name_loc or name_loc == "" then name_loc = name or "" end
+        files[loc]:write("  [" .. entry .. "] = \"" .. name_loc .. "\",\n")
       end
     end
   end
@@ -623,7 +629,8 @@ do -- unitDB [locales]
     if entry then
       for loc in pairs(locales) do
         local name_loc = locales_creature["name_loc" .. locales[loc]]
-        files[loc]:write("  [" .. entry .. "] = \"" .. (name_loc or name) .. "\",\n")
+        if not name_loc or name_loc == "" then name_loc = name or "" end
+        files[loc]:write("  [" .. entry .. "] = \"" .. name_loc .. "\",\n")
       end
     end
   end
