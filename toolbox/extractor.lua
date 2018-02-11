@@ -185,6 +185,148 @@ local function GetGameObjectCoords(id)
   return ret
 end
 
+do -- questDB [core]
+  local quest_template = {}
+  local file = io.open("questDB.lua", "w")
+  file:write("pfDB[\"quests\"][core] = {\n")
+
+  local sql = [[
+    SELECT * FROM quest_template ]]
+
+  local query = mysql:execute(sql)
+  while query:fetch(quest_template, "a") do
+    progress:Print("quest_template", "questDB (core)")
+    file:write("  [" .. quest_template.entry .. "] = {\n")
+
+    if quest_template.MinLevel and quest_template.MinLevel ~= "0" then
+      file:write("    [\"min\"] = " .. quest_template.MinLevel .. ",\n")
+    end
+
+    if quest_template.QuestLevel and quest_template.QuestLevel ~= "0" then
+      file:write("    [\"lvl\"] = " .. quest_template.QuestLevel .. ",\n")
+    end
+
+    if quest_template.RequiredClasses and quest_template.RequiredClasses ~= "0" then
+      file:write("    [\"class\"] = " .. quest_template.RequiredClasses .. ",\n")
+    end
+
+    if quest_template.RequiredRaces and quest_template.RequiredRaces ~= "0" then
+      file:write("    [\"race\"] = " .. quest_template.RequiredRaces .. ",\n")
+    end
+
+    if quest_template.RequiredSkill and quest_template.RequiredSkill ~= "0" then
+      file:write("    [\"skill\"] = " .. quest_template.RequiredSkill .. ",\n")
+    end
+
+    if quest_template.PrevQuestId and quest_template.PrevQuestId ~= "0" then
+      file:write("    [\"pre\"] = " .. quest_template.PrevQuestId .. ",\n")
+    end
+
+    if quest_template.NextQuestInChain and quest_template.NextQuestInChain ~= "0" then
+      file:write("    [\"next\"] = " .. quest_template.NextQuestInChain .. ",\n")
+    end
+
+    -- quest objectives
+    file:write("    [\"obj\"] = {\n")
+    for i=1,4 do
+      if quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) > 0 then
+        file:write("      [\"U\"] = " .. quest_template["ReqCreatureOrGOId" .. i] .. ",\n")
+      elseif quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) < 0 then
+        file:write("      [\"O\"] = " .. tonumber(quest_template["ReqCreatureOrGOId" .. i])*-1 .. ",\n")
+      end
+      if quest_template["ReqItemId" .. i] and tonumber(quest_template["ReqItemId" .. i]) > 0 then
+        file:write("      [\"I\"] = " .. quest_template["ReqItemId" .. i] .. ",\n")
+      end
+    end
+    file:write("    },\n")
+
+    do -- quest starter
+      file:write("    [\"start\"] = {\n")
+
+      local creature_questrelation = {}
+      local sql = [[
+        SELECT * FROM creature_questrelation WHERE creature_questrelation.quest = ]] .. quest_template.entry
+      local query = mysql:execute(sql)
+      while query:fetch(creature_questrelation, "a") do
+        file:write("      [\"U\"] = " .. creature_questrelation.id .. ",\n")
+      end
+
+      local gameobject_questrelation = {}
+      local sql = [[
+        SELECT * FROM gameobject_questrelation WHERE gameobject_questrelation.quest = ]] .. quest_template.entry
+      local query = mysql:execute(sql)
+      while query:fetch(gameobject_questrelation, "a") do
+        file:write("      [\"O\"] = " .. gameobject_questrelation.id .. ",\n")
+      end
+
+      file:write("    },\n")
+    end
+
+    do -- quest ender
+      file:write("    [\"end\"] = {\n")
+
+      local creature_involvedrelation = {}
+      local sql = [[
+        SELECT * FROM creature_involvedrelation WHERE creature_involvedrelation.quest = ]] .. quest_template.entry
+      local query = mysql:execute(sql)
+      while query:fetch(creature_involvedrelation, "a") do
+        file:write("      [\"U\"] = " .. creature_involvedrelation.id .. ",\n")
+      end
+
+      local gameobject_involvedrelation = {}
+      local sql = [[
+        SELECT * FROM gameobject_involvedrelation WHERE gameobject_involvedrelation.quest = ]] .. quest_template.entry
+      local query = mysql:execute(sql)
+      while query:fetch(gameobject_involvedrelation, "a") do
+        file:write("      [\"O\"] = " .. gameobject_involvedrelation.id .. ",\n")
+      end
+
+      file:write("    },\n")
+    end
+
+    file:write("  },\n")
+  end
+
+  file:write("}\n")
+  print()
+end
+
+do -- questDB [locales]
+  local files = {}
+  for loc in pairs(locales) do
+    files[loc] = io.open("questDB_" .. loc .. ".lua", "w")
+    files[loc]:write("pfDB[\"quests\"][\"" .. loc .. "\"] = {\n")
+  end
+
+  local locales_quest = {}
+  local query = mysql:execute('SELECT * FROM quest_template LEFT JOIN locales_quest ON locales_quest.entry = quest_template.entry ORDER BY quest_template.entry ASC')
+  while query:fetch(locales_quest, "a") do
+    progress:Print("quest_template", "questDB (lang)")
+
+    for loc in pairs(locales) do
+      local entry = locales_quest.entry
+      local title_loc = locales_quest["Title_loc" .. locales[loc]] or title
+      local details_loc = locales_quest["Details_loc" .. locales[loc]] or details
+      local objectives_loc = locales_quest["Objectives_loc" .. locales[loc]] or objectives
+
+      if entry then
+        files[loc]:write("  [" .. entry .. "] = {\n")
+        files[loc]:write("    [\"T\"] = \"" .. (title_loc or "") .. "\",\n")
+        files[loc]:write("    [\"O\"] = \"" .. (objectives_loc or "") .. "\",\n")
+        files[loc]:write("    [\"D\"] = \"" .. (details_loc or "") .. "\",\n")
+        files[loc]:write("  },\n")
+      end
+    end
+  end
+
+  for loc in pairs(locales) do
+    files[loc]:write("}\n")
+    files[loc]:close()
+  end
+
+  print()
+end
+
 do -- objectDB [core]
   local file = io.open("objectDB.lua", "w")
   file:write("pfDB[\"objects\"][\"core\"] = {\n")
