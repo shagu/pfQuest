@@ -81,8 +81,8 @@ do -- progress
     local cur, max = unpack(self.cache[sqltable])
     local perc = cur / max * 100
 
-    io.write("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b")
-    io.write(msg .. string.format(": %.1f%%",perc))
+    io.write("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b")
+    io.write(string.format("%.1f%%\t",perc, cur, max) .. msg .. "\t[" .. cur .. "/" .. max .. "]")
     io.flush()
 
     self.cache[sqltable][1] = self.cache[sqltable][1] + 1
