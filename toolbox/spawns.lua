@@ -1,27 +1,8 @@
 #!/usr/bin/lua
--- depends: pacman -S lua-sql-mysql
+-- depends on luasql
 
 -- map pngs with alpha channel generated with:
 -- `convert $file  -transparent white -resize '100x100!' $file`
-
-do -- helper functions
-  function round(input, places)
-    if not places then places = 0 end
-    if type(input) == "number" and type(places) == "number" then
-      local pow = 1
-      for i = 1, places do pow = pow * 10 end
-      return math.floor(input * pow + 0.5) / pow
-    end
-  end
-
-  function sanitize(str)
-    str = string.gsub(str, "\"", "\\\"")
-    str = string.gsub(str, "\'", "\\\'")
-    str = string.gsub(str, "\r", "")
-    str = string.gsub(str, "\n", "")
-    return str
-  end
-end
 
 do -- map lookup functions
   maps = {}
@@ -55,6 +36,25 @@ do -- map lookup functions
     else
       return false
     end
+  end
+end
+
+do -- helper functions
+  function round(input, places)
+    if not places then places = 0 end
+    if type(input) == "number" and type(places) == "number" then
+      local pow = 1
+      for i = 1, places do pow = pow * 10 end
+      return math.floor(input * pow + 0.5) / pow
+    end
+  end
+
+  function sanitize(str)
+    str = string.gsub(str, "\"", "\\\"")
+    str = string.gsub(str, "\'", "\\\'")
+    str = string.gsub(str, "\r", "")
+    str = string.gsub(str, "\n", "")
+    return str
   end
 end
 
