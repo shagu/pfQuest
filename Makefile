@@ -18,6 +18,5 @@ enUS koKR frFR deDE zhCN esES ruRU:
 
 database:
 	$(MAKE) -C toolbox/ all
-	$(MAKE) -C toolbox/ install
 
 rebuild: database all
