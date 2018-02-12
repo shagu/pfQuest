@@ -166,6 +166,44 @@ function pfDatabase:SearchMob(mob, meta)
   return bestmap or nil, bestscore or nil
 end
 
+function pfDatabase:SearchObject(obj, meta)
+  local maps = {}
+  local bestmap, bestscore = nil, 0
+
+  for id in pairs(pfDatabase:GetIDByName(obj, "objects")) do
+    if objects[id] and objects[id]["coords"] then
+      for id, data in pairs(objects[id]["coords"]) do
+        local x, y, zone, respawn = unpack(data)
+
+        if pfMap:IsValidMap(zone) and zone > 0 then
+          -- add all gathered data
+          meta = meta or {}
+          meta["x"]     = x
+          meta["y"]     = y
+          meta["zone"]  = zone
+          meta["spawn"] = obj
+          meta["respawn"] = respawn and SecondsToTime(respawn)
+          meta["spawntype"] = "OBJECT"
+          meta["level"] = UNKNOWN
+          meta["title"] = meta["quest"] or meta["item"] or meta["spawn"]
+          maps[zone] = maps[zone] and maps[zone] + 1 or 1
+          pfMap:AddNode(meta)
+        end
+      end
+
+      -- calculate best map results
+      for map, count in pairs(maps) do
+        if count > bestscore then
+          bestscore = count
+          bestmap   = map
+        end
+      end
+    end
+  end
+
+  return bestmap or nil, bestscore or nil
+end
+
 function pfDatabase:SearchItem(item, meta)
   local maps = {}
 
