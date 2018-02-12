@@ -4,6 +4,13 @@
 -- map pngs with alpha channel generated with:
 -- `convert $file  -transparent white -resize '100x100!' $file`
 
+local target = {
+  ["unit"] = true,
+  ["object"] = true,
+  ["item"] = true,
+  ["quest"] = true,
+}
+
 do -- map lookup functions
   maps = {}
   package.path = './pngLua/?.lua;' .. package.path
@@ -194,7 +201,7 @@ do -- nice progress display
   end
 end
 
-do -- unitDB [data]
+if target.unit then -- unitDB [data]
   local file = io.open("output/unitDB.lua", "w")
   file:write("pfDB[\"units\"][\"data\"] = {\n")
 
@@ -300,10 +307,10 @@ do -- unitDB [data]
   print()
 end
 
-do -- unitDB [locales]
+if target.unit then -- unitDB [locales]
   local files = {}
   for loc in pairs(locales) do
-    files[loc] = io.open("output/" .. loc .. "/unitDB_" .. loc .. ".lua", "w")
+    files[loc] = io.open("output/" .. loc .. "/unitDB.lua", "w")
     files[loc]:write("pfDB[\"units\"][\"" .. loc .. "\"] = {\n")
   end
 
@@ -332,7 +339,7 @@ do -- unitDB [locales]
   print()
 end
 
-do -- objectDB [data]
+if target.object then -- objectDB [data]
   local file = io.open("output/objectDB.lua", "w")
   file:write("pfDB[\"objects\"][\"data\"] = {\n")
 
@@ -400,10 +407,10 @@ do -- objectDB [data]
   print()
 end
 
-do -- objectDB [locales]
+if target.object then -- objectDB [locales]
   local files = {}
   for loc in pairs(locales) do
-    files[loc] = io.open("output/" .. loc .. "/objectDB_" .. loc .. ".lua", "w")
+    files[loc] = io.open("output/" .. loc .. "/objectDB.lua", "w")
     files[loc]:write("pfDB[\"objects\"][\"" .. loc .. "\"] = {\n")
   end
 
@@ -432,7 +439,7 @@ do -- objectDB [locales]
   print()
 end
 
-do -- itemDB [data]
+if target.item then -- itemDB [data]
   local file = io.open("output/itemDB.lua", "w")
   file:write("pfDB[\"items\"][\"data\"] = {\n")
 
@@ -489,10 +496,10 @@ do -- itemDB [data]
   print()
 end
 
-do -- itemDB [locales]
+if target.item then -- itemDB [locales]
   local files = {}
   for loc in pairs(locales) do
-    files[loc] = io.open("output/" .. loc .. "/itemDB_" .. loc .. ".lua", "w")
+    files[loc] = io.open("output/" .. loc .. "/itemDB.lua", "w")
     files[loc]:write("pfDB[\"items\"][\"" .. loc .. "\"] = {\n")
   end
 
@@ -521,7 +528,7 @@ do -- itemDB [locales]
   print()
 end
 
-do -- questDB [data]
+if target.quest then -- questDB [data]
   local quest_template = {}
   local file = io.open("output/questDB.lua", "w")
   file:write("pfDB[\"quests\"][\"data\"] = {\n")
@@ -563,68 +570,134 @@ do -- questDB [data]
     end
 
     -- quest objectives
-    local first = true
+    local units, objects, items = {}, {}, {}
+
     for i=1,4 do
       if quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) > 0 then
-        if first then file:write("    [\"obj\"] = {\n"); first = nil end
-        file:write("      [\"U\"] = " .. quest_template["ReqCreatureOrGOId" .. i] .. ",\n")
+        table.insert(units, quest_template["ReqCreatureOrGOId" .. i])
       elseif quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) < 0 then
-        if first then file:write("    [\"obj\"] = {\n"); first = nil end
-        file:write("      [\"O\"] = " .. tonumber(quest_template["ReqCreatureOrGOId" .. i])*-1 .. ",\n")
+        table.insert(objects, quest_template["ReqCreatureOrGOId" .. i])
       end
       if quest_template["ReqItemId" .. i] and tonumber(quest_template["ReqItemId" .. i]) > 0 then
-        if first then file:write("    [\"obj\"] = {\n"); first = nil end
-        file:write("      [\"I\"] = " .. quest_template["ReqItemId" .. i] .. ",\n")
+        table.insert(items, quest_template["ReqItemId" .. i])
       end
     end
-    if not first then file:write("    },\n") end
+
+    do -- write objectives
+      if #units > 0 or #objects > 0 or #items > 0 then
+        file:write("    [\"obj\"] = {\n")
+
+        local first = true
+        for id,unit in pairs(units) do
+          if first then
+            file:write("      [\"U\"] = { " .. unit)
+            first = false
+          else
+            file:write(", " .. unit)
+          end
+        end
+        if not first then file:write(" },\n") end
+
+        local first = true
+        for id,object in pairs(objects) do
+          if first then
+            file:write("      [\"O\"] = { " .. object)
+            first = false
+          else
+            file:write(", " .. object)
+          end
+        end
+        if not first then file:write(" },\n") end
+
+        local first = true
+        for id,item in pairs(items) do
+          if first then
+            file:write("      [\"I\"] = { " .. item)
+            first = false
+          else
+            file:write(", " .. item)
+          end
+        end
+        if not first then file:write(" },\n") end
+
+        file:write("    },\n")
+      end
+    end
 
     do -- quest starter
-      local first = true
+      local starter = true
 
       local creature_questrelation = {}
+      local first = true
       local sql = [[
         SELECT * FROM creature_questrelation WHERE creature_questrelation.quest = ]] .. quest_template.entry
       local query = mysql:execute(sql)
       while query:fetch(creature_questrelation, "a") do
-        if first then file:write("    [\"start\"] = {\n"); first = nil end
-        file:write("      [\"U\"] = " .. creature_questrelation.id .. ",\n")
+        if starter then file:write("    [\"start\"] = {\n"); starter = nil; end
+        if first then
+          file:write("      [\"U\"] = { " .. creature_questrelation.id)
+          first = false
+        else
+          file:write(", " .. creature_questrelation.id)
+        end
       end
+      if not first then file:write(" },\n") end
 
       local gameobject_questrelation = {}
+      local first = true
       local sql = [[
         SELECT * FROM gameobject_questrelation WHERE gameobject_questrelation.quest = ]] .. quest_template.entry
       local query = mysql:execute(sql)
       while query:fetch(gameobject_questrelation, "a") do
-        if first then file:write("    [\"start\"] = {\n"); first = nil end
-        file:write("      [\"O\"] = " .. gameobject_questrelation.id .. ",\n")
+        if starter then file:write("    [\"start\"] = {\n"); starter = nil; end
+        if first then
+          file:write("      [\"O\"] = { " .. gameobject_questrelation.id)
+          first = false
+        else
+          file:write(", " .. gameobject_questrelation.id)
+        end
       end
+      if not first then file:write(" },\n") end
 
-      if not first then file:write("    },\n") end
+      if not starter then file:write("    },\n") end
     end
 
     do -- quest ender
-      local first = true
+      local ender = true
 
       local creature_involvedrelation = {}
+      local first = true
       local sql = [[
         SELECT * FROM creature_involvedrelation WHERE creature_involvedrelation.quest = ]] .. quest_template.entry
       local query = mysql:execute(sql)
       while query:fetch(creature_involvedrelation, "a") do
-        if first then file:write("    [\"end\"] = {\n"); first = nil end
-        file:write("      [\"U\"] = " .. creature_involvedrelation.id .. ",\n")
+        if ender then file:write("    [\"end\"] = {\n"); ender = nil; end
+        if first then
+          file:write("      [\"U\"] = { " .. creature_involvedrelation.id)
+          first = false
+        else
+          file:write(", " .. creature_involvedrelation.id)
+        end
       end
+      if not first then file:write(" },\n") end
 
       local gameobject_involvedrelation = {}
+      local first = true
       local sql = [[
         SELECT * FROM gameobject_involvedrelation WHERE gameobject_involvedrelation.quest = ]] .. quest_template.entry
       local query = mysql:execute(sql)
       while query:fetch(gameobject_involvedrelation, "a") do
-        if first then file:write("    [\"end\"] = {\n"); first = nil end
-        file:write("      [\"O\"] = " .. gameobject_involvedrelation.id .. ",\n")
+        if ender then file:write("    [\"end\"] = {\n"); ender = nil; end
+        if first then
+          file:write("      [\"O\"] = { " .. gameobject_involvedrelation.id)
+          first = false
+        else
+          file:write(", " .. gameobject_involvedrelation.id)
+        end
       end
+      if not first then file:write(" },\n") end
 
-      if not first then file:write("    },\n") end
+      if not ender then file:write("    },\n") end
     end
 
     file:write("  },\n")
@@ -634,10 +707,10 @@ do -- questDB [data]
   print()
 end
 
-do -- questDB [locales]
+if target.quest then -- questDB [locales]
   local files = {}
   for loc in pairs(locales) do
-    files[loc] = io.open("output/" .. loc .. "/questDB_" .. loc .. ".lua", "w")
+    files[loc] = io.open("output/" .. loc .. "/questDB.lua", "w")
     files[loc]:write("pfDB[\"quests\"][\"" .. loc .. "\"] = {\n")
   end
 
