@@ -300,11 +300,11 @@ end
 
 function pfMap:GetMapNameByID(id)
   id = tonumber(id)
-  return pfDatabase["zones"][id] or nil
+  return pfDB["zones"]["loc"][id] or nil
 end
 
 function pfMap:GetMapIDByName(search)
-  for id, name in pairs(pfDatabase["zones"]) do
+  for id, name in pairs(pfDB["zones"]["loc"]) do
     if name == search then
       return id
     end
@@ -314,7 +314,7 @@ end
 function pfMap:IsValidMap(id)
   if validmaps[id] then return true end
 
-  local search = pfDatabase["zones"][id]
+  local search = pfDB["zones"]["loc"][id]
 
   for cid, cname in pairs({GetMapContinents()}) do
     for mid, mname in pairs({GetMapZones(cid)}) do
@@ -345,7 +345,7 @@ function pfMap:ShowMapID(map)
 end
 
 function pfMap:SetMapByID(id)
-  local search = pfDatabase["zones"][id]
+  local search = pfDB["zones"]["loc"][id]
 
   for cid, cname in pairs({GetMapContinents()}) do
     for mid, mname in pairs({GetMapZones(cid)}) do
