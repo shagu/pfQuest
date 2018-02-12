@@ -1,19 +1,20 @@
 pfDatabase = {}
 
 local loc = GetLocale()
-local dbs = { "items", "quests", "vendors", "spawns", "zones" }
+local dbs = { "items", "quests", "objects", "units", "zones" }
 
 -- detect localized databases
 for id, db in pairs(dbs) do
-  pfDatabase[db] = pfDB[db][loc] or pfDB[db]["enUS"]
+  -- assign existing locale
+  pfDB[db]["loc"] = pfDB[db][loc] or pfDB[db]["enUS"]
 end
 
 -- add database shortcuts
-local items = pfDatabase["items"]
-local quests = pfDatabase["quests"]
-local vendors = pfDatabase["vendors"]
-local spawns = pfDatabase["spawns"]
-local zones = pfDatabase["zones"]
+local items = pfDB["items"]["data"]
+local units = pfDB["units"]["data"]
+local objects = pfDB["objects"]["data"]
+local quests = pfDB["quests"]["data"]
+local zones = pfDB["zones"]["loc"]
 
 SLASH_PFDB1, SLASH_PFDB2, SLASH_PFDB3, SLASH_PFDB4 = "/db", "/shagu", "/pfquest", "/pfdb"
 SlashCmdList["PFDB"] = function(input, editbox)
