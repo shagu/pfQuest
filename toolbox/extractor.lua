@@ -5,10 +5,11 @@
 -- `convert $file  -transparent white -resize '100x100!' $file`
 
 local target = {
-  ["unit"] = true,
-  ["object"] = true,
-  ["item"] = true,
-  ["quest"] = true,
+  ["init"] = true,
+  ["unit"] = false,
+  ["object"] = false,
+  ["item"] = false,
+  ["quest"] = false,
 }
 
 do -- map lookup functions
@@ -199,6 +200,20 @@ do -- nice progress display
 
     self.cache[sqltable][1] = self.cache[sqltable][1] + 1
   end
+end
+
+if target.init then -- initDB
+  local file = io.open("output/init.lua", "w")
+  file:write([[
+pfDB = {
+  ["units"] = {},
+  ["objects"] = {},
+  ["quests"] = {},
+  ["items"] = {},
+  ["zones"] = {},
+}
+  ]])
+  file:close()
 end
 
 if target.unit then -- unitDB [data]
