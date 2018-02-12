@@ -6,10 +6,10 @@
 
 local target = {
   ["init"] = true,
-  ["unit"] = false,
-  ["object"] = false,
-  ["item"] = false,
-  ["quest"] = false,
+  ["unit"] = true,
+  ["object"] = true,
+  ["item"] = true,
+  ["quest"] = true,
 }
 
 do -- map lookup functions
