@@ -116,42 +116,54 @@ function pfDatabase:HexDifficultyColor(level, force)
   end
 end
 
+function pfDatabase:GetIDByName(name, db)
+  if not pfDB[db] then return nil end
+  local ret = {}
+
+  for id, loc in pairs(pfDB[db]["loc"]) do
+    if strlower(loc) == strlower(name) then
+      ret[id] = true
+    end
+  end
+  return ret
+end
+
 function pfDatabase:SearchMob(mob, meta)
   local maps = {}
+  local bestmap, bestscore = nil, 0
 
-  if spawns[mob] and spawns[mob]["coords"] then
-    for id, data in pairs(spawns[mob]["coords"]) do
-      local f, t, x, y, zone = strfind(data, "(.*),(.*),(.*)")
-      zone = tonumber(zone)
+  for id in pairs(pfDatabase:GetIDByName(mob, "units")) do
+    if units[id] and units[id]["coords"] then
+      for id, data in pairs(units[id]["coords"]) do
+        local x, y, zone, respawn = unpack(data)
 
-      if pfMap:IsValidMap(zone) and zone > 0 then
-        -- add all gathered data
-        meta = meta or {}
-        meta["x"]     = x
-        meta["y"]     = y
-        meta["zone"]  = zone
-        meta["spawn"] = mob
-        meta["respawn"] = spawns[mob]["respawn"] and SecondsToTime(spawns[mob]["respawn"])
-        meta["spawntype"] = spawns[mob]["type"] or UNKNOWN
-        meta["level"] = spawns[mob]["level"] or UNKNOWN
-        meta["title"] = meta["quest"] or meta["item"] or meta["spawn"]
-        maps[zone] = maps[zone] and maps[zone] + 1 or 1
-        pfMap:AddNode(meta)
+        if pfMap:IsValidMap(zone) and zone > 0 then
+          -- add all gathered data
+          meta = meta or {}
+          meta["x"]     = x
+          meta["y"]     = y
+          meta["zone"]  = zone
+          meta["spawn"] = mob
+          meta["respawn"] = respawn and SecondsToTime(respawn)
+          meta["spawntype"] = "UNIT"
+          meta["level"] = units[id]["lvl"] or UNKNOWN
+          meta["title"] = meta["quest"] or meta["item"] or meta["spawn"]
+          maps[zone] = maps[zone] and maps[zone] + 1 or 1
+          pfMap:AddNode(meta)
+        end
+      end
+
+      -- calculate best map results
+      for map, count in pairs(maps) do
+        if count > bestscore then
+          bestscore = count
+          bestmap   = map
+        end
       end
     end
-
-    -- calculate best map results
-    local bestmap, bestscore = nil, 0
-    for map, count in pairs(maps) do
-      if count > bestscore then
-        bestscore = count
-        bestmap   = map
-      end
-    end
-
-    return bestmap, bestscore
   end
-  return nil, nil
+
+  return bestmap or nil, bestscore or nil
 end
 
 function pfDatabase:SearchItem(item, meta)
