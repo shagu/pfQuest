@@ -8,54 +8,58 @@
 
 # database index
 db\init.lua
+db\items.lua
+db\units.lua
+db\objects.lua
+db\quests.lua
 
 # database enUS
 db\enUS\items.lua
+db\enUS\units.lua
+db\enUS\objects.lua
 db\enUS\quests.lua
-db\enUS\spawns.lua
-db\enUS\vendors.lua
 db\enUS\zones.lua
 
 # database koKR
 db\koKR\items.lua
+db\koKR\units.lua
+db\koKR\objects.lua
 db\koKR\quests.lua
-db\koKR\spawns.lua
-db\koKR\vendors.lua
 db\koKR\zones.lua
 
 # database frFR
 db\frFR\items.lua
+db\frFR\units.lua
+db\frFR\objects.lua
 db\frFR\quests.lua
-db\frFR\spawns.lua
-db\frFR\vendors.lua
 db\frFR\zones.lua
 
 # database deDE
 db\deDE\items.lua
+db\deDE\units.lua
+db\deDE\objects.lua
 db\deDE\quests.lua
-db\deDE\spawns.lua
-db\deDE\vendors.lua
 db\deDE\zones.lua
 
 # database zhCN
 db\zhCN\items.lua
+db\zhCN\units.lua
+db\zhCN\objects.lua
 db\zhCN\quests.lua
-db\zhCN\spawns.lua
-db\zhCN\vendors.lua
 db\zhCN\zones.lua
 
 # database esES
 db\esES\items.lua
+db\esES\units.lua
+db\esES\objects.lua
 db\esES\quests.lua
-db\esES\spawns.lua
-db\esES\vendors.lua
 db\esES\zones.lua
 
 # database ruRU
 db\ruRU\items.lua
+db\ruRU\units.lua
+db\ruRU\objects.lua
 db\ruRU\quests.lua
-db\ruRU\spawns.lua
-db\ruRU\vendors.lua
 db\ruRU\zones.lua
 
 # core api
