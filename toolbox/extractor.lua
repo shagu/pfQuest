@@ -314,7 +314,7 @@ if target.unit then -- unitDB [data]
         file:write("    },\n")
       end
     end
-    file:write("  }\n")
+    file:write("  },\n")
   end
 
   file:write("}\n")
@@ -414,7 +414,7 @@ if target.object then -- objectDB [data]
         file:write("    },\n")
       end
     end
-    file:write("  }\n")
+    file:write("  },\n")
   end
 
   file:write("}\n")
