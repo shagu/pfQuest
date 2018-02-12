@@ -202,7 +202,7 @@ do -- nice progress display
 end
 
 if target.unit then -- unitDB [data]
-  local file = io.open("output/unitDB.lua", "w")
+  local file = io.open("output/units.lua", "w")
   file:write("pfDB[\"units\"][\"data\"] = {\n")
 
   -- iterate over all creatures
@@ -310,7 +310,7 @@ end
 if target.unit then -- unitDB [locales]
   local files = {}
   for loc in pairs(locales) do
-    files[loc] = io.open("output/" .. loc .. "/unitDB.lua", "w")
+    files[loc] = io.open("output/" .. loc .. "/units.lua", "w")
     files[loc]:write("pfDB[\"units\"][\"" .. loc .. "\"] = {\n")
   end
 
@@ -340,7 +340,7 @@ if target.unit then -- unitDB [locales]
 end
 
 if target.object then -- objectDB [data]
-  local file = io.open("output/objectDB.lua", "w")
+  local file = io.open("output/objects.lua", "w")
   file:write("pfDB[\"objects\"][\"data\"] = {\n")
 
   -- iterate over all objects
@@ -410,7 +410,7 @@ end
 if target.object then -- objectDB [locales]
   local files = {}
   for loc in pairs(locales) do
-    files[loc] = io.open("output/" .. loc .. "/objectDB.lua", "w")
+    files[loc] = io.open("output/" .. loc .. "/objects.lua", "w")
     files[loc]:write("pfDB[\"objects\"][\"" .. loc .. "\"] = {\n")
   end
 
@@ -440,7 +440,7 @@ if target.object then -- objectDB [locales]
 end
 
 if target.item then -- itemDB [data]
-  local file = io.open("output/itemDB.lua", "w")
+  local file = io.open("output/items.lua", "w")
   file:write("pfDB[\"items\"][\"data\"] = {\n")
 
   -- iterate over all items
@@ -499,7 +499,7 @@ end
 if target.item then -- itemDB [locales]
   local files = {}
   for loc in pairs(locales) do
-    files[loc] = io.open("output/" .. loc .. "/itemDB.lua", "w")
+    files[loc] = io.open("output/" .. loc .. "/items.lua", "w")
     files[loc]:write("pfDB[\"items\"][\"" .. loc .. "\"] = {\n")
   end
 
@@ -530,7 +530,7 @@ end
 
 if target.quest then -- questDB [data]
   local quest_template = {}
-  local file = io.open("output/questDB.lua", "w")
+  local file = io.open("output/quests.lua", "w")
   file:write("pfDB[\"quests\"][\"data\"] = {\n")
 
   local sql = [[
@@ -710,7 +710,7 @@ end
 if target.quest then -- questDB [locales]
   local files = {}
   for loc in pairs(locales) do
-    files[loc] = io.open("output/" .. loc .. "/questDB.lua", "w")
+    files[loc] = io.open("output/" .. loc .. "/quests.lua", "w")
     files[loc]:write("pfDB[\"quests\"][\"" .. loc .. "\"] = {\n")
   end
 

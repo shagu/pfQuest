@@ -4,12 +4,12 @@
 locales="enUS koKR frFR deDE zhCN zhTW esES esMX ruRU"
 index=0
 
-echo -n "zoneDB: "
+echo -n "zones: "
 for loc in $locales; do
   if [ "$loc" = "ruRU" ]; then index=0; fi
 
   mkdir -p output/${loc}
-  file="output/${loc}/zoneDB.lua"
+  file="output/${loc}/zones.lua"
 
   echo -n "$loc "
   if [ -f "DBC/AreaTable_${loc}.dbc.csv" ]; then
