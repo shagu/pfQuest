@@ -4,17 +4,14 @@
 locales="enUS koKR frFR deDE zhCN zhTW esES esMX ruRU"
 index=0
 
+echo -n "zoneDB: "
 for loc in $locales; do
-  if [ $1 ] && [ $1 != $loc ]; then
-    index=$(expr $index + 1)
-    continue;
-  fi
-
   if [ "$loc" = "ruRU" ]; then index=0; fi
 
-  file="output/${loc}/zones.lua"
+  mkdir -p output/${loc}
+  file="output/${loc}/zoneDB.lua"
 
-  echo "## $loc ##"
+  echo -n "$loc "
   if [ -f "DBC/AreaTable_${loc}.dbc.csv" ]; then
     echo "pfDB[\"zones\"][\"${loc}\"] = {" > $file
 
@@ -31,3 +28,4 @@ for loc in $locales; do
 
   index=$(expr $index + 1)
 done
+echo
