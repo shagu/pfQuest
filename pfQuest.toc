@@ -66,9 +66,9 @@ db\ruRU\zones.lua
 compat\pfUI.lua
 
 # main
-pfDatabase.lua
-pfMap.lua
-pfMiniMap.lua
-pfQuest.lua
-pfQuestConfig.lua
-pfBrowser.lua
+database.lua
+map.lua
+minimap.lua
+quest.lua
+config.lua
+browser.lua
