@@ -255,6 +255,32 @@ function pfDatabase:SearchItem(item, meta)
   return maps
 end
 
+-- SearchVendor
+-- Scans for all items with a specified name
+-- Adds map nodes for each vendor
+-- Returns its map table
+function pfDatabase:SearchVendor(item, meta)
+  local maps = {}
+  local meta = meta or {}
+  local bestmap, bestscore = nil, 0
+
+  for id in pairs(pfDatabase:GetIDByName(item, "items")) do
+    meta["itemid"] = id
+    meta["item"] = pfDB.items.loc[id]
+
+    -- search vendor goods
+    if items[id] and items[id]["V"] then
+      for unit, chance in pairs(items[id]["V"]) do
+        meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\icon_vendor"
+        meta["droprate"] = chance
+        maps = pfDatabase:SearchMobID(unit, meta, maps)
+      end
+    end
+  end
+
+  return maps
+end
+
 -- SearchQuestID
 -- Scans for all quests with a specified ID
 -- Adds map nodes for each objective and involved units
