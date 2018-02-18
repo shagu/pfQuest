@@ -215,6 +215,7 @@ function pfDatabase:SearchItemID(id, meta, maps)
     for unit, chance in pairs(items[id]["U"]) do
       meta["texture"] = nil
       meta["droprate"] = chance
+      meta["sellcount"] = nil
       maps = pfDatabase:SearchMobID(unit, meta, maps)
     end
   end
@@ -224,6 +225,7 @@ function pfDatabase:SearchItemID(id, meta, maps)
     for object, chance in pairs(items[id]["O"]) do
       meta["texture"] = nil
       meta["droprate"] = chance
+      meta["sellcount"] = nil
       maps = pfDatabase:SearchObjectID(object, meta, maps)
     end
   end
@@ -232,7 +234,8 @@ function pfDatabase:SearchItemID(id, meta, maps)
   if items[id]["V"] then
     for unit, chance in pairs(items[id]["V"]) do
       meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\icon_vendor"
-      meta["droprate"] = chance
+      meta["droprate"] = nil
+      meta["sellcount"] = chance
       maps = pfDatabase:SearchMobID(unit, meta, maps)
     end
   end
@@ -272,7 +275,8 @@ function pfDatabase:SearchVendor(item, meta)
     if items[id] and items[id]["V"] then
       for unit, chance in pairs(items[id]["V"]) do
         meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\icon_vendor"
-        meta["droprate"] = chance
+        meta["droprate"] = nil
+        meta["sellcount"] = chance
         maps = pfDatabase:SearchMobID(unit, meta, maps)
       end
     end
@@ -291,6 +295,8 @@ function pfDatabase:SearchQuestID(id, meta, maps)
 
   meta["questid"] = id
   meta["quest"] = pfDB.quests.loc[id].T
+  meta["qlvl"] = quests[id]["lvl"]
+  meta["qmin"] = quests[id]["min"]
 
   -- search quest-starter
   if quests[id]["start"] then
@@ -404,6 +410,9 @@ function pfDatabase:SearchQuests()
     minlvl = quests[id]["min"] or quests[id]["lvl"]
     maxlvl = quests[id]["lvl"]
 
+    meta["qlvl"] = quests[id]["lvl"]
+    meta["qmin"] = quests[id]["min"]
+
     meta["vertex"] = { 0, 0, 0 }
     meta["layer"] = 3
 
@@ -421,20 +430,21 @@ function pfDatabase:SearchQuests()
       meta["layer"] = 2
     end
 
+-- elseif quests[id]["skill"] and not ( bit.band(quests[id]["skill"], pskill) == pskill ) then
+-- hide non-available quests for your class
+
     if pfQuest_history and pfQuest_history[id] then
-      message(" hide completed quests")
+      -- hide completed quests
     elseif quests[id]["race"] and not ( bit.band(quests[id]["race"], prace) == prace ) then
-      message("hide non-available quests for your race")
+      -- hide non-available quests for your race
     elseif quests[id]["class"] and not ( bit.band(quests[id]["class"], pclass) == pclass ) then
-      message("hide non-available quests for your class")
-    -- elseif quests[id]["skill"] and not ( bit.band(quests[id]["skill"], pskill) == pskill ) then
-    --  -- hide non-available quests for your class
+      -- hide non-available quests for your class
     elseif quests[id]["lvl"] and quests[id]["lvl"] < plevel - 9 then
-      message("hide lowlevel quests")
+      -- hide lowlevel quests
     elseif quests[id]["lvl"] and quests[id]["lvl"] > plevel + 10 then
-      message("hide highlevel quests")
+      -- hide highlevel quests
     elseif quests[id]["min"] and quests[id]["min"] > plevel + 3 then
-      message("hide highlevel quests")
+      -- hide highlevel quests
     else
       -- iterate over all questgivers
       if quests[id]["start"] then
