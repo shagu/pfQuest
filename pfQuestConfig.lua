@@ -1,3 +1,30 @@
+pfQuest_history = {}
+pfQuest_colors = {}
+pfQuest_config = {}
+
+-- default config
+pfQuest_defconfig = {
+  ["trackingmethod"] = 1,
+  ["allquestgivers"] = "1",
+  ["currentquestgivers"] = "1", -- show quest givers for active quests
+  ["showlowlevel"] = "1",
+  ["minimapnodes"] = "1", -- hide all minimap entries
+  ["questlogbuttons"] = "1", -- shows buttons inside the questlog
+  ["worldmapmenu"] = "1", -- shows the dropdown selection in worldmap
+  ["worldmaptransp"] = "1.0",
+  ["minimaptransp"] = "1.0",
+}
+
+local function LoadConfig()
+  if not pfQuest_config then pfQuest_config = {} end
+
+  for key, val in pairs(pfQuest_defconfig) do
+    if not pfQuest_config[key] then
+      pfQuest_config[key] = val
+    end
+  end
+end
+
 local function CreateConfigEntry(config, description, type)
   -- basic frame
   local frame = getglobal("pfQuestConfig" .. config) or CreateFrame("Frame", "pfQuestConfig" .. config, pfQuestConfig)
@@ -107,6 +134,8 @@ end)
 pfQuestConfig:RegisterEvent("ADDON_LOADED")
 pfQuestConfig:SetScript("OnEvent", function()
   if arg1 == "pfQuest" then
+    LoadConfig()
+
     CreateConfigEntry("allquestgivers",      "Show Available Questgivers",     "checkbox")
     CreateConfigEntry("currentquestgivers",  "Show Current Questgiver Nodes",  "checkbox")
     CreateConfigEntry("showlowlevel",        "Show Lowlevel Questgiver Nodes", "checkbox")

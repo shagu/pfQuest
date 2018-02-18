@@ -1,32 +1,3 @@
--- default config
-pfQuest_defconfig = {
-  ["trackingmethod"] = 1,
-  ["allquestgivers"] = "1",
-  ["currentquestgivers"] = "1", -- show quest givers for active quests
-  ["showlowlevel"] = "1",
-  ["minimapnodes"] = "1", -- hide all minimap entries
-  ["questlogbuttons"] = "1", -- shows buttons inside the questlog
-  ["worldmapmenu"] = "1", -- shows the dropdown selection in worldmap
-  ["worldmaptransp"] = "1.0",
-  ["minimaptransp"] = "1.0",
-}
-
-pfQuest_history = {}
-pfQuest_config = {}
-pfQuest_colors = {}
-
-local function LoadConfig()
-  if not pfQuest_config then pfQuest_config = {} end
-
-  for key, val in pairs(pfQuest_defconfig) do
-    if not pfQuest_config[key] then
-      pfQuest_config[key] = val
-    end
-  end
-end
-
-LoadConfig()
-
 local questLogCache     = { }
 local questTrackedCache = { }
 
@@ -350,7 +321,6 @@ pfQuest:SetScript("OnEvent", function()
         DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccWARNING:|r You're using a development snapshot of pfQuest which leads to a higher RAM-Usage and increased loading times. Please choose an official release instead: https://github.com/shagu/pfQuest/releases")
       end
 
-      LoadConfig()
       AddQuestLogIntegration()
       AddWorldMapIntegration()
     else
