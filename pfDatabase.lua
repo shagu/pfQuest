@@ -37,110 +37,132 @@ function pfDatabase:GetIDByName(name, db)
   return ret
 end
 
-function pfDatabase:SearchMob(mob, meta)
-  local maps = {}
+function pfDatabase:GetBestMap(maps, show)
   local bestmap, bestscore = nil, 0
 
-  for id in pairs(pfDatabase:GetIDByName(mob, "units")) do
-    if units[id] and units[id]["coords"] then
-      for id, data in pairs(units[id]["coords"]) do
-        local x, y, zone, respawn = unpack(data)
-
-        if pfMap:IsValidMap(zone) and zone > 0 then
-          -- add all gathered data
-          meta = meta or {}
-          meta["x"]     = x
-          meta["y"]     = y
-          meta["zone"]  = zone
-          meta["spawn"] = mob
-          meta["respawn"] = respawn and SecondsToTime(respawn)
-          meta["spawntype"] = "UNIT"
-          meta["level"] = units[id]["lvl"] or UNKNOWN
-          meta["title"] = meta["quest"] or meta["item"] or meta["spawn"]
-          maps[zone] = maps[zone] and maps[zone] + 1 or 1
-          pfMap:AddNode(meta)
-        end
-      end
-
-      -- calculate best map results
-      for map, count in pairs(maps) do
-        if count > bestscore then
-          bestscore = count
-          bestmap   = map
-        end
-      end
+  -- calculate best map results
+  for map, count in pairs(maps) do
+    if count > bestscore then
+      bestscore = count
+      bestmap   = map
     end
   end
 
+  if show then
+    pfMap:ShowMapID(bestmap)
+  end
+
   return bestmap or nil, bestscore or nil
+end
+
+function pfDatabase:SearchMobID(id, meta, maps)
+  local maps = maps or {}
+
+  for _, data in pairs(units[id]["coords"]) do
+    local x, y, zone, respawn = unpack(data)
+
+    if pfMap:IsValidMap(zone) and zone > 0 then
+      -- add all gathered data
+      meta = meta or {}
+      meta["x"]     = x
+      meta["y"]     = y
+      meta["zone"]  = zone
+      meta["spawn"] = pfDB.units.loc[id]
+      meta["respawn"] = respawn and SecondsToTime(respawn)
+      meta["spawntype"] = "UNIT"
+      meta["level"] = units[id]["lvl"] or UNKNOWN
+      meta["title"] = meta["quest"] or meta["item"] or meta["spawn"]
+      maps[zone] = maps[zone] and maps[zone] + 1 or 1
+      pfMap:AddNode(meta)
+    end
+  end
+
+  return maps
+end
+
+function pfDatabase:SearchMob(mob, meta)
+  local maps = {}
+
+  for id in pairs(pfDatabase:GetIDByName(mob, "units")) do
+    if units[id] and units[id]["coords"] then
+      maps = pfDatabase:SearchMobID(id, meta, maps)
+    end
+  end
+
+  -- open map on best zone
+  pfDatabase:GetBestMap(maps, true)
+
+  return maps
+end
+
+function pfDatabase:SearchObjectID(id, meta, maps)
+  local maps = maps or {}
+
+  for _, data in pairs(objects[id]["coords"]) do
+    local x, y, zone, respawn = unpack(data)
+
+    if pfMap:IsValidMap(zone) and zone > 0 then
+      -- add all gathered data
+      meta = meta or {}
+      meta["x"]     = x
+      meta["y"]     = y
+      meta["zone"]  = zone
+      meta["spawn"] = pfDB.objects.loc[id]
+      meta["respawn"] = respawn and SecondsToTime(respawn)
+      meta["spawntype"] = "OBJECT"
+      meta["level"] = UNKNOWN
+      meta["title"] = meta["quest"] or meta["item"] or meta["spawn"]
+      maps[zone] = maps[zone] and maps[zone] + 1 or 1
+      pfMap:AddNode(meta)
+    end
+  end
+
+  return maps
 end
 
 function pfDatabase:SearchObject(obj, meta)
   local maps = {}
-  local bestmap, bestscore = nil, 0
 
   for id in pairs(pfDatabase:GetIDByName(obj, "objects")) do
     if objects[id] and objects[id]["coords"] then
-      for id, data in pairs(objects[id]["coords"]) do
-        local x, y, zone, respawn = unpack(data)
-
-        if pfMap:IsValidMap(zone) and zone > 0 then
-          -- add all gathered data
-          meta = meta or {}
-          meta["x"]     = x
-          meta["y"]     = y
-          meta["zone"]  = zone
-          meta["spawn"] = obj
-          meta["respawn"] = respawn and SecondsToTime(respawn)
-          meta["spawntype"] = "OBJECT"
-          meta["level"] = UNKNOWN
-          meta["title"] = meta["quest"] or meta["item"] or meta["spawn"]
-          maps[zone] = maps[zone] and maps[zone] + 1 or 1
-          pfMap:AddNode(meta)
-        end
-      end
-
-      -- calculate best map results
-      for map, count in pairs(maps) do
-        if count > bestscore then
-          bestscore = count
-          bestmap   = map
-        end
-      end
+      maps = pfDatabase:SearchObjectID(id, meta, maps)
     end
   end
 
-  return bestmap or nil, bestscore or nil
+  -- open map on best zone
+  pfDatabase:GetBestMap(maps, true)
+
+  return maps
 end
 
 function pfDatabase:SearchItem(item, meta)
   local maps = {}
+  local bestmap, bestscore = nil, 0
 
-  if items[item] then
-    for id, field in pairs(items[item]) do
-      local f, t, monsterName, dropRate = strfind(field, "(.*),(.*)")
+  for id in pairs(pfDatabase:GetIDByName(item, "items")) do
 
-      meta = meta or {}
-      meta["droprate"] = dropRate
-      meta["item"] = item
-      meta["itemid"] = items[item]["id"]
-      local zone, score = pfDatabase:SearchMob(monsterName, meta)
-      if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
-    end
-
-    -- calculate best map results
-    local bestmap, bestscore = nil, 0
-    for map, count in pairs(maps) do
-      if count > bestscore then
-        bestscore = count
-        bestmap   = map
+    -- search unit drops
+    if items[id]["U"] then
+      for unit, chance in pairs(items[id]["U"]) do
+        meta = meta or {}
+        meta["droprate"] = chance
+        meta["item"] = item
+        meta["itemid"] = id
+        local zone, score = pfDatabase:SearchMob(monsterName, meta) --TODO: Add Search MobID
+        if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
       end
     end
-
-    return bestmap, bestscore
   end
 
-  return nil
+  -- calculate best map results
+  for map, count in pairs(maps) do
+    if count > bestscore then
+      bestscore = count
+      bestmap   = map
+    end
+  end
+
+  return bestmap, bestscore
 end
 
 function pfDatabase:SearchVendor(item, meta)
