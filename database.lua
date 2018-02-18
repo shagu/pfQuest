@@ -61,6 +61,8 @@ end
 -- Scans for all mobs with a specified ID
 -- Adds map nodes for each and returns its map table
 function pfDatabase:SearchMobID(id, meta, maps)
+  if not units[id] or not units[id]["coords"] then return maps end
+
   local maps = maps or {}
 
   for _, data in pairs(units[id]["coords"]) do
@@ -97,12 +99,14 @@ function pfDatabase:SearchMob(mob, meta, show)
     end
   end
 
-  return pfDatabase:GetBestMap(maps)
+  return maps
 end
 
 -- Scans for all objects with a specified ID
 -- Adds map nodes for each and returns its map table
 function pfDatabase:SearchObjectID(id, meta, maps)
+  if not objects[id] or not objects[id]["coords"] then return maps end
+
   local maps = maps or {}
 
   for _, data in pairs(objects[id]["coords"]) do
@@ -139,72 +143,69 @@ function pfDatabase:SearchObject(obj, meta)
     end
   end
 
-  return pfDatabase:GetBestMap(maps)
+  return maps
 end
 
+
+-- SearchItemID
+-- Scans for all items with a specified ID
+-- Adds map nodes for each drop and vendor
+-- Returns its map table
+function pfDatabase:SearchItemID(id, meta, maps)
+  local maps = maps or {}
+
+  -- search unit drops
+  if items[id]["U"] then
+    for unit, chance in pairs(items[id]["U"]) do
+      meta = meta or {}
+      meta["droprate"] = chance
+      meta["item"] = item
+      meta["itemid"] = id
+      maps = pfDatabase:SearchMobID(unit, meta, maps)
+      pfMap:AddNode(meta)
+    end
+  end
+
+  -- search object loot (veins, chests, ..)
+  if items[id]["O"] then
+    for object, chance in pairs(items[id]["O"]) do
+      meta = meta or {}
+      meta["droprate"] = chance
+      meta["item"] = item
+      meta["itemid"] = id
+      maps = pfDatabase:SearchObjectID(object, meta, maps)
+      pfMap:AddNode(meta)
+    end
+  end
+
+  -- search vendor goods
+  if items[id]["U"] then
+    for unit, chance in pairs(items[id]["U"]) do
+      meta = meta or {}
+      meta["droprate"] = chance
+      meta["item"] = item
+      meta["itemid"] = id
+      maps = pfDatabase:SearchMobID(unit, meta, maps)
+      pfMap:AddNode(meta)
+    end
+  end
+
+  return maps
+end
+
+-- SearchItem
+-- Scans for all items with a specified name
+-- Adds map nodes for each drop and vendor
+-- Returns its map table
 function pfDatabase:SearchItem(item, meta)
   local maps = {}
   local bestmap, bestscore = nil, 0
 
   for id in pairs(pfDatabase:GetIDByName(item, "items")) do
-
-    -- search unit drops
-    if items[id]["U"] then
-      for unit, chance in pairs(items[id]["U"]) do
-        meta = meta or {}
-        meta["droprate"] = chance
-        meta["item"] = item
-        meta["itemid"] = id
-        local zone, score = pfDatabase:SearchMob(monsterName, meta) --TODO: Add Search MobID
-        if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
-      end
-    end
+    maps = pfDatabase:SearchItemID(id, meta, maps)
   end
 
-  -- calculate best map results
-  for map, count in pairs(maps) do
-    if count > bestscore then
-      bestscore = count
-      bestmap   = map
-    end
-  end
-
-  return bestmap, bestscore
-end
-
-function pfDatabase:SearchVendor(item, meta)
-  local maps = {}
-
-  if vendors[item] then
-    for id, field in pairs(vendors[item]) do
-      local f, t, vendorName, sellCount = strfind(field, "(.*),(.*)")
-
-      meta = meta or {}
-      meta["sellcount"] = sellCount
-      meta["item"] = item
-      meta["itemid"] = items[item] and items[item]["id"]
-      meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\icon_vendor"
-      meta["layer"] = 6
-
-      if spawns[vendorName] and spawns[vendorName]["coords"] then
-        local zone, score = pfDatabase:SearchMob(vendorName, meta)
-        if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
-      end
-    end
-
-    -- calculate best map results
-    local bestmap, bestscore = nil, 0
-    for map, count in pairs(maps) do
-      if count > bestscore then
-        bestscore = count
-        bestmap   = map
-      end
-    end
-
-    return bestmap, bestscore
-  end
-
-  return nil
+  return maps
 end
 
 function pfDatabase:SearchQuest(quest, meta, dbobj)
