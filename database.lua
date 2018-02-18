@@ -208,7 +208,7 @@ function pfDatabase:SearchItemID(id, meta, maps)
   local meta = meta or {}
 
   meta["itemid"] = id
-  meta["item"] = meta["item"] or pfDB.items.loc[id]
+  meta["item"] = pfDB.items.loc[id]
 
   -- search unit drops
   if items[id]["U"] then
@@ -264,7 +264,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   local meta = meta or {}
 
   meta["questid"] = id
-  meta["quest"] = meta["quest"] or pfDB.quests.loc[id].T
+  meta["quest"] = pfDB.quests.loc[id].T
 
   -- search quest-starter
   if quests[id]["start"] then
@@ -353,4 +353,81 @@ function pfDatabase:SearchQuest(quest, meta)
   end
 
   return maps
+end
+
+-- SearchQuests
+-- Scans for all available quests
+-- Adds map nodes for each quest starter and ender
+-- Returns its map table
+function pfDatabase:SearchQuests()
+  local level, minlvl, maxlvl, race, class, prof
+  local maps = {}
+  local meta = {}
+
+  local plevel = UnitLevel("player")
+  local pfaction = ( UnitFactionGroup("player") == "Horde" ) and "H" or "A"
+  local _, race = UnitRace("player")
+  local prace = pfDatabase:GetBitByRace(race)
+  local _, class = UnitClass("player")
+  local pclass = pfDatabase:GetBitByClass(class)
+
+  for id in pairs(quests) do
+    meta["quest"] = ( pfDB.quests.loc[id] and pfDB.quests.loc[id].T ) or UNKNOWN
+    meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available_c"
+
+    minlvl = quests[id]["min"] or quests[id]["lvl"]
+    maxlvl = quests[id]["lvl"]
+
+    meta["vertex"] = { 0, 0, 0 }
+    meta["layer"] = 3
+
+    -- tint high level quests red
+    if minlvl > plevel then
+      meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
+      meta["vertex"] = { 1, .6, .6 }
+      meta["layer"] = 2
+    end
+
+    -- treat highlevel quests with low requirements as dailies
+    if minlvl == 1 and maxlvl > 50 then
+      meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
+      meta["vertex"] = { .2, .8, 1 }
+      meta["layer"] = 2
+    end
+
+    if pfQuest_history and pfQuest_history[id] then
+      message(" hide completed quests")
+    elseif quests[id]["race"] and not ( bit.band(quests[id]["race"], prace) == prace ) then
+      message("hide non-available quests for your race")
+    elseif quests[id]["class"] and not ( bit.band(quests[id]["class"], pclass) == pclass ) then
+      message("hide non-available quests for your class")
+    -- elseif quests[id]["skill"] and not ( bit.band(quests[id]["skill"], pskill) == pskill ) then
+    --  -- hide non-available quests for your class
+    elseif quests[id]["lvl"] and quests[id]["lvl"] < plevel - 9 then
+      message("hide lowlevel quests")
+    elseif quests[id]["lvl"] and quests[id]["lvl"] > plevel + 10 then
+      message("hide highlevel quests")
+    elseif quests[id]["min"] and quests[id]["min"] > plevel + 3 then
+      message("hide highlevel quests")
+    else
+      -- iterate over all questgivers
+      if quests[id]["start"] then
+        -- units
+        if quests[id]["start"]["U"] then
+          for _, unit in pairs(quests[id]["start"]["U"]) do
+            maps = pfDatabase:SearchMobID(unit, meta, maps)
+          end
+        end
+
+        -- objects
+        if quests[id]["start"]["O"] then
+          for _, object in pairs(quests[id]["start"]["O"]) do
+            maps = pfDatabase:SearchObjectID(object, meta, maps)
+          end
+        end
+      end
+    end
+  end
+
+  return num
 end
