@@ -25,6 +25,9 @@ function pfDatabase:HexDifficultyColor(level, force)
   end
 end
 
+-- GetIDByName
+-- Scans localization tables for matching IDs
+-- Returns table with all IDs
 function pfDatabase:GetIDByName(name, db)
   if not pfDB[db] then return nil end
   local ret = {}
@@ -37,7 +40,10 @@ function pfDatabase:GetIDByName(name, db)
   return ret
 end
 
-function pfDatabase:GetBestMap(maps, show)
+-- GetBestMap
+-- Scans a map table for all spawns
+-- Returns the map with most spawns
+function pfDatabase:GetBestMap(maps)
   local bestmap, bestscore = nil, 0
 
   -- calculate best map results
@@ -48,13 +54,12 @@ function pfDatabase:GetBestMap(maps, show)
     end
   end
 
-  if show then
-    pfMap:ShowMapID(bestmap)
-  end
-
   return bestmap or nil, bestscore or nil
 end
 
+-- SearchMobID
+-- Scans for all mobs with a specified ID
+-- Adds map nodes for each and returns its map table
 function pfDatabase:SearchMobID(id, meta, maps)
   local maps = maps or {}
 
@@ -80,7 +85,10 @@ function pfDatabase:SearchMobID(id, meta, maps)
   return maps
 end
 
-function pfDatabase:SearchMob(mob, meta)
+-- SearchMob
+-- Scans for all mobs with a specified name
+-- Adds map nodes for each and returns its map table
+function pfDatabase:SearchMob(mob, meta, show)
   local maps = {}
 
   for id in pairs(pfDatabase:GetIDByName(mob, "units")) do
@@ -89,12 +97,11 @@ function pfDatabase:SearchMob(mob, meta)
     end
   end
 
-  -- open map on best zone
-  pfDatabase:GetBestMap(maps, true)
-
-  return maps
+  return pfDatabase:GetBestMap(maps)
 end
 
+-- Scans for all objects with a specified ID
+-- Adds map nodes for each and returns its map table
 function pfDatabase:SearchObjectID(id, meta, maps)
   local maps = maps or {}
 
@@ -120,6 +127,9 @@ function pfDatabase:SearchObjectID(id, meta, maps)
   return maps
 end
 
+-- SearchObject
+-- Scans for all objects with a specified name
+-- Adds map nodes for each and returns its map table
 function pfDatabase:SearchObject(obj, meta)
   local maps = {}
 
@@ -129,10 +139,7 @@ function pfDatabase:SearchObject(obj, meta)
     end
   end
 
-  -- open map on best zone
-  pfDatabase:GetBestMap(maps, true)
-
-  return maps
+  return pfDatabase:GetBestMap(maps)
 end
 
 function pfDatabase:SearchItem(item, meta)
