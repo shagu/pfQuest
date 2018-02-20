@@ -67,76 +67,15 @@ local function UpdateQuestLogID(questIndex, action)
     -- hide old nodes and apply changes
     pfMap:DeleteNode("PFQUEST", title)
 
-    local objectives = GetNumQuestLeaderBoards(questIndex)
-    local zone, score, maps, meta = nil, 0, {}, {}
-    local dbobj = nil
-
-    if objectives then
-      for i=1, objectives, 1 do
-        local text, type, finished = GetQuestLogLeaderBoard(i, questIndex)
-
-        local match = nil
-        if not finished then
-          -- spawn data
-          if type == "monster" then
-            local i, j, monsterName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_MONSTERS_KILLED))
-            meta = { ["quest"] = title, ["addon"] = "PFQUEST" }
-            zone, score = pfDatabase:SearchMob(monsterName, meta)
-            if zone then
-              match = true
-              maps[zone] = maps[zone] and maps[zone] + score or 1
-            end
-          end
-
-          -- item data
-          if type == "item" then
-            local i, j, itemName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_OBJECTS_FOUND))
-            meta = { ["quest"] = title, ["addon"] = "PFQUEST", ["item"] = itemName }
-            zone, score = pfDatabase:SearchItem(itemName, meta)
-            if zone then
-              match = true
-              maps[zone] = maps[zone] and maps[zone] + score or 1
-            end
-
-            meta = { ["quest"] = title, ["addon"] = "PFQUEST", ["item"] = itemName }
-            zone, score = pfDatabase:SearchVendor(itemName, meta)
-            if zone then
-              match = true
-              maps[zone] = maps[zone] and maps[zone] + score or 1
-            end
-          end
-
-          if not match then dbobj = true end
-        end
-      end
-    end
-
-    -- show quest givers
-    if pfQuest_config["currentquestgivers"] ==  "1" then
-      local meta = { ["quest"] = title, ["addon"] = "PFQUEST" }
-      if complete or objectives == 0 then
-        meta.qstate = "done"
-      else
-        meta.qstate = "progress"
-      end
-
-      local questIndex = title .. "," .. string.sub(qobj, 1, 10)
-      zone, score = pfDatabase:SearchQuest(questIndex, meta, dbobj)
-      if zone then maps[zone] = maps[zone] and maps[zone] + score or 1 end
-    end
-
-    -- calculate best map results
-    local bestmap, bestscore = nil, 0
-    for map, count in pairs(maps) do
-      if count > bestscore then
-        bestscore = count
-        bestmap   = map
-      end
+    -- search matching quests
+    local maps, meta = {}, { ["addon"] = "PFQUEST" }
+    for _, id in pfDatabase:GetQuestIDs(questIndex) do
+      maps = pfDatabase:SearchQuestID(id, meta, maps)
     end
 
     pfMap:UpdateNodes()
 
-    return bestmap, bestscore
+    return maps
   else
     -- check for questlog changes
     local cur = {}
@@ -177,8 +116,8 @@ local function AddQuestLogIntegration()
   pfQuest.buttonShow:SetText("Show")
   pfQuest.buttonShow:SetPoint("TOP", dockTitle, "TOP", -95, 0)
   pfQuest.buttonShow:SetScript("OnClick", function()
-    local map = UpdateQuestLogID(GetQuestLogSelection(), "ADD")
-    pfMap:ShowMapID(map)
+    local maps = UpdateQuestLogID(GetQuestLogSelection(), "ADD")
+    pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
   end)
 
   pfQuest.buttonClean = pfQuest.buttonClean or CreateFrame("Button", "pfQuestClean", dockFrame, "UIPanelButtonTemplate")
@@ -301,8 +240,8 @@ end
 local pfHookAddQuestWatch = AddQuestWatch
 AddQuestWatch = function(questIndex)
   if pfQuest_config["trackingmethod"] ~= 3 then
-    local map = UpdateQuestLogID(questIndex, "ADD")
-    pfMap:SetMapByID(map)
+    local maps = UpdateQuestLogID(GetQuestLogSelection(), "ADD")
+    pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
   end
   return pfHookAddQuestWatch(questIndex)
 end
