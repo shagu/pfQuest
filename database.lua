@@ -323,7 +323,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   if quests[id]["end"] then
     -- units
     if quests[id]["end"]["U"] then
-      for _, unit in pairs(quests[id]["start"]["U"]) do
+      for _, unit in pairs(quests[id]["end"]["U"]) do
         meta = meta or {}
         meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
         maps = pfDatabase:SearchMobID(unit, meta, maps)
@@ -332,7 +332,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
 
     -- objects
     if quests[id]["end"]["O"] then
-      for _, object in pairs(quests[id]["start"]["O"]) do
+      for _, object in pairs(quests[id]["end"]["O"]) do
         meta = meta or {}
         meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
         maps = pfDatabase:SearchObjectID(object, meta, maps)
@@ -466,4 +466,68 @@ function pfDatabase:SearchQuests()
   end
 
   return num
+end
+
+function pfDatabase:FormatQuestText(questText)
+  questText = string.gsub(questText, "$[Nn]", UnitName("player"))
+  questText = string.gsub(questText, "$[Cc]", strlower(UnitClass("player")))
+  questText = string.gsub(questText, "$[Rr]", strlower(UnitRace("player")))
+  questText = string.gsub(questText, "$[Bb]", "\n")
+  -- UnitSex("player") returns 2 for male and 3 for female
+  -- that's why there is an unused capture group around the $[Gg]
+  return string.gsub(questText, "($[Gg])(.+):(.+);", "%"..UnitSex("player"))
+end
+
+-- GetQuestID
+-- Try to guess the quest ID based on the questlog ID
+-- Returns possible quest IDs
+function pfDatabase:GetQuestIDs(qid, deep)
+  local oldID = GetQuestLogSelection()
+  SelectQuestLogEntry(qid)
+  local text, objective = GetQuestLogQuestText()
+  local title, level, _, header = GetQuestLogTitle(qid)
+  SelectQuestLogEntry(oldID)
+
+  local _, race = UnitRace("player")
+  local prace = pfDatabase:GetBitByRace(race)
+  local _, class = UnitClass("player")
+  local pclass = pfDatabase:GetBitByClass(class)
+
+  local best = 0
+  local results = {}
+
+  for id, data in pairs(pfDB["quests"]["loc"]) do
+    local score = 0
+
+    if data.T == title or ( deep and strsub(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["O"]),0,10) == strsub(objective,0,10)) then
+      if quests[id]["lvl"] == level then
+        score = score + 1
+      end
+
+      if pfDB.quests.loc[id]["O"] == objective then
+        score = score + 2
+      end
+
+      if quests[id]["race"] and ( bit.band(quests[id]["race"], prace) == prace ) then
+        score = score + 4
+      end
+
+      if quests[id]["class"] and ( bit.band(quests[id]["class"], pclass) == pclass ) then
+        score = score + 4
+      end
+
+      local dbtext = strsub(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["D"]),0,10)
+      local qstext = strsub(text,0,10)
+
+      if pfDatabase:CompareString(dbtext, qstext) < 0.1 then
+        score = score + 8
+      end
+
+      if score > best then best = score end
+      results[score] = results[score] or {}
+      table.insert(results[score], id)
+    end
+  end
+
+  return results[best] or pfDatabase:GetQuestIDs(qid, 1) or {}
 end
