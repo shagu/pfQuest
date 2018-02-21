@@ -1,13 +1,14 @@
 -- default config
-pfDatabase_fav = { ["spawn"] = {}, ["item"] = {}, ["quest"] = {} }
+pfBrowser_fav = {["units"] = {}, ["objects"] = {}, ["items"] = {}, ["quests"] = {}}
 
 local search_limit = 100
 
 -- add database shortcuts
-local items = pfDatabase["items"]
-local quests = pfDatabase["quests"]
-local vendors = pfDatabase["vendors"]
-local spawns = pfDatabase["spawns"]
+local items = pfDB["items"]["data"]
+local units = pfDB["units"]["data"]
+local objects = pfDB["objects"]["data"]
+local quests = pfDB["quests"]["data"]
+local zones = pfDB["zones"]["loc"]
 
 local function SelectView(view)
   for id, frame in pairs(pfBrowser.tabs) do
