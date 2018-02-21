@@ -4,7 +4,7 @@
 ## Notes: A lightweight Questhelper and Database
 ## Version: NORELEASE
 ## OptionalDeps: pfUI
-## SavedVariablesPerCharacter: pfQuest_config, pfDatabase_fav, pfQuest_history, pfQuest_colors
+## SavedVariablesPerCharacter: pfQuest_config, pfBrowser_fav, pfQuest_history, pfQuest_colors
 
 # database index
 db\init.lua
