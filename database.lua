@@ -81,7 +81,7 @@ local function strcomp(old, new)
   end
 
   local diff = strlen(prv[string.len(old)])
-  if diff == 0 then 
+  if diff == 0 then
     return 0
   else
     return diff/strlen(old)
@@ -652,4 +652,77 @@ function pfDatabase:GetQuestIDs(qid, deep)
   end
 
   return results[best] or pfDatabase:GetQuestIDs(qid, 1) or {}
+end
+
+-- browser search related defaults and values
+pfDatabase.MIN_SEARCH_LENGTH_CHARS = 3
+pfDatabase.MIN_SEARCH_LENGTH_INTS = 1
+pfDatabase.lastSearchQuery = ""
+pfDatabase.lastSearchResults = {["items"] = {}, ["quests"] = {}, ["objects"] = {}, ["units"] = {}}
+
+-- GenericSearch
+-- Search for a list of IDs of the specified `searchType` based on if `query` is
+-- part of the name or ID of the database entry it is compared against.
+--
+-- `query` must be a string. If the string represents a number, the search is
+-- based on IDs, otherwise it compares names.
+--
+-- `searchType` must be one of these strings: "items", "quests", "objects" or
+-- "units"
+--
+-- Returns a table and an integer, the latter being the element count of the
+-- former. The table contains the ID as keys for the boolean value `true`.
+-- E.g.: {{[5] = true, [231] = true}, 2}
+-- If the query doesn't satisfy the minimum search length requiered for its
+-- type (number/string), the favourites for the `searchType` are returned.
+function pfDatabase:GenericSearch(query, searchType)
+  local queryLength = strlen(query) -- needed for some checks
+  local queryNumber = tonumber(query) -- if nil, the query is NOT a number
+  local results = {} -- save results
+  local resultCount = 0; -- count results
+
+  -- Set the DB to be searched
+  local searchDatabase
+  local minChars = pfDatabase.MIN_SEARCH_LENGTH_CHARS
+  local minInts = pfDatabase.MIN_SEARCH_LENGTH_INTS
+  if (queryLength >= minChars) or (queryNumber and (queryLength >= minInts)) then
+    if ((queryLength > minChars) or (queryNumber and (queryLength > minInts)))
+       and (pfDatabase.lastSearchQuery ~= "" and queryLength > strlen(pfDatabase.lastSearchQuery))
+    then
+      -- there are previous search results to use
+      searchDatabase = pfDatabase.lastSearchResults[searchType]
+    else
+      -- no previous results, search whole DB (first if condition makes sure this is not a favourite display)
+       searchDatabase = pfDB[searchType]["data"]
+    end
+  else
+    -- minimal search length not satisfied, reset search results and return favourites
+    return pfBrowser_fav[searchType], -1
+  end
+  -- iterate the search DB
+  for id, _ in pairs(searchDatabase) do
+    local dbLocale = pfDB[searchType]["loc"][id]
+    if (dbLocale) then
+      local compare
+      local search = query
+      if (queryNumber) then
+        -- do number search
+        compare = tostring(id)
+      else
+        -- do name search
+        search = strlower(query)
+        if (searchType == "quests") then
+          compare = strlower(dbLocale["T"])
+        else
+          compare = strlower(dbLocale)
+        end
+      end
+      -- search and save on match
+      if (strfind(compare, search)) then
+        results[id] = true
+        resultCount = resultCount + 1
+      end
+    end
+  end
+  return results, resultCount
 end
