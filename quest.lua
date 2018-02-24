@@ -6,6 +6,12 @@ local function ClearQuest(quest)
   questTrackedCache[quest] = nil
 end
 
+local function ResetAll()
+  questTrackedCache = {}
+  pfQuest:Show()
+  pfQuest.hadUpdate = true
+end
+
 local function QuestNeedsUpdate(questIndex)
   local title, level = GetQuestLogTitle(questIndex)
 
@@ -54,15 +60,27 @@ local function UpdateQuestLogID(questIndex, action)
     local qtxt, qobj = GetQuestLogQuestText()
     SelectQuestLogEntry(oldID)
 
-    if action == "REMOVE" or
-    ( not action and not watched and pfQuest_config["trackingmethod"] == 2 ) or
-    ( not action and pfQuest_config["trackingmethod"] == 3 ) then
+    if action == "REMOVE" then
       ClearQuest(title)
       return nil
-    end
+    elseif action == "ADD" then
+      -- skip further checks
+    else
+      if pfQuest_config["trackingmethod"] == 2 and not watched then
+        ClearQuest(title)
+        return nil
+      end
 
-    -- abort with available cache when no action was given
-    if not action and not QuestNeedsUpdate(questIndex) then return nil end
+      if pfQuest_config["trackingmethod"] == 3 then
+        ClearQuest(title)
+        return nil
+      end
+
+      -- abort with available cache when no action was given
+      if not QuestNeedsUpdate(questIndex) then
+        return nil
+      end
+    end
 
     -- hide old nodes and apply changes
     pfMap:DeleteNode("PFQUEST", title)
@@ -155,7 +173,7 @@ local function AddQuestLogIntegration()
   pfQuest.buttonShow:SetPoint("TOP", dockTitle, "TOP", -95, 0)
   pfQuest.buttonShow:SetScript("OnClick", function()
     local maps = UpdateQuestLogID(GetQuestLogSelection(), "ADD")
-    pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
+    if maps then pfMap:ShowMapID(pfDatabase:GetBestMap(maps)) end
   end)
 
   pfQuest.buttonClean = pfQuest.buttonClean or CreateFrame("Button", "pfQuestClean", dockFrame, "UIPanelButtonTemplate")
@@ -174,11 +192,7 @@ local function AddQuestLogIntegration()
   pfQuest.buttonReset:SetText("Reset")
   pfQuest.buttonReset:SetPoint("TOP", dockTitle, "TOP", 95, 0)
   pfQuest.buttonReset:SetScript("OnClick", function()
-    pfMap:DeleteNode("PFQUEST")
-    pfMap:UpdateNodes()
-
-    questTrackedCache = {}
-    pfQuest:Show()
+    ResetAll()
   end)
 end
 
@@ -218,10 +232,7 @@ local function AddWorldMapIntegration()
       info.func = function()
         UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
         pfQuest_config["trackingmethod"] = this:GetID()
-
-        -- rescan
-        questTrackedCache = {}
-        pfQuest:Show()
+        ResetAll()
       end
       UIDropDownMenu_AddButton(info)
 
@@ -231,8 +242,7 @@ local function AddWorldMapIntegration()
       info.func = function()
         UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
         pfQuest_config["trackingmethod"] = this:GetID()
-        questTrackedCache = {}
-        pfQuest:Show()
+        ResetAll()
       end
       UIDropDownMenu_AddButton(info)
 
@@ -242,8 +252,7 @@ local function AddWorldMapIntegration()
       info.func = function()
         UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
         pfQuest_config["trackingmethod"] = this:GetID()
-        questTrackedCache = {}
-        pfQuest:Show()
+        ResetAll()
       end
       UIDropDownMenu_AddButton(info)
 
@@ -269,18 +278,15 @@ end
 
 local pfHookRemoveQuestWatch = RemoveQuestWatch
 RemoveQuestWatch = function(questIndex)
-  if pfQuest_config["trackingmethod"] == 2 then
-    UpdateQuestLogID(questIndex, "REMOVE")
-  end
+  pfQuest:Show()
+  pfQuest.hadUpdate = true
   return pfHookRemoveQuestWatch(questIndex)
 end
 
 local pfHookAddQuestWatch = AddQuestWatch
 AddQuestWatch = function(questIndex)
-  if pfQuest_config["trackingmethod"] ~= 3 then
-    local maps = UpdateQuestLogID(GetQuestLogSelection(), "ADD")
-    pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
-  end
+  pfQuest:Show()
+  pfQuest.hadUpdate = true
   return pfHookAddQuestWatch(questIndex)
 end
 
@@ -300,6 +306,8 @@ pfQuest:SetScript("OnEvent", function()
 
       AddQuestLogIntegration()
       AddWorldMapIntegration()
+
+      ResetAll()
     else
       return
     end
@@ -326,7 +334,10 @@ pfQuest:SetScript("OnShow", function()
 end)
 
 pfQuest:SetScript("OnUpdate", function()
-  if pfQuest_config["trackingmethod"] == 4 then this:Hide() return end
+  if pfQuest_config["trackingmethod"] == 4 then
+    this:Hide()
+    return
+  end
 
   this.scan = this.scan and this.scan + 1 or 1
   this.smax = GetNumQuestLogEntries()
@@ -341,9 +352,12 @@ pfQuest:SetScript("OnUpdate", function()
   end
 
   if this.scan >= this.smax then
-    if pfQuest_config["allquestgivers"] == "1" and (this.hadUpdate or GetNumQuestLogEntries() == 0) then
-      local meta = { ["addon"] = "PFQUEST" }
-      pfDatabase:SearchQuests(meta)
+    if this.hadUpdate or this.smax == 0 then
+      if pfQuest_config["allquestgivers"] == "1" then
+        local meta = { ["addon"] = "PFQUEST" }
+        pfDatabase:SearchQuests(meta)
+      end
+
       pfMap:UpdateNodes()
     end
 
