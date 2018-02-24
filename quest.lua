@@ -69,8 +69,46 @@ local function UpdateQuestLogID(questIndex, action)
 
     -- search matching quests
     local maps, meta = {}, { ["addon"] = "PFQUEST", ["qlogid"] = questIndex }
-    for _, id in pfDatabase:GetQuestIDs(questIndex) do
+    local results = pfDatabase:GetQuestIDs(questIndex)
+    for _, id in results do
       maps = pfDatabase:SearchQuestID(id, meta, maps)
+    end
+
+    -- If no quest was found in the database, fallback to manual questlog-parsing
+    if table.getn(results) == 0 then
+      message("FALLBACK: QuestLog Scanning")
+      local objectives = GetNumQuestLeaderBoards(questIndex)
+      if objectives then
+        for i=1, objectives, 1 do
+          local text, type, done = GetQuestLogLeaderBoard(i, meta["qlogid"])
+
+          -- spawn data
+          if type == "monster" then
+            local i, j, monsterName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_MONSTERS_KILLED))
+            if objNUm ~= objNeeded or not done then
+
+              for id in pairs(pfDatabase:GetIDByName(monsterName, "units")) do
+                meta["texture"] = nil
+                maps = pfDatabase:SearchMobID(unit, meta, maps)
+              end
+
+              for id in pairs(pfDatabase:GetIDByName(monsterName, "objects")) do
+                meta["texture"] = nil
+                maps = pfDatabase:SearchMobID(id, meta, maps)
+              end
+            end
+          elseif type == "item" then
+            if objNUm ~= objNeeded or not done then
+              local i, j, itemName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_OBJECTS_FOUND))
+              if objNUm == objNeeded or done then
+                for id in pairs(pfDatabase:GetIDByName(itemName, "items")) do
+                  maps = pfDatabase:SearchItemID(id, meta, maps)
+                end
+              end
+            end
+          end
+        end
+      end
     end
 
     pfMap:UpdateNodes()
