@@ -68,7 +68,7 @@ local function UpdateQuestLogID(questIndex, action)
     pfMap:DeleteNode("PFQUEST", title)
 
     -- search matching quests
-    local maps, meta = {}, { ["addon"] = "PFQUEST" }
+    local maps, meta = {}, { ["addon"] = "PFQUEST", ["qlogid"] = questIndex }
     for _, id in pfDatabase:GetQuestIDs(questIndex) do
       maps = pfDatabase:SearchQuestID(id, meta, maps)
     end
@@ -303,20 +303,9 @@ pfQuest:SetScript("OnUpdate", function()
   end
 
   if this.scan >= this.smax then
-    if this.hadUpdate or GetNumQuestLogEntries() == 0 then
-      local meta = { }
-
-      -- show all questgivers
-      if pfQuest_config["allquestgivers"] == "1" then
-        meta.allquests = true
-
-        -- show lowlevel quests
-        if  pfQuest_config["showlowlevel"] == "0" then
-          meta.hidelow = true
-        end
-
-        pfDatabase:SearchQuests(nil, meta)
-      end
+    if pfQuest_config["allquestgivers"] == "1" and (this.hadUpdate or GetNumQuestLogEntries() == 0) then
+      local meta = { ["addon"] = "PFQUEST" }
+      pfDatabase:SearchQuests(meta)
       pfMap:UpdateNodes()
     end
 

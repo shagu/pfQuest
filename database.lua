@@ -337,35 +337,49 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   meta["qlvl"] = quests[id]["lvl"]
   meta["qmin"] = quests[id]["min"]
 
-  -- search quest-starter
-  if quests[id]["start"] then
-    -- units
-    if quests[id]["start"]["U"] then
-      for _, unit in pairs(quests[id]["start"]["U"]) do
-        meta = meta or {}
-        meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available_c"
-        maps = pfDatabase:SearchMobID(unit, meta, maps)
+  if not meta["qlogid"] or pfQuest_config["currentquestgivers"] == "1" then
+    -- search quest-starter
+    if quests[id]["start"] and not meta["qlogid"] then
+      -- units
+      if quests[id]["start"]["U"] then
+        for _, unit in pairs(quests[id]["start"]["U"]) do
+          meta = meta or {}
+          meta["layer"] = meta["layer"] or 4
+          meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available_c"
+          maps = pfDatabase:SearchMobID(unit, meta, maps)
+        end
+      end
+
+      -- objects
+      if quests[id]["start"]["O"] then
+        for _, object in pairs(quests[id]["start"]["O"]) do
+          meta = meta or {}
+          meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available_c"
+          maps = pfDatabase:SearchObjectID(object, meta, maps)
+        end
       end
     end
 
-    -- objects
-    if quests[id]["start"]["O"] then
-      for _, object in pairs(quests[id]["start"]["O"]) do
-        meta = meta or {}
-        meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available_c"
-        maps = pfDatabase:SearchObjectID(object, meta, maps)
-      end
-    end
-  end
+    -- search quest-ender
+    if quests[id]["end"] then
+      -- units
+      if quests[id]["end"]["U"] then
+        for _, unit in pairs(quests[id]["end"]["U"]) do
+          meta = meta or {}
 
-  -- search quest-ender
-  if quests[id]["end"] then
-    -- units
-    if quests[id]["end"]["U"] then
-      for _, unit in pairs(quests[id]["end"]["U"]) do
-        meta = meta or {}
-        meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
-        maps = pfDatabase:SearchMobID(unit, meta, maps)
+          if meta["qlogid"] then
+            local _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
+            complete = complete or GetNumQuestLeaderBoards(meta["qlogid"]) == 0 and true or nil
+            if complete then
+              meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
+            else
+              meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete"
+            end
+          else
+            meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
+          end
+          maps = pfDatabase:SearchMobID(unit, meta, maps)
+        end
       end
     end
 
@@ -373,38 +387,100 @@ function pfDatabase:SearchQuestID(id, meta, maps)
     if quests[id]["end"]["O"] then
       for _, object in pairs(quests[id]["end"]["O"]) do
         meta = meta or {}
-        meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
+
+        if meta["qlogid"] then
+          local _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
+          complete = complete or GetNumQuestLeaderBoards(meta["qlogid"]) == 0 and true or nil
+          if complete then
+            meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
+          else
+            meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete"
+          end
+        else
+          meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
+        end
+
         maps = pfDatabase:SearchObjectID(object, meta, maps)
       end
     end
   end
+
+
+  local done_objectives = {
+    ["U"] = {},
+    ["O"] = {},
+    ["I"] = {},
+  }
+
+  if meta["qlogid"] then
+    -- add objective blacklist if current quest
+    local objectives = GetNumQuestLeaderBoards(meta["qlogid"])
+    if objectives then
+      for i=1, objectives, 1 do
+        local text, type, done = GetQuestLogLeaderBoard(i, meta["qlogid"])
+
+        -- spawn data
+        if type == "monster" then
+          local i, j, monsterName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_MONSTERS_KILLED))
+          if objNUm == objNeeded or done then
+            for id in pairs(pfDatabase:GetIDByName(monsterName, "units")) do
+              done_objectives["U"][id] = true
+            end
+
+            for id in pairs(pfDatabase:GetIDByName(monsterName, "objects")) do
+              done_objectives["O"][id] = true
+            end
+          end
+        end
+
+        -- item data
+        if type == "item" then
+          local i, j, itemName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_OBJECTS_FOUND))
+          if objNUm == objNeeded or done then
+            for id in pairs(pfDatabase:GetIDByName(itemName, "items")) do
+              done_objectives["I"][id] = true
+            end
+          end
+        end
+      end
+    end
+  end
+
 
   -- search quest-objectives
   if quests[id]["obj"] then
     -- units
     if quests[id]["obj"]["U"] then
       for _, unit in pairs(quests[id]["obj"]["U"]) do
-        meta = meta or {}
-        meta["texture"] = nil
-        maps = pfDatabase:SearchMobID(unit, meta, maps)
+        if not done_objectives["U"][unit] then
+          meta = meta or {}
+          meta["texture"] = nil
+          maps = pfDatabase:SearchMobID(unit, meta, maps)
+        end
       end
     end
 
     -- objects
     if quests[id]["obj"]["O"] then
       for _, object in pairs(quests[id]["obj"]["O"]) do
-        meta = meta or {}
-        meta["texture"] = nil
-        maps = pfDatabase:SearchObjectID(object, meta, maps)
+        if not done_objectives["O"][object] then
+          meta = meta or {}
+          meta["texture"] = nil
+          meta["layer"] = 2
+          maps = pfDatabase:SearchObjectID(object, meta, maps)
+        end
       end
     end
 
     -- items
     if quests[id]["obj"]["I"] then
       for _, item in pairs(quests[id]["obj"]["I"]) do
-        meta = meta or {}
-        meta["texture"] = nil
-        maps = pfDatabase:SearchItemID(item, meta, maps)
+        if not done_objectives["I"][item] then
+          meta = meta or {}
+          meta["texture"] = nil
+          meta["layer"] = 2
+          maps = pfDatabase:SearchItemID(item, meta, maps)
+        end
       end
     end
   end
@@ -430,10 +506,10 @@ end
 -- Scans for all available quests
 -- Adds map nodes for each quest starter and ender
 -- Returns its map table
-function pfDatabase:SearchQuests()
+function pfDatabase:SearchQuests(meta, maps)
   local level, minlvl, maxlvl, race, class, prof
-  local maps = {}
-  local meta = {}
+  local maps = maps or {}
+  local meta = meta or {}
 
   local plevel = UnitLevel("player")
   local pfaction = ( UnitFactionGroup("player") == "Horde" ) and "H" or "A"
@@ -472,13 +548,13 @@ function pfDatabase:SearchQuests()
 -- elseif quests[id]["skill"] and not ( bit.band(quests[id]["skill"], pskill) == pskill ) then
 -- hide non-available quests for your class
 
-    if pfQuest_history and pfQuest_history[id] then
+    if pfQuest_history and pfDB.quests.loc[id] and pfQuest_history[pfDB.quests.loc[id].T] then
       -- hide completed quests
     elseif quests[id]["race"] and not ( bit.band(quests[id]["race"], prace) == prace ) then
       -- hide non-available quests for your race
     elseif quests[id]["class"] and not ( bit.band(quests[id]["class"], pclass) == pclass ) then
       -- hide non-available quests for your class
-    elseif quests[id]["lvl"] and quests[id]["lvl"] < plevel - 9 then
+    elseif quests[id]["lvl"] and quests[id]["lvl"] < plevel - 9 and pfUI_config["showlowlevel"] == "0" then
       -- hide lowlevel quests
     elseif quests[id]["lvl"] and quests[id]["lvl"] > plevel + 10 then
       -- hide highlevel quests
