@@ -69,7 +69,9 @@ If no texture is set, the map function will use its default node icon. Otherwise
 This can be used to tint textures with a given color. The value is a table with RGB colors. ( e.g: "{ 1, .8, .4 }" )
 
 ### ["layer"]
+[DEPRECATED: The layer is now auto-generated to a value based on its texture]
 The layer can be used to force a position above or below other nodes. Multiple nodes on the same x/y-axis are merged into one. The higher the value, the more likely it is that this texture will replace the other nodes visibility.
+
 
 ## Additional Function Arguments
 Those values are not reliable to read after the function calls. Those are used to request special behaviours of one of the DB-query functions.

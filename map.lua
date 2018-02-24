@@ -79,6 +79,18 @@ local function IsEmpty(tabl)
   return true
 end
 
+local layers = {
+  ["Interface\\AddOns\\pfQuest\\img\\available"]    = 1,
+  ["Interface\\AddOns\\pfQuest\\img\\available_c"]  = 2,
+  ["Interface\\AddOns\\pfQuest\\img\\complete"]     = 3,
+  ["Interface\\AddOns\\pfQuest\\img\\complete_c"]   = 4,
+  ["Interface\\AddOns\\pfQuest\\img\\icon_vendor"]  = 5,
+}
+
+local function GetLayerByTexture(tex)
+  if layers[tex] then return layers[tex] else return 1 end
+end
+
 local function minimap_indoor()
   local tempzoom = 0
 	local state = 1
@@ -373,7 +385,7 @@ function pfMap:AddNode(meta)
   local map = meta["zone"]
   local coords = meta["x"] .. "|" .. meta["y"]
   local title = meta["title"]
-  local layer = meta["layer"]
+  local layer = GetLayerByTexture(meta["texture"])
   local spawn = meta["spawn"]
   local item = meta["item"]
 
@@ -481,7 +493,6 @@ function pfMap:BuildNode(name, parent)
   local f = CreateFrame("Button", name, parent)
   f:SetWidth(16)
   f:SetHeight(16)
-  f:SetFrameLevel(112)
 
   f:SetScript("OnEnter", pfMap.NodeEnter)
   f:SetScript("OnLeave", pfMap.NodeLeave)
@@ -496,7 +507,7 @@ function pfMap:UpdateNode(frame, node)
   frame.layer = -1
 
   for title, tab in pairs(node) do
-    tab.layer = tab.layer or 0
+    tab.layer = GetLayerByTexture(tab.texture)
     if tab.layer > frame.layer then
       -- set title and texture to the entry with highest layer
       -- and add core information
@@ -528,6 +539,7 @@ function pfMap:UpdateNode(frame, node)
   end
 
   frame.node = node
+  frame:SetFrameLevel(112 + frame.layer)
 end
 
 function pfMap:UpdateNodes()
