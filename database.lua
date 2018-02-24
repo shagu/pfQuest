@@ -555,6 +555,8 @@ function pfDatabase:SearchQuests(meta, maps)
       -- hide active quest
     elseif pfQuest_history and pfDB.quests.loc[id] and pfQuest_history[pfDB.quests.loc[id].T] then
       -- hide completed quests
+    elseif quests[id]["pre"] and pfDB.quests.loc[quests[id]["pre"]] and not pfQuest_history[pfDB.quests.loc[quests[id]["pre"]].T] then
+      -- hide missing pre-quests
     elseif quests[id]["race"] and not ( bit.band(quests[id]["race"], prace) == prace ) then
       -- hide non-available quests for your race
     elseif quests[id]["class"] and not ( bit.band(quests[id]["class"], pclass) == pclass ) then
