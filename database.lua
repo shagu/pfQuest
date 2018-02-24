@@ -406,14 +406,14 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   end
 
 
-  local done_objectives = {
+  local parse_obj = {
     ["U"] = {},
     ["O"] = {},
     ["I"] = {},
   }
 
+  -- If QuestLogID is given, scan and add all finished objectives to blacklist
   if meta["qlogid"] then
-    -- add objective blacklist if current quest
     local objectives = GetNumQuestLeaderBoards(meta["qlogid"])
     if objectives then
       for i=1, objectives, 1 do
@@ -422,14 +422,12 @@ function pfDatabase:SearchQuestID(id, meta, maps)
         -- spawn data
         if type == "monster" then
           local i, j, monsterName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_MONSTERS_KILLED))
-          if objNUm == objNeeded or done then
-            for id in pairs(pfDatabase:GetIDByName(monsterName, "units")) do
-              done_objectives["U"][id] = true
-            end
+          for id in pairs(pfDatabase:GetIDByName(monsterName, "units")) do
+            parse_obj["U"][id] = ( objNUm == objNeeded or done ) and "DONE" or "PROG"
+          end
 
-            for id in pairs(pfDatabase:GetIDByName(monsterName, "objects")) do
-              done_objectives["O"][id] = true
-            end
+          for id in pairs(pfDatabase:GetIDByName(monsterName, "objects")) do
+            parse_obj["O"][id] = ( objNUm == objNeeded or done ) and "DONE" or "PROG"
           end
         end
 
@@ -438,7 +436,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           local i, j, itemName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_OBJECTS_FOUND))
           if objNUm == objNeeded or done then
             for id in pairs(pfDatabase:GetIDByName(itemName, "items")) do
-              done_objectives["I"][id] = true
+              parse_obj["I"][id] = ( objNUm == objNeeded or done ) and "DONE" or "PROG"
             end
           end
         end
@@ -446,13 +444,12 @@ function pfDatabase:SearchQuestID(id, meta, maps)
     end
   end
 
-
   -- search quest-objectives
   if quests[id]["obj"] then
     -- units
     if quests[id]["obj"]["U"] then
       for _, unit in pairs(quests[id]["obj"]["U"]) do
-        if not done_objectives["U"][unit] then
+        if not parse_obj["U"][unit] or parse_obj["U"][unit] ~= "DONE" then
           meta = meta or {}
           meta["texture"] = nil
           maps = pfDatabase:SearchMobID(unit, meta, maps)
@@ -463,7 +460,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
     -- objects
     if quests[id]["obj"]["O"] then
       for _, object in pairs(quests[id]["obj"]["O"]) do
-        if not done_objectives["O"][object] then
+        if not parse_obj["O"][object] or parse_obj["O"][object] ~= "DONE" then
           meta = meta or {}
           meta["texture"] = nil
           meta["layer"] = 2
@@ -475,7 +472,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
     -- items
     if quests[id]["obj"]["I"] then
       for _, item in pairs(quests[id]["obj"]["I"]) do
-        if not done_objectives["I"][item] then
+        if not parse_obj["I"][item] or parse_obj["I"][item] ~= "DONE" then
           meta = meta or {}
           meta["texture"] = nil
           meta["layer"] = 2
@@ -518,6 +515,12 @@ function pfDatabase:SearchQuests(meta, maps)
   local _, class = UnitClass("player")
   local pclass = pfDatabase:GetBitByClass(class)
 
+  local currentQuests = {}
+  for id=1, GetNumQuestLogEntries() do
+    local title = GetQuestLogTitle(id)
+    currentQuests[title] = true
+  end
+
   for id in pairs(quests) do
     meta["quest"] = ( pfDB.quests.loc[id] and pfDB.quests.loc[id].T ) or UNKNOWN
     meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available_c"
@@ -548,7 +551,9 @@ function pfDatabase:SearchQuests(meta, maps)
 -- elseif quests[id]["skill"] and not ( bit.band(quests[id]["skill"], pskill) == pskill ) then
 -- hide non-available quests for your class
 
-    if pfQuest_history and pfDB.quests.loc[id] and pfQuest_history[pfDB.quests.loc[id].T] then
+    if pfDB.quests.loc[id] and currentQuests[pfDB.quests.loc[id].T] then
+      -- hide active quest
+    elseif pfQuest_history and pfDB.quests.loc[id] and pfQuest_history[pfDB.quests.loc[id].T] then
       -- hide completed quests
     elseif quests[id]["race"] and not ( bit.band(quests[id]["race"], prace) == prace ) then
       -- hide non-available quests for your race
