@@ -2,6 +2,7 @@
 pfBrowser_fav = {["units"] = {}, ["objects"] = {}, ["items"] = {}, ["quests"] = {}}
 
 local search_limit = 100
+local tooltip_limit = 5
 
 -- add database shortcuts
 local items = pfDB["items"]["data"]
@@ -17,18 +18,20 @@ local function SelectView(view)
   view:Show()
 end
 
+-- sets the browser result values when they change
 local function RefreshView(i, key, caption)
-  pfBrowser.tabs[key].list:SetHeight( i * 30 )
+  pfBrowser.tabs[key].list:SetHeight(((search_limit > 0 and i >= search_limit) and search_limit or i) * 30 )
   pfBrowser.tabs[key].list:GetParent():SetScrollChild(pfBrowser.tabs[key].list)
   pfBrowser.tabs[key].list:GetParent():SetVerticalScroll(0)
   pfBrowser.tabs[key].list:GetParent():UpdateScrollState()
 
-  pfBrowser.tabs[key].button:SetText(caption .. " " .. "|cffaaaaaa(" .. ((i == search_limit) and "..." or i) .. ")")
+  pfBrowser.tabs[key].button:SetText(caption .. " " .. "|cffaaaaaa(" .. ((search_limit > 0 and i >= search_limit) and search_limit.."/"..i or i) .. ")")
   for j=i+1,search_limit do
     if pfBrowser.tabs[key].buttons[j] then pfBrowser.tabs[key].buttons[j]:Hide() end
   end
 end
 
+-- sets up all the browse windows and their activation buttons
 local function CreateBrowseWindow(fname, name, parent, anchor, x, y)
   if not parent.tabs then parent.tabs = {} end
   parent.tabs[fname] = pfUI.api.CreateScrollFrame(name, parent)
@@ -44,7 +47,7 @@ local function CreateBrowseWindow(fname, name, parent, anchor, x, y)
 
   parent.tabs[fname].button = CreateFrame("Button", name .. "Button", parent)
   parent.tabs[fname].button:SetPoint(anchor, x, y)
-  parent.tabs[fname].button:SetWidth(207)
+  parent.tabs[fname].button:SetWidth(153)
   parent.tabs[fname].button:SetHeight(30)
   parent.tabs[fname].button:SetScript("OnClick", function()
     SelectView(parent.tabs[fname])
@@ -59,292 +62,36 @@ local function CreateBrowseWindow(fname, name, parent, anchor, x, y)
   parent.tabs[fname].list:SetWidth(600)
 end
 
-local function CreateSpawnEntry(i)
-  local f = CreateFrame("Button", nil, pfBrowser.tabs.spawn.list)
-  f:SetPoint("TOPLEFT", pfBrowser.tabs.spawn.list, "TOPLEFT", 10, -i*30 + 5)
-  f:SetPoint("BOTTOMRIGHT", pfBrowser.tabs.spawn.list, "TOPRIGHT", 10, -i*30 - 15)
-  f.tex = f:CreateTexture("BACKGROUND")
-  f.tex:SetAllPoints(f)
-
-  if math.mod(i,2) == 1 then
-    f.tex:SetTexture(1,1,1,.02)
-  else
-    f.tex:SetTexture(1,1,1,.04)
-  end
-
-  f:SetScript("OnEnter", function()
-    this.tex:SetTexture(1,1,1,.1)
-
-    local name = this.name
-    local maps = { }
-
-    GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
-    GameTooltip:SetText("Located in", .3, 1, .8)
-
-    if spawns[name] and spawns[name]["coords"] then
-      for id, data in pairs(spawns[name]["coords"]) do
-        local f, t, x, y, zone = strfind(data, "(.*),(.*),(.*)")
-        maps[zone] = maps[zone] and maps[zone] + 1 or 1
-      end
-    else
-      GameTooltip:AddLine(UNKNOWN, 1,.5,.5)
-    end
-
-    for zone, count in pairs(maps) do
-      GameTooltip:AddDoubleLine(( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), count .. "x", 1,1,1, .5,.5,.5)
-    end
-
-    GameTooltip:Show()
-  end)
-
-  f:SetScript("OnLeave", function()
-    if math.mod(i,2) == 1 then
-      this.tex:SetTexture(1,1,1,.02)
-    else
-      this.tex:SetTexture(1,1,1,.04)
-    end
-    GameTooltip:Hide()
-  end)
-
-  f:SetScript("OnClick", function()
-    local map = pfDatabase:SearchMob(this.name)
-    pfMap:UpdateNodes()
-    pfMap:ShowMapID(map)
-  end)
-
-  f.text = f:CreateFontString("Caption", "LOW", "GameFontWhite")
-  f.text:SetPoint("CENTER", 0, 0)
-  f.text:SetJustifyH("CENTER")
-
-  f.factionA = f:CreateTexture("OVERLAY")
-  f.factionA:SetTexture("Interface\\AddOns\\pfQuest\\img\\icon_alliance")
-  f.factionA:SetWidth(16)
-  f.factionA:SetHeight(16)
-  f.factionA:SetPoint("RIGHT", -5, 0)
-
-  f.factionH = f:CreateTexture("OVERLAY")
-  f.factionH:SetTexture("Interface\\AddOns\\pfQuest\\img\\icon_horde")
-  f.factionH:SetWidth(16)
-  f.factionH:SetHeight(16)
-  f.factionH:SetPoint("RIGHT", -24, 0)
-
-  f.fav = CreateFrame("Button", nil, f)
-  f.fav:SetHitRectInsets(-3,-3,-3,-3)
-  f.fav:SetPoint("LEFT", 0, 0)
-  f.fav:SetWidth(16)
-  f.fav:SetHeight(16)
-  f.fav.icon = f.fav:CreateTexture("OVERLAY")
-  f.fav.icon:SetTexture("Interface\\AddOns\\pfQuest\\img\\fav")
-  f.fav.icon:SetAllPoints(f.fav)
-
-  f.fav:SetScript("OnClick", function()
-    local name = this:GetParent().name
-    if pfDatabase_fav["spawn"][name] then
-      pfDatabase_fav["spawn"][name] = nil
-      this.icon:SetVertexColor(1,1,1,.1)
-    else
-      pfDatabase_fav["spawn"][name] = true
-      this.icon:SetVertexColor(1,1,1,1)
-    end
-  end)
-
-  return f
-end
-
-local function CreateItemEntry(i)
-  local f = CreateFrame("Button", nil, pfBrowser.tabs.item.list)
-  f:SetPoint("TOPLEFT", pfBrowser.tabs.item.list, "TOPLEFT", 10, -i*30 + 5)
-  f:SetPoint("BOTTOMRIGHT", pfBrowser.tabs.item.list, "TOPRIGHT", 10, -i*30 - 15)
-  f.tex = f:CreateTexture("BACKGROUND")
-  f.tex:SetAllPoints(f)
-
-  if math.mod(i,2) == 1 then
-    f.tex:SetTexture(1,1,1,.02)
-  else
-    f.tex:SetTexture(1,1,1,.04)
-  end
-
-  f:SetScript("OnEnter", function()
-    this.tex:SetTexture(1,1,1,.1)
-
-    GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
-    GameTooltip:SetHyperlink("item:" .. this.itemID .. ":0:0:0")
-    GameTooltip:Show()
-  end)
-
-  f:SetScript("OnLeave", function()
-    if math.mod(i,2) == 1 then
-      this.tex:SetTexture(1,1,1,.02)
-    else
-      this.tex:SetTexture(1,1,1,.04)
-    end
-
-    --this.text:SetTextColor(1,1,1,1)
-    GameTooltip:Hide()
-  end)
-
-  f:SetScript("OnClick", function()
-    local link = "item:"..this.itemID..":0:0:0"
-    local text = ( this.itemColor or "|cffffffff" ) .."|H" .. link .. "|h["..this.itemName.."]|h|r"
-    SetItemRef(link, text, arg1)
-  end)
-
-  f.text = f:CreateFontString("Caption", "LOW", "GameFontWhite")
-  f.text:SetPoint("CENTER", 0, 0)
-  f.text:SetJustifyH("CENTER")
-
-  f.fav = CreateFrame("Button", nil, f)
-  f.fav:SetHitRectInsets(-3,-3,-3,-3)
-  f.fav:SetPoint("LEFT", 0, 0)
-  f.fav:SetWidth(16)
-  f.fav:SetHeight(16)
-  f.fav.icon = f.fav:CreateTexture("OVERLAY")
-  f.fav.icon:SetTexture("Interface\\AddOns\\pfQuest\\img\\fav")
-  f.fav.icon:SetAllPoints(f.fav)
-
-  f.fav:SetScript("OnClick", function()
-    local name = this:GetParent().itemName
-    if pfDatabase_fav["item"][name] then
-      pfDatabase_fav["item"][name] = nil
-      this.icon:SetVertexColor(1,1,1,.1)
-    else
-      pfDatabase_fav["item"][name] = true
-      this.icon:SetVertexColor(1,1,1,1)
-    end
-  end)
-
-  f.loot = CreateFrame("Button", nil, f)
-  f.loot:SetHitRectInsets(-3,-3,-3,-3)
-  f.loot:SetPoint("RIGHT", -5, 0)
-  f.loot:SetWidth(16)
-  f.loot:SetHeight(16)
-  f.loot.icon = f.loot:CreateTexture("OVERLAY")
-  f.loot.icon:SetAllPoints(f.loot)
-
-  f.loot:SetScript("OnClick", function()
-    local name = this:GetParent().itemName
-    local map = pfDatabase:SearchItem(name)
-    pfMap:UpdateNodes()
-    pfMap:ShowMapID(map)
-  end)
-
-  f.loot:SetScript("OnEnter", function()
-    local name = this:GetParent().itemName
-    local count = 0
-
-    GameTooltip:SetOwner(pfBrowser, "ANCHOR_CURSOR")
-    GameTooltip:SetText("Looted from", .3, 1, .8)
-
-    for id, field in pairs(items[name]) do
-      local f, t, mob, sellCount = strfind(field, "(.*),(.*)")
-      count = count + 1
-      if count > 5 then
-        GameTooltip:AddLine("[...]", .8,.8,.8)
-        break
-      end
-
-      if spawns[mob] then
-        local zone = spawns[mob]["zone"]
-        GameTooltip:AddDoubleLine(mob, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
-      end
-    end
-    GameTooltip:Show()
-  end)
-
-  f.loot:SetScript("OnLeave", function()
-    GameTooltip:Hide()
-  end)
-
-  f.vendor = CreateFrame("Button", nil, f)
-  f.vendor:SetHitRectInsets(-3,-3,-3,-3)
-  f.vendor:SetPoint("RIGHT", -24, 0)
-  f.vendor:SetWidth(16)
-  f.vendor:SetHeight(16)
-  f.vendor.icon = f.vendor:CreateTexture("OVERLAY")
-  f.vendor.icon:SetAllPoints(f.vendor)
-  f.vendor.icon:SetTexture("Interface\\AddOns\\pfQuest\\img\\icon_vendor")
-
-  f.vendor:SetScript("OnClick", function()
-    local name = this:GetParent().itemName
-    local map = pfDatabase:SearchVendor(name)
-    pfMap:UpdateNodes()
-    pfMap:ShowMapID(map)
-  end)
-
-  f.vendor:SetScript("OnEnter", function()
-    local name = this:GetParent().itemName
-    local count = 0
-    GameTooltip:SetOwner(pfBrowser, "ANCHOR_CURSOR")
-    GameTooltip:SetText("Sold by", .3, 1, .8)
-
-    for id, field in pairs(vendors[name]) do
-      local f, t, vendorName, sellCount = strfind(field, "(.*),(.*)")
-      count = count + 1
-      if count > 5 then
-        GameTooltip:AddLine("[...]", .8,.8,.8)
-        break
-      end
-
-      if spawns[vendorName] then
-        local zone = spawns[vendorName]["zone"]
-        GameTooltip:AddDoubleLine(vendorName, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
-      end
-    end
-    GameTooltip:Show()
-  end)
-
-  f.vendor:SetScript("OnLeave", function()
-    GameTooltip:Hide()
-  end)
-
-  return f
-end
-
 local function ReplaceQuestDetailWildcards(questText)
   questText = string.gsub(questText, "$[Nn]", UnitName("player"))
   questText = string.gsub(questText, "$[Cc]", strlower(UnitClass("player")))
   questText = string.gsub(questText, "$[Rr]", strlower(UnitRace("player")))
-  questText = string.gsub(questText, "$[Bb]", "\n")
+  questText = string.gsub(questText, "$[Bb]", "\n") -- new lines
   -- UnitSex("player") returns 2 for male and 3 for female
   -- that's why there is an unused capture group around the $[Gg]
   return string.gsub(questText, "($[Gg])(.+):(.+);", "%"..UnitSex("player"))
 end
 
-local function CreateQuestEntry(i)
-  local f = CreateFrame("Button", nil, pfBrowser.tabs.quest.list)
-  f:SetPoint("TOPLEFT", pfBrowser.tabs.quest.list, "TOPLEFT", 10, -i*30 + 5)
-  f:SetPoint("BOTTOMRIGHT", pfBrowser.tabs.quest.list, "TOPRIGHT", 10, -i*30 - 15)
+
+-- creates a result button for an arbitrary type (units/objects/items/quests)
+-- returns the button frame
+local function CreateResultEntry(i, resultType)
+  local f = CreateFrame("Button", nil, pfBrowser.tabs[resultType].list)
+  f:SetPoint("TOPLEFT", pfBrowser.tabs[resultType].list, "TOPLEFT", 10, -i*30 + 5)
+  f:SetPoint("BOTTOMRIGHT", pfBrowser.tabs[resultType].list, "TOPRIGHT", 10, -i*30 - 15)
   f.tex = f:CreateTexture("BACKGROUND")
   f.tex:SetAllPoints(f)
 
+-- Common logic
+
+  -- line coloring
   if math.mod(i,2) == 1 then
     f.tex:SetTexture(1,1,1,.02)
   else
     f.tex:SetTexture(1,1,1,.04)
   end
 
-  f:SetScript("OnEnter", function()
-    this.tex:SetTexture(1,1,1,.1)
-
-    GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
-    GameTooltip:SetText(this.questname, .3, 1, .8)
-
-
-    if quests[this.quest]["obj"] then
-      GameTooltip:AddLine(quests[this.quest]["obj"], 1,1,1,true)
-    end
-
-    if quests[this.quest]["log"] and quests[this.quest]["objectives"] then
-      GameTooltip:AddLine("-", 0,0,0)
-    end
-
-    if quests[this.quest]["log"] then
-      GameTooltip:AddLine(ReplaceQuestDetailWildcards(quests[this.quest]["log"]), .6,1,.9,true)
-    end
-
-    GameTooltip:Show()
-  end)
-
+  -- un-highlight and hide tooltip
   f:SetScript("OnLeave", function()
     if math.mod(i,2) == 1 then
       this.tex:SetTexture(1,1,1,.02)
@@ -354,33 +101,12 @@ local function CreateQuestEntry(i)
     GameTooltip:Hide()
   end)
 
-  f:SetScript("OnClick", function()
-    if IsShiftKeyDown() then
-      ChatFrameEditBox:Show()
-      ChatFrameEditBox:Insert("|cffffff00|Hquest:0:0:0:0|h[" .. this.questname .. "]|h|r")
-    else
-      local meta = { ["addon"] = "PFDB" }
-      local map = pfDatabase:SearchQuest(this.quest, meta, true)
-      pfMap:ShowMapID(map)
-    end
-  end)
-
+  -- text properties
   f.text = f:CreateFontString("Caption", "LOW", "GameFontWhite")
   f.text:SetAllPoints(f)
   f.text:SetJustifyH("CENTER")
 
-  f.factionA = f:CreateTexture("OVERLAY")
-  f.factionA:SetTexture("Interface\\AddOns\\pfQuest\\img\\icon_alliance")
-  f.factionA:SetWidth(16)
-  f.factionA:SetHeight(16)
-  f.factionA:SetPoint("RIGHT", -5, 0)
-
-  f.factionH = f:CreateTexture("OVERLAY")
-  f.factionH:SetTexture("Interface\\AddOns\\pfQuest\\img\\icon_horde")
-  f.factionH:SetWidth(16)
-  f.factionH:SetHeight(16)
-  f.factionH:SetPoint("RIGHT", -24, 0)
-
+  -- favourite button
   f.fav = CreateFrame("Button", nil, f)
   f.fav:SetHitRectInsets(-3,-3,-3,-3)
   f.fav:SetPoint("LEFT", 0, 0)
@@ -389,20 +115,251 @@ local function CreateQuestEntry(i)
   f.fav.icon = f.fav:CreateTexture("OVERLAY")
   f.fav.icon:SetTexture("Interface\\AddOns\\pfQuest\\img\\fav")
   f.fav.icon:SetAllPoints(f.fav)
-
   f.fav:SetScript("OnClick", function()
-    local name = this:GetParent().quest
-    if pfDatabase_fav["quest"][name] then
-      pfDatabase_fav["quest"][name] = nil
+    local id = this:GetParent().id
+    if pfBrowser_fav[resultType][id] then
+      pfBrowser_fav[resultType][id] = nil
       this.icon:SetVertexColor(1,1,1,.1)
     else
-      pfDatabase_fav["quest"][name] = true
+      pfBrowser_fav[resultType][id] = true
       this.icon:SetVertexColor(1,1,1,1)
     end
   end)
 
+-- Type specific logic
+
+  -- faction icons
+  -- unused by items, but used by units, objects and quests
+  if resultType ~= "items" then
+    f.factionA = f:CreateTexture("OVERLAY")
+    f.factionA:SetTexture("Interface\\AddOns\\pfQuest\\img\\icon_alliance")
+    f.factionA:SetWidth(16)
+    f.factionA:SetHeight(16)
+    f.factionA:SetPoint("RIGHT", -5, 0)
+    f.factionH = f:CreateTexture("OVERLAY")
+    f.factionH:SetTexture("Interface\\AddOns\\pfQuest\\img\\icon_horde")
+    f.factionH:SetWidth(16)
+    f.factionH:SetHeight(16)
+    f.factionH:SetPoint("RIGHT", -24, 0)
+  end
+
+  -- items only
+  if resultType == "items" then
+    f:SetScript("OnEnter", function()
+      this.tex:SetTexture(1,1,1,.1)
+      GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
+      GameTooltip:SetHyperlink("item:" .. this.id .. ":0:0:0")
+      GameTooltip:Show()
+    end)
+
+    f:SetScript("OnClick", function()
+      local link = "item:"..this.id..":0:0:0"
+      local text = ( this.itemColor or "|cffffffff" ) .."|H" .. link .. "|h["..this.name.."]|h|r"
+      SetItemRef(link, text, arg1)
+    end)
+
+    -- definitions for the small drop/sell/quest icons at the end of the button
+    local buttons = {
+      ["U"] = {
+        ["offset"] = -5,
+        ["icon"] = "icon_npc",
+        ["parameter"] = "id",
+        ["OnEnter"] = function()
+          local id = this:GetParent().id
+          GameTooltip:SetOwner(pfBrowser, "ANCHOR_CURSOR")
+          local count = 0
+          local skip = false
+          if items[id]["U"] then
+            GameTooltip:SetText("Looted from", .3, 1, .8)
+            for unitID, chance in pairs(items[id]["U"]) do
+              count = count + 1
+              if count > tooltip_limit then
+                skip = true
+              end
+              if units[unitID] and not skip then
+                local name = pfDB.units.loc[unitID]
+                local zone = nil
+                if units[unitID].coords then
+                  zone = units[unitID].coords[1][3]
+                end
+                GameTooltip:AddDoubleLine(name, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
+              end
+            end
+            if count > tooltip_limit then GameTooltip:AddLine("\nand "..(count - tooltip_limit).." others.",.8,.8,.8) end
+            GameTooltip:Show()
+          end
+        end,
+      },
+      ["O"] = {
+        ["offset"] = -24,
+        ["icon"] = "icon_object",
+        ["parameter"] = "id",
+        ["OnEnter"] = function()
+          local id = this:GetParent().id
+          GameTooltip:SetOwner(pfBrowser, "ANCHOR_CURSOR")
+          local count = 0
+          local skip = false
+          if items[id]["O"] then
+            GameTooltip:SetText("Looted from", .3, 1, .8)
+            for objectID, chance in pairs(items[id]["O"]) do
+              count = count + 1
+              if count > tooltip_limit then
+                skip = true
+              end
+              if objects[objectID] and not skip then
+                local name = pfDB.objects.loc[objectID] or objectID
+                local zone = nil
+                if objects[objectID].coords then
+                  zone = objects[objectID].coords[1][3]
+                end
+                GameTooltip:AddDoubleLine(name, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
+              elseif not skip then
+                GameTooltip:AddLine((pfDB.objects.loc[objectID] or "ID: "..objectID).." (missing Data)")
+              end
+            end
+            if count > tooltip_limit then GameTooltip:AddLine("\nand "..(count - tooltip_limit).." others.",.8,.8,.8) end
+            GameTooltip:Show()
+          end
+        end,
+      },
+      ["V"] = {
+        ["offset"] = -43,
+        ["icon"] = "icon_vendor",
+        ["parameter"] = "name",
+        ["OnEnter"] = function()
+          local id = this:GetParent().id
+          GameTooltip:SetOwner(pfBrowser, "ANCHOR_CURSOR")
+          local count = 0
+          local skip = false
+          if items[id]["V"] then
+            GameTooltip:SetText("Sold by", .3, 1, .8)
+            for unitID, sellcount in pairs(items[id]["V"]) do
+              count = count + 1
+              if count > tooltip_limit then
+                skip = true
+              end
+              if units[unitID] and not skip then
+                local name = pfDB.units.loc[unitID]
+                if sellcount ~= 0 then name = name .. " (" .. sellcount .. ")" end
+                local zone = units[unitID].coords[1][3]
+                GameTooltip:AddDoubleLine(name, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
+              end
+            end
+            if count > tooltip_limit then GameTooltip:AddLine("\nand "..(count - tooltip_limit).." others.",.8,.8,.8) end
+          end
+          GameTooltip:Show()
+        end,
+      },
+      --[[TODO: add extractor support
+      ["Q"] = {
+        ["offset"] = -62,
+        ["icon"] = "available",
+        ["parameter"] = "id",
+        ["OnEnter"] = function()
+        end),
+      },
+      ["I"] = {
+        ["offset"] = -81,
+        ["icon"] = nil,
+        ["parameter"] = "id",
+        ["OnEnter"] = function()
+        end),
+      },--]]
+    }
+    for key, values in pairs(buttons) do
+      f[key] = CreateFrame("Button", nil, f)
+      f[key]:SetHitRectInsets(-3,-3,-3,-3)
+      f[key]:SetPoint("RIGHT", values.offset, 0)
+      f[key]:SetWidth(16)
+      f[key]:SetHeight(16)
+      f[key].buttonType = key
+      f[key].parameter = values.parameter
+      f[key].icon = f[key]:CreateTexture("OVERLAY")
+      f[key].icon:SetAllPoints(f[key])
+      f[key].icon:SetTexture("Interface\\AddOns\\pfQuest\\img\\"..values.icon)
+      f[key]:SetScript("OnClick", function()
+        local param = this:GetParent()[this.parameter]
+        if this.buttonType == "O" or this.buttonType == "U" then
+          pfDatabase:SearchItemID(param)
+        elseif this.buttonType == "V" then
+          pfDatabase:SearchVendor(param)
+        --[[TODO: add extractor support and implement functions
+        elseif this.buttonType == "Q" then
+          pfDatabase:SearchQuestRewards(param)
+        elseif this.buttonType == "I" then
+          pfDatabase:SearchItemsInItems(param)--]]
+        end
+        local map = values.mapFunction(param)
+        pfMap:UpdateNodes()
+        pfMap:ShowMapID(map)
+      end)
+      f[key]:SetScript("OnEnter", values.OnEnter)
+      f[key]:SetScript("OnLeave", function()
+        GameTooltip:Hide()
+      end)
+    end -- end of items
+  -- quests only
+  elseif resultType == "quests" then
+    f:SetScript("OnEnter", function()
+      this.tex:SetTexture(1,1,1,.1)
+      GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
+      GameTooltip:SetText(this.name, .3, 1, .8)
+      local questTexts = pfDB[resultType]["loc"][this.id]
+      if questTexts["O"] then
+        GameTooltip:AddLine(questTexts["O"], 1,1,1,true)
+      end
+      if questTexts["D"] and questTexts["O"] then
+        GameTooltip:AddLine("-", 0,0,0)
+      end
+      if questTexts["D"] then
+        GameTooltip:AddLine(ReplaceQuestDetailWildcards(questTexts["D"]), .6,1,.9,true)
+      end
+      GameTooltip:Show()
+    end)
+
+    f:SetScript("OnClick", function()
+      if IsShiftKeyDown() then
+        ChatFrameEditBox:Show()
+        ChatFrameEditBox:Insert("|cffffff00|Hquest:0:0:0:0|h[" .. this.questname .. "]|h|r")
+      else
+        local meta = { ["addon"] = "PFDB" }
+        local map = pfDatabase:SearchQuest(this.quest, meta, true)
+        pfMap:ShowMapID(map)
+      end
+    end) -- end of quests
+  -- units and objects
+  elseif resultType == "units" or resultType == "objects" then
+    f:SetScript("OnEnter", function()
+      this.tex:SetTexture(1,1,1,.1)
+      local id = this.id
+      local name = this.name
+      local maps = {}
+      GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
+      GameTooltip:SetText("Located in", .3, 1, .8)
+      if pfDB[resultType]["data"][id] and pfDB[resultType]["data"][id]["coords"] then
+        for _, data in pairs(pfDB[resultType]["data"][id]["coords"]) do
+          local zone = data[3]
+          maps[zone] = maps[zone] and maps[zone] + 1 or 1
+        end
+      else
+        GameTooltip:AddLine(UNKNOWN, 1,.5,.5)
+      end
+      for zone, count in pairs(maps) do
+        GameTooltip:AddDoubleLine(( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), count .. "x", 1,1,1, .5,.5,.5)
+      end
+      GameTooltip:Show()
+    end)
+
+    f:SetScript("OnClick", function()
+      local map = pfDatabase:SearchMob(this.name)
+      pfMap:UpdateNodes()
+      pfMap:ShowMapID(map)
+    end)
+  end -- end of units and objects
   return f
 end
+
+-- minimap icon
 
 pfBrowserIcon = CreateFrame('Button', "pfBrowserIcon", Minimap)
 pfBrowserIcon:SetClampedToScreen(true)
@@ -457,6 +414,8 @@ pfBrowserIcon.icon:SetTexture('Interface\\AddOns\\pfQuest\\img\\logo')
 pfBrowserIcon.icon:SetTexCoord(0.05, 0.95, 0.05, 0.95)
 pfBrowserIcon.icon:SetPoint('CENTER',1,1)
 
+-- browser window
+
 pfBrowser = CreateFrame("Frame", "pfQuestBrowser", UIParent)
 pfBrowser:Hide()
 pfBrowser:SetWidth(640)
@@ -483,6 +442,8 @@ pfBrowser.title:SetJustifyH("LEFT")
 pfBrowser.title:SetFont(pfUI.font_default, 14)
 pfBrowser.title:SetText("|cff33ffccpf|rQuest")
 
+-- close button
+
 pfBrowser.close = CreateFrame("Button", "pfQuestBrowserClose", pfBrowser)
 pfBrowser.close:SetPoint("TOPRIGHT", -5, -5)
 pfBrowser.close:SetHeight(12)
@@ -497,6 +458,8 @@ pfBrowser.close:SetScript("OnClick", function()
  this:GetParent():Hide()
 end)
 
+-- clean button
+
 pfBrowser.clean = CreateFrame("Button", "pfQuestBrowserClean", pfBrowser)
 pfBrowser.clean:SetPoint("TOPLEFT", pfBrowser, "TOPLEFT", 545, -30)
 pfBrowser.clean:SetPoint("BOTTOMRIGHT", pfBrowser, "TOPRIGHT", -5, -55)
@@ -510,11 +473,16 @@ pfBrowser.clean.text:SetFont(pfUI.font_default, pfUI_config.global.font_size, "O
 pfBrowser.clean.text:SetText("Clean Map")
 pfUI.api.SkinButton(pfBrowser.clean)
 
-CreateBrowseWindow("spawn", "pfQuestBrowserSpawn", pfBrowser, "BOTTOMLEFT", 5, 5)
-CreateBrowseWindow("item", "pfQuestBrowserItems", pfBrowser, "BOTTOM", 0, 5)
-CreateBrowseWindow("quest", "pfQuestBrowserQuests", pfBrowser, "BOTTOMRIGHT", -5, 5)
+-- browser tabs
 
-SelectView(pfBrowser.tabs["spawn"])
+CreateBrowseWindow("units", "pfQuestBrowserUnits", pfBrowser, "BOTTOMLEFT", 5, 5)
+CreateBrowseWindow("objects", "pfQuestBrowserObjects", pfBrowser, "BOTTOMLEFT", 164, 5)
+CreateBrowseWindow("items", "pfQuestBrowserItems", pfBrowser, "BOTTOMRIGHT", -164, 5)
+CreateBrowseWindow("quests", "pfQuestBrowserQuests", pfBrowser, "BOTTOMRIGHT", -5, 5)
+
+SelectView(pfBrowser.tabs["units"])
+
+-- input frame
 
 pfBrowser.input = CreateFrame("EditBox", "pfQuestBrowserSearch", pfBrowser)
 pfBrowser.input:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
@@ -533,232 +501,135 @@ pfBrowser.input:SetScript("OnEditFocusLost", function()
   if this:GetText() == "" then this:SetText("Search") end
 end)
 
+-- This script updates all the search tabs when the search text changes
 pfBrowser.input:SetScript("OnTextChanged", function()
-  local text = this:GetText()
-  if text ~= "Search" then
-    pfBrowser:SearchSpawn(text)
-    pfBrowser:SearchItem(text)
-    pfBrowser:SearchQuest(text)
-  else
-    pfBrowser:SearchSpawn("")
-    pfBrowser:SearchItem("")
-    pfBrowser:SearchQuest("")
+  local text = this:GetText() -- get search query
+  if (text == "Search") then text = "" end -- catch empty input without focus
+  -- for each search type, get the matching IDs and add buttons for them
+  for _, caption in ipairs({"Units","Objects","Items","Quests"}) do
+    local searchType = strlower(caption)
+    local ids = pfDatabase:GenericSearch(text, searchType)
+    local i = 0;
+    local skip = false
+    -- iterate the IDs and create/re-use buttons
+    for id, _ in pairs(ids) do
+      -- count towards limit, abort if limit is set and reached
+      i = i + 1
+      if (search_limit > 0) and (i >= search_limit) then skip = true end
+      if not skip then
+        --create button if neccessary
+        if (not pfBrowser.tabs[searchType].buttons[i]) then
+          pfBrowser.tabs[searchType].buttons[i] = CreateResultEntry(i, searchType)
+        end
+        local button = pfBrowser.tabs[searchType].buttons[i]
+        button.id = id
+        local nameOrQuestLoc = pfDB[searchType]["loc"][id]
+        -- handle faction icons
+        if (searchType ~= "items") then
+          button.factionA:Hide()
+          button.factionH:Hide()
+          -- 64 + 8 + 4 + 1 = 77 = Alliance
+          -- 128 + 32 + 16 + 2 = 178 = Horde
+          local factionMap = {["A"]=77,["H"]=178,["AH"]=255,["HA"]=255}
+          local raceMask = 0
+          if (searchType == "quests") then
+            -- get the quest raceMask
+            if (quests[id]["race"]) then
+              raceMask = quests[id]["race"]
+            end
+            -- TODO get this data during extraction
+            -- horribly hack for quests with unassigned/wrong raceMask
+            if (quests[id]["start"]) then
+              local questStartRaceMask = 0
+              -- check units starting this quest for being friendly
+              if (quests[id]["start"]["U"]) then
+                for _, startUnitId in ipairs(quests[id]["start"]["U"]) do
+                  if (units[startUnitId]["fac"]) then
+                    questStartRaceMask = bit.bor(factionMap[units[startUnitId]["fac"]])
+                  end
+                end
+              end
+              -- check objects starting this quest for being friendly
+              if (quests[id]["start"]["O"]) then
+                for _, startObjectId in ipairs(quests[id]["start"]["O"]) do
+                  if (objects[startObjectId]["fac"]) then
+                    questStartRaceMask = bit.bor(factionMap[objects[startObjectId]["fac"]])
+                  end
+                end
+              end
+              if (questStartRaceMask > 0) and (questStartRaceMask ~= raceMask) then
+                raceMask = questStartRaceMask
+              end
+            end
+          else
+            -- get unit/object race mask
+            if (pfDB[searchType]["data"]["fac"]) then
+              raceMask = factionMap[pfDB[searchType]["data"]["fac"]]
+            end
+          end
+          -- show faction buttons if needed
+          if (bit.band(77, raceMask) > 0)  or (raceMask == 0 and searchType == "quests") then
+            button.factionA:Show()
+          end
+          if (bit.band(178, raceMask) > 0)  or (raceMask == 0 and searchType == "quests") then
+            button.factionH:Show()
+          end
+        end
+        -- activate fav buttons if needed
+        if pfBrowser_fav[searchType][id] then
+          button.fav.icon:SetVertexColor(1,1,1,1)
+        else
+          button.fav.icon:SetVertexColor(1,1,1,.1)
+        end
+        -- actions by search type
+        if searchType == "quests" then
+          button.name = pfDB[searchType]["loc"][id]["T"]
+          button.text:SetText("|cffffcc00|Hquest:0:0:0:0|h[" .. button.name .. "]|h|r")
+        elseif searchType == "units" or searchType == "objects" then
+          local level = pfDB[searchType]["data"][id]["lvl"] or ""
+          if level ~= "" then level = " ("..level..")" end
+          button.name = nameOrQuestLoc
+          button.text:SetText(nameOrQuestLoc .. "|cffaaaaaa" .. level)
+          if pfDB[searchType]["data"][id]["coords"] then
+            button.text:SetTextColor(1,1,1)
+          else
+            button.text:SetTextColor(.5,.5,.5)
+          end
+        elseif searchType == "items" then
+          button.name = nameOrQuestLoc
+          -- trigger item scan
+          GameTooltip:SetHyperlink("item:" .. id .. ":0:0:0")
+          GameTooltip:Hide()
+          button.text:SetText("|cffff5555[?] |cffffffff" .. nameOrQuestLoc)
+          --TODO extractor update for quests and items from items
+          for _, key in ipairs({"U","O","V"}) do
+            if items[id][key] then
+              button[key]:Show()
+            else
+              button[key]:Hide()
+            end
+          end
+        end
+        -- refresh item quality
+        button:SetScript("OnUpdate", function()
+          local _, _, itemQuality = GetItemInfo(this.id)
+          if itemQuality then
+            this.itemColor = "|c" .. string.format("%02x%02x%02x%02x", 255,
+                ITEM_QUALITY_COLORS[itemQuality].r * 255,
+                ITEM_QUALITY_COLORS[itemQuality].g * 255,
+                ITEM_QUALITY_COLORS[itemQuality].b * 255)
+
+            this.text:SetText(this.itemColor .."|Hitem:"..this.id..":0:0:0|h[".. this.name.."]|h|r")
+            this.text:SetWidth(this.text:GetStringWidth())
+            this:SetScript("OnUpdate", nil)
+          end
+        end)
+        button.text:SetWidth(button.text:GetStringWidth())
+        button:Show()
+      end
+    end
+    RefreshView(i, searchType, caption)
   end
 end)
 
 pfUI.api.CreateBackdrop(pfBrowser.input, nil, true)
-
-function pfBrowser:SearchSpawn(search)
-  -- database selection
-  local database = pfDatabase_fav["spawn"]
-  if strlen(search) > 2 then database = spawns end
-
-  local i = 0
-  for name, object in pairs(database) do
-    if (strfind(strlower(name), strlower(search))) then
-      i = i + 1
-
-      if i >= search_limit then break end
-
-      local level, faction, zone
-
-      if spawns[name] then
-        level   = object == true and spawns[name]['level']   or object.level
-        faction = object == true and spawns[name]['faction'] or object.faction
-        zone    = tonumber(spawns[name]['zone'])
-      else
-        level = "??"
-        faction = ""
-        zone = ""
-      end
-
-      -- craeate button if necessary
-      if not pfBrowser.tabs.spawn.buttons[i] then
-         pfBrowser.tabs.spawn.buttons[i] = CreateSpawnEntry(i)
-      end
-
-      local button = pfBrowser.tabs.spawn.buttons[i]
-
-      button.text:SetText(name .. "|cffaaaaaa (" .. level .. ")")
-      button.text:SetWidth(button.text:GetStringWidth())
-
-      if zone and pfMap:IsValidMap(zone) then
-        button.text:SetTextColor(1,1,1)
-      else
-        button.text:SetTextColor(.5,.5,.5)
-      end
-
-      button.name = name
-
-      -- set faction icon
-      button.factionH:Hide()
-      button.factionA:Hide()
-      if faction ~= "HA" and faction ~= "AH" then
-        if strfind(faction, "H") then
-          button.factionH:Show()
-        else
-          button.factionH:Hide()
-        end
-
-        if strfind(faction, "A") then
-          button.factionA:Show()
-        else
-          button.factionA:Hide()
-        end
-      end
-
-      -- set fav
-      if pfDatabase_fav["spawn"][name] then
-        button.fav.icon:SetVertexColor(1,1,1,1)
-      else
-        button.fav.icon:SetVertexColor(1,1,1,.1)
-      end
-
-      button:Show()
-    end
-  end
-
-  RefreshView(i, "spawn", "Mobs & Objects")
-end
-
-function pfBrowser:SearchItem(search)
-  -- database selection
-  local database = pfDatabase_fav["item"]
-  if strlen(search) > 2 then database = items end
-
-  local i = 0
-  for item, object in pairs(database) do
-    if (strfind(strlower(item), strlower(search))) then
-      i = i + 1
-
-      if i >= search_limit then break end
-
-      -- determine if fav or default database is in use
-      local id = object == true and items[item]['id'] or object.id
-      local itemColor = "|cffffffff"
-
-      -- trigger item scan
-      GameTooltip:SetHyperlink("item:" .. id .. ":0:0:0")
-      GameTooltip:Hide()
-
-      -- craeate button if necessary
-      if not pfBrowser.tabs.item.buttons[i] then
-         pfBrowser.tabs.item.buttons[i] = CreateItemEntry(i)
-      end
-
-      local button = pfBrowser.tabs.item.buttons[i]
-      button.text:SetText("|cffff5555[?] |cffffffff" .. item)
-      button.text:SetWidth(button.text:GetStringWidth())
-
-      button.itemID = id
-      button.itemName = item
-
-      if items[item][1] then
-        local _, _, npc = strfind(items[item][1], "(.*),(.*)")
-        if spawns[npc] and spawns[npc]['type'] == "NPC" then
-          button.loot.icon:SetTexture("Interface\\AddOns\\pfQuest\\img\\icon_npc")
-        else
-          button.loot.icon:SetTexture("Interface\\AddOns\\pfQuest\\img\\icon_object")
-        end
-        button.loot:Show()
-      else
-        button.loot:Hide()
-      end
-
-      if vendors[item] then
-        button.vendor:Show()
-      else
-        button.vendor:Hide()
-      end
-
-      if pfDatabase_fav["item"][item] then
-        button.fav.icon:SetVertexColor(1,1,1,1)
-      else
-        button.fav.icon:SetVertexColor(1,1,1,.1)
-      end
-
-      -- refresh item quality
-      button:SetScript("OnUpdate", function()
-        local _, _, itemQuality = GetItemInfo(this.itemID)
-        if itemQuality then
-          this.itemColor = "|c" .. string.format("%02x%02x%02x%02x", 255,
-              ITEM_QUALITY_COLORS[itemQuality].r * 255,
-              ITEM_QUALITY_COLORS[itemQuality].g * 255,
-              ITEM_QUALITY_COLORS[itemQuality].b * 255)
-
-          this.text:SetText(this.itemColor .."|Hitem:"..this.itemID..":0:0:0|h[".. this.itemName.."]|h|r")
-          this.text:SetWidth(this.text:GetStringWidth())
-          this:SetScript("OnUpdate", nil)
-        end
-      end)
-
-      button:Show()
-    end
-  end
-
-  RefreshView(i, "item", "Items")
-end
-
-function pfBrowser:SearchQuest(search)
-  -- database selection
-  local database = pfDatabase_fav["quest"]
-  if strlen(search) > 2 then database = quests end
-
-  local i = 0
-  for quest, object in pairs(database) do
-    local f, t, questname, _ = strfind(quest, "(.*),.*")
-
-    if questname and (strfind(strlower(questname), strlower(search))) then
-      i = i + 1
-
-      if i >= search_limit then break end
-
-      -- craeate button if necessary
-      if not pfBrowser.tabs.quest.buttons[i] then
-        pfBrowser.tabs.quest.buttons[i] = CreateQuestEntry(i)
-      end
-
-      local button = pfBrowser.tabs.quest.buttons[i]
-
-      -- read faction
-      local faction = ""
-      button.factionA:Hide()
-      button.factionH:Hide()
-
-      if quests[quest] then
-        for npc, monsterDrop in pairs(quests[quest]) do
-          if spawns[npc] and spawns[npc]['faction'] then
-            faction = faction .. spawns[npc]['faction']
-          end
-        end
-      end
-
-      if strfind(faction, "H") then
-        button.factionH:Show()
-      end
-
-      if strfind(faction, "A") then
-        button.factionA:Show()
-      end
-
-      if quests[quest] then
-        button.text:SetText("|cffffcc00|Hquest:0:0:0:0|h[" .. questname .. "]|h|r")
-      else
-        button.text:SetText("|cffff5555[?] |cffffcc00|Hquest:0:0:0:0|h[" .. questname .. "]|h|r")
-      end
-      button.text:SetWidth(button.text:GetStringWidth())
-      button.quest = quest
-      button.questname = questname
-
-      if pfDatabase_fav["quest"][questname] then
-        button.fav.icon:SetVertexColor(1,1,1,1)
-      else
-        button.fav.icon:SetVertexColor(1,1,1,.1)
-      end
-
-      button:Show()
-    end
-  end
-
-  RefreshView(i, "quest", "Quests")
-end
