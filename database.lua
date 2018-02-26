@@ -117,8 +117,8 @@ function pfDatabase:GetIDByName(name, db)
   for id, loc in pairs(pfDB[db]["loc"]) do
     if db == "quests" then loc = loc["T"] end
 
-    if strlower(loc) == strlower(name) then
-      ret[id] = true
+    if loc and name and strlower(loc) == strlower(name) then
+      ret[id] = loc
     end
   end
   return ret
