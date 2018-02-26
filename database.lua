@@ -655,8 +655,6 @@ function pfDatabase:GetQuestIDs(qid, deep)
 end
 
 -- browser search related defaults and values
-pfDatabase.MIN_SEARCH_LENGTH_CHARS = 3
-pfDatabase.MIN_SEARCH_LENGTH_INTS = 1
 pfDatabase.lastSearchQuery = ""
 pfDatabase.lastSearchResults = {["items"] = {}, ["quests"] = {}, ["objects"] = {}, ["units"] = {}}
 
@@ -683,8 +681,8 @@ function pfDatabase:GenericSearch(query, searchType)
 
   -- Set the DB to be searched
   local searchDatabase
-  local minChars = pfDatabase.MIN_SEARCH_LENGTH_CHARS
-  local minInts = pfDatabase.MIN_SEARCH_LENGTH_INTS
+  local minChars = 3
+  local minInts = 1
   if (queryLength >= minChars) or (queryNumber and (queryLength >= minInts)) then
     if ((queryLength > minChars) or (queryNumber and (queryLength > minInts)))
        and (pfDatabase.lastSearchQuery ~= "" and queryLength > strlen(pfDatabase.lastSearchQuery))
