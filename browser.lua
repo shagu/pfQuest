@@ -105,6 +105,8 @@ local function CreateResultEntry(i, resultType)
   f.text = f:CreateFontString("Caption", "LOW", "GameFontWhite")
   f.text:SetAllPoints(f)
   f.text:SetJustifyH("CENTER")
+  f.idText = f:CreateFontString("ID", "LOW", "GameFontDisable")
+  f.idText:SetPoint("LEFT", f, "LEFT", 30, 0)
 
   -- favourite button
   f.fav = CreateFrame("Button", nil, f)
@@ -149,6 +151,7 @@ local function CreateResultEntry(i, resultType)
       this.tex:SetTexture(1,1,1,.1)
       GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
       GameTooltip:SetHyperlink("item:" .. this.id .. ":0:0:0")
+      GameTooltip:AddLine("\nID: "..this.id, 0.8,0.8,0.8)
       GameTooltip:Show()
     end)
 
@@ -336,6 +339,7 @@ local function CreateResultEntry(i, resultType)
       if questTexts["D"] and questTexts["D"] ~= "" then
         GameTooltip:AddLine("\n|cffffff00Details: |r"..ReplaceQuestDetailWildcards(questTexts["D"]), .6,1,.9,true)
       end
+      GameTooltip:AddLine("\nID: "..this.id, 0.8,0.8,0.8)
       GameTooltip:Show()
     end)
 
@@ -391,6 +395,7 @@ local function CreateResultEntry(i, resultType)
       for zone, count in pairs(maps) do
         GameTooltip:AddDoubleLine(( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), count .. "x", 1,1,1, .5,.5,.5)
       end
+      GameTooltip:AddLine("\nID: "..this.id, 0.8,0.8,0.8)
       GameTooltip:Show()
     end)
 
@@ -575,6 +580,12 @@ pfBrowser.input:SetScript("OnTextChanged", function()
         end
         local button = pfBrowser.tabs[searchType].buttons[i]
         button.id = id
+        if pfQuest_config.showids == "1" then
+          button.idText:SetText("ID: "..id)
+          button.idText:Show()
+        else
+          button.idText:Hide()
+        end
         local nameOrQuestLoc = pfDB[searchType]["loc"][id]
         -- handle faction icons
         if (searchType ~= "items") then

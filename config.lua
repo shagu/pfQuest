@@ -11,6 +11,7 @@ pfQuest_defconfig = {
   ["minimapnodes"] = "1", -- hide all minimap entries
   ["questlogbuttons"] = "1", -- shows buttons inside the questlog
   ["worldmapmenu"] = "1", -- shows the dropdown selection in worldmap
+  ["showids"] = "0",
   ["worldmaptransp"] = "1.0",
   ["minimaptransp"] = "1.0",
 }
@@ -93,7 +94,7 @@ end
 pfQuestConfig = CreateFrame("Frame", "pfQuestConfig", UIParent)
 pfQuestConfig:Hide()
 pfQuestConfig:SetWidth(280)
-pfQuestConfig:SetHeight(340)
+pfQuestConfig:SetHeight(360)
 pfQuestConfig:SetPoint("CENTER", 0, 0)
 pfQuestConfig:SetFrameStrata("TOOLTIP")
 pfQuestConfig:SetMovable(true)
@@ -142,6 +143,7 @@ pfQuestConfig:SetScript("OnEvent", function()
     CreateConfigEntry("minimapnodes",        "Show MiniMap Nodes",             "checkbox")
     CreateConfigEntry("questlogbuttons",     "Show QuestLog Buttons",          "checkbox")
     CreateConfigEntry("worldmapmenu",        "Show WorldMap Menu",             "checkbox")
+    CreateConfigEntry("showids",             "Show IDs",                       "checkbox")
     CreateConfigEntry("worldmaptransp",      "WorldMap Node Transparency",     "text")
     CreateConfigEntry("minimaptransp",       "MiniMap Node Transparency",      "text")
   end
