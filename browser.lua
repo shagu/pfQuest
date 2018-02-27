@@ -320,7 +320,7 @@ local function CreateResultEntry(i, resultType)
         local function StartAndFinish(startOrFinish, types)
           local strings = {["start"]="Started by ", ["end"]="Finished by "}
           for _, key in ipairs(types) do
-            if questData[startOrFinish][key] then
+            if questData[startOrFinish] and questData[startOrFinish][key] then
               local typeName = {["U"]="units",["O"]="objects",["I"]="items"}
               GameTooltip:AddLine("\n|cffffff00"..strings[startOrFinish]..typeName[key]..":|r")
               for _,id in ipairs(questData[startOrFinish][key]) do
