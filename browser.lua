@@ -279,19 +279,19 @@ local function CreateResultEntry(i, resultType)
       f[key].icon:SetTexture("Interface\\AddOns\\pfQuest\\img\\"..values.icon)
       f[key]:SetScript("OnClick", function()
         local param = this:GetParent()[this.parameter]
+        local maps
         if this.buttonType == "O" or this.buttonType == "U" then
-          pfDatabase:SearchItemID(param)
+          maps = pfDatabase:SearchItemID(param)
         elseif this.buttonType == "V" then
-          pfDatabase:SearchVendor(param)
+          maps = pfDatabase:SearchVendor(param)
         --[[TODO: add extractor support and implement functions
         elseif this.buttonType == "Q" then
-          pfDatabase:SearchQuestRewards(param)
+          maps = pfDatabase:SearchQuestRewards(param)
         elseif this.buttonType == "I" then
-          pfDatabase:SearchItemsInItems(param)--]]
+          maps = pfDatabase:SearchItemsInItems(param)--]]
         end
-        local map = values.mapFunction(param)
         pfMap:UpdateNodes()
-        pfMap:ShowMapID(map)
+        pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
       end)
       f[key]:SetScript("OnEnter", values.OnEnter)
       f[key]:SetScript("OnLeave", function()
@@ -320,11 +320,11 @@ local function CreateResultEntry(i, resultType)
     f:SetScript("OnClick", function()
       if IsShiftKeyDown() then
         ChatFrameEditBox:Show()
-        ChatFrameEditBox:Insert("|cffffff00|Hquest:0:0:0:0|h[" .. this.questname .. "]|h|r")
+        ChatFrameEditBox:Insert("|cffffff00|Hquest:0:0:0:0|h[" .. this.name .. "]|h|r")
       else
         local meta = { ["addon"] = "PFDB" }
-        local map = pfDatabase:SearchQuest(this.quest, meta, true)
-        pfMap:ShowMapID(map)
+        local maps = pfDatabase:SearchQuestID(this.id, meta)
+        pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
       end
     end) -- end of quests
   -- units and objects
@@ -350,11 +350,19 @@ local function CreateResultEntry(i, resultType)
       GameTooltip:Show()
     end)
 
-    f:SetScript("OnClick", function()
-      local map = pfDatabase:SearchMob(this.name)
-      pfMap:UpdateNodes()
-      pfMap:ShowMapID(map)
-    end)
+    if resultType == "units" then
+      f:SetScript("OnClick", function()
+        local maps = pfDatabase:SearchMobID(this.id)
+        pfMap:UpdateNodes()
+        pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
+      end)
+    elseif resultType == "objects" then
+      f:SetScript("OnClick", function()
+        local maps = pfDatabase:SearchObjectID(this.id)
+        pfMap:UpdateNodes()
+        pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
+      end)
+    end
   end -- end of units and objects
   return f
 end
