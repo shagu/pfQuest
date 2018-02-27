@@ -305,14 +305,36 @@ local function CreateResultEntry(i, resultType)
       GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
       GameTooltip:SetText(this.name, .3, 1, .8)
       local questTexts = pfDB[resultType]["loc"][this.id]
-      if questTexts["O"] then
-        GameTooltip:AddLine(questTexts["O"], 1,1,1,true)
+      local questData = pfDB[resultType]["data"][this.id]
+      GameTooltip:AddLine(" ")
+      if questData.lvl then
+        GameTooltip:AddDoubleLine("|cffffff00Quest Level: |r", questData.lvl, 1,1,1, 1,1,1)
       end
-      if questTexts["D"] and questTexts["O"] then
-        GameTooltip:AddLine("-", 0,0,0)
+      if questData.min then
+        GameTooltip:AddDoubleLine("|cffffff00Required Level: |r", questData.min, 1,1,1, 1,1,1)
       end
-      if questTexts["D"] then
-        GameTooltip:AddLine(ReplaceQuestDetailWildcards(questTexts["D"]), .6,1,.9,true)
+      if questData["start"] or questData["end"] then
+        local function StartAndFinish(startOrFinish, types)
+          local strings = {["start"]="Started by ", ["end"]="Finished by "}
+          for _, key in ipairs(types) do
+            if questData[startOrFinish][key] then
+              local typeName = {["U"]="units",["O"]="objects",["I"]="items"}
+              GameTooltip:AddLine("\n|cffffff00"..strings[startOrFinish]..typeName[key]..":|r")
+              for _,id in ipairs(questData[startOrFinish][key]) do
+                local name = pfDB[typeName[key]]["loc"][id] or id
+                GameTooltip:AddDoubleLine(" ", name, 0,0,0, 1,1,1)
+              end
+            end
+          end
+        end
+        StartAndFinish("start", {"U","O","I"})
+        StartAndFinish("end", {"U","O"})
+      end
+      if questTexts["O"] and questTexts["O"] ~= "" then
+        GameTooltip:AddLine("\n|cffffff00Objectives: |r"..ReplaceQuestDetailWildcards(questTexts["O"]), 1,1,1,true)
+      end
+      if questTexts["D"] and questTexts["D"] ~= "" then
+        GameTooltip:AddLine("\n|cffffff00Details: |r"..ReplaceQuestDetailWildcards(questTexts["D"]), .6,1,.9,true)
       end
       GameTooltip:Show()
     end)
@@ -335,7 +357,29 @@ local function CreateResultEntry(i, resultType)
       local name = this.name
       local maps = {}
       GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
-      GameTooltip:SetText("Located in", .3, 1, .8)
+      GameTooltip:SetText(name, .3, 1, .8)
+      if resultType == "units" then
+        local unitData = units[id]
+        if unitData.lvl then
+          GameTooltip:AddDoubleLine("|cffffff00Level:|r", unitData.lvl, 0,0,0, 1,1,1)
+        end
+        local reactionStringA = "|c00ff0000Hostile|r"
+        local reactionStringH = "|c00ff0000Hostile|r"
+        if unitData.fac then
+          if unitData.fac == "AH" then
+            reactionStringA = "|c0000ff00Friendly|r"
+            reactionStringH = "|c0000ff00Friendly|r"
+          elseif unitData.fac == "A" then
+            reactionStringA = "|c0000ff00Friendly|r"
+          elseif unitData.fac == "H" then
+            reactionStringH = "|c0000ff00Friendly|r"
+          end
+        end
+        GameTooltip:AddLine("|cffffff00Reactions:|r", 1,1,1)
+        GameTooltip:AddDoubleLine("Alliance", reactionStringA, 1,1,1, 0,0,0)
+        GameTooltip:AddDoubleLine("Horde", reactionStringH, 1,1,1, 0,0,0)
+      end
+      GameTooltip:AddLine("\n|cffffff00Located in:|r", 1,1,1)
       if pfDB[resultType]["data"][id] and pfDB[resultType]["data"][id]["coords"] then
         for _, data in pairs(pfDB[resultType]["data"][id]["coords"]) do
           local zone = data[3]
