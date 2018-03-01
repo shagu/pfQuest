@@ -473,8 +473,7 @@ end
 function pfMap:NodeEnter()
   local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
   tooltip:SetOwner(this, ANCHOR_BOTTOMLEFT)
-  tooltip:SetText(this.spawn, .3, 1, .8)
-
+  tooltip:SetText(this.spawn..(pfQuest_config.showids == "1" and " |cffcccccc("..this.spawnid..")|r" or ""), .3, 1, .8)
   tooltip:AddDoubleLine("Level:", (this.level or UNKNOWN), .8,.8,.8, 1,1,1)
   tooltip:AddDoubleLine("Type:", (this.spawntype or UNKNOWN), .8,.8,.8, 1,1,1)
   tooltip:AddDoubleLine("Respawn:", (this.respawn or UNKNOWN), .8,.8,.8, 1,1,1)
@@ -513,6 +512,7 @@ function pfMap:UpdateNode(frame, node)
       -- and add core information
       frame.layer     = tab.layer
       frame.spawn     = tab.spawn
+      frame.spawnid   = tab.spawnid
       frame.spawntype = tab.spawntype
       frame.respawn   = tab.respawn
       frame.level     = tab.level

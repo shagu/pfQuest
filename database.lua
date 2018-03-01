@@ -175,6 +175,7 @@ function pfDatabase:SearchMobID(id, meta, maps)
       -- add all gathered data
       meta = meta or {}
       meta["spawn"] = pfDB.units.loc[id]
+      meta["spawnid"] = id
 
       meta["title"] = meta["quest"] or meta["item"] or meta["spawn"]
       meta["zone"]  = zone
@@ -222,6 +223,7 @@ function pfDatabase:SearchObjectID(id, meta, maps)
       -- add all gathered data
       meta = meta or {}
       meta["spawn"] = pfDB.objects.loc[id]
+      meta["spawnid"] = id
 
       meta["title"] = meta["quest"] or meta["item"] or meta["spawn"]
       meta["zone"]  = zone
