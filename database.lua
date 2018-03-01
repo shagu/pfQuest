@@ -110,14 +110,16 @@ end
 -- GetIDByName
 -- Scans localization tables for matching IDs
 -- Returns table with all IDs
-function pfDatabase:GetIDByName(name, db)
+function pfDatabase:GetIDByName(name, db, partial)
   if not pfDB[db] then return nil end
   local ret = {}
 
   for id, loc in pairs(pfDB[db]["loc"]) do
     if db == "quests" then loc = loc["T"] end
 
-    if loc and name and strfind(strlower(loc), strlower(name)) then
+    -- if the partial variable was passed, use strfind, otherwise compare the strings
+    if loc and name and ((partial and strfind(strlower(loc), strlower(name))) or strlower(loc) == strlower(name))
+    then
       ret[id] = loc
     end
   end
@@ -736,7 +738,7 @@ function pfDatabase:GenericSearch(query, searchType)
       if (queryNumber) then
         results = pfDatabase:GetIDByIDPart(query, searchType)
       else
-        results = pfDatabase:GetIDByName(query, searchType)
+        results = pfDatabase:GetIDByName(query, searchType, true)
       end
       local resultCount = 0
       for _,_ in pairs(results) do
