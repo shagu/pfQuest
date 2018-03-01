@@ -117,7 +117,24 @@ function pfDatabase:GetIDByName(name, db)
   for id, loc in pairs(pfDB[db]["loc"]) do
     if db == "quests" then loc = loc["T"] end
 
-    if loc and name and strlower(loc) == strlower(name) then
+    if loc and name and strfind(strlower(loc), strlower(name)) then
+      ret[id] = loc
+    end
+  end
+  return ret
+end
+
+-- GetIDByIDPart
+-- Scans localization tables for matching IDs
+-- Returns table with all IDs
+function pfDatabase:GetIDByIDPart(idPart, db)
+  if not pfDB[db] then return nil end
+  local ret = {}
+
+  for id, loc in pairs(pfDB[db]["loc"]) do
+    if db == "quests" then loc = loc["T"] end
+
+    if idPart and loc and strfind(tostring(id), idPart) then
       ret[id] = loc
     end
   end
@@ -680,47 +697,55 @@ function pfDatabase:GenericSearch(query, searchType)
   local resultCount = 0; -- count results
 
   -- Set the DB to be searched
-  local searchDatabase
   local minChars = 3
   local minInts = 1
-  if (queryLength >= minChars) or (queryNumber and (queryLength >= minInts)) then
+  if (queryLength >= minChars) or (queryNumber and (queryLength >= minInts)) then -- make sure this is no fav display
     if ((queryLength > minChars) or (queryNumber and (queryLength > minInts)))
        and (pfDatabase.lastSearchQuery ~= "" and queryLength > strlen(pfDatabase.lastSearchQuery))
     then
       -- there are previous search results to use
-      searchDatabase = pfDatabase.lastSearchResults[searchType]
+      local searchDatabase = pfDatabase.lastSearchResults[searchType]
+      -- iterate the last search
+      for id, _ in pairs(searchDatabase) do
+        local dbLocale = pfDB[searchType]["loc"][id]
+        if (dbLocale) then
+          local compare
+          local search = query
+          if (queryNumber) then
+            -- do number search
+            compare = tostring(id)
+          else
+            -- do name search
+            search = strlower(query)
+            if (searchType == "quests") then
+              compare = strlower(dbLocale["T"])
+            else
+              compare = strlower(dbLocale)
+            end
+          end
+          -- search and save on match
+          if (strfind(compare, search)) then
+            results[id] = dbLocale
+            resultCount = resultCount + 1
+          end
+        end
+      end
+      return results, resultCount
     else
-      -- no previous results, search whole DB (first if condition makes sure this is not a favourite display)
-       searchDatabase = pfDB[searchType]["data"]
+      -- no previous results, search whole DB
+      if (queryNumber) then
+        results = pfDatabase:GetIDByIDPart(query, searchType)
+      else
+        results = pfDatabase:GetIDByName(query, searchType)
+      end
+      local resultCount = 0
+      for _,_ in pairs(results) do
+        resultCount = resultCount + 1
+      end
+      return results, resultCount
     end
   else
     -- minimal search length not satisfied, reset search results and return favourites
     return pfBrowser_fav[searchType], -1
   end
-  -- iterate the search DB
-  for id, _ in pairs(searchDatabase) do
-    local dbLocale = pfDB[searchType]["loc"][id]
-    if (dbLocale) then
-      local compare
-      local search = query
-      if (queryNumber) then
-        -- do number search
-        compare = tostring(id)
-      else
-        -- do name search
-        search = strlower(query)
-        if (searchType == "quests") then
-          compare = strlower(dbLocale["T"])
-        else
-          compare = strlower(dbLocale)
-        end
-      end
-      -- search and save on match
-      if (strfind(compare, search)) then
-        results[id] = true
-        resultCount = resultCount + 1
-      end
-    end
-  end
-  return results, resultCount
 end
