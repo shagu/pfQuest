@@ -14,6 +14,7 @@ pfQuest_defconfig = {
   ["showids"] = "0",
   ["worldmaptransp"] = "1.0",
   ["minimaptransp"] = "1.0",
+  ["mindropchance"] = "0",
 }
 
 local function LoadConfig()
@@ -94,7 +95,7 @@ end
 pfQuestConfig = CreateFrame("Frame", "pfQuestConfig", UIParent)
 pfQuestConfig:Hide()
 pfQuestConfig:SetWidth(280)
-pfQuestConfig:SetHeight(360)
+pfQuestConfig:SetHeight(385)
 pfQuestConfig:SetPoint("CENTER", 0, 0)
 pfQuestConfig:SetFrameStrata("TOOLTIP")
 pfQuestConfig:SetMovable(true)
@@ -146,6 +147,7 @@ pfQuestConfig:SetScript("OnEvent", function()
     CreateConfigEntry("showids",             "Show IDs",                       "checkbox")
     CreateConfigEntry("worldmaptransp",      "WorldMap Node Transparency",     "text")
     CreateConfigEntry("minimaptransp",       "MiniMap Node Transparency",      "text")
+    CreateConfigEntry("mindropchance",       "Minimum Drop Chance",            "text")
   end
 end)
 

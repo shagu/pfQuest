@@ -270,23 +270,30 @@ function pfDatabase:SearchItemID(id, meta, maps, allowedTypes)
   meta["itemid"] = id
   meta["item"] = pfDB.items.loc[id]
 
+  local minChance = tonumber(pfQuest_config.mindropchance)
+  if not minChance then minChance = 0 end
+
   -- search unit drops
   if items[id]["U"] and ((not allowedTypes) or allowedTypes["U"]) then
     for unit, chance in pairs(items[id]["U"]) do
-      meta["texture"] = nil
-      meta["droprate"] = chance
-      meta["sellcount"] = nil
-      maps = pfDatabase:SearchMobID(unit, meta, maps)
+      if chance >= minChance then
+        meta["texture"] = nil
+        meta["droprate"] = chance
+        meta["sellcount"] = nil
+        maps = pfDatabase:SearchMobID(unit, meta, maps)
+      end
     end
   end
 
   -- search object loot (veins, chests, ..)
   if items[id]["O"] and ((not allowedTypes) or allowedTypes["O"]) then
     for object, chance in pairs(items[id]["O"]) do
-      meta["texture"] = nil
-      meta["droprate"] = chance
-      meta["sellcount"] = nil
-      maps = pfDatabase:SearchObjectID(object, meta, maps)
+      if chance >= minChance and chance > 0 then
+        meta["texture"] = nil
+        meta["droprate"] = chance
+        meta["sellcount"] = nil
+        maps = pfDatabase:SearchObjectID(object, meta, maps)
+      end
     end
   end
 
