@@ -123,7 +123,7 @@ local function CreateResultEntry(i, resultType)
       pfBrowser_fav[resultType][id] = nil
       this.icon:SetVertexColor(1,1,1,.1)
     else
-      pfBrowser_fav[resultType][id] = true
+      pfBrowser_fav[resultType][id] = this:GetParent().name
       this.icon:SetVertexColor(1,1,1,1)
     end
   end)
