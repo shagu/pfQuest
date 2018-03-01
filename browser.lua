@@ -284,7 +284,7 @@ local function CreateResultEntry(i, resultType)
         local param = this:GetParent()[this.parameter]
         local maps
         if this.buttonType == "O" or this.buttonType == "U" then
-          maps = pfDatabase:SearchItemID(param)
+          maps = pfDatabase:SearchItemID(param, nil, nil, {[this.buttonType]=true})
         elseif this.buttonType == "V" then
           maps = pfDatabase:SearchVendor(param)
         --[[TODO: add extractor support and implement functions

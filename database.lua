@@ -257,7 +257,7 @@ end
 -- Scans for all items with a specified ID
 -- Adds map nodes for each drop and vendor
 -- Returns its map table
-function pfDatabase:SearchItemID(id, meta, maps)
+function pfDatabase:SearchItemID(id, meta, maps, allowedTypes)
   if not items[id] then return maps end
 
   local maps = maps or {}
@@ -267,7 +267,7 @@ function pfDatabase:SearchItemID(id, meta, maps)
   meta["item"] = pfDB.items.loc[id]
 
   -- search unit drops
-  if items[id]["U"] then
+  if items[id]["U"] and ((not allowedTypes) or allowedTypes["U"]) then
     for unit, chance in pairs(items[id]["U"]) do
       meta["texture"] = nil
       meta["droprate"] = chance
@@ -277,7 +277,7 @@ function pfDatabase:SearchItemID(id, meta, maps)
   end
 
   -- search object loot (veins, chests, ..)
-  if items[id]["O"] then
+  if items[id]["O"] and ((not allowedTypes) or allowedTypes["O"]) then
     for object, chance in pairs(items[id]["O"]) do
       meta["texture"] = nil
       meta["droprate"] = chance
@@ -287,7 +287,7 @@ function pfDatabase:SearchItemID(id, meta, maps)
   end
 
   -- search vendor goods
-  if items[id]["V"] then
+  if items[id]["V"] and ((not allowedTypes) or allowedTypes["V"]) then
     for unit, chance in pairs(items[id]["V"]) do
       meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\icon_vendor"
       meta["droprate"] = nil
