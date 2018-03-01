@@ -677,7 +677,7 @@ end
 pfDatabase.lastSearchQuery = ""
 pfDatabase.lastSearchResults = {["items"] = {}, ["quests"] = {}, ["objects"] = {}, ["units"] = {}}
 
--- GenericSearch
+-- BrowserSearch
 -- Search for a list of IDs of the specified `searchType` based on if `query` is
 -- part of the name or ID of the database entry it is compared against.
 --
@@ -688,11 +688,11 @@ pfDatabase.lastSearchResults = {["items"] = {}, ["quests"] = {}, ["objects"] = {
 -- "units"
 --
 -- Returns a table and an integer, the latter being the element count of the
--- former. The table contains the ID as keys for the boolean value `true`.
--- E.g.: {{[5] = true, [231] = true}, 2}
+-- former. The table contains the ID as keys for the name of the search result.
+-- E.g.: {{[5] = "Some Name", [231] = "Another Name"}, 2}
 -- If the query doesn't satisfy the minimum search length requiered for its
 -- type (number/string), the favourites for the `searchType` are returned.
-function pfDatabase:GenericSearch(query, searchType)
+function pfDatabase:BrowserSearch(query, searchType)
   local queryLength = strlen(query) -- needed for some checks
   local queryNumber = tonumber(query) -- if nil, the query is NOT a number
   local results = {} -- save results

@@ -565,7 +565,7 @@ pfBrowser.input:SetScript("OnTextChanged", function()
   -- for each search type, get the matching IDs and add buttons for them
   for _, caption in ipairs({"Units","Objects","Items","Quests"}) do
     local searchType = strlower(caption)
-    local ids = pfDatabase:GenericSearch(text, searchType)
+    local ids = pfDatabase:BrowserSearch(text, searchType)
     local i = 0;
     local skip = false
     -- iterate the IDs and create/re-use buttons
