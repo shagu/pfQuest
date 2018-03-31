@@ -193,7 +193,7 @@ function pfDatabase:GetBestMap(maps)
   local bestmap, bestscore = nil, 0
 
   -- calculate best map results
-  for map, count in pairs(maps) do
+  for map, count in pairs(maps or {}) do
     if count > bestscore then
       bestscore = count
       bestmap   = map
