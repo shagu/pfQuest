@@ -481,7 +481,11 @@ if target.item then -- itemDB [data]
 
     local gameobject_loot_template = {}
     local count = 0
-    local query = mysql:execute('SELECT entry, ChanceOrQuestChance FROM gameobject_loot_template WHERE item = ' .. entry .. ' ORDER BY entry')
+    local query = mysql:execute([[
+      SELECT gameobject_template.entry, gameobject_loot_template.ChanceOrQuestChance FROM gameobject_loot_template
+      LEFT JOIN gameobject_template ON gameobject_template.data1 = gameobject_loot_template.entry
+      WHERE ( gameobject_template.type = 3 OR gameobject_template.type = 25 )
+      AND gameobject_loot_template.item = ]] .. entry .. [[ ORDER BY gameobject_template.entry ]])
     while query:fetch(gameobject_loot_template, "a") do
       if count == 0 then
         file:write("    [\"O\"] = {\n")
