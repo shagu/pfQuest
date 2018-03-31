@@ -6834,11 +6834,6 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Lanza 3 bombas fétidas de los Renegados en el corazón de Costasur en Trabalomas, y después ve a ver a la clamasombras Yanka, que está en el Festival del Hombre de Mimbre en los Claros de Tirisfal.",
     ["D"] = "Para celebrar la fiesta de Halloween con estilo... ¡infríngeles dolor a nuestros enemigos de Costasur!$B$BCoge una de estas bombas fétidas especialmente diseñadas. Contiene una sustancia apestosa que ningún humano u otra bestia cualquiera de poca voluntad pueden soportar. Tendrás que lanzarla en el mismísimo centro de Costasur para que surta efecto, así que prepárate para una batalla contra la Alianza.$B$BCuando hayas realizado esta tarea, este tributo a nuestra liberación... ¡ven a verme!",
   },
-  [1657] = {
-    ["T"] = "Apesta Costasur",
-    ["O"] = "Lanza 3 bombas fétidas de los Renegados en el corazón de Costasur en Trabalomas, y después ve a ver a la clamasombras Yanka, que está en el Festival del Hombre de Mimbre en los Claros de Tirisfal.",
-    ["D"] = "Para celebrar la fiesta de Halloween con estilo... ¡infríngeles dolor a nuestros enemigos de Costasur!$B$BCoge una de estas bombas fétidas especialmente diseñadas. Contiene una sustancia apestosa que ningún humano u otra bestia cualquiera de poca voluntad pueden soportar. Tendrás que lanzarla en el mismísimo centro de Costasur para que surta efecto, así que prepárate para una batalla contra la Alianza.$B$BCuando hayas realizado esta tarea, este tributo a nuestra liberación... ¡ven a verme!",
-  },
   [1658] = {
     ["T"] = "Arruinar el Festival del Hombre de Mimbre",
     ["O"] = "Localiza el Festival del Hombre de Mimbre de los Renegados en Claros de Tirisfal. Cuando acabes, ve a ver al sargento Hartman a Costasur.",
@@ -8088,6 +8083,11 @@ pfDB["quests"]["esMX"] = {
     ["T"] = "Kirith",
     ["O"] = "Averigua qué le ha ocurrido al teniente Kirith.",
     ["D"] = "Concluye un capítulo de tu aventura y comienza uno nuevo, $n.$B$BUno de mis hombres ha desaparecido, perdido en algún lugar de Las Tierras Devastadas. Me refiero al teniente Kirith, claro.$B$BComo he mencionado antes, Allistarj nos capturó y torturó a ambos, pero al pobre Kirith le falló la fuerza de voluntad. Desde mi jaula podía oír los experimentos; los alaridos de su voz torturada recorrían cada recoveco de la caverna. Desde entonces no he vuelto a ver ni a oír a Kirith.",
+  },
+  [2741] = {
+    ["T"] = "El Superhuevomático",
+    ["O"] = " ",
+    ["D"] = "",
   },
   [2741] = {
     ["T"] = "El Superhuevomático",
@@ -13455,11 +13455,6 @@ pfDB["quests"]["esMX"] = {
     ["D"] = "Has aprendido lo que significa curar un envenenamiento sin ayuda espiritual. No dejes que tu poder sobre el veneno te haga olvidar lo que los demás sufren a causa de él.$b$bEs hora de que vuelvas a ver a Turak Tótem de Runa a Cima del Trueno, $n. Seguro que ahora que has entendido la lección, tendrá algún hechizo importante que enseñarte.$b$bBuena suerte, joven druida. Volveremos a vernos.",
   },
   [6131] = {
-    ["T"] = "[DISABLED] Timbermaw Ally",
-    ["O"] = "Grazle wants you to prove yourself by killing 5 Deadwood Warriors, 5 Deadwood Pathfinders, and 5 Deadwood Gardeners.",
-    ["D"] = "Timbermaw AllyThis quest is disabled until patch 1.9.",
-  },
-  [6131] = {
     ["T"] = "Timbermaw Ally",
     ["O"] = "Grazle wants you to prove yourself by killing 5 Deadwood Warriors, 5 Deadwood Pathfinders, and 5 Deadwood Gardeners.",
     ["D"] = "The Timbermaw are the only furbolg tribe to escape the corruption. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.$B$BAre you interested in proving yourself? Drive back the corrupted Deadwood tribe of Felwood and we may one day consider you an ally. You\'ll find the first Deadwood tribe - warriors, pathfinders and gardeners - to my west.",
@@ -13603,11 +13598,6 @@ pfDB["quests"]["esMX"] = {
     ["T"] = "Winterfall Activity",
     ["O"] = "Salfa wants you to kill 6 Winterfall Totemics, 6 Winterfall Den Watchers, and 6 Winterfall Pathfinders.",
     ["D"] = "The Timbermaw tend to stay to themselves, $N. While we do allow safe passage to those that have proven they can be trusted, we try to avoid other furbolg tribes if at all possible.$B$BLately I have noticed that the Winterfall tribe has become increasingly hostile towards us. They seem to be in a state of rage, completely engulfed by their own fear and hatred of anything they do not understand.$B$BIf you could reduce their numbers this would help us greatly, $N.",
-  },
-  [6241] = {
-    ["T"] = "[DISABLED] Winterfall Activity",
-    ["O"] = "",
-    ["D"] = "",
   },
   [6261] = {
     ["T"] = "Dungar Tragolargo",
@@ -15408,11 +15398,6 @@ pfDB["quests"]["esMX"] = {
     ["T"] = "Examina la vasija",
     ["O"] = "Examina la vasija de renacer y devuélvesela al alto señor Demitrian.",
     ["D"] = "Examina la vasija de su renacimiento, mortal. ¡De aquí renacerá el Hijo del Viento!",
-  },
-  [7786] = {
-    ["T"] = "Thunderaan el Hijo del Viento",
-    ["O"] = "Para liberar a Thunderaan el Hijo del Viento de su cárcel, debes entregarle al alto señor Demitrian en Silithus la mitad izquierda y la derecha del vínculo del Hijo del Viento, 10 barras de elementium encantado y la esencia del Señor del Fuego.",
-    ["D"] = "Te he contado todo lo que sé, $n. Eres tú quien debe encontrar elementium y aniquilar la forma corpórea del Señor del Fuego.$b$bSi lo consigues, obtendrás la bendición de Thunderaan.",
   },
   [7786] = {
     ["T"] = "Thunderaan el Hijo del Viento",
@@ -17404,25 +17389,10 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "¡Cacarea como un pollo para el tabernero Brebefuego y te dará una menta de Forjaz!",
     ["D"] = "Ajá, ¿jugando a truco o trato por un niño? Iba a decir que ya eres mayor para andar buscando caramelos por ahí...$B$BBueno, pues para que te dé mi golosina, una menta de Forjaz, tienes que... ¡cacarear como un pollo! Sí, a los pollos les encanta la menta... Bueno, a lo mejor no, ¡pero tienes que cacarear si quieres el dulce!$B$BY bien, $c, ¡¿te atreves con el desafío o no?! ¡Es hora de ganarte la golosina!",
   },
-  [8353] = {
-    ["T"] = "Una menta por cacarear como un pollo",
-    ["O"] = "¡Cacarea como un pollo para el tabernero Brebefuego y te dará una menta de Forjaz!",
-    ["D"] = "Ajá, ¿jugando a truco o trato por un niño? Iba a decir que ya eres mayor para andar buscando caramelos por ahí...$B$BBueno, pues para que te dé mi golosina, una menta de Forjaz, tienes que... ¡cacarear como un pollo! Sí, a los pollos les encanta la menta... Bueno, a lo mejor no, ¡pero tienes que cacarear si quieres el dulce!$B$BY bien, $c, ¡¿te atreves con el desafío o no?! ¡Es hora de ganarte la golosina!",
-  },
   [8354] = {
     ["T"] = "Una menta por cacarear como un pollo",
     ["O"] = "¡Cacarea como un pollo para el tabernero Norman y a cambio recibirás una menta de Entrañas!",
     ["D"] = "Ajá, ¿jugando a truco o trato por un niño? Iba a decir que ya eres mayor para andar buscando caramelos por ahí...$B$BBueno, pues para que te dé mi golosina, una menta de Entrañas, tienes que... ¡cacarear como un pollo! Sí, a los pollos les encanta la menta... Bueno, a lo mejor no, ¡pero tienes que cacarear si quieres el dulce!$B$BY bien, $c, ¡¿te atreves con el desafío o no?! ¡Es hora de ganarte la golosina!",
-  },
-  [8354] = {
-    ["T"] = "Una menta por cacarear como un pollo",
-    ["O"] = "¡Cacarea como un pollo para el tabernero Norman y a cambio recibirás una menta de Entrañas!",
-    ["D"] = "Ajá, ¿jugando a truco o trato por un niño? Iba a decir que ya eres mayor para andar buscando caramelos por ahí...$B$BBueno, pues para que te dé mi golosina, una menta de Entrañas, tienes que... ¡cacarear como un pollo! Sí, a los pollos les encanta la menta... Bueno, a lo mejor no, ¡pero tienes que cacarear si quieres el dulce!$B$BY bien, $c, ¡¿te atreves con el desafío o no?! ¡Es hora de ganarte la golosina!",
-  },
-  [8355] = {
-    ["T"] = "¡Truco o trato!",
-    ["O"] = "Haz el tren para Talvash del Kissel y te dará una gominola de Gnomeregan.",
-    ["D"] = "Buscando regalitos, ¿eh? ¡Genial!$b$bBueno, aunque hagas algo noble como buscar golosinas para una criatura, no te vas a ir de rositas tan fácilmente. Te daré una deliciosa gominola de Gnomeregan para el niño enfermo... ¡si haces ruidos de tren para mí! ¡Ja, ja, sí, ese será el trato! ¡Una gominola a cambio de hacer de tren!$b$b¡Pasajeros al tren, $c!",
   },
   [8355] = {
     ["T"] = "¡Truco o trato!",
@@ -17434,16 +17404,6 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Saca músculos para la tabernera Allison y, a cambio, recibirás un almendrado de Ventormenta.|n",
     ["D"] = "Qué disfraz tan... interesante. Aunque es muy agradable por tu parte que ayudes a un niño a ir de truco o trato este año, ¡me temo que tendré que pedirte que hagas un truco para mí!$B$BPareces tan fuerte y cachas con ese... disfraz... ¡veamos cómo sacas músculo! Sí, ¡empieza a sacar músculos para mí, $ghombretón:mujerona;!$B$BCuando hayas acabado, te daré un sabroso almendrado de Ventormenta. Típico de Halloween.",
   },
-  [8356] = {
-    ["T"] = "Saca músculo a cambio de almendrados",
-    ["O"] = "Saca músculos para la tabernera Allison y, a cambio, recibirás un almendrado de Ventormenta.|n",
-    ["D"] = "Qué disfraz tan... interesante. Aunque es muy agradable por tu parte que ayudes a un niño a ir de truco o trato este año, ¡me temo que tendré que pedirte que hagas un truco para mí!$B$BPareces tan fuerte y cachas con ese... disfraz... ¡veamos cómo sacas músculo! Sí, ¡empieza a sacar músculos para mí, $ghombretón:mujerona;!$B$BCuando hayas acabado, te daré un sabroso almendrado de Ventormenta. Típico de Halloween.",
-  },
-  [8357] = {
-    ["T"] = "Bailando por mazapanes",
-    ["O"] = "Baila para la tabernera Saelienne, y, a cambio, recibirás mazapán de Darnassus.",
-    ["D"] = "Aunque estés haciendo lo de truco o trato por un niño, ¡no te libras de hacer un truco para conseguir el trato! No podemos cambiar la tradición así como así, ¿no te parece?$B$BCreo que el precio de una pieza de mazapán, hoy en día, es... ¡un BAILOTEO! ¡Eso es! ¡Déjame ver tus movimientos! ¡Si bailas para mí, te daré un poco de delicioso mazapán!",
-  },
   [8357] = {
     ["T"] = "Bailando por mazapanes",
     ["O"] = "Baila para la tabernera Saelienne, y, a cambio, recibirás mazapán de Darnassus.",
@@ -17454,25 +17414,10 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Haz el tren para Kali Remik y a cambio recibirás una gominola Lanza Negra.|n",
     ["D"] = "Buscando regalitos, ¿eh? ¡Genial!$b$bBueno, aunque hagas algo noble como buscar golosinas para una criatura, no te vas a ir de rositas tan fácilmente. Te daré una deliciosa gominola Lanza Negra para el niño enfermo... ¡si haces ruidos de tren para mí! ¡Ja, ja, sí, ese será el trato! ¡Una gominola a cambio de hacer de tren!$b$b¡Pasajeros al tren, $c!",
   },
-  [8358] = {
-    ["T"] = "¡Truco o trato!",
-    ["O"] = "Haz el tren para Kali Remik y a cambio recibirás una gominola Lanza Negra.|n",
-    ["D"] = "Buscando regalitos, ¿eh? ¡Genial!$b$bBueno, aunque hagas algo noble como buscar golosinas para una criatura, no te vas a ir de rositas tan fácilmente. Te daré una deliciosa gominola Lanza Negra para el niño enfermo... ¡si haces ruidos de tren para mí! ¡Ja, ja, sí, ese será el trato! ¡Una gominola a cambio de hacer de tren!$b$b¡Pasajeros al tren, $c!",
-  },
   [8359] = {
     ["T"] = "Saca músculo a cambio de almendrados",
     ["O"] = "Saca músculo para la tabernera Gryshka y te dará unos almendrados de Orgrimmar.",
     ["D"] = "Qué disfraz tan... interesante. Aunque es muy agradable por tu parte que ayudes a un niño a ir de truco o trato este año, ¡me temo que tendré que pedirte que hagas un truco para mí!$B$BPareces tan fuerte y cachas con ese... disfraz... ¡veamos cómo sacas músculo! Sí, ¡empieza a sacar músculos para mí, $ghombretón:mujerona;!$B$BCuando hayas acabado, te daré un sabroso almendrado de Orgrimmar. Típico de Halloween.",
-  },
-  [8359] = {
-    ["T"] = "Saca músculo a cambio de almendrados",
-    ["O"] = "Saca músculo para la tabernera Gryshka y te dará unos almendrados de Orgrimmar.",
-    ["D"] = "Qué disfraz tan... interesante. Aunque es muy agradable por tu parte que ayudes a un niño a ir de truco o trato este año, ¡me temo que tendré que pedirte que hagas un truco para mí!$B$BPareces tan fuerte y cachas con ese... disfraz... ¡veamos cómo sacas músculo! Sí, ¡empieza a sacar músculos para mí, $ghombretón:mujerona;!$B$BCuando hayas acabado, te daré un sabroso almendrado de Orgrimmar. Típico de Halloween.",
-  },
-  [8360] = {
-    ["T"] = "Bailando por mazapanes",
-    ["O"] = "Baila para la tabernera Pala y, a cambio, recibirás mazapán de Cima del Trueno.",
-    ["D"] = "Aunque estés haciendo lo de truco o trato por un niño, ¡no te libras de hacer un truco para conseguir el trato! No podemos cambiar la tradición así como así, ¿no te parece?$B$BCreo que el precio de una pieza de mazapán, hoy en día, es... ¡un BAILOTEO! ¡Eso es! ¡Déjame ver tus movimientos! ¡Si bailas para mí, te daré un poco de delicioso mazapán!",
   },
   [8360] = {
     ["T"] = "Bailando por mazapanes",
@@ -17538,11 +17483,6 @@ pfDB["quests"]["esMX"] = {
     ["T"] = "Lucha por Garganta Grito de Guerra",
     ["O"] = "Entrega 3 marcas de honor de la Garganta Grito de Guerra a un general de brigada de la Alianza fuera de los campos de batalla.",
     ["D"] = "Las centinelas Ala de Plata están en guerra con los escoltas Grito de Guerra por la destrucción que los orcos están provocando en el bosque. Pero hay más razones para defender este bosque y que van más allá del amor por la naturaleza.$B$BEl bosque forma una barrera estratégica que permite defender Vallefresno contra un ataque a gran escala. Sin él perderíamos Astranaar en un solo día y pasaría a integrarse en Los Baldíos.$B$B¡Colabora en la lucha contra los escoltas Grito de Guerra, $n! ¡Por la Alianza!",
-  },
-  [8373] = {
-    ["T"] = "El poder del pino",
-    ["O"] = "Usa un limpiador de bombas fétidas para borrar los restos de las que los Renegados hayan lanzado en Costasur. Cuando acabes, ve a ver al sargento Hartman a Costasur.",
-    ["D"] = "Lo que más odio de Halloween son las bombas fétidas que lanzan los Renegados en Costasur. ¿Quién iba a pensar que la celebración de la liberación acabaría oliendo tan mal?$B$BUsa este limpiador para eliminar las bombas fétidas que tire la Horda durante las celebraciones. Elimina los malos olores gracias a su extracto de pino.$B$BColabora en la limpieza de Costasur y te daré unos regalitos de Halloween que te van a encantar. ¿Trato?",
   },
   [8373] = {
     ["T"] = "El poder del pino",
@@ -17919,6 +17859,11 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Viaja hacia el norte por el camino principal de Frondavil y habla con el fúrbolg Nafien. Está haciendo guardia en la entrada del Bastión Fauces de Madera.",
     ["D"] = "Quizás seas capaz de manejarte con una amenaza mayor de las que afrontamos los Fauces de Madera. Desde luego, has demostrado ser muy capaz...$B$BUno de los nuestros hace guardia en la entrada del Bastión Fauces de Madera que está hacia el norte por este camino. Su nombre es Nafien. Parece una bestia salvaje y desagradable, pero no le temas. Solo busca ayuda para luchar contra las fuerzas malignas que amenazan nuestro hogar.",
   },
+  [8464] = {
+    ["T"] = "[DEPRECATED]Actividad de los Nevada",
+    ["O"] = "Salfa quiere que mates 8 chamanes Nevada, 8 vigías del cubil Nevada y 8 ursas Nevada. Salfa está a las puertas del Bastión Fauces de Madera en Cuna del Invierno.|n",
+    ["D"] = "Los Fauces de Madera prefieren estar solos, $n. Aunque permitimos que aquellos en los que confiamos atraviesen el paso con seguridad, intentamos evitar a todas las demás tribus fúrbolg.$B$BDesde no hace mucho tiempo, la tribu de los Nevada se ha vuelto hostil hacia nosotros. Parecen sumidos en un estado de ira, consumidos por su propio miedo y odiando todo lo que no comprenden.$B$BDebo pedirte que reduzcas su número y su amenaza. Búscalos en Poblado Nevada, muy al este de aquí.",
+  },
   [8465] = {
     ["T"] = "[DEPRECATED]Habla con Salfa",
     ["O"] = "Viaja por el Bastión Fauces de Madera y sal a Cuna del Invierno. Habla con Salfa, que está haciendo guardia en la entrada del Bastión Fauces de Madera.",
@@ -18169,11 +18114,6 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Contacta con el explorador Cenarion Azenel en Colmen\'Zora y entrega el informe de exploración de Colmen\'Zora a Clamavientos Cuerno Digno en el Fuerte Cenarion. También debes llevar el Informe de tareas tácticas VI para poder completar la misión.",
     ["D"] = "Hemos enviado a nuestros mejores exploradores a las colmenas de silítidos para reunir información. La exploradora Azenel lleva varios días observando los movimientos de los silítidos en Colmen\'Zora. Encuéntrala y consigue un informe por escrito. Necesitamos esa información lo antes posible para saber cómo actuar, $n.",
   },
-  [8534] = {
-    ["T"] = "Informe de exploración de Colmen\'Zora",
-    ["O"] = "Contacta con el explorador Cenarion Azenel en Colmen\'Zora y entrega el informe de exploración de Colmen\'Zora a Clamavientos Cuerno Digno en el Fuerte Cenarion. También debes llevar el Informe de tareas tácticas VI para poder completar la misión.",
-    ["D"] = "Hemos enviado a nuestros mejores exploradores a las colmenas de silítidos para reunir información. La exploradora Azenel lleva varios días observando los movimientos de los silítidos en Colmen\'Zora. Encuéntrala y consigue un informe por escrito. Necesitamos esa información lo antes posible para saber cómo actuar, $n.",
-  },
   [8535] = {
     ["T"] = "Templario vetusto",
     ["O"] = "Invoca y mata a un Templario vetusto y preséntate ante Bor Ferocrín en el Fuerte Cenarion. También debes llevar el Informe de tareas tácticas IV para poder completar la misión.",
@@ -18272,11 +18212,6 @@ pfDB["quests"]["esMX"] = {
   [8555] = {
     ["T"] = "Encomienda a los Vuelos",
     ["O"] = "",
-    ["D"] = "The Charge of the DragonflightsThis quest is disabled until patch 1.9.",
-  },
-  [8555] = {
-    ["T"] = "Encomienda a los Vuelos",
-    ["O"] = "",
     ["D"] = "",
   },
   [8556] = {
@@ -18358,11 +18293,6 @@ pfDB["quests"]["esMX"] = {
     ["T"] = "Equipamiento de adepto",
     ["O"] = "Lleva 15 distintivos de combate Cenarion, 20 distintivos de logística Cenarion, 17 distintivos de táctica Cenarion y 1 Marca de Remulos a Vargus en el Fuerte Cenarion, en Silithus. También debes conseguir un nivel de reputación venerado con el Círculo Cenarion para poder completar esta misión.",
     ["D"] = "Los distintivos que recibes por misiones de combate, logística y táctica para Clamavientos Cuerno Digno, sirven para algo más que para presumir, $n.$B$BTe aconsejo que los guardes bien. Como prueba de tu lealtad con nuestra organización, puedo ofrecerte equipamiento que reservamos para nuestros aliados más cercanos, a cambio de esos distintivos.",
-  },
-  [8575] = {
-    ["T"] = "El libro de contabilidad mágico de Azuregos",
-    ["O"] = "Entrega el libro de contabilidad mágico de Azuregos a Narain Sabelotodo de Tanaris.",
-    ["D"] = "No entiendes ni una palabra de este libro de contabilidad. ¡Ni siquiera sabes en qué idioma está escrito!",
   },
   [8575] = {
     ["T"] = "El libro de contabilidad mágico de Azuregos",
@@ -18489,11 +18419,6 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Lleva la carta de amor de Meridith a Narain Sabelotodo a Tanaris.",
     ["D"] = "No recibo muchas visitas. De hecho, la última vez que tuve visita fue cuando rescaté a ese pobre gnomo de una máquina voladora que se estrelló.$B$B<Meridith mira al vacío, perdida en sus recuerdos.>$B$B¿Lo conoces? ¿Narain? ¿Narain Sabelotodo? ¡No sabes lo que significaría para mí que alguien le llevara un mensaje de mi parte! ¡Necesito decirle lo que siento! ¡Sé que es amor! ¡Sencillamente lo sé!$B$B¿No podrías llevar un mensaje a Narain? ¡Estaría en deuda contigo para siempre!",
   },
-  [8599] = {
-    ["T"] = "Una canción de amor para Narain",
-    ["O"] = "Lleva la carta de amor de Meridith a Narain Sabelotodo a Tanaris.",
-    ["D"] = "No recibo muchas visitas. De hecho, la última vez que tuve visita fue cuando rescaté a ese pobre gnomo de una máquina voladora que se estrelló.$B$B<Meridith mira al vacío, perdida en sus recuerdos.>$B$B¿Lo conoces? ¿Narain? ¿Narain Sabelotodo? ¡No sabes lo que significaría para mí que alguien le llevara un mensaje de mi parte! ¡Necesito decirle lo que siento! ¡Sé que es amor! ¡Sencillamente lo sé!$B$B¿No podrías llevar un mensaje a Narain? ¡Estaría en deuda contigo para siempre!",
-  },
   [8600] = {
     ["T"] = "¡La Horda necesita pieles de cuero basto!",
     ["O"] = "Llévale 10 piezas de cuero basto al doctor Serratus en el Valle de los Espíritus de Orgrimmar.",
@@ -18583,11 +18508,6 @@ pfDB["quests"]["esMX"] = {
     ["T"] = "Alborhondo el Ancestro",
     ["O"] = "",
     ["D"] = "",
-  },
-  [8620] = {
-    ["T"] = "La única receta",
-    ["O"] = "Recupera los 8 capítulos perdidos de Dracónico para torpes, únelos con la encuadernación de libro mágico y devuelve el libro completo Dracónico para torpes: Volumen II a Narain Sabelotodo de Tanaris.",
-    ["D"] = "Tenía que haberme dado cuenta. ¡Mi archienemigo, el doctor Weavil ha vuelto a las andadas! Y después de tu fracaso en la Cuna del Invierno, ¡el doctor Weavil ha destruido mi libro! ¿Cómo piensas salvar al mundo ahora?$B$B¡La nota que recibí decía que la única copia conocida de Dracónico para torpes: Volumen II fue dividida en 8 partes y arrojada al viento! Si consigues encontrar los capítulos perdidos, utiliza esta encuadernación para reunirlos y vuelve a mí.",
   },
   [8620] = {
     ["T"] = "La única receta",
@@ -18876,6 +18796,11 @@ pfDB["quests"]["esMX"] = {
   },
   [8677] = {
     ["T"] = "Astaoscura el Ancestro",
+    ["O"] = "",
+    ["D"] = "",
+  },
+  [8678] = {
+    ["T"] = "Ancestro Pezuña de Trigo",
     ["O"] = "",
     ["D"] = "",
   },
@@ -19178,16 +19103,6 @@ pfDB["quests"]["esMX"] = {
     ["T"] = "Informe de exploración de Colmen\'Regal",
     ["O"] = "Contacta con el explorador Cenarion Landion en Colmen\'Regal y entrega el informe de exploración de Colmen\'Regal a Clamavientos Cuerno Digno en el Fuerte Cenarion. También debes llevar el Informe de tareas tácticas VII para poder completar la misión.",
     ["D"] = "Hemos enviado a nuestros mejores exploradores a las colmenas de silítidos para reunir información. El explorador Landion lleva varios días observando los movimientos de los silítidos en Colmen\'Regal. Encuéntrale y consigue un informe por escrito. Necesitamos esa información lo antes posible para saber cómo actuar, $n.",
-  },
-  [8738] = {
-    ["T"] = "Informe de exploración de Colmen\'Regal",
-    ["O"] = "Contacta con el explorador Cenarion Landion en Colmen\'Regal y entrega el informe de exploración de Colmen\'Regal a Clamavientos Cuerno Digno en el Fuerte Cenarion. También debes llevar el Informe de tareas tácticas VII para poder completar la misión.",
-    ["D"] = "Hemos enviado a nuestros mejores exploradores a las colmenas de silítidos para reunir información. El explorador Landion lleva varios días observando los movimientos de los silítidos en Colmen\'Regal. Encuéntrale y consigue un informe por escrito. Necesitamos esa información lo antes posible para saber cómo actuar, $n.",
-  },
-  [8739] = {
-    ["T"] = "Informe de exploración de Colmen\'Ashi",
-    ["O"] = "Contacta con el explorador Cenarion Jalia en Colmen\'Ashi y entrega el informe de exploración de Colmen\'Ashi a Clamavientos Cuerno Digno en el Fuerte Cenarion. También debes llevar el Informe de tareas tácticas VIII para poder completar la misión.",
-    ["D"] = "Hemos enviado a nuestros mejores exploradores a las colmenas de silítidos para reunir información. La exploradora Jalia lleva varios días observando los movimientos de los silítidos en Colmen\'Ashi. Encuéntrala y consigue un informe por escrito. Necesitamos esa información lo antes posible para saber cómo actuar, $n.",
   },
   [8739] = {
     ["T"] = "Informe de exploración de Colmen\'Ashi",
@@ -20019,6 +19934,11 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Consigue una tarjeta de guardia de Ventormenta y llévasela a Aristan Mottar a Ventormenta.",
     ["D"] = "Esta epidemia de amor no es natural. Aquí hay algo raro, temo que pueda suponer una amenaza para la Alianza.$B$BPiénsalo: podría ser una maniobra para neutralizar a los guardias. Hay que hacer algo.$B$BVe a hablar con uno de los guardias de Ventormenta, a ver si también les afecta esta locura.",
   },
+  [8904] = {
+    ["T"] = "Amor peligroso",
+    ["O"] = "Lleva una tarjeta mohosa de guardián a Fenstad Argyle a Entrañas.",
+    ["D"] = "Esta epidemia de amor no es natural. Es repugnante y debilita nuestras defensas, podría ser peligroso para todos nosotros.$B$BYa es bastante molesto ver cuánta gente se ha contagiado con esta tontería. Creo que afecta incluso a los guardias, que deberían ser inmunes a estas cosas.$B$BHabla con uno de ellos para ver si también ha perdido el oremus.",
+  },
   [8905] = {
     ["T"] = "Una propuesta seria",
     ["O"] = "Lleva 15 muestras de sangre de Cuna del Invierno, 20 piezas de oro y 1 par de brazales Corazón Salvaje a Deliana a Forjaz.",
@@ -20113,11 +20033,6 @@ pfDB["quests"]["esMX"] = {
     ["T"] = "Un artefacto sobrenatural",
     ["O"] = "Lleva el frasco de veneno sellado a Mux Cazamaná a Gadgetzan.",
     ["D"] = "Tienes que ser muy valiente para haberte quedado después de eso. O eso, o te ha interesado mucho la armadura que te di. Si quieres seguir ayudándome, podría enseñarte otras.$B$BEl veneno que te pedí antes es para Mux Cazamaná, un ingeniero interesado en lo sobrenatural. ¡Su último proyecto es un instrumento para comunicarse con los muertos! Mi última esperanza es ponerme en contacto con Anthion y averiguar algo más sobre mi situación.",
-  },
-  [8924] = {
-    ["T"] = "Caza de ectoplasmas",
-    ["O"] = "Utiliza el destilador ectoplásmico cerca de los no-muertos incorpóreos y consigue 12 ectoplasmas agostados en Silithus, 12 ectoplasmas helados en Cuna del Invierno y 12 ectoplasmas estables en las Tierras de la Peste del Este. Llévaselos, junto con el destilador ectoplásmico, a Mux Cazamaná a Gadgetzan.",
-    ["D"] = "¡Es una obra maestra de ingeniería, modestia aparte! Me temo que tendrás que viajar un poco para encontrar a los no-muertos incorpóreos que necesitamos.$B$BSabes, los distintos climas proporcionan consistencias diferentes a los tejidos espectrales de los muertos. Los torturados elfos de la noche de Silithus, los espíritus de los Altonato de Cuna del Invierno y los fantasmas y almas en pena de las Tierras de la Peste del Este deberían proporcionarnos los diferentes tipos de ectoplasma que necesitamos. ¡Asegúrate de situar el destilador cerca de ellos para poder cazarlos!",
   },
   [8924] = {
     ["T"] = "Caza de ectoplasmas",
@@ -20359,16 +20274,6 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Lleva el detector de fantasmas extra dimensional a Deliana a Forjaz.",
     ["D"] = "Me ha gustado trabajar contigo, $n. Aquí tienes el producto acabado.$B$BEspero que te ayude en tu misión Y si no te importa, hazme un poco de publicidad. ¡Me iría bien aumentar la clientela!",
   },
-  [8977] = {
-    ["T"] = "Regresa junto a Deliana",
-    ["O"] = "Lleva el detector de fantasmas extra dimensional a Deliana a Forjaz.",
-    ["D"] = "Me ha gustado trabajar contigo, $n. Aquí tienes el producto acabado.$B$BEspero que te ayude en tu misión Y si no te importa, hazme un poco de publicidad. ¡Me iría bien aumentar la clientela!",
-  },
-  [8978] = {
-    ["T"] = "Regresa junto a Mokvar",
-    ["O"] = "Lleva el detector de fantasmas extradimensional a Mokvar a Orgrimmar.",
-    ["D"] = "Me ha gustado trabajar contigo, $n. Aquí tienes el producto acabado.$B$BEspero que te ayude en tu misión Y si no te importa, hazme un poco de publicidad. ¡Me iría bien aumentar la clientela!",
-  },
   [8978] = {
     ["T"] = "Regresa junto a Mokvar",
     ["O"] = "Lleva el detector de fantasmas extradimensional a Mokvar a Orgrimmar.",
@@ -20444,6 +20349,11 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Usa el Blandón de Señalización para invocar al espíritu de Kormok y mátalo. Vuelve junto a Bodley en el interior de la Montaña Roca Negra con el amuleto de Lord Valthalak recompuesto y el Blandón de Señalización.",
     ["D"] = "Ahora que tenemos lo que necesitamos, es hora de decidir a quién vas a invocar a continuación.$B$BKormok no estaba mal para un ogro, hasta que empezó a practicar la nigromancia. A partir de ahí, la cosa se puso espeluznante para cualquiera de la organización. Nadie se sorprendió cuando tomó su pieza de amuleto y regresó a su nuevo hogar, Scholomance.$B$BPero incluso allí, o quizás sobre todo allí, no estaba a salvo de los sicarios espectrales. Lo ejecutaron en presencia de su maestro, Ras Murmuhielo.",
   },
+  [8993] = {
+    ["T"] = "Ofrecer regalos",
+    ["O"] = "",
+    ["D"] = "",
+  },
   [8994] = {
     ["T"] = "Últimos preparativos",
     ["O"] = "Reúne 40 brazales Roca Negra y consigue un frasco de poder supremo. Llévaselos a Bodley en el interior de la Montaña Roca Negra.",
@@ -20453,11 +20363,6 @@ pfDB["quests"]["esMX"] = {
     ["T"] = "Mea Culpa, Lord Valthalak",
     ["O"] = "Usa el Blandón de Invocación para invocar a Lord Valthalak. Despáchalo y usa el amuleto de Lord Valthalak sobre el cadáver. Después devuélvele el amuleto de Lord Valthalak al espíritu de Lord Valthalak.",
     ["D"] = "Ya está todo listo, $n.$B$BCuando vivía, Lord Valthalak moraba en lo que hoy en día se conoce como La Cámara de la Bestia. Ve allí y usa el Blandón de Invocación para invocar a Lord Valthalak. Lo reincorporará, así que habrá que volver a matarlo. Yo pondría especial cuidado en ocuparme de la Bestia primero y de que suficientes amigos sobrevivieran a la parte alta de la Cumbre de Roca Negra.$B$BUna vez despachado Valthalak, usa el amuleto sobre su cadáver. Con su espíritu reunificado, es muy probable que también quiera recuperar su amuleto.$B$B¡Suerte!",
-  },
-  [8996] = {
-    ["T"] = "Regresa junto a Bodley",
-    ["O"] = "Vuelve junto a Bodley en el interior de la Montaña Roca Negra y dale el Blandón de Señalización.",
-    ["D"] = "Ignoraré tu impertinencia por esta vez, $c, porque has demostrado tu nobleza hoy al devolverme el resto del espíritu que me fue arrebatado. A pesar de tu endeble naturaleza, $r, has mostrado el valor del que los que me robaron carecían ¡y seguramente siempre carecerán!$B$BVuelve con ellos, antes de que cambie de parecer y te mate aquí mismo. Vuelve allá y diles que están a salvo... por ahora.",
   },
   [8996] = {
     ["T"] = "Regresa junto a Bodley",

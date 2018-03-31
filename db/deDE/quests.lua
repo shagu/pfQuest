@@ -6834,11 +6834,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Werft drei Stinkbomben der Verlassenen ins Herz von Süderstade im Hügelland und kehrt zu Ruferin der Dunkelheit Yanka beim Fest des Weidenmanns in Tirisfal zurück.",
     ["D"] = "Feiert die Schlotternächte mit Stil... bereitet unseren Feinden in Süderstade Kummer!$B$BNehmt eine dieser speziell angefertigten Stinkbomben. Sie sind mit einem derartig furchtbaren Schrecken gefüllt, dessen Geruch kein Mensch - oder anderes Wesen mit schwachem Gemüt - ertragen kann. Ihr müsst die Stinkbombe direkt ins Herz von Süderstade werfen, damit sie richtig wirken kann. Seid also auf eine Auseinandersetzung mit der Allianz gefasst!$B$BSolltet Ihr diese Aufgabe bewältigt haben, kehrt zu mir zurück... es ist ein Beitrag zu unserer Befreiung!",
   },
-  [1657] = {
-    ["T"] = "Die Verpestung von Süderstade",
-    ["O"] = "Werft drei Stinkbomben der Verlassenen ins Herz von Süderstade im Hügelland und kehrt zu Ruferin der Dunkelheit Yanka beim Fest des Weidenmanns in Tirisfal zurück.",
-    ["D"] = "Feiert die Schlotternächte mit Stil... bereitet unseren Feinden in Süderstade Kummer!$B$BNehmt eine dieser speziell angefertigten Stinkbomben. Sie sind mit einem derartig furchtbaren Schrecken gefüllt, dessen Geruch kein Mensch - oder anderes Wesen mit schwachem Gemüt - ertragen kann. Ihr müsst die Stinkbombe direkt ins Herz von Süderstade werfen, damit sie richtig wirken kann. Seid also auf eine Auseinandersetzung mit der Allianz gefasst!$B$BSolltet Ihr diese Aufgabe bewältigt haben, kehrt zu mir zurück... es ist ein Beitrag zu unserer Befreiung!",
-  },
   [1658] = {
     ["T"] = "Bespitzelt das Fest des Weidenmanns",
     ["O"] = "Macht das Fest des Weidenmanns der Verlassenen in Tirisfal ausfindig. Kehrt zu Unteroffizier Hartman in Süderstade zurück, sobald Ihr Eure Mission erfüllt habt.",
@@ -8088,6 +8083,11 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Kirith",
     ["O"] = "Findet heraus, was aus Leutnant Kirith geworden ist.",
     ["D"] = "Ein Kapitel Eurer Abenteuer mag jetzt beendet sein, doch ein weiteres Kapitel beginnt gerade, $n.$B$BEiner meiner Männer ist noch immer verschollen, irgendwo in den Verwüsteten Landen verschwunden. Ich spreche natürlich von Leutnant Kirith.$B$BWie ich vorhin schon sagte, wurden wir beide von Allistarj gefangen genommen und gefoltert, aber ich fürchte, dass der arme Kirith nicht durchhielt und schwach wurde. Aus meinem Käfig heraus konnte ich die Experimente hören: Die gequälten Schreie hallten in der ganzen Höhle wider. Das war das Letzte, was ich von Kirith gesehen oder gehört habe.",
+  },
+  [2741] = {
+    ["T"] = "Der Super-Ei-o-Mat",
+    ["O"] = " ",
+    ["D"] = "",
   },
   [2741] = {
     ["T"] = "Der Super-Ei-o-Mat",
@@ -13459,11 +13459,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Grazle m?chte, dass Ihr Euch beweist, indem Ihr 5 Krieger der Totenwaldfelle, 5 Pfadfinder der Totenwaldfelle und 5 G?rtner der Totenwaldfelle besiegt.",
     ["D"] = "Die Einwohner der Holzschlundfeste sind die einzigen Furbolgs, die von der Verderbnis verschont blieben. Aber viele andere V?lker t?ten die Furbolgs jetzt blindwütig und scheren sich nicht darum, ob sie Freund oder Feind sind. Deswegen trauen die Furbolgs der Holzschlundfeste auch kaum jemandem.$B$BSeid Ihr daran interessiert, Euch zu beweisen? Treibt den verderbten Stamm der Totenwaldfelle vom Teufelswald zurück, dann betrachten wir Euch eines Tages vielleicht als Verbündeten. Ihr findet den ersten Stamm der Totenwaldfelle - Krieger, Pfadfinder und G?rtner - westlich von hier.",
   },
-  [6131] = {
-    ["T"] = "Verbündeter der Holzschlundfeste",
-    ["O"] = "Grazle m?chte, dass Ihr Euch beweist, indem Ihr 5 Krieger der Totenwaldfelle, 5 Pfadfinder der Totenwaldfelle und 5 G?rtner der Totenwaldfelle besiegt.",
-    ["D"] = "Die Einwohner der Holzschlundfeste sind die einzigen Furbolgs, die von der Verderbnis verschont blieben. Aber viele andere V?lker t?ten die Furbolgs jetzt blindwütig und scheren sich nicht darum, ob sie Freund oder Feind sind. Deswegen trauen die Furbolgs der Holzschlundfeste auch kaum jemandem.$B$BSeid Ihr daran interessiert, Euch zu beweisen? Treibt den verderbten Stamm der Totenwaldfelle vom Teufelswald zurück, dann betrachten wir Euch eines Tages vielleicht als Verbündeten. Ihr findet den ersten Stamm der Totenwaldfelle - Krieger, Pfadfinder und G?rtner - westlich von hier.",
-  },
   [6132] = {
     ["T"] = "Holt mich hier raus!",
     ["O"] = "Eskortiert Melizza Brummsumms und sprecht anschließend mit Hornizz Brummsumms beim Kodofriedhdof Desolace.",
@@ -13593,11 +13588,6 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Totenwaldfelle des Nordens",
     ["O"] = "Nafien m?chte, dass Ihr 5 H?hlenbehüter der Totenwaldfelle, 5 R?cher der Totenwaldfelle und 5 Schamanen der Totenwaldfelle besiegt.",
     ["D"] = "Direkt südwestlich von hier liegt ein Furbolglager der Totenwaldfelle. Ich bin nicht sicher, was sie vorhaben, aber ich würde dem gern einen Riegel vorschieben, ehe es zum Problem wird.$B$BDer Stamm der Totenwaldfelle ist b?se, aber die Verderbnis ist es, die ihre Hirne verseucht. Ihre Feindseligkeit ist keine angeborene Eigenschaft, doch da kann man nichts machen. Aus diesem Grund stimmt es mich zutiefst traurig, dass ich gegen meine Geschwister k?mpfen muss.$B$BBitte, $N, tut, was getan werden muss, aber erspart mir die Einzelheiten. Sie beunruhigen mich zu sehr.",
-  },
-  [6241] = {
-    ["T"] = "Aktivit?t der Winterfelle",
-    ["O"] = "Salfa m?chte, dass Ihr 6 Totemiker der Winterfelle, 6 H?hlenbehüter der Winterfelle und 6 Pfadfinder der Winterfelle erledigt.",
-    ["D"] = "Die Furbolgs der Holzschlundfeste bleiben meist unter sich, $N. Wir gew?hren allen, die ihre Vertrauenswürdigkeit unter Beweis gestellt haben, freies Geleit, meiden aber wenn m?glich andere Furbolgst?mme.$B$BIn letzter Zeit ist mir aufgefallen, dass der Winterfellstamm uns gegenüber immer gr??ere Feindseligkeit zeigt. Sie scheinen in Rage zu sein, und ganz von ihrem Hass auf alles beseelt, das sie nicht verstehen.$B$BWenn Ihr ihre Anzahl reduzieren k?nntet, würde uns das sehr helfen, $N.",
   },
   [6241] = {
     ["T"] = "Aktivit?t der Winterfelle",
@@ -15408,11 +15398,6 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Untersuchung des Gefäßes",
     ["O"] = "Untersucht das Gefäß der Wiedergeburt und bringt es zu Hochlord Demitrian.",
     ["D"] = "Untersucht das Gefäß der Wiedergeburt, Sterblicher. Mit seiner Hilfe soll der Windsucher wieder auferstehen!",
-  },
-  [7786] = {
-    ["T"] = "Donneraan der Windsucher",
-    ["O"] = "Um Donneraan den Windsucher aus seiner Gefangenschaft zu befreien, müsst Ihr Hochlord Demitrian die rechten und linken Hälften der Fesseln des Windsuchers, 10 verzauberte Elementiumbarren und die Essenz des Feuerfürsten bringen.",
-    ["D"] = "Ich habe Euch alles gesagt was ich weiß, $n. Es ist nun Eure Aufgabe Elementium zu finden. Ihr seid es, der die körperliche Form des Feuerfürsten zerstören muss.$B$BGewinnt dadurch den Segen von Donneraan.",
   },
   [7786] = {
     ["T"] = "Donneraan der Windsucher",
@@ -17404,25 +17389,10 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Spielt Gastwirt Feuerbräu ein Huhn vor, er wird Euch dafür ein Pfefferminzbonbon aus Eisenschmiede geben!",
     ["D"] = "Ah, wir gehen also Süßigkeitensammeln für ein Kind? Ich dachte mir schon, dass Ihr etwas zu alt seid, um für Süßes loszuziehen...$B$BNa ja, für meine Leckerei - ein Pfefferminzbonbon aus Eisenschmiede - müsst Ihr... wie ein Hühnchen gackern! Ja, Hühnchen lieben Pfefferminzbonbons... nun ja, OK, vielleicht LIEBEN sie sie nicht... aber ich gebe Euch trotzdem kein Pfefferminzbonbon, wenn Ihr nicht wie ein Hühnchen für mich gackert!$B$BSo $C, seid Ihr dazu bereit oder nicht?! Verdient Euch Eure Süßigkeit!",
   },
-  [8353] = {
-    ["T"] = "Hühnchengegacker für ein Pfefferminzbonbon",
-    ["O"] = "Spielt Gastwirt Feuerbräu ein Huhn vor, er wird Euch dafür ein Pfefferminzbonbon aus Eisenschmiede geben!",
-    ["D"] = "Ah, wir gehen also Süßigkeitensammeln für ein Kind? Ich dachte mir schon, dass Ihr etwas zu alt seid, um für Süßes loszuziehen...$B$BNa ja, für meine Leckerei - ein Pfefferminzbonbon aus Eisenschmiede - müsst Ihr... wie ein Hühnchen gackern! Ja, Hühnchen lieben Pfefferminzbonbons... nun ja, OK, vielleicht LIEBEN sie sie nicht... aber ich gebe Euch trotzdem kein Pfefferminzbonbon, wenn Ihr nicht wie ein Hühnchen für mich gackert!$B$BSo $C, seid Ihr dazu bereit oder nicht?! Verdient Euch Eure Süßigkeit!",
-  },
   [8354] = {
     ["T"] = "Hühnchengegacker für ein Pfefferminzbonbon",
     ["O"] = "Spielt Gastwirt Norman ein Huhn vor, er wird Euch dafür ein Pfefferminzbonbon aus Unterstadt geben!",
     ["D"] = "Ah, wir gehen also Süßigkeitensammeln für ein Kind? Ich dachte mir schon, dass Ihr etwas zu alt seid, um für Süßes loszuziehen...$B$BNaja, für meine Leckerei - ein Pfefferminzbonbon aus Unterstadt - müsst Ihr... wie ein Hühnchen gackern! Ja, Hühnchen lieben Pfefferminzbonbons... nun ja, OK, vielleicht LIEBEN sie sie nicht... aber ich gebe Euch trotzdem kein Pfefferminzbonbon, wenn Ihr nicht wie ein Hühnchen für mich gackert!$B$BSo $C, seid Ihr dazu bereit oder nicht?! Verdient Euch Eure Süßigkeit!",
-  },
-  [8354] = {
-    ["T"] = "Hühnchengegacker für ein Pfefferminzbonbon",
-    ["O"] = "Spielt Gastwirt Norman ein Huhn vor, er wird Euch dafür ein Pfefferminzbonbon aus Unterstadt geben!",
-    ["D"] = "Ah, wir gehen also Süßigkeitensammeln für ein Kind? Ich dachte mir schon, dass Ihr etwas zu alt seid, um für Süßes loszuziehen...$B$BNaja, für meine Leckerei - ein Pfefferminzbonbon aus Unterstadt - müsst Ihr... wie ein Hühnchen gackern! Ja, Hühnchen lieben Pfefferminzbonbons... nun ja, OK, vielleicht LIEBEN sie sie nicht... aber ich gebe Euch trotzdem kein Pfefferminzbonbon, wenn Ihr nicht wie ein Hühnchen für mich gackert!$B$BSo $C, seid Ihr dazu bereit oder nicht?! Verdient Euch Eure Süßigkeit!",
-  },
-  [8355] = {
-    ["T"] = "Kaugummikugelexpress",
-    ["O"] = "Ahmt für Talvash del Kissel einen Zug nach und er wird Euch dafür eine Kaugummikugel aus Gnomeregan geben!",
-    ["D"] = "Ah, Süßes oder Saures! Hurra!$B$BNun, auch wenn Ihr etwas Ehrenhaftes tut und Süßigkeiten für ein Kind sammelt, so kann ich Euch doch nicht so einfach davonkommen lassen. Ich hätte da eine leckere Kaugummikugel aus Gnomeregan für das Kind... wenn Ihr mir einen Zug vorführt! Haha, ja, das wär\'s! Der Preis für diese Kaugummikugel ist das Imitieren eines Zuges!$B$BTschugga-tschugga, $C!",
   },
   [8355] = {
     ["T"] = "Kaugummikugelexpress",
@@ -17434,16 +17404,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Ihr müsst vor Gastwirtin Allison angeben, damit sie Euch im Gegenzug etwas vom Nugat aus Sturmwind gibt!",
     ["D"] = "Das ist ein... interessantes Kostüm, welches Ihr da tragt. Auch wenn Ihr nett seid und einem Kind dieses Jahr beim Süßigkeitensammeln helft, so fürchte ich doch, dass ich Euch um eine kleine Vorstellung bitten muss!$B$BMal sehen... Ihr seht in diesem... Kostüm stark und muskulös aus... jetzt gebt doch mal ein bisschen an! Ja, lasst Eure Muskeln für mich spielen, $g starker Mann : starke Frau;!$B$BWenn ich Euch angeben sehe, und auch nur dann, werde ich Euch etwas von dem leckeren Nugat aus Sturmwind geben. Es ist eine großartige Schlotternachtssüßigkeit.",
   },
-  [8356] = {
-    ["T"] = "Muskelspiel für Nugat",
-    ["O"] = "Ihr müsst vor Gastwirtin Allison angeben, damit sie Euch im Gegenzug etwas vom Nugat aus Sturmwind gibt!",
-    ["D"] = "Das ist ein... interessantes Kostüm, welches Ihr da tragt. Auch wenn Ihr nett seid und einem Kind dieses Jahr beim Süßigkeitensammeln helft, so fürchte ich doch, dass ich Euch um eine kleine Vorstellung bitten muss!$B$BMal sehen... Ihr seht in diesem... Kostüm stark und muskulös aus... jetzt gebt doch mal ein bisschen an! Ja, lasst Eure Muskeln für mich spielen, $g starker Mann : starke Frau;!$B$BWenn ich Euch angeben sehe, und auch nur dann, werde ich Euch etwas von dem leckeren Nugat aus Sturmwind geben. Es ist eine großartige Schlotternachtssüßigkeit.",
-  },
-  [8357] = {
-    ["T"] = "Tanzen für Marzipan",
-    ["O"] = "Tanzt für Gastwirtin Saelienne und Ihr werdet im Gegenzug etwas von dem Marzipan aus Darnassus bekommen!",
-    ["D"] = "Auch wenn Ihr einem Kind beim Süßigkeitensammeln helft, so müsst Ihr mir noch immer etwas für Eure Belohnung vorführen! Man kann nicht so einfach mit der Tradition brechen, nicht wahr... ?$B$BIch denke, dass ein Stück Marzipan heute eine ordentliche Tanzvorstellung wert ist! Ja genau, zeigt mal, was Ihr so drauf habt! Tanzt für mich und ich werde Euch etwas von dem leckeren Marzipan geben!",
-  },
   [8357] = {
     ["T"] = "Tanzen für Marzipan",
     ["O"] = "Tanzt für Gastwirtin Saelienne und Ihr werdet im Gegenzug etwas von dem Marzipan aus Darnassus bekommen!",
@@ -17454,25 +17414,10 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Ahmt für Kali Remik einen Zug nach und sie wird Euch dafür eine Kaugummikugel der Dunkelspeere geben!",
     ["D"] = "Ah, Süßes oder Saures! Ja genau, Mann!$B$BNun, auch wenn Ihr etwas Ehrenhaftes tut und Süßigkeiten für ein Kind sammelt, so kann ich Euch doch nicht so einfach davonkommen lassen. Ich hätte da eine leckere Kaugummikugel der Dunkelspeere für das Kind... wenn Ihr mir einen Zug vorführt! Haha, ja, das wär\'s! Der Preis für diese Kaugummikugel ist das Imitieren eines Zuges!$B$BTschugga-tschugga, $C!",
   },
-  [8358] = {
-    ["T"] = "Kaugummikugelexpress",
-    ["O"] = "Ahmt für Kali Remik einen Zug nach und sie wird Euch dafür eine Kaugummikugel der Dunkelspeere geben!",
-    ["D"] = "Ah, Süßes oder Saures! Ja genau, Mann!$B$BNun, auch wenn Ihr etwas Ehrenhaftes tut und Süßigkeiten für ein Kind sammelt, so kann ich Euch doch nicht so einfach davonkommen lassen. Ich hätte da eine leckere Kaugummikugel der Dunkelspeere für das Kind... wenn Ihr mir einen Zug vorführt! Haha, ja, das wär\'s! Der Preis für diese Kaugummikugel ist das Imitieren eines Zuges!$B$BTschugga-tschugga, $C!",
-  },
   [8359] = {
     ["T"] = "Muskelspiel für Nugat",
     ["O"] = "Ihr müsst vor Gastwirtin Gryshka angeben, damit sie Euch im Gegenzug etwas vom Nugat aus Orgrimmar gibt!",
     ["D"] = "Das ist ein... interessantes Kostüm, welches Ihr da tragt. Auch wenn Ihr nett seid und einem Kind dieses Jahr beim Süßigkeitensammeln helft, so fürchte ich doch, dass ich Euch um eine kleine Vorstellung bitten muss!$B$BMal sehen... Ihr seht in diesem... Kostüm stark und muskulös aus... jetzt gebt doch mal ein bisschen an! Ja, lasst Eure Muskeln für mich spielen, $g starker Mann : starke Frau;!$B$BWenn ich Euch angeben sehe, und auch nur dann, werde ich Euch etwas von dem leckeren Nugat aus Orgrimmar geben. Es ist eine großartige Schlotternachtssüßigkeit.",
-  },
-  [8359] = {
-    ["T"] = "Muskelspiel für Nugat",
-    ["O"] = "Ihr müsst vor Gastwirtin Gryshka angeben, damit sie Euch im Gegenzug etwas vom Nugat aus Orgrimmar gibt!",
-    ["D"] = "Das ist ein... interessantes Kostüm, welches Ihr da tragt. Auch wenn Ihr nett seid und einem Kind dieses Jahr beim Süßigkeitensammeln helft, so fürchte ich doch, dass ich Euch um eine kleine Vorstellung bitten muss!$B$BMal sehen... Ihr seht in diesem... Kostüm stark und muskulös aus... jetzt gebt doch mal ein bisschen an! Ja, lasst Eure Muskeln für mich spielen, $g starker Mann : starke Frau;!$B$BWenn ich Euch angeben sehe, und auch nur dann, werde ich Euch etwas von dem leckeren Nugat aus Orgrimmar geben. Es ist eine großartige Schlotternachtssüßigkeit.",
-  },
-  [8360] = {
-    ["T"] = "Tanzen für Marzipan",
-    ["O"] = "Tanzt für Gastwirtin Pala und Ihr werdet im Gegenzug etwas von dem Marzipan aus Donnerfels bekommen!",
-    ["D"] = "Auch wenn Ihr einem Kind beim Süßigkeitensammeln helft, so müsst Ihr mir noch immer etwas für Eure Belohnung vorführen! Man kann nicht so einfach mit der Tradition brechen, nicht wahr... ?$B$BIch denke, dass ein Stück Marzipan heute eine ordentliche Tanzvorstellung wert ist! Ja genau, zeigt mal, was Ihr so drauf habt! Tanzt für mich und ich werde Euch etwas von dem leckeren Marzipan geben!",
   },
   [8360] = {
     ["T"] = "Tanzen für Marzipan",
@@ -17538,11 +17483,6 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Kampf um die Kriegshymnenschlucht",
     ["O"] = "Bringt 3 Ehrenabzeichen der Kriegshymnenschlucht zu einem Brigadegeneral der Allianz, außerhalb der Schlachtfelder.",
     ["D"] = "Die Schildwachen der Silberschwingen sind auf Grund der Zerstörung, die die Orcs im Wald anrichten, im Krieg mit der Vorhut des Kriegshymnenklans. Allerdings gibt es noch andere Gründe, als die bloße Liebe zu der Natur, für die Verteidigung von ausgerechnet diesem Wald.$B$BDer Wald bildet eine strategische Barriere, die es einfach macht, das Eschental gegen jegliche Art von Großangriffen zu verteidigen. Ohne den Wald, würde Astranaar lediglich ein oder zwei Tage standhalten, bevor es vom Brachland einverleibt werden würde.$B$BSeid tapfer und schlagt Euch gegen die Vorhut des Kriegshymnenklans, $n! Für die Allianz!",
-  },
-  [8373] = {
-    ["T"] = "Die Kraft der Pinie",
-    ["O"] = "Verwendet einen Stinkbombenreiniger, um alle Stinkbomben der Verlassenen zu vernichten, die hier in Süderstade losgelassen wurden. Kehrt zu Unteroffizier Hartman in Süderstade zurück, wenn Ihr fertig seid.",
-    ["D"] = "Was ich während der Schlotternächte am meisten hasse, sind die Stinkbomben, die die Verlassenen hier inmitten von Süderstade loslassen. Wer hätte gedacht, dass eine Gedenkfeier zur Freilassung mit einer so stinkigen Sache einhergehen würde?$B$BVerwendet diesen Stinkbombenreiniger während der Schlotternächte, um die scheußlichen Stinkbomben, die die Horde womöglich hier in der Stadt loslässt, zu vernichten. Er bekämpft, dank der Kraft von Pinien, schreckliche Gerüche.$B$BHelft mit Süderstade sauber zu halten und ich werde Euch dafür ein paar Schlotternachtssüßigkeiten geben, die Ihr sicherlich mögen werdet. Abgemacht?",
   },
   [8373] = {
     ["T"] = "Die Kraft der Pinie",
@@ -17919,6 +17859,11 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Reist nach Norden entlang der Hauptstraße des Teufelswalds und sprecht mit einem Furbolg namens Nafien. Er hält außerhalb des Eingangs zur Holzschlundfeste Wache.",
     ["D"] = "Vielleicht seid Ihr stark genug, um Euch einer noch größeren Bedrohung entgegenzustellen. Die Furbolgs der Holzschlundfeste brauchen Eure Hilfe und ich denke, Ihr habt hier bereits Eure Tauglichkeit im Kampf ausreichend bewiesen.$B$BReist auf dieser Straße in Richtung Norden, bis zum Eingang der Holzschlundfeste, wo einer meiner Brüder Wache steht. Sein Name ist Nafien. Im ersten Augenblick mag er vielleicht wie ein ungezügeltes, wildes Tier wirken, doch braucht Ihr ihn nicht zu fürchten. Er ist auf der Suche nach tapferen Abenteurern, die ihm im Kampf gegen die dunkle Verderbnis unterstützen, welche unsere Heimat bedroht.",
   },
+  [8464] = {
+    ["T"] = "Aktivität der Winterfelle",
+    ["O"] = "Salfa möchte, dass Ihr 8 Schamanen der Winterfelle, 8 Höhlenbehüter der Winterfelle und 8 Ursa der Winterfelle erledigt. Salfa befindet sich genau außerhalb des Eingangs zur Holzschlundfeste in Winterquell.",
+    ["D"] = "Die Furbolgs der Holzschlundfeste bleiben meist unter sich, $n. Wir gewähren allen, die ihre Vertrauenswürdigkeit unter Beweis gestellt haben, freies Geleit, meiden aber, wenn möglich, andere Furbolgstämme.$B$BIn letzter Zeit ist mir aufgefallen, dass der Winterfellstamm uns gegenüber immer größere Feindseligkeit zeigt. Sie scheinen in Rage zu sein, und ganz von ihrem Hass auf alles beseelt, das sie nicht verstehen.$B$BEs stimmt mich zwar zutiefst traurig, dass ich gegen meine Geschwister kämpfen muss, trotzdem möchte ich Euch bitten, dass Ihr einige von ihnen ausmerzt, um die Bedrohung, die von ihnen ausgeht, zu verringern. Ihr findet sie im Lager der Winterfelle.",
+  },
   [8465] = {
     ["T"] = "Sprecht mit Salfa",
     ["O"] = "Durchquert die Holzschlundfeste und verlasst sie in Richtung Winterquell. Sprecht mit Salfa, die außerhalb des Eingangs zur Holzschlundfeste Wache steht.",
@@ -18169,11 +18114,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Setzt Euch mit der cenarischen Späherin Azenel innerhalb des Zoraschwarmbaus in Verbindung und bringt den Späherbericht des Zoraschwarms zu Windruferin Prachthorn auf Burg Cenarius. Ihr benötigt auch den taktischen Einsatz VI, um diese Aufgabe abschließen zu können.",
     ["D"] = "Wir haben unsere besten Späher bis weit in die Schwarmbauten der Silithiden ausgesendet. Späherin Azenel hat die Aktivitäten der Silithiden im Zoraschwarm nun schon seit Tagen beobachtet. Findet sie und besorgt Euch einen schriftlichen Bericht. Wir müssen so schnell wie möglich auf diese Informationen reagieren können, $n.",
   },
-  [8534] = {
-    ["T"] = "Späherbericht des Zoraschwarms",
-    ["O"] = "Setzt Euch mit der cenarischen Späherin Azenel innerhalb des Zoraschwarmbaus in Verbindung und bringt den Späherbericht des Zoraschwarms zu Windruferin Prachthorn auf Burg Cenarius. Ihr benötigt auch den taktischen Einsatz VI, um diese Aufgabe abschließen zu können.",
-    ["D"] = "Wir haben unsere besten Späher bis weit in die Schwarmbauten der Silithiden ausgesendet. Späherin Azenel hat die Aktivitäten der Silithiden im Zoraschwarm nun schon seit Tagen beobachtet. Findet sie und besorgt Euch einen schriftlichen Bericht. Wir müssen so schnell wie möglich auf diese Informationen reagieren können, $n.",
-  },
   [8535] = {
     ["T"] = "Weißgrauer Templer",
     ["O"] = "Beschwört und vernichtet einen weißgrauen Templer. Erstattet anschließend Bericht bei Bor Wildmähne auf Burg Cenarius. Ihr benötigt auch den taktischen Einsatz IV, um diese Aufgabe abschließen zu können.",
@@ -18272,11 +18212,6 @@ pfDB["quests"]["deDE"] = {
   [8555] = {
     ["T"] = "Der Bund der Drachenschwärme",
     ["O"] = "",
-    ["D"] = "The Charge of the DragonflightsThis quest is disabled until patch 1.9.",
-  },
-  [8555] = {
-    ["T"] = "Der Bund der Drachenschwärme",
-    ["O"] = "",
     ["D"] = "",
   },
   [8556] = {
@@ -18358,11 +18293,6 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Schlachtrüstung des Gefolgsmanns",
     ["O"] = "Bringt 15 cenarische Gefechtsabzeichen, 20 cenarische Versorgungsabzeichen, 17 cenarische Strategieabzeichen und 1 Mal von Remulos zu Vargus auf Burg Cenarius in Silithus. Diese Aufgabe erfordert zum Abschluss auch einen respektvollen Ruf beim Zirkel des Cenarius.",
     ["D"] = "Die Abzeichen, die Ihr für Eure Erfüllung von Kampf-, Logistik- und taktischen Aufträgen für Windruferin Prachthorn erhalten habt, dienen zu weit mehr als der Angeberei, $n.$B$BIhr solltet deren Wert besser zu schätzen wissen. Da Ihr gegenüber unserer Organisation Loyalität bewiesen habt, kann ich Euch bestimmte Ausrüstungsgegenstände anbieten, die wir lediglich für unsere engsten Verbündeten im Austausch gegen diese Abzeichen bereithalten.",
-  },
-  [8575] = {
-    ["T"] = "Azuregos\' magisches Buch",
-    ["O"] = "Bringt Azuregos\' magisches Buch zu Narain Pfauentraum in Tanaris.",
-    ["D"] = "Ihr könnt kein einziges Wort in diesem Buch verstehen. Ihr wisst nicht einmal in welcher Sprache es geschrieben wurde!",
   },
   [8575] = {
     ["T"] = "Azuregos\' magisches Buch",
@@ -18489,11 +18419,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Bringt Meridiths Liebesbrief zu Narain Pfauentraum in Tanaris.",
     ["D"] = "Es kommt nicht häufig vor, dass ich Besuch bekomme. Genaugenommen hatte ich das letzte Mal einen Besucher, als ich diesen liebreizenden, süßen Gnom nach dem Absturz mit seiner Flugmaschine gerettet habe.$B$B<Meridith starrt gedankenverloren ins Nichts.>$B$BKennt Ihr ihn? Narain? Narain Pfauentraum? Oh, es würde mir so viel bedeuten, wenn ihm jemand eine Nachricht von mir überbringen würde. Ich muss ihm mitteilen, was ich empfinde! Ich weiß, dass es Liebe ist! Ich weiß es einfach!$B$BKönntet Ihr Narain vielleicht eine Nachricht zustellen? Ich wäre Euch für immer zu Dank verpflichtet!",
   },
-  [8599] = {
-    ["T"] = "Liebesbrief für Narain",
-    ["O"] = "Bringt Meridiths Liebesbrief zu Narain Pfauentraum in Tanaris.",
-    ["D"] = "Es kommt nicht häufig vor, dass ich Besuch bekomme. Genaugenommen hatte ich das letzte Mal einen Besucher, als ich diesen liebreizenden, süßen Gnom nach dem Absturz mit seiner Flugmaschine gerettet habe.$B$B<Meridith starrt gedankenverloren ins Nichts.>$B$BKennt Ihr ihn? Narain? Narain Pfauentraum? Oh, es würde mir so viel bedeuten, wenn ihm jemand eine Nachricht von mir überbringen würde. Ich muss ihm mitteilen, was ich empfinde! Ich weiß, dass es Liebe ist! Ich weiß es einfach!$B$BKönntet Ihr Narain vielleicht eine Nachricht zustellen? Ich wäre Euch für immer zu Dank verpflichtet!",
-  },
   [8600] = {
     ["T"] = "Die Horde braucht unverwüstliches Leder!",
     ["O"] = "Bringt 10 Einheiten unverwüstliches Leder zu Doktor Serratus im Tal der Geister in Orgrimmar.",
@@ -18583,11 +18508,6 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Urahne Schwermut",
     ["O"] = "",
     ["D"] = "",
-  },
-  [8620] = {
-    ["T"] = "Der einzige Weg",
-    ["O"] = "Findet die 8 verlorenen Kapitel von Drachisch für Dummies und vereint sie mit dem magischen Bucheinband. Bringt das vollständige Buch Drachisch für Dummies: Band 2 zu Narain Pfauentraum in Tanaris.",
-    ["D"] = "Ich hätte es wissen müssen. Mein Erzfeind, Doktor Weavil, hat wieder seine dreckigen Finger im Spiel! Jetzt, nach Eurem Versagen in Winterquell, hat Doktor Weavil mein Buch zerstört! Wie wollt Ihr jetzt die Welt retten, Held?$B$BDie Nachricht die ich erhalten habe, gab an, dass die einzig bekannte Kopie von \"Drachisch für Dummies: Band 2\" in 8 Teile zerrissen und im Wind zerstreut wurde! Solltet Ihr diese fehlenden Kapitel irgendwie finden können, dann verwendet diesen magischen Bucheinband, um sie wieder zusammen zu flicken. Kehrt dann zu mir zurück.",
   },
   [8620] = {
     ["T"] = "Der einzige Weg",
@@ -18876,6 +18796,11 @@ pfDB["quests"]["deDE"] = {
   },
   [8677] = {
     ["T"] = "Urahnin Dunkelhorn",
+    ["O"] = "",
+    ["D"] = "",
+  },
+  [8678] = {
+    ["T"] = "Urahne Weizhuf",
     ["O"] = "",
     ["D"] = "",
   },
@@ -19178,16 +19103,6 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Späherbericht des Regalschwarms",
     ["O"] = "Setzt Euch mit dem cenarischen Späher Landion innerhalb des Regalschwarmbaus in Verbindung und bringt den Späherbericht des Regalschwarms zu Windruferin Prachthorn auf Burg Cenarius. Ihr benötigt auch den taktischen Einsatz VII, um diese Aufgabe abschließen zu können.",
     ["D"] = "Wir haben unsere besten Späher bis weit in die Schwarmbauten der Silithiden ausgesendet, um Informationen zu sammeln. Späher Landion hat die Aktivitäten der Silithiden im Regalschwarm nun schon seit Tagen beobachtet. Findet ihn und besorgt Euch einen schriftlichen Bericht. Wir müssen so schnell wie möglich auf diese Informationen reagieren können, $n.",
-  },
-  [8738] = {
-    ["T"] = "Späherbericht des Regalschwarms",
-    ["O"] = "Setzt Euch mit dem cenarischen Späher Landion innerhalb des Regalschwarmbaus in Verbindung und bringt den Späherbericht des Regalschwarms zu Windruferin Prachthorn auf Burg Cenarius. Ihr benötigt auch den taktischen Einsatz VII, um diese Aufgabe abschließen zu können.",
-    ["D"] = "Wir haben unsere besten Späher bis weit in die Schwarmbauten der Silithiden ausgesendet, um Informationen zu sammeln. Späher Landion hat die Aktivitäten der Silithiden im Regalschwarm nun schon seit Tagen beobachtet. Findet ihn und besorgt Euch einen schriftlichen Bericht. Wir müssen so schnell wie möglich auf diese Informationen reagieren können, $n.",
-  },
-  [8739] = {
-    ["T"] = "Späherbericht des Ashischwarms",
-    ["O"] = "Setzt Euch mit der cenarischen Späherin Jalia innerhalb des Ashischwarmbaus in Verbindung und bringt den Späherbericht des Ashischwarms zu Windruferin Prachthorn auf Burg Cenarius. Ihr benötigt auch den taktischen Einsatz VIII, um diese Aufgabe abschließen zu können.",
-    ["D"] = "Wir haben unsere besten Späher bis weit in die Schwarmbauten der Silithiden ausgesendet. Späherin Jalia hat die Aktivitäten der Silithiden im Ashischwarm nun schon seit Tagen beobachtet. Findet sie und besorgt Euch einen schriftlichen Bericht. Wir müssen so schnell wie möglich auf diese Informationen reagieren können, $n.",
   },
   [8739] = {
     ["T"] = "Späherbericht des Ashischwarms",
@@ -20019,6 +19934,11 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Besorgt die Karte einer Wache von Sturmwind und bringt sie zu Aristan Mottar in Sturmwind.",
     ["D"] = "Diese Liebesepidemie hat etwas unnatürliches an sich. Die ganze Situation ist ungebührlich, ja ein Schandfleck, und im schlimmsten Fall eine Bedrohung für die Sicherheit der gesamten Allianz.$B$BDenkt doch nur: Was passiert, wenn sämtliche Wachen von dieser seltsamen Krankheit betroffen werden? Irgendetwas muss geschehen.$B$BGeht zu einer der Wachen hier in Sturmwind und seht, ob sie von dieser törichten Epidemie befallen wurde.",
   },
+  [8904] = {
+    ["T"] = "Gefährliche Liebschaft",
+    ["O"] = "Besorgt eine modrige Karte des Wächters und bringt sie zu Fenstad Argyle in Unterstadt.",
+    ["D"] = "Diese Liebesepidemie hat etwas unnatürliches an sich. Die ganze Situation ist abscheulich, und wenn sie erst einmal unsere Verteidigung schwächt, könnte dies zu einer ernsten Bedrohung für uns alle werden.$B$BSchlimm genug, dass bereits ein Großteil unserer Bevölkerung dieses lächerlich säuselnde Verhalten an den Tag legt. Ich denke, selbst unsere Wächter hat es bereits erwischt, dabei sollten sie gegen derartige Einflüsse immun sein.$B$BGeht zu einem der Wächter und seht, ob er von dieser törichten Epidemie befallen wurde.",
+  },
   [8905] = {
     ["T"] = "Ein aufrichtiges Angebot",
     ["O"] = "Sammelt 15 Blutproben aus Winterquell und bringt sie zusammen mit 20 Gold und einem Paar Armschienen des Wildherzens zu Deliana in Eisenschmiede.",
@@ -20113,11 +20033,6 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Ein übernatürlicher Apparat",
     ["O"] = "Bringt den versiegelten Giftbehälter zu Mux Manamix in Gadgetzan.",
     ["D"] = "Ihr müsst wirklich verdammt mutig sein. Respekt, dass Ihr immer noch an der Sache dran seid. Oder vielleicht haben die Rüstungsteile, die ich Euch gegeben habe, ja Euer Interesse geweckt. Wo die herkamen gibt\'s noch mehr, wenn Ihr daran interessiert seid, mir erneut auszuhelfen.$B$BDie Giftproben, die Ihr gesammelt habt, sind für einen Bekannten von mir bestimmt, Mux Manamix, ein Ingenieur mit einem gewissen Interesse für das Übernatürliche. Seine neueste Erfindung soll es angeblich ermöglichen, mit den Toten zu kommunizieren! Meine letzte Hoffnung ist es, Anthion zu kontaktieren und mehr über meine Situation herauszufinden.",
-  },
-  [8924] = {
-    ["T"] = "Ektoplasmajagd",
-    ["O"] = "Benutzt den Ektoplasmadestillierer in der Nähe von schemenhaften Untoten, um 12 Einheiten versengtes Ektoplasma in Silithus, 12 Einheiten gefrorenes Ektoplasma in Winterquell und 12 Einheiten stabiles Ektoplasma in den Östlichen Pestländern zu erhalten. Bringt das Ektoplasma dann mitsamt des Ektoplasmadestillierers zu Mux Manamix in Gadgetzan zurück.",
-    ["D"] = "Ein hervorragendes Stück Ingenieurarbeit, wenn ich das mal selbst so sagen darf! Ich fürchte allerdings, dass Ihr weit umherreisen werden müsst, um die Art schemenhafter Untoten zu finden, die wir benötigen.$B$BIhr müsst verstehen, dass verschiedenen Klimabedingungen Einfluss auf die spektrale Struktur der Toten haben. Die gequälten Nachtelfen in Silithus, die Geister der Hochgeborenen in Winterquell und die Geister und Banshees in den Östlichen Pestländern sollten uns mit den verschiedenen Sorten von Ektoplasma versorgen, die wir benötigen. Stellt auf jeden Fall den Destillierer in der Nähe auf, bevor Ihr sie bekämpft.",
   },
   [8924] = {
     ["T"] = "Ektoplasmajagd",
@@ -20359,16 +20274,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Bringt Deliana in Eisenschmiede den extradimensionalen Geisterdetektor.",
     ["D"] = "War mir eine Freude, mit Euch zusammenzuarbeiten, $n. Hier ist das fertige Produkt.$B$BIch hoffe, dass es Euch bei Eurem Unterfangen behilflich sein wird. Verbreitet doch bitte die Kunde über meine hervorragenden Dienste, wenn es Euch nichts ausmacht. Ich hätte nichts gegen mehr Kundschaft einzuwenden.",
   },
-  [8977] = {
-    ["T"] = "Rückkehr zu Deliana",
-    ["O"] = "Bringt Deliana in Eisenschmiede den extradimensionalen Geisterdetektor.",
-    ["D"] = "War mir eine Freude, mit Euch zusammenzuarbeiten, $n. Hier ist das fertige Produkt.$B$BIch hoffe, dass es Euch bei Eurem Unterfangen behilflich sein wird. Verbreitet doch bitte die Kunde über meine hervorragenden Dienste, wenn es Euch nichts ausmacht. Ich hätte nichts gegen mehr Kundschaft einzuwenden.",
-  },
-  [8978] = {
-    ["T"] = "Rückkehr zu Mokvar",
-    ["O"] = "Kehrt mit dem extradimensionalen Geisterdetektor zu Mokvar in Orgrimmar zurück.",
-    ["D"] = "War mir eine Freude, mit Euch zusammenzuarbeiten, $n. Hier ist das fertige Produkt.$B$BIch hoffe, dass es Euch bei Eurem Unterfangen behilflich sein wird. Verbreitet doch bitte die Kunde über meine hervorragenden Dienste, wenn es Euch nichts ausmacht. Ich hätte nichts gegen mehr Kundschaft einzuwenden.",
-  },
   [8978] = {
     ["T"] = "Rückkehr zu Mokvar",
     ["O"] = "Kehrt mit dem extradimensionalen Geisterdetektor zu Mokvar in Orgrimmar zurück.",
@@ -20444,6 +20349,11 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Benutzt das Räuchergefäß der Beschwörung, um den Geist von Kormok zu beschwören und zu vernichten. Kehrt dann mit Lord Valthalaks zusammengesetzten Amulett und dem Räuchergefäß der Beschwörung zu Bodley im Schwarzfels zurück.",
     ["D"] = "Jetzt, wo wir alles beisammen haben, was wir benötigen, wird es Zeit, uns darüber zu unterhalten, wen Ihr als Nächstes beschwören werdet.$B$BKormok war für einen Oger ganz okay, bis er sich der Nekromantie zuwandte. Von da ab wurde es für jeden im Bund ganz schön gruselig. Es überraschte also niemanden, dass er mit seinem Stück des Amuletts in sein neues Zuhause verschwand, Scholomance.$B$BAber selbst dort, oder vielleicht gerade dort, war er nicht vor den spektralen Assassinen sicher. Sie erschlugen ihn vor den Augen seines Meisters, Ras Frostraunen.",
   },
+  [8993] = {
+    ["T"] = "Geschenkübergabe",
+    ["O"] = "",
+    ["D"] = "",
+  },
   [8994] = {
     ["T"] = "Letzte Vorbereitungen",
     ["O"] = "Bringt Bodley im Schwarzfels 40 Schwarzfelsarmschienen und ein Fläschchen der obersten Macht.",
@@ -20453,11 +20363,6 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Mea Culpa, Lord Valthalak",
     ["O"] = "Benutzt das Räuchergefäß der Beschwörung, um Lord Valthalak zu beschwören. Macht ihn unschädlich und benutzt dann Lord Valthalaks Amulett bei seiner Leiche. Danach werdet Ihr dem Geist von Lord Valthalak sein Amulett zurückgeben müssen.",
     ["D"] = "Die nötigen Vorbereitungen sind nun getroffen, $n.$B$BZu seinen Lebzeiten bewohnte Lord Valthalak die Kammer, in der sich nun die Bestie aufhält. Geht dorthin und benutzt dann das Räuchergefäß der Beschwörung, um Lord Valthalak herbeizurufen. Es wird ihn wiederbeleben, also werdet Ihr ihn erneut töten müssen. Es wäre sinnvoll, zuerst die Bestie zu erledigen. Bringt außerdem genug Kameraden mit, um Euch durch den oberen Teil der Schwarzfelsspitze zu kämpfen.$B$BBenutzt, sobald Ihr ihn ausgeschaltet habt, das Amulett bei seiner Leiche. Nachdem seine Seele wieder vollständig ist, wird er es vermutlich zurückverlangen.$B$BViel Glück!",
-  },
-  [8996] = {
-    ["T"] = "Rückkehr zu Bodley",
-    ["O"] = "Bringt das Räuchergefäß der Beschwörung zurück zu Bodley im Schwarzfels.",
-    ["D"] = "Ich werde Euch Eure Unverschämtheit dieses eine Mal vergeben, $C, da Ihr heute eine noble Tat vollbracht habt. Ihr habt mich wieder mit dem Rest meiner gestohlenen Seele vereint. Obgleich Eurer offensichtlich schwachen Natur, $R, habt Ihr den Mut bewiesen, über den jene, die es wagten mich zu bestehlen, nicht verfügten und vermutlich niemals werden.$B$BKehret schnell zu ihnen zurück, bevor ich es mir anders überlege und Euch dort niederstrecke, wo Ihr steht. Kehret zurück und richtet ihnen aus, dass sie vor mir sicher sind... Momentan zumindest.",
   },
   [8996] = {
     ["T"] = "Rückkehr zu Bodley",

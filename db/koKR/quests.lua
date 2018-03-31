@@ -897,7 +897,7 @@ pfDB["quests"]["koKR"] = {
   [190] = {
     ["T"] = "퓨마 사냥하기",
     ["O"] = "Sir S. J. Erlgadin of Nesingwary\'s Expedition wants you to kill 10 Young Panthers.",
-    ["D"] = "If you want to be a part of the hunt with this crack group Hemet has assembled, you\'re going to need to prove yourself an able panther hunter. We\'ll start you out easy -- don\'t you worry. Let\'s see you kill 10 young panthers to start.  Tracking them down is only half the challenge...",
+    ["D"] = "If you want to be a part of the hunt with this crack group Hemet has assembled, you\'re going to need to prove yourself an able panther hunter. We\'ll start you out easy -- don\'t you worry. Let\'s see you kill 10 young panthers to start.$B$BTracking them down is only half the challenge...",
   },
   [191] = {
     ["T"] = "퓨마 추적하기",
@@ -2772,7 +2772,7 @@ pfDB["quests"]["koKR"] = {
   [583] = {
     ["T"] = "정글 탐험",
     ["O"] = "Speak with Hemet Nesingwary.",
-    ["D"] = "Welcome to Stranglethorn!  Perhaps you\'re not aware of this, but that dwarf over there is the one and only Hemet Nesingwary, renowned war hero of the Alliance and master big game hunter. He\'s not one for welcoming strangers into his camp, but you look like you\'ve seen quite a bit of action in your day, %c.  Being a veteran of many battles himself, Master Nesingwary has a soft spot for fellow heroes.  Go and speak with him. Perhaps he can give you some hunting pointers.",
+    ["D"] = "Welcome to Stranglethorn!$B$BPerhaps you\'re not aware of this, but that dwarf over there is the one and only Hemet Nesingwary, renowned war hero of the Alliance and master big game hunter. He\'s not one for welcoming strangers into his camp, but you look like you\'ve seen quite a bit of action in your day, $C.$B$BBeing a veteran of many battles himself, Master Nesingwary has a soft spot for fellow heroes.$B$BGo and speak with him. Perhaps he can give you some hunting pointers.",
   },
   [584] = {
     ["T"] = "Bloodscalp Clan Heads",
@@ -5942,7 +5942,7 @@ pfDB["quests"]["koKR"] = {
   [1322] = {
     ["T"] = "The Black Shield",
     ["O"] = "Acquire 5 Acidic Venom Sacs for Do\'gol in Brackenwall Village.",
-    ["D"] = "Hmmm, there\'s writing right here on the rim of the shield, but it\'s hard to read from all the burned stuff.$b$bI need acid to make it clear. Venom from the darkmist spiders would do good. The spiders have taken over an old mine, the Darkmist Cavern, northwest of the village. Get me some of their sacs and I can clean this up.",
+    ["D"] = "Hmmm, there\'s writing right here on the rim of the shield, but it\'s hard to read from all the burned stuff.$b$bI need acid to make it clear. Venom from the Darkfang spiders in the marsh would do good. Get me some of their sacs and I can clean this up.",
   },
   [1323] = {
     ["T"] = "The Black Shield",
@@ -6071,8 +6071,8 @@ pfDB["quests"]["koKR"] = {
   },
   [1383] = {
     ["T"] = "Nothing But The Truth",
-    ["O"] = "Apothecary Faustin at Beggar\'s Haunt needs 5 Shadow Panther Hearts, Mire Lord Fungus and some Green Whelp Blood.",
-    ["D"] = "I have just the right serum in mind. It will deal with the truth in precisely the way the truth should be dealt with.  For this concoction I will need several Shadow Panther hearts from the Swamp. I also require the enchanted fungus off of the Mire Lord who resides there. I am sure one as able as you, $N, can persuade him to part with some.  Now the hard part will be locating a Deepstrider tumor from far-off Desolace. Very rarely the giants there become ill and a tumor forms.  Now, off you go!",
+    ["O"] = "Apothecary Faustin at Beggar\'s Haunt needs 5 Shadow Panther Hearts, Mire Lord Fungus and a Deep Strider Tumor.",
+    ["D"] = "I have just the right serum in mind. It will deal with the truth in precisely the way the truth should be dealt with.$B$BFor this concoction I will need several Shadow Panther hearts from the Swamp. I also require the enchanted fungus off of the Mire Lord who resides there. I am sure one as able as you, $N, can persuade him to part with some.$B$BNow the hard part will be locating a Deepstrider tumor from far-off Desolace. Very rarely the giants there become ill and a tumor forms.$B$BNow, off you go!",
   },
   [1384] = {
     ["T"] = "Raid on the Kolkar",
@@ -6833,11 +6833,6 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "남녘해안에 구린내 폭탄 투하",
     ["O"] = "Toss three Forsaken Stink Bombs into the heart of Southshore in Hillsbrad, and return to Darkcaller Yanka at the Wickerman Festival in Tirisfal Glade.",
     ["D"] = "Celebrate Hallow\'s End in style... by bringing grief to our enemies in Southshore!$B$BTake one of these specially crafted stink bombs.  It is filled with an odiferous funk that no human - or any weak-willed beast for that matter - can stand to smell.  You\'ll need to throw it right in the heart of Southshore for it to do its job, so be prepared for a fight against the Alliance!$B$BWhen you\'ve completed this task... this tribute to our liberation, return to me!",
-  },
-  [1657] = {
-    ["T"] = "남녘해안에 구린내 폭탄 투하",
-    ["O"] = "",
-    ["D"] = "",
   },
   [1658] = {
     ["T"] = "밀짚인형 축제 정탐",
@@ -8088,6 +8083,11 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "Kirith",
     ["O"] = "Find out what became of Lieutenant Kirith.",
     ["D"] = "As one chapter of your adventure closes, another one begins, $N.$B$BOne of my men is still unaccounted for, lost somewhere in the Blasted Lands. I am talking about Lieutenant Kirith, of course.$B$BAs I had mentioned earlier, we were both imprisoned and tortured by Allistarj, but poor Kirith, his strength of will faltered. I could hear the experiments from my cage; the tortured screams rang through the halls of the cave. That was the last I saw or heard of Kirith.",
+  },
+  [2741] = {
+    ["T"] = "고성능 자동부화기",
+    ["O"] = " ",
+    ["D"] = "",
   },
   [2741] = {
     ["T"] = "고성능 자동부화기",
@@ -12907,12 +12907,12 @@ pfDB["quests"]["koKR"] = {
   [5762] = {
     ["T"] = "헤멧 네싱워리 2세",
     ["O"] = "Take Kravel\'s Crate to Hemet Nesingwary in Stranglethorn.",
-    ["D"] = "I have a package for an old customer of mine, a dwarf named Hemet Nesingwary. The package took weeks to arrive, and Hemet\'s long gone by now. He said he was going to Stranglethorn to hunt the beasts there, but he left me some money to send his delivery when I could.  Hemet\'s a rich dwarf and it\'s a good idea to keep up relations with the rich ones, yeah? So... you want to deliver the package for me?  I heard Hemet has a camp in Stranglethorn, north of Grom\'gol.",
+    ["D"] = "I have a package for an old customer of mine, a dwarf named Hemet Nesingwary. The package took weeks to arrive, and Hemet\'s long gone by now. He said he was going to Stranglethorn to hunt the beasts there, but he left me some money to send his delivery when I could.$B$BHemet\'s a rich dwarf and it\'s a good idea to keep up relations with the rich ones, yeah? So... you want to deliver the package for me?$B$BI heard Hemet has a camp in Stranglethorn, north of Grom\'gol.",
   },
   [5763] = {
     ["T"] = "Hunting in Stranglethorn",
     ["O"] = "Bring Roon\'s Kodo Horn to Hemet Nesingwary in Stranglethorn.",
-    ["D"] = "Long ago, a dwarf came to this land. His name was Hemet and he wished to hunt great beasts. His skills with the rifle were uncanny, and we spent many days hunting together. Even the enmity between our peoples were forgotten.  When he left Desolace for Stranglethorn, I vowed to one day welcome him back so that we may hunt again. Now is that time.  Take this kodo horn to Hemet. He will know it is from me. You will find him in Stranglethorn, north of the Grom\'gol Base camp.",
+    ["D"] = "Long ago, a dwarf came to this land. His name was Hemet and he wished to hunt great beasts. His skills with the rifle were uncanny, and we spent many days hunting together. Even the enmity between our peoples were forgotten.$B$BWhen he left Desolace for Stranglethorn, I vowed to one day welcome him back so that we may hunt again. Now is that time.$B$BTake this kodo horn to Hemet. He will know it is from me. You will find him in Stranglethorn, north of the Grom\'gol Base camp.",
   },
   [5781] = {
     ["T"] = "Of Forgotten Memories",
@@ -13457,11 +13457,6 @@ pfDB["quests"]["koKR"] = {
   [6131] = {
     ["T"] = "나무구렁 일족",
     ["O"] = "Grazle wants you to prove yourself by killing 5 Deadwood Warriors, 5 Deadwood Pathfinders, and 5 Deadwood Gardeners.",
-    ["D"] = "Timbermaw AllyThis quest is disabled until patch 1.9.",
-  },
-  [6131] = {
-    ["T"] = "나무구렁 일족",
-    ["O"] = "Grazle wants you to prove yourself by killing 5 Deadwood Warriors, 5 Deadwood Pathfinders, and 5 Deadwood Gardeners.",
     ["D"] = "The Timbermaw are the only furbolg tribe to escape the corruption. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.$B$BAre you interested in proving yourself? Drive back the corrupted Deadwood tribe of Felwood and we may one day consider you an ally. You\'ll find the first Deadwood tribe - warriors, pathfinders and gardeners - to my west.",
   },
   [6132] = {
@@ -13603,11 +13598,6 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "Winterfall Activity",
     ["O"] = "Salfa wants you to kill 6 Winterfall Totemics, 6 Winterfall Den Watchers, and 6 Winterfall Pathfinders.",
     ["D"] = "The Timbermaw tend to stay to themselves, $N. While we do allow safe passage to those that have proven they can be trusted, we try to avoid other furbolg tribes if at all possible.$B$BLately I have noticed that the Winterfall tribe has become increasingly hostile towards us. They seem to be in a state of rage, completely engulfed by their own fear and hatred of anything they do not understand.$B$BIf you could reduce their numbers this would help us greatly, $N.",
-  },
-  [6241] = {
-    ["T"] = "[DISABLED] Winterfall Activity",
-    ["O"] = "",
-    ["D"] = "",
   },
   [6261] = {
     ["T"] = "Dungar Longdrink",
@@ -13947,7 +13937,7 @@ pfDB["quests"]["koKR"] = {
   [6568] = {
     ["T"] = "The Testament of Rexxar",
     ["O"] = "Deliver Rexxar\'s Testament to Myranda the Hag in the Western Plaguelands.",
-    ["D"] = "What do you know of illusions, $N? For you see, it is an illusion that you must create in order to circumvent the Black Flight\'s defenses.  I know of one that may be willing to assist you in your quest of deception. She has assisted our kind in the past when she has deemed the cause worthy.  In the Western Plaguelands you will find Myranda the Hag, master illusionist - an exile of the Lordaeron alliance. Travel there and take with you this message.",
+    ["D"] = "What do you know of illusions, $N? For you see, it is an illusion that you must create in order to circumvent the Black Flight\'s defenses.$B$BI know of one that may be willing to assist you in your quest of deception. She has assisted our kind in the past when she has deemed the cause worthy.$B$BIn the Western Plaguelands you will find Myranda the Hag, master illusionist - an exile of the Lordaeron alliance. Travel there and take with you this message.",
   },
   [6569] = {
     ["T"] = "Oculus Illusions",
@@ -13992,12 +13982,12 @@ pfDB["quests"]["koKR"] = {
   [6601] = {
     ["T"] = "Ascension...",
     ["O"] = "It would appear as if the charade is over. You know that the Amulet of Draconic Subversion that Myranda the Hag created for you will not function inside Blackrock Spire. Perhaps you should find Rexxar and explain your predicament. Show him the Dull Drakefire Amulet. Hopefully he will know what to do next.",
-    ["D"] = "From the skulls of our enemies is shaped a medallion. You know this medallion, yesss? You have no doubt seen it worn by your elders.  Take it, whelp. Return to the Spire and present it to General Drakkisath. The General will place the final enchantment upon the medallion, attuning the trinket to your spirit.  You will wear the finished medallion as a badge of honor, symbolizing your ascension to one of our most guarded ranks: Guardian to the brood mother.  Go!",
+    ["D"] = "From the skulls of our enemies is shaped a medallion. You know this medallion, yesss? You have no doubt seen it worn by your elders.$B$BTake it, whelp. Return to the Spire and present it to General Drakkisath. The General will place the final enchantment upon the medallion, attuning the trinket to your spirit.$B$BYou will wear the finished medallion as a badge of honor, symbolizing your ascension to one of our most guarded ranks: Guardian to the brood mother.$B$BGo!",
   },
   [6602] = {
     ["T"] = "Blood of the Black Dragon Champion",
     ["O"] = "Travel to Blackrock Spire and slay General Drakkisath. Gather his blood and return it to Rexxar.",
-    ["D"] = "You will pay the General a visit, yes, but not as one of the Black Dragonflight.  You see, a ceremony is merely another term for blood letting to the Black Flight.  The latent amulet merely needs the blood of the General in order to become active. One of their crude failsafe mechanisms.  Return to Blackrock Spire and destroy Drakkisath. Bring his blood back here and I shall activate the key to Onyxia\'s lair.",
+    ["D"] = "You will pay the General a visit, yes, but not as one of the Black Dragonflight.$B$BYou see, a ceremony is merely another term for blood letting to the Black Flight.$B$BThe latent amulet merely needs the blood of the General in order to become active. One of their crude failsafe mechanisms.$B$BReturn to Blackrock Spire and destroy Drakkisath. Bring his blood back here and I shall activate the key to Onyxia\'s lair.",
   },
   [6603] = {
     ["T"] = "여명의 설원에 생긴 문제!",
@@ -15412,11 +15402,6 @@ pfDB["quests"]["koKR"] = {
   [7786] = {
     ["T"] = "바람추적자 썬더란",
     ["O"] = "To free Thunderaan the Windseeker from his prison, you must present the right and left halves of the Bindings of the Windseeker, 10 bars of Elementium, and the Essence of the Firelord to Highlord Demitrian in Silithus.",
-    ["D"] = "Thunderaan the WindseekerThis quest is disabled until patch 1.6",
-  },
-  [7786] = {
-    ["T"] = "바람추적자 썬더란",
-    ["O"] = "To free Thunderaan the Windseeker from his prison, you must present the right and left halves of the Bindings of the Windseeker, 10 bars of Elementium, and the Essence of the Firelord to Highlord Demitrian in Silithus.",
     ["D"] = "I have told you all that I know, $N. It is you who must find elementium. It is you who must destroy the Firelord\'s corporeal form.$B$BDo this and gain the blessing of Thunderaan.",
   },
   [7787] = {
@@ -15741,7 +15726,7 @@ pfDB["quests"]["koKR"] = {
   },
   [7862] = {
     ["T"] = "구인광고: 깨진엄니 마을의 경비대장",
-    ["O"] = "You have been tasked with the decimation of 10 Vilebranch Berserkers, 5 Vilebranch Shadow Hunters, 5 Vilebranch Blood Drinkers, and 5 Vilebranch Soul Eaters.$B$BShould you complete this task, return to Primal Torntusk at Revantusk Village in the Hinterlands.",
+    ["O"] = "You have been tasked with the decimation of 20 Vilebranch Berserkers, 20 Vilebranch Shadow Hunters, 20 Vilebranch Blood Drinkers, and 20 Vilebranch Soul Eaters.$B$BShould you complete this task, return to Primal Torntusk at Revantusk Village in the Hinterlands.",
     ["D"] = "With the loss of Guard Captain Malkhor, the position of Guard Captain of Revantusk is once again open. If you are interested in becoming Captain of the Guard for Revantusk, complete the following tasks and submit your application to Primal Torntusk:$B$BExterminate Vilebranch Berserkers.$B$BExterminate Vilebranch Shadow Hunters.$B$BExterminate Vilebranch Blood Drinkers.$B$BExterminate Vilebranch Soul Eaters.",
   },
   [7863] = {
@@ -17402,17 +17387,7 @@ pfDB["quests"]["koKR"] = {
   [8353] = {
     ["T"] = "닭 흉내 내고 박하사탕 얻기",
     ["O"] = "Do a chicken emote at Innkeeper Firebrew, and in exchange you\'ll receive an Ironforge Mint!",
-    ["D"] = "Chicken Clucking for a MintThis quest is disabled until patch 1.8",
-  },
-  [8353] = {
-    ["T"] = "닭 흉내 내고 박하사탕 얻기",
-    ["O"] = "Do a chicken emote at Innkeeper Firebrew, and in exchange you\'ll receive an Ironforge Mint!",
     ["D"] = "Ah, trick-or-treating for a sick child, are we?  I was going to say, you\'re a little old to be rummaging about for candies...$B$BWell, for my treat - an Ironforge Mint - you will need to... cluck like a chicken!  Yes, chickens love mints... well OK, maybe they don\'t LOVE them... but I won\'t give you a mint unless you chicken cluck for me!$B$BWell $c, are you up to the challenge or not?!  Time to earn your treat!",
-  },
-  [8354] = {
-    ["T"] = "닭 흉내 내고 박하사탕 얻기",
-    ["O"] = "Do a chicken emote at Innkeeper Norman, and in exchange you\'ll receive an Undercity Mint!",
-    ["D"] = "Chicken Clucking for a MintThis quest is disabled until patch 1.8",
   },
   [8354] = {
     ["T"] = "닭 흉내 내고 박하사탕 얻기",
@@ -17422,17 +17397,7 @@ pfDB["quests"]["koKR"] = {
   [8355] = {
     ["T"] = "젤리를 주세요",
     ["O"] = "Do a train emote at Talvash del Kissel, and in exchange you\'ll receive a Gnomeregan Gumdrop!",
-    ["D"] = "Incoming GumdropThis quest is disabled until patch 1.8",
-  },
-  [8355] = {
-    ["T"] = "젤리를 주세요",
-    ["O"] = "Do a train emote at Talvash del Kissel, and in exchange you\'ll receive a Gnomeregan Gumdrop!",
     ["D"] = "A trick-or-treater!  Huzzah!$B$BWell now, even though you\'re doing something noble and collecting candies for a sick child, I can\'t let you off the hook that easily.  I have a yummy Gnomeregan Gumdrop to give to the sick child... if you make a train noise for me!  Haha, yes, that\'ll be the trick!  The price of this gumdrop is one train noise!$B$BChugga-chugga, $c!",
-  },
-  [8356] = {
-    ["T"] = "힘자랑하고 초코바 얻기",
-    ["O"] = "Do a flex emote at Innkeeper Allison, and in exchange you\'ll receive Stormwind Nougat!",
-    ["D"] = "Flexing for NougatThis quest is disabled until patch 1.8",
   },
   [8356] = {
     ["T"] = "힘자랑하고 초코바 얻기",
@@ -17442,17 +17407,7 @@ pfDB["quests"]["koKR"] = {
   [8357] = {
     ["T"] = "춤추고 양갱 얻기",
     ["O"] = "Do a dance emote at Innkeeper Saelienne, and in exchange you\'ll receive Darnassus Marzipan!",
-    ["D"] = "Dancing for MarzipanThis quest is disabled until patch 1.8",
-  },
-  [8357] = {
-    ["T"] = "춤추고 양갱 얻기",
-    ["O"] = "Do a dance emote at Innkeeper Saelienne, and in exchange you\'ll receive Darnassus Marzipan!",
     ["D"] = "Even though you\'re trick-or-treating for a sick child, you still need to perform a trick for the treat!  We can\'t very well change the tradition, now can we...$B$BI believe the cost of a piece of marzipan nowadays is to bust out and DANCE!  That\'s right, let me see your moves!  Dance for me, and I\'ll give you some tasty marzipan!",
-  },
-  [8358] = {
-    ["T"] = "젤리를 주세요",
-    ["O"] = "Do a train emote at Kali Remik, and in exchange you\'ll receive a Darkspear Gumdrop!",
-    ["D"] = "Incoming GumdropThis quest is disabled until patch 1.8",
   },
   [8358] = {
     ["T"] = "젤리를 주세요",
@@ -17462,17 +17417,7 @@ pfDB["quests"]["koKR"] = {
   [8359] = {
     ["T"] = "힘자랑하고 초코바 얻기",
     ["O"] = "Do a flex emote at Innkeeper Gryshka, and in exchange you\'ll receive Orgrimmar Nougat!",
-    ["D"] = "Flexing for NougatThis quest is disabled until patch 1.8",
-  },
-  [8359] = {
-    ["T"] = "힘자랑하고 초코바 얻기",
-    ["O"] = "Do a flex emote at Innkeeper Gryshka, and in exchange you\'ll receive Orgrimmar Nougat!",
     ["D"] = "That\'s an... interesting costume you have on.  Even though you\'re being nice and helping a sick child trick-or-treat this year, I\'m afraid I\'m going to have to ask you perform a trick for me!$B$BLet\'s see... you look so strong and buff in that... costume... let\'s see you flex!  Yes, go on now and flex for me, strong $g man : woman;!$B$BWhen and only when you flex, I\'ll give you some tasty Orgrimmar Nougat.  It\'s a great Hallow\'s End treat.",
-  },
-  [8360] = {
-    ["T"] = "춤추고 양갱 얻기",
-    ["O"] = "Do a dance emote at Innkeeper Pala, and in exchange you\'ll receive Thunder Bluff Marzipan!",
-    ["D"] = "Dancing for MarzipanThis quest is disabled until patch 1.8",
   },
   [8360] = {
     ["T"] = "춤추고 양갱 얻기",
@@ -17543,11 +17488,6 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "소나무의 힘",
     ["O"] = "Use a Stink Bomb Cleaner to remove any Forsaken Stink Bomb that\'s been dropped on Southshore.  Return to Sergeant Hartman in Southshore when you\'re done.",
     ["D"] = "The thing I hate the most about Hallow\'s End are the stink bombs the Forsaken use on Southshore.  Who knew that celebrating liberation would have to involve such a smelly mess?$B$BDuring Hallow\'s End, use this cleaner to remove any nasty stink bombs the Horde may drop here in the village.  It uses the power of pine to fight funky smells.$B$BDo your part to keep Southshore clean, and I\'ll give you some Hallow\'s End treats I\'m sure you\'ll enjoy.  We have a deal?",
-  },
-  [8373] = {
-    ["T"] = "소나무의 힘",
-    ["O"] = "",
-    ["D"] = "",
   },
   [8374] = {
     ["T"] = "Claiming Arathi Basin",
@@ -17919,6 +17859,11 @@ pfDB["quests"]["koKR"] = {
     ["O"] = "Travel north along the main road in Felwood and speak with the furbolg named Nafien.  He stands guard outside the entrance to Timbermaw Hold.",
     ["D"] = "Perhaps you are capable of handling a larger threat that we Timbermaw face.  You certainly have shown yourself capable here...$B$BAnother of my kind stands guard outside the entrance to Timbermaw Hold, along this road far to the north.  His name is Nafien; while he may appear to be a feral and unsavory beast, fear him not.  He only seeks aid against the malign forces that threaten our home.",
   },
+  [8464] = {
+    ["T"] = "겨울눈 일족의 동태",
+    ["O"] = "Salfa wants you to kill 8 Winterfall Totemics, 8 Winterfall Den Watchers, and 8 Winterfall Pathfinders.",
+    ["D"] = "The Timbermaw tend to stay to themselves, $N. While we do allow safe passage to those that have proven they can be trusted, we try to avoid other furbolg tribes if at all possible.$B$BLately I have noticed that the Winterfall tribe has become increasingly hostile towards us. They seem to be in a state of rage, completely engulfed by their own fear and hatred of anything they do not understand.$B$BIf you could reduce their numbers this would help us greatly, $N.",
+  },
   [8465] = {
     ["T"] = "Speak to Salfa",
     ["O"] = "Travel through Timbermaw Hold and exit into Winterspring.  Speak with Salfa, who stands guard outside the entrance to Timbermaw Hold.",
@@ -18169,11 +18114,6 @@ pfDB["quests"]["koKR"] = {
     ["O"] = "Contact Cenarion Scout Azenel inside Hive\'Zora and return the Hive\'Zora Scout Report to Windcaller Proudhorn at Cenarion Hold.  You must also bring Tactical Task Briefing VI in order to complete this quest.",
     ["D"] = "We\'ve sent our best scouts deep into the silithid hives to gather intelligence.  Scout Azenel has been watching the silithid movements at Hive\'Zora for several days now.  Find her and obtain a written report.  We need to be able to act on that information as soon as possible, $N.",
   },
-  [8534] = {
-    ["T"] = "하이브조라 정찰 보고서",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8535] = {
     ["T"] = "백색 기사단",
     ["O"] = "Summon and slay a Hoary Templar and report back to Bor Wildmane in Cenarion Hold.  You must also bring Tactical Task Briefing IV in order to complete this quest.",
@@ -18270,11 +18210,6 @@ pfDB["quests"]["koKR"] = {
     ["D"] = "Negolash is a hungry giant.$B$BWhen the giants destroyed our ship, Negolash went straight for my kitchen.  He wasn\'t hungry for crew like the other giants.  Negolash wanted wine...and my Barbecued Buzzard Wings.  They\'re my specialty, and I had to go all the way to the Badlands for the recipe!$B$BIf you want to lure the giant, then get some wine and a heap of buzzard wings.  Put them in our old lifeboat, southeast of here along the coast.  When Negolash smells all that food, he\'ll come for sure!",
   },
   [8555] = {
-    ["T"] = "[DISABLED] The Charge of the Dragonflights",
-    ["O"] = "",
-    ["D"] = "The Charge of the DragonflightsThis quest is disabled until patch 1.9.",
-  },
-  [8555] = {
     ["T"] = "The Charge of the Dragonflights",
     ["O"] = "",
     ["D"] = "",
@@ -18358,11 +18293,6 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "Stalwart\'s Battlegear",
     ["O"] = "Bring 15 Cenarion Combat Badges, 20 Cenarion Logistics Badges, 17 Cenarion Tactical Badges and 1 Mark of Remulos to Vargus at Cenarion Hold in Silithus.  You must also attain Revered reputation with Cenarion Circle to be able to complete this quest.",
     ["D"] = "The badges you collect from performing combat, logistics and tactical assignments for Windcaller Proudhorn are more than just for show, $N.$B$BYou\'d be wise to hold on to them.  As you prove your loyalty to our organization I can offer you some of the gear we reserve for our closest allies in exchange for those badges.",
-  },
-  [8575] = {
-    ["T"] = "[DISABLED] Azuregos\'s Magical Ledger",
-    ["O"] = "Deliver Azuregos\'s Magical Ledger to Narain Soothfancy in Tanaris.",
-    ["D"] = "Azuregos\'s Magical LedgerThis quest is disabled until patch 1.9.",
   },
   [8575] = {
     ["T"] = "Azuregos\'s Magical Ledger",
@@ -18485,11 +18415,6 @@ pfDB["quests"]["koKR"] = {
     ["D"] = "<The text on this note is made up of various typefaces glued onto the parchment\'s surface.>$B$BWe\'ve got your precious book, gnome. If you ever want to see it again, you\'ll do exactly as we ask.$B$B<A detailed set of instructions is listed, spanning 3 pages.>$B$BBring the money and come alone!",
   },
   [8599] = {
-    ["T"] = "[DISABLED] Love Song for Narain",
-    ["O"] = "Take Meridith\'s Love Letter to Narain Soothfancy in Tanaris.",
-    ["D"] = "Love Song for NarainThis quest is disabled until patch 1.9.",
-  },
-  [8599] = {
     ["T"] = "Love Song for Narain",
     ["O"] = "Take Meridith\'s Love Letter to Narain Soothfancy in Tanaris.",
     ["D"] = "It isn\'t often that I get visitors. As a matter of fact, the last time I had a visitor was when I rescued that dear, sweet gnome from the wreckage of the crashed flying machine.$B$B<Meridith gazes into nothingness, lost in a memory.>$B$BDo you know him? Narain? Narain Soothfancy? Oh it would mean so much to me if somebody would deliver a message to him for me. I must tell him how I feel! I know it\'s love! I just know it!$B$BCould you possibly deliver a message to Narain? I would be forever indebted to you!",
@@ -18583,11 +18508,6 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "장로 몬딥",
     ["O"] = "",
     ["D"] = "",
-  },
-  [8620] = {
-    ["T"] = "[DISABLED] The Only Prescription",
-    ["O"] = "Recover the 8 lost chapters of Draconic for Dummies and combine them with the Magical Book Binding and return the completed book of Draconic for Dummies: Volume II to Narain Soothfancy in Tanaris.",
-    ["D"] = "The Only PrescriptionThis quest is disabled until patch 1.9",
   },
   [8620] = {
     ["T"] = "The Only Prescription",
@@ -18876,6 +18796,11 @@ pfDB["quests"]["koKR"] = {
   },
   [8677] = {
     ["T"] = "장로 다크혼",
+    ["O"] = "",
+    ["D"] = "",
+  },
+  [8678] = {
+    ["T"] = "장로 윗후프",
     ["O"] = "",
     ["D"] = "",
   },
@@ -19179,20 +19104,10 @@ pfDB["quests"]["koKR"] = {
     ["O"] = "Contact Cenarion Scout Landion inside Hive\'Regal and return the Hive\'Regal Scout Report to Windcaller Proudhorn at Cenarion Hold.  You must also bring Tactical Task Briefing VII in order to complete this quest.",
     ["D"] = "We\'ve sent our best scouts deep into the silithid hives to gather intelligence.  Scout Landion has been watching the silithid movements at Hive\'Regal for several days now.  Find him and obtain a written report.  We need to be able to act on that information as soon as possible, $N.",
   },
-  [8738] = {
-    ["T"] = "하이브레갈 정찰 보고서",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8739] = {
     ["T"] = "하이브아쉬 정찰 보고서",
     ["O"] = "Contact Cenarion Scout Jalia inside Hive\'Ashi and return the Hive\'Ashi Scout Report to Windcaller Proudhorn at Cenarion Hold.  You must also bring Tactical Task Briefing VIII in order to complete this quest.",
     ["D"] = "We\'ve sent our best scouts deep into the silithid hives to gather intelligence.  Scout Jalia has been watching the silithid movements at Hive\'Ashi for several days now.  Find her and obtain a written report.  We need to be able to act on that information as soon as possible, $N.",
-  },
-  [8739] = {
-    ["T"] = "하이브아쉬 정찰 보고서",
-    ["O"] = "",
-    ["D"] = "",
   },
   [8740] = {
     ["T"] = "황혼의 약탈자",
@@ -20019,6 +19934,11 @@ pfDB["quests"]["koKR"] = {
     ["O"] = "Get a Stormwind Guard\'s Card and return it to Aristan Mottar in Stormwind.",
     ["D"] = "There\'s something unnatural about this epidemic of love. It\'s not proper, it\'s an eyesore, and at worst, it could be a threat to the the safety of the Alliance itself.$b$bJust think: what if the guards have been taken in by this strange affliction? Something must be done.$b$bGo to one of the guards here in Stormwind and see if they\'ve been caught up in this foolishness.",
   },
+  [8904] = {
+    ["T"] = "사랑이라는 위험한 병",
+    ["O"] = "Get a Guardian\'s Moldy Card and bring it to Fenstad Argyle in the Undercity.",
+    ["D"] = "There\'s something unnatural about this epidemic of love. It\'s disgusting, and as it lowers our defenses, it could be a threat to the all of us.$B$BIt\'s bad enough that so many of our people are caught up in this ridiculous behavior. But I think that it has spread even to our guardians, who should be immune to such things.$B$BFind one of our guardians and see if they\'ve been caught up in this foolishness.",
+  },
   [8905] = {
     ["T"] = "An Earnest Proposition",
     ["O"] = "Acquire 15 Winterspring Blood Samples and 20 gold and bring them along with a set of Wildheart Bracers to Deliana in Ironforge.",
@@ -20118,11 +20038,6 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "Hunting for Ectoplasm",
     ["O"] = "Use the Ectoplasmic Distiller near incorporeal undead to collect 12 Scorched Ectoplasms in Silithus, 12 Frozen Ectoplasms in Winterspring and 12 Stable Ectoplasms in the Eastern Plaguelands.  Bring them along with the Ectoplasmic Distiller back to Mux Manascrambler in Gadgetzan.",
     ["D"] = "A fine piece of engineering, if I do say so myself!  You will need to travel a bit, I\'m afraid, in order to find the incorporeal undead we require.$B$BYou see, different climates lend different consistencies to the spectral fabric of the dead.  The tortured night elves of Silithus, the spirits of the highborne from Winterspring and the ghosts and banshees of the Eastern Plaguelands should give us the different types of ectoplasm we need.  Be sure to place the distiller nearby before you harvest them!",
-  },
-  [8924] = {
-    ["T"] = "[DISABLED] Hunting for Ectoplasm",
-    ["O"] = "",
-    ["D"] = "",
   },
   [8925] = {
     ["T"] = "A Portable Power Source",
@@ -20359,20 +20274,10 @@ pfDB["quests"]["koKR"] = {
     ["O"] = "Bring the Extra-Dimensional Ghost Revealer  to Deliana in Ironforge.",
     ["D"] = "It\'s been great working with you, $N.  Here is the finished product.$B$BI hope it helps you in your current endeavors.  And hey, if you don\'t mind, help spread the word.  I wouldn\'t mind having more customers!",
   },
-  [8977] = {
-    ["T"] = "[DISABLED] Return to Deliana",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8978] = {
     ["T"] = "Return to Mokvar",
     ["O"] = "Return to Mokvar in Orgrimmar with the Extra-Dimensional Ghost Revealer.",
     ["D"] = "It\'s been great working with you, $N.  Here is the finished product.$B$BI hope it helps you in your current endeavors.  And hey, if you don\'t mind, help spread the word.  I wouldn\'t mind having more customers!",
-  },
-  [8978] = {
-    ["T"] = "[DISABLED] Return to Mokvar",
-    ["O"] = "",
-    ["D"] = "",
   },
   [8979] = {
     ["T"] = "펜스타드의 육감",
@@ -20444,6 +20349,11 @@ pfDB["quests"]["koKR"] = {
     ["O"] = "Use the Brazier of Beckoning to summon forth the spirit of Kormok and slay him. Return to Bodley inside Blackrock Mountain with the recombined Lord Valthalak\'s Amulet and the Brazier of Beckoning.",
     ["D"] = "Now we have what we need, so it\'s time to discuss who it is that you\'ll be summoning next.$B$BKormok was ok for an ogre, right up until he turned to necromancy. After that, things got creepy for just about everyone in the outfit. It was no surprise then when he took his piece of the amulet and returned to his new home, Scholomance.$B$BBut even there, or perhaps especially there, he was not safe from the spectral assassins. They slew him right in front of his master, Ras Frostwhisper.",
   },
+  [8993] = {
+    ["T"] = "선물 증정",
+    ["O"] = "",
+    ["D"] = "",
+  },
   [8994] = {
     ["T"] = "Final Preparations",
     ["O"] = "Gather 40 Blackrock Bracers and acquire a Flask of Supreme Power. Return them to Bodley inside Blackrock Mountain.",
@@ -20458,11 +20368,6 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "Return to Bodley",
     ["O"] = "Return to Bodley inside Blackrock Mountain and give him the Brazier of Beckoning.",
     ["D"] = "I will ignore your impertinence this time, $c, because you have done a noble thing today; returning the rest of my stolen spirit to me. Despite your obviously weak nature, $r, you have shown courage where those that stole from me did not, and probably never could!$B$BReturn to them, before I change my mind and slay you where you stand. Go back and tell them that they are safe... for now.",
-  },
-  [8996] = {
-    ["T"] = "[DISABLED] Return to Bodley",
-    ["O"] = "",
-    ["D"] = "",
   },
   [8997] = {
     ["T"] = "Back to the Beginning",

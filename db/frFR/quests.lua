@@ -6834,11 +6834,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Lancer trois Boules puantes des Réprouvés au milieu d’Austrivage en Hautebrande, puis revenez voir la sombre imploratrice Yanka à la Fête de l’homme d’osier, aux Clairières de Tirisfal.",
     ["D"] = "Nous allons célébrer la Sanssaint en grande pompe… en en faisant voir de toutes les couleurs à nos ennemis d’Austrivage !$B$BPrenez l’une de ces boules puantes conçues spécialement pour l’occasion. Elle est remplie d’une substance nauséabonde dont aucun humain - ou aucune bête à l’esprit simple, d’ailleurs - ne peut supporter l’odeur. Il faut la jeter au beau milieu d’Austrivage pour qu’elle agisse correctement, donc attendez-vous à combattre l’Alliance !$B$BQuand vous aurez accompli cette tâche… cet hommage à notre libération, revenez me voir !",
   },
-  [1657] = {
-    ["T"] = "Empuantir Austrivage",
-    ["O"] = "Lancer trois Boules puantes des Réprouvés au milieu d’Austrivage en Hautebrande, puis revenez voir la sombre imploratrice Yanka à la Fête de l’homme d’osier, aux Clairières de Tirisfal.",
-    ["D"] = "Nous allons célébrer la Sanssaint en grande pompe… en en faisant voir de toutes les couleurs à nos ennemis d’Austrivage !$B$BPrenez l’une de ces boules puantes conçues spécialement pour l’occasion. Elle est remplie d’une substance nauséabonde dont aucun humain - ou aucune bête à l’esprit simple, d’ailleurs - ne peut supporter l’odeur. Il faut la jeter au beau milieu d’Austrivage pour qu’elle agisse correctement, donc attendez-vous à combattre l’Alliance !$B$BQuand vous aurez accompli cette tâche… cet hommage à notre libération, revenez me voir !",
-  },
   [1658] = {
     ["T"] = "Un intrus à la Fête de l\'homme d\'osier",
     ["O"] = "Allez voir la Fête de l\'homme d\'osier des Réprouvés dans les clairières de Tirisfal. Revenez voir le Sergent Hartman à Austrivage quand ce sera fait.",
@@ -8088,6 +8083,11 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Kirith",
     ["O"] = "Découvrir ce qui est arrivé au Lieutenant Kirith.",
     ["D"] = "Un chapitre de vos aventures se termine, un autre commence, $N.$B$BL\'un de mes hommes manque toujours à l\'appel, il est perdu quelque part dans ces terres. Je parle du lieutenant Kirith, bien sûr.$B$BComme je l\'ai déjà dit, nous avons été tous deux capturés et torturés par Allistarj mais, pauvre Kirith, sa force a vacillé. Depuis ma cage, je pouvais entendre ce qu’il subissait, ses cris résonnaient dans toute la caverne. Je ne l’ai plus vu depuis.",
+  },
+  [2741] = {
+    ["T"] = "Le Super-Oeuf-O-Matic",
+    ["O"] = " ",
+    ["D"] = "",
   },
   [2741] = {
     ["T"] = "Le Super-Oeuf-O-Matic",
@@ -13459,11 +13459,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Grifleur veut que vous prouviez votre valeur en tuant 5 Guerriers Mort-bois, 5 Guides Mort-bois et 5 Jardiniers Mort-bois.",
     ["D"] = "Les Grumegueules sont les seuls furbolgs à avoir résisté à la corruption. Pourtant, de nombreuses races exécutent maintenant tous les furbolgs, sans distinction, sans même prendre le temps de s\'assure qu\'ils sont amis ou des ennemis. Pour cette raison, les Grumegueules sont devenus farouches et ne font plus confiance à personne.$B$BVoulez-vous faire vos preuves et faire montre de courage ? Si vous forcez la tribu corrompue des Mort-bois à battre en retraite, nous vous considérerons peut-être comme un être digne de confiance. Vous trouverez les guerriers, les guides et les jardiniers Mort-bois plus bas vers le sud.",
   },
-  [6131] = {
-    ["T"] = "Allié des Grumegueules",
-    ["O"] = "Grifleur veut que vous prouviez votre valeur en tuant 5 Guerriers Mort-bois, 5 Guides Mort-bois et 5 Jardiniers Mort-bois.",
-    ["D"] = "Les Grumegueules sont les seuls furbolgs à avoir résisté à la corruption. Pourtant, de nombreuses races exécutent maintenant tous les furbolgs, sans distinction, sans même prendre le temps de s\'assure qu\'ils sont amis ou des ennemis. Pour cette raison, les Grumegueules sont devenus farouches et ne font plus confiance à personne.$B$BVoulez-vous faire vos preuves et faire montre de courage ? Si vous forcez la tribu corrompue des Mort-bois à battre en retraite, nous vous considérerons peut-être comme un être digne de confiance. Vous trouverez les guerriers, les guides et les jardiniers Mort-bois plus bas vers le sud.",
-  },
   [6132] = {
     ["T"] = "Faites-moi sortir de là !",
     ["O"] = "Escorter Melizza Razzkankan, puis parler à Hornizz Razzkankan au cimetière des Kodos en Désolace.",
@@ -13593,11 +13588,6 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Les Mort-bois du nord",
     ["O"] = "Nafien veut que vous tuiez 5 Protecteurs Mort-bois, 5 Vengeurs Mort-bois et 5 Chamans Mort-bois.",
     ["D"] = "Au sud-ouest se trouve un camp de furbolgs Mort-bois. Il empeste la corruption, et je veux que ce soit résolu avant de devenir un problème.$B$BLa tribu Mort-bois est maléfique, mais c\'est parce que la corruption a souillé leurs esprits. Leur hostilité n\'est pas innée, mais ils ne peuvent plus être aidés. Pour cette raison, j\'ai l\'immense tristesse de devoir combattre mes propres frères.$B$BS\'il vous plaît, $N, faites ce qui doit être fait. Inutile de me donner les détails, ils me mettraient trop mal à l\'aise.",
-  },
-  [6241] = {
-    ["T"] = "Les Tombe-hiver s\'agitent",
-    ["O"] = "Salfa voudrait que vous tuiez 6 Totémiques, 6 Gardes et 6 Guides de la tribu Tombe-hiver.",
-    ["D"] = "Les Grumegueules ont tendance à rester entre eux, $N. Bien que nous laissions passer ceux en qui nous avons toute confiance, nous essayons d\'éviter les autres tribus de furbolgs, si cela est possible.$B$BDernièrement, j\'ai remarqué que la tribu Tombe-hiver montrait des signes d\'hostilité à notre égard. Ils semblent être dans un étrange état de rage, rendus furieux par tout ce qui les effraie et qu\'il ne comprennent pas.$B$BSi vous pouviez en réduire le nombre, cela nous aiderait grandement, $N.",
   },
   [6241] = {
     ["T"] = "Les Tombe-hiver s\'agitent",
@@ -15408,11 +15398,6 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Examiner le Calice",
     ["O"] = "Examiner le Calice de la renaissance et le rapporter au généralissime Demitrian.",
     ["D"] = "Examinez le Calice de la renaissance, $gmortel:mortelle;. C\'est grâce à lui que le Cherchevent reviendra !",
-  },
-  [7786] = {
-    ["T"] = "Tonneraan le Cherchevent",
-    ["O"] = "Pour libérer Tonneraan le Cherchevent de sa prison, vous devez présenter au généralissime Demitrian les moitiés droite et gauche des Liens du Cherchevent, 10 barres d\'élémentium, et l\'Essence du Seigneur du feu.",
-    ["D"] = "Je vous ai dit tout ce que je sais, $N. C\'est à vous de trouver l\'élémentium. C\'est à vous de détruire la forme physique du Seigneur du feu.$B$BSi vous y parvenez, vous recevrez la bénédiction de Tonneraan.",
   },
   [7786] = {
     ["T"] = "Tonneraan le Cherchevent",
@@ -17404,25 +17389,10 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Utilisez l\'emote /poulet devant l\'aubergiste Brassefeu, et vous recevrez en échange un bonbon à la menthe de Forgefer !",
     ["D"] = "Ah, vous faites les blagues de la Sanssaint pour un enfant malade, c\'est cela ? Je me disais aussi, vous êtes un peu $gvieux:vieille; pour quémander des bonbons…$B$BEh bien, pour que je vous donne un bonbon - un véritable bonbon à la menthe de Forgefer - vous devrez… caqueter comme un poulet ! Oui, oui, les poulets adorent les bonbons à la menthe… Bon, d\'accord, peut-être qu\'ils ne les ADORENT pas… mais je ne vous en donnerai pas si vous n\'imitez pas le poulet pour moi !$B$BAlors, $C, vous êtes $gprêt:prête; à relever le défi ? C\'est le moment de gagner votre bonbon !",
   },
-  [8353] = {
-    ["T"] = "Caqueter pour un bonbon à la menthe",
-    ["O"] = "Utilisez l\'emote /poulet devant l\'aubergiste Brassefeu, et vous recevrez en échange un bonbon à la menthe de Forgefer !",
-    ["D"] = "Ah, vous faites les blagues de la Sanssaint pour un enfant malade, c\'est cela ? Je me disais aussi, vous êtes un peu $gvieux:vieille; pour quémander des bonbons…$B$BEh bien, pour que je vous donne un bonbon - un véritable bonbon à la menthe de Forgefer - vous devrez… caqueter comme un poulet ! Oui, oui, les poulets adorent les bonbons à la menthe… Bon, d\'accord, peut-être qu\'ils ne les ADORENT pas… mais je ne vous en donnerai pas si vous n\'imitez pas le poulet pour moi !$B$BAlors, $C, vous êtes $gprêt:prête; à relever le défi ? C\'est le moment de gagner votre bonbon !",
-  },
   [8354] = {
     ["T"] = "Caqueter pour un bonbon à la menthe",
     ["O"] = "Utilisez l\'emote /poulet devant l\'aubergiste Norman, et vous recevrez en échange un bonbon à la menthe de Fossoyeuse !",
     ["D"] = "Ah, vous faites les blagues de la Sanssaint pour une petite fille malade, c\'est cela ? Je me disais aussi, vous êtes un peu $gvieux:vieille; pour quémander des bonbons…$B$BEh bien, pour que je vous donne un bonbon - un véritable bonbon à la menthe de Fossoyeuse - vous devrez… caqueter comme un poulet ! Oui, oui, les poulets adorent les bonbons à la menthe… Bon, d\'accord, peut-être qu\'ils ne les ADORENT pas… mais je ne vous en donnerai pas si vous n\'imitez pas le poulet pour moi !$B$BAlors, $C, vous êtes $gprêt:prête; à relever le défi ? C\'est le moment de gagner votre bonbon !",
-  },
-  [8354] = {
-    ["T"] = "Caqueter pour un bonbon à la menthe",
-    ["O"] = "Utilisez l\'emote /poulet devant l\'aubergiste Norman, et vous recevrez en échange un bonbon à la menthe de Fossoyeuse !",
-    ["D"] = "Ah, vous faites les blagues de la Sanssaint pour une petite fille malade, c\'est cela ? Je me disais aussi, vous êtes un peu $gvieux:vieille; pour quémander des bonbons…$B$BEh bien, pour que je vous donne un bonbon - un véritable bonbon à la menthe de Fossoyeuse - vous devrez… caqueter comme un poulet ! Oui, oui, les poulets adorent les bonbons à la menthe… Bon, d\'accord, peut-être qu\'ils ne les ADORENT pas… mais je ne vous en donnerai pas si vous n\'imitez pas le poulet pour moi !$B$BAlors, $C, vous êtes $gprêt:prête; à relever le défi ? C\'est le moment de gagner votre bonbon !",
-  },
-  [8355] = {
-    ["T"] = "Boule de gomme en approche",
-    ["O"] = "Utilisez l\'emote /tchou devant Talvash del Kissel, et vous recevrez en échange une boule de gomme de Gnomeregan !",
-    ["D"] = "$gUn quémandeur:une quémandeuse; de bonbons ! Hourra !$B$BBon, même si vous faites quelque chose de noble en récupérant des bonbons pour un enfant malade, je ne peux pas vous laisser vous en sortir si facilement. J\'ai une délicieuse boule de gomme de Gnomeregan pour le gamin, que je vous donnerai si… vous imitez le bruit du train pour moi ! Haha, oui, c\'est une bonne blague ! Le prix de cette boule de gomme est d\'imiter le train ! Tchou-tchou, $C !",
   },
   [8355] = {
     ["T"] = "Boule de gomme en approche",
@@ -17434,16 +17404,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Utilisez l\'emote /frime devant l\'aubergiste Allison, et vous recevrez en échange du nougat de Hurlevent !",
     ["D"] = "C’est un costume très... intéressant, que vous avez là, dites-moi. Même si vous vous montrez sympa et que vous aidez cette année un enfant malade à faire ses blagues de la Sanssaint, j’ai bien peur d’être obligée de vous demander d’accomplir un petit tour pour moi !$b$bVoyons… Vous semblez si $gfort:forte; et si $gmis:mise; en valeur dans ce… costume… Faites donc un peu jouer vos muscles ! Allez, ne soyez pas timide, frimez un peu pour moi, jeune $ghomme:femme; !$b$bQuand je vous aurai vu bander vos muscles, je vous donnerai de cet excellent nougat de Hurlevent. C’est un fameux bonbon de la Sanssaint.",
   },
-  [8356] = {
-    ["T"] = "Montrer ses muscles pour du nougat",
-    ["O"] = "Utilisez l\'emote /frime devant l\'aubergiste Allison, et vous recevrez en échange du nougat de Hurlevent !",
-    ["D"] = "C’est un costume très... intéressant, que vous avez là, dites-moi. Même si vous vous montrez sympa et que vous aidez cette année un enfant malade à faire ses blagues de la Sanssaint, j’ai bien peur d’être obligée de vous demander d’accomplir un petit tour pour moi !$b$bVoyons… Vous semblez si $gfort:forte; et si $gmis:mise; en valeur dans ce… costume… Faites donc un peu jouer vos muscles ! Allez, ne soyez pas timide, frimez un peu pour moi, jeune $ghomme:femme; !$b$bQuand je vous aurai vu bander vos muscles, je vous donnerai de cet excellent nougat de Hurlevent. C’est un fameux bonbon de la Sanssaint.",
-  },
-  [8357] = {
-    ["T"] = "Danser pour du massepain",
-    ["O"] = "Utilisez l\'emote /danser devant l\'aubergiste Saelienne, et vous recevrez en échange du massepain de Darnassus !",
-    ["D"] = "Même si vous faites la tournée de la Sanssaint pour un enfant malade, vous devez quand même faire un petit tour pour obtenir un bonbon ! Nous ne pouvons pas déroger aux traditions, n\'est-ce pas ?$B$BJe crois que le prix d\'un morceau de massepain aujourd\'hui est de se remuer un peu et de DANSER ! C\'est ça, voyons donc vos pas de danse ! Dansez pour moi, et je vous donnerai un excellent massepain !",
-  },
   [8357] = {
     ["T"] = "Danser pour du massepain",
     ["O"] = "Utilisez l\'emote /danser devant l\'aubergiste Saelienne, et vous recevrez en échange du massepain de Darnassus !",
@@ -17454,25 +17414,10 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Utilisez l\'emote /tchou devant Kali Remik, et vous recevrez en échange une boule de gomme de Sombrelance !",
     ["D"] = "$gUn quémandeur:Une quémandeuse; de bonbons ! Cool, $gl\'ami:l\'amie; !$B$BBon, même si vous faites quelque chose de noble en récupérant des bonbons pour une petite fille malade, je ne peux pas vous laisser vous en sortir si facilement. J\'ai une délicieuse boule de gomme de Sombrelance pour la gamine, que je vous donnerai si… vous imitez le bruit du train pour moi ! Haha, oui, c\'est une bonne blague ! Le prix de cette boule de gomme est d\'imiter le train ! Tchou-tchou, $C !",
   },
-  [8358] = {
-    ["T"] = "Boule de gomme en approche",
-    ["O"] = "Utilisez l\'emote /tchou devant Kali Remik, et vous recevrez en échange une boule de gomme de Sombrelance !",
-    ["D"] = "$gUn quémandeur:Une quémandeuse; de bonbons ! Cool, $gl\'ami:l\'amie; !$B$BBon, même si vous faites quelque chose de noble en récupérant des bonbons pour une petite fille malade, je ne peux pas vous laisser vous en sortir si facilement. J\'ai une délicieuse boule de gomme de Sombrelance pour la gamine, que je vous donnerai si… vous imitez le bruit du train pour moi ! Haha, oui, c\'est une bonne blague ! Le prix de cette boule de gomme est d\'imiter le train ! Tchou-tchou, $C !",
-  },
   [8359] = {
     ["T"] = "Montrer ses muscles pour du nougat",
     ["O"] = "Utilisez l\'emote /frime devant l\'aubergiste Gryshka, et vous recevrez en échange du nougat d\'Orgrimmar !",
     ["D"] = "C\'est un costume très... intéressant, que vous avez là, dites-moi. Même si vous vous montrez sympa et que vous aidez cette année une petite fille malade à faire ses blagues de la Sanssaint, j\'ai bien peur d\'être obligée de vous demander d\'accomplir un petit tour pour moi !$B$BVoyons… Vous semblez si $gfort:forte; et si $gmis:mise; en valeur dans ce… costume… Faites donc un peu jouer vos muscles ! Allez, ne soyez pas timide, frimez un peu pour moi, jeune $ghomme:femme; !$B$BQuand je vous aurai vu bander vos muscles, je vous donnerai de cet excellent nougat d\'Orgrimmar. C\'est un fameux bonbon de la Sanssaint.",
-  },
-  [8359] = {
-    ["T"] = "Montrer ses muscles pour du nougat",
-    ["O"] = "Utilisez l\'emote /frime devant l\'aubergiste Gryshka, et vous recevrez en échange du nougat d\'Orgrimmar !",
-    ["D"] = "C\'est un costume très... intéressant, que vous avez là, dites-moi. Même si vous vous montrez sympa et que vous aidez cette année une petite fille malade à faire ses blagues de la Sanssaint, j\'ai bien peur d\'être obligée de vous demander d\'accomplir un petit tour pour moi !$B$BVoyons… Vous semblez si $gfort:forte; et si $gmis:mise; en valeur dans ce… costume… Faites donc un peu jouer vos muscles ! Allez, ne soyez pas timide, frimez un peu pour moi, jeune $ghomme:femme; !$B$BQuand je vous aurai vu bander vos muscles, je vous donnerai de cet excellent nougat d\'Orgrimmar. C\'est un fameux bonbon de la Sanssaint.",
-  },
-  [8360] = {
-    ["T"] = "Danser pour du massepain",
-    ["O"] = "Utilisez l\'emote /danser devant l\'aubergiste Pala, et vous recevrez en échange du massepain des Pitons du Tonnerre !",
-    ["D"] = "Même si vous faites la tournée de la Sanssaint pour une petite fille malade, vous devez quand même faire un petit tour pour obtenir un bonbon ! Nous ne pouvons pas déroger aux traditions, n\'est-ce pas ?$B$BJe crois que le prix d\'un morceau de massepain aujourd\'hui est de se remuer un peu et de DANSER ! C\'est ça, voyons donc vos pas de danse ! Dansez pour moi, et je vous donnerai un excellent massepain !",
   },
   [8360] = {
     ["T"] = "Danser pour du massepain",
@@ -17538,11 +17483,6 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "La lutte pour le goulet des Chanteguerres",
     ["O"] = "Apportez 3 Marques d\'honneur du goulet des Chanteguerres à un général de brigade de l\'Alliance, devant les champs de bataille.",
     ["D"] = "Les sentinelles d\'Aile-argent sont en guerre contre les voltigeurs Chanteguerre, à cause des destructions perpétrées par les orcs. Cependant, nous avons d\'autres raisons pour défendre tout particulièrement cette forêt que le simple amour de la nature.$B$BLa forêt constitue une barrière stratégique qui protège Orneval contre une attaque à grande échelle. Sans elle, Astranaar serait annexée aux Tarides en moins de deux jours.$B$BFaites votre part dans le combat contre les voltigeurs Chanteguerre, $N ! Pour l\'Alliance !",
-  },
-  [8373] = {
-    ["T"] = "La puissance du pin",
-    ["O"] = "Utilisez le Nettoyeur de boules puantes pour retirer les Boules puantes que les Réprouvés ont lancées sur Austrivage. Retournez voir le sergent Hartman à Austrivage quand vous aurez terminé.",
-    ["D"] = "La chose que je déteste le plus dans la Sanssaint sont les boules puantes que les Réprouvés lancent sur Austrivage. Qui aurait cru que fêter leur libération impliquerait une pagaille aussi nauséabonde ?$B$BPendant la Sanssaint, servez-vous de ce nettoyeur pour retirer toutes les boules puantes immondes que la Horde aura déposées dans le village. Il utilise la puissance du pin pour chasser les odeurs pestilentielles.$B$BSi vous aidez Austrivage à rester propre, je vous donnerai quelques bonbons de la Sanssaint. Je suis sûre que vous les aimerez. Marché conclu ?",
   },
   [8373] = {
     ["T"] = "La puissance du pin",
@@ -17919,6 +17859,11 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Suivre la route principale de Gangrebois vers le nord et parler à Nafien le furbolg. Il monte la garde à côté de l’entrée du repaire des Grumegueules.",
     ["D"] = "Nous autres Grumegueules faisons face à une menace encore plus redoutable. Peut-être serez-vous capable de l’affronter. Vous avez certainement fait la preuve de vos capacités…$B$BUn autre membre de mon espèce monte la garde à l’extérieur de l’entrée du repaire des Grumegueules, assez loin au nord sur cette route. Il s’appelle Nafien. Bien qu’il ait l’air d’un animal farouche et déplaisant, vous n’avez aucune raison de le craindre. Il cherche seulement de l’aide contre les forces maléfiques qui menacent notre foyer.",
   },
+  [8464] = {
+    ["T"] = "Les Tombe-hiver s\'agitent",
+    ["O"] = "Salfa voudrait que vous tuiez 8 Chamans Tombe-hiver, 8 Protecteurs Tombe-hiver et 8 Ursas Tombe-hiver. Salfa se trouve juste à l\'extérieur de l\'entrée du repaire des Grumegueules, au Berceau-de-l\'hiver.",
+    ["D"] = "Les Grumegueules ont tendance à rester entre eux, $N. Nous laissons passer ceux en qui nous avons toute confiance, mais nous essayons d\'éviter les autres tribus de furbolgs, si cela est possible.$B$BDernièrement, j\'ai remarqué que la tribu Tombe-hiver montrait des signes d\'hostilité à notre égard. Ils semblent être dans un étrange état de rage, rendus furieux par tout ce qui les effraie et qu\'ils ne comprennent pas.$B$BJe me vois dans l’obligation de vous demander d’assurer notre sécurité en réduisant leur nombre. Vous les trouverez au village des Tombe-hiver, loin à l’est d’ici.",
+  },
   [8465] = {
     ["T"] = "Parler à Salfa",
     ["O"] = "Traverser le repaire des Grumegueules et sortir au Berceau-de-l’Hiver. Parlez à Salfa, qui monte la garde à l’extérieur du repaire des Grumegueules.",
@@ -18169,11 +18114,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Trouver l’Eclaireur cénarien Azenel dans la Ruche’Zora et ramener le Rapport de reconnaissance de la Ruche’Zora à l’Imploratrice céleste Corne-fière, au Fort cénarien. Pour terminer cette quête, vous devez aussi apporter le Briefing tactique VI.",
     ["D"] = "Nous avons déployé nos meilleurs éclaireurs dans les ruches silithides. L’éclaireur Azenel épie les mouvements des silithides de la Ruche’Zora depuis plusieurs jours. Trouvez-la et demandez-lui un rapport écrit. Nous avons besoin de ces informations dès que possible, $N.",
   },
-  [8534] = {
-    ["T"] = "Rapport de reconnaissance de la Ruche\'Zora",
-    ["O"] = "Trouver l’Eclaireur cénarien Azenel dans la Ruche’Zora et ramener le Rapport de reconnaissance de la Ruche’Zora à l’Imploratrice céleste Corne-fière, au Fort cénarien. Pour terminer cette quête, vous devez aussi apporter le Briefing tactique VI.",
-    ["D"] = "Nous avons déployé nos meilleurs éclaireurs dans les ruches silithides. L’éclaireur Azenel épie les mouvements des silithides de la Ruche’Zora depuis plusieurs jours. Trouvez-la et demandez-lui un rapport écrit. Nous avons besoin de ces informations dès que possible, $N.",
-  },
   [8535] = {
     ["T"] = "Le templier chenu",
     ["O"] = "Invoquez et tuez un Templier chenu, puis allez faire votre rapport à Bor Crin-sauvage, au Fort cénarien. Pour terminer cette quête, vous devez aussi apporter le Briefing tactique IV.",
@@ -18272,11 +18212,6 @@ pfDB["quests"]["frFR"] = {
   [8555] = {
     ["T"] = "Le fardeau des Vols draconiques",
     ["O"] = "",
-    ["D"] = "The Charge of the DragonflightsThis quest is disabled until patch 1.9.",
-  },
-  [8555] = {
-    ["T"] = "Le fardeau des Vols draconiques",
-    ["O"] = "",
     ["D"] = "",
   },
   [8556] = {
@@ -18358,11 +18293,6 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Equipement de guerre de fidèle",
     ["O"] = "Ramener 15 Badges cénariens de combat, 20 Badges cénariens de logistique, 17 Badges cénariens de tactique et 1 Marque de Remulos à Vargus, au Fort cénarien en Silithus. Vous devrez aussi être $gRévéré:Révérée; par le Cercle cénarien pour terminer cette quête.",
     ["D"] = "Les insignes que vous récupérez à la fin de vos missions tactiques, logistiques et de combat pour le compte de l’Imploratrice céleste Corne-fière ne sont pas seulement destinés à faire joli, $N.$B$BConservez-les soigneusement. Au fur et à mesure que vous ferez la preuve de votre loyauté envers notre organisation, vous pourrez les échanger contre le matériel que nous réservons à nos alliés les plus proches.",
-  },
-  [8575] = {
-    ["T"] = "Le grand livre magique d\'Azuregos",
-    ["O"] = "Apporter le Grand livre magique d\'Azuregos à Narain Divinambolesque, en Tanaris.",
-    ["D"] = "Vous ne comprenez pas le moindre mot de ce qui est écrit dans ce livre. Vous ne savez même pas dans quelle langue il est rédigé !",
   },
   [8575] = {
     ["T"] = "Le grand livre magique d\'Azuregos",
@@ -18489,11 +18419,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Transmettre la Lettre d’amour de Meredith à Narain Divinambolesque, en Tanaris.",
     ["D"] = "J’ai très rarement des visiteurs. En fait, je n’avais vu personne depuis la fois où j’ai sauvé ce cher, cher gnome de l’épave de sa machine volante.$B$B<Meredith se plonge dans ses souvenirs, et son regard se perd dans le lointain.>$B$BLe connaissez-vous ? Narain ? Narain Divinambolesque ? J’aimerais beaucoup que quelqu’un lui porte un message. Il faut qu’il sache ce que je ressens pour lui ! C’est de l’amour ! J’en suis sûre !$B$BPourriez-vous me servir de messager ? Je vous en serai éternellement reconnaissante !",
   },
-  [8599] = {
-    ["T"] = "Une chanson d\'amour pour Narain",
-    ["O"] = "Transmettre la Lettre d’amour de Meredith à Narain Divinambolesque, en Tanaris.",
-    ["D"] = "J’ai très rarement des visiteurs. En fait, je n’avais vu personne depuis la fois où j’ai sauvé ce cher, cher gnome de l’épave de sa machine volante.$B$B<Meredith se plonge dans ses souvenirs, et son regard se perd dans le lointain.>$B$BLe connaissez-vous ? Narain ? Narain Divinambolesque ? J’aimerais beaucoup que quelqu’un lui porte un message. Il faut qu’il sache ce que je ressens pour lui ! C’est de l’amour ! J’en suis sûre !$B$BPourriez-vous me servir de messager ? Je vous en serai éternellement reconnaissante !",
-  },
   [8600] = {
     ["T"] = "La Horde a besoin de cuir robuste !",
     ["O"] = "Ramener 10 morceaux de cuir robuste au docteur Serratus dans la Vallée des esprits d\'Orgrimmar.",
@@ -18583,11 +18508,6 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "L\'Ancien Gouffre-du-matin",
     ["O"] = "",
     ["D"] = "",
-  },
-  [8620] = {
-    ["T"] = "Le seul remède",
-    ["O"] = "Retrouver les 8 chapitres perdus du \"Draconique pour les nuls\" et les combiner avec la Reliure magique, puis ramener l’exemplaire réparé du \"Draconique pour les nuls, volume II\" à Narain Divinambolesque, en Tanaris.",
-    ["D"] = "J’aurais dû m’en douter ! Mon ennemi juré, le docteur Dwenfer, a récidivé ! Et maintenant, à cause de votre échec au Berceau-de-l’hiver, le docteur Dwenfer a détruit mon livre ! Comment allez-vous sauver le monde, maintenant ?$B$BD’après le message que j’ai reçu, l’unique exemplaire connu du \"Draconique pour les nuls, volume II\" a été divisé en huit morceaux et dispersé aux quatre vents ! Si par miracle vous parvenez à les récupérer, utilisez cette reliure magique pour les réunir et ramenez-les-moi.",
   },
   [8620] = {
     ["T"] = "Le seul remède",
@@ -18876,6 +18796,11 @@ pfDB["quests"]["frFR"] = {
   },
   [8677] = {
     ["T"] = "L\'Ancienne Sombre-corne",
+    ["O"] = "",
+    ["D"] = "",
+  },
+  [8678] = {
+    ["T"] = "L\'Ancien Corne-fière",
     ["O"] = "",
     ["D"] = "",
   },
@@ -19178,16 +19103,6 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Rapport de reconnaissance de la Ruche\'Regal",
     ["O"] = "Trouver l’Eclaireur cénarien Landion dans la Ruche’Regal et ramener le Rapport de reconnaissance de la Ruche’Regal à l’Imploratrice céleste Corne-fière, au Fort cénarien. Pour terminer cette quête, vous devez aussi apporter le Briefing tactique VII.",
     ["D"] = "Nous avons déployé nos meilleurs éclaireurs dans les ruches silithides. L’éclaireur Landion épie les mouvements des silithides de la Ruche’Regal depuis plusieurs jours. Trouvez-le et demandez-lui un rapport écrit. Nous avons besoin de ces informations dès que possible, $N.",
-  },
-  [8738] = {
-    ["T"] = "Rapport de reconnaissance de la Ruche\'Regal",
-    ["O"] = "Trouver l’Eclaireur cénarien Landion dans la Ruche’Regal et ramener le Rapport de reconnaissance de la Ruche’Regal à l’Imploratrice céleste Corne-fière, au Fort cénarien. Pour terminer cette quête, vous devez aussi apporter le Briefing tactique VII.",
-    ["D"] = "Nous avons déployé nos meilleurs éclaireurs dans les ruches silithides. L’éclaireur Landion épie les mouvements des silithides de la Ruche’Regal depuis plusieurs jours. Trouvez-le et demandez-lui un rapport écrit. Nous avons besoin de ces informations dès que possible, $N.",
-  },
-  [8739] = {
-    ["T"] = "Rapport de reconnaissance de la Ruche\'Ashi",
-    ["O"] = "Trouver l’Eclaireur cénarien Jalia dans la Ruche’Ashi et ramener le Rapport de reconnaissance de la Ruche’Ashi à l’Imploratrice céleste Corne-fière, au Fort cénarien. Pour terminer cette quête, vous devez aussi apporter le Briefing tactique VIII.",
-    ["D"] = "Nous avons déployé nos meilleurs éclaireurs dans les ruches silithides. L’éclaireur Jalia épie les mouvements des silithides de la Ruche’Ashi depuis plusieurs jours. Trouvez-la et demandez-lui un rapport écrit. Nous avons besoin de ces informations dès que possible, $N.",
   },
   [8739] = {
     ["T"] = "Rapport de reconnaissance de la Ruche\'Ashi",
@@ -20019,6 +19934,11 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Obtenez une Carte de garde de Hurlevent et ramenez-là à Aristan Mottar, à Hurlevent.",
     ["D"] = "Cette épidémie d’amour a quelque chose de pas naturel. Ce n’est ni esthétique, ni convenable. Et pire, cela pourrait poser une menace pour la sécurité de l’Alliance toute entière.$B$BQue se passerait-il si les gardes étaient atteints par cette étrange maladie ? Il faut faire quelque chose.$B$BExaminez donc les gardes de Hurlevent et voyez s’ils sont devenus aussi déraisonnables que les autres.",
   },
+  [8904] = {
+    ["T"] = "Dangerous Love",
+    ["O"] = "Get a Guardian\'s Moldy Card and bring it to Fenstad Argyle in the Undercity.",
+    ["D"] = "There\'s something unnatural about this epidemic of love. It\'s disgusting, and as it lowers our defenses, it could be a threat to the all of us.$B$BIt\'s bad enough that so many of our people are caught up in this ridiculous behavior. But I think that it has spread even to our guardians, who should be immune to such things.$B$BFind one of our guardians and see if they\'ve been caught up in this foolishness.",
+  },
   [8905] = {
     ["T"] = "Une proposition sérieuse",
     ["O"] = "Procurez-vous 15 Échantillons de sang du Berceau-de-l\'hiver et 20 pièces d’or, et apportez-les avec une paire de Brassards du Coeur-sauvage à Deliana à Forgefer.",
@@ -20113,11 +20033,6 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Un objet surnaturel",
     ["O"] = "Remettez le Récipient de venin scellé à Mux Brouillemana, à Gadgetzan.",
     ["D"] = "Vous devez être très brave pour être $gresté:restée; dans les parages depuis. Ou alors, cette pièce d\'armure a piqué votre intérêt. J\'en ai d\'autres, si vous acceptez de me donner un coup de main.$B$BLes échantillons de venin que vous avez récoltés sont pour l’une de mes connaissances, un ingénieur nommé Mux Brouillemana. Il s’intéresse au surnaturel, et travaille sur un appareil qui permet de communiquer avec les morts ! Je n’ai plus qu’un espoir : contacter Anthion et en apprendre plus sur ma situation.",
-  },
-  [8924] = {
-    ["T"] = "La chasse aux ectoplasmes",
-    ["O"] = "Utilisez l\'Alambic ectoplasmique à proximité de morts-vivants désincarnés pour recueillir 12 Ectoplasmes brûlés en Silithus, 12 Ectoplasmes glacés au Berceau-de-l\'hiver et 12 Ectoplasmes stables dans les Maleterres de l\'est. Remettez à Mux Brouillemana à Gadgetzan. Il veut aussi récupérer l\'Alambic ectoplasmique.",
-    ["D"] = "Un petit bijou d\'ingénierie, et je ne dis pas ça parce que c\'est moi qui l\'ai construit ! Hum… J\'ai bien peur que vous ne soyez $gobligé:obligée; de voyager un peu pour trouver les morts-vivants désincarnés dont nous avons besoin.$B$BEn fait, les différences climatiques influent sur la consistance de la trame spectrale des morts. Les elfes de la nuit torturés de Silithus, les esprits des bien-nés de Berceau-de-l\'Hiver et les fantômes et les banshees des Maleterres de l\'est devraient nous fournir les différents types d\'ectoplasmes dont nous avons besoin. Pensez à placer l\'alambic à proximité avant de faire la récolte !",
   },
   [8924] = {
     ["T"] = "La chasse aux ectoplasmes",
@@ -20359,16 +20274,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Apportez le Révélateur de fantômes extradimensionnel à Deliana à Forgefer.",
     ["D"] = "Travailler avec vous était très agréable, $N. Voici le produit fini.$B$BJ’espère qu’il vous rendra service dans vos activités présentes. Oh… Et si cela ne vous dérange pas trop, parlez de moi autour de vous. J’aimerais bien avoir davantage de clients.",
   },
-  [8977] = {
-    ["T"] = "Retourner voir Deliana",
-    ["O"] = "Apportez le Révélateur de fantômes extradimensionnel à Deliana à Forgefer.",
-    ["D"] = "Travailler avec vous était très agréable, $N. Voici le produit fini.$B$BJ’espère qu’il vous rendra service dans vos activités présentes. Oh… Et si cela ne vous dérange pas trop, parlez de moi autour de vous. J’aimerais bien avoir davantage de clients.",
-  },
-  [8978] = {
-    ["T"] = "Retourner voir Mokvar",
-    ["O"] = "Retournez voir Mokvar à Orgrimmar avec le Révélateur de fantômes extradimensionnel.",
-    ["D"] = "Travailler avec vous était très agréable, $N. Voici le produit fini.$B$BJ\'espère qu\'il vous rendra service dans vos activités présentes. Oh… Et si cela ne vous dérange pas trop, parlez de moi autour de vous. J\'aimerais bien avoir davantage de clients.",
-  },
   [8978] = {
     ["T"] = "Retourner voir Mokvar",
     ["O"] = "Retournez voir Mokvar à Orgrimmar avec le Révélateur de fantômes extradimensionnel.",
@@ -20444,6 +20349,11 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Utilisez le Brasero de signal pour invoquer l\'esprit de Kormok, puis tuez-le. Retournez voir Bodley, à l\'intérieur du mont Blackrock, avec l\'Amulette du seigneur Valthalak reconstituée et le Brasero de signal.",
     ["D"] = "Maintenant que nous avons tout ce qu\'il nous faut, il est temps que nous parlions de notre prochaine invocation.$B$BPour un ogre, Kormok n\'était pas désagréable, jusqu\'à ce qu\'il se mette à la nécromancie. Après… après, il donnait la chair de poule à tous les membres de la compagnie. Personne n\'a été étonné qu\'il emmène son morceau d\'amulette dans son nouveau foyer, la Scholomance. Même là, ou peut-être « surtout là », il n\'était pas à l\'abri des assassins spectraux. Ils l\'ont tué devant son maître, Ras Murmegivre.",
   },
+  [8993] = {
+    ["T"] = "Gift Giving",
+    ["O"] = "",
+    ["D"] = "",
+  },
   [8994] = {
     ["T"] = "Derniers préparatifs",
     ["O"] = "Collectez 40 Brassards rochenoire et un Flacon de pouvoir suprême. Ensuite, retournez voir Bodley au mont Rochenoire.",
@@ -20453,11 +20363,6 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Mea culpa, seigneur Valthalak",
     ["O"] = "Utilisez le Brasero de signal pour invoquer le seigneur Valthalak. Tuez-le, puis utilisez l’Amulette du seigneur Valthalak sur le corps. Ensuite, rendez l’amulette à l’Esprit du seigneur Valthalak.",
     ["D"] = "Tout est prêt, $N.$B$BLes appartements du seigneur Valthalak se trouvaient dans ce qui est devenu depuis la chambre de la Bête. Allez-y et servez-vous du Brasero de signal pour faire apparaître le seigneur Valthalak. Lorsqu’il redeviendra matériel, vous devrez le tuer une nouvelle fois. Si j’étais vous, je commencerais par m’occuper de la Bête, et je veillerais à emmener assez d’ami pour survivre aux dangers du sommet du pic Rochenoire.$B$BLorsque vous aurez réglé son compte à Valthalak, utilisez l’amulette sur son cadavre. Lorsque son esprit sera réunifié, il voudra probablement la récupérer.$B$BBonne chance !",
-  },
-  [8996] = {
-    ["T"] = "Retourner voir Bodley",
-    ["O"] = "Retournez voir Bodley à l\'intérieur du mont Rochenoire et donnez-lui le Brasero de signal.",
-    ["D"] = "Je vais ignorer votre impertinence pour cette fois, $c, car en me rendant la part de mon esprit qui m’avait été dérobée, vous avez accompli quelque chose de noble. Malgré votre nature faible, $r, vous avez fait preuve de courage, là où ceux qui m’ont volé en ont manqué. Le courage est certainement une notion qui les dépasse !$B$BRetournez les voir, avant que je ne change d’avis et que je ne vous abatte sur place. Allez, et dites-leur qu’ils sont en sécurité… pour l’instant.",
   },
   [8996] = {
     ["T"] = "Retourner voir Bodley",
