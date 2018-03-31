@@ -107,6 +107,49 @@ function pfDatabase:GetHexDifficultyColor(level, force)
   end
 end
 
+-- GetRaceMaskByID
+function pfDatabase:GetRaceMaskByID(id, db)
+  -- 64 + 8 + 4 + 1 = 77 = Alliance
+  -- 128 + 32 + 16 + 2 = 178 = Horde
+  local factionMap = {["A"]=77, ["H"]=178, ["AH"]=255, ["HA"]=255}
+  local raceMask = 0
+
+  if db == "quests" then
+    raceMask = quests[id]["race"] or raceMask
+
+    if (quests[id]["start"]) then
+      local questStartRaceMask = 0
+
+      -- get quest starter faction
+      if (quests[id]["start"]["U"]) then
+        for _, startUnitId in ipairs(quests[id]["start"]["U"]) do
+          if (units[startUnitId]["fac"]) then
+            questStartRaceMask = bit.bor(factionMap[units[startUnitId]["fac"]])
+          end
+        end
+      end
+
+      -- get quest object starter faction
+      if (quests[id]["start"]["O"]) then
+        for _, startObjectId in ipairs(quests[id]["start"]["O"]) do
+          if (objects[startObjectId]["fac"]) then
+            questStartRaceMask = bit.bor(factionMap[objects[startObjectId]["fac"]])
+          end
+        end
+      end
+
+      -- apply starter faction as racemask
+      if questStartRaceMask > 0 and questStartRaceMask ~= raceMask then
+        raceMask = questStartRaceMask
+      end
+    end
+  elseif pfDB[db] and pfDB[db]["data"] and pfDB[db]["data"]["fac"] then
+    raceMask = factionMap[pfDB[db]["data"]["fac"]]
+  end
+
+  return raceMask
+end
+
 -- GetIDByName
 -- Scans localization tables for matching IDs
 -- Returns table with all IDs
