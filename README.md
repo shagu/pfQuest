@@ -1,5 +1,3 @@
-**!! DO NOT DOWNLOAD THE MASTER ARCHIVE !! CHOOSE A DOWNLOAD ON THE [RELEASE PAGE](https://github.com/shagu/pfQuest/releases/latest) INSTEAD !!**
-
 # pfQuest
 This is an addon for World of Warcraft Classic (1.12). It helps players to find several ingame objects and quests. The addon reads questobjectives, parses them and uses its internal database to plot the found matches on the world- and minimap. It ships with a GUI to browse through all known objects. If one of the items is not yet available on your realm, you'll see a [?] in front of the name.
 
@@ -17,7 +15,7 @@ The release page provides downloads for several gameclients. Every build include
 - [EQL3](https://github.com/laytya/EQL3): A reskinned Extended Quest Log addon inspired by TukUI
 
 # Auto-Tracking
-<img src="http://shagu.org/pfQuest/img/map-autotrack.png" float="right" align="right" width="30%">
+<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/map-autotrack.png" float="right" align="right" width="30%">
 The addon features 4 different modes that define how the new or updated questobjectives should be handled. Those modes can be selected on the dropdown menu in the top-right area the map.
 
 ### Option: All Quests
@@ -38,15 +36,15 @@ Nothing will be shown on the map, except for nodes that have been manually added
 
 # Database Browser
 
-<img src="http://shagu.org/pfQuest/img/browser-spawn.png" align="left" width="271">
-<img src="http://shagu.org/pfQuest/img/browser-quests.png" align="left" width="271">
-<img src="http://shagu.org/pfQuest/img/browser-items.png" align="center" width="300">
+<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/browser-spawn.png" align="left" width="30%">
+<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/browser-quests.png" align="left" width="30%">
+<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/browser-items.png" align="center" width="33%">
 
 The database GUI allows you to bookmark and browse through all entries within the pfQuest database. It can be opened by a click on the pfQuest minimap icon or via `/db show`. The browser will show a maximum of 100 entries at once for each tab. Use your scrollwheel or press the up/down arrows to go up and down the list.
 
 
 # Questlog Integration
-<img src="http://shagu.org/pfQuest/img/questlog-integration.png" align="left" width="300">
+<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/questlog-integration.png" align="left" width="300">
 
 shift-click on a selected quest will add a questlink into chat. Those links are similar to the known questlinks from TBC+ and are compatible to ones produced by [ShaguQuest](http://shagu.org/archive/), [Questie](https://github.com/AeroScripts/QuestieDev) and [QuestLink](http://addons.us.to/addon/questlink-0). Additionally a manual quest tracking is available by 3 buttons that show up on every quest in your questlog.
 
@@ -61,14 +59,14 @@ The "Reset" button will restore the default visibility of icons to match the set
 
 
 # Chat/Macro CLI
-<img src="http://shagu.org/pfQuest/img/chat-cli.png">
+<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/chat-cli.png">
 
 The addon features a CLI interface which allows you to easilly create macros to show your favourite herb or mining-veins. Let's say you want to display all **Iron Deposit** deposits, then type in chat or create a macro with the text: `/db spawn Iron Deposit`. If `/db` doesn't work for you, there are also some other aliases available like `/shagu`, `pfquest` and `/pfdb`.
 
 
 # Map & Minimap Nodes
-<img src="http://shagu.org/pfQuest/img/map-quests.png" align="left">
-<img src="http://shagu.org/pfQuest/img/map-spawnpoints.png" width="327">
+<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/map-quests.png" width="55.35%" align="left">
+<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/map-spawnpoints.png" width="39.65%">
 
-<img src="http://shagu.org/pfQuest/img/map-lootchance.png" align="left" width="372">
-<img src="http://shagu.org/pfQuest/img/minimap-nodes.png" width="412">
+<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/map-lootchance.png" width="45%" align="left">
+<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/minimap-nodes.png" width="50%">
