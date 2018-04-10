@@ -15,6 +15,7 @@ pfQuest_defconfig = {
   ["worldmaptransp"] = "1.0",
   ["minimaptransp"] = "1.0",
   ["mindropchance"] = "0",
+  ["colorbyspawn"] = "1",
 }
 
 local function LoadConfig()
@@ -145,6 +146,7 @@ pfQuestConfig:SetScript("OnEvent", function()
     CreateConfigEntry("questlogbuttons",     "Show QuestLog Buttons",          "checkbox")
     CreateConfigEntry("worldmapmenu",        "Show WorldMap Menu",             "checkbox")
     CreateConfigEntry("showids",             "Show IDs",                       "checkbox")
+    CreateConfigEntry("colorbyspawn",        "Color Map Nodes By Spawn",       "checkbox")
     CreateConfigEntry("worldmaptransp",      "WorldMap Node Transparency",     "text")
     CreateConfigEntry("minimaptransp",       "MiniMap Node Transparency",      "text")
     CreateConfigEntry("mindropchance",       "Minimum Drop Chance",            "text")

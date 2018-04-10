@@ -462,10 +462,10 @@ end
 function pfMap:NodeClick()
   if IsShiftKeyDown() then
     pfMap:DeleteNode(this.node[this.title].addon, this.title)
-    pfQuest_history[this.title] = true
+    pfQuest_history[this.color] = true
     pfMap:UpdateNodes()
   else
-    pfQuest_colors[this.title] = { str2rgb(this.title .. GetTime()) }
+    pfQuest_colors[this.color] = { str2rgb(this.color .. GetTime()) }
     pfMap:UpdateNodes()
   end
 end
@@ -502,7 +502,7 @@ function pfMap:BuildNode(name, parent)
   return f
 end
 
-function pfMap:UpdateNode(frame, node)
+function pfMap:UpdateNode(frame, node, color)
   frame.layer = -1
 
   for title, tab in pairs(node) do
@@ -516,6 +516,7 @@ function pfMap:UpdateNode(frame, node)
       frame.spawntype = tab.spawntype
       frame.respawn   = tab.respawn
       frame.level     = tab.level
+      frame.color     = tab[color] or tab.title
       frame.title     = title
 
       if tab.texture then
@@ -523,7 +524,7 @@ function pfMap:UpdateNode(frame, node)
         frame.tex:SetVertexColor(1,1,1)
       else
         frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\node")
-        local r,g,b = str2rgb(title)
+        local r,g,b = str2rgb(frame.color)
         frame.tex:SetVertexColor(r,g,b,1)
       end
 
@@ -543,6 +544,7 @@ function pfMap:UpdateNode(frame, node)
 end
 
 function pfMap:UpdateNodes()
+  local color = pfQuest_config["colorbyspawn"] == "1" and "spawn" or "title"
   local map = pfMap:GetMapID(GetCurrentMapContinent(), GetCurrentMapZone())
   local i = 0
 
@@ -559,7 +561,7 @@ function pfMap:UpdateNodes()
           pfMap.pins[i] = pfMap:BuildNode("pfMapPin" .. i, WorldMapButton)
         end
 
-        pfMap:UpdateNode(pfMap.pins[i], node)
+        pfMap:UpdateNode(pfMap.pins[i], node, color)
 
         if node.translucent then
           pfMap.pins[i]:SetAlpha((tonumber(pfQuest_config["worldmaptransp"]) or 1)/2)
@@ -604,7 +606,7 @@ function pfMap:UpdateMinimap()
     this.xPlayer, this.yPlayer, this.mZoom = xPlayer, yPlayer, mZoom
   end
 
-
+  local color = pfQuest_config["colorbyspawn"] == "1" and "spawn" or "title"
   local mapID = pfMap:GetMapIDByName(GetZoneText())
   local mapZoom = minimap_zoom[minimap_indoor()][mZoom]
   local mapWidth = minimap_sizes[mapID] and minimap_sizes[mapID][1] or 0
@@ -641,7 +643,7 @@ function pfMap:UpdateMinimap()
             pfMap.mpins[i] = pfMap:BuildNode("pfMiniMapPin" .. i, Minimap)
           end
 
-          pfMap:UpdateNode(pfMap.mpins[i], node)
+          pfMap:UpdateNode(pfMap.mpins[i], node, color)
 
           if node.translucent then
             pfMap.mpins[i]:SetAlpha((tonumber(pfQuest_config["minimaptransp"]) or 1)/2)
