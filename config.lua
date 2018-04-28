@@ -4,21 +4,98 @@ pfQuest_config = {}
 
 -- default config
 pfQuest_defconfig = {
-  ["trackingmethod"] = 1,
-  ["allquestgivers"] = "1",
-  ["currentquestgivers"] = "1", -- show quest givers for active quests
-  ["showlowlevel"] = "1",
-  ["minimapnodes"] = "1", -- hide all minimap entries
-  ["questlogbuttons"] = "1", -- shows buttons inside the questlog
-  ["worldmapmenu"] = "1", -- shows the dropdown selection in worldmap
-  ["showids"] = "0",
-  ["worldmaptransp"] = "1.0",
-  ["minimaptransp"] = "1.0",
-  ["mindropchance"] = "0",
-  ["colorbyspawn"] = "1",
+  ["trackingmethod"] = 1, -- 1: All Quests; 2: Tracked; 3: Manual; 4: Hide
+  ["allquestgivers"] = "1", -- Show Available Questgivers
+  ["currentquestgivers"] = "1", -- Show Current Questgiver Nodes
+  ["showlowlevel"] = "1", -- Show Lowlevel Questgiver Nodes
+  ["showhighlevel"] = "1", -- Show Level+3 Questgiver Nodes
+  ["minimapnodes"] = "1", -- Show MiniMap Nodes
+  ["questlogbuttons"] = "1", -- Show QuestLog Buttons
+  ["worldmapmenu"] = "1", -- Show WorldMap Menu
+  ["showids"] = "0", -- Show IDs
+  ["colorbyspawn"] = "1", -- Color Map Nodes By Spawn
+  ["worldmaptransp"] = "1.0", -- WorldMap Node Transparency
+  ["minimaptransp"] = "1.0", -- MiniMap Node Transparency
+  ["mindropchance"] = "0", -- Minimum Drop Chance
 }
 
-local function LoadConfig()
+pfQuestConfig = CreateFrame("Frame", "pfQuestConfig", UIParent)
+pfQuestConfig:Hide()
+pfQuestConfig:SetWidth(280)
+pfQuestConfig:SetHeight(400)
+pfQuestConfig:SetPoint("CENTER", 0, 0)
+pfQuestConfig:SetFrameStrata("TOOLTIP")
+pfQuestConfig:SetMovable(true)
+pfQuestConfig:EnableMouse(true)
+pfQuestConfig:RegisterEvent("ADDON_LOADED")
+pfQuestConfig:SetScript("OnEvent", function()
+  if arg1 == "pfQuest" then
+    pfQuestConfig:LoadConfig()
+    pfQuestConfig:MigrateHistory()
+
+    pfQuestConfig:CreateConfigEntry("allquestgivers",      "Display Available Questgivers",  "checkbox")
+    pfQuestConfig:CreateConfigEntry("currentquestgivers",  "Display Current Questgivers",    "checkbox")
+    pfQuestConfig:CreateConfigEntry("showlowlevel",        "Display Lowlevel Questgivers",   "checkbox")
+    pfQuestConfig:CreateConfigEntry("showhighlevel",       "Display Level+3 Questgivers",    "checkbox")
+    pfQuestConfig:CreateConfigEntry("minimapnodes",        "Show MiniMap Nodes",             "checkbox")
+    pfQuestConfig:CreateConfigEntry("questlogbuttons",     "Show QuestLog Buttons",          "checkbox")
+    pfQuestConfig:CreateConfigEntry("worldmapmenu",        "Show WorldMap Menu",             "checkbox")
+    pfQuestConfig:CreateConfigEntry("showids",             "Show IDs",                       "checkbox")
+    pfQuestConfig:CreateConfigEntry("colorbyspawn",        "Color Map Nodes By Spawn",       "checkbox")
+    pfQuestConfig:CreateConfigEntry("worldmaptransp",      "WorldMap Node Transparency",     "text")
+    pfQuestConfig:CreateConfigEntry("minimaptransp",       "MiniMap Node Transparency",      "text")
+    pfQuestConfig:CreateConfigEntry("mindropchance",       "Minimum Drop Chance",            "text")
+  end
+end)
+
+pfQuestConfig:SetScript("OnMouseDown",function()
+  this:StartMoving()
+end)
+
+pfQuestConfig:SetScript("OnMouseUp",function()
+  this:StopMovingOrSizing()
+end)
+
+pfQuestConfig.vpos = 35
+
+pfUI.api.CreateBackdrop(pfQuestConfig, nil, true, 0.75)
+table.insert(UISpecialFrames, "pfQuestConfig")
+
+pfQuestConfig.title = pfQuestConfig:CreateFontString("Status", "LOW", "GameFontNormal")
+pfQuestConfig.title:SetFontObject(GameFontWhite)
+pfQuestConfig.title:SetPoint("TOP", pfQuestConfig, "TOP", 0, -8)
+pfQuestConfig.title:SetJustifyH("LEFT")
+pfQuestConfig.title:SetFont(pfUI.font_default, 14)
+pfQuestConfig.title:SetText("|cff33ffccpf|rQuest Config")
+
+pfQuestConfig.close = CreateFrame("Button", "pfQuestConfigClose", pfQuestConfig)
+pfQuestConfig.close:SetPoint("TOPRIGHT", -5, -5)
+pfQuestConfig.close:SetHeight(12)
+pfQuestConfig.close:SetWidth(12)
+pfQuestConfig.close.texture = pfQuestConfig.close:CreateTexture("pfQuestionDialogCloseTex")
+pfQuestConfig.close.texture:SetTexture("Interface\\AddOns\\pfQuest\\compat\\close")
+pfQuestConfig.close.texture:ClearAllPoints()
+pfQuestConfig.close.texture:SetAllPoints(pfQuestConfig.close)
+pfQuestConfig.close.texture:SetVertexColor(1,.25,.25,1)
+pfUI.api.SkinButton(pfQuestConfig.close, 1, .5, .5)
+pfQuestConfig.close:SetScript("OnClick", function()
+ this:GetParent():Hide()
+end)
+
+pfQuestConfig.clean = CreateFrame("Button", "pfQuestConfigReload", pfQuestConfig)
+pfQuestConfig.clean:SetWidth(260)
+pfQuestConfig.clean:SetHeight(30)
+pfQuestConfig.clean:SetPoint("BOTTOM", 0, 10)
+pfQuestConfig.clean:SetScript("OnClick", function()
+  ReloadUI()
+end)
+pfQuestConfig.clean.text = pfQuestConfig.clean:CreateFontString("Caption", "LOW", "GameFontWhite")
+pfQuestConfig.clean.text:SetAllPoints(pfQuestConfig.clean)
+pfQuestConfig.clean.text:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
+pfQuestConfig.clean.text:SetText("Close & Reload")
+pfUI.api.SkinButton(pfQuestConfig.clean)
+
+function pfQuestConfig:LoadConfig()
   if not pfQuest_config then pfQuest_config = {} end
 
   for key, val in pairs(pfQuest_defconfig) do
@@ -28,7 +105,25 @@ local function LoadConfig()
   end
 end
 
-local function CreateConfigEntry(config, description, type)
+function pfQuestConfig:MigrateHistory()
+  local match = false
+
+  for entry in pairs(pfQuest_history) do
+    if type(entry) == "string" then
+      match = true
+      for id in pairs(pfDatabase:GetIDByName(entry, "quests")) do
+        pfQuest_history[id] = true
+      end
+      pfQuest_history[entry] = nil
+    end
+  end
+
+  if match == true then
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest|r: QuestHistory Migraten completed.")
+  end
+end
+
+function pfQuestConfig:CreateConfigEntry(config, description, type)
   -- basic frame
   local frame = getglobal("pfQuestConfig" .. config) or CreateFrame("Frame", "pfQuestConfig" .. config, pfQuestConfig)
   frame:SetWidth(280)
@@ -90,78 +185,5 @@ local function CreateConfigEntry(config, description, type)
     end)
   end
 
-  pfQuestConfig.vpos = pfQuestConfig.vpos + 30
+  pfQuestConfig.vpos = pfQuestConfig.vpos + 27
 end
-
-pfQuestConfig = CreateFrame("Frame", "pfQuestConfig", UIParent)
-pfQuestConfig:Hide()
-pfQuestConfig:SetWidth(280)
-pfQuestConfig:SetHeight(385)
-pfQuestConfig:SetPoint("CENTER", 0, 0)
-pfQuestConfig:SetFrameStrata("TOOLTIP")
-pfQuestConfig:SetMovable(true)
-pfQuestConfig:EnableMouse(true)
-pfQuestConfig.vpos = 45
-pfQuestConfig:SetScript("OnMouseDown",function()
-  this:StartMoving()
-end)
-
-pfQuestConfig:SetScript("OnMouseUp",function()
-  this:StopMovingOrSizing()
-end)
-
-pfUI.api.CreateBackdrop(pfQuestConfig, nil, true, 0.75)
-table.insert(UISpecialFrames, "pfQuestConfig")
-
-pfQuestConfig.title = pfQuestConfig:CreateFontString("Status", "LOW", "GameFontNormal")
-pfQuestConfig.title:SetFontObject(GameFontWhite)
-pfQuestConfig.title:SetPoint("TOP", pfQuestConfig, "TOP", 0, -8)
-pfQuestConfig.title:SetJustifyH("LEFT")
-pfQuestConfig.title:SetFont(pfUI.font_default, 14)
-pfQuestConfig.title:SetText("|cff33ffccpf|rQuest Config")
-
-pfQuestConfig.close = CreateFrame("Button", "pfQuestConfigClose", pfQuestConfig)
-pfQuestConfig.close:SetPoint("TOPRIGHT", -5, -5)
-pfQuestConfig.close:SetHeight(12)
-pfQuestConfig.close:SetWidth(12)
-pfQuestConfig.close.texture = pfQuestConfig.close:CreateTexture("pfQuestionDialogCloseTex")
-pfQuestConfig.close.texture:SetTexture("Interface\\AddOns\\pfQuest\\compat\\close")
-pfQuestConfig.close.texture:ClearAllPoints()
-pfQuestConfig.close.texture:SetAllPoints(pfQuestConfig.close)
-pfQuestConfig.close.texture:SetVertexColor(1,.25,.25,1)
-pfUI.api.SkinButton(pfQuestConfig.close, 1, .5, .5)
-pfQuestConfig.close:SetScript("OnClick", function()
- this:GetParent():Hide()
-end)
-
-pfQuestConfig:RegisterEvent("ADDON_LOADED")
-pfQuestConfig:SetScript("OnEvent", function()
-  if arg1 == "pfQuest" then
-    LoadConfig()
-
-    CreateConfigEntry("allquestgivers",      "Show Available Questgivers",     "checkbox")
-    CreateConfigEntry("currentquestgivers",  "Show Current Questgiver Nodes",  "checkbox")
-    CreateConfigEntry("showlowlevel",        "Show Lowlevel Questgiver Nodes", "checkbox")
-    CreateConfigEntry("minimapnodes",        "Show MiniMap Nodes",             "checkbox")
-    CreateConfigEntry("questlogbuttons",     "Show QuestLog Buttons",          "checkbox")
-    CreateConfigEntry("worldmapmenu",        "Show WorldMap Menu",             "checkbox")
-    CreateConfigEntry("showids",             "Show IDs",                       "checkbox")
-    CreateConfigEntry("colorbyspawn",        "Color Map Nodes By Spawn",       "checkbox")
-    CreateConfigEntry("worldmaptransp",      "WorldMap Node Transparency",     "text")
-    CreateConfigEntry("minimaptransp",       "MiniMap Node Transparency",      "text")
-    CreateConfigEntry("mindropchance",       "Minimum Drop Chance",            "text")
-  end
-end)
-
-pfQuestConfig.clean = CreateFrame("Button", "pfQuestConfigReload", pfQuestConfig)
-pfQuestConfig.clean:SetWidth(260)
-pfQuestConfig.clean:SetHeight(30)
-pfQuestConfig.clean:SetPoint("BOTTOM", 0, 10)
-pfQuestConfig.clean:SetScript("OnClick", function()
-  ReloadUI()
-end)
-pfQuestConfig.clean.text = pfQuestConfig.clean:CreateFontString("Caption", "LOW", "GameFontWhite")
-pfQuestConfig.clean.text:SetAllPoints(pfQuestConfig.clean)
-pfQuestConfig.clean.text:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
-pfQuestConfig.clean.text:SetText("Close & Reload")
-pfUI.api.SkinButton(pfQuestConfig.clean)

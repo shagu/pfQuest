@@ -462,7 +462,7 @@ end
 function pfMap:NodeClick()
   if IsShiftKeyDown() then
     pfMap:DeleteNode(this.node[this.title].addon, this.title)
-    pfQuest_history[this.color] = true
+    pfQuest_history[this.questid] = true
     pfMap:UpdateNodes()
   else
     pfQuest_colors[this.color] = { str2rgb(this.color .. GetTime()) }
@@ -517,6 +517,7 @@ function pfMap:UpdateNode(frame, node, color)
       frame.respawn   = tab.respawn
       frame.level     = tab.level
       frame.color     = tab[color] or tab.title
+      frame.questid   = tab.questid
       frame.title     = title
 
       if tab.texture then

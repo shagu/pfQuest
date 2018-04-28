@@ -408,7 +408,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   meta["qlvl"] = quests[id]["lvl"]
   meta["qmin"] = quests[id]["min"]
 
-  if not meta["qlogid"] or pfQuest_config["currentquestgivers"] == "1" then
+  if pfQuest_config["currentquestgivers"] == "1" then
     -- search quest-starter
     if quests[id]["start"] and not meta["qlogid"] then
       -- units
@@ -516,7 +516,8 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   end
 
   -- search quest-objectives
-  if quests[id]["obj"] then
+  local _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
+  if quests[id]["obj"] and not complete then
     -- units
     if quests[id]["obj"]["U"] then
       for _, unit in pairs(quests[id]["obj"]["U"]) do
@@ -594,6 +595,7 @@ function pfDatabase:SearchQuests(meta, maps)
 
   for id in pairs(quests) do
     meta["quest"] = ( pfDB.quests.loc[id] and pfDB.quests.loc[id].T ) or UNKNOWN
+    meta["questid"] = id
     meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available_c"
 
     minlvl = quests[id]["min"] or quests[id]["lvl"]
@@ -624,20 +626,22 @@ function pfDatabase:SearchQuests(meta, maps)
 
     if pfDB.quests.loc[id] and currentQuests[pfDB.quests.loc[id].T] then
       -- hide active quest
-    elseif pfQuest_history and pfDB.quests.loc[id] and pfQuest_history[pfDB.quests.loc[id].T] then
+    elseif pfQuest_history[id] then
       -- hide completed quests
-    elseif quests[id]["pre"] and pfDB.quests.loc[quests[id]["pre"]] and not pfQuest_history[pfDB.quests.loc[quests[id]["pre"]].T] then
+    elseif quests[id]["pre"] and not pfQuest_history[quests[id]["pre"]] then
       -- hide missing pre-quests
     elseif quests[id]["race"] and not ( bit.band(quests[id]["race"], prace) == prace ) then
       -- hide non-available quests for your race
     elseif quests[id]["class"] and not ( bit.band(quests[id]["class"], pclass) == pclass ) then
       -- hide non-available quests for your class
-    elseif quests[id]["lvl"] and quests[id]["lvl"] < plevel - 9 and pfUI_config["showlowlevel"] == "0" then
+    elseif quests[id]["lvl"] and quests[id]["lvl"] < plevel - 9 and pfQuest_config["showlowlevel"] == "0" then
       -- hide lowlevel quests
     elseif quests[id]["lvl"] and quests[id]["lvl"] > plevel + 10 then
       -- hide highlevel quests
     elseif quests[id]["min"] and quests[id]["min"] > plevel + 3 then
       -- hide highlevel quests
+    elseif minlvl > plevel and pfQuest_config["showhighlevel"] == "0" then
+      -- hide level+3 quests
     else
       -- iterate over all questgivers
       if quests[id]["start"] then
@@ -671,8 +675,9 @@ function pfDatabase:FormatQuestText(questText)
   return string.gsub(questText, "($[Gg])(.+):(.+);", "%"..UnitSex("player"))
 end
 
--- GetQuestID
+-- GetQuestIDs
 -- Try to guess the quest ID based on the questlog ID
+-- automatically runs a deep scan if no result was found.
 -- Returns possible quest IDs
 function pfDatabase:GetQuestIDs(qid, deep)
   local oldID = GetQuestLogSelection()
@@ -722,7 +727,7 @@ function pfDatabase:GetQuestIDs(qid, deep)
     end
   end
 
-  return results[best] or pfDatabase:GetQuestIDs(qid, 1) or {}
+  return results[best] or pfDatabase:GetQuestID(qid, 1) or {}
 end
 
 -- browser search related defaults and values
