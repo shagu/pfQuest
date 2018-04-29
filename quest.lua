@@ -35,6 +35,7 @@ pfQuest:SetScript("OnUpdate", function()
   if ( this.tick or .2) > GetTime() then return else this.tick = GetTime() + .2 end
 
   if this.updateQuestLog == true then
+    QuestLog_Update()
     pfQuest:UpdateQuestlog()
     this.updateQuestLog = false
   end
@@ -332,7 +333,7 @@ QuestLogTitleButton_OnClick = function(button)
         ChatFrameEditBox:Insert("[" .. questName .. "]")
       end
       QuestLog_SetSelection(questIndex)
-      QuestLog_Update();
+      QuestLog_Update()
       return
     end
   end
