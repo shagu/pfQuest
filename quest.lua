@@ -134,6 +134,9 @@ function pfQuest:UpdateQuestlog()
           pfQuest_history[qid] = true
         end
       end
+
+      pfQuest.abandon = ""
+      pfQuest.updateQuestGivers = true
     end
   end
 
