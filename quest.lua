@@ -4,7 +4,7 @@ pfQuest.queue = {}
 pfQuest.abandon = ""
 pfQuest.questlog = {}
 pfQuest.questlog_tmp = {}
-pfQuest.debugmode  = true
+pfQuest.debugmode  = false
 
 pfQuest:RegisterEvent("QUEST_WATCH_UPDATE")
 pfQuest:RegisterEvent("QUEST_LOG_UPDATE")
