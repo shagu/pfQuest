@@ -14,6 +14,7 @@ pfQuest_defconfig = {
   ["worldmapmenu"] = "1", -- Show WorldMap Menu
   ["showids"] = "0", -- Show IDs
   ["colorbyspawn"] = "1", -- Color Map Nodes By Spawn
+  ["questlinks"] = "1", -- Enable Quest Links
   ["worldmaptransp"] = "1.0", -- WorldMap Node Transparency
   ["minimaptransp"] = "1.0", -- MiniMap Node Transparency
   ["mindropchance"] = "0", -- Minimum Drop Chance
@@ -22,7 +23,7 @@ pfQuest_defconfig = {
 pfQuestConfig = CreateFrame("Frame", "pfQuestConfig", UIParent)
 pfQuestConfig:Hide()
 pfQuestConfig:SetWidth(280)
-pfQuestConfig:SetHeight(400)
+pfQuestConfig:SetHeight(420)
 pfQuestConfig:SetPoint("CENTER", 0, 0)
 pfQuestConfig:SetFrameStrata("TOOLTIP")
 pfQuestConfig:SetMovable(true)
@@ -42,6 +43,7 @@ pfQuestConfig:SetScript("OnEvent", function()
     pfQuestConfig:CreateConfigEntry("worldmapmenu",        "Show WorldMap Menu",             "checkbox")
     pfQuestConfig:CreateConfigEntry("showids",             "Show IDs",                       "checkbox")
     pfQuestConfig:CreateConfigEntry("colorbyspawn",        "Color Map Nodes By Spawn",       "checkbox")
+    pfQuestConfig:CreateConfigEntry("questlinks",          "Enable Quest Links",             "checkbox")
     pfQuestConfig:CreateConfigEntry("worldmaptransp",      "WorldMap Node Transparency",     "text")
     pfQuestConfig:CreateConfigEntry("minimaptransp",       "MiniMap Node Transparency",      "text")
     pfQuestConfig:CreateConfigEntry("mindropchance",       "Minimum Drop Chance",            "text")
@@ -56,7 +58,7 @@ pfQuestConfig:SetScript("OnMouseUp",function()
   this:StopMovingOrSizing()
 end)
 
-pfQuestConfig.vpos = 35
+pfQuestConfig.vpos = 30
 
 pfUI.api.CreateBackdrop(pfQuestConfig, nil, true, 0.75)
 table.insert(UISpecialFrames, "pfQuestConfig")

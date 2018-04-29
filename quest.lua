@@ -317,7 +317,11 @@ QuestLogTitleButton_OnClick = function(button)
   local questName, questLevel = GetQuestLogTitle(questIndex)
 	if IsShiftKeyDown() and not this.isHeader then
 		if ( ChatFrameEditBox:IsVisible() ) then
-      ChatFrameEditBox:Insert("|cffffff00|Hquest:0:" .. questLevel .. ":0:0|h[" .. questName .. "]|h|r")
+      if pfQuest_config["questlinks"] == "1" then
+        ChatFrameEditBox:Insert("|cffffff00|Hquest:0:" .. questLevel .. ":0:0|h[" .. questName .. "]|h|r")
+      else
+        ChatFrameEditBox:Insert("[" .. questName .. "]")
+      end
       QuestLog_SetSelection(questIndex)
       QuestLog_Update();
       return
