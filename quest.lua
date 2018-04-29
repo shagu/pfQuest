@@ -319,7 +319,12 @@ QuestLogTitleButton_OnClick = function(button)
 	if IsShiftKeyDown() and not this.isHeader then
 		if ( ChatFrameEditBox:IsVisible() ) then
       if pfQuest_config["questlinks"] == "1" then
-        ChatFrameEditBox:Insert("|cffffff00|Hquest:0:" .. questLevel .. ":0:0|h[" .. questName .. "]|h|r")
+        local id = 0
+        if pfQuest.questlog[questName] and pfQuest.questlog[questName].ids[1] then
+          id = pfQuest.questlog[questName].ids[1]
+        end
+
+        ChatFrameEditBox:Insert("|cffffff00|Hquest:" .. id .. ":" .. questLevel .. ":0:0|h[" .. questName .. "]|h|r")
       else
         ChatFrameEditBox:Insert("[" .. questName .. "]")
       end
@@ -337,59 +342,54 @@ local pfQuestHookSetItemRef = SetItemRef
 SetItemRef = function(link, text, button)
   local isQuest, _, id    = string.find(link, "quest:(%d+):.*")
   local isQuest2, _, _   = string.find(link, "quest2:.*")
-  local _, _, questLevel = string.find(link, "quest:%d+:(%d+)")
-
-  local playerHasQuest = false
 
   if isQuest or isQuest2 then
-    local quests = pfDatabase["quests"]
-
     ShowUIPanel(ItemRefTooltip)
     ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
 
     local hasTitle, _, questTitle = string.find(text, ".*|h%[(.*)%]|h.*")
     if hasTitle then ItemRefTooltip:AddLine(questTitle, 1,1,0) end
 
-    -- scan for questdb entry
-    local qname = nil
-    for name, tab in pairs(quests) do
-      local f, t, questname, _ = strfind(name, "(.*),.*")
-      if questname == questTitle then
-        qname = name
-        if id and tab.id == id then break end
+    id = tonumber(id)
+
+    if not id or id == 0 then
+      for scanID, data in pairs(pfDB["quests"]["loc"]) do
+        if data.T == questTitle then
+          id = scanID
+          break
+        end
       end
     end
 
     -- add database entries if existing
-    if quests[qname] then
-      if quests[qname]["obj"] then
-        ItemRefTooltip:AddLine(quests[qname]["obj"], 1,1,1,true)
+    if pfDB["quests"]["loc"][id] then
+      if pfDB["quests"]["loc"][id]["O"] then
+        ItemRefTooltip:AddLine(pfDatabase:FormatQuestText(pfDB["quests"]["loc"][id]["O"]), 1,1,1,true)
       end
 
-      if quests[qname]["log"] and quests[qname]["objectives"] then
+      if pfDB["quests"]["loc"][id]["O"] and pfDB["quests"]["loc"][id]["D"] then
         ItemRefTooltip:AddLine(" ", 0,0,0)
       end
 
-      if quests[qname]["log"] then
-        ItemRefTooltip:AddLine(quests[qname]["log"], .6,1,.9,true)
+      if pfDB["quests"]["loc"][id]["D"] then
+        ItemRefTooltip:AddLine(pfDatabase:FormatQuestText(pfDB["quests"]["loc"][id]["D"]), .8,.8,.8,true)
       end
-    end
 
-    -- check pfQuest.questlog for active quest
-    for i=1, GetNumQuestLogEntries() do
-      if GetQuestLogTitle(i) == questTitle then
-        playerHasQuest = true
+      if pfDB["quests"]["data"][id]["lvl"] or pfDB["quests"]["data"][id]["min"] then
+        ItemRefTooltip:AddLine(" ", 0,0,0)
       end
-    end
 
-    if playerHasQuest == false then
-      ItemRefTooltip:AddLine("You don't have this quest.", 1, .8, .8)
-    end
+      if pfDB["quests"]["data"][id]["min"] then
+        local questlevel = tonumber(pfDB["quests"]["data"][id]["min"])
+        local color = GetDifficultyColor(questlevel)
+        ItemRefTooltip:AddLine("|cffffffffRequired Level: |r" .. questlevel, color.r, color.g, color.b)
+      end
 
-    -- extract quest level
-    if questLevel and questLevel ~= 0 and questLevel ~= "0" then
-      local color = GetDifficultyColor(questLevel)
-      ItemRefTooltip:AddLine("Quest Level " .. questLevel, color.r, color.g, color.b)
+      if pfDB["quests"]["data"][id]["lvl"] then
+        local questlevel = tonumber(pfDB["quests"]["data"][id]["lvl"])
+        local color = GetDifficultyColor(questlevel)
+        ItemRefTooltip:AddLine("|cffffffffQuest Level: |r" .. questlevel, color.r, color.g, color.b)
+      end
     end
 
     ItemRefTooltip:Show()
