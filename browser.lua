@@ -12,15 +12,23 @@ local zones = pfDB["zones"]["loc"]
 
 -- result buttons
 local function StartAndFinish(questData, startOrFinish, types)
-  local strings = {["start"]="Started by ", ["end"]="Finished by "}
+  local strings = {["start"]="Quest Start: ", ["end"]="Quest End: "}
   for _, key in ipairs(types) do
     if questData[startOrFinish] and questData[startOrFinish][key] then
       local typeName = {["U"]="units",["O"]="objects",["I"]="items"}
-      GameTooltip:AddLine("\n|cffffff00"..strings[startOrFinish]..typeName[key]..":|r")
+
+      local entries = ""
+      local first = true
       for _,id in ipairs(questData[startOrFinish][key]) do
-        local name = pfDB[typeName[key]]["loc"][id] or id
-        GameTooltip:AddDoubleLine(" ", name, 0,0,0, 1,1,1)
+        if first == true then
+          entries = entries .. ( pfDB[typeName[key]]["loc"][id] or UNKNOWN )
+          first = false
+        else
+          entries = entries .. ", " .. ( pfDB[typeName[key]]["loc"][id] or UNKNOWN )
+        end
       end
+
+      GameTooltip:AddDoubleLine(strings[startOrFinish], entries, 1,1,1, 1,1,.8)
     end
   end
 end
@@ -31,7 +39,6 @@ local function ResultButtonEnter()
     this.tex:SetTexture(1,1,1,.1)
     GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
     GameTooltip:SetHyperlink("item:" .. this.id .. ":0:0:0")
-    GameTooltip:AddLine("\nID: "..this.id, 0.8,0.8,0.8)
     GameTooltip:Show()
 
   -- quest
@@ -42,14 +49,6 @@ local function ResultButtonEnter()
     local questTexts = pfDB[this.btype]["loc"][this.id]
     local questData = pfDB[this.btype]["data"][this.id]
     GameTooltip:AddLine(" ")
-
-    -- add levels
-    if questData.lvl then
-      GameTooltip:AddDoubleLine("|cffffff00Quest Level: |r", questData.lvl, 1,1,1, 1,1,1)
-    end
-    if questData.min then
-      GameTooltip:AddDoubleLine("|cffffff00Required Level: |r", questData.min, 1,1,1, 1,1,1)
-    end
 
     -- quest starter
     if questData["start"] or questData["end"] then
@@ -69,7 +68,21 @@ local function ResultButtonEnter()
       GameTooltip:AddLine(pfDatabase:FormatQuestText(questTexts["D"]),.6,.6,.6,true)
     end
 
-    GameTooltip:AddLine("\nID: "..this.id, 0.8,0.8,0.8)
+    -- add levels
+    if questData.lvl or questData.min then
+      GameTooltip:AddLine(" ")
+    end
+    if questData.lvl then
+      local questlevel = tonumber(questData.lvl)
+      local color = GetDifficultyColor(questlevel)
+      GameTooltip:AddLine("|cffffffffQuest Level: |r" .. questlevel, color.r, color.g, color.b)
+    end
+    if questData.min then
+      local questlevel = tonumber(questData.min)
+      local color = GetDifficultyColor(questlevel)
+      GameTooltip:AddLine("|cffffffffRequired Level: |r" .. questlevel, color.r, color.g, color.b)
+    end
+
     GameTooltip:Show()
 
   -- units / objects
@@ -82,9 +95,12 @@ local function ResultButtonEnter()
     GameTooltip:SetText(name, .3, 1, .8)
     if this.btype == "units" then
       local unitData = units[id]
+
       if unitData.lvl then
-        GameTooltip:AddDoubleLine("|cffffff00Level:|r", unitData.lvl, 0,0,0, 1,1,1)
+        GameTooltip:AddLine(" ")
+        GameTooltip:AddDoubleLine("Level", unitData.lvl, 1,1,.8, 1,1,1)
       end
+
       local reactionStringA = "|c00ff0000Hostile|r"
       local reactionStringH = "|c00ff0000Hostile|r"
       if unitData.fac then
@@ -97,11 +113,11 @@ local function ResultButtonEnter()
           reactionStringH = "|c0000ff00Friendly|r"
         end
       end
-      GameTooltip:AddLine("|cffffff00Reactions:|r", 1,1,1)
+      GameTooltip:AddLine("\nReaction", 1,1,.8)
       GameTooltip:AddDoubleLine("Alliance", reactionStringA, 1,1,1, 0,0,0)
       GameTooltip:AddDoubleLine("Horde", reactionStringH, 1,1,1, 0,0,0)
     end
-    GameTooltip:AddLine("\n|cffffff00Located in:|r", 1,1,1)
+    GameTooltip:AddLine("\nLocation", 1,1,.8)
     if pfDB[this.btype]["data"][id] and pfDB[this.btype]["data"][id]["coords"] then
       for _, data in pairs(pfDB[this.btype]["data"][id]["coords"]) do
         local zone = data[3]
@@ -113,7 +129,6 @@ local function ResultButtonEnter()
     for zone, count in pairs(maps) do
       GameTooltip:AddDoubleLine(( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), count .. "x", 1,1,1, .5,.5,.5)
     end
-    GameTooltip:AddLine("\nID: "..this.id, 0.8,0.8,0.8)
     GameTooltip:Show()
   end
 end
@@ -234,8 +249,6 @@ local function ResultButtonEnterSpecial()
             zone = objects[objectID].coords[1][3]
           end
           GameTooltip:AddDoubleLine(name, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
-        elseif not skip then
-          GameTooltip:AddLine((pfDB.objects.loc[objectID] or "ID: "..objectID).." (missing Data)")
         end
       end
     end
