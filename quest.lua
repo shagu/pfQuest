@@ -32,8 +32,12 @@ pfQuest:SetScript("OnEvent", function()
 end)
 
 pfQuest:SetScript("OnUpdate", function()
-  if pfQuest_config["trackingmethod"] == 4 then return end
   if ( this.tick or .2) > GetTime() then return else this.tick = GetTime() + .2 end
+
+  if this.updateQuestLog == true then
+    pfQuest:UpdateQuestlog()
+    this.updateQuestLog = false
+  end
 
   if this.updateQuestGivers == true then
     if pfQuest_config["trackingmethod"] == 4 then return end
@@ -46,11 +50,7 @@ pfQuest:SetScript("OnUpdate", function()
     end
   end
 
-  if this.updateQuestLog == true then
-    pfQuest:UpdateQuestlog()
-    this.updateQuestLog = false
-  end
-
+  if pfQuest_config["trackingmethod"] == 4 then return end
   if table.getn(this.queue) == 0 then return end
 
   -- process queue
@@ -147,6 +147,7 @@ function pfQuest:ResetAll()
   pfQuest.questlog = {}
   pfQuest.updateQuestLog = true
   pfQuest.updateQuestGivers = true
+  pfMap:UpdateNodes()
 end
 
 function pfQuest:AddQuestLogIntegration()
