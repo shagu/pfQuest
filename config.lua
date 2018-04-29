@@ -12,6 +12,7 @@ pfQuest_defconfig = {
   ["minimapnodes"] = "1", -- Show MiniMap Nodes
   ["questlogbuttons"] = "1", -- Show QuestLog Buttons
   ["worldmapmenu"] = "1", -- Show WorldMap Menu
+  ["minimapbutton"] = "1", -- Show MiniMap Button
   ["showids"] = "0", -- Show IDs
   ["colorbyspawn"] = "1", -- Color Map Nodes By Spawn
   ["questlinks"] = "1", -- Enable Quest Links
@@ -41,12 +42,17 @@ pfQuestConfig:SetScript("OnEvent", function()
     pfQuestConfig:CreateConfigEntry("minimapnodes",        "Show MiniMap Nodes",             "checkbox")
     pfQuestConfig:CreateConfigEntry("questlogbuttons",     "Show QuestLog Buttons",          "checkbox")
     pfQuestConfig:CreateConfigEntry("worldmapmenu",        "Show WorldMap Menu",             "checkbox")
+    pfQuestConfig:CreateConfigEntry("minimapbutton",       "Show MiniMap Button",            "checkbox")
     pfQuestConfig:CreateConfigEntry("showids",             "Show IDs",                       "checkbox")
     pfQuestConfig:CreateConfigEntry("colorbyspawn",        "Color Map Nodes By Spawn",       "checkbox")
     pfQuestConfig:CreateConfigEntry("questlinks",          "Enable Quest Links",             "checkbox")
     pfQuestConfig:CreateConfigEntry("worldmaptransp",      "WorldMap Node Transparency",     "text")
     pfQuestConfig:CreateConfigEntry("minimaptransp",       "MiniMap Node Transparency",      "text")
     pfQuestConfig:CreateConfigEntry("mindropchance",       "Minimum Drop Chance",            "text")
+
+    if pfBrowserIcon and pfQuest_config["minimapbutton"] == "0" then
+      pfBrowserIcon:Hide()
+    end
   end
 end)
 
@@ -187,5 +193,5 @@ function pfQuestConfig:CreateConfigEntry(config, description, type)
     end)
   end
 
-  pfQuestConfig.vpos = pfQuestConfig.vpos + 27
+  pfQuestConfig.vpos = pfQuestConfig.vpos + 24
 end
