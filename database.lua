@@ -614,8 +614,8 @@ function pfDatabase:SearchQuests(meta, maps)
       meta["layer"] = 2
     end
 
-    -- treat highlevel quests with low requirements as dailies
-    if minlvl == 1 and maxlvl > 50 then
+    -- treat big difference in level requirements as daily quests
+    if math.abs(minlvl - maxlvl) >= 30 then
       meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
       meta["vertex"] = { .2, .8, 1 }
       meta["layer"] = 2
