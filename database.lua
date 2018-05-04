@@ -614,6 +614,13 @@ function pfDatabase:SearchQuests(meta, maps)
       meta["layer"] = 2
     end
 
+    -- tint low level quests grey
+    if maxlvl + 9 < plevel then
+      meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
+      meta["vertex"] = { 1, 1, 1 }
+      meta["layer"] = 2
+    end
+
     -- treat big difference in level requirements as daily quests
     if math.abs(minlvl - maxlvl) >= 30 then
       meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
