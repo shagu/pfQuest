@@ -4,9 +4,11 @@ local loc = GetLocale()
 local dbs = { "items", "quests", "objects", "units", "zones" }
 
 -- detect localized databases
+pfDatabase.dbstring = ""
 for id, db in pairs(dbs) do
   -- assign existing locale
   pfDB[db]["loc"] = pfDB[db][loc] or pfDB[db]["enUS"]
+  pfDatabase.dbstring = pfDatabase.dbstring .. " |cffcccccc[|cffffffff" .. db .. "|cffcccccc:|cff33ffcc" .. ( pfDB[db][loc] and loc or "enUS" ) .. "|cffcccccc]"
 end
 
 -- add database shortcuts

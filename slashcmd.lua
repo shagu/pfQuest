@@ -14,6 +14,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
     DEFAULT_CHAT_FRAME:AddMessage("/db quest <questname> |cffaaaaaa - show specific questgiver")
     DEFAULT_CHAT_FRAME:AddMessage("/db quests |cffaaaaaa - show all quests on the map")
     DEFAULT_CHAT_FRAME:AddMessage("/db clean |cffaaaaaa - clean map")
+    DEFAULT_CHAT_FRAME:AddMessage("/db locale |cffaaaaaa - display the addon locales")
   end
 
   local commandlist = { }
@@ -86,4 +87,10 @@ SlashCmdList["PFDB"] = function(input, editbox)
   if (arg1 == "config") then
     if pfQuestConfig then pfQuestConfig:Show() end
   end
+
+  -- argument: locale
+  if (arg1 == "locale") then
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccLocales|r:" .. pfDatabase.dbstring)
+  end
+
 end
