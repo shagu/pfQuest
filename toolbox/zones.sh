@@ -12,13 +12,13 @@ for loc in $locales; do
   file="output/${loc}/zones.lua"
 
   echo -n "$loc "
-  if [ -f "DBC/AreaTable_${loc}.dbc.csv" ]; then
+  if [ -f "DBC/${loc}/AreaTable.dbc.csv" ]; then
     echo "pfDB[\"zones\"][\"${loc}\"] = {" > $file
 
-    tail -n +2 DBC/AreaTable_${loc}.dbc.csv | while read line; do
+    tail -n +2 DBC/${loc}/AreaTable.dbc.csv | while read line; do
       id=$(echo $line | cut -d , -f 1)
       entry=$(echo $line | cut -d , -f $(expr 12 + $index))
-      if cat DBC/WorldMapArea_${loc}.dbc.csv| cut -d , -f 3 | grep "^$id$" &> /dev/null; then
+      if cat DBC/${loc}/WorldMapArea.dbc.csv| cut -d , -f 3 | grep "^$id$" &> /dev/null; then
         echo "  [$id] = $entry," >> $file
       fi
     done

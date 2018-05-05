@@ -42,20 +42,12 @@ Grab the latest [Light's Hope](https://github.com/LightsHope/server/releases) or
 # Copy CSVs to DBC/
 
     $ ls -1 DBC/
-    AreaTable_deDE.dbc.csv
-    AreaTable_enUS.dbc.csv
-    AreaTable_esES.dbc.csv
-    AreaTable_frFR.dbc.csv
-    AreaTable_koKR.dbc.csv
-    AreaTable_ruRU.dbc.csv
-    AreaTable_zhCN.dbc.csv
-    WorldMapArea_deDE.dbc.csv
-    WorldMapArea_enUS.dbc.csv
-    WorldMapArea_esES.dbc.csv
-    WorldMapArea_frFR.dbc.csv
-    WorldMapArea_koKR.dbc.csv
-    WorldMapArea_ruRU.dbc.csv
-    WorldMapArea_zhCN.dbc.csv
+    deDE  enUS  esES  frFR  koKR  ruRU  zhCN
+
+    $ ls -1 DBC/deDE
+    AreaTable.dbc.csv
+    SkillLine.dbc.csv
+    WorldMapArea.dbc.csv
 
 # Extract Data
 
