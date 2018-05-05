@@ -134,17 +134,24 @@ local function ResultButtonEnter()
 end
 
 local function ResultButtonUpdate()
-  GameTooltip:SetHyperlink("item:" .. this.id .. ":0:0:0")
-  GameTooltip:Hide()
+  this.refreshCount = this.refreshCount + 1
 
-  local _, _, itemQuality = GetItemInfo(this.id)
-  if itemQuality then
-    this.itemColor = "|c" .. string.format("%02x%02x%02x%02x", 255, ITEM_QUALITY_COLORS[itemQuality].r * 255, ITEM_QUALITY_COLORS[itemQuality].g * 255, ITEM_QUALITY_COLORS[itemQuality].b * 255)
+  if not this.itemColor then
+    GameTooltip:SetHyperlink("item:" .. this.id .. ":0:0:0")
+    GameTooltip:Hide()
+
+    local _, _, itemQuality = GetItemInfo(this.id)
+    if itemQuality then
+      this.itemColor = "|c" .. string.format("%02x%02x%02x%02x", 255, ITEM_QUALITY_COLORS[itemQuality].r * 255, ITEM_QUALITY_COLORS[itemQuality].g * 255, ITEM_QUALITY_COLORS[itemQuality].b * 255)
+    end
   end
 
   if this.itemColor then
     this.text:SetText(this.itemColor .."|Hitem:"..this.id..":0:0:0|h[".. this.name.."]|h|r")
     this.text:SetWidth(this.text:GetStringWidth())
+  end
+
+  if this.refreshCount > 10 or this.itemColor then
     this:SetScript("OnUpdate", nil)
   end
 end
@@ -339,6 +346,7 @@ local function ResultButtonReload(self)
 
     self.text:SetText("|cffff5555[?] |cffffffff" .. self.name)
 
+    self.refreshCount = 0
     self:SetScript("OnUpdate", ResultButtonUpdate)
   end
 
