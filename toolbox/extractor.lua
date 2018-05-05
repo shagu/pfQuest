@@ -602,6 +602,27 @@ if target.quest then -- questDB [data]
       end
     end
 
+    -- scan required object/areas for usable quest items
+    if quest_template["SrcItemId"] ~= "0" then
+      local item_template = {}
+      local query = mysql:execute('SELECT * FROM item_template WHERE item_template.entry = ' .. quest_template["SrcItemId"])
+      while query:fetch(item_template, "a") do
+        if item_template["spellid_1"] ~= "0" then
+          local spell_template = {}
+          local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.ID = ' .. item_template["spellid_1"])
+          while query:fetch(spell_template, "a") do
+            if spell_template["requiresSpellFocus"] ~= "0" then
+              local gameobject_template = {}
+              local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spell_template["requiresSpellFocus"])
+              while query:fetch(gameobject_template, "a") do
+                table.insert(objects, gameobject_template["entry"])
+              end
+            end
+          end
+        end
+      end
+    end
+
     do -- write objectives
       if #units > 0 or #objects > 0 or #items > 0 then
         file:write("    [\"obj\"] = {\n")
