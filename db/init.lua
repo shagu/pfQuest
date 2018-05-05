@@ -4,5 +4,6 @@ pfDB = {
   ["quests"] = {},
   ["items"] = {},
   ["zones"] = {},
+  ["professions"] = {},
 }
-  
+

@@ -19,6 +19,7 @@ db\enUS\units.lua
 db\enUS\objects.lua
 db\enUS\quests.lua
 db\enUS\zones.lua
+db\enUS\professions.lua
 
 # database koKR
 db\koKR\items.lua
@@ -26,6 +27,7 @@ db\koKR\units.lua
 db\koKR\objects.lua
 db\koKR\quests.lua
 db\koKR\zones.lua
+db\koKR\professions.lua
 
 # database frFR
 db\frFR\items.lua
@@ -33,6 +35,7 @@ db\frFR\units.lua
 db\frFR\objects.lua
 db\frFR\quests.lua
 db\frFR\zones.lua
+db\frFR\professions.lua
 
 # database deDE
 db\deDE\items.lua
@@ -40,6 +43,7 @@ db\deDE\units.lua
 db\deDE\objects.lua
 db\deDE\quests.lua
 db\deDE\zones.lua
+db\deDE\professions.lua
 
 # database zhCN
 db\zhCN\items.lua
@@ -47,6 +51,7 @@ db\zhCN\units.lua
 db\zhCN\objects.lua
 db\zhCN\quests.lua
 db\zhCN\zones.lua
+db\zhCN\professions.lua
 
 # database esES
 db\esES\items.lua
@@ -54,6 +59,7 @@ db\esES\units.lua
 db\esES\objects.lua
 db\esES\quests.lua
 db\esES\zones.lua
+db\esES\professions.lua
 
 # database ruRU
 db\ruRU\items.lua
@@ -61,6 +67,7 @@ db\ruRU\units.lua
 db\ruRU\objects.lua
 db\ruRU\quests.lua
 db\ruRU\zones.lua
+db\ruRU\professions.lua
 
 # core api
 compat\pfUI.lua

@@ -11,6 +11,7 @@ pfQuest:RegisterEvent("QUEST_LOG_UPDATE")
 pfQuest:RegisterEvent("QUEST_FINISHED")
 pfQuest:RegisterEvent("PLAYER_LEVEL_UP")
 pfQuest:RegisterEvent("PLAYER_ENTERING_WORLD")
+pfQuest:RegisterEvent("SKILL_LINES_CHANGED")
 pfQuest:RegisterEvent("ADDON_LOADED")
 pfQuest:SetScript("OnEvent", function()
   if event == "ADDON_LOADED" then
@@ -24,7 +25,7 @@ pfQuest:SetScript("OnEvent", function()
     else
       return
     end
-  elseif event == "PLAYER_LEVEL_UP" or event == "PLAYER_ENTERING_WORLD" then
+  elseif event == "PLAYER_LEVEL_UP" or event == "PLAYER_ENTERING_WORLD" or event == "SKILL_LINES_CHANGED" then
     pfQuest.updateQuestGivers = true
   else
     pfQuest.updateQuestLog = true

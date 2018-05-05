@@ -1,7 +1,7 @@
 pfDatabase = {}
 
 local loc = GetLocale()
-local dbs = { "items", "quests", "objects", "units", "zones" }
+local dbs = { "items", "quests", "objects", "units", "zones", "professions" }
 
 -- detect localized databases
 pfDatabase.dbstring = ""
@@ -17,6 +17,7 @@ local units = pfDB["units"]["data"]
 local objects = pfDB["objects"]["data"]
 local quests = pfDB["quests"]["data"]
 local zones = pfDB["zones"]["loc"]
+local professions = pfDB["professions"]["loc"]
 
 local bitraces = {
   [1] = "Human",
@@ -40,6 +41,20 @@ local bitclasses = {
   [256] = "WARLOCK",
   [1024] = "DRUID"
 }
+
+-- PlayerHasSkill
+-- Returns false if the player has the required skill
+function pfDatabase:PlayerHasSkill(skill)
+  if not professions[skill] then return false end
+
+  for i=0,GetNumSkillLines() do
+    if GetSkillLineInfo(i) == professions[skill] then
+      return true
+    end
+  end
+
+  return false
+end
 
 -- GetBitByRace
 -- Returns bit of the current race
@@ -630,9 +645,6 @@ function pfDatabase:SearchQuests(meta, maps)
       meta["layer"] = 2
     end
 
--- elseif quests[id]["skill"] and not ( bit.band(quests[id]["skill"], pskill) == pskill ) then
--- hide non-available quests for your class
-
     if pfDB.quests.loc[id] and currentQuests[pfDB.quests.loc[id].T] then
       -- hide active quest
     elseif pfQuest_history[id] then
@@ -651,6 +663,8 @@ function pfDatabase:SearchQuests(meta, maps)
       -- hide highlevel quests
     elseif minlvl > plevel and pfQuest_config["showhighlevel"] == "0" then
       -- hide level+3 quests
+    elseif quests[id]["skill"] and not pfDatabase:PlayerHasSkill(quests[id]["skill"]) then
+      -- hide non-available quests for your class
     else
       -- iterate over all questgivers
       if quests[id]["start"] then
