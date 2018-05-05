@@ -431,8 +431,12 @@ end
 
 local function SelectView(view)
   for id, frame in pairs(pfBrowser.tabs) do
+    frame.button:SetTextColor(1,1,1,.7)
     frame:Hide()
   end
+  view.button:SetTextColor(.2,1,.8,1)
+  view.button:Hide()
+  view.button:Show()
   view:Show()
 end
 
@@ -471,11 +475,7 @@ local function CreateBrowseWindow(fname, name, parent, anchor, x, y)
     SelectView(parent.tabs[fname])
   end)
 
-  parent.tabs[fname].button.text = parent.tabs[fname].button:CreateFontString("Caption", "LOW", "GameFontWhite")
-  parent.tabs[fname].button.text:SetAllPoints(parent.tabs[fname].button)
-  parent.tabs[fname].button.text:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
   pfUI.api.SkinButton(parent.tabs[fname].button)
-
   parent.tabs[fname].list = pfUI.api.CreateScrollChild(name .. "Scroll", parent.tabs[fname])
   parent.tabs[fname].list:SetWidth(600)
 
