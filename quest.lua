@@ -163,6 +163,26 @@ function pfQuest:AddQuestLogIntegration()
   dockTitle:SetHeight(dockTitle:GetHeight() + 30)
   dockTitle:SetJustifyV("BOTTOM")
 
+  pfQuest.buttonOnline = pfQuest.buttonOnline or CreateFrame("Button", "pfQuestOnline", dockFrame)
+  pfQuest.buttonOnline:SetWidth(50)
+  pfQuest.buttonOnline:SetHeight(15)
+  pfQuest.buttonOnline:SetPoint("TOPRIGHT", dockFrame, "TOPRIGHT", -12, -10)
+  pfQuest.buttonOnline:SetScript("OnClick", function()
+    local questurl = "http://classicdb.ch/?quest="
+
+    if pfUI and pfUI.chat then
+      pfUI.chat.urlcopy.text:SetText(questurl .. (this:GetID() or 0))
+      pfUI.chat.urlcopy:Show()
+    else
+      DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest Online Search:|cffcccccc " .. questurl .. (this:GetID() or 0))
+    end
+  end)
+
+  pfQuest.buttonOnline.txt = pfQuest.buttonOnline:CreateFontString("pfQuestIDButton", "HIGH", "GameFontWhite")
+  pfQuest.buttonOnline.txt:SetAllPoints(pfQuest.buttonOnline)
+  pfQuest.buttonOnline.txt:SetJustifyH("RIGHT")
+  pfQuest.buttonOnline.txt:SetText("|cff000000[|cffaa2222?|cff000000]")
+
   pfQuest.buttonShow = pfQuest.buttonShow or CreateFrame("Button", "pfQuestShow", dockFrame, "UIPanelButtonTemplate")
   pfQuest.buttonShow:SetWidth(70)
   pfQuest.buttonShow:SetHeight(20)
@@ -313,6 +333,25 @@ local HookAbandonQuest = AbandonQuest
 AbandonQuest = function()
   pfQuest.abandon = GetAbandonQuestName()
   HookAbandonQuest()
+end
+
+-- Update quest id button
+local pfHookQuestLog_Update = QuestLog_Update
+QuestLog_Update = function()
+  pfHookQuestLog_Update()
+  if pfQuest_config["questlogbuttons"] ==  "1" then
+    local questName = GetQuestLogTitle(GetQuestLogSelection())
+    if pfQuest.questlog[questName] and pfQuest.questlog[questName].ids[1] then
+      local id = pfQuest.questlog[questName].ids[1]
+      pfQuest.buttonOnline:SetID(id)
+      pfQuest.buttonOnline:Show()
+      if pfQuest_config.showids == "1" then
+        pfQuest.buttonOnline.txt:SetText("|cff000000[|cffaa2222id: " .. id .. "|cff000000]")
+      end
+    else
+      pfQuest.buttonOnline:Hide()
+    end
+  end
 end
 
 -- Allow to send questlinks from questlog
