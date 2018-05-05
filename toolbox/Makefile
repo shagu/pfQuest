@@ -1,4 +1,4 @@
-all: clean zones database install
+all: clean zones professions database install
 
 clean:
 	rm -rf output
@@ -8,6 +8,9 @@ database:
 
 zones:
 	sh ./zones.sh
+
+professions:
+	sh ./professions.sh
 
 install:
 	cp -rf output/* ../db/
