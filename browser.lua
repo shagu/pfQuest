@@ -450,7 +450,9 @@ end
 
 -- sets the browser result values when they change
 local function RefreshView(i, key, caption)
+  pfBrowser.tabs[key].list:Hide()
   pfBrowser.tabs[key].list:SetHeight(i * 30 )
+  pfBrowser.tabs[key].list:Show()
   pfBrowser.tabs[key].list:GetParent():SetScrollChild(pfBrowser.tabs[key].list)
   pfBrowser.tabs[key].list:GetParent():SetVerticalScroll(0)
   pfBrowser.tabs[key].list:GetParent():UpdateScrollState()
