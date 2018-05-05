@@ -734,7 +734,7 @@ function pfDatabase:GetQuestIDs(qid, deep)
     end
   end
 
-  return results[best] or pfDatabase:GetQuestID(qid, 1) or {}
+  return results[best] or ( not deep and pfDatabase:GetQuestIDs(qid, 1) or {} )
 end
 
 -- browser search related defaults and values
