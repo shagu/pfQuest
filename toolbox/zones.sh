@@ -17,10 +17,10 @@ for loc in $locales; do
 
     tail -n +2 DBC/${loc}/AreaTable.dbc.csv | while read line; do
       id=$(echo $line | cut -d , -f 1)
-      entry=$(echo $line | cut -d , -f $(expr 12 + $index))
-      if cat DBC/${loc}/WorldMapArea.dbc.csv| cut -d , -f 3 | grep "^$id$" &> /dev/null; then
+      entry=$(echo $line | cut -d , -f $(expr 12 + $index) | sed 's/""/\\"/g')
+#      if cat DBC/${loc}/WorldMapArea.dbc.csv| cut -d , -f 3 | grep "^$id$" &> /dev/null; then
         echo "  [$id] = $entry," >> $file
-      fi
+#      fi
     done
 
     echo "}" >> $file
