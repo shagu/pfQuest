@@ -34,16 +34,16 @@ local function StartAndFinish(questData, startOrFinish, types)
 end
 
 local function ResultButtonEnter()
+  this.tex:SetTexture(1,1,1,.1)
+
   -- item
   if this.btype == "items" then
-    this.tex:SetTexture(1,1,1,.1)
     GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
     GameTooltip:SetHyperlink("item:" .. this.id .. ":0:0:0")
     GameTooltip:Show()
 
   -- quest
   elseif this.btype == "quests" then
-    this.tex:SetTexture(1,1,1,.1)
     GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
     GameTooltip:SetText(this.name, .3, 1, .8)
     local questTexts = pfDB[this.btype]["loc"][this.id]
@@ -87,7 +87,6 @@ local function ResultButtonEnter()
 
   -- units / objects
   else
-    this.tex:SetTexture(1,1,1,.1)
     local id = this.id
     local name = this.name
     local maps = {}
@@ -157,6 +156,8 @@ local function ResultButtonUpdate()
 end
 
 local function ResultButtonClick()
+  local meta = { ["addon"] = "PFDB" }
+
   if this.btype == "items" then
     local link = "item:"..this.id..":0:0:0"
     local text = ( this.itemColor or "|cffffffff" ) .."|H" .. link .. "|h["..this.name.."]|h|r"
@@ -165,19 +166,31 @@ local function ResultButtonClick()
     if IsShiftKeyDown() then
       ChatFrameEditBox:Show()
       ChatFrameEditBox:Insert("|cffffff00|Hquest:0:0:0:0|h[" .. this.name .. "]|h|r")
+    elseif pfBrowser.selectState then
+      local maps = pfDatabase:SearchQuest(this.name)
+      pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     else
-      local meta = { ["addon"] = "PFDB" }
       local maps = pfDatabase:SearchQuestID(this.id, meta)
       pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     end
   elseif this.btype == "units" then
-    local maps = pfDatabase:SearchMobID(this.id)
-    pfMap:UpdateNodes()
-    pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
+    if pfBrowser.selectState then
+      local maps = pfDatabase:SearchMob(this.name, meta)
+      pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
+    else
+      local maps = pfDatabase:SearchMobID(this.id)
+      pfMap:UpdateNodes()
+      pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
+    end
   elseif this.btype == "objects" then
-    local maps = pfDatabase:SearchObjectID(this.id)
-    pfMap:UpdateNodes()
-    pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
+    if pfBrowser.selectState then
+      local maps = pfDatabase:SearchObject(this.name, meta)
+      pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
+    else
+      local maps = pfDatabase:SearchObjectID(this.id)
+      pfMap:UpdateNodes()
+      pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
+    end
   end
 end
 
@@ -193,6 +206,10 @@ local function ResultButtonClickFav()
 end
 
 local function ResultButtonLeave()
+  if pfBrowser.selectState then
+    pfBrowser.selectState = "clean"
+  end
+
   if math.mod(this:GetID(),2) == 1 then
     this.tex:SetTexture(1,1,1,.02)
   else
@@ -205,7 +222,11 @@ local function ResultButtonClickSpecial()
   local param = this:GetParent()[this.parameter]
   local maps = {}
   if this.buttonType == "O" or this.buttonType == "U" then
-    maps = pfDatabase:SearchItemID(param, nil, nil, {[this.buttonType]=true})
+    if this.selectState then
+      maps = pfDatabase:SearchItem(this:GetParent().name, meta)
+    else
+      maps = pfDatabase:SearchItemID(param, nil, nil, {[this.buttonType]=true})
+    end
   elseif this.buttonType == "V" then
     maps = pfDatabase:SearchVendor(param)
   end
@@ -362,6 +383,7 @@ local function ResultButtonCreate(i, resultType)
   f:SetID(i)
 
   f.btype = resultType
+  f.pfResultButton = true
 
   f.tex = f:CreateTexture("BACKGROUND")
   f.tex:SetAllPoints(f)
@@ -459,7 +481,11 @@ local function RefreshView(i, key, caption)
 
   pfBrowser.tabs[key].button:SetText(caption .. " " .. "|cffaaaaaa(" .. i .. ")")
   for j=i+1, table.getn(pfBrowser.tabs[key].buttons) do
-    if pfBrowser.tabs[key].buttons[j] then pfBrowser.tabs[key].buttons[j]:Hide() end
+    if pfBrowser.tabs[key].buttons[j] then
+      pfBrowser.tabs[key].buttons[j]:Hide()
+      pfBrowser.tabs[key].buttons[j].id = nil
+      pfBrowser.tabs[key].buttons[j].name = nil
+    end
   end
 end
 
@@ -561,6 +587,32 @@ end)
 
 pfBrowser:SetScript("OnMouseUp",function()
   this:StopMovingOrSizing()
+end)
+
+pfBrowser:SetScript("OnUpdate", function()
+  -- multi-select handling
+  if not this.selectState and IsControlKeyDown() and GetMouseFocus() and GetMouseFocus().pfResultButton then
+    for id, frame in pairs(pfBrowser.tabs) do
+      for id, button in pairs(frame.buttons) do
+        if button.name == GetMouseFocus().name then
+          button.tex:SetTexture(.3,1,.8,.4)
+        end
+      end
+    end
+    this.selectState = "active"
+
+  elseif this.selectState and (this.selectState == "clean" or not IsControlKeyDown()) then
+    for id, frame in pairs(pfBrowser.tabs) do
+      for id, button in pairs(frame.buttons) do
+        if math.mod(button:GetID(),2) == 1 then
+          button.tex:SetTexture(1,1,1,.02)
+        else
+          button.tex:SetTexture(1,1,1,.04)
+        end
+      end
+    end
+    this.selectState = nil
+  end
 end)
 
 pfUI.api.CreateBackdrop(pfBrowser, nil, true, 0.75)
