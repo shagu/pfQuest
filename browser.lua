@@ -293,7 +293,7 @@ local function ResultButtonEnterSpecial()
         if units[unitID] and not skip then
           local name = pfDB.units.loc[unitID]
           if sellcount ~= 0 then name = name .. " (" .. sellcount .. ")" end
-          local zone = units[unitID].coords[1] and units[unitID].coords[1][3]
+          local zone = units[unitID].coords and units[unitID].coords[1] and units[unitID].coords[1][3]
           GameTooltip:AddDoubleLine(name, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
         end
       end
