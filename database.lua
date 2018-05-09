@@ -178,8 +178,7 @@ function pfDatabase:GetIDByName(name, db, partial)
     if db == "quests" then loc = loc["T"] end
 
     -- if the partial variable was passed, use strfind, otherwise compare the strings
-    if loc and name and ((partial and strfind(strlower(loc), strlower(name))) or strlower(loc) == strlower(name))
-    then
+    if loc and name and ((partial and strfind(strlower(loc), strlower(name))) or strlower(loc) == strlower(name)) then
       ret[id] = loc
     end
   end
@@ -501,8 +500,11 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   }
 
   -- If QuestLogID is given, scan and add all finished objectives to blacklist
+  local complete
   if meta["qlogid"] then
     local objectives = GetNumQuestLeaderBoards(meta["qlogid"])
+    _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
+
     if objectives then
       for i=1, objectives, 1 do
         local text, type, done = GetQuestLogLeaderBoard(i, meta["qlogid"])
@@ -533,7 +535,6 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   end
 
   -- search quest-objectives
-  local _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
   if quests[id]["obj"] and not complete then
     -- units
     if quests[id]["obj"]["U"] then
