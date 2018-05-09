@@ -252,7 +252,7 @@ local function ResultButtonEnterSpecial()
         if objects[objectID] and not skip then
           local name = pfDB.objects.loc[objectID] or objectID
           local zone = nil
-          if objects[objectID].coords then
+          if objects[objectID].coords and objects[objectID].coords[1] then
             zone = objects[objectID].coords[1][3]
           end
           GameTooltip:AddDoubleLine(name, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
