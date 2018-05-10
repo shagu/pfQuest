@@ -469,6 +469,16 @@ if target.item then -- itemDB [data]
 
     local items = { [0] = { item_template.entry, nil } }
 
+    -- add items that contain the actual item to the itemlist
+    local item_loot_item = {}
+    local count = 0
+    local query = mysql:execute('SELECT entry, ChanceOrQuestChance FROM item_loot_template WHERE item = ' .. item_template.entry .. ' ORDER BY entry')
+    while query:fetch(item_loot_item, "a") do
+      if math.abs(item_loot_item.ChanceOrQuestChance) > 0 then
+        table.insert(items, { item_loot_item.entry, math.abs(item_loot_item.ChanceOrQuestChance) })
+      end
+    end
+
     for id, item in pairs(items) do
       local entry = item[1]
       local chance = item[2] and item[2] / 100 or 1
