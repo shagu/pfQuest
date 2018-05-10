@@ -623,6 +623,9 @@ if target.quest then -- questDB [data]
       if quest_template["ReqItemId" .. i] and tonumber(quest_template["ReqItemId" .. i]) > 0 then
         table.insert(items, quest_template["ReqItemId" .. i])
       end
+      if quest_template["ReqSourceId" .. i] and tonumber(quest_template["ReqSourceId" .. i]) > 0 then
+        table.insert(items, quest_template["ReqSourceId" .. i])
+      end
     end
 
     -- scan required object/areas for usable quest items
