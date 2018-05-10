@@ -465,48 +465,60 @@ if target.item then -- itemDB [data]
   while query:fetch(item_template, "a") do
     progress:Print("item_template", "itemDB (data)")
 
-    local entry   = item_template.entry
-    file:write("  [" .. entry .. "] = { -- " .. item_template.name .. "\n")
+    file:write("  [" .. item_template.entry .. "] = { -- " .. item_template.name .. "\n")
 
-    local creature_loot_template = {}
-    local count = 0
-    local query = mysql:execute('SELECT entry, ChanceOrQuestChance FROM creature_loot_template WHERE item = ' .. entry .. ' ORDER BY entry')
-    while query:fetch(creature_loot_template, "a") do
-      if count == 0 then
-        file:write("    [\"U\"] = {\n")
-      end
-      file:write("      [" .. creature_loot_template.entry .. "] = " .. math.abs(creature_loot_template.ChanceOrQuestChance) .. ",\n")
-      count = count + 1
-    end
-    if count > 0 then file:write("    },\n") end
+    local items = { [0] = { item_template.entry, nil } }
 
-    local gameobject_loot_template = {}
-    local count = 0
-    local query = mysql:execute([[
-      SELECT gameobject_template.entry, gameobject_loot_template.ChanceOrQuestChance FROM gameobject_loot_template
-      LEFT JOIN gameobject_template ON gameobject_template.data1 = gameobject_loot_template.entry
-      WHERE ( gameobject_template.type = 3 OR gameobject_template.type = 25 )
-      AND gameobject_loot_template.item = ]] .. entry .. [[ ORDER BY gameobject_template.entry ]])
-    while query:fetch(gameobject_loot_template, "a") do
-      if count == 0 then
-        file:write("    [\"O\"] = {\n")
-      end
-      file:write("      [" .. gameobject_loot_template.entry .. "] = " .. math.abs(gameobject_loot_template.ChanceOrQuestChance) .. ",\n")
-      count = count + 1
-    end
-    if count > 0 then file:write("    },\n") end
+    for id, item in pairs(items) do
+      local entry = item[1]
+      local chance = item[2] and item[2] / 100 or 1
 
-    local npc_vendor = {}
-    local count = 0
-    local query = mysql:execute('SELECT entry, maxcount FROM npc_vendor WHERE item = ' .. entry .. ' ORDER BY entry')
-    while query:fetch(npc_vendor, "a") do
-      if count == 0 then
-        file:write("    [\"V\"] = {\n")
+      local creature_loot_template = {}
+      local count = 0
+      local query = mysql:execute('SELECT entry, ChanceOrQuestChance FROM creature_loot_template WHERE item = ' .. entry .. ' ORDER BY entry')
+      while query:fetch(creature_loot_template, "a") do
+        local chance = round(math.abs(creature_loot_template.ChanceOrQuestChance) * chance, 5)
+        if chance > 0 then
+          if count == 0 then
+            file:write("    [\"U\"] = {\n")
+          end
+          file:write("      [" .. creature_loot_template.entry .. "] = " .. chance .. ",\n")
+          count = count + 1
+        end
       end
-      file:write("      [" .. npc_vendor.entry .. "] = " .. npc_vendor.maxcount .. ",\n")
-      count = count + 1
+      if count > 0 then file:write("    },\n") end
+
+      local gameobject_loot_template = {}
+      local count = 0
+      local query = mysql:execute([[
+        SELECT gameobject_template.entry, gameobject_loot_template.ChanceOrQuestChance FROM gameobject_loot_template
+        LEFT JOIN gameobject_template ON gameobject_template.data1 = gameobject_loot_template.entry
+        WHERE ( gameobject_template.type = 3 OR gameobject_template.type = 25 )
+        AND gameobject_loot_template.item = ]] .. entry .. [[ ORDER BY gameobject_template.entry ]])
+      while query:fetch(gameobject_loot_template, "a") do
+        local chance = round(math.abs(gameobject_loot_template.ChanceOrQuestChance) * chance, 5)
+        if chance > 0 then
+          if count == 0 then
+            file:write("    [\"O\"] = {\n")
+          end
+          file:write("      [" .. gameobject_loot_template.entry .. "] = " .. chance .. ",\n")
+          count = count + 1
+        end
+      end
+      if count > 0 then file:write("    },\n") end
+
+      local npc_vendor = {}
+      local count = 0
+      local query = mysql:execute('SELECT entry, maxcount FROM npc_vendor WHERE item = ' .. entry .. ' ORDER BY entry')
+      while query:fetch(npc_vendor, "a") do
+        if count == 0 then
+          file:write("    [\"V\"] = {\n")
+        end
+        file:write("      [" .. npc_vendor.entry .. "] = " .. npc_vendor.maxcount .. ",\n")
+        count = count + 1
+      end
+      if count > 0 then file:write("    },\n") end
     end
-    if count > 0 then file:write("    },\n") end
 
     file:write("  },\n")
   end
