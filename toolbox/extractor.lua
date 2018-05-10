@@ -626,6 +626,19 @@ if target.quest then -- questDB [data]
       if quest_template["ReqSourceId" .. i] and tonumber(quest_template["ReqSourceId" .. i]) > 0 then
         table.insert(items, quest_template["ReqSourceId" .. i])
       end
+      if quest_template["ReqSpellCast" .. i] and tonumber(quest_template["ReqSpellCast" .. i]) > 0 then
+        local spell_template = {}
+        local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.ID = ' .. quest_template["ReqSpellCast" .. i])
+        while query:fetch(spell_template, "a") do
+          if spell_template["requiresSpellFocus"] ~= "0" then
+            local gameobject_template = {}
+            local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spell_template["requiresSpellFocus"])
+            while query:fetch(gameobject_template, "a") do
+              table.insert(objects, gameobject_template["entry"])
+            end
+          end
+        end
+      end
     end
 
     -- scan required object/areas for usable quest items
