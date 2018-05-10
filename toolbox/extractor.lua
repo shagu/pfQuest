@@ -618,7 +618,7 @@ if target.quest then -- questDB [data]
       if quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) > 0 then
         table.insert(units, quest_template["ReqCreatureOrGOId" .. i])
       elseif quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) < 0 then
-        table.insert(objects, quest_template["ReqCreatureOrGOId" .. i])
+        table.insert(objects, math.abs(tonumber(quest_template["ReqCreatureOrGOId" .. i])))
       end
       if quest_template["ReqItemId" .. i] and tonumber(quest_template["ReqItemId" .. i]) > 0 then
         table.insert(items, quest_template["ReqItemId" .. i])
