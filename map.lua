@@ -398,10 +398,9 @@ function pfMap:AddNode(meta)
     for id, name in pairs(pfMap.nodes[addon][map][coords][title].item) do
       if name == item then
         return
-      else
-        table.insert(pfMap.nodes[addon][map][coords][title].item, item)
       end
     end
+    table.insert(pfMap.nodes[addon][map][coords][title].item, item)
   end
 
   if pfMap.nodes[addon][map][coords][title] and pfMap.nodes[addon][map][coords][title].layer and layer and
