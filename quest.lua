@@ -405,6 +405,24 @@ SetItemRef = function(link, text, button)
       end
     end
 
+    -- scan for active quests
+    local queststate = pfQuest_history[id] and 2 or 0
+    for title, data in pairs(pfQuest.questlog) do
+      for _, qid in pairs(pfQuest.questlog[title].ids) do
+        if qid == id then
+          queststate = 1
+        end
+      end
+    end
+
+    if queststate == 0 then
+      ItemRefTooltip:AddLine("You don't have this quest.\n\n", 1, .5, .5)
+    elseif queststate == 1 then
+      ItemRefTooltip:AddLine("You are on this quest.\n\n", 1, 1, .5)
+    elseif queststate == 2 then
+      ItemRefTooltip:AddLine("You already did this quest.\n\n", .5, 1, .5)
+    end
+
     -- add database entries if existing
     if pfDB["quests"]["loc"][id] then
       if pfDB["quests"]["loc"][id]["O"] then
