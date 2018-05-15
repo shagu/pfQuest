@@ -10,6 +10,7 @@ pfQuest_defconfig = {
   ["showlowlevel"] = "0", -- Show Lowlevel Questgiver Nodes
   ["showhighlevel"] = "1", -- Show Level+3 Questgiver Nodes
   ["minimapnodes"] = "1", -- Show MiniMap Nodes
+  ["cutoutminimap"] = "1", -- Use Cut-Out Minimap Node Icon
   ["questlogbuttons"] = "1", -- Show QuestLog Buttons
   ["worldmapmenu"] = "1", -- Show WorldMap Menu
   ["minimapbutton"] = "1", -- Show MiniMap Button
@@ -40,6 +41,7 @@ pfQuestConfig:SetScript("OnEvent", function()
     pfQuestConfig:CreateConfigEntry("showlowlevel",        "Display Lowlevel Questgivers",   "checkbox")
     pfQuestConfig:CreateConfigEntry("showhighlevel",       "Display Level+3 Questgivers",    "checkbox")
     pfQuestConfig:CreateConfigEntry("minimapnodes",        "Show MiniMap Nodes",             "checkbox")
+    pfQuestConfig:CreateConfigEntry("cutoutminimap",        "Use Cut-Out MiniMap Node Icons","checkbox")
     pfQuestConfig:CreateConfigEntry("questlogbuttons",     "Show QuestLog Buttons",          "checkbox")
     pfQuestConfig:CreateConfigEntry("worldmapmenu",        "Show WorldMap Menu",             "checkbox")
     pfQuestConfig:CreateConfigEntry("minimapbutton",       "Show MiniMap Button",            "checkbox")
@@ -193,5 +195,5 @@ function pfQuestConfig:CreateConfigEntry(config, description, type)
     end)
   end
 
-  pfQuestConfig.vpos = pfQuestConfig.vpos + 24
+  pfQuestConfig.vpos = pfQuestConfig.vpos + 23
 end
