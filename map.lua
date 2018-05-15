@@ -501,7 +501,7 @@ function pfMap:BuildNode(name, parent)
   return f
 end
 
-function pfMap:UpdateNode(frame, node, color)
+function pfMap:UpdateNode(frame, node, color, obj)
   frame.layer = -1
 
   for title, tab in pairs(node) do
@@ -523,7 +523,11 @@ function pfMap:UpdateNode(frame, node, color)
         frame.tex:SetTexture(tab.texture)
         frame.tex:SetVertexColor(1,1,1)
       else
-        frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\node")
+        if obj == "minimap" and pfQuest_config["cutoutminimap"] == "1" then
+          frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\nodecut")
+        else
+          frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\node")
+        end
         local r,g,b = str2rgb(frame.color)
         frame.tex:SetVertexColor(r,g,b,1)
       end
@@ -643,7 +647,7 @@ function pfMap:UpdateMinimap()
             pfMap.mpins[i] = pfMap:BuildNode("pfMiniMapPin" .. i, Minimap)
           end
 
-          pfMap:UpdateNode(pfMap.mpins[i], node, color)
+          pfMap:UpdateNode(pfMap.mpins[i], node, color, "minimap")
 
           if node.translucent then
             pfMap.mpins[i]:SetAlpha((tonumber(pfQuest_config["minimaptransp"]) or 1)/2)
@@ -654,7 +658,11 @@ function pfMap:UpdateMinimap()
           pfMap.mpins[i]:ClearAllPoints()
           pfMap.mpins[i]:SetPoint("CENTER", Minimap, "CENTER", -xPos, yPos)
           pfMap.mpins[i]:SetFrameLevel(2)
-          pfMap.mpins[i]:Show()
+          if IsShiftKeyDown() and MouseIsOver(Minimap) then
+            pfMap.mpins[i]:Hide()
+          else
+            pfMap.mpins[i]:Show()
+          end
 
           i = i + 1
         end
