@@ -223,7 +223,7 @@ if target.unit then -- unitDB [data]
 
   -- iterate over all creatures
   local creature_template = {}
-  local query = mysql:execute('SELECT * FROM creature_template ORDER BY creature_template.entry ASC')
+  local query = mysql:execute('SELECT * FROM creature_template GROUP BY creature_template.entry ORDER BY creature_template.entry')
   while query:fetch(creature_template, "a") do
     progress:Print("creature_template", "unitDB (data)")
 
@@ -331,7 +331,7 @@ if target.unit then -- unitDB [locales]
   end
 
   local locales_creature = {}
-  local query = mysql:execute('SELECT * FROM creature_template LEFT JOIN locales_creature ON locales_creature.entry = creature_template.entry ORDER BY creature_template.entry ASC')
+  local query = mysql:execute('SELECT * FROM creature_template LEFT JOIN locales_creature ON locales_creature.entry = creature_template.entry GROUP BY creature_template.entry ORDER BY creature_template.entry ASC')
   while query:fetch(locales_creature, "a") do
     progress:Print("creature_template", "unitDB (lang)")
 
@@ -361,7 +361,7 @@ if target.object then -- objectDB [data]
 
   -- iterate over all objects
   local gameobject_template = {}
-  local query = mysql:execute('SELECT * FROM gameobject_template ORDER BY gameobject_template.entry ASC')
+  local query = mysql:execute('SELECT * FROM gameobject_template GROUP BY gameobject_template.entry ORDER BY gameobject_template.entry ASC')
   while query:fetch(gameobject_template, "a") do
     progress:Print("gameobject_template", "objectDB (data)")
 
@@ -431,7 +431,7 @@ if target.object then -- objectDB [locales]
   end
 
   local locales_gameobject = {}
-  local query = mysql:execute('SELECT * FROM gameobject_template LEFT JOIN locales_gameobject ON locales_gameobject.entry = gameobject_template.entry ORDER BY gameobject_template.entry ASC')
+  local query = mysql:execute('SELECT * FROM gameobject_template LEFT JOIN locales_gameobject ON locales_gameobject.entry = gameobject_template.entry GROUP BY gameobject_template.entry ORDER BY gameobject_template.entry ASC')
   while query:fetch(locales_gameobject, "a") do
     progress:Print("gameobject_template", "objectDB (lang)")
 
@@ -461,7 +461,7 @@ if target.item then -- itemDB [data]
 
   -- iterate over all items
   local item_template = {}
-  local query = mysql:execute('SELECT entry, name FROM item_template ORDER BY item_template.entry ASC')
+  local query = mysql:execute('SELECT entry, name FROM item_template GROUP BY item_template.entry ORDER BY item_template.entry ASC')
   while query:fetch(item_template, "a") do
     progress:Print("item_template", "itemDB (data)")
 
@@ -546,7 +546,7 @@ if target.item then -- itemDB [locales]
   end
 
   local locales_item = {}
-  local query = mysql:execute('SELECT * FROM item_template LEFT JOIN locales_item ON locales_item.entry = item_template.entry ORDER BY item_template.entry ASC')
+  local query = mysql:execute('SELECT * FROM item_template LEFT JOIN locales_item ON locales_item.entry = item_template.entry GROUP BY item_template.entry ORDER BY item_template.entry ASC')
   while query:fetch(locales_item, "a") do
     progress:Print("item_template", "itemDB (lang)")
 
@@ -576,7 +576,7 @@ if target.quest then -- questDB [data]
   file:write("pfDB[\"quests\"][\"data\"] = {\n")
 
   local sql = [[
-    SELECT * FROM quest_template ]]
+    SELECT * FROM quest_template GROUP BY quest_template.entry ]]
 
   local query = mysql:execute(sql)
   while query:fetch(quest_template, "a") do
@@ -794,7 +794,7 @@ if target.quest then -- questDB [locales]
   end
 
   local locales_quest = {}
-  local query = mysql:execute('SELECT * FROM quest_template LEFT JOIN locales_quest ON locales_quest.entry = quest_template.entry ORDER BY quest_template.entry ASC')
+  local query = mysql:execute('SELECT * FROM quest_template LEFT JOIN locales_quest ON locales_quest.entry = quest_template.entry GROUP BY quest_template.entry ORDER BY quest_template.entry ASC')
   while query:fetch(locales_quest, "a") do
     progress:Print("quest_template", "questDB (lang)")
 

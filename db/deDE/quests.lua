@@ -5899,11 +5899,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Bringt Mumms Bericht zu Lady Jaina Prachtmeer in Theramore.",
     ["D"] = "Ihr habt gute Arbeit geleistet, $N, die Beste, die ich je von einem Amateur sah.$B$BLady Prachtmeer bat mich, sie über diese delikate Situation auf dem Laufenden zu halten, aber ich habe eine Weile nicht mit ihr gesprochen.$B$BIch wollte ihr meinen Bericht sp?ter bringen, aber es scheint mir passender, wenn Ihr mit ihr darüber sprecht. Ihr k?nnt ihre Fragen wahrscheinlich besser beantworten als ich.",
   },
-  [1288] = {
-    ["T"] = "Mumms Bericht",
-    ["O"] = "Bringt Mumms Bericht zu Lady Jaina Prachtmeer in Theramore.",
-    ["D"] = "Ihr habt gute Arbeit geleistet, $N, die Beste, die ich je von einem Amateur sah.$B$BLady Prachtmeer bat mich, sie über diese delikate Situation auf dem Laufenden zu halten, aber ich habe eine Weile nicht mit ihr gesprochen.$B$BIch wollte ihr meinen Bericht sp?ter bringen, aber es scheint mir passender, wenn Ihr mit ihr darüber sprecht. Ihr k?nnt ihre Fragen wahrscheinlich besser beantworten als ich.",
-  },
   [1289] = {
     ["T"] = "<nyi> Mumms Bericht",
     ["O"] = "Kehrt zu Hauptmann Garran Mumm in Theramore zurück.",
@@ -7954,11 +7949,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Tötet den seelenlosen Körper von Oben Zornklaue und benutzt dann den Voodooglücksbringer.",
     ["D"] = "Nachdem ich den Glücksbringer untersucht habe, weiß ich jetzt, was zu tun ist, $n. Bitte nehmt ihn und führt aus, worum ich Euch bitte.$B$BIhr müsst Euch der Tür zu der nahegelegenen Kammer nähern. Dahinter findet Ihr meinen seelenlosen Körper. Und obwohl es mich sehr schmerzt, Euch das jetzt zu sagen, sehe ich keine andere Möglichkeit, wie ich mich der Kontrolle der Knarzklauen entziehen kann.$B$BDamit ich mich von ihnen befreien kann, müsst Ihr meinen physischen Körper töten. Sobald das getan ist, wendet den Voodooglücksbringer auf meinen gefallenen Körper an. Und wenn Ihr diese Aufgabe erfüllt habt, kommt zu mir zurück.",
   },
-  [2561] = {
-    ["T"] = "Druide der Klaue",
-    ["O"] = "Tötet den seelenlosen Körper von Oben Zornklaue und benutzt dann den Voodooglücksbringer.",
-    ["D"] = "Nachdem ich den Glücksbringer untersucht habe, weiß ich jetzt, was zu tun ist, $n. Bitte nehmt ihn und führt aus, worum ich Euch bitte.$B$BIhr müsst Euch der Tür zu der nahegelegenen Kammer nähern. Dahinter findet Ihr meinen seelenlosen Körper. Und obwohl es mich sehr schmerzt, Euch das jetzt zu sagen, sehe ich keine andere Möglichkeit, wie ich mich der Kontrolle der Knarzklauen entziehen kann.$B$BDamit ich mich von ihnen befreien kann, müsst Ihr meinen physischen Körper töten. Sobald das getan ist, wendet den Voodooglücksbringer auf meinen gefallenen Körper an. Und wenn Ihr diese Aufgabe erfüllt habt, kommt zu mir zurück.",
-  },
   [2581] = {
     ["T"] = "Kicherfangunterkiefer",
     ["O"] = "Bringt Blutmagier Drazial 3 Kicherfangunterkiefer, 2 feuerverbrannte Eberlungen und 1 Skorpokzange.",
@@ -8083,11 +8073,6 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Kirith",
     ["O"] = "Findet heraus, was aus Leutnant Kirith geworden ist.",
     ["D"] = "Ein Kapitel Eurer Abenteuer mag jetzt beendet sein, doch ein weiteres Kapitel beginnt gerade, $n.$B$BEiner meiner Männer ist noch immer verschollen, irgendwo in den Verwüsteten Landen verschwunden. Ich spreche natürlich von Leutnant Kirith.$B$BWie ich vorhin schon sagte, wurden wir beide von Allistarj gefangen genommen und gefoltert, aber ich fürchte, dass der arme Kirith nicht durchhielt und schwach wurde. Aus meinem Käfig heraus konnte ich die Experimente hören: Die gequälten Schreie hallten in der ganzen Höhle wider. Das war das Letzte, was ich von Kirith gesehen oder gehört habe.",
-  },
-  [2741] = {
-    ["T"] = "Der Super-Ei-o-Mat",
-    ["O"] = " ",
-    ["D"] = "",
   },
   [2741] = {
     ["T"] = "Der Super-Ei-o-Mat",
@@ -11984,11 +11969,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Reist nach Stratholme und durchsucht die Ziggurats. Sucht neue Geißeldaten und bringt sie zu Betina Moppelzink zurück.",
     ["D"] = "Ihr müsst tiefer nach Stratholme vordringen, $n.$B$BHinter den ersten Toren werdet Ihr die Ziggurats finden. Wir wissen, dass die Geißel große Macht aus diesen Gebäuden zieht. Durchsucht die Ziggurats und kehrt mit den Informationen zurück, die Ihr aufspürt.",
   },
-  [5213] = {
-    ["T"] = "Der aktive Wirkstoff",
-    ["O"] = "Reist nach Stratholme und durchsucht die Ziggurats. Sucht neue Geißeldaten und bringt sie zu Betina Moppelzink zurück.",
-    ["D"] = "Ihr müsst tiefer nach Stratholme vordringen, $n.$B$BHinter den ersten Toren werdet Ihr die Ziggurats finden. Wir wissen, dass die Geißel große Macht aus diesen Gebäuden zieht. Durchsucht die Ziggurats und kehrt mit den Informationen zurück, die Ihr aufspürt.",
-  },
   [5214] = {
     ["T"] = "Der große Fras Siabi",
     ["O"] = "Sucht Fras Siabis Raucherladen in Stratholme und bergt einen Kasten von Siabis Tollem Tabak. Kehrt zu Smokey LaRue zurück, wenn Eure Aufgabe erledigt ist.",
@@ -13539,11 +13519,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Reist nach Stratholme und tötet Ramstein den Würger. Bringt seinen Kopf als Souvenir zu Nathanos.",
     ["D"] = "Ich war überwältigt. Ich stand in dieser Siedlung... und blieb standhaft bei der Verteidigung von Lordaeron. Der Hof und alles darauf wurde von einer gigantischen Welle der Geißel belagert.$B$BDer Dreck. Der Schmutz. Er stand über mir und die Eingeweide hingen ihm aus einem klaffenden Loch in der Brust.$B$BIch erwachte als Geißel. Lange Zeit war ich hilflos. Meine Gedanken waren mit denen des Lichkönigs verschmolzen.$B$BSie kam zu mir... irgendwo, irgendwie wusste ich es. Frei.$B$BDoch jetzt muss ich meine Rache haben - Rache an dem, der mir das Leben genommen hat. Vernichtet ihn.",
   },
-  [6163] = {
-    ["T"] = "Ramstein",
-    ["O"] = "Reist nach Stratholme und tötet Ramstein den Würger. Bringt seinen Kopf als Souvenir zu Nathanos.",
-    ["D"] = "Ich war überwältigt. Ich stand in dieser Siedlung... und blieb standhaft bei der Verteidigung von Lordaeron. Der Hof und alles darauf wurde von einer gigantischen Welle der Geißel belagert.$B$BDer Dreck. Der Schmutz. Er stand über mir und die Eingeweide hingen ihm aus einem klaffenden Loch in der Brust.$B$BIch erwachte als Geißel. Lange Zeit war ich hilflos. Meine Gedanken waren mit denen des Lichkönigs verschmolzen.$B$BSie kam zu mir... irgendwo, irgendwie wusste ich es. Frei.$B$BDoch jetzt muss ich meine Rache haben - Rache an dem, der mir das Leben genommen hat. Vernichtet ihn.",
-  },
   [6164] = {
     ["T"] = "Augustus\' Quittungsbuch",
     ["O"] = "Beschafft Euch Augustus\' Quittungsbuch aus dem Gasthaus im Schreckenstal.",
@@ -13588,11 +13563,6 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Totenwaldfelle des Nordens",
     ["O"] = "Nafien m?chte, dass Ihr 5 H?hlenbehüter der Totenwaldfelle, 5 R?cher der Totenwaldfelle und 5 Schamanen der Totenwaldfelle besiegt.",
     ["D"] = "Direkt südwestlich von hier liegt ein Furbolglager der Totenwaldfelle. Ich bin nicht sicher, was sie vorhaben, aber ich würde dem gern einen Riegel vorschieben, ehe es zum Problem wird.$B$BDer Stamm der Totenwaldfelle ist b?se, aber die Verderbnis ist es, die ihre Hirne verseucht. Ihre Feindseligkeit ist keine angeborene Eigenschaft, doch da kann man nichts machen. Aus diesem Grund stimmt es mich zutiefst traurig, dass ich gegen meine Geschwister k?mpfen muss.$B$BBitte, $N, tut, was getan werden muss, aber erspart mir die Einzelheiten. Sie beunruhigen mich zu sehr.",
-  },
-  [6241] = {
-    ["T"] = "Aktivit?t der Winterfelle",
-    ["O"] = "Salfa m?chte, dass Ihr 6 Totemiker der Winterfelle, 6 H?hlenbehüter der Winterfelle und 6 Pfadfinder der Winterfelle erledigt.",
-    ["D"] = "Die Furbolgs der Holzschlundfeste bleiben meist unter sich, $N. Wir gew?hren allen, die ihre Vertrauenswürdigkeit unter Beweis gestellt haben, freies Geleit, meiden aber wenn m?glich andere Furbolgst?mme.$B$BIn letzter Zeit ist mir aufgefallen, dass der Winterfellstamm uns gegenüber immer gr??ere Feindseligkeit zeigt. Sie scheinen in Rage zu sein, und ganz von ihrem Hass auf alles beseelt, das sie nicht verstehen.$B$BWenn Ihr ihre Anzahl reduzieren k?nntet, würde uns das sehr helfen, $N.",
   },
   [6241] = {
     ["T"] = "Aktivit?t der Winterfelle",
@@ -14579,20 +14549,10 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Der Legende zufolge erscheint der mächtige Anführer der Winteraxtrolle nach gutdünken, um Angst und Schrecken unter den Bewohnen des Alteractals zu verbreiten.$B$BSollte Korrak auftauchen, tötet ihn und kehrt zu Kriegsmeister Laggrond zurück.",
     ["D"] = "Die angreifenden Sturmlanzen sind nicht die einzige Bedrohung in dieser Region, Soldat. Der Krieg in diesem Tal tobt an zwei Fronten. Den kannibalistischen Winteraxtrollen dürstet es ebenso nach Macht.$B$BAngeführt werden sie von Korrak dem Blutrünstigen - einem grausamen und verschlagenen Biest.$B$BEin Streich gegen Korrak könnte sich als vernichtender Schlag für den Winteraxklan erweisen. Tötet diesen Bastard und Ihr werdet entlohnt.",
   },
-  [7181] = {
-    ["T"] = "Die Legende von Korrak",
-    ["O"] = "Der Legende zufolge erscheint der mächtige Anführer der Winteraxtrolle nach gutdünken, um Angst und Schrecken unter den Bewohnen des Alteractals zu verbreiten.$B$BSollte Korrak auftauchen, tötet ihn und kehrt zu Kriegsmeister Laggrond zurück.",
-    ["D"] = "Die angreifenden Sturmlanzen sind nicht die einzige Bedrohung in dieser Region, Soldat. Der Krieg in diesem Tal tobt an zwei Fronten. Den kannibalistischen Winteraxtrollen dürstet es ebenso nach Macht.$B$BAngeführt werden sie von Korrak dem Blutrünstigen - einem grausamen und verschlagenen Biest.$B$BEin Streich gegen Korrak könnte sich als vernichtender Schlag für den Winteraxklan erweisen. Tötet diesen Bastard und Ihr werdet entlohnt.",
-  },
   [7201] = {
     ["T"] = "Das letzte Element",
     ["O"] = "Begebt Euch in die Schwarzfelstiefen und beschafft 10 Essenzen der Elemente. Euer erster Gedanke ist, die Golems und die Schöpfer der Golems zu suchen. Doch Ihr erinnert Euch, dass Vivian Lagrave auch etwas von Elementaren vor sich hingemurmelt hat.",
     ["D"] = "Es gibt Arbeit für diejenigen, die sich in die Tiefen wagen, $n.$B$BDen Dunkeleisenzwergen ist es gelungen, extrem mächtige Golems zu erschaffen.$B$BErsten Berichten unserer Spione zufolge verwenden die Zwerge eine einzigartige Kraftquelle, die ihren Schöpfungen eine unvergleichliche Kraft zum Töten gibt.$B$BStellt Euch nur einmal vor, was wir mit unseren Monstrositäten tun könnten, wenn wir diese Essenz der Elemente in die Hände bekommen könnten! Stellt die ganze Stadt auf den Kopf, wenn es sein muss, aber kommt nicht wieder, ehe Ihr nicht die Essenz gefunden habt! Die Bezahlung ist es wert, das Risiko einzugehen.",
-  },
-  [7202] = {
-    ["T"] = "Korrak der Blutrünstige",
-    ["O"] = "Der Legende zufolge erscheint der mächtige Anführer der Winteraxtrolle nach gutdünken, um Angst und Schrecken unter den Bewohnen des Alteractals zu verbreiten.$B$BSollte Korrak auftauchen, tötet ihn und kehrt zu Leutnant Haggerdin im Alteracgebirge zurück.",
-    ["D"] = "Die eingeborenen Winteraxtrolle dieser Region sind unbarmherzige Wilde, die nichts lieber täten, als unsere Knochen in einer ihrer widerlichen Mahlzeiten zu sehen.$B$BWir müssen ihnen unsere Macht vor Augen führen!$B$BWir konnten einige Schriftstücke aus ihren Höhlen entwenden, die Aufzeichnungen über ihre Führungshierarchie enthalten. Diese Schriftstücke lassen vermuten, dass ihr Anführer, Korrak der Blutrünstige, sich solange versteckt hält, bis er einen Grund hat sich zu zeigen.$B$BDer Tod Korraks, würde den Tod des Winteraxklans bedeuten! Tötet ihn und kehrt zu mir zurück.",
   },
   [7202] = {
     ["T"] = "Korrak der Blutrünstige",
@@ -15414,16 +15374,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
     ["D"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
   },
-  [7788] = {
-    ["T"] = "Besiegt die Eindringlinge!",
-    ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
-    ["D"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
-  },
-  [7789] = {
-    ["T"] = "Bezwingt die Eindringlinge der Silberschwingen",
-    ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
-    ["D"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
-  },
   [7789] = {
     ["T"] = "Bezwingt die Eindringlinge der Silberschwingen",
     ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
@@ -15764,22 +15714,7 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
     ["D"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
   },
-  [7871] = {
-    ["T"] = "Besiegt die Eindringlinge!",
-    ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
-    ["D"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
-  },
   [7872] = {
-    ["T"] = "Besiegt die Eindringlinge!",
-    ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
-    ["D"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
-  },
-  [7872] = {
-    ["T"] = "Besiegt die Eindringlinge!",
-    ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
-    ["D"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
-  },
-  [7873] = {
     ["T"] = "Besiegt die Eindringlinge!",
     ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
     ["D"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
@@ -15794,22 +15729,7 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
     ["D"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
   },
-  [7874] = {
-    ["T"] = "Bezwingt die Eindringlinge der Silberschwingen",
-    ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
-    ["D"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
-  },
   [7875] = {
-    ["T"] = "Bezwingt die Eindringlinge der Silberschwingen",
-    ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
-    ["D"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
-  },
-  [7875] = {
-    ["T"] = "Bezwingt die Eindringlinge der Silberschwingen",
-    ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
-    ["D"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
-  },
-  [7876] = {
     ["T"] = "Bezwingt die Eindringlinge der Silberschwingen",
     ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
     ["D"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
@@ -15854,30 +15774,15 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
   },
-  [7886] = {
-    ["T"] = "Verdienstabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [7887] = {
-    ["T"] = "Verdienstabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [7887] = {
-    ["T"] = "Verdienstabzeichen",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
-  },
-  [7888] = {
     ["T"] = "Verdienstabzeichen",
     ["O"] = "",
     ["D"] = "",
   },
   [7888] = {
     ["T"] = "Verdienstabzeichen",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
+    ["O"] = "",
+    ["D"] = "",
   },
   [7889] = {
     ["T"] = "Grober Gewichtsstein",
@@ -15969,50 +15874,25 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
   },
-  [7921] = {
-    ["T"] = "Verdienstabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [7922] = {
     ["T"] = "Ehrenabzeichen",
     ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
-  [7922] = {
-    ["T"] = "Ehrenabzeichen",
-    ["O"] = "",
-    ["D"] = "",
   },
   [7923] = {
     ["T"] = "Ehrenabzeichen",
     ["O"] = "",
     ["D"] = "",
   },
-  [7923] = {
-    ["T"] = "Ehrenabzeichen",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
   [7924] = {
-    ["T"] = "Ehrenabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [7924] = {
-    ["T"] = "Ehrenabzeichen",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
-  [7925] = {
     ["T"] = "Ehrenabzeichen",
     ["O"] = "",
     ["D"] = "",
   },
   [7925] = {
     ["T"] = "Ehrenabzeichen",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [7926] = {
     ["T"] = "Der Dunkelmond-Jahrmarkt",
@@ -16324,16 +16204,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
     ["D"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
   },
-  [8080] = {
-    ["T"] = "Die Ressourcen des Arathibeckens",
-    ["O"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
-    ["D"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
-  },
-  [8081] = {
-    ["T"] = "Noch mehr Vorratskisten",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
   [8081] = {
     ["T"] = "Noch mehr Vorratskisten",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
@@ -16454,16 +16324,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
     ["D"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
   },
-  [8123] = {
-    ["T"] = "Zerschlagt die Versorgungslinien Arathors",
-    ["O"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
-    ["D"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
-  },
-  [8124] = {
-    ["T"] = "Noch mehr Vorratskisten",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
   [8124] = {
     ["T"] = "Noch mehr Vorratskisten",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
@@ -16534,22 +16394,7 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
     ["D"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
   },
-  [8154] = {
-    ["T"] = "Die Ressourcen des Arathibeckens",
-    ["O"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
-    ["D"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
-  },
   [8155] = {
-    ["T"] = "Die Ressourcen des Arathibeckens",
-    ["O"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
-    ["D"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
-  },
-  [8155] = {
-    ["T"] = "Die Ressourcen des Arathibeckens",
-    ["O"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
-    ["D"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
-  },
-  [8156] = {
     ["T"] = "Die Ressourcen des Arathibeckens",
     ["O"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
     ["D"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
@@ -16564,22 +16409,7 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
   },
-  [8157] = {
-    ["T"] = "Noch mehr Vorratskisten",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
   [8158] = {
-    ["T"] = "Noch mehr Vorratskisten",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8158] = {
-    ["T"] = "Noch mehr Vorratskisten",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8159] = {
     ["T"] = "Noch mehr Vorratskisten",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
@@ -16594,22 +16424,7 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
     ["D"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
   },
-  [8160] = {
-    ["T"] = "Zerschlagt die Versorgungslinien Arathors",
-    ["O"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
-    ["D"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
-  },
   [8161] = {
-    ["T"] = "Zerschlagt die Versorgungslinien Arathors",
-    ["O"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
-    ["D"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
-  },
-  [8161] = {
-    ["T"] = "Zerschlagt die Versorgungslinien Arathors",
-    ["O"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
-    ["D"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
-  },
-  [8162] = {
     ["T"] = "Zerschlagt die Versorgungslinien Arathors",
     ["O"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
     ["D"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
@@ -16624,22 +16439,7 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
-  [8163] = {
-    ["T"] = "Noch mehr Vorratskisten",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
   [8164] = {
-    ["T"] = "Noch mehr Vorratskisten",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8164] = {
-    ["T"] = "Noch mehr Vorratskisten",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8165] = {
     ["T"] = "Noch mehr Vorratskisten",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
@@ -16699,90 +16499,45 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8184] = {
-    ["T"] = "Präsenz der Macht",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8185] = {
     ["T"] = "Siegelzeichen des Synkretisten",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8185] = {
-    ["T"] = "Siegelzeichen des Synkretisten",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8186] = {
     ["T"] = "Umarmung des Todes",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8186] = {
-    ["T"] = "Umarmung des Todes",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8187] = {
     ["T"] = "Ruf des Falken",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8187] = {
-    ["T"] = "Ruf des Falken",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8188] = {
     ["T"] = "Vodouisants wachsame Umarmung",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8188] = {
-    ["T"] = "Vodouisants wachsame Umarmung",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8189] = {
     ["T"] = "Allgegenwärtige Sicht",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8189] = {
-    ["T"] = "Allgegenwärtige Sicht",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8190] = {
     ["T"] = "Verhexung des Hoodoo",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8190] = {
-    ["T"] = "Verhexung des Hoodoo",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8191] = {
     ["T"] = "Prophetische Aura",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8191] = {
-    ["T"] = "Prophetische Aura",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8192] = {
     ["T"] = "Liebkosung des Animisten",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8192] = {
-    ["T"] = "Liebkosung des Animisten",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8193] = {
     ["T"] = "Die große Beute",
@@ -16909,11 +16664,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
     ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
   },
-  [8243] = {
-    ["T"] = "Zanzas wirksame Tränke",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require one Zandalar Honor Token. Note that only the effects of a single one may course through your spirit at any given time.",
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
-  },
   [8246] = {
     ["T"] = "Das Siegel der Zandalari",
     ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
@@ -17004,32 +16754,12 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
   },
-  [8266] = {
-    ["T"] = "Aufopferungsabzeichen",
-    ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8267] = {
-    ["T"] = "Aufopferungsabzeichen",
-    ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
   [8267] = {
     ["T"] = "Aufopferungsabzeichen",
     ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
   },
   [8268] = {
-    ["T"] = "Aufopferungsabzeichen",
-    ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8268] = {
-    ["T"] = "Aufopferungsabzeichen",
-    ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8269] = {
     ["T"] = "Aufopferungsabzeichen",
     ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
@@ -17134,16 +16864,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
     ["D"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
   },
-  [8291] = {
-    ["T"] = "Besiegt die Eindringlinge!",
-    ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Horde. Verdient Euch ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt zur Schildwache Weltensang am Hain der Silberschwingen zurück.",
-    ["D"] = "Jenseits dieses Tunnels werdet Ihr ein Feld des Kampfes und der Aufruhr finden, $gjunger:junge:c; $C. Die Horde hört nicht auf, unseren heiligen Wald zu roden und benutzt unser immergrünes Blattwerk, um ihre Maschinen anzutreiben.$B$BBetretet die Kriegshymnenschlucht und verteidigt die Feste der Silberschwingen. Schlagt die eingefallenen Kräfte der Horde zurück.$B$BEin Erfolg würde Euch ein Verdienstabzeichen einbringen. Bringt mir eines dieser Abzeichen, $n und ich werde Euch belohnen.",
-  },
-  [8292] = {
-    ["T"] = "Verdienstabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8292] = {
     ["T"] = "Verdienstabzeichen",
     ["O"] = "",
@@ -17153,16 +16873,6 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Ehrenabzeichen",
     ["O"] = "",
     ["D"] = "",
-  },
-  [8293] = {
-    ["T"] = "Ehrenabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8294] = {
-    ["T"] = "Bezwingt die Eindringlinge der Silberschwingen",
-    ["O"] = "Betretet die Kriegshymnenschlucht und besiegt die Streitkräfte der Allianz. Erwerbt ein Ehrenabzeichen der Kriegshymnenschlucht und kehrt anschließend zu Hauptmann Schädelbrecher im Stützpunkt Mor\'shan zurück.",
-    ["D"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $n, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
   },
   [8294] = {
     ["T"] = "Bezwingt die Eindringlinge der Silberschwingen",
@@ -17179,25 +16889,10 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
     ["D"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
   },
-  [8297] = {
-    ["T"] = "Die Ressourcen des Arathibeckens",
-    ["O"] = "Gewinnt die Schlacht um das Arathibecken, raubt eine Arathivorratskiste und bringt sie Unteroffizier Maclear in der Zuflucht.",
-    ["D"] = "Eine Schlacht muss mit Soldaten gewonnen werden, das wird Euch jeder Soldat gerne bestätigen. Man sagt auch, dass eine Schlacht auf leeren Magen und mit schlechter Ausrüstung bereits eine verlorene Schlacht ist!$B$BDeshalb ist das Arathibecken so wichtig. Es gibt dort Schlüsselregionen, die essentielle Ressourcen bergen. Metalle, Waffen, Holz, ja, alles wird gebraucht und kann dort gefunden werden.$B$BDaher brauche ich Euch, $n. Begebt Euch ins Arathibecken und entscheidet die Schlacht für Euch, indem Ihr mehr Stützpunkte haltet als der Feind. Bringt mir als Beweis Eurer Taten eine Vorratskiste.",
-  },
   [8298] = {
     ["T"] = "Noch mehr Vorratskisten",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8298] = {
-    ["T"] = "Noch mehr Vorratskisten",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8299] = {
-    ["T"] = "Zerschlagt die Versorgungslinien Arathors",
-    ["O"] = "Entscheidet die Schlacht um das Arathibecken für Euch, erbeutet eine Arathivorratskiste und bringt sie Todespirscher Mortis in Hammerfall.",
-    ["D"] = "Der Bund von Arathor scheut keine Mühen, um Arathi sein Eigen zu nennen. Sie und all die anderen Völker der Allianz strömen nun in diese entfernte Region, versessen darauf, ihren Gebietsanspruch von der Zuflucht aus zu erweitern. Wir müssen sie aufhalten, und das beste Mittel dies zu tun, ist ihre Vorräte zu stehlen.$B$BIhr könnt uns helfen, $n. Betretet das Arathibecken, das für seine reichen Minen, sein fruchtbares Land und seine geschickten Handwerker bekannt ist, und erobert jeden Stützpünkt, den Ihr könnt. Entscheidet die Schlacht auf diese Weise für Euch und kehrt dann mit den Ressourcen, die Ihr erbeuten konntet, zu mir zurück.",
   },
   [8299] = {
     ["T"] = "Zerschlagt die Versorgungslinien Arathors",
@@ -17208,11 +16903,6 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Noch mehr Vorratskisten",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8300] = {
-    ["T"] = "Noch mehr Vorratskisten",
-    ["O"] = "",
-    ["D"] = "",
   },
   [8301] = {
     ["T"] = "Der Pfad des Gerechten",
@@ -19464,22 +19154,7 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8811] = {
-    ["T"] = "Ein Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8812] = {
-    ["T"] = "Ein Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8812] = {
-    ["T"] = "Ein Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8813] = {
     ["T"] = "Ein Belobigungsabzeichen",
     ["O"] = "",
     ["D"] = "",
@@ -19494,22 +19169,7 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8814] = {
-    ["T"] = "Ein Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8815] = {
-    ["T"] = "Ein Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8815] = {
-    ["T"] = "Ein Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8816] = {
     ["T"] = "Ein Belobigungsabzeichen",
     ["O"] = "",
     ["D"] = "",
@@ -19524,32 +19184,12 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8817] = {
-    ["T"] = "Ein Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8818] = {
-    ["T"] = "Ein Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8818] = {
     ["T"] = "Ein Belobigungsabzeichen",
     ["O"] = "",
     ["D"] = "",
   },
   [8819] = {
-    ["T"] = "Zehn Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8819] = {
-    ["T"] = "Zehn Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8820] = {
     ["T"] = "Zehn Belobigungsabzeichen",
     ["O"] = "",
     ["D"] = "",
@@ -19564,22 +19204,7 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8821] = {
-    ["T"] = "Zehn Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8822] = {
-    ["T"] = "Zehn Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8822] = {
-    ["T"] = "Zehn Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8823] = {
     ["T"] = "Zehn Belobigungsabzeichen",
     ["O"] = "",
     ["D"] = "",
@@ -19594,22 +19219,7 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8824] = {
-    ["T"] = "Zehn Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8825] = {
-    ["T"] = "Zehn Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8825] = {
-    ["T"] = "Zehn Belobigungsabzeichen",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8826] = {
     ["T"] = "Zehn Belobigungsabzeichen",
     ["O"] = "",
     ["D"] = "",

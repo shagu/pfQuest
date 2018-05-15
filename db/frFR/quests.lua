@@ -5899,11 +5899,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Donner le Rapport de Vimaire à Dame Portvaillant à Theramore.",
     ["D"] = "Vous avez fait du bon travail, $N, le meilleur que j\'ai vu de la part de quelqu\'un qui n\'est pas de chez nous.$B$BDame Portvaillant a demandé que je la tienne informée de cette situation délicate et je ne lui ai pas parlé depuis longtemps.$B$BJe m\'apprêtais à lui envoyer mon rapport, mais il me semble plus approprié que cela soit vous qui lui parliez. Vous répondrez mieux à ses questions que moi.",
   },
-  [1288] = {
-    ["T"] = "Le rapport de Vimaire",
-    ["O"] = "Donner le Rapport de Vimaire à Dame Portvaillant à Theramore.",
-    ["D"] = "Vous avez fait du bon travail, $N, le meilleur que j\'ai vu de la part de quelqu\'un qui n\'est pas de chez nous.$B$BDame Portvaillant a demandé que je la tienne informée de cette situation délicate et je ne lui ai pas parlé depuis longtemps.$B$BJe m\'apprêtais à lui envoyer mon rapport, mais il me semble plus approprié que cela soit vous qui lui parliez. Vous répondrez mieux à ses questions que moi.",
-  },
   [1289] = {
     ["T"] = "<nyi> Rapport de Vimes",
     ["O"] = "Retourner voir le capitaine Garran Vimaire à Theramore.",
@@ -7954,11 +7949,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Oben Grifferage vous demande de tuer son corps privé d\'âme et d\'utiliser ensuite le Charme vaudou.",
     ["D"] = "J\'ai examiné ce charme, $N, et je vois maintenant ce qu\'il faut faire. Prenez-le et suivez mes instructions.$B$BVous devez explorer les zones les plus reculées du Refuge des saisons de Ban\'ethil pour trouver mon corps sans âme... Je regrette de devoir en arriver à cette extrémité, mais je ne vois pas d\'autre moyen de me libérer du contrôle des Pins-tordus.$B$BVous devez tuer ma forme physique. Ensuite, utilisez le Charme vaudou sur mon corps. Lorsque vous aurez accompli cette tâche, revenez me voir.",
   },
-  [2561] = {
-    ["T"] = "Le druide de la Griffe",
-    ["O"] = "Oben Grifferage vous demande de tuer son corps privé d\'âme et d\'utiliser ensuite le Charme vaudou.",
-    ["D"] = "J\'ai examiné ce charme, $N, et je vois maintenant ce qu\'il faut faire. Prenez-le et suivez mes instructions.$B$BVous devez explorer les zones les plus reculées du Refuge des saisons de Ban\'ethil pour trouver mon corps sans âme... Je regrette de devoir en arriver à cette extrémité, mais je ne vois pas d\'autre moyen de me libérer du contrôle des Pins-tordus.$B$BVous devez tuer ma forme physique. Ensuite, utilisez le Charme vaudou sur mon corps. Lorsque vous aurez accompli cette tâche, revenez me voir.",
-  },
   [2581] = {
     ["T"] = "Joues de Raillecroc",
     ["O"] = "Apportez 3 Joues de Raillecroc, 2 Poumons de sanglier éclatés et 1 Pince de scorpok au Mage de sang Drazial.",
@@ -8083,11 +8073,6 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Kirith",
     ["O"] = "Découvrir ce qui est arrivé au Lieutenant Kirith.",
     ["D"] = "Un chapitre de vos aventures se termine, un autre commence, $N.$B$BL\'un de mes hommes manque toujours à l\'appel, il est perdu quelque part dans ces terres. Je parle du lieutenant Kirith, bien sûr.$B$BComme je l\'ai déjà dit, nous avons été tous deux capturés et torturés par Allistarj mais, pauvre Kirith, sa force a vacillé. Depuis ma cage, je pouvais entendre ce qu’il subissait, ses cris résonnaient dans toute la caverne. Je ne l’ai plus vu depuis.",
-  },
-  [2741] = {
-    ["T"] = "Le Super-Oeuf-O-Matic",
-    ["O"] = " ",
-    ["D"] = "",
   },
   [2741] = {
     ["T"] = "Le Super-Oeuf-O-Matic",
@@ -11984,11 +11969,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Se rendre jusqu’à Stratholme et fouiller les ziggourats. Trouver et ramener de nouvelles informations sur le Fléau à Betina Bigglezink.",
     ["D"] = "Vous devez fouiller plus profond dans Stratholme, $N.$B$BAu-delà des premières portes, vous trouverez les ziggourats. Nous savons que le Fléau tire beaucoup d\'énergie de ces structures. Trouvez les ziggourats et revenez avec toutes les informations que vous pouvez réunir.",
   },
-  [5213] = {
-    ["T"] = "L\'agent actif",
-    ["O"] = "Se rendre jusqu’à Stratholme et fouiller les ziggourats. Trouver et ramener de nouvelles informations sur le Fléau à Betina Bigglezink.",
-    ["D"] = "Vous devez fouiller plus profond dans Stratholme, $N.$B$BAu-delà des premières portes, vous trouverez les ziggourats. Nous savons que le Fléau tire beaucoup d\'énergie de ces structures. Trouvez les ziggourats et revenez avec toutes les informations que vous pouvez réunir.",
-  },
   [5214] = {
     ["T"] = "Le grand Fras Siabi",
     ["O"] = "Trouver le magasin de tabac de Fras Siabi dans Stratholme et récupérer une boîte de Tabac de Siabi. Retourner auprès de Smokey LaRue quand le travail est fait.",
@@ -13539,11 +13519,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Aller à Stratholme et tuer Ramstein Grandgosier. Prendre sa tête, et l’apporter à Nathanos.",
     ["D"] = "J\'ai été dépassé. Sur cette terre même, je suis resté debout... J\'ai cherché à défendre Lordaeron. La ferme et tout ce qu\'il y avait dessus ont été balayés par une immense onde du Fléau.$B$BSaleté. Il a plané au-dessus de moi, les entrailles sortant de l’abdomen.$B$BQuand je me suis réveillé, je faisais partie du Fléau. Je suis resté impuissant pendant si longtemps. Mon esprit était lié à celui du roi-liche.$B$BElle est venue pour moi... Quelque part, d\'une façon ou d\'une autre, je savais qu\'elle le ferait. Libre.$B$BEt maintenant, je dois avoir ma vengeance – ma vengeance qui est ma seule raison de vivre. Détruisez-le.",
   },
-  [6163] = {
-    ["T"] = "Ramstein",
-    ["O"] = "Aller à Stratholme et tuer Ramstein Grandgosier. Prendre sa tête, et l’apporter à Nathanos.",
-    ["D"] = "J\'ai été dépassé. Sur cette terre même, je suis resté debout... J\'ai cherché à défendre Lordaeron. La ferme et tout ce qu\'il y avait dessus ont été balayés par une immense onde du Fléau.$B$BSaleté. Il a plané au-dessus de moi, les entrailles sortant de l’abdomen.$B$BQuand je me suis réveillé, je faisais partie du Fléau. Je suis resté impuissant pendant si longtemps. Mon esprit était lié à celui du roi-liche.$B$BElle est venue pour moi... Quelque part, d\'une façon ou d\'une autre, je savais qu\'elle le ferait. Libre.$B$BEt maintenant, je dois avoir ma vengeance – ma vengeance qui est ma seule raison de vivre. Détruisez-le.",
-  },
   [6164] = {
     ["T"] = "Le livre de compte d\'Augustus",
     ["O"] = "Apporter le Livre de compte d\'Augustus à Augustus le Touché à Val-Terreur.",
@@ -13588,11 +13563,6 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Les Mort-bois du nord",
     ["O"] = "Nafien veut que vous tuiez 5 Protecteurs Mort-bois, 5 Vengeurs Mort-bois et 5 Chamans Mort-bois.",
     ["D"] = "Au sud-ouest se trouve un camp de furbolgs Mort-bois. Il empeste la corruption, et je veux que ce soit résolu avant de devenir un problème.$B$BLa tribu Mort-bois est maléfique, mais c\'est parce que la corruption a souillé leurs esprits. Leur hostilité n\'est pas innée, mais ils ne peuvent plus être aidés. Pour cette raison, j\'ai l\'immense tristesse de devoir combattre mes propres frères.$B$BS\'il vous plaît, $N, faites ce qui doit être fait. Inutile de me donner les détails, ils me mettraient trop mal à l\'aise.",
-  },
-  [6241] = {
-    ["T"] = "Les Tombe-hiver s\'agitent",
-    ["O"] = "Salfa voudrait que vous tuiez 6 Totémiques, 6 Gardes et 6 Guides de la tribu Tombe-hiver.",
-    ["D"] = "Les Grumegueules ont tendance à rester entre eux, $N. Bien que nous laissions passer ceux en qui nous avons toute confiance, nous essayons d\'éviter les autres tribus de furbolgs, si cela est possible.$B$BDernièrement, j\'ai remarqué que la tribu Tombe-hiver montrait des signes d\'hostilité à notre égard. Ils semblent être dans un étrange état de rage, rendus furieux par tout ce qui les effraie et qu\'il ne comprennent pas.$B$BSi vous pouviez en réduire le nombre, cela nous aiderait grandement, $N.",
   },
   [6241] = {
     ["T"] = "Les Tombe-hiver s\'agitent",
@@ -14579,20 +14549,10 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "D’après la légende, le chef des puissants trolls Haches-d’hiver se montre quand il le décide pour semer la destruction chez les habitants de la vallée d\'Alterac.$B$BSi Korrak apparaît, détruisez-le et présentez-vous au Maître de guerre Laggrond.",
     ["D"] = "Les envahisseurs Foudrepique ne sont pas la seule menace dans la région, soldat. La guerre dans la Vallée se livre sur deux fronts. Les trolls cannibales des Haches-d’hiver ont leurs propres ambitions.$B$BIls sont dirigés par Korrak le Ragesang, une bête cruelle et rusée.$B$BLa mort de Korrak serait un grand coup porté aux Haches-d’hiver. Tuez cet animal, et vous serez $grécompensé:récompensée; !",
   },
-  [7181] = {
-    ["T"] = "La légende de Korrak",
-    ["O"] = "D’après la légende, le chef des puissants trolls Haches-d’hiver se montre quand il le décide pour semer la destruction chez les habitants de la vallée d\'Alterac.$B$BSi Korrak apparaît, détruisez-le et présentez-vous au Maître de guerre Laggrond.",
-    ["D"] = "Les envahisseurs Foudrepique ne sont pas la seule menace dans la région, soldat. La guerre dans la Vallée se livre sur deux fronts. Les trolls cannibales des Haches-d’hiver ont leurs propres ambitions.$B$BIls sont dirigés par Korrak le Ragesang, une bête cruelle et rusée.$B$BLa mort de Korrak serait un grand coup porté aux Haches-d’hiver. Tuez cet animal, et vous serez $grécompensé:récompensée; !",
-  },
   [7201] = {
     ["T"] = "Le dernier élément",
     ["O"] = "Partir pour les Profondeurs de Rochenoire et trouver 10 Essences des éléments. Commencer vos recherches par les golems et par les créateurs de golems. Vivian Lagrave a aussi marmonné quelque chose à propos d\'élémentaires.",
     ["D"] = "Il y a du travail pour ceux qui s\'aventurent dans les Profondeurs, $N.$B$BLes Sombrefer peuvent créer des golems extrêmement puissants.$B$BLes premiers rapports de nos espions indiquent que les nains se servent d\'une source d\'énergie unique pour donner à leurs créations une puissance de destruction incomparable.$B$BImaginez simplement ce que nous pourrions faire de nos abominations si nous mettions la main sur cette essence des éléments ! Fouillez les moindres recoins de cette cité s\'il le faut, mais ne revenez pas tant que vous n\'aurez pas découvert cette essence ! Votre récompense sera à la mesure du risque encouru.",
-  },
-  [7202] = {
-    ["T"] = "Korrak le Ragesang",
-    ["O"] = "D’après la légende, le chef des puissants trolls Haches-d’hiver se montre quand il le décide pour semer la destruction chez les habitants de la vallée d\'Alterac.$B$BSi Korrak apparaît, détruisez-le et présentez-vous au Lieutenant Haggerdin dans les montagnes d\'Alterac.",
-    ["D"] = "Les indigènes de la région, les trolls Haches-d’hiver, sont des sauvages cruels qui rêvent d’ajouter nos os à leurs infâmes ragoûts.$B$BNous devons leur montrer notre force !$B$BNous avons récupéré dans leurs cavernes des livres qui détaillent leur hiérarchie. Ils indiquent que leur chef, Korrak le Ragesang, a tendance à rester caché jusqu’à ce qu’il ait une raison de faire connaître sa présence.$B$BLa mort de Korrak signerait la mort du clan Hache-d’hiver ! Tuez-le et revenez.",
   },
   [7202] = {
     ["T"] = "Korrak le Ragesang",
@@ -15414,16 +15374,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Farsong au bosquet d\'Aile-argent.",
     ["D"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le fort d\'Aile-argent. Repoussez les envahisseurs de la Horde.$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
   },
-  [7788] = {
-    ["T"] = "Triomphez des envahisseurs !",
-    ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Farsong au bosquet d\'Aile-argent.",
-    ["D"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le fort d\'Aile-argent. Repoussez les envahisseurs de la Horde.$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
-  },
-  [7789] = {
-    ["T"] = "Écrasez les usurpateurs d\'Aile-argent",
-    ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
-    ["D"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
-  },
   [7789] = {
     ["T"] = "Écrasez les usurpateurs d\'Aile-argent",
     ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
@@ -15764,25 +15714,10 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
     ["D"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le fort d\'Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
   },
-  [7871] = {
-    ["T"] = "Triomphez des envahisseurs !",
-    ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
-    ["D"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le fort d\'Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
-  },
   [7872] = {
     ["T"] = "Triomphez des envahisseurs !",
     ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
     ["D"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le Fort Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
-  },
-  [7872] = {
-    ["T"] = "Triomphez des envahisseurs !",
-    ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
-    ["D"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le Fort Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
-  },
-  [7873] = {
-    ["T"] = "Triomphez des envahisseurs !",
-    ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
-    ["D"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le fort d\'Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
   },
   [7873] = {
     ["T"] = "Triomphez des envahisseurs !",
@@ -15794,22 +15729,7 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
     ["D"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
   },
-  [7874] = {
-    ["T"] = "Écrasez les usurpateurs d\'Aile-argent",
-    ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
-    ["D"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
-  },
   [7875] = {
-    ["T"] = "Écrasez les usurpateurs d\'Aile-argent",
-    ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
-    ["D"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
-  },
-  [7875] = {
-    ["T"] = "Écrasez les usurpateurs d\'Aile-argent",
-    ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
-    ["D"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
-  },
-  [7876] = {
     ["T"] = "Écrasez les usurpateurs d\'Aile-argent",
     ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
     ["D"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
@@ -15854,30 +15774,15 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
   },
-  [7886] = {
-    ["T"] = "Talismans de vaillance",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [7887] = {
-    ["T"] = "Talismans de vaillance",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [7887] = {
-    ["T"] = "Talismans de vaillance",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
-  },
-  [7888] = {
     ["T"] = "Talismans de vaillance",
     ["O"] = "",
     ["D"] = "",
   },
   [7888] = {
     ["T"] = "Talismans de vaillance",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
+    ["O"] = "",
+    ["D"] = "",
   },
   [7889] = {
     ["T"] = "La pierre de lest grossière",
@@ -15969,50 +15874,25 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
   },
-  [7921] = {
-    ["T"] = "Talismans de vaillance",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [7922] = {
     ["T"] = "Marque d\'honneur",
     ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
-  [7922] = {
-    ["T"] = "Marque d\'honneur",
-    ["O"] = "",
-    ["D"] = "",
   },
   [7923] = {
     ["T"] = "Marque d\'honneur",
     ["O"] = "",
     ["D"] = "",
   },
-  [7923] = {
-    ["T"] = "Marque d\'honneur",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
   [7924] = {
-    ["T"] = "Marque d\'honneur",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [7924] = {
-    ["T"] = "Marque d\'honneur",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
-  [7925] = {
     ["T"] = "Marque d\'honneur",
     ["O"] = "",
     ["D"] = "",
   },
   [7925] = {
     ["T"] = "Marque d\'honneur",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [7926] = {
     ["T"] = "La foire de Sombrelune",
@@ -16324,16 +16204,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
     ["D"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
   },
-  [8080] = {
-    ["T"] = "Les ressources du bassin d\'Arathi",
-    ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
-    ["D"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
-  },
-  [8081] = {
-    ["T"] = "D\'autres caisses de ressources",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
   [8081] = {
     ["T"] = "D\'autres caisses de ressources",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
@@ -16454,16 +16324,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
     ["D"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de tous les peuples de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez $gemparé:emparée;.",
   },
-  [8123] = {
-    ["T"] = "Couper les voies de ravitaillement d\'Arathor",
-    ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
-    ["D"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de tous les peuples de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez $gemparé:emparée;.",
-  },
-  [8124] = {
-    ["T"] = "D\'autres caisses de ressources",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
   [8124] = {
     ["T"] = "D\'autres caisses de ressources",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
@@ -16534,22 +16394,7 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
     ["D"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
   },
-  [8154] = {
-    ["T"] = "Les ressources du bassin d\'Arathi",
-    ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
-    ["D"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
-  },
   [8155] = {
-    ["T"] = "Les ressources du bassin d\'Arathi",
-    ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
-    ["D"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
-  },
-  [8155] = {
-    ["T"] = "Les ressources du bassin d\'Arathi",
-    ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
-    ["D"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
-  },
-  [8156] = {
     ["T"] = "Les ressources du bassin d\'Arathi",
     ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
     ["D"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
@@ -16564,22 +16409,7 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
   },
-  [8157] = {
-    ["T"] = "D\'autres caisses de ressources",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
   [8158] = {
-    ["T"] = "D\'autres caisses de ressources",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8158] = {
-    ["T"] = "D\'autres caisses de ressources",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8159] = {
     ["T"] = "D\'autres caisses de ressources",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
@@ -16594,24 +16424,9 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au Traqueur noir Mortis au Trépas-d\'Orgrim.",
     ["D"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de toutes les races de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le Refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
   },
-  [8160] = {
-    ["T"] = "Couper les voies de ravitaillement d\'Arathor",
-    ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au Traqueur noir Mortis au Trépas-d\'Orgrim.",
-    ["D"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de toutes les races de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le Refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
-  },
   [8161] = {
     ["T"] = "Couper les voies de ravitaillement d\'Arathor",
     ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au Traqueur noir Mortis au Trépas-d\'Orgrim.",
-    ["D"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de toutes les races de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le Refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
-  },
-  [8161] = {
-    ["T"] = "Couper les voies de ravitaillement d\'Arathor",
-    ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au Traqueur noir Mortis au Trépas-d\'Orgrim.",
-    ["D"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de toutes les races de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le Refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
-  },
-  [8162] = {
-    ["T"] = "Couper les voies de ravitaillement d\'Arathor",
-    ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
     ["D"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de toutes les races de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le Refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
   },
   [8162] = {
@@ -16624,22 +16439,7 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
-  [8163] = {
-    ["T"] = "D\'autres caisses de ressources",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
   [8164] = {
-    ["T"] = "D\'autres caisses de ressources",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8164] = {
-    ["T"] = "D\'autres caisses de ressources",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8165] = {
     ["T"] = "D\'autres caisses de ressources",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
@@ -16699,90 +16499,45 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8184] = {
-    ["T"] = "La présence de la puissance",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8185] = {
     ["T"] = "Le signe du syncrétiste",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8185] = {
-    ["T"] = "Le signe du syncrétiste",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8186] = {
     ["T"] = "La caresse de la mort",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8186] = {
-    ["T"] = "La caresse de la mort",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8187] = {
     ["T"] = "L\'appel de l\'épervier",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8187] = {
-    ["T"] = "L\'appel de l\'épervier",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8188] = {
     ["T"] = "L\'étreinte vigilante du vaudouisan",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8188] = {
-    ["T"] = "L\'étreinte vigilante du vaudouisan",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8189] = {
     ["T"] = "La présence de la vision",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8189] = {
-    ["T"] = "La présence de la vision",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8190] = {
     ["T"] = "Le maléfice porte-guigne",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8190] = {
-    ["T"] = "Le maléfice porte-guigne",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8191] = {
     ["T"] = "L\'aura prophétique",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8191] = {
-    ["T"] = "L\'aura prophétique",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8192] = {
     ["T"] = "La caresse de l\'animiste",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8192] = {
-    ["T"] = "La caresse de l\'animiste",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8193] = {
     ["T"] = "Maître pêcheur",
@@ -16909,11 +16664,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
     ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
   },
-  [8243] = {
-    ["T"] = "Puissants breuvages de Zanza",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require one Zandalar Honor Token. Note that only the effects of a single one may course through your spirit at any given time.",
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
-  },
   [8246] = {
     ["T"] = "Cachets des Zandalar",
     ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
@@ -17004,32 +16754,12 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
   },
-  [8266] = {
-    ["T"] = "Les rubans de sacrifice",
-    ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8267] = {
-    ["T"] = "Les rubans de sacrifice",
-    ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
   [8267] = {
     ["T"] = "Les rubans de sacrifice",
     ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
   },
   [8268] = {
-    ["T"] = "Les rubans de sacrifice",
-    ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8268] = {
-    ["T"] = "Les rubans de sacrifice",
-    ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8269] = {
     ["T"] = "Les rubans de sacrifice",
     ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
@@ -17134,16 +16864,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
     ["D"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le Fort Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
   },
-  [8291] = {
-    ["T"] = "Triomphez des envahisseurs !",
-    ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de la Horde et gagnez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir la sentinelle Chanteloin au bosquet d\'Aile-argent.",
-    ["D"] = "Au-delà de ce tunnel, vous trouvez un lieu d\'affrontement et de chaos, jeune $C. La Horde continue à massacrer notre forêt sacrée, abattant les conifères pour alimenter leurs engins de guerre.$B$BEntrez dans le goulet des Chanteguerres, et défendez le Fort Aile-argent. Repoussez les envahisseurs de la Horde !$B$BSi vous y parvenez, vous gagnerez un talisman de vaillance. Apportez-moi l\'un de ces talismans, $N, et je vous récompenserai.",
-  },
-  [8292] = {
-    ["T"] = "Les talismans de vaillance",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8292] = {
     ["T"] = "Les talismans de vaillance",
     ["O"] = "",
@@ -17153,16 +16873,6 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "La marque d\'honneur",
     ["O"] = "",
     ["D"] = "",
-  },
-  [8293] = {
-    ["T"] = "La marque d\'honneur",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8294] = {
-    ["T"] = "Écrasez les usurpateurs d\'Aile-argent",
-    ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
-    ["D"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
   },
   [8294] = {
     ["T"] = "Écrasez les usurpateurs d\'Aile-argent",
@@ -17179,25 +16889,10 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
     ["D"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
   },
-  [8297] = {
-    ["T"] = "Les ressources du bassin d\'Arathi",
-    ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
-    ["D"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin d\'Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin d\'Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
-  },
   [8298] = {
     ["T"] = "More Resource Crates",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8298] = {
-    ["T"] = "More Resource Crates",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8299] = {
-    ["T"] = "Couper les voies de ravitaillement d\'Arathor",
-    ["O"] = "Gagnez la bataille pour le bassin d\'Arathi, obtenez une Caisse de resssources d\'Arathi et rapportez-la au Traqueur noir Mortis au Trépas-d\'Orgrim.",
-    ["D"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin d\'Arathi. Avec l\'aide de tous les peuples de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin d\'Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez emparé.",
   },
   [8299] = {
     ["T"] = "Couper les voies de ravitaillement d\'Arathor",
@@ -17208,11 +16903,6 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "More Resource Crates",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8300] = {
-    ["T"] = "More Resource Crates",
-    ["O"] = "",
-    ["D"] = "",
   },
   [8301] = {
     ["T"] = "Le Chemin des Justes",
@@ -19464,22 +19154,7 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8811] = {
-    ["T"] = "Une chevalière de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8812] = {
-    ["T"] = "Une chevalière de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8812] = {
-    ["T"] = "Une chevalière de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8813] = {
     ["T"] = "Une chevalière de mérite",
     ["O"] = "",
     ["D"] = "",
@@ -19494,22 +19169,7 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8814] = {
-    ["T"] = "Une chevalière de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8815] = {
-    ["T"] = "Une chevalière de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8815] = {
-    ["T"] = "Une chevalière de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8816] = {
     ["T"] = "Une chevalière de mérite",
     ["O"] = "",
     ["D"] = "",
@@ -19524,32 +19184,12 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8817] = {
-    ["T"] = "Une chevalière de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8818] = {
-    ["T"] = "Une chevalière de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8818] = {
     ["T"] = "Une chevalière de mérite",
     ["O"] = "",
     ["D"] = "",
   },
   [8819] = {
-    ["T"] = "Dix chevalières de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8819] = {
-    ["T"] = "Dix chevalières de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8820] = {
     ["T"] = "Dix chevalières de mérite",
     ["O"] = "",
     ["D"] = "",
@@ -19564,22 +19204,7 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8821] = {
-    ["T"] = "Dix chevalières de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8822] = {
-    ["T"] = "Dix chevalières de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8822] = {
-    ["T"] = "Dix chevalières de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8823] = {
     ["T"] = "Dix chevalières de mérite",
     ["O"] = "",
     ["D"] = "",
@@ -19594,22 +19219,7 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8824] = {
-    ["T"] = "Dix chevalières de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8825] = {
-    ["T"] = "Dix chevalières de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8825] = {
-    ["T"] = "Dix chevalières de mérite",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8826] = {
     ["T"] = "Dix chevalières de mérite",
     ["O"] = "",
     ["D"] = "",

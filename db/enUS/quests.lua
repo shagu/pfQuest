@@ -3241,7 +3241,7 @@ pfDB["quests"]["enUS"] = {
   },
   [679] = {
     ["T"] = "Call to Arms",
-    ["O"] = "Kill 7 Boulderfist Shaman and 3 Boulderfist Lords and return to Drum Fel in the Hammerfall outpost.",
+    ["O"] = "Kill 15 Boulderfist Shaman and 10 Boulderfist Lords and return to Drum Fel in the Hammerfall outpost.",
     ["D"] = "The head of the beast is ready to be taken off... with great force, $N. You have shown every sign that you are able to help us with this final mighty blow. The leaders of these attacks have made their lair within the ruins of Stromgarde, a glaring symbol of human frailty.$B$BFind and slay those Boulderfist lords and their lackey shaman who would try and drive us from these lands.",
   },
   [680] = {
@@ -5899,11 +5899,6 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Bring Vimes\'s Report to Lady Jaina Proudmoore in Theramore.",
     ["D"] = "You\'ve done some good work, $n, best I\'ve seen from an amateur.$b$bLady Proudmoore asked that I keep her apprised of this delicate situation, and I haven\'t spoken to her for some time now.$b$bI was going to deliver my report to her later, but it seems more fitting that you should be the one to speak with her about it. You can probably answer her questions better than I could.",
   },
-  [1288] = {
-    ["T"] = "Vimes\'s Report",
-    ["O"] = "Bring Vimes\'s Report to Lady Jaina Proudmoore in Theramore.",
-    ["D"] = "You\'ve done some good work, $n, best I\'ve seen from an amateur.$b$bLady Proudmoore asked that I keep her apprised of this delicate situation, and I haven\'t spoken to her for some time now.$b$bI was going to deliver my report to her later, but it seems more fitting that you should be the one to speak with her about it. You can probably answer her questions better than I could.",
-  },
   [1289] = {
     ["T"] = "Vimes\'s Report",
     ["O"] = "Return to Captain Garran Vimes in Theramore.",
@@ -7954,11 +7949,6 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Oben Rageclaw wants you to kill his soulless body, and then use the Voodoo Charm.",
     ["D"] = "After examining this charm, $N, I see now what must be done. Please take it, and do as I ask.$B$BYou are to explore the deepest areas of the Ban\'ethil Barrow Den. There, you will find my soulless body... Although I regret what I am about to tell you, I see no other way to free myself from the control of the Gnarlpine.$B$BIn order for me to escape them, you must kill my physical form.  Once that is done, use the voodoo charm on my fallen body. After you have completed this task, please return to me.",
   },
-  [2561] = {
-    ["T"] = "Druid of the Claw",
-    ["O"] = "Oben Rageclaw wants you to kill his soulless body, and then use the Voodoo Charm.",
-    ["D"] = "After examining this charm, $N, I see now what must be done. Please take it, and do as I ask.$B$BYou are to explore the deepest areas of the Ban\'ethil Barrow Den. There, you will find my soulless body... Although I regret what I am about to tell you, I see no other way to free myself from the control of the Gnarlpine.$B$BIn order for me to escape them, you must kill my physical form.  Once that is done, use the voodoo charm on my fallen body. After you have completed this task, please return to me.",
-  },
   [2581] = {
     ["T"] = "Snickerfang Jowls",
     ["O"] = "Bring three Snickerfang Jowls, two Blasted Boar Lungs, and one Scorpok Pincer to Bloodmage Drazial.",
@@ -8083,11 +8073,6 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Kirith",
     ["O"] = "Find out what became of Lieutenant Kirith.",
     ["D"] = "As one chapter of your adventure closes, another one begins, $N.$B$BOne of my men is still unaccounted for, lost somewhere in the Blasted Lands. I am talking about Lieutenant Kirith, of course.$B$BAs I had mentioned earlier, we were both imprisoned and tortured by Allistarj, but poor Kirith, his strength of will faltered. I could hear the experiments from my cage; the tortured screams rang through the halls of the cave. That was the last I saw or heard of Kirith.",
-  },
-  [2741] = {
-    ["T"] = "The Super Egg-O-Matic",
-    ["O"] = " ",
-    ["D"] = "",
   },
   [2741] = {
     ["T"] = "The Super Egg-O-Matic",
@@ -11984,11 +11969,6 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Travel to Stratholme and search the ziggurats. Find and return new Scourge Data to Betina Bigglezink.",
     ["D"] = "You will have to delve deeper into Stratholme, $N.$B$BBeyond the first gates you will find the ziggurats. We know that the Scourge draws great power from these structures. Search the Ziggurats and return with any information that you may discover.",
   },
-  [5213] = {
-    ["T"] = "The Active Agent",
-    ["O"] = "Travel to Stratholme and search the ziggurats. Find and return new Scourge Data to Betina Bigglezink.",
-    ["D"] = "You will have to delve deeper into Stratholme, $N.$B$BBeyond the first gates you will find the ziggurats. We know that the Scourge draws great power from these structures. Search the Ziggurats and return with any information that you may discover.",
-  },
   [5214] = {
     ["T"] = "The Great Fras Siabi",
     ["O"] = "Find Fras Siabi\'s smoke shop in Stratholme and recover a box of Siabi\'s Premium Tobacco. Return to Smokey LaRue when the job is done.",
@@ -13539,11 +13519,6 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Travel to Stratholme and slay Ramstein the Gorger. Take his head as a souvenir for Nathanos.",
     ["D"] = "I was overwhelmed. On this very stead, I stood... held my ground in defense of Lordaeron. The farm and all on it were waylaid by a gigantic wave of Scourge.$B$BThe wretch. The filth. It hovered above me, entrails hanging from its gaping chest cavity.$B$BI woke as Scourge. For so long I was helpless. My mind had coalesced with the Lich King\'s.$B$BShe came for me... somewhere, somehow, I knew she would. Free.$B$BAnd now, I must have my vengeance - my vengeance on that which took from me my life. Destroy it.",
   },
-  [6163] = {
-    ["T"] = "Ramstein",
-    ["O"] = "Travel to Stratholme and slay Ramstein the Gorger. Take his head as a souvenir for Nathanos.",
-    ["D"] = "I was overwhelmed. On this very stead, I stood... held my ground in defense of Lordaeron. The farm and all on it were waylaid by a gigantic wave of Scourge.$B$BThe wretch. The filth. It hovered above me, entrails hanging from its gaping chest cavity.$B$BI woke as Scourge. For so long I was helpless. My mind had coalesced with the Lich King\'s.$B$BShe came for me... somewhere, somehow, I knew she would. Free.$B$BAnd now, I must have my vengeance - my vengeance on that which took from me my life. Destroy it.",
-  },
   [6164] = {
     ["T"] = "Augustus\' Receipt Book",
     ["O"] = "Bring Augustus\' Receipt Book to Augustus the Touched in Terrordale.",
@@ -13588,11 +13563,6 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Deadwood of the North",
     ["O"] = "Nafien would like you to kill 5 Deadwood Den Watchers, 5 Deadwood Avengers, and 5 Deadwood Shamans.",
     ["D"] = "There is a camp of Deadwood furbolgs directly to our southwest.  Corruption permeates the camp, and I wish to put an end to it before they become a problem.$B$BThe Deadwood tribe is evil, but it is the effects of the fel that pollutes their minds.  Their hostility is not truly an innate quality, yet they cannot be helped.  For this reason, I am deeply saddened by having to fight my own brethren.$B$BPlease, $N, do what must be done, and do not mention the details; they upset me far too much.",
-  },
-  [6241] = {
-    ["T"] = "Winterfall Activity",
-    ["O"] = "Salfa wants you to kill 6 Winterfall Totemics, 6 Winterfall Den Watchers, and 6 Winterfall Pathfinders.",
-    ["D"] = "The Timbermaw tend to stay to themselves, $N. While we do allow safe passage to those that have proven they can be trusted, we try to avoid other furbolg tribes if at all possible.$B$BLately I have noticed that the Winterfall tribe has become increasingly hostile towards us. They seem to be in a state of rage, completely engulfed by their own fear and hatred of anything they do not understand.$B$BIf you could reduce their numbers this would help us greatly, $N.",
   },
   [6241] = {
     ["T"] = "Winterfall Activity",
@@ -14579,20 +14549,10 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "According to legend, the leader of the mighty Winterax trolls appears at will to wreak havoc on the denizens of Alterac Valley.$B$BShould Korrak make himself known, destroy him and return to Warmaster Laggrond.",
     ["D"] = "The invading Stormpike are not the only threat in the region, soldier. The war in the Valley is waged on two fronts. The cannibal Winterax trolls also vie for power.$B$BThey are lead by Korrak the Bloodrager - a cruel and cunning beast.$B$BA strike against Korrak could prove to be a crushing blow to the Winterax clan. Slay the beast and be rewarded!",
   },
-  [7181] = {
-    ["T"] = "The Legend of Korrak",
-    ["O"] = "According to legend, the leader of the mighty Winterax trolls appears at will to wreak havoc on the denizens of Alterac Valley.$B$BShould Korrak make himself known, destroy him and return to Warmaster Laggrond.",
-    ["D"] = "The invading Stormpike are not the only threat in the region, soldier. The war in the Valley is waged on two fronts. The cannibal Winterax trolls also vie for power.$B$BThey are lead by Korrak the Bloodrager - a cruel and cunning beast.$B$BA strike against Korrak could prove to be a crushing blow to the Winterax clan. Slay the beast and be rewarded!",
-  },
   [7201] = {
     ["T"] = "The Last Element",
     ["O"] = "Travel to Blackrock Depths and recover 10 Essence of the Elements. Your first inclination is to search the golems and golem makers. You remember Vivian Lagrave also muttering something about elementals.",
     ["D"] = "There is work to be had for those venturing into the depths, $N.$B$BThe Dark Irons have mastered creation of extremely powerful golems.$B$BInitial reports from our spies indicate that the dwarves use a unique power source to give their creations incomparable killing power.$B$BJust imagine what we could do with our abominations if we could get our hands on this essence of the elements! Turn that city upside down if you must, but do not return until you have found the essence! Payment will be worth the risk.",
-  },
-  [7202] = {
-    ["T"] = "Korrak the Bloodrager",
-    ["O"] = "According to legend, the leader of the mighty Winterax trolls appears at will to wreak havoc on the denizens of Alterac Valley.$B$BShould Korrak make himself known, destroy him and return to Lieutenant Haggerdin in the Alterac Mountains.",
-    ["D"] = "The indigenous Winterax trolls of the region are ruthless savages that would love nothing more than to have our bones added to their foul stew.$B$BWe must show them our might!$B$BWe have recovered tomes from their caves that detail their leadership hierarchy. The artifacts indicate that their leader, Korrak the Bloodrager, tends to remain hidden until given a reason to make his presence known.$B$BDeath to Korrak would mean death to Winterax Clan! Slay him and return.",
   },
   [7202] = {
     ["T"] = "Korrak the Bloodrager",
@@ -15414,20 +15374,10 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
     ["D"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a Mark of Honor.  Bring it to me, $N, and I shall reward you.",
   },
-  [7788] = {
-    ["T"] = "Vanquish the Invaders!",
-    ["O"] = "Enter Warsong Gulch and defeat the Horde, obtain a Silverwing Talisman of Merit, and return to Sentinel Farsong at the Silverwing Grove.",
-    ["D"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a talisman of merit.  Bring me such a talisman, $N, and I shall reward you.",
-  },
   [7789] = {
     ["T"] = "Quell the Silverwing Usurpers",
     ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
     ["D"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Mark of Honor.  Return to me with such a Mark, $N, and you will be rewarded.",
-  },
-  [7789] = {
-    ["T"] = "Quell the Silverwing Usurpers",
-    ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
-    ["D"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Warsong mark of honor.  Return to me with such a mark, $N, and you will be rewarded.$B",
   },
   [7791] = {
     ["T"] = "A Donation of Wool",
@@ -15764,60 +15714,30 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
     ["D"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a Mark of Honor.  Bring it to me, $N, and I shall reward you.",
   },
-  [7871] = {
-    ["T"] = "Vanquish the Invaders!",
-    ["O"] = "Enter Warsong Gulch and defeat the Horde, obtain a Silverwing Talisman of Merit, and return to Sentinel Farsong at the Silverwing Grove.",
-    ["D"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a talisman of merit.  Bring me such a talisman, $N, and I shall reward you.",
-  },
   [7872] = {
     ["T"] = "Vanquish the Invaders!",
     ["O"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
     ["D"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a Mark of Honor.  Bring it to me, $N, and I shall reward you.",
-  },
-  [7872] = {
-    ["T"] = "Vanquish the Invaders!",
-    ["O"] = "Enter Warsong Gulch and defeat the Horde, obtain a Silverwing Talisman of Merit, and return to Sentinel Farsong at the Silverwing Grove.",
-    ["D"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a talisman of merit.  Bring me such a talisman, $N, and I shall reward you.",
   },
   [7873] = {
     ["T"] = "Vanquish the Invaders!",
     ["O"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
     ["D"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a Mark of Honor.  Bring it to me, $N, and I shall reward you.",
   },
-  [7873] = {
-    ["T"] = "Vanquish the Invaders!",
-    ["O"] = "Enter Warsong Gulch and defeat the Horde, obtain a Silverwing Talisman of Merit, and return to Sentinel Farsong at the Silverwing Grove.",
-    ["D"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a talisman of merit.  Bring me such a talisman, $N, and I shall reward you.",
-  },
   [7874] = {
     ["T"] = "Quell the Silverwing Usurpers",
     ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
     ["D"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Mark of Honor.  Return to me with such a Mark, $N, and you will be rewarded.",
-  },
-  [7874] = {
-    ["T"] = "Quell the Silverwing Usurpers",
-    ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
-    ["D"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Warsong mark of honor.  Return to me with such a mark, $N, and you will be rewarded.$B",
   },
   [7875] = {
     ["T"] = "Quell the Silverwing Usurpers",
     ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
     ["D"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Warsong mark of honor.  Return to me with such a mark, $N, and you will be rewarded.$B",
   },
-  [7875] = {
-    ["T"] = "Quell the Silverwing Usurpers",
-    ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
-    ["D"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Mark of Honor.  Return to me with such a Mark, $N, and you will be rewarded.",
-  },
   [7876] = {
     ["T"] = "Quell the Silverwing Usurpers",
     ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
     ["D"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Mark of Honor.  Return to me with such a Mark, $N, and you will be rewarded.",
-  },
-  [7876] = {
-    ["T"] = "Quell the Silverwing Usurpers",
-    ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
-    ["D"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Warsong mark of honor.  Return to me with such a mark, $N, and you will be rewarded.$B",
   },
   [7877] = {
     ["T"] = "The Treasure of the Shen\'dralar",
@@ -15854,30 +15774,15 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
   },
-  [7886] = {
-    ["T"] = "Talismans of Merit",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [7887] = {
-    ["T"] = "Talismans of Merit",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [7887] = {
-    ["T"] = "Talismans of Merit",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
-  },
-  [7888] = {
     ["T"] = "Talismans of Merit",
     ["O"] = "",
     ["D"] = "",
   },
   [7888] = {
     ["T"] = "Talismans of Merit",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
+    ["O"] = "",
+    ["D"] = "",
   },
   [7889] = {
     ["T"] = "Coarse Weightstone",
@@ -15969,50 +15874,25 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
   },
-  [7921] = {
-    ["T"] = "Talismans of Merit",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [7922] = {
     ["T"] = "Mark of Honor",
     ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
-  [7922] = {
-    ["T"] = "Mark of Honor",
-    ["O"] = "",
-    ["D"] = "",
   },
   [7923] = {
     ["T"] = "Mark of Honor",
     ["O"] = "",
     ["D"] = "",
   },
-  [7923] = {
-    ["T"] = "Mark of Honor",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
   [7924] = {
-    ["T"] = "Mark of Honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [7924] = {
-    ["T"] = "Mark of Honor",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
-  [7925] = {
     ["T"] = "Mark of Honor",
     ["O"] = "",
     ["D"] = "",
   },
   [7925] = {
     ["T"] = "Mark of Honor",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [7926] = {
     ["T"] = "The Darkmoon Faire",
@@ -16324,16 +16204,6 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
   },
-  [8080] = {
-    ["T"] = "Arathi Basin Resources!",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8081] = {
-    ["T"] = "More Resource Crates",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
   [8081] = {
     ["T"] = "More Resource Crates",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
@@ -16454,16 +16324,6 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
-  [8123] = {
-    ["T"] = "Cut Arathor Supply Lines",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
-  },
-  [8124] = {
-    ["T"] = "More Resource Crates",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
   [8124] = {
     ["T"] = "More Resource Crates",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
@@ -16534,42 +16394,17 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
   },
-  [8154] = {
-    ["T"] = "Arathi Basin Mark of Honor!",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
-  },
   [8155] = {
     ["T"] = "Arathi Basin Resources!",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8155] = {
-    ["T"] = "Arathi Basin Mark of Honor!",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
   },
   [8156] = {
     ["T"] = "Arathi Basin Resources!",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
   },
-  [8156] = {
-    ["T"] = "Arathi Basin Mark of Honor!",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
-  },
   [8157] = {
-    ["T"] = "More Resource Crates",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8157] = {
-    ["T"] = "More Resource Crates",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8158] = {
     ["T"] = "More Resource Crates",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
@@ -16584,45 +16419,20 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
   },
-  [8159] = {
-    ["T"] = "More Resource Crates",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
   [8160] = {
     ["T"] = "Cut Arathor Supply Lines",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8160] = {
-    ["T"] = "Cut Arathor Supply Lines",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
   },
   [8161] = {
     ["T"] = "Cut Arathor Supply Lines",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
-  [8161] = {
-    ["T"] = "Cut Arathor Supply Lines",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
-  },
   [8162] = {
     ["T"] = "Cut Arathor Supply Lines",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8162] = {
-    ["T"] = "Cut Arathor Supply Lines",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
-  },
-  [8163] = {
-    ["T"] = "More Resource Crates",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
   [8163] = {
     ["T"] = "More Resource Crates",
@@ -16630,16 +16440,6 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
   [8164] = {
-    ["T"] = "More Resource Crates",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8164] = {
-    ["T"] = "More Resource Crates",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8165] = {
     ["T"] = "More Resource Crates",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
@@ -16699,90 +16499,45 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8184] = {
-    ["T"] = "Presence of Might",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8185] = {
     ["T"] = "Syncretist\'s Sigil",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8185] = {
-    ["T"] = "Syncretist\'s Sigil",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8186] = {
     ["T"] = "Death\'s Embrace",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8186] = {
-    ["T"] = "Death\'s Embrace",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8187] = {
     ["T"] = "Falcon\'s Call",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8187] = {
-    ["T"] = "Falcon\'s Call",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8188] = {
     ["T"] = "Vodouisant\'s Vigilant Embrace",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8188] = {
-    ["T"] = "Vodouisant\'s Vigilant Embrace",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8189] = {
     ["T"] = "Presence of Sight",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8189] = {
-    ["T"] = "Presence of Sight",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8190] = {
     ["T"] = "Hoodoo Hex",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8190] = {
-    ["T"] = "Hoodoo Hex",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8191] = {
     ["T"] = "Prophetic Aura",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8191] = {
-    ["T"] = "Prophetic Aura",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8192] = {
     ["T"] = "Animist\'s Caress",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8192] = {
-    ["T"] = "Animist\'s Caress",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8193] = {
     ["T"] = "Master Angler",
@@ -16909,11 +16664,6 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
     ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
   },
-  [8243] = {
-    ["T"] = "Zanza\'s Potent Potables",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require one Zandalar Honor Token. Note that only the effects of a single one may course through your spirit at any given time.",
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
-  },
   [8246] = {
     ["T"] = "Signets of the Zandalar",
     ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
@@ -17004,32 +16754,12 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
   },
-  [8266] = {
-    ["T"] = "Ribbons of Sacrifice",
-    ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8267] = {
-    ["T"] = "Ribbons of Sacrifice",
-    ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
   [8267] = {
     ["T"] = "Ribbons of Sacrifice",
     ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
   },
   [8268] = {
-    ["T"] = "Ribbons of Sacrifice",
-    ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8268] = {
-    ["T"] = "Ribbons of Sacrifice",
-    ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8269] = {
     ["T"] = "Ribbons of Sacrifice",
     ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
@@ -17134,18 +16864,8 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Enter Warsong Gulch and defeat the Horde, obtain a Silverwing Talisman of Merit, and return to Sentinel Farsong at the Silverwing Grove.",
     ["D"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a talisman of merit.  Bring me such a talisman, $N, and I shall reward you.",
   },
-  [8291] = {
-    ["T"] = "Vanquish the Invaders!",
-    ["O"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
-    ["D"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a Mark of Honor.  Bring it to me, $N, and I shall reward you.",
-  },
   [8292] = {
     ["T"] = "Talismans of Merit",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8292] = {
-    ["T"] = "Marks of Honor",
     ["O"] = "",
     ["D"] = "",
   },
@@ -17154,20 +16874,10 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8293] = {
-    ["T"] = "Marks of Honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8294] = {
     ["T"] = "Quell the Silverwing Usurpers",
     ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
     ["D"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Warsong mark of honor.  Return to me with such a mark, $N, and you will be rewarded.",
-  },
-  [8294] = {
-    ["T"] = "Quell the Silverwing Usurpers",
-    ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
-    ["D"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Mark of Honor.  Return to me with such a Mark, $N, and you will be rewarded.",
   },
   [8296] = {
     ["T"] = "Mark of Honor",
@@ -17179,40 +16889,20 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
   },
-  [8297] = {
-    ["T"] = "Arathi Basin Mark of Honor!",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a Mark of Honor.",
-  },
   [8298] = {
     ["T"] = "More Resource Crates",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8298] = {
-    ["T"] = "More Arathi Basin Marks of Honor",
-    ["O"] = "",
-    ["D"] = "",
   },
   [8299] = {
     ["T"] = "Cut Arathor Supply Lines",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
-  [8299] = {
-    ["T"] = "Cut Arathor Supply Lines",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Basin Mark of Honor, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the Mark of Honor you gain.",
-  },
   [8300] = {
     ["T"] = "More Resource Crates",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8300] = {
-    ["T"] = "More Arathi Basin Marks of Honor",
-    ["O"] = "",
-    ["D"] = "",
   },
   [8301] = {
     ["T"] = "The Path of the Righteous",
@@ -19464,22 +19154,7 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8811] = {
-    ["T"] = "One Commendation Signet",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8812] = {
-    ["T"] = "One Commendation Signet",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8812] = {
-    ["T"] = "One Commendation Signet",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8813] = {
     ["T"] = "One Commendation Signet",
     ["O"] = "",
     ["D"] = "",
@@ -19494,22 +19169,7 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8814] = {
-    ["T"] = "One Commendation Signet",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8815] = {
-    ["T"] = "One Commendation Signet",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8815] = {
-    ["T"] = "One Commendation Signet",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8816] = {
     ["T"] = "One Commendation Signet",
     ["O"] = "",
     ["D"] = "",
@@ -19524,32 +19184,12 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8817] = {
-    ["T"] = "One Commendation Signet",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8818] = {
-    ["T"] = "One Commendation Signet",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8818] = {
     ["T"] = "One Commendation Signet",
     ["O"] = "",
     ["D"] = "",
   },
   [8819] = {
-    ["T"] = "Ten Commendation Signets",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8819] = {
-    ["T"] = "Ten Commendation Signets",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8820] = {
     ["T"] = "Ten Commendation Signets",
     ["O"] = "",
     ["D"] = "",
@@ -19564,22 +19204,7 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8821] = {
-    ["T"] = "Ten Commendation Signets",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8822] = {
-    ["T"] = "Ten Commendation Signets",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8822] = {
-    ["T"] = "Ten Commendation Signets",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8823] = {
     ["T"] = "Ten Commendation Signets",
     ["O"] = "",
     ["D"] = "",
@@ -19594,22 +19219,7 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8824] = {
-    ["T"] = "Ten Commendation Signets",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8825] = {
-    ["T"] = "Ten Commendation Signets",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8825] = {
-    ["T"] = "Ten Commendation Signets",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8826] = {
     ["T"] = "Ten Commendation Signets",
     ["O"] = "",
     ["D"] = "",

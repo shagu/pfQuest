@@ -5899,11 +5899,6 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Bring Vimes\'s Report to Lady Jaina Proudmoore in Theramore.",
     ["D"] = "You\'ve done some good work, $n, best I\'ve seen from an amateur.$b$bLady Proudmoore asked that I keep her apprised of this delicate situation, and I haven\'t spoken to her for some time now.$b$bI was going to deliver my report to her later, but it seems more fitting that you should be the one to speak with her about it. You can probably answer her questions better than I could.",
   },
-  [1288] = {
-    ["T"] = "Vimes\'s Report",
-    ["O"] = "Bring Vimes\'s Report to Lady Jaina Proudmoore in Theramore.",
-    ["D"] = "You\'ve done some good work, $n, best I\'ve seen from an amateur.$b$bLady Proudmoore asked that I keep her apprised of this delicate situation, and I haven\'t spoken to her for some time now.$b$bI was going to deliver my report to her later, but it seems more fitting that you should be the one to speak with her about it. You can probably answer her questions better than I could.",
-  },
   [1289] = {
     ["T"] = "Vimes\'s Report",
     ["O"] = "Return to Captain Garran Vimes in Theramore.",
@@ -7954,11 +7949,6 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Mata el cuerpo desalmado de Oben Garrafuria y después utiliza el talismán vudú.",
     ["D"] = "Tras haber estudiado el talismán, $n, veo con claridad lo que hay que hacer. Cógelo y haz lo que te digo.$B$BDebes acercarte a la puerta de la cámara cercana. Allí encontrarás mi cuerpo desalmado. Aunque me cueste aceptar lo que voy a decir, no veo otro modo de liberarme del control de los Tuercepinos.$B$BPara que pueda escapar, debes matar mi representación física. Hecho esto, utiliza el talismán vudú sobre mi cuerpo inerte. Vuelve aquí cuando hayas cumplido tu cometido.",
   },
-  [2561] = {
-    ["T"] = "El druida de la Zarpa",
-    ["O"] = "Mata el cuerpo desalmado de Oben Garrafuria y después utiliza el talismán vudú.",
-    ["D"] = "Tras haber estudiado el talismán, $n, veo con claridad lo que hay que hacer. Cógelo y haz lo que te digo.$B$BDebes acercarte a la puerta de la cámara cercana. Allí encontrarás mi cuerpo desalmado. Aunque me cueste aceptar lo que voy a decir, no veo otro modo de liberarme del control de los Tuercepinos.$B$BPara que pueda escapar, debes matar mi representación física. Hecho esto, utiliza el talismán vudú sobre mi cuerpo inerte. Vuelve aquí cuando hayas cumplido tu cometido.",
-  },
   [2581] = {
     ["T"] = "Papadas de hiena risitas",
     ["O"] = "Llévale 3 papadas de hiena risitas, 2 pulmones de jabalí maldito y 1 pinza de scorpok al mago sangriento Drazial.",
@@ -8083,11 +8073,6 @@ pfDB["quests"]["esMX"] = {
     ["T"] = "Kirith",
     ["O"] = "Averigua qué le ha ocurrido al teniente Kirith.",
     ["D"] = "Concluye un capítulo de tu aventura y comienza uno nuevo, $n.$B$BUno de mis hombres ha desaparecido, perdido en algún lugar de Las Tierras Devastadas. Me refiero al teniente Kirith, claro.$B$BComo he mencionado antes, Allistarj nos capturó y torturó a ambos, pero al pobre Kirith le falló la fuerza de voluntad. Desde mi jaula podía oír los experimentos; los alaridos de su voz torturada recorrían cada recoveco de la caverna. Desde entonces no he vuelto a ver ni a oír a Kirith.",
-  },
-  [2741] = {
-    ["T"] = "El Superhuevomático",
-    ["O"] = " ",
-    ["D"] = "",
   },
   [2741] = {
     ["T"] = "El Superhuevomático",
@@ -11984,11 +11969,6 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Viaja a Stratholme y busca los zigurats. Encuentra información sobre la Plaga y llévasela a Betina Bigglezink.|n",
     ["D"] = "Tendrás que adentrarte más en Stratholme, $n.$B$BDetrás de las primeras puertas encontrarás a los zigurats. Sabemos que la Plaga extrae un gran poder de esas estructuras. Examina los zigurats y vuelve con cualquier información que consigas.|n",
   },
-  [5213] = {
-    ["T"] = "El agente activo",
-    ["O"] = "Viaja a Stratholme y busca los zigurats. Encuentra información sobre la Plaga y llévasela a Betina Bigglezink.|n",
-    ["D"] = "Tendrás que adentrarte más en Stratholme, $n.$B$BDetrás de las primeras puertas encontrarás a los zigurats. Sabemos que la Plaga extrae un gran poder de esas estructuras. Examina los zigurats y vuelve con cualquier información que consigas.|n",
-  },
   [5214] = {
     ["T"] = "El gran Fras Siabi",
     ["O"] = "Encuentra la Tienda de humo de Fras Siabi en Stratholme y recupera una caja del tabaco de calidad de Siabi. Cuando lo hayas hecho, vuelve con Smokey LaRue.|n",
@@ -13539,11 +13519,6 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Viaja a Stratholme y mata a Ramstein el Empachador. Coge su cabeza y llévasela como souvenir a Nathanos.",
     ["D"] = "Me superaron. Estaba en este mismo lugar... firme, defendiendo el terreno por Lordaeron. La granja fue atacada por una gigante ola de la Plaga.$B$BEsos malditos... Esa escoria... Algo planeó sobre mí... Sus vísceras colgaban de su cavidad torácica...$B$BMe desperté como miembro de la Plaga. Durante tanto tiempo me sentí tan impotente... Mi mente se unió a la del Rey Exánime.$B$BElla vino a por mí... de alguna forma, sabía que lo haría. Libre.$B$BY ahora debo cobrar mi venganza. Debo vengarme de lo que se llevó mi vida. Destrúyelo tú.",
   },
-  [6163] = {
-    ["T"] = "Ramstein",
-    ["O"] = "Viaja a Stratholme y mata a Ramstein el Empachador. Coge su cabeza y llévasela como souvenir a Nathanos.",
-    ["D"] = "Me superaron. Estaba en este mismo lugar... firme, defendiendo el terreno por Lordaeron. La granja fue atacada por una gigante ola de la Plaga.$B$BEsos malditos... Esa escoria... Algo planeó sobre mí... Sus vísceras colgaban de su cavidad torácica...$B$BMe desperté como miembro de la Plaga. Durante tanto tiempo me sentí tan impotente... Mi mente se unió a la del Rey Exánime.$B$BElla vino a por mí... de alguna forma, sabía que lo haría. Libre.$B$BY ahora debo cobrar mi venganza. Debo vengarme de lo que se llevó mi vida. Destrúyelo tú.",
-  },
   [6164] = {
     ["T"] = "Libro de entradas de Augustus",
     ["O"] = "Consigue el libro de entradas de Augustus en la posada del Valle del Terror.",
@@ -13588,11 +13563,6 @@ pfDB["quests"]["esMX"] = {
     ["T"] = "Deadwood of the North",
     ["O"] = "Nafien would like you to kill 5 Deadwood Den Watchers, 5 Deadwood Avengers, and 5 Deadwood Shamans.",
     ["D"] = "There is a camp of Deadwood furbolgs directly to our southwest.  Corruption permeates the camp, and I wish to put an end to it before they become a problem.$B$BThe Deadwood tribe is evil, but it is the effects of the fel that pollutes their minds.  Their hostility is not truly an innate quality, yet they cannot be helped.  For this reason, I am deeply saddened by having to fight my own brethren.$B$BPlease, $N, do what must be done, and do not mention the details; they upset me far too much.",
-  },
-  [6241] = {
-    ["T"] = "Winterfall Activity",
-    ["O"] = "Salfa wants you to kill 6 Winterfall Totemics, 6 Winterfall Den Watchers, and 6 Winterfall Pathfinders.",
-    ["D"] = "The Timbermaw tend to stay to themselves, $N. While we do allow safe passage to those that have proven they can be trusted, we try to avoid other furbolg tribes if at all possible.$B$BLately I have noticed that the Winterfall tribe has become increasingly hostile towards us. They seem to be in a state of rage, completely engulfed by their own fear and hatred of anything they do not understand.$B$BIf you could reduce their numbers this would help us greatly, $N.",
   },
   [6241] = {
     ["T"] = "Winterfall Activity",
@@ -14579,20 +14549,10 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Según cuenta la leyenda, el jefe de los poderosos trols Hacha Invernal parece dispuesto a sembrar el caos entre los habitantes del Valle de Alterac.$B$BSi Korrak se digna aparecer, destrúyelo y vuelve con el maestro de guerra Laggrond.",
     ["D"] = "Los invasores Pico Tormenta no son la única amenaza de la región, soldado. La guerra en el valle se está librando en dos frentes. Los trols caníbales Hacha Invernal también rivalizan por el poder.$B$BSu líder es Korrak el Sanguinario, una cruel y taimada fiera.$B$BUn buen golpe sobre Korrak podría ser aplastante para el clan Hacha Invernal. Ejecuta a la fiera ¡y recibirás tu recompensa!",
   },
-  [7181] = {
-    ["T"] = "La leyenda de Korrak",
-    ["O"] = "Según cuenta la leyenda, el jefe de los poderosos trols Hacha Invernal parece dispuesto a sembrar el caos entre los habitantes del Valle de Alterac.$B$BSi Korrak se digna aparecer, destrúyelo y vuelve con el maestro de guerra Laggrond.",
-    ["D"] = "Los invasores Pico Tormenta no son la única amenaza de la región, soldado. La guerra en el valle se está librando en dos frentes. Los trols caníbales Hacha Invernal también rivalizan por el poder.$B$BSu líder es Korrak el Sanguinario, una cruel y taimada fiera.$B$BUn buen golpe sobre Korrak podría ser aplastante para el clan Hacha Invernal. Ejecuta a la fiera ¡y recibirás tu recompensa!",
-  },
   [7201] = {
     ["T"] = "El último elemento",
     ["O"] = "Viaja a las Profundidades de Roca Negra y recupera 10 esencias de los elementos. Tu primer impulso es buscar los gólems y a los creadores de gólems. Recuerdas que Vivian Lagrave también murmuró entre dientes algo sobre los elementales.|n",
     ["D"] = "Hay trabajo a mansalva para quien se aventure en las profundidades, $n.$B$BLos Hierro Negro han perfeccionado la creación de gólems extremadamente poderosos.$B$BLos primeros informes de nuestros espías indican que los enanos usan una fuente de poder única para conferir a sus creaciones una potencia destructora sin igual.$B$B¡Tan solo imagínate lo que podríamos hacer con nuestras abominaciones si nos hiciéramos con esta esencia de los elementos! No dejes piedra por remover en esa ciudad si es necesario, ¡pero no vuelvas hasta haber encontrado la esencia! Recibirás un justo pago por el riesgo.",
-  },
-  [7202] = {
-    ["T"] = "Korrak el Sanguinario",
-    ["O"] = "Según cuenta la leyenda, el jefe de los poderosos trols Hacha Invernal parece dispuesto a sembrar el caos entre los habitantes del Valle de Alterac.$B$BSi Korrak se digna aparecer, destrúyelo y vuelve con el teniente Haggerdin en las Montañas de Alterac.",
-    ["D"] = "Los trols indígenas Hacha Invernal de esa región son salvajes despiadados a los que nada complacería más que añadir nuestros huesos a su hediondo estofado.$B$B¡Debemos demostrarles nuestro poder!$B$BHemos recuperado unos libros de sus cuevas donde se describe su jerarquía de poder. Los artefactos apuntan a que su líder, Korrak el Sanguinario, tiende a permanecer oculto hasta que surge un motivo para manifestarse.$B$B¡La muerte de Korrak significaría el fin del clan Hacha Invernal! Mátalo y vuelve aquí.",
   },
   [7202] = {
     ["T"] = "Korrak el Sanguinario",
@@ -15414,16 +15374,6 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
     ["D"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
   },
-  [7788] = {
-    ["T"] = "¡Expulsa al invasor!",
-    ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
-    ["D"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
-  },
-  [7789] = {
-    ["T"] = "Acaba con los usurpadores Ala de Plata",
-    ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
-    ["D"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
-  },
   [7789] = {
     ["T"] = "Acaba con los usurpadores Ala de Plata",
     ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
@@ -15764,22 +15714,7 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
     ["D"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
   },
-  [7871] = {
-    ["T"] = "¡Expulsa al invasor!",
-    ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
-    ["D"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
-  },
   [7872] = {
-    ["T"] = "¡Expulsa al invasor!",
-    ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
-    ["D"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
-  },
-  [7872] = {
-    ["T"] = "¡Expulsa al invasor!",
-    ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
-    ["D"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
-  },
-  [7873] = {
     ["T"] = "¡Expulsa al invasor!",
     ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
     ["D"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
@@ -15794,22 +15729,7 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
     ["D"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
   },
-  [7874] = {
-    ["T"] = "Acaba con los usurpadores Ala de Plata",
-    ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
-    ["D"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
-  },
   [7875] = {
-    ["T"] = "Acaba con los usurpadores Ala de Plata",
-    ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
-    ["D"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
-  },
-  [7875] = {
-    ["T"] = "Acaba con los usurpadores Ala de Plata",
-    ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
-    ["D"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
-  },
-  [7876] = {
     ["T"] = "Acaba con los usurpadores Ala de Plata",
     ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
     ["D"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.|n",
@@ -15854,30 +15774,15 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
   },
-  [7886] = {
-    ["T"] = "Talismanes del mérito",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [7887] = {
-    ["T"] = "Talismanes del mérito",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [7887] = {
-    ["T"] = "Talismanes del mérito",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
-  },
-  [7888] = {
     ["T"] = "Talismanes del mérito",
     ["O"] = "",
     ["D"] = "",
   },
   [7888] = {
     ["T"] = "Talismanes del mérito",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
+    ["O"] = "",
+    ["D"] = "",
   },
   [7889] = {
     ["T"] = "Contrapeso burdo",
@@ -15969,50 +15874,25 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
   },
-  [7921] = {
-    ["T"] = "Talismanes del mérito",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [7922] = {
     ["T"] = "Marca de Honor",
     ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
-  [7922] = {
-    ["T"] = "Marca de Honor",
-    ["O"] = "",
-    ["D"] = "",
   },
   [7923] = {
     ["T"] = "Marca de Honor",
     ["O"] = "",
     ["D"] = "",
   },
-  [7923] = {
-    ["T"] = "Marca de Honor",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
   [7924] = {
-    ["T"] = "Marca de Honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [7924] = {
-    ["T"] = "Marca de Honor",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
-  [7925] = {
     ["T"] = "Marca de Honor",
     ["O"] = "",
     ["D"] = "",
   },
   [7925] = {
     ["T"] = "Marca de Honor",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [7926] = {
     ["T"] = "La Feria de la Luna Negra",
@@ -16324,16 +16204,6 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
     ["D"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
   },
-  [8080] = {
-    ["T"] = "Los recursos de la Cuenca de Arathi",
-    ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
-    ["D"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
-  },
-  [8081] = {
-    ["T"] = "Más cajas de suministros",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
   [8081] = {
     ["T"] = "Más cajas de suministros",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
@@ -16454,16 +16324,6 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
     ["D"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
   },
-  [8123] = {
-    ["T"] = "Córtale el suministro a la Liga de Arathor",
-    ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
-    ["D"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
-  },
-  [8124] = {
-    ["T"] = "Más cajas de suministros",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
   [8124] = {
     ["T"] = "Más cajas de suministros",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
@@ -16534,22 +16394,7 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
     ["D"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
   },
-  [8154] = {
-    ["T"] = "Los recursos de la Cuenca de Arathi",
-    ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
-    ["D"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
-  },
   [8155] = {
-    ["T"] = "Los recursos de la Cuenca de Arathi",
-    ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
-    ["D"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
-  },
-  [8155] = {
-    ["T"] = "Los recursos de la Cuenca de Arathi",
-    ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
-    ["D"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
-  },
-  [8156] = {
     ["T"] = "Los recursos de la Cuenca de Arathi",
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
     ["D"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
@@ -16564,22 +16409,7 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
   },
-  [8157] = {
-    ["T"] = "Más cajas de suministros",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
   [8158] = {
-    ["T"] = "Más cajas de suministros",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8158] = {
-    ["T"] = "Más cajas de suministros",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8159] = {
     ["T"] = "Más cajas de suministros",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
@@ -16594,22 +16424,7 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
     ["D"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
   },
-  [8160] = {
-    ["T"] = "Córtale el suministro a la Liga de Arathor",
-    ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
-    ["D"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
-  },
   [8161] = {
-    ["T"] = "Córtale el suministro a la Liga de Arathor",
-    ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
-    ["D"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
-  },
-  [8161] = {
-    ["T"] = "Córtale el suministro a la Liga de Arathor",
-    ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
-    ["D"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
-  },
-  [8162] = {
     ["T"] = "Córtale el suministro a la Liga de Arathor",
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
     ["D"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
@@ -16624,22 +16439,7 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
-  [8163] = {
-    ["T"] = "Más cajas de suministros",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
   [8164] = {
-    ["T"] = "Más cajas de suministros",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8164] = {
-    ["T"] = "Más cajas de suministros",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8165] = {
     ["T"] = "Más cajas de suministros",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
@@ -16699,90 +16499,45 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8184] = {
-    ["T"] = "Presencia de poderío",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8185] = {
     ["T"] = "Sigilo de Sincretista",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8185] = {
-    ["T"] = "Sigilo de Sincretista",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8186] = {
     ["T"] = "Abrazo de la Muerte",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8186] = {
-    ["T"] = "Abrazo de la Muerte",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8187] = {
     ["T"] = "Llamada del falcón",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8187] = {
-    ["T"] = "Llamada del falcón",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8188] = {
     ["T"] = "Abrazo del vigilante de Vodouisant",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8188] = {
-    ["T"] = "Abrazo del vigilante de Vodouisant",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8189] = {
     ["T"] = "Presencia de vista",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8189] = {
-    ["T"] = "Presencia de vista",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8190] = {
     ["T"] = "Maleficio hudú",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8190] = {
-    ["T"] = "Maleficio hudú",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8191] = {
     ["T"] = "Aura profética",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8191] = {
-    ["T"] = "Aura profética",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8192] = {
     ["T"] = "Caricia del animista",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8192] = {
-    ["T"] = "Caricia del animista",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8193] = {
     ["T"] = "Gran premio",
@@ -16909,11 +16664,6 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
     ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
   },
-  [8243] = {
-    ["T"] = "Los mejunjes potentes de Zanza",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require one Zandalar Honor Token. Note that only the effects of a single one may course through your spirit at any given time.",
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
-  },
   [8246] = {
     ["T"] = "Las sortijas de Zandalar",
     ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
@@ -17004,32 +16754,12 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
   },
-  [8266] = {
-    ["T"] = "Galón de sacrificio",
-    ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8267] = {
-    ["T"] = "Galón de sacrificio",
-    ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
   [8267] = {
     ["T"] = "Galón de sacrificio",
     ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
   },
   [8268] = {
-    ["T"] = "Galón de sacrificio",
-    ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8268] = {
-    ["T"] = "Galón de sacrificio",
-    ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8269] = {
     ["T"] = "Galón de sacrificio",
     ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
@@ -17134,16 +16864,6 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
     ["D"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
   },
-  [8291] = {
-    ["T"] = "¡Expulsa al invasor!",
-    ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Horda, obtén una marca de Honor Grito de Guerra y vuelve con la centinela Cantolejano en el Claro Ala de Plata.",
-    ["D"] = "Pasado este túnel encontrarás la Tierra de Disputas y desorden, joven $c. La Horda sigue diezmando nuestro sagrado bosque, talando el perenne follaje para alimentar a sus máquinas de guerra.$B$BEntra en la Garganta Grito de Guerra y defiende el Bastión Ala de Plata. ¡Haz retroceder a las fuerzas invasoras de la Horda!$B$BHazlo y obtendrás un talismán de mérito. Tráeme uno de esos talismanes, $n, y serás $grecompensado:recompensada;.",
-  },
-  [8292] = {
-    ["T"] = "Talismanes del mérito",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8292] = {
     ["T"] = "Talismanes del mérito",
     ["O"] = "",
@@ -17153,16 +16873,6 @@ pfDB["quests"]["esMX"] = {
     ["T"] = "Marca de Honor",
     ["O"] = "",
     ["D"] = "",
-  },
-  [8293] = {
-    ["T"] = "Marca de Honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8294] = {
-    ["T"] = "Acaba con los usurpadores Ala de Plata",
-    ["O"] = "Entra en la Garganta Grito de Guerra y derrota a la Alianza, obtén una marca de Honor de la Garganta Grito de Guerra y llévasela al capitán Trizacráneo en el Campamento de Mor\'shan.",
-    ["D"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $r. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $n, y serás $grecompensado:recompensada;.",
   },
   [8294] = {
     ["T"] = "Acaba con los usurpadores Ala de Plata",
@@ -17179,25 +16889,10 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
     ["D"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
   },
-  [8297] = {
-    ["T"] = "Los recursos de la Cuenca de Arathi",
-    ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
-    ["D"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $n. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
-  },
   [8298] = {
     ["T"] = "Más cajas de suministros",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8298] = {
-    ["T"] = "Más cajas de suministros",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8299] = {
-    ["T"] = "Córtale el suministro a la Liga de Arathor",
-    ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
-    ["D"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $n. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
   },
   [8299] = {
     ["T"] = "Córtale el suministro a la Liga de Arathor",
@@ -17208,11 +16903,6 @@ pfDB["quests"]["esMX"] = {
     ["T"] = "Más cajas de suministros",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8300] = {
-    ["T"] = "Más cajas de suministros",
-    ["O"] = "",
-    ["D"] = "",
   },
   [8301] = {
     ["T"] = "El camino del honrado",
@@ -19464,22 +19154,7 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8811] = {
-    ["T"] = "Un sello de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8812] = {
-    ["T"] = "Un sello de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8812] = {
-    ["T"] = "Un sello de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8813] = {
     ["T"] = "Un sello de honor",
     ["O"] = "",
     ["D"] = "",
@@ -19494,22 +19169,7 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8814] = {
-    ["T"] = "Un sello de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8815] = {
-    ["T"] = "Un sello de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8815] = {
-    ["T"] = "Un sello de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8816] = {
     ["T"] = "Un sello de honor",
     ["O"] = "",
     ["D"] = "",
@@ -19524,32 +19184,12 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8817] = {
-    ["T"] = "Un sello de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8818] = {
-    ["T"] = "Un sello de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8818] = {
     ["T"] = "Un sello de honor",
     ["O"] = "",
     ["D"] = "",
   },
   [8819] = {
-    ["T"] = "Diez sellos de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8819] = {
-    ["T"] = "Diez sellos de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8820] = {
     ["T"] = "Diez sellos de honor",
     ["O"] = "",
     ["D"] = "",
@@ -19564,22 +19204,7 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8821] = {
-    ["T"] = "Diez sellos de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8822] = {
-    ["T"] = "Diez sellos de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8822] = {
-    ["T"] = "Diez sellos de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8823] = {
     ["T"] = "Diez sellos de honor",
     ["O"] = "",
     ["D"] = "",
@@ -19594,22 +19219,7 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8824] = {
-    ["T"] = "Diez sellos de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8825] = {
-    ["T"] = "Diez sellos de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8825] = {
-    ["T"] = "Diez sellos de honor",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8826] = {
     ["T"] = "Diez sellos de honor",
     ["O"] = "",
     ["D"] = "",

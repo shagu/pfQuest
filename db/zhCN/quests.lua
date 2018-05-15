@@ -5899,11 +5899,6 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "把维米斯的报告带给吉安娜?普罗德摩尔，她在塞拉摩.",
     ["D"] = "做的不错, $N.$B$B普罗德摩尔非常惊奇我的工作,我没有说我现在还需要一些时间.$B$B我希望把我的报告迟些给她, 但是听起来我应该现在就和她谈一谈。 或许你可以更好的回答她的问题.",
   },
-  [1288] = {
-    ["T"] = "维米斯的报告*",
-    ["O"] = "把维米斯的报告带给吉安娜?普罗德摩尔，她在塞拉摩.",
-    ["D"] = "做的不错, $N.$B$B普罗德摩尔非常惊奇我的工作,我没有说我现在还需要一些时间.$B$B我希望把我的报告迟些给她, 但是听起来我应该现在就和她谈一谈。 或许你可以更好的回答她的问题.",
-  },
   [1289] = {
     ["T"] = "维米斯的报告*",
     ["O"] = "返回塞拉摩，与维米斯交谈。",
@@ -7954,11 +7949,6 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "奥本·怒爪要求你去杀掉他那失去灵魂的身体，然后对其尸体使用巫毒咒符。",
     ["D"] = "在研究过这个咒符之后，$N，我知道该做什么了。请拿着它，然后照我说的去做。$B$B你必须到班奈希尔兽穴的深处去，在那里，你会发现我那失去灵魂的躯体……虽然我对将要让你这么做感到很遗憾，但是除此之外我找不到其它可以让我摆脱瘤背熊怪控制的办法了。$B$B你必须杀了我的肉身，然后对我的尸体使用巫毒咒符。完成这个任务之后就请回到我这里来。",
   },
-  [2561] = {
-    ["T"] = "利爪德鲁伊",
-    ["O"] = "奥本·怒爪要求你去杀掉他那失去灵魂的身体，然后对其尸体使用巫毒咒符。",
-    ["D"] = "在研究过这个咒符之后，$N，我知道该做什么了。请拿着它，然后照我说的去做。$B$B你必须到班奈希尔兽穴的深处去，在那里，你会发现我那失去灵魂的躯体……虽然我对将要让你这么做感到很遗憾，但是除此之外我找不到其它可以让我摆脱瘤背熊怪控制的办法了。$B$B你必须杀了我的肉身，然后对我的尸体使用巫毒咒符。完成这个任务之后就请回到我这里来。",
-  },
   [2581] = {
     ["T"] = "弯牙土狼的颚骨",
     ["O"] = "收集3个弯牙土狼的颚骨、2片诅咒之地的野猪肺和1个厚甲蝎螯，把它们交给血法师德拉吉亚。",
@@ -8083,11 +8073,6 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "基利斯",
     ["O"] = "找到基利斯的下落。",
     ["D"] = "你已完成了一次冒险，现在又有新的冒险在等着你，$N。$B$B我有个手下至今下落不明，他应该在诅咒之地的某个地方，我说的就是基利斯中尉。$B$B我告诉过你，我和他当时被奥利斯塔囚禁起来严刑拷打，可怜的基利斯……他的意志力变得越来越薄弱。在我的牢房里都能听到他受刑的声音，他的惨叫在山洞里回荡。那是我最后一次听见基利斯的声音。",
-  },
-  [2741] = {
-    ["T"] = "超级测蛋器",
-    ["O"] = " ",
-    ["D"] = "",
   },
   [2741] = {
     ["T"] = "超级测蛋器",
@@ -11984,11 +11969,6 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "到斯坦索姆去探索那里的通灵塔。找到新的天灾军团档案，把它交给贝蒂娜·比格辛克。",
     ["D"] = "你必须更加深入斯坦索姆，$N。$B$B穿过第一道门之后，你就可以看到巨大的通灵塔。我们知道亡灵天灾正在源源不断地从这些建筑物中汲取力量。搜索通灵塔，并把你找到的任何有价值的情报带回来。",
   },
-  [5213] = {
-    ["T"] = "活跃的探子",
-    ["O"] = "到斯坦索姆去探索那里的通灵塔。找到新的天灾军团档案，把它交给贝蒂娜·比格辛克。",
-    ["D"] = "你必须更加深入斯坦索姆，$N。$B$B穿过第一道门之后，你就可以看到巨大的通灵塔。我们知道亡灵天灾正在源源不断地从这些建筑物中汲取力量。搜索通灵塔，并把你找到的任何有价值的情报带回来。",
-  },
   [5214] = {
     ["T"] = "弗拉斯·希亚比",
     ["O"] = "找到弗拉斯·希亚比在斯坦索姆的烟草店，并从中找回一盒希亚比的烟草，把它交给烟鬼拉鲁恩。",
@@ -13539,11 +13519,6 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "到斯坦索姆去，杀掉吞咽者拉姆斯登。把他的头颅交给纳萨诺斯。",
     ["D"] = "我被完全击败了。为了守卫我们的家园，为了守卫洛丹伦，我在这里绝望地战斗着……一切抵抗者都在潮水般的天灾士兵面前被夷为废墟。$B$B那个邪恶而肮脏的怪物把我踏在脚下，我能看到它的内脏挂在破碎的胸腔中。$B$B我被亡灵天灾唤醒了，一直以来，我是如此的无助。我的意志被巫妖王牢牢地控制着。$B$B她赶来解救了我……不管用什么方式，在什么地方，我知道她早晚会这么做的。自由。$B$B现在，我必须进行复仇——对那些夺取我生命的敌人进行复仇。毁灭它。",
   },
-  [6163] = {
-    ["T"] = "吞咽者拉姆斯登",
-    ["O"] = "到斯坦索姆去，杀掉吞咽者拉姆斯登。把他的头颅交给纳萨诺斯。",
-    ["D"] = "我被完全击败了。为了守卫我们的家园，为了守卫洛丹伦，我在这里绝望地战斗着……一切抵抗者都在潮水般的天灾士兵面前被夷为废墟。$B$B那个邪恶而肮脏的怪物把我踏在脚下，我能看到它的内脏挂在破碎的胸腔中。$B$B我被亡灵天灾唤醒了，一直以来，我是如此的无助。我的意志被巫妖王牢牢地控制着。$B$B她赶来解救了我……不管用什么方式，在什么地方，我知道她早晚会这么做的。自由。$B$B现在，我必须进行复仇——对那些夺取我生命的敌人进行复仇。毁灭它。",
-  },
   [6164] = {
     ["T"] = "奥古斯图斯的收据册",
     ["O"] = "把奥古斯图斯的收据册交给恶蛛隧道中的被感动的奥古斯图斯。",
@@ -13588,11 +13563,6 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "北方的死木熊怪",
     ["O"] = "格拉兹要你去杀死6个死木守卫、6个死木复仇者和6个死木萨满祭司。",
     ["D"] = "此地西南方向有一处死木熊怪的营地。我不清楚他们想要干什么，但是我希望能在他们开始捣乱之前就结果他们。$B$B死木部族非常邪恶，是恶魔的力量侵蚀了他们的心智。他们的天性并不坏，但是现在一切都无法挽回了。因此，我对被迫与自己的同胞作战感到非常悲哀。$B$B$N，去结果他们吧，别对我说起战斗的具体过程，我不忍心听到那些。",
-  },
-  [6241] = {
-    ["T"] = "冬泉熊怪的活动",
-    ["O"] = "萨尔法要你去杀死6个冬泉图腾师、6个冬泉巢穴守卫和6个冬泉探路者。",
-    ["D"] = "木喉部族倾向于防守，$N。虽然我们允许那些值得信赖的朋友安全地通过，但我们还是尽可能地避开其他熊怪部族。$B$B最近我注意到冬泉部族与我们的敌对情绪有所增长。他们似乎处于极度愤怒的状态，完全陷入了对一切他们无法理解的事物的恐慌和仇视。$B$B如果你能削减他们的数量，那对我们来说将是莫大的帮助，$N。",
   },
   [6241] = {
     ["T"] = "冬泉熊怪的活动",
@@ -14579,20 +14549,10 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "血怒者科尔拉克躲在冰斧洞穴的深处。据说只有在第1001个冰斧巨魔被干掉的时候，这个强大的冰斧巨魔领袖才会出现。$B$B到冰斧洞穴中去，杀掉所有挡在你面前的巨魔，直到科尔拉克出现为止。杀掉科尔拉克，然后向拉格隆德复命。",
     ["D"] = "雷矛部族并不是我们在这个地区唯一的威胁，士兵。我们在这座山谷中面对的是两股敌人的攻击——野蛮而原始的冰斧巨魔也在和我们进行争斗。$B$B它们的领袖是血怒者科尔拉克，一个残酷而又狡猾的混蛋。$B$B如果能干掉他，那对于整个冰斧巨魔族来说都会是一次致命的打击。杀了科尔拉克，你就将获得奖励！",
   },
-  [7181] = {
-    ["T"] = "科尔拉克的传说",
-    ["O"] = "血怒者科尔拉克躲在冰斧洞穴的深处。据说只有在第1001个冰斧巨魔被干掉的时候，这个强大的冰斧巨魔领袖才会出现。$B$B到冰斧洞穴中去，杀掉所有挡在你面前的巨魔，直到科尔拉克出现为止。杀掉科尔拉克，然后向拉格隆德复命。",
-    ["D"] = "雷矛部族并不是我们在这个地区唯一的威胁，士兵。我们在这座山谷中面对的是两股敌人的攻击——野蛮而原始的冰斧巨魔也在和我们进行争斗。$B$B它们的领袖是血怒者科尔拉克，一个残酷而又狡猾的混蛋。$B$B如果能干掉他，那对于整个冰斧巨魔族来说都会是一次致命的打击。杀了科尔拉克，你就将获得奖励！",
-  },
   [7201] = {
     ["T"] = "最后的元素",
     ["O"] = "到黑石深渊去取得10份元素精华。你应该在那些作战傀儡和傀儡制造者身上找找，另外，薇薇安·拉格雷也提到了一些有关元素生物的话题……",
     ["D"] = "只有那些进入深渊的冒险者才能迎接这个挑战，$N。$B$B黑铁矮人已经掌握了制造强大的作战傀儡的方法。$B$B来自间谍的报告显示，那些矮人使用某种独特的能量源为他们所创造的傀儡提供无与伦比的杀戮能力。$B$B如果我们能得到这种元素精华的话，我们的憎恶怪就可以得到极大的加强！把那座城市翻个底朝天也在所不惜，找不到精华你就别回来！我们给予的报酬值得你去冒这个险。",
-  },
-  [7202] = {
-    ["T"] = "血怒者科尔拉克",
-    ["O"] = "血怒者科尔拉克躲在冰斧洞穴的深处。据说只有在第1001个冰斧巨魔被干掉的时候，这个强大的冰斧巨魔领袖才会出现。$B$B到冰斧洞穴中去，杀掉所有挡在你面前的巨魔，直到科尔拉克出现为止。杀掉科尔拉克，然后向哈格丁中尉复命。",
-    ["D"] = "这个地区的冰斧巨魔是个野蛮而原始的种族，他们只想把我们做成炖肉吃了。$B$B我们必须让他们尝尝苦头！$B$B从他们的洞穴找到的古书中详细记述了他们的部族领袖权的传承方式。那本古书中还写到，它们现在的领袖——血怒者科尔拉克只有在需要显身的时候才会出现。$B$B干掉科尔拉克就能使冰斧部族灭亡！杀了他，然后回到我这里来。",
   },
   [7202] = {
     ["T"] = "血怒者科尔拉克",
@@ -15414,16 +15374,6 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "进入战歌峡谷抵御部落小队的攻击，获得一枚银翼功勋奖章，然后向银翼树林中的哨兵艾蒂亚·轻歌回复。",
     ["D"] = "在这个通道的另一端，你会看到一片战火纷飞的土地，年轻的$C。部落不断侵入我们神圣的森林，锯断这里的苍天古树来建造他们的战争机器。$B$B进入战歌峡谷，帮助银翼要塞击败入侵的部落势力，并赢得一枚功勋奖章吧。把这样的奖章给我拿来，你就将获得奖赏。",
   },
-  [7788] = {
-    ["T"] = "击败入侵者！ (PvP)",
-    ["O"] = "进入战歌峡谷抵御部落小队的攻击，获得一枚银翼功勋奖章，然后向银翼树林中的哨兵艾蒂亚·轻歌回复。",
-    ["D"] = "在这个通道的另一端，你会看到一片战火纷飞的土地，年轻的$C。部落不断侵入我们神圣的森林，锯断这里的苍天古树来建造他们的战争机器。$B$B进入战歌峡谷，帮助银翼要塞击败入侵的部落势力，并赢得一枚功勋奖章吧。把这样的奖章给我拿来，你就将获得奖赏。",
-  },
-  [7789] = {
-    ["T"] = "镇压银翼部队",
-    ["O"] = "进入战歌峡谷击败联盟小队，获得一枚战歌荣誉奖章，然后向莫尔杉营地的沙塔尔·碎颅复命。",
-    ["D"] = "灰谷森林将在强大的部落面前屈服，$R。无论暗夜精灵们说什么做什么，都无法阻止我们的推进。卡利姆多属于部落，谁敢阻止我们拿取属于我们的东西，谁就要死！$B$B让你的心中充满荣耀之光，让那些胆敢阻止我们的敌人一个个倒下。摧毁银翼要塞中的哨兵部队，并拿到一枚战歌荣誉奖章。把这样一枚奖章给我拿来，你就可以获得奖赏。",
-  },
   [7789] = {
     ["T"] = "镇压银翼部队",
     ["O"] = "进入战歌峡谷击败联盟小队，获得一枚战歌荣誉奖章，然后向莫尔杉营地的沙塔尔·碎颅复命。",
@@ -15764,22 +15714,7 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "进入战歌峡谷抵御部落小队的攻击，获得一枚银翼功勋奖章，然后向银翼树林中的哨兵艾蒂亚·轻歌回复。",
     ["D"] = "在这个通道的另一端，你会看到一片战火纷飞的土地，年轻的$C。部落不断侵入我们神圣的森林，锯断这里的苍天古树来建造他们的战争机器。$B$B进入战歌峡谷，帮助银翼要塞击败入侵的部落势力，并赢得一枚功勋奖章吧。把这样的奖章给我拿来，你就将获得奖赏。",
   },
-  [7871] = {
-    ["T"] = "击败入侵者！ (PvP)",
-    ["O"] = "进入战歌峡谷抵御部落小队的攻击，获得一枚银翼功勋奖章，然后向银翼树林中的哨兵艾蒂亚·轻歌回复。",
-    ["D"] = "在这个通道的另一端，你会看到一片战火纷飞的土地，年轻的$C。部落不断侵入我们神圣的森林，锯断这里的苍天古树来建造他们的战争机器。$B$B进入战歌峡谷，帮助银翼要塞击败入侵的部落势力，并赢得一枚功勋奖章吧。把这样的奖章给我拿来，你就将获得奖赏。",
-  },
   [7872] = {
-    ["T"] = "击败入侵者！ (PvP)",
-    ["O"] = "进入战歌峡谷抵御部落小队的攻击，获得一枚银翼功勋奖章，然后向银翼树林中的哨兵艾蒂亚·轻歌回复。",
-    ["D"] = "在这个通道的另一端，你会看到一片战火纷飞的土地，年轻的$C。部落不断侵入我们神圣的森林，锯断这里的苍天古树来建造他们的战争机器。$B$B进入战歌峡谷，帮助银翼要塞击败入侵的部落势力，并赢得一枚功勋奖章吧。把这样的奖章给我拿来，你就将获得奖赏。",
-  },
-  [7872] = {
-    ["T"] = "击败入侵者！ (PvP)",
-    ["O"] = "进入战歌峡谷抵御部落小队的攻击，获得一枚银翼功勋奖章，然后向银翼树林中的哨兵艾蒂亚·轻歌回复。",
-    ["D"] = "在这个通道的另一端，你会看到一片战火纷飞的土地，年轻的$C。部落不断侵入我们神圣的森林，锯断这里的苍天古树来建造他们的战争机器。$B$B进入战歌峡谷，帮助银翼要塞击败入侵的部落势力，并赢得一枚功勋奖章吧。把这样的奖章给我拿来，你就将获得奖赏。",
-  },
-  [7873] = {
     ["T"] = "击败入侵者！ (PvP)",
     ["O"] = "进入战歌峡谷抵御部落小队的攻击，获得一枚银翼功勋奖章，然后向银翼树林中的哨兵艾蒂亚·轻歌回复。",
     ["D"] = "在这个通道的另一端，你会看到一片战火纷飞的土地，年轻的$C。部落不断侵入我们神圣的森林，锯断这里的苍天古树来建造他们的战争机器。$B$B进入战歌峡谷，帮助银翼要塞击败入侵的部落势力，并赢得一枚功勋奖章吧。把这样的奖章给我拿来，你就将获得奖赏。",
@@ -15794,22 +15729,7 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "进入战歌峡谷击败联盟小队，获得一枚战歌荣誉奖章，然后向莫尔杉营地的沙塔尔·碎颅复命。",
     ["D"] = "灰谷森林将在强大的部落面前屈服，$R。无论暗夜精灵们说什么做什么，都无法阻止我们的推进。卡利姆多属于部落，谁敢阻止我们拿取属于我们的东西，谁就要死！$B$B让你的心中充满荣耀之光，让那些胆敢阻止我们的敌人一个个倒下。摧毁银翼要塞中的哨兵部队，并拿到一枚战歌荣誉奖章。把这样一枚奖章给我拿来，你就可以获得奖赏。",
   },
-  [7874] = {
-    ["T"] = "镇压银翼部队",
-    ["O"] = "进入战歌峡谷击败联盟小队，获得一枚战歌荣誉奖章，然后向莫尔杉营地的沙塔尔·碎颅复命。",
-    ["D"] = "灰谷森林将在强大的部落面前屈服，$R。无论暗夜精灵们说什么做什么，都无法阻止我们的推进。卡利姆多属于部落，谁敢阻止我们拿取属于我们的东西，谁就要死！$B$B让你的心中充满荣耀之光，让那些胆敢阻止我们的敌人一个个倒下。摧毁银翼要塞中的哨兵部队，并拿到一枚战歌荣誉奖章。把这样一枚奖章给我拿来，你就可以获得奖赏。",
-  },
   [7875] = {
-    ["T"] = "镇压银翼部队",
-    ["O"] = "进入战歌峡谷击败联盟小队，获得一枚战歌荣誉奖章，然后向莫尔杉营地的沙塔尔·碎颅复命。",
-    ["D"] = "灰谷森林将在强大的部落面前屈服，$R。无论暗夜精灵们说什么做什么，都无法阻止我们的推进。卡利姆多属于部落，谁敢阻止我们拿取属于我们的东西，谁就要死！$B$B让你的心中充满荣耀之光，让那些胆敢阻止我们的敌人一个个倒下。摧毁银翼要塞中的哨兵部队，并拿到一枚战歌荣誉奖章。把这样一枚奖章给我拿来，你就可以获得奖赏。",
-  },
-  [7875] = {
-    ["T"] = "镇压银翼部队",
-    ["O"] = "进入战歌峡谷击败联盟小队，获得一枚战歌荣誉奖章，然后向莫尔杉营地的沙塔尔·碎颅复命。",
-    ["D"] = "灰谷森林将在强大的部落面前屈服，$R。无论暗夜精灵们说什么做什么，都无法阻止我们的推进。卡利姆多属于部落，谁敢阻止我们拿取属于我们的东西，谁就要死！$B$B让你的心中充满荣耀之光，让那些胆敢阻止我们的敌人一个个倒下。摧毁银翼要塞中的哨兵部队，并拿到一枚战歌荣誉奖章。把这样一枚奖章给我拿来，你就可以获得奖赏。",
-  },
-  [7876] = {
     ["T"] = "镇压银翼部队",
     ["O"] = "进入战歌峡谷击败联盟小队，获得一枚战歌荣誉奖章，然后向莫尔杉营地的沙塔尔·碎颅复命。",
     ["D"] = "灰谷森林将在强大的部落面前屈服，$R。无论暗夜精灵们说什么做什么，都无法阻止我们的推进。卡利姆多属于部落，谁敢阻止我们拿取属于我们的东西，谁就要死！$B$B让你的心中充满荣耀之光，让那些胆敢阻止我们的敌人一个个倒下。摧毁银翼要塞中的哨兵部队，并拿到一枚战歌荣誉奖章。把这样一枚奖章给我拿来，你就可以获得奖赏。",
@@ -15854,22 +15774,7 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
   },
-  [7886] = {
-    ["T"] = "功勋奖章",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
-  },
   [7887] = {
-    ["T"] = "功勋奖章",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
-  },
-  [7887] = {
-    ["T"] = "功勋奖章",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
-  },
-  [7888] = {
     ["T"] = "功勋奖章",
     ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
@@ -15969,16 +15874,6 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
   },
-  [7921] = {
-    ["T"] = "功勋奖章",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
-  },
-  [7922] = {
-    ["T"] = "荣誉奖章",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
   [7922] = {
     ["T"] = "荣誉奖章",
     ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
@@ -15989,22 +15884,7 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
   },
-  [7923] = {
-    ["T"] = "荣誉奖章",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
   [7924] = {
-    ["T"] = "荣誉奖章",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
-  [7924] = {
-    ["T"] = "荣誉奖章",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
-  [7925] = {
     ["T"] = "荣誉奖章",
     ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
@@ -16324,16 +16204,6 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一只阿拉希资源箱，然后向避难谷地的玛克里尔中士复命。",
     ["D"] = "我们必须依靠我们的士兵进行战斗，所有的士兵都会这么告诉你的。他们还会告诉你，他们正在使用破烂不堪的装备，饥肠辘辘地开向战场！$B$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材——所有我们所需要的东西都可以从那里获得。$B$B那就是我需要你发挥作用的地方，$N。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利，然后给我带回一箱资源来。",
   },
-  [8080] = {
-    ["T"] = "阿拉希盆地的资源!",
-    ["O"] = "获得阿拉希盆地战斗的胜利，获取一只阿拉希资源箱，然后向避难谷地的玛克里尔中士复命。",
-    ["D"] = "我们必须依靠我们的士兵进行战斗，所有的士兵都会这么告诉你的。他们还会告诉你，他们正在使用破烂不堪的装备，饥肠辘辘地开向战场！$B$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材——所有我们所需要的东西都可以从那里获得。$B$B那就是我需要你发挥作用的地方，$N。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利，然后给我带回一箱资源来。",
-  },
-  [8081] = {
-    ["T"] = "更多的资源",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
   [8081] = {
     ["T"] = "更多的资源",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
@@ -16454,16 +16324,6 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
     ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
   },
-  [8123] = {
-    ["T"] = "切断阿拉索补给线",
-    ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
-    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
-  },
-  [8124] = {
-    ["T"] = "更多的资源",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
   [8124] = {
     ["T"] = "更多的资源",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
@@ -16534,22 +16394,7 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一只阿拉希资源箱，然后向避难谷地的玛克里尔中士复命。",
     ["D"] = "我们必须依靠我们的士兵进行战斗，所有的士兵都会这么告诉你的。他们还会告诉你，他们正在使用破烂不堪的装备，饥肠辘辘地开向战场！$B$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材——所有我们所需要的东西都可以从那里获得。$B$B那就是我需要你发挥作用的地方，愤怒的灵魂。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利，然后给我带回一箱资源来。",
   },
-  [8154] = {
-    ["T"] = "阿拉希盆地的资源!",
-    ["O"] = "获得阿拉希盆地战斗的胜利，获取一只阿拉希资源箱，然后向避难谷地的玛克里尔中士复命。",
-    ["D"] = "我们必须依靠我们的士兵进行战斗，所有的士兵都会这么告诉你的。他们还会告诉你，他们正在使用破烂不堪的装备，饥肠辘辘地开向战场！$B$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材——所有我们所需要的东西都可以从那里获得。$B$B那就是我需要你发挥作用的地方，愤怒的灵魂。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利，然后给我带回一箱资源来。",
-  },
   [8155] = {
-    ["T"] = "阿拉希盆地的资源!",
-    ["O"] = "获得阿拉希盆地战斗的胜利，获取一只阿拉希资源箱，然后向避难谷地的玛克里尔中士复命。",
-    ["D"] = "我们必须依靠我们的士兵进行战斗，所有的士兵都会这么告诉你的。他们还会告诉你，他们正在使用破烂不堪的装备，饥肠辘辘地开向战场！$B$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材——所有我们所需要的东西都可以从那里获得。$B$B那就是我需要你发挥作用的地方，$N。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利，然后给我带回一箱资源来。",
-  },
-  [8155] = {
-    ["T"] = "阿拉希盆地的资源!",
-    ["O"] = "获得阿拉希盆地战斗的胜利，获取一只阿拉希资源箱，然后向避难谷地的玛克里尔中士复命。",
-    ["D"] = "我们必须依靠我们的士兵进行战斗，所有的士兵都会这么告诉你的。他们还会告诉你，他们正在使用破烂不堪的装备，饥肠辘辘地开向战场！$B$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材——所有我们所需要的东西都可以从那里获得。$B$B那就是我需要你发挥作用的地方，$N。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利，然后给我带回一箱资源来。",
-  },
-  [8156] = {
     ["T"] = "阿拉希盆地的资源!",
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一只阿拉希资源箱，然后向避难谷地的玛克里尔中士复命。",
     ["D"] = "我们必须依靠我们的士兵进行战斗，所有的士兵都会这么告诉你的。他们还会告诉你，他们正在使用破烂不堪的装备，饥肠辘辘地开向战场！$B$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材——所有我们所需要的东西都可以从那里获得。$B$B那就是我需要你发挥作用的地方，$N。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利，然后给我带回一箱资源来。",
@@ -16564,22 +16409,7 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
   },
-  [8157] = {
-    ["T"] = "更多的资源",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
   [8158] = {
-    ["T"] = "更多的资源",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8158] = {
-    ["T"] = "更多的资源",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8159] = {
     ["T"] = "更多的资源",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
@@ -16594,22 +16424,7 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
     ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
   },
-  [8160] = {
-    ["T"] = "切断阿拉索补给线",
-    ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
-    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
-  },
   [8161] = {
-    ["T"] = "切断阿拉索补给线",
-    ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
-    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
-  },
-  [8161] = {
-    ["T"] = "切断阿拉索补给线",
-    ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
-    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
-  },
-  [8162] = {
     ["T"] = "切断阿拉索补给线",
     ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
     ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
@@ -16624,22 +16439,7 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
-  [8163] = {
-    ["T"] = "更多的资源",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
   [8164] = {
-    ["T"] = "更多的资源",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8164] = {
-    ["T"] = "更多的资源",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8165] = {
     ["T"] = "更多的资源",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
     ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
@@ -16699,90 +16499,45 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8184] = {
-    ["T"] = "力量的证明",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8185] = {
     ["T"] = "调和的徽记",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8185] = {
-    ["T"] = "调和的徽记",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8186] = {
     ["T"] = "死亡的拥抱",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8186] = {
-    ["T"] = "死亡的拥抱",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8187] = {
     ["T"] = "猎鹰的召唤",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8187] = {
-    ["T"] = "猎鹰的召唤",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8188] = {
     ["T"] = "巫毒的警觉",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8188] = {
-    ["T"] = "巫毒的警觉",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8189] = {
     ["T"] = "魔法的视域",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8189] = {
-    ["T"] = "魔法的视域",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8190] = {
     ["T"] = "不祥的妖术",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8190] = {
-    ["T"] = "不祥的妖术",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8191] = {
     ["T"] = "预言的光环",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
   },
-  [8191] = {
-    ["T"] = "预言的光环",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
-  },
   [8192] = {
     ["T"] = "灵魂的安抚",
     ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
     ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-  },
-  [8192] = {
-    ["T"] = "灵魂的安抚",
-    ["O"] = "Bring me these things and I will create a powerful enchantment for you!",
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.",
   },
   [8193] = {
     ["T"] = "钓鱼大师",
@@ -16909,11 +16664,6 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
     ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
   },
-  [8243] = {
-    ["T"] = "赞扎的饮料",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require one Zandalar Honor Token. Note that only the effects of a single one may course through your spirit at any given time.",
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
-  },
   [8246] = {
     ["T"] = "赞达拉的徽记",
     ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
@@ -17004,32 +16754,12 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
   },
-  [8266] = {
-    ["T"] = "奉献绶带",
-    ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8267] = {
-    ["T"] = "奉献绶带",
-    ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
   [8267] = {
     ["T"] = "奉献绶带",
     ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
   },
   [8268] = {
-    ["T"] = "奉献绶带",
-    ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8268] = {
-    ["T"] = "奉献绶带",
-    ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-  },
-  [8269] = {
     ["T"] = "奉献绶带",
     ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
@@ -17134,16 +16864,6 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "进入战歌峡谷抵御部落小队的攻击，获得一枚银翼功勋奖章，然后向银翼树林中的哨兵艾蒂亚·轻歌回复。",
     ["D"] = "在这个通道的另一端，你会看到一片战火纷飞的土地，年轻的$C。部落不断侵入我们神圣的森林，锯断这里的苍天古树来建造他们的战争机器。$B$B进入战歌峡谷，帮助银翼要塞击败入侵的部落势力，并赢得一枚功勋奖章吧。把这样的奖章给我拿来，你就将获得奖赏。",
   },
-  [8291] = {
-    ["T"] = "击败入侵者!",
-    ["O"] = "进入战歌峡谷抵御部落小队的攻击，获得一枚银翼功勋奖章，然后向银翼树林中的哨兵艾蒂亚·轻歌回复。",
-    ["D"] = "在这个通道的另一端，你会看到一片战火纷飞的土地，年轻的$C。部落不断侵入我们神圣的森林，锯断这里的苍天古树来建造他们的战争机器。$B$B进入战歌峡谷，帮助银翼要塞击败入侵的部落势力，并赢得一枚功勋奖章吧。把这样的奖章给我拿来，你就将获得奖赏。",
-  },
-  [8292] = {
-    ["T"] = "功勋奖章",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
-  },
   [8292] = {
     ["T"] = "功勋奖章",
     ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
@@ -17153,16 +16873,6 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "荣誉奖章",
     ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
-  [8293] = {
-    ["T"] = "荣誉奖章",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-  },
-  [8294] = {
-    ["T"] = "镇压银翼部队",
-    ["O"] = "进入战歌峡谷击败联盟小队，获得一枚战歌荣誉奖章，然后向莫尔杉营地的沙塔尔·碎颅复命。",
-    ["D"] = "灰谷森林将在强大的部落面前屈服，$R。无论暗夜精灵们说什么做什么，都无法阻止我们的推进。卡利姆多属于部落，谁敢阻止我们拿取属于我们的东西，谁就要死！$B$B让你的心中充满荣耀之光，让那些胆敢阻止我们的敌人一个个倒下。摧毁银翼要塞中的哨兵部队，并拿到一枚战歌荣誉奖章。把这样一枚奖章给我拿来，你就可以获得奖赏。",
   },
   [8294] = {
     ["T"] = "镇压银翼部队",
@@ -17179,16 +16889,6 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一只阿拉希资源箱，然后向避难谷地的玛克里尔中士复命。",
     ["D"] = "我们必须依靠我们的士兵进行战斗，所有的士兵都会这么告诉你的。他们还会告诉你，他们正在使用破烂不堪的装备，饥肠辘辘地开向战场！$B$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材——所有我们所需要的东西都可以从那里获得。$B$B那就是我需要你发挥作用的地方，$N。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利，然后给我带回一箱资源来。",
   },
-  [8297] = {
-    ["T"] = "阿拉希盆地的资源!",
-    ["O"] = "获得阿拉希盆地战斗的胜利，获取一只阿拉希资源箱，然后向避难谷地的玛克里尔中士复命。",
-    ["D"] = "我们必须依靠我们的士兵进行战斗，所有的士兵都会这么告诉你的。他们还会告诉你，他们正在使用破烂不堪的装备，饥肠辘辘地开向战场！$B$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材——所有我们所需要的东西都可以从那里获得。$B$B那就是我需要你发挥作用的地方，$N。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利，然后给我带回一箱资源来。",
-  },
-  [8298] = {
-    ["T"] = "更多的资源",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
   [8298] = {
     ["T"] = "更多的资源",
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
@@ -17198,16 +16898,6 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "切断阿拉索补给线",
     ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
     ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
-  },
-  [8299] = {
-    ["T"] = "切断阿拉索补给线",
-    ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
-    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
-  },
-  [8300] = {
-    ["T"] = "更多的资源",
-    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
   [8300] = {
     ["T"] = "更多的资源",
@@ -19464,22 +19154,7 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8811] = {
-    ["T"] = "一枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8812] = {
-    ["T"] = "一枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8812] = {
-    ["T"] = "一枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8813] = {
     ["T"] = "一枚荣誉徽章",
     ["O"] = "",
     ["D"] = "",
@@ -19494,22 +19169,7 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8814] = {
-    ["T"] = "一枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8815] = {
-    ["T"] = "一枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8815] = {
-    ["T"] = "一枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8816] = {
     ["T"] = "一枚荣誉徽章",
     ["O"] = "",
     ["D"] = "",
@@ -19524,32 +19184,12 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8817] = {
-    ["T"] = "一枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8818] = {
-    ["T"] = "一枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8818] = {
     ["T"] = "一枚荣誉徽章",
     ["O"] = "",
     ["D"] = "",
   },
   [8819] = {
-    ["T"] = "十枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8819] = {
-    ["T"] = "十枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8820] = {
     ["T"] = "十枚荣誉徽章",
     ["O"] = "",
     ["D"] = "",
@@ -19564,22 +19204,7 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8821] = {
-    ["T"] = "十枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8822] = {
-    ["T"] = "十枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8822] = {
-    ["T"] = "十枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8823] = {
     ["T"] = "十枚荣誉徽章",
     ["O"] = "",
     ["D"] = "",
@@ -19594,22 +19219,7 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "",
     ["D"] = "",
   },
-  [8824] = {
-    ["T"] = "十枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
   [8825] = {
-    ["T"] = "十枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8825] = {
-    ["T"] = "十枚荣誉徽章",
-    ["O"] = "",
-    ["D"] = "",
-  },
-  [8826] = {
     ["T"] = "十枚荣誉徽章",
     ["O"] = "",
     ["D"] = "",
