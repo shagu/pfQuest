@@ -140,8 +140,11 @@ pfMap.mpins = {}
 
 pfMap.tooltip = CreateFrame("Frame" , "pfMapTooltip", GameTooltip)
 pfMap.tooltip:SetScript("OnShow", function()
+  local focus = GetMouseFocus()
   -- abort on pfQuest nodes
-  if GetMouseFocus() and GetMouseFocus().title then return end
+  if focus and focus.title then return end
+  -- abort on quest timers
+  if focus and focus.GetName and strsub(focus:GetName(),0,10) == "QuestTimer" then return end
 
   local name = getglobal("GameTooltipTextLeft1") and getglobal("GameTooltipTextLeft1"):GetText()
 
