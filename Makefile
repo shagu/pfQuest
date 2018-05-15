@@ -1,9 +1,12 @@
 VERSION = $(shell git describe --abbrev=0 --tags)
 
-all: clean enUS koKR frFR deDE zhCN esES ruRU noLoc
+all: clean stripdb enUS koKR frFR deDE zhCN esES ruRU noLoc
 
 clean:
 	rm -rfv release
+
+stripdb:
+	toolbox/compressdb.sh
 
 enUS koKR frFR deDE zhCN esES ruRU:
 	@echo "===== building $@ ====="
