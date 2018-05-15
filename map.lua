@@ -144,7 +144,7 @@ pfMap.tooltip:SetScript("OnShow", function()
   -- abort on pfQuest nodes
   if focus and focus.title then return end
   -- abort on quest timers
-  if focus and focus.GetName and strsub(focus:GetName(),0,10) == "QuestTimer" then return end
+  if focus and focus.GetName and strsub((focus:GetName() or ""),0,10) == "QuestTimer" then return end
 
   local name = getglobal("GameTooltipTextLeft1") and getglobal("GameTooltipTextLeft1"):GetText()
 
