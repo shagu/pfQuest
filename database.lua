@@ -468,30 +468,29 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           maps = pfDatabase:SearchMobID(unit, meta, maps)
         end
       end
-    end
 
-    -- objects
-    if quests[id]["end"]["O"] then
-      for _, object in pairs(quests[id]["end"]["O"]) do
-        meta = meta or {}
+      -- objects
+      if quests[id]["end"]["O"] then
+        for _, object in pairs(quests[id]["end"]["O"]) do
+          meta = meta or {}
 
-        if meta["qlogid"] then
-          local _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
-          complete = complete or GetNumQuestLeaderBoards(meta["qlogid"]) == 0 and true or nil
-          if complete then
-            meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
+          if meta["qlogid"] then
+            local _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
+            complete = complete or GetNumQuestLeaderBoards(meta["qlogid"]) == 0 and true or nil
+            if complete then
+              meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
+            else
+              meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete"
+            end
           else
-            meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete"
+            meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
           end
-        else
-          meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
-        end
 
-        maps = pfDatabase:SearchObjectID(object, meta, maps)
+          maps = pfDatabase:SearchObjectID(object, meta, maps)
+        end
       end
     end
   end
-
 
   local parse_obj = {
     ["U"] = {},
