@@ -96,19 +96,19 @@ local function minimap_indoor()
 	local state = 1
 	if GetCVar("minimapZoom") == GetCVar("minimapInsideZoom") then
 		if GetCVar("minimapInsideZoom")+0 >= 3 then
-			Minimap:SetZoom(Minimap:GetZoom() - 1)
+			pfMap.drawlayer:SetZoom(pfMap.drawlayer:GetZoom() - 1)
 			tempzoom = 1
 		else
-			Minimap:SetZoom(Minimap:GetZoom() + 1)
+			pfMap.drawlayer:SetZoom(pfMap.drawlayer:GetZoom() + 1)
 			tempzoom = -1
 		end
 	end
 
-	if GetCVar("minimapInsideZoom")+0 == Minimap:GetZoom() then
+	if GetCVar("minimapInsideZoom")+0 == pfMap.drawlayer:GetZoom() then
     state = 0
   end
 
-  Minimap:SetZoom(Minimap:GetZoom() + tempzoom)
+  pfMap.drawlayer:SetZoom(pfMap.drawlayer:GetZoom() + tempzoom)
 	return state
 end
 
@@ -137,6 +137,7 @@ pfMap.tooltips = {}
 pfMap.nodes = {}
 pfMap.pins = {}
 pfMap.mpins = {}
+pfMap.drawlayer = Minimap
 
 pfMap.tooltip = CreateFrame("Frame" , "pfMapTooltip", GameTooltip)
 pfMap.tooltip:SetScript("OnShow", function()
@@ -603,7 +604,7 @@ function pfMap:UpdateMinimap()
   end
 
   local xPlayer, yPlayer = GetPlayerMapPosition("player")
-  local mZoom = Minimap:GetZoom()
+  local mZoom = pfMap.drawlayer:GetZoom()
   xPlayer, yPlayer = xPlayer * 100, yPlayer * 100
 
   -- force refresh every second even without changed values, otherwise skip
@@ -618,8 +619,8 @@ function pfMap:UpdateMinimap()
   local mapZoom = minimap_zoom[minimap_indoor()][mZoom]
   local mapWidth = minimap_sizes[mapID] and minimap_sizes[mapID][1] or 0
   local mapHeight = minimap_sizes[mapID] and minimap_sizes[mapID][2] or 0
-  local xRange = mapZoom / mapHeight * Minimap:GetHeight()/2 -- 16 as icon size
-  local yRange = mapZoom / mapWidth * Minimap:GetWidth()/2 -- 16 as icon size
+  local xRange = mapZoom / mapHeight * pfMap.drawlayer:GetHeight()/2 -- 16 as icon size
+  local yRange = mapZoom / mapWidth * pfMap.drawlayer:GetWidth()/2 -- 16 as icon size
 
   local i = 0
 
@@ -633,21 +634,21 @@ function pfMap:UpdateMinimap()
         local xScale = mapZoom / mapWidth
         local yScale = mapZoom / mapHeight
 
-        local xPos = ( xPlayer - x ) / 100 * Minimap:GetWidth() / xScale
-        local yPos = ( yPlayer - y ) / 100 * Minimap:GetHeight() / yScale
+        local xPos = ( xPlayer - x ) / 100 * pfMap.drawlayer:GetWidth() / xScale
+        local yPos = ( yPlayer - y ) / 100 * pfMap.drawlayer:GetHeight() / yScale
 
         local display = nil
 
         if pfUI.minimap then
-          display = ( abs(xPos) + 8 < Minimap:GetWidth() / 2 and abs(yPos) + 8 < Minimap:GetHeight()/2 ) and true or nil
+          display = ( abs(xPos) + 8 < pfMap.drawlayer:GetWidth() / 2 and abs(yPos) + 8 < pfMap.drawlayer:GetHeight()/2 ) and true or nil
         else
           local distance = sqrt(xPos * xPos + yPos * yPos)
-          display = ( distance + 8 < Minimap:GetWidth() / 2 ) and true or nil
+          display = ( distance + 8 < pfMap.drawlayer:GetWidth() / 2 ) and true or nil
         end
 
         if display then
           if not pfMap.mpins[i] then
-            pfMap.mpins[i] = pfMap:BuildNode("pfMiniMapPin" .. i, Minimap)
+            pfMap.mpins[i] = pfMap:BuildNode("pfMiniMapPin" .. i, pfMap.drawlayer)
           end
 
           pfMap:UpdateNode(pfMap.mpins[i], node, color, "minimap")
@@ -659,9 +660,9 @@ function pfMap:UpdateMinimap()
           end
 
           pfMap.mpins[i]:ClearAllPoints()
-          pfMap.mpins[i]:SetPoint("CENTER", Minimap, "CENTER", -xPos, yPos)
+          pfMap.mpins[i]:SetPoint("CENTER", pfMap.drawlayer, "CENTER", -xPos, yPos)
           pfMap.mpins[i]:SetFrameLevel(2)
-          if IsShiftKeyDown() and MouseIsOver(Minimap) then
+          if IsShiftKeyDown() and MouseIsOver(pfMap.drawlayer) then
             pfMap.mpins[i]:Hide()
           else
             pfMap.mpins[i]:Show()
