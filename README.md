@@ -7,9 +7,12 @@ The addon is not designed to be a quest- or tourguide and won't ever going to be
 pfQuest is the successor of [ShaguQuest](https://shagu.org/ShaguQuest/) and has been entirely written from scratch. In comparison to [ShaguQuest](https://shagu.org/ShaguQuest/), this addon does not depend on any specific map- or questlog addon. It's designed to support the default interface aswell as every other addon. In case you experience any addon conflicts, please add an issue to the bugtracker.
 
 # Downloads
+The **noLoc** package is for people with localized clients (e.g deDE) playing on servers that don't provide localizations (e.g Kronos).
+
 The release page provides downloads for several gameclients. Every build includes a specifically crafted database to match the gameclient. Using the `master`-zip instead, would include **all** languages, which cost more than 100MB of language-data and will dramatically increase your loading screen times. Please select only **one** language.
 
-**[[Go to Release Page]](https://github.com/shagu/pfQuest/releases/latest)**
+<script src="./js/github.js"></script><div id="assets"></div>
+**[[Release Page]](https://github.com/shagu/pfQuest/releases/latest)**
 
 ### Suggested Addons
 - [pfUI](http://github.com/shagu/pfUI): A complete and customizable UI replacement in a single addon
