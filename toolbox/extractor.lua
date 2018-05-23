@@ -10,6 +10,7 @@ local target = {
   ["object"] = true,
   ["item"] = true,
   ["quest"] = true,
+  ["meta"] = true,
 }
 
 do -- map lookup functions
@@ -212,6 +213,7 @@ pfDB = {
   ["items"] = {},
   ["zones"] = {},
   ["professions"] = {},
+  ["meta"] = {},
 }
   ]])
   file:close()
@@ -825,4 +827,79 @@ if target.quest then -- questDB [locales]
   end
 
   print()
+end
+
+if target.meta then -- metaDB [data]
+  local file = io.open("output/meta.lua", "w")
+
+  --[[
+  extract Lock.dbc relations to gameobject_template data0:
+
+    #!/bin/bash
+    function add_skills() {
+      cat Lock.dbc.csv | while read line; do
+        if [ "$(echo $line | cut -d "," -f 2)" = "0x2" ]; then
+          if [ "$(echo $line | cut -d "," -f 10)" = "$1" ]; then
+            echo -n " [$(echo $line | cut -d "," -f 1)] = $(echo $line | cut -d "," -f 18),"
+          fi
+        fi
+      done
+    }
+
+    echo "skills = {"
+    echo "  ["mining"] = {$(add_skills 3)},"
+    echo "  ["herbalism"] = {$(add_skills 2)},"
+    echo "  ["chests"] = { [57] = 0, }
+    echo "}"
+  ]]--
+
+  local skills = {
+    ["mines"] = {
+      [18] = 25, [19] = 50, [20] = 75, [21] = 100, [22] = 125, [25] = 150, [38] = 0, [39] = 65, [40] = 75, [41] = 125,
+      [42] = 155, [379] = 175, [380] = 230, [399] = 310, [400] = 245, [719] = 230, [939] = 275, [1632] = 305,
+    },
+
+    ["herbs"] = {
+      [8] = 25, [9] = 50, [10] = 75, [11] = 100, [26] = 125, [27] = 150, [29] = 0, [30] = 15, [31] = 70, [32] = 115,
+      [33] = 120, [34] = 130, [35] = 140, [45] = 125, [47] = 160, [48] = 215, [49] = 185, [50] = 205, [51] = 195,
+      [439] = 210, [440] = 220, [441] = 230, [442] = 235, [443] = 245, [444] = 250, [519] = 85, [521] = 170,
+      [1119] = 260, [1120] = 270, [1121] = 280, [1122] = 285, [1123] = 290, [1124] = 300,
+    },
+
+    ["chests"] = {
+      [57] = 0,
+    }
+  }
+
+  local mines = {}
+  local herbs = {}
+  local chests = {}
+
+  local gameobject_template = {}
+  local query = mysql:execute('SELECT *  FROM `gameobject_template` WHERE `type` = 3 AND `flags` = 0 AND `data1` > 0 GROUP BY gameobject_template.entry ORDER BY gameobject_template.entry ASC')
+  while query:fetch(gameobject_template, "a") do
+    local entry   = tonumber(gameobject_template.entry)
+    local lockid  = tonumber(gameobject_template.data0)
+    mines[entry] = skills["mines"][lockid] and skills["mines"][lockid] or nil
+    herbs[entry] = skills["herbs"][lockid] and skills["herbs"][lockid] or nil
+    chests[entry] = skills["chests"][lockid] and skills["chests"][lockid] or nil
+  end
+
+  file:write("pfDB[\"meta\"][\"mines\"] = {\n")
+  for id, skill in pairs(mines) do
+    file:write("  [" .. id .. "] = " .. skill .. ",\n")
+  end
+  file:write("}\n")
+
+  file:write("pfDB[\"meta\"][\"herbs\"] = {\n")
+  for id, skill in pairs(herbs) do
+    file:write("  [" .. id .. "] = " .. skill .. ",\n")
+  end
+  file:write("}\n")
+
+  file:write("pfDB[\"meta\"][\"chests\"] = {\n")
+  for id, skill in pairs(chests) do
+    file:write("  [" .. id .. "] = " .. skill .. ",\n")
+  end
+  file:write("}\n")
 end

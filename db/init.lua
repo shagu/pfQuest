@@ -5,5 +5,6 @@ pfDB = {
   ["items"] = {},
   ["zones"] = {},
   ["professions"] = {},
+  ["meta"] = {},
 }
   
