@@ -875,14 +875,16 @@ if target.meta then -- metaDB [data]
   local herbs = {}
   local chests = {}
 
-  local gameobject_template = {}
-  local query = mysql:execute('SELECT *  FROM `gameobject_template` WHERE `type` = 3 AND `flags` = 0 AND `data1` > 0 GROUP BY gameobject_template.entry ORDER BY gameobject_template.entry ASC')
-  while query:fetch(gameobject_template, "a") do
-    local entry   = tonumber(gameobject_template.entry)
-    local lockid  = tonumber(gameobject_template.data0)
-    mines[entry] = skills["mines"][lockid] and skills["mines"][lockid] or nil
-    herbs[entry] = skills["herbs"][lockid] and skills["herbs"][lockid] or nil
-    chests[entry] = skills["chests"][lockid] and skills["chests"][lockid] or nil
+  do -- gameobject relations
+    local gameobject_template = {}
+    local query = mysql:execute('SELECT *  FROM `gameobject_template` WHERE `type` = 3 AND `flags` = 0 AND `data1` > 0 GROUP BY gameobject_template.entry ORDER BY gameobject_template.entry ASC')
+    while query:fetch(gameobject_template, "a") do
+      local entry   = tonumber(gameobject_template.entry) * -1
+      local lockid  = tonumber(gameobject_template.data0)
+      mines[entry] = skills["mines"][lockid] and skills["mines"][lockid] or nil
+      herbs[entry] = skills["herbs"][lockid] and skills["herbs"][lockid] or nil
+      chests[entry] = skills["chests"][lockid] and skills["chests"][lockid] or nil
+    end
   end
 
   file:write("pfDB[\"meta\"][\"mines\"] = {\n")
@@ -901,5 +903,6 @@ if target.meta then -- metaDB [data]
   for id, skill in pairs(chests) do
     file:write("  [" .. id .. "] = " .. skill .. ",\n")
   end
+
   file:write("}\n")
 end
