@@ -24,6 +24,7 @@ compress db/items.lua ws
 compress db/objects.lua ws
 compress db/units.lua ws
 compress db/quests.lua ws
+compress db/meta.lua ws
 
 echo "-> locales"
 for loc in db/*/; do
