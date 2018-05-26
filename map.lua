@@ -463,7 +463,7 @@ function pfMap:DeleteNode(addon, title)
 end
 
 function pfMap:NodeClick()
-  if IsShiftKeyDown() then
+  if IsShiftKeyDown() and this.questid then
     pfMap:DeleteNode(this.node[this.title].addon, this.title)
     pfQuest_history[this.questid] = true
     pfMap:UpdateNodes()
