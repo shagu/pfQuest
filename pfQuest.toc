@@ -12,6 +12,7 @@ db\items.lua
 db\units.lua
 db\objects.lua
 db\quests.lua
+db\meta.lua
 
 # database enUS
 db\enUS\items.lua

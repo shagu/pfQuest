@@ -5,16 +5,18 @@ SlashCmdList["PFDB"] = function(input, editbox)
 
   if (input == "" or input == nil) then
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest (v" .. tostring(GetAddOnMetadata("pfQuest", "Version")) .. "):")
-    DEFAULT_CHAT_FRAME:AddMessage("/db show |cffaaaaaa - show database interface")
-    DEFAULT_CHAT_FRAME:AddMessage("/db config |cffaaaaaa - show configuration interface")
-    DEFAULT_CHAT_FRAME:AddMessage("/db unit <unit> |cffaaaaaa - search units")
-    DEFAULT_CHAT_FRAME:AddMessage("/db object <gameobject> |cffaaaaaa - search objects")
-    DEFAULT_CHAT_FRAME:AddMessage("/db item <item> |cffaaaaaa - search loot")
-    DEFAULT_CHAT_FRAME:AddMessage("/db vendor <item> |cffaaaaaa - vendors for item")
-    DEFAULT_CHAT_FRAME:AddMessage("/db quest <questname> |cffaaaaaa - show specific questgiver")
-    DEFAULT_CHAT_FRAME:AddMessage("/db quests |cffaaaaaa - show all quests on the map")
-    DEFAULT_CHAT_FRAME:AddMessage("/db clean |cffaaaaaa - clean map")
-    DEFAULT_CHAT_FRAME:AddMessage("/db locale |cffaaaaaa - display the addon locales")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff show |cffcccccc - show database interface")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff config |cffcccccc - show configuration interface")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff unit <unit> |cffcccccc - search units")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff object <gameobject> |cffcccccc - search objects")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff item <item> |cffcccccc - search loot")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff vendor <item> |cffcccccc - vendors for item")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff quest <questname> |cffcccccc - show specific questgiver")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff quests |cffcccccc - show all quests on the map")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff clean |cffcccccc - clean map")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff locale |cffcccccc - display the addon locales")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff meta <relation> [min, [max]] |cffcccccc - show related objects on the map")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc ->|cffffffff Available relations: |cff33ffccchests|r, |cff33ffccherbs|r, |cff33ffccmines|r")
   end
 
   local commandlist = { }
@@ -70,6 +72,12 @@ SlashCmdList["PFDB"] = function(input, editbox)
   if (arg1 == "quests") then
     local maps = pfDatabase:SearchQuests(meta)
     pfMap:UpdateNodes()
+  end
+
+  -- argument: meta
+  if (arg1 == "meta") then
+    local maps = pfDatabase:SearchMetaRelation({ commandlist[2], commandlist[3], commandlist[4] }, meta)
+    pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
   end
 
   -- argument: clean

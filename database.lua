@@ -253,6 +253,34 @@ function pfDatabase:SearchMobID(id, meta, maps)
   return maps
 end
 
+-- Search MetaRelation
+-- Scans for all entries within the specified meta name
+-- Adds map nodes for each and returns its map table
+-- query = { relation-name, relation-min, relation-max }
+function pfDatabase:SearchMetaRelation(query, meta, show)
+  local maps = {}
+
+  local relname = query[1] -- search name (chests)
+  local relmins = query[2] -- min skill level
+  local relmaxs = query[3] -- max skill level
+
+  if pfDB["meta"] and pfDB["meta"][relname] then
+    for id, skill in pairs(pfDB["meta"][relname]) do
+      if ( not relmins or tonumber(relmins) <= skill ) and
+         ( not relmaxs or tonumber(relmaxs) >= skill )
+      then
+        if id < 0 then
+          pfDatabase:SearchObjectID(math.abs(id), meta, maps)
+        else
+          pfDatabase:SearchMobID(id, meta, maps)
+        end
+      end
+    end
+  end
+
+  return maps
+end
+
 -- SearchMob
 -- Scans for all mobs with a specified name
 -- Adds map nodes for each and returns its map table
