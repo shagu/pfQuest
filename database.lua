@@ -598,7 +598,15 @@ function pfDatabase:SearchQuests(meta, maps)
   local meta = meta or {}
 
   local plevel = UnitLevel("player")
-  local pfaction = ( UnitFactionGroup("player") == "Horde" ) and "H" or "A"
+  local pfaction = UnitFactionGroup("player")
+  if pfaction == "Horde" then
+    pfaction = "H"
+  elseif pfaction == "Alliance" then
+    pfaction = "A"
+  else
+    pfaction = "GM"
+  end
+
   local _, race = UnitRace("player")
   local prace = pfDatabase:GetBitByRace(race)
   local _, class = UnitClass("player")
@@ -671,14 +679,18 @@ function pfDatabase:SearchQuests(meta, maps)
         -- units
         if quests[id]["start"]["U"] then
           for _, unit in pairs(quests[id]["start"]["U"]) do
-            maps = pfDatabase:SearchMobID(unit, meta, maps)
+            if units[unit] and strfind(units[unit]["fac"] or pfaction, pfaction) then
+              maps = pfDatabase:SearchMobID(unit, meta, maps)
+            end
           end
         end
 
         -- objects
         if quests[id]["start"]["O"] then
           for _, object in pairs(quests[id]["start"]["O"]) do
-            maps = pfDatabase:SearchObjectID(object, meta, maps)
+            if objects[object] and strfind(objects[object]["fac"] or pfaction, pfaction) then
+              maps = pfDatabase:SearchObjectID(object, meta, maps)
+            end
           end
         end
       end
