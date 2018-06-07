@@ -14,7 +14,7 @@ The release page provides downloads for several gameclients. Every build include
 **[[Release Page]](https://gitlab.com/shagu/pfQuest/releases/latest)**
 
 ### Suggested Addons
-- [pfUI](http://github.com/shagu/pfUI): A complete and customizable UI replacement in a single addon
+- [pfUI](https://shagu.org/pfUI): A complete and customizable UI replacement in a single addon
 - [EQL3](https://github.com/laytya/EQL3): A reskinned Extended Quest Log addon inspired by TukUI
 
 # Map & Minimap Nodes
