@@ -11,7 +11,7 @@ The **noLoc** package is for people with localized clients (e.g deDE) playing on
 
 The release page provides downloads for several gameclients. Every build includes a specifically crafted database to match the gameclient. Using the `master`-zip instead, would include **all** languages, which cost more than 100MB of language-data and will dramatically increase your loading screen times. Please select only **one** language.
 
-**[[Release Page]](https://gitlab.com/shagu/gpfQuest/releases/latest)**
+**[[Release Page]](https://gitlab.com/shagu/pfQuest/releases/latest)**
 
 ### Suggested Addons
 - [pfUI](http://github.com/shagu/pfUI): A complete and customizable UI replacement in a single addon
