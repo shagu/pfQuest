@@ -17,7 +17,6 @@ enUS koKR frFR deDE zhCN esES ruRU:
 	cp -rf db/$@ release/$@/pfQuest/db
 	cp -rf browser.lua database.lua map.lua quest.lua config.lua slashcmd.lua pfQuest.toc LICENSE README.md release/$@/pfQuest/
 	sed -i "s/NORELEASE/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
-	cd release/$@ && zip -qr9 ../pfQuest-$(VERSION)-$@.zip pfQuest
 
 noLoc:
 	@echo "===== building $@ ====="
@@ -45,7 +44,6 @@ noLoc:
 
 	cp -rf browser.lua database.lua map.lua quest.lua config.lua slashcmd.lua pfQuest.toc LICENSE README.md release/$@/pfQuest/
 	sed -i "s/NORELEASE/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
-	cd release/$@ && zip -qr9 ../pfQuest-$(VERSION)-$@.zip pfQuest
 
 database:
 	$(MAKE) -C toolbox/ all

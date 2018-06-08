@@ -1,0 +1,40 @@
+before_script:
+  - apt-get update -qq && apt-get install -y -qq make
+
+.build: &build
+  script:
+    - make stripdb
+    - make ${CI_JOB_NAME}
+    - mv release/${CI_JOB_NAME}/pfQuest .
+
+  only:
+    - tags
+
+  artifacts:
+    name: "pfQuest-${CI_COMMIT_TAG}-${CI_JOB_NAME}"
+    paths:
+      - pfQuest/
+
+enUS:
+  <<: [*build]
+
+koKR:
+  <<: [*build]
+
+frFR:
+  <<: [*build]
+
+deDE:
+  <<: [*build]
+
+zhCN:
+  <<: [*build]
+
+esES:
+  <<: [*build]
+
+ruRU:
+  <<: [*build]
+
+noLoc:
+  <<: [*build]
