@@ -7,11 +7,26 @@ The addon is not designed to be a quest- or tourguide and won't ever going to be
 pfQuest is the successor of [ShaguQuest](https://shagu.org/ShaguQuest/) and has been entirely written from scratch. In comparison to [ShaguQuest](https://shagu.org/ShaguQuest/), this addon does not depend on any specific map- or questlog addon. It's designed to support the default interface aswell as every other addon. In case you experience any addon conflicts, please add an issue to the bugtracker.
 
 # Downloads
-The **noLoc** package is for people with localized clients (e.g deDE) playing on servers that don't provide localizations (e.g Kronos).
+Every build includes a specifically crafted database to match the gameclient. The **noLoc** package is for people with localized clients (e.g deDE) playing on servers that don't provide localizations (e.g Kronos).
+If you choose to use the `master`-zip instead, it will contain more than 100MB of language-specific-data and therefore dramatically increase your loading screen times.
 
-The release page provides downloads for several gameclients. Every build includes a specifically crafted database to match the gameclient. Using the `master`-zip instead, would include **all** languages, which cost more than 100MB of language-data and will dramatically increase your loading screen times. Please select only **one** language.
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/enUS.png) Download English Version (enUS)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS)
 
-**[[Release Page]](https://gitlab.com/shagu/pfQuest/releases/latest)**
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/koKR.png) Download Korean Version (koKR)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR)
+
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/frFR.png) Download French Version (frFR)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR)
+
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/deDE.png) Download German Version (deDE)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=deDE)
+
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/zhCN.png) Download Chinese Version (zhCN)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=zhCN)
+
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/esES.png) Download Spanish Version (esES)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=esES)
+
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/ruRU.png) Download Russian Version (ruRU)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU)
+
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/noLoc.png) Download Unlocalized Version (noLoc)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=noLoc)
+
+**[[Latest Changes]](https://gitlab.com/shagu/pfQuest/commits/master)**
 
 ### Suggested Addons
 - [pfUI](https://shagu.org/pfUI): A complete and customizable UI replacement in a single addon
