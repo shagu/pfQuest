@@ -1,4 +1,5 @@
 VERSION = $(shell git describe --abbrev=0 --tags)
+GITREV = $(shell git describe --tags)
 
 all: clean stripdb enUS koKR frFR deDE zhCN esES ruRU noLoc
 
@@ -17,6 +18,7 @@ enUS koKR frFR deDE zhCN esES ruRU:
 	cp -rf db/$@ release/$@/pfQuest/db
 	cp -rf browser.lua database.lua map.lua quest.lua config.lua slashcmd.lua pfQuest.toc LICENSE README.md release/$@/pfQuest/
 	sed -i "s/NORELEASE/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
+	echo $(VERSION) > release/$@/pfQuest/version.txt
 
 noLoc:
 	@echo "===== building $@ ====="
@@ -44,6 +46,7 @@ noLoc:
 
 	cp -rf browser.lua database.lua map.lua quest.lua config.lua slashcmd.lua pfQuest.toc LICENSE README.md release/$@/pfQuest/
 	sed -i "s/NORELEASE/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
+	echo $(VERSION) > release/$@/pfQuest/version.txt
 
 database:
 	$(MAKE) -C toolbox/ all
