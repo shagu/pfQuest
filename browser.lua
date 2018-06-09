@@ -165,7 +165,7 @@ local function ResultButtonClick()
   elseif this.btype == "quests" then
     if IsShiftKeyDown() then
       ChatFrameEditBox:Show()
-      ChatFrameEditBox:Insert("|cffffff00|Hquest:0:0:0:0|h[" .. this.name .. "]|h|r")
+      ChatFrameEditBox:Insert("|cffffff00|Hquest:" .. ( this.id or 0 ) .. ":0:0:0|h[" .. this.name .. "]|h|r")
     elseif pfBrowser.selectState then
       local maps = pfDatabase:SearchQuest(this.name)
       pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
