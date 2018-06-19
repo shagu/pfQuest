@@ -551,10 +551,8 @@ function pfDatabase:SearchQuestID(id, meta, maps)
         -- item data
         if type == "item" then
           local i, j, itemName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_OBJECTS_FOUND))
-          if objNum == objNeeded or done then
-            for id in pairs(pfDatabase:GetIDByName(itemName, "items")) do
-              parse_obj["I"][id] = ( objNum == objNeeded or done ) and "DONE" or "PROG"
-            end
+          for id in pairs(pfDatabase:GetIDByName(itemName, "items")) do
+            parse_obj["I"][id] = ( objNum == objNeeded or done ) and "DONE" or "PROG"
           end
         end
       end
