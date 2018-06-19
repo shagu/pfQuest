@@ -17,7 +17,7 @@ pfQuest:SetScript("OnEvent", function()
   if event == "ADDON_LOADED" then
     if arg1 == "pfQuest" then
       if tostring(GetAddOnMetadata("pfQuest", "Version")) == "NORELEASE" then
-        DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccWARNING:|r You're using a development snapshot of pfQuest which leads to a higher RAM-Usage and increased loading times. Please choose an official release instead: https://github.com/shagu/pfQuest/releases")
+        DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccWARNING:|r You're using a development snapshot of pfQuest which leads to a higher RAM-Usage and increased loading times. Please choose an official release instead: https://shagu.org/pfQuest")
       end
 
       pfQuest:AddQuestLogIntegration()
