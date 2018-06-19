@@ -4,7 +4,6 @@ pfQuest.queue = {}
 pfQuest.abandon = ""
 pfQuest.questlog = {}
 pfQuest.questlog_tmp = {}
-pfQuest.debugmode  = false
 
 pfQuest:RegisterEvent("QUEST_WATCH_UPDATE")
 pfQuest:RegisterEvent("QUEST_LOG_UPDATE")
@@ -44,7 +43,6 @@ pfQuest:SetScript("OnUpdate", function()
   if this.updateQuestGivers == true then
     if pfQuest_config["trackingmethod"] == 4 then return end
     if pfQuest_config["allquestgivers"] == "1" then
-      pfQuest.debug("Loading Questgivers")
       local meta = { ["addon"] = "PFQUEST" }
       pfDatabase:SearchQuests(meta)
       pfMap:UpdateNodes()
@@ -62,7 +60,6 @@ pfQuest:SetScript("OnUpdate", function()
 
     if pfQuest_config["trackingmethod"] ~= 3 and (pfQuest_config["trackingmethod"] ~= 2 or IsQuestWatched(entry[3])) then
       pfMap:DeleteNode("PFQUEST", entry[1])
-      pfQuest.debug("Loading |cff33ffcc" .. entry[1])
       local meta = { ["addon"] = "PFQUEST", ["qlogid"] = entry[3] }
       for _, id in entry[2] do
         pfDatabase:SearchQuestID(id, meta)
@@ -299,12 +296,6 @@ function pfQuest:AddWorldMapIntegration()
     UIDropDownMenu_SetButtonWidth(125, pfQuest.mapButton)
     UIDropDownMenu_JustifyText("RIGHT", pfQuest.mapButton)
     UIDropDownMenu_SetSelectedID(pfQuest.mapButton, pfQuest.mapButton.current)
-  end
-end
-
-function pfQuest.debug(msg)
-  if pfQuest.debugmode  == true then
-    UIErrorsFrame:AddMessage("|cff33ffccpf|cffffffffQuest: " .. msg)
   end
 end
 
