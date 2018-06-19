@@ -527,10 +527,9 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   }
 
   -- If QuestLogID is given, scan and add all finished objectives to blacklist
-  local complete
   if meta["qlogid"] then
     local objectives = GetNumQuestLeaderBoards(meta["qlogid"])
-    _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
+    local _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
 
     if objectives and not complete then
       for i=1, objectives, 1 do
@@ -560,7 +559,13 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   end
 
   -- search quest-objectives
-  if quests[id]["obj"] and not complete then
+  if quests[id]["obj"] then
+
+    if meta["qlogid"] then
+      local _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
+      if complete then return maps end
+    end
+
     -- units
     if quests[id]["obj"]["U"] then
       for _, unit in pairs(quests[id]["obj"]["U"]) do
