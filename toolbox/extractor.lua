@@ -167,7 +167,7 @@ do -- database query functions
         px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
         py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
         if isValidMap(zone, round(px), round(py)) then
-          local coord = { px, py, zone, ( creature.spawntimesecsmin or 0) }
+          local coord = { px, py, zone, ( tonumber(creature.spawntimesecsmin) > 0 and creature.spawntimesecsmin or 0) }
           table.insert(ret, coord)
         end
       end
@@ -205,7 +205,7 @@ do -- database query functions
         px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
         py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
         if isValidMap(zone, round(px), round(py)) then
-          local coord = { px, py, zone, ( gameobject.spawntimesecsmin or 0) }
+          local coord = { px, py, zone, ( tonumber(gameobject.spawntimesecsmin) > 0 and gameobject.spawntimesecsmin or 0) }
           table.insert(ret, coord)
         end
       end

@@ -243,7 +243,7 @@ function pfDatabase:SearchMobID(id, meta, maps)
 
       meta["level"] = units[id]["lvl"] or UNKNOWN
       meta["spawntype"] = "Unit"
-      meta["respawn"] = respawn and SecondsToTime(respawn)
+      meta["respawn"] = respawn > 0 and SecondsToTime(respawn)
 
       maps[zone] = maps[zone] and maps[zone] + 1 or 1
       pfMap:AddNode(meta)
