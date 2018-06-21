@@ -87,6 +87,49 @@ do -- helper functions
     str = string.gsub(str, "\n", "")
     return str
   end
+
+  -- http://lua-users.org/wiki/SortedIteration
+  function __genOrderedIndex( t )
+    local orderedIndex = {}
+    for key in pairs(t) do
+      table.insert( orderedIndex, key )
+    end
+    table.sort( orderedIndex )
+    return orderedIndex
+  end
+
+  function orderedNext(t, state)
+    local key = nil
+    if state == nil then
+      t.__orderedIndex = __genOrderedIndex( t )
+      key = t.__orderedIndex[1]
+    else
+      for i = 1,#t.__orderedIndex do
+        if t.__orderedIndex[i] == state then
+          key = t.__orderedIndex[i+1]
+        end
+      end
+    end
+
+    if key then
+      return key, t[key]
+    end
+
+    t.__orderedIndex = nil
+    return
+  end
+
+  function opairs(t)
+      return orderedNext, t, nil
+  end
+  --
+
+  function hasdata(tbl)
+    for _ in pairs(tbl) do
+      return true
+    end
+    return nil
+  end
 end
 
 do -- database connection
@@ -618,15 +661,15 @@ if target.quest then -- questDB [data]
 
     for i=1,4 do
       if quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) > 0 then
-        table.insert(units, quest_template["ReqCreatureOrGOId" .. i])
+        units[quest_template["ReqCreatureOrGOId" .. i]] = true
       elseif quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) < 0 then
-        table.insert(objects, math.abs(tonumber(quest_template["ReqCreatureOrGOId" .. i])))
+        objects[math.abs(tonumber(quest_template["ReqCreatureOrGOId" .. i]))] = true
       end
       if quest_template["ReqItemId" .. i] and tonumber(quest_template["ReqItemId" .. i]) > 0 then
-        table.insert(items, quest_template["ReqItemId" .. i])
+        items[tonumber(quest_template["ReqItemId" .. i])] = true
       end
       if quest_template["ReqSourceId" .. i] and tonumber(quest_template["ReqSourceId" .. i]) > 0 then
-        table.insert(items, quest_template["ReqSourceId" .. i])
+        items[tonumber(quest_template["ReqSourceId" .. i])] = true
       end
       if quest_template["ReqSpellCast" .. i] and tonumber(quest_template["ReqSpellCast" .. i]) > 0 then
         local spell_template = {}
@@ -636,7 +679,7 @@ if target.quest then -- questDB [data]
             local gameobject_template = {}
             local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spell_template["requiresSpellFocus"])
             while query:fetch(gameobject_template, "a") do
-              table.insert(objects, gameobject_template["entry"])
+              objects[tonumber(gameobject_template["entry"])] = true
             end
           end
         end
@@ -656,7 +699,7 @@ if target.quest then -- questDB [data]
               local gameobject_template = {}
               local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spell_template["requiresSpellFocus"])
               while query:fetch(gameobject_template, "a") do
-                table.insert(objects, gameobject_template["entry"])
+                objects[tonumber(gameobject_template["entry"])] = true
               end
             end
           end
@@ -665,38 +708,38 @@ if target.quest then -- questDB [data]
     end
 
     do -- write objectives
-      if #units > 0 or #objects > 0 or #items > 0 then
+      if hasdata(units) or hasdata(objects) or hasdata(items) then
         file:write("    [\"obj\"] = {\n")
 
         local first = true
-        for id,unit in pairs(units) do
+        for id in opairs(units) do
           if first then
-            file:write("      [\"U\"] = { " .. unit)
+            file:write("      [\"U\"] = { " .. id)
             first = false
           else
-            file:write(", " .. unit)
+            file:write(", " .. id)
           end
         end
         if not first then file:write(" },\n") end
 
         local first = true
-        for id,object in pairs(objects) do
+        for id  in opairs(objects) do
           if first then
-            file:write("      [\"O\"] = { " .. object)
+            file:write("      [\"O\"] = { " .. id)
             first = false
           else
-            file:write(", " .. object)
+            file:write(", " .. id)
           end
         end
         if not first then file:write(" },\n") end
 
         local first = true
-        for id,item in pairs(items) do
+        for id in opairs(items) do
           if first then
-            file:write("      [\"I\"] = { " .. item)
+            file:write("      [\"I\"] = { " .. id)
             first = false
           else
-            file:write(", " .. item)
+            file:write(", " .. id)
           end
         end
         if not first then file:write(" },\n") end
