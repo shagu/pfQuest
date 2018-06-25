@@ -100,9 +100,9 @@ function pfQuest:UpdateQuestlog()
         local state = watched and "trck" or ""
         for i=1, objectives, 1 do
           local text, _, finished = GetQuestLogLeaderBoard(i, qlogid)
-          local _, _, itemName, numItems, numNeeded = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
-          if itemName then
-            state = state .. i .. ( finished and "done" or "todo" )
+          local _, _, obj, objNum, objNeeded = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
+          if obj then
+            state = state .. i .. (( objNum >= objNeeded or done ) and "done" or "todo")
           end
         end
         pfQuest.questlog_tmp[title].state = state
