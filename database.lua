@@ -539,11 +539,11 @@ function pfDatabase:SearchQuestID(id, meta, maps)
         if type == "monster" then
           local i, j, monsterName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_MONSTERS_KILLED))
           for id in pairs(pfDatabase:GetIDByName(monsterName, "units")) do
-            parse_obj["U"][id] = ( objNum == objNeeded or done ) and "DONE" or "PROG"
+            parse_obj["U"][id] = ( objNum >= objNeeded or done ) and "DONE" or "PROG"
           end
 
           for id in pairs(pfDatabase:GetIDByName(monsterName, "objects")) do
-            parse_obj["O"][id] = ( objNum == objNeeded or done ) and "DONE" or "PROG"
+            parse_obj["O"][id] = ( objNum >= objNeeded or done ) and "DONE" or "PROG"
           end
         end
 
@@ -551,7 +551,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
         if type == "item" then
           local i, j, itemName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_OBJECTS_FOUND))
           for id in pairs(pfDatabase:GetIDByName(itemName, "items")) do
-            parse_obj["I"][id] = ( objNum == objNeeded or done ) and "DONE" or "PROG"
+            parse_obj["I"][id] = ( objNum >= objNeeded or done ) and "DONE" or "PROG"
           end
         end
       end
