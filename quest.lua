@@ -71,8 +71,11 @@ end)
 function pfQuest:UpdateQuestlog()
   pfQuest.questlog_tmp = {}
 
+  local _, numQuests = GetNumQuestLogEntries()
+  local found = 0
+
   -- iterate over all quests
-  for qlogid=1, GetNumQuestLogEntries() do
+  for qlogid=1,40 do
     local title, _, _, header, _, complete = GetQuestLogTitle(qlogid)
     local objectives = GetNumQuestLeaderBoards(qlogid)
     local watched = IsQuestWatched(qlogid)
@@ -97,6 +100,11 @@ function pfQuest:UpdateQuestlog()
           end
         end
         pfQuest.questlog_tmp[title].state = state
+      end
+
+      found = found + 1
+      if found >= numQuests then
+        break
       end
     end
   end
