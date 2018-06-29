@@ -85,6 +85,8 @@ function pfQuest:UpdateQuestlog()
       if not pfQuest.questlog[title] then
         local questID = pfDatabase:GetQuestIDs(qlogid)
         pfQuest.questlog_tmp[title] = { ids = questID, qlogid = qlogid, state = "init" }
+      elseif pfQuest.questlog[title].qlogid ~= qlogid then
+        pfQuest.questlog_tmp[title] = { ids = pfQuest.questlog[title].ids, qlogid = qlogid, state = pfQuest.questlog[title].state }
       else
         pfQuest.questlog_tmp[title] = { ids = pfQuest.questlog[title].ids, qlogid = pfQuest.questlog[title].qlogid, state = pfQuest.questlog[title].state }
       end
