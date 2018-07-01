@@ -5,6 +5,9 @@ pfQuest.abandon = ""
 pfQuest.questlog = {}
 pfQuest.questlog_tmp = {}
 
+pfQuest:RegisterEvent("QUEST_WATCH_UPDATE")
+pfQuest:RegisterEvent("QUEST_LOG_UPDATE")
+pfQuest:RegisterEvent("QUEST_FINISHED")
 pfQuest:RegisterEvent("PLAYER_LEVEL_UP")
 pfQuest:RegisterEvent("PLAYER_ENTERING_WORLD")
 pfQuest:RegisterEvent("SKILL_LINES_CHANGED")
@@ -23,13 +26,18 @@ pfQuest:SetScript("OnEvent", function()
     end
   elseif event == "PLAYER_LEVEL_UP" or event == "PLAYER_ENTERING_WORLD" or event == "SKILL_LINES_CHANGED" then
     pfQuest.updateQuestGivers = true
+  else
+    pfQuest.updateQuestLog = true
   end
 end)
 
 pfQuest:SetScript("OnUpdate", function()
   if ( this.tick or .2) > GetTime() then return else this.tick = GetTime() + .2 end
 
-  pfQuest:UpdateQuestlog()
+  if this.updateQuestLog == true then
+    pfQuest:UpdateQuestlog()
+    this.updateQuestLog = false
+  end
 
   if this.updateQuestGivers == true then
     if pfQuest_config["trackingmethod"] == 4 then return end
@@ -148,6 +156,7 @@ function pfQuest:ResetAll()
   -- force reload all quests
   pfMap:DeleteNode("PFQUEST")
   pfQuest.questlog = {}
+  pfQuest.updateQuestLog = true
   pfQuest.updateQuestGivers = true
   pfMap:UpdateNodes()
 end
@@ -306,6 +315,7 @@ RemoveQuestWatch = function(questIndex)
   local ret = pfHookRemoveQuestWatch(questIndex)
   local title, _, _, header, _, complete = GetQuestLogTitle(questIndex)
   pfMap:DeleteNode("PFQUEST", title)
+  pfQuest.updateQuestLog = true
   pfQuest.updateQuestGivers = true
   return ret
 end
@@ -314,6 +324,7 @@ end
 local pfHookAddQuestWatch = AddQuestWatch
 AddQuestWatch = function(questIndex)
   local ret = pfHookAddQuestWatch(questIndex)
+  pfQuest.updateQuestLog = true
   pfQuest.updateQuestGivers = true
   return ret
 end
