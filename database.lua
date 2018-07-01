@@ -650,39 +650,8 @@ function pfDatabase:SearchQuests(meta, maps)
   end
 
   for id in pairs(quests) do
-    meta["quest"] = ( pfDB.quests.loc[id] and pfDB.quests.loc[id].T ) or UNKNOWN
-    meta["questid"] = id
-    meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available_c"
-
     minlvl = quests[id]["min"] or quests[id]["lvl"]
     maxlvl = quests[id]["lvl"]
-
-    meta["qlvl"] = quests[id]["lvl"]
-    meta["qmin"] = quests[id]["min"]
-
-    meta["vertex"] = { 0, 0, 0 }
-    meta["layer"] = 3
-
-    -- tint high level quests red
-    if minlvl > plevel then
-      meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
-      meta["vertex"] = { 1, .6, .6 }
-      meta["layer"] = 2
-    end
-
-    -- tint low level quests grey
-    if maxlvl + 9 < plevel then
-      meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
-      meta["vertex"] = { 1, 1, 1 }
-      meta["layer"] = 2
-    end
-
-    -- treat big difference in level requirements as daily quests
-    if math.abs(minlvl - maxlvl) >= 30 then
-      meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
-      meta["vertex"] = { .2, .8, 1 }
-      meta["layer"] = 2
-    end
 
     if pfDB.quests.loc[id] and currentQuests[pfDB.quests.loc[id].T] then
       -- hide active quest
@@ -705,6 +674,38 @@ function pfDatabase:SearchQuests(meta, maps)
     elseif quests[id]["skill"] and not pfDatabase:PlayerHasSkill(quests[id]["skill"]) then
       -- hide non-available quests for your class
     else
+      -- set metadata
+      meta["quest"] = ( pfDB.quests.loc[id] and pfDB.quests.loc[id].T ) or UNKNOWN
+      meta["questid"] = id
+      meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available_c"
+
+      meta["qlvl"] = quests[id]["lvl"]
+      meta["qmin"] = quests[id]["min"]
+
+      meta["vertex"] = { 0, 0, 0 }
+      meta["layer"] = 3
+
+      -- tint high level quests red
+      if minlvl > plevel then
+        meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
+        meta["vertex"] = { 1, .6, .6 }
+        meta["layer"] = 2
+      end
+
+      -- tint low level quests grey
+      if maxlvl + 9 < plevel then
+        meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
+        meta["vertex"] = { 1, 1, 1 }
+        meta["layer"] = 2
+      end
+
+      -- treat big difference in level requirements as daily quests
+      if math.abs(minlvl - maxlvl) >= 30 then
+        meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
+        meta["vertex"] = { .2, .8, 1 }
+        meta["layer"] = 2
+      end
+
       -- iterate over all questgivers
       if quests[id]["start"] then
         -- units
@@ -727,8 +728,6 @@ function pfDatabase:SearchQuests(meta, maps)
       end
     end
   end
-
-  return num
 end
 
 function pfDatabase:FormatQuestText(questText)
