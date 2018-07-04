@@ -468,6 +468,9 @@ function pfMap:NodeClick()
     pfMap:DeleteNode(this.node[this.title].addon, this.title)
     pfQuest_history[this.questid] = true
     pfMap:UpdateNodes()
+  elseif IsShiftKeyDown() then
+    pfMap:DeleteNode(this.node[this.title].addon, this.title)
+    pfMap:UpdateNodes()
   else
     -- switch color
     pfQuest_colors[this.color] = { str2rgb(this.color .. GetTime()) }
