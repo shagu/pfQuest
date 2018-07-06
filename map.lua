@@ -617,7 +617,7 @@ function pfMap:UpdateMinimap()
   end
 
   local color = pfQuest_config["colorbyspawn"] == "1" and "spawn" or "title"
-  local alpha = pfQuest_config["minimaptransp"] + 0
+  local alpha = tonumber(pfQuest_config["minimaptransp"]) or 1
   local mapID = pfMap:GetMapIDByName(GetZoneText())
   local mapZoom = minimap_zoom[minimap_indoor()][mZoom]
   local mapWidth = minimap_sizes[mapID] and minimap_sizes[mapID][1] or 0
