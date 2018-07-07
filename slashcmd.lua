@@ -40,31 +40,31 @@ SlashCmdList["PFDB"] = function(input, editbox)
 
   -- argument: item
   if (arg1 == "item") then
-    local maps = pfDatabase:SearchItem(arg2, meta)
+    local maps = pfDatabase:SearchItem(arg2, meta, "LOWER")
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
   end
 
   -- argument: vendor
   if (arg1 == "vendor") then
-    local maps = pfDatabase:SearchVendor(arg2, meta)
+    local maps = pfDatabase:SearchVendor(arg2, meta, "LOWER")
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
   end
 
   -- argument: unit
   if (arg1 == "unit") then
-    local maps = pfDatabase:SearchMob(arg2, meta)
+    local maps = pfDatabase:SearchMob(arg2, meta, "LOWER")
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
   end
 
   -- argument: object
   if (arg1 == "object") then
-    local maps = pfDatabase:SearchObject(arg2, meta)
+    local maps = pfDatabase:SearchObject(arg2, meta, "LOWER")
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
   end
 
   -- argument: quest
   if (arg1 == "quest") then
-    local maps = pfDatabase:SearchQuest(arg2)
+    local maps = pfDatabase:SearchQuest(arg2, meta, "LOWER")
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
   end
 
