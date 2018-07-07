@@ -177,9 +177,14 @@ function pfDatabase:GetIDByName(name, db, partial)
   for id, loc in pairs(pfDB[db]["loc"]) do
     if db == "quests" then loc = loc["T"] end
 
-    -- if the partial variable was passed, use strfind, otherwise compare the strings
-    if loc and name and ((partial and strfind(strlower(loc), strlower(name))) or strlower(loc) == strlower(name)) then
-      ret[id] = loc
+    if loc and name then
+      if partial == true and strfind(strlower(loc), strlower(name)) then
+        ret[id] = loc
+      elseif partial == "LOWER" and strlower(loc) == strlower(name) then
+        ret[id] = loc
+      elseif loc == name then
+        ret[id] = loc
+      end
     end
   end
   return ret
