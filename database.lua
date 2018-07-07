@@ -289,10 +289,10 @@ end
 -- SearchMob
 -- Scans for all mobs with a specified name
 -- Adds map nodes for each and returns its map table
-function pfDatabase:SearchMob(mob, meta, show)
+function pfDatabase:SearchMob(mob, meta, partial)
   local maps = {}
 
-  for id in pairs(pfDatabase:GetIDByName(mob, "units")) do
+  for id in pairs(pfDatabase:GetIDByName(mob, "units", partial)) do
     if units[id] and units[id]["coords"] then
       maps = pfDatabase:SearchMobID(id, meta, maps)
     end
@@ -337,10 +337,10 @@ end
 -- SearchObject
 -- Scans for all objects with a specified name
 -- Adds map nodes for each and returns its map table
-function pfDatabase:SearchObject(obj, meta)
+function pfDatabase:SearchObject(obj, meta, partial)
   local maps = {}
 
-  for id in pairs(pfDatabase:GetIDByName(obj, "objects")) do
+  for id in pairs(pfDatabase:GetIDByName(obj, "objects", partial)) do
     if objects[id] and objects[id]["coords"] then
       maps = pfDatabase:SearchObjectID(id, meta, maps)
     end
@@ -406,11 +406,11 @@ end
 -- Scans for all items with a specified name
 -- Adds map nodes for each drop and vendor
 -- Returns its map table
-function pfDatabase:SearchItem(item, meta)
+function pfDatabase:SearchItem(item, meta, partial)
   local maps = {}
   local bestmap, bestscore = nil, 0
 
-  for id in pairs(pfDatabase:GetIDByName(item, "items")) do
+  for id in pairs(pfDatabase:GetIDByName(item, "items", partial)) do
     maps = pfDatabase:SearchItemID(id, meta, maps)
   end
 
@@ -614,10 +614,10 @@ end
 -- Scans for all quests with a specified name
 -- Adds map nodes for each objective and involved unit
 -- Returns its map table
-function pfDatabase:SearchQuest(quest, meta)
+function pfDatabase:SearchQuest(quest, meta, partial)
   local maps = {}
 
-  for id in pairs(pfDatabase:GetIDByName(quest, "quests")) do
+  for id in pairs(pfDatabase:GetIDByName(quest, "quests", partial)) do
     maps = pfDatabase:SearchQuestID(id, meta, maps)
   end
 
