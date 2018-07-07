@@ -200,7 +200,7 @@ function pfQuest:AddQuestLogIntegration()
     local title, _, _, header, _, complete = GetQuestLogTitle(questIndex)
     if header then return end
 
-    local ids = pfDatabase:GetQuestIDs(questIndex)
+    local ids = pfQuest.questlog[title].ids
     local maps, meta = {}, { ["addon"] = "PFQUEST", ["qlogid"] = questIndex }
     for _, id in ids do
       maps = pfDatabase:SearchQuestID(id, meta, maps)
