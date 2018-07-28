@@ -347,7 +347,7 @@ local function ResultButtonReload(self)
     self.name = pfDB[self.btype]["loc"][self.id]["T"]
     self.text:SetText("|cffffcc00|Hquest:0:0:0:0|h[" .. self.name .. "]|h|r")
   elseif self.btype == "units" or self.btype == "objects" then
-    local level = pfDB[self.btype]["data"][self.id]["lvl"] or ""
+    local level = pfDB[self.btype]["data"][self.id] and pfDB[self.btype]["data"][self.id]["lvl"] or ""
     if level and level ~= "" then level = " (" .. level .. ")" end
     self.text:SetText(self.name .. "|cffaaaaaa" .. level)
 
