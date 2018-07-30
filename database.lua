@@ -674,6 +674,8 @@ function pfDatabase:SearchQuests(meta, maps)
       -- hide highlevel quests
     elseif quests[id]["min"] and quests[id]["min"] > plevel + 3 then
       -- hide highlevel quests
+    elseif math.abs(minlvl - maxlvl) >= 30 and pfQuest_config["showfestival"] == "0" then
+      -- hide event quests
     elseif minlvl > plevel and pfQuest_config["showhighlevel"] == "0" then
       -- hide level+3 quests
     elseif quests[id]["skill"] and not pfDatabase:PlayerHasSkill(quests[id]["skill"]) then

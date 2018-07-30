@@ -9,6 +9,7 @@ pfQuest_defconfig = {
   ["currentquestgivers"] = "1", -- Show Current Questgiver Nodes
   ["showlowlevel"] = "0", -- Show Lowlevel Questgiver Nodes
   ["showhighlevel"] = "1", -- Show Level+3 Questgiver Nodes
+  ["showfestival"] = "1", -- Show Event Questgiver Nodes
   ["minimapnodes"] = "1", -- Show MiniMap Nodes
   ["cutoutminimap"] = "1", -- Use Cut-Out Minimap Node Icon
   ["questlogbuttons"] = "1", -- Show QuestLog Buttons
@@ -25,7 +26,7 @@ pfQuest_defconfig = {
 pfQuestConfig = CreateFrame("Frame", "pfQuestConfig", UIParent)
 pfQuestConfig:Hide()
 pfQuestConfig:SetWidth(280)
-pfQuestConfig:SetHeight(420)
+pfQuestConfig:SetHeight(440)
 pfQuestConfig:SetPoint("CENTER", 0, 0)
 pfQuestConfig:SetFrameStrata("TOOLTIP")
 pfQuestConfig:SetMovable(true)
@@ -40,6 +41,7 @@ pfQuestConfig:SetScript("OnEvent", function()
     pfQuestConfig:CreateConfigEntry("currentquestgivers",  "Display Current Questgivers",    "checkbox")
     pfQuestConfig:CreateConfigEntry("showlowlevel",        "Display Lowlevel Questgivers",   "checkbox")
     pfQuestConfig:CreateConfigEntry("showhighlevel",       "Display Level+3 Questgivers",    "checkbox")
+    pfQuestConfig:CreateConfigEntry("showfestival",        "Display Event & Daily Quests",   "checkbox")
     pfQuestConfig:CreateConfigEntry("minimapnodes",        "Show MiniMap Nodes",             "checkbox")
     pfQuestConfig:CreateConfigEntry("cutoutminimap",        "Use Cut-Out MiniMap Node Icons","checkbox")
     pfQuestConfig:CreateConfigEntry("questlogbuttons",     "Show QuestLog Buttons",          "checkbox")
