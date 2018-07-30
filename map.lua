@@ -595,11 +595,6 @@ function pfMap:UpdateNodes()
 end
 
 function pfMap:UpdateMinimap()
-  -- hide existing nodes
-  for pins, pin in pairs(pfMap.mpins) do
-    pin:Hide()
-  end
-
   if pfQuest_config["minimapnodes"] == "0" then
     pfMap:Hide()
     return
@@ -610,12 +605,11 @@ function pfMap:UpdateMinimap()
   xPlayer, yPlayer = xPlayer * 100, yPlayer * 100
 
   -- force refresh every second even without changed values, otherwise skip
-  if this.xPlayer == xPlayer and this.yPlayer == py and this.mZoom == mZoom then
-    if ( limit or 1) > GetTime() then return else limit = GetTime() + 1 end
-  else
-    this.xPlayer, this.yPlayer, this.mZoom = xPlayer, yPlayer, mZoom
+  if this.xPlayer == xPlayer and this.yPlayer == yPlayer and this.mZoom == mZoom then
+    if ( this.tick or 1) > GetTime() then return else this.tick = GetTime() + 1 end
   end
 
+  this.xPlayer, this.yPlayer, this.mZoom = xPlayer, yPlayer, mZoom
   local color = pfQuest_config["colorbyspawn"] == "1" and "spawn" or "title"
   local alpha = tonumber(pfQuest_config["minimaptransp"]) or 1
   local mapID = pfMap:GetMapIDByName(GetZoneText())
@@ -626,6 +620,11 @@ function pfMap:UpdateMinimap()
   local yRange = mapZoom / mapWidth * pfMap.drawlayer:GetWidth()/2 -- 16 as icon size
 
   local i = 0
+
+  -- hide existing nodes
+  for pins, pin in pairs(pfMap.mpins) do
+    pin:Hide()
+  end
 
   -- refresh all nodes
   for addon, _ in pairs(pfMap.nodes) do
