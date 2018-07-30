@@ -511,11 +511,11 @@ function pfMap:BuildNode(name, parent)
 end
 
 function pfMap:UpdateNode(frame, node, color, obj)
-  frame.layer = -1
+  frame.layer = node[frame.title] and frame.layer or -1
 
   for title, tab in pairs(node) do
     tab.layer = GetLayerByTexture(tab.texture)
-    if tab.layer > frame.layer then
+    if tab.layer > frame.layer and frame.title ~= tab.title then
       -- set title and texture to the entry with highest layer
       -- and add core information
       frame.layer     = tab.layer
@@ -550,11 +550,11 @@ function pfMap:UpdateNode(frame, node, color, obj)
       end
 
       frame:SetScript("OnClick", tab.func or pfMap.NodeClick)
+      frame:SetFrameLevel((obj == "minimap" and 0 or 112) + frame.layer)
     end
   end
 
   frame.node = node
-  frame:SetFrameLevel(112 + frame.layer)
 end
 
 function pfMap:UpdateNodes()
@@ -594,9 +594,21 @@ function pfMap:UpdateNodes()
   end
 end
 
+local coord_cache = {}
 function pfMap:UpdateMinimap()
   if pfQuest_config["minimapnodes"] == "0" then
     pfMap:Hide()
+    return
+  end
+
+  -- hide all minimap nodes while shift is pressed
+  if IsShiftKeyDown() and MouseIsOver(pfMap.drawlayer) then
+    this.xPlayer = nil
+
+    for id, pin in pairs(pfMap.mpins) do
+      pin:Hide()
+    end
+
     return
   end
 
@@ -616,8 +628,15 @@ function pfMap:UpdateMinimap()
   local mapZoom = minimap_zoom[minimap_indoor()][mZoom]
   local mapWidth = minimap_sizes[mapID] and minimap_sizes[mapID][1] or 0
   local mapHeight = minimap_sizes[mapID] and minimap_sizes[mapID][2] or 0
+
   local xRange = mapZoom / mapHeight * pfMap.drawlayer:GetHeight()/2 -- 16 as icon size
   local yRange = mapZoom / mapWidth * pfMap.drawlayer:GetWidth()/2 -- 16 as icon size
+
+  local xScale = mapZoom / mapWidth
+  local yScale = mapZoom / mapHeight
+
+  local xDraw = pfMap.drawlayer:GetWidth() / xScale / 100
+  local yDraw = pfMap.drawlayer:GetHeight() / yScale / 100
 
   local i = 0
 
@@ -627,20 +646,23 @@ function pfMap:UpdateMinimap()
   end
 
   -- refresh all nodes
-  for addon, _ in pairs(pfMap.nodes) do
-    if pfMap.nodes[addon][mapID] then
-      for coords, node in pairs(pfMap.nodes[addon][mapID]) do
-        local _, _, x, y = strfind(coords, "(.*)|(.*)")
-        x, y = x + 0, y + 0
+  for addon, data in pairs(pfMap.nodes) do
+    if data[mapID] then
+      for coords, node in pairs(data[mapID]) do
 
-        local xScale = mapZoom / mapWidth
-        local yScale = mapZoom / mapHeight
+        local x, y
+        if coord_cache[coords] then
+          x, y = coord_cache[coords][1], coord_cache[coords][2]
+        else
+          local _, _, strx, stry = strfind(coords, "(.*)|(.*)")
+          x, y = strx + 0, stry + 0
+          coord_cache[coords] = { x, y }
+        end
 
-        local xPos = ( xPlayer - x ) / 100 * pfMap.drawlayer:GetWidth() / xScale
-        local yPos = ( yPlayer - y ) / 100 * pfMap.drawlayer:GetHeight() / yScale
+        local xPos = ( xPlayer - x ) * xDraw
+        local yPos = ( yPlayer - y ) * yDraw
 
         local display = nil
-
         if pfUI.minimap then
           display = ( abs(xPos) + 8 < pfMap.drawlayer:GetWidth() / 2 and abs(yPos) + 8 < pfMap.drawlayer:GetHeight()/2 ) and true or nil
         else
@@ -657,13 +679,8 @@ function pfMap:UpdateMinimap()
 
           pfMap.mpins[i]:ClearAllPoints()
           pfMap.mpins[i]:SetPoint("CENTER", pfMap.drawlayer, "CENTER", -xPos, yPos)
-          pfMap.mpins[i]:SetFrameLevel(2)
           pfMap.mpins[i]:SetAlpha(alpha)
-          if IsShiftKeyDown() and MouseIsOver(pfMap.drawlayer) then
-            pfMap.mpins[i]:Hide()
-          else
-            pfMap.mpins[i]:Show()
-          end
+          pfMap.mpins[i]:Show()
 
           i = i + 1
         end
