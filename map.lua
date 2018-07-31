@@ -596,6 +596,10 @@ end
 
 local coord_cache = {}
 function pfMap:UpdateMinimap()
+  -- throttle minimap updates
+  if ( this.throttle or .2) > GetTime() then return else this.throttle = GetTime() + .1 end
+
+  -- check for disabled minimap nodes
   if pfQuest_config["minimapnodes"] == "0" then
     pfMap:Hide()
     return
