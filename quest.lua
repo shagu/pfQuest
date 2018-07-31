@@ -359,10 +359,10 @@ end
 local pfHookQuestLogTitleButton_OnClick = QuestLogTitleButton_OnClick
 QuestLogTitleButton_OnClick = function(button)
   local scrollFrame = EQL3_QuestLogListScrollFrame or ShaguQuest_QuestLogListScrollFrame or QuestLogListScrollFrame
-	local questIndex = this:GetID() + FauxScrollFrame_GetOffset(scrollFrame)
+  local questIndex = this:GetID() + FauxScrollFrame_GetOffset(scrollFrame)
   local questName, questLevel = GetQuestLogTitle(questIndex)
-	if IsShiftKeyDown() and not this.isHeader then
-		if ChatFrameEditBox:IsVisible() then
+  if IsShiftKeyDown() and not this.isHeader then
+    if ChatFrameEditBox:IsVisible() then
       if pfQuest_config["questlinks"] == "1" then
         local id = 0
         if pfQuest.questlog[questName] and pfQuest.questlog[questName].ids[1] then
