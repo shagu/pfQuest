@@ -550,7 +550,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
       end
 
       frame:SetScript("OnClick", tab.func or pfMap.NodeClick)
-      frame:SetFrameLevel((obj == "minimap" and 0 or 112) + frame.layer)
+      frame:SetFrameLevel((obj == "minimap" and 1 or 112) + frame.layer)
     end
   end
 
