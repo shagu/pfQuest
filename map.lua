@@ -515,7 +515,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
 
   for title, tab in pairs(node) do
     tab.layer = GetLayerByTexture(tab.texture)
-    if tab.layer > frame.layer then
+    if tab.layer > frame.layer and ( tab.texture ~= frame.texture or tab.title ~= frame.title ) then
       -- set title and texture to the entry with highest layer
       -- and add core information
       frame.layer     = tab.layer
