@@ -521,7 +521,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
 
       frame.updateTexture = (frame.texture ~= tab.texture)
       frame.updateVertex = (frame.vertex ~= tab.vertex )
-      frame.updateColor = (frame.color ~= (tab.color or tab.title))
+      frame.updateColor = (frame.color ~= tab.color)
       frame.updateLayer = (frame.layer ~= tab.layer)
 
       -- set title and texture to the entry with highest layer
