@@ -515,7 +515,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
 
   for title, tab in pairs(node) do
     tab.layer = GetLayerByTexture(tab.texture)
-    if tab.layer > frame.layer and ( tab.texture ~= frame.texture or tab.title ~= frame.title ) then
+    if tab.layer > frame.layer then
       -- set title and texture to the entry with highest layer
       -- and add core information
       frame.layer     = tab.layer
@@ -524,34 +524,34 @@ function pfMap:UpdateNode(frame, node, color, obj)
       frame.spawntype = tab.spawntype
       frame.respawn   = tab.respawn
       frame.level     = tab.level
-      frame.color     = tab[color] or tab.title
+      frame.color     = tab.color or tab.title
       frame.questid   = tab.questid
       frame.texture   = tab.texture
+      frame.vertex    = tab.vertex
       frame.title     = title
-
-      if tab.texture then
-        frame.tex:SetTexture(tab.texture)
-        frame.tex:SetVertexColor(1,1,1)
-      else
-        if obj == "minimap" and pfQuest_config["cutoutminimap"] == "1" then
-          frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\nodecut")
-        else
-          frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\node")
-        end
-        local r,g,b = str2rgb(frame.color)
-        frame.tex:SetVertexColor(r,g,b,1)
-      end
-
-      if tab.texture and tab.vertex then
-        local r, g, b = unpack(tab.vertex)
-        if r > 0 or g > 0 or b > 0 then
-          frame.tex:SetVertexColor(r, g, b, 1)
-        end
-      end
 
       frame:SetScript("OnClick", tab.func or pfMap.NodeClick)
       frame:SetFrameLevel((obj == "minimap" and 1 or 112) + frame.layer)
     end
+  end
+
+  if frame.texture then
+    frame.tex:SetTexture(frame.texture)
+    frame.tex:SetVertexColor(1,1,1)
+    if frame.vertex then
+      local r, g, b = unpack(frame.vertex)
+      if r > 0 or g > 0 or b > 0 then
+        frame.tex:SetVertexColor(r, g, b, 1)
+      end
+    end
+  elseif frame.color ~= color then
+    if obj == "minimap" and pfQuest_config["cutoutminimap"] == "1" then
+      frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\nodecut")
+    else
+      frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\node")
+    end
+    local r,g,b = str2rgb(frame.color)
+    frame.tex:SetVertexColor(r,g,b,1)
   end
 
   frame.node = node
