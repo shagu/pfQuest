@@ -511,11 +511,19 @@ function pfMap:BuildNode(name, parent)
 end
 
 function pfMap:UpdateNode(frame, node, color, obj)
-  frame.layer = node[frame.title] and frame.layer or -1
+
+  -- reset layer
+  frame.layer = 0
 
   for title, tab in pairs(node) do
     tab.layer = GetLayerByTexture(tab.texture)
     if tab.layer > frame.layer then
+
+      frame.updateTexture = (frame.texture ~= tab.texture)
+      frame.updateVertex = (frame.vertex ~= tab.vertex )
+      frame.updateColor = (frame.color ~= (tab.color or tab.title))
+      frame.updateLayer = (frame.layer ~= tab.layer)
+
       -- set title and texture to the entry with highest layer
       -- and add core information
       frame.layer     = tab.layer
@@ -529,22 +537,23 @@ function pfMap:UpdateNode(frame, node, color, obj)
       frame.texture   = tab.texture
       frame.vertex    = tab.vertex
       frame.title     = title
-
-      frame:SetScript("OnClick", tab.func or pfMap.NodeClick)
-      frame:SetFrameLevel((obj == "minimap" and 1 or 112) + frame.layer)
+      frame.func      = tab.func
     end
   end
 
-  if frame.texture then
+  if ( frame.updateTexture or frame.updateVertex ) and frame.texture then
     frame.tex:SetTexture(frame.texture)
     frame.tex:SetVertexColor(1,1,1)
-    if frame.vertex then
+
+    if frame.updateVertex and frame.vertex then
       local r, g, b = unpack(frame.vertex)
       if r > 0 or g > 0 or b > 0 then
         frame.tex:SetVertexColor(r, g, b, 1)
       end
     end
-  else
+  end
+
+  if ( frame.updateColor or frame.updateTexture ) and not frame.texture then
     if obj == "minimap" and pfQuest_config["cutoutminimap"] == "1" then
       frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\nodecut")
     else
@@ -552,6 +561,14 @@ function pfMap:UpdateNode(frame, node, color, obj)
     end
     local r,g,b = str2rgb(frame.color)
     frame.tex:SetVertexColor(r,g,b,1)
+  end
+
+  if frame.updateLayer then
+    frame:SetFrameLevel((obj == "minimap" and 1 or 112) + frame.layer)
+  end
+
+  if frame.updateTexture or frame.updateVertex or frame.updateColor or frame.updateLayer then
+    frame:SetScript("OnClick", (frame.func or pfMap.NodeClick))
   end
 
   frame.node = node
