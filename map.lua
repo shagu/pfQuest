@@ -544,7 +544,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
         frame.tex:SetVertexColor(r, g, b, 1)
       end
     end
-  elseif frame.color ~= color then
+  else
     if obj == "minimap" and pfQuest_config["cutoutminimap"] == "1" then
       frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\nodecut")
     else
