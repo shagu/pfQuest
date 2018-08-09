@@ -78,6 +78,5 @@ config.lua
 slashcmd.lua
 database.lua
 map.lua
-minimap.lua
 quest.lua
 browser.lua
