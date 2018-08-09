@@ -140,7 +140,7 @@ function pfDatabase:GetRaceMaskByID(id, db)
       -- get quest starter faction
       if (quests[id]["start"]["U"]) then
         for _, startUnitId in ipairs(quests[id]["start"]["U"]) do
-          if (units[startUnitId]["fac"]) then
+          if units[startUnitId]["fac"] and factionMap[units[startUnitId]["fac"]] then
             questStartRaceMask = bit.bor(factionMap[units[startUnitId]["fac"]])
           end
         end
@@ -149,7 +149,7 @@ function pfDatabase:GetRaceMaskByID(id, db)
       -- get quest object starter faction
       if (quests[id]["start"]["O"]) then
         for _, startObjectId in ipairs(quests[id]["start"]["O"]) do
-          if (objects[startObjectId]["fac"]) then
+          if objects[startObjectId]["fac"] and factionMap[objects[startObjectId]["fac"]] then
             questStartRaceMask = bit.bor(factionMap[objects[startObjectId]["fac"]])
           end
         end
