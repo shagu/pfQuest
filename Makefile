@@ -18,6 +18,7 @@ enUS koKR frFR deDE zhCN esES ruRU:
 	cp -rf db/$@ release/$@/pfQuest/db
 	cp -rf browser.lua database.lua map.lua quest.lua config.lua slashcmd.lua pfQuest.toc LICENSE README.md release/$@/pfQuest/
 	sed -i "s/NORELEASE/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
+	sed -i -r '/'"$@"'/!s/db\\.*\\.*\.lua/# N\/A/g' release/$@/pfQuest/pfQuest.toc
 	echo $(GITREV) > release/$@/pfQuest/gitrev.txt
 
 noLoc:
@@ -46,6 +47,7 @@ noLoc:
 
 	cp -rf browser.lua database.lua map.lua quest.lua config.lua slashcmd.lua pfQuest.toc LICENSE README.md release/$@/pfQuest/
 	sed -i "s/NORELEASE/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
+	sed -i -r '/enUS|professions|zones/!s/db\\.*\\.*\.lua/# N\/A/g' release/$@/pfQuest/pfQuest.toc
 	echo $(GITREV) > release/$@/pfQuest/gitrev.txt
 
 database:
