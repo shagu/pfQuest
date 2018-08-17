@@ -769,7 +769,7 @@ function pfDatabase:GetQuestIDs(qid, deep)
   for id, data in pairs(pfDB["quests"]["loc"]) do
     local score = 0
 
-    if data.T == title or ( deep and strsub(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["O"]),0,10) == strsub(objective,0,10)) then
+    if quests[id] and (data.T == title or ( deep and strsub(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["O"]),0,10) == strsub(objective,0,10))) then
       if quests[id]["lvl"] == level then
         score = score + 1
       end
