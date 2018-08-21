@@ -532,12 +532,17 @@ function pfMap:UpdateNode(frame, node, color, obj)
       frame.spawntype = tab.spawntype
       frame.respawn   = tab.respawn
       frame.level     = tab.level
-      frame.color     = tab.color or tab.title
       frame.questid   = tab.questid
       frame.texture   = tab.texture
       frame.vertex    = tab.vertex
       frame.title     = title
       frame.func      = tab.func
+
+      if pfQuest_config["colorbyspawn"] == "1" then
+        frame.color = tab.spawn or tab.title
+      else
+        frame.color = tab.title
+      end
     end
   end
 
