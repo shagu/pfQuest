@@ -141,7 +141,10 @@ local function ResultButtonUpdate()
 
     local _, _, itemQuality = GetItemInfo(this.id)
     if itemQuality then
-      this.itemColor = "|c" .. string.format("%02x%02x%02x%02x", 255, ITEM_QUALITY_COLORS[itemQuality].r * 255, ITEM_QUALITY_COLORS[itemQuality].g * 255, ITEM_QUALITY_COLORS[itemQuality].b * 255)
+      local r = ceil(ITEM_QUALITY_COLORS[itemQuality].r*255)
+      local g = ceil(ITEM_QUALITY_COLORS[itemQuality].g*255)
+      local b = ceil(ITEM_QUALITY_COLORS[itemQuality].b*255)
+      this.itemColor = "|c" .. string.format("ff%02x%02x%02x", r, g, b)
     end
   end
 
