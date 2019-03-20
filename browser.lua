@@ -2,6 +2,7 @@
 pfBrowser_fav = {["units"] = {}, ["objects"] = {}, ["items"] = {}, ["quests"] = {}}
 
 local tooltip_limit = 5
+local search_limit = 512
 
 -- add database shortcuts
 local items = pfDB["items"]["data"]
@@ -482,7 +483,21 @@ local function RefreshView(i, key, caption)
   pfBrowser.tabs[key].list:GetParent():SetVerticalScroll(0)
   pfBrowser.tabs[key].list:GetParent():UpdateScrollState()
 
-  pfBrowser.tabs[key].button:SetText(caption .. " " .. "|cffaaaaaa(" .. i .. ")")
+  if not pfBrowser.tabs[key].list.warn then
+    pfBrowser.tabs[key].list.warn = pfBrowser.tabs[key].list:CreateFontString("Caption", "LOW", "GameFontWhite")
+    pfBrowser.tabs[key].list.warn:SetTextColor(1,.2,.2,1)
+    pfBrowser.tabs[key].list.warn:SetJustifyH("CENTER")
+    pfBrowser.tabs[key].list.warn:SetPoint("TOP", 5, -5)
+    pfBrowser.tabs[key].list.warn:SetText("!! |cffffffffToo many entries. Only " .. search_limit .. " results are shown|r !!")
+  end
+
+  if i >= search_limit then
+    pfBrowser.tabs[key].list.warn:Show()
+  else
+    pfBrowser.tabs[key].list.warn:Hide()
+  end
+
+  pfBrowser.tabs[key].button:SetText(caption .. " " .. "|cffaaaaaa(" .. (i >= search_limit and "*" or i) .. ")")
   for j=i+1, table.getn(pfBrowser.tabs[key].buttons) do
     if pfBrowser.tabs[key].buttons[j] then
       pfBrowser.tabs[key].buttons[j]:Hide()
@@ -693,11 +708,11 @@ pfBrowser.input:SetScript("OnTextChanged", function()
     for id, text in pairs(data) do
       i = i + 1
 
+      if i >= search_limit then break end
       pfBrowser.tabs[searchType].buttons[i] = pfBrowser.tabs[searchType].buttons[i] or ResultButtonCreate(i, searchType)
       pfBrowser.tabs[searchType].buttons[i].id = id
       pfBrowser.tabs[searchType].buttons[i].name = text
       pfBrowser.tabs[searchType].buttons[i]:Reload()
-      --if i >= search_limit then break end
     end
 
     RefreshView(i, searchType, caption)
