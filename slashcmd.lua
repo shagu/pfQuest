@@ -16,6 +16,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff clean |cffcccccc - clean map")
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff locale |cffcccccc - display the addon locales")
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff meta <relation> [min, [max]] |cffcccccc - show related objects on the map")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff scan |cffcccccc - scan the server for items")
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc ->|cffffffff Available relations: |cff33ffccchests|r, |cff33ffccherbs|r, |cff33ffccmines|r")
   end
 
@@ -101,4 +102,8 @@ SlashCmdList["PFDB"] = function(input, editbox)
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccLocales|r:" .. pfDatabase.dbstring)
   end
 
+  -- argument: scan
+  if (arg1 == "scan") then
+    pfDatabase:ScanServer()
+  end
 end

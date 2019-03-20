@@ -880,3 +880,82 @@ function pfDatabase:BrowserSearch(query, searchType)
     return pfBrowser_fav[searchType], -1
   end
 end
+
+local function LoadCustomData(always)
+  -- table.getn doesn't work here :/
+  local icount = 0
+  for _,_ in pairs(pfQuest_server["items"]) do
+    icount = icount + 1
+  end
+
+  if icount > 0 or always then
+    for id, name in pairs(pfQuest_server["items"]) do
+      pfDB["items"]["loc"][id] = name
+    end
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest: |cff33ffcc" .. icount .. "|cffffffff custom items loaded.")
+  end
+end
+
+local pfServerScan = CreateFrame("Frame", "pfServerItemScan", UIParent)
+pfServerScan:SetWidth(200)
+pfServerScan:SetHeight(100)
+pfServerScan:SetPoint("TOP", 0, 0)
+pfServerScan:Hide()
+
+pfServerScan.scanID = 1
+pfServerScan.max = 1000000
+pfServerScan.perloop = 100
+
+pfServerScan.header = pfServerScan:CreateFontString("Caption", "LOW", "GameFontWhite")
+pfServerScan.header:SetFont(STANDARD_TEXT_FONT, 13, "OUTLINE")
+pfServerScan.header:SetJustifyH("CENTER")
+pfServerScan.header:SetPoint("CENTER", 0, 0)
+
+pfServerScan:RegisterEvent("VARIABLES_LOADED")
+pfServerScan:SetScript("OnEvent", function()
+  pfQuest_server = pfQuest_server or { }
+  pfQuest_server["items"] = pfQuest_server["items"] or {}
+  LoadCustomData()
+end)
+
+pfServerScan:SetScript("OnHide", function()
+  ItemRefTooltip:Show()
+  LoadCustomData(true)
+end)
+
+pfServerScan:SetScript("OnShow", function()
+  this.scanID = 1
+  pfQuest_server["items"] = {}
+  DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest: Server scan started...")
+end)
+
+pfServerScan:SetScript("OnUpdate", function()
+  if this.scanID >= this.max then
+    this:Hide()
+    return
+  end
+
+  -- scan X items per update
+  for i=this.scanID,this.scanID+this.perloop do
+    pfServerScan.header:SetText("Scanning server for items... " .. floor(100*i/this.max) .. "%")
+    local link = "item:" .. i .. ":0:0:0"
+
+    ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
+    ItemRefTooltip:SetHyperlink(link)
+
+    if ItemRefTooltipTextLeft1 and ItemRefTooltipTextLeft1:IsVisible() then
+      local name = ItemRefTooltipTextLeft1:GetText()
+      ItemRefTooltip:Hide()
+
+      if not pfDB["items"]["loc"][i] then
+        pfQuest_server["items"][i] = name
+      end
+    end
+  end
+
+  this.scanID = this.scanID+this.perloop
+end)
+
+function pfDatabase:ScanServer()
+  pfServerScan:Show()
+end
