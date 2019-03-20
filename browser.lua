@@ -13,7 +13,7 @@ local zones = pfDB["zones"]["loc"]
 
 -- result buttons
 local function StartAndFinish(questData, startOrFinish, types)
-  local strings = {["start"]="Quest Start: ", ["end"]="Quest End: "}
+  local strings = {["start"]=pfQuest_Loc["Quest Start"]..": ", ["end"]=pfQuest_Loc["Quest End"] .. ": "}
   for _, key in ipairs(types) do
     if questData[startOrFinish] and questData[startOrFinish][key] then
       local typeName = {["U"]="units",["O"]="objects",["I"]="items"}
@@ -76,12 +76,12 @@ local function ResultButtonEnter()
     if questData.lvl then
       local questlevel = tonumber(questData.lvl)
       local color = GetDifficultyColor(questlevel)
-      GameTooltip:AddLine("|cffffffffQuest Level: |r" .. questlevel, color.r, color.g, color.b)
+      GameTooltip:AddLine("|cffffffff" .. pfQuest_Loc["Quest Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
     end
     if questData.min then
       local questlevel = tonumber(questData.min)
       local color = GetDifficultyColor(questlevel)
-      GameTooltip:AddLine("|cffffffffRequired Level: |r" .. questlevel, color.r, color.g, color.b)
+      GameTooltip:AddLine("|cffffffff" .. pfQuest_Loc["Required Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
     end
 
     GameTooltip:Show()
@@ -101,21 +101,21 @@ local function ResultButtonEnter()
         GameTooltip:AddDoubleLine("Level", unitData.lvl, 1,1,.8, 1,1,1)
       end
 
-      local reactionStringA = "|c00ff0000Hostile|r"
-      local reactionStringH = "|c00ff0000Hostile|r"
+      local reactionStringA = "|c00ff0000" .. pfQuest_Loc["Hostile"] .. "|r"
+      local reactionStringH = "|c00ff0000" .. pfQuest_Loc["Hostile"] .. "|r"
       if unitData.fac then
         if unitData.fac == "AH" then
-          reactionStringA = "|c0000ff00Friendly|r"
-          reactionStringH = "|c0000ff00Friendly|r"
+          reactionStringA = "|c0000ff00" .. pfQuest_Loc["Friendly"] .. "|r"
+          reactionStringH = "|c0000ff00" .. pfQuest_Loc["Friendly"] .. "|r"
         elseif unitData.fac == "A" then
-          reactionStringA = "|c0000ff00Friendly|r"
+          reactionStringA = "|c0000ff00" .. pfQuest_Loc["Friendly"] .. "|r"
         elseif unitData.fac == "H" then
-          reactionStringH = "|c0000ff00Friendly|r"
+          reactionStringH = "|c0000ff00" .. pfQuest_Loc["Friendly"] .. "|r"
         end
       end
-      GameTooltip:AddLine("\nReaction", 1,1,.8)
-      GameTooltip:AddDoubleLine("Alliance", reactionStringA, 1,1,1, 0,0,0)
-      GameTooltip:AddDoubleLine("Horde", reactionStringH, 1,1,1, 0,0,0)
+      GameTooltip:AddLine("\n" .. pfQuest_Loc["Reaction"], 1,1,.8)
+      GameTooltip:AddDoubleLine(pfQuest_Loc["Alliance"], reactionStringA, 1,1,1, 0,0,0)
+      GameTooltip:AddDoubleLine(pfQuest_Loc["Horde"], reactionStringH, 1,1,1, 0,0,0)
     end
     GameTooltip:AddLine("\nLocation", 1,1,.8)
     if pfDB[this.btype]["data"][id] and pfDB[this.btype]["data"][id]["coords"] then
@@ -248,7 +248,7 @@ local function ResultButtonEnterSpecial()
   -- unit
   if this.buttonType == "U" then
     if items[id]["U"] then
-      GameTooltip:SetText("Looted from", .3, 1, .8)
+      GameTooltip:SetText(pfQuest_Loc["Looted from"], .3, 1, .8)
       for unitID, chance in pairs(items[id]["U"]) do
         count = count + 1
         if count > tooltip_limit then
@@ -268,7 +268,7 @@ local function ResultButtonEnterSpecial()
   -- object
   elseif this.buttonType == "O" then
     if items[id]["O"] then
-      GameTooltip:SetText("Looted from", .3, 1, .8)
+      GameTooltip:SetText(pfQuest_Loc["Looted from"], .3, 1, .8)
       for objectID, chance in pairs(items[id]["O"]) do
         count = count + 1
         if count > tooltip_limit then
@@ -288,7 +288,7 @@ local function ResultButtonEnterSpecial()
   -- vendor
   elseif this.buttonType == "V" then
     if items[id]["V"] then
-      GameTooltip:SetText("Sold by", .3, 1, .8)
+      GameTooltip:SetText(pfQuest_Loc["Sold by"], .3, 1, .8)
       for unitID, sellcount in pairs(items[id]["V"]) do
         count = count + 1
         if count > tooltip_limit then
@@ -305,7 +305,7 @@ local function ResultButtonEnterSpecial()
   end
 
   if count > tooltip_limit then
-    GameTooltip:AddLine("\nand "..(count - tooltip_limit).." others.",.8,.8,.8)
+    GameTooltip:AddLine("\n" .. pfQuest_Loc["and"] .. (count - tooltip_limit).." " .. pfQuest_Loc["others"],.8,.8,.8)
   end
   GameTooltip:Show()
 end
@@ -488,7 +488,7 @@ local function RefreshView(i, key, caption)
     pfBrowser.tabs[key].list.warn:SetTextColor(1,.2,.2,1)
     pfBrowser.tabs[key].list.warn:SetJustifyH("CENTER")
     pfBrowser.tabs[key].list.warn:SetPoint("TOP", 5, -5)
-    pfBrowser.tabs[key].list.warn:SetText("!! |cffffffffToo many entries. Only " .. search_limit .. " results are shown|r !!")
+    pfBrowser.tabs[key].list.warn:SetText("!! |cffffffff" .. pfQuest_Loc["Too many entries. Results shown"] .. ": " .. search_limit .. "|r !!")
   end
 
   if i >= search_limit then
@@ -560,9 +560,9 @@ end)
 pfBrowserIcon:SetScript("OnEnter", function()
   GameTooltip:SetOwner(this, ANCHOR_BOTTOMLEFT)
   GameTooltip:SetText("pfQuest")
-  GameTooltip:AddDoubleLine("Left-Click", "Open Browser", 1, 1, 1, 1, 1, 1)
-  GameTooltip:AddDoubleLine("Right-Click", "Open Configuration", 1, 1, 1, 1, 1, 1)
-  GameTooltip:AddDoubleLine("Shift-Click", "Move Button", 1, 1, 1, 1, 1, 1)
+  GameTooltip:AddDoubleLine(pfQuest_Loc["Left-Click"], pfQuest_Loc["Open Browser"], 1, 1, 1, 1, 1, 1)
+  GameTooltip:AddDoubleLine(pfQuest_Loc["Right-Click"], pfQuest_Loc["Open Configuration"], 1, 1, 1, 1, 1, 1)
+  GameTooltip:AddDoubleLine(pfQuest_Loc["Shift-Click"], pfQuest_Loc["Move Button"], 1, 1, 1, 1, 1, 1)
   GameTooltip:Show()
 end)
 
@@ -667,7 +667,7 @@ end)
 pfBrowser.clean.text = pfBrowser.clean:CreateFontString("Caption", "LOW", "GameFontWhite")
 pfBrowser.clean.text:SetAllPoints(pfBrowser.clean)
 pfBrowser.clean.text:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
-pfBrowser.clean.text:SetText("Clean Map")
+pfBrowser.clean.text:SetText(pfQuest_Loc["Clean Map"])
 pfUI.api.SkinButton(pfBrowser.clean)
 
 CreateBrowseWindow("units", "pfQuestBrowserUnits", pfBrowser, "BOTTOMLEFT", 5, 5)
@@ -680,18 +680,18 @@ SelectView(pfBrowser.tabs["units"])
 pfBrowser.input = CreateFrame("EditBox", "pfQuestBrowserSearch", pfBrowser)
 pfBrowser.input:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
 pfBrowser.input:SetAutoFocus(false)
-pfBrowser.input:SetText("Search")
+pfBrowser.input:SetText(pfQuest_Loc["Search"])
 pfBrowser.input:SetJustifyH("LEFT")
 pfBrowser.input:SetPoint("TOPLEFT", pfBrowser, "TOPLEFT", 5, -30)
 pfBrowser.input:SetPoint("BOTTOMRIGHT", pfBrowser, "TOPRIGHT", -100, -55)
 pfBrowser.input:SetTextInsets(10,10,5,5)
 pfBrowser.input:SetScript("OnEscapePressed", function() this:ClearFocus() end)
 pfBrowser.input:SetScript("OnEditFocusGained", function()
-  if this:GetText() == "Search" then this:SetText("") end
+  if this:GetText() == pfQuest_Loc["Search"] then this:SetText("") end
 end)
 
 pfBrowser.input:SetScript("OnEditFocusLost", function()
-  if this:GetText() == "" then this:SetText("Search") end
+  if this:GetText() == "" then this:SetText(pfQuest_Loc["Search"]) end
 end)
 
 -- This script updates all the search tabs when the search text changes

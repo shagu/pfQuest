@@ -238,7 +238,7 @@ function pfMap:ShowTooltip(meta, tooltip)
                   foundObjective = true
                   local r,g,b = pfMap.tooltip:GetColor(objNum, objNeeded)
                   local sellcount = tonumber(meta["sellcount"]) > 0 and " |cff555555[|cffcccccc" .. meta["sellcount"] .. "x" .. "|cff555555]" or ""
-                  tooltip:AddLine("|cffaaaaaa- |cffffffffBuy: |r" .. itemName .. ": " .. objNum .. "/" .. objNeeded .. sellcount, r, g, b)
+                  tooltip:AddLine("|cffaaaaaa- |cffffffff" .. pfQuest_Loc["Buy"] .. ": |r" .. itemName .. ": " .. objNum .. "/" .. objNeeded .. sellcount, r, g, b)
                 end
               end
             end
@@ -246,8 +246,8 @@ function pfMap:ShowTooltip(meta, tooltip)
         end
 
         if not foundObjective and meta["qlvl"] and meta["texture"] then
-          local qlvlstr = "Level: " .. pfMap:HexDifficultyColor(meta["qlvl"]) .. meta["qlvl"] .. "|r"
-          local qminstr = meta["qmin"] and " / Required: " .. pfMap:HexDifficultyColor(meta["qmin"], true) .. meta["qmin"] .. "|r"  or ""
+          local qlvlstr = pfQuest_Loc["Level"] .. ": " .. pfMap:HexDifficultyColor(meta["qlvl"]) .. meta["qlvl"] .. "|r"
+          local qminstr = meta["qmin"] and " / " .. pfQuest_Loc["Required"] .. ": " .. pfMap:HexDifficultyColor(meta["qmin"], true) .. meta["qmin"] .. "|r"  or ""
           tooltip:AddLine("|cffaaaaaa- |r" .. qlvlstr .. qminstr , .8,.8,.8)
         end
       end
@@ -263,7 +263,7 @@ function pfMap:ShowTooltip(meta, tooltip)
           catchFallback = true
           local dr,dg,db = pfMap.tooltip:GetColor(tonumber(meta["droprate"]), 100)
           local lootcolor = string.format("%02x%02x%02x", dr * 255,dg * 255, db * 255)
-          tooltip:AddLine("|cffaaaaaa- |rLoot: " .. item .. " |cff555555[|cff" .. lootcolor .. meta["droprate"] .. "%|cff555555]", 1, .5, .5)
+          tooltip:AddLine("|cffaaaaaa- |r" .. pfQuest_Loc["Loot"] .. ": " .. item .. " |cff555555[|cff" .. lootcolor .. meta["droprate"] .. "%|cff555555]", 1, .5, .5)
         end
       end
 
@@ -271,18 +271,18 @@ function pfMap:ShowTooltip(meta, tooltip)
         for mid, item in pairs(meta["item"]) do
           catchFallback = true
           local sellcount = tonumber(meta["sellcount"]) > 0 and " |cff555555[|cffcccccc" .. meta["sellcount"] .. "x" .. "|cff555555]" or ""
-          tooltip:AddLine("|cffaaaaaa- |rBuy: " .. item .. sellcount, 1, .5, .5)
+          tooltip:AddLine("|cffaaaaaa- |r" .. pfQuest_Loc["Buy"] .. ": " .. item .. sellcount, 1, .5, .5)
         end
       end
 
       if not catchFallback and meta["spawn"] and not meta["texture"] then
         catchFallback = true
-        tooltip:AddLine("|cffaaaaaa- |rKill: " .. meta["spawn"], 1,.5,.5)
+        tooltip:AddLine("|cffaaaaaa- |r" .. pfQuest_Loc["Kill"] .. ": " .. meta["spawn"], 1,.5,.5)
       end
 
       if not catchFallback and meta["texture"] and meta["qlvl"] then
         local qlvlstr = "Level: " .. pfMap:HexDifficultyColor(meta["qlvl"]) .. meta["qlvl"] .. "|r"
-        local qminstr = meta["qmin"] and " / Required: " .. pfMap:HexDifficultyColor(meta["qmin"], true) .. meta["qmin"] .. "|r"  or ""
+        local qminstr = meta["qmin"] and " / " .. pfQuest_Loc["Required"] .. ": " .. pfMap:HexDifficultyColor(meta["qmin"], true) .. meta["qmin"] .. "|r"  or ""
         tooltip:AddLine("|cffaaaaaa- |r" .. qlvlstr .. qminstr , .8,.8,.8)
       end
     end
@@ -303,11 +303,11 @@ function pfMap:ShowTooltip(meta, tooltip)
     if meta["sellcount"] then
       local item = meta["itemlink"] or "[" .. meta["item"][1] .. "]"
       local sellcount = tonumber(meta["sellcount"]) > 0 and " |cff555555[|cffcccccc" .. meta["sellcount"] .. "x" .. "|cff555555]" or ""
-      tooltip:AddLine("Vendor: " .. item .. sellcount, 1,1,1)
+      tooltip:AddLine(pfQuest_Loc["Vendor"] .. ": " .. item .. sellcount, 1,1,1)
     elseif meta["item"][1] then
       local item = meta["itemlink"] or "[" .. meta["item"][1] .. "]"
       local r,g,b = pfMap.tooltip:GetColor(tonumber(meta["droprate"]), 100)
-      tooltip:AddLine("|cffffffffLoot: " .. item ..  " |cff555555[|r" .. meta["droprate"] .. "%|cff555555]", r,g,b)
+      tooltip:AddLine("|cffffffff" .. pfQuest_Loc["Loot"] .. ": " .. item ..  " |cff555555[|r" .. meta["droprate"] .. "%|cff555555]", r,g,b)
     end
   end
 
@@ -482,9 +482,9 @@ function pfMap:NodeEnter()
   local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
   tooltip:SetOwner(this, ANCHOR_BOTTOMLEFT)
   tooltip:SetText(this.spawn..(pfQuest_config.showids == "1" and " |cffcccccc("..this.spawnid..")|r" or ""), .3, 1, .8)
-  tooltip:AddDoubleLine("Level:", (this.level or UNKNOWN), .8,.8,.8, 1,1,1)
-  tooltip:AddDoubleLine("Type:", (this.spawntype or UNKNOWN), .8,.8,.8, 1,1,1)
-  tooltip:AddDoubleLine("Respawn:", (this.respawn or UNKNOWN), .8,.8,.8, 1,1,1)
+  tooltip:AddDoubleLine(pfQuest_Loc["Level"] .. ":", (this.level or UNKNOWN), .8,.8,.8, 1,1,1)
+  tooltip:AddDoubleLine(pfQuest_Loc["Type"] .. ":", (this.spawntype or UNKNOWN), .8,.8,.8, 1,1,1)
+  tooltip:AddDoubleLine(pfQuest_Loc["Respawn"] .. ":", (this.respawn or UNKNOWN), .8,.8,.8, 1,1,1)
 
   for title, meta in pairs(this.node) do
     pfMap:ShowTooltip(meta, tooltip)

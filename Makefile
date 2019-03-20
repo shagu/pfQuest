@@ -54,3 +54,6 @@ database:
 	$(MAKE) -C toolbox/ all
 
 rebuild: database all
+
+locales:
+	toolbox/find_locales.sh

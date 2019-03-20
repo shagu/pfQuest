@@ -73,6 +73,9 @@ db\ruRU\professions.lua
 # core api
 compat\pfUI.lua
 
+# locales
+locales.lua
+
 # main
 config.lua
 slashcmd.lua

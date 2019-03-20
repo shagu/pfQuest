@@ -16,7 +16,7 @@ pfQuest:SetScript("OnEvent", function()
   if event == "ADDON_LOADED" then
     if arg1 == "pfQuest" then
       if tostring(GetAddOnMetadata("pfQuest", "Version")) == "NORELEASE" then
-        DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccWARNING:|r You're using a development snapshot of pfQuest which leads to a higher RAM-Usage and increased loading times. Please choose an official release instead: https://shagu.org/pfQuest")
+        DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccWARNING:|r " .. pfQuest_Loc["You're using a development snapshot of pfQuest which leads to a higher RAM-Usage and increased loading times. Please choose an official release instead: https://shagu.org/pfQuest"])
       end
 
       pfQuest:AddQuestLogIntegration()
@@ -181,7 +181,7 @@ function pfQuest:AddQuestLogIntegration()
       pfUI.chat.urlcopy.text:SetText(questurl .. (this:GetID() or 0))
       pfUI.chat.urlcopy:Show()
     else
-      DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest Online Search:|cffcccccc " .. questurl .. (this:GetID() or 0))
+      DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffff" .. pfQuest_Loc["Online quest search"] .. ":|cffcccccc " .. questurl .. (this:GetID() or 0))
     end
   end)
 
@@ -193,7 +193,7 @@ function pfQuest:AddQuestLogIntegration()
   pfQuest.buttonShow = pfQuest.buttonShow or CreateFrame("Button", "pfQuestShow", dockFrame, "UIPanelButtonTemplate")
   pfQuest.buttonShow:SetWidth(70)
   pfQuest.buttonShow:SetHeight(20)
-  pfQuest.buttonShow:SetText("Show")
+  pfQuest.buttonShow:SetText(pfQuest_Loc["Show"])
   pfQuest.buttonShow:SetPoint("TOP", dockTitle, "TOP", -110, 0)
   pfQuest.buttonShow:SetScript("OnClick", function()
     local questIndex = GetQuestLogSelection()
@@ -211,7 +211,7 @@ function pfQuest:AddQuestLogIntegration()
   pfQuest.buttonHide = pfQuest.buttonHide or CreateFrame("Button", "pfQuestHide", dockFrame, "UIPanelButtonTemplate")
   pfQuest.buttonHide:SetWidth(70)
   pfQuest.buttonHide:SetHeight(20)
-  pfQuest.buttonHide:SetText("Hide")
+  pfQuest.buttonHide:SetText(pfQuest_Loc["Hide"])
   pfQuest.buttonHide:SetPoint("TOP", dockTitle, "TOP", -37, 0)
   pfQuest.buttonHide:SetScript("OnClick", function()
     local questIndex = GetQuestLogSelection()
@@ -225,7 +225,7 @@ function pfQuest:AddQuestLogIntegration()
   pfQuest.buttonClean = pfQuest.buttonClean or CreateFrame("Button", "pfQuestClean", dockFrame, "UIPanelButtonTemplate")
   pfQuest.buttonClean:SetWidth(70)
   pfQuest.buttonClean:SetHeight(20)
-  pfQuest.buttonClean:SetText("Clean")
+  pfQuest.buttonClean:SetText(pfQuest_Loc["Clean"])
   pfQuest.buttonClean:SetPoint("TOP", dockTitle, "TOP", 37, 0)
   pfQuest.buttonClean:SetScript("OnClick", function()
     pfMap:DeleteNode("PFQUEST")
@@ -235,7 +235,7 @@ function pfQuest:AddQuestLogIntegration()
   pfQuest.buttonReset = pfQuest.buttonReset or CreateFrame("Button", "pfQuestHide", dockFrame, "UIPanelButtonTemplate")
   pfQuest.buttonReset:SetWidth(70)
   pfQuest.buttonReset:SetHeight(20)
-  pfQuest.buttonReset:SetText("Reset")
+  pfQuest.buttonReset:SetText(pfQuest_Loc["Reset"])
   pfQuest.buttonReset:SetPoint("TOP", dockTitle, "TOP", 110, 0)
   pfQuest.buttonReset:SetScript("OnClick", function()
     pfQuest:ResetAll()
@@ -260,7 +260,7 @@ function pfQuest:AddWorldMapIntegration()
   function pfQuest.mapButton:UpdateMenu()
     local function CreateEntries()
       local info = {}
-      info.text = "All Quests"
+      info.text = pfQuest_Loc["All Quests"]
       info.checked = false
       info.func = function()
         UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
@@ -270,7 +270,7 @@ function pfQuest:AddWorldMapIntegration()
       UIDropDownMenu_AddButton(info)
 
       local info = {}
-      info.text = "Tracked Quests"
+      info.text = pfQuest_Loc["Tracked Quests"]
       info.checked = false
       info.func = function()
         UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
@@ -280,7 +280,7 @@ function pfQuest:AddWorldMapIntegration()
       UIDropDownMenu_AddButton(info)
 
       local info = {}
-      info.text = "Manual Selection"
+      info.text = pfQuest_Loc["Manual Selection"]
       info.checked = false
       info.func = function()
         UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
@@ -290,7 +290,7 @@ function pfQuest:AddWorldMapIntegration()
       UIDropDownMenu_AddButton(info)
 
       local info = {}
-      info.text = "Hide Quests"
+      info.text = pfQuest_Loc["Hide Quests"]
       info.checked = false
       info.func = function()
         UIDropDownMenu_SetSelectedID(pfQuest.mapButton, this:GetID(), 0)
@@ -417,11 +417,11 @@ SetItemRef = function(link, text, button)
     end
 
     if queststate == 0 then
-      ItemRefTooltip:AddLine("You don't have this quest.\n\n", 1, .5, .5)
+      ItemRefTooltip:AddLine(pfQuest_Loc["You don't have this quest."] .. "\n\n", 1, .5, .5)
     elseif queststate == 1 then
-      ItemRefTooltip:AddLine("You are on this quest.\n\n", 1, 1, .5)
+      ItemRefTooltip:AddLine(pfQuest_Loc["You are on this quest."] .. "\n\n", 1, 1, .5)
     elseif queststate == 2 then
-      ItemRefTooltip:AddLine("You already did this quest.\n\n", .5, 1, .5)
+      ItemRefTooltip:AddLine(pfQuest_Loc["You already did this quest."] .. "\n\n", .5, 1, .5)
     end
 
     -- add database entries if existing
@@ -445,13 +445,13 @@ SetItemRef = function(link, text, button)
       if pfDB["quests"]["data"][id]["min"] then
         local questlevel = tonumber(pfDB["quests"]["data"][id]["min"])
         local color = GetDifficultyColor(questlevel)
-        ItemRefTooltip:AddLine("|cffffffffRequired Level: |r" .. questlevel, color.r, color.g, color.b)
+        ItemRefTooltip:AddLine("|cffffffff" .. pfQuest_Loc["Required Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
       end
 
       if pfDB["quests"]["data"][id]["lvl"] then
         local questlevel = tonumber(pfDB["quests"]["data"][id]["lvl"])
         local color = GetDifficultyColor(questlevel)
-        ItemRefTooltip:AddLine("|cffffffffQuest Level: |r" .. questlevel, color.r, color.g, color.b)
+        ItemRefTooltip:AddLine("|cffffffff" .. pfQuest_Loc["Quest Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
       end
     end
 

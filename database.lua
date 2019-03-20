@@ -892,7 +892,7 @@ local function LoadCustomData(always)
     for id, name in pairs(pfQuest_server["items"]) do
       pfDB["items"]["loc"][id] = name
     end
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest: |cff33ffcc" .. icount .. "|cffffffff custom items loaded.")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest: |cff33ffcc" .. icount .. "|cffffffff " .. pfQuest_Loc["custom items loaded."])
   end
 end
 
@@ -926,7 +926,7 @@ end)
 pfServerScan:SetScript("OnShow", function()
   this.scanID = 1
   pfQuest_server["items"] = {}
-  DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest: Server scan started...")
+  DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest: " .. pfQuest_Loc["Server scan started..."])
 end)
 
 pfServerScan:SetScript("OnUpdate", function()
@@ -937,7 +937,7 @@ pfServerScan:SetScript("OnUpdate", function()
 
   -- scan X items per update
   for i=this.scanID,this.scanID+this.perloop do
-    pfServerScan.header:SetText("Scanning server for items... " .. floor(100*i/this.max) .. "%")
+    pfServerScan.header:SetText(pfQuest_Loc["Scanning server for items..."] .. " " .. floor(100*i/this.max) .. "%")
     local link = "item:" .. i .. ":0:0:0"
 
     ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
