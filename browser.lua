@@ -361,7 +361,7 @@ local function ResultButtonReload(self)
     end
   elseif self.btype == "items" then
     for _, key in ipairs({"U","O","V"}) do
-      if items[self.id][key] then
+      if items[self.id] and items[self.id][key] then
         self[key]:Show()
       else
         self[key]:Hide()
