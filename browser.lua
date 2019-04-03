@@ -697,7 +697,7 @@ end)
 -- This script updates all the search tabs when the search text changes
 pfBrowser.input:SetScript("OnTextChanged", function()
   local text = this:GetText()
-  if (text == "Search") then text = "" end
+  if (text == pfQuest_Loc["Search"]) then text = "" end
 
   for _, caption in ipairs({"Units","Objects","Items","Quests"}) do
     local searchType = strlower(caption)
