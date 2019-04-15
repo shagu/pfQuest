@@ -122,9 +122,9 @@ SlashCmdList["PFDB"] = function(input, editbox)
 
   -- argument: <text>
   if (type(arg1)=="string") then
-    if pfBrowser then 
+    if pfBrowser then
       pfBrowser:Show()
-      pfBrowser.input:SetText(string.format("%s %s",arg1,arg2))
+      pfBrowser.input:SetText((string.gsub(string.format("%s %s",arg1,arg2),"^%s*(.-)%s*$", "%1")))
     end
     return
   end
