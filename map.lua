@@ -639,6 +639,19 @@ function pfMap:UpdateMinimap()
   end
 
   local xPlayer, yPlayer = GetPlayerMapPosition("player")
+  if xPlayer == 0 and yPlayer == 0 or GetCurrentMapZone() == 0 then
+    if not WorldMapFrame:IsShown() then
+      SetMapToCurrentZone()
+      xPlayer, yPlayer = GetPlayerMapPosition("player")
+    else
+      -- hide existing nodes
+      for pins, pin in pairs(pfMap.mpins) do
+        pin:Hide()
+      end
+      return
+    end
+  end
+
   local mZoom = pfMap.drawlayer:GetZoom()
   xPlayer, yPlayer = xPlayer * 100, yPlayer * 100
 
