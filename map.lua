@@ -679,11 +679,6 @@ function pfMap:UpdateMinimap()
 
   local i = 0
 
-  -- hide existing nodes
-  for pins, pin in pairs(pfMap.mpins) do
-    pin:Hide()
-  end
-
   -- refresh all nodes
   for addon, data in pairs(pfMap.nodes) do
     if data[mapID] then
@@ -724,6 +719,13 @@ function pfMap:UpdateMinimap()
           i = i + 1
         end
       end
+    end
+  end
+
+  -- hide remaining pins
+  for j=i, table.getn(pfMap.mpins) do
+    if pfMap.mpins[j] then
+      pfMap.mpins[j]:Hide()
     end
   end
 end
