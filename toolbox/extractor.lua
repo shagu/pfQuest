@@ -560,6 +560,7 @@ if target.item then -- itemDB [data]
     file:write("  [" .. item_template.entry .. "] = { -- " .. item_template.name .. "\n")
     for _, t in pairs({ "U", "O", "V"}) do
       if #subdata[t] > 0 then
+        table.sort(subdata[t], function(a,b) return a[2] > b[2] end)
         file:write("    [\"" .. t .. "\"] = {\n")
         for _, data in pairs(subdata[t]) do
           file:write("      [" .. data[1] .. "] = " .. data[2] .. ",\n")
