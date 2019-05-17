@@ -17156,11 +17156,7 @@ pfDB["objects"]["data"] = {
   },
   [2844] = { -- Battered Chest
   },
-  [2845] = { -- Tattered Chest
-  },
   [2846] = { -- Tattered Chest
-  },
-  [2847] = { -- Tattered Chest
   },
   [2848] = { -- Pillar of Opal
     ["coords"] = {
@@ -19400,52 +19396,6 @@ pfDB["objects"]["data"] = {
     ["coords"] = {
       [1] = { 55.1, 27.5, 405, 900 },
     },
-  },
-  [3912] = { -- Blazing Fire
-  },
-  [3913] = { -- Blazing Fire
-  },
-  [3914] = { -- Burning Embers
-  },
-  [3915] = { -- Blazing Fire
-  },
-  [3916] = { -- Burning Embers
-  },
-  [3917] = { -- Burning Embers
-  },
-  [3918] = { -- Burning Embers
-  },
-  [3919] = { -- Burning Embers
-  },
-  [3920] = { -- Burning Embers
-  },
-  [3921] = { -- Burning Embers
-  },
-  [3922] = { -- Blazing Fire
-  },
-  [3923] = { -- Blazing Fire
-  },
-  [3924] = { -- Blazing Fire
-  },
-  [3925] = { -- Blazing Fire
-  },
-  [3926] = { -- Blazing Fire
-  },
-  [3927] = { -- Blazing Fire
-  },
-  [3928] = { -- Blazing Fire
-  },
-  [3929] = { -- Blazing Fire
-  },
-  [3930] = { -- Blazing Fire
-  },
-  [3931] = { -- Blazing Fire
-  },
-  [3932] = { -- Blazing Fire
-  },
-  [3933] = { -- Blazing Fire
-  },
-  [3934] = { -- Blazing Fire
   },
   [3936] = { -- Fierce Blaze
     ["coords"] = {
@@ -23524,16 +23474,6 @@ pfDB["objects"]["data"] = {
       [1] = { 45.0, 15.5, 28, 1200 },
     },
   },
-  [22640] = { -- Wooden Chair
-  },
-  [22641] = { -- Wooden Chair
-  },
-  [22642] = { -- Wooden Chair
-  },
-  [22644] = { -- Wooden Chair
-  },
-  [22646] = { -- Wooden Chair
-  },
   [22647] = { -- Wooden Chair
     ["coords"] = {
       [1] = { 45.1, 15.8, 28, 1200 },
@@ -24089,10 +24029,6 @@ pfDB["objects"]["data"] = {
       [1] = { 52.1, 58.8, 267, 7200 },
     },
   },
-  [22894] = { -- Wooden Chair
-  },
-  [22902] = { -- Wooden Chair
-  },
   [22904] = { -- Wooden Chair
     ["coords"] = {
       [1] = { 51.0, 58.3, 267, 7200 },
@@ -24112,14 +24048,6 @@ pfDB["objects"]["data"] = {
     ["coords"] = {
       [1] = { 50.7, 58.4, 267, 7200 },
     },
-  },
-  [22911] = { -- High Back Chair
-  },
-  [22912] = { -- Wooden Chair
-  },
-  [22913] = { -- Wooden Chair
-  },
-  [22914] = { -- Wooden Chair
   },
   [22915] = { -- Wooden Chair
     ["coords"] = {
@@ -24185,10 +24113,6 @@ pfDB["objects"]["data"] = {
     ["coords"] = {
       [1] = { 50.7, 58.5, 267, 7200 },
     },
-  },
-  [22928] = { -- High Back Chair
-  },
-  [22929] = { -- High Back Chair
   },
   [23013] = { -- Wooden Chair
     ["coords"] = {
@@ -27672,8 +27596,6 @@ pfDB["objects"]["data"] = {
     ["coords"] = {
       [1] = { 51.7, 58.6, 267, 7200 },
     },
-  },
-  [38148] = { -- Wooden Chair
   },
   [38491] = { -- Forge
     ["coords"] = {
@@ -32998,28 +32920,6 @@ pfDB["objects"]["data"] = {
       [2] = { 60.9, 50.6, 85, 900 },
     },
   },
-  [112092] = { -- Wooden Chair
-  },
-  [112095] = { -- Wooden Chair
-  },
-  [112096] = { -- Wooden Chair
-  },
-  [112097] = { -- Wooden Chair
-  },
-  [112098] = { -- Wooden Chair
-  },
-  [112100] = { -- Wooden Chair
-  },
-  [112112] = { -- Wooden Chair
-  },
-  [112115] = { -- Wooden Chair
-  },
-  [112123] = { -- Wooden Chair
-  },
-  [112128] = { -- Wooden Chair
-  },
-  [112129] = { -- Wooden Chair
-  },
   [112192] = { -- Chair
     ["coords"] = {
       [1] = { 42.4, 19.0, 28, 1200 },
@@ -34039,6 +33939,41 @@ pfDB["objects"]["data"] = {
       [29] = { 54.7, 23.1, 1176, 7200 },
       [30] = { 54.5, 22.7, 1176, 7200 },
       [31] = { 55.1, 21.9, 1176, 7200 },
+    },
+  },
+  [128972] = { -- Shallow Grave TRAP
+    ["coords"] = {
+      [1] = { 55.1, 21.9, 1176, 7200 },
+      [2] = { 54.5, 22.7, 1176, 7200 },
+      [3] = { 54.7, 23.1, 1176, 7200 },
+      [4] = { 54.8, 22.4, 1176, 7200 },
+      [5] = { 50.9, 27.3, 1176, 7200 },
+      [6] = { 51.2, 24.9, 1176, 7200 },
+      [7] = { 52.0, 24.3, 1176, 7200 },
+      [8] = { 51.7, 24.4, 1176, 7200 },
+      [9] = { 53.4, 21.6, 1176, 7200 },
+      [10] = { 54.4, 21.1, 1176, 7200 },
+      [11] = { 53.1, 23.7, 1176, 7200 },
+      [12] = { 52.0, 23.7, 1176, 7200 },
+      [13] = { 50.2, 28.1, 1176, 7200 },
+      [14] = { 49.2, 27.2, 1176, 7200 },
+      [15] = { 50.8, 25.9, 1176, 7200 },
+      [16] = { 49.5, 26.9, 1176, 7200 },
+      [17] = { 50.5, 27.1, 1176, 7200 },
+      [18] = { 49.9, 27.4, 1176, 7200 },
+      [19] = { 50.8, 26.6, 1176, 7200 },
+      [20] = { 49.5, 24.1, 1176, 7200 },
+      [21] = { 50.4, 21.8, 1176, 7200 },
+      [22] = { 52.2, 21.3, 1176, 7200 },
+      [23] = { 49.8, 21.8, 1176, 7200 },
+      [24] = { 50.0, 22.5, 1176, 7200 },
+      [25] = { 50.9, 21.4, 1176, 7200 },
+      [26] = { 49.1, 26.6, 1176, 7200 },
+      [27] = { 48.6, 25.1, 1176, 7200 },
+      [28] = { 48.8, 24.8, 1176, 7200 },
+      [29] = { 49.5, 22.6, 1176, 7200 },
+      [30] = { 49.1, 23.7, 1176, 7200 },
+      [31] = { 49.3, 23.2, 1176, 7200 },
     },
   },
   [129127] = { -- Gallywix's Lockbox
@@ -36948,75 +36883,6 @@ pfDB["objects"]["data"] = {
     },
   },
   [144064] = { -- Gordunni Dirt Mound
-    ["coords"] = {
-      [1] = { 75.3, 33.7, 357, 160 },
-      [2] = { 75.5, 30.5, 357, 160 },
-      [3] = { 75.3, 33.6, 357, 160 },
-      [4] = { 75.5, 30.4, 357, 160 },
-      [5] = { 75.5, 30.4, 357, 160 },
-      [6] = { 75.3, 33.6, 357, 160 },
-      [7] = { 75.2, 33.7, 357, 160 },
-      [8] = { 75.1, 32.4, 357, 160 },
-      [9] = { 75.3, 33.7, 357, 160 },
-      [10] = { 75.1, 32.3, 357, 160 },
-      [11] = { 75.0, 25.1, 357, 160 },
-      [12] = { 75.1, 32.5, 357, 160 },
-      [13] = { 74.8, 26.6, 357, 160 },
-      [14] = { 75.1, 25.2, 357, 160 },
-      [15] = { 74.9, 25.0, 357, 160 },
-      [16] = { 75.0, 25.0, 357, 160 },
-      [17] = { 75.1, 32.5, 357, 160 },
-      [18] = { 75.4, 26.3, 357, 160 },
-      [19] = { 75.2, 32.4, 357, 160 },
-      [20] = { 75.5, 26.4, 357, 160 },
-      [21] = { 81.6, 35.1, 357, 160 },
-      [22] = { 81.6, 34.9, 357, 160 },
-      [23] = { 74.8, 26.7, 357, 160 },
-      [24] = { 74.8, 26.5, 357, 160 },
-      [25] = { 74.8, 26.7, 357, 160 },
-      [26] = { 75.3, 26.4, 357, 160 },
-      [27] = { 81.6, 35.3, 357, 160 },
-      [28] = { 74.9, 25.0, 357, 160 },
-      [29] = { 75.3, 28.2, 357, 160 },
-      [30] = { 76.3, 32.9, 357, 160 },
-      [31] = { 74.3, 29.0, 357, 160 },
-      [32] = { 75.4, 28.1, 357, 160 },
-      [33] = { 76.0, 29.1, 357, 160 },
-      [34] = { 74.5, 30.2, 357, 160 },
-      [35] = { 74.7, 30.3, 357, 160 },
-      [36] = { 75.4, 28.4, 357, 160 },
-      [37] = { 75.3, 28.2, 357, 160 },
-      [38] = { 76.3, 34.4, 357, 160 },
-      [39] = { 75.4, 28.3, 357, 160 },
-      [40] = { 78.6, 34.0, 357, 160 },
-      [41] = { 78.5, 34.1, 357, 160 },
-      [42] = { 77.5, 35.2, 357, 160 },
-      [43] = { 76.0, 29.1, 357, 160 },
-      [44] = { 77.0, 33.3, 357, 160 },
-      [45] = { 79.2, 35.0, 357, 160 },
-      [46] = { 74.5, 30.3, 357, 160 },
-      [47] = { 79.2, 34.9, 357, 160 },
-      [48] = { 79.3, 35.0, 357, 160 },
-      [49] = { 78.5, 34.0, 357, 160 },
-      [50] = { 78.4, 34.1, 357, 160 },
-      [51] = { 76.0, 28.9, 357, 160 },
-      [52] = { 77.6, 35.2, 357, 160 },
-      [53] = { 80.4, 35.9, 357, 160 },
-      [54] = { 77.3, 33.4, 357, 160 },
-      [55] = { 80.5, 34.2, 357, 160 },
-      [56] = { 75.9, 29.1, 357, 160 },
-      [57] = { 80.5, 36.0, 357, 160 },
-      [58] = { 80.9, 35.5, 357, 160 },
-      [59] = { 74.6, 30.2, 357, 160 },
-      [60] = { 76.4, 33.1, 357, 160 },
-      [61] = { 76.4, 33.1, 357, 160 },
-      [62] = { 74.3, 28.9, 357, 160 },
-      [63] = { 76.7, 33.8, 357, 160 },
-      [64] = { 76.6, 33.8, 357, 160 },
-      [65] = { 76.7, 33.9, 357, 160 },
-      [66] = { 76.5, 33.0, 357, 160 },
-      [67] = { 76.2, 34.4, 357, 160 },
-    },
   },
   [144065] = { -- Explosive Charge
     ["coords"] = {
@@ -38188,8 +38054,6 @@ pfDB["objects"]["data"] = {
       [2] = { 71.1, 75.0, 40, 3600 },
     },
   },
-  [148735] = { -- Wooden Chair
-  },
   [148736] = { -- Wooden Chair
     ["coords"] = {
       [1] = { 62.0, 54.9, 17, 900 },
@@ -38248,10 +38112,6 @@ pfDB["objects"]["data"] = {
       [2] = { 71.0, 75.2, 40, 3600 },
     },
   },
-  [148746] = { -- Wooden Chair
-  },
-  [148747] = { -- Wooden Chair
-  },
   [148748] = { -- Wooden Chair
     ["coords"] = {
       [1] = { 67.1, 18.1, 4, 900 },
@@ -38264,8 +38124,6 @@ pfDB["objects"]["data"] = {
       [2] = { 70.5, 73.8, 40, 3600 },
     },
   },
-  [148750] = { -- Wooden Chair
-  },
   [148751] = { -- Wooden Chair
     ["coords"] = {
       [1] = { 62.1, 54.9, 17, 900 },
@@ -38276,8 +38134,6 @@ pfDB["objects"]["data"] = {
       [1] = { 66.8, 18.4, 4, 900 },
       [2] = { 70.5, 74.0, 40, 3600 },
     },
-  },
-  [148753] = { -- Wooden Chair
   },
   [148754] = { -- Wooden Chair
     ["coords"] = {
@@ -38291,19 +38147,11 @@ pfDB["objects"]["data"] = {
       [2] = { 70.5, 73.8, 40, 3600 },
     },
   },
-  [148756] = { -- Wooden Chair
-  },
-  [148757] = { -- Wooden Chair
-  },
   [148758] = { -- Wooden Chair
     ["coords"] = {
       [1] = { 67.1, 19.5, 4, 900 },
       [2] = { 70.3, 75.2, 40, 3600 },
     },
-  },
-  [148759] = { -- Wooden Chair
-  },
-  [148760] = { -- Wooden Chair
   },
   [148761] = { -- Wooden Chair
     ["coords"] = {
@@ -38315,8 +38163,6 @@ pfDB["objects"]["data"] = {
       [1] = { 66.8, 19.6, 4, 900 },
       [2] = { 70.0, 74.9, 40, 3600 },
     },
-  },
-  [148763] = { -- Wooden Chair
   },
   [148764] = { -- Wooden Chair
     ["coords"] = {
@@ -39008,8 +38854,6 @@ pfDB["objects"]["data"] = {
       [1] = { 43.8, 72.9, 130, 7200 },
     },
   },
-  [149051] = { -- Wooden Bench
-  },
   [149410] = { -- Light of Retribution
     ["coords"] = {
       [1] = { 39.0, 39.2, 51, 0 },
@@ -39045,8 +38889,6 @@ pfDB["objects"]["data"] = {
     ["coords"] = {
       [1] = { 36.6, 54.7, 16, 180 },
     },
-  },
-  [149423] = { -- Wooden Chair
   },
   [149424] = { -- Wooden Chair
     ["coords"] = {
@@ -40460,18 +40302,6 @@ pfDB["objects"]["data"] = {
     },
   },
   [160845] = { -- Dark Coffer
-  },
-  [160846] = { -- Bench
-  },
-  [160847] = { -- Bench
-  },
-  [160848] = { -- Bench
-  },
-  [160849] = { -- Bench
-  },
-  [160850] = { -- Bench
-  },
-  [160851] = { -- Bench
   },
   [160866] = { -- Pew
     ["coords"] = {
@@ -46141,10 +45971,6 @@ pfDB["objects"]["data"] = {
       [1] = { 62.1, 39.5, 17, 900 },
     },
   },
-  [174873] = { -- Bench
-  },
-  [174874] = { -- Bench
-  },
   [174875] = { -- Chair
     ["coords"] = {
       [1] = { 44.8, 15.2, 28, 1200 },
@@ -46404,8 +46230,6 @@ pfDB["objects"]["data"] = {
   },
   [174946] = { -- Chair
   },
-  [174953] = { -- Burning Embers
-  },
   [174954] = { -- Wooden Chair
     ["coords"] = {
       [1] = { 30.0, 42.6, 267, 7200 },
@@ -46478,34 +46302,6 @@ pfDB["objects"]["data"] = {
   },
   [174968] = { -- Wooden Chair
   },
-  [174974] = { -- Wooden Chair
-  },
-  [174975] = { -- Wooden Chair
-  },
-  [174976] = { -- Wooden Chair
-  },
-  [174977] = { -- Wooden Chair
-  },
-  [174978] = { -- Wooden Chair
-  },
-  [174979] = { -- Wooden Chair
-  },
-  [174980] = { -- Wooden Chair
-  },
-  [174981] = { -- Wooden Chair
-  },
-  [174982] = { -- Wooden Chair
-  },
-  [174983] = { -- Wooden Chair
-  },
-  [174984] = { -- Wooden Chair
-  },
-  [174985] = { -- Wooden Chair
-  },
-  [174986] = { -- Wooden Chair
-  },
-  [174987] = { -- Wooden Chair
-  },
   [174994] = { -- Wooden Chair
     ["coords"] = {
       [1] = { 48.8, 55.9, 267, 7200 },
@@ -46530,66 +46326,6 @@ pfDB["objects"]["data"] = {
     ["coords"] = {
       [1] = { 48.8, 55.6, 267, 7200 },
     },
-  },
-  [175001] = { -- Wooden Chair
-  },
-  [175002] = { -- Wooden Chair
-  },
-  [175003] = { -- Wooden Chair
-  },
-  [175004] = { -- Wooden Chair
-  },
-  [175005] = { -- Wooden Chair
-  },
-  [175006] = { -- Wooden Chair
-  },
-  [175007] = { -- Wooden Chair
-  },
-  [175008] = { -- Wooden Chair
-  },
-  [175009] = { -- Wooden Chair
-  },
-  [175010] = { -- Wooden Chair
-  },
-  [175011] = { -- Wooden Chair
-  },
-  [175012] = { -- Wooden Chair
-  },
-  [175013] = { -- Wooden Chair
-  },
-  [175014] = { -- Wooden Chair
-  },
-  [175015] = { -- Wooden Chair
-  },
-  [175016] = { -- Wooden Chair
-  },
-  [175017] = { -- Wooden Chair
-  },
-  [175018] = { -- Wooden Chair
-  },
-  [175019] = { -- Wooden Chair
-  },
-  [175020] = { -- Wooden Chair
-  },
-  [175021] = { -- Wooden Chair
-  },
-  [175022] = { -- Wooden Chair
-  },
-  [175023] = { -- Wooden Chair
-  },
-  [175024] = { -- Wooden Chair
-  },
-  [175025] = { -- Wooden Chair
-  },
-  [175026] = { -- Wooden Chair
-  },
-  [175027] = { -- Wooden Chair
-  },
-  [175028] = { -- Wooden Chair
-  },
-  [175029] = { -- Wooden Chair
-  },
-  [175030] = { -- Wooden Chair
   },
   [175075] = { -- Brazier
     ["coords"] = {
@@ -54452,10 +54188,13 @@ pfDB["objects"]["data"] = {
     },
   },
   [177201] = { -- Grand Admiral Daelin Proudmoore
+    ["coords"] = {
+      [1] = { 64.8, 6.7, 1519, 180 },
+    },
   },
   [177202] = { -- Lady Mara Fordragon
     ["coords"] = {
-      [1] = { 64.0, 7.7, 1519, 120 },
+      [1] = { 63.9, 7.7, 1519, 120 },
     },
   },
   [177203] = { -- Gate
@@ -59354,25 +59093,25 @@ pfDB["objects"]["data"] = {
   },
   [179487] = { -- Waterlogged Footlocker
     ["coords"] = {
-      [1] = { 43.4, 64.5, 44, 180 },
-      [2] = { 47.9, 54.3, 44, 180 },
-      [3] = { 52.2, 61.3, 44, 180 },
-      [4] = { 44.7, 56.0, 44, 180 },
-      [5] = { 44.9, 59.0, 44, 180 },
-      [6] = { 50.2, 55.1, 44, 180 },
-      [7] = { 37.8, 58.9, 44, 180 },
-      [8] = { 39.4, 61.9, 44, 180 },
-      [9] = { 25.2, 96.3, 148, 180 },
-      [10] = { 28.8, 95.6, 148, 180 },
-      [11] = { 32.2, 98.9, 148, 180 },
-      [12] = { 29.6, 97.7, 148, 180 },
-      [13] = { 7.1, 14.2, 331, 180 },
-      [14] = { 13.6, 30.9, 331, 180 },
-      [15] = { 11.2, 13.4, 331, 180 },
-      [16] = { 15.6, 19.0, 331, 180 },
-      [17] = { 15.1, 17.1, 331, 180 },
-      [18] = { 13.4, 27.1, 331, 180 },
-      [19] = { 12.1, 15.7, 331, 180 },
+      [1] = { 43.4, 64.5, 44, 480 },
+      [2] = { 47.9, 54.3, 44, 480 },
+      [3] = { 52.2, 61.3, 44, 480 },
+      [4] = { 44.7, 56.0, 44, 480 },
+      [5] = { 44.9, 59.0, 44, 480 },
+      [6] = { 50.2, 55.1, 44, 480 },
+      [7] = { 37.8, 58.9, 44, 480 },
+      [8] = { 39.4, 61.9, 44, 480 },
+      [9] = { 25.2, 96.3, 148, 480 },
+      [10] = { 28.8, 95.6, 148, 480 },
+      [11] = { 32.2, 98.9, 148, 480 },
+      [12] = { 29.6, 97.7, 148, 480 },
+      [13] = { 7.1, 14.2, 331, 480 },
+      [14] = { 13.6, 30.9, 331, 480 },
+      [15] = { 11.2, 13.4, 331, 480 },
+      [16] = { 15.6, 19.0, 331, 480 },
+      [17] = { 15.1, 17.1, 331, 480 },
+      [18] = { 13.4, 27.1, 331, 480 },
+      [19] = { 12.1, 15.7, 331, 480 },
     },
   },
   [179488] = { -- Battered Footlocker
@@ -60355,8 +60094,6 @@ pfDB["objects"]["data"] = {
   },
   [179899] = { -- Speed Buff
   },
-  [179900] = { -- Big Bonfire Damage
-  },
   [179904] = { -- Food Buff
     ["coords"] = {
       [1] = { 60.0, 67.6, 3277, 180 },
@@ -61306,6 +61043,9 @@ pfDB["objects"]["data"] = {
     },
   },
   [180124] = { -- Lighthouse Beam
+    ["coords"] = {
+      [1] = { 30.5, 86.5, 40, 180 },
+    },
   },
   [180125] = { -- Liquid Fire
   },
@@ -63330,8 +63070,6 @@ pfDB["objects"]["data"] = {
       [235] = { 61.9, 82.5, 36, 180 },
     },
   },
-  [180408] = { -- G_WitchHat_01
-  },
   [180409] = { -- G_WitchBroom_01
   },
   [180410] = { -- G_HangingSkeleton_01
@@ -64397,10 +64135,6 @@ pfDB["objects"]["data"] = {
       [234] = { 60.4, 81.7, 36, 180 },
     },
   },
-  [180428] = { -- G_WitchBroom_01 scale 0.5
-  },
-  [180429] = { -- G_WitchHat_01 scale 0.5
-  },
   [180430] = { -- Brazier of Madness - Inert
   },
   [180431] = { -- G_Pumpkin_01 scale 4.0
@@ -65276,8 +65010,6 @@ pfDB["objects"]["data"] = {
       [1] = { 37.9, 45.3, 1377, 180 },
     },
   },
-  [180511] = { -- Scroll of Scourge Magic
-  },
   [180514] = { -- Glyphed Crystal Prism
   },
   [180515] = { -- Blastenheimer 5000 Ultra Cannon
@@ -65286,8 +65018,6 @@ pfDB["objects"]["data"] = {
       [2] = { 37.9, 30.7, 215, 0 },
       [3] = { 40.0, 68.2, 1638, 0 },
     },
-  },
-  [180516] = { -- Shrine of Dath'Remar
   },
   [180517] = { -- Putrid Mushroom
   },
@@ -65393,8 +65123,6 @@ pfDB["objects"]["data"] = {
     },
   },
   [180574] = { -- Wickerman Guardian Ember
-  },
-  [180575] = { -- Keg
   },
   [180582] = { -- Oily Blackmouth School
     ["coords"] = {
@@ -65559,8 +65287,6 @@ pfDB["objects"]["data"] = {
   [180635] = { -- Door
   },
   [180636] = { -- Door
-  },
-  [180640] = { -- Blue aura, short column
   },
   [180642] = { -- Inconspicuous Crate
     ["coords"] = {
@@ -67014,8 +66740,6 @@ pfDB["objects"]["data"] = {
       [2] = { 52.3, 69.3, 1637, 300 },
     },
   },
-  [180749] = { -- Cheer Speaker
-  },
   [180750] = { -- Oily Blackmouth School
     ["coords"] = {
       [1] = { 50.4, 59.4, 16, 180 },
@@ -68252,8 +67976,6 @@ pfDB["objects"]["data"] = {
       [41] = { 32.9, 68.7, 1638, 180 },
     },
   },
-  [180779] = { -- Barrel
-  },
   [180780] = { -- AQWar - Resource, Bars, Alliance, Tier 1
     ["coords"] = {
       [1] = { 64.8, 65.3, 1537, 0 },
@@ -68937,8 +68659,6 @@ pfDB["objects"]["data"] = {
       [3] = { 47.9, 82.1, 36, 25 },
     },
   },
-  [180888] = { -- OrcTable01
-  },
   [180898] = { -- AQRUNE
     ["coords"] = {
       [1] = { 29.1, 93.9, 1377, 900 },
@@ -69600,42 +69320,6 @@ pfDB["objects"]["data"] = {
     ["coords"] = {
       [1] = { 50.9, 38.4, 1377, 900 },
     },
-  },
-  [180921] = { -- Tainted Soil Sample
-  },
-  [180991] = { -- Chair
-  },
-  [180993] = { -- Chair
-  },
-  [180994] = { -- Chair
-  },
-  [180996] = { -- Chair
-  },
-  [180997] = { -- Chair
-  },
-  [180998] = { -- Chair
-  },
-  [180999] = { -- Chair
-  },
-  [181000] = { -- Chair
-  },
-  [181001] = { -- Chair
-  },
-  [181002] = { -- Chair
-  },
-  [181003] = { -- Chair
-  },
-  [181004] = { -- Chair
-  },
-  [181005] = { -- Chair
-  },
-  [181006] = { -- Chair
-  },
-  [181007] = { -- Chair
-  },
-  [181008] = { -- Chair
-  },
-  [181009] = { -- Chair
   },
   [181013] = { -- Fire
   },
@@ -70728,8 +70412,6 @@ pfDB["objects"]["data"] = {
       [14] = { 42.9, 69.5, 2597, 300 },
     },
   },
-  [181110] = { -- Soaked Tome
-  },
   [181119] = { -- Deathknight Door
     ["coords"] = {
       [1] = { 26.7, 81.6, 3456, 180 },
@@ -70775,8 +70457,6 @@ pfDB["objects"]["data"] = {
       [1] = { 80.9, 59.5, 139, 900 },
     },
   },
-  [181133] = { -- Rathis Tomber's Supplies
-  },
   [181134] = { -- Bonfire
     ["coords"] = {
       [1] = { 46.9, 42.4, 139, 900 },
@@ -70791,12 +70471,6 @@ pfDB["objects"]["data"] = {
   },
   [181137] = { -- Ancient Door
   },
-  [181138] = { -- Night Elf Plans: An'daroth
-  },
-  [181139] = { -- Night Elf Plans: An'owyn
-  },
-  [181140] = { -- Night Elf Plans: Scrying on the Sin'dorei
-  },
   [181142] = { -- Summoner Shield
   },
   [181143] = { -- Fish of the Day
@@ -70806,13 +70480,6 @@ pfDB["objects"]["data"] = {
   [181145] = { -- Roast Boar Platter
   },
   [181146] = { -- Portal to Karazhan
-  },
-  [181150] = { -- Dusty Journal
-    ["fac"] = "AH",
-  },
-  [181151] = { -- Glistening Mud
-  },
-  [181152] = { -- Cage
   },
   [181154] = { -- Necropolis
   },
@@ -71052,36 +70719,6 @@ pfDB["objects"]["data"] = {
       [211] = { 98.5, 41.0, 1657, 25 },
       [212] = { 97.6, 39.4, 1657, 25 },
     },
-  },
-  [181175] = { -- Chair
-  },
-  [181176] = { -- Chair
-  },
-  [181177] = { -- Chair
-  },
-  [181178] = { -- Chair
-  },
-  [181179] = { -- Chair
-  },
-  [181180] = { -- Chair
-  },
-  [181181] = { -- Chair
-  },
-  [181182] = { -- Chair
-  },
-  [181183] = { -- Chair
-  },
-  [181184] = { -- Chair
-  },
-  [181185] = { -- Chair
-  },
-  [181186] = { -- Chair
-  },
-  [181187] = { -- Chair
-  },
-  [181188] = { -- Chair
-  },
-  [181189] = { -- Chair
   },
   [181191] = { -- Skullpile 01
   },
@@ -71372,14 +71009,6 @@ pfDB["objects"]["data"] = {
   },
   [181215] = { -- Necropolis (scale 2.5)
   },
-  [181217] = { -- Chair
-  },
-  [181218] = { -- Chair
-  },
-  [181219] = { -- Chair
-  },
-  [181220] = { -- Potbelly Stove
-  },
   [181223] = { -- Necropolis (scale 3.5)
     ["coords"] = {
       [1] = { 51.3, 37.6, 1, 0 },
@@ -71480,10 +71109,6 @@ pfDB["objects"]["data"] = {
       [1] = { 80.9, 58.5, 139, 900 },
     },
   },
-  [181238] = { -- Dented Chest
-  },
-  [181239] = { -- Worn Chest
-  },
   [181240] = { -- Loatheb Fight Door 01 (not used)
     ["coords"] = {
       [1] = { 82.1, 55.7, 3456, 180 },
@@ -71505,10 +71130,6 @@ pfDB["objects"]["data"] = {
     },
   },
   [181247] = { -- Ice Block
-  },
-  [181248] = { -- Copper Vein
-  },
-  [181249] = { -- Tin Vein
   },
   [181254] = { -- Argent Dawn Buffer Tent
     ["coords"] = {
@@ -71577,8 +71198,6 @@ pfDB["objects"]["data"] = {
       [7] = { 30.5, 68.9, 1638, 25 },
     },
   },
-  [181273] = { -- Summoning Circle
-  },
   [181287] = { -- Frozen Rune
     ["coords"] = {
       [1] = { 49.2, 28.8, 3456, 604800 },
@@ -71623,10 +71242,6 @@ pfDB["objects"]["data"] = {
     },
   },
   [181288] = { -- Midsummer Bonfire
-  },
-  [181291] = { -- Mystery Meat
-  },
-  [181300] = { -- Standing, Large - MFF
   },
   [181301] = { -- Camp Pavilion
   },
@@ -71899,42 +71514,6 @@ pfDB["objects"]["data"] = {
       [43] = { 57.0, 88.0, 36, 180 },
     },
   },
-  [181311] = { -- Bonfire
-  },
-  [181312] = { -- Bonfire
-  },
-  [181313] = { -- Campfire
-  },
-  [181314] = { -- Campfire
-  },
-  [181315] = { -- Cauldron
-  },
-  [181316] = { -- Bonfire
-  },
-  [181317] = { -- Campfire
-  },
-  [181318] = { -- Campfire
-  },
-  [181320] = { -- Bonfire
-  },
-  [181321] = { -- Bonfire
-  },
-  [181322] = { -- Cauldron
-  },
-  [181323] = { -- Campfire
-  },
-  [181324] = { -- Campfire
-  },
-  [181325] = { -- Bonfire
-  },
-  [181326] = { -- Bonfire
-  },
-  [181327] = { -- Cauldron
-  },
-  [181328] = { -- Bonfire
-  },
-  [181329] = { -- Bonfire
-  },
   [181332] = { -- Flame of Stormwind
     ["fac"] = "H",
     ["coords"] = {
@@ -71997,12 +71576,6 @@ pfDB["objects"]["data"] = {
   [181348] = { -- Flame of Stratholme
   },
   [181349] = { -- Flame of the Scholomance
-  },
-  [181350] = { -- Campfire
-  },
-  [181351] = { -- Campfire
-  },
-  [181352] = { -- Campfire
   },
   [181354] = { -- Floating, Medium - MFF
     ["coords"] = {
@@ -73190,18 +72763,10 @@ pfDB["objects"]["data"] = {
       [29] = { 36.6, 51.0, 1638, 180 },
     },
   },
-  [181362] = { -- Campfire
-  },
   [181366] = { -- Four Horsemen Chest
     ["coords"] = {
       [1] = { 22.9, 87.4, 3456, 0 },
     },
-  },
-  [181367] = { -- Lordaeron Armory
-  },
-  [181368] = { -- Nightwatch Inn
-  },
-  [181370] = { -- Volatile Mutation Cage
   },
   [181373] = { -- Necropolis (scale 1.5)
   },
@@ -73267,20 +72832,6 @@ pfDB["objects"]["data"] = {
       [56] = { 21.1, 25.6, 1638, 180 },
       [57] = { 56.6, 87.7, 36, 180 },
     },
-  },
-  [181378] = { -- Dragonhawk Egg
-  },
-  [181379] = { -- Cage
-  },
-  [181380] = { -- Mailbox
-    ["fac"] = "A",
-  },
-  [181381] = { -- Mailbox
-    ["fac"] = "H",
-  },
-  [181385] = { -- Ravager Egg
-  },
-  [181387] = { -- Ogre Firepit
   },
   [181388] = { -- Standing, Interior, Medium - MFF
     ["coords"] = {
@@ -74706,8 +74257,6 @@ pfDB["objects"]["data"] = {
       [176] = { 38.7, 82.8, 1637, 180 },
     },
   },
-  [181396] = { -- Rug
-  },
   [181401] = { -- Hanging, Streamer x3 - MFF
     ["coords"] = {
       [1] = { 47.2, 51.7, 1, 180 },
@@ -74974,8 +74523,6 @@ pfDB["objects"]["data"] = {
   },
   [181405] = { -- Doodad_kelthuzad_window_portal04
   },
-  [181427] = { -- Ogre Firepit
-  },
   [181431] = { -- Fire Festival Fury Trap
     ["fac"] = "AH",
     ["coords"] = {
@@ -75204,24 +74751,6 @@ pfDB["objects"]["data"] = {
       [223] = { 60.4, 66.5, 1657, 180 },
     },
   },
-  [181435] = { -- Doodad_OnyziasLairLavaTrap80
-  },
-  [181436] = { -- Doodad_OnyziasLairLavaTrap79
-  },
-  [181437] = { -- Doodad_OnyziasLairLavaTrap78
-  },
-  [181438] = { -- Doodad_OnyziasLairLavaTrap64
-  },
-  [181439] = { -- Doodad_OnyziasLairLavaTrap72
-  },
-  [181440] = { -- Doodad_OnyziasLairLavaTrap81
-  },
-  [181441] = { -- Doodad_OnyziasLairLavaTrap82
-  },
-  [181442] = { -- Doodad_OnyziasLairLavaTrap83
-  },
-  [181445] = { -- Cauldron
-  },
   [181446] = { -- Bonfire
   },
   [181447] = { -- Signaling Gem
@@ -75230,17 +74759,7 @@ pfDB["objects"]["data"] = {
   },
   [181450] = { -- Brazier
   },
-  [181451] = { -- Brazier
-  },
-  [181452] = { -- Brazier
-  },
-  [181453] = { -- Brazier
-  },
   [181455] = { -- Brazier
-  },
-  [181456] = { -- Brazier
-  },
-  [181475] = { -- Monument of Remembrance
   },
   [181476] = { -- Nox Portal Plaguewood
     ["coords"] = {
@@ -75259,31 +74778,9 @@ pfDB["objects"]["data"] = {
       [1] = { 21.0, 8.9, 3456, 0 },
     },
   },
-  [181480] = { -- Bonfire
-  },
-  [181481] = { -- Bonfire
-  },
-  [181483] = { -- Bonfire
-  },
-  [181484] = { -- Bonfire
-  },
-  [181485] = { -- Bonfire
-  },
-  [181486] = { -- Bonfire
-  },
-  [181487] = { -- Bonfire
-  },
   [181488] = { -- Bonfire
   },
   [181489] = { -- Bonfire
-  },
-  [181490] = { -- Bonfire
-  },
-  [181491] = { -- Bonfire
-  },
-  [181493] = { -- Bonfire
-  },
-  [181494] = { -- Bonfire
   },
   [181495] = { -- Bonfire
   },
@@ -75556,8 +75053,6 @@ pfDB["objects"]["data"] = {
   },
   [181567] = { -- Flame of the Wetlands
   },
-  [181573] = { -- Jar of ashes
-  },
   [181574] = { -- Glowing Crystal
   },
   [181575] = { -- Naxxramas Portal
@@ -75579,10 +75074,6 @@ pfDB["objects"]["data"] = {
     ["coords"] = {
       [1] = { 21.6, 89.3, 3456, 7200 },
     },
-  },
-  [181583] = { -- Tainted Soil Trap
-  },
-  [181595] = { -- Campfire
   },
   [181596] = { -- Anvil
     ["coords"] = {
@@ -75683,8 +75174,6 @@ pfDB["objects"]["data"] = {
       [57] = { 57.4, 86.7, 36, 180 },
     },
   },
-  [181608] = { -- Campfire
-  },
   [181617] = { -- Sillithus Flag Stand, Horde
     ["fac"] = "AH",
     ["coords"] = {
@@ -75730,34 +75219,6 @@ pfDB["objects"]["data"] = {
     },
   },
   [181640] = { -- Doodad_kelthuzad_throne02
-  },
-  [181644] = { -- Azure Snapdragon
-  },
-  [181650] = { -- Water Rift
-  },
-  [181651] = { -- Air Rift
-  },
-  [181652] = { -- Fire Rift
-  },
-  [181654] = { -- Lumber
-  },
-  [181655] = { -- Bonfire
-  },
-  [181656] = { -- Bonfire
-  },
-  [181657] = { -- Bonfire
-  },
-  [181658] = { -- Bonfire
-  },
-  [181659] = { -- Bonfire
-  },
-  [181660] = { -- Bonfire
-  },
-  [181663] = { -- Cage
-  },
-  [181664] = { -- Arakkoa Cage
-  },
-  [181665] = { -- Burial Chest
   },
   [181676] = { -- Plague Fissure
     ["coords"] = {
@@ -75823,8 +75284,6 @@ pfDB["objects"]["data"] = {
       [19] = { 62.0, 64.7, 3456, 180 },
     },
   },
-  [181680] = { -- Drycap Mushroom
-  },
   [181682] = { -- Lordaeron Shrine
     ["fac"] = "A",
   },
@@ -75852,14 +75311,6 @@ pfDB["objects"]["data"] = {
       [20] = { 64.6, 66.0, 3456, 180 },
     },
   },
-  [181711] = { -- Campfire
-  },
-  [181712] = { -- Campfire
-  },
-  [181715] = { -- Anvil
-  },
-  [181716] = { -- Forge
-  },
   [181734] = { -- Campfire
   },
   [181735] = { -- Bonfire
@@ -75870,10 +75321,6 @@ pfDB["objects"]["data"] = {
   },
   [181738] = { -- Meat Rack
   },
-  [181745] = { -- Wildkin Weapon (Spear)
-  },
-  [181746] = { -- Clopper's Equipment
-  },
   [181756] = { -- Stillpine Grain
     ["coords"] = {
       [1] = { 67.6, 72.8, 618, 0 },
@@ -75881,131 +75328,37 @@ pfDB["objects"]["data"] = {
   },
   [181757] = { -- Stillpine Grain
   },
-  [181758] = { -- Mound of Dirt
-  },
-  [181767] = { -- Bonfire
-  },
-  [181768] = { -- Sealed Tome
-  },
-  [181773] = { -- Campfire
-  },
-  [181775] = { -- Bonfire
-  },
-  [181782] = { -- Circle of Prophecy
-  },
   [181787] = { -- Campfire
-  },
-  [181788] = { -- Campfire
-  },
-  [181789] = { -- Bonfire
-  },
-  [181798] = { -- Fel Iron Chest
-  },
-  [181800] = { -- Heavy Fel Iron Chest
-  },
-  [181802] = { -- Adamantite Bound Chest
-  },
-  [181804] = { -- Felsteel Chest
-  },
-  [181806] = { -- Summoning Rune
   },
   [181810] = { -- Summoning Portal
   },
-  [181829] = { -- Campfire
-  },
-  [181833] = { -- Sealed Tome
-  },
-  [181837] = { -- Sealed Tome
-  },
   [181839] = { -- Sealed Tome
-  },
-  [181841] = { -- Sealed Tome
-  },
-  [181843] = { -- Sealed Tome
   },
   [181851] = { -- Campfire
   },
   [181852] = { -- Flag Flare, Alliance
   },
-  [181854] = { -- Sand Pear
-  },
-  [181863] = { -- Campfire
-  },
-  [181864] = { -- Campfire
-  },
-  [181865] = { -- Campfire
-  },
-  [181866] = { -- Campfire
-  },
-  [181867] = { -- Campfire
-  },
-  [181868] = { -- Campfire
-  },
-  [181869] = { -- Campfire
-  },
   [181870] = { -- Campfire
-  },
-  [181872] = { -- Steam Pump Part
-  },
-  [181873] = { -- Steam Pump Part
-  },
-  [181876] = { -- Steam Pump Part
-  },
-  [181884] = { -- Forge
-  },
-  [181885] = { -- Anvil
   },
   [181886] = { -- Firework Rocket, Promotion
   },
-  [181887] = { -- Campfire
-  },
   [181888] = { -- Campfire
-  },
-  [181895] = { -- Trans-dimensional Ship Repair for Simpletons
   },
   [181899] = { -- Doodad_BattlefieldBanner_State_Base_Plaguelands01
   },
-  [181920] = { -- Campfire
-  },
-  [181954] = { -- Bonfire
-  },
   [181955] = { -- Lordaeron Shrine
   },
-  [181956] = { -- Gilded Brazier
-  },
-  [181959] = { -- Cave Torch
-  },
   [181962] = { -- Dust Bag
-  },
-  [181964] = { -- Statue of Queen Azshara
-  },
-  [181965] = { -- Statue Fire
   },
   [181985] = { -- Boat to Auberdine
   },
   [181987] = { -- Flare of Justice
   },
-  [181989] = { -- Anvil
-  },
-  [181990] = { -- Forge
-  },
-  [182005] = { -- Scroll
-  },
-  [182012] = { -- Makeshift Prison
-  },
   [182013] = { -- Dark Brazier
   },
   [182014] = { -- Dark Brazier
   },
-  [182015] = { -- Dark Brazier
-  },
-  [182016] = { -- Dark Brazier
-  },
-  [182017] = { -- Dark Brazier
-  },
   [182018] = { -- Dark Brazier
-  },
-  [182019] = { -- Dark Brazier
   },
   [182020] = { -- Dark Brazier
   },
@@ -76015,19 +75368,9 @@ pfDB["objects"]["data"] = {
   },
   [182023] = { -- Dark Brazier
   },
-  [182027] = { -- Dark Brazier
-  },
   [182028] = { -- Dark Brazier
   },
   [182029] = { -- Dark Brazier
-  },
-  [182032] = { -- Galaen's Journal
-  },
-  [182052] = { -- Harbinger of the Second Trial
-  },
-  [182054] = { -- The Underspore
-  },
-  [182056] = { -- Forge
   },
   [182059] = { -- Campfire
     ["coords"] = {
@@ -76035,18 +75378,8 @@ pfDB["objects"]["data"] = {
       [2] = { 61.5, 22.4, 139, 900 },
     },
   },
-  [182060] = { -- Horde Encampment Portal
-  },
-  [182061] = { -- Night Elf Village Portal
-  },
-  [182064] = { -- Karazhan Bell
-  },
   [182066] = { -- Lauranna's Guide to Zangarmarsh Plants
     ["fac"] = "AH",
-  },
-  [182070] = { -- Red Crystal
-  },
-  [182073] = { -- Grown Mushroom
   },
   [182075] = { -- ElvenWoodenTable
     ["coords"] = {
@@ -76088,13 +75421,7 @@ pfDB["objects"]["data"] = {
   },
   [182089] = { -- Vector Coil Fire (S)
   },
-  [182090] = { -- Vector Coil Fire (L)
-  },
   [182091] = { -- Draenei Explosives
-  },
-  [182094] = { -- Cage
-  },
-  [182095] = { -- Burstcap Mushroom
   },
   [182096] = { -- Doodad_BattlefieldBanner_State_Base_Plaguelands02
   },
@@ -76114,83 +75441,7 @@ pfDB["objects"]["data"] = {
       [8] = { 22.6, 31.9, 139, 900 },
     },
   },
-  [182107] = { -- (NEEDS GRAPHICS)Steam Pump Controls
-  },
   [182114] = { -- Corrupted Crystal Aura
-  },
-  [182115] = { -- Wanted Poster
-    ["fac"] = "AH",
-  },
-  [182117] = { -- Forge
-  },
-  [182118] = { -- Anvil
-  },
-  [182119] = { -- Dead Mire Soil
-  },
-  [182122] = { -- Ikeyen's Belongings
-  },
-  [182127] = { -- Corrupted Flower
-  },
-  [182128] = { -- Dung
-  },
-  [182146] = { -- Hut Fire (Large)
-  },
-  [182147] = { -- Brazier
-  },
-  [182148] = { -- Brazier
-  },
-  [182149] = { -- Brazier
-  },
-  [182150] = { -- Brazier
-  },
-  [182151] = { -- Brazier
-  },
-  [182152] = { -- Brazier
-  },
-  [182153] = { -- Brazier
-  },
-  [182154] = { -- Brazier
-  },
-  [182155] = { -- Blazing Fire
-  },
-  [182156] = { -- Blazing Fire
-  },
-  [182157] = { -- Blazing Fire
-  },
-  [182158] = { -- Blazing Fire
-  },
-  [182159] = { -- Blazing Fire
-  },
-  [182160] = { -- Blazing Fire
-  },
-  [182161] = { -- Blazing Fire
-  },
-  [182162] = { -- Blazing Fire
-  },
-  [182164] = { -- Murloc Cage
-  },
-  [182165] = { -- Wanted Poster
-  },
-  [182166] = { -- Ango'rosh Attack Plans
-  },
-  [182173] = { -- Hellfire Banner, W
-  },
-  [182174] = { -- Hellfire Banner, N
-  },
-  [182175] = { -- Hellfire Banner, S
-  },
-  [182199] = { -- Keanna's Log
-  },
-  [182203] = { -- The Green Hills of Stranglethorn
-    ["fac"] = "AH",
-  },
-  [182205] = { -- Campfire
-  },
-  [182206] = { -- Campfire
-  },
-  [182209] = { -- Campfire
-  },
-  [182210] = { -- Halaa Banner
   },
   [182211] = { -- Fire (Small)
   },
@@ -76208,160 +75459,6 @@ pfDB["objects"]["data"] = {
   },
   [182221] = { -- Bonfire
   },
-  [182222] = { -- Bomb Wagon
-    ["fac"] = "H",
-  },
-  [182258] = { -- Oshu'gun Crystal Fragment
-  },
-  [182261] = { -- First Burning Blade Pyre
-  },
-  [182262] = { -- Third Burning Blade Pyre
-  },
-  [182264] = { -- Second Burning Blade Pyre
-  },
-  [182265] = { -- Bleeding Hollow Supply Crate
-  },
-  [182269] = { -- Anvil
-  },
-  [182270] = { -- Forge
-  },
-  [182271] = { -- Campfire
-  },
-  [182272] = { -- Bomb Wagon
-    ["fac"] = "H",
-  },
-  [182273] = { -- Bomb Wagon
-    ["fac"] = "H",
-  },
-  [182274] = { -- Bomb Wagon
-    ["fac"] = "H",
-  },
-  [182278] = { -- Forge
-  },
-  [182305] = { -- Bomb Wagon
-    ["fac"] = "A",
-  },
-  [182306] = { -- Bomb Wagon
-    ["fac"] = "A",
-  },
-  [182307] = { -- Bomb Wagon
-    ["fac"] = "A",
-  },
-  [182308] = { -- Bomb Wagon
-    ["fac"] = "A",
-  },
-  [182315] = { -- Anvil
-  },
-  [182316] = { -- Anvil
-  },
-  [182317] = { -- Anvil
-  },
-  [182343] = { -- Campfire
-  },
-  [182344] = { -- Campfire
-  },
-  [182345] = { -- Campfire
-  },
-  [182346] = { -- Campfire
-  },
-  [182376] = { -- Campfire
-  },
-  [182377] = { -- Campfire
-  },
-  [182378] = { -- Campfire
-  },
-  [182391] = { -- Garadar Mailbox
-    ["fac"] = "H",
-  },
-  [182392] = { -- Garadar Bulletin Board
-    ["fac"] = "H",
-  },
-  [182400] = { -- Campfire
-  },
-  [182401] = { -- Campfire
-  },
-  [182402] = { -- Campfire
-  },
-  [182413] = { -- Chair
-  },
-  [182414] = { -- Chair
-  },
-  [182415] = { -- Chair
-  },
-  [182416] = { -- Chair
-  },
-  [182417] = { -- Chair
-  },
-  [182418] = { -- Chair
-  },
-  [182419] = { -- Chair
-  },
-  [182420] = { -- Chair
-  },
-  [182421] = { -- Chair
-  },
-  [182422] = { -- Chair
-  },
-  [182423] = { -- Chair
-  },
-  [182424] = { -- Chair
-  },
-  [182425] = { -- Chair
-  },
-  [182426] = { -- Chair
-  },
-  [182427] = { -- Chair
-  },
-  [182428] = { -- Chair
-  },
-  [182429] = { -- Chair
-  },
-  [182430] = { -- Chair
-  },
-  [182431] = { -- Chair
-  },
-  [182432] = { -- Chair
-  },
-  [182433] = { -- Chair
-  },
-  [182434] = { -- Chair
-  },
-  [182435] = { -- Chair
-  },
-  [182436] = { -- Chair
-  },
-  [182437] = { -- Chair
-  },
-  [182438] = { -- Chair
-  },
-  [182439] = { -- Chair
-  },
-  [182440] = { -- Chair
-  },
-  [182441] = { -- Chair
-  },
-  [182442] = { -- Chair
-  },
-  [182443] = { -- Chair
-  },
-  [182444] = { -- Chair
-  },
-  [182445] = { -- Chair
-  },
-  [182446] = { -- Chair
-  },
-  [182447] = { -- Chair
-  },
-  [182448] = { -- Chair
-  },
-  [182449] = { -- Chair
-  },
-  [182450] = { -- Chair
-  },
-  [182451] = { -- Chair
-  },
-  [182452] = { -- Chair
-  },
   [182483] = { -- Uther Shrine Lightbeam
     ["coords"] = {
       [1] = { 52.2, 83.7, 28, 1200 },
@@ -76375,1015 +75472,25 @@ pfDB["objects"]["data"] = {
   },
   [182509] = { -- 0
   },
-  [182519] = { -- Bufferlo's Crock Pot
-  },
-  [182522] = { -- Zangarmarsh Banner
-  },
-  [182523] = { -- Zangarmarsh Banner
-  },
-  [182524] = { -- Arcane Aura
-  },
   [182526] = { -- Terokkar Chokeberry Bush
-  },
-  [182532] = { -- Nazzivus Monument Glyphs
-  },
-  [182534] = { -- Campfire
   },
   [182535] = { -- Campfire
   },
   [182536] = { -- Campfire
   },
-  [182537] = { -- Campfire
-  },
-  [182538] = { -- Campfire
-  },
-  [182549] = { -- Fel Orc Plans
-  },
-  [182561] = { -- Bonfire
-  },
   [182564] = { -- Piege autel de l'Aldor
-  },
-  [182567] = { -- Mailbox
-    ["fac"] = "H",
-  },
-  [182568] = { -- Burning Brazier
-  },
-  [182569] = { -- Burning Brazier
-  },
-  [182570] = { -- Burning Brazier
-  },
-  [182575] = { -- Cauldron
-  },
-  [182577] = { -- Campfire
-  },
-  [182578] = { -- Campfire
-  },
-  [182579] = { -- Campfire
-  },
-  [182585] = { -- Restless Bones
-  },
-  [182587] = { -- Wanted Poster
-  },
-  [182588] = { -- Wanted Poster
-  },
-  [182591] = { -- G_RuneBlue01
-  },
-  [182592] = { -- Roaring Flame
-  },
-  [182599] = { -- Telaari Frond
-  },
-  [182601] = { -- Olemba Root
-  },
-  [182605] = { -- Campfire
-  },
-  [182606] = { -- Dragonspine
-  },
-  [182788] = { -- Campfire
-  },
-  [182794] = { -- Cage
-  },
-  [182796] = { -- Bleeding Hollow Attack Plans
-  },
-  [182807] = { -- Bottle
-  },
-  [182808] = { -- Broken Bottle
-  },
-  [182809] = { -- Campfire
-  },
-  [182811] = { -- Campfire
-  },
-  [182817] = { -- Burning Horde Siege Engine
-  },
-  [182828] = { -- Cooking Stove
-  },
-  [182829] = { -- Cooking Stove
-  },
-  [182830] = { -- Cooking Stove
-  },
-  [182834] = { -- Cooking Stove
-  },
-  [182835] = { -- Cooking Stove
-  },
-  [182836] = { -- Cooking Stove
-  },
-  [182860] = { -- Forge
-  },
-  [182862] = { -- Anvil
-  },
-  [182863] = { -- Anvil
-  },
-  [182864] = { -- Fire
-  },
-  [182865] = { -- Fire
-  },
-  [182866] = { -- Fire
-  },
-  [182867] = { -- Chair
-  },
-  [182868] = { -- Chair
-  },
-  [182869] = { -- Chair
-  },
-  [182870] = { -- Chair
-  },
-  [182871] = { -- Chair
-  },
-  [182872] = { -- Chair
-  },
-  [182873] = { -- Chair
-  },
-  [182874] = { -- Chair
-  },
-  [182875] = { -- Chair
-  },
-  [182876] = { -- Chair
-  },
-  [182877] = { -- Chair
-  },
-  [182878] = { -- Chair
-  },
-  [182879] = { -- Chair
-  },
-  [182880] = { -- Chair
-  },
-  [182881] = { -- Chair
-  },
-  [182882] = { -- Chair
-  },
-  [182883] = { -- Chair
-  },
-  [182884] = { -- Chair
-  },
-  [182885] = { -- Chair
-  },
-  [182886] = { -- Chair
-  },
-  [182887] = { -- Chair
-  },
-  [182888] = { -- Chair
-  },
-  [182889] = { -- Chair
-  },
-  [182890] = { -- Chair
-  },
-  [182891] = { -- Chair
-  },
-  [182892] = { -- Chair
-  },
-  [182893] = { -- Chair
-  },
-  [182894] = { -- Chair
-  },
-  [182895] = { -- Chair
-  },
-  [182896] = { -- Chair
-  },
-  [182897] = { -- Chair
-  },
-  [182898] = { -- Chair
-  },
-  [182899] = { -- Chair
-  },
-  [182900] = { -- Chair
-  },
-  [182901] = { -- Chair
-  },
-  [182902] = { -- Chair
-  },
-  [182903] = { -- Chair
-  },
-  [182904] = { -- Chair
-  },
-  [182905] = { -- Chair
-  },
-  [182906] = { -- Chair
-  },
-  [182907] = { -- Chair
-  },
-  [182908] = { -- Chair
-  },
-  [182909] = { -- Chair
-  },
-  [182910] = { -- Chair
-  },
-  [182911] = { -- Chair
-  },
-  [182912] = { -- Chair
-  },
-  [182913] = { -- Chair
-  },
-  [182914] = { -- Chair
-  },
-  [182915] = { -- Chair
-  },
-  [182916] = { -- Chair
-  },
-  [182917] = { -- Chair
-  },
-  [182918] = { -- Chair
-  },
-  [182919] = { -- Chair
-  },
-  [182920] = { -- Chair
-  },
-  [182921] = { -- Chair
-  },
-  [182922] = { -- Chair
-  },
-  [182923] = { -- Chair
-  },
-  [182924] = { -- Chair
-  },
-  [182925] = { -- Chair
-  },
-  [182926] = { -- Chair
-  },
-  [182927] = { -- Chair
-  },
-  [182928] = { -- Chair
-  },
-  [182929] = { -- Chair
-  },
-  [182939] = { -- Mailbox
-    ["fac"] = "A",
-  },
-  [182942] = { -- Cage
-  },
-  [182943] = { -- Cage Base
   },
   [182944] = { -- Bonfire
   },
   [182945] = { -- Legion Stone Aura
   },
-  [182946] = { -- Mailbox
-    ["fac"] = "H",
-  },
-  [182951] = { -- Pure Water
-  },
-  [182952] = { -- Steam Pump Flotsam
-  },
-  [182953] = { -- Sporefish School
-  },
-  [182954] = { -- Brackish Mixed School
-  },
-  [182956] = { -- School of Darter
-  },
-  [182957] = { -- Highland Mixed School
-  },
-  [182958] = { -- Mudfish School
-  },
-  [182959] = { -- Bluefish School
-  },
-  [182960] = { -- Chair
-  },
-  [182961] = { -- Chair
-  },
-  [182962] = { -- Chair
-  },
-  [182963] = { -- Chair
-  },
-  [182964] = { -- Chair
-  },
-  [182965] = { -- Chair
-  },
-  [182966] = { -- Chair
-  },
-  [182967] = { -- Anvil
-  },
-  [182968] = { -- Anvil
-  },
-  [182969] = { -- Anvil
-  },
-  [182970] = { -- Anvil
-  },
-  [182971] = { -- Anvil
-  },
-  [182972] = { -- Anvil
-  },
-  [182973] = { -- Anvil
-  },
-  [182994] = { -- Fire
-  },
-  [183005] = { -- Fire
-  },
-  [183006] = { -- Fire
-  },
-  [183007] = { -- Fire
-  },
-  [183008] = { -- Fire
-  },
-  [183009] = { -- Fire
-  },
-  [183010] = { -- Fire
-  },
-  [183022] = { -- Chair
-  },
-  [183023] = { -- Chair
-  },
-  [183024] = { -- Chair
-  },
-  [183025] = { -- Chair
-  },
-  [183026] = { -- Chair
-  },
-  [183027] = { -- Chair
-  },
-  [183028] = { -- Chair
-  },
-  [183029] = { -- Chair
-  },
-  [183030] = { -- Chair
-  },
-  [183031] = { -- Anvil
-  },
-  [183032] = { -- Chair
-  },
-  [183033] = { -- Chair
-  },
-  [183034] = { -- Anvil
-  },
-  [183035] = { -- Chair
-  },
-  [183039] = { -- Mailbox
-  },
-  [183046] = { -- Blindweed
-  },
-  [183050] = { -- The Saga of Terokk
-  },
-  [183051] = { -- Sethekk Cage
-  },
-  [183099] = { -- Campfire
-  },
-  [183104] = { -- Terokkar Banner
-  },
-  [183105] = { -- Orc Table
-  },
-  [183111] = { -- Burning Brazier
-  },
-  [183112] = { -- Burning Brazier
-  },
-  [183113] = { -- Burning Brazier
-  },
-  [183114] = { -- Burning Brazier
-  },
-  [183116] = { -- Burning Brazier
-  },
-  [183117] = { -- Burning Brazier
-  },
-  [183118] = { -- Burning Brazier
-  },
-  [183119] = { -- Burning Brazier
-  },
-  [183120] = { -- Anvil
-  },
-  [183121] = { -- Forge
-  },
-  [183124] = { -- Bonfire
-  },
-  [183125] = { -- Bonfire
-  },
-  [183126] = { -- Bonfire
-  },
-  [183127] = { -- Campfire
-  },
-  [183129] = { -- Campfire
-  },
-  [183132] = { -- Campfire
-  },
-  [183134] = { -- Campfire
-  },
-  [183136] = { -- Campfire
-  },
-  [183137] = { -- Campfire
-  },
-  [183139] = { -- Campfire
-  },
-  [183141] = { -- Campfire
-  },
-  [183143] = { -- Campfire
-  },
-  [183147] = { -- Mysterious Egg
-  },
-  [183148] = { -- Forge
-  },
-  [183149] = { -- Anvil
-  },
-  [183151] = { -- Campfire
-  },
-  [183152] = { -- Campfire
-  },
-  [183153] = { -- Campfire
-  },
-  [183154] = { -- Campfire
-  },
-  [183155] = { -- Campfire
-  },
-  [183159] = { -- Bonfire
-  },
-  [183160] = { -- Bonfire
-  },
-  [183161] = { -- Bonfire
-  },
-  [183162] = { -- Campfire
-  },
-  [183166] = { -- Smoker
-  },
-  [183167] = { -- Mailbox
-    ["fac"] = "H",
-  },
-  [183168] = { -- Smoker
-  },
-  [183170] = { -- Prison Portcullis
-  },
-  [183189] = { -- Burning Brazier
-  },
-  [183190] = { -- Burning Brazier
-  },
-  [183191] = { -- Burning Brazier
-  },
-  [183192] = { -- Burning Brazier
-  },
-  [183193] = { -- Burning Brazier
-  },
-  [183194] = { -- Burning Brazier
-  },
-  [183195] = { -- Burning Brazier
-  },
-  [183196] = { -- Burning Brazier
-  },
-  [183197] = { -- Bonfire
-  },
-  [183198] = { -- Cooking Fire
-  },
-  [183204] = { -- Bonfire
-  },
-  [183265] = { -- Bonfire
-  },
-  [183266] = { -- Footlocker
-  },
-  [183267] = { -- Dresser
-  },
-  [183268] = { -- Bookshelf
-  },
-  [183269] = { -- Weapon Rack
-  },
-  [183270] = { -- Campfire
-  },
-  [183274] = { -- Campfire
-  },
-  [183275] = { -- Bonfire
-  },
-  [183276] = { -- 0
-  },
-  [183277] = { -- Bonfire
-  },
-  [183297] = { -- Doodad_InnBench02
-  },
-  [183298] = { -- Doodad_InnBench01
-  },
-  [183299] = { -- Doodad_InnBench04
-  },
-  [183300] = { -- Doodad_InnBench03
-  },
-  [183305] = { -- Stove
-  },
-  [183313] = { -- Bonfire
-  },
   [183314] = { -- Burning Fire
   },
   [183315] = { -- Burning Fire
   },
-  [183317] = { -- Shattrath Portal to Darnassus
-    ["fac"] = "A",
-  },
-  [183322] = { -- Shattrath Portal to Ironforge
-    ["fac"] = "A",
-  },
-  [183323] = { -- Shattrath Portal to Orgrimmar
-    ["fac"] = "H",
-  },
-  [183325] = { -- Shattrath Portal to Stormwind
-    ["fac"] = "A",
-  },
-  [183326] = { -- Shattrath Portal to Thunder Bluff
-    ["fac"] = "H",
-  },
-  [183327] = { -- Shattrath Portal to Undercity
-    ["fac"] = "H",
-  },
-  [183333] = { -- Vanguard of the Alliance
-  },
-  [183338] = { -- Imarion's Sword
-    ["fac"] = "A",
-  },
-  [183339] = { -- Makha's Sword
-    ["fac"] = "H",
-  },
-  [183342] = { -- Warboss Nekrogg's Orders
-  },
   [183343] = { -- Warboss Nekrogg's Orders
   },
-  [183344] = { -- Fel Fire
-  },
-  [183345] = { -- Forge
-  },
-  [183346] = { -- Anvil
-  },
-  [183347] = { -- Forge
-  },
-  [183348] = { -- Anvil
-  },
-  [183349] = { -- Campfire
-  },
   [183356] = { -- Theatric Lightning
-  },
-  [183368] = { -- Brazier
-  },
-  [183369] = { -- Brazier
-  },
-  [183370] = { -- Brazier
-  },
-  [183371] = { -- Brazier
-  },
-  [183372] = { -- Brazier
-  },
-  [183373] = { -- Brazier
-  },
-  [183374] = { -- Brazier
-  },
-  [183375] = { -- Brazier
-  },
-  [183376] = { -- Brazier
-  },
-  [183377] = { -- Brazier
-  },
-  [183378] = { -- Brazier
-  },
-  [183379] = { -- Brazier
-  },
-  [183380] = { -- Brazier
-  },
-  [183381] = { -- Brazier
-  },
-  [183382] = { -- Brazier
-  },
-  [183383] = { -- Fire Pit
-  },
-  [183385] = { -- Sanguine Hibiscus
-  },
-  [183386] = { -- Sanguine Hibiscus
-  },
-  [183393] = { -- Bonfire
-  },
-  [183397] = { -- Zeppelin Debris
-  },
-  [183401] = { -- Portcullis
-  },
-  [183402] = { -- Portcullis
-  },
-  [183411] = { -- Terokkar Banner
-  },
-  [183412] = { -- Terokkar Banner
-  },
-  [183413] = { -- Terokkar Banner
-  },
-  [183414] = { -- Terokkar Banner
-  },
-  [183418] = { -- Bonfire
-  },
-  [183419] = { -- Bonfire
-  },
-  [183420] = { -- Bonfire
-  },
-  [183421] = { -- Bonfire
-  },
-  [183422] = { -- Bonfire
-  },
-  [183423] = { -- Bonfire
-  },
-  [183424] = { -- Bonfire
-  },
-  [183425] = { -- Bonfire
-  },
-  [183427] = { -- Bonfire
-  },
-  [183428] = { -- Bonfire
-  },
-  [183429] = { -- Campfire
-  },
-  [183430] = { -- Campfire
-  },
-  [183432] = { -- Bonfire
-  },
-  [183433] = { -- Bonfire
-  },
-  [183450] = { -- Gatehouse Door
-  },
-  [183465] = { -- Smoked Meat Rack
-  },
-  [183467] = { -- Bonfire
-  },
-  [183483] = { -- Anvil
-  },
-  [183484] = { -- Forge
-  },
-  [183497] = { -- 
-  },
-  [183498] = { -- 
-  },
-  [183499] = { -- 
-  },
-  [183500] = { -- 
-  },
-  [183501] = { -- 
-  },
-  [183502] = { -- 
-  },
-  [183516] = { -- Aura
-  },
-  [183517] = { -- Lever
-  },
-  [183518] = { -- Lever
-  },
-  [183519] = { -- Chair
-  },
-  [183520] = { -- Chair
-  },
-  [183521] = { -- Chair
-  },
-  [183522] = { -- Chair
-  },
-  [183523] = { -- Chair
-  },
-  [183524] = { -- Chair
-  },
-  [183525] = { -- Chair
-  },
-  [183526] = { -- Chair
-  },
-  [183527] = { -- Chair
-  },
-  [183528] = { -- Chair
-  },
-  [183529] = { -- Chair
-  },
-  [183530] = { -- Chair
-  },
-  [183531] = { -- Chair
-  },
-  [183532] = { -- Chair
-  },
-  [183533] = { -- Chair
-  },
-  [183534] = { -- Chair
-  },
-  [183535] = { -- Chair
-  },
-  [183536] = { -- Chair
-  },
-  [183537] = { -- Chair
-  },
-  [183538] = { -- Chair
-  },
-  [183539] = { -- Chair
-  },
-  [183540] = { -- Chair
-  },
-  [183541] = { -- Chair
-  },
-  [183542] = { -- Chair
-  },
-  [183543] = { -- Chair
-  },
-  [183544] = { -- Chair
-  },
-  [183545] = { -- Chair
-  },
-  [183546] = { -- Chair
-  },
-  [183547] = { -- Chair
-  },
-  [183548] = { -- Chair
-  },
-  [183549] = { -- Chair
-  },
-  [183550] = { -- Chair
-  },
-  [183551] = { -- Chair
-  },
-  [183552] = { -- Chair
-  },
-  [183553] = { -- Chair
-  },
-  [183554] = { -- Chair
-  },
-  [183555] = { -- Chair
-  },
-  [183556] = { -- Chair
-  },
-  [183557] = { -- Chair
-  },
-  [183558] = { -- Chair
-  },
-  [183559] = { -- Chair
-  },
-  [183560] = { -- Chair
-  },
-  [183561] = { -- Chair
-  },
-  [183562] = { -- Chair
-  },
-  [183563] = { -- Chair
-  },
-  [183564] = { -- Chair
-  },
-  [183565] = { -- Chair
-  },
-  [183566] = { -- Chair
-  },
-  [183567] = { -- Chair
-  },
-  [183568] = { -- Chair
-  },
-  [183569] = { -- Chair
-  },
-  [183570] = { -- Chair
-  },
-  [183571] = { -- Chair
-  },
-  [183572] = { -- Chair
-  },
-  [183573] = { -- Chair
-  },
-  [183574] = { -- Chair
-  },
-  [183575] = { -- Chair
-  },
-  [183576] = { -- Chair
-  },
-  [183577] = { -- Chair
-  },
-  [183578] = { -- Chair
-  },
-  [183579] = { -- Chair
-  },
-  [183580] = { -- Chair
-  },
-  [183581] = { -- Chair
-  },
-  [183582] = { -- Chair
-  },
-  [183583] = { -- Chair
-  },
-  [183584] = { -- Chair
-  },
-  [183585] = { -- Chair
-  },
-  [183586] = { -- Chair
-  },
-  [183587] = { -- Chair
-  },
-  [183588] = { -- Chair
-  },
-  [183589] = { -- Chair
-  },
-  [183590] = { -- Chair
-  },
-  [183591] = { -- Chair
-  },
-  [183592] = { -- Chair
-  },
-  [183593] = { -- Chair
-  },
-  [183594] = { -- Chair
-  },
-  [183595] = { -- Chair
-  },
-  [183596] = { -- Chair
-  },
-  [183597] = { -- Chair
-  },
-  [183598] = { -- Chair
-  },
-  [183599] = { -- Chair
-  },
-  [183600] = { -- Chair
-  },
-  [183601] = { -- Chair
-  },
-  [183602] = { -- Chair
-  },
-  [183603] = { -- Chair
-  },
-  [183604] = { -- Chair
-  },
-  [183605] = { -- Chair
-  },
-  [183606] = { -- Chair
-  },
-  [183607] = { -- Chair
-  },
-  [183608] = { -- Chair
-  },
-  [183609] = { -- Chair
-  },
-  [183610] = { -- Chair
-  },
-  [183611] = { -- Chair
-  },
-  [183612] = { -- Chair
-  },
-  [183613] = { -- Chair
-  },
-  [183614] = { -- Chair
-  },
-  [183615] = { -- Chair
-  },
-  [183616] = { -- Chair
-  },
-  [183617] = { -- Chair
-  },
-  [183618] = { -- Chair
-  },
-  [183619] = { -- Chair
-  },
-  [183620] = { -- Chair
-  },
-  [183621] = { -- Chair
-  },
-  [183622] = { -- Chair
-  },
-  [183623] = { -- Chair
-  },
-  [183624] = { -- Chair
-  },
-  [183625] = { -- Chair
-  },
-  [183626] = { -- Chair
-  },
-  [183627] = { -- Chair
-  },
-  [183628] = { -- Chair
-  },
-  [183629] = { -- Chair
-  },
-  [183630] = { -- Chair
-  },
-  [183631] = { -- Chair
-  },
-  [183632] = { -- Chair
-  },
-  [183633] = { -- Chair
-  },
-  [183634] = { -- Chair
-  },
-  [183635] = { -- Chair
-  },
-  [183636] = { -- Chair
-  },
-  [183637] = { -- Chair
-  },
-  [183638] = { -- Chair
-  },
-  [183639] = { -- Chair
-  },
-  [183640] = { -- Chair
-  },
-  [183641] = { -- Chair
-  },
-  [183642] = { -- Chair
-  },
-  [183643] = { -- Chair
-  },
-  [183644] = { -- Chair
-  },
-  [183645] = { -- Chair
-  },
-  [183646] = { -- Chair
-  },
-  [183647] = { -- Chair
-  },
-  [183648] = { -- Chair
-  },
-  [183649] = { -- Chair
-  },
-  [183650] = { -- Chair
-  },
-  [183651] = { -- Chair
-  },
-  [183652] = { -- Chair
-  },
-  [183653] = { -- Chair
-  },
-  [183654] = { -- Chair
-  },
-  [183655] = { -- Chair
-  },
-  [183656] = { -- Chair
-  },
-  [183657] = { -- Chair
-  },
-  [183658] = { -- Chair
-  },
-  [183659] = { -- Chair
-  },
-  [183660] = { -- Chair
-  },
-  [183661] = { -- Chair
-  },
-  [183662] = { -- Chair
-  },
-  [183663] = { -- Chair
-  },
-  [183664] = { -- Chair
-  },
-  [183665] = { -- Chair
-  },
-  [183666] = { -- Chair
-  },
-  [183667] = { -- Chair
-  },
-  [183668] = { -- Chair
-  },
-  [183669] = { -- Chair
-  },
-  [183670] = { -- Chair
-  },
-  [183671] = { -- Chair
-  },
-  [183672] = { -- Chair
-  },
-  [183673] = { -- Chair
-  },
-  [183674] = { -- Chair
-  },
-  [183675] = { -- Chair
-  },
-  [183676] = { -- Chair
-  },
-  [183677] = { -- Chair
-  },
-  [183678] = { -- Chair
-  },
-  [183679] = { -- Chair
-  },
-  [183680] = { -- Chair
-  },
-  [183681] = { -- Chair
-  },
-  [183682] = { -- Chair
-  },
-  [183683] = { -- Chair
-  },
-  [183684] = { -- Chair
-  },
-  [183685] = { -- Chair
-  },
-  [183686] = { -- Chair
-  },
-  [183687] = { -- Chair
-  },
-  [183688] = { -- Chair
-  },
-  [183689] = { -- Chair
-  },
-  [183690] = { -- Chair
-  },
-  [183691] = { -- Chair
-  },
-  [183692] = { -- Chair
-  },
-  [183693] = { -- Chair
-  },
-  [183694] = { -- Chair
-  },
-  [183703] = { -- Chair
-  },
-  [183712] = { -- Chair
-  },
-  [183713] = { -- Chair
-  },
-  [183714] = { -- Chair
-  },
-  [183740] = { -- Chair
-  },
-  [183741] = { -- Chair
-  },
-  [183742] = { -- Chair
-  },
-  [183743] = { -- Chair
-  },
-  [183744] = { -- Chair
-  },
-  [183745] = { -- Chair
-  },
-  [183746] = { -- Chair
-  },
-  [183747] = { -- Chair
-  },
-  [183748] = { -- Chair
-  },
-  [183749] = { -- Chair
   },
   [183750] = { -- Chair
   },
@@ -77395,167 +75502,17 @@ pfDB["objects"]["data"] = {
   },
   [183755] = { -- Chair
   },
-  [183761] = { -- Anvil
-  },
-  [183768] = { -- Etherlithium Matrix Crystal
-  },
-  [183773] = { -- Chair
-  },
-  [183774] = { -- Chair
-  },
-  [183775] = { -- Chair
-  },
-  [183776] = { -- Chair
-  },
-  [183777] = { -- Chair
-  },
-  [183778] = { -- Chair
-  },
-  [183779] = { -- Chair
-  },
-  [183780] = { -- Chair
-  },
-  [183781] = { -- Chair
-  },
-  [183791] = { -- Might of the Horde
-  },
   [183796] = { -- Fire
   },
   [183797] = { -- Smoke
   },
-  [183811] = { -- Wanted Poster
-    ["fac"] = "AH",
-  },
-  [183812] = { -- Green aura, short column
-  },
-  [183816] = { -- Hellfire Fire
-  },
-  [183818] = { -- Forge
-  },
-  [183821] = { -- Stewpot
-  },
-  [183824] = { -- Bonfire
-  },
-  [183827] = { -- Cauldron
-  },
-  [183828] = { -- Bonfire
-  },
-  [183853] = { -- Arcanist Maisie the Storm-Summoner
-    ["fac"] = "AH",
-  },
-  [183854] = { -- Magistrix Monica the Sun-Gazer
-  },
-  [183882] = { -- Bonfire
-  },
-  [183883] = { -- Bonfire
-  },
   [183894] = { -- Bonfire
-  },
-  [183895] = { -- Cauldron
-  },
-  [183896] = { -- Fierce Blaze
-  },
-  [183897] = { -- Fierce Blaze
-  },
-  [183898] = { -- Fierce Blaze
-  },
-  [183899] = { -- Fierce Blaze
-  },
-  [183900] = { -- Fierce Blaze
-  },
-  [183901] = { -- Fierce Blaze
-  },
-  [183902] = { -- Fierce Blaze
-  },
-  [183903] = { -- Fierce Blaze
-  },
-  [183904] = { -- Fierce Blaze
-  },
-  [183905] = { -- Fierce Blaze
-  },
-  [183906] = { -- Fierce Blaze
-  },
-  [183907] = { -- Fierce Blaze
-  },
-  [183908] = { -- Fierce Blaze
-  },
-  [183909] = { -- Bonfire
-  },
-  [183910] = { -- Fierce Blaze
-  },
-  [183911] = { -- Fierce Blaze
-  },
-  [183912] = { -- Fierce Blaze
-  },
-  [183913] = { -- Fierce Blaze
-  },
-  [183914] = { -- Fierce Blaze
-  },
-  [183915] = { -- Fierce Blaze
-  },
-  [183916] = { -- Fierce Blaze
-  },
-  [183917] = { -- Fierce Blaze
-  },
-  [183918] = { -- Fierce Blaze
-  },
-  [183919] = { -- Fierce Blaze
-  },
-  [183920] = { -- Fierce Blaze
-  },
-  [183922] = { -- Cauldron
-  },
-  [183923] = { -- Cauldron
-  },
-  [183924] = { -- Cauldron
-  },
-  [183925] = { -- Cauldron
-  },
-  [183926] = { -- Cauldron
-  },
-  [183927] = { -- Cauldron
-  },
-  [183930] = { -- Cauldron
-  },
-  [183931] = { -- Cauldron
-  },
-  [183934] = { -- Shredder Parts
-  },
-  [183936] = { -- Manni's Cage
-  },
-  [183940] = { -- Moh's Cage
-  },
-  [183941] = { -- Jakk's Cage
-  },
-  [183946] = { -- Bonfire
-  },
-  [183984] = { -- Bonfire
-  },
-  [183985] = { -- Campfire
-  },
-  [183986] = { -- Campfire
   },
   [183987] = { -- Rocket Fire
   },
   [183988] = { -- Rocket Smoke
   },
   [183991] = { -- Weapon Rack
-  },
-  [183992] = { -- Amadi Crate
-  },
-  [183993] = { -- Amadi Sack
-  },
-  [183994] = { -- Amadi Table
-  },
-  [183995] = { -- Amadi Apples
-  },
-  [183996] = { -- Amadi Scroll
-  },
-  [183997] = { -- The Saga of Terokk
-  },
-  [184003] = { -- Cauldron
-  },
-  [184004] = { -- Anvil
   },
   [184006] = { -- Temporal Prison
     ["coords"] = {
@@ -77564,47 +75521,7 @@ pfDB["objects"]["data"] = {
       [3] = { 57.6, 59.2, 440, 900 },
     },
   },
-  [184009] = { -- Bonfire
-  },
-  [184010] = { -- Bonfire
-  },
-  [184011] = { -- Bonfire
-  },
-  [184012] = { -- Bonfire
-  },
-  [184015] = { -- Bonfire
-  },
-  [184016] = { -- Bonfire
-  },
   [184017] = { -- Bonfire
-  },
-  [184018] = { -- Bonfire
-  },
-  [184021] = { -- Bonfire
-  },
-  [184022] = { -- Bonfire
-  },
-  [184023] = { -- Bonfire
-  },
-  [184024] = { -- Bonfire
-  },
-  [184025] = { -- Bonfire
-  },
-  [184026] = { -- Fierce Blaze
-  },
-  [184027] = { -- Fierce Blaze
-  },
-  [184028] = { -- Fierce Blaze
-  },
-  [184029] = { -- Fierce Blaze
-  },
-  [184030] = { -- Bonfire
-  },
-  [184032] = { -- Bonfire
-  },
-  [184033] = { -- Bonfire
-  },
-  [184034] = { -- Bonfire
   },
   [184057] = { -- Durnholde Keep
   },
@@ -77616,79 +75533,15 @@ pfDB["objects"]["data"] = {
   },
   [184061] = { -- Southshore
   },
-  [184062] = { -- Durnholde Keep
-  },
-  [184063] = { -- Southshore
-  },
-  [184064] = { -- Tarren Mill
-  },
-  [184065] = { -- Durnholde Keep
-  },
-  [184066] = { -- Southshore
-  },
   [184067] = { -- Durnholde Keep
-  },
-  [184068] = { -- Tarren Mill
-  },
-  [184078] = { -- Nether Dragonkin Egg
-  },
-  [184080] = { -- BE Tower Cap Pt
-  },
-  [184081] = { -- Fel Reaver Cap Pt
   },
   [184082] = { -- Human Tower Cap Pt
   },
-  [184083] = { -- Draenei Tower Cap Pt
-  },
-  [184085] = { -- Mailbox
-  },
   [184092] = { -- Legion Communicator Aura
-  },
-  [184093] = { -- 
-  },
-  [184094] = { -- 
-  },
-  [184095] = { -- 
   },
   [184096] = { -- 
   },
-  [184097] = { -- 
-  },
-  [184098] = { -- 
-  },
-  [184099] = { -- 
-  },
-  [184100] = { -- 
-  },
-  [184101] = { -- 
-  },
-  [184102] = { -- 
-  },
-  [184103] = { -- 
-  },
-  [184104] = { -- 
-  },
-  [184105] = { -- 
-  },
-  [184114] = { -- 
-  },
   [184119] = { -- Scrying Aura
-  },
-  [184121] = { -- Krasus's Compendium - Chapter 1
-  },
-  [184123] = { -- Krasus's Compendium - Chapter 3
-  },
-  [184124] = { -- Krasus's Compendium Aura
-  },
-  [184144] = { -- Arelion's Knapsack Aura
-  },
-  [184145] = { -- Campfire
-  },
-  [184147] = { -- Mailbox
-    ["fac"] = "A",
-  },
-  [184148] = { -- Mailbox
-    ["fac"] = "H",
   },
   [184161] = { -- Bonfire
   },
@@ -77697,19 +75550,7 @@ pfDB["objects"]["data"] = {
       [1] = { 46.8, 74.7, 41, 900 },
     },
   },
-  [184247] = { -- Doodad_BlackRockCellDoor01
-  },
-  [184265] = { -- Spare Teleporter Parts
-  },
-  [184285] = { -- Anvil
-  },
-  [184286] = { -- Forge
-  },
   [184287] = { -- Campfire
-  },
-  [184300] = { -- Necromantic Focus
-  },
-  [184303] = { -- Blazing Fire
   },
   [184304] = { -- Locked Chest
   },
@@ -77719,135 +75560,19 @@ pfDB["objects"]["data"] = {
   },
   [184308] = { -- Mograine's Stronbox
   },
-  [184310] = { -- Suspicious Outhouse
-  },
-  [184313] = { -- Anvil
-  },
-  [184314] = { -- Bonfire
-  },
   [184315] = { -- Bloodmaul Brew
-  },
-  [184316] = { -- Stewpot
-  },
-  [184317] = { -- Bonfire
   },
   [184332] = { -- Tome of Scrying
   },
-  [184339] = { -- Bonfire
-  },
-  [184340] = { -- Bonfire
-  },
-  [184341] = { -- Bonfire
-  },
-  [184342] = { -- Bonfire
-  },
-  [184346] = { -- Bonfire
-  },
-  [184347] = { -- Bonfire
-  },
-  [184355] = { -- Cauldron
-  },
-  [184357] = { -- Bonfire
-  },
-  [184360] = { -- Bonfire
-  },
-  [184364] = { -- Campfire
-  },
-  [184368] = { -- Campfire
-  },
-  [184369] = { -- Campfire
-  },
-  [184370] = { -- Cauldron
-  },
-  [184373] = { -- Cauldron
-  },
-  [184376] = { -- Campfire
-  },
-  [184377] = { -- Bonfire
-  },
-  [184380] = { -- Visual Banner (Horde)
-  },
-  [184381] = { -- Visual Banner (Alliance)
-  },
-  [184382] = { -- Visual Banner (Neutral)
-  },
-  [184384] = { -- Brazier
-  },
-  [184385] = { -- Brazier
-  },
-  [184386] = { -- Brazier
-  },
-  [184387] = { -- Brazier
-  },
-  [184388] = { -- Brazier
-  },
-  [184389] = { -- Brazier
-  },
-  [184390] = { -- Brazier
-  },
-  [184391] = { -- Brazier
-  },
-  [184392] = { -- Brazier
-  },
-  [184395] = { -- Bonfire
-  },
-  [184396] = { -- Bonfire
-  },
-  [184398] = { -- Brazier
-  },
-  [184399] = { -- Brazier
-  },
-  [184400] = { -- Bonfire
-  },
-  [184401] = { -- Fire Pit
-  },
-  [184416] = { -- 
-  },
-  [184442] = { -- Cauldron
-  },
-  [184448] = { -- Bonfire
-  },
   [184450] = { -- Crimson Crystal Shard
   },
-  [184454] = { -- Earthbinder's Rune
-  },
   [184461] = { -- 
-  },
-  [184467] = { -- Bonfire
-  },
-  [184470] = { -- Bonfire
-  },
-  [184471] = { -- Bonfire
-  },
-  [184472] = { -- Cauldron
-  },
-  [184474] = { -- Bonfire
-  },
-  [184475] = { -- Cauldron
-  },
-  [184478] = { -- Torn Pilgrim's Pack
-  },
-  [184494] = { -- Bonfire
-  },
-  [184495] = { -- Campfire
-  },
-  [184504] = { -- Bloodmaul Brew Keg
-  },
-  [184507] = { -- 
-  },
-  [184508] = { -- 
-  },
-  [184509] = { -- 
   },
   [184511] = { -- 
   },
   [184512] = { -- 
   },
   [184513] = { -- 
-  },
-  [184514] = { -- 
-  },
-  [184515] = { -- 
   },
   [184530] = { -- Chair
     ["coords"] = {
@@ -77864,39 +75589,9 @@ pfDB["objects"]["data"] = {
       [1] = { 57.3, 57.1, 440, 900 },
     },
   },
-  [184554] = { -- Molten metal
-  },
-  [184558] = { -- Anvil
-  },
-  [184559] = { -- Anvil
-  },
-  [184560] = { -- Ethereum Data Cell
-  },
   [184561] = { -- Protectorate Disruptor
   },
-  [184563] = { -- 
-  },
-  [184564] = { -- 
-  },
-  [184565] = { -- 
-  },
-  [184578] = { -- Discarded Nutriment
-  },
-  [184579] = { -- 
-  },
-  [184580] = { -- 
-  },
-  [184581] = { -- 
-  },
-  [184582] = { -- 
-  },
   [184583] = { -- 
-  },
-  [184584] = { -- 
-  },
-  [184585] = { -- 
-  },
-  [184612] = { -- Surveying Marker Aura
   },
   [184616] = { -- Anvil
     ["coords"] = {
@@ -77927,110 +75622,25 @@ pfDB["objects"]["data"] = {
   },
   [184647] = { -- Bonfire
   },
-  [184648] = { -- Bonfire
-  },
-  [184649] = { -- Bonfire
-  },
-  [184650] = { -- Bonfire
-  },
-  [184651] = { -- Bonfire
-  },
-  [184652] = { -- Mailbox
-    ["fac"] = "A",
-  },
-  [184655] = { -- Sedai's Aura
-  },
-  [184656] = { -- Hellfire Quest - Rune of Spite Closed - 3.0
-  },
   [184658] = { -- Eye of the Citadel Aura
   },
   [184659] = { -- Mysteris of the Light Aura
-  },
-  [184660] = { -- Wanted Poster
   },
   [184661] = { -- Smoke Beacon
   },
   [184683] = { -- Bonfire
   },
-  [184684] = { -- Ravenous Flayer Egg
-  },
-  [184686] = { -- Anvil
-  },
-  [184687] = { -- Forge
-  },
-  [184688] = { -- Campfire
-  },
   [184691] = { -- Shadowmoon Tuber
-  },
-  [184694] = { -- Zelana's Alchemy Set
-  },
-  [184702] = { -- Cage
-    ["fac"] = "A",
-  },
-  [184714] = { -- Ball and Chain
-  },
-  [184717] = { -- Cauldron Smoke
-  },
-  [184724] = { -- Campfire
-  },
-  [184732] = { -- Chair
-  },
-  [184733] = { -- Chair
-  },
-  [184734] = { -- Chair
-  },
-  [184735] = { -- Chair
-  },
-  [184736] = { -- Thunderlord Clan Tablet
-  },
-  [184737] = { -- The Thunderspike
-  },
-  [184742] = { -- T'chali's Grave
-  },
-  [184743] = { -- Consuming Flames
-    ["fac"] = "AH",
   },
   [184752] = { -- Vision Guide Fire
   },
-  [184794] = { -- Sealed Box
-  },
-  [184800] = { -- Casket Lid
-  },
-  [184804] = { -- Mana Loom Circle
-  },
-  [184810] = { -- Sealed Coffin
-  },
-  [184811] = { -- Sealed Coffin
-  },
-  [184812] = { -- Sealed Coffin
-  },
-  [184813] = { -- Sealed Coffin
-  },
   [184814] = { -- Sealed Coffin
   },
-  [184815] = { -- Sealed Coffin
-  },
   [184816] = { -- Campfire
-  },
-  [184818] = { -- Campfire
-  },
-  [184836] = { -- Campfire
-  },
-  [184837] = { -- Campfire
-  },
-  [184838] = { -- Campfire
-  },
-  [184843] = { -- Torgos's Bane
-  },
-  [184844] = { -- Trachela's Carcass
   },
   [184846] = { -- Legion Hold Forge
   },
   [184847] = { -- Sealed Tome
-  },
-  [184852] = { -- Bonfire
-  },
-  [184853] = { -- Cookpot
   },
   [184858] = { -- Bag A
   },
@@ -78038,110 +75648,7 @@ pfDB["objects"]["data"] = {
   },
   [184863] = { -- Barrel A
   },
-  [184868] = { -- Baa'ri Tablet Aura
-  },
-  [184869] = { -- Baa'ri Tablet Fragment
-    ["fac"] = "AH",
-  },
-  [184870] = { -- Baa'ri Tablet Fragment
-    ["fac"] = "AH",
-  },
-  [184871] = { -- Fel Reaver Parts Aura
-  },
-  [184872] = { -- Fel Reaver Parts Aura
-  },
-  [184873] = { -- Doodad_GeneralMedChair01
-  },
-  [184874] = { -- Doodad_GeneralMedChair02
-  },
-  [184875] = { -- Doodad_GeneralMedChair03
-  },
-  [184876] = { -- Doodad_GeneralMedChair04
-  },
-  [184877] = { -- Doodad_GeneralMedChair05
-  },
-  [184878] = { -- Doodad_GeneralMedChair06
-  },
-  [184879] = { -- Doodad_GeneralMedChair07
-  },
-  [184880] = { -- Doodad_GeneralMedChair08
-  },
-  [184881] = { -- Doodad_GeneralMedChair09
-  },
-  [184882] = { -- Doodad_GeneralMedChair10
-  },
-  [184883] = { -- Doodad_GeneralMedChair11
-  },
-  [184884] = { -- Doodad_GeneralMedChair12
-  },
-  [184885] = { -- Doodad_GeneralMedChair13
-  },
-  [184886] = { -- Doodad_GeneralMedChair14
-  },
-  [184887] = { -- Doodad_GeneralMedChair15
-  },
-  [184888] = { -- Doodad_GeneralMedChair16
-  },
-  [184889] = { -- Doodad_GeneralMedChair17
-  },
-  [184890] = { -- Doodad_GeneralMedChair18
-  },
-  [184891] = { -- Doodad_GeneralMedChair19
-  },
-  [184892] = { -- Doodad_GeneralMedChair20
-  },
-  [184893] = { -- Doodad_GeneralMedChair21
-  },
-  [184894] = { -- Doodad_GeneralMedChair22
-  },
-  [184895] = { -- Doodad_GeneralMedChair23
-  },
-  [184896] = { -- Doodad_GeneralMedChair24
-  },
-  [184897] = { -- Doodad_GeneralMedChair27
-  },
-  [184898] = { -- Doodad_GeneralMedChair28
-  },
-  [184899] = { -- Doodad_GeneralMedChair29
-  },
-  [184900] = { -- Doodad_GeneralMedChair30
-  },
-  [184901] = { -- Doodad_GeneralMedChair31
-  },
-  [184902] = { -- Doodad_GeneralMedChair32
-  },
-  [184903] = { -- Doodad_GeneralMedChair33
-  },
-  [184904] = { -- Doodad_GeneralMedChair34
-  },
-  [184908] = { -- Dave's Circle
-  },
-  [184909] = { -- Dave's Glowy Gem Thing
-  },
-  [184930] = { -- Solid Fel Iron Chest
-  },
-  [184933] = { -- Solid Fel Iron Chest
-  },
-  [184935] = { -- Solid Fel Iron Chest
-  },
-  [184937] = { -- Solid Adamantite Chest
-  },
-  [184939] = { -- Solid Adamantite Chest
-  },
-  [184941] = { -- Solid Adamantite Chest
-  },
-  [184944] = { -- Mailbox
-    ["fac"] = "A",
-  },
-  [184945] = { -- Wanted Poster
-    ["fac"] = "H",
-  },
-  [184946] = { -- Wanted Poster
-    ["fac"] = "A",
-  },
   [184954] = { -- Manaforge Smoke
-  },
-  [184956] = { -- Strange Pool
   },
   [184961] = { -- Felcannon Ammunition
   },
@@ -78175,167 +75682,15 @@ pfDB["objects"]["data"] = {
   },
   [184980] = { -- Felhound Poo
   },
-  [184982] = { -- Campfire
-  },
-  [184985] = { -- Campfire
-  },
-  [184988] = { -- Campfire
-  },
-  [184989] = { -- Campfire
-  },
-  [184991] = { -- Campfire
-  },
-  [184993] = { -- Campfire
-  },
-  [184994] = { -- Campfire
-  },
-  [184995] = { -- Campfire
-  },
-  [185005] = { -- Jhang's Lantern
-  },
-  [185006] = { -- Jhang's Lunchbox
-  },
-  [185007] = { -- Jhang's Sack
-  },
   [185011] = { -- Multi-Spectrum Light Trap
-  },
-  [185023] = { -- Campfire
-  },
-  [185024] = { -- Campfire
-  },
-  [185025] = { -- Campfire
-  },
-  [185026] = { -- Campfire
-  },
-  [185027] = { -- Campfire
-  },
-  [185028] = { -- Campfire
-  },
-  [185029] = { -- Campfire
-  },
-  [185030] = { -- Campfire
-  },
-  [185031] = { -- Campfire
-  },
-  [185035] = { -- Wanted Poster
-  },
-  [185059] = { -- Fel Reaver Control Console
-  },
-  [185060] = { -- Fel Reaver Control Console
-  },
-  [185061] = { -- Fel Reaver Control Console
-  },
-  [185104] = { -- Campfire
-  },
-  [185105] = { -- Campfire
-  },
-  [185111] = { -- Bonfire
-  },
-  [185112] = { -- Campfire
-  },
-  [185113] = { -- Campfire
-  },
-  [185119] = { -- Dust Covered Chest
-  },
-  [185120] = { -- O'Mally's Instrument
   },
   [185121] = { -- Eclipsion Communication Device
   },
-  [185123] = { -- Lever
-  },
-  [185125] = { -- Heart of Fury
-  },
-  [185127] = { -- Summoning Circle
-  },
-  [185152] = { -- Grulloc's Sack
-  },
-  [185153] = { -- Bonfire
-  },
-  [185154] = { -- Bonfire
-  },
   [185155] = { -- Rocknail Flayer Carcass
-  },
-  [185157] = { -- Bonfire
-  },
-  [185158] = { -- Bonfire
-  },
-  [185159] = { -- Bonfire
-  },
-  [185160] = { -- Bonfire
-  },
-  [185161] = { -- Bonfire
-  },
-  [185162] = { -- Bonfire
-  },
-  [185163] = { -- Bonfire
-  },
-  [185164] = { -- Bonfire
-  },
-  [185166] = { -- Wanted Poster
-  },
-  [185167] = { -- Troll Skull Pile
-  },
-  [185168] = { -- Reinforced Fel Iron Chest
-  },
-  [185169] = { -- Reinforced Fel Iron Chest
-  },
-  [185180] = { -- Mordiba's Cauldron
-  },
-  [185181] = { -- Smoked Meat Rack
-  },
-  [185190] = { -- Hellfire Quest - Rune of Spite Closed 2
-  },
-  [185191] = { -- Darkstone of Terokk
-  },
-  [185200] = { -- Eye of Veil Reskk
-  },
-  [185201] = { -- Eye of Veil Shienor
-  },
-  [185210] = { -- Cursed Egg
-  },
-  [185211] = { -- Cursed Egg
-  },
-  [185218] = { -- Violet Signal Fire
-  },
-  [185221] = { -- Terokkar Forest - Derelict Caravan - Quest - Chest Opened
   },
   [185222] = { -- Challenge From the Horde
   },
-  [185224] = { -- Cabal Chest
-  },
-  [185225] = { -- Cabal Chest
-  },
-  [185226] = { -- Cabal Chest
-  },
-  [185267] = { -- Cookpot
-  },
-  [185268] = { -- Smoked Meat Rack
-  },
-  [185269] = { -- Cookpot
-  },
-  [185270] = { -- Smoked Meat Rack
-  },
-  [185283] = { -- Cauldron
-  },
-  [185284] = { -- Bonfire
-  },
-  [185286] = { -- Bonfire
-  },
-  [185288] = { -- Bonfire
-  },
-  [185289] = { -- Cauldron
-  },
-  [185290] = { -- Bonfire
-  },
   [185294] = { -- Mounted Boulder'mok Head
-  },
-  [185296] = { -- Battered Cage
-  },
-  [185301] = { -- [DND]Cage Base
-  },
-  [185302] = { -- Fei Fei's Cache
-  },
-  [185303] = { -- Fei Fei's Stash
   },
   [185314] = { -- [DND]Dragon Totem
   },
@@ -78345,93 +75700,9 @@ pfDB["objects"]["data"] = {
   },
   [185319] = { -- Warp-Gate Big Fire
   },
-  [185324] = { -- Chessboard
-  },
-  [185325] = { -- Campfire
-  },
-  [185394] = { -- Wooden Chair
-  },
-  [185395] = { -- Wooden Chair
-  },
-  [185396] = { -- Wooden Chair
-  },
-  [185397] = { -- Wooden Chair
-  },
-  [185398] = { -- Wooden Chair
-  },
-  [185399] = { -- Wooden Chair
-  },
-  [185400] = { -- Wooden Chair
-  },
-  [185401] = { -- Wooden Chair
-  },
-  [185402] = { -- Wooden Chair
-  },
-  [185403] = { -- Wooden Chair
-  },
-  [185404] = { -- Wooden Chair
-  },
-  [185405] = { -- Wooden Chair
-  },
-  [185406] = { -- Wooden Chair
-  },
-  [185407] = { -- Wooden Chair
-  },
-  [185408] = { -- Wooden Chair
-  },
-  [185409] = { -- Wooden Chair
-  },
-  [185410] = { -- Wooden Chair
-  },
-  [185411] = { -- Wooden Chair
-  },
-  [185412] = { -- Wooden Chair
-  },
-  [185413] = { -- Wooden Chair
-  },
-  [185414] = { -- Wooden Chair
-  },
-  [185415] = { -- Wooden Chair
-  },
-  [185416] = { -- Wooden Chair
-  },
-  [185417] = { -- Wooden Chair
-  },
-  [185418] = { -- Wooden Chair
-  },
-  [185419] = { -- Wooden Chair
-  },
-  [185420] = { -- Wooden Chair
-  },
-  [185421] = { -- Wooden Chair
-  },
-  [185422] = { -- Wooden Chair
-  },
-  [185423] = { -- Wooden Chair
-  },
-  [185424] = { -- Wooden Chair
-  },
-  [185425] = { -- Wooden Chair
-  },
-  [185426] = { -- Wooden Chair
-  },
-  [185427] = { -- Wooden Chair
-  },
-  [185428] = { -- Wooden Chair
-  },
-  [185429] = { -- Wooden Chair
-  },
-  [185430] = { -- Wooden Chair
-  },
-  [185431] = { -- Wooden Chair
-  },
   [185432] = { -- Wooden Chair
   },
-  [185438] = { -- Sitting Skeleton 04
-  },
   [185474] = { -- Cage
-  },
-  [185477] = { -- Mailbox
   },
   [185493] = { -- Moonglade Fountain
     ["coords"] = {
@@ -78446,47 +75717,13 @@ pfDB["objects"]["data"] = {
       [1] = { 42.9, 83.9, 28, 1200 },
     },
   },
-  [185502] = { -- Bogblossom (harmless)
-  },
   [185520] = { -- Fel Fire
   },
   [185527] = { -- Dirt Mound
   },
   [185529] = { -- Brazier
   },
-  [185530] = { -- Brazier
-  },
-  [185531] = { -- Brazier
-  },
-  [185532] = { -- Brazier
-  },
-  [185533] = { -- Brazier
-  },
-  [185534] = { -- Brazier
-  },
-  [185535] = { -- Brazier
-  },
-  [185536] = { -- Brazier
-  },
-  [185537] = { -- Brazier
-  },
-  [185538] = { -- Brazier
-  },
-  [185539] = { -- Brazier
-  },
-  [185541] = { -- Raven Stone Fragment
-  },
-  [185549] = { -- Monstrous Kaliri Egg
-  },
-  [185555] = { -- Flame Circle
-  },
   [185564] = { -- Aura Trap Purple Tall
-  },
-  [185571] = { -- 
-  },
-  [185572] = { -- 
-  },
-  [185573] = { -- 
   },
   [185578] = { -- Aura Trap Purple Tall
   },
@@ -78496,35 +75733,13 @@ pfDB["objects"]["data"] = {
   },
   [185590] = { -- Sethekk Halls Moonstone
   },
-  [185591] = { -- Ogre Drum
-  },
-  [185592] = { -- Soulgrinder Aura
-  },
   [185595] = { -- Test Rift
   },
-  [185872] = { -- Simon Game Aura Blue
-  },
-  [185873] = { -- Simon Game Aura Green
-  },
-  [185874] = { -- Simon Game Aura Red
-  },
-  [185875] = { -- Simon Game Aura Yellow
-  },
   [185893] = { -- Delicious Mutton
-  },
-  [185906] = { -- Kronk's Book
-  },
-  [185913] = { -- Skull Pile
   },
   [185916] = { -- Cage Trap
   },
   [185926] = { -- Shield Wreckage Medium
-  },
-  [185928] = { -- Ancient Skull Pile
-  },
-  [185935] = { -- Dragon Egg Aura
-  },
-  [185939] = { -- Nethermine Cargo
   },
   [185948] = { -- Simon Game Aura Blue Large
   },
@@ -78534,41 +75749,7 @@ pfDB["objects"]["data"] = {
   },
   [185951] = { -- Simon Game Aura Yellow Large
   },
-  [185952] = { -- Cage
-  },
-  [185954] = { -- Hazzik's Package
-  },
-  [186023] = { -- Bonfire
-  },
-  [186035] = { -- Bonfire
-  },
-  [186130] = { -- Bonfire
-  },
-  [186131] = { -- Bonfire
-  },
-  [186132] = { -- Bonfire
-  },
-  [186137] = { -- Anvil
-  },
-  [186138] = { -- Forge
-  },
-  [186141] = { -- Forge
-  },
-  [186142] = { -- Anvil
-  },
   [186173] = { -- Brewfest Keg Breakable
-  },
-  [186174] = { -- Cauldron
-  },
-  [186175] = { -- Cauldron
-  },
-  [186176] = { -- Cauldron
-  },
-  [186177] = { -- Bonfire
-  },
-  [186178] = { -- Cauldron
-  },
-  [186180] = { -- Bonfire
   },
   [186217] = { -- BREWFEST - Coming Soon!
   },
@@ -78577,11 +75758,7 @@ pfDB["objects"]["data"] = {
       [1] = { 59.3, 51.3, 440, 900 },
     },
   },
-  [186221] = { -- Brewfest Music Doodad
-  },
   [186250] = { -- Beer Wagon
-  },
-  [186251] = { -- Meeting Stone
   },
   [186252] = { -- Fence
   },
@@ -78594,8 +75771,6 @@ pfDB["objects"]["data"] = {
   },
   [186265] = { -- Kyle's Lunch
   },
-  [186280] = { -- Orcish Grog
-  },
   [186285] = { -- Zul'Aman Fire Med
   },
   [186286] = { -- Zul'Aman Fire Large
@@ -78603,14 +75778,6 @@ pfDB["objects"]["data"] = {
   [186287] = { -- Blackhoof Cage
   },
   [186288] = { -- Raptor Bait
-  },
-  [186307] = { -- Zul'Aman Exterior Crate B
-  },
-  [186338] = { -- Zul'Aman Dummy Cage
-  },
-  [186406] = { -- Campfire
-  },
-  [186407] = { -- Campfire
   },
   [186418] = { -- Don de Mordant
   },
@@ -78624,8 +75791,6 @@ pfDB["objects"]["data"] = {
   },
   [186425] = { -- Torche en sorbier
   },
-  [186430] = { -- Zungam's Ball and Chain
-  },
   [186451] = { -- Cauldron
     ["coords"] = {
       [1] = { 68.2, 18.8, 148, 25 },
@@ -78638,24 +75803,8 @@ pfDB["objects"]["data"] = {
   },
   [186478] = { -- Super Brew Stein
   },
-  [186482] = { -- Zul'Aman Dummy Cage - Open
-  },
-  [186622] = { -- Zul'Aman - Loot Box - Dwarf
-  },
-  [186623] = { -- Zul'Aman - Dwarf Hammer
-  },
   [186629] = { -- Mailbox
     ["fac"] = "H",
-  },
-  [186633] = { -- Gold Coins
-  },
-  [186634] = { -- Gold Coins
-  },
-  [186658] = { -- Kraz's Chest
-  },
-  [186667] = { -- Kraz's Package
-  },
-  [186672] = { -- Ashli's Bag
   },
   [186720] = { -- Fire Effigy
     ["coords"] = {
@@ -78669,10 +75818,6 @@ pfDB["objects"]["data"] = {
       [8] = { 49.2, 43.2, 14, 5 },
     },
   },
-  [186729] = { -- Mana Berry Bush
-  },
-  [186733] = { -- The Map of Zul'Aman
-  },
   [186734] = { -- Amani Charm Box
   },
   [186736] = { -- Money Bag
@@ -78685,27 +75830,11 @@ pfDB["objects"]["data"] = {
   },
   [186744] = { -- Amani Treasure Box
   },
-  [186745] = { -- Bonfire
-  },
-  [186748] = { -- Harkor's Brew Keg
-  },
-  [186750] = { -- Fudgerick's Fireworks
-  },
   [186881] = { -- Dark Iron Sabotage Plans
-  },
-  [187021] = { -- Harkor's Satchel
   },
   [187072] = { -- Razorthorn Root
   },
-  [187080] = { -- Sunwell Crystal Ward Aura
-  },
-  [187084] = { -- Large Fire
-  },
   [187115] = { -- Alchemy Lab
-  },
-  [187193] = { -- Standing, Giant
-  },
-  [187235] = { -- HDressing, Christmas Standing Medium Exterior
   },
   [187252] = { -- Campfire
     ["coords"] = {
@@ -78733,20 +75862,6 @@ pfDB["objects"]["data"] = {
       [1] = { 29.7, 47.6, 15, 900 },
       [2] = { 50.9, 78.6, 17, 900 },
     },
-  },
-  [187333] = { -- Bloodberry Bush
-  },
-  [187370] = { -- Cooking Pot
-  },
-  [187372] = { -- The Talon King's Coffer
-  },
-  [187377] = { -- Tanzar's Cage
-  },
-  [187378] = { -- Harkor's Cage
-  },
-  [187379] = { -- Kraz's Cage
-  },
-  [187380] = { -- Ashli's Cage
   },
   [187559] = { -- Horde Bonfire
     ["fac"] = "A",
@@ -78952,8 +76067,6 @@ pfDB["objects"]["data"] = {
       [189] = { 62.8, 82.8, 36, 180 },
       [190] = { 61.7, 82.6, 36, 180 },
     },
-  },
-  [187578] = { -- Scrying Orb
   },
   [187653] = { -- Standing, Post - MFF
     ["coords"] = {
@@ -79415,12 +76528,6 @@ pfDB["objects"]["data"] = {
       [4] = { 9.3, 13.0, 331, 180 },
     },
   },
-  [188067] = { -- Ice Block
-  },
-  [188072] = { -- Ice Stone Mount
-  },
-  [188073] = { -- Ahune Bonfire
-  },
   [188123] = { -- Mailbox
     ["fac"] = "A",
     ["coords"] = {
@@ -79429,8 +76536,6 @@ pfDB["objects"]["data"] = {
     },
   },
   [188132] = { -- Mailbox
-  },
-  [188142] = { -- Ice Block, Big
   },
   [188174] = { -- Midsummer Music Doodad
     ["coords"] = {
@@ -79445,8 +76550,6 @@ pfDB["objects"]["data"] = {
     },
   },
   [188214] = { -- Bonfire
-  },
-  [188352] = { -- Flame of Shattrath
   },
   [188415] = { -- Orb of the Blue Flight
   },

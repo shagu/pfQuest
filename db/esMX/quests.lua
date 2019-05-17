@@ -14664,6 +14664,11 @@ pfDB["quests"]["esMX"] = {
     ["O"] = "Si Korrak el Sanguinario vuelve por la Tierra de Disputa, encuéntralo y acaba con él.$B$BLlévale la calavera de Korrak al teniente Haggerdin en las Laderas de Trabalomas.|n",
     ["D"] = "Hay algo que no encaja en todo esto... ¿Ha pensado alguien en quemar el cadáver de Korrak? Esos trols no se detendrán ante nada para resucitar a su líder caído <como a menudo hacen los paganos semihombres-semibestias.$B$BAbre bien los ojos, $n. No te asustes si Korrak nos sorprende con una reaparición y, si lo hace, quiero que sea ejecutado y que su cuerpo sea reducido a cenizas.$B$BPara mayor seguridad, córtale la cabeza y tráeme su calavera antes de prenderle fuego al cuerpo sin vida.",
   },
+  [7383] = {
+    ["T"] = "Teldrassil: La carga de los Kaldorei",
+    ["O"] = "Llena la ampolla de amatista.",
+    ["D"] = "Ahora debes visitar la poza de la luna que hay bajo las ramas del Árbol del Oráculo, lejos al noroeste. Es la primera y más poderosa de nuestras pozas; se dice que en sus aguas está la esencia misma de los poderes de Elune.$b$bLlena una ampolla con su agua y vuelve a mí. Cuando hayas completado tu misión, me reuniré contigo en el cruce que hay enfrente de Darnassus.",
+  },
   [7385] = {
     ["T"] = "Un galón de sangre",
     ["O"] = "null",
@@ -16556,8 +16561,8 @@ pfDB["quests"]["esMX"] = {
   },
   [8196] = {
     ["T"] = "Mangos de esencia",
-    ["O"] = "We have enough of a supply here on the isle to offer you a handful in exchange for a Zandalar Honor Token. Speak with Vinchaxa if you need to learn how to get tokens; otherwise, let\'s get to the business at hand!",
-    ["D"] = "The extremely potent essence mango grows across many of the islands in the South Seas. A single mango will refresh those who eat it, both physically and mentally. If you\'ve never had one, you do yourself a disservice!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8201] = {
     ["T"] = "Una colección de cabezas",
@@ -16661,13 +16666,13 @@ pfDB["quests"]["esMX"] = {
   },
   [8243] = {
     ["T"] = "Los mejunjes potentes de Zanza",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8246] = {
     ["T"] = "Las sortijas de Zandalar",
-    ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
-    ["D"] = "May - for someone as exalted among the Zandalar as you are, I have something very special for you. Direct from our home in the South Seas... the Signets of the Zandalar! These signets are used to enhance any shoulder item you may possess. Should you seek might, mojo, or serenity - I have what you need!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8249] = {
     ["T"] = "Se necesitan cajas de trastos",

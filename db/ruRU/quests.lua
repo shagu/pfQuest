@@ -14664,6 +14664,11 @@ pfDB["quests"]["ruRU"] = {
     ["O"] = "В случае, если Коррак Кровопуск возвратится на Поле брани, найдите его и уничтожьте.$B$BПринесите череп Коррака лейтенанту Мурпу в предгорья Хилсбрада.",
     ["D"] = "Что-то здесь не так... Кто-нибудь догадался сжечь тело Коррака? Эти синекожие язычники ни перед чем не остановятся, чтобы возродить своего вождя.$B$BСмотри в оба, $N. Не удивляйся, если снова увидишь Коррака в живых. Убей его снова, но на этот раз обязательно сожги тело.$B$BЧтобы уж все проделать наверняка, отрежь ему голову и принеси череп мне, а все остальное пусть горит синим пламенем.",
   },
+  [7383] = {
+    ["T"] = "Венец Земли",
+    ["O"] = "Наполните аметистовый фиал и принесите его Коритрасу Лунному Гневу в Доланаар.",
+    ["D"] = "Но не все было ладно с Тельдрассилом. Олений Шлем долго лелеял надежду вырастить новое Древо жизни и даже тщательно спланировал это мероприятие. Но была одна небольшая проблема, с которой можно связать большинство бед Тельдрассила.$B$BНо пока я об этом говорить не буду. Тебе нужно посетить последний лунный колодец, к северо-западу от Поляны Оракула. Под ветвями Древа-оракула находится первый и самый могучий из наших колодцев. Набери воды из него и возвращайся ко мне.",
+  },
   [7385] = {
     ["T"] = "Галлон крови",
     ["O"] = "null",
@@ -16556,8 +16561,8 @@ pfDB["quests"]["ruRU"] = {
   },
   [8196] = {
     ["T"] = "Экстракт манго",
-    ["O"] = "We have enough of a supply here on the isle to offer you a handful in exchange for a Zandalar Honor Token. Speak with Vinchaxa if you need to learn how to get tokens; otherwise, let\'s get to the business at hand!",
-    ["D"] = "The extremely potent essence mango grows across many of the islands in the South Seas. A single mango will refresh those who eat it, both physically and mentally. If you\'ve never had one, you do yourself a disservice!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8201] = {
     ["T"] = "Коллекция голов",
@@ -16661,13 +16666,13 @@ pfDB["quests"]["ruRU"] = {
   },
   [8243] = {
     ["T"] = "Напиток могущества Занзы",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8246] = {
     ["T"] = "Перстни Зандалара",
-    ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
-    ["D"] = "May - for someone as exalted among the Zandalar as you are, I have something very special for you. Direct from our home in the South Seas... the Signets of the Zandalar! These signets are used to enhance any shoulder item you may possess. Should you seek might, mojo, or serenity - I have what you need!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8249] = {
     ["T"] = "Принести ларцы",

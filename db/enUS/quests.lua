@@ -4581,8 +4581,8 @@ pfDB["quests"]["enUS"] = {
   },
   [969] = {
     ["T"] = "Luck Be With You",
-    ["O"] = "Collect 10 Frostmaul Shards for Witch Doctor Mau\'\'ari in Everlook.",
-    ["D"] = "Ah, I can tell just by lookin\'\' at ya -- you be wantin\'\' to make a lucky charm. Mau\'\'ari always knows!$B$BTo da south. you\'\'ll find a canyon, an\'\' giants made a\'\' solid ice. The giants sometimes be carryin\'\' dem, but ya can always gather da shards yerself from da canyon. These shards have a powerful reflective quality.$B$BBring back 10 frostmaul shards, and my lucky charm will be yours.",
+    ["O"] = "Collect 10 Frostmaul Shards for Witch Doctor Mau\'ari in Orgrimmar.",
+    ["D"] = "Ah, I can tell just by lookin\' at ya -- you be wantin\' to make a lucky charm. Mau\'ari always knows!$B$BYou\'ll need ta travel to a place called Winterspring ta the north, far from da heat of Durotar.$B$BIn Winterspring, to da south. you\'ll find a canyon, an\' giants made a\' solid ice. The giants sometimes be carryin\' dem, but ya can always gather da shards yerself from da canyon. These shards have a powerful reflective quality.$B$BBring back 10 frostmaul shards, and my lucky charm will be yours.",
   },
   [970] = {
     ["T"] = "The Tower of Althalaxx",
@@ -11566,18 +11566,18 @@ pfDB["quests"]["enUS"] = {
   },
   [5054] = {
     ["T"] = "Ursius of the Shardtooth",
-    ["O"] = "Storm Shadowhoof at Everlook in Winterspring wants you to kill Ursius.",
-    ["D"] = "In the snowy mountains of Winterspring, to the northwest, a skilled hunter stalks his prey... I speak of Ursius of the shardtooth bears, an agile and clever beast.$B$BI send you now against him. He roams the sloping hills to the northwest of Everlook. Find and hunt him, before he discovers your intent.$B$BAll that have gone up against Ursius have quickly found themselves to be the prey, and he, the hunter. Stay on your guard.",
+    ["O"] = "Storm Shadowhoof at Bloodvenom Post in Felwood wants you to kill Ursius.",
+    ["D"] = "In the snowy mountains of Winterspring, a skilled hunter stalks his prey... I speak of Ursius of the shardtooth bears, an agile and clever beast.$B$BI send you now against him. He roams the sloping hills to the west of Everlook. Find and hunt him, before he discovers your intent.$B$BAll that have gone up against Ursius have quickly found themselves to be the prey, and he, the hunter. Stay on your guard.",
   },
   [5055] = {
     ["T"] = "Brumeran of the Chillwind",
-    ["O"] = "Storm Shadowhoof at Everlook in Winterspring wants you to kill Brumeran.",
+    ["O"] = "Storm Shadowhoof at Bloodvenom Post in Felwood wants you to kill Brumeran.",
     ["D"] = "Swift, and clever, Brumeran glides silently across the snowy landscape of southern Winterspring. But do not let her graceful appearance convince you that she is harmless. All that cross her pay considerably, and often with their own lives.$B$BSeek out Brumeran of the chillwind among the chimera. Defeat her, then return again to me.",
   },
   [5056] = {
     ["T"] = "Shy-Rotam",
-    ["O"] = "Storm Shadowhoof at Everlook in Winterspring wants you to defeat Shy-Rotam.",
-    ["D"] = "In northern Winterspring, great cats assemble around a large landmark called Frostsaber Rock. The leader of these cats is known by the name Shy-Rotam. Defeating the matriarch of the frostsabers would grant you much respect in the eyes of your fellow $r.$B$BGo again to the harsh wilds, and once there, gather sacred meat from the frostsabers. Find the stone of Shy-Rotam, and place it there. Placing the meat of her kin before her will summon Shy-Rotam, in anger.$B$BBe ready for her fury, and defeat her.",
+    ["O"] = "Storm Shadowhoof at Bloodvenom Post in Felwood wants you to defeat Shy-Rotam.",
+    ["D"] = "In northern Winterspring, great cats assemble around a large landmark called Frostsaber Rock. The leader of these cats is known by the name Shy-Rotam. Defeating the matriarch of the frostsabers would grant you much respect in the eyes of your fellow $R.$B$BGo again to Winterspring, and once there, gather sacred meat from the frostsabers. Find the stone of Shy-Rotam, and place it there. Placing the meat of her kin before her will summon Shy-Rotam, in anger.$B$BBe ready for her fury, and defeat her.",
   },
   [5057] = {
     ["T"] = "Past Endeavors",
@@ -13976,8 +13976,8 @@ pfDB["quests"]["enUS"] = {
   },
   [6606] = {
     ["T"] = "A Little Luck",
-    ["O"] = "Speak with Witch Doctor Mau\'ari in Everlook.",
-    ["D"] = "We can always use a little luck, eh? A small advantage is all it takes to turn things in your favor...$B$BI happened to make the acquaintance of a rather eccentric witch doctor some time back. She made me a lucky charm... for a price. Believe me, though, it was well worth it!$B$BMaybe you\'d be interested in one of your own? Find Witch Doctor Mau\'ari in Everlook. I\'m not giving mine up!",
+    ["O"] = "Speak with Witch Doctor Mau\'ari in Orgrimmar.",
+    ["D"] = "We can always use a little luck, eh? A small advantage is all it takes to turn things in your favor...$B$BI happened to make the acquaintance of a rather eccentric witch doctor some time back. She made me a lucky charm... for a price. Believe me, though, it was well worth it!$B$BMaybe you\'d be interested in one of your own? See Witch Doctor Mau\'ari in Orgrimmar. I\'m not giving mine up!",
   },
   [6607] = {
     ["T"] = "Nat Pagle, Angler Extreme",
@@ -14663,6 +14663,11 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Korrak the Everliving",
     ["O"] = "Should Korrak the Bloodrager make a return to the Field of Strife, seek him out and destroy him.$B$BReturn the Skull of Korrak to Lieutenant Haggerdin in the Hillsbrad Foothills.",
     ["D"] = "There\'s something not quite right about all of this... Did anybody think to burn Korrak\'s corpse? Those trolls will stop at nothing to revive their fallen leader - as blue skinned pagan man-beasts often do.$B$BJust keep your eyes out, $N. Don\'t be alarmed if Korrak makes a surprise appearance; and if he does, I want him executed - his corpse burned to ashes.$B$BFor good measure, lop off his head and bring me his skull before you ignite the lifeless mass.",
+  },
+  [7383] = {
+    ["T"] = "Crown of the Earth",
+    ["O"] = "Fill the Amethyst Phial and bring it back to Corithras Moonrage in Dolanaar.",
+    ["D"] = "All was not well with Teldrassil, however. Staghelm\'s carefully made plans for the new World Tree had borne out as he had hoped, but there was one small problem, a problem to which many of the troubles on Teldrassil may be attributed.$B$BHowever, I will not get into that yet. You must visit the last moonwell, to the northwest in the Oracle Glade. Under the boughs of the Oracle Tree lies the first and most powerful of our wells. Retrieve a phial of its water and return to me.",
   },
   [7385] = {
     ["T"] = "A Gallon of Blood",
@@ -16080,7 +16085,7 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Battle gear gives you power in the tribe.  The freethinkers are honored in this way.  They are zealots.  They imbue their breastplates with powerful mojo.  If their beliefs falter in the face of the enemy, their breastplate will not.$B$BYou must be revered amongst us to possess such a breastplate.  Go to Zul\'Gurub.  Take the Paragons of Power I need.  Take the Paragons most painfully from the fools inside.  Bring them to me.  Prove your worth as a freethinker once and for all.",
   },
   [8056] = {
-    ["T"] = "Paragons of Power: The Augur\'s Bracers (Raid)",
+    ["T"] = "Paragons of Power: The Augur\'s Bracers",
     ["O"] = "Bring Maywiki of Zuldazar a Primal Hakkari Armsplint.  You must also have a reputation equal to or greater than Friendly with the Zandalar Tribe.$B$BMaywiki of Zuldazar is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "The augurs of our tribe are revered for their gifts of the divine sight, ya mon.  They ain\'t a witch doctor; they spend their time castin\' bones or readin\' the leaves for insight - not hexin\' people.  As a shaman, you already know somethin\' about the power of augury; we Zandalar prize the insight they give to the tribe.$B$BBring me an offerin\' of the Paragons of Power from inside Zul\'Gurub and prove your worth to us.  Do this for us, and I\'ll give ya some bracers that our augurs prize above all others!  ",
   },
@@ -16095,7 +16100,7 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Vengeance is power.  The Zandalar vindicator is such power.  The tribe has many enemies.  The vindicator exacts retribution on them.  No crime against us is unpunished.  The vindicator delivers this punishment.  Our enemies fear our vengeance.  They should.  They forever will.$B$BBecome one of our vindicators.  Seek the Paragons of Power inside Zul\'Gurub.  Slay the minions of Hakkar and claim vengeance in the tribe\'s name.  You will be rewarded.",
   },
   [8059] = {
-    ["T"] = "Paragons of Power: The Demoniac\'s Wraps (Raid)",
+    ["T"] = "Paragons of Power: The Demoniac\'s Wraps",
     ["O"] = "Bring Al\'tabim the All-Seeing a Primal Hakkari Stanchion.  You must also have a reputation equal to or greater than Friendly with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "Warlocks tread dangerous ground in dealing with demons, but our demoniacs take this one step further.  Through an ancient and arcane ritual, they allow a demon to enter their being.  Rather than let it possess them though, they enslave the demon from the inside, absorbing the power of the beast for their own command.  It is a feat few are ever able to master.$B$BFor you to learn of the power of the demoniac, I must have Paragons of Power from Zul\'Gurub.  Go there and retrieve that which we seek.",
   },
@@ -16131,72 +16136,72 @@ pfDB["quests"]["enUS"] = {
   },
   [8066] = {
     ["T"] = "Paragons of Power: The Predator\'s Belt",
-    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Falthir the Sightless: A Primal Hakkari Shawl.  You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.$B$BFalthir the Sightless is located on Yojamba Isle, Stranglethorn Vale.",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Falthir the Sightless: 5 Razzashi Coins, 5 Hakkari Coins, 2 Green Hakkari Bijous, and a Primal Hakkari Shawl.  You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.$B$BFalthir the Sightless is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "A predator knows how to stalk their prey, but a successful one knows how to strike at it once they have closed ranks.  You must master both to have any chance of success in Zul\'Gurub... and any chance of being like the Zandalar predators.$B$BBring me choice parts of the Paragons of Power from within Zul\'Gurub.  My reward will be the power that the trinkets yield, while yours will be the Zandalar predator\'s belt - equipment well worth the trade.",
   },
   [8067] = {
     ["T"] = "Paragons of Power: The Predator\'s Mantle",
-    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Falthir the Sightless: A Primal Hakkari Aegis.  You must also have a reputation equal to or greater than Revered with the Zandalar Tribe.$B$BFalthir the Sightless is located on Yojamba Isle, Stranglethorn Vale.",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Falthir the Sightless: 5 Zulian Coins, 5 Gurubashi Coins, 2 Silver Hakkari Bijous, and a Primal Hakkari Aegis.  You must also have a reputation equal to or greater than Revered with the Zandalar Tribe.$B$BFalthir the Sightless is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "We Zandalar prize what we wear as a symbol of accomplishment.  You don\'t need to be able to see what one wears to be able to sense what emanates from it - power transcends sight.  The garments of the Zandalar predator are like this, and most cherished by them is the mantle they wear.  It helps to obfuscate them from view... and to make their presence known when they wish it.$B$BThe Paragons of Power await your retrieval in Zul\'Gurub.  Bring me what I seek, and the predator\'s mantle shall be yours.",
   },
   [8068] = {
     ["T"] = "Paragons of Power: The Illusionist\'s Mantle",
-    ["O"] = "Bring Al\'tabim the All-Seeing a Primal Hakkari Shawl.  You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Al\'tabim the All-Seeing: 5 Gurubashi Coins, 5 Razzashi Coins, 2 Orange Hakkari Bijous, and a Primal Hakkari Shawl.  You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "Magic is a raw, primal force to be shaped by those strong enough to do it.  Mojo is our extension of this power; one such potent manipulation of it is in the form of illusion.  How can one truly hope to win against a foe that is not even really there?  We Zandalar know the power of this, and as such illusionists hold a honored place within the tribe.$B$BTake the needed Paragons of Power from Zul\'Gurub - for this, honor from the tribe and a powerful mantle used by our best illusionists will be yours!",
   },
   [8069] = {
     ["T"] = "Paragons of Power: The Illusionist\'s Robes",
-    ["O"] = "Bring Al\'tabim the All-Seeing a Primal Hakkari Kossack.  You must also have a reputation equal to or greater than Revered with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Al\'tabim the All-Seeing: 5 Sandfury Coins, 5 Zulian Coins, 2 Silver Hakkari Bijous, and a Primal Hakkari Kossack.  You must also have a reputation equal to or greater than Revered with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "The tribe acknowledges station and power through what we wear.  Our vestments are made from the finest of materials, and interwoven with the mojo we use to make us powerful.  Illusionists are no exception; their robes are said to embody the essence of illusion in their look.  Legend states that their ancient robes never looked the same twice.$B$BI will give you an illusionist\'s robe, $N... but earn your place of reverence among the tribe first!  Bring me the Paragons of Power from Zul\'Gurub!",
   },
   [8070] = {
     ["T"] = "Paragons of Power: The Confessor\'s Bindings",
-    ["O"] = "Bring Al\'tabim the All-Seeing a Primal Hakkari Sash.  You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Al\'tabim the All-Seeing: 5 Hakkari Coins, 5 Zulian Coins, 2 Orange Hakkari Bijous, and a Primal Hakkari Sash.  You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "Shortly after the fall of the Gurubashi, we Zandalar almost succumbed to a final defeat from evil within our own tribe.  It was then that the confessors amongst us arose, preserving the tribe by banishing out those who would destroy their own kind.  They not only keep us in tune with the spirits, but they also preserve the flesh.$B$BGo forth into Zul\'Gurub and witness first hand the depravity of Hakkar and the Gurubashi.  Wrest the Paragons of Power that we seek from them; success will be rewarded!",
   },
   [8071] = {
     ["T"] = "Paragons of Power: The Confessor\'s Mantle",
-    ["O"] = "Bring Al\'tabim the All-Seeing a Primal Hakkari Aegis.  You must also have a reputation equal to or greater than Revered with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Al\'tabim the All-Seeing: 5 Razzashi Coins, 5 Witherbark Coins, 2 Bronze Hakkari Bijous, and a Primal Hakkari Aegis.  You must also have a reputation equal to or greater than Revered with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "The confessors of the Zandalar all wear a distinctive mantle, marking them as the preservers of the tribe.  These mantles are woven with powerful mojo that aids them in judging those who would threaten our tribe.  As a priest, you too must spend your time judging those worthy and not; such a mantle would definitely be a blessing to you.$B$BIn exchange for fighting Hakkar\'s minions in Zul\'Gurub and bringing me the Paragons of Power I seek, I will give you a mantle worthy of our finest confessors.",
   },
   [8072] = {
     ["T"] = "Paragons of Power: The Madcap\'s Mantle",
-    ["O"] = "Bring Falthir the Sightless a Primal Hakkari Girdle.  You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.$B$BFalthir the Sightless is located on Yojamba Isle, Stranglethorn Vale.",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Falthir the Sightless: 5 Zulian Coins, 5 Razzashi Coins, 2 Purple Hakkari Bijous, and a Primal Hakkari Girdle.  You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.$B$BFalthir the Sightless is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "One of Zandalar\'s legendary madcaps was Khar\'vaxal the Cracked.  Legend states that when facing the enemies of the tribe for the first time, Kar\'xavan used his mantle specifically woven with \"the weave of madness\".  His form was shrouded not only by the mantle, but also with the blinding speed of his twin daggers.  Madcaps today cherish their mantle as a sign of their place in the tribe.$B$BBring to me the Paragons of Power I seek, and such a mantle will be yours to weave madness unto your own enemies.",
   },
   [8073] = {
     ["T"] = "Paragons of Power: The Madcap\'s Tunic",
-    ["O"] = "Bring Falthir the Sightless a Primal Hakkari Aegis.  You must also have a reputation equal to or greater than Revered with the Zandalar Tribe.$B$BFalthir the Sightless is located on Yojamba Isle, Stranglethorn Vale.",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Falthir the Sightless: 5 Hakkari Coins, 5 Skullsplitter Coins, 2 Gold Hakkari Bijous, and a Primal Hakkari Aegis.  You must also have a reputation equal to or greater than Revered with the Zandalar Tribe.$B$BFalthir the Sightless is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "My eyes failed me long ago, but I do not miss them.  Even in a tribe such as ours - where one\'s vestments convey station and purpose - the most potent of garb exudes power that simple eyes cannot see.  The prized tunic of the Zandalar madcap is no exception, exuding the raw power of chaos and madness that they are able to channel.$B$BThe Paragons of Power I need lie in Zul\'Gurub; bring me what I seek, and I will reward you with your own legendary tunic... one befitting a weaver of madness.",
   },
   [8074] = {
     ["T"] = "Paragons of Power: The Augur\'s Belt",
-    ["O"] = "Bring Maywiki of Zuldazar a Primal Hakkari Girdle.  You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.$B$BMaywiki of Zuldazar is located on Yojamba Isle, Stranglethorn Vale.",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Maywiki of Zuldazar: 5 Skullsplitter Coins, 5 Gurubashi Coins, 2 Purple Hakkari Bijous, and a Primal Hakkari Girdle.  You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.$B$BMaywiki of Zuldazar is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "Augurs know the mojo of the elements, mon.  They use it as a means to guide the tribe to glory.  In the dark days after the Gurubashi Empire ripped itself up, our augurs led us to our safe haven in the South Seas.  They\'ve also led us back here to the Vale, right back to the heart of evil brewin\' in Zul\'Gurub.$B$BBring me an offerin\' of the Paragons of Power from inside Zul\'Gurub and prove your worth to us.  Do it and I\'ll give ya a belt that our augurs use - one with powerful mojo inside it!",
   },
   [8075] = {
     ["T"] = "Paragons of Power: The Augur\'s Hauberk",
-    ["O"] = "Bring Maywiki of Zuldazar a Primal Hakkari Tabard.  You must also have a reputation equal to or greater than Revered with the Zandalar Tribe.$B$BMaywiki of Zuldazar is located on Yojamba Isle, Stranglethorn Vale.",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Maywiki of Zuldazar: 5 Witherbark Coins, 5 Hakkari Coins, 2 Gold Hakkari Bijous, and a Primal Hakkari Tabard.  You must also have a reputation equal to or greater than Revered with the Zandalar Tribe.$B$BMaywiki of Zuldazar is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "The augurs of the Zandalar all wear a distinctive chest piece called a hauberk.  It\'s fitted with the finest of silks and cloths, interwoven with strong chain.  It\'s a symbol of not only their divinity, but also of their authority, mon.  It\'s never wise to cross one whose life is devoted to speakin\' with the spirits...$B$BBring me an offerin\' of the Paragons of Power from inside Zul\'Gurub and prove your worth to us.  Do it and I\'ll give ya one of the finest hauberks our augurs would ever hope to wear!",
   },
   [8076] = {
-    ["T"] = "Paragons of Power: The Demoniac\'s Mantle (Raid)",
-    ["O"] = "Bring Al\'tabim the All-Seeing a Primal Hakkari Sash.  You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
+    ["T"] = "Paragons of Power: The Demoniac\'s Mantle",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Al\'tabim the All-Seeing: 5 Witherbark Coins, 5 Hakkari Coins, 2 Orange Hakkari Bijous, and a Primal Hakkari Sash.  You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "The demoniac seeks to embody power outright, not just possess it.  More than one of our demoniacs has lost a fight with a demon; with our enemies threatening us - especially in Zul\'Gurub - the power that a demoniac is able to unleash on our foes is worth the sacrifice.  Our survival depends on crushing those who would destroy us; the fall of the Gurubashi Empire taught us this.$B$BTravel to Zul\'Gurub and gain the Paragons of Power we need.  Do this, and a valuable demoniac item shall be yours.",
   },
   [8077] = {
-    ["T"] = "Paragons of Power: The Demoniac\'s Robes (Raid)",
-    ["O"] = "Bring Al\'tabim the All-Seeing a Primal Hakkari Kossack.  You must also have a reputation equal to or greater than Revered with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
+    ["T"] = "Paragons of Power: The Demoniac\'s Robes",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Al\'tabim the All-Seeing: 5 Skullsplitter Coins, 5 Bloodscalp Coins, 2 Silver Hakkari Bijous, and a Primal Hakkari Kossack.  You must also have a reputation equal to or greater than Revered with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "The ultimate symbol of power amongst the tribe is the garb we wear in battle.  A demoniac\'s robes have fused fine runecloth and devastatingly powerful mojo into a single fabric.  The visage of the robe is said to instill fear into the minds of all who see it... especially the demons that the demoniac will eventually dominate.$B$BFrom Zul\'Gurub, you must bring me a very specific set of the Paragons of Power.  It will be difficult... but your success will assure you of acquiring a robe for yourself.",
   },
   [8078] = {
     ["T"] = "Paragons of Power: The Vindicator\'s Belt",
-    ["O"] = "Bring Jin\'rokh the Breaker a Primal Hakkari Girdle.  You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.$B$BJin\'rokh the Breaker is located on Yojamba Isle, Stranglethorn Vale.",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Jin\'rokh the Breaker: 5 Vilebranch Coins, 5 Skullsplitter Coins, 2 Green Hakkari Bijous, and a Primal Hakkari Girdle.  You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.$B$BJin\'rokh the Breaker is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "The ultimate vengeance waits within Zul\'Gurub.  Hakkar must not rise again.  Hakkar destroyed the Gurubashi Empire from within.  No sacrifice was enough.  The trolls are a shadow of former glories.  I know this is because of Hakkar.$B$BBecome the vindicator you were meant to be.  Wreak havoc on the minions of evil.  Zul\'Gurub must taste Zandalar vengeance.  Bring me proof in the Paragons of Power.  You will receive the vindicator\'s belt.  You will receive real power.$B$BGo.",
   },
   [8079] = {
     ["T"] = "Paragons of Power: The Vindicator\'s Breastplate",
-    ["O"] = "Bring Jin\'rokh the Breaker a Primal Hakkari Kossack.  You must also have a reputation equal to or greater than Revered with the Zandalar Tribe.$B$BJin\'rokh the Breaker is located on Yojamba Isle, Stranglethorn Vale.",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Jin\'rokh the Breaker: 5 Bloodscalp Coins, 5 Sandfury Coins, 2 Bronze Hakkari Bijous, and a Primal Hakkari Kossack.  You must also have a reputation equal to or greater than Revered with the Zandalar Tribe.$B$BJin\'rokh the Breaker is located on Yojamba Isle, Stranglethorn Vale.",
     ["D"] = "The vindicator\'s symbol of power is the breastplate.  It is forged with powerful mojo.  It is trusted only to those we revere.  It is the Zandalar symbol of vengeance.$B$BTo become a vindicator is to become vengeance.  Take the Paragons of Power we need from Zul\'Gurub.  Bring them to us.  We will take the mojo stolen from us.  We will make the minions of Hakkar pay.  We will reward you with the vindicator\'s breastplate.$B$BGo.  Be our vengeance, $N.",
   },
   [8080] = {
@@ -16556,13 +16561,13 @@ pfDB["quests"]["enUS"] = {
   },
   [8196] = {
     ["T"] = "Essence Mangoes",
-    ["O"] = "We have enough of a supply here on the isle to offer you a handful in exchange for a Zandalar Honor Token. Speak with Vinchaxa if you need to learn how to get tokens; otherwise, let\'s get to the business at hand!",
-    ["D"] = "The extremely potent essence mango grows across many of the islands in the South Seas. A single mango will refresh those who eat it, both physically and mentally. If you\'ve never had one, you do yourself a disservice!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8201] = {
     ["T"] = "A Collection of Heads",
-    ["O"] = "String 5 Channeler\'s Heads, then return the Collection of Troll Heads to Exzhal on Yojamba Isle.",
-    ["D"] = "It is true.  Hakkar now dwells in Zul\'Gurub, bathing in the power of our gods.  Enthralled high priests now channel the energies of our most sacred divinities into the Soulflayer, who will soon have a strength beyond any being of Azeroth.  He must be stopped!$B$BTake this sacred cord, and string through it the heads of the high priests responsible for channeling our gods\' energy.$B$BWhen you have done this, return to me.",
+    ["O"] = "String 5 Channeler\'s Heads and the Hexxer\'s Head onto the Sacred Cord, then return the Collection of Troll Heads to Exzhal on Zandalar Isle.",
+    ["D"] = "It is true.  Hakkar now dwells in Zul\'Gurub, bathing in the power of our gods.  Enthralled high priests now channel the energies of our most sacred divinities into the Soulflayer, who will soon have a strength beyond any being of Azeroth.  He must be stopped!$B$BTake this sacred cord, and string through it the heads of the high priests responsible for channeling our gods\' energy, as well as the head of their leader, Jin\'do the Hexxer.$B$BWhen you have done this, return to me.",
   },
   [8221] = {
     ["T"] = "Rare Fish - Keefer\'s Angelfish",
@@ -16661,13 +16666,13 @@ pfDB["quests"]["enUS"] = {
   },
   [8243] = {
     ["T"] = "Zanza\'s Potent Potables",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8246] = {
     ["T"] = "Signets of the Zandalar",
-    ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
-    ["D"] = "May - for someone as exalted among the Zandalar as you are, I have something very special for you. Direct from our home in the South Seas... the Signets of the Zandalar! These signets are used to enhance any shoulder item you may possess. Should you seek might, mojo, or serenity - I have what you need!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8249] = {
     ["T"] = "Junkboxes Needed",

@@ -14664,6 +14664,11 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "如果科尔拉克重新出现在奥特兰克山谷的冰斧山洞中，就找到并干掉他。$B$B将科尔拉克的颅骨交给丹巴达尔的哈格丁中尉。",
     ["D"] = "现在有一件紧急的事情……有没有人想过要焚烧科尔拉克的尸体？那些巨魔一定会想法设法复活他们的领袖，你知道，那些蓝皮肤的怪物经常会那么做。$B$B你要小心了，$N。如果科尔拉克重新出现在你的面前，千万不要惊慌失措。如果他真的复活了，那么我要你把他干掉，然后烧掉他的尸体。$B$B为了以防万一，在焚烧尸体之前砍掉他的头颅，然后把他的颅骨交给我。",
   },
+  [7383] = {
+    ["T"] = "泰达希尔：卡多雷的负担",
+    ["O"] = "Fill the Amethyst Phial and bring it back to Corithras Moonrage in Dolanaar.",
+    ["D"] = "All was not well with Teldrassil, however. Staghelm\'s carefully made plans for the new World Tree had borne out as he had hoped, but there was one small problem, a problem to which many of the troubles on Teldrassil may be attributed.$B$BHowever, I will not get into that yet. You must visit the last moonwell, to the northwest in the Oracle Glade. Under the boughs of the Oracle Tree lies the first and most powerful of our wells. Retrieve a phial of its water and return to me.",
+  },
   [7385] = {
     ["T"] = "联盟之血",
     ["O"] = "null",
@@ -16556,8 +16561,8 @@ pfDB["quests"]["zhCN"] = {
   },
   [8196] = {
     ["T"] = "芒果精华",
-    ["O"] = "We have enough of a supply here on the isle to offer you a handful in exchange for a Zandalar Honor Token. Speak with Vinchaxa if you need to learn how to get tokens; otherwise, let\'s get to the business at hand!",
-    ["D"] = "The extremely potent essence mango grows across many of the islands in the South Seas. A single mango will refresh those who eat it, both physically and mentally. If you\'ve never had one, you do yourself a disservice!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8201] = {
     ["T"] = "祭司的头颅",
@@ -16661,13 +16666,13 @@ pfDB["quests"]["zhCN"] = {
   },
   [8243] = {
     ["T"] = "赞扎的饮料",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8246] = {
     ["T"] = "赞达拉的徽记",
-    ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
-    ["D"] = "May - for someone as exalted among the Zandalar as you are, I have something very special for you. Direct from our home in the South Seas... the Signets of the Zandalar! These signets are used to enhance any shoulder item you may possess. Should you seek might, mojo, or serenity - I have what you need!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8249] = {
     ["T"] = "垃圾箱",

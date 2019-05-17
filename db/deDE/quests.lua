@@ -14664,6 +14664,11 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Sollte Korrak der Blutrünstige wieder in den Winteraxhöhlen auftauchen, sucht ihn auf und tötet ihn.$B$BBringt Korraks Schädel zu Leutnant Haggerdin in Dun Baldar.",
     ["D"] = "Irgendetwas stimmt an dieser Sache nicht... Hat jemand daran gedacht Korraks Körper zu verbrennen? Diese Trolle werden vor nichts halt machen, um ihren gefallenen Anführer wiederzubeleben - so wie es die blauhäutigen Heiden des öfteren tun.$B$BHaltet immer ein Auge offen, $n. Seid nicht beunruhigt, wenn Karrak überraschend wieder auftaucht. Und wenn er das tut, will ich ihn tot sehen - seinen Körper zu Asche verbrannt.$B$BObendrein, schlagt ihm seinen Kopf ab und bringt mir seinen Schädel, bevor Ihr seinen leblosen Körper verbrennt.",
   },
+  [7383] = {
+    ["T"] = "Teldrassil: Die Bürde der Kaldorei",
+    ["O"] = "Füllt die Amethystphiole.",
+    ["D"] = "Ihr müsst nun den Mondbrunnen unter den Ästen des Orakelbaums im fernen Nordwesten aufsuchen. Er ist der erste und mächtigste unserer Brunnen und es heißt von seinem Wasser, es enthalte die Essenz von Elunes Macht.$B$BEntnehmt eine Phiole des Wassers und kehrt zu mir zurück. Ich werde euch an der Weggabelung vor Darnassus treffen, wenn Eure Aufgabe vollendet ist.",
+  },
   [7385] = {
     ["T"] = "Eine Gallone Blut",
     ["O"] = "null",
@@ -16556,8 +16561,8 @@ pfDB["quests"]["deDE"] = {
   },
   [8196] = {
     ["T"] = "Essenzmangos",
-    ["O"] = "We have enough of a supply here on the isle to offer you a handful in exchange for a Zandalar Honor Token. Speak with Vinchaxa if you need to learn how to get tokens; otherwise, let\'s get to the business at hand!",
-    ["D"] = "The extremely potent essence mango grows across many of the islands in the South Seas. A single mango will refresh those who eat it, both physically and mentally. If you\'ve never had one, you do yourself a disservice!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8201] = {
     ["T"] = "Die Schädelsammlung",
@@ -16661,13 +16666,13 @@ pfDB["quests"]["deDE"] = {
   },
   [8243] = {
     ["T"] = "Zanzas wirksame Tränke",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8246] = {
     ["T"] = "Das Siegel der Zandalari",
-    ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
-    ["D"] = "May - for someone as exalted among the Zandalar as you are, I have something very special for you. Direct from our home in the South Seas... the Signets of the Zandalar! These signets are used to enhance any shoulder item you may possess. Should you seek might, mojo, or serenity - I have what you need!",
+    ["O"] = "",
+    ["D"] = "",
   },
   [8249] = {
     ["T"] = "Plunderkisten benötigt",

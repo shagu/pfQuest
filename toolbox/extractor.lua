@@ -134,7 +134,7 @@ end
 
 do -- database connection
   luasql = require("luasql.mysql").mysql()
-  mysql = luasql:connect("elysium","mangos","mangos","127.0.0.1")
+  mysql = luasql:connect("vmangos","mangos","mangos","127.0.0.1")
 end
 
 do -- database query functions
@@ -273,8 +273,8 @@ if target.unit then -- unitDB [data]
     progress:Print("creature_template", "unitDB (data)")
 
     local entry   = creature_template.entry
-    local minlvl  = creature_template.minlevel
-    local maxlvl  = creature_template.maxlevel
+    local minlvl  = creature_template.level_min
+    local maxlvl  = creature_template.level_max
     local lvl     = (minlvl == maxlvl) and minlvl or minlvl .. "-" .. maxlvl
     local rnk     = creature_template.rank
 
@@ -289,25 +289,15 @@ if target.unit then -- unitDB [data]
       local fac = ""
       local faction = {}
       local sql = [[
-        SELECT A FROM creature_template, aowow.aowow_factiontemplate
-        WHERE aowow.aowow_factiontemplate.factiontemplateID = creature_template.faction_A
+        SELECT A, H FROM creature_template, aowow.aowow_factiontemplate
+        WHERE aowow.aowow_factiontemplate.factiontemplateID = creature_template.faction
         AND creature_template.entry = ]] .. creature_template.entry
 
       local query = mysql:execute(sql)
       while query:fetch(faction, "a") do
         local A = faction.A
-        if A == "1" then fac = fac .. "A" end
-      end
-
-      local faction = {}
-      local sql = [[
-        SELECT H FROM creature_template, aowow.aowow_factiontemplate
-        WHERE aowow.aowow_factiontemplate.factiontemplateID = creature_template.faction_H
-        AND creature_template.entry = ]] .. creature_template.entry
-
-      local query = mysql:execute(sql)
-      while query:fetch(faction, "a") do
         local H = faction.H
+        if A == "1" then fac = fac .. "A" end
         if H == "1" then fac = fac .. "H" end
       end
 
@@ -673,7 +663,7 @@ if target.quest then -- questDB [data]
       end
       if quest_template["ReqSpellCast" .. i] and tonumber(quest_template["ReqSpellCast" .. i]) > 0 then
         local spell_template = {}
-        local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.ID = ' .. quest_template["ReqSpellCast" .. i])
+        local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.entry = ' .. quest_template["ReqSpellCast" .. i])
         while query:fetch(spell_template, "a") do
           if spell_template["requiresSpellFocus"] ~= "0" then
             local gameobject_template = {}
@@ -693,7 +683,7 @@ if target.quest then -- questDB [data]
       while query:fetch(item_template, "a") do
         if item_template["spellid_1"] ~= "0" then
           local spell_template = {}
-          local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.ID = ' .. item_template["spellid_1"])
+          local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.entry = ' .. item_template["spellid_1"])
           while query:fetch(spell_template, "a") do
             if spell_template["requiresSpellFocus"] ~= "0" then
               local gameobject_template = {}
