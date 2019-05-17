@@ -496,13 +496,16 @@ if target.item then -- itemDB [data]
 
   -- iterate over all items
   local item_template = {}
-  local query = mysql:execute('SELECT entry, name FROM item_template GROUP BY item_template.entry ORDER BY item_template.entry ASC')
+  local query = mysql:execute('SELECT entry, name FROM item_template GROUP BY item_template.entry ASC')
   while query:fetch(item_template, "a") do
     progress:Print("item_template", "itemDB (data)")
 
-    file:write("  [" .. item_template.entry .. "] = { -- " .. item_template.name .. "\n")
-
     local items = { [0] = { item_template.entry, nil } }
+    local subdata = {
+      ["U"] = {},
+      ["O"] = {},
+      ["V"] = {},
+    }
 
     -- add items that contain the actual item to the itemlist
     local item_loot_item = {}
@@ -514,25 +517,23 @@ if target.item then -- itemDB [data]
       end
     end
 
+    -- recursively read U, O, V blocks of the item
     for id, item in pairs(items) do
       local entry = item[1]
       local chance = item[2] and item[2] / 100 or 1
 
+      -- fill unit table
       local creature_loot_template = {}
       local count = 0
       local query = mysql:execute('SELECT entry, ChanceOrQuestChance FROM creature_loot_template WHERE item = ' .. entry .. ' ORDER BY entry')
       while query:fetch(creature_loot_template, "a") do
         local chance = round(math.abs(creature_loot_template.ChanceOrQuestChance) * chance, 5)
         if chance > 0 then
-          if count == 0 then
-            file:write("    [\"U\"] = {\n")
-          end
-          file:write("      [" .. creature_loot_template.entry .. "] = " .. chance .. ",\n")
-          count = count + 1
+          table.insert(subdata.U, { creature_loot_template.entry, chance })
         end
       end
-      if count > 0 then file:write("    },\n") end
 
+      -- fill object table
       local gameobject_loot_template = {}
       local count = 0
       local query = mysql:execute([[
@@ -543,28 +544,29 @@ if target.item then -- itemDB [data]
       while query:fetch(gameobject_loot_template, "a") do
         local chance = round(math.abs(gameobject_loot_template.ChanceOrQuestChance) * chance, 5)
         if chance > 0 then
-          if count == 0 then
-            file:write("    [\"O\"] = {\n")
-          end
-          file:write("      [" .. gameobject_loot_template.entry .. "] = " .. chance .. ",\n")
-          count = count + 1
+          table.insert(subdata.O, { gameobject_loot_template.entry, chance })
         end
       end
-      if count > 0 then file:write("    },\n") end
 
       local npc_vendor = {}
       local count = 0
       local query = mysql:execute('SELECT entry, maxcount FROM npc_vendor WHERE item = ' .. entry .. ' ORDER BY entry')
       while query:fetch(npc_vendor, "a") do
-        if count == 0 then
-          file:write("    [\"V\"] = {\n")
-        end
-        file:write("      [" .. npc_vendor.entry .. "] = " .. npc_vendor.maxcount .. ",\n")
-        count = count + 1
+        table.insert(subdata.V, { npc_vendor.entry, npc_vendor.maxcount })
       end
-      if count > 0 then file:write("    },\n") end
     end
 
+    -- write item entries
+    file:write("  [" .. item_template.entry .. "] = { -- " .. item_template.name .. "\n")
+    for _, t in pairs({ "U", "O", "V"}) do
+      if #subdata[t] > 0 then
+        file:write("    [\"" .. t .. "\"] = {\n")
+        for _, data in pairs(subdata[t]) do
+          file:write("      [" .. data[1] .. "] = " .. data[2] .. ",\n")
+        end
+        file:write("    },\n")
+      end
+    end
     file:write("  },\n")
   end
 
