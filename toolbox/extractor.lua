@@ -533,7 +533,24 @@ if target.item then -- itemDB [data]
         end
       end
 
-      -- fill object table
+      -- fill object table (reference_loot)
+      local gameobject_loot_template = {}
+      local count = 0
+      local query = mysql:execute([[
+        SELECT creature_loot_template.entry, creature_loot_template.ChanceOrQuestChance FROM creature_loot_template, reference_loot_template
+        WHERE creature_loot_template.item = reference_loot_template.entry
+        AND reference_loot_template.item = ]] .. entry .. [[
+        ORDER BY creature_loot_template.entry;
+      ]])
+
+      while query:fetch(gameobject_loot_template, "a") do
+        local chance = round(math.abs(gameobject_loot_template.ChanceOrQuestChance) * chance, 5)
+        if chance > 0 then
+          table.insert(subdata.U, { gameobject_loot_template.entry, chance })
+        end
+      end
+
+      -- fill object table (object_loot)
       local gameobject_loot_template = {}
       local count = 0
       local query = mysql:execute([[
@@ -541,6 +558,25 @@ if target.item then -- itemDB [data]
         LEFT JOIN gameobject_template ON gameobject_template.data1 = gameobject_loot_template.entry
         WHERE ( gameobject_template.type = 3 OR gameobject_template.type = 25 )
         AND gameobject_loot_template.item = ]] .. entry .. [[ ORDER BY gameobject_template.entry ]])
+      while query:fetch(gameobject_loot_template, "a") do
+        local chance = round(math.abs(gameobject_loot_template.ChanceOrQuestChance) * chance, 5)
+        if chance > 0 then
+          table.insert(subdata.O, { gameobject_loot_template.entry, chance })
+        end
+      end
+
+      -- fill object table (reference_loot)
+      local gameobject_loot_template = {}
+      local count = 0
+      local query = mysql:execute([[
+        SELECT gameobject_template.entry, gameobject_loot_template.ChanceOrQuestChance FROM gameobject_template, gameobject_loot_template, reference_loot_template
+        WHERE ( gameobject_template.type = 3 OR gameobject_template.type = 25 )
+        AND gameobject_loot_template.item = reference_loot_template.entry
+        AND gameobject_loot_template.entry = gameobject_template.data1
+        AND reference_loot_template.item = ]] .. entry .. [[
+        ORDER BY gameobject_template.entry;
+      ]])
+
       while query:fetch(gameobject_loot_template, "a") do
         local chance = round(math.abs(gameobject_loot_template.ChanceOrQuestChance) * chance, 5)
         if chance > 0 then
