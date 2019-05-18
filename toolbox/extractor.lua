@@ -537,8 +537,8 @@ if target.item then -- itemDB [data]
       local gameobject_loot_template = {}
       local count = 0
       local query = mysql:execute([[
-        SELECT creature_loot_template.entry, creature_loot_template.ChanceOrQuestChance FROM creature_loot_template, reference_loot_template
-        WHERE creature_loot_template.item = reference_loot_template.entry
+        SELECT creature_loot_template.entry, creature_loot_template.ChanceOrQuestChance FROM reference_loot_template
+        INNER JOIN creature_loot_template ON creature_loot_template.item = reference_loot_template.entry
         AND reference_loot_template.item = ]] .. entry .. [[
         ORDER BY creature_loot_template.entry;
       ]])
@@ -555,7 +555,7 @@ if target.item then -- itemDB [data]
       local count = 0
       local query = mysql:execute([[
         SELECT gameobject_template.entry, gameobject_loot_template.ChanceOrQuestChance FROM gameobject_loot_template
-        LEFT JOIN gameobject_template ON gameobject_template.data1 = gameobject_loot_template.entry
+        INNER JOIN gameobject_template ON gameobject_template.data1 = gameobject_loot_template.entry
         WHERE ( gameobject_template.type = 3 OR gameobject_template.type = 25 )
         AND gameobject_loot_template.item = ]] .. entry .. [[ ORDER BY gameobject_template.entry ]])
       while query:fetch(gameobject_loot_template, "a") do
@@ -569,10 +569,10 @@ if target.item then -- itemDB [data]
       local gameobject_loot_template = {}
       local count = 0
       local query = mysql:execute([[
-        SELECT gameobject_template.entry, gameobject_loot_template.ChanceOrQuestChance FROM gameobject_template, gameobject_loot_template, reference_loot_template
+        SELECT gameobject_template.entry, gameobject_loot_template.ChanceOrQuestChance FROM reference_loot_template
+        INNER JOIN gameobject_loot_template ON gameobject_loot_template.item = reference_loot_template.entry
+        INNER JOIN gameobject_template ON gameobject_loot_template.entry = gameobject_template.data1
         WHERE ( gameobject_template.type = 3 OR gameobject_template.type = 25 )
-        AND gameobject_loot_template.item = reference_loot_template.entry
-        AND gameobject_loot_template.entry = gameobject_template.data1
         AND reference_loot_template.item = ]] .. entry .. [[
         ORDER BY gameobject_template.entry;
       ]])
@@ -597,9 +597,13 @@ if target.item then -- itemDB [data]
     for _, t in pairs({ "U", "O", "V"}) do
       if #subdata[t] > 0 then
         table.sort(subdata[t], function(a,b) return a[2] > b[2] end)
+        local cache = {}
         file:write("    [\"" .. t .. "\"] = {\n")
         for _, data in pairs(subdata[t]) do
-          file:write("      [" .. data[1] .. "] = " .. data[2] .. ",\n")
+          if not cache[data[1]] then
+            file:write("      [" .. data[1] .. "] = " .. data[2] .. ",\n")
+            cache[data[1]] = true
+          end
         end
         file:write("    },\n")
       end
