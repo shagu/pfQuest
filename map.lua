@@ -533,8 +533,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
 
   for title, tab in pairs(node) do
     tab.layer = GetLayerByTexture(tab.texture)
-    if tab.layer > frame.layer then
-
+    if tab.spawn and ( tab.layer > frame.layer or not frame.spawn ) then
       frame.updateTexture = (frame.texture ~= tab.texture)
       frame.updateVertex = (frame.vertex ~= tab.vertex )
       frame.updateColor = (frame.color ~= tab.color)
