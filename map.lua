@@ -384,14 +384,19 @@ function pfMap:SetMapByID(id)
   end
 end
 
+customids = {
+  ["AlteracValley"] = 2597,
+}
 function pfMap:GetMapID(cid, mid)
   cid = cid or GetCurrentMapContinent()
   mid = mid or GetCurrentMapZone()
 
   local list = {GetMapZones(cid)}
   local name = list[mid]
+  local id = pfMap:GetMapIDByName(name)
+  id = id or customids[GetMapInfo()]
 
-  return pfMap:GetMapIDByName(name)
+  return id
 end
 
 function pfMap:AddNode(meta)
@@ -692,9 +697,8 @@ function pfMap:UpdateMinimap()
 
   -- refresh all nodes
   for addon, data in pairs(pfMap.nodes) do
-    if data[mapID] then
+    if data[mapID] and minimap_sizes[mapID] then
       for coords, node in pairs(data[mapID]) do
-
         local x, y
         if coord_cache[coords] then
           x, y = coord_cache[coords][1], coord_cache[coords][2]
