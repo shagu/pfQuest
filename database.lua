@@ -235,7 +235,7 @@ function pfDatabase:SearchMobID(id, meta, maps)
   for _, data in pairs(units[id]["coords"]) do
     local x, y, zone, respawn = unpack(data)
 
-    if pfMap:IsValidMap(zone) and zone > 0 then
+    if zone > 0 then
       -- add all gathered data
       meta = meta or {}
       meta["spawn"] = pfDB.units.loc[id]
@@ -311,7 +311,7 @@ function pfDatabase:SearchObjectID(id, meta, maps)
   for _, data in pairs(objects[id]["coords"]) do
     local x, y, zone, respawn = unpack(data)
 
-    if pfMap:IsValidMap(zone) and zone > 0 then
+    if zone > 0 then
       -- add all gathered data
       meta = meta or {}
       meta["spawn"] = pfDB.objects.loc[id]

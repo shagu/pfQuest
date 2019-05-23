@@ -355,23 +355,6 @@ function pfMap:GetMapIDByName(search)
   end
 end
 
-function pfMap:IsValidMap(id)
-  if validmaps[id] then return true end
-
-  local search = pfDB["zones"]["loc"][id]
-
-  for cid, cname in pairs({GetMapContinents()}) do
-    for mid, mname in pairs({GetMapZones(cid)}) do
-      if mname == search then
-        validmaps[id] = true
-        return true
-      end
-    end
-  end
-
-  return nil
-end
-
 function pfMap:ShowMapID(map)
   if map then
 
