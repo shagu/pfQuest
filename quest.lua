@@ -393,7 +393,6 @@ SetItemRef = function(link, text, button)
     ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
 
     local hasTitle, _, questTitle = string.find(text, ".*|h%[(.*)%]|h.*")
-    if hasTitle then ItemRefTooltip:AddLine(questTitle, 1,1,0) end
 
     id = tonumber(id)
 
@@ -404,6 +403,13 @@ SetItemRef = function(link, text, button)
           break
         end
       end
+    end
+
+    -- read and set title
+    if id and id > 0 and pfDB["quests"]["loc"][id] then
+      ItemRefTooltip:AddLine(pfDB["quests"]["loc"][id].T, 1,1,0)
+    elseif hasTitle then
+      ItemRefTooltip:AddLine(questTitle, 1,1,0)
     end
 
     -- scan for active quests
