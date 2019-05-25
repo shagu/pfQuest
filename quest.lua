@@ -232,7 +232,7 @@ function pfQuest:AddQuestLogIntegration()
     pfMap:UpdateNodes()
   end)
 
-  pfQuest.buttonReset = pfQuest.buttonReset or CreateFrame("Button", "pfQuestHide", dockFrame, "UIPanelButtonTemplate")
+  pfQuest.buttonReset = pfQuest.buttonReset or CreateFrame("Button", "pfQuestReset", dockFrame, "UIPanelButtonTemplate")
   pfQuest.buttonReset:SetWidth(70)
   pfQuest.buttonReset:SetHeight(20)
   pfQuest.buttonReset:SetText(pfQuest_Loc["Reset"])
