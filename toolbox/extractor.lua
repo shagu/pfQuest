@@ -566,6 +566,7 @@ if target.item then -- itemDB [data]
         SELECT creature_loot_template.entry, creature_loot_template.ChanceOrQuestChance FROM reference_loot_template
         INNER JOIN creature_loot_template ON creature_loot_template.item = reference_loot_template.entry
         AND reference_loot_template.item = ]] .. entry .. [[
+        AND creature_loot_template.mincountOrRef < 0
         ORDER BY creature_loot_template.entry;
       ]])
 
@@ -600,6 +601,7 @@ if target.item then -- itemDB [data]
         INNER JOIN gameobject_template ON gameobject_loot_template.entry = gameobject_template.data1
         WHERE ( gameobject_template.type = 3 OR gameobject_template.type = 25 )
         AND reference_loot_template.item = ]] .. entry .. [[
+        AND gameobject_loot_template.mincountOrRef < 0
         ORDER BY gameobject_template.entry;
       ]])
 
