@@ -4,6 +4,29 @@
 -- map pngs with alpha channel generated with:
 -- `convert $file  -transparent white -resize '100x100!' $file`
 
+do -- server config
+  cmangos = setmetatable({}, { __index = function(tab,key)
+    local value = tostring(key)
+    rawset(tab,key,value)
+    return value
+  end})
+
+  vmangos = {
+    ["cmangos-vanilla"] = "vmangos",
+    ["Id"] = "entry",
+    ["Entry"] = "entry",
+    ["Faction"] = "faction",
+    ["Name"] = "name",
+    ["MinLevel"] = "level_min",
+    ["MaxLevel"] = "level_max",
+    ["Rank"] = "rank",
+    ["RequiresSpellFocus"] = "requiresSpellFocus",
+    ["dbscripts_on_event"] = "event_scripts",
+  }
+end
+
+local C = vmangos
+
 local target = {
   ["init"] = true,
   ["unit"] = true,
@@ -134,7 +157,7 @@ end
 
 do -- database connection
   luasql = require("luasql.mysql").mysql()
-  mysql = luasql:connect("vmangos","mangos","mangos","127.0.0.1")
+  mysql = luasql:connect(C["cmangos-vanilla"],"mangos","mangos","127.0.0.1")
 end
 
 do -- database query functions
@@ -272,13 +295,15 @@ if target.unit then -- unitDB [data]
   while query:fetch(creature_template, "a") do
     progress:Print("creature_template", "unitDB (data)")
 
-    local entry   = creature_template.entry
-    local minlvl  = creature_template.level_min
-    local maxlvl  = creature_template.level_max
-    local lvl     = (minlvl == maxlvl) and minlvl or minlvl .. "-" .. maxlvl
-    local rnk     = creature_template.rank
+    local entry   = creature_template[C.Entry]
+    local name    = creature_template[C.Name]
+    local minlvl  = creature_template[C.MinLevel]
+    local maxlvl  = creature_template[C.MaxLevel]
+    local rnk     = creature_template[C.Rank]
 
-    file:write("  [" .. entry .. "] = { -- " .. creature_template.name .. "\n")
+    local lvl     = (minlvl == maxlvl) and minlvl or minlvl .. "-" .. maxlvl
+
+    file:write("  [" .. entry .. "] = { -- " .. name .. "\n")
     file:write("    [\"lvl\"] = \"" .. lvl .. "\",\n")
 
     if tonumber(rnk) > 0 then
@@ -290,8 +315,8 @@ if target.unit then -- unitDB [data]
       local faction = {}
       local sql = [[
         SELECT A, H FROM creature_template, aowow.aowow_factiontemplate
-        WHERE aowow.aowow_factiontemplate.factiontemplateID = creature_template.faction
-        AND creature_template.entry = ]] .. creature_template.entry
+        WHERE aowow.aowow_factiontemplate.factiontemplateID = creature_template.]] .. C.Faction .. [[
+        AND creature_template.]] .. C.Entry .. [[ = ]] .. creature_template[C.Entry]
 
       local query = mysql:execute(sql)
       while query:fetch(faction, "a") do
@@ -320,14 +345,14 @@ if target.unit then -- unitDB [data]
 
       -- search for summoned mobs
       local event_scripts = {}
-      local query = mysql:execute('SELECT * FROM event_scripts WHERE event_scripts.datalong = ' .. creature_template.entry)
+      local query = mysql:execute('SELECT * FROM ' .. C.dbscripts_on_event .. ' WHERE ' .. C.dbscripts_on_event .. '.datalong = ' .. creature_template[C.Entry])
       while query:fetch(event_scripts, "a") do
         local script = event_scripts.datalong
 
         local spell_template = {}
         local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.requiresSpellFocus > 0 AND spell_template.effectMiscValue1 = ' .. event_scripts.id)
         while query:fetch(spell_template, "a") do
-          local spellfocus = spell_template.requiresSpellFocus
+          local spellfocus = spell_template[C.RequiresSpellFocus]
 
           local gameobject_template = {}
           local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spellfocus)
@@ -533,6 +558,7 @@ if target.item then -- itemDB [data]
         end
       end
 
+
       -- fill object table (reference_loot)
       local gameobject_loot_template = {}
       local count = 0
@@ -706,11 +732,11 @@ if target.quest then -- questDB [data]
       end
       if quest_template["ReqSpellCast" .. i] and tonumber(quest_template["ReqSpellCast" .. i]) > 0 then
         local spell_template = {}
-        local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.entry = ' .. quest_template["ReqSpellCast" .. i])
+        local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.' .. C.Id .. ' = ' .. quest_template["ReqSpellCast" .. i])
         while query:fetch(spell_template, "a") do
-          if spell_template["requiresSpellFocus"] ~= "0" then
+          if spell_template[C.RequiresSpellFocus] ~= "0" then
             local gameobject_template = {}
-            local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spell_template["requiresSpellFocus"])
+            local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spell_template[C.RequiresSpellFocus])
             while query:fetch(gameobject_template, "a") do
               objects[tonumber(gameobject_template["entry"])] = true
             end
@@ -726,11 +752,11 @@ if target.quest then -- questDB [data]
       while query:fetch(item_template, "a") do
         if item_template["spellid_1"] ~= "0" then
           local spell_template = {}
-          local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.entry = ' .. item_template["spellid_1"])
+          local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.' .. C.Id .. ' = ' .. item_template["spellid_1"])
           while query:fetch(spell_template, "a") do
-            if spell_template["requiresSpellFocus"] ~= "0" then
+            if spell_template[C.RequiresSpellFocus] ~= "0" then
               local gameobject_template = {}
-              local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spell_template["requiresSpellFocus"])
+              local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spell_template[C.RequiresSpellFocus])
               while query:fetch(gameobject_template, "a") do
                 objects[tonumber(gameobject_template["entry"])] = true
               end
