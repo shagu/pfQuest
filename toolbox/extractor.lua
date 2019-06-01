@@ -696,7 +696,7 @@ if target.refloot then -- reflootDB [data]
       for _, t in pairs({ "U", "O" }) do
         if hasdata(subdata[t]) then
           file:write("    [\"" .. t .. "\"] = {\n")
-          for id in pairs(subdata[t]) do
+          for id in opairs(subdata[t]) do
             file:write("      [" .. id .. "] = 1,\n")
           end
           file:write("    },\n")
