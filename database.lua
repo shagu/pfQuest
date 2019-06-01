@@ -683,8 +683,8 @@ function pfDatabase:SearchQuests(meta, maps)
   end
 
   for id in pairs(quests) do
-    minlvl = quests[id]["min"] or quests[id]["lvl"]
-    maxlvl = quests[id]["lvl"]
+    minlvl = quests[id]["min"] or quests[id]["lvl"] or plevel
+    maxlvl = quests[id]["lvl"] or quests[id]["min"] or plevel
 
     if pfDB.quests.loc[id] and currentQuests[pfDB.quests.loc[id].T] then
       -- hide active quest
