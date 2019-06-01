@@ -8,6 +8,7 @@ local search_limit = 512
 local items = pfDB["items"]["data"]
 local units = pfDB["units"]["data"]
 local objects = pfDB["objects"]["data"]
+local refloot = pfDB["refloot"]["data"]
 local quests = pfDB["quests"]["data"]
 local zones = pfDB["zones"]["loc"]
 
@@ -263,6 +264,28 @@ local function ResultButtonEnterSpecial()
           GameTooltip:AddDoubleLine(name, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
         end
       end
+
+      -- reference tables
+      if items[id]["R"] then
+        for ref, chance in pairs(items[id]["R"]) do
+          if refloot[ref] and refloot[ref]["U"] then
+            for unit in pairs(refloot[ref]["U"]) do
+              count = count + 1
+              if count > tooltip_limit then
+                skip = true
+              end
+              if units[unit] and not skip then
+                local name = pfDB.units.loc[unit]
+                local zone = nil
+                if units[unit].coords then
+                  zone = units[unit].coords[1][3]
+                end
+                GameTooltip:AddDoubleLine(name, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
+              end
+            end
+          end
+        end
+      end
     end
 
   -- object
@@ -281,6 +304,28 @@ local function ResultButtonEnterSpecial()
             zone = objects[objectID].coords[1][3]
           end
           GameTooltip:AddDoubleLine(name, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
+        end
+      end
+
+      -- reference tables
+      if items[id]["R"] then
+        for ref, chance in pairs(items[id]["R"]) do
+          if refloot[ref] and refloot[ref]["O"] then
+            for unit in pairs(refloot[ref]["O"]) do
+              count = count + 1
+              if count > tooltip_limit then
+                skip = true
+              end
+              if objects[unit] and not skip then
+                local name = pfDB.objects.loc[unit]
+                local zone = nil
+                if objects[unit].coords then
+                  zone = objects[unit].coords[1][3]
+                end
+                GameTooltip:AddDoubleLine(name, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
+              end
+            end
+          end
         end
       end
     end

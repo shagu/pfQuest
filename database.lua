@@ -16,6 +16,7 @@ local items = pfDB["items"]["data"]
 local units = pfDB["units"]["data"]
 local objects = pfDB["objects"]["data"]
 local quests = pfDB["quests"]["data"]
+local refloot = pfDB["refloot"]["data"]
 local zones = pfDB["zones"]["loc"]
 local professions = pfDB["professions"]["loc"]
 
@@ -385,6 +386,33 @@ function pfDatabase:SearchItemID(id, meta, maps, allowedTypes)
         meta["droprate"] = chance
         meta["sellcount"] = nil
         maps = pfDatabase:SearchObjectID(object, meta, maps)
+      end
+    end
+  end
+
+  -- search reference loot (objects, creatures)
+  if items[id]["R"] then
+    for ref, chance in pairs(items[id]["R"]) do
+      if chance >= minChance and refloot[ref] then
+        -- ref creatures
+        if refloot[ref]["U"] and ((not allowedTypes) or allowedTypes["U"]) then
+          for unit in pairs(refloot[ref]["U"]) do
+            meta["texture"] = nil
+            meta["droprate"] = chance
+            meta["sellcount"] = nil
+            maps = pfDatabase:SearchMobID(unit, meta, maps)
+          end
+        end
+
+        -- ref objects
+        if refloot[ref]["O"] and ((not allowedTypes) or allowedTypes["O"]) then
+          for object in pairs(refloot[ref]["O"]) do
+            meta["texture"] = nil
+            meta["droprate"] = chance
+            meta["sellcount"] = nil
+            maps = pfDatabase:SearchObjectID(object, meta, maps)
+          end
+        end
       end
     end
   end

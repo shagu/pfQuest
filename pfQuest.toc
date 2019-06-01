@@ -11,6 +11,7 @@ db\init.lua
 db\items.lua
 db\units.lua
 db\objects.lua
+db\refloot.lua
 db\quests.lua
 db\meta.lua
 
