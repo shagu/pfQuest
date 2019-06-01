@@ -32,6 +32,7 @@ local target = {
   ["unit"] = true,
   ["object"] = true,
   ["item"] = true,
+  ["refloot"] = true,
   ["quest"] = true,
   ["meta"] = true,
 }
@@ -527,9 +528,10 @@ if target.item then -- itemDB [data]
 
     local items = { [0] = { item_template.entry, nil } }
     local subdata = {
-      ["U"] = {},
-      ["O"] = {},
-      ["V"] = {},
+      ["U"] = {}, -- units that drop the item
+      ["O"] = {}, -- objects that include the item
+      ["V"] = {}, -- vendors who sell the item
+      ["R"] = {}, -- reference loot lists that include the item
     }
 
     -- add items that contain the actual item to the itemlist
@@ -558,26 +560,7 @@ if target.item then -- itemDB [data]
         end
       end
 
-
-      -- fill object table (reference_loot)
-      local gameobject_loot_template = {}
-      local count = 0
-      local query = mysql:execute([[
-        SELECT creature_loot_template.entry, creature_loot_template.ChanceOrQuestChance FROM reference_loot_template
-        INNER JOIN creature_loot_template ON creature_loot_template.item = reference_loot_template.entry
-        AND reference_loot_template.item = ]] .. entry .. [[
-        AND creature_loot_template.mincountOrRef < 0
-        ORDER BY creature_loot_template.entry;
-      ]])
-
-      while query:fetch(gameobject_loot_template, "a") do
-        local chance = round(math.abs(gameobject_loot_template.ChanceOrQuestChance) * chance, 5)
-        if chance > 0 then
-          table.insert(subdata.U, { gameobject_loot_template.entry, chance })
-        end
-      end
-
-      -- fill object table (object_loot)
+      -- fill object table
       local gameobject_loot_template = {}
       local count = 0
       local query = mysql:execute([[
@@ -592,26 +575,17 @@ if target.item then -- itemDB [data]
         end
       end
 
-      -- fill object table (reference_loot)
-      local gameobject_loot_template = {}
+      -- fill reference table
+      local reference_loot_template = {}
       local count = 0
       local query = mysql:execute([[
-        SELECT gameobject_template.entry, gameobject_loot_template.ChanceOrQuestChance FROM reference_loot_template
-        INNER JOIN gameobject_loot_template ON gameobject_loot_template.item = reference_loot_template.entry
-        INNER JOIN gameobject_template ON gameobject_loot_template.entry = gameobject_template.data1
-        WHERE ( gameobject_template.type = 3 OR gameobject_template.type = 25 )
-        AND reference_loot_template.item = ]] .. entry .. [[
-        AND gameobject_loot_template.mincountOrRef < 0
-        ORDER BY gameobject_template.entry;
+        SELECT entry, ChanceOrQuestChance FROM reference_loot_template where reference_loot_template.item = ]] .. entry .. [[ GROUP BY entry
       ]])
-
-      while query:fetch(gameobject_loot_template, "a") do
-        local chance = round(math.abs(gameobject_loot_template.ChanceOrQuestChance) * chance, 5)
-        if chance > 0 then
-          table.insert(subdata.O, { gameobject_loot_template.entry, chance })
-        end
+      while query:fetch(reference_loot_template, "a") do
+        table.insert(subdata.R, { reference_loot_template.entry, reference_loot_template.ChanceOrQuestChance })
       end
 
+      -- fill vendor table
       local npc_vendor = {}
       local count = 0
       local query = mysql:execute('SELECT entry, maxcount FROM npc_vendor WHERE item = ' .. entry .. ' ORDER BY entry')
@@ -622,7 +596,7 @@ if target.item then -- itemDB [data]
 
     -- write item entries
     file:write("  [" .. item_template.entry .. "] = { -- " .. item_template.name .. "\n")
-    for _, t in pairs({ "U", "O", "V"}) do
+    for _, t in pairs({ "U", "O", "V", "R" }) do
       if #subdata[t] > 0 then
         table.sort(subdata[t], function(a,b) return a[2] > b[2] end)
         local cache = {}
@@ -675,6 +649,68 @@ if target.item then -- itemDB [locales]
 
   print()
 end
+
+if target.refloot then -- reflootDB [data]
+  local file = io.open("output/refloot.lua", "w")
+  file:write("pfDB[\"refloot\"][\"data\"] = {\n")
+
+  local reference_loot_template = {}
+  local query = mysql:execute('SELECT entry, ChanceOrQuestChance FROM reference_loot_template GROUP BY entry')
+  while query:fetch(reference_loot_template, "a") do
+    progress:Print("reference_loot_template", "reflootDB (data)")
+    local entry = reference_loot_template.entry
+
+    local subdata = {
+      ["U"] = {}, -- units that drop the item
+      ["O"] = {}, -- objects that include the item
+    }
+
+    -- fill unit table
+    local creature_loot_template = {}
+    local count = 0
+    local query = mysql:execute([[
+      SELECT entry FROM creature_loot_template
+      WHERE creature_loot_template.mincountOrRef < 0
+      AND item = ]] .. entry .. [[ ORDER BY entry
+    ]])
+    while query:fetch(creature_loot_template, "a") do
+      subdata.U[creature_loot_template.entry] = true
+    end
+
+    -- fill object table
+    local gameobject_template = {}
+    local count = 0
+    local query = mysql:execute([[
+      SELECT gameobject_template.entry FROM gameobject_template, gameobject_loot_template
+      WHERE gameobject_template.data1 = gameobject_loot_template.entry
+      AND gameobject_loot_template.mincountOrRef < 0
+      AND gameobject_loot_template.item = ]] .. entry .. [[ ORDER BY gameobject_template.entry ;
+    ]])
+    while query:fetch(gameobject_template, "a") do
+      subdata.O[gameobject_template.entry] = true
+    end
+
+    if hasdata(subdata.O) or hasdata(subdata.U) then
+      -- write refloot entries
+      file:write("  [" .. entry .. "] = {\n")
+      for _, t in pairs({ "U", "O" }) do
+        if hasdata(subdata[t]) then
+          file:write("    [\"" .. t .. "\"] = {\n")
+          for id in pairs(subdata[t]) do
+            file:write("      [" .. id .. "] = 1,\n")
+          end
+          file:write("    },\n")
+        end
+      end
+      file:write("  },\n")
+    end
+  end
+
+  file:write("}\n")
+  file:close()
+  print()
+end
+
 
 if target.quest then -- questDB [data]
   local quest_template = {}
