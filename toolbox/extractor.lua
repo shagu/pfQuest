@@ -398,7 +398,7 @@ if target.unit then -- unitDB [locales]
     progress:Print("creature_template", "unitDB (lang)")
 
     local entry = locales_creature.entry
-    local name  = locales_creature.name
+    local name  = locales_creature[C.Name]
 
     if entry then
       for loc in pairs(locales) do
