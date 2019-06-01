@@ -1,45 +1,60 @@
-# Fetch Databases
+# pfQuest-toolbox
 
 ## Setup Dependencies
-
 ### Archlinux
 
-    pacman -S lxc php php-gd lua lua-sql-mysql mariadb-clients libmariadbclient
+    # pacman -S lua-sql-mysql mariadb mariadb-clients
+    # systemctl start mariadb
+    # mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 
+## Server Database
+The pfQuest extractor supports VMaNGOS and CMaNGOS databases. You need to pick either one of both.
 
-### Ubuntu
+### Using VMaNGOS (Light's Hope)
+Manually download the latest [VMaNGOS Database](https://github.com/brotalnia/database) and unzip it.
 
-    sudo apt-get install mariadb-client php php-gd php-mysqli lua5.2 lua-sql-mysql
-
-## Setup Database LXC Container
-
-    lxc-create -n pfQuest -t ubuntu
-    lxc-start  -n pfQuest
-    lxc-attach -n pfQuest
-
-    echo "nameserver 8.8.8.8" > /etc/resolv.conf
-    apt-get update && apt-get upgrade
-    apt-get install phpmyadmin mariadb-server wget p7zip
-    exit
-
-## Light's Hope / Elysium: Core entries + Translations
-
-Grab the latest [Light's Hope](https://github.com/LightsHope/server/releases) or [Elysium](https://github.com/elysium-project/database) database
-
-# Create Database Structure
-
+#### Create Users And Permissions
+    # mysql
     CREATE USER 'mangos'@'localhost' IDENTIFIED BY 'mangos';
-    CREATE DATABASE `elysium` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
     CREATE DATABASE `aowow` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-    GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `elysium`.* TO 'mangos'@'localhost';
     GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `aowow`.* TO 'mangos'@'localhost';
 
-# Import Databases
+    CREATE DATABASE `vmangos` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+    GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `elysium`.* TO 'mangos'@'localhost';
 
-    mysql -u mangos -p elysium -h 127.0.0.1 < elysiumdb/world_*.sql
-    mysql -u mangos -p aowow -h 127.0.0.1 < aowow.sql
+#### Import Databases
+    $ mysql -u mangos -p"mangos" aowow < aowow.sql
+    $ mysql -u mangos -p"mangos" vmangos < world_*.sql
 
-# Copy CSVs to DBC/
+Open the `extractor.lua` and make sure `local C = vmangos` in line 28 is set to `vmangos`.
+
+### Using CMaNGOS
+    $ mkdir git && cd git
+    $ git clone https://github.com/cmangos/mangos-classic.git
+    $ git clone https://github.com/cmangos/classic-db.git
+    $ git clone https://github.com/MangosExtras/MangosZero_Localised.git
+
+#### Create Users And Permissions
+    # mysql
+    CREATE USER 'mangos'@'localhost' IDENTIFIED BY 'mangos';
+    CREATE DATABASE `aowow` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+    GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `aowow`.* TO 'mangos'@'localhost';
+
+    CREATE DATABASE `cmangos-vanilla` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+    GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `cmangos-vanilla`.* TO 'mangos'@'localhost';
+
+#### Import Databases
+    $ mysql -u mangos -p"mangos" aowow < aowow.sql
+    $ mysql -u mangos -p"mangos" cmangos-vanilla < mangos-classic/sql/base/mangos.sql
+    $ mysql -u mangos -p"mangos" cmangos-vanilla < classic-db/Full_DB/ClassicDB_*.sql
+    $ for file in MangosZero_Localised/1_LocaleTablePrepare.sql MangosZero_Localised/Translations/*/*.sql; do mysql -u mangos -p"mangos" cmangos-vanilla < $file; done
+
+Open the `extractor.lua` and make sure `local C = cmangos-vanilla` in line 28 is set to `cmangos-vanilla`.
+
+## Copy CSVs to DBC/
+You additionally need to extract the `dbc` files from your gameclients.
+Those can be obtained via the `ad` tool within the CMaNGOS tools.
+The DBC files then need to be converted into `.csv` and placed as followed:
 
     $ ls -1 DBC/
     deDE  enUS  esES  frFR  koKR  ruRU  zhCN
@@ -49,12 +64,6 @@ Grab the latest [Light's Hope](https://github.com/LightsHope/server/releases) or
     SkillLine.dbc.csv
     WorldMapArea.dbc.csv
 
-# Extract Data
+## Extract Data
 
-## Extract Specific Localizations (e.g german)
-
-    make deDE
-
-## Build Every Database
-
-    make
+    $ make
