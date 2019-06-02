@@ -441,6 +441,7 @@ local function ResultButtonCreate(i, resultType)
 
   -- text properties
   f.text = f:CreateFontString("Caption", "LOW", "GameFontWhite")
+  f.text:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
   f.text:SetAllPoints(f)
   f.text:SetJustifyH("CENTER")
   f.idText = f:CreateFontString("ID", "LOW", "GameFontDisable")
