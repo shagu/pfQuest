@@ -1,11 +1,11 @@
 pfDB = {
-  ["units"] = {},
+  ["items"] = {},
+  ["meta"] = {},
+  ["minimap"] = {},
   ["objects"] = {},
+  ["professions"] = {},
   ["quests"] = {},
   ["refloot"] = {},
-  ["items"] = {},
+  ["units"] = {},
   ["zones"] = {},
-  ["professions"] = {},
-  ["meta"] = {},
 }
-  

@@ -13,6 +13,7 @@ db\units.lua
 db\objects.lua
 db\refloot.lua
 db\quests.lua
+db\minimap.lua
 db\meta.lua
 
 # database enUS
