@@ -1,0 +1,10 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+  <Include file="..\compat\pfUI.lua"/>
+  <Include file="..\locales.lua"/>
+  <Include file="..\config.lua"/>
+  <Include file="..\slashcmd.lua"/>
+  <Include file="..\database.lua"/>
+  <Include file="..\map.lua"/>
+  <Include file="..\quest.lua"/>
+  <Include file="..\browser.lua"/>
+</Ui>

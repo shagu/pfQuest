@@ -43,6 +43,34 @@ local bitclasses = {
   [1024] = "DRUID"
 }
 
+-- Patch databases to further expansions
+local function patchtable(base, diff)
+  for k, v in pairs(diff) do
+    if base[k] and type(v) == "table" then
+      patchtable(base[k], v)
+    elseif type(v) == "string" and v == "_" then
+      base[k] = nil
+    else
+      base[k] = v
+    end
+  end
+end
+
+local time = GetTime()
+DEFAULT_CHAT_FRAME:AddMessage("Live-Patching pfDB for your Expansion...")
+for _, exp in pairs({ "-tbc", "-wotlk" }) do
+  for _, db in pairs(dbs) do
+    if pfDB[db]["data"..exp] then
+
+      loc_core = pfDB[db][loc] or pfDB[db]["enUS"]
+      loc_update = pfDB[db][loc..exp] or pfDB[db]["enUS"..exp]
+      patchtable(pfDB[db]["data"], pfDB[db]["data"..exp])
+      patchtable(loc_core, loc_update)
+    end
+  end
+end
+DEFAULT_CHAT_FRAME:AddMessage("Complete! Took " .. GetTime() - time .. " seconds.")
+
 -- PlayerHasSkill
 -- Returns false if the player has the required skill
 function pfDatabase:PlayerHasSkill(skill)

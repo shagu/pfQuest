@@ -1,0 +1,9 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+  <Include file="..\db\koKR\init.lua"/>
+  <Include file="..\db\koKR\items.lua"/>
+  <Include file="..\db\koKR\units.lua"/>
+  <Include file="..\db\koKR\objects.lua"/>
+  <Include file="..\db\koKR\quests.lua"/>
+  <Include file="..\db\koKR\zones.lua"/>
+  <Include file="..\db\koKR\professions.lua"/>
+</Ui>

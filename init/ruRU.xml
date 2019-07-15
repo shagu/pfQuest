@@ -1,0 +1,9 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+  <Include file="..\db\ruRU\init.lua"/>
+  <Include file="..\db\ruRU\items.lua"/>
+  <Include file="..\db\ruRU\units.lua"/>
+  <Include file="..\db\ruRU\objects.lua"/>
+  <Include file="..\db\ruRU\quests.lua"/>
+  <Include file="..\db\ruRU\zones.lua"/>
+  <Include file="..\db\ruRU\professions.lua"/>
+</Ui>

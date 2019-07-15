@@ -1,6 +1,20 @@
 #!/usr/bin/lua
 -- depends on luasql
 
+DEBUG, DLOOP = nil, -1
+function __DEBUG_LOOP_LIMIT()
+  if not DEBUG then return nil end
+
+  if DLOOP == -1 then DLOOP = 5 end
+  if DLOOP == 0 then
+    DLOOP = -1
+    return true
+  end
+
+  DLOOP = DLOOP -1
+  return nil
+end
+
 -- map pngs with alpha channel generated with:
 -- `convert $file  -transparent white -resize '100x100!' $file`
 
@@ -27,7 +41,7 @@ end
 
 local C = cmangos
 local expansions = {
-  "vanilla",
+  "vanilla", "tbc"
 }
 
 local locales = {
@@ -152,6 +166,47 @@ do -- helper functions
     return true
   end
 
+  function trealsize(tbl)
+    local count = 0
+    for _ in pairs(tbl) do
+      count = count + 1
+    end
+    return count
+  end
+
+  function tablesubstract(new, base)
+    local ret = {}
+
+    if not base then
+      ret = new
+    elseif type(new) == "table" and type(base) == "table" then
+      for k, v in pairs(new) do
+        if base[k] and type(base[k]) == "table" and type(v) == "table"  then
+          local result = tablesubstract(v, base[k])
+          -- only write table if there is at least one change
+          if trealsize(result) > 0 then ret[k] = result end
+        elseif base[k] and type(base[k]) ~= "table" and type(v) ~= "table" then
+          if base[k] ~= v then
+            ret[k] = v
+          end
+        elseif not base[k] then
+          ret[k] = v
+        end
+      end
+
+      -- add delete entries for obsolete values
+      for k, v in pairs(base) do
+        if not new[k] then
+          ret[k] = "_"
+        end
+      end
+    else
+      print("ERROR: non-table assigned to `tablesubstract`")
+    end
+
+    return ret
+  end
+
   function serialize(file, name, tbl, spacing, flat)
     local closehandle = type(file) == "string"
     local file = type(file) == "string" and io.open(file, "w") or file
@@ -197,6 +252,8 @@ do -- helper functions
     if closehandle then file:close() end
   end
 end
+
+local pfDB = {}
 
 for _, expansion in pairs(expansions) do
   print("Extracting: " .. expansion)
@@ -283,7 +340,6 @@ for _, expansion in pairs(expansions) do
     end
   end
 
-  local pfDB = {}
   local exp = expansion == "vanilla" and "" or "-"..expansion
   local data = "data".. exp
   local factionlabel = expansion == "vanilla" and "Faction" or "FactionAlliance"
@@ -291,13 +347,15 @@ for _, expansion in pairs(expansions) do
   do -- units
     print("- loading units...")
 
-    pfDB["units"] = {}
+    pfDB["units"] = pfDB["units"] or {}
     pfDB["units"][data] = {}
 
     -- iterate over all creatures
     local creature_template = {}
     local query = mysql:execute('SELECT * FROM creature_template GROUP BY creature_template.entry ORDER BY creature_template.entry')
     while query:fetch(creature_template, "a") do
+      if __DEBUG_LOOP_LIMIT() then break end
+
       local entry   = tonumber(creature_template[C.Entry])
       local name    = creature_template[C.Name]
       local minlvl  = creature_template[C.MinLevel]
@@ -370,13 +428,15 @@ for _, expansion in pairs(expansions) do
   do -- objects
     print("- loading objects...")
 
-    pfDB["objects"] = {}
+    pfDB["objects"] = pfDB["objects"] or {}
     pfDB["objects"][data] = {}
 
     -- iterate over all objects
     local gameobject_template = {}
     local query = mysql:execute('SELECT * FROM gameobject_template GROUP BY gameobject_template.entry ORDER BY gameobject_template.entry ASC')
     while query:fetch(gameobject_template, "a") do
+      if __DEBUG_LOOP_LIMIT() then break end
+
       local entry  = tonumber(gameobject_template.entry)
       local name   = gameobject_template.name
 
@@ -427,13 +487,15 @@ for _, expansion in pairs(expansions) do
   do -- items
     print("- loading items...")
 
-    pfDB["items"] = {}
+    pfDB["items"] = pfDB["items"] or {}
     pfDB["items"][data] = {}
 
     -- iterate over all items
     local item_template = {}
     local query = mysql:execute('SELECT entry, name FROM item_template GROUP BY item_template.entry ASC')
     while query:fetch(item_template, "a") do
+      if __DEBUG_LOOP_LIMIT() then break end
+
       local entry = tonumber(item_template.entry)
       local scans = { [0] = { entry, nil } }
 
@@ -503,13 +565,15 @@ for _, expansion in pairs(expansions) do
   do -- refloot
     print("- loading refloot...")
 
-    pfDB["refloot"] = {}
+    pfDB["refloot"] = pfDB["refloot"] or {}
     pfDB["refloot"][data] = {}
 
     -- iterate over all reference loots
     local reference_loot_template = {}
     local query = mysql:execute('SELECT entry, ChanceOrQuestChance FROM reference_loot_template GROUP BY entry')
     while query:fetch(reference_loot_template, "a") do
+      if __DEBUG_LOOP_LIMIT() then break end
+
       local entry = tonumber(reference_loot_template.entry)
 
       -- fill unit table
@@ -546,13 +610,15 @@ for _, expansion in pairs(expansions) do
   do -- quests
     print("- loading quests...")
 
-    pfDB["quests"] = {}
+    pfDB["quests"] = pfDB["quests"] or {}
     pfDB["quests"][data] = {}
 
     -- iterate over all quests
     local quest_template = {}
     local query = mysql:execute('SELECT * FROM quest_template GROUP BY quest_template.entry')
     while query:fetch(quest_template, "a") do
+      if __DEBUG_LOOP_LIMIT() then break end
+
       local entry = tonumber(quest_template.entry)
       local minlevel = tonumber(quest_template.MinLevel)
       local questlevel = tonumber(quest_template.QuestLevel)
@@ -694,7 +760,7 @@ for _, expansion in pairs(expansions) do
   do -- minimap
     print("- loading minimap...")
 
-    pfDB["minimap"..exp] = {}
+    pfDB["minimap"..exp] = pfDB["minimap"..exp] or {}
 
     local minimap_size = {}
     local query = mysql:execute('SELECT * FROM pfquest.WorldMapArea_'..expansion..' ORDER BY areatableID ASC')
@@ -717,7 +783,7 @@ for _, expansion in pairs(expansions) do
   do -- meta
     print("- loading meta...")
 
-    pfDB["meta"..exp] = {
+    pfDB["meta"..exp] = pfDB["meta"..exp] or {
       ["mines"] = {},
       ["herbs"] = {},
       ["chests"] = {},
@@ -752,6 +818,8 @@ for _, expansion in pairs(expansions) do
     local locales_creature = {}
     local query = mysql:execute('SELECT * FROM creature_template LEFT JOIN locales_creature ON locales_creature.entry = creature_template.entry GROUP BY creature_template.entry ORDER BY creature_template.entry ASC')
     while query:fetch(locales_creature, "a") do
+      if __DEBUG_LOOP_LIMIT() then break end
+
       local entry = tonumber(locales_creature.entry)
       local name  = locales_creature[C.Name]
 
@@ -773,6 +841,8 @@ for _, expansion in pairs(expansions) do
     local locales_gameobject = {}
     local query = mysql:execute('SELECT * FROM gameobject_template LEFT JOIN locales_gameobject ON locales_gameobject.entry = gameobject_template.entry GROUP BY gameobject_template.entry ORDER BY gameobject_template.entry ASC')
     while query:fetch(locales_gameobject, "a") do
+      if __DEBUG_LOOP_LIMIT() then break end
+
       local entry = tonumber(locales_gameobject.entry)
       local name  = locales_gameobject.name
 
@@ -795,6 +865,8 @@ for _, expansion in pairs(expansions) do
     local locales_item = {}
     local query = mysql:execute('SELECT * FROM item_template LEFT JOIN locales_item ON locales_item.entry = item_template.entry GROUP BY item_template.entry ORDER BY item_template.entry ASC')
     while query:fetch(locales_item, "a") do
+      if __DEBUG_LOOP_LIMIT() then break end
+
       local entry = tonumber(locales_item.entry)
       local name  = locales_item.name
 
@@ -816,6 +888,8 @@ for _, expansion in pairs(expansions) do
     local locales_quest = {}
     local query = mysql:execute('SELECT * FROM quest_template LEFT JOIN locales_quest ON locales_quest.entry = quest_template.entry GROUP BY quest_template.entry ORDER BY quest_template.entry ASC')
     while query:fetch(locales_quest, "a") do
+      if __DEBUG_LOOP_LIMIT() then break end
+
       for loc in pairs(locales) do
         local entry = tonumber(locales_quest.entry)
 
@@ -847,6 +921,8 @@ for _, expansion in pairs(expansions) do
     local locales_professions = {}
     local query = mysql:execute('SELECT * FROM pfquest.SkillLine_'..expansion..' ORDER BY id ASC')
     while query:fetch(locales_professions, "a") do
+      if __DEBUG_LOOP_LIMIT() then break end
+
       local entry = tonumber(locales_professions.id)
 
       if entry then
@@ -868,6 +944,8 @@ for _, expansion in pairs(expansions) do
     local locales_zones = {}
     local query = mysql:execute('SELECT * FROM pfquest.AreaTable_'..expansion..' ORDER BY id ASC')
     while query:fetch(locales_zones, "a") do
+      if __DEBUG_LOOP_LIMIT() then break end
+
       local entry = tonumber(locales_zones.id)
 
       if entry then
@@ -880,6 +958,34 @@ for _, expansion in pairs(expansions) do
           end
         end
       end
+    end
+  end
+
+  if expansion ~= "vanilla" then
+    print("- compress DB")
+    local prev_exp = expansion == "tbc" and "" or "-tbc"
+    local prev_data = "data".. prev_exp
+
+    pfDB["units"][data] = tablesubstract(pfDB["units"][data], pfDB["units"][prev_data])
+    pfDB["objects"][data] = tablesubstract(pfDB["objects"][data], pfDB["objects"][prev_data])
+    pfDB["items"][data] = tablesubstract(pfDB["items"][data], pfDB["items"][prev_data])
+    pfDB["refloot"][data] = tablesubstract(pfDB["refloot"][data], pfDB["refloot"][prev_data])
+    pfDB["quests"][data] = tablesubstract(pfDB["quests"][data], pfDB["quests"][prev_data])
+    pfDB["minimap"..exp] = tablesubstract(pfDB["minimap"..exp], pfDB["minimap"..prev_exp])
+    pfDB["meta"..exp] = tablesubstract(pfDB["meta"..exp], pfDB["meta"..prev_exp])
+
+
+    for loc in pairs(locales) do
+      local locale = loc .. exp
+      local prev_locale = loc .. prev_exp
+
+      os.execute("mkdir -p output/" .. loc)
+      pfDB["units"][locale] = tablesubstract(pfDB["units"][locale], pfDB["units"][prev_locale])
+      pfDB["objects"][locale] = tablesubstract(pfDB["objects"][locale], pfDB["objects"][prev_locale])
+      pfDB["items"][locale] = tablesubstract(pfDB["items"][locale], pfDB["items"][prev_locale])
+      pfDB["quests"][locale] = tablesubstract(pfDB["quests"][locale], pfDB["quests"][prev_locale])
+      pfDB["professions"][locale] = tablesubstract(pfDB["professions"][locale], pfDB["professions"][prev_locale])
+      pfDB["zones"][locale] = tablesubstract(pfDB["zones"][locale], pfDB["zones"][prev_locale])
     end
   end
 

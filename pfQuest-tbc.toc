@@ -1,4 +1,4 @@
-## Interface: 11200
+## Interface: 20400
 ## Title: |cff33ffccpf|cffffffffQuest
 ## Author: Shagu
 ## Notes: A lightweight Questhelper and Database
@@ -14,5 +14,14 @@ init\deDE.xml
 init\zhCN.xml
 init\esES.xml
 init\ruRU.xml
+
+init\data-tbc.xml
+init\enUS-tbc.xml
+init\koKR-tbc.xml
+init\frFR-tbc.xml
+init\deDE-tbc.xml
+init\zhCN-tbc.xml
+init\esES-tbc.xml
+init\ruRU-tbc.xml
 
 init\addon.xml
