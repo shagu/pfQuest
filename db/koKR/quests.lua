@@ -8051,7 +8051,7 @@ pfDB["quests"]["koKR"] = {
   },
   [2741] = {
     ["D"] = "",
-    ["O"] = " ",
+    ["O"] = "",
     ["T"] = "고성능 자동부화기",
   },
   [2742] = {
@@ -13845,7 +13845,7 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "What the Wind Carries",
   },
   [6567] = {
-    ["D"] = "I have received word from one of my champions that a way into the lair of the dragon may exist. You are to seek him out.Rexxar wanders the desert wasteland of Desolace, traveling between Stonetalon and Feralas. He awaits your arrival.",
+    ["D"] = "I have received word from one of my champions that a way into the lair of the dragon may exist. You are to seek him out.$B$BRexxar wanders the desert wasteland of Desolace, traveling between Stonetalon and Feralas. He awaits your arrival.",
     ["O"] = "Seek out Rexxar. The Warchief has instructed you as to his whereabouts. Search the paths of Desolace, between the Stonetalon Mountains and Feralas.",
     ["T"] = "The Champion of the Horde",
   },
@@ -18785,7 +18785,7 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "The Champion Returns",
   },
   [8742] = {
-    ["D"] = "A thousand years has passed and just as it was fated, one stands before me. One who shall lead their people to a new age.The Old God trembles, $N. Oh yes, it fears your faith. Shatter the prophecy of C\'Thun.It knows you come, champion - and with you comes the might of Kalimdor. You have only to let me know when you are prepared and I shall grant you The Scepter of the Shifting Sands.",
+    ["D"] = "A thousand years has passed and just as it was fated, one stands before me. One who shall lead their people to a new age.$B$BThe Old God trembles, $N. Oh yes, it fears your faith. Shatter the prophecy of C\'Thun.$B$BIt knows you come, champion - and with you comes the might of Kalimdor. You have only to let me know when you are prepared and I shall grant you The Scepter of the Shifting Sands.",
     ["O"] = "",
     ["T"] = "The Might of Kalimdor",
   },
@@ -19210,12 +19210,12 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "무공 훈장 10개",
   },
   [8827] = {
-    ["D"] = "I hear Greatfather Winter - with the generous support of Smokeywood Pastures - has put presents for everyone under the tree in Ironforge. I wish I could go, but I\'ve got to look after the PX-238 Winter Wondervolt.$B$BBut you should definitely check it out. I\'m sure Greatfather Winter has some presents with your name on them.",
+    ["D"] = "I hear Greatfather Winter - with the generous support of Smokywood Pastures - has put presents for everyone under the tree in Ironforge. I wish I could go, but I\'ve got to look after the PX-238 Winter Wondervolt.$B$BBut you should definitely check it out. I\'m sure Greatfather Winter has some presents with your name on them.",
     ["O"] = "겨울 할아버지와 대화해야 합니다. 아이언포지의 굴뚝나무 목장조합 상인 근처로 가면 만날 수 있을 것입니다.",
     ["T"] = "겨울 할아버지의 선물",
   },
   [8828] = {
-    ["D"] = "I hear Great-father Winter - with the generous support of Smokeywood Pastures - has put presents for everyone under the tree in Orgrimmar. I wish I could go, but I\'ve got to look after the PX-238 Winter Wondervolt.$B$BBut you should definitely check it out. I\'m sure Great-father Winter has some presents with your name on them.",
+    ["D"] = "I hear Great-father Winter - with the generous support of Smokywood Pastures - has put presents for everyone under the tree in Orgrimmar. I wish I could go, but I\'ve got to look after the PX-238 Winter Wondervolt.$B$BBut you should definitely check it out. I\'m sure Great-father Winter has some presents with your name on them.",
     ["O"] = "겨울 할아버지와 대화해야 합니다. 오그리마의 굴뚝나무 목장조합 상인 근처로 가면 만날 수 있을 것입니다.",
     ["T"] = "겨울 할아버지의 선물",
   },

@@ -8051,7 +8051,7 @@ pfDB["quests"]["zhCN"] = {
   },
   [2741] = {
     ["D"] = "",
-    ["O"] = " ",
+    ["O"] = "",
     ["T"] = "超级测蛋器",
   },
   [2742] = {
@@ -18785,7 +18785,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "勇士回来了",
   },
   [8742] = {
-    ["D"] = "A thousand years has passed and just as it was fated, one stands before me. One who shall lead their people to a new age.The Old God trembles, $N. Oh yes, it fears your faith. Shatter the prophecy of C\'Thun.It knows you come, champion - and with you comes the might of Kalimdor. You have only to let me know when you are prepared and I shall grant you The Scepter of the Shifting Sands.",
+    ["D"] = "A thousand years has passed and just as it was fated, one stands before me. One who shall lead their people to a new age.$B$BThe Old God trembles, $N. Oh yes, it fears your faith. Shatter the prophecy of C\'Thun.$B$BIt knows you come, champion - and with you comes the might of Kalimdor. You have only to let me know when you are prepared and I shall grant you The Scepter of the Shifting Sands.",
     ["O"] = "",
     ["T"] = "卡林多的力量",
   },
