@@ -57,17 +57,25 @@ local function patchtable(base, diff)
 end
 
 local time = GetTime()
+local loc_core, loc_update
 DEFAULT_CHAT_FRAME:AddMessage("Live-Patching pfDB for your Expansion...")
 for _, exp in pairs({ "-tbc", "-wotlk" }) do
   for _, db in pairs(dbs) do
     if pfDB[db]["data"..exp] then
-
       loc_core = pfDB[db][loc] or pfDB[db]["enUS"]
       loc_update = pfDB[db][loc..exp] or pfDB[db]["enUS"..exp]
       patchtable(pfDB[db]["data"], pfDB[db]["data"..exp])
       patchtable(loc_core, loc_update)
     end
   end
+
+  loc_core = pfDB["professions"][loc] or pfDB["professions"]["enUS"]
+  loc_update = pfDB["professions"][loc..exp] or pfDB["professions"]["enUS"..exp]
+  if loc_update then patchtable(loc_core, loc_update) end
+
+  loc_core = pfDB["zones"][loc] or pfDB["zones"]["enUS"]
+  loc_update = pfDB["zones"][loc..exp] or pfDB["zones"]["enUS"..exp]
+  if loc_update then patchtable(loc_core, loc_update) end
 end
 DEFAULT_CHAT_FRAME:AddMessage("Complete! Took " .. GetTime() - time .. " seconds.")
 
