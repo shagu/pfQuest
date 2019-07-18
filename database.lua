@@ -76,6 +76,8 @@ for _, exp in pairs({ "-tbc", "-wotlk" }) do
   loc_core = pfDB["zones"][loc] or pfDB["zones"]["enUS"]
   loc_update = pfDB["zones"][loc..exp] or pfDB["zones"]["enUS"..exp]
   if loc_update then patchtable(loc_core, loc_update) end
+
+  if pfDB["minimap"..exp] then patchtable(pfDB["minimap"], pfDB["minimap"..exp]) end
 end
 DEFAULT_CHAT_FRAME:AddMessage("Complete! Took " .. GetTime() - time .. " seconds.")
 
