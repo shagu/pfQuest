@@ -448,7 +448,7 @@ function pfDatabase:SearchItemID(id, meta, maps, allowedTypes)
   -- search vendor goods
   if items[id]["V"] and ((not allowedTypes) or allowedTypes["V"]) then
     for unit, chance in pairs(items[id]["V"]) do
-      meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\icon_vendor"
+      meta["texture"] = pfQuestConfig.path.."\\img\\icon_vendor"
       meta["droprate"] = nil
       meta["sellcount"] = chance
       maps = pfDatabase:SearchMobID(unit, meta, maps)
@@ -489,7 +489,7 @@ function pfDatabase:SearchVendor(item, meta)
     -- search vendor goods
     if items[id] and items[id]["V"] then
       for unit, chance in pairs(items[id]["V"]) do
-        meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\icon_vendor"
+        meta["texture"] = pfQuestConfig.path.."\\img\\icon_vendor"
         meta["droprate"] = nil
         meta["sellcount"] = chance
         maps = pfDatabase:SearchMobID(unit, meta, maps)
@@ -521,7 +521,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
         for _, unit in pairs(quests[id]["start"]["U"]) do
           meta = meta or {}
           meta["layer"] = meta["layer"] or 4
-          meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available_c"
+          meta["texture"] = pfQuestConfig.path.."\\img\\available_c"
           maps = pfDatabase:SearchMobID(unit, meta, maps)
         end
       end
@@ -530,7 +530,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
       if quests[id]["start"]["O"] then
         for _, object in pairs(quests[id]["start"]["O"]) do
           meta = meta or {}
-          meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available_c"
+          meta["texture"] = pfQuestConfig.path.."\\img\\available_c"
           maps = pfDatabase:SearchObjectID(object, meta, maps)
         end
       end
@@ -547,12 +547,12 @@ function pfDatabase:SearchQuestID(id, meta, maps)
             local _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
             complete = complete or GetNumQuestLeaderBoards(meta["qlogid"]) == 0 and true or nil
             if complete then
-              meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
+              meta["texture"] = pfQuestConfig.path.."\\img\\complete_c"
             else
-              meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete"
+              meta["texture"] = pfQuestConfig.path.."\\img\\complete"
             end
           else
-            meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
+            meta["texture"] = pfQuestConfig.path.."\\img\\complete_c"
           end
           maps = pfDatabase:SearchMobID(unit, meta, maps)
         end
@@ -567,12 +567,12 @@ function pfDatabase:SearchQuestID(id, meta, maps)
             local _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
             complete = complete or GetNumQuestLeaderBoards(meta["qlogid"]) == 0 and true or nil
             if complete then
-              meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
+              meta["texture"] = pfQuestConfig.path.."\\img\\complete_c"
             else
-              meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete"
+              meta["texture"] = pfQuestConfig.path.."\\img\\complete"
             end
           else
-            meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\complete_c"
+            meta["texture"] = pfQuestConfig.path.."\\img\\complete_c"
           end
 
           maps = pfDatabase:SearchObjectID(object, meta, maps)
@@ -740,7 +740,7 @@ function pfDatabase:SearchQuests(meta, maps)
       -- set metadata
       meta["quest"] = ( pfDB.quests.loc[id] and pfDB.quests.loc[id].T ) or UNKNOWN
       meta["questid"] = id
-      meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available_c"
+      meta["texture"] = pfQuestConfig.path.."\\img\\available_c"
 
       meta["qlvl"] = quests[id]["lvl"]
       meta["qmin"] = quests[id]["min"]
@@ -750,21 +750,21 @@ function pfDatabase:SearchQuests(meta, maps)
 
       -- tint high level quests red
       if minlvl > plevel then
-        meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
+        meta["texture"] = pfQuestConfig.path.."\\img\\available"
         meta["vertex"] = { 1, .6, .6 }
         meta["layer"] = 2
       end
 
       -- tint low level quests grey
       if maxlvl + 9 < plevel then
-        meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
+        meta["texture"] = pfQuestConfig.path.."\\img\\available"
         meta["vertex"] = { 1, 1, 1 }
         meta["layer"] = 2
       end
 
       -- treat big difference in level requirements as daily quests
       if math.abs(minlvl - maxlvl) >= 30 then
-        meta["texture"] = "Interface\\AddOns\\pfQuest\\img\\available"
+        meta["texture"] = pfQuestConfig.path.."\\img\\available"
         meta["vertex"] = { .2, .8, 1 }
         meta["layer"] = 2
       end

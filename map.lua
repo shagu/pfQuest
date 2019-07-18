@@ -30,11 +30,11 @@ local function IsEmpty(tabl)
 end
 
 local layers = {
-  ["Interface\\AddOns\\pfQuest\\img\\available"]    = 1,
-  ["Interface\\AddOns\\pfQuest\\img\\available_c"]  = 2,
-  ["Interface\\AddOns\\pfQuest\\img\\complete"]     = 3,
-  ["Interface\\AddOns\\pfQuest\\img\\complete_c"]   = 4,
-  ["Interface\\AddOns\\pfQuest\\img\\icon_vendor"]  = 5,
+  [pfQuestConfig.path.."\\img\\available"]    = 1,
+  [pfQuestConfig.path.."\\img\\available_c"]  = 2,
+  [pfQuestConfig.path.."\\img\\complete"]     = 3,
+  [pfQuestConfig.path.."\\img\\complete_c"]   = 4,
+  [pfQuestConfig.path.."\\img\\icon_vendor"]  = 5,
 }
 
 local function GetLayerByTexture(tex)
@@ -497,9 +497,9 @@ function pfMap:UpdateNode(frame, node, color, obj)
 
   if ( frame.updateColor or frame.updateTexture ) and not frame.texture then
     if obj == "minimap" and pfQuest_config["cutoutminimap"] == "1" then
-      frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\nodecut")
+      frame.tex:SetTexture(pfQuestConfig.path.."\\img\\nodecut")
     else
-      frame.tex:SetTexture("Interface\\AddOns\\pfQuest\\img\\node")
+      frame.tex:SetTexture(pfQuestConfig.path.."\\img\\node")
     end
     local r,g,b = str2rgb(frame.color)
     frame.tex:SetVertexColor(r,g,b,1)
@@ -518,7 +518,7 @@ end
 
 function pfMap:UpdateNodes()
   local color = pfQuest_config["colorbyspawn"] == "1" and "spawn" or "title"
-  local alpha = pfQuest_config["worldmaptransp"] + 0
+  local alpha = pfQuest_config["worldmaptransp"] and pfQuest_config["worldmaptransp"] + 0 or 1
   local map = pfMap:GetMapID(GetCurrentMapContinent(), GetCurrentMapZone())
   local i = 0
 

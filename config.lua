@@ -73,6 +73,17 @@ pfQuestConfig.vpos = 30
 pfUI.api.CreateBackdrop(pfQuestConfig, nil, true, 0.75)
 table.insert(UISpecialFrames, "pfQuestConfig")
 
+-- detect current addon path
+local tocs = { "", "-master", "-tbc", "-wotlk" }
+for _, name in pairs(tocs) do
+  local current = string.format("pfQuest%s", name)
+  local _, title = GetAddOnInfo(current)
+  if title then
+    pfQuestConfig.path = "Interface\\AddOns\\" .. current
+    break
+  end
+end
+
 pfQuestConfig.title = pfQuestConfig:CreateFontString("Status", "LOW", "GameFontNormal")
 pfQuestConfig.title:SetFontObject(GameFontWhite)
 pfQuestConfig.title:SetPoint("TOP", pfQuestConfig, "TOP", 0, -8)
@@ -85,7 +96,7 @@ pfQuestConfig.close:SetPoint("TOPRIGHT", -5, -5)
 pfQuestConfig.close:SetHeight(12)
 pfQuestConfig.close:SetWidth(12)
 pfQuestConfig.close.texture = pfQuestConfig.close:CreateTexture("pfQuestionDialogCloseTex")
-pfQuestConfig.close.texture:SetTexture("Interface\\AddOns\\pfQuest\\compat\\close")
+pfQuestConfig.close.texture:SetTexture(pfQuestConfig.path.."\\compat\\close")
 pfQuestConfig.close.texture:ClearAllPoints()
 pfQuestConfig.close.texture:SetAllPoints(pfQuestConfig.close)
 pfQuestConfig.close.texture:SetVertexColor(1,.25,.25,1)
