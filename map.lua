@@ -518,7 +518,7 @@ end
 
 function pfMap:UpdateNodes()
   local color = pfQuest_config["colorbyspawn"] == "1" and "spawn" or "title"
-  local alpha = pfQuest_config["worldmaptransp"] and pfQuest_config["worldmaptransp"] + 0 or 1
+  local alpha = pfQuest_config["worldmaptransp"] + 0
   local map = pfMap:GetMapID(GetCurrentMapContinent(), GetCurrentMapZone())
   local i = 0
 

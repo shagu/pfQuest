@@ -33,7 +33,7 @@ pfQuestConfig:SetMovable(true)
 pfQuestConfig:EnableMouse(true)
 pfQuestConfig:RegisterEvent("ADDON_LOADED")
 pfQuestConfig:SetScript("OnEvent", function()
-  if arg1 == "pfQuest" then
+  if arg1 == "pfQuest" or arg1 == "pfQuest-tbc" or arg1 == "pfQuest-wotlk" then
     pfQuestConfig:LoadConfig()
     pfQuestConfig:MigrateHistory()
 

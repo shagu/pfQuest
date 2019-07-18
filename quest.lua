@@ -14,7 +14,7 @@ pfQuest:RegisterEvent("SKILL_LINES_CHANGED")
 pfQuest:RegisterEvent("ADDON_LOADED")
 pfQuest:SetScript("OnEvent", function()
   if event == "ADDON_LOADED" then
-    if arg1 == "pfQuest" then
+    if arg1 == "pfQuest" or arg1 == "pfQuest-tbc" or arg1 == "pfQuest-wotlk" then
       if tostring(GetAddOnMetadata("pfQuest", "Version")) == "NORELEASE" then
         DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccWARNING:|r " .. pfQuest_Loc["You're using a development snapshot of pfQuest which leads to a higher RAM-Usage and increased loading times. Please choose an official release instead: https://shagu.org/pfQuest"])
       end
