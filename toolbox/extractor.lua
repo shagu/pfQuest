@@ -776,7 +776,7 @@ for _, expansion in pairs(expansions) do
       local x = -1 * x_min + x_max
       local y = -1 * y_min + y_max
 
-      pfDB["minimap"..exp][areaID] = { y, x }
+      pfDB["minimap"..exp][tonumber(areaID)] = { y, x }
     end
   end
 
