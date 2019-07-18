@@ -56,9 +56,7 @@ local function patchtable(base, diff)
   end
 end
 
-local time = GetTime()
 local loc_core, loc_update
-DEFAULT_CHAT_FRAME:AddMessage("Live-Patching pfDB for your Expansion...")
 for _, exp in pairs({ "-tbc", "-wotlk" }) do
   for _, db in pairs(dbs) do
     if pfDB[db]["data"..exp] then
@@ -79,7 +77,6 @@ for _, exp in pairs({ "-tbc", "-wotlk" }) do
 
   if pfDB["minimap"..exp] then patchtable(pfDB["minimap"], pfDB["minimap"..exp]) end
 end
-DEFAULT_CHAT_FRAME:AddMessage("Complete! Took " .. GetTime() - time .. " seconds.")
 
 -- PlayerHasSkill
 -- Returns false if the player has the required skill
