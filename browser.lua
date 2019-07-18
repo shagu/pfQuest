@@ -1,6 +1,9 @@
 -- default config
 pfBrowser_fav = {["units"] = {}, ["objects"] = {}, ["items"] = {}, ["quests"] = {}}
 
+-- multi api compat
+local mod = mod or math.mod
+
 local tooltip_limit = 5
 local search_limit = 512
 
@@ -215,7 +218,7 @@ local function ResultButtonLeave()
     pfBrowser.selectState = "clean"
   end
 
-  if math.mod(this:GetID(),2) == 1 then
+  if mod(this:GetID(),2) == 1 then
     this.tex:SetTexture(1,1,1,.02)
   else
     this.tex:SetTexture(1,1,1,.04)
@@ -436,7 +439,7 @@ local function ResultButtonCreate(i, resultType)
 
   f.tex = f:CreateTexture("BACKGROUND")
   f.tex:SetAllPoints(f)
-  f.tex:SetTexture(1,1,1, ( math.mod(i,2) == 1 and .02 or .04))
+  f.tex:SetTexture(1,1,1, ( mod(i,2) == 1 and .02 or .04))
 
 
   -- text properties
@@ -668,7 +671,7 @@ pfBrowser:SetScript("OnUpdate", function()
   elseif this.selectState and (this.selectState == "clean" or not IsControlKeyDown()) then
     for id, frame in pairs(pfBrowser.tabs) do
       for id, button in pairs(frame.buttons) do
-        if math.mod(button:GetID(),2) == 1 then
+        if mod(button:GetID(),2) == 1 then
           button.tex:SetTexture(1,1,1,.02)
         else
           button.tex:SetTexture(1,1,1,.04)

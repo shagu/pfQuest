@@ -1,3 +1,6 @@
+-- multi api compat
+local gfind = string.gmatch or string.gfind
+
 SLASH_PFDB1, SLASH_PFDB2, SLASH_PFDB3, SLASH_PFDB4 = "/db", "/shagu", "/pfquest", "/pfdb"
 SlashCmdList["PFDB"] = function(input, editbox)
   local params = {}
@@ -24,14 +27,14 @@ SlashCmdList["PFDB"] = function(input, editbox)
   local commandlist = { }
   local command
 
-  for command in string.gfind(input, "[^ ]+") do
+  for command in gfind(input, "[^ ]+") do
     table.insert(commandlist, command)
   end
 
   local arg1, arg2 = commandlist[1], ""
 
   -- handle whitespace mob- and item names correctly
-  for i in commandlist do
+  for i in pairs(commandlist) do
     if (i ~= 1) then
       arg2 = arg2 .. commandlist[i]
       if (commandlist[i+1] ~= nil) then
