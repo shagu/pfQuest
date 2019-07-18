@@ -43,13 +43,13 @@ local function ResultButtonEnter()
 
   -- item
   if this.btype == "items" then
-    GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
+    GameTooltip:SetOwner(this, "ANCHOR_LEFT", -10, -5)
     GameTooltip:SetHyperlink("item:" .. this.id .. ":0:0:0")
     GameTooltip:Show()
 
   -- quest
   elseif this.btype == "quests" then
-    GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
+    GameTooltip:SetOwner(this, "ANCHOR_LEFT", -10, -5)
     GameTooltip:SetText(this.name, .3, 1, .8)
     local questTexts = pfDB[this.btype]["loc"][this.id]
     local questData = pfDB[this.btype]["data"][this.id]
@@ -95,7 +95,7 @@ local function ResultButtonEnter()
     local id = this.id
     local name = this.name
     local maps = {}
-    GameTooltip:SetOwner(this.text, "ANCHOR_LEFT", -10, -5)
+    GameTooltip:SetOwner(this, "ANCHOR_LEFT", -10, -5)
     GameTooltip:SetText(name, .3, 1, .8)
     if this.btype == "units" then
       local unitData = units[id]
