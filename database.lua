@@ -816,6 +816,14 @@ end
 -- automatically runs a deep scan if no result was found.
 -- Returns possible quest IDs
 function pfDatabase:GetQuestIDs(qid, deep)
+  if GetQuestLink then
+    local questLink = GetQuestLink(qid)
+      if questLink then
+      local _, _, id = strfind(questLink, "|c.*|Hquest:([%d]+):([%d]+)|h%[(.*)%]|h|r")
+      return { [100] = tonumber(id) }
+    end
+  end
+
   local oldID = GetQuestLogSelection()
   SelectQuestLogEntry(qid)
   local text, objective = GetQuestLogQuestText()
