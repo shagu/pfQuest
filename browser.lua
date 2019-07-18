@@ -261,7 +261,7 @@ local function ResultButtonEnterSpecial()
         if units[unitID] and not skip then
           local name = pfDB.units.loc[unitID]
           local zone = nil
-          if units[unitID].coords then
+          if units[unitID].coords and units[unitID].coords[1] then
             zone = units[unitID].coords[1][3]
           end
           GameTooltip:AddDoubleLine(name, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
@@ -280,7 +280,7 @@ local function ResultButtonEnterSpecial()
               if units[unit] and not skip then
                 local name = pfDB.units.loc[unit]
                 local zone = nil
-                if units[unit].coords then
+                if units[unit].coords and units[unit].coords[1] then
                   zone = units[unit].coords[1][3]
                 end
                 GameTooltip:AddDoubleLine(name, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
@@ -322,7 +322,7 @@ local function ResultButtonEnterSpecial()
               if objects[unit] and not skip then
                 local name = pfDB.objects.loc[unit]
                 local zone = nil
-                if objects[unit].coords then
+                if objects[unit].coords and objects[unit].coords[1] then
                   zone = objects[unit].coords[1][3]
                 end
                 GameTooltip:AddDoubleLine(name, ( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), 1,1,1, .5,.5,.5)
