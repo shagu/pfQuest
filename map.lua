@@ -1,5 +1,7 @@
 -- multi api compat
 local mod = mod or math.mod
+local _, _, _, client = GetBuildInfo()
+client = client or 11200
 
 local validmaps = setmetatable({},{__mode="kv"})
 local rgbcache = setmetatable({},{__mode="kv"})
@@ -650,7 +652,13 @@ function pfMap:UpdateMinimap()
           pfMap.mpins[i]:ClearAllPoints()
           pfMap.mpins[i]:SetPoint("CENTER", pfMap.drawlayer, "CENTER", -xPos, yPos)
           pfMap.mpins[i]:SetAlpha(alpha)
-          pfMap.mpins[i]:Show()
+
+          -- skip available quests for tbc
+          if pfMap.mpins[i].layer == 2 and client > 11200 then
+            pfMap.mpins[i]:Hide()
+          else
+            pfMap.mpins[i]:Show()
+          end
 
           i = i + 1
         end
