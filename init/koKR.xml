@@ -1,5 +1,4 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
-  <Include file="..\db\koKR\init.lua"/>
   <Include file="..\db\koKR\items.lua"/>
   <Include file="..\db\koKR\units.lua"/>
   <Include file="..\db\koKR\objects.lua"/>

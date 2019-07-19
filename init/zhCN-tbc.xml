@@ -1,5 +1,4 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
-  <Include file="..\db\zhCN\init-tbc.lua"/>
   <Include file="..\db\zhCN\items-tbc.lua"/>
   <Include file="..\db\zhCN\units-tbc.lua"/>
   <Include file="..\db\zhCN\objects-tbc.lua"/>
