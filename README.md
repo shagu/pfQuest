@@ -10,9 +10,18 @@ pfQuest is the successor of [ShaguQuest](https://shagu.org/ShaguQuest/) and has 
 You can view the [[Latest Changes]](https://gitlab.com/shagu/pfQuest/commits/master) to see what has changed recently.
 
 # Downloads
-Every compact build includes a specifically crafted database to match the gameclient. The `noLoc` package is for people with localized clients (e.g deDE) playing on servers that don’t provide localizations (e.g Kronos). This option is required for enUS-only servers, since pfQuest relies on questlog scanning, but a `deDE` version, can't handle a `enUS` quest text.
+## Complete Version
+The complete version includes databases of all languages and client expansions. Based on the folder name, this will launch in either vanilla or tbc mode. Due to the amount of included data, this snapshot will lead to a higher RAM/Disk-Usage and slightly increased loading times. But nowadays where people having gigabytes of RAM and storage, having an overhead of a few megabytes shouldn't harm the system at all. However, if your PC is very old and slow, you better choose a compact build.
+
+1. Download **[Complete Version](https://gitlab.com/shagu/pfQuest/-/archive/master/pfQuest-master.zip)**
+2. Unpack the Zip file
+3. Rename the folder "pfQuest-master" to "pfQuest" (or "pfQuest-tbc")
+4. Copy "pfQuest" (or "pfQuest-tbc") into Wow-Directory\Interface\AddOns
+5. Restart Wow
 
 ## Compact Version - Vanilla (Stable)
+A compact build does only include the databases of a given language. Usually, one would pick the language that matches gameclients language. If a server returns english quests, but your gameclient is non-english (e.g deDE), then the server you play on is unlocalized and you'll need the `noLoc` package.
+
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/enUS.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS)
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/koKR.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR)
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/frFR.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR)
@@ -23,6 +32,8 @@ Every compact build includes a specifically crafted database to match the gamecl
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/noLoc.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=noLoc)
 
 ## Compact Version - The Burning Crusade (Pre-Alpha)
+A compact build does only include the databases of a given language. Usually, one would pick the language that matches gameclients language. If a server returns english quests, but your gameclient is non-english (e.g deDE), then the server you play on is unlocalized and you'll need the `noLoc` package.
+
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/enUS.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS-tbc)
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/koKR.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR-tbc)
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/frFR.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR-tbc)
@@ -31,17 +42,6 @@ Every compact build includes a specifically crafted database to match the gamecl
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/esES.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=esES-tbc)
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/ruRU.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU-tbc)
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/noLoc.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=noLoc-tbc)
-
-## Complete Version
-The complete version equals the development tree of the entire addon. This includes the database for all languages and for both supported expansions: `vanilla` and `tbc`.
-Using this snapshot leads to a higher RAM-Usage and increased loading times. However, it's also the best option to keep up-to-date when using tools like `git` or one of its frontends. Nowadays where people having gigabytes of RAM and storage, having a few megabytes too much shouldn't harm the system at all. But if your PC is old and slow, don't use the download below.
-
-### Installation
-1. Download **[pfQuest](https://gitlab.com/shagu/pfQuest/-/archive/master/pfQuest-master.zip)**
-2. Unpack the Zip file
-3. Rename the folder "pfQuest-master" to "pfQuest" (or "pfQuest-tbc")
-4. Copy "pfQuest" (or "pfQuest-tbc") into Wow-Directory\Interface\AddOns
-5. Restart Wow
 
 ## Suggested Addons
 - [pfUI](https://shagu.org/pfUI): A complete and customizable UI replacement in a single addon
