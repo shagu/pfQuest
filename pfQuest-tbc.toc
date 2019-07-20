@@ -2,7 +2,7 @@
 ## Title: |cff33ffccpf|cffffffffQuest
 ## Author: Shagu
 ## Notes: A lightweight Questhelper and Database
-## Version: NORELEASE
+## Version: GIT
 ## OptionalDeps: pfUI
 ## SavedVariablesPerCharacter: pfQuest_config, pfBrowser_fav, pfQuest_history, pfQuest_colors, pfQuest_server
 

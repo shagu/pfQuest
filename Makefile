@@ -23,7 +23,7 @@ enUS koKR frFR deDE zhCN esES ruRU:
 	cp -f pfQuest.toc release/$@/pfQuest/pfQuest.toc
 
 	# generate new toc file
-	sed -i "s/NORELEASE/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
+	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
 	sed -i '/init\\/d' release/$@/pfQuest/pfQuest.toc
 	sed -i '/^[[:space:]]*$$/d' release/$@/pfQuest/pfQuest.toc
 	echo "init\data.xml" >> release/$@/pfQuest/pfQuest.toc
@@ -70,7 +70,7 @@ enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc:
 	cp -f pfQuest-tbc.toc release/$@/pfQuest-tbc/pfQuest-tbc.toc
 
 	# generate new toc file
-	sed -i "s/NORELEASE/$(VERSION)/g" release/$@/pfQuest-tbc/pfQuest-tbc.toc
+	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-tbc/pfQuest-tbc.toc
 	sed -i '/init\\/d' release/$@/pfQuest-tbc/pfQuest-tbc.toc
 	sed -i '/^[[:space:]]*$$/d' release/$@/pfQuest-tbc/pfQuest-tbc.toc
 	echo "init\data.xml" >> release/$@/pfQuest-tbc/pfQuest-tbc.toc

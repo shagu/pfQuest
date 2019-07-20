@@ -18,8 +18,8 @@ pfQuest:RegisterEvent("ADDON_LOADED")
 pfQuest:SetScript("OnEvent", function()
   if event == "ADDON_LOADED" then
     if arg1 == "pfQuest" or arg1 == "pfQuest-tbc" or arg1 == "pfQuest-wotlk" then
-      if tostring(GetAddOnMetadata("pfQuest", "Version")) == "NORELEASE" then
-        DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccWARNING:|r " .. pfQuest_Loc["You're using a development snapshot of pfQuest which leads to a higher RAM-Usage and increased loading times. Please choose an official release instead: https://shagu.org/pfQuest"])
+      if tostring(GetAddOnMetadata("pfQuest", "Version")) == "GIT" then
+        DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccWARNING:|r " .. pfQuest_Loc["You're using a nightly snapshot of pfQuest that includes all databases. This leads to a higher RAM-Usage and increased loading times. You can get a more compact version at: https://shagu.org/pfQuest"])
       end
 
       pfQuest:AddQuestLogIntegration()
