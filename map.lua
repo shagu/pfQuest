@@ -1,7 +1,5 @@
 -- multi api compat
-local mod = mod or math.mod
-local _, _, _, client = GetBuildInfo()
-client = client or 11200
+local compat = pfQuestCompat
 
 local validmaps = setmetatable({},{__mode="kv"})
 local rgbcache = setmetatable({},{__mode="kv"})
@@ -71,14 +69,14 @@ local function str2rgb(text)
   local counter = 1
   local l = string.len(text)
   for i = 1, l, 3 do
-    counter = mod(counter*8161, 4294967279) +
+    counter = compat.mod(counter*8161, 4294967279) +
         (string.byte(text,i)*16776193) +
         ((string.byte(text,i+1) or (l-i+256))*8372226) +
         ((string.byte(text,i+2) or (l-i+256))*3932164)
   end
-  local hash = mod(mod(counter, 4294967291),16777216)
-  local r = (hash - (mod(hash,65536))) / 65536
-  local g = ((hash - r*65536) - ( mod((hash - r*65536),256)) ) / 256
+  local hash = compat.mod(compat.mod(counter, 4294967291),16777216)
+  local r = (hash - (compat.mod(hash,65536))) / 65536
+  local g = ((hash - r*65536) - ( compat.mod((hash - r*65536),256)) ) / 256
   local b = hash - r*65536 - g*256
   rgbcache[text] = { r / 255, g / 255, b / 255 }
   return unpack(rgbcache[text])
@@ -145,7 +143,7 @@ function pfMap:ShowTooltip(meta, tooltip)
   if meta["quest"] then
     -- scan all quest entries for matches
     for qid=1, GetNumQuestLogEntries() do
-      local qtitle, _, _, _, _, complete = GetQuestLogTitle(qid)
+      local qtitle, _, _, _, _, complete = compat.GetQuestLogTitle(qid)
 
       if meta["quest"] == qtitle then
         -- handle active quests
@@ -652,14 +650,7 @@ function pfMap:UpdateMinimap()
           pfMap.mpins[i]:ClearAllPoints()
           pfMap.mpins[i]:SetPoint("CENTER", pfMap.drawlayer, "CENTER", -xPos, yPos)
           pfMap.mpins[i]:SetAlpha(alpha)
-
-          -- skip available quests for tbc
-          if pfMap.mpins[i].layer == 2 and client > 11200 then
-            pfMap.mpins[i]:Hide()
-          else
-            pfMap.mpins[i]:Show()
-          end
-
+          pfMap.mpins[i]:Show()
           i = i + 1
         end
       end

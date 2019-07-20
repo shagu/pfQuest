@@ -1,3 +1,6 @@
+-- multi api compat
+local compat = pfQuestCompat
+
 pfDatabase = {}
 
 local loc = GetLocale()
@@ -554,7 +557,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           meta = meta or {}
 
           if meta["qlogid"] then
-            local _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
+            local _, _, _, _, _, complete = compat.GetQuestLogTitle(meta["qlogid"])
             complete = complete or GetNumQuestLeaderBoards(meta["qlogid"]) == 0 and true or nil
             if complete then
               meta["texture"] = pfQuestConfig.path.."\\img\\complete_c"
@@ -574,7 +577,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           meta = meta or {}
 
           if meta["qlogid"] then
-            local _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
+            local _, _, _, _, _, complete = compat.GetQuestLogTitle(meta["qlogid"])
             complete = complete or GetNumQuestLeaderBoards(meta["qlogid"]) == 0 and true or nil
             if complete then
               meta["texture"] = pfQuestConfig.path.."\\img\\complete_c"
@@ -600,7 +603,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   -- If QuestLogID is given, scan and add all finished objectives to blacklist
   if meta["qlogid"] then
     local objectives = GetNumQuestLeaderBoards(meta["qlogid"])
-    local _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
+    local _, _, _, _, _, complete = compat.GetQuestLogTitle(meta["qlogid"])
 
     if objectives and not complete then
       for i=1, objectives, 1 do
@@ -633,7 +636,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   if quests[id]["obj"] then
 
     if meta["qlogid"] then
-      local _, _, _, _, _, complete = GetQuestLogTitle(meta["qlogid"])
+      local _, _, _, _, _, complete = compat.GetQuestLogTitle(meta["qlogid"])
       if complete then return maps end
     end
 
@@ -716,7 +719,7 @@ function pfDatabase:SearchQuests(meta, maps)
 
   local currentQuests = {}
   for id=1, GetNumQuestLogEntries() do
-    local title = GetQuestLogTitle(id)
+    local title = compat.GetQuestLogTitle(id)
     currentQuests[title] = true
   end
 
@@ -829,7 +832,7 @@ function pfDatabase:GetQuestIDs(qid, deep)
   local oldID = GetQuestLogSelection()
   SelectQuestLogEntry(qid)
   local text, objective = GetQuestLogQuestText()
-  local title, level, _, header = GetQuestLogTitle(qid)
+  local title, level, _, header = compat.GetQuestLogTitle(qid)
   SelectQuestLogEntry(oldID)
 
   local _, race = UnitRace("player")

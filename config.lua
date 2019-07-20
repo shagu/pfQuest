@@ -1,3 +1,6 @@
+-- multi api compat
+local compat = pfQuestCompat
+
 pfQuest_history = {}
 pfQuest_colors = {}
 pfQuest_config = {}

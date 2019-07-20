@@ -1,5 +1,5 @@
 -- multi api compat
-local gfind = string.gmatch or string.gfind
+local compat = pfQuestCompat
 
 SLASH_PFDB1, SLASH_PFDB2, SLASH_PFDB3, SLASH_PFDB4 = "/db", "/shagu", "/pfquest", "/pfdb"
 SlashCmdList["PFDB"] = function(input, editbox)
@@ -27,7 +27,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
   local commandlist = { }
   local command
 
-  for command in gfind(input, "[^ ]+") do
+  for command in compat.gfind(input, "[^ ]+") do
     table.insert(commandlist, command)
   end
 

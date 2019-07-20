@@ -1,3 +1,6 @@
+-- multi api compat
+local compat = pfQuestCompat
+
 pfQuest = CreateFrame("Frame")
 
 pfQuest.queue = {}
@@ -85,13 +88,7 @@ function pfQuest:UpdateQuestlog()
   -- iterate over all quests
   for qlogid=1,40 do
 
-    local title, header, complete, _
-    if GetQuestLink then
-      title, _, _, _, header, _, complete = GetQuestLogTitle(qlogid)
-    else
-      title, _, _, header, _, complete = GetQuestLogTitle(qlogid)
-    end
-
+    local title, _, _, header, _, complete = compat.GetQuestLogTitle(qlogid)
     local objectives = GetNumQuestLeaderBoards(qlogid)
     local watched = IsQuestWatched(qlogid)
 
@@ -204,12 +201,12 @@ function pfQuest:AddQuestLogIntegration()
   pfQuest.buttonShow:SetPoint("TOP", dockTitle, "TOP", -110, 0)
   pfQuest.buttonShow:SetScript("OnClick", function()
     local questIndex = GetQuestLogSelection()
-    local title, _, _, header, _, complete = GetQuestLogTitle(questIndex)
+    local title, _, _, header, _, complete = compat.GetQuestLogTitle(questIndex)
     if header then return end
 
     local ids = pfQuest.questlog[title].ids
     local maps, meta = {}, { ["addon"] = "PFQUEST", ["qlogid"] = questIndex }
-    for _, id in ids do
+    for _, id in pairs(ids) do
       maps = pfDatabase:SearchQuestID(id, meta, maps)
     end
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
@@ -222,7 +219,7 @@ function pfQuest:AddQuestLogIntegration()
   pfQuest.buttonHide:SetPoint("TOP", dockTitle, "TOP", -37, 0)
   pfQuest.buttonHide:SetScript("OnClick", function()
     local questIndex = GetQuestLogSelection()
-    local title, _, _, header, _, complete = GetQuestLogTitle(questIndex)
+    local title, _, _, header, _, complete = compat.GetQuestLogTitle(questIndex)
     if header then return end
 
     pfMap:DeleteNode("PFQUEST", title)
@@ -320,7 +317,7 @@ end
 local pfHookRemoveQuestWatch = RemoveQuestWatch
 RemoveQuestWatch = function(questIndex)
   local ret = pfHookRemoveQuestWatch(questIndex)
-  local title, _, _, header, _, complete = GetQuestLogTitle(questIndex)
+  local title, _, _, header, _, complete = compat.GetQuestLogTitle(questIndex)
   pfMap:DeleteNode("PFQUEST", title)
   pfQuest.updateQuestLog = true
   pfQuest.updateQuestGivers = true
@@ -348,7 +345,7 @@ local pfHookQuestLog_Update = QuestLog_Update
 QuestLog_Update = function()
   pfHookQuestLog_Update()
   if pfQuest_config["questlogbuttons"] ==  "1" then
-    local questName = GetQuestLogTitle(GetQuestLogSelection())
+    local questName = compat.GetQuestLogTitle(GetQuestLogSelection())
     if pfQuest.questlog[questName] and pfQuest.questlog[questName].ids[1] then
       local id = pfQuest.questlog[questName].ids[1]
       pfQuest.buttonOnline:SetID(id)
@@ -367,7 +364,7 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
   QuestLogTitleButton_OnClick = function(button)
     local scrollFrame = EQL3_QuestLogListScrollFrame or ShaguQuest_QuestLogListScrollFrame or QuestLogListScrollFrame
     local questIndex = this:GetID() + FauxScrollFrame_GetOffset(scrollFrame)
-    local questName, questLevel = GetQuestLogTitle(questIndex)
+    local questName, questLevel = compat.GetQuestLogTitle(questIndex)
     if IsShiftKeyDown() and not this.isHeader then
       if ChatFrameEditBox:IsVisible() then
         if pfQuest_config["questlinks"] == "1" then
