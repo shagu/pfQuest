@@ -26,9 +26,9 @@ enUS koKR frFR deDE zhCN esES ruRU:
 	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
 	sed -i '/init\\/d' release/$@/pfQuest/pfQuest.toc
 	sed -i '/^[[:space:]]*$$/d' release/$@/pfQuest/pfQuest.toc
-	echo "init\\data.xml" >> release/$@/pfQuest/pfQuest.toc
-	echo "init\\${LOCALE}.xml" >> release/$@/pfQuest/pfQuest.toc
-	echo "init\\addon.xml" >> release/$@/pfQuest/pfQuest.toc
+	/bin/echo 'init\data.xml' >> release/$@/pfQuest/pfQuest.toc
+	/bin/echo 'init\$(LOCALE).xml' >> release/$@/pfQuest/pfQuest.toc
+	/bin/echo 'init\addon.xml' >> release/$@/pfQuest/pfQuest.toc
 
 	echo $(GITREV) > release/$@/pfQuest/gitrev.txt
 
@@ -73,11 +73,11 @@ enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc:
 	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-tbc/pfQuest-tbc.toc
 	sed -i '/init\\/d' release/$@/pfQuest-tbc/pfQuest-tbc.toc
 	sed -i '/^[[:space:]]*$$/d' release/$@/pfQuest-tbc/pfQuest-tbc.toc
-	echo "init\\data.xml" >> release/$@/pfQuest-tbc/pfQuest-tbc.toc
-	echo "init\\${LOCALE}.xml" >> release/$@/pfQuest-tbc/pfQuest-tbc.toc
-	echo "init\\data-tbc.xml" >> release/$@/pfQuest-tbc/pfQuest-tbc.toc
-	echo "init\\${LOCALE}-tbc.xml" >> release/$@/pfQuest-tbc/pfQuest-tbc.toc
-	echo "init\\addon.xml" >> release/$@/pfQuest-tbc/pfQuest-tbc.toc
+	/bin/echo 'init\data.xml' >> release/$@/pfQuest-tbc/pfQuest-tbc.toc
+	/bin/echo 'init\$(LOCALE).xml' >> release/$@/pfQuest-tbc/pfQuest-tbc.toc
+	/bin/echo 'init\data-tbc.xml' >> release/$@/pfQuest-tbc/pfQuest-tbc.toc
+	/bin/echo 'init\${LOCALE}-tbc.xml' >> release/$@/pfQuest-tbc/pfQuest-tbc.toc
+	/bin/echo 'init\addon.xml' >> release/$@/pfQuest-tbc/pfQuest-tbc.toc
 
 	echo $(GITREV) > release/$@/pfQuest-tbc/gitrev.txt
 
