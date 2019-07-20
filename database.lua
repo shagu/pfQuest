@@ -28,7 +28,10 @@ local bitraces = {
   [16] = "Scourge",
   [32] = "Tauren",
   [64] = "Gnome",
-  [128] = "Troll"
+  [128] = "Troll",
+  [256] = "Goblin",
+  [512] = "BloodElf",
+  [1024] = "Draenei"
 }
 
 local bitclasses = {
