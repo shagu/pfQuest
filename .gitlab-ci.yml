@@ -12,6 +12,17 @@ before_script:
     paths:
       - pfQuest/
 
+.build-tbc: &build-tbc
+  script:
+    - make stripdb
+    - make ${CI_JOB_NAME}
+    - mv release/${CI_JOB_NAME}/pfQuest-tbc .
+
+  artifacts:
+    name: "pfQuest-${CI_JOB_NAME}"
+    paths:
+      - pfQuest-tbc/
+
 enUS:
   <<: [*build]
 
@@ -35,3 +46,27 @@ ruRU:
 
 noLoc:
   <<: [*build]
+
+enUS-tbc:
+  <<: [*build-tbc]
+
+koKR-tbc:
+  <<: [*build-tbc]
+
+frFR-tbc:
+  <<: [*build-tbc]
+
+deDE-tbc:
+  <<: [*build-tbc]
+
+zhCN-tbc:
+  <<: [*build-tbc]
+
+esES-tbc:
+  <<: [*build-tbc]
+
+ruRU-tbc:
+  <<: [*build-tbc]
+
+noLoc-tbc:
+  <<: [*build-tbc]
