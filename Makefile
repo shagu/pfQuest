@@ -1,7 +1,7 @@
 VERSION = $(shell git describe --abbrev=0 --tags)
 GITREV = $(shell git describe --tags)
 
-all: clean stripdb enUS koKR frFR deDE zhCN esES ruRU noLoc
+all: clean stripdb enUS koKR frFR deDE zhCN esES ruRU enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc
 
 clean:
 	rm -rfv release
@@ -10,45 +10,52 @@ stripdb:
 	toolbox/compressdb.sh
 
 enUS koKR frFR deDE zhCN esES ruRU:
-	@echo "===== building $@ ====="
-	mkdir -p release/$@/pfQuest/db
-	cp -rf compat release/$@/pfQuest/
-	cp -rf img release/$@/pfQuest/
-	cp -rf db/*.lua release/$@/pfQuest/db
-	cp -rf db/$@ release/$@/pfQuest/db
-	cp -rf locales.lua browser.lua database.lua map.lua quest.lua config.lua slashcmd.lua pfQuest.toc LICENSE README.md release/$@/pfQuest/
-	sed -i "s/NORELEASE/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
-	sed -i -r '/'"$@"'/!s/db\\.*\\.*\.lua/# N\/A/g' release/$@/pfQuest/pfQuest.toc
-	echo $(GITREV) > release/$@/pfQuest/gitrev.txt
+	$(eval LOCALE := $(shell echo $@))
+	@echo "===== building ${LOCALE} ====="
+	mkdir -p release/${LOCALE}/pfQuest/init release/${LOCALE}/pfQuest/db/${LOCALE}
 
-noLoc:
-	@echo "===== building $@ ====="
-	mkdir -p release/$@/pfQuest/db
-	cp -rf compat release/$@/pfQuest/
-	cp -rf img release/$@/pfQuest/
-	cp -rf db/*.lua release/$@/pfQuest/db
-	cp -rf db/enUS release/$@/pfQuest/db
+	cp -rf compat img release/${LOCALE}/pfQuest/
 
-	mkdir -p release/$@/pfQuest/db/koKR release/$@/pfQuest/db/frFR release/$@/pfQuest/db/deDE release/$@/pfQuest/db/zhCN release/$@/pfQuest/db/esES release/$@/pfQuest/db/ruRU
+	cp -f $(shell ls db/*.lua | grep -v "\-tbc") release/${LOCALE}/pfQuest/db
+	cp -f $(shell ls db/${LOCALE}/*.lua | grep -v "\-tbc") release/${LOCALE}/pfQuest/db/${LOCALE}
+	cp -f *.lua LICENSE README.md release/${LOCALE}/pfQuest/
+	cp -f init/addon.xml init/data.xml init/${LOCALE}.xml release/${LOCALE}/pfQuest/init
+	cp -f pfQuest.toc release/${LOCALE}/pfQuest/pfQuest.toc
 
-	cp -rf db/koKR/zones.lua release/$@/pfQuest/db/koKR/
-	cp -rf db/frFR/zones.lua release/$@/pfQuest/db/frFR/
-	cp -rf db/deDE/zones.lua release/$@/pfQuest/db/deDE/
-	cp -rf db/zhCN/zones.lua release/$@/pfQuest/db/zhCN/
-	cp -rf db/esES/zones.lua release/$@/pfQuest/db/esES/
-	cp -rf db/ruRU/zones.lua release/$@/pfQuest/db/ruRU/
+	# generate new toc file
+	sed -i "s/NORELEASE/$(VERSION)/g" release/${LOCALE}/pfQuest/pfQuest.toc
+	sed -i '/init\\/d' release/${LOCALE}/pfQuest/pfQuest.toc
+	sed -i '/^[[:space:]]*$$/d' release/${LOCALE}/pfQuest/pfQuest.toc
+	echo "init\data.xml" >> release/${LOCALE}/pfQuest/pfQuest.toc
+	echo "init\${LOCALE}.xml" >> release/${LOCALE}/pfQuest/pfQuest.toc
+	echo "init\addon.xml" >> release/${LOCALE}/pfQuest/pfQuest.toc
 
-	cp -rf db/koKR/professions.lua release/$@/pfQuest/db/koKR/
-	cp -rf db/frFR/professions.lua release/$@/pfQuest/db/frFR/
-	cp -rf db/deDE/professions.lua release/$@/pfQuest/db/deDE/
-	cp -rf db/zhCN/professions.lua release/$@/pfQuest/db/zhCN/
-	cp -rf db/esES/professions.lua release/$@/pfQuest/db/esES/
-	cp -rf db/ruRU/professions.lua release/$@/pfQuest/db/ruRU/
+	echo $(GITREV) > release/${LOCALE}/pfQuest/gitrev.txt
 
-	cp -rf locales.lua browser.lua database.lua map.lua quest.lua config.lua slashcmd.lua pfQuest.toc LICENSE README.md release/$@/pfQuest/
-	sed -i "s/NORELEASE/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
-	sed -i -r '/enUS|professions|zones/!s/db\\.*\\.*\.lua/# N\/A/g' release/$@/pfQuest/pfQuest.toc
-	echo $(GITREV) > release/$@/pfQuest/gitrev.txt
+enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc:
+	$(eval LOCALE := $(shell echo $@ | sed 's/-tbc//g'))
+	@echo "===== building ${LOCALE} ====="
+	mkdir -p release/${LOCALE}/pfQuest-tbc/init release/${LOCALE}/pfQuest-tbc/db/${LOCALE}
+
+	cp -rf compat img release/${LOCALE}/pfQuest-tbc/
+
+	cp -f $(shell ls db/*.lua) release/${LOCALE}/pfQuest-tbc/db
+	cp -f $(shell ls db/${LOCALE}/*.lua) release/${LOCALE}/pfQuest-tbc/db/${LOCALE}
+	cp -f *.lua LICENSE README.md release/${LOCALE}/pfQuest-tbc/
+	cp -f init/addon.xml init/data.xml init/data-tbc.xml init/${LOCALE}.xml init/${LOCALE}-tbc.xml release/${LOCALE}/pfQuest-tbc/init
+	cp -f pfQuest-tbc.toc release/${LOCALE}/pfQuest-tbc/pfQuest-tbc.toc
+
+	# generate new toc file
+	sed -i "s/NORELEASE/$(VERSION)/g" release/${LOCALE}/pfQuest-tbc/pfQuest-tbc.toc
+	sed -i '/init\\/d' release/${LOCALE}/pfQuest-tbc/pfQuest-tbc.toc
+	sed -i '/^[[:space:]]*$$/d' release/${LOCALE}/pfQuest-tbc/pfQuest-tbc.toc
+	echo "init\data.xml" >> release/${LOCALE}/pfQuest-tbc/pfQuest-tbc.toc
+	echo "init\${LOCALE}.xml" >> release/${LOCALE}/pfQuest-tbc/pfQuest-tbc.toc
+	echo "init\data-tbc.xml" >> release/${LOCALE}/pfQuest-tbc/pfQuest-tbc.toc
+	echo "init\${LOCALE}-tbc.xml" >> release/${LOCALE}/pfQuest-tbc/pfQuest-tbc.toc
+	echo "init\addon.xml" >> release/${LOCALE}/pfQuest-tbc/pfQuest-tbc.toc
+
+	echo $(GITREV) > release/${LOCALE}/pfQuest-tbc/gitrev.txt
 
 database:
 	$(MAKE) -C toolbox/ all
