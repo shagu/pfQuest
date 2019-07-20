@@ -2,16 +2,17 @@
 <img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/tooltips.png" float="right" align="right" width="25%">
 This is an addon for World of Warcraft Classic (1.12). It helps players to find several ingame objects and quests. The addon reads questobjectives, parses them and uses its internal database to plot the found matches on the world- and minimap. It ships with a GUI to browse through all known objects. If one of the items is not yet available on your realm, you'll see a [?] in front of the name.
 
-The addon is not designed to be a quest- or tourguide and won't ever going to be like that. Instead the goals are more like an ingame version of [AoWoW](http://db.vanillagaming.org/) or [Wowhead](http://www.wowhead.com/). By default it uses the opensource database provided by [Light's Hope](https://github.com/LightsHope/server/releases).
+The addon is not designed to be a quest- or tourguide and won't ever going to be like that. Instead the goals are more like an ingame version of [AoWoW](http://db.vanillagaming.org/) or [Wowhead](http://www.wowhead.com/). It is powered by the opensource database provided by [CMaNGOS](https://github.com/cmangos/).
+The translations are taken from [MaNGOS Extras](https://github.com/MangosExtras).
 
 pfQuest is the successor of [ShaguQuest](https://shagu.org/ShaguQuest/) and has been entirely written from scratch. In comparison to [ShaguQuest](https://shagu.org/ShaguQuest/), this addon does not depend on any specific map- or questlog addon. It's designed to support the default interface aswell as every other addon. In case you experience any addon conflicts, please add an issue to the bugtracker.
 
-# Downloads
-Every build includes a specifically crafted database to match the gameclient. The **noLoc** package is for people with localized clients (e.g deDE) playing on servers that don't provide localizations (e.g Kronos).
-If you choose to use the `master`-zip instead, it will contain more than 100MB of language-specific-data and therefore dramatically increase your loading screen times.
-
 You can view the [[Latest Changes]](https://gitlab.com/shagu/pfQuest/commits/master) to see what has changed recently.
 
+# Downloads
+Every compact build includes a specifically crafted database to match the gameclient. The `noLoc` package is for people with localized clients (e.g deDE) playing on servers that don’t provide localizations (e.g Kronos). This option is required for enUS-only servers, since pfQuest relies on questlog scanning, but a `deDE` version, can't handle a `enUS` quest text.
+
+## Compact Version - Vanilla (Stable)
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/enUS.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS)
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/koKR.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR)
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/frFR.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR)
@@ -21,7 +22,28 @@ You can view the [[Latest Changes]](https://gitlab.com/shagu/pfQuest/commits/mas
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/ruRU.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU)
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/noLoc.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=noLoc)
 
-### Suggested Addons
+## Compact Version - The Burning Crusade (Pre-Alpha)
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/enUS.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS-tbc)
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/koKR.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR-tbc)
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/frFR.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR-tbc)
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/deDE.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=deDE-tbc)
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/zhCN.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=zhCN-tbc)
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/esES.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=esES-tbc)
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/ruRU.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU-tbc)
+[![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/noLoc.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=noLoc-tbc)
+
+## Complete Version
+The complete version equals the development tree of the entire addon. This includes the database for all languages and for both supported expansions: `vanilla` and `tbc`.
+Using this snapshot leads to a higher RAM-Usage and increased loading times. However, it's also the best option to keep up-to-date when using tools like `git` or one of its frontends. Nowadays where people having gigabytes of RAM and storage, having a few megabytes too much shouldn't harm the system at all. But if your PC is old and slow, don't use the download below.
+
+### Installation
+1. Download **[pfQuest](https://gitlab.com/shagu/pfQuest/-/archive/master/pfQuest-master.zip)**
+2. Unpack the Zip file
+3. Rename the folder "pfQuest-master" to "pfQuest" (or "pfQuest-tbc")
+4. Copy "pfQuest" (or "pfQuest-tbc") into Wow-Directory\Interface\AddOns
+5. Restart Wow
+
+## Suggested Addons
 - [pfUI](https://shagu.org/pfUI): A complete and customizable UI replacement in a single addon
 - [EQL3](https://github.com/laytya/EQL3): A reskinned Extended Quest Log addon inspired by TukUI
 
