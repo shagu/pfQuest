@@ -825,7 +825,7 @@ function pfDatabase:GetQuestIDs(qid, deep)
     local questLink = GetQuestLink(qid)
       if questLink then
       local _, _, id = strfind(questLink, "|c.*|Hquest:([%d]+):([%d]+)|h%[(.*)%]|h|r")
-      return { [100] = tonumber(id) }
+      if id then return { [1] = tonumber(id) } end
     end
   end
 
