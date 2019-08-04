@@ -661,5 +661,19 @@ function pfMap:UpdateMinimap()
 end
 
 pfMap:RegisterEvent("WORLD_MAP_UPDATE")
-pfMap:SetScript("OnEvent", pfMap.UpdateNodes)
-pfMap:SetScript("OnUpdate", pfMap.UpdateMinimap)
+pfMap:SetScript("OnEvent", function()
+  -- on each event, we delay the update function
+  -- by one frame to make sure all nodes are getting
+  -- drawn and shown on the parent frame, which takes a
+  -- while to initialize
+  this.worldmap = true
+  pfMap:UpdateNodes()
+end)
+
+pfMap:SetScript("OnUpdate", function()
+  -- run the delayed function when an event was triggered
+  if this.worldmap then pfMap:UpdateNodes() end
+
+  -- always refresh all minimap nodes.
+  pfMap:UpdateMinimap()
+end)
