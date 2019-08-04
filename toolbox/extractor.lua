@@ -558,6 +558,14 @@ for _, expansion in pairs(expansions) do
           pfDB["items"][data][entry]["V"] = pfDB["items"][data][entry]["V"] or {}
           pfDB["items"][data][entry]["V"][tonumber(npc_vendor.entry)] = tonumber(npc_vendor.maxcount)
         end
+
+        -- handle vendor template tables
+        local npc_vendor = {}
+        local query = mysql:execute('SELECT creature_template.entry, maxcount FROM npc_vendor_template, creature_template WHERE item = ' .. entry .. ' and creature_template.VendorTemplateId = npc_vendor_template.entry ORDER BY creature_template.entry')
+        while query:fetch(npc_vendor, "a") do
+          pfDB["items"][data][entry]["V"] = pfDB["items"][data][entry]["V"] or {}
+          pfDB["items"][data][entry]["V"][tonumber(npc_vendor.entry)] = tonumber(npc_vendor.maxcount)
+        end
       end
     end
   end
