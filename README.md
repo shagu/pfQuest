@@ -22,28 +22,28 @@ The complete version includes databases of all languages and client expansions. 
 ## Compact Version
 A compact build does only include the databases of a given language. Usually, one would pick the language that matches gameclients language. If a server returns english quests, but your gameclient is non-english (e.g deDE), then the server you play on is unlocalized and you'll need the `noLoc` package.
 
-* **English** (enUS):  
+* **English** (*enUS*):
   [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS-tbc)
-* **Korean** (koKR):  
+* **Korean** (*koKR*):
   [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR-tbc)
-* **French** (frFR):  
+* **French** (*frFR*):
   [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR-tbc)
-* **German** (deDE):  
+* **German** (*deDE*):
   [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=deDE) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=deDE-tbc)
-* **Chinese** (zhCN):  
+* **Chinese** (*zhCN*):
   [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=zhCN) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=zhCN-tbc)
-* **Spanish** (esES):  
+* **Spanish** (*esES*):
   [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=esES) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=esES-tbc)
-* **Russian** (ruRU):  
+* **Russian** (*ruRU*):
   [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU-tbc)
-* **Unlocalized** (noLoc):  
+* **Unlocalized** (*noLoc*):
   [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=noLoc) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=noLoc-tbc)
 
