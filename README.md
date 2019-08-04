@@ -1,6 +1,6 @@
 # pfQuest
 <img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/tooltips.png" float="right" align="right" width="25%">
-This is an addon for World of Warcraft Classic (1.12). It helps players to find several ingame objects and quests. The addon reads questobjectives, parses them and uses its internal database to plot the found matches on the world- and minimap. It ships with a GUI to browse through all known objects. If one of the items is not yet available on your realm, you'll see a [?] in front of the name.
+This is an addon for World of Warcraft Vanilla (1.12) and The Burning Crusade (2.4.3). It helps players to find several ingame objects and quests. The addon reads questobjectives, parses them and uses its internal database to plot the found matches on the world- and minimap. It ships with a GUI to browse through all known objects. If one of the items is not yet available on your realm, you'll see a [?] in front of the name.
 
 The addon is not designed to be a quest- or tourguide and won't ever going to be like that. Instead the goals are more like an ingame version of [AoWoW](http://db.vanillagaming.org/) or [Wowhead](http://www.wowhead.com/). It is powered by the opensource database provided by [CMaNGOS](https://github.com/cmangos/).
 The translations are taken from [MaNGOS Extras](https://github.com/MangosExtras).
@@ -19,7 +19,7 @@ The complete version includes databases of all languages and client expansions. 
 4. Copy "pfQuest" (or "pfQuest-tbc") into Wow-Directory\Interface\AddOns
 5. Restart Wow
 
-## Compact Version - Vanilla (Stable)
+## Vanilla - Compact
 A compact build does only include the databases of a given language. Usually, one would pick the language that matches gameclients language. If a server returns english quests, but your gameclient is non-english (e.g deDE), then the server you play on is unlocalized and you'll need the `noLoc` package.
 
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/enUS.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS)
@@ -31,7 +31,7 @@ A compact build does only include the databases of a given language. Usually, on
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/ruRU.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU)
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/noLoc.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=noLoc)
 
-## Compact Version - The Burning Crusade (Pre-Alpha)
+## The Burning Crusade - Compact
 A compact build does only include the databases of a given language. Usually, one would pick the language that matches gameclients language. If a server returns english quests, but your gameclient is non-english (e.g deDE), then the server you play on is unlocalized and you'll need the `noLoc` package.
 
 [![1](https://raw.githubusercontent.com/shagu/ShaguAddons/master/_layouts/enUS.png)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS-tbc)
