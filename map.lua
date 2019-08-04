@@ -515,12 +515,7 @@ function pfMap:UpdateNodes()
   local color = pfQuest_config["colorbyspawn"] == "1" and "spawn" or "title"
   local alpha = pfQuest_config["worldmaptransp"] + 0
   local map = pfMap:GetMapID(GetCurrentMapContinent(), GetCurrentMapZone())
-  local i = 0
-
-  -- hide existing nodes
-  for pins, pin in pairs(pfMap.pins) do
-    pin:Hide()
-  end
+  local i = 1
 
   -- refresh all nodes
   for addon, _ in pairs(pfMap.nodes) do
@@ -545,6 +540,11 @@ function pfMap:UpdateNodes()
         i = i + 1
       end
     end
+  end
+
+  -- hide remaining pins
+  for j=i, table.getn(pfMap.pins) do
+    if pfMap.pins[j] then pfMap.pins[j]:Hide() end
   end
 end
 
@@ -609,7 +609,7 @@ function pfMap:UpdateMinimap()
   local xDraw = pfMap.drawlayer:GetWidth() / xScale / 100
   local yDraw = pfMap.drawlayer:GetHeight() / yScale / 100
 
-  local i = 0
+  local i = 1
 
   -- refresh all nodes
   for addon, data in pairs(pfMap.nodes) do
@@ -654,9 +654,7 @@ function pfMap:UpdateMinimap()
 
   -- hide remaining pins
   for j=i, table.getn(pfMap.mpins) do
-    if pfMap.mpins[j] then
-      pfMap.mpins[j]:Hide()
-    end
+    if pfMap.mpins[j] then pfMap.mpins[j]:Hide() end
   end
 end
 
