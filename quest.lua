@@ -8,6 +8,13 @@ pfQuest.abandon = ""
 pfQuest.questlog = {}
 pfQuest.questlog_tmp = {}
 
+local function tsize(tbl)
+  if not tbl or not type(tbl) == "table" then return 0 end
+  local c = 0
+  for _ in pairs(tbl) do c = c + 1 end
+  return c
+end
+
 pfQuest:RegisterEvent("QUEST_WATCH_UPDATE")
 pfQuest:RegisterEvent("QUEST_LOG_UPDATE")
 pfQuest:RegisterEvent("QUEST_FINISHED")
@@ -53,7 +60,7 @@ pfQuest:SetScript("OnUpdate", function()
   end
 
   if pfQuest_config["trackingmethod"] == 4 then return end
-  if table.getn(this.queue) == 0 then return end
+  if tsize(this.queue) == 0 then return end
 
   -- process queue
   local match = false
