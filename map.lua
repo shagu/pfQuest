@@ -279,14 +279,9 @@ end
 
 function pfMap:ShowMapID(map)
   if map then
-
-    if not UISpecialFrames["WorldMapFrame"] then
-      table.insert(UISpecialFrames, "WorldMapFrame")
-    end
-
-    pfMap:UpdateNodes()
     WorldMapFrame:Show()
     pfMap:SetMapByID(map)
+    pfMap:UpdateNodes()
     return true
   end
 
