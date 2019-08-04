@@ -538,7 +538,7 @@ function pfMap:UpdateNodes()
         y = ( y / 100 * WorldMapButton:GetHeight() ) - pfMap.pins[i]:GetHeight()/2
 
         pfMap.pins[i]:ClearAllPoints()
-        pfMap.pins[i]:SetPoint("TOPLEFT", x, -y)
+        pfMap.pins[i]:SetPoint("TOPLEFT", WorldMapButton, "TOPLEFT", x, -y)
         pfMap.pins[i]:SetAlpha(alpha)
         pfMap.pins[i]:Show()
 
