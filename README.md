@@ -23,40 +23,29 @@ The complete version includes databases of all languages and client expansions. 
 A compact build does only include the databases of a given language. Usually, one would pick the language that matches gameclients language. If a server returns english quests, but your gameclient is non-english (e.g deDE), then the server you play on is unlocalized and you'll need the `noLoc` package.
 
 * **English** (enUS):  
- [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS) |
+  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS-tbc)
-
 * **Korean** (koKR):  
- [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR) |
+  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR-tbc)
-
 * **French** (frFR):  
- [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR) |
+  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR-tbc)
-
 * **German** (deDE):  
- [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=deDE) |
+  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=deDE) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=deDE-tbc)
-
 * **Chinese** (zhCN):  
- [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=zhCN) |
+  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=zhCN) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=zhCN-tbc)
-
 * **Spanish** (esES):  
- [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=esES) |
+  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=esES) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=esES-tbc)
-
 * **Russian** (ruRU):  
- [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU) |
+  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU-tbc)
-
 * **Unlocalized** (noLoc):  
- [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=noLoc) |
+  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=noLoc) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=noLoc-tbc)
-
-## Suggested Addons
-- [pfUI](https://shagu.org/pfUI): A complete and customizable UI replacement in a single addon
-- [EQL3](https://github.com/laytya/EQL3): A reskinned Extended Quest Log addon inspired by TukUI
 
 # Map & Minimap Nodes
 <img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/map-quests.png" width="55.35%" align="left">
