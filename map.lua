@@ -529,12 +529,11 @@ function pfMap:UpdateNodes()
 
         -- set position
         local _, _, x, y = strfind(coords, "(.*)|(.*)")
-        x = ( x / 100 * WorldMapButton:GetWidth() ) - pfMap.pins[i]:GetWidth()/2
-        y = ( y / 100 * WorldMapButton:GetHeight() ) - pfMap.pins[i]:GetHeight()/2
+        x = x / 100 * WorldMapButton:GetWidth()
+        y = y / 100 * WorldMapButton:GetHeight()
 
         pfMap.pins[i]:ClearAllPoints()
-        pfMap.pins[i]:SetPoint("TOPLEFT", WorldMapButton, "TOPLEFT", x, -y)
-        pfMap.pins[i]:SetAlpha(alpha)
+        pfMap.pins[i]:SetPoint("CENTER", WorldMapButton, "TOPLEFT", x, -y)
         pfMap.pins[i]:Show()
 
         i = i + 1
