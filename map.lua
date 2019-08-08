@@ -422,11 +422,19 @@ function pfMap:NodeEnter()
   for title, meta in pairs(this.node) do
     pfMap:ShowTooltip(meta, tooltip)
   end
+
+  -- trigger highlight
+  pfMap.highlight = this.title
+  pfMap:UpdateNodes()
 end
 
 function pfMap:NodeLeave()
   local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
   tooltip:Hide()
+
+  -- reset highlight
+  pfMap.highlight = nil
+  pfMap.worldmap = GetTime() + .1
 end
 
 function pfMap:BuildNode(name, parent)
@@ -532,9 +540,34 @@ function pfMap:UpdateNodes()
         x = x / 100 * WorldMapButton:GetWidth()
         y = y / 100 * WorldMapButton:GetHeight()
 
+        -- set defaults
+        pfMap.pins[i]:SetAlpha(alpha)
+        pfMap.pins[i]:SetWidth(16)
+        pfMap.pins[i]:SetHeight(16)
+
         pfMap.pins[i]:ClearAllPoints()
         pfMap.pins[i]:SetPoint("CENTER", WorldMapButton, "TOPLEFT", x, -y)
         pfMap.pins[i]:Show()
+
+        -- handle highlight mode
+        if pfMap.highlight and pfQuest_config.mouseover == "1" then
+          if pfMap.pins[i].title == pfMap.highlight then
+            -- highlight node
+            pfMap.pins[i]:SetAlpha(1)
+            if pfMap.pins[i].texture then
+              -- zoom all symbols
+              pfMap.pins[i]:SetWidth(24)
+              pfMap.pins[i]:SetHeight(24)
+            else
+              -- colorize all nodes
+              local r, g, b = pfMap.pins[i].tex:GetVertexColor()
+              pfMap.pins[i].tex:SetVertexColor(r+.2, g+.2, b+.2, 1)
+            end
+          else
+            -- fade all others
+            pfMap.pins[i]:SetAlpha(.25)
+          end
+        end
 
         i = i + 1
       end

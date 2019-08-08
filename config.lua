@@ -24,12 +24,13 @@ pfQuest_defconfig = {
   ["worldmaptransp"] = "1.0", -- WorldMap Node Transparency
   ["minimaptransp"] = "1.0", -- MiniMap Node Transparency
   ["mindropchance"] = "0", -- Minimum Drop Chance
+  ["mouseover"] = "0", -- Highlight Nodes On Mouseover
 }
 
 pfQuestConfig = CreateFrame("Frame", "pfQuestConfig", UIParent)
 pfQuestConfig:Hide()
 pfQuestConfig:SetWidth(280)
-pfQuestConfig:SetHeight(440)
+pfQuestConfig:SetHeight(470)
 pfQuestConfig:SetPoint("CENTER", 0, 0)
 pfQuestConfig:SetFrameStrata("TOOLTIP")
 pfQuestConfig:SetMovable(true)
@@ -53,6 +54,7 @@ pfQuestConfig:SetScript("OnEvent", function()
     pfQuestConfig:CreateConfigEntry("showids",             pfQuest_Loc["Show IDs"],                       "checkbox")
     pfQuestConfig:CreateConfigEntry("colorbyspawn",        pfQuest_Loc["Color Map Nodes By Spawn"],       "checkbox")
     pfQuestConfig:CreateConfigEntry("questlinks",          pfQuest_Loc["Enable Quest Links"],             "checkbox")
+    pfQuestConfig:CreateConfigEntry("mouseover",           pfQuest_Loc["Highlight Nodes On Mouseover"],   "checkbox")
     pfQuestConfig:CreateConfigEntry("worldmaptransp",      pfQuest_Loc["WorldMap Node Transparency"],     "text")
     pfQuestConfig:CreateConfigEntry("minimaptransp",       pfQuest_Loc["MiniMap Node Transparency"],      "text")
     pfQuestConfig:CreateConfigEntry("mindropchance",       pfQuest_Loc["Minimum Drop Chance"],            "text")
