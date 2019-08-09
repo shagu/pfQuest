@@ -436,14 +436,38 @@ function pfMap:NodeLeave()
 end
 
 function pfMap:NodeUpdate()
-  alpha = this:GetAlpha()
+  local alpha = this:GetAlpha()
+  local size = this:GetWidth()
+  local highlight
 
-  if this.title and this.title == pfMap.highlight then
+  -- does this node contain a highlighted title?
+  for title in pairs(this.node) do
+    if title and title == pfMap.highlight then
+      highlight = true
+      break
+    end
+  end
+
+  if highlight then
     -- fade alpha of active node
     if alpha < 1 then
       this:SetAlpha(alpha + .2)
     elseif alpha > 1 then
       this:SetAlpha(1)
+    end
+
+    -- zoom active node
+    if this.texture then
+      if size < 24 then
+        this:SetWidth(size + 1)
+        this:SetHeight(size + 1)
+      elseif size > 24 then
+        this:SetWidth(24)
+        this:SetHeight(24)
+      end
+    else
+      this:SetWidth(16)
+      this:SetHeight(16)
     end
   elseif pfMap.highlight then
     -- fade alpha of inactive node
@@ -452,9 +476,20 @@ function pfMap:NodeUpdate()
     elseif alpha < .3 then
       this:SetAlpha(.3)
     end
+
+    -- zoom active node
+    if size > 16 then
+      this:SetWidth(size - 1)
+      this:SetHeight(size - 1)
+    elseif size < 16 then
+      this:SetWidth(16)
+      this:SetHeight(16)
+    end
   else
     -- no highlight, show all
     this:SetAlpha(this.defalpha)
+    this:SetWidth(16)
+    this:SetHeight(16)
   end
 end
 
