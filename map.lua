@@ -426,18 +426,36 @@ function pfMap:NodeEnter()
     pfMap:ShowTooltip(meta, tooltip)
   end
 
-  -- trigger highlight
-  pfMap.highlight = this.title
-  pfMap:UpdateNodes()
+  pfMap.highlight = pfQuest_config["mouseover"] == "1" and this.title
 end
 
 function pfMap:NodeLeave()
   local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
   tooltip:Hide()
-
-  -- reset highlight
   pfMap.highlight = nil
-  pfMap.worldmap = GetTime() + .1
+end
+
+function pfMap:NodeUpdate()
+  alpha = this:GetAlpha()
+
+  if this.title and this.title == pfMap.highlight then
+    -- fade alpha of active node
+    if alpha < 1 then
+      this:SetAlpha(alpha + .2)
+    elseif alpha > 1 then
+      this:SetAlpha(1)
+    end
+  elseif pfMap.highlight then
+    -- fade alpha of inactive node
+    if alpha > .3 then
+      this:SetAlpha(alpha - .1)
+    elseif alpha < .3 then
+      this:SetAlpha(.3)
+    end
+  else
+    -- no highlight, show all
+    this:SetAlpha(this.defalpha)
+  end
 end
 
 function pfMap:BuildNode(name, parent)
@@ -445,8 +463,15 @@ function pfMap:BuildNode(name, parent)
   f:SetWidth(16)
   f:SetHeight(16)
 
+  if parent == WorldMapButton then
+    f.defalpha = pfQuest_config["worldmaptransp"] + 0
+  else
+    f.defalpha = pfQuest_config["minimaptransp"] + 0
+  end
+
   f:SetScript("OnEnter", pfMap.NodeEnter)
   f:SetScript("OnLeave", pfMap.NodeLeave)
+  f:SetScript("OnUpdate", pfMap.NodeUpdate)
 
   f.tex = f:CreateTexture("OVERLAY")
   f.tex:SetAllPoints(f)
@@ -524,7 +549,6 @@ end
 
 function pfMap:UpdateNodes()
   local color = pfQuest_config["colorbyspawn"] == "1" and "spawn" or "title"
-  local alpha = pfQuest_config["worldmaptransp"] + 0
   local map = pfMap:GetMapID(GetCurrentMapContinent(), GetCurrentMapZone())
   local i = 1
 
@@ -543,34 +567,9 @@ function pfMap:UpdateNodes()
         x = x / 100 * WorldMapButton:GetWidth()
         y = y / 100 * WorldMapButton:GetHeight()
 
-        -- set defaults
-        pfMap.pins[i]:SetAlpha(alpha)
-        pfMap.pins[i]:SetWidth(16)
-        pfMap.pins[i]:SetHeight(16)
-
         pfMap.pins[i]:ClearAllPoints()
         pfMap.pins[i]:SetPoint("CENTER", WorldMapButton, "TOPLEFT", x, -y)
         pfMap.pins[i]:Show()
-
-        -- handle highlight mode
-        if pfMap.highlight and pfQuest_config.mouseover == "1" then
-          if pfMap.pins[i].title == pfMap.highlight then
-            -- highlight node
-            pfMap.pins[i]:SetAlpha(1)
-            if pfMap.pins[i].texture then
-              -- zoom all symbols
-              pfMap.pins[i]:SetWidth(24)
-              pfMap.pins[i]:SetHeight(24)
-            else
-              -- colorize all nodes
-              local r, g, b = pfMap.pins[i].tex:GetVertexColor()
-              pfMap.pins[i].tex:SetVertexColor(r+.2, g+.2, b+.2, 1)
-            end
-          else
-            -- fade all others
-            pfMap.pins[i]:SetAlpha(.25)
-          end
-        end
 
         i = i + 1
       end
@@ -629,7 +628,6 @@ function pfMap:UpdateMinimap()
 
   this.xPlayer, this.yPlayer, this.mZoom = xPlayer, yPlayer, mZoom
   local color = pfQuest_config["colorbyspawn"] == "1" and "spawn" or "title"
-  local alpha = tonumber(pfQuest_config["minimaptransp"]) or 1
   local mapID = pfMap:GetMapIDByName(GetRealZoneText())
   local mapZoom = minimap_zoom[minimap_indoor()][mZoom]
   local mapWidth = minimap_sizes[mapID] and minimap_sizes[mapID][1] or 0
@@ -679,7 +677,6 @@ function pfMap:UpdateMinimap()
 
           pfMap.mpins[i]:ClearAllPoints()
           pfMap.mpins[i]:SetPoint("CENTER", pfMap.drawlayer, "CENTER", -xPos, yPos)
-          pfMap.mpins[i]:SetAlpha(alpha)
           pfMap.mpins[i]:Show()
           i = i + 1
         end
