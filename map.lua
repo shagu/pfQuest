@@ -317,7 +317,6 @@ function pfMap:GetMapID(cid, mid)
 end
 
 function pfMap:AddNode(meta)
-
   local addon = meta["addon"] or "PFDB"
   local map = meta["zone"]
   local coords = meta["x"] .. "|" .. meta["y"]
@@ -360,6 +359,8 @@ function pfMap:AddNode(meta)
     pfMap.tooltips[spawn]        = pfMap.tooltips[spawn]        or {}
     pfMap.tooltips[spawn][title] = pfMap.tooltips[spawn][title] or node
   end
+
+  pfMap.queue_update = true
 end
 
 function pfMap:DeleteNode(addon, title)
@@ -393,6 +394,8 @@ function pfMap:DeleteNode(addon, title)
       end
     end
   end
+
+  pfMap.queue_update = true
 end
 
 function pfMap:NodeClick()
@@ -486,7 +489,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
     end
   end
 
-  if ( frame.updateTexture or frame.updateVertex ) and frame.texture then
+  if ( frame.updateTexture or frame.updateVertex or not frame.tex:GetTexture() ) and frame.texture then
     frame.tex:SetTexture(frame.texture)
     frame.tex:SetVertexColor(1,1,1)
 
@@ -498,7 +501,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
     end
   end
 
-  if ( frame.updateColor or frame.updateTexture ) and not frame.texture then
+  if ( frame.updateColor or frame.updateTexture or not frame.tex:GetTexture() ) and not frame.texture then
     if obj == "minimap" and pfQuest_config["cutoutminimap"] == "1" then
       frame.tex:SetTexture(pfQuestConfig.path.."\\img\\nodecut")
     else
@@ -691,22 +694,12 @@ function pfMap:UpdateMinimap()
 end
 
 pfMap:RegisterEvent("WORLD_MAP_UPDATE")
-pfMap:SetScript("OnEvent", function()
-  -- on each event, we delay the update function
-  -- by one frame to make sure all nodes are getting
-  -- drawn and shown on the parent frame, which takes a
-  -- while to initialize
-  this.worldmap = GetTime() + .5
-  pfMap:UpdateNodes()
-end)
-
+pfMap:SetScript("OnEvent", pfMap.UpdateNodes)
 pfMap:SetScript("OnUpdate", function()
-  -- run the delayed function when an event was triggered
-  if this.worldmap and this.worldmap < GetTime() then
+  if pfMap.queue_update then
     pfMap:UpdateNodes()
-    this.worldmap = nil
+    pfMap.queue_update = nil
   end
 
-  -- always refresh all minimap nodes.
   pfMap:UpdateMinimap()
 end)
