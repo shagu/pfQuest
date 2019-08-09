@@ -19,12 +19,12 @@ pfQuest_defconfig = {
   ["worldmapmenu"] = "1", -- Show WorldMap Menu
   ["minimapbutton"] = "1", -- Show MiniMap Button
   ["showids"] = "0", -- Show IDs
-  ["colorbyspawn"] = "1", -- Color Map Nodes By Spawn
+  ["colorbyspawn"] = "0", -- Color Map Nodes By Spawn
   ["questlinks"] = "1", -- Enable Quest Links
   ["worldmaptransp"] = "1.0", -- WorldMap Node Transparency
   ["minimaptransp"] = "1.0", -- MiniMap Node Transparency
   ["mindropchance"] = "0", -- Minimum Drop Chance
-  ["mouseover"] = "0", -- Highlight Nodes On Mouseover
+  ["mouseover"] = "1", -- Highlight Nodes On Mouseover
 }
 
 pfQuestConfig = CreateFrame("Frame", "pfQuestConfig", UIParent)
