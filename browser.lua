@@ -175,7 +175,7 @@ local function ResultButtonClick()
       ChatFrameEditBox:Show()
       ChatFrameEditBox:Insert("|cffffff00|Hquest:" .. ( this.id or 0 ) .. ":0:0:0|h[" .. this.name .. "]|h|r")
     elseif pfBrowser.selectState then
-      local maps = pfDatabase:SearchQuest(this.name)
+      local maps = pfDatabase:SearchQuest(this.name, meta)
       pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     else
       local maps = pfDatabase:SearchQuestID(this.id, meta)
@@ -186,7 +186,7 @@ local function ResultButtonClick()
       local maps = pfDatabase:SearchMob(this.name, meta)
       pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     else
-      local maps = pfDatabase:SearchMobID(this.id)
+      local maps = pfDatabase:SearchMobID(this.id, meta)
       pfMap:UpdateNodes()
       pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     end
@@ -195,7 +195,7 @@ local function ResultButtonClick()
       local maps = pfDatabase:SearchObject(this.name, meta)
       pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     else
-      local maps = pfDatabase:SearchObjectID(this.id)
+      local maps = pfDatabase:SearchObjectID(this.id, meta)
       pfMap:UpdateNodes()
       pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     end
@@ -228,15 +228,16 @@ end
 
 local function ResultButtonClickSpecial()
   local param = this:GetParent()[this.parameter]
+  local meta = { ["addon"] = "PFDB" }
   local maps = {}
   if this.buttonType == "O" or this.buttonType == "U" then
     if this.selectState then
       maps = pfDatabase:SearchItem(this:GetParent().name, meta)
     else
-      maps = pfDatabase:SearchItemID(param, nil, nil, {[this.buttonType]=true})
+      maps = pfDatabase:SearchItemID(param, meta, nil, {[this.buttonType]=true})
     end
   elseif this.buttonType == "V" then
-    maps = pfDatabase:SearchVendor(param)
+    maps = pfDatabase:SearchVendor(param, meta)
   end
   pfMap:UpdateNodes()
   pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
