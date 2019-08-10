@@ -543,7 +543,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
       frame.title     = title
       frame.func      = tab.func
 
-      if pfQuest_config["colorbyspawn"] == "1" then
+      if pfQuest_config["spawncolors"] == "1" then
         frame.color = tab.spawn or tab.title
       else
         frame.color = tab.title
@@ -585,9 +585,12 @@ function pfMap:UpdateNode(frame, node, color, obj)
 end
 
 function pfMap:UpdateNodes()
-  local color = pfQuest_config["colorbyspawn"] == "1" and "spawn" or "title"
+  local color = pfQuest_config["spawncolors"] == "1" and "spawn" or "title"
   local map = pfMap:GetMapID(GetCurrentMapContinent(), GetCurrentMapZone())
   local i = 1
+
+  -- reset tracker
+  pfQuest.tracker.Reset()
 
   -- refresh all nodes
   for addon, _ in pairs(pfMap.nodes) do
@@ -607,6 +610,11 @@ function pfMap:UpdateNodes()
         pfMap.pins[i]:ClearAllPoints()
         pfMap.pins[i]:SetPoint("CENTER", WorldMapButton, "TOPLEFT", x, -y)
         pfMap.pins[i]:Show()
+
+        -- populate quest list on map
+        for title, node in pairs(pfMap.pins[i].node) do
+          pfQuest.tracker.ButtonAdd(title, node)
+        end
 
         i = i + 1
       end
@@ -664,7 +672,7 @@ function pfMap:UpdateMinimap()
   end
 
   this.xPlayer, this.yPlayer, this.mZoom = xPlayer, yPlayer, mZoom
-  local color = pfQuest_config["colorbyspawn"] == "1" and "spawn" or "title"
+  local color = pfQuest_config["spawncolors"] == "1" and "spawn" or "title"
   local mapID = pfMap:GetMapIDByName(GetRealZoneText())
   local mapZoom = minimap_zoom[minimap_indoor()][mZoom]
   local mapWidth = minimap_sizes[mapID] and minimap_sizes[mapID][1] or 0

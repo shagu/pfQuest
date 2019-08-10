@@ -105,6 +105,12 @@ SlashCmdList["PFDB"] = function(input, editbox)
     return
   end
 
+  -- argument: tracker
+  if (arg1 == "tracker") then
+    if pfQuest.tracker then pfQuest.tracker:Show() end
+    return
+  end
+
   -- argument: show
   if (arg1 == "config") then
     if pfQuestConfig then pfQuestConfig:Show() end

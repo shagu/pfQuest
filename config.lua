@@ -19,7 +19,7 @@ pfQuest_defconfig = {
   ["worldmapmenu"] = "1", -- Show WorldMap Menu
   ["minimapbutton"] = "1", -- Show MiniMap Button
   ["showids"] = "0", -- Show IDs
-  ["colorbyspawn"] = "0", -- Color Map Nodes By Spawn
+  ["spawncolors"] = "0", -- Color Map Nodes By Spawn
   ["questlinks"] = "1", -- Enable Quest Links
   ["worldmaptransp"] = "1.0", -- WorldMap Node Transparency
   ["minimaptransp"] = "1.0", -- MiniMap Node Transparency
@@ -52,7 +52,7 @@ pfQuestConfig:SetScript("OnEvent", function()
     pfQuestConfig:CreateConfigEntry("worldmapmenu",        pfQuest_Loc["Show WorldMap Menu"],             "checkbox")
     pfQuestConfig:CreateConfigEntry("minimapbutton",       pfQuest_Loc["Show MiniMap Button"],            "checkbox")
     pfQuestConfig:CreateConfigEntry("showids",             pfQuest_Loc["Show IDs"],                       "checkbox")
-    pfQuestConfig:CreateConfigEntry("colorbyspawn",        pfQuest_Loc["Color Map Nodes By Spawn"],       "checkbox")
+    pfQuestConfig:CreateConfigEntry("spawncolors",        pfQuest_Loc["Color Map Nodes By Spawn"],       "checkbox")
     pfQuestConfig:CreateConfigEntry("questlinks",          pfQuest_Loc["Enable Quest Links"],             "checkbox")
     pfQuestConfig:CreateConfigEntry("mouseover",           pfQuest_Loc["Highlight Nodes On Mouseover"],   "checkbox")
     pfQuestConfig:CreateConfigEntry("worldmaptransp",      pfQuest_Loc["WorldMap Node Transparency"],     "text")

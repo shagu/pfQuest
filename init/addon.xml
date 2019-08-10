@@ -7,5 +7,6 @@
   <Include file="..\database.lua"/>
   <Include file="..\map.lua"/>
   <Include file="..\quest.lua"/>
+  <Include file="..\tracker.lua"/>
   <Include file="..\browser.lua"/>
 </Ui>
