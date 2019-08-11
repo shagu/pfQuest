@@ -2,7 +2,7 @@
 local compat = pfQuestCompat
 
 local panelheight = 16
-local entryheight = 18
+local entryheight = 20
 
 tracker = CreateFrame("Frame", "pfQuestMapTracker", UIParent)
 tracker:SetPoint("LEFT", UIParent, "LEFT", 0, 0)
@@ -215,7 +215,7 @@ function tracker.ButtonEvent(self)
 
         if not self.objectives[i] then
           self.objectives[i] = self:CreateFontString(nil, "HIGH", "GameFontNormal")
-          self.objectives[i]:SetFont(pfUI.font_default, 10)
+          self.objectives[i]:SetFont(pfUI.font_default, 12)
           self.objectives[i]:SetJustifyH("LEFT")
           self.objectives[i]:SetPoint("TOPLEFT", 20, -12*i-6)
           self.objectives[i]:SetPoint("TOPRIGHT", -10, -12*i-6)
@@ -317,13 +317,13 @@ function tracker.ButtonAdd(title, node)
     tracker.buttons[id].bg:SetAllPoints()
 
     tracker.buttons[id].text = tracker.buttons[id]:CreateFontString("pfQuestIDButton", "HIGH", "GameFontNormal")
-    tracker.buttons[id].text:SetFont(pfUI.font_default, 10)
+    tracker.buttons[id].text:SetFont(pfUI.font_default, 12)
     tracker.buttons[id].text:SetJustifyH("LEFT")
     tracker.buttons[id].text:SetPoint("TOPLEFT", 16, -4)
     tracker.buttons[id].text:SetPoint("TOPRIGHT", -10, -4)
 
     tracker.buttons[id].icon = tracker.buttons[id]:CreateTexture(nil, "BORDER")
-    tracker.buttons[id].icon:SetPoint("TOPLEFT", 2, -2)
+    tracker.buttons[id].icon:SetPoint("TOPLEFT", 2, -4)
     tracker.buttons[id].icon:SetWidth(12)
     tracker.buttons[id].icon:SetHeight(12)
 
