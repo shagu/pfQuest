@@ -83,6 +83,7 @@ local function str2rgb(text)
 end
 
 pfMap = CreateFrame("Frame")
+pfMap.str2rgb = str2rgb
 pfMap.tooltips = {}
 pfMap.nodes = {}
 pfMap.pins = {}
@@ -399,14 +400,15 @@ function pfMap:DeleteNode(addon, title)
 end
 
 function pfMap:NodeClick()
-  if IsShiftKeyDown() and this.questid and this.texture and this.layer < 5 then
-    -- mark questnode as done
+  if IsShiftKeyDown() then
+    if this.questid and this.texture and this.layer < 5 then
+      -- mark questnode as done
+      pfQuest_history[this.questid] = true
+    end
+
     pfMap:DeleteNode(this.node[this.title].addon, this.title)
-    pfQuest_history[this.questid] = true
     pfMap:UpdateNodes()
-  elseif IsShiftKeyDown() then
-    pfMap:DeleteNode(this.node[this.title].addon, this.title)
-    pfMap:UpdateNodes()
+    pfQuest.updateQuestGivers = true
   else
     -- switch color
     pfQuest_colors[this.color] = { str2rgb(this.color .. GetTime()) }
