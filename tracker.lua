@@ -302,7 +302,15 @@ function tracker.ButtonAdd(title, node)
   -- search for existing reusable buttons
   local id = table.getn(tracker.buttons)+1
   for bid, button in pairs(tracker.buttons) do
-    if button.title == title then return end
+    if button.title == title then
+      -- prefer node icons over questgivers
+      if not node.texture and button.node.texture then
+        id = bid
+        break
+      else
+        return
+      end
+    end
     if button.empty then id = bid break end
   end
 
