@@ -82,6 +82,7 @@ for _, exp in pairs({ "-tbc", "-wotlk" }) do
   if loc_update then patchtable(loc_core, loc_update) end
 
   if pfDB["minimap"..exp] then patchtable(pfDB["minimap"], pfDB["minimap"..exp]) end
+  if pfDB["meta"..exp] then patchtable(pfDB["meta"], pfDB["meta"..exp]) end
 end
 
 -- PlayerHasSkill
