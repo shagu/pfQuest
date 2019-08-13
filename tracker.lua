@@ -232,13 +232,15 @@ function tracker.ButtonEvent(self)
     local cur,max = 0,0
     local percent = 0
 
-    if objectives then
+    if objectives and objectives > 0 then
       for i=1, objectives, 1 do
         local text, _, done = GetQuestLogLeaderBoard(i, qlogid)
         local _, _, obj, objNum, objNeeded = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
         if objNum and objNeeded then
           max = max + objNeeded
           cur = cur + objNum
+        elseif not done then
+          max = max + 1
         end
       end
     end
