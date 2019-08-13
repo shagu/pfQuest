@@ -4,6 +4,52 @@ local compat = pfQuestCompat
 local panelheight = 16
 local entryheight = 20
 
+local function HideTooltip()
+  GameTooltip:Hide()
+end
+
+local function ShowTooltip()
+  if this.tooltip then
+    GameTooltip:ClearLines()
+    GameTooltip_SetDefaultAnchor(GameTooltip, this)
+    if this.text then
+      GameTooltip:SetText(this.text:GetText())
+      GameTooltip:SetText(this.text:GetText(), this.text:GetTextColor())
+    else
+      GameTooltip:SetText("|cff33ffccpf|cffffffffQuest")
+    end
+
+    if this.node and this.node.questid then
+      if pfDB["quests"] and pfDB["quests"]["loc"] and pfDB["quests"]["loc"][this.node.questid] and pfDB["quests"]["loc"][this.node.questid]["O"] then
+        GameTooltip:AddLine(pfDB["quests"]["loc"][this.node.questid]["O"], 1,1,1,1)
+        GameTooltip:AddLine(" ")
+      end
+
+      if this.node.qlogid then
+        local objectives = GetNumQuestLeaderBoards(this.node.qlogid)
+        if objectives and objectives > 0 then
+          for i=1, objectives, 1 do
+            local text, _, done = GetQuestLogLeaderBoard(i, this.node.qlogid)
+            local _, _, obj, cur, req = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
+            if done then
+              GameTooltip:AddLine(" - " .. text, 0,1,0)
+            elseif cur and req then
+              local r,g,b = pfMap.tooltip:GetColor(cur, req)
+              GameTooltip:AddLine(" - " .. text, r,g,b)
+            else
+              GameTooltip:AddLine(" - " .. text, 1,0,0)
+            end
+          end
+          GameTooltip:AddLine(" ")
+        end
+      end
+    end
+
+    GameTooltip:AddLine(this.tooltip, 1,1,1)
+    GameTooltip:Show()
+  end
+end
+
 tracker = CreateFrame("Frame", "pfQuestMapTracker", UIParent)
 tracker:SetPoint("LEFT", UIParent, "LEFT", 0, 0)
 tracker:SetWidth(200)
@@ -20,18 +66,6 @@ tracker.mode = "QUEST_TRACKING"
 pfUI.api.CreateBackdrop(tracker, nil, nil, .5)
 
 do -- button panel
-  local function HideTooltip()
-    GameTooltip:Hide()
-  end
-
-  local function ShowTooltip()
-    if this.tooltip then
-      GameTooltip:SetOwner(this, "ANCHOR_LEFT", -10, -5)
-      GameTooltip:AddLine(this.tooltip)
-      GameTooltip:Show()
-    end
-  end
-
   local anchors = {}
   local buttons = {}
   local function CreateButton(icon, anchor, tooltip, func)
@@ -41,6 +75,7 @@ do -- button panel
     local func = func
 
     local b = CreateFrame("Button", nil, tracker)
+    b.tooltip = tooltip
     b.icon = b:CreateTexture(nil, "BACKGROUND")
     b.icon:SetAllPoints()
     b.icon:SetTexture(pfQuestConfig.path.."\\img\\tracker_"..icon)
@@ -51,7 +86,7 @@ do -- button panel
     b:SetHeight(panelheight-2)
 
     b:SetScript("OnEnter", ShowTooltip)
-    b:SetScript("OnEnter", HideTooltip)
+    b:SetScript("OnLeave", HideTooltip)
 
     if anchor == "TOPLEFT" then
       table.insert(buttons, b)
@@ -109,8 +144,16 @@ do -- button panel
   end)
 end
 
-function tracker.ButtonEnter() pfMap.highlight = this.title end
-function tracker.ButtonLeave() pfMap.highlight = nil end
+function tracker.ButtonEnter()
+  pfMap.highlight = this.title
+  ShowTooltip()
+end
+
+function tracker.ButtonLeave()
+  pfMap.highlight = nil
+  HideTooltip()
+end
+
 function tracker.ButtonUpdate()
   if pfMap.highlight and pfMap.highlight == this.title then
     this.bg:SetAlpha(.5)
@@ -179,6 +222,8 @@ function tracker.ButtonEvent(self)
   end
 
   if tracker.mode == "QUEST_TRACKING" then
+    tracker.buttons[id].tooltip = "|cff33ffcc<Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
+
     local qlogid = pfQuest.questlog[title].qlogid
     local qtitle, level, tag, header, collapsed, complete = compat.GetQuestLogTitle(qlogid)
     local objectives = GetNumQuestLeaderBoards(qlogid)
@@ -245,6 +290,8 @@ function tracker.ButtonEvent(self)
     -- sort map tracker based on quest progress
     table.sort(tracker.buttons, function(a,b) return not a.empty and (a.perc or -1) > (b.perc or -1) end)
   elseif tracker.mode == "GIVER_TRACKING" then
+    tracker.buttons[id].tooltip = "|cff33ffcc<Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Mark As Done"
+
     local level = node.qlvl or node.level or UnitLevel("player")
     local color = GetDifficultyColor(level)
 
@@ -265,6 +312,8 @@ function tracker.ButtonEvent(self)
     -- sort map tracker based on database names
     table.sort(tracker.buttons, function(a,b) return not a.empty and (a.level or -1) > (b.level or -1) end)
   elseif tracker.mode == "DATABASE_TRACKING" then
+    tracker.buttons[id].tooltip = "|cff33ffcc<Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
+
     self.text:SetText(title)
     self.text:SetTextColor(1,1,1,1)
     self.text:SetTextColor(pfMap.str2rgb(title))
