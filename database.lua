@@ -6,6 +6,42 @@ pfDatabase = {}
 local loc = GetLocale()
 local dbs = { "items", "quests", "objects", "units", "zones", "professions" }
 
+-- Patch databases to further expansions
+local function patchtable(base, diff)
+  for k, v in pairs(diff) do
+    if base[k] and type(v) == "table" then
+      patchtable(base[k], v)
+    elseif type(v) == "string" and v == "_" then
+      base[k] = nil
+    else
+      base[k] = v
+    end
+  end
+end
+
+local loc_core, loc_update
+for _, exp in pairs({ "-tbc", "-wotlk" }) do
+  for _, db in pairs(dbs) do
+    if pfDB[db]["data"..exp] then
+      loc_core = pfDB[db][loc] or pfDB[db]["enUS"]
+      loc_update = pfDB[db][loc..exp] or pfDB[db]["enUS"..exp]
+      patchtable(pfDB[db]["data"], pfDB[db]["data"..exp])
+      patchtable(loc_core, loc_update)
+    end
+  end
+
+  loc_core = pfDB["professions"][loc] or pfDB["professions"]["enUS"]
+  loc_update = pfDB["professions"][loc..exp] or pfDB["professions"]["enUS"..exp]
+  if loc_update then patchtable(loc_core, loc_update) end
+
+  loc_core = pfDB["zones"][loc] or pfDB["zones"]["enUS"]
+  loc_update = pfDB["zones"][loc..exp] or pfDB["zones"]["enUS"..exp]
+  if loc_update then patchtable(loc_core, loc_update) end
+
+  if pfDB["minimap"..exp] then patchtable(pfDB["minimap"], pfDB["minimap"..exp]) end
+  if pfDB["meta"..exp] then patchtable(pfDB["meta"], pfDB["meta"..exp]) end
+end
+
 -- detect localized databases
 pfDatabase.dbstring = ""
 for id, db in pairs(dbs) do
@@ -48,42 +84,6 @@ local bitclasses = {
   [256] = "WARLOCK",
   [1024] = "DRUID"
 }
-
--- Patch databases to further expansions
-local function patchtable(base, diff)
-  for k, v in pairs(diff) do
-    if base[k] and type(v) == "table" then
-      patchtable(base[k], v)
-    elseif type(v) == "string" and v == "_" then
-      base[k] = nil
-    else
-      base[k] = v
-    end
-  end
-end
-
-local loc_core, loc_update
-for _, exp in pairs({ "-tbc", "-wotlk" }) do
-  for _, db in pairs(dbs) do
-    if pfDB[db]["data"..exp] then
-      loc_core = pfDB[db][loc] or pfDB[db]["enUS"]
-      loc_update = pfDB[db][loc..exp] or pfDB[db]["enUS"..exp]
-      patchtable(pfDB[db]["data"], pfDB[db]["data"..exp])
-      patchtable(loc_core, loc_update)
-    end
-  end
-
-  loc_core = pfDB["professions"][loc] or pfDB["professions"]["enUS"]
-  loc_update = pfDB["professions"][loc..exp] or pfDB["professions"]["enUS"..exp]
-  if loc_update then patchtable(loc_core, loc_update) end
-
-  loc_core = pfDB["zones"][loc] or pfDB["zones"]["enUS"]
-  loc_update = pfDB["zones"][loc..exp] or pfDB["zones"]["enUS"..exp]
-  if loc_update then patchtable(loc_core, loc_update) end
-
-  if pfDB["minimap"..exp] then patchtable(pfDB["minimap"], pfDB["minimap"..exp]) end
-  if pfDB["meta"..exp] then patchtable(pfDB["meta"], pfDB["meta"..exp]) end
-end
 
 -- PlayerHasSkill
 -- Returns false if the player has the required skill
