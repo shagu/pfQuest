@@ -54,11 +54,23 @@ tracker = CreateFrame("Frame", "pfQuestMapTracker", UIParent)
 tracker:SetPoint("LEFT", UIParent, "LEFT", 0, 0)
 tracker:SetWidth(200)
 
-tracker:SetFrameStrata("FULLSCREEN_DIALOG")
 tracker:SetMovable(true)
 tracker:EnableMouse(true)
 tracker:SetScript("OnMouseDown",function() this:StartMoving() end)
 tracker:SetScript("OnMouseUp",function() this:StopMovingOrSizing() end)
+tracker:SetScript("OnUpdate", function()
+  if WorldMapFrame:IsShown() then
+    if this.strata ~= "FULLSCREEN_DIALOG" then
+      this:SetFrameStrata("FULLSCREEN_DIALOG")
+      this.strata = "FULLSCREEN_DIALOG"
+    end
+  else
+    if this.strata ~= "BACKGROUND" then
+      this:SetFrameStrata("BACKGROUND")
+      this.strata = "BACKGROUND"
+    end
+  end
+end)
 
 tracker.buttons = {}
 tracker.mode = "QUEST_TRACKING"
