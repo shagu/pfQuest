@@ -403,6 +403,7 @@ function tracker.ButtonAdd(title, node)
     tracker.buttons[id].bg = tracker.buttons[id]:CreateTexture(nil, "BACKGROUND")
     tracker.buttons[id].bg:SetTexture(1,1,1,.2)
     tracker.buttons[id].bg:SetAllPoints()
+    tracker.buttons[id].bg:SetAlpha(0)
 
     tracker.buttons[id].text = tracker.buttons[id]:CreateFontString("pfQuestIDButton", "HIGH", "GameFontNormal")
     tracker.buttons[id].text:SetFont(pfUI.font_default, 12)
