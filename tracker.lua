@@ -81,6 +81,15 @@ tracker:SetScript("OnUpdate", function()
   end
 end)
 
+tracker:SetScript("OnUpdate", function()
+  local alpha = this.backdrop:GetAlpha()
+  if MouseIsOver(this) and alpha < 1 then
+    this.backdrop:SetAlpha(alpha + .1)
+  elseif not MouseIsOver(this) and alpha > .25 then
+    this.backdrop:SetAlpha(alpha - .1)
+  end
+end)
+
 tracker:SetScript("OnShow", function()
   pfQuest_config["tracker"] = 1
 end)
@@ -96,6 +105,14 @@ tracker.mode = "QUEST_TRACKING"
 pfUI.api.CreateBackdrop(tracker, nil, nil, .5)
 
 do -- button panel
+  tracker.panel = CreateFrame("Frame", nil, tracker.backdrop)
+  tracker.panel:SetPoint("TOPLEFT", 0, 0)
+  tracker.panel:SetPoint("TOPRIGHT", 0, 0)
+  tracker.panel:SetHeight(panelheight)
+  tracker.panel.bg = tracker.panel:CreateTexture(nil, "LOW")
+  tracker.panel.bg:SetTexture(0,0,0,.5)
+  tracker.panel.bg:SetAllPoints()
+
   local anchors = {}
   local buttons = {}
   local function CreateButton(icon, anchor, tooltip, func)
@@ -104,7 +121,7 @@ do -- button panel
     pos = anchor == "TOPLEFT" and pos or pos*-1
     local func = func
 
-    local b = CreateFrame("Button", nil, tracker)
+    local b = CreateFrame("Button", nil, tracker.panel)
     b.tooltip = tooltip
     b.icon = b:CreateTexture(nil, "BACKGROUND")
     b.icon:SetAllPoints()
@@ -133,12 +150,6 @@ do -- button panel
 
     return b
   end
-
-  tracker.panel = tracker:CreateTexture(nil, "LOW")
-  tracker.panel:SetTexture(0,0,0,.5)
-  tracker.panel:SetPoint("TOPLEFT", 0, 0)
-  tracker.panel:SetPoint("TOPRIGHT", 0, 0)
-  tracker.panel:SetHeight(panelheight)
 
   tracker.btnquest = CreateButton("quests", "TOPLEFT", "Show Current Quests", function()
     tracker.mode = "QUEST_TRACKING"
