@@ -56,6 +56,15 @@ tracker:SetWidth(200)
 
 tracker:SetMovable(true)
 tracker:EnableMouse(true)
+tracker:RegisterEvent("PLAYER_ENTERING_WORLD")
+tracker:SetScript("OnEvent", function()
+  if pfQuest_config["tracker"] and pfQuest_config["tracker"] == 0 then
+    this:Hide()
+  else
+    this:Show()
+  end
+end)
+
 tracker:SetScript("OnMouseDown",function() this:StartMoving() end)
 tracker:SetScript("OnMouseUp",function() this:StopMovingOrSizing() end)
 tracker:SetScript("OnUpdate", function()
@@ -70,6 +79,15 @@ tracker:SetScript("OnUpdate", function()
       this.strata = "BACKGROUND"
     end
   end
+end)
+
+tracker:SetScript("OnShow", function()
+  pfQuest_config["tracker"] = 1
+end)
+
+tracker:SetScript("OnHide", function()
+  DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest: Tracker is now hidden. Type `/db tracker` to show.")
+  pfQuest_config["tracker"] = 0
 end)
 
 tracker.buttons = {}
@@ -138,7 +156,6 @@ do -- button panel
   end)
 
   tracker.btnclose = CreateButton("close", "TOPRIGHT", "Close Tracker", function()
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest: Tracker is now hidden. Type `/db tracker` to show.")
     tracker:Hide()
   end)
 
