@@ -51,6 +51,8 @@ local function ShowTooltip()
   end
 end
 
+local unfolded = {}
+
 tracker = CreateFrame("Frame", "pfQuestMapTracker", UIParent)
 tracker:SetPoint("LEFT", UIParent, "LEFT", 0, 0)
 tracker:SetWidth(200)
@@ -96,7 +98,6 @@ tracker:SetScript("OnShow", function()
 end)
 
 tracker:SetScript("OnHide", function()
-  DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest: Tracker is now hidden. Type `/db tracker` to show.")
   pfQuest_config["tracker"] = 0
 end)
 
@@ -168,6 +169,7 @@ do -- button panel
   end)
 
   tracker.btnclose = CreateButton("close", "TOPRIGHT", "Close Tracker", function()
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest: Tracker is now hidden. Type `/db tracker` to show.")
     tracker:Hide()
   end)
 
@@ -216,13 +218,19 @@ function tracker.ButtonClick()
     pfMap:UpdateNodes()
 
     pfQuest.updateQuestGivers = true
-  elseif not WorldMapFrame:IsShown() then
+  elseif IsControlKeyDown() and not WorldMapFrame:IsShown() then
     -- show world map
     WorldMapFrame:Show()
-  elseif pfQuest_config["spawncolors"] == "0" then
+  elseif IsControlKeyDown() and pfQuest_config["spawncolors"] == "0" then
     -- switch color
     pfQuest_colors[this.title] = { pfMap.str2rgb(this.title .. GetTime()) }
     pfMap:UpdateNodes()
+  elseif not unfolded[this.title] then
+    unfolded[this.title] = true
+    tracker.ButtonEvent(this)
+  elseif unfolded[this.title] then
+    unfolded[this.title] = nil
+    tracker.ButtonEvent(this)
   end
 end
 
@@ -263,7 +271,7 @@ function tracker.ButtonEvent(self)
   end
 
   if tracker.mode == "QUEST_TRACKING" then
-    tracker.buttons[id].tooltip = "|cff33ffcc<Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
+    tracker.buttons[id].tooltip = "|cff33ffcc<Click>|r Unfold/Fold Objectives\n|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
 
     local qlogid = pfQuest.questlog[title].qlogid
     local qtitle, level, tag, header, collapsed, complete = compat.GetQuestLogTitle(qlogid)
@@ -294,7 +302,7 @@ function tracker.ButtonEvent(self)
     end
 
     -- expand button to show objectives
-    if objectives and percent > 0 and percent < 100 then
+    if unfolded[title] or ( objectives and percent > 0 and percent < 100 ) then
       self:SetHeight(entryheight + objectives*12)
 
       for i=1, objectives, 1 do
@@ -333,7 +341,7 @@ function tracker.ButtonEvent(self)
     -- sort map tracker based on quest progress
     table.sort(tracker.buttons, function(a,b) return not a.empty and (a.perc or -1) > (b.perc or -1) end)
   elseif tracker.mode == "GIVER_TRACKING" then
-    tracker.buttons[id].tooltip = "|cff33ffcc<Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Mark As Done"
+    tracker.buttons[id].tooltip = "|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Mark As Done"
 
     local level = node.qlvl or node.level or UnitLevel("player")
     local color = GetDifficultyColor(level)
@@ -355,7 +363,7 @@ function tracker.ButtonEvent(self)
     -- sort map tracker based on database names
     table.sort(tracker.buttons, function(a,b) return not a.empty and (a.level or -1) > (b.level or -1) end)
   elseif tracker.mode == "DATABASE_TRACKING" then
-    tracker.buttons[id].tooltip = "|cff33ffcc<Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
+    tracker.buttons[id].tooltip = "|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
 
     self.text:SetText(title)
     self.text:SetTextColor(1,1,1,1)
