@@ -364,7 +364,7 @@ function tracker.ButtonEvent(self)
 
     -- red quests
     if node.qmin and node.qmin > UnitLevel("player") then
-      level, color = -60, { r = 1, g = .2, b = .2 }
+      level, color = 100, { r = 1, g = 0, b = 0 }
     end
 
     self.text:SetTextColor(color.r, color.g, color.b)
