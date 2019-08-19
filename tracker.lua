@@ -25,11 +25,12 @@ local function ShowTooltip()
         GameTooltip:AddLine(" ")
       end
 
-      if this.node.qlogid then
-        local objectives = GetNumQuestLeaderBoards(this.node.qlogid)
+      local qlogid = pfQuest.questlog[this.title] and pfQuest.questlog[this.title].qlogid
+      if qlogid then
+        local objectives = GetNumQuestLeaderBoards(qlogid)
         if objectives and objectives > 0 then
           for i=1, objectives, 1 do
-            local text, _, done = GetQuestLogLeaderBoard(i, this.node.qlogid)
+            local text, _, done = GetQuestLogLeaderBoard(i, qlogid)
             local _, _, obj, cur, req = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
             if done then
               GameTooltip:AddLine(" - " .. text, 0,1,0)
