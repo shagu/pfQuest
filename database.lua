@@ -763,7 +763,7 @@ function pfDatabase:SearchQuests(meta, maps)
       meta["layer"] = 3
 
       -- tint high level quests red
-      if minlvl > plevel then
+      if quests[id]["min"] and quests[id]["min"] > plevel then
         meta["texture"] = pfQuestConfig.path.."\\img\\available"
         meta["vertex"] = { 1, .6, .6 }
         meta["layer"] = 2
