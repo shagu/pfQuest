@@ -285,8 +285,6 @@ function tracker.ButtonEvent(self)
   end
 
   if tracker.mode == "QUEST_TRACKING" then
-    tracker.buttons[id].tooltip = "|cff33ffcc<Click>|r Unfold/Fold Objectives\n|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
-
     local qlogid = pfQuest.questlog[title].qlogid
     local qtitle, level, tag, header, collapsed, complete = compat.GetQuestLogTitle(qlogid)
     local objectives = GetNumQuestLeaderBoards(qlogid)
@@ -351,9 +349,8 @@ function tracker.ButtonEvent(self)
     self.perc = percent
     self.text:SetText(string.format("%s |cffaaaaaa(%s%s%%|cffaaaaaa)", title or "", colorperc or "", ceil(percent)))
     self.text:SetTextColor(color.r, color.g, color.b)
+    self.tooltip = "|cff33ffcc<Click>|r Unfold/Fold Objectives\n|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
   elseif tracker.mode == "GIVER_TRACKING" then
-    tracker.buttons[id].tooltip = "|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Mark As Done"
-
     local level = node.qlvl or node.level or UnitLevel("player")
     local color = GetDifficultyColor(level)
 
@@ -370,11 +367,12 @@ function tracker.ButtonEvent(self)
     self.text:SetTextColor(color.r, color.g, color.b)
     self.text:SetText(title)
     self.level = tonumber(level)
+    self.tooltip = "|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Mark As Done"
   elseif tracker.mode == "DATABASE_TRACKING" then
-    tracker.buttons[id].tooltip = "|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
     self.text:SetText(title)
     self.text:SetTextColor(1,1,1,1)
     self.text:SetTextColor(pfMap.str2rgb(title))
+    self.tooltip = "|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
   end
 
   -- sort all tracker entries
@@ -393,6 +391,8 @@ function tracker.ButtonEvent(self)
 end
 
 function tracker.ButtonAdd(title, node)
+  if not title or not node then return end
+
   if tracker.mode == "QUEST_TRACKING" then -- skip everything that isn't in questlog
     if node.addon ~= "PFQUEST" then return end
     if not pfQuest.questlog or not pfQuest.questlog[title] then return end
@@ -406,10 +406,12 @@ function tracker.ButtonAdd(title, node)
     if node.addon ~= "PFDB" then return end
   end
 
-  -- search for existing reusable buttons
+  -- use maxcount + 1 as default id
   local id = table.getn(tracker.buttons)+1
+
+  -- skip duplicate titles
   for bid, button in pairs(tracker.buttons) do
-    if button.title == title then
+    if button.title and button.title == title then
       -- prefer node icons over questgivers
       if not node.texture and button.node.texture then
         id = bid
@@ -418,6 +420,10 @@ function tracker.ButtonAdd(title, node)
         return
       end
     end
+  end
+
+  -- detect a reusable button
+  for bid, button in pairs(tracker.buttons) do
     if button.empty then id = bid break end
   end
 
@@ -458,7 +464,6 @@ function tracker.ButtonAdd(title, node)
   tracker.buttons[id].empty = nil
   tracker.buttons[id].title = title
   tracker.buttons[id].node = node
-  tracker.buttons[id].id = id
 
   -- reload button data
   tracker.ButtonEvent(tracker.buttons[id])
