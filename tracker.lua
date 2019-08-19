@@ -234,6 +234,20 @@ function tracker.ButtonClick()
   end
 end
 
+local function trackersort(a,b)
+  if a.empty then
+    return false
+  elseif ( a.level or -1 ) ~= ( b.level or -1 ) then
+    return (a.level or -1) > (b.level or -1)
+  elseif ( a.perc or -1 ) ~= ( b.perc or -1 ) then
+    return (a.perc or -1) > (b.perc or -1)
+  elseif ( a.title or "" ) ~= ( b.title or "" ) then
+    return ( a.title or "" ) < ( b.title or "" )
+  else
+    return false
+  end
+end
+
 function tracker.ButtonEvent(self)
   local self   = self or this
   local title  = self.title
@@ -337,9 +351,6 @@ function tracker.ButtonEvent(self)
     self.perc = percent
     self.text:SetText(string.format("%s |cffaaaaaa(%s%s%%|cffaaaaaa)", title or "", colorperc or "", ceil(percent)))
     self.text:SetTextColor(color.r, color.g, color.b)
-
-    -- sort map tracker based on quest progress
-    table.sort(tracker.buttons, function(a,b) return not a.empty and (a.perc or -1) > (b.perc or -1) end)
   elseif tracker.mode == "GIVER_TRACKING" then
     tracker.buttons[id].tooltip = "|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Mark As Done"
 
@@ -359,19 +370,15 @@ function tracker.ButtonEvent(self)
     self.text:SetTextColor(color.r, color.g, color.b)
     self.text:SetText(title)
     self.level = tonumber(level)
-
-    -- sort map tracker based on database names
-    table.sort(tracker.buttons, function(a,b) return not a.empty and (a.level or -1) > (b.level or -1) end)
   elseif tracker.mode == "DATABASE_TRACKING" then
     tracker.buttons[id].tooltip = "|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
-
     self.text:SetText(title)
     self.text:SetTextColor(1,1,1,1)
     self.text:SetTextColor(pfMap.str2rgb(title))
-
-    -- sort map tracker based on database names
-    table.sort(tracker.buttons, function(a,b) return not a.empty and (a.title or "") > (b.title or "") end)
   end
+
+  -- sort all tracker entries
+  table.sort(tracker.buttons, trackersort)
 
   self:Show()
 
