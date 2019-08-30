@@ -25,6 +25,7 @@ pfQuest_defconfig = {
   ["minimaptransp"] = "1.0", -- MiniMap Node Transparency
   ["mindropchance"] = "0", -- Minimum Drop Chance
   ["mouseover"] = "1", -- Highlight Nodes On Mouseover
+  ["tracker"] = "0", -- Show Map Tracker
 }
 
 pfQuestConfig = CreateFrame("Frame", "pfQuestConfig", UIParent)

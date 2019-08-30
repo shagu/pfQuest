@@ -61,7 +61,7 @@ tracker:SetMovable(true)
 tracker:EnableMouse(true)
 tracker:RegisterEvent("PLAYER_ENTERING_WORLD")
 tracker:SetScript("OnEvent", function()
-  if pfQuest_config["tracker"] and pfQuest_config["tracker"] == 0 then
+  if pfQuest_config["tracker"] and pfQuest_config["tracker"] == "0" then
     this:Hide()
   else
     this:Show()
@@ -94,11 +94,11 @@ tracker:SetScript("OnUpdate", function()
 end)
 
 tracker:SetScript("OnShow", function()
-  pfQuest_config["tracker"] = 1
+  pfQuest_config["tracker"] = "1"
 end)
 
 tracker:SetScript("OnHide", function()
-  pfQuest_config["tracker"] = 0
+  pfQuest_config["tracker"] = "0"
 end)
 
 tracker.buttons = {}
