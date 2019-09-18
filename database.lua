@@ -5,6 +5,7 @@ pfDatabase = {}
 
 local loc = GetLocale()
 local dbs = { "items", "quests", "objects", "units", "zones", "professions" }
+local noloc = { "items", "quests", "objects", "units" }
 
 pfDB.locales = {
   ["enUS"] = "English",
@@ -56,6 +57,11 @@ for _, exp in pairs({ "-tbc", "-wotlk" }) do
   if pfDB["meta"..exp] then patchtable(pfDB["meta"], pfDB["meta"..exp]) end
 end
 
+-- detect installed locales
+for key, name in pairs(pfDB.locales) do
+  if not pfDB["quests"][key] then pfDB.locales[key] = nil end
+end
+
 -- detect localized databases
 pfDatabase.dbstring = ""
 for id, db in pairs(dbs) do
@@ -63,6 +69,30 @@ for id, db in pairs(dbs) do
   pfDB[db]["loc"] = pfDB[db][loc] or pfDB[db]["enUS"] or {}
   pfDatabase.dbstring = pfDatabase.dbstring .. " |cffcccccc[|cffffffff" .. db .. "|cffcccccc:|cff33ffcc" .. ( pfDB[db][loc] and loc or "enUS" ) .. "|cffcccccc]"
 end
+
+-- check for unlocalized servers and fallback to enUS databases when the server
+-- returns item names that are different to the database ones. (check via. Hearthstone)
+CreateFrame("Frame"):SetScript("OnUpdate", function()
+  ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
+  ItemRefTooltip:SetHyperlink("item:6948:0:0:0")
+  if ItemRefTooltipTextLeft1 and ItemRefTooltipTextLeft1:IsVisible() then
+    local name = ItemRefTooltipTextLeft1:GetText()
+    ItemRefTooltip:Hide()
+
+    -- check for noloc
+    if name and name ~= "" then
+      if name ~= pfDB["items"][loc][6948] then
+        for id, db in pairs(noloc) do
+          pfDB[db]["loc"] = pfDB[db]["enUS"] or {}
+        end
+      end
+      this:Hide()
+    end
+  end
+
+  -- set a detection timeout to 15 seconds
+  if GetTime() > 15 then this:Hide() end
+end)
 
 -- sanity check the databases
 if table.getn(pfDB["quests"]["loc"]) == 0 then

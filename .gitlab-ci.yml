@@ -44,9 +44,6 @@ esES:
 ruRU:
   <<: [*build]
 
-noLoc:
-  <<: [*build]
-
 enUS-tbc:
   <<: [*build-tbc]
 
@@ -66,7 +63,4 @@ esES-tbc:
   <<: [*build-tbc]
 
 ruRU-tbc:
-  <<: [*build-tbc]
-
-noLoc-tbc:
   <<: [*build-tbc]

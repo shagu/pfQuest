@@ -20,7 +20,7 @@ The complete version includes databases of all languages and client expansions. 
 5. Restart Wow
 
 ## Compact Version
-A compact build does only include the databases of a given language. Usually, one would pick the language that matches gameclients language. If a server returns english quests, but your gameclient is non-english (e.g deDE), then the server you play on is unlocalized and you'll need the `noLoc` package.
+A compact build does only include the database of a given language. When using those builds, it's mandatory to have a gameclient and a server, that both support the language. Otherwise, e.g when the server is always returning english quest texts, you'll need to use the complete version instead.
 
 * **English** (*enUS*):
   [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS) |
@@ -43,9 +43,6 @@ A compact build does only include the databases of a given language. Usually, on
 * **Russian** (*ruRU*):
   [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU) |
   [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU-tbc)
-* **Unlocalized** (*noLoc*):
-  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=noLoc) |
-  [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=noLoc-tbc)
 
 # Map & Minimap Nodes
 <img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/map-quests.png" width="55.35%" align="left">
