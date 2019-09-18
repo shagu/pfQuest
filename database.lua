@@ -60,8 +60,20 @@ end
 pfDatabase.dbstring = ""
 for id, db in pairs(dbs) do
   -- assign existing locale
-  pfDB[db]["loc"] = pfDB[db][loc] or pfDB[db]["enUS"]
+  pfDB[db]["loc"] = pfDB[db][loc] or pfDB[db]["enUS"] or {}
   pfDatabase.dbstring = pfDatabase.dbstring .. " |cffcccccc[|cffffffff" .. db .. "|cffcccccc:|cff33ffcc" .. ( pfDB[db][loc] and loc or "enUS" ) .. "|cffcccccc]"
+end
+
+-- sanity check the databases
+if table.getn(pfDB["quests"]["loc"]) == 0 then
+  CreateFrame("Frame"):SetScript("OnUpdate", function()
+    if GetTime() < 3 then return end
+    DEFAULT_CHAT_FRAME:AddMessage("|cffff5555 !! |cffffaaaaWrong version of |cff33ffccpf|cffffffffQuest|cffffaaaa detected.|cffff5555 !!")
+    DEFAULT_CHAT_FRAME:AddMessage("|cffffccccThe language pack does not match the gameclient's language.")
+    DEFAULT_CHAT_FRAME:AddMessage("|cffffccccYou'd either need to pick the complete or the " .. GetLocale().."-version.")
+    DEFAULT_CHAT_FRAME:AddMessage("|cffffccccFor more details, see: https://shagu.org/pfQuest")
+    this:Hide()
+  end)
 end
 
 -- add database shortcuts
@@ -537,7 +549,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   local meta = meta or {}
 
   meta["questid"] = id
-  meta["quest"] = pfDB.quests.loc[id].T
+  meta["quest"] = pfDB.quests.loc[id] and pfDB.quests.loc[id].T
   meta["qlvl"] = quests[id]["lvl"]
   meta["qmin"] = quests[id]["min"]
 

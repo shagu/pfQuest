@@ -318,6 +318,10 @@ function pfMap:GetMapID(cid, mid)
 end
 
 function pfMap:AddNode(meta)
+  if not meta then return end
+  if not meta["zone"] then return end
+  if not meta["title"] then return end
+
   local addon = meta["addon"] or "PFDB"
   local map = meta["zone"]
   local coords = meta["x"] .. "|" .. meta["y"]
