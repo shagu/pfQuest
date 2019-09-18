@@ -30,6 +30,14 @@ local function patchtable(base, diff)
   end
 end
 
+local function isempty(tbl)
+  for _ in pairs(tbl) do
+    return nil
+  end
+
+  return true
+end
+
 local loc_core, loc_update
 for _, exp in pairs({ "-tbc", "-wotlk" }) do
   for _, db in pairs(dbs) do
@@ -98,7 +106,7 @@ CreateFrame("Frame"):SetScript("OnUpdate", function()
 end)
 
 -- sanity check the databases
-if table.getn(pfDB["quests"]["loc"]) == 0 then
+if isempty(pfDB["quests"]["loc"]) then
   CreateFrame("Frame"):SetScript("OnUpdate", function()
     if GetTime() < 3 then return end
     DEFAULT_CHAT_FRAME:AddMessage("|cffff5555 !! |cffffaaaaWrong version of |cff33ffccpf|cffffffffQuest|cffffaaaa detected.|cffff5555 !!")
