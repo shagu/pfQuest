@@ -182,7 +182,7 @@ function pfQuest:AddQuestLogIntegration()
   dockTitle:SetJustifyV("BOTTOM")
 
   pfQuest.buttonOnline = pfQuest.buttonOnline or CreateFrame("Button", "pfQuestOnline", dockFrame)
-  pfQuest.buttonOnline:SetWidth(50)
+  pfQuest.buttonOnline:SetWidth(18)
   pfQuest.buttonOnline:SetHeight(15)
   pfQuest.buttonOnline:SetPoint("TOPRIGHT", dockFrame, "TOPRIGHT", -12, -10)
   pfQuest.buttonOnline:SetScript("OnClick", function()
@@ -200,6 +200,54 @@ function pfQuest:AddQuestLogIntegration()
   pfQuest.buttonOnline.txt:SetAllPoints(pfQuest.buttonOnline)
   pfQuest.buttonOnline.txt:SetJustifyH("RIGHT")
   pfQuest.buttonOnline.txt:SetText("|cff000000[|cffaa2222?|cff000000]")
+
+  pfQuest.buttonLanguage = pfQuest.buttonLanguage or CreateFrame("Button", "pfQuestLanguage", dockFrame)
+  pfQuest.buttonLanguage:SetWidth(75)
+  pfQuest.buttonLanguage:SetHeight(15)
+  pfQuest.buttonLanguage:SetPoint("RIGHT", pfQuest.buttonOnline, "LEFT", 0, 0)
+
+  pfQuest.buttonLanguage.txt = pfQuest.buttonLanguage:CreateFontString("pfQuestIDButton", "HIGH", "GameFontWhite")
+  pfQuest.buttonLanguage.txt:SetAllPoints(pfQuest.buttonLanguage)
+  pfQuest.buttonLanguage.txt:SetJustifyH("RIGHT")
+  pfQuest.buttonLanguage.txt:SetText("|cff000000[|cff333333Translate|cff000000]")
+
+  pfQuest.buttonLanguage:SetScript("OnClick", function()
+    UIDropDownMenu_Initialize(self, function()
+      local func = function() pfQuest.translate = this.value end
+      local info = {}
+      info.text = "|cffaaaaaaReset Language"
+      info.value = nil
+      info.func = func
+      UIDropDownMenu_AddButton(info);
+
+      for loc, caption in pairs(pfDB.locales) do
+        local info = {}
+        info.text = caption
+        info.value = loc
+        info.func = func
+        UIDropDownMenu_AddButton(info);
+      end
+    end)
+    ToggleDropDownMenu(1, nil, self, "cursor", 3, -3)
+  end)
+
+  pfQuest.buttonLanguage:SetScript("OnUpdate", function()
+    local id = pfQuest.buttonOnline:GetID()
+    local lang = pfQuest.translate
+
+    if this.translate ~= pfQuest.translate then
+      pfQuest.buttonLanguage.txt:SetText("|cff000000[|cff3333ff" .. (pfDB.locales[pfQuest.translate] or "|cff333333Translate") .. "|cff000000]")
+      this.translate = pfQuest.translate
+      QuestLog_UpdateQuestDetails(true)
+      return
+    end
+
+    if id and pfDB["quests"][lang] and pfDB["quests"][lang][id] then
+      QuestLogQuestTitle:SetText(pfDatabase:FormatQuestText(pfDB["quests"][lang][id]["T"]))
+      QuestLogObjectivesText:SetText(pfDatabase:FormatQuestText(pfDB["quests"][lang][id]["O"]))
+      QuestLogQuestDescription:SetText(pfDatabase:FormatQuestText(pfDB["quests"][lang][id]["D"]))
+    end
+  end)
 
   pfQuest.buttonShow = pfQuest.buttonShow or CreateFrame("Button", "pfQuestShow", dockFrame, "UIPanelButtonTemplate")
   pfQuest.buttonShow:SetWidth(70)
