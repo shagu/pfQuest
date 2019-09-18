@@ -6,6 +6,16 @@ pfDatabase = {}
 local loc = GetLocale()
 local dbs = { "items", "quests", "objects", "units", "zones", "professions" }
 
+pfDB.locales = {
+  ["enUS"] = "English",
+  ["koKR"] = "Korean",
+  ["frFR"] = "French",
+  ["deDE"] = "German",
+  ["zhCN"] = "Chinese",
+  ["esES"] = "Spanish",
+  ["ruRU"] = "Russian",
+}
+
 -- Patch databases to further expansions
 local function patchtable(base, diff)
   for k, v in pairs(diff) do
@@ -23,10 +33,14 @@ local loc_core, loc_update
 for _, exp in pairs({ "-tbc", "-wotlk" }) do
   for _, db in pairs(dbs) do
     if pfDB[db]["data"..exp] then
-      loc_core = pfDB[db][loc] or pfDB[db]["enUS"]
-      loc_update = pfDB[db][loc..exp] or pfDB[db]["enUS"..exp]
       patchtable(pfDB[db]["data"], pfDB[db]["data"..exp])
-      patchtable(loc_core, loc_update)
+    end
+
+    for loc, _ in pairs(pfDB.locales) do
+      if pfDB[db][loc] and pfDB[db][loc..exp] then
+        loc_update = pfDB[db][loc..exp] or pfDB[db]["enUS"..exp]
+        patchtable(pfDB[db][loc], loc_update)
+      end
     end
   end
 
