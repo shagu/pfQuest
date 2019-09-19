@@ -406,8 +406,7 @@ function tracker.ButtonAdd(title, node)
     if node.addon ~= "PFDB" then return end
   end
 
-  -- use maxcount + 1 as default id
-  local id = table.getn(tracker.buttons)+1
+  local id
 
   -- skip duplicate titles
   for bid, button in pairs(tracker.buttons) do
@@ -422,9 +421,14 @@ function tracker.ButtonAdd(title, node)
     end
   end
 
-  -- detect a reusable button
-  for bid, button in pairs(tracker.buttons) do
-    if button.empty then id = bid break end
+  if not id then
+    -- use maxcount + 1 as default id
+    id = table.getn(tracker.buttons)+1
+
+    -- detect a reusable button
+    for bid, button in pairs(tracker.buttons) do
+      if button.empty then id = bid break end
+    end
   end
 
   -- create one if required
