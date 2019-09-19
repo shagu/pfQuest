@@ -672,8 +672,9 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   if meta["qlogid"] then
     local objectives = GetNumQuestLeaderBoards(meta["qlogid"])
     local _, _, _, _, _, complete = compat.GetQuestLogTitle(meta["qlogid"])
+    if complete then return maps end
 
-    if objectives and not complete then
+    if objectives then
       for i=1, objectives, 1 do
         local text, type, done = GetQuestLogLeaderBoard(i, meta["qlogid"])
 
@@ -702,11 +703,6 @@ function pfDatabase:SearchQuestID(id, meta, maps)
 
   -- search quest-objectives
   if quests[id]["obj"] then
-
-    if meta["qlogid"] then
-      local _, _, _, _, _, complete = compat.GetQuestLogTitle(meta["qlogid"])
-      if complete then return maps end
-    end
 
     -- units
     if quests[id]["obj"]["U"] then
