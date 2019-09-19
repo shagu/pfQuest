@@ -1,13 +1,37 @@
 VERSION = $(shell git describe --abbrev=0 --tags)
 GITREV = $(shell git describe --tags)
 
-all: clean stripdb enUS koKR frFR deDE zhCN esES ruRU enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc
+all: clean stripdb full enUS koKR frFR deDE zhCN esES ruRU full-tbc enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc
 
 clean:
 	rm -rfv release
 
 stripdb:
 	toolbox/compressdb.sh
+
+full:
+	$(eval LOCALE := $(shell echo $@))
+	@echo "===== building ${LOCALE} ====="
+	mkdir -p release/$@/pfQuest/
+	cp -rf compat db img init *.toc *.lua LICENSE README.md release/$@/pfQuest/
+
+	# generate new toc file
+	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
+	echo $(GITREV) > release/$@/pfQuest/gitrev.txt
+
+	# remove tbc data
+	find release/$@/pfQuest -name "*-tbc*" -exec rm {} \;
+
+full-tbc:
+	$(eval LOCALE := $(shell echo $@))
+	@echo "===== building ${LOCALE} ====="
+	mkdir -p release/$@/pfQuest-tbc/
+	cp -rf compat db img init *.toc *.lua LICENSE README.md release/$@/pfQuest-tbc/
+
+	# generate new toc file
+	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-tbc/pfQuest.toc
+	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-tbc/pfQuest-tbc.toc
+	echo $(GITREV) > release/$@/pfQuest-tbc/gitrev.txt
 
 enUS koKR frFR deDE zhCN esES ruRU:
 	$(eval LOCALE := $(shell echo $@))

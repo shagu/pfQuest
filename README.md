@@ -7,42 +7,42 @@ The translations are taken from [MaNGOS Extras](https://github.com/MangosExtras)
 
 pfQuest is the successor of [ShaguQuest](https://shagu.org/ShaguQuest/) and has been entirely written from scratch. In comparison to [ShaguQuest](https://shagu.org/ShaguQuest/), this addon does not depend on any specific map- or questlog addon. It's designed to support the default interface aswell as every other addon. In case you experience any addon conflicts, please add an issue to the bugtracker.
 
+# Downloads
 You can view the [[Latest Changes]](https://gitlab.com/shagu/pfQuest/commits/master) to see what has changed recently.
 
-# Downloads
-## Complete Version
-The complete version includes databases of all languages and client expansions. Based on the folder name, this will launch in either vanilla or tbc mode. Due to the amount of included data, this snapshot will lead to a higher RAM/Disk-Usage and slightly increased loading times. But nowadays where people having gigabytes of RAM and storage, having an overhead of a few megabytes shouldn't harm the system at all. However, if your PC is very old and slow, you better choose a compact build.
+## World of Warcraft: **Vanilla**
+1. **[[Download pfQuest]](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=full)** (\*)
+2. Unpack the Zip-file
+3. Move the `pfQuest` folder into `Wow-Directory\Interface\AddOns`
+4. Restart Wow
 
-1. Download **[Complete Version](https://gitlab.com/shagu/pfQuest/-/archive/master/pfQuest-master.zip)**
-2. Unpack the Zip file
-3. Rename the folder "pfQuest-master" to "pfQuest" (or "pfQuest-tbc")
-4. Copy "pfQuest" (or "pfQuest-tbc") into Wow-Directory\Interface\AddOns
-5. Restart Wow
+\*) *You can optionally pick one of the slim version downloads instead. Those version are limited to only one specific language: [English](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS),
+[Korean](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR),
+[French](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR),
+[German](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=deDE),
+[Chinese](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=zhCN),
+[Spanish](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=esES),
+[Russian](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU)*
 
-## Compact Version
-A compact build does only include the database of a given language. When using those builds, it's mandatory to have a gameclient and a server, that both support the language. Otherwise, e.g when the server is always returning english quest texts, you'll need to use the complete version instead.
+## World of Warcraft: **The Burning Crusade**
+1. **[[Download pfQuest]](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=full-tbc)** (\*)
+2. Unpack the Zip-file
+3. Move the `pfQuest-tbc` folder into `Wow-Directory\Interface\AddOns`
+4. Restart Wow
 
-* **English** (*enUS*):
-  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS) |
-  [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS-tbc)
-* **Korean** (*koKR*):
-  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR) |
-  [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR-tbc)
-* **French** (*frFR*):
-  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR) |
-  [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR-tbc)
-* **German** (*deDE*):
-  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=deDE) |
-  [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=deDE-tbc)
-* **Chinese** (*zhCN*):
-  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=zhCN) |
-  [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=zhCN-tbc)
-* **Spanish** (*esES*):
-  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=esES) |
-  [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=esES-tbc)
-* **Russian** (*ruRU*):
-  [Vanilla (1.12.1)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU) |
-  [The Burning Crusade (2.4.3)](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU-tbc)
+\*) *You can optionally pick one of the slim version downloads instead. Those version are limited to only one specific language: [English](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS-tbc),
+[Korean](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR-tbc),
+[French](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR-tbc),
+[German](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=deDE-tbc),
+[Chinese](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=zhCN-tbc),
+[Spanish](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=esES-tbc),
+[Russian](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU-tbc)*
+
+## Development Version
+The development version includes databases of all languages and client expansions. Based on the folder name, this will launch in both vanilla and tbc mode. Due to the amount of included data, this snapshot will lead to a higher RAM/Disk-Usage and slightly increased loading times.
+
+- Download via Git: [`https://gitlab.com/shagu/pfQuest.git`](https://gitlab.com/shagu/pfQuest.git)
+- Download via Browser: **[Zip File](https://gitlab.com/shagu/pfQuest/-/archive/master/pfQuest-master.zip)**
 
 # Map & Minimap Nodes
 <img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/map-quests.png" width="55.35%" align="left">
@@ -60,15 +60,12 @@ The addon features 4 different modes that define how the new or updated questobj
 Every quest will be automatically shown and updated on the map.
 
 ### Option: Tracked Quests
-
 Only tracked quests (Shift-Click) will be automatically shown and updated on the map.
 
 ### Option: Manual Selection
-
 Only quests that have been manually displayed ("Show"-Button in the Questlog) will resident on the map.
 
 ### Option: Hide Quests
-
 Nothing will be shown on the map, except for nodes that have been manually added via the DB-Browser.
 
 

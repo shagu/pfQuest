@@ -23,6 +23,9 @@ before_script:
     paths:
       - pfQuest-tbc/
 
+full:
+  <<: [*build]
+
 enUS:
   <<: [*build]
 
@@ -42,6 +45,9 @@ esES:
   <<: [*build]
 
 ruRU:
+  <<: [*build]
+
+full-tbc:
   <<: [*build]
 
 enUS-tbc:
