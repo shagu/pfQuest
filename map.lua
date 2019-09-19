@@ -138,6 +138,7 @@ end
 
 function pfMap:ShowTooltip(meta, tooltip)
   local catch = nil
+  local catch_obj = nil
   local tooltip = tooltip or GameTooltip
 
   -- add quest data
@@ -154,7 +155,6 @@ function pfMap:ShowTooltip(meta, tooltip)
         local symbol = ( complete or objectives == 0 ) and "|cff555555[|cffffcc00?|cff555555]|r " or "|cff555555[|cffffcc00!|cff555555]|r "
         tooltip:AddLine(symbol .. meta["quest"], 1, 1, 0)
 
-        local foundObjective = nil
         if objectives then
           for i=1, objectives, 1 do
             local text, type, finished = GetQuestLogLeaderBoard(i, qid)
@@ -163,7 +163,7 @@ function pfMap:ShowTooltip(meta, tooltip)
               -- kill
               local i, j, monsterName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_MONSTERS_KILLED))
               if meta["spawn"] == monsterName then
-                foundObjective = true
+                catch_obj = true
                 local r,g,b = pfMap.tooltip:GetColor(objNum, objNeeded)
                 tooltip:AddLine("|cffaaaaaa- |r" .. monsterName .. ": " .. objNum .. "/" .. objNeeded, r, g, b)
               end
@@ -173,7 +173,7 @@ function pfMap:ShowTooltip(meta, tooltip)
 
               for mid, item in pairs(meta["item"]) do
                 if item == itemName then
-                  foundObjective = true
+                  catch_obj = true
                   local r,g,b = pfMap.tooltip:GetColor(objNum, objNeeded)
                   local dr,dg,db = pfMap.tooltip:GetColor(tonumber(meta["droprate"]), 100)
                   local lootcolor = string.format("%02x%02x%02x", dr * 255,dg * 255, db * 255)
@@ -186,7 +186,7 @@ function pfMap:ShowTooltip(meta, tooltip)
 
               for mid, item in pairs(meta["item"]) do
                 if item == itemName then
-                  foundObjective = true
+                  catch_obj = true
                   local r,g,b = pfMap.tooltip:GetColor(objNum, objNeeded)
                   local sellcount = tonumber(meta["sellcount"]) > 0 and " |cff555555[|cffcccccc" .. meta["sellcount"] .. "x" .. "|cff555555]" or ""
                   tooltip:AddLine("|cffaaaaaa- |cffffffff" .. pfQuest_Loc["Buy"] .. ": |r" .. itemName .. ": " .. objNum .. "/" .. objNeeded .. sellcount, r, g, b)
@@ -196,7 +196,7 @@ function pfMap:ShowTooltip(meta, tooltip)
           end
         end
 
-        if not foundObjective and meta["qlvl"] and meta["texture"] then
+        if not catch_obj and meta["qlvl"] and meta["texture"] then
           local qlvlstr = pfQuest_Loc["Level"] .. ": " .. pfMap:HexDifficultyColor(meta["qlvl"]) .. meta["qlvl"] .. "|r"
           local qminstr = meta["qmin"] and " / " .. pfQuest_Loc["Required"] .. ": " .. pfMap:HexDifficultyColor(meta["qmin"], true) .. meta["qmin"] .. "|r"  or ""
           tooltip:AddLine("|cffaaaaaa- |r" .. qlvlstr .. qminstr , .8,.8,.8)
@@ -205,16 +205,19 @@ function pfMap:ShowTooltip(meta, tooltip)
     end
 
     if not catch then
+      tooltip:AddLine("|cff555555[|cffffcc00!|cff555555]|r " .. meta["quest"], 1, 1, .7)
+    end
+
+    if not catch_obj then
       -- handle inactive quests
       local catchFallback = nil
-      tooltip:AddLine("|cff555555[|cffffcc00!|cff555555]|r " .. meta["quest"], 1, 1, .7)
 
       if meta["item"] and meta["item"][1] and meta["droprate"] then
         for mid, item in pairs(meta["item"]) do
           catchFallback = true
-          local dr,dg,db = pfMap.tooltip:GetColor(tonumber(meta["droprate"]), 100)
-          local lootcolor = string.format("%02x%02x%02x", dr * 255,dg * 255, db * 255)
-          tooltip:AddLine("|cffaaaaaa- |r" .. pfQuest_Loc["Loot"] .. ": " .. item .. " |cff555555[|cff" .. lootcolor .. meta["droprate"] .. "%|cff555555]", 1, .5, .5)
+          local dr, dg, db = pfMap.tooltip:GetColor(tonumber(meta["droprate"]), 100)
+          local lootcolor = string.format("%02x%02x%02x", dr * 255, dg * 255, db * 255)
+          tooltip:AddLine("|cffaaaaaa- |r" .. pfQuest_Loc["Loot"] .. ": " .. item .. " |cff555555[|cff" .. lootcolor .. meta["droprate"] .. "%|cff555555]", .7, .7, .7)
         end
       end
 
@@ -222,13 +225,13 @@ function pfMap:ShowTooltip(meta, tooltip)
         for mid, item in pairs(meta["item"]) do
           catchFallback = true
           local sellcount = tonumber(meta["sellcount"]) > 0 and " |cff555555[|cffcccccc" .. meta["sellcount"] .. "x" .. "|cff555555]" or ""
-          tooltip:AddLine("|cffaaaaaa- |r" .. pfQuest_Loc["Buy"] .. ": " .. item .. sellcount, 1, .5, .5)
+          tooltip:AddLine("|cffaaaaaa- |r" .. pfQuest_Loc["Buy"] .. ": " .. item .. sellcount, .7, .7, .7)
         end
       end
 
       if not catchFallback and meta["spawn"] and not meta["texture"] then
         catchFallback = true
-        tooltip:AddLine("|cffaaaaaa- |r" .. pfQuest_Loc["Kill"] .. ": " .. meta["spawn"], 1,.5,.5)
+        tooltip:AddLine("|cffaaaaaa- |r" .. pfQuest_Loc["Kill"] .. ": " .. meta["spawn"], .7,.7,.7)
       end
 
       if not catchFallback and meta["texture"] and meta["qlvl"] then
