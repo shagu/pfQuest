@@ -36,7 +36,7 @@ full-tbc:
 enUS koKR frFR deDE zhCN esES ruRU:
 	$(eval LOCALE := $(shell echo $@))
 	@echo "===== building ${LOCALE} ====="
-	mkdir -p release/$@/pfQuest/init release/$@/pfQuest/db/{enUS,${LOCALE}}
+	mkdir -p release/$@/pfQuest/init release/$@/pfQuest/db/enUS release/$@/pfQuest/db/${LOCALE}
 	cp -rf compat img release/$@/pfQuest/
 
 	cp -f $(shell ls db/*.lua | grep -v "\-tbc") release/$@/pfQuest/db
@@ -60,7 +60,7 @@ enUS koKR frFR deDE zhCN esES ruRU:
 enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc:
 	$(eval LOCALE := $(shell echo $@ | sed 's/-tbc//g'))
 	@echo "===== building ${LOCALE} ====="
-	mkdir -p release/$@/pfQuest-tbc/init release/$@/pfQuest-tbc/db/{enUS,${LOCALE}}
+	mkdir -p release/$@/pfQuest-tbc/init release/$@/pfQuest-tbc/db/enUS release/$@/pfQuest-tbc/db/${LOCALE}
 	cp -rf compat img release/$@/pfQuest-tbc/
 
 	cp -f $(shell ls db/*.lua) release/$@/pfQuest-tbc/db
