@@ -335,7 +335,7 @@ function tracker.ButtonEvent(self)
           self.objectives[i]:SetText(string.format("|cffffffff- %s:|r %s/%s", obj, objNum, objNeeded))
         else
           self.objectives[i]:SetTextColor(.8,.8,.8)
-          self.objectives[i]:SetText("|cffffff- " .. text)
+          self.objectives[i]:SetText("|cffffffff- " .. text)
         end
 
         self.objectives[i]:Show()
