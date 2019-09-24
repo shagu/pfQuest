@@ -59,6 +59,7 @@ tracker:SetWidth(200)
 
 tracker:SetMovable(true)
 tracker:EnableMouse(true)
+tracker:SetClampedToScreen(true)
 tracker:RegisterEvent("PLAYER_ENTERING_WORLD")
 tracker:SetScript("OnEvent", function()
   if pfQuest_config["tracker"] and pfQuest_config["tracker"] == "0" then
@@ -430,6 +431,8 @@ function tracker.ButtonAdd(title, node)
       if button.empty then id = bid break end
     end
   end
+
+  if id > 25 then return end
 
   -- create one if required
   if not tracker.buttons[id] then
