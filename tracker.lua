@@ -107,16 +107,17 @@ end)
 tracker.buttons = {}
 tracker.mode = "QUEST_TRACKING"
 
-pfUI.api.CreateBackdrop(tracker, nil, nil, .5)
+tracker.backdrop = CreateFrame("Frame", nil, tracker)
+tracker.backdrop:SetAllPoints(tracker)
+tracker.backdrop.bg = tracker.backdrop:CreateTexture(nil, "BACKGROUND")
+tracker.backdrop.bg:SetTexture(0,0,0,.2)
+tracker.backdrop.bg:SetAllPoints()
 
 do -- button panel
   tracker.panel = CreateFrame("Frame", nil, tracker.backdrop)
   tracker.panel:SetPoint("TOPLEFT", 0, 0)
   tracker.panel:SetPoint("TOPRIGHT", 0, 0)
   tracker.panel:SetHeight(panelheight)
-  tracker.panel.bg = tracker.panel:CreateTexture(nil, "LOW")
-  tracker.panel.bg:SetTexture(0,0,0,.5)
-  tracker.panel.bg:SetAllPoints()
 
   local anchors = {}
   local buttons = {}
