@@ -83,14 +83,16 @@ tracker:SetScript("OnUpdate", function()
       this.strata = "BACKGROUND"
     end
   end
-end)
 
-tracker:SetScript("OnUpdate", function()
   local alpha = this.backdrop:GetAlpha()
-  if MouseIsOver(this) and alpha < 1 then
-    this.backdrop:SetAlpha(alpha + .1)
-  elseif not MouseIsOver(this) and alpha > .25 then
-    this.backdrop:SetAlpha(alpha - .1)
+  local content = tracker.buttons[1] and not tracker.buttons[1].empty and true or nil
+  local goal = ( content and not MouseIsOver(this) ) and 0 or not content and not MouseIsOver(this) and 0.5 or 1
+  if ceil(alpha*10) ~= ceil(goal*10)then
+    this.backdrop:SetAlpha(alpha + ((goal - alpha) > 0 and .1 or (goal - alpha) < 0 and -.1 or 0))
+  end
+
+  if QuestWatchFrame:IsShown() then
+    QuestWatchFrame:Hide()
   end
 end)
 
