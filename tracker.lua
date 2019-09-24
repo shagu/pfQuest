@@ -245,6 +245,8 @@ end
 local function trackersort(a,b)
   if a.empty then
     return false
+  elseif ( a.tracked and 1 or -1 ) ~= (b.tracked and 1 or -1) then
+    return ( a.tracked and 1 or -1 ) > (b.tracked and 1 or -1)
   elseif ( a.level or -1 ) ~= ( b.level or -1 ) then
     return (a.level or -1) > (b.level or -1)
   elseif ( a.perc or -1 ) ~= ( b.perc or -1 ) then
@@ -354,10 +356,11 @@ function tracker.ButtonEvent(self)
     local r,g,b = pfMap.tooltip:GetColor(cur, max)
     local colorperc = string.format("|cff%02x%02x%02x", r*255, g*255, b*255)
 
+    self.tracked = watched
     self.perc = percent
     self.text:SetText(string.format("%s |cffaaaaaa(%s%s%%|cffaaaaaa)", title or "", colorperc or "", ceil(percent)))
     self.text:SetTextColor(color.r, color.g, color.b)
-    self.tooltip = "|cff33ffcc<Click>|r Unfold/Fold Objectives\n|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
+    self.tooltip = "|cff33ffcc<Click>|r Unfold/Fold Objectives\n|cff33ffcc<Right-Click>|r Show In QuestLog\n|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
   elseif tracker.mode == "GIVER_TRACKING" then
     local level = node.qlvl or node.level or UnitLevel("player")
     local color = GetDifficultyColor(level)
@@ -420,7 +423,7 @@ function tracker.ButtonAdd(title, node)
   for bid, button in pairs(tracker.buttons) do
     if button.title and button.title == title then
       -- prefer node icons over questgivers
-      if not node.texture and button.node.texture then
+      if node.dummy or ( not node.texture and button.node.texture ) then
         id = bid
         break
       else
@@ -494,6 +497,28 @@ function tracker.Reset()
     button.empty = true
     button:SetHeight(0)
     button:Hide()
+  end
+
+  -- add tracked quests
+  local _, numQuests = GetNumQuestLogEntries()
+  local found = 0
+
+  -- iterate over all quests
+  for qlogid=1,40 do
+    local title, level, tag, header, collapsed, complete = compat.GetQuestLogTitle(qlogid)
+    local watched = IsQuestWatched(qlogid)
+
+    if title and not header then
+      if watched then
+        local img = complete and pfQuestConfig.path.."\\img\\complete_c" or pfQuestConfig.path.."\\img\\complete"
+        pfQuest.tracker.ButtonAdd(title, { dummy = true, addon = "PFQUEST", texture = img })
+      end
+
+      found = found + 1
+      if found >= numQuests then
+        break
+      end
+    end
   end
 end
 
