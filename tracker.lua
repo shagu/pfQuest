@@ -209,7 +209,12 @@ function tracker.ButtonUpdate()
 end
 
 function tracker.ButtonClick()
-  if IsShiftKeyDown() then
+  if arg1 == "RightButton" and pfQuest.questlog[this.title] and pfQuest.questlog[this.title].qlogid then
+    -- show questlog
+    HideUIPanel(QuestLogFrame)
+    SelectQuestLogEntry(pfQuest.questlog[this.title].qlogid)
+    ShowUIPanel(QuestLogFrame)
+  elseif IsShiftKeyDown() then
     -- mark as done if node is quest and not in questlog
     if this.node.questid and not this.node.qlogid then
       -- mark as done in history
@@ -461,6 +466,8 @@ function tracker.ButtonAdd(title, node)
     tracker.buttons[id]:RegisterEvent("QUEST_WATCH_UPDATE")
     tracker.buttons[id]:RegisterEvent("QUEST_LOG_UPDATE")
     tracker.buttons[id]:RegisterEvent("QUEST_FINISHED")
+
+    tracker.buttons[id]:RegisterForClicks("LeftButtonUp", "RightButtonUp")
 
     tracker.buttons[id]:SetScript("OnEnter", tracker.ButtonEnter)
     tracker.buttons[id]:SetScript("OnLeave", tracker.ButtonLeave)
