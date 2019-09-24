@@ -737,6 +737,7 @@ function pfMap:UpdateMinimap()
 end
 
 pfMap:RegisterEvent("WORLD_MAP_UPDATE")
+pfMap:RegisterEvent("QUEST_WATCH_UPDATE")
 pfMap:SetScript("OnEvent", pfMap.UpdateNodes)
 pfMap:SetScript("OnUpdate", function()
   if pfMap.queue_update then
