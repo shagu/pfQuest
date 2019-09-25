@@ -394,12 +394,30 @@ function tracker.ButtonEvent(self)
 
   -- resize window and align buttons
   local height = panelheight
+  local width = 100
+
   for bid, button in pairs(tracker.buttons) do
     button:ClearAllPoints()
     button:SetPoint("TOPRIGHT", tracker, "TOPRIGHT", 0, -height)
-    if not button.empty then height = height + button:GetHeight() end
+    button:SetPoint("TOPLEFT", tracker, "TOPLEFT", 0, -height)
+    if not button.empty then
+      height = height + button:GetHeight()
+
+      if button.text:GetStringWidth() > width then
+        width = button.text:GetStringWidth()
+      end
+
+      for id, objective in pairs(button.objectives) do
+        if objective:IsShown() and objective:GetStringWidth() > width then
+          width = objective:GetStringWidth()
+        end
+      end
+    end
   end
+
+  width = min(width, 300) + 30
   tracker:SetHeight(height)
+  tracker:SetWidth(width)
 end
 
 function tracker.ButtonAdd(title, node)
@@ -448,7 +466,6 @@ function tracker.ButtonAdd(title, node)
   -- create one if required
   if not tracker.buttons[id] then
     tracker.buttons[id] = CreateFrame("Button", "pfQuestMapButton"..id, tracker)
-    tracker.buttons[id]:SetWidth(200)
     tracker.buttons[id]:SetHeight(entryheight)
 
     tracker.buttons[id].bg = tracker.buttons[id]:CreateTexture(nil, "BACKGROUND")
