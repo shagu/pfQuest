@@ -325,7 +325,7 @@ function tracker.ButtonEvent(self)
     end
 
     -- expand button to show objectives
-    if unfolded[title] or ( objectives and percent > 0 and percent < 100 ) then
+    if objectives and (unfolded[title] or ( percent > 0 and percent < 100 )) then
       self:SetHeight(entryheight + objectives*12)
 
       for i=1, objectives, 1 do
