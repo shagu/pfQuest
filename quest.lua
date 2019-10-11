@@ -93,9 +93,10 @@ function pfQuest:UpdateQuestlog()
 
     local title, _, _, header, _, complete = compat.GetQuestLogTitle(qlogid)
     local objectives = GetNumQuestLeaderBoards(qlogid)
-    local watched = IsQuestWatched(qlogid)
+    local watched
 
     if title and not header then
+      watched = IsQuestWatched(qlogid)
       -- add new quest to the questlog
       if not pfQuest.questlog[title] then
         local questID = pfDatabase:GetQuestIDs(qlogid)
