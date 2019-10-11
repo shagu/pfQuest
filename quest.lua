@@ -239,6 +239,9 @@ function pfQuest:AddQuestLogIntegration()
     end
 
     if id and pfDB["quests"][lang] and pfDB["quests"][lang][id] then
+      local QuestLogQuestTitle = EQL3_QuestLogQuestTitle or QuestLogQuestTitle
+      local QuestLogObjectivesText = EQL3_QuestLogObjectivesText or QuestLogObjectivesText
+      local QuestLogQuestDescription = EQL3_QuestLogQuestDescription or QuestLogQuestDescription
       QuestLogQuestTitle:SetText(pfDatabase:FormatQuestText(pfDB["quests"][lang][id]["T"]))
       QuestLogObjectivesText:SetText(pfDatabase:FormatQuestText(pfDB["quests"][lang][id]["O"]))
       QuestLogQuestDescription:SetText(pfDatabase:FormatQuestText(pfDB["quests"][lang][id]["D"]))
