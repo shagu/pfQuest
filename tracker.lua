@@ -298,6 +298,7 @@ function tracker.ButtonEvent(self)
   if tracker.mode == "QUEST_TRACKING" then
     local qlogid = pfQuest.questlog[title].qlogid
     local qtitle, level, tag, header, collapsed, complete = compat.GetQuestLogTitle(qlogid)
+    if not qlogid or not qtitle then return end
     local objectives = GetNumQuestLeaderBoards(qlogid)
     local watched = IsQuestWatched(qlogid)
     local color = GetDifficultyColor(level)
