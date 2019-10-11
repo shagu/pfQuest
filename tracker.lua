@@ -524,9 +524,8 @@ function tracker.Reset()
   -- iterate over all quests
   for qlogid=1,40 do
     local title, level, tag, header, collapsed, complete = compat.GetQuestLogTitle(qlogid)
-    local watched = IsQuestWatched(qlogid)
-
     if title and not header then
+      local watched = IsQuestWatched(qlogid)
       if watched then
         local img = complete and pfQuestConfig.path.."\\img\\complete_c" or pfQuestConfig.path.."\\img\\complete"
         pfQuest.tracker.ButtonAdd(title, { dummy = true, addon = "PFQUEST", texture = img })
