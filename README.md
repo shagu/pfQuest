@@ -8,7 +8,7 @@ The translations are taken from [MaNGOS Extras](https://github.com/MangosExtras)
 pfQuest is the successor of [ShaguQuest](https://shagu.org/ShaguQuest/) and has been entirely written from scratch. In comparison to [ShaguQuest](https://shagu.org/ShaguQuest/), this addon does not depend on any specific map- or questlog addon. It's designed to support the default interface aswell as every other addon. In case you experience any addon conflicts, please add an issue to the bugtracker.
 
 # Downloads
-You can view the [[Latest Changes]](https://gitlab.com/shagu/pfQuest/commits/master) to see what has changed recently.
+You can view the [[Latest Changes]](https://github.com/shagu/pfQuest/commits/master) to see what has changed recently.
 
 ## World of Warcraft: **Vanilla**
 1. **[[Download pfQuest]](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=full)** (\*)
@@ -41,8 +41,8 @@ You can view the [[Latest Changes]](https://gitlab.com/shagu/pfQuest/commits/mas
 ## Development Version
 The development version includes databases of all languages and client expansions. Based on the folder name, this will launch in both vanilla and tbc mode. Due to the amount of included data, this snapshot will lead to a higher RAM/Disk-Usage and slightly increased loading times.
 
-- Download via Git: [`https://gitlab.com/shagu/pfQuest.git`](https://gitlab.com/shagu/pfQuest.git)
-- Download via Browser: **[Zip File](https://gitlab.com/shagu/pfQuest/-/archive/master/pfQuest-master.zip)**
+- Download via Git: [`https://github.com/shagu/pfQuest.git`](https://github.com/shagu/pfQuest.git)
+- Download via Browser: **[Zip File](https://github.com/shagu/pfQuest/archive/master.zip)**
 
 # Map & Minimap Nodes
 <img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/map-quests.png" width="55.35%" align="left">
