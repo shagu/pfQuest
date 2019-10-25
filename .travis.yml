@@ -1,0 +1,17 @@
+language: generic
+
+addons:
+  apt:
+    packages:
+      - make
+      - zip
+
+before_deploy:
+  - make
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  skip_cleanup: true
+  file_glob: true
+  file: release/*.zip
