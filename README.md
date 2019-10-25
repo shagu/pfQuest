@@ -11,32 +11,32 @@ pfQuest is the successor of [ShaguQuest](https://shagu.org/ShaguQuest/) and has 
 You can view the [[Latest Changes]](https://github.com/shagu/pfQuest/commits/master) to see what has changed recently.
 
 ## World of Warcraft: **Vanilla**
-1. **[[Download pfQuest]](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=full)** (\*)
+1. **[[Download pfQuest]](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-full.zip)** (\*)
 2. Unpack the Zip-file
 3. Move the `pfQuest` folder into `Wow-Directory\Interface\AddOns`
 4. Restart Wow
 
-\*) *You can optionally pick one of the slim version downloads instead. Those version are limited to only one specific language: [English](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS),
-[Korean](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR),
-[French](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR),
-[German](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=deDE),
-[Chinese](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=zhCN),
-[Spanish](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=esES),
-[Russian](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU)*
+\*) *You can optionally pick one of the slim version downloads instead. Those version are limited to only one specific language: [English](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-enUS.zip),
+[Korean](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-koKR.zip),
+[French](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-frFR.zip),
+[German](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-deDE.zip),
+[Chinese](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-zhCN.zip),
+[Spanish](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-esES.zip),
+[Russian](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-ruRU.zip)*
 
 ## World of Warcraft: **The Burning Crusade**
-1. **[[Download pfQuest]](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=full-tbc)** (\*)
+1. **[[Download pfQuest]](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-full-tbc.zip)** (\*)
 2. Unpack the Zip-file
 3. Move the `pfQuest-tbc` folder into `Wow-Directory\Interface\AddOns`
 4. Restart Wow
 
-\*) *You can optionally pick one of the slim version downloads instead. Those version are limited to only one specific language: [English](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=enUS-tbc),
-[Korean](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=koKR-tbc),
-[French](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=frFR-tbc),
-[German](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=deDE-tbc),
-[Chinese](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=zhCN-tbc),
-[Spanish](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=esES-tbc),
-[Russian](https://gitlab.com/shagu/pfQuest/-/jobs/artifacts/master/download?job=ruRU-tbc)*
+\*) *You can optionally pick one of the slim version downloads instead. Those version are limited to only one specific language: [English](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-enUS-tbc.zip),
+[Korean](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-koKR-tbc.zip),
+[French](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-frFR-tbc.zip),
+[German](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-deDE-tbc.zip),
+[Chinese](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-zhCN-tbc.zip),
+[Spanish](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-esES-tbc.zip),
+[Russian](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-ruRU-tbc.zip)*
 
 ## Development Version
 The development version includes databases of all languages and client expansions. Based on the folder name, this will launch in both vanilla and tbc mode. Due to the amount of included data, this snapshot will lead to a higher RAM/Disk-Usage and slightly increased loading times.
