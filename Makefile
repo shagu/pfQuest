@@ -21,6 +21,7 @@ full:
 
 	# remove tbc data
 	find release/$@/pfQuest -name "*-tbc*" -exec rm {} \;
+	( cd release/$@; zip -qr ../pfQuest-$@.zip pfQuest )
 
 full-tbc:
 	$(eval LOCALE := $(shell echo $@))
@@ -32,6 +33,7 @@ full-tbc:
 	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-tbc/pfQuest.toc
 	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-tbc/pfQuest-tbc.toc
 	echo $(GITREV) > release/$@/pfQuest-tbc/gitrev.txt
+	( cd release/$@; zip -qr ../pfQuest-$@.zip pfQuest-tbc )
 
 enUS koKR frFR deDE zhCN esES ruRU:
 	$(eval LOCALE := $(shell echo $@))
@@ -56,6 +58,7 @@ enUS koKR frFR deDE zhCN esES ruRU:
 	/bin/echo 'init\addon.xml' >> release/$@/pfQuest/pfQuest.toc
 
 	echo $(GITREV) > release/$@/pfQuest/gitrev.txt
+	( cd release/$@; zip -qr ../pfQuest-$@.zip pfQuest )
 
 enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc:
 	$(eval LOCALE := $(shell echo $@ | sed 's/-tbc//g'))
@@ -83,6 +86,7 @@ enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc:
 	/bin/echo 'init\addon.xml' >> release/$@/pfQuest-tbc/pfQuest-tbc.toc
 
 	echo $(GITREV) > release/$@/pfQuest-tbc/gitrev.txt
+	( cd release/$@; zip -qr ../pfQuest-$@.zip pfQuest-tbc )
 
 database:
 	$(MAKE) -C toolbox/ all
