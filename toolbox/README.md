@@ -73,8 +73,8 @@ Open the `extractor.lua` and make sure `local C = vmangos` in line 28 is set to 
     for file in git/MangosOne_Localised/1_LocaleTablePrepare.sql git/MangosOne_Localised/Translations/*/*.sql; do mysql -u mangos -p"mangos" cmangos-tbc < $file; done
 
     mysql -u mangos -p"mangos" cmangos-wotlk < git/mangos-wotlk/sql/base/mangos.sql
-    mysql -u mangos -p"mangos" cmangos-wotlk < git/mangos-wotlk/dbc/sql/base/original_data/Spell.sql
-    mysql -u mangos -p"mangos" cmangos-wotlk < git/mangos-wotlk/dbc/sql/base/cmangos_fixes/Spell.sql
+    mysql -u mangos -p"mangos" cmangos-wotlk < git/mangos-wotlk/sql/base/dbc/original_data/Spell.sql
+    mysql -u mangos -p"mangos" cmangos-wotlk < git/mangos-wotlk/sql/base/dbc/cmangos_fixes/Spell.sql
     mysql -u mangos -p"mangos" cmangos-wotlk < git/wotlk-db/Full_DB/*.sql
     for file in git/MangosTwo_Localised/1_LocaleTablePrepare.sql git/MangosTwo_Localised/Translations/*/*.sql; do mysql -u mangos -p"mangos" cmangos-wotlk < $file; done
 
