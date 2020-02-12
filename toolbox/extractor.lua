@@ -342,7 +342,6 @@ for _, expansion in pairs(expansions) do
 
   local exp = expansion == "vanilla" and "" or "-"..expansion
   local data = "data".. exp
-  local factionlabel = expansion == "vanilla" and "Faction" or "FactionAlliance"
 
   do -- units
     print("- loading units...")
@@ -361,7 +360,6 @@ for _, expansion in pairs(expansions) do
       local minlvl  = creature_template[C.MinLevel]
       local maxlvl  = creature_template[C.MaxLevel]
       local rnk     = creature_template[C.Rank]
-
       local lvl     = (minlvl == maxlvl) and minlvl or minlvl .. "-" .. maxlvl
 
       pfDB["units"][data][entry] = {}
@@ -375,7 +373,7 @@ for _, expansion in pairs(expansions) do
         local faction = {}
         local sql = [[
           SELECT A, H FROM creature_template, pfquest.FactionTemplate_]]..expansion..[[
-          WHERE pfquest.FactionTemplate_]]..expansion..[[.factiontemplateID = creature_template.]] .. C[factionlabel] .. [[
+          WHERE pfquest.FactionTemplate_]]..expansion..[[.factiontemplateID = creature_template.]] .. C.Faction .. [[
           AND creature_template.]] .. C.Entry .. [[ = ]] .. creature_template[C.Entry]
 
         local query = mysql:execute(sql)
