@@ -325,7 +325,7 @@ function pfDatabase:GetBestMap(maps)
 
   -- calculate best map results
   for map, count in pairs(maps or {}) do
-    if count > bestscore then
+    if count > bestscore or ( count == 0 and bestscore == 0 ) then
       bestscore = count
       bestmap   = map
     end
@@ -337,10 +337,11 @@ end
 -- SearchMobID
 -- Scans for all mobs with a specified ID
 -- Adds map nodes for each and returns its map table
-function pfDatabase:SearchMobID(id, meta, maps)
+function pfDatabase:SearchMobID(id, meta, maps, prio)
   if not units[id] or not units[id]["coords"] then return maps end
 
   local maps = maps or {}
+  local prio = prio or 1
 
   for _, data in pairs(units[id]["coords"]) do
     local x, y, zone, respawn = unpack(data)
@@ -360,7 +361,7 @@ function pfDatabase:SearchMobID(id, meta, maps)
       meta["spawntype"] = "Unit"
       meta["respawn"] = respawn > 0 and SecondsToTime(respawn)
 
-      maps[zone] = maps[zone] and maps[zone] + 1 or 1
+      maps[zone] = maps[zone] and maps[zone] + prio or prio
       pfMap:AddNode(meta)
     end
   end
@@ -413,10 +414,11 @@ end
 
 -- Scans for all objects with a specified ID
 -- Adds map nodes for each and returns its map table
-function pfDatabase:SearchObjectID(id, meta, maps)
+function pfDatabase:SearchObjectID(id, meta, maps, prio)
   if not objects[id] or not objects[id]["coords"] then return maps end
 
   local maps = maps or {}
+  local prio = prio or 1
 
   for _, data in pairs(objects[id]["coords"]) do
     local x, y, zone, respawn = unpack(data)
@@ -436,7 +438,7 @@ function pfDatabase:SearchObjectID(id, meta, maps)
       meta["spawntype"] = "Object"
       meta["respawn"] = respawn and SecondsToTime(respawn)
 
-      maps[zone] = maps[zone] and maps[zone] + 1 or 1
+      maps[zone] = maps[zone] and maps[zone] + prio or prio
       pfMap:AddNode(meta)
     end
   end
@@ -603,7 +605,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           meta = meta or {}
           meta["layer"] = meta["layer"] or 4
           meta["texture"] = pfQuestConfig.path.."\\img\\available_c"
-          maps = pfDatabase:SearchMobID(unit, meta, maps)
+          maps = pfDatabase:SearchMobID(unit, meta, maps, 0)
         end
       end
 
@@ -612,7 +614,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
         for _, object in pairs(quests[id]["start"]["O"]) do
           meta = meta or {}
           meta["texture"] = pfQuestConfig.path.."\\img\\available_c"
-          maps = pfDatabase:SearchObjectID(object, meta, maps)
+          maps = pfDatabase:SearchObjectID(object, meta, maps, 0)
         end
       end
     end
@@ -635,7 +637,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           else
             meta["texture"] = pfQuestConfig.path.."\\img\\complete_c"
           end
-          maps = pfDatabase:SearchMobID(unit, meta, maps)
+          maps = pfDatabase:SearchMobID(unit, meta, maps, 0)
         end
       end
 
@@ -656,7 +658,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
             meta["texture"] = pfQuestConfig.path.."\\img\\complete_c"
           end
 
-          maps = pfDatabase:SearchObjectID(object, meta, maps)
+          maps = pfDatabase:SearchObjectID(object, meta, maps, 0)
         end
       end
     end
