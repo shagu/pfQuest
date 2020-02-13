@@ -645,7 +645,7 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "선장 샌더스의 숨겨진 보물",
   },
   [140] = {
-    ["D"] = "Sure enough, deep within the Old Jug there is another clue to Sander\'s treasure.  The ink has run in some places and the paper smells like whiskey but you can make out some of the text:  Now that ye found me ol\' whiskey jug, you\'re almost to the treasure!  Just face West from the bottle and walk down to the shore.  Once ye get to the water, keep going!  Swim straight west till you find the island with me treasure chest!",
+    ["D"] = "그가 적어 놓은 대로, 낡은 단지 안 깊은 곳에 샌더스의 보물에 대한 또 다른 단서가 들어 있습니다. 잉크를 쏟은 자국이 있고 종이에서는 위스키 냄새가 나지만 다음과 같은 내용을 읽을 수 있습니다. \"이제 내 위스키 단지를 찾았으니 보물도 거의 다 찾았다고 할 수 있소! 서쪽으로 간 다음 해변으로 내려가시오. 바다에 이르면 계속 앞으로 가시오! 보물 상자가 있는 섬이 보일 때까지 서쪽으로 계속 헤엄쳐 가시오.\"",
     ["O"] = "보물을 얻기 위해 샌더스 선장의 보물 상자를 찾아 열어야 합니다.",
     ["T"] = "선장 샌더스의 숨겨진 보물",
   },
@@ -1275,7 +1275,7 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "저주받은 함대",
   },
   [271] = {
-    ["D"] = "I don\'t suppose you\'d be interested in a little payback for His Boldness? Daryl does have some skill, it pains me to say.$B$BA year ago, a large bear had been the target of the Farstrider Lodge, but none of the hunters had any luck with him. So, Daryl thought he\'d try his hand against him. All he had to show for his effort was that ugly scar over his eye.$B$BKill the bear, and I\'m sure even Daryl would be speechless for once.$B$BThe bear, Ol\' Sooty, can be found around his lair in the hills over Thelsamar.",
+    ["D"] = "거만한 다릴의 콧대를 꺾을 수 있는 일이 있는데 혹시 관심 있으세요? 인정하기는 싫지만, 다릴이 잘난 체가 심하긴 해도 기술은 뛰어나잖아요.$B$B1년 전 큰 곰 한 마리가 원정순찰대 오두막의 표적이 된 적이 있었는데, 어떤 사냥꾼도 그 괴물을 잡지는 못했죠. 물론 다릴도 온 힘을 다했지만 얻은 거라곤 눈 위의 그 흉한 상처뿐이었어요.$B$B그 곰을 잡으면 다릴도 잠시 할 말을 잃을 거예요.$B$B그 곰의 이름은 큰곰 숯검댕이. 북쪽 굴 안에 있는 놈의 소굴 근처에 있어요.",
     ["O"] = "Kill Ol\' Sooty then show your handiwork to Daryl the Youngling at the Farstrider Lodge.",
     ["T"] = "바이린의 복수",
   },
@@ -1351,7 +1351,7 @@ pfDB["quests"]["koKR"] = {
   },
   [286] = {
     ["D"] = "After pulling the barrel free from the muck and opening it, a silvery figurine is found packed in fine straw.  It depicts a young, long-haired Paladin with hammer upraised.$B$BThis must be the Menethil Statuette!  You must now return it to Karl Boran in Menethil Harbor.",
-    ["O"] = "Bring Karl Boran the Menethil Statuette.",
+    ["O"] = "저습지의 메네실 항구에 있는 칼 보란에게 메네실 조각상을 가져가야 합니다.",
     ["T"] = "Return the Statuette",
   },
   [287] = {
@@ -1381,7 +1381,7 @@ pfDB["quests"]["koKR"] = {
   },
   [292] = {
     ["D"] = "Opening the chest reveals a blackened orb, pulsing with an eerie light.  It is the treasure of which Fitzsimmons spoke: a Cursed Eye of Paleth.$B$BTake the Cursed Eye of Paleth to the dwarven priest Glorin Steelbrow, in Menethil Harbor.  Ask him how to remove the Eye\'s curse.",
-    ["O"] = "Bring the Cursed Eye of Paleth to Glorin Steelbrow.",
+    ["O"] = "저습지의 메네실 항구에 있는 글로린 스틸브라우에게 팔레스의 저주받은 눈을 가져가야 합니다.",
     ["T"] = "팔레스의 눈",
   },
   [293] = {
@@ -3131,7 +3131,7 @@ pfDB["quests"]["koKR"] = {
   },
   [657] = {
     ["D"] = "<Quae begins to go through the folder.>$B$BThis IS interesting. Seems Apothecary Jorell has been working on some deadly experiments here at Go\'Shek. Not sure what that has to do with Hillsbrad, but Phin wouldn\'t like it if we let it continue.$B$BWe had a run-in with some orcs while you were gone, and I\'m not in good enough shape to help Kinelory. If you\'re up for it, she\'s going to need some protection when she goes down to the farm to steal whatever research Jorell still hasn\'t sent to Tarren Mill.",
-    ["O"] = "Speak to Kinelory.",
+    ["O"] = "아라시 고원의 고셰크 농장에 있는 키넬로리와 대화해야 합니다.",
     ["T"] = "새로운 역병의 징조?",
   },
   [658] = {
@@ -4220,7 +4220,7 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "최고의 무기",
   },
   [894] = {
-    ["D"] = "The Venture Company set up a small research facility far to the north of here, southwest of the Sludge Fen. I don\'t know very much about what they\'re doing, but did manage to discover that they\'re experimenting with something called a \"samophlange\".$B$BNow what the heck is a samophlange? Well, whatever it is, I want to examine it, so I need someone to go get it.$B$BI obtained a copy of their control system operating manual, you should be able to figure out how to disengage the samophlange from it.",
+    ["D"] = "투자개발회사는 여기서 서쪽에, 그러니까 진흙 늪에 있는 기름 발굴현장 바로 옆에 작은 연구 시설을 가지고 있어. 정확히 어떤 일을 하고 있는지는 잘 모르겠지만 사모플랜지라는 걸 가지고 실험을 하고 있다는 것만 알아냈지.$B$B그런데 대체 사모플랜지라는 게 뭔지 모르겠단 말이야. 누군가 구해다 주기만 해준다면 조사해 보고 싶은데...$B$B제어장치 조작설명서를 한 부 구했으니까 자네가 한번 읽어보면 사모플랜지를 어떻게 분리해내야 하는지 알 수 있을 거야.",
     ["O"] = "Access the control console at the Venture Company research site.",
     ["T"] = "사모플랜지",
   },
@@ -4740,8 +4740,8 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "루젤",
   },
   [1010] = {
-    ["D"] = "There is a plant that once grew in the old ruins of Bathran\'s Haunt to the north.  The plant was called Bathran\'s Hair and was known to cure ailments of the spirit.$B$BThere is a sick child in the village, and I believe it is more than just a physical illness.  Will you go to Bathran\'s Haunt and search it for Bathran\'s Hair?  I may need it to properly treat the child.$B$BBathran\'s Haunt lies north of Maestra\'s Post and just south of the border to Darkshore.",
-    ["O"] = "Bring 5 Bathran\'s Hair to Orendil Broadleaf in Ashenvale.",
+    ["D"] = "길 건너 동쪽에 있는 배스랜 서식지의 오래된 폐허에서 자라는 풀이 있소. 배스랜모초라는 약초인데, 영혼의 병을 치료한다고 알려졌다오.$B$B그런데 지금 호드가 그곳에서 약초를 악한 목적으로 사용하려고 마구 캐내고 있소.$B$B아스트라나르에 병든 아이가 하나 있는데, 내가 보기엔 단순히 몸에만 병이 든 것은 아닌 것 같소. 스승님께 그 아이를 치료할 방법을 찾아보겠다고 약속드렸지만, 나는 싸우는 방법을 모르오.$B$B그대가 배스랜 서식지로 가서 배스랜모초를 좀 찾아다 주지 않겠소?",
+    ["O"] = "배스랜모초 8개를 수집해야 합니다.",
     ["T"] = "배스랜모초",
   },
   [1011] = {
@@ -4750,8 +4750,8 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "포세이큰의 역병",
   },
   [1012] = {
-    ["D"] = "When I struggled with the Forsaken\'s poisons, I had a vision.  I had a vision of the druids in the Dor\'danil Barrow Den, poisoned... murdered by the undead!  They are now errant ghosts, severed from their bodies and driven mad.$B$BSo that the druids\' spirits might some day find peace, you must enter the Dor\'danil Barrow Den and destroy its once great leaders: Taneel Darkwood, Uthil Mooncall and Mavoris Cloudsbreak.$B$BDo this, then return to me.",
-    ["O"] = "Kill the druids: Taneel Darkwood, Uthil Mooncall, Mavoris Cloudsbreak; then return to Kayneth Stillwind in Forest Song.",
+    ["D"] = "호드가 숲의 심장을 타락시키는 탓에 이성을 잃은 드루이드 지도자들이 부하들을 죽이고 있습니다! 타락의 기운이 이곳까지 느껴지니 저는 감히 더 다가갈 수가 없습니다.$B$B저는 잿빛 골짜기와 숲의 심장에 너무 익숙해져 버린 존재이니, 그대... 바로 그대가 지하굴로 내려가서 해야 할 일을 처리해 주십시오. 그대가 일을 쉽게 처리할 수 있게 그곳에 미리 준비해 두었습니다.$B$B가슴이 무너지는 듯하지만, 한 때는 위대한 지도자였던 타닐 다크우드, 우실 문콜과 마보리스 클라우즈브레이크를 처치해주십시오.",
+    ["O"] = "드루이드 지도자인 타닐 다크우드, 우실 문콜, 마보리스 클라우즈브레이크를 처치해야 합니다.",
     ["T"] = "미쳐버린 드루이드",
   },
   [1013] = {
@@ -5396,7 +5396,7 @@ pfDB["quests"]["koKR"] = {
   },
   [1144] = {
     ["D"] = "At last, help has arrived!$B$BYou have no clue how long I\'ve been held prisoner here. I can\'t remember the last time I saw the outside of this place.$B$BYou see, I am an entrepreneur. Always out for a copper, as they say. I caught wind that Mebok Mizzyrix was paying well for Blueleaf Tuber from this here pig pen. I figured it would be an easy in, easy out kind of affair. As you can see, I was a bit wrong!$B$BAnyway, if you\'d be so kind as to help me get out of here, I\'ll make it worth your while.",
-    ["O"] = "Escort Willix the Importer out of Razorfen Kraul.",
+    ["O"] = "수입업자 윌릭스를 호위해 가시덩굴 우리에서 나가야 합니다.",
     ["T"] = "수입업자 윌릭스",
   },
   [1145] = {
@@ -7612,7 +7612,7 @@ pfDB["quests"]["koKR"] = {
   [2203] = {
     ["D"] = "You have been most helpful to me, $c.  I would reward you with the very recipe for the brew I gave you earlier... but I would ask of you a task that is quite dangerous.  Hear my request.$B$BThis lockbox contains three empty thaumaturgy vessels; they are imbued with an attunement aura that will drain the blood of a scorched guardian dragon.  Using one on the beast will anger it greatly, so be warned.  Once you have all three filled, bring them to me.$B$BDo this, and the recipe will be yours.",
     ["O"] = "Use the empty thaumaturgy vessels on scorched guardian dragons found in the Badlands.  Once you have them filled, bring them to Jarkal Mossmeld in Kargath.",
-    ["T"] = "Badlands Reagent Run II",
+    ["T"] = "황야의 땅에서 재료 찾기 II",
   },
   [2204] = {
     ["D"] = "이제 목걸이에 필요한 \"마력\"을 찾아야 해요. 아마도 그 일에는 울다만이 최고의 장소일 걸요. 그곳에 피조물들이 꽤 많이 돌아다닐 텐데, 그렇지 않나요? 그중에서 제일 덩치 크고 악독해 보이는 놈을 잡아서 놈의 마력원천을 빼앗으세요! 제가 그 마력원천을 목걸이에 불어넣을 수 있을 거예요.$B$B그 마력원천이 없이 목걸이를 고친다는 것은 불가능해요. 그러니 마력원천을 찾으면 여기 아이언포지로 다시 돌아오세요. 당신을 위해 모두 고쳐 드릴게요!",
@@ -7882,7 +7882,7 @@ pfDB["quests"]["koKR"] = {
   [2501] = {
     ["D"] = "You have been most helpful to me, $N.  I would like to reward you with the very recipe for the brew I gave you earlier, but I must ask of you a favor that is quite dangerous.$B$BThis lockbox contains three empty thaumaturgy vessels; they are imbued with an attunement aura that will drain the blood of a scorched guardian dragon.  Using one on the beast will anger it greatly, so be careful.  Once you have all three filled, bring them to me.$B$BDo this, and the recipe will be yours.",
     ["O"] = "Use the empty thaumaturgy vessels on scorched guardian dragons found in the Badlands.  Once you have them filled, bring them to Ghak Healtouch in Thelsamar.",
-    ["T"] = "Badlands Reagent Run II",
+    ["T"] = "황야의 땅에서 재료 찾기 II",
   },
   [2518] = {
     ["D"] = "Lady Sathrah was once beloved of Elune. Graceful and pure, the spider spun her silver threads through the moonlight, catching the evening mist. The silvery dew had strong healing powers and was kept here in the temple.$B$BBut of late, Sathrah has descended into madness. Her future generations are now threatened as well.$B$BFind Lady Sathrah, $N, and end her suffering. She dwells along the northern borders of Teldrassil, near Wellspring Lake. Gather her silvery spinnerets and bring them back to me.",
@@ -8817,7 +8817,7 @@ pfDB["quests"]["koKR"] = {
   [2999] = {
     ["D"] = "Hello, $N. I know you\'re busy helping out the people of Dun Morogh, but when you have the time, you should go upstairs and speak to one of our most respected ilk: Tiza Battleforge. She\'s the one the younger paladins go to when it\'s time they learn more about the Light and what\'s expected of ya.",
     ["O"] = "Speak to Tiza Battleforge in Ironforge",
-    ["T"] = "Tome of Divinity",
+    ["T"] = "신앙의 고서",
   },
   [3000] = {
     ["D"] = "Hello, $N. I know you\'re busy helping out the people of Azeroth, but when you have the time, you should return to Ironforge and speak to one of the most respected paladins of your home: Tiza Battleforge. She\'s the one the younger dwarven paladins go to when it is time they learn more about the Light and what\'s expected of all of us.$B$BYou can find her upstairs in the Hall of Mysteries which is located in the Mystic Ward.",
@@ -12637,12 +12637,12 @@ pfDB["quests"]["koKR"] = {
   [5642] = {
     ["D"] = "Something important is up in Orgrimmar, $N.$B$BThe normal messengers that come through here looking for troll priests usually are very casual. This time, they seemed to be in much more a hurry. Don\'t dally too long in Thunder Bluff. I\'d return to the Valley of Spirits as soon as possible.",
     ["O"] = "Speak to Ur\'kyo in Orgrimmar.",
-    ["T"] = "Shadowguard",
+    ["T"] = "암흑의 수호",
   },
   [5643] = {
     ["D"] = "Like many of our own priests, your own tribe puts you through rites of passage. These rites often teach priests special abilities that are vital to their survival. I sense that time is upon you even as we speak. You must return to the Valley of Spirits in Orgrimmar and speak to Ur\'kyo. What he teaches you might be very important for the future.",
     ["O"] = "Speak to Ur\'kyo in Orgrimmar.",
-    ["T"] = "Shadowguard",
+    ["T"] = "암흑의 수호",
   },
   [5644] = {
     ["D"] = "Ah, a wonderful day for you, $N. I can see by the lessons you\'ve learned that the time has come to send you back to Aelthalyste. There are things only she can teach you, and even then, only if you prove worthy.$B$BI will not spoil the surprise for you, but I remember when I was a young priest learning about true power... divine power. Yes, those were the days.$B$BGo back to Aelthalyste in the Undercity, $N. She will be awaiting you in the War Quarter.",
@@ -12772,7 +12772,7 @@ pfDB["quests"]["koKR"] = {
   [5680] = {
     ["D"] = "Like many of our own priests, your own tribe puts you through rites of passage. These rites often teach priests special abilities that are vital to their survival. I sense that time is upon you even as we speak. You must return to the Valley of Spirits in Orgrimmar and speak to Ur\'kyo. What he teaches you might be very important for the future.",
     ["O"] = "Speak to Ur\'kyo in Ogrimmar.",
-    ["T"] = "Shadowguard",
+    ["T"] = "암흑의 수호",
   },
   [5713] = {
     ["D"] = "I was traveling to Auberdine with an important message when I was attacked by the furbolg Marosh and his trackers. During the attack I was poisoned, leaving me barely able to stand. I can make an antidote, but it will take time before it is ready.$B$BI would ask that you defend me until I can apply the antidote. I will aid you with my bow as best I can.$B$BShould we survive, I will be able deliver my message to Auberdine, while you speak with Onaeya at Maestra\'s Post to inform her of this incident.",
@@ -15200,7 +15200,7 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "변환을 위한 연료",
   },
   [7722] = {
-    ["D"] = "When that bastard, Maltorius, left our clan, he left with something more valuable than a pristine arcane crystal: Our recipe for fiery flux! I\'d bet anything that the recipe was part of the deal in his new promotion amongst the Dark Irons.$B$BI want you to get our secret plans back, $N. I\'m sure they\'re somewhere near Maltorius, deep inside the Slag Pit.",
+    ["D"] = "용광로의 잿가루 채석장 어딘가에 감독관 말토류스가 훔친 비밀조제법: 불꽃 융해촉진제가 있을 것입니다. 이 조제법을 찾아서 이글거리는 협곡에 있는 수석대장장이 버니네이트에게 가져가야 합니다.",
     ["O"] = "용광로의 잿가루 채석장 어딘가에 감독관 말토류스가 훔친 비밀조제법: 불꽃 융해촉진제가 있을 것입니다. 이 조제법을 찾아서 이글거리는 협곡에 있는 수석대장장이 버니네이트에게 가져가야 합니다.",
     ["T"] = "불꽃 융해촉진제?",
   },
@@ -17115,7 +17115,7 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "남쪽바다 처리반",
   },
   [8367] = {
-    ["D"] = "Serving the Horde in one of the great battles against the Alliance is a source of great honor! The few however, that have served the Horde in ALL of our active battlefronts are our truly great fighters. We shall vanquish our opponents, not by fighting isolated skirmishes, but by waging a well-coordinated war.$B$BGo forth and crush the Alliance in Arathi Basin, Alterac Valley, Eye of the Storm and Warsong Gulch! For Honor! For the Horde!",
+    ["D"] = "호드를 위해 얼라이언스와 치열하게 싸우는 일은 커다란 영광일 터! 아무리 적은 수가 모였다고 하더라도 치열한 전선에서 호드를 위해 싸워 온 이들이야말로 진정 이 시대의 위대한 용사요. 우리는 산발적인 소규모 전투가 아니라 하나로 조직화한 전쟁을 통해 적들을 섬멸할 것이오.$B$B모든 전장에서 얼라이언스를 무찌르시오! 커다란 영광을 위하여! 호드를 위하여!",
     ["O"] = "Bring 3 Alterac Valley Marks of Honor, 3 Arathi Basin Marks of Honor and 3 Warsong Gulch Marks of Honor to a Horde Warbringer outside the battlegrounds.",
     ["T"] = "커다란 영광을 위하여",
   },
@@ -17135,7 +17135,7 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "Conquering Arathi Basin",
   },
   [8371] = {
-    ["D"] = "We\'re not fighting isolated battles against the Horde anymore, $g lad:lass;.$B$BVictory in one front means denying the Horde resources they\'d use against us in a different battle.  By the same token, losing any given battle could give the advantage to our opponent somewhere else around the world.$B$BThe Alliance is in need of more combatants with this sort of worldly understanding... truly seasoned veterans!  $N, come back to me after you\'ve served against the Horde at all of our active battlegrounds.",
+    ["D"] = "호드를 상대로 싸우는 여러 전투는 모두 연관되어 있습니다.$B$B우리가 어떤 전장에서 승리하면 다른 전장에서 호드가 우리를 치는 데 쓸 자원을 손에 넣을 수 없지요. 이와 마찬가지로, 우리가 어떤 전장을 포기하면 다른 곳에 있는 적에게 유리한 상황이 전개될 섭니다.$B$B얼라이언스에는 이런 상황을 전체적으로 잘 이해하고 있고 전투 경험이 풍부한 대원들이 필요합니다! $N 님, 모든 전장에서 우리를 도와 호드를 물리친 후 돌아와 보고하십시오!",
     ["O"] = "Bring 3 Alterac Valley Mark of Honor, 3 Arathi Basin Mark of Honor and 3 Warsong Gulch Mark of Honor to an Alliance Brigadier General outside the battlegrounds.",
     ["T"] = "공동의 노력",
   },
@@ -17960,7 +17960,7 @@ pfDB["quests"]["koKR"] = {
     ["T"] = "Stalwart\'s Battlegear",
   },
   [8575] = {
-    ["D"] = "You cannot understand a single word on this ledger. You don\'t even know what language it is written in!",
+    ["D"] = "이 원장의 한 단어를 이해할 수 없습니다. 당신은 어떤 언어가 쓰여지는지조차 모릅니다!",
     ["O"] = "Deliver Azuregos\'s Magical Ledger to Narain Soothfancy in Tanaris.",
     ["T"] = "Azuregos\'s Magical Ledger",
   },

@@ -37,6 +37,9 @@ pfDB["quests"]["koKR-tbc"] = {
   [132] = {
     ["D"] = "What I am about to tell you could cost me my life.  The Defias gang is up to something big.  Last I heard they were working in conjunction with various gnolls, kobolds and even goblins.$b$bTake this note to Stoutmantle.  It explains as much as I know on the subject.",
   },
+  [140] = {
+    ["D"] = "Sure enough, deep within the Old Jug there is another clue to Sander\'s treasure.  The ink has run in some places and the paper smells like whiskey but you can make out some of the text:  Now that ye found me ol\' whiskey jug, you\'re almost to the treasure!  Just face West from the bottle and walk down to the shore.  Once ye get to the water, keep going!  Swim straight west till you find the island with me treasure chest!",
+  },
   [141] = {
     ["D"] = "The Stonemasons\' Guild was run by a man named Edwin VanCleef.  VanCleef was responsible for rebuilding Stormwind after the orcs razed it in the First War.  Apparently, VanCleef and his men were unhappy with their treatment by the King after the reconstruction was complete.  That just might explain a thing or two.$b$bI have written a more detailed account for your Master in Westfall.  Take this to him at once!",
   },
@@ -150,6 +153,12 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [282] = {
     ["D"] = "I was planning on sending my apprentice to my brother Senir with my report, but I would feel much better were it placed in more... reliable hands. That is, of course, if you wouldn\'t mind?$b$bHmm... you\'ll have to take the tunnel to get to Kharanos.$b$bSpeak with Mountaineer Thalos before going through the tunnel. It\'s completely infested with troggs now.$b$bFollow the road back to Anvilmar, then keep heading east to the tunnel, Thalos is stationed nearby.",
+  },
+  [286] = {
+    ["O"] = "Bring Karl Boran the Menethil Statuette.",
+  },
+  [292] = {
+    ["O"] = "Bring the Cursed Eye of Paleth to Glorin Steelbrow.",
   },
   [296] = {
     ["D"] = "While you were down there I happened to notice that one of those beasts stood out from the rest.  He was bigger and more menacing.  I bet he\'s the one who led the others here to cause the disruption to the dig site.$b$bI ask of you now one final task, $N.  See to it that Sarltooth is brought to justice.  And considering the gravity of his crimes, justice in this case means death!  Bring me one of his talons as proof of his death.",
@@ -432,6 +441,9 @@ pfDB["quests"]["koKR-tbc"] = {
   [655] = {
     ["D"] = "It is still clear to me, like yesterday... So many years without hope, with wood and steel to bind me to this terrible place. Then finally, finally! There was the Warchief. Doomhammer in his midnight plate, his warhammer held high.$b$bIt was... too terrible... That the blow of a coward would strike down our greatest hero. From behind he charged on his horse, and then his lance ran him through... I fell to my knees. What hope was there? What hope is there...",
   },
+  [657] = {
+    ["O"] = "Speak to Kinelory.",
+  },
   [662] = {
     ["D"] = "O\'Breen led the ships into the cove.  We were certain this is where the treasure could be found.  The Harbinger docked safely but as the Maiden\'s Folly and Spirit of Silverpine approached the tides began to lower.  Strangest thing I\'ve ever seen!$b$bThose two ships ran aground into something... some sort of temple in the reef.  They sank so quickly, was quite a tragedy.$b$bWe need to retrieve their Logs as well as their Charts before we leave.  We can\'t leave that information behind for prying eyes!",
   },
@@ -640,6 +652,14 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "문밖의 적",
   },
+  [1010] = {
+    ["D"] = "There is a plant that once grew in the old ruins of Bathran\'s Haunt to the north.  The plant was called Bathran\'s Hair and was known to cure ailments of the spirit.$B$BThere is a sick child in the village, and I believe it is more than just a physical illness.  Will you go to Bathran\'s Haunt and search it for Bathran\'s Hair?  I may need it to properly treat the child.$B$BBathran\'s Haunt lies north of Maestra\'s Post and just south of the border to Darkshore.",
+    ["O"] = "Bring 5 Bathran\'s Hair to Orendil Broadleaf in Ashenvale.",
+  },
+  [1012] = {
+    ["D"] = "When I struggled with the Forsaken\'s poisons, I had a vision.  I had a vision of the druids in the Dor\'danil Barrow Den, poisoned... murdered by the undead!  They are now errant ghosts, severed from their bodies and driven mad.$B$BSo that the druids\' spirits might some day find peace, you must enter the Dor\'danil Barrow Den and destroy its once great leaders: Taneel Darkwood, Uthil Mooncall and Mavoris Cloudsbreak.$B$BDo this, then return to me.",
+    ["O"] = "Kill the druids: Taneel Darkwood, Uthil Mooncall, Mavoris Cloudsbreak; then return to Kayneth Stillwind in Forest Song.",
+  },
   [1037] = {
     ["D"] = "Velinde Starsong was my predecessor here in Ashenvale Forest. At first it seemed she had the situation in Felwood under control, but little by little her efforts faltered. One day, she simply disappeared.$b$bI was sent here to continue her work. I\'m afraid I know nothing of the priestess, however. Perhaps Thyn\'tel Bladeweaver, one of the commanders of the Sentinels, knows further details of her disappearance that I was not a party to.$b$bSurely she will understand the import of such information.",
   },
@@ -687,6 +707,9 @@ pfDB["quests"]["koKR-tbc"] = {
   [1132] = {
     ["D"] = "Oh, to be at sea once again!  To feel the kiss of the wind, and to have the waves rock me like my blessed mother, long ago!$B$BOh, I wish I had your fortune, good $c, for I see the sea in your future!$B$BIt\'s my job to tell eager souls of the land of Kalimdor, the land of opportunity!  If you\'re willing to try your luck across the sea, then take a ship from here to the lovely port of Auberdine.  Speak there with my partner, the elf, Fiora Longears.$B$BShe\'ll start you on your Kalimdor adventure!",
     ["O"] = "Speak with Fiora Longears on the docks at Auberdine in Darkshore.",
+  },
+  [1144] = {
+    ["O"] = "Escort Willix the Importer out of Razorfen Kraul.",
   },
   [1169] = {
     ["O"] = "Draz\'Zilb in Brackenwall Village would like you to bring him 7 Searing Tongues and 7 Searing Hearts.",
@@ -988,6 +1011,9 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Return to Therzok in the Cleft of Shadow in Orgrimmar.",
     ["T"] = "[Not Used] Tools of the Trade",
   },
+  [2203] = {
+    ["T"] = "Badlands Reagent Run II",
+  },
   [2206] = {
     ["O"] = "Find the Defias Dockmaster and recover the Shipping Schedule for Master Mathias Shaw.",
   },
@@ -1046,6 +1072,9 @@ pfDB["quests"]["koKR-tbc"] = {
   [2479] = {
     ["O"] = "Travel to Tarren Mill in Hillsbrad Foothills and deliver the Sample of Zanzil\'s Mixture to Serge Hinott.$B$BTo get to Tarren Mill, take the Zeppelin to the Undercity and follow the road south through Silverpine and towards Hillsbrad. Follow the signs!",
   },
+  [2501] = {
+    ["T"] = "Badlands Reagent Run II",
+  },
   [2608] = {
     ["O"] = "/Lay down to be examined by Doc Mixilpixil. How can he find the cure if he can\'t find the cause?",
   },
@@ -1057,9 +1086,6 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [2701] = {
     ["D"] = "Please, take from this a relic of old. We no longer have a use for the item.$B$BMay it serve you well in your fight against the legion.",
-  },
-  [2741] = {
-    ["O"] = " ",
   },
   [2756] = {
     ["O"] = "Bring four Steel Breastplates and four Steel Plate Helms to Aturk the Anvil in Orgrimmar.",
@@ -1076,9 +1102,6 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [2962] = {
     ["O"] = "Travel to Gnomeregan and bring back High Potency Radioactive Fallout. Be warned, the fallout is unstable and will collapse rather quickly.$B$BOzzie will also require your Heavy Leaden Collection Phial when the task is complete.",
-  },
-  [2999] = {
-    ["T"] = "신앙의 고서",
   },
   [3091] = {
     ["D"] = "Just a moment ago a messenger was looking for you, $N. I believe she was sent by the warrior trainer Harutt. If this note is from Harutt, I wouldn\'t take long in reading it\'s contents.",
@@ -1556,6 +1579,9 @@ pfDB["quests"]["koKR-tbc"] = {
     ["T"] = "Hunter test quest2",
   },
   [7704] = "_",
+  [7722] = {
+    ["D"] = "When that bastard, Maltorius, left our clan, he left with something more valuable than a pristine arcane crystal: Our recipe for fiery flux! I\'d bet anything that the recipe was part of the deal in his new promotion amongst the Dark Irons.$B$BI want you to get our secret plans back, $N. I\'m sure they\'re somewhere near Maltorius, deep inside the Slag Pit.",
+  },
   [7736] = {
     ["D"] = "",
     ["O"] = "",
@@ -1649,10 +1675,6 @@ pfDB["quests"]["koKR-tbc"] = {
   [8153] = {
     ["D"] = "The courser wears the mightiest antlers in the known lands.  Such antlers are used to defend the courser, goring an attacker and often damaging the points.  Perfect, natural antlers are the sign of an animal spirit with supreme confidence.$b$bTo hold such antlers will bestow the same confidence in you.$b$bHunt the mosshoof courser, find the perfect antlers and bring them to me.",
   },
-  [8196] = {
-    ["D"] = "The extremely potent essence mango grows across many of the islands in the South Seas. A single mango will refresh those who eat it, both physically and mentally. If you\'ve never had one, you do yourself a disservice!",
-    ["O"] = "We have enough of a supply here on the isle to offer you a handful in exchange for a Zandalar Honor Token. Speak with Vinchaxa if you need to learn how to get tokens; otherwise, let\'s get to the business at hand!",
-  },
   [8230] = {
     ["D"] = "",
     ["O"] = "",
@@ -1681,14 +1703,6 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [8242] = {
     ["D"] = "",
-  },
-  [8243] = {
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
-  },
-  [8246] = {
-    ["D"] = "May - for someone as exalted among the Zandalar as you are, I have something very special for you. Direct from our home in the South Seas... the Signets of the Zandalar! These signets are used to enhance any shoulder item you may possess. Should you seek might, mojo, or serenity - I have what you need!",
-    ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
   },
   [8252] = {
     ["D"] = "Take a look around you.  The ruins and beaches are overrun with spitelash.  Recently, the wretched creatures have learned to recognize the rare components indigenous to Azshara.$b$bSpecifically, I speak of enchanted coral -- they are drawn to it by reasons unknown to me.  Now there is little coral left in the bay, and it is vital to my research.  I need you to separate some enchanted coral from the spitelash sirens and bring it to me.",
@@ -1802,12 +1816,14 @@ pfDB["quests"]["koKR-tbc"] = {
     ["T"] = "소포 배달",
   },
   [8367] = {
+    ["D"] = "Serving the Horde in one of the great battles against the Alliance is a source of great honor! The few however, that have served the Horde in ALL of our active battlefronts are our truly great fighters. We shall vanquish our opponents, not by fighting isolated skirmishes, but by waging a well-coordinated war.$B$BGo forth and crush the Alliance in Arathi Basin, Alterac Valley, Eye of the Storm and Warsong Gulch! For Honor! For the Horde!",
     ["O"] = "Bring 1 Alterac Valley Mark of Honor, 1 Arathi Basin Mark of Honor, 1 Warsong Gulch Mark of Honor and 1 Eye of the Storm Mark of Honor to a Horde Warbringer in any Horde capital city or Shattrath.",
   },
   [8370] = {
     ["T"] = "OLD Conquering Arathi Basin",
   },
   [8371] = {
+    ["D"] = "We\'re not fighting isolated battles against the Horde anymore, $g lad:lass;.$B$BVictory in one front means denying the Horde resources they\'d use against us in a different battle.  By the same token, losing any given battle could give the advantage to our opponent somewhere else around the world.$B$BThe Alliance is in need of more combatants with this sort of worldly understanding... truly seasoned veterans!  $N, come back to me after you\'ve served against the Horde at all of our active battlegrounds.",
     ["O"] = "Bring 1 Alterac Valley Mark of Honor, 1 Arathi Basin Mark of Honor, 1 Warsong Gulch Mark of Honor and 1 Eye of the Storm Mark of Honor to an Alliance Brigadier General in any Alliance Capital City or Shattrath.",
   },
   [8374] = {
@@ -2029,9 +2045,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "영원노래 숲의 산들바람 마을에 있는 벨란 브라이트오크가 갈기발 스라소니 모피 6개를 가져다 달라고 했습니다.",
     ["T"] = "모피 수집",
   },
-  [8510] = {
-    ["O"] = "Bring 20 arthas\' tears to Sergeant Major Germaine at the airfield in Dun Morogh.",
-  },
   [8512] = {
     ["T"] = "The Alliance Needs More Light Leather!",
   },
@@ -2082,6 +2095,9 @@ pfDB["quests"]["koKR-tbc"] = {
   [8573] = {
     ["O"] = "Bring 15 Cenarion Combat Badges, 20 Cenarion Logistics Badges, 20 Cenarion Tactical Badges and 1 Mark of Cenarius to Vargus at Cenarion Hold in Silithus.  You must also attain Exalted reputation with Cenarion Circle to be able to complete this quest.",
   },
+  [8575] = {
+    ["D"] = "You cannot understand a single word on this ledger. You don\'t even know what language it is written in!",
+  },
   [8584] = {
     ["D"] = "If there is one thing that you should know about me, it is this: NEVER ask me about my business! I work with things you simply cannot understand. Like for example: Do you know what a psychotronic muzzledorf is? Of course you don\'t! And that\'s why we leave the planning to me and the fetching to you.$B$BAs I said earlier, if this is going to work, we\'re going to need a 500 pound chicken.$B$BHead to Gadgetzan and speak with Dirge Quikcleave - he\'ll get you started on finding a suitable specimen.",
   },
@@ -2113,20 +2129,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "The keeper awaits your return, $N. Take the green scepter shard to Anachronos at the Caverns of Time.",
     ["O"] = "Take the Green Scepter Shard to Anachronos at the Caverns of Time in Tanaris.",
   },
-  [8742] = {
-    ["D"] = "",
-  },
   [8790] = {
     ["O"] = "Merithra of the Dream in the Temple of Ahn\'Qiraj will create Elementium Infused Armaments for you should you bring her Imperial Qiraji Regalia and 3 Elementium Ore.",
   },
   [8802] = {
     ["D"] = "To the Caverns of Time you go, $G Lord:Lady; $N. Anachronos awaits your return. Give him the eye of C\'Thun as he will undoubtedly wish to place it in his master\'s collection.",
-  },
-  [8827] = {
-    ["D"] = "I hear Greatfather Winter - with the generous support of Smokeywood Pastures - has put presents for everyone under the tree in Ironforge. I wish I could go, but I\'ve got to look after the PX-238 Winter Wondervolt.$b$bBut you should definitely check it out. I\'m sure Greatfather Winter has some presents with your name on them.",
-  },
-  [8828] = {
-    ["D"] = "I hear Great-father Winter - with the generous support of Smokeywood Pastures - has put presents for everyone under the tree in Orgrimmar. I wish I could go, but I\'ve got to look after the PX-238 Winter Wondervolt.$b$bBut you should definitely check it out. I\'m sure Great-father Winter has some presents with your name on them.",
   },
   [8863] = {
     ["D"] = "If you are hungry, then you have come to the right place my friend!$B$BDumplings are the traditional food of the Lunar Festival; it has been served since the time of the first Lunar Festival, and I am pleased to be able to offer it at this one.  In exchange for just a single coin of ancestry, I will share with you a sampling of one of the tastiest dishes you will ever enjoy!",

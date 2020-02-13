@@ -17,7 +17,7 @@ pfDB["quests"]["frFR"] = {
   [7] = {
     ["D"] = "Votre premier travail est de faire un peu de nettoyage, $N. Un clan de kobolds a envahi les bois, au nord. Allez là-bas et attaquez ces vermines. Affaiblissez-les assez, pour qu\'un jour nous puissions les repousser hors de Comté-du-Nord.",
     ["O"] = "Tuez 6 Vermines kobolds, puis revenez voir le Maréchal McBride.",
-    ["T"] = "Kobold Camp Cleanup",
+    ["T"] = "Le nettoyage du camp des kobolds (test de programmation)",
   },
   [8] = {
     ["D"] = "Hé ! Voudriez-vous faire une faveur à un homme qui a eu plus que sa part de combats contre des zombies et des araignées ?$B$BJ\'ai ici une lettre qui doit être livrée à Brill... à une aubergiste du nom de Renée quelque chose. Enfin c\'est pas important son nom de famille.$B$BBref, c\'est un joli petit coin, plein de personnes victimes de la peste qui essayent de trouver leur voie en ce bas monde. De plus, c\'est un bon endroit pour se reposer. Vous devriez aller voir... D\'autant que je vous payerai bien.",
@@ -957,7 +957,7 @@ pfDB["quests"]["frFR"] = {
   [202] = {
     ["D"] = "Vous avez montré votre valeur à maintes reprises, et vos ressources semblent même concurrencer celles de ce Kurzen en personne. Il se peut que vous représentiez le salut pour notre bande de rebelles… si vous pouvez vous mesurer à Kurzen et le vaincre !$B$BIl contrôle ses hommes depuis les profondeurs de la Réserve. Vous devez y pénétrer, déborder ses défenseurs, puis combattre Kurzen et ses officiers.$B$BAdieu, $N. Mes espoirs et la destinée de mes hommes sont entre vos mains.",
     ["O"] = "Tuer 6 Troupes d\'élite, 4 Lieutenants et rapporter la tête de Kurzen au lieutenant Doren au Camp rebelle.",
-    ["T"] = "Colonel Kurzen",
+    ["T"] = "Le colonel Kurzen",
   },
   [203] = {
     ["D"] = "Nous combattons désespérément le colonel Kurzen. Non seulement c\'est un habile tacticien, mais nous nous battons à 1 contre 10. Pour survivre, nous devons retourner contre lui ses propres tactiques sournoises.$B$BInvestissez son camp, à l\'est, et tuez ses hommes. Le plus possible. Et ressortez avant que les renforts ne vous attrapent.",
@@ -1176,7 +1176,7 @@ pfDB["quests"]["frFR"] = {
   },
   [249] = {
     ["D"] = "Après une longue surveillance, j\'ai découvert les plans de Morganth.$B$BIl recherche la faux d\'Élune… et il se peut même qu\'il l\'ait déjà trouvée ! S\'il se l\'est appropriée, alors les Carmines et le royaume de Hurlevent tomberont bientôt sous son joug.$B$BJe ne suis pas prêt à l\'affronter, mais j\'ai peur qu\'il faille s\'en occuper dès à présent. Vous devez donc pénétrer dans la tour d\'Ilgalar, et combattre Morganth.$B$BRemportez la victoire, et apportez-moi son pendentif des ombres. Si vous réussissez, le royaume vous sera grandement redevable.",
-    ["O"] = "Tuer Morganth, puis rapporter son Pendentif des ombres à Théocritus, à la Tour d\'Azora dans la forêt d\'Elwynn.",
+    ["O"] = "Tuer Morganth,$B$Bpuis rapporter son Pendentif des ombres à Théocritus, à la Tour d\'Azora dans la forêt d\'Elwynn.",
     ["T"] = "Grand magus Doane",
   },
   [250] = {
@@ -1645,7 +1645,7 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "La fièvre de Strangleronce",
   },
   [349] = {
-    ["D"] = "temp text 02 - description",
+    ["D"] = "Hi, $N!$B$BSpeak with me friend Witch Doctor Unbagwa.",
     ["O"] = "temp text 02 - log",
     ["T"] = "La fièvre de Strangleronce",
   },
@@ -1942,7 +1942,7 @@ pfDB["quests"]["frFR"] = {
   [412] = {
     ["D"] = "Je ferais peut-être mieux de retourner à Gnomeregan pour mettre au point un remède pour les gnomes irradiés, mais Kharanos est la ville où j\'habite, et je ne veux pas qu\'elle tombe aux mains des Crins-de-Givre. Je participe à l\'effort de guerre en réparant et en entretenant des chars à vapeur.$B$BPour une raison nébuleuse, les charognards crins-de-givre se sont mis à collectionner les engrenages gyromécaniques dont j\'ai besoin pour effectuer mes réparations. Ils sont éparpillés le long du front Crins-de-givre, au sud-est de la ville. Vous voulez bien m\'aider à récupérer ces engrenages ?",
     ["O"] = "Apportez 8 Engrenages gyromécaniques à Esbrouf Fulgurouage.",
-    ["T"] = "Operation Recombobulation",
+    ["T"] = "Opération Recombobulation",
   },
   [413] = {
     ["D"] = "J\'aimerais que mon frère Wellart essaye ma nouvelle Brune scintillante. C\'est un montagnard dont la garnison est la tour de garde sud, une des deux tours au bord du Loch Modan.$B$BIl n\'est peut-être pas un brasseur comme le reste des Brasselorge mais il aime boire une bonne bière et je sais qu\'il appréciera celle-ci.$B$BPouvez-vous lui porter ce tonneau de Brune scintillante pour moi ?",
@@ -2382,7 +2382,7 @@ pfDB["quests"]["frFR"] = {
   [503] = {
     ["D"] = "D\'après les documents que vous avez rapportés, Gol\'dir est retenu dans une grande base du Syndicat, plus au nord, très certainement dans les montagnes d\'Alterac. Il est captif depuis trop longtemps et doit absolument être libéré.",
     ["O"] = "Libérer Gol\'dir et retourner voir Krusk à Moulin-de-Tarren.",
-    ["T"] = "Gol\'dir",
+    ["T"] = "[PÉRIMÉ]Gol\'dir",
   },
   [504] = {
     ["D"] = "Maintenant que vous avez eu un avant-goût des ogres Cassecrête, je veux que vous leur rentriez dedans franchement...$B$BAllez dans les ruines d\'Alterac et débusquez des Combattants Cassecrête. Je veux que vous en fauchiez le plus possible : c\'est la seule façon de faire comprendre à ces brutes qu\'il faut garder leurs distances avec le territoire de l\'Alliance.",
@@ -2610,7 +2610,7 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "La bataille de Hautebrande",
   },
   [551] = {
-    ["D"] = "Ce parchemin est sous l\'effet d\'un sort qui le rend indéchiffrable. Mais un mot peut être lu, en haut du papier :$B$B$BNagaz$B$B",
+    ["D"] = "Ce parchemin est sous l\'effet d\'un sort qui le rend indéchiffrable. Mais un mot peut être lu, en haut du papier :$B$BNagaz$B$B",
     ["O"] = "Apporter le Parchemin ensorcelé à l\'Erudit Dibbs à Austrivage, aux Contreforts de Hautebrande.",
     ["T"] = "Le Parchemin ensorcelé",
   },
@@ -5782,7 +5782,7 @@ pfDB["quests"]["frFR"] = {
   [1260] = {
     ["D"] = "Je suis en train de créer une nouvelle carte pour le restaurant. Elle sera composée de plats typiques sur un thème « bayou ». Je pense que ma clientèle au Solitaire Bleu va l\'adorer !$B$BJ\'ai envoyé mon neveu Morgan à Theramore, une ville au bord du marécage d\'Âprefange. Il collecte des recettes locales et j\'ai besoin de savoir ce qu\'il a déjà trouvé.$B$BLe voyage pour Theramore est long. Trop long pour moi. Mais je parie que quelqu\'un d\'aussi jeune que vous, $C, sauterait sur une occasion de voyager, non ?",
     ["O"] = "Parler à Morgan Stern à Theramore.",
-    ["T"] = "Morgan Stern",
+    ["T"] = "[PÉRIMÉ]Morgan Stern",
   },
   [1261] = {
     ["D"] = "Maudit Bourbecoque ! Tu ne peux pas tuer Marg ! Ah, mais je suis mort. Alors il doit m\'avoir tué...$B$BMais ma mission ! Ma mission ! Vous, $N, devez achever ma mission.$B$BAlors que j\'étais près de Theramore, j\'ai espionné un groupe de soldats de l\'Alliance qui campaient sur la plage. Un de ces soldats portait un pendentif... Un pendentif avec plus de pierres précieuses que dans les rêves d\'un soldat !$B$BCette nuit-là, je me suis glissé dans leur camp et j\'ai volé le pendentif, mais au retour à la base, un homme-crabe Bourbecoque m\'a tué !$B$B$N, vous devez le retrouver et récupérer le pendentif !",
@@ -5882,12 +5882,12 @@ pfDB["quests"]["frFR"] = {
   [1301] = {
     ["D"] = "Avant de travailler ici, au Solitaire bleu, j\'ai été formé par l\'un des meilleurs chefs cuisiniers et aubergistes que je connaisse. Il s\'appelait James Hyal. Tout ce que j\'ai et tout ce que j\'ai appris, je le lui dois.$B$BJe me demande ce qu\'il devient. Son frère Vincent et lui sont allés travailler dans une auberge du port de Menethil, mais je suis sans nouvelles depuis longtemps.$B$BSi vous passez dans le coin, donnez-lui le bonjour de ma part, d\'accord ?",
     ["O"] = "Allez voir Vincent Hyal au Port de Menethil.",
-    ["T"] = "James Hyal",
+    ["T"] = "[PÉRIMÉ]James Hyal",
   },
   [1302] = {
     ["D"] = "Mon frère James a accompagné dame Portvaillant lorsqu\'elle a traversé les océans. Les dernières nouvelles disaient que le calme était revenu là-bas et que James avait monté une auberge quelque part sur le continent. Où qu\'il soit, je suis sûr que ses affaires sont florissantes. C\'est un excellent chef cuisinier !$B$BJe suis sans nouvelles de lui depuis un bon moment. Trop de travail avec son auberge, je suppose. Mais le greffier à Theramore a peut-être plus de renseignements. Cherchez-le en haut de ce donjon près du centre de la ville. Comment s\'appelle-t-il déjà... Ah oui, la Citadelle de Theramore.",
     ["O"] = "Parler au greffier Lendry à la citadelle de Theramore.",
-    ["T"] = "James Hyal",
+    ["T"] = "[PÉRIMÉ]James Hyal",
   },
   [1318] = {
     ["D"] = "Maintenant qu\'z\'êtes le roi, p\'têt\' qu\'vous pourrez récupérer l\'objet précieux des Gordok que le sale elfe qui se dit prince nous a pris. L\'roi avant vous a pas réussi, et celui d\'avant non plus, et aucun roi depuis que Tortheldrin – c\'est le sale elfe – l\'a volé à un vieux roi gordok d\'il y a longtemps !$B$BC\'est le gantelet de puissance gordok. Les vieux, ils disent que seul le vrai roi des Gordok pourra le ramener. Et puis, les vieux, ils disent aussi que le sale elfe est toujours là – si vous le trouvez, vous pourrez porter le gantelet de puissance pour toujours ! Ouais ! Je vais vous montrer !",
@@ -7321,7 +7321,7 @@ pfDB["quests"]["frFR"] = {
   },
   [1883] = {
     ["D"] = "Un\'thuwa, le mage tribal du village de Sen\'jin, a détecté une perturbation dans les courants magiques de Durotar et demande de l\'aide. Allez voir Un\'thuwa et faites ce que vous pouvez pour l\'aider.$B$BEn retour, de nouveaux secrets vous seront révélés.",
-    ["O"] = "Aller voir Un\'thuwa.",
+    ["O"] = "Parler à Un\'thuwa",
     ["T"] = "Parler à Un\'thuwa",
   },
   [1884] = {
@@ -7625,7 +7625,7 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Chercher le SI:7",
   },
   [2206] = {
-    ["D"] = "Nos espions sur le terrain rapportent que les bandits sont très actifs dans le sud de Comté-de-l\'Or. Il semble qu\'ils aient pris le débarcadère de Jerod et qu\'ils l\'utilisent pour passer en contrebande de grandes quantités de produits entre les Carmines et la marche de l\'Ouest.$B$BIl faut que vous vous introduisiez dans la petite maison à côté du quai et que vous me rapportiez le programme d\'embarquement des navires, $N. Vous le trouverez probablement au profond des poches de l\'intendant des docks.$B$B... Et $N, si vous étiez $Gdécouvert:découverte;, sachez que le SI:7 nierait vous avoir jamais $Gconnu:connue;.",
+    ["D"] = "Trouver l\'Intendant des docks et récupérer le Programme d\'embarquement, pour le compte de maître Mathias Shaw.",
     ["O"] = "Trouver l\'Intendant des docks et récupérer le Programme d\'embarquement, pour le compte de maître Mathias Shaw.",
     ["T"] = "Effraction",
   },
@@ -7665,7 +7665,7 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Les réactifs des Terres ingrates",
   },
   [2259] = {
-    ["D"] = "Ne vous inquiétez pas, $N, je ne vous envoie pas voir Syurna. Erion veut que vous le rejoigniez dans l\'Enclave de Cenarion. Faites vite !",
+    ["D"] = "Contacter Erion Murmombre à Darnassus.",
     ["O"] = "Contacter Erion Murmombre à Darnassus.",
     ["T"] = "Erion Murmombre",
   },
@@ -7775,7 +7775,7 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Réparer le collier",
   },
   [2378] = {
-    ["D"] = "Vous avez bien servi les nécrotraqueurs, $N, mais il est temps d\'étendre votre expérience. Vous avez montré vos capacités en matière de ruse et de traîtrise, mais votre entraînement n\'est pas terminé. $B$BLes nécrotraqueurs ont des alliés au sein de la Main brisée. Cherchez ceux qui viennent à notre aide : trouvez Shenthul à Orgrimmar.",
+    ["D"] = "Voyager vers Orgrimmar pour y parler à Shenthul, dans la Faille de l\'Ombre.",
     ["O"] = "Voyager vers Orgrimmar pour y parler à Shenthul, dans la Faille de l\'Ombre.",
     ["T"] = "Trouver la Main brisée",
   },
@@ -8817,7 +8817,7 @@ pfDB["quests"]["frFR"] = {
   [2999] = {
     ["D"] = "Bonjour, $N. Je sais que vous êtes très $Goccupé:occupée; à aider les gens de Dun Morogh, mais si vous avez le temps, allez jusqu\'à Forgefer pour parler à la vénérable Tiza Forgeguerre. Les plus jeunes de nos paladins vont la voir lorsqu\'ils veulent en apprendre plus sur la Lumière et sur leurs obligations.",
     ["O"] = "Parlez à Tiza Forgeguerre, à Forgefer.",
-    ["T"] = "Le Tome de divinité",
+    ["T"] = "Tome de divinité",
   },
   [3000] = {
     ["D"] = "Bonjour, $N. Je sais que vous êtes très $Goccupé:occupée; à aider les gens d\'Azeroth, mais si vous avez le temps, retournez à Forgefer et parlez à l\'une de nos paladins les plus respectés, Tiza Forgeguerre. Nos jeunes paladins nains vont la consulter quand ils veulent en apprendre plus au sujet de la Lumière et sur ce que l\'on attend d\'eux.$B$BVous la trouverez à l\'étage du Hall des Mystères qui se trouve dans la Garde mystique.",
@@ -9805,7 +9805,7 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Héritage Sombrefer",
   },
   [3802] = {
-    ["D"] = "Vous trouverez Fineous Sombrevire au-delà du Cercle de la loi, dans la Chambre de l\'artisanat. Tuez ce misérable chien et récupérez Souillefer.$B$BApportez Souillefer au sanctuaire de Thaurissan et placez le marteau à la place qui est la sienne : dans les mains de la statue érigée en mon honneur.$B$BAlors le compartiment dans lequel j\'ai placé la clé maîtresse s\'ouvrira. Plus important encore, Souillefer restera entre mes mains pour l\'éternité. S\'ils tentent de l\'enlever, la statue et le marteau se briseront, à jamais perdus.",
+    ["D"] = "Tuer Fineous Sombrevire et récupérer le grand marteau, Souillefer. Apporter Souillefer au sanctuaire de Thaurissan et le placer sur la statue de Franclorn Le Forgebusier.",
     ["O"] = "Tuer Fineous Sombrevire et récupérer le grand marteau, Souillefer. Apporter Souillefer au sanctuaire de Thaurissan et le placer sur la statue de Franclorn Le Forgebusier.",
     ["T"] = "Héritage Sombrefer",
   },
@@ -10002,12 +10002,12 @@ pfDB["quests"]["frFR"] = {
   [3982] = {
     ["D"] = "Je suis venu sous les auspices de Thrall. Pensiez-vous réellement que ces bouffons auraient pu me capturer ? Je me suis arrangé pour être fait prisonnier et pour pouvoir trouver des informations.$B$B<Gor\'shak chuchote.>$B$BLa princesse de Forgefer a été enlevée par l\'Empereur Thaurissan. La Princesse Barbe-de-bronze est dans cette cité même ! Je parie que le cœur du vieux Magni s\'est presque arrêté de battre lorsqu\'il a appris la nouvelle.$B$B<Gor\'shak rit.>$B$BChuuut ! Vous entendez ? Des gardes arrivent ! DÉFENDEZ-VOUS !",
     ["O"] = "Défendre Gor\'shak.",
-    ["T"] = "Que se passe-t-il ?",
+    ["T"] = "Qu\'est-ce qui se passe ?",
   },
   [4001] = {
     ["D"] = "Jusqu\'à présent, mes entretiens avec le nain, Kharan, dans la cellule de l\'autre côté du mur, ont été plus que limités. J\'ai tout de même réussi à le convaincre que je (ou plutôt que nous) ne lui voulions aucun mal.$B$BAllez lui parler et obtenez autant d\'informations que possible sur la princesse et sur ses ravisseurs. Puis allez raconter au Chef de guerre ce que vous avez appris.$B$BThrall ne veut pas qu\'il soit fait le moindre mal à la princesse. Bien au contraire, il a prévu un plan pour qu\'elle retourne en toute sécurité à Forgefer. Kharan sait déjà tout cela... Allez-y !",
     ["O"] = "Parler à Kharan Force-martel et obtenir autant de renseignements que possible sur l\'enlèvement de la princesse Moira Barbe-de-bronze. Apporter ces renseignements à Thrall à Orgrimmar.$B$BGor\'shak a dit que Kharan était détenu dans une cellule proche.",
-    ["T"] = "Que se passe-t-il ?",
+    ["T"] = "Qu\'est-ce qui se passe ?",
   },
   [4002] = {
     ["D"] = "Vous apportez d\'excellents renseignements, $N.$B$BEn tant que Chef de guerre, il est de mon devoir d\'accomplir ce qu\'il y a de mieux pour la Horde. De m\'assurer que les générations qui nous suivent ne soient pas astreintes à une existence sans espoir.$B$BLa possibilité de construire nos alliances futures nous échoit à tous. Un geste d\'aide envers les nains pourrait fortement renforcer nos liens avec les royaumes de l\'Est. Voici la raison pour laquelle vous ne devez pas échouer !$B$BÊtes-vous $Gprêt:prête; ?",
@@ -10020,7 +10020,7 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Un sauvetage royal",
   },
   [4004] = {
-    ["D"] = "Vous avez assassiné mon mari, $R ! Mon enfant naîtra et grandira dans ce monde sans avoir de père.$B$B<La princesse Moira vous montre du doigt.>$B$BJe vous jure pourtant que cet enfant sera le prochain souverain du royaume de Forgefer. Vous et ceux de votre espèce seront chassés et abattus comme des chiens, sans répit et sans merci.$B$B<Vous pensez que la princesse Moira souffre peut-être des effets résiduels du sort de Thaurissan.>$B$BLaissez-moi, $R. Je pense que votre chef de guerre est avide de connaître le résultat de son ingérence.",
+    ["D"] = "Retourner voir Thrall à Fort Grommash, à Orgrimmar.",
     ["O"] = "Retourner voir Thrall à Fort Grommash, à Orgrimmar.",
     ["T"] = "La Princesse sauvée ?",
   },
@@ -10045,7 +10045,7 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Un goût de flammes",
   },
   [4024] = {
-    ["D"] = "Je souhaite goûter aux flammes ardentes de la montagne de feu. Laisser la lave fondue cascader tout le long de mon être. Cette essence, cette chaleur fulgurante, c\'est cela dont j\'ai soif.$B$BBael\'Gar demeure dans les Profondeurs de Rochenoire : un être fait de flammes pures, né des feux de Ragnaros. Tuez Bael\'Gar et extrayez de ses restes brûlants son feu intérieur.$B$BServez-vous de l\'écaille pour arracher sans danger le feu intérieur à sa dépouille.$B$BSi vous réussissez à me le rapporter, vous serez $Grécompensé:récompensée;.",
+    ["D"] = "Partez pour les Profondeurs de Rochenoire et tuez Bael\'Gar.$B$BVous savez seulement que le géant demeure à l\'intérieur des Profondeurs de Rochenoire. N\'oublier pas d\'utiliser l\'Ecaille des dragons noirs altérée pour capturer l\'Essence ardente.$B$BApporter l\'Essence ardente recouverte à Cyrus Lerepenti.",
     ["O"] = "Partez pour les Profondeurs de Rochenoire et tuez Bael\'Gar.$B$BVous savez seulement que le géant demeure à l\'intérieur des Profondeurs de Rochenoire. N\'oublier pas d\'utiliser l\'Ecaille des dragons noirs altérée pour capturer l\'Essence ardente.$B$BApporter l\'Essence ardente recouverte à Cyrus Lerepenti.",
     ["T"] = "Un goût de flammes",
   },
@@ -10070,7 +10070,7 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "La révolte des machines",
   },
   [4081] = {
-    ["D"] = "Par ordre du chef de guerre Sangredent, commandant du Corps Expéditionnaire de Kargath :$B$BTous les membres des forces du général Forgehargne présents dans les Profondeurs de Rochenoire doivent être annihilés.$B$BLes hommes de Forgehargne sont des tueurs de sang-froid, responsables du massacre de masse de la 109e division du corps expéditionnaire de Kargath. Les héros doivent exercer avec une prudence extrême lorsqu\'ils combattent ces brutes.$B$BQuiconque détruira la première ligne des forces du général Forgehargne dans les Profondeurs de Rochenoire recevra un tribut.",
+    ["D"] = "Pénétrez dans les Profondeurs de Rochenoire et tuez les vils agresseurs !$B$BLe chef de guerre Sangredent veut que vous tuiez 15 Gardes ragenclumes, 10 Gardiens ragenclumes et 5 Fantassins ragenclumes. Retourner le voir une fois votre mission accomplie.",
     ["O"] = "Pénétrez dans les Profondeurs de Rochenoire et tuez les vils agresseurs !$B$BLe chef de guerre Sangredent veut que vous tuiez 15 Gardes ragenclumes, 10 Gardiens ragenclumes et 5 Fantassins ragenclumes. Retourner le voir une fois votre mission accomplie.",
     ["T"] = "TUER À VUE : nains sombrefers",
   },
@@ -12187,7 +12187,7 @@ pfDB["quests"]["frFR"] = {
   [5307] = {
     ["D"] = "Si je ne m\'étends pas avec vous, j\'ai une bonne raison. Les plans pour la création de la grande lame, Corruption, ont été volés par la Garde noire : des unités squelettes d\'élite du baron Vaillefendre.$B$BOui, le baron Vaillefendre de Stratholme.$B$BLe fabricant d\'épées de la Garde noire détient à présent ces plans, et il donnerait sa... non-vie pour les protéger.$B$BTuez-le et rapportez-moi la preuve de votre exploit. Je vous enseignerai alors l\'art de la fabrication de la rapière flamboyante !",
     ["O"] = "Trouver le Fabricant d\'épées de la Garde noire à Stratholme et le tuer. Récupérer l\'Insigne de la Garde noire et retourner auprès de Seril Plaie-du-Fléau.",
-    ["T"] = "Corruption",
+    ["T"] = "la corruption",
   },
   [5321] = {
     ["D"] = "J\'étais parti en direction du poste de Maestra pour rencontrer Liladris Ondelune lorsque je décidai de m\'arrêter et de me reposer un peu. Depuis que je me suis extirpé du Rêve d\'émeraude, j\'ai tout le temps sommeil…$B$B<bâille>$B$BAuriez-vous l\'obligeance de me montrer le chemin ? Je crois que le poste de Maestra est au sud, près de la route d\'Orneval. Cela peut-être dangereux, j\'espère que vous avez des amis pour nous accompagner.$B$BIl se peut que je m\'endorme, alors pour me réveiller, utilisez ma corne, qui est dans ce coffre.",
@@ -19420,7 +19420,7 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "La bénédiction d\'Élune",
   },
   [8869] = {
-    ["D"] = "Aller jusqu\'à Stratholme et tuer le Forgeur de marteaux cramoisi. Récupérer son Tablier et le rapporter à Lilith.",
+    ["D"] = "Aller jusqu\'à Stratholme et tuer le Forgeur de marteaux cramoisi. $B$BRécupérer son Tablier et le rapporter à Lilith.",
     ["O"] = "Aller jusqu\'à Stratholme et tuer le Forgeur de marteaux cramoisi. Récupérer son Tablier et le rapporter à Lilith.",
     ["T"] = "Douce sérénité",
   },

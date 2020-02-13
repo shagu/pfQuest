@@ -1826,9 +1826,6 @@ pfDB["quests"]["enUS-tbc"] = {
   [2701] = {
     ["D"] = "Please, take from this a relic of old. We no longer have a use for the item.$B$BMay it serve you well in your fight against the legion.",
   },
-  [2741] = {
-    ["O"] = " ",
-  },
   [2751] = {
     ["O"] = "Bring two Patterned Bronze Bracers, two Bronze Greatswords, and two Sharp Claws to Orokk Omosh in Orgrimmar.",
   },
@@ -2610,10 +2607,6 @@ pfDB["quests"]["enUS-tbc"] = {
   [8153] = {
     ["D"] = "The courser wears the mightiest antlers in the known lands.  Such antlers are used to defend the courser, goring an attacker and often damaging the points.  Perfect, natural antlers are the sign of an animal spirit with supreme confidence.$b$bTo hold such antlers will bestow the same confidence in you.$b$bHunt the mosshoof courser, find the perfect antlers and bring them to me.",
   },
-  [8196] = {
-    ["D"] = "The extremely potent essence mango grows across many of the islands in the South Seas. A single mango will refresh those who eat it, both physically and mentally. If you\'ve never had one, you do yourself a disservice!",
-    ["O"] = "We have enough of a supply here on the isle to offer you a handful in exchange for a Zandalar Honor Token. Speak with Vinchaxa if you need to learn how to get tokens; otherwise, let\'s get to the business at hand!",
-  },
   [8230] = {
     ["D"] = "",
     ["O"] = "",
@@ -2642,14 +2635,6 @@ pfDB["quests"]["enUS-tbc"] = {
   },
   [8242] = {
     ["D"] = "",
-  },
-  [8243] = {
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
-  },
-  [8246] = {
-    ["D"] = "May - for someone as exalted among the Zandalar as you are, I have something very special for you. Direct from our home in the South Seas... the Signets of the Zandalar! These signets are used to enhance any shoulder item you may possess. Should you seek might, mojo, or serenity - I have what you need!",
-    ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
   },
   [8250] = {
     ["D"] = "Archmage Xylem has been asking around lately... for someone of your experience.$b$bIf you wish to seek him out, you can find him in Azshara.  His tower is built high atop the cliffs, and the only way up is a teleport spell invoked by his arrogant servant, Sanath Lim-yo.$b$bSanath makes camp below his master\'s tower.  To find him, travel to where Azshara\'s main road forks at the entrance to the Ruins of Eldarath.  From that spot, head directly north until you reach the cliffs.",
@@ -3083,9 +3068,6 @@ pfDB["quests"]["enUS-tbc"] = {
   [8501] = {
     ["O"] = "Kill 30 Hive\'Ashi Stingers and report back to Commander Mar\'alith at Cenarion Hold in Silithus.  You must also bring Combat Task Briefing XII in order to complete this quest.",
   },
-  [8510] = {
-    ["O"] = "Bring 20 arthas\' tears to Sergeant Major Germaine at the airfield in Dun Morogh.",
-  },
   [8512] = {
     ["T"] = "The Alliance Needs More Light Leather!",
   },
@@ -3185,9 +3167,6 @@ pfDB["quests"]["enUS-tbc"] = {
     ["D"] = "The keeper awaits your return, $N. Take the green scepter shard to Anachronos at the Caverns of Time.",
     ["O"] = "Take the Green Scepter Shard to Anachronos at the Caverns of Time in Tanaris.",
   },
-  [8742] = {
-    ["D"] = "",
-  },
   [8772] = {
     ["O"] = "Slay 30 Hive\'Zora Waywatchers and report back to Commander Mar\'alith at Cenarion Hold in Silithus.  You must also bring Combat Task Briefing VI in order to complete this quest.",
   },
@@ -3215,12 +3194,6 @@ pfDB["quests"]["enUS-tbc"] = {
   },
   [8802] = {
     ["D"] = "To the Caverns of Time you go, $G Lord:Lady; $N. Anachronos awaits your return. Give him the eye of C\'Thun as he will undoubtedly wish to place it in his master\'s collection.",
-  },
-  [8827] = {
-    ["D"] = "I hear Greatfather Winter - with the generous support of Smokeywood Pastures - has put presents for everyone under the tree in Ironforge. I wish I could go, but I\'ve got to look after the PX-238 Winter Wondervolt.$b$bBut you should definitely check it out. I\'m sure Greatfather Winter has some presents with your name on them.",
-  },
-  [8828] = {
-    ["D"] = "I hear Great-father Winter - with the generous support of Smokeywood Pastures - has put presents for everyone under the tree in Orgrimmar. I wish I could go, but I\'ve got to look after the PX-238 Winter Wondervolt.$b$bBut you should definitely check it out. I\'m sure Great-father Winter has some presents with your name on them.",
   },
   [8829] = {
     ["O"] = "Bring a Skin of Shadow, 3 Frayed Abomination Stitchings and 1 Twilight Cultist Robe to Aurel Goldleaf at Cenarion Hold in Silithus.  You must also bring Logistics Task Briefing XI in order to complete this quest.",

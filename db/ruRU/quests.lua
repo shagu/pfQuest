@@ -1710,7 +1710,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Мельницы с привидениями",
   },
   [363] = {
-    ["D"] = "Ты вовремя $Gпришел:пришла; в себя. Мы собирались уже швырнуть тебя в огонь вместе с остальными, но, похоже, тебе посчастливилось избежать этой участи. $B$BМеня зовут Мордо, я смотритель склепа Могильника. А ты больше не $Gраб:рабыня; Короля-лича. $B$BПоговори с жрецом Тени Сарвисом в часовне у подножья холма, он расскажет тебе о том, что тебе нужно знать.$B$BЧтобы выбраться из склепа, поднимайся наверх по ступенькам. Затем следуй вниз по дороге, пока не найдешь часовню.",
+    ["D"] = "About time you woke up. We were ready to toss you into the fire with the others, but it looks like you made it.$B$BI am Mordo, the caretaker of the crypt of Deathknell. And you are the Lich King\'s slave no more.$B$BSpeak with Shadow Priest Sarvis in the chapel at the base of the hill, he will tell you more of what you must know.",
     ["O"] = "Поговорите с жрецом Тени Сарвисом.",
     ["T"] = "Резкое пробуждение",
   },
@@ -2610,7 +2610,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Битва за Хилсбрад",
   },
   [551] = {
-    ["D"] = "На этот пергамент наложено заклинание, из-за чего надписи на нем невозможно расшифровать. Вы можете разобрать только одно слово вверху страницы: $B$B$BНагаз$B$B",
+    ["D"] = "На этот пергамент наложено заклинание, из-за чего надписи на нем невозможно расшифровать. Вы можете разобрать только одно слово вверху страницы: $B$BНагаз$B$B",
     ["O"] = "Отнесите заколдованный пергамент Хранителю мудрости Диббсу в Южнобережье, что в Предгорьях Хилсбрада.",
     ["T"] = "Заколдованный пергамент",
   },
@@ -5820,7 +5820,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Подозрительные следы копыт",
   },
   [1269] = {
-    ["D"] = "Солнечный зайчик блеснул в глаза из под обломков. Вы достаете из-под мусора бляху с золотым якорем на белой эмали – символом Терамора.$B$BПод якорем выбито имя владельца: \"Лейтенант Павал Рит\".",
+    ["D"] = "A glint of light on the ground catches your eye from underneath the rubble. Brushing debris and ash caked onto the object reveals the insignia of a gold anchor on white, enameled on the surface: the sign of Theramore.$B$BUnderneath the anchor is embossed the name \"Lieutenant Paval Reethe\".",
     ["O"] = "Принесите бляху Рита Крогу в деревню Гиблотопь.",
     ["T"] = "Лейтенант Павал Рит",
   },
@@ -6550,7 +6550,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Догран в плену",
   },
   [1516] = {
-    ["D"] = "Что ж, |3-6($C), пора! Ты $Gнабрался:набралась; сил, твой дух стоек, как сама Земля. А то, что тобою избран путь шамана – само по себе доказательство твоей мудрости.$B$BСтихия земли будет управлять твоей судьбой, станет частью тебя. $GГотов:Готова; ли ты? Тебе придется предстать перед самой Землей. И тогда ты увидишь многое, что ведомо лишь шаманам.$B$BРазыщи на севере ловцов скверны и добудь два их копыта. А потом возвращайся ко мне, и мы обсудим твое будущее.",
+    ["D"] = "The time is now, young $c. You\'ve grown strong and your spirit endures like the earth. Following the shaman\'s path shows you have wisdom before even proving yourself.$B$BThe element of earth will guide your destiny, becoming part of you if you are ready. But you must stand before the earth itself. If you are ready, then you will see things only shaman know of.$B$BSeek out the Felstalkers to the north, and take from them two of their hooves. Return to me then, and we shall speak more of your future.$B",
     ["O"] = "Принесите Канаге заклинателю земли 2 копыта ловцов Скверны.",
     ["T"] = "Зов Земли",
   },
@@ -7145,7 +7145,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Части шара Орахила",
   },
   [1800] = {
-    ["D"] = "Если мы хорошо себя ведем, то попечительницы сирот рассказывают нам на ночь сказки про славные сражения и про мирные времена. В одной из легенд говорилось о том, как пал Лордерон и как злобный Артас отнял жизнь у собственного отца, чтобы захватить трон.$B$BБесчестный человек! Когда я вырасту и стану великим воином Орды, мной будет править лишь закон чести, а не зло!$B$BПокажи мне его тронный зал! Он находится как раз перед входом в Подгород.",
+    ["D"] = "Отведите своего подопечного в старый тронный зал Лордерона, который находится как раз у входа в Подгород.",
     ["O"] = "Отведите своего подопечного в старый тронный зал Лордерона, который находится как раз у входа в Подгород.",
     ["T"] = "Тронный зал Лордерона",
   },
@@ -7321,7 +7321,7 @@ pfDB["quests"]["ruRU"] = {
   },
   [1883] = {
     ["D"] = "Ун\'Тува, маг деревни Сен\'джин, обнаружил изменения в потоках магической энергии Дуротара и просит тебя о помощи. Поговори с ним и сделай все, что сможешь.$B$BПриди к нему на помощь, и со временем тебе откроются великие тайны.",
-    ["O"] = "Поговорите с Ун\'Тувой.",
+    ["O"] = "Разговор с Ун\'Тувой",
     ["T"] = "Разговор с Ун\'Тувой",
   },
   [1884] = {
@@ -7620,7 +7620,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Восстановление ожерелья",
   },
   [2205] = {
-    ["D"] = "Значок? А, это ерунда, рыбка – ничего такого, что было бы тебе не по силам. Ты выглядишь так, что Матиас может принять тебя за $Gторговца:торговку; сыром. Тебя, детка, вряд ли можно счесть настоящим разбойником. Однако у меня есть для тебя работа, и я хочу, чтобы она была выполнена.$B$BК делу! Доставь этот пакет Матиасу: возможно, у него тоже найдется для тебя пара заданий.$B$BНе задерживайся!",
+    ["D"] = "The badge? Oh, it\'s nothing, fish - nothing you could handle anyhow. By the looks of you, I\'d say Mathias is likely to mistake you for the cheese delivery $g boy:girl; instead of a proper rogue. Regardless, I\'ve been assigned a job and I\'ve made a promise to deliver on that job.$B$BSpeaking of which, deliver this package to Mathias and he may give you a small task or two.$B$BGet cracking. $B",
     ["O"] = "Доставьте пакет от Керина Сильвиуса мастеру Матиасу Шоу в казармы Штормграда.",
     ["T"] = "Выход на ШРУ",
   },
@@ -7630,7 +7630,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Держи-хватай!",
   },
   [2218] = {
-    ["D"] = "Еще одна заблудшая душа, стало быть, ищет наставничества? Полагаю, ты хочешь найти смысл жизни – смысл твоей жизни. Я тысячу раз видел, как другие герои искали работу.$B$BЧто же, сегодня тебе повезло. У Хограла найдется лекарство для твоего недуга.$B$BВот что ты сделаешь: иди по этой дороге до Стальгорна и там зайди в Заброшенный грот. Как окажешься там, найди воровскую гильдию и переговори с Хальфданом Чернобородом. Он укажет тебе путь к спасению.",
+    ["D"] = "Another lost soul looking for guidance, eh? I suppose you want to find a purpose - your purpose. I\'ve seen it a thousand times, another hero looking for work.$B$BWell, today\'s your lucky day, friend. Hogral\'s got the cure for your ailment.$B$BHere\'s what you do: Take this road here up to Ironforge and make your way to the Forlorn Cavern. Once there, locate the thieves\' guild and speak with Hulfdan Blackbeard. He\'ll put you on the road to salvation.$B",
     ["O"] = "Поговорите с Хальфданом Чернобородом в Стальгорне.",
     ["T"] = "Путь к спасению",
   },
@@ -7640,7 +7640,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Простая уловка",
   },
   [2239] = {
-    ["D"] = "Рудник? Да, видел я, как эти жуткие бронированные паровые танки проходят к этому пункту каждый день.$B$BМои информаторы с востока доносят, что танк выходит из Стальгорна, заходит в карьер Гол\'Болар, останавливается на перезаправку в Караносе, а потом орк знает зачем делает большой крюк вокруг Гномрегана, прежде чем вернуться в Стальгорн и разгрузиться.$B$BВсе в этом донесении, |3-6($R). Отнеси его Хальфдану, чтобы он смог обдумать следующий шаг.",
+    ["D"] = "The Quarry? Yap, I see those monstrous armored steam tanks come by this post near every day.$B$BMy contacts to the east tell me that the tank starts off at Ironforge, makes a pickup at the Gol\'Bolar Quarry, stops over at Kharanos to refuel and then for some blasted reason, it takes the long way around past Gnomeregan, before reaching Ironforge to drop off the shipment.$B$BIt\'s all in the report, $r. Take it back to Hulfdan so he can plan the next step.$B",
     ["O"] = "Доставьте донесение Онина Хальфдану в Стальгорн.",
     ["T"] = "Донесение Онина",
   },
@@ -7780,22 +7780,22 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Поиски Изувеченной Длани",
   },
   [2379] = {
-    ["D"] = "Одной твоей решимости еще недостаточно, чтобы преодолеть препятствия, которые ждут впереди.$B$BПоговори с Зандо\'заном, чтобы начать учиться на агента Изувеченной Длани.$B$BЛишь овладев навыками незаметности и коварства, ты сможешь сделать следующий шаг.",
+    ["D"] = "Your determination alone is not enough to overcome the obstacles that lay ahead of us.$B$BSpeak with Zando\'zan to begin your training as an operative of the Shattered Hand.$B$BIt is only when you have mastered the practices of stealth and thievery that you may take the next step towards your destiny.$B",
     ["O"] = "Поговорите с Зандо\'заном в расселине Теней.",
     ["T"] = "Зандо\'зан",
   },
   [2380] = {
-    ["D"] = "Ты, конечно, далеко еще не специалист по скрытности и всяким уловкам, однако же тебе есть куда расти. По крайней мере, начальство явно обратило на тебя внимание: сам великий Шентул запомнил твое имя!$B$BСтупай на север – эта дорога ведет в Оргриммар. Отыщи там в расселине Теней Шентула и поговори с ним.",
+    ["D"] = "A master of stealth and deception you are not, however, all of that can and will change. You\'ve obviously impressed those in charge with your meager skills, as the great Shenthul has asked for you by name.$B$BTake the road north of here to Orgrimmar and speak with Shenthul in the Cleft of Shadow.$B",
     ["O"] = "Поговорите с Шентулом в расселине Теней в Оргриммаре.",
     ["T"] = "В Оргриммар!",
   },
   [2381] = {
-    ["D"] = "Не хочу тебя пугать, $N, но последние пять воров, которым я поручил похитить сокровище Южного моря, не вернулись. Потом их нашли... Частично.$B$BВ южной части побережья пришвартован пиратский корабль, \"Стрела прилива\". В трюме у него хранится то самое сокровище. На второй палубе устроен пиратский притон, в котором они натаскивают своих воров.$B$BПроникни на этот корабль, похить сокровище и принеси его мне. Если тебе надо поднатореть в воровском искусстве, можешь заглянуть в притон, но соблюдай осторожность!",
+    ["D"] = "Принесите Рениксу Презренному из Кабестана сокровище Южного моря. Не забудьте взять из гизмотронного аппарата Реникса Х.О.Ч.У и отмычки. Они понадобятся для выполнения задания.$B$BЕсли на вас нападут необычайно враждебные попугаи, воспользуйтесь Х.О.Ч.У.!",
     ["O"] = "Принесите Рениксу Презренному из Кабестана сокровище Южного моря. Не забудьте взять из гизмотронного аппарата Реникса Х.О.Ч.У и отмычки. Они понадобятся для выполнения задания.$B$BЕсли на вас нападут необычайно враждебные попугаи, воспользуйтесь Х.О.Ч.У.!",
     ["T"] = "Грабь награбленное",
   },
   [2382] = {
-    ["D"] = "Зандо\'зан это видел! Да, день близок! Смерть Тралла... кинжал в его спине, яд в его кубке... Но Зандо\'зан слишком много болтает.$B$B$N! У Зандо\'зана есть поручение для тебя! $N $Gдолжен:должна; отправиться в Кабестан, к востоку от Перекрестка, и поговорить с Рениксом Презренным. Ступай!",
+    ["D"] = "Zando\'zan has seen it! Yes, the day comes! Thrall\'s death... the dagger in his back, poison seeping through to his every vein... Zando\'zan has said too much.$B$B$N! Zando\'zan has a task for $N! $N must travel to Ratchet, east of the Crossroads, and speak with Wrenix the Wretched. Go!$B",
     ["O"] = "Поговорите с Рениксом Презренным в Кабестане, что в Степях.",
     ["T"] = "Реникс из Кабестана",
   },
@@ -8010,7 +8010,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Пропавшие приказы",
   },
   [2623] = {
-    ["D"] = "Приказы были отданы командиром-посланником. Мы приняли... приняли приказы. На пути в Выжженные земли – засада.$B$BМурлоки... много мурлоков... Одного звали Болотный Говорун. Вырвал приказы у меня из рук, ударил копьем мне в голову. Восток... пещера...$B$B*Бенгор теряет сознание.*",
+    ["D"] = "Orders were given by the dispatch commander. We took... took orders. On way to Blasted Lands, ambushed.$B$BMurlocs... Many murlocs... One named Swamp Talker. Took orders from my hands as spear thrust into my skull. East... cave....$B$B<Bengor passes out.>$B",
     ["O"] = "Заберите приказы Вождя и верните их павшему герою Орды.",
     ["T"] = "Болотный говорун",
   },
@@ -8250,7 +8250,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Знак качества",
   },
   [2841] = {
-    ["D"] = "О-о, гномьи технологии! Еще пару лет назад они использовались в основном в анекдотах. Да уж, времена изменились! Теперь они выстроили такую машину, которая лучше, чем все наши крошшеры вместе взятые! Мне нужны ее чертежи, $N!$B$BУвы, эти бумаги хранятся в сейфе Анжинера Термоштепселя. А что хуже всего – код от сейфа известен только самому Термоштепселю!$B$BДелай что хочешь, $N, но добудь этот код, открой сейф и достань оттуда эти чертежи!",
+    ["D"] = "Добудьте в Гномрегане чертежи боевой машины и код от сейфа Термоштепселя в Гномрегане и принесите их Ноггу в Оргриммар.",
     ["O"] = "Добудьте в Гномрегане чертежи боевой машины и код от сейфа Термоштепселя в Гномрегане и принесите их Ноггу в Оргриммар.",
     ["T"] = "Техновойны",
   },
@@ -8260,7 +8260,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Главный инженер Скути",
   },
   [2843] = {
-    ["D"] = "Пока импульсный повторитель у тебя с собой, стоит только ступить на площадку, и перенесешься в Гномреган.$B$BМожет быть, ощущения будут необычные, но ни одно из них не останется навсегда... Теперь.$B$BЧуть не забыл самое главное – как вернуться назад. Когда ты решишь уносить ноги, поднимись на площадку транстелепорта в Гномрегане!$B$BА теперь я настрою импульсный повторитель на твой рост и вес.",
+    ["D"] = "As long as you have the transponder in your possession, all you need to do is step on the pad and you\'ll be teleported to Gnomeregan.$B$BYou may experience some unusual side effects, but none of those should be permanent... anymore.$B$BI almost forgot the most important part - getting back. When you\'re ready to come back, just step on the transpolyporter pad in Gnomeregan!$B$BNow to calibrate the transponder to your size and weight.$B",
     ["O"] = "Дождитесь, пока Скути настроит гоблинский импульсный повторитель.",
     ["T"] = "Поехалиии!",
   },
@@ -8905,7 +8905,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Гниющий пергамент",
   },
   [3091] = {
-    ["D"] = "Привет, $N! Слушай, минуту назад ко мне подошел посыльный и передал вот эту записку для тебя. Думаю, она от наставника воинов Харутта. На твоем месте я бы прочитал ее поскорее.",
+    ["D"] = "Just a moment ago a messenger was looking for you, $N. I believe she was sent by the warrior trainer Harutt. If this note is from Harutt, I wouldn\'t take long in reading it\'s contents.$B",
     ["O"] = "Прочтите простую записку и поговорите с Харуттом Громовым Рогом в Лагере Нараче.",
     ["T"] = "Простая записка",
   },
@@ -11241,7 +11241,7 @@ pfDB["quests"]["ruRU"] = {
   },
   [4862] = {
     ["D"] = "Верь – не верь, но есть народ, который готов отлично заплатить за необычную зверушку, причем чем она злее, тем лучше!$B$BЯ послал на пик Черной горы Блестяшку, чтобы собрать паучьи яйца, но она уже несколько недель не возвращается. Может, ты придешь ей на выручку?$B$BВот что, $N. Ступай-ка туда и принеси мне паучьи яйца. Я тебе не только хорошо заплачу, но еще и приручу для тебя одного паучка!",
-    ["O"] = "Отправьтесь на пик Черной горы и принесите Киблеру 15 яиц скального паука.$B$BСудя по всему, яйца надо искать недалеко от пауков.",
+    ["O"] = "Travel to Blackrock Spire and collect 15 Spire Spider Eggs for Kibler.$B$BBy the sound of it, these eggs could be found near spiders.$B",
     ["T"] = "Товар на любителя",
   },
   [4863] = {
@@ -11575,7 +11575,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Шапка Алого Ученого",
   },
   [5064] = {
-    ["D"] = "$N, ты уже $Gпомог:помогла; нам, поэтому я доверю тебе еще одно важное задание. Клан Зловещий Тотем явно что-то замышляет: недавно мы видели, как в их поселение приходили какие-то странные путники. Потом нам удалось узнать, что важные записи они хранят в трех разных сундуках Пика Темного Облака.$B$BЕсли тебе удастся достать эти документы, я щедро тебя вознагражу.",
+    ["D"] = "$N, you have served us well in the past, so I now entrust to you an important mission. The Grimtotem Clan is up to something secretive. Three agents of unknown origin were seen visiting the Grimtotem over the recent weeks. We discovered that separate chests in Darkcloud Pinnacle hold these guarded messages.$B$B$N, if you succeed in this dangerous mission, I will reward you in kind.$B",
     ["O"] = "Найдите и заберите три тайные записки на Пике Темного Облака.",
     ["T"] = "Наблюдение за Зловещим Тотемом",
   },
@@ -11925,8 +11925,8 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Плоть не лжет",
   },
   [5213] = {
-    ["D"] = "Тебе предстоит углубиться еще дальше в кварталы Стратхольма, $N. B$BЗа первыми воротами ты увидишь зиккураты. Известно, что твари Плети черпают из этих сооружений великую силу. Обыщи зиккураты и расскажи мне обо всем, что там увидишь.",
-    ["O"] = "Отправляйтесь в Стратхольм и исследуйте зиккураты. Доставьте сведения о Плети Бетине Биггльцинк.",
+    ["D"] = "You will have to delve deeper into Stratholme, $N.$B$BBeyond the first gates you will find the ziggurats. We know that the Scourge draws great power from these structures. Search the Ziggurats and return with any information that you may discover.$B",
+    ["O"] = "Travel to Stratholme and search the ziggurats. Find and return new Scourge Data to Betina Bigglezink.$B",
     ["T"] = "Вирус чумы",
   },
   [5214] = {
@@ -12325,12 +12325,12 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Рас Ледяной Шепот – лич",
   },
   [5481] = {
-    ["D"] = "Хозяину надо растения. У нас большие руки, цветы рвать никак. Ты нам помогать, мы тебя не трогать. Нам надо мракоцвет, он растет тут и у дороги.$B$BТы соберешь – отнеси хозяину Холланду на кладбище в Брилл.",
+    ["D"] = "Master want weeds. Us gots big hands and not good at picking. You help us and we not hurt you. Us need gloom weed. Many weeds around here and near road.$B$BWhen you have gloom weed you take to Master Holland in Brill graveyard.",
     ["O"] = "Соберите 3 ветки мракоцвета для младшего аптекаря Холланда на кладбище Брилла.",
     ["T"] = "Задание Толстяка",
   },
   [5482] = {
-    ["D"] = "Теперь ты понимаешь, в каком затруднительном положении я нахожусь, $N? Это нечто все еще ходит там и собирает не те растения. Я непременно отблагодарю тебя, если ты соберешь то, что мне нужно. Принеси мне погибельник, и я щедро тебя награжу.$B$BНасколько я знаю, его можно найти у братских могил, к северу от кладбища Брилла. Поторопись – и будь $Gосторожен:осторожна; – в тех местах полно гноллов.",
+    ["D"] = "Соберите 10 веток погибельника для младшего аптекаря Холланда.",
     ["O"] = "Соберите 10 веток погибельника для младшего аптекаря Холланда.",
     ["T"] = "Погибельник",
   },
@@ -12847,7 +12847,7 @@ pfDB["quests"]["ruRU"] = {
   [5762] = {
     ["D"] = "У меня тут посылка для нового покупателя по имени Хеминг Эрнестуэй-младший. Посылка шла очень долго, и Хеминг давно уехал, не дождавшись ее. Говорят, что теперь он где-то в Тернистой долине, охотится там на зверей вместо отца. Перед отъездом он оставил мне немного денег, чтобы я переслал ему посылку.$B$BОн очень богатый дворф, а с такими полезно водить дружбу, правда? Так что... не желаете ли доставить Хемингу эту посылку?$B$BГоворят, он разбил лагерь в Тернистой долине, к северу от Гром\'гола.",
     ["O"] = "Отнесите ящик Крейвела Хемингу Эрнестуэю младшему в Тернистую долину.",
-    ["T"] = "Хеминг Эрнестуэй младший",
+    ["T"] = "Хеминг Эрнестуэй",
   },
   [5763] = {
     ["D"] = "Давным-давно пришел в эти земли дворф. Звали его Хеминг, и он хотел поохотиться на крупного зверя. С ружьем он умел обращаться просто великолепно, и много дней мы охотились с ним вместе, забыв даже о вражде, разделявшей наши народы…$B$BКогда он уходил в Тернистую долину, я поклялся, что, когда бы он ни вернулся, я встречу его как дорогого гостя. Ныне он отправился охотиться в неведомые земли, но успел воспитать сына, достойного отцовской славы.$B$BОтнеси этот рог кодо в подарок Хемингу-младшему. Ты найдешь его в Тернистой долине, к северу от лагеря Гром\'гол.",
@@ -13290,7 +13290,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Обучение зверя",
   },
   [6082] = {
-    ["D"] = "Последнее животное, которое тебе придется приручить, – это панцирный скорпид. Тебе придется частенько с ними сражаться. Но ты, будучи $Gохотником:охотницей;, $Gдолжен:должна; уметь повелевать и такими существами.$B$BКогда ты вернешься, я обучу тебя всему, что потребуется, чтобы приручить животное по твоему выбору. Выбранный тобой зверь будет набираться опыта и становиться сильнее. А еще я покажу тебе, как призывать его и отпускать на волю, когда в нем не будет надобности.",
+    ["D"] = "The final creature you need to tame is one you should strive to emulate; the armored scorpid. It strikes quickly and confidently; to control a force such as this is your fate as a hunter.$B$BWhen you return, I will bestow you with the skills you will need to tame an animal of your choosing; this creature will be yours to command. Under your control, your pet will gain experience alongside you. I will also show you how to call it and dismiss it as you wish.$B",
     ["O"] = "Приручите панцирного скорпида с помощью хлыста приручения. Потренируйтесь, потом вернитесь к Тотару в Колючем Холме.",
     ["T"] = "Приручение зверя",
   },
@@ -16165,7 +16165,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Ресурсы Низины Арати",
   },
   [8081] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "Войну выигрывают солдаты – любой солдат вам это скажет. Скажет он вам и то, что битва, которую ведут с плохим оружием или на пустой желудок, проиграна прежде, чем началась!$B$BВот почему так важна Низина Арати. В этой низине есть ключевые точки, где сосредоточены важные ресурсы. Металл, оружие, пища, древесина – все это необходимо и все это можно добыть там.$B$BИ вот чего я хочу от вас, $N. Отправляйтесь в Низину Арати, выиграйте битву, удержав больше баз, чем это удастся врагам, и принесите мне ящик с ресурсами.",
     ["O"] = "Выиграйте битву за Низину Арати, добудьте ящик с ресурсами из Арати и принесите его сержанту Макчисту в Опорный пункт.",
     ["T"] = "Новые ящики с ресурсами",
   },
@@ -16285,7 +16285,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Перекрыть линии поставок Аратора",
   },
   [8124] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "Лига Аратора не жалеет средств в попытке вновь захватить контроль над Арати. Они, вместе со всеми расами Альянса, стекаются сейчас в эту отдаленную область, намереваясь распространить свои владения за пределы Опорного пункта. Мы должны остановить их, а наилучшее средство для этого – захватить их припасы.$B$BВы, $N, можете нам помочь. Отправляйтесь в Низину Арати, известную своими богатыми рудниками, плодородными почвами и умелыми ремесленниками. Захватите и удерживайте под своим контролем те базы, которые сможете, выиграйте битву и возвращайтесь ко мне с ресурсами, которые вам удастся добыть.",
     ["O"] = "Выиграйте битву за Низину Арати, добудьте ящик с ресурсами из Арати и принесите его стражу смерти Мортису в Павший Молот.",
     ["T"] = "Новые ящики с ресурсами",
   },
@@ -16365,17 +16365,17 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Ресурсы Низины Арати",
   },
   [8157] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "Войну выигрывают солдаты – любой солдат вам это скажет. Скажет он вам и то, что битва, которую ведут с плохим оружием или на пустой желудок, проиграна прежде, чем началась!$B$BВот почему так важна Низина Арати. В этой низине есть ключевые точки, где сосредоточены важные ресурсы. Металл, оружие, пища, древесина – все это необходимо и все это можно добыть там.$B$BИ вот чего я хочу от вас, $N. Отправляйтесь в Низину Арати, выиграйте битву, удержав больше баз, чем это удастся врагам, и принесите мне ящик с ресурсами.",
     ["O"] = "Выиграйте битву за Низину Арати, добудьте ящик с ресурсами из Арати и принесите его сержанту Макчисту в Опорный пункт.",
     ["T"] = "Новые ящики с ресурсами",
   },
   [8158] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "Войну выигрывают солдаты – любой солдат вам это скажет. Скажет он вам и то, что битва, которую ведут с плохим оружием или на пустой желудок, проиграна прежде, чем началась!$B$BВот почему так важна Низина Арати. В этой низине есть ключевые точки, где сосредоточены важные ресурсы. Металл, оружие, пища, древесина – все это необходимо и все это можно добыть там.$B$BИ вот чего я хочу от вас, $N. Отправляйтесь в Низину Арати, выиграйте битву, удержав больше баз, чем это удастся врагам, и принесите мне ящик с ресурсами.",
     ["O"] = "Выиграйте битву за Низину Арати, добудьте ящик с ресурсами из Арати и принесите его сержанту Макчисту в Опорный пункт.",
     ["T"] = "Новые ящики с ресурсами",
   },
   [8159] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "Войну выигрывают солдаты – любой солдат вам это скажет. Скажет он вам и то, что битва, которую ведут с плохим оружием или на пустой желудок, проиграна прежде, чем началась!$B$BВот почему так важна Низина Арати. В этой низине есть ключевые точки, где сосредоточены важные ресурсы. Металл, оружие, пища, древесина – все это необходимо и все это можно добыть там.$B$BИ вот чего я хочу от вас, $N. Отправляйтесь в Низину Арати, выиграйте битву, удержав больше баз, чем это удастся врагам, и принесите мне ящик с ресурсами.",
     ["O"] = "Выиграйте битву за Низину Арати, добудьте ящик с ресурсами из Арати и принесите его сержанту Макчисту в Опорный пункт.",
     ["T"] = "Новые ящики с ресурсами",
   },
@@ -16395,17 +16395,17 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Перекрыть линии поставок Аратора",
   },
   [8163] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "Лига Аратора не жалеет средств в попытке вновь захватить контроль над Арати. Они, вместе со всеми расами Альянса, стекаются сейчас в эту отдаленную область, намереваясь распространить свои владения за пределы Опорного пункта. Мы должны остановить их, а наилучшее средство для этого – захватить их припасы.$B$BВы, $N, можете нам помочь. Отправляйтесь в Низину Арати, известную своими богатыми рудниками, плодородными почвами и умелыми ремесленниками. Захватите и удерживайте под своим контролем те базы, которые сможете, выиграйте битву и возвращайтесь ко мне с ресурсами, которые вам удастся добыть.",
     ["O"] = "Выиграйте битву за Низину Арати, добудьте ящик с ресурсами из Арати и принесите его стражу смерти Мортису в Павший Молот.",
     ["T"] = "Новые ящики с ресурсами",
   },
   [8164] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "Лига Аратора не жалеет средств в попытке вновь захватить контроль над Арати. Они, вместе со всеми расами Альянса, стекаются сейчас в эту отдаленную область, намереваясь распространить свои владения за пределы Опорного пункта. Мы должны остановить их, а наилучшее средство для этого – захватить их припасы.$B$BВы, $N, можете нам помочь. Отправляйтесь в Низину Арати, известную своими богатыми рудниками, плодородными почвами и умелыми ремесленниками. Захватите и удерживайте под своим контролем те базы, которые сможете, выиграйте битву и возвращайтесь ко мне с ресурсами, которые вам удастся добыть.",
     ["O"] = "Выиграйте битву за Низину Арати, добудьте ящик с ресурсами из Арати и принесите его стражу смерти Мортису в Павший Молот.",
     ["T"] = "Новые ящики с ресурсами",
   },
   [8165] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "Лига Аратора не жалеет средств в попытке вновь захватить контроль над Арати. Они, вместе со всеми расами Альянса, стекаются сейчас в эту отдаленную область, намереваясь распространить свои владения за пределы Опорного пункта. Мы должны остановить их, а наилучшее средство для этого – захватить их припасы.$B$BВы, $N, можете нам помочь. Отправляйтесь в Низину Арати, известную своими богатыми рудниками, плодородными почвами и умелыми ремесленниками. Захватите и удерживайте под своим контролем те базы, которые сможете, выиграйте битву и возвращайтесь ко мне с ресурсами, которые вам удастся добыть.",
     ["O"] = "Выиграйте битву за Низину Арати, добудьте ящик с ресурсами из Арати и принесите его стражу смерти Мортису в Павший Молот.",
     ["T"] = "Новые ящики с ресурсами",
   },
@@ -17230,17 +17230,17 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Битва за Ущелье Песни Войны",
   },
   [8390] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "Наш конфликт с Альянсом дошел до открытой войны. Никто уже не ищет предлогов, чтобы вступить в бой.$B$BВ Низине Арати идет простая и открытая борьба за ресурсы. Или они попадут в руки Альянса и обратятся в оружие против нас, или их захватим мы и вооружим наши войска! Помоги нам захватить источник ресурсов, $N!",
     ["O"] = "Принесите 3 почетных знака Низины Арати ордынскому вестнику войны рядом со входом на поля боя.",
     ["T"] = "Завоевание Низины Арати",
   },
   [8391] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+    ["D"] = "Чтобы выиграть войну, мало быть быть умнее и хитрее противника. Зачастую победа достается тем, в чьих руках сосредоточены все ресурсы.$B$BРесурсов в Низине Арати – хоть отбавляй. Главное – захватить их первыми.$B$BЕсли победа будет за Альянсом, нашим солдатам достанется больше мечей и копий. Если Орде – те же мечи и копья обратятся против нас! Твой долг помочь Альянсу захватить Низину Арати!",
     ["O"] = "Принесите 3 почетных знака Низины Арати бригадному генералу Альянса рядом со входом на поля боя.",
     ["T"] = "Завоевание Низины Арати",
   },
   [8392] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+    ["D"] = "Чтобы выиграть войну, мало быть быть умнее и хитрее противника. Зачастую победа достается тем, в чьих руках сосредоточены все ресурсы.$B$BРесурсов в Низине Арати – хоть отбавляй. Главное – захватить их первыми.$B$BЕсли победа будет за Альянсом, нашим солдатам достанется больше мечей и копий. Если Орде – те же мечи и копья обратятся против нас! Твой долг помочь Альянсу захватить Низину Арати!",
     ["O"] = "Принесите 3 почетных знака Низины Арати бригадному генералу Альянса рядом со входом на поля боя.",
     ["T"] = "Завоевание Низины Арати",
   },
@@ -17265,12 +17265,12 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Завоевание Низины Арати",
   },
   [8397] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+    ["D"] = "Чтобы выиграть войну, мало быть быть умнее и хитрее противника. Зачастую победа достается тем, в чьих руках сосредоточены все ресурсы.$B$BРесурсов в Низине Арати – хоть отбавляй. Главное – захватить их первыми.$B$BЕсли победа будет за Альянсом, нашим солдатам достанется больше мечей и копий. Если Орде – те же мечи и копья обратятся против нас! Твой долг помочь Альянсу захватить Низину Арати!",
     ["O"] = "Принесите 3 почетных знака Низины Арати бригадному генералу Альянса рядом со входом на поля боя.",
     ["T"] = "Завоевание Низины Арати",
   },
   [8398] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+    ["D"] = "Чтобы выиграть войну, мало быть быть умнее и хитрее противника. Зачастую победа достается тем, в чьих руках сосредоточены все ресурсы.$B$BРесурсов в Низине Арати – хоть отбавляй. Главное – захватить их первыми.$B$BЕсли победа будет за Альянсом, нашим солдатам достанется больше мечей и копий. Если Орде – те же мечи и копья обратятся против нас! Твой долг помочь Альянсу захватить Низину Арати!",
     ["O"] = "Принесите 3 почетных знака Низины Арати бригадному генералу Альянса рядом со входом на поля боя.",
     ["T"] = "Завоевание Низины Арати",
   },
@@ -17300,27 +17300,27 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Битва за Ущелье Песни Войны",
   },
   [8404] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "Среброкрылые Часовые вступили в бой со всадниками из клана Песни Войны, стараясь защитить от них лес. Впрочем, желание сохранить этот лес объсняется не только их любовью к природе.$B$BЭтот лес представляет собой естественную преграду для наступления сил Орды. Без него Астранаар не продержался бы и дня, и в наши земли давно вторглась бы огромная армия Орды.$B$BВнеси свой вклад в борьбу со всадниками из клана Песни Войны, $N! За Альянс!",
     ["O"] = "Принесите 3 почетных знака Ущелья Песни Войны бригадному генералу Альянса рядом со входом на поля боя.",
     ["T"] = "Битва за Ущелье Песни Войны",
   },
   [8405] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "Среброкрылые Часовые вступили в бой со всадниками из клана Песни Войны, стараясь защитить от них лес. Впрочем, желание сохранить этот лес объсняется не только их любовью к природе.$B$BЭтот лес представляет собой естественную преграду для наступления сил Орды. Без него Астранаар не продержался бы и дня, и в наши земли давно вторглась бы огромная армия Орды.$B$BВнеси свой вклад в борьбу со всадниками из клана Песни Войны, $N! За Альянс!",
     ["O"] = "Принесите 3 почетных знака Ущелья Песни Войны бригадному генералу Альянса рядом со входом на поля боя.",
     ["T"] = "Битва за Ущелье Песни Войны",
   },
   [8406] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "Среброкрылые Часовые вступили в бой со всадниками из клана Песни Войны, стараясь защитить от них лес. Впрочем, желание сохранить этот лес объсняется не только их любовью к природе.$B$BЭтот лес представляет собой естественную преграду для наступления сил Орды. Без него Астранаар не продержался бы и дня, и в наши земли давно вторглась бы огромная армия Орды.$B$BВнеси свой вклад в борьбу со всадниками из клана Песни Войны, $N! За Альянс!",
     ["O"] = "Принесите 3 почетных знака Ущелья Песни Войны бригадному генералу Альянса рядом со входом на поля боя.",
     ["T"] = "Битва за Ущелье Песни Войны",
   },
   [8407] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "Среброкрылые Часовые вступили в бой со всадниками из клана Песни Войны, стараясь защитить от них лес. Впрочем, желание сохранить этот лес объсняется не только их любовью к природе.$B$BЭтот лес представляет собой естественную преграду для наступления сил Орды. Без него Астранаар не продержался бы и дня, и в наши земли давно вторглась бы огромная армия Орды.$B$BВнеси свой вклад в борьбу со всадниками из клана Песни Войны, $N! За Альянс!",
     ["O"] = "Принесите 3 почетных знака Ущелья Песни Войны бригадному генералу Альянса рядом со входом на поля боя.",
     ["T"] = "Битва за Ущелье Песни Войны",
   },
   [8408] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "Среброкрылые Часовые вступили в бой со всадниками из клана Песни Войны, стараясь защитить от них лес. Впрочем, желание сохранить этот лес объсняется не только их любовью к природе.$B$BЭтот лес представляет собой естественную преграду для наступления сил Орды. Без него Астранаар не продержался бы и дня, и в наши земли давно вторглась бы огромная армия Орды.$B$BВнеси свой вклад в борьбу со всадниками из клана Песни Войны, $N! За Альянс!",
     ["O"] = "Принесите 3 почетных знака Ущелья Песни Войны бригадному генералу Альянса рядом со входом на поля боя.",
     ["T"] = "Битва за Ущелье Песни Войны",
   },
@@ -17480,22 +17480,22 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Завоевание Низины Арати",
   },
   [8440] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "Наш конфликт с Альянсом дошел до открытой войны. Никто уже не ищет предлогов, чтобы вступить в бой.$B$BВ Низине Арати идет простая и открытая борьба за ресурсы. Или они попадут в руки Альянса и обратятся в оружие против нас, или их захватим мы и вооружим наши войска! Помоги нам захватить источник ресурсов, $N!",
     ["O"] = "Принесите 3 почетных знака Низины Арати ордынскому вестнику войны рядом со входом на поля боя.",
     ["T"] = "Завоевание Низины Арати",
   },
   [8441] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "Наш конфликт с Альянсом дошел до открытой войны. Никто уже не ищет предлогов, чтобы вступить в бой.$B$BВ Низине Арати идет простая и открытая борьба за ресурсы. Или они попадут в руки Альянса и обратятся в оружие против нас, или их захватим мы и вооружим наши войска! Помоги нам захватить источник ресурсов, $N!",
     ["O"] = "Принесите 3 почетных знака Низины Арати ордынскому вестнику войны рядом со входом на поля боя.",
     ["T"] = "Завоевание Низины Арати",
   },
   [8442] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "Наш конфликт с Альянсом дошел до открытой войны. Никто уже не ищет предлогов, чтобы вступить в бой.$B$BВ Низине Арати идет простая и открытая борьба за ресурсы. Или они попадут в руки Альянса и обратятся в оружие против нас, или их захватим мы и вооружим наши войска! Помоги нам захватить источник ресурсов, $N!",
     ["O"] = "Принесите 3 почетных знака Низины Арати ордынскому вестнику войны рядом со входом на поля боя.",
     ["T"] = "Завоевание Низины Арати",
   },
   [8443] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "Наш конфликт с Альянсом дошел до открытой войны. Никто уже не ищет предлогов, чтобы вступить в бой.$B$BВ Низине Арати идет простая и открытая борьба за ресурсы. Или они попадут в руки Альянса и обратятся в оружие против нас, или их захватим мы и вооружим наши войска! Помоги нам захватить источник ресурсов, $N!",
     ["O"] = "Принесите 3 почетных знака Низины Арати ордынскому вестнику войны рядом со входом на поля боя.",
     ["T"] = "Завоевание Низины Арати",
   },
@@ -17525,7 +17525,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Беседа с Нафиэном",
   },
   [8464] = {
-    ["D"] = "Клан Древобрюхов готов постоять за себя, $N. В то время как мы позволяем свободно ходить среди нас тем, кому мы доверяем, мы стараемся по возможности избегать общения с другими племенами фурболгов. $B$BПлемя Зимней Спячки в последнее время становится все более враждебным к нам. Они, похоже, впали в состояние ярости, всецело поглощенные собственным страхом и ненавистью ко всему, чего они не понимают. $B$BЯ вынужден просить вас пробить брешь в их рядах для уменьшения угрозы для нас. Ищите их в деревне Зимней Спячки далеко на восток отсюда.",
+    ["D"] = "Убейте 8 шаманов, 8 дозорных и 8 ведмедей из племени Зимней Спячки по просьбе Сальфы. Он ждет у входа в Крепость Древобрюхов в Зимних Ключах.",
     ["O"] = "Убейте 8 шаманов, 8 дозорных и 8 ведмедей из племени Зимней Спячки по просьбе Сальфы. Он ждет у входа в Крепость Древобрюхов в Зимних Ключах.",
     ["T"] = "Боевые действия в деревне Зимней Спячки",
   },
@@ -20595,7 +20595,7 @@ pfDB["quests"]["ruRU"] = {
     ["T"] = "Пластины из темного железа",
   },
   [9136] = {
-    ["D"] = "Я изготавливаю особые доспехи для наших бравых солдат, входящих в Наксрамас – они называются доспехами сновидца. Обычно у меня нет недостатка в материалах, за исключением диких ростков.$B$BВозможно, ты подумаешь, что эта работа не серьезна, однако без диких ростков создание таких доспехов невозможно.$B$BИ я готова платить за эту работу знаками Рассвета или Марша!",
+    ["D"] = "I make a special type of armor for the brave heroes that enter Naxxramas known as Dreamwalker. They are able to provide me with most of the materials I require but I am always looking for those able to retrieve savage fronds from the flora of our world.$B$BYou may think of this job as beneath you, but without the fronds, the armor could not be made.$B$BI am also in a unique position to pay you with an insignia of your choice as both the Dawn and the Crusade supply me with funds.$B",
     ["O"] = "Принесите 30 диких ростков Райн в Часовню Последней Надежды в Восточные Чумные земли.",
     ["T"] = "Дикая флора",
   },

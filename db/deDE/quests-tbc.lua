@@ -9,10 +9,16 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Schaut später noch einmal nach, ob Sirra immer noch beschäftigt ist.",
     ["T"] = "Sirra ist beschäftigt",
   },
+  [551] = {
+    ["D"] = "Dieses Pergament ist mit einer Verzauberung versehen, die es unlesbar macht. Nur ein Wort oben am Blattanfang ist lesbar:$B$B Nagaz$B$B",
+  },
   [620] = {
     ["D"] = "Auf dem Saum dieser feinen Schärpe sind die Buchstaben \"HS\" eingestickt.",
     ["O"] = "Bringt die Schärpe mit Monogramm zu ihrem Besitzer zurück.",
     ["T"] = "Die Schärpe mit Monogramm",
+  },
+  [624] = {
+    ["D"] = "Eine Brücke verziert und stark frequentiert$BUnter ihr werdet Ihr finden was Euch sehnlichst erwartet$BManche nennen es Hinweis andere Tipp$BEs liegt östlich der Schlucht der Totenwinde und südlich vom Rotkammgebirge$BFür unendliche Zeit genau dort wird es liegen$BIn den Sümpfen des Elends sich für immer wiegen$B$B",
   },
   [636] = {
     ["T"] = "Legenden der Erde <NYI>",
@@ -99,6 +105,9 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "",
     ["T"] = "Die Erweckung von Naralex",
   },
+  [1883] = {
+    ["O"] = "Gespräch mit Un\'thuwa",
+  },
   [2000] = {
     ["D"] = "Ihr habt zu viel Müßiggang, $N. Es ist Zeit, dass Ihr mehr über unser Handwerk lernt. Erst gestern Nacht fand man fünf von uns tot in einer der Spalten in Orgrimmar, aber kaum Hinweise. Es gibt Widerständler gegen uns, die uns mit unseren eigenen Waffen schlagen möchten.$B$BDaher habe ich beschlossen, dass Ihr die Kunst des Schlossknackens lernen sollt.$B$BLeider ist das eine Fertigkeit, für die meine Hände nicht geschaffen sind. Ihr solltet Rokar aufsuchen, der in den Hügeln bei Durotar lebt. Ich glaube, er hat es trotz seines hohen Alters noch drauf.",
     ["O"] = "Sprecht mit Rokar Klingenschatten in Durotar.",
@@ -113,9 +122,6 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Da habt Ihr sie, $N. Sie sollten Euch nützlich sein. Ich habe sie eigenhändig gefertigt und schwöre, Ihr findet keine besseren.$B$BAber sagt mir nichts von Euren Plänen. Therzoks Ränke interessieren mich nicht, ich möchte nur in Frieden meinen Ruhestand genießen.$B$BSolltet Ihr je ein anderes Werkzeugset brauchen, kommt zu mir und ich fertige Euch ein neues an. Aber geht sorgfältig damit um!",
     ["O"] = "Kehrt zu Therzok in der Kluft der Schatten in Orgrimmar zurück.",
     ["T"] = "Werkzeuge des Handwerks",
-  },
-  [2741] = {
-    ["O"] = " ",
   },
   [2999] = {
     ["T"] = "Foliant der Offenbarung",
@@ -194,6 +200,9 @@ pfDB["quests"]["deDE-tbc"] = {
   [5762] = {
     ["D"] = "Ich habe hier eine Sendung für einen alten Kunden von mir, Hemet Nesingwary Jr., ein Zwerg. Die Sendung war wochenlang unterwegs und Hemet ist schon längst wieder weg. Er sagte, dass er ins Schlingendorntal gehen wolle, um die Bestien dort zu jagen, aber er ließ mir etwas Geld da und wollte, dass ich ihm seine Sendung schicke, sobald es mir möglich sei. $B$BJunior ist ein reicher Zwerg und man sollte sich mit den Reichen ruhig gut stellen, findet Ihr nicht auch? Also... könntet Ihr die Sendung für mich zustellen?$B$BWie ich hörte, hat er im Schlingendorntal nördlich von Grom\'gol ein Lager aufgeschlagen.",
     ["O"] = "Take Kravel\'s Crate to Hemet Nesingwary Jr. in Stranglethorn.",
+  },
+  [6026] = {
+    ["O"] = "Smokey LaRue wants you to get 2 Thorium Bars, 1 Golden Rod, 8 Hi-Explosive Bombs, and 8 Unstable Triggers.$B$BYou will have to find a blacksmith and an engineer for these items.",
   },
   [6131] = {
     ["D"] = "Die Furbolgs der Holzschlundfeste sind die einzigen Furbolgs, die von der Verderbnis verschont blieben. Aber viele andere Völker töten die Furbolgs jetzt blindwütig und scheren sich nicht darum, ob sie Freund oder Feind sind. Deswegen trauen die Einwohner der Holzschlundfeste auch kaum jemandem.$B$BSeid Ihr daran interessiert, Euch zu beweisen? Treibt den verderbten Stamm der Totenwaldfelle zurück, dann betrachten wir Euch eines Tages vielleicht als Verbündeten. Ihr findet die Krieger, Pfadfinder und Gärtner der Totenwaldfelle im Süden.",
@@ -313,10 +322,6 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "",
     ["T"] = "iCoke-Gewinngutschein einlösen",
   },
-  [8196] = {
-    ["D"] = "The extremely potent essence mango grows across many of the islands in the South Seas. A single mango will refresh those who eat it, both physically and mentally. If you\'ve never had one, you do yourself a disservice!",
-    ["O"] = "We have enough of a supply here on the isle to offer you a handful in exchange for a Zandalar Honor Token. Speak with Vinchaxa if you need to learn how to get tokens; otherwise, let\'s get to the business at hand!",
-  },
   [8230] = {
     ["D"] = "",
     ["O"] = "",
@@ -327,14 +332,6 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [8242] = {
     ["D"] = "",
-  },
-  [8243] = {
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
-  },
-  [8246] = {
-    ["D"] = "May - for someone as exalted among the Zandalar as you are, I have something very special for you. Direct from our home in the South Seas... the Signets of the Zandalar! These signets are used to enhance any shoulder item you may possess. Should you seek might, mojo, or serenity - I have what you need!",
-    ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
   },
   [8259] = {
     ["D"] = "",
@@ -593,9 +590,6 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Die Horde braucht mehr sengende Kernsteine!",
-  },
-  [8742] = {
-    ["D"] = "",
   },
   [8863] = {
     ["D"] = "If you are hungry, then you have come to the right place my friend!$B$BDumplings are the traditional food of the Lunar Festival; it has been served since the time of the first Lunar Festival, and I am pleased to be able to offer it at this one.  In exchange for just a single coin of ancestry, I will share with you a sampling of one of the tastiest dishes you will ever enjoy!",
@@ -11498,7 +11492,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Sagt mal, es gibt dieses Jahr nicht zufällig ein Souvenir?",
   },
   [12194] = {
-    ["D"] = "Not only are we supplying brew to everyone, we also have steins to give out! Beautiful, commemorative steins all obtained by the most legal of means! Here\'s a voucher for one.$B$BTalk to Blix near the back of the Brewfest camp. He\'s pretty strange, even more so now that he\'s always wearing those goggles. He\'ll handle the voucher for you, and any other Brewfest transaction.",
+    ["D"] = "Wir versorgen nicht nur jedermann mit Gebräu, sondern wir haben auch Krüge zu vergeben! Wunderschöne Andenken, die auf die legalste Weise überhaupt erworben wurden! Hier habt Ihr einen Gutschein.$B$BSprecht mit Blix, er hält sich irgendwo hinten beim Braufestlager auf. Er ist ziemlich seltsam, vor allem weil er jetzt immer diese Brille trägt. Er wird Euren Gutschein entgegennehmen und kümmert sich auch sonst um alle Braufestgeschäfte.",
     ["O"] = "Löst Euren Gutschein für einen Braufestkrug bei Blix Fixtand im hinteren Teil des Braufestlagers ein.",
     ["T"] = "Sagt mal, es gibt dieses Jahr nicht zufällig ein Souvenir?",
   },

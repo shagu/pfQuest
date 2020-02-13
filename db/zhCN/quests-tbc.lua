@@ -122,16 +122,25 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "Return to Therzok in the Cleft of Shadow in Orgrimmar.",
     ["T"] = "[Not Used] Tools of the Trade",
   },
+  [2281] = {
+    ["O"] = "Venture forth to Lakeshire in the Redridge Mountains and speak with Lucius.",
+  },
   [2358] = {
     ["T"] = "OLD Horns of Nez\'ra",
   },
-  [2741] = {
-    ["O"] = " ",
+  [2479] = {
+    ["O"] = "Travel to Tarren Mill in Hillsbrad Foothills and deliver the Sample of Zanzil\'s Mixture to Serge Hinott.$B$BTo get to Tarren Mill, take the Zeppelin to the Undercity and follow the road south through Silverpine and towards Hillsbrad. Follow the signs!",
+  },
+  [2962] = {
+    ["O"] = "Travel to Gnomeregan and bring back High Potency Radioactive Fallout. Be warned, the fallout is unstable and will collapse rather quickly.$B$BOzzie will also require your Heavy Leaden Collection Phial when the task is complete.",
   },
   [3366] = {
     ["D"] = "这块碎片透出异样的绿色光芒，虽然它完全是一块固体，但是却让人感觉好像有一股烟从碎片中冒出来。你情不自禁地注视着这块水晶的深处，这时你突然觉得这其中必定包含着许多曲折的故事。$B$B也许你应该去棘齿城看看那里有没有人知道这块碎片的来历。",
     ["O"] = "寻找更多有关这块噩梦碎片的信息。",
     ["T"] = "发光的碎片",
+  },
+  [3379] = {
+    ["O"] = "Kill the group of Shadow Silk Poachers that wander the Searing Gorge. Nilith has reason to believe that there are five of them that need to be exterminated. Return to Nilith in the Searing Gorge when this task is complete.",
   },
   [3381] = {
     ["D"] = "Ah, a young $r come to speak to Sanath. What a wonderful day! I am so honored to have you grace me with your presence. Thank you!$B$BPlease... do not be so arrogant to assume my sarcasm was a compliment. Let us get one thing straight: I don\'t like you. But this little conversation doesn\'t have anything to do with us--it has to do with my master.$B$BBring me a couple hippogryph feathers for my arrows and I\'ll give you leave to see him. He\'s asked that I send adventurers to him if they proved worthy enough.",
@@ -148,6 +157,9 @@ pfDB["quests"]["zhCN-tbc"] = {
   },
   [3646] = {
     ["D"] = "",
+  },
+  [3906] = {
+    ["O"] = "Travel to the quarry in Blackrock Mountain and slay Overmaster Pyron. Return to Thunderheart when you have completed this assignment.",
   },
   [3911] = {
     ["D"] = "到黑石深渊去取得10份元素精华。你应该在那些作战傀儡和傀儡制造者身上找找，另外，薇薇安·拉格雷也提到了一些有关元素生物的话题……",
@@ -169,10 +181,22 @@ pfDB["quests"]["zhCN-tbc"] = {
   [4490] = {
     ["T"] = "OLD Summon Felsteed",
   },
+  [4862] = {
+    ["O"] = "Travel to Blackrock Spire and collect 15 Spire Spider Eggs for Kibler.$B$BBy the sound of it, these eggs could be found near spiders.",
+  },
   [5101] = {
     ["D"] = "Bah! What do think this is, some kind of Test Quest? I be there even be typos in it!$B$BIf ya be thinkin\' my quest is goin\' ta be easy, then ya got another thing coming!$B$BKill me ten sheep (1933) and don\'t come back until you do!",
     ["O"] = "Kill 6 sheep for Benny and then run like hell!$B$B$B$B$BJust kidding... about the running part.",
     ["T"] = "暂无内容",
+  },
+  [5102] = {
+    ["O"] = "Travel to Blackrock Spire and destroy General Drakkisath. Return to Marshal Maxwell when the job is done.",
+  },
+  [5302] = {
+    ["O"] = "To become a Weaponsmith, you must make the following items and return them to Borgosh: 4 Moonsteel Broadswords, 4 Massive Iron Axes, 2 Heavy Mithril Axes, and 2 Big Black Maces.",
+  },
+  [5305] = {
+    ["O"] = "Travel to Stratholme and kill the Crimson Hammersmith. Recover the Crimson Hammersmith\'s Apron and return to Lilith.",
   },
   [5383] = {
     ["D"] = "打开口袋之后，你发现了许多拷问罪犯所用的器械。在这些可随身携带的用具中，你的目光被一件古怪的物品吸引了——那是一瓶还带着余温的血液。$B$B你认为萨克霍夫也许会对你的发现感兴趣。",
@@ -231,10 +255,16 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "I have a package for a new customer of mine, a dwarf named Hemet Nesingwary Jr..  The package took weeks to arrive, and Hemet\'s long gone by now.  He said he was going to Stranglethorn to take his father\'s place and hunt the beasts there, but he left me some money to send his delivery when I could.  $B$BJunior\'s a rich dwarf and it\'s a good idea to keep up relations with the rich ones, yeah?  So... you want to deliver the package for me?$B$BI heard he has a camp in Stranglethorn, north of Grom\'gol.",
     ["O"] = "Take Kravel\'s Crate to Hemet Nesingwary Jr. in Stranglethorn.",
   },
+  [6026] = {
+    ["O"] = "烟鬼拉鲁恩要你拿来2块瑟银锭、1根金棒、8颗高爆炸弹和8个不牢固的扳机。$B$B你需要找铁匠和工程学技师帮忙制作这些东西。",
+  },
   [6131] = {
     ["D"] = "木喉部族是唯一没有被堕落力量污染的熊怪部族。然而，许多其他的种族盲目地屠杀熊怪，却并没有搞清他们是敌是友。因此，木喉熊怪很少相信别人。$B$B你想要证明自己的立场吗？去赶走腐化的死木部族，我们以后也许会接受你成为盟友。你可以在费伍德的南部找到死木战士、探路者和园丁。",
     ["O"] = "格拉兹要你去杀死5个死木战士、5个死木探路者以及5个死木园丁。",
     ["T"] = "木喉熊怪的盟友",
+  },
+  [6184] = {
+    ["O"] = "Travel to Chillwind Camp in the Western Plaguelands and meet up with your contact, Flint Shadowmore.",
   },
   [6221] = {
     ["D"] = "There is a camp of Deadwood furbolgs directly to our southwest.  Corruption permeates the camp, and I wish to put an end to it before they become a problem.$B$BThe Deadwood tribe is evil, but it is the effects of the fel that pollutes their minds.  Their hostility is not truly an innate quality, yet they cannot be helped.  For this reason, I am deeply saddened by having to fight my own brethren.$B$BPlease, $N, do what must be done, and do not mention the details; they upset me far too much.",
@@ -246,14 +276,35 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "Salfa wants you to kill 6 Winterfall Totemics, 6 Winterfall Den Watchers, and 6 Winterfall Pathfinders.",
     ["T"] = "OLD Winterfall Activity",
   },
+  [6401] = {
+    ["D"] = "把这个好消息告诉卡雅的姑母，烈日石居的塔姆拉·荒原！告诉她卡雅还活着！我们以为在村子经历了那场劫难之后她就失踪了。沿着西面的路去烈日石居吧。",
+  },
   [6568] = {
     ["O"] = "Deliver Rokaro\'s Letter to Myranda the Hag in the Western Plaguelands.",
     ["T"] = "Mistress of Deception",
+  },
+  [6623] = {
+    ["O"] = "Travel to Hammerfall in the Arathi Highlands and speak with Doctor Gregory Victor about joining the ranks of Horde Trauma.",
   },
   [6843] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Da Foo",
+  },
+  [7026] = {
+    ["D"] = "The Stormpike Brigade cannot charge into battle bareback! We require harnesses for our mounts, after all, we are not savages.$B$BWhile we could easily slay the rams that roam near our base for the leather required to fashion a harness, doing so would be idiotic. We need those rams for mounts.$B$BYou must strike at our enemy\'s base, slaying the frostwolves they use as mounts and taking their hides. Return their hides to me so that harnesses may be made for the cavalry. Go!",
+  },
+  [7027] = {
+    ["O"] = "Locate an Alterac Ram in Alterac Valley. Use the Stormpike Training Collar when you are near the Alterac Ram to \'tame\' the beast. Once tamed, the Alterac Ram will follow you back to the Stable Master. Speak with the Stable Master to earn credit for the capture.",
+  },
+  [7201] = {
+    ["O"] = "Travel to Blackrock Depths and recover 10 Essence of the Elements. Your first inclination is to search the golems and golem makers. You remember Vivian Lagrave also muttering something about elementals.",
+  },
+  [7281] = {
+    ["O"] = "Travel into Stormpike territory and slay Commander Karl Philips. Return to Commander Louis Philips when the task is complete.",
+  },
+  [7282] = {
+    ["O"] = "Travel into Frostwolf territory and slay Commander Louis Philips. Return to Commander Karl Philips when the task is complete.",
   },
   [7364] = {
     ["T"] = "OLD Gnomeregan Bounty",
@@ -299,6 +350,9 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "去查看一下他的复生之瓶，凡人。逐风者会在那儿重生！",
     ["O"] = "查看复生之瓶，然后回到德米提恩那里去。",
     ["T"] = "复生之瓶",
+  },
+  [7581] = {
+    ["O"] = "Travel to Dire Maul in Feralas and recover 15 Satyr Blood from the Wildspawn Satyr that inhabit the Warpwood Quarter. Return to Daio in the Tainted Scar when this is done.",
   },
   [7668] = {
     ["D"] = "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to call forth Darkreaver\'s spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage dome to the spirit realm!",
@@ -383,27 +437,45 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "",
     ["T"] = "可口可乐宠物兑换券",
   },
-  [8196] = {
-    ["D"] = "The extremely potent essence mango grows across many of the islands in the South Seas. A single mango will refresh those who eat it, both physically and mentally. If you\'ve never had one, you do yourself a disservice!",
-    ["O"] = "We have enough of a supply here on the isle to offer you a handful in exchange for a Zandalar Honor Token. Speak with Vinchaxa if you need to learn how to get tokens; otherwise, let\'s get to the business at hand!",
+  [8081] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+  },
+  [8124] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+  },
+  [8157] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+  },
+  [8158] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+  },
+  [8159] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+  },
+  [8163] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+  },
+  [8164] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+  },
+  [8165] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
   [8230] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Collin\'s Test Quest",
   },
-  [8243] = {
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
-  },
-  [8246] = {
-    ["D"] = "May - for someone as exalted among the Zandalar as you are, I have something very special for you. Direct from our home in the South Seas... the Signets of the Zandalar! These signets are used to enhance any shoulder item you may possess. Should you seek might, mojo, or serenity - I have what you need!",
-    ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
-  },
   [8259] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "A More Fitting Reward",
+  },
+  [8298] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+  },
+  [8300] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
   [8325] = {
     ["D"] = "你越快开始接受训练，$N，就对我们大家越有好处。我们已经没有任何容忍犯错的余地了，所以你可要听仔细。$B$B那些太阳之塔西边的悬浮着的绿色物体，就是燃烧水晶，它们长期以来给岛内供应着能源，而法力浮龙则负责守护着这些水晶。天灾军团对奎尔萨拉斯的入侵大大干扰了我们对这些法力浮龙的魔法控制，导致它们变得不听调遣。$B$B除了削减它们的数量以外，已经没有其他的办法了。去吧，完成之后再回来向我复命。",
@@ -503,21 +575,27 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "OLD Claiming Arathi Basin",
   },
   [8384] = {
+    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
     ["T"] = "OLD Claiming Arathi Basin",
   },
   [8386] = {
+    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
     ["T"] = "OLD Fight for Warsong Gulch",
   },
   [8389] = {
+    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
     ["T"] = "OLD Battle of Warsong Gulch",
   },
   [8390] = {
+    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
     ["T"] = "OLD Conquering Arathi Basin",
   },
   [8391] = {
+    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
     ["T"] = "OLD Claiming Arathi Basin",
   },
   [8392] = {
+    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
     ["T"] = "OLD Claiming Arathi Basin",
   },
   [8393] = {
@@ -533,9 +611,11 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "OLD Claiming Arathi Basin",
   },
   [8397] = {
+    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
     ["T"] = "OLD Claiming Arathi Basin",
   },
   [8398] = {
+    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
     ["T"] = "OLD Claiming Arathi Basin",
   },
   [8399] = {
@@ -554,18 +634,23 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "OLD Fight for Warsong Gulch",
   },
   [8404] = {
+    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
     ["T"] = "OLD Fight for Warsong Gulch",
   },
   [8405] = {
+    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
     ["T"] = "OLD Fight for Warsong Gulch",
   },
   [8406] = {
+    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
     ["T"] = "OLD Fight for Warsong Gulch",
   },
   [8407] = {
+    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
     ["T"] = "OLD Fight for Warsong Gulch",
   },
   [8408] = {
+    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
     ["T"] = "OLD Fight for Warsong Gulch",
   },
   [8411] = {
@@ -595,18 +680,23 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "OLD Battle of Warsong Gulch",
   },
   [8431] = {
+    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
     ["T"] = "OLD Battle of Warsong Gulch",
   },
   [8432] = {
+    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
     ["T"] = "OLD Battle of Warsong Gulch",
   },
   [8433] = {
+    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
     ["T"] = "OLD Battle of Warsong Gulch",
   },
   [8434] = {
+    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
     ["T"] = "OLD Battle of Warsong Gulch",
   },
   [8435] = {
+    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
     ["T"] = "OLD Battle of Warsong Gulch",
   },
   [8436] = {
@@ -622,15 +712,19 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "OLD Conquering Arathi Basin",
   },
   [8440] = {
+    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
     ["T"] = "OLD Conquering Arathi Basin",
   },
   [8441] = {
+    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
     ["T"] = "OLD Conquering Arathi Basin",
   },
   [8442] = {
+    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
     ["T"] = "OLD Conquering Arathi Basin",
   },
   [8443] = {
+    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
     ["T"] = "OLD Conquering Arathi Basin",
   },
   [8463] = {
@@ -740,6 +834,9 @@ pfDB["quests"]["zhCN-tbc"] = {
   [8512] = {
     ["T"] = "The Alliance Needs More Light Leather!",
   },
+  [8519] = {
+    ["O"] = "Learn all that you can of the past, then speak with Anachronos at the Caverns of Time in Tanaris.",
+  },
   [8530] = {
     ["D"] = "$C, I need your help. In the Molten Core there are these stones, singed Corestones to be precise, that we need to harvest for the Ahn\'Qiraj war effort. I\'m told that our blacksmiths and engineers can put them to good use, so that\'s where you come in. I need you to go into the Molten Core and gather up as many of these corestones as you can. Of course, you\'ll want to talk thirty-nine of your closest friends along with you.",
     ["O"] = "Bring 50 singed corestones to Commander Stronghammer at the airfield in Dun Morogh.",
@@ -781,12 +878,30 @@ pfDB["quests"]["zhCN-tbc"] = {
   [8570] = {
     ["D"] = "",
   },
+  [8595] = {
+    ["D"] = "",
+  },
   [8618] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "[Not Used] The Horde Needs More Singed Corestones!",
   },
+  [8733] = {
+    ["O"] = "Travel to the continent of Teldrassil and find Malfurion\'s agent somewhere outside the walls of Darnassus.",
+  },
+  [8735] = {
+    ["O"] = "Travel to the four Emerald Dream portals in Azeroth and collect a Fragment of the Nightmare\'s Corruption from each. Return to Keeper Remulos in the Moonglade when you have completed this task.",
+  },
   [8742] = {
+    ["D"] = "A thousand years has passed and just as it was fated, one stands before me. One who shall lead their people to a new age.$B$BThe Old God trembles, $N. Oh yes, it fears your faith. Shatter the prophecy of C\'Thun.$B$BIt knows you come, champion - and with you comes the might of Kalimdor. You have only to let me know when you are prepared and I shall grant you The Scepter of the Shifting Sands.",
+  },
+  [8751] = {
+    ["D"] = "",
+  },
+  [8756] = {
+    ["D"] = "",
+  },
+  [8761] = {
     ["D"] = "",
   },
   [8863] = {
@@ -878,10 +993,19 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "Speak to Deliana in Ironforge.",
     ["T"] = "安希恩的离别感言",
   },
+  [9034] = {
+    ["O"] = "Korfax at Light\'s Hope Chapel in the Eastern Plaguelands will make a Dreadnaught Breastplate if you bring him the following items: 1 Desecrated Breastplate, 25 Wartorn Plate Scraps, 4 Arcanite Bars and 2 Nexus Crystals.",
+  },
   [9035] = {
     ["D"] = "嘿，叫你呢！你可得帮帮我。$B$B我和我的学徒被那些肮脏的怪物袭击了！他们渴望拥有魔法力量，疯狂地收集法力水晶、魔杖、法术书……所有与魔法相关的东西！$B$B梅雷多尔追他们去了，我只得留在这儿保护好幸存的东西。沿着这条路往前走，看看你能不能帮他一把。",
     ["O"] = "出了银月城向南走便是永歌森林，去那儿找学徒梅雷多尔谈谈。",
     ["T"] = "打探匪情",
+  },
+  [9039] = {
+    ["O"] = "Korfax at Light\'s Hope Chapel in the Eastern Plaguelands will make Dreadnaught Sabatons if you bring him the following items: 1 Desecrated Sabatons, 12 Wartorn Plate Scraps, 2 Arcanite Bars and 3 Cured Rugged Hides.",
+  },
+  [9060] = {
+    ["O"] = "Huntsman Leopold at Light\'s Hope Chapel in the Eastern Plaguelands will make a Cryptstalker Girdle if you bring him the following: 1 Desecrated Girdle, 8 Wartorn Chain Scraps, 1 Arcanite Bar and 3 Nexus Crystals.",
   },
   [9062] = {
     ["D"] = "如果你拿起武器反抗的话，那些肮脏的家伙必然会逃之夭夭。只是眼下还不是追赶他们的时候。我得找到指导者的元素魔典。我看见某个懦弱的家伙将它扔进了河里，确切位置我就不得而知了。我想或许你能睁大双眼，帮我找找。如果你能找到的话，我会给你一些钱币作为报酬的。",
@@ -1182,6 +1306,9 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "如果你想要伸出援手，现在正是时候。$B$B我们最近重建了太阳圣殿，并正式向戴索姆的敌军宣战。$B$B前往那座天灾军团的要塞，英勇作战吧。",
     ["O"] = "前往戴索姆杀死5个达尔坎之眼、6个蛛怪百夫长和6个恸哭者，然后向幽魂之地太阳圣殿的魔导师伊东尼斯复命。",
     ["T"] = "戴索姆之战",
+  },
+  [9230] = {
+    ["O"] = "Korfax at Light\'s Hope Chapel in the Eastern Plaguelands wants you to bring him 1 Frozen Rune, 1 Blue Sapphire and 1 Arcanite Bar.",
   },
   [9249] = {
     ["D"] = "",
@@ -10627,7 +10754,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "奥金顿的幽魂",
   },
   [11506] = {
-    ["D"] = "虽然德莱尼人的确是我们的敌人，但他们那些盘踞在奥金顿外的先祖之魂却并不会偏向任何一方。$B$B$B$B按照德莱尼人的远古习俗，生者要在每天特定的时段于白骨荒野上的灵魂之塔前礼拜，向亡者们献上敬意。$B$B如果届时你能够前往那些灵魂之塔，并协助保卫那里的安全，毫无疑问你可以让那些灵魂回到奥金顿中，得到安息。$B$B联盟肯定会去占领那些灵魂之塔，而我们所要做的，就是先发制人。",
+    ["D"] = "虽然德莱尼人的确是我们的敌人，但他们那些盘踞在奥金顿外的先祖之魂却并不会偏向任何一方。$B$B按照德莱尼人的远古习俗，生者要在每天特定的时段于白骨荒野上的灵魂之塔前礼拜，向亡者们献上敬意。$B$B如果届时你能够前往那些灵魂之塔，并协助保卫那里的安全，毫无疑问你可以让那些灵魂回到奥金顿中，得到安息。$B$B联盟肯定会去占领那些灵魂之塔，而我们所要做的，就是先发制人。",
     ["O"] = "帮助部落占据白骨荒野上的一座灵魂之塔。",
     ["T"] = "奥金顿的幽魂",
   },

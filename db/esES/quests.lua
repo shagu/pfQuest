@@ -17,7 +17,7 @@ pfDB["quests"]["esES"] = {
   [7] = {
     ["D"] = "$N, lo primero que tienes que hacer es limpiar; un clan de kóbolds ha invadido los bosques del norte. Ve y liquida a todos los kóbolds que encuentres; si reducimos sus filas podremos echarlos de Villanorte.",
     ["O"] = "Mata a 6 alimañas kóbold y ve a hablar con el alguacil McBride.",
-    ["T"] = "Kobold Camp Cleanup",
+    ["T"] = "Kobold Camp Cleanup [Programming Test]",
   },
   [8] = {
     ["D"] = "¡Eh, colega! ¿Le harías un favor a un joven hombre que ha combatido contra más zombis y arañas de los que puede contar?$B$BTengo una carta que tiene que llegar a Rémol... Es para una tabernera llamada Renee no sé qué. No creo que importe cómo se apellida, la verdad.$B$BPero el sitio es muy acogedor y está lleno de víctimas de la Plaga que intentan abrirse paso en el mundo. Es el sitio ideal para descansar... si es que necesitas hacerlo. Anímate... si vas, te pagaré bien.",
@@ -1710,7 +1710,7 @@ pfDB["quests"]["esES"] = {
     ["T"] = "Los molinos fantasma",
   },
   [363] = {
-    ["D"] = "Me alegra que hayas despertado. Estábamos a punto de arrojarte al fuego con los otros, pero has salido adelante.$B$BSoy Mordo, el custodio de la cripta de Camposanto. Y tú ya no eres uno de los esclavos del Rey Exánime.$B$BHabla con el sacerdote de las Sombras Sarvis. Está en la capilla, al pie de la colina. Él te dirá lo que debes saber.$B$BPara salir de esta cripta, sube las escaleras hasta la superficie. Sigue el camino hasta la capilla para encontrarte con Sarvis.",
+    ["D"] = "About time you woke up. We were ready to toss you into the fire with the others, but it looks like you made it.$B$BI am Mordo, the caretaker of the crypt of Deathknell. And you are the Lich King\'s slave no more.$B$BSpeak with Shadow Priest Sarvis in the chapel at the base of the hill, he will tell you more of what you must know.",
     ["O"] = "Habla con el sacerdote de las Sombras Sarvis.",
     ["T"] = "Desvelo brutal",
   },
@@ -2382,7 +2382,7 @@ pfDB["quests"]["esES"] = {
   [503] = {
     ["D"] = "Según los documentos que has traído, tienen a Gol\'dir en una importante base de la Hermandad situada al norte, probablemente en las Montañas de Alterac. Ya lleva demasiado tiempo cautivo; hay que liberarlo.",
     ["O"] = "Libera a Gol\'dir e informa a Krusk en Molino Tarren.",
-    ["T"] = "Gol\'dir",
+    ["T"] = "[DEPRECATED]Gol\'dir",
   },
   [504] = {
     ["D"] = "Ahora que has conocido a los ogros Aplastacresta, quiero que les revientes las narices...$B$BVe a las Ruinas de Alterac y busca a esos belicistas Aplastacrestas. Quiero que liquides a un buen número de ellos. Es la única forma de que esos brutos aprendan a mantenerse alejados del territorio de la Alianza.",
@@ -2402,7 +2402,7 @@ pfDB["quests"]["esES"] = {
   [507] = {
     ["D"] = "Es evidente que hay que eliminar a Perenolde, erradicar su vileza. Su mansión está hacia el norte, a orillas del Lago Lordamere. $N, cumple con tu deber, recupera el colgante que anhela el Jefe de Guerra y vuelve aquí.",
     ["O"] = "Mata a Aliden Perenolde y pregunta a su querida, Elysa, por el colgante de Taretha.",
-    ["T"] = "Lord Aliden Perenolde",
+    ["T"] = "[DEPRECATED]Lord Aliden Perenolde",
   },
   [508] = {
     ["D"] = "¿El colgante? Claro que te lo puedes quedar... ¡Llévatelo! No quiero ningún recuerdo de él... tan solo, solo deja en paz...",
@@ -2610,7 +2610,7 @@ pfDB["quests"]["esES"] = {
     ["T"] = "La batalla de Trabalomas",
   },
   [551] = {
-    ["D"] = "Este papiro está encantado con un hechizo que lo hace indescifrable. Aunque se puede leer una palabra en la parte de arriba:$B$B$BNagaz$B$B",
+    ["D"] = "Este papiro está encantado con un hechizo que lo hace indescifrable. Aunque se puede leer una palabra en la parte de arriba:$B$BNagaz$B$B",
     ["O"] = "Lleva el pergamino encantado al maestro cultural Dibbs a Costasur en las Laderas de Trabalomas.",
     ["T"] = "El papiro encantado",
   },
@@ -5782,7 +5782,7 @@ pfDB["quests"]["esES"] = {
   [1260] = {
     ["D"] = "Estoy preparando un nuevo menú para el restaurante. Estará lleno de platos rurales con un mismo tema: el pantano. ¡Seguro que a mis clientes de El Ermitaño Taciturno les encanta!$B$BEnvié a mi sobrino Morgan a Theramore, una ciudad que hay en la frontera del Marjal Revolcafango. Está recogiendo recetas de sus habitantes y necesito saber qué ha conseguido hasta ahora.$B$BEl viaje a Theramore es largo. Demasiado para mí. Pero seguro que $Gun:una; $C como tú, aprovecha cualquier oportunidad para viajar.",
     ["O"] = "Habla con Morgan Stern en Theramore.",
-    ["T"] = "Morgan Stern",
+    ["T"] = "[DEPRECATED]Morgan Stern",
   },
   [1261] = {
     ["D"] = "¡Maldito Valvafango! ¡No puedes matar a Marg! Ah... pero estoy muerto. Así que debió de matarme...$B$B¡Mi misión! ¡Mi misión! $N, debes completarla.$B$BCuando estaba cerca de Theramore, estuve espiando a un grupo de soldados de la Alianza que había acampado en la playa. Uno de esos soldados llevaba un colgante cargado de gemas. ¡Ningún soldado puede permitirse un colgante así!$B$BUna noche me colé en su campamento y robé el colgante, ¡pero cuando regresaba a la base, uno de esos hombres-cangrejo Valvafango me mató!$B$B¡$N, debes encontrar a ese Valvafango y recuperar el colgante!",
@@ -5882,12 +5882,12 @@ pfDB["quests"]["esES"] = {
   [1301] = {
     ["D"] = "Antes de trabajar aquí, en El Ermitaño Taciturno, me formó uno de los mejores chefs y taberneros que he conocido en mi vida. Su nombre era James Hyal. Todo lo que tengo se lo debo a él. Gracias a él he llegado hasta aquí.$B$BMe pregunto cómo le va... Su hermano Vincent y él fueron a trabajar a una posada del Puerto de Menethil, pero no sé nada de él desde hace un tiempo.$B$BSi alguna vez te acercas por allí, ¿podrías saludarlo de mi parte?",
     ["O"] = "Ve al Puerto de Menethil y habla con Vincent Hyal.",
-    ["T"] = "James Hyal",
+    ["T"] = "[DEPRECATED]James Hyal",
   },
   [1302] = {
     ["D"] = "Mi hermano James cruzó el mar con Lady Valiente. Lo último que oí es que la lucha había cesado en la zona y que James había abierto una posada en algún lugar del continente. Esté donde esté, seguro que el negocio le va bien. Era un cocinero estupendo.$B$BHace tiempo que no sé nada de él... estará ocupado con su posada. Seguro que el secretario de Theramore puede decirte algo más. Búscale en el piso de arriba del asentamiento que hay cerca del centro de la ciudad. ¿Cómo se llama...? Ciudadela Garrida, eso es.",
     ["O"] = "Habla con el secretario Lendry, que está en la Ciudadela Garrida en Theramore.",
-    ["T"] = "James Hyal",
+    ["T"] = "[DEPRECATED]James Hyal",
   },
   [1318] = {
     ["D"] = "Así que tú ser Rey... ¡pues a lo mejor recuperar artefacto Gordok de asqueroso elfo, él ir de \"Príncipe\"! Rey anterior fracasar, como resto reyes antes Tortheldrin, asqueroso elfo robar rey Gordok mucho tiempo!$B$BArtefacto llamarse guante del Poderío de Gordok. Historia muy, muy vieja decir solo rey verdadero de Gordok poder recuperar. Historia muy, muy vieja también decir asqueroso elfo aún estar cerca, tú encontrar, ¡tú llevar poderoso guante siempre jamás! ¡Ea, yo enseñar tú!",
@@ -6417,7 +6417,7 @@ pfDB["quests"]["esES"] = {
   [1483] = {
     ["D"] = "Ventura y Cía. se quedó con muchos de los cerebros goblins más brillantes pero de vez en cuando, conseguimos robarle alguno.$B$BHace algún tiempo, la delegación de Ventura y Cía. en Sierra Espolón contrató a Gerenzo Silbillave, ¡un gnomo! Esto afectó tanto a su otro ingeniero, Ziz Fizziks, que me rogó que le encontrara un nuevo empleo con el sindicato de manitas. Le asigné unas tareas pero puede que necesite ayuda.$B$B¿Podrías ir a ver cómo le va por mí? Se encuentra en el extremo occidental del Risco Cortaviento.",
     ["O"] = "Habla con Ziz Fizziks en Risco Cortaviento.",
-    ["T"] = "Ziz Fizziks",
+    ["T"] = "[DEPRECATED] Ziz Fizziks",
   },
   [1484] = {
     ["D"] = "Esta criatura es mucho más peligrosa de lo que esperaba. Seguro que Takata se pregunta si seré capaz de vencerla y sería un insulto a su honor el no informarle de lo que acaba de pasar.$B$BHabla con el espadachín y dile que, con su permiso, abatirás al demonio. Pero no insistas demasiado; es mejor que crea que es idea suya.",
@@ -7640,7 +7640,7 @@ pfDB["quests"]["esES"] = {
     ["T"] = "Un simple subterfugio",
   },
   [2239] = {
-    ["D"] = "¿La cantera? Sí, veo esos monstruosos tanques de vapor blindados pasar por aquí casi cada día.$B$BMis contactos en el este me dicen que el tanque sale de Forjaz, hace una recogida en la Cantera de Gol\'Bolar, para en Kharanos a repostar y luego, por no sé qué maldito motivo, da un rodeo para esquivar Gnomeregan antes de volver a Forjaz para descargar.$B$BEstá todo en el informe, $R. Llévaselo a Hulfdan para que pueda planear el siguiente paso.|n",
+    ["D"] = "The Quarry? Yap, I see those monstrous armored steam tanks come by this post near every day.$B$BMy contacts to the east tell me that the tank starts off at Ironforge, makes a pickup at the Gol\'Bolar Quarry, stops over at Kharanos to refuel and then for some blasted reason, it takes the long way around past Gnomeregan, before reaching Ironforge to drop off the shipment.$B$BIt\'s all in the report, $r. Take it back to Hulfdan so he can plan the next step.$B",
     ["O"] = "Lleva el informe de Onin a Hulfdan a Forjaz.",
     ["T"] = "Informe de Onin",
   },
@@ -14182,7 +14182,7 @@ pfDB["quests"]["esES"] = {
   [6922] = {
     ["D"] = "El elemental de agua derrotado ha dejado tras de sí un extraño globo de agua. Supones que el objeto de alguna forma alimentaba la energía de la bestia. En el interior del globo chapotea masa líquida repulsiva. El propio globo parece impermeable a todo tipo de fuerza física.$B$BSi alguien es capaz de interpretar este artilugio, es Je\'neu Sancrea del Anillo de la Tierra.",
     ["O"] = "Llévale el extraño globo de agua a Je\'neu Sancrea en las Cavernas de Brazanegra.",
-    ["T"] = "Baron Aquanis",
+    ["T"] = "Barón Aquanis",
   },
   [6941] = {
     ["D"] = "",
@@ -16165,7 +16165,7 @@ pfDB["quests"]["esES"] = {
     ["T"] = "Los recursos de la Cuenca de Arathi",
   },
   [8081] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $N. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
     ["T"] = "Más cajas de suministros",
   },
@@ -16285,7 +16285,7 @@ pfDB["quests"]["esES"] = {
     ["T"] = "Córtale el suministro a la Liga de Arathor",
   },
   [8124] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $N. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
     ["T"] = "Más cajas de suministros",
   },
@@ -16365,17 +16365,17 @@ pfDB["quests"]["esES"] = {
     ["T"] = "Los recursos de la Cuenca de Arathi",
   },
   [8157] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $N. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
     ["T"] = "Más cajas de suministros",
   },
   [8158] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $N. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
     ["T"] = "Más cajas de suministros",
   },
   [8159] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $N. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
     ["T"] = "Más cajas de suministros",
   },
@@ -16395,17 +16395,17 @@ pfDB["quests"]["esES"] = {
     ["T"] = "Córtale el suministro a la Liga de Arathor",
   },
   [8163] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $N. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
     ["T"] = "Más cajas de suministros",
   },
   [8164] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $N. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
     ["T"] = "Más cajas de suministros",
   },
   [8165] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $N. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
     ["T"] = "Más cajas de suministros",
   },
@@ -16860,7 +16860,7 @@ pfDB["quests"]["esES"] = {
     ["T"] = "Los recursos de la Cuenca de Arathi",
   },
   [8298] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "Hacen falta soldados para combatir en una guerra, cualquier soldado te lo dirá. También dicen que una guerra librada con equipamiento en malas condiciones o con el estómago vacío ¡está perdida antes de empezar!$B$BPor eso la Cuenca de Arathi es importante. Hay zonas clave en la cuenca donde se encuentran recursos esenciales. Metales, armas, comida, madera... todo lo que necesitamos, y todo se puede conseguir allí.$B$BEso es lo que quiero de ti, $N. Adéntrate en la Cuenca de Arathi, consigue la victoria tomando posesión de más bases que el enemigo y vuelve aquí con una caja de recursos.",
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela al sargento Maclear en el Refugio de la Zaga.",
     ["T"] = "Más cajas de suministros",
   },
@@ -16870,7 +16870,7 @@ pfDB["quests"]["esES"] = {
     ["T"] = "Córtale el suministro a la Liga de Arathor",
   },
   [8300] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "La Liga de Arathor no repara en gastos en su avance para recuperar Arathi. Ellos, y todas las razas de la Alianza, se dirigen ahora hacia esa distante región con la intención de extender su dominio desde el Refugio de la Zaga. Debemos detenerlos y la mejor manera es arrebatarles los suministros.$B$BPuedes ayudarnos, $N. Adéntrate en la Cuenca de Arathi, famosa por sus abundantes minas, fértiles tierras y los más finos artesanos. Captura y hazte con el control de todas las bases que puedas, gana la batalla y vuelve con los recursos que hayas obtenido.",
     ["O"] = "Llévate la victoria en la batalla por la Cuenca de Arathi, consigue una caja de suministros de Arathi y llévasela a Mortacechador Mortis en Sentencia.",
     ["T"] = "Más cajas de suministros",
   },
@@ -17230,17 +17230,17 @@ pfDB["quests"]["esES"] = {
     ["T"] = "La batalla por Garganta Grito de Guerra",
   },
   [8390] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "Nuestro conflicto con la Alianza se ha convertido en una auténtica guerra. En este momento ya no valen falsas excusas para entrar en la batalla.$B$BLa batalla por la Cuenca de Arathi es por los recursos, llana y simplemente. Si la Alianza se hace con ellos y los utiliza contra nosotros o si somos nosotros los que los obtenemos y los utilizamos para mantener nuestro esfuerzo bélico. ¡Ayuda a Los Rapiñadores a mantener el flujo de recursos que necesitamos, $N!",
     ["O"] = "Entrega 3 marcas de honor de la Cuenca de Arathi a un Belisario de la Horda fuera de los campos de batalla.",
     ["T"] = "La conquista de la Cuenca de Arathi",
   },
   [8391] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+    ["D"] = "Ganar una guerra es algo más que ser más astuto y mejor guerrero que tu oponente. A menudo la victoria llega cuando produces más que tu enemigo.$B$BLo que tenemos en la Cuenca de Arathi es un considerable suministro de recursos a disposición del bando que primero los reclame.$B$BSi la Alianza se alza con la victoria, tendremos más espadas y picos para nuestras tropas. Si ganara la Horda, ¡esas espadas y picos pasarían a amenazarnos! Ha llegado el momento de ayudar a la Alianza en la Cuenca de Arathi, $N.",
     ["O"] = "Entrega 3 marcas de honor de la Cuenca de Arathi a un general de brigada de la Alianza fuera de los campos de batalla.",
     ["T"] = "Reclamo por la Cuenca de Arathi",
   },
   [8392] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+    ["D"] = "Ganar una guerra es algo más que ser más astuto y mejor guerrero que tu oponente. A menudo la victoria llega cuando produces más que tu enemigo.$B$BLo que tenemos en la Cuenca de Arathi es un considerable suministro de recursos a disposición del bando que primero los reclame.$B$BSi la Alianza se alza con la victoria, tendremos más espadas y picos para nuestras tropas. Si ganara la Horda, ¡esas espadas y picos pasarían a amenazarnos! Ha llegado el momento de ayudar a la Alianza en la Cuenca de Arathi, $N.",
     ["O"] = "Entrega 3 marcas de honor de la Cuenca de Arathi a un general de brigada de la Alianza fuera de los campos de batalla.",
     ["T"] = "Reclamo por la Cuenca de Arathi",
   },
@@ -17265,12 +17265,12 @@ pfDB["quests"]["esES"] = {
     ["T"] = "Reclamo por la Cuenca de Arathi",
   },
   [8397] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+    ["D"] = "Ganar una guerra es algo más que ser más astuto y mejor guerrero que tu oponente. A menudo la victoria llega cuando produces más que tu enemigo.$B$BLo que tenemos en la Cuenca de Arathi es un considerable suministro de recursos a disposición del bando que primero los reclame.$B$BSi la Alianza se alza con la victoria, tendremos más espadas y picos para nuestras tropas. Si ganara la Horda, ¡esas espadas y picos pasarían a amenazarnos! Ha llegado el momento de ayudar a la Alianza en la Cuenca de Arathi, $N.",
     ["O"] = "Entrega 3 marcas de honor de la Cuenca de Arathi a un general de brigada de la Alianza fuera de los campos de batalla.",
     ["T"] = "Reclamo por la Cuenca de Arathi",
   },
   [8398] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+    ["D"] = "Ganar una guerra es algo más que ser más astuto y mejor guerrero que tu oponente. A menudo la victoria llega cuando produces más que tu enemigo.$B$BLo que tenemos en la Cuenca de Arathi es un considerable suministro de recursos a disposición del bando que primero los reclame.$B$BSi la Alianza se alza con la victoria, tendremos más espadas y picos para nuestras tropas. Si ganara la Horda, ¡esas espadas y picos pasarían a amenazarnos! Ha llegado el momento de ayudar a la Alianza en la Cuenca de Arathi, $N.",
     ["O"] = "Entrega 3 marcas de honor de la Cuenca de Arathi a un general de brigada de la Alianza fuera de los campos de batalla.",
     ["T"] = "Reclamo por la Cuenca de Arathi",
   },
@@ -17300,27 +17300,27 @@ pfDB["quests"]["esES"] = {
     ["T"] = "Lucha por Garganta Grito de Guerra",
   },
   [8404] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "Las centinelas Ala de Plata están en guerra con los escoltas Grito de Guerra por la destrucción que los orcos están provocando en el bosque. Pero hay más razones para defender este bosque y que van más allá del amor por la naturaleza.$B$BEl bosque forma una barrera estratégica que permite defender Vallefresno contra un ataque a gran escala. Sin él perderíamos Astranaar en un solo día y pasaría a integrarse en Los Baldíos.$B$B¡Colabora en la lucha contra los escoltas Grito de Guerra, $N! ¡Por la Alianza!",
     ["O"] = "Entrega 3 marcas de honor de la Garganta Grito de Guerra a un general de brigada de la Alianza fuera de los campos de batalla.",
     ["T"] = "Lucha por Garganta Grito de Guerra",
   },
   [8405] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "Las centinelas Ala de Plata están en guerra con los escoltas Grito de Guerra por la destrucción que los orcos están provocando en el bosque. Pero hay más razones para defender este bosque y que van más allá del amor por la naturaleza.$B$BEl bosque forma una barrera estratégica que permite defender Vallefresno contra un ataque a gran escala. Sin él perderíamos Astranaar en un solo día y pasaría a integrarse en Los Baldíos.$B$B¡Colabora en la lucha contra los escoltas Grito de Guerra, $N! ¡Por la Alianza!",
     ["O"] = "Entrega 3 marcas de honor de la Garganta Grito de Guerra a un general de brigada de la Alianza fuera de los campos de batalla.",
     ["T"] = "Lucha por Garganta Grito de Guerra",
   },
   [8406] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "Las centinelas Ala de Plata están en guerra con los escoltas Grito de Guerra por la destrucción que los orcos están provocando en el bosque. Pero hay más razones para defender este bosque y que van más allá del amor por la naturaleza.$B$BEl bosque forma una barrera estratégica que permite defender Vallefresno contra un ataque a gran escala. Sin él perderíamos Astranaar en un solo día y pasaría a integrarse en Los Baldíos.$B$B¡Colabora en la lucha contra los escoltas Grito de Guerra, $N! ¡Por la Alianza!",
     ["O"] = "Entrega 3 marcas de honor de la Garganta Grito de Guerra a un general de brigada de la Alianza fuera de los campos de batalla.",
     ["T"] = "Lucha por Garganta Grito de Guerra",
   },
   [8407] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "Las centinelas Ala de Plata están en guerra con los escoltas Grito de Guerra por la destrucción que los orcos están provocando en el bosque. Pero hay más razones para defender este bosque y que van más allá del amor por la naturaleza.$B$BEl bosque forma una barrera estratégica que permite defender Vallefresno contra un ataque a gran escala. Sin él perderíamos Astranaar en un solo día y pasaría a integrarse en Los Baldíos.$B$B¡Colabora en la lucha contra los escoltas Grito de Guerra, $N! ¡Por la Alianza!",
     ["O"] = "Entrega 3 marcas de honor de la Garganta Grito de Guerra a un general de brigada de la Alianza fuera de los campos de batalla.",
     ["T"] = "Lucha por Garganta Grito de Guerra",
   },
   [8408] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "Las centinelas Ala de Plata están en guerra con los escoltas Grito de Guerra por la destrucción que los orcos están provocando en el bosque. Pero hay más razones para defender este bosque y que van más allá del amor por la naturaleza.$B$BEl bosque forma una barrera estratégica que permite defender Vallefresno contra un ataque a gran escala. Sin él perderíamos Astranaar en un solo día y pasaría a integrarse en Los Baldíos.$B$B¡Colabora en la lucha contra los escoltas Grito de Guerra, $N! ¡Por la Alianza!",
     ["O"] = "Entrega 3 marcas de honor de la Garganta Grito de Guerra a un general de brigada de la Alianza fuera de los campos de batalla.",
     ["T"] = "Lucha por Garganta Grito de Guerra",
   },
@@ -17480,22 +17480,22 @@ pfDB["quests"]["esES"] = {
     ["T"] = "La conquista de la Cuenca de Arathi",
   },
   [8440] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "Nuestro conflicto con la Alianza se ha convertido en una auténtica guerra. En este momento ya no valen falsas excusas para entrar en la batalla.$B$BLa batalla por la Cuenca de Arathi es por los recursos, llana y simplemente. Si la Alianza se hace con ellos y los utiliza contra nosotros o si somos nosotros los que los obtenemos y los utilizamos para mantener nuestro esfuerzo bélico. ¡Ayuda a Los Rapiñadores a mantener el flujo de recursos que necesitamos, $N!",
     ["O"] = "Entrega 3 marcas de honor de la Cuenca de Arathi a un Belisario de la Horda fuera de los campos de batalla.",
     ["T"] = "La conquista de la Cuenca de Arathi",
   },
   [8441] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "Nuestro conflicto con la Alianza se ha convertido en una auténtica guerra. En este momento ya no valen falsas excusas para entrar en la batalla.$B$BLa batalla por la Cuenca de Arathi es por los recursos, llana y simplemente. Si la Alianza se hace con ellos y los utiliza contra nosotros o si somos nosotros los que los obtenemos y los utilizamos para mantener nuestro esfuerzo bélico. ¡Ayuda a Los Rapiñadores a mantener el flujo de recursos que necesitamos, $N!",
     ["O"] = "Entrega 3 marcas de honor de la Cuenca de Arathi a un Belisario de la Horda fuera de los campos de batalla.",
     ["T"] = "La conquista de la Cuenca de Arathi",
   },
   [8442] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "Nuestro conflicto con la Alianza se ha convertido en una auténtica guerra. En este momento ya no valen falsas excusas para entrar en la batalla.$B$BLa batalla por la Cuenca de Arathi es por los recursos, llana y simplemente. Si la Alianza se hace con ellos y los utiliza contra nosotros o si somos nosotros los que los obtenemos y los utilizamos para mantener nuestro esfuerzo bélico. ¡Ayuda a Los Rapiñadores a mantener el flujo de recursos que necesitamos, $N!",
     ["O"] = "Entrega 3 marcas de honor de la Cuenca de Arathi a un Belisario de la Horda fuera de los campos de batalla.",
     ["T"] = "La conquista de la Cuenca de Arathi",
   },
   [8443] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "Nuestro conflicto con la Alianza se ha convertido en una auténtica guerra. En este momento ya no valen falsas excusas para entrar en la batalla.$B$BLa batalla por la Cuenca de Arathi es por los recursos, llana y simplemente. Si la Alianza se hace con ellos y los utiliza contra nosotros o si somos nosotros los que los obtenemos y los utilizamos para mantener nuestro esfuerzo bélico. ¡Ayuda a Los Rapiñadores a mantener el flujo de recursos que necesitamos, $N!",
     ["O"] = "Entrega 3 marcas de honor de la Cuenca de Arathi a un Belisario de la Horda fuera de los campos de batalla.",
     ["T"] = "La conquista de la Cuenca de Arathi",
   },
@@ -18726,7 +18726,7 @@ pfDB["quests"]["esES"] = {
   },
   [8730] = {
     ["D"] = "¿Eres tú, Campeón? Mil años hace que me fue confiado este fragmento, y en triste hora vienen a arrebatármelo... Pero ¿qué sería una tragedia sin crueldad?$B$B<Vaelastrasz tose débilmente.>$B$BEl... El fragmento de cetro está en poder de Nefarius.$B$BEl tiempo corre en nuestra contra. Nefarius planea destruirlo. ¡Apresúrate!",
-    ["O"] = "Mata a Nefarian y recupera del fragmento de cetro rojo. Llévaselo a Anacronos a las Cavernas del Tiempo, en Tanaris. Tienes 5 horas para completar esta tarea.",
+    ["O"] = "Mata a Nefarian y recupera del fragmento de cetro rojo. Llévaselo a Anacronos a las Cavernas del Tiempo, en Tanaris.$B$B Tienes 5 horas para completar esta tarea.",
     ["T"] = "La corrupción de Nefarius",
   },
   [8731] = {

@@ -4,10 +4,31 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Tuez au moins deux Vermines kobolds.",
     ["T"] = "La quête de Kanrethad",
   },
+  [7] = {
+    ["T"] = "Kobold Camp Cleanup",
+  },
+  [202] = {
+    ["T"] = "Colonel Kurzen",
+  },
+  [249] = {
+    ["O"] = "Tuer Morganth, puis rapporter son Pendentif des ombres à Théocritus, à la Tour d\'Azora dans la forêt d\'Elwynn.",
+  },
+  [349] = {
+    ["D"] = "temp text 02 - description",
+  },
   [402] = {
     ["D"] = "Je suis désolé, mais avec la ville dans cet état, j\'ai d\'autres tâches qui m\'attendent. Peut-être plus tard, si nous survivons, je pourrai finir cette traduction.",
     ["O"] = "Vérifier plus tard si Serra est toujours occupé.",
     ["T"] = "Sirra est occupée",
+  },
+  [412] = {
+    ["T"] = "Operation Recombobulation",
+  },
+  [503] = {
+    ["T"] = "Gol\'dir",
+  },
+  [551] = {
+    ["D"] = "Ce parchemin est sous l\'effet d\'un sort qui le rend indéchiffrable. Mais un mot peut être lu, en haut du papier :$B$B$BNagaz$B$B",
   },
   [620] = {
     ["D"] = "On peut lire les lettres \"HS\" brodées le long de l\'ourlet de la belle écharpe.",
@@ -63,6 +84,9 @@ pfDB["quests"]["frFR-tbc"] = {
   [1218] = {
     ["T"] = "Les cuisses de grenouille des marais",
   },
+  [1260] = {
+    ["T"] = "Morgan Stern",
+  },
   [1263] = {
     ["D"] = "",
     ["O"] = "",
@@ -88,6 +112,12 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Retourner voir le capitaine Garran Vimaire à Theramore.",
     ["T"] = "&lt;nyi&gt; Rapport de Vimaire",
   },
+  [1301] = {
+    ["T"] = "James Hyal",
+  },
+  [1302] = {
+    ["T"] = "James Hyal",
+  },
   [1390] = {
     ["D"] = "Missing text",
     ["O"] = "Missing text",
@@ -97,6 +127,9 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Le réveil de Naralex",
+  },
+  [1883] = {
+    ["O"] = "Aller voir Un\'thuwa.",
   },
   [2000] = {
     ["D"] = "Trop de temp mort pour vous, $N. C\'est le moment d\'en apprendre plus sur notre petit commerce. Hier soir, cinq des nôtres ont été trouvés morts avec quelques plombs dans la peau, dans l\'une des failles d\'Orgrimmar. Il y en a qui s\'opposent à nous, en utilisant nos propres méthodes contre nous.$B$BAlors j\'ai décidé de vous apprendre l\'art du Crochetage.$B$BMalheureusement, c\'est une compétence pour laquelle mes mains ne conviennent pas bien. Vous devrez chercher Rokar, qui vit dans les collines près de Durotar. Même s\'il est âgé, je gage qu\'il a toujours la même habileté.",
@@ -113,11 +146,14 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Retourner voir Therzok à la Faille de l\'Ombre à Orgrimmar.",
     ["T"] = "Les outils du métier",
   },
-  [2741] = {
-    ["O"] = " ",
+  [2206] = {
+    ["D"] = "Nos espions sur le terrain rapportent que les bandits sont très actifs dans le sud de Comté-de-l\'Or. Il semble qu\'ils aient pris le débarcadère de Jerod et qu\'ils l\'utilisent pour passer en contrebande de grandes quantités de produits entre les Carmines et la marche de l\'Ouest.$B$BIl faut que vous vous introduisiez dans la petite maison à côté du quai et que vous me rapportiez le programme d\'embarquement des navires, $N. Vous le trouverez probablement au profond des poches de l\'intendant des docks.$B$B... Et $N, si vous étiez $Gdécouvert:découverte;, sachez que le SI:7 nierait vous avoir jamais $Gconnu:connue;.",
   },
-  [2999] = {
-    ["T"] = "Tome de divinité",
+  [2259] = {
+    ["D"] = "Ne vous inquiétez pas, $N, je ne vous envoie pas voir Syurna. Erion veut que vous le rejoigniez dans l\'Enclave de Cenarion. Faites vite !",
+  },
+  [2378] = {
+    ["D"] = "Vous avez bien servi les nécrotraqueurs, $N, mais il est temps d\'étendre votre expérience. Vous avez montré vos capacités en matière de ruse et de traîtrise, mais votre entraînement n\'est pas terminé. $B$BLes nécrotraqueurs ont des alliés au sein de la Main brisée. Cherchez ceux qui viennent à notre aide : trouvez Shenthul à Orgrimmar.",
   },
   [3366] = {
     ["D"] = "L\'éclat est d\'un vert brillant, et bien que compact, ce qui ressemble à de la fumée tourbillonne juste au-dessous de sa surface. Vous ne pouvez vous empêcher de contempler les profondeurs du cristal, bien qu\'en même temps, vous sentiez qu\'il y réside quelque chose de très inquiétant.$B$BPeut-être devriez-vous voir si quelqu\'un à Cabestan pourrait vous en apprendre plus à propos de cet étrange éclat...",
@@ -137,15 +173,36 @@ pfDB["quests"]["frFR-tbc"] = {
   [3646] = {
     ["D"] = "",
   },
+  [3802] = {
+    ["D"] = "Vous trouverez Fineous Sombrevire au-delà du Cercle de la loi, dans la Chambre de l\'artisanat. Tuez ce misérable chien et récupérez Souillefer.$B$BApportez Souillefer au sanctuaire de Thaurissan et placez le marteau à la place qui est la sienne : dans les mains de la statue érigée en mon honneur.$B$BAlors le compartiment dans lequel j\'ai placé la clé maîtresse s\'ouvrira. Plus important encore, Souillefer restera entre mes mains pour l\'éternité. S\'ils tentent de l\'enlever, la statue et le marteau se briseront, à jamais perdus.",
+  },
   [3911] = {
     ["D"] = "Partir pour les Profondeurs de Rochenoire et trouver 10 Essences des éléments. Commencer vos recherches par les golems et par les créateurs de golems. Vivian Lagrave a aussi marmonné quelque chose à propos d\'élémentaires.",
     ["O"] = "Partir pour les Profondeurs de Rochenoire et trouver 10 Essences des éléments. Commencer vos recherches par les golems et par les créateurs de golems. Vivian Lagrave a aussi marmonné quelque chose à propos d\'élémentaires.",
     ["T"] = "Le dernier élément",
   },
+  [3982] = {
+    ["T"] = "Que se passe-t-il ?",
+  },
+  [4001] = {
+    ["T"] = "Que se passe-t-il ?",
+  },
+  [4004] = {
+    ["D"] = "Vous avez assassiné mon mari, $R ! Mon enfant naîtra et grandira dans ce monde sans avoir de père.$B$B<La princesse Moira vous montre du doigt.>$B$BJe vous jure pourtant que cet enfant sera le prochain souverain du royaume de Forgefer. Vous et ceux de votre espèce seront chassés et abattus comme des chiens, sans répit et sans merci.$B$B<Vous pensez que la princesse Moira souffre peut-être des effets résiduels du sort de Thaurissan.>$B$BLaissez-moi, $R. Je pense que votre chef de guerre est avide de connaître le résultat de son ingérence.",
+  },
+  [4024] = {
+    ["D"] = "Je souhaite goûter aux flammes ardentes de la montagne de feu. Laisser la lave fondue cascader tout le long de mon être. Cette essence, cette chaleur fulgurante, c\'est cela dont j\'ai soif.$B$BBael\'Gar demeure dans les Profondeurs de Rochenoire : un être fait de flammes pures, né des feux de Ragnaros. Tuez Bael\'Gar et extrayez de ses restes brûlants son feu intérieur.$B$BServez-vous de l\'écaille pour arracher sans danger le feu intérieur à sa dépouille.$B$BSi vous réussissez à me le rapporter, vous serez $Grécompensé:récompensée;.",
+  },
+  [4081] = {
+    ["D"] = "Par ordre du chef de guerre Sangredent, commandant du Corps Expéditionnaire de Kargath :$B$BTous les membres des forces du général Forgehargne présents dans les Profondeurs de Rochenoire doivent être annihilés.$B$BLes hommes de Forgehargne sont des tueurs de sang-froid, responsables du massacre de masse de la 109e division du corps expéditionnaire de Kargath. Les héros doivent exercer avec une prudence extrême lorsqu\'ils combattent ces brutes.$B$BQuiconque détruira la première ligne des forces du général Forgehargne dans les Profondeurs de Rochenoire recevra un tribut.",
+  },
   [5101] = {
     ["D"] = "Bah ! Qu\'est-ce que vous croyez, qu\'il s\'agit d\'une espèce de Quête test ? Je serai là même si y\'a des fautes d\'orthographe !$B$BSi vous croyez que ma quête va être une partie de plaisir alors détrompez-vous !$B$BTuez-moi dix moutons (1933) et ne revenez pas tant que ce n\'est pas fait !",
     ["O"] = "Tuer 6 moutons pour Benny puis prendre les jambes à son cou !$B$B$B$B$BNon, c\'est une blague... pour ce qui est de courir.",
     ["T"] = "Lee : Quête de l\'ultime épreuve… la mort !",
+  },
+  [5307] = {
+    ["T"] = "Corruption",
   },
   [5383] = {
     ["D"] = "Vous ouvrez le sac et découvrez divers instruments de torture. Au milieu de cet attirail, un objet insolite attire votre regard : une fiole de sang, encore chaude au toucher.$B$BVous pensez que les Sarkhoff pourraient être intéressés par votre découverte.",
@@ -330,10 +387,6 @@ pfDB["quests"]["frFR-tbc"] = {
   [8148] = {
     ["T"] = "Courroux du maelström",
   },
-  [8196] = {
-    ["D"] = "The extremely potent essence mango grows across many of the islands in the South Seas. A single mango will refresh those who eat it, both physically and mentally. If you\'ve never had one, you do yourself a disservice!",
-    ["O"] = "We have enough of a supply here on the isle to offer you a handful in exchange for a Zandalar Honor Token. Speak with Vinchaxa if you need to learn how to get tokens; otherwise, let\'s get to the business at hand!",
-  },
   [8230] = {
     ["D"] = "",
     ["O"] = "",
@@ -344,14 +397,6 @@ pfDB["quests"]["frFR-tbc"] = {
   },
   [8242] = {
     ["D"] = "",
-  },
-  [8243] = {
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
-  },
-  [8246] = {
-    ["D"] = "May - for someone as exalted among the Zandalar as you are, I have something very special for you. Direct from our home in the South Seas... the Signets of the Zandalar! These signets are used to enhance any shoulder item you may possess. Should you seek might, mojo, or serenity - I have what you need!",
-    ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
   },
   [8259] = {
     ["D"] = "",
@@ -614,9 +659,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "",
     ["T"] = "La Horde a besoin de plus de pierres du Magma roussies !",
   },
-  [8742] = {
-    ["D"] = "",
-  },
   [8863] = {
     ["D"] = "If you are hungry, then you have come to the right place my friend!$B$BDumplings are the traditional food of the Lunar Festival; it has been served since the time of the first Lunar Festival, and I am pleased to be able to offer it at this one.  In exchange for just a single coin of ancestry, I will share with you a sampling of one of the tastiest dishes you will ever enjoy!",
   },
@@ -625,6 +667,9 @@ pfDB["quests"]["frFR-tbc"] = {
   },
   [8865] = {
     ["D"] = "I am please to inform you that I have a fine selection of festive pant suits available for you to own... but only in trade for coins of ancestry.  If fashion is important to you, then these are what you\'re looking for!  I assure you that you will not find pant suits like these anywhere else.$B$BIn exchange for some Coins of Ancestry, I will let you choose one of the three styles I have to keep as your own.  Is this acceptable to you?",
+  },
+  [8869] = {
+    ["D"] = "Aller jusqu\'à Stratholme et tuer le Forgeur de marteaux cramoisi. Récupérer son Tablier et le rapporter à Lilith.",
   },
   [8876] = {
     ["D"] = "I hold the secrets to creating Lunar Festival rockets, and I am happy to share my knowledge with the honored.$B$BIn exchange for coins of ancestry, I can offer you the recipe to make a small rocket...",

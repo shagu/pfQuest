@@ -2610,7 +2610,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "希尔斯布莱德之战",
   },
   [551] = {
-    ["D"] = "这张羊皮纸上被施加了某种咒语，使其无法被破译。但是，卷首的一个词却很容易辨认：$B$B$B 纳伽兹$B$B",
+    ["D"] = "这张羊皮纸上被施加了某种咒语，使其无法被破译。但是，卷首的一个词却很容易辨认：$B$B 纳伽兹$B$B",
     ["O"] = "将这张附有魔法的羊皮纸带给南海镇的博学者迪布斯。",
     ["T"] = "附有魔法的羊皮纸",
   },
@@ -7321,7 +7321,7 @@ pfDB["quests"]["zhCN"] = {
   },
   [1883] = {
     ["D"] = "森金村的部落法师安苏瓦发现杜隆塔尔的魔法流出现了波动，为此他向我寻求帮助。去和安苏瓦谈谈，尽你所能去帮助他。$B$B快去吧，到时一定会有更多的秘密展示在你的面前。",
-    ["O"] = "和安苏瓦谈一谈。",
+    ["O"] = "安苏瓦",
     ["T"] = "安苏瓦",
   },
   [1884] = {
@@ -8450,7 +8450,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "巨魔部族项链",
   },
   [2882] = {
-    ["D"] = "这张地图上画着一条对着南方的海滩，图下面用优雅的字体写着……$B$B$B热砂港南边$B家的南边$B找到骨头，旗子和旗杆$B如果你够胆，就去挖挖看$B挖挖看啊，科尔戈的金子光灿灿！$B开箱需钥匙，钥匙你会看见$B你面对的要用血来做交换。",
+    ["D"] = "这张地图上画着一条对着南方的海滩，图下面用优雅的字体写着……$B$B热砂港南边$B家的南边$B找到骨头，旗子和旗杆$B如果你够胆，就去挖挖看$B挖挖看啊，科尔戈的金子光灿灿！$B开箱需钥匙，钥匙你会看见$B你面对的要用血来做交换。",
     ["O"] = "找到科尔戈的黄金！",
     ["T"] = "科尔戈的黄金",
   },
@@ -13161,7 +13161,7 @@ pfDB["quests"]["zhCN"] = {
   },
   [6026] = {
     ["D"] = "银色黎明的成员让烟鬼给他们干一些“爆炸性的”工作，烟鬼可不是小角色！只要你愿意掏钱，我随时为你效劳。这就是我的座右铭！$B$B如果你能为我做点跑腿之类的小事，那么我也愿意和你一起分享荣誉。具体说来是这样的：我要去一趟病木林，然后给我们将要摧毁的建筑物做上标记，而你就负责收集制造炸弹所需的材料。当你拿到所有东西之后就把它们交给我。你觉得怎么样？",
-    ["O"] = "烟鬼拉鲁恩要你拿来2块瑟银锭、1根金棒、8颗高爆炸弹和8个不牢固的扳机。$B$B你需要找铁匠和工程学技师帮忙制作这些东西。",
+    ["O"] = "相信烟鬼吧，$C。你所能得到的奖励值得你费一番周折。那些银色黎明的家伙在付钱的时候可是非常吝啬的。",
     ["T"] = "狮子大开口",
   },
   [6027] = {
@@ -13690,7 +13690,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "玛拉的遗愿",
   },
   [6401] = {
-    ["D"] = "把这个好消息告诉卡雅的姑母，烈日石居的塔姆拉·荒原！告诉她卡雅还活着！我们以为在村子经历了那场劫难之后她就失踪了。沿着西面的路去烈日石居吧。",
+    ["D"] = "把这个好消息告诉烈日石居的塔姆拉·荒原。",
     ["O"] = "把这个好消息告诉烈日石居的塔姆拉·荒原。",
     ["T"] = "卡雅还活着",
   },
@@ -14285,7 +14285,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "冬幕节的礼物",
   },
   [7026] = {
-    ["D"] = "The Stormpike Brigade cannot charge into battle bareback! We require harnesses for our mounts, after all, we are not savages.$B$BWhile we could easily slay the rams that roam near our base for the leather required to fashion a harness, doing so would be idiotic. We need those rams for mounts.$B$BYou must strike at our enemy\'s base, slaying the frostwolves they use as mounts and taking their hides. Return their hides to me so that harnesses may be made for the cavalry. Go!",
+    ["D"] = "没有鞍具，雷矛部族就无法重新投入到战斗中!我们必须为坐骑配上鞍具，这样我们才不会像野蛮人一样骑着一头光溜溜的山羊。$B$B我们可以简单地干掉基地周围的山羊来获得皮革，但是那样做是非常愚蠢的。因为我们还要把那些山羊驯化成坐骑哪!$B$B你必须去攻击敌人的基地，杀死他们的霜狼坐骑，然後拿回他们的皮。把它们的皮交给我，这样我就可以帮我们的骑兵制作鞍具了。出发吧!",
     ["O"] = "我和你一样焦急地想要试一下我的便携式伐木机，$C，但是我必须要弄到一些材料——我是说很多材料——才能制作出配套的工具！$B$B实际上，我需要像山那么大的一堆瑟银、秘银和铁，另外每一台伐木机还需要有一个蒸汽锯才能完工，你最好到伐木场去找找看。$B$B我在这里游荡的时候（在我被抓住之前），曾在雷矛伐木场里看到很多的蒸汽锯。",
     ["T"] = "山羊坐具",
   },
@@ -16165,7 +16165,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "阿拉希盆地的资源!",
   },
   [8081] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "所有士兵都会这样告诉你，我们必须依靠我们的士兵进行战斗。他们还会告诉你，他们正使用破烂不堪的装备，饥肠辘辘地迎向战场!$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材─所有我们所需要的东西都可以从那里获得。$B那就是我需要你的地方，魔兽资料库网友。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利并给我带回一箱资源来。",
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一个阿拉希资源木箱，然后向避难谷地的玛克里尔中士覆命。",
     ["T"] = "更多的资源",
   },
@@ -16285,7 +16285,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "切断阿拉索补给线",
   },
   [8124] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
     ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
     ["T"] = "更多的资源",
   },
@@ -16365,17 +16365,17 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "阿拉希盆地的资源!",
   },
   [8157] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "所有士兵都会这样告诉你，我们必须依靠我们的士兵进行战斗。他们还会告诉你，他们正使用破烂不堪的装备，饥肠辘辘地迎向战场!$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材─所有我们所需要的东西都可以从那里获得。$B那就是我需要你的地方，魔兽资料库网友。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利并给我带回一箱资源来。",
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一个阿拉希资源木箱，然后向避难谷地的玛克里尔中士覆命。",
     ["T"] = "更多的资源",
   },
   [8158] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "所有士兵都会这样告诉你，我们必须依靠我们的士兵进行战斗。他们还会告诉你，他们正使用破烂不堪的装备，饥肠辘辘地迎向战场!$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材─所有我们所需要的东西都可以从那里获得。$B那就是我需要你的地方，魔兽资料库网友。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利并给我带回一箱资源来。",
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一个阿拉希资源木箱，然后向避难谷地的玛克里尔中士覆命。",
     ["T"] = "更多的资源",
   },
   [8159] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "所有士兵都会这样告诉你，我们必须依靠我们的士兵进行战斗。他们还会告诉你，他们正使用破烂不堪的装备，饥肠辘辘地迎向战场!$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材─所有我们所需要的东西都可以从那里获得。$B那就是我需要你的地方，魔兽资料库网友。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利并给我带回一箱资源来。",
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一个阿拉希资源木箱，然后向避难谷地的玛克里尔中士覆命。",
     ["T"] = "更多的资源",
   },
@@ -16395,17 +16395,17 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "切断阿拉索补给线",
   },
   [8163] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
     ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
     ["T"] = "更多的资源",
   },
   [8164] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
     ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
     ["T"] = "更多的资源",
   },
   [8165] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
     ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
     ["T"] = "更多的资源",
   },
@@ -16860,7 +16860,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "阿拉希盆地的资源!",
   },
   [8298] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "所有士兵都会这样告诉你，我们必须依靠我们的士兵进行战斗。他们还会告诉你，他们正使用破烂不堪的装备，饥肠辘辘地迎向战场!$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材─所有我们所需要的东西都可以从那里获得。$B那就是我需要你的地方，魔兽资料库网友。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利并给我带回一箱资源来。",
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一个阿拉希资源木箱，然后向避难谷地的玛克里尔中士覆命。",
     ["T"] = "更多的资源",
   },
@@ -16870,7 +16870,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "切断阿拉索补给线",
   },
   [8300] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
     ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
     ["T"] = "更多的资源",
   },
@@ -17200,7 +17200,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "铭记奥特兰克!",
   },
   [8384] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+    ["D"] = "要取得战争的胜利，我们要做的并不仅仅是简单地打败敌人，胜利的关键往往取决于双方的战争资源。$B阿拉希盆地蕴藏着大量物资，部落和联盟都想抢先夺取这些资源。$B如果联盟获胜，我们的军队将获得大量的剑和矛。如果部落获胜，这些武器也一样会被造出来，只不过是由部落的士兵拿在手里，指着我们!去协助阿拉希盆地的联盟吧，魔兽资料库网友。",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的联盟准将。",
     ["T"] = "战争的动力",
   },
@@ -17210,7 +17210,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "共同的努力",
   },
   [8386] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "银翼哨兵正在和战歌侦察骑兵争夺这片森林。当然，银翼哨兵保护森林的原因并非只有热爱大自然这条理由。$B梣谷的森林对我们来说是一层天然的战略屏障，可以抵抗大规模的进攻。如果没有这片森林的话，阿斯特兰纳很快就会完全暴露在贫瘠之地的攻击部队面前。你愿意参加对抗战歌前锋的战斗吗?为了联盟!",
     ["O"] = "将3枚战歌峡谷荣誉奖章交给战场外的联盟准将。",
     ["T"] = "自然屏障",
   },
@@ -17225,22 +17225,22 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "无上的荣耀",
   },
   [8389] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
+    ["D"] = "我们在战歌峡谷对银翼哨兵的战役非常重要。联盟以保护这片不属于他们的森林为由，妄图从部落手中夺取我们最大的伐木场。$B别让他们的妄想成为事实，魔兽资料库网友!为了部落，证明你的价值!成功之后再回到我这儿来。",
     ["O"] = "将3枚战歌荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "峡谷之战",
   },
   [8390] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "我们和联盟的冲突已经上升为一场真正的战争，不久之后战争就将全面打响。$B对于阿拉希盆地的争夺就是一个很好的开战理由。要么就是联盟占据它，并用其对付我们;或者就是我们占据它，然后用来对付联盟。帮助污染者保持这场资源竞赛上的优势吧，魔兽资料库网友!",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "资源竞赛",
   },
   [8391] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+    ["D"] = "要取得战争的胜利，我们要做的并不仅仅是简单地打败敌人，胜利的关键往往取决于双方的战争资源。$B阿拉希盆地蕴藏着大量物资，部落和联盟都想抢先夺取这些资源。$B如果联盟获胜，我们的军队将获得大量的剑和矛。如果部落获胜，这些武器也一样会被造出来，只不过是由部落的士兵拿在手里，指着我们!去协助阿拉希盆地的联盟吧，魔兽资料库网友。",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的联盟准将。",
     ["T"] = "战争的动力",
   },
   [8392] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+    ["D"] = "要取得战争的胜利，我们要做的并不仅仅是简单地打败敌人，胜利的关键往往取决于双方的战争资源。$B阿拉希盆地蕴藏着大量物资，部落和联盟都想抢先夺取这些资源。$B如果联盟获胜，我们的军队将获得大量的剑和矛。如果部落获胜，这些武器也一样会被造出来，只不过是由部落的士兵拿在手里，指着我们!去协助阿拉希盆地的联盟吧，魔兽资料库网友。",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的联盟准将。",
     ["T"] = "战争的动力",
   },
@@ -17265,12 +17265,12 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "战争的动力",
   },
   [8397] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+    ["D"] = "要取得战争的胜利，我们要做的并不仅仅是简单地打败敌人，胜利的关键往往取决于双方的战争资源。$B阿拉希盆地蕴藏着大量物资，部落和联盟都想抢先夺取这些资源。$B如果联盟获胜，我们的军队将获得大量的剑和矛。如果部落获胜，这些武器也一样会被造出来，只不过是由部落的士兵拿在手里，指着我们!去协助阿拉希盆地的联盟吧，魔兽资料库网友。",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的联盟准将。",
     ["T"] = "战争的动力",
   },
   [8398] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+    ["D"] = "要取得战争的胜利，我们要做的并不仅仅是简单地打败敌人，胜利的关键往往取决于双方的战争资源。$B阿拉希盆地蕴藏着大量物资，部落和联盟都想抢先夺取这些资源。$B如果联盟获胜，我们的军队将获得大量的剑和矛。如果部落获胜，这些武器也一样会被造出来，只不过是由部落的士兵拿在手里，指着我们!去协助阿拉希盆地的联盟吧，魔兽资料库网友。",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的联盟准将。",
     ["T"] = "战争的动力",
   },
@@ -17300,27 +17300,27 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "自然屏障",
   },
   [8404] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "银翼哨兵正在和战歌侦察骑兵争夺这片森林。当然，银翼哨兵保护森林的原因并非只有热爱大自然这条理由。$B梣谷的森林对我们来说是一层天然的战略屏障，可以抵抗大规模的进攻。如果没有这片森林的话，阿斯特兰纳很快就会完全暴露在贫瘠之地的攻击部队面前。你愿意参加对抗战歌前锋的战斗吗?为了联盟!",
     ["O"] = "将3枚战歌峡谷荣誉奖章交给战场外的联盟准将。",
     ["T"] = "自然屏障",
   },
   [8405] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "银翼哨兵正在和战歌侦察骑兵争夺这片森林。当然，银翼哨兵保护森林的原因并非只有热爱大自然这条理由。$B梣谷的森林对我们来说是一层天然的战略屏障，可以抵抗大规模的进攻。如果没有这片森林的话，阿斯特兰纳很快就会完全暴露在贫瘠之地的攻击部队面前。你愿意参加对抗战歌前锋的战斗吗?为了联盟!",
     ["O"] = "将3枚战歌峡谷荣誉奖章交给战场外的联盟准将。",
     ["T"] = "自然屏障",
   },
   [8406] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "银翼哨兵正在和战歌侦察骑兵争夺这片森林。当然，银翼哨兵保护森林的原因并非只有热爱大自然这条理由。$B梣谷的森林对我们来说是一层天然的战略屏障，可以抵抗大规模的进攻。如果没有这片森林的话，阿斯特兰纳很快就会完全暴露在贫瘠之地的攻击部队面前。你愿意参加对抗战歌前锋的战斗吗?为了联盟!",
     ["O"] = "将3枚战歌峡谷荣誉奖章交给战场外的联盟准将。",
     ["T"] = "自然屏障",
   },
   [8407] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "银翼哨兵正在和战歌侦察骑兵争夺这片森林。当然，银翼哨兵保护森林的原因并非只有热爱大自然这条理由。$B梣谷的森林对我们来说是一层天然的战略屏障，可以抵抗大规模的进攻。如果没有这片森林的话，阿斯特兰纳很快就会完全暴露在贫瘠之地的攻击部队面前。你愿意参加对抗战歌前锋的战斗吗?为了联盟!",
     ["O"] = "将3枚战歌峡谷荣誉奖章交给战场外的联盟准将。",
     ["T"] = "自然屏障",
   },
   [8408] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+    ["D"] = "银翼哨兵正在和战歌侦察骑兵争夺这片森林。当然，银翼哨兵保护森林的原因并非只有热爱大自然这条理由。$B梣谷的森林对我们来说是一层天然的战略屏障，可以抵抗大规模的进攻。如果没有这片森林的话，阿斯特兰纳很快就会完全暴露在贫瘠之地的攻击部队面前。你愿意参加对抗战歌前锋的战斗吗?为了联盟!",
     ["O"] = "将3枚战歌峡谷荣誉奖章交给战场外的联盟准将。",
     ["T"] = "自然屏障",
   },
@@ -17435,27 +17435,27 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "峡谷之战",
   },
   [8431] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
+    ["D"] = "我们在战歌峡谷对银翼哨兵的战役非常重要。联盟以保护这片不属于他们的森林为由，妄图从部落手中夺取我们最大的伐木场。$B别让他们的妄想成为事实，魔兽资料库网友!为了部落，证明你的价值!成功之后再回到我这儿来。",
     ["O"] = "将3枚战歌荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "峡谷之战",
   },
   [8432] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
+    ["D"] = "我们在战歌峡谷对银翼哨兵的战役非常重要。联盟以保护这片不属于他们的森林为由，妄图从部落手中夺取我们最大的伐木场。$B别让他们的妄想成为事实，魔兽资料库网友!为了部落，证明你的价值!成功之后再回到我这儿来。",
     ["O"] = "将3枚战歌荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "峡谷之战",
   },
   [8433] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
+    ["D"] = "我们在战歌峡谷对银翼哨兵的战役非常重要。联盟以保护这片不属于他们的森林为由，妄图从部落手中夺取我们最大的伐木场。$B别让他们的妄想成为事实，魔兽资料库网友!为了部落，证明你的价值!成功之后再回到我这儿来。",
     ["O"] = "将3枚战歌荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "峡谷之战",
   },
   [8434] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
+    ["D"] = "我们在战歌峡谷对银翼哨兵的战役非常重要。联盟以保护这片不属于他们的森林为由，妄图从部落手中夺取我们最大的伐木场。$B别让他们的妄想成为事实，魔兽资料库网友!为了部落，证明你的价值!成功之后再回到我这儿来。",
     ["O"] = "将3枚战歌荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "峡谷之战",
   },
   [8435] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
+    ["D"] = "我们在战歌峡谷对银翼哨兵的战役非常重要。联盟以保护这片不属于他们的森林为由，妄图从部落手中夺取我们最大的伐木场。$B别让他们的妄想成为事实，魔兽资料库网友!为了部落，证明你的价值!成功之后再回到我这儿来。",
     ["O"] = "将3枚战歌荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "峡谷之战",
   },
@@ -17480,22 +17480,22 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "资源竞赛",
   },
   [8440] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "我们和联盟的冲突已经上升为一场真正的战争，不久之后战争就将全面打响。$B对于阿拉希盆地的争夺就是一个很好的开战理由。要么就是联盟占据它，并用其对付我们;或者就是我们占据它，然后用来对付联盟。帮助污染者保持这场资源竞赛上的优势吧，魔兽资料库网友!",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "资源竞赛",
   },
   [8441] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "我们和联盟的冲突已经上升为一场真正的战争，不久之后战争就将全面打响。$B对于阿拉希盆地的争夺就是一个很好的开战理由。要么就是联盟占据它，并用其对付我们;或者就是我们占据它，然后用来对付联盟。帮助污染者保持这场资源竞赛上的优势吧，魔兽资料库网友!",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "资源竞赛",
   },
   [8442] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "我们和联盟的冲突已经上升为一场真正的战争，不久之后战争就将全面打响。$B对于阿拉希盆地的争夺就是一个很好的开战理由。要么就是联盟占据它，并用其对付我们;或者就是我们占据它，然后用来对付联盟。帮助污染者保持这场资源竞赛上的优势吧，魔兽资料库网友!",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "资源竞赛",
   },
   [8443] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "我们和联盟的冲突已经上升为一场真正的战争，不久之后战争就将全面打响。$B对于阿拉希盆地的争夺就是一个很好的开战理由。要么就是联盟占据它，并用其对付我们;或者就是我们占据它，然后用来对付联盟。帮助污染者保持这场资源竞赛上的优势吧，魔兽资料库网友!",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "资源竞赛",
   },
@@ -18060,7 +18060,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "神谕者的衬肩",
   },
   [8595] = {
-    ["D"] = "",
+    ["D"] = "你继续好好的效忠我们吧，$N。我们的协定依然存在。$B$B",
     ["O"] = "",
     ["T"] = "凡人中的勇士",
   },
@@ -18785,7 +18785,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "勇士回来了",
   },
   [8742] = {
-    ["D"] = "A thousand years has passed and just as it was fated, one stands before me. One who shall lead their people to a new age.$B$BThe Old God trembles, $N. Oh yes, it fears your faith. Shatter the prophecy of C\'Thun.$B$BIt knows you come, champion - and with you comes the might of Kalimdor. You have only to let me know when you are prepared and I shall grant you The Scepter of the Shifting Sands.",
+    ["D"] = "一千年过去了，正如命中注定的那样，一位勇士站在了我的面前。这位勇士将会带领他的人民走向新的纪元。$B$B上古之神在颤抖，$N。是的，它在你坚定的信念面前恐惧地颤抖着。打破克苏恩的预言吧。$B$B它知道你会到来的，勇士―它还知道卡林多的力量与你同在。当你做好准备之后，请通知我，我将把流沙权杖赐予你。",
     ["O"] = "",
     ["T"] = "卡林多的力量",
   },
@@ -18830,7 +18830,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "保护者之路",
   },
   [8751] = {
-    ["D"] = "",
+    ["D"] = "我从没看过这样不屈不挠的人!青铜龙军团将给你最後的附魔强化。这是永恒之王本人的希望!$B$B将你的徽记之戒交给我，这样我才能做些必要的调整。",
     ["O"] = "",
     ["T"] = "卡利姆多的保护者",
   },
@@ -18855,7 +18855,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "征服者之路",
   },
   [8756] = {
-    ["D"] = "",
+    ["D"] = "我从没看过这样不屈不挠的人!青铜龙军团将给你最後的附魔强化。这是永恒之王本人的希望!$B$B将你的徽记之戒交给我，这样我才能做些必要的调整。",
     ["O"] = "",
     ["T"] = "其拉虫人的征服者",
   },
@@ -18880,7 +18880,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "祈求者之路",
   },
   [8761] = {
-    ["D"] = "",
+    ["D"] = "我从没看过这样不屈不挠的人!青铜龙军团将给你最後的附魔强化。这是永恒之王本人的希望!$B$B将你的徽记之戒交给我，这样我才能做些必要的调整。",
     ["O"] = "",
     ["T"] = "虔诚的祈求者",
   },
@@ -19395,12 +19395,12 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "春节饺子",
   },
   [8864] = {
-    ["D"] = "",
+    ["D"] = "你可能会对我出售的洋装感兴趣。这样的洋装适合在新年穿着，而且我今天带来的款式都是最好的一批。每件洋装都是用最精细柔软的材料手工缝制。$B$B拿一些先祖硬币来交换，我就会让你从这三种款式中挑选一件。这样你可以接受吗?",
     ["O"] = "",
     ["T"] = "节庆长裙",
   },
   [8865] = {
-    ["D"] = "",
+    ["D"] = "很高兴告诉你，我有一系列的节庆长裤套装供你选择…只是要用先祖硬币来交换。如果时髦对你而言很重要的话，这些就是你要找的东西!我跟你保证，你不可能在别的地方买到这样的长裤套装。$B$B拿一点先祖硬币来交换，我就会让你从这三种样式中挑选一件。这样你可以接受吗?",
     ["O"] = "",
     ["T"] = "节庆裤装",
   },

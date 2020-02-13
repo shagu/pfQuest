@@ -4,10 +4,25 @@ pfDB["quests"]["esES-tbc"] = {
     ["O"] = "Matar alimaña kóbold, dos.",
     ["T"] = "Misión de Kanrethad",
   },
+  [7] = {
+    ["T"] = "Kobold Camp Cleanup",
+  },
+  [363] = {
+    ["D"] = "Me alegra que hayas despertado. Estábamos a punto de arrojarte al fuego con los otros, pero has salido adelante.$B$BSoy Mordo, el custodio de la cripta de Camposanto. Y tú ya no eres uno de los esclavos del Rey Exánime.$B$BHabla con el sacerdote de las Sombras Sarvis. Está en la capilla, al pie de la colina. Él te dirá lo que debes saber.$B$BPara salir de esta cripta, sube las escaleras hasta la superficie. Sigue el camino hasta la capilla para encontrarte con Sarvis.",
+  },
   [402] = {
     ["D"] = "Lo siento pero, tal y como están las cosas, tengo otros asuntos que atender. Intentaré acabar la traducción más tarde... Si sobrevivimos.",
     ["O"] = "Vuelve más tarde a ver si Sirra sigue aún ocupado.",
     ["T"] = "Sirra está ocupada",
+  },
+  [503] = {
+    ["T"] = "Gol\'dir",
+  },
+  [507] = {
+    ["T"] = "Lord Aliden Perenolde",
+  },
+  [551] = {
+    ["D"] = "Este papiro está encantado con un hechizo que lo hace indescifrable. Aunque se puede leer una palabra en la parte de arriba:$B$B$BNagaz$B$B",
   },
   [620] = {
     ["D"] = "Esta preciosa banda tiene bordadas las letras \"HS\" en el dobladillo.",
@@ -63,6 +78,9 @@ pfDB["quests"]["esES-tbc"] = {
   [1218] = {
     ["T"] = "Ancas de rana de marisma",
   },
+  [1260] = {
+    ["T"] = "Morgan Stern",
+  },
   [1263] = {
     ["D"] = "",
     ["O"] = "",
@@ -88,10 +106,19 @@ pfDB["quests"]["esES-tbc"] = {
     ["O"] = "Vuelve junto al capitán Garran Vimes a Theramore.",
     ["T"] = "&lt;nyi&gt; El informe de Vimes",
   },
+  [1301] = {
+    ["T"] = "James Hyal",
+  },
+  [1302] = {
+    ["T"] = "James Hyal",
+  },
   [1390] = {
     ["D"] = "Missing text",
     ["O"] = "Missing text",
     ["T"] = "&lt;nyi&gt; Ups, les hemos matado de otra vez",
+  },
+  [1483] = {
+    ["T"] = "Ziz Fizziks",
   },
   [1500] = {
     ["D"] = "",
@@ -113,8 +140,8 @@ pfDB["quests"]["esES-tbc"] = {
     ["O"] = "Habla con Therzok en el Circo de las Sombras de Orgrimmar.",
     ["T"] = "Herramientas de comercio",
   },
-  [2741] = {
-    ["O"] = " ",
+  [2239] = {
+    ["D"] = "¿La cantera? Sí, veo esos monstruosos tanques de vapor blindados pasar por aquí casi cada día.$B$BMis contactos en el este me dicen que el tanque sale de Forjaz, hace una recogida en la Cantera de Gol\'Bolar, para en Kharanos a repostar y luego, por no sé qué maldito motivo, da un rodeo para esquivar Gnomeregan antes de volver a Forjaz para descargar.$B$BEstá todo en el informe, $R. Llévaselo a Hulfdan para que pueda planear el siguiente paso.|n",
   },
   [3366] = {
     ["D"] = "El fragmento es verde y brillante y, aunque sólido, parece que hubiera humo arremolinándose bajo su superficie. No se puede evitar perder la mirada en las profundidades del cristal y, al mismo tiempo, uno sabe que hay algo muy desconcertante.$B$BQuizás deberías ir a ver si alguien de Trinquete puede decirte algo más sobre este extraño fragmento.",
@@ -206,6 +233,9 @@ pfDB["quests"]["esES-tbc"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Da Foo",
+  },
+  [6922] = {
+    ["T"] = "Baron Aquanis",
   },
   [7487] = {
     ["D"] = "Se abren y cierran grietas por todas partes, $R. A dos pasos de aquí hay una grieta que va a las profundidades de la Montaña Roca Negra, a las fauces mismas del Señor del Fuego.$B$B¿Te sorprende? Lástima... Las razas mortales no pueden comprender lo que no pueden tocar, ver o sentir.$B$BPero el portal está aquí y el acceso es posible.$B$B¿He despertado tu curiosidad? La Armonización es muy sencilla. Aventúrate en las Profundidades de Roca Negra y consigue un trozo del Núcleo. Tráemelo y armonizaré tu esencia con el portal.",
@@ -305,9 +335,29 @@ pfDB["quests"]["esES-tbc"] = {
     ["O"] = "",
     ["T"] = "Canjear vale de premio iCoke",
   },
-  [8196] = {
-    ["D"] = "The extremely potent essence mango grows across many of the islands in the South Seas. A single mango will refresh those who eat it, both physically and mentally. If you\'ve never had one, you do yourself a disservice!",
-    ["O"] = "We have enough of a supply here on the isle to offer you a handful in exchange for a Zandalar Honor Token. Speak with Vinchaxa if you need to learn how to get tokens; otherwise, let\'s get to the business at hand!",
+  [8081] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+  },
+  [8124] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+  },
+  [8157] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+  },
+  [8158] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+  },
+  [8159] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+  },
+  [8163] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+  },
+  [8164] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+  },
+  [8165] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
   [8230] = {
     ["D"] = "",
@@ -320,18 +370,16 @@ pfDB["quests"]["esES-tbc"] = {
   [8242] = {
     ["D"] = "",
   },
-  [8243] = {
-    ["D"] = "With your increased status amongst the tribe comes access to some of our more potent potables. Behold... these brews are strong in the mojo - blessed by Zanza and fit for adventurers from all walks of life!",
-    ["O"] = "I will allow you to choose one from the three I offer; in exchange, I require three Zandalar Honor Tokens. Note that only the effects of a single one may course through your spirit at any given time.",
-  },
-  [8246] = {
-    ["D"] = "May - for someone as exalted among the Zandalar as you are, I have something very special for you. Direct from our home in the South Seas... the Signets of the Zandalar! These signets are used to enhance any shoulder item you may possess. Should you seek might, mojo, or serenity - I have what you need!",
-    ["O"] = "I ask for fifteen Zandalar Honor Tokens in exchange for your choice of one signet. If you have the tokens ready, then I\'m ready to make a deal!",
-  },
   [8259] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Una digna recompensa",
+  },
+  [8298] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+  },
+  [8300] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
   [8325] = {
     ["D"] = "Cuanto antes empieces tu formación, $N, mejor para todos. No podemos permitirnos errores, así que escucha con atención.$B$BLos cristales ardientes, los objetos flotantes verdes que hay al oeste de la Aguja del Sol, han sido la fuente de energía de los experimentos en la isla. Los custodian los vermis de maná, pero la invasión de la Plaga en Quel\'Thalas hizo que perdiéramos el poder mágico sobre ellos y ahora vagan sin control.$B$BLo único que podemos hacer es reducir su número. Después ven a verme.",
@@ -418,8 +466,50 @@ pfDB["quests"]["esES-tbc"] = {
     ["O"] = "Entrega el paquete de Erona a la tabernera Delaniel en la Plaza Alalcón en el Bosque Canción Eterna.",
     ["T"] = "El encargo",
   },
+  [8390] = {
+    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+  },
+  [8391] = {
+    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+  },
+  [8392] = {
+    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+  },
+  [8397] = {
+    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+  },
+  [8398] = {
+    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
+  },
+  [8404] = {
+    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+  },
+  [8405] = {
+    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+  },
+  [8406] = {
+    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+  },
+  [8407] = {
+    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+  },
+  [8408] = {
+    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
+  },
   [8411] = {
     ["T"] = "[DEPRECATED]Dominar los elementos",
+  },
+  [8440] = {
+    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+  },
+  [8441] = {
+    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+  },
+  [8442] = {
+    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+  },
+  [8443] = {
+    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
   },
   [8463] = {
     ["D"] = "Hace poco, una banda de desdichados robó cristales de maná inestables en uno de nuestros sagrarios arcanos. Si no se manejan con precaución, podrían explotar con fuerza suficiente para volar las murallas de la ciudad.$B$B$N, no me importa si los desdichados saltan por los aires por jugar con fuentes arcanas inestables, pero eso dejaría en mal lugar a mis hombres.$B$BTráeme todos los cristales robados que encuentres; puede que aún estén en sus cajas.",
@@ -574,8 +664,8 @@ pfDB["quests"]["esES-tbc"] = {
     ["O"] = "",
     ["T"] = "¡La Horda necesita más piedras nuclearias chamuscadas!",
   },
-  [8742] = {
-    ["D"] = "",
+  [8730] = {
+    ["O"] = "Mata a Nefarian y recupera del fragmento de cetro rojo. Llévaselo a Anacronos a las Cavernas del Tiempo, en Tanaris. Tienes 5 horas para completar esta tarea.",
   },
   [8863] = {
     ["D"] = "If you are hungry, then you have come to the right place my friend!$B$BDumplings are the traditional food of the Lunar Festival; it has been served since the time of the first Lunar Festival, and I am pleased to be able to offer it at this one.  In exchange for just a single coin of ancestry, I will share with you a sampling of one of the tastiest dishes you will ever enjoy!",
