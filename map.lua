@@ -225,7 +225,7 @@ function pfMap:ShowTooltip(meta, tooltip)
 
       if not catchFallback and meta["spawn"] and not meta["texture"] then
         catchFallback = true
-        tooltip:AddLine("|cffaaaaaa- |r" .. pfQuest_Loc["Kill"] .. ": " .. meta["spawn"], .7,.7,.7)
+        tooltip:AddLine("|cffaaaaaa- |r" .. (meta["level"] and pfQuest_Loc["Kill"] or pfQuest_Loc["Interact"]) .. ": " .. meta["spawn"], .7,.7,.7)
       end
 
       if not catchFallback and meta["texture"] and meta["qlvl"] then
