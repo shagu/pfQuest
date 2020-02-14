@@ -764,7 +764,7 @@ end
 -- Adds map nodes for each quest starter and ender
 -- Returns its map table
 function pfDatabase:SearchQuests(meta, maps)
-  local level, minlvl, maxlvl, race, class, prof
+  local level, minlvl, maxlvl, race, class, prof, festival
   local maps = maps or {}
   local meta = meta or {}
 
@@ -792,6 +792,7 @@ function pfDatabase:SearchQuests(meta, maps)
   for id in pairs(quests) do
     minlvl = quests[id]["min"] or quests[id]["lvl"] or plevel
     maxlvl = quests[id]["lvl"] or quests[id]["min"] or plevel
+    festival = (math.abs(minlvl - maxlvl) >= 30 and true) or (quests[id]["lvl"] and quests[id]["lvl"] < 0 and true) or nil
 
     if pfDB.quests.loc[id] and currentQuests[pfDB.quests.loc[id].T] then
       -- hide active quest
@@ -809,7 +810,7 @@ function pfDatabase:SearchQuests(meta, maps)
       -- hide highlevel quests
     elseif quests[id]["min"] and quests[id]["min"] > plevel + 3 then
       -- hide highlevel quests
-    elseif math.abs(minlvl - maxlvl) >= 30 and pfQuest_config["showfestival"] == "0" then
+    elseif pfQuest_config["showfestival"] == "0" and festival then
       -- hide event quests
     elseif minlvl > plevel and pfQuest_config["showhighlevel"] == "0" then
       -- hide level+3 quests
@@ -842,7 +843,7 @@ function pfDatabase:SearchQuests(meta, maps)
       end
 
       -- treat big difference in level requirements as daily quests
-      if math.abs(minlvl - maxlvl) >= 30 or (quests[id]["lvl"] and quests[id]["lvl"] < 0) then
+      if festival then
         meta["texture"] = pfQuestConfig.path.."\\img\\available"
         meta["vertex"] = { .2, .8, 1 }
         meta["layer"] = 2
