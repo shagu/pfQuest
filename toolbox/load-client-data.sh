@@ -9,28 +9,26 @@ if [ -f "$rootsql" ]; then
   rm $rootsql
 fi
 
-# build sql tables
-for v in $versions; do
-  echo "Expansion: $v"
-  # build minimap_sizes
-  if [ -d $root/$v ] && [ -f $root/$v/WorldMapArea.dbc.csv ]; then
-    function calc { bc -l <<< ${@//[xX]/*}; };
+function Run() {
+  echo "- $1" &&  $1
+}
 
-    cat >> $rootsql << EOF
-
+function WorldMapArea() {
+  cat >> $rootsql << EOF
 DROP TABLE IF EXISTS \`WorldMapArea_${v}\`;
 CREATE TABLE \`WorldMapArea_${v}\` (
-  \`mapID\` smallint(3) unsigned NOT NULL,
-  \`areatableID\` smallint(3) unsigned NOT NULL,
-  \`name\` varchar(255) NOT NULL,
-  \`x_min\` float NOT NULL DEFAULT 0.0,
-  \`y_min\` float NOT NULL DEFAULT 0.0,
-  \`x_max\` float NOT NULL DEFAULT 0.0,
-  \`y_max\` float NOT NULL DEFAULT 0.0
+\`mapID\` smallint(3) unsigned NOT NULL,
+\`areatableID\` smallint(3) unsigned NOT NULL,
+\`name\` varchar(255) NOT NULL,
+\`x_min\` float NOT NULL DEFAULT 0.0,
+\`y_min\` float NOT NULL DEFAULT 0.0,
+\`x_max\` float NOT NULL DEFAULT 0.0,
+\`y_max\` float NOT NULL DEFAULT 0.0
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='WorldMapArea';
 
 EOF
 
+  if [ -d $root/$v ] && [ -f $root/$v/WorldMapArea.dbc.csv ]; then
     cat $root/$v/WorldMapArea.dbc.csv | tail -n +2 | sort -nt ',' -k3 | while read line; do
       map=$(echo $line | cut -d "," -f 2)
       area=$(echo $line | cut -d "," -f 3)
@@ -43,22 +41,21 @@ EOF
       echo "INSERT INTO \`WorldMapArea_${v}\` VALUES ($map, $area, $name, $y_max, $y_min, $x_max, $x_min);" >> $rootsql
     done
   fi
+}
 
-  if [ -d $root/$v ] && [ -f $root/$v/FactionTemplate.dbc.csv ]; then
-    function calc { bc -l <<< ${@//[xX]/*}; };
-
-    cat >> $rootsql << EOF
-
+function FactionTemplate() {
+  cat >> $rootsql << EOF
 DROP TABLE IF EXISTS \`FactionTemplate_${v}\`;
 CREATE TABLE \`FactionTemplate_${v}\` (
-  \`factiontemplateID\` smallint(3) unsigned NOT NULL,
-  \`factionID\` smallint(3) unsigned NOT NULL,
-  \`A\` smallint(1) NOT NULL,
-  \`H\` smallint(1) NOT NULL
+\`factiontemplateID\` smallint(3) unsigned NOT NULL,
+\`factionID\` smallint(3) unsigned NOT NULL,
+\`A\` smallint(1) NOT NULL,
+\`H\` smallint(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='WorldMapArea';
 
 EOF
 
+  if [ -d $root/$v ] && [ -f $root/$v/FactionTemplate.dbc.csv ]; then
     cat $root/$v/FactionTemplate.dbc.csv | tail -n +2 | sort -nt ',' -k3 | while read line; do
       factiontemplate=$(echo $line | cut -d "," -f 1)
       faction=$(echo $line | cut -d "," -f 2)
@@ -84,13 +81,15 @@ EOF
       echo "INSERT INTO \`FactionTemplate_${v}\` VALUES ($factiontemplate, $faction, $alliance, $horde);" >> $rootsql
     done
   fi
+}
 
+function Lock() {
   cat >> $rootsql << EOF
 DROP TABLE IF EXISTS \`Lock_${v}\`;
 CREATE TABLE \`Lock_${v}\` (
-  \`id\` smallint(3) unsigned NOT NULL,
-  \`locktype\` varchar(255) NOT NULL,
-  \`skill\` smallint(3) unsigned NOT NULL
+\`id\` smallint(3) unsigned NOT NULL,
+\`locktype\` varchar(255) NOT NULL,
+\`skill\` smallint(3) unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Lock';
 
 EOF
@@ -117,20 +116,22 @@ EOF
     add_skills 2
     add_skills 3
   fi
+}
 
+function SkillLine() {
   cat >> $rootsql << EOF
 DROP TABLE IF EXISTS \`SkillLine_${v}\`;
 CREATE TABLE \`SkillLine_${v}\` (
-  \`id\` smallint(3) unsigned NOT NULL,
-  \`name_loc0\` varchar(255) NOT NULL,
-  \`name_loc1\` varchar(255) NOT NULL,
-  \`name_loc2\` varchar(255) NOT NULL,
-  \`name_loc3\` varchar(255) NOT NULL,
-  \`name_loc4\` varchar(255) NOT NULL,
-  \`name_loc5\` varchar(255) NOT NULL,
-  \`name_loc6\` varchar(255) NOT NULL,
-  \`name_loc7\` varchar(255) NOT NULL,
-  \`name_loc8\` varchar(255) NOT NULL
+\`id\` smallint(3) unsigned NOT NULL,
+\`name_loc0\` varchar(255) NOT NULL,
+\`name_loc1\` varchar(255) NOT NULL,
+\`name_loc2\` varchar(255) NOT NULL,
+\`name_loc3\` varchar(255) NOT NULL,
+\`name_loc4\` varchar(255) NOT NULL,
+\`name_loc5\` varchar(255) NOT NULL,
+\`name_loc6\` varchar(255) NOT NULL,
+\`name_loc7\` varchar(255) NOT NULL,
+\`name_loc8\` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='SkillLine';
 
 EOF
@@ -154,20 +155,22 @@ EOF
     fi
     index=$(expr $index + 1)
   done
+}
 
+function AreaTable() {
   cat >> $rootsql << EOF
 DROP TABLE IF EXISTS \`AreaTable_${v}\`;
 CREATE TABLE \`AreaTable_${v}\` (
-  \`id\` smallint(3) unsigned NOT NULL,
-  \`name_loc0\` varchar(255) NOT NULL,
-  \`name_loc1\` varchar(255) NOT NULL,
-  \`name_loc2\` varchar(255) NOT NULL,
-  \`name_loc3\` varchar(255) NOT NULL,
-  \`name_loc4\` varchar(255) NOT NULL,
-  \`name_loc5\` varchar(255) NOT NULL,
-  \`name_loc6\` varchar(255) NOT NULL,
-  \`name_loc7\` varchar(255) NOT NULL,
-  \`name_loc8\` varchar(255) NOT NULL
+\`id\` smallint(3) unsigned NOT NULL,
+\`name_loc0\` varchar(255) NOT NULL,
+\`name_loc1\` varchar(255) NOT NULL,
+\`name_loc2\` varchar(255) NOT NULL,
+\`name_loc3\` varchar(255) NOT NULL,
+\`name_loc4\` varchar(255) NOT NULL,
+\`name_loc5\` varchar(255) NOT NULL,
+\`name_loc6\` varchar(255) NOT NULL,
+\`name_loc7\` varchar(255) NOT NULL,
+\`name_loc8\` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='AreaTable';
 
 EOF
@@ -191,4 +194,15 @@ EOF
     fi
     index=$(expr $index + 1)
   done
+}
+
+# build sql tables
+for v in $versions; do
+  echo "Expansion: $v"
+
+  Run WorldMapArea
+  Run FactionTemplate
+  Run Lock
+  Run SkillLine
+  Run AreaTable
 done
