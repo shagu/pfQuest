@@ -13,6 +13,34 @@ function Run() {
   echo "- $1" &&  $1
 }
 
+function AreaTrigger() {
+  cat >> $rootsql << EOF
+DROP TABLE IF EXISTS \`AreaTrigger_${v}\`;
+CREATE TABLE \`AreaTrigger_${v}\` (
+\`ID\` smallint(3) unsigned NOT NULL,
+\`MapID\` smallint(3) unsigned NOT NULL,
+\`X\` float NOT NULL DEFAULT 0.0,
+\`Y\` float NOT NULL DEFAULT 0.0,
+\`Z\` float NOT NULL DEFAULT 0.0,
+\`Size\` float NOT NULL DEFAULT 0.0
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='AreaTrigger';
+
+EOF
+
+  if [ -d $root/$v ] && [ -f $root/$v/AreaTrigger.dbc.csv ]; then
+    cat $root/$v/AreaTrigger.dbc.csv | tail -n +2 | sort -nt ',' -k3 | while read line; do
+      id=$(echo $line | cut -d "," -f 1)
+      map=$(echo $line | cut -d "," -f 2)
+      x=$(echo $line | cut -d "," -f 3)
+      y=$(echo $line | cut -d "," -f 4)
+      z=$(echo $line | cut -d "," -f 5)
+      size=$(echo $line | cut -d "," -f 6)
+
+      echo "INSERT INTO \`AreaTrigger_${v}\` VALUES ($id, $map, $x, $y, $z, $size);" >> $rootsql
+    done
+  fi
+}
+
 function WorldMapArea() {
   cat >> $rootsql << EOF
 DROP TABLE IF EXISTS \`WorldMapArea_${v}\`;
@@ -200,6 +228,7 @@ EOF
 for v in $versions; do
   echo "Expansion: $v"
 
+  Run AreaTrigger
   Run WorldMapArea
   Run FactionTemplate
   Run Lock
