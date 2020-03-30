@@ -263,6 +263,44 @@ for _, expansion in pairs(expansions) do
   end
 
   do -- database query functions
+    function GetAreaTriggerCoords(id)
+      local areatrigger = {}
+      local ret = {}
+
+      local sql = [[
+        SELECT * FROM pfquest.AreaTrigger_]]..expansion..[[ LEFT JOIN pfquest.WorldMapArea_]]..expansion..[[
+        ON ( pfquest.WorldMapArea_]]..expansion..[[.mapID = pfquest.AreaTrigger_]]..expansion..[[.MapID
+          AND pfquest.WorldMapArea_]]..expansion..[[.x_min < pfquest.AreaTrigger_]]..expansion..[[.X
+          AND pfquest.WorldMapArea_]]..expansion..[[.x_max > pfquest.AreaTrigger_]]..expansion..[[.X
+          AND pfquest.WorldMapArea_]]..expansion..[[.y_min < pfquest.AreaTrigger_]]..expansion..[[.Y
+          AND pfquest.WorldMapArea_]]..expansion..[[.y_max > pfquest.AreaTrigger_]]..expansion..[[.Y
+          AND pfquest.WorldMapArea_]]..expansion..[[.areatableID > 0)
+        WHERE pfquest.AreaTrigger_]]..expansion..[[.ID = ]] .. id .. [[ ORDER BY areatableID ]]
+
+      local query = mysql:execute(sql)
+      while query:fetch(areatrigger, "a") do
+        local zone = areatrigger.areatableID
+        local x = areatrigger.X
+        local y = areatrigger.Y
+        local x_max = areatrigger.x_max
+        local x_min = areatrigger.x_min
+        local y_max = areatrigger.y_max
+        local y_min = areatrigger.y_min
+        local px, py = 0, 0
+
+        if x and y and x_min and y_min then
+          px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
+          py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
+          if isValidMap(zone, round(px), round(py)) then
+            local coord = { px, py, tonumber(zone) }
+            table.insert(ret, coord)
+          end
+        end
+      end
+
+      return ret
+    end
+
     function GetCreatureCoords(id)
       local creature = {}
       local ret = {}
@@ -342,6 +380,30 @@ for _, expansion in pairs(expansions) do
 
   local exp = expansion == "vanilla" and "" or "-"..expansion
   local data = "data".. exp
+
+  do -- areatrigger
+    print("- loading areatrigger...")
+
+    pfDB["areatrigger"] = pfDB["areatrigger"] or {}
+    pfDB["areatrigger"][data] = {}
+
+    -- iterate over all areatriggers
+    local areatrigger = {}
+    local query = mysql:execute('SELECT * FROM pfquest.AreaTrigger_'..expansion..' ORDER BY ID')
+    while query:fetch(areatrigger, "a") do
+      if __DEBUG_LOOP_LIMIT() then break end
+      local entry = tonumber(areatrigger.ID)
+      pfDB["areatrigger"][data][entry] = {}
+
+      do -- coordinates
+        pfDB["areatrigger"][data][entry]["coords"] = {}
+        for id, coords in pairs(GetAreaTriggerCoords(entry)) do
+          local x, y, zone, respawn = unpack(coords)
+          table.insert(pfDB["areatrigger"][data][entry]["coords"], { x, y, zone, respawn })
+        end
+      end
+    end
+  end
 
   do -- units
     print("- loading units...")
@@ -645,7 +707,7 @@ for _, expansion in pairs(expansions) do
       pfDB["quests"][data][entry]["next"] = chain ~= 0 and chain
 
       -- quest objectives
-      local units, objects, items = {}, {}, {}
+      local units, objects, items, areatrigger = {}, {}, {}, {}
 
       for i=1,4 do
         if quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) > 0 then
@@ -659,6 +721,7 @@ for _, expansion in pairs(expansions) do
         if quest_template["ReqSourceId" .. i] and tonumber(quest_template["ReqSourceId" .. i]) > 0 then
           items[tonumber(quest_template["ReqSourceId" .. i])] = true
         end
+
         if quest_template["ReqSpellCast" .. i] and tonumber(quest_template["ReqSpellCast" .. i]) > 0 then
           local spell_template = {}
           local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.' .. C.Id .. ' = ' .. quest_template["ReqSpellCast" .. i])
@@ -672,6 +735,13 @@ for _, expansion in pairs(expansions) do
             end
           end
         end
+      end
+
+      -- scan for related areatriggers
+      local areatrigger_involvedrelation = {}
+      local query = mysql:execute('SELECT * FROM areatrigger_involvedrelation WHERE quest = ' .. entry)
+      while query:fetch(areatrigger_involvedrelation, "a") do
+        areatrigger[tonumber(areatrigger_involvedrelation["id"])] = true
       end
 
       -- scan required object/areas for usable quest items
@@ -696,7 +766,7 @@ for _, expansion in pairs(expansions) do
       end
 
       do -- write objectives
-        if tblsize(units) > 0 or tblsize(objects) > 0 or tblsize(items) > 0 then
+        if tblsize(units) > 0 or tblsize(objects) > 0 or tblsize(items) > 0 or tblsize(areatrigger) > 0 then
           pfDB["quests"][data][entry]["obj"] = pfDB["quests"][data][entry]["obj"] or {}
 
           for id in opairs(units) do
@@ -712,6 +782,11 @@ for _, expansion in pairs(expansions) do
           for id in opairs(items) do
             pfDB["quests"][data][entry]["obj"]["I"] = pfDB["quests"][data][entry]["obj"]["I"] or {}
             table.insert(pfDB["quests"][data][entry]["obj"]["I"], tonumber(id))
+          end
+
+          for id in opairs(areatrigger) do
+            pfDB["quests"][data][entry]["obj"]["A"] = pfDB["quests"][data][entry]["obj"]["A"] or {}
+            table.insert(pfDB["quests"][data][entry]["obj"]["A"], tonumber(id))
           end
         end
       end
@@ -972,6 +1047,7 @@ for _, expansion in pairs(expansions) do
     local prev_exp = expansion == "tbc" and "" or "-tbc"
     local prev_data = "data".. prev_exp
 
+    pfDB["areatrigger"][data] = tablesubstract(pfDB["areatrigger"][data], pfDB["areatrigger"][prev_data])
     pfDB["units"][data] = tablesubstract(pfDB["units"][data], pfDB["units"][prev_data])
     pfDB["objects"][data] = tablesubstract(pfDB["objects"][data], pfDB["objects"][prev_data])
     pfDB["items"][data] = tablesubstract(pfDB["items"][data], pfDB["items"][prev_data])
@@ -1000,6 +1076,7 @@ for _, expansion in pairs(expansions) do
 
   os.execute("mkdir -p output")
   serialize("output/init.lua", "pfDB", pfDB, nil, true)
+  serialize(string.format("output/areatrigger%s.lua", exp), "pfDB[\"areatrigger\"][\""..data.."\"]", pfDB["areatrigger"][data])
   serialize(string.format("output/units%s.lua", exp), "pfDB[\"units\"][\""..data.."\"]", pfDB["units"][data])
   serialize(string.format("output/objects%s.lua", exp), "pfDB[\"objects\"][\""..data.."\"]", pfDB["objects"][data])
   serialize(string.format("output/items%s.lua", exp), "pfDB[\"items\"][\""..data.."\"]", pfDB["items"][data])
