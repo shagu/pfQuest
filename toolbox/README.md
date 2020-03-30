@@ -61,21 +61,21 @@ Open the `extractor.lua` and make sure `local C = vmangos` in line 28 is set to 
     mysql -u mangos -p"mangos" pfquest < client-data.sql
 
     mysql -u mangos -p"mangos" cmangos-vanilla < git/mangos-classic/sql/base/mangos.sql
+    mysql -u mangos -p"mangos" cmangos-vanilla < git/classic-db/Full_DB/*.sql
     mysql -u mangos -p"mangos" cmangos-vanilla < git/mangos-classic/sql/base/dbc/original_data/Spell.sql
     mysql -u mangos -p"mangos" cmangos-vanilla < git/mangos-classic/sql/base/dbc/cmangos_fixes/Spell.sql
-    mysql -u mangos -p"mangos" cmangos-vanilla < git/classic-db/Full_DB/*.sql
     for file in git/MangosZero_Localised/1_LocaleTablePrepare.sql git/MangosZero_Localised/Translations/*/*.sql; do mysql -u mangos -p"mangos" cmangos-vanilla < $file; done
 
     mysql -u mangos -p"mangos" cmangos-tbc < git/mangos-tbc/sql/base/mangos.sql
+    mysql -u mangos -p"mangos" cmangos-tbc < git/tbc-db/Full_DB/*.sql
     mysql -u mangos -p"mangos" cmangos-tbc < git/mangos-tbc/sql/base/dbc/original_data/Spell.sql
     mysql -u mangos -p"mangos" cmangos-tbc < git/mangos-tbc/sql/base/dbc/cmangos_fixes/Spell.sql
-    mysql -u mangos -p"mangos" cmangos-tbc < git/tbc-db/Full_DB/*.sql
     for file in git/MangosOne_Localised/1_LocaleTablePrepare.sql git/MangosOne_Localised/Translations/*/*.sql; do mysql -u mangos -p"mangos" cmangos-tbc < $file; done
 
     mysql -u mangos -p"mangos" cmangos-wotlk < git/mangos-wotlk/sql/base/mangos.sql
+    mysql -u mangos -p"mangos" cmangos-wotlk < git/wotlk-db/Full_DB/*.sql
     mysql -u mangos -p"mangos" cmangos-wotlk < git/mangos-wotlk/sql/base/dbc/original_data/Spell.sql
     mysql -u mangos -p"mangos" cmangos-wotlk < git/mangos-wotlk/sql/base/dbc/cmangos_fixes/Spell.sql
-    mysql -u mangos -p"mangos" cmangos-wotlk < git/wotlk-db/Full_DB/*.sql
     for file in git/MangosTwo_Localised/1_LocaleTablePrepare.sql git/MangosTwo_Localised/Translations/*/*.sql; do mysql -u mangos -p"mangos" cmangos-wotlk < $file; done
 
 Open the `extractor.lua` and make sure `local C = cmangos-vanilla` in line 28 is set to `cmangos-vanilla`.
