@@ -1,4 +1,5 @@
 pfDB = {
+  ["areatrigger"] = {},
   ["items"] = {},
   ["meta"] = {},
   ["meta-tbc"] = {},
