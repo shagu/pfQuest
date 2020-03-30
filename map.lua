@@ -189,7 +189,7 @@ function pfMap:ShowTooltip(meta, tooltip)
                   catch_obj = true
                   local r,g,b = pfMap.tooltip:GetColor(objNum, objNeeded)
                   local sellcount = tonumber(meta["sellcount"]) > 0 and " |cff555555[|cffcccccc" .. meta["sellcount"] .. "x" .. "|cff555555]" or ""
-                  tooltip:AddLine("|cffaaaaaa- |cffffffff" .. pfQuest_Loc["Buy"] .. ": |r" .. itemName .. ": " .. objNum .. "/" .. objNeeded .. sellcount, r, g, b)
+                  tooltip:AddLine("|cffaaaaaa- |r" .. pfQuest_Loc["Buy"] .. ": " .. itemName .. ": " .. objNum .. "/" .. objNeeded .. sellcount, r, g, b)
                 end
               end
             end
@@ -211,7 +211,7 @@ function pfMap:ShowTooltip(meta, tooltip)
           catchFallback = true
           local dr, dg, db = pfMap.tooltip:GetColor(tonumber(meta["droprate"]), 100)
           local lootcolor = string.format("%02x%02x%02x", dr * 255, dg * 255, db * 255)
-          tooltip:AddLine("|cffaaaaaa- |r" .. pfQuest_Loc["Loot"] .. ": " .. item .. " |cff555555[|cff" .. lootcolor .. meta["droprate"] .. "%|cff555555]", .7, .7, .7)
+          tooltip:AddLine("|cffaaaaaa- |r" .. item .. " |cff555555[|cff" .. lootcolor .. meta["droprate"] .. "%|cff555555]", .7, .7, .7)
         end
       end
 
@@ -225,7 +225,7 @@ function pfMap:ShowTooltip(meta, tooltip)
 
       if not catchFallback and meta["spawn"] and not meta["texture"] then
         catchFallback = true
-        tooltip:AddLine("|cffaaaaaa- |r" .. (meta["level"] and pfQuest_Loc["Kill"] or pfQuest_Loc["Interact"]) .. ": " .. meta["spawn"], .7,.7,.7)
+        tooltip:AddLine("|cffaaaaaa- |r" .. (meta["spawntype"] and meta["spawntype"] == "Trigger" and pfQuest_Loc["Explore"] or meta["spawn"]), .7,.7,.7)
       end
 
       if not catchFallback and meta["texture"] and meta["qlvl"] then
