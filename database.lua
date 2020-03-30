@@ -4,7 +4,7 @@ local compat = pfQuestCompat
 pfDatabase = {}
 
 local loc = GetLocale()
-local dbs = { "items", "quests", "objects", "units", "zones", "professions" }
+local dbs = { "items", "quests", "objects", "units", "zones", "professions", "areatrigger" }
 local noloc = { "items", "quests", "objects", "units" }
 
 pfDB.locales = {
@@ -123,6 +123,7 @@ local units = pfDB["units"]["data"]
 local objects = pfDB["objects"]["data"]
 local quests = pfDB["quests"]["data"]
 local refloot = pfDB["refloot"]["data"]
+local areatrigger = pfDB["areatrigger"]["data"]
 local zones = pfDB["zones"]["loc"]
 local professions = pfDB["professions"]["loc"]
 
@@ -332,6 +333,41 @@ function pfDatabase:GetBestMap(maps)
   end
 
   return bestmap or nil, bestscore or nil
+end
+
+-- SearchAreaTriggerID
+-- Scans for all mobs with a specified ID
+-- Adds map nodes for each and returns its map table
+function pfDatabase:SearchAreaTriggerID(id, meta, maps, prio)
+  if not areatrigger[id] or not areatrigger[id]["coords"] then return maps end
+
+  local maps = maps or {}
+  local prio = prio or 1
+
+  for _, data in pairs(areatrigger[id]["coords"]) do
+    local x, y, zone = unpack(data)
+
+    if zone > 0 then
+      -- add all gathered data
+      meta = meta or {}
+      meta["spawn"] = pfQuest_Loc["Exploration Mark"]
+      meta["spawnid"] = id
+
+      meta["title"] = meta["quest"] or meta["item"] or meta["spawn"]
+      meta["zone"]  = zone
+      meta["x"]     = x
+      meta["y"]     = y
+
+      meta["level"] = pfQuest_Loc["N/A"]
+      meta["spawntype"] = pfQuest_Loc["Trigger"]
+      meta["respawn"] = pfQuest_Loc["N/A"]
+
+      maps[zone] = maps[zone] and maps[zone] + prio or prio
+      pfMap:AddNode(meta)
+    end
+  end
+
+  return maps
 end
 
 -- SearchMobID
@@ -738,6 +774,16 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           meta["layer"] = 2
           maps = pfDatabase:SearchItemID(item, meta, maps)
         end
+      end
+    end
+
+    -- areatrigger
+    if quests[id]["obj"]["A"] then
+      for _, areatrigger in pairs(quests[id]["obj"]["A"]) do
+        meta = meta or {}
+        meta["texture"] = nil
+        meta["layer"] = 2
+        maps = pfDatabase:SearchAreaTriggerID(areatrigger, meta, maps)
       end
     end
   end
