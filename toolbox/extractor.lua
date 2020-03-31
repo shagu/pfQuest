@@ -737,6 +737,15 @@ for _, expansion in pairs(expansions) do
         end
       end
 
+      -- add all units that give kill credit for one of the known units
+      for id in pairs(units) do
+        local creature_template = {}
+        local query = mysql:execute('SELECT * FROM creature_template WHERE KillCredit1 = ' .. id .. ' or KillCredit2 = ' .. id)
+        while query:fetch(creature_template, "a") do
+          units[creature_template["Entry"]] = true
+        end
+      end
+
       -- scan for related areatriggers
       local areatrigger_involvedrelation = {}
       local query = mysql:execute('SELECT * FROM areatrigger_involvedrelation WHERE quest = ' .. entry)
