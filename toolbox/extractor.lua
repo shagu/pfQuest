@@ -461,7 +461,7 @@ for _, expansion in pairs(expansions) do
 
         -- search for summoned mobs
         local event_scripts = {}
-        local query = mysql:execute('SELECT * FROM ' .. C.dbscripts_on_event .. ' WHERE ' .. C.dbscripts_on_event .. '.datalong = ' .. creature_template[C.Entry])
+        local query = mysql:execute('SELECT * FROM ' .. C.dbscripts_on_event .. ' WHERE command = 10 AND ' .. C.dbscripts_on_event .. '.datalong = ' .. creature_template[C.Entry])
         while query:fetch(event_scripts, "a") do
           local script = event_scripts.datalong
 
