@@ -746,6 +746,33 @@ for _, expansion in pairs(expansions) do
         end
       end
 
+      -- scan all items for spells that require gameobject targets
+      for id in pairs(items) do
+        local item_template = {}
+        local query = mysql:execute('SELECT * FROM item_template WHERE spellid_1 > 0 and entry = ' .. id)
+        while query:fetch(item_template, "a") do
+          local spellid = item_template["spellid_1"]
+
+          local spell_template = {}
+          local query = mysql:execute('SELECT * FROM spell_template WHERE id = ' .. spellid)
+          while query:fetch(spell_template, "a") do
+            local trigger = spell_template["EffectTriggerSpell1"]
+
+            local spell_script_target = {}
+            local query = mysql:execute('SELECT * FROM spell_script_target WHERE entry = ' .. trigger)
+            while query:fetch(spell_script_target, "a") do
+              local targetobj = spell_script_target["type"]
+              local targetentry = spell_script_target["targetEntry"]
+              if tonumber(targetobj) == 0 then
+                objects[tonumber(targetentry)] = true
+              elseif tonumber(targetobj) == 1 then
+                units[targetentry] = true
+              end
+            end
+          end
+        end
+      end
+
       -- scan for related areatriggers
       local areatrigger_involvedrelation = {}
       local query = mysql:execute('SELECT * FROM areatrigger_involvedrelation WHERE quest = ' .. entry)
