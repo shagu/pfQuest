@@ -221,6 +221,7 @@ function AreaTable() {
 DROP TABLE IF EXISTS \`AreaTable_${v}\`;
 CREATE TABLE \`AreaTable_${v}\` (
 \`id\` smallint(3) unsigned NOT NULL,
+\`zoneID\` smallint(3) unsigned NOT NULL,
 \`name_loc0\` varchar(255) NOT NULL,
 \`name_loc1\` varchar(255) NOT NULL,
 \`name_loc2\` varchar(255) NOT NULL,
@@ -240,10 +241,11 @@ EOF
     if [ -d $root/$v ] && [ -f $root/$v/$loc/AreaTable.dbc.csv ]; then
       tail -n +2 $root/$v/$loc/AreaTable.dbc.csv | while read line; do
         id=$(echo $line | cut -d , -f 1)
+        zoneID=$(echo $line | cut -d , -f 3)
         entry=$(echo $line | cut -d , -f $(expr 12 + $index) | sed 's/""/\\"/g')
 
         if [ "$loc" = "enUS" ]; then
-          echo "INSERT INTO \`AreaTable_${v}\` VALUES ($id, $entry, '', '', '', '', '', '', '', '');" >> $rootsql
+          echo "INSERT INTO \`AreaTable_${v}\` VALUES ($id, $zoneID, $entry, '', '', '', '', '', '', '', '');" >> $rootsql
         else
           nameloc="name_loc$index"
           if [ "$loc" = "ruRU" ]; then nameloc="name_loc8"; fi
