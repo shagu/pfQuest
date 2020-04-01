@@ -35,8 +35,8 @@ EOF
       textureHeight=$(echo $line | cut -d "," -f 11)
       offsetX=$(echo $line | cut -d "," -f 12)
       offsetY=$(echo $line | cut -d "," -f 13)
-      centerX=$(lua -e "print(math.ceil(($offsetX+($textureWidth/2))/1002*10000)/100)")
-      centerY=$(lua -e "print(math.ceil(($offsetY+($textureHeight/2))/668*10000)/100)")
+      centerX=$(lua -e "print(($offsetX+($textureWidth/2))/1002*100)")
+      centerY=$(lua -e "print(($offsetY+($textureHeight/2))/668*100)")
 
       echo "INSERT INTO \`WorldMapOverlay_${v}\` VALUES ($areaID, $textureWidth, $textureHeight, $offsetX, $offsetY, $centerX, $centerY);" >> $rootsql
     done
