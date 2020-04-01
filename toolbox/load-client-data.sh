@@ -13,6 +13,37 @@ function Run() {
   echo "- $1" &&  $1
 }
 
+function WorldMapOverlay() {
+  cat >> $rootsql << EOF
+DROP TABLE IF EXISTS \`WorldMapOverlay_${v}\`;
+CREATE TABLE \`WorldMapOverlay_${v}\` (
+\`areaID\` smallint(3) unsigned NOT NULL,
+\`textureWidth\` smallint(3) unsigned NOT NULL,
+\`textureHeight\` smallint(3) unsigned NOT NULL,
+\`offsetX\` smallint(3) unsigned NOT NULL,
+\`offsetY\` smallint(3) unsigned NOT NULL,
+\`centerX\` float NOT NULL DEFAULT 0.0,
+\`centerY\` float NOT NULL DEFAULT 0.0
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='WorldMapOverlay';
+
+EOF
+
+  if [ -d $root/$v ] && [ -f $root/$v/WorldMapOverlay.dbc.csv ]; then
+    cat $root/$v/WorldMapOverlay.dbc.csv | tail -n +2 | sort -nt ',' -k3 | while read line; do
+      areaID=$(echo $line | cut -d "," -f 3)
+      textureWidth=$(echo $line | cut -d "," -f 10)
+      textureHeight=$(echo $line | cut -d "," -f 11)
+      offsetX=$(echo $line | cut -d "," -f 12)
+      offsetY=$(echo $line | cut -d "," -f 13)
+      centerX=$(lua -e "print(math.ceil(($offsetX+($textureWidth/2))/1002*10000)/100)")
+      centerY=$(lua -e "print(math.ceil(($offsetY+($textureHeight/2))/668*10000)/100)")
+
+      echo "INSERT INTO \`WorldMapOverlay_${v}\` VALUES ($areaID, $textureWidth, $textureHeight, $offsetX, $offsetY, $centerX, $centerY);" >> $rootsql
+    done
+  fi
+}
+
+
 function AreaTrigger() {
   cat >> $rootsql << EOF
 DROP TABLE IF EXISTS \`AreaTrigger_${v}\`;
@@ -228,6 +259,7 @@ EOF
 for v in $versions; do
   echo "Expansion: $v"
 
+  Run WorldMapOverlay
   Run AreaTrigger
   Run WorldMapArea
   Run FactionTemplate
