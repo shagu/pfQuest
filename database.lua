@@ -57,10 +57,6 @@ for _, exp in pairs({ "-tbc", "-wotlk" }) do
   loc_update = pfDB["professions"][loc..exp] or pfDB["professions"]["enUS"..exp]
   if loc_update then patchtable(loc_core, loc_update) end
 
-  loc_core = pfDB["zones"][loc] or pfDB["zones"]["enUS"]
-  loc_update = pfDB["zones"][loc..exp] or pfDB["zones"]["enUS"..exp]
-  if loc_update then patchtable(loc_core, loc_update) end
-
   if pfDB["minimap"..exp] then patchtable(pfDB["minimap"], pfDB["minimap"..exp]) end
   if pfDB["meta"..exp] then patchtable(pfDB["meta"], pfDB["meta"..exp]) end
 end
@@ -122,9 +118,9 @@ local items = pfDB["items"]["data"]
 local units = pfDB["units"]["data"]
 local objects = pfDB["objects"]["data"]
 local quests = pfDB["quests"]["data"]
+local zones = pfDB["zones"]["data"]
 local refloot = pfDB["refloot"]["data"]
 local areatrigger = pfDB["areatrigger"]["data"]
-local zones = pfDB["zones"]["loc"]
 local professions = pfDB["professions"]["loc"]
 
 local bitraces = {

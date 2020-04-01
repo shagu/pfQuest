@@ -874,6 +874,25 @@ for _, expansion in pairs(expansions) do
     end
   end
 
+  do -- zones
+    print("- loading zones...")
+    pfDB["zones"] = pfDB["zones"] or {}
+    pfDB["zones"][data] = {}
+
+    local zones = {}
+    local query = mysql:execute('SELECT * FROM pfquest.WorldMapOverlay_'..expansion..' LEFT JOIN pfquest.AreaTable_'..expansion..' ON pfquest.WorldMapOverlay_'..expansion..'.areaID = pfquest.AreaTable_'..expansion..'.id')
+    while query:fetch(zones, "a") do
+      if __DEBUG_LOOP_LIMIT() then break end
+      local entry = tonumber(zones.id)
+      local zone = tonumber(zones.zoneID)
+      local width = tonumber(zones.textureWidth)
+      local height = tonumber(zones.textureHeight)
+      local cx = tonumber(zones.centerX)
+      local cy = tonumber(zones.centerY)
+      pfDB["zones"][data][entry] = { zone, width, height, cx, cy}
+    end
+  end
+
   do -- minimap
     print("- loading minimap...")
 
@@ -1056,8 +1075,6 @@ for _, expansion in pairs(expansions) do
   end
 
   do -- zones locales
-    pfDB["zones"] = {}
-
     local locales_zones = {}
     local query = mysql:execute('SELECT * FROM pfquest.AreaTable_'..expansion..' ORDER BY id ASC')
     while query:fetch(locales_zones, "a") do
@@ -1089,6 +1106,7 @@ for _, expansion in pairs(expansions) do
     pfDB["items"][data] = tablesubstract(pfDB["items"][data], pfDB["items"][prev_data])
     pfDB["refloot"][data] = tablesubstract(pfDB["refloot"][data], pfDB["refloot"][prev_data])
     pfDB["quests"][data] = tablesubstract(pfDB["quests"][data], pfDB["quests"][prev_data])
+    pfDB["zones"][data] = tablesubstract(pfDB["zones"][data], pfDB["zones"][prev_data])
     pfDB["minimap"..exp] = tablesubstract(pfDB["minimap"..exp], pfDB["minimap"..prev_exp])
     pfDB["meta"..exp] = tablesubstract(pfDB["meta"..exp], pfDB["meta"..prev_exp])
 
@@ -1102,8 +1120,8 @@ for _, expansion in pairs(expansions) do
       pfDB["objects"][locale] = tablesubstract(pfDB["objects"][locale], pfDB["objects"][prev_locale])
       pfDB["items"][locale] = tablesubstract(pfDB["items"][locale], pfDB["items"][prev_locale])
       pfDB["quests"][locale] = tablesubstract(pfDB["quests"][locale], pfDB["quests"][prev_locale])
-      pfDB["professions"][locale] = tablesubstract(pfDB["professions"][locale], pfDB["professions"][prev_locale])
       pfDB["zones"][locale] = tablesubstract(pfDB["zones"][locale], pfDB["zones"][prev_locale])
+      pfDB["professions"][locale] = tablesubstract(pfDB["professions"][locale], pfDB["professions"][prev_locale])
     end
   end
 
@@ -1118,6 +1136,7 @@ for _, expansion in pairs(expansions) do
   serialize(string.format("output/items%s.lua", exp), "pfDB[\"items\"][\""..data.."\"]", pfDB["items"][data])
   serialize(string.format("output/refloot%s.lua", exp), "pfDB[\"refloot\"][\""..data.."\"]", pfDB["refloot"][data])
   serialize(string.format("output/quests%s.lua", exp), "pfDB[\"quests\"][\""..data.."\"]", pfDB["quests"][data])
+  serialize(string.format("output/zones%s.lua", exp), "pfDB[\"zones\"][\""..data.."\"]", pfDB["zones"][data])
   serialize(string.format("output/minimap%s.lua", exp), "pfDB[\"minimap"..exp.."\"]", pfDB["minimap"..exp])
   serialize(string.format("output/meta%s.lua", exp), "pfDB[\"meta"..exp.."\"]", pfDB["meta"..exp])
 

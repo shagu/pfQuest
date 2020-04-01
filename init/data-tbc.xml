@@ -4,6 +4,7 @@
   <Include file="..\db\objects-tbc.lua"/>
   <Include file="..\db\refloot-tbc.lua"/>
   <Include file="..\db\quests-tbc.lua"/>
+  <Include file="..\db\zones-tbc.lua"/>
   <Include file="..\db\minimap-tbc.lua"/>
   <Include file="..\db\areatrigger-tbc.lua"/>
   <Include file="..\db\meta-tbc.lua"/>
