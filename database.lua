@@ -444,6 +444,67 @@ function pfDatabase:SearchMob(mob, meta, partial)
   return maps
 end
 
+-- SearchZoneID
+-- Scans for all zones with a specific ID
+-- Add nodes to the center of that location
+function pfDatabase:SearchZoneID(id, meta, maps, prio)
+  if not zones[id] then return maps end
+
+  local maps = maps or {}
+  local prio = prio or 1
+
+  local zone, width, height, x, y, ex, ey = unpack(zones[id])
+  local radius = min(width, height)
+
+  if zone > 0 then
+    maps[zone] = maps[zone] and maps[zone] + prio or prio
+
+    meta = meta or {}
+    meta["spawn"] = pfDB.zones.loc[id] or UNKNOWN
+    meta["spawnid"] = id
+
+    meta["title"] = meta["quest"] or meta["item"] or meta["spawn"]
+    meta["zone"]  = zone
+    meta["level"] = "N/A"
+    meta["spawntype"] = "Area/Zone"
+    meta["respawn"] = "N/A"
+    meta["x"]     = x
+    meta["y"]     = y
+
+    if nil then
+      pfMap:AddNode(meta)
+      return maps
+    end
+
+    for py=-radius,radius,2 do
+      for px=-radius,radius,2 do
+        if(px*px+py*py <= radius*radius) then
+          meta["x"]     = x+px/1.5
+          meta["y"]     = y+py
+          pfMap:AddNode(meta)
+        end
+      end
+    end
+  end
+
+  return maps
+end
+
+-- SearchZone
+-- Scans for all zones with a specified name
+-- Adds map nodes for each and returns its map table
+function pfDatabase:SearchZone(obj, meta, partial)
+  local maps = {}
+
+  for id in pairs(pfDatabase:GetIDByName(obj, "zones", partial)) do
+    if zones[id] then
+      maps = pfDatabase:SearchZoneID(id, meta, maps)
+    end
+  end
+
+  return maps
+end
+
 -- Scans for all objects with a specified ID
 -- Adds map nodes for each and returns its map table
 function pfDatabase:SearchObjectID(id, meta, maps, prio)
