@@ -885,11 +885,26 @@ for _, expansion in pairs(expansions) do
       if __DEBUG_LOOP_LIMIT() then break end
       local entry = tonumber(zones.id)
       local zone = tonumber(zones.zoneID)
-      local width = tonumber(zones.textureWidth)
-      local height = tonumber(zones.textureHeight)
-      local cx = tonumber(zones.centerX)
-      local cy = tonumber(zones.centerY)
-      pfDB["zones"][data][entry] = { zone, width, height, cx, cy}
+      local textureWidth = tonumber(zones.textureWidth)
+      local textureHeight = tonumber(zones.textureHeight)
+      local offsetX = tonumber(zones.offsetX)
+      local offsetY = tonumber(zones.offsetY)
+
+      -- convert square to map scale
+      local hitRectTop = tonumber(zones.hitRectTop)/668*100
+      local hitRectLeft = tonumber(zones.hitRectLeft)/1002*100
+      local hitRectBottom = tonumber(zones.hitRectBottom)/668*100
+      local hitRectRight = tonumber(zones.hitRectRight)/1002*100
+
+      -- area size
+      local width = hitRectRight - hitRectLeft
+      local height = hitRectBottom - hitRectTop
+
+      -- area center
+      local cx = (hitRectLeft+hitRectRight)/2
+      local cy = (hitRectTop+hitRectBottom)/2
+
+      pfDB["zones"][data][entry] = { zone, round(width,2), round(height,2), round(cx,2), round(cy,2)}
     end
   end
 

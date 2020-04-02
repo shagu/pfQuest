@@ -22,8 +22,10 @@ CREATE TABLE \`WorldMapOverlay_${v}\` (
 \`textureHeight\` smallint(3) unsigned NOT NULL,
 \`offsetX\` smallint(3) unsigned NOT NULL,
 \`offsetY\` smallint(3) unsigned NOT NULL,
-\`centerX\` float NOT NULL DEFAULT 0.0,
-\`centerY\` float NOT NULL DEFAULT 0.0
+\`hitRectTop\` smallint(3) unsigned NOT NULL,
+\`hitRectLeft\` smallint(3) unsigned NOT NULL,
+\`hitRectBottom\` smallint(3) unsigned NOT NULL,
+\`hitRectRight\` smallint(3) unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='WorldMapOverlay';
 
 EOF
@@ -31,14 +33,17 @@ EOF
   if [ -d $root/$v ] && [ -f $root/$v/WorldMapOverlay.dbc.csv ]; then
     cat $root/$v/WorldMapOverlay.dbc.csv | tail -n +2 | sort -nt ',' -k3 | while read line; do
       areaID=$(echo $line | cut -d "," -f 3)
+      texture=$(echo $line | cut -d "," -f 9)
       textureWidth=$(echo $line | cut -d "," -f 10)
       textureHeight=$(echo $line | cut -d "," -f 11)
       offsetX=$(echo $line | cut -d "," -f 12)
       offsetY=$(echo $line | cut -d "," -f 13)
-      centerX=$(lua -e "print(($offsetX+($textureWidth/2))/1002*100)")
-      centerY=$(lua -e "print(($offsetY+($textureHeight/2))/668*100)")
+      top=$(echo $line | cut -d "," -f 14)
+      left=$(echo $line | cut -d "," -f 15)
+      bottom=$(echo $line | cut -d "," -f 16)
+      right=$(echo $line | cut -d "," -f 17)
 
-      echo "INSERT INTO \`WorldMapOverlay_${v}\` VALUES ($areaID, $textureWidth, $textureHeight, $offsetX, $offsetY, $centerX, $centerY);" >> $rootsql
+      echo "INSERT INTO \`WorldMapOverlay_${v}\` VALUES ($areaID, $textureWidth, $textureHeight, $offsetX, $offsetY, $top, $left, $bottom, $right);" >> $rootsql
     done
   fi
 }
