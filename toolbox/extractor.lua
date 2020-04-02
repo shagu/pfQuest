@@ -707,7 +707,7 @@ for _, expansion in pairs(expansions) do
       pfDB["quests"][data][entry]["next"] = chain ~= 0 and chain
 
       -- quest objectives
-      local units, objects, items, areatrigger = {}, {}, {}, {}
+      local units, objects, items, areatrigger, zones = {}, {}, {}, {}, {}
 
       for i=1,4 do
         if quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) > 0 then
@@ -746,13 +746,14 @@ for _, expansion in pairs(expansions) do
         end
       end
 
-      -- scan all items for spells that require gameobject targets
+      -- scan all involved items for spells that require gameobjects, units or zones
       for id in pairs(items) do
         local item_template = {}
         local query = mysql:execute('SELECT * FROM item_template WHERE spellid_1 > 0 and entry = ' .. id)
         while query:fetch(item_template, "a") do
           local spellid = item_template["spellid_1"]
 
+          -- search related objects/units that are required as spell target (mostly vanilla)
           local spell_template = {}
           local query = mysql:execute('SELECT * FROM spell_template WHERE id = ' .. spellid)
           while query:fetch(spell_template, "a") do
@@ -769,6 +770,13 @@ for _, expansion in pairs(expansions) do
                 units[targetentry] = true
               end
             end
+          end
+
+          -- search related zones that are a spell area requirement (mostly tbc)
+          local spell_template = {}
+          local query = mysql:execute('SELECT id, AreaID FROM spell_template WHERE AreaID > 0 AND id = ' .. spellid)
+          while query and query:fetch(spell_template, "a") do
+            zones[tonumber(spell_template["AreaID"])] = true
           end
         end
       end
@@ -802,7 +810,7 @@ for _, expansion in pairs(expansions) do
       end
 
       do -- write objectives
-        if tblsize(units) > 0 or tblsize(objects) > 0 or tblsize(items) > 0 or tblsize(areatrigger) > 0 then
+        if tblsize(units) > 0 or tblsize(objects) > 0 or tblsize(items) > 0 or tblsize(areatrigger) > 0 or tblsize(zones) > 0 then
           pfDB["quests"][data][entry]["obj"] = pfDB["quests"][data][entry]["obj"] or {}
 
           for id in opairs(units) do
@@ -823,6 +831,11 @@ for _, expansion in pairs(expansions) do
           for id in opairs(areatrigger) do
             pfDB["quests"][data][entry]["obj"]["A"] = pfDB["quests"][data][entry]["obj"]["A"] or {}
             table.insert(pfDB["quests"][data][entry]["obj"]["A"], tonumber(id))
+          end
+
+          for id in opairs(zones) do
+            pfDB["quests"][data][entry]["obj"]["Z"] = pfDB["quests"][data][entry]["obj"]["Z"] or {}
+            table.insert(pfDB["quests"][data][entry]["obj"]["Z"], tonumber(id))
           end
         end
       end
