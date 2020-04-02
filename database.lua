@@ -843,6 +843,16 @@ function pfDatabase:SearchQuestID(id, meta, maps)
         maps = pfDatabase:SearchAreaTriggerID(areatrigger, meta, maps)
       end
     end
+
+    -- zones
+    if quests[id]["obj"]["Z"] then
+      for _, zone in pairs(quests[id]["obj"]["Z"]) do
+        meta = meta or {}
+        meta["texture"] = nil
+        meta["layer"] = 2
+        maps = pfDatabase:SearchZoneID(zone, meta, maps)
+      end
+    end
   end
 
   return maps
