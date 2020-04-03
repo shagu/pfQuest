@@ -711,7 +711,7 @@ for _, expansion in pairs(expansions) do
       local units, objects, items, areatrigger, zones = {}, {}, {}, {}, {}
 
       -- add provided source item to itemlist
-      if srcitem then items[srcitem] = true end
+      if srcitem and srcitem > 0 then items[srcitem] = true end
 
       for i=1,4 do
         if quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) > 0 then
