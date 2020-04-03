@@ -763,6 +763,17 @@ for _, expansion in pairs(expansions) do
           while query:fetch(spell_template, "a") do
             local trigger = spell_template["EffectTriggerSpell1"]
             local area = spell_template["AreaID"]
+            local focus = spell_template[C.RequiresSpellFocus]
+
+            -- spell requries focusing an object
+            if focus and tonumber(focus) > 0  then
+              local gameobject_template = {}
+              local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. focus)
+              while query:fetch(gameobject_template, "a") do
+                objects[tonumber(gameobject_template["entry"])] = true
+                match = true
+              end
+            end
 
             -- spell triggers something that requires a special target
             if trigger and tonumber(trigger) > 0 then
@@ -792,27 +803,6 @@ for _, expansion in pairs(expansions) do
       local query = mysql:execute('SELECT * FROM areatrigger_involvedrelation WHERE quest = ' .. entry)
       while query:fetch(areatrigger_involvedrelation, "a") do
         areatrigger[tonumber(areatrigger_involvedrelation["id"])] = true
-      end
-
-      -- scan required object/areas for usable quest items
-      if quest_template["SrcItemId"] ~= "0" then
-        local item_template = {}
-        local query = mysql:execute('SELECT * FROM item_template WHERE item_template.entry = ' .. quest_template["SrcItemId"])
-        while query:fetch(item_template, "a") do
-          if item_template["spellid_1"] ~= "0" then
-            local spell_template = {}
-            local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.' .. C.Id .. ' = ' .. item_template["spellid_1"])
-            while query:fetch(spell_template, "a") do
-              if spell_template[C.RequiresSpellFocus] ~= "0" then
-                local gameobject_template = {}
-                local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spell_template[C.RequiresSpellFocus])
-                while query:fetch(gameobject_template, "a") do
-                  objects[tonumber(gameobject_template["entry"])] = true
-                end
-              end
-            end
-          end
-        end
       end
 
       do -- write objectives
