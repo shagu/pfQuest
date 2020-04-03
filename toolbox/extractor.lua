@@ -764,6 +764,7 @@ for _, expansion in pairs(expansions) do
             local trigger = spell_template["EffectTriggerSpell1"]
             local area = spell_template["AreaID"]
             local focus = spell_template[C.RequiresSpellFocus]
+            local match = nil
 
             -- spell requries focusing an object
             if focus and tonumber(focus) > 0  then
@@ -782,16 +783,19 @@ for _, expansion in pairs(expansions) do
               while query:fetch(spell_script_target, "a") do
                 local targetobj = spell_script_target["type"]
                 local targetentry = spell_script_target["targetEntry"]
+
                 if tonumber(targetobj) == 0 then
                   objects[tonumber(targetentry)] = true
+                  match = true
                 elseif tonumber(targetobj) == 1 then
                   units[targetentry] = true
+                  match = true
                 end
               end
             end
 
-            -- spell requires a zone
-            if area and tonumber(area) > 0 then
+            -- only spell limitation is a zone
+            if not match and area and tonumber(area) > 0 then
               zones[tonumber(area)] = true
             end
           end
