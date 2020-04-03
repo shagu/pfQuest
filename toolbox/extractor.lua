@@ -695,6 +695,7 @@ for _, expansion in pairs(expansions) do
       local skill = tonumber(quest_template.RequiredSkill)
       local pre = tonumber(quest_template.PrevQuestId)
       local chain = tonumber(quest_template.NextQuestInChain)
+      local srcitem = tonumber(quest_template.SrcItemId)
 
       pfDB["quests"][data][entry] = {}
       pfDB["quests"][data][entry]["min"] = minlevel ~= 0 and minlevel
@@ -708,6 +709,9 @@ for _, expansion in pairs(expansions) do
 
       -- quest objectives
       local units, objects, items, areatrigger, zones = {}, {}, {}, {}, {}
+
+      -- add provided source item to itemlist
+      if srcitem then items[srcitem] = true end
 
       for i=1,4 do
         if quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) > 0 then
