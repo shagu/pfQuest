@@ -715,7 +715,7 @@ for _, expansion in pairs(expansions) do
 
       for i=1,4 do
         if quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) > 0 then
-          units[quest_template["ReqCreatureOrGOId" .. i]] = true
+          units[tonumber(quest_template["ReqCreatureOrGOId" .. i])] = true
         elseif quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) < 0 then
           objects[math.abs(tonumber(quest_template["ReqCreatureOrGOId" .. i]))] = true
         end
@@ -746,7 +746,7 @@ for _, expansion in pairs(expansions) do
         local creature_template = {}
         local query = mysql:execute('SELECT * FROM creature_template WHERE KillCredit1 = ' .. id .. ' or KillCredit2 = ' .. id)
         while query:fetch(creature_template, "a") do
-          units[creature_template["Entry"]] = true
+          units[tonumber(creature_template["Entry"])] = true
         end
       end
 
@@ -788,7 +788,7 @@ for _, expansion in pairs(expansions) do
                   objects[tonumber(targetentry)] = true
                   match = true
                 elseif tonumber(targetobj) == 1 then
-                  units[targetentry] = true
+                  units[tonumber(targetentry)] = true
                   match = true
                 end
               end
