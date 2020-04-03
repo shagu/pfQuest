@@ -746,37 +746,39 @@ for _, expansion in pairs(expansions) do
         end
       end
 
-      -- scan all involved items for spells that require gameobjects, units or zones
+      -- scan all involved questitems for spells that require gameobjects, units or zones
       for id in pairs(items) do
         local item_template = {}
         local query = mysql:execute('SELECT * FROM item_template WHERE spellid_1 > 0 and entry = ' .. id)
         while query:fetch(item_template, "a") do
           local spellid = item_template["spellid_1"]
 
-          -- search related objects/units that are required as spell target (mostly vanilla)
+          -- scan through all spells that are associated with the item
           local spell_template = {}
           local query = mysql:execute('SELECT * FROM spell_template WHERE id = ' .. spellid)
           while query:fetch(spell_template, "a") do
             local trigger = spell_template["EffectTriggerSpell1"]
+            local area = spell_template["AreaID"]
 
-            local spell_script_target = {}
-            local query = mysql:execute('SELECT * FROM spell_script_target WHERE entry = ' .. trigger)
-            while query:fetch(spell_script_target, "a") do
-              local targetobj = spell_script_target["type"]
-              local targetentry = spell_script_target["targetEntry"]
-              if tonumber(targetobj) == 0 then
-                objects[tonumber(targetentry)] = true
-              elseif tonumber(targetobj) == 1 then
-                units[targetentry] = true
+            -- spell triggers something that requires a special target
+            if trigger and tonumber(trigger) > 0 then
+              local spell_script_target = {}
+              local query = mysql:execute('SELECT * FROM spell_script_target WHERE entry = ' .. trigger)
+              while query:fetch(spell_script_target, "a") do
+                local targetobj = spell_script_target["type"]
+                local targetentry = spell_script_target["targetEntry"]
+                if tonumber(targetobj) == 0 then
+                  objects[tonumber(targetentry)] = true
+                elseif tonumber(targetobj) == 1 then
+                  units[targetentry] = true
+                end
               end
             end
-          end
 
-          -- search related zones that are a spell area requirement (mostly tbc)
-          local spell_template = {}
-          local query = mysql:execute('SELECT id, AreaID FROM spell_template WHERE AreaID > 0 AND id = ' .. spellid)
-          while query and query:fetch(spell_template, "a") do
-            zones[tonumber(spell_template["AreaID"])] = true
+            -- spell requires a zone
+            if area and tonumber(area) > 0 then
+              zones[tonumber(area)] = true
+            end
           end
         end
       end
