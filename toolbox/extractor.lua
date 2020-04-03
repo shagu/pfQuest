@@ -762,7 +762,7 @@ for _, expansion in pairs(expansions) do
           local query = mysql:execute('SELECT * FROM spell_template WHERE id = ' .. spellid)
           while query:fetch(spell_template, "a") do
             local trigger = spell_template["EffectTriggerSpell1"]
-            local area = spell_template["AreaID"]
+            local area = spell_template["AreaId"]
             local focus = spell_template[C.RequiresSpellFocus]
             local match = nil
 
