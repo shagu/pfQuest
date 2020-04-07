@@ -98,7 +98,7 @@ CreateFrame("Frame"):SetScript("OnUpdate", function()
 
     -- check for noloc
     if name and name ~= "" then
-      if name ~= pfDB["items"][loc][6948] then
+      if not strfind(name, pfDB["items"][loc][6948], 1) then
         for id, db in pairs(noloc) do
           pfDB[db]["loc"] = pfDB[db]["enUS"] or {}
         end
