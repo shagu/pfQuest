@@ -80,6 +80,16 @@ CreateFrame("Frame"):SetScript("OnUpdate", function()
   -- throttle to to one item per second
   if ( this.tick or 0) > GetTime() then return else this.tick = GetTime() + 1 end
 
+  -- give the server one iteration to return the itemname.
+  -- this is required for clients that use a clean wdb folder.
+  if not this.sentquery then
+    ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
+    ItemRefTooltip:SetHyperlink("item:6948:0:0:0")
+    ItemRefTooltip:Hide()
+    this.sentquery = true
+    return
+  end
+
   ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
   ItemRefTooltip:SetHyperlink("item:6948:0:0:0")
   if ItemRefTooltipTextLeft1 and ItemRefTooltipTextLeft1:IsVisible() then
