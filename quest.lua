@@ -1,5 +1,7 @@
 -- multi api compat
 local compat = pfQuestCompat
+local _, _, _, client = GetBuildInfo()
+client = client or 11200
 
 pfQuest = CreateFrame("Frame")
 
@@ -183,7 +185,11 @@ function pfQuest:AddQuestLogIntegration()
   pfQuest.buttonOnline:SetHeight(15)
   pfQuest.buttonOnline:SetPoint("TOPRIGHT", dockFrame, "TOPRIGHT", -12, -10)
   pfQuest.buttonOnline:SetScript("OnClick", function()
-    local questurl = "http://classicdb.ch/?quest="
+
+    local questurl = "https://vanilla-twinhead.twinstar.cz/?quest="
+    if client > 11200 then
+      questurl = "https://tbc-twinhead.twinstar.cz/?quest="
+    end
 
     if pfUI and pfUI.chat then
       pfUI.chat.urlcopy.text:SetText(questurl .. (this:GetID() or 0))
