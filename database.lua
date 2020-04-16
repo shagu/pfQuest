@@ -909,7 +909,7 @@ function pfDatabase:SearchQuests(meta, maps)
   local currentQuests = {}
   for id=1, GetNumQuestLogEntries() do
     local title = compat.GetQuestLogTitle(id)
-    currentQuests[title] = true
+    if title then currentQuests[title] = true end
   end
 
   for id in pairs(quests) do
