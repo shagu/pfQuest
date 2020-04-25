@@ -216,7 +216,7 @@ function pfQuest:AddQuestLogIntegration()
 
   pfQuest.buttonLanguage:SetScript("OnClick", function()
     UIDropDownMenu_Initialize(self, function()
-      local func = function() pfQuest.translate = this.value end
+      local func = function() pfQuest_config.translate = this.value end
       local info = {}
       info.text = "|cffaaaaaaReset Language"
       info.value = nil
@@ -236,11 +236,11 @@ function pfQuest:AddQuestLogIntegration()
 
   pfQuest.buttonLanguage:SetScript("OnUpdate", function()
     local id = pfQuest.buttonOnline:GetID()
-    local lang = pfQuest.translate
+    local lang = pfQuest_config.translate
 
-    if this.translate ~= pfQuest.translate then
-      pfQuest.buttonLanguage.txt:SetText("|cff000000[|cff3333ff" .. (pfDB.locales[pfQuest.translate] or "|cff333333Translate") .. "|cff000000]")
-      this.translate = pfQuest.translate
+    if this.translate ~= pfQuest_config.translate then
+      pfQuest.buttonLanguage.txt:SetText("|cff000000[|cff3333ff" .. (pfDB.locales[pfQuest_config.translate] or "|cff333333Translate") .. "|cff000000]")
+      this.translate = pfQuest_config.translate
       QuestLog_UpdateQuestDetails(true)
       return
     end
