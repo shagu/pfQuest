@@ -461,10 +461,10 @@ function pfMap:NodeUpdate()
 
     -- zoom active node
     if this.texture then
-      if size < 24 then
+      if size < 23 then
         this:SetWidth(size + 1)
         this:SetHeight(size + 1)
-      elseif size > 24 then
+      else
         this:SetWidth(24)
         this:SetHeight(24)
       end
@@ -481,10 +481,10 @@ function pfMap:NodeUpdate()
     end
 
     -- zoom active node
-    if size > 16 then
+    if size > 17 then
       this:SetWidth(size - 1)
       this:SetHeight(size - 1)
-    elseif size < 16 then
+    else
       this:SetWidth(16)
       this:SetHeight(16)
     end
