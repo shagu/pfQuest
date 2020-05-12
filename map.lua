@@ -419,7 +419,7 @@ end
 
 function pfMap:NodeEnter()
   local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
-  tooltip:SetOwner(this, ANCHOR_BOTTOMLEFT)
+  tooltip:SetOwner(this, "ANCHOR_LEFT")
   tooltip:SetText(this.spawn..(pfQuest_config.showids == "1" and " |cffcccccc("..this.spawnid..")|r" or ""), .3, 1, .8)
   tooltip:AddDoubleLine(pfQuest_Loc["Level"] .. ":", (this.level or UNKNOWN), .8,.8,.8, 1,1,1)
   tooltip:AddDoubleLine(pfQuest_Loc["Type"] .. ":", (this.spawntype or UNKNOWN), .8,.8,.8, 1,1,1)
