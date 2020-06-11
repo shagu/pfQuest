@@ -189,6 +189,8 @@ function pfQuestConfig:CreateConfigEntry(config, description, type)
       else
         pfQuest_config[this.config] = "0"
       end
+
+      pfQuest:ResetAll()
     end)
 
   elseif type == "text" then
