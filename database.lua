@@ -30,6 +30,16 @@ local function patchtable(base, diff)
   end
 end
 
+-- Return the tables median value
+local function median(tbl)
+  table.sort(tbl)
+  if math.mod(table.getn(tbl),2) == 0 then
+    return (tbl[table.getn(tbl)/2] + tbl[(table.getn(tbl)/2)+1]) / 2
+  else
+    return tbl[ceil(table.getn(tbl)/2)]
+  end
+end
+
 -- Detects if a non indexed table is empty
 local function isempty(tbl)
   for _ in pairs(tbl) do return end
