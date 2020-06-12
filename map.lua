@@ -35,6 +35,9 @@ local layers = {
   [pfQuestConfig.path.."\\img\\complete"]     = 3,
   [pfQuestConfig.path.."\\img\\complete_c"]   = 4,
   [pfQuestConfig.path.."\\img\\icon_vendor"]  = 5,
+  [pfQuestConfig.path.."\\img\\cluster_item"] = 9,
+  [pfQuestConfig.path.."\\img\\cluster_mob"]  = 9,
+  [pfQuestConfig.path.."\\img\\cluster_misc"] = 9,
 }
 
 local function GetLayerByTexture(tex)
@@ -451,6 +454,14 @@ function pfMap:NodeUpdate()
     end
   end
 
+  -- fixed alpha and size for minimap cluster icons
+  if this.cluster and this.minimap then
+    this:SetWidth(24)
+    this:SetHeight(24)
+    this:SetAlpha(.5)
+    return
+  end
+
   if highlight then
     -- fade alpha of active node
     if alpha < 1 then
@@ -494,6 +505,12 @@ function pfMap:NodeUpdate()
     this:SetWidth(16)
     this:SetHeight(16)
   end
+
+  -- static size for clusters
+  if this.cluster then
+    this:SetWidth(24)
+    this:SetHeight(24)
+  end
 end
 
 function pfMap:BuildNode(name, parent)
@@ -505,6 +522,7 @@ function pfMap:BuildNode(name, parent)
     f.defalpha = pfQuest_config["worldmaptransp"] + 0
   else
     f.defalpha = pfQuest_config["minimaptransp"] + 0
+    f.minimap = true
   end
 
   f:SetScript("OnEnter", pfMap.NodeEnter)
@@ -543,6 +561,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
       frame.vertex    = tab.vertex
       frame.title     = title
       frame.func      = tab.func
+      frame.cluster   = tab.cluster
 
       if pfQuest_config["spawncolors"] == "1" then
         frame.color = tab.spawn or tab.title
@@ -721,9 +740,14 @@ function pfMap:UpdateMinimap()
 
           pfMap:UpdateNode(pfMap.mpins[i], node, color, "minimap")
 
-          pfMap.mpins[i]:ClearAllPoints()
-          pfMap.mpins[i]:SetPoint("CENTER", pfMap.drawlayer, "CENTER", -xPos, yPos)
-          pfMap.mpins[i]:Show()
+          if pfMap.mpins[i].cluster then
+            pfMap.mpins[i]:Hide()
+          else
+            pfMap.mpins[i]:ClearAllPoints()
+            pfMap.mpins[i]:SetPoint("CENTER", pfMap.drawlayer, "CENTER", -xPos, yPos)
+            pfMap.mpins[i]:Show()
+          end
+
           i = i + 1
         end
       end
