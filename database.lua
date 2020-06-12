@@ -877,34 +877,30 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   local addon = meta["addon"] or "PFDB"
   local map = pfDatabase:GetBestMap(maps)
   if pfQuest_config.showcluster == "1" and pfMap.nodes[addon][map] then
-    local medians_item = {}
-    local medians_mob = {}
-    local medians_misc = {}
+    local medians = {}
 
     -- scan for all related nodes and build median tables
     for coords, data in pairs(pfMap.nodes[addon][map]) do
       if data[meta["quest"]] and not data[meta["quest"]].texture then
+        local _, _, x, y = strfind(coords, "(.*)|(.*)")
         if data[meta["quest"]].itemid then -- mobs
-          local _, _, x, y = strfind(coords, "(.*)|(.*)")
-          medians_item.x = medians_item.x or {}
-          medians_item.y = medians_item.y or {}
-
-          table.insert(medians_item.x, tonumber(x))
-          table.insert(medians_item.y, tonumber(y))
+          medians.item = medians.item or {}
+          medians.item.x = medians.item.x or {}
+          medians.item.y = medians.item.y or {}
+          table.insert(medians.item.x, tonumber(x))
+          table.insert(medians.item.y, tonumber(y))
         elseif data[meta["quest"]].spawnid and data[meta["quest"]].spawntype == "Unit" then
-          local _, _, x, y = strfind(coords, "(.*)|(.*)")
-          medians_mob.x = medians_mob.x or {}
-          medians_mob.y = medians_mob.y or {}
-
-          table.insert(medians_mob.x, tonumber(x))
-          table.insert(medians_mob.y, tonumber(y))
+          medians.mob = medians.mob or {}
+          medians.mob.x = medians.mob.x or {}
+          medians.mob.y = medians.mob.y or {}
+          table.insert(medians.mob.x, tonumber(x))
+          table.insert(medians.mob.y, tonumber(y))
         else
-          local _, _, x, y = strfind(coords, "(.*)|(.*)")
-          medians_misc.x = medians_misc.x or {}
-          medians_misc.y = medians_misc.y or {}
-
-          table.insert(medians_misc.x, tonumber(x))
-          table.insert(medians_misc.y, tonumber(y))
+          medians.misc = medians.misc or {}
+          medians.misc.x = medians.misc.x or {}
+          medians.misc.y = medians.misc.y or {}
+          table.insert(medians.misc.x, tonumber(x))
+          table.insert(medians.misc.y, tonumber(y))
         end
       end
     end
@@ -915,25 +911,13 @@ function pfDatabase:SearchQuestID(id, meta, maps)
     meta["cluster"] = true
     meta["zone"]  = map
 
-    if medians_item.x and table.getn(medians_item.x) > 0 then
-      meta["x"] = median(medians_item.x)+.001
-      meta["y"] = median(medians_item.y)+.001
-      meta["texture"] = pfQuestConfig.path.."\\img\\cluster_item"
-      pfMap:AddNode(meta)
-    end
-
-    if medians_mob.x and table.getn(medians_mob.x) > 0 then
-      meta["x"] = median(medians_mob.x)+.001
-      meta["y"] = median(medians_mob.y)+.001
-      meta["texture"] = pfQuestConfig.path.."\\img\\cluster_mob"
-      pfMap:AddNode(meta)
-    end
-
-    if medians_misc.x and table.getn(medians_misc.x) > 0 then
-      meta["x"] = median(medians_misc.x)+.001
-      meta["y"] = median(medians_misc.y)+.001
-      meta["texture"] = pfQuestConfig.path.."\\img\\cluster_misc"
-      pfMap:AddNode(meta)
+    for _, cluster in pairs({"item", "mob", "misc"}) do
+      if medians[cluster] then
+        meta["x"] = median(medians[cluster].x)+.001
+        meta["y"] = median(medians[cluster].y)+.001
+        meta["texture"] = pfQuestConfig.path.."\\img\\cluster_"..cluster
+        pfMap:AddNode(meta)
+      end
     end
   end
 
