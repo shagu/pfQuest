@@ -26,6 +26,7 @@ pfQuest_defconfig = {
   ["mindropchance"] = "0", -- Minimum Drop Chance
   ["mouseover"] = "1", -- Highlight Nodes On Mouseover
   ["showtracker"] = "1", -- Show Map Tracker
+  ["showcluster"] = "0", -- Show Quest Clusters
 }
 
 pfQuestConfig = CreateFrame("Frame", "pfQuestConfig", UIParent)
@@ -42,18 +43,19 @@ pfQuestConfig:SetScript("OnEvent", function()
     pfQuestConfig:LoadConfig()
     pfQuestConfig:MigrateHistory()
 
+    pfQuestConfig:CreateConfigEntry("showcluster",         pfQuest_Loc["Unified Quest Location Marker"],  "checkbox")
     pfQuestConfig:CreateConfigEntry("allquestgivers",      pfQuest_Loc["Display Available Questgivers"],  "checkbox")
     pfQuestConfig:CreateConfigEntry("currentquestgivers",  pfQuest_Loc["Display Current Questgivers"],    "checkbox")
     pfQuestConfig:CreateConfigEntry("showlowlevel",        pfQuest_Loc["Display Lowlevel Questgivers"],   "checkbox")
     pfQuestConfig:CreateConfigEntry("showhighlevel",       pfQuest_Loc["Display Level+3 Questgivers"],    "checkbox")
     pfQuestConfig:CreateConfigEntry("showfestival",        pfQuest_Loc["Display Event & Daily Quests"],   "checkbox")
     pfQuestConfig:CreateConfigEntry("minimapnodes",        pfQuest_Loc["Show MiniMap Nodes"],             "checkbox")
-    pfQuestConfig:CreateConfigEntry("cutoutminimap",       pfQuest_Loc["Use Cut-Out MiniMap Node Icons"],"checkbox")
+    pfQuestConfig:CreateConfigEntry("cutoutminimap",       pfQuest_Loc["Use Cut-Out MiniMap Node Icons"], "checkbox")
     pfQuestConfig:CreateConfigEntry("questlogbuttons",     pfQuest_Loc["Show QuestLog Buttons"],          "checkbox")
     pfQuestConfig:CreateConfigEntry("worldmapmenu",        pfQuest_Loc["Show WorldMap Menu"],             "checkbox")
     pfQuestConfig:CreateConfigEntry("minimapbutton",       pfQuest_Loc["Show MiniMap Button"],            "checkbox")
     pfQuestConfig:CreateConfigEntry("showids",             pfQuest_Loc["Show IDs"],                       "checkbox")
-    pfQuestConfig:CreateConfigEntry("spawncolors",        pfQuest_Loc["Color Map Nodes By Spawn"],       "checkbox")
+    pfQuestConfig:CreateConfigEntry("spawncolors",         pfQuest_Loc["Color Map Nodes By Spawn"],       "checkbox")
     pfQuestConfig:CreateConfigEntry("questlinks",          pfQuest_Loc["Enable Quest Links"],             "checkbox")
     pfQuestConfig:CreateConfigEntry("mouseover",           pfQuest_Loc["Highlight Nodes On Mouseover"],   "checkbox")
     pfQuestConfig:CreateConfigEntry("worldmaptransp",      pfQuest_Loc["WorldMap Node Transparency"],     "text")
