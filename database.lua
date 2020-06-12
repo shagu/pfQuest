@@ -33,7 +33,7 @@ end
 -- Return the tables median value
 local function median(tbl)
   table.sort(tbl)
-  if math.mod(table.getn(tbl),2) == 0 then
+  if mod(table.getn(tbl),2) == 0 then
     return (tbl[table.getn(tbl)/2] + tbl[(table.getn(tbl)/2)+1]) / 2
   else
     return tbl[ceil(table.getn(tbl)/2)]
