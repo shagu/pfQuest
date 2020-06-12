@@ -30,11 +30,9 @@ local function patchtable(base, diff)
   end
 end
 
+-- Detects if a non indexed table is empty
 local function isempty(tbl)
-  for _ in pairs(tbl) do
-    return nil
-  end
-
+  for _ in pairs(tbl) do return end
   return true
 end
 
