@@ -30,14 +30,39 @@ local function patchtable(base, diff)
   end
 end
 
--- Return the tables median value
-local function median(tbl)
-  table.sort(tbl)
-  if mod(table.getn(tbl),2) == 0 then
-    return (tbl[table.getn(tbl)/2] + tbl[(table.getn(tbl)/2)+1]) / 2
-  else
-    return tbl[ceil(table.getn(tbl)/2)]
+-- Return the best cluster point for a coordiante table
+local best, neighbors = { index = 1, neighbors = 0 }, 0
+local cache, cacheindex = {}
+local ymin, ymax, xmin, ymax
+local function getcluster(tbl, name)
+  best.index, best.neighbors = 1, 0
+  cacheindex = string.format("%s:%s", name, table.getn(tbl))
+
+  -- calculate new cluster if nothing is cached
+  if not cache[cacheindex] then
+    for index, data in pairs(tbl) do
+      -- precalculate the limits, and compare directly.
+      -- This way is much faster than the math.abs function.
+      xmin, xmax = data[1] - 5, data[1] + 5
+      ymin, ymax = data[2] - 5, data[2] + 5
+      neighbors = 0
+
+      for _, compare in pairs(tbl) do
+        if compare[1] > xmin and compare[1] < xmax and compare[2] > ymin and compare[2] < ymax then
+          neighbors = neighbors + 1
+        end
+      end
+
+      if neighbors > best.neighbors then
+        best.neighbors = neighbors
+        best.index = index
+      end
+    end
+
+    cache[cacheindex] = { tbl[best.index][1] + .001, tbl[best.index][2] + .001 }
   end
+
+  return cache[cacheindex][1], cache[cacheindex][2]
 end
 
 -- Detects if a non indexed table is empty
@@ -873,48 +898,37 @@ function pfDatabase:SearchQuestID(id, meta, maps)
     end
   end
 
-  -- add median
+  -- prepare unified quest location markers
   local addon = meta["addon"] or "PFDB"
   local map = pfDatabase:GetBestMap(maps)
   if pfQuest_config.showcluster == "1" and pfMap.nodes[addon][map] then
     local medians = {}
 
-    -- scan for all related nodes and build median tables
+    -- scan for all related nodes and build cluster coordinate tables
     for coords, data in pairs(pfMap.nodes[addon][map]) do
       if data[meta["quest"]] and not data[meta["quest"]].texture then
         local _, _, x, y = strfind(coords, "(.*)|(.*)")
         if data[meta["quest"]].itemid then -- mobs
           medians.item = medians.item or {}
-          medians.item.x = medians.item.x or {}
-          medians.item.y = medians.item.y or {}
-          table.insert(medians.item.x, tonumber(x))
-          table.insert(medians.item.y, tonumber(y))
+          table.insert(medians.item, {tonumber(x), tonumber(y)})
         elseif data[meta["quest"]].spawnid and data[meta["quest"]].spawntype == "Unit" then
           medians.mob = medians.mob or {}
-          medians.mob.x = medians.mob.x or {}
-          medians.mob.y = medians.mob.y or {}
-          table.insert(medians.mob.x, tonumber(x))
-          table.insert(medians.mob.y, tonumber(y))
+          table.insert(medians.mob, {tonumber(x), tonumber(y)})
         else
           medians.misc = medians.misc or {}
-          medians.misc.x = medians.misc.x or {}
-          medians.misc.y = medians.misc.y or {}
-          table.insert(medians.misc.x, tonumber(x))
-          table.insert(medians.misc.y, tonumber(y))
+          table.insert(medians.misc, {tonumber(x), tonumber(y)})
         end
       end
     end
 
-    -- build median nodes and add +.001 to those to make sure
-    -- we don't conflict any other nodes coordinates
+    -- prepare the node for the unified location marker
     meta["title"] = meta["quest"]
     meta["cluster"] = true
     meta["zone"]  = map
 
     for _, cluster in pairs({"item", "mob", "misc"}) do
       if medians[cluster] then
-        meta["x"] = median(medians[cluster].x)+.001
-        meta["y"] = median(medians[cluster].y)+.001
+        meta["x"], meta["y"] = getcluster(medians[cluster], meta["quest"])
         meta["texture"] = pfQuestConfig.path.."\\img\\cluster_"..cluster
         pfMap:AddNode(meta)
       end
