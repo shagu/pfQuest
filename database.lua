@@ -901,37 +901,29 @@ function pfDatabase:SearchQuestID(id, meta, maps)
 
   -- prepare unified quest location markers
   local addon = meta["addon"] or "PFDB"
-  local map = pfDatabase:GetBestMap(maps)
-  if pfQuest_config.showcluster == "1" and pfMap.nodes[addon][map] then
-    local medians = {}
+  if pfQuest_config.showcluster == "1" and pfMap.nodes[addon] then
+    for map in pairs(pfMap.nodes[addon]) do
+      if pfMap.unifiedcache[meta.quest] and pfMap.unifiedcache[meta.quest][map] then
+        for hash, data in pairs(pfMap.unifiedcache[meta.quest][map]) do
+          meta = data.meta
+          meta["title"] = meta["quest"]
+          meta["cluster"] = true
+          meta["zone"]  = map
 
-    -- scan for all related nodes and build cluster coordinate tables
-    for coords, data in pairs(pfMap.nodes[addon][map]) do
-      if data[meta["quest"]] and not data[meta["quest"]].texture then
-        local _, _, x, y = strfind(coords, "(.*)|(.*)")
-        if data[meta["quest"]].itemid then -- mobs
-          medians.item = medians.item or {}
-          table.insert(medians.item, {tonumber(x), tonumber(y)})
-        elseif data[meta["quest"]].spawnid and data[meta["quest"]].spawntype == "Unit" then
-          medians.mob = medians.mob or {}
-          table.insert(medians.mob, {tonumber(x), tonumber(y)})
-        else
-          medians.misc = medians.misc or {}
-          table.insert(medians.misc, {tonumber(x), tonumber(y)})
+          if meta.item then
+            meta["x"], meta["y"] = getcluster(data.coords, meta["quest"]..hash..map)
+            meta["texture"] = pfQuestConfig.path.."\\img\\cluster_item"
+            pfMap:AddNode(meta, true)
+          elseif meta.spawn and meta.spawn ~= pfQuest_Loc["Exploration Mark"] then
+            meta["x"], meta["y"] = getcluster(data.coords, meta["quest"]..hash..map)
+            meta["texture"] = pfQuestConfig.path.."\\img\\cluster_mob"
+            pfMap:AddNode(meta, true)
+          else
+            meta["x"], meta["y"] = getcluster(data.coords, meta["quest"]..hash..map)
+            meta["texture"] = pfQuestConfig.path.."\\img\\cluster_misc"
+            pfMap:AddNode(meta, true)
+          end
         end
-      end
-    end
-
-    -- prepare the node for the unified location marker
-    meta["title"] = meta["quest"]
-    meta["cluster"] = true
-    meta["zone"]  = map
-
-    for _, cluster in pairs({"item", "mob", "misc"}) do
-      if medians[cluster] then
-        meta["x"], meta["y"] = getcluster(medians[cluster], meta["quest"])
-        meta["texture"] = pfQuestConfig.path.."\\img\\cluster_"..cluster
-        pfMap:AddNode(meta)
       end
     end
   end
