@@ -22,6 +22,8 @@ local minimap_zoom = {
         },
 }
 
+local unifiedcache = {}
+
 local function IsEmpty(tabl)
   for k,v in pairs(tabl) do
     return false
@@ -92,6 +94,7 @@ pfMap.nodes = {}
 pfMap.pins = {}
 pfMap.mpins = {}
 pfMap.drawlayer = Minimap
+pfMap.unifiedcache = unifiedcache
 
 pfMap.tooltip = CreateFrame("Frame" , "pfMapTooltip", GameTooltip)
 pfMap.tooltip:SetScript("OnShow", function()
@@ -356,6 +359,31 @@ function pfMap:AddNode(meta)
     node[key] = val
   end
   node.item = { [1] = item }
+
+  -- add node to unified cluster cache
+  if not meta["cluster"] and not meta["texture"] then
+    local node_index
+    local x, y = tonumber(meta.x), tonumber(meta.y)
+    local node_meta = {}
+
+    if meta.item then
+      node_index = meta.item
+    elseif meta.spawn then
+      node_index = meta.spawn
+    else
+      node_index = UNKNOWN
+    end
+
+    -- clone node
+    for key, val in pairs(meta) do
+      node_meta[key] = val
+    end
+
+    unifiedcache[title] = unifiedcache[title] or {}
+    unifiedcache[title][map] = unifiedcache[title][map] or {}
+    unifiedcache[title][map][node_index] = unifiedcache[title][map][node_index] or { meta = node_meta, coords = {} }
+    table.insert(unifiedcache[title][map][node_index].coords, { x, y })
+  end
 
   pfMap.nodes[addon][map][coords][title] = node
 
