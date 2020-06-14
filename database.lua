@@ -391,6 +391,7 @@ function pfDatabase:SearchAreaTriggerID(id, meta, maps, prio)
       meta = meta or {}
       meta["spawn"] = pfQuest_Loc["Exploration Mark"]
       meta["spawnid"] = id
+      meta["item"] = nil
 
       meta["title"] = meta["quest"] or meta["item"] or meta["spawn"]
       meta["zone"]  = zone
