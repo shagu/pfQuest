@@ -733,6 +733,9 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   meta["qlvl"] = quests[id]["lvl"]
   meta["qmin"] = quests[id]["min"]
 
+  -- clear previous unified quest nodes
+  pfMap.unifiedcache[meta.quest] = {}
+
   if pfQuest_config["currentquestgivers"] == "1" then
     -- search quest-starter
     if quests[id]["start"] and not meta["qlogid"] then
