@@ -2,6 +2,7 @@
 ## Title: |cff33ffccpf|cffffffffQuest
 ## Author: Shagu
 ## Notes: A lightweight Questhelper and Database
+## Notes-ptBR: Um auxiliador de missões e uma base de dados leve
 ## Version: GIT
 ## OptionalDeps: pfUI
 ## SavedVariablesPerCharacter: pfQuest_config, pfBrowser_fav, pfQuest_history, pfQuest_colors, pfQuest_server
@@ -14,5 +15,6 @@ init\deDE.xml
 init\zhCN.xml
 init\esES.xml
 init\ruRU.xml
+init\ptBR.xml
 
 init\addon.xml
