@@ -44,6 +44,9 @@ The development version includes databases of all languages and client expansion
 - Download via Git: [`https://github.com/shagu/pfQuest.git`](https://github.com/shagu/pfQuest.git)
 - Download via Browser: **[Zip File](https://github.com/shagu/pfQuest/archive/master.zip)**
 
+## Addon Memory Usage
+The addon ships an entire database of all spawns, objects, items and quests and therefore includes a huge database (~80 MB incl. all locales) that gets loaded into memory on game launch. However, the memory usage of pfQuest is persistent and does not increase any further over time, so there's nothing bad on performance at all. Depending on the download you pick (especially the full packages), you might see a message that warns you about an addon consuming too much memory. To get rid of that warning, you can set the addon memory limit to `0` which reads as `no limit`. This option can be found in the [character selection screen](https://i.imgur.com/rZXwaK0.jpg).
+
 # Map & Minimap Nodes
 <img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/map-quests.png" width="55.35%" align="left">
 <img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/map-spawnpoints.png" width="39.65%">
