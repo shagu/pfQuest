@@ -4,9 +4,10 @@ if not pfUI then
     ["api"] = {},
     ["cache"] = {},
     ["backdrop"] = {
-      bgFile = "Interface\\BUTTONS\\WHITE8X8", tile = false, tileSize = 0,
-      edgeFile = "Interface\\BUTTONS\\WHITE8X8", edgeSize = 1,
-      insets = {left = -1, right = -1, top = -1, bottom = -1},
+      bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+      edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+      tile = true, tileSize = 16, edgeSize = 16,
+      insets = { left = 3, right = 3, top = 3, bottom = 3 }
     },
     ["backdrop_small"] = {
       bgFile = "Interface\\BUTTONS\\WHITE8X8", tile = false, tileSize = 0,
@@ -19,8 +20,6 @@ if not pfUI then
   pfUI_config = {
     ["appearance"] = {
       ["border"] = {
-        ["background"] = "0,0,0,1",
-        ["color"] = "0.2,0.2,0.2,1",
         ["default"] = "3",
       }
     },
@@ -71,6 +70,8 @@ function pfUI.api.SanitizePattern(pattern, dbg)
   return sanitize_cache[pattern]
 end
 
+local er, eg, eb, ea = .4,.4,.4,1
+local br, bg, bb, ba = 0,0,0,.8
 function pfUI.api.CreateBackdrop(f, inset, legacy, transp)
   -- exit if now frame was given
   if not f then return end
@@ -81,16 +82,6 @@ function pfUI.api.CreateBackdrop(f, inset, legacy, transp)
     border = tonumber(pfUI_config.appearance.border.default)
   end
 
-  -- bg and edge colors
-  if not pfUI.cache.br then
-    local br, bg, bb, ba = pfUI.api.strsplit(",", pfUI_config.appearance.border.background)
-    local er, eg, eb, ea = pfUI.api.strsplit(",", pfUI_config.appearance.border.color)
-    pfUI.cache.br, pfUI.cache.bg, pfUI.cache.bb, pfUI.cache.ba = br, bg, bb, ba
-    pfUI.cache.er, pfUI.cache.eg, pfUI.cache.eb, pfUI.cache.ea = er, eg, eb, ea
-  end
-
-  local br, bg, bb, ba =  pfUI.cache.br, pfUI.cache.bg, pfUI.cache.bb, pfUI.cache.ba
-  local er, eg, eb, ea = pfUI.cache.er, pfUI.cache.eg, pfUI.cache.eb, pfUI.cache.ea
   if transp then ba = transp end
 
   -- use legacy backdrop handling

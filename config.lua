@@ -32,7 +32,7 @@ pfQuest_defconfig = {
 pfQuestConfig = CreateFrame("Frame", "pfQuestConfig", UIParent)
 pfQuestConfig:Hide()
 pfQuestConfig:SetWidth(280)
-pfQuestConfig:SetHeight(470)
+pfQuestConfig:SetHeight(500)
 pfQuestConfig:SetPoint("CENTER", 0, 0)
 pfQuestConfig:SetFrameStrata("TOOLTIP")
 pfQuestConfig:SetMovable(true)
@@ -76,7 +76,7 @@ pfQuestConfig:SetScript("OnMouseUp",function()
   this:StopMovingOrSizing()
 end)
 
-pfQuestConfig.vpos = 30
+pfQuestConfig.vpos = 40
 
 pfUI.api.CreateBackdrop(pfQuestConfig, nil, true, 0.75)
 table.insert(UISpecialFrames, "pfQuestConfig")
@@ -101,12 +101,14 @@ pfQuestConfig.title:SetText("|cff33ffccpf|rQuest " .. pfQuest_Loc["Config"])
 
 pfQuestConfig.close = CreateFrame("Button", "pfQuestConfigClose", pfQuestConfig)
 pfQuestConfig.close:SetPoint("TOPRIGHT", -5, -5)
-pfQuestConfig.close:SetHeight(12)
-pfQuestConfig.close:SetWidth(12)
+pfQuestConfig.close:SetHeight(20)
+pfQuestConfig.close:SetWidth(20)
 pfQuestConfig.close.texture = pfQuestConfig.close:CreateTexture("pfQuestionDialogCloseTex")
 pfQuestConfig.close.texture:SetTexture(pfQuestConfig.path.."\\compat\\close")
 pfQuestConfig.close.texture:ClearAllPoints()
-pfQuestConfig.close.texture:SetAllPoints(pfQuestConfig.close)
+pfQuestConfig.close.texture:SetPoint("TOPLEFT", pfQuestConfig.close, "TOPLEFT", 4, -4)
+pfQuestConfig.close.texture:SetPoint("BOTTOMRIGHT", pfQuestConfig.close, "BOTTOMRIGHT", -4, 4)
+
 pfQuestConfig.close.texture:SetVertexColor(1,.25,.25,1)
 pfUI.api.SkinButton(pfQuestConfig.close, 1, .5, .5)
 pfQuestConfig.close:SetScript("OnClick", function()
@@ -176,8 +178,8 @@ function pfQuestConfig:CreateConfigEntry(config, description, type)
     frame.input:SetHighlightTexture("")
     pfUI.api.CreateBackdrop(frame.input, nil, true)
 
-    frame.input:SetWidth(12)
-    frame.input:SetHeight(12)
+    frame.input:SetWidth(20)
+    frame.input:SetHeight(20)
     frame.input:SetPoint("RIGHT" , -20, 0)
 
     frame.input.config = config
