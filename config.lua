@@ -144,6 +144,8 @@ function pfQuestConfig:LoadConfig()
 end
 
 function pfQuestConfig:MigrateHistory()
+  if not pfQuest_history then return end
+
   local match = false
 
   for entry in pairs(pfQuest_history) do
