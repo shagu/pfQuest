@@ -29,10 +29,18 @@ pfQuest_defconfig = {
   ["showcluster"] = "0", -- Show Quest Clusters
 }
 
+StaticPopupDialogs["PFQUEST_RESET"] = {
+  button1 = YES,
+  button2 = NO,
+  timeout = 0,
+  whileDead = 1,
+  hideOnEscape = 1,
+}
+
 pfQuestConfig = CreateFrame("Frame", "pfQuestConfig", UIParent)
 pfQuestConfig:Hide()
 pfQuestConfig:SetWidth(280)
-pfQuestConfig:SetHeight(500)
+pfQuestConfig:SetHeight(550)
 pfQuestConfig:SetPoint("CENTER", 0, 0)
 pfQuestConfig:SetFrameStrata("TOOLTIP")
 pfQuestConfig:SetMovable(true)
@@ -132,6 +140,46 @@ pfQuestConfig.clean.text:SetAllPoints(pfQuestConfig.clean)
 pfQuestConfig.clean.text:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
 pfQuestConfig.clean.text:SetText(pfQuest_Loc["Close & Reload"])
 pfUI.api.SkinButton(pfQuestConfig.clean)
+
+pfQuestConfig.history = CreateFrame("Button", "pfQuestConfigResetHistory", pfQuestConfig)
+pfQuestConfig.history:SetWidth(125)
+pfQuestConfig.history:SetHeight(30)
+pfQuestConfig.history:SetPoint("BOTTOMLEFT", 10, 50)
+pfQuestConfig.history:SetScript("OnClick", function()
+  local dialog = StaticPopupDialogs["PFQUEST_RESET"]
+  dialog.text = pfQuest_Loc["Do you really want to reset the quest history?"]
+  dialog.OnAccept = function()
+    pfQuest_history = nil
+    ReloadUI()
+  end
+
+  StaticPopup_Show("PFQUEST_RESET")
+end)
+pfQuestConfig.history.text = pfQuestConfig.history:CreateFontString("Caption", "LOW", "GameFontWhite")
+pfQuestConfig.history.text:SetAllPoints(pfQuestConfig.history)
+pfQuestConfig.history.text:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
+pfQuestConfig.history.text:SetText(pfQuest_Loc["Reset History"])
+pfUI.api.SkinButton(pfQuestConfig.history)
+
+pfQuestConfig.reset = CreateFrame("Button", "pfQuestConfigReset", pfQuestConfig)
+pfQuestConfig.reset:SetWidth(125)
+pfQuestConfig.reset:SetHeight(30)
+pfQuestConfig.reset:SetPoint("BOTTOMRIGHT", -10, 50)
+pfQuestConfig.reset:SetScript("OnClick", function()
+  local dialog = StaticPopupDialogs["PFQUEST_RESET"]
+  dialog.text = pfQuest_Loc["Do you really want to reset everything?"]
+  dialog.OnAccept = function()
+    pfQuest_config, pfBrowser_fav, pfQuest_history, pfQuest_colors, pfQuest_server = nil
+    ReloadUI()
+  end
+
+  StaticPopup_Show("PFQUEST_RESET")
+end)
+pfQuestConfig.reset.text = pfQuestConfig.reset:CreateFontString("Caption", "LOW", "GameFontWhite")
+pfQuestConfig.reset.text:SetAllPoints(pfQuestConfig.reset)
+pfQuestConfig.reset.text:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
+pfQuestConfig.reset.text:SetText(pfQuest_Loc["Reset Everything"])
+pfUI.api.SkinButton(pfQuestConfig.reset)
 
 function pfQuestConfig:LoadConfig()
   if not pfQuest_config then pfQuest_config = {} end
