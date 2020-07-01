@@ -43,6 +43,11 @@ pfQuestConfig:SetScript("OnEvent", function()
     pfQuestConfig:LoadConfig()
     pfQuestConfig:MigrateHistory()
 
+    pfQuest_history = pfQuest_history or {}
+    pfQuest_colors = pfQuest_colors or {}
+    pfQuest_config = pfQuest_config or {}
+    pfBrowser_fav = pfBrowser_fav or {["units"] = {}, ["objects"] = {}, ["items"] = {}, ["quests"] = {}}
+
     pfQuestConfig:CreateConfigEntry("showcluster",         pfQuest_Loc["Unified Quest Location Marker"],  "checkbox")
     pfQuestConfig:CreateConfigEntry("allquestgivers",      pfQuest_Loc["Display Available Questgivers"],  "checkbox")
     pfQuestConfig:CreateConfigEntry("currentquestgivers",  pfQuest_Loc["Display Current Questgivers"],    "checkbox")
