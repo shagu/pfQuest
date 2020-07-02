@@ -951,7 +951,20 @@ for _, expansion in pairs(expansions) do
       ["mines"] = {},
       ["herbs"] = {},
       ["chests"] = {},
+      ["rares"] = {},
     }
+
+    do -- raremobs
+      local creature_template = {}
+      local query = mysql:execute([[
+        SELECT Entry, Rank FROM `creature_template` WHERE Rank = 4 OR Rank = 2
+      ]])
+
+      while query:fetch(creature_template, "a") do
+        local entry   = tonumber(creature_template.Entry)
+        pfDB["meta"..exp].rares[entry] = 0
+      end
+    end
 
     do -- gameobject relations
       local gameobject_template = {}
