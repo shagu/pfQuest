@@ -484,7 +484,7 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
 
     for id, skill in pairs(pfDB["meta"][relname]) do
       if ( not tonumber(relmins) or tonumber(relmins) <= skill ) and
-         ( not tonumber(relmins) or tonumber(relmaxs) >= skill ) and
+         ( not tonumber(relmaxs) or tonumber(relmaxs) >= skill ) and
          ( not faction or string.find(skill, faction))
       then
         if id < 0 then
