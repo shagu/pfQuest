@@ -21,6 +21,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff clean |cffcccccc - " .. pfQuest_Loc["clean map"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff chests |cffcccccc - " .. pfQuest_Loc["show all chests on the map"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff taxi [faction]|cffcccccc - " .. pfQuest_Loc["show all taxi nodes of [faction] on the map"])
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff rares [min, [max]]|cffcccccc - " .. pfQuest_Loc["show all raremobs from level [min] to [max]"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff mines [min, [max]] |cffcccccc - " .. pfQuest_Loc["show mines with skillrange from [min] to [max]"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff herbs [min, [max]] |cffcccccc - " .. pfQuest_Loc["show herbs with skillrange from [min] to [max]"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff scan |cffcccccc - " .. pfQuest_Loc["scan the server for custom items"])
@@ -105,6 +106,13 @@ SlashCmdList["PFDB"] = function(input, editbox)
   -- argument: taxi
   if (arg1 == "taxi") then
     local maps = pfDatabase:SearchMetaRelation({ commandlist[1], commandlist[2] }, meta)
+    pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
+    return
+  end
+
+  -- argument: rares
+  if (arg1 == "rares") then
+    local maps = pfDatabase:SearchMetaRelation({ commandlist[1], commandlist[2], commandlist[3] }, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
