@@ -11,6 +11,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff tracker |cffcccccc - " .. pfQuest_Loc["show map tracker"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff show |cffcccccc - " .. pfQuest_Loc["show database interface"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff config |cffcccccc - " .. pfQuest_Loc["show configuration interface"])
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff locale |cffcccccc - " .. pfQuest_Loc["display the addon locales"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff unit <unit> |cffcccccc - " .. pfQuest_Loc["search units"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff object <gameobject> |cffcccccc - " .. pfQuest_Loc["search objects"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff item <item> |cffcccccc - " .. pfQuest_Loc["search loot"])
@@ -18,10 +19,11 @@ SlashCmdList["PFDB"] = function(input, editbox)
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff quest <questname> |cffcccccc - " .. pfQuest_Loc["show specific questgiver"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff quests |cffcccccc - " .. pfQuest_Loc["show all quests on the map"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff clean |cffcccccc - " .. pfQuest_Loc["clean map"])
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff locale |cffcccccc - " .. pfQuest_Loc["display the addon locales"])
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff meta <relation> [min, [max]] |cffcccccc - " .. pfQuest_Loc["show related objects on the map"])
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff scan |cffcccccc - " .. pfQuest_Loc["scan the server for items"])
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc ->|cffffffff " .. pfQuest_Loc["Available relations"] .. ": |cff33ffccchests|r, |cff33ffccherbs|r, |cff33ffccmines|r")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff chests |cffcccccc - " .. pfQuest_Loc["show all chests on the map"])
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff taxi [faction]|cffcccccc - " .. pfQuest_Loc["show all taxi nodes of [faction] on the map"])
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff mines [min, [max]] |cffcccccc - " .. pfQuest_Loc["show mines with skillrange from [min] to [max]"])
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff herbs [min, [max]] |cffcccccc - " .. pfQuest_Loc["show herbs with skillrange from [min] to [max]"])
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff scan |cffcccccc - " .. pfQuest_Loc["scan the server for custom items"])
     return
   end
 
@@ -89,6 +91,34 @@ SlashCmdList["PFDB"] = function(input, editbox)
   -- argument: meta
   if (arg1 == "meta") then
     local maps = pfDatabase:SearchMetaRelation({ commandlist[2], commandlist[3], commandlist[4] }, meta)
+    pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
+    return
+  end
+
+  -- argument: chests
+  if (arg1 == "chests") then
+    local maps = pfDatabase:SearchMetaRelation({ commandlist[1] }, meta)
+    pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
+    return
+  end
+
+  -- argument: taxi
+  if (arg1 == "taxi") then
+    local maps = pfDatabase:SearchMetaRelation({ commandlist[1], commandlist[2] }, meta)
+    pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
+    return
+  end
+
+  -- argument: mines
+  if (arg1 == "mines") then
+    local maps = pfDatabase:SearchMetaRelation({ commandlist[1], commandlist[2], commandlist[3] }, meta)
+    pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
+    return
+  end
+
+  -- argument: herbs
+  if (arg1 == "herbs") then
+    local maps = pfDatabase:SearchMetaRelation({ commandlist[1], commandlist[2], commandlist[3] }, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
