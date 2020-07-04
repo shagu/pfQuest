@@ -952,7 +952,28 @@ for _, expansion in pairs(expansions) do
       ["herbs"] = {},
       ["chests"] = {},
       ["rares"] = {},
+      ["flight"] = {},
     }
+
+    do -- flightmasters
+      local mask = expansion == "vanilla" and 8 or 8192
+      local creature_template = {}
+      local query = mysql:execute([[
+        SELECT Entry, A, H FROM `creature_template`, `pfquest`.FactionTemplate_]]..expansion..[[
+        WHERE pfquest.FactionTemplate_]]..expansion..[[.factiontemplateID = creature_template.]] .. C.Faction .. [[
+        AND ( NpcFlags & ]]..mask..[[) > 1
+      ]])
+
+      while query:fetch(creature_template, "a") do
+        local fac = ""
+        local entry = tonumber(creature_template.Entry)
+        local A = tonumber(creature_template.A)
+        local H = tonumber(creature_template.H)
+        if A >= 0 then fac = fac .. "A" end
+        if H >= 0 then fac = fac .. "H" end
+        pfDB["meta"..exp]["flight"][entry] = fac
+      end
+    end
 
     do -- raremobs
       local creature_template = {}
