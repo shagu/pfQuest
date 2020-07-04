@@ -478,6 +478,8 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
       end
 
       faction = faction == "horde" and "H" or faction == "alliance" and "A" or ""
+    elseif relname == "rares" then
+      meta["texture"] = pfQuestConfig.path.."\\img\\fav"
     end
 
     for id, skill in pairs(pfDB["meta"][relname]) do

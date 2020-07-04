@@ -37,6 +37,7 @@ local layers = {
   [pfQuestConfig.path.."\\img\\complete"]     = 3,
   [pfQuestConfig.path.."\\img\\complete_c"]   = 4,
   [pfQuestConfig.path.."\\img\\icon_vendor"]  = 5,
+  [pfQuestConfig.path.."\\img\\fav"]          = 6,
   [pfQuestConfig.path.."\\img\\cluster_item"] = 9,
   [pfQuestConfig.path.."\\img\\cluster_mob"]  = 9,
   [pfQuestConfig.path.."\\img\\cluster_misc"] = 9,
