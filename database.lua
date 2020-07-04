@@ -449,17 +449,41 @@ end
 -- Scans for all entries within the specified meta name
 -- Adds map nodes for each and returns its map table
 -- query = { relation-name, relation-min, relation-max }
+local alias = {
+  ["flightmaster"] = "flight",
+  ["taxi"] = "flight",
+  ["flights"] = "flight",
+  ["raremobs"] = "rares",
+}
+
 function pfDatabase:SearchMetaRelation(query, meta, show)
   local maps = {}
 
+  local faction
   local relname = query[1] -- search name (chests)
   local relmins = query[2] -- min skill level
   local relmaxs = query[3] -- max skill level
 
+  relname = alias[relname] or relname
+
   if pfDB["meta"] and pfDB["meta"][relname] then
+    if relname == "flight" then
+      meta["texture"] = pfQuestConfig.path.."\\img\\available_c"
+      meta["vertex"] = { .4, 1, .4 }
+
+      if relmins then
+        faction = string.lower(relmins)
+      else
+        faction = string.lower(UnitFactionGroup("player"))
+      end
+
+      faction = faction == "horde" and "H" or faction == "alliance" and "A" or ""
+    end
+
     for id, skill in pairs(pfDB["meta"][relname]) do
-      if ( not relmins or tonumber(relmins) <= skill ) and
-         ( not relmaxs or tonumber(relmaxs) >= skill )
+      if ( not tonumber(relmins) or tonumber(relmins) <= skill ) and
+         ( not tonumber(relmins) or tonumber(relmaxs) >= skill ) and
+         ( not faction or string.find(skill, faction))
       then
         if id < 0 then
           pfDatabase:SearchObjectID(math.abs(id), meta, maps)
