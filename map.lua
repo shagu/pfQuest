@@ -436,7 +436,7 @@ function pfMap:NodeClick()
   if IsShiftKeyDown() then
     if this.questid and this.texture and this.layer < 5 then
       -- mark questnode as done
-      pfQuest_history[this.questid] = true
+      pfQuest_history[this.questid] = { time(), UnitLevel("player") }
     end
 
     pfMap:DeleteNode(this.node[this.title].addon, this.title)

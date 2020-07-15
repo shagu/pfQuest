@@ -196,13 +196,17 @@ function pfQuestConfig:MigrateHistory()
 
   local match = false
 
-  for entry in pairs(pfQuest_history) do
+  for entry, data in pairs(pfQuest_history) do
     if type(entry) == "string" then
       match = true
       for id in pairs(pfDatabase:GetIDByName(entry, "quests")) do
-        pfQuest_history[id] = true
+        pfQuest_history[id] = { 0, 0 }
       end
       pfQuest_history[entry] = nil
+    elseif data == true then
+      pfQuest_history[entry] = { 0, 0 }
+    elseif type(data) == "table" and not data[1] then
+      pfQuest_history[entry] = { 0, 0 }
     end
   end
 

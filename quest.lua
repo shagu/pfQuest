@@ -149,7 +149,7 @@ function pfQuest:UpdateQuestlog()
         if title == pfQuest.abandon then
           pfQuest_history[qid] = nil
         else
-          pfQuest_history[qid] = true
+          pfQuest_history[qid] = { time(), UnitLevel("player") }
         end
       end
 
