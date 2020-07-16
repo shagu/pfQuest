@@ -29,18 +29,21 @@ Manually download the latest [VMaNGOS Database](https://github.com/brotalnia/dat
 Open the `extractor.lua` and make sure `local C = vmangos` in line 28 is set to `vmangos`.
 
 ### Using CMaNGOS
-    $ mkdir git && cd git
-    $ git clone https://github.com/cmangos/mangos-classic.git
-    $ git clone https://github.com/cmangos/classic-db.git
-    $ git clone https://github.com/MangosExtras/MangosZero_Localised.git
+    mkdir git && cd git
+    git clone https://github.com/cmangos/mangos-classic.git
+    git clone https://github.com/cmangos/classic-db.git
+    git clone https://github.com/MangosExtras/MangosZero_Localised.git
+    cd MangosZero_Localised && git checkout e8833e4a5c0514448eabe4ec3a6ca496e1edb89b && cd ..
 
-    $ git clone https://github.com/cmangos/mangos-tbc.git
-    $ git clone https://github.com/cmangos/tbc-db.git
-    $ git clone https://github.com/MangosExtras/MangosOne_Localised.git
+    git clone https://github.com/cmangos/mangos-tbc.git
+    git clone https://github.com/cmangos/tbc-db.git
+    git clone https://github.com/MangosExtras/MangosOne_Localised.git
+    cd MangosOne_Localised && git checkout ae4f4e102f747e36b4064afe8166d89586b981b6 && cd ..
 
-    $ git clone https://github.com/cmangos/mangos-wotlk.git
-    $ git clone https://github.com/cmangos/wotlk-db.git
-    $ git clone https://github.com/MangosExtras/MangosTwo_Localised.git
+    git clone https://github.com/cmangos/mangos-wotlk.git
+    git clone https://github.com/cmangos/wotlk-db.git
+    git clone https://github.com/MangosExtras/MangosTwo_Localised.git
+    cd MangosTwo_Localised && git checkout 952cb6aeef903c6e8d5b572fc2165611c367ae7c && cd ..
 
 #### Create Users And Permissions
     # mysql
