@@ -2534,6 +2534,12 @@ pfDB["quests"]["enUS-tbc"] = {
     ["O"] = "",
     ["T"] = "Dimensional Ripper - Everlook",
   },
+  [7844] = {
+    ["O"] = "Mystic Yayo\'jin at Revantusk Village in the Hinterlands wants you to kill 15 Vilebranch Scalpers and 10 Vilebranch Soothsayers. Return to her when this task is complete.$B$BYayo\'jin indicated that these trolls could be found near the Shaol\'watha and Agol\'watha temples in the north by northeastern region of the Hinterlands.",
+  },
+  [7861] = {
+    ["O"] = "You have been ordered to slay Vile Priestess Hexx and 10 Vilebranch Aman\'zasi Guards. See Primal Torntusk at Revantusk Village in the Hinterlands once this task is complete.$B$BVile Priestess Hexx and the Aman\'zasi Guards can be found atop Jintha\'alor in the Hinterlands.",
+  },
   [7862] = {
     ["O"] = "You have been tasked with the decimation of 10 Vilebranch Berserkers, 5 Vilebranch Shadow Hunters, 5 Vilebranch Blood Drinkers, and 5 Vilebranch Soul Eaters.$B$BShould you complete this task, return to Primal Torntusk at Revantusk Village in the Hinterlands.",
   },

@@ -15596,7 +15596,7 @@ pfDB["quests"]["enUS"] = {
   },
   [7844] = {
     ["D"] = "Three different tribes of trolls inhabit the Hinterlands, $N. That is about as far as the similarities between the tribes extends: We are all trolls and we live in the Hinterlands.$B$BThe Vilebranch - aptly named - are a depraved lot; feeding on other trolls and humanoids.$B$BIf Zul\'jin were here, he would have destroyed the whole lot of them with a flick of his wrist - alas, Zul\'jin has not yet returned and we are left to our own devices.$B$BIt is up to you to destroy the filth of the region!",
-    ["O"] = "Mystic Yayo\'jin at Revantusk Village in the Hinterlands wants you to kill 15 Vilebranch Scalpers and 10 Vilebranch Soothsayers. Return to her when this task is complete.$B$BYayo\'jin indicated that these trolls could be found near the Shaol\'watha and Agol\'watha temples in the north by northeastern region of the Hinterlands.",
+    ["O"] = "Mystic Yayo\'jin at Revantusk Village in the Hinterlands wants you to kill 30 Vilebranch Scalpers and 15 Vilebranch Soothsayers. Return to her when this task is complete.$B$BYayo\'jin indicated that these trolls could be found near the Shaol\'watha and Agol\'watha temples in the north by northeastern region of the Hinterlands.",
     ["T"] = "Cannibalistic Cousins",
   },
   [7845] = {
@@ -15631,7 +15631,7 @@ pfDB["quests"]["enUS"] = {
   },
   [7861] = {
     ["D"] = "By order of Primal Torntusk, Vile Priestess Hexx and her minions are to be brought to justice!$B$BA grand reward is offered for any that slay the Vile Priestess Hexx and all of her Aman\'zasi elite guard.",
-    ["O"] = "You have been ordered to slay Vile Priestess Hexx and 10 Vilebranch Aman\'zasi Guards. See Primal Torntusk at Revantusk Village in the Hinterlands once this task is complete.$B$BVile Priestess Hexx and the Aman\'zasi Guards can be found atop Jintha\'alor in the Hinterlands.",
+    ["O"] = "You have been ordered to slay Vile Priestess Hexx and 20 Vilebranch Aman\'zasi Guards. See Primal Torntusk at Revantusk Village in the Hinterlands once this task is complete.$B$BVile Priestess Hexx and the Aman\'zasi Guards can be found atop Jintha\'alor in the Hinterlands.",
     ["T"] = "Wanted: Vile Priestess Hexx and Her Minions",
   },
   [7862] = {

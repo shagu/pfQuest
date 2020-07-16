@@ -15596,7 +15596,7 @@ pfDB["quests"]["koKR"] = {
   },
   [7844] = {
     ["D"] = "동부 내륙지에는 서로 다른 세 트롤 부족이 산답니다. 세 부족 간의 닮은 점이라고는 모두 트롤족이고 사는 곳이 동부 내륙지라는 것밖엔 없답니다.$B$B썩은가지 부족이라 불리는 트롤들은 그 이름에서 잘 드러나듯이 아주 타락한 집단입니다. 그들은 다른 트롤들과 인간형 생물들을 잡아먹고 살거든요.$B$B줄진 님께서 여기 계셨더라면 손목 한번 까딱하는 것만으로도 녀석들을 모두 쓸어버렸을 텐데... 안타깝게도 줄진 님께서 아직 돌아오시지 않았으니 우리가 어떻게든 알아서 해결할 수밖에 없답니다.$B$B이 지역의 쓰레기 같은 녀석들을 처리하는 일을 당신에게 맡기겠어요!",
-    ["O"] = "Mystic Yayo\'jin at Revantusk Village in the Hinterlands wants you to kill 15 Vilebranch Scalpers and 10 Vilebranch Soothsayers. Return to her when this task is complete.$B$BYayo\'jin indicated that these trolls could be found near the Shaol\'watha and Agol\'watha temples in the north by northeastern region of the Hinterlands.",
+    ["O"] = "Mystic Yayo\'jin at Revantusk Village in the Hinterlands wants you to kill 30 Vilebranch Scalpers and 15 Vilebranch Soothsayers. Return to her when this task is complete.$B$BYayo\'jin indicated that these trolls could be found near the Shaol\'watha and Agol\'watha temples in the north by northeastern region of the Hinterlands.",
     ["T"] = "동족을 잡아먹는 사촌",
   },
   [7845] = {
@@ -15631,7 +15631,7 @@ pfDB["quests"]["koKR"] = {
   },
   [7861] = {
     ["D"] = "주술사 톤터스크 님의 명령으로 타락한 여사제 헥스와 그녀의 부하를 현상 수배한다!$B$B타락한 여사제 헥스와 그녀의 아만자시 정예 경비병을 모두 처치하는 자에게는 엄청난 상금이 지급될 것이다.",
-    ["O"] = "You have been ordered to slay Vile Priestess Hexx and 10 Vilebranch Aman\'zasi Guards. See Primal Torntusk at Revantusk Village in the Hinterlands once this task is complete.$B$BVile Priestess Hexx and the Aman\'zasi Guards can be found atop Jintha\'alor in the Hinterlands.",
+    ["O"] = "You have been ordered to slay Vile Priestess Hexx and 20 Vilebranch Aman\'zasi Guards. See Primal Torntusk at Revantusk Village in the Hinterlands once this task is complete.$B$BVile Priestess Hexx and the Aman\'zasi Guards can be found atop Jintha\'alor in the Hinterlands.",
     ["T"] = "현상 수배: 타락한 여사제 헥스와 그녀의 부하",
   },
   [7862] = {
