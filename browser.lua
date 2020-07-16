@@ -15,79 +15,17 @@ local refloot = pfDB["refloot"]["data"]
 local quests = pfDB["quests"]["data"]
 local zones = pfDB["zones"]["loc"]
 
--- result buttons
-local function StartAndFinish(questData, startOrFinish, types)
-  local strings = {["start"]=pfQuest_Loc["Quest Start"]..": ", ["end"]=pfQuest_Loc["Quest End"] .. ": "}
-  for _, key in ipairs(types) do
-    if questData[startOrFinish] and questData[startOrFinish][key] then
-      local typeName = {["U"]="units",["O"]="objects",["I"]="items"}
-
-      local entries = ""
-      local first = true
-      for _,id in ipairs(questData[startOrFinish][key]) do
-        if first == true then
-          entries = entries .. ( pfDB[typeName[key]]["loc"][id] or UNKNOWN )
-          first = false
-        else
-          entries = entries .. ", " .. ( pfDB[typeName[key]]["loc"][id] or UNKNOWN )
-        end
-      end
-
-      GameTooltip:AddDoubleLine(strings[startOrFinish], entries, 1,1,1, 1,1,.8)
-    end
-  end
-end
-
 local function ResultButtonEnter()
   this.tex:SetTexture(1,1,1,.1)
 
+  -- quest
+  if this.btype == "quests" then
+    pfDatabase:ShowExtendedTooltip(this.id, GameTooltip, this, "ANCHOR_LEFT", -10, -5)
+
   -- item
-  if this.btype == "items" then
+  elseif this.btype == "items" then
     GameTooltip:SetOwner(this, "ANCHOR_LEFT", -10, -5)
     GameTooltip:SetHyperlink("item:" .. this.id .. ":0:0:0")
-    GameTooltip:Show()
-
-  -- quest
-  elseif this.btype == "quests" then
-    GameTooltip:SetOwner(this, "ANCHOR_LEFT", -10, -5)
-    GameTooltip:SetText(this.name, .3, 1, .8)
-    local questTexts = pfDB[this.btype]["loc"][this.id]
-    local questData = pfDB[this.btype]["data"][this.id]
-    GameTooltip:AddLine(" ")
-
-    -- quest starter
-    if questData["start"] or questData["end"] then
-      StartAndFinish(questData, "start", {"U","O","I"})
-      StartAndFinish(questData, "end", {"U","O"})
-    end
-
-    -- obectives
-    if questTexts["O"] and questTexts["O"] ~= "" then
-      GameTooltip:AddLine(" ")
-      GameTooltip:AddLine(pfDatabase:FormatQuestText(questTexts["O"]),1,1,1,true)
-    end
-
-    -- details
-    if questTexts["D"] and questTexts["D"] ~= "" then
-      GameTooltip:AddLine(" ")
-      GameTooltip:AddLine(pfDatabase:FormatQuestText(questTexts["D"]),.6,.6,.6,true)
-    end
-
-    -- add levels
-    if questData.lvl or questData.min then
-      GameTooltip:AddLine(" ")
-    end
-    if questData.lvl then
-      local questlevel = tonumber(questData.lvl)
-      local color = GetDifficultyColor(questlevel)
-      GameTooltip:AddLine("|cffffffff" .. pfQuest_Loc["Quest Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
-    end
-    if questData.min then
-      local questlevel = tonumber(questData.min)
-      local color = GetDifficultyColor(questlevel)
-      GameTooltip:AddLine("|cffffffff" .. pfQuest_Loc["Required Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
-    end
-
     GameTooltip:Show()
 
   -- units / objects

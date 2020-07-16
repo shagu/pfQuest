@@ -192,6 +192,75 @@ local bitclasses = {
   [1024] = "DRUID"
 }
 
+-- ShowExtendedTooltip
+-- Draws quest informations into a tooltip
+function pfDatabase:ShowExtendedTooltip(id, tooltip, parent, anchor, offx, offy)
+  local tooltip = tooltip or GameTooltip
+  local parent = parent or this
+  local anchor = anchor or "ANCHOR_LEFT"
+
+  tooltip:SetOwner(parent, anchor, offx, offy)
+
+  local locales = pfDB["quests"]["loc"][id]
+  local data = pfDB["quests"]["data"][id]
+
+  tooltip:SetText((locales["T"] or UNKNOWN), .3, 1, .8)
+  tooltip:AddLine(" ")
+
+  -- quest start
+  for key, db in pairs({["U"]="units", ["O"]="objects", ["I"]="items"}) do
+    if data["start"] and data["start"][key] then
+      local entries = ""
+      for _, id in pairs(data["start"][key]) do
+        entries = entries .. (entries == "" and "" or ", ") .. ( pfDB[db]["loc"][id] or UNKNOWN )
+      end
+
+      tooltip:AddDoubleLine(pfQuest_Loc["Quest Start"]..":", entries, 1,1,1, 1,1,.8)
+    end
+  end
+
+  -- quest end
+  for key, db in pairs({["U"]="units", ["O"]="objects"}) do
+    if data["end"] and data["end"][key] then
+      local entries = ""
+      for _, id in ipairs(data["end"][key]) do
+        entries = entries .. (entries == "" and "" or ", ") .. ( pfDB[db]["loc"][id] or UNKNOWN )
+      end
+
+      tooltip:AddDoubleLine(pfQuest_Loc["Quest End"]..":", entries, 1,1,1, 1,1,.8)
+    end
+  end
+
+  -- obectives
+  if locales["O"] and locales["O"] ~= "" then
+    tooltip:AddLine(" ")
+    tooltip:AddLine(pfDatabase:FormatQuestText(locales["O"]),1,1,1,true)
+  end
+
+  -- details
+  if locales["D"] and locales["D"] ~= "" then
+    tooltip:AddLine(" ")
+    tooltip:AddLine(pfDatabase:FormatQuestText(locales["D"]),.6,.6,.6,true)
+  end
+
+  -- add levels
+  if data.lvl or data.min then
+    tooltip:AddLine(" ")
+  end
+  if data.lvl then
+    local questlevel = tonumber(data.lvl)
+    local color = GetDifficultyColor(questlevel)
+    tooltip:AddLine("|cffffffff" .. pfQuest_Loc["Quest Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
+  end
+  if data.min then
+    local questlevel = tonumber(data.min)
+    local color = GetDifficultyColor(questlevel)
+    tooltip:AddLine("|cffffffff" .. pfQuest_Loc["Required Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
+  end
+
+  tooltip:Show()
+end
+
 -- PlayerHasSkill
 -- Returns false if the player has the required skill
 function pfDatabase:PlayerHasSkill(skill)
