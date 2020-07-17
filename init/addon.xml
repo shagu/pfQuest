@@ -9,4 +9,5 @@
   <Include file="..\quest.lua"/>
   <Include file="..\tracker.lua"/>
   <Include file="..\browser.lua"/>
+  <Include file="..\journal.lua"/>
 </Ui>
