@@ -9,6 +9,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
   if (input == "" or input == nil) then
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest (v" .. tostring(GetAddOnMetadata("pfQuest", "Version")) .. "):")
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff tracker |cffcccccc - " .. pfQuest_Loc["show map tracker"])
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff journal |cffcccccc - " .. pfQuest_Loc["show quest journal"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff show |cffcccccc - " .. pfQuest_Loc["show database interface"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff config |cffcccccc - " .. pfQuest_Loc["show configuration interface"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff locale |cffcccccc - " .. pfQuest_Loc["display the addon locales"])
@@ -147,6 +148,12 @@ SlashCmdList["PFDB"] = function(input, editbox)
   -- argument: tracker
   if (arg1 == "tracker") then
     if pfQuest.tracker then pfQuest.tracker:Show() end
+    return
+  end
+
+  -- argument: journal
+  if (arg1 == "journal") then
+    if pfJournal then pfJournal:Show() end
     return
   end
 
