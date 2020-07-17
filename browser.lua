@@ -15,6 +15,26 @@ local refloot = pfDB["refloot"]["data"]
 local quests = pfDB["quests"]["data"]
 local zones = pfDB["zones"]["loc"]
 
+local function ShowTooltip()
+  if not this.tooltips then return end
+  GameTooltip_SetDefaultAnchor(GameTooltip, this)
+  GameTooltip:ClearLines()
+  for k, v in pairs(this.tooltips) do
+    if k == 1 then
+      GameTooltip:AddLine(v, 1, 1, 1)
+    else
+      GameTooltip:AddLine(v)
+    end
+  end
+  GameTooltip:Show()
+end
+
+local function EnableTooltips(frame, tooltips)
+  frame.tooltips = tooltips
+  frame:SetScript("OnEnter", ShowTooltip)
+  frame:SetScript("OnLeave", function() GameTooltip:Hide() end)
+end
+
 local function ResultButtonEnter()
   this.tex:SetTexture(1,1,1,.1)
 
@@ -516,6 +536,28 @@ local function CreateBrowseWindow(fname, name, parent, anchor, x, y)
     SelectView(parent.tabs[fname])
   end)
 
+  if fname == "units" then
+    EnableTooltips(parent.tabs[fname].button, {
+      pfQuest_Loc["Units"],
+      pfQuest_Loc["Display related creatures and NPCs"],
+    })
+  elseif fname == "objects" then
+    EnableTooltips(parent.tabs[fname].button, {
+      pfQuest_Loc["Objects"],
+      pfQuest_Loc["Display related objects like ores, herbs, chests, etc."],
+    })
+  elseif fname == "items" then
+    EnableTooltips(parent.tabs[fname].button, {
+      pfQuest_Loc["Items"],
+      pfQuest_Loc["Display related items"],
+    })
+  elseif fname == "quests" then
+    EnableTooltips(parent.tabs[fname].button, {
+      pfQuest_Loc["Quests"],
+      pfQuest_Loc["Display related quests"],
+    })
+  end
+
   pfUI.api.SkinButton(parent.tabs[fname].button)
   parent.tabs[fname].list = pfUI.api.CreateScrollChild(name .. "Scroll", parent.tabs[fname])
   parent.tabs[fname].list:SetWidth(600)
@@ -640,11 +682,14 @@ pfBrowser.close.texture:ClearAllPoints()
 pfBrowser.close.texture:SetVertexColor(1,.25,.25,1)
 pfBrowser.close.texture:SetPoint("TOPLEFT", pfBrowser.close, "TOPLEFT", 4, -4)
 pfBrowser.close.texture:SetPoint("BOTTOMRIGHT", pfBrowser.close, "BOTTOMRIGHT", -4, 4)
-
-pfUI.api.SkinButton(pfBrowser.close, 1, .5, .5)
 pfBrowser.close:SetScript("OnClick", function()
- this:GetParent():Hide()
+  this:GetParent():Hide()
 end)
+EnableTooltips(pfBrowser.close, {
+  pfQuest_Loc["Close"],
+  pfQuest_Loc["Hide browser window"],
+})
+pfUI.api.SkinButton(pfBrowser.close, 1, .5, .5)
 
 pfBrowser.clean = CreateFrame("Button", "pfQuestBrowserClean", pfBrowser)
 pfBrowser.clean:SetPoint("TOPLEFT", pfBrowser, "TOPLEFT", 545, -30)
@@ -657,6 +702,10 @@ pfBrowser.clean.text = pfBrowser.clean:CreateFontString("Caption", "LOW", "GameF
 pfBrowser.clean.text:SetAllPoints(pfBrowser.clean)
 pfBrowser.clean.text:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
 pfBrowser.clean.text:SetText(pfQuest_Loc["Clean Map"])
+EnableTooltips(pfBrowser.clean, {
+  pfQuest_Loc["Clean Map"],
+  pfQuest_Loc["Remove all manually searched objects from the map"],
+})
 pfUI.api.SkinButton(pfBrowser.clean)
 
 CreateBrowseWindow("units", "pfQuestBrowserUnits", pfBrowser, "BOTTOMLEFT", 5, 5)
