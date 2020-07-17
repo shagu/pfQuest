@@ -65,6 +65,7 @@ Open the `extractor.lua` and make sure `local C = vmangos` in line 28 is set to 
 
     mysql -u mangos -p"mangos" cmangos-vanilla < git/mangos-classic/sql/base/mangos.sql
     mysql -u mangos -p"mangos" cmangos-vanilla < git/classic-db/Full_DB/*.sql
+    for file in git/mangos-classic/sql/updates/mangos/*.sql; do mysql -u mangos -p"mangos" cmangos-vanilla < $file; done
     mysql -u mangos -p"mangos" cmangos-vanilla < git/mangos-classic/sql/base/dbc/original_data/Spell.sql
     mysql -u mangos -p"mangos" cmangos-vanilla < git/mangos-classic/sql/base/dbc/cmangos_fixes/Spell.sql
     sed -i "/locales_command/d" git/MangosZero_Localised/1_LocaleTablePrepare.sql
@@ -73,6 +74,7 @@ Open the `extractor.lua` and make sure `local C = vmangos` in line 28 is set to 
 
     mysql -u mangos -p"mangos" cmangos-tbc < git/mangos-tbc/sql/base/mangos.sql
     mysql -u mangos -p"mangos" cmangos-tbc < git/tbc-db/Full_DB/*.sql
+    for file in git/mangos-tbc/sql/updates/mangos/*.sql; do mysql -u mangos -p"mangos" cmangos-tbc < $file; done
     mysql -u mangos -p"mangos" cmangos-tbc < git/mangos-tbc/sql/base/dbc/original_data/Spell.sql
     mysql -u mangos -p"mangos" cmangos-tbc < git/mangos-tbc/sql/base/dbc/cmangos_fixes/Spell.sql
     sed -i "/locales_command/d" git/MangosOne_Localised/1_LocaleTablePrepare.sql
@@ -81,6 +83,7 @@ Open the `extractor.lua` and make sure `local C = vmangos` in line 28 is set to 
 
     mysql -u mangos -p"mangos" cmangos-wotlk < git/mangos-wotlk/sql/base/mangos.sql
     mysql -u mangos -p"mangos" cmangos-wotlk < git/wotlk-db/Full_DB/*.sql
+    for file in git/mangos-wotlk/sql/updates/mangos/*.sql; do mysql -u mangos -p"mangos" cmangos-wotlk < $file; done
     mysql -u mangos -p"mangos" cmangos-wotlk < git/mangos-wotlk/sql/base/dbc/original_data/Spell.sql
     mysql -u mangos -p"mangos" cmangos-wotlk < git/mangos-wotlk/sql/base/dbc/cmangos_fixes/Spell.sql
     sed -i "/locales_command/d" git/MangosTwo_Localised/1_LocaleTablePrepare.sql
