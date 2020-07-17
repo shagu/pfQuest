@@ -691,6 +691,24 @@ EnableTooltips(pfBrowser.close, {
 })
 pfUI.api.SkinButton(pfBrowser.close, 1, .5, .5)
 
+pfBrowser.journal = CreateFrame("Button", "pfQuestJournalOpen", pfBrowser)
+pfBrowser.journal:SetPoint("TOPRIGHT", -30, -5)
+pfBrowser.journal:SetHeight(20)
+pfBrowser.journal:SetWidth(20)
+pfBrowser.journal.texture = pfBrowser.journal:CreateTexture("pfQuestionDialogCloseTex")
+pfBrowser.journal.texture:SetTexture(pfQuestConfig.path.."\\img\\tracker_quests")
+pfBrowser.journal.texture:ClearAllPoints()
+pfBrowser.journal.texture:SetPoint("TOPLEFT", pfBrowser.journal, "TOPLEFT", 2, -2)
+pfBrowser.journal.texture:SetPoint("BOTTOMRIGHT", pfBrowser.journal, "BOTTOMRIGHT", -2, 2)
+pfBrowser.journal:SetScript("OnClick", function()
+  if pfJournal:IsShown() then pfJournal:Hide() else pfJournal:Show() end
+end)
+EnableTooltips(pfBrowser.journal, {
+  pfQuest_Loc["Journal"],
+  pfQuest_Loc["Toggle completed quest browser"],
+})
+pfUI.api.SkinButton(pfBrowser.journal)
+
 pfBrowser.clean = CreateFrame("Button", "pfQuestBrowserClean", pfBrowser)
 pfBrowser.clean:SetPoint("TOPLEFT", pfBrowser, "TOPLEFT", 545, -30)
 pfBrowser.clean:SetPoint("BOTTOMRIGHT", pfBrowser, "TOPRIGHT", -5, -55)
