@@ -1,5 +1,7 @@
 #!/usr/bin/lua
 -- depends on luasql
+-- map pngs with alpha channel generated with:
+-- `convert $file  -transparent white -resize '100x100!' $file`
 
 DEBUG, DLOOP = nil, -1
 function __DEBUG_LOOP_LIMIT()
@@ -15,18 +17,22 @@ function __DEBUG_LOOP_LIMIT()
   return nil
 end
 
--- map pngs with alpha channel generated with:
--- `convert $file  -transparent white -resize '100x100!' $file`
+local config = {
+  -- expansions to generate databases
+  expansions = { "vanilla", "tbc" },
 
-do -- server config
+  -- set databases to use { database, core-type }
+  vanilla = { "cmangos-vanilla", "cmangos" },
+  tbc = { "cmangos-tbc", "cmangos" },
+
+  -- core-type glue
   cmangos = setmetatable({}, { __index = function(tab,key)
     local value = tostring(key)
     rawset(tab,key,value)
     return value
-  end})
+  end }),
 
   vmangos = {
-    ["cmangos"] = "vmangos",
     ["Id"] = "entry",
     ["Entry"] = "entry",
     ["Faction"] = "faction",
@@ -36,14 +42,12 @@ do -- server config
     ["Rank"] = "rank",
     ["RequiresSpellFocus"] = "requiresSpellFocus",
     ["dbscripts_on_event"] = "event_scripts",
-  }
-end
-
-local C = cmangos
-local expansions = {
-  "vanilla", "tbc"
+    ["VendorTemplateId"] = "vendor_id",
+    ["NpcFlags"] = "npc_flags",
+  },
 }
 
+-- local associations
 local locales = {
   ["enUS"] = 0,
   ["koKR"] = 1,
@@ -254,12 +258,19 @@ do -- helper functions
 end
 
 local pfDB = {}
-
-for _, expansion in pairs(expansions) do
+for _, expansion in pairs(config.expansions) do
   print("Extracting: " .. expansion)
+
+  local db = config[expansion][1]
+  local dbtype = config[expansion][2]
+  local C = config[config[expansion][2]]
+
+  local exp = expansion == "vanilla" and "" or "-"..expansion
+  local data = "data".. exp
+
   do -- database connection
     luasql = require("luasql.mysql").mysql()
-    mysql = luasql:connect(C["cmangos"].."-"..expansion,"mangos","mangos","127.0.0.1")
+    mysql = luasql:connect(db, "mangos", "mangos", "127.0.0.1")
   end
 
   do -- database query functions
@@ -378,8 +389,6 @@ for _, expansion in pairs(expansions) do
     end
   end
 
-  local exp = expansion == "vanilla" and "" or "-"..expansion
-  local data = "data".. exp
 
   do -- areatrigger
     print("- loading areatrigger...")
@@ -621,7 +630,7 @@ for _, expansion in pairs(expansions) do
 
         -- handle vendor template tables
         local npc_vendor = {}
-        local query = mysql:execute('SELECT creature_template.Entry, maxcount FROM npc_vendor_template, creature_template WHERE item = ' .. entry .. ' and creature_template.VendorTemplateId = npc_vendor_template.entry ORDER BY creature_template.Entry')
+        local query = mysql:execute('SELECT creature_template.Entry, maxcount FROM npc_vendor_template, creature_template WHERE item = ' .. entry .. ' and creature_template.' .. C["VendorTemplateId"] .. ' = npc_vendor_template.entry ORDER BY creature_template.Entry')
         while query:fetch(npc_vendor, "a") do
           pfDB["items"][data][entry]["V"] = pfDB["items"][data][entry]["V"] or {}
           pfDB["items"][data][entry]["V"][tonumber(npc_vendor.Entry)] = tonumber(npc_vendor.maxcount)
@@ -742,11 +751,13 @@ for _, expansion in pairs(expansions) do
       end
 
       -- add all units that give kill credit for one of the known units
-      for id in pairs(units) do
-        local creature_template = {}
-        local query = mysql:execute('SELECT * FROM creature_template WHERE KillCredit1 = ' .. id .. ' or KillCredit2 = ' .. id)
-        while query:fetch(creature_template, "a") do
-          units[tonumber(creature_template["Entry"])] = true
+      if dbtype ~= "vmangos" then
+        for id in pairs(units) do
+          local creature_template = {}
+          local query = mysql:execute('SELECT * FROM creature_template WHERE KillCredit1 = ' .. id .. ' or KillCredit2 = ' .. id)
+          while query:fetch(creature_template, "a") do
+            units[tonumber(creature_template["Entry"])] = true
+          end
         end
       end
 
@@ -961,7 +972,7 @@ for _, expansion in pairs(expansions) do
       local query = mysql:execute([[
         SELECT Entry, A, H FROM `creature_template`, `pfquest`.FactionTemplate_]]..expansion..[[
         WHERE pfquest.FactionTemplate_]]..expansion..[[.factiontemplateID = creature_template.]] .. C.Faction .. [[
-        AND ( NpcFlags & ]]..mask..[[) > 1
+        AND ( ]] .. C.NpcFlags .. [[ & ]]..mask..[[) > 1
       ]])
 
       while query:fetch(creature_template, "a") do
@@ -978,12 +989,12 @@ for _, expansion in pairs(expansions) do
     do -- raremobs
       local creature_template = {}
       local query = mysql:execute([[
-        SELECT Entry, Rank, MinLevel FROM `creature_template` WHERE Rank = 4 OR Rank = 2
+        SELECT * FROM `creature_template` WHERE ]] .. C.Rank .. [[ = 4 OR ]] .. C.Rank .. [[ = 2
       ]])
 
       while query:fetch(creature_template, "a") do
-        local entry = tonumber(creature_template.Entry)
-        local level = tonumber(creature_template.MinLevel)
+        local entry = tonumber(creature_template[C.Entry])
+        local level = tonumber(creature_template[C.MinLevel])
         pfDB["meta"..exp].rares[entry] = level
       end
     end
@@ -1019,7 +1030,7 @@ for _, expansion in pairs(expansions) do
     while query:fetch(locales_creature, "a") do
       if __DEBUG_LOOP_LIMIT() then break end
 
-      local entry = tonumber(locales_creature.Entry)
+      local entry = tonumber(locales_creature[C.Entry])
       local name  = locales_creature[C.Name]
 
       if entry then
