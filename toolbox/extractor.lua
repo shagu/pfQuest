@@ -770,7 +770,7 @@ for _, expansion in pairs(config.expansions) do
 
           -- scan through all spells that are associated with the item
           local spell_template = {}
-          local query = mysql:execute('SELECT * FROM spell_template WHERE id = ' .. spellid)
+          local query = mysql:execute('SELECT * FROM spell_template WHERE ' .. C.Id .. ' = ' .. spellid)
           while query:fetch(spell_template, "a") do
             local trigger = spell_template["EffectTriggerSpell1"]
             local area = spell_template["AreaId"]
