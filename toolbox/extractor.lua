@@ -22,10 +22,10 @@ local config = {
   expansions = { "vanilla", "tbc" },
 
   -- set databases to use { database, core-type }
-  vanilla = { "cmangos-vanilla", "cmangos" },
+  vanilla = { "vmangos", "vmangos" },
   tbc = { "cmangos-tbc", "cmangos" },
 
-  -- core-type glue
+  -- core-type database column glue tables
   cmangos = setmetatable({}, { __index = function(tab,key)
     local value = tostring(key)
     rawset(tab,key,value)
