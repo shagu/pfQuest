@@ -782,9 +782,24 @@ function pfMap:UpdateMinimap()
   end
 end
 
-pfMap:RegisterEvent("WORLD_MAP_UPDATE")
+pfMap:RegisterEvent("ZONE_CHANGED")
+pfMap:RegisterEvent("MINIMAP_ZONE_CHANGED")
 pfMap:RegisterEvent("QUEST_WATCH_UPDATE")
-pfMap:SetScript("OnEvent", pfMap.UpdateNodes)
+pfMap:RegisterEvent("WORLD_MAP_UPDATE")
+pfMap:SetScript("OnEvent", function()
+  -- set map to current zone when possible
+  if event == "ZONE_CHANGED" or event == "MINIMAP_ZONE_CHANGED" then
+    if not WorldMapFrame:IsShown() then
+      SetMapToCurrentZone()
+    end
+  end
+
+  -- update nodes on map or quest log changes
+  if event == "QUEST_WATCH_UPDATE" or event == "WORLD_MAP_UPDATE" then
+    pfMap.UpdateNodes()
+  end
+end)
+
 pfMap:SetScript("OnUpdate", function()
   if pfMap.queue_update then
     pfMap:UpdateNodes()
