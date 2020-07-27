@@ -7,92 +7,73 @@
     # systemctl start mariadb
     # mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 
-## Server Database
-The pfQuest extractor supports VMaNGOS and CMaNGOS databases. You need to pick either one of both.
+## Prepare Databases
+The pfQuest extractor supports VMaNGOS and CMaNGOS databases. By default, VMaNGOS is used vanilla and CMaNGOS is used for TBC. For CMaNGOS translations, the Mangos-Extras project is used.
 
-### Using VMaNGOS (Light's Hope)
-Manually download the latest [VMaNGOS Database](https://github.com/brotalnia/database) and unzip it.
+### Create Users And Permissions
 
-#### Create Users And Permissions
     # mysql
+    DROP DATABASE IF EXISTS `pfquest`;
+    DROP DATABASE IF EXISTS `vmangos`;
+    DROP DATABASE IF EXISTS `cmangos-tbc`;
+
     CREATE USER 'mangos'@'localhost' IDENTIFIED BY 'mangos';
+
     CREATE DATABASE `pfquest` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
     GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `pfquest`.* TO 'mangos'@'localhost';
 
-    CREATE DATABASE `vmangos-vanilla` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-    GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `vmangos-vanilla`.* TO 'mangos'@'localhost';
+    CREATE DATABASE `vmangos` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+    GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `vmangos`.* TO 'mangos'@'localhost';
 
-#### Import Databases
-    $ mysql -u mangos -p"mangos" pfquest < client-data.sql
-    $ mysql -u mangos -p"mangos" vmangos-vanilla < world_*.sql
+    CREATE DATABASE `cmangos-tbc` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+    GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `cmangos-tbc`.* TO 'mangos'@'localhost';
 
-Open the `extractor.lua` and make sure `local C = vmangos` in line 28 is set to `vmangos`.
+### Import Client Data
 
-### Using CMaNGOS
-    mkdir git && cd git
-    git clone https://github.com/cmangos/mangos-classic.git
-    git clone https://github.com/cmangos/classic-db.git
-    git clone https://github.com/MangosExtras/MangosZero_Localised.git
-    cd MangosZero_Localised && git checkout e8833e4a5c0514448eabe4ec3a6ca496e1edb89b && cd ..
+Import the game client data SQL files:
+
+    mysql -u mangos -p"mangos" pfquest < client-data.sql
+
+
+### Vanilla (VMaNGOS)
+
+Manually download the latest [VMaNGOS Database](https://github.com/brotalnia/database) and unzip it.
+
+    mysql -u mangos -p"mangos" vmangos < world_*.sql
+
+Clone the VMaNGOS core repository to obtain all SQL updates.
+
+    git clone https://github.com/vmangos/core.git
+    cd core/sql/migrations
+    for file in *_world.sql; do mysql -u mangos -p"mangos" vmangos < $file; done
+    cd -
+
+### The Burning Crusade (CMaNGOS)
+
+Clone the latest CMaNGOS TBC database and the translations of the Mangos-Extras project:
 
     git clone https://github.com/cmangos/mangos-tbc.git
     git clone https://github.com/cmangos/tbc-db.git
     git clone https://github.com/MangosExtras/MangosOne_Localised.git
     cd MangosOne_Localised && git checkout ae4f4e102f747e36b4064afe8166d89586b981b6 && cd ..
 
-    git clone https://github.com/cmangos/mangos-wotlk.git
-    git clone https://github.com/cmangos/wotlk-db.git
-    git clone https://github.com/MangosExtras/MangosTwo_Localised.git
-    cd MangosTwo_Localised && git checkout 952cb6aeef903c6e8d5b572fc2165611c367ae7c && cd ..
+    mysql -u mangos -p"mangos" cmangos-tbc < mangos-tbc/sql/base/mangos.sql
+    mysql -u mangos -p"mangos" cmangos-tbc < tbc-db/Full_DB/*.sql
+    for file in mangos-tbc/sql/updates/mangos/*.sql; do mysql -u mangos -p"mangos" cmangos-tbc < $file; done
+    mysql -u mangos -p"mangos" cmangos-tbc < mangos-tbc/sql/base/dbc/original_data/Spell.sql
+    mysql -u mangos -p"mangos" cmangos-tbc < mangos-tbc/sql/base/dbc/cmangos_fixes/Spell.sql
+    sed -i "/locales_command/d" MangosOne_Localised/1_LocaleTablePrepare.sql
+    mysql -u mangos -p"mangos" cmangos-tbc < MangosOne_Localised/1_LocaleTablePrepare.sql
+    for file in MangosOne_Localised/1_LocaleTablePrepare.sql MangosOne_Localised/Translations/*/*.sql; do mysql -u mangos -p"mangos" cmangos-tbc < $file; done
 
-#### Create Users And Permissions
-    # mysql
-    CREATE USER 'mangos'@'localhost' IDENTIFIED BY 'mangos';
-    CREATE DATABASE `pfquest` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-    GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `pfquest`.* TO 'mangos'@'localhost';
+## Run the Extractor
 
-    CREATE DATABASE `cmangos-vanilla` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-    GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `cmangos-vanilla`.* TO 'mangos'@'localhost';
+Start the database extractor
 
-    CREATE DATABASE `cmangos-tbc` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-    GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `cmangos-tbc`.* TO 'mangos'@'localhost';
+    $ make
 
-    CREATE DATABASE `cmangos-wotlk` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-    GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `cmangos-wotlk`.* TO 'mangos'@'localhost';
-
-#### Import Databases
-    mysql -u mangos -p"mangos" pfquest < client-data.sql
-
-    mysql -u mangos -p"mangos" cmangos-vanilla < git/mangos-classic/sql/base/mangos.sql
-    mysql -u mangos -p"mangos" cmangos-vanilla < git/classic-db/Full_DB/*.sql
-    for file in git/mangos-classic/sql/updates/mangos/*.sql; do mysql -u mangos -p"mangos" cmangos-vanilla < $file; done
-    mysql -u mangos -p"mangos" cmangos-vanilla < git/mangos-classic/sql/base/dbc/original_data/Spell.sql
-    mysql -u mangos -p"mangos" cmangos-vanilla < git/mangos-classic/sql/base/dbc/cmangos_fixes/Spell.sql
-    sed -i "/locales_command/d" git/MangosZero_Localised/1_LocaleTablePrepare.sql
-    mysql -u mangos -p"mangos" cmangos-vanilla < git/MangosZero_Localised/1_LocaleTablePrepare.sql
-    for file in git/MangosZero_Localised/1_LocaleTablePrepare.sql git/MangosZero_Localised/Translations/*/*.sql; do mysql -u mangos -p"mangos" cmangos-vanilla < $file; done
-
-    mysql -u mangos -p"mangos" cmangos-tbc < git/mangos-tbc/sql/base/mangos.sql
-    mysql -u mangos -p"mangos" cmangos-tbc < git/tbc-db/Full_DB/*.sql
-    for file in git/mangos-tbc/sql/updates/mangos/*.sql; do mysql -u mangos -p"mangos" cmangos-tbc < $file; done
-    mysql -u mangos -p"mangos" cmangos-tbc < git/mangos-tbc/sql/base/dbc/original_data/Spell.sql
-    mysql -u mangos -p"mangos" cmangos-tbc < git/mangos-tbc/sql/base/dbc/cmangos_fixes/Spell.sql
-    sed -i "/locales_command/d" git/MangosOne_Localised/1_LocaleTablePrepare.sql
-    mysql -u mangos -p"mangos" cmangos-tbc < git/MangosOne_Localised/1_LocaleTablePrepare.sql
-    for file in git/MangosOne_Localised/1_LocaleTablePrepare.sql git/MangosOne_Localised/Translations/*/*.sql; do mysql -u mangos -p"mangos" cmangos-tbc < $file; done
-
-    mysql -u mangos -p"mangos" cmangos-wotlk < git/mangos-wotlk/sql/base/mangos.sql
-    mysql -u mangos -p"mangos" cmangos-wotlk < git/wotlk-db/Full_DB/*.sql
-    for file in git/mangos-wotlk/sql/updates/mangos/*.sql; do mysql -u mangos -p"mangos" cmangos-wotlk < $file; done
-    mysql -u mangos -p"mangos" cmangos-wotlk < git/mangos-wotlk/sql/base/dbc/original_data/Spell.sql
-    mysql -u mangos -p"mangos" cmangos-wotlk < git/mangos-wotlk/sql/base/dbc/cmangos_fixes/Spell.sql
-    sed -i "/locales_command/d" git/MangosTwo_Localised/1_LocaleTablePrepare.sql
-    mysql -u mangos -p"mangos" cmangos-wotlk < git/MangosTwo_Localised/1_LocaleTablePrepare.sql
-    for file in git/MangosTwo_Localised/1_LocaleTablePrepare.sql git/MangosTwo_Localised/Translations/*/*.sql; do mysql -u mangos -p"mangos" cmangos-wotlk < $file; done
-
-Open the `extractor.lua` and make sure `local C = cmangos-vanilla` in line 28 is set to `cmangos-vanilla`.
-
-## Copy CSVs to DBC/
+## Optional: Build Client-Data
+### Copy CSVs to DBC/
 You additionally need to extract the `dbc` files from your gameclients.
 Those can be obtained via the `ad` tool within the CMaNGOS tools.
 The DBC files then need to be converted into `.csv` and placed as followed:
@@ -105,26 +86,22 @@ The DBC files then need to be converted into `.csv` and placed as followed:
     SkillLine.dbc.csv
     WorldMapArea.dbc.csv
 
-## Extract Data
-
-    $ make
-
-# Required DBCs
-## WorldMapArea.dbc [enUS]
+### Required DBCs
+#### WorldMapArea.dbc [enUS]
 Required to obtain the map-sizes which are used for
   1. calculating the minimap offset
   2. calculating the objects possible maps during extraction
 
-## Lock.dbc [enUS]
+#### Lock.dbc [enUS]
 Used to get a list of all skill requirements which are used during the
 meta-list extraction
 
-## AreaTable.dbc [all]
+#### AreaTable.dbc [all]
 The `AreaTable.dbc` is used to build the zones table. The zone table is required
 to tell the gameclient which map should be shown when searching for an object.
 It's basically a map-id to mape-name translation table.
 
-## SkillLine.dbc [all]
+#### SkillLine.dbc [all]
 The `SkillLine.db` is used to build the professions table. The profession table is
 required to check the players professions against quest requirements. It's
 basically a profession-id to profession-name translation table.
