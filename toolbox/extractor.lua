@@ -3,18 +3,89 @@
 -- map pngs with alpha channel generated with:
 -- `convert $file  -transparent white -resize '100x100!' $file`
 
-DEBUG, DLOOP = nil, -1
-function __DEBUG_LOOP_LIMIT()
-  if not DEBUG then return nil end
+local debugsql = {
+  ["areatrigger"] = { "Using only client-data to find areatrigger locations" },
+  --
+  ["units"] = { "Iterate over all creatures using mangos data" },
+  ["units_faction"] = { "Using mangos and client-data to find unit faction" },
+  ["units_coords"] = { "Using mangos and client-data to find unit locations" },
+  ["units_summoned"] = { "Using mangos data to search for summoned units based on their required summon gameobject position" },
+  --
+  ["objects"] = { "Iterate over all gameobjects using mangos data" },
+  ["objects_faction"] = { "Using mangos and client-data to find object faction" },
+  ["objects_coords"] = { "Using mangos and client-data to find unit locations" },
+  --
+  ["items"] = { "Iterate over all items using mangos data" },
+  ["items_container"] = { "Using mangos data to find items that are looted from other items" },
+  ["items_unit"] = { "Using mangos data to find units that drop an item" },
+  ["items_object"] = { "Using mangos data to find objects that drop an item" },
+  ["items_reference"] = { "Using mangos data to query for shared loot lists" },
+  ["items_vendor"] = { "Using mangos data to find vendors for items" },
+  ["items_vendortemplate"] = { "Using mangos data to find vendor templates of the item" },
+  --
+  ["refloot"] = { "Using mangos data to find shared loot lists" },
+  ["refloot_unit"] = { "Using mangos data to find units for shared loot" },
+  ["refloot_object"] = { "Using mangos data to find objects for shared loot" },
+  --
+  ["quests"] = { "Using mangos data to iterate over all quests" },
+  ["quests_questspellobject"] = { "Using mangos data find objects associated with quest_template spell requirements" },
+  ["quests_credit"] = { "Only applies to CMaNGOS(TBC) to find units that give shared credit to the quest" },
+  ["quests_item"] = { "Using mangos data to scan through all items with spell requirements" },
+  ["quests_itemspell"] = { "Using mangos data to scan through spells that apply to the given item" },
+  ["quests_itemspellobject"] = { "Using mangos data to find all objects that are a spell target of the given item" },
+  ["quests_itemspellscript"] = { "Using mangos data to find all scripts that are a spell target of the given item" },
+  ["quests_areatrigger"] = { "Using mangos data to find associated areatriggers" },
+  ["quests_starterunit"] = { "Using mangos data to search for quest starter units" },
+  ["quests_starterobject"] = { "Using mangos data to search for quest starter objects" },
+  ["quests_enderunit"] = { "Using mangos data to search for quest ender units" },
+  ["quests_enderobject"] = { "Using mangos data to search for quest ender objects" },
+  --
+  ["zones"] = { "Using client data to read zone data" },
+  --
+  ["minimap"] = { "Using client data to read minimap zoom levels" },
+  --
+  ["meta_taxi"] = { "Using client and mangos data to find flight masters" },
+  ["meta_rares"] = { "Using client and mangos data to find rare mobs" },
+  ["meta_farm"] = { "Using client and mangos data to find chests, herbs and mines" },
+  --
+  ["locales_unit"] = { "Using mangos data to find unit translations" },
+  ["locales_object"] = { "Using mangos data to find object translations" },
+  ["locales_item"] = { "Using mangos data to find item translations" },
+  ["locales_quest"] = { "Using mangos data to find quest translations" },
+  ["locales_profession"] = { "Using client and mangos data to find profession translations" },
+  ["locales_zone"] = { "Using client and mangos data to find zone translations" },
+}
 
-  if DLOOP == -1 then DLOOP = 5 end
-  if DLOOP == 0 then
-    DLOOP = -1
+-- limit all sql loops
+local limit = nil
+local count = -1
+
+function debug(name)
+  -- count sql debugs
+  debugsql[name][2] = debugsql[name][2] or 0
+  debugsql[name][2] = debugsql[name][2] + 1
+
+  -- abort here when no debug limit is set
+  if not limit then return nil end
+
+  if count == -1 then count = limit end
+  if count == 0 then
+    count = -1
     return true
   end
 
-  DLOOP = DLOOP -1
+  count = count -1
   return nil
+end
+
+function debug_statistics()
+  for name, data in pairs(debugsql) do
+    local count = data[2] or 0
+    if count == 0 then
+      print("WARNING: \27[1m\27[31m" .. count .. "\27[0m \27[1m" .. name .. "\27[0m \27[2m-- " .. data[1] .. "\27[0m")
+    end
+    debugsql[name][2] = nil
+  end
 end
 
 local config = {
@@ -389,7 +460,6 @@ for _, expansion in pairs(config.expansions) do
     end
   end
 
-
   do -- areatrigger
     print("- loading areatrigger...")
 
@@ -400,7 +470,8 @@ for _, expansion in pairs(config.expansions) do
     local areatrigger = {}
     local query = mysql:execute('SELECT * FROM pfquest.AreaTrigger_'..expansion..' ORDER BY ID')
     while query:fetch(areatrigger, "a") do
-      if __DEBUG_LOOP_LIMIT() then break end
+      if debug("areatrigger") then break end
+
       local entry = tonumber(areatrigger.ID)
       pfDB["areatrigger"][data][entry] = {}
 
@@ -424,7 +495,7 @@ for _, expansion in pairs(config.expansions) do
     local creature_template = {}
     local query = mysql:execute('SELECT * FROM creature_template GROUP BY creature_template.entry ORDER BY creature_template.entry')
     while query:fetch(creature_template, "a") do
-      if __DEBUG_LOOP_LIMIT() then break end
+      if debug("units") then break end
 
       local entry   = tonumber(creature_template[C.Entry])
       local name    = creature_template[C.Name]
@@ -449,6 +520,7 @@ for _, expansion in pairs(config.expansions) do
 
         local query = mysql:execute(sql)
         while query:fetch(faction, "a") do
+          if debug("units_faction") then break end
           local A = faction.A
           local H = faction.H
           if A == "1" then fac = fac .. "A" end
@@ -465,6 +537,7 @@ for _, expansion in pairs(config.expansions) do
 
         for id, coords in pairs(GetCreatureCoords(entry)) do
           local x, y, zone, respawn = unpack(coords)
+          if debug("units_coords") then break end
           table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
         end
 
@@ -482,6 +555,7 @@ for _, expansion in pairs(config.expansions) do
             local gameobject_template = {}
             local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spellfocus)
             while query:fetch(gameobject_template, "a") do
+              if debug("units_summoned") then break end
               local object = gameobject_template.entry
               for id, coords in pairs(GetGameObjectCoords(object)) do
                 local x, y, zone, respawn = unpack(coords)
@@ -504,7 +578,7 @@ for _, expansion in pairs(config.expansions) do
     local gameobject_template = {}
     local query = mysql:execute('SELECT * FROM gameobject_template GROUP BY gameobject_template.entry ORDER BY gameobject_template.entry ASC')
     while query:fetch(gameobject_template, "a") do
-      if __DEBUG_LOOP_LIMIT() then break end
+      if debug("objects") then break end
 
       local entry  = tonumber(gameobject_template.entry)
       local name   = gameobject_template.name
@@ -521,19 +595,10 @@ for _, expansion in pairs(config.expansions) do
 
         local query = mysql:execute(sql)
         while query:fetch(faction, "a") do
+          if debug("objects_faction") then break end
           local A = faction.A
-          if A == "1" then fac = fac .. "A" end
-        end
-
-        local faction = {}
-        local sql = [[
-          SELECT H FROM gameobject_template, pfquest.FactionTemplate_]]..expansion..[[
-          WHERE pfquest.FactionTemplate_]]..expansion..[[.factiontemplateID = gameobject_template.faction
-          AND gameobject_template.entry = ]] .. gameobject_template.entry
-
-        local query = mysql:execute(sql)
-        while query:fetch(faction, "a") do
           local H = faction.H
+          if A == "1" then fac = fac .. "A" end
           if H == "1" then fac = fac .. "H" end
         end
 
@@ -546,6 +611,7 @@ for _, expansion in pairs(config.expansions) do
         pfDB["objects"][data][entry]["coords"] = {}
 
         for id,coords in pairs(GetGameObjectCoords(entry)) do
+          if debug("objects_coords") then break end
           local x, y, zone, respawn = unpack(coords)
           table.insert(pfDB["objects"][data][entry]["coords"], { x, y, zone, respawn })
         end
@@ -563,7 +629,7 @@ for _, expansion in pairs(config.expansions) do
     local item_template = {}
     local query = mysql:execute('SELECT entry, name FROM item_template GROUP BY item_template.entry ASC')
     while query:fetch(item_template, "a") do
-      if __DEBUG_LOOP_LIMIT() then break end
+      if debug("items") then break end
 
       local entry = tonumber(item_template.entry)
       local scans = { [0] = { entry, nil } }
@@ -573,6 +639,7 @@ for _, expansion in pairs(config.expansions) do
       local count = 0
       local query = mysql:execute('SELECT entry, ChanceOrQuestChance FROM item_loot_template WHERE item = ' .. item_template.entry .. ' ORDER BY entry')
       while query:fetch(item_loot_item, "a") do
+        if debug("items_container") then break end
         if math.abs(item_loot_item.ChanceOrQuestChance) > 0 then
           table.insert(scans, { tonumber(item_loot_item.entry), math.abs(item_loot_item.ChanceOrQuestChance) })
         end
@@ -588,6 +655,7 @@ for _, expansion in pairs(config.expansions) do
         local creature_loot_template = {}
         local query = mysql:execute('SELECT entry, ChanceOrQuestChance FROM creature_loot_template WHERE item = ' .. entry .. ' ORDER BY entry')
         while query:fetch(creature_loot_template, "a") do
+          if debug("items_unit") then break end
           local chance = round(math.abs(creature_loot_template.ChanceOrQuestChance) * chance, 5)
           if chance > 0 then
             pfDB["items"][data][entry]["U"] = pfDB["items"][data][entry]["U"] or {}
@@ -603,6 +671,7 @@ for _, expansion in pairs(config.expansions) do
           WHERE ( gameobject_template.type = 3 OR gameobject_template.type = 25 )
           AND gameobject_loot_template.item = ]] .. entry .. [[ ORDER BY gameobject_template.entry ]])
         while query:fetch(gameobject_loot_template, "a") do
+          if debug("items_object") then break end
           local chance = round(math.abs(gameobject_loot_template.ChanceOrQuestChance) * chance, 5)
           if chance > 0 then
             pfDB["items"][data][entry]["O"] = pfDB["items"][data][entry]["O"] or {}
@@ -616,6 +685,7 @@ for _, expansion in pairs(config.expansions) do
           SELECT entry, ChanceOrQuestChance FROM reference_loot_template where reference_loot_template.item = ]] .. entry .. [[ GROUP BY entry
         ]])
         while query:fetch(reference_loot_template, "a") do
+          if debug("items_reference") then break end
           pfDB["items"][data][entry]["R"] = pfDB["items"][data][entry]["R"] or {}
           pfDB["items"][data][entry]["R"][tonumber(reference_loot_template.entry)] = tonumber(reference_loot_template.ChanceOrQuestChance)
         end
@@ -624,6 +694,7 @@ for _, expansion in pairs(config.expansions) do
         local npc_vendor = {}
         local query = mysql:execute('SELECT entry, maxcount FROM npc_vendor WHERE item = ' .. entry .. ' ORDER BY entry')
         while query:fetch(npc_vendor, "a") do
+          if debug("items_vendor") then break end
           pfDB["items"][data][entry]["V"] = pfDB["items"][data][entry]["V"] or {}
           pfDB["items"][data][entry]["V"][tonumber(npc_vendor.entry)] = tonumber(npc_vendor.maxcount)
         end
@@ -632,6 +703,7 @@ for _, expansion in pairs(config.expansions) do
         local npc_vendor = {}
         local query = mysql:execute('SELECT creature_template.Entry, maxcount FROM npc_vendor_template, creature_template WHERE item = ' .. entry .. ' and creature_template.' .. C["VendorTemplateId"] .. ' = npc_vendor_template.entry ORDER BY creature_template.Entry')
         while query:fetch(npc_vendor, "a") do
+          if debug("items_vendortemplate") then break end
           pfDB["items"][data][entry]["V"] = pfDB["items"][data][entry]["V"] or {}
           pfDB["items"][data][entry]["V"][tonumber(npc_vendor.Entry)] = tonumber(npc_vendor.maxcount)
         end
@@ -649,7 +721,7 @@ for _, expansion in pairs(config.expansions) do
     local reference_loot_template = {}
     local query = mysql:execute('SELECT entry, ChanceOrQuestChance FROM reference_loot_template GROUP BY entry')
     while query:fetch(reference_loot_template, "a") do
-      if __DEBUG_LOOP_LIMIT() then break end
+      if debug("refloot") then break end
 
       local entry = tonumber(reference_loot_template.entry)
 
@@ -662,6 +734,7 @@ for _, expansion in pairs(config.expansions) do
         AND item = ]] .. entry .. [[ ORDER BY entry
       ]])
       while query:fetch(creature_loot_template, "a") do
+        if debug("refloot_unit") then break end
         pfDB["refloot"][data][entry] = pfDB["refloot"][data][entry] or {}
         pfDB["refloot"][data][entry]["U"] = pfDB["refloot"][data][entry]["U"] or {}
         pfDB["refloot"][data][entry]["U"][tonumber(creature_loot_template.entry)] = 1
@@ -677,6 +750,7 @@ for _, expansion in pairs(config.expansions) do
         AND gameobject_loot_template.item = ]] .. entry .. [[ ORDER BY gameobject_template.entry ;
       ]])
       while query:fetch(gameobject_template, "a") do
+        if debug("refloot_object") then break end
         pfDB["refloot"][data][entry] = pfDB["refloot"][data][entry] or {}
         pfDB["refloot"][data][entry]["O"] = pfDB["refloot"][data][entry]["O"] or {}
         pfDB["refloot"][data][entry]["O"][tonumber(gameobject_template.entry)] = 1
@@ -694,7 +768,7 @@ for _, expansion in pairs(config.expansions) do
     local quest_template = {}
     local query = mysql:execute('SELECT * FROM quest_template GROUP BY quest_template.entry')
     while query:fetch(quest_template, "a") do
-      if __DEBUG_LOOP_LIMIT() then break end
+      if debug("quests") then break end
 
       local entry = tonumber(quest_template.entry)
       local minlevel = tonumber(quest_template.MinLevel)
@@ -739,6 +813,7 @@ for _, expansion in pairs(config.expansions) do
           local spell_template = {}
           local query = mysql:execute('SELECT * FROM spell_template WHERE spell_template.' .. C.Id .. ' = ' .. quest_template["ReqSpellCast" .. i])
           while query:fetch(spell_template, "a") do
+            if debug("quests_questspellobject") then break end
             if spell_template[C.RequiresSpellFocus] ~= "0" then
               local gameobject_template = {}
               local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spell_template[C.RequiresSpellFocus])
@@ -756,6 +831,7 @@ for _, expansion in pairs(config.expansions) do
           local creature_template = {}
           local query = mysql:execute('SELECT * FROM creature_template WHERE KillCredit1 = ' .. id .. ' or KillCredit2 = ' .. id)
           while query:fetch(creature_template, "a") do
+            if debug("quests_credit") then break end
             units[tonumber(creature_template["Entry"])] = true
           end
         end
@@ -766,12 +842,14 @@ for _, expansion in pairs(config.expansions) do
         local item_template = {}
         local query = mysql:execute('SELECT * FROM item_template WHERE spellid_1 > 0 and entry = ' .. id)
         while query:fetch(item_template, "a") do
+          if debug("quests_item") then break end
           local spellid = item_template["spellid_1"]
 
           -- scan through all spells that are associated with the item
           local spell_template = {}
           local query = mysql:execute('SELECT * FROM spell_template WHERE ' .. C.Id .. ' = ' .. spellid)
           while query:fetch(spell_template, "a") do
+            if debug("quests_itemspell") then break end
             local trigger = spell_template["EffectTriggerSpell1"]
             local area = spell_template["AreaId"]
             local focus = spell_template[C.RequiresSpellFocus]
@@ -782,6 +860,7 @@ for _, expansion in pairs(config.expansions) do
               local gameobject_template = {}
               local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. focus)
               while query:fetch(gameobject_template, "a") do
+                if debug("quests_itemspellobject") then break end
                 objects[tonumber(gameobject_template["entry"])] = true
                 match = true
               end
@@ -792,6 +871,7 @@ for _, expansion in pairs(config.expansions) do
               local spell_script_target = {}
               local query = mysql:execute('SELECT * FROM spell_script_target WHERE entry = ' .. trigger)
               while query:fetch(spell_script_target, "a") do
+                if debug("quests_itemspellscript") then break end
                 local targetobj = spell_script_target["type"]
                 local targetentry = spell_script_target["targetEntry"]
 
@@ -817,6 +897,7 @@ for _, expansion in pairs(config.expansions) do
       local areatrigger_involvedrelation = {}
       local query = mysql:execute('SELECT * FROM areatrigger_involvedrelation WHERE quest = ' .. entry)
       while query:fetch(areatrigger_involvedrelation, "a") do
+        if debug("quests_areatrigger") then break end
         areatrigger[tonumber(areatrigger_involvedrelation["id"])] = true
       end
 
@@ -857,6 +938,7 @@ for _, expansion in pairs(config.expansions) do
           SELECT * FROM creature_questrelation WHERE creature_questrelation.quest = ]] .. quest_template.entry
         local query = mysql:execute(sql)
         while query:fetch(creature_questrelation, "a") do
+          if debug("quests_starterunit") then break end
           pfDB["quests"][data][entry]["start"] = pfDB["quests"][data][entry]["start"] or {}
           pfDB["quests"][data][entry]["start"]["U"] = pfDB["quests"][data][entry]["start"]["U"] or {}
           table.insert(pfDB["quests"][data][entry]["start"]["U"], tonumber(creature_questrelation.id))
@@ -867,6 +949,7 @@ for _, expansion in pairs(config.expansions) do
           SELECT * FROM gameobject_questrelation WHERE gameobject_questrelation.quest = ]] .. quest_template.entry
         local query = mysql:execute(sql)
         while query:fetch(gameobject_questrelation, "a") do
+          if debug("quests_starterobject") then break end
           pfDB["quests"][data][entry]["start"] = pfDB["quests"][data][entry]["start"] or {}
           pfDB["quests"][data][entry]["start"]["O"] = pfDB["quests"][data][entry]["start"]["O"] or {}
           table.insert(pfDB["quests"][data][entry]["start"]["O"], tonumber(gameobject_questrelation.id))
@@ -879,6 +962,7 @@ for _, expansion in pairs(config.expansions) do
           SELECT * FROM creature_involvedrelation WHERE creature_involvedrelation.quest = ]] .. quest_template.entry
         local query = mysql:execute(sql)
         while query:fetch(creature_involvedrelation, "a") do
+          if debug("quests_enderunit") then break end
           pfDB["quests"][data][entry]["end"] = pfDB["quests"][data][entry]["end"] or {}
           pfDB["quests"][data][entry]["end"]["U"] = pfDB["quests"][data][entry]["end"]["U"] or {}
           table.insert(pfDB["quests"][data][entry]["end"]["U"], tonumber(creature_involvedrelation.id))
@@ -890,6 +974,7 @@ for _, expansion in pairs(config.expansions) do
           SELECT * FROM gameobject_involvedrelation WHERE gameobject_involvedrelation.quest = ]] .. quest_template.entry
         local query = mysql:execute(sql)
         while query:fetch(gameobject_involvedrelation, "a") do
+          if debug("quests_enderobject") then break end
           pfDB["quests"][data][entry]["end"] = pfDB["quests"][data][entry]["end"] or {}
           pfDB["quests"][data][entry]["end"]["O"] = pfDB["quests"][data][entry]["end"]["O"] or {}
           table.insert(pfDB["quests"][data][entry]["end"]["O"], tonumber(gameobject_involvedrelation.id))
@@ -906,7 +991,7 @@ for _, expansion in pairs(config.expansions) do
     local zones = {}
     local query = mysql:execute('SELECT * FROM pfquest.WorldMapOverlay_'..expansion..' LEFT JOIN pfquest.AreaTable_'..expansion..' ON pfquest.WorldMapOverlay_'..expansion..'.areaID = pfquest.AreaTable_'..expansion..'.id')
     while query:fetch(zones, "a") do
-      if __DEBUG_LOOP_LIMIT() then break end
+      if debug("zones") then break end
       local entry = tonumber(zones.id)
       local zone = tonumber(zones.zoneID)
       local textureWidth = tonumber(zones.textureWidth)
@@ -940,6 +1025,7 @@ for _, expansion in pairs(config.expansions) do
     local minimap_size = {}
     local query = mysql:execute('SELECT * FROM pfquest.WorldMapArea_'..expansion..' ORDER BY areatableID ASC')
     while query:fetch(minimap_size, "a") do
+      if debug("minimap") then break end
       local mapID = minimap_size.mapID
       local areaID = minimap_size.areatableID
       local name = minimap_size.name
@@ -976,6 +1062,7 @@ for _, expansion in pairs(config.expansions) do
       ]])
 
       while query:fetch(creature_template, "a") do
+        if debug("meta_taxi") then break end
         local fac = ""
         local entry = tonumber(creature_template.Entry)
         local A = tonumber(creature_template.A)
@@ -993,6 +1080,7 @@ for _, expansion in pairs(config.expansions) do
       ]])
 
       while query:fetch(creature_template, "a") do
+        if debug("meta_rares") then break end
         local entry = tonumber(creature_template[C.Entry])
         local level = tonumber(creature_template[C.MinLevel])
         pfDB["meta"..exp].rares[entry] = level
@@ -1007,6 +1095,7 @@ for _, expansion in pairs(config.expansions) do
       ]])
 
       while query:fetch(gameobject_template, "a") do
+        if debug("meta_farm") then break end
         local entry   = tonumber(gameobject_template.entry) * -1
         local locktype = tonumber(gameobject_template.locktype)
         local skill = tonumber(gameobject_template.skill)
@@ -1028,7 +1117,7 @@ for _, expansion in pairs(config.expansions) do
     local locales_creature = {}
     local query = mysql:execute('SELECT * FROM creature_template LEFT JOIN locales_creature ON locales_creature.entry = creature_template.entry GROUP BY creature_template.entry ORDER BY creature_template.entry ASC')
     while query:fetch(locales_creature, "a") do
-      if __DEBUG_LOOP_LIMIT() then break end
+      if debug("locales_unit") then break end
 
       local entry = tonumber(locales_creature[C.Entry])
       local name  = locales_creature[C.Name]
@@ -1051,7 +1140,7 @@ for _, expansion in pairs(config.expansions) do
     local locales_gameobject = {}
     local query = mysql:execute('SELECT * FROM gameobject_template LEFT JOIN locales_gameobject ON locales_gameobject.entry = gameobject_template.entry GROUP BY gameobject_template.entry ORDER BY gameobject_template.entry ASC')
     while query:fetch(locales_gameobject, "a") do
-      if __DEBUG_LOOP_LIMIT() then break end
+      if debug("locales_object") then break end
 
       local entry = tonumber(locales_gameobject.entry)
       local name  = locales_gameobject.name
@@ -1075,7 +1164,7 @@ for _, expansion in pairs(config.expansions) do
     local locales_item = {}
     local query = mysql:execute('SELECT * FROM item_template LEFT JOIN locales_item ON locales_item.entry = item_template.entry GROUP BY item_template.entry ORDER BY item_template.entry ASC')
     while query:fetch(locales_item, "a") do
-      if __DEBUG_LOOP_LIMIT() then break end
+      if debug("locales_item") then break end
 
       local entry = tonumber(locales_item.entry)
       local name  = locales_item.name
@@ -1098,7 +1187,7 @@ for _, expansion in pairs(config.expansions) do
     local locales_quest = {}
     local query = mysql:execute('SELECT * FROM quest_template LEFT JOIN locales_quest ON locales_quest.entry = quest_template.entry GROUP BY quest_template.entry ORDER BY quest_template.entry ASC')
     while query:fetch(locales_quest, "a") do
-      if __DEBUG_LOOP_LIMIT() then break end
+      if debug("locales_quest") then break end
 
       for loc in pairs(locales) do
         local entry = tonumber(locales_quest.entry)
@@ -1131,7 +1220,7 @@ for _, expansion in pairs(config.expansions) do
     local locales_professions = {}
     local query = mysql:execute('SELECT * FROM pfquest.SkillLine_'..expansion..' ORDER BY id ASC')
     while query:fetch(locales_professions, "a") do
-      if __DEBUG_LOOP_LIMIT() then break end
+      if debug("locales_profession") then break end
 
       local entry = tonumber(locales_professions.id)
 
@@ -1152,7 +1241,7 @@ for _, expansion in pairs(config.expansions) do
     local locales_zones = {}
     local query = mysql:execute('SELECT * FROM pfquest.AreaTable_'..expansion..' ORDER BY id ASC')
     while query:fetch(locales_zones, "a") do
-      if __DEBUG_LOOP_LIMIT() then break end
+      if debug("locales_zone") then break end
 
       local entry = tonumber(locales_zones.id)
 
@@ -1225,4 +1314,6 @@ for _, expansion in pairs(config.expansions) do
     serialize(string.format("output/%s/professions%s.lua", loc, exp), "pfDB[\"professions\"][\""..locale.."\"]", pfDB["professions"][locale])
     serialize(string.format("output/%s/zones%s.lua", loc, exp), "pfDB[\"zones\"][\""..locale.."\"]", pfDB["zones"][locale])
   end
+
+  debug_statistics()
 end
