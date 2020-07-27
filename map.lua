@@ -698,18 +698,11 @@ function pfMap:UpdateMinimap()
     return
   end
 
+  -- hide nodes and skip further processing in dungeons
   local xPlayer, yPlayer = GetPlayerMapPosition("player")
   if xPlayer == 0 and yPlayer == 0 or GetCurrentMapZone() == 0 then
-    if not WorldMapFrame:IsShown() then
-      SetMapToCurrentZone()
-      xPlayer, yPlayer = GetPlayerMapPosition("player")
-    else
-      -- hide existing nodes
-      for pins, pin in pairs(pfMap.mpins) do
-        pin:Hide()
-      end
-      return
-    end
+    for pins, pin in pairs(pfMap.mpins) do pin:Hide() end
+    return
   end
 
   local mZoom = pfMap.drawlayer:GetZoom()
