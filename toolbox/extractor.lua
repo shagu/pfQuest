@@ -850,7 +850,6 @@ for _, expansion in pairs(config.expansions) do
           local query = mysql:execute('SELECT * FROM spell_template WHERE ' .. C.Id .. ' = ' .. spellid)
           while query:fetch(spell_template, "a") do
             if debug("quests_itemspell") then break end
-            local trigger = spell_template["EffectTriggerSpell1"]
             local area = spell_template["AreaId"]
             local focus = spell_template[C.RequiresSpellFocus]
             local match = nil
@@ -867,20 +866,22 @@ for _, expansion in pairs(config.expansions) do
             end
 
             -- spell triggers something that requires a special target
-            if trigger and tonumber(trigger) > 0 then
-              local spell_script_target = {}
-              local query = mysql:execute('SELECT * FROM spell_script_target WHERE entry = ' .. trigger)
-              while query:fetch(spell_script_target, "a") do
-                if debug("quests_itemspellscript") then break end
-                local targetobj = spell_script_target["type"]
-                local targetentry = spell_script_target["targetEntry"]
+            for _, trigger in pairs({ spell_template["EffectTriggerSpell1"], spell_template["EffectTriggerSpell2"], spell_template["EffectTriggerSpell3"] }) do
+              if trigger and tonumber(trigger) > 0 then
+                local spell_script_target = {}
+                local query = mysql:execute('SELECT * FROM spell_script_target WHERE entry = ' .. trigger)
+                while query:fetch(spell_script_target, "a") do
+                  if debug("quests_itemspellscript") then break end
+                  local targetobj = spell_script_target["type"]
+                  local targetentry = spell_script_target["targetEntry"]
 
-                if tonumber(targetobj) == 0 then
-                  objects[tonumber(targetentry)] = true
-                  match = true
-                elseif tonumber(targetobj) == 1 then
-                  units[tonumber(targetentry)] = true
-                  match = true
+                  if tonumber(targetobj) == 0 then
+                    objects[tonumber(targetentry)] = true
+                    match = true
+                  elseif tonumber(targetobj) == 1 then
+                    units[tonumber(targetentry)] = true
+                    match = true
+                  end
                 end
               end
             end
