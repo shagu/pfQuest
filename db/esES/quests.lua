@@ -9985,7 +9985,7 @@ pfDB["quests"]["esES"] = {
     ["T"] = "El Elixir de Videre",
   },
   [3912] = {
-    ["D"] = "Con la ayuda de este elixir podrás hablar con el que nunca se dejaría ver...$B$BLleva el Elixir de Videre y la Espada de Linken al cementerio que encontrarás a las puertas de Gadgetzan en Tanaris. Cuando estés allí, bebe la poción. Quizás te sorprendan los resultados, pero no te alarmes.$B$BEn tu \"otra\" forma dirígete hacia el Norte, hasta llegar a las montañas. Encontrarás a aquel con quien debes hablar en una de las grietas rocosas. Su nombre es Gaeriyan.$B$BPero recuerda, solo hablará contigo si adoptas esa forma...\",
+    ["D"] = "Con la ayuda de este elixir podrás hablar con el que nunca se dejaría ver...$B$BLleva el Elixir de Videre y la Espada de Linken al cementerio que encontrarás a las puertas de Gadgetzan en Tanaris. Cuando estés allí, bebe la poción. Quizás te sorprendan los resultados, pero no te alarmes.$B$BEn tu \"otra\" forma dirígete hacia el Norte, hasta llegar a las montañas. Encontrarás a aquel con quien debes hablar en una de las grietas rocosas. Su nombre es Gaeriyan.$B$BPero recuerda, solo hablará contigo si adoptas esa forma...\\",
     ["O"] = "Ve al cementerio a las afueras de Gadgetzan y utiliza el Elixir de Videre. Sigue las demás instrucciones de Donova para encontrar a Gaeriyan.",
     ["T"] = "Encuentro en la tumba",
   },

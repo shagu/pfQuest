@@ -177,6 +177,7 @@ do -- helper functions
   end
 
   function sanitize(str)
+    str = string.gsub(str, "\\", "\\\\")
     str = string.gsub(str, "\"", "\\\"")
     str = string.gsub(str, "\'", "\\\'")
     str = string.gsub(str, "\r", "")
