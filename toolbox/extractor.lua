@@ -115,6 +115,7 @@ local config = {
     ["dbscripts_on_event"] = "event_scripts",
     ["VendorTemplateId"] = "vendor_id",
     ["NpcFlags"] = "npc_flags",
+    ["EffectTriggerSpell"] = "effectTriggerSpell",
   },
 }
 
@@ -868,7 +869,7 @@ for _, expansion in pairs(config.expansions) do
               end
 
               -- spell triggers something that requires a special target
-              for _, trigger in pairs({ spell_template["EffectTriggerSpell1"], spell_template["EffectTriggerSpell2"], spell_template["EffectTriggerSpell3"] }) do
+              for _, trigger in pairs({ spell_template[C["EffectTriggerSpell"]..1], spell_template[C["EffectTriggerSpell"]..2], spell_template[C["EffectTriggerSpell"]..3] }) do
                 if trigger and tonumber(trigger) > 0 then
                   local spell_script_target = {}
                   local query = mysql:execute('SELECT * FROM spell_script_target WHERE entry = ' .. trigger)
