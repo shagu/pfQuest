@@ -841,55 +841,57 @@ for _, expansion in pairs(config.expansions) do
       -- scan all involved questitems for spells that require gameobjects, units or zones
       for id in pairs(items) do
         local item_template = {}
-        local query = mysql:execute('SELECT * FROM item_template WHERE spellid_1 > 0 and entry = ' .. id)
-        while query:fetch(item_template, "a") do
-          if debug("quests_item") then break end
-          local spellid = item_template["spellid_1"]
+        for _, spellcolumn in pairs({ "spellid_1", "spellid_2", "spellid_3", "spellid_4", "spellid_5" }) do
+          local query = mysql:execute('SELECT * FROM item_template WHERE ' .. spellcolumn .. ' > 0 and entry = ' .. id)
+          while query:fetch(item_template, "a") do
+            if debug("quests_item") then break end
+            local spellid = item_template[spellcolumn]
 
-          -- scan through all spells that are associated with the item
-          local spell_template = {}
-          local query = mysql:execute('SELECT * FROM spell_template WHERE ' .. C.Id .. ' = ' .. spellid)
-          while query:fetch(spell_template, "a") do
-            if debug("quests_itemspell") then break end
-            local area = spell_template["AreaId"]
-            local focus = spell_template[C.RequiresSpellFocus]
-            local match = nil
+            -- scan through all spells that are associated with the item
+            local spell_template = {}
+            local query = mysql:execute('SELECT * FROM spell_template WHERE ' .. C.Id .. ' = ' .. spellid)
+            while query:fetch(spell_template, "a") do
+              if debug("quests_itemspell") then break end
+              local area = spell_template["AreaId"]
+              local focus = spell_template[C.RequiresSpellFocus]
+              local match = nil
 
-            -- spell requries focusing an object
-            if focus and tonumber(focus) > 0  then
-              local gameobject_template = {}
-              local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. focus)
-              while query:fetch(gameobject_template, "a") do
-                if debug("quests_itemspellobject") then break end
-                objects[tonumber(gameobject_template["entry"])] = true
-                match = true
+              -- spell requries focusing an object
+              if focus and tonumber(focus) > 0  then
+                local gameobject_template = {}
+                local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. focus)
+                while query:fetch(gameobject_template, "a") do
+                  if debug("quests_itemspellobject") then break end
+                  objects[tonumber(gameobject_template["entry"])] = true
+                  match = true
+                end
               end
-            end
 
-            -- spell triggers something that requires a special target
-            for _, trigger in pairs({ spell_template["EffectTriggerSpell1"], spell_template["EffectTriggerSpell2"], spell_template["EffectTriggerSpell3"] }) do
-              if trigger and tonumber(trigger) > 0 then
-                local spell_script_target = {}
-                local query = mysql:execute('SELECT * FROM spell_script_target WHERE entry = ' .. trigger)
-                while query:fetch(spell_script_target, "a") do
-                  if debug("quests_itemspellscript") then break end
-                  local targetobj = spell_script_target["type"]
-                  local targetentry = spell_script_target["targetEntry"]
+              -- spell triggers something that requires a special target
+              for _, trigger in pairs({ spell_template["EffectTriggerSpell1"], spell_template["EffectTriggerSpell2"], spell_template["EffectTriggerSpell3"] }) do
+                if trigger and tonumber(trigger) > 0 then
+                  local spell_script_target = {}
+                  local query = mysql:execute('SELECT * FROM spell_script_target WHERE entry = ' .. trigger)
+                  while query:fetch(spell_script_target, "a") do
+                    if debug("quests_itemspellscript") then break end
+                    local targetobj = spell_script_target["type"]
+                    local targetentry = spell_script_target["targetEntry"]
 
-                  if tonumber(targetobj) == 0 then
-                    objects[tonumber(targetentry)] = true
-                    match = true
-                  elseif tonumber(targetobj) == 1 then
-                    units[tonumber(targetentry)] = true
-                    match = true
+                    if tonumber(targetobj) == 0 then
+                      objects[tonumber(targetentry)] = true
+                      match = true
+                    elseif tonumber(targetobj) == 1 then
+                      units[tonumber(targetentry)] = true
+                      match = true
+                    end
                   end
                 end
               end
-            end
 
-            -- only spell limitation is a zone
-            if not match and area and tonumber(area) > 0 then
-              zones[tonumber(area)] = true
+              -- only spell limitation is a zone
+              if not match and area and tonumber(area) > 0 then
+                zones[tonumber(area)] = true
+              end
             end
           end
         end
