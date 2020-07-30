@@ -334,6 +334,11 @@ function pfMap:AddNode(meta)
   local spawn = meta["spawn"]
   local item = meta["item"]
 
+  -- use prioritized clusters
+  if layer >= 9 and meta["priority"] then
+    layer = layer + (10 - min(meta["priority"], 10))
+  end
+
   if not pfMap.nodes[addon] then pfMap.nodes[addon] = {} end
   if not pfMap.nodes[addon][map] then pfMap.nodes[addon][map] = {} end
   if not pfMap.nodes[addon][map][coords] then pfMap.nodes[addon][map][coords] = {} end
@@ -571,6 +576,12 @@ function pfMap:UpdateNode(frame, node, color, obj)
 
   for title, tab in pairs(node) do
     tab.layer = GetLayerByTexture(tab.texture)
+
+    -- use prioritized clusters
+    if tab.cluster and tab.priority then
+      tab.layer = tab.layer + (10 - min(tab.priority , 10))
+    end
+
     if tab.spawn and ( tab.layer > frame.layer or not frame.spawn ) then
       frame.updateTexture = (frame.texture ~= tab.texture)
       frame.updateVertex = (frame.vertex ~= tab.vertex )
