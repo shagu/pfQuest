@@ -26,7 +26,7 @@ pfQuest_defconfig = {
   ["mindropchance"] = "0", -- Minimum Drop Chance
   ["mouseover"] = "1", -- Highlight Nodes On Mouseover
   ["showtracker"] = "1", -- Show Map Tracker
-  ["showcluster"] = "0", -- Show Quest Clusters
+  ["showcluster"] = "1", -- Show Quest Clusters
 }
 
 StaticPopupDialogs["PFQUEST_RESET"] = {
