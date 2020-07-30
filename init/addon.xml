@@ -10,4 +10,5 @@
   <Include file="..\tracker.lua"/>
   <Include file="..\browser.lua"/>
   <Include file="..\journal.lua"/>
+  <Include file="..\updatenotify.lua"/>
 </Ui>
