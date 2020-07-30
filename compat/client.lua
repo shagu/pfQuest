@@ -19,11 +19,12 @@ end
 pfQuestCompat.InsertQuestLink = function(questid, name)
   local questid = questid or 0
   local fallback = name or UNKNOWN
+  local level = pfDB["quests"]["data"][questid] and pfDB["quests"]["data"][questid]["lvl"] or 0
   ChatFrameEditBox:Show()
 
   local name = pfDB["quests"]["loc"][questid] and pfDB["quests"]["loc"][questid]["T"] or fallback
   if pfQuest_config["questlinks"] == "1" then
-    ChatFrameEditBox:Insert("|cffffff00|Hquest:" .. questid .. ":0:0|h[" .. name .. "]|h|r")
+    ChatFrameEditBox:Insert("|cffffff00|Hquest:" .. questid .. ":" .. level .. "|h[" .. name .. "]|h|r")
   else
     ChatFrameEditBox:Insert("[" .. name .. "]")
   end
