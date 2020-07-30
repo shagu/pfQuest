@@ -488,14 +488,6 @@ function pfMap:NodeUpdate()
     end
   end
 
-  -- fixed alpha and size for minimap cluster icons
-  if this.cluster and this.minimap then
-    this:SetWidth(24)
-    this:SetHeight(24)
-    this:SetAlpha(.5)
-    return
-  end
-
   if highlight then
     -- fade alpha of active node
     if alpha < 1 then
@@ -544,6 +536,9 @@ function pfMap:NodeUpdate()
   if this.cluster then
     this:SetWidth(24)
     this:SetHeight(24)
+    if IsControlKeyDown() then
+      this:SetAlpha(0)
+    end
   end
 end
 
@@ -699,7 +694,7 @@ function pfMap:UpdateMinimap()
   end
 
   -- hide all minimap nodes while shift is pressed
-  if IsShiftKeyDown() and MouseIsOver(pfMap.drawlayer) then
+  if IsControlKeyDown() and MouseIsOver(pfMap.drawlayer) then
     this.xPlayer = nil
 
     for id, pin in pairs(pfMap.mpins) do
