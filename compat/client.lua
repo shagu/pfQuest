@@ -2,6 +2,9 @@
 local _, _, _, client = GetBuildInfo()
 client = client or 11200
 
+local _G = _G or getfenv(0)
+local gfind = string.gmatch or string.gfind
+
 pfQuestCompat = {}
 pfQuestCompat.mod = mod or math.mod
 pfQuestCompat.gfind = string.gmatch or string.gfind
@@ -27,5 +30,38 @@ pfQuestCompat.InsertQuestLink = function(questid, name)
     ChatFrameEditBox:Insert("|cffffff00|Hquest:" .. questid .. ":" .. level .. "|h[" .. name .. "]|h|r")
   else
     ChatFrameEditBox:Insert("[" .. name .. "]")
+  end
+end
+
+if client <= 11200 then
+  -- add colors to quest links
+  local ParseQuestLevels = function(frame, text, a1, a2, a3, a4, a5)
+    if text then
+      for questid, level in gfind(text, "|cffffff00|Hquest:(.-):(.-)|h") do
+        local questid = tonumber(questid)
+        local level = tonumber(level)
+
+        if not level or level == 0 then
+          level = pfDB["quests"]["data"][questid] and pfDB["quests"]["data"][questid]["lvl"] or 0
+        end
+
+        if level and level > 0 then
+          local color = GetDifficultyColor(level)
+          local r = ceil(color.r*255)
+          local g = ceil(color.g*255)
+          local b = ceil(color.b*255)
+          local hex = "|c" .. string.format("ff%02x%02x%02x", r, g, b)
+
+          text = string.gsub(text, "|cffffff00|Hquest:"..questid, hex.."|Hquest:"..questid)
+        end
+      end
+    end
+
+    frame.pfQuestHookAddMessage(frame, text, a1, a2, a3, a4, a5)
+  end
+
+  for i=1,NUM_CHAT_WINDOWS do
+    _G["ChatFrame"..i].pfQuestHookAddMessage = _G["ChatFrame"..i].pfQuestHookAddMessage or _G["ChatFrame"..i].AddMessage
+    _G["ChatFrame"..i].AddMessage = ParseQuestLevels
   end
 end
