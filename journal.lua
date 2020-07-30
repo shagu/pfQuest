@@ -64,8 +64,7 @@ end
 
 local function OnClick()
   if this.id and IsShiftKeyDown() then
-    ChatFrameEditBox:Show()
-    ChatFrameEditBox:Insert("|cffffff00|Hquest:" .. ( this.id or 0 ) .. ":0:0:0|h[" .. this.name .. "]|h|r")
+    pfQuestCompat.InsertQuestLink(this.id)
   elseif this.id then
     local maps = pfDatabase:SearchQuestID(this.id, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
