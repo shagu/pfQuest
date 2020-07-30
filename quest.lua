@@ -427,21 +427,11 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
     local questIndex = this:GetID() + FauxScrollFrame_GetOffset(scrollFrame)
     local questName, questLevel = compat.GetQuestLogTitle(questIndex)
     if IsShiftKeyDown() and not this.isHeader then
-      if ChatFrameEditBox:IsVisible() then
-        if pfQuest_config["questlinks"] == "1" then
-          local id = 0
-          if pfQuest.questlog[questName] and pfQuest.questlog[questName].ids[1] then
-            id = pfQuest.questlog[questName].ids[1]
-          end
-
-          ChatFrameEditBox:Insert("|cffffff00|Hquest:" .. id .. ":" .. questLevel .. ":0:0|h[" .. questName .. "]|h|r")
-        else
-          ChatFrameEditBox:Insert("[" .. questName .. "]")
-        end
-        QuestLog_SetSelection(questIndex)
-        QuestLog_Update()
-        return
-      end
+      local id = pfQuest.questlog[questName] and pfQuest.questlog[questName].ids[1] or nil
+      pfQuestCompat.InsertQuestLink(id, questName)
+      QuestLog_SetSelection(questIndex)
+      QuestLog_Update()
+      return
     end
 
     pfHookQuestLogTitleButton_OnClick(button)
