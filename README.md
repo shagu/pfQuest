@@ -43,6 +43,12 @@ The development version includes databases of all languages and client expansion
 - Download via Git: [`https://github.com/shagu/pfQuest.git`](https://github.com/shagu/pfQuest.git)
 - Download via Browser: **[Zip File](https://github.com/shagu/pfQuest/archive/master.zip)**
 
+## Controls
+- To change node colors on the World Map, **click** the node.
+- To remove previously done quests from the map, **\<shift\>-click** the quest giver on the world-map
+- To temporarily hide clusters on the world-map, hold the **\<ctrl\>-key**
+- To temporarily hide nodes on the mini-map, hover it and hold the **\<ctrl\>-key**
+
 ## Addon Memory Usage
 The addon ships an entire database of all spawns, objects, items and quests and therefore includes a huge database (~80 MB incl. all locales) that gets loaded into memory on game launch. However, the memory usage of pfQuest is persistent and does not increase any further over time, so there's nothing bad on performance at all. Depending on the download you pick (especially the full packages), you might see a message that warns you about an addon consuming too much memory. To get rid of that warning, you can set the addon memory limit to `0` which reads as `no limit`. This option can be found in the [character selection screen](https://i.imgur.com/rZXwaK0.jpg).
 
