@@ -35,6 +35,7 @@ local best, neighbors = { index = 1, neighbors = 0 }, 0
 local cache, cacheindex = {}
 local ymin, ymax, xmin, ymax
 local function getcluster(tbl, name)
+  local count = 0
   best.index, best.neighbors = 1, 0
   cacheindex = string.format("%s:%s", name, table.getn(tbl))
 
@@ -46,6 +47,7 @@ local function getcluster(tbl, name)
       xmin, xmax = data[1] - 5, data[1] + 5
       ymin, ymax = data[2] - 5, data[2] + 5
       neighbors = 0
+      count = count + 1
 
       for _, compare in pairs(tbl) do
         if compare[1] > xmin and compare[1] < xmax and compare[2] > ymin and compare[2] < ymax then
@@ -62,7 +64,7 @@ local function getcluster(tbl, name)
     cache[cacheindex] = { tbl[best.index][1] + .001, tbl[best.index][2] + .001 }
   end
 
-  return cache[cacheindex][1], cache[cacheindex][2]
+  return cache[cacheindex][1], cache[cacheindex][2], count
 end
 
 -- Detects if a non indexed table is empty
@@ -1009,15 +1011,15 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           meta["zone"]  = map
 
           if meta.item then
-            meta["x"], meta["y"] = getcluster(data.coords, meta["quest"]..hash..map)
+            meta["x"], meta["y"], meta["priority"] = getcluster(data.coords, meta["quest"]..hash..map)
             meta["texture"] = pfQuestConfig.path.."\\img\\cluster_item"
             pfMap:AddNode(meta, true)
           elseif meta.spawn and meta.spawn ~= pfQuest_Loc["Exploration Mark"] then
-            meta["x"], meta["y"] = getcluster(data.coords, meta["quest"]..hash..map)
+            meta["x"], meta["y"], meta["priority"] = getcluster(data.coords, meta["quest"]..hash..map)
             meta["texture"] = pfQuestConfig.path.."\\img\\cluster_mob"
             pfMap:AddNode(meta, true)
           else
-            meta["x"], meta["y"] = getcluster(data.coords, meta["quest"]..hash..map)
+            meta["x"], meta["y"], meta["priority"] = getcluster(data.coords, meta["quest"]..hash..map)
             meta["texture"] = pfQuestConfig.path.."\\img\\cluster_misc"
             pfMap:AddNode(meta, true)
           end
