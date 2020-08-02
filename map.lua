@@ -359,6 +359,8 @@ function pfMap:AddNode(meta)
   if not meta["zone"] then return end
   if not meta["title"] then return end
 
+  meta["description"] = pfDatabase:BuildQuestDescription(meta)
+
   local addon = meta["addon"] or "PFDB"
   local map = meta["zone"]
   local coords = meta["x"] .. "|" .. meta["y"]
@@ -563,18 +565,20 @@ function pfMap:UpdateNode(frame, node, color, obj)
 
       -- set title and texture to the entry with highest layer
       -- and add core information
-      frame.layer     = tab.layer
-      frame.spawn     = tab.spawn
-      frame.spawnid   = tab.spawnid
-      frame.spawntype = tab.spawntype
-      frame.respawn   = tab.respawn
-      frame.level     = tab.level
-      frame.questid   = tab.questid
-      frame.texture   = tab.texture
-      frame.vertex    = tab.vertex
-      frame.title     = title
-      frame.func      = tab.func
-      frame.cluster   = tab.cluster
+      frame.layer       = tab.layer
+      frame.spawn       = tab.spawn
+      frame.spawnid     = tab.spawnid
+      frame.spawntype   = tab.spawntype
+      frame.respawn     = tab.respawn
+      frame.level       = tab.level
+      frame.questid     = tab.questid
+      frame.texture     = tab.texture
+      frame.vertex      = tab.vertex
+      frame.title       = title
+      frame.func        = tab.func
+      frame.cluster     = tab.cluster
+      frame.description = tab.description
+      frame.quest       = tab.quest
 
       if pfQuest_config["spawncolors"] == "1" then
         frame.color = tab.spawn or tab.title

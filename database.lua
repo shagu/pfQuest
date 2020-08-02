@@ -194,6 +194,32 @@ local bitclasses = {
   [1024] = "DRUID"
 }
 
+function pfDatabase:BuildQuestDescription(meta)
+  if not meta.title or not meta.quest or not meta.QTYPE then return end
+
+  if meta.QTYPE == "NPC_START" then
+    return string.format(pfQuest_Loc["Speak with |cff33ffcc%s|r to obtain |cffffcc00[!]|cff33ffcc %s|r"], meta.spawn, meta.quest)
+  elseif meta.QTYPE == "OBJECT_START" then
+    return string.format(pfQuest_Loc["Interact with |cff33ffcc%s|r to obtain |cffffcc00[!]|cff33ffcc %s|r"], meta.spawn, meta.quest)
+  elseif meta.QTYPE == "NPC_END" then
+    return string.format(pfQuest_Loc["Speak with |cff33ffcc%s|r to complete |cffffcc00[?]|cff33ffcc %s|r"], meta.spawn, meta.quest)
+  elseif meta.QTYPE == "OBJECT_END" then
+    return string.format(pfQuest_Loc["Interact with |cff33ffcc%s|r to complete |cffffcc00[?]|cff33ffcc %s|r"], meta.spawn, meta.quest)
+  elseif meta.QTYPE == "UNIT_OBJECTIVE" then
+    return string.format(pfQuest_Loc["Kill |cff33ffcc%s|r"], meta.spawn)
+  elseif meta.QTYPE == "OBJECT_OBJECTIVE" then
+    return string.format(pfQuest_Loc["Interact with |cff33ffcc%s|r"], meta.spawn)
+  elseif meta.QTYPE == "ITEM_OBJECTIVE_LOOT" then
+    return string.format(pfQuest_Loc["Loot |cff33ffcc%s|r from |cff33ffcc%s|r"], meta.item, meta.spawn)
+  elseif meta.QTYPE == "ITEM_OBJECTIVE_USE" then
+    return string.format(pfQuest_Loc["Loot and/or Use |cff33ffcc%s|r from |cff33ffcc%s|r"], meta.item, meta.spawn)
+  elseif meta.QTYPE == "AREATRIGGER_OBJECTIVE" then
+    return string.format(pfQuest_Loc["Explore |cff33ffcc%s|r"], meta.spawn)
+  elseif meta.QTYPE == "ZONE_OBJECTIVE" then
+    return string.format(pfQuest_Loc["Use Quest Item at |cff33ffcc%s|r"], meta.spawn)
+  end
+end
+
 -- ShowExtendedTooltip
 -- Draws quest informations into a tooltip
 function pfDatabase:ShowExtendedTooltip(id, tooltip, parent, anchor, offx, offy)
@@ -841,6 +867,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
       if quests[id]["start"]["U"] then
         for _, unit in pairs(quests[id]["start"]["U"]) do
           meta = meta or {}
+          meta["QTYPE"] = "NPC_START"
           meta["layer"] = meta["layer"] or 4
           meta["texture"] = pfQuestConfig.path.."\\img\\available_c"
           maps = pfDatabase:SearchMobID(unit, meta, maps, 0)
@@ -851,6 +878,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
       if quests[id]["start"]["O"] then
         for _, object in pairs(quests[id]["start"]["O"]) do
           meta = meta or {}
+          meta["QTYPE"] = "OBJECT_START"
           meta["texture"] = pfQuestConfig.path.."\\img\\available_c"
           maps = pfDatabase:SearchObjectID(object, meta, maps, 0)
         end
@@ -875,6 +903,8 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           else
             meta["texture"] = pfQuestConfig.path.."\\img\\complete_c"
           end
+          meta["QTYPE"] = "NPC_END"
+
           maps = pfDatabase:SearchMobID(unit, meta, maps, 0)
         end
       end
@@ -895,6 +925,8 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           else
             meta["texture"] = pfQuestConfig.path.."\\img\\complete_c"
           end
+
+          meta["QTYPE"] = "OBJECT_END"
 
           maps = pfDatabase:SearchObjectID(object, meta, maps, 0)
         end
@@ -950,6 +982,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
         if not parse_obj["U"][unit] or parse_obj["U"][unit] ~= "DONE" then
           meta = meta or {}
           meta["texture"] = nil
+          meta["QTYPE"] = "UNIT_OBJECTIVE"
           maps = pfDatabase:SearchMobID(unit, meta, maps)
         end
       end
@@ -962,6 +995,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           meta = meta or {}
           meta["texture"] = nil
           meta["layer"] = 2
+          meta["QTYPE"] = "OBJECT_OBJECTIVE"
           maps = pfDatabase:SearchObjectID(object, meta, maps)
         end
       end
@@ -974,6 +1008,11 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           meta = meta or {}
           meta["texture"] = nil
           meta["layer"] = 2
+          if parse_obj["I"][item] then
+            meta["QTYPE"] = "ITEM_OBJECTIVE_LOOT"
+          else
+            meta["QTYPE"] = "ITEM_OBJECTIVE_USE"
+          end
           maps = pfDatabase:SearchItemID(item, meta, maps)
         end
       end
@@ -985,6 +1024,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
         meta = meta or {}
         meta["texture"] = nil
         meta["layer"] = 2
+        meta["QTYPE"] = "AREATRIGGER_OBJECTIVE"
         maps = pfDatabase:SearchAreaTriggerID(areatrigger, meta, maps)
       end
     end
@@ -995,6 +1035,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
         meta = meta or {}
         meta["texture"] = nil
         meta["layer"] = 2
+        meta["QTYPE"] = "ZONE_OBJECTIVE"
         maps = pfDatabase:SearchZoneID(zone, meta, maps)
       end
     end
