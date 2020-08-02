@@ -93,6 +93,9 @@ pfQuest.route.AddPoint = function(self, tbl)
   self.firstnode = nil
 end
 
+local speed = 0
+local lastdist = 0
+local speedtick = 10
 pfQuest.route:SetScript("OnUpdate", function()
   if ( this.tick or 5) > GetTime() then return else this.tick = GetTime() + .1 end
 
@@ -134,6 +137,15 @@ pfQuest.route:SetScript("OnUpdate", function()
     end
   end
 
+  -- calculate speed
+  if speedtick > 0 then
+    speedtick = speedtick - 1
+  else
+    speedtick = 10
+    speed = lastdist - this.coords[1][4]
+    lastdist = this.coords[1][4]
+  end
+
   -- draw player
   ClearPath(playerpath)
   DrawLine(playerpath,xplayer*100,yplayer*100,this.coords[1][1],this.coords[1][2],true)
@@ -145,36 +157,86 @@ pfQuest.route:SetScript("OnUpdate", function()
   dir = dir > 0 and (math.pi*2) - dir or -dir
 
   local degtemp = dir
-  if degtemp < 0 then degtemp = degtemp + 360; end
+  if degtemp < 0 then degtemp = degtemp + 360 end
   local angle = math.rad(degtemp)
   local player = pfQuestCompat.GetPlayerFacing()
   angle = angle - player
-  local perc = 1-  math.abs(((math.pi - math.abs(angle)) / math.pi))
-
-  cell = modulo(floor(angle / (math.pi*2) * 108 + 0.5), 108);
+  local perc = math.abs(((math.pi - math.abs(angle)) / math.pi))
+  local r, g, b = pfUI.api.GetColorGradient(perc)
+  cell = modulo(floor(angle / (math.pi*2) * 108 + 0.5), 108)
   local column = modulo(cell, 9)
   local row = floor(cell / 9)
   local xstart = (column * 56) / 512
   local ystart = (row * 42) / 512
   local xend = ((column + 1) * 56) / 512
   local yend = ((row + 1) * 42) / 512
+
+  -- set text
+  if this.coords[1][3].interaction then
+    local title = "|cffffcc00"..this.coords[1][3].title
+    this.text:SetText(title.."\n".."|cff33ffcc"..this.coords[1][3].interaction)
+    this.text:SetTextColor(1,1,1)
+  else
+    this.text:SetText(this.coords[1][3].title)
+    this.text:SetTextColor(1, .8, 0)
+  end
+
+  -- set distance
+  if this.coords[1][4] > 1 and speed > 0 and floor(this.coords[1][4]/speed) > 0 then
+    this.distance:SetText(floor(this.coords[1][4]) .. " yards (|cffffffff" ..  SecondsToTime(floor(this.coords[1][4]/speed)) .. "|r)")
+  else
+    this.distance:SetText(floor(this.coords[1][4]) .. " yards")
+  end
+
+  -- update arrow
   this.arrow:SetTexCoord(xstart,xend,ystart,yend)
+  this.arrow:SetVertexColor(r,g,b)
+
+  if this.coords[1][3].texture then
+    this.texture:SetTexture(this.coords[1][3].texture)
+
+    local r, g, b = unpack(this.coords[1][3].vertex or {0,0,0})
+    if r > 0 or g > 0 or b > 0 then
+      this.texture:SetVertexColor(unpack(this.coords[1][3].vertex))
+    else
+      this.texture:SetVertexColor(1,1,1,1)
+    end
+  else
+    this.texture:SetTexture(pfQuestConfig.path.."\\img\\node")
+    this.texture:SetVertexColor(pfMap.str2rgb(this.coords[1][3].title))
+  end
+
+  -- update texture visibility
+  local alpha = this.coords[1][4] - 2
+  alpha = alpha > 1 and 1 or alpha
+  alpha = alpha < 0 and 0 or alpha
+  local texalpha = 1 - alpha
+  texalpha = texalpha > 1 and 1 or texalpha
+  texalpha = texalpha < 0 and 0 or texalpha
+
+  this.arrow:SetAlpha(alpha)
   this.arrow:Show()
 
-  -- update arrow text
-  this.text:SetText(this.coords[1][3].title)
-
-  if this.coords[1][3].interaction then
-    this.text:SetText(this.text:GetText().."\n".."|cff33ffcc"..this.coords[1][3].interaction)
-  end
+  this.texture:SetAlpha(texalpha)
+  this.texture:Show()
 end)
+
+pfQuest.route.texture = pfQuest.route:CreateTexture("pfQuestRouteNodeTexture", "OVERLAY")
+pfQuest.route.texture:SetWidth(32)
+pfQuest.route.texture:SetHeight(32)
+pfQuest.route.texture:SetPoint("BOTTOM", 0, 0)
+pfQuest.route.texture:Hide()
 
 pfQuest.route.arrow = pfQuest.route:CreateTexture("pfQuestRouteArrow", "OVERLAY")
 pfQuest.route.arrow:SetTexture(pfQuestConfig.path.."\\img\\arrow")
 pfQuest.route.arrow:SetAllPoints()
-pfQuest.route.arrow:SetVertexColor(.3,1,.8)
 pfQuest.route.arrow:Hide()
 
 pfQuest.route.text = pfQuest.route:CreateFontString("pfQuestRouteText", "HIGH", "GameFontWhite")
 pfQuest.route.text:SetPoint("TOP", pfQuest.route.arrow, "BOTTOM", 0, -10)
 pfQuest.route.text:SetJustifyH("CENTER")
+
+pfQuest.route.distance = pfQuest.route:CreateFontString("pfQuestRouteDistance", "HIGH", "GameFontWhite")
+pfQuest.route.distance:SetPoint("TOP", pfQuest.route.text, "BOTTOM", 0, 0)
+pfQuest.route.distance:SetTextColor(.8,.8,.8)
+pfQuest.route.distance:SetJustifyH("CENTER")
