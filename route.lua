@@ -1,7 +1,33 @@
+-- table.getn doesn't return sizes on tables that
+-- are using a named index on which setn is not updated
 local function tablesize(tbl)
   local count = 0
   for _ in pairs(tbl) do count = count + 1 end
   return count
+end
+
+-- do the best to detect the minimap arrow on vanilla and tbc
+local minimaparrow = ({Minimap:GetChildren()})[9]
+for k, v in pairs({Minimap:GetChildren()}) do
+  if v:IsObjectType("Model") and not v:GetName() then
+    if string.find(strlower(v:GetModel()), "interface\\minimap\\minimaparrow") then
+      minimaparrow = v
+      break
+    end
+  end
+end
+
+-- return the player facing based on the minimap arrow
+local function GetPlayerFacing()
+  if GetCVar("rotateMinimap") ~= "0" then
+    return (MiniMapCompassRing:GetFacing() * -1)
+  else
+	  return minimaparrow:GetFacing()
+  end
+end
+
+function modulo(val, by)
+  return val - math.floor(val/by)*by;
 end
 
 local function GetNearest(xstart, ystart, db, blacklist)
@@ -69,7 +95,11 @@ local function DrawLine(path,x,y,nx,ny,hl)
   end
 end
 
-pfQuest.route = CreateFrame("Frame")
+pfQuest.route = CreateFrame("Frame", "pfQuestRoute", UIParent)
+pfQuest.route:SetPoint("CENTER", 0, -200)
+pfQuest.route:SetWidth(56)
+pfQuest.route:SetHeight(42)
+
 pfQuest.route.firstnode = nil
 pfQuest.route.coords = {}
 
@@ -108,7 +138,6 @@ pfQuest.route:SetScript("OnUpdate", function()
   -- check first node
   if this.firstnode ~= tostring(this.coords[1][1]..this.coords[1][2]) or TODO_TABLE_CHANGED then
     this.firstnode = tostring(this.coords[1][1]..this.coords[1][2])
-    print("FULL UPD .. " .. GetTime())
 
     -- recalculate objective paths
     local route = { [1] = this.coords[1] }
@@ -128,4 +157,44 @@ pfQuest.route:SetScript("OnUpdate", function()
   -- draw player
   ClearPath(playerpath)
   DrawLine(playerpath,xplayer*100,yplayer*100,this.coords[1][1],this.coords[1][2],true)
+
+  -- update arrow
+  local xDelta = this.coords[1][1] - xplayer*100
+  local yDelta = this.coords[1][2] - yplayer*100
+  local dir = atan2(xDelta, -(yDelta))
+  dir = dir > 0 and (math.pi*2) - dir or -dir
+
+  local degtemp = dir
+  if degtemp < 0 then degtemp = degtemp + 360; end
+  local angle = math.rad(degtemp)
+  local player = GetPlayerFacing() + 0.1
+  angle = angle - player
+  local perc = 1-  math.abs(((math.pi - math.abs(angle)) / math.pi))
+
+  cell = modulo(floor(angle / (math.pi*2) * 108 + 0.5), 108);
+  local column = modulo(cell, 9)
+  local row = floor(cell / 9)
+  local xstart = (column * 56) / 512
+  local ystart = (row * 42) / 512
+  local xend = ((column + 1) * 56) / 512
+  local yend = ((row + 1) * 42) / 512
+  this.arrow:SetTexCoord(xstart,xend,ystart,yend)
+  this.arrow:Show()
+
+  -- update arrow text
+  this.text:SetText(this.coords[1][3].title)
+
+  if this.coords[1][3].interaction then
+    this.text:SetText(this.text:GetText().."\n".."|cff33ffcc"..this.coords[1][3].interaction)
+  end
 end)
+
+pfQuest.route.arrow = pfQuest.route:CreateTexture("pfQuestRouteArrow", "OVERLAY")
+pfQuest.route.arrow:SetTexture(pfQuestConfig.path.."\\img\\arrow")
+pfQuest.route.arrow:SetAllPoints()
+pfQuest.route.arrow:SetVertexColor(.3,1,.8)
+pfQuest.route.arrow:Hide()
+
+pfQuest.route.text = pfQuest.route:CreateFontString("pfQuestRouteText", "HIGH", "GameFontWhite")
+pfQuest.route.text:SetPoint("TOP", pfQuest.route.arrow, "BOTTOM", 0, -10)
+pfQuest.route.text:SetJustifyH("CENTER")
