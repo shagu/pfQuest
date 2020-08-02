@@ -111,9 +111,14 @@ local lastdist = 0
 local speedtick = 10
 pfQuest.route:SetScript("OnUpdate", function()
   local xplayer, yplayer = GetPlayerMapPosition("player")
+  local wrongmap = xplayer == 0 and yplayer == 0 and true or nil
 
   -- always update arrow while distance is set
-  if this.coords and this.coords[1] and this.coords[1][4] then
+  if wrongmap then
+    -- hide all arrow associated elements
+    this:SetAlpha(0)
+  elseif this.coords and this.coords[1] and this.coords[1][4] then
+    this:SetAlpha(1)
     local xDelta = this.coords[1][1] - xplayer*100
     local yDelta = this.coords[1][2] - yplayer*100
     local dir = atan2(xDelta, -(yDelta))
@@ -217,8 +222,12 @@ pfQuest.route:SetScript("OnUpdate", function()
   end
 
   -- draw player
-  ClearPath(playerpath)
-  DrawLine(playerpath,xplayer*100,yplayer*100,this.coords[1][1],this.coords[1][2],true)
+  if wrongmap then
+    ClearPath(playerpath)
+  else
+    ClearPath(playerpath)
+    DrawLine(playerpath,xplayer*100,yplayer*100,this.coords[1][1],this.coords[1][2],true)
+  end
 
   -- set title text
   local color = "|cffffcc00"
