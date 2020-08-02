@@ -222,8 +222,8 @@ pfQuest.route:SetScript("OnUpdate", function()
 
   -- set title text
   local color = "|cffffcc00"
-  if tonumber(this.coords[1][3]["level"]) then
-    color = pfMap:HexDifficultyColor(tonumber(this.coords[1][3]["level"]))
+  if tonumber(this.coords[1][3]["qlvl"]) then
+    color = pfMap:HexDifficultyColor(tonumber(this.coords[1][3]["qlvl"]))
   end
   this.title:SetText(color..this.coords[1][3].title .. "|r")
 

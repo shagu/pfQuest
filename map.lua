@@ -579,6 +579,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
       frame.cluster     = tab.cluster
       frame.description = tab.description
       frame.quest       = tab.quest
+      frame.qlvl        = tab.qlvl
 
       if pfQuest_config["spawncolors"] == "1" then
         frame.color = tab.spawn or tab.title
