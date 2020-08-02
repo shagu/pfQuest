@@ -232,3 +232,43 @@ function pfUI.api.CreateScrollChild(name, parent)
 
   return f
 end
+
+-- [ GetColorGradient ] --
+-- 'perc'     percentage (0-1)
+-- return r,g,b and hexcolor
+local gradientcolors = {}
+function pfUI.api.GetColorGradient(perc)
+  perc = perc > 1 and 1 or perc
+  perc = perc < 0 and 0 or perc
+
+  local index = perc
+  if not gradientcolors[index] then
+    local r1, g1, b1, r2, g2, b2
+
+    if perc <= 0.5 then
+      perc = perc * 2
+      r1, g1, b1 = 1, 0, 0
+      r2, g2, b2 = 1, 1, 0
+    else
+      perc = perc * 2 - 1
+      r1, g1, b1 = 1, 1, 0
+      r2, g2, b2 = 0, 1, 0
+    end
+
+    local r = round(r1 + (r2 - r1) * perc, 4)
+    local g = round(g1 + (g2 - g1) * perc, 4)
+    local b = round(b1 + (b2 - b1) * perc, 4)
+    local h = pfUI.api.rgbhex(r,g,b)
+
+    gradientcolors[index] = {}
+    gradientcolors[index].r = r
+    gradientcolors[index].g = g
+    gradientcolors[index].b = b
+    gradientcolors[index].h = h
+  end
+
+  return gradientcolors[index].r,
+    gradientcolors[index].g,
+    gradientcolors[index].b,
+    gradientcolors[index].h
+end
