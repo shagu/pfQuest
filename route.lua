@@ -76,9 +76,22 @@ local function DrawLine(path,x,y,nx,ny,hl)
 end
 
 pfQuest.route = CreateFrame("Frame", "pfQuestRoute", UIParent)
-pfQuest.route:SetPoint("CENTER", 0, -200)
+pfQuest.route:SetPoint("CENTER", 0, -100)
 pfQuest.route:SetWidth(56)
 pfQuest.route:SetHeight(42)
+pfQuest.route:SetClampedToScreen(true)
+pfQuest.route:SetMovable(true)
+pfQuest.route:EnableMouse(true)
+pfQuest.route:RegisterForDrag('LeftButton')
+pfQuest.route:SetScript("OnDragStart", function()
+  if IsShiftKeyDown() then
+    this:StartMoving()
+  end
+end)
+
+pfQuest.route:SetScript("OnDragStop", function()
+  this:StopMovingOrSizing()
+end)
 
 pfQuest.route.firstnode = nil
 pfQuest.route.coords = {}
