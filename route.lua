@@ -142,6 +142,7 @@ pfQuest.route:SetScript("OnUpdate", function()
     -- update arrow
     this.arrow:SetTexCoord(xstart,xend,ystart,yend)
     this.arrow:SetVertexColor(r,g,b)
+    this.distance:SetTextColor(r+.2,g+.2,b+.2)
 
     if this.coords[1][3].texture then
       this.texture:SetTexture(this.coords[1][3].texture)
@@ -165,6 +166,7 @@ pfQuest.route:SetScript("OnUpdate", function()
     texalpha = texalpha > 1 and 1 or texalpha
     texalpha = texalpha < 0 and 0 or texalpha
 
+    this.distance:SetAlpha(alpha)
     this.arrow:SetAlpha(alpha)
     this.arrow:Show()
 
@@ -245,9 +247,9 @@ pfQuest.route:SetScript("OnUpdate", function()
 
   -- set distance
   if this.coords[1][4] > 1 and speed > 0 and floor(this.coords[1][4]/speed) > 0 then
-    this.distance:SetText(floor(this.coords[1][4]*10) .. " yards (|cffffffff" ..  SecondsToTime(floor(this.coords[1][4]/speed)) .. "|r)")
+    this.distance:SetText("|cffaaaaaa"..floor(this.coords[1][4]*10) .. " yards (|r" ..  SecondsToTime(floor(this.coords[1][4]/speed)) .. "|cffaaaaaa)")
   else
-    this.distance:SetText(floor(this.coords[1][4]*10) .. " yards")
+    this.distance:SetText("|cffaaaaaa"..floor(this.coords[1][4]*10) .. " yards")
   end
 end)
 
@@ -264,7 +266,7 @@ pfQuest.route.arrow:Hide()
 
 pfQuest.route.title = pfQuest.route:CreateFontString("pfQuestRouteText", "HIGH", "GameFontWhite")
 pfQuest.route.title:SetPoint("TOP", pfQuest.route.arrow, "BOTTOM", 0, -10)
-pfQuest.route.title:SetFont(pfUI.font_default, pfUI_config.global.font_size+2, "OUTLINE")
+pfQuest.route.title:SetFont(pfUI.font_default, pfUI_config.global.font_size+1, "OUTLINE")
 pfQuest.route.title:SetTextColor(1,.8,.2)
 pfQuest.route.title:SetJustifyH("CENTER")
 
@@ -276,6 +278,6 @@ pfQuest.route.description:SetJustifyH("CENTER")
 
 pfQuest.route.distance = pfQuest.route:CreateFontString("pfQuestRouteDistance", "HIGH", "GameFontWhite")
 pfQuest.route.distance:SetPoint("TOP", pfQuest.route.description, "BOTTOM", 0, -2)
-pfQuest.route.distance:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
+pfQuest.route.distance:SetFont(pfUI.font_default, pfUI_config.global.font_size-1, "OUTLINE")
 pfQuest.route.distance:SetTextColor(.8,.8,.8)
 pfQuest.route.distance:SetJustifyH("CENTER")
