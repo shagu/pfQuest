@@ -625,10 +625,14 @@ function pfMap:UpdateNodes()
   -- reset tracker
   pfQuest.tracker.Reset()
 
+  -- reset route
+  pfQuest.route:Reset()
+
   -- refresh all nodes
   for addon, _ in pairs(pfMap.nodes) do
     if pfMap.nodes[addon][map] then
       for coords, node in pairs(pfMap.nodes[addon][map]) do
+
         if not pfMap.pins[i] then
           pfMap.pins[i] = pfMap:BuildNode("pfMapPin" .. i, WorldMapButton)
         end
@@ -637,17 +641,23 @@ function pfMap:UpdateNodes()
 
         -- set position
         local _, _, x, y = strfind(coords, "(.*)|(.*)")
+
+        -- write points to the route plan
+        if pfMap.pins[i].layer >= 9 or pfMap.pins[i].layer == 4 then
+          pfQuest.route:AddPoint({ x, y, pfMap.pins[i] })
+        end
+
+        -- populate quest list on map
+        for title, node in pairs(pfMap.pins[i].node) do
+          pfQuest.tracker.ButtonAdd(title, node)
+        end
+
         x = x / 100 * WorldMapButton:GetWidth()
         y = y / 100 * WorldMapButton:GetHeight()
 
         pfMap.pins[i]:ClearAllPoints()
         pfMap.pins[i]:SetPoint("CENTER", WorldMapButton, "TOPLEFT", x, -y)
         pfMap.pins[i]:Show()
-
-        -- populate quest list on map
-        for title, node in pairs(pfMap.pins[i].node) do
-          pfQuest.tracker.ButtonAdd(title, node)
-        end
 
         i = i + 1
       end
