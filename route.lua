@@ -6,26 +6,6 @@ local function tablesize(tbl)
   return count
 end
 
--- do the best to detect the minimap arrow on vanilla and tbc
-local minimaparrow = ({Minimap:GetChildren()})[9]
-for k, v in pairs({Minimap:GetChildren()}) do
-  if v:IsObjectType("Model") and not v:GetName() then
-    if string.find(strlower(v:GetModel()), "interface\\minimap\\minimaparrow") then
-      minimaparrow = v
-      break
-    end
-  end
-end
-
--- return the player facing based on the minimap arrow
-local function GetPlayerFacing()
-  if GetCVar("rotateMinimap") ~= "0" then
-    return (MiniMapCompassRing:GetFacing() * -1)
-  else
-	  return minimaparrow:GetFacing()
-  end
-end
-
 function modulo(val, by)
   return val - math.floor(val/by)*by;
 end
@@ -167,7 +147,7 @@ pfQuest.route:SetScript("OnUpdate", function()
   local degtemp = dir
   if degtemp < 0 then degtemp = degtemp + 360; end
   local angle = math.rad(degtemp)
-  local player = GetPlayerFacing() + 0.1
+  local player = pfQuestCompat.GetPlayerFacing()
   angle = angle - player
   local perc = 1-  math.abs(((math.pi - math.abs(angle)) / math.pi))
 
