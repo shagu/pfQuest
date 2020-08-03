@@ -1043,7 +1043,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
 
   -- prepare unified quest location markers
   local addon = meta["addon"] or "PFDB"
-  if pfQuest_config.showcluster == "1" and pfMap.nodes[addon] then
+  if pfMap.nodes[addon] then
     for map in pairs(pfMap.nodes[addon]) do
       if pfMap.unifiedcache[meta.quest] and pfMap.unifiedcache[meta.quest][map] then
         for hash, data in pairs(pfMap.unifiedcache[meta.quest][map]) do
