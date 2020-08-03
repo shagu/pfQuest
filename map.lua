@@ -534,7 +534,6 @@ end
 
 pfMap.highlightdb = {}
 function pfMap:UpdateNode(frame, node, color, obj)
-
   -- clear node to title association table
   if pfMap.highlightdb[frame] then
     for k,v in pairs(pfMap.highlightdb[frame]) do
@@ -637,7 +636,6 @@ function pfMap:UpdateNodes()
   for addon, _ in pairs(pfMap.nodes) do
     if pfMap.nodes[addon][map] then
       for coords, node in pairs(pfMap.nodes[addon][map]) do
-
         if not pfMap.pins[i] then
           pfMap.pins[i] = pfMap:BuildNode("pfMapPin" .. i, WorldMapButton)
         end
@@ -652,17 +650,22 @@ function pfMap:UpdateNodes()
           pfQuest.route:AddPoint({ x, y, pfMap.pins[i] })
         end
 
-        -- populate quest list on map
-        for title, node in pairs(pfMap.pins[i].node) do
-          pfQuest.tracker.ButtonAdd(title, node)
+        -- hide cluster nodes if set
+        if pfMap.pins[i].cluster and pfQuest_config.showcluster == "0" then
+          pfMap.pins[i]:Hide()
+        else
+          -- populate quest list on map
+          for title, node in pairs(pfMap.pins[i].node) do
+            pfQuest.tracker.ButtonAdd(title, node)
+          end
+
+          x = x / 100 * WorldMapButton:GetWidth()
+          y = y / 100 * WorldMapButton:GetHeight()
+
+          pfMap.pins[i]:ClearAllPoints()
+          pfMap.pins[i]:SetPoint("CENTER", WorldMapButton, "TOPLEFT", x, -y)
+          pfMap.pins[i]:Show()
         end
-
-        x = x / 100 * WorldMapButton:GetWidth()
-        y = y / 100 * WorldMapButton:GetHeight()
-
-        pfMap.pins[i]:ClearAllPoints()
-        pfMap.pins[i]:SetPoint("CENTER", WorldMapButton, "TOPLEFT", x, -y)
-        pfMap.pins[i]:Show()
 
         i = i + 1
       end
