@@ -88,6 +88,39 @@ local function str2rgb(text)
   return unpack(rgbcache[text])
 end
 
+local function NodeAnimate(self, zoom, alpha)
+  local cur_zoom = self:GetWidth()
+  local cur_alpha = self:GetAlpha()
+  local change = nil
+
+  -- update size
+  if math.abs(cur_zoom - zoom) < 1 then
+    self:SetWidth(zoom)
+    self:SetHeight(zoom)
+  elseif cur_zoom < zoom then
+    self:SetWidth(cur_zoom + .5)
+    self:SetHeight(cur_zoom + .5)
+    change = true
+  elseif cur_zoom > zoom then
+    self:SetWidth(cur_zoom - .5)
+    self:SetHeight(cur_zoom - .5)
+    change = true
+  end
+
+  -- update alpha
+  if math.abs(cur_alpha - alpha) < .1 then
+    self:SetAlpha(alpha)
+  elseif cur_alpha < alpha then
+    self:SetAlpha(cur_alpha + .08)
+    change = true
+  elseif cur_alpha > alpha then
+    self:SetAlpha(cur_alpha - .08)
+    change = true
+  end
+
+  return change
+end
+
 pfMap = CreateFrame("Frame")
 pfMap.str2rgb = str2rgb
 pfMap.tooltips = {}
@@ -475,73 +508,6 @@ function pfMap:NodeLeave()
   pfMap.highlight = nil
 end
 
-function pfMap:NodeUpdate()
-  local alpha = this:GetAlpha()
-  local size = this:GetWidth()
-  local highlight
-
-  -- does this node contain a highlighted title?
-  for title in pairs(this.node) do
-    if title and title == pfMap.highlight then
-      highlight = true
-      break
-    end
-  end
-
-  if highlight then
-    -- fade alpha of active node
-    if alpha < 1 then
-      this:SetAlpha(alpha + .2)
-    elseif alpha > 1 then
-      this:SetAlpha(1)
-    end
-
-    -- zoom active node
-    if this.texture then
-      if size < 23 then
-        this:SetWidth(size + 1)
-        this:SetHeight(size + 1)
-      else
-        this:SetWidth(24)
-        this:SetHeight(24)
-      end
-    else
-      this:SetWidth(16)
-      this:SetHeight(16)
-    end
-  elseif pfMap.highlight then
-    -- fade alpha of inactive node
-    if alpha > .3 then
-      this:SetAlpha(alpha - .1)
-    elseif alpha < .3 then
-      this:SetAlpha(.3)
-    end
-
-    -- zoom active node
-    if size > 17 then
-      this:SetWidth(size - 1)
-      this:SetHeight(size - 1)
-    else
-      this:SetWidth(16)
-      this:SetHeight(16)
-    end
-  else
-    -- no highlight, show all
-    this:SetAlpha(this.defalpha)
-    this:SetWidth(16)
-    this:SetHeight(16)
-  end
-
-  -- static size for clusters
-  if this.cluster then
-    this:SetWidth(24)
-    this:SetHeight(24)
-    if IsControlKeyDown() then
-      this:SetAlpha(0)
-    end
-  end
-end
-
 function pfMap:BuildNode(name, parent)
   local f = CreateFrame("Button", name, parent)
   f:SetWidth(16)
@@ -554,9 +520,9 @@ function pfMap:BuildNode(name, parent)
     f.minimap = true
   end
 
+  f.Animate = NodeAnimate
   f:SetScript("OnEnter", pfMap.NodeEnter)
   f:SetScript("OnLeave", pfMap.NodeLeave)
-  f:SetScript("OnUpdate", pfMap.NodeUpdate)
 
   f.tex = f:CreateTexture("OVERLAY")
   f.tex:SetAllPoints(f)
@@ -564,12 +530,24 @@ function pfMap:BuildNode(name, parent)
   return f
 end
 
+pfMap.highlightdb = {}
 function pfMap:UpdateNode(frame, node, color, obj)
+
+  -- clear node to title association table
+  if pfMap.highlightdb[frame] then
+    for k,v in pairs(pfMap.highlightdb[frame]) do
+      pfMap.highlightdb[frame][k] = nil
+    end
+  else
+    pfMap.highlightdb[frame] = {}
+  end
 
   -- reset layer
   frame.layer = 0
 
   for title, tab in pairs(node) do
+    pfMap.highlightdb[frame][title] = true
+
     tab.layer = GetLayerByTexture(tab.texture)
 
     -- use prioritized clusters
@@ -806,11 +784,43 @@ pfMap:SetScript("OnEvent", function()
   end
 end)
 
+local hlstate, shiftstate, transition = nil, nil, nil
 pfMap:SetScript("OnUpdate", function()
   if pfMap.queue_update then
     pfMap:UpdateNodes()
-    pfMap.queue_update = nil
   end
 
   pfMap:UpdateMinimap()
+
+  -- handle highlights and animations
+  local hidecluster = (IsControlKeyDown() and MouseIsOver(WorldMapFrame) or nil)
+  if pfMap.queue_update or transition or pfMap.highlight ~= hlstate or shiftstate ~= hidecluster then
+    hlstate, shiftstate, transition = pfMap.highlight, hidecluster, nil
+
+    for frame, data in pairs(pfMap.highlightdb) do
+      local highlight = pfMap.highlightdb[frame][pfMap.highlight] and true or nil
+
+      if highlight then
+        if frame.texture then
+          transition = frame:Animate(24, 1) or transition -- zoom in
+        else
+          transition = frame:Animate(16, 1) or transition -- zoom in
+        end
+      elseif not highlight and pfMap.highlight then
+        if frame.cluster or frame.level == 4 then
+          transition = frame:Animate(24, .3) or transition -- zoom out
+        else
+          transition = frame:Animate(16, .3) or transition -- zoom out
+        end
+      else
+        if frame.cluster or frame.level == 4 then
+          transition = frame:Animate(24, frame.defalpha) or transition -- zoom out
+        else
+          transition = frame:Animate(16, frame.defalpha) or transition -- zoom out
+        end
+      end
+    end
+  end
+
+  pfMap.queue_update = nil
 end)
