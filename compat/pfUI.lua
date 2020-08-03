@@ -233,6 +233,53 @@ function pfUI.api.CreateScrollChild(name, parent)
   return f
 end
 
+-- [ round ]
+-- Rounds a float number into specified places after comma.
+-- 'input'      [float]         the number that should be rounded.
+-- 'places'     [int]           amount of places after the comma.
+-- returns:     [float]         rounded number.
+function pfUI.api.round(input, places)
+  if not places then places = 0 end
+  if type(input) == "number" and type(places) == "number" then
+    local pow = 1
+    for i = 1, places do pow = pow * 10 end
+    return floor(input * pow + 0.5) / pow
+  end
+end
+
+-- [ rgbhex ]
+-- Returns color format from color info
+-- 'r'          [table or number]  color table or r color component
+-- 'g'          [number] optional g color component
+-- 'b'          [number] optional b color component
+-- 'a'          [number] optional alpha component
+-- returns color string in the form of '|caaxxyyzz'
+local hexcolor_cache = {}
+function pfUI.api.rgbhex(r, g, b, a)
+  local key
+  if type(r)=="table" then
+    local _r,_g,_b,_a
+    if r.r then
+      _r,_g,_b,_a = r.r, r.g, r.b, r.a or 1
+    elseif table.getn(r) >= 3 then
+      _r,_g,_b,_a = r[1], r[2], r[3], r[4] or 1
+    end
+    if _r and _g and _b and _a then
+      key = string.format("%s%s%s%s",_r,_g,_b,_a)
+      if hexcolor_cache[key] == nil then
+        hexcolor_cache[key] = string.format("|c%02x%02x%02x%02x", _a*255, _r*255, _g*255, _b*255)
+      end
+    end
+  elseif tonumber(r) and g and b then
+    a = a or 1
+    key = string.format("%s%s%s%s",r,g,b,a)
+    if hexcolor_cache[key] == nil then
+      hexcolor_cache[key] = string.format("|c%02x%02x%02x%02x", a*255, r*255, g*255, b*255)
+    end
+  end
+  return hexcolor_cache[key] or ""
+end
+
 -- [ GetColorGradient ] --
 -- 'perc'     percentage (0-1)
 -- return r,g,b and hexcolor
@@ -255,9 +302,9 @@ function pfUI.api.GetColorGradient(perc)
       r2, g2, b2 = 0, 1, 0
     end
 
-    local r = round(r1 + (r2 - r1) * perc, 4)
-    local g = round(g1 + (g2 - g1) * perc, 4)
-    local b = round(b1 + (b2 - b1) * perc, 4)
+    local r = pfUI.api.round(r1 + (r2 - r1) * perc, 4)
+    local g = pfUI.api.round(g1 + (g2 - g1) * perc, 4)
+    local b = pfUI.api.round(b1 + (b2 - b1) * perc, 4)
     local h = pfUI.api.rgbhex(r,g,b)
 
     gradientcolors[index] = {}
