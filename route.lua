@@ -89,13 +89,17 @@ pfQuest.route.AddPoint = function(self, tbl)
   self.firstnode = nil
 end
 
-local stable = 0
+local stable, lastpos = 0, 0
 pfQuest.route:SetScript("OnUpdate", function()
   local xplayer, yplayer = GetPlayerMapPosition("player")
   local wrongmap = xplayer == 0 and yplayer == 0 and true or nil
+  local curpos = xplayer + yplayer
 
   -- limit distance and route updates to once per .1 seconds
-  if ( this.tick or 5) > GetTime() then return else this.tick = GetTime() + .1 end
+  if ( this.tick or 5) > GetTime() and lastpos == curpos then return else this.tick = GetTime() + 1 end
+
+  -- save current position
+  lastpos = curpos
 
   -- update distances to player
   for id, data in pairs(this.coords) do
