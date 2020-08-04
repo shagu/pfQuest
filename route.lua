@@ -89,7 +89,7 @@ pfQuest.route.AddPoint = function(self, tbl)
   self.firstnode = nil
 end
 
-local stable, lastpos = 0, 0
+local lastpos, completed = 0, 0
 pfQuest.route:SetScript("OnUpdate", function()
   local xplayer, yplayer = GetPlayerMapPosition("player")
   local wrongmap = xplayer == 0 and yplayer == 0 and true or nil
@@ -111,11 +111,6 @@ pfQuest.route:SetScript("OnUpdate", function()
 
   -- sort all coords by distance
   table.sort(this.coords, function(a,b) return a[4] < b[4] end)
-
-  -- show arrow as soon as the route is stable enough
-  if this.coords[1] and this.coords[1][4] and stable > 3 and not wrongmap then
-    this.arrow:Show()
-  end
 
   -- abort without any nodes or distances
   if not this.coords[1] or not this.coords[1][4] then
@@ -142,8 +137,8 @@ pfQuest.route:SetScript("OnUpdate", function()
       end
     end
 
-    -- we can't trust the table yet
-    stable = 0
+    -- route calculation timestamp
+    completed = GetTime()
   end
 
   if wrongmap then
@@ -155,8 +150,10 @@ pfQuest.route:SetScript("OnUpdate", function()
     DrawLine(playerpath,xplayer*100,yplayer*100,this.coords[1][1],this.coords[1][2],true)
   end
 
-  -- increase stability counter
-  stable = stable + 1
+  -- show arrow when route exists and is stable
+  if not wrongmap and this.coords[1] and this.coords[1][4] and not this.arrow:IsShown() and GetTime() > completed + 1 then
+    this.arrow:Show()
+  end
 end)
 
 pfQuest.route.arrow = CreateFrame("Frame", "pfQuestRouteArrow", UIParent)
