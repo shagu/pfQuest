@@ -835,7 +835,10 @@ pfMap:SetScript("OnUpdate", function()
     for frame, data in pairs(pfMap.highlightdb) do
       local highlight = pfMap.highlightdb[frame][pfMap.highlight] and true or nil
 
-      if highlight then
+      if hidecluster and frame.cluster then
+        -- hide clusters
+        transition = frame:Animate(frame.defsize, 0) or transition
+      elseif highlight then
         -- zoom node
         transition = frame:Animate((frame.texture and 28 or frame.defsize), 1) or transition
       elseif not highlight and pfMap.highlight then
