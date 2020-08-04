@@ -113,7 +113,7 @@ pfQuest.route:SetScript("OnUpdate", function()
   table.sort(this.coords, function(a,b) return a[4] < b[4] end)
 
   -- show arrow as soon as the route is stable enough
-  if this.coords[1] and this.coords[1][4] and stable > 3 then
+  if this.coords[1] and this.coords[1][4] and stable > 3 and not wrongmap then
     this.arrow:Show()
   end
 
