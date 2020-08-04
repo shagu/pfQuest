@@ -174,7 +174,6 @@ pfQuest.route.arrow:SetScript("OnDragStop", function()
   this:StopMovingOrSizing()
 end)
 
-local speed, lastdist, speedtick = 0, 0, 10
 pfQuest.route.arrow:SetScript("OnUpdate", function()
   local xplayer, yplayer = GetPlayerMapPosition("player")
   local wrongmap = xplayer == 0 and yplayer == 0 and true or nil
@@ -206,13 +205,19 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
   local xend = ((column + 1) * 56) / 512
   local yend = ((row + 1) * 42) / 512
 
-  -- calculate speed
-  if speedtick > 0 then
-    speedtick = speedtick - 1
-  else
-    speedtick = 10
-    speed = lastdist - target[4]
-    lastdist = target[4]
+  -- calculate visibility
+  local alpha = target[4] - 2
+  alpha = alpha > 1 and 1 or alpha
+  alpha = alpha < 0 and 0 or alpha
+
+  local texalpha = 1 - alpha
+  texalpha = texalpha > 1 and 1 or texalpha
+  texalpha = texalpha < 0 and 0 or texalpha
+
+  -- calculate difficulty color
+  local color = "|cffffcc00"
+  if tonumber(target[3]["qlvl"]) then
+    color = pfMap:HexDifficultyColor(tonumber(target[3]["qlvl"]))
   end
 
   -- update arrow
@@ -234,35 +239,12 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
     this.texture:SetVertexColor(pfMap.str2rgb(target[3].title))
   end
 
-  -- update texture visibility
-  local alpha = target[4] - 2
-  alpha = alpha > 1 and 1 or alpha
-  alpha = alpha < 0 and 0 or alpha
-  local texalpha = 1 - alpha
-  texalpha = texalpha > 1 and 1 or texalpha
-  texalpha = texalpha < 0 and 0 or texalpha
-
-  -- set title text
-  local color = "|cffffcc00"
-  if tonumber(target[3]["qlvl"]) then
-    color = pfMap:HexDifficultyColor(tonumber(target[3]["qlvl"]))
-  end
+  -- update arrow texts
   this.title:SetText(color..target[3].title .. "|r")
+  this.description:SetText(target[3].description or "")
+  this.distance:SetText("|cffaaaaaaDistance: "..string.format("%.1f", floor(target[4]*10)/10))
 
-  -- set description text
-  if target[3].description then
-    this.description:SetText(target[3].description)
-  else
-    this.description:SetText("")
-  end
-
-  -- set distance
-  if target[4] > 1 and speed > 0 and floor(target[4]/speed) > 0 then
-    this.distance:SetText("|cffaaaaaaDistance: "..string.format("%.1f", floor(target[4]*10)/10) .. " (|r" ..  SecondsToTime(floor(target[4]/speed)) .. "|cffaaaaaa)")
-  else
-    this.distance:SetText("|cffaaaaaaDistance: "..string.format("%.1f", floor(target[4]*10)/10) .. "")
-  end
-
+  -- update transparencies
   this.distance:SetAlpha(alpha)
   this.texture:SetAlpha(texalpha)
   this.model:SetAlpha(alpha)
