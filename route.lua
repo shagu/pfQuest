@@ -258,9 +258,9 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
 
   -- set distance
   if target[4] > 1 and speed > 0 and floor(target[4]/speed) > 0 then
-    this.distance:SetText("|cffaaaaaa"..floor(target[4]*10) .. " yards (|r" ..  SecondsToTime(floor(target[4]/speed)) .. "|cffaaaaaa)")
+    this.distance:SetText("|cffaaaaaaDistance: "..string.format("%.1f", floor(target[4]*10)/10) .. " (|r" ..  SecondsToTime(floor(target[4]/speed)) .. "|cffaaaaaa)")
   else
-    this.distance:SetText("|cffaaaaaa"..floor(target[4]*10) .. " yards")
+    this.distance:SetText("|cffaaaaaaDistance: "..string.format("%.1f", floor(target[4]*10)/10) .. "")
   end
 
   this.distance:SetAlpha(alpha)
