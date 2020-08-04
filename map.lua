@@ -512,15 +512,18 @@ end
 
 function pfMap:BuildNode(name, parent)
   local f = CreateFrame("Button", name, parent)
-  f:SetWidth(16)
-  f:SetHeight(16)
 
   if parent == WorldMapButton then
     f.defalpha = pfQuest_config["worldmaptransp"] + 0
+    f.defsize = 16
   else
     f.defalpha = pfQuest_config["minimaptransp"] + 0
+    f.defsize = 16
     f.minimap = true
   end
+
+  f:SetWidth(f.defsize)
+  f:SetHeight(f.defsize)
 
   f.Animate = NodeAnimate
   f:SetScript("OnEnter", pfMap.NodeEnter)
@@ -650,6 +653,13 @@ function pfMap:UpdateNodes()
           pfQuest.route:AddPoint({ x, y, pfMap.pins[i] })
         end
 
+        -- update sizes
+        if pfMap.pins[i].cluster or pfMap.pins[i].layer == 4 then
+          pfMap.pins[i].defsize = 24
+        else
+          pfMap.pins[i].defsize = 16
+        end
+
         -- hide cluster nodes if set
         if pfMap.pins[i].cluster and pfQuest_config.showcluster == "0" then
           pfMap.pins[i]:Hide()
@@ -664,6 +674,8 @@ function pfMap:UpdateNodes()
 
           pfMap.pins[i]:ClearAllPoints()
           pfMap.pins[i]:SetPoint("CENTER", WorldMapButton, "TOPLEFT", x, -y)
+          pfMap.pins[i]:SetWidth(pfMap.pins[i].defsize)
+          pfMap.pins[i]:SetHeight(pfMap.pins[i].defsize)
           pfMap.pins[i]:Show()
         end
 
@@ -818,23 +830,14 @@ pfMap:SetScript("OnUpdate", function()
       local highlight = pfMap.highlightdb[frame][pfMap.highlight] and true or nil
 
       if highlight then
-        if frame.texture then
-          transition = frame:Animate(24, 1) or transition -- zoom in
-        else
-          transition = frame:Animate(16, 1) or transition -- zoom in
-        end
+        -- zoom node
+        transition = frame:Animate((frame.texture and 28 or frame.defsize), 1) or transition
       elseif not highlight and pfMap.highlight then
-        if frame.cluster or frame.level == 4 then
-          transition = frame:Animate(24, .3) or transition -- zoom out
-        else
-          transition = frame:Animate(16, .3) or transition -- zoom out
-        end
+        -- fade node
+        transition = frame:Animate(frame.defsize, .3) or transition
       else
-        if frame.cluster or frame.level == 4 then
-          transition = frame:Animate(24, frame.defalpha) or transition -- zoom out
-        else
-          transition = frame:Animate(16, frame.defalpha) or transition -- zoom out
-        end
+        -- defaults
+        transition = frame:Animate(frame.defsize, frame.defalpha) or transition
       end
     end
   end
