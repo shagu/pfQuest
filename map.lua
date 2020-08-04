@@ -92,6 +92,7 @@ local function NodeAnimate(self, zoom, alpha)
   local cur_zoom = self:GetWidth()
   local cur_alpha = self:GetAlpha()
   local change = nil
+  self:EnableMouse(true)
 
   -- update size
   if math.abs(cur_zoom - zoom) < 1 then
@@ -110,6 +111,11 @@ local function NodeAnimate(self, zoom, alpha)
   -- update alpha
   if math.abs(cur_alpha - alpha) < .1 then
     self:SetAlpha(alpha)
+
+    -- disable mouse on hidden
+    if alpha < .1 then
+      self:EnableMouse(nil)
+    end
   elseif cur_alpha < alpha then
     self:SetAlpha(cur_alpha + .08)
     change = true
