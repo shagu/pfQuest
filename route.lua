@@ -46,7 +46,7 @@ end
 
 local function DrawLine(path,x,y,nx,ny,hl)
   local dx,dy = x - nx, y - ny
-  local dots = ceil(math.sqrt(dx*1.5*dx*1.5+dy*dy))*1
+  local dots = ceil(math.sqrt(dx*1.5*dx*1.5+dy*dy))
 
   for i=2, dots-2 do
     local xpos = nx + dx/dots*i
@@ -275,6 +275,7 @@ pfQuest.route.arrow.texture:SetPoint("BOTTOM", 0, 0)
 
 pfQuest.route.arrow.model = pfQuest.route.arrow:CreateTexture("pfQuestRouteArrow", "OVERLAY")
 pfQuest.route.arrow.model:SetTexture(pfQuestConfig.path.."\\img\\arrow")
+pfQuest.route.arrow.model:SetTexCoord(0,0,0.109375,0.08203125)
 pfQuest.route.arrow.model:SetAllPoints()
 
 pfQuest.route.arrow.title = pfQuest.route.arrow:CreateFontString("pfQuestRouteText", "HIGH", "GameFontWhite")
