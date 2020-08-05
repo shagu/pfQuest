@@ -47,9 +47,9 @@ end
 -- return the player facing based on the minimap arrow
 function pfQuestCompat.GetPlayerFacing()
   if client > 11200 and GetCVar("rotateMinimap") ~= "0" then
-    return (MiniMapCompassRing:GetFacing() * -1) - .1
+    return (MiniMapCompassRing:GetFacing() * -1) + (client > 11200 and -.15 or .15)
   else
-	  return minimaparrow:GetFacing() - .1
+    return minimaparrow:GetFacing() + (client > 11200 and -.15 or .15)
   end
 end
 
