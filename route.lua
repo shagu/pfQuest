@@ -54,7 +54,7 @@ local function DrawLine(path,x,y,nx,ny,hl)
     xpos = xpos / 100 * WorldMapButton:GetWidth()
     ypos = ypos / 100 * WorldMapButton:GetHeight()
 
-    WorldMapButton.routes = WorldMapButton.routes or CreateFrame("Frame", nil, WorldMapButton)
+    WorldMapButton.routes = WorldMapButton.routes or CreateFrame("Frame", nil, pfQuest.route.drawlayer)
     WorldMapButton.routes:SetAllPoints()
 
     local nline = tablesize(path) + 1
@@ -62,7 +62,7 @@ local function DrawLine(path,x,y,nx,ny,hl)
       if not tex.enable then nline = id break end
     end
 
-    path[nline] = path[nline] or WorldMapButton.routes:CreateTexture(nil, "HIGH")
+    path[nline] = path[nline] or WorldMapButton.routes:CreateTexture(nil, "OVERLAY")
     path[nline]:SetWidth(4)
     path[nline]:SetHeight(4)
     path[nline]:SetTexture(pfQuestConfig.path.."\\img\\route")
@@ -154,6 +154,10 @@ pfQuest.route:SetScript("OnUpdate", function()
     this.arrow:Show()
   end
 end)
+
+pfQuest.route.drawlayer = CreateFrame("Frame", "pfQuestRouteDrawLayer", WorldMapButton)
+pfQuest.route.drawlayer:SetFrameLevel(113)
+pfQuest.route.drawlayer:SetAllPoints()
 
 pfQuest.route.arrow = CreateFrame("Frame", "pfQuestRouteArrow", UIParent)
 pfQuest.route.arrow:SetPoint("CENTER", 0, -100)
