@@ -426,7 +426,7 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
     local scrollFrame = EQL3_QuestLogListScrollFrame or ShaguQuest_QuestLogListScrollFrame or QuestLogListScrollFrame
     local questIndex = this:GetID() + FauxScrollFrame_GetOffset(scrollFrame)
     local questName, questLevel = compat.GetQuestLogTitle(questIndex)
-    if IsShiftKeyDown() and not this.isHeader then
+    if IsShiftKeyDown() and not this.isHeader and ChatFrameEditBox:IsVisible() then
       local id = pfQuest.questlog[questName] and pfQuest.questlog[questName].ids[1] or nil
       pfQuestCompat.InsertQuestLink(id, questName)
       QuestLog_SetSelection(questIndex)
