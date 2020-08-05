@@ -216,19 +216,21 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
   local xend = ((column + 1) * 56) / 512
   local yend = ((row + 1) * 42) / 512
 
+  -- guess area based on node count
   local area = target[3].priority and target[3].priority or 1
   area = max(1, area)
   area = min(20, area)
-  area = area / 10
+  area = (area / 10) + 1
 
-  -- calculate visibility
   local alpha = target[4] - area
   alpha = alpha > 1 and 1 or alpha
-  alpha = alpha < 0 and 0 or alpha
+  alpha = alpha < .25 and .25 or alpha
 
-  local texalpha = 1 - alpha
+  local texalpha = (1 - alpha) * 1.25
   texalpha = texalpha > 1 and 1 or texalpha
   texalpha = texalpha < 0 and 0 or texalpha
+
+  r, g, b = r + texalpha, g + texalpha, b + texalpha
 
   -- calculate difficulty color
   local color = "|cffffcc00"
@@ -270,7 +272,7 @@ pfQuest.route.arrow.texture:SetWidth(32)
 pfQuest.route.arrow.texture:SetHeight(32)
 pfQuest.route.arrow.texture:SetPoint("BOTTOM", 0, 0)
 
-pfQuest.route.arrow.model = pfQuest.route.arrow:CreateTexture("pfQuestRouteArrow", "OVERLAY")
+pfQuest.route.arrow.model = pfQuest.route.arrow:CreateTexture("pfQuestRouteArrow", "MEDIUM")
 pfQuest.route.arrow.model:SetTexture(pfQuestConfig.path.."\\img\\arrow")
 pfQuest.route.arrow.model:SetTexCoord(0,0,0.109375,0.08203125)
 pfQuest.route.arrow.model:SetAllPoints()
