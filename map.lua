@@ -586,6 +586,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
       frame.func        = tab.func
       frame.cluster     = tab.cluster
       frame.description = tab.description
+      frame.priority    = tab.priority
       frame.quest       = tab.quest
       frame.qlvl        = tab.qlvl
 
