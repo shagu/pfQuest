@@ -768,7 +768,6 @@ end
 
 pfMap:RegisterEvent("ZONE_CHANGED")
 pfMap:RegisterEvent("MINIMAP_ZONE_CHANGED")
-pfMap:RegisterEvent("QUEST_WATCH_UPDATE")
 pfMap:RegisterEvent("WORLD_MAP_UPDATE")
 pfMap:SetScript("OnEvent", function()
   -- set map to current zone when possible
@@ -779,7 +778,7 @@ pfMap:SetScript("OnEvent", function()
   end
 
   -- update nodes on map or quest log changes
-  if event == "QUEST_WATCH_UPDATE" or event == "WORLD_MAP_UPDATE" then
+  if event == "WORLD_MAP_UPDATE" then
     pfMap.UpdateNodes()
   end
 end)
