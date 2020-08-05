@@ -212,8 +212,13 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
   local xend = ((column + 1) * 56) / 512
   local yend = ((row + 1) * 42) / 512
 
+  local area = target[3].priority and target[3].priority or 1
+  area = max(1, area)
+  area = min(20, area)
+  area = area / 10
+
   -- calculate visibility
-  local alpha = target[4] - .25
+  local alpha = target[4] - area
   alpha = alpha > 1 and 1 or alpha
   alpha = alpha < 0 and 0 or alpha
 
@@ -247,7 +252,7 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
   end
 
   -- update arrow texts
-  this.title:SetText(color..target[3].title .. "|r")
+  this.title:SetText(color..target[3].title.."|r")
   this.description:SetText(target[3].description or "")
   this.distance:SetText("|cffaaaaaaDistance: "..string.format("%.1f", floor(target[4]*10)/10))
 
