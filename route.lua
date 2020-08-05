@@ -36,7 +36,6 @@ local objectivepath = {}
 -- connection between player and the first objective
 local playerpath = {}
 
-
 local function ClearPath(path)
   for id, tex in pairs(path) do
     tex.enable = nil
@@ -174,6 +173,7 @@ pfQuest.route.arrow:SetScript("OnDragStop", function()
   this:StopMovingOrSizing()
 end)
 
+local invalid
 pfQuest.route.arrow:SetScript("OnUpdate", function()
   local xplayer, yplayer = GetPlayerMapPosition("player")
   local wrongmap = xplayer == 0 and yplayer == 0 and true or nil
@@ -181,8 +181,15 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
 
   -- disable arrow on invalid map/route
   if not target or wrongmap then
-    this:Hide()
+    if invalid and invalid < GetTime() then
+      this:Hide()
+    elseif not invalid then
+      invalid = GetTime() + 1
+    end
+
     return
+  else
+    invalid = nil
   end
 
   local xDelta = target[1] - xplayer*100
