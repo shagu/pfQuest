@@ -213,7 +213,7 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
   local yend = ((row + 1) * 42) / 512
 
   -- calculate visibility
-  local alpha = target[4] - 2
+  local alpha = target[4] - .25
   alpha = alpha > 1 and 1 or alpha
   alpha = alpha < 0 and 0 or alpha
 
@@ -252,7 +252,6 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
   this.distance:SetText("|cffaaaaaaDistance: "..string.format("%.1f", floor(target[4]*10)/10))
 
   -- update transparencies
-  this.distance:SetAlpha(alpha)
   this.texture:SetAlpha(texalpha)
   this.model:SetAlpha(alpha)
 end)
