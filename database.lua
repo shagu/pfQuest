@@ -61,10 +61,10 @@ local function getcluster(tbl, name)
       end
     end
 
-    cache[cacheindex] = { tbl[best.index][1] + .001, tbl[best.index][2] + .001 }
+    cache[cacheindex] = { tbl[best.index][1] + .001, tbl[best.index][2] + .001, count }
   end
 
-  return cache[cacheindex][1], cache[cacheindex][2], count
+  return cache[cacheindex][1], cache[cacheindex][2], cache[cacheindex][3]
 end
 
 -- Detects if a non indexed table is empty
