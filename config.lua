@@ -14,7 +14,7 @@ pfQuest_defconfig = {
 
   ["_General_"] = {
     text = pfQuest_Loc["General"],
-    default = "1", type = "header", pos = { 1, 1 },
+    default = nil, type = "header", pos = { 1, 1 },
   },
   ["worldmapmenu"] = { -- Enable World Map Menu
     text = pfQuest_Loc["Enable World Map Menu"],
@@ -40,43 +40,51 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Show Database IDs"],
     default = "0", type = "checkbox", pos = { 1, 7},
   },
+  ["favonlogin"] = { -- Draw Favorites On Login
+    text = pfQuest_Loc["Draw Favorites On Login"],
+    default = "0", type = "checkbox", pos = { 1, 8 },
+  },
   ["mindropchance"] = { -- Minimum Item Drop Chance
     text = pfQuest_Loc["Minimum Item Drop Chance"],
-    default = "1", type = "text", pos = { 1, 8 },
+    default = "1", type = "text", pos = { 1, 9 },
   },
 
   ["_Map & Minimap_"] = {
     text = pfQuest_Loc["Map & Minimap"],
-    default = "1", type = "header", pos = { 1, 10 },
+    default = nil, type = "header", pos = { 1, 11 },
   },
   ["minimapnodes"] = { -- Enable Minimap Nodes
     text = pfQuest_Loc["Enable Minimap Nodes"],
-    default = "1", type = "checkbox", pos = { 1, 11 },
+    default = "1", type = "checkbox", pos = { 1, 12 },
   },
   ["cutoutminimap"] = { -- Use Cut-Out Minimap Node Icons
     text = pfQuest_Loc["Use Cut-Out Minimap Node Icons"],
-    default = "1", type = "checkbox", pos = { 1, 12 },
+    default = "1", type = "checkbox", pos = { 1, 13 },
+  },
+  ["cutoutworldmap"] = { -- Use Cut-Out World Map Node Icons
+    text = pfQuest_Loc["Use Cut-Out World Map Node Icons"],
+    default = "1", type = "checkbox", pos = { 1, 14 },
   },
   ["spawncolors"] = { -- Color Map Nodes By Spawn
     text = pfQuest_Loc["Color Map Nodes By Spawn"],
-    default = "0", type = "checkbox", pos = { 1, 13 },
+    default = "0", type = "checkbox", pos = { 1, 15 },
   },
   ["worldmaptransp"] = { -- World Map Node Transparency
     text = pfQuest_Loc["World Map Node Transparency"],
-    default = "1.0", type = "text", pos = { 1, 14 },
+    default = "1.0", type = "text", pos = { 1, 16 },
   },
   ["minimaptransp"] = { -- Minimap Node Transparency
     text = pfQuest_Loc["Minimap Node Transparency"],
-    default = "1.0", type = "text", pos = { 1, 15 },
+    default = "1.0", type = "text", pos = { 1, 17 },
   },
   ["mouseover"] = { -- Highlight Nodes On Mouseover
     text = pfQuest_Loc["Highlight Nodes On Mouseover"],
-    default = "1", type = "checkbox", pos = { 1, 16 },
+    default = "1", type = "checkbox", pos = { 1, 18 },
   },
 
   ["_Questing_"] = {
     text = pfQuest_Loc["Questing"],
-    default = "1", type = "header", pos = { 2, 1 },
+    default = nil, type = "header", pos = { 2, 1 },
   },
   ["showcluster"] = { -- Unified Quest Location Markers
     text = pfQuest_Loc["Unified Quest Location Markers"],
@@ -103,26 +111,38 @@ pfQuest_defconfig = {
     default = "0", type = "checkbox", pos = { 2, 7 },
   },
 
+  ["_Routes_"] = {
+    text = pfQuest_Loc["Routes"],
+    default = nil, type = "header", pos = { 2, 9 },
+  },
+  ["arrow"] = { -- Show Arrow Along Routes
+    text = pfQuest_Loc["Show Arrow Along Routes"],
+    default = "1", type = "checkbox", pos = { 2, 10 },
+  },
+  ["routes"] = { -- Show Route Between Objects
+    text = pfQuest_Loc["Show Route Between Objects"],
+    default = "1", type = "checkbox", pos = { 2, 11 },
+  },
+  ["routecluster"] = { -- Include Unified Quest Locations
+    text = pfQuest_Loc["Include Unified Quest Locations"],
+    default = "1", type = "checkbox", pos = { 2, 12 },
+  },
+  ["routeender"] = { -- Include Quest Enders
+    text = pfQuest_Loc["Include Quest Enders"],
+    default = "1", type = "checkbox", pos = { 2, 13 },
+  },
+  ["routestarter"] = { -- Include Quest Starters
+    text = pfQuest_Loc["Include Quest Starters"],
+    default = "0", type = "checkbox", pos = { 2, 14 },
+  },
+
   ["_User Data_"] = {
     text = pfQuest_Loc["User Data"],
-    default = "1", type = "header", pos = { 2, 9 },
-  },
-  ["btn_settings"] = {
-    text = pfQuest_Loc["Reset Settings"],
-    default = "1", type = "button", pos = { 2, 10 }, func = function()
-      local dialog = StaticPopupDialogs["PFQUEST_RESET"]
-      dialog.text = pfQuest_Loc["Do you really want to reset to defaults?"]
-      dialog.OnAccept = function()
-        pfQuest_config = nil
-        ReloadUI()
-      end
-
-      StaticPopup_Show("PFQUEST_RESET")
-    end
+    default = nil, type = "header", pos = { 2, 16 },
   },
   ["btn_history"] = {
     text = pfQuest_Loc["Reset Quest History"],
-    default = "1", type = "button", pos = { 2, 11 }, func = function()
+    default = "1", type = "button", pos = { 2, 17 }, func = function()
       local dialog = StaticPopupDialogs["PFQUEST_RESET"]
       dialog.text = pfQuest_Loc["Do you really want to reset the quest history?"]
       dialog.OnAccept = function()
@@ -135,7 +155,7 @@ pfQuest_defconfig = {
   },
   ["btn_everything"] = {
     text = pfQuest_Loc["Reset Everything"],
-    default = "1", type = "button", pos = { 2, 12 }, func = function()
+    default = "1", type = "button", pos = { 2, 18 }, func = function()
       local dialog = StaticPopupDialogs["PFQUEST_RESET"]
       dialog.text = pfQuest_Loc["Do you really want to reset everything?"]
       dialog.OnAccept = function()
@@ -380,5 +400,5 @@ function pfQuestConfig:CreateConfigEntries(config)
 
   local spacer = (maxw-1)*20
   pfQuestConfig:SetWidth(maxw*width + spacer + 20)
-  pfQuestConfig:SetHeight(maxh*height + 120)
+  pfQuestConfig:SetHeight(maxh*height + 100)
 end
