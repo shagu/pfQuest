@@ -623,6 +623,8 @@ function pfMap:UpdateNode(frame, node, color, obj)
   if ( frame.updateColor or frame.updateTexture or not frame.tex:GetTexture() ) and not frame.texture then
     if obj == "minimap" and pfQuest_config["cutoutminimap"] == "1" then
       frame.tex:SetTexture(pfQuestConfig.path.."\\img\\nodecut")
+    elseif obj ~= "minimap" and pfQuest_config["cutoutworldmap"] == "1" then
+      frame.tex:SetTexture(pfQuestConfig.path.."\\img\\nodecut")
     else
       frame.tex:SetTexture(pfQuestConfig.path.."\\img\\node")
     end
