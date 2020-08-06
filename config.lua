@@ -7,26 +7,86 @@ pfQuest_config = {}
 
 -- default config
 pfQuest_defconfig = {
-  ["trackingmethod"] = 1, -- 1: All Quests; 2: Tracked; 3: Manual; 4: Hide
-  ["allquestgivers"] = "1", -- Show Available Questgivers
-  ["currentquestgivers"] = "1", -- Show Current Questgiver Nodes
-  ["showlowlevel"] = "0", -- Show Lowlevel Questgiver Nodes
-  ["showhighlevel"] = "1", -- Show Level+3 Questgiver Nodes
-  ["showfestival"] = "0", -- Show Event Questgiver Nodes
-  ["minimapnodes"] = "1", -- Show MiniMap Nodes
-  ["cutoutminimap"] = "1", -- Use Cut-Out Minimap Node Icon
-  ["questlogbuttons"] = "1", -- Show QuestLog Buttons
-  ["worldmapmenu"] = "1", -- Show WorldMap Menu
-  ["minimapbutton"] = "1", -- Show MiniMap Button
-  ["showids"] = "0", -- Show IDs
-  ["spawncolors"] = "0", -- Color Map Nodes By Spawn
-  ["questlinks"] = "1", -- Enable Quest Links
-  ["worldmaptransp"] = "1.0", -- WorldMap Node Transparency
-  ["minimaptransp"] = "1.0", -- MiniMap Node Transparency
-  ["mindropchance"] = "1", -- Minimum Drop Chance
-  ["mouseover"] = "1", -- Highlight Nodes On Mouseover
-  ["showtracker"] = "1", -- Show Map Tracker
-  ["showcluster"] = "1", -- Show Quest Clusters
+  ["trackingmethod"] = {
+    -- 1: All Quests; 2: Tracked; 3: Manual; 4: Hide
+    text = nil, default = 1, type = nil, pos = nil,
+  },
+  ["allquestgivers"] = {
+    text = pfQuest_Loc["Display Available Questgivers"],
+    default = "1", type = "checkbox", pos = {},
+  },
+  ["currentquestgivers"] = { -- Show Current Questgiver Nodes
+    text = pfQuest_Loc["Display Current Questgivers"],
+    default = "1", type = "checkbox", pos = {},
+  },
+  ["showlowlevel"] = { -- Show Lowlevel Questgiver Nodes
+    text = pfQuest_Loc["Display Lowlevel Questgivers"],
+    default = "0", type = "checkbox", pos = {},
+  },
+  ["showhighlevel"] = { -- Show Level+3 Questgiver Nodes
+    text = pfQuest_Loc["Display Level+3 Questgivers"],
+    default = "1", type = "checkbox", pos = {},
+  },
+  ["showfestival"] = { -- Show Event Questgiver Nodes
+    text = pfQuest_Loc["Display Event & Daily Quests"],
+    default = "0", type = "checkbox", pos = {},
+  },
+  ["minimapnodes"] = { -- Show MiniMap Nodes
+    text = pfQuest_Loc["Show MiniMap Nodes"],
+    default = "1", type = "checkbox", pos = {},
+  },
+  ["cutoutminimap"] = { -- Use Cut-Out Minimap Node Icon
+    text = pfQuest_Loc["Use Cut-Out MiniMap Node Icons"],
+    default = "1", type = "checkbox", pos = {},
+  },
+  ["questlogbuttons"] = { -- Show QuestLog Buttons
+    text = pfQuest_Loc["Show QuestLog Buttons"],
+    default = "1", type = "checkbox", pos = {},
+  },
+  ["worldmapmenu"] = { -- Show WorldMap Menu
+    text = pfQuest_Loc["Show WorldMap Menu"],
+    default = "1", type = "checkbox", pos = {},
+  },
+  ["minimapbutton"] = { -- Show MiniMap Button
+    text = pfQuest_Loc["Show MiniMap Button"],
+    default = "1", type = "checkbox", pos = {},
+  },
+  ["showids"] = { -- Show IDs
+    text = pfQuest_Loc["Show IDs"],
+    default = "0", type = "checkbox", pos = {},
+  },
+  ["spawncolors"] = { -- Color Map Nodes By Spawn
+    text = pfQuest_Loc["Color Map Nodes By Spawn"],
+    default = "0", type = "checkbox", pos = {},
+  },
+  ["questlinks"] = { -- Enable Quest Links
+    text = pfQuest_Loc["Enable Quest Links"],
+    default = "1", type = "checkbox", pos = {},
+  },
+  ["worldmaptransp"] = { -- WorldMap Node Transparency
+    text = pfQuest_Loc["WorldMap Node Transparency"],
+    default = "1.0", type = "text", pos = {},
+  },
+  ["minimaptransp"] = { -- MiniMap Node Transparency
+    text = pfQuest_Loc["MiniMap Node Transparency"],
+    default = "1.0", type = "text", pos = {},
+  },
+  ["mindropchance"] = { -- Minimum Drop Chance
+    text = pfQuest_Loc["Minimum Drop Chance"],
+    default = "1", type = "text", pos = {},
+  },
+  ["mouseover"] = { -- Highlight Nodes On Mouseover
+    text = pfQuest_Loc["Highlight Nodes On Mouseover"],
+    default = "1", type = "checkbox", pos = {},
+  },
+  ["showtracker"] = { -- Show Map Tracker
+    text = pfQuest_Loc["Show Quest Tracker"],
+    default = "1", type = "checkbox", pos = {},
+  },
+  ["showcluster"] = { -- Show Quest Clusters
+    text = pfQuest_Loc["Unified Quest Location Marker"],
+    default = "1", type = "checkbox", pos = {},
+  },
 }
 
 StaticPopupDialogs["PFQUEST_RESET"] = {
@@ -56,24 +116,11 @@ pfQuestConfig:SetScript("OnEvent", function()
     pfQuest_config = pfQuest_config or {}
     pfBrowser_fav = pfBrowser_fav or {["units"] = {}, ["objects"] = {}, ["items"] = {}, ["quests"] = {}}
 
-    pfQuestConfig:CreateConfigEntry("showcluster",         pfQuest_Loc["Unified Quest Location Marker"],  "checkbox")
-    pfQuestConfig:CreateConfigEntry("allquestgivers",      pfQuest_Loc["Display Available Questgivers"],  "checkbox")
-    pfQuestConfig:CreateConfigEntry("currentquestgivers",  pfQuest_Loc["Display Current Questgivers"],    "checkbox")
-    pfQuestConfig:CreateConfigEntry("showlowlevel",        pfQuest_Loc["Display Lowlevel Questgivers"],   "checkbox")
-    pfQuestConfig:CreateConfigEntry("showhighlevel",       pfQuest_Loc["Display Level+3 Questgivers"],    "checkbox")
-    pfQuestConfig:CreateConfigEntry("showfestival",        pfQuest_Loc["Display Event & Daily Quests"],   "checkbox")
-    pfQuestConfig:CreateConfigEntry("minimapnodes",        pfQuest_Loc["Show MiniMap Nodes"],             "checkbox")
-    pfQuestConfig:CreateConfigEntry("cutoutminimap",       pfQuest_Loc["Use Cut-Out MiniMap Node Icons"], "checkbox")
-    pfQuestConfig:CreateConfigEntry("questlogbuttons",     pfQuest_Loc["Show QuestLog Buttons"],          "checkbox")
-    pfQuestConfig:CreateConfigEntry("worldmapmenu",        pfQuest_Loc["Show WorldMap Menu"],             "checkbox")
-    pfQuestConfig:CreateConfigEntry("minimapbutton",       pfQuest_Loc["Show MiniMap Button"],            "checkbox")
-    pfQuestConfig:CreateConfigEntry("showids",             pfQuest_Loc["Show IDs"],                       "checkbox")
-    pfQuestConfig:CreateConfigEntry("spawncolors",         pfQuest_Loc["Color Map Nodes By Spawn"],       "checkbox")
-    pfQuestConfig:CreateConfigEntry("questlinks",          pfQuest_Loc["Enable Quest Links"],             "checkbox")
-    pfQuestConfig:CreateConfigEntry("mouseover",           pfQuest_Loc["Highlight Nodes On Mouseover"],   "checkbox")
-    pfQuestConfig:CreateConfigEntry("worldmaptransp",      pfQuest_Loc["WorldMap Node Transparency"],     "text")
-    pfQuestConfig:CreateConfigEntry("minimaptransp",       pfQuest_Loc["MiniMap Node Transparency"],      "text")
-    pfQuestConfig:CreateConfigEntry("mindropchance",       pfQuest_Loc["Minimum Drop Chance"],            "text")
+    for opt, data in pairs(pfQuest_defconfig) do
+      if data.text and data.type then
+        pfQuestConfig:CreateConfigEntry(opt, data.text, data.type)
+      end
+    end
 
     if pfBrowserIcon and pfQuest_config["minimapbutton"] == "0" then
       pfBrowserIcon:Hide()
@@ -184,9 +231,9 @@ pfUI.api.SkinButton(pfQuestConfig.reset)
 function pfQuestConfig:LoadConfig()
   if not pfQuest_config then pfQuest_config = {} end
 
-  for key, val in pairs(pfQuest_defconfig) do
-    if not pfQuest_config[key] then
-      pfQuest_config[key] = val
+  for opt, data in pairs(pfQuest_defconfig) do
+    if not pfQuest_config[opt] then
+      pfQuest_config[key] = data.default
     end
   end
 end
