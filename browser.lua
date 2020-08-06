@@ -627,6 +627,31 @@ pfBrowser:SetPoint("CENTER", 0, 0)
 pfBrowser:SetFrameStrata("FULLSCREEN_DIALOG")
 pfBrowser:SetMovable(true)
 pfBrowser:EnableMouse(true)
+pfBrowser:RegisterEvent("PLAYER_ENTERING_WORLD")
+pfBrowser:SetScript("OnEvent", function()
+  -- show all favorites on login if configured
+  if pfQuest_config.favonlogin == "1" then
+    -- search units
+    for id, name in pairs(pfBrowser_fav.units) do
+      pfDatabase:SearchMobID(id)
+    end
+
+    -- search objects
+    for id, name in pairs(pfBrowser_fav.objects) do
+      pfDatabase:SearchObjectID(id)
+    end
+
+    -- search items
+    for id, name in pairs(pfBrowser_fav.items) do
+      pfDatabase:SearchItemID(id)
+    end
+
+    -- search quests
+    for id, name in pairs(pfBrowser_fav.quests) do
+      pfDatabase:SearchQuestID(id)
+    end
+  end
+end)
 pfBrowser:SetScript("OnMouseDown",function()
   this:StartMoving()
 end)
