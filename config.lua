@@ -63,7 +63,7 @@ pfQuest_defconfig = {
   },
   ["cutoutworldmap"] = { -- Use Cut-Out World Map Node Icons
     text = pfQuest_Loc["Use Cut-Out World Map Node Icons"],
-    default = "1", type = "checkbox", pos = { 1, 14 },
+    default = "0", type = "checkbox", pos = { 1, 14 },
   },
   ["spawncolors"] = { -- Color Map Nodes By Spawn
     text = pfQuest_Loc["Color Map Nodes By Spawn"],
