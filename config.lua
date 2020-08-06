@@ -115,12 +115,12 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Routes"],
     default = nil, type = "header", pos = { 2, 9 },
   },
-  ["arrow"] = { -- Show Arrow Along Routes
-    text = pfQuest_Loc["Show Arrow Along Routes"],
-    default = "1", type = "checkbox", pos = { 2, 10 },
-  },
   ["routes"] = { -- Show Route Between Objects
     text = pfQuest_Loc["Show Route Between Objects"],
+    default = "1", type = "checkbox", pos = { 2, 10 },
+  },
+  ["arrow"] = { -- Show Arrow Along Routes
+    text = pfQuest_Loc["Show Arrow Along Routes"],
     default = "1", type = "checkbox", pos = { 2, 11 },
   },
   ["routecluster"] = { -- Include Unified Quest Locations

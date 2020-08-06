@@ -111,8 +111,13 @@ pfQuest.route:SetScript("OnUpdate", function()
   -- sort all coords by distance
   table.sort(this.coords, function(a,b) return a[4] < b[4] end)
 
+  -- show arrow when route exists and is stable
+  if not wrongmap and this.coords[1] and this.coords[1][4] and not this.arrow:IsShown() and GetTime() > completed + 1 then
+    this.arrow:Show()
+  end
+
   -- abort without any nodes or distances
-  if not this.coords[1] or not this.coords[1][4] then
+  if not this.coords[1] or not this.coords[1][4] or pfQuest_config["routes"] == "0" then
     ClearPath(objectivepath)
     ClearPath(playerpath)
     return
@@ -147,11 +152,6 @@ pfQuest.route:SetScript("OnUpdate", function()
     -- draw player-to-object path
     ClearPath(playerpath)
     DrawLine(playerpath,xplayer*100,yplayer*100,this.coords[1][1],this.coords[1][2],true)
-  end
-
-  -- show arrow when route exists and is stable
-  if not wrongmap and this.coords[1] and this.coords[1][4] and not this.arrow:IsShown() and GetTime() > completed + 1 then
-    this.arrow:Show()
   end
 end)
 
