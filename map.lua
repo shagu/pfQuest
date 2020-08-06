@@ -668,7 +668,10 @@ function pfMap:UpdateNodes()
         local _, _, x, y = strfind(coords, "(.*)|(.*)")
 
         -- write points to the route plan
-        if pfMap.pins[i].layer >= 9 or pfMap.pins[i].layer == 4 then
+        if ( pfQuest_config["routecluster"] == "1" and pfMap.pins[i].layer >= 9 ) or
+          ( pfQuest_config["routeender"] == "1" and pfMap.pins[i].layer == 4) or
+          ( pfQuest_config["routestarter"] == "1" and pfMap.pins[i].layer == 2)
+        then
           pfQuest.route:AddPoint({ x, y, pfMap.pins[i] })
         end
 
