@@ -41,6 +41,8 @@ if pfUI.api and pfUI.api.strsplit and pfUI.api.CreateBackdrop and
      return
 end
 
+pfUI.api.emulated = true
+
 function pfUI.api.strsplit(delimiter, subject)
   if not subject then return nil end
   local delimiter, fields = delimiter or ":", {}
