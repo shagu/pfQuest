@@ -35,12 +35,13 @@ for loc in $locales; do
       orig=$(sed -n "${lnr}p" translation_reference.txt)
       new=$(sed -n "${lnr}p" translation_$loc.txt)
 
-      if [ "$new" != "" ] && [ "$new" != "$orig" ]; then
+      if [ "$lnr" != "" ] && [ "$new" != "" ] && [ "$new" != "$orig" ]; then
         writable="    [\"$entry\"] = \"$new\","
       fi
     else
-      echo $entry >> translation_reference.txt
-      echo $entry >> translation_$loc.txt
+      :
+      # echo $entry >> translation_reference.txt
+      # echo $entry >> translation_$loc.txt
     fi
 
     # write to new file

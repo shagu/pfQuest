@@ -16,8 +16,8 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["General"],
     default = "1", type = "header", pos = { 1, 1 },
   },
-  ["worldmapmenu"] = { -- Enable Worldmap Menu
-    text = pfQuest_Loc["Enable Worldmap Menu"],
+  ["worldmapmenu"] = { -- Enable World Map Menu
+    text = pfQuest_Loc["Enable World Map Menu"],
     default = "1", type = "checkbox", pos = { 1, 2 },
   },
   ["minimapbutton"] = { -- Enable Minimap Button
@@ -61,8 +61,8 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Color Map Nodes By Spawn"],
     default = "0", type = "checkbox", pos = { 1, 13 },
   },
-  ["worldmaptransp"] = { -- Worldmap Node Transparency
-    text = pfQuest_Loc["Worldmap Node Transparency"],
+  ["worldmaptransp"] = { -- World Map Node Transparency
+    text = pfQuest_Loc["World Map Node Transparency"],
     default = "1.0", type = "text", pos = { 1, 14 },
   },
   ["minimaptransp"] = { -- Minimap Node Transparency
@@ -82,20 +82,20 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Unified Quest Location Markers"],
     default = "1", type = "checkbox", pos = { 2, 2 },
   },
-  ["allquestgivers"] = { -- Display Available Questgivers
-    text = pfQuest_Loc["Display Available Questgivers"],
+  ["allquestgivers"] = { -- Display Available Quest Givers
+    text = pfQuest_Loc["Display Available Quest Givers"],
     default = "1", type = "checkbox", pos = { 2, 3 },
   },
-  ["currentquestgivers"] = { -- Display Current Questgivers
-    text = pfQuest_Loc["Display Current Questgivers"],
+  ["currentquestgivers"] = { -- Display Current Quest Givers
+    text = pfQuest_Loc["Display Current Quest Givers"],
     default = "1", type = "checkbox", pos = { 2, 4 },
   },
-  ["showlowlevel"] = { -- Display Lowlevel Questgivers
-    text = pfQuest_Loc["Display Lowlevel Questgivers"],
+  ["showlowlevel"] = { -- Display Low Level Quest Givers
+    text = pfQuest_Loc["Display Low Level Quest Givers"],
     default = "0", type = "checkbox", pos = { 2, 5 },
   },
   ["showhighlevel"] = { -- Display Level+3 Questgivers
-    text = pfQuest_Loc["Display Level+3 Questgivers"],
+    text = pfQuest_Loc["Display Level+3 Quest Givers"],
     default = "1", type = "checkbox", pos = { 2, 6 },
   },
   ["showfestival"] = { -- Display Event & Daily Quests
