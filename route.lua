@@ -112,7 +112,7 @@ pfQuest.route:SetScript("OnUpdate", function()
   table.sort(this.coords, function(a,b) return a[4] < b[4] end)
 
   -- show arrow when route exists and is stable
-  if not wrongmap and this.coords[1] and this.coords[1][4] and not this.arrow:IsShown() and GetTime() > completed + 1 then
+  if not wrongmap and this.coords[1] and this.coords[1][4] and not this.arrow:IsShown() and pfQuest_config["arrow"] == "1" and GetTime() > completed + 1 then
     this.arrow:Show()
   end
 
@@ -184,7 +184,7 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
   local target = this.parent.coords and this.parent.coords[1] and this.parent.coords[1][4] and this.parent.coords[1] or nil
 
   -- disable arrow on invalid map/route
-  if not target or wrongmap then
+  if not target or wrongmap or pfQuest_config["arrow"] == "0" then
     if invalid and invalid < GetTime() then
       this:Hide()
     elseif not invalid then
