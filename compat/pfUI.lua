@@ -73,7 +73,7 @@ function pfUI.api.SanitizePattern(pattern, dbg)
 end
 
 local er, eg, eb, ea = .4,.4,.4,1
-local br, bg, bb, ba = 0,0,0,.8
+local br, bg, bb, ba = 0,0,0,1
 function pfUI.api.CreateBackdrop(f, inset, legacy, transp)
   -- exit if now frame was given
   if not f then return end
