@@ -1180,6 +1180,7 @@ function pfDatabase:SearchQuests(meta, maps)
       if quests[id]["start"] then
         -- units
         if quests[id]["start"]["U"] then
+          meta["QTYPE"] = "NPC_START"
           for _, unit in pairs(quests[id]["start"]["U"]) do
             if units[unit] and strfind(units[unit]["fac"] or pfaction, pfaction) then
               maps = pfDatabase:SearchMobID(unit, meta, maps)
@@ -1189,6 +1190,7 @@ function pfDatabase:SearchQuests(meta, maps)
 
         -- objects
         if quests[id]["start"]["O"] then
+          meta["QTYPE"] = "OBJECT_START"
           for _, object in pairs(quests[id]["start"]["O"]) do
             if objects[object] and strfind(objects[object]["fac"] or pfaction, pfaction) then
               maps = pfDatabase:SearchObjectID(object, meta, maps)
