@@ -480,7 +480,7 @@ for _, expansion in pairs(config.expansions) do
       do -- coordinates
         pfDB["areatrigger"][data][entry]["coords"] = {}
         for id, coords in pairs(GetAreaTriggerCoords(entry)) do
-          local x, y, zone, respawn = unpack(coords)
+          local x, y, zone, respawn = table.unpack(coords)
           table.insert(pfDB["areatrigger"][data][entry]["coords"], { x, y, zone, respawn })
         end
       end
@@ -538,7 +538,7 @@ for _, expansion in pairs(config.expansions) do
         pfDB["units"][data][entry]["coords"] = {}
 
         for id, coords in pairs(GetCreatureCoords(entry)) do
-          local x, y, zone, respawn = unpack(coords)
+          local x, y, zone, respawn = table.unpack(coords)
           if debug("units_coords") then break end
           table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
         end
@@ -560,7 +560,7 @@ for _, expansion in pairs(config.expansions) do
               if debug("units_summoned") then break end
               local object = gameobject_template.entry
               for id, coords in pairs(GetGameObjectCoords(object)) do
-                local x, y, zone, respawn = unpack(coords)
+                local x, y, zone, respawn = table.unpack(coords)
                 table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
               end
             end
@@ -614,7 +614,7 @@ for _, expansion in pairs(config.expansions) do
 
         for id,coords in pairs(GetGameObjectCoords(entry)) do
           if debug("objects_coords") then break end
-          local x, y, zone, respawn = unpack(coords)
+          local x, y, zone, respawn = table.unpack(coords)
           table.insert(pfDB["objects"][data][entry]["coords"], { x, y, zone, respawn })
         end
       end
