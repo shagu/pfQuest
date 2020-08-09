@@ -119,20 +119,20 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Show Route Between Objects"],
     default = "1", type = "checkbox", pos = { 2, 10 },
   },
-  ["arrow"] = { -- Show Arrow Along Routes
-    text = pfQuest_Loc["Show Arrow Along Routes"],
-    default = "1", type = "checkbox", pos = { 2, 11 },
-  },
   ["routecluster"] = { -- Include Unified Quest Locations
     text = pfQuest_Loc["Include Unified Quest Locations"],
-    default = "1", type = "checkbox", pos = { 2, 12 },
+    default = "1", type = "checkbox", pos = { 2, 11 },
   },
   ["routeender"] = { -- Include Quest Enders
     text = pfQuest_Loc["Include Quest Enders"],
-    default = "1", type = "checkbox", pos = { 2, 13 },
+    default = "1", type = "checkbox", pos = { 2, 12 },
   },
   ["routestarter"] = { -- Include Quest Starters
     text = pfQuest_Loc["Include Quest Starters"],
+    default = "0", type = "checkbox", pos = { 2, 13 },
+  },
+  ["arrow"] = { -- Show Arrow Along Routes
+    text = pfQuest_Loc["Show Arrow Along Routes"],
     default = "0", type = "checkbox", pos = { 2, 14 },
   },
 
