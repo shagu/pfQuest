@@ -224,9 +224,9 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
 
   local alpha = target[4] - area
   alpha = alpha > 1 and 1 or alpha
-  alpha = alpha < .25 and .25 or alpha
+  alpha = alpha < .5 and .5 or alpha
 
-  local texalpha = (1 - alpha) * 1.25
+  local texalpha = (1 - alpha) * 2
   texalpha = texalpha > 1 and 1 or texalpha
   texalpha = texalpha < 0 and 0 or texalpha
 
