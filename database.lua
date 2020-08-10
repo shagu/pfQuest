@@ -1055,7 +1055,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
             meta["x"], meta["y"], meta["priority"] = getcluster(data.coords, meta["quest"]..hash..map)
             meta["texture"] = pfQuestConfig.path.."\\img\\cluster_item"
             pfMap:AddNode(meta, true)
-          elseif meta.spawn and meta.spawn ~= pfQuest_Loc["Exploration Mark"] then
+          elseif meta.spawntype and meta.spawntype == "Unit" and meta.spawn and not meta.itemreq then
             meta["x"], meta["y"], meta["priority"] = getcluster(data.coords, meta["quest"]..hash..map)
             meta["texture"] = pfQuestConfig.path.."\\img\\cluster_mob"
             pfMap:AddNode(meta, true)
