@@ -210,6 +210,8 @@ function pfDatabase:BuildQuestDescription(meta)
     return string.format(pfQuest_Loc["Kill |cff33ffcc%s|r"], meta.spawn)
   elseif meta.QTYPE == "OBJECT_OBJECTIVE" then
     return string.format(pfQuest_Loc["Interact with |cff33ffcc%s|r"], meta.spawn)
+  elseif meta.QTYPE == "OBJECT_OBJECTIVE_ITEMREQ" then
+    return string.format(pfQuest_Loc["Use |cff33ffcc%s|r at |cff33ffcc%s|r"], meta.itemreq, meta.spawn)
   elseif meta.QTYPE == "ITEM_OBJECTIVE_LOOT" then
     return string.format(pfQuest_Loc["Loot |cff33ffcc%s|r from |cff33ffcc%s|r"], meta.item, meta.spawn)
   elseif meta.QTYPE == "ITEM_OBJECTIVE_USE" then
