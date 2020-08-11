@@ -4,7 +4,7 @@ local compat = pfQuestCompat
 pfDatabase = {}
 
 local loc = GetLocale()
-local dbs = { "items", "quests", "objects", "units", "zones", "professions", "areatrigger", "refloot" }
+local dbs = { "items", "quests", "objects", "units", "zones", "professions", "areatrigger", "refloot", "requirements" }
 local noloc = { "items", "quests", "objects", "units" }
 
 pfDB.locales = {
@@ -165,6 +165,7 @@ local objects = pfDB["objects"]["data"]
 local quests = pfDB["quests"]["data"]
 local zones = pfDB["zones"]["data"]
 local refloot = pfDB["refloot"]["data"]
+local requirements = pfDB["requirements"]["data"]
 local areatrigger = pfDB["areatrigger"]["data"]
 local professions = pfDB["professions"]["loc"]
 
@@ -991,10 +992,28 @@ function pfDatabase:SearchQuestID(id, meta, maps)
     if quests[id]["obj"]["O"] then
       for _, object in pairs(quests[id]["obj"]["O"]) do
         if not parse_obj["O"][object] or parse_obj["O"][object] ~= "DONE" then
+
+          local requirement -- search for item requirements
+          if quests[id]["obj"]["I"] then
+            for _, item in pairs(quests[id]["obj"]["I"]) do
+              if requirements[item][object] then
+                requirement = pfDB["items"]["loc"][item] or UNKNOWN
+                break
+              end
+            end
+          end
+
           meta = meta or {}
           meta["texture"] = nil
           meta["layer"] = 2
-          meta["QTYPE"] = "OBJECT_OBJECTIVE"
+
+          if requirement then
+            meta.itemreq = requirement
+            meta["QTYPE"] = "OBJECT_OBJECTIVE_ITEMREQ"
+          else
+            meta["QTYPE"] = "OBJECT_OBJECTIVE"
+          end
+
           maps = pfDatabase:SearchObjectID(object, meta, maps)
         end
       end
