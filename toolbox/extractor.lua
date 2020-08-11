@@ -58,8 +58,6 @@ local debugsql = {
 
 -- limit all sql loops
 local limit = nil
-local count = -1
-
 function debug(name)
   -- count sql debugs
   debugsql[name][2] = debugsql[name][2] or 0
@@ -67,15 +65,7 @@ function debug(name)
 
   -- abort here when no debug limit is set
   if not limit then return nil end
-
-  if count == -1 then count = limit end
-  if count == 0 then
-    count = -1
-    return true
-  end
-
-  count = count -1
-  return nil
+  return debugsql[name][2] > limit or nil
 end
 
 function debug_statistics()
