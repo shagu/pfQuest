@@ -40,6 +40,8 @@ local debugsql = {
   ["quests_enderunit"] = { "Using mangos data to search for quest ender units" },
   ["quests_enderobject"] = { "Using mangos data to search for quest ender objects" },
   --
+  ["requirements_object_spell_item"] = { "Using mangos database to search for items providing a spell for the object" },
+  --
   ["zones"] = { "Using client data to read zone data" },
   --
   ["minimap"] = { "Using client data to read minimap zoom levels" },
@@ -978,6 +980,36 @@ for _, expansion in pairs(config.expansions) do
     end
   end
 
+  do -- requirements
+    print("- loading requirements...")
+
+    pfDB["requirements"] = pfDB["requirements"] or {}
+    pfDB["requirements"][data] = {}
+
+    local object_item_spells = {}
+    local query = mysql:execute([[
+      SELECT spell_template.]]..C.Id..[[ AS spell, gameobject_template.entry AS object, item_template.entry AS item
+      FROM spell_template, gameobject_template, item_template
+      WHERE spell_template.requiresSpellFocus = gameobject_template.data0
+        AND gameobject_template.data0 > 0
+        AND gameobject_template.type = 8
+        AND (( item_template.spellid_1 = spell_template.]]..C.Id..[[ AND item_template.spelltrigger_1 = 0)
+          OR ( item_template.spellid_2 = spell_template.]]..C.Id..[[ AND item_template.spelltrigger_2 = 0)
+          OR ( item_template.spellid_3 = spell_template.]]..C.Id..[[ AND item_template.spelltrigger_3 = 0)
+          OR ( item_template.spellid_4 = spell_template.]]..C.Id..[[ AND item_template.spelltrigger_4 = 0)
+          OR ( item_template.spellid_5 = spell_template.]]..C.Id..[[ AND item_template.spelltrigger_5 = 0)
+        );
+    ]])
+    while query:fetch(object_item_spells, "a") do
+      if debug("requirements_object_spell_item") then break end
+      local spell = tonumber(object_item_spells.spell)
+      local object = tonumber(object_item_spells.object)
+      local item = tonumber(object_item_spells.item)
+      pfDB["requirements"][data][item] = pfDB["requirements"][data][item] or {}
+      pfDB["requirements"][data][item][object] = spell
+    end
+  end
+
   do -- zones
     print("- loading zones...")
     pfDB["zones"] = pfDB["zones"] or {}
@@ -1264,6 +1296,7 @@ for _, expansion in pairs(config.expansions) do
     pfDB["items"][data] = tablesubstract(pfDB["items"][data], pfDB["items"][prev_data])
     pfDB["refloot"][data] = tablesubstract(pfDB["refloot"][data], pfDB["refloot"][prev_data])
     pfDB["quests"][data] = tablesubstract(pfDB["quests"][data], pfDB["quests"][prev_data])
+    pfDB["requirements"][data] = tablesubstract(pfDB["requirements"][data], pfDB["requirements"][prev_data])
     pfDB["zones"][data] = tablesubstract(pfDB["zones"][data], pfDB["zones"][prev_data])
     pfDB["minimap"..exp] = tablesubstract(pfDB["minimap"..exp], pfDB["minimap"..prev_exp])
     pfDB["meta"..exp] = tablesubstract(pfDB["meta"..exp], pfDB["meta"..prev_exp])
@@ -1294,6 +1327,7 @@ for _, expansion in pairs(config.expansions) do
   serialize(string.format("output/items%s.lua", exp), "pfDB[\"items\"][\""..data.."\"]", pfDB["items"][data])
   serialize(string.format("output/refloot%s.lua", exp), "pfDB[\"refloot\"][\""..data.."\"]", pfDB["refloot"][data])
   serialize(string.format("output/quests%s.lua", exp), "pfDB[\"quests\"][\""..data.."\"]", pfDB["quests"][data])
+  serialize(string.format("output/requirements%s.lua", exp), "pfDB[\"requirements\"][\""..data.."\"]", pfDB["requirements"][data])
   serialize(string.format("output/zones%s.lua", exp), "pfDB[\"zones\"][\""..data.."\"]", pfDB["zones"][data])
   serialize(string.format("output/minimap%s.lua", exp), "pfDB[\"minimap"..exp.."\"]", pfDB["minimap"..exp])
   serialize(string.format("output/meta%s.lua", exp), "pfDB[\"meta"..exp.."\"]", pfDB["meta"..exp])
