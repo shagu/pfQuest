@@ -4,6 +4,7 @@
   <Include file="..\db\units.lua"/>
   <Include file="..\db\objects.lua"/>
   <Include file="..\db\refloot.lua"/>
+  <Include file="..\db\requirements.lua"/>
   <Include file="..\db\quests.lua"/>
   <Include file="..\db\zones.lua"/>
   <Include file="..\db\minimap.lua"/>
