@@ -209,8 +209,8 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
     invalid = nil
   end
 
-  local xDelta = target[1] - xplayer*100
-  local yDelta = target[2] - yplayer*100
+  local xDelta = (target[1] - xplayer*100)*1.5
+  local yDelta = (target[2] - yplayer*100)
   local dir = atan2(xDelta, -(yDelta))
   dir = dir > 0 and (math.pi*2) - dir or -dir
 
