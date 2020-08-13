@@ -209,6 +209,9 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
     invalid = nil
   end
 
+  -- arrow positioning stolen from TomTomVanilla.
+  -- all credits to the original authors:
+  -- https://github.com/cralor/TomTomVanilla
   local xDelta = (target[1] - xplayer*100)*1.5
   local yDelta = (target[2] - yplayer*100)
   local dir = atan2(xDelta, -(yDelta))
