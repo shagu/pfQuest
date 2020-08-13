@@ -105,7 +105,7 @@ pfQuest.route:SetScript("OnUpdate", function()
   -- update distances to player
   for id, data in pairs(this.coords) do
     if data[1] and data[2] then
-      local x, y = xplayer*100 - data[1], yplayer*100 - data[2]
+      local x, y = (xplayer*100 - data[1])*1.5, yplayer*100 - data[2]
       this.coords[id][4] = ceil(math.sqrt(x*x+y*y)*100)/100
     end
   end
