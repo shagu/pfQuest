@@ -41,6 +41,7 @@ local debugsql = {
   ["quests_enderobject"] = { "Using mangos data to search for quest ender objects" },
   --
   ["requirements_object_spell_item"] = { "Using mangos database to search for items providing a spell for the object" },
+  ["requirements_object_items"] = { "Using mangos database and client data to search for object item requirements" },
   --
   ["zones"] = { "Using client data to read zone data" },
   --
@@ -1007,6 +1008,20 @@ for _, expansion in pairs(config.expansions) do
       local item = tonumber(object_item_spells.item)
       pfDB["requirements"][data][item] = pfDB["requirements"][data][item] or {}
       pfDB["requirements"][data][item][object] = spell
+    end
+
+    local object_items = {}
+    local query = mysql:execute([[
+      SELECT gameobject_template.entry AS object, pfquest.Lock_]]..expansion..[[.data AS item
+      FROM gameobject_template, pfquest.Lock_]]..expansion..[[
+      WHERE type = 10 and data0 = pfquest.Lock_]]..expansion..[[.id
+    ]])
+    while query:fetch(object_items, "a") do
+      if debug("requirements_object_items") then break end
+      local object = tonumber(object_items.object)
+      local item = tonumber(object_items.item)
+      pfDB["requirements"][data][item] = pfDB["requirements"][data][item] or {}
+      pfDB["requirements"][data][item][object] = -1
     end
   end
 
