@@ -861,6 +861,9 @@ pfMap:SetScript("OnUpdate", function()
       elseif not highlight and pfMap.highlight then
         -- fade node
         transition = frame:Animate(frame.defsize, .3) or transition
+      elseif frame.texture then
+        -- defaults for textured nodes
+        transition = frame:Animate(frame.defsize, 1) or transition
       else
         -- defaults
         transition = frame:Animate(frame.defsize, frame.defalpha) or transition
