@@ -109,10 +109,17 @@ for id, db in pairs(dbs) do
   pfDatabase.dbstring = pfDatabase.dbstring .. " |cffcccccc[|cffffffff" .. db .. "|cffcccccc:|cff33ffcc" .. ( pfDB[db][loc] and loc or "enUS" ) .. "|cffcccccc]"
 end
 
-pfDatabase.itemlist = CreateFrame("Frame")
+-- track questitems to maintain object requirements
+pfDatabase.itemlist = CreateFrame("Frame", "pfDatabaseQuestItemTracker", UIParent)
 pfDatabase.itemlist.update = 0
 pfDatabase.itemlist.db = {}
+pfDatabase.itemlist.db_tmp = {}
 pfDatabase.itemlist.registry = {}
+pfDatabase.TrackQuestItemDependency = function(self, item, qtitle)
+  self.itemlist.registry[item] = qtitle
+  self.itemlist.update = GetTime() + .5
+  self.itemlist:Show()
+end
 
 pfDatabase.itemlist:RegisterEvent("BAG_UPDATE")
 pfDatabase.itemlist:SetScript("OnEvent", function()
@@ -123,47 +130,39 @@ end)
 pfDatabase.itemlist:SetScript("OnUpdate", function()
   if GetTime() < this.update then return end
 
-  -- clean previous items
-  for k,v in pairs(this.db) do
-    this.db[k] = nil
-  end
-
-  local count = 0
-  for bag = 4, 0, -1 do
-    for slot = 1, GetContainerNumSlots(bag) do
-      local _, count = GetContainerItemInfo(bag, slot)
-      if count then
-        local link = GetContainerItemLink(bag,slot)
-        local _, _, parse = strfind(link, "(%d+):")
-        local name = GetItemInfo(parse)
-        if name then
-          -- A registered item got added to inventory
-          if this.registry[name] and this.registry[name][1] == 0 then
-            if pfQuest.questlog[this.registry[name][2]] then
-              this.registry[name][1] = 1
-              pfQuest.questlog[this.registry[name][2]] = nil
-              pfQuest:UpdateQuestlog()
-            else
-              this.registry[name] = nil
-            end
-          end
-
-          this.db[name] = true
-        end
-      end
+  -- remove obsolete registry entries
+  for item, qtitle in pairs(this.registry) do
+    if not pfQuest.questlog[qtitle] then
+      this.registry[item] = nil
     end
   end
 
-  -- A registered item got removed from inventory
-  for item, data in pairs(this.registry) do
-    if pfQuest.questlog[data[2]] then
-      if data[1] == 1 and not this.db[item] then
-        this.registry[item][1] = 0
-        pfQuest.questlog[this.registry[item][2]] = nil
-        pfQuest:UpdateQuestlog()
-      end
-    else
-      this.registry[item] = nil
+  -- save and clean previous items
+  local previous = this.db
+  this.db = {}
+
+  -- fill new item db
+  for bag = 4, 0, -1 do
+    for slot = 1, GetContainerNumSlots(bag) do
+      local link = GetContainerItemLink(bag,slot)
+      local _, _, parse = strfind((link or ""), "(%d+):")
+      if parse then this.db[GetItemInfo(parse)] = true end
+    end
+  end
+
+  -- find new items
+  for item in pairs(this.db) do
+    if not previous[item] and this.registry[item] then
+      pfQuest.questlog[this.registry[item]] = nil
+      pfQuest:UpdateQuestlog()
+    end
+  end
+
+  -- find removed items
+  for item in pairs(previous) do
+    if not this.db[item] and this.registry[item] then
+      pfQuest.questlog[this.registry[item]] = nil
+      pfQuest:UpdateQuestlog()
     end
   end
 
@@ -1081,10 +1080,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           if requirement and meta["qlogid"] then
             -- register item requirement
             local title, _, _, _, _, complete = compat.GetQuestLogTitle(meta["qlogid"])
-            pfDatabase.itemlist.registry[requirement] = pfDatabase.itemlist.registry[requirement] or {}
-            pfDatabase.itemlist.registry[requirement][1] = pfDatabase.itemlist.registry[requirement][1] or 0
-            pfDatabase.itemlist.registry[requirement][2] = title
-
+            pfDatabase:TrackQuestItemDependency(requirement, title)
             if pfDatabase.itemlist.db[requirement] then
               maps = pfDatabase:SearchObjectID(object, meta, maps)
             end
