@@ -133,7 +133,7 @@ pfQuest_defconfig = {
   },
   ["arrow"] = { -- Show Arrow Along Routes
     text = pfQuest_Loc["Show Arrow Along Routes"],
-    default = "0", type = "checkbox", pos = { 2, 14 },
+    default = "1", type = "checkbox", pos = { 2, 14 },
   },
 
   ["_User Data_"] = {
