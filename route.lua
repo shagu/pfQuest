@@ -26,6 +26,8 @@ local function GetNearest(xstart, ystart, db, blacklist)
     end
   end
 
+  if not best then return end
+
   blacklist[best] = true
   return db[best]
 end
