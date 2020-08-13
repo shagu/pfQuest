@@ -701,11 +701,7 @@ function pfDatabase:SearchZoneID(id, meta, maps, prio)
     meta["x"]     = x
     meta["y"]     = y
 
-    if nil then
-      pfMap:AddNode(meta)
-      return maps
-    end
-
+    pfMap:AddNode(meta)
     for py=-radius,radius,2 do
       for px=-radius,radius,2 do
         if(px*px+py*py <= radius*radius) then
