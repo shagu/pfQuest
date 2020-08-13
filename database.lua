@@ -684,7 +684,6 @@ function pfDatabase:SearchZoneID(id, meta, maps, prio)
   local prio = prio or 1
 
   local zone, width, height, x, y, ex, ey = unpack(zones[id])
-  local radius = min(width, height)/2
 
   if zone > 0 then
     maps[zone] = maps[zone] and maps[zone] + prio or prio
@@ -702,15 +701,7 @@ function pfDatabase:SearchZoneID(id, meta, maps, prio)
     meta["y"]     = y
 
     pfMap:AddNode(meta)
-    for py=-radius,radius,2 do
-      for px=-radius,radius,2 do
-        if(px*px+py*py <= radius*radius) then
-          meta["x"]     = x+px/1.5
-          meta["y"]     = y+py
-          pfMap:AddNode(meta)
-        end
-      end
-    end
+    return maps
   end
 
   return maps
