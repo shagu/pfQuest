@@ -146,7 +146,10 @@ pfDatabase.itemlist:SetScript("OnUpdate", function()
     for slot = 1, GetContainerNumSlots(bag) do
       local link = GetContainerItemLink(bag,slot)
       local _, _, parse = strfind((link or ""), "(%d+):")
-      if parse then this.db[GetItemInfo(parse)] = true end
+      if parse then
+        local item = GetItemInfo(parse)
+        if item then this.db[item] = true end
+      end
     end
   end
 
