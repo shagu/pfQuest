@@ -1117,20 +1117,20 @@ for _, expansion in pairs(config.expansions) do
     do -- gameobject relations
       local gameobject_template = {}
       local query = mysql:execute([[
-        SELECT entry, data0, skill, locktype FROM `gameobject_template`, pfquest.Lock_]]..expansion..[[
-        WHERE `type` = 3 AND `flags` = 0 AND `data1` > 0 and id = data0 GROUP BY `gameobject_template`.entry ORDER BY `gameobject_template`.entry ASC
+        SELECT * FROM `gameobject_template`, pfquest.Lock_]]..expansion..[[
+        WHERE `type` = 3 AND `locktype` = 2 AND `flags` = 0 AND `data1` > 0 and id = data0 GROUP BY `gameobject_template`.entry ORDER BY `gameobject_template`.entry ASC
       ]])
 
       while query:fetch(gameobject_template, "a") do
         if debug("meta_farm") then break end
         local entry   = tonumber(gameobject_template.entry) * -1
-        local locktype = tonumber(gameobject_template.locktype)
+        local data = tonumber(gameobject_template.data)
         local skill = tonumber(gameobject_template.skill)
-        if locktype == 1 then
+        if data == 1 then
           pfDB["meta"..exp]["chests"][entry] = skill
-        elseif locktype == 2 then
+        elseif data == 2 then
           pfDB["meta"..exp]["herbs"][entry] = skill
-        elseif locktype == 3 then
+        elseif data == 3 then
           pfDB["meta"..exp]["mines"][entry] = skill
         end
       end
