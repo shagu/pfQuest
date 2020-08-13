@@ -1059,7 +1059,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           local requirement -- search for item requirements
           if quests[id]["obj"]["I"] then
             for _, item in pairs(quests[id]["obj"]["I"]) do
-              if requirements[item][object] then
+              if requirements[item] and requirements[item][object] then
                 requirement = pfDB["items"]["loc"][item] or UNKNOWN
                 break
               end
