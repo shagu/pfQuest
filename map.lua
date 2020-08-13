@@ -720,7 +720,6 @@ function pfMap:UpdateMinimap()
 
   -- check for disabled minimap nodes
   if pfQuest_config["minimapnodes"] == "0" then
-    pfMap:Hide()
     return
   end
 
