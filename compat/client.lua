@@ -45,12 +45,11 @@ for k, v in pairs({Minimap:GetChildren()}) do
 end
 
 -- return the player facing based on the minimap arrow
-local adjust = client > 11200 and math.pi/4*3/10 or 0
 function pfQuestCompat.GetPlayerFacing()
   if client > 11200 and GetCVar("rotateMinimap") ~= "0" then
-    return (MiniMapCompassRing:GetFacing() * -1) + adjust
+    return (MiniMapCompassRing:GetFacing() * -1)
   else
-    return minimaparrow:GetFacing() + adjust
+    return minimaparrow:GetFacing()
   end
 end
 
