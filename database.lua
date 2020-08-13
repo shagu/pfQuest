@@ -274,9 +274,9 @@ function pfDatabase:BuildQuestDescription(meta)
   elseif meta.QTYPE == "OBJECT_OBJECTIVE_ITEMREQ" then
     return string.format(pfQuest_Loc["Use |cff33ffcc%s|r at |cff33ffcc%s|r"], meta.itemreq, meta.spawn)
   elseif meta.QTYPE == "ITEM_OBJECTIVE_LOOT" then
-    return string.format(pfQuest_Loc["Loot |cff33ffcc%s|r from |cff33ffcc%s|r"], meta.item, meta.spawn)
+    return string.format(pfQuest_Loc["Loot |cff33ffcc[%s]|r from |cff33ffcc%s|r"], meta.item, meta.spawn)
   elseif meta.QTYPE == "ITEM_OBJECTIVE_USE" then
-    return string.format(pfQuest_Loc["Loot and/or Use |cff33ffcc%s|r from |cff33ffcc%s|r"], meta.item, meta.spawn)
+    return string.format(pfQuest_Loc["Loot and/or Use |cff33ffcc[%s]|r from |cff33ffcc%s|r"], meta.item, meta.spawn)
   elseif meta.QTYPE == "AREATRIGGER_OBJECTIVE" then
     return string.format(pfQuest_Loc["Explore |cff33ffcc%s|r"], meta.spawn)
   elseif meta.QTYPE == "ZONE_OBJECTIVE" then
