@@ -134,6 +134,17 @@ pfQuest.route:SetScript("OnUpdate", function()
     local blacklist = { [1] = true }
     for i=2, table.getn(this.coords) do
       route[i] = GetNearest(route[i-1][1], route[i-1][2], this.coords, blacklist)
+
+      -- remove other item requirement gameobjects of same type from route
+      if route[i] and route[i][3] and route[i][3].itemreq then
+        for id, data in pairs(this.coords) do
+          if not blacklist[id] and data[1] and data[2] and data[3]
+            and data[3].itemreq and data[3].itemreq == route[i][3].itemreq
+          then
+            blacklist[id] = true
+          end
+        end
+      end
     end
 
     ClearPath(objectivepath)
