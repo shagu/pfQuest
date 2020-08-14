@@ -9,6 +9,8 @@ local debugsql = {
   ["units"] = { "Iterate over all creatures using mangos data" },
   ["units_faction"] = { "Using mangos and client-data to find unit faction" },
   ["units_coords"] = { "Using mangos and client-data to find unit locations" },
+  ["units_script_objectmap"] = { "Using mangos data to identify the map in objects for script/event summoned units" },
+  ["units_script_itemmap"] = { "Using mangos data to identify the map in items for script/event summoned units" },
   ["units_object_summoned"] = { "Using mangos data to search for summoned units based on their required summon gameobject position" },
   ["units_creature_summoned"] = { "Using mangos data to search for summoned units based on the summoner creature position" },
   --
@@ -110,6 +112,7 @@ local config = {
     ["VendorTemplateId"] = "vendor_id",
     ["NpcFlags"] = "npc_flags",
     ["EffectTriggerSpell"] = "effectTriggerSpell",
+    ["Map"] = "map_bound",
   },
 }
 
@@ -379,6 +382,42 @@ for _, expansion in pairs(config.expansions) do
       return ret
     end
 
+    function GetCustomCoords(m,x,y)
+      local worldmap = {}
+      local ret = {}
+
+      local sql = [[
+        SELECT * FROM pfquest.WorldMapArea_]]..expansion..[[
+        WHERE pfquest.WorldMapArea_]]..expansion..[[.mapID = ]] .. m .. [[
+          AND pfquest.WorldMapArea_]]..expansion..[[.x_min < ]] .. x .. [[
+          AND pfquest.WorldMapArea_]]..expansion..[[.x_max > ]] .. x .. [[
+          AND pfquest.WorldMapArea_]]..expansion..[[.y_min < ]] .. y .. [[
+          AND pfquest.WorldMapArea_]]..expansion..[[.y_max > ]] .. y .. [[
+          AND pfquest.WorldMapArea_]]..expansion..[[.areatableID > 0
+        ]]
+
+      local query = mysql:execute(sql)
+      while query:fetch(worldmap, "a") do
+        local zone = worldmap.areatableID
+        local x_max = worldmap.x_max
+        local x_min = worldmap.x_min
+        local y_max = worldmap.y_max
+        local y_min = worldmap.y_min
+        local px, py = 0, 0
+
+        if x and y and x_min and y_min then
+          px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
+          py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
+          if isValidMap(zone, round(px), round(py)) then
+            local coord = { px, py, tonumber(zone), 0 }
+            table.insert(ret, coord)
+          end
+        end
+      end
+
+      return ret
+    end
+
     function GetCreatureCoords(id)
       local creature = {}
       local ret = {}
@@ -537,12 +576,38 @@ for _, expansion in pairs(config.expansions) do
           table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
         end
 
-        -- search for gameobject summoned mobs
+        -- search for script summoned mobs
         local event_scripts = {}
         local query = mysql:execute('SELECT * FROM ' .. C.dbscripts_on_event .. ' WHERE command = 10 AND ' .. C.dbscripts_on_event .. '.datalong = ' .. creature_template[C.Entry])
         while query:fetch(event_scripts, "a") do
-          local script = event_scripts.datalong
+          local creatureid = event_scripts.datalong
+          local maps = {}
 
+          -- try to identify the map via gameobject relations
+          local gameobject_template = {}
+          local query = mysql:execute('SELECT map FROM gameobject_template, gameobject WHERE gameobject_template.type = 10 AND gameobject_template.data2 = '.. event_scripts.id .. ' AND gameobject.id = gameobject_template.entry')
+          while query:fetch(gameobject_template, "a") do
+            if debug("units_script_objectmap") then break end
+            maps[tonumber(gameobject_template.map)] = true
+          end
+
+          -- try to identify the map via item relations
+          local item_template = {}
+          local query = mysql:execute('SELECT item_template.'..C.Map..' as map FROM item_template, spell_template WHERE item_template.spellid_1 = spell_template.'..C.Id..' AND spell_template.EffectMiscValue2 = '.. event_scripts.id)
+          while query:fetch(item_template, "a") do
+            if debug("units_script_itemmap") then break end
+            maps[tonumber(item_template.map)] = true
+          end
+
+          -- add script spawns for all identified maps
+          for map in pairs(maps) do
+            for id, coords in pairs(GetCustomCoords(map, event_scripts.x, event_scripts.y)) do
+              local x, y, zone, respawn = table.unpack(coords)
+              table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
+            end
+          end
+
+          -- add gameobject requirement positions
           local spell_template = {}
           local query = mysql:execute('SELECT * FROM spell_template WHERE '..C.RequiresSpellFocus..' > 0 AND spell_template.effectMiscValue1 = ' .. event_scripts.id)
           while query:fetch(spell_template, "a") do
