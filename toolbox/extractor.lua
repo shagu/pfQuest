@@ -9,7 +9,8 @@ local debugsql = {
   ["units"] = { "Iterate over all creatures using mangos data" },
   ["units_faction"] = { "Using mangos and client-data to find unit faction" },
   ["units_coords"] = { "Using mangos and client-data to find unit locations" },
-  ["units_summoned"] = { "Using mangos data to search for summoned units based on their required summon gameobject position" },
+  ["units_object_summoned"] = { "Using mangos data to search for summoned units based on their required summon gameobject position" },
+  ["units_creature_summoned"] = { "Using mangos data to search for summoned units based on the summoner creature position" },
   --
   ["objects"] = { "Iterate over all gameobjects using mangos data" },
   ["objects_faction"] = { "Using mangos and client-data to find object faction" },
@@ -536,7 +537,7 @@ for _, expansion in pairs(config.expansions) do
           table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
         end
 
-        -- search for summoned mobs
+        -- search for gameobject summoned mobs
         local event_scripts = {}
         local query = mysql:execute('SELECT * FROM ' .. C.dbscripts_on_event .. ' WHERE command = 10 AND ' .. C.dbscripts_on_event .. '.datalong = ' .. creature_template[C.Entry])
         while query:fetch(event_scripts, "a") do
@@ -550,13 +551,40 @@ for _, expansion in pairs(config.expansions) do
             local gameobject_template = {}
             local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spellfocus)
             while query:fetch(gameobject_template, "a") do
-              if debug("units_summoned") then break end
+              if debug("units_object_summoned") then break end
               local object = gameobject_template.entry
               for id, coords in pairs(GetGameObjectCoords(object)) do
                 local x, y, zone, respawn = table.unpack(coords)
                 table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
               end
             end
+          end
+        end
+
+        -- search for creature summoned mobs
+        local event_scripts = {}
+        local query = mysql:execute(dbtype == "vmangos" and [[
+          SELECT creature_ai_events.creature_id AS summoner, creature_ai_scripts.datalong AS spawn
+          FROM creature_ai_scripts, creature_ai_events
+
+          WHERE creature_ai_scripts.command = 10
+            AND creature_ai_scripts.id = creature_ai_events.id
+            AND creature_ai_scripts.datalong = ]] .. creature_template[C.Entry] .. [[
+        ]] or [[
+          SELECT creature_ai_scripts.creature_id AS summoner, spell_template.EffectMiscValue1 AS spawn
+          FROM creature_ai_scripts, spell_template
+
+          WHERE spell_template.Effect1 = 28
+            AND creature_ai_scripts.action1_param1 = spell_template.id
+            AND creature_ai_scripts.action1_type = 11
+            AND spell_template.EffectMiscValue1 = ]] .. creature_template[C.Entry] .. [[
+        ]])
+        while query:fetch(event_scripts, "a") do
+          if debug("units_creature_summoned") then break end
+          local summoner = event_scripts.summoner
+          for id, coords in pairs(GetCreatureCoords(summoner)) do
+            local x, y, zone, respawn = table.unpack(coords)
+            table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
           end
         end
       end
