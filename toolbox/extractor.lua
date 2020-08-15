@@ -248,6 +248,27 @@ do -- helper functions
     return count
   end
 
+  local dupehashes = {}
+  function removedupes(tbl)
+    dupehashes = {}
+    local output = {}
+
+    -- [count] = { x, y, zone, respawn }
+    for k, coords in pairs(tbl) do
+      local hash = ""
+      for k, v in pairs(coords) do
+        hash = hash .. v
+      end
+
+      if not dupehashes[hash] then
+        dupehashes[hash] = true
+        table.insert(output, coords)
+      end
+    end
+
+    return output
+  end
+
   function tablesubstract(new, base)
     local ret = {}
 
@@ -652,6 +673,9 @@ for _, expansion in pairs(config.expansions) do
             table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
           end
         end
+
+        -- clear duplicates
+        pfDB["units"][data][entry]["coords"] = removedupes(pfDB["units"][data][entry]["coords"])
       end
     end
   end
@@ -704,6 +728,9 @@ for _, expansion in pairs(config.expansions) do
           table.insert(pfDB["objects"][data][entry]["coords"], { x, y, zone, respawn })
         end
       end
+
+      -- clear duplicates
+      pfDB["objects"][data][entry]["coords"] = removedupes(pfDB["objects"][data][entry]["coords"])
     end
   end
 
