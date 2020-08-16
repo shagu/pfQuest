@@ -679,7 +679,7 @@ function pfMap:UpdateNodes()
         -- update sizes
         if pfMap.pins[i].cluster or pfMap.pins[i].layer == 4 then
           pfMap.pins[i].defsize = 24
-        elseif pfMap.pins[i].node and pfQuest_config.showonlycluster == "1" and pfQuest_config.showcluster == "0" then
+        elseif pfMap.pins[i].node and pfQuest_config.showonlycluster == "1" and pfQuest_config.showcluster == "1" then
           pfMap.pins[i].defsize = 0
         else
           pfMap.pins[i].defsize = 16
