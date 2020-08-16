@@ -92,6 +92,7 @@ local function NodeAnimate(self, zoom, alpha)
   local cur_zoom = self:GetWidth()
   local cur_alpha = self:GetAlpha()
   local change = nil
+  self:EnableMouse(true)
 
   -- update size
   if math.abs(cur_zoom - zoom) < 1 then
@@ -110,6 +111,11 @@ local function NodeAnimate(self, zoom, alpha)
   -- update alpha
   if math.abs(cur_alpha - alpha) < .1 then
     self:SetAlpha(alpha)
+
+    -- disable mouse on hidden
+    if alpha < .1 then
+      self:EnableMouse(nil)
+    end
   elseif cur_alpha < alpha then
     self:SetAlpha(cur_alpha + .08)
     change = true
@@ -119,6 +125,16 @@ local function NodeAnimate(self, zoom, alpha)
   end
 
   return change
+end
+
+-- put player position above everything on worldmap
+for k, v in pairs({WorldMapFrame:GetChildren()}) do
+  if v:IsObjectType("Model") and not v:GetName() then
+    if string.find(strlower(v:GetModel()), "interface\\minimap\\minimaparrow") then
+      v:SetFrameLevel(255)
+      break
+    end
+  end
 end
 
 pfMap = CreateFrame("Frame")
@@ -359,6 +375,8 @@ function pfMap:AddNode(meta)
   if not meta["zone"] then return end
   if not meta["title"] then return end
 
+  meta["description"] = pfDatabase:BuildQuestDescription(meta)
+
   local addon = meta["addon"] or "PFDB"
   local map = meta["zone"]
   local coords = meta["x"] .. "|" .. meta["y"]
@@ -510,15 +528,18 @@ end
 
 function pfMap:BuildNode(name, parent)
   local f = CreateFrame("Button", name, parent)
-  f:SetWidth(16)
-  f:SetHeight(16)
 
   if parent == WorldMapButton then
     f.defalpha = pfQuest_config["worldmaptransp"] + 0
+    f.defsize = 16
   else
     f.defalpha = pfQuest_config["minimaptransp"] + 0
+    f.defsize = 16
     f.minimap = true
   end
+
+  f:SetWidth(f.defsize)
+  f:SetHeight(f.defsize)
 
   f.Animate = NodeAnimate
   f:SetScript("OnEnter", pfMap.NodeEnter)
@@ -532,7 +553,6 @@ end
 
 pfMap.highlightdb = {}
 function pfMap:UpdateNode(frame, node, color, obj)
-
   -- clear node to title association table
   if pfMap.highlightdb[frame] then
     for k,v in pairs(pfMap.highlightdb[frame]) do
@@ -563,18 +583,23 @@ function pfMap:UpdateNode(frame, node, color, obj)
 
       -- set title and texture to the entry with highest layer
       -- and add core information
-      frame.layer     = tab.layer
-      frame.spawn     = tab.spawn
-      frame.spawnid   = tab.spawnid
-      frame.spawntype = tab.spawntype
-      frame.respawn   = tab.respawn
-      frame.level     = tab.level
-      frame.questid   = tab.questid
-      frame.texture   = tab.texture
-      frame.vertex    = tab.vertex
-      frame.title     = title
-      frame.func      = tab.func
-      frame.cluster   = tab.cluster
+      frame.layer       = tab.layer
+      frame.spawn       = tab.spawn
+      frame.spawnid     = tab.spawnid
+      frame.spawntype   = tab.spawntype
+      frame.respawn     = tab.respawn
+      frame.level       = tab.level
+      frame.questid     = tab.questid
+      frame.texture     = tab.texture
+      frame.vertex      = tab.vertex
+      frame.title       = title
+      frame.func        = tab.func
+      frame.cluster     = tab.cluster
+      frame.description = tab.description
+      frame.priority    = tab.priority
+      frame.quest       = tab.quest
+      frame.qlvl        = tab.qlvl
+      frame.itemreq     = tab.itemreq
 
       if pfQuest_config["spawncolors"] == "1" then
         frame.color = tab.spawn or tab.title
@@ -598,6 +623,8 @@ function pfMap:UpdateNode(frame, node, color, obj)
 
   if ( frame.updateColor or frame.updateTexture or not frame.tex:GetTexture() ) and not frame.texture then
     if obj == "minimap" and pfQuest_config["cutoutminimap"] == "1" then
+      frame.tex:SetTexture(pfQuestConfig.path.."\\img\\nodecut")
+    elseif obj ~= "minimap" and pfQuest_config["cutoutworldmap"] == "1" then
       frame.tex:SetTexture(pfQuestConfig.path.."\\img\\nodecut")
     else
       frame.tex:SetTexture(pfQuestConfig.path.."\\img\\node")
@@ -625,6 +652,9 @@ function pfMap:UpdateNodes()
   -- reset tracker
   pfQuest.tracker.Reset()
 
+  -- reset route
+  pfQuest.route:Reset()
+
   -- refresh all nodes
   for addon, _ in pairs(pfMap.nodes) do
     if pfMap.nodes[addon][map] then
@@ -637,16 +667,39 @@ function pfMap:UpdateNodes()
 
         -- set position
         local _, _, x, y = strfind(coords, "(.*)|(.*)")
-        x = x / 100 * WorldMapButton:GetWidth()
-        y = y / 100 * WorldMapButton:GetHeight()
 
-        pfMap.pins[i]:ClearAllPoints()
-        pfMap.pins[i]:SetPoint("CENTER", WorldMapButton, "TOPLEFT", x, -y)
-        pfMap.pins[i]:Show()
+        -- write points to the route plan
+        if ( pfQuest_config["routecluster"] == "1" and pfMap.pins[i].layer >= 9 ) or
+          ( pfQuest_config["routeender"] == "1" and pfMap.pins[i].layer == 4) or
+          ( pfQuest_config["routestarter"] == "1" and pfMap.pins[i].layer == 2)
+        then
+          pfQuest.route:AddPoint({ x, y, pfMap.pins[i] })
+        end
 
-        -- populate quest list on map
-        for title, node in pairs(pfMap.pins[i].node) do
-          pfQuest.tracker.ButtonAdd(title, node)
+        -- update sizes
+        if pfMap.pins[i].cluster or pfMap.pins[i].layer == 4 then
+          pfMap.pins[i].defsize = 24
+        else
+          pfMap.pins[i].defsize = 16
+        end
+
+        -- hide cluster nodes if set
+        if pfMap.pins[i].cluster and pfQuest_config.showcluster == "0" then
+          pfMap.pins[i]:Hide()
+        else
+          -- populate quest list on map
+          for title, node in pairs(pfMap.pins[i].node) do
+            pfQuest.tracker.ButtonAdd(title, node)
+          end
+
+          x = x / 100 * WorldMapButton:GetWidth()
+          y = y / 100 * WorldMapButton:GetHeight()
+
+          pfMap.pins[i]:ClearAllPoints()
+          pfMap.pins[i]:SetPoint("CENTER", WorldMapButton, "TOPLEFT", x, -y)
+          pfMap.pins[i]:SetWidth(pfMap.pins[i].defsize)
+          pfMap.pins[i]:SetHeight(pfMap.pins[i].defsize)
+          pfMap.pins[i]:Show()
         end
 
         i = i + 1
@@ -667,7 +720,6 @@ function pfMap:UpdateMinimap()
 
   -- check for disabled minimap nodes
   if pfQuest_config["minimapnodes"] == "0" then
-    pfMap:Hide()
     return
   end
 
@@ -799,24 +851,24 @@ pfMap:SetScript("OnUpdate", function()
     for frame, data in pairs(pfMap.highlightdb) do
       local highlight = pfMap.highlightdb[frame][pfMap.highlight] and true or nil
 
-      if highlight then
-        if frame.texture then
-          transition = frame:Animate(24, 1) or transition -- zoom in
-        else
-          transition = frame:Animate(16, 1) or transition -- zoom in
-        end
+      if hidecluster and frame.cluster then
+        -- hide clusters
+        transition = frame:Animate(frame.defsize, 0) or transition
+      elseif highlight then
+        -- zoom node
+        transition = frame:Animate((frame.texture and 28 or frame.defsize), 1) or transition
       elseif not highlight and pfMap.highlight then
-        if frame.cluster or frame.level == 4 then
-          transition = frame:Animate(24, .3) or transition -- zoom out
-        else
-          transition = frame:Animate(16, .3) or transition -- zoom out
+        if pfQuest_config["showrelatednodes"] == "1" then
+          transition = frame:Animate(frame.defsize, 0.0) or transition
+        else 
+          transition = frame:Animate(frame.defsize, 0.3) or transition
         end
+      elseif frame.texture then
+        -- defaults for textured nodes
+        transition = frame:Animate(frame.defsize, 1) or transition
       else
-        if frame.cluster or frame.level == 4 then
-          transition = frame:Animate(24, frame.defalpha) or transition -- zoom out
-        else
-          transition = frame:Animate(16, frame.defalpha) or transition -- zoom out
-        end
+        -- defaults
+        transition = frame:Animate(frame.defsize, frame.defalpha) or transition
       end
     end
   end
