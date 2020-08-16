@@ -20,6 +20,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff quest <questname> |cffcccccc - " .. pfQuest_Loc["Show specific quest"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff quests |cffcccccc - " .. pfQuest_Loc["Show all quests on map"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff clean |cffcccccc - " .. pfQuest_Loc["Clean Map"])
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff reset |cffcccccc - " .. pfQuest_Loc["Reset Map"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff chests |cffcccccc - " .. pfQuest_Loc["Show all chests on map"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff taxi [faction]|cffcccccc - " .. pfQuest_Loc["Show all taxi nodes of [faction]"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff rares [min, [max]]|cffcccccc - " .. pfQuest_Loc["Show all rare mobs of Level [min] to [max]"])
@@ -136,6 +137,12 @@ SlashCmdList["PFDB"] = function(input, editbox)
   if (arg1 == "clean") then
     pfMap:DeleteNode("PFDB")
     pfMap:UpdateNodes()
+    return
+  end
+  
+  -- argument: reset
+  if (arg1 == "reset") then
+   pfQuest:ResetAll()
     return
   end
 
