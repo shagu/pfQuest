@@ -56,8 +56,13 @@ pfQuest_defconfig = {
     default = "1", type = "checkbox", pos = { 1, 11 },
   },
   ["minimaptip"] = {
+<<<<<<< Updated upstream
     text = pfQuest_Loc["Info: Press Control To Hide Nodes On Mouseover"],
     default = "1",  type = "normal", pos = { 1, 12 },
+=======
+    text = pfQuest_Loc["Tip: Press Control To Hide Nodes On Mouseover"],
+    default = "1",  type = "tip", pos = { 1, 12 },
+>>>>>>> Stashed changes
   },
   ["cutoutminimap"] = { -- Use Cut-Out Minimap Node Icons
     text = pfQuest_Loc["Use Cut-Out Minimap Node Icons"],
@@ -93,8 +98,13 @@ pfQuest_defconfig = {
     default = "1", type = "checkbox", pos = { 2, 2 },
   },
   ["clustertip"] = {
+<<<<<<< Updated upstream
     text = pfQuest_Loc["Info: Press Control To Hide Markers On Mouseover"],
     default = "1",  type = "normal", pos = { 2, 3 },
+=======
+    text = pfQuest_Loc["Tip: Press Control To Hide Markers On Mouseover"],
+    default = "1",  type = "tip", pos = { 2, 3 },
+>>>>>>> Stashed changes
   },
   ["showrelatednodes"] = { -- Show only nodes that have a relation to mouseover node
     text = pfQuest_Loc["Show Only Related Nodes On Mouseover"],
@@ -332,7 +342,11 @@ function pfQuestConfig:CreateConfigEntries(config)
         frame.caption:SetTextColor(.3,1,.8)
         frame.caption:SetFont(pfUI.font_default, pfUI_config.global.font_size+2, "OUTLINE")
         
+<<<<<<< Updated upstream
        elseif data.type == "normal" then
+=======
+       elseif data.type == "tip" then
+>>>>>>> Stashed changes
         frame.caption:SetPoint("LEFT", 20, 0)
         frame.caption:SetTextColor(.3,1,.8)
         frame.caption:SetFont(pfUI.font_default, pfUI_config.global.font_size-2, "OUTLINE")
