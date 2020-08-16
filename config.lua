@@ -90,25 +90,30 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Unified Quest Location Markers"],
     default = "1", type = "checkbox", pos = { 2, 2 },
   },
+  ["showrelatednodes"] = { -- Show only nodes that have a relation to mouseover node
+    text = pfQuest_Loc["Show Only Related Nodes On Mouseover"],
+    default = "0", type = "checkbox", pos = { 2, 3 },
+  },
+ 
   ["allquestgivers"] = { -- Display Available Quest Givers
     text = pfQuest_Loc["Display Available Quest Givers"],
-    default = "1", type = "checkbox", pos = { 2, 3 },
+    default = "1", type = "checkbox", pos = { 2, 4 },
   },
   ["currentquestgivers"] = { -- Display Current Quest Givers
     text = pfQuest_Loc["Display Current Quest Givers"],
-    default = "1", type = "checkbox", pos = { 2, 4 },
+    default = "1", type = "checkbox", pos = { 2, 5 },
   },
   ["showlowlevel"] = { -- Display Low Level Quest Givers
     text = pfQuest_Loc["Display Low Level Quest Givers"],
-    default = "0", type = "checkbox", pos = { 2, 5 },
+    default = "0", type = "checkbox", pos = { 2, 6 },
   },
   ["showhighlevel"] = { -- Display Level+3 Questgivers
     text = pfQuest_Loc["Display Level+3 Quest Givers"],
-    default = "1", type = "checkbox", pos = { 2, 6 },
+    default = "1", type = "checkbox", pos = { 2, 7 },
   },
   ["showfestival"] = { -- Display Event & Daily Quests
     text = pfQuest_Loc["Display Event & Daily Quests"],
-    default = "0", type = "checkbox", pos = { 2, 7 },
+    default = "0", type = "checkbox", pos = { 2, 8 },
   },
 
   ["_Routes_"] = {
