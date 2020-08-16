@@ -858,8 +858,11 @@ pfMap:SetScript("OnUpdate", function()
         -- zoom node
         transition = frame:Animate((frame.texture and 28 or frame.defsize), 1) or transition
       elseif not highlight and pfMap.highlight then
-        -- fade node
-        transition = frame:Animate(frame.defsize, .3) or transition
+        if pfQuest_config["showrelatednodes"] == "1" then
+          transition = frame:Animate(frame.defsize, 0.0) or transition
+        else 
+          transition = frame:Animate(frame.defsize, 0.3) or transition
+        end
       elseif frame.texture then
         -- defaults for textured nodes
         transition = frame:Animate(frame.defsize, 1) or transition
