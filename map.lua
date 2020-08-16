@@ -723,7 +723,7 @@ function pfMap:UpdateMinimap()
     return
   end
 
-  -- hide all minimap nodes while shift is pressed
+  -- hide all minimap nodes while control is pressed
   if IsControlKeyDown() and MouseIsOver(pfMap.drawlayer) then
     this.xPlayer = nil
 
