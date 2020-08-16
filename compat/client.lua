@@ -33,6 +33,26 @@ pfQuestCompat.InsertQuestLink = function(questid, name)
   end
 end
 
+-- do the best to detect the minimap arrow on vanilla and tbc
+local minimaparrow = ({Minimap:GetChildren()})[9]
+for k, v in pairs({Minimap:GetChildren()}) do
+  if v:IsObjectType("Model") and not v:GetName() then
+    if string.find(strlower(v:GetModel()), "interface\\minimap\\minimaparrow") then
+      minimaparrow = v
+      break
+    end
+  end
+end
+
+-- return the player facing based on the minimap arrow
+function pfQuestCompat.GetPlayerFacing()
+  if client > 11200 and GetCVar("rotateMinimap") ~= "0" then
+    return (MiniMapCompassRing:GetFacing() * -1)
+  else
+    return minimaparrow:GetFacing()
+  end
+end
+
 if client <= 11200 then
   -- add colors to quest links
   local ParseQuestLevels = function(frame, text, a1, a2, a3, a4, a5)

@@ -152,33 +152,29 @@ function Lock() {
 DROP TABLE IF EXISTS \`Lock_${v}\`;
 CREATE TABLE \`Lock_${v}\` (
 \`id\` smallint(3) unsigned NOT NULL,
-\`locktype\` varchar(255) NOT NULL,
+\`locktype\` smallint(3) NOT NULL,
+\`data\` smallint(3) unsigned NOT NULL,
 \`skill\` smallint(3) unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Lock';
 
 EOF
 
   if [ -d $root/$v ] && [ -f $root/$v/Lock.dbc.csv ]; then
-    function add_skills() {
-      if [ "$1" = 1 ]; then
-        # TODO: chests hackfix
-        echo "INSERT INTO \`Lock_${v}\` VALUES (57, 1, 0);" >> $rootsql
-      else
-        cat $root/$v/Lock.dbc.csv | while read line; do
-          if [ "$(echo $line | cut -d "," -f 2)" = "0x2" ]; then
-            if [ "$(echo $line | cut -d "," -f 10)" = "$1" ]; then
-              id=$(echo $line | cut -d "," -f 1)
-              skill=$(echo $line | cut -d "," -f 18)
-              echo "INSERT INTO \`Lock_${v}\` VALUES ($id, $1, $skill);" >> $rootsql
-            fi
-          fi
-        done
-      fi
-    }
+    cat $root/$v/Lock.dbc.csv | tail -n +2 | while read line; do
+      id=$(echo $line | cut -d "," -f 1)
+      locktype=$(echo $line | cut -d "," -f 2)
+      locktype=$(echo $locktype | cut -d "x" -f 2)
+      data=$(echo $line | cut -d "," -f 10)
+      skill=$(echo $line | cut -d "," -f 18)
 
-    add_skills 1
-    add_skills 2
-    add_skills 3
+      # hackfix to display chests
+      if [ "$id" = "57" ]; then
+        echo "INSERT INTO \`Lock_${v}\` VALUES (57, 2, 1, 0);" >> $rootsql
+      else
+        echo "INSERT INTO \`Lock_${v}\` VALUES ($id, $locktype, $data, $skill);" >> $rootsql
+      fi
+
+    done
   fi
 }
 

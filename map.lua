@@ -675,7 +675,24 @@ function pfMap:UpdateNodes()
         then
           pfQuest.route:AddPoint({ x, y, pfMap.pins[i] })
         end
+        -- update sizes
+        if pfMap.pins[i].cluster or pfMap.pins[i].layer == 4 then
+          pfMap.pins[i].defsize = 24
+        else
+          pfMap.pins[i].defsize = 16
+        end
 
+        -- hide cluster nodes if set
+        if pfMap.pins[i].cluster and pfQuest_config.showcluster == "0" then
+          pfMap.pins[i]:Hide()
+        else
+          -- populate quest list on map
+          for title, node in pairs(pfMap.pins[i].node) do
+            pfQuest.tracker.ButtonAdd(title, node)
+          end
+
+          x = x / 100 * WorldMapButton:GetWidth()
+          y = y / 100 * WorldMapButton:GetHeight()
         -- update sizes
         if pfMap.pins[i].cluster or pfMap.pins[i].layer == 4 then
           pfMap.pins[i].defsize = 24
@@ -859,10 +876,12 @@ pfMap:SetScript("OnUpdate", function()
         transition = frame:Animate((frame.texture and 28 or frame.defsize), 1) or transition
       elseif not highlight and pfMap.highlight then
         if pfQuest_config["showrelatednodes"] == "1" then
+          -- hide unrelated nodes 
           transition = frame:Animate(frame.defsize, 0.0) or transition
-        else 
+        else
           transition = frame:Animate(frame.defsize, 0.3) or transition
         end
+        transition = frame:Animate(frame.defsize, .3) or transition
       elseif frame.texture then
         -- defaults for textured nodes
         transition = frame:Animate(frame.defsize, 1) or transition

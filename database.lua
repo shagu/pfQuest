@@ -4,7 +4,7 @@ local compat = pfQuestCompat
 pfDatabase = {}
 
 local loc = GetLocale()
-local dbs = { "items", "quests", "objects", "units", "zones", "professions", "areatrigger" }
+local dbs = { "items", "quests", "objects", "units", "zones", "professions", "areatrigger", "refloot", "requirements" }
 local noloc = { "items", "quests", "objects", "units" }
 
 pfDB.locales = {
@@ -61,10 +61,10 @@ local function getcluster(tbl, name)
       end
     end
 
-    cache[cacheindex] = { tbl[best.index][1] + .001, tbl[best.index][2] + .001 }
+    cache[cacheindex] = { tbl[best.index][1] + .001, tbl[best.index][2] + .001, count }
   end
 
-  return cache[cacheindex][1], cache[cacheindex][2], count
+  return cache[cacheindex][1], cache[cacheindex][2], cache[cacheindex][3]
 end
 
 -- Detects if a non indexed table is empty
@@ -109,6 +109,69 @@ for id, db in pairs(dbs) do
   pfDatabase.dbstring = pfDatabase.dbstring .. " |cffcccccc[|cffffffff" .. db .. "|cffcccccc:|cff33ffcc" .. ( pfDB[db][loc] and loc or "enUS" ) .. "|cffcccccc]"
 end
 
+-- track questitems to maintain object requirements
+pfDatabase.itemlist = CreateFrame("Frame", "pfDatabaseQuestItemTracker", UIParent)
+pfDatabase.itemlist.update = 0
+pfDatabase.itemlist.db = {}
+pfDatabase.itemlist.db_tmp = {}
+pfDatabase.itemlist.registry = {}
+pfDatabase.TrackQuestItemDependency = function(self, item, qtitle)
+  self.itemlist.registry[item] = qtitle
+  self.itemlist.update = GetTime() + .5
+  self.itemlist:Show()
+end
+
+pfDatabase.itemlist:RegisterEvent("BAG_UPDATE")
+pfDatabase.itemlist:SetScript("OnEvent", function()
+  this.update = GetTime() + .5
+  this:Show()
+end)
+
+pfDatabase.itemlist:SetScript("OnUpdate", function()
+  if GetTime() < this.update then return end
+
+  -- remove obsolete registry entries
+  for item, qtitle in pairs(this.registry) do
+    if not pfQuest.questlog[qtitle] then
+      this.registry[item] = nil
+    end
+  end
+
+  -- save and clean previous items
+  local previous = this.db
+  this.db = {}
+
+  -- fill new item db
+  for bag = 4, 0, -1 do
+    for slot = 1, GetContainerNumSlots(bag) do
+      local link = GetContainerItemLink(bag,slot)
+      local _, _, parse = strfind((link or ""), "(%d+):")
+      if parse then
+        local item = GetItemInfo(parse)
+        if item then this.db[item] = true end
+      end
+    end
+  end
+
+  -- find new items
+  for item in pairs(this.db) do
+    if not previous[item] and this.registry[item] then
+      pfQuest.questlog[this.registry[item]] = nil
+      pfQuest:UpdateQuestlog()
+    end
+  end
+
+  -- find removed items
+  for item in pairs(previous) do
+    if not this.db[item] and this.registry[item] then
+      pfQuest.questlog[this.registry[item]] = nil
+      pfQuest:UpdateQuestlog()
+    end
+  end
+
+  this:Hide()
+end)
+
 -- check for unlocalized servers and fallback to enUS databases when the server
 -- returns item names that are different to the database ones. (check via. Hearthstone)
 CreateFrame("Frame"):SetScript("OnUpdate", function()
@@ -132,7 +195,7 @@ CreateFrame("Frame"):SetScript("OnUpdate", function()
     ItemRefTooltip:Hide()
 
     -- check for noloc
-    if name and name ~= "" then
+    if name and name ~= "" and pfDB["items"][loc][6948] then
       if not strfind(name, pfDB["items"][loc][6948], 1) then
         for id, db in pairs(noloc) do
           pfDB[db]["loc"] = pfDB[db]["enUS"] or {}
@@ -165,6 +228,7 @@ local objects = pfDB["objects"]["data"]
 local quests = pfDB["quests"]["data"]
 local zones = pfDB["zones"]["data"]
 local refloot = pfDB["refloot"]["data"]
+local requirements = pfDB["requirements"]["data"]
 local areatrigger = pfDB["areatrigger"]["data"]
 local professions = pfDB["professions"]["loc"]
 
@@ -193,6 +257,34 @@ local bitclasses = {
   [256] = "WARLOCK",
   [1024] = "DRUID"
 }
+
+function pfDatabase:BuildQuestDescription(meta)
+  if not meta.title or not meta.quest or not meta.QTYPE then return end
+
+  if meta.QTYPE == "NPC_START" then
+    return string.format(pfQuest_Loc["Speak with |cff33ffcc%s|r to obtain |cffffcc00[!]|cff33ffcc %s|r"], meta.spawn, meta.quest)
+  elseif meta.QTYPE == "OBJECT_START" then
+    return string.format(pfQuest_Loc["Interact with |cff33ffcc%s|r to obtain |cffffcc00[!]|cff33ffcc %s|r"], meta.spawn, meta.quest)
+  elseif meta.QTYPE == "NPC_END" then
+    return string.format(pfQuest_Loc["Speak with |cff33ffcc%s|r to complete |cffffcc00[?]|cff33ffcc %s|r"], meta.spawn, meta.quest)
+  elseif meta.QTYPE == "OBJECT_END" then
+    return string.format(pfQuest_Loc["Interact with |cff33ffcc%s|r to complete |cffffcc00[?]|cff33ffcc %s|r"], meta.spawn, meta.quest)
+  elseif meta.QTYPE == "UNIT_OBJECTIVE" then
+    return string.format(pfQuest_Loc["Kill |cff33ffcc%s|r"], meta.spawn)
+  elseif meta.QTYPE == "OBJECT_OBJECTIVE" then
+    return string.format(pfQuest_Loc["Interact with |cff33ffcc%s|r"], meta.spawn)
+  elseif meta.QTYPE == "OBJECT_OBJECTIVE_ITEMREQ" then
+    return string.format(pfQuest_Loc["Use |cff33ffcc%s|r at |cff33ffcc%s|r"], meta.itemreq, meta.spawn)
+  elseif meta.QTYPE == "ITEM_OBJECTIVE_LOOT" then
+    return string.format(pfQuest_Loc["Loot |cff33ffcc[%s]|r from |cff33ffcc%s|r"], meta.item, meta.spawn)
+  elseif meta.QTYPE == "ITEM_OBJECTIVE_USE" then
+    return string.format(pfQuest_Loc["Loot and/or Use |cff33ffcc[%s]|r from |cff33ffcc%s|r"], meta.item, meta.spawn)
+  elseif meta.QTYPE == "AREATRIGGER_OBJECTIVE" then
+    return string.format(pfQuest_Loc["Explore |cff33ffcc%s|r"], meta.spawn)
+  elseif meta.QTYPE == "ZONE_OBJECTIVE" then
+    return string.format(pfQuest_Loc["Use Quest Item at |cff33ffcc%s|r"], meta.spawn)
+  end
+end
 
 -- ShowExtendedTooltip
 -- Draws quest informations into a tooltip
@@ -595,7 +687,6 @@ function pfDatabase:SearchZoneID(id, meta, maps, prio)
   local prio = prio or 1
 
   local zone, width, height, x, y, ex, ey = unpack(zones[id])
-  local radius = min(width, height)
 
   if zone > 0 then
     maps[zone] = maps[zone] and maps[zone] + prio or prio
@@ -612,20 +703,8 @@ function pfDatabase:SearchZoneID(id, meta, maps, prio)
     meta["x"]     = x
     meta["y"]     = y
 
-    if nil then
-      pfMap:AddNode(meta)
-      return maps
-    end
-
-    for py=-radius,radius,2 do
-      for px=-radius,radius,2 do
-        if(px*px+py*py <= radius*radius) then
-          meta["x"]     = x+px/1.5
-          meta["y"]     = y+py
-          pfMap:AddNode(meta)
-        end
-      end
-    end
+    pfMap:AddNode(meta)
+    return maps
   end
 
   return maps
@@ -840,6 +919,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
       if quests[id]["start"]["U"] then
         for _, unit in pairs(quests[id]["start"]["U"]) do
           meta = meta or {}
+          meta["QTYPE"] = "NPC_START"
           meta["layer"] = meta["layer"] or 4
           meta["texture"] = pfQuestConfig.path.."\\img\\available_c"
           maps = pfDatabase:SearchMobID(unit, meta, maps, 0)
@@ -850,6 +930,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
       if quests[id]["start"]["O"] then
         for _, object in pairs(quests[id]["start"]["O"]) do
           meta = meta or {}
+          meta["QTYPE"] = "OBJECT_START"
           meta["texture"] = pfQuestConfig.path.."\\img\\available_c"
           maps = pfDatabase:SearchObjectID(object, meta, maps, 0)
         end
@@ -874,6 +955,8 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           else
             meta["texture"] = pfQuestConfig.path.."\\img\\complete_c"
           end
+          meta["QTYPE"] = "NPC_END"
+
           maps = pfDatabase:SearchMobID(unit, meta, maps, 0)
         end
       end
@@ -894,6 +977,8 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           else
             meta["texture"] = pfQuestConfig.path.."\\img\\complete_c"
           end
+
+          meta["QTYPE"] = "OBJECT_END"
 
           maps = pfDatabase:SearchObjectID(object, meta, maps, 0)
         end
@@ -949,6 +1034,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
         if not parse_obj["U"][unit] or parse_obj["U"][unit] ~= "DONE" then
           meta = meta or {}
           meta["texture"] = nil
+          meta["QTYPE"] = "UNIT_OBJECTIVE"
           maps = pfDatabase:SearchMobID(unit, meta, maps)
         end
       end
@@ -958,10 +1044,38 @@ function pfDatabase:SearchQuestID(id, meta, maps)
     if quests[id]["obj"]["O"] then
       for _, object in pairs(quests[id]["obj"]["O"]) do
         if not parse_obj["O"][object] or parse_obj["O"][object] ~= "DONE" then
+
+          local requirement -- search for item requirements
+          if quests[id]["obj"]["I"] then
+            for _, item in pairs(quests[id]["obj"]["I"]) do
+              if requirements[item] and requirements[item][object] then
+                requirement = pfDB["items"]["loc"][item] or UNKNOWN
+                break
+              end
+            end
+          end
+
           meta = meta or {}
           meta["texture"] = nil
           meta["layer"] = 2
-          maps = pfDatabase:SearchObjectID(object, meta, maps)
+
+          if requirement then
+            meta.itemreq = requirement
+            meta["QTYPE"] = "OBJECT_OBJECTIVE_ITEMREQ"
+          else
+            meta["QTYPE"] = "OBJECT_OBJECTIVE"
+          end
+
+          if requirement and meta["qlogid"] then
+            -- register item requirement
+            local title, _, _, _, _, complete = compat.GetQuestLogTitle(meta["qlogid"])
+            pfDatabase:TrackQuestItemDependency(requirement, title)
+            if pfDatabase.itemlist.db[requirement] then
+              maps = pfDatabase:SearchObjectID(object, meta, maps)
+            end
+          else
+            maps = pfDatabase:SearchObjectID(object, meta, maps)
+          end
         end
       end
     end
@@ -973,6 +1087,11 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           meta = meta or {}
           meta["texture"] = nil
           meta["layer"] = 2
+          if parse_obj["I"][item] then
+            meta["QTYPE"] = "ITEM_OBJECTIVE_LOOT"
+          else
+            meta["QTYPE"] = "ITEM_OBJECTIVE_USE"
+          end
           maps = pfDatabase:SearchItemID(item, meta, maps)
         end
       end
@@ -984,6 +1103,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
         meta = meta or {}
         meta["texture"] = nil
         meta["layer"] = 2
+        meta["QTYPE"] = "AREATRIGGER_OBJECTIVE"
         maps = pfDatabase:SearchAreaTriggerID(areatrigger, meta, maps)
       end
     end
@@ -994,6 +1114,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
         meta = meta or {}
         meta["texture"] = nil
         meta["layer"] = 2
+        meta["QTYPE"] = "ZONE_OBJECTIVE"
         maps = pfDatabase:SearchZoneID(zone, meta, maps)
       end
     end
@@ -1001,7 +1122,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
 
   -- prepare unified quest location markers
   local addon = meta["addon"] or "PFDB"
-  if pfQuest_config.showcluster == "1" and pfMap.nodes[addon] then
+  if pfMap.nodes[addon] then
     for map in pairs(pfMap.nodes[addon]) do
       if pfMap.unifiedcache[meta.quest] and pfMap.unifiedcache[meta.quest][map] then
         for hash, data in pairs(pfMap.unifiedcache[meta.quest][map]) do
@@ -1014,7 +1135,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
             meta["x"], meta["y"], meta["priority"] = getcluster(data.coords, meta["quest"]..hash..map)
             meta["texture"] = pfQuestConfig.path.."\\img\\cluster_item"
             pfMap:AddNode(meta, true)
-          elseif meta.spawn and meta.spawn ~= pfQuest_Loc["Exploration Mark"] then
+          elseif meta.spawntype and meta.spawntype == "Unit" and meta.spawn and not meta.itemreq then
             meta["x"], meta["y"], meta["priority"] = getcluster(data.coords, meta["quest"]..hash..map)
             meta["texture"] = pfQuestConfig.path.."\\img\\cluster_mob"
             pfMap:AddNode(meta, true)
@@ -1139,6 +1260,7 @@ function pfDatabase:SearchQuests(meta, maps)
       if quests[id]["start"] then
         -- units
         if quests[id]["start"]["U"] then
+          meta["QTYPE"] = "NPC_START"
           for _, unit in pairs(quests[id]["start"]["U"]) do
             if units[unit] and strfind(units[unit]["fac"] or pfaction, pfaction) then
               maps = pfDatabase:SearchMobID(unit, meta, maps)
@@ -1148,6 +1270,7 @@ function pfDatabase:SearchQuests(meta, maps)
 
         -- objects
         if quests[id]["start"]["O"] then
+          meta["QTYPE"] = "OBJECT_START"
           for _, object in pairs(quests[id]["start"]["O"]) do
             if objects[object] and strfind(objects[object]["fac"] or pfaction, pfaction) then
               maps = pfDatabase:SearchObjectID(object, meta, maps)

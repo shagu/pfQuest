@@ -9,6 +9,7 @@ pfDB = {
   ["professions"] = {},
   ["quests"] = {},
   ["refloot"] = {},
+  ["requirements"] = {},
   ["units"] = {},
   ["zones"] = {},
 }

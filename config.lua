@@ -114,8 +114,27 @@ pfQuest_defconfig = {
   ["showfestival"] = { -- Display Event & Daily Quests
     text = pfQuest_Loc["Display Event & Daily Quests"],
     default = "0", type = "checkbox", pos = { 2, 8 },
+=======
+  ["allquestgivers"] = { -- Display Available Quest Givers
+    text = pfQuest_Loc["Display Available Quest Givers"],
+    default = "1", type = "checkbox", pos = { 2, 3 },
   },
-
+  ["currentquestgivers"] = { -- Display Current Quest Givers
+    text = pfQuest_Loc["Display Current Quest Givers"],
+    default = "1", type = "checkbox", pos = { 2, 4 },
+  },
+  ["showlowlevel"] = { -- Display Low Level Quest Givers
+    text = pfQuest_Loc["Display Low Level Quest Givers"],
+    default = "0", type = "checkbox", pos = { 2, 5 },
+  },
+  ["showhighlevel"] = { -- Display Level+3 Questgivers
+    text = pfQuest_Loc["Display Level+3 Quest Givers"],
+    default = "1", type = "checkbox", pos = { 2, 6 },
+  },
+  ["showfestival"] = { -- Display Event & Daily Quests
+    text = pfQuest_Loc["Display Event & Daily Quests"],
+    default = "0", type = "checkbox", pos = { 2, 7 },
+  },
   ["_Routes_"] = {
     text = pfQuest_Loc["Routes"],
     default = nil, type = "header", pos = { 2, 9 },
