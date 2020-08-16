@@ -91,7 +91,7 @@ pfQuest_defconfig = {
     default = "1", type = "checkbox", pos = { 2, 2 },
   },
 ["showonlycluster"] = { -- Unified Quest Location Markers
-    text = pfQuest_Loc["Hide nodes with unified Quest Location Markers"],
+    text = pfQuest_Loc["Hide Nodes with Quest Markers"],
     default = "0", type = "checkbox", pos = { 2, 3 },
   },
  
