@@ -90,8 +90,8 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Unified Quest Location Markers"],
     default = "1", type = "checkbox", pos = { 2, 2 },
   },
-["showonlycluster"] = { -- Unified Quest Location Markers
-    text = pfQuest_Loc["Hide Nodes with Quest Markers"],
+["showonlyclusternodes"] = { -- Show only nodes for cluster on highlight
+    text = pfQuest_Loc["Show related nodes on mouseover"],
     default = "0", type = "checkbox", pos = { 2, 3 },
   },
  
