@@ -11,7 +11,6 @@ pfQuest_defconfig = {
     -- 1: All Quests; 2: Tracked; 3: Manual; 4: Hide
     text = nil, default = 1, type = nil, pos = nil,
   },
-
   ["_General_"] = {
     text = pfQuest_Loc["General"],
     default = nil, type = "header", pos = { 1, 1 },
@@ -48,14 +47,17 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Minimum Item Drop Chance"],
     default = "1", type = "text", pos = { 1, 9 },
   },
-
   ["_Map & Minimap_"] = {
     text = pfQuest_Loc["Map & Minimap"],
-    default = nil, type = "header", pos = { 1, 11 },
+    default = nil, type = "header", pos = { 1, 10 },
   },
   ["minimapnodes"] = { -- Enable Minimap Nodes
     text = pfQuest_Loc["Enable Minimap Nodes"],
-    default = "1", type = "checkbox", pos = { 1, 12 },
+    default = "1", type = "checkbox", pos = { 1, 11 },
+  },
+  ["minimaptip"] = {
+    text = pfQuest_Loc["Info: Press Control To Hide Nodes On Mouseover"],
+    default = "1",  type = "normal", pos = { 1, 12 },
   },
   ["cutoutminimap"] = { -- Use Cut-Out Minimap Node Icons
     text = pfQuest_Loc["Use Cut-Out Minimap Node Icons"],
@@ -90,50 +92,59 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Unified Quest Location Markers"],
     default = "1", type = "checkbox", pos = { 2, 2 },
   },
+  ["clustertip"] = {
+    text = pfQuest_Loc["Info: Press Control To Hide Markers On Mouseover"],
+    default = "1",  type = "normal", pos = { 2, 3 },
+  },
+  ["showrelatednodes"] = { -- Show only nodes that have a relation to mouseover node
+    text = pfQuest_Loc["Show Only Related Nodes On Mouseover"],
+    default = "0", type = "checkbox", pos = { 2, 4 },
+  },
+ 
   ["allquestgivers"] = { -- Display Available Quest Givers
     text = pfQuest_Loc["Display Available Quest Givers"],
-    default = "1", type = "checkbox", pos = { 2, 3 },
+    default = "1", type = "checkbox", pos = { 2, 5 },
   },
   ["currentquestgivers"] = { -- Display Current Quest Givers
     text = pfQuest_Loc["Display Current Quest Givers"],
-    default = "1", type = "checkbox", pos = { 2, 4 },
+    default = "1", type = "checkbox", pos = { 2, 6 },
   },
   ["showlowlevel"] = { -- Display Low Level Quest Givers
     text = pfQuest_Loc["Display Low Level Quest Givers"],
-    default = "0", type = "checkbox", pos = { 2, 5 },
+    default = "0", type = "checkbox", pos = { 2, 7 },
   },
   ["showhighlevel"] = { -- Display Level+3 Questgivers
     text = pfQuest_Loc["Display Level+3 Quest Givers"],
-    default = "1", type = "checkbox", pos = { 2, 6 },
+    default = "1", type = "checkbox", pos = { 2, 8 },
   },
   ["showfestival"] = { -- Display Event & Daily Quests
     text = pfQuest_Loc["Display Event & Daily Quests"],
-    default = "0", type = "checkbox", pos = { 2, 7 },
+    default = "0", type = "checkbox", pos = { 2, 9 },
   },
 
   ["_Routes_"] = {
     text = pfQuest_Loc["Routes"],
-    default = nil, type = "header", pos = { 2, 9 },
+    default = nil, type = "header", pos = { 2, 10 },
   },
   ["routes"] = { -- Show Route Between Objects
     text = pfQuest_Loc["Show Route Between Objects"],
-    default = "1", type = "checkbox", pos = { 2, 10 },
+    default = "1", type = "checkbox", pos = { 2, 11 },
   },
   ["routecluster"] = { -- Include Unified Quest Locations
     text = pfQuest_Loc["Include Unified Quest Locations"],
-    default = "1", type = "checkbox", pos = { 2, 11 },
+    default = "1", type = "checkbox", pos = { 2, 12 },
   },
   ["routeender"] = { -- Include Quest Enders
     text = pfQuest_Loc["Include Quest Enders"],
-    default = "1", type = "checkbox", pos = { 2, 12 },
+    default = "1", type = "checkbox", pos = { 2, 13 },
   },
   ["routestarter"] = { -- Include Quest Starters
     text = pfQuest_Loc["Include Quest Starters"],
-    default = "0", type = "checkbox", pos = { 2, 13 },
+    default = "0", type = "checkbox", pos = { 2, 14 },
   },
   ["arrow"] = { -- Show Arrow Along Routes
     text = pfQuest_Loc["Show Arrow Along Routes"],
-    default = "1", type = "checkbox", pos = { 2, 14 },
+    default = "1", type = "checkbox", pos = { 2, 15 },
   },
 
   ["_User Data_"] = {
@@ -320,7 +331,12 @@ function pfQuestConfig:CreateConfigEntries(config)
         frame.caption:SetPoint("LEFT", 10, 0)
         frame.caption:SetTextColor(.3,1,.8)
         frame.caption:SetFont(pfUI.font_default, pfUI_config.global.font_size+2, "OUTLINE")
-
+        
+       elseif data.type == "normal" then
+        frame.caption:SetPoint("LEFT", 20, 0)
+        frame.caption:SetTextColor(.3,1,.8)
+        frame.caption:SetFont(pfUI.font_default, pfUI_config.global.font_size-2, "OUTLINE")
+      
       -- checkbox
       elseif data.type == "checkbox" then
         frame.input = CreateFrame("CheckButton", nil, frame, "UICheckButtonTemplate")
