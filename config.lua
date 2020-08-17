@@ -77,9 +77,13 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Minimap Node Transparency"],
     default = "1.0", type = "text", pos = { 1, 17 },
   },
+  ["nodefade"] = { -- Node Fade Transparency
+    text = pfQuest_Loc["Node Fade Transparency"],
+    default = "0.3", type = "text", pos = { 1, 18 },
+  },
   ["mouseover"] = { -- Highlight Nodes On Mouseover
     text = pfQuest_Loc["Highlight Nodes On Mouseover"],
-    default = "1", type = "checkbox", pos = { 1, 18 },
+    default = "1", type = "checkbox", pos = { 1, 19 },
   },
 
   ["_Questing_"] = {
