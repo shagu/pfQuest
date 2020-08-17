@@ -517,6 +517,25 @@ function pfMap:NodeEnter()
     pfMap:ShowTooltip(meta, tooltip)
   end
 
+  -- add tooltip help if setting is enabled
+  if pfQuest_config["tooltiphelp"] == "1" then
+    local text = pfQuest_Loc["Use <Shift>-Click To Remove Nodes"]
+
+    if this.cluster then
+      text = pfQuest_Loc["Hold <Ctrl> To Hide Cluster"]
+    elseif tooltip == GameTooltip then
+      text = pfQuest_Loc["Hold <Ctrl> To Hide Minimap Nodes"]
+    elseif not this.texture then
+      text = pfQuest_Loc["Click Node To Change Color"]
+    elseif this.questid and this.texture and this.layer < 5 then
+      text = pfQuest_Loc["Use <Shift>-Click To Mark Quest As Done"]
+    end
+
+    -- update tooltip and sizes
+    tooltip:AddLine(text, .6, .6, .6)
+    tooltip:Show()
+  end
+
   pfMap.highlight = pfQuest_config["mouseover"] == "1" and this.title
 end
 
