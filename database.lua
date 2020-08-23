@@ -822,6 +822,7 @@ end
 -- Adds map nodes for each objective and involved units
 -- Returns its map table
 function pfDatabase:SearchQuestID(id, meta, maps)
+  if not quests[id] then return end
   local maps = maps or {}
   local meta = meta or {}
 
