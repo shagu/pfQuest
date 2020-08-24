@@ -9,10 +9,13 @@ local debugsql = {
   ["units"] = { "Iterate over all creatures using mangos data" },
   ["units_faction"] = { "Using mangos and client-data to find unit faction" },
   ["units_coords"] = { "Using mangos and client-data to find unit locations" },
-  ["units_script_objectmap"] = { "Using mangos data to identify the map in objects for script/event summoned units" },
-  ["units_script_itemmap"] = { "Using mangos data to identify the map in items for script/event summoned units" },
-  ["units_object_summoned"] = { "Using mangos data to search for summoned units based on their required summon gameobject position" },
-  ["units_creature_summoned"] = { "Using mangos data to search for summoned units based on the summoner creature position" },
+  ["units_event"] = { "Using mangos data to find spawns from events" },
+  ["units_event_map_object"] = { "Using mangos data to determine map based on object requirements associated with event" },
+  ["units_event_spell"] = { "Using mangos data to find spells associated with spawn" },
+  ["units_event_spell_map_object"] = { "Using mangos data to determine map based on objects associated with spawn spells" },
+  ["units_event_spell_map_item"] = { "Using mangos data to determine map based on items associated with spawn spells" },
+  ["units_summon_fixed"] = { "Using mangos data to find units that summon others and use their map with fixed spawn positions" },
+  ["units_summon_unknown"] = { "Using mangos data to find units that summon others and use their coordinates as target spawn positions" },
   --
   ["objects"] = { "Iterate over all gameobjects using mangos data" },
   ["objects_faction"] = { "Using mangos and client-data to find object faction" },
@@ -597,78 +600,127 @@ for _, expansion in pairs(config.expansions) do
           table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
         end
 
-        -- search for script summoned mobs
-        local event_scripts = {}
-        local query = mysql:execute('SELECT * FROM ' .. C.dbscripts_on_event .. ' WHERE command = 10 AND ' .. C.dbscripts_on_event .. '.datalong = ' .. creature_template[C.Entry])
-        while query:fetch(event_scripts, "a") do
-          local creatureid = event_scripts.datalong
-          local maps = {}
+        -- search for Event summons (fixed position)
+        -- [Gazban:2624, Maraudine Khan Guard:6069, Echeyakee:3475]
+        local dbscripts_on_event = {}
+        local query = mysql:execute('SELECT id as event, x as x, y as y FROM '..C.dbscripts_on_event..' WHERE command = 10 AND datalong = ' .. entry)
+        while query:fetch(dbscripts_on_event, "a") do
+          if debug("units_event") then break end
+          local event = tonumber(dbscripts_on_event.event)
+          local x = tonumber(dbscripts_on_event.x)
+          local y = tonumber(dbscripts_on_event.y)
+          local map = nil
 
-          -- try to identify the map via gameobject relations
-          local gameobject_template = {}
-          local query = mysql:execute('SELECT map FROM gameobject_template, gameobject WHERE gameobject_template.type = 10 AND gameobject_template.data2 = '.. event_scripts.id .. ' AND gameobject.id = gameobject_template.entry')
-          while query:fetch(gameobject_template, "a") do
-            if debug("units_script_objectmap") then break end
-            maps[tonumber(gameobject_template.map)] = true
+          -- guess map based on gameobject relation
+          -- [Gazban:2624]
+          local map_object = {}
+          local query = mysql:execute([[
+            SELECT map AS map FROM gameobject_template, gameobject
+            WHERE gameobject_template.type = 10
+              AND gameobject_template.data2 = ]]..event..[[
+              AND gameobject.id = gameobject_template.entry
+            GROUP BY gameobject.map
+          ]])
+          while query:fetch(map_object, "a") do
+            if debug("units_event_map_object") then break end
+            map = map or tonumber(map_object.map)
           end
 
-          -- try to identify the map via item relations
-          local item_template = {}
-          local query = mysql:execute('SELECT item_template.'..C.Map..' as map FROM item_template, spell_template WHERE item_template.spellid_1 = spell_template.'..C.Id..' AND spell_template.EffectMiscValue2 = '.. event_scripts.id)
-          while query:fetch(item_template, "a") do
-            if debug("units_script_itemmap") then break end
-            maps[tonumber(item_template.map)] = true
+          -- guess map based on spell relation
+          local spell_template = {}
+          local query = mysql:execute([[
+            SELECT ]]..C.Id..[[ AS spell, ]]..C.RequiresSpellFocus..[[ AS focus FROM spell_template
+            WHERE ( EffectMiscValue1 = ]]..event..[[ AND effect1 = 61 )
+               OR ( EffectMiscValue2 = ]]..event..[[ AND effect2 = 61 )
+               OR ( EffectMiscValue3 = ]]..event..[[ AND effect3 = 61 )
+          ]])
+          while query:fetch(spell_template, "a") do
+            if debug("units_event_spell") then break end
+            local spell = tonumber(spell_template.spell)
+            local focus = tonumber(spell_template.focus)
+
+            -- guess map based on gameobject target
+            -- [Echeyakee:3475]
+            local gameobject_template = {}
+            local query = mysql:execute([[
+              SELECT map as map FROM gameobject_template, gameobject
+              WHERE gameobject.id = gameobject_template.entry
+                AND gameobject_template.data0 > 0
+                AND gameobject_template.type = 8
+                AND gameobject_template.data0 = ]]..focus..[[
+              GROUP BY map
+            ]])
+            while query:fetch(gameobject_template, "a") do
+              if debug("units_event_spell_map_object") then break end
+              map = map or tonumber(gameobject_template.map)
+            end
+
+            -- guess map based on item map/area bond
+            -- [Maraudine Khan Guard:6069]
+            local item_template = {}
+            local query = mysql:execute([[
+              SELECT ]]..C.Map..[[ as map FROM item_template
+              WHERE spelltrigger_1 = 0 AND spellid_1 = ]]..spell..[[
+              GROUP BY map
+            ]])
+            while query:fetch(item_template, "a") do
+              if debug("units_event_spell_map_item") then break end
+              map = map or tonumber(item_template.map)
+            end
           end
 
-          -- add script spawns for all identified maps
-          for map in pairs(maps) do
-            for id, coords in pairs(GetCustomCoords(map, event_scripts.x, event_scripts.y)) do
+          if map then -- in case we found a map, add the coordinates
+            for id, coords in pairs(GetCustomCoords(map, x, y)) do
               local x, y, zone, respawn = table.unpack(coords)
               table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
             end
           end
+        end
 
-          -- add gameobject requirement positions
-          local spell_template = {}
-          local query = mysql:execute('SELECT * FROM spell_template WHERE '..C.RequiresSpellFocus..' > 0 AND spell_template.effectMiscValue1 = ' .. event_scripts.id)
-          while query:fetch(spell_template, "a") do
-            local spellfocus = spell_template[C.RequiresSpellFocus]
-
-            local gameobject_template = {}
-            local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. spellfocus)
-            while query:fetch(gameobject_template, "a") do
-              if debug("units_object_summoned") then break end
-              local object = gameobject_template.entry
-              for id, coords in pairs(GetGameObjectCoords(object)) do
-                local x, y, zone, respawn = table.unpack(coords)
-                table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
-              end
-            end
+        -- search for AI summons (fixed position)
+        -- [Verog Derwisch:3395]
+        local creature_ai_scripts = {}
+        local query = mysql:execute(dbtype == "vmangos" and [[
+          SELECT creature.map AS map, x AS x, y AS y FROM creature_ai_scripts, creature_ai_events, creature
+          WHERE creature.id = creature_ai_events.creature_id
+            AND creature_ai_scripts.command = 10
+            AND creature_ai_scripts.id = creature_ai_events.id
+            AND creature_ai_scripts.datalong = ]]..entry..[[
+            AND x != 0 AND y != 0
+          GROUP BY map
+        ]] or [[
+          SELECT creature.map as map, creature_ai_summons.position_x AS x, creature_ai_summons.position_y AS y FROM creature_ai_scripts
+          LEFT JOIN creature_ai_summons ON creature_ai_scripts.action2_type = 32 AND creature_ai_scripts.action2_param3 = creature_ai_summons.id
+          LEFT JOIN creature ON creature_ai_scripts.creature_id = creature.id
+          WHERE action2_type = 32
+            AND action2_param1 = ]]..entry..[[
+          GROUP BY map
+        ]])
+        while query:fetch(creature_ai_scripts, "a") do
+          if debug("units_summon_fixed") then break end
+          for id, coords in pairs(GetCustomCoords(tonumber(creature_ai_scripts.map), tonumber(creature_ai_scripts.x), tonumber(creature_ai_scripts.y))) do
+            local x, y, zone, respawn = table.unpack(coords)
+            table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
           end
         end
 
-        -- search for creature summoned mobs
-        local event_scripts = {}
+        -- search for AI summons (summoner position)
+        -- [Darrowshire Spirit:11064]
+        local creature_ai_scripts = {}
         local query = mysql:execute(dbtype == "vmangos" and [[
-          SELECT creature_ai_events.creature_id AS summoner, creature_ai_scripts.datalong AS spawn
-          FROM creature_ai_scripts, creature_ai_events
-
+          SELECT creature_ai_events.creature_id AS summoner FROM creature_ai_scripts, creature_ai_events
           WHERE creature_ai_scripts.command = 10
             AND creature_ai_scripts.id = creature_ai_events.id
-            AND creature_ai_scripts.datalong = ]] .. creature_template[C.Entry] .. [[
+            AND creature_ai_scripts.datalong = ]]..entry..[[
+            AND x = 0 AND y = 0
         ]] or [[
-          SELECT creature_ai_scripts.creature_id AS summoner, spell_template.EffectMiscValue1 AS spawn
-          FROM creature_ai_scripts, spell_template
-
-          WHERE spell_template.Effect1 = 28
-            AND creature_ai_scripts.action1_param1 = spell_template.id
-            AND creature_ai_scripts.action1_type = 11
-            AND spell_template.EffectMiscValue1 = ]] .. creature_template[C.Entry] .. [[
+          SELECT creature_id AS summoner FROM spell_template
+          LEFT JOIN creature_ai_scripts ON action1_type = 11 AND action1_param1 = spell_template.Id
+          WHERE spell_template.Effect1 = 28 AND creature_id > 0 AND spell_template.EffectMiscValue1 = ]]..entry..[[
         ]])
-        while query:fetch(event_scripts, "a") do
-          if debug("units_creature_summoned") then break end
-          local summoner = event_scripts.summoner
-          for id, coords in pairs(GetCreatureCoords(summoner)) do
+        while query:fetch(creature_ai_scripts, "a") do
+          if debug("units_summon_unknown") then break end
+          for id, coords in pairs(GetCreatureCoords(tonumber(creature_ai_scripts.summoner))) do
             local x, y, zone, respawn = table.unpack(coords)
             table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
           end
