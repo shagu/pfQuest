@@ -43,6 +43,7 @@ local debugsql = {
   ["quests_areatrigger"] = { "Using mangos data to find associated areatriggers" },
   ["quests_starterunit"] = { "Using mangos data to search for quest starter units" },
   ["quests_starterobject"] = { "Using mangos data to search for quest starter objects" },
+  ["quests_starteritem"] = { "Using mangos data to search for quest starter items" },
   ["quests_enderunit"] = { "Using mangos data to search for quest ender units" },
   ["quests_enderobject"] = { "Using mangos data to search for quest ender objects" },
   --
@@ -116,6 +117,7 @@ local config = {
     ["NpcFlags"] = "npc_flags",
     ["EffectTriggerSpell"] = "effectTriggerSpell",
     ["Map"] = "map_bound",
+    ["startquest"] = "start_quest",
   },
 }
 
@@ -1126,6 +1128,17 @@ for _, expansion in pairs(config.expansions) do
           pfDB["quests"][data][entry]["start"] = pfDB["quests"][data][entry]["start"] or {}
           pfDB["quests"][data][entry]["start"]["O"] = pfDB["quests"][data][entry]["start"]["O"] or {}
           table.insert(pfDB["quests"][data][entry]["start"]["O"], tonumber(gameobject_questrelation.id))
+        end
+
+        local item_template = {}
+        local sql = [[
+          SELECT entry as id FROM item_template WHERE ]] .. C.startquest .. [[ = ]] .. quest_template.entry
+        local query = mysql:execute(sql)
+        while query:fetch(item_template, "a") do
+          if debug("quests_starteritem") then break end
+          pfDB["quests"][data][entry]["start"] = pfDB["quests"][data][entry]["start"] or {}
+          pfDB["quests"][data][entry]["start"]["I"] = pfDB["quests"][data][entry]["start"]["I"] or {}
+          table.insert(pfDB["quests"][data][entry]["start"]["I"], tonumber(item_template.id))
         end
       end
 
