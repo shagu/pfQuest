@@ -665,6 +665,9 @@ for _, expansion in pairs(config.expansions) do
             ]])
             while query:fetch(item_template, "a") do
               if debug("units_event_spell_map_item") then break end
+              -- Zul'Farrak Executioner Key is not bound to map.
+              -- Ignoring its unlocking spell that spawns sandfuries.
+              if spell == 10738 then break end
               map = map or tonumber(item_template.map)
             end
           end
