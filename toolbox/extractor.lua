@@ -1136,6 +1136,17 @@ for _, expansion in pairs(config.expansions) do
         local query = mysql:execute(sql)
         while query:fetch(item_template, "a") do
           if debug("quests_starteritem") then break end
+
+          -- remove quest start items from objectives
+          if pfDB["quests"][data][entry]["obj"] and pfDB["quests"][data][entry]["obj"]["I"] then
+            for id, objective in pairs(pfDB["quests"][data][entry]["obj"]["I"]) do
+              if objective == tonumber(item_template.id) then
+                pfDB["quests"][data][entry]["obj"]["I"][id] = nil
+              end
+            end
+          end
+
+          -- add item to quest starters
           pfDB["quests"][data][entry]["start"] = pfDB["quests"][data][entry]["start"] or {}
           pfDB["quests"][data][entry]["start"]["I"] = pfDB["quests"][data][entry]["start"]["I"] or {}
           table.insert(pfDB["quests"][data][entry]["start"]["I"], tonumber(item_template.id))
