@@ -66,14 +66,14 @@ local function DrawLine(path,x,y,nx,ny,hl,minimap)
     -- calculate drawlayer size
     xdraw = pfMap.drawlayer:GetWidth() / (mapZoom / mapWidth) / 100
     ydraw = pfMap.drawlayer:GetHeight() / (mapZoom / mapHeight) / 100
-    zoom = mapZoom / 1000
+    zoom = mapZoom / 500
   end
 
   -- general
   local dx, dy = x - nx, y - ny
   local dots = ceil(math.sqrt(dx*1.5*dx*1.5+dy*dy)) / zoom
 
-  for i=2, dots-2 do
+  for i=(minimap and 1 or 2), dots-(minimap and 1 or 2) do
     local xpos = nx + dx/dots*i
     local ypos = ny + dy/dots*i
 
@@ -106,7 +106,7 @@ local function DrawLine(path,x,y,nx,ny,hl,minimap)
       path[nline]:SetHeight(4)
       path[nline]:SetTexture(pfQuestConfig.path.."\\img\\route")
       if hl and minimap then
-        path[nline]:SetVertexColor(1,1,1,.25)
+        path[nline]:SetVertexColor(1,1,1,.5)
       elseif hl then
         path[nline]:SetVertexColor(.3,1,.8,1)
       end
