@@ -286,7 +286,12 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
     this.description:SetText(target[3].description or "")
   end
 
-  this.distance:SetText("|cffaaaaaaDistance: "..string.format("%.1f", floor(target[4]*10)/10))
+  -- only refresh distance text on change
+  local distance = floor(target[4]*10)/10
+  if distance ~= this.distance.number then
+    this.distance:SetText("|cffaaaaaaDistance: "..string.format("%.1f", distance))
+    this.distance.number = distance
+  end
 
   -- update transparencies
   this.texture:SetAlpha(texalpha)
