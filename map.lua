@@ -734,9 +734,6 @@ end
 
 local coord_cache = {}
 function pfMap:UpdateMinimap()
-  -- throttle minimap updates
-  if ( this.throttle or .2) > GetTime() then return else this.throttle = GetTime() + .05 end
-
   -- check for disabled minimap nodes
   if pfQuest_config["minimapnodes"] == "0" then
     return
@@ -856,14 +853,16 @@ end)
 
 local hlstate, shiftstate, transition = nil, nil, nil
 pfMap:SetScript("OnUpdate", function()
+  -- limit all map updates to once per .05 seconds
+  if ( this.throttle or .2) > GetTime() then return else this.throttle = GetTime() + .05 end
+
+  -- process node updates if required
   if pfMap.queue_update then
     pfMap:UpdateNodes()
   end
 
-  pfMap:UpdateMinimap()
-
   -- handle highlights and animations
-  local hidecluster = (IsControlKeyDown() and MouseIsOver(WorldMapFrame) or nil)
+  local hidecluster = IsControlKeyDown() and MouseIsOver(WorldMapFrame) or nil
   if pfMap.queue_update or transition or pfMap.highlight ~= hlstate or shiftstate ~= hidecluster then
     hlstate, shiftstate, transition = pfMap.highlight, hidecluster, nil
 
@@ -888,6 +887,9 @@ pfMap:SetScript("OnUpdate", function()
       end
     end
   end
+
+  -- refresh minimap nodes
+  pfMap:UpdateMinimap()
 
   pfMap.queue_update = nil
 end)
