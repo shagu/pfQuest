@@ -327,7 +327,10 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
     if target[3].texture then
       this.texture:SetTexture(target[3].texture)
 
-      if target[3].vertex then
+      if target[3].vertex and ( target[3].vertex[1] > 0
+        or target[3].vertex[2] > 0
+        or target[3].vertex[3] > 0 )
+      then
         this.texture:SetVertexColor(unpack(target[3].vertex))
       else
         this.texture:SetVertexColor(1,1,1,1)
