@@ -851,10 +851,9 @@ pfMap:SetScript("OnEvent", function()
   end
 end)
 
-local hlstate, shiftstate, transition = nil, nil, nil
+local hlstate, shiftstate, transition, hidecluster = nil, nil, nil, nil
 pfMap:SetScript("OnUpdate", function()
   -- handle highlights and animations
-  local hidecluster = IsControlKeyDown() and MouseIsOver(WorldMapFrame) or nil
   if pfMap.queue_update or transition or pfMap.highlight ~= hlstate or shiftstate ~= hidecluster then
     hlstate, shiftstate, transition = pfMap.highlight, hidecluster, nil
 
@@ -890,6 +889,13 @@ pfMap:SetScript("OnUpdate", function()
 
   -- refresh minimap
   pfMap:UpdateMinimap()
+
+  -- update hidecluster detection
+  if IsControlKeyDown() then
+    hidecluster = MouseIsOver(WorldMapFrame)
+  else
+    hidecluster = nil
+  end
 
   pfMap.queue_update = nil
 end)
