@@ -776,9 +776,6 @@ function pfMap:UpdateMinimap()
   local mapWidth = minimap_sizes[mapID] and minimap_sizes[mapID][1] or 0
   local mapHeight = minimap_sizes[mapID] and minimap_sizes[mapID][2] or 0
 
-  local xRange = mapZoom / mapHeight * pfMap.drawlayer:GetHeight()/2 -- 16 as icon size
-  local yRange = mapZoom / mapWidth * pfMap.drawlayer:GetWidth()/2 -- 16 as icon size
-
   local xScale = mapZoom / mapWidth
   local yScale = mapZoom / mapHeight
 
