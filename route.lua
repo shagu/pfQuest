@@ -36,7 +36,8 @@ end
 local objectivepath = {}
 
 -- connection between player and the first objective
-local playerpath = {}
+local playerpath = {} -- worldmap
+local mplayerpath = {} -- minimap
 
 local function ClearPath(path)
   for id, tex in pairs(path) do
@@ -176,6 +177,7 @@ pfQuest.route:SetScript("OnUpdate", function()
   if not this.coords[1] or not this.coords[1][4] or pfQuest_config["routes"] == "0" then
     ClearPath(objectivepath)
     ClearPath(playerpath)
+    ClearPath(mplayerpath)
     return
   end
 
@@ -215,10 +217,17 @@ pfQuest.route:SetScript("OnUpdate", function()
   if wrongmap then
     -- hide player-to-object path
     ClearPath(playerpath)
+    ClearPath(mplayerpath)
   else
     -- draw player-to-object path
     ClearPath(playerpath)
+    ClearPath(mplayerpath)
     DrawLine(playerpath,xplayer*100,yplayer*100,this.coords[1][1],this.coords[1][2],true)
+
+    -- also draw minimap path if enabled
+    if pfQuest_config["routeminimap"] == "1" then
+      DrawLine(mplayerpath,xplayer*100,yplayer*100,this.coords[1][1],this.coords[1][2],true,true)
+    end
   end
 end)
 
