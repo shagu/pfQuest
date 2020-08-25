@@ -172,6 +172,7 @@ pfDB["units"]["esES"] = {
   [415] = "Verner Bonmete",
   [416] = "Diablillo",
   [417] = "Manáfago",
+  [420] = "Shagu",
   [422] = "Comecarnes múrloc",
   [423] = "Bastardo de Crestagrana",
   [424] = "Furtivo de Crestagrana",

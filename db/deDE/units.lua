@@ -172,6 +172,7 @@ pfDB["units"]["deDE"] = {
   [415] = "Verner Osgood",
   [416] = "Wichtel",
   [417] = "Teufelsjäger",
+  [420] = "Shagu",
   [422] = "Murlocfleischfresser",
   [423] = "Bastard der Rotkammgnolle",
   [424] = "Wilderer der Rotkammgnolle",

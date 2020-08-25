@@ -172,6 +172,7 @@ pfDB["units"]["enUS"] = {
   [415] = "Verner Osgood",
   [416] = "Imp",
   [417] = "Felhunter",
+  [420] = "Shagu",
   [422] = "Murloc Flesheater",
   [423] = "Redridge Mongrel",
   [424] = "Redridge Poacher",

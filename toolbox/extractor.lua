@@ -735,6 +735,38 @@ for _, expansion in pairs(config.expansions) do
         pfDB["units"][data][entry]["coords"] = removedupes(pfDB["units"][data][entry]["coords"])
       end
     end
+
+    do -- Patch creature table with manual entries
+      -- Only use this method of adding creatures if there is REALLY no way
+      -- to extract data out of the databases of the mangos cores. If the list
+      -- becomes too big, this should be separated to another file.
+      pfDB["units"][data][420] = {
+        ["coords"] = { [1] = { 69, 21, 148, 300 } },
+        ["fac"] = "H", ["lvl"] = "60",
+      }
+
+      do -- Screecher Spirit:8612
+        -- set spawn points to each possible screecher in feralas
+        pfDB["units"][data][8612]["coords"] = {}
+
+        if pfDB["units"][data][5308] and pfDB["units"][data][5308]["coords"] then
+          for id, coords in pairs(pfDB["units"][data][5308]["coords"]) do
+            table.insert(pfDB["units"][data][8612]["coords"], coords)
+          end
+        end
+
+        if pfDB["units"][data][5307] and pfDB["units"][data][5307]["coords"] then
+          for id, coords in pairs(pfDB["units"][data][5307]["coords"]) do
+            table.insert(pfDB["units"][data][8612]["coords"], coords)
+          end
+        end
+      end
+
+      do -- Mokk the Savage:1514
+        -- taken from https://classic.wowhead.com/npc=1514/mokk-the-savage
+        pfDB["units"][data][1514]["coords"] = { [1] = { 35.2, 60.4, 33, 0 } }
+      end
+    end
   end
 
   do -- objects
@@ -1369,7 +1401,7 @@ for _, expansion in pairs(config.expansions) do
           if not name_loc or name_loc == "" then name_loc = name or "" end
           if name_loc and name_loc ~= "" then
             local locale = loc .. ( expansion ~= "vanilla"  and "-" .. expansion or "" )
-            pfDB["units"][locale] = pfDB["units"][locale] or {}
+            pfDB["units"][locale] = pfDB["units"][locale] or { [420] = "Shagu" }
             pfDB["units"][locale][entry] = sanitize(name_loc)
           end
         end

@@ -172,6 +172,7 @@ pfDB["units"]["frFR"] = {
   [415] = "Verner Osgood",
   [416] = "Diablotin",
   [417] = "Chasseur corrompu",
+  [420] = "Shagu",
   [422] = "Dévoreur murloc",
   [423] = "Bâtard des Carmines",
   [424] = "Braconnier des Carmines",
