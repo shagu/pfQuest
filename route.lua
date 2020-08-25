@@ -99,6 +99,9 @@ pfQuest.route:SetScript("OnUpdate", function()
   -- limit distance and route updates to once per .1 seconds
   if ( this.tick or 5) > GetTime() and lastpos == curpos then return else this.tick = GetTime() + 1 end
 
+  -- limit to a maxium of each .05 seconds even on position change
+  if ( this.throttle or .2) > GetTime() then return else this.throttle = GetTime() + .05 end
+
   -- save current position
   lastpos = curpos
 
