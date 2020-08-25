@@ -66,7 +66,7 @@ local function DrawLine(path,x,y,nx,ny,hl,minimap)
     -- calculate drawlayer size
     xdraw = pfMap.drawlayer:GetWidth() / (mapZoom / mapWidth) / 100
     ydraw = pfMap.drawlayer:GetHeight() / (mapZoom / mapHeight) / 100
-    zoom = mapZoom / 500
+    zoom = (((mapZoom / mapWidth))+((mapZoom / mapHeight))) * 3
   end
 
   -- general
