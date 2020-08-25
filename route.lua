@@ -56,7 +56,7 @@ local function DrawLine(path,x,y,nx,ny,hl)
     xpos = xpos / 100 * WorldMapButton:GetWidth()
     ypos = ypos / 100 * WorldMapButton:GetHeight()
 
-    WorldMapButton.routes = WorldMapButton.routes or CreateFrame("Frame", nil, pfQuest.route.drawlayer)
+    WorldMapButton.routes = WorldMapButton.routes or CreateFrame("Frame", "pfQuestRouteDisplay", pfQuest.route.drawlayer)
     WorldMapButton.routes:SetAllPoints()
 
     local nline = tablesize(path) + 1
