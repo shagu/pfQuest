@@ -70,7 +70,13 @@ tracker:SetScript("OnEvent", function()
 end)
 
 tracker:SetScript("OnMouseDown",function() this:StartMoving() end)
-tracker:SetScript("OnMouseUp",function() this:StopMovingOrSizing() end)
+tracker:SetScript("OnMouseUp",function()
+  this:StopMovingOrSizing()
+  local anchor, x, y = pfUI.api.ConvertFrameAnchor(this, pfUI.api.GetBestAnchor(this))
+  this:ClearAllPoints()
+  this:SetPoint(anchor, x, y)
+end)
+
 tracker:SetScript("OnUpdate", function()
   if WorldMapFrame:IsShown() then
     if this.strata ~= "FULLSCREEN_DIALOG" then
