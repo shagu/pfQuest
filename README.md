@@ -1,5 +1,5 @@
 # pfQuest
-<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/tooltips.png" float="right" align="right" width="25%">
+<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/arrow.jpg" float="right" align="right" width="25%">
 This is an addon for World of Warcraft Vanilla (1.12) and The Burning Crusade (2.4.3). It helps players to find several ingame objects and quests. The addon reads questobjectives, parses them and uses its internal database to plot the found matches on the world- and minimap. It ships with a GUI to browse through all known objects. If one of the items is not yet available on your realm, you'll see a [?] in front of the name.
 
 The addon is not designed to be a quest- or tourguide, instead the goals are to provide an accurate in-game version of [AoWoW](http://db.vanillagaming.org/) or [Wowhead](http://www.wowhead.com/). The vanilla version is powered by the database of [VMaNGOS](https://github.com/vmangos). The Burning Crusade version is using data from the [CMaNGOS](https://github.com/cmangos) project with translations taken from [MaNGOS Extras](https://github.com/MangosExtras).
@@ -55,11 +55,10 @@ The development version includes databases of all languages and client expansion
 The addon ships an entire database of all spawns, objects, items and quests and therefore includes a huge database (~80 MB incl. all locales) that gets loaded into memory on game launch. However, the memory usage of pfQuest is persistent and does not increase any further over time, so there's nothing bad on performance at all. Depending on the download you pick (especially the full packages), you might see a message that warns you about an addon consuming too much memory. To get rid of that warning, you can set the addon memory limit to `0` which reads as `no limit`. This option can be found in the [character selection screen](https://i.imgur.com/rZXwaK0.jpg).
 
 # Map & Minimap Nodes
+<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/arrow.jpg" width="35.8%" align="left">
+<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/minimap-nodes.png" width="59.25%">
 <img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/map-quests.png" width="55.35%" align="left">
 <img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/map-spawnpoints.png" width="39.65%">
-
-<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/map-lootchance.png" width="45%" align="left">
-<img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/minimap-nodes.png" width="50%">
 
 # Auto-Tracking
 <img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/map-autotrack.png" float="right" align="right" width="30%">
