@@ -191,10 +191,17 @@ pfQuest.route.arrow:SetScript("OnDragStop", function()
 end)
 
 local invalid
+local xplayer, yplayer, wrongmap, wrongmap
+local xDelta, yDelta, dir, angle
+local player, perc, column, row, xstart, ystart, xend, yend
+local area, alpha, texalpha, color
+local defcolor = "|cffffcc00"
+local r, g, b
+
 pfQuest.route.arrow:SetScript("OnUpdate", function()
-  local xplayer, yplayer = GetPlayerMapPosition("player")
-  local wrongmap = xplayer == 0 and yplayer == 0 and true or nil
-  local target = this.parent.coords and this.parent.coords[1] and this.parent.coords[1][4] and this.parent.coords[1] or nil
+  xplayer, yplayer = GetPlayerMapPosition("player")
+  wrongmap = xplayer == 0 and yplayer == 0 and true or nil
+  target = this.parent.coords and this.parent.coords[1] and this.parent.coords[1][4] and this.parent.coords[1] or nil
 
   -- disable arrow on invalid map/route
   if not target or wrongmap or pfQuest_config["arrow"] == "0" then
@@ -212,25 +219,24 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
   -- arrow positioning stolen from TomTomVanilla.
   -- all credits to the original authors:
   -- https://github.com/cralor/TomTomVanilla
-  local xDelta = (target[1] - xplayer*100)*1.5
-  local yDelta = (target[2] - yplayer*100)
-  local dir = atan2(xDelta, -(yDelta))
+  xDelta = (target[1] - xplayer*100)*1.5
+  yDelta = (target[2] - yplayer*100)
+  dir = atan2(xDelta, -(yDelta))
   dir = dir > 0 and (math.pi*2) - dir or -dir
+  if dir < 0 then dir = dir + 360 end
+  angle = math.rad(dir)
 
-  local degtemp = dir
-  if degtemp < 0 then degtemp = degtemp + 360 end
-  local angle = math.rad(degtemp)
-  local player = pfQuestCompat.GetPlayerFacing()
+  player = pfQuestCompat.GetPlayerFacing()
   angle = angle - player
-  local perc = math.abs(((math.pi - math.abs(angle)) / math.pi))
-  local r, g, b = pfUI.api.GetColorGradient(perc)
+  perc = math.abs(((math.pi - math.abs(angle)) / math.pi))
+  r, g, b = pfUI.api.GetColorGradient(perc)
   cell = modulo(floor(angle / (math.pi*2) * 108 + 0.5), 108)
-  local column = modulo(cell, 9)
-  local row = floor(cell / 9)
-  local xstart = (column * 56) / 512
-  local ystart = (row * 42) / 512
-  local xend = ((column + 1) * 56) / 512
-  local yend = ((row + 1) * 42) / 512
+  column = modulo(cell, 9)
+  row = floor(cell / 9)
+  xstart = (column * 56) / 512
+  ystart = (row * 42) / 512
+  xend = ((column + 1) * 56) / 512
+  yend = ((row + 1) * 42) / 512
 
   -- guess area based on node count
   local area = target[3].priority and target[3].priority or 1
@@ -249,7 +255,7 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
   r, g, b = r + texalpha, g + texalpha, b + texalpha
 
   -- calculate difficulty color
-  local color = "|cffffcc00"
+  color = defcolor
   if tonumber(target[3]["qlvl"]) then
     color = pfMap:HexDifficultyColor(tonumber(target[3]["qlvl"]))
   end
