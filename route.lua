@@ -110,8 +110,11 @@ pfQuest.route:SetScript("OnUpdate", function()
     end
   end
 
-  -- sort all coords by distance
-  table.sort(this.coords, function(a,b) return a[4] < b[4] end)
+  -- sort all coords by distance only once per second
+  if not this.recalculate or this.recalculate < GetTime() then
+    table.sort(this.coords, function(a,b) return a[4] < b[4] end)
+    this.recalculate = GetTime() + 1
+  end
 
   -- show arrow when route exists and is stable
   if not wrongmap and this.coords[1] and this.coords[1][4] and not this.arrow:IsShown() and pfQuest_config["arrow"] == "1" and GetTime() > completed + 1 then
@@ -229,7 +232,7 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
   player = pfQuestCompat.GetPlayerFacing()
   angle = angle - player
   perc = math.abs(((math.pi - math.abs(angle)) / math.pi))
-  r, g, b = pfUI.api.GetColorGradient(perc)
+  r, g, b = pfUI.api.GetColorGradient(floor(perc*100)/100)
   cell = modulo(floor(angle / (math.pi*2) * 108 + 0.5), 108)
   column = modulo(cell, 9)
   row = floor(cell / 9)
