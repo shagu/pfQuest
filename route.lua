@@ -45,34 +45,82 @@ local function ClearPath(path)
   end
 end
 
-local function DrawLine(path,x,y,nx,ny,hl)
-  local dx,dy = x - nx, y - ny
-  local dots = ceil(math.sqrt(dx*1.5*dx*1.5+dy*dy))
+local function DrawLine(path,x,y,nx,ny,hl,minimap)
+  local display = true
+  local zoom = 1
+
+  -- calculate minimap variables
+  local xplayer, yplayer, xdraw, ydraw
+  if minimap then
+    -- player coords
+    xplayer, yplayer = GetPlayerMapPosition("player")
+    xplayer, yplayer = xplayer * 100, yplayer * 100
+
+    -- query minimap zoom/size data
+    local mZoom = pfMap.drawlayer:GetZoom()
+    local mapID = pfMap:GetMapIDByName(GetRealZoneText())
+    local mapZoom = pfMap.minimap_zoom[pfMap.minimap_indoor()][mZoom]
+    local mapWidth = pfMap.minimap_sizes[mapID] and pfMap.minimap_sizes[mapID][1] or 0
+    local mapHeight = pfMap.minimap_sizes[mapID] and pfMap.minimap_sizes[mapID][2] or 0
+
+    -- calculate drawlayer size
+    xdraw = pfMap.drawlayer:GetWidth() / (mapZoom / mapWidth) / 100
+    ydraw = pfMap.drawlayer:GetHeight() / (mapZoom / mapHeight) / 100
+    zoom = mapZoom / 1000
+  end
+
+  -- general
+  local dx, dy = x - nx, y - ny
+  local dots = ceil(math.sqrt(dx*1.5*dx*1.5+dy*dy)) / zoom
 
   for i=2, dots-2 do
     local xpos = nx + dx/dots*i
     local ypos = ny + dy/dots*i
 
-    xpos = xpos / 100 * WorldMapButton:GetWidth()
-    ypos = ypos / 100 * WorldMapButton:GetHeight()
+    if minimap then
+      -- adjust values to minimap
+      xpos = ( xplayer - xpos ) * xdraw
+      ypos = ( yplayer - ypos ) * ydraw
 
-    WorldMapButton.routes = WorldMapButton.routes or CreateFrame("Frame", "pfQuestRouteDisplay", pfQuest.route.drawlayer)
-    WorldMapButton.routes:SetAllPoints()
-
-    local nline = tablesize(path) + 1
-    for id, tex in pairs(path) do
-      if not tex.enable then nline = id break end
+      -- check if dot should be visible
+      if pfUI.minimap then
+        display = ( abs(xpos) + 1 < pfMap.drawlayer:GetWidth() / 2 and abs(ypos) + 1 < pfMap.drawlayer:GetHeight()/2 ) and true or nil
+      else
+        local distance = sqrt(xpos * xpos + ypos * ypos)
+        display = ( distance + 1 < pfMap.drawlayer:GetWidth() / 2 ) and true or nil
+      end
+    else
+      -- adjust values to worldmap
+      xpos = xpos / 100 * WorldMapButton:GetWidth()
+      ypos = ypos / 100 * WorldMapButton:GetHeight()
     end
 
-    path[nline] = path[nline] or WorldMapButton.routes:CreateTexture(nil, "OVERLAY")
-    path[nline]:SetWidth(4)
-    path[nline]:SetHeight(4)
-    path[nline]:SetTexture(pfQuestConfig.path.."\\img\\route")
-    if hl then path[nline]:SetVertexColor(.3,1,.8,1) end
-    path[nline]:ClearAllPoints()
-    path[nline]:SetPoint("CENTER", WorldMapButton, "TOPLEFT", xpos, -ypos)
-    path[nline]:Show()
-    path[nline].enable = true
+    if display then
+      local nline = tablesize(path) + 1
+      for id, tex in pairs(path) do
+        if not tex.enable then nline = id break end
+      end
+
+      path[nline] = path[nline] or (minimap and pfMap.drawlayer or WorldMapButton.routes):CreateTexture(nil, "OVERLAY")
+      path[nline]:SetWidth(4)
+      path[nline]:SetHeight(4)
+      path[nline]:SetTexture(pfQuestConfig.path.."\\img\\route")
+      if hl and minimap then
+        path[nline]:SetVertexColor(1,1,1,.25)
+      elseif hl then
+        path[nline]:SetVertexColor(.3,1,.8,1)
+      end
+      path[nline]:ClearAllPoints()
+
+      if minimap then -- draw minimap
+        path[nline]:SetPoint("CENTER", pfMap.drawlayer, "CENTER", -xpos, ypos)
+      else -- draw worldmap
+        path[nline]:SetPoint("CENTER", WorldMapButton, "TOPLEFT", xpos, -ypos)
+      end
+
+      path[nline]:Show()
+      path[nline].enable = true
+    end
   end
 end
 
@@ -177,6 +225,9 @@ end)
 pfQuest.route.drawlayer = CreateFrame("Frame", "pfQuestRouteDrawLayer", WorldMapButton)
 pfQuest.route.drawlayer:SetFrameLevel(113)
 pfQuest.route.drawlayer:SetAllPoints()
+
+WorldMapButton.routes = CreateFrame("Frame", "pfQuestRouteDisplay", pfQuest.route.drawlayer)
+WorldMapButton.routes:SetAllPoints()
 
 pfQuest.route.arrow = CreateFrame("Frame", "pfQuestRouteArrow", UIParent)
 pfQuest.route.arrow:SetPoint("CENTER", 0, -100)
