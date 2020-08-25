@@ -853,14 +853,6 @@ end)
 
 local hlstate, shiftstate, transition = nil, nil, nil
 pfMap:SetScript("OnUpdate", function()
-  -- limit all map updates to once per .05 seconds
-  if ( this.throttle or .2) > GetTime() then return else this.throttle = GetTime() + .05 end
-
-  -- process node updates if required
-  if pfMap.queue_update then
-    pfMap:UpdateNodes()
-  end
-
   -- handle highlights and animations
   local hidecluster = IsControlKeyDown() and MouseIsOver(WorldMapFrame) or nil
   if pfMap.queue_update or transition or pfMap.highlight ~= hlstate or shiftstate ~= hidecluster then
@@ -888,7 +880,15 @@ pfMap:SetScript("OnUpdate", function()
     end
   end
 
-  -- refresh minimap nodes
+  -- limit all map updates to once per .05 seconds
+  if ( this.throttle or .2) > GetTime() then return else this.throttle = GetTime() + .05 end
+
+  -- process node updates if required
+  if pfMap.queue_update then
+    pfMap:UpdateNodes()
+  end
+
+  -- refresh minimap
   pfMap:UpdateMinimap()
 
   pfMap.queue_update = nil
