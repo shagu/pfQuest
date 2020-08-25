@@ -88,7 +88,7 @@ local function str2rgb(text)
   return unpack(rgbcache[text])
 end
 
-local function NodeAnimate(self, zoom, alpha)
+local function NodeAnimate(self, zoom, alpha, fps)
   local cur_zoom = self:GetWidth()
   local cur_alpha = self:GetAlpha()
   local change = nil
@@ -99,12 +99,12 @@ local function NodeAnimate(self, zoom, alpha)
     self:SetWidth(zoom)
     self:SetHeight(zoom)
   elseif cur_zoom < zoom then
-    self:SetWidth(cur_zoom + .5)
-    self:SetHeight(cur_zoom + .5)
+    self:SetWidth(cur_zoom + 2/fps)
+    self:SetHeight(cur_zoom + 2/fps)
     change = true
   elseif cur_zoom > zoom then
-    self:SetWidth(cur_zoom - .5)
-    self:SetHeight(cur_zoom - .5)
+    self:SetWidth(cur_zoom - 2/fps)
+    self:SetHeight(cur_zoom - 2/fps)
     change = true
   end
 
@@ -117,10 +117,10 @@ local function NodeAnimate(self, zoom, alpha)
       self:EnableMouse(nil)
     end
   elseif cur_alpha < alpha then
-    self:SetAlpha(cur_alpha + .08)
+    self:SetAlpha(cur_alpha + .2/fps)
     change = true
   elseif cur_alpha > alpha then
-    self:SetAlpha(cur_alpha - .08)
+    self:SetAlpha(cur_alpha - .2/fps)
     change = true
   end
 
@@ -851,30 +851,31 @@ pfMap:SetScript("OnEvent", function()
   end
 end)
 
-local hlstate, shiftstate, transition, hidecluster = nil, nil, nil, nil
+local hlstate, shiftstate, transition, hidecluster, fps = nil, nil, nil, nil, nil
 pfMap:SetScript("OnUpdate", function()
   -- handle highlights and animations
   if pfMap.queue_update or transition or pfMap.highlight ~= hlstate or shiftstate ~= hidecluster then
     hlstate, shiftstate, transition = pfMap.highlight, hidecluster, nil
+    fps = math.max(.2, GetFramerate() / 30)
 
     for frame, data in pairs(pfMap.highlightdb) do
       local highlight = pfMap.highlightdb[frame][pfMap.highlight] and true or nil
 
       if hidecluster and frame.cluster then
         -- hide clusters
-        transition = frame:Animate(frame.defsize, 0) or transition
+        transition = frame:Animate(frame.defsize, 0, fps) or transition
       elseif highlight then
         -- zoom node
-        transition = frame:Animate((frame.texture and 28 or frame.defsize), 1) or transition
+        transition = frame:Animate((frame.texture and 28 or frame.defsize), 1, fps) or transition
       elseif not highlight and pfMap.highlight then
         -- fade node
-        transition = frame:Animate(frame.defsize, tonumber(pfQuest_config["nodefade"])) or transition
+        transition = frame:Animate(frame.defsize, tonumber(pfQuest_config["nodefade"]), fps) or transition
       elseif frame.texture then
         -- defaults for textured nodes
-        transition = frame:Animate(frame.defsize, 1) or transition
+        transition = frame:Animate(frame.defsize, 1, fps) or transition
       else
         -- defaults
-        transition = frame:Animate(frame.defsize, frame.defalpha) or transition
+        transition = frame:Animate(frame.defsize, frame.defalpha, fps) or transition
       end
     end
   end
