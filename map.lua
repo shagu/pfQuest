@@ -146,6 +146,10 @@ pfMap.mpins = {}
 pfMap.drawlayer = Minimap
 pfMap.unifiedcache = unifiedcache
 
+pfMap.minimap_indoor = minimap_indoor
+pfMap.minimap_zoom = minimap_zoom
+pfMap.minimap_sizes = minimap_sizes
+
 pfMap.tooltip = CreateFrame("Frame" , "pfMapTooltip", GameTooltip)
 pfMap.tooltip:SetScript("OnShow", function()
   local focus = GetMouseFocus()
