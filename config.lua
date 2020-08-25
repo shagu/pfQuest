@@ -148,9 +148,22 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["User Data"],
     default = nil, type = "header", pos = { 2, 16 },
   },
+  ["btn_settings"] = {
+    text = pfQuest_Loc["Reset Configuration"],
+    default = "1", type = "button", pos = { 2, 17 }, func = function()
+      local dialog = StaticPopupDialogs["PFQUEST_RESET"]
+      dialog.text = pfQuest_Loc["Do you really want to reset the configuration?"]
+      dialog.OnAccept = function()
+        pfQuest_config = nil
+        ReloadUI()
+      end
+
+      StaticPopup_Show("PFQUEST_RESET")
+    end
+  },
   ["btn_history"] = {
     text = pfQuest_Loc["Reset Quest History"],
-    default = "1", type = "button", pos = { 2, 17 }, func = function()
+    default = "1", type = "button", pos = { 2, 18 }, func = function()
       local dialog = StaticPopupDialogs["PFQUEST_RESET"]
       dialog.text = pfQuest_Loc["Do you really want to reset the quest history?"]
       dialog.OnAccept = function()
@@ -163,7 +176,7 @@ pfQuest_defconfig = {
   },
   ["btn_everything"] = {
     text = pfQuest_Loc["Reset Everything"],
-    default = "1", type = "button", pos = { 2, 18 }, func = function()
+    default = "1", type = "button", pos = { 2, 19 }, func = function()
       local dialog = StaticPopupDialogs["PFQUEST_RESET"]
       dialog.text = pfQuest_Loc["Do you really want to reset everything?"]
       dialog.OnAccept = function()
