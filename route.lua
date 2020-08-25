@@ -257,7 +257,6 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
   -- update arrow
   this.model:SetTexCoord(xstart,xend,ystart,yend)
   this.model:SetVertexColor(r,g,b)
-  this.distance:SetTextColor(r+.2,g+.2,b+.2)
 
   -- recalculate values on target change
   if target ~= lasttarget then
