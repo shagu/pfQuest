@@ -190,7 +190,7 @@ pfQuest.route.arrow:SetScript("OnDragStop", function()
   this:StopMovingOrSizing()
 end)
 
-local invalid
+local invalid, lasttarget
 local xplayer, yplayer, wrongmap, wrongmap
 local xDelta, yDelta, dir, angle
 local player, perc, column, row, xstart, ystart, xend, yend
@@ -239,49 +239,53 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
   yend = ((row + 1) * 42) / 512
 
   -- guess area based on node count
-  local area = target[3].priority and target[3].priority or 1
+  area = target[3].priority and target[3].priority or 1
   area = max(1, area)
   area = min(20, area)
   area = (area / 10) + 1
 
-  local alpha = target[4] - area
+  alpha = target[4] - area
   alpha = alpha > 1 and 1 or alpha
   alpha = alpha < .5 and .5 or alpha
 
-  local texalpha = (1 - alpha) * 2
+  texalpha = (1 - alpha) * 2
   texalpha = texalpha > 1 and 1 or texalpha
   texalpha = texalpha < 0 and 0 or texalpha
 
   r, g, b = r + texalpha, g + texalpha, b + texalpha
-
-  -- calculate difficulty color
-  color = defcolor
-  if tonumber(target[3]["qlvl"]) then
-    color = pfMap:HexDifficultyColor(tonumber(target[3]["qlvl"]))
-  end
 
   -- update arrow
   this.model:SetTexCoord(xstart,xend,ystart,yend)
   this.model:SetVertexColor(r,g,b)
   this.distance:SetTextColor(r+.2,g+.2,b+.2)
 
-  if target[3].texture then
-    this.texture:SetTexture(target[3].texture)
-
-    local r, g, b = unpack(target[3].vertex or {0,0,0})
-    if r > 0 or g > 0 or b > 0 then
-      this.texture:SetVertexColor(unpack(target[3].vertex))
-    else
-      this.texture:SetVertexColor(1,1,1,1)
+  -- recalculate values on target change
+  if target ~= lasttarget then
+    -- calculate difficulty color
+    color = defcolor
+    if tonumber(target[3]["qlvl"]) then
+      color = pfMap:HexDifficultyColor(tonumber(target[3]["qlvl"]))
     end
-  else
-    this.texture:SetTexture(pfQuestConfig.path.."\\img\\node")
-    this.texture:SetVertexColor(pfMap.str2rgb(target[3].title))
+
+    -- update node texture
+    if target[3].texture then
+      this.texture:SetTexture(target[3].texture)
+
+      if target[3].vertex then
+        this.texture:SetVertexColor(unpack(target[3].vertex))
+      else
+        this.texture:SetVertexColor(1,1,1,1)
+      end
+    else
+      this.texture:SetTexture(pfQuestConfig.path.."\\img\\node")
+      this.texture:SetVertexColor(pfMap.str2rgb(target[3].title))
+    end
+
+    -- update arrow texts
+    this.title:SetText(color..target[3].title.."|r")
+    this.description:SetText(target[3].description or "")
   end
 
-  -- update arrow texts
-  this.title:SetText(color..target[3].title.."|r")
-  this.description:SetText(target[3].description or "")
   this.distance:SetText("|cffaaaaaaDistance: "..string.format("%.1f", floor(target[4]*10)/10))
 
   -- update transparencies
