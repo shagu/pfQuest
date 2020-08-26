@@ -137,7 +137,7 @@ for k, v in pairs({WorldMapFrame:GetChildren()}) do
   end
 end
 
-pfMap = CreateFrame("Frame", "pfQuestMap", UIParent)
+pfMap = CreateFrame("Frame", "pfQuestMap", WorldFrame)
 pfMap.str2rgb = str2rgb
 pfMap.tooltips = {}
 pfMap.nodes = {}
