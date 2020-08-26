@@ -391,5 +391,5 @@ function pfUI.api.ConvertFrameAnchor(self, anchor)
     x, y = self:GetLeft(), y - GetScreenHeight()/2/scale
   end
 
-  return anchor, round(x, 2), round(y, 2)
+  return anchor, pfUI.api.round(x, 2), pfUI.api.round(y, 2)
 end
