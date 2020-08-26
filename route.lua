@@ -140,6 +140,7 @@ pfQuest.route.AddPoint = function(self, tbl)
 end
 
 local lastpos, completed = 0, 0
+local function sortfunc(a,b) return a[4] < b[4] end
 pfQuest.route:SetScript("OnUpdate", function()
   local xplayer, yplayer = GetPlayerMapPosition("player")
   local wrongmap = xplayer == 0 and yplayer == 0 and true or nil
@@ -164,7 +165,7 @@ pfQuest.route:SetScript("OnUpdate", function()
 
   -- sort all coords by distance only once per second
   if not this.recalculate or this.recalculate < GetTime() then
-    table.sort(this.coords, function(a,b) return a[4] < b[4] end)
+    table.sort(this.coords, sortfunc)
     this.recalculate = GetTime() + 1
   end
 
