@@ -54,9 +54,9 @@ end
 local unfolded = {}
 
 tracker = CreateFrame("Frame", "pfQuestMapTracker", UIParent)
+tracker:Hide()
 tracker:SetPoint("LEFT", UIParent, "LEFT", 0, 0)
 tracker:SetWidth(200)
-
 tracker:SetMovable(true)
 tracker:EnableMouse(true)
 tracker:SetClampedToScreen(true)
@@ -75,6 +75,9 @@ tracker:SetScript("OnMouseUp",function()
   local anchor, x, y = pfUI.api.ConvertFrameAnchor(this, pfUI.api.GetBestAnchor(this))
   this:ClearAllPoints()
   this:SetPoint(anchor, x, y)
+
+  -- save position
+  pfQuest_config.trackerpos = { anchor, x, y }
 end)
 
 tracker:SetScript("OnUpdate", function()
@@ -104,6 +107,12 @@ end)
 
 tracker:SetScript("OnShow", function()
   pfQuest_config["showtracker"] = "1"
+
+  -- load tracker position if exists
+   if pfQuest_config.trackerpos then
+     this:ClearAllPoints()
+     this:SetPoint(unpack(pfQuest_config.trackerpos))
+   end
 end)
 
 tracker:SetScript("OnHide", function()
