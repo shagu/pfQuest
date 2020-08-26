@@ -50,7 +50,7 @@ pfQuest_defconfig = {
   },
   ["tooltiphelp"] = { -- Show Help On Tooltips
     text = pfQuest_Loc["Show Help On Tooltips"],
-    default = "1", type = "text", pos = { 1, 10 },
+    default = "1", type = "checkbox", pos = { 1, 10 },
   },
 
   ["_Map & Minimap_"] = {
