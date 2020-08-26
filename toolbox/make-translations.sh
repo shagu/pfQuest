@@ -18,8 +18,8 @@ for loc in $locales; do
     # search previous translation
     rm -f /tmp/.pfquest
     cat locales.lua | awk "/\[\"$loc\"\]/,/},/" | while read -r line; do
-      if echo $line | grep -q "\[\"$entry\"\]"; then
-        match=$(echo $line | grep "\[\"$entry\"\]")
+      if echo $line | grep -qF "[\"$entry\"]"; then
+        match=$(echo $line | grep -F "[\"$entry\"]")
         writable="    $match"
         echo "$writable" > /tmp/.pfquest
       fi
