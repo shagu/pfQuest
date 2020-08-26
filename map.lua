@@ -836,11 +836,12 @@ function pfMap:UpdateMinimap()
 end
 
 pfMap:RegisterEvent("ZONE_CHANGED")
+pfMap:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 pfMap:RegisterEvent("MINIMAP_ZONE_CHANGED")
 pfMap:RegisterEvent("WORLD_MAP_UPDATE")
 pfMap:SetScript("OnEvent", function()
   -- set map to current zone when possible
-  if event == "ZONE_CHANGED" or event == "MINIMAP_ZONE_CHANGED" then
+  if event == "ZONE_CHANGED" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
     if not WorldMapFrame:IsShown() then
       SetMapToCurrentZone()
     end
