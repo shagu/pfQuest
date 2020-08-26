@@ -45,7 +45,7 @@ local function ResultButtonEnter()
   -- item
   elseif this.btype == "items" then
     GameTooltip:SetOwner(this, "ANCHOR_LEFT", -10, -5)
-    GameTooltip:SetHyperlink("item:" .. this.id .. ":0:0:0")
+    GameTooltip:SetHyperlink("item:" .. this.id .. pfQuestCompat.itemsuffix)
     GameTooltip:Show()
 
   -- units / objects
@@ -99,7 +99,7 @@ local function ResultButtonUpdate()
   this.refreshCount = this.refreshCount + 1
 
   if not this.itemColor then
-    GameTooltip:SetHyperlink("item:" .. this.id .. ":0:0:0")
+    GameTooltip:SetHyperlink("item:" .. this.id .. pfQuestCompat.itemsuffix)
     GameTooltip:Hide()
 
     local _, _, itemQuality = GetItemInfo(this.id)
@@ -112,7 +112,7 @@ local function ResultButtonUpdate()
   end
 
   if this.itemColor then
-    this.text:SetText(this.itemColor .."|Hitem:"..this.id..":0:0:0|h[".. this.name.."]|h|r")
+    this.text:SetText(this.itemColor .."|Hitem:"..this.id..pfQuestCompat.itemsuffix.."|h[".. this.name.."]|h|r")
     this.text:SetWidth(this.text:GetStringWidth())
   end
 
@@ -125,7 +125,7 @@ local function ResultButtonClick()
   local meta = { ["addon"] = "PFDB" }
 
   if this.btype == "items" then
-    local link = "item:"..this.id..":0:0:0"
+    local link = "item:"..this.id..pfQuestCompat.itemsuffix
     local text = ( this.itemColor or "|cffffffff" ) .."|H" .. link .. "|h["..this.name.."]|h|r"
     SetItemRef(link, text, arg1)
   elseif this.btype == "quests" then

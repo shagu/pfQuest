@@ -8,6 +8,7 @@ local gfind = string.gmatch or string.gfind
 pfQuestCompat = {}
 pfQuestCompat.mod = mod or math.mod
 pfQuestCompat.gfind = string.gmatch or string.gfind
+pfQuestCompat.itemsuffix = client > 11200 and ":0:0:0:0:0:0:0" or ":0:0:0"
 pfQuestCompat.GetQuestLogTitle = function(id)
   local title, level, tag, group, header, collapsed, complete, daily, _
   if client <= 11200 then -- vanilla
