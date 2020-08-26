@@ -357,7 +357,7 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
   -- only refresh distance text on change
   local distance = floor(target[4]*10)/10
   if distance ~= this.distance.number then
-    this.distance:SetText("|cffaaaaaaDistance: "..string.format("%.1f", distance))
+    this.distance:SetText("|cffaaaaaa" .. pfQuest_Loc["Distance"] .. ": "..string.format("%.1f", distance))
     this.distance.number = distance
   end
 

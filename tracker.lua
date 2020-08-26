@@ -172,36 +172,36 @@ do -- button panel
     return b
   end
 
-  tracker.btnquest = CreateButton("quests", "TOPLEFT", "Show Current Quests", function()
+  tracker.btnquest = CreateButton("quests", "TOPLEFT", pfQuest_Loc["Show Current Quests"], function()
     tracker.mode = "QUEST_TRACKING"
     pfMap:UpdateNodes()
   end)
 
-  tracker.btndatabase = CreateButton("database", "TOPLEFT", "Show Database Results", function()
+  tracker.btndatabase = CreateButton("database", "TOPLEFT", pfQuest_Loc["Show Database Results"], function()
     tracker.mode = "DATABASE_TRACKING"
     pfMap:UpdateNodes()
   end)
 
-  tracker.btngiver = CreateButton("giver", "TOPLEFT", "Show Quest Givers", function()
+  tracker.btngiver = CreateButton("giver", "TOPLEFT", pfQuest_Loc["Show Quest Givers"], function()
     tracker.mode = "GIVER_TRACKING"
     pfMap:UpdateNodes()
   end)
 
-  tracker.btnclose = CreateButton("close", "TOPRIGHT", "Close Tracker", function()
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest: Tracker is now hidden. Type `/db tracker` to show.")
+  tracker.btnclose = CreateButton("close", "TOPRIGHT", pfQuest_Loc["Close Tracker"], function()
+    DEFAULT_CHAT_FRAME:AddMessage(pfQuest_Loc["|cff33ffccpf|cffffffffQuest: Tracker is now hidden. Type `/db tracker` to show."])
     tracker:Hide()
   end)
 
-  tracker.btnsettings = CreateButton("settings", "TOPRIGHT", "Open Settings", function()
+  tracker.btnsettings = CreateButton("settings", "TOPRIGHT", pfQuest_Loc["Open Settings"], function()
     if pfQuestConfig then pfQuestConfig:Show() end
   end)
 
-  tracker.btnclean = CreateButton("clean", "TOPRIGHT", "Clean Database Results", function()
+  tracker.btnclean = CreateButton("clean", "TOPRIGHT", pfQuest_Loc["Clean Database Results"], function()
     pfMap:DeleteNode("PFDB")
     pfMap:UpdateNodes()
   end)
 
-  tracker.btnsearch = CreateButton("search", "TOPRIGHT", "Open Database Browser", function()
+  tracker.btnsearch = CreateButton("search", "TOPRIGHT", pfQuest_Loc["Open Database Browser"], function()
     if pfBrowser then pfBrowser:Show() end
   end)
 end
@@ -377,7 +377,7 @@ function tracker.ButtonEvent(self)
     self.perc = percent
     self.text:SetText(string.format("%s |cffaaaaaa(%s%s%%|cffaaaaaa)", title or "", colorperc or "", ceil(percent)))
     self.text:SetTextColor(color.r, color.g, color.b)
-    self.tooltip = "|cff33ffcc<Click>|r Unfold/Fold Objectives\n|cff33ffcc<Right-Click>|r Show In QuestLog\n|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
+    self.tooltip = pfQuest_Loc["|cff33ffcc<Click>|r Unfold/Fold Objectives\n|cff33ffcc<Right-Click>|r Show In QuestLog\n|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"]
   elseif tracker.mode == "GIVER_TRACKING" then
     local level = node.qlvl or node.level or UnitLevel("player")
     local color = GetDifficultyColor(level)
@@ -395,12 +395,12 @@ function tracker.ButtonEvent(self)
     self.text:SetTextColor(color.r, color.g, color.b)
     self.text:SetText(title)
     self.level = tonumber(level)
-    self.tooltip = "|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Mark As Done"
+    self.tooltip = pfQuest_Loc["|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Mark As Done"]
   elseif tracker.mode == "DATABASE_TRACKING" then
     self.text:SetText(title)
     self.text:SetTextColor(1,1,1,1)
     self.text:SetTextColor(pfMap.str2rgb(title))
-    self.tooltip = "|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"
+    self.tooltip = pfQuest_Loc["|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"]
   end
 
   -- sort all tracker entries

@@ -60,7 +60,7 @@ local function ResultButtonEnter()
 
       if unitData.lvl then
         GameTooltip:AddLine(" ")
-        GameTooltip:AddDoubleLine("Level", unitData.lvl, 1,1,.8, 1,1,1)
+        GameTooltip:AddDoubleLine(pfQuest_Loc["Level"], unitData.lvl, 1,1,.8, 1,1,1)
       end
 
       local reactionStringA = "|c00ff0000" .. pfQuest_Loc["Hostile"] .. "|r"

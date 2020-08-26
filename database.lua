@@ -597,7 +597,7 @@ function pfDatabase:SearchMobID(id, meta, maps, prio)
       meta["y"]     = y
 
       meta["level"] = units[id]["lvl"] or UNKNOWN
-      meta["spawntype"] = "Unit"
+      meta["spawntype"] = pfQuest_Loc["Unit"]
       meta["respawn"] = respawn > 0 and SecondsToTime(respawn)
 
       maps[zone] = maps[zone] and maps[zone] + prio or prio
@@ -698,7 +698,7 @@ function pfDatabase:SearchZoneID(id, meta, maps, prio)
     meta["title"] = meta["quest"] or meta["item"] or meta["spawn"]
     meta["zone"]  = zone
     meta["level"] = "N/A"
-    meta["spawntype"] = "Area/Zone"
+    meta["spawntype"] = pfQuest_Loc["Area/Zone"]
     meta["respawn"] = "N/A"
     meta["x"]     = x
     meta["y"]     = y
@@ -748,7 +748,7 @@ function pfDatabase:SearchObjectID(id, meta, maps, prio)
       meta["y"]     = y
 
       meta["level"] = nil
-      meta["spawntype"] = "Object"
+      meta["spawntype"] = pfQuest_Loc["Object"]
       meta["respawn"] = respawn and SecondsToTime(respawn)
 
       maps[zone] = maps[zone] and maps[zone] + prio or prio
@@ -1136,7 +1136,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
             meta["x"], meta["y"], meta["priority"] = getcluster(data.coords, meta["quest"]..hash..map)
             meta["texture"] = pfQuestConfig.path.."\\img\\cluster_item"
             pfMap:AddNode(meta, true)
-          elseif meta.spawntype and meta.spawntype == "Unit" and meta.spawn and not meta.itemreq then
+          elseif meta.spawntype and meta.spawntype == pfQuest_Loc["Unit"] and meta.spawn and not meta.itemreq then
             meta["x"], meta["y"], meta["priority"] = getcluster(data.coords, meta["quest"]..hash..map)
             meta["texture"] = pfQuestConfig.path.."\\img\\cluster_mob"
             pfMap:AddNode(meta, true)
