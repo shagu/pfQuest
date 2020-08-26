@@ -320,6 +320,8 @@ end
 
 local maxh, maxw = 0, 0
 local width, height = 230, 22
+local maxtext = 130
+local configframes = {}
 function pfQuestConfig:CreateConfigEntries(config)
   local count = 1
   for entry, data in pairs(config) do
@@ -328,10 +330,7 @@ function pfQuestConfig:CreateConfigEntries(config)
 
       -- basic frame
       local frame = CreateFrame("Frame", "pfQuestConfig" .. count, pfQuestConfig)
-      local x, y = (data.pos[1]-1)*width, -(data.pos[2]-1)*height
-      frame:SetWidth(width)
-      frame:SetHeight(height)
-      frame:SetPoint("TOPLEFT", pfQuestConfig, "TOPLEFT", x + spacer + 10, y - 40)
+      configframes[entry] = frame
 
       -- caption
       frame.caption = frame:CreateFontString("Status", "LOW", "GameFontWhite")
@@ -339,6 +338,7 @@ function pfQuestConfig:CreateConfigEntries(config)
       frame.caption:SetPoint("LEFT", 20, 0)
       frame.caption:SetJustifyH("LEFT")
       frame.caption:SetText(data.text)
+      maxtext = max(maxtext, frame.caption:GetStringWidth())
 
       -- header
       if data.type == "header" then
@@ -420,6 +420,19 @@ function pfQuestConfig:CreateConfigEntries(config)
 
       maxw, maxh = max(maxw, data.pos[1]), max(maxh, data.pos[2])
       count = count + 1
+    end
+  end
+
+  -- update sizes
+  width = maxtext + 100
+  for entry, data in pairs(config) do
+    if data.pos and data.type then
+      local spacer = (data.pos[1]-1)*20
+      local x, y = (data.pos[1]-1)*width, -(data.pos[2]-1)*height
+      local frame = configframes[entry]
+      frame:SetWidth(width)
+      frame:SetHeight(height)
+      frame:SetPoint("TOPLEFT", pfQuestConfig, "TOPLEFT", x + spacer + 10, y - 40)
     end
   end
 
