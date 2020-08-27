@@ -79,7 +79,7 @@ local function ResultButtonEnter()
       GameTooltip:AddDoubleLine(pfQuest_Loc["Alliance"], reactionStringA, 1,1,1, 0,0,0)
       GameTooltip:AddDoubleLine(pfQuest_Loc["Horde"], reactionStringH, 1,1,1, 0,0,0)
     end
-    GameTooltip:AddLine("\nLocation", 1,1,.8)
+    GameTooltip:AddLine("\n" .. pfQuest["Location"], 1,1,.8)
     if pfDB[this.btype]["data"][id] and pfDB[this.btype]["data"][id]["coords"] then
       for _, data in pairs(pfDB[this.btype]["data"][id]["coords"]) do
         local zone = data[3]
