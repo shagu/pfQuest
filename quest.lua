@@ -212,13 +212,13 @@ function pfQuest:AddQuestLogIntegration()
   pfQuest.buttonLanguage.txt = pfQuest.buttonLanguage:CreateFontString("pfQuestIDButton", "HIGH", "GameFontWhite")
   pfQuest.buttonLanguage.txt:SetAllPoints(pfQuest.buttonLanguage)
   pfQuest.buttonLanguage.txt:SetJustifyH("RIGHT")
-  pfQuest.buttonLanguage.txt:SetText("|cff000000[|cff333333Translate|cff000000]")
+  pfQuest.buttonLanguage.txt:SetText("|cff000000[|cff333333" .. pfQuest_Loc["Translate"] .. "|cff000000]")
 
   pfQuest.buttonLanguage:SetScript("OnClick", function()
     UIDropDownMenu_Initialize(self, function()
       local func = function() pfQuest_config.translate = this.value end
       local info = {}
-      info.text = "|cffaaaaaaReset Language"
+      info.text = "|cffaaaaaa" .. pfQuest_Loc["Reset Language"]
       info.value = nil
       info.func = func
       UIDropDownMenu_AddButton(info);
@@ -239,7 +239,7 @@ function pfQuest:AddQuestLogIntegration()
     local lang = pfQuest_config.translate
 
     if this.translate ~= pfQuest_config.translate then
-      pfQuest.buttonLanguage.txt:SetText("|cff000000[|cff3333ff" .. (pfDB.locales[pfQuest_config.translate] or "|cff333333Translate") .. "|cff000000]")
+      pfQuest.buttonLanguage.txt:SetText("|cff000000[|cff3333ff" .. (pfDB.locales[pfQuest_config.translate] or "|cff333333" .. pfQuest_Loc["Translate"]) .. "|cff000000]")
       this.translate = pfQuest_config.translate
       QuestLog_UpdateQuestDetails(true)
       return

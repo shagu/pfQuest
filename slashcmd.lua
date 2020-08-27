@@ -172,7 +172,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
 
   -- argument: locale
   if (arg1 == "locale") then
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccLocales|r:" .. pfDatabase.dbstring)
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc" .. pfQuest_Loc["Locales"] .. "|r:" .. pfDatabase.dbstring)
     return
   end
 
