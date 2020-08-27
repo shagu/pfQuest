@@ -311,7 +311,7 @@ local function ResultButtonEnterSpecial()
   end
 
   if count > tooltip_limit then
-    GameTooltip:AddLine("\n" .. pfQuest_Loc["and"] .. (count - tooltip_limit).." " .. pfQuest_Loc["others"],.8,.8,.8)
+    GameTooltip:AddLine("\n" .. pfQuest_Loc["and"] .. " " .. (count - tooltip_limit).." " .. pfQuest_Loc["others"],.8,.8,.8)
   end
   GameTooltip:Show()
 end
