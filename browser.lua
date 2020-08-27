@@ -734,8 +734,8 @@ EnableTooltips(pfBrowser.journal, {
 pfUI.api.SkinButton(pfBrowser.journal)
 
 pfBrowser.clean = CreateFrame("Button", "pfQuestBrowserClean", pfBrowser)
-pfBrowser.clean:SetPoint("TOPLEFT", pfBrowser, "TOPLEFT", 545, -30)
-pfBrowser.clean:SetPoint("BOTTOMRIGHT", pfBrowser, "TOPRIGHT", -5, -55)
+pfBrowser.clean:SetPoint("TOPRIGHT", pfBrowser, "TOPRIGHT", -5, -30)
+pfBrowser.clean:SetPoint("BOTTOMRIGHT", pfBrowser, "TOPRIGHT", 0, -55)
 pfBrowser.clean:SetScript("OnClick", function()
   pfMap:DeleteNode("PFDB")
   pfMap:UpdateNodes()
@@ -744,6 +744,8 @@ pfBrowser.clean.text = pfBrowser.clean:CreateFontString("Caption", "LOW", "GameF
 pfBrowser.clean.text:SetAllPoints(pfBrowser.clean)
 pfBrowser.clean.text:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
 pfBrowser.clean.text:SetText(pfQuest_Loc["Clean Map"])
+local width = pfBrowser.clean.text:GetStringWidth() > 90 and pfBrowser.clean.text:GetStringWidth() + 20 or 90
+pfBrowser.clean:SetWidth(width)
 EnableTooltips(pfBrowser.clean, {
   pfQuest_Loc["Clean Map"],
   pfQuest_Loc["Remove all manually searched objects from the map"],
@@ -763,7 +765,8 @@ pfBrowser.input:SetAutoFocus(false)
 pfBrowser.input:SetText(pfQuest_Loc["Search"])
 pfBrowser.input:SetJustifyH("LEFT")
 pfBrowser.input:SetPoint("TOPLEFT", pfBrowser, "TOPLEFT", 5, -30)
-pfBrowser.input:SetPoint("BOTTOMRIGHT", pfBrowser, "TOPRIGHT", -100, -55)
+--pfBrowser.input:SetPoint("BOTTOMRIGHT", pfBrowser, "TOPRIGHT", -100, -55)
+pfBrowser.input:SetPoint("BOTTOMRIGHT", pfBrowser.clean, "BOTTOMLEFT", 0, 0)
 pfBrowser.input:SetTextInsets(10,10,5,5)
 pfBrowser.input:SetScript("OnEscapePressed", function() this:ClearFocus() end)
 pfBrowser.input:SetScript("OnEditFocusGained", function()
