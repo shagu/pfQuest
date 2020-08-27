@@ -413,6 +413,7 @@ QuestLog_Update = function()
       pfQuest.buttonOnline:Show()
       if pfQuest_config.showids == "1" then
         pfQuest.buttonOnline.txt:SetText("|cff000000[|cffaa2222id: " .. id .. "|cff000000]")
+        pfQuest.buttonOnline:SetWidth(pfQuest.buttonOnline.txt:GetStringWidth())
       end
     else
       pfQuest.buttonOnline:Hide()
