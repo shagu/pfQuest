@@ -761,20 +761,78 @@ SelectView(pfBrowser.tabs["units"])
 
 pfBrowser.input = CreateFrame("EditBox", "pfQuestBrowserSearch", pfBrowser)
 pfBrowser.input:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
+pfBrowser.input:SetFontObject("GameFontDisable")
 pfBrowser.input:SetAutoFocus(false)
 pfBrowser.input:SetText(pfQuest_Loc["Search"])
 pfBrowser.input:SetJustifyH("LEFT")
 pfBrowser.input:SetPoint("TOPLEFT", pfBrowser, "TOPLEFT", 5, -30)
 --pfBrowser.input:SetPoint("BOTTOMRIGHT", pfBrowser, "TOPRIGHT", -100, -55)
 pfBrowser.input:SetPoint("BOTTOMRIGHT", pfBrowser.clean, "BOTTOMLEFT", 0, 0)
-pfBrowser.input:SetTextInsets(10,10,5,5)
+pfBrowser.input:SetTextInsets(20,10,5,5)
+
+pfBrowser.input.searchIcon = pfBrowser.input:CreateTexture("$parentSearchIcon", "OVERLAY")
+pfBrowser.input.searchIcon:SetTexture(pfQuestConfig.path.."\\img\\tracker_search")
+pfBrowser.input.searchIcon:SetHeight(14)
+pfBrowser.input.searchIcon:SetWidth(14)
+pfBrowser.input.searchIcon:SetVertexColor(0.6, 0.6, 0.6)
+pfBrowser.input.searchIcon:SetPoint("LEFT", pfBrowser.input, "LEFT", 6, 0)
+
+pfBrowser.input.clearButton = CreateFrame("Button", "$parentClearButton", pfBrowser.input)
+pfBrowser.input.clearButton:Hide()
+pfBrowser.input.clearButton:SetHeight(17)
+pfBrowser.input.clearButton:SetWidth(17)
+pfBrowser.input.clearButton:SetPoint("RIGHT", pfBrowser.input, "RIGHT", -3, 0)
+pfBrowser.input.clearButton.texture = pfBrowser.input.clearButton:CreateTexture(nil, "ARTWORK")
+pfBrowser.input.clearButton.texture:SetTexture(pfQuestConfig.path.."\\img\\tracker_close")
+pfBrowser.input.clearButton.texture:SetHeight(17)
+pfBrowser.input.clearButton.texture:SetWidth(17)
+pfBrowser.input.clearButton.texture:SetAlpha(0.5)
+pfBrowser.input.clearButton.texture:SetPoint("TOPLEFT", pfBrowser.input.clearButton, "TOPLEFT", 0, 0)
+pfBrowser.input.clearButton:SetScript("OnEnter", function()
+  this.texture:SetAlpha(1.0)
+end)
+pfBrowser.input.clearButton:SetScript("OnLeave", function()
+  this.texture:SetAlpha(0.5)
+end)
+pfBrowser.input.clearButton:SetScript("OnMouseDown", function()
+  if this:IsEnabled() then
+    this.texture:SetPoint("TOPLEFT", this, "TOPLEFT", 1, -1)
+  end
+end)
+pfBrowser.input.clearButton:SetScript("OnMouseUp", function()
+  this.texture:SetPoint("TOPLEFT", this, "TOPLEFT", 0, 0)
+end)
+pfBrowser.input.clearButton:SetScript("OnClick", function()
+  PlaySound("igMainMenuOptionCheckBoxOn")
+  pfBrowser.input:SetText("")
+  --[[
+  If there is no focus, then the ClearFocus() method does not call the OnEditFocusLost script.
+  In 1.12, there is no HasFocus() method, so there is no way to check for focus. therefore,
+  for ease of implementation and to avoid double calling the OnEditFocusLost script, I use the
+  SetFocus() method to accurately ensure that the OnEditFocusLost script is called.
+  --]]
+  pfBrowser.input:SetFocus()
+  pfBrowser.input:ClearFocus()
+end)
+
 pfBrowser.input:SetScript("OnEscapePressed", function() this:ClearFocus() end)
+pfBrowser.input:SetScript("OnEnterPressed", function() this:ClearFocus() end)
 pfBrowser.input:SetScript("OnEditFocusGained", function()
+  this:HighlightText()
+  this:SetFontObject("GameFontWhite")
+  this.searchIcon:SetVertexColor(1.0, 1.0, 1.0)
   if this:GetText() == pfQuest_Loc["Search"] then this:SetText("") end
+  this.clearButton:Show()
 end)
 
 pfBrowser.input:SetScript("OnEditFocusLost", function()
-  if this:GetText() == "" then this:SetText(pfQuest_Loc["Search"]) end
+  this:HighlightText(0, 0)
+  this:SetFontObject("GameFontDisable")
+  this.searchIcon:SetVertexColor(0.6, 0.6, 0.6)
+  if this:GetText() == "" then
+    this:SetText(pfQuest_Loc["Search"])
+    this.clearButton:Hide()
+  end
 end)
 
 -- This script updates all the search tabs when the search text changes
