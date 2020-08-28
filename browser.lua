@@ -487,7 +487,6 @@ local function RefreshView(i, key, caption)
   pfBrowser.tabs[key].list:Show()
   pfBrowser.tabs[key].list:GetParent():SetScrollChild(pfBrowser.tabs[key].list)
   pfBrowser.tabs[key].list:GetParent():SetVerticalScroll(0)
-  pfBrowser.tabs[key].list:GetParent():UpdateScrollState()
 
   if not pfBrowser.tabs[key].list.warn then
     pfBrowser.tabs[key].list.warn = pfBrowser.tabs[key].list:CreateFontString("Caption", "LOW", "GameFontWhite")
@@ -519,6 +518,7 @@ local function CreateBrowseWindow(fname, name, parent, anchor, x, y)
   parent.tabs[fname] = pfUI.api.CreateScrollFrame(name, parent)
   parent.tabs[fname]:SetPoint("TOPLEFT", parent, "TOPLEFT", 10, -65)
   parent.tabs[fname]:SetPoint("BOTTOMRIGHT", parent, "BOTTOMRIGHT", -10, 45)
+  parent.tabs[fname]:Hide()
   parent.tabs[fname].buttons = { }
 
   parent.tabs[fname].backdrop = CreateFrame("Frame", name .. "Backdrop", parent.tabs[fname])
@@ -560,8 +560,6 @@ local function CreateBrowseWindow(fname, name, parent, anchor, x, y)
   pfUI.api.SkinButton(parent.tabs[fname].button)
   parent.tabs[fname].list = pfUI.api.CreateScrollChild(name .. "Scroll", parent.tabs[fname])
   parent.tabs[fname].list:SetWidth(600)
-
-  parent.tabs[fname]:Hide()
 end
 
 -- minimap icon
