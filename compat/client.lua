@@ -21,17 +21,31 @@ pfQuestCompat.GetQuestLogTitle = function(id)
 end
 
 pfQuestCompat.InsertQuestLink = function(questid, name)
-  local questid = questid or 0
-  local fallback = name or UNKNOWN
-  local level = pfDB["quests"]["data"][questid] and pfDB["quests"]["data"][questid]["lvl"] or 0
-  ChatFrameEditBox:Show()
-
-  local name = pfDB["quests"]["loc"][questid] and pfDB["quests"]["loc"][questid]["T"] or fallback
-  if pfQuest_config["questlinks"] == "1" then
-    ChatFrameEditBox:Insert("|cffffff00|Hquest:" .. questid .. ":" .. level .. "|h[" .. name .. "]|h|r")
+  local link = ""
+  if string.find(questid, "quest") then -- if first arg is quest link (forward links from the chat)
+    if pfQuest_config["questlinks"] == "1" then
+      link = questid
+    else
+      _, _, link = string.find(questid, ".*|h%[(.*)%]|h.*")
+      link = "[" .. link .. "]"
+    end
   else
-    ChatFrameEditBox:Insert("[" .. name .. "]")
+    local fallback = name or UNKNOWN
+    local name = pfDB["quests"]["loc"][questid] and pfDB["quests"]["loc"][questid]["T"] or fallback
+    if pfQuest_config["questlinks"] == "1" then
+      local questid = questid or 0
+      local level = pfDB["quests"]["data"][questid] and pfDB["quests"]["data"][questid]["lvl"] or 0
+      link = "|cffffff00|Hquest:" .. questid .. ":" .. level .. "|h[" .. name .. "]|h|r"
+    else
+      link = "[" .. name .. "]"
+    end
   end
+
+  if not ChatFrameEditBox:IsVisible() then
+    ChatFrameEditBox:Show()
+  end
+
+  ChatFrameEditBox:Insert(link)
 end
 
 -- do the best to detect the minimap arrow on vanilla and tbc
