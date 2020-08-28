@@ -35,7 +35,9 @@ pfQuestCompat.InsertQuestLink = function(questid, name)
     if pfQuest_config["questlinks"] == "1" then
       local questid = questid or 0
       local level = pfDB["quests"]["data"][questid] and pfDB["quests"]["data"][questid]["lvl"] or 0
-      link = "|cffffff00|Hquest:" .. questid .. ":" .. level .. "|h[" .. name .. "]|h|r"
+      local color = GetDifficultyColor(level)
+      local hex = pfUI.api.rgbhex(color)
+      link = hex .. "|Hquest:" .. questid .. ":" .. level .. "|h[" .. name .. "]|h|r"
     else
       link = "[" .. name .. "]"
     end
@@ -72,7 +74,7 @@ if client <= 11200 then
   -- add colors to quest links
   local ParseQuestLevels = function(frame, text, a1, a2, a3, a4, a5)
     if text then
-      for questid, level in gfind(text, "|cffffff00|Hquest:(.-):(.-)|h") do
+      for hex, questid, level in gfind(text, "(|c.-)|Hquest:(%d+):(%d+)") do
         local questid = tonumber(questid)
         local level = tonumber(level)
 
@@ -82,12 +84,9 @@ if client <= 11200 then
 
         if level and level > 0 then
           local color = GetDifficultyColor(level)
-          local r = ceil(color.r*255)
-          local g = ceil(color.g*255)
-          local b = ceil(color.b*255)
-          local hex = "|c" .. string.format("ff%02x%02x%02x", r, g, b)
+          local hew_hex = pfUI.api.rgbhex(color)
 
-          text = string.gsub(text, "|cffffff00|Hquest:"..questid, hex.."|Hquest:"..questid)
+          text = string.gsub(text, hex.."|Hquest:"..questid, hew_hex.."|Hquest:"..questid)
         end
       end
     end
