@@ -441,6 +441,11 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
   -- Patch ItemRef to display Questlinks
   local pfQuestHookSetItemRef = SetItemRef
   SetItemRef = function(link, text, button)
+    -- enable the ability to forward links from the chat
+    if IsShiftKeyDown() and ChatFrameEditBox:IsVisible() then
+      return pfQuestCompat.InsertQuestLink(text)
+    end
+
     local isQuest, _, id    = string.find(link, "quest:(%d+):.*")
     local isQuest2, _, _   = string.find(link, "quest2:.*")
 
