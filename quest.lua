@@ -462,10 +462,12 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
       end
 
       -- read and set title
+      local questlevel = tonumber(pfDB["quests"]["data"][id]["lvl"])
+      local color = GetDifficultyColor(questlevel)
       if id and id > 0 and pfDB["quests"]["loc"][id] then
-        ItemRefTooltip:AddLine(pfDB["quests"]["loc"][id].T, 1,1,0)
+        ItemRefTooltip:AddLine(pfDB["quests"]["loc"][id].T, color.r, color.g, color.b)
       elseif hasTitle then
-        ItemRefTooltip:AddLine(questTitle, 1,1,0)
+        ItemRefTooltip:AddLine(questTitle, color.r, color.g, color.b)
       end
 
       -- scan for active quests
