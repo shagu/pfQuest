@@ -450,11 +450,13 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
     local isQuest2, _, _   = string.find(link, "quest2:.*")
 
     if isQuest or isQuest2 then
-      local hasTitle, _, questTitle = string.find(text, ".*|h%[(.*)%]|h.*")
-
-      if ItemRefTooltip:IsShown() and ItemRefTooltipTextLeft1:GetText() == questTitle then
+      if ItemRefTooltip:IsShown() and ItemRefTooltip.questID and ItemRefTooltip.questID == id then
         return HideUIPanel(ItemRefTooltip)
       end
+
+      ItemRefTooltip.questID = id
+      local hasTitle, _, questTitle = string.find(text, ".*|h%[(.*)%]|h.*")
+
       ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
 
       id = tonumber(id)
