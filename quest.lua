@@ -450,10 +450,12 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
     local isQuest2, _, _   = string.find(link, "quest2:.*")
 
     if isQuest or isQuest2 then
-      ShowUIPanel(ItemRefTooltip)
-      ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
-
       local hasTitle, _, questTitle = string.find(text, ".*|h%[(.*)%]|h.*")
+
+      if ItemRefTooltip:IsShown() and ItemRefTooltipTextLeft1:GetText() == questTitle then
+        return HideUIPanel(ItemRefTooltip)
+      end
+      ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
 
       id = tonumber(id)
 
@@ -522,7 +524,7 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
         end
       end
 
-      ItemRefTooltip:Show()
+      ShowUIPanel(ItemRefTooltip)
     else
       pfQuestHookSetItemRef(link, text, button)
     end
