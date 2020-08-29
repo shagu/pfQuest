@@ -85,12 +85,18 @@ local function ResultButtonEnter()
         local zone = data[3]
         maps[zone] = maps[zone] and maps[zone] + 1 or 1
       end
-    else
-      GameTooltip:AddLine(UNKNOWN, 1,.5,.5)
     end
+
+    local unknown = true
     for zone, count in pairs(maps) do
       GameTooltip:AddDoubleLine(( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), count .. "x", 1,1,1, .5,.5,.5)
+      unknown = nil
     end
+
+    if unknown then
+      GameTooltip:AddLine(UNKNOWN, 1,.5,.5)
+    end
+
     GameTooltip:Show()
   end
 end
