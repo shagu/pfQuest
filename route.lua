@@ -370,9 +370,9 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
 end)
 
 pfQuest.route.arrow.texture = pfQuest.route.arrow:CreateTexture("pfQuestRouteNodeTexture", "OVERLAY")
-pfQuest.route.arrow.texture:SetWidth(28)
-pfQuest.route.arrow.texture:SetHeight(28)
-pfQuest.route.arrow.texture:SetPoint("BOTTOM", 0, 0)
+pfQuest.route.arrow.texture:SetWidth(22)
+pfQuest.route.arrow.texture:SetHeight(22)
+pfQuest.route.arrow.texture:SetPoint("BOTTOMLEFT", -4, -6)
 
 pfQuest.route.arrow.model = pfQuest.route.arrow:CreateTexture("pfQuestRouteArrow", "MEDIUM")
 pfQuest.route.arrow.model:SetTexture(pfQuestConfig.path.."\\img\\arrow")
