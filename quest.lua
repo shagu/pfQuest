@@ -524,4 +524,16 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
       pfQuestHookSetItemRef(link, text, button)
     end
   end
+else
+  local pfQuestHookSetItemRef = SetItemRef
+  SetItemRef = function(link, text, button)
+    pfQuestHookSetItemRef(link, text, button)
+
+    local _, _, questlevel = string.find(link, "quest:.-:(.*)")
+    if not questlevel then return end
+
+    questlevel = questlevel == '-1' and UnitLevel("player") or tonumber(questlevel)
+    local color = GetDifficultyColor(questlevel)
+    ItemRefTooltipTextLeft1:SetTextColor(color.r, color.g, color.b)
+  end
 end
