@@ -24,11 +24,12 @@ pfQuestCompat.InsertQuestLink = function(questid, name)
   local questid = questid or 0
   local fallback = name or UNKNOWN
   local level = pfDB["quests"]["data"][questid] and pfDB["quests"]["data"][questid]["lvl"] or 0
-  ChatFrameEditBox:Show()
-
   local name = pfDB["quests"]["loc"][questid] and pfDB["quests"]["loc"][questid]["T"] or fallback
+  local hex = pfUI.api.rgbhex(GetDifficultyColor(level))
+
+  ChatFrameEditBox:Show()
   if pfQuest_config["questlinks"] == "1" then
-    ChatFrameEditBox:Insert("|cffffff00|Hquest:" .. questid .. ":" .. level .. "|h[" .. name .. "]|h|r")
+    ChatFrameEditBox:Insert(hex .. "|Hquest:" .. questid .. ":" .. level .. "|h[" .. name .. "]|h|r")
   else
     ChatFrameEditBox:Insert("[" .. name .. "]")
   end
@@ -58,7 +59,7 @@ if client <= 11200 then
   -- add colors to quest links
   local ParseQuestLevels = function(frame, text, a1, a2, a3, a4, a5)
     if text then
-      for questid, level in gfind(text, "|cffffff00|Hquest:(.-):(.-)|h") do
+      for oldhex, questid, level in gfind(text, "(|c.-)|Hquest:(.-):(.-)|h") do
         local questid = tonumber(questid)
         local level = tonumber(level)
 
@@ -67,13 +68,8 @@ if client <= 11200 then
         end
 
         if level and level > 0 then
-          local color = GetDifficultyColor(level)
-          local r = ceil(color.r*255)
-          local g = ceil(color.g*255)
-          local b = ceil(color.b*255)
-          local hex = "|c" .. string.format("ff%02x%02x%02x", r, g, b)
-
-          text = string.gsub(text, "|cffffff00|Hquest:"..questid, hex.."|Hquest:"..questid)
+          local newhex = pfUI.api.rgbhex(GetDifficultyColor(level))
+          text = string.gsub(text, oldhex .. "|Hquest:"..questid, newhex.."|Hquest:"..questid)
         end
       end
     end
