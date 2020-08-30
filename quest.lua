@@ -445,6 +445,16 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
     local isQuest2, _, _   = string.find(link, "quest2:.*")
 
     if isQuest or isQuest2 then
+      if IsShiftKeyDown() and ChatFrameEditBox:IsVisible() then
+        ChatFrameEditBox:Insert(text)
+        return
+      end
+
+      if ItemRefTooltip:IsShown() and ItemRefTooltip.pfQtext == text then
+        HideUIPanel(ItemRefTooltip)
+        return
+      end
+
       ShowUIPanel(ItemRefTooltip)
       ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
 
@@ -521,5 +531,7 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
     else
       pfQuestHookSetItemRef(link, text, button)
     end
+
+    ItemRefTooltip.pfQtext = text
   end
 end
