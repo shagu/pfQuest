@@ -555,6 +555,23 @@ else
       ItemRefTooltipTextLeft1:SetTextColor(color.r, color.g, color.b)
     end
 
+    -- add quest levels to tooltip
+    if pfDB["quests"]["loc"][id] then
+      ItemRefTooltip:AddLine(" ")
+
+      if pfDB["quests"]["data"][id]["min"] then
+        local questlevel = tonumber(pfDB["quests"]["data"][id]["min"])
+        local color = GetDifficultyColor(questlevel)
+        ItemRefTooltip:AddLine("|cffffffff" .. pfQuest_Loc["Required Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
+      end
+
+      if pfDB["quests"]["data"][id]["lvl"] then
+        local questlevel = tonumber(pfDB["quests"]["data"][id]["lvl"])
+        local color = GetDifficultyColor(questlevel)
+        ItemRefTooltip:AddLine("|cffffffff" .. pfQuest_Loc["Quest Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
+      end
+    end
+
     ItemRefTooltip:Show()
   end
 end
