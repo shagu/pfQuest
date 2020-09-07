@@ -473,7 +473,9 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
 
       -- read and set title
       if id and id > 0 and pfDB["quests"]["loc"][id] then
-        ItemRefTooltip:AddLine(pfDB["quests"]["loc"][id].T, 1,1,0)
+        local questlevel = tonumber(pfDB["quests"]["data"][id]["lvl"])
+        local color = GetDifficultyColor(questlevel)
+        ItemRefTooltip:AddLine(pfDB["quests"]["loc"][id].T, color.r, color.g, color.b)
       elseif hasTitle then
         ItemRefTooltip:AddLine(questTitle, 1,1,0)
       end
@@ -531,7 +533,28 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
     else
       pfQuestHookSetItemRef(link, text, button)
     end
-
     ItemRefTooltip.pfQtext = text
+  end
+else
+  -- patch itemref to show known quest levels on tbc
+  local pfQuestHookSetItemRef = SetItemRef
+  SetItemRef = function(link, text, button)
+    pfQuestHookSetItemRef(link, text, button)
+
+    -- skip modifier clicks
+    if IsAltKeyDown() or IsControlKeyDown() or IsShiftKeyDown() then return end
+
+    local quest, _, id = string.find(link, "quest:(%d+):.*")
+    if not quest then return end
+    id = tonumber(id)
+
+    -- adjust text color to level color
+    if id and id > 0 and pfDB["quests"]["loc"][id] then
+      local questlevel = tonumber(pfDB["quests"]["data"][id]["lvl"])
+      local color = GetDifficultyColor(questlevel)
+      ItemRefTooltipTextLeft1:SetTextColor(color.r, color.g, color.b)
+    end
+
+    ItemRefTooltip:Show()
   end
 end
