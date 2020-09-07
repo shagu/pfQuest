@@ -9,6 +9,8 @@ pfQuestCompat = {}
 pfQuestCompat.mod = mod or math.mod
 pfQuestCompat.gfind = string.gmatch or string.gfind
 pfQuestCompat.itemsuffix = client > 11200 and ":0:0:0:0:0:0:0" or ":0:0:0"
+pfQuestCompat.rotateMinimap = client > 11200 and GetCVar("rotateMinimap") ~= "0" and true or nil
+
 pfQuestCompat.GetQuestLogTitle = function(id)
   local title, level, tag, group, header, collapsed, complete, daily, _
   if client <= 11200 then -- vanilla
@@ -48,7 +50,7 @@ end
 
 -- return the player facing based on the minimap arrow
 function pfQuestCompat.GetPlayerFacing()
-  if client > 11200 and GetCVar("rotateMinimap") ~= "0" then
+  if pfQuestCompat.rotateMinimap then
     return (MiniMapCompassRing:GetFacing() * -1)
   else
     return minimaparrow:GetFacing()

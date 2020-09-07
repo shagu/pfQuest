@@ -797,8 +797,18 @@ function pfMap:UpdateMinimap()
           coord_cache[coords] = { x, y }
         end
 
-        local xPos = ( xPlayer - x ) * xDraw
-        local yPos = ( yPlayer - y ) * yDraw
+        local xPos = ( x - xPlayer) * xDraw
+        local yPos = ( y - yPlayer) * yDraw
+
+        if pfQuestCompat.rotateMinimap then
+          -- TODO: this part is broken and does not work yet.
+          local sinFacing = sin(pfQuestCompat.GetPlayerFacing())
+          local cosFacing = cos(pfQuestCompat.GetPlayerFacing())
+
+          local dx, dy = xPos, -yPos
+          xPos = (dx * cosFacing) + (dy * sinFacing)
+          yPos = -((-dx * sinFacing) + (dy * cosFacing))
+        end
 
         local display = nil
         if pfUI.minimap then
@@ -819,7 +829,7 @@ function pfMap:UpdateMinimap()
             pfMap.mpins[i]:Hide()
           else
             pfMap.mpins[i]:ClearAllPoints()
-            pfMap.mpins[i]:SetPoint("CENTER", pfMap.drawlayer, "CENTER", -xPos, yPos)
+            pfMap.mpins[i]:SetPoint("CENTER", pfMap.drawlayer, "CENTER", xPos, -yPos)
             pfMap.mpins[i]:Show()
           end
 
