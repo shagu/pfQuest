@@ -1349,7 +1349,7 @@ function pfDatabase:GetQuestIDs(qid, deep)
 
       if score > best then best = score end
       results[score] = results[score] or {}
-      table.insert(results[score], id)
+      if score > 0 then table.insert(results[score], id) end
     end
   end
 
