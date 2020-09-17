@@ -60,9 +60,10 @@ Clone the latest CMaNGOS TBC database and the translations of the Mangos-Extras 
 
     mysql -u mangos -p"mangos" cmangos-tbc < mangos-tbc/sql/base/mangos.sql
     mysql -u mangos -p"mangos" cmangos-tbc < tbc-db/Full_DB/*.sql
-    for file in mangos-tbc/sql/updates/mangos/*.sql; do mysql -u mangos -p"mangos" cmangos-tbc < $file; done
+    for file in tbc-db/Updates/*.sql; do mysql -u mangos -p"mangos" cmangos-tbc < $file; done
     mysql -u mangos -p"mangos" cmangos-tbc < mangos-tbc/sql/base/dbc/original_data/Spell.sql
     mysql -u mangos -p"mangos" cmangos-tbc < mangos-tbc/sql/base/dbc/cmangos_fixes/Spell.sql
+    for file in mangos-tbc/sql/updates/mangos/*.sql; do mysql -u mangos -p"mangos" cmangos-tbc < $file; done
     mysql -u mangos -p"mangos" cmangos-tbc < tbc-db/ACID/acid_tbc.sql
     sed -i "/locales_command/d" MangosOne_Localised/1_LocaleTablePrepare.sql
     mysql -u mangos -p"mangos" cmangos-tbc < MangosOne_Localised/1_LocaleTablePrepare.sql
