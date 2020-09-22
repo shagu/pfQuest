@@ -1317,6 +1317,11 @@ function pfDatabase:GetQuestIDs(qid)
   SelectQuestLogEntry(oldID)
 
   if header or not title then return end
+  local identifier = title .. ":" .. ( level or "") .. ":" .. ( objective or "") .. ":" .. ( text or "")
+
+  if pfQuest_questcache[identifier] then
+    return pfQuest_questcache[identifier]
+  end
 
   local _, race = UnitRace("player")
   local prace = pfDatabase:GetBitByRace(race)
@@ -1347,6 +1352,7 @@ function pfDatabase:GetQuestIDs(qid)
 
     -- set title to new title
     if not ttitle then
+      pfQuest_questcache[identifier] = {}
       return
     else
       title = ttitle
@@ -1388,6 +1394,8 @@ function pfDatabase:GetQuestIDs(qid)
     end
   end
 
+  -- cache for next time
+  pfQuest_questcache[identifier] = results[best]
   return results[best]
 end
 

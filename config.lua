@@ -216,6 +216,7 @@ pfQuestConfig:SetScript("OnEvent", function()
     pfQuestConfig:MigrateHistory()
     pfQuestConfig:CreateConfigEntries(pfQuest_defconfig)
 
+    pfQuest_questcache = pfQuest_questcache or {}
     pfQuest_history = pfQuest_history or {}
     pfQuest_colors = pfQuest_colors or {}
     pfQuest_config = pfQuest_config or {}
