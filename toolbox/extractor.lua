@@ -12,7 +12,7 @@ local debugsql = {
   ["units_event"] = { "Using mangos data to find spawns from events" },
   ["units_event_map_object"] = { "Using mangos data to determine map based on object requirements associated with event" },
   ["units_event_spell"] = { "Using mangos data to find spells associated with spawn" },
-  ["units_event_spell_map_object"] = { "Using mangos data to determine map based on objects associated with spawn spells" },
+  ["units_event_spell_map_object"] = { "Using mangos da ta to determine map based on objects associated with spawn spells" },
   ["units_event_spell_map_item"] = { "Using mangos data to determine map based on items associated with spawn spells" },
   ["units_summon_fixed"] = { "Using mangos data to find units that summon others and use their map with fixed spawn positions" },
   ["units_summon_unknown"] = { "Using mangos data to find units that summon others and use their coordinates as target spawn positions" },
@@ -982,7 +982,6 @@ for _, expansion in pairs(config.expansions) do
       local skill = tonumber(quest_template.RequiredSkill)
       local pre = tonumber(quest_template.PrevQuestId)
       local chain = tonumber(quest_template.NextQuestInChain)
-      local srcitem = tonumber(quest_template.SrcItemId)
 
       pfDB["quests"][data][entry] = {}
       pfDB["quests"][data][entry]["min"] = minlevel ~= 0 and minlevel
@@ -996,9 +995,6 @@ for _, expansion in pairs(config.expansions) do
 
       -- quest objectives
       local units, objects, items, areatrigger, zones = {}, {}, {}, {}, {}
-
-      -- add provided source item to itemlist
-      if srcitem and srcitem > 0 then items[srcitem] = true end
 
       for i=1,4 do
         if quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) > 0 then
