@@ -1346,13 +1346,17 @@ function pfDatabase:GetQuestIDs(qid)
     end
 
     -- set title to new title
-    title = ttitle or title
+    if not ttitle then
+      return
+    else
+      title = ttitle
+    end
   end
 
   for id, data in pairs(pfDB["quests"]["loc"]) do
     local score = 0
 
-    if quests[id] and data.T == title then
+    if quests[id] and data.T and data.T == title then
       -- check level and set score
       if quests[id]["lvl"] == level then
         score = score + 8
