@@ -317,7 +317,7 @@ function tracker.ButtonEvent(self)
   end
 
   if tracker.mode == "QUEST_TRACKING" then
-    local qlogid = pfQuest.questlog[qid].qlogid
+    local qlogid = pfQuest.questlog[qid] and pfQuest.questlog[qid].qlogid or 0
     local qtitle, level, tag, header, collapsed, complete = compat.GetQuestLogTitle(qlogid)
     if not qlogid or not qtitle then return end
     local objectives = GetNumQuestLeaderBoards(qlogid)
