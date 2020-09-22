@@ -430,45 +430,6 @@ function pfDatabase:GetBitByClass(class)
   end
 end
 
-local function strcomp(old, new)
-  local prv = {}
-  for o = 0, string.len(old) do
-    prv[o] = ""
-  end
-  for n = 1, string.len(new) do
-    local nxt = {[0] = string.sub(new,1, n)}
-    local nn = string.sub(new, n, n)
-    for o = 1, string.len(old) do
-      local result
-      if nn == string.sub(old, o, o) then
-        result = prv[o-1]
-      else
-        result = prv[o]..nn
-        if string.len(nxt[o-1]) <= string.len(result) then
-          result = nxt[o-1]
-        end
-      end
-      nxt[o] = result
-    end
-    prv = nxt
-  end
-
-  local diff = strlen(prv[string.len(old)])
-  if diff == 0 then
-    return 0
-  else
-    return diff/strlen(old)
-  end
-end
-
--- CompareString
--- Shows a score based on the similarity of two strings
-function pfDatabase:CompareString(old, new)
-  local s1 = strcomp(old, new)
-  local s2 = strcomp(new, old)
-  return (math.abs(s1) + math.abs(s2))/2
-end
-
 -- GetHexDifficultyColor
 -- Returns a string with the difficulty color of the given level
 function pfDatabase:GetHexDifficultyColor(level, force)
