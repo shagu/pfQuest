@@ -1219,7 +1219,7 @@ function pfDatabase:SearchQuests(meta, maps)
       -- hide non-available quests for your class
     elseif quests[id]["lvl"] and quests[id]["lvl"] < plevel - 9 and pfQuest_config["showlowlevel"] == "0" then
       -- hide lowlevel quests
-    elseif quests[id]["lvl"] and quests[id]["lvl"] > plevel + 10 then
+    elseif not quests[id]["min"] and quests[id]["lvl"] and quests[id]["lvl"] > plevel + 10 then
       -- hide highlevel quests
     elseif quests[id]["min"] and quests[id]["min"] > plevel + 3 then
       -- hide highlevel quests
