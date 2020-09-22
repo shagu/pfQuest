@@ -158,8 +158,8 @@ pfDatabase.itemlist.update = 0
 pfDatabase.itemlist.db = {}
 pfDatabase.itemlist.db_tmp = {}
 pfDatabase.itemlist.registry = {}
-pfDatabase.TrackQuestItemDependency = function(self, item, qtitle)
-  self.itemlist.registry[item] = qtitle
+pfDatabase.TrackQuestItemDependency = function(self, item, qid)
+  self.itemlist.registry[item] = qid
   self.itemlist.update = GetTime() + .5
   self.itemlist:Show()
 end
@@ -174,8 +174,8 @@ pfDatabase.itemlist:SetScript("OnUpdate", function()
   if GetTime() < this.update then return end
 
   -- remove obsolete registry entries
-  for item, qtitle in pairs(this.registry) do
-    if not pfQuest.questlog[qtitle] then
+  for item, qid in pairs(this.registry) do
+    if not pfQuest.questlog[qid] then
       this.registry[item] = nil
     end
   end
@@ -1074,7 +1074,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           if requirement and meta["qlogid"] then
             -- register item requirement
             local title, _, _, _, _, complete = compat.GetQuestLogTitle(meta["qlogid"])
-            pfDatabase:TrackQuestItemDependency(requirement, title)
+            pfDatabase:TrackQuestItemDependency(requirement, id)
             if pfDatabase.itemlist.db[requirement] then
               maps = pfDatabase:SearchObjectID(object, meta, maps)
             end
