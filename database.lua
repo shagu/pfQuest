@@ -1229,7 +1229,7 @@ function pfDatabase:SearchQuests(meta, maps)
       -- hide level+3 quests
     elseif quests[id]["skill"] and not pfDatabase:PlayerHasSkill(quests[id]["skill"]) then
       -- hide non-available quests for your class
-    else
+    elseif pfDB.quests.loc[id] and pfDB.quests.loc[id].T then
       -- set metadata
       meta["quest"] = ( pfDB.quests.loc[id] and pfDB.quests.loc[id].T ) or UNKNOWN
       meta["questid"] = id
