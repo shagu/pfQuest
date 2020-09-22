@@ -25,7 +25,7 @@ local function ShowTooltip()
         GameTooltip:AddLine(" ")
       end
 
-      local qlogid = pfQuest.questlog[this.title] and pfQuest.questlog[this.title].qlogid
+      local qlogid = pfQuest.questlog[this.node.questid] and pfQuest.questlog[this.node.questid].qlogid
       if qlogid then
         local objectives = GetNumQuestLeaderBoards(qlogid)
         if objectives and objectives > 0 then
@@ -225,11 +225,16 @@ function tracker.ButtonUpdate()
 end
 
 function tracker.ButtonClick()
-  if arg1 == "RightButton" and pfQuest.questlog[this.title] and pfQuest.questlog[this.title].qlogid then
-    -- show questlog
-    HideUIPanel(QuestLogFrame)
-    SelectQuestLogEntry(pfQuest.questlog[this.title].qlogid)
-    ShowUIPanel(QuestLogFrame)
+  if arg1 == "RightButton" then
+    for questid, data in pairs(pfQuest.questlog) do
+      if data.title == this.title then
+        -- show questlog
+        HideUIPanel(QuestLogFrame)
+        SelectQuestLogEntry(data.qlogid)
+        ShowUIPanel(QuestLogFrame)
+        break
+      end
+    end
   elseif IsShiftKeyDown() then
     -- mark as done if node is quest and not in questlog
     if this.node.questid and not this.node.qlogid then
@@ -279,6 +284,7 @@ function tracker.ButtonEvent(self)
   local title  = self.title
   local node   = self.node
   local id     = self.id
+  local qid    = self.questid
 
   self:SetHeight(0)
 
@@ -311,7 +317,7 @@ function tracker.ButtonEvent(self)
   end
 
   if tracker.mode == "QUEST_TRACKING" then
-    local qlogid = pfQuest.questlog[title].qlogid
+    local qlogid = pfQuest.questlog[qid].qlogid
     local qtitle, level, tag, header, collapsed, complete = compat.GetQuestLogTitle(qlogid)
     if not qlogid or not qtitle then return end
     local objectives = GetNumQuestLeaderBoards(qlogid)
@@ -439,13 +445,21 @@ end
 function tracker.ButtonAdd(title, node)
   if not title or not node then return end
 
+  local questid = title
+  for qid, data in pairs(pfQuest.questlog) do
+    if data.title == title then
+      questid = qid
+      break
+    end
+  end
+
   if tracker.mode == "QUEST_TRACKING" then -- skip everything that isn't in questlog
     if node.addon ~= "PFQUEST" then return end
-    if not pfQuest.questlog or not pfQuest.questlog[title] then return end
+    if not pfQuest.questlog or not pfQuest.questlog[questid] then return end
   elseif tracker.mode == "GIVER_TRACKING" then -- skip everything that isn't a questgiver
     if node.addon ~= "PFQUEST" then return end
     -- break on already taken quests
-    if not pfQuest.questlog or pfQuest.questlog[title] then return end
+    if not pfQuest.questlog or pfQuest.questlog[questid] then return end
     -- every layer above 2 is not a questgiver
     if node.layer > 2 then return end
   elseif tracker.mode == "DATABASE_TRACKING" then -- skip everything that isn't db query
@@ -517,6 +531,7 @@ function tracker.ButtonAdd(title, node)
   tracker.buttons[id].empty = nil
   tracker.buttons[id].title = title
   tracker.buttons[id].node = node
+  tracker.buttons[id].questid = questid
 
   -- reload button data
   tracker.ButtonEvent(tracker.buttons[id])
