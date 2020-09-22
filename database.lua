@@ -73,6 +73,43 @@ local function isempty(tbl)
   return true
 end
 
+-- Returns the levenshtein distance between two strings
+-- based on: https://gist.github.com/Badgerati/3261142
+local len1, len2, cost
+local function lev(str1, str2)
+  len1, len2, cost = string.len(str1), string.len(str2), 0
+
+  -- abort early on empty strings
+  if len1 == 0 then
+    return len2
+  elseif len2 == 0 then
+    return len1
+  elseif str1 == str2 then
+    return 0
+  end
+
+  -- initialise the base matrix
+  local matrix = {}
+  for i = 0, len1, 1 do
+    matrix[i] = { [0] = i }
+  end
+
+  for j = 0, len2, 1 do
+    matrix[0][j] = j
+  end
+
+  -- levenshtein algorithm
+  for i = 1, len1, 1 do
+    for j = 1, len2, 1 do
+      cost = string.byte(str1,i) == string.byte(str2,j) and 0 or 1
+      matrix[i][j] = math.min(matrix[i-1][j] + 1, matrix[i][j-1] + 1, matrix[i-1][j-1] + cost)
+    end
+  end
+
+  -- return the levenshtein distance
+  return matrix[len1][len2]
+end
+
 local loc_core, loc_update
 for _, exp in pairs({ "-tbc", "-wotlk" }) do
   for _, db in pairs(dbs) do
@@ -1295,9 +1332,8 @@ end
 
 -- GetQuestIDs
 -- Try to guess the quest ID based on the questlog ID
--- automatically runs a deep scan if no result was found.
 -- Returns possible quest IDs
-function pfDatabase:GetQuestIDs(qid, deep)
+function pfDatabase:GetQuestIDs(qid)
   if GetQuestLink then
     local questLink = GetQuestLink(qid)
       if questLink then
@@ -1323,27 +1359,25 @@ function pfDatabase:GetQuestIDs(qid, deep)
   for id, data in pairs(pfDB["quests"]["loc"]) do
     local score = 0
 
-    if quests[id] and (data.T == title or ( deep and strsub(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["O"]),0,10) == strsub(objective,0,10))) then
+    if quests[id] and data.T == title then
+      -- check objective and calculate score
+      score = score + max(100 - lev(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["O"]), objective),0)
+
+      -- check description and calculate score
+      score = score + max(100 - lev(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["D"]), text),0)
+
+      -- check level and set score
       if quests[id]["lvl"] == level then
-        score = score + 1
+        score = score + 8
       end
 
-      if pfDB.quests.loc[id]["O"] == objective then
-        score = score + 2
-      end
-
+      -- check race and set score
       if quests[id]["race"] and ( bit.band(quests[id]["race"], prace) == prace ) then
-        score = score + 4
+        score = score + 8
       end
 
+      -- check class and set score
       if quests[id]["class"] and ( bit.band(quests[id]["class"], pclass) == pclass ) then
-        score = score + 4
-      end
-
-      local dbtext = strsub(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["D"]),0,10)
-      local qstext = strsub(text,0,10)
-
-      if pfDatabase:CompareString(dbtext, qstext) < 0.1 then
         score = score + 8
       end
 
@@ -1353,7 +1387,7 @@ function pfDatabase:GetQuestIDs(qid, deep)
     end
   end
 
-  return results[best] or ( not deep and pfDatabase:GetQuestIDs(qid, 1) or {} )
+  return results[best]
 end
 
 -- browser search related defaults and values
