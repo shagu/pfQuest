@@ -1329,6 +1329,23 @@ function pfDatabase:GetQuestIDs(qid)
     if quests[id] and data.T == title then tcount = tcount + 1 end
   end
 
+  -- no title was found, run levenshtein on titles
+  if tcount == 0 and title then
+    local tscore, tbest, ttitle = nil, 5, nil
+    for id, data in pairs(pfDB["quests"]["loc"]) do
+      if quests[id] and data.T then
+        tscore = lev(data.T, title)
+        if tscore < tbest then
+          tbest = tscore
+          ttitle = data.T
+        end
+      end
+    end
+
+    -- set title to new title
+    title = ttitle or title
+  end
+
   for id, data in pairs(pfDB["quests"]["loc"]) do
     local score = 0
 
