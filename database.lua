@@ -77,7 +77,7 @@ end
 -- based on: https://gist.github.com/Badgerati/3261142
 local len1, len2, cost
 local levcache = {}
-local function lev(str1, str2)
+local function lev(str1, str2, limit)
   if levcache[str1..":"..str2] then
     return levcache[str1..":"..str2]
   end
@@ -108,6 +108,10 @@ local function lev(str1, str2)
     for j = 1, len2, 1 do
       cost = string.byte(str1,i) == string.byte(str2,j) and 0 or 1
       matrix[i][j] = math.min(matrix[i-1][j] + 1, matrix[i][j-1] + 1, matrix[i-1][j-1] + cost)
+      if limit and matrix[i][j] > limit then
+        levcache[str1..":"..str2] = limit
+        return limit
+      end
     end
   end
 
@@ -1342,7 +1346,7 @@ function pfDatabase:GetQuestIDs(qid)
     local tscore, tbest, ttitle = nil, 5, nil
     for id, data in pairs(pfDB["quests"]["loc"]) do
       if quests[id] and data.T then
-        tscore = lev(data.T, title)
+        tscore = lev(data.T, title, tscore)
         if tscore < tbest then
           tbest = tscore
           ttitle = data.T
@@ -1382,10 +1386,10 @@ function pfDatabase:GetQuestIDs(qid)
       -- to compare quest text distances in order to estimate the best quest id
       if tcount > 1 then
         -- check objective and calculate score
-        score = score + max(100 - lev(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["O"]), objective),0)
+        score = score + max(24 - lev(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["O"]), objective, 24),0)
 
         -- check description and calculate score
-        score = score + max(100 - lev(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["D"]), text),0)
+        score = score + max(24 - lev(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["D"]), text, 24),0)
       end
 
       if score > best then best = score end
