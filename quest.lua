@@ -65,12 +65,26 @@ pfQuest:SetScript("OnUpdate", function()
   for id, entry in pairs(this.queue) do
     match = true
 
+    -- remove quest
+    if entry[4] == "REMOVE" then
+      pfMap:DeleteNode("PFQUEST", entry[1])
+      pfMap:UpdateNodes()
+
+      -- write pfQuest.questlog history
+      if title == pfQuest.abandon then
+        pfQuest_history[entry[2]] = nil
+      else
+        pfQuest_history[entry[2]] = { time(), UnitLevel("player") }
+      end
+
+      pfQuest.abandon = ""
+      pfQuest.updateQuestGivers = true
+    end
+
     if pfQuest_config["trackingmethod"] ~= 3 and (pfQuest_config["trackingmethod"] ~= 2 or IsQuestWatched(entry[3])) then
       pfMap:DeleteNode("PFQUEST", entry[1])
       local meta = { ["addon"] = "PFQUEST", ["qlogid"] = entry[3] }
-      for _, id in pairs(entry[2]) do
-        pfDatabase:SearchQuestID(id, meta)
-      end
+      pfDatabase:SearchQuestID(entry[2], meta)
     end
 
     pfQuest.queue[id] = nil
@@ -92,26 +106,19 @@ function pfQuest:UpdateQuestlog()
 
   -- iterate over all quests
   for qlogid=1,40 do
-
     local title, _, _, header, _, complete = compat.GetQuestLogTitle(qlogid)
     local objectives = GetNumQuestLeaderBoards(qlogid)
-    local watched
+    local watched, questid, state
 
     if title and not header then
-      watched = IsQuestWatched(qlogid)
-      -- add new quest to the questlog
-      if not pfQuest.questlog[title] then
-        local questID = pfDatabase:GetQuestIDs(qlogid)
-        pfQuest.questlog_tmp[title] = { ids = questID, qlogid = qlogid, state = "init" }
-      elseif pfQuest.questlog[title].qlogid ~= qlogid then
-        pfQuest.questlog_tmp[title] = { ids = pfQuest.questlog[title].ids, qlogid = qlogid, state = pfQuest.questlog[title].state }
-      else
-        pfQuest.questlog_tmp[title] = { ids = pfQuest.questlog[title].ids, qlogid = pfQuest.questlog[title].qlogid, state = pfQuest.questlog[title].state }
-      end
+      questid = pfDatabase:GetQuestIDs(qlogid)
+      questid = questid and questid[1] or title
 
-      -- update progress state
+      watched = IsQuestWatched(qlogid)
+      state = watched and "track" or ""
+
+      -- build state string
       if objectives then
-        local state = watched and "trck" or ""
         for i=1, objectives, 1 do
           local text, _, done = GetQuestLogLeaderBoard(i, qlogid)
           local _, _, obj, objNum, objNeeded = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
@@ -119,7 +126,29 @@ function pfQuest:UpdateQuestlog()
             state = state .. i .. (((objNum + 0 >= objNeeded + 0) or done ) and "done" or "todo")
           end
         end
-        pfQuest.questlog_tmp[title].state = state
+      end
+
+      -- add new quest to the questlog
+      if not pfQuest.questlog[questid] then
+        table.insert(pfQuest.queue, { title, questid, qlogid, "NEW" })
+        local questID = pfDatabase:GetQuestIDs(qlogid)
+        pfQuest.questlog_tmp[questid] = {
+          title = title,
+          qlogid = qlogid,
+          state = "init",
+        }
+      elseif pfQuest.questlog[questid].qlogid ~= qlogid then
+        table.insert(pfQuest.queue, { title, questid, qlogid, "RELOAD" })
+        pfQuest.questlog_tmp[questid] = pfQuest.questlog[questid]
+        pfQuest.questlog_tmp[questid].qlogid = qlogid
+        pfQuest.questlog_tmp[questid].state = state
+      elseif pfQuest.questlog[questid].state ~= state then
+        table.insert(pfQuest.queue, { title, questid, qlogid, "RELOAD" })
+        pfQuest.questlog_tmp[questid] = pfQuest.questlog[questid]
+        pfQuest.questlog_tmp[questid].qlogid = qlogid
+        pfQuest.questlog_tmp[questid].state = state
+      else
+        pfQuest.questlog_tmp[questid] = pfQuest.questlog[questid]
       end
 
       found = found + 1
@@ -129,32 +158,10 @@ function pfQuest:UpdateQuestlog()
     end
   end
 
-  -- quest add events
-  for title, data in pairs(pfQuest.questlog_tmp) do
-    if not pfQuest.questlog[title] then
-      table.insert(pfQuest.queue, { title, data.ids, data.qlogid })
-    elseif pfQuest.questlog_tmp[title].state ~= pfQuest.questlog[title].state then
-      table.insert(pfQuest.queue, { title, data.ids, data.qlogid })
-    end
-  end
-
   -- quest removal events
-  for title, data in pairs(pfQuest.questlog) do
-    if not pfQuest.questlog_tmp[title] then
-      pfMap:DeleteNode("PFQUEST", title)
-      pfMap:UpdateNodes()
-
-      for _, qid in pairs(pfQuest.questlog[title].ids) do
-        -- write pfQuest.questlog history
-        if title == pfQuest.abandon then
-          pfQuest_history[qid] = nil
-        else
-          pfQuest_history[qid] = { time(), UnitLevel("player") }
-        end
-      end
-
-      pfQuest.abandon = ""
-      pfQuest.updateQuestGivers = true
+  for questid, data in pairs(pfQuest.questlog) do
+    if not pfQuest.questlog_tmp[questid] then
+      table.insert(pfQuest.queue, { data.title, questid, nil, "REMOVE" })
     end
   end
 
