@@ -76,7 +76,12 @@ end
 -- Returns the levenshtein distance between two strings
 -- based on: https://gist.github.com/Badgerati/3261142
 local len1, len2, cost
+local levcache = {}
 local function lev(str1, str2)
+  if levcache[str1..":"..str2] then
+    return levcache[str1..":"..str2]
+  end
+
   len1, len2, cost = string.len(str1), string.len(str2), 0
 
   -- abort early on empty strings
@@ -107,6 +112,7 @@ local function lev(str1, str2)
   end
 
   -- return the levenshtein distance
+  levcache[str1..":"..str2] = matrix[len1][len2]
   return matrix[len1][len2]
 end
 
