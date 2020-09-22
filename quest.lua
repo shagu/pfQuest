@@ -71,20 +71,25 @@ pfQuest:SetScript("OnUpdate", function()
       pfMap:UpdateNodes()
 
       -- write pfQuest.questlog history
-      if title == pfQuest.abandon then
+      if entry[1] == pfQuest.abandon then
         pfQuest_history[entry[2]] = nil
       else
         pfQuest_history[entry[2]] = { time(), UnitLevel("player") }
       end
 
       pfQuest.abandon = ""
-      pfQuest.updateQuestGivers = true
     end
 
+    -- update quest nodes
     if pfQuest_config["trackingmethod"] ~= 3 and (pfQuest_config["trackingmethod"] ~= 2 or IsQuestWatched(entry[3])) then
       pfMap:DeleteNode("PFQUEST", entry[1])
       local meta = { ["addon"] = "PFQUEST", ["qlogid"] = entry[3] }
       pfDatabase:SearchQuestID(entry[2], meta)
+    end
+
+    -- make sure to update questgivers
+    if entry[4] == "REMOVE" or entry[4] == "NEW" then
+      pfQuest.updateQuestGivers = true
     end
 
     pfQuest.queue[id] = nil
