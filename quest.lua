@@ -113,7 +113,6 @@ function pfQuest:UpdateQuestlog()
     if title and not header then
       questid = pfDatabase:GetQuestIDs(qlogid)
       questid = questid and questid[1] or title
-
       watched = IsQuestWatched(qlogid)
       state = watched and "track" or ""
 
@@ -131,7 +130,6 @@ function pfQuest:UpdateQuestlog()
       -- add new quest to the questlog
       if not pfQuest.questlog[questid] then
         table.insert(pfQuest.queue, { title, questid, qlogid, "NEW" })
-        local questID = pfDatabase:GetQuestIDs(qlogid)
         pfQuest.questlog_tmp[questid] = {
           title = title,
           qlogid = qlogid,
@@ -269,14 +267,13 @@ function pfQuest:AddQuestLogIntegration()
   pfQuest.buttonShow:SetPoint("TOP", dockTitle, "TOP", -110, 0)
   pfQuest.buttonShow:SetScript("OnClick", function()
     local questIndex = GetQuestLogSelection()
+    local questids = pfDatabase:GetQuestIDs(questIndex)
     local title, _, _, header, _, complete = compat.GetQuestLogTitle(questIndex)
-    if header then return end
+    local id = questids and questids[1] or nil
+    if header or not id then return end
 
-    local ids = pfQuest.questlog[title].ids
     local maps, meta = {}, { ["addon"] = "PFQUEST", ["qlogid"] = questIndex }
-    for _, id in pairs(ids) do
-      maps = pfDatabase:SearchQuestID(id, meta, maps)
-    end
+    maps = pfDatabase:SearchQuestID(id, meta, maps)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
   end)
 
@@ -413,13 +410,12 @@ local pfHookQuestLog_Update = QuestLog_Update
 QuestLog_Update = function()
   pfHookQuestLog_Update()
   if pfQuest_config["questlogbuttons"] ==  "1" then
-    local questName = compat.GetQuestLogTitle(GetQuestLogSelection())
-    if pfQuest.questlog[questName] and pfQuest.questlog[questName].ids[1] then
-      local id = pfQuest.questlog[questName].ids[1]
-      pfQuest.buttonOnline:SetID(id)
+    local questids = pfDatabase:GetQuestIDs(GetQuestLogSelection())
+    if questids and questids[1] and pfQuest.questlog[questids[1]] then
+      pfQuest.buttonOnline:SetID(questids[1])
       pfQuest.buttonOnline:Show()
       if pfQuest_config.showids == "1" then
-        pfQuest.buttonOnline.txt:SetText("|cff000000[|cffaa2222id: " .. id .. "|cff000000]")
+        pfQuest.buttonOnline.txt:SetText("|cff000000[|cffaa2222id: " .. questids[1] .. "|cff000000]")
         pfQuest.buttonOnline:SetWidth(pfQuest.buttonOnline.txt:GetStringWidth())
       end
     else
@@ -434,9 +430,10 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
     local scrollFrame = EQL3_QuestLogListScrollFrame or ShaguQuest_QuestLogListScrollFrame or QuestLogListScrollFrame
     local questIndex = this:GetID() + FauxScrollFrame_GetOffset(scrollFrame)
     local questName, questLevel = compat.GetQuestLogTitle(questIndex)
-    if IsShiftKeyDown() and not this.isHeader and ChatFrameEditBox:IsVisible() then
-      local id = pfQuest.questlog[questName] and pfQuest.questlog[questName].ids[1] or nil
-      pfQuestCompat.InsertQuestLink(id, questName)
+    local questids = pfDatabase:GetQuestIDs(questIndex)
+
+    if questids and questids[1] and IsShiftKeyDown() and not this.isHeader and ChatFrameEditBox:IsVisible() then
+      pfQuestCompat.InsertQuestLink(questids[1], questName)
       QuestLog_SetSelection(questIndex)
       QuestLog_Update()
       return
@@ -489,13 +486,7 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
 
       -- scan for active quests
       local queststate = pfQuest_history[id] and 2 or 0
-      for title, data in pairs(pfQuest.questlog) do
-        for _, qid in pairs(pfQuest.questlog[title].ids) do
-          if qid == id then
-            queststate = 1
-          end
-        end
-      end
+      queststate = pfQuest.questlog[id] and 1 or nil
 
       if queststate == 0 then
         ItemRefTooltip:AddLine(pfQuest_Loc["You don't have this quest."] .. "\n\n", 1, .5, .5)
