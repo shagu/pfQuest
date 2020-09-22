@@ -18,6 +18,8 @@ function WorldMapOverlay() {
 DROP TABLE IF EXISTS \`WorldMapOverlay_${v}\`;
 CREATE TABLE \`WorldMapOverlay_${v}\` (
 \`areaID\` smallint(3) unsigned NOT NULL,
+\`zoneID\` smallint(3) unsigned NOT NULL,
+\`texture\` varchar(255),
 \`textureWidth\` smallint(3) unsigned NOT NULL,
 \`textureHeight\` smallint(3) unsigned NOT NULL,
 \`offsetX\` smallint(3) unsigned NOT NULL,
@@ -33,6 +35,7 @@ EOF
   if [ -d $root/$v ] && [ -f $root/$v/WorldMapOverlay.dbc.csv ]; then
     cat $root/$v/WorldMapOverlay.dbc.csv | tail -n +2 | sort -nt ',' -k3 | while read line; do
       areaID=$(echo $line | cut -d "," -f 3)
+      zoneID=$(echo $line | cut -d "," -f 2)
       texture=$(echo $line | cut -d "," -f 9)
       textureWidth=$(echo $line | cut -d "," -f 10)
       textureHeight=$(echo $line | cut -d "," -f 11)
@@ -43,7 +46,7 @@ EOF
       bottom=$(echo $line | cut -d "," -f 16)
       right=$(echo $line | cut -d "," -f 17)
 
-      echo "INSERT INTO \`WorldMapOverlay_${v}\` VALUES ($areaID, $textureWidth, $textureHeight, $offsetX, $offsetY, $top, $left, $bottom, $right);" >> $rootsql
+      echo "INSERT INTO \`WorldMapOverlay_${v}\` VALUES ($areaID, $zoneID, $texture, $textureWidth, $textureHeight, $offsetX, $offsetY, $top, $left, $bottom, $right);" >> $rootsql
     done
   fi
 }
@@ -81,6 +84,7 @@ function WorldMapArea() {
   cat >> $rootsql << EOF
 DROP TABLE IF EXISTS \`WorldMapArea_${v}\`;
 CREATE TABLE \`WorldMapArea_${v}\` (
+\`zoneID\` smallint(3) unsigned NOT NULL,
 \`mapID\` smallint(3) unsigned NOT NULL,
 \`areatableID\` smallint(3) unsigned NOT NULL,
 \`name\` varchar(255) NOT NULL,
@@ -94,6 +98,7 @@ EOF
 
   if [ -d $root/$v ] && [ -f $root/$v/WorldMapArea.dbc.csv ]; then
     cat $root/$v/WorldMapArea.dbc.csv | tail -n +2 | sort -nt ',' -k3 | while read line; do
+      zone=$(echo $line | cut -d "," -f 1)
       map=$(echo $line | cut -d "," -f 2)
       area=$(echo $line | cut -d "," -f 3)
       name=$(echo $line | cut -d "," -f 4)
@@ -102,7 +107,7 @@ EOF
       x_max=$(echo $line | cut -d "," -f 7)
       y_max=$(echo $line | cut -d "," -f 8)
 
-      echo "INSERT INTO \`WorldMapArea_${v}\` VALUES ($map, $area, $name, $y_max, $y_min, $x_max, $x_min);" >> $rootsql
+      echo "INSERT INTO \`WorldMapArea_${v}\` VALUES ($zone, $map, $area, $name, $y_max, $y_min, $x_max, $x_min);" >> $rootsql
     done
   fi
 }
