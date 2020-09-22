@@ -67,9 +67,6 @@ pfQuest:SetScript("OnUpdate", function()
 
     -- remove quest
     if entry[4] == "REMOVE" then
-      pfMap:DeleteNode("PFQUEST", entry[1])
-      pfMap:UpdateNodes()
-
       -- write pfQuest.questlog history
       if entry[1] == pfQuest.abandon then
         pfQuest_history[entry[2]] = nil
@@ -77,6 +74,8 @@ pfQuest:SetScript("OnUpdate", function()
         pfQuest_history[entry[2]] = { time(), UnitLevel("player") }
       end
 
+      pfMap:DeleteNode("PFQUEST", entry[1])
+      pfMap:UpdateNodes()
       pfQuest.abandon = ""
     end
 
