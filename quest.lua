@@ -77,13 +77,13 @@ pfQuest:SetScript("OnUpdate", function()
       pfMap:DeleteNode("PFQUEST", entry[1])
       pfMap:UpdateNodes()
       pfQuest.abandon = ""
-    end
-
-    -- update quest nodes
-    if pfQuest_config["trackingmethod"] ~= 3 and (pfQuest_config["trackingmethod"] ~= 2 or IsQuestWatched(entry[3])) then
-      pfMap:DeleteNode("PFQUEST", entry[1])
-      local meta = { ["addon"] = "PFQUEST", ["qlogid"] = entry[3] }
-      pfDatabase:SearchQuestID(entry[2], meta)
+    else
+      -- update quest nodes
+      if pfQuest_config["trackingmethod"] ~= 3 and (pfQuest_config["trackingmethod"] ~= 2 or IsQuestWatched(entry[3])) then
+        pfMap:DeleteNode("PFQUEST", entry[1])
+        local meta = { ["addon"] = "PFQUEST", ["qlogid"] = entry[3] }
+        pfDatabase:SearchQuestID(entry[2], meta)
+      end
     end
 
     -- make sure to update questgivers
