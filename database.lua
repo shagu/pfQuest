@@ -1316,6 +1316,8 @@ function pfDatabase:GetQuestIDs(qid)
   local title, level, _, header = compat.GetQuestLogTitle(qid)
   SelectQuestLogEntry(oldID)
 
+  if header or not title then return end
+
   local _, race = UnitRace("player")
   local prace = pfDatabase:GetBitByRace(race)
   local _, class = UnitClass("player")
