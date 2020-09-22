@@ -1198,7 +1198,8 @@ function pfDatabase:SearchQuests(meta, maps)
   local currentQuests = {}
   for id=1, GetNumQuestLogEntries() do
     local title = compat.GetQuestLogTitle(id)
-    if title then currentQuests[title] = true end
+    local questid = pfDatabase:GetQuestIDs(id)
+    if questid and questid[1] then currentQuests[questid[1]] = true end
   end
 
   for id in pairs(quests) do
@@ -1206,7 +1207,7 @@ function pfDatabase:SearchQuests(meta, maps)
     maxlvl = quests[id]["lvl"] or quests[id]["min"] or plevel
     festival = (math.abs(minlvl - maxlvl) >= 30 and true) or (quests[id]["lvl"] and quests[id]["lvl"] < 0 and true) or nil
 
-    if pfDB.quests.loc[id] and currentQuests[pfDB.quests.loc[id].T] then
+    if currentQuests[id] then
       -- hide active quest
     elseif pfQuest_history[id] then
       -- hide completed quests
