@@ -418,12 +418,21 @@ QuestLog_Update = function()
     if questids and questids[1] and pfQuest.questlog[questids[1]] then
       pfQuest.buttonOnline:SetID(questids[1])
       pfQuest.buttonOnline:Show()
+      pfQuest.buttonLanguage:Show()
+      -- enable buttons
+      pfQuest.buttonShow:Enable()
+      pfQuest.buttonHide:Enable()
+
       if pfQuest_config.showids == "1" then
         pfQuest.buttonOnline.txt:SetText("|cff000000[|cffaa2222id: " .. questids[1] .. "|cff000000]")
         pfQuest.buttonOnline:SetWidth(pfQuest.buttonOnline.txt:GetStringWidth())
       end
     else
       pfQuest.buttonOnline:Hide()
+      pfQuest.buttonLanguage:Hide()
+      -- disable buttons
+      pfQuest.buttonShow:Disable()
+      pfQuest.buttonHide:Disable()
     end
   end
 end
