@@ -313,6 +313,14 @@ function pfQuest:AddQuestLogIntegration()
   pfQuest.buttonReset:SetScript("OnClick", function()
     pfQuest:ResetAll()
   end)
+
+  -- use pfUI buttons in native mode
+  if not pfUI.api.emulated then
+    pfUI.api.SkinButton(pfQuest.buttonShow)
+    pfUI.api.SkinButton(pfQuest.buttonHide)
+    pfUI.api.SkinButton(pfQuest.buttonClean)
+    pfUI.api.SkinButton(pfQuest.buttonReset)
+  end
 end
 
 function pfQuest:AddWorldMapIntegration()
