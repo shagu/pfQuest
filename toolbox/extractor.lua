@@ -762,6 +762,11 @@ for _, expansion in pairs(config.expansions) do
         end
       end
 
+      do -- Sentinel Selarin:3694
+        -- taken from https://classic.wowhead.com/npc=3694/sentinel-selarin
+        pfDB["units"][data][3694]["coords"] = { [1] = { 39.2, 43.4, 42, 0 } }
+      end
+
       do -- Mokk the Savage:1514
         -- taken from https://classic.wowhead.com/npc=1514/mokk-the-savage
         pfDB["units"][data][1514]["coords"] = { [1] = { 35.2, 60.4, 33, 0 } }
