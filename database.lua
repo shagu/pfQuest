@@ -1323,16 +1323,16 @@ function pfDatabase:GetQuestIDs(qid)
   local best = 0
   local results = {}
 
+  local tcount = 0
+  -- check if multiple quests share the same name
+  for id, data in pairs(pfDB["quests"]["loc"]) do
+    if quests[id] and data.T == title then tcount = tcount + 1 end
+  end
+
   for id, data in pairs(pfDB["quests"]["loc"]) do
     local score = 0
 
     if quests[id] and data.T == title then
-      -- check objective and calculate score
-      score = score + max(100 - lev(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["O"]), objective),0)
-
-      -- check description and calculate score
-      score = score + max(100 - lev(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["D"]), text),0)
-
       -- check level and set score
       if quests[id]["lvl"] == level then
         score = score + 8
@@ -1346,6 +1346,16 @@ function pfDatabase:GetQuestIDs(qid)
       -- check class and set score
       if quests[id]["class"] and ( bit.band(quests[id]["class"], pclass) == pclass ) then
         score = score + 8
+      end
+
+      -- if multiple quests share the same name, use levenshtein algorithm,
+      -- to compare quest text distances in order to estimate the best quest id
+      if tcount > 1 then
+        -- check objective and calculate score
+        score = score + max(100 - lev(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["O"]), objective),0)
+
+        -- check description and calculate score
+        score = score + max(100 - lev(pfDatabase:FormatQuestText(pfDB.quests.loc[id]["D"]), text),0)
       end
 
       if score > best then best = score end
