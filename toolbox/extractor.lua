@@ -12,7 +12,7 @@ local debugsql = {
   ["units_event"] = { "Using mangos data to find spawns from events" },
   ["units_event_map_object"] = { "Using mangos data to determine map based on object requirements associated with event" },
   ["units_event_spell"] = { "Using mangos data to find spells associated with spawn" },
-  ["units_event_spell_map_object"] = { "Using mangos da ta to determine map based on objects associated with spawn spells" },
+  ["units_event_spell_map_object"] = { "Using mangos data to determine map based on objects associated with spawn spells" },
   ["units_event_spell_map_item"] = { "Using mangos data to determine map based on items associated with spawn spells" },
   ["units_summon_fixed"] = { "Using mangos data to find units that summon others and use their map with fixed spawn positions" },
   ["units_summon_unknown"] = { "Using mangos data to find units that summon others and use their coordinates as target spawn positions" },
@@ -38,6 +38,7 @@ local debugsql = {
   ["quests_credit"] = { "Only applies to CMaNGOS(TBC) to find units that give shared credit to the quest" },
   ["quests_item"] = { "Using mangos data to scan through all items with spell requirements" },
   ["quests_itemspell"] = { "Using mangos data to scan through spells that apply to the given item" },
+  ["quests_itemspellcreature"] = { "Using mangos data to find all creatures that are a spell target of the given item" },
   ["quests_itemspellobject"] = { "Using mangos data to find all objects that are a spell target of the given item" },
   ["quests_itemspellscript"] = { "Using mangos data to find all scripts that are a spell target of the given item" },
   ["quests_areatrigger"] = { "Using mangos data to find associated areatriggers" },
@@ -745,23 +746,6 @@ for _, expansion in pairs(config.expansions) do
         ["fac"] = "H", ["lvl"] = "60",
       }
 
-      do -- Screecher Spirit:8612
-        -- set spawn points to each possible screecher in feralas
-        pfDB["units"][data][8612]["coords"] = {}
-
-        if pfDB["units"][data][5308] and pfDB["units"][data][5308]["coords"] then
-          for id, coords in pairs(pfDB["units"][data][5308]["coords"]) do
-            table.insert(pfDB["units"][data][8612]["coords"], coords)
-          end
-        end
-
-        if pfDB["units"][data][5307] and pfDB["units"][data][5307]["coords"] then
-          for id, coords in pairs(pfDB["units"][data][5307]["coords"]) do
-            table.insert(pfDB["units"][data][8612]["coords"], coords)
-          end
-        end
-      end
-
       do -- Sentinel Selarin:3694
         -- taken from https://classic.wowhead.com/npc=3694/sentinel-selarin
         pfDB["units"][data][3694]["coords"] = { [1] = { 39.2, 43.4, 42, 0 } }
@@ -987,6 +971,7 @@ for _, expansion in pairs(config.expansions) do
       local skill = tonumber(quest_template.RequiredSkill)
       local pre = tonumber(quest_template.PrevQuestId)
       local chain = tonumber(quest_template.NextQuestInChain)
+      local srcitem = tonumber(quest_template.SrcItemId)
 
       pfDB["quests"][data][entry] = {}
       pfDB["quests"][data][entry]["min"] = minlevel ~= 0 and minlevel
@@ -1000,6 +985,9 @@ for _, expansion in pairs(config.expansions) do
 
       -- quest objectives
       local units, objects, items, areatrigger, zones = {}, {}, {}, {}, {}
+
+      -- temporary add provided quest item
+      items[srcitem] = true
 
       for i=1,4 do
         if quest_template["ReqCreatureOrGOId" .. i] and tonumber(quest_template["ReqCreatureOrGOId" .. i]) > 0 then
@@ -1108,6 +1096,9 @@ for _, expansion in pairs(config.expansions) do
         if debug("quests_areatrigger") then break end
         areatrigger[tonumber(areatrigger_involvedrelation["id"])] = true
       end
+
+      -- remove provided quest item from objectives
+      items[srcitem] = nil
 
       do -- write objectives
         if tblsize(units) > 0 or tblsize(objects) > 0 or tblsize(items) > 0 or tblsize(areatrigger) > 0 or tblsize(zones) > 0 then
