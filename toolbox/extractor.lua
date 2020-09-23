@@ -1048,6 +1048,20 @@ for _, expansion in pairs(config.expansions) do
               local focus = spell_template[C.RequiresSpellFocus]
               local match = nil
 
+              -- spell requires focusing a creature
+              local spell_script_target = {}
+              for itemid in pairs(items) do
+                local query = mysql:execute([[
+                  SELECT spell_script_target.targetEntry AS creature
+                  FROM spell_script_target, item_template
+                  WHERE ]] .. spellid .. [[ > 0 AND ]] .. spellid .. [[ = spell_script_target.entry
+                ]])
+                while query:fetch(spell_script_target, "a") do
+                  if debug("quests_itemspellcreature") then break end
+                  units[tonumber(spell_script_target.creature)] = true
+                end
+              end
+
               -- spell requries focusing an object
               if focus and tonumber(focus) > 0  then
                 local gameobject_template = {}
