@@ -97,7 +97,9 @@ pfQuest:SetScript("OnUpdate", function()
   end
 
   -- trigger questgiver update
-  this.updateQuestGivers = true
+  if tsize(this.queue) == 0 then
+    this.updateQuestGivers = true
+  end
 end)
 
 function pfQuest:UpdateQuestlog()
