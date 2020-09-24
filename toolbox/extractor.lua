@@ -41,15 +41,13 @@ local debugsql = {
   ["quests_itemspellcreature"] = { "Using mangos data to find all creatures that are a spell target of the given item" },
   ["quests_itemspellobject"] = { "Using mangos data to find all objects that are a spell target of the given item" },
   ["quests_itemspellscript"] = { "Using mangos data to find all scripts that are a spell target of the given item" },
+  ["quests_itemobject"] = { "Using mangos database and client data to search for object that can be opened by item" },
   ["quests_areatrigger"] = { "Using mangos data to find associated areatriggers" },
   ["quests_starterunit"] = { "Using mangos data to search for quest starter units" },
   ["quests_starterobject"] = { "Using mangos data to search for quest starter objects" },
   ["quests_starteritem"] = { "Using mangos data to search for quest starter items" },
   ["quests_enderunit"] = { "Using mangos data to search for quest ender units" },
   ["quests_enderobject"] = { "Using mangos data to search for quest ender objects" },
-  --
-  ["requirements_object_spell_item"] = { "Using mangos database to search for items providing a spell for the object" },
-  ["requirements_object_items"] = { "Using mangos database and client data to search for object item requirements" },
   --
   ["zones"] = { "Using client data to read zone data" },
   --
@@ -957,6 +955,9 @@ for _, expansion in pairs(config.expansions) do
     pfDB["quests"] = pfDB["quests"] or {}
     pfDB["quests"][data] = {}
 
+    pfDB["quests-itemreq"] = pfDB["quests-itemreq"] or {}
+    pfDB["quests-itemreq"][data] = {}
+
     -- iterate over all quests
     local quest_template = {}
     local query = mysql:execute('SELECT * FROM quest_template GROUP BY quest_template.entry')
@@ -984,7 +985,7 @@ for _, expansion in pairs(config.expansions) do
       pfDB["quests"][data][entry]["next"] = chain ~= 0 and chain
 
       -- quest objectives
-      local units, objects, items, areatrigger, zones = {}, {}, {}, {}, {}
+      local units, objects, items, itemreq, areatrigger, zones = {}, {}, {}, {}, {}, {}
 
       -- temporary add provided quest item
       items[srcitem] = true
@@ -1030,75 +1031,103 @@ for _, expansion in pairs(config.expansions) do
         end
       end
 
-      -- scan all involved questitems for spells that require gameobjects, units or zones
+      -- scan all involved questitems for spells that require or are required by gameobjects, units or zones
       for id in pairs(items) do
-        local item_template = {}
-        for _, spellcolumn in pairs({ "spellid_1", "spellid_2", "spellid_3", "spellid_4", "spellid_5" }) do
-          local query = mysql:execute('SELECT * FROM item_template WHERE ' .. spellcolumn .. ' > 0 and entry = ' .. id)
-          while query:fetch(item_template, "a") do
-            if debug("quests_item") then break end
-            local spellid = item_template[spellcolumn]
+        if id > 0 then
+          local item_template = {}
+          for _, spellcolumn in pairs({ "spellid_1", "spellid_2", "spellid_3", "spellid_4", "spellid_5" }) do
+            local query = mysql:execute('SELECT * FROM item_template WHERE ' .. spellcolumn .. ' > 0 and entry = ' .. id)
+            while query:fetch(item_template, "a") do
+              if debug("quests_item") then break end
+              local spellid = item_template[spellcolumn]
 
-            -- scan through all spells that are associated with the item
-            local spell_template = {}
-            local query = mysql:execute('SELECT * FROM spell_template WHERE ' .. C.Id .. ' = ' .. spellid)
-            while query:fetch(spell_template, "a") do
-              if debug("quests_itemspell") then break end
-              local area = spell_template["AreaId"]
-              local focus = spell_template[C.RequiresSpellFocus]
-              local match = nil
+              -- scan through all spells that are associated with the item
+              local spell_template = {}
+              local query = mysql:execute('SELECT * FROM spell_template WHERE ' .. C.Id .. ' = ' .. spellid)
+              while query:fetch(spell_template, "a") do
+                if debug("quests_itemspell") then break end
+                local area = spell_template["AreaId"]
+                local focus = spell_template[C.RequiresSpellFocus]
+                local match = nil
 
-              -- spell requires focusing a creature
-              local spell_script_target = {}
-              for itemid in pairs(items) do
-                local query = mysql:execute([[
-                  SELECT spell_script_target.targetEntry AS creature
-                  FROM spell_script_target, item_template
-                  WHERE ]] .. spellid .. [[ > 0 AND ]] .. spellid .. [[ = spell_script_target.entry
-                ]])
-                while query:fetch(spell_script_target, "a") do
-                  if debug("quests_itemspellcreature") then break end
-                  units[tonumber(spell_script_target.creature)] = true
-                end
-              end
-
-              -- spell requries focusing an object
-              if focus and tonumber(focus) > 0  then
-                local gameobject_template = {}
-                local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. focus)
-                while query:fetch(gameobject_template, "a") do
-                  if debug("quests_itemspellobject") then break end
-                  objects[tonumber(gameobject_template["entry"])] = true
-                  match = true
-                end
-              end
-
-              -- spell triggers something that requires a special target
-              for _, trigger in pairs({ spell_template[C["EffectTriggerSpell"]..1], spell_template[C["EffectTriggerSpell"]..2], spell_template[C["EffectTriggerSpell"]..3] }) do
-                if trigger and tonumber(trigger) > 0 then
-                  local spell_script_target = {}
-                  local query = mysql:execute('SELECT * FROM spell_script_target WHERE entry = ' .. trigger)
+                -- spell requires focusing a creature
+                local spell_script_target = {}
+                for itemid in pairs(items) do
+                  local query = mysql:execute([[
+                    SELECT spell_script_target.targetEntry AS creature
+                    FROM spell_script_target, item_template
+                    WHERE ]] .. spellid .. [[ > 0 AND ]] .. spellid .. [[ = spell_script_target.entry
+                  ]])
                   while query:fetch(spell_script_target, "a") do
-                    if debug("quests_itemspellscript") then break end
-                    local targetobj = spell_script_target["type"]
-                    local targetentry = spell_script_target["targetEntry"]
+                    if debug("quests_itemspellcreature") then break end
+                    pfDB["quests-itemreq"][data][id] = pfDB["quests-itemreq"][data][id] or {}
+                    pfDB["quests-itemreq"][data][id][tonumber(spell_script_target.creature)] = spellid
+                    itemreq[id] = true
+                    match = true
+                  end
+                end
 
-                    if tonumber(targetobj) == 0 then
-                      objects[tonumber(targetentry)] = true
-                      match = true
-                    elseif tonumber(targetobj) == 1 then
-                      units[tonumber(targetentry)] = true
-                      match = true
+                -- spell requries focusing an object
+                if focus and tonumber(focus) > 0  then
+                  local gameobject_template = {}
+                  local query = mysql:execute('SELECT * FROM gameobject_template WHERE gameobject_template.type = 8 and gameobject_template.data0 = ' .. focus)
+                  while query:fetch(gameobject_template, "a") do
+                    if debug("quests_itemspellobject") then break end
+                    pfDB["quests-itemreq"][data][id] = pfDB["quests-itemreq"][data][id] or {}
+                    pfDB["quests-itemreq"][data][id][-tonumber(gameobject_template["entry"])] = spellid
+                    itemreq[id] = true
+                    match = true
+                  end
+                end
+
+                -- spell triggers something that requires a special target
+                for _, trigger in pairs({ spell_template[C["EffectTriggerSpell"]..1], spell_template[C["EffectTriggerSpell"]..2], spell_template[C["EffectTriggerSpell"]..3] }) do
+                  if trigger and tonumber(trigger) > 0 then
+                    local spell_script_target = {}
+                    local query = mysql:execute('SELECT * FROM spell_script_target WHERE entry = ' .. trigger)
+                    while query:fetch(spell_script_target, "a") do
+                      if debug("quests_itemspellscript") then break end
+                      local targetobj = spell_script_target["type"]
+                      local targetentry = spell_script_target["targetEntry"]
+
+                      if tonumber(targetobj) == 0 then
+                        -- object
+                        pfDB["quests-itemreq"][data][id] = pfDB["quests-itemreq"][data][id] or {}
+                        pfDB["quests-itemreq"][data][id][-tonumber(targetentry)] = spellid
+                        itemreq[id] = true
+                        match = true
+                      elseif tonumber(targetobj) == 1 then
+                        -- unit
+                        pfDB["quests-itemreq"][data][id] = pfDB["quests-itemreq"][data][id] or {}
+                        pfDB["quests-itemreq"][data][id][tonumber(targetentry)] = spellid
+                        itemreq[id] = true
+                        match = true
+                      end
                     end
                   end
                 end
-              end
 
-              -- only spell limitation is a zone
-              if not match and area and tonumber(area) > 0 then
-                zones[tonumber(area)] = true
+                -- only spell limitation is a zone
+                if not match and area and tonumber(area) > 0 then
+                  zones[tonumber(area)] = true
+                end
               end
             end
+          end
+
+          -- item is used to open an object
+          local object_items = {}
+          local query = mysql:execute([[
+            SELECT gameobject_template.entry AS object
+            FROM gameobject_template, pfquest.Lock_]]..expansion..[[
+            WHERE type = 10 and data0 = pfquest.Lock_]]..expansion..[[.id
+            AND pfquest.Lock_]]..expansion..[[.data = ]] .. id .. [[
+          ]])
+          while query:fetch(object_items, "a") do
+            if debug("quests_itemobject") then break end
+            pfDB["quests-itemreq"][data][id] = pfDB["quests-itemreq"][data][id] or {}
+            pfDB["quests-itemreq"][data][id][-tonumber(object_items.object)] = 0
+            itemreq[id] = true
           end
         end
       end
@@ -1115,7 +1144,7 @@ for _, expansion in pairs(config.expansions) do
       items[srcitem] = nil
 
       do -- write objectives
-        if tblsize(units) > 0 or tblsize(objects) > 0 or tblsize(items) > 0 or tblsize(areatrigger) > 0 or tblsize(zones) > 0 then
+        if tblsize(units) > 0 or tblsize(objects) > 0 or tblsize(items) > 0 or tblsize(itemreq) > 0 or tblsize(areatrigger) > 0 or tblsize(zones) > 0 then
           pfDB["quests"][data][entry]["obj"] = pfDB["quests"][data][entry]["obj"] or {}
 
           for id in opairs(units) do
@@ -1131,6 +1160,11 @@ for _, expansion in pairs(config.expansions) do
           for id in opairs(items) do
             pfDB["quests"][data][entry]["obj"]["I"] = pfDB["quests"][data][entry]["obj"]["I"] or {}
             table.insert(pfDB["quests"][data][entry]["obj"]["I"], tonumber(id))
+          end
+
+          for id in opairs(itemreq) do
+            pfDB["quests"][data][entry]["obj"]["IR"] = pfDB["quests"][data][entry]["obj"]["IR"] or {}
+            table.insert(pfDB["quests"][data][entry]["obj"]["IR"], tonumber(id))
           end
 
           for id in opairs(areatrigger) do
@@ -1215,50 +1249,6 @@ for _, expansion in pairs(config.expansions) do
           table.insert(pfDB["quests"][data][entry]["end"]["O"], tonumber(gameobject_involvedrelation.id))
         end
       end
-    end
-  end
-
-  do -- requirements
-    print("- loading requirements...")
-
-    pfDB["requirements"] = pfDB["requirements"] or {}
-    pfDB["requirements"][data] = {}
-
-    local object_item_spells = {}
-    local query = mysql:execute([[
-      SELECT spell_template.]]..C.Id..[[ AS spell, gameobject_template.entry AS object, item_template.entry AS item
-      FROM spell_template, gameobject_template, item_template
-      WHERE spell_template.requiresSpellFocus = gameobject_template.data0
-        AND gameobject_template.data0 > 0
-        AND gameobject_template.type = 8
-        AND (( item_template.spellid_1 = spell_template.]]..C.Id..[[ AND item_template.spelltrigger_1 = 0)
-          OR ( item_template.spellid_2 = spell_template.]]..C.Id..[[ AND item_template.spelltrigger_2 = 0)
-          OR ( item_template.spellid_3 = spell_template.]]..C.Id..[[ AND item_template.spelltrigger_3 = 0)
-          OR ( item_template.spellid_4 = spell_template.]]..C.Id..[[ AND item_template.spelltrigger_4 = 0)
-          OR ( item_template.spellid_5 = spell_template.]]..C.Id..[[ AND item_template.spelltrigger_5 = 0)
-        );
-    ]])
-    while query:fetch(object_item_spells, "a") do
-      if debug("requirements_object_spell_item") then break end
-      local spell = tonumber(object_item_spells.spell)
-      local object = tonumber(object_item_spells.object)
-      local item = tonumber(object_item_spells.item)
-      pfDB["requirements"][data][item] = pfDB["requirements"][data][item] or {}
-      pfDB["requirements"][data][item][object] = spell
-    end
-
-    local object_items = {}
-    local query = mysql:execute([[
-      SELECT gameobject_template.entry AS object, pfquest.Lock_]]..expansion..[[.data AS item
-      FROM gameobject_template, pfquest.Lock_]]..expansion..[[
-      WHERE type = 10 and data0 = pfquest.Lock_]]..expansion..[[.id
-    ]])
-    while query:fetch(object_items, "a") do
-      if debug("requirements_object_items") then break end
-      local object = tonumber(object_items.object)
-      local item = tonumber(object_items.item)
-      pfDB["requirements"][data][item] = pfDB["requirements"][data][item] or {}
-      pfDB["requirements"][data][item][object] = -1
     end
   end
 
@@ -1548,7 +1538,7 @@ for _, expansion in pairs(config.expansions) do
     pfDB["items"][data] = tablesubstract(pfDB["items"][data], pfDB["items"][prev_data])
     pfDB["refloot"][data] = tablesubstract(pfDB["refloot"][data], pfDB["refloot"][prev_data])
     pfDB["quests"][data] = tablesubstract(pfDB["quests"][data], pfDB["quests"][prev_data])
-    pfDB["requirements"][data] = tablesubstract(pfDB["requirements"][data], pfDB["requirements"][prev_data])
+    pfDB["quests-itemreq"][data] = tablesubstract(pfDB["quests-itemreq"][data], pfDB["quests-itemreq"][prev_data])
     pfDB["zones"][data] = tablesubstract(pfDB["zones"][data], pfDB["zones"][prev_data])
     pfDB["minimap"..exp] = tablesubstract(pfDB["minimap"..exp], pfDB["minimap"..prev_exp])
     pfDB["meta"..exp] = tablesubstract(pfDB["meta"..exp], pfDB["meta"..prev_exp])
@@ -1579,7 +1569,7 @@ for _, expansion in pairs(config.expansions) do
   serialize(string.format("output/items%s.lua", exp), "pfDB[\"items\"][\""..data.."\"]", pfDB["items"][data])
   serialize(string.format("output/refloot%s.lua", exp), "pfDB[\"refloot\"][\""..data.."\"]", pfDB["refloot"][data])
   serialize(string.format("output/quests%s.lua", exp), "pfDB[\"quests\"][\""..data.."\"]", pfDB["quests"][data])
-  serialize(string.format("output/requirements%s.lua", exp), "pfDB[\"requirements\"][\""..data.."\"]", pfDB["requirements"][data])
+  serialize(string.format("output/quests-itemreq%s.lua", exp), "pfDB[\"quests-itemreq\"][\""..data.."\"]", pfDB["quests-itemreq"][data])
   serialize(string.format("output/zones%s.lua", exp), "pfDB[\"zones\"][\""..data.."\"]", pfDB["zones"][data])
   serialize(string.format("output/minimap%s.lua", exp), "pfDB[\"minimap"..exp.."\"]", pfDB["minimap"..exp])
   serialize(string.format("output/meta%s.lua", exp), "pfDB[\"meta"..exp.."\"]", pfDB["meta"..exp])

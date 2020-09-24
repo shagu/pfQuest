@@ -4,7 +4,7 @@ local compat = pfQuestCompat
 pfDatabase = {}
 
 local loc = GetLocale()
-local dbs = { "items", "quests", "objects", "units", "zones", "professions", "areatrigger", "refloot", "requirements" }
+local dbs = { "items", "quests", "quests-itemreq", "objects", "units", "zones", "professions", "areatrigger", "refloot" }
 local noloc = { "items", "quests", "objects", "units" }
 
 pfDB.locales = {
@@ -275,7 +275,7 @@ local objects = pfDB["objects"]["data"]
 local quests = pfDB["quests"]["data"]
 local zones = pfDB["zones"]["data"]
 local refloot = pfDB["refloot"]["data"]
-local requirements = pfDB["requirements"]["data"]
+local itemreq = pfDB["quests-itemreq"]["data"]
 local areatrigger = pfDB["areatrigger"]["data"]
 local professions = pfDB["professions"]["loc"]
 
@@ -318,6 +318,8 @@ function pfDatabase:BuildQuestDescription(meta)
     return string.format(pfQuest_Loc["Interact with |cff33ffcc%s|r to complete |cffffcc00[?]|cff33ffcc %s|r"], (meta.spawn or UNKNOWN), (meta.quest or UNKNOWN))
   elseif meta.QTYPE == "UNIT_OBJECTIVE" then
     return string.format(pfQuest_Loc["Kill |cff33ffcc%s|r"], (meta.spawn or UNKNOWN))
+  elseif meta.QTYPE == "UNIT_OBJECTIVE_ITEMREQ" then
+    return string.format(pfQuest_Loc["Use |cff33ffcc%s|r on |cff33ffcc%s|r"], (meta.itemreq or UNKNOWN), (meta.spawn or UNKNOWN))
   elseif meta.QTYPE == "OBJECT_OBJECTIVE" then
     return string.format(pfQuest_Loc["Interact with |cff33ffcc%s|r"], (meta.spawn or UNKNOWN))
   elseif meta.QTYPE == "OBJECT_OBJECTIVE_ITEMREQ" then
@@ -1049,42 +1051,52 @@ function pfDatabase:SearchQuestID(id, meta, maps)
       end
     end
 
+    -- item requirements
+    if quests[id]["obj"]["IR"] then
+      local requirement
+
+      for _, item in pairs(quests[id]["obj"]["IR"]) do
+        if itemreq[item] then
+          requirement = pfDB["items"]["loc"][item] or UNKNOWN
+
+          for object, spell in pairs(itemreq[item]) do
+            if object < 0 then
+              -- gameobject
+              meta["texture"] = nil
+              meta["layer"] = 2
+              meta["QTYPE"] = "OBJECT_OBJECTIVE_ITEMREQ"
+              meta.itemreq = requirement
+
+              pfDatabase:TrackQuestItemDependency(requirement, id)
+              if pfDatabase.itemlist.db[requirement] then
+                maps = pfDatabase:SearchObjectID(math.abs(object), meta, maps)
+              end
+            elseif object > 0 then
+              -- creature
+              meta["texture"] = nil
+              meta["layer"] = 2
+              meta["QTYPE"] = "UNIT_OBJECTIVE_ITEMREQ"
+              meta.itemreq = requirement
+
+              pfDatabase:TrackQuestItemDependency(requirement, id)
+              if pfDatabase.itemlist.db[requirement] then
+                maps = pfDatabase:SearchMobID(math.abs(object), meta, maps)
+              end
+            end
+          end
+        end
+      end
+    end
+
     -- objects
     if quests[id]["obj"]["O"] then
       for _, object in pairs(quests[id]["obj"]["O"]) do
         if not parse_obj["O"][object] or parse_obj["O"][object] ~= "DONE" then
-
-          local requirement -- search for item requirements
-          if quests[id]["obj"]["I"] then
-            for _, item in pairs(quests[id]["obj"]["I"]) do
-              if requirements[item] and requirements[item][object] then
-                requirement = pfDB["items"]["loc"][item] or UNKNOWN
-                break
-              end
-            end
-          end
-
           meta = meta or {}
           meta["texture"] = nil
           meta["layer"] = 2
-
-          if requirement then
-            meta.itemreq = requirement
-            meta["QTYPE"] = "OBJECT_OBJECTIVE_ITEMREQ"
-          else
-            meta["QTYPE"] = "OBJECT_OBJECTIVE"
-          end
-
-          if requirement and meta["qlogid"] then
-            -- register item requirement
-            local title, _, _, _, _, complete = compat.GetQuestLogTitle(meta["qlogid"])
-            pfDatabase:TrackQuestItemDependency(requirement, id)
-            if pfDatabase.itemlist.db[requirement] then
-              maps = pfDatabase:SearchObjectID(object, meta, maps)
-            end
-          else
-            maps = pfDatabase:SearchObjectID(object, meta, maps)
-          end
+          meta["QTYPE"] = "OBJECT_OBJECTIVE"
+          maps = pfDatabase:SearchObjectID(object, meta, maps)
         end
       end
     end

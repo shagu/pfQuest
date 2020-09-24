@@ -3,7 +3,7 @@
   <Include file="..\db\units-tbc.lua"/>
   <Include file="..\db\objects-tbc.lua"/>
   <Include file="..\db\refloot-tbc.lua"/>
-  <Include file="..\db\requirements-tbc.lua"/>
+  <Include file="..\db\quests-itemreq-tbc.lua"/>
   <Include file="..\db\quests-tbc.lua"/>
   <Include file="..\db\zones-tbc.lua"/>
   <Include file="..\db\minimap-tbc.lua"/>

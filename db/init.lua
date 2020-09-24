@@ -8,8 +8,8 @@ pfDB = {
   ["objects"] = {},
   ["professions"] = {},
   ["quests"] = {},
+  ["quests-itemreq"] = {},
   ["refloot"] = {},
-  ["requirements"] = {},
   ["units"] = {},
   ["zones"] = {},
 }
