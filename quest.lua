@@ -86,20 +86,18 @@ pfQuest:SetScript("OnUpdate", function()
       end
     end
 
-    -- make sure to update questgivers
-    if entry[4] == "REMOVE" or entry[4] == "NEW" then
-      pfQuest.updateQuestGivers = true
-    end
-
+    -- remove entry from queue
     pfQuest.queue[id] = nil
-    return
+
+    -- only return when other entries exist
+    -- otherwise, continue and update questgivers
+    for id, entry in pairs(this.queue) do
+      return
+    end
   end
 
   -- trigger questgiver update
-  if match == false then
-    this.updateQuestGivers = true
-    this.queue = {}
-  end
+  this.updateQuestGivers = true
 end)
 
 function pfQuest:UpdateQuestlog()
