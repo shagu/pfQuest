@@ -124,10 +124,7 @@ function pfQuest:UpdateQuestlog()
       if objectives then
         for i=1, objectives, 1 do
           local text, _, done = GetQuestLogLeaderBoard(i, qlogid)
-          local _, _, obj, objNum, objNeeded = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
-          if obj then
-            state = state .. i .. (((objNum + 0 >= objNeeded + 0) or done ) and "done" or "todo")
-          end
+          state = state .. i .. (done and "done" or "todo")
         end
       end
 
