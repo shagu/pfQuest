@@ -54,6 +54,7 @@ pfQuest:SetScript("OnEvent", function()
     if arg1 == "pfQuest" or arg1 == "pfQuest-tbc" or arg1 == "pfQuest-wotlk" then
       pfQuest:AddQuestLogIntegration()
       pfQuest:AddWorldMapIntegration()
+      this.lock = GetTime() + 10
     else
       return
     end
@@ -62,9 +63,17 @@ pfQuest:SetScript("OnEvent", function()
   else
     pfQuest.updateQuestLog = true
   end
+
+  if event == "QUEST_LOG_UPDATE" then
+    -- lock initial scan during incoming events
+    if this.lock and this.lock > GetTime() then
+      this.lock = GetTime() + 1.5
+    end
+  end
 end)
 
 pfQuest:SetScript("OnUpdate", function()
+  if this.lock and this.lock > GetTime() then return end
   if ( this.tick or .2) > GetTime() then return else this.tick = GetTime() + .2 end
 
   if this.updateQuestLog == true and tsize(this.queue) == 0 then
