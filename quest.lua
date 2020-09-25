@@ -5,6 +5,31 @@ client = client or 11200
 
 pfQuest = CreateFrame("Frame")
 
+function pfQuest:Debug(msg)
+  -- only show debug output if enabled
+  if not pfQuest_config.debug and pfQuest.debugwin then
+    pfQuest.debugwin:Hide()
+    return
+  elseif not pfQuest_config.debug then
+    return
+  end
+
+  if not pfQuest.debugwin then
+    pfQuest.debugwin = CreateFrame("ScrollingMessageFrame", nil, UIParent)
+    pfQuest.debugwin:SetWidth(320)
+    pfQuest.debugwin:SetHeight(320)
+    pfQuest.debugwin:SetPoint("RIGHT", -42, 0)
+    pfQuest.debugwin:SetFont(STANDARD_TEXT_FONT, 12, "OUTLINE")
+    pfQuest.debugwin:SetFading(false)
+    pfQuest.debugwin:SetMaxLines(150)
+    pfQuest.debugwin:SetJustifyH("RIGHT")
+    pfQuest.debugwin:SetJustifyV("CENTER")
+  end
+
+  pfQuest.debugwin:AddMessage(msg)
+  pfQuest.debugwin:Show()
+end
+
 pfQuest.queue = {}
 pfQuest.abandon = ""
 pfQuest.questlog = {}
@@ -43,11 +68,13 @@ pfQuest:SetScript("OnUpdate", function()
   if ( this.tick or .2) > GetTime() then return else this.tick = GetTime() + .2 end
 
   if this.updateQuestLog == true then
+    pfQuest:Debug("Update Quest|cff33ffcc Log")
     pfQuest:UpdateQuestlog()
     this.updateQuestLog = false
   end
 
   if this.updateQuestGivers == true then
+    pfQuest:Debug("Update Quest|cff33ffcc Givers")
     if pfQuest_config["trackingmethod"] == 4 then return end
     if pfQuest_config["allquestgivers"] == "1" then
       local meta = { ["addon"] = "PFQUEST" }
@@ -61,12 +88,12 @@ pfQuest:SetScript("OnUpdate", function()
   if tsize(this.queue) == 0 then return end
 
   -- process queue
-  local match = false
   for id, entry in pairs(this.queue) do
-    match = true
 
     -- remove quest
     if entry[4] == "REMOVE" then
+      pfQuest:Debug("|cffff5555Remove Quest: " .. entry[1] .. " (" .. entry[2] .. ")")
+
       -- write pfQuest.questlog history
       if entry[1] == pfQuest.abandon then
         pfQuest_history[entry[2]] = nil
@@ -78,6 +105,12 @@ pfQuest:SetScript("OnUpdate", function()
       pfMap:UpdateNodes()
       pfQuest.abandon = ""
     else
+      if entry[4] == "NEW" then
+        pfQuest:Debug("|cff55ff55New Quest: " .. entry[1] .. " (" .. entry[2] .. ")")
+      else
+        pfQuest:Debug("|cffffff55Update Quest: " .. entry[1] .. " (" .. entry[2] .. ")")
+      end
+
       -- update quest nodes
       if pfQuest_config["trackingmethod"] ~= 3 and (pfQuest_config["trackingmethod"] ~= 2 or IsQuestWatched(entry[3])) then
         pfMap:DeleteNode("PFQUEST", entry[1])

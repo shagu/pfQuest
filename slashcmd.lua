@@ -49,6 +49,14 @@ SlashCmdList["PFDB"] = function(input, editbox)
     end
   end
 
+  -- argument: debug
+  if (arg1 == "debug") then
+    pfQuest_config.debug = not pfQuest_config.debug
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest Debug Mode: " .. ( pfQuest_config.debug and "|cff33ff33ON" or "|cffff3333OFF" ))
+    pfQuest:Debug("Debug Mode Changed")
+    return
+  end
+
   -- argument: item
   if (arg1 == "item") then
     local maps = pfDatabase:SearchItem(arg2, meta, "LOWER")
