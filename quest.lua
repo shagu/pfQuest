@@ -74,7 +74,7 @@ end)
 
 pfQuest:SetScript("OnUpdate", function()
   if this.lock and this.lock > GetTime() then return end
-  if ( this.tick or .2) > GetTime() then return else this.tick = GetTime() + .2 end
+  if ( this.tick or .05) > GetTime() then return else this.tick = GetTime() + .05 end
 
   if this.updateQuestLog == true and tsize(this.queue) == 0 then
     pfQuest:Debug("Update Quest|cff33ffcc Log")
