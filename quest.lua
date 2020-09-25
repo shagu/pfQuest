@@ -137,7 +137,7 @@ function pfQuest:UpdateQuestlog()
         pfQuest.questlog_tmp[questid] = {
           title = title,
           qlogid = qlogid,
-          state = "init",
+          state = state,
         }
       elseif pfQuest.questlog[questid].qlogid ~= qlogid then
         table.insert(pfQuest.queue, { title, questid, qlogid, "RELOAD" })
