@@ -1187,6 +1187,40 @@ function pfDatabase:SearchQuest(quest, meta, partial)
   return maps
 end
 
+function pfDatabase:QuestFilter(id, plevel, pclass, prace)
+  -- hide active quest
+  if pfQuest.questlog[id] then return end
+
+  -- hide completed quests
+  if pfQuest_history[id] then return end
+
+  -- hide broken quests without names
+  if not pfDB.quests.loc[id] or not pfDB.quests.loc[id].T then return end
+
+  -- hide missing pre-quests
+  if quests[id]["pre"] and not pfQuest_history[quests[id]["pre"]] then return end
+
+  -- hide non-available quests for your race
+  if quests[id]["race"] and not ( bit.band(quests[id]["race"], prace) == prace ) then return end
+
+  -- hide non-available quests for your class
+  if quests[id]["class"] and not ( bit.band(quests[id]["class"], pclass) == pclass ) then return end
+
+  -- hide non-available quests for your profession
+  if quests[id]["skill"] and not pfDatabase:PlayerHasSkill(quests[id]["skill"]) then return end
+
+  -- hide lowlevel quests
+  if quests[id]["lvl"] and quests[id]["lvl"] < plevel - 9 and pfQuest_config["showlowlevel"] == "0" then return end
+
+  -- hide highlevel quests (or show those that are 3 levels above)
+  if quests[id]["min"] and quests[id]["min"] > plevel + ( pfQuest_config["showhighlevel"] == "0" and 3 or 0 ) then return end
+
+  -- hide event quests
+  if quests[id]["event"] and pfQuest_config["showfestival"] == "0" then return end
+
+  return true
+end
+
 -- SearchQuests
 -- Scans for all available quests
 -- Adds map nodes for each quest starter and ender
@@ -1211,41 +1245,8 @@ function pfDatabase:SearchQuests(meta, maps)
   local _, class = UnitClass("player")
   local pclass = pfDatabase:GetBitByClass(class)
 
-  local currentQuests = {}
-  for id=1, GetNumQuestLogEntries() do
-    local title = compat.GetQuestLogTitle(id)
-    local questid = pfDatabase:GetQuestIDs(id)
-    if questid and questid[1] then currentQuests[questid[1]] = true end
-  end
-
   for id in pairs(quests) do
-    minlvl = quests[id]["min"] or quests[id]["lvl"] or plevel
-    maxlvl = quests[id]["lvl"] or quests[id]["min"] or plevel
-    festival = (math.abs(minlvl - maxlvl) >= 30 and true) or (quests[id]["lvl"] and quests[id]["lvl"] < 0 and true) or nil
-
-    if currentQuests[id] then
-      -- hide active quest
-    elseif pfQuest_history[id] then
-      -- hide completed quests
-    elseif quests[id]["pre"] and not pfQuest_history[quests[id]["pre"]] then
-      -- hide missing pre-quests
-    elseif quests[id]["race"] and not ( bit.band(quests[id]["race"], prace) == prace ) then
-      -- hide non-available quests for your race
-    elseif quests[id]["class"] and not ( bit.band(quests[id]["class"], pclass) == pclass ) then
-      -- hide non-available quests for your class
-    elseif quests[id]["lvl"] and quests[id]["lvl"] < plevel - 9 and pfQuest_config["showlowlevel"] == "0" then
-      -- hide lowlevel quests
-    elseif not quests[id]["min"] and quests[id]["lvl"] and quests[id]["lvl"] > plevel + 10 then
-      -- hide highlevel quests
-    elseif quests[id]["min"] and quests[id]["min"] > plevel + 3 then
-      -- hide highlevel quests
-    elseif pfQuest_config["showfestival"] == "0" and festival then
-      -- hide event quests
-    elseif minlvl > plevel and pfQuest_config["showhighlevel"] == "0" then
-      -- hide level+3 quests
-    elseif quests[id]["skill"] and not pfDatabase:PlayerHasSkill(quests[id]["skill"]) then
-      -- hide non-available quests for your class
-    elseif pfDB.quests.loc[id] and pfDB.quests.loc[id].T then
+    if pfDatabase:QuestFilter(id, plevel, pclass, prace) then
       -- set metadata
       meta["quest"] = ( pfDB.quests.loc[id] and pfDB.quests.loc[id].T ) or UNKNOWN
       meta["questid"] = id
@@ -1265,14 +1266,14 @@ function pfDatabase:SearchQuests(meta, maps)
       end
 
       -- tint low level quests grey
-      if maxlvl + 9 < plevel then
+      if quests[id]["lvl"] and quests[id]["lvl"] + 10 < plevel then
         meta["texture"] = pfQuestConfig.path.."\\img\\available"
         meta["vertex"] = { 1, 1, 1 }
         meta["layer"] = 2
       end
 
-      -- treat big difference in level requirements as daily quests
-      if festival then
+      -- tint event quests as blue
+      if quests[id]["event"] then
         meta["texture"] = pfQuestConfig.path.."\\img\\available"
         meta["vertex"] = { .2, .8, 1 }
         meta["layer"] = 2
