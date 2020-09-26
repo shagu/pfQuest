@@ -35,6 +35,7 @@ local debugsql = {
   --
   ["quests"] = { "Using mangos data to iterate over all quests" },
   ["quests_events"] = { "Using mangos data to detect event quests" },
+  ["quests_eventscreature"] = { "Using mangos data to detect event quests based on creature" },
   ["quests_questspellobject"] = { "Using mangos data find objects associated with quest_template spell requirements" },
   ["quests_credit"] = { "Only applies to CMaNGOS(TBC) to find units that give shared credit to the quest" },
   ["quests_item"] = { "Using mangos data to scan through all items with spell requirements" },
@@ -977,12 +978,29 @@ for _, expansion in pairs(config.expansions) do
       local repeatable = tonumber(quest_template.SpecialFlags) & 1
       local event = nil
 
+      -- try to detect event by quest event entry
       local game_event_quest = {}
       local query = mysql:execute('SELECT event FROM game_event_quest WHERE quest = ' .. entry)
       while query:fetch(game_event_quest, "a") do
         if debug("quests_events") then break end
         event = tonumber(game_event_quest.event)
         break
+      end
+
+      -- try to detect event by creature event
+      if not event then
+        local game_event_creature = {}
+        local sql = [[
+          SELECT game_event_creature.event as event FROM creature, game_event_creature, creature_questrelation
+          WHERE creature.guid = game_event_creature.guid
+          AND creature.id = creature_questrelation.id
+          AND creature_questrelation.quest = ]] .. quest_template.entry
+        local query = mysql:execute(sql)
+        while query:fetch(game_event_creature, "a") do
+          if debug("quests_eventscreature") then break end
+          event = tonumber(game_event_creature.event)
+          break
+        end
       end
 
       pfDB["quests"][data][entry] = {}

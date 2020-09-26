@@ -996,6 +996,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 14450, "_" },
     },
+    ["event"] = 10,
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 1101,
@@ -5277,12 +5278,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [910] = {
     ["class"] = "_",
+    ["event"] = 10,
     ["next"] = "_",
     ["race"] = 690,
     ["skill"] = "_",
   },
   [911] = {
     ["class"] = "_",
+    ["event"] = 10,
     ["next"] = "_",
     ["race"] = 690,
     ["skill"] = "_",
@@ -5300,6 +5303,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [915] = {
     ["class"] = "_",
+    ["event"] = 10,
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 690,
@@ -7992,6 +7996,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [1479] = {
     ["class"] = "_",
+    ["event"] = 10,
     ["next"] = "_",
     ["race"] = 1101,
     ["skill"] = "_",
@@ -8291,6 +8296,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [1558] = {
     ["class"] = "_",
+    ["event"] = 10,
     ["next"] = "_",
     ["race"] = 1101,
     ["skill"] = "_",
@@ -8468,7 +8474,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [1657] = {
     ["class"] = "_",
-    ["event"] = "_",
     ["lvl"] = -1,
     ["min"] = 58,
     ["next"] = "_",
@@ -8478,7 +8483,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [1658] = {
     ["class"] = "_",
-    ["event"] = "_",
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -8562,6 +8566,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [1687] = {
     ["class"] = "_",
+    ["event"] = 10,
     ["next"] = "_",
     ["race"] = 1101,
     ["skill"] = "_",
@@ -8882,6 +8887,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [1800] = {
     ["class"] = "_",
+    ["event"] = 10,
     ["next"] = "_",
     ["race"] = 690,
     ["skill"] = "_",
@@ -13868,6 +13874,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [4822] = {
     ["class"] = "_",
+    ["event"] = 10,
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 1101,
@@ -15270,6 +15277,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [5502] = {
     ["class"] = "_",
+    ["event"] = 10,
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 690,
@@ -17520,7 +17528,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [6961] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -17529,7 +17536,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [6962] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -17538,7 +17544,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [6963] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["pre"] = "_",
     ["race"] = "_",
@@ -17546,7 +17551,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [6964] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["pre"] = "_",
     ["race"] = 690,
@@ -17569,14 +17573,12 @@ pfDB["quests"]["data-tbc"] = {
   },
   [6983] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["race"] = "_",
     ["skill"] = "_",
   },
   [6984] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["next"] = "_",
     ["race"] = 690,
@@ -17621,7 +17623,6 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 13444 },
     },
-    ["event"] = 2,
     ["lvl"] = -1,
     ["min"] = 65,
     ["next"] = "_",
@@ -17631,7 +17632,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7022] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -17640,7 +17640,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7023] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -17654,7 +17653,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7024] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -17663,7 +17661,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7025] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -17712,7 +17709,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7042] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["pre"] = "_",
     ["race"] = 1101,
@@ -17720,7 +17716,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7043] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["race"] = 1101,
     ["skill"] = "_",
@@ -17734,7 +17729,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7045] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["next"] = "_",
     ["race"] = 1101,
@@ -17757,7 +17751,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7062] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["min"] = 48,
     ["pre"] = "_",
@@ -18068,6 +18061,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7241] = {
     ["class"] = "_",
+    ["event"] = 18,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19297,6 +19291,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7791] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19319,6 +19314,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7793] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19327,6 +19323,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7794] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19335,6 +19332,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7795] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 1101,
@@ -19342,6 +19340,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7796] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = 1101,
     ["skill"] = "_",
@@ -19349,6 +19348,7 @@ pfDB["quests"]["data-tbc"] = {
   [7797] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["lvl"] = 1,
     ["min"] = 1,
     ["next"] = "_",
@@ -19360,6 +19360,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7798] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19368,6 +19369,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7799] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19376,6 +19378,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7800] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 1101,
@@ -19383,12 +19386,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7801] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = 1101,
     ["skill"] = "_",
   },
   [7802] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 1101,
@@ -19396,6 +19401,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7803] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 1101,
@@ -19403,6 +19409,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7804] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19411,6 +19418,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7805] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 1101,
@@ -19418,12 +19426,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7806] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = 1101,
     ["skill"] = "_",
   },
   [7807] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19432,6 +19442,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7808] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19440,6 +19451,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7809] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19455,6 +19467,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7811] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 1101,
@@ -19462,12 +19475,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7812] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = 1101,
     ["skill"] = "_",
   },
   [7813] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19476,6 +19491,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7814] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19498,6 +19514,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7817] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19506,6 +19523,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7818] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 690,
@@ -19513,12 +19531,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7819] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = 690,
     ["skill"] = "_",
   },
   [7820] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19527,6 +19547,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7821] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19535,6 +19556,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7822] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19543,6 +19565,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7823] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 690,
@@ -19550,6 +19573,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7824] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 690,
@@ -19557,12 +19581,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7825] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = 690,
     ["skill"] = "_",
   },
   [7826] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19571,6 +19597,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7827] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19600,6 +19627,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7831] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19608,12 +19636,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7832] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = 690,
     ["skill"] = "_",
   },
   [7833] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19622,6 +19652,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7834] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19630,6 +19661,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7835] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["lvl"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19638,6 +19670,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7836] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 690,
@@ -19645,12 +19678,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7837] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = 690,
     ["skill"] = "_",
   },
   [7838] = {
     ["class"] = "_",
+    ["event"] = 16,
     ["min"] = 1,
     ["next"] = "_",
     ["race"] = "_",
@@ -19851,6 +19886,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7881] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19859,6 +19895,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7882] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19867,6 +19904,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7883] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19875,6 +19913,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7884] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19883,6 +19922,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7885] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19917,6 +19957,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7889] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19925,6 +19966,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7890] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19933,6 +19975,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7891] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19941,6 +19984,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7892] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19949,6 +19993,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7893] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19957,6 +20002,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7894] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19965,6 +20011,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7895] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19973,6 +20020,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7896] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19981,6 +20029,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7897] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19989,6 +20038,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7898] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -19997,6 +20047,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7899] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20005,6 +20056,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7900] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20013,6 +20065,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7901] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20021,6 +20074,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7902] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20029,6 +20083,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7903] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20037,6 +20092,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7905] = {
     ["class"] = "_",
+    ["event"] = 84,
     ["lvl"] = -1,
     ["min"] = 59,
     ["next"] = "_",
@@ -20098,6 +20154,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7926] = {
     ["class"] = "_",
+    ["event"] = 79,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20130,6 +20187,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7930] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20138,6 +20196,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7931] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20146,6 +20205,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7932] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20154,6 +20214,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7933] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20162,6 +20223,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7934] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20170,6 +20232,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7935] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20178,6 +20241,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7936] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20202,6 +20266,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7939] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20213,6 +20278,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7940] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20221,6 +20287,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7941] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20229,6 +20296,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7942] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20237,6 +20305,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7943] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20261,6 +20330,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7946] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20273,6 +20343,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [7981] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -20872,7 +20943,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8149] = {
     ["class"] = "_",
-    ["event"] = 11,
     ["lvl"] = -1,
     ["next"] = "_",
     ["obj"] = {
@@ -20884,7 +20954,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8150] = {
     ["class"] = "_",
-    ["event"] = 11,
     ["lvl"] = -1,
     ["next"] = "_",
     ["obj"] = {
@@ -21174,7 +21243,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8193] = {
     ["class"] = "_",
-    ["event"] = "_",
+    ["event"] = 36,
     ["lvl"] = -1,
     ["min"] = 60,
     ["next"] = "_",
@@ -21183,7 +21252,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8194] = {
     ["class"] = "_",
-    ["event"] = "_",
+    ["event"] = 35,
     ["lvl"] = -1,
     ["min"] = 10,
     ["next"] = "_",
@@ -21213,7 +21282,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8221] = {
     ["class"] = "_",
-    ["event"] = "_",
+    ["event"] = 35,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -21221,6 +21290,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8222] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -21229,6 +21299,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8223] = {
     ["class"] = "_",
+    ["event"] = 81,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -21237,7 +21308,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8224] = {
     ["class"] = "_",
-    ["event"] = "_",
+    ["event"] = 35,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -21245,7 +21316,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8225] = {
     ["class"] = "_",
-    ["event"] = "_",
+    ["event"] = 35,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -21263,7 +21334,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8228] = {
     ["class"] = "_",
-    ["event"] = "_",
+    ["event"] = 34,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -21272,7 +21343,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8229] = {
     ["class"] = "_",
-    ["event"] = "_",
+    ["event"] = 34,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -21803,7 +21874,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8311] = {
     ["class"] = "_",
-    ["event"] = "_",
     ["lvl"] = 70,
     ["min"] = 47,
     ["next"] = "_",
@@ -21813,7 +21883,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8312] = {
     ["class"] = "_",
-    ["event"] = "_",
     ["lvl"] = -1,
     ["min"] = 55,
     ["next"] = "_",
@@ -21874,7 +21943,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8322] = {
     ["class"] = "_",
-    ["event"] = "_",
     ["lvl"] = -1,
     ["pre"] = "_",
     ["race"] = 690,
@@ -22326,7 +22394,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8373] = {
     ["class"] = "_",
-    ["event"] = "_",
     ["lvl"] = -1,
     ["min"] = 59,
     ["next"] = "_",
@@ -23259,6 +23326,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8492] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 50,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23267,12 +23335,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8493] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
   },
   [8494] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 40,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23281,6 +23351,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8495] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
@@ -23308,6 +23379,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8499] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 48,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23316,6 +23388,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8500] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = 1101,
     ["skill"] = "_",
@@ -23336,6 +23409,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8503] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 37,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23344,12 +23418,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8504] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = 1101,
     ["skill"] = "_",
   },
   [8505] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 37,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23358,6 +23434,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8506] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = 1101,
     ["skill"] = "_",
@@ -23381,6 +23458,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8509] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 34,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23389,12 +23467,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8510] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = 1101,
     ["skill"] = "_",
   },
   [8511] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 50,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23403,12 +23483,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8512] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
   },
   [8513] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 52,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23417,12 +23499,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8514] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
   },
   [8515] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 44,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23431,12 +23515,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8516] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
   },
   [8517] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 51,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23445,6 +23531,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8518] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
@@ -23457,6 +23544,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8520] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 51,
     ["next"] = "_",
     ["pre"] = 2847,
@@ -23465,12 +23553,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8521] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
   },
   [8522] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 56,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23479,12 +23569,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8523] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
   },
   [8524] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 54,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23493,12 +23585,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8525] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
   },
   [8526] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 33,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23507,12 +23601,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8527] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = 1101,
     ["skill"] = "_",
   },
   [8528] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 42,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23521,6 +23617,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8529] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
@@ -23531,6 +23628,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8532] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 54,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23539,6 +23637,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8533] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
@@ -23601,6 +23700,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8542] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 54,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23609,6 +23709,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8543] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
@@ -23621,6 +23722,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8545] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 52,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23629,6 +23731,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8546] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
@@ -23652,6 +23755,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8549] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 54,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23660,6 +23764,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8550] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
@@ -23876,6 +23981,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8580] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 57,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23884,12 +23990,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8581] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
   },
   [8582] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 50,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23898,6 +24006,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8583] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
@@ -23925,6 +24034,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8588] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 53,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23933,12 +24043,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8589] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
   },
   [8590] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 54,
     ["next"] = "_",
     ["pre"] = "_",
@@ -23947,6 +24059,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8591] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
@@ -24000,6 +24113,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8600] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 55,
     ["next"] = "_",
     ["pre"] = "_",
@@ -24008,6 +24122,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8601] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
@@ -24026,6 +24141,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8604] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 55,
     ["next"] = "_",
     ["pre"] = "_",
@@ -24034,6 +24150,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8605] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
@@ -24045,6 +24162,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8607] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 57,
     ["next"] = "_",
     ["pre"] = "_",
@@ -24053,12 +24171,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8608] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
   },
   [8609] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 59,
     ["next"] = "_",
     ["pre"] = "_",
@@ -24067,12 +24187,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8610] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
   },
   [8611] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 49,
     ["next"] = "_",
     ["pre"] = "_",
@@ -24081,12 +24203,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8612] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
   },
   [8613] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 52,
     ["next"] = "_",
     ["pre"] = "_",
@@ -24095,12 +24219,14 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8614] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
   },
   [8615] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 20,
     ["next"] = "_",
     ["pre"] = "_",
@@ -24110,6 +24236,7 @@ pfDB["quests"]["data-tbc"] = {
   [8616] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
@@ -24965,13 +25092,13 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8745] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["race"] = "_",
     ["skill"] = "_",
   },
   [8746] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -25073,7 +25200,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8762] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -25082,7 +25208,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8763] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["next"] = "_",
     ["race"] = 1101,
@@ -25369,7 +25494,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8799] = {
     ["class"] = "_",
-    ["event"] = 2,
     ["lvl"] = -1,
     ["next"] = "_",
     ["race"] = 690,
@@ -25673,6 +25797,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15766 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8811,
     ["race"] = 1101,
@@ -25686,6 +25811,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15766 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8819,
     ["race"] = 1101,
@@ -25699,6 +25825,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15765 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8815,
     ["race"] = 690,
@@ -25712,6 +25839,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15765 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8823,
     ["race"] = 690,
@@ -25725,6 +25853,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15764 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8812,
     ["race"] = 1101,
@@ -25738,6 +25867,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15764 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8820,
     ["race"] = 1101,
@@ -25751,6 +25881,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15762 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8813,
     ["race"] = 1101,
@@ -25764,6 +25895,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15762 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8821,
     ["race"] = 1101,
@@ -25777,6 +25909,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15763 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8814,
     ["race"] = 1101,
@@ -25790,6 +25923,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15763 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8822,
     ["race"] = 1101,
@@ -25803,6 +25937,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15768 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8816,
     ["race"] = 690,
@@ -25816,6 +25951,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15768 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8824,
     ["race"] = 690,
@@ -25829,6 +25965,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15767 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8817,
     ["race"] = 690,
@@ -25842,6 +25979,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15767 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8825,
     ["race"] = 690,
@@ -25855,6 +25993,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15761 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8818,
     ["race"] = 690,
@@ -25868,6 +26007,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 15761 },
     },
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = 8826,
     ["race"] = 690,
@@ -25878,6 +26018,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8846] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 1101,
@@ -25886,6 +26027,7 @@ pfDB["quests"]["data-tbc"] = {
   [8847] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 1101,
@@ -25895,6 +26037,7 @@ pfDB["quests"]["data-tbc"] = {
   [8848] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 1101,
@@ -25904,6 +26047,7 @@ pfDB["quests"]["data-tbc"] = {
   [8849] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 1101,
@@ -25913,6 +26057,7 @@ pfDB["quests"]["data-tbc"] = {
   [8850] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 1101,
@@ -25922,6 +26067,7 @@ pfDB["quests"]["data-tbc"] = {
   [8851] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = "_",
@@ -25931,6 +26077,7 @@ pfDB["quests"]["data-tbc"] = {
   [8852] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = "_",
@@ -25940,6 +26087,7 @@ pfDB["quests"]["data-tbc"] = {
   [8853] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = "_",
@@ -25949,6 +26097,7 @@ pfDB["quests"]["data-tbc"] = {
   [8854] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = "_",
@@ -25958,6 +26107,7 @@ pfDB["quests"]["data-tbc"] = {
   [8855] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = "_",
@@ -25972,6 +26122,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8857] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 60,
     ["next"] = "_",
     ["pre"] = "_",
@@ -25980,6 +26131,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8858] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 55,
     ["next"] = "_",
     ["pre"] = "_",
@@ -25988,6 +26140,7 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8859] = {
     ["class"] = "_",
+    ["event"] = "_",
     ["min"] = 55,
     ["next"] = "_",
     ["pre"] = "_",
@@ -26771,7 +26924,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8981] = {
     ["class"] = "_",
-    ["event"] = 8,
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = 690,
@@ -26844,7 +26996,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [8993] = {
     ["class"] = "_",
-    ["event"] = 8,
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = "_",
@@ -27410,6 +27561,7 @@ pfDB["quests"]["data-tbc"] = {
   [9085] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -27460,6 +27612,7 @@ pfDB["quests"]["data-tbc"] = {
   [9094] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -27939,6 +28092,7 @@ pfDB["quests"]["data-tbc"] = {
   [9153] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -27949,6 +28103,7 @@ pfDB["quests"]["data-tbc"] = {
   [9154] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -28850,6 +29005,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 14828 },
     },
+    ["event"] = 81,
     ["lvl"] = -1,
     ["min"] = 45,
     ["obj"] = {
@@ -28963,6 +29119,7 @@ pfDB["quests"]["data-tbc"] = {
   [9260] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["lvl"] = 6,
     ["next"] = "_",
     ["pre"] = "_",
@@ -28973,6 +29130,7 @@ pfDB["quests"]["data-tbc"] = {
   [9261] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = "_",
@@ -28982,6 +29140,7 @@ pfDB["quests"]["data-tbc"] = {
   [9262] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["pre"] = "_",
     ["race"] = "_",
@@ -28991,6 +29150,7 @@ pfDB["quests"]["data-tbc"] = {
   [9263] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["obj"] = {
       ["A"] = "_",
@@ -29003,6 +29163,7 @@ pfDB["quests"]["data-tbc"] = {
   [9264] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["obj"] = {
       ["A"] = "_",
@@ -29015,6 +29176,7 @@ pfDB["quests"]["data-tbc"] = {
   [9265] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["next"] = "_",
     ["obj"] = {
       ["A"] = "_",
@@ -29483,6 +29645,7 @@ pfDB["quests"]["data-tbc"] = {
   [9317] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -29493,6 +29656,7 @@ pfDB["quests"]["data-tbc"] = {
   [9318] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -29518,6 +29682,7 @@ pfDB["quests"]["data-tbc"] = {
   [9320] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -29528,6 +29693,7 @@ pfDB["quests"]["data-tbc"] = {
   [9321] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -29731,6 +29897,7 @@ pfDB["quests"]["data-tbc"] = {
   [9341] = {
     ["class"] = "_",
     ["end"] = "_",
+    ["event"] = "_",
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -29966,6 +30133,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 16817 },
     },
+    ["event"] = 1,
     ["lvl"] = -1,
     ["min"] = 1,
     ["obj"] = {
@@ -29978,7 +30146,6 @@ pfDB["quests"]["data-tbc"] = {
   },
   [9368] = {
     ["class"] = "_",
-    ["event"] = 1,
     ["lvl"] = -1,
     ["next"] = "_",
     ["pre"] = "_",
@@ -30189,6 +30356,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 16788 },
     },
+    ["event"] = 1,
     ["lvl"] = 25,
     ["min"] = 1,
     ["obj"] = {
@@ -30202,6 +30370,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 16788 },
     },
+    ["event"] = 1,
     ["lvl"] = 25,
     ["min"] = 1,
     ["obj"] = {
@@ -51830,6 +51999,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 23558 },
     },
+    ["event"] = 26,
     ["lvl"] = -1,
     ["min"] = 1,
     ["obj"] = {
@@ -51925,6 +52095,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 24519 },
     },
+    ["event"] = 12,
     ["lvl"] = -1,
     ["start"] = {
       ["U"] = { 24519 },
@@ -51979,6 +52150,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["O"] = { 186267 },
     },
+    ["event"] = 12,
     ["lvl"] = 70,
     ["min"] = 65,
     ["next"] = 11392,
@@ -52837,6 +53009,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["O"] = { 186267 },
     },
+    ["event"] = 12,
     ["lvl"] = 70,
     ["min"] = 65,
     ["next"] = 11392,
@@ -52887,6 +53060,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 23627 },
     },
+    ["event"] = 26,
     ["lvl"] = -1,
     ["min"] = 1,
     ["obj"] = {
@@ -52902,6 +53076,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 23628 },
     },
+    ["event"] = 26,
     ["lvl"] = 70,
     ["min"] = 1,
     ["obj"] = {
@@ -52917,6 +53092,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 23558 },
     },
+    ["event"] = 26,
     ["lvl"] = -1,
     ["obj"] = {
       ["U"] = { 24263, 24264, 24265 },
@@ -53058,6 +53234,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 24519 },
     },
+    ["event"] = 12,
     ["lvl"] = -1,
     ["obj"] = {
       ["U"] = { 23537 },
@@ -53070,6 +53247,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 23973 },
     },
+    ["event"] = 12,
     ["lvl"] = 70,
     ["obj"] = {
       ["U"] = { 23537 },
@@ -53474,6 +53652,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 24498 },
     },
+    ["event"] = 26,
     ["lvl"] = 70,
     ["min"] = 1,
     ["obj"] = {
@@ -53489,6 +53668,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 24499 },
     },
+    ["event"] = 26,
     ["lvl"] = -1,
     ["min"] = 1,
     ["obj"] = {
@@ -53504,6 +53684,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 24497 },
     },
+    ["event"] = 26,
     ["lvl"] = -1,
     ["min"] = 1,
     ["obj"] = {
@@ -53518,6 +53699,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 24497 },
     },
+    ["event"] = 26,
     ["lvl"] = -1,
     ["min"] = 1,
     ["obj"] = {
@@ -53564,6 +53746,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 24519 },
     },
+    ["event"] = 12,
     ["lvl"] = -1,
     ["obj"] = {
       ["U"] = { 23537 },
@@ -53576,6 +53759,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 24519 },
     },
+    ["event"] = 12,
     ["lvl"] = -1,
     ["obj"] = {
       ["U"] = { 23537 },
@@ -53600,6 +53784,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 24710 },
     },
+    ["event"] = 26,
     ["lvl"] = -1,
     ["min"] = 1,
     ["race"] = 1101,
@@ -53623,6 +53808,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 24711 },
     },
+    ["event"] = 26,
     ["lvl"] = -1,
     ["min"] = 1,
     ["race"] = 690,
@@ -53634,6 +53820,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 23973 },
     },
+    ["event"] = 12,
     ["lvl"] = -1,
     ["obj"] = {
       ["U"] = { 23537 },
@@ -53646,6 +53833,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 23973 },
     },
+    ["event"] = 12,
     ["lvl"] = -1,
     ["obj"] = {
       ["U"] = { 23537 },
@@ -53700,6 +53888,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 24710 },
     },
+    ["event"] = 26,
     ["lvl"] = 70,
     ["min"] = 50,
     ["pre"] = 11454,
@@ -53712,6 +53901,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 24711 },
     },
+    ["event"] = 26,
     ["lvl"] = 70,
     ["min"] = 50,
     ["pre"] = 11454,
@@ -54371,6 +54561,7 @@ pfDB["quests"]["data-tbc"] = {
     },
   },
   [11691] = {
+    ["event"] = 1,
     ["lvl"] = 70,
     ["start"] = {
       ["U"] = { 25697 },
@@ -54380,6 +54571,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 25697 },
     },
+    ["event"] = 1,
     ["lvl"] = 70,
     ["next"] = 11691,
     ["start"] = {
@@ -54387,6 +54579,7 @@ pfDB["quests"]["data-tbc"] = {
     },
   },
   [11731] = {
+    ["event"] = 1,
     ["lvl"] = -1,
     ["next"] = 11657,
     ["start"] = {
@@ -54835,6 +55028,7 @@ pfDB["quests"]["data-tbc"] = {
     },
   },
   [11886] = {
+    ["event"] = 1,
     ["lvl"] = -1,
     ["next"] = 11891,
     ["start"] = {
@@ -54849,6 +55043,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 26113 },
     },
+    ["event"] = 1,
     ["lvl"] = -1,
     ["min"] = 1,
     ["race"] = 690,
@@ -54885,6 +55080,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 16818 },
     },
+    ["event"] = 1,
     ["lvl"] = -1,
     ["min"] = 50,
     ["race"] = 690,
@@ -54897,6 +55093,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 16817 },
     },
+    ["event"] = 1,
     ["lvl"] = -1,
     ["min"] = 50,
     ["race"] = 1101,
@@ -54944,6 +55141,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 26401 },
     },
+    ["event"] = 1,
     ["lvl"] = -1,
     ["min"] = 1,
     ["race"] = 1101,
@@ -54955,6 +55153,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 26520 },
     },
+    ["event"] = 1,
     ["lvl"] = -1,
     ["min"] = 1,
     ["race"] = 690,
@@ -54974,6 +55173,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 16818 },
     },
+    ["event"] = 1,
     ["lvl"] = -1,
     ["min"] = 1,
     ["race"] = 690,
@@ -55019,6 +55219,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 27215 },
     },
+    ["event"] = 26,
     ["lvl"] = -1,
     ["min"] = 1,
     ["obj"] = {
@@ -55033,6 +55234,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 23872 },
     },
+    ["event"] = 26,
     ["lvl"] = 70,
     ["min"] = 65,
     ["pre"] = 12318,
@@ -55044,6 +55246,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 27216 },
     },
+    ["event"] = 26,
     ["lvl"] = -1,
     ["min"] = 1,
     ["obj"] = {
@@ -55058,6 +55261,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 23710 },
     },
+    ["event"] = 26,
     ["lvl"] = -1,
     ["min"] = 1,
     ["pre"] = 11318,
@@ -55070,6 +55274,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 24495 },
     },
+    ["event"] = 26,
     ["lvl"] = -1,
     ["min"] = 1,
     ["race"] = 690,
@@ -55106,6 +55311,7 @@ pfDB["quests"]["data-tbc"] = {
     ["end"] = {
       ["U"] = { 26719 },
     },
+    ["event"] = 26,
     ["lvl"] = -1,
     ["min"] = 65,
     ["next"] = 12062,
