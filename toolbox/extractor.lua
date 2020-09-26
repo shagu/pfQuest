@@ -34,6 +34,7 @@ local debugsql = {
   ["refloot_object"] = { "Using mangos data to find objects for shared loot" },
   --
   ["quests"] = { "Using mangos data to iterate over all quests" },
+  ["quests_events"] = { "Using mangos data to detect event quests" },
   ["quests_questspellobject"] = { "Using mangos data find objects associated with quest_template spell requirements" },
   ["quests_credit"] = { "Only applies to CMaNGOS(TBC) to find units that give shared credit to the quest" },
   ["quests_item"] = { "Using mangos data to scan through all items with spell requirements" },
@@ -973,6 +974,16 @@ for _, expansion in pairs(config.expansions) do
       local pre = tonumber(quest_template.PrevQuestId)
       local chain = tonumber(quest_template.NextQuestInChain)
       local srcitem = tonumber(quest_template.SrcItemId)
+      local repeatable = tonumber(quest_template.SpecialFlags) & 1
+      local event = nil
+
+      local game_event_quest = {}
+      local query = mysql:execute('SELECT event FROM game_event_quest WHERE quest = ' .. entry)
+      while query:fetch(game_event_quest, "a") do
+        if debug("quests_events") then break end
+        event = tonumber(game_event_quest.event)
+        break
+      end
 
       pfDB["quests"][data][entry] = {}
       pfDB["quests"][data][entry]["min"] = minlevel ~= 0 and minlevel
@@ -983,6 +994,7 @@ for _, expansion in pairs(config.expansions) do
       pfDB["quests"][data][entry]["skill"] = skill ~= 0 and skill
       pfDB["quests"][data][entry]["pre"] = pre ~= 0 and pre
       pfDB["quests"][data][entry]["next"] = chain ~= 0 and chain
+      pfDB["quests"][data][entry]["event"] = event ~= 0 and event
 
       -- quest objectives
       local units, objects, items, itemreq, areatrigger, zones = {}, {}, {}, {}, {}, {}
