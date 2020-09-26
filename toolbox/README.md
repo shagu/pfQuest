@@ -4,8 +4,8 @@
 ### Archlinux
 
     # pacman -S mariadb mariadb-clients luarocks
-    # systemctl start mariadb
     # mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+    # systemctl start mariadb
     # luarocks install luasql-mysql MYSQL_INCDIR=/usr/include/mysql
 
 ## Prepare Databases
