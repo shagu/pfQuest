@@ -161,11 +161,14 @@ pfMap.tooltip:SetScript("OnShow", function()
   if focus and focus.GetName and strsub((focus:GetName() or ""),0,10) == "QuestTimer" then return end
 
   local name = getglobal("GameTooltipTextLeft1") and getglobal("GameTooltipTextLeft1"):GetText()
+  local zone = pfMap:GetMapID(GetCurrentMapContinent(), GetCurrentMapZone())
 
   if name and pfMap.tooltips[name] then
     for title, meta in pairs(pfMap.tooltips[name]) do
-      pfMap:ShowTooltip(meta, GameTooltip)
-      GameTooltip:Show()
+      if meta["zone"] and meta["zone"] == zone then
+        pfMap:ShowTooltip(meta, GameTooltip)
+        GameTooltip:Show()
+      end
     end
   end
 end)
