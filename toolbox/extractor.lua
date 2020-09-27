@@ -1028,7 +1028,6 @@ for _, expansion in pairs(config.expansions) do
       local class = tonumber(quest_template.RequiredClasses)
       local race = tonumber(quest_template.RequiredRaces)
       local skill = tonumber(quest_template.RequiredSkill)
-      local pre = tonumber(quest_template.PrevQuestId)
       local chain = tonumber(quest_template.NextQuestInChain)
       local srcitem = tonumber(quest_template.SrcItemId)
       local repeatable = tonumber(quest_template.SpecialFlags) & 1
@@ -1066,12 +1065,16 @@ for _, expansion in pairs(config.expansions) do
       pfDB["quests"][data][entry]["class"] = class ~= 0 and class
       pfDB["quests"][data][entry]["race"] = race ~= 0 and race
       pfDB["quests"][data][entry]["skill"] = skill ~= 0 and skill
-      pfDB["quests"][data][entry]["pre"] = pre ~= 0 and pre
       pfDB["quests"][data][entry]["next"] = chain ~= 0 and chain
       pfDB["quests"][data][entry]["event"] = event ~= 0 and event
 
       -- quest objectives
-      local units, objects, items, itemreq, areatrigger, zones = {}, {}, {}, {}, {}, {}
+      local units, objects, items, itemreq, areatrigger, zones, pre = {}, {}, {}, {}, {}, {}, {}
+
+      -- add single pre-quests
+      if tonumber(quest_template.PrevQuestId) ~= 0 then
+        pre[tonumber(quest_template.PrevQuestId)] = true
+      end
 
       -- temporary add provided quest item
       items[srcitem] = true
@@ -1228,6 +1231,12 @@ for _, expansion in pairs(config.expansions) do
 
       -- remove provided quest item from objectives
       items[srcitem] = nil
+
+      -- write pre-quests
+      for id in opairs(pre) do
+        pfDB["quests"][data][entry]["pre"] = pfDB["quests"][data][entry]["pre"] or {}
+        table.insert(pfDB["quests"][data][entry]["pre"], tonumber(id))
+      end
 
       do -- write objectives
         if tblsize(units) > 0 or tblsize(objects) > 0 or tblsize(items) > 0 or tblsize(itemreq) > 0 or tblsize(areatrigger) > 0 or tblsize(zones) > 0 then
