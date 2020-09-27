@@ -1198,7 +1198,12 @@ function pfDatabase:QuestFilter(id, plevel, pclass, prace)
   if not pfDB.quests.loc[id] or not pfDB.quests.loc[id].T then return end
 
   -- hide missing pre-quests
-  if quests[id]["pre"] and not pfQuest_history[quests[id]["pre"]] then return end
+  if quests[id]["pre"] then
+    -- check all pre-quests to be completed
+    for _, prequest in pairs(quests[id]["pre"]) do
+      if not pfQuest_history[prequest] then return end
+    end
+  end
 
   -- hide non-available quests for your race
   if quests[id]["race"] and not ( bit.band(quests[id]["race"], prace) == prace ) then return end
