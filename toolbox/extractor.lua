@@ -9,6 +9,7 @@ local debugsql = {
   ["units"] = { "Iterate over all creatures using mangos data" },
   ["units_faction"] = { "Using mangos and client-data to find unit faction" },
   ["units_coords"] = { "Using mangos and client-data to find unit locations" },
+  ["units_coords_pool"] = { "Only applies to CMaNGOS(TBC) to find pooled unit locations" },
   ["units_event"] = { "Using mangos data to find spawns from events" },
   ["units_event_map_object"] = { "Using mangos data to determine map based on object requirements associated with event" },
   ["units_event_spell"] = { "Using mangos data to find spells associated with spawn" },
@@ -445,6 +446,46 @@ for _, expansion in pairs(config.expansions) do
       return ret
     end
 
+    function GetCreatureCoordsPool(id)
+      local creature = {}
+      local ret = {}
+
+      local sql = [[
+        SELECT * FROM creature, creature_spawn_entry, pfquest.WorldMapArea_]]..expansion..[[
+        WHERE creature_spawn_entry.entry = ]] .. id .. [[
+        AND creature.guid = creature_spawn_entry.guid
+        AND ( pfquest.WorldMapArea_]]..expansion..[[.mapID = creature.map
+          AND pfquest.WorldMapArea_]]..expansion..[[.x_min < creature.position_x
+          AND pfquest.WorldMapArea_]]..expansion..[[.x_max > creature.position_x
+          AND pfquest.WorldMapArea_]]..expansion..[[.y_min < creature.position_y
+          AND pfquest.WorldMapArea_]]..expansion..[[.y_max > creature.position_y
+          AND pfquest.WorldMapArea_]]..expansion..[[.areatableID > 0)
+        ORDER BY areatableID, position_x, position_y, spawntimesecsmin ]]
+
+      local query = mysql:execute(sql)
+      while query:fetch(creature, "a") do
+        local zone = creature.areatableID
+        local x = creature.position_x
+        local y = creature.position_y
+        local x_max = creature.x_max
+        local x_min = creature.x_min
+        local y_max = creature.y_max
+        local y_min = creature.y_min
+        local px, py = 0, 0
+
+        if x and y and x_min and y_min then
+          px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
+          py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
+          if isValidMap(zone, round(px), round(py)) then
+            local coord = { px, py, tonumber(zone), ( tonumber(creature.spawntimesecsmin) > 0 and tonumber(creature.spawntimesecsmin) or 0) }
+            table.insert(ret, coord)
+          end
+        end
+      end
+
+      return ret
+    end
+
     function GetCreatureCoords(id)
       local creature = {}
       local ret = {}
@@ -601,6 +642,14 @@ for _, expansion in pairs(config.expansions) do
           local x, y, zone, respawn = table.unpack(coords)
           if debug("units_coords") then break end
           table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
+        end
+
+        if dbtype ~= "vmangos" then
+          for id, coords in pairs(GetCreatureCoordsPool(entry)) do
+            local x, y, zone, respawn = table.unpack(coords)
+            if debug("units_coords_pool") then break end
+            table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
+          end
         end
 
         -- search for Event summons (fixed position)
