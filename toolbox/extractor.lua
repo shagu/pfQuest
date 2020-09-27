@@ -779,6 +779,13 @@ for _, expansion in pairs(config.expansions) do
             local x, y, zone, respawn = table.unpack(coords)
             table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
           end
+
+          if dbtype ~= "vmangos" then
+            for id, coords in pairs(GetCreatureCoordsPool(tonumber(creature_ai_scripts.summoner))) do
+              local x, y, zone, respawn = table.unpack(coords)
+              table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
+            end
+          end
         end
 
         -- clear duplicates
