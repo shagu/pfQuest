@@ -1,6 +1,29 @@
 -- multi api compat
 local compat = pfQuestCompat
 
+-- fake the pfQuest minimap node names to Gatherer names,
+-- if any minimap-breaking addon collector is found.
+local nodename = "pfMiniMapPin"
+local minimapbreakers = {
+  ["ElvUI_MinimapButtons"] = true,
+  ["MBB"] = true,
+}
+
+local compatnamefake = CreateFrame("Frame")
+compatnamefake:RegisterEvent("PLAYER_ENTERING_WORLD")
+compatnamefake:SetScript("OnEvent", function()
+  -- only run once on login
+  this:UnregisterAllEvents()
+
+  -- scan through all addons to identify button collectors
+  for i=1, GetNumAddOns() do
+    local name, title, notes, enabled = GetAddOnInfo(i)
+    if enabled and minimapbreakers[name] then
+      nodename = "GatherNoteCompatFake"
+    end
+  end
+end)
+
 local validmaps = setmetatable({},{__mode="kv"})
 local rgbcache = setmetatable({},{__mode="kv"})
 local minimap_sizes = pfDB["minimap"]
@@ -825,7 +848,7 @@ function pfMap:UpdateMinimap()
 
         if display then
           if not pfMap.mpins[i] then
-            pfMap.mpins[i] = pfMap:BuildNode("pfMiniMapPin" .. i, pfMap.drawlayer)
+            pfMap.mpins[i] = pfMap:BuildNode(nodename .. i, pfMap.drawlayer)
           end
 
           pfMap:UpdateNode(pfMap.mpins[i], node, color, "minimap")
