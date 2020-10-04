@@ -873,11 +873,15 @@ function pfMap:UpdateMinimap()
   end
 end
 
+local zone, last_zone
 pfMap:RegisterEvent("ZONE_CHANGED")
 pfMap:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 pfMap:RegisterEvent("MINIMAP_ZONE_CHANGED")
 pfMap:RegisterEvent("WORLD_MAP_UPDATE")
 pfMap:SetScript("OnEvent", function()
+  -- save current zone
+  zone = GetCurrentMapZone()
+
   -- set map to current zone when possible
   if event == "ZONE_CHANGED" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
     if not WorldMapFrame:IsShown() then
@@ -885,9 +889,10 @@ pfMap:SetScript("OnEvent", function()
     end
   end
 
-  -- update nodes on map or quest log changes
-  if event == "WORLD_MAP_UPDATE" then
+  -- update nodes on world map changes
+  if event == "WORLD_MAP_UPDATE" and last_zone ~= zone then
     pfMap.UpdateNodes()
+    last_zone = zone
   end
 end)
 
