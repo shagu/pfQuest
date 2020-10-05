@@ -30,6 +30,31 @@ function pfQuest:Debug(msg)
   pfQuest.debugwin:Show()
 end
 
+function pfQuest:SortedPairs(t, index, reverse)
+  -- collect the keys
+  local keys = {}
+  for k, v in pairs(t) do
+    if v then keys[table.getn(keys)+1] = k end
+  end
+
+  local order
+  if reverse then
+    order = function(t,a,b) return t[a][index] < t[b][index] end
+  else
+    order = function(t,a,b) return t[a][index] > t[b][index] end
+  end
+  table.sort(keys, function(a,b) return order(t, a, b) end)
+
+  -- return the iterator function
+  local i = 0
+  return function()
+    i = i + 1
+    if keys[i] then
+      return keys[i], t[keys[i]]
+    end
+  end
+end
+
 pfQuest.queue = {}
 pfQuest.abandon = ""
 pfQuest.questlog = {}

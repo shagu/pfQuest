@@ -2,31 +2,6 @@
 local compat = pfQuestCompat
 local collapsed = {}
 
-local function spairs(t, index, reverse)
-  -- collect the keys
-  local keys = {}
-  for k, v in pairs(t) do
-    if v then keys[table.getn(keys)+1] = k end
-  end
-
-  local order
-  if reverse then
-    order = function(t,a,b) return t[a][index] < t[b][index] end
-  else
-    order = function(t,a,b) return t[a][index] > t[b][index] end
-  end
-  table.sort(keys, function(a,b) return order(t, a, b) end)
-
-  -- return the iterator function
-  local i = 0
-  return function()
-    i = i + 1
-    if keys[i] then
-      return keys[i], t[keys[i]]
-    end
-  end
-end
-
 local function tablesize(tbl)
   local count = 0
   for _ in pairs(tbl) do count = count + 1 end
@@ -142,7 +117,7 @@ local function ReloadJournal(self)
   local maxcolumns = 24
   local lastcolumn, column
 
-  for questid, data in spairs(pfQuest_history, 1) do
+  for questid, data in pfQuest:SortedPairs(pfQuest_history, 1) do
     column = data[1] == 0 and UNKNOWN or date("%A, %B %d (%Y)", data[1])
 
     if column ~= lastcolumn then -- add columns to the view
