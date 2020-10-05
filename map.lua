@@ -186,10 +186,10 @@ pfMap.tooltip:SetScript("OnShow", function()
   local name = getglobal("GameTooltipTextLeft1") and getglobal("GameTooltipTextLeft1"):GetText()
   local zone = pfMap:GetMapID(GetCurrentMapContinent(), GetCurrentMapZone())
 
-  if name and pfMap.tooltips[name] then
-    for title, meta in pairs(pfMap.tooltips[name]) do
-      if meta["zone"] and meta["zone"] == zone then
-        pfMap:ShowTooltip(meta, GameTooltip)
+  if name and pfMap.tooltips[name] and pfMap.tooltips[name] then
+    for title, obj in pairs(pfMap.tooltips[name]) do
+      if obj[zone] then
+        pfMap:ShowTooltip(obj[zone], GameTooltip)
         GameTooltip:Show()
       end
     end
@@ -478,8 +478,9 @@ function pfMap:AddNode(meta)
 
   -- add to gametooltips
   if spawn and title then
-    pfMap.tooltips[spawn]        = pfMap.tooltips[spawn]        or {}
-    pfMap.tooltips[spawn][title] = pfMap.tooltips[spawn][title] or node
+    pfMap.tooltips[spawn] = pfMap.tooltips[spawn] or {}
+    pfMap.tooltips[spawn][title] = pfMap.tooltips[spawn][title] or {}
+    pfMap.tooltips[spawn][title][map] = pfMap.tooltips[spawn][title][map] or node
   end
 
   pfMap.queue_update = true
