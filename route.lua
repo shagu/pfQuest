@@ -125,7 +125,7 @@ local function DrawLine(path,x,y,nx,ny,hl,minimap)
   end
 end
 
-pfQuest.route = CreateFrame("Frame", "pfQuestRoute", UIParent)
+pfQuest.route = CreateFrame("Frame", "pfQuestRoute", WorldFrame)
 pfQuest.route.firstnode = nil
 pfQuest.route.coords = {}
 
