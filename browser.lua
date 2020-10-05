@@ -82,14 +82,14 @@ local function ResultButtonEnter()
     GameTooltip:AddLine("\n" .. pfQuest_Loc["Location"], 1,1,.8)
     if pfDB[this.btype]["data"][id] and pfDB[this.btype]["data"][id]["coords"] then
       for _, data in pairs(pfDB[this.btype]["data"][id]["coords"]) do
-        local zone = data[3]
-        maps[zone] = maps[zone] and maps[zone] + 1 or 1
+        maps[data[3]] = maps[data[3]] or { count = 0 }
+        maps[data[3]].count = maps[data[3]].count + 1
       end
     end
 
     local unknown = true
-    for zone, count in pairs(maps) do
-      GameTooltip:AddDoubleLine(( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), count .. "x", 1,1,1, .5,.5,.5)
+    for zone, obj in pfQuest:SortedPairs(maps, "count", nil) do
+      GameTooltip:AddDoubleLine(( zone and pfMap:GetMapNameByID(zone) or UNKNOWN), obj.count, 1,1,1, .3,1,.8)
       unknown = nil
     end
 
