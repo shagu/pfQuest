@@ -109,8 +109,9 @@ pfQuest:SetScript("OnUpdate", function()
 
   if this.updateQuestGivers == true then
     pfQuest:Debug("Update Quest|cff33ffcc Givers")
-    if pfQuest_config["trackingmethod"] == 4 then return end
-    if pfQuest_config["allquestgivers"] == "1" then
+    if pfQuest_config["trackingmethod"] ~= 4 and
+      pfQuest_config["allquestgivers"] == "1"
+    then
       local meta = { ["addon"] = "PFQUEST" }
       pfDatabase:SearchQuests(meta)
       pfMap:UpdateNodes()
@@ -118,7 +119,6 @@ pfQuest:SetScript("OnUpdate", function()
     end
   end
 
-  if pfQuest_config["trackingmethod"] == 4 then return end
   if tsize(this.queue) == 0 then return end
 
   -- process queue
@@ -135,8 +135,11 @@ pfQuest:SetScript("OnUpdate", function()
         pfQuest_history[entry[2]] = { time(), UnitLevel("player") }
       end
 
-      pfMap:DeleteNode("PFQUEST", entry[1])
-      pfMap:UpdateNodes()
+      if pfQuest_config["trackingmethod"] ~= 4 then
+        pfMap:DeleteNode("PFQUEST", entry[1])
+        pfMap:UpdateNodes()
+      end
+
       pfQuest.abandon = ""
     else
       if entry[4] == "NEW" then
@@ -146,10 +149,16 @@ pfQuest:SetScript("OnUpdate", function()
       end
 
       -- update quest nodes
-      if pfQuest_config["trackingmethod"] ~= 3 and (pfQuest_config["trackingmethod"] ~= 2 or IsQuestWatched(entry[3])) then
+      if pfQuest_config["trackingmethod"] ~= 4 and
+        (pfQuest_config["trackingmethod"] ~= 2 or IsQuestWatched(entry[3]))
+      then
         pfMap:DeleteNode("PFQUEST", entry[1])
-        local meta = { ["addon"] = "PFQUEST", ["qlogid"] = entry[3] }
-        pfDatabase:SearchQuestID(entry[2], meta)
+
+        -- skip quest objective detection on manual mode
+        if pfQuest_config["trackingmethod"] ~= 3 then
+          local meta = { ["addon"] = "PFQUEST", ["qlogid"] = entry[3] }
+          pfDatabase:SearchQuestID(entry[2], meta)
+        end
       end
     end
 

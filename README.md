@@ -71,10 +71,12 @@ Every quest will be automatically shown and updated on the map.
 Only tracked quests (Shift-Click) will be automatically shown and updated on the map.
 
 ### Option: Manual Selection
-Only quests that have been manually displayed ("Show"-Button in the Questlog) will resident on the map.
+Only quest objectives that have been manually displayed ("Show"-Button in the Questlog) will be displayed.
+Completed quest objectives will be still automatically removed from the map.
 
 ### Option: Hide Quests
-Nothing will be shown on the map, except for nodes that have been manually added via the DB-Browser.
+Same as "Manual Selection" and in addition to that, Quest-Givers won't be shown automatically.
+Also completed quest objectives will remain on the map. This mode won't touch any of the map nodes created.
 
 # Database Browser
 <img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/browser-spawn.png" align="left" width="30%">
