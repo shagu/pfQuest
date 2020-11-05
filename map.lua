@@ -182,6 +182,8 @@ pfMap.tooltip:SetScript("OnShow", function()
   if focus and focus.title then return end
   -- abort on quest timers
   if focus and focus.GetName and strsub((focus:GetName() or ""),0,10) == "QuestTimer" then return end
+  -- abort if tooltips are disabled
+  if pfQuest_config.showtooltips == "0" then return end
 
   local name = getglobal("GameTooltipTextLeft1") and getglobal("GameTooltipTextLeft1"):GetText()
   local zone = pfMap:GetMapID(GetCurrentMapContinent(), GetCurrentMapZone())
