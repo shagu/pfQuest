@@ -899,7 +899,7 @@ pfMap:SetScript("OnEvent", function()
   end
 end)
 
-local hlstate, shiftstate, transition, hidecluster, fps = nil, nil, nil, nil, nil
+local hlstate, shiftstate, transition, hidecluster, fps, resetmap
 pfMap:SetScript("OnUpdate", function()
   -- handle highlights and animations
   if pfMap.queue_update or transition or pfMap.highlight ~= hlstate or shiftstate ~= hidecluster then
@@ -934,6 +934,14 @@ pfMap:SetScript("OnUpdate", function()
   -- process node updates if required
   if pfMap.queue_update then
     pfMap:UpdateNodes()
+  end
+
+  -- reset map to current zone once map is closed
+  if WorldMapFrame:IsShown() then
+    resetmap = true
+  elseif resetmap == true then
+    SetMapToCurrentZone()
+    resetmap = nil
   end
 
   -- refresh minimap
