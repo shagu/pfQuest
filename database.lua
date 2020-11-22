@@ -1385,6 +1385,9 @@ function pfDatabase:GetQuestIDs(qid)
     local score = 0
 
     if quests[id] and data.T and data.T == title then
+      -- low score for same name
+      score = 1
+
       -- check level and set score
       if quests[id]["lvl"] == level then
         score = score + 8
