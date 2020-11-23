@@ -67,6 +67,7 @@ local function tsize(tbl)
   return c
 end
 
+local skillstate = ""
 pfQuest:RegisterEvent("QUEST_WATCH_UPDATE")
 pfQuest:RegisterEvent("QUEST_LOG_UPDATE")
 pfQuest:RegisterEvent("QUEST_FINISHED")
@@ -83,7 +84,19 @@ pfQuest:SetScript("OnEvent", function()
     else
       return
     end
-  elseif event == "PLAYER_LEVEL_UP" or event == "PLAYER_ENTERING_WORLD" or event == "SKILL_LINES_CHANGED" then
+  elseif event == "SKILL_LINES_CHANGED" then
+    local skills = ""
+    for i=0, GetNumSkillLines() do
+      skills = skills .. (GetSkillLineInfo(i) or "")
+    end
+
+    -- update quest givers when new skills or
+    -- professions became available
+    if skills ~= skillstate then
+      pfQuest.updateQuestGivers = true
+      skillstate = skills
+    end
+  elseif event == "PLAYER_LEVEL_UP" or event == "PLAYER_ENTERING_WORLD" then
     pfQuest.updateQuestGivers = true
   else
     pfQuest.updateQuestLog = true
