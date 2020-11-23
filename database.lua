@@ -1038,18 +1038,8 @@ function pfDatabase:SearchQuestID(id, meta, maps)
 
   -- search quest-objectives
   if quests[id]["obj"] then
-
-    -- units
-    if quests[id]["obj"]["U"] then
-      for _, unit in pairs(quests[id]["obj"]["U"]) do
-        if not parse_obj["U"][unit] or parse_obj["U"][unit] ~= "DONE" then
-          meta = meta or {}
-          meta["texture"] = nil
-          meta["QTYPE"] = "UNIT_OBJECTIVE"
-          maps = pfDatabase:SearchMobID(unit, meta, maps)
-        end
-      end
-    end
+    local skip_objects
+    local skip_creatures
 
     -- item requirements
     if quests[id]["obj"]["IR"] then
@@ -1067,6 +1057,9 @@ function pfDatabase:SearchQuestID(id, meta, maps)
               meta["QTYPE"] = "OBJECT_OBJECTIVE_ITEMREQ"
               meta.itemreq = requirement
 
+              skip_objects = skip_objects or {}
+              skip_objects[math.abs(object)] = true
+
               pfDatabase:TrackQuestItemDependency(requirement, id)
               if pfDatabase.itemlist.db[requirement] then
                 maps = pfDatabase:SearchObjectID(math.abs(object), meta, maps)
@@ -1078,6 +1071,9 @@ function pfDatabase:SearchQuestID(id, meta, maps)
               meta["QTYPE"] = "UNIT_OBJECTIVE_ITEMREQ"
               meta.itemreq = requirement
 
+              skip_creatures = skip_creatures or {}
+              skip_creatures[math.abs(object)] = true
+
               pfDatabase:TrackQuestItemDependency(requirement, id)
               if pfDatabase.itemlist.db[requirement] then
                 maps = pfDatabase:SearchMobID(math.abs(object), meta, maps)
@@ -1088,15 +1084,31 @@ function pfDatabase:SearchQuestID(id, meta, maps)
       end
     end
 
+    -- units
+    if quests[id]["obj"]["U"] then
+      for _, unit in pairs(quests[id]["obj"]["U"]) do
+        if not parse_obj["U"][unit] or parse_obj["U"][unit] ~= "DONE" then
+          if not skip_creatures or not skip_creatures[unit] then
+            meta = meta or {}
+            meta["texture"] = nil
+            meta["QTYPE"] = "UNIT_OBJECTIVE"
+            maps = pfDatabase:SearchMobID(unit, meta, maps)
+          end
+        end
+      end
+    end
+
     -- objects
     if quests[id]["obj"]["O"] then
       for _, object in pairs(quests[id]["obj"]["O"]) do
         if not parse_obj["O"][object] or parse_obj["O"][object] ~= "DONE" then
-          meta = meta or {}
-          meta["texture"] = nil
-          meta["layer"] = 2
-          meta["QTYPE"] = "OBJECT_OBJECTIVE"
-          maps = pfDatabase:SearchObjectID(object, meta, maps)
+          if not skip_objects or not skip_objects[object] then
+            meta = meta or {}
+            meta["texture"] = nil
+            meta["layer"] = 2
+            meta["QTYPE"] = "OBJECT_OBJECTIVE"
+            maps = pfDatabase:SearchObjectID(object, meta, maps)
+          end
         end
       end
     end
