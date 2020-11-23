@@ -741,9 +741,16 @@ function pfMap:UpdateNodes()
         if pfMap.pins[i].cluster and pfQuest_config.showcluster == "0" then
           pfMap.pins[i]:Hide()
         else
+          local resetsize = true
+
           -- populate quest list on map
           for title, node in pairs(pfMap.pins[i].node) do
             pfQuest.tracker.ButtonAdd(title, node)
+
+            -- disable resize for highlight nodes
+            if pfMap.highlight == title then
+              resetsize = nil
+            end
           end
 
           x = x / 100 * WorldMapButton:GetWidth()
@@ -751,8 +758,12 @@ function pfMap:UpdateNodes()
 
           pfMap.pins[i]:ClearAllPoints()
           pfMap.pins[i]:SetPoint("CENTER", WorldMapButton, "TOPLEFT", x, -y)
-          pfMap.pins[i]:SetWidth(pfMap.pins[i].defsize)
-          pfMap.pins[i]:SetHeight(pfMap.pins[i].defsize)
+
+          if resetsize then -- keep zoom level on highlights
+            pfMap.pins[i]:SetWidth(pfMap.pins[i].defsize)
+            pfMap.pins[i]:SetHeight(pfMap.pins[i].defsize)
+          end
+
           pfMap.pins[i]:Show()
         end
 
