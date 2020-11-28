@@ -1227,7 +1227,7 @@ function pfDatabase:QuestFilter(id, plevel, pclass, prace)
   if quests[id]["skill"] and not pfDatabase:PlayerHasSkill(quests[id]["skill"]) then return end
 
   -- hide lowlevel quests
-  if quests[id]["lvl"] and quests[id]["min"] < plevel - 9 and pfQuest_config["showlowlevel"] == "0" then return end
+  if quests[id]["min"] and quests[id]["min"] < plevel - 9 and pfQuest_config["showlowlevel"] == "0" then return end
 
   -- hide highlevel quests (or show those that are 3 levels above)
   if quests[id]["min"] and quests[id]["min"] > plevel + ( pfQuest_config["showhighlevel"] == "0" and 3 or 0 ) then return end
