@@ -217,10 +217,24 @@ function tracker.ButtonLeave()
 end
 
 function tracker.ButtonUpdate()
+  local alpha = tonumber((pfQuest_config["trackeralpha"] or .2)) or .2
+
+  if not this.alpha or this.alpha ~= alpha then
+    this.bg:SetTexture(0,0,0,alpha)
+    this.bg:SetAlpha(alpha)
+    this.alpha = alpha
+  end
+
   if pfMap.highlight and pfMap.highlight == this.title then
-    this.bg:SetAlpha(.5)
-  else
-    this.bg:SetAlpha(0)
+    if not this.highlight then
+      this.bg:SetTexture(1,1,1,math.max(.2, alpha))
+      this.bg:SetAlpha(math.max(.5, alpha))
+      this.highlight = true
+    end
+  elseif this.highlight then
+    this.bg:SetTexture(0,0,0,alpha)
+    this.bg:SetAlpha(alpha)
+    this.highlight = nil
   end
 end
 
