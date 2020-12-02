@@ -625,10 +625,9 @@ for _, expansion in pairs(config.expansions) do
         local query = mysql:execute(sql)
         while query:fetch(faction, "a") do
           if debug("units_faction") then break end
-          local A = faction.A
-          local H = faction.H
-          if A == "1" then fac = fac .. "A" end
-          if H == "1" then fac = fac .. "H" end
+          local A, H = faction.A, faction.H
+          if A == "1" and not string.find(fac, "A") then fac = fac .. "A" end
+          if H == "1" and not string.find(fac, "H") then fac = fac .. "H" end
         end
 
         if fac ~= "" then
@@ -843,10 +842,9 @@ for _, expansion in pairs(config.expansions) do
         local query = mysql:execute(sql)
         while query:fetch(faction, "a") do
           if debug("objects_faction") then break end
-          local A = faction.A
-          local H = faction.H
-          if A == "1" then fac = fac .. "A" end
-          if H == "1" then fac = fac .. "H" end
+          local A, H = faction.A, faction.H
+          if A == "1" and not string.find(fac, "A") then fac = fac .. "A" end
+          if H == "1" and not string.find(fac, "H") then fac = fac .. "H" end
         end
 
         if fac ~= "" then
