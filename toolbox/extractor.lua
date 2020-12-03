@@ -889,7 +889,9 @@ for _, expansion in pairs(config.expansions) do
       while query:fetch(item_loot_item, "a") do
         if debug("items_container") then break end
         if math.abs(item_loot_item.ChanceOrQuestChance) > 0 then
-          table.insert(scans, { tonumber(item_loot_item.entry), math.abs(item_loot_item.ChanceOrQuestChance) })
+          local chance = math.abs(item_loot_item.ChanceOrQuestChance)
+          chance = chance < 0.01 and round(chance, 5) or round(chance, 2)
+          table.insert(scans, { tonumber(item_loot_item.entry), chance })
         end
       end
 
@@ -904,7 +906,9 @@ for _, expansion in pairs(config.expansions) do
         local query = mysql:execute('SELECT entry, ChanceOrQuestChance FROM creature_loot_template WHERE item = ' .. entry .. ' ORDER BY entry')
         while query:fetch(creature_loot_template, "a") do
           if debug("items_unit") then break end
-          local chance = round(math.abs(creature_loot_template.ChanceOrQuestChance) * chance, 5)
+          local chance = math.abs(creature_loot_template.ChanceOrQuestChance) * chance
+          chance = chance < 0.01 and round(chance, 5) or round(chance, 2)
+
           if chance > 0 then
             pfDB["items"][data][entry]["U"] = pfDB["items"][data][entry]["U"] or {}
             pfDB["items"][data][entry]["U"][tonumber(creature_loot_template.entry)] = chance
@@ -920,7 +924,9 @@ for _, expansion in pairs(config.expansions) do
           AND gameobject_loot_template.item = ]] .. entry .. [[ ORDER BY gameobject_template.entry ]])
         while query:fetch(gameobject_loot_template, "a") do
           if debug("items_object") then break end
-          local chance = round(math.abs(gameobject_loot_template.ChanceOrQuestChance) * chance, 5)
+          local chance = math.abs(gameobject_loot_template.ChanceOrQuestChance) * chance
+          chance = chance < 0.01 and round(chance, 5) or round(chance, 2)
+
           if chance > 0 then
             pfDB["items"][data][entry]["O"] = pfDB["items"][data][entry]["O"] or {}
             pfDB["items"][data][entry]["O"][tonumber(gameobject_loot_template.entry)] = chance
@@ -934,8 +940,11 @@ for _, expansion in pairs(config.expansions) do
         ]])
         while query:fetch(reference_loot_template, "a") do
           if debug("items_reference") then break end
+          local chance = math.abs(reference_loot_template.ChanceOrQuestChance)
+          chance = chance < 0.01 and round(chance, 5) or round(chance, 2)
+
           pfDB["items"][data][entry]["R"] = pfDB["items"][data][entry]["R"] or {}
-          pfDB["items"][data][entry]["R"][tonumber(reference_loot_template.entry)] = tonumber(reference_loot_template.ChanceOrQuestChance)
+          pfDB["items"][data][entry]["R"][tonumber(reference_loot_template.entry)] = chance
         end
 
         -- fill vendor table
