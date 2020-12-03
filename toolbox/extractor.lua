@@ -178,7 +178,8 @@ do -- helper functions
     if type(input) == "number" and type(places) == "number" then
       local pow = 1
       for i = 1, places do pow = pow * 10 end
-      return math.floor(input * pow + 0.5) / pow
+      local result = math.floor(input * pow + 0.5) / pow
+      return result == math.floor(result) and math.floor(result) or result
     end
   end
 
