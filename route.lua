@@ -139,6 +139,35 @@ pfQuest.route.AddPoint = function(self, tbl)
   self.firstnode = nil
 end
 
+local targetTitle, targetCluster, targetLayer, targetTexture = nil, nil, nil, nil
+pfQuest.route.SetTarget = function(node, default)
+  if node and ( node.title ~= targetTitle
+    or node.cluster ~= targetCluster
+    or node.layer ~= targetLayer
+    or node.texture ~= targetTexture )
+  then
+    pfMap.queue_update = true
+  end
+
+  targetTitle = node and node.title or nil
+  targetCluster = node and node.cluster or nil
+  targetLayer = node and node.layer or nil
+  targetTexture = node and node.texture or nil
+end
+
+pfQuest.route.IsTarget = function(node)
+  if node then
+    if targetTitle and targetTitle == node.title
+      and targetCluster == node.cluster
+      and targetLayer == node.layer
+      and targetTexture == node.texture
+    then
+      return true
+    end
+  end
+  return nil
+end
+
 local lastpos, completed = 0, 0
 local function sortfunc(a,b) return a[4] < b[4] end
 pfQuest.route:SetScript("OnUpdate", function()
@@ -166,6 +195,34 @@ pfQuest.route:SetScript("OnUpdate", function()
   -- sort all coords by distance only once per second
   if not this.recalculate or this.recalculate < GetTime() then
     table.sort(this.coords, sortfunc)
+
+    -- order list on custom targets
+    if targetTitle and this.coords[1] and not pfQuest.route.IsTarget(this.coords[1][3]) then
+      local target = nil
+
+      -- check for the old index of the target
+      for id, data in pairs(this.coords) do
+        if pfQuest.route.IsTarget(data[3]) then
+          target = id
+          break
+        end
+      end
+
+      -- rearrange coordinates
+      if target then
+        local tmp = {}
+        table.insert(tmp, this.coords[target])
+
+        for id, data in pairs(this.coords) do
+          if id ~= target then
+            table.insert(tmp, this.coords[id])
+          end
+        end
+
+        this.coords = tmp
+      end
+    end
+
     this.recalculate = GetTime() + 1
   end
 
