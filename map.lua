@@ -607,9 +607,14 @@ function pfMap:BuildNode(name, parent)
   f:SetScript("OnEnter", pfMap.NodeEnter)
   f:SetScript("OnLeave", pfMap.NodeLeave)
 
-  f.tex = f:CreateTexture("OVERLAY")
+  f.tex = f:CreateTexture(nil, "BACKGROUND")
   f.tex:SetAllPoints(f)
 
+  f.hl = f:CreateTexture(nil, "BORDER")
+  f.hl:SetTexture(pfQuestConfig.path.."\\img\\track")
+  f.hl:SetPoint("TOPLEFT", f, "TOPLEFT", -5, 5)
+  f.hl:SetWidth(12)
+  f.hl:SetHeight(12)
   return f
 end
 
@@ -703,6 +708,21 @@ function pfMap:UpdateNode(frame, node, color, obj)
     frame:SetScript("OnClick", (frame.func or pfMap.NodeClick))
   end
 
+  local highlight = frame.texture and pfMap.highlightdb[frame][pfMap.highlight] and true or nil
+  local target = frame.texture and pfQuest.route and pfQuest.route.IsTarget(frame) or nil
+
+  -- set default size for node
+  frame.defsize = (frame.cluster or frame.layer == 4) and 22 or 16
+
+  -- make the current route target visible
+  if target then frame.hl:Show() else frame.hl:Hide() end
+
+  -- reset frame size except for highlights
+  if not highlight then
+    frame:SetWidth(frame.defsize)
+    frame:SetHeight(frame.defsize)
+  end
+
   frame.node = node
 end
 
@@ -738,27 +758,13 @@ function pfMap:UpdateNodes()
           pfQuest.route:AddPoint({ x, y, pfMap.pins[i] })
         end
 
-        -- update sizes
-        if pfMap.pins[i].cluster or pfMap.pins[i].layer == 4 then
-          pfMap.pins[i].defsize = 24
-        else
-          pfMap.pins[i].defsize = 16
-        end
-
         -- hide cluster nodes if set
         if pfMap.pins[i].cluster and pfQuest_config.showcluster == "0" then
           pfMap.pins[i]:Hide()
         else
-          local resetsize = true
-
           -- populate quest list on map
           for title, node in pairs(pfMap.pins[i].node) do
             pfQuest.tracker.ButtonAdd(title, node)
-
-            -- disable resize for highlight nodes
-            if pfMap.highlight == title then
-              resetsize = nil
-            end
           end
 
           x = x / 100 * WorldMapButton:GetWidth()
@@ -766,11 +772,6 @@ function pfMap:UpdateNodes()
 
           pfMap.pins[i]:ClearAllPoints()
           pfMap.pins[i]:SetPoint("CENTER", WorldMapButton, "TOPLEFT", x, -y)
-
-          if resetsize then -- keep zoom level on highlights
-            pfMap.pins[i]:SetWidth(pfMap.pins[i].defsize)
-            pfMap.pins[i]:SetHeight(pfMap.pins[i].defsize)
-          end
 
           pfMap.pins[i]:Show()
         end
@@ -875,6 +876,8 @@ function pfMap:UpdateMinimap()
 
           pfMap:UpdateNode(pfMap.mpins[i], node, color, "minimap")
 
+          pfMap.mpins[i].hl:Hide()
+
           if pfMap.mpins[i].cluster then
             pfMap.mpins[i]:Hide()
           else
@@ -933,7 +936,7 @@ pfMap:SetScript("OnUpdate", function()
         transition = frame:Animate(frame.defsize, 0, fps) or transition
       elseif highlight then
         -- zoom node
-        transition = frame:Animate((frame.texture and 28 or frame.defsize), 1, fps) or transition
+        transition = frame:Animate((frame.texture and frame.defsize + 4 or frame.defsize), 1, fps) or transition
       elseif not highlight and pfMap.highlight then
         -- fade node
         transition = frame:Animate(frame.defsize, tonumber(pfQuest_config["nodefade"]), fps) or transition
