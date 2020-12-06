@@ -536,6 +536,7 @@ function pfMap:NodeClick()
   elseif this.texture and pfQuest.route and
    (( pfQuest_config["routecluster"] == "1" and this.layer >= 9 ) or
     ( pfQuest_config["routeender"] == "1" and this == 4) or
+    ( pfQuest_config["routestarter"] == "1" and this.layer == 1) or
     ( pfQuest_config["routestarter"] == "1" and this.layer == 2))
   then
     -- set as arrow target priority
@@ -753,6 +754,7 @@ function pfMap:UpdateNodes()
         -- write points to the route plan
         if ( pfQuest_config["routecluster"] == "1" and pfMap.pins[i].layer >= 9 ) or
           ( pfQuest_config["routeender"] == "1" and pfMap.pins[i].layer == 4) or
+          ( pfQuest_config["routestarter"] == "1" and pfMap.pins[i].layer == 1) or
           ( pfQuest_config["routestarter"] == "1" and pfMap.pins[i].layer == 2)
         then
           pfQuest.route:AddPoint({ x, y, pfMap.pins[i] })
