@@ -533,6 +533,14 @@ function pfMap:NodeClick()
     pfMap:DeleteNode(this.node[this.title].addon, this.title)
     pfMap:UpdateNodes()
     pfQuest.updateQuestGivers = true
+  elseif this.texture and pfQuest.route and
+   (( pfQuest_config["routecluster"] == "1" and this.layer >= 9 ) or
+    ( pfQuest_config["routeender"] == "1" and this == 4) or
+    ( pfQuest_config["routestarter"] == "1" and this.layer == 2))
+  then
+    -- set as arrow target priority
+    pfQuest.route.SetTarget((not pfQuest.route.IsTarget(this) and this))
+    pfMap:UpdateNodes()
   else
     -- switch color
     pfQuest_colors[this.color] = { str2rgb(this.color .. GetTime()) }
