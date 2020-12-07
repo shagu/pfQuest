@@ -535,7 +535,7 @@ function pfMap:NodeClick()
     pfQuest.updateQuestGivers = true
   elseif this.texture and pfQuest.route and
    (( pfQuest_config["routecluster"] == "1" and this.layer >= 9 ) or
-    ( pfQuest_config["routeender"] == "1" and this == 4) or
+    ( pfQuest_config["routeender"] == "1" and this.layer == 4) or
     ( pfQuest_config["routestarter"] == "1" and this.layer == 1) or
     ( pfQuest_config["routestarter"] == "1" and this.layer == 2))
   then
