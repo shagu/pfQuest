@@ -256,6 +256,7 @@ for _, name in pairs(tocs) do
   local _, title = GetAddOnInfo(current)
   if title then
     pfQuestConfig.path = "Interface\\AddOns\\" .. current
+    pfQuestConfig.version = tostring(GetAddOnMetadata(current, "Version"))
     break
   end
 end
