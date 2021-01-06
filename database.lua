@@ -421,6 +421,13 @@ end
 -- GetBitByRace
 -- Returns bit of the current race
 function pfDatabase:GetBitByRace(model)
+  -- return a human bitmask for blood-elves on alliance side (high-elves).
+  -- this is required to show alliance quests for high-elves on turtle-wow.
+  if model == "BloodElf" and UnitFactionGroup("player") == "Alliance" then
+    return 1
+  end
+
+  -- scan for regular bitmasks
   for bit, v in pairs(bitraces) do
     if model == v then return bit end
   end
