@@ -421,7 +421,6 @@ end
 -- GetBitByRace
 -- Returns bit of the current race
 function pfDatabase:GetBitByRace(model)
-  -- local _, model == UnitRace("player")
   for bit, v in pairs(bitraces) do
     if model == v then return bit end
   end
@@ -430,7 +429,6 @@ end
 -- GetBitByClass
 -- Returns bit of the current class
 function pfDatabase:GetBitByClass(class)
-  -- local _, class == UnitClass("player")
   for bit, v in pairs(bitclasses) do
     if class == v then return bit end
   end
