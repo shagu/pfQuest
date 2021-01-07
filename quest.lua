@@ -197,6 +197,7 @@ function pfQuest:UpdateQuestlog()
 
   local _, numQuests = GetNumQuestLogEntries()
   local found = 0
+  local change = nil
 
   -- iterate over all quests
   for qlogid=1,40 do
@@ -226,16 +227,19 @@ function pfQuest:UpdateQuestlog()
           qlogid = qlogid,
           state = state,
         }
+        change = true
       elseif pfQuest.questlog[questid].qlogid ~= qlogid then
         table.insert(pfQuest.queue, { title, questid, qlogid, "RELOAD" })
         pfQuest.questlog_tmp[questid] = pfQuest.questlog[questid]
         pfQuest.questlog_tmp[questid].qlogid = qlogid
         pfQuest.questlog_tmp[questid].state = state
+        change = true
       elseif pfQuest.questlog[questid].state ~= state then
         table.insert(pfQuest.queue, { title, questid, qlogid, "RELOAD" })
         pfQuest.questlog_tmp[questid] = pfQuest.questlog[questid]
         pfQuest.questlog_tmp[questid].qlogid = qlogid
         pfQuest.questlog_tmp[questid].state = state
+        change = true
       else
         pfQuest.questlog_tmp[questid] = pfQuest.questlog[questid]
       end
@@ -251,11 +255,14 @@ function pfQuest:UpdateQuestlog()
   for questid, data in pairs(pfQuest.questlog) do
     if not pfQuest.questlog_tmp[questid] then
       table.insert(pfQuest.queue, { data.title, questid, nil, "REMOVE" })
+      change = true
     end
   end
 
   -- set new questlog
   pfQuest.questlog = pfQuest.questlog_tmp
+
+  return change
 end
 
 function pfQuest:ResetAll()
