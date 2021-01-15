@@ -498,19 +498,20 @@ end
 -- GetIDByName
 -- Scans localization tables for matching IDs
 -- Returns table with all IDs
-function pfDatabase:GetIDByName(name, db, partial)
+function pfDatabase:GetIDByName(name, db, partial, server)
   if not pfDB[db] then return nil end
   local ret = {}
 
   for id, loc in pairs(pfDB[db]["loc"]) do
     if db == "quests" then loc = loc["T"] end
 
+    local custom = server and pfQuest_server[db] and pfQuest_server[db][id] or not server
     if loc and name then
-      if partial == true and strfind(strlower(loc), strlower(name), 1, true) then
+      if partial == true and strfind(strlower(loc), strlower(name), 1, true) and custom then
         ret[id] = loc
-      elseif partial == "LOWER" and strlower(loc) == strlower(name) then
+      elseif partial == "LOWER" and strlower(loc) == strlower(name) and custom then
         ret[id] = loc
-      elseif loc == name then
+      elseif loc == name and custom then
         ret[id] = loc
       end
     end
