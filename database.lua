@@ -1543,7 +1543,7 @@ pfServerScan:SetPoint("TOP", 0, 0)
 pfServerScan:Hide()
 
 pfServerScan.scanID = 1
-pfServerScan.max = 1000000
+pfServerScan.max = 100000
 pfServerScan.perloop = 100
 
 pfServerScan.header = pfServerScan:CreateFontString("Caption", "LOW", "GameFontWhite")
