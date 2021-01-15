@@ -118,7 +118,8 @@ local function ResultButtonUpdate()
   end
 
   if this.itemColor then
-    this.text:SetText(this.itemColor .."|Hitem:"..this.id..pfQuestCompat.itemsuffix.."|h[".. this.name.."]|h|r")
+    local custom = pfQuest_server["items"][this.id] and " [|cff33ffcc!|r]" or ""
+    this.text:SetText(this.itemColor .."|Hitem:"..this.id..pfQuestCompat.itemsuffix.."|h[".. this.name.."]|h|r"..custom)
     this.text:SetWidth(this.text:GetStringWidth())
   end
 
