@@ -429,8 +429,8 @@ function pfDatabase:GetBitByRace(model)
     if model == v then return bit end
   end
 
-  -- return either human or orc as fallback for unknown races
-  return UnitFactionGroup("player") == "Alliance" and 1 or 2
+  -- return alliance/horde racemask as fallback for unknown races
+  return UnitFactionGroup("player") == "Alliance" and 77 or 178
 end
 
 -- GetBitByClass
