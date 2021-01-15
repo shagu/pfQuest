@@ -844,10 +844,13 @@ pfBrowser.input:SetScript("OnTextChanged", function()
   local text = this:GetText()
   if (text == pfQuest_Loc["Search"]) then text = "" end
 
+  local custom = string.find(text, "^custom:")
+  text = string.gsub(text, "^custom:", "")
+
   for _, caption in ipairs({"Units","Objects","Items","Quests"}) do
     local searchType = strlower(caption)
 
-    local data = strlen(text) >= 3 and pfDatabase:GetIDByName(text, searchType, true) or pfBrowser_fav[searchType]
+    local data = (strlen(text) >= 3 or custom) and pfDatabase:GetIDByName(text, searchType, true, custom) or pfBrowser_fav[searchType]
 
     local i = 0
     for id, text in pairs(data) do
