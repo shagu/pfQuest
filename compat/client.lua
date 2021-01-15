@@ -10,6 +10,7 @@ pfQuestCompat.mod = mod or math.mod
 pfQuestCompat.gfind = string.gmatch or string.gfind
 pfQuestCompat.itemsuffix = client > 11200 and ":0:0:0:0:0:0:0" or ":0:0:0"
 pfQuestCompat.rotateMinimap = client > 11200 and GetCVar("rotateMinimap") ~= "0" and true or nil
+pfQuestCompat.client = client
 
 pfQuestCompat.GetQuestLogTitle = function(id)
   local title, level, tag, group, header, collapsed, complete, daily, _
