@@ -1569,6 +1569,7 @@ pfServerScan:SetScript("OnShow", function()
   DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest: " .. pfQuest_Loc["Server scan started..."])
 end)
 
+local ignore, custom_id, custom_skip = {}, nil, nil
 pfServerScan:SetScript("OnUpdate", function()
   if this.scanID >= this.max then
     this:Hide()
@@ -1587,7 +1588,28 @@ pfServerScan:SetScript("OnUpdate", function()
       local name = ItemRefTooltipTextLeft1:GetText()
       ItemRefTooltip:Hide()
 
-      if not pfDB["items"]["loc"][i] then
+      -- skip-wait for item retrieval
+      if name == (RETRIEVING_ITEM_INFO or "") then
+
+        if not ignore[i] then
+          if custom_id == i and custom_skip >= 3 then
+            -- ignore item and proceed
+            ignore[i] = true
+          elseif custom_id == i then
+            -- try again up to 3 times
+            custom_skip = custom_skip + 1
+            return
+          elseif custom_id ~= i then
+            -- give it another try
+            custom_id = i
+            custom_skip = 0
+            return
+          end
+        end
+      end
+
+      -- assign item to custom server table
+      if not pfDB["items"]["loc"][i] and not ignore[i] then
         pfQuest_server["items"][i] = name
       end
     end
