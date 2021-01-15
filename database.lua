@@ -287,11 +287,14 @@ local bitraces = {
   [16] = "Scourge",
   [32] = "Tauren",
   [64] = "Gnome",
-  [128] = "Troll",
-  [256] = "Goblin",
-  [512] = "BloodElf",
-  [1024] = "Draenei"
+  [128] = "Troll"
 }
+
+-- append with playable races by expansion
+if pfQuestCompat.client > 11200 then
+  bitraces[512] = "BloodElf"
+  bitraces[1024] = "Draenei"
+end
 
 local bitclasses = {
   [1] = "WARRIOR",
