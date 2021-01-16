@@ -236,12 +236,16 @@ pfQuestConfig:SetScript("OnEvent", function()
   end
 end)
 
-pfQuestConfig:SetScript("OnMouseDown",function()
+pfQuestConfig:SetScript("OnMouseDown", function()
   this:StartMoving()
 end)
 
-pfQuestConfig:SetScript("OnMouseUp",function()
+pfQuestConfig:SetScript("OnMouseUp", function()
   this:StopMovingOrSizing()
+end)
+
+pfQuestConfig:SetScript("OnShow", function()
+  this:UpdateConfigEntries()
 end)
 
 pfQuestConfig.vpos = 40
@@ -449,4 +453,16 @@ function pfQuestConfig:CreateConfigEntries(config)
   local spacer = (maxw-1)*20
   pfQuestConfig:SetWidth(maxw*width + spacer + 20)
   pfQuestConfig:SetHeight(maxh*height + 100)
+end
+
+function pfQuestConfig:UpdateConfigEntries()
+  for entry, data in pairs(pfQuest_defconfig) do
+    if data.pos and data.type and configframes[entry] then
+      if data.type == "checkbox" then
+        configframes[entry].input:SetChecked((pfQuest_config[entry] == "1" and true or nil))
+      elseif data.type == "text" then
+        configframes[entry].input:SetText(pfQuest_config[entry])
+      end
+    end
+  end
 end
