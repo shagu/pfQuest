@@ -1,4 +1,5 @@
 -- multi api compat
+local _G = _G or getfenv(0)
 local compat = pfQuestCompat
 local _, _, _, client = GetBuildInfo()
 client = client or 11200
@@ -523,6 +524,21 @@ end
 local pfHookQuestLog_Update = QuestLog_Update
 QuestLog_Update = function()
   pfHookQuestLog_Update()
+
+  if pfQuest_config["questloglevel"] == "1" then
+    for i=1, QUESTS_DISPLAYED, 1 do
+      local display = i + FauxScrollFrame_GetOffset(QuestLogListScrollFrame)
+      local entries = GetNumQuestLogEntries()
+
+      if display <= entries then
+        local title, level, tag, header = compat.GetQuestLogTitle(display)
+        if not header then
+          _G["QuestLogTitle"..i]:SetText(" [" .. ( level or "??" ) .. ( tag and "+" or "") .. "] " .. title)
+        end
+      end
+    end
+  end
+
   if pfQuest_config["questlogbuttons"] ==  "1" then
     local questids = pfDatabase:GetQuestIDs(GetQuestLogSelection())
     if questids and questids[1] and pfQuest.questlog[questids[1]] then

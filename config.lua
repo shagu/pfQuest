@@ -60,42 +60,46 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Show Level On Quest Tracker"],
     default = "0", type = "checkbox", pos = { 1, 12},
   },
+  ["questloglevel"] = { -- Show Level On Quest Log
+    text = pfQuest_Loc["Show Level On Quest Log"],
+    default = "0", type = "checkbox", pos = { 1, 13},
+  },
 
   ["_Map & Minimap_"] = {
     text = pfQuest_Loc["Map & Minimap"],
-    default = nil, type = "header", pos = { 1, 14 },
+    default = nil, type = "header", pos = { 1, 15 },
   },
   ["minimapnodes"] = { -- Enable Minimap Nodes
     text = pfQuest_Loc["Enable Minimap Nodes"],
-    default = "1", type = "checkbox", pos = { 1, 15 },
+    default = "1", type = "checkbox", pos = { 1, 16 },
   },
   ["cutoutminimap"] = { -- Use Cut-Out Minimap Node Icons
     text = pfQuest_Loc["Use Cut-Out Minimap Node Icons"],
-    default = "1", type = "checkbox", pos = { 1, 16 },
+    default = "1", type = "checkbox", pos = { 1, 17 },
   },
   ["cutoutworldmap"] = { -- Use Cut-Out World Map Node Icons
     text = pfQuest_Loc["Use Cut-Out World Map Node Icons"],
-    default = "0", type = "checkbox", pos = { 1, 17 },
+    default = "0", type = "checkbox", pos = { 1, 18 },
   },
   ["spawncolors"] = { -- Color Map Nodes By Spawn
     text = pfQuest_Loc["Color Map Nodes By Spawn"],
-    default = "0", type = "checkbox", pos = { 1, 18 },
+    default = "0", type = "checkbox", pos = { 1, 19 },
   },
   ["worldmaptransp"] = { -- World Map Node Transparency
     text = pfQuest_Loc["World Map Node Transparency"],
-    default = "1.0", type = "text", pos = { 1, 19 },
+    default = "1.0", type = "text", pos = { 1, 20 },
   },
   ["minimaptransp"] = { -- Minimap Node Transparency
     text = pfQuest_Loc["Minimap Node Transparency"],
-    default = "1.0", type = "text", pos = { 1, 20 },
+    default = "1.0", type = "text", pos = { 1, 21 },
   },
   ["nodefade"] = { -- Node Fade Transparency
     text = pfQuest_Loc["Node Fade Transparency"],
-    default = "0.3", type = "text", pos = { 1, 21 },
+    default = "0.3", type = "text", pos = { 1, 22 },
   },
   ["mouseover"] = { -- Highlight Nodes On Mouseover
     text = pfQuest_Loc["Highlight Nodes On Mouseover"],
-    default = "1", type = "checkbox", pos = { 1, 22 },
+    default = "1", type = "checkbox", pos = { 1, 23 },
   },
 
   ["_Questing_"] = {
