@@ -392,10 +392,11 @@ function tracker.ButtonEvent(self)
 
     local r,g,b = pfMap.tooltip:GetColor(cur, max)
     local colorperc = string.format("|cff%02x%02x%02x", r*255, g*255, b*255)
+    local showlevel = pfQuest_config["trackerlevel"] == "1" and "[" .. ( level or "??" ) .. ( tag and "+" or "") .. "] " or ""
 
     self.tracked = watched
     self.perc = percent
-    self.text:SetText(string.format("%s |cffaaaaaa(%s%s%%|cffaaaaaa)", title or "", colorperc or "", ceil(percent)))
+    self.text:SetText(string.format("%s%s |cffaaaaaa(%s%s%%|cffaaaaaa)|r", showlevel, title or "", colorperc or "", ceil(percent)))
     self.text:SetTextColor(color.r, color.g, color.b)
     self.tooltip = pfQuest_Loc["|cff33ffcc<Click>|r Unfold/Fold Objectives\n|cff33ffcc<Right-Click>|r Show In QuestLog\n|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"]
   elseif tracker.mode == "GIVER_TRACKING" then
