@@ -413,8 +413,9 @@ function tracker.ButtonEvent(self)
       level, color = 100, { r = 1, g = 0, b = 0 }
     end
 
+    local showlevel = pfQuest_config["trackerlevel"] == "1" and "[" .. ( level or "??" ) .. "] " or ""
     self.text:SetTextColor(color.r, color.g, color.b)
-    self.text:SetText(title)
+    self.text:SetText(showlevel .. title)
     self.level = tonumber(level)
     self.tooltip = pfQuest_Loc["|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Mark As Done"]
   elseif tracker.mode == "DATABASE_TRACKING" then
