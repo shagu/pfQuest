@@ -45,7 +45,8 @@ local debugsql = {
   ["quests_itemspellcreature"] = { "Using mangos data to find all creatures that are a spell target of the given item" },
   ["quests_itemspellobject"] = { "Using mangos data to find all objects that are a spell target of the given item" },
   ["quests_itemspellscript"] = { "Using mangos data to find all scripts that are a spell target of the given item" },
-  ["quests_itemobject"] = { "Using mangos database and client data to search for object that can be opened by item" },
+  ["quests_itemobject"] = { "Using mangos database and client data to search for object that can be used via item" },
+  ["quests_itemcreature"] = { "Using mangos database and client data to search for creature that can be target of item" },
   ["quests_areatrigger"] = { "Using mangos data to find associated areatriggers" },
   ["quests_starterunit"] = { "Using mangos data to search for quest starter units" },
   ["quests_starterobject"] = { "Using mangos data to search for quest starter objects" },
@@ -121,6 +122,7 @@ local config = {
     ["EffectTriggerSpell"] = "effectTriggerSpell",
     ["Map"] = "map_bound",
     ["startquest"] = "start_quest",
+    ["targetEntry"] = "target_entry",
   },
 }
 
@@ -1219,6 +1221,19 @@ for _, expansion in pairs(config.expansions) do
                 end
               end
             end
+          end
+
+          -- item is used to open a creature
+          local creature_items = {}
+          local query = mysql:execute([[
+            SELECT ]] .. C.targetEntry .. [[ AS creature FROM item_required_target
+            WHERE entry = ]] .. id .. [[
+          ]])
+          while query:fetch(creature_items, "a") do
+            if debug("quests_itemcreature") then break end
+            pfDB["quests-itemreq"][data][id] = pfDB["quests-itemreq"][data][id] or {}
+            pfDB["quests-itemreq"][data][id][tonumber(creature_items.creature)] = 0
+            itemreq[id] = true
           end
 
           -- item is used to open an object
