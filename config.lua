@@ -110,67 +110,71 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Quest Tracker Visibility"],
     default = "0", type = "text", pos = { 2, 2 },
   },
+  ["trackerfontsize"] = { -- Unified Quest Location Markers
+    text = pfQuest_Loc["Quest Tracker Font Size"],
+    default = "12", type = "text", pos = { 2, 3 },
+  },
   ["showcluster"] = { -- Unified Quest Location Markers
     text = pfQuest_Loc["Unified Quest Location Markers"],
-    default = "1", type = "checkbox", pos = { 2, 3 },
+    default = "1", type = "checkbox", pos = { 2, 4 },
   },
   ["allquestgivers"] = { -- Display Available Quest Givers
     text = pfQuest_Loc["Display Available Quest Givers"],
-    default = "1", type = "checkbox", pos = { 2, 4 },
+    default = "1", type = "checkbox", pos = { 2, 5 },
   },
   ["currentquestgivers"] = { -- Display Current Quest Givers
     text = pfQuest_Loc["Display Current Quest Givers"],
-    default = "1", type = "checkbox", pos = { 2, 5 },
+    default = "1", type = "checkbox", pos = { 2, 6 },
   },
   ["showlowlevel"] = { -- Display Low Level Quest Givers
     text = pfQuest_Loc["Display Low Level Quest Givers"],
-    default = "0", type = "checkbox", pos = { 2, 6 },
+    default = "0", type = "checkbox", pos = { 2, 7 },
   },
   ["showhighlevel"] = { -- Display Level+3 Questgivers
     text = pfQuest_Loc["Display Level+3 Quest Givers"],
-    default = "1", type = "checkbox", pos = { 2, 7 },
+    default = "1", type = "checkbox", pos = { 2, 8 },
   },
   ["showfestival"] = { -- Display Event & Daily Quests
     text = pfQuest_Loc["Display Event & Daily Quests"],
-    default = "0", type = "checkbox", pos = { 2, 8 },
+    default = "0", type = "checkbox", pos = { 2, 9 },
   },
 
   ["_Routes_"] = {
     text = pfQuest_Loc["Routes"],
-    default = nil, type = "header", pos = { 2, 10 },
+    default = nil, type = "header", pos = { 2, 11 },
   },
   ["routes"] = { -- Show Route Between Objects
     text = pfQuest_Loc["Show Route Between Objects"],
-    default = "1", type = "checkbox", pos = { 2, 11 },
+    default = "1", type = "checkbox", pos = { 2, 12 },
   },
   ["routecluster"] = { -- Include Unified Quest Locations
     text = pfQuest_Loc["Include Unified Quest Locations"],
-    default = "1", type = "checkbox", pos = { 2, 12 },
+    default = "1", type = "checkbox", pos = { 2, 13 },
   },
   ["routeender"] = { -- Include Quest Enders
     text = pfQuest_Loc["Include Quest Enders"],
-    default = "1", type = "checkbox", pos = { 2, 13 },
+    default = "1", type = "checkbox", pos = { 2, 14 },
   },
   ["routestarter"] = { -- Include Quest Starters
     text = pfQuest_Loc["Include Quest Starters"],
-    default = "0", type = "checkbox", pos = { 2, 14 },
+    default = "0", type = "checkbox", pos = { 2, 15 },
   },
   ["routeminimap"] = { -- Show Route On Minimap
     text = pfQuest_Loc["Show Route On Minimap"],
-    default = "0", type = "checkbox", pos = { 2, 15 },
+    default = "0", type = "checkbox", pos = { 2, 16 },
   },
   ["arrow"] = { -- Show Arrow Along Routes
     text = pfQuest_Loc["Show Arrow Along Routes"],
-    default = "1", type = "checkbox", pos = { 2, 16 },
+    default = "1", type = "checkbox", pos = { 2, 17 },
   },
 
   ["_User Data_"] = {
     text = pfQuest_Loc["User Data"],
-    default = nil, type = "header", pos = { 2, 18 },
+    default = nil, type = "header", pos = { 2, 19 },
   },
   ["btn_settings"] = {
     text = pfQuest_Loc["Reset Configuration"],
-    default = "1", type = "button", pos = { 2, 19 }, func = function()
+    default = "1", type = "button", pos = { 2, 20 }, func = function()
       local dialog = StaticPopupDialogs["PFQUEST_RESET"]
       dialog.text = pfQuest_Loc["Do you really want to reset the configuration?"]
       dialog.OnAccept = function()
@@ -183,7 +187,7 @@ pfQuest_defconfig = {
   },
   ["btn_history"] = {
     text = pfQuest_Loc["Reset Quest History"],
-    default = "1", type = "button", pos = { 2, 20 }, func = function()
+    default = "1", type = "button", pos = { 2, 21 }, func = function()
       local dialog = StaticPopupDialogs["PFQUEST_RESET"]
       dialog.text = pfQuest_Loc["Do you really want to reset the quest history?"]
       dialog.OnAccept = function()
@@ -196,7 +200,7 @@ pfQuest_defconfig = {
   },
   ["btn_everything"] = {
     text = pfQuest_Loc["Reset Everything"],
-    default = "1", type = "button", pos = { 2, 21 }, func = function()
+    default = "1", type = "button", pos = { 2, 22 }, func = function()
       local dialog = StaticPopupDialogs["PFQUEST_RESET"]
       dialog.text = pfQuest_Loc["Do you really want to reset everything?"]
       dialog.OnAccept = function()

@@ -1,6 +1,7 @@
 -- multi api compat
 local compat = pfQuestCompat
 
+local fontsize = 12
 local panelheight = 16
 local entryheight = 20
 
@@ -62,6 +63,11 @@ tracker:EnableMouse(true)
 tracker:SetClampedToScreen(true)
 tracker:RegisterEvent("PLAYER_ENTERING_WORLD")
 tracker:SetScript("OnEvent", function()
+  -- update font sizes according to config
+  fontsize = tonumber(pfQuest_config["trackerfontsize"])
+  entryheight = ceil(fontsize*1.6)
+
+  -- restore tracker state
   if pfQuest_config["showtracker"] and pfQuest_config["showtracker"] == "0" then
     this:Hide()
   else
@@ -362,7 +368,7 @@ function tracker.ButtonEvent(self)
 
     -- expand button to show objectives
     if objectives and (unfolded[title] or ( percent > 0 and percent < 100 )) then
-      self:SetHeight(entryheight + objectives*12)
+      self:SetHeight(entryheight + objectives * fontsize)
 
       for i=1, objectives, 1 do
         local text, _, done = GetQuestLogLeaderBoard(i, qlogid)
@@ -370,10 +376,10 @@ function tracker.ButtonEvent(self)
 
         if not self.objectives[i] then
           self.objectives[i] = self:CreateFontString(nil, "HIGH", "GameFontNormal")
-          self.objectives[i]:SetFont(pfUI.font_default, 12)
+          self.objectives[i]:SetFont(pfUI.font_default, fontsize)
           self.objectives[i]:SetJustifyH("LEFT")
-          self.objectives[i]:SetPoint("TOPLEFT", 20, -12*i-6)
-          self.objectives[i]:SetPoint("TOPRIGHT", -10, -12*i-6)
+          self.objectives[i]:SetPoint("TOPLEFT", 20, -fontsize*i-6)
+          self.objectives[i]:SetPoint("TOPRIGHT", -10, -fontsize*i-6)
         end
 
         if objNum and objNeeded then
@@ -520,7 +526,7 @@ function tracker.ButtonAdd(title, node)
     tracker.buttons[id].bg:SetAlpha(0)
 
     tracker.buttons[id].text = tracker.buttons[id]:CreateFontString("pfQuestIDButton", "HIGH", "GameFontNormal")
-    tracker.buttons[id].text:SetFont(pfUI.font_default, 12)
+    tracker.buttons[id].text:SetFont(pfUI.font_default, fontsize)
     tracker.buttons[id].text:SetJustifyH("LEFT")
     tracker.buttons[id].text:SetPoint("TOPLEFT", 16, -4)
     tracker.buttons[id].text:SetPoint("TOPRIGHT", -10, -4)
