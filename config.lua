@@ -229,6 +229,7 @@ pfQuestConfig:SetPoint("CENTER", 0, 0)
 pfQuestConfig:SetFrameStrata("HIGH")
 pfQuestConfig:SetMovable(true)
 pfQuestConfig:EnableMouse(true)
+pfQuestConfig:RegisterForDrag("LeftButton", "RightButton", "MiddleButton", "Button4", "Button5")
 pfQuestConfig:RegisterEvent("ADDON_LOADED")
 pfQuestConfig:SetScript("OnEvent", function()
   if arg1 == "pfQuest" or arg1 == "pfQuest-tbc" or arg1 == "pfQuest-wotlk" then
@@ -248,11 +249,10 @@ pfQuestConfig:SetScript("OnEvent", function()
   end
 end)
 
-pfQuestConfig:SetScript("OnMouseDown", function()
+pfQuestConfig:SetScript("OnDragStart", function()
   this:StartMoving()
 end)
-
-pfQuestConfig:SetScript("OnMouseUp", function()
+pfQuestConfig:SetScript("OnDragStop", function()
   this:StopMovingOrSizing()
 end)
 
