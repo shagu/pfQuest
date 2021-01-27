@@ -412,6 +412,9 @@ function pfQuestConfig:CreateConfigEntries(config)
         frame.input:SetScript("OnEscapePressed", function(self)
           this:ClearFocus()
         end)
+        frame.input:SetScript("OnEnterPressed", function(self)
+          this:ClearFocus()
+        end)
 
         frame.input.config = entry
         frame.input:SetText(pfQuest_config[entry])
