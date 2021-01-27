@@ -803,7 +803,7 @@ function pfDatabase:SearchItemID(id, meta, maps, allowedTypes)
   meta["itemid"] = id
   meta["item"] = pfDB.items.loc[id]
 
-  local minChance = tonumber(pfQuest_config.mindropchance)
+  local minChance = pfQuest_config.mindropchance
   if not minChance then minChance = 0 end
 
   -- search unit drops
