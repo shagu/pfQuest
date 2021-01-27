@@ -422,6 +422,12 @@ function pfQuestConfig:CreateConfigEntries(config)
         frame.input:SetScript("OnTextChanged", function(self)
           pfQuest_config[this.config] = this:GetText()
         end)
+        frame.input:SetScript("OnEditFocusLost", function(self)
+          this:HighlightText(0, 0)
+        end)
+        frame.input:SetScript("OnEditFocusGained", function(self)
+          this:HighlightText()
+        end)
 
         pfUI.api.CreateBackdrop(frame.input, nil, true)
       elseif data.type == "button" and data.func then
