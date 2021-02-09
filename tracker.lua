@@ -409,14 +409,14 @@ function tracker.ButtonEvent(self)
     local level = node.qlvl or node.level or UnitLevel("player")
     local color = GetDifficultyColor(level)
 
+    -- red quests
+    if node.qmin and node.qmin > UnitLevel("player") then
+      color = { r = 1, g = 0, b = 0 }
+    end
+
     -- detect daily quests
     if node.qmin and node.qlvl and math.abs(node.qmin - node.qlvl) >= 30 then
       level, color = 0, { r = .2, g = .8, b = 1 }
-    end
-
-    -- red quests
-    if node.qmin and node.qmin > UnitLevel("player") then
-      level, color = 100, { r = 1, g = 0, b = 0 }
     end
 
     local showlevel = pfQuest_config["trackerlevel"] == "1" and "[" .. ( level or "??" ) .. "] " or ""
