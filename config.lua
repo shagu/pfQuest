@@ -132,7 +132,7 @@ pfQuest_defconfig = {
   },
   ["showhighlevel"] = { -- Display Level+3 Questgivers
     text = pfQuest_Loc["Display Level+3 Quest Givers"],
-    default = "1", type = "checkbox", pos = { 2, 8 },
+    default = "0", type = "checkbox", pos = { 2, 8 },
   },
   ["showfestival"] = { -- Display Event & Daily Quests
     text = pfQuest_Loc["Display Event & Daily Quests"],
