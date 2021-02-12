@@ -75,7 +75,7 @@ end
 
 -- Returns the levenshtein distance between two strings
 -- based on: https://gist.github.com/Badgerati/3261142
-local len1, len2, cost
+local len1, len2, cost, best
 local levcache = {}
 local function lev(str1, str2, limit)
   if levcache[str1..":"..str2] then
@@ -105,13 +105,20 @@ local function lev(str1, str2, limit)
 
   -- levenshtein algorithm
   for i = 1, len1, 1 do
+    best = limit
+
     for j = 1, len2, 1 do
       cost = string.byte(str1,i) == string.byte(str2,j) and 0 or 1
       matrix[i][j] = math.min(matrix[i-1][j] + 1, matrix[i][j-1] + 1, matrix[i-1][j-1] + cost)
-      if limit and matrix[i][j] > limit then
-        levcache[str1..":"..str2] = limit
-        return limit
+
+      if limit and matrix[i][j] < limit then
+        best = matrix[i][j]
       end
+    end
+
+    if limit and best >= limit then
+      levcache[str1..":"..str2] = limit
+      return limit
     end
   end
 
