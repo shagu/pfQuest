@@ -1386,10 +1386,11 @@ function pfDatabase:GetQuestIDs(qid)
 
   -- no title was found, run levenshtein on titles
   if tcount == 0 and title then
-    local tscore, tbest, ttitle = nil, 5, nil
+    local tlen = string.len(title)
+    local tscore, tbest, ttitle = nil, math.min(tlen/2, 5), nil
     for id, data in pairs(pfDB["quests"]["loc"]) do
       if quests[id] and data.T then
-        tscore = lev(data.T, title, tscore)
+        tscore = lev(data.T, title, tbest)
         if tscore < tbest then
           tbest = tscore
           ttitle = data.T
