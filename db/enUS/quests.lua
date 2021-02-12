@@ -8401,7 +8401,7 @@ pfDB["quests"]["enUS"] = {
   },
   [2865] = {
     ["D"] = "The scarabs of Tanaris have very hard shells!  Hard enough to use as a building material for lots of things.  So many things!$B$BIn fact, those shells are so useful... the scarabs were hunted all to near extinction!$B$BI know where there are more scarabs, and if you promise to bring me their shells then I\'ll tell you where they are.  Promise?$B$BOk, the scarabs have a colony in Zul\'Farrak.  I guess the trolls don\'t hunt them for their shells.$B$BBut you can!  Go to Zul\'Farrak and get me uncracked shells!",
-    ["O"] = "Bring 5 Uncracked Scarab Shells to Tran\'rek in Gadgetzan.",
+    ["O"] = "Bring 9 Uncracked Scarab Shells to Tran\'rek in Gadgetzan.",
     ["T"] = "Scarab Shells",
   },
   [2866] = {
@@ -18110,7 +18110,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Mantle of the Oracle",
   },
   [8595] = {
-    ["D"] = "I see that you\'re no ordinary mortal, $n. Your chances against the Old God, however infinitely small, are greater than ours at this point. After all, while he expects dragons at his doorstep, he is not prepared for someone like you.$b$bJust as Anachronos and Staghelm defeated the Qiraji a thousand years ago through the alliance of mortal and dragon races, we too shall form a pact. Gain the trust of the Bronze Dragonflight and you\'ll gain our trust. Only then we shall make a true champion out of you.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "Mortal Champions",
   },
@@ -18880,7 +18880,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Path of the Protector",
   },
   [8751] = {
-    ["D"] = "Never have I seen such tenacity! The Bronze Flight grants you one final enchantment. The Timeless One himself has requested it so!$B$BHand me your signet ring so that I may make the necessary adjustments.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "The Protector of Kalimdor",
   },
@@ -18905,7 +18905,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Path of the Conqueror",
   },
   [8756] = {
-    ["D"] = "Never have I seen such tenacity! The Bronze Flight grants you one final enchantment. The Timeless One himself has requested it so!$B$BHand me your signet ring so that I may make the necessary adjustments.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "The Qiraji Conqueror",
   },
@@ -18930,7 +18930,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Path of the Invoker",
   },
   [8761] = {
-    ["D"] = "Never have I seen such tenacity! The Bronze Flight grants you one final enchantment. The Timeless One himself has requested it so!$B$BHand me your signet ring so that I may make the necessary adjustments.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "The Grand Invoker",
   },

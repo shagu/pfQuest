@@ -7746,27 +7746,61 @@ pfDB["quests"]["esES-tbc"] = {
   [5626] = {
     ["D"] = "¡Eh, $N! ¡¿Tienes un minuto?!$B$BYa llevas tiempo suficiente siguiendo la Luz, es hora de que vayas a Kharanos en busca de Maxan Anvol. Él te enseñará más sobre el camino que estás recorriendo y, si pruebas que lo mereces, te dará tu primera toga. La que denotará tu posición de $Gsacerdote:sacerdotisa;.$B$B¡Y ahora, en marcha! En cuanto acabes aquí, atraviesa el túnel. Él te estará esperando.",
   },
-  [5628] = "_",
-  [5629] = "_",
-  [5630] = "_",
-  [5631] = "_",
-  [5632] = "_",
-  [5633] = "_",
-  [5634] = "_",
-  [5635] = "_",
-  [5636] = "_",
-  [5637] = "_",
-  [5638] = "_",
-  [5639] = "_",
+  [5628] = {
+    ["D"] = "Ah, hola... ¿$N? Me alegro de que te pares a charlar un momento. Estás muy lejos de casa... debe de ser duro, con lo joven que eres. Admiro tu ambición. Ojalá yo hubiera reunido valor para ir a recorrer mundo cuando era joven.$B$BHace poco ha pasado por aquí una sacerdotisa de tu orden buscándote. Dijo que era urgente que regresaras al Templo de la Luna de Darnassus y hablaras con la sacerdotisa Alathea... tenía algo que ver con tu instrucción. Yo acudiría cuanto antes, si puedes.",
+  },
+  [5629] = {
+    ["D"] = "Hola de nuevo, $N. Sé que has dedicado mucho tiempo a ayudar a nuestra gente, pero ahora debes dedicarte un poco de tiempo a ti. La sacerdotisa Alathea envió a alguien a buscarte. Parece que has llamado la atención de nuestros ancianos. Creen que ha llegado el momento de que empieces a hacer cosas más importantes. Ve al Templo de la Luna de Darnassus y busca a Alathea. Ella te estará esperando. Buena suerte y que Elune te acompañe.",
+  },
+  [5630] = {
+    ["D"] = "Hola, $Gmuchachito:muchachita;. Me alegra que te aventures a viajar a tierras lejanas. No te ofendas, es que tu gente no suele adaptarse bien a estos climas fríos. Pero veo que tú eres más resistente.$B$BHace poco ha pasado por aquí una de tus sacerdotisas. Te buscaba para que fueras a hablar con la sacerdotisa Alathea en el Templo de la Luna de Darnassus... o algo así. Dijo que era importante y que deberías ponerte en camino cuanto antes.",
+  },
+  [5631] = {
+    ["D"] = "Hace poco vino una sacerdotisa por aquí. Te estaba buscando, $R. Dijo que tenía el cometido de encontrarte y comunicarte que debías regresar al Templo de la Luna de Darnassus cuanto antes. Cuando llegues, busca a la sacerdotisa Alathea. Ella te dará más información.$B$BQue la Luz sea contigo, $N.",
+  },
+  [5632] = {
+    ["D"] = "Ah, sí, claro. Hola, $N. Hace no mucho vino a buscarte una mensajera de nuestra orden. Habló de algo importante que pasa en Darnassus y dijo que deberías volver al Templo de la Luna en cuanto puedas. Y que hablaras con la sacerdotisa Alathea una vez allí. Creo que tiene algo que ver con los progresos que has hecho últimamente.$B$BVuelve a Darnassus en cuanto puedas.",
+  },
+  [5633] = {
+    ["D"] = "Saludos, $Gmuchachito:muchachita;. Me alegro de verte en nuestras grandes salas. Benditos seáis tu pueblo y tú.$B$BMientras viajabas por nuestras tierras, vino una sacerdotisa de tu templo a buscarte. Dijo que debías regresar al Templo de la Luna cuanto antes. Siento no poder decirte más, pero sí puedo decirte que parecía importante. Cuando llegues al templo, habla con la sacerdotisa Alathea.",
+  },
+  [5634] = {
+    ["D"] = "You\'re needed in Stormwind, $N. The High Priestess there, Laurena, says it\'s time for you to prove you\'re worthy of the next level of your training. Don\'t waste too much time finding your way there. You can find her in the Cathedral of Light in the center of the city. Give her my regards, and prove how worthy you are of such a calling. The Light be with you, $N.",
+    ["O"] = "Speak to High Priestess Laurena in Stormwind.",
+  },
+  [5635] = {
+    ["D"] = "Has llamado la atención de nuestros superiores, $N. Te piden que vayas a la Catedral de la Luz, en Ventormenta, lo antes posible. Por lo visto, creen que has demostrado tu valía y ya puedes recibir más instrucción. Cuando llegues, busca a la suma sacerdotisa Laurena. Ella podrá guiarte. Buena suerte y que la Luz te acompañe.",
+  },
+  [5636] = {
+    ["D"] = "Que Elune te bendiga, noble $R. Espero que tu Luz te encuentre y te proteja en el día de hoy.$B$BUno de tus sacerdotes estuvo aquí buscándote. Dijo que tenías que volver a la Catedral de la Luz lo antes posible para hablar con la suma sacerdotisa Laurena. Parece ser que lo has hecho muy bien y has conseguido llamar la atención. Yo no me quedaría mucho tiempo aquí, tu gente te necesita.",
+  },
+  [5637] = {
+    ["D"] = "Ha llegado el momento de que vayas a Ventormenta, $N. La suma sacerdotisa Laurena, en la Catedral de la Luz, quiere hablar contigo. Tiene que ser algo muy bueno o muy malo para que la suma sacerdotisa quiera que vayas, aunque supongo que, como lo has hecho tan bien, debe de ser algo bueno que quiera hablar contigo.$B$BPero no pierdas demasiado tiempo por aquí. Vete en cuanto puedas.",
+  },
+  [5638] = {
+    ["D"] = "Hace un momento, vino uno de tus sacerdotes a buscarte, $R. Dijo que si te veía, te dijera que fueras a la Catedral de la Luz. Dijo que era muy importante, aunque yo no me preocuparía demasiado si fuera tú. Su comportamiento parecía positivo... como si fueran buenas noticias. Yo no tardaría mucho en emprender el viaje.$B$BQue Elune sea contigo, noble $R.",
+  },
+  [5639] = {
+    ["D"] = "Te necesitan en Ventormenta, $N. La alta sacerdotisa, Laurena, dice que es hora de que demuestres tu valía para poder acceder al siguiente nivel de tu instrucción. No pierdas demasiado tiempo. La encontrarás en la Catedral de la Luz, en el centro de la ciudad. Dale recuerdos de mi parte y demuestra que eres $Gdigno:digna; de su llamada. Que la Luz sea contigo, $N.",
+  },
   [5640] = "_",
-  [5642] = "_",
-  [5643] = "_",
-  [5644] = "_",
+  [5642] = {
+    ["D"] = "En Orgrimmar está pasando algo, $N.$B$BLos mensajeros que vienen normalmente en busca de sacerdotes trol suelen ser muy tranquilos. Pero esta vez parecía que llevaban mucha prisa. No te entretengas mucho en Cima del Trueno; ve al Valle de los Espíritus lo antes posible.",
+    ["O"] = "Habla con Ur\'kyo en Orgrimmar.",
+  },
+  [5643] = {
+    ["O"] = "Habla con Ur\'kyo en Orgrimmar.",
+  },
+  [5644] = {
+    ["D"] = "Es un día maravilloso para ti, $N. Puedo ver por las lecciones que has aprendido que ha llegado el momento de que te envíe de nuevo ante Aelthalyste. Hay cosas que solo ella puede enseñarte, eso sí, siempre y cuando demuestres que eres $Gmerecedor: merecedora; de ello.$B$BNo quiero estropearte la sorpresa pero recuerdo cuando yo era un joven sacerdote aprendiendo el verdadero poder... el poder divino. ¡Qué tiempos aquellos!$B$BVe a ver a Aelthalyste a Entrañas, $N. Ella te estará esperando en el Barrio de la Guerra.",
+  },
   [5645] = {
     ["D"] = "$N, el sumo sacerdote Rohan desea tener una audiencia contigo en Forjaz. Apresúrate, pues tu nueva prueba se acerca rápidamente. Aunque desearía poder presenciar los ritos especiales de tu raza, mi lugar está aquí. Que la Luz te acompañe en tu periplo. Rohan estará en la Sala Mística cuando llegues a la ciudad. Te estará esperando.",
     ["O"] = "Habla con el sumo sacerdote Rohan en Forjaz.",
   },
-  [5646] = "_",
+  [5646] = {
+    ["D"] = "Aelthalyste me envía a nuestra gente para que yo la instruya, lo cual es una muestra enorme de respeto. En compensación, yo ahora hago lo mismo por su tribu.$B$BRegresa a Entrañas, $N. Allí, en el Barrio de la Guerra, te estará esperando ella dispuesta a enseñarte más cosas acerca de tu pueblo y de sus costumbres. Ve allí y no te demores.",
+  },
   [5647] = {
     ["D"] = "Tu raza es muy fuerte, $N. Nos enorgullece consideraros aliados. Y cada día que pasa os acercáis más no solo a encontrar vuestro auténtico origen, sino a obtener la certeza de que vais por buen camino en muchas cosas. Eso debe de hacerte sentir exultante.$B$BAcaba de llegar un mensaje de Forjaz. Dice que debes volver y hablar con el sumo sacerdote Rohan en la Sala Mística. Yo no lo haría esperar. Que Elune guíe tus pasos.",
     ["O"] = "Habla con el sumo sacerdote Rohan en Forjaz.",
@@ -7785,25 +7819,66 @@ pfDB["quests"]["esES-tbc"] = {
   [5651] = {
     ["D"] = "Son muchas las lecciones que los Renegados han aprendido a través de la experiencia, cosas que algunas razas no alcanzan a entender. Y aunque nuestro camino transcurre por la oscuridad, descubrirás que muchas cosas dependen tanto de la luz como de la oscuridad. Las lecciones que recibirás te enseñarán a utilizar ambas... y con criterio. Pero presta atención a lo que te digo: nunca olvides que nacimos de la corrupción y fuimos abandonados a nuestra suerte para que nos pudriéramos como vulgar carroña. La oscuridad es nuestro hogar.$B$BBusca al clérigo oscuro Beryl en Rémol cuando estés $Gpreparado:preparada; para seguir aprendiendo.",
   },
-  [5652] = "_",
-  [5654] = "_",
-  [5655] = "_",
-  [5656] = "_",
-  [5657] = "_",
-  [5658] = "_",
+  [5652] = {
+    ["D"] = "I sent here to make sure that you not wander too far from home, $N. They send me to make sure you return home because Ur\'kyo, greatest of our priests, wish to speak to you. You go there. You got to the Valley of Spirits in the orc city and you speak to Ur\'kyo. He wait for you now.",
+    ["O"] = "Speak to Ur\'kyo in Orgrimmar.",
+  },
+  [5654] = {
+    ["D"] = "Es hora de que vayas al encuentro de Ur\'kyo, $N. Está en el Valle de los Espíritus, en la ciudad orca. Ve allí y habla con él. Es hora de que aprendas algo más de nuestras costumbres. Es hora de introducirte en el círculo y convertirte en $Gun auténtico sacerdote:una auténtica sacerdotisa; de nuestra tribu.",
+    ["O"] = "Habla con Ur\'kyo en Orgrimmar.",
+  },
+  [5655] = {
+    ["D"] = "Me han enviado aquí para asegurarme de que no te alejas demasiado de casa, $N. Para asegurarme de que regresas a casa, de hecho, porque Ur\'kyo, el más grande de nuestros sacerdotes, desea hablar contigo. Ve allí. Ve al Valle de los Espíritus de la ciudad orca y habla con Ur\'kyo. Te está esperando.",
+  },
+  [5656] = {
+    ["D"] = "Es siempre una alegría ver sacerdotes de todas las culturas recorriendo el mundo. Y saber que existen poderes que no son arcanos y que están a nuestro alcance. Por eso es un honor dirigirte hacia casa, $N.$B$BUr\'kyo, tu gran sacerdote, ha requerido tu presencia en Orgrimmar. Lo encontrarás en el Valle de los Espíritus.",
+  },
+  [5657] = {
+    ["D"] = "A casa. Vuelve a casa, joven $R.$B$BUr\'kyo, tu líder espiritual, te ruega que vuelvas a él para hablar del sendero que estás recorriendo.$B$BVe al Valle de los Espíritus de la gran ciudad de la Horda, Orgrimmar. Lo encontrarás allí.",
+    ["O"] = "Habla con Ur\'kyo en Orgrimmar.",
+  },
+  [5658] = {
+    ["D"] = "You be far from home, $C. You be needed there, back in your city under the ground. Your mistress, the one you be callin\' Aelthalyste be needin\' you back there. Like my tribe, there things you must learn only from her. Don\'t be stayin\' here too long. You should be headin\' to the War Quarter as fast as a zeppelin can carry you.",
+    ["O"] = "Speak to Aelthalyste in the Undercity.",
+  },
   [5659] = "_",
-  [5660] = "_",
-  [5661] = "_",
-  [5662] = "_",
-  [5663] = "_",
-  [5672] = "_",
-  [5673] = "_",
-  [5674] = "_",
-  [5675] = "_",
-  [5676] = "_",
-  [5677] = "_",
-  [5679] = "_",
-  [5680] = "_",
+  [5660] = {
+    ["D"] = "Estás muy lejos de tu hogar, $C. Seguro que te necesitan allí, en tu ciudad subterránea. Tu maestra, esa que llamas Aelthalyste, necesita que vuelvas. Al igual que a mi tribu, hay cosas que solo ella puede enseñarte. No te quedes aquí mucho tiempo y coge el primer zepelín para ir al Barrio de la Guerra.",
+  },
+  [5661] = {
+    ["D"] = "Estás lejos de tu hogar aquí en Poblado Pezuña de Sangre, $N. Me han enviado aquí para buscar a sacerdotes de mi tribu y enviarlos a hablar con nuestros líderes pero eso no significa que no pueda ayudarte a ti también.$B$BMe han dicho que tu sacerdotisa mayor quiere que todos los Renegados vayan a verla; parece que hay cosas que debes aprender.$B$BVe y reúnete con Aelthalyste en el Barrio de la Guerra de tu ciudad.",
+  },
+  [5662] = {
+    ["D"] = "Mis respetos a ti y a los tuyos, $N. Generalmente solo instruyo a los de mi tribu. Es Aelthalyste quien debe enseñarte esas lecciones en la ciudad un día conocida como Lordaeron.$B$BDeberías volver ante ella si deseas aprender esas habilidades que te hacen especial.$B$BVe al Barrio de la Guerra de Entrañas y busca allí a tu maestra.",
+  },
+  [5672] = {
+    ["D"] = "A wonderful day has come, $N. You\'ve reached the age in which our <priests or priestesses> are trained in abilities only Night elves know. But it is not for me to train you. You must return to the Temple of the Moon and speak to Priestess Alathea as soon as your business here is concluded. She will test you to ensure you\'re prepared, and only then will she teach you Elune\'s Grace.",
+    ["O"] = "Speak to Priestess Alathea in Darnassus.",
+  },
+  [5673] = {
+    ["D"] = "Sabes que puedes acudir a cualquiera de nuestros instructores en cualquier momento, $N, pero hay cosas que no podemos transmitirte. Y una de esas cosas son las enseñanzas de tu diosa Elune. Ella concede habilidades especiales a sus fieles y, si no me equivoco, ha llegado el momento de que vuelvas a tu Templo de la Luna a superar tu prueba.$B$BVuelve allí cuando puedas y habla con la sacerdotisa Alathea.",
+  },
+  [5674] = {
+    ["D"] = "Es un día maravilloso, $N. Has llegado a la edad en la que nuestros $Gsacerdotes:sacerdotisas; son instruidos en habilidades que solo los elfos de la noche conocen. Pero no seré yo quien te instruya. Tan pronto acabes con tus asuntos aquí, debes regresar al Templo de la Luna y hablar con la sacerdotisa Alathea. Ella pondrá a prueba tu preparación y, si queda satisfecha, te instruirá en la Gracia de Elune.",
+  },
+  [5675] = {
+    ["D"] = "El tiempo vuela, $Gmuchacho:muchacha;. Es hora de que regreses a Darnassus. La sacerdotisa Alathea mandó llamarte. Debes regresar para recibir instrucción. Parece que creen que ha llegado el momento de que pases la prueba, como todos los que sirven a la Luz. Deberías ponerte en marcha en cuanto puedas. El mensaje de Alathea decía que te estaría esperando en el Templo de la Luna. Buena suerte.",
+  },
+  [5676] = {
+    ["D"] = "It is time for you to return to Stormwind, young one. Your superiors there have called you back for more training. And although it disturbs me some, your race and mine are allies and I would not betray that.$B$B I do not mean to be so coy with you--my distrust of arcane magics, be they divine inspired or not, is still strong within me.$B$B You will know of what I speak after you return to your Cathedral of Light. Speak to High Priestess Laurena when you arrive.",
+    ["O"] = "Speak to High Priestess Laurena in Stormwind.",
+  },
+  [5677] = {
+    ["D"] = "Por mucho que quisiera mostrarte nuestras enseñanzas especiales de la Luz, no es nuestro lugar. Tu lugar está en Ventormenta, con los tuyos, $N... al menos por ahora. Créeme, no pretendo ofenderte. Cuando vuelvas a ver a la suma sacerdotisa Laurena en la Catedral de la Luz, comprenderás lo que te estoy diciendo. Ha llegado el momento de que tu raza te prepare para el futuro, de que te separes de otros que siguen un camino similar.",
+  },
+  [5679] = {
+    ["D"] = "Aelthalyste show our people great respect by sending them back to me for more training, and now I do the same for her tribe.$B$BYou return to the Undercity, $N. There, in the War Quarter, she be ready to teach you more \'bout your people and their ways. Go there, and do not wait long.",
+    ["O"] = "Speak to Aelthalyste in the Undercity.",
+  },
+  [5680] = {
+    ["D"] = "Like many of our own priests, your own tribe puts you through rites of passage. These rites often teach priests special abilities that are vital to their survival. I sense that time is upon you even as we speak. You must return to the Valley of Spirits in Orgrimmar and speak to Ur\'kyo. What he teaches you might be very important for the future.",
+    ["O"] = "Speak to Ur\'kyo in Ogrimmar.",
+  },
   [5713] = {
     ["D"] = "Viajaba a Lor\'danel con un importante mensaje cuando fui atacada por el fúrbolg Marosh y sus rastreadores. Me envenenaron... apenas puedo permanecer en pie. Puedo preparar un antídoto, pero pasará algún tiempo antes de que esté listo.$B$BMe gustaría que me defendieras hasta que pueda tomar el antídoto. Yo te ayudaré con mi arco como mejor pueda.$B$BSi sobrevivimos, podré llevar mi mensaje a Lor\'danel, mientras tú informas de este incidente a Onaeya, que está en la Atalaya de Maestra.",
     ["T"] = "Un disparo, una baja",
@@ -10689,9 +10764,6 @@ pfDB["quests"]["esES-tbc"] = {
   [8594] = {
     ["T"] = "Manto del Oráculo",
   },
-  [8595] = {
-    ["D"] = "",
-  },
   [8596] = {
     ["T"] = "Borceguíes del Oráculo",
   },
@@ -11023,9 +11095,6 @@ pfDB["quests"]["esES-tbc"] = {
   [8750] = {
     ["T"] = "Camino del protector",
   },
-  [8751] = {
-    ["D"] = "",
-  },
   [8752] = {
     ["T"] = "Camino de la conquista",
   },
@@ -11038,9 +11107,6 @@ pfDB["quests"]["esES-tbc"] = {
   [8755] = {
     ["T"] = "Camino de la conquista",
   },
-  [8756] = {
-    ["D"] = "",
-  },
   [8757] = {
     ["T"] = "Camino del convocador",
   },
@@ -11052,9 +11118,6 @@ pfDB["quests"]["esES-tbc"] = {
   },
   [8760] = {
     ["T"] = "Camino del convocador",
-  },
-  [8761] = {
-    ["D"] = "",
   },
   [8762] = {
     ["D"] = "¡Qué desastre! ¡Han secuestrado a Metzen el Reno!$B$BEs uno de los ocho renos de Padre Invierno y propiedad de Pastos de Bosquehumeante. Creemos que se lo ha llevado el ruin de Grinch el Abominable, que se esconde en las Laderas de Trabalomas. ¡Y precisamente ahora, con la fiesta, andamos ajustados de dinero! Por favor, ¡tráenos a Metzen, derrota a sus captores y tráenoslo de vuelta!",

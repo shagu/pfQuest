@@ -3967,7 +3967,6 @@ pfDB["units"]["esES-tbc"] = {
   [15656] = "Sombra de inquina",
   [15657] = "Ánima oscura",
   [15658] = "Merodeador Carnepútrea",
-  [15661] = "Cría de tiburón",
   [15664] = "Metzen el Reno",
   [15665] = "Reno montado",
   [15666] = "Tanque de batalla qiraji azul",

@@ -347,6 +347,9 @@ pfDB["quests"]["enUS-tbc"] = {
   [2741] = {
     ["O"] = "",
   },
+  [2865] = {
+    ["O"] = "Bring 5 Uncracked Scarab Shells to Tran\'rek in Gadgetzan.",
+  },
   [2941] = {
     ["D"] = "I have studied many subjects in my time, and my latest fascination is with the snapjaw that occupy the beach in the Hinterlands. There\'s one in particular I\'d like to see, a giant snapjaw named Gammerita. I\'d like to go myself, but my research keeps me here. I think a picture of her would be the next best thing.$B$BTake this letter to Curgle Cranklehop in Tanaris. She has created an invention for me that can capture a picture. She called it a \"snapshot\", I think...",
   },
@@ -452,52 +455,46 @@ pfDB["quests"]["enUS-tbc"] = {
   [5627] = {
     ["T"] = "OLD Stars of Elune",
   },
-  [5628] = "_",
-  [5629] = "_",
-  [5630] = "_",
-  [5631] = "_",
-  [5632] = "_",
-  [5633] = "_",
-  [5634] = "_",
-  [5635] = "_",
-  [5636] = "_",
-  [5637] = "_",
-  [5638] = "_",
-  [5639] = "_",
+  [5634] = {
+    ["D"] = "You\'re needed in Stormwind, $N. The High Priestess there, Laurena, says it\'s time for you to prove you\'re worthy of the next level of your training. Don\'t waste too much time finding your way there. You can find her in the Cathedral of Light in the center of the city. Give her my regards, and prove how worthy you are of such a calling. The Light be with you, $N.",
+    ["O"] = "Speak to High Priestess Laurena in Stormwind.",
+  },
   [5640] = "_",
   [5641] = {
     ["T"] = "OLD A Lack of Fear",
   },
-  [5642] = "_",
-  [5643] = "_",
-  [5644] = "_",
   [5645] = {
     ["T"] = "OLD A Lack of Fear",
   },
-  [5646] = "_",
   [5647] = {
     ["D"] = "Your race is so very strong, $N. We are proud to call you allies. And as each day\'s sun sets, you and your kin grow closer to not only finding your true origins, but find great confidence that you are on the right path in so many things. That feeling must make you feel so triumphant.$B$BWord came from Ironforge just recently. It asked that you return there and speak to High Priest Rohan in the Mystic Ward. I would not keep him waiting. May Elune guide your travels.",
     ["T"] = "OLD A Lack of Fear",
   },
-  [5652] = "_",
-  [5654] = "_",
-  [5655] = "_",
-  [5656] = "_",
-  [5657] = "_",
-  [5658] = "_",
+  [5652] = {
+    ["D"] = "I sent here to make sure that you not wander too far from home, $N. They send me to make sure you return home because Ur\'kyo, greatest of our priests, wish to speak to you. You go there. You got to the Valley of Spirits in the orc city and you speak to Ur\'kyo. He wait for you now.",
+    ["O"] = "Speak to Ur\'kyo in Orgrimmar.",
+  },
+  [5658] = {
+    ["D"] = "You be far from home, $C. You be needed there, back in your city under the ground. Your mistress, the one you be callin\' Aelthalyste be needin\' you back there. Like my tribe, there things you must learn only from her. Don\'t be stayin\' here too long. You should be headin\' to the War Quarter as fast as a zeppelin can carry you.",
+    ["O"] = "Speak to Aelthalyste in the Undercity.",
+  },
   [5659] = "_",
-  [5660] = "_",
-  [5661] = "_",
-  [5662] = "_",
-  [5663] = "_",
-  [5672] = "_",
-  [5673] = "_",
-  [5674] = "_",
-  [5675] = "_",
-  [5676] = "_",
-  [5677] = "_",
-  [5679] = "_",
-  [5680] = "_",
+  [5672] = {
+    ["D"] = "A wonderful day has come, $N. You\'ve reached the age in which our <priests or priestesses> are trained in abilities only Night elves know. But it is not for me to train you. You must return to the Temple of the Moon and speak to Priestess Alathea as soon as your business here is concluded. She will test you to ensure you\'re prepared, and only then will she teach you Elune\'s Grace.",
+    ["O"] = "Speak to Priestess Alathea in Darnassus.",
+  },
+  [5676] = {
+    ["D"] = "It is time for you to return to Stormwind, young one. Your superiors there have called you back for more training. And although it disturbs me some, your race and mine are allies and I would not betray that.$B$B I do not mean to be so coy with you--my distrust of arcane magics, be they divine inspired or not, is still strong within me.$B$B You will know of what I speak after you return to your Cathedral of Light. Speak to High Priestess Laurena when you arrive.",
+    ["O"] = "Speak to High Priestess Laurena in Stormwind.",
+  },
+  [5679] = {
+    ["D"] = "Aelthalyste show our people great respect by sending them back to me for more training, and now I do the same for her tribe.$B$BYou return to the Undercity, $N. There, in the War Quarter, she be ready to teach you more \'bout your people and their ways. Go there, and do not wait long.",
+    ["O"] = "Speak to Aelthalyste in the Undercity.",
+  },
+  [5680] = {
+    ["D"] = "Like many of our own priests, your own tribe puts you through rites of passage. These rites often teach priests special abilities that are vital to their survival. I sense that time is upon you even as we speak. You must return to the Valley of Spirits in Orgrimmar and speak to Ur\'kyo. What he teaches you might be very important for the future.",
+    ["O"] = "Speak to Ur\'kyo in Ogrimmar.",
+  },
   [5762] = {
     ["D"] = "I have a package for a new customer of mine, a dwarf named Hemet Nesingwary Jr..  The package took weeks to arrive, and Hemet\'s long gone by now.  He said he was going to Stranglethorn to take his father\'s place and hunt the beasts there, but he left me some money to send his delivery when I could.  $B$BJunior\'s a rich dwarf and it\'s a good idea to keep up relations with the rich ones, yeah?  So... you want to deliver the package for me?$B$BI heard he has a camp in Stranglethorn, north of Grom\'gol.",
     ["O"] = "Take Kravel\'s Crate to Hemet Nesingwary Jr. in Stranglethorn.",
@@ -1365,9 +1362,6 @@ pfDB["quests"]["enUS-tbc"] = {
     ["O"] = "Speak with Matron Arena - the Priest class trainer - inside the Sunspire on Sunstrider Isle.",
     ["T"] = "Priest Training",
   },
-  [8595] = {
-    ["D"] = "",
-  },
   [8618] = {
     ["D"] = "",
     ["O"] = "",
@@ -1375,15 +1369,6 @@ pfDB["quests"]["enUS-tbc"] = {
   },
   [8742] = {
     ["D"] = "A thousand years has passed and just as it was fated, one stands before me. One who shall lead their people to a new age.$B$BThe Old God trembles, $N. Oh yes, it fears your faith. Shatter the prophecy of C\'Thun.$B$BIt knows you come, champion - and with you comes the might of Kalimdor. You have only to let me know when you are prepared and I shall grant you The Scepter of the Shifting Sands.",
-  },
-  [8751] = {
-    ["D"] = "",
-  },
-  [8756] = {
-    ["D"] = "",
-  },
-  [8761] = {
-    ["D"] = "",
   },
   [8762] = {
     ["D"] = "DISASTER has struck!  Metzen the Reindeer has been kidnapped!$B$BMetzen is one of Greatfather Winter\'s eight reindeer - and property of Smokywood Pastures.  We\'ve received not one but TWO ransom letters from groups claiming to have Metzen.  With the holiday season well under way, we\'re strapped to the coin box here!  Please - find Metzen and return him to us!$B$BCheck out the ransom letters for clues, and sprinkle this reindeer dust on him - it will free him from any of his bonds!$B$BPlease, hurry!",

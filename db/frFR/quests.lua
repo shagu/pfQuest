@@ -18110,7 +18110,7 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Le mantelet de l\'Oracle",
   },
   [8595] = {
-    ["D"] = "I see that you\'re no ordinary mortal, $n. Your chances against the Old God, however infinitely small, are greater than ours at this point. After all, while he expects dragons at his doorstep, he is not prepared for someone like you.$b$bJust as Anachronos and Staghelm defeated the Qiraji a thousand years ago through the alliance of mortal and dragon races, we too shall form a pact. Gain the trust of the Bronze Dragonflight and you\'ll gain our trust. Only then we shall make a true champion out of you.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "Champions mortels",
   },
@@ -18880,7 +18880,7 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "La voie du Protecteur",
   },
   [8751] = {
-    ["D"] = "Never have I seen such tenacity! The Bronze Flight grants you one final enchantment. The Timeless One himself has requested it so!$B$BHand me your signet ring so that I may make the necessary adjustments.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "Le Protecteur de Kalimdor",
   },
@@ -18905,7 +18905,7 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "La voie du Conquérant",
   },
   [8756] = {
-    ["D"] = "Never have I seen such tenacity! The Bronze Flight grants you one final enchantment. The Timeless One himself has requested it so!$B$BHand me your signet ring so that I may make the necessary adjustments.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "Le conquérant qiraji",
   },
@@ -18930,7 +18930,7 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "La voie de l\'Invocateur",
   },
   [8761] = {
-    ["D"] = "Never have I seen such tenacity! The Bronze Flight grants you one final enchantment. The Timeless One himself has requested it so!$B$BHand me your signet ring so that I may make the necessary adjustments.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "Le Grand Invocateur",
   },

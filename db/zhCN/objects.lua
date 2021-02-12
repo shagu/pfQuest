@@ -8595,6 +8595,7 @@ pfDB["objects"]["zhCN"] = {
   [181404] = "Doodad_kelthuzad_window_portal03",
   [181405] = "Doodad_kelthuzad_window_portal04",
   [181431] = "火焰节怒火陷阱",
+  [181444] = "克尔苏加德触发器",
   [181446] = "篝火",
   [181448] = "Signaling Gem Aura",
   [181450] = "火盆",

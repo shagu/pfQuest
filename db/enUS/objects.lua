@@ -8595,6 +8595,7 @@ pfDB["objects"]["enUS"] = {
   [181404] = "Doodad_kelthuzad_window_portal03",
   [181405] = "Doodad_kelthuzad_window_portal04",
   [181431] = "Fire Festival Fury Trap",
+  [181444] = "Kel\'Thuzad Trigger",
   [181446] = "Bonfire",
   [181448] = "Signaling Gem Aura",
   [181450] = "Brazier",

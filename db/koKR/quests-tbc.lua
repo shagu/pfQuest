@@ -6177,29 +6177,54 @@ pfDB["quests"]["koKR-tbc"] = {
   [5627] = {
     ["T"] = "OLD Stars of Elune",
   },
-  [5628] = "_",
-  [5629] = "_",
-  [5630] = "_",
-  [5631] = "_",
-  [5632] = "_",
-  [5633] = "_",
-  [5634] = "_",
-  [5635] = "_",
-  [5636] = "_",
-  [5637] = "_",
-  [5638] = "_",
-  [5639] = "_",
+  [5628] = {
+    ["O"] = "다르나서스에 있는 여사제 알라시아와 대화해야 합니다.",
+  },
+  [5629] = {
+    ["O"] = "다르나서스에 있는 여사제 알라시아와 대화해야 합니다.",
+  },
+  [5630] = {
+    ["O"] = "다르나서스에 있는 여사제 알라시아와 대화해야 합니다.",
+  },
+  [5631] = {
+    ["O"] = "다르나서스에 있는 여사제 알라시아와 대화해야 합니다.",
+  },
+  [5632] = {
+    ["O"] = "다르나서스에 있는 여사제 알라시아와 대화해야 합니다.",
+  },
+  [5633] = {
+    ["O"] = "다르나서스에 있는 여사제 알라시아와 대화해야 합니다.",
+  },
+  [5634] = {
+    ["D"] = "You\'re needed in Stormwind, $N. The High Priestess there, Laurena, says it\'s time for you to prove you\'re worthy of the next level of your training. Don\'t waste too much time finding your way there. You can find her in the Cathedral of Light in the center of the city. Give her my regards, and prove how worthy you are of such a calling. The Light be with you, $N.",
+    ["O"] = "Speak to High Priestess Laurena in Stormwind.",
+  },
+  [5635] = {
+    ["D"] = "$G형제:자매;가 우리 고위 사제분들의 관심을 끈 모양입니다. 그분들께서는 $G형제:자매;가 스톰윈드의 빛의 대성당으로 최대한 빨리 와줬으면 하고 계십니다. 그분들께서는 $G형제:자매;가 다음 훈련을 시작할 준비가 됐다고 생각하시는 게 분명합니다. 빛의 대성당에 도착하면 대여사제 로레나님을 찾아가세요. 로레나님께서 $G형제:자매;를 더더욱 발전시켜 줄 것입니다. 행운을 빕니다. 성스러운 빛이 $G형제:자매;와 함께하기를.",
+    ["O"] = "스톰윈드에 있는 대여사제 로레나와 대화해야 합니다.",
+    ["T"] = "Desperate Prayer",
+  },
+  [5636] = {
+    ["O"] = "스톰윈드에 있는 대여사제 로레나와 대화해야 합니다.",
+  },
+  [5637] = {
+    ["O"] = "스톰윈드에 있는 대여사제 로레나와 대화해야 합니다.",
+  },
+  [5638] = {
+    ["O"] = "스톰윈드에 있는 대여사제 로레나와 대화해야 합니다.",
+  },
+  [5639] = {
+    ["D"] = "스톰윈드에서 $G형제:자매;를 찾고 있습니다. 스톰윈드의 대여사제 로레나님께서 말씀하시길 $G형제:자매;가 다음 단계의 훈련을 받을 자격이 있는지 증명할 시간이 됐다고 하셨습니다. 지체하지 말고 스톰윈드로 가십시오. 도시 가운데에 있는 빛의 대성당에 가면 대여사제님을 만날 수 있을 겁니다. 대여사제님께 내 안부를 전해주고 $G형제:자매;의 실력을 증명해 보이시기 바랍니다. 성스러운 빛이 $G형제:자매;와 함께하기를 빌겠습니다.",
+    ["O"] = "스톰윈드에 있는 대여사제 로레나와 대화해야 합니다.",
+    ["T"] = "Desperate Prayer",
+  },
   [5640] = "_",
   [5641] = {
     ["T"] = "OLD A Lack of Fear",
   },
-  [5642] = "_",
-  [5643] = "_",
-  [5644] = "_",
   [5645] = {
     ["T"] = "OLD A Lack of Fear",
   },
-  [5646] = "_",
   [5647] = {
     ["D"] = "Your race is so very strong, $N. We are proud to call you allies. And as each day\'s sun sets, you and your kin grow closer to not only finding your true origins, but find great confidence that you are on the right path in so many things. That feeling must make you feel so triumphant.$B$BWord came from Ironforge just recently. It asked that you return there and speak to High Priest Rohan in the Mystic Ward. I would not keep him waiting. May Elune guide your travels.",
     ["T"] = "OLD A Lack of Fear",
@@ -6208,25 +6233,47 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "포세이큰은 경험을 통해서 많은 것들을 배웠네. 다른 종족들은 이제 겨우 연구하기 시작하는 것들 말이야. 비록 우리의 길이 어둠이라고 하지만 많은 것들이 빛과 어둠이 함께 있어야만 한다는 것을 알게 될 걸세. 자네는 빛과 어둠을 사용하는 법을 모두 배우게 될 거야. 물론 신중하게 사용해야지. 내 말을 잘 듣고 잊지 말게나. 우리는 오염된 곳에서 창조되어서 썩은 고기처럼 부패한 곳에 버려졌네. 어둠은 우리의 고향일세.$B$B더 많은 걸 배울 준비가 되면 브릴에 있는 어둠의 사제 베릴을 찾아가게나.",
     ["O"] = "티리스팔 숲에 있는 어둠의 사제 베릴과 대화해야 합니다.",
   },
-  [5652] = "_",
-  [5654] = "_",
-  [5655] = "_",
-  [5656] = "_",
-  [5657] = "_",
-  [5658] = "_",
+  [5652] = {
+    ["D"] = "I sent here to make sure that you not wander too far from home, $N. They send me to make sure you return home because Ur\'kyo, greatest of our priests, wish to speak to you. You go there. You got to the Valley of Spirits in the orc city and you speak to Ur\'kyo. He wait for you now.",
+    ["O"] = "Speak to Ur\'kyo in Orgrimmar.",
+  },
+  [5658] = {
+    ["D"] = "You be far from home, $C. You be needed there, back in your city under the ground. Your mistress, the one you be callin\' Aelthalyste be needin\' you back there. Like my tribe, there things you must learn only from her. Don\'t be stayin\' here too long. You should be headin\' to the War Quarter as fast as a zeppelin can carry you.",
+    ["O"] = "Speak to Aelthalyste in the Undercity.",
+  },
   [5659] = "_",
-  [5660] = "_",
-  [5661] = "_",
-  [5662] = "_",
-  [5663] = "_",
-  [5672] = "_",
-  [5673] = "_",
-  [5674] = "_",
-  [5675] = "_",
-  [5676] = "_",
-  [5677] = "_",
-  [5679] = "_",
-  [5680] = "_",
+  [5672] = {
+    ["D"] = "A wonderful day has come, $N. You\'ve reached the age in which our <priests or priestesses> are trained in abilities only Night elves know. But it is not for me to train you. You must return to the Temple of the Moon and speak to Priestess Alathea as soon as your business here is concluded. She will test you to ensure you\'re prepared, and only then will she teach you Elune\'s Grace.",
+    ["O"] = "Speak to Priestess Alathea in Darnassus.",
+  },
+  [5673] = {
+    ["D"] = "당신도 알고 있겠지만, 언제든지 이곳에 오면 우리 사제들이 가르침을 줄 것입니다. 하지만 우리가 전수할 수 없는 게 있다면, 바로 여신 엘룬의 가르침입니다. 엘룬은 믿음이 있는 자에게는 특별한 능력을 준다고 합니다. 이제 당신은 달의 신전으로 돌아가서 시험을 치를 시간인 것 같군요.$B$B시간이 될 때 신전으로 돌아가서 여사제 알라시아와 이야기를 나눠 보십시오.",
+    ["O"] = "다르나서스에 있는 여사제 알라시아와 대화해야 합니다.",
+    ["T"] = "Elune\'s Grace",
+  },
+  [5674] = {
+    ["O"] = "다르나서스에 있는 여사제 알라시아와 대화해야 합니다.",
+  },
+  [5675] = {
+    ["D"] = "시간이 됐습니다. 다르나서스로 돌아갈 시간이... 여사제 알라시아께서 훈련을 위해 돌아오라는 전갈을 당신 앞으로 보내셨습니다. 빛을 섬기는 모든 이들처럼 당신도 이제 시험을 치를 준비가 됐다고 생각하시는 모양입니다. 준비가 되는 대로 출발하십시오. 알라시아께서는 달의 신전에서 기다리고 계실 겁니다. 행운을 빌어요.",
+    ["O"] = "다르나서스에 있는 여사제 알라시아와 대화해야 합니다.",
+    ["T"] = "Elune\'s Grace",
+  },
+  [5676] = {
+    ["D"] = "It is time for you to return to Stormwind, young one. Your superiors there have called you back for more training. And although it disturbs me some, your race and mine are allies and I would not betray that.$B$B I do not mean to be so coy with you--my distrust of arcane magics, be they divine inspired or not, is still strong within me.$B$B You will know of what I speak after you return to your Cathedral of Light. Speak to High Priestess Laurena when you arrive.",
+    ["O"] = "Speak to High Priestess Laurena in Stormwind.",
+  },
+  [5677] = {
+    ["O"] = "스톰윈드에 있는 대여사제 로레나와 대화해야 합니다.",
+  },
+  [5679] = {
+    ["D"] = "Aelthalyste show our people great respect by sending them back to me for more training, and now I do the same for her tribe.$B$BYou return to the Undercity, $N. There, in the War Quarter, she be ready to teach you more \'bout your people and their ways. Go there, and do not wait long.",
+    ["O"] = "Speak to Aelthalyste in the Undercity.",
+  },
+  [5680] = {
+    ["D"] = "Like many of our own priests, your own tribe puts you through rites of passage. These rites often teach priests special abilities that are vital to their survival. I sense that time is upon you even as we speak. You must return to the Valley of Spirits in Orgrimmar and speak to Ur\'kyo. What he teaches you might be very important for the future.",
+    ["O"] = "Speak to Ur\'kyo in Ogrimmar.",
+  },
   [5713] = {
     ["O"] = "파수꾼 아이나샤를 보호한 다음 잿빛 골짜기의 마에스트라 주둔지에 있는 오나에야와 대화해야 합니다.",
   },
@@ -8970,9 +9017,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "필멸의 종족들이 착용하는 화려한 어깨갑옷이 용의 날개를 본뜨려고 한 시도에서 유래했다는 소문이 있더군요.$B$B퀴라지 최고 지휘관들이 차고 있는 팔보호구를 가지고 오세요. 그럼 네파리안의 날개보다도 무시무시한 견갑으로 만들어 드릴게요!",
     ["O"] = "안퀴라즈에 있는 안도르고스에게 지휘의 퀴라지 팔보호구, 환생의 우상 2개, 은 스카라베 5개, 상아 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
   },
-  [8595] = {
-    ["D"] = "",
-  },
   [8596] = {
     ["D"] = "퀴라지 마법은 고대로부터 전해오는 강력한 마법입니다. 그러한 마법이 걸린 퀴라지 무기 중에는 용조차 놀라게 할 만큼 강력한 것도 있지요.$B$B저에게 지휘의 퀴라지 팔보호구와 몇 가지 다른 재료를 가져다주시면 강력한 장화 한 켤레를 만들어 드리겠습니다.$B$B적과 싸울 때 아주 유용할 것입니다.",
     ["O"] = "안퀴라즈에 있는 칸드로스트라즈에게 지휘의 퀴라지 팔보호구, 죽음의 우상 2개, 청동 스카라베 5개, 황금 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판도 얻어야 합니다.",
@@ -9316,20 +9360,11 @@ pfDB["quests"]["koKR-tbc"] = {
   [8746] = {
     ["T"] = "순록 멧젠",
   },
-  [8751] = {
-    ["D"] = "",
-  },
-  [8756] = {
-    ["D"] = "",
-  },
   [8759] = {
     ["T"] = "기원사의 길",
   },
   [8760] = {
     ["T"] = "기원사의 길",
-  },
-  [8761] = {
-    ["D"] = "",
   },
   [8762] = {
     ["D"] = "DISASTER has struck!  Metzen the Reindeer has been kidnapped!$B$BMetzen is one of Greatfather Winter\'s eight reindeer - and property of Smokywood Pastures.  We\'ve received not one but TWO ransom letters from groups claiming to have Metzen.  With the holiday season well under way, we\'re strapped to the coin box here!  Please - find Metzen and return him to us!$B$BCheck out the ransom letters for clues, and sprinkle this reindeer dust on him - it will free him from any of his bonds!$B$BPlease, hurry!",

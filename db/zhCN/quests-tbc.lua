@@ -2549,56 +2549,140 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "",
     ["T"] = "OLD Stars of Elune",
   },
-  [5628] = "_",
-  [5629] = "_",
-  [5630] = "_",
-  [5631] = "_",
-  [5632] = "_",
-  [5633] = "_",
-  [5634] = "_",
-  [5635] = "_",
-  [5636] = "_",
-  [5637] = "_",
-  [5638] = "_",
-  [5639] = "_",
+  [5628] = {
+    ["T"] = "Returning Home",
+  },
+  [5629] = {
+    ["T"] = "Returning Home",
+  },
+  [5630] = {
+    ["T"] = "Returning Home",
+  },
+  [5631] = {
+    ["T"] = "Returning Home",
+  },
+  [5632] = {
+    ["T"] = "Returning Home",
+  },
+  [5633] = {
+    ["T"] = "Returning Home",
+  },
+  [5634] = {
+    ["D"] = "You\'re needed in Stormwind, $N. The High Priestess there, Laurena, says it\'s time for you to prove you\'re worthy of the next level of your training. Don\'t waste too much time finding your way there. You can find her in the Cathedral of Light in the center of the city. Give her my regards, and prove how worthy you are of such a calling. The Light be with you, $N.",
+    ["O"] = "Speak to High Priestess Laurena in Stormwind.",
+    ["T"] = "Desperate Prayer",
+  },
+  [5635] = {
+    ["T"] = "Desperate Prayer",
+  },
+  [5636] = {
+    ["D"] = "艾露恩祝福你，好心的$R。我愿圣光与你同在，愿它一直保护着你。$B$B你们的一位牧师不久之前来找过你，他说要你到光明大教堂去找高阶牧师劳瑞娜，希望你可以尽快动身。我不会在这里浪费你宝贵的时间——你的人民需要你。",
+    ["T"] = "Desperate Prayer",
+  },
+  [5637] = {
+    ["T"] = "Desperate Prayer",
+  },
+  [5638] = {
+    ["D"] = "仅仅刚才, 一位牧师正在寻找你, $R. 他说如果我见到你, 我应该直接带你去光明大教堂. 他说这很重要, 但是我并没想到会遇到你.他显得很兴奋... 好像这是一件好事. 如果我是你，我将不会再浪费时间在这里.$B$B祝你好远, $R.",
+    ["T"] = "Desperate Prayer",
+  },
+  [5639] = {
+    ["T"] = "Desperate Prayer",
+  },
   [5640] = "_",
   [5641] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "OLD A Lack of Fear",
   },
-  [5642] = "_",
-  [5643] = "_",
-  [5644] = "_",
+  [5642] = {
+    ["T"] = "Shadowguard",
+  },
+  [5643] = {
+    ["T"] = "Shadowguard",
+  },
+  [5644] = {
+    ["T"] = "Devouring Plague",
+  },
   [5645] = {
     ["D"] = "$N, 高阶牧师洛汉希望能在铁炉堡与你会面。快点去吧，我强大的朋友，你的下一次试炼即将到来。虽然我希望能亲眼看着你通过你们种族的特殊仪式，但是我的职责让我必须留在这里。愿圣光照耀你前行的道路。洛汉应该是在秘法区里等你。",
     ["T"] = "OLD A Lack of Fear",
   },
-  [5646] = "_",
+  [5646] = {
+    ["T"] = "Devouring Plague",
+  },
   [5647] = {
     ["D"] = "你的种族非常强大，魔兽资料库网友。我们很高兴能称你们为盟友。你和你们的种族每一天都向发现自己起源的目标迈进一步，而且在正确的道路上更加坚定地前行。这种成功的感觉一定非常不错。$B最近从铁炉堡传来消息说，秘法区的高阶牧师洛汉要你回到那里去找他。如果我是你的话，我可是不会让他久等的。愿伊露恩指引你的旅程。",
     ["O"] = "与铁炉堡的高阶牧师洛汉谈一谈。",
     ["T"] = "OLD A Lack of Fear",
   },
-  [5652] = "_",
-  [5654] = "_",
-  [5655] = "_",
-  [5656] = "_",
-  [5657] = "_",
-  [5658] = "_",
+  [5652] = {
+    ["D"] = "I sent here to make sure that you not wander too far from home, $N. They send me to make sure you return home because Ur\'kyo, greatest of our priests, wish to speak to you. You go there. You got to the Valley of Spirits in the orc city and you speak to Ur\'kyo. He wait for you now.",
+    ["O"] = "Speak to Ur\'kyo in Orgrimmar.",
+    ["T"] = "Hex of Weakness",
+  },
+  [5654] = {
+    ["T"] = "Hex of Weakness",
+  },
+  [5655] = {
+    ["T"] = "Hex of Weakness",
+  },
+  [5656] = {
+    ["T"] = "Hex of Weakness",
+  },
+  [5657] = {
+    ["T"] = "Hex of Weakness",
+  },
+  [5658] = {
+    ["D"] = "You be far from home, $C. You be needed there, back in your city under the ground. Your mistress, the one you be callin\' Aelthalyste be needin\' you back there. Like my tribe, there things you must learn only from her. Don\'t be stayin\' here too long. You should be headin\' to the War Quarter as fast as a zeppelin can carry you.",
+    ["O"] = "Speak to Aelthalyste in the Undercity.",
+    ["T"] = "Touch of Weakness",
+  },
   [5659] = "_",
-  [5660] = "_",
-  [5661] = "_",
-  [5662] = "_",
-  [5663] = "_",
-  [5672] = "_",
-  [5673] = "_",
-  [5674] = "_",
-  [5675] = "_",
-  [5676] = "_",
-  [5677] = "_",
-  [5679] = "_",
-  [5680] = "_",
+  [5660] = {
+    ["T"] = "Touch of Weakness",
+  },
+  [5661] = {
+    ["T"] = "Touch of Weakness",
+  },
+  [5662] = {
+    ["T"] = "Touch of Weakness",
+  },
+  [5663] = {
+    ["T"] = "Touch of Weakness",
+  },
+  [5672] = {
+    ["D"] = "A wonderful day has come, $N. You\'ve reached the age in which our <priests or priestesses> are trained in abilities only Night elves know. But it is not for me to train you. You must return to the Temple of the Moon and speak to Priestess Alathea as soon as your business here is concluded. She will test you to ensure you\'re prepared, and only then will she teach you Elune\'s Grace.",
+    ["O"] = "Speak to Priestess Alathea in Darnassus.",
+    ["T"] = "Elune\'s Grace",
+  },
+  [5673] = {
+    ["T"] = "Elune\'s Grace",
+  },
+  [5674] = {
+    ["T"] = "Elune\'s Grace",
+  },
+  [5675] = {
+    ["T"] = "Elune\'s Grace",
+  },
+  [5676] = {
+    ["D"] = "It is time for you to return to Stormwind, young one. Your superiors there have called you back for more training. And although it disturbs me some, your race and mine are allies and I would not betray that.$B$B I do not mean to be so coy with you--my distrust of arcane magics, be they divine inspired or not, is still strong within me.$B$B You will know of what I speak after you return to your Cathedral of Light. Speak to High Priestess Laurena when you arrive.",
+    ["O"] = "Speak to High Priestess Laurena in Stormwind.",
+    ["T"] = "Arcane Feedback",
+  },
+  [5677] = {
+    ["T"] = "Arcane Feedback",
+  },
+  [5679] = {
+    ["D"] = "Aelthalyste show our people great respect by sending them back to me for more training, and now I do the same for her tribe.$B$BYou return to the Undercity, $N. There, in the War Quarter, she be ready to teach you more \'bout your people and their ways. Go there, and do not wait long.",
+    ["O"] = "Speak to Aelthalyste in the Undercity.",
+    ["T"] = "Devouring Plague",
+  },
+  [5680] = {
+    ["D"] = "Like many of our own priests, your own tribe puts you through rites of passage. These rites often teach priests special abilities that are vital to their survival. I sense that time is upon you even as we speak. You must return to the Valley of Spirits in Orgrimmar and speak to Ur\'kyo. What he teaches you might be very important for the future.",
+    ["O"] = "Speak to Ur\'kyo in Ogrimmar.",
+    ["T"] = "Shadowguard",
+  },
   [5730] = {
     ["D"] = "你是我的得力助手！做好准备，$C。不久之后我就会召唤你。$B$B我花在灼刃氏族上的时间看来是白费了，但是这不意味着暗影议会的其它计划也会受到影响。我要尽可能地消除在怒焰裂谷的损失。同时，我会让我在贫瘠之地和灰谷的部下继续执行新的计划。尽快回到我这里来。",
   },
@@ -4093,9 +4177,6 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "我很高兴你决定和我谈谈这个，$C。部落方面已经着手为即将开始的安其拉之战做准备了，你我都要做好自己该做的事情。我被指派来收集大量的厚皮，我需要你帮忙去收集这些东西。这项工作是你的荣耀，也是表示你对部落的忠诚的好机会。你愿意帮忙吗？",
     ["O"] = "带10张厚皮给奥格玛精神谷的乌玛拉中士。",
   },
-  [8595] = {
-    ["D"] = "",
-  },
   [8600] = {
     ["D"] = "我发现刀子握在掌心的适合度远比刀口的锋利重要。即使是最钝的刀剑也能在危急时发挥作用。但是你和我没有这种问题，毕竟我们总会让刀锋维持在最利的状态。$B$B对吧?嗯，不重要。我有个任务要给你，$C。为了部落，还有你对安其拉之战该尽的职责，我要你去收集很多硬甲皮给我。你能做到吗?",
   },
@@ -4228,15 +4309,6 @@ pfDB["quests"]["zhCN-tbc"] = {
   },
   [8745] = {
     ["T"] = "永恒之王的财宝",
-  },
-  [8751] = {
-    ["D"] = "",
-  },
-  [8756] = {
-    ["D"] = "",
-  },
-  [8761] = {
-    ["D"] = "",
   },
   [8764] = {
     ["D"] = "",

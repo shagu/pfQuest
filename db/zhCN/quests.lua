@@ -18110,7 +18110,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "神谕者的衬肩",
   },
   [8595] = {
-    ["D"] = "I see that you\'re no ordinary mortal, $n. Your chances against the Old God, however infinitely small, are greater than ours at this point. After all, while he expects dragons at his doorstep, he is not prepared for someone like you.$b$bJust as Anachronos and Staghelm defeated the Qiraji a thousand years ago through the alliance of mortal and dragon races, we too shall form a pact. Gain the trust of the Bronze Dragonflight and you\'ll gain our trust. Only then we shall make a true champion out of you.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "凡人中的勇士",
   },
@@ -18880,7 +18880,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "保护者之路",
   },
   [8751] = {
-    ["D"] = "Never have I seen such tenacity! The Bronze Flight grants you one final enchantment. The Timeless One himself has requested it so!$B$BHand me your signet ring so that I may make the necessary adjustments.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "卡利姆多的保护者",
   },
@@ -18905,7 +18905,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "征服者之路",
   },
   [8756] = {
-    ["D"] = "Never have I seen such tenacity! The Bronze Flight grants you one final enchantment. The Timeless One himself has requested it so!$B$BHand me your signet ring so that I may make the necessary adjustments.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "其拉虫人的征服者",
   },
@@ -18930,7 +18930,7 @@ pfDB["quests"]["zhCN"] = {
     ["T"] = "祈求者之路",
   },
   [8761] = {
-    ["D"] = "Never have I seen such tenacity! The Bronze Flight grants you one final enchantment. The Timeless One himself has requested it so!$B$BHand me your signet ring so that I may make the necessary adjustments.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "虔诚的祈求者",
   },

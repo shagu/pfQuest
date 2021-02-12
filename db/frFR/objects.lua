@@ -8595,6 +8595,7 @@ pfDB["objects"]["frFR"] = {
   [181404] = "Doodad_kelthuzad_window_portal03",
   [181405] = "Doodad_kelthuzad_window_portal04",
   [181431] = "Piège, Fureur de la fête du Feu",
+  [181444] = "Déclencheur Kel\'Thuzad",
   [181446] = "Feu de joie",
   [181448] = "Aura de la gemme de signalisation",
   [181450] = "Brasero",
