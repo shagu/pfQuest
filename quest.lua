@@ -158,7 +158,14 @@ pfQuest:SetScript("OnUpdate", function()
       end
 
       if pfQuest_config["trackingmethod"] ~= 4 then
+        -- delete nodes by title
         pfMap:DeleteNode("PFQUEST", entry[1])
+
+        -- also delete nodes by quest ids for servers with different names
+        if entry[2] and pfDB["quests"]["loc"][entry[2]] and pfDB["quests"]["loc"][entry[2]].T then
+          pfMap:DeleteNode("PFQUEST", pfDB["quests"]["loc"][entry[2]].T)
+        end
+
         pfMap:UpdateNodes()
       end
 
@@ -174,7 +181,13 @@ pfQuest:SetScript("OnUpdate", function()
       if pfQuest_config["trackingmethod"] ~= 4 and
         (pfQuest_config["trackingmethod"] ~= 2 or IsQuestWatched(entry[3]))
       then
+        -- delete node by title
         pfMap:DeleteNode("PFQUEST", entry[1])
+
+        -- delete nodes by quest ids for servers with different names
+        if entry[2] and pfDB["quests"]["loc"][entry[2]] and pfDB["quests"]["loc"][entry[2]].T then
+          pfMap:DeleteNode("PFQUEST", pfDB["quests"]["loc"][entry[2]].T)
+        end
 
         -- skip quest objective detection on manual mode
         if pfQuest_config["trackingmethod"] ~= 3 then
