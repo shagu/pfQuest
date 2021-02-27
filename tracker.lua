@@ -64,7 +64,7 @@ tracker:SetClampedToScreen(true)
 tracker:RegisterEvent("PLAYER_ENTERING_WORLD")
 tracker:SetScript("OnEvent", function()
   -- update font sizes according to config
-  fontsize = tonumber(pfQuest_config["trackerfontsize"])
+  fontsize = pfQuest_config["trackerfontsize"]
   entryheight = ceil(fontsize*1.6)
 
   -- restore tracker state
@@ -223,7 +223,7 @@ function tracker.ButtonLeave()
 end
 
 function tracker.ButtonUpdate()
-  local alpha = tonumber((pfQuest_config["trackeralpha"] or .2)) or .2
+  local alpha = pfQuest_config["trackeralpha"]/100 or .2
 
   if not this.alpha or this.alpha ~= alpha then
     this.bg:SetTexture(0,0,0,alpha)
