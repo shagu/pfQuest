@@ -195,7 +195,7 @@ pfDatabase.itemlist:SetScript("OnUpdate", function()
   local previous = this.db
   this.db = {}
 
-  -- fill new item db
+  -- fill new item db with bag items
   for bag = 4, 0, -1 do
     for slot = 1, GetContainerNumSlots(bag) do
       local link = GetContainerItemLink(bag,slot)
@@ -204,6 +204,15 @@ pfDatabase.itemlist:SetScript("OnUpdate", function()
         local item = GetItemInfo(parse)
         if item then this.db[item] = true end
       end
+    end
+  end
+
+  -- fill new item db with equipped items
+  for i=1,19 do
+    if GetInventoryItemLink("player", i) then
+      local _, _, link = string.find(GetInventoryItemLink("player", i), "(item:%d+:%d+:%d+:%d+)");
+      local item = GetItemInfo(link)
+      if item then this.db[item] = true end
     end
   end
 
