@@ -1,0 +1,172 @@
+on:
+  push:
+    tags:
+    - '*'
+
+name: Upload Release Assets
+
+jobs:
+  build:
+    name: Upload Release Assets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build project
+        run: |
+          make
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
+          draft: false
+          prerelease: false
+      - name: Upload pfQuest-deDE-tbc.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-deDE-tbc.zip
+          asset_name: pfQuest-deDE-tbc.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-deDE.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-deDE.zip
+          asset_name: pfQuest-deDE.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-enUS-tbc.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-enUS-tbc.zip
+          asset_name: pfQuest-enUS-tbc.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-enUS.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-enUS.zip
+          asset_name: pfQuest-enUS.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-esES-tbc.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-esES-tbc.zip
+          asset_name: pfQuest-esES-tbc.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-esES.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-esES.zip
+          asset_name: pfQuest-esES.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-frFR-tbc.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-frFR-tbc.zip
+          asset_name: pfQuest-frFR-tbc.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-frFR.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-frFR.zip
+          asset_name: pfQuest-frFR.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-full-tbc.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-full-tbc.zip
+          asset_name: pfQuest-full-tbc.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-full.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-full.zip
+          asset_name: pfQuest-full.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-koKR-tbc.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-koKR-tbc.zip
+          asset_name: pfQuest-koKR-tbc.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-koKR.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-koKR.zip
+          asset_name: pfQuest-koKR.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-ruRU-tbc.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-ruRU-tbc.zip
+          asset_name: pfQuest-ruRU-tbc.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-ruRU.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-ruRU.zip
+          asset_name: pfQuest-ruRU.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-zhCN-tbc.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-zhCN-tbc.zip
+          asset_name: pfQuest-zhCN-tbc.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-zhCN.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-zhCN.zip
+          asset_name: pfQuest-zhCN.zip
+          asset_content_type: application/zip
+
