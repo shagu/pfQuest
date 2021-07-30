@@ -3885,7 +3885,6 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Ihr habt Dorns Tests bestanden und wollt jetzt Eure nächste Prüfung absolvieren. Sehr gut. Bisher sind alle Eure Herausforderungen kindisch gewesen. Es ist leicht, Euren Körper zu testen - bei Eurem Verstand sieht das schon anders aus.$B$BIch werde es mit einfachen Worten erklären: sucht das Buch, das ich Euch nenne, lest es und beantwortet meine Fragen nach seinem Inhalt.$B$BWas für ein Buch, werdet Ihr fragen? Das \'Vermächtnis der Aspekte\'. Man findet es in den Tiefen des Grabhügels von Dor\'Danil im südlichen Eschental, wo es von den toten Druiden und deren Tötern bewacht wird.",
     ["O"] = "Sucht das \'Vermächtnis der Aspekte\' und bringt es zu Braug Dämmergeist in der Nähe des Eingangs zum Steinkrallenpfad im Steinkrallengebirge zurück.",
   },
-  [1156] = "_",
   [1159] = {
     ["D"] = "Gut gemacht, $N. Ihr habt den ersten Teil des Tests der Lehren bestanden, aber es bleibt noch eine Frage zu beantworten. Aber es ist nicht an mir, diese Frage zu stellen.$B$BBesucht Parqual Fintallas in Lordaeron. Er war ein bedeutender Historiker der Menschen, bevor die Seuche ihn erwischte. Jetzt sucht er immer noch Erleuchtung, freilich einer ganz anderen Art.$B$BEr wird eine weitere Forderung an Euch stellen, bevor er Euch etwas fragt, aber Ihr habt Euch bisher meisterhaft geschlagen - ich bin sicher, Ihr werdet dieses Hindernis überwinden.",
     ["O"] = "Sucht Parqual Fintallas in Unterstadt.",
@@ -9857,11 +9856,6 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [7789] = {
     ["D"] = "Die Wildnis des Eschentals wird sich der Macht der Horde ergeben, $R. Nichts, was die Silberschwingen tun oder sagen, wird uns daran hindern, unseren territorialen Herrschaftsanspruch durchzusetzen. Kalimdor gehört der Horde. Wie können sie es wagen, uns davon abzuhalten, das zu ernten, was rechtens unser ist!$B$BLasst Eure Brust vor Stolz erbeben, während Ihr ihre schwachen Versuche, unseren Fortschritt zu behindern, zunichtemacht. Zerstört die Schildwachen der Silberschwingen und erlangt ein Ehrenabzeichen des Kriegshymnenklans. Kehrt zu mir zurück, $N, wenn Ihr im Besitz eines Ehrenabzeichens seid, und ich werde Euch belohnen.",
-  },
-  [7792] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Spendet Wolle",
   },
   [7797] = {
     ["D"] = "",

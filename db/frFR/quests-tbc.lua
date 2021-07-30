@@ -4360,7 +4360,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Vous avez réussi les épreuves de Dorn et vous cherchez à présent le défi suivant. Ce que vous avez réussi, un enfant aurait pu le réussir. Il est facile de mettre son corps à l\'épreuve. Pour l\'esprit, c\'est tout autre chose.$B$BJe vais m\'expliquer simplement : trouvez le livre dont je vais vous parler, étudiez-le et répondez à mes questions sur son contenu.$B$BQuel livre ? « L\'Héritage des aspects ». On peut le trouver au pied de Dor\'danil au sud d\'Orneval, protégé par les druides morts et leurs assassins.",
     ["O"] = "Trouver l\'Héritage des Aspects et l\'apporter à Braug Esprit-troublé, à côté de l\'entrée de la Perce des Serres, dans les Serres-Rocheuses.",
   },
-  [1156] = "_",
   [1159] = {
     ["D"] = "Bien joué, $N. Vous avez passé la première partie de l\'Épreuve de la Connaissance, mais il reste une question à laquelle vous devez répondre. Cette question, je ne puis la poser.$B$BCherchez Parqual Fintallas dans la cité de Lordaeron. C\'était un grand historien parmi les humains, avant d\'être emporté par la Peste. Il continue sa quête du savoir, mais un savoir d\'une nature différente.$B$BIl exigera de vous une certaine tâche avant d\'accepter de vous tester, mais vous avez superbement mené à bien les épreuves jusqu\'ici... Je suis sûr que vous surmonterez cet obstacle.",
     ["O"] = "Trouver Parqual Fintallas à Fossoyeuse.",
@@ -11643,8 +11642,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "La sauvagerie de la forêt d\'Orneval succombera devant la puissance de la Horde, $R. Aile-argent ne pourra rien dire ou faire pour arrêter nos obligations souveraines. Kalimdor appartient à la Horde. Comment osent-ils tenter de nous empêcher de récolter ce qui nous appartient de droit !$B$BQue la fierté gonfle votre poitrine lorsque vous repousserez leurs futiles efforts pour ralentir notre progression. Détruisez les Sentinelles d\'Aile-argent, et vous gagnerez une marque d\'honneur Chanteguerre. Revenez me voir avec l\'une de ces marques, $N, et je vous récompenserai.",
   },
   [7792] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "Un don de laine",
   },
   [7797] = {

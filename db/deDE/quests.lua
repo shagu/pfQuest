@@ -5464,11 +5464,6 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Sucht das \'Vermächtnis der Aspekte\' und bringt es zu Braug Dimspirit in der Nähe des Eingangs zum Steinkrallenpfad im Steinkrallengebirge zurück.",
     ["T"] = "Test der Lehre",
   },
-  [1156] = {
-    ["D"] = "x",
-    ["O"] = "x",
-    ["T"] = "<NYI> <TXT> speak to alchemist pestlezugg",
-  },
   [1159] = {
     ["D"] = "Gut gemacht, $n. Ihr habt den ersten Teil des Tests der Lehren bestanden, aber es bleibt noch eine Frage zu beantworten. Aber es ist nicht an mir, diese Frage zu stellen.$B$BBesucht Parqual Fintallas in Lordaeron. Er war ein bedeutender Historiker der Menschen, bevor die Seuche ihn erwischte. Jetzt sucht er immer noch Erleuchtung, freilich einer ganz anderen Art.$B$BEr wird eine weitere Forderung an Euch stellen, bevor er Euch etwas fragt, aber Ihr habt Euch bisher meisterhaft geschlagen - ich bin sicher, Ihr werdet dieses Hindernis überwinden.",
     ["O"] = "Sucht Parqual Fintallas in Undercity.",
@@ -15400,6 +15395,11 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Bezwingt die Eindringlinge der Silberschwingen",
   },
   [7791] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Spendet Wolle",
+  },
+  [7792] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Spendet Wolle",

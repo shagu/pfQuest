@@ -5464,11 +5464,6 @@ pfDB["quests"]["esES"] = {
     ["O"] = "Encuentra el Legado de los Aspectos y devuélveselo a Braug Espiritoscuro que se encuentra cerca de la entrada de El Paso del Espolón en Sierra Espolón.",
     ["T"] = "Prueba de conocimiento",
   },
-  [1156] = {
-    ["D"] = "x",
-    ["O"] = "x",
-    ["T"] = "<NYI> <TXT> speak to alchemist pestlezugg",
-  },
   [1159] = {
     ["D"] = "Bien hecho, $N. Has superado la primera parte de la prueba de conocimiento pero aún hay otra pregunta que debes responder. Sin embargo, no seré yo quien te la haga.$B$BBusca a Parqual Fintallas en la ciudad de Lordaeron. Él era un gran historiador al servicio de los humanos antes de que la Plaga lo sorprendiera. Ahora sigue persiguiendo el conocimiento, pero de un modo distinto.$B$BAntes de formularte ninguna pregunta, te asignará otro encargo. Lo has hecho tan bien hasta el momento que no tengo ninguna duda de que superarás este obstáculo sin problemas.",
     ["O"] = "Encuentra a Parqual Fintallas en Entrañas.",
@@ -15400,6 +15395,11 @@ pfDB["quests"]["esES"] = {
     ["T"] = "Acaba con los usurpadores Ala de Plata",
   },
   [7791] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Un donativo de lana",
+  },
+  [7792] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Un donativo de lana",

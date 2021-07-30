@@ -3470,7 +3470,6 @@ pfDB["quests"]["esES-tbc"] = {
   [1154] = {
     ["O"] = "Encuentra el Legado de los Aspectos y devuélveselo a Braug Espíritu Tenue que se encuentra cerca de la entrada de El Paso del Espolón en Sierra Espolón.",
   },
-  [1156] = "_",
   [1159] = {
     ["D"] = "Bien hecho, $N. Has superado la primera parte de la prueba de conocimiento pero aún hay otra pregunta que debes responder. Sin embargo, no seré yo quien te la haga.$B$BBusca a Parqual Fintallas en Entrañas de Lordaeron. Él era un gran historiador al servicio de los humanos antes de que la Plaga lo sorprendiera. Ahora sigue persiguiendo el conocimiento, pero de un modo distinto.$B$BAntes de formularte ninguna pregunta, te asignará otro encargo. Lo has hecho tan bien hasta el momento que no tengo ninguna duda de que superarás este obstáculo sin problemas.",
   },
@@ -9420,11 +9419,6 @@ pfDB["quests"]["esES-tbc"] = {
   },
   [7789] = {
     ["D"] = "Las tierras del Bosque de Vallefresno sucumbirán al poder de la Horda, $R. Nada de lo que haga o diga el Ala de Plata podrá detener nuestro mando soberano. Kalimdor pertenece a la Horda. ¡Con qué osadía intentan evitar que cosechemos lo que nos pertenece por derecho!$B$BDeja que el orgullo hinche tu pecho cuando reduzcas sus débiles intentos por frenar nuestro avance. Destruye a las centinelas Ala de Plata y obtén una marca de Honor Grito de Guerra. Vuelve a verme cuando tengas una de esas marcas, $N, y serás $Grecompensado:recompensada;.",
-  },
-  [7792] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Un donativo de lana",
   },
   [7794] = {
     ["T"] = "Un donativo de tejido mágico",

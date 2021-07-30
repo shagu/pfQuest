@@ -203,7 +203,6 @@ pfDB["quests"]["enUS-tbc"] = {
   [1150] = {
     ["D"] = "I\'m pleased to see your courage remains steadfast in light of what you\'ve already done. Since your faith is intact, the time has come to test your body.$B$BFirst is a test of endurance. Go to the Roguefeather Den west of Freewind Post. Make your way to the depths of their lair and destroy their foodstuffs. By then you should have provoked their fury, and if you are able to survive long enough, Grenka Bloodscreech herself will come for you--kill her and bring me her claw to complete your test.",
   },
-  [1156] = "_",
   [1168] = {
     ["O"] = "Tharg in Brackenwall Village wants you to kill 10 Firemane Scouts, 10 Firemane Ash Tails, and 5 Firemane Scalebanes.",
   },
@@ -739,11 +738,6 @@ pfDB["quests"]["enUS-tbc"] = {
   },
   [7789] = {
     ["D"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Warsong mark of honor.  Return to me with such a mark, $N, and you will be rewarded.",
-  },
-  [7792] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "A Donation of Wool",
   },
   [7797] = {
     ["D"] = "",

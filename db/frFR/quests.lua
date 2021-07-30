@@ -5464,11 +5464,6 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Trouver l’Héritage des Aspects et l’apporter à Braug Dimspirit, à côté de l’entrée de la Perce des Serres, dans les Serres-Rocheuses.",
     ["T"] = "L\'épreuve de la Connaissance",
   },
-  [1156] = {
-    ["D"] = "x",
-    ["O"] = "x",
-    ["T"] = "<NYI> <TXT> speak to alchemist pestlezugg",
-  },
   [1159] = {
     ["D"] = "Bien joué, $N. Vous avez passé la première partie de l\'Épreuve de la Connaissance, mais il reste une question à laquelle vous devez répondre. Cette question, je ne puis la poser.$B$BCherchez Parqual Fintallas dans la cité de Lordaeron. C’était un grand historien parmi les humains, avant d\'être emporté par la Peste. Il continue sa quête du savoir, mais un savoir d\'une nature différente.$B$BIl exigera de vous une certaine tâche avant d’accepter de vous tester, mais vous avez superbement mené à bien les épreuves jusqu\'ici... Je suis sûr que vous surmonterez cet obstacle.",
     ["O"] = "Trouver Parqual Fintallas à Undercity.",
@@ -15403,6 +15398,11 @@ pfDB["quests"]["frFR"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Un don de laine",
+  },
+  [7792] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "A Donation of Wool",
   },
   [7793] = {
     ["D"] = "",

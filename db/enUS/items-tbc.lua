@@ -271,6 +271,7 @@ pfDB["items"]["enUS-tbc"] = {
   [7951] = "Ninja Gloves",
   [7952] = "Ninja Boots",
   [8147] = "Tiny Copper Key",
+  [8491] = "Cat Carrier (Black Tabby)",
   [8583] = "Horn of the Skeletal Mount",
   [8589] = "Old Whistle of the Ivory Raptor",
   [8590] = "Old Whistle of the Obsidian Raptor",

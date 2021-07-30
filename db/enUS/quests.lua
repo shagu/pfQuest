@@ -5464,11 +5464,6 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Find the Legacy of the Aspects and return it to Braug Dimspirit near the entrance to Talondeep Path in Stonetalon Mountains.",
     ["T"] = "Test of Lore",
   },
-  [1156] = {
-    ["D"] = "x",
-    ["O"] = "x",
-    ["T"] = "<NYI> <TXT> speak to alchemist pestlezugg",
-  },
   [1159] = {
     ["D"] = "Well done, $N. You have passed the first portion of the Test of Lore, but there is still another question to be answered. But that question is not mine to ask.$B$BSeek out Parqual Fintallas in Lordaeron City. He was a great historian for the humans before the Plague overtook him. Now he continues to seek enlightenment, but of a different nature.$B$BHe will have another requirement of you before he asks you anything, but you have done masterfully thus far--I\'m sure you will overcome his obstacle.",
     ["O"] = "Find Parqual Fintallas in Undercity.",
@@ -15400,6 +15395,11 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Quell the Silverwing Usurpers",
   },
   [7791] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "A Donation of Wool",
+  },
+  [7792] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "A Donation of Wool",
