@@ -17,6 +17,7 @@ You can check the [[Latest Changes]](https://github.com/shagu/pfQuest/commits/ma
 2. Unpack the Zip-file
 3. Move the `pfQuest` folder into `Wow-Directory\Interface\AddOns`
 4. Restart Wow
+5. Set "Script Memory" to "0" ([HowTo](https://i.imgur.com/rZXwaK0.jpg))
 
 \*) *You can optionally pick one of the slim version downloads instead. Those version are limited to only one specific language: [English](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-enUS.zip),
 [Korean](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-koKR.zip),
