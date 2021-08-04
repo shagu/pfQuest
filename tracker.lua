@@ -483,7 +483,7 @@ function tracker.ButtonAdd(title, node)
     -- break on already taken quests
     if not pfQuest.questlog or pfQuest.questlog[questid] then return end
     -- every layer above 2 is not a questgiver
-    if node.layer > 2 then return end
+    if not node.layer or node.layer > 2 then return end
   elseif tracker.mode == "DATABASE_TRACKING" then -- skip everything that isn't db query
     if node.addon ~= "PFDB" then return end
   end
