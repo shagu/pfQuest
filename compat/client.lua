@@ -62,7 +62,7 @@ if client <= 11200 then
   -- add colors to quest links
   local ParseQuestLevels = function(frame, text, a1, a2, a3, a4, a5)
     if text then
-      for oldhex, questid, level in gfind(text, "(|c.-)|Hquest:(.-):(.-)|h") do
+      for oldhex, questid, level in gfind(text, "(|c%x+)|Hquest:(.-):(.-)|h") do
         local questid = tonumber(questid)
         local level = tonumber(level)
 
