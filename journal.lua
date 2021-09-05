@@ -99,10 +99,11 @@ local function UpdateEntry(self, index)
     self[index].text:SetText((collapsed[self[index].column] and "|cff338855" or "|cff33ffcc")..self[index].column)
     self[index]:Show()
   elseif self[index].id then
-    local name = pfDB["quests"]["loc"][self[index].id] and pfDB["quests"]["loc"][self[index].id]["T"] or nil
+    local qid = tonumber(self[index].id) or UNKNOWN
+    local name = pfDB["quests"]["loc"][self[index].id] and pfDB["quests"]["loc"][self[index].id]["T"] or self[index].id
     local log = pfQuest_history[self[index].id][1]
     local level = pfQuest_history[self[index].id][2]
-    self[index].text:SetText("  |cffffffff" .. date("%H:%M:%S", log) .. "  |cffffcc00[" .. (name or UNKNOWN) .. "]|cffaaaaaa (" .. self[index].id..")")
+    self[index].text:SetText("  |cffffffff" .. date("%H:%M:%S", log) .. "  |cffffcc00[" .. (name or UNKNOWN) .. "]|cffaaaaaa (" .. qid ..")")
     self[index]:Show()
   else
     self[index]:Hide()
