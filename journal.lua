@@ -39,7 +39,11 @@ end
 
 local function OnClick()
   if this.id and IsShiftKeyDown() then
-    pfQuestCompat.InsertQuestLink(this.id)
+    if tonumber(this.id) then
+      pfQuestCompat.InsertQuestLink(this.id)
+    else
+      pfQuestCompat.InsertQuestLink(0, this.id)
+    end
   elseif this.id then
     local maps = pfDatabase:SearchQuestID(this.id, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
