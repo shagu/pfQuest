@@ -229,7 +229,7 @@ function pfQuest:UpdateQuestlog()
 
     if title and not header then
       questid = pfDatabase:GetQuestIDs(qlogid)
-      questid = questid and questid[1] or title
+      questid = questid and tonumber(questid[1]) or title
       watched = IsQuestWatched(qlogid)
       state = watched and "track" or ""
 
@@ -424,7 +424,7 @@ function pfQuest:AddQuestLogIntegration()
     local questIndex = GetQuestLogSelection()
     local questids = pfDatabase:GetQuestIDs(questIndex)
     local title, _, _, header, _, complete = compat.GetQuestLogTitle(questIndex)
-    local id = questids and questids[1] or nil
+    local id = questids and tonumber(questids[1])
     if header or not id then return end
 
     local maps, meta = {}, { ["addon"] = "PFQUEST", ["qlogid"] = questIndex }
@@ -589,7 +589,7 @@ QuestLog_Update = function()
 
   if pfQuest_config["questlogbuttons"] ==  "1" then
     local questids = pfDatabase:GetQuestIDs(GetQuestLogSelection())
-    if questids and questids[1] and questids[1] > 0 and pfQuest.questlog[questids[1]] then
+    if questids and questids[1] and tonumber(questids[1]) and pfQuest.questlog[questids[1]] then
       pfQuest.buttonOnline:SetID(questids[1])
       pfQuest.buttonOnline:Show()
       pfQuest.buttonLanguage:Show()
@@ -618,7 +618,7 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
     local questIndex = this:GetID() + FauxScrollFrame_GetOffset(scrollFrame)
     local questName, questLevel = compat.GetQuestLogTitle(questIndex)
     local questids = pfDatabase:GetQuestIDs(questIndex)
-    local questid = questids and questids[1] or 0
+    local questid = questids and tonumber(questids[1]) or 0
 
     if IsShiftKeyDown() and not this.isHeader and ChatFrameEditBox:IsVisible() then
       pfQuestCompat.InsertQuestLink(questid, questName)

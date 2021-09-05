@@ -1423,7 +1423,7 @@ function pfDatabase:GetQuestIDs(qid)
 
     -- set title to new title
     if not ttitle then
-      pfQuest_questcache[identifier] = { 0 }
+      pfQuest_questcache[identifier] = { title }
       return
     else
       title = ttitle
