@@ -211,6 +211,19 @@ pfQuest_defconfig = {
       StaticPopup_Show("PFQUEST_RESET")
     end
   },
+  ["btn_cache"] = {
+    text = pfQuest_Loc["Reset Cache"],
+    default = "1", type = "button", pos = { 2, 23 }, func = function()
+      local dialog = StaticPopupDialogs["PFQUEST_RESET"]
+      dialog.text = pfQuest_Loc["Do you really want to reset the caches?"]
+      dialog.OnAccept = function()
+        pfQuest_questcache = nil
+        ReloadUI()
+      end
+
+      StaticPopup_Show("PFQUEST_RESET")
+    end
+  },
 }
 
 StaticPopupDialogs["PFQUEST_RESET"] = {
