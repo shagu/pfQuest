@@ -14,7 +14,7 @@ if not pfUI then
       edgeFile = "Interface\\BUTTONS\\WHITE8X8", edgeSize = 1,
       insets = {left = 0, right = 0, top = 0, bottom = 0},
     },
-    ["font_default"] = "Fonts\\ARIALN.TTF",
+    ["font_default"] = STANDARD_TEXT_FONT,
    }
 
   pfUI_config = {
