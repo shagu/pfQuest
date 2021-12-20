@@ -58,14 +58,14 @@ local function ResultButtonEnter()
     if this.btype == "units" then
       local unitData = units[id]
 
-      if unitData.lvl then
+      if unitData and unitData.lvl then
         GameTooltip:AddLine(" ")
         GameTooltip:AddDoubleLine(pfQuest_Loc["Level"], unitData.lvl, 1,1,.8, 1,1,1)
       end
 
       local reactionStringA = "|c00ff0000" .. pfQuest_Loc["Hostile"] .. "|r"
       local reactionStringH = "|c00ff0000" .. pfQuest_Loc["Hostile"] .. "|r"
-      if unitData.fac then
+      if unitData and unitData.fac then
         if unitData.fac == "AH" then
           reactionStringA = "|c0000ff00" .. pfQuest_Loc["Friendly"] .. "|r"
           reactionStringH = "|c0000ff00" .. pfQuest_Loc["Friendly"] .. "|r"
@@ -368,7 +368,7 @@ local function ResultButtonReload(self)
     if level and level ~= "" then level = " (" .. level .. ")" end
     self.text:SetText(self.name .. "|cffaaaaaa" .. level)
 
-    if pfDB[self.btype]["data"][self.id]["coords"] then
+    if pfDB[self.btype]["data"][self.id] and pfDB[self.btype]["data"][self.id]["coords"] then
       self.text:SetTextColor(1,1,1)
     else
       self.text:SetTextColor(.5,.5,.5)
