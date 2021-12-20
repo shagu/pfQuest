@@ -285,15 +285,20 @@ if isempty(pfDB["quests"]["loc"]) then
 end
 
 -- add database shortcuts
-local items = pfDB["items"]["data"]
-local units = pfDB["units"]["data"]
-local objects = pfDB["objects"]["data"]
-local quests = pfDB["quests"]["data"]
-local zones = pfDB["zones"]["data"]
-local refloot = pfDB["refloot"]["data"]
-local itemreq = pfDB["quests-itemreq"]["data"]
-local areatrigger = pfDB["areatrigger"]["data"]
-local professions = pfDB["professions"]["loc"]
+local items, units, objects, quests, zones, refloot, itemreq, areatrigger, professions
+pfDatabase.Reload = function()
+  items = pfDB["items"]["data"]
+  units = pfDB["units"]["data"]
+  objects = pfDB["objects"]["data"]
+  quests = pfDB["quests"]["data"]
+  zones = pfDB["zones"]["data"]
+  refloot = pfDB["refloot"]["data"]
+  itemreq = pfDB["quests-itemreq"]["data"]
+  areatrigger = pfDB["areatrigger"]["data"]
+  professions = pfDB["professions"]["loc"]
+end
+
+pfDatabase.Reload()
 
 local bitraces = {
   [1] = "Human",
