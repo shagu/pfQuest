@@ -2,7 +2,7 @@
 ## Title: |cff33ffccpf|cffffffffQuest
 ## Author: Shagu
 ## Notes: A lightweight Questhelper and Database
-## Notes-ruRU: Облегченный помошник заданий и база данных
+## Notes-ruRU: Облегченный помощник заданий и база данных
 ## Version: GIT
 ## OptionalDeps: pfUI-tbc
 ## SavedVariables: pfQuest_questcache
