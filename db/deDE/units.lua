@@ -9068,6 +9068,7 @@ pfDB["units"]["deDE"] = {
   [17598] = "Renn\'az",
   [17635] = "Kommandant von Lordaeron",
   [17647] = "Soldat von Lordaeron",
+  [17660] = "Skelettgreif",
   [17688] = "Kronenwache, Horde, Eroberungsquest",
   [17691] = "Ostwall, Horde, Eroberungsquest",
   [17697] = "Nordpass, Horde, Eroberungsquest",
@@ -9078,4 +9079,5 @@ pfDB["units"]["deDE"] = {
   [17804] = "Knappe Rowe",
   [17995] = "Veteran von Lordaeron",
   [17996] = "Kämpfer von Lordaeron",
+  [18039] = "Geist des Sieges",
 }

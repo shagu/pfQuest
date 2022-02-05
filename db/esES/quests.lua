@@ -21134,6 +21134,31 @@ pfDB["quests"]["esES"] = {
     ["O"] = "Devuelve la llama de Darnassus al cuentacuentos del Festival.",
     ["T"] = "Robar la llama de Darnassus",
   },
+  [9333] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Guantes de El Alba Argenta",
+  },
+  [9334] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Aceite de zahorí bendito",
+  },
+  [9335] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Piedras de afilar consagradas",
+  },
+  [9336] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Superpoción de sanación",
+  },
+  [9337] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Superpoción de maná",
+  },
   [9338] = {
     ["D"] = "",
     ["O"] = "",
@@ -21145,6 +21170,11 @@ pfDB["quests"]["esES"] = {
     ["T"] = "Una recompensa de ladrón",
   },
   [9341] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Tabardo de El Alba Argenta",
+  },
+  [9343] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Tabardo de El Alba Argenta",
@@ -21164,6 +21194,11 @@ pfDB["quests"]["esES"] = {
     ["O"] = "Devuelve la llama de Ventormenta a (NAME).",
     ["T"] = "Una recompensa de ladrón",
   },
+  [9367] = {
+    ["D"] = "¡Ya ha llegado el solsticio de verano!$b$bCada año, como manda la tradición, se elige a los guardianes de la llama, que se ocuparán de las hogueras sagradas en nuestras capitales. Aunque habrá hogueras por todo Azeroth, es imperativo que la nuestra sea la más viva para rendir homenaje a la celebración.$b$bDe hecho, tengo una tarea para ti, si no te importa. Aún no sé si las hogueras arden correctamente en todas las capitales. Ve a calentarte junto a cada una de las hogueras; ¡asegúrate de que calienten mucho!",
+    ["O"] = "Toca las hogueras de Ventormenta, Forjaz y Darnassus y habla con un maestro del Conocimiento del festival en cada capital.",
+    ["T"] = "El Festival del Fuego",
+  },
   [9368] = {
     ["D"] = "¡Ya ha llegado el solsticio de verano!$b$bCada año, como manda la tradición, se elige a los guardianes de la llama, que se ocuparán de las hogueras sagradas en nuestras capitales. Aunque habrá hogueras por todo Azeroth, es imperativo que la nuestra sea la más viva para rendir homenaje a la celebración.$b$bDe hecho, tengo una tarea para ti, si no te importa. Aún no sé si las hogueras arden correctamente en todas las capitales. Ve a calentarte junto a cada una de las hoqueras; ¡asegúrate de que calienten mucho!",
     ["O"] = "Toca las hogueras de Orgrimmar, Cima del Trueno y Entrañas y habla con un Cuentacuentos en cada capital.",
@@ -21178,6 +21213,16 @@ pfDB["quests"]["esES"] = {
     ["D"] = "Me agrada tu entusiasmo. Si deseas volver a bajar a las profundidades, te recompensaré con sumo gusto.$B$BBusca las hogueras que arden en Stratholme, Scholomance, La Masacre y los salones de Cumbre de Roca Negra. Esperaré tu regreso, $n.",
     ["O"] = "Toca las hogueras de Cumbre de Roca Negra, La Masacre, Scholomance y Stratholme, y ve a ver al guardián de la llama del Festival.",
     ["T"] = "Una luz en la oscuridad",
+  },
+  [9388] = {
+    ["D"] = "Hoy hay muchas llamas ardiendo en el mundo, $n. Las hogueras más difíciles de mantener son las verdes; hay que vigilarlas constantemente para que no se apaguen. Comprueba si siguen ardiendo las hogueras esmeralda en Kalimdor, por favor.$b$bEstán en Los Baldíos cerca de Trinquete, en Costa Oscura cerca de El Glaive del Maestro, en el bosque de Vallefresno junto al puente cerca de la Avanzada Ala de Plata y cerca del camino a Risco Cortaviento, siguiendo la ruta principal de Sierra Espolón.",
+    ["O"] = "Toca las hogueras de Vallefresno, Los Baldíos, Costa Oscura y Sierra Espolón y ve a ver al guardián de la llama.",
+    ["T"] = "La oscilación de las llamas de Kalimdor",
+  },
+  [9389] = {
+    ["D"] = "El Festival del Solsticio ilumina la tierra con una miríada de llamas. Hay quien dice que las hogueras verdes son las mejores, porque son las más difíciles de mantener y tienen un color tan particular.$b$bComprueba que siguen ardiendo en los Reinos del Este. Están cerca de Dun Modr, en Los Humedales, cerca de la Aldea Piroleña en el Bosque de Argénteos, en los precipicios junto al faro en los Páramos de Poniente y junto a la torre en ruinas de Laderas de Trabalomas.",
+    ["O"] = "Toca las hogueras de Laderas de Trabalomas, Bosque de Argénteos, Páramos de Poniente y Los Humedales y ve a ver al guardián de la llama.",
+    ["T"] = "La oscilación de las llamas de los Reinos del Este",
   },
   [9415] = {
     ["D"] = "¿Eres uno de los nuevos reclutas del alguacil Murazul? ¡Claro que sí!$b$b¿A qué esperas? Soldados muy valientes están muriendo en el desierto. ¿No sientes emoción al pensar que te vas a unir a ellos?$b$bAhora vamos, en marcha, y no te quedes $gseco:seca; por el camino.",

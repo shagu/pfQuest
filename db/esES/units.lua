@@ -9068,6 +9068,7 @@ pfDB["units"]["esES"] = {
   [17598] = "Renn\'az",
   [17635] = "Comandante de Lordaeron",
   [17647] = "Soldado de Lordaeron",
+  [17660] = "Grifo esquelético",
   [17688] = "Elemento de misión de captura de la guardia de la Corona de la Horda",
   [17691] = "Elemento de misión de captura de la muralla del este de la Horda",
   [17697] = "Elemento de misión de captura del Paso Norte de la Horda",
@@ -9078,4 +9079,5 @@ pfDB["units"]["esES"] = {
   [17804] = "Escudero Rowe",
   [17995] = "Veterano de Lordaeron",
   [17996] = "Combatiente de Lordaeron",
+  [18039] = "Espíritu de la victoria",
 }

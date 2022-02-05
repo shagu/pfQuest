@@ -21134,17 +21134,47 @@ pfDB["quests"]["frFR"] = {
     ["O"] = "Rapportez la flamme de Darnassus au Conteur de la fête.",
     ["T"] = "Voler la flamme de Darnassus",
   },
+  [9333] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Argent Dawn Gloves",
+  },
+  [9334] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Blessed Wizard Oil",
+  },
+  [9335] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Consecrated Sharpening Stones",
+  },
+  [9336] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Major Healing Potion",
+  },
+  [9337] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Major Mana Potion",
+  },
   [9338] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Allégeance au Cercle cénarien",
   },
   [9339] = {
-    ["D"] = "This flame, stolen from the heart of Stormwind itself, floods you with warmth. This raw power is foreign to you, but the (NAME) might know more...",
-    ["O"] = "Return the Flame of Stormwind to (NAME).",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "La récompense d\'un voleur",
   },
   [9341] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Tabard of the Argent Dawn",
+  },
+  [9343] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Tabard of the Argent Dawn",
@@ -21160,9 +21190,14 @@ pfDB["quests"]["frFR"] = {
     ["T"] = "Magie morcelée",
   },
   [9365] = {
-    ["D"] = "This flame, stolen from the heart of Stormwind itself, floods you with warmth. This raw power is foreign to you, but the (NAME) might know more...",
-    ["O"] = "Return the Flame of Stormwind to (NAME).",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "La récompense d\'un voleur",
+  },
+  [9367] = {
+    ["D"] = "Midsummer is upon us once again!$B$BEach year, as tradition dictates, Flamekeepers are chosen to tend the bonfires within our capitals. While fires are burning throughout Azeroth, it is imperative that ours be the hottest and brightest, to properly pay homage to the season.$B$BIn fact, I have a task for you, if you don\'t mind. I\'ve not yet heard if the fires in all capitals are properly burning. Travel there yourself and warm yourself by the fires--make sure they\'re hot!",
+    ["O"] = "Touch the bonfires within Stormwind, Ironforge, and Darnassus, then speak to a Festival Loremaster within the capital cities.",
+    ["T"] = "The Festival of Fire",
   },
   [9368] = {
     ["D"] = "Le solstice d\'été est à nouveau là !$b$bChaque année, comme le veut la tradition, des Gardiens des flammes sont choisis pour entretenir les feux de joie dans nos capitales. Des feux brûlent dans tout Azeroth, mais il faut absolument que les nôtres soient les plus chauds et les plus vifs pour rendre l\'hommage qui convient à la saison.$b$bEn fait, j\'ai une tâche à vous confier, si vous voulez bien. On ne m\'a pas encore dit si les feux de toutes les capitales brûlaient correctement. Allez-y vous-même, réchauffez-vous et vérifiez que les feux sont bien chauds !",
@@ -21178,6 +21213,16 @@ pfDB["quests"]["frFR"] = {
     ["D"] = "Vous ne manquez pas de passion ni d\'enthousiasme ? Si vous êtes $gpartant:partante; pour retourner dans les profondeurs, je vous récompenserai bien volontiers.$B$BCherchez les feux de joie qui brûlent dans Stratholme, dans la Scholomance, dans Hache-tripes et dans les murs du pic Rochenoire lui-même ; j\'attendrai votre retour avec impatience, $N.",
     ["O"] = "Trouvez et touchez les feux de joie situés au pic Rochenoire, à Hache-tripes, dans la Scholomance et à Stratholme, puis parlez au gardien des flammes de la fête.",
     ["T"] = "Une Lumière au sein des ombres",
+  },
+  [9388] = {
+    ["D"] = "There are many flames burning throughout the world today, $n. The trickiest fires to tend are those that burn green; they do not stay lit long without supervision. Make certain the emerald fires still burn on Kalimdor for our Flamekeeper, eh?$B$BYou will find them near Ratchet in the Barrens, close to the Master\'s Glaive in Darkshore, in the forest of Ashenvale by the bridge near Silverwing Outpost, and near the road to Windshear Crag along the main road in Stonetalon Mountains.",
+    ["O"] = "Visit the bonfires within Ashenvale, the Barrens, Darkshore, and Stonetalon Mountains, then speak with the Festival Flamekeeper.",
+    ["T"] = "Flickering Flames in Kalimdor",
+  },
+  [9389] = {
+    ["D"] = "The Midsummer Fire Festival traditionally lights up the land with a myriad of flames. Some argue that the green fires are the finest, as they are the hardest to maintain and have such a distinctive hue.$B$BMake sure they still burn in the Eastern Kingdoms for our Flamekeeper. They sit near Dun Modr in the Wetlands, close to Pyrewood Village within Silverpine Forest, on the cliffs overlooking the lighthouse in Westfall, and by the ruined tower in Hillsbrad Foothills.",
+    ["O"] = "Visit the bonfires within Hillsbrad Foothills, Silverpine Forest, Westfall, and the Wetlands, then speak with the Festival Flamekeeper.",
+    ["T"] = "Flickering Flames in the Eastern Kingdoms",
   },
   [9415] = {
     ["D"] = "Vous êtes les nouvelles recrues du maréchal Bluewall ? Évidemment que c’est vous.$B$BQu’est-ce que vous attendez ? De bons soldats meurent dans le désert. N’êtes-vous pas contents de les rejoindre ?$B$BAllez, bougez-vous, et tâchez de ne pas mourir d’insolation en route.",

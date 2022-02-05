@@ -2016,30 +2016,9 @@ pfDB["quests"]["enUS-tbc"] = {
     ["O"] = "Speak with High Executor Mavren at Tranquillien in the Ghostlands.",
     ["T"] = "The Forsaken",
   },
-  [9333] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Argent Dawn Gloves",
-  },
-  [9334] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Blessed Wizard Oil",
-  },
-  [9335] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Consecrated Sharpening Stones",
-  },
-  [9336] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Major Healing Potion",
-  },
-  [9337] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Major Mana Potion",
+  [9339] = {
+    ["D"] = "This flame, stolen from the heart of Stormwind itself, floods you with warmth. This raw power is foreign to you, but the (NAME) might know more...",
+    ["O"] = "Return the Flame of Stormwind to (NAME).",
   },
   [9340] = {
     ["D"] = "We\'re dangerously close to becoming fenced in by Alliance forces.  With the influx of sin\'dorei pilgrims from Azeroth, we must establish a route that\'s safe from our enemies\' prying eyes.$B$BI\'ve given it some thought and have arrived at a solution.  We\'re to establish a secret path through the Great Fissure.$B$BYes, even though the area is crawling with brutal rock flayers, they are merely beasts and can be taught to fear us.  I want you to go and kill a good number of them.  They shall learn fear.",
@@ -2050,11 +2029,6 @@ pfDB["quests"]["enUS-tbc"] = {
     ["D"] = "As if the gan\'arg that overran the mines aren\'t bad enough, now we\'ve got gigantic worms encroaching on us from the other direction!$B$BWith Thrallmar\'s garrison pinned down defending against the Legion and tending to their wounded, it leaves me and the miners to deal with the problems.$B$B<The foreman gestures at the sleeping peons.>$B$BAnd you can see how useful they are...$B$BI\'d gladly pay you their wages to clear out some of those worms.",
     ["O"] = "Foreman Razelcraz at the mines near Thrallmar wants you to kill 15 Marauding Crust Bursters. The worms have a tendency to attack suddenly from their tunnels below ground.",
     ["T"] = "BETA Marauding Crust Bursters",
-  },
-  [9343] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Tabard of the Argent Dawn",
   },
   [9344] = {
     ["D"] = "Greetings, $N. Outland is a perilous place, as many of our expedition quickly learned. I\'m afraid young Grelag may have learned that lesson firsthand.$B$BGrelag is a promising student, but he lacks patience! He eagerly studies the history of his people, but he sometimes forgets the threats of the present day.$B$BHe departed for the Spinebreaker Post, ignorant of the Legion and fel orc presences. I fear something may have happened to him.",
@@ -2126,6 +2100,10 @@ pfDB["quests"]["enUS-tbc"] = {
     ["O"] = "Travel to Fairbreeze Village in Eversong Woods and speak to Ranger Degolien.",
     ["T"] = "Warning Fairbreeze Village",
   },
+  [9365] = {
+    ["D"] = "This flame, stolen from the heart of Stormwind itself, floods you with warmth. This raw power is foreign to you, but the (NAME) might know more...",
+    ["O"] = "Return the Flame of Stormwind to (NAME).",
+  },
   [9366] = {
     ["D"] = "Northeast of here lie the Pools of Aggonar.  Once a sacred site to the draenei, their waters were corrupted after the blood from the demon Aggonar was spilled into them.$B$BThat blood, though old and diluted, still possesses tremendous power.  Terrorfiends now walk the area, empowered by the pure demonic energies of the original blood.  Slay them and retrieve as much felblood as you can.  I\'ll make it worth your while.",
     ["O"] = "Ryathen the Somber at Falcon Watch in Hellfire Peninsula wants you to bring him 6 Felblood Samples from the Terrorfiends that inhabit the Pools of Aggonar.",
@@ -2133,8 +2111,6 @@ pfDB["quests"]["enUS-tbc"] = {
   },
   [9367] = {
     ["D"] = "Midsummer is upon us once again!$b$bEach year, as tradition dictates, Flamekeepers are chosen to tend the bonfires within our capitals. While fires are burning throughout Azeroth, it is imperative that ours be the hottest and brightest, to properly pay homage to the season.$b$bIn fact, I have a task for you, if you don\'t mind. I\'ve not yet heard if the fires in all capitals are properly burning. Travel there yourself and warm yourself by the fires--make sure they\'re hot!",
-    ["O"] = "Touch the bonfires within Stormwind, Ironforge, and Darnassus, then speak to a Festival Loremaster within the capital cities.",
-    ["T"] = "The Festival of Fire",
   },
   [9369] = {
     ["D"] = "We are the draenei.  Our ship crashed and, since we have many wounded, our immediate concern is the depleted state of our healing crystals.  We must replenish them quickly!$B$BUnfortunately, the only way to do this at this point is to extract the blood from the local vale moths.  Their blood will make for a suitable substitute.$B$BThe moths can be found in many places around the vale, but mostly in the northwest.",
@@ -2208,13 +2184,9 @@ pfDB["quests"]["enUS-tbc"] = {
   },
   [9388] = {
     ["D"] = "There are many flames burning throughout the world today, $n. The trickiest fires to tend are those that burn green; they do not stay lit long without supervision. Make certain the emerald fires still burn on Kalimdor for our Flamekeeper, eh?$b$bYou will find them near Ratchet in the Barrens, close to the Master\'s Glaive in Darkshore, in the forest of Ashenvale by the bridge near Silverwing Outpost, and near the road to Windshear Crag along the main road in Stonetalon Mountains.",
-    ["O"] = "Visit the bonfires within Ashenvale, the Barrens, Darkshore, and Stonetalon Mountains, then speak with the Festival Flamekeeper.",
-    ["T"] = "Flickering Flames in Kalimdor",
   },
   [9389] = {
     ["D"] = "The Midsummer Fire Festival traditionally lights up the land with a myriad of flames. Some argue that the green fires are the finest, as they are the hardest to maintain and have such a distinctive hue.$b$bMake sure they still burn in the Eastern Kingdoms for our Flamekeeper. They sit near Dun Modr in the Wetlands, close to Pyrewood Village within Silverpine Forest, on the cliffs overlooking the lighthouse in Westfall, and by the ruined tower in Hillsbrad Foothills.",
-    ["O"] = "Visit the bonfires within Hillsbrad Foothills, Silverpine Forest, Westfall, and the Wetlands, then speak with the Festival Flamekeeper.",
-    ["T"] = "Flickering Flames in the Eastern Kingdoms",
   },
   [9390] = {
     ["D"] = "Hear my plight, $c.  My brother, Sedai, left long ago to contact the orcs of Mag\'har Post.  Ever the idealist, he thought the time was ripe to set our differences aside and negotiate a peace with them.$B$BHe\'s been missing for days and I fear for the worst.$B$BWould you set my mind to rest and look for him?  Sedai must be somewhere nearby to the east.",
@@ -11471,6 +11443,21 @@ pfDB["quests"]["enUS-tbc"] = {
     ["O"] = "Report to Archmage Ne\'thul on the Isle of Quel\'Danas, north of Quel\'Thalas.$B$BFlight masters in Ironforge and Silvermoon City will get you to your destination.",
     ["T"] = "Enter, the Deceiver...",
   },
+  [11551] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to deactivate Agamath, The First Gate",
+    ["O"] = "Bring to me the essence of immortals, found only on the most powerful beings of this world! With the essence in hand, my mages will be able to dismantle Agamath, ultimately collapsing the gateway and unlocking the way further into the sunwell.",
+    ["T"] = "Agamath, the First Gate",
+  },
+  [11552] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to break Rohendor, the Second Gate",
+    ["O"] = "Bring to me the essence of immortals, found only on the most powerful beings of this world! Rohendor cannot withstand the combined force of our mages!",
+    ["T"] = "Rohendor, the Second Gate",
+  },
+  [11553] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to eventually dismantle Archonisus, the Final Gate",
+    ["O"] = "Bring to me the essence of immortals ÔÇö found only on the most powerful beings of this world ÔÇö and Archonisus is sure to crumble!",
+    ["T"] = "Archonisus, the Final Gate",
+  },
   [11554] = {
     ["D"] = "",
     ["O"] = "",
@@ -12355,6 +12342,11 @@ pfDB["quests"]["enUS-tbc"] = {
     ["D"] = "Those pesky Dark Irons are back! We need to make sure that you can defend yourself if needed. More importantly, we need to know that you can defend our property!$B$BS.T.O.U.T. here is ready for action, are you? Drink from the Complimentary Brewfest Samplers then throw the mug at S.T.O.U.T.! Hit the target 5 times then talk to me.",
     ["O"] = "Use the Complimentary Brewfest Sampler to hit S.T.O.U.T. 5 times, then talk to Bizzle Quicklift.",
     ["T"] = "Chug and Chuck!",
+  },
+  [12192] = {
+    ["D"] = "The Dark Irons took a beating!  As they rushed back to the Grim Guzzler, a portion of their transport fell off.  More importantly, you managed to keep the camp safe... today.$b$bHead over to Bizzle and explain your heroic triumph over the Dark Iron dwarves.",
+    ["O"] = "Talk to Bizzle Quicklift in the Brewfest camp.",
+    ["T"] = "This One Time, When I Was Drunk...",
   },
   [12193] = {
     ["D"] = "Brewfest isn\'t just about racing rams, it\'s also about drinking!  When you have a moment, take this voucher to Belbi Quikswitch.  She\'s near the back of the Brewfest camp.  If you can\'t see her, don\'t worry, she\'ll be sure to see you.$b$bIn any case, take this voucher to her to get your free Brewfest stein.  She\'ll also be more than happy to handle any and all other Brewfest transactions.",

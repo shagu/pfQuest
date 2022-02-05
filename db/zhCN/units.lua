@@ -9068,6 +9068,7 @@ pfDB["units"]["zhCN"] = {
   [17598] = "雷艾",
   [17635] = "洛丹伦指挥官",
   [17647] = "洛丹伦士兵",
+  [17660] = "骷髅狮鹫",
   [17688] = "Crown Guard Horde Capture Quest Doodad",
   [17691] = "Eastwall Horde Capture Quest Doodad",
   [17697] = "Northpass Horde Capture Quest Doodad",
@@ -9078,4 +9079,5 @@ pfDB["units"]["zhCN"] = {
   [17804] = "侍卫洛文",
   [17995] = "洛丹伦精兵",
   [17996] = "洛丹伦斗士",
+  [18039] = "胜利之魂",
 }

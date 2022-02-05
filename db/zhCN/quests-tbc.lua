@@ -465,8 +465,12 @@ pfDB["quests"]["zhCN-tbc"] = {
   [348] = {
     ["D"] = "我病了…病得……非常厉害……$B$B我…染上了…荆棘谷热疫…致死的疾…疾病……$B$B……只…只有吃下…野人莫…莫…莫克…的心脏…才…才有救…那…是…一只残忍而…狡猾的…野兽。$B$B……巫医安巴格瓦巫师…是…唯一会…召唤…它…的人……$B$B找到…住在南边…海岬…洞穴…里的安巴格瓦……$B$B……快点…我就要死了…就要死了……",
   },
+  [349] = {
+    ["D"] = "嗨，$N！$B$B和我的朋友巫医安巴格瓦说话。",
+    ["O"] = "与巫医安巴格瓦交谈。",
+  },
   [363] = {
-    ["D"] = "你醒得可真是时候。我们本来还准备把你和其他的死人一起火葬了，没想到你居然醒来了。$B$B我是摩尔多，丧钟镇墓穴的看护人。现在你已不再是巫妖王的奴隶了。$B$B暗影牧师萨维斯就在山脚下的教堂里，去和他谈谈吧，他会告诉你更多你必须了解的事情。",
+    ["D"] = "你醒得可真是时候。我们本来还准备把你和其它的死人一起火葬了，没想到你居然醒来了。$B$B我是摩尔多，丧钟镇墓穴的看护人。现在你已不再是巫妖王的奴隶了。$B $B暗影牧师萨维斯就在山脚下的教堂里，去和他谈谈吧，他会告诉你更多你必须了解的事情。你可以从那段向上的阶梯离开这座墓穴。沿着路一直走到教堂，就能找到萨维斯。",
   },
   [364] = {
     ["D"] = "我们被遗忘者正在与巫妖王的天灾军团作战，那支军队包括用亡灵法术唤起的亡灵军队，大陆北方的那些愚蠢的野兽，还有那些永远遭受折磨的鬼魂。$B$B在这个村庄的北部有大量的无脑僵尸到处横行，我们必须消灭他们。消灭他们，即使他们以前可能是我们的兄弟姐妹也不要手软，那些行尸走肉如今只不过是巫妖王的奴隶罢了。",
@@ -1689,7 +1693,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "力量在我身上逐渐流失，我需要你的帮助！$B$B很久以前，这里曾是雄伟的月神之殿。然而，不幸却降临了这里，上古之神的堕落势力从地下突现，玷污了神圣的月亮井，最终使得这里成为了一片废墟。$B$B阿库麦尔，上古之神的仆人，从水中突然出现。$B$B暮光之锤的信徒与纳迦联合在一起，占领了这片土地。梦游者克尔里斯领导着他们为阿库麦尔而战，以许多无辜的生命来换取邪恶的力量。$B$B你一定要阻止这些恶魔！杀了克尔里斯，把他的头颅交给达纳苏斯的塞尔高姆！",
   },
   [1203] = {
-    ["D"] = "我要切点东西，呃……我不能告诉你我要切什么，不过……反正我需要把剑。一种特殊的剑……$B$B我叫它快剑。$B$B你能帮帮我吗？那些鱼人，你知道，像鱼的人，像人的鱼，它们之中有一个名叫刺脊的，手里有一把巨剑，它就在这里北边的海滩附近。$B$B不过，不要等到明天再去找。我切的东西可不能放太久……",
+    ["D"] = "我要切点东西，呃……我不能告诉你我要切什么，不过……反正我需要一把刀。一把特别的刀……$B$B有人叫它剑，我叫它快剑。$B$B你能帮帮我吗？那些鱼人，你知道，像鱼的人，像人的鱼，它们之中有一个名叫刺脊的，手里有一把大剑，它就在这里北边的海滩附近。$B$B不过，不要等到明天再去找。我切的东西可不能放太久……",
     ["O"] = "将刺脊的剑交给尘泥沼泽的“沼泽之眼”加尔。",
   },
   [1206] = {
@@ -2086,9 +2090,6 @@ pfDB["quests"]["zhCN-tbc"] = {
   [1881] = {
     ["D"] = "$N，安娜斯塔西娅·哈特威尔有个任务需要你这样有才干的$C来完成。她就在幽暗城的魔法区，去和她谈谈，准备为被遗忘者的法师们完成你的第一个任务吧。",
   },
-  [1883] = {
-    ["O"] = "安苏瓦",
-  },
   [1885] = {
     ["D"] = "$N？虽然现在的情况并不像我所预计的一样，但卡加德确实对你非常感兴趣。听起来是不是有点难以置信？$B$B无论如何，你得尽快去找他谈谈。我想你并不想知道上一个对他的召唤置之不理的人的下场吧。",
   },
@@ -2153,11 +2154,7 @@ pfDB["quests"]["zhCN-tbc"] = {
   [2260] = {
     ["D"] = "你已经是个很有名气的$C了，$N。事实上，暴风城的情报机构点名要你去为他们效力。$B$B这次旅行会很辛劳，而且一路上危机四伏，不过我想谁也不会轻易放弃在暴风城军情七处训练的机会。$B$B一个崭新的世界在等着你，$N。到暴风城的旧城区去,和军情七处总部里的“剃刀”雷吉克谈一谈吧，祝你好运。",
   },
-  [2281] = {
-    ["O"] = "Venture forth to Lakeshire in the Redridge Mountains and speak with Lucius.",
-  },
   [2298] = {
-    ["D"] = "到暴风城去找到“剃刀”雷吉克。",
     ["O"] = "到暴风城去找到“剃刀”雷吉克。",
   },
   [2342] = {
@@ -2175,9 +2172,6 @@ pfDB["quests"]["zhCN-tbc"] = {
   [2439] = {
     ["D"] = "这东西真是个惊人的发现。如果这里储存的知识都是正确的话，那么这些圆盘所涉及的古代泰坦——或者说造物之神——肯定和我们的起源有所联系！我们要用尽可能多的时间来研究它。$B$B至于你，英勇的$C，把这个凭证交给大厅里的丁尼塔·石衣，你一定会为你的伟大发现得到应有的报酬！$B$B准备好了之后就回到我这里来，探险者协会还有很多事等着你去做！",
   },
-  [2479] = {
-    ["O"] = "Travel to Tarren Mill in Hillsbrad Foothills and deliver the Sample of Zanzil\'s Mixture to Serge Hinott.$B$BTo get to Tarren Mill, take the Zeppelin to the Undercity and follow the road south through Silverpine and towards Hillsbrad. Follow the signs!",
-  },
   [2500] = {
     ["T"] = "荒芜之地的试剂",
   },
@@ -2189,12 +2183,6 @@ pfDB["quests"]["zhCN-tbc"] = {
   },
   [2541] = {
     ["D"] = "这里的瘤背萨满祭司找到了一种可以在德鲁伊休眠时将他的灵魂和肉体分离的方法。熊怪就这样驱使着我的肉身，利用我去袭击那些对班奈希尔兽穴进行侦查的人。现在我沉睡在翡翠梦境里，无法阻止他们。$B$B你一定要帮帮我。瘤背萨满祭司用一种特殊的符咒来完成这种仪式，我希望能研究一下这种咒符。$N，全靠你了。",
-  },
-  [2586] = {
-    ["D"] = "收集3个厚甲蝎螯、2个秃鹫的砂囊和1片诅咒之地的野猪肺，把它们血法师德拉吉亚。",
-  },
-  [2602] = {
-    ["D"] = "收集10颗石化蜥蜴的大脑和2个秃鹫的砂囊，把它们交给血法师莱诺雷。",
   },
   [2603] = {
     ["D"] = "死亡在这片被诅咒的土地上长出了翅膀，$C。我曾亲眼目睹那些秃鹫将探险者的尸体狼吞虎咽地吃掉——有时它们甚至会吃下携带着致命疾病的尸体。它们身体内部的系统竟然能够抵御席卷了这片土地的瘟疫，这的确令我感到十分惊奇。$B$B请帮助我进行研究，$N！我需要秃鹫的砂囊，还需要两块弯牙土狼的颚骨作为原料。$B$B我会和你五五分成的。",
@@ -2268,9 +2256,6 @@ pfDB["quests"]["zhCN-tbc"] = {
   [2948] = {
     ["D"] = "听着，$N，这戒指当然是你的……但是我可以给你做一枚更好的！就像我说的一样，那种设计实在太简单了。现在我的技术更加娴熟了，只要你付我三十个银币的费用，我就可以帮你制作一枚新戒指！好吧，事实上还要再加一点点……$B$B我现在手头很紧，我的所有存货都用完了。如果你给我一块银锭和一块绿玛瑙，我就可以让戒指看起来更加闪亮华贵！$B$B相信我！",
   },
-  [2962] = {
-    ["O"] = "Travel to Gnomeregan and bring back High Potency Radioactive Fallout. Be warned, the fallout is unstable and will collapse rather quickly.$B$BOzzie will also require your Heavy Leaden Collection Phial when the task is complete.",
-  },
   [2963] = {
     ["D"] = "你好，很高兴再一次见到你，$N！你在奥达曼的发现使探险者协会兴奋不已。协会一直都在努力揭开你所发现的那张白金圆盘的秘密。你来的正是时候，我可以和你分享一下我们的最新进展！$B$B史学家卡尼克发现了一些很重要的线索，可能有助于找到塔纳利斯沙漠中的守卫之谷的起源。他想和你谈谈，越快越好！",
   },
@@ -2302,7 +2287,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "与铁炉堡的蒂萨·热炉谈话。",
   },
   [3022] = {
-    ["T"] = "小心携带",
+    ["T"] = "小心轻放。",
   },
   [3065] = {
     ["D"] = "啊，刚刚你不在的时候，有人送来了这张羊皮纸，$N。$B$B如果你有时间的话，还是看看这上面说些什么的好。如果我没搞错的话，这张羊皮纸是战士训练师弗朗恩写的，他有事找你。你可以在大兽穴外面的阴凉处找到他。",
@@ -2348,9 +2333,6 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "释放他们，$C。即使他们的肉体已经不复存在，苏塔拉的力量也会让他们去完成自己的使命。$B$B苏塔拉祭坛是关键。到这里的北边去，在洞穴上面的山顶……暮光之锤守卫着一件古器。拿到它，把它放在苏塔拉祭坛上。$B$B<濒死的考古学家倒下了。>",
     ["O"] = "到北方去找到被暮光之锤守卫着的神秘的古器，然后把它带到熔渣之池的苏塔纳祭坛上。",
   },
-  [3379] = {
-    ["O"] = "Kill the group of Shadow Silk Poachers that wander the Searing Gorge. Nilith has reason to believe that there are five of them that need to be exterminated. Return to Nilith in the Searing Gorge when this task is complete.",
-  },
   [3381] = {
     ["D"] = "Ah, a young $r come to speak to Sanath. What a wonderful day! I am so honored to have you grace me with your presence. Thank you!$B$BPlease... do not be so arrogant to assume my sarcasm was a compliment. Let us get one thing straight: I don\'t like you. But this little conversation doesn\'t have anything to do with us--it has to do with my master.$B$BBring me a couple hippogryph feathers for my arrows and I\'ll give you leave to see him. He\'s asked that I send adventurers to him if they proved worthy enough.",
     ["O"] = "Bring 2 Undamaged Hippogryph Feathers to Sanath Lim-yo in Azshara if you wish to speak to his master.",
@@ -2374,6 +2356,9 @@ pfDB["quests"]["zhCN-tbc"] = {
   },
   [3631] = {
     ["T"] = "OLD Summon Felsteed",
+  },
+  [3646] = {
+    ["D"] = "我猜你在期盼些什么报酬吧，是不是？你不就是让我想起了还活着的时候么？哼，算了，从我这里随便拿件东西就赶紧走吧，让我一个人静一静。",
   },
   [3741] = {
     ["T"] = "尼达的项链",
@@ -2402,11 +2387,8 @@ pfDB["quests"]["zhCN-tbc"] = {
   [3903] = {
     ["D"] = "你是个值得信赖的$C，$N。可靠，而且不畏惧战斗，对吗？$B$B我有个朋友名叫米莉·奥斯沃斯，她遇到麻烦了。她就在修道院另一边的马厩旁，我想她可能需要你的帮助。",
   },
-  [3906] = {
-    ["O"] = "Travel to the quarry in Blackrock Mountain and slay Overmaster Pyron. Return to Thunderheart when you have completed this assignment.",
-  },
   [3911] = {
-    ["D"] = "到黑石深渊去取得10份元素精华。你应该在那些作战傀儡和傀儡制造者身上找找，另外，薇薇安·拉格雷也提到了一些有关元素生物的话题……",
+    ["D"] = "只有那些进入深渊的冒险者才能迎接这个挑战，$N。$B$B黑铁矮人已经掌握了制造强大的作战傀儡的方法。$B$B来自间谍的报告显示，那些矮人使用某种独特的能量源为他们所创造的傀儡提供无与伦比的杀戮能力。$B$B如果我们能得到这种元素精华的话，我们的憎恶怪就可以得到极大的加强！把那座城市翻个底朝天也在所不惜，找不到精华你就别回来！我们给予的报酬值得你去冒这个险。",
     ["O"] = "到黑石深渊去取得10份元素精华。你应该在那些作战傀儡和傀儡制造者身上找找，另外，薇薇安·拉格雷也提到了一些有关元素生物的话题……",
     ["T"] = "最后的元素",
   },
@@ -2536,9 +2518,6 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "为你看护的孩子买一些草莓冰激凌。这个孩子似乎最喜欢“提古勒和弗洛尔”牌的草莓冰激凌。",
     ["T"] = "草莓冰激凌",
   },
-  [4862] = {
-    ["O"] = "Travel to Blackrock Spire and collect 15 Spire Spider Eggs for Kibler.$B$BBy the sound of it, these eggs could be found near spiders.",
-  },
   [4866] = {
     ["D"] = "这也许是世界上效力最强的毒药之一，$C！$B$B在我前往黑石塔的旅途中，无意中听到过黑石兽人谈起一种致命的毒药。他们称其为“蛛后的乳汁”，这个名字是根据黑石塔里面那只烟网蛛后的名字得来的。$B$B我需要一份在你体内流淌的“蛛后的乳汁”的样本，毒囊是远远不够的！让她在你体内注入毒汁，然后回到我这儿来！$B$B然后……我就能得到乳汁了！$B$B<他揉搓着双手，充满期待。>",
   },
@@ -2585,9 +2564,6 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "Bah! What do think this is, some kind of Test Quest? I be there even be typos in it!$B$BIf ya be thinkin\' my quest is goin\' ta be easy, then ya got another thing coming!$B$BKill me ten sheep (1933) and don\'t come back until you do!",
     ["O"] = "Kill 6 sheep for Benny and then run like hell!$B$B$B$B$BJust kidding... about the running part.",
     ["T"] = "暂无内容",
-  },
-  [5102] = {
-    ["O"] = "Travel to Blackrock Spire and destroy General Drakkisath. Return to Marshal Maxwell when the job is done.",
   },
   [5142] = {
     ["D"] = "在达隆郡战役中，我们牺牲了很多人。很多人死了……很多人死后又站了起来……$B$B战争一开始，我就把我的侄女帕米拉藏了起来，我不知道她现在到底怎么样了。我只是一个游魂，但是我一直很想知道帕米拉的情况。$B$B求求你，好心的$C，你能去达隆郡帮我找找她吗？往东边走，过了盖罗恩农场就到达隆郡了。",
@@ -2641,12 +2617,6 @@ pfDB["quests"]["zhCN-tbc"] = {
   },
   [5263] = {
     ["D"] = "你很能干，而且你一直遵从我的命令。我很少见到同时具备这两点的$C。现在我相信你可以执行神圣的正义。$B$B<瑟伦霍夫双手合十，并把它们举到面前。>$B$B克尔苏加德的大将驻守在斯坦索姆。向我证明你是一个勇士——我的勇士。除掉瑞文戴尔男爵，把他的头颅给我带回来。",
-  },
-  [5302] = {
-    ["O"] = "To become a Weaponsmith, you must make the following items and return them to Borgosh: 4 Moonsteel Broadswords, 4 Massive Iron Axes, 2 Heavy Mithril Axes, and 2 Big Black Maces.",
-  },
-  [5305] = {
-    ["O"] = "Travel to Stratholme and kill the Crimson Hammersmith. Recover the Crimson Hammersmith\'s Apron and return to Lilith.",
   },
   [5306] = {
     ["D"] = "别被她的美貌愚弄了，$C。暗影猎手沃什加斯是个狂暴而致命的猎手。$B$B<基尔拉姆指着自己脸上的伤疤。>$B$B喏，这就是她给我的——她称之为爱的陷阱。$B$B复仇的时刻终于来临了。$B$B你可以在黑石塔中找到沃什加斯。杀死她并将她的蛇石交给我。如果你成功了，我就教你如何打造黎明之刃！。",
@@ -2961,9 +2931,6 @@ pfDB["quests"]["zhCN-tbc"] = {
   [6146] = {
     ["D"] = "我已经对这份命令做了一些调整。如果我们的小计谋成功了，他们就会暴露血色十字军圣贤，然后我们就可以出击了！$B$B现在听好了，$C。你要把这份命令交给十字军领主瓦德玛尔。$B$B怎么交给他？亲手交给他，你这白痴。$B$B把命令和这只烂苹果拿到提尔之手去。当你快到那里的时候，吃掉这个苹果，你会变成某种更加……能被人类接受的东西。把这份命令交给十字军领主瓦德玛尔。",
   },
-  [6184] = {
-    ["O"] = "Travel to Chillwind Camp in the Western Plaguelands and meet up with your contact, Flint Shadowmore.",
-  },
   [6186] = {
     ["D"] = "<弗林特面无血色。>$B$B这是纳……纳萨诺斯干的？纳萨诺斯是就是凋零者？$B$B为什么？他……他那么高贵——他是个受人尊敬的游侠领主，是唯一接受过高等精灵训练的人类。他居然是亡灵的一员？$B$B我……我很抱歉要再请你做一件事，$N，但是你必须立刻将这件事情告诉瓦里安·乌瑞恩国王。赶快去暴风城吧。",
     ["O"] = "回到暴风城，将纳萨诺斯·玛瑞斯的下落报告给瓦里安·乌瑞恩国王。",
@@ -3024,18 +2991,12 @@ pfDB["quests"]["zhCN-tbc"] = {
   [6609] = {
     ["D"] = "我是个大嗓门的矮人，我亲爱的$G小伙子:小姑娘;！我可不是为了钓鱼而生出来的！我的意思是，看看我！我是用石头刻出来的。$B$B我没有什么可保留的了——你已经把我知道的全都学会啦！$B$B你还不明白吗？啊，好吧。我在卡利姆多大陆有一个朋友，他也许可以帮你。他的名字叫纳特·帕格，是一个很友善的人。你可以在塞拉摩南边的岛上找到他。快出发吧！",
   },
-  [6611] = {
-    ["D"] = "到塔纳利斯沙漠的加基森去，与迪尔格·奎克里弗谈谈你的厨师生涯。",
-  },
   [6612] = {
     ["D"] = "我可以从你手里的炒菜勺子看出你是干什么的。不幸的是，我什么也不能教你。$B$B不过我认识一个家伙，他是个地精，也许是卡利姆多大陆上最好的厨师。$B$B啊，也许这是个坏消息，$G小伙子:小姑娘;——你要跑一趟卡利姆多。到加基森去找迪尔格·奎克里弗，他会告诉你接下来该怎么做的。",
   },
   [6621] = {
     ["D"] = "$N，熊怪的污林部族住在阿斯特兰纳的东南面。它们在数量上并没有蓟皮熊怪多，但是其残暴和好战的性格却对我们造成了巨大的威胁。我们必须给它们一个严厉的警告。$B$B拿着这面旗子，把它插在污林村庄的图腾堆中。这会激怒那些熊怪，让它们冲上来想要除去旗子，但是你一定要坚守自己的位置，最终你就会面对它们的酋长穆戈特。击败它，把它身上的图腾给我拿回来。$B$B别忘了和你的朋友一起去，$N，仅凭一个$C是无法成功的。",
     ["T"] = "污林之王",
-  },
-  [6623] = {
-    ["O"] = "Travel to Hammerfall in the Arathi Highlands and speak with Doctor Gregory Victor about joining the ranks of Horde Trauma.",
   },
   [6627] = {
     ["D"] = "你把这本书带来给了我，现在是向你提问的时候了。你准备好了吗？$B$B时间并不紧迫，$C，所以不要太紧张。你可以在准备妥当之后再来接受提问。",
@@ -3081,7 +3042,8 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "深铁矿洞补给品",
   },
   [7002] = {
-    ["O"] = "我和你一样焦急地想要试一下我的便携式伐木机，$C，但是我必须要弄到一些材料——我是说很多材料——才能制作出配套的工具！$B$B实际上，我需要像山那么大的一堆瑟银、秘银和铁，另外每一台伐木机还需要有一个蒸汽锯才能完工，你最好到伐木场去找找看。$B$B我在这里游荡的时候（在我被抓住之前），曾在雷矛伐木场里看到很多的蒸汽锯。",
+    ["D"] = "在我们的一些战士帮助兽栏管理员捕捉巨狼的同时，其它人还需要去找一些将它们变成坐骑所必需的东西，比如缰绳和坐鞍。$B$B你必须去猎捕这个地区的山羊，也就是那些与雷矛骑兵的坐骑很相似的山羊!$B$B杀了它们，把它们的皮交给我。只要收集到足够多的羊皮，我们就可以开始为骑手们制作坐具了。霜狼部族的狼骑兵很快就将再次驰骋在战场上!",
+    ["O"] = "Slay them and return to me with their hides. The same rams that the Stormpike cavalry uses as mounts!",
   },
   [7021] = {
     ["O"] = "和冬天爷爷谈谈；他在奥格瑞玛Smokywood Pastures商人区旁边。",
@@ -3098,11 +3060,8 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "嗨，年轻的$G小伙子:姑娘;，你能帮冬天爷爷一个忙吗？$B$B似乎没有必要以第三人称来称呼自己，但是冬天爷爷在这儿一整天了，他也想要一份礼品呢。小姜饼和冰镇牛奶正合他的胃口。你能为冬天爷爷取些来吗？",
   },
   [7026] = {
-    ["D"] = "The Stormpike Brigade cannot charge into battle bareback! We require harnesses for our mounts, after all, we are not savages.$B$BWhile we could easily slay the rams that roam near our base for the leather required to fashion a harness, doing so would be idiotic. We need those rams for mounts.$B$BYou must strike at our enemy\'s base, slaying the frostwolves they use as mounts and taking their hides. Return their hides to me so that harnesses may be made for the cavalry. Go!",
-    ["O"] = "我和你一样焦急地想要试一下我的便携式伐木机，$C，但是我必须要弄到一些材料——我是说很多材料——才能制作出配套的工具！$B$B实际上，我需要像山那么大的一堆瑟银、秘银和铁，另外每一台伐木机还需要有一个蒸汽锯才能完工，你最好到伐木场去找找看。$B$B我在这里游荡的时候（在我被抓住之前），曾在雷矛伐木场里看到很多的蒸汽锯。",
-  },
-  [7027] = {
-    ["O"] = "Locate an Alterac Ram in Alterac Valley. Use the Stormpike Training Collar when you are near the Alterac Ram to \'tame\' the beast. Once tamed, the Alterac Ram will follow you back to the Stable Master. Speak with the Stable Master to earn credit for the capture.",
+    ["D"] = "没有鞍具，雷矛部族就无法重新投入到战斗中!我们必须为坐骑配上鞍具，这样我们才不会像野蛮人一样骑着一头光溜溜的山羊。$B$B我们可以简单地干掉基地周围的山羊来获得皮革，但是那样做是非常愚蠢的。因为我们还要把那些山羊驯化成坐骑哪!$B$B你必须去攻击敌人的基地，杀死他们的霜狼坐骑，然后拿回他们的皮。把它们的皮交给我，这样我就可以帮我们的骑兵制作鞍具了。出发吧!",
+    ["O"] = "Slaying the frostwolves they use as mounts and return their hides to me.",
   },
   [7028] = {
     ["D"] = "泰拉莫克水晶洞穴坐落在这里的西边，在玛拉顿的深处……那里是一处拥有悠久历史的古迹。我希望从那里得到一些东西，$C。上古之神的遗物就在那些巨门的后面。$B$B如果你愿意挑战潜伏在玛拉顿里的那些扭曲的邪恶力量，我一定会让你为做出这个决定而感到满意的。收集你所找到的瑟莱德丝水晶雕像，把它们交给我。$B$B一旦我拿到雕像，我就能……研究它们。雕像中蕴含的力量已经沉睡太久了……",
@@ -3115,39 +3074,36 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "你来得真及时，$C。那些霜狼氏族的蛮子就是不愿意放弃！我们要让他们看看联盟真正的力量，让他们一溃千里。$B$B在你踏入战场之前，你最好先通过雷矛部族的试炼。$B$B在这里东南边的冰翼洞穴深处有一面雷矛部族的旗帜。到那里去，把旗帜带回来，然后把它交给我。这样你就可以得到一枚雷矛部族新兵的勋章。",
   },
   [7163] = {
-    ["D"] = "<Warmaster Laggrond salutes you.>$B$BIt is your time, $N. You have done much for the Frostwolf Clan and in doing so, earned a place as not only a soldier of Frostwolf but also as a friend.$B$BWell done! Present your initiate\'s insignia.$B",
+    ["D"] = "<Warmaster 拉格隆德向您致敬。>许多人都没有活到摆脱平庸的那一天。$B$B你已经证明了自己是一个勇士的楷模，$N。现在是提升你的军阶的时候了。这是你的新徽记。",
   },
   [7164] = {
-    ["D"] = "It is good to see you again, $C. I had not expected you to return. Alas, you have proven yourself a brave and honorable soldier of the Frostwolf.$B$BYour time has come again, $N. You have earned a new ranking and as such, a new insignia denoting this rise in stature.$B$BPresent your insignia.",
+    ["D"] = "很高兴再次见到你，$C。我没想到你会回来。 las，您证明了自己是霜狼的勇敢光荣军人。$B$B我们的时间又来了，$ N。您已经获得了新的排名，因此获得了一个新的徽章，表示身材的上升。$ B $ BP表示您的徽章。",
   },
   [7165] = {
-    ["D"] = "I must know, $N. When you look directly into the eyes of the enemy, do you see fear? Do they now cower in your presence? They must realize that they are defeated!$B$BYou have earned reverence among the Guard.$B$BPresent your insignia!",
+    ["D"] = "我想知道，$N。当你一开始瞪着敌人的眼睛，看到他们的恐惧了吗？是不是你一出现他们就痿了？我想现在他们知道自己败了！$B$B你在守卫中赢得了崇敬。$B$B这是你的徽章！",
   },
   [7166] = {
-    ["D"] = "Your radiate command and power, shaman. Exalted in the eyes of Frostwolf - the enemy cowers at the mention of your name.$B$BRise, Hero of Frostwolf. Rise and be honored!$B$BPresent your insignia.",
+    ["D"] = "在我的面前站着的是联盟所尊崇的英雄。<哈格丁中尉向你敬礼。>很少人能够在雷矛部族赢得这样的称号。$B$B我看到敌人向你蜂拥而来，旋即全部倒下。你踏入战场，就成了我们部队的明灯!$B$B这是你的新徽记。",
   },
   [7167] = {
-    ["D"] = "Drek\'Thar sings your praises. Kalimdor is abuzz with tales of your heroics. The Warchief glows - your stalwart defense of our clan has pleased him greatly.$B$BYou have earned the Eye of Command.$B$BPresent your insignia, Commander $N.$B$B<Warmaster Laggrond salutes>",
+    ["D"] = "德雷克塔尔赞美着您的伟业，卡利姆多到处都在传颂您的事迹。大酋长很高兴―您为我们部落做出的贡献让他感到非常高兴。$B$B您将统御我们的部队。这就是您的新徽记，指挥官$B$B。<拉格隆德向你致敬。>",
     ["T"] = "统御之眼",
   },
   [7168] = {
-    ["D"] = "Most do not live long enough to rise above their own mediocrity. You have proven yourself to be an exemplary soldier, $C. The time has come.$B$BPresent your insignia.",
+    ["D"] = "许多人都没有活到摆脱平庸的那一天。你已经证明了自己是一个勇士的楷模，$C。现在是提升你的军阶的时候了。这是你的新徽记。",
   },
   [7169] = {
-    ["D"] = "The base buzzes with news of your exploits in the Field of Strife! You have struck mighty blows against our enemy - crushing their morale! For this, you have earned a rank of honor among the Stormpike.$B$BPresent your insignia.",
+    ["D"] = "整个基地中都在传颂你在征战平原上英勇杀敌的事迹!你对我们的敌人造成了沉重的打击，把他们杀得四散逃窜!$B$B为此，你在雷矛部族中的军阶获得了提升。$B$B这就是你的新徽记。",
   },
   [7170] = {
-    ["D"] = "I must know, $N. When you look directly into the eyes of the enemy, do you see fear? Do they now cower in your presence? They must realize that they are defeated!$B$BYou have earned reverence among the Guard.$B$BPresent your insignia!",
+    ["D"] = "我想知道，$N。当你一开始瞪着敌人的眼睛，看到他们的恐惧了吗？是不是你一出现他们就痿了？我想现在他们知道自己败了！$B$B你在守卫中赢得了崇敬。$B$B这是你的徽章！",
   },
   [7171] = {
-    ["D"] = "Your radiate command and power, shaman. Exalted in the eyes of Frostwolf - the enemy cowers at the mention of your name.$B$BRise, Hero of Frostwolf. Rise and be honored!$B$BPresent your insignia.",
+    ["D"] = "在我的面前站着的是联盟所尊崇的英雄。<哈格丁中尉向你敬礼。>很少人能够在雷矛部族赢得这样的称号。$B$B我看到敌人向你蜂拥而来，旋即全部倒下。你踏入战场，就成了我们部队的明灯!$B$B这是你的新徽记。",
   },
   [7172] = {
-    ["D"] = "It is good to see you again, $C. I had not expected you to return. Alas, you have proven yourself a brave and honorable soldier of the Frostwolf.$B$BYour time has come again, $N. You have earned a new ranking and as such, a new insignia denoting this rise in stature.$B$BPresent your insignia. ",
+    ["D"] = "很高兴再次见到你，$C。我没想到你会回来。 las，您证明了自己是霜狼的勇敢光荣军人。$B$B我们的时间又来了，$ N。您已经获得了新的排名，因此获得了一个新的徽章，表示身材的上升。$ B $ BP表示您的徽章。",
     ["T"] = "统御之眼",
-  },
-  [7201] = {
-    ["O"] = "Travel to Blackrock Depths and recover 10 Essence of the Elements. Your first inclination is to search the golems and golem makers. You remember Vivian Lagrave also muttering something about elementals.",
   },
   [7221] = {
     ["D"] = "啊，魔兽资料库网友，你是来向我报到的?太好了，雷矛部族需要各方面的支援!$B和丹巴达尔的勘察员塔雷·石镐谈谈吧，你可以在丹巴达尔兵营的最下层找到他。$B当你穿越丹巴达尔的时候多四处看看。对于一个勤劳的魔兽资料库网友来说，根本不用担心找不到事情做。",
@@ -3161,12 +3117,6 @@ pfDB["quests"]["zhCN-tbc"] = {
   },
   [7241] = {
     ["D"] = "战鼓的轰鸣再次回响在遥远的土地上，$C。与酋长血脉相连的氏族正在被穷凶极恶的铁炉堡雷矛部族围攻。$B$B我可以看出你很渴望战斗，并且愿意帮助霜狼氏族。$B$B你必须马上证明你的决心。$B$B你可以在希尔斯布莱德丘陵找到奥特兰克山谷的入口。进入其中，找到拉格隆德。快点出发吧，$C，我们马上要展开战斗了！",
-  },
-  [7281] = {
-    ["O"] = "Travel into Stormpike territory and slay Commander Karl Philips. Return to Commander Louis Philips when the task is complete.",
-  },
-  [7282] = {
-    ["O"] = "Travel into Frostwolf territory and slay Commander Louis Philips. Return to Commander Karl Philips when the task is complete.",
   },
   [7301] = {
     ["D"] = "我们的军官被俘虏了，$R。我说的是那些空军指挥官。我们在空中进行了一次激烈的交战，但是他们不幸失败了！更糟糕的是，我们最好的飞行员在反攻霜狼要塞过程中被射落了下来。你必须去找到他们。$B$B搜寻西部哨塔和霜狼要塞，那里是他们最后出现过的地方——彻底搜寻这些地区！",
@@ -3187,10 +3137,12 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "然而泰达希尔并不是一切都尽如人意。范达尔·鹿盔对于世界之树的计划正如他自己所希望的那样一步步展开了，但是还有一个小问题，这个问题或许会给泰达希尔带来一些麻烦。$B$B不过我不打算介入此事。你得去一趟最后一口月亮井，就在这里西北面的神谕林地里，就在神谕之树的树干下面，那是我们的第一口也是最强大的一口月亮井。在那里灌一瓶水，然后回来向我报告。",
   },
   [7385] = {
-    ["O"] = "我和你一样焦急地想要试一下我的便携式伐木机，$C，但是我必须要弄到一些材料——我是说很多材料——才能制作出配套的工具！$B$B实际上，我需要像山那么大的一堆瑟银、秘银和铁，另外每一台伐木机还需要有一个蒸汽锯才能完工，你最好到伐木场去找找看。$B$B我在这里游荡的时候（在我被抓住之前），曾在雷矛伐木场里看到很多的蒸汽锯。",
+    ["D"] = "你可以为我提供更多敌人的鲜血。我很乐意接受更多，$B$B。",
+    ["O"] = "You must strike down our enemies and bring to me their blood.",
   },
   [7386] = {
-    ["O"] = "我和你一样焦急地想要试一下我的便携式伐木机，$C，但是我必须要弄到一些材料——我是说很多材料——才能制作出配套的工具！$B$B实际上，我需要像山那么大的一堆瑟银、秘银和铁，另外每一台伐木机还需要有一个蒸汽锯才能完工，你最好到伐木场去找找看。$B$B我在这里游荡的时候（在我被抓住之前），曾在雷矛伐木场里看到很多的蒸汽锯。",
+    ["D"] = "你可以避开硝烟弥漫的战场。在激烈的战斗之外，你可以帮我收集霜狼氏族的风暴水晶。议会正在收集这样的水晶，$N。",
+    ["O"] = "The Frostwolf soldiers carry elemental charms called storm crystals. We can use the charms to conjure Ivus. Venture forth and claim the crystals, $N!",
   },
   [7401] = {
     ["T"] = "通缉：矮人!",
@@ -3215,7 +3167,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "OLD I\'ve Got A Fever For More Bone Chips",
   },
   [7424] = {
-    ["D"] = "我和你一样焦急地想要试一下我的便携式伐木机，$C，但是我必须要弄到一些材料——我是说很多材料——才能制作出配套的工具！$B$B实际上，我需要像山那么大的一堆瑟银、秘银和铁，另外每一台伐木机还需要有一个蒸汽锯才能完工，你最好到伐木场去找找看。$B$B我在这里游荡的时候（在我被抓住之前），曾在雷矛伐木场里看到很多的蒸汽锯。",
+    ["D"] = "让他们个个都变成瘸子，$N。让他们知道地精可不是好欺负的!",
     ["O"] = "",
   },
   [7425] = {
@@ -3261,9 +3213,6 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "去查看一下他的复生之瓶，凡人。逐风者会在那儿重生！",
     ["O"] = "查看复生之瓶，然后回到德米提恩那里去。",
     ["T"] = "复生之瓶",
-  },
-  [7581] = {
-    ["O"] = "Travel to Dire Maul in Feralas and recover 15 Satyr Blood from the Wildspawn Satyr that inhabit the Warpwood Quarter. Return to Daio in the Tainted Scar when this is done.",
   },
   [7634] = {
     ["D"] = "你好，$C。我是知识古树哈斯塔特。我这里保管着很久以前就消逝了的知识。$B$B在适当的条件之下，我的一片树叶可以变成一只近万年来都没有出现过的箭袋。这只箭袋配合上古之弓就将发挥无穷的力量。$B$B将一头成年蓝龙的肌腱交给我，这只箭袋就是你的了。",
@@ -3350,6 +3299,10 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "",
     ["O"] = "",
   },
+  [7677] = {
+    ["D"] = "如果你把你的白马给我带来，那么我可以让你从新的马中选择一匹。$B$B它们和你原来的马拥有同样的速度，但是其外观将会有所不同。看看这里的马就知道它们大概是什么样子了。",
+    ["O"] = "如果你把你的白马给我带来，那么我可以让你从新的马中选择一匹。$B$B它们和你原来的马拥有同样的速度，但是其外观将会有所不同。看看这里的马就知道它们大概是什么样子了。",
+  },
   [7678] = {
     ["D"] = "",
     ["O"] = "",
@@ -3379,6 +3332,10 @@ pfDB["quests"]["zhCN-tbc"] = {
   },
   [7727] = {
     ["D"] = "拇趾囊肿，$G小伙子:姑娘;。我的拇趾了出现囊肿。难道在这种混乱的情况下我只能砍下自己的脚来解除痛苦吗？这就是我请求你帮助我的原因。$B$B斯克兰格和博恩奈特让我杀掉这些家伙，这样他们就能派出探险队进入熔渣之池进行探索了，我说的就是那种叫做熏火龙还是什么玩艺的麻烦家伙。现在去杀了它们吧，在消灭熏火龙之前别回来找我。",
+  },
+  [7736] = {
+    ["D"] = "我没时间跟你扯东扯西的，$B$B。现在是补充我们日益减少的炽热助熔剂储备的时候了。$B$B我需要的物品有:*熏火龙的鳞片。*皇血草。*煤块。凡是你能给我的，我都要!$B$B如果你想要跟兄弟会搞好关系的话，就最好快点去找。",
+    ["O"] = "向史密斯·伯宁纳特大师交付2个熏火龙鳞片，4个皇血草和1个煤块。",
   },
   [7741] = {
     ["D"] = "",
@@ -3417,7 +3374,8 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "辛特兰地区最令人讨厌的生物之一就是那些野蛮的枭兽。很多勇敢的恶齿战士都倒在了那些野兽的利爪和尖嘴之下。$B$B干掉你看到的每个野蛮的枭兽，$R。当你把它们杀得血流成河的时候就回到我这里来，你的贡献一定会得到我们的赞赏。",
   },
   [7838] = {
-    ["D"] = "Avast Lubber!   Bring me 12 trinkets of the Arena Master and then ye shall be a Grandmaster of the Gurubashi Arena!   Arrrr!",
+    ["D"] = "嘿，傻大个!给我12个竞技场大师饰物，你就可以成为古拉巴什竞技场的宗师!",
+    ["T"] = "竞技场大师饰物",
   },
   [7841] = {
     ["T"] = "给蛮锤部族的警告信",
@@ -3460,13 +3418,17 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "",
     ["O"] = "",
   },
+  [7886] = {
+    ["D"] = "你已经证明了自己在战歌峡谷中的价值!继续帮助我们作战，并给我带来更多的功勋奖章。我们会因此而更加信任你。",
+    ["O"] = "您为上一个任务获得了银翼功勋奖章，再次与我交谈，您将获得奖励。",
+  },
   [7887] = {
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
+    ["D"] = "你已经证明了自己在战歌峡谷中的价值!继续帮助我们作战，并给我带来更多的功勋奖章。我们会因此而更加信任你。",
+    ["O"] = "您为上一个任务获得了银翼功勋奖章，再次与我交谈，您将获得奖励。",
   },
   [7888] = {
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
-    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
+    ["D"] = "你已经证明了自己在战歌峡谷中的价值!继续帮助我们作战，并给我带来更多的功勋奖章。我们会因此而更加信任你。",
+    ["O"] = "您为上一个任务获得了银翼功勋奖章，再次与我交谈，您将获得奖励。",
   },
   [7890] = {
     ["D"] = "",
@@ -3501,17 +3463,25 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "与荆棘竞技场的小个子约翰·米斯瑞尔谈一谈。",
     ["T"] = "竞技场高手饰物",
   },
+  [7921] = {
+    ["D"] = "你已经证明了自己在战歌峡谷中的价值!继续帮助我们作战，并给我带来更多的功勋奖章。我们会因此而更加信任你。",
+    ["O"] = "您为上一个任务获得了银翼功勋奖章，再次与我交谈，您将获得奖励。",
+  },
+  [7922] = {
+    ["D"] = "你已经证明了自己在战歌峡谷中的价值!继续攻打银翼要塞的哨兵部队，给我带来更多的功勋奖章!",
+    ["O"] = "您为上一个任务获得了战歌荣誉奖章，再次与我交谈，您将获得奖励。",
+  },
   [7923] = {
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
+    ["D"] = "你已经证明了自己在战歌峡谷中的价值!继续攻打银翼要塞的哨兵部队，给我带来更多的功勋奖章!",
+    ["O"] = "您为上一个任务获得了战歌荣誉奖章，再次与我交谈，您将获得奖励。",
   },
   [7924] = {
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
+    ["D"] = "你已经证明了自己在战歌峡谷中的价值!继续攻打银翼要塞的哨兵部队，给我带来更多的功勋奖章!",
+    ["O"] = "您为上一个任务获得了战歌荣誉奖章，再次与我交谈，您将获得奖励。",
   },
   [7925] = {
-    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
-    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
+    ["D"] = "你已经证明了自己在战歌峡谷中的价值!继续攻打银翼要塞的哨兵部队，给我带来更多的功勋奖章!",
+    ["O"] = "您为上一个任务获得了战歌荣誉奖章，再次与我交谈，您将获得奖励。",
   },
   [7932] = {
     ["D"] = "",
@@ -3543,8 +3513,8 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "",
   },
   [8001] = {
-    ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
-    ["O"] = "Kill 5 Wretched Zombies",
+    ["D"] = "我是科珀斯，您是个可怜的标本匠，是的！您会做得很好，在这个小镇上已经人满为患，找到空墓的难度越来越大。您能帮我摆脱一些投资我坟墓的肮脏僵尸吗，5个足以确保我有一个休息的空间。",
+    ["O"] = "杀死5个可怜的僵尸",
     ["T"] = "Warsong Outriders <NYI> <TXT>",
   },
   [8002] = {
@@ -3572,6 +3542,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一个阿拉希资源木箱，然后向避难谷地的玛克里尔中士覆命。",
   },
   [8081] = {
+    ["D"] = "所有士兵都会这样告诉你，我们必须依靠我们的士兵进行战斗。他们还会告诉你，他们正使用破烂不堪的装备，饥肠辘辘地迎向战场!$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材─所有我们所需要的东西都可以从那里获得。$B那就是我需要你的地方，魔兽资料库网友。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利并给我带回一箱资源来。",
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一个阿拉希资源木箱，然后向避难谷地的玛克里尔中士覆命。",
   },
   [8109] = {
@@ -3590,6 +3561,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "",
   },
   [8124] = {
+    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
     ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
   },
   [8154] = {
@@ -3605,58 +3577,70 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一个阿拉希资源木箱，然后向避难谷地的玛克里尔中士覆命。",
   },
   [8157] = {
+    ["D"] = "所有士兵都会这样告诉你，我们必须依靠我们的士兵进行战斗。他们还会告诉你，他们正使用破烂不堪的装备，饥肠辘辘地迎向战场!$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材─所有我们所需要的东西都可以从那里获得。$B那就是我需要你的地方，魔兽资料库网友。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利并给我带回一箱资源来。",
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一个阿拉希资源木箱，然后向避难谷地的玛克里尔中士覆命。",
   },
   [8158] = {
+    ["D"] = "所有士兵都会这样告诉你，我们必须依靠我们的士兵进行战斗。他们还会告诉你，他们正使用破烂不堪的装备，饥肠辘辘地迎向战场!$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材─所有我们所需要的东西都可以从那里获得。$B那就是我需要你的地方，魔兽资料库网友。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利并给我带回一箱资源来。",
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一个阿拉希资源木箱，然后向避难谷地的玛克里尔中士覆命。",
   },
   [8159] = {
+    ["D"] = "所有士兵都会这样告诉你，我们必须依靠我们的士兵进行战斗。他们还会告诉你，他们正使用破烂不堪的装备，饥肠辘辘地迎向战场!$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材─所有我们所需要的东西都可以从那里获得。$B那就是我需要你的地方，魔兽资料库网友。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利并给我带回一箱资源来。",
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一个阿拉希资源木箱，然后向避难谷地的玛克里尔中士覆命。",
   },
   [8163] = {
+    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
     ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
   },
   [8164] = {
+    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
     ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
   },
   [8165] = {
+    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
     ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
   },
   [8184] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $BThe first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter $B$Bthis foul place. Look inside the jinxed hoodoo. Bring me these things and I will create a powerful enchantment for you!",
+    ["D"] = "只要有合适的材料，赞札就能制造古老的巨魔附魔。$B$B首先你得从最强大的哈卡莱副官:金度和血领主那里夺来1个原始哈卡莱塑像。$B$B接下来是打孔的巫毒人偶。你可以在散落此地的垃圾堆中找到。看看霉运巫毒堆里面有没有。$B$B把这些物品都给我找来，我会为你制作一个强大的附魔!",
     ["O"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
   },
   [8185] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
+    ["D"] = "只要有合适的材料，赞札就能制造古老的巨魔附魔。$B$B首先你得从最强大的哈卡莱副官:金度和血领主那里夺来1个原始哈卡莱塑像。$B$B接下来是打孔的巫毒人偶。你可以在散落此地的垃圾堆中找到。看看霉运巫毒堆里面有没有。$B$B把这些物品都给我找来，我会为你制作一个强大的附魔!",
     ["O"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
   },
   [8186] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
+    ["D"] = "只要有合适的材料，赞札就能制造古老的巨魔附魔。$B$B首先你得从最强大的哈卡莱副官:金度和血领主那里夺来1个原始哈卡莱塑像。$B$B接下来是打孔的巫毒人偶。你可以在散落此地的垃圾堆中找到。看看霉运巫毒堆里面有没有。$B$B把这些物品都给我找来，我会为你制作一个强大的附魔!",
     ["O"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
   },
   [8187] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
+    ["D"] = "只要有合适的材料，赞札就能制造古老的巨魔附魔。$B$B首先你得从最强大的哈卡莱副官:金度和血领主那里夺来1个原始哈卡莱塑像。$B$B接下来是打孔的巫毒人偶。你可以在散落此地的垃圾堆中找到。看看霉运巫毒堆里面有没有。$B$B把这些物品都给我找来，我会为你制作一个强大的附魔!",
     ["O"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
   },
   [8188] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
+    ["D"] = "只要有合适的材料，赞札就能制造古老的巨魔附魔。$B$B首先你得从最强大的哈卡莱副官:金度和血领主那里夺来1个原始哈卡莱塑像。$B$B接下来是打孔的巫毒人偶。你可以在散落此地的垃圾堆中找到。看看霉运巫毒堆里面有没有。$B$B把这些物品都给我找来，我会为你制作一个强大的附魔!",
     ["O"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
   },
   [8189] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
+    ["D"] = "只要有合适的材料，赞札就能制造古老的巨魔附魔。$B$B首先你得从最强大的哈卡莱副官:金度和血领主那里夺来1个原始哈卡莱塑像。$B$B接下来是打孔的巫毒人偶。你可以在散落此地的垃圾堆中找到。看看霉运巫毒堆里面有没有。$B$B把这些物品都给我找来，我会为你制作一个强大的附魔!",
     ["O"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
   },
   [8190] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
+    ["D"] = "只要有合适的材料，赞札就能制造古老的巨魔附魔。$B$B首先你得从最强大的哈卡莱副官:金度和血领主那里夺来1个原始哈卡莱塑像。$B$B接下来是打孔的巫毒人偶。你可以在散落此地的垃圾堆中找到。看看霉运巫毒堆里面有没有。$B$B把这些物品都给我找来，我会为你制作一个强大的附魔!",
     ["O"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
   },
   [8191] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
+    ["D"] = "只要有合适的材料，赞札就能制造古老的巨魔附魔。$B$B首先你得从最强大的哈卡莱副官:金度和血领主那里夺来1个原始哈卡莱塑像。$B$B接下来是打孔的巫毒人偶。你可以在散落此地的垃圾堆中找到。看看霉运巫毒堆里面有没有。$B$B把这些物品都给我找来，我会为你制作一个强大的附魔!",
     ["O"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
   },
   [8192] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. The first is a primal Hakkari idol that must be taken from the most powerful of the Hakkari lieutenants: Jin\'do and the Bloodlord.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo.$B$BBring me these things and I will create a powerful enchantment for you!",
+    ["D"] = "只要有合适的材料，赞札就能制造古老的巨魔附魔。$B$B首先你得从最强大的哈卡莱副官:金度和血领主那里夺来1个原始哈卡莱塑像。$B$B接下来是打孔的巫毒人偶。你可以在散落此地的垃圾堆中找到。看看霉运巫毒堆里面有没有。$B$B把这些物品都给我找来，我会为你制作一个强大的附魔!",
     ["O"] = "Bring me thise things and I will create a powerful enchantment for you! $BPrimal Hakkari Idol$BPunctured Voodoo Doll",
+  },
+  [8195] = {
+    ["D"] = "我在寻找被称为部族硬币的权力珍宝。在过去，祖尔格拉布的居民们将它们作为流通货币使用，每一枚硬币都浸入了微量而强效的魔精。$B$B这些硬币分为9种。如果你有多馀的硬币，我可以按三枚硬币对应一枚荣誉勋章的价值跟你交换，然后你就可以用勋章跟林沃斯换取某些特殊的物品。",
+  },
+  [8196] = {
+    ["D"] = "南海的许多岛屿上都生长着拥有强效精华的芒果树。吃下芒果的人在身体上和精神上都会有焕然一新的感觉。如果你没有吃过，那真是太可惜了!$B$B这岛上有足够的芒果，你可以用赞达拉荣誉勳章来跟我们交换。如果你想知道如何获得勳章，就去跟温卡萨谈谈。如果你有勳章的话，我们就立即交易吧!",
   },
   [8222] = {
     ["T"] = "发光的蝎血",
@@ -3668,6 +3652,12 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Collin\'s Test Quest",
+  },
+  [8238] = {
+    ["D"] = "我在寻找被称为部族硬币的权力珍宝。在过去，祖尔格拉布的居民们将它们作为流通货币使用，每一枚硬币都浸入了微量而强效的魔精。$B$B这些硬币分为9种。如果你有多馀的硬币，我可以按三枚硬币对应一枚荣誉勋章的价值跟你交换，然后你就可以用勋章跟林沃斯换取某些特殊的物品。",
+  },
+  [8239] = {
+    ["D"] = "我在寻找被称为部族硬币的权力珍宝。在过去，祖尔格拉布的居民们将它们作为流通货币使用，每一枚硬币都浸入了微量而强效的魔精。$B$B这些硬币分为9种。如果你有多馀的硬币，我可以按三枚硬币对应一枚荣誉勋章的价值跟你交换，然后你就可以用勋章跟林沃斯换取某些特殊的物品。",
   },
   [8241] = {
     ["D"] = "我没时间跟你扯东扯西的，$R。现在是补充我们日益减少的炽热助熔剂储备的时候了。$B$B我需要的物品有:$B$B*熏火龙的鳞片。$B$B*铁锭。$B$B*煤块。$B$B凡是你能给我的，我都要!$B$B如果你想要跟兄弟会搞好关系的话，就最好快点去找。",
@@ -3686,6 +3676,18 @@ pfDB["quests"]["zhCN-tbc"] = {
   [8264] = {
     ["T"] = "污染者的标准医疗包",
   },
+  [8266] = {
+    ["D"] = "我知道在战歌峡谷获得胜利并不是容易的事情。但是，你为我们所做出的贡献―即使你还没有获得胜利―对我们来说也很重要。$B$B如果你完成一次战歌峡谷中的试炼但是没有获得胜利的话，你还是可以获得一根奉献绶带。把它带给我，银翼哨兵会因你所做出的贡献而奖励你……即使你未能获得这次战役的胜利。",
+  },
+  [8267] = {
+    ["D"] = "我知道在战歌峡谷获得胜利并不是容易的事情。但是，你为我们所做出的贡献―即使你还没有获得胜利―对我们来说也很重要。$B$B如果你完成一次战歌峡谷中的试炼但是没有获得胜利的话，你还是可以获得一根奉献绶带。把它带给我，银翼哨兵会因你所做出的贡献而奖励你……即使你未能获得这次战役的胜利。",
+  },
+  [8268] = {
+    ["D"] = "我知道在战歌峡谷获得胜利并不是容易的事情。但是，你为我们所做出的贡献―即使你还没有获得胜利―对我们来说也很重要。$B$B如果你完成一次战歌峡谷中的试炼但是没有获得胜利的话，你还是可以获得一根奉献绶带。把它带给我，银翼哨兵会因你所做出的贡献而奖励你……即使你未能获得这次战役的胜利。",
+  },
+  [8269] = {
+    ["D"] = "我知道在战歌峡谷获得胜利并不是容易的事情。但是，你为我们所做出的贡献―即使你还没有获得胜利―对我们来说也很重要。$B$B如果你完成一次战歌峡谷中的试炼但是没有获得胜利的话，你还是可以获得一根奉献绶带。把它带给我，银翼哨兵会因你所做出的贡献而奖励你……即使你未能获得这次战役的胜利。",
+  },
   [8286] = {
     ["O"] = "前往塔纳利斯的时光之穴寻找诺兹多姆的子嗣，阿纳克洛斯。$B$B完成任务后回到希利苏斯塞纳里奥要塞的流沙守望者巴里斯托尔斯那儿。",
   },
@@ -3702,6 +3704,14 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "在这个通道的另一端，你会看到一片战火纷飞的土地，年轻的魔兽资料库网友。部落不断侵入我们神圣的森林，锯断这里的苍天古树来建造他们的战争机器。$B进入战歌峡谷，帮助银翼要塞击败入侵的部落势力吧。",
     ["O"] = "进入战歌峡谷并击败部落小队，取得战歌峡谷荣誉奖章后向银翼树林哨兵轻歌回覆。",
   },
+  [8292] = {
+    ["D"] = "你已经证明了自己在战歌峡谷中的价值!继续帮助我们作战，并给我带来更多的功勋奖章。我们会因此而更加信任你。",
+    ["O"] = "您为上一个任务获得了银翼功勋奖章，再次与我交谈，您将获得奖励。",
+  },
+  [8293] = {
+    ["D"] = "你已经证明了自己在战歌峡谷中的价值!继续攻打银翼要塞的哨兵部队，给我带来更多的功勋奖章!",
+    ["O"] = "您为上一个任务获得了战歌荣誉奖章，再次与我交谈，您将获得奖励。",
+  },
   [8294] = {
     ["D"] = "梣谷森林将在强大的部落面前屈服，魔兽资料库网友。无论夜精灵们说什么做什么，都无法阻止我们的推进。卡林多属于部落，谁敢阻止我们拿取属于我们的东西，谁就要死!$B让你的心中充满荣耀之光，让那些胆敢阻止我们的敌人一个个倒下。摧毁银翼要塞中的哨兵部队，并拿到一枚战歌荣誉奖章。把这样一枚奖章拿来给我，你就可以获得奖赏。",
     ["O"] = "进入战歌峡谷击败联盟小队，获得一枚战歌峡谷荣誉奖章，然后向莫尔杉营地的沙塔尔·碎颅覆命。",
@@ -3716,9 +3726,11 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一个阿拉希资源木箱，然后向避难谷地的玛克里尔中士覆命。",
   },
   [8298] = {
+    ["D"] = "所有士兵都会这样告诉你，我们必须依靠我们的士兵进行战斗。他们还会告诉你，他们正使用破烂不堪的装备，饥肠辘辘地迎向战场!$B这就是阿拉希盆地显得非常重要的原因。金属，武器，食物，木材─所有我们所需要的东西都可以从那里获得。$B那就是我需要你的地方，魔兽资料库网友。进入阿拉希盆地，比敌人占据更多的基地，以此来获得战斗的胜利并给我带回一箱资源来。",
     ["O"] = "获得阿拉希盆地战斗的胜利，获取一个阿拉希资源木箱，然后向避难谷地的玛克里尔中士覆命。",
   },
   [8300] = {
+    ["D"] = "阿拉索联军正在不惜一切代价进攻阿拉希，并妄图夺回这个区域。联盟的各个种族正在全力进军这块遥远的土地，想要将他们的势力从避难谷地扩张到这里。我们必须阻止他们，而最好的方式就是夺取他们的资源。$B$B你可以帮助我们，$N。进入阿拉希盆地，那里遍地都是丰富的矿藏、肥沃的土地和技艺精湛的能工巧匠。占据并控制你找到的所有基地，赢得战斗，然后把你获得的资源给我拿回来。",
     ["O"] = "进入阿拉希盆地，获得一箱阿拉希资源箱，然后将它交给落锤镇的亡灵哨兵莫提斯。",
   },
   [8301] = {
@@ -3847,6 +3859,9 @@ pfDB["quests"]["zhCN-tbc"] = {
   [8356] = {
     ["D"] = "你……你的装束真有趣。即使你心眼好，在陪一个生病的小孩子玩要糖果的恶作剧游戏，恐怕我还是得要求你做点什么！$B$B让我想想……你穿的衣服……看起来非常奇怪……你得炫耀自己的肌肉！是的，就是现在，炫耀你的肌肉吧，强壮的$G男:女;$C！$B$B你必须炫耀肌肉，这样我才会给你美味的暴风城杏仁糖。这可是万圣节的糖果。",
   },
+  [8358] = {
+    ["D"] = "A trick-or-treater!  Yeah mon!$B$BWell now, even though you\'re doing something noble and collecting candies for a sick child, I can\'t let you off the hook that easily.  I have a yummy Darkspear Gumdrop to give to the sick child... if you make a train noise for me!  Haha, yes, that\'ll be the trick!  The price of this gumdrop is one train noise!$B$BChugga-chugga, $c!",
+  },
   [8359] = {
     ["D"] = "你……你的装束真有趣。即使你心眼好，在陪一个生病的小孩子玩要糖果的恶作剧游戏，恐怕我还是得要求你做点什么！$B$B让我想想……你穿的衣服……看起来非常奇怪……你得炫耀自己的肌肉！是的，就是现在，炫耀你的肌肉吧，强壮的$G男:女;$C！$B$B你必须炫耀肌肉，这样我才会给你美味的奥格瑞玛软糖。这可是万圣节的糖果。",
   },
@@ -3876,7 +3891,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "OLD Conquering Arathi Basin",
   },
   [8371] = {
-    ["D"] = "把1枚奥特兰克山谷荣誉奖章，1枚阿拉希盆地荣誉奖章，1枚战歌峡谷荣誉奖章和1枚暴风之眼荣誉奖章交给任何一座部落主城或撒塔斯的部落战争使者。",
+    ["D"] = "我们并不是在独自与部落交战，$G小伙子:小姑娘;。$B$B如果我们可以取得胜利，那么我们就可以使用部落的资源来在其它的战场上对抗他们。反之，如果我们输掉了这场战争，那么在其它的战场上，部落将会占有优势。$B$B联盟需要更多你这种身经百战、意志坚定的老兵！$N，当你在所有战场上都与部落交战之后再回到我这里。",
     ["O"] = "把1枚奥特兰克山谷荣誉奖章，1枚阿拉希盆地荣誉奖章，1枚战歌峡谷荣誉奖章和1枚暴风之眼荣誉奖章交给任何一座部落主城或撒塔斯的部落战争使者。",
   },
   [8372] = {
@@ -3904,40 +3919,48 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "军备物资",
   },
   [8383] = {
+    ["D"] = "奥特兰克山谷的战斗正在激烈地进行中，$N!你有没有完成你应尽的职责，$N?",
     ["O"] = "把3枚奥特兰克山谷荣誉奖章交给战场外的联盟准将。",
     ["T"] = "铭记奥特兰克!",
   },
   [8384] = {
+    ["D"] = "要取得战争的胜利，我们要做的并不仅仅是简单地打败敌人，胜利的关键往往取决于双方的战争资源。$B阿拉希盆地蕴藏着大量物资，部落和联盟都想抢先夺取这些资源。$B如果联盟获胜，我们的军队将获得大量的剑和矛。如果部落获胜，这些武器也一样会被造出来，只不过是由部落的士兵拿在手里，指着我们!去协助阿拉希盆地的联盟吧，魔兽资料库网友。",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的联盟准将。",
     ["T"] = "OLD Claiming Arathi Basin",
   },
   [8385] = {
-    ["D"] = "把1枚奥特兰克山谷荣誉奖章，1枚阿拉希盆地荣誉奖章，1枚战歌峡谷荣誉奖章和1枚暴风之眼荣誉奖章交给任何一座部落主城或撒塔斯的部落战争使者。",
+    ["D"] = "啊，$N。我希望你在各个战场的前线传授你的经验。许多刚刚来到战场上的小伙子和小姑娘都非常尊敬你这样的老兵。",
     ["O"] = "把1枚奥特兰克山谷荣誉奖章，1枚阿拉希盆地荣誉奖章，1枚战歌峡谷荣誉奖章和1枚暴风之眼荣誉奖章交给任何一座部落主城或撒塔斯的部落战争使者。",
   },
   [8386] = {
+    ["D"] = "银翼哨兵正在和战歌侦察骑兵争夺这片森林。当然，银翼哨兵保护森林的原因并非只有热爱大自然这条理由。$B梣谷的森林对我们来说是一层天然的战略屏障，可以抵抗大规模的进攻。如果没有这片森林的话，阿斯特兰纳很快就会完全暴露在贫瘠之地的攻击部队面前。你愿意参加对抗战歌前锋的战斗吗?为了联盟!",
     ["O"] = "将3枚战歌峡谷荣誉奖章交给战场外的联盟准将。",
     ["T"] = "OLD Fight for Warsong Gulch",
   },
   [8387] = {
+    ["D"] = "奥特兰克山谷的战斗正在激烈地进行中!你必须回到奥特兰克山谷，把入侵者赶出霜狼氏族的领地，$N!",
     ["O"] = "把3枚奥特兰克山谷荣誉奖章交给战场外的部落战争使者。",
   },
   [8388] = {
+    ["D"] = "许多勇敢的士兵都非常尊敬你，$N。你一直是那些和联盟艰苦作战的勇士的榜样。你从旅途中带回了什么消息?",
     ["O"] = "把1枚奥特兰克山谷荣誉奖章，1枚阿拉希盆地荣誉奖章，1枚战歌峡谷荣誉奖章和1枚暴风之眼荣誉奖章交给任何一座部落主城或撒塔斯的部落战争使者。",
   },
   [8389] = {
+    ["D"] = "我们在战歌峡谷对银翼哨兵的战役非常重要。联盟以保护这片不属于他们的森林为由，妄图从部落手中夺取我们最大的伐木场。$B别让他们的妄想成为事实，魔兽资料库网友!为了部落，证明你的价值!成功之后再回到我这儿来。",
     ["O"] = "将3枚战歌荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "OLD Battle of Warsong Gulch",
   },
   [8390] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
+    ["D"] = "我们和联盟的冲突已经上升为一场真正的战争，不久之后战争就将全面打响。$B对于阿拉希盆地的争夺就是一个很好的开战理由。要么就是联盟占据它，并用其对付我们;或者就是我们占据它，然后用来对付联盟。帮助污染者保持这场资源竞赛上的优势吧，魔兽资料库网友!",
     ["T"] = "OLD Conquering Arathi Basin",
   },
   [8391] = {
+    ["D"] = "要取得战争的胜利，我们要做的并不仅仅是简单地打败敌人，胜利的关键往往取决于双方的战争资源。$B阿拉希盆地蕴藏着大量物资，部落和联盟都想抢先夺取这些资源。$B如果联盟获胜，我们的军队将获得大量的剑和矛。如果部落获胜，这些武器也一样会被造出来，只不过是由部落的士兵拿在手里，指着我们!去协助阿拉希盆地的联盟吧，魔兽资料库网友。",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的联盟准将。",
     ["T"] = "OLD Claiming Arathi Basin",
   },
   [8392] = {
+    ["D"] = "要取得战争的胜利，我们要做的并不仅仅是简单地打败敌人，胜利的关键往往取决于双方的战争资源。$B阿拉希盆地蕴藏着大量物资，部落和联盟都想抢先夺取这些资源。$B如果联盟获胜，我们的军队将获得大量的剑和矛。如果部落获胜，这些武器也一样会被造出来，只不过是由部落的士兵拿在手里，指着我们!去协助阿拉希盆地的联盟吧，魔兽资料库网友。",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的联盟准将。",
     ["T"] = "OLD Claiming Arathi Basin",
   },
@@ -3958,10 +3981,12 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "OLD Claiming Arathi Basin",
   },
   [8397] = {
+    ["D"] = "要取得战争的胜利，我们要做的并不仅仅是简单地打败敌人，胜利的关键往往取决于双方的战争资源。$B阿拉希盆地蕴藏着大量物资，部落和联盟都想抢先夺取这些资源。$B如果联盟获胜，我们的军队将获得大量的剑和矛。如果部落获胜，这些武器也一样会被造出来，只不过是由部落的士兵拿在手里，指着我们!去协助阿拉希盆地的联盟吧，魔兽资料库网友。",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的联盟准将。",
     ["T"] = "OLD Claiming Arathi Basin",
   },
   [8398] = {
+    ["D"] = "要取得战争的胜利，我们要做的并不仅仅是简单地打败敌人，胜利的关键往往取决于双方的战争资源。$B阿拉希盆地蕴藏着大量物资，部落和联盟都想抢先夺取这些资源。$B如果联盟获胜，我们的军队将获得大量的剑和矛。如果部落获胜，这些武器也一样会被造出来，只不过是由部落的士兵拿在手里，指着我们!去协助阿拉希盆地的联盟吧，魔兽资料库网友。",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的联盟准将。",
     ["T"] = "OLD Claiming Arathi Basin",
   },
@@ -3986,22 +4011,27 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "OLD Fight for Warsong Gulch",
   },
   [8404] = {
+    ["D"] = "银翼哨兵正在和战歌侦察骑兵争夺这片森林。当然，银翼哨兵保护森林的原因并非只有热爱大自然这条理由。$B梣谷的森林对我们来说是一层天然的战略屏障，可以抵抗大规模的进攻。如果没有这片森林的话，阿斯特兰纳很快就会完全暴露在贫瘠之地的攻击部队面前。你愿意参加对抗战歌前锋的战斗吗?为了联盟!",
     ["O"] = "将3枚战歌峡谷荣誉奖章交给战场外的联盟准将。",
     ["T"] = "OLD Fight for Warsong Gulch",
   },
   [8405] = {
+    ["D"] = "银翼哨兵正在和战歌侦察骑兵争夺这片森林。当然，银翼哨兵保护森林的原因并非只有热爱大自然这条理由。$B梣谷的森林对我们来说是一层天然的战略屏障，可以抵抗大规模的进攻。如果没有这片森林的话，阿斯特兰纳很快就会完全暴露在贫瘠之地的攻击部队面前。你愿意参加对抗战歌前锋的战斗吗?为了联盟!",
     ["O"] = "将3枚战歌峡谷荣誉奖章交给战场外的联盟准将。",
     ["T"] = "OLD Fight for Warsong Gulch",
   },
   [8406] = {
+    ["D"] = "银翼哨兵正在和战歌侦察骑兵争夺这片森林。当然，银翼哨兵保护森林的原因并非只有热爱大自然这条理由。$B梣谷的森林对我们来说是一层天然的战略屏障，可以抵抗大规模的进攻。如果没有这片森林的话，阿斯特兰纳很快就会完全暴露在贫瘠之地的攻击部队面前。你愿意参加对抗战歌前锋的战斗吗?为了联盟!",
     ["O"] = "将3枚战歌峡谷荣誉奖章交给战场外的联盟准将。",
     ["T"] = "OLD Fight for Warsong Gulch",
   },
   [8407] = {
+    ["D"] = "银翼哨兵正在和战歌侦察骑兵争夺这片森林。当然，银翼哨兵保护森林的原因并非只有热爱大自然这条理由。$B梣谷的森林对我们来说是一层天然的战略屏障，可以抵抗大规模的进攻。如果没有这片森林的话，阿斯特兰纳很快就会完全暴露在贫瘠之地的攻击部队面前。你愿意参加对抗战歌前锋的战斗吗?为了联盟!",
     ["O"] = "将3枚战歌峡谷荣誉奖章交给战场外的联盟准将。",
     ["T"] = "OLD Fight for Warsong Gulch",
   },
   [8408] = {
+    ["D"] = "银翼哨兵正在和战歌侦察骑兵争夺这片森林。当然，银翼哨兵保护森林的原因并非只有热爱大自然这条理由。$B梣谷的森林对我们来说是一层天然的战略屏障，可以抵抗大规模的进攻。如果没有这片森林的话，阿斯特兰纳很快就会完全暴露在贫瘠之地的攻击部队面前。你愿意参加对抗战歌前锋的战斗吗?为了联盟!",
     ["O"] = "将3枚战歌峡谷荣誉奖章交给战场外的联盟准将。",
     ["T"] = "OLD Fight for Warsong Gulch",
   },
@@ -4043,22 +4073,27 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "OLD Battle of Warsong Gulch",
   },
   [8431] = {
+    ["D"] = "我们在战歌峡谷对银翼哨兵的战役非常重要。联盟以保护这片不属于他们的森林为由，妄图从部落手中夺取我们最大的伐木场。$B别让他们的妄想成为事实，魔兽资料库网友!为了部落，证明你的价值!成功之后再回到我这儿来。",
     ["O"] = "将3枚战歌荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "OLD Battle of Warsong Gulch",
   },
   [8432] = {
+    ["D"] = "我们在战歌峡谷对银翼哨兵的战役非常重要。联盟以保护这片不属于他们的森林为由，妄图从部落手中夺取我们最大的伐木场。$B别让他们的妄想成为事实，魔兽资料库网友!为了部落，证明你的价值!成功之后再回到我这儿来。",
     ["O"] = "将3枚战歌荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "OLD Battle of Warsong Gulch",
   },
   [8433] = {
+    ["D"] = "我们在战歌峡谷对银翼哨兵的战役非常重要。联盟以保护这片不属于他们的森林为由，妄图从部落手中夺取我们最大的伐木场。$B别让他们的妄想成为事实，魔兽资料库网友!为了部落，证明你的价值!成功之后再回到我这儿来。",
     ["O"] = "将3枚战歌荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "OLD Battle of Warsong Gulch",
   },
   [8434] = {
+    ["D"] = "我们在战歌峡谷对银翼哨兵的战役非常重要。联盟以保护这片不属于他们的森林为由，妄图从部落手中夺取我们最大的伐木场。$B别让他们的妄想成为事实，魔兽资料库网友!为了部落，证明你的价值!成功之后再回到我这儿来。",
     ["O"] = "将3枚战歌荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "OLD Battle of Warsong Gulch",
   },
   [8435] = {
+    ["D"] = "我们在战歌峡谷对银翼哨兵的战役非常重要。联盟以保护这片不属于他们的森林为由，妄图从部落手中夺取我们最大的伐木场。$B别让他们的妄想成为事实，魔兽资料库网友!为了部落，证明你的价值!成功之后再回到我这儿来。",
     ["O"] = "将3枚战歌荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "OLD Battle of Warsong Gulch",
   },
@@ -4079,18 +4114,22 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "OLD Conquering Arathi Basin",
   },
   [8440] = {
+    ["D"] = "我们和联盟的冲突已经上升为一场真正的战争，不久之后战争就将全面打响。$B对于阿拉希盆地的争夺就是一个很好的开战理由。要么就是联盟占据它，并用其对付我们;或者就是我们占据它，然后用来对付联盟。帮助污染者保持这场资源竞赛上的优势吧，魔兽资料库网友!",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "OLD Conquering Arathi Basin",
   },
   [8441] = {
+    ["D"] = "我们和联盟的冲突已经上升为一场真正的战争，不久之后战争就将全面打响。$B对于阿拉希盆地的争夺就是一个很好的开战理由。要么就是联盟占据它，并用其对付我们;或者就是我们占据它，然后用来对付联盟。帮助污染者保持这场资源竞赛上的优势吧，魔兽资料库网友!",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "OLD Conquering Arathi Basin",
   },
   [8442] = {
+    ["D"] = "我们和联盟的冲突已经上升为一场真正的战争，不久之后战争就将全面打响。$B对于阿拉希盆地的争夺就是一个很好的开战理由。要么就是联盟占据它，并用其对付我们;或者就是我们占据它，然后用来对付联盟。帮助污染者保持这场资源竞赛上的优势吧，魔兽资料库网友!",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "OLD Conquering Arathi Basin",
   },
   [8443] = {
+    ["D"] = "我们和联盟的冲突已经上升为一场真正的战争，不久之后战争就将全面打响。$B对于阿拉希盆地的争夺就是一个很好的开战理由。要么就是联盟占据它，并用其对付我们;或者就是我们占据它，然后用来对付联盟。帮助污染者保持这场资源竞赛上的优势吧，魔兽资料库网友!",
     ["O"] = "将3枚阿拉希盆地荣誉奖章交给战场外的部落战争使者。",
     ["T"] = "OLD Conquering Arathi Basin",
   },
@@ -4263,9 +4302,6 @@ pfDB["quests"]["zhCN-tbc"] = {
   [8518] = {
     ["D"] = "我非常惊奇有那么多无私的人将私欲抛于一旁。$C，我还需要收集更多的亚麻绷带，直到完成我的指标。你是否可以再帮我收集一些亚麻绷带呢？",
   },
-  [8519] = {
-    ["O"] = "Learn all that you can of the past, then speak with Anachronos at the Caverns of Time in Tanaris.",
-  },
   [8520] = {
     ["D"] = "随着安其拉之战逼近，我们一定要做好所有准备让士兵们无后患之忧。我们就在这里准备。我的工作被指派为收集足够的丝质绷带。$B$B你觉得你能帮我吗，$C？",
     ["O"] = "带20个丝质绷带给铁炉堡军事区的护士斯通菲尔德。",
@@ -4355,21 +4391,27 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "Priest Training",
   },
   [8565] = {
+    ["D"] = "啊，对!我们当然不会忘记你过去在阿拉希盆地的成就，$N。",
     ["T"] = "往日的胜利:阿拉希盆地",
   },
   [8566] = {
+    ["D"] = "啊，对!我们当然不会忘记你过去在阿拉希盆地的成就，$N。",
     ["T"] = "往日的胜利:阿拉希盆地",
   },
   [8567] = {
+    ["D"] = "啊，对!我们当然不会忘记你过去在战歌峡谷的成就，$N。",
     ["T"] = "往日的胜利:战歌峡谷",
   },
   [8568] = {
+    ["D"] = "啊，对!我们当然不会忘记你过去在战歌峡谷的成就，$N。",
     ["T"] = "往日的胜利:战歌峡谷",
   },
   [8569] = {
+    ["D"] = "啊，对!我们当然不会忘记你过去在战歌峡谷的成就，$N。",
     ["T"] = "往日的贡献:战歌峡谷",
   },
   [8570] = {
+    ["D"] = "啊，对!我们当然不会忘记你过去在战歌峡谷的成就，$N。",
     ["T"] = "往日的贡献:战歌峡谷",
   },
   [8572] = {
@@ -4410,6 +4452,9 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "我很高兴你决定和我谈谈这个，$C。部落方面已经着手为即将开始的安其拉之战做准备了，你我都要做好自己该做的事情。我被指派来收集大量的厚皮，我需要你帮忙去收集这些东西。这项工作是你的荣耀，也是表示你对部落的忠诚的好机会。你愿意帮忙吗？",
     ["O"] = "带10张厚皮给奥格玛精神谷的乌玛拉中士。",
   },
+  [8595] = {
+    ["D"] = "你继续好好的效忠我们吧，$N。我们的协定依然存在。$B$B",
+  },
   [8600] = {
     ["D"] = "我发现刀子握在掌心的适合度远比刀口的锋利重要。即使是最钝的刀剑也能在危急时发挥作用。但是你和我没有这种问题，毕竟我们总会让刀锋维持在最利的状态。$B$B对吧?嗯，不重要。我有个任务要给你，$C。为了部落，还有你对安其拉之战该尽的职责，我要你去收集很多硬甲皮给我。你能做到吗?",
     ["O"] = "带10张硬甲皮给奥格玛精神谷的塞拉图斯。",
@@ -4428,6 +4473,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "我相信你来找我是想要帮助我收集东西？很好！不管怎么样，我接受所有的帮助，并且我需要你帮忙去收集厚魔纹绷带。最好是新做的，但不是必须。把它们交给我，$C，我会给你适当的奖励的。",
   },
   [8608] = {
+    ["D"] = "你回来了?真有趣。你看我还在收集安其拉战役要用的东西。这表示我需要你再次为我收集一堆魔纹布绷带。如果你能再做一次会相当令人惊讶的$C。",
     ["O"] = "把20卷魔纹绷带交给奥格瑞玛精神谷的卡隆。",
   },
   [8609] = {
@@ -4481,7 +4527,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "我很高兴听说你愿意帮助我们进攻安其拉，$N。我可以制作一件装备，让你在作战时获得一些保护，$C。$B$B我需要一件其拉斗篷，然后把它按照你的体型进行修改。我还需要其拉塑像和圣甲虫，这样我才能制作合适的扣子。$B$B我保证你一定不会失望的。",
   },
   [8690] = {
-    ["D"] = "将1件其拉帝王披风、2个黑曜石雕像、5个黄金甲虫和5个陶土甲虫交给凯伊·迅爪。你必须在塞纳里奥议会中达到崇敬声望才能完成这个任务。",
+    ["D"] = "我很高兴听说你愿意帮助我们进攻安其拉，$N。我可以制作一件装备，让你在作战时获得一些保护，$C。$B$B我需要一件其拉斗篷，然后把它按照你的体型进行修改。我还需要其拉塑像和圣甲虫，这样我才能制作合适的扣子。$B$B我保证你一定不会失望的。",
     ["O"] = "将1件其拉帝王披风、2个黑曜石雕像、5个黄金甲虫和5个陶土甲虫交给凯伊·迅爪。你必须在塞纳里奥议会中达到崇敬声望才能完成这个任务。",
   },
   [8691] = {
@@ -4524,7 +4570,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "将1枚其拉葬礼戒指、2个翠玉雕像、5个岩石甲虫和5个水晶甲虫交给唤风者耶萨德拉。",
   },
   [8703] = {
-    ["D"] = "将1枚其拉将领戒指、2个朱红雕像、5个银质甲虫和5个白骨甲虫交给唤风者耶萨德拉。你必须在塞纳里奥议会中达到尊敬声望才能完成这个任务。",
+    ["D"] = "据说其拉虫人的军官所佩戴的戒指可以给他们带来无穷的能量。那些戒指上镶嵌着腐化的宝石，也许我们可以用纯净的材料替换它们，以此来制作净化版本的戒指。$B$B那些装饰在其拉雕像上的宝石就非常合适，它们的质量非常好。$B$B把戒指和雕像交给我，我会为你制作一枚强大的戒指，$C。",
   },
   [8704] = {
     ["D"] = "据说其拉虫人的军官所佩戴的戒指可以给他们带来无穷的能量。那些戒指上镶嵌着腐化的宝石，也许我们可以用纯净的材料替换它们，以此来制作净化版本的戒指。$B$B那些装饰在其拉雕像上的宝石就非常合适，它们的质量非常好。$B$B把戒指和雕像交给我，我会为你制作一枚强大的戒指，$C。",
@@ -4544,12 +4590,6 @@ pfDB["quests"]["zhCN-tbc"] = {
   [8730] = {
     ["O"] = "干掉奈法利安并拿到Red Scepter Shard。把Red Scepter Shard带给塔纳利斯时光之穴门口的阿纳克洛斯。你必须在5小时之内完成这个任务。",
   },
-  [8733] = {
-    ["O"] = "Travel to the continent of Teldrassil and find Malfurion\'s agent somewhere outside the walls of Darnassus.",
-  },
-  [8735] = {
-    ["O"] = "Travel to the four Emerald Dream portals in Azeroth and collect a Fragment of the Nightmare\'s Corruption from each. Return to Keeper Remulos in the Moonglade when you have completed this task.",
-  },
   [8737] = {
     ["T"] = "碧蓝圣殿骑士",
   },
@@ -4565,7 +4605,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "勇士回来了",
   },
   [8742] = {
-    ["D"] = "A thousand years has passed and just as it was fated, one stands before me. One who shall lead their people to a new age.$B$BThe Old God trembles, $N. Oh yes, it fears your faith. Shatter the prophecy of C\'Thun.$B$BIt knows you come, champion - and with you comes the might of Kalimdor. You have only to let me know when you are prepared and I shall grant you The Scepter of the Shifting Sands.",
+    ["D"] = "一千年过去了，正如命中注定的那样，一位勇士站在了我的面前。这位勇士将会带领他的人民走向新的纪元。$B$B上古之神在颤抖，$N。是的，它在你坚定的信念面前恐惧地颤抖着。打破克苏恩的预言吧。$B$B它知道你会到来的，勇士―它还知道卡林多的力量与你同在。当你做好准备之后，请通知我，我将把流沙权杖赐予你。",
     ["T"] = "卡林多的力量",
   },
   [8743] = {
@@ -4573,6 +4613,15 @@ pfDB["quests"]["zhCN-tbc"] = {
   },
   [8745] = {
     ["T"] = "永恒之王的财宝",
+  },
+  [8751] = {
+    ["D"] = "我从没看过这样不屈不挠的人!青铜龙军团将给你最後的附魔强化。这是永恒之王本人的希望!$B$B将你的徽记之戒交给我，这样我才能做些必要的调整。",
+  },
+  [8756] = {
+    ["D"] = "我从没看过这样不屈不挠的人!青铜龙军团将给你最後的附魔强化。这是永恒之王本人的希望!$B$B将你的徽记之戒交给我，这样我才能做些必要的调整。",
+  },
+  [8761] = {
+    ["D"] = "我从没看过这样不屈不挠的人!青铜龙军团将给你最後的附魔强化。这是永恒之王本人的希望!$B$B将你的徽记之戒交给我，这样我才能做些必要的调整。",
   },
   [8764] = {
     ["D"] = "",
@@ -4616,7 +4665,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "沙漠生存包",
   },
   [8846] = {
-    ["D"] = "Ah, here for additional supplies for yourself, are you?  Well, I can certainly understand the need for additional materiel... just take a look around if you need any proof.$B$BI\'ll issue you some additional supplies, but you\'ll need to give me an appropriate number of commendation signets in exchange.  You won\'t receive any recognition for surrendering the signets in this manner, but you might find something useful that will help keep you alive when battle is finally upon us.",
+    ["D"] = "啊，又来给自己领取补给品了吗?好吧，我当然理解你需要更多物资的想法……不信你可以看看周围。$B$B我可以给你一些补给品，但是你必须给我几枚荣誉徽章作为交换。你不会因此获得任何声望的提升，但当战斗来临时，这些物资也许可以保住你的性命。",
     ["O"] = "",
   },
   [8847] = {
@@ -4660,10 +4709,10 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "春节饺子",
   },
   [8864] = {
-    ["D"] = "I have a selection of dresses that may be of interest to you.  Such dresses have been worn in times past during the Lunar Festival, and the selection I have today is perhaps the finest I have ever seen.  Each is hand-crafted with only the finest and softest of components.$B$BIn exchange for some coins of ancestry, I will let you choose one of the three styles I have to keep as your own.  Is this acceptable to you?",
+    ["D"] = "你可能会对我出售的洋装感兴趣。这样的洋装适合在新年穿着，而且我今天带来的款式都是最好的一批。每件洋装都是用最精细柔软的材料手工缝制。$B$B拿一些先祖硬币来交换，我就会让你从这三种款式中挑选一件。这样你可以接受吗?",
   },
   [8865] = {
-    ["D"] = "I am please to inform you that I have a fine selection of festive pant suits available for you to own... but only in trade for coins of ancestry.  If fashion is important to you, then these are what you\'re looking for!  I assure you that you will not find pant suits like these anywhere else.$B$BIn exchange for some Coins of Ancestry, I will let you choose one of the three styles I have to keep as your own.  Is this acceptable to you?",
+    ["D"] = "很高兴告诉你，我有一系列的节庆长裤套装供你选择…只是要用先祖硬币来交换。如果时髦对你而言很重要的话，这些就是你要找的东西!我跟你保证，你不可能在别的地方买到这样的长裤套装。$B$B拿一点先祖硬币来交换，我就会让你从这三种样式中挑选一件。这样你可以接受吗?",
   },
   [8868] = {
     ["D"] = "年兽曾经是这个世界的英雄，一头充满着力量、能给人带来幸运的巨狼。在上古之战时，它和其他的英雄一起对抗燃烧军团，但最终却被恶魔腐蚀，成为了邪恶的野兽，在艾泽拉斯传播恐惧与死亡。$B$B最终，它在月光林地这里被打败了，并长眠在月神湖底。但是每年的这个时候，在春节期间，它都会苏醒……$B$B集结你的军团吧，$N，召唤并打败年兽，艾露恩将赐予你祝福！",
@@ -5020,16 +5069,10 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "到黑石山去，使用超维度幽灵显形器找到伯德雷。",
     ["T"] = "伯德雷的不幸",
   },
-  [9034] = {
-    ["O"] = "Korfax at Light\'s Hope Chapel in the Eastern Plaguelands will make a Dreadnaught Breastplate if you bring him the following items: 1 Desecrated Breastplate, 25 Wartorn Plate Scraps, 4 Arcanite Bars and 2 Nexus Crystals.",
-  },
   [9035] = {
     ["D"] = "嘿，叫你呢！你可得帮帮我。$B$B我和我的学徒被那些肮脏的怪物袭击了！他们渴望拥有魔法力量，疯狂地收集法力水晶、魔杖、法术书……所有与魔法相关的东西！$B$B梅雷多尔追他们去了，我只得留在这儿保护好幸存的东西。沿着这条路往前走，看看你能不能帮他一把。",
     ["O"] = "出了银月城向南走便是永歌森林，去那儿找学徒梅雷多尔谈谈。",
     ["T"] = "打探匪情",
-  },
-  [9039] = {
-    ["O"] = "Korfax at Light\'s Hope Chapel in the Eastern Plaguelands will make Dreadnaught Sabatons if you bring him the following items: 1 Desecrated Sabatons, 12 Wartorn Plate Scraps, 2 Arcanite Bars and 3 Cured Rugged Hides.",
   },
   [9040] = {
     ["T"] = "无畏手套",
@@ -5048,9 +5091,6 @@ pfDB["quests"]["zhCN-tbc"] = {
   },
   [9057] = {
     ["T"] = "地穴追猎者肩甲",
-  },
-  [9060] = {
-    ["O"] = "Huntsman Leopold at Light\'s Hope Chapel in the Eastern Plaguelands will make a Cryptstalker Girdle if you bring him the following: 1 Desecrated Girdle, 8 Wartorn Chain Scraps, 1 Arcanite Bar and 3 Nexus Crystals.",
   },
   [9061] = {
     ["T"] = "地穴追猎者护腕",
@@ -5197,6 +5237,9 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "$N，现在，收复幽魂之地最后一座村庄的任务也将落在你的肩上。风行村位于这里的西南方，目前被一群非常强大的天灾军团飞行部队占据了。这些飞行部队由石像鬼和阴影组成。你将是我们进攻力量的核心，将是羽箭之锋芒，将是担负起削弱对方军力的重任的先锋。$B$B附近的太阳圣殿里的魔导师们最近还递交了一份特殊申请，他们希望能获得一些天灾军团生物的残骸碎片用于研究，看看能否找到它们的弱点。$B$B祝你狩猎愉快！",
     ["O"] = "收集6份幻影灵质和4块石像鬼碎片，把它们交给幽魂之地塔奎林的奥术师范迪瑞尔。",
     ["T"] = "风行者村落",
+  },
+  [9142] = {
+    ["D"] = "你知道规矩，孩子。一枚勇气勋章才能让你获得一份工匠的令状。",
   },
   [9143] = {
     ["D"] = "The lieutenant here rushed us into battle with the trolls across the lake instead of scouting the situation first. We were decimated by his stupidity! You hear me Tomathren? You\'re an idiot!$B$BWill you help us, $c? Those trolls still need to be dealt with. I need to stay here and nursemaid him -- I think he\'s lost his mind.$B$BJust head east to the other side of the lake into Zeb\'Sora. I want revenge... bring me their ears so that I can fashion a nice necklace!",
@@ -5430,7 +5473,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "暗松巨魔的武器",
   },
   [9215] = {
-    ["D"] = "悬赏：将暗松巨魔酋长克尔加什的徽记交给赫里奥斯中尉。不要问任何其它问题。根据目前的情报，克尔加什居住在塞布努瓦南部某处。$B$B$B$B奖励：有奖励，但无预付！",
+    ["D"] = "悬赏：将暗松巨魔酋长克尔加什的徽记交给赫里奥斯中尉。不要问任何其它问题。根据目前的情报，克尔加什居住在塞布努瓦南部某处。$B$B奖励：有奖励，但无预付！",
     ["O"] = "将克尔加什的徽记交给远行者营地的赫里奥斯中尉。",
     ["T"] = "克尔加什的徽记！",
   },
@@ -5458,9 +5501,6 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "如果你想要伸出援手，现在正是时候。$B$B我们最近重建了太阳圣殿，并正式向戴索姆的敌军宣战。$B$B前往那座天灾军团的要塞，英勇作战吧。",
     ["O"] = "前往戴索姆杀死5个达尔坎之眼、6个蛛怪百夫长和6个恸哭者，然后向幽魂之地太阳圣殿的魔导师伊东尼斯复命。",
     ["T"] = "戴索姆之战",
-  },
-  [9230] = {
-    ["O"] = "Korfax at Light\'s Hope Chapel in the Eastern Plaguelands wants you to bring him 1 Frozen Rune, 1 Blue Sapphire and 1 Arcanite Bar.",
   },
   [9234] = {
     ["T"] = "破冰护手",
@@ -5777,29 +5817,13 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "与塔奎林的高级执行官玛尔伦谈一谈。",
     ["T"] = "被遗忘者",
   },
-  [9333] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "银色黎明手套",
-  },
-  [9334] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "神圣巫师之油",
-  },
   [9335] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "神圣的磨刀石",
   },
   [9336] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "特效治疗药水",
   },
   [9337] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "特效法力药水",
   },
   [9339] = {
@@ -5815,11 +5839,6 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "As if the gan\'arg that overran the mines aren\'t bad enough, now we\'ve got gigantic worms encroaching on us from the other direction!$B$BWith Thrallmar\'s garrison pinned down defending against the Legion and tending to their wounded, it leaves me and the miners to deal with the problems.$B$B<The foreman gestures at the sleeping peons.>$B$BAnd you can see how useful they are...$B$BI\'d gladly pay you their wages to clear out some of those worms.",
     ["O"] = "Foreman Razelcraz at the mines near Thrallmar wants you to kill 15 Marauding Crust Bursters. The worms have a tendency to attack suddenly from their tunnels below ground.",
     ["T"] = "BETA Marauding Crust Bursters",
-  },
-  [9343] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "银色黎明战袍",
   },
   [9344] = {
     ["D"] = "Greetings, $N. Outland is a perilous place, as many of our expedition quickly learned. I\'m afraid young Grelag may have learned that lesson firsthand.$B$BGrelag is a promising student, but he lacks patience! He eagerly studies the history of his people, but he sometimes forgets the threats of the present day.$B$BHe departed for the Spinebreaker Post, ignorant of the Legion and fel orc presences. I fear something may have happened to him.",
@@ -5908,8 +5927,6 @@ pfDB["quests"]["zhCN-tbc"] = {
   },
   [9367] = {
     ["D"] = "仲夏就要来了！$B$B每一年，按照传统，各大城市里都会选出护火者来照看我们城中的篝火。当火焰燃烧在艾泽拉斯世界的各处时，我们就可以通过这种世上最热诚也最明亮的事物向夏天这个季节表示敬意。$B$B事实上，若你不介意的话，我有个任务要交给你。我还不知道是否所有城市里的火焰都已经点起了。到各大城市去吧，让那里的火焰温暖你的身躯，当然，首先要确认它们已经被点燃了！",
-    ["O"] = "碰触暴风城、铁炉堡和达纳苏斯城里的篝火，然后与城市内的节日博学者交谈。",
-    ["T"] = "火焰的节日",
   },
   [9368] = {
     ["D"] = "仲夏就要来了！$B$B每一年，按照传统，各大城市里都会选出护火者来照看我们城中的篝火。当火焰燃烧在艾泽拉斯世界的各处时，我们就可以通过这种世上最热诚也最明亮的事物向夏天这个季节表示敬意。$B$B事实上，若你不介意的话，我有个任务要交给你。我还不知道是否所有城市里的火焰都已经点起了。到各大城市去吧，让那里的火焰温暖你的身躯，当然，首先要确认它们已经被点燃了！",
@@ -5991,13 +6008,9 @@ pfDB["quests"]["zhCN-tbc"] = {
   },
   [9388] = {
     ["D"] = "今天，全世界上各处有无数的火焰在熊熊燃烧着，$N。那些最狡诈的火焰往往都是绿色的，如果不小心照看的话，它们很快就会灭掉。为我们的护火者确认一下卡利姆多上的几处翡翠烈焰是否还在燃烧着，好吗？$B$B你能在贫瘠之地的棘齿城、黑海岸的主宰之剑、银翼岗哨附近的桥，以及石爪山尘风峡谷的路旁去寻找这样的篝火堆。",
-    ["O"] = "造访灰谷、贫瘠之地、黑海岸和石爪山的篝火堆，然后回来与节日护火者交谈。",
-    ["T"] = "卡利姆多的火焰",
   },
   [9389] = {
     ["D"] = "仲夏火焰节的传统就是建起一座金字塔状的火焰。有些人说绿色的火焰是最好的，因为它们最难以维持燃烧，而且有着如此美丽的颜色。$B$B你去为我们的护火者确认一下东部王国的绿色火焰是否都在正常燃烧吧。它们分别座落于湿地的丹莫德，银松森林的焚木村旁，西部荒野能望见灯塔的悬崖边，以及希尔斯布莱德那座被废弃的哨塔边。",
-    ["O"] = "造访希尔斯布莱德丘陵、银松森林、西部荒野和湿地的篝火堆，然后回来与节日护火者交谈。",
-    ["T"] = "东部王国的火焰",
   },
   [9390] = {
     ["D"] = "请听听我所说的话，$C。我的兄弟瑟丹为了与玛格汉岗哨的兽人取得联系，在很久以前就离开了。他就是这样一个不切实际的家伙，认为现在时机已经成熟，可以将我们的隔阂抛在脑后，大家从此和平相处。$B$B他已经失踪好几天了，我担心他出事了……$B$B你能让我放心，帮我去找找他吗？瑟丹应该是在东边的某个地方。",
@@ -7223,7 +7236,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "Beast Training",
   },
   [9674] = {
-    ["D"] = "他们说当世界分崩离析的时候，这片土地放声痛哭。无数的暗夜精灵坠入湮灭的深渊，被扭曲成一种令人憎恶的怪物——纳迦。$B$B他们听命于扭曲的女王艾萨拉，所有从他们的海域中经过的人都会被杀死。从几千年前到现在一直都是这样——直到今天。$B$B你要做的第一件事就是消灭掉暗礁中的血咒纳迦。",
+    ["D"] = "They say when the world was sundered, this land cried the loudest. It was here that thousands of night elves faded into oblivion and in their place rose terrible creatures of hate - the naga.$B$BObedient to their twisted queen, Azshara, they would destroy all that would dare pass through their sea. It would remain this way for thousands of years - until now.$B$BThe first order of business is to remove the bloodcursed naga from the reef.",
     ["O"] = "Captain Edward Hanes on Wyrmscar Island wants you to kill 10 Bloodcursed Naga.",
     ["T"] = "血咒纳迦",
   },
@@ -7373,7 +7386,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "找回包裹",
   },
   [9706] = {
-    ["D"] = "你颤抖着捡起日记。一定要把这场悲剧告知库卢斯。将这本日记交给他。",
+    ["D"] = "Your hands tremble as you pick up the book. Kuros must be told about this tragedy. Return the book to him.",
     ["O"] = "Take Galaen\'s Journal to Vindicator Kuros at Blood Watch.",
     ["T"] = "加莱恩的日记 - 守备官撒鲁安的命运",
   },
@@ -7628,7 +7641,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "终结他们的世界",
   },
   [9760] = {
-    ["D"] = "$N，我不会让你独自承担起破坏矢量感应器和杀死希隆娜丝的重任的；但是，你可以帮那些愿意接受这项危险任务的勇者清理沿途的障碍。$B$B沿着北边的道路离开秘血岗哨，在分岔路口往左转，守备官营地就在这条岔路的西边。考尔琳在那儿等你。",
+    ["D"] = "I would not ask you to single-handedly bear the burden of destroying the Vector Coil and slaying Sironas, $N; however, I believe that you can be of some help in clearing the way for others that might take on such a dangerous assignment.$B$BTake the road going north out of Blood Watch and follow it until you get to the fork. Once there, take the left road and follow it until you see Vindicator\'s Rest - it will be slightly west of the road itself. Corin will be waiting for you.",
     ["O"] = "Speak with Vindicator Corin at Vindicator\'s Rest on Bloodmyst Isle.",
     ["T"] = "守备官营地",
   },
@@ -8193,7 +8206,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "奥托尔，我的老朋友……",
   },
   [9874] = {
-    ["D"] = "$N，我刚刚得知日泉岗哨那场惨绝人寰的悲剧。邪恶的暗血氏族侵占了西北方的日泉岗哨，大肆杀戮居住在那儿的兽人。更糟糕的是，他们开始将尸体抛入日泉湖。一旦尸体腐烂，我们的主要水源就会遭到严重污染。$B$B我要交给你的这项任务相当恶心，但是势在必行。带上这把魔油火炬，返回日泉岗哨，烧掉那些腐烂的兽人遗体……",
+    ["D"] = "I have just gotten word of a catastrophe of epic proportions, $N. The foul Murkblood have sacked the orc village of Sunspring Post, northwest of here, and murdered its residents. To make matters worse, they have begun dumping the bodies into Sunspring Lake. Should those bodies rot, our primary source of water in the region will be compromised.$B$BIt\'s a gruesome task that I give you next but it must be done. Take this enchanted torch and return to Sunspring. Burn all of the rotting orc corpses...",
     ["O"] = "Otonbu the Sage at Telaar in Nagrand wants you to use the Torch of Liquid Fire to destroy 10 Sunspring Villager corpses. Return the Torch of Liquid Fire when the task is complete.",
     ["T"] = "阻止污染",
   },
@@ -8953,12 +8966,12 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "BETA The Spirits Are Calling",
   },
   [10030] = {
-    ["D"] = "无数德莱尼人在奥金顿大爆炸中不幸罹难，尸骨就散落在白骨荒野。他们不安宁的灵魂仍在世间飘荡。$B$B$C，帮帮我吧，将他们的尸骨带往最终的安息之地！只有这样，他们才能安然长眠。$B$B收集无眠之骨，将它们交给白骨荒野中心奥金顿的疯狂的拉姆杜尔。尽管此人名字古怪，可他懂得如何处理这些尸骨。",
+    ["D"] = "The bones of the dead draenei litter the Bone Wastes from the explosion of Auchindoun.  Their spirits are restless, and cannot move on to the next life.$B$B$C, you must help me to recover their bones and take them to their final resting place!  Only then will they be at peace; only then will they know comfort.$B$BGather up the restless bones with care and deliver them to Ramdor the Mad at Auchindoun in the center of the Bone Wastes.  Despite his name, he will know how to care for them.",
     ["O"] = "Collect 10 Restless Bones.  Deliver them to Ramdor the Mad, just off the western side of the Ring of Observance in Auchindoun, which is in the middle of the Bone Wastes of Terokkar Forest.",
     ["T"] = "收集骸骨",
   },
   [10031] = {
-    ["D"] = "奥金顿大爆炸使许多德莱尼人的灵魂堕落腐化。如今，他们痛苦地在白骨荒野徘徊着。$B$B$N，求求你，让他们获得安宁吧。消灭奥金顿外的失落的幽魂和破碎的骷髅。$B$B什么？你认为让他们继续在痛苦中挣扎会更好？$B$B完成任务后你就返回难民车队，告诉苏拉文你都做了什么。",
+    ["D"] = "Many spirits of the draenei were corrupted by the explosion of Auchindoun.  Now they wander the wastes in torment.$B$B$N, I beseech you to put them to rest.  Destroy the lost spirits and broken skeletons that haunt the Bone Wastes beyond Auchindoun\'s walls.$B$BWhat?  You think leaving them to wander in blind agony would be better?$B$BAfterward, return to Soolaveen at the Refugee Caravan and tell him of that which you have done.",
     ["O"] = "Destroy 10 Lost Spirits and 10 Broken Skeletons, and then speak with Soolaveen at the Refugee Caravan in the Bone Wastes of Terokkar Forest.",
     ["T"] = "迷失者的解脱",
   },
@@ -9298,7 +9311,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "When Spirits Speak",
   },
   [10102] = {
-    ["D"] = "As my energies bled away over the centuries, a void slowly grew in my place - devouring the souls of those nearby. Helplessly, I watched as generations of orc souls were drawn into the vortex. Recently, my enemies harnessed the vortex and used it to draw countless void minions into their Burning Legion.$B$BNow, the key to ending this cycle and freeing the orc spirits lies with another naaru - A\'dal. I have sensed his essence within the ancient city of Shattrath in the Terokkar Forest.",
+    ["D"] = "与沙塔斯城的阿达尔谈一谈。",
     ["O"] = "与沙塔斯城的阿达尔谈一谈。",
     ["T"] = "A Secret Revealed",
   },
@@ -9453,7 +9466,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "巨人的威胁",
   },
   [10133] = {
-    ["D"] = "Your handiwork is already causing the Legion great discomfort, $N. My scouts have just informed me that the Legion has resorted to sending communication via courier. We have successfully managed to cut their troops off from the host!$B$BWhat I ask of you next is more than I would ask of an ordinary soldier.$B$BThe Legion courier travels from the Pools of Aggonar to Forge Base: Mageddon, north of here. You must intercept the courier at Mageddon, dispose of him, and return to me with the Legion missive.",
+    ["D"] = "你的手艺已经导致军团非常不舒服，N美元。 我的侦察员刚刚通知我，军团已经通过快递发送通讯。 我们已经成功地从主机上切断了他们的部队！接下来我要求你的是我的B$BW比一个普通士兵要求的更多。$B$BThe Legion信使从Aggonar游泳池前往Forge Base：Mageddon ，在这里北。 你必须拦截Mageddon的快递员，处理他，然后带着Legion信件回到我身边。	",
     ["O"] = "Forward Commander To\'arch at Reaver\'s Fall in Hellfire Peninsula has asked that you find and slay Arix\'malidash and recover the Legion Missive.",
     ["T"] = "BETA Mission: Kill the Messenger",
   },
@@ -9843,7 +9856,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "圣光之城",
   },
   [10212] = {
-    ["D"] = "在我离开之前，我必须按顺序设置。回到祖母那里，告诉她，她的孙子来了。",
+    ["D"] = "I must set things in order before I leave. Return to the Greatmother and tell her that her grandson comes. ",
     ["O"] = "Return to Greatmother Geyah at Garadar in Nagrand.",
     ["T"] = "Hero of the Mag\'har",
   },
@@ -9928,7 +9941,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "战斗的号角",
   },
   [10231] = {
-    ["D"] = "拉姆杜尔？呃，让我想想……拉姆杜尔……哦，是那个死亡祭司。他要亡者之书做什么？唔，无所谓。很抱歉，我没说实话，但那本书真的不在我这儿。准确地说，我不再拥有它了。它被偷走了，或许是某个卑贱的难民干的。$B$B奥金顿已是了无生气的死地，亡者之书对我们来说没有任何用处了。如果你找到它，就留着好了。$B$B上周我还看见那帮无赖鬼鬼祟祟地在附近出没。就从他们身上开始调查吧。现在他们可能在贫民窟玩骰子。",
+    ["D"] = "Ramdor? Hrm, let me think... Ramdor... Oh yes, the death priest. What does he want with the book? Well it doesn\'t matter. Yes I lied to you and no I don\'t have the book. Not anymore, anyway. It was stolen. Probably by one of those filthy refugees.$B$BBesides, Auchindoun is now defunct. We have no use for the book. If you find it, you can keep it.$B$BLike I said, I saw some of those ruffians snooping around the terrace last week. Start your search with them. They\'re probably playing dice in the slums.",
     ["O"] = "Ezekiel said the book has been stolen. Your best bet is to find the Ruffians and see if they have any information.",
     ["T"] = "什么书？我没见过什么书",
   },
@@ -10813,7 +10826,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "伊沙娜的帮助",
   },
   [10411] = {
-    ["D"] = "你在法力熔炉的废墟四周可以发现大量从迪门修斯体内渗透出的流质。滴水的淤泥怪已经占据了乌提斯外围的池塘，池塘正下方就是复仇军的前线基地，基地中到处都是一种名叫空灵废弃者的流质生命体。$B$B要对付这些软泥怪，最好的办法就是用电磁冲击枪将它们轰成小水珠。利用这瓶药剂强化你的电流攻击能力吧，如此一来，那些软泥怪就会衰变成原始的形态。消灭那些水珠！",
+    ["D"] = "Around the ruined manaforge you will find the run-off of Dimensius\'s handy work. Seeping sludge occupies the pools that surround Ultris. Directly below those pools, where the Ethereum Staging Grounds now stand, you will find even more run-off in the form of void waste.$B$BThe best method of disposal is to use electro-shock to break slimes down to globules. Use this elixir to augment your attacks with electricity. The resultant discharge will break the slimes up into their raw form. Destroy the globules!",
     ["O"] = "Researcher Navuud at the Protectorate Watch Post in Netherstorm has asked that you destroy 30 Void Waste Globules and 30 Seeping Sludge Globules.",
     ["T"] = "电磁冲击！",
   },
@@ -10868,7 +10881,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "Fel Armaments",
   },
   [10422] = {
-    ["D"] = "十天前，泰拉留斯上尉带领一小队士兵去了南边的复仇军前沿基地，至今杳无音信。$B$B他们很可能遭到了伏击，说不定已经命丧敌手，但是我的仪器接收到了奇怪的信号。$B$B我认为是求援信号，但是这东西以前出过好几次差错，所以我们也不敢肯定。如果泰拉留斯还活着，他应该是被囚禁起来了。你必须设法营救他，或许牢笼的钥匙就在守卫身上。",
+    ["D"] = "Captain Tyralius took a platoon of soldiers south towards the Ethereum Staging Grounds 10 days ago. We haven\'t heard from him or his crew since.$B$BChances are good that they were ambushed and killed but I\'m getting a curious reading from my instruments.$B$BI think it\'s a distress signal but these things have been wrong before. If Tyralius is still alive, they\'re keeping him in one of their prisons. You\'ll have to locate the prison and open it with a key, probably found on the warden.",
     ["O"] = "Flesh Handler Viridius at the Protectorate Watch Post in Netherstorm has asked that you find and free Captain Tyralius.",
     ["T"] = "泰拉留斯上尉",
   },
@@ -11233,7 +11246,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "安希恩的离别感言",
   },
   [10497] = {
-    ["D"] = "瓦塔拉克的灵魂就封印在这枚护符里。因为贪婪，我们愚蠢地将它分成了好几部分，丝毫不了解这会为我们带来怎样残酷的诅咒。$B$B唯一解除瓦塔拉克的法术的办法，就是将这枚勋章重新组合在一起。回到莫克瓦尔那里去，告诉他说，伯德雷已经是他找齐剩余部分的最后希望了。顺便跟他提一下你应得的报酬。$B$B我只希望能从此安息。祝你好运……你会非常需要运气的！",
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the amulet back together.  Return to Mokvar and tell him that Bodley is his only hope for finding the remaining pieces.  Speak to him about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
     ["O"] = "Return to Mokvar in Orgimmar with a set of Lightforge Boots, Lightforge Legplates and Lightforge Spaulders.",
     ["T"] = "安希恩的离别感言",
   },
@@ -11313,7 +11326,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "灌醉刀塔食人魔",
   },
   [10513] = {
-    ["D"] = "$N，我不知道要如何才能掌握元素之灵提到的法术。老实说，我甚至不知道从何下手。$B$B<托洛克凝视着远方，陷入了沉思。>$B$B嗯……此行可能会毫无收获，不过这是我们惟一的希望。诅咒祭坛曾有一位兽人长者来访。我跟他攀谈过几句。据说他隐居在东北方的库斯卡水池附近的山上。去寻找这位名叫欧鲁诺克·裂心的兽人。$B$B我说过，此行可能无功而返。",
+    ["D"] = "I do not know how we can acquire the spell that the spirits mentioned, $N. Truth be told, I don\'t even know where we would start such a search.$B$B<Torlok stares off in the distance, lost in thought.>$B$BHrm... It is a long shot but it might be our only chance. There is an orc that I have seen visit this area before. I spoke to him briefly once. He is a hermit that claims to live above Coilskar Cistern to the northeast. Seek out this orc, Oronok Torn-heart.$B$BAs I said, it is a long shot.",
     ["O"] = "Seek out Oronok Torn-heart on the Shattered Shelf - north of Coilskar Cistern.",
     ["T"] = "欧鲁诺克·裂心",
   },
@@ -11453,7 +11466,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "诅咒密码 - 阿托尔的命令",
   },
   [10541] = {
-    ["D"] = "英雄，谢谢你。没有你的帮助，我的灵魂将永远禁锢在这个被诅咒的地方。$B$B<阿托尔递给你一只带锁的箱子。>$B$B把箱子交给我的父亲，他住在库斯卡水池附近的农场，在遥远的东北方……箱子里面装着洛恩戈鲁和诅咒密码的第二块碎片。$B$B他听闻我的死讯后必定会非常悲伤。答应我，让他相信我是在宁静祥和中离开这个世界的。告诉他我看见了美丽的狩猎场，告诉他我在那儿等他……",
+    ["D"] = "I thank you, hero. For without you, my spirit would forever remain in this cursed place.$B$B<Ar\'tor hands you a spectral lockbox.>$B$BTake it and deliver it to my father at the farm, far to the northeast, above Coilskar Cistern... Inside are Lohn\'goron and the second part of the cipher.$B$BHe will be sad to hear news of my death. Promise me that you will assure him that I died a free soul. Tell him that I see the hunting grounds and they are glorious. Tell him that I wait for him there...",
     ["O"] = "Take Ar\'tor\'s Lockbox to Oronok Torn-heart at Oronok\'s Farm in Shadowmoon Valley.",
     ["T"] = "诅咒密码 - 第二块碎片",
   },
@@ -11493,7 +11506,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "The Sad Truth",
   },
   [10550] = {
-    ["D"] = "我可没说谎。这蛋真是美味中的极品。你从哪儿搞到的？$B$B唔，如果你想要更多的血蓟，只管来找我，咱们各取所需嘛。$B$B这是你要的一捆血蓟。回去找你的头儿吧。",
+    ["D"] = "I wasn\'t lying. That egg was incredible. Where did you get it from?$B$BWell, if you ever need more bloodthistle, you know where I am and what I need.$B$BHere\'s a bundle of the stuff. Take it back to your benefactor.",
     ["O"] = "Take the Bundle of Bloodthistle back to Borak, Son of Oronok at the bridge near Eclipse Point in Shadowmoon Valley.",
     ["T"] = "一捆血蓟",
   },
@@ -11623,7 +11636,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "守望者的牢笼",
   },
   [10576] = {
-    ["D"] = "<伯拉克打量着你。>$B$B这事儿有些棘手，不过我应该能办到。$B$B$N，我打算把你伪装成一名伊利达雷血精灵。但首先你得给我找些血精灵的护甲来，护甲必须保持整洁，不能有任何血渍！这样才不会引起怀疑。$B$B替我收集一些护甲，剩下的事就交给我吧。$B$B伪装完毕后，你就要亲自把口信传达给他们的总指挥官了。",
+    ["D"] = "<Borak looks you up and down.>$B$BThis is going to be tricky, but I think I can make it work.$B$BI can disguise you as one of these Illidari blood elves, $N. What I need first, though, are several pieces of their armor. It is imperative that the armor be clean. No blood stains! We want to avoid suspicion.$B$BBring me the gear and I\'ll take care of the rest of the disguise.$B$BOnce the disguise is assembled, you\'re going to deliver the message to the Grand Commander - in person.",
     ["O"] = "Borak, Son of Oronok at the bridge near Eclipse Point in Shadowmoon Valley wants you to recover 6 pieces of Eclipsion Armor.",
     ["T"] = "影月谷的乔装者",
   },
@@ -11948,7 +11961,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "影月先驱者",
   },
   [10644] = {
-    ["D"] = "世间流传着许多关于塔隆·血魔的故事，但是大多数都只是传说。人们并不知道塔隆·血魔返回德拉诺世界后发生的事。$B$B我们只能确定一件事，那就是他已经死了。$B$B我曾听这儿的斥候说，在遥远的东南方，跨越灵翼平原，穿过灵翼小径就能到达暗影祭坛，有位远古的兽人灵魂居住在那儿。戴上幽灵眼镜搜寻这位兽人。他应该知道更多关于塔隆·血魔的事。",
+    ["D"] = "Stories abound about the life of Teron Gorefiend, but most are just that - stories. We do not know what happened to Gorefiend after he returned to Draenor.$B$BThe only thing we are certain of is that he has already died once.$B$BI have heard the scouts here speaking of an ancient orc spirit that resides at the Altar of Shadows, far to the east, across the Netherwing Fields and through Netherwing Pass. Take the Spectrecles and track this orc down. He will surely have more information on Gorefiend.",
     ["O"] = "Zorus the Judicator at Wildhammer Stronghold in Shadowmoon Valley wants you to find the Ancient Shadowmoon Spirit.$B$BIf you lose your Spectrecles, Zorus the Judicator can make you a new pair.",
     ["T"] = "塔隆·血魔的传说",
   },
@@ -12593,7 +12606,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "血精灵 + 巨人 = ？？",
   },
   [10775] = {
-    ["D"] = "现在我们狮鹫骑士编队必须返回蛮锤要塞，马上开始准备发动下一轮的进攻。而你，我命令你在这边收集一些日蚀血精灵身上的徽章。$B$B收集到足够的徽章之后，你可以使用蛮锤信号枪召唤来一名狮鹫骑士。$R，接下来你就要当间谍了！",
+    ["D"] = "The gryphon riders must return to Wildhammer Stronghold to prepare for the next phase of our assault. What I need from you now are the tabards that these blood elves wear.$B$BWhen you have collected enough tabards, call for a gryphon rider using the Wildhammer flare gun. Prepare yourself for a bit of espionage, $r!",
     ["O"] = "Collect 10 Illidari Tabards and then use the Wildhammer Flare Gun to signal another Wildhammer Gryphon Rider.$B$BSpeak with Thane Yoregar at Wildhammer Stronghold in Shadowmoon Valley should you lose your Wildhammer Flare Gun and require a replacement.",
     ["T"] = "伊利达雷徽章",
   },
@@ -13318,7 +13331,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "泰罗卡狼蛛",
   },
   [10922] = {
-    ["D"] = "啊！你看上去是个有点能力的家伙，$R。我和我的队员希望能找一个护卫，在我们去北边的挖掘场工作时保护我们的安全。要知道，报酬相当丰厚哦！而且你要做的，仅仅是确保我和我的同伴们不会被那些可恶的怪物们杀掉。$B$B如果你能顺利地完成任务，保证我们不出任何意外的话，杜瓦弗维兹会给你一大笔钱的！",
+    ["D"] = "Oy! You look like you can take care of yerself, $r. Me and the crew here are looking for a bodyguard to watch over us while we hit a dig site to the north. The pay is pretty good and all you gotta do is make sure no nasty creatures kill me or any of my employees.$B$BIf you successfully make it back without any casualties, Dwarfowitz over there will pay ya.",
     ["O"] = "Escort Letoll and his crew and protect them while they make their dig. Return to Dwarfowitz at the Sha\'tari Outpost if you succeed.",
     ["T"] = "挖掘行动",
   },
@@ -13633,7 +13646,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "援助食人魔",
   },
   [10985] = {
-    ["D"] = "在克希利的军队发动佯攻之后，保护阿卡玛和玛维进入影月谷内的黑暗神殿。",
+    ["D"] = "<克希利身上发出阵阵淡泊的光芒，而他身边的奥尔多和占星者军队也回应着他的命令。克希利的军团已经完全准备好了，随时可以将伊利丹的军队压制住，并为阿卡玛吸引敌人的注意力。现在，这位纳鲁正等待着你给出进攻开始的信号。>",
     ["O"] = "在克希利的军队发动佯攻之后，保护阿卡玛和玛维进入影月谷内的黑暗神殿。",
     ["T"] = "帮助阿卡玛",
   },
@@ -13973,7 +13986,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "起立，督工！",
   },
   [11054] = {
-    ["D"] = "你就是新来的监工吧？所有的监工都得配备一件合适的训诫刑具。在你跑出去教训那些懒惰的苦工之前，你最好给自己搞一双这样的训诫靴。按照传统，监工必须自己收集制造训诫靴所需的材料，你也不例外。$B$B我需要一些结缔皮和泰拉图斯的硬皮。泰拉图斯就在虚空风暴北部边境处的边缘生态圆顶中。",
+    ["D"] = "So you\'re the new overseer, eh? Well there\'s one thing any good overseer needs and that\'s the proper disciplinary weapon. Before you can go out there and knock some sense into these peons you need to have your \"piece.\" Each overseer has to gather the materials required to make their own \"piece\" and you\'ll be no different.$B$BI\'ll need knothide leather and the hardened hide of Tyrantus. You\'ll find Tyrantus in Eco-Dome Farfield, located in the northern reaches of Netherstorm.",
     ["O"] = "Chief Overseer Mudlump at the Dragonmaw Base Camp in Shadowmoon Valley wants you to bring him 10 pieces of Knothide Leather and 1 Hardened Hide of Tyrantus.",
     ["T"] = "新的监工：正确的选择",
   },
@@ -13988,7 +14001,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "哈吉克的协议",
   },
   [11057] = {
-    ["D"] = "$C，我们理解你想要帮助奥格瑞拉的迫切心情。但是，在接受你的帮助之前，我另有一件事要交给你去做。$B$B奥格瑞拉下面，有许多同胞正被格鲁尔之子奴役。枯瘦的莫戈多格想要领导食人魔推翻戈隆的统治，你不如先去和他谈谈。$B$B他就在鲜血之环竞技场东边的塔楼顶部。",
+    ["D"] = "We commend your zeal in wanting to help out here in Ogri\'la, $c.  However, we have a favor to ask of you before we can accept your assistance.$B$BDown below our brethren are enslaved to the Sons of Gruul.  Please, speak with Mog\'dorg the Wizened, who is leading an ogre resistance against their gronn masters.$B$BSeek him out atop the tower on the eastern side of the Circle of Blood arena.",
     ["O"] = "Chu\'a\'lor has asked you to speak with Mog\'dorg the Wizened atop one of the towers just outside the Circle of Blood in the Blade\'s Edge Mountains.",
     ["T"] = "低处的麻烦",
   },
@@ -14228,7 +14241,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "Defender No More",
   },
   [11107] = {
-    ["D"] = "我知道我身份低微，根本没有资格直接带口信给您。请您原谅我的无礼。莫格霍尔大王要您立刻前往他的房间接受觐见。",
+    ["D"] = "I am unworthy to even carry a message directed at you, sir. Please forgive me for this indulgence. Overlord Mor\'ghor has requested your presence in his chambers at once!",
     ["O"] = "Speak to Overlord Mor\'ghor at Dragonmaw Base Camp in Shadowmoon Valley.",
     ["T"] = "莫格霍尔大王",
   },
@@ -14573,9 +14586,9 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "破烂的巫毒人偶",
   },
   [11196] = {
-    ["D"] = "Lissen mon, there be sumthin\' else needs doin fer ol\' Prigmon.$b$bZungam, my good-fer-nuthin\' cousin, be stuck inside Zul\'aman. He still be alive too mon - I seen his signal flare just last night!$b$bI should be lettin\' him rot fer gettin\' me tied up in this mess, but he be owin\' me big money.$b$bDo what ya can to help him out, then leave the collectin\' to me!",
+    ["D"] = "听着，朋友，普雷蒙还有件事需要你帮忙，我那个没用的表兄被困在了祖阿曼里。不过他还活着——就在昨晚，我还看到了他的信号弹！$B$B他给我带来了这么多麻烦，我真应该就这么让他在里面烂掉。不过话说回来，他还欠我一大笔钱。$B$B尽量帮他一把，把他欠我的钱给我拿回来！",
     ["O"] = "普雷蒙希望你深入祖阿曼，找到并帮助他的表兄苏加姆。",
-    ["T"] = "阿曼尼督军",
+    ["T"] = "TEMP X",
   },
   [11198] = {
     ["D"] = "不管海怪是不是真的存在，我们都不准备让船只去冒险。我已经命令最棒的神射手做好与泰瑟尔交战的准备了。炮兵已经在码头增加了三门迫击炮。$B$B我将下令点亮灯塔。如果泰瑟尔进攻的话，你的任务就是在那个怪兽杀害所有神射手之前，用迫击炮打倒它。它多半不会老是呆在一个地方，用迫击炮吸引它的注意。",
@@ -15271,6 +15284,21 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["D"] = "尽管我们已经付出了巨大的牺牲，但仍然没能阻止凯尔萨斯执行他那罪恶的计划。现在太阳之井已经被重新激活，准备迎接欺诈者的入侵。$B$B在我和阿达尔前面的这个指示器代表着太阳之井目前的防御状况。他们升起了数道极其强大的魔法屏障，将我们的攻击部队完全隔离在了内部各处核心密室的外面。现在，就是现在，毫无疑问就是我们最需要世界各地之援助的时刻了。$B$B立刻前往奎尔萨拉斯的正北方，向奎尔丹纳斯岛上的大法师奈苏尔报到。",
     ["O"] = "前往奎尔萨拉斯正北方的奎尔丹纳斯岛，向大法师奈苏尔报到。$B$B铁炉堡和银月城的飞行管理员可以将你送到目的地。",
     ["T"] = "欺诈者降临",
+  },
+  [11551] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to deactivate Agamath, The First Gate",
+    ["O"] = "Bring to me the essence of immortals, found only on the most powerful beings of this world! With the essence in hand, my mages will be able to dismantle Agamath, ultimately collapsing the gateway and unlocking the way further into the sunwell.",
+    ["T"] = "Agamath, the First Gate",
+  },
+  [11552] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to break Rohendor, the Second Gate",
+    ["O"] = "Bring to me the essence of immortals, found only on the most powerful beings of this world! Rohendor cannot withstand the combined force of our mages!",
+    ["T"] = "Rohendor, the Second Gate",
+  },
+  [11553] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to eventually dismantle Archonisus, the Final Gate",
+    ["O"] = "Bring to me the essence of immortals ÔÇö found only on the most powerful beings of this world ÔÇö and Archonisus is sure to crumble!",
+    ["T"] = "Archonisus, the Final Gate",
   },
   [11554] = {
     ["D"] = "",
@@ -16157,6 +16185,11 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["O"] = "Use the Complimentary Brewfest Sampler to hit S.T.O.U.T. 5 times, then talk to Bizzle Quicklift.",
     ["T"] = "扔酒杯！",
   },
+  [12192] = {
+    ["D"] = "The Dark Irons took a beating!  As they rushed back to the Grim Guzzler, a portion of their transport fell off.  More importantly, you managed to keep the camp safe... today.$b$bHead over to Bizzle and explain your heroic triumph over the Dark Iron dwarves.",
+    ["O"] = "Talk to Bizzle Quicklift in the Brewfest camp.",
+    ["T"] = "This One Time, When I Was Drunk...",
+  },
   [12193] = {
     ["D"] = "Brewfest isn\'t just about racing rams, it\'s also about drinking!  When you have a moment, take this voucher to Belbi Quikswitch.  She\'s near the back of the Brewfest camp.  If you can\'t see her, don\'t worry, she\'ll be sure to see you.$b$bIn any case, take this voucher to her to get your free Brewfest stein.  She\'ll also be more than happy to handle any and all other Brewfest transactions.",
     ["O"] = "去美酒节营地的贝尔比那里兑换美酒节礼品券。",
@@ -16193,7 +16226,7 @@ pfDB["quests"]["zhCN-tbc"] = {
     ["T"] = "科林的烈酒",
   },
   [12513] = {
-    ["D"] = "卡洛斯要你进入旧希尔斯布莱德，击败年轻时候的卡洛斯。然后将他的帽子交给塔纳利斯的卡洛斯。",
+    ["D"] = "我的帽子？是啊，那顶帽子的款式非同寻常，很早以前的事儿啦……如今可没几个裁缝知道怎么缝制。$B$B年少轻狂的时候，我将它当作身份的象征。很多人想要击败我，赢得那顶帽子……可惜没人成功。$B$B啊，这些都是陈芝麻烂谷子的事了。我已经老了，每天喝喝酒，钓钓鱼，早就不与人决斗啦。",
     ["O"] = "卡洛斯要你进入旧希尔斯布莱德，击败年轻时候的卡洛斯。然后将他的帽子交给塔纳利斯的卡洛斯。",
     ["T"] = "好帽子……",
   },

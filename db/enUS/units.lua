@@ -9068,6 +9068,7 @@ pfDB["units"]["enUS"] = {
   [17598] = "Renn\'az",
   [17635] = "Lordaeron Commander",
   [17647] = "Lordaeron Soldier",
+  [17660] = "Skeletal Gryphon",
   [17688] = "Crown Guard Horde Capture Quest Doodad",
   [17691] = "Eastwall Horde Capture Quest Doodad",
   [17697] = "Northpass Horde Capture Quest Doodad",
@@ -9078,4 +9079,5 @@ pfDB["units"]["enUS"] = {
   [17804] = "Squire Rowe",
   [17995] = "Lordaeron Veteran",
   [17996] = "Lordaeron Fighter",
+  [18039] = "Spirit of Victory",
 }

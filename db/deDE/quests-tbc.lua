@@ -105,6 +105,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [31] = {
     ["D"] = "Ihr habt die notwendigen Lektionen gemeistert, die alle jungen Druiden lernen, bevor sie einen Wasseraspekt annehmen können. Kehrt jetzt zu Eurem Lehrer Turak Runentotem nach Donnerfels zurück. Zeigt ihm Euren Anhänger und beweist ihm damit, dass Ihr bereit seid zu lernen, was er Euch lehren kann. Er wird Eure Ausbildung abschließen und Euch ermöglichen, eins mit dem Wasser zu werden.$B$BAuf Wiedersehen. Wir werden uns wieder sprechen.",
     ["O"] = "Kehrt nach Donnerfels zurück und zeigt Turak Runentotem den Anhänger des Seelöwen.",
+    ["T"] = "Wassergestalt (Taurendruide)",
   },
   [32] = {
     ["D"] = "Hier ist Euer Bericht. Ihr solltet damit zu jemandem gehen, der ausreichend Kenntnis von solchen Dingen hat.$B$BIch kenne da einen Trollgelehrten mit Namen Zilzibin Tomtom. Er hat viel Zeit mit dem Studium der Lebensformen verbracht, die in der Ökologie von Azeroth einzigartig sind, und er ist noch dazu Historiker! Wenn Euch jemand helfen soll herauszufinden, was genau diese Bedrohung ausmacht, und wie sie zu stoppen ist, gebt ihm diesen Bericht. Hilfe können wir gar nicht genug haben.$B$BZil lebt in einem Haus auf der zweiten Ebene der Gasse in Orgrimmar.",
@@ -830,6 +831,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [256] = {
     ["D"] = "Auf Befehl des Magistrats von Thelsamar:$B$BDer Tod von Chok\'sul, dem Oger und mutmaßlichen Anführer und Kopf hinter den Angriffen auf die Stadt Thelsamar, den Steinwerkdamm und die Ausgrabungsstätte, wird unter allen Umständen gewünscht. Es darf zu jedem Mittel gegriffen werden, das notwendig ist.$B$BEine Barentschädigung kommt zur Auszahlung, wenn der Magistrat einen Beweis für Chok\'suls Tod erhält.$B$BZuletzt wurde Chok\'sul am Ogerlager im nordöstlichen Teil von Loch Modan gesehen.",
     ["O"] = "Tötet Chok\'sul und bringt Magistrat Stumpfnase seinen Kopf.",
+    ["T"] = "GESUCHT: Baron Küstenschipper",
   },
   [257] = {
     ["D"] = "Ihr glaubt wohl, Ihr könnt Euch mit Daryl dem Kühnen messen, hm? Das will ich auch nicht hoffen! Aber Ihr dürft es natürlich gern versuchen, wenn Ihr denn meint... Hier habt Ihr eine Herausforderung, der Ihr bestimmt nicht gewachsen seid. Also nehmt\'s nicht zu schwer, wenn Ihr damit nicht fertigwerdet.$B$BEin Schwarm Bussarde nistet hier am Loch Modan. Warum versucht Ihr nicht, einige von denen zu erledigen? Ich sag Euch was. Wenn Ihr meine Herausforderung annehmt, dann gebe ich Euch meinen Bogen oder mein Gewehr.$B$B<Er mustert Euch abschätzig.>$B$BScheint ja nicht, als ob Ihr viel zu verlieren hättet.",
@@ -1173,7 +1175,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Die Spukmühlen",
   },
   [363] = {
-    ["D"] = "Sprecht mit Schattenpriester Sarvis.",
+    ["D"] = "About time you woke up. We were ready to toss you into the fire with the others, but it looks like you made it.$b$bI am Mordo, the caretaker of the crypt of Deathknell. And you are the Lich King\'s slave no more.$b$bSpeak with Shadow Priest Sarvis in the chapel at the base of the hill, he will tell you more of what you must know.",
   },
   [364] = {
     ["D"] = "Seit der erste Verlassene aus seinem Grab gekrochen ist, stehen wir mit der Geißel, der Armee des Lichkönigs im Krieg: durch Nekromantie erweckte Armeen von Untoten, grausige Bestien des Nordens und gepeinigte Schreckgespenster.$B$BZwar sitzt der Lichkönig nicht länger auf dem Frostthron, dennoch ist der nördliche Teil des Dorfes noch immer von seinen Sklaven überrannt. Zerstört sie, zeigt ihnen keine Gnade, auch wenn sie vormals unsere Brüder und Schwestern waren.",
@@ -1806,7 +1808,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Kampf um das Hügelland",
   },
   [551] = {
-    ["D"] = "Dieses Pergament ist mit einer Verzauberung versehen, die es unlesbar macht. Nur ein Wort oben am Blattanfang ist lesbar:$B$B Nagaz$B$B",
+    ["D"] = "Dieses Pergament ist mit einer Verzauberung versehen, die es unlesbar macht. Nur ein Wort oben am Blattanfang ist lesbar:$B$B Nagaz",
     ["O"] = "Bringt den verschlüsselten Brief zum Meister der Lehren Dibbs nach Süderstade im Vorgebirge des Hügellands.",
   },
   [552] = {
@@ -2376,7 +2378,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Sucht in Uldaman nach Hammerzeh Grez.",
   },
   [722] = {
-    ["D"] = "Ihr seid mutig... (((hustet))) dass Ihr Euch wegen mir nach Uldaman wagt, $C.$B$BWenn Ihr wirklich hier seid, um dem... ollen Hammerzeh zu helfen, dann... (((hustet)))... müsst Ihr nach... meinem Amulett suchen.$B$BGrubenschatten hat es... Magregan Grubenschatten. Muss hier irgendwo sein... in den Ruinen, das ist sicher. Das Amulett wird sie... (((hustet)))... genau zu den Rollen führen, wenn sie keiner aufhält. Es ist an Euch, $N. Bitte... holt das Amulett.$B$BDie Rollen werden es den Dunkeleisenzwergen ermöglichen, noch mächtigere Golems zu erschaffen. Ich weiß es einfach. Spür\'s in meinen Knochen.",
+    ["D"] = "Ihr seid mutig... <hustet>... dass Ihr Euch wegen mir nach Uldaman wagt, $C.$B$BWenn Ihr wirklich hier seid, um dem... ollen Hammerzeh zu helfen, dann... <hustet>... müsst Ihr nach... meinem Amulett suchen.$B$BGrubenschatten hat es... Magregan Grubenschatten. Muss hier irgendwo sein... in den Ruinen, das ist sicher. Das Amulett wird sie... <hustet>... genau zu den Rollen führen, wenn sie keiner aufhält. Es ist an Euch, $N. Bitte... holt das Amulett.$B$BDie Rollen werden es den Dunkeleisenzwergen ermöglichen, noch mächtigere Golems zu erschaffen. Ich weiß es einfach. Spür\'s in meinen Knochen.",
     ["O"] = "Sucht Hammerzehs Amulett und bringt es ihm nach Uldaman.",
   },
   [723] = {
@@ -2547,7 +2549,6 @@ pfDB["quests"]["deDE-tbc"] = {
   [766] = {
     ["D"] = "Mein Großvater erzählte mir Geschichten von seinen Kämpfen gegen einen Schreiter namens Mazzranach. Er erzählte mir von seinen dämonischen roten Augen, rasiermesserscharfen Krallen und seinem giftigen Biss.$B$BWie der Zufall so spielt, stieß ich auf einer meiner Reisen durch die Ebene auf ihn und trug eine üble Bisswunde an meiner Schulter davon. Er war so Furcht erregend, wie ihn mein Großvater beschrieben hatte. Ich werde ein paar nur sehr schwer zu findende Körperteile von Tieren benötigen, um die Infektion durch seinen Biss zu säubern: ein Herz eines Präriewolfs, einen Knochen eines Flachlandpumas, eine Schuppe eines Ebenenschreiters und einen Muskelmagen eines Sturzfliegers.$B$BSchnell, Zeit ist hier entscheidend.",
     ["O"] = "Bringt Maur Regenrufer im Dorf der Bluthufe ein Herz eines Präriewolfs, einen Knochen eines Flachlandpumas, eine Schuppe eines Ebenenschreiters und einen Muskelmagen eines Sturzfliegers.",
-    ["T"] = "Mazzranach",
   },
   [767] = {
     ["D"] = "Der Ritus der Vision, einer der Riten der Erdenmutter, wird Euch helfen, den Respekt der Ältesten von Donnerfels zu erlangen.$B$BUnser Volk hat gelernt, dass das Land unser allerheiligster Versorger ist. Um am Ritus der Vision teilzunehmen, müsst Ihr mit dem geistigen Anführer des Dorfes sprechen, Zarlman Zwillingsmond.",
@@ -2778,10 +2779,6 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Sammelt 7 Ebenenschreiterschnäbel.",
     ["T"] = "Ebenenschreiterbedrohung",
   },
-  [845] = {
-    ["D"] = "Wenn Ihr meiner geliebten Horde dienen wollt, dann müsst Ihr mir Eure Stärke beweisen, Welpe. Die Zhevrajagd wird Euch einen guten Anfang bieten. Zwar sind sie nicht die mächtigsten Tiere im Brachland, aber wenn man sich nicht vor ihren Tritten in Acht nimmt, bereut man es schnell.$B$BMacht Jagd auf die Zhevras im Norden und Süden und sammelt ihre Hufe. Bringt sie mir und vielleicht setzen wir Euch das nächste Mal auf etwas Stärkeres an.",
-    ["O"] = "Erschlagt Zhevraläufer, um 4 Zhevrahufe zu erhalten.",
-  },
   [846] = {
     ["D"] = "Es ist klar, dass ein Ausgrabungsleiter von Sprengstoff und diesen lärmenden Fahrzeugen abhängig ist, um den Boden aufzureißen. Wir müssen damit rechnen, dass schon bald ein neuer Großknecht die Sache übernimmt.$B$BIch möchte den Zwergen ihre eigene Medizin zu schmecken geben. Wenn wir laut diesen Plänen Nitroglyzerin mit Holzbrei und Natriumnitrat mischen, erhalten wir eine Sprengladung. Es ist bekannt, dass die Scharfschützen, Soldaten und Offiziere in der Burg diese Dinge besitzen.$B$BHolt diese Sachen und bringt sie mir; ich werde daraus eine Sprengladung basteln, die die Zwerge so schnell nicht vergessen werden!",
     ["O"] = "Gann Steinkeil möchte, dass Ihr ihm 6 Phiolen Nitroglyzerin, 6 Teile Holzbrei und 6 Proben Natriumnitrat bringt.",
@@ -2790,8 +2787,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Sprecht mit Tor\'gan in Hammerfall im Arathihochland.",
   },
   [848] = {
-    ["D"] = "Die Oasen des Brachlandes verbergen ein Mysterium. In ihren Wassern fließt Lebensenergie, die alle Pflanzen und Wildtiere erquickt, die davon trinken.$B$BEs erquickt und verändert sie.$B$BEs gibt einen Pilz, der in der Nähe dieser Oasen wächst. Seine Sporen besitzen Eigenschaften, die wir, die Apotheker Lordaerons, sehr nützlich finden.$B$BBringt mir diese Sporen, dann ist Euch unser Dank gewiss.",
-    ["O"] = "Sammelt 5 Pilzsporen von den Pilzen an den Vergessenen Teichen.",
+    ["D"] = "Die Oasen des Brachlandes verbergen ein Mysterium. In ihren Wassern fließt Lebensenergie, die alle Pflanzen und Wildtiere erquickt, die davon trinken.$B$BEs erquickt und verändert sie.$B$BBei den Oasen im Nordwesten wächst ein bestimmter Pilz. Seine Sporen besitzen Eigenschaften, die wir, die Apotheker Lordaerons, sehr nützlich finden.$B$BBringt mir diese Sporen, dann ist Euch unser Dank gewiss.",
   },
   [849] = {
     ["D"] = "Wenn wir uns an Khazgorms Pläne halten, sollte es eigentlich kein Problem sein, eine Sprengladung herzustellen.$B$BAh, fertig.$B$BAlso, $N, ich möchte Euch mit einer besonderen Aufgabe betrauen. Nehmt diese Dynamitstange und jagt damit den Flugapparat bei Bael Modan in die Luft.$B$BDieser Flugapparat ist nicht nur ein wichtiger Bestandteil der Infrastruktur der Grabungsstätte, sondern auch eine Kriegswaffe. Vor allem ist sie aber ein Symbol der Macht und eine Beleidigung des Andenkens an meinen Stamm.$B$BMacht mich stolz, indem Ihr diese heldenhafte Aufgabe erledigt, dann soll es Euer Schaden nicht sein.",
@@ -2799,7 +2795,6 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [850] = {
     ["D"] = "Die Zentauren sind den Tauren schon seit Jahren ein Dorn im Auge. Die Kolkarzentauren des Brachlandes sind vor Kurzem zu einer echten Bedrohung geworden. Normalerweise sind sie in diesen Landen eher unorganisiert, aber es haben sich unter ihnen neue Anführer erhoben. Sie sammeln sich.$B$BWir müssen diese Zentaurenanführer vernichten, um unsere Position hier zu bewahren.$B$BBringt mir den Kopf von Barak Kodobann. Er lagert westlich der Vergessenen Teiche.$B$BBesiegt ihn und kehrt dann zu mir zurück.",
-    ["O"] = "Tötet Barak Kodobann und nehmt seinen Kopf an Euch.",
   },
   [851] = {
     ["D"] = "Verog ist zwar schwer aufzuspüren, aber den Informationen zufolge, die Ihr gesammelt habt, ist seine Gefährtin Wyneth immer in seinem Kommandozelt westlich von hier zu finden. Wenn wir sie töten, wird Verog in Windeseile auftauchen.$B$BRegthar hat uns zum Auskundschaften hierher geschickt, aber er sagte auch, wir sollen jede Gelegenheit nutzen, die Befehlskette der Zentauren zu stören. Lockt Verog aus der Defensive und tötet ihn!",
@@ -2817,10 +2812,6 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Ich habe Eure Ankunft vorausgesehen, $Gjunger:junge:c; $C. Aber vielleicht seid Ihr ja gar nicht mehr so jung.$B$BIch glaube, dass es an der Zeit ist, dass Ihr Euch tiefer in dieses Land vorwagt. Ich fühle, dass Ihr zu Größerem berufen seid.$B$BDas Wegekreuz wartet auf Euch, denn die Orcs, mit denen wir eng verbunden sind, brauchen Unterstützung. Folgt dieser Straße weiter nach Osten und dann weiter nach Norden bis zum Wegekreuz. Sucht Thork in seinen Mauern, er hat den Segen der Erdenmutter.",
     ["O"] = "Sprecht mit Thork beim Wegekreuz im Brachland.",
     ["T"] = "Reise zum Wegekreuz",
-  },
-  [855] = {
-    ["D"] = "Die Führungsspitze der Zentauren stützt sich auf einen Kern von vertrauenswürdigen, disziplinierten Kriegern, die dafür sorgen, dass die anderen Zentauren nicht aus der Reihe tanzen. Wenn wir diese Ränge lichten, werden die Kolkar nicht die nötige Macht haben, ihrem Zorn Taten folgen zu lassen. Also habe ich für Euch eine gewinnbringende Aufgabe.$B$BTötet Marodeure und Sturmseher der Kolkar in der Umgebung der Blühenden Oase im Süden, um deren Armschienen zu erbeuten. Kehrt zurück wenn Ihr einen Haufen dieser Trophäen habt und die Horde wird Euch reich belohnen.",
-    ["O"] = "Sammelt 10 Zentaurenarmschienen von Marodeuren und Sturmsehern der Kolkar.",
   },
   [857] = {
     ["D"] = "Feegly der Verbannte möchte, dass Ihr ihm die Träne der Monde zurückbringt.",
@@ -2848,17 +2839,6 @@ pfDB["quests"]["deDE-tbc"] = {
   [864] = {
     ["D"] = "\"Wir sind so weit, die Kraftquelle ist entfernt und die Daten sind gesichert. Also dann, sichere Reisen und all das. Ich hoffe, das ruchlose Wissenschaftsexperiment hat sich für Euch ausgezahlt.\"$B$BDer Goblin wendet sich von Euch ab, um sich den Belangen der Gadgetzan Water Company zu widmen. Ihr verstaut das versiegelte Testset sicher für die Reise zurück nach Unterstadt. Dort wartet Apothekerin Zinge auf Euch und das versiegelte Feldtestset.",
     ["O"] = "Bringt das versiegelte Feldtestset nach Unterstadt zu Apothekerin Zinge.",
-  },
-  [865] = {
-    ["D"] = "Die Raptoren des Brachlandes sind intelligenter als die Raptoren anderer Länder. Und ich glaube, dass ihre ganze Intelligenz in ihren Hörnern sitzt! Wenn dem so ist, könnte ich ihre Hörner zu Pulver zermahlen und benutzen, um \"Klugheitstränke\" zu kreieren. Dafür würde ich ein Vermögen bekommen!$B$BUnd Ihr könntet mir helfen: Ich will das Horn des klügsten Raptors weit und breit. \"König Schnitterklaue\" führt ein ganzes Rudel intelligenter Raptoren an, oben auf den Klippen nördlich von Ratschet. Bringt mir sein Horn! Und lasst Euch nicht in Fetzen reißen wie all die anderen, die ich geschickt habe.",
-    ["O"] = "Erhaltet das Horn von König Schnitterklaue.",
-    ["T"] = "Es muss im Horn stecken",
-  },
-  [866] = {
-    ["O"] = "Sammelt 8 Wurzelproben von den Kräutern im Nördlichen Brachland.",
-  },
-  [867] = {
-    ["O"] = "Collect 8 Witchwing talons.$B$BReturn them to Darsok Swiftdagger at the Crossroads.",
   },
   [868] = {
     ["D"] = "He, $N. Man hat mich zum Wegekreuz geschickt, damit ich über das Land wache und meinen Meistern in Orgrimmar über eventuelle Vorkommnisse berichte.$B$BEines meiner Studienobjekte sind die insektenartigen Kreaturen, die man im Süden auf dem Feld der Riesen findet. Wir wissen nur wenig über diese Kreaturen, also haben wir es uns zur Aufgabe gemacht, mehr über sie zu erfahren. Sie scheinen intelligent zu sein, intelligenter als normale Tiere.$B$BNehmt diese Gräberklaue und grabt ein paar ihrer Eier aus den Hügeln aus, aber seid vorsichtig: einmal aufgeschreckt, werden sie Euch angreifen.",
@@ -2889,16 +2869,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Mahren Himmelsdeuter",
   },
   [875] = {
-    ["D"] = "Die einzige Möglichkeit, die Übergriffe der Harpyien zu beenden besteht darin, ihre Befehlskette zu zerschlagen. Die Harpyien werden von furchtlosen Offizieren angeführt, den Töterinnen der Hexenschwingen. Wenn die Töterinnen fallen, wird der Rest ihnen folgen.$B$BBegebt Euch zu den Trockenen Hügeln und fegt die Töterinnen der Hexenschwingen vom Himmel. Sorgt dafür, dass sie einen schmerzhaften Tod sterben, $N. Wir möchten, dass diese Spinatwachteln lernen, wie wahnwitzig es ist, sich mit der Horde anzulegen.",
-    ["O"] = "Tötet 6 Töterinnen der Hexenschwingen in den Trockenen Hügeln im Nördlichen Brachland.",
-  },
-  [876] = {
-    ["D"] = "Die Harpyien, die Ihr getötet habt, sprachen von ihrer Matronin, Serena Blutfeder. So leidenschaftlich, wie die Harpyien die Horde hassen, muss sie irgendeinen tief verwurzelten Groll gegen die Horde hegen. Ihr entschließt Euch, Jagd auf Serena Blutfeder zu machen und die Sache ein für alle Mal zu Ende zu bringen.",
-    ["O"] = "Erschlagt Serena Blutfeder und nehmt ihren Kopf an Euch.",
-  },
-  [877] = {
-    ["D"] = "Könnte hier bei uns das Gleiche wie im Süden passieren? Demnach zu urteilen, was Ihr bei den Vergessenen Teichen gefunden habt, könnten die Oasen der Schlüssel sein. Führen wir ein Experiment durch.$B$BHier, nehmt diese Samenkörner, die ich von diesem Gipfel gesammelt habe. Sie sind tot und unfruchtbar, aber nehmt sie trotzdem mit zur Brackigen Oase am Fuß des Berges. Wenn es dort einen Riss gibt, dann pflanzt die Samenkörner darin ein... und beobachtet, was passiert. Berichtet Tonga am Wegekreuz, was Ihr gesehen habt.",
-    ["O"] = "Benutzt die Samenkörner, um die Risse in der Brackigen Oase zu untersuchen.",
+    ["D"] = "Hahaha, $N. Ihr wollt noch mehr? Gut, das hör ich gern.$B$BDieses Mal möchte ich, dass Ihr ein paar der Offiziere der Harpyien in den trockenen Hügeln meuchelt. Nur Töter der Hexenschwingen können Offiziere werden und Ihr erkennt sie an den Ringen, die sie tragen. Sie sind ein übler Haufen, aber sie führen ein paar der Unterlinge in diesem Gebiet an. Schaltet Ihr 6 davon aus, wird das ein Entscheidungsschlag gegen ihr Matriarchat sein.$B$BSorgt dafür, dass sie schmerzvoll sterben, $N. Wir möchten, dass diese Dirnen von Harpyien lernen, wie wahnwitzig es ist, sich mit der Horde anzulegen.",
   },
   [878] = {
     ["D"] = "Ihr müsst meine Feinde schlagen. <schnaubt> Ihr müsst Quetschzahn und dem Klingenmähnenstamm helfen, indem Ihr die Borstennacken schwächt. Beide Stämme sind sehr spirituell - gebunden an die Erde und ihre Kraft. <schnaubt> Sie gibt uns Stärke in allen Dingen... besonders im Krieg.$B$BWenn ihr herausfinden wollt, wer Thork <schnaubt> und der Horde wirklich solche Angst bereitet, dann helft Quetschzahn! Ihr greift die spirituellen Anführer der Borstennacken im Norden an und schwächt sie, sodass die Klingenmähnen sie besiegen und das Brachland beherrschen können.",
@@ -2933,8 +2904,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Sprecht beim Wegekreuz mit Tonga Runentotem.",
   },
   [887] = {
-    ["D"] = "Gazlowe hat mir eine Beförderung versprochen, wenn ich ihm mit dem Piratenproblem in Ratschet helfen kann. Das Problem sind diese neuen Bukaniere, die angesegelt gekommen sind und Prügeleiland südlich von hier übernommen haben. Die sind nicht nur auf unsere Waren aus - die haben auch noch Rechnungen zu begleichen! Neulich nachts hatten sie es auf eine unserer Kriegsgalleonen abgesehen.$B$BIch habe Pläne, wie wir mit dieser Situation verfahren, aber Gazlowe will schnelle Ergebnisse sehen. Macht Euch doch auf den Weg rüber aufs Prügeleiland und fangt schon mal an, ein paar Köpfe abzuhacken, ja?",
-    ["O"] = "Tötet 8 Halsabschneider oder Kaperer der Südmeerfreibeuter auf Prügeleiland.",
+    ["D"] = "Ich wünschte, Vize-Admiral Grezzlik würde bessere Arbeit bei der Sicherung der Meere für unsere Handelsschiffe leisten. Bei all dem Gold, das die Handelsbarone in die Handelsflotten gesteckt haben, macht es mich rasend zu sehen, wie viele Piraten unbehelligt unterwegs sind, meine Schiffe überfallen und meine Waren stehlen!$B$BMir kam zu Ohren, dass die Südmeerfreibeuter südlich von hier ein Lager aufgeschlagen haben. Sie sind mir ein echter Dorn im Auge, und wenn sich Grezzlik nicht um sie kümmert, könnt Ihr mir vielleicht helfen, sie loszuwerden?",
   },
   [888] = {
     ["D"] = "Ich hätte zwar gern, dass Ihr mir all meine Waren zurückbringt, aber das dürfte wohl unmöglich sein. Es gibt jedoch ein paar Dinge, die ich unbedingt wiederhaben muss!$B$BWie Ihr seht, ist mein Observatorium fast einsatzbereit, aber es fehlt noch die kleinere der zwei Linsen. Die erste Linse ist mit der Karawane aus Durotar gekommen, aber die zweite wurde per Schiff verschickt und ist nie hier eingetroffen. Ebenso ist meine Stiefellieferung von Drizzlik aus Beutebucht nicht hier angekommen!$B$BBegebt Euch zum Piratenlager und seht mal nach, ob Ihr die Dinge dort finden könnt.",
@@ -2949,9 +2919,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Bringt Werftmeister Flunkerblick Gazlowes Geschäftsbuch.",
   },
   [891] = {
-    ["D"] = "Sammelt 10 Medaillen von Theramore von Theramore Marinesoldaten und Matrosen. Tötet die Leutnants Pyre und Buckland.",
-    ["O"] = "Sammelt 10 Medaillen von Theramore von Theramore Marinesoldaten und Matrosen. Tötet die Leutnants Pyre und Buckland.",
-    ["T"] = "Die Rache des Kapitäns",
+    ["D"] = "Wieder ist ein Schiff meiner Flotte diesen übereifrigen Menschen der Feste Northwatch in die Hände gefallen!$B$BMan muss sich um diese Bastarde kümmern. Ihr Verfolgungswahn hat sie in eine Art Raserei versetzt. Diese schießwütigen, rücksichtslosen Rüpel schießen auf alles, was sich bewegt.$B$BReist gen Süden entlang der Händlerküste zur Feste und belagert ihre Streitkräfte. Bringt mir die Medaillen ihrer Soldaten als Beweis. Und erschlagt um meiner Flotte willen Captain Hellstieg und ihre übereifrigen Kanoniere!",
   },
   [892] = {
     ["D"] = "Laut meinen Aufzeichnungen ist alles in Ordnung, $N. Geht zurück und sagt Gazlowe, dass er wohl Pech gehabt hat. Es würde mich nicht überraschen, wenn sich die Piraten seine Waren geschnappt hätten.$B$BIch kann leider nicht mehr für ihn tun. Oh... Ihr könnt ihm allerdings sagen, dass ich ein paar Dinge aus Lorenhall für ihn habe, falls er die Zeit findet, sie abzuholen.",
@@ -2965,13 +2933,10 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Die Venture Company hat weit nördlich von hier, westlich des Schlickmoores, eine kleine Forschungseinrichtung errichtet. Was die Leute dort tun, weiß ich nicht genau, aber ich habe herausgefunden, dass sie dort mit etwas experimentieren, das \"Samophlang\" genannt wird.$B$BWas zum Teufel ist ein Samophlang? Naja, was immer es auch ist, ich möchte es untersuchen, also brauche ich jemanden, der eines beschafft.$B$BIch habe ein Exemplar der Bedienungsanleitung für ihr Steuersystem in die Finger bekommen; Ihr solltet also herausfinden können, wie man das Samophlang daraus entfernt.",
   },
   [895] = {
-    ["D"] = "GESUCHT!$B$B\"Käpt\'n\" J. Garvey, Kapitän der$BDolch der Maid$B$BIst der Piraterie auf offenem Meer, Entführung, Erpressung, Brandstiftung, Sklaverei u.a. schuldig. Garvey ist kürzlich in diesen Gewässern angekommen, führt eine Besatzung von Südmeerfreibeutern an und wurde zuletzt bei einem Angriff auf Prügeleiland gesichtet. Erbringt Nachweis über Ableben in identifizierbarem Zustand!$B$B-- Gazlowe",
-    ["O"] = "Bringt Gazlowe in Ratschet Käpt\'n Garveys Kopf.",
-    ["T"] = "GESUCHT: Käpt\'n Garvey",
+    ["D"] = "GESUCHT!$B$BBaron Küstenschipper, Kapitän der GNADENLOS$B$BCaptain Küstenschipper aus Gilneas befehligt Schiffe der Südmeerfreibeuter und wird wegen Piraterie gesucht. Seine Überreste müssen in noch erkennbarem Zustand sein!$B$B- Gazlowe",
   },
   [896] = {
-    ["D"] = "He, $R, seid Ihr an Schätzen interessiert? Wusste ich es doch, dass das Eure Aufmerksamkeit gewinnen würde.$B$BHier an den Flussdocks geht das Gerücht um, dass einer der Minenarbeiter in der Felsadermine der Venture Company nordöstlich von hier einen Smaragd von der Größe Eurer Faust gefunden hat.$B$BIch kenne ein paar Käufer, die daran interessiert wären, so etwas in die Finger zu bekommen, und ich wäre bereit, halbe-halbe beim Verkauf mit Euch zu machen. Seid Ihr dabei?",
-    ["O"] = "Erhaltet den Katzenaugensmaragd von einem der Vorarbeiter oder Vollstrecker der Venture Co.",
+    ["D"] = "Als Werftmeister eines so geschäftigen Hafens wie Ratchet habe ich mein Ohr immer am Puls der Zeit. Ich weiß alles über den Verkehr von Waren und Geld zwischen hier und Booty Bay.$B$BDie jüngste Neuigkeit, die ich erfahren habe, betrifft die Felsadermine der Venture Company nordöstlich des Schlickermoores. Einer der Minenarbeiter hat dort einen faustgroßen Smaragd gefunden. Ich kenne ein paar Käufer, die sich die Finger nach so etwas ablecken würden... und ich würde bei einem Verkauf Halbe-Halbe machen.",
   },
   [897] = {
     ["O"] = "Bringt den Ernterkopf zu Jorn Himmelsdeuter.",
@@ -2991,14 +2956,10 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Bringt das Samophlang zu Stotterspritter in Düsentopfs Außenposten im Nördlichen Brachland zurück.",
   },
   [903] = {
-    ["D"] = "Wenn Ihr wirklich Euren Mut unter Beweis stellen wollt, setze ich Euch jetzt auf etwas an, das sich wirklich wehrt. Die Savannenjägerinnen des Brachlandes sind die gerissensten ihrer Art. Zäh, erfinderisch, schnell... und tödlich. Sie haben in letzter Zeit unseren Spähern rund um die Siedlung das Leben schwer gemacht, besonders im Nordwesten.$B$BSeid vorsichtig, wenn Ihr sie jagt, $N, oder Ihr werdet feststellen, dass Ihr nicht mehr Jäger, sondern Gejagter seid.",
-    ["O"] = "Sammelt 5 Klauen der Jägerin von Savannenjägerinnen.",
-    ["T"] = "Jagt die Jägerin",
+    ["D"] = "Es ist nun an der Zeit, etwas zu jagen, das sich wirklich wehrt. Die Streuner des Brachlandes sind von zäher Art. Zäh, erfinderisch, listig... und tödlich. Ihr findet sie zwischen den hohen Gräsern. Ihr werdet viele südwestlich von Crossroads finden.$B$BSeid vorsichtig, wenn Ihr sie jagt, $N, oder Ihr werdet feststellen, dass Ihr nicht mehr Jäger, sondern Gejagter seid.",
   },
   [905] = {
-    ["D"] = "Tja, $N, die Jagd wird schwieriger. Jetzt müsst Ihr Eure Beute in ihrem eigenen Unterschlupf besiegen.$B$BJagt die Sonnenschuppenraptoren im Süden, wo sie abseits der Straße einen Bau zwischen den Hügeln angelegt haben. Erledigt sie und nehmt Euch die Federn, die sie tragen. Legt die Federn in die Nester der Sonnenschuppenraptoren, um ihren Brüdern zu zeigen, dass Ihr sie nicht fürchtet!$B$BSeid vorsichtig, $C. Raptoren jagen in Rudeln und werden Euch umzingeln, wenn Ihr Euch nicht vorseht.",
-    ["O"] = "Tötet Sonnenschuppenraptoren und nehmt ihre Federn mit. Benutzt die Federn bei den drei Sonnenschuppennestern.",
-    ["T"] = "In die Höhle des Raptors",
+    ["O"] = "Tötet Bluthornraptoren und nehmt ihre Federn mit. Benutzt die Federn bei den drei Sonnenschuppennestern. Kehrt zu Sergra Darkthorn in Crossroads zurück.",
   },
   [906] = {
     ["D"] = "Bringt Loks Kopf zu Thork am Wegekreuz, $R. <schnaubt> Er sollte ohne Worte wissen, was meinem Stamm zugestoßen ist - ha, nicht dass er denken würde, Quetschzahn hätte bei <schnaubt> solchen Dingen geholfen. Aber ich bin sicher, er wird Euch für das Ausführen einer solch großen Tat belohnen. <schnaubt>$B$BIch werde Euch auch weiterhin mit Agamaggans Macht segnen, solange ich in diesem Käfig verbleibe, $R. Bis dann, lebt wohl.",
@@ -3381,6 +3342,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [1020] = {
     ["D"] = "$N, nun da es von Elunes gesegnetem Licht durchflutet wurde, glaube ich, dass das Gebräu dem kranken Kind helfen wird. Bitte bringt es nach Astranaar und gebt es dem Vater des Kindes, Pelturas Weißmond.$B$BUm nach Astranaar zu gelangen, folgt ihr der Straße nach Süden und dann nach Osten. Wenn Ihr aber schneller dorthin gelangen wollt, sprecht mit Schildwache Avana.",
     ["O"] = "Bringt Orendils Heilung zu Pelturas Weißmond in Astranaar im Eschental.",
+    ["T"] = "Orendils Heilung",
   },
   [1021] = {
     ["D"] = "Ich weiß zwar nicht, wer Ihr seid, aber ich brauche Eure Hilfe. Meine Schwestern wollten den Satyrn den Zweig des Cenarius abnehmen. Sie sagten, dass sie bald zurück sein werden, aber das war vor zwei vollen Tagen!$B$B$N, Ihr müsst sie finden! Sie wollten nach den Ruinen eines Nachtelfentempels in Xavian im Nordwesten suchen. Ich weiß nicht, was ich davon halten soll. Sucht nach Anilia, sie wollte sie bei der Suche führen.",
@@ -3648,7 +3610,6 @@ pfDB["quests"]["deDE-tbc"] = {
   [1089] = {
     ["D"] = "Die Druiden errichteten den Krallenbau auf dem Steinkrallengipfel, in dem sie viele mächtige Gegenstände aufbewahren.$B$BSie haben sich ein komplexes Schema ausgedacht, damit sie nicht in die falschen Hände gelangen.$B$BGlücklicherweise konnte ich einem von ihnen... ein paar Details entlocken.$B$BVersteckt in einer kleinen Laterne am Eingang des Baus werdet Ihr den Torwächterschlüssel finden. Damit könnt Ihr die Behälter öffnen, die über den ganzen Bau verteilt sind. Mit den Gegenständen aus diesen Behältern wiederum könnt Ihr ihren Hort öffnen, der sich in einem der zentralen Bereiche befindet.",
     ["O"] = "Begebt Euch zum Bau auf den Steinkrallengipfel. Benutzt den Torwächterschlüssel, um Euch die versteckten Gegenstände der Druiden zu besorgen. Benutzt diese Gegenstände, um den Hort des Krallenbaus zu öffnen.",
-    ["T"] = "Der Bau",
   },
   [1090] = {
     ["D"] = "Wisst Ihr, ich war hier einst die zweitwichtigste Person. Das hat sich alles geändert, als Gerenzo hier übernahm. Hat meinen Boss Ziz Fizziks gefeuert und mich zum Arbeiten nach unten in die Minen geschickt. Ziz sagte mir aber, dass ich hier bleiben und Informationen sammeln solle. Sein neuer Boss wird uns gut bezahlen, wenn wir rausfinden, was Gerenzo plant.$B$BEgal, was ich weiß ist, dass Gerenzo befohlen hat, dass Riesenmengen von diesem gold-grünen Erz abgebaut werden sollen. Ich hol Euch eine Probe, damit Ihr sie Ziz bringen könnt, aber Ihr müsst Euch vor Patrouillen hüten, während ich es hole.",
@@ -4018,7 +3979,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Bringt die Dokumente des Kapitäns zu Nazeer Blutlanze in Brackenwall.",
   },
   [1203] = {
-    ["D"] = "Bringt Messerwirbels Schwert zu \"Sumpfauge\" Jarl im Irrlichtanwesen.",
+    ["D"] = "Ich habe zu schneiden. Ich kann Euch nicht sagen, was ich schneiden werde, aber... Ich brauche eine Klinge. Eine ganz bestimmte Klinge...$B$BManche Leute sprechen von einem Schwert. Ich nenne es eine Schwingklinge.$B$BHelft Ihr mir? Diese Fischmenschen, Murlocs, oder wie auch immer die heißen... Einer von ihnen wird Messerwirbel genannt, hat ständig so ein großes Schwert bei sich, lebt nördlich von hier am Strand. Ich brauche sein Schwert!$B$BAber schlaft nicht noch darüber. Was ich schneide, das hält nicht ewig...",
     ["O"] = "Bringt Messerwirbels Schwert zu \"Sumpfauge\" Jarl im Irrlichtanwesen.",
   },
   [1204] = {
@@ -4350,6 +4311,7 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [1392] = {
     ["D"] = "Noboru plagt die Draenei des Sicheren Hafens seit Monaten; sein Knüppel ist ein Symbol der Brutalität, die sie sich von den Verirrten gefallen lassen mussten.",
+    ["T"] = "Noboru der Knüppler",
   },
   [1393] = {
     ["D"] = "Bitte helft! Diese Kreaturen werden mich fressen!$B$BHelft mir hier raus und ich gebe Euch einen großen Schatz! Er ist in meinem Lager im Sumpf im Norden von Steinard, aber in einer Geldkassette eingeschlossen, die man mit einem Trick öffnet, den nur ich beherrsche.$B$BWenn Ihr mir zur Flucht verhelft, zeige ich ihn Euch.",
@@ -4663,7 +4625,6 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Ihr habt es bis hierher geschafft, wenn Ihr es bis zu Ende durchstehen möchtet, werde ich Euch nicht aufhalten. Aber ich kann keine Leute erübrigen, Ihr seid also auf Euch allein gestellt.$B$BDogran wird in einem Lager der Stacheleber nördlich von hier festgehalten. Sucht nach zwei nebeneinander stehenden Hütten. Er wird schwer bewacht... Das heißt, wenn sie ihn noch nicht getötet haben oder er seinen Verletzungen erlegen ist.$B$BViel Glück.",
   },
   [1516] = {
-    ["D"] = "Bringt 2 Teufelspirscherhufe zu Canaga Erdenrufer im Tal der Prüfungen.",
     ["O"] = "Bringt 2 Teufelspirscherhufe zu Canaga Erdenrufer im Tal der Prüfungen.",
   },
   [1517] = {
@@ -4908,7 +4869,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [1704] = {
     ["D"] = "Ich fertigte eine Kopie meiner Notizen über die Techniken an, die ich lernte, während ich Eure Rüstung herstellte, und brauche jemanden, der sie zu Klockmort Spannsplint bringt. Er ist ein gnomischer Schmied in Eisenschmiede, und wenn er herausfindet, was ich herausgefunden habe...Ich wette, er reißt sich vor Aufregung selbst den Bart aus.",
     ["O"] = "Bringt Furens Notizen zu Klockmort Spannsplint.",
-    ["T"] = "Klockmort Spannsplint",
+    ["T"] = "Klockmort Spannersplint",
   },
   [1705] = {
     ["D"] = "Ich gebe nur ungern zu, dass Furen tatsächlich etwas gefunden haben könnte. Aber um ganz sicher zu sein, muss ich seine Techniken an einem neuen Rüstungsteil erproben. Wenn Ihr mir mit den Materialien helft, $N, könnt Ihr die Rüstung haben.$B$BUm die Rüstung herzustellen benötige ich Proben von brennendem Blut und brennendem Felsen.$B$BDie findet man meines Wissens nur im Dämmerwald. Die Worgs der Nachtheuler in der Mine von Rolands Verdammnis haben brennendes Blut, und Bauchreißer, ihr Anführer, wird den Fels haben.$B$BMöge das Schicksal Euch Schnelligkeit gewähren $N.",
@@ -4941,6 +4902,7 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [1718] = {
     ["D"] = "Euer Ruf als Krieger wächst, $N. Jetzt ist es Zeit, Euch mit Euresgleichen zu messen und festzustellen, was Ihr könnt.$B$BVor der Küste des Brachlandes, südlich von Ratschet, liegt eine Insel. Sie heißt Prügeleiland und ist ein Treffpunkt für Krieger.$B$BGeht dorthin und kämpft.$B$BSprecht mit Klannoc Macleod, dem obersten Krieger der Insel. Wenn er Euch für würdig erachtet, wird Klannoc Euch weiter auf dem Pfad des Kriegers führen.$B$BUm das Prügeleiland zu erreichen, müsst Ihr nach den Sandbankuntiefen entlang der Händlerküste suchen.",
+    ["T"] = "Der Eiländer",
   },
   [1719] = {
     ["D"] = "Wenn Ihr von mir lernen wollt, müsst Ihr zuerst den Ringkampf absolvieren. Das ist eine Herausforderung hier auf dem Prügeleiland, an der wir aufstrebende Krieger teilnehmen lassen, die sich für gut genug halten. Wenn Ihr gewinnt, dann weiß ich, dass Ihr es tatsächlich seid.$B$BGeht als Erstes mitten in diese Menge dort und stellt Euch auf den Rost. Dadurch weiß Twiggy Flachkopf, dass Ihr bereit seid, und er schickt Euch Herausforderer.$B$BWenn Ihr alle Herausforderer besiegt habt, ruft er Big Will. Tötet Big Will und kehrt innerhalb der von uns gesetzten Frist zu mir zurück.",
@@ -5129,9 +5091,6 @@ pfDB["quests"]["deDE-tbc"] = {
   [1882] = {
     ["D"] = "Die Pestländer im Osten sind entartet. Der Lichkönig hat sie ersonnen, und jetzt breitet sich ihre Magie im Erdboden aus und verderbt und tötet alles Leben. Die zerstörerischen Kräfte der Seuche haben zwar eine gewisse Bezauberung, doch wir, die Magier der Verlassenen, sind der Meinung, sie ist ungehörig und muss ausgemerzt werden.$B$BDoch zuerst müssen wir herausfinden, wie weit sie sich nach Tirisfal ausgebreitet hat. Geht zu Balnirs Bauernhof im Osten von Tirisfal. Im Garten blühen Blumen – Löwenmäulchen. Sammelt sie und kehrt zurück.",
     ["O"] = "Bringt Balnirlöwenmäulchen zu Anastasia Hirschbrunn im Magierviertel von Unterstadt.",
-  },
-  [1883] = {
-    ["O"] = "Gespräch mit Un\'thuwa",
   },
   [1884] = {
     ["D"] = "Der Hexenmeister Zalazane von den Echoinseln hat den normalen Fluss der Magie in Durotar gestört. Das vollbringt er mit besudelten Fetischen, Jujuhaufen, die er auf der Echohauptinsel in seinen Hütten aufgeschichtet hat.$B$BDiese Haufen haben unser Ökosystem verdorben und Hexenmeistern und Höllenkreaturen, die in den dunklen Winkeln des Landes hausen, Macht gegeben.$B$BIhr müsst diese Jujuhaufen zerstören, $N, bevor der Fluss der Magie für immer verändert ist.",
@@ -5383,7 +5342,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Euch jetzt in den Einsatz zu schicken wäre Selbstmord. Renzik braucht nicht noch einen toten Schurken. Aber keine Sorge, $N... Renzik wird Euch schon Beine machen.$B$BGeht ins Rotkammgebirge und sprecht mit einem Mitglied des SI:7 namens Lucius. Ihr werdet ihn auf den Docks von Seenhain finden, wo er mit den anderen halbseidenen Taugenichtsen herumhängt.",
   },
   [2298] = {
-    ["D"] = "Reist nach Sturmwind und sucht Renzik \"Das Messer\" auf.",
+    ["D"] = "Wir war\'n also grade dabei, Phase III zu planen, da platzen \'n paar von Magnis Holzköpfen hier rein, schwafeln was von \'ner Art Razzia und verhaften ein paar vom Verborgenen Kreis.$B$BSo springt keiner mit dem alten Schwarzbart um! Die Diskussion wurde immer hitziger und irgendwann fiel Euer Name!$B$BMein Rat? Nehmt den ersten Greif aus Eisenschmiede raus und geht nach Sturmwind. Geht in die Altstadt und sprecht dort mit einem alten Freund von mir, der Renzik \"Das Messer\" genannt wird.",
     ["O"] = "Reist nach Sturmwind und sucht Renzik \"Das Messer\" auf.",
   },
   [2299] = {
@@ -5393,6 +5352,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [2300] = {
     ["D"] = "Reist nach Sturmwind und sucht Renzik \"Das Messer\" auf.",
     ["O"] = "Reist nach Sturmwind und sucht Renzik \"Das Messer\" auf.",
+    ["T"] = "SI:7",
   },
   [2318] = {
     ["D"] = "Sucht jemanden, der das Tagebuch des Paladins übersetzen kann. Der nächstgelegene Ort, wo Ihr so jemanden finden könntet, ist Kargath im Ödland.",
@@ -5524,7 +5484,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Habt Ihr jemals gesehen, wie sie kämpfen, $N? Die Skorpoks, meine ich. Habt Ihr jemals die Anmut und Gewandtheit ihrer Bewegungen gesehen? Gesehen, wie entschlossen sie zuschlagen?$B$BWenn wir nur irgendwie diese Beweglichkeit einfangen und für uns nutzbar machen könnten, dann würden wir so reich werden, wie... ähem, dann wäre das ein unschätzbarer Segen für die wissenschaftliche Gemeinschaft, meine ich natürlich.$B$BHelft mir, $N, dann lasse ich Euch auch von der fertigen Inhaltsstoffprobe kosten.$B$BUm eine reaktionsstabile Probe herzustellen, benötige ich drei Skorpokzangen, zwei Geiermuskelmägen und eine feuerverbrannte Eberlunge.",
   },
   [2586] = {
-    ["D"] = "Bringt Blutmagier Drazial 3 Skorpokzangen, 2 Geiermuskelmägen und 1 feuerverbrannte Eberlunge.",
+    ["D"] = "Ihr lebt noch! Das sind wahrlich gute Neuigkeiten. Ich vermute mal, Ihr seid wieder da, weil Ihr mehr von der Skorpokinhaltsstoffprobe möchtet?$B$BTja, $N, dann mal ab ins Ödland mit Euch, und kommt erst zurück, wenn Ihr drei Skorpokzangen, zwei Geiermuskelmägen und eine feuerverbrannte Eberlunge eingesammelt habt.",
   },
   [2601] = {
     ["D"] = "In der Einöde wimmelt es nur so von Rotsteinbasilisken, $N. Diese Basilisken haben sich an ihre Umgebung angepasst und sind in ihr gediehen, mehr als jede andere wilde Tierart in diesem Gebiet.$B$BIch habe sie schon oft von weitem beobachtet, wenn sie jagen und ihren täglichen Aktivitäten nachgehen: Diese Wildtiere zeigen Denkprozesse, die komplexer sind als die mancher Humanoiden!$B$BIch muss ihre Gehirne studieren!$B$BBringt mir zehn ihrer Gehirne, $N. Doch für das Präparat benötige ich auch zwei Geiermuskelmägen. Diese bilden die Grundlage der Lösung.",
@@ -5855,7 +5815,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Bringt Fraggar Donnermantel beim Nistgipfel 5 Trollstammeshalsketten.",
   },
   [2882] = {
-    ["D"] = "Diese Karte zeigt ein Stück Strand an einer Südküste. Unter der Karte stehen elegant geschriebene Worte:$B$B$BSüdlich des Piers$BDürft Ihr drauf hoffen$BFindet Flagge, Mast und Knochen$BGrabt dort, wenn Ihr tapfer sein wollt$BGrabt und erbt Cuergos Gold!$BEinen Schlüssel werdet Ihr brauchen, einen Schlüssel werdet Ihr sehen$BDie Mannen dort woll\'n als Bezahlung Euer Blut Euch nehm\'n.",
+    ["D"] = "Diese Karte zeigt ein Stück Strand an einer Südküste. Unter der Karte stehen elegant geschriebene Worte:$B$BSüdlich des Piers$BDürft Ihr drauf hoffen$BFindet Flagge, Mast und Knochen$BGrabt dort, wenn Ihr tapfer sein wollt$BGrabt und erbt Cuergos Gold!$BEinen Schlüssel werdet Ihr brauchen, einen Schlüssel werdet Ihr sehen$BDie Mannen dort woll\'n als Bezahlung Euer Blut Euch nehm\'n.",
   },
   [2902] = {
     ["O"] = "Findet die Schlachtpläne der Gnolle irgendwo in den Gnoll-Lagern südlich vom Camp Mojache.",
@@ -6130,6 +6090,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [3022] = {
     ["D"] = "$N, ich sehe deutlich, dass Ihr Euch liebend gern meiner noblen Sache zuwenden möchtet. Ja, natürlich könnt Ihr etwas für mich tun!$B$BBringt diese Kiste mit Eiern zu Erelas Himmelsbern. Das ist ein Druide, der sich um diese Eier kümmert. Er bebrütet sie und bildet dann die jungen Hippogryphen aus. Ihr findet ihn in Teldrassil, in einem kleinen Dorf im Süden namens Rut\'theran.",
     ["O"] = "Bringt die sorgfältig verpackte Kiste zu Erelas Himmelsbern in das Dorf Rut\'theran.",
+    ["T"] = "Vorsichtig behandeln.",
   },
   [3042] = {
     ["D"] = "Die Trolle der Sandwüter von Zul\'Farrak stellen ein Aushärtungsmittel aus Sandstein her, und ich kann dies verwenden, um die von mir hergestellten Waren auszuhärten, ja, so ist es! Von Kennern wird es hoch gepriesen; wenn Ihr mir also einen guten Vorrat dieses Härters bringt, werde ich Euch reich belohnen.$B$BZul\'Farrak liegt nordwestlich von Gadgetzan. Viel Glück.",
@@ -6264,7 +6225,6 @@ pfDB["quests"]["deDE-tbc"] = {
   [3115] = {
     ["D"] = "Während Ihr unterwegs wart, um mir zu helfen, wurde mir dieses Memorandum für Euch gegeben. Nehmt Euch die Zeit, es zu lesen, wenn Ihr die Gelegenheit dazu habt. Ich glaube, es kommt vom Hexenmeisterlehrerin Saripal. Werft einen Blick darauf und sucht ihn dann in Ambossar auf, sobald Ihr die Gelegenheit dazu habt.$B$BUnd passt auf Euch auf, $N, man traut Leuten wie Euch hierzulande nicht gerade.",
     ["O"] = "Lest die besudelte Rune und sprecht mit Saripal Schmauchbräu in Ambossar oberhalb des Eisklammtals.",
-    ["T"] = "Besudelte Rune",
   },
   [3116] = {
     ["O"] = "Sprecht mit Alyissia in Aldrassil im Laubschattental.",
@@ -6297,11 +6257,16 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Tötet 10 Eisenfellbären oder Langzahnläufer und benutzt dann das Gefäß für Bestienmuisek, um die gefallenen Tiere zu schrumpfen und einzufangen.$B$BBringt anschließend 10 Einheiten Bestienmuisek und das Gefäß für Bestienmuisek zu Hexendoktor Uzer\'i in Feralas.",
     ["O"] = "Tötet 10 Eisenfellbären oder Langzahnläufer und benutzt dann das Gefäß für Bestienmuisek, um die gefallenen Tiere zu schrumpfen und einzufangen.$B$BBringt anschließend 10 Einheiten Bestienmuisek und das Gefäß für Bestienmuisek zu Hexendoktor Uzer\'i in Feralas.",
   },
+  [3124] = {
+    ["T"] = "Hippogryphenmuisek",
+  },
   [3125] = {
     ["D"] = "$N, als Nächstes müsst Ihr für mich eine Kreatur fangen, die vom Aussehen her sehr zerbrechlich scheint, aber ihr mächtiger Geist ist das, was wir eigentlich besitzen wollen. Die Feendrachen, von denen ich spreche, dienen den Nachtelfen als Verbündete. Wir müssen einen von ihnen einfangen, damit auch die Horde von seiner Geisteskraft profitieren kann.$B$BHier ist das Muisekgefäß, $N. Schaltet 8 Grimmlingflitzer oder Grimmlingdrachen aus und fangt ihr Muisek ein. Ihr könnt sie westlich von hier finden.",
+    ["T"] = "Feendrachenmuisek",
   },
   [3126] = {
     ["D"] = "Die umherwandernden Waldgänger, die überall im Wald zu finden sind, sind unser nächstes Ziel, $N. Nachtelfen haben Treants als Verbündete rekrutiert, um gegen die Horde zu kämpfen. Sie mögen zwar langsam sein, aber als Beschützer sind sie nicht zu unterschätzen.$B$BBald werden wir diese Macht für unsere eigenen Zwecke nutzen können.$B$BFindet 3 umherwandernde Waldgänger, schaltet sie aus und benutzt das Muisekgefäß, um sie zu schrumpfen und einzufangen.",
+    ["T"] = "Treantmuisek",
   },
   [3127] = {
     ["T"] = "Bergriesenmuisek",
@@ -6683,6 +6648,9 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Bringt 6 Mithrilrohre, 1 genaues Zielfernrohr und 2 hochentwickelte Zielattrappen zu Glotz Widrikus in Beutebucht.",
     ["O"] = "Bringt 6 Mithrilrohre, 1 genaues Zielfernrohr und 2 hochentwickelte Zielattrappen zu Glotz Widrikus in Beutebucht.",
   },
+  [3646] = {
+    ["D"] = "wird beim Anblick eines sterbenden Jungtiers wütend!",
+  },
   [3661] = {
     ["D"] = "Wildekin sind unberechenbare Kreaturen, $N. Sie sind zu einer außerordentlichen Zärtlichkeit fähig, aber diese Kreaturen können auch eine enorme Wildheit an den Tag legen, wenn etwas für sie sehr Wichtiges bedroht wird.$B$BDiese Kreaturen wurden angeblich von Elune geschaffen und ich bin daran interessiert herauszufinden, ob dies wirklich der Wahrheit entspricht.$B$BVor Kurzem habe ich etwas von einer Population von Wildekin gehört, die im Hinterland leben - heimtückische, primitive und wilde Eulenbestien. Man findet sie unter den wild lebenden Tieren dort. Würdet Ihr einige Wildekinfedern für mich sammeln?",
     ["O"] = "Sammelt 15 Wildekinfedern aus dem Hinterland für Erelas Himmelsbern in Rut\'theran.",
@@ -6865,7 +6833,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Sucht nach Gregan Hopfenspei im nördlichen Feralas. Lasst Euch von ihm erklären, wie Ihr Euch das Videre-Elixier beschaffen könnt, und kehrt dann zu Donova Schneeweh nach Winterquell zurück.",
   },
   [3911] = {
-    ["D"] = "Begebt Euch in die Schwarzfelstiefen und beschafft 10 Essenzen der Elemente. Euer erster Gedanke ist, die Golems und die Schöpfer der Golems zu suchen. Doch Ihr erinnert Euch, dass Vivian Lagrave auch etwas von Elementaren vor sich hingemurmelt hat.",
+    ["D"] = "Es gibt Arbeit für diejenigen, die sich in die Tiefen wagen, $N.$B$BDen Dunkeleisenzwergen ist es gelungen, extrem mächtige Golems zu erschaffen.$B$BErsten Berichten unserer Spione zufolge verwenden die Zwerge eine einzigartige Kraftquelle, die ihren Schöpfungen eine unvergleichliche Kraft zum Töten gibt.$B$BStellt Euch nur einmal vor, was wir mit unseren Monstrositäten tun könnten, wenn wir diese Essenz der Elemente in die Hände bekommen könnten! Stellt die ganze Stadt auf den Kopf, wenn es sein muss, aber kommt nicht wieder, ehe Ihr nicht die Essenz gefunden habt! Die Bezahlung ist es wert, das Risiko einzugehen.",
     ["O"] = "Begebt Euch in die Schwarzfelstiefen und beschafft 10 Essenzen der Elemente. Euer erster Gedanke ist, die Golems und die Schöpfer der Golems zu suchen. Doch Ihr erinnert Euch, dass Vivian Lagrave auch etwas von Elementaren vor sich hingemurmelt hat.",
     ["T"] = "Das letzte Element",
   },
@@ -7527,6 +7495,18 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Während ich die dritte und vierte Schrifttafel von Mosh\'aru überprüfe, müsst ihr die fünfte und sechste finden! Es wird nicht einfach sein, da sie in den Händen der Trolle des Gluthauerstamms auf der Schwarzfelsspitze sind. Die Spitze ist ein dunkler Berg aus Feuer zwischen der Brennenden Steppe und der Sengenden Schlucht.$B$BViel Glück, $N. Die Schwarzfelsspitze ist kein Ort für anständige Leute...",
     ["O"] = "Bringt Ausgrabungsleiter Eisenschuh in Tanaris die fünfte und sechste Schrifttafel von Mosh\'aru.",
   },
+  [4801] = {
+    ["T"] = "E\'ko eines Frostsäblers",
+  },
+  [4804] = {
+    ["T"] = "E\'ko einer Eiswindschimäre",
+  },
+  [4805] = {
+    ["T"] = "E\'ko eines Eisdistelyetis",
+  },
+  [4807] = {
+    ["T"] = "E\'ko eines Wildekins",
+  },
   [4808] = {
     ["D"] = "Ich habe noch eine weitere kleine Bitte an Euch.$B$BMeine anfänglichen Studien bezüglich der Essenz, die Ihr gesammelt habt, haben ergeben, dass es wohl möglich ist, die Eier der Großdrachenwelpen einzufrieren und so zu konservieren! Ich möchte diese Theorie überprüfen, aber zuerst benötige ich speziell angefertigte Komponenten der Ingenieurskunst. Mein Kollege Felnok Stahlfeder kann sie herstellen.$B$BHier, bringt Felnok diesen Brief. Darin steht, was ich benötige. Ihr findet Felnok in Winterquell in der Ewigen Warte.",
     ["O"] = "Gebt Felnok Stahlfeder in der Ewigen Warte in Winterquell Tinkees Brief.",
@@ -7723,8 +7703,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Wendet Euch an die königlichen Vorarbeiter von Unterstadt, um etwas über den Aufenthaltsort von Jeremiah Teufelsstein herauszufinden. Normalerweise findet sich ein Volkszählungsbeamter in der Nähe der Gilden- und Wappenrock-Registrierung.",
   },
   [5041] = {
-    ["D"] = "Was auch immer im Südlichen Brachland geschehen ist, es hat einige der Stacheleberstämme in unsere Richtung getrieben. Insbesondere die vertriebenen Klingenmähnen werden immer verzweifelter und ihre Angriffe werden immer waghalsiger. Allein diese Woche habe ich schon zwei Karawanen verloren!$B$BUnsere Krieger am Wegekreuz warten händeringend auf diese Vorräte und ich habe nicht vor, zuzulassen, dass diese Stacheleber sich dank dieser Missetaten fettfressen können. Findet die vermissten Vorratskisten und bringt sie zu mir. Ich würde die Stacheleberhütten südlich von hier entlang des Flusses durchsuchen.",
-    ["O"] = "Sammelt 5 Vorratskisten des Wegekreuzes in der Höhle der Klingenmähnen.",
+    ["D"] = "Die Karawane, die angegriffen wurde, führte Vorräte mit sich, die wir dringend benötigen.$B$BIhr wart bisher tapfer genug, den Klingenmähnenstamm zu bekämpfen, und ich werde Euch bitten, es erneut zu tun. Dieses Mal wüsste ich aber gern, ob ich Euch bitten könnte, nach unseren verlorenen Vorräten Ausschau zu halten. Ihr könnt sie wahrscheinlich in ihren Lagern finden; die Stacheleber werden durch ihre schändlichen Taten fett.$B$BDie Einwohner von Crossroads wären in Eurer Schuld.",
     ["T"] = "Vorräte für das Wegekreuz",
   },
   [5042] = {
@@ -7783,6 +7762,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [5061] = {
     ["D"] = "Ihr habt die notwendigen Lektionen gemeistert, die alle jungen Druiden lernen, bevor sie einen Wasseraspekt annehmen können. Kehrt jetzt zu Eurem Lehrer Mathrengyl Bärenfährte nach Darnassus zurück. Zeigt ihm Euren Anhänger und beweist ihm damit, dass Ihr bereit seid zu lernen, was er Euch lehren kann. Er wird Eure Ausbildung abschließen und Euch ermöglichen, eins mit dem Wasser zu werden.$B$BAuf Wiedersehen. Wir werden uns wieder sprechen.",
     ["O"] = "Kehrt nach Darnassus zurück und zeigt Mathrengyl Bärenfährte den Anhänger des Seelöwen.",
+    ["T"] = "Wassergestalt (Taurendruide)",
   },
   [5062] = {
     ["D"] = "Arikara ist eine tödliche Kreatur, die schnell beseitigt werden muss. Um sie zur Strecke zu bringen, müsst Ihr das hochheilige Feuer des Lebens anzünden - so wird Arikara beschworen.$B$BGeht nun und holt eine seltene Pflanze, die Brandpulveragave. Wenn Ihr genug Agaven gesammelt habt, sucht den Rat von Magatha Grimmtotem auf der Anhöhe der Ältesten in Donnerfels. Sie ist eine mächtige Schamanin, die die Agavenpflanze verzaubern kann, um ein Pulver zu erzeugen, das das Feuer entzünden kann.$B$BReist in Richtung Osten zum Siedenden Teich und sammelt Brandpulveragaven.",
@@ -7875,7 +7855,7 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [5101] = {
     ["D"] = "Pah! Was glaubt Ihr\'n, was das is\', \'ne Art Test-Quest? Ich wett, dass da sogah Tippfehler drinne sin\'!$B$BUn\' wenn Ihr denkt, dass mein Quest einfach sein würd, denn irrt Ihr Euch abba gewaltich!$B$BMacht mir ma\' zehn Schafe (1933) alle und kommt erst zurück, wenn Ihr\'s getan habt!",
-    ["O"] = "Tötet 6 Schafe für Benny... und dann nehmt die Füße in die Hand und rennt weg, was das Zeug hält!$B$B$B$B$BWar nur \'n Scherz... was das Rennen angeht.",
+    ["O"] = "Tötet 6 Schafe für Benny... und dann nehmt die Füße in die Hand und rennt weg, was das Zeug hält!$B$BWar nur \'n Scherz... was das Rennen angeht.",
     ["T"] = "Lees ultimativer Test-Quest... der Verdammnis!",
   },
   [5102] = {
@@ -8212,6 +8192,7 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [5384] = {
     ["D"] = "Das ist es, $N.$B$B<Eva zeigt auf die Phiole in der Tasche.>$B$BDas Blut von Unschuldigen. Das reinste Blut... damit wird Krastinovs Meister besänftigt.$B$BMit diesem Blut kann Kirtonos beschworen werden. Mit diesem Blut muss Kirtonos auch vernichtet werden.$B$BBringt dieses Blut auf die Veranda. Legt es auf die Kohlenpfanne. Kirtonos wird kommen - er kann nicht widerstehen. Wenn er erscheint, entfesselt die Wut und den Zorn von Tausenden unschuldigen Toten über ihm.$B$BWenn Ihr erfolgreich seid, werdet Ihr mehr verdienen als nur unsere Dankbarkeit.",
+    ["T"] = "Kirtonos der Herold (Zauber - Bild)",
   },
   [5385] = {
     ["D"] = "Ihr hebt den Sack vorsichtig auf und macht Euch auf den Rückweg zu Jessir Mondsichel an der Grenze des Teufelswaldes und des Eschentals. Hoffentlich wird dem Paladin der ihm zustehende Respekt erwiesen, wenn Ihr seine Überreste seinen Freunden übergeben habt.",
@@ -8242,6 +8223,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [5465] = {
     ["D"] = "Kehrt mit dem Andenken zu Marduk zurück, $N. Er wird Euch über die Anwendung instruieren.",
     ["O"] = "Kehrt zu Magistrat Marduk in Darrowehr zurück. Zeigt ihm das seelengebundene Andenken.",
+    ["T"] = "Seelengebund. Andenken",
   },
   [5466] = {
     ["D"] = "Es verbleibt noch eine Aufgabe, $N. Tretet dem Lich Ras Frostraunen in seinem Unterschlupf gegenüber.$B$BBenutzt die Macht des Andenkens gegen die Bestie - seid unerbittlich in Euren Taten! Haltet den Schlägen stand, mit denen das um sich schlagende Biest Euch sicherlich eindecken wird. Gebt dem Schmerz nicht nach!$B$BWenn das Ritual abgeschlossen ist, wird Ras wieder ein Sterblicher sein. An diesem Punkt muss er getötet werden. Schlagt ihn nieder und nehmt Euch seinen menschlichen Kopf.",
@@ -8283,9 +8265,11 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [5517] = {
     ["D"] = "$G Bruder : Schwester; $N -, Eure Taten im Namen der Argentumdämmerung sind zu zahlreich um sie noch aufzuzählen. Als Anerkennung für Eure Taten, werde ich mich von einem unserer wertvollen chromatischen Mäntel der Dämmerung trennen - Er schützt den Träger gleichzeitig gegen alle Formen der Magie. Nur die Stärksten und Besten der Dämmerung haben ein Anrecht auf einen Chromatischen Mantel der Dämmerung!$B$BBringt mir fünfundzwanzig Ehrenmarken als Zeichen Eurer Hingabe und Ihr erhaltet von mir den feinsten unserer Mäntel.",
+    ["T"] = "Chromatischer Mantel der Dämmerung",
   },
   [5521] = {
     ["D"] = "$G Bruder : Schwester; $N -, Eure Taten im Namen der Argentumdämmerung sind zu zahlreich um sie noch aufzuzählen. Als Anerkennung für Eure Taten, werde ich mich von einem unserer wertvollen chromatischen Mäntel der Dämmerung trennen - Er schützt den Träger gleichzeitig gegen alle Formen der Magie. Nur die Stärksten und Besten der Dämmerung haben ein Anrecht auf einen Chromatischen Mantel der Dämmerung!$B$BBringt mir fünfundzwanzig Ehrenmarken als Zeichen Eurer Hingabe und Ihr erhaltet von mir den feinsten unserer Mäntel.",
+    ["T"] = "Chromatischer Mantel der Dämmerung",
   },
   [5522] = {
     ["D"] = "Ich habe eine Botschaft von meinem Meister Vectus erhalten. Na ja, die Botschaft war nicht wirklich von Vectus... sie war von jemandem namens Leonidas Bartholomäus. Ich kenne Leonidas nicht, aber er kannte meinen Meister, und niemand kennt meinen Meister, außer er lässt es zu.$B$BLeonidas sagt, dass Vectus die Dracheneier will. Er möchte, dass Ihr sie ihm zur Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern bringt.$B$BDas tut weh! Warum Ihr? Vertraut Vectus mir nicht? Ach, egal... nehmt einfach die Eier und berichtet Leonidas, dass ich getan habe, was unser Meister befahl.",
@@ -8294,6 +8278,7 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [5524] = {
     ["D"] = "$G Bruder : Schwester; $N -, Eure Taten im Namen der Argentumdämmerung sind zu zahlreich um sie noch aufzuzählen. Als Anerkennung für Eure Taten, werde ich mich von einem unserer wertvollen chromatischen Mäntel der Dämmerung trennen - Er schützt den Träger gleichzeitig gegen alle Formen der Magie. Nur die Stärksten und Besten der Dämmerung haben ein Anrecht auf einen Chromatischen Mantel der Dämmerung!$B$BBringt mir fünfundzwanzig Ehrenmarken als Zeichen Eurer Hingabe und Ihr erhaltet von mir den feinsten unserer Mäntel.",
+    ["T"] = "Chromatischer Mantel der Dämmerung",
   },
   [5526] = {
     ["D"] = "Euer Wissen über Eldre\'Thalas – Düsterbruch – in Feralas wird nun gebraucht, $N. Im Ostteil der zerstörten Stadt erstreckt sich das Herrschaftsgebiet von Alzzin dem Wildformer. Begebt Euch mit der gebotenen Eile und Tapferkeit dorthin.$B$BDie verderbte Frucht des Gedeihens, die Teufelsranke, sollte sich in Alzzins Nähe befinden. Versucht so viel wie möglich von der Essenz der Teufelsranke zu erlangen, wenn er fällt. Versiegelt diese in dem Reliquiar und bringt es zu mir.$B$BViel Glück und Cenarius\' Kraft sei mit Euch!",
@@ -8758,9 +8743,6 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Was? Wirklich? Ihr möchtet noch mehr wissen? Aber Ihr habt bereits so viel für mich getan, $N. Ich kann Euch unmöglich darum bitten, an meiner statt nach Herdweiler zu gehen.$B$BSeid Ihr sicher, $N? Herdweiler ist viel gefährlicher als der Pass - ich kann Euch weder Schutz noch Informationen geben, was Ihr da vorfinden könntet.$B$BAlso, wenn Ihr wirklich bereit seid, mir zu helfen, dann geht in die Stadt und sucht eine erhöhte Stelle, von der aus Ihr einen guten Überblick habt. Dort könnt Ihr ihre Zahl abschätzen und mir dann Bericht erstatten. Aber seid vorsichtig...",
     ["O"] = "Geht nach Herdweiler, sucht einen hohen Aussichtspunkt, von dem aus Ihr die Stadt überblicken könnt, schätzt die Streitkräfte des Scharlachroten Kreuzzugs und kehrt dann zu Kirsta Grubenschatten in den Westlichen Pestländern zurück.",
   },
-  [6026] = {
-    ["O"] = "Smokey LaRue wants you to get 2 Thorium Bars, 1 Golden Rod, 8 Hi-Explosive Bombs, and 8 Unstable Triggers.$B$BYou will have to find a blacksmith and an engineer for these items.",
-  },
   [6027] = {
     ["D"] = "$N, ich vertraue Euch den Edelstein der Schlange an. Legt diesen Edelstein auf der Insel Ranazjar nordwestlich von hier in die Hand der Schlangenstatue. Dadurch wird jener gerufen, der das \'Buch der Uralten\' beschützt. Dieses Buch birgt die Geheimnisse der Naga. Geheimnisse, die seit Jahrhunderten gewahrt werden. Bringt mir dieses Buch, dann werden wir mehr über unsere schuppigen Widersacher erfahren!",
   },
@@ -9062,7 +9044,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [6344] = {
     ["D"] = "Eine Freundin von mir, Schwester Aquinne, ist in der Ausbildung zur Mondpriesterin in Darnassus. Sie hat Dolanaar letztes Jahr verlassen, um im Tempel zu lernen. Laut ihren Briefen geht es ihr gut und sie lernt viel, aber sie vermisst ihr Zuhause und ihre alten Freunde. Ich habe ein Buch mit ihren Lieblingsrezepten aus Dolanaar zusammengestellt.$B$BWenn Ihr die Zeit findet, könntet Ihr es ihr nach Darnassus bringen? Ihr könnt einen Hippogryphen von Fidelio mieten. Er befindet sich in der Mitte der Stadt, gegenüber vom Gasthaus.",
     ["O"] = "Bringt die Rezeptsammlung von Dolanaar zu Fidelio in Dolanaar.",
-    ["T"] = "Andenken an Zuhause",
+    ["T"] = "Nessa Schattensang",
   },
   [6361] = {
     ["D"] = "Ich habe ein Bündel Bälge von Tieren Mulgores und muss es nach Donnerfels bringen. Dort fertigt Ahanu, ein Kollege, Lederwaren aus diesen Häuten an.$B$BBringt Ihr ihm die Bälge für mich?$B$BDer schnellste Weg nach Donnerfels ist auf dem Rücken eines Windreiters. Bringt das Bündel Bälge zu Tak, unserem Windreitermeister am Wegekreuz, und sprecht mit ihm über den Transport nach Donnerfels.",
@@ -9102,12 +9084,10 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Bucht einen Windreiter nach Orgrimmar bei Windreitermeister Burok und bringt dann Grimtaks Fleisch zu Gryshka in Orgrimmar.",
   },
   [6385] = {
-    ["D"] = "Ich habe Grimtak einen Dankesbrief geschrieben. Könnt Ihr ihn für mich zustellen? Wenn Ihr schon beim Klingenhügel gewesen seid und mit dem dortigen Windreitermeister gesprochen habt, dann könnt Ihr mit einem Windreiter dorthin zurück fliegen.$B$BBringt meinen Brief zu Doras, dem Windreitermeister von Orgrimmar und sprecht mit ihm über den Transport nach Klingenhügel.",
+    ["D"] = "Ich habe Zargh einen Dankesbrief geschrieben. Könnt Ihr ihn für mich zustellen? Wenn Ihr schon in Crossroads gewesen seid und mit dem dortigen Windreitermeister gesprochen habt, dann könnt Ihr mit einem Windreiter dorthin zurück fliegen.$B$BBringt meinen Brief zu Doras, dem Windreitermeister von Orgrimmar, und sprecht mit ihm über den Transport nach Crossroads.",
   },
   [6386] = {
-    ["D"] = "Meine Windreiter wurden ausgebildet, an viele verschiedene Orte zu fliegen, wenn Ihr schon an diesem Ort gewesen seid und mit dem Windreitermeister dort gesprochen habt.$B$BIhr seid in Klingenhügel gewesen und habt mit dem Windreitermeister Burok gesprochen, daher könnt Ihr jetzt direkt zu ihm fliegen. Wenn Ihr in Klingenhügel seid, könnt Ihr Gryshkas Brief zu Grimtak bringen.$B$BSprecht wieder mit mir, wenn Ihr bereit zum Aufbruch seid.",
     ["O"] = "Bucht einen Windreiter zum Klingenhügel bei Windreitermeister Doras und bringt dann Gryshkas Brief zu Grimtak in Klingenhügel.",
-    ["T"] = "Kehrt nach Klingenhügel zurück",
   },
   [6387] = {
     ["D"] = "Ich sehe viele junge Zwerge vor meiner Tür, die begierig sind, die Kochkunst zu erlernen. Und wenn ein Koch eines mehr als alles andere braucht, dann ist das ein Beil!$B$BIch habe eine Liste von Kochlehrlingen mit vorzüglichen Abschlussprüfungen, die sich ein Ehrenbeil verdient haben. Bringt meine Liste zu Golnir Geröllzeh in Eisenschmiede. Er wird die Beile bereitstellen.$B$BDas schnellste Transportmittel nach Eisenschmiede ist ein Greif, also bringt die Liste Brolan Windbart, unserem Greifenmeister, und sprecht mit ihm über den Transport nach Eisenschmiede.",
@@ -9332,7 +9312,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Dirge Schnetzelhack möchte, dass Ihr folgende Dinge besorgt:$B$B10 Rieseneier. Ihr findet sie bei den Rocs, die Tanaris durchstreifen, oder anderen Großvogelarten.$B$B10 Stück scharfes Muschelfleisch. Das findet Ihr natürlich in Muscheln!$B$B20 Stück feiner alter Cheddar. Begebt Euch zu einer Käserei!$B$BSammelt all diese Gegenstände und kehrt dann zu Dirge zurück.",
   },
   [6611] = {
-    ["D"] = "Reist nach Gadgetzan in der Tanariswüste und sprecht mit Dirge Schnetzelhack über den Ausbau Eurer Kochkarriere.",
+    ["D"] = "Erwartet Ihr etwa, dass Zamja Euch noch irgendwas beibringt? Ihr kennt schon alle von Zamjas Küchentricks und verlangt immer noch nach mehr!$B$BZamja kann nicht helfen. $GFetter:Fette:r; $R muss nach Gadgetzan gehen. Dort findet Ihr einen kleinen Goblin namens Dirge - er wird Euch helfen, Dickerchen.$B$BWenn Ihr dann ein richtiger Sternekoch seid, kommt Ihr zurück und gebt Zamja Unterricht, okay? Und jetzt geht!",
     ["O"] = "Reist nach Gadgetzan in der Tanariswüste und sprecht mit Dirge Schnetzelhack über den Ausbau Eurer Kochkarriere.",
   },
   [6612] = {
@@ -9433,10 +9413,12 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [6861] = {
     ["O"] = "Ich bin ebenso begierig wie Ihr darauf, meine tragbare Schreddereinheit auszuprobieren, $R, aber bevor ich das Set herstellen kann, benötige ich Material - viel Material!$B$BUm genau zu sein, benötige ich einen Berg aus Thorium, Mithril und Eisen. Ich benötige außerdem eine Dampfsäge pro Einheit. Diese müsst Ihr beim Sägewerk beschaffen.$B$BAls ich mich hier umgesehen habe (vor meiner Gefangennahme), ist mir ein Stapel Dampfsägen im Holzlager der Sturmlanzen aufgefallen.",
+    ["T"] = "Zinnzischelixs tragbare Schreddereinheit",
   },
   [6862] = {
     ["D"] = "Ich bin ebenso begierig wie Ihr darauf, meine tragbare Schreddereinheit auszuprobieren, $R, aber bevor ich das Set herstellen kann, benötige ich Material - viel Material!$B$BUm genau zu sein, benötige ich einen Berg aus Thorium, Mithril und Eisen. Ich benötige außerdem eine Dampfsäge pro Einheit. Diese müsst Ihr beim Sägewerk beschaffen.$B$BAls ich mich hier umgesehen habe (vor meiner Gefangennahme), ist mir ein Stapel Dampfsägen im Holzlager der Sturmlanzen aufgefallen.",
     ["O"] = "Ich bin ebenso begierig wie Ihr darauf, meine tragbare Schreddereinheit auszuprobieren, $R, aber bevor ich das Set herstellen kann, benötige ich Material - viel Material!$B$BUm genau zu sein, benötige ich einen Berg aus Thorium, Mithril und Eisen. Ich benötige außerdem eine Dampfsäge pro Einheit. Diese müsst Ihr beim Sägewerk beschaffen.$B$BAls ich mich hier umgesehen habe (vor meiner Gefangennahme), ist mir ein Stapel Dampfsägen im Holzlager der Sturmlanzen aufgefallen.",
+    ["T"] = "Zinnzischelixs tragbare Schreddereinheit",
   },
   [6921] = {
     ["D"] = "Die Anhänger des Schattenhammers sind in die Mondschreinruinen der Tiefschwarzen Grotte eingezogen. Ihre Gegenwart kann nur dazu dienen, die Elemente gegen uns aufzubringen. Wenn dem kein Einhalt geboten wird, gehört ihnen diese Region bald ganz und gar.$B$B$N, geht in die Tiefschwarze Grotte und findet den Tiefenstein der Ruinen. Er dürfte irgendwo in deren Nähe im Wasser liegen. Darin ist ein Tiefenkern - ein Gerät, das, wenn man es richtig abliest, eine Aufstellung über alle Aktivitäten von Elementaren liefert. Wenn ich es habe, können der Irdene Ring und ich vielleicht etwas tun, um sie aufzuhalten.",
@@ -9476,7 +9458,7 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [7002] = {
     ["D"] = "Ich bin ebenso begierig wie Ihr darauf, meine tragbare Schreddereinheit auszuprobieren, $R, aber bevor ich das Set herstellen kann, benötige ich Material - viel Material!$B$BUm genau zu sein, benötige ich einen Berg aus Thorium, Mithril und Eisen. Ich benötige außerdem eine Dampfsäge pro Einheit. Diese müsst Ihr beim Sägewerk beschaffen.$B$BAls ich mich hier umgesehen habe (vor meiner Gefangennahme), ist mir ein Stapel Dampfsägen im Holzlager der Sturmlanzen aufgefallen.",
-    ["O"] = "Ich bin ebenso begierig wie Ihr darauf, meine tragbare Schreddereinheit auszuprobieren, $R, aber bevor ich das Set herstellen kann, benötige ich Material - viel Material!$B$BUm genau zu sein, benötige ich einen Berg aus Thorium, Mithril und Eisen. Ich benötige außerdem eine Dampfsäge pro Einheit. Diese müsst Ihr beim Sägewerk beschaffen.$B$BAls ich mich hier umgesehen habe (vor meiner Gefangennahme), ist mir ein Stapel Dampfsägen im Holzlager der Sturmlanzen aufgefallen.",
+    ["O"] = "Slay them and return to me with their hides. The same rams that the Stormpike cavalry uses as mounts!",
   },
   [7003] = {
     ["D"] = "Ich muss etwas gegen die Riesen unternehmen, wenn ich hier draußen bleibe! Sie sind sicherlich nicht gut fürs Geschäft, oder nicht?$B$BIch habe mich an einer Variante von Gnomischen Schrumpfstrahlen versucht, benutze jetzt aber überlegene GOBLIN Technologien für die Herstellung! Im Zuge von Bemühungen, Unannehmlichkeiten wie meinen Tod beispielsweise zu vermeiden, möchte ich Euch bitten es einmal an diesen Riesen in Feralas zu testen. Ihr solltet nach dem Prozess Schrumpfüberreste auf ihnen finden, bringt mir bitte etwas davon!",
@@ -9487,7 +9469,7 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [7026] = {
     ["D"] = "Ich bin ebenso begierig wie Ihr darauf, meine tragbare Schreddereinheit auszuprobieren, $R, aber bevor ich das Set herstellen kann, benötige ich Material - viel Material!$B$BUm genau zu sein, benötige ich einen Berg aus Thorium, Mithril und Eisen. Ich benötige außerdem eine Dampfsäge pro Einheit. Diese müsst Ihr beim Sägewerk beschaffen.$B$BAls ich mich hier umgesehen habe (vor meiner Gefangennahme), ist mir ein Stapel Dampfsägen im Holzlager der Sturmlanzen aufgefallen.",
-    ["O"] = "Ich bin ebenso begierig wie Ihr darauf, meine tragbare Schreddereinheit auszuprobieren, $R, aber bevor ich das Set herstellen kann, benötige ich Material - viel Material!$B$BUm genau zu sein, benötige ich einen Berg aus Thorium, Mithril und Eisen. Ich benötige außerdem eine Dampfsäge pro Einheit. Diese müsst Ihr beim Sägewerk beschaffen.$B$BAls ich mich hier umgesehen habe (vor meiner Gefangennahme), ist mir ein Stapel Dampfsägen im Holzlager der Sturmlanzen aufgefallen.",
+    ["O"] = "Slaying the frostwolves they use as mounts and return their hides to me.",
   },
   [7027] = {
     ["D"] = "Seht Euch nur unsere Ställe an, $N! Völlig leer! Die Sturmlanzengarde hat keine Widder mehr, die sie reiten könnte, die Kavallerie ist praktisch nicht mehr existent.$B$BIhr müsst uns helfen, Soldat. Nehmt dieses Zähmungshalsband und begebt Euch in die Wildnis dieses Tals. Sucht in der Umgebung nach herumstreifenden Alteracwiddern und fangt sie mit dem Zähmungshalsband ein. Wenn Ihr einen Widder eingefangen habt, bringt ihn zu mir und ich werde ihn in unseren Ställen unterbringen. Sobald wir wieder über ausreichend Widder verfügen, werde ich den Kommandanten der Widderreiter informieren.$B$BMit Eurer Hilfe wird die Kavallerie neu entstehen!",
@@ -9527,6 +9509,9 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [7066] = {
     ["O"] = "Sucht Remulos bei der Mondlichtung auf und gebt ihm das Samenkorn des Lebens.",
+  },
+  [7067] = {
+    ["T"] = "Die Anleitung des Pariahs",
   },
   [7070] = {
     ["D"] = "Ich habe kürzlich begonnen, verschiedene Kristalle und ihre arkanen Eigenschaften zu testen. Lady Prachtmeer hat mir die Erlaubnis erteilt, Reisende, die nach Desolace ziehen, zu bitten, einen Ort zu suchen, der Maraudon genannt wird. In dem zerfallenen Tempel dort gibt es große Elementare, die aus lila Steinen bestehen. Ich habe sie Schattensplitter getauft.$B$BFalls Ihr beschließt, diese Richtung einzuschlagen, und dort einige dieser Kristalle findet, wäre ich sehr dankbar. Ich würde Euch sogar ein Schmuckstück daraus herstellen, wenn Ihr dies wünscht.",
@@ -9620,11 +9605,11 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [7385] = {
     ["D"] = "Ich bin ebenso begierig wie Ihr darauf, meine tragbare Schreddereinheit auszuprobieren, $R, aber bevor ich das Set herstellen kann, benötige ich Material - viel Material!$B$BUm genau zu sein, benötige ich einen Berg aus Thorium, Mithril und Eisen. Ich benötige außerdem eine Dampfsäge pro Einheit. Diese müsst Ihr beim Sägewerk beschaffen.$B$BAls ich mich hier umgesehen habe (vor meiner Gefangennahme), ist mir ein Stapel Dampfsägen im Holzlager der Sturmlanzen aufgefallen.",
-    ["O"] = "Ich bin ebenso begierig wie Ihr darauf, meine tragbare Schreddereinheit auszuprobieren, $R, aber bevor ich das Set herstellen kann, benötige ich Material - viel Material!$B$BUm genau zu sein, benötige ich einen Berg aus Thorium, Mithril und Eisen. Ich benötige außerdem eine Dampfsäge pro Einheit. Diese müsst Ihr beim Sägewerk beschaffen.$B$BAls ich mich hier umgesehen habe (vor meiner Gefangennahme), ist mir ein Stapel Dampfsägen im Holzlager der Sturmlanzen aufgefallen.",
+    ["O"] = "You must strike down our enemies and bring to me their blood.",
   },
   [7386] = {
     ["D"] = "Ich bin ebenso begierig wie Ihr darauf, meine tragbare Schreddereinheit auszuprobieren, $R, aber bevor ich das Set herstellen kann, benötige ich Material - viel Material!$B$BUm genau zu sein, benötige ich einen Berg aus Thorium, Mithril und Eisen. Ich benötige außerdem eine Dampfsäge pro Einheit. Diese müsst Ihr beim Sägewerk beschaffen.$B$BAls ich mich hier umgesehen habe (vor meiner Gefangennahme), ist mir ein Stapel Dampfsägen im Holzlager der Sturmlanzen aufgefallen.",
-    ["O"] = "Ich bin ebenso begierig wie Ihr darauf, meine tragbare Schreddereinheit auszuprobieren, $R, aber bevor ich das Set herstellen kann, benötige ich Material - viel Material!$B$BUm genau zu sein, benötige ich einen Berg aus Thorium, Mithril und Eisen. Ich benötige außerdem eine Dampfsäge pro Einheit. Diese müsst Ihr beim Sägewerk beschaffen.$B$BAls ich mich hier umgesehen habe (vor meiner Gefangennahme), ist mir ein Stapel Dampfsägen im Holzlager der Sturmlanzen aufgefallen.",
+    ["O"] = "The Frostwolf soldiers carry elemental charms called storm crystals. We can use the charms to conjure Ivus. Venture forth and claim the crystals, $N!",
   },
   [7424] = {
     ["D"] = "Ich bin ebenso begierig wie Ihr darauf, meine tragbare Schreddereinheit auszuprobieren, $R, aber bevor ich das Set herstellen kann, benötige ich Material - viel Material!$B$BUm genau zu sein, benötige ich einen Berg aus Thorium, Mithril und Eisen. Ich benötige außerdem eine Dampfsäge pro Einheit. Diese müsst Ihr beim Sägewerk beschaffen.$B$BAls ich mich hier umgesehen habe (vor meiner Gefangennahme), ist mir ein Stapel Dampfsägen im Holzlager der Sturmlanzen aufgefallen.",
@@ -9655,6 +9640,7 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [7494] = {
     ["D"] = "$N! Man braucht Euch in Feralas!$B$BEine abtrünnige Magierin, Lethtendris, ist in die uralten Elfenruinen von Eldre\'thalas, vielen bekannt als Düsterbruch, geflohen. Es wird angenommen, dass sie einen gefährlichen Gegenstand voller magischer Energien bei sich trägt, der dringend wiederbeschafft werden muss.$B$BLatronicus Mondspeer hat Agenten angefordert, die in Düsterbruch eindringen und den Gegenstand von Lethtendris zurückholen sollen.$B$BDient der Allianz! Sucht Latronicus in der Mondfederfeste in Feralas auf.",
+    ["T"] = "Mondfederfeste",
   },
   [7495] = {
     ["D"] = "Bringt Onyxias Kopf zu König Varian Wrynn in Sturmwind.",
@@ -9685,6 +9671,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [7603] = {
     ["D"] = "Kroshius liegt zusammengefallen im Narbengrund, Richtung Nordosten. Verwendet dieses Teufelsfeuer auf seinen Überresten, es sollte die gefallene Höllenbestie wieder erwecken.$B$BIch bin überzeugt, dass er Euch und Euren Begleiter genau dann umbringen wird.$B$BSolltet Ihr Kroshius dennoch auf wundersame Weise töten können, dann nehmt den Höllenbestienkern und bringt ihn zu Niby.",
     ["O"] = "Sucht im Narbengrund im Teufelswald nach den Überresten von Kroshius. Habt Ihr sie gefunden, so verwendet das Teufelsfeuer in deren Nähe und wartet dann auf Kroshius\' Rückkehr. Tötet die Höllenbestie und entnehmt ihrem Körper den Höllenbestienkern.$B$BBringt Kroshius\' Höllenbestienkern zu Niby dem Allmächtigen im Teufelswald.",
+    ["T"] = "Kroshius\' Höllenbestienkern",
   },
   [7604] = {
     ["D"] = "$G Der Unterzeichner:Die Unterzeichnerin; erklärt hiermit, dass es sich bei dem Sulfuronblock, der an die Thoriumbruderschaft (TB Ltd.) geliefert wird, um ein Original und nicht um eine Nachbildung handelt. $G Der Unterzeichner:Die Unterzeichnerin; erkennt ebenso an, dass jeglicher Schaden, der $G ihm:ihr; in Folge des Versuchs Sulfuras herzustellen, zu schmieden, verkaufen oder zu essen widerfahren könnte, nicht in der Verantwortung oder Verschuldung von TB Ltd. liegt.$B$BMit Unterzeichnung dieses Vertrags, wird allen darin aufgelisteten Bedingungen zugestimmt.$B$B_________________$B$BUnterschrift",
@@ -9693,6 +9680,12 @@ pfDB["quests"]["deDE-tbc"] = {
   [7622] = {
     ["D"] = "Ihr müsst tun was ich nicht konnte: Rettet die Arbeiter, die während ihrer Flucht von Stratholme niedergemäht wurden.$B$BSie werden dem Licht entgegen laufen, sorgt für ihr Überleben. Sollten zu viele von ihnen fallen, wird unsere Existenz auch weiterhin verdammt sein - und Ihr werdet versagt haben.$B$BAlle von Euch gelernten Fähigkeiten, Gebete und Zauber werden auf die Probe gestellt werden. Möge das Licht Euch beschützen, $N.",
     ["O"] = "Rettet 50 Arbeiter bevor 15 getötet wurden. Sprecht mit Eris Himmelsfeuer, falls Ihr diesen Auftrag erfolgreich zu Ende bringen solltet.$B$BKonsultiert den Todesposten, um zu sehen wie viele Arbeiter bereits getötet wurden.",
+  },
+  [7626] = {
+    ["T"] = "Glocke von Dethmoora",
+  },
+  [7628] = {
+    ["T"] = "Altarkerze des Jüngsten Gerichts",
   },
   [7631] = {
     ["D"] = "Alle Vorbereitungen sind getroffen. Als erstes müsst Ihr das Ritual des mächtigen Beschwörungskreises vollziehen. Anschließend benutzt die xorothianischen Glyphen um ein Portal nach Xoroth zu öffnen.$B$BIch habe Euch die Anweisungen für das Ritual auf eine Schriftrolle geschrieben. Studiert sie sorgfältig, denn wenn Ihr Erfolg haben wollt, müsst Ihr jeden Schritt exakt nach Anleitung durchführen.$B$BIch wünsche Euch viel Erfolg, $N. Und mögen die Seelen Eurer Feinde, den Weg in Euren Seelensteinbeutel finden.",
@@ -9721,6 +9714,7 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [7643] = {
     ["D"] = "Euer Pferdegeschirr braucht eine ganz spezielle Form von Segnung durch einem geeigneten Geist. In Düsterbruch findet Ihr einen solchen Geist, den uralten Pferdegeist. Er ist im Besitz eines verdorbenen Treants namens Tendris Wucherborke. Richtet dieses verdorbene Biest, $N.$B$BDoch wisset eines - Freiheit ist nicht alles. Ihr müsst den Geist erst beschwichtigen, wenn Ihr seinen Segen wollt. Dafür werdet Ihr ein spezielles Pferdefutter benötigen. Reist zuerst nach Süderstade und sprecht mit Merideth Carlson über diese Sache... und bereitet Euch auf weitere Opfer vor.",
+    ["T"] = "Uralter Pferdegeist",
   },
   [7648] = {
     ["D"] = "<Grimand wischt sich Schweiß von seinen Brauen und strahlt stolz.>$B$BDa wären wir, $G mein Freund:meine Freundin;. Dies ist eine meiner besten Arbeiten - so gut wie das Pferdegeschirr, das ich persönlich für Lord Schattenbruch gefertigt habe, als dieser sich für sein eigenes Streitross aufmachte. Ich danke Euch für Euer Vertrauen in mein Können.$B$BGrayson wird diese Arbeit zweifellos auch sehen wollen. Bringt Euer Pferdegeschirr zu ihm und richtet ihm meinen Dank für die ehrenvollen Geschäfte mit ihm aus.",
@@ -9744,8 +9738,8 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Lord Grayson Schattenbruch",
   },
   [7677] = {
-    ["D"] = "If you bring me your white stallion, I\'ll trade you for one from the new herd. The new horse will be just as fast as your old one, but have a different look to it. You can look at the swift steeds here to see what it will look like.$B$B$BMUST PAY 500 Gold too....",
-    ["O"] = "If you bring me your white stallion, I\'ll trade you for one from the new herd. The new horse will be just as fast as your old one, but have a different look to it. You can look at the swift steeds here to see what it will look like.$B$BMUST PAY 500 Gold too....",
+    ["D"] = "Tauscht Euren Schimmel gegen eines der Pferde, die an Rüstung gewöhnt sind.",
+    ["O"] = "Tauscht Euren Schimmel gegen eines der Pferde, die an Rüstung gewöhnt sind.",
   },
   [7681] = {
     ["D"] = "Füttert Euer Tier.",
@@ -9900,6 +9894,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [7841] = {
     ["D"] = "Die Wildhämmer fangen Geschäfte mit unseren Feinden an, Mann, schmieden neue Bündnisse. Diesmal sind es die Hochelfen, Mann.$B$B<Otho spuckt.>$B$BWir werden diesen Wildhammerzwergen wohl \'ne Botschaft überbringen müssen - \'ne Botschaft geschrieben mit dem Blut unserer Feinde. Tötet alle Hochtalelfen, alle die Euch über den Weg laufen, klar? Un\' lasst ihre Leichen als Warnung zurück.$B$BVerscherzt es Euch niemals mit den Trollen!",
     ["O"] = "Otho Moji\'ko aus dem Dorf der Bruchhauer im Hinterland möchte, dass Ihr 5 Hochtalkundschafterinnen, 8 Hochtalspäher, 2 Hochtalschützen und 5 Hochtalwaldläuferinnen tötet. Kehrt nach vollendeten Taten zu ihm zurück.$B$BIhr findet die Hochtalelfen bei der Jagdhütte von Quel\'Danil im Nordwesten des Hinterlands.",
+    ["T"] = "Botschaft an die Wildhämmer",
   },
   [7842] = {
     ["D"] = "Otho Moji\'ko aus dem Dorf der Bruchhauer im Hinterland möchte, dass Ihr ihm 1 lange elegante Feder von Greifen besorgt, die das Hinterland bewohnen. Kehrt mit der Feder zu ihm zurück.$B$BEs ist bekannt, dass Greifen überall im Hinterland zu finden sind.",
@@ -10250,6 +10245,7 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [8234] = {
     ["D"] = "Eins nach dem anderen. Ich habe eine kleine blaue Tasche verloren, deren Inhalt von privater Natur ist.$B$BWie dem auch sei, versucht erst gar nicht den Dieben nachzustellen, denn sie sind bereits tot. Wir wissen jedoch, dass diese Narren die Tasche nicht öffnen konnten. Sie verkauften sie also an einen Schamanen der Holzschlundfeste in Azshara als heiliges Relikt. Raffiniert.$B$BIch möchte, dass Ihr nach Azshara reist und die Tasche von dem Schamanen durch Geschick... oder mittels Kraft wiedererlangt. Ich glaube mit ersterer Methode dürftet Ihr mehr Glück haben. Habt Ihr sie, bringt sie zu Erzmagier Xylem in Azshara.",
+    ["T"] = "Versiegelte azurblaue Tasche",
   },
   [8250] = {
     ["D"] = "Erzmagier Xylem hat seit kurzer Zeit begonnen sich umzuhören... nach jemanden mit Eurer Erfahrung.$B$BFalls Ihr ihn aufsuchen möchtet, dann könnt Ihr ihn in Azshara antreffen. Sein Turm steht hoch über den Klippen und der einzige Weg, der dort hinaufführt, ist ein Teleportationszauber, der von seinem arroganten Diener, Sanath Lim-yo, gewirkt wird.$B$BSanath kampiert unterhalb des Turms. Um ihn zu finden, müsst Ihr zu der Stelle reisen, an der sich Azsharas Hauptstraße beim Eingang zu den Ruinen von Eldarath gabelt. Geht von dort aus direkt nach Norden bis Ihr zu den Klippen kommt.",
@@ -10364,7 +10360,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [8308] = {
     ["D"] = "An den Finder dieses Briefs,$B$Bwenn Ihr dies lest, bin ich wahrscheinlich bereits tot oder werde es in Kürze sein. Die meisten meiner Männer sind schon tot.$B$BIch habe Informationen über einen Titanen entdeckt, über eine große Schlacht zwischen ihm und einem Alten Gott. Ja, ein verdammter Alter Gott. Wir haben einen uralten Tunnel nach Ahn\'Qiraj entdeckt, dem ich jetzt folge.$B$BBringt diesen Brief in mein altes Lager. Kümmert Euch bitte um meinen Affen und gebt ihm ausreichend Wasser, Nahrung und die eine oder andere Umarmung.$B$B- Brann Bronzebart, Extremforscher$B$BP.S. Achtet auf die verrückten nachtelfischen Anbeter des alten Gottes.",
     ["O"] = "Liefert Brann Bronzebarts verlorenen Brief in Bronzebarts Lager im südlichen Silithus ab.",
-    ["T"] = "Der verlorene Brief von Brann Bronzebart",
+    ["T"] = "Brann Bronzebarts verlorener Brief",
   },
   [8309] = {
     ["D"] = "Nach unseren ersten Streifzügen in die Schwarmbauten und dem darauf folgenden Wahnsinn der Herrin Mar\'alith, haben die drei Schwarmbauten damit begonnen hunderte von Insektenkriegern auszuspucken. Die erhöhte Aktivität könnte mit den Glyphen in Zusammenhang stehen, die diese merkwürdigen Kristalle in den drei Bauten der Schwärme bedecken.$B$BWir müssen unbedingt Abpausbilder von diesen Glyphen anfertigen. Mithilfe der Abpausbilder gelingt es uns vielleicht, hinter das Geheimnis dieses Wahnsinns zu kommen.$B$BHier $N, nehmt dieses Abschriftenset und begebt Euch in den Bau des Regalschwarms im Osten. Das ist das letzte Abpausbild, das ich brauche.",
@@ -10496,7 +10492,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Das ist ein... interessantes Kostüm, welches Ihr da tragt. Auch wenn Ihr nett seid und einem Kind dieses Jahr beim Süßigkeitensammeln helft, so fürchte ich doch, dass ich Euch um eine kleine Vorstellung bitten muss!$B$BMal sehen... Ihr seht in diesem... Kostüm stark und muskulös aus... jetzt gebt doch mal ein bisschen an! Ja, lasst Eure Muskeln für mich spielen, $G starker Mann : starke Frau;!$B$BWenn ich Euch angeben sehe, und auch nur dann, werde ich Euch etwas von dem leckeren Nugat aus Sturmwind geben. Es ist eine großartige Schlotternachtssüßigkeit.",
   },
   [8358] = {
-    ["D"] = "Ahmt für Kali Remik einen Zug nach und sie wird Euch dafür eine Kaugummikugel der Dunkelspeere geben!",
+    ["D"] = "A trick-or-treater!  Yeah mon!$B$BWell now, even though you\'re doing something noble and collecting candies for a sick child, I can\'t let you off the hook that easily.  I have a yummy Darkspear Gumdrop to give to the sick child... if you make a train noise for me!  Haha, yes, that\'ll be the trick!  The price of this gumdrop is one train noise!$B$BChugga-chugga, $c!",
   },
   [8359] = {
     ["D"] = "Ihr müsst vor Gastwirtin Gryshka angeben, damit sie Euch im Gegenzug etwas vom Nugat aus Orgrimmar gibt!",
@@ -10522,7 +10518,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Unser Konflikt mit der Allianz hat sich zu einem richtigen Krieg entwickelt. Es ist nicht länger notwendig unter falschen Vorwänden in die Schlacht zu ziehen, keine Seite erwartet dies noch länger.$B$BIn der Schlacht um das Arathibecken geht es nur um eines, Ressourcen. Nicht mehr und nicht weniger. Entweder die Allianz erobert diese Ressourcen und benutzt sie gegen uns, oder wir kommen ihnen zuvor und verwenden die dortigen Ressourcenquellen für unsere Kriegspläne. $N, helft den Entweihten dabei, die von uns benötigten Ressourcenlieferungen aufrechtzuerhalten!",
   },
   [8371] = {
-    ["D"] = "Bringt ein Ehrenabzeichen jedes Schlachtfelds zu einem Kriegshetzer der Horde in einer der Hauptstädte oder in Shattrath.",
+    ["D"] = "Bringt ein Ehrenabzeichen jedes Schlachtfelds zu einem Brigadegeneral der Allianz in einer der Hauptstädte, Dalaran oder Shattrath.",
     ["O"] = "Bringt ein Ehrenabzeichen jedes Schlachtfelds zu einem Kriegshetzer der Horde in einer der Hauptstädte oder in Shattrath.",
   },
   [8372] = {
@@ -10544,7 +10540,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Bringt 3 Ehrenabzeichen des Arathibeckens zu einem der Brigadegeneräle der Allianz, die außerhalb der Schlachtfelder stehen.",
   },
   [8385] = {
-    ["D"] = "Bringt ein Ehrenabzeichen jedes Schlachtfelds zu einem Kriegshetzer der Horde in einer der Hauptstädte oder in Shattrath.",
+    ["D"] = "Bringt ein Ehrenabzeichen jedes Schlachtfelds zu einem Brigadegeneral der Allianz in einer der Hauptstädte, Dalaran oder Shattrath.",
     ["O"] = "Bringt ein Ehrenabzeichen jedes Schlachtfelds zu einem Kriegshetzer der Horde in einer der Hauptstädte oder in Shattrath.",
   },
   [8386] = {
@@ -10737,10 +10733,19 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Die Verderbnis bedroht uns nicht nur in Form der Totenwaldfelle vom Süden her, sondern auch durch die Winterfellfurbolgs im Osten. Wenn Ihr uns auch weiterhin helfen wollt, sprecht mit Salfa auf der anderen Seite der Festung. Ihr findet sie nahe des Eingangs zu Winterquell. Folgt einfach dem linken Pfad, um zu ihr zu gelangen.$B$BDoch seid gewarnt! Sollten meinesgleichen Euch gegenüber hasserfüllt oder gar feindlich eingestellt sein, werden sie Euch angreifen. Sollte dies der Fall sein, durchquert das Gebiet schnellstmöglich und vermeidet alle Kämpfe mit ihnen. Einen Furbolg der Holzschlundfeste zu töten und sei es nur zur Selbstverteidigung, wird Euren Ruf in der Holzschlundfeste nur weiter verschlechtern.",
     ["O"] = "Durchquert die Holzschlundfeste und verlasst sie in Richtung Winterquell. Sprecht mit Salfa, die außerhalb des Eingangs zur Holzschlundfeste Wache steht.",
   },
+  [8466] = {
+    ["O"] = "Bringt alle Federn, die ihr findet, zu Grazle.",
+  },
+  [8467] = {
+    ["O"] = "Bringt alle Federn, die ihr findet, zu Grazle.",
+  },
   [8468] = {
     ["D"] = "Hiermit setzt die Stadt Silbermond eine Belohnung auf den Kopf von Thaelis dem Manadurstigen aus, einem notorischen Aufwiegler und Rädelsführer getriebener Blutelfen. Ihm werden verschiedene Verbrechen gegen die Einwohner von Silbermond zur Last gelegt, einschließlich der Ermordung zweier Stadtwachen.$B$BMeldet Euch bei Unteroffizier Kan\'ren, um die Belohnung zu erhalten.",
     ["O"] = "Bringt Thaelis Kopf zu Unteroffizier Kan\'ren beim Falkenplatz im Immersangwald.",
     ["T"] = "Gesucht: Thaelis der Manadurstige",
+  },
+  [8469] = {
+    ["O"] = "Bringt die Geisterperlen, die Ihr findet, zu Salsa.",
   },
   [8470] = {
     ["D"] = "Bringt das Ritualtotem in die Holzschlundfeste und findet heraus, ob einer der dortigen Furbolgs eine Verwendung für diesen Gegenstand hat. Die Furbolgs der Holzschlundfeste werden solange nicht mit Euch sprechen, bis Euer Ruf bei ihnen neutral oder höher ist.",
@@ -10849,6 +10854,9 @@ pfDB["quests"]["deDE-tbc"] = {
   [8494] = {
     ["D"] = "Ihr da, seid gegrüßt, $G Herr Modenarr: Frau Modenärrin;, was für eine Augenweide Ihr doch seid. Solltet Ihr es, während Ihr auf \"Abenteuern\" wart, noch nicht gehört haben: die Allianz macht sich für den Krieg in Ahn\'Qiraj bereit und braucht dringend Eisenbarren... eine ganze Menge davon. Bringt sie in Stapeln zu je 20 Stück zu mir. Wir können doch auf Euch zählen, oder, $C?",
     ["O"] = "Bringt 20 Eisenbarren zu Korporal Schwarz im Militärviertel in Eisenschmiede.",
+  },
+  [8498] = {
+    ["T"] = "Schlachtordnungen des Schattenhammerklans",
   },
   [8499] = {
     ["O"] = "Bringt 20 Thoriumbarren zu Dame Doppelzopf im Militärviertel in Eisenschmiede.",
@@ -10973,8 +10981,14 @@ pfDB["quests"]["deDE-tbc"] = {
   [8558] = {
     ["D"] = "Die Qiraji und ihre Diener besitzen Gegenstände, die aus dem seltensten und feinsten Material hergestellt werden: Knochen von riesengroßen uralten Kreaturen, Edelsteine aus den Tiefen der Erde, reines und starkes Metall.$B$BAllein der Anblick dieser Qirajiartefakte erfüllt mich mit dem Drang, mein Handwerk an ihren zerschmetterten und geschmolzenen Stücken auszuüben. Beweist dem Zirkel Eure Loyalität, $N, und ich werde aus den feinsten Qirajibestandteilen eine mächtige Waffe für Euch herstellen.",
   },
+  [8559] = {
+    ["T"] = "Erobererschienbeinschützer",
+  },
   [8561] = {
     ["D"] = "Die Zwillingsimperatoren... ihr unaufhörliches Flüstern martert langsam meinen Verstand. Sie verhöhnen mich, wissend, dass ich nicht tiefer in ihr Reich vordringen kann, um meinen Bruder Arygos zu retten.$B$BIn meinen Visionen sehe ich ihre monströsen Fratzen, die mit mächtigen Kronen geschmückt sind. Ich werde meine Vergeltung noch bekommen... ich werde diese Symbole der Qirajimacht in solche verwandeln, die unserem Nutzen gerecht werden.$B$BBringt mir die benötigten Bestandteile, $N. Ich werde Euch dafür ein Kopfstück von unvergleichlicher Macht geben.",
+  },
+  [8562] = {
+    ["T"] = "Erobererbrustplatte",
   },
   [8563] = {
     ["D"] = "Während Ihr in Eurer Klasse weiter aufsteigt, werdet Ihr sicher die Ausbildung, die Euch der Lehrer Eurer Klasse anbietet, nutzen wollen. Der Lehrer für junge Hexenmeister hier auf der Insel der Sonnenwanderer ist Beschwörer Teli\'Larien. Sprecht mit Beschwörer Teli\'Larien, um herauszufinden, welche Ausbildung er Euch anbieten kann. Die Ausbildung hat ihren Preis, bringt also ein paar Münzen mit Euch.$B$BBeschwörer Teli\'Larien - wie alle anderen Lehrer auf der Insel der Sonnenwanderer auch - ist innerhalb des Sonnenturms, auf der unteren Ebene, anzutreffen.",
@@ -11212,7 +11226,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Ich freue mich, dass Ihr uns bei unserem Angriff auf Ahn\'Qiraj unterstützen wollt, $N. Ich kann einen schützenden Gegenstand für Euch herstellen, der Euch im Kampf gegen unseren Feind behilflich sein wird, $C.$B$BIch benötige dafür ein Tuch der Qiraji, das ich dann natürlich für Euch anpassen werde. Außerdem bräuchte ich noch Götzen und Skarabäen, die ich zu einer passenden Schnalle verarbeiten möchte.$B$BIhr werdet bestimmt nicht enttäuscht sein.",
   },
   [8690] = {
-    ["D"] = "Bringt 1 Hoheitstuch der Qiraji, 2 Obsidiangötzen, 5 Goldskarabäen und 5 Tonskarabäen zu Keyl Flinkklaue in Silithus. Diese Aufgabe erfordert zum Abschluss auch einen respektvollen Ruf beim Zirkel des Cenarius.",
+    ["D"] = "Ich freue mich, dass Ihr uns bei unserem Angriff auf Ahn\'Qiraj unterstützen wollt, $N. Ich kann einen schützenden Gegenstand für Euch herstellen, der Euch im Kampf gegen unseren Feind behilflich sein wird, $C.$B$BIch benötige dafür ein Tuch der Qiraji, das ich dann natürlich für Euch anpassen werde. Außerdem bräuchte ich noch Götzen und Skarabäen, die ich zu einer passenden Schnalle verarbeiten möchte.$B$BIhr werdet bestimmt nicht enttäuscht sein.",
     ["O"] = "Bringt 1 Hoheitstuch der Qiraji, 2 Obsidiangötzen, 5 Goldskarabäen und 5 Tonskarabäen zu Keyl Flinkklaue in Silithus. Diese Aufgabe erfordert zum Abschluss auch einen respektvollen Ruf beim Zirkel des Cenarius.",
   },
   [8691] = {
@@ -11235,9 +11249,6 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [8700] = {
     ["D"] = "Man sagt, dass die Ringe, die von den Leutnants der Qiraji getragen werden, ungeheure Fähigkeiten verleihen. Die verderbten Edelsteine, mit denen sie verziert sind, könnten theoretisch mit reinerem Material ausgetauscht werden, um unbefleckte Versionen der Ringe herzustellen.$B$BDie Edelsteine, die die Götzen der Qiraji schmücken, würden sich dafür gut eignen, da sie von besserer Qualität sind.$B$BBringt mir den Ring und Götzen und ich werde einen mächtigen Ring für Euch anfertigen, $G mein getreuer Druide : meine getreue Druidin;.",
-  },
-  [8703] = {
-    ["D"] = "Bringt 1 Gebieterring der Qiraji, 2 Zinnobergötzen, 5 Silberskarabäen und 5 Knochenskarabäen zu Windruferin Yessendra in Silithus. Diese Aufgabe erfordert zum Abschluss auch einen wohlwollenden Ruf beim Zirkel des Cenarius.",
   },
   [8705] = {
     ["D"] = "Die Qiraji und ihre Diener besitzen Gegenstände, die aus dem seltensten und feinsten Material hergestellt werden: Knochen von riesengroßen uralten Kreaturen, Edelsteine aus den Tiefen der Erde, reines und starkes Metall.$B$BAllein der Anblick dieser Qirajiartefakte erfüllt mich mit dem Drang, mein Handwerk an ihren zerschmetterten und geschmolzenen Stücken auszuüben. Beweist dem Zirkel Eure Loyalität, $N, und ich werde aus den feinsten Qirajibestandteilen eine mächtige Waffe für Euch herstellen.",
@@ -11314,6 +11325,9 @@ pfDB["quests"]["deDE-tbc"] = {
   [8731] = {
     ["D"] = "Seid gegrüßt, $N. Bevor ich Euch mit umfassenderen Aufgaben in diesem Krieg beauftrage, müsst Ihr Euren Anteil am Felddienst leisten.$B$BIhr könnt die Orgrimmarlegion von Hauptmann Schädelspalt außerhalb des Regalschwarmbaus finden.$B$BErstattet ihm Bericht und kommt mit dem Beweis für Euren Felddienst zu mir zurück. Ich werde wichtigere Anweisungen für Euch bereithalten.$B$BOh, bitte haltet Euch von der Eisenschmiedebrigade fern. Es herrschen große Spannungen zwischen unseren Freiwilligen der Allianz und der Horde.",
   },
+  [8733] = {
+    ["T"] = "Eranikus der Tyrann des Traums",
+  },
   [8736] = {
     ["D"] = "Verteidigt Nachthafen gegen Eranikus. Bewahrer Remulos darf dabei nicht ums Leben kommen und Eranikus darf nicht getötet werden. Verteidigt Euch. Erwartet Tyrande.",
   },
@@ -11331,9 +11345,11 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [8789] = {
     ["D"] = "Wir haben hier nicht ein Jahrtausend in völliger Untätigkeit verbracht, $N. Wir sahen mit eigenen Augen, wie sich diese Biester an ihren eigenen Artgenossen gütlich taten, nachdem diese ihre Nützlichkeit für den Schwarm verloren hatten. Wir lauschten, als sie ihre Pläne schmiedeten, diese Welt in Schutt und Asche zu legen. Und wir lernten, wie sich Verrat und Missgunst in ihren Reihen ausbreiten.$B$BSie haben Schwächen und wir wissen nun, wie wir diese zu unserem Vorteil nutzen können.$B$BFindet und bringt mir ihre Zeremonienwaffen. Zusammen, mit dem durch ihren Gott erschaffenen Element, werden wir daraus mächtige Instrumente der Zerstörung erschaffen.",
+    ["T"] = "Imperiale Qirajiwaffe",
   },
   [8790] = {
     ["D"] = "Merithra des Traums im Tempel von Ahn\'Qiraj wird Euch mit Elementium erfüllte Ausrüstung herstellen. Bringt ihr dazu imperiale Qirajiinsignien und 3 Elementiumblöcke.",
+    ["T"] = "Imperiales Qirajiinsigne",
   },
   [8792] = {
     ["D"] = "Hallo, schön dass Ihr Euch entschieden habt, mir zuzuhören, was ich zu sagen habe. Die Horde braucht jede Hilfe, die sie kriegen kann, um sich auf den Krieg in Ahn\'Qiraj vorzubereiten. Die Horde braucht Euch! Während wir uns unterhalten, haben die offiziellen Sammler bereits damit begonnen, kriegstaugliche Materialien aller Art zu sammeln. Doch ohne Eure Mithilfe sind all diese Mühen vergebens, $N! Wir brauchen Eure Unterstützung!$B$BAm besten unterhaltet Ihr Euch mit dem verantwortlichen Offizier, Kriegsherr Gorchuk. Können wir auf Euch zählen, $C? Werdet Ihr uns bei den Kriegsvorbereitungen zur Seite stehen?",
@@ -11991,7 +12007,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [9175] = {
     ["D"] = "Diese Halskette funkelt, ein bemerkenswertes Schmuckstück, das nicht der Schwermut der Geisterlande zu unterliegen scheint. Auf Grund der Inschrift und des Ortes, an dem Ihr sie gefunden habt, muss es sich dabei um Eigentum von Fürstin Sylvanas Windläufer selbst handeln!$B$BVielleicht wäre es am besten, sie zuerst zu Hochexekutor Mavren nach Tristessa zu bringen? Er scheint der höchstrangige Verlassene in der Gegend zu sein und weiß sicher, was zu tun ist.",
     ["O"] = "Bringt die Halskette der Fürstin zu Hochexekutor Mavren nach Tristessa in den Geisterlanden.",
-    ["T"] = "Die Halskette der Fürstin",
+    ["T"] = "Die Halskette der Lady",
   },
   [9176] = {
     ["D"] = "Glaubt man den Einträgen in seinem Tagebuch, versprach Dar\'Khan der Geißel zwei mächtige elfische Artefakte: Den Stein des Lichts und den Stein der Flamme. Beide waren durchdrungen von den magischen Energien des Sonnenbrunnens und verfügten über mächtige Schutzkräfte gegen die Geißel.$B$BMan plante, die Kristalle zu den heutigen Standorten der Heulenden und der Blutenden Ziggurat, inmitten der Todesschneise, zu transportieren. Falls sie dort noch immer aufbewahrt werden, müssen wir sie unbedingt an uns bringen. Ihre Kräfte wären im Kampf gegen die Geißel von großem Nutzen.",
@@ -12152,7 +12168,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Das Arsenal der Waldschattentrolle",
   },
   [9215] = {
-    ["D"] = "GESUCHT: Bringt den Kopf von Kel\'gash dem Boshaften, Häuptling der Waldschattentrolle, zu Hauptmann Helios. Die Wahl der Mittel steht frei. Kel\'gash soll sich irgendwo im Süden, in Zeb\'Nowa, herumtreiben.$B$B$B$BBELOHNUNG: Ja, aber nicht im Voraus!",
+    ["D"] = "GESUCHT: Bringt den Kopf von Kel\'gash dem Boshaften, Häuptling der Waldschattentrolle, zu Hauptmann Helios. Die Wahl der Mittel steht frei. Kel\'gash soll sich irgendwo im Süden, in Zeb\'Nowa, herumtreiben.",
     ["O"] = "Bringt den Kopf von Kel\'gash dem Boshaften zu Hauptmann Helios bei der Enklave der Weltenwanderer in den Geisterlanden.",
     ["T"] = "Bringt mir Kel\'gashs Kopf!",
   },
@@ -12252,6 +12268,7 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [9257] = {
     ["D"] = "Die letzte Aufgabe ist zugleich die schwierigste von allen, $N. Ihr seid einem Alten Gott und dem General des Lichkönigs gegenübergetreten und habt beide besiegt. Nun müsst Ihr Euch jedoch der Hand Sargeras\' stellen.$B$BBringt den Stab nach Stratholme. Es ist der Ort, an dem Ihr geheiligten Boden finden werdet: Boden, auf dem die mächtigsten Ritter Lordaerons getötet wurden. Platziert den korrumpierten Stab auf dem heiligen Grund und bereitet Euch darauf vor, dass eine Welle immenser Macht daraus hervorbrechen wird... Vernichtet das dämonische Wesen, das den Stab kontrolliert und kehrt zu mir zurück.",
+    ["T"] = "Atiesh, Greatstaff of the Guardian",
   },
   [9258] = {
     ["D"] = "Ein fauler Moder der Verderbnis, welcher die Erde durchzieht, geht der Ausbreitung der Geißel voraus. Daher haben wir schützende Runensteine entlang der Grenze zu den Geisterlanden erbaut, die das Land gegen diese Seuche beschützen sollen.$B$BDer westlichste Runenstein wurde während eines Angriffs der Geißel zerstört, was uns dazu zwang, das umgebende Gebiet vollständig niederzubrennen, um die weitere Ausbreitung der Verderbnis aufzuhalten.$B$BMeine Schwester, Larianna Flusswind, bewacht den Versengten Hain. Geht und findet sie; möglicherweise hat sie Arbeit für Euch.",
@@ -12283,12 +12300,15 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [9269] = {
     ["D"] = "Die letzte Aufgabe ist zugleich die schwierigste von allen, $N. Ihr seid einem Alten Gott und dem General des Lichkönigs gegenübergetreten und habt beide besiegt. Nun müsst Ihr Euch jedoch der Hand Sargeras\' stellen.$B$BBringt den Stab nach Stratholme. Es ist der Ort, an dem Ihr geheiligten Boden finden werdet: Boden, auf dem die mächtigsten Ritter Lordaerons getötet wurden. Platziert den korrumpierten Stab auf dem heiligen Grund und bereitet Euch darauf vor, dass eine Welle immenser Macht daraus hervorbrechen wird... Vernichtet das dämonische Wesen, das den Stab kontrolliert und kehrt zu mir zurück.",
+    ["T"] = "Atiesh, Greatstaff of the Guardian",
   },
   [9270] = {
     ["D"] = "Die letzte Aufgabe ist zugleich die schwierigste von allen, $N. Ihr seid einem Alten Gott und dem General des Lichkönigs gegenübergetreten und habt beide besiegt. Nun müsst Ihr Euch jedoch der Hand Sargeras\' stellen.$B$BBringt den Stab nach Stratholme. Es ist der Ort, an dem Ihr geheiligten Boden finden werdet: Boden, auf dem die mächtigsten Ritter Lordaerons getötet wurden. Platziert den korrumpierten Stab auf dem heiligen Grund und bereitet Euch darauf vor, dass eine Welle immenser Macht daraus hervorbrechen wird... Vernichtet das dämonische Wesen, das den Stab kontrolliert und kehrt zu mir zurück.",
+    ["T"] = "Atiesh, Greatstaff of the Guardian",
   },
   [9271] = {
     ["D"] = "Die letzte Aufgabe ist zugleich die schwierigste von allen, $N. Ihr seid einem Alten Gott und dem General des Lichkönigs gegenübergetreten und habt beide besiegt. Nun müsst Ihr Euch jedoch der Hand Sargeras\' stellen.$B$BBringt den Stab nach Stratholme. Es ist der Ort, an dem Ihr geheiligten Boden finden werdet: Boden, auf dem die mächtigsten Ritter Lordaerons getötet wurden. Platziert den korrumpierten Stab auf dem heiligen Grund und bereitet Euch darauf vor, dass eine Welle immenser Macht daraus hervorbrechen wird... Vernichtet das dämonische Wesen, das den Stab kontrolliert und kehrt zu mir zurück.",
+    ["T"] = "Atiesh, Greatstaff of the Guardian",
   },
   [9274] = {
     ["D"] = "Der See im Norden wird seit langer Zeit von den Geistern meiner Ahnen heimgesucht, $N. Die armen Seelen waren Opfer eines tragischen Unfalls, bei dem etliche von ihnen am Grund des Sees ertranken.$B$BDie Ursache dieser Geschehnisse ist längst in Vergessenheit geraten, aber ihre quälenden Schreie erinnern noch heute an ihren Fluch.$B$BFalls Ihr dazu bereit seid, möchte ich, dass Ihr zum See geht und ihrem Leiden ein Ende bereitet, $N. Ich wäre Euch dankbar dafür, und sie auch, da bin ich sicher.",
@@ -12467,34 +12487,15 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Sprecht mit Hochexekutor Mavren in Tristessa in den Geisterlanden.",
     ["T"] = "Die Verlassenen",
   },
-  [9333] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Handschuhe der Argentumdämmerung",
-  },
-  [9334] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Gesegnetes Zauberöl",
-  },
-  [9335] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Geweihte Wetzsteine",
-  },
   [9336] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "Erheblicher Heiltrank",
   },
   [9337] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "Erheblicher Manatrank",
   },
   [9339] = {
     ["D"] = "This flame, stolen from the heart of Stormwind itself, floods you with warmth. This raw power is foreign to you, but the (NAME) might know more...",
-    ["O"] = "Return the Flame of Stormwind to (NAME).",
+    ["O"] = "Bringt die Flamme von Sturmwind zu $N.",
   },
   [9340] = {
     ["D"] = "Wir stehen kurz davor, vollständig von den Streitkräften der Allianz eingekesselt zu werden. Mit dem ständigen Zustrom von Sin\'doreiflüchtlingen aus Azeroth, müssen wir einen Weg finden, der vor den neugierigen Blicken des Feindes sicher ist.$B$BIch habe darüber etwas nachgedacht und bin kürzlich zu einer Lösung gekommen. Wir werden eine sichere Passage durch die Große Kluft etablieren.$B$BJa, auch wenn es dort nur so von tödlichen Felsklauen wimmelt, sind sie doch nichts weiter als bloße Tiere, denen wir beibringen können, uns zu fürchten. Ich möchte, dass Ihr loszieht und eine größere Anzahl dieser Biester erlegt. Zeigen wir ihnen, was Angst ist!",
@@ -12505,11 +12506,6 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Als ob es nicht schon schlimm genug wäre, dass die Gan\'arg in den Minen eingefallen sind, rücken uns nun diese Riesenwürmer von der anderen Seite auf die Pelle!$B$BDa Thrallmars Garnison mit der Verteidigung gegen die Legion und dem Pflegen der Verwundeten beschäftigt ist, bedeutet das, dass ich und die Minenarbeiter uns um dieses Problem kümmern müssen.$B$B<Der Großknecht zeigt auf die schlafenden Peons.>$B$BUnd Ihr sehr ja selbst wie hilfreich sie sind...$B$BIch bezahle Euch gerne ihr Gehalt, wenn Ihr ein paar dieser Würmer vernichtet.",
     ["O"] = "Großknecht Razelcraz bei den Minen in der Nähe von Thrallmar möchte, dass Ihr 15 plündernde Krustenbohrer tötet. Die Würmer haben die Angewohnheit, unplötzlich aus ihren unterirdischen Tunneln anzugreifen.",
     ["T"] = "Plündernde Krustenbohrer",
-  },
-  [9343] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Wappenrock der Argentumdämmerung",
   },
   [9344] = {
     ["D"] = "Seid gegrüßt, $N. Die Scherbenwelt ist ein Ort voller Gefahren, beinahe jedes Mitglied unserer Expedition musste diese leidvolle Erfahrung machen. Ich befürchte, der junge Grelag hat diese Lektion aus erster Hand erfahren.$B$BEr ist ein viel versprechender Schüler, doch es mangelt ihm an Geduld! Er studiert mit Begeisterung die Geschichte seines Volkes und vergisst dabei manchmal die Gefahren des heutigen Lebens.$B$BEr ist zum Rückenbrecherposten aufgebrochen, ohne an die Legion und die Höllenorcs zu denken. Ich habe Angst, dass ihm etwas zugestoßen ist.",
@@ -12589,7 +12585,7 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [9365] = {
     ["D"] = "This flame, stolen from the heart of Stormwind itself, floods you with warmth. This raw power is foreign to you, but the (NAME) might know more...",
-    ["O"] = "Return the Flame of Stormwind to (NAME).",
+    ["O"] = "Bringt die Flamme von Sturmwind zu $N.",
   },
   [9366] = {
     ["D"] = "Nordöstlich von hier liegen die Teiche von Aggonar. Vor langer Zeit waren sie ein Heiligtum der Draenei, doch fielen sie der Verderbnis anheim, als das Blut des Dämonen Aggonar in die heiligen Wasser vergossen wurde.$B$BObwohl es alt und verwässert ist, ist das Blut noch immer von einer enormen Macht erfüllt. Angetrieben durch die puren dämonischen Energien des ursprünglichen Blutes, durchstreifen Terrorbestien dieses Gebiet. Vernichtet sie und sammelt so viel von dem Teufelsblut ein, wie Ihr tragen könnt. Ich werde Euch fürstlich belohnen.",
@@ -12599,7 +12595,6 @@ pfDB["quests"]["deDE-tbc"] = {
   [9367] = {
     ["D"] = "Die Zeit des Sonnenwendfests ist wieder angebrochen!$B$BJedes Jahr werden, wie die Tradition es verlangt, Flammenbewahrer auserkoren, die die Freudenfeuer in unseren Hauptstädten hüten. Auch wenn Feuer in ganz Azeroth brennen, so müssen unsere stets die heißesten und hellsten von allen sein, um dieser Zeit im Jahr ausreichend Ehrerbietung zu erweisen.$B$BIch hätte da übrigens eine Aufgabe für Euch. Mir ist noch nicht zu Ohren gekommen, ob die Feuer in allen Hauptstädten auch wirklich ordentlich brennen. Reist selbst dorthin und wärmt Euch im Schein der Flammen - überzeugt Euch, dass sie ausreichend heiß sind!",
     ["O"] = "Wärmt Euch an den Freudenfeuern in Sturmwind, Eisenschmiede und Darnassus. Sprecht anschließend mit einem Meister der Lehren innerhalb der Hauptstädte.",
-    ["T"] = "Das Fest des Feuers",
   },
   [9368] = {
     ["D"] = "Die Zeit des Sonnenwendfests ist wieder angebrochen!$B$BJedes Jahr werden, wie die Tradition es verlangt, Flammenbewahrer auserkoren, die die Freudenfeuer in unseren Hauptstädten hüten. Auch wenn Feuer in ganz Azeroth brennen, so müssen unsere stets die heißesten und hellsten von allen sein, um dieser Zeit im Jahr ausreichend Ehrerbietung zu erweisen.$B$BIch hätte da übrigens eine Aufgabe für Euch. Mir ist noch nicht zu Ohren gekommen, ob die Feuer in allen Hauptstädten auch wirklich ordentlich brennen. Reist selbst dorthin und wärmt Euch im Schein der Flammen - überzeugt Euch, dass sie ausreichend heiß sind!",
@@ -12681,12 +12676,10 @@ pfDB["quests"]["deDE-tbc"] = {
   [9388] = {
     ["D"] = "Heute lodern zahlreiche Flammen in der Welt, $N. Die Feuer, die am schwierigsten zu unterhalten sind, leuchten grün; werden sie nicht ständig beaufsichtigt, brennen sie nicht lange. Versichert Euch für unseren Flammenbewahrer, dass die Smaragdfeuer in Kalimdor auch weiterhin lodern, eh?$B$BIhr findet sie in der Nähe von Ratschet im Brachland, unweit der Meistergleve in Dunkelküste, im Wald des Eschentals bei der Brücke nahe des Außenpostens der Silberschwingen und entlang der Hauptstraße im Steinkrallengebirge, in der Nähe der Straße, die zur Scherwindklippe führt.",
     ["O"] = "Sucht die Freudenfeuer im Eschental, dem Brachland, der Dunkelküste und dem Steinkrallengebirge auf. Sprecht anschließend mit dem Flammenbewahrer.",
-    ["T"] = "Lodernde Flammen in Kalimdor",
   },
   [9389] = {
     ["D"] = "Die Feuer des Sonnenwendfests lassen das Land traditionsgemäß im Licht unzähliger Flammen erstrahlen. Manche behaupten, dass die grünen Flammen die besten seien, da sie so schwierig zu unterhalten sind und eine solch ungewöhnliche Farbgebung haben.$B$BVersichert Euch für unseren Flammenbewahrer, dass die Feuer in den Östlichen Königreichen auch weiterhin lodern. Ihr findet sie in der Nähe von Dun Modr im Sumpfland, unweit von Lohenscheit im Silberwald, bei den Klippen zum Leuchtturm in Westfall und nahe dem zerstörten Turm im Vorgebirge des Hügellands.",
     ["O"] = "Sucht die Freudenfeuer im Vorgebirge des Hügellands, im Silberwald, in Westfall und dem Sumpfland auf. Sprecht anschließend mit dem Flammenbewahrer.",
-    ["T"] = "Lodernde Flammen in den Östlichen Königreichen",
   },
   [9390] = {
     ["D"] = "Hört mein Leid, $C. Mein Bruder Sedai ist schon vor längerer Zeit losgezogen, um den Orcs beim Posten der Mag\'har eine Botschaft zu übermitteln. Als ein unverbesserlicher Idealist war er der Meinung, dass der Zeitpunkt nun gekommen sei, unsere Differenzen beizulegen und einen Friedensvertrag mit ihnen auszuhandeln.$B$BEr wird jetzt schon seit Tagen vermisst und ich befürchte das Schlimmste.$B$BWürdet Ihr für mich nach ihm Ausschau halten, damit ich endlich wieder Ruhe finde? Sedai müsste sich irgendwo in der östlichen Umgebung aufhalten.",
@@ -13915,7 +13908,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Bestienausbildung",
   },
   [9674] = {
-    ["D"] = "Man sagt, dass dieses Land am lautesten geschrien hat, als die Welt geteilt wurde. Hier fielen tausende von Nachtelfen und an ihrer Stelle erhoben sich fürchterliche Kreaturen des Hasses - die Naga.$B$BIhrer wahnsinnigen Königin, Azshara, gehorsam ergeben, würden sie alles und jeden zerstören, der sich durch ihre Gewässer wagt. Es würde noch für tausende von Jahren so bleiben - bis zum heutigen Tag.$B$BZuerst gilt es die Naga des Blutfluchs aus dem Riff zu entfernen.",
+    ["D"] = "Kapitän Edward Hanes auf der Insel Drachenfels möchte, dass Ihr 10 Naga des Blutfluchs tötet.",
     ["O"] = "Kapitän Edward Hanes auf der Insel Drachenfels möchte, dass Ihr 10 Naga des Blutfluchs tötet.",
     ["T"] = "Die Naga des Blutfluchs",
   },
@@ -14065,7 +14058,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Bergung des Päckchens",
   },
   [9706] = {
-    ["D"] = "Eure Hände zittern beim Aufheben des Buchs. Kuros muss von dieser Tragödie erfahren. Bringt ihm das Tagebuch.",
+    ["D"] = "Bringt Galaens Tagebuch zu Verteidiger Kuros bei der Blutwacht.",
     ["O"] = "Bringt Galaens Tagebuch zu Verteidiger Kuros bei der Blutwacht.",
     ["T"] = "Galaens Tagebuch - Das Schicksal von Verteidiger Saruan",
   },
@@ -14320,7 +14313,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Ihre Welt enden lassen",
   },
   [9760] = {
-    ["D"] = "Ich würde Euch nicht bitten, die Vektorspule und Sironas im Alleingang zu vernichten, $N, dennoch glaube ich, dass Ihr uns helfen könnt, den Weg für andere abzusichern, die solch einen gefährlichen Auftrag auf sich nehmen werden.$B$BNehmt die Straße, die nördlich aus der Blutwacht führt, und folgt dem Verlauf bis Ihr auf die Weggabelung stoßt. Biegt auf die linke Straße ab und geht solange weiter bis Ihr zu Verteidigers Ruh\' kommt - es liegt leicht westlich von der Straße selbst. Corin wird dort auf Euch warten.",
+    ["D"] = "Sprecht mit Verteidigerin Corin bei Verteidigers Ruh\' auf der Blutmythosinsel.",
     ["O"] = "Sprecht mit Verteidigerin Corin bei Verteidigers Ruh\' auf der Blutmythosinsel.",
     ["T"] = "Verteidigers Ruh\'",
   },
@@ -14885,7 +14878,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Mein alter Freund Ortor...",
   },
   [9874] = {
-    ["D"] = "Ich habe gerade von einer Katastrophe mit epischen Ausmaßen erfahren, $N. Die niederträchtigen Finsterblut haben das Orcdorf Sonnenwind nordwestlich von hier eingenommen und seine Einwohner getötet. Was das Ganze noch verschlimmert ist, dass sie begonnen haben, die Leichen in den Sonnenwindsee zu werfen. Wenn die Leichen dort verrotten, wird unsere Hauptwasserquelle in dieser Gegend verseucht werden.$B$BEs ist eine grauenvolle Aufgabe, die ich Euch übertrage, aber sie muss erledigt werden. Nehmt diese verzauberte Fackel und kehrt zum Sonnenwindposten zurück. Verbrennt alle verrottenden Orcleichen...",
+    ["D"] = "Otonbu der Weise in Telaar in Nagrand möchte, dass Ihr die Fackel des flüssigen Feuers benutzt, um 10 Leichen von Bewohnern von Sonnenwind zu zerstören. Bringt die Fackel des flüssigen Feuers zurück, wenn Ihr fertig seid.",
     ["O"] = "Otonbu der Weise in Telaar in Nagrand möchte, dass Ihr die Fackel des flüssigen Feuers benutzt, um 10 Leichen von Bewohnern von Sonnenwind zu zerstören. Bringt die Fackel des flüssigen Feuers zurück, wenn Ihr fertig seid.",
     ["T"] = "Die Ausbreitung eindämmen",
   },
@@ -15110,7 +15103,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Die Zwillingsschluchten von Nagrand",
   },
   [9923] = {
-    ["D"] = "HILFE! Sie werden mich fressen! Ich weiß es!$B$BFindet den Schlüssel, einer dieser Oger muss ihn haben.$B$BWenn Ihr mir hier raushelft, wird mein Vater Euch fürstlich entlohnen! Er ist der Anführer von Telaar, Arechron.",
+    ["D"] = "Findet den Schlüssel der Felsfäuste und befreit Corki. Sprecht mit Arechron in Telaar, wenn Ihr Erfolg hattet.",
     ["O"] = "Findet den Schlüssel der Felsfäuste und befreit Corki. Sprecht mit Arechron in Telaar, wenn Ihr Erfolg hattet.",
     ["T"] = "Hilfe!",
   },
@@ -15365,7 +15358,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Der Ring des Blutes: Champion der Totschläger",
   },
   [9974] = {
-    ["D"] = "Bringt 5 Sphärenpirscheressenzen und 30 Apfelbeeren von Terokkar zu Kokorek im Lithicversteck.",
+    ["D"] = "Ich kann einen Gegenstand herstellen, der den Schutzzauber, der das Shalasversteck umgibt, aufheben kann, aber seid gewarnt, $N, die Wirkung wird nur so lange andauern, bis Ihr Euren Freund befreit habt. Ich werde Euch keine Waffe geben, mit der Ihr mein Volk wann immer Ihr wollt angreifen könnt.$B$BIch habe fast alle Zutaten, die ich für diesen Zauber brauche, aber Ihr müsst noch ein paar weitere für mich sammeln, bevor ich ihn abschließen kann. Ich brauche etwas Sphärenpirscheressenz und eine Handvoll Apfelbeeren von Terokkar. Ihr könnt beides um das Versteck herum finden.",
     ["O"] = "Bringt 5 Sphärenpirscheressenzen und 30 Apfelbeeren von Terokkar zu Kokorek im Lithicversteck.",
     ["T"] = "Die letzten Reagenzien",
   },
@@ -15515,7 +15508,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Vermittler der Feuerschwingen",
   },
   [10004] = {
-    ["D"] = "Nehmt die Blaupausen und reist nach Shattrath in den Wäldern von Terokkar. Wenn Ihr in Shattrath seid, geht ins Untere Viertel sucht nach einem Mo\'arg namens Sal\'salabim. Er ist wahrscheinlich an der Bar und ertränkt seine Sorgen.$B$BDa fällt mir ein, dass Ihr ihn wahrscheinlich überreden müsst, uns zu helfen. Versucht ihm viel Geduld und Verständnis entgegenzubringen. Wenn das nichts hilft, dann versucht es mit Gewalt.",
+    ["D"] = "Altruis der Leidende im westlichen Nagrand möchte, dass Ihr die Blaupausen des Meisterplaners zu Sal\'salabim in Shattrath bringt und ihn überredet, euch zu helfen.",
     ["O"] = "Altruis der Leidende im westlichen Nagrand möchte, dass Ihr die Blaupausen des Meisterplaners zu Sal\'salabim in Shattrath bringt und ihn überredet, euch zu helfen.",
     ["T"] = "Geduld und Verständnis",
   },
@@ -15640,17 +15633,17 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Gefäße der Macht",
   },
   [10029] = {
-    ["D"] = "Die Geister der Toten in der Knochenwüste rufen nach mir! Sie leiden!$B$B$C, Ihr müsst zur Knochenwüste im Süden reisen und meinen Gehilfen Soolaveen bei der Flüchtlingskarawane aufsuchen. Er muss es auch spüren und wird Eure Hilfe dabei brauchen, die Geister dort zur Ruhe zu bringen.$B$BWenn Ihr Euch beeilt, könnt Ihr sie vielleicht noch einholen. Ich weiß, dass sie in Norden der Knochenwüste Rast machen wollten, bevor sie weiter Richtung Süden nach Auchindoun ziehen wollten.",
+    ["D"] = "Anachoret Lyteera möchte, dass Ihr ihren Gehilfen Soolaveen bei der Flüchtlingskarawane in der Knochenwüste der Wälder von Terokkar findet.$B$BDas Abschließen von Quests für die Aldor führt zu einer Verringerung Eures Rufs bei den Sehern.",
     ["O"] = "Anachoret Lyteera möchte, dass Ihr ihren Gehilfen Soolaveen bei der Flüchtlingskarawane in der Knochenwüste der Wälder von Terokkar findet.$B$BDas Abschließen von Quests für die Aldor führt zu einer Verringerung Eures Rufs bei den Sehern.",
     ["T"] = "Die Geister rufen",
   },
   [10030] = {
-    ["D"] = "Die Knochen der Draenei, die bei der Explosion von Auchindoun gestorben sind, sind überall in der Knochenwüste verstreut. Viele ihrer Geister sind daher ruhelos und können nicht ins nächste Leben übertreten.$B$B$N, Ihr müsst mir helfen, ihre Knochen wieder zu besorgen und sie zu ihrer letzten Ruhestätte zu bringen. Nur dann werden sie Frieden finden und den Segen des Lichts erlangen.$B$BSammelt die ruhelosen Knochen mit größter Vorsicht und bringt sie zu Ramdor dem Wahnsinnigen in Auchindoun in der Mitte der Knochenwüste. Trotz seines Namens wird er wissen, wie er sich um sie zu kümmern hat.",
+    ["D"] = "Sammelt 10 ruhelose Knochen und bringt sie zu Ramdor dem Wahnsinnigen bei der westlichen Seite des Rings der Beobachtung in Auchindoun, das sich in der Mitte der Knochenwüste in den Wäldern von Terokkar befindet.",
     ["O"] = "Sammelt 10 ruhelose Knochen und bringt sie zu Ramdor dem Wahnsinnigen bei der westlichen Seite des Rings der Beobachtung in Auchindoun, das sich in der Mitte der Knochenwüste in den Wäldern von Terokkar befindet.",
     ["T"] = "Die Knochen zurückholen",
   },
   [10031] = {
-    ["D"] = "Viele Geister der Draenei wurden von der Explosion in Auchindoun verderbt und wandeln nun voller Pein in der Wüste.$B$B$N, ich flehe Euch an, gebt ihnen ihren Seelenfrieden wieder. Vernichtet die verirrten Geister und die Skelette der Zerschlagenen, die die Knochenwüste hinter den Mauern Auchindouns heimsuchen.$B$BWas? Ihr denkt, es wäre besser, sie in blinder Wut umherstreifen zu lassen?$B$BKehrt danach zu Anachoret Soolaveen bei der Flüchtlingskarawane zurück und berichtet ihm, was Ihr erreicht habt.",
+    ["D"] = "Tötet 10 verirrte Geister und 10 Skelette eines Zerschlagenen und kehrt dann zu Anachoret Soolaveen bei der Flüchtlingskarawane in der Knochenwüste in den Wäldern von Terokkar zurück.",
     ["O"] = "Tötet 10 verirrte Geister und 10 Skelette eines Zerschlagenen und kehrt dann zu Anachoret Soolaveen bei der Flüchtlingskarawane in der Knochenwüste in den Wäldern von Terokkar zurück.",
     ["T"] = "Den Verirrten den Weg zeigen",
   },
@@ -15710,12 +15703,12 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Tötet den Schattenrat!",
   },
   [10044] = {
-    ["D"] = "Die Großmutter hat mich gebeten, Euch aufzusuchen und Euch eine Nachricht zu überbringen. Sie möchte unverzüglich mit Euch sprechen.$B$BMein Wille mag vielleicht gebrochen sein, aber macht besser keinen Fehler, $N. Wenn Ihr die Großmutter verärgert, werde ich Euch mit aller Kraft, die noch in mir steckt, bestrafen. Ihr findet sie in der Haupthalle.$B$B<Garrosh zeigt auf das große Gebäude im Norden.>$B$BHört Euch an, was sie zu sagen hat, und tut, was sie Euch aufträgt.",
+    ["D"] = "Sprecht mit Großmutter Geyah und hört Euch an, was sie zu sagen hat.",
     ["O"] = "Sprecht mit Großmutter Geyah und hört Euch an, was sie zu sagen hat.",
     ["T"] = "Ein Besuch bei der Großmutter",
   },
   [10045] = {
-    ["D"] = "Mutter Kashur möchte mit Euch sprechen, $N. Bevor Ihr das könnt, müsst Ihr jedoch ein paar Kräuter sammeln, um einen Trank zuzubereiten, der Euren Geist erweitert, damit Ihr mit den Geistern sprechen könnt.$B$BIhr müsst Olembawurzeln aus Terokkar, Marschenbeeren aus den Zangarmarschen, Telaarifarn aus Nagrand und Drachenwirbel aus dem Schergrat sammeln. Ich habe die Anleitung zum Anbau dieser Kräuter auf dieses Pergament geschrieben. Kehrt zu mir zurück, wenn Ihr die Zutaten beisammen habt.",
+    ["D"] = "Großmutter Geyah in Garadar in Nagrand möchte, dass Ihr 1 Olembawurzel, 1 Marschenbeere, 1 Telaarifarn und 1 Drachenwirbel sammelt.",
     ["O"] = "Großmutter Geyah in Garadar in Nagrand möchte, dass Ihr 1 Olembawurzel, 1 Marschenbeere, 1 Telaarifarn und 1 Drachenwirbel sammelt.",
     ["T"] = "Zutaten sammeln",
   },
@@ -15952,7 +15945,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [10094] = {
     ["D"] = "Es ist nun zwei Jahre her, dass die Beschwörung des Schattenrats dieses einst großartige Mausoleum explodieren und die Knochenwüste entstehen lies.$B$BJetzt befinden sie sich im Krieg mit einer unglaublich mächtigen Kraft im Inneren.$B$B$N, Ihr müsst in das Schattenlabyrinth eindringen und herausfinden, wogegen sie kämpfen und ob es eine Gefahr für uns sein könnte. Unserer Spione haben berichtet, dass sie ein verbotenes Buch mit unheiligen Beschwörungen verwenden, bekannt als der Kodex des Blutes.$B$BSucht in ihm nach Antworten.",
     ["O"] = "Lest den Kodex des Blutes im Schattenlabyrinth von Auchindoun.",
-    ["T"] = "Der Kodex des Blutes",
+    ["T"] = "Kodex des Blutes",
   },
   [10095] = {
     ["D"] = "Der Schattenrat hat die Kontrolle über das kosmische Wesen, das sie vor fast zwei Jahren beschworen haben, verloren! Es hat die Explosion von Auchindoun verursacht und die Knochenwüste erschaffen.$B$BJetzt nur noch als Murmur bekannt, droht es, den Schattenrat zu überrennen und zu entkommen!$B$BNun, da der Großmeister und der Rest der Führung tot sind, seid Ihr die einzige Hoffnung der Scherbenwelt im Kampf gegen dieses Monster!$B$B$N, tief in Eurem Herzen wisst Ihr, dass Ihr und Eure Freunde nicht versagen dürfen!",
@@ -15990,7 +15983,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Wenn Geister sprechen",
   },
   [10102] = {
-    ["D"] = "Als meine Energien sich über die Jahrhunderte nach und nach verflüchtigten, nahm eine Leere meinen Platz ein und verschlang die Seelen in der Nähe. Hilflos musste ich zusehen, wie ganze Generationen von Orcseelen in den Wirbel hineingezogen wurden. Vor Kurzem bemächtigten meine Feinde sich des Wirbels und benutzten ihn, um zahllose Leerdiener in ihre Brennende Legion zu rufen.$B$BNun liegt der Schlüssel zur Beendigung dieses Kreislaufs und der Befreiung der Orcgeister bei einem anderen Naaru, A\'dal. Ich konnte seine Essenz in der uralten Stadt Shattrath in den Wäldern von Terokkar fühlen.",
+    ["D"] = "Sprecht mit A\'dal in Shattrath.",
     ["O"] = "Sprecht mit A\'dal in Shattrath.",
     ["T"] = "Ein gelüftetes Geheimnis",
   },
@@ -16045,7 +16038,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Ein persönlicher Gefallen",
   },
   [10113] = {
-    ["D"] = "\"Geht und sucht ein paar Vorräte\", hat er gesagt. Ich bin fast fünfzehn Mal getötet worden, bevor ich diesen Ort hier überhaupt gefunden habe! Diese Zerschlagenen sind vielleicht nicht das gastfreundlichste Volk, das ich kenne, aber immerhin haben sie nicht versucht, mir die Haut von den Knochen zu ziehen!$B$BWie auch immer, ich gehe nicht zurück. Meine Tage als Großwildjäger sind vorbei. Wenn ihr zufällig nach Nordosten Richtung Zangarmarschen geht und bei Nesingwarys Safari vorbeikommt, sagt dort Bescheid, dass \"die Flinte\" gekündigt hat.$B$BHey, vielleicht könnt Ihr ja meinen Platz einnehmen! Viel Glück, $GFremder:Fremde;.",
+    ["D"] = "\"Die Flinte\" Jones möchte, dass Ihr mit Hemet Nesingwary in Nesingwarys Safari am nordöstlichen Rand von Nagrand sprecht.",
     ["O"] = "\"Die Flinte\" Jones möchte, dass Ihr mit Hemet Nesingwary in Nesingwarys Safari am nordöstlichen Rand von Nagrand sprecht.",
     ["T"] = "Nesingwarys Safari",
   },
@@ -16225,7 +16218,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Mission: Seid der Bote",
   },
   [10149] = {
-    ["D"] = "Wisst Ihr, was passiert wäre, wenn Ihr den Boten nicht abgefangen hättet, $N?$B$B<Danath nickt.>$B$BDie gesamte Armee der Legion des Höllenfeuers hätte vor unserer Tür gestanden. Einen solchen Angriff hätten wie niemals überlebt.$B$BEs gibt nur eine Möglichkeit zu verhindern, dass diese Befehle jemals die Front erreichen. Ihr müsst zu den Teichen von Aggonar, westlich von hier, reisen und diesen Arazzius töten.$B$BWenn Ihr das tut, werde ich Euch eine Auszeichnung zukommen lassen.",
+    ["D"] = "Truppenkommandant Danath Trollbann in der Ehrenfeste auf der Höllenfeuerhalbinsel möchte, dass Ihr Arazzius den Grausamen tötet.",
     ["O"] = "Truppenkommandant Danath Trollbann in der Ehrenfeste auf der Höllenfeuerhalbinsel möchte, dass Ihr Arazzius den Grausamen tötet.",
     ["T"] = "Mission: Beendet alles, seid alles",
   },
@@ -16535,7 +16528,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Stadt des Lichts",
   },
   [10212] = {
-    ["D"] = "Ich muss erst alles in Ordnung bringen, bevor ich gehe. Kehrt zur Großmutter zurück und sagt ihr, dass ihr Enkelsohn kommt.",
+    ["D"] = "Kehrt zu Großmutter Geyah in Garadar in Nagrand zurück.",
     ["O"] = "Kehrt zu Großmutter Geyah in Garadar in Nagrand zurück.",
     ["T"] = "Held der Mag\'har",
   },
@@ -16620,7 +16613,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Das Kampfhorn",
   },
   [10231] = {
-    ["D"] = "Ramdor? Hmm, mal überlegen... Ramdor... Oh ja, der Totenpriester. Was will er denn mit dem Buch? Nun, es ist gleichgültig. Ja, ich habe Euch angelogen und nein, ich habe das Buch nicht. Nicht mehr zumindest. Es wurde gestohlen. Wahrscheinlich von einem dieser widerlichen Flüchtlinge.$B$BIm Übrigen existiert Auchindoun nicht mehr. Wir haben keine Verwendung mehr für das Buch. Wenn Ihr es findet, könnt Ihr es behalten.$B$BWie schon gesagt, ich habe ein paar dieser Grobiane letzte Woche um die Terrasse herumschleichen sehen. Fangt mit Eurer Suche bei ihnen an. Wahrscheinlich spielen sie irgendwo im Armenviertel Würfelspiele.",
+    ["D"] = "Ezekiel sagt, dass das Buch gestohlen wurde. Eure einzige Spur führt Euch zu den Grobianen. Schaut nach, ob sie irgendwelche Informationen haben.",
     ["O"] = "Ezekiel sagt, dass das Buch gestohlen wurde. Eure einzige Spur führt Euch zu den Grobianen. Schaut nach, ob sie irgendwelche Informationen haben.",
     ["T"] = "Welches Buch? Ich sehe kein Buch.",
   },
@@ -17395,7 +17388,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Der Teufelshäschertöter",
   },
   [10388] = {
-    ["D"] = "Ich hoffe, Ihr hattet einen guten Flug, mein Freund. Während Ihr fort wart, ist ein Bote angekommen. Wie es aussieht, hat Nazgrel einen neuen Auftrag für Euch. Am besten geht Ihr nach Thrallmar zurück und sucht ihn auf. Ich habe das Gefühl, dass die Legion gerade erst warm geworden ist.",
+    ["D"] = "Kehrt nach Thrallmar zurück und sprecht mit Nazgrel.",
     ["O"] = "Kehrt nach Thrallmar zurück und sprecht mit Nazgrel.",
     ["T"] = "Rückkehr nach Thrallmar",
   },
@@ -17455,7 +17448,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Das Herz der Dunkelheit",
   },
   [10400] = {
-    ["D"] = "Der ehrwürdige Warpseher hat mir von Euren waghalsigen Abenteuern erzählt, $N. Er sprach auch von dem neuen Feind, den Ihr entdeckt habt. Dieser Arazzius der Grausame ist der mächtigste und bösartigste Feind, dem die Söhne Lothars sich je stellen mussten.$B$BWerdet Ihr uns zur Seite stehen, $N? Werdet Ihr diesem Legionslord gegenübertreten und ihn der Gerechtigkeit des Lichts übergeben? Wenn ja, dann begebt Euch zu den Teichen von Aggonar. Wenn Ihr ihn nicht findet, wird seine Bosheit sicher Euch finden.",
+    ["D"] = "Tötet Arazzius den Grausamen bei den Teichen von Aggonar und kehrt danach zu Truppenkommandant Danath Trollbann in der Ehrenfeste zurück.",
     ["O"] = "Tötet Arazzius den Grausamen bei den Teichen von Aggonar und kehrt danach zu Truppenkommandant Danath Trollbann in der Ehrenfeste zurück.",
     ["T"] = "Oberanführer",
   },
@@ -17505,7 +17498,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Ishanahs Hilfe",
   },
   [10411] = {
-    ["D"] = "Um die zerstörte Manaschmiede herum findet Ihr die Überbleibsel von Dimensius\' Taten. Sickernder Schlick verschmutzt die Teiche um Ultris herum. Direkt unter diesen Teichen, wo sich nun der Stützpunkt des Astraleums befindet, findet Ihr noch mehr Müll in Form von Leerenabschaum.$B$BDer beste Weg, ihn zu entsorgen, ist, den Schleim mithilfe von Elektroschocks in Kugeln zu verwandeln. Benutzt dieses Elixier, um Eure Angriffe unter Strom zu setzen. Die Entladung, die dabei entsteht, löst den Schleim in seine Urform auf. Zerstört die Kugeln!",
+    ["D"] = "Forscher Navuud im Wachposten des Protektorats im Nethersturm möchte, dass Ihr 30 Leerenabschaumkugeln und 30 Sickerschlickkugeln zerstört.",
     ["O"] = "Forscher Navuud im Wachposten des Protektorats im Nethersturm möchte, dass Ihr 30 Leerenabschaumkugeln und 30 Sickerschlickkugeln zerstört.",
     ["T"] = "Elektroschock!",
   },
@@ -17560,7 +17553,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Teuflische Waffen",
   },
   [10422] = {
-    ["D"] = "Hauptmann Tyralius hat eine Truppe von Soldaten vor 10 Tagen in Richtung des Stützpunkts des Astraleums geführt. Seitdem haben wir nichts von ihm oder seinen Leuten gehört.$B$BEs ist sehr wahrscheinlich, dass sie überfallen und getötet wurden, aber ich bekomme ein merkwürdiges Signal auf meinen Instrumenten.$B$BIch glaube, es ist ein Notsignal, aber diese Dinge haben sich schon öfter geirrt. Wenn Tyralius noch am Leben ist, halten sie ihn in einem Ihrer Gefängnisse fest. Ihr müsst das Gefängnis finden und es mit einem Schlüssel, den Ihr wahrscheinlich bei einem Wärter finden könnt, öffnen.",
+    ["D"] = "Captain Tyralius took a platoon of soldiers south towards the Ethereum Staging Grounds 10 days ago. We haven\'t heard from him or his crew since.$B$BChances are good that they were ambushed and killed but I\'m getting a curious reading from my instruments.$B$BI think it\'s a distress signal but these things have been wrong before. If Tyralius is still alive, they\'re keeping him in one of their prisons. You\'ll have to locate the prison and open it with a key, probably found on the warden.",
     ["O"] = "Flesh Handler Viridius at the Protectorate Watch Post in Netherstorm has asked that you find and free Captain Tyralius.",
     ["T"] = "Hauptmann Tyralius",
   },
@@ -17640,7 +17633,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Anleitung zur Zerstörung",
   },
   [10438] = {
-    ["D"] = "Hier ist es, $N. Nehmt den Phasenstörer und steigt auf! Der Netherdrachen des Protektorats wird Euch nahe genug an Ultris heranfliegen, damit Ihr den Störer auf die Leerleitung werfen könnt.$B$BSendet so viele Störsignale wie möglich aus, um eine komplette Zerstörung zu gewährleisten!$B$BWenn Ihr bereit seid, sprecht mit dem Netherdrachen und er wird mit Euch in die Lüfte steigen.$B$BWenn Ihr das Ziel verfehlt, müsst Ihr mehr Bomben von mir besorgen, bevor Ihr weitermachen könnt.",
+    ["D"] = "Professor Dabiri im Wachposten des Protektorats im Nethersturm möchte, dass Ihr den Phasenstörer bei der Leerleitung auf der Manaschmiede Ultris benutzt. Sendet so viele Störsignale wie möglich aus, um eine komplette Zerstörung zu gewährleisten. Die Entladungen des Phasenstörers werden automatisch das Ziel treffen, solange Ihr nahe genug seid, um ihn zu benutzen.$B$BKehrt zu Professor Dabiri zurück, wenn Ihr erfolgreich wart!",
     ["O"] = "Professor Dabiri im Wachposten des Protektorats im Nethersturm möchte, dass Ihr den Phasenstörer bei der Leerleitung auf der Manaschmiede Ultris benutzt. Sendet so viele Störsignale wie möglich aus, um eine komplette Zerstörung zu gewährleisten. Die Entladungen des Phasenstörers werden automatisch das Ziel treffen, solange Ihr nahe genug seid, um ihn zu benutzen.$B$BKehrt zu Professor Dabiri zurück, wenn Ihr erfolgreich wart!",
     ["T"] = "Auf netherischen Schwingen",
   },
@@ -17702,7 +17695,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [10450] = {
     ["D"] = "Knochenmalmer! Sie sollen alle sterben! Der Anblick ihrer roten Haut und ihrer Verkommenheit bringt mein Blut zum kochen!$B$BIch habe einen Auftrag für Euch, $N. Tötet die Orcs der Knochenmalmer und sammelt ihr bösartiges Blut. Es gibt eine Apothekerin, die vielleicht herausfinden kann, wie diese Orcs der Verderbnis der Dämonen anheim fallen konnten, eine Verderbnis, derer wir uns vor so kurzer Zeit erst entledigen konnten.$B$BDie Knochenmalmer streunen in der Nähe der zerstörten Kriegsmaschinerien entlang des Pfads der Ehre im Süden herum. Kehrt zu mir zurück, wenn Euer Auftrag erfüllt ist.",
     ["O"] = "Bringt 12 Phiolen mit Blut eines Knochenmalmers zu Vurtok Axtbrecher in Thrallmar.",
-    ["T"] = "Blut der Knochenmalmer",
+    ["T"] = "Knochenmalmerblut",
   },
   [10451] = {
     ["D"] = "Der Erdenmutter sei Dank! Ich habe mich vor ein paar Tagen von den anderen getrennt. Ich wollte der Quelle der Veränderung des Wassers, die wir spüren, auf den Grund gehen. Meine Suche führte mich zur Echsennarbe, wo ich herausgefunden habe, dass die Naga die Wasservorräte des Schattenmondtals verderben!$B$BUnglücklichweise hat man mich entdeckt und gefangen genommen. Nicht auszudenken, welch grausame Dinge sie mit mir vorhatten!$B$BWir müssen hier weg. Helft mir zu fliehen und sucht dann Torlok beim Altar der Verdammnis auf.",
@@ -17840,7 +17833,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Stärke beweisen",
   },
   [10480] = {
-    ["D"] = "Die Naga der Illidari in dieser Gegend haben die Kontrolle über die einzige reine Wasserversorgung im Schattenmondtal an sich gerissen.$B$BDirekt nördlich von hier findet Ihr das Nest der Naga, die Echsennarbe. Um die Echsennarbe herum findet Ihr Ansammlungen von tosendem Wasser, die ihre Qual ins Land hinausschreien. Bei diesen Ansammlungen streifen die wütenden Geister des Wassers umher.$B$BReist zur Echsennarbe und benutzt das Totem der Geister, um ihre Wasserseelen einzufangen. Die größte Ansammlung dieser Geister findet Ihr in der Nähe der Zisterne der Echsennarbe.",
+    ["D"] = "Erdheiler Torlok beim Altar der Verdammnis im Schattenmondtal möchte, dass Ihr das Totem der Geister benutzt, um 5 Wasserseelen einzufangen.",
     ["O"] = "Erdheiler Torlok beim Altar der Verdammnis im Schattenmondtal möchte, dass Ihr das Totem der Geister benutzt, um 5 Wasserseelen einzufangen.",
     ["T"] = "Wütende Geister des Wassers",
   },
@@ -17925,7 +17918,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Anthions Abschiedsworte",
   },
   [10497] = {
-    ["D"] = "Valthalaks Seele wurde in diesem Amulett verwahrt. In unserer Gier haben wir es wie Narren in drei Teile aufgeteilt ohne um den Fluch zu wissen, der uns heimsuchen würde.$B$BDie einzige Möglichkeit, den Fluch aufzuheben, besteht darin das Amulett wieder zusammenzusetzen. Kehrt zu Mokvar zurück und sagt ihm, dass Bodley unsere einzige Hoffnung ist, die einzelnen Teile wiederzufinden. Mit ihm könnt Ihr auch über eine eventuelle Belohnung sprechen.$B$BIch selbst kann nun endlich in Frieden ruhen. Ich wünsche Euch viel Glück, Ihr werdet es dringend brauchen.",
+    ["D"] = "Kehrt mit einem Paar Stiefel des Lichts, ein Paar Beinplatten des Lichts und einer Schiftung des Lichts zu Mokvar in Orgrimmar zurück.",
     ["O"] = "Kehrt mit einem Paar Stiefel des Lichts, ein Paar Beinplatten des Lichts und einer Schiftung des Lichts zu Mokvar in Orgrimmar zurück.",
     ["T"] = "Anthions Abschiedsworte",
   },
@@ -18005,7 +17998,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Die Speerspießer abfüllen",
   },
   [10513] = {
-    ["D"] = "Ich weiß nicht, wie wir an den Zauberspruch, den die Geister erwähnt haben, herankommen sollen, $N. Um die Wahrheit zu sagen, habe ich nicht einmal eine Ahnung, wo man so eine Suche beginnen könnte.$B$B<Torlok starrt gedankenverloren in die Ferne.>$B$BHmm... Das ist zwar ein Schuss ins Blaue, aber es ist vielleicht unsere einzige Chance. Es gibt einen Orc, den ich schon des Öfteren in dieser Gegend gesehen habe. Ich habe einmal kurz mit ihm gesprochen. Er ist ein Einsiedler, der angeblich in der Zisterne der Echsennarbe im Nordosten lebt. Findet diesen Orc namens Oronok Herzeleid.$B$BWie gesagt, es ist ein Schuss ins Blaue.",
+    ["D"] = "Sucht Oronok Herzeleid auf dem zerschlagenen Vorsprung nördlich der Zisterne der Echsennarbe.",
     ["O"] = "Sucht Oronok Herzeleid auf dem zerschlagenen Vorsprung nördlich der Zisterne der Echsennarbe.",
     ["T"] = "Oronok Herzeleid",
   },
@@ -18127,7 +18120,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [10537] = {
     ["D"] = "Es ist ein Zeichen, $N. Nicht einmal der Tod kann mich aufhalten. Einen Teil der Litanei der Verdammnis zu beschaffen ist mein Schicksal. Mit Eurer Hilfe werde ich es erfüllen.$B$BBevor wir uns auf diese Reise begeben, brauche ich meinen Langbogen, Lohn\'goron. Er ist ein Familienerbstück, das seit Generationen von Herzeleid zu Herzeleid weitergegeben wurde.$B$BMeine Instinkte sagen mir, dass einer der Dämonen ihn von meiner Leiche gestohlen hat. Tötet die Dämonen hier, bis Ihr meinen Bogen habt.",
     ["O"] = "Der Geist von Ar\'tor bei der Stätte der Illidari im Schattenmondtal möchte, dass Ihr Lohn\'goron, den Bogen des Herzeleid, von den Dämonen in der Gegend beschafft.",
-    ["T"] = "Lohn\'goron, Bogen des Herzeleid",
+    ["T"] = "Lohn\'goron, Bogen des Herzeleids",
   },
   [10538] = {
     ["D"] = "Das letzte Experiment war kein kompletter Fehlschlag. Ich habe ein wenig von dem Blut, das Ihr mir gebracht habt, aufgehoben. Jetzt, da es abgekocht ist, sollte es frei von allen Flüchen sein, mit denen die Hexen des Blutenden Auges das Blut ihres Volkes belegt haben.$B$BIch brauche jedoch noch mehr Blut für meine Untersuchungen. Begebt Euch nach Zeth\'Gor und sammelt dort das Blut der Orcs. Kocht es danach in ihrem verfluchten Kessel und bringt es mir.",
@@ -18145,7 +18138,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Die Litanei der Verdammnis - Ar\'tors Angriff",
   },
   [10541] = {
-    ["D"] = "Ich danke Euch, Held. Ohne Euch wäre mein Geist auf ewig an diesem verfluchten Ort gefangen.$B$B<Ar\'tor reicht Euch eine spektrale Schließkassette.>$B$BNehmt sie und bringt sie zu meinem Vater beim Hof im Nordosten, über der Zisterne der Echsennarbe... darin befinden sich Lohn\'goron und der zweite Teil der Litanei.$B$BEr wird sehr traurig über meinen Tod sein. Versprecht mir, dass Ihr ihm versichert, dass ich als freie Seele gestorben bin. Sagt ihm, dass ich die Jagdgründe sehe und dass sie wundervoll sind. Sagt ihm, dass ich dort auf ihn warte...",
+    ["D"] = "Bringt Ar\'tors Schließkassette zu Oronok Herzeleid bei Oronoks Hof im Schattenmondtal.",
     ["O"] = "Bringt Ar\'tors Schließkassette zu Oronok Herzeleid bei Oronoks Hof im Schattenmondtal.",
     ["T"] = "Die Litanei der Verdammnis - Zweiter Teil",
   },
@@ -18185,7 +18178,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Die traurige Wahrheit",
   },
   [10550] = {
-    ["D"] = "Ich habe nicht gelogen. Das Ei war unglaublich. Woher hattet Ihr es?$B$BNun, falls Ihr jemals mehr Blutdisteln brauchen solltet, wisst Ihr ja, wo Ihr mich findet und was ich benötige.$B$BDa habt Ihr ein Bündel von dem Zeug. Bringt es zurück zu Eurem Auftraggeber.",
+    ["D"] = "Bringt das Blutdistelbündel zurück zu Borak, Sohn des Oronok, bei der Brücke in der Nähe der Stätte der Mondfinsternis im Schattenmondtal.",
     ["O"] = "Bringt das Blutdistelbündel zurück zu Borak, Sohn des Oronok, bei der Brücke in der Nähe der Stätte der Mondfinsternis im Schattenmondtal.",
     ["T"] = "Ein Bündel von Blutdisteln",
   },
@@ -18315,7 +18308,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Der Kerker des Wächters",
   },
   [10576] = {
-    ["D"] = "<Borak mustert Euch.>$B$BEs wird schwierig, aber ich glaube, es könnte klappen.$B$BIch kann Euch als einen von Illidans Blutelfen verkleiden, $N. Aber zuerst benötige ich dazu einige Teile ihrer Rüstung. Sie muss unbedingt sauber sein. Keine Blutflecken! Wir wollen schließlich keinen Verdacht erwecken.$B$BBringt mir die Ausrüstung und ich kümmere mich um den Rest der Verkleidung.$B$BSobald die Verkleidung fertig ist, werdet Ihr dem Großkommandanten die Nachricht überbringen - persönlich!",
+    ["D"] = "Borak, Sohn des Oronok, bei der Brücke in der Nähe der Stätte der Mondfinsternis im Schattenmondtal möchte, dass Ihr 6 Teile der Rüstung der Mondfinsternis besorgt.",
     ["O"] = "Borak, Sohn des Oronok, bei der Brücke in der Nähe der Stätte der Mondfinsternis im Schattenmondtal möchte, dass Ihr 6 Teile der Rüstung der Mondfinsternis besorgt.",
     ["T"] = "Unterwürfigkeit in Schattenmond",
   },
@@ -18377,7 +18370,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [10588] = {
     ["D"] = "How many times has this spell has been used in the history of our worlds? Undoubtedly, its power for destruction is unparalleled.$B$BWhat you must do now is take the cipher, now made whole, and read from it at the Altar of Damnation - where the memory of Gul\'dan stands.$B$BWhat you will see once the words are uttered are the memories left imprinted upon the land. Stand your ground and await the coming of Cyrukh.$B$BYou must be victorious, $N. This land can not withstand another shattering.",
     ["O"] = "Benutzt die Litanei der Verdammnis am Altar der Verdammnis um Cyrukh den Feuerlord zu rufen.$B$BVernichtet Cyrukh den Feuerlord und sprecht danach mit Erdheiler Torlok, der sich ebenfalls am Altar der Verdammnis befindet.",
-    ["T"] = "Die Litanei der Verdammnis",
+    ["T"] = "Litanei der Verdammnis",
   },
   [10589] = {
     ["D"] = "Laut Razuuns Befehlen wird der riesige Stützpunkt der Höllenbestien Invasionspunkt: Katastrophe genannt und befindet sich in den nördlichen Bergen. Die einzige Weise, auf die man dorthin gelangen kann, ist ein Teleporter, der sich in der Feste der Legion befindet.$B$BAusgewählte Mitglieder der Legion tragen Geräte bei sich, mit denen sie die Teleporter aktivieren können. Ihr müsst Euch eines dieser Geräte besorgen, um Zugang zu dem Teleporter zu erlangen. Tötet alle Dämonen, wenn Ihr es müsst, aber kommt auf keinen Fall mit leeren Händen zurück.",
@@ -18640,7 +18633,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Herolde des Schattenmondklans",
   },
   [10644] = {
-    ["D"] = "Es gibt unzählige Geschichten über das Leben von Teron Blutschatten, aber manche sind eben nur Geschichten. Wir wissen nicht, was mit Blutschatten passiert ist, nachdem er nach Draenor zurückgekehrt war.$B$BMit Sicherheit wissen wir nur, dass er schon einmal gestorben ist.$B$BIch habe gehört, wie die Späher von einem alten Orcgeist sprachen, der beim Altar der Schatten haust. Er befindet sich weit im Osten, hinter den Netherschwingenfeldern und jenseits des Netherschwingenpasses. Nehmt diese Geisterbrille und sucht diesen Orc. Er weiß sicher mehr über Blutschatten.",
+    ["D"] = "Zorus der Richter in der Wildhammerfeste im Schattenmondtal möchte, dass Ihr den uralten Schattenmondgeist findet.$B$BWenn Ihr Eure Geisterbrille verlieren solltet, kann Euch Zorus der Richter eine neue herstellen.",
     ["O"] = "Zorus der Richter in der Wildhammerfeste im Schattenmondtal möchte, dass Ihr den uralten Schattenmondgeist findet.$B$BWenn Ihr Eure Geisterbrille verlieren solltet, kann Euch Zorus der Richter eine neue herstellen.",
     ["T"] = "Teron Blutschatten - Geschichte und Mythos",
   },
@@ -18785,7 +18778,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Das ergibt echt keinen Sinn...",
   },
   [10673] = {
-    ["D"] = "Gnomus weiß von dem riesigen Dimetrodon und will ihn aufessen! Er muss von irgendwoher erfahren haben, was ich durch sein Arkanoskorp gesehen habe. Nun, wir haben keine Zeit für Erklärungen. Er ist verrückt, und diese Verrücktheit könnte uns das kosten, was einem feuerfesten Anzug am Nächsten kommt.$B$BKehrt zurück zum Lavastrom in der Nähe von Baa\'ri und findet Teufelsflosse den Großen. Bringt mir seinen Balg!$B$BVersucht nicht mit mir zu diskutieren, $N. Darüber bin ich längst hinaus.",
+    ["D"] = "Forscher Tiorus in Schattenmond im Schattenmondtal möchte, dass Ihr Teufelsflosse den Großen tötet und Teufelsflosses Balg beschafft.",
     ["O"] = "Forscher Tiorus in Schattenmond im Schattenmondtal möchte, dass Ihr Teufelsflosse den Großen tötet und Teufelsflosses Balg beschafft.",
     ["T"] = "Teufelsflosse der Große",
   },
@@ -19285,7 +19278,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Blutelf + Riese = ???",
   },
   [10775] = {
-    ["D"] = "Die Greifenreiter müssen zur Wildhammerfeste zurückkehren, um sich auf die nächste Phase unseres Angriffs vorzubereiten. Ich benötige von Euch die Wappenröcke, die diese Blutelfen tragen.$B$BWenn Ihr genügend Wappenröcke gesammelt habt, benutzt die Leuchtpistole der Wildhämmer, um einen Greifenreiter zu rufen. Seid ihr bereit für ein wenig Spionage, $R?",
+    ["D"] = "The gryphon riders must return to Wildhammer Stronghold to prepare for the next phase of our assault. What I need from you now are the tabards that these blood elves wear.$B$BWhen you have collected enough tabards, call for a gryphon rider using the Wildhammer flare gun. Prepare yourself for a bit of espionage, $r!",
     ["O"] = "Collect 10 Illidari Tabards and then use the Wildhammer Flare Gun to signal another Wildhammer Gryphon Rider.$B$BSpeak with Thane Yoregar at Wildhammer Stronghold in Shadowmoon Valley should you lose your Wildhammer Flare Gun and require a replacement.",
     ["T"] = "Wappenröcke der Illidari",
   },
@@ -19457,7 +19450,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [10810] = {
     ["D"] = "Während ihr die beschädigte Maske betrachtet, hört Ihr Geräusche aus ihrem Inneren kommen. Wenn die Maske nicht beschädigt wäre, könntet Ihr die Geräusche deutlicher hören.$B$BO\'Mally Zapschnapper im Ruuanwald könnte sie vielleicht reparieren.",
     ["O"] = "Bring the Damaged Mask to O\'Mally Zapnabber in Ruuan Weald.",
-    ["T"] = "Die beschädigte Maske",
+    ["T"] = "Beschädigte Maske",
   },
   [10811] = {
     ["D"] = "Ihr Patron schwebt hoch oben in den Lüften, $N. Vielleicht hat die Freundlichkeit, die Ihr seinen Kindern gegenüber gezeigt habt, sein Herz bewegt. Sucht Neltharaku auf und bittet ihn um Hilfe. Zusammen könnt Ihr vielleicht die Not der Netherschwingendrachen beenden.$B$B<Mordenai zeigt in den Himmel.>$B$BFliegt hoch, $C.",
@@ -19467,7 +19460,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [10812] = {
     ["D"] = "Gut, jetzt sollte sie funktionieren. Was das ist, fragt Ihr? Nun, es ist ein Kommunikationsgerät. Diese Schafsköpfe kommunizieren so miteinander. Ihr wisst schon, die Brennende Legion! Ich würde Euch empfehlen, die Maske zu Wildfürst Antelarion zu bringen. Er geht dort drüben auf und ab. Immer in Bewegung!$B$BNun los mit Euch! Er versucht schon eine ganze Weile eine von den Masken in die Finger zu bekommen.",
     ["O"] = "Bring the Mystery Mask to Wildlord Antelarion in Ruuan Weald.",
-    ["T"] = "Die geheimnisvolle Maske",
+    ["T"] = "Geheimnisvolle Maske",
   },
   [10813] = {
     ["D"] = "$N, Ihr habt im Nest der Orcs des Blutenden Auges, im gefürchteten Zeth\'Gor, Euren Heldenmut bewiesen und überlebt! Vielleicht seid Ihr stark genug, um mir zu helfen, denn ich werde in den Geist ihres finstersten Hexers blicken, Grillok!$B$BNehmt diesen Splitter. Benutzt ihn, um ein Auge von Grillok zu behexen und bindet es an Euch. Kehrt dann zu mir zurück und nähert Euch meinem Kessel... er wird das Auge anziehen.$B$BGeht, $N. Und seid auf der Hut! Ein Auge von Grillok wird Euch an Eure Feinde verraten, wenn es auch nur die geringste Gelegenheit dazu bekommt!",
@@ -19502,7 +19495,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [10819] = {
     ["D"] = "Ich habe eine ganz besondere Aufgabe für Euch, $N. Ich möchte, dass Ihr Euch in das Konstruktionslager: Groll östlich von hier einschleicht. Ihr werdet die Gasmaske der Teufelsbrut tragen müssen, wenn Ihr das Lager betretet, um den Legionskommunikator zu suchen. Sobald Ihr das Kommunikationsgerät gefunden habt, benutzt es. Sprecht mit demjenigen, der sich auf der anderen Seite meldet.$B$BWenn alles klappt, könnt Ihr dem Dämon ein Märchen auftischen! Versucht, ihm zu erzählen, dass im Konstruktionslager: Groll ein Aufstand ausgebrochen ist.$B$BViel Glück, $C.",
     ["O"] = "Wear the Felsworn Gas Mask and use the Legion Communicator at Forge Camp: Anger.",
-    ["T"] = "Die Gasmaske der Teufelsbrut",
+    ["T"] = "Gasmaske der Teufelsbrut",
   },
   [10820] = {
     ["D"] = "Mit jedem Moment, in dem ich Stille höre, rückt Ihr dem Tod ein Stückchen näher! SPRECHT!$B$BWas? Das Lager revoltiert? Das kann nicht wahr sein! Meine Diener würden es niemals wagen, meine Autorität zu untergraben.$B$BNun gut, jeder Einzelne von ihnen wird für diesen Verrat bezahlen... teuer bezahlen! Bringt sie alle zum Schweigen! Meldet Euch bei mir zurück, wenn Ihr meinen Befehl ausgeführt habt, oder ich werde mich um Euch kümmern.",
@@ -19817,12 +19810,12 @@ pfDB["quests"]["deDE-tbc"] = {
   [10882] = {
     ["D"] = "<Ein Missklang ertönt in A\'dals \'Stimme\'.>$B$BPrinz Kael\'thas hat seine Wärter schlampig ausgewählt, und nun brechen die Wesenheiten, die in der Arkatraz eingesperrt waren, aus.$B$BBesonders eine davon, ein Diener der Alten Götter, der als Herold Horizontiss bekannt ist, versucht, die Vision seines Meisters von der Eroberung aller Welten in diesem Universum in die Tat umzusetzen.$B$B$N, Ihr dürft nicht zulassen, dass er entkommt. Kehrt zur Festung der Stürme zurück und begebt Euch in die Arkatraz. Tötet Herold Horizontiss, bevor es zu spät ist!",
     ["O"] = "Ihr wurdet beauftragt, zur Arkatraz in der Festung der Stürme zu reisen und Herold Horizontiss zu töten. Kehrt danach zu A\'dal auf der Terrasse des Lichts in Shattrath zurück.",
-    ["T"] = "Herold der Verdammnis",
+    ["T"] = "Verdammnisbote",
   },
   [10883] = {
     ["D"] = "Ihr habt Euch in großen Taten bewiesen, $N. Eure Entdeckung der Litanei der Verdammnis und Kael\'thas\' Rolle dabei sind für unsere Sache von äußerster Wichtigkeit. Sollte Kael\'thas die Litanei benutzen, würde der kleine Rest, der noch von dieser Welt übrig ist, in sich zusammenfallen.$B$BA\'dal ist davon überzeugt, dass Kael aufgehalten werden muss und ist nun auf der Suche nach Abenteurern, die sich seinen Prüfungen unterziehen möchten. Die Naaru werden denjenigen, die ihre Stärke beweisen, ihre Gunst gewähren.$B$B<Khadgar nickt.>$B$BA\'dal erwartet Euch...",
     ["O"] = "Sprecht mit A\'dal in Shattrath.",
-    ["T"] = "Der Schlüssel der Stürme",
+    ["T"] = "Schlüssel der Stürme",
   },
   [10884] = {
     ["D"] = "Four trials you must pass before you are deemed worthy by the naaru.$B$BWithin the Shattered Halls of Hellfire Citadel are three of your people. They are held there by the merciless one, Kargath Bladefist. He seeks to execute them as a sign of his virility and power. You must save these prisoners before such an atrocity can come to pass. As proof of deed, bring me the unused axe of the executioner. It must not have a drop of blood on its blade!",
@@ -19957,7 +19950,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [10911] = {
     ["D"] = "Jetzt, da unsere Munition der Brennenden Legion Schaden zufügen kann, ist es an der Zeit, dass Ihr sie benutzt.$B$BEs gibt zwei Warptore, die für die Teleportation und die Verbesserung der Schrecken der Leere benutzt werden. Eines befindet sich im Süden, das andere im Norden. Beide liegen in der Reichweite einer Teufelskanone.$B$BKämpft Euch bis zu den Teufelskanonen durch und benutzt die naturalisierte Munition, um die Kontrolle über die Kanonen zu erlangen und die Warptore zu zerstören.$B$BHütet Euch jedoch von den Verteidigern, die ausschwärmen werden, um die Kanone anzugreifen!",
     ["O"] = "Use the Naturalized Ammunition to take control of the Death\'s Door Fel Cannons.  Use them to destroy both the South Warp-Gate and the North Warp-Gate.  Then, use the Druid Signal to call out to an Evergrove Druid to report your success.",
-    ["T"] = "Feuer frei!",
+    ["T"] = "Feuert nach Belieben!",
   },
   [10912] = {
     ["D"] = "Baelmon der Hundehetzer muss sterben! Er ist es, der das Ritual vollzieht, mit dem das Portal aufrechterhalten wird!$B$BDas Portal der Schwelle des Todes befindet sich am nördlichen Ende der Schlucht. Wenn Ihr es gefunden habt, findet Ihr auch Baelmon.$B$BIhr werdet dabei Hilfe brauchen, also nehmt diesen Stab mit. Benutzt ihn, wenn Ihr gegen den Hundehetzer kämpft, und ein paar meiner Freunde werden Euch zu Hilfe eilen.$B$BKehrt zu Wildfürst Antelarion zurück, wenn Ihr Baelmon besiegt habt.$B$BUnd $N, vielen Dank für alles, was Ihr unseretwegen auf Euch genommen habt.",
@@ -20010,7 +20003,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Terokkarantula",
   },
   [10922] = {
-    ["D"] = "Heda! Ihr seht aus, als könntet Ihr gut auf Euch selbst aufpassen, $R. Meine Truppe und ich hier sind auf der Suche nach einem Leibwächter, der auf uns aufpasst, während wir zu einer Ausgrabungsstätte im Norden gehen. Die Bezahlung ist ziemlich gut und Ihr müsst nur schauen, dass keine fiese Kreatur mich oder meine Angestellten tötet.$B$BWenn Ihr es heil zurückschafft ohne irgendwelche Todesopfer, wird Zwergowitz da drüben Euch bezahlen.",
+    ["D"] = "Begleitet Letoll und seine Truppe und beschützt sie, während sie ihre Ausgrabung durchführen. Kehrt danach zu Zwergowitz beim Basislager der Sha\'tari zurück.",
     ["O"] = "Begleitet Letoll und seine Truppe und beschützt sie, während sie ihre Ausgrabung durchführen. Kehrt danach zu Zwergowitz beim Basislager der Sha\'tari zurück.",
     ["T"] = "In den Knochen wühlen",
   },
@@ -20050,7 +20043,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Stampfen",
   },
   [10930] = {
-    ["D"] = "Ich hatte Recht! Die Kadaver, die Ihr mir gebracht habt, stammen von heranwachsenden Würmern! Wisst Ihr, was das bedeutet? Das bedeutet, dass es irgendwo da draußen noch einen großen geben muss! Wenn wir ihm das richtige Futter anbieten, können wir ihn sicher hervorlocken. Mal überlegen... etwas Großes! Ja!$B$BIch erinnere mich daran, hier auf der anderen Seite der Knochenwüste ein paar Grollhufe gesehen zu haben. Geht dorthin und tötet einen von ihnen. Benutzt die Trommel, sobald Ihr ihn erlegt habt. Hoffentlich kommt der große Wurm dann heraus, um zu fressen. Bringt mir seine Organe, wenn Ihr es schafft ihn zu töten!",
+    ["D"] = "Zwergowitz beim Basislager der Sha\'tari in der Knochenwüste möchte, dass Ihr ihm riesige Knochenwurmorgane bringt.$B$BBringt auch den Stampfer zu ihm zurück.",
     ["O"] = "Zwergowitz beim Basislager der Sha\'tari in der Knochenwüste möchte, dass Ihr ihm riesige Knochenwurmorgane bringt.$B$BBringt auch den Stampfer zu ihm zurück.",
     ["T"] = "Der große Knochenwurm",
   },
@@ -20325,7 +20318,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Sprecht mit dem Oger",
   },
   [10985] = {
-    ["D"] = "Stellt sicher, dass Akama und Maiev den Schwarzen Tempel betreten, nachdem Xi\'ris Streitkräfte ihr Ablenkungsmanöver durchgeführt haben.",
+    ["D"] = "<Licht pulsiert um Xi\'ri herum während die Streitkräfte der Aldor und der Seher seine Befehle ausführen. Xi\'ris Armee ist bereit, Illidans Streitkräfte zurückzudrängen und Akama das nötige Ablenkungsmanöver zu verschaffen. Der Naaru wartet auf Eure Aufforderung den Angriff durchzuführen.>",
     ["O"] = "Stellt sicher, dass Akama und Maiev den Schwarzen Tempel betreten, nachdem Xi\'ris Streitkräfte ihr Ablenkungsmanöver durchgeführt haben.",
     ["T"] = "Ein Ablenkungsmanöver für Akama",
   },
@@ -20665,7 +20658,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Erhebt Euch, Aufseher!",
   },
   [11054] = {
-    ["D"] = "Ihr seid also der neue Aufseher, was? Tja, es gibt da eine Sache, die jeder gute Aufseher braucht: die richtige Ordnungswaffe. Bevor Ihr dort hinausgehen und diesen Peons etwas Verstand einprügeln könnt, braucht Ihr Eure \"Waffe\". Jeder Aufseher muss die Materialien zur Herstellung seiner eigenen \"Waffe\" sammeln und Ihr seid da keine Ausnahme.$B$BIch benötige Knotenhautleder und den gehärteten Balg von Tyrantus. Ihr findet Tyrantus in der Biokuppel Fernfeld, welche in der nördlichen Gegend des Nethersturms zu finden ist.",
+    ["D"] = "Chefvorarbeiter Lehmklump beim Basislager des Drachenmals im Schattenmondtal möchte, dass Ihr ihm 10 Einheiten Knotenhautleder und 1 gehärteten Balg von Tyrantus bringt.",
     ["O"] = "Chefvorarbeiter Lehmklump beim Basislager des Drachenmals im Schattenmondtal möchte, dass Ihr ihm 10 Einheiten Knotenhautleder und 1 gehärteten Balg von Tyrantus bringt.",
     ["T"] = "Aufsehen und Ihr: Die richtige Wahl treffen",
   },
@@ -20680,7 +20673,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Hazziks Handel",
   },
   [11057] = {
-    ["D"] = "Wir wissen Euren Eifer, uns hier in Ogri\'la unterstützen zu wollen, sehr zu schätzen, $C. Doch bevor wir Euer großzügiges Angebot annehmen können, müssen wir Euch zunächst um einen Gefallen bitten.$B$BUnsere Brüder dort unten sind Sklaven der Söhne von Gruul. Bitte, sprecht mit Mog\'dorg dem Weisen. Er ist der Anführer einer Widerstandsbewegung der dort heimischen Oger gegen die Gronn.$B$BIhr findet ihn auf dem Turm, auf der östlichen Seite der Arena des Zirkels des Blutes.",
+    ["D"] = "We commend your zeal in wanting to help out here in Ogri\'la, $c.  However, we have a favor to ask of you before we can accept your assistance.$B$BDown below our brethren are enslaved to the Sons of Gruul.  Please, speak with Mog\'dorg the Wizened, who is leading an ogre resistance against their gronn masters.$B$BSeek him out atop the tower on the eastern side of the Circle of Blood arena.",
     ["O"] = "Chu\'a\'lor has asked you to speak with Mog\'dorg the Wizened atop one of the towers just outside the Circle of Blood in the Blade\'s Edge Mountains.",
     ["T"] = "Schwierigkeiten in der Tiefe",
   },
@@ -20745,7 +20738,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Drachenmalrennen: Schwadronskommandant Ichman",
   },
   [11070] = {
-    ["D"] = "Drei Jahre lang Blut, Schweiß und Tränen. Hauptsächlich Tränen... Es ist erstaunlich, wie viele Tränen selbst ein hartgesottener Soldat vergießt, wenn es im Krieg zur Sache geht.$B$B\"Sie springen mit ihren Pferden in unseren Turm!\" \"Warum muss die feindliche Basis so gut verteidigt sein?\" \"Verdammt, der Feind hat die Heilerhütte erobert, ich mache mich vom Acker!\"$B$BVerdammte Feiglinge...$B$BKaum war das Dunkle Portal offen, hab\' ich die Möglichkeit beim Schopfe gepackt und mich aus dem Land der Weicheier verabschiedet. Jetzt arbeite ich als Toppilot für die Jungs des Drachenmals. Wenn Ihr also der Toporc werden wollt, müsst Ihr mich erst einmal schlagen.$B$BEs geht los, sobald Ihr bereit seid.",
+    ["D"] = "Folgt Schwadronskommandant Mulverick und versucht auf Eurem Reittier zu bleiben. Solltet Ihr Schwadronskommandant Mulverick besiegen, berichtet Ja\'y Nosliw beim Basislager des Drachenmals im Schattenmondtal von Eurem Erfolg.",
     ["O"] = "Folgt Schwadronskommandant Mulverick und versucht auf Eurem Reittier zu bleiben. Solltet Ihr Schwadronskommandant Mulverick besiegen, berichtet Ja\'y Nosliw beim Basislager des Drachenmals im Schattenmondtal von Eurem Erfolg.",
     ["T"] = "Drachenmalrennen: Schwadronskommandant Mulverick",
   },
@@ -20870,7 +20863,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Bedrohung von oben",
   },
   [11097] = {
-    ["D"] = "Nehmt diese Medaillen der Seher. Mor\'ghor wird einen Siegesbeweis sehen wollen, wenn all das hier vorüber ist. Er wird sie als Beute von den gefallenen Soldaten der Seher wiedererkennen.$B$BJetzt gilt es noch das Leuchtsignal abzufeuern, um die Räuber des Drachenmals herbeizurufen. Sobald Ihr bereit seid, werden wir sie niederschmettern. Gebt mir einfach den Befehl.",
+    ["D"] = "Helft Kommandant Hobb und den Sehern bei der Verteidigung des Sanktums der Sterne. Sobald alle Streitkräfte des Drachenmals bezwungen wurden, kehrt zu Oberanführer Mor\'ghor beim Basislager des Drachenmals mit den Medaillen der Seher zurück.",
     ["O"] = "Helft Kommandant Hobb und den Sehern bei der Verteidigung des Sanktums der Sterne. Sobald alle Streitkräfte des Drachenmals bezwungen wurden, kehrt zu Oberanführer Mor\'ghor beim Basislager des Drachenmals mit den Medaillen der Seher zurück.",
     ["T"] = "Die tödlichste Falle aller Zeiten",
   },
@@ -20920,7 +20913,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Nicht mehr Verteidiger",
   },
   [11107] = {
-    ["D"] = "Ich bin der Überbringung einer an Euch gerichteten Nachricht nicht einmal würdig, Sire. Bitte verzeiht dieses ungebührliche Benehmen. Oberanführer Mor\'ghor möchte, dass Ihr Euch umgehend bei ihm meldet!",
+    ["D"] = "Sprecht mit Oberanführer Mor\'ghor beim Basislager des Drachenmals im Schattenmondtal.",
     ["O"] = "Sprecht mit Oberanführer Mor\'ghor beim Basislager des Drachenmals im Schattenmondtal.",
     ["T"] = "Verneigt Euch vor dem Hochlord",
   },
@@ -21265,9 +21258,9 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Das Spiel mit der Puppe",
   },
   [11196] = {
-    ["D"] = "Die Amani haben ihre Streitmacht wiederaufgebaut und einen neuen Kriegsherrn hervorgebracht, der sie anführt, $N. Der nennt sich Daakara der Unbesiegbare, aber wir wollen doch mal sehen, ob er seinem Namen gerecht wird.$B$BDu musst erst all seine Handlanger aus dem Weg räumen, bevor du Daakara gegenübertreten kannst. Besieg ihn und bereite den Ambitionen der Zandalari und der Amani ein Ende.",
+    ["D"] = "Hör zu, Mann, da gibt\'s noch was anderes, was du für den alten Prigmon tun könntest.$B$BZungam, mein alter Taugenichts von Vetter, steckt in Zul\'Aman fest. Er lebt auch noch - ich habe sein Rauchsignal erst letzte Nacht geseh\'n!$B$BIch sollte ihn eigentlich verrott\'n lass\'n, dafür, dass er mich in dieses ganze Schlamassel verwickelt hat... allerdings schuldet er mir noch eine Stange Geld.$B$BTu, was du kannst, um ihn da rauszuhol\'n, das Abkassier\'n kannste mir überlass\'n!",
     ["O"] = "Besiegt den neuen Kriegsherrn der Amani, Daakara.",
-    ["T"] = "Der Kriegsherr der Amani",
+    ["T"] = "TEMP X",
   },
   [11198] = {
     ["D"] = "Meeresungeheuer hin oder her, wir werden auf keinen Fall die Sicherheit unserer Schiffe aufs Spiel setzen. Ich habe unsere besten Schützen angewiesen, sich auf eine Begegnung mit Tethyr vorzubereiten. Die Artilleristen haben die Verteidigung der Docks mit drei Mörsern verstärkt.$B$BIch werde den Befehl zum Entzünden der Leuchtturmlampe erteilen. Falls Tethyr angreift, müsst Ihr die Mörser bedienen und das Biest bezwingen, bevor es alle Schützen tötet. Ich würde nicht zu lange an einer Stelle bleiben. Die Verwendung der Mörser wird mit Sicherheit die Aufmerksamkeit des Ungeheuers erregen.",
@@ -21963,6 +21956,21 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Kael\'thas\' finstere Pläne konnten unseren größten Anstrengungen zum Trotz ausgeführt werden. Der Sonnenbrunnen wurde wieder entfacht, um die Ankunft des Betrügers vorzubereiten.$B$BDer Gegenstand, der vor mir steht und über dem A\'dal schwebt, repräsentiert den derzeitigen Status der Verteidigungsanlagen des Sonnenbrunnens. Es wurden riesige Barrieren errichtet, um unsere Angriffe auf die inneren Hallen zu behindern. Wenn unsere Welt jemals Hilfe benötigen sollte, dann wäre es jetzt.$B$BMeldet Euch bei Erzmagier Ne\'thul auf der Insel von Quel\'Danas nördlich von Quel\'Thalas.",
     ["O"] = "Meldet Euch bei Erzmagier Ne\'thul auf der Insel von Quel\'Danas, nördlich von Quel\'Thalas.$B$BSprecht mit Flugmeistern in Eisenschmiede und Silbermond, sie werden Euch dorthin bringen.",
     ["T"] = "Der Betrüger betritt die Bühne...",
+  },
+  [11551] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to deactivate Agamath, The First Gate",
+    ["O"] = "Bring to me the essence of immortals, found only on the most powerful beings of this world! With the essence in hand, my mages will be able to dismantle Agamath, ultimately collapsing the gateway and unlocking the way further into the sunwell.",
+    ["T"] = "Agamath, the First Gate",
+  },
+  [11552] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to break Rohendor, the Second Gate",
+    ["O"] = "Bring to me the essence of immortals, found only on the most powerful beings of this world! Rohendor cannot withstand the combined force of our mages!",
+    ["T"] = "Rohendor, the Second Gate",
+  },
+  [11553] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to eventually dismantle Archonisus, the Final Gate",
+    ["O"] = "Bring to me the essence of immortals ÔÇö found only on the most powerful beings of this world ÔÇö and Archonisus is sure to crumble!",
+    ["T"] = "Archonisus, the Final Gate",
   },
   [11554] = {
     ["D"] = "",
@@ -22849,6 +22857,11 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Trefft A.L.K fünfmal mit dem Krug alkoholfreies Braufestbier und sprecht dann mit Bissel Schnellhub.",
     ["T"] = "Haut weg das Zeug!",
   },
+  [12192] = {
+    ["D"] = "The Dark Irons took a beating!  As they rushed back to the Grim Guzzler, a portion of their transport fell off.  More importantly, you managed to keep the camp safe... today.$b$bHead over to Bizzle and explain your heroic triumph over the Dark Iron dwarves.",
+    ["O"] = "Talk to Bizzle Quicklift in the Brewfest camp.",
+    ["T"] = "This One Time, When I Was Drunk...",
+  },
   [12193] = {
     ["D"] = "Beim Braufest geht es nicht nur um Widderrennen, sondern auch ums Trinken! Solltet Ihr einen Moment Zeit haben, dann bringt diesen Gutschein zu Belbi Blitzknips. Sie hält sich irgendwo im hinteren Teil des Braufestlagers auf. Falls Ihr sie nicht sehen könnt, keine Sorge, sie wird Euch mit Sicherheit entdecken.$B$BNaja, bringt Ihr auf jeden Fall diesen Gutschein für Euren kostenlosen Braufestkrug. Sie kümmert sich außerdem um alle sonstigen Braufestgeschäfte.",
     ["O"] = "Löst Euren Gutschein für einen Braufestkrug bei Belbi Blitzknips im Braufestlager ein.",
@@ -22870,7 +22883,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Bier des Monats e.V.",
   },
   [12318] = {
-    ["D"] = "$N, unsere Spione haben ein teuflisches Komplott ans Licht gebracht! Die Dunkeleisenzwerge wollen unser geliebtes Braufest dem Erdboden gleichmachen!$B$BCoren Düsterbräu, Oberhaupt einer abtrünnigen Familie von Braumeistern, hat die Zwerge der Schwarzfelstiefen mobilisiert – zudem werden wir auch noch ständig von ihren Maulwurfmaschinen angegriffen.$B$BUnser Spion befindet sich im \"Grimmigen Säufer\", einer Taverne im Inneren des Schwarzfels. Er wird mehr über Düsterbräus Komplott wissen.",
+    ["D"] = "Sprecht mit dem Spion des Braufests im Grimmigen Säufer in den Schwarzfelstiefen.",
     ["O"] = "Sprecht mit dem Spion des Braufests im Grimmigen Säufer in den Schwarzfelstiefen.",
     ["T"] = "Rettet das Braufest!",
   },
@@ -22885,7 +22898,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Düsterbräus Düsterbräu",
   },
   [12513] = {
-    ["D"] = "Don Carlos hat Euch versehentlich dazu herausgefordert, sein jüngeres Ich im Alten Hügelland zu besiegen. Bringt ihm anschließend seinen Hut als Beweis. Er befindet sich in Tanaris.",
+    ["D"] = "Mein Hut? Ja, er sieht von weitem etwas ungewöhnlich aus, ich weiß... nur wenige Schneider wissen, wie man sie anfertigt.$B$BAls ich noch jung und heißblütig war, galt er als eine Art Siegestrophäe. Viele kamen und wollten ihn mir streitig machen... doch niemand schaffte es.$B$BAch ja, lange ist\'s nun her. Doch heute bin ich ein alter Mann: Ich trinke, ich gehe fischen, doch ich duelliere mich nicht mehr.",
     ["O"] = "Don Carlos hat Euch versehentlich dazu herausgefordert, sein jüngeres Ich im Alten Hügelland zu besiegen. Bringt ihm anschließend seinen Hut als Beweis. Er befindet sich in Tanaris.",
     ["T"] = "Netter Hut...",
   },

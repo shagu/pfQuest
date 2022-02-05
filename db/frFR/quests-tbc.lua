@@ -1,6 +1,6 @@
 pfDB["quests"]["frFR-tbc"] = {
   [1] = {
-    ["D"] = "$Tpunk;!  Kill Kobold Vermin, 2 of em. NEW TEST AGAIN",
+    ["D"] = "$Tpunk ;! Tuez Kobold Vermin, 2 d\'entre eux.NOUVEAU TEST ENCORE",
     ["O"] = "Tuez au moins deux Vermines kobolds.",
     ["T"] = "La quête de Kanrethad",
   },
@@ -21,7 +21,7 @@ pfDB["quests"]["frFR-tbc"] = {
   [7] = {
     ["D"] = "Votre premier travail est de faire un peu de nettoyage, $N. Un clan de kobolds a envahi les bois, au nord. Allez là-bas et attaquez ces vermines. Affaiblissez-les assez, pour qu\'un jour nous puissions les repousser hors de Comté-du-Nord.",
     ["O"] = "Tuez 6 Vermines kobolds, puis revenez voir le Maréchal McBride.",
-    ["T"] = "Kobold Camp Cleanup",
+    ["T"] = "Le nettoyage du camp des kobolds (test de programmation)",
   },
   [8] = {
     ["D"] = "Hé ! Voudriez-vous faire une faveur à un homme qui a eu plus que sa part de combats contre des zombies et des araignées ?$B$BJ\'ai ici une lettre qui doit être livrée à Brill... à une aubergiste du nom de Renée quelque chose. Enfin c\'est pas important son nom de famille.$B$BBref, c\'est un joli petit coin, plein de personnes victimes de la peste qui essayent de trouver leur voie en ce bas monde. De plus, c\'est un bon endroit pour se reposer. Vous devriez aller voir... D\'autant que je vous payerai bien.",
@@ -799,7 +799,6 @@ pfDB["quests"]["frFR-tbc"] = {
   },
   [202] = {
     ["D"] = "Vous avez montré votre valeur à maintes reprises, et vos ressources semblent même concurrencer celles de ce Kurzen en personne. Il se peut que vous représentiez le salut pour notre bande de rebelles… si vous pouvez vous mesurer à Kurzen et le vaincre !$B$BIl contrôle ses hommes depuis les profondeurs de la Réserve. Vous devez y pénétrer, déborder ses défenseurs, puis combattre Kurzen et ses officiers.$B$BAdieu, $N. Mes espoirs et la destinée de mes hommes sont entre vos mains.",
-    ["T"] = "Colonel Kurzen",
   },
   [203] = {
     ["D"] = "Nous combattons désespérément le colonel Kurzen. Non seulement c\'est un habile tacticien, mais nous nous battons à 1 contre 10. Pour survivre, nous devons retourner contre lui ses propres tactiques sournoises.$B$BInvestissez son camp, à l\'est, et tuez ses hommes. Le plus possible. Et ressortez avant que les renforts ne vous attrapent.",
@@ -971,6 +970,7 @@ pfDB["quests"]["frFR-tbc"] = {
   },
   [249] = {
     ["D"] = "Après une longue surveillance, j\'ai découvert les plans de Morganth.$B$BIl recherche la faux d\'Élune… et il se peut même qu\'il l\'ait déjà trouvée ! S\'il se l\'est appropriée, alors les Carmines et le royaume de Hurlevent tomberont bientôt sous son joug.$B$BJe ne suis pas prêt à l\'affronter, mais j\'ai peur qu\'il faille s\'en occuper dès à présent. Vous devez donc pénétrer dans la tour d\'Ilgalar, et combattre Morganth.$B$BRemportez la victoire, et apportez-moi son pendentif des ombres. Si vous réussissez, le royaume vous sera grandement redevable.",
+    ["O"] = "Tuer Morganth,$B$Bpuis rapporter son Pendentif des ombres à Théocritus, à la Tour d\'Azora dans la forêt d\'Elwynn.",
     ["T"] = "Grand magus Doane",
   },
   [250] = {
@@ -1378,7 +1378,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Ceci est une lettre écrite par Thurman, l\'aîné des fils de Gregor Agamand. Elle est adressée à Yvette Farthing, bien qu\'il semble qu\'elle n\'ait pas atteint sa destinataire…",
   },
   [363] = {
-    ["D"] = "Il était temps de se réveiller. Nous nous apprêtions à vous jeter au feu avec les autres, mais il semble que vous ayez réussi.$B$BJe suis Mordo, le fossoyeur de la crypte du Glas. Et vous n\'êtes plus l\'esclave du roi-liche.$B$BAllez parler au prêtre des ombres Sarvis dans la chapelle, en bas de la colline, il vous en dira plus sur ce que vous devez savoir.$B$BPour sortir de la crypte, prenez l\'escalier qui monte vers la surface. Ensuite, pour trouver Sarvis, prenez la route qui descend vers la chapelle.",
+    ["D"] = "About time you woke up. We were ready to toss you into the fire with the others, but it looks like you made it.$b$bI am Mordo, the caretaker of the crypt of Deathknell. And you are the Lich King\'s slave no more.$b$bSpeak with Shadow Priest Sarvis in the chapel at the base of the hill, he will tell you more of what you must know.",
   },
   [364] = {
     ["D"] = "Depuis le jour où le premier Réprouvé a rampé hors de sa tombe, nous sommes en guerre contre le roi-liche et les troupes du Fléau : leurs armées de morts-vivants animés par la nécromancie, des bêtes immondes venues du nord et des spectres tourmentés.$B$BLe roi-liche n\'occupe plus le Trône de glace, mais la partie nord du village est toujours envahie par ses esclaves. Anéantissez-les, n\'ayez aucune pitié, même s\'ils étaient autrefois nos frères et nos sœurs.",
@@ -1560,7 +1560,6 @@ pfDB["quests"]["frFR-tbc"] = {
   [412] = {
     ["D"] = "Je ferais peut-être mieux de retourner à Gnomeregan pour mettre au point un remède pour les gnomes irradiés, mais Kharanos est la ville où j\'habite, et je ne veux pas qu\'elle tombe aux mains des Crins-de-Givre. Je participe à l\'effort de guerre en réparant et en entretenant des chars à vapeur.$B$BPour une raison nébuleuse, les charognards crins-de-givre se sont mis à collectionner les engrenages gyromécaniques dont j\'ai besoin pour effectuer mes réparations. Ils sont éparpillés le long du front Crins-de-givre, au sud-est de la ville. Vous voulez bien m\'aider à récupérer ces engrenages ?",
     ["O"] = "Apportez 8 Engrenages gyromécaniques à Esbrouf Fulgurouage.",
-    ["T"] = "Operation Recombobulation",
   },
   [413] = {
     ["D"] = "J\'aimerais que mon frère Wellart essaye ma nouvelle Brune scintillante. C\'est un montagnard dont la garnison est la tour de garde sud, une des deux tours au bord du Loch Modan.$B$BIl n\'est peut-être pas un brasseur comme le reste des Brasselorge mais il aime boire une bonne bière et je sais qu\'il appréciera celle-ci.$B$BPouvez-vous lui porter ce tonneau de Brune scintillante pour moi ?",
@@ -1907,6 +1906,7 @@ pfDB["quests"]["frFR-tbc"] = {
   },
   [503] = {
     ["D"] = "D\'après les documents que vous avez rapportés, Gol\'dir est retenu dans une grande base du Syndicat, plus au nord, très certainement dans les montagnes d\'Alterac. Il est captif depuis trop longtemps et doit absolument être libéré.",
+    ["T"] = "[PÉRIMÉ]Gol\'dir",
   },
   [504] = {
     ["O"] = "Tuez 10 Combattants Cassecrête, puis retournez voir le Maréchal Senterouge, à Austrivage.",
@@ -2092,7 +2092,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "La bataille de Hautebrande",
   },
   [551] = {
-    ["D"] = "Ce parchemin est sous l\'effet d\'un sort qui le rend indéchiffrable. Mais un mot peut être lu, en haut du papier :$B$B$BNagaz$B$B",
+    ["D"] = "Ce parchemin est sous l\'effet d\'un sort qui le rend indéchiffrable. Mais un mot peut être lu, en haut du papier :$B$BNagaz$B$",
     ["O"] = "Apporter le Parchemin ensorcelé à l\'Erudit Dibbs à Austrivage, aux Contreforts de Hautebrande.",
   },
   [552] = {
@@ -4602,6 +4602,7 @@ pfDB["quests"]["frFR-tbc"] = {
   },
   [1260] = {
     ["D"] = "Je suis en train de créer une nouvelle carte pour le restaurant. Elle sera composée de plats typiques sur un thème « bayou ». Je pense que ma clientèle au Solitaire Bleu va l\'adorer !$B$BJ\'ai envoyé mon neveu Morgan à Theramore, une ville au bord du marécage d\'Âprefange. Il collecte des recettes locales et j\'ai besoin de savoir ce qu\'il a déjà trouvé.$B$BLe voyage pour Theramore est long. Trop long pour moi. Mais je parie que quelqu\'un d\'aussi jeune que vous, $C, sauterait sur une occasion de voyager, non ?",
+    ["T"] = "[PÉRIMÉ]Morgan Stern",
   },
   [1261] = {
     ["D"] = "Maudit Bourbecoque ! Tu ne peux pas tuer Marg ! Ah, mais je suis mort. Alors il doit m\'avoir tué...$B$BMais ma mission ! Ma mission ! Vous, $N, devez achever ma mission.$B$BAlors que j\'étais près de Theramore, j\'ai espionné un groupe de soldats de l\'Alliance qui campaient sur la plage. Un de ces soldats portait un pendentif... Un pendentif avec plus de pierres précieuses que dans les rêves d\'un soldat !$B$BCette nuit-là, je me suis glissé dans leur camp et j\'ai volé le pendentif, mais au retour à la base, un homme-crabe Bourbecoque m\'a tué !$B$B$N, vous devez le retrouver et récupérer le pendentif !",
@@ -4692,10 +4693,12 @@ pfDB["quests"]["frFR-tbc"] = {
   [1301] = {
     ["D"] = "Avant de travailler ici, au Solitaire bleu, j\'ai été formé par l\'un des meilleurs chefs cuisiniers et aubergistes que je connaisse. Il s\'appelait James Hyal. Tout ce que j\'ai et tout ce que j\'ai appris, je le lui dois.$B$BJe me demande ce qu\'il devient. Son frère Vincent et lui sont allés travailler dans une auberge du port de Menethil, mais je suis sans nouvelles depuis longtemps.$B$BSi vous passez dans le coin, donnez-lui le bonjour de ma part, d\'accord ?",
     ["O"] = "Allez voir Vincent Hyal au Port de Menethil.",
+    ["T"] = "[PÉRIMÉ]James Hyal",
   },
   [1302] = {
     ["D"] = "Mon frère James a accompagné dame Portvaillant lorsqu\'elle a traversé les océans. Les dernières nouvelles disaient que le calme était revenu là-bas et que James avait monté une auberge quelque part sur le continent. Où qu\'il soit, je suis sûr que ses affaires sont florissantes. C\'est un excellent chef cuisinier !$B$BJe suis sans nouvelles de lui depuis un bon moment. Trop de travail avec son auberge, je suppose. Mais le greffier à Theramore a peut-être plus de renseignements. Cherchez-le en haut de ce donjon près du centre de la ville. Comment s\'appelle-t-il déjà... Ah oui, la Citadelle de Theramore.",
     ["O"] = "Parler au greffier Lendry à la citadelle de Theramore.",
+    ["T"] = "[PÉRIMÉ]James Hyal",
   },
   [1318] = {
     ["D"] = "Maintenant qu\'z\'êtes le roi, p\'têt\' qu\'vous pourrez récupérer l\'objet précieux des Gordok que le sale elfe qui se dit prince nous a pris. L\'roi avant vous a pas réussi, et celui d\'avant non plus, et aucun roi depuis que Tortheldrin – c\'est le sale elfe – l\'a volé à un vieux roi gordok d\'il y a longtemps !$B$BC\'est le gantelet de puissance gordok. Les vieux, ils disent que seul le vrai roi des Gordok pourra le ramener. Et puis, les vieux, ils disent aussi que le sale elfe est toujours là – si vous le trouvez, vous pourrez porter le gantelet de puissance pour toujours ! Ouais ! Je vais vous montrer !",
@@ -5998,7 +6001,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Aussi vrai que Malton est un crétin, ces gemmes sont encore que\'que part dans Uldaman. Va falloir y r\'tourner. $B$BComme j\'l\'ai d\'jà dit, si les informations que nous avons sont justes, il y a un rubis, un saphir et une topaze. $B$BOù elles sont, comment je l\'saurais ? Si vous avez du bol et qu\'vous trouvez l\'corps du paladin, et qu\'il a pas encore été nettoyé, elles s\'ront p\'têt encore là.",
   },
   [2298] = {
-    ["D"] = "Allez à Hurlevent et cherchez Renzik « le Kriss ».",
+    ["D"] = "Alors on était là, en train de comploter pour la phase III quand soudain, deux crétins de Magni se pointent en parlant de je ne sais quel coup, et d\'arrêter ceux du Cercle secret.$B$BPersonne ne porte la main sur le vieux Barbe-Noire ! La discussion s\'envenime, blabla, paf, et soudain on prononce vot\' nom !$B$BV\'voulez un conseil ? Prenez le premier griffon pour Hurlevent. Une fois là-bas, allez voir Renzik «le Kriss » dans la Vieille ville. C\'est un vieil ami à moi.",
     ["O"] = "Allez à Hurlevent et cherchez Renzik « le Kriss ».",
     ["T"] = "Extorsion royale",
   },
@@ -6181,7 +6184,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apportez 3 Pinces de scorpok, 2 Gésiers de vautour et 1 Poumon de sanglier éclaté au mage de sang Drazial.",
   },
   [2586] = {
-    ["D"] = "Apportez 3 Pinces de scorpok, 2 Gésiers de vautour et 1 Poumon de sanglier éclaté au mage de sang Drazial.",
+    ["D"] = "Vous êtes en vie ! C\'est une bonne nouvelle, vraiment. Je suppose que vous revenez pour avoir plus de préparation de scorpok ?$B$BTrès bien, $N, retournez dans le désert et ne revenez pas avant d\'avoir prélevé trois pinces de scorpok, deux gésiers de vautour et un poumon de sanglier éclaté.",
     ["O"] = "Apportez 3 Pinces de scorpok, 2 Gésiers de vautour et 1 Poumon de sanglier éclaté au mage de sang Drazial.",
   },
   [2601] = {
@@ -6189,7 +6192,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apportez 10 Cerveaux de basilic et 2 Gésiers de vautour au Mage de sang Lynnore.",
   },
   [2602] = {
-    ["D"] = "Apportez 10 Cerveaux de basilic et 2 Gésiers de vautour au Mage de sang Lynnore.",
+    ["D"] = "Votre concentration est déjà retombée ? Il faut faire d\'autres recherches !$B$BOh oui ! Le prix est le même, $N. Retournez dans les terres Foudroyées et revenez me voir avec dix cerveaux de basilic rougepierre et deux gésiers de vautour.",
     ["O"] = "Apportez 10 Cerveaux de basilic et 2 Gésiers de vautour au Mage de sang Lynnore.",
   },
   [2603] = {
@@ -7510,6 +7513,9 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Si vous vous sentez $Gprêt:prête; à fabriquer des objets vraiment faramineux, vous êtes au bon endroit. Je vois bien que vous êtes déjà un ingénieur compétent. Cependant, je souhaite analyser votre travail pour savoir comment introduire les techniques gnomes dans vos travaux futurs. J\'ai besoin des échantillons suivants : six tubes en mithril, une lunette de précision et deux leurres perfectionnés.$B$BSoumettez-moi ces objets et je ferai de vous un ingénieur gnome officiel, ayant accès à tous les schémas !",
     ["O"] = "Apportez 6 Tubes en mithril, 1 Lunette de précision et 2 Leurres perfectionnés à Orguignard Odipnoticus à Baie-du-Butin.",
   },
+  [3646] = {
+    ["D"] = "Nous devons concentrer nos pensées sur le Cercle des appels si nous voulons que vienne le seigneur de la forêt. Nous devons nous dépêcher ! Concentrez vos énergies !",
+  },
   [3661] = {
     ["D"] = "Les indomptables sont des créatures tout à fait imprévisibles, $N. Capables d\'une douceur incroyable, elles sont féroces si on menace ce qui est important à leurs yeux.$B$BOn dit que ces bêtes auraient été créées par Élune, et j\'aimerais savoir si c\'est vraiment le cas.$B$BJ\'ai récemment entendu parler d\'une population d\'indomptables vivant dans les Hinterlands ; des chouettards vicieux, des chouettards primitifs et des chouettards sauvages. Ils hantent les terres sauvages, là-bas. Pourriez-vous aller collecter quelques-unes de leurs plumes pour moi ?",
     ["O"] = "Collecter 15 Plumes d\'Indomptable dans les Hinterlands, pour Erelas Ambreciel au village de Rut\'theran.",
@@ -7715,7 +7721,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Rechercher Gregan Gerbebière au nord de Féralas. Apprendre de lui comment vous pouvez acquérir l\'élixir de Videre, puis retourner voir Donova Antreneige, au Berceau-de-l\'Hiver.",
   },
   [3911] = {
-    ["D"] = "Partir pour les Profondeurs de Rochenoire et trouver 10 Essences des éléments. Commencer vos recherches par les golems et par les créateurs de golems. Vivian Lagrave a aussi marmonné quelque chose à propos d\'élémentaires.",
+    ["D"] = "Il y a du travail pour ceux qui s\'aventurent dans les Profondeurs, $N.$B$BLes Sombrefers peuvent créer des golems extrêmement puissants.$B$BLes premiers rapports de nos espions indiquent que les nains se servent d\'une source d\'énergie unique pour donner à leurs créations une puissance de destruction incomparable.$B$BImaginez simplement ce que nous pourrions faire de nos abominations si nous mettions la main sur cette essence des éléments ! Fouillez les moindres recoins de cette cité s\'il le faut, mais ne revenez pas tant que vous n\'aurez pas découvert cette essence ! Votre récompense sera à la mesure du risque encouru.",
     ["O"] = "Partir pour les Profondeurs de Rochenoire et trouver 10 Essences des éléments. Commencer vos recherches par les golems et par les créateurs de golems. Vivian Lagrave a aussi marmonné quelque chose à propos d\'élémentaires.",
     ["T"] = "Le dernier élément",
   },
@@ -8991,7 +8997,7 @@ pfDB["quests"]["frFR-tbc"] = {
   },
   [5101] = {
     ["D"] = "Bah ! Qu\'est-ce que vous croyez, qu\'il s\'agit d\'une espèce de Quête test ? Je serai là même si y\'a des fautes d\'orthographe !$B$BSi vous croyez que ma quête va être une partie de plaisir alors détrompez-vous !$B$BTuez-moi dix moutons (1933) et ne revenez pas tant que ce n\'est pas fait !",
-    ["O"] = "Tuer 6 moutons pour Benny puis prendre les jambes à son cou !$B$B$B$B$BNon, c\'est une blague... pour ce qui est de courir.",
+    ["O"] = "Tuer 6 moutons pour Benny puis prendre les jambes à son cou !$B$BNon, c\'est une blague... pour ce qui est de courir.",
     ["T"] = "Lee : Quête de l\'ultime épreuve… la mort !",
   },
   [5102] = {
@@ -9386,6 +9392,7 @@ pfDB["quests"]["frFR-tbc"] = {
   [5307] = {
     ["D"] = "Si je ne m\'étends pas avec vous, j\'ai une bonne raison. Les plans pour la création de la grande lame, Corruption, ont été volés par la Garde noire : des unités squelettes d\'élite du baron Vaillefendre.$B$BOui, le baron Vaillefendre de Stratholme.$B$BLe fabricant d\'épées de la Garde noire détient à présent ces plans, et il donnerait sa... non-vie pour les protéger.$B$BTuez-le et rapportez-moi la preuve de votre exploit. Je vous enseignerai alors l\'art de la fabrication de la rapière flamboyante !",
     ["O"] = "Trouver le Fabricant d\'épées de la Garde noire à Stratholme et le tuer. Récupérer l\'Insigne de la Garde noire et retourner auprès de Seril Plaie-du-Fléau.",
+    ["T"] = "la corruption",
   },
   [5321] = {
     ["D"] = "J\'étais parti en direction du poste de Maestra pour rencontrer Liladris Ondelune lorsque je décidai de m\'arrêter et de me reposer un peu. Depuis que je me suis extirpé du Rêve d\'émeraude, j\'ai tout le temps sommeil…$B$B<bâille>$B$BAuriez-vous l\'obligeance de me montrer le chemin ? Je crois que le poste de Maestra est au sud, près de la route d\'Orneval. Cela peut-être dangereux, j\'espère que vous avez des amis pour nous accompagner.$B$BIl se peut que je m\'endorme, alors pour me réveiller, utilisez ma corne, qui est dans ce coffre.",
@@ -10696,7 +10703,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Dirge Hachillico voudrait que vous lui apportiez les objets suivants :$B$B10 Œufs géants. Vous les trouverez sur les Rocs qui hantent Tanaris ou sur toute autre espèce de grand oiseau.$B$B10 morceaux de Chair de palourde piquante. Vous pouvez trouver la chair de palourde sur… les palourdes, naturellement !$B$B20 morceaux de Cheddar affiné. Vous les trouverez dans une fromagerie !$B$BCollectez tous ces objets, puis retournez voir Dirge.",
   },
   [6611] = {
-    ["D"] = "Aller à Gadgetzan, dans le Désert de Tanaris, et parler de votre carrière de cuisinier à Dirge Hachillico.",
+    ["D"] = "Pourquoi vous croire que Zamja peut apprendre autre chose ? Vous tout savoir de cuisine mojo de Zamja et quand même vouloir savoir plus !$B$BZamja peut pas. $R $Ggrassouillet:grassouillette:r; aller à Gadgetzan. Trouver là-bas petit gobelin Dirge. Lui peut aider.$B$BQuand vous faire grande cuisine, vous revenir et apprendre à Zamja, d\'accord ? Allez maintenant !",
     ["O"] = "Aller à Gadgetzan, dans le Désert de Tanaris, et parler de votre carrière de cuisinier à Dirge Hachillico.",
     ["T"] = "Vers Gadgetzan vous allez !",
   },
@@ -10884,7 +10891,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Trouvez un Loup des glaces dans la vallée d\'Alterac. Servez-vous de la Muselière de loup des glaces pour « dompter » la bête. Lorsque ce sera fait, le loup des glaces vous suivra jusqu\'au Maître des écuries Loup-de-givre. Parlez au Maître des écuries Loup-de-givre pour être crédité de cette capture.",
   },
   [7002] = {
-    ["O"] = "J\'ai hâte de faire l\'essai de mon déchiqueteur portatif, $R, mais avant que je ne puisse fabriquer le kit, j\'ai besoin de beaucoup de matériel !$B$BPour être précis, il me faut une montagne de thorium, de mithril et de fer. J\'aurai également besoin d\'une scie à vapeur par unité. Vous les trouverez à la scierie.$B$BAlors que je traînais dans les environs (avant ma capture) j\'ai remarqué une pile de scies à vapeur, au Camp de bûcherons des Foudrepiques.",
+    ["O"] = "Slay them and return to me with their hides. The same rams that the Stormpike cavalry uses as mounts!",
   },
   [7003] = {
     ["D"] = "Il va falloir que je fasse quelque chose pour ces géants si je reste ici ! Ils ne sont vraiment pas bons pour les affaires !$B$BJ\'ai travaillé sur une variante de rayon rétrécissant gnome, mais j\'ai utilisé les avancées technologiques supérieures des GOBELINS pour sa construction ! Afin de m\'éviter de possibles désagréments tels que la mort, j\'aimerais que vous alliez l\'essayer sur n\'importe lequel des géants en Féralas. Vous devriez trouver des résidus de miniaturisation sur eux après les avoir rétrécis. Rapportez-m\'en !",
@@ -10913,7 +10920,7 @@ pfDB["quests"]["frFR-tbc"] = {
   },
   [7026] = {
     ["D"] = "The Stormpike Brigade cannot charge into battle bareback! We require harnesses for our mounts, after all, we are not savages.$B$BWhile we could easily slay the rams that roam near our base for the leather required to fashion a harness, doing so would be idiotic. We need those rams for mounts.$B$BYou must strike at our enemy\'s base, slaying the frostwolves they use as mounts and taking their hides. Return their hides to me so that harnesses may be made for the cavalry. Go!",
-    ["O"] = "J\'ai hâte de faire l\'essai de mon déchiqueteur portatif, $R, mais avant que je ne puisse fabriquer le kit, j\'ai besoin de beaucoup de matériel !$B$BPour être précis, il me faut une montagne de thorium, de mithril et de fer. J\'aurai également besoin d\'une scie à vapeur par unité. Vous les trouverez à la scierie.$B$BAlors que je traînais dans les environs (avant ma capture) j\'ai remarqué une pile de scies à vapeur, au Camp de bûcherons des Foudrepiques.",
+    ["O"] = "Slaying the frostwolves they use as mounts and return their hides to me.",
   },
   [7027] = {
     ["D"] = "Regardez les écuries, $N ! Vides ! La brigade de Foudrepique n\'a plus de béliers à monter. Notre cavalerie n\'existe plus.$B$BVous devez nous aider, soldat. Prenez ce collier d\'entraînement et aventurez-vous dans la partie sauvage de la vallée. Trouvez les béliers d\'Alterac qui y vagabondent et servez-vous du collier pour en capturer un. Lorsque vous l\'aurez, amenez-le ici et je le mettrai à l\'écurie.$B$BLorsque nous aurons assez de béliers, j\'en informerai l\'officier responsable. Avec votre aide, la cavalerie va ressusciter !",
@@ -11152,10 +11159,10 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Teldrassil : la couronne d\'Azeroth",
   },
   [7385] = {
-    ["O"] = "J\'ai hâte de faire l\'essai de mon déchiqueteur portatif, $R, mais avant que je ne puisse fabriquer le kit, j\'ai besoin de beaucoup de matériel !$B$BPour être précis, il me faut une montagne de thorium, de mithril et de fer. J\'aurai également besoin d\'une scie à vapeur par unité. Vous les trouverez à la scierie.$B$BAlors que je traînais dans les environs (avant ma capture) j\'ai remarqué une pile de scies à vapeur, au Camp de bûcherons des Foudrepiques.",
+    ["O"] = "You must strike down our enemies and bring to me their blood.",
   },
   [7386] = {
-    ["O"] = "J\'ai hâte de faire l\'essai de mon déchiqueteur portatif, $R, mais avant que je ne puisse fabriquer le kit, j\'ai besoin de beaucoup de matériel !$B$BPour être précis, il me faut une montagne de thorium, de mithril et de fer. J\'aurai également besoin d\'une scie à vapeur par unité. Vous les trouverez à la scierie.$B$BAlors que je traînais dans les environs (avant ma capture) j\'ai remarqué une pile de scies à vapeur, au Camp de bûcherons des Foudrepiques.",
+    ["O"] = "The Frostwolf soldiers carry elemental charms called storm crystals. We can use the charms to conjure Ivus. Venture forth and claim the crystals, $N!",
   },
   [7401] = {
     ["D"] = "Par ordre du sergent Yazra Gronde-sang, tous les nains rencontrés sur le champ de bataille doivent être abattus à vue.$B$BSi vous en tuez un, arrachez sa colonne vertébrale et laissez pourrir le reste – ce tas de déchets mous servira d\'avertissement à tous ceux qui oseraient s\'opposer à la puissance des Loups-de-givre.$B$BAllez voir le sergent Yazra Gronde-sang avec la preuve de vos exploits.",
@@ -12038,6 +12045,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Les ressources du bassin Arathi",
   },
   [8081] = {
+    ["D"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
     ["O"] = "Gagnez la bataille pour le Bassin Arathi, obtenez une Caisse de ressources arathies et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
     ["T"] = "Plus de caisses de ressources",
   },
@@ -12107,6 +12115,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Gagnez la bataille pour le Bassin Arathi, obtenez une Caisse de ressources arathies et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
   },
   [8124] = {
+    ["D"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin Arathi. Avec l\'aide de tous les peuples de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez $Gemparé:emparée;.",
     ["O"] = "Gagnez la bataille pour le Bassin Arathi, obtenez une Caisse de ressources arathies et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
     ["T"] = "Plus de caisses de ressources",
   },
@@ -12156,14 +12165,17 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Les ressources du bassin Arathi",
   },
   [8157] = {
+    ["D"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
     ["O"] = "Gagnez la bataille pour le Bassin Arathi, obtenez une Caisse de ressources arathies et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
     ["T"] = "Plus de caisses de ressources",
   },
   [8158] = {
+    ["D"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
     ["O"] = "Gagnez la bataille pour le Bassin Arathi, obtenez une Caisse de ressources arathies et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
     ["T"] = "Plus de caisses de ressources",
   },
   [8159] = {
+    ["D"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
     ["O"] = "Gagnez la bataille pour le Bassin Arathi, obtenez une Caisse de ressources arathies et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
     ["T"] = "Plus de caisses de ressources",
   },
@@ -12180,14 +12192,17 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Gagnez la bataille pour le Bassin Arathi, obtenez une Caisse de ressources arathies et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
   },
   [8163] = {
+    ["D"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin Arathi. Avec l\'aide de tous les peuples de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez $Gemparé:emparée;.",
     ["O"] = "Gagnez la bataille pour le Bassin Arathi, obtenez une Caisse de ressources arathies et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
     ["T"] = "Plus de caisses de ressources",
   },
   [8164] = {
+    ["D"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin Arathi. Avec l\'aide de tous les peuples de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez $Gemparé:emparée;.",
     ["O"] = "Gagnez la bataille pour le Bassin Arathi, obtenez une Caisse de ressources arathies et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
     ["T"] = "Plus de caisses de ressources",
   },
   [8165] = {
+    ["D"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin Arathi. Avec l\'aide de tous les peuples de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez $Gemparé:emparée;.",
     ["O"] = "Gagnez la bataille pour le Bassin Arathi, obtenez une Caisse de ressources arathies et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
     ["T"] = "Plus de caisses de ressources",
   },
@@ -12478,6 +12493,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Les ressources du bassin Arathi",
   },
   [8298] = {
+    ["D"] = "Une guerre se fait avec des soldats - tous les soldats pourront vous le confirmer. Ils vous diront aussi que livrer bataille l\'estomac vide, avec un mauvais équipement, est une garantie de défaite !$B$BC\'est pour cette raison que le bassin Arathi est si important. Certains endroits clés de cette région contiennent des ressources essentielles. Des métaux, des armes, de la nourriture, du bois… Tout ce dont nous avons besoin se trouve là-bas !$B$BVoici ce que je veux que vous fassiez, $N. Entrez dans le bassin Arathi, remportez la bataille en contrôlant plus de bases que l\'ennemi, et revenez me voir avec une caisse de ressources.",
     ["O"] = "Gagnez la bataille pour le Bassin Arathi, obtenez une Caisse de ressources arathies et rapportez-la au sergent Maclear au Refuge de l\'Ornière.",
     ["T"] = "Plus de caisses de ressources",
   },
@@ -12486,6 +12502,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Gagnez la bataille pour le Bassin Arathi, obtenez une Caisse de ressources arathies et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
   },
   [8300] = {
+    ["D"] = "La Ligue d\'Arathor n\'épargne aucune dépense dans sa tentative de reprise du bassin Arathi. Avec l\'aide de tous les peuples de l\'Alliance, qui se rendent maintenant en masse vers cette région lointaine, elle a l\'intention d\'étendre son emprise depuis le refuge de l\'Ornière. Nous devons les arrêter, et le meilleur moyen d\'y parvenir est de nous emparer de leurs réserves.$B$BVous pouvez nous aider, $N. Entrez dans le bassin Arathi, connu pour ses mines productives, ses terres fertiles et ses artisans habiles. Capturez et contrôlez un maximum de bases, remportez la bataille, et revenez me voir avec les ressources dont vous vous serez $Gemparé:emparée;.",
     ["O"] = "Gagnez la bataille pour le Bassin Arathi, obtenez une Caisse de ressources arathies et rapportez-la au nécrotraqueur Mortis au Trépas-d\'Orgrim.",
     ["T"] = "Plus de caisses de ressources",
   },
@@ -12710,7 +12727,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Utilisez l\'emote /danser devant l\'aubergiste Saelienne, et vous recevrez en échange du massepain de Darnassus !",
   },
   [8358] = {
-    ["D"] = "$GUn quémandeur:Une quémandeuse; de bonbons ! Cool, $Gl\'ami:l\'amie; !$B$BBon, même si vous faites quelque chose de noble en récupérant des bonbons pour une petite fille, je ne peux pas vous laisser vous en sortir si facilement. J\'ai une délicieuse boule de gomme sombrelance pour la gamine, que je vous donnerai si… vous imitez le bruit du train pour moi ! Haha, oui, c\'est une bonne blague ! Le prix de cette boule de gomme est d\'imiter le train ! Tchou-tchou, $C !",
+    ["D"] = "A trick-or-treater!  Yeah mon!$B$BWell now, even though you\'re doing something noble and collecting candies for a sick child, I can\'t let you off the hook that easily.  I have a yummy Darkspear Gumdrop to give to the sick child... if you make a train noise for me!  Haha, yes, that\'ll be the trick!  The price of this gumdrop is one train noise!$B$BChugga-chugga, $c!",
     ["O"] = "Utilisez l\'emote /tchou devant Kali Remik, et vous recevrez en échange une Boule de gomme sombrelance !",
   },
   [8359] = {
@@ -12752,7 +12769,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "La conquête du bassin Arathi",
   },
   [8371] = {
-    ["D"] = "Apportez 1 Marque d\'honneur de chaque champ de bataille à un Porteguerre de la Horde, dans n\'importe quelle capitale de la Horde ou à Shattrath.",
+    ["D"] = "Nous ne menons plus des combats isolés contre la Horde, jeune $Ghomme:fille;. La victoire sur un front signifie que nous enlevons à notre adversaire les ressources qu\'il utiliserait contre nous dans une autre bataille. De la même façon, le fait d\'abandonner un engagement pourrait donner l\'avantage à la Horde en un autre point du monde.$B$BL\'Alliance a besoin de combattants ayant compris cette vérité… De vrais vétérans expérimentés ! $N, revenez me voir quand vous aurez combattu la Horde sur tous les champs de bataille.",
     ["O"] = "Apportez 1 Marque d\'honneur de chaque champ de bataille à un Porteguerre de la Horde, dans n\'importe quelle capitale de la Horde ou à Shattrath.",
   },
   [8372] = {
@@ -12774,14 +12791,15 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apportez 3 Marques d\'honneur de la vallée d\'Alterac à un général de brigade de l\'Alliance, devant les champs de bataille.",
   },
   [8384] = {
+    ["D"] = "Pour gagner une guerre, il ne suffit pas de battre l\'adversaire, ou de déjouer ses ruses. Souvent, la victoire est remportée tout simplement en produisant plus de ressources que l\'ennemi.$B$BLe bassin Arathi n\'est ni plus ni moins qu\'un océan de ressources potentielles pour le camp qui parviendra à s\'en emparer le premier.$B$BSi l\'Alliance l\'emporte, cela signifie que nous aurons plus d\'épées et de piques pour nos troupes. Si c\'est la Horde qui gagne, ces épées et ces piques seront tout de même fabriquées, mais elles seront pointées sur nous ! Il est temps, maintenant, d\'aider l\'Alliance dans le bassin Arathi, $N.",
     ["O"] = "Apportez 3 Marques d\'honneur du Bassin Arathi à un général de brigade de l\'Alliance, devant les champs de bataille.",
     ["T"] = "La revendication du bassin Arathi",
   },
   [8385] = {
-    ["D"] = "Apportez 1 Marque d\'honneur de chaque champ de bataille à un Porteguerre de la Horde, dans n\'importe quelle capitale de la Horde ou à Shattrath.",
     ["O"] = "Apportez 1 Marque d\'honneur de chaque champ de bataille à un Porteguerre de la Horde, dans n\'importe quelle capitale de la Horde ou à Shattrath.",
   },
   [8386] = {
+    ["D"] = "Les sentinelles d\'Aile-argent sont en guerre contre les voltigeurs Chanteguerre, à cause des destructions perpétrées par les orcs. Cependant, nous avons d\'autres raisons pour défendre tout particulièrement cette forêt que le simple amour de la nature.$B$BLa forêt constitue une barrière stratégique qui protège Orneval contre une attaque à grande échelle. Sans elle, Astranaar serait annexée aux Tarides en moins de deux jours.$B$BFaites votre part dans le combat contre les voltigeurs Chanteguerre, $N ! Pour l\'Alliance !",
     ["O"] = "Apportez 3 Marques d\'honneur du goulet des Chanteguerres à un général de brigade de l\'Alliance, devant les champs de bataille.",
     ["T"] = "La lutte pour le goulet des Chanteguerres",
   },
@@ -12793,17 +12811,21 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Pour le plus grand des honneurs",
   },
   [8389] = {
+    ["D"] = "La bataille dans le goulet des Chanteguerres contre les Sentinelles d\'Aile-argent est d\'une grande importance. Sous le prétexte de protéger une forêt qui ne lui appartient pas, l\'Alliance cherche à refuser à la Horde l\'une de ses plus grandes ressources en bois.$B$BNe la laissez pas faire, $N ! Revenez me voir quand vous aurez la preuve que vous avez bien servi la Horde !",
     ["O"] = "Apportez 3 Marques d\'honneur Chanteguerre à l\'un des porteguerres de la Horde, devant les champs de bataille.",
   },
   [8390] = {
+    ["D"] = "Notre conflit contre l\'Alliance est devenu une véritable guerre. Plus personne n\'a besoin de faux prétextes pour aller au combat, ni l\'Alliance, ni la Horde.$B$BLa bataille pour le bassin Arathi est une guerre économique, ni plus ni moins. Soit l\'Alliance obtient ces ressources et les utilise contre nous, soit nous nous en emparons pour soutenir notre effort de guerre. Aidez les Profanateurs à assurer notre approvisionnement, $N !",
     ["O"] = "Apportez 3 Marques d\'honneur du bassin Arathi à l\'un des porteguerres de la Horde, devant les champs de bataille.",
     ["T"] = "La conquête du bassin Arathi",
   },
   [8391] = {
+    ["D"] = "Pour gagner une guerre, il ne suffit pas de battre l\'adversaire, ou de déjouer ses ruses. Souvent, la victoire est remportée tout simplement en produisant plus de ressources que l\'ennemi.$B$BLe bassin Arathi n\'est ni plus ni moins qu\'un océan de ressources potentielles pour le camp qui parviendra à s\'en emparer le premier.$B$BSi l\'Alliance l\'emporte, cela signifie que nous aurons plus d\'épées et de piques pour nos troupes. Si c\'est la Horde qui gagne, ces épées et ces piques seront tout de même fabriquées, mais elles seront pointées sur nous ! Il est temps, maintenant, d\'aider l\'Alliance dans le bassin Arathi, $N.",
     ["O"] = "Apportez 3 Marques d\'honneur du Bassin Arathi à un général de brigade de l\'Alliance, devant les champs de bataille.",
     ["T"] = "La revendication du bassin Arathi",
   },
   [8392] = {
+    ["D"] = "Pour gagner une guerre, il ne suffit pas de battre l\'adversaire, ou de déjouer ses ruses. Souvent, la victoire est remportée tout simplement en produisant plus de ressources que l\'ennemi.$B$BLe bassin Arathi n\'est ni plus ni moins qu\'un océan de ressources potentielles pour le camp qui parviendra à s\'en emparer le premier.$B$BSi l\'Alliance l\'emporte, cela signifie que nous aurons plus d\'épées et de piques pour nos troupes. Si c\'est la Horde qui gagne, ces épées et ces piques seront tout de même fabriquées, mais elles seront pointées sur nous ! Il est temps, maintenant, d\'aider l\'Alliance dans le bassin Arathi, $N.",
     ["O"] = "Apportez 3 Marques d\'honneur du Bassin Arathi à un général de brigade de l\'Alliance, devant les champs de bataille.",
     ["T"] = "La revendication du bassin Arathi",
   },
@@ -12828,10 +12850,12 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "La revendication du bassin Arathi",
   },
   [8397] = {
+    ["D"] = "Pour gagner une guerre, il ne suffit pas de battre l\'adversaire, ou de déjouer ses ruses. Souvent, la victoire est remportée tout simplement en produisant plus de ressources que l\'ennemi.$B$BLe bassin Arathi n\'est ni plus ni moins qu\'un océan de ressources potentielles pour le camp qui parviendra à s\'en emparer le premier.$B$BSi l\'Alliance l\'emporte, cela signifie que nous aurons plus d\'épées et de piques pour nos troupes. Si c\'est la Horde qui gagne, ces épées et ces piques seront tout de même fabriquées, mais elles seront pointées sur nous ! Il est temps, maintenant, d\'aider l\'Alliance dans le bassin Arathi, $N.",
     ["O"] = "Apportez 3 Marques d\'honneur du Bassin Arathi à un général de brigade de l\'Alliance, devant les champs de bataille.",
     ["T"] = "La revendication du bassin Arathi",
   },
   [8398] = {
+    ["D"] = "Pour gagner une guerre, il ne suffit pas de battre l\'adversaire, ou de déjouer ses ruses. Souvent, la victoire est remportée tout simplement en produisant plus de ressources que l\'ennemi.$B$BLe bassin Arathi n\'est ni plus ni moins qu\'un océan de ressources potentielles pour le camp qui parviendra à s\'en emparer le premier.$B$BSi l\'Alliance l\'emporte, cela signifie que nous aurons plus d\'épées et de piques pour nos troupes. Si c\'est la Horde qui gagne, ces épées et ces piques seront tout de même fabriquées, mais elles seront pointées sur nous ! Il est temps, maintenant, d\'aider l\'Alliance dans le bassin Arathi, $N.",
     ["O"] = "Apportez 3 Marques d\'honneur du Bassin Arathi à un général de brigade de l\'Alliance, devant les champs de bataille.",
     ["T"] = "La revendication du bassin Arathi",
   },
@@ -12851,21 +12875,26 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Les sentinelles d\'Aile-argent sont en guerre contre les voltigeurs Chanteguerre, à cause des destructions perpétrées par les orcs. Cependant, nous avons d\'autres raisons pour défendre tout particulièrement cette forêt que le simple amour de la nature.$B$BLa forêt constitue une barrière stratégique qui protège Orneval contre une attaque à grande échelle. Sans elle, Astranaar serait annexée aux Tarides en moins de deux jours.$B$BFaites votre part dans le combat contre les voltigeurs Chanteguerre, $N ! Pour l\'Alliance !",
   },
   [8404] = {
+    ["D"] = "Les sentinelles d\'Aile-argent sont en guerre contre les voltigeurs Chanteguerre, à cause des destructions perpétrées par les orcs. Cependant, nous avons d\'autres raisons pour défendre tout particulièrement cette forêt que le simple amour de la nature.$B$BLa forêt constitue une barrière stratégique qui protège Orneval contre une attaque à grande échelle. Sans elle, Astranaar serait annexée aux Tarides en moins de deux jours.$B$BFaites votre part dans le combat contre les voltigeurs Chanteguerre, $N ! Pour l\'Alliance !",
     ["O"] = "Apportez 3 Marques d\'honneur du goulet des Chanteguerres à un général de brigade de l\'Alliance, devant les champs de bataille.",
     ["T"] = "La lutte pour le goulet des Chanteguerres",
   },
   [8405] = {
+    ["D"] = "Les sentinelles d\'Aile-argent sont en guerre contre les voltigeurs Chanteguerre, à cause des destructions perpétrées par les orcs. Cependant, nous avons d\'autres raisons pour défendre tout particulièrement cette forêt que le simple amour de la nature.$B$BLa forêt constitue une barrière stratégique qui protège Orneval contre une attaque à grande échelle. Sans elle, Astranaar serait annexée aux Tarides en moins de deux jours.$B$BFaites votre part dans le combat contre les voltigeurs Chanteguerre, $N ! Pour l\'Alliance !",
     ["O"] = "Apportez 3 Marques d\'honneur du goulet des Chanteguerres à un général de brigade de l\'Alliance, devant les champs de bataille.",
     ["T"] = "La lutte pour le goulet des Chanteguerres",
   },
   [8406] = {
+    ["D"] = "Les sentinelles d\'Aile-argent sont en guerre contre les voltigeurs Chanteguerre, à cause des destructions perpétrées par les orcs. Cependant, nous avons d\'autres raisons pour défendre tout particulièrement cette forêt que le simple amour de la nature.$B$BLa forêt constitue une barrière stratégique qui protège Orneval contre une attaque à grande échelle. Sans elle, Astranaar serait annexée aux Tarides en moins de deux jours.$B$BFaites votre part dans le combat contre les voltigeurs Chanteguerre, $N ! Pour l\'Alliance !",
     ["O"] = "Apportez 3 Marques d\'honneur du goulet des Chanteguerres à un général de brigade de l\'Alliance, devant les champs de bataille.",
     ["T"] = "La lutte pour le goulet des Chanteguerres",
   },
   [8407] = {
+    ["D"] = "Les sentinelles d\'Aile-argent sont en guerre contre les voltigeurs Chanteguerre, à cause des destructions perpétrées par les orcs. Cependant, nous avons d\'autres raisons pour défendre tout particulièrement cette forêt que le simple amour de la nature.$B$BLa forêt constitue une barrière stratégique qui protège Orneval contre une attaque à grande échelle. Sans elle, Astranaar serait annexée aux Tarides en moins de deux jours.$B$BFaites votre part dans le combat contre les voltigeurs Chanteguerre, $N ! Pour l\'Alliance !",
     ["O"] = "Apportez 3 Marques d\'honneur du goulet des Chanteguerres à un général de brigade de l\'Alliance, devant les champs de bataille.",
   },
   [8408] = {
+    ["D"] = "Les sentinelles d\'Aile-argent sont en guerre contre les voltigeurs Chanteguerre, à cause des destructions perpétrées par les orcs. Cependant, nous avons d\'autres raisons pour défendre tout particulièrement cette forêt que le simple amour de la nature.$B$BLa forêt constitue une barrière stratégique qui protège Orneval contre une attaque à grande échelle. Sans elle, Astranaar serait annexée aux Tarides en moins de deux jours.$B$BFaites votre part dans le combat contre les voltigeurs Chanteguerre, $N ! Pour l\'Alliance !",
     ["O"] = "Apportez 3 Marques d\'honneur du goulet des Chanteguerres à un général de brigade de l\'Alliance, devant les champs de bataille.",
     ["T"] = "La lutte pour le goulet des Chanteguerres",
   },
@@ -12952,18 +12981,23 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "La bataille dans le goulet des Chanteguerres contre les Sentinelles d\'Aile-argent est d\'une grande importance. Sous le prétexte de protéger une forêt qui ne lui appartient pas, l\'Alliance cherche à refuser à la Horde l\'une de ses plus grandes ressources en bois.$B$BNe la laissez pas faire, $N ! Revenez me voir quand vous aurez la preuve que vous avez bien servi la Horde !",
   },
   [8431] = {
+    ["D"] = "La bataille dans le goulet des Chanteguerres contre les Sentinelles d\'Aile-argent est d\'une grande importance. Sous le prétexte de protéger une forêt qui ne lui appartient pas, l\'Alliance cherche à refuser à la Horde l\'une de ses plus grandes ressources en bois.$B$BNe la laissez pas faire, $N ! Revenez me voir quand vous aurez la preuve que vous avez bien servi la Horde !",
     ["O"] = "Apportez 3 Marques d\'honneur Chanteguerre à l\'un des porteguerres de la Horde, devant les champs de bataille.",
   },
   [8432] = {
+    ["D"] = "La bataille dans le goulet des Chanteguerres contre les Sentinelles d\'Aile-argent est d\'une grande importance. Sous le prétexte de protéger une forêt qui ne lui appartient pas, l\'Alliance cherche à refuser à la Horde l\'une de ses plus grandes ressources en bois.$B$BNe la laissez pas faire, $N ! Revenez me voir quand vous aurez la preuve que vous avez bien servi la Horde !",
     ["O"] = "Apportez 3 Marques d\'honneur Chanteguerre à l\'un des porteguerres de la Horde, devant les champs de bataille.",
   },
   [8433] = {
+    ["D"] = "La bataille dans le goulet des Chanteguerres contre les Sentinelles d\'Aile-argent est d\'une grande importance. Sous le prétexte de protéger une forêt qui ne lui appartient pas, l\'Alliance cherche à refuser à la Horde l\'une de ses plus grandes ressources en bois.$B$BNe la laissez pas faire, $N ! Revenez me voir quand vous aurez la preuve que vous avez bien servi la Horde !",
     ["O"] = "Apportez 3 Marques d\'honneur Chanteguerre à l\'un des porteguerres de la Horde, devant les champs de bataille.",
   },
   [8434] = {
+    ["D"] = "La bataille dans le goulet des Chanteguerres contre les Sentinelles d\'Aile-argent est d\'une grande importance. Sous le prétexte de protéger une forêt qui ne lui appartient pas, l\'Alliance cherche à refuser à la Horde l\'une de ses plus grandes ressources en bois.$B$BNe la laissez pas faire, $N ! Revenez me voir quand vous aurez la preuve que vous avez bien servi la Horde !",
     ["O"] = "Apportez 3 Marques d\'honneur Chanteguerre à l\'un des porteguerres de la Horde, devant les champs de bataille.",
   },
   [8435] = {
+    ["D"] = "La bataille dans le goulet des Chanteguerres contre les Sentinelles d\'Aile-argent est d\'une grande importance. Sous le prétexte de protéger une forêt qui ne lui appartient pas, l\'Alliance cherche à refuser à la Horde l\'une de ses plus grandes ressources en bois.$B$BNe la laissez pas faire, $N ! Revenez me voir quand vous aurez la preuve que vous avez bien servi la Horde !",
     ["O"] = "Apportez 3 Marques d\'honneur Chanteguerre à l\'un des porteguerres de la Horde, devant les champs de bataille.",
   },
   [8436] = {
@@ -12987,18 +13021,22 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "La conquête du bassin Arathi",
   },
   [8440] = {
+    ["D"] = "Notre conflit contre l\'Alliance est devenu une véritable guerre. Plus personne n\'a besoin de faux prétextes pour aller au combat, ni l\'Alliance, ni la Horde.$B$BLa bataille pour le bassin Arathi est une guerre économique, ni plus ni moins. Soit l\'Alliance obtient ces ressources et les utilise contre nous, soit nous nous en emparons pour soutenir notre effort de guerre. Aidez les Profanateurs à assurer notre approvisionnement, $N !",
     ["O"] = "Apportez 3 Marques d\'honneur du bassin Arathi à l\'un des porteguerres de la Horde, devant les champs de bataille.",
     ["T"] = "La conquête du bassin Arathi",
   },
   [8441] = {
+    ["D"] = "Notre conflit contre l\'Alliance est devenu une véritable guerre. Plus personne n\'a besoin de faux prétextes pour aller au combat, ni l\'Alliance, ni la Horde.$B$BLa bataille pour le bassin Arathi est une guerre économique, ni plus ni moins. Soit l\'Alliance obtient ces ressources et les utilise contre nous, soit nous nous en emparons pour soutenir notre effort de guerre. Aidez les Profanateurs à assurer notre approvisionnement, $N !",
     ["O"] = "Apportez 3 Marques d\'honneur du bassin Arathi à l\'un des porteguerres de la Horde, devant les champs de bataille.",
     ["T"] = "La conquête du bassin Arathi",
   },
   [8442] = {
+    ["D"] = "Notre conflit contre l\'Alliance est devenu une véritable guerre. Plus personne n\'a besoin de faux prétextes pour aller au combat, ni l\'Alliance, ni la Horde.$B$BLa bataille pour le bassin Arathi est une guerre économique, ni plus ni moins. Soit l\'Alliance obtient ces ressources et les utilise contre nous, soit nous nous en emparons pour soutenir notre effort de guerre. Aidez les Profanateurs à assurer notre approvisionnement, $N !",
     ["O"] = "Apportez 3 Marques d\'honneur du bassin Arathi à l\'un des porteguerres de la Horde, devant les champs de bataille.",
     ["T"] = "La conquête du bassin Arathi",
   },
   [8443] = {
+    ["D"] = "Notre conflit contre l\'Alliance est devenu une véritable guerre. Plus personne n\'a besoin de faux prétextes pour aller au combat, ni l\'Alliance, ni la Horde.$B$BLa bataille pour le bassin Arathi est une guerre économique, ni plus ni moins. Soit l\'Alliance obtient ces ressources et les utilise contre nous, soit nous nous en emparons pour soutenir notre effort de guerre. Aidez les Profanateurs à assurer notre approvisionnement, $N !",
     ["O"] = "Apportez 3 Marques d\'honneur du bassin Arathi à l\'un des porteguerres de la Horde, devant les champs de bataille.",
     ["T"] = "La conquête du bassin Arathi",
   },
@@ -13916,7 +13954,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Voile de sagesse infinie",
   },
   [8690] = {
-    ["D"] = "Apportez 1 Drapé royal qiraji, 2 Idoles d\'obsidienne, 5 Scarabées d\'or et 5 Scarabées d\'argile à Keyl Vivegriffe, en Silithus. Vous devrez aussi être $GRévéré:Révérée; par le Cercle cénarien pour terminer cette quête.",
+    ["D"] = "Je suis content de voir que vous allez nous aider pour notre offensive en Ahn\'Qiraj, $N. J\'aimerais vous offrir un objet de protection, qui pourra vous servir contre notre ennemi, $C.$B$BJ\'ai besoin pour cela d\'un drapé qiraji, que je retaillerai à vos mesures, bien sûr. J\'ai aussi besoin d\'idoles et de scarabées dont je me servirai pour fabriquer le fermoir.$B$BJe vous promets que vous ne serez pas $Gdéçu:déçue;.",
     ["O"] = "Apportez 1 Drapé royal qiraji, 2 Idoles d\'obsidienne, 5 Scarabées d\'or et 5 Scarabées d\'argile à Keyl Vivegriffe, en Silithus. Vous devrez aussi être $GRévéré:Révérée; par le Cercle cénarien pour terminer cette quête.",
     ["T"] = "Cape de la tempête imminente",
   },
@@ -13981,7 +14019,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Anneau des noms inexprimés",
   },
   [8703] = {
-    ["D"] = "Apporter 1 Anneau de magistrat qiraji, 2 Idoles vermillon, 5 Scarabées d\'argent et 5 Scarabées d\'os à l\'Imploratrice céleste Yessendra, en Silithus. Vous devrez aussi être $GHonoré:Honorée; par le Cercle cénarien pour terminer cette quête.",
+    ["D"] = "Les anneaux portés par les lieutenants qiraji accordent, paraît-il, des pouvoirs fantastiques. Les gemmes corrompues qui les ornent pourraient, en théorie, être remplacées par des matériaux plus purs, pour créer des versions non corrompues des anneaux.$B$BLes pierres précieuses qui ornent les idoles qiraji conviendraient assez bien, car elles sont d\'une qualité supérieure.$B$BApportez-moi un anneau et des idoles, et je vous créerai un anneau puissant, $C.",
     ["O"] = "Apporter 1 Anneau de magistrat qiraji, 2 Idoles vermillon, 5 Scarabées d\'argent et 5 Scarabées d\'os à l\'Imploratrice céleste Yessendra, en Silithus. Vous devrez aussi être $GHonoré:Honorée; par le Cercle cénarien pour terminer cette quête.",
     ["T"] = "Anneau de justice éternelle",
   },
@@ -15026,7 +15064,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Amortir la colère",
   },
   [9065] = {
-    ["D"] = "Bonjour, $t. Tuez la vermine kobold, au moins 2.",
+    ["D"] = "Bonjour, $T. Tuez la vermine kobold, au moins 2.",
     ["O"] = "Tuez au moins deux Vermines kobolds.",
     ["T"] = "La quête de Kanrethad",
   },
@@ -16139,29 +16177,23 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Les Réprouvés",
   },
   [9333] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "Les gants de l\'Aube d\'argent",
   },
   [9334] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "Huile de sorcier bénie",
   },
   [9335] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "Pierre à aiguiser consacrée",
   },
   [9336] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "Potion de soins majeure",
   },
   [9337] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "Potion de mana majeure",
+  },
+  [9339] = {
+    ["D"] = "This flame, stolen from the heart of Stormwind itself, floods you with warmth. This raw power is foreign to you, but the (NAME) might know more...",
+    ["O"] = "Return the Flame of Stormwind to (NAME).",
   },
   [9340] = {
     ["D"] = "Nous sommes sur le point de nous faire bloquer par les forces de l\'Alliance. Avec tous les pèlerins sin\'dorei qui affluent d\'Azeroth, nous devons absolument établir une route loin des yeux inquisiteurs de nos ennemis.$B$BJ\'ai réfléchi à ce problème et je suis parvenu à une solution. Nous allons mettre en place un itinéraire secret qui coupera la Grande fissure.$B$BOui, l\'endroit grouille de féroces écorche-rocs, mais ce ne sont que des bêtes et nous pouvons leur apprendre à nous craindre. Je veux que vous partiez tuer un grand nombre de ces animaux. Ils sauront ce qu\'est la peur.",
@@ -16177,8 +16209,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Les perceurs de croûte maraudeurs",
   },
   [9343] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "Tabard de l\'Aube d\'argent",
   },
   [9344] = {
@@ -16257,6 +16287,10 @@ pfDB["quests"]["frFR-tbc"] = {
   },
   [9364] = {
     ["O"] = "Métamorphosez les Fouette-bile d\'Azshara, puis tuez les clones qui apparaissent quelques instants plus tard. Quand vous aurez tué 50 clones de métamorphose, retournez voir l\'archimage Xylem en Azshara.",
+  },
+  [9365] = {
+    ["D"] = "This flame, stolen from the heart of Stormwind itself, floods you with warmth. This raw power is foreign to you, but the (NAME) might know more...",
+    ["O"] = "Return the Flame of Stormwind to (NAME).",
   },
   [9366] = {
     ["D"] = "Les bassins d\'Aggonar sont situés au nord-est d\'ici. Autrefois, c\'était un site sacré pour les draeneï, mais leurs eaux ont été corrompues lorsque le sang du démon Aggonar y a été versé.$B$BCe sang est ancien et dilué, mais il reste terriblement puissant. Des fiels de la terreur errent aux alentours, animés par les énergies démoniaques pures du sang originel. Tuez-les et récupérez autant de gangresang que vous le pourrez. Je vous récompenserai généreusement.",
@@ -17307,7 +17341,7 @@ pfDB["quests"]["frFR-tbc"] = {
   [9599] = {
     ["D"] = "En toutes choses, un paladin doit réfléchir la Lumière qui amplifie nos forces. Il faut s\'efforcer d\'approcher la divinité. Cela ne veut pas dire qu\'il faut devenir un dieu, juste de faire en sorte que toutes nos actions soient empreintes de bonté.$B$BLes temps sont durs, et vous devez lutter contre le mal, mais souvenez-vous que c\'est en aidant les autres que vous vous distinguerez vraiment de la multitude. La compassion, la patience, la bravoure… toutes ces choses sont aussi importantes pour un paladin que la force au combat.$B$BN\'oubliez jamais cela.",
     ["O"] = "Parlez à Jol, à l\'Exodar.",
-    ["T"] = "<INUTILISÉ>",
+    ["T"] = "<UNUSED>",
   },
   [9600] = {
     ["D"] = "$N, votre tâche sera d\'aider nos nouveaux alliés, les furbolgs Calmepins.$B$BUn groupe de jeunes chamans calmepins est tombé sur un camp des Bras-hirsutes. Ils ont été massacrés jusqu\'au dernier. Prenez ce Symbole de vie et ressuscitez l\'un de ces chamans.$B$BL\'enclave des Bras-hirsutes se trouve à l\'est de la route, juste après le pont qui relie Brume-azur et Brume-sang. Lorsque vous aurez terminé, revenez me voir.",
@@ -17593,7 +17627,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "La formation de dresseur",
   },
   [9674] = {
-    ["D"] = "On dit que quand le monde fut brisé, ce fut cette terre qui cria le plus fort. C\'est ici que des milliers d\'elfes de la nuit tombèrent dans l\'oubli. À leur place s\'élevèrent de terribles créatures de haine, les nagas.$B$BSous les ordres de leur reine pervertie, Azshara, ils anéantissaient tous ceux qui osaient traverser leur mer. Il en est ainsi pendant des milliers d\'années - jusqu\'à maintenant.$B$BLa première tâche à l\'ordre du jour est de supprimer les nagas au sang maudit du récif.",
+    ["D"] = "Le capitaine Edward Hanes, sur l\'île Balafre-du-ver, veut que vous tuiez 10 Nagas du sang maudit.",
     ["O"] = "Le capitaine Edward Hanes, sur l\'île Balafre-du-ver, veut que vous tuiez 10 Nagas du sang maudit.",
     ["T"] = "Les nagas au sang maudit",
   },
@@ -17743,7 +17777,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Récupérer un paquet",
   },
   [9706] = {
-    ["D"] = "Vos mains tremblent en ramassant le livre. Kuros doit être informé de cette tragédie. Apportez-lui le livre.",
+    ["D"] = "Apportez le Journal de Galaen au redresseur de torts Kuros au Guet du sang.",
     ["O"] = "Apportez le Journal de Galaen au redresseur de torts Kuros au Guet du sang.",
     ["T"] = "Le journal de Galaen - Le destin du redresseur de torts Saruan",
   },
@@ -17998,7 +18032,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "La fin de leur monde",
   },
   [9760] = {
-    ["D"] = "Je ne vous demanderais pas de porter $Gseul:seule; la lourde responsabilité de détruire la Bobine vectorielle et de tuer Sironas, $N. Cependant, je pense que vous pourriez être utile pour ouvrir la voie à ceux qui sont prêts à entreprendre une tâche si dangereuse.$B$BPrenez la route vers le nord à la sortie du Guet du sang et suivez-la jusqu\'à l\'embranchement. Quand vous y serez, prenez à gauche et continuez jusqu\'à ce que vous voyiez le Repos du redresseur de torts. Il est un peu à l\'ouest de la route elle-même. Corin vous y attendra.",
+    ["D"] = "Parlez au redresseur de torts Corin au Repos du redresseur de torts sur l\'île de Brume-sang.",
     ["O"] = "Parlez au redresseur de torts Corin au Repos du redresseur de torts sur l\'île de Brume-sang.",
     ["T"] = "Le Repos du redresseur de torts",
   },
@@ -18563,7 +18597,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Ortor, mon vieil ami…",
   },
   [9874] = {
-    ["D"] = "Je viens juste d\'apprendre une catastrophe de proportions épiques, $N. Ces maudits Bourbesang ont pillé le village orc qui se trouve au nord-ouest d\'ici, le poste de Berceau-de-l\'Été, et ont assassiné tous ses habitants. Pire encore, ils ont commencé à jeter les cadavres dans le lac Berceau-de-l\'Été. Si ces corps pourrissent, la principale source d\'eau potable de la région sera souillée.$B$BJe vais vous confier une tâche macabre, mais elle doit être accomplie. Prenez cette torche enchantée et retournez au Berceau-de-l\'Été. Brûlez tous les cadavres d\'orc en décomposition.",
+    ["D"] = "Otonbu le Sage, à Telaar en Nagrand, veut que vous utilisiez la Torche de feu liquide pour détruire 10 Cadavres de villageois du Berceau-de-l\'Été. Lorsque vous aurez terminé, rendez-lui la Torche de feu liquide.",
     ["O"] = "Otonbu le Sage, à Telaar en Nagrand, veut que vous utilisiez la Torche de feu liquide pour détruire 10 Cadavres de villageois du Berceau-de-l\'Été. Lorsque vous aurez terminé, rendez-lui la Torche de feu liquide.",
     ["T"] = "Arrêter la contamination",
   },
@@ -18788,7 +18822,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Les failles jumelles de Nagrand",
   },
   [9923] = {
-    ["D"] = "AU SECOURS ! Ils vont me manger ! J\'en suis sûr !$B$BTrouvez la clé, je sais qu\'elle est sur l\'un de ces ogres.$B$BSi vous me sortez de là, mon père vous offrira une belle récompense ! C\'est le chef des Telaar, Arechron.",
+    ["D"] = "Trouvez la Clé rochepoing et libérez Corki. Parlez avec Arechron, à Telaar, si vous réussissez.",
     ["O"] = "Trouvez la Clé rochepoing et libérez Corki. Parlez avec Arechron, à Telaar, si vous réussissez.",
     ["T"] = "À l\'aide !",
   },
@@ -19043,7 +19077,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "L\'arène de sang : le champion Cogneguerre",
   },
   [9974] = {
-    ["D"] = "Apportez 5 Essences de chasseur dimensionnel et 30 Airelles de Terokkar à Kokorek au Voile Lithic.",
+    ["D"] = "Je peux créer un objet qui neutralisera les sorts de défense qui protègent le Voile Shalas, mais soyez $Gprévenu:prévenue;, $N. La magie ne fonctionnera que tant que votre ami sera retenu prisonnier. Je ne vais pas vous fournir le moyen d\'attaquer mon peuple à volonté.$B$BJ\'ai la plupart du matériel dont j\'ai besoin pour créer le charme, mais il y a deux composants qu\'il faudra que vous cherchiez pour moi afin que je puisse terminer le travail. J\'aurai besoin d\'essence de chasseur dimensionnel et d\'une poignée d\'airelles de Terokkar. Vous pourrez trouver les deux autour du voile.",
     ["O"] = "Apportez 5 Essences de chasseur dimensionnel et 30 Airelles de Terokkar à Kokorek au Voile Lithic.",
     ["T"] = "Les derniers composants",
   },
@@ -19193,7 +19227,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "La messagère d\'Aile-de-feu",
   },
   [10004] = {
-    ["D"] = "Prenez les plans et rendez-vous à Shattrath, dans la forêt de Terokkar. Lorsque vous y serez, allez dans la Ville basse et cherchez un mo\'arg nommé Sal\'salabim. Il sera sûrement au bar, en train de noyer ses chagrins dans l\'alcool.$B$BVous devrez le convaincre de vous aider. Essayez d\'être $Gpatient et compréhensif:patiente et compréhensive;. Si ça ne marche pas, cognez.",
+    ["D"] = "Altruis le Souffrant dans l\'ouest de Nagrand veut que vous apportiez les Plans du maître d\'œuvre à Sal\'salabim à Shattrath et que vous le convainquiez de vous aider.",
     ["O"] = "Altruis le Souffrant dans l\'ouest de Nagrand veut que vous apportiez les Plans du maître d\'œuvre à Sal\'salabim à Shattrath et que vous le convainquiez de vous aider.",
     ["T"] = "Patience et compréhension",
   },
@@ -19318,17 +19352,17 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Calices de puissance",
   },
   [10029] = {
-    ["D"] = "Les esprits des morts du désert des Ossements m\'appellent ! Ils souffrent !$B$B$C, vous devez voyager jusqu\'au désert des Ossements, au sud, et trouver mon assistant, Soolaveen, avec la Caravane des réfugiés. Il le ressent sûrement lui aussi, et il aura besoin de votre aide pour donner le repos aux esprits.$B$BSi vous faites vite, vous arriverez peut-être à les rattraper. Je sais qu\'ils prévoyaient de s\'arrêter brièvement dans le nord du désert des Ossements avant de poursuivre vers le sud, jusqu\' Auchindoun.",
+    ["D"] = "L\'anachorète Lyteera veut que vous trouviez son assistant, Soolaveen, à la Caravane des réfugiés dans le désert des Ossements de la forêt de Terokkar.$B$BAccomplir des quêtes pour l\'Aldor fera baisser votre réputation auprès des Clairvoyants.",
     ["O"] = "L\'anachorète Lyteera veut que vous trouviez son assistant, Soolaveen, à la Caravane des réfugiés dans le désert des Ossements de la forêt de Terokkar.$B$BAccomplir des quêtes pour l\'Aldor fera baisser votre réputation auprès des Clairvoyants.",
     ["T"] = "L\'appel des esprits",
   },
   [10030] = {
-    ["D"] = "Le désert des Ossements est jonché des os des draeneï tués dans l\'explosion d\'Auchindoun. Leurs esprits ne trouvent pas le repos et ne peuvent progresser vers leur prochaine vie.$B$B$C, vous devez m\'aider à récupérer leurs os et les emporter jusqu\'à leur dernière demeure ! Ce n\'est qu\'alors qu\'ils trouveront la paix et le réconfort.$B$BRamassez avec soin les ossements sans repos et apportez-les à Ramdor le Fol à Auchindoun, au centre du désert des Ossements. En dépit de son nom, il saura prendre soin d\'eux.",
+    ["D"] = "Récupérez 10 Ossements sans repos. Apportez-les à Ramdor le Fol, juste à côté du côté ouest du Cercle d\'observance à Auchindoun, qui se trouve au milieu du désert des Ossements de la forêt de Terokkar.",
     ["O"] = "Récupérez 10 Ossements sans repos. Apportez-les à Ramdor le Fol, juste à côté du côté ouest du Cercle d\'observance à Auchindoun, qui se trouve au milieu du désert des Ossements de la forêt de Terokkar.",
     ["T"] = "La récupération des os",
   },
   [10031] = {
-    ["D"] = "Nombre d\'esprits des draeneï ont été corrompus par l\'explosion d\'Auchindoun, et errent dans le désert, rongés par d\'horribles tourments.$B$B$N, je vous implore de leur rendre le repos. Détruisez les esprits perdus et les squelettes de Roués qui hantent le désert des Ossements au-delà des murailles d\'Auchindoun.$B$BQuoi ? Vous pensez qu\'il serait préférable de les laisser errer ainsi, aveugles et à l\'agonie ?$B$BLorsque vous aurez terminé, retournez voir Soolaveen à la caravane de réfugiés, et racontez-lui ce que vous aurez fait.",
+    ["D"] = "Détruisez 10 Esprits perdus et 10 Squelettes roués, puis parlez à Soolaveen à la Caravane de réfugiés, dans le désert des Ossements de la forêt de Terokkar.",
     ["O"] = "Détruisez 10 Esprits perdus et 10 Squelettes roués, puis parlez à Soolaveen à la Caravane de réfugiés, dans le désert des Ossements de la forêt de Terokkar.",
     ["T"] = "Aider les Perdus à trouver leur chemin",
   },
@@ -19388,12 +19422,12 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Tuer le Conseil des ombres !",
   },
   [10044] = {
-    ["D"] = "La grande-mère m\'a demandé de vous transmettre un message. Elle veut vous parler, immédiatement.$B$BMa volonté a été affaiblie, mais ne vous y trompez pas, $N, si vous la mettez en colère, je viendrai vous tuer avec toutes les troupes dont je pourrais disposer. Elle est dans la grande salle.$B$B<Garrosh vous montre un grand bâtiment au nord.>$B$BÉcoutez-la attentivement, et obéissez-lui.",
+    ["D"] = "Parlez à la grande-mère Geyah et écoutez ce qu\'elle a à vous dire.",
     ["O"] = "Parlez à la grande-mère Geyah et écoutez ce qu\'elle a à vous dire.",
     ["T"] = "Une visite à la grande-mère",
   },
   [10045] = {
-    ["D"] = "Mère Kashur veut vous parler, $N. Mais avant que ce ne soit possible, il va falloir que vous collectiez des herbes qui me permettront de fabriquer une potion qui élargira vos perceptions, afin que vous puissiez communier avec les esprits.$B$BVous devez vous procurer de la racine d\'olemba de Terokkar, de la canneberge du marécage de Zangar, des palmes telaari de Nagrand et de l\'épine-de-dragon des Tranchantes. J\'ai noté sur ce parchemin tout ce qui est susceptible de vous être utile quant à la culture de ces herbes. Revenez me voir lorsque vous aurez les matières premières.",
+    ["D"] = "La grande-mère Geyah de Garadar en Nagrand vous a demandé de cueillir 1 Racine d\'Olemba, 1 Canneberge, 1 Palme telaari et 1 Épine-de-dragon.",
     ["O"] = "La grande-mère Geyah de Garadar en Nagrand vous a demandé de cueillir 1 Racine d\'Olemba, 1 Canneberge, 1 Palme telaari et 1 Épine-de-dragon.",
     ["T"] = "Composants matériels",
   },
@@ -19668,7 +19702,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Lorsque les esprits parlent",
   },
   [10102] = {
-    ["D"] = "Mes énergies se sont dispersées au fil des siècles, et un vide a lentement grandi à ma place, dévorant les âmes avoisinantes. J\'ai vu des générations d\'âmes orques absorbées par le vortex sans rien pouvoir faire. Il y a peu, mes ennemis ont dompté le vortex et s\'en sont servis pour enrôler d\'innombrables serviteurs du vide dans leur Légion ardente.$B$BIl faut libérer les esprits des orcs et mettre un terme à ce cycle. La solution se trouve entre les mains d\'A\'dal, un autre naaru. J\'ai senti son essence dans l\'antique cité de Shattrath, dans la forêt de Terokkar.",
+    ["D"] = "Parlez à A\'dal à Shattrath.",
     ["O"] = "Parlez à A\'dal à Shattrath.",
     ["T"] = "Un secret dévoilé",
   },
@@ -19723,7 +19757,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Une faveur personnelle",
   },
   [10113] = {
-    ["D"] = "« Allez donc nous trouver quelques provisions », qu\'il a dit. J\'ai failli me faire tuer vingt fois avant d\'arriver dans cet endroit ! Les Roués ne sont pas le peuple le plus hospitalier du monde, mais au moins, ils n\'essayent pas de vous écorcher vif.$B$BBref, je n\'y retourne pas. La chasse au gros gibier, c\'est fini pour moi. Si vous allez au nord-est vers le marécage de Zangar et que vous tombez sur le safari de Nesingwary, dites-leur que « Fusil » démissionne.$B$BVous pourriez peut-être même prendre ma place ! Bonne chance, $Gétranger:étrangère;.",
+    ["D"] = "Jones « Fusil » veut que vous parliez à Hemet Nesingwary au safari de Nesingwary, en périphérie du nord-est de Nagrand.",
     ["O"] = "Jones « Fusil » veut que vous parliez à Hemet Nesingwary au safari de Nesingwary, en périphérie du nord-est de Nagrand.",
     ["T"] = "Le safari de Nesingwary",
   },
@@ -19903,7 +19937,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Mission : Être le messager",
   },
   [10149] = {
-    ["D"] = "Savez-vous ce qui se serait passé si vous n\'aviez pas intercepté cette missive, $N ?$B$B<Danath hoche la tête.>$B$BLa totalité de l\'armée de la Légion des Flammes infernales aurait frappé à notre porte. Nous n\'aurions eu aucune chance de survivre à un assaut pareil.$B$BIl n\'y a qu\'un seul moyen de s\'assurer que ces ordres n\'atteignent jamais le Front de la Légion. Vous devez voyager jusqu\'aux bassins d\'Aggonar, loin au nord-ouest d\'ici, et tuer cet Arazzius.$B$BFaites cela, et vous recevrez une citation.",
+    ["D"] = "Le commandant de corps Danath Trollemort au bastion de l\'Honneur dans la péninsule des Flammes infernales vous a demandé de tuer Arazzius le Cruel.",
     ["O"] = "Le commandant de corps Danath Trollemort au bastion de l\'Honneur dans la péninsule des Flammes infernales vous a demandé de tuer Arazzius le Cruel.",
     ["T"] = "Mission : Point final",
   },
@@ -20213,7 +20247,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Ville de la Lumière",
   },
   [10212] = {
-    ["D"] = "Je dois mettre les choses en ordre avant de partir. Retournez voir la grande-mère et dites-lui que son petit-fils arrive.",
+    ["D"] = "Retournez voir la grande-mère Geyah à Garadar en Nagrand.",
     ["O"] = "Retournez voir la grande-mère Geyah à Garadar en Nagrand.",
     ["T"] = "Héros des Mag\'har",
   },
@@ -20298,7 +20332,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Le cor de bataille",
   },
   [10231] = {
-    ["D"] = "Ramdor ? Mmm, que je réfléchisse, Ramdor… Ah oui, le prêtre de mort. Pourquoi veut-il le livre ? Enfin ça n\'a pas d\'importance. Oui, je vous ai menti, et non, je n\'ai pas le livre. Je ne l\'ai plus, en tout cas. On me l\'a volé. Sans doute l\'un de ces abjects réfugiés.$B$BEt de plus, Auchindoun est morte à présent. Le livre ne sert à rien. Si vous le trouvez, vous pouvez le garder.$B$BComme je le disais, j\'ai vu d\'aucuns de ces ruffians fouiner du côté de la terrasse la semaine passée. Entamez vos recherches auprès d\'eux. Ils sont probablement en train de jouer aux dés dans les bas-fonds.",
+    ["D"] = "Ezekiel dit que le livre a été volé. Votre meilleure piste serait de trouver les ruffians et de voir s\'ils ont des informations à ce sujet.",
     ["O"] = "Ezekiel dit que le livre a été volé. Votre meilleure piste serait de trouver les ruffians et de voir s\'ils ont des informations à ce sujet.",
     ["T"] = "Quel livre ? Je ne vois pas de livre.",
   },
@@ -21048,7 +21082,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Partir pour le front",
   },
   [10383] = {
-    ["D"] = "Hello. You should find out about those wabbits.",
+    ["D"] = "Hello.  You should find out about those wabbits.",
     ["O"] = "Speak with Jonathan LeCraft about the wabbits.",
     ["T"] = "This is a Breadcrumb!",
   },
@@ -21073,7 +21107,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Le tueur de saccageurs gangrenés",
   },
   [10388] = {
-    ["D"] = "J\'espère que vous avez apprécié le vol, $Gl\'ami:l\'amie;. Un messager est arrivé en votre absence, on dirait que Nazgrel a trouvé un nouveau moyen d\'employer vos compétences. Vous feriez mieux de retourner à Thrallmar pour voir ça avec lui. J\'ai l\'impression que la Légion ne fait que s\'échauffer.",
+    ["D"] = "Retournez à Thrallmar et allez parler à Nazgrel.",
     ["O"] = "Retournez à Thrallmar et allez parler à Nazgrel.",
     ["T"] = "Retour à Thrallmar",
   },
@@ -21133,7 +21167,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Le cœur des ténèbres",
   },
   [10400] = {
-    ["D"] = "L\'honorable Scrute-dimensions m\'a parlé des périls que vous avez traversés, $N... et du nouvel ennemi que vous avez découvert. Si l\'on peut en croire Kryv, cet « Arazzius le Cruel » est tout aussi puissant et maléfique que les ennemis que les Fils de Lothar ont déjà affrontés.$B$BVous battrez-vous pour nous, $N ? Affronterez-vous ce seigneur-légion, lui infligerez-vous la justice de la Lumière ? Si oui, vous le trouverez aux bassins d\'Aggonar. Si non, c\'est sa malfaisance qui vous trouvera.",
+    ["D"] = "Tuez Arazzius le Cruel aux bassins d\'Aggonar puis retournez voir le commandant de corps Danath Trollemort au donjon du Bastion de l\'Honneur.",
     ["O"] = "Tuez Arazzius le Cruel aux bassins d\'Aggonar puis retournez voir le commandant de corps Danath Trollemort au donjon du Bastion de l\'Honneur.",
     ["T"] = "Suzerain",
   },
@@ -21183,7 +21217,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "L\'aide d\'Ishanah",
   },
   [10411] = {
-    ["D"] = "Autour de la manaforge en ruine, vous verrez des infiltrations causées par Dimensius. La vase suintante occupe les bassins qui entourent Ultris. Directement sous les bassins, là où se trouve maintenant le lieu de rassemblement de l\'Ethereum, vous trouverez davantage encore d\'infiltrations sous la forme de rebut du Vide.$B$BLa meilleure méthode pour s\'en débarrasser est d\'utiliser des électrochocs pour décomposer les gelées en globules. Utilisez cet élixir pour renforcer vos attaques avec de l\'électricité. La décharge résultante rendra aux gelées leur forme brute. Détruisez les globules !",
+    ["D"] = "Le chercheur Navuud du poste de garde du Protectorat au Raz-de-Néant vous a demandé de détruire 30 Globules de rebut du Vide et 30 Globules de vase suintante.",
     ["O"] = "Le chercheur Navuud du poste de garde du Protectorat au Raz-de-Néant vous a demandé de détruire 30 Globules de rebut du Vide et 30 Globules de vase suintante.",
     ["T"] = "Le bien-fondé des électrochocs !",
   },
@@ -21238,7 +21272,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Armes gangrenées",
   },
   [10422] = {
-    ["D"] = "Le capitaine Tyralius est parti avec un peloton de soldats au sud en direction de lieu de rassemblement de l\'Ethereum il y a de cela 10 jours. Nous n\'avons pas eu de nouvelles de lui ou de ses hommes depuis.$B$BLa probabilité qu\'ils aient été victimes d\'une embuscade et tués est grande, mais j\'obtiens des relevés étranges sur mes instruments.$B$BJe pense qu\'il s\'agit d\'un signal de détresse, mais on ne peut pas toujours se fier à ces engins. Si Tyralius est encore en vie, ils le détiennent dans l\'une de leurs prisons. Vous devrez trouver la prison et l\'ouvrir avec une clé, que vous trouverez sûrement sur le gardien.",
+    ["D"] = "Captain Tyralius took a platoon of soldiers south towards the Ethereum Staging Grounds 10 days ago. We haven\'t heard from him or his crew since.$B$BChances are good that they were ambushed and killed but I\'m getting a curious reading from my instruments.$B$BI think it\'s a distress signal but these things have been wrong before. If Tyralius is still alive, they\'re keeping him in one of their prisons. You\'ll have to locate the prison and open it with a key, probably found on the warden.",
     ["O"] = "Flesh Handler Viridius at the Protectorate Watch Post in Netherstorm has asked that you find and free Captain Tyralius.",
     ["T"] = "Le capitaine Tyralius",
   },
@@ -21318,7 +21352,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Une recette de destruction",
   },
   [10438] = {
-    ["D"] = "Tenez, $N. Prenez ce disrupteur de phase et montez ! Le drake du Néant du Protectorat vous emmènera assez près d\'Ultris pour que vous puissiez larguer le disrupteur en haut du conduit du Vide.$B$BLarguez autant de charges de disrupteur que possible pour vous assurer de sa destruction complète !$B$BQuand vous serez $Gprêt:prête;, parlez au drake du Néant et il décollera.$B$BSi vous manquez la cible, vous devrez me demander d\'autres bombes avant de pouvoir repartir.",
+    ["D"] = "Le professeur Dabiri, du Poste de garde du Protectorat de Raz-de-Néant, veut que vous utilisiez votre Disrupteur de phase lorsque vous serez à portée du Conduit du Vide du sommet d\'Ultris. Larguez autant de charges du disrupteur de phase que possible pour vous assurer de sa destruction totale. Les charges du disrupteur de phase atteignent automatiquement le conducteur du Vide du moment que vous êtes assez près pour l\'utiliser.$B$BRetournez voir le professeur Dabiri si vous réussissez !",
     ["O"] = "Le professeur Dabiri, du Poste de garde du Protectorat de Raz-de-Néant, veut que vous utilisiez votre Disrupteur de phase lorsque vous serez à portée du Conduit du Vide du sommet d\'Ultris. Larguez autant de charges du disrupteur de phase que possible pour vous assurer de sa destruction totale. Les charges du disrupteur de phase atteignent automatiquement le conducteur du Vide du moment que vous êtes assez près pour l\'utiliser.$B$BRetournez voir le professeur Dabiri si vous réussissez !",
     ["T"] = "Sur des ailes néantines",
   },
@@ -21518,7 +21552,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Prouver votre force",
   },
   [10480] = {
-    ["D"] = "Les nagas illidari de la région ont pris le contrôle de la seule source d\'eau pure de la vallée d\'Ombrelune.$B$BDirectement au nord d\'ici, vous trouverez le repaire des nagas : Glissentaille. Autour de Glissentaille se trouvent des poches d\'eaux agitées qui crient de douleur. C\'est près de ces poches que les esprits des eaux enragés errent à présent.$B$BVoyagez jusqu\'à Glissentaille et utilisez le totem des esprits pour capturer les âmes aquatiques. Vous trouverez la plus grande concentration de ces esprits près de la citerne de Glissentaille.",
+    ["D"] = "Le soigneterre Torlok à l\'Autel de la damnation dans la vallée d\'Ombrelune veut que vous utilisiez le Totem des esprits pour capturer 5 Âmes aquatiques.",
     ["O"] = "Le soigneterre Torlok à l\'Autel de la damnation dans la vallée d\'Ombrelune veut que vous utilisiez le Totem des esprits pour capturer 5 Âmes aquatiques.",
     ["T"] = "Esprits des eaux enragés",
   },
@@ -21603,7 +21637,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Les adieux d\'Anthion",
   },
   [10497] = {
-    ["D"] = "L\'âme de Valthalak était conservée dans cette amulette.$B$BAveuglés par la cupidité, nous l\'avons brisée en trois, sans savoir que nous allions être maudits pour cela.$B$BLe seul moyen d\'arrêter le sort lancé par Valthalak est de réunir le médaillon. Retournez voir Mokvar et dites-lui que Bodley est sa seule chance de retrouver les morceaux manquants. Voyez avec lui pour les récompenses.$B$BQuant à moi, pour une fois, je vais reposer en paix. Je vous souhaite bonne chance, vous en aurez bien besoin !",
+    ["D"] = "Retournez voir Mokvar à Orgrimmar avec des Bottes de Sancteforge, des Cuissards de Sancteforge et des Spallières de Sancteforge.",
     ["O"] = "Retournez voir Mokvar à Orgrimmar avec des Bottes de Sancteforge, des Cuissards de Sancteforge et des Spallières de Sancteforge.",
     ["T"] = "Les adieux d\'Anthion",
   },
@@ -21683,7 +21717,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Pinter les Flèchelame",
   },
   [10513] = {
-    ["D"] = "J\'ignore comment nous pouvons nous procurer le sort dont les esprits ont parlé, $N. Pour tout vous dire, je ne sais même pas pourquoi nous nous lancerions dans une telle quête.$B$B<Torlok regarde au loin, perdu dans ses pensées.>$B$BHrm... Ce sera difficile et risqué mais c\'est peut-être notre seule chance. Il y a cet orc que j\'ai vu visiter cette région. Je lui ai brièvement parlé en une occasion. C\'est un ermite qui affirme vivre au-dessus de la citerne de Glissentaille au nord-est. Allez trouver cet orc, Oronok Cœur-fendu.$B$BComme dit, ce sera difficile.",
+    ["D"] = "Partez à la recherche d\'Oronok Cœur-fendu sur la Saillie brisée, au nord de la Citerne de Glissentaille.",
     ["O"] = "Partez à la recherche d\'Oronok Cœur-fendu sur la Saillie brisée, au nord de la Citerne de Glissentaille.",
     ["T"] = "Oronok Cœur-fendu",
   },
@@ -21823,7 +21857,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "La Formule de damnation - la charge d\'Ar\'tor",
   },
   [10541] = {
-    ["D"] = "Je vous remercie, $Ghéros:héroïne;. Sans vous, mon esprit serait resté pour toujours dans cet endroit maudit.$B$B<Ar\'tor vous tend un coffret spectral.>$B$BPrenez ceci et remettez-le à mon père à la ferme, loin au nord-est, au-dessus de la citerne de Glissentaille... À l\'intérieur se trouvent Lohn\'goron et la seconde partie de la Formule.$B$BIl sera triste d\'apprendre ma mort. Promettez-moi que vous lui donnerez l\'assurance que mon âme est libre. Dites-lui que je vois les terrains de chasse et qu\'ils sont magnifiques. Dites-lui que je l\'attends là-bas...",
+    ["D"] = "Apportez le Coffret d\'Ar\'tor à Oronok Cœur-fendu à la Ferme d\'Oronok dans la vallée d\'Ombrelune.",
     ["O"] = "Apportez le Coffret d\'Ar\'tor à Oronok Cœur-fendu à la Ferme d\'Oronok dans la vallée d\'Ombrelune.",
     ["T"] = "La Formule de damnation - Second fragment retrouvé",
   },
@@ -21863,7 +21897,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "La triste vérité",
   },
   [10550] = {
-    ["D"] = "Je ne vous avais pas menti. L\'œuf était excellent. Où l\'avez-vous trouvé ?$B$BEnfin, si vous avez un jour besoin de chardon sanglant, vous savez où me trouver et quoi m\'apporter.$B$BVoici un fagot de la marchandise. Rapportez-le à votre bienfaiteur.",
+    ["D"] = "Rapportez le Fagot de chardons sanglants à Borak, fils d\'Oronok sur le pont près de la Halte de l\'éclipse dans la vallée d\'Ombrelune.",
     ["O"] = "Rapportez le Fagot de chardons sanglants à Borak, fils d\'Oronok sur le pont près de la Halte de l\'éclipse dans la vallée d\'Ombrelune.",
     ["T"] = "Le fagot de chardons sanglants",
   },
@@ -21993,7 +22027,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "La Cage de la gardienne",
   },
   [10576] = {
-    ["D"] = "<Borak vous regarde attentivement.>$B$BÇa va être délicat, mais je devrais y arriver.$B$BJe peux vous déguiser en un de ces elfes de sang illidari, $N. Mais nous allons d\'abord avoir besoin de plusieurs pièces de leur armure. Il faut impérativement que l\'armure soit propre. Pas de taches de sang ! Nous devons éviter les soupçons.$B$BApportez-moi l\'équipement et je m\'occuperai du reste du déguisement.$B$BUne fois le déguisement assemblé, vous devez apporter le message au grand commandant - en personne.",
+    ["D"] = "Borak, fils d\'Oronok, du pont qui se trouve près de la halte de l\'Éclipse dans la vallée d\'Ombrelune, vous demande de récupérer 6 pièces d\'Armure éclipsion.",
     ["O"] = "Borak, fils d\'Oronok, du pont qui se trouve près de la halte de l\'Éclipse dans la vallée d\'Ombrelune, vous demande de récupérer 6 pièces d\'Armure éclipsion.",
     ["T"] = "Le bonneteau d\'Ombrelune",
   },
@@ -22318,7 +22352,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Messagers d\'Ombrelune",
   },
   [10644] = {
-    ["D"] = "Toutes les histoires qui courent sur la vie de Teron Fielsang ne sont pour la plupart que cela : des histoires. Nous ne savons pas ce qui est arrivé à Fielsang après son retour sur Draenor.$B$BLa seule chose dont nous sommes certains est qu\'il est déjà mort une fois.$B$BJ\'ai entendu les éclaireurs du coin parler d\'un ancien esprit orc qui réside à l\'autel des Ombres, loin à l\'est, de l\'autre côté des champs de l\'Aile-du-Néant et du défilé de l\'Aile-du-Néant. Prenez les lunectoplasmes et retrouvez cet orc. Il aura sûrement de nouvelles informations sur Fielsang.",
+    ["D"] = "Zorus le Judicateur du bastion des Marteaux-hardis dans la vallée d\'Ombrelune vous demande de trouver l\'Esprit ancien d\'Ombrelune.$B$BSi vous perdez vos Lunectoplasmes, Zorus l\'adjudicateur peut vous en fabriquer une nouvelle paire.",
     ["O"] = "Zorus le Judicateur du bastion des Marteaux-hardis dans la vallée d\'Ombrelune vous demande de trouver l\'Esprit ancien d\'Ombrelune.$B$BSi vous perdez vos Lunectoplasmes, Zorus l\'adjudicateur peut vous en fabriquer une nouvelle paire.",
     ["T"] = "Teron Fielsang - Mythes et légendes",
   },
@@ -22463,7 +22497,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Franchement, ça n\'a aucun sens…",
   },
   [10673] = {
-    ["D"] = "Gnomus connaît l\'existence de cette dimeurtrodon énorme, et il a l\'intention de la manger ! Il a dû réussir à voir ce que je voyais grâce à son arcano-scorp. Écoutez, je n\'ai pas le temps de vous expliquer. Il est fou et cette folie risque de nous coûter la seule tenue qui ressemble de près ou de loin à une combinaison de saut ignifugée.$B$BRetournez près du ruisseau de lave près de Baa\'ri, et trouvez la trace de Gangréchine la Très-Grande. Quand vous l\'aurez repérée, tuez-la et rapportez-moi sa peau.$B$BN\'essayez pas de me raisonner, $N, je n\'écoute plus rien.",
+    ["D"] = "Le chercheur Tiorus du village d\'Ombrelune dans la vallée d\'Ombrelune vous demande de tuer Gangréchine la Très-Grande et de récupérer la Peau de Gangréchine.",
     ["O"] = "Le chercheur Tiorus du village d\'Ombrelune dans la vallée d\'Ombrelune vous demande de tuer Gangréchine la Très-Grande et de récupérer la Peau de Gangréchine.",
     ["T"] = "Gangréchine la Très-Grande",
   },
@@ -22645,7 +22679,7 @@ pfDB["quests"]["frFR-tbc"] = {
   [10709] = {
     ["D"] = "Alors vous venez du monde qui se trouve de l\'autre côté de la Porte ? Et vous connaissez Rexxar. Oh oui, son nom m\'est très familier.$B$BC\'est mon fils, voyez-vous.$B$BIl a fait son choix il y a très longtemps. Il n\'est pas l\'un d\'entre nous, et il n\'est pas le bienvenu ici. Nous avons déjà assez d\'ennuis, avec les ogres Masse-sanglante.$B$BSachez ceci : être un sang-mêlé ne fait pas de vous un Mok\'Nathal.",
     ["O"] = "Return to Rexxar at Thunderlord Stronghold in Blade\'s Edge Mountains.",
-    ["T"] = "Reunion",
+    ["T"] = "Réunion",
   },
   [10710] = {
     ["D"] = "J\'ai effectué quelques réglages sur le Zephyrium Capacitorium, et je suis prêt à effectuer un autre essai ! Vous voulez vous rendre utile ?$B$BLe prochain vol devrait être court, mais intense !$B$BHum... et même si je suis certain qu\'il n\'y a aucun danger... J\'ai ce, heu, cette décharge qu\'il faudrait que vous signiez. C\'est juste une formalité, je vous assure !$B$BQue la chance soit avec vous ! Allez voir Rally pour vous faire envoyer en l\'air, et revenez me voir quand l\'expérience sera terminée !",
@@ -22963,7 +22997,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Elfe de sang + Géant = ???",
   },
   [10775] = {
-    ["D"] = "Les chevaucheurs de griffons doivent rentrer au bastion des Marteaux-hardis pour se préparer à la phase suivante de notre assaut. Ce qu\'il faudrait que vous me trouviez maintenant, ce sont les tabards que portent ces elfes de sang.$B$BQuand vous en aurez récupéré suffisamment, appelez un chevaucheur de griffon en utilisant le lance-fusée marteau-hardi. Préparez-vous à faire un peu d\'espionnage, $R !",
+    ["D"] = "The gryphon riders must return to Wildhammer Stronghold to prepare for the next phase of our assault. What I need from you now are the tabards that these blood elves wear.$B$BWhen you have collected enough tabards, call for a gryphon rider using the Wildhammer flare gun. Prepare yourself for a bit of espionage, $r!",
     ["O"] = "Collect 10 Illidari Tabards and then use the Wildhammer Flare Gun to signal another Wildhammer Gryphon Rider.$B$BSpeak with Thane Yoregar at Wildhammer Stronghold in Shadowmoon Valley should you lose your Wildhammer Flare Gun and require a replacement.",
     ["T"] = "Les tabards des Illidari",
   },
@@ -23688,7 +23722,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Terokkarantula",
   },
   [10922] = {
-    ["D"] = "Ohé ! Dites donc voir, vous avez l\'air solide sur vos pattes, $R. Avec mon équipe, on se cherche des gardes du corps pour nous protéger pendant qu\'on va faire des fouilles, au nord. Ça paye bien. Tout ce que vous aurez à faire, c\'est à vous assurer que mes employés ne seront pas boulottés par de sales bêtes.$B$BSi on rentre sans pertes, Nanowitz vous payera bien – c\'est le gars juste là.",
+    ["D"] = "Escortez Leglas et son équipe et protégez-les pendant les fouilles. Si vous réussissez, retournez voir Nanowitz au Camp de base sha\'tari.",
     ["O"] = "Escortez Leglas et son équipe et protégez-les pendant les fouilles. Si vous réussissez, retournez voir Nanowitz au Camp de base sha\'tari.",
     ["T"] = "En fouillant dans les os",
   },
@@ -23728,7 +23762,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Martelheurt",
   },
   [10930] = {
-    ["D"] = "J\'avais raison ! Les carcasses que vous avez rapportées sont bien celles de bébés vers. Vous savez ce que ça signifie ? Ça signifie qu\'il y a un adulte quelque part ! Je pense que nous pourrions l\'attirer si nous trouvons la nourriture qui lui convient. Voyons… quelque chose de gros ! Oui !$B$BJ\'ai vu des sabots-fourchus à l\'est, de l\'autre côté du désert des Ossements. Allez me tuer un sabot-fourchu. Lorsqu\'il sera mort, servez-vous des tambours. Avec un peu de chance, le grand ver viendra se nourrir. Si vous parvenez à le tuer, rapportez-moi ses organes !",
+    ["D"] = "Nanowitz, du Camp de base sha\'tari du désert des Ossements, veut que vous trouviez des Organes d\'énorme ver des ossements.$B$BIl veut aussi qu\'on lui rapporte son Martelheurt.",
     ["O"] = "Nanowitz, du Camp de base sha\'tari du désert des Ossements, veut que vous trouviez des Organes d\'énorme ver des ossements.$B$BIl veut aussi qu\'on lui rapporte son Martelheurt.",
     ["T"] = "Le gros ver des ossements",
   },
@@ -24003,7 +24037,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Parler avec l\'ogre",
   },
   [10985] = {
-    ["D"] = "Assurez-vous qu\'Akama et Maiev pénètrent bien dans le Temple noir de la Vallée d\'Ombrelune une fois que les forces de Xi\'ri auront fait diversion.",
+    ["D"] = "<Xi\'ri émet une lumière scintillante tandis que les forces de l\'Aldor et des Clairvoyants qui l\'entourent mettent ses ordres à exécution. Son armée est prête à faire reculer les troupes d\'Illidan et à faire diversion pour Akama. Le naaru attend votre demande pour lancer l\'attaque.>",
     ["O"] = "Assurez-vous qu\'Akama et Maiev pénètrent bien dans le Temple noir de la Vallée d\'Ombrelune une fois que les forces de Xi\'ri auront fait diversion.",
     ["T"] = "Une distraction pour Akama",
   },
@@ -24343,7 +24377,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Debout, surveillant !",
   },
   [11054] = {
-    ["D"] = "Alors c\'est vous le nouveau surveillant, hein ? Bon. Y a une chose dont tous les bons surveillants ont besoin : un moyen de faire régner la discipline. Avant que vous n\'alliez mettre du plomb dans la tête à tous ces péons, vous aurez besoin de votre « bidule ». Chaque surveillant doit récupérer les matières premières pour fabriquer son « bidule ». Vous ne ferez pas exception.$B$BJe vais avoir besoin de cuir granuleux et de la peau durcie de Tyrantus. Vous trouverez Tyrantus dans l\'écodôme Champlointain, tout au nord du Raz-de-Néant.",
+    ["D"] = "Le Surveillant-chef Tadboue du campement des Gueules-de-dragon dans la vallée d\'Ombrelune veut que vous lui apportiez 10 morceaux de Cuir granuleux et 1 Peau de Tyrantus durcie.",
     ["O"] = "Le Surveillant-chef Tadboue du campement des Gueules-de-dragon dans la vallée d\'Ombrelune veut que vous lui apportiez 10 morceaux de Cuir granuleux et 1 Peau de Tyrantus durcie.",
     ["T"] = "Être surveillant : savoir faire les bons choix",
   },
@@ -24358,7 +24392,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Le marché d\'Hazzik",
   },
   [11057] = {
-    ["D"] = "Nous vous félicitons pour votre zèle à vouloir aider Ogri\'la, $C. Cependant, nous avons une faveur à vous demander avant que nous puissions accepter votre assistance.$B$BPlus bas, nos frères sont réduits en esclavage par les Fils de Gruul. Je vous en prie, allez parler à Mog\'dorg le Ratatiné, qui dirige la résistance ogre contre leurs maîtres gronns.$B$BVous le trouverez au sommet de la tour, sur le côté oriental de l\'arène du Cercle de sang.",
+    ["D"] = "We commend your zeal in wanting to help out here in Ogri\'la, $c.  However, we have a favor to ask of you before we can accept your assistance.$B$BDown below our brethren are enslaved to the Sons of Gruul.  Please, speak with Mog\'dorg the Wizened, who is leading an ogre resistance against their gronn masters.$B$BSeek him out atop the tower on the eastern side of the Circle of Blood arena.",
     ["O"] = "Chu\'a\'lor has asked you to speak with Mog\'dorg the Wizened atop one of the towers just outside the Circle of Blood in the Blade\'s Edge Mountains.",
     ["T"] = "Des ennuis en contrebas",
   },
@@ -24423,7 +24457,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Course Gueule-de-dragon : Chef d\'escadrille Ichman",
   },
   [11070] = {
-    ["D"] = "Trois ans de sang, de sueur et de larmes. De larmes, surtout… C\'est incroyable ce qu\'un soldat chevronné peut lancer comme pleurnichements dès qu\'on parle de guerre totale.$B$B« Ils sautent sur notre tour avec leurs montures ! » « Mais pourquoi leur base est aussi bien défendue ? » « Ils prennent notre hutte de guérison, je me tire ! »$B$BLopettes...$B$BJe me suis arraché de Pleurnicheville à la seconde où la Porte des ténèbres s\'est ouverte. Maintenant, je suis un as chez les Gueules-de-dragon. Si tu veux être champion, il va falloir me vaincre.$B$BOn y va dès que tu es prêt.",
+    ["D"] = "Suivez le Chef d\'escadrille Mulverick en tentant de rester sur votre monture volante. Si vous parvenez à le battre, informez Ja\'y Nosliw de votre victoire au Campement des Gueules-de-dragon dans la vallée d\'Ombrelune.",
     ["O"] = "Suivez le Chef d\'escadrille Mulverick en tentant de rester sur votre monture volante. Si vous parvenez à le battre, informez Ja\'y Nosliw de votre victoire au Campement des Gueules-de-dragon dans la vallée d\'Ombrelune.",
     ["T"] = "Course Gueule-de-dragon : Chef d\'escadrille Mulverick",
   },
@@ -24548,7 +24582,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "La menace vient d\'en haut",
   },
   [11097] = {
-    ["D"] = "Prenez ces médailles des Clairvoyants. Mor\'ghor aura besoin d\'une preuve de « victoire » lorsque ce sera terminé. Il saura qu\'elles viennent de cadavres de soldats des Clairvoyants.$B$BMaintenant, il ne reste plus qu\'à tirer la fusée de signal pour alerter les écumeurs gueules-de-dragon. Nous les écraserons lorsque vous serez $Gprêt:prête;. Vous n\'avez qu\'à me donner le signal.",
+    ["D"] = "Aidez le Commandant Hobb et les Clairvoyants à défendre le Sanctum des Étoiles. Une fois que l\'ensemble des forces Gueule-de-dragon aura été vaincu, retournez voir le suzerain Mor\'ghor au Campement des Gueules-de-dragon avec les Médailles de Clairvoyant.",
     ["O"] = "Aidez le Commandant Hobb et les Clairvoyants à défendre le Sanctum des Étoiles. Une fois que l\'ensemble des forces Gueule-de-dragon aura été vaincu, retournez voir le suzerain Mor\'ghor au Campement des Gueules-de-dragon avec les Médailles de Clairvoyant.",
     ["T"] = "Le plus mortel des pièges",
   },
@@ -24598,7 +24632,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Quitter la voie du défenseur",
   },
   [11107] = {
-    ["D"] = "Je ne suis même pas digne de remettre un message qui vous est destiné, $Gseigneur:madame;. Veuillez pardonner mon insolence. Le suzerain Mor\'ghor requiert votre présence en ses quartiers sur le champ !",
+    ["D"] = "Parlez au Suzerain Mor\'ghor au Campement des Gueules-de-dragon dans la vallée d\'Ombrelune.",
     ["O"] = "Parlez au Suzerain Mor\'ghor au Campement des Gueules-de-dragon dans la vallée d\'Ombrelune.",
     ["T"] = "À genoux devant le généralissime !",
   },
@@ -24943,9 +24977,9 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Jouer à la poupée",
   },
   [11196] = {
-    ["D"] = "Les Amani, y reconstruisent leurs forces et y z\'ont un nouveau seigneur d\'guerre pour les diriger, $N. L\'appellent Daakara l\'Invincible, on verra bien s\'y porte bien c\'nom.$B$BD\'abord, faut vaincre tous ces lieutenants pour libérer l\'passage avant d\'affronter ce Daakara. Faut l\'vaincre et mettre fin aux ambitions des Zandalari et des Amani !",
+    ["D"] = "Écoute-moi bien, y\'a aut\'chose que l\'vieux Dasnob aimerait qu\'tu fasses.$B$BZungam, mon bon-à-rien d\'cousin, l\'est coincé dans Zul\'Aman. Et pis toujours vivant, j\'ai vu sa fusée d\'détresse la nuit dernière !$B$BJ\'devrais l\'laisser moisir pour m\'avoir mis dans c\'pétrin, mais y m\'doit un paquet d\'pognon.$B$BFais c\'que tu peux pour l\'aider, pis j\'m\'occuperai d\'faire la collecte !",
     ["O"] = "Triomphez du nouveau Seigneur de guerre des Amani, Daakara.",
-    ["T"] = "Le seigneur de guerre des Amani",
+    ["T"] = "TEMP X",
   },
   [11198] = {
     ["D"] = "Monstre marin ou pas, nous n\'allons pas risquer notre cargaison. J\'ai ordonné à nos meilleurs tireurs de se préparer pour une confrontation avec ce Tethyr. Les artilleurs ont ajouté trois mortiers aux défenses du port.$B$BJe vais donner l\'ordre d\'allumer la lampe du phare. Si Tethyr attaque effectivement, votre travail sera d\'actionner les mortiers pour l\'abattre avant qu\'il ne tue tous les tireurs. Mais, à votre place, j\'éviterais de rester trop longtemps au même endroit. L\'utilisation des mortiers attirera sans doute son attention.",
@@ -25641,6 +25675,21 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "En dépit de tous nos efforts, Kael\'thas est sur le point d\'arriver à ses sinistres fins. Le Puits de soleil a été réactivé en prévision de l\'arrivée du Trompeur.$B$BDevant moi, sous A\'dal, vous pouvez voir une représentation de l\'état actuel des défenses du Puits de soleil. De puissantes barrières ont été érigées, gênant nos attaques contre les salles intérieures. Si notre monde a jamais eu besoin d\'aide, c\'est maintenant !$B$BPrésentez-vous à l\'archimage Ne\'thul sur l\'île de Quel\'Danas, au nord de Quel\'Thalas.",
     ["O"] = "Présentez-vous à l\'Archimage Ne\'thul sur l\'Île de Quel\'Danas, au nord de Quel\'Thalas.$B$BLes maîtres de vol de Forgefer et de Lune-d\'argent peuvent vous y envoyer.",
     ["T"] = "Le Trompeur entre en scène",
+  },
+  [11551] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to deactivate Agamath, The First Gate",
+    ["O"] = "Bring to me the essence of immortals, found only on the most powerful beings of this world! With the essence in hand, my mages will be able to dismantle Agamath, ultimately collapsing the gateway and unlocking the way further into the sunwell.",
+    ["T"] = "Agamath, the First Gate",
+  },
+  [11552] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to break Rohendor, the Second Gate",
+    ["O"] = "Bring to me the essence of immortals, found only on the most powerful beings of this world! Rohendor cannot withstand the combined force of our mages!",
+    ["T"] = "Rohendor, the Second Gate",
+  },
+  [11553] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to eventually dismantle Archonisus, the Final Gate",
+    ["O"] = "Bring to me the essence of immortals ÔÇö found only on the most powerful beings of this world ÔÇö and Archonisus is sure to crumble!",
+    ["T"] = "Archonisus, the Final Gate",
   },
   [11554] = {
     ["D"] = "",
@@ -26418,7 +26467,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Attraper plus de torches",
   },
   [11926] = {
-    ["D"] = "Hello, fire juggler!  Are you having fun and making fiery mayhem?  That\'s what I like to hear!  Now, do you think you\'re an expert at torch tossing?  Then I have a test for you...$B$BYou know the rules: toss torches at the marked braziers.  This time, however, you have a little more time and a LOT more braizers to hit.$B$BReady?",
+    ["D"] = "Salut, $Gjongleur:jongleuse; de feu ! J\'espère que vous vous amusez bien et que vous faites des étincelles ? Très bien ! Dites, est-ce que vous vous prenez pour $Gun expert:une experte; en lancer de torches ? Parce que j\'ai une épreuve pour vous…$B$BVous connaissez la règle : lancer des torches sur les braseros marqués. Mais cette fois, vous avez un peu plus de temps… et beaucoup plus de braseros à toucher.$B$B$GPrêt:Prête; ?",
     ["O"] = "Gagnez le jeu de lancer de torches, puis parlez au Maître avaleur de flammes.",
     ["T"] = "Lancer plus de torches",
   },
@@ -26527,13 +26576,18 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Utilisez le Taste-bière sans alcool pour toucher la C.E.R.V.O.I.S.E. 5 fois, puis revenez parler à Bizzle Soulevite.",
     ["T"] = "Buvez, éliminez !",
   },
+  [12192] = {
+    ["D"] = "The Dark Irons took a beating!  As they rushed back to the Grim Guzzler, a portion of their transport fell off.  More importantly, you managed to keep the camp safe... today.$b$bHead over to Bizzle and explain your heroic triumph over the Dark Iron dwarves.",
+    ["O"] = "Talk to Bizzle Quicklift in the Brewfest camp.",
+    ["T"] = "This One Time, When I Was Drunk...",
+  },
   [12193] = {
     ["D"] = "La fête des Brasseurs, ce n\'est pas que des courses de béliers, c\'est aussi boire de bons coups ! Quand vous aurez un moment, apportez ce bon-cadeau à Belbi Coupecircuit. Elle est presque au fond du campement de la fête des Brasseurs. Si vous n\'arrivez pas à la voir, ne vous inquiétez pas, c\'est elle qui vous verra.$B$BDe toute façon, allez lui remettre ce bon-cadeau pour avoir votre bock de la fête des Brasseurs. Elle sera aussi très heureuse de gérer toutes les autres transactions de la fête des Brasseurs.",
     ["O"] = "Échangez le bon-cadeau à Belbi Coupecircuit dans le campement de la fête des Brasseurs.",
     ["T"] = "Dites, il n\'y aurait pas un souvenir, cette année ?",
   },
   [12194] = {
-    ["D"] = "Not only are we supplying brew to everyone, we also have steins to give out! Beautiful, commemorative steins all obtained by the most legal of means! Here\'s a voucher for one.$B$BTalk to Blix near the back of the Brewfest camp. He\'s pretty strange, even more so now that he\'s always wearing those goggles. He\'ll handle the voucher for you, and any other Brewfest transaction.",
+    ["D"] = "Non seulement nous fournissons de la bière à tout le monde, mais nous avons aussi des bocks à offrir ! De jolis bocks commémoratifs que nous nous sommes procurés de façon entièrement légale ! Voilà un bon pour l\'un d\'entre eux.$B$BAllez voir Blix, vers le fond du campement de la fête des Brasseurs. Il est un peu bizarre, surtout depuis qu\'il porte sans arrêt ces drôles de lunettes. Il s\'occupera de changer votre bon, ou de toute autre transaction liée à la fête des Brasseurs.",
     ["O"] = "Échangez le Bon pour un bock de la fête des Brasseurs à Blix Réparouage à l\'arrière du campement de la fête des Brasseurs.",
     ["T"] = "Dites, il n\'y aurait pas un souvenir, cette année ?",
   },
@@ -26548,7 +26602,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Le club de la Bière du mois",
   },
   [12318] = {
-    ["D"] = "Nos espions ont mis au jour un complot diabolique, $N ! Les nains Sombrefer veulent détruire notre fête des Brasseurs bien-aimée !$B$BCoren Navrebière, à la tête d\'une famille de brasseurs renégats, a rassemblé les nains des Profondeurs de Rochenoire. Leurs infâmes taupes mécaniques nous attaquent sans arrêt.$B$BNotre espion se trouve au Sinistre écluseur, une taverne située dans les Profondeurs de Rochenoire. Il en saura plus sur le complot de Navrebière.$B$BTrouvez notre espion, sauvez la fête des Brasseurs !",
+    ["D"] = "Parlez avec l\'Espion de la fête des Brasseurs, au Sinistre écluseur dans les Profondeurs de Rochenoire.",
     ["O"] = "Parlez avec l\'Espion de la fête des Brasseurs, au Sinistre écluseur dans les Profondeurs de Rochenoire.",
     ["T"] = "Sauvez la fête des Brasseurs !",
   },
@@ -26563,7 +26617,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "La navre-bière de Navrebière",
   },
   [12513] = {
-    ["D"] = "Don Carlos vous a, par inadvertance, chargé de défier et vaincre son jeune alter ego de la Hautebrande d\'antan. Lorsque ce sera fait, apportez le Chapeau de don Carlos à Don Carlos, à Tanaris, comme preuve de votre victoire.",
+    ["D"] = "Mon chapeau ? Oui, il a un style peu commun, je sais. Il vient de loin… Peu de couturiers savent comment le fabriquer.$B$BLorsque j\'étais jeune et passionné, je le portais comme un défi permanent. Beaucoup tentaient de me vaincre pour me prendre mon chapeau… Mais personne n\'a jamais réussi.$B$BMais c\'était il y a bien longtemps. Je suis un vieil homme, maintenant : je bois, je pêche, mais je ne fais plus de duels.",
     ["O"] = "Don Carlos vous a, par inadvertance, chargé de défier et vaincre son jeune alter ego de la Hautebrande d\'antan. Lorsque ce sera fait, apportez le Chapeau de don Carlos à Don Carlos, à Tanaris, comme preuve de votre victoire.",
     ["T"] = "Un joli chapeau…",
   },

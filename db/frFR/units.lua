@@ -9068,6 +9068,7 @@ pfDB["units"]["frFR"] = {
   [17598] = "Renn\'az",
   [17635] = "Commandant de Lordaeron",
   [17647] = "Soldat de Lordaeron",
+  [17660] = "Gryphon squelettique",
   [17688] = "Doodad de prise de la tour de la Couronne (Horde)",
   [17691] = "Doodad de prise du Mur d\'est (Horde)",
   [17697] = "Doodad de prise du Col du nord (Horde)",
@@ -9078,4 +9079,5 @@ pfDB["units"]["frFR"] = {
   [17804] = "Ecuyer Rowe",
   [17995] = "Vétéran de Lordaeron",
   [17996] = "Guerrier de Lordaeron",
+  [18039] = "Esprit de victoire",
 }

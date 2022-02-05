@@ -21134,6 +21134,31 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Bringt die Flamme von Darnassus zum Geschichtenerzähler.",
     ["T"] = "Raubt die Flamme von Darnassus",
   },
+  [9333] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Handschuhe der Argentumdämmerung",
+  },
+  [9334] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Gesegnetes Zauberöl",
+  },
+  [9335] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Geweihte Wetzsteine",
+  },
+  [9336] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Erstklassiger Heiltrank",
+  },
+  [9337] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Erstklassiger Manatrank",
+  },
   [9338] = {
     ["D"] = "",
     ["O"] = "",
@@ -21145,6 +21170,11 @@ pfDB["quests"]["deDE"] = {
     ["T"] = "Der Lohn des Diebes",
   },
   [9341] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Wappenrock der Argentumdämmerung",
+  },
+  [9343] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Wappenrock der Argentumdämmerung",
@@ -21164,6 +21194,11 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Bringt die Flamme von Sturmwind zu (NAME).",
     ["T"] = "Der Lohn des Diebes",
   },
+  [9367] = {
+    ["D"] = "Die Zeit des Sonnenwendfests ist wieder angebrochen!$b$bJedes Jahr werden, wie die Tradition es verlangt, Flammenbewahrer auserkoren, die die Freudenfeuer in unseren Hauptstädten hüten. Auch wenn Feuer in ganz Azeroth brennen, so müssen unsere stets die heißesten und hellsten von allen sein, um dieser Zeit im Jahr ausreichend Ehrerbietung zu erweisen.$b$bIch hätte da übrigens eine Aufgabe für Euch. Mir ist noch nicht zu Ohren gekommen, ob die Feuer in allen Hauptstädten auch wirklich ordentlich brennen. Reist selbst dorthin und wärmt Euch im Schein der Flammen - überzeugt Euch, dass sie ausreichend heiß sind!",
+    ["O"] = "Wärmt Euch an den Freudenfeuern in Stormwind, Ironforge und Darnassus. Sprecht anschließend mit einem Meister der Lehren innerhalb der Hauptstädte.",
+    ["T"] = "Das Fest des Feuers",
+  },
   [9368] = {
     ["D"] = "Die Zeit des Sonnenwendfests ist wieder angebrochen!$b$bJedes Jahr werden, wie die Tradition es verlangt, Flammenbewahrer auserkoren, die die Freudenfeuer in unseren Hauptstädten hüten. Auch wenn Feuer in ganz Azeroth brennen, so müssen unsere stets die heißesten und hellsten von allen sein, um dieser Zeit im Jahr ausreichend Ehrerbietung zu erweisen.$b$bIch hätte da übrigens eine Aufgabe für Euch. Mir ist noch nicht zu Ohren gekommen, ob die Feuer in allen Hauptstädten auch wirklich ordentlich brennen. Reist selbst dorthin und wärmt Euch im Schein der Flammen - überzeugt Euch, dass sie ausreichend heiß sind!",
     ["O"] = "Wärmt Euch an den Freudenfeuern in Orgrimmar, Thunder Bluff und Undercity. Sprecht anschließend mit einem Geschichtenerzähler innerhalb der Hauptstädte.",
@@ -21178,6 +21213,16 @@ pfDB["quests"]["deDE"] = {
     ["D"] = "Ihr seid ziemlich eifrig, oder? Solltet Ihr Euch noch einmal in die Tiefen wagen, so bin ich gerne bereit, Euch dafür zu belohnen.$b$bSucht die Freudenfeuer in Stratholme, Scholomance, dem Düsterbruch und den Hallen der Schwarzfelsspitze auf. Ich erwarte Eure Rückkehr, $n.",
     ["O"] = "Findet und berührt die Freudenfeuer innerhalb der Schwarzfelsspitze, dem Düsterbruch, Scholomance und Stratholme. Sprecht dann mit dem Flammenbewahrer.",
     ["T"] = "Licht im Dunkeln",
+  },
+  [9388] = {
+    ["D"] = "Heute lodern zahlreiche Flammen in der Welt, $N. Die Feuer, die am schwierigsten zu unterhalten sind, leuchten grün; werden sie nicht ständig beaufsichtigt, brennen sie nicht lange. Versichert Euch für unseren Flammenbewahrer, dass die Smaragdfeuer in Kalimdor auch weiterhin lodern, eh?$b$bIhr findet sie in der Nähe von Ratchet im Brachland, unweit der Meistergleve in Dunkelküste, im Wald von Ashenvale bei der Brücke nahe des Außenpostens der Silverwing und entlang der Hauptstraße im Steinkrallengebirge, in der Nähe der Straße, die zur Scherwindklippe führt.",
+    ["O"] = "Sucht die Freudenfeuer in Ashenvale, dem Brachland, der Dunkelküste und dem Steinkrallengebirge auf. Sprecht anschließend mit dem Flammenbewahrer.",
+    ["T"] = "Lodernde Flammen in Kalimdor",
+  },
+  [9389] = {
+    ["D"] = "Die Feuer des Sonnenwendfests lassen das Land traditionsgemäß im Licht unzähliger Flammen erstrahlen. Manche behaupten, dass die grünen Flammen die besten seien, da sie so schwierig zu unterhalten sind und eine solch ungewöhnliche Farbgebung haben.$b$bVersichert Euch für unseren Flammenbewahrer, dass die Feuer in den östlichen Königreichen auch weiterhin lodern. Ihr findet sie in der Nähe von Dun Modr im Sumpfland, unweit von Pyrewood im Silberwald, bei den Klippen zum Leuchtturm in Westfall und nahe dem zerstörten Turm im Vorgebirge von Hillsbrad.",
+    ["O"] = "Sucht die Freudenfeuer im Vorgebirge von Hillsbrad, im Silberwald, in Westfall und dem Sumpfland auf. Sprecht anschließend mit dem Flammenbewahrer.",
+    ["T"] = "Lodernde Flammen in den Östlichen Königreichen",
   },
   [9415] = {
     ["D"] = "Gehört Ihr zu Marschall Bluewalls neuen Rekruten? Natürlich.$b$bAuf was wartet Ihr noch? Gute Soldaten verlieren ihr Leben in der Wüste. Freut es Euch nicht, bald dazuzugehören?$b$bLos jetzt, macht Euch auf den Weg... und trocknet dabei nicht aus.",

@@ -69,7 +69,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["O"] = "Найдите половинку подвески Ловкости водяного облика и половинку подвески Выносливости водяного облика. Поговорите с жителями Лунной поляны, чтобы узнать, где могут находиться эти предметы.$B$BСложите из половинок подвеску Морского Льва. Для этого вам надо находиться рядом со святилищем Ремула.$B$BОтнесите собранную подвеску Дендриту Блеску Звезд в деревню Ночная Гавань что на Лунной поляне.",
   },
   [31] = {
-    ["T"] = "Водный облик (ночной эльф друид)",
+    ["T"] = "Водный облик (таурен друид)",
   },
   [32] = {
     ["T"] = "Возвышение силитидов",
@@ -613,7 +613,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Возвращение к мировому судье",
   },
   [363] = {
-    ["D"] = "Ты вовремя $Gпришел:пришла; в себя. Мы собирались уже швырнуть тебя в огонь вместе с остальными, но, похоже, тебе посчастливилось избежать этой участи. $B$BМеня зовут Мордо, я смотритель склепа Могильника. А ты больше не $Gраб:рабыня; Короля-лича. $B$BПоговори с жрецом Тени Сарвисом в часовне у подножья холма, он расскажет тебе о том, что тебе нужно знать.$B$BЧтобы выбраться из склепа, поднимайся наверх по ступенькам. Затем следуй вниз по дороге, пока не найдешь часовню.",
+    ["D"] = "About time you woke up. We were ready to toss you into the fire with the others, but it looks like you made it.$b$bI am Mordo, the caretaker of the crypt of Deathknell. And you are the Lich King\'s slave no more.$b$bSpeak with Shadow Priest Sarvis in the chapel at the base of the hill, he will tell you more of what you must know.",
   },
   [364] = {
     ["D"] = "Мы, Отрекшиеся, ведем войну против армии Плети, ведомой Королем-личом: против поднятых некромантией войск нежити, против злобных зверей севера и истерзанных призраков. $B$BСеверную часть деревни оккупировали безмозглые твари Плети, их нужно уничтожить. Сокруши их, и пусть твое сердце не ведает пощады. Прежде они были нашими братьями и сестрами, но теперь Падшие – всего лишь рабы Короля-лича.",
@@ -928,6 +928,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["O"] = "Отнесите запечатанное рекомендательное письмо Дарталии Брагору Кровопалу в Подгород.",
   },
   [551] = {
+    ["D"] = "На этот пергамент наложено заклинание, из-за чего надписи на нем невозможно расшифровать. Вы можете разобрать только одно слово вверху страницы: $B$BНагаз$B$B",
     ["O"] = "Отнесите заколдованный пергамент Хранителю мудрости Диббсу в Южнобережье, что в Предгорьях Хилсбрада.",
   },
   [555] = {
@@ -2359,6 +2360,9 @@ pfDB["quests"]["ruRU-tbc"] = {
   [1268] = {
     ["O"] = "Доложите о подозрительных следах возле таверны \"Последний привал\" Крогу из деревни Гиблотопь.",
   },
+  [1269] = {
+    ["D"] = "Солнечный зайчик блеснул в глаза из-под обломков. Вы достаете из-под мусора бляху с золотым якорем на белой эмали – символом Терамора.$B$BПод якорем выбито имя владельца: \"Лейтенант Павал Рит\".",
+  },
   [1270] = {
     ["D"] = "Ура! Наконец-то нашелся кто-то, кто не хочет меня съесть!$B$BНе могу отбиться от тутошнего зверья, а ты, $Gпарень:подруга;, как раз мне в этом и поможешь. Гоблину из Кабестана по кличке Мебок Миззрикс нужны листья болотного боба для зелья или еще какой надобности, – меня это, честно говоря, не колышет: он неплохо платит, а я неплохо знаю болота, потому и впрягся.$B$BВот только не успел я еще найти эти листья, как меня уже окружили. Мне до зарезу необходим кто-то кто поможет выбраться отсюда и прикроет спину, пока я буду искать для Мебока эти листья.",
   },
@@ -3125,7 +3129,6 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["O"] = "Откройте сейф Люция, достаньте Руну Воровства и вернитесь к Люцию в Приозерье.",
   },
   [2298] = {
-    ["D"] = "Отправляйтесь в Штормград и разыщите Рензика Ножа.",
     ["O"] = "Отправляйтесь в Штормград и разыщите Рензика Ножа.",
   },
   [2339] = {
@@ -3224,11 +3227,8 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["O"] = "Принесите три клешни скорпока, две единицы потрохов стервятника и одно обожженное легкое вепря волшебнику крови Дразиалу.",
   },
   [2586] = {
-    ["D"] = "Принесите три клешни скорпока, две единицы потрохов стервятника и одно обожженное легкое вепря волшебнику крови Дразиалу.",
+    ["D"] = "Ты $Gжив:жива;! Это поистине хорошая новость! Полагаю, тебе нужно еще скорпоковой настойки?$B$BОтлично, $N, тогда снова ступай в пустоши и не возвращайся, пока не заполучишь три клешни скорпока, две меры потрохов стервятника и одно обожженное легкое вепря.",
     ["O"] = "Принесите три клешни скорпока, две единицы потрохов стервятника и одно обожженное легкое вепря волшебнику крови Дразиалу.",
-  },
-  [2602] = {
-    ["D"] = "Принесите десять мозгов василиска и потроха двух стервятников волшебнице крови Линоре.",
   },
   [2603] = {
     ["D"] = "В этих опаленных землях смерть воистину крылата, |3-6($R). Я много раз наблюдала, как черные убийцы и костеглоды пируют на телах павших исследователей – иногда пожирая наиболее отвратительные и разложившиеся останки трупов. Удивительно все же, как их внутренние органы справляются с заразой, царящей в этих землях?$B$BПомоги мне в моих исследованиях, $N! Мне нужны потроха! Понадобятся также две челюсти гиены в качестве основы для состава.$B$BТвои усилия будут вознаграждены вдвойне.",
@@ -3439,7 +3439,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["O"] = "Убейте 10 зеленых слякочей и 10 нефритовых слизнюков, после чего доложитесь Фраггару Громовой Мантии, который ждет вас на Заоблачном пике.",
   },
   [2882] = {
-    ["D"] = "На карте изображена южная часть берега, а ниже имеется элегантная подпись…$B$B$BЮжней Шестеренки,$BНа юге от дома$BНайдешь ты флаг, мачту и кости – знакомо?$BКопай прямо там, если смелости хватит –$BЗа все тебе злато Куэрго отплатит. $BПоищешь ты ключ и конечно найдешь,$BНо прежде немало крови прольешь.",
+    ["D"] = "На карте изображена южная часть берега, а ниже имеется элегантная подпись…$B$BЮжней Шестеренки,$BНа юге от дома$BНайдешь ты флаг, мачту и кости – знакомо?$BКопай прямо там, если смелости хватит –$BЗа все тебе злато Куэрго отплатит. $BПоищешь ты ключ и конечно найдешь,$BНо прежде немало крови прольешь.",
     ["T"] = "Куэрго \"Золотистое\"",
   },
   [2903] = {
@@ -3934,6 +3934,9 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["D"] = "Если ты $Gготов:готова; приступить к изготовлению потрясающих изделий – то ты $Gобратился:обратилась; по адресу! Ты опытный инженер, тут вопросов нет, $N. Но я надеюсь проанализировать твои работы, чтобы найти способ отточить гномскоориентированную технику ваших будущих трудов. Мне нужны следующие образцы: шесть мифриловых трубок, точный прицел и два усовершенствованных манекена-мишени.$B$BСдай мне эти предметы, и я признаю тебя истинным гномов-инженером.",
     ["O"] = "Принесите 6 мифриловых трубок, точный прицел и 2 усовершенствованных манекена-мишени Карлсу Пропеллерзу в Пиратскую Бухту.",
   },
+  [3646] = {
+    ["D"] = "Эскадрилья готова, $n. Твоя задача – взять маяк и установить его в восточном кратере центрального плацдарма. Защищай маяк до тех пор, пока эскадрилья не подтвердит его координаты!",
+  },
   [3661] = {
     ["D"] = "Дикие совухи – очень непредсказуемые существа, $N. Они могут быть мягкими и пушистыми, но если что-то дорогое для них окажется под угрозой, в них проснется настоящий зверь!$B$BГоворят, что этих животных создала сама Элуна, и я хочу узнать, правда это, или нет.$B$BМного диких совухов обитает во Внутренних землях – целые популяции примитивных, злобных и диких совухов. Не хотите ли отправиться туда и принести мне их перьев?",
     ["O"] = "Соберите во Внутренних землях 15 перьев диких совухов и отнесите их Эреласу Янтарному Небу в деревню Рут\'теран.",
@@ -4056,7 +4059,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["D"] = "Что такое? Линкен ЗАБЫЛ ВСЕ? $B$BЯсно, потеря памяти... $B$BВот его меч. Он не закончен. Я знаю, кто может закончить его, но... поговорить с ним – непростая задача. $B$BОднако я знаю, кто сможет тебе помочь. Не буду сейчас вдаваться в подробности, скажу только, что тебе необходимо любым способом заполучить эликсир Видере. Единственный, кто может помочь тебе в этом – Греган Пивоплюй. Его нелегко отыскать, но говорят, что недавно его видели в лесах Фераласа.",
   },
   [3911] = {
-    ["D"] = "Отправляйтесь в Глубины Черной горы и добудьте 10 мер сущности Стихий. Стоит начать поиски с големов и их создателей. Вивиан Лягроб также бормотала что-то про элементалей.",
+    ["D"] = "У меня есть работа для тех, кто не боится заглянуть в глубины, $N. $B$BКлан Черного Железа научился создавать чрезвычайно мощных големов. $B$BИсходя из отчетов, присланных нашими шпионами, дворфы используют уникальные источники энергии, чтобы придать своим гоблинам невероятную разрушительную силу. $B$BПодумать только, что мы могли бы сделать с нашими поганищами, заполучи мы сущность Стихий, которую они используют... Можешь перевернуть город вверх дном, но я должна получить эту сущность. Без нее можешь не возвращаться! Награда будет сопоставима с затраченными усилиями.",
     ["O"] = "Отправляйтесь в Глубины Черной горы и добудьте 10 мер сущности Стихий. Стоит начать поиски с големов и их создателей. Вивиан Лягроб также бормотала что-то про элементалей.",
     ["T"] = "Последний элемент",
   },
@@ -4716,7 +4719,7 @@ pfDB["quests"]["ruRU-tbc"] = {
   [5061] = {
     ["D"] = "Ты $Gзавершил:завершила; обучение, которое проходят все начинающие друиды прежде, чем они смогут принимать водный облик. Теперь возвращайся к своему наставнику, Матренгилу Медвежьей Лапе в Дарнас. Покажи ему свою подвеску и докажи, что ты $Gготов:готова; усвоить его уроки. Он завершит твое обучение, благодаря которому ты станешь $Gединым:единой; с водой.$B$BДоброго пути, $Gюный друид:дева-друид;. Мы еще встретимся.",
     ["O"] = "Вернитесь в Дарнас и покажите Матренгилу Медвежьей Лапе свою подвеску Морского Льва.",
-    ["T"] = "Водный облик (ночной эльф друид)",
+    ["T"] = "Водный облик (таурен друид)",
   },
   [5062] = {
     ["D"] = "Арикара очень опасна, и мы должны как можно быстрее разделаться с ней. Для того чтобы привлечь это чудовище, тебе нужно будет разжечь священный огонь жизни.$B$BСобери немного редкой огненной агавы и отнеси ее Магате Зловещий Тотем. Она живет в Громовом Утесе, на Вершине Старейшин. Магата – очень могущественная шаманка, владеющая тайной приготовления зачарованного порошка из огненной агавы.$B$BОгненную агаву можно собрать на Кипящем озере, это к востоку отсюда.",
@@ -4804,7 +4807,7 @@ pfDB["quests"]["ruRU-tbc"] = {
   },
   [5101] = {
     ["D"] = "Ха! Что, думаешь, это тестовое задание? А здесь, между прочим, даже написано, кого надо убить!$B$BДаже не надейся, что легко отделаешься!$B$BУбей 10 овец (1933) и без их трупов даже не показывайся!",
-    ["O"] = "Убейте 6 овец для Бенни и бегите со всех ног!$B$B$B$B$BНасчет ног я пошутил.",
+    ["O"] = "Убейте 6 овец для Бенни и бегите со всех ног!$B$BНасчет ног я пошутил.",
     ["T"] = "Великое тестовое задание... Судьбы!",
   },
   [5102] = {
@@ -5029,6 +5032,9 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["D"] = "Вы открываете мешок. Внутри – различные инструменты пытки. Ваше внимание привлекает странный предмет – сосуд крови, все еще теплый.$B$BПожалуй, Саркофф могла бы заинтересоваться вашей находкой.",
     ["O"] = "Отнесите мешок ужасов Еве Саркофф в Каэр Дарроу.",
     ["T"] = "Мешок ужасов Крастинова",
+  },
+  [5384] = {
+    ["T"] = "Киртонос Глашатай (заклинание, визуальный эффект)",
   },
   [5441] = {
     ["D"] = "Проклятые батраки! Им велено валить лес, но они все время пытаются отлынивать. Мне нужен кто-то, кто их приструнит. Ты, |3-6($R), мне, пожалуй, годишься. На тебе дубинку – ступай и всыпь этим бездельникам. Хороший тумак заставит их взяться за ум! Управишься – не забудь вернуть дубинку.$B$BПроклятые лентяи...",
@@ -5796,7 +5802,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["O"] = "Могиль Быстроруб поручил принести ему следующее:$B$B10 гигантских яиц. Их можно отыскать у рухов Танариса или других крупных птиц.$B$B10 кусков острого мяса моллюсков. Разумеется, его добывают из раковин моллюсков!$B$B20 кусков альтеракского сыра. Из сыроварни!$B$BСобрав все составляющие, возвращайтесь к Диргу.",
   },
   [6611] = {
-    ["D"] = "Пойдите в Прибамбасск в пустыне Танарис и поговорите с Могилем Быстрорубом насчет продвижения в поварской карьере.",
+    ["D"] = "Как может Замджа научить тебя всему на свете? Ты знаешь все кулинарные заговоры Замджи и требуешь новых!$B$BЗамджа ничем помочь не может. Пусть $Gтолстый:толстая:r; |3-6($R) пойдет в Прибамбасск. Найдешь там мелкого гоблина по имени Могиль – вот он тебе и поможет, обжора.$B$BКогда станешь великим поваром – вернешься, научишь Замджу всему, что знаешь, а? Ну, ступай, ступай.",
     ["O"] = "Пойдите в Прибамбасск в пустыне Танарис и поговорите с Могилем Быстрорубом насчет продвижения в поварской карьере.",
   },
   [6621] = {
@@ -5921,7 +5927,7 @@ pfDB["quests"]["ruRU-tbc"] = {
   },
   [7002] = {
     ["D"] = "While some of our soldiers are busy capturing wolves for the stable master, others must provide for the simple necessities that riding requires. I am speaking of riding harnesses, of course.$B$BYou must strike at the indigenous rams of the region. The very same rams that the Stormpike cavalry uses as mounts!$B$BSlay them and return to me with their hides. Once we have gathered enough hides, we will fashion harnesses for the riders. The Frostwolf Wolf Riders will ride once more!",
-    ["O"] = "Я хочу опробовать свой портативный крошшер не меньше тебя, |3-6($R), но для того, чтобы его сделать, мне нужны материалы – много материалов!$B$BСказать точнее, целая гора тория, мифрила и железа. Кроме того, по паровой пиле на каждый крошшер. Их можно достать на лесопилке.$B$BДо того, как меня поймали, я здесь все разнюхал и обнаружил, что куча паровых пил есть на лесозаготовках Грозовой Вершины.",
+    ["O"] = "Slay them and return to me with their hides. The same rams that the Stormpike cavalry uses as mounts!",
   },
   [7003] = {
     ["D"] = "Нет, если я собираюсь здесь остаться, мне решительно необходимо что-то сделать с великанами! Они губят весь бизнес.$B$BЯ взял за основу разновидность гномского уменьшающего луча, но внес в конструкцию гоблинские усовершенствования! Дабы самому избежать различных неудобств – например, смерти, – я поручаю его испытание вам. Испробуйте его на любых великанах, каких найдете в Фераласе. После уменьшения вы обнаружите на месте великанов их маленькие копии – принесите их мне!",
@@ -5941,7 +5947,7 @@ pfDB["quests"]["ruRU-tbc"] = {
   },
   [7026] = {
     ["D"] = "The Stormpike Brigade cannot charge into battle bareback! We require harnesses for our mounts, after all, we are not savages.$B$BWhile we could easily slay the rams that roam near our base for the leather required to fashion a harness, doing so would be idiotic. We need those rams for mounts.$B$BYou must strike at our enemy\'s base, slaying the frostwolves they use as mounts and taking their hides. Return their hides to me so that harnesses may be made for the cavalry. Go!",
-    ["O"] = "Я хочу опробовать свой портативный крошшер не меньше тебя, |3-6($R), но для того, чтобы его сделать, мне нужны материалы – много материалов!$B$BСказать точнее, целая гора тория, мифрила и железа. Кроме того, по паровой пиле на каждый крошшер. Их можно достать на лесопилке.$B$BДо того, как меня поймали, я здесь все разнюхал и обнаружил, что куча паровых пил есть на лесозаготовках Грозовой Вершины.",
+    ["O"] = "Slaying the frostwolves they use as mounts and return their hides to me.",
   },
   [7027] = {
     ["D"] = "Посмотри на эти стойла, $N! Они совершенно пустые! У бригады Грозовой Вершины нет скаковых баранов, а значит, нет и кавалерии.$B$BТы $Gдолжен:должна; помочь нам, солдат! Возьми учебный ошейник и отправляйся в самую глушь этой долины. Найди альтеракских баранов, которые там бродят, и поймай их при помощи ошейника. Как поймаешь барана, возвращайся ко мне, я поставлю его в стойла.$B$BКогда баранов будет достаточно, я извещу командира всадников. В твоих силах возродить нашу кавалерию!",
@@ -6069,11 +6075,11 @@ pfDB["quests"]["ruRU-tbc"] = {
   },
   [7385] = {
     ["D"] = "You have the option of offering larger quantities of the blood taken from our enemies. I will be glad to accept gallon sized offerings, $N.",
-    ["O"] = "Я хочу опробовать свой портативный крошшер не меньше тебя, |3-6($R), но для того, чтобы его сделать, мне нужны материалы – много материалов!$B$BСказать точнее, целая гора тория, мифрила и железа. Кроме того, по паровой пиле на каждый крошшер. Их можно достать на лесопилке.$B$BДо того, как меня поймали, я здесь все разнюхал и обнаружил, что куча паровых пил есть на лесозаготовках Грозовой Вершины.",
+    ["O"] = "You must strike down our enemies and bring to me their blood.",
   },
   [7386] = {
     ["D"] = "There are times which you may be entrenched in battle for days or weeks on end. During those longer periods of activity you may end up collecting large clusters of the Frostwolf\'s storm crystals.$B$BThe Circle accepts such offerings, $N.",
-    ["O"] = "Я хочу опробовать свой портативный крошшер не меньше тебя, |3-6($R), но для того, чтобы его сделать, мне нужны материалы – много материалов!$B$BСказать точнее, целая гора тория, мифрила и железа. Кроме того, по паровой пиле на каждый крошшер. Их можно достать на лесопилке.$B$BДо того, как меня поймали, я здесь все разнюхал и обнаружил, что куча паровых пил есть на лесозаготовках Грозовой Вершины.",
+    ["O"] = "The Frostwolf soldiers carry elemental charms called storm crystals. We can use the charms to conjure Ivus. Venture forth and claim the crystals, $N!",
   },
   [7424] = {
     ["D"] = "Я хочу опробовать свой портативный крошшер не меньше тебя, |3-6($R), но для того, чтобы его сделать, мне нужны материалы – много материалов!$B$BСказать точнее, целая гора тория, мифрила и железа. Кроме того, по паровой пиле на каждый крошшер. Их можно достать на лесопилке.$B$BДо того, как меня поймали, я здесь все разнюхал и обнаружил, что куча паровых пил есть на лесозаготовках Грозовой Вершины.",
@@ -6396,7 +6402,7 @@ pfDB["quests"]["ruRU-tbc"] = {
   },
   [7838] = {
     ["D"] = "Avast Lubber!   Bring me 12 trinkets of the Arena Master and then ye shall be a Grandmaster of the Gurubashi Arena!   Arrrr!",
-    ["T"] = "Великий повелитель арены",
+    ["T"] = "Знак великого мастера арены",
   },
   [7839] = {
     ["D"] = "Эти негодяи из племени Порочной Ветви напали на нашу деревню и украли мои инструменты! У меня, конечно, есть запасные, но тот набор, что они уволокли, был мне дорог как память. Когда я был еще мальчишкой, мне спас жизнь один гном, а потом он подарил мне тот набор.$B$BЯ очень хочу вернуть их, $N, я без них как без рук!$B$BМархор сказал, что мои инструменты видели в храмах Агол\'вата и Шаол\'вата, они оба на северо-востоке Внутренних земель.$B$BПожалуйста, верните мне инструменты!",
@@ -6599,7 +6605,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["D"] = "В нашем племени одежда – это символ могущества и власти. Она сшита из лучших материалов и усилена заклинаниями, которые дают нам мощь. Одежды мастеров иллюзий отражают самую сущность творимых ими заклятий. Легенды гласят, что одежды мастера иллюзий постоянно меняет свой вид.$B$BЯ могу дать тебе такое одежды, $N... но сначала покажи племени, на что ты $Gспособен:способна;. Принеси мне из Зул\'Гуруба Знаки Силы!",
   },
   [8081] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "Войну выигрывают солдаты – любой солдат вам это скажет. Скажет он вам и то, что битва, которую ведут с плохим оружием или на пустой желудок, проиграна прежде, чем началась!$B$BВот почему так важна Низина Арати. В этой низине есть ключевые точки, где сосредоточены важные ресурсы. Металл, оружие, пища, древесина – все это необходимо и все это можно добыть там.$B$BИ вот чего я хочу от вас, $N. Отправляйтесь в Низину Арати, выиграйте битву, удержав больше баз, чем это удастся врагам, и принесите мне ящик с ресурсами.",
     ["O"] = "Выиграйте битву за Низину Арати, добудьте ящик с ресурсами из Арати и принесите его сержанту Макчисту в Опорный пункт.",
   },
   [8109] = {
@@ -6629,9 +6635,6 @@ pfDB["quests"]["ruRU-tbc"] = {
   [8118] = {
     ["T"] = "Ожерелье Видений Вудресса",
   },
-  [8124] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
   [8144] = {
     ["T"] = "Зандаларский талисман власти над Тенями",
   },
@@ -6639,28 +6642,19 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["D"] = "Войну выигрывают солдаты – любой солдат вам это скажет. Скажет он вам и то, что битва, которую ведут с плохим оружием или на пустой желудок, проиграна прежде, чем началась!$B$BВот почему так важна Низина Арати. В этой низине есть ключевые точки, где сосредоточены важные ресурсы. Металл, оружие, пища, древесина – все это необходимо и все это можно добыть там.$B$BИ вот чего я хочу от вас, $N. Отправляйтесь в Низину Арати, выиграйте битву, удержав больше баз, чем это удастся врагам, и принесите мне ящик с ресурсами.",
   },
   [8157] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "Войну выигрывают солдаты – любой солдат вам это скажет. Скажет он вам и то, что битва, которую ведут с плохим оружием или на пустой желудок, проиграна прежде, чем началась!$B$BВот почему так важна Низина Арати. В этой низине есть ключевые точки, где сосредоточены важные ресурсы. Металл, оружие, пища, древесина – все это необходимо и все это можно добыть там.$B$BИ вот чего я хочу от вас, $N. Отправляйтесь в Низину Арати, выиграйте битву, удержав больше баз, чем это удастся врагам, и принесите мне ящик с ресурсами.",
     ["O"] = "Выиграйте битву за Низину Арати, добудьте ящик с ресурсами из Арати и принесите его сержанту Макчисту в Опорный пункт.",
   },
   [8158] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "Войну выигрывают солдаты – любой солдат вам это скажет. Скажет он вам и то, что битва, которую ведут с плохим оружием или на пустой желудок, проиграна прежде, чем началась!$B$BВот почему так важна Низина Арати. В этой низине есть ключевые точки, где сосредоточены важные ресурсы. Металл, оружие, пища, древесина – все это необходимо и все это можно добыть там.$B$BИ вот чего я хочу от вас, $N. Отправляйтесь в Низину Арати, выиграйте битву, удержав больше баз, чем это удастся врагам, и принесите мне ящик с ресурсами.",
     ["O"] = "Выиграйте битву за Низину Арати, добудьте ящик с ресурсами из Арати и принесите его сержанту Макчисту в Опорный пункт.",
   },
   [8159] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["D"] = "Войну выигрывают солдаты – любой солдат вам это скажет. Скажет он вам и то, что битва, которую ведут с плохим оружием или на пустой желудок, проиграна прежде, чем началась!$B$BВот почему так важна Низина Арати. В этой низине есть ключевые точки, где сосредоточены важные ресурсы. Металл, оружие, пища, древесина – все это необходимо и все это можно добыть там.$B$BИ вот чего я хочу от вас, $N. Отправляйтесь в Низину Арати, выиграйте битву, удержав больше баз, чем это удастся врагам, и принесите мне ящик с ресурсами.",
     ["O"] = "Выиграйте битву за Низину Арати, добудьте ящик с ресурсами из Арати и принесите его сержанту Макчисту в Опорный пункт.",
   },
   [8160] = {
     ["D"] = "Лига Аратора не жалеет средств в попытке вновь захватить контроль над Арати. Они, вместе со всеми расами Альянса, стекаются сейчас в эту отдаленную область, намереваясь распространить свои владения за пределы Опорного пункта. Мы должны остановить их, а наилучшее средство для этого – захватить их припасы.$B$BВы, $N, можете нам помочь. Отправляйтесь в Низину Арати, известную своими богатыми рудниками, плодородными почвами и умелыми ремесленниками. Захватите и удерживайте под своим контролем те базы, которые сможете, выиграйте битву и возвращайтесь ко мне с ресурсами, которые вам удастся добыть.",
-  },
-  [8163] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8164] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
-  },
-  [8165] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
   },
   [8169] = {
     ["O"] = "Нападите на рудник, лесопилку, кузницу и стойла в Низине Арати и возвращайтесь к повелительнице смерти Двайр в Павший Молот.",
@@ -6827,10 +6821,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["D"] = "Войну выигрывают солдаты – любой солдат вам это скажет. Скажет он вам и то, что битва, которую ведут с плохим оружием или на пустой желудок, проиграна прежде, чем началась!$B$BВот почему так важна Низина Арати. В этой низине есть ключевые точки, где сосредоточены важные ресурсы. Металл, оружие, пища, древесина – все это необходимо и все это можно добыть там.$B$BИ вот чего я хочу от вас, $N. Отправляйтесь в Низину Арати, выиграйте битву, удержав больше баз, чем это удастся врагам, и принесите мне ящик с ресурсами.",
   },
   [8298] = {
-    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
-  },
-  [8300] = {
-    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["D"] = "Войну выигрывают солдаты – любой солдат вам это скажет. Скажет он вам и то, что битва, которую ведут с плохим оружием или на пустой желудок, проиграна прежде, чем началась!$B$BВот почему так важна Низина Арати. В этой низине есть ключевые точки, где сосредоточены важные ресурсы. Металл, оружие, пища, древесина – все это необходимо и все это можно добыть там.$B$BИ вот чего я хочу от вас, $N. Отправляйтесь в Низину Арати, выиграйте битву, удержав больше баз, чем это удастся врагам, и принесите мне ящик с ресурсами.",
   },
   [8301] = {
     ["D"] = "Род Ноздорму инстинктивно не верит низшим расам. Хоть ты и $Gсмог:смогла; доказать мне, что у тебя задатки настоящего героя, пришло время доказать это моему повелителю.$B$BУлей Аши, улей Зора и улей Регал кишат силитидами, которые грозят нашему существованию. Убей как можно больше проклятых тварей и принеси мне фрагменты их панцирей. Когда у тебя закончится место в заплечных мешках, возвращайся и я укреплю твою решимость.",
@@ -6960,7 +6951,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["D"] = "Какой у тебя... интересный костюмчик. Несмотря на то, что ты по доброте своей помогаешь ребенку получить сладости, мне все же придется попросить тебя сделать что-нибудь!$B$BНу-ка, ну-ка... ты выглядишь $Gтаким сильным и мускулистым:такой сильной и мускулистой; в этом... наряде... посмотрим-ка на твои бицепсы! Да, давай, поиграй-ка мускулами, $Gсилач:силачка;!$B$BПоиграешь мускулами – дам тебе вкуснейшей нуги. Это отличное тыквовинское угощение!",
   },
   [8358] = {
-    ["D"] = "А, тебе нужны сладости? Ну-ну!$B$BЗаруби себе на носу: ты, конечно, занимаешься благородным делом, собираешь сласти для ребенка, но без платы ты ничего не получишь! У меня как раз имеется сладкий-пресладкий леденец троллей Черного Копья, девочка ему будет очень рада... но сначала изобрази-ка ты мне паровозик! То-то я посмеюсь! Посмотри, какой замечательный леденец – а всего-то и надо изобразить паровозик!$B$BНу-ка, |3-6($C)! Чух-чух-чух-чух!",
+    ["D"] = "A trick-or-treater!  Yeah mon!$B$BWell now, even though you\'re doing something noble and collecting candies for a sick child, I can\'t let you off the hook that easily.  I have a yummy Darkspear Gumdrop to give to the sick child... if you make a train noise for me!  Haha, yes, that\'ll be the trick!  The price of this gumdrop is one train noise!$B$BChugga-chugga, $c!",
   },
   [8359] = {
     ["D"] = "Ой, какой интересненький костюмчик! Нет, ты, конечно, $Gхороший мальчик:хорошая девочка;, раз помогаешь ребенку собрать сладости, но, боюсь, тебе все же придется выполнить для меня какое-нибудь задание, прежде чем ты получишь конфету.$B$BДай-ка подумать... У тебя такой накачанный вид в этом... костюмчике! Поиграй-ка мускулами!$B$BА я тебе за это дам вкусной оргриммарской нуги. Дети ее очень любят!",
@@ -6979,7 +6970,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["O"] = "Принесите почетные знаки каждого поля боя ордынскому вестнику войны в любую столицу Орды или в Шаттрат.",
   },
   [8371] = {
-    ["D"] = "Принесите почетные знаки каждого поля боя ордынскому вестнику войны в любую столицу Орды или в Шаттрат.",
+    ["D"] = "В войне против Орды решающей может оказаться любая битва, $Gсынок:дочка;.$B$BПобеда на одном фронте позволит захватить ресурсы, которые помогут победить и на другом. И с точностью до наоборот – любая проигранная битва может дать нашим врагам преимущество в другой.$B$BАльянсу не хватает бойцов, которые бы хорошенько поняли это... бойцов, закаленных в битвах! Отправляйся сражаться с Ордой, а когда побываешь на всех полях битвы, возвращайся ко мне.",
     ["O"] = "Принесите почетные знаки каждого поля боя ордынскому вестнику войны в любую столицу Орды или в Шаттрат.",
   },
   [8375] = {
@@ -6988,15 +6979,9 @@ pfDB["quests"]["ruRU-tbc"] = {
   [8383] = {
     ["D"] = "The Battle in Alterac Valley rages on, $N! Have you done your part as of late, $N?",
   },
-  [8384] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
-  },
   [8385] = {
-    ["D"] = "Принесите почетные знаки каждого поля боя ордынскому вестнику войны в любую столицу Орды или в Шаттрат.",
+    ["D"] = "Ah, $N. I hope you continue to lend your experience to the different battlefronts. A lot of our lads and lasses in the field look up to seasoned veterans like you.",
     ["O"] = "Принесите почетные знаки каждого поля боя ордынскому вестнику войны в любую столицу Орды или в Шаттрат.",
-  },
-  [8386] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
   },
   [8387] = {
     ["D"] = "The battle for Alterac rages on! You must return to Alterac Valley and once more drive the invaders out of Frostwolf territory, $N!",
@@ -7004,39 +6989,6 @@ pfDB["quests"]["ruRU-tbc"] = {
   [8388] = {
     ["D"] = "Many brave fighters look up to you, $N. You continue to be an example for all in the fight against the Alliance. What news do you bring from your journeys?",
     ["O"] = "Принесите почетные знаки каждого поля боя ордынскому вестнику войны в любую столицу Орды или в Шаттрат.",
-  },
-  [8389] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
-  },
-  [8390] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
-  },
-  [8391] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
-  },
-  [8392] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
-  },
-  [8397] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
-  },
-  [8398] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
-  },
-  [8404] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
-  },
-  [8405] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
-  },
-  [8406] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
-  },
-  [8407] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
-  },
-  [8408] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
   },
   [8411] = {
     ["D"] = "Добро пожаловать, |3-6($C). Расклад такой: ты несешь мне стихии и только потом я с тобой говорю.$B$BМне нужны от тебя Огонь, Воздух, Вода и Земля. Только потом я тебе буду доверять, дружище. Надо удостовериться, что ты не совсем дундук.",
@@ -7061,33 +7013,6 @@ pfDB["quests"]["ruRU-tbc"] = {
   },
   [8423] = {
     ["D"] = "*Герой окидывает тебя взглядом.*$B$BНет сомнений, ты |3-6($C). У меня для тебя есть почетная задача, но сначала необходимо испытать твою силу.$B$BГоворят, что Рексар проверял остроту своих клинков, убивая зловепря одним быстрым ударом. Теперь же я проверю твою силу, отправив тебя на охоту за зловепрями.",
-  },
-  [8431] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
-  },
-  [8432] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
-  },
-  [8433] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
-  },
-  [8434] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
-  },
-  [8435] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
-  },
-  [8440] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
-  },
-  [8441] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
-  },
-  [8442] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
-  },
-  [8443] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
   },
   [8460] = {
     ["D"] = "Фурболги Древобрюхов – единственное фурболгское племя, не затронутое порчей. Однако нынче многие расы без разбору убивают всех фурболгов подряд. И потому фурболгов Древобрюхов осталось так мало.$B$BХочешь заслужить доверие? Изгони из Оскверненного леса пораженных порчей фурболгов Мертвого Леса, и в один прекрасный день мы признаем тебя $Gсоюзником:союзницей;. Ты найдешь первое племя Мертвого Леса – воинов, землепроходцев и садовников – к западу от меня.",
@@ -7594,7 +7519,6 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Накидка бесконечной мудрости",
   },
   [8690] = {
-    ["D"] = "Принесите киражскую царскую пелерину, 2 обсидиановых идола, 5 золотых и 5 глиняных скарабеев Кейлу Стремительному Когтю в Силитус. Кроме того, необходимо заслужить как минимум почтительное отношение Круга Кенария.",
     ["O"] = "Принесите киражскую царскую пелерину, 2 обсидиановых идола, 5 золотых и 5 глиняных скарабеев Кейлу Стремительному Когтю в Силитус. Кроме того, необходимо заслужить как минимум почтительное отношение Круга Кенария.",
     ["T"] = "Плащ Надвигающейся Бури",
   },
@@ -7634,7 +7558,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Кольцо неназванных имен",
   },
   [8703] = {
-    ["D"] = "Принесите киражское кольцо власти, 2 багровых идола, 5 серебряных и 5 костяных скарабеев Зовущей Йессендре в Силитус. Кроме того, необходимо заслужить как минимум уважительное отношение Круга Кенария.",
+    ["D"] = "Я слышала, что кольца, которые носят киражские лейтенанты, дают им невероятные способности. Однако считается, что если заменить пораженные скверной драгоценные камни, вставленные в оправу, на более чистые, мощь колец возрастет еще больше.$B$BКамни, украшающие киражских идолов, вполне подойдут – они отменного качества.$B$BПринеси мне этих идолов и кольцо одного из лейтенантов, и я создам для тебя могущественный талисман, |3-6($C).",
     ["T"] = "Кольцо вечной справедливости",
   },
   [8704] = {
@@ -8553,7 +8477,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Оружие Призрачной Сосны",
   },
   [9215] = {
-    ["D"] = "РАЗЫСКИВАЕТСЯ: Капитану Гелиосу нужна голова Кел\'гаша Коварного, предводителя троллей племени Призрачной Сосны. Никаких полумер. Известно, что Кел\'гаш скрывается где-то на юге, в Зеб\'Нове.$B$B$B$BНАГРАДА: Будет, но никаких авансов!",
+    ["D"] = "РАЗЫСКИВАЕТСЯ: Капитану Гелиосу нужна голова Кел\'гаша Коварного, предводителя троллей племени Призрачной Сосны. Никаких полумер. Известно, что Кел\'гаш скрывается где-то на юге, в Зеб\'Нове.$B$BНАГРАДА: Будет, но никаких авансов!",
     ["O"] = "Принесите голову Кел\'гаша Коварного капитану Гелиосу в Анклав Странников в Призрачных землях.",
     ["T"] = "Награда за голову Келгаша!",
   },
@@ -8866,30 +8790,15 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["O"] = "Поговорите с верховным палачом Мавреном в Транквиллионе в Призрачных землях.",
     ["T"] = "Отрекшиеся",
   },
-  [9333] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Перчатки Серебряного Рассвета",
-  },
-  [9334] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Благословенное волшебное масло",
-  },
-  [9335] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Освященное точило",
-  },
   [9336] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "Огромный флакон с лечебным зельем",
   },
   [9337] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "Огромный флакон с зельем маны",
+  },
+  [9339] = {
+    ["D"] = "This flame, stolen from the heart of Stormwind itself, floods you with warmth. This raw power is foreign to you, but the (NAME) might know more...",
+    ["O"] = "Return the Flame of Stormwind to (NAME).",
   },
   [9340] = {
     ["D"] = "Альянс обложил нас со всех сторон. Пилигримы син\'дорай все идут и идут в Азерот, так что мы должны найти дорогу, о которой наши вездесущие враги не прознают.$B$BЯ подумал немного, и кое-что придумал. Мы проложим тайный путь через Глубокий Разлом.$B$BДа, там кишмя-кишат горные камнедеры, но они всего лишь звери и быстро научатся нас бояться. Отправляйся к Глубокому Разлому и убей всех камнедеров, которых встретишь. Думаю, остальных это напугает.",
@@ -8900,11 +8809,6 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["D"] = "Будто бы ган\'аргов нам было недостаточно, так теперь еще гигантские земляные черви!$B$BТраллмарскому гарнизону не до нас, он сражается с Легионом, так что предполагается, что мы разберемся здесь сами. В смысле, я и вот эти.$B$BШтейгер кивает на спящих батраков.*$B$BМожно подумать, много от них пользы.$B$BЯ лучше тебе заплачу, если ты очистишь рудник от червяков.",
     ["O"] = "Убейте 15 хищных землероев по просьбе штейгера Разлкраза. Эти черви предпочитают нападать неожиданно, из-под земли.",
     ["T"] = "Хищный землерой",
-  },
-  [9343] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Гербовая накидка Серебряного Рассвета",
   },
   [9344] = {
     ["D"] = "Приветствую, $N. Запределье – очень опасное место, многие из нашей экспедиции это быстро поняли. Боюсь, юный Грелаг может убедиться в этом на собственном опыте.$B$BГрелаг очень способный ученик, но ему не хватает терпения. Он так увлечен историей своего народа, что подчас забывает об опасностях, которые поджидают нас в настоящем.$B$BОн ушел с Заставы Хребтолома, не подозревая ни о Легионе, ни об орках Скверны, которые шарятся по окрестностям. Как бы с ним чего-нибудь не случилось.",
@@ -8976,22 +8880,24 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["O"] = "Отправляйтесь в деревню Легкий Ветерок в Лесах Вечной Песни и поговорите со следопытом Деголайном.",
     ["T"] = "Предупреждение деревне Легкий Ветерок",
   },
+  [9365] = {
+    ["D"] = "This flame, stolen from the heart of Stormwind itself, floods you with warmth. This raw power is foreign to you, but the (NAME) might know more...",
+    ["O"] = "Return the Flame of Stormwind to (NAME).",
+  },
   [9366] = {
     ["D"] = "К северо-востоку отсюда лежат Пруды Аггонара. Когда-то там было священное место дренеев, но потом кровь демона осквернила воды этих прудов.$B$BС тех пор минуло много лет, но кровь, даже разбавленная, все еще таит в себе огромную силу. Рядом с прудами разгуливают исчадия ужаса, насыщаясь энергией, разлитой в воде. Уничтожь их и принеси мне их оскверненную кровь. Выполни это задание, и получишь награду.",
     ["O"] = "Принесите 6 образцов оскверненной крови исчадий ужаса, обитающих у прудов Аггонара, Риатену Мрачному из Соколиного Дозора на Полуострове Адского Пламени.",
     ["T"] = "Оскверненная кровь",
   },
   [9367] = {
-    ["D"] = "Вновь наступает праздник Огненного солнцеворота!$B$BКаждый год, как диктует традиция, избираются Хранители праздничного костра, обязанные присматривать за этими самыми кострами, зажженными в наших столичных городах. По всему Азероту зажигаются огни, но важно, чтобы наши горели жарче и ярче всех, дабы правильно воздать дань уважения Середине Лета.$B$BНа самом деле, если ты не против, у меня для тебя есть задание. Мне пока неведомо, должным ли образом горят праздничные костры во всех столичных городах. Отправляйся туда и погрейся у этих костров, чтобы убедиться, что они достаточно горячи!",
     ["O"] = "Прикоснитесь к пламени праздничных костров в Штормграде, Стальгорне и Дарнасе, затем поговорите с хранителем мудрости Праздника в столичных городах.",
-    ["T"] = "Праздник Огня",
   },
   [9368] = {
     ["D"] = "Вновь наступает праздник Огненного солнцеворота!$B$BКаждый год, как диктует традиция, избираются Хранители праздничного костра, обязанные присматривать за этими самыми кострами, зажженными в наших столичных городах. По всему Азероту зажигаются огни, но важно, чтобы наши горели жарче и ярче всех, дабы правильно воздать дань уважения Середине Лета.$B$BНа самом деле, если ты не против, у меня для тебя есть задание. Мне пока неведомо, должным ли образом горят праздничные костры во всех столичных городах. Отправляйся туда и погрейся у этих костров, чтобы убедиться, что они достаточно горячи!",
   },
   [9369] = {
     ["D"] = "Мы дренеи. Наш корабль разбился, и поскольку раненых очень много, первым делом надо зарядить исцеляющие кристаллы. И побыстрее!$B$BК сожалению, в настоящий момент для этого придется добывать кровь долинных мотыльков, она отлично подойдет.$B$BМотыльки водятся во всей долине, особенно в северо-западной ее части.",
-    ["O"] = "Добудьте 8 фиалов с кровью мотылька из ближайших долинных мотыльков и принесите их Проэнтиусу на место крушения в долине Аммен.",
+    ["O"] = "Добудьте 8 фиалов с кровью мотыльков из ближайших долинных мотыльков и принесите их Проэнтиусу на место крушения в долине Аммен.",
     ["T"] = "Исцеляющие кристаллы",
   },
   [9370] = {
@@ -9068,12 +8974,10 @@ pfDB["quests"]["ruRU-tbc"] = {
   [9388] = {
     ["D"] = "Сегодня по всему миру горит множество огней, $N. Сложнее всего присматривать за теми кострами, которые пылают зеленым; без присмотра они не будут гореть долго. Убедись, что изумрудные огни все еще горят в Калимдоре – пусть наш Хранитель костров успокоится.$B$BТы найдешь эти костры вблизи Кабестана в Степях, неподалеку от Меча Властителя на Темных берегах, в Ясеневом лесу у моста около Аванпоста Среброкрылых, и поблизости от дороги на Утес Ветрорезов вдоль главного тракта в Когтистых горах.",
     ["O"] = "Посетите праздничные костры в Ясеневом лесу, Степях, на Темных берегах и в Когтистых горах, затем поговорите с хранителем праздничного пламени.",
-    ["T"] = "Мерцающие огни Калимдора",
   },
   [9389] = {
     ["D"] = "Во время праздника Огненного солнцеворота по всей земле традиционно зажигаются мириады огней. Кое-кто считает, что зеленое пламя является самым изящным, поскольку его труднее всего поддерживать, и оно имеет столь уникальный оттенок.$B$BУбедись, что это пламя все еще горит в Восточных королевствах, чтобы успокоить нашего Хранителя огня. Эти костры размещены около Дун Модр в Болотине, поблизости от деревни Погребальных Костров в Серебряном бору, на утесах неподалеку от маяка Западного Края и возле разрушенной башни в предгорьях Хилсбрада.",
     ["O"] = "Посетите праздничные костры в предгорьях Хилсбрада, в Серебряном бору, Западном Крае и Болотине, затем поговорите с хранителем праздничного пламени.",
-    ["T"] = "Мерцающие огни Восточных королевств",
   },
   [9390] = {
     ["D"] = "Выслушай меня, |3-6($C). Мой брат Седаи отправился на встречу с орками Заставы маг\'харов. Этот несчастный идеалист считал, что время излечило взаимные обиды, и мы сможем договориться о мире.$B$BУже несколько дней о нем ничего не слышно, и я опасаюсь самого худшего.$B$BМожешь отправиться на его поиски и дать отдых моей измученной душе? Седаи должен быть где-то на востоке.",
@@ -10290,7 +10194,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Дрессировка",
   },
   [9674] = {
-    ["D"] = "Говорят, когда мир раскололся, эти земли возопили... Именно здесь канули в бездну забвения тысячи ночных эльфов, а вместо них в мир вступили чудовищные твари, порождение ночных кошмаров – наги.$B$BНаги повиновались лишь своей королеве Азшаре; они уничтожали любого, кто решался плыть по их морям. Так было тысячи лет... но теперь, возможно, все переменится.$B$BПервым делом нужно будет истребить проклятых наг на этом рифе.",
+    ["D"] = "Капитан Эдвард Хейнс с острова Драконьей Скорби просит убить 10 проклятых наг.",
     ["O"] = "Капитан Эдвард Хейнс с острова Драконьей Скорби просит убить 10 проклятых наг.",
     ["T"] = "Проклятые наги",
   },
@@ -10440,7 +10344,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Возвращение свертка",
   },
   [9706] = {
-    ["D"] = "Когда вы поднимаете эту книжку, ваши руки дрожат. Курос непременно должен узнать об этой трагедии. Отдайте книжку ему.",
+    ["D"] = "Доберитесь до Кровавой заставы и отдайте дневник Галена воздаятелю Куросу.",
     ["O"] = "Доберитесь до Кровавой заставы и отдайте дневник Галена воздаятелю Куросу.",
     ["T"] = "Дневник Галена: судьба воздаятеля Саруана",
   },
@@ -10695,7 +10599,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Отречемся от старого мира",
   },
   [9760] = {
-    ["D"] = "Конечно, $N, никто не ожидает от тебя, что ты в одиночку уничтожишь Энергоблок или прикончишь Сиронас; но полагаю, ты поможешь расчистить путь для тех, кто решится выполнить это опасное задание.$B$BЗнаешь дорогу, идущую на север от Кровавой заставы? Иди по ней до развилки, а там сверни налево. Твоя цель – селение Привал воздаятеля, расположенное чуть западнее дороги. Там тебя встретит Корин.",
+    ["D"] = "Поговорите с воздаятельницей Корин в селении Привал Защитника на острове Кровавой Дымки;.",
     ["O"] = "Поговорите с воздаятельницей Корин в селении Привал Защитника на острове Кровавой Дымки;.",
     ["T"] = "Привал Защитника",
   },
@@ -11260,7 +11164,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Ортор, мой старый друг...",
   },
   [9874] = {
-    ["D"] = "Мне только что стало известно о катастрофе поистине устрашающего масштаба, $N. Эти мерзавцы Темной Крови захватили орочью Заставу Солнечного Источника... это к северо-западу отсюда... перебили всех тамошних жителей, а тела принялись сбрасывать в озеро Солнечного Источника. Если все эти тела начнут разлагаться в озере, наш главный источник пресной воды в этой области будет отравлен.$B$BЯ понимаю, что это работа не из приятных, но ее надо сделать. Возьми этот зачарованный факел, иди на заставу и сожги все трупы орков...",
+    ["D"] = "Сожгите 10 трупов селян Солнечного Источника с помощью факела жидкого огня. Когда исполните поручение, верните факел Отонбу Ведуну.",
     ["O"] = "Сожгите 10 трупов селян Солнечного Источника с помощью факела жидкого огня. Когда исполните поручение, верните факел Отонбу Ведуну.",
     ["T"] = "Остановить заразу",
   },
@@ -11485,7 +11389,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Расселины Награнда",
   },
   [9923] = {
-    ["D"] = "НА ПОМОЩЬ! Они сожрут меня заживо! Точно-точно сожрут, я знаю!$B$BНайди ключ. Он у кого-то из этих огров.$B$BЕсли поможешь мне выбраться отсюда, мой отец щедро тебя наградит! Я – сын Арехрона, владыки Телаара.",
+    ["D"] = "Найдите ключ клана Тяжелого Кулака и освободите Корки. После этого отправляйтесь к Арехрону в Телаар за наградой.",
     ["O"] = "Найдите ключ клана Тяжелого Кулака и освободите Корки. После этого отправляйтесь к Арехрону в Телаар за наградой.",
     ["T"] = "НА ПОМОЩЬ!",
   },
@@ -11740,7 +11644,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Кольцо Крови: Чемпион клана Боевого Молота",
   },
   [9974] = {
-    ["D"] = "Принесите 5 сущностей прыгуаны-охотника и 30 ягод тероккарской черной рябины Кокореку в Гнездовье Литик.",
+    ["D"] = "Я могу изготовить предмет, который нейтрализует охранные заклинания Гнездовья Шалас. Но предупреждаю, $N – магия будет действовать только пока вашего друга удерживают в плену. Я не стану добровольно давать вам средства для нападения на мой народ.$B$BУ меня есть почти все нужные материалы, но кое-что придется добыть вам. Мне потребуются сущности прыгуаны-охотника и горсть тероккарской черной рябины. Все это можно найти поблизости от Гнездовья.",
     ["O"] = "Принесите 5 сущностей прыгуаны-охотника и 30 ягод тероккарской черной рябины Кокореку в Гнездовье Литик.",
     ["T"] = "Последние реагенты",
   },
@@ -11890,7 +11794,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Посредник Огнекрылов",
   },
   [10004] = {
-    ["D"] = "Возьми чертежи и отправляйся в город Шаттрат в Тероккарском лесу. Добравшись до места, ступай в Нижний Город и найди там мо\'арга по имени Сальсалабим. Скорее всего, он сидит в баре, пытаясь утопить печаль в стакане.$B$BКстати, тебе придется как-то склонить его к сотрудничеству. Сначала попробуй интеллигентный подход: терпение и понимание. Если не поможет, набей ему морду.",
+    ["D"] = "Покажите чертежи главного планировщика Сальсалабиму в Шаттрате и уговорите его помочь вам.",
     ["O"] = "Покажите чертежи главного планировщика Сальсалабиму в Шаттрате и уговорите его помочь вам.",
     ["T"] = "Терпение и понимание",
   },
@@ -12015,17 +11919,17 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Сосуды силы",
   },
   [10029] = {
-    ["D"] = "Духи мертвых взывают ко мне из Костяных пустошей, и молят избавить их от страшной боли!$B$B$C, вам нужно отправиться на Костяные пустоши, к югу отсюда, и найти там моего помощника Соолавина в Караване беженцев. Он, должно быть, тоже слышит зов духов, и ему потребуется ваша помощь, чтобы успокоить их.$B$BЕсли поспешите, то сумеете их догнать. Я знаю, что они собирались делать остановку в северной части Костяных пустошей, а потом двинутся южнее, в Аукиндон.",
+    ["D"] = "Найдите помощника анахорета Литееры по имени Соолавин в Караване беженцев на Костяных Пустошах в лесу Тероккар.$B$BВыполнение заданий Алдоров отрицательно скажется на вашей репутации среди Провидцев.",
     ["O"] = "Найдите помощника анахорета Литееры по имени Соолавин в Караване беженцев на Костяных Пустошах в лесу Тероккар.$B$BВыполнение заданий Алдоров отрицательно скажется на вашей репутации среди Провидцев.",
     ["T"] = "Зов духов",
   },
   [10030] = {
-    ["D"] = "Костяные пустоши усеяны костями дренеев, погибших при взрыве в Аукиндоне. Их души до сих пор не упокоены и не могут перейти к следующей жизни.$B$B$C, вы должны помочь мне собрать их кости и похоронить их как следует. Только после этого они, наконец, обретут покой.$B$BСоберите эти разбросанные кости и отнесите их Рамдору Безумному в Аукиндон, что в центре Костяных пустошей. Несмотря на свое имя он как нельзя лучше позаботится о них.",
+    ["D"] = "Соберите 10 неупокоенных костей и отнесите их Рамдору Безумному на западную сторону Ритуального Круга в Аукиндоне. Аукиндон находится в центре Костяных пустошей в лесу Тероккар.",
     ["O"] = "Соберите 10 неупокоенных костей и отнесите их Рамдору Безумному на западную сторону Ритуального Круга в Аукиндоне. Аукиндон находится в центре Костяных пустошей в лесу Тероккар.",
     ["T"] = "Сбор останков",
   },
   [10031] = {
-    ["D"] = "Этот взрыв в Аукиндоне осквернил души многих дренеев, и теперь они в мучениях блуждают по Костяным пустошам.$B$BЯ нижайше прошу вас даровать им покой. Уничтожьте заблудших духов и скелетов сломленных, что блуждают по Костяным пустошам за стенами Аукиндона.$B$BЧто? Думаете, что лучше позволить им и дальше блуждать там и мучиться в агонии?$B$BКогда закончите, поговорите с Суулавином в Караване беженцев и расскажите ему все.",
+    ["D"] = "Уничтожьте 10 заблудших духов и 10 скелетов сломленных, после чего поговорите с Суулавином в Караване беженцев на Костяных пустошах леса Тероккар.",
     ["O"] = "Уничтожьте 10 заблудших духов и 10 скелетов сломленных, после чего поговорите с Суулавином в Караване беженцев на Костяных пустошах леса Тероккар.",
     ["T"] = "Возвращение заблудших душ",
   },
@@ -12085,12 +11989,12 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Убить Совет Теней!",
   },
   [10044] = {
-    ["D"] = "Великая Мать незамедлительно требует тебя к себе.$B$BМой дух сломлен печалью, но берегись, $N: если ты рассердишь Великую Мать, я обрушу на тебя все силы, которые только смогу собрать. Она в главном зале.$B$B*Гаррош указывает на большое здание к северу.*$B$BВыслушай ее и выполни ее приказ.",
+    ["D"] = "Поговорите с Великой Матерью Гейей и сделайте все, о чем она вас попросит.",
     ["O"] = "Поговорите с Великой Матерью Гейей и сделайте все, о чем она вас попросит.",
     ["T"] = "Разговор с Великой матерью",
   },
   [10045] = {
-    ["D"] = "Мать Кашур хочет поговорить с тобой, $N. Но это произойдет не раньше, чем ты соберешь травы. Они необходимы для изготовления снадобья, которое откроет твой разум и позволит тебе говорить с духами.$B$BТебе надо найти корень олембы в лесу Тероккар, клюкву в Зангартопи, телаарский папоротник в Награнде и драконий шип в Острогорье. Я записала инструкции на этом пергаменте, чтобы ты $Gсумел:сумела; распознать необходимые травы. Когда соберешь все, что нужно, возвращайся ко мне.",
+    ["D"] = "Принесите Великой Матери Гейе в Гарадар 1 корень олембы, 1 кустик клюквы, 1 телаарский папоротник и 1 побег драконьего шипа.",
     ["O"] = "Принесите Великой Матери Гейе в Гарадар 1 корень олембы, 1 кустик клюквы, 1 телаарский папоротник и 1 побег драконьего шипа.",
     ["T"] = "Компоненты зелья",
   },
@@ -12365,7 +12269,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Когда говорят духи",
   },
   [10102] = {
-    ["D"] = "Долгие столетия я беспомощно наблюдал, как иссякает моя энергия, затягивая в образовавшуюся пустоту поколения орочьих душ. Но недавно мои враги подчинили себе этот водоворот и принялись пополнять Пылающий Легион бессчетными ордами тварей Бездны.$B$BИ теперь, чтобы разорвать этот круг и освободить души орков, нужна помощь другого наару – А\'дала. Я ощущаю его присутствие в древнем городе Шаттрате в лесу Тероккар.",
+    ["D"] = "Поговорите с А\'далом в Шаттрате.",
     ["O"] = "Поговорите с А\'далом в Шаттрате.",
     ["T"] = "Раскрытая тайна",
   },
@@ -12420,7 +12324,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Личное одолжение",
   },
   [10113] = {
-    ["D"] = "\"Иди и найди какие-нибудь припасы!\" – так он и сказал. Да меня раз пятнадцать чуть не укокошили, пока я сюда добирался! Эти Падшие, конечно, не самые добродушные ребята на свете, но они хотя бы не пытаются меня освежевать.$B$BТак или иначе, назад я не вернусь. Кончились мои охотничьи деньки. Если ты направишься на северо-восток, в сторону Зангартопи, и вдруг набредешь на охотничий лагерь Эрнестуэя, передай им, что \"Дробовик\" отстрелялся!$B$BПослушай, а может, ты займешь мое место? Попробуй, и пусть тебе улыбнется удача, $Gнезнакомец:незнакомка;.",
+    ["D"] = "Поговорите с Хемингом Эрнестуэем в охотничьем лагере Эрнестуэя на северо-восточной границе Награнда.",
     ["O"] = "Поговорите с Хемингом Эрнестуэем в охотничьем лагере Эрнестуэя на северо-восточной границе Награнда.",
     ["T"] = "Охотничий лагерь Эрнестуэя",
   },
@@ -12600,7 +12504,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Задание: доставить послание",
   },
   [10149] = {
-    ["D"] = "Знаешь, что будет, если тебе не удасться перехватить это донесение, $N?$B$B*Данат качает головой.*$B$BВ наши ворота постучится вся армия Легиона. И против них у нас не будет ни единого шанса.$B$BСуществует только один способ сделать так, чтобы это письмо не добралось до Передовой Легиона. Тебе придется отправиться к Прудам Аггонара, которые находятся на северо-западе отсюда, и убить Араззиуса.$B$BЕсли это удастся, я собственноручно вынесу тебе благодарность.",
+    ["D"] = "Убейте Араззиуса Безжалостного по приказу командира армии Даната Троллебоя из Оплота Чести на Полуострове Адского Пламени.",
     ["O"] = "Убейте Араззиуса Безжалостного по приказу командира армии Даната Троллебоя из Оплота Чести на Полуострове Адского Пламени.",
     ["T"] = "Задание: со щитом или на щите",
   },
@@ -12910,7 +12814,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Город Света.",
   },
   [10212] = {
-    ["D"] = "Перед отъездом я должен уладить кое-какие дела. Вернись к Великой матери и скажи, что ее внук скоро прибудет.",
+    ["D"] = "Вернитесь к Великой Матери Гейе в Гарадар в Награнде.",
     ["O"] = "Вернитесь к Великой Матери Гейе в Гарадар в Награнде.",
     ["T"] = "Герой маг\'харов",
   },
@@ -12995,7 +12899,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Боевой рог",
   },
   [10231] = {
-    ["D"] = "Рамдор? Хмм... Дай-ка подумать... Рамдор... Ах да, жрец мертвых. Чего он хочет, какую книгу? Ладно, это не важно. Конечно, я тебе соврал и никакой книги у меня нет. Была, а теперь нет. Ее у меня украли. Наверное, кто-то из этих мерзких беженцев.$B$BКроме того, Аукиндон давно развалился, и книгу все равно уже невозможно использовать. Если найдешь ее, смело можешь оставить себе.$B$BКак я уже говорил, на прошлой неделе тут шныряли какие-то бандиты, можешь начать поиски с них. Я думаю, они режутся в кости где-нибудь в трущобах.",
+    ["D"] = "Иезекииль говорит, что книга могла быть украдена. Найдите головорезов и попытайтесь узнать что-нибудь у них.",
     ["O"] = "Иезекииль говорит, что книга могла быть украдена. Найдите головорезов и попытайтесь узнать что-нибудь у них.",
     ["T"] = "Какая книга? Не вижу никакой книги",
   },
@@ -13770,7 +13674,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Гроза скверноботов",
   },
   [10388] = {
-    ["D"] = "Надеюсь, полет тебе понравился, $Gприятель:подруга;. Пока тебя не было, прибыл посланник – кажется, Назгрел нашел для тебя новую работу. Лучше тебе вернуться обратно в Траллмар и доложиться ему лично. Есть у меня подозрение, что Легион снова что-то затевает.",
+    ["D"] = "Возвращайтесь в Траллмар и поговорите с Назгрелом.",
     ["O"] = "Возвращайтесь в Траллмар и поговорите с Назгрелом.",
     ["T"] = "Назад в Траллмар",
   },
@@ -13830,7 +13734,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Сердце тьмы",
   },
   [10400] = {
-    ["D"] = "Благородный провидец рассказал мне, какие опасности тебя подстерегали, $N. Ты $Gобнаружил:обнаружила; нового врага? Если верить Криву, то Араззиус Безжалостный, – один из самых могущественных и злобных недругов, с которыми приходилось сталкиваться Сынам Лотара.$B$BТы останешься с нами, $N? Сумеешь встретиться лицом к лицу с предводителем Легиона, и принести ему возмездие во имя Света? Если да, то ты найдешь его у Прудов Аггонара. Если нет, то его злоба рано или поздно сама разыщет тебя.",
+    ["D"] = "Убейте Араззиуса Безжалостного у прудов Аггонара и возвращайтесь к командиру армии Данату Троллебою в крепость Оплота Чести.",
     ["O"] = "Убейте Араззиуса Безжалостного у прудов Аггонара и возвращайтесь к командиру армии Данату Троллебою в крепость Оплота Чести.",
     ["T"] = "Владыка",
   },
@@ -13880,7 +13784,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Помощь Ишаны",
   },
   [10411] = {
-    ["D"] = "Вокруг разрушенного манагорна ты увидишь последствия действий Пространствуса. Сочащиеся слякочи наполняют пруды, окружающие Ультрис. Прямо под этими прудами, где сейчас размещается полигон Эфириума, ты найдешь еще больше утечек – то есть отбросы Бездны.$B$BЛучший способ избавиться от этого – использовать электрошок, чтобы разбить слизнюков на капли. Используй этот эликсир, чтобы снабдить свои атаки электричеством. Получившийся в результате разряд переведет слизнюков в более примитивную форму каплей. Уничтожь эти капли!",
+    ["D"] = "Ученый Навууд, находящийся на заставе стражей Протектората в Пустоверти просит вас уничтожить 30 каплей отброса Бездны и 30 сочащихся каплей слякоча.",
     ["O"] = "Ученый Навууд, находящийся на заставе стражей Протектората в Пустоверти просит вас уничтожить 30 каплей отброса Бездны и 30 сочащихся каплей слякоча.",
     ["T"] = "Слава электрошоку!",
   },
@@ -13935,7 +13839,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Латные перчатки Скверны",
   },
   [10422] = {
-    ["D"] = "10 дней назад капитан Тиралиус повел взвод солдат на юг, к полигону Эфириума. С тех пор мы ничего не слышали ни о нем, ни о его подчиненных.$B$BВероятнее всего, они попали в засаду и были убиты, однако мои приборы выдают любопытные показания.$B$BМне кажется, это сигнал бедствия, однако эти штуки и прежде ошибались. Если Тиралиус еще жив, они держат его в одной из тюрем. Тебе нужно отыскать эту тюрьму и открыть ее ключом, который, вероятнее всего, находится у стражника.",
+    ["D"] = "Укротитель плоти Виридиус, находящийся на заставе стражей Протектората в Пустоверти просит вас найти и освободить капитана Тиралиуса.",
     ["O"] = "Укротитель плоти Виридиус, находящийся на заставе стражей Протектората в Пустоверти просит вас найти и освободить капитана Тиралиуса.",
     ["T"] = "Капитан Тиралиус",
   },
@@ -14015,7 +13919,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Рецепт уничтожения",
   },
   [10438] = {
-    ["D"] = "Вот, $N. Возьми этот фазовый дезинтегратор и забирайся в седло. Дракон Пустоты Протектората доставит тебя достаточно близко к Ультрису, чтобы сбросить дезинтегратор на стержень Бездны.$B$BСкинь как можно больше дезинтеграционных зарядов, чтобы уничтожение было полным!$B$BКогда все будет сделано, скажи дракону Пустоты и он унесет тебя ввысь.$B$BЕсли промахнешься, то прежде, чем снова идти на задание, возьми у меня еще бомбы.",
+    ["D"] = "Профессор Дабири, находящийся на заставе стражей Протектората в Пустоверти, хочет, чтобы вы использовали фазовый дезинтегратор, когда окажетесь вблизи от стержня Бездны наверху Ультриса. Скиньте как можно больше зарядов фазового дезинтегратора, чтобы обеспечить полное уничтожение. Заряды фазового дезинтегратора автоматически попадут в стержень Бездны, если вы будете достаточно близко, чтобы использовать их.$B$BЕсли вы преуспеете, возвращайтесь к профессору Дабири!",
     ["O"] = "Профессор Дабири, находящийся на заставе стражей Протектората в Пустоверти, хочет, чтобы вы использовали фазовый дезинтегратор, когда окажетесь вблизи от стержня Бездны наверху Ультриса. Скиньте как можно больше зарядов фазового дезинтегратора, чтобы обеспечить полное уничтожение. Заряды фазового дезинтегратора автоматически попадут в стержень Бездны, если вы будете достаточно близко, чтобы использовать их.$B$BЕсли вы преуспеете, возвращайтесь к профессору Дабири!",
     ["T"] = "На крыльях Пустоты",
   },
@@ -14215,7 +14119,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Покажи свою силу",
   },
   [10480] = {
-    ["D"] = "Иллидарские наги захватили контроль над единственным в Долине Призрачной Луны источником чистой воды.$B$BИх логово расположено к северу отсюда в Змеиных Кольцах. Вокруг Змеиных Колец множество мелких озер, вода в которых бурлит и даже как будто стонет от боли. Это оттого, что в них обитают духи воды.$B$BОтправляйся туда и используй тотем духов, чтобы подчинить их. Больше всего духов сосредоточено возле водохранилища Змеиных Колец.",
+    ["D"] = "Используйте тотем духов, чтобы поймать 5 духов Воды для целителя земли Торлока у Алтаря Проклятия в Долине Призрачной Луны.",
     ["O"] = "Используйте тотем духов, чтобы поймать 5 духов Воды для целителя земли Торлока у Алтаря Проклятия в Долине Призрачной Луны.",
     ["T"] = "Разъяренные Духи Воды",
   },
@@ -14300,7 +14204,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Прощальные слова Антиона",
   },
   [10497] = {
-    ["D"] = "В этом амулете хранилась душа Вальтхалака. Мы, по глупости и по жадности, раскололи его на три части, не ведая о проклятии, которое нас ожидало.$B$BЕдинственный способ остановить заклятие Вальтхалака – это снова собрать амулет воедино. Возвращайся к Моквару и скажи ему, что Бодли – его единственная надежда найти оставшиеся части. Расскажи ему про обещанные награды.$B$BНу, а я упокоюсь в мире. Желаю удачи. Она тебе понадобится!",
+    ["D"] = "Отдайте Моквару в Оргриммаре сапоги из светлостали, ножные латы из светлостали и наплеч из светлостали.",
     ["O"] = "Отдайте Моквару в Оргриммаре сапоги из светлостали, ножные латы из светлостали и наплеч из светлостали.",
     ["T"] = "Прощальные слова Антиона",
   },
@@ -14380,7 +14284,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Пусть Камнероги упьются!",
   },
   [10513] = {
-    ["D"] = "Я не знаю, как нам получить то заклинание, о котором поведали духи, $N. По правде сказать, я даже не знаю, где можно начать поиски.$B$B*Торлок, задумавшись, глядит в пространство*$B$BХммм... Идея конечно сомнительная, но как бы это не оказался наш единственный шанс выиграть. Знал я одного орка, точнее даже не знал, видел однажды, но успел пообщаться накоротке. Он живет отшельником над водохранилищем Змеиных Колец к северо-востоку отсюда. Найди этого орка, – Оронока Горемычного.$B$BНу я же говорил, что идея сомнительная.",
+    ["D"] = "Найдите Оронока Горемычного на Разрушенной Отмели, на северном берегу водохранилища Змеиных Колец.",
     ["O"] = "Найдите Оронока Горемычного на Разрушенной Отмели, на северном берегу водохранилища Змеиных Колец.",
     ["T"] = "Оронок Горемычный",
   },
@@ -14520,7 +14424,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Код Проклятия: Вклад Ар\'тора",
   },
   [10541] = {
-    ["D"] = "Благодарю тебя, друг мой, не будь тебя, мой дух бы навечно остался в этом гиблом месте.$B$B*Ар\'тор вручает тебе призрачный сейф.*$B$BВозьми это и отнеси моему отцу, на ферму к северо-востоку, над Водохранилищем Змеиных Колец... Внутри Лон\'горон и второй фрагмент шифра.$B$BТяжело ему станет от известия о моей гибели, но обещай рассказать ему, что я умер свободным. Скажи ему, что я видел Небесные Поля, они великолепны. Я буду ждать его там...",
+    ["D"] = "Отнесите сейф Ар\'тора Ороноку Горемычному на ферму Оронока в Долине Призрачной Луны.$B.",
     ["O"] = "Отнесите сейф Ар\'тора Ороноку Горемычному на ферму Оронока в Долине Призрачной Луны.$B.",
     ["T"] = "Код Проклятия – Второй фрагмент",
   },
@@ -14560,7 +14464,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Горькая правда",
   },
   [10550] = {
-    ["D"] = "Я не лгал тебе. Это яйцо просто потрясающее. Где тебе посчастливилось его раздобыть?$B$BТеперь, если тебе понадобится еще кровопийка, ты знаешь, где меня найти и что мне надо.$B$BВот тебе пучок этой травы, отнеси ее своему покровителю.",
+    ["D"] = "Отнести пучок Кровопийки Бораку сыну Оронока на мост возле Лагеря Затмения, в Долине Призрачной Луны. $B.",
     ["O"] = "Отнести пучок Кровопийки Бораку сыну Оронока на мост возле Лагеря Затмения, в Долине Призрачной Луны. $B.",
     ["T"] = "Пучок кровопийки",
   },
@@ -14690,7 +14594,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Клеть Стражницы",
   },
   [10576] = {
-    ["D"] = "*Борак осматривает тебя с головы до ног.*$B$BЭто будет мудрено, но я справлюсь.$B$BЯ могу превратить тебя в одного из этих иллидарских эльфов крови, $N. Все, что мне для этого понадобится, – это несколько частей их доспехов. Главное, чтобы броня была чистой. Никаких следов крови! Нам необходимо избежать подозрений.$B$BПринеси их мне, и я позабочусь об остальных частях маскировки.$B$BКак только она будет готова, тебе нужно будет доставить письмо Верховному командиру – доставить лично!",
+    ["D"] = "Принесите 6 фрагментов брони лагеря Затмения Бораку, сыну Оронока, на мост возле Лагеря Затмения в Долине Призрачной Луны.",
     ["O"] = "Принесите 6 фрагментов брони лагеря Затмения Бораку, сыну Оронока, на мост возле Лагеря Затмения в Долине Призрачной Луны.",
     ["T"] = "Уловки Призрачной Луны",
   },
@@ -15015,7 +14919,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Вестники Призрачной Луны",
   },
   [10644] = {
-    ["D"] = "Есть много историй о жизни Терона Кровожада, но большинство из них – всего лишь истории. Мы не знаем то, что случилось с ним, после того, как он возвратился в Дренор.$B$BЕдинственное, в чем мы уверены, это в том, что он уже однажды умер.$B$BЯ слышал, разведчики говорили о древнем духе какого-то орка, которые обитает у Алтаря Теней, далеко к юго-востоку отсюда, если двигаться через Поля и перевал Крыльев Пустоты. Возьмите спектроскоп и разыщите дух этого орка. Скорее всего, у него будет больше сведений о Тероне, чем мы имеем сейчас.",
+    ["D"] = "Найдите древний дух Долины Призрачной Луны для Зоруса Ревнителя в цитадели Громового Молота. Если вы потеряете свой спектроскоп, Зорус может сделать вам новый.$B.",
     ["O"] = "Найдите древний дух Долины Призрачной Луны для Зоруса Ревнителя в цитадели Громового Молота. Если вы потеряете свой спектроскоп, Зорус может сделать вам новый.$B.",
     ["T"] = "Терон Кровожад – Правда и Вымысел",
   },
@@ -15160,7 +15064,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Честно говоря, это – бред!",
   },
   [10673] = {
-    ["D"] = "Гномус вызнал про гигантского деметродона и собирается им подзакусить! Он, вероятно, смог увидеть то же, что и я, глазами своего волшебного скорпиона. Мне некогда объяснять. Он совершенно свихнулся. И самое главное, что его сумасшествие грозит лишить нас огнеупорного обмундирования.$B$BВозвращайся к потокам лавы возле руин Баа\'ри и отыщи там Хребтоскверна Старшего. Убей его и принеси мне его шкуру.$B$BНе спорь со мной, $N, это ничего не изменит.",
+    ["D"] = "Убейте Хребтоскверна Старшего и принесите его шкуру ученому Тиорусу в Деревню Призрачной Луны в одноименной долине.",
     ["O"] = "Убейте Хребтоскверна Старшего и принесите его шкуру ученому Тиорусу в Деревню Призрачной Луны в одноименной долине.",
     ["T"] = "Хребтоскверн Старший",
   },
@@ -15330,8 +15234,8 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Таинственное знамение",
   },
   [10707] = {
-    ["D"] = "It has been known to us that the fel orcs, under Illidan\'s command, have guarded an Ata\'mal crystal known as the Heart of Fury at the Ata\'mal Terrace.  They cloud its presence with dark magic, to keep it from the Sha\'tar.$B$BFight your way to the Atam\'al Terrace outside the Black Temple and turn your eyes to the sky.  Shadowlord Deathwail will circle the terrace, beyond your reach.  You will have to slay him and his warlocks before you can obtain the crystal.$B$BIt won\'t be easy, $N.  I wish you luck.",
-    ["O"] = "Go to the top of the Atam\'al Terrace in Shadowmoon Valley and obtain the Heart of Fury.  Return to Akama at the Warden\'s Cage in Shadowmoon Valley when you\'ve completed this task.",
+    ["D"] = "Нам стало известно, что орки Скверны из отрядов Иллидана охраняют Кристалл Ата\'мала, именуемый Сердце Ярости, на террасе Ата\'мала. Они скрывают его от Ша\'тар с помощью темной магии.$B$BПробейся на Террасу Ата\'мала, что перед Черным храмом, и подними глаза к небу. Владыка теней Смертокрик будет кружить над террасой. Тебе нужно убить его и всех его чернокнижников, чтобы завладеть кристаллом.$B$BСделать это будет непросто, $N, удачи тебе!",
+    ["O"] = "Отправляйтесь на Террасу Ата\'мала в Долине Призрачной Луны и раздобудьте Сердце Ярости. По выполнении задания вернитесь к Акаме в Клеть Стражницы.",
     ["T"] = "Терраса Ата\'мала",
   },
   [10708] = {
@@ -15660,7 +15564,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Великан плюс эльфийка равно…",
   },
   [10775] = {
-    ["D"] = "Всадники на грифонах должны вернуться в цитадель Громового Молота, чтобы подготовиться к следующему этапу нашего штурма. Теперь мне от тебя нужны гербовые накидки эльфов крови.$B$BКогда ты соберешь достаточно гербовых накидок подай сигнал всаднику на грифоне, используя сигнальное ружье громового Молота. Пришло время попробовать себя в шпионаже, |3-6($R)!",
+    ["D"] = "The gryphon riders must return to Wildhammer Stronghold to prepare for the next phase of our assault. What I need from you now are the tabards that these blood elves wear.$B$BWhen you have collected enough tabards, call for a gryphon rider using the Wildhammer flare gun. Prepare yourself for a bit of espionage, $r!",
     ["O"] = "Collect 10 Illidari Tabards and then use the Wildhammer Flare Gun to signal another Wildhammer Gryphon Rider.$B$BSpeak with Thane Yoregar at Wildhammer Stronghold in Shadowmoon Valley should you lose your Wildhammer Flare Gun and require a replacement.",
     ["T"] = "Гербовые накидки Иллидари",
   },
@@ -16200,7 +16104,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Ключ Урагана",
   },
   [10884] = {
-    ["D"] = "Four trials you must pass before you are deemed worthy by the naaru.$B$BWithin the Shattered Halls of Hellfire Citadel are three of your people. They are held there by the merciless one, Kargath Bladefist. He seeks to execute them as a sign of his virility and power. You must save these prisoners before such an atrocity can come to pass. As proof of deed, bring me the unused axe of the executioner. It must not have a drop of blood on its blade!",
+    ["D"] = "Прежде чем наару признают тебя достойным, тебе предстоит пройти четыре испытания.$B$BВ Разрушенных залах Цитадели Адского Пламени заточены трое из вашего племени. Их держит там безжалостный Каргат Острорук. Он хочет казнить их в знак своего могущества. Спаси этих несчастных, пока их не постиг столь печальный конец. В доказательство принеси мне неиспользованный топор палача. Пусть на лезвии не будет ни капли крови!",
     ["O"] = "А\'дал из Шаттрата просит добыть неиспользованный топор палача из Разрушенных залов Цитадели Адского Пламени.$B$BЭто задание выполняется в режиме героической сложности.",
     ["T"] = "Испытание наару: милосердие",
   },
@@ -16385,7 +16289,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Тероккарантул",
   },
   [10922] = {
-    ["D"] = "Эй! Ты, похоже, |3-6($R) не из робких, а? Мы с моей командой собираемся наведаться в карьер к северу отсюда и ищем охранника, который бы нас прикрыл. Оплата хорошая, и работа нетрудная – следить, чтобы меня и моих ребят не сожрала какая-нибудь тварь.$B$BЕсли все мои рабочие вернутся живыми и здоровыми, Дворфовитц хорошенько тебе заплатит.",
+    ["D"] = "Проводите Летолла и его команду и защищайте их, пока они будут копать. После этого вернитесь к Дворфовитцу на заставу Ша\'тар.",
     ["O"] = "Проводите Летолла и его команду и защищайте их, пока они будут копать. После этого вернитесь к Дворфовитцу на заставу Ша\'тар.",
     ["T"] = "Костяные раскопки",
   },
@@ -16425,7 +16329,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Бой барабана",
   },
   [10930] = {
-    ["D"] = "Я был прав! Эти останки, что вы принесли, принадлежат детенышам костяных червей! Знаете, что это означает? Это означает, что где-то скрывается и большой червь! Думаю, его можно выманить, с помощью подходящей еды. Чего-то такого... большого! Да!$B$BК востоку отсюда, на другой стороне Костяных пустошей живут копытни – убейте одного, а потом начинайте бить в барабан. Надеюсь, большой червь вылезет, чтобы покормиться, а если вам удастся убить его, то вырежьте у него органы и возвращайтесь ко мне.",
+    ["D"] = "Принесите органы гигантского костяного червя Дворфовитцу в лагерь Ша\'тар на Костяных пустошах.$B$BЗаодно верните ему барабан Фампер.",
     ["O"] = "Принесите органы гигантского костяного червя Дворфовитцу в лагерь Ша\'тар на Костяных пустошах.$B$BЗаодно верните ему барабан Фампер.",
     ["T"] = "Большой костяной червь",
   },
@@ -16700,7 +16604,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Разговор с огром",
   },
   [10985] = {
-    ["D"] = "Убедитесь, что Акама и Майев вошли в Черный храм в долине Призрачной Луны после того, как войска Кси\'ри совершат отвлекающий маневр.",
+    ["D"] = "<Кси\'ри излучает пульсирующее сияние, отдавая приказания войскам Алдоров и Провидцев. Армия Кси\'ри готова отбросить силы Иллидана и тем самым отвлечь их, чтобы Акама мог проникнуть в храм. Наару ждет вашего сигнала, чтобы начать атаку.>",
     ["O"] = "Убедитесь, что Акама и Майев вошли в Черный храм в долине Призрачной Луны после того, как войска Кси\'ри совершат отвлекающий маневр.",
     ["T"] = "Отвлекающий маневр",
   },
@@ -16776,7 +16680,7 @@ pfDB["quests"]["ruRU-tbc"] = {
   },
   [11001] = {
     ["D"] = "Мы должны, не теряя времени, положить конец бесчинствам бога-ворона. Чтобы выманить его из относительной безопасности Изумрудного Сна, тебе понадобится лунный камень Сущности.$B$BСпустившись в Сетеккские залы, войди в тот зал, что находится перед королевским, и вставь лунный камень в когти ворона.$B$BПусть Анзу поверит, что его призывают в мир последователи. Как только он воплотиться, не знай пощады!",
-    ["O"] = "Убейте бога-ворона и возвращайтесь к Мортису Шелесту Крыла в Кенарийский оплот.$B$B$B$BЭто задание выполняется в режиме героической сложности.",
+    ["O"] = "Убейте бога-ворона и возвращайтесь к Мортису Шелесту Крыла в Кенарийский оплот.$B$BЭто задание выполняется в режиме героической сложности.",
     ["T"] = "Изгнание бога-ворона",
   },
   [11002] = {
@@ -17040,7 +16944,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Новое назначение",
   },
   [11054] = {
-    ["D"] = "Так ты – новый инспектор, да? Есть одна штука, которую должен иметь каждый инспектор для поддержания дисциплины. Прежде чем ты приступишь к работе и начнешь вколачивать здравый смысл в пустые головы, тебе нужно обзавестись такой штукой. Каждый инспектор сам добывает все, что нужно для ее изготовления, и ты не будешь исключением.$B$BМне нужна узловатая кожа и прочная шкура Тирантия. Тирантия можно найти в заповеднике \"Дальнее поле\" в северных пределах Пустоверти.",
+    ["D"] = "Принесите 10 кусков узловатой кожи и прочную шкуру Тирантия надзирателю Грязевику в лагерь Драконьей Пасти в Долине Призрачной Луны.",
     ["O"] = "Принесите 10 кусков узловатой кожи и прочную шкуру Тирантия надзирателю Грязевику в лагерь Драконьей Пасти в Долине Призрачной Луны.",
     ["T"] = "Ты – инспектор: как делать все правильно",
   },
@@ -17055,7 +16959,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Просьба Хаззика",
   },
   [11057] = {
-    ["D"] = "Мы ценим твое рвение оказать нам помощь здесь, в Огри\'ле, |3-6($C). Но мы имеем честь попросить тебя сделать кое-что прежде, чем примем твою помощь.$B$BТам, внизу, наши братья порабощены сынами Груула. Просим, поговори с Мог\'доргом Мудрым, который руководит огрским сопротивлением против их хозяев-гроннов.$B$BИщи его на башне на восточной стороне Арены в Круге Крови.",
+    ["D"] = "We commend your zeal in wanting to help out here in Ogri\'la, $c.  However, we have a favor to ask of you before we can accept your assistance.$B$BDown below our brethren are enslaved to the Sons of Gruul.  Please, speak with Mog\'dorg the Wizened, who is leading an ogre resistance against their gronn masters.$B$BSeek him out atop the tower on the eastern side of the Circle of Blood arena.",
     ["O"] = "Chu\'a\'lor has asked you to speak with Mog\'dorg the Wizened atop one of the towers just outside the Circle of Blood in the Blade\'s Edge Mountains.",
     ["T"] = "Огрское подполье",
   },
@@ -17120,7 +17024,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Гонки Драконьей Пасти: Командир звена Ромеон",
   },
   [11070] = {
-    ["D"] = "Три года в поту, в крови и в слезах. В основном в слезах. Количество слез, которые проливает грубый солдат, когда дело доходит до тотальной войны, просто не поддается описанию!$B$B\"Они запрыгивают к нам в башню на лошадях!\" \"Почему их база так хорошо укреплена?\" \"Они захватили наш Приют Успокоения, я ухожу в самоволку!\"$B$BСлабаки...$B$BЯ удрал из этой \"юдоли скорби\" за минуту до открытия Темного портала, теперь я один из лучших бойцов клана Драконьей Пасти. Если ты хочешь взобраться на вершину, сначала придется миновать меня.$B$BНачнем, когда скажешь.",
+    ["D"] = "Следуйте за командиром звена Маэстром, пытаясь удержаться на своем средстве передвижения. Если вам удастся победить его, сообщите об этом Джаю Нослаю в лагере Драконьей Пасти в Долине Призрачной Луны.",
     ["O"] = "Следуйте за командиром звена Маэстром, пытаясь удержаться на своем средстве передвижения. Если вам удастся победить его, сообщите об этом Джаю Нослаю в лагере Драконьей Пасти в Долине Призрачной Луны.",
     ["T"] = "Гонки Драконьей Пасти: Командир звена Маэстр",
   },
@@ -17245,7 +17149,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Атака с воздуха",
   },
   [11097] = {
-    ["D"] = "Возьми эти медали Провидцев. Мор\'гору понадобится доказательство \"победы\", когда все закончится. Он решит, что медали сняты с наших павших воинов. $B$BТеперь все, что тебе остается, – использовать сигнальную ракету, чтобы известить налетчиков из клана Драконьей Пасти. Мы сокрушим их, когда у тебя все будет готово, только дай нам знак.",
+    ["D"] = "Помогите Командиру Хоббу защитить Святилище Звезд. Когда войска Драконьей Пасти будут разгромлены, вернитесь к властителю Мор\'гору в лагерь Драконьей Пасти с медалями Провидцев.",
     ["O"] = "Помогите Командиру Хоббу защитить Святилище Звезд. Когда войска Драконьей Пасти будут разгромлены, вернитесь к властителю Мор\'гору в лагерь Драконьей Пасти с медалями Провидцев.",
     ["T"] = "Самая Опасная Ловушка",
   },
@@ -17295,7 +17199,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Отказ защитника",
   },
   [11107] = {
-    ["D"] = "Я недостоин даже принести вам это известие, $Gсэр:мадам;, умоляю о снисхождении. Властитель Мор\'гор хочет видеть вас у себя.",
+    ["D"] = "Поговорите с властителем Мор\'гором в лагере Драконьей Пасти в Долине Призрачной Луны.",
     ["O"] = "Поговорите с властителем Мор\'гором в лагере Драконьей Пасти в Долине Призрачной Луны.",
     ["T"] = "Склонитесь перед верховным господином",
   },
@@ -17642,7 +17546,7 @@ pfDB["quests"]["ruRU-tbc"] = {
   [11196] = {
     ["D"] = "Слушай $Gприятель:подруга; есть еще кое-что. Что ты можешь сделать для старины Пригмона.$B$BЗунгам, мой совершенно никчемный кузен был засажен за решетку в Зул\'Амане. Он там все еже жив, я получил от него весточку, только прошлой ночью.$B$BНе должен я был ему позволять втягивать меня в эту заваруху, но он должен мне нехилую сумму денег.$B$BВытащи его, каким угодно способом, и не бойся помять, пока тащишь его ко мне.",
     ["O"] = "Найдите Зунгама и помогите ему выбраться из Зул\'Амана.",
-    ["T"] = "Время Икс",
+    ["T"] = "TEMP X",
   },
   [11198] = {
     ["D"] = "Чудовище это или нет, мы не станем рисковать безопасностью наших морских перевозок. Я приказал нашим лучшим стрелкам приготовиться к бою с Тетуром. Артиллеристы усилили оборону доков тремя мортирами.$B$BЯ намерен приказать зажечь маяк. Если Тетур пойдет в атаку, твоя задача будет стрелять из мортир и прикончить тварь прежде, чем он убьет всех наших стрелков. При этом я не стал бы долго стоять на одном месте. Стрельба из мортир обязательно привлечет его внимание.",
@@ -18338,6 +18242,21 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["D"] = "Несмотря на все наши усилия, страшные планы Кель\'таса свершились. Солнечный Колодец снова вспыхнул, готовый к прибытию Искусителя.$B$BПредмет, находящийся передо мной и ниже А\'дала представляет собой нынешнее положение дел с обороной Солнечного Колодца. Вокруг него воздвигнуты мощные преграды, не дающие нам напасть на внутренние чертоги. Если когда нашему миру и была нужна помощь, так теперь.$B$BСообщи обо всем верховному магу Нет\'улу на остров Кель\'Данас, что к северу от Кель\'Таласа.",
     ["O"] = "Отнесите сообщение верховному магу Нет\'улу на остров Кель\'Данас, к северу от Кель\'Таласа.$B$BЛюбой распорядитель полетов в Стальгорне или Луносвете доставит вас до места назначения.",
     ["T"] = "Входи, Искуситель...",
+  },
+  [11551] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to deactivate Agamath, The First Gate",
+    ["O"] = "Bring to me the essence of immortals, found only on the most powerful beings of this world! With the essence in hand, my mages will be able to dismantle Agamath, ultimately collapsing the gateway and unlocking the way further into the sunwell.",
+    ["T"] = "Agamath, the First Gate",
+  },
+  [11552] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to break Rohendor, the Second Gate",
+    ["O"] = "Bring to me the essence of immortals, found only on the most powerful beings of this world! Rohendor cannot withstand the combined force of our mages!",
+    ["T"] = "Rohendor, the Second Gate",
+  },
+  [11553] = {
+    ["D"] = "Archmage Ne\'thul asked you to bring the Essence of the Immortals that will be used to eventually dismantle Archonisus, the Final Gate",
+    ["O"] = "Bring to me the essence of immortals ÔÇö found only on the most powerful beings of this world ÔÇö and Archonisus is sure to crumble!",
+    ["T"] = "Archonisus, the Final Gate",
   },
   [11554] = {
     ["D"] = "",
@@ -19224,13 +19143,18 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["O"] = "Попадите кружкой с бесплатным пивом в С.С.М. 5 раз, затем поговорите с Биззлем Эхпрокачуном.",
     ["T"] = "Пей до дна!",
   },
+  [12192] = {
+    ["D"] = "The Dark Irons took a beating!  As they rushed back to the Grim Guzzler, a portion of their transport fell off.  More importantly, you managed to keep the camp safe... today.$b$bHead over to Bizzle and explain your heroic triumph over the Dark Iron dwarves.",
+    ["O"] = "Talk to Bizzle Quicklift in the Brewfest camp.",
+    ["T"] = "This One Time, When I Was Drunk...",
+  },
   [12193] = {
     ["D"] = "Главное на Хмельном фестивале – не гонки на баранах, а выпивка! Улучи минутку и отдай свой купон Белби Быстросмен. Она стоит за поляной, на которой проходит Хмельной фестиваль. Если ты ее не увидишь, не беспокойся, она-то тебя всяко заметит.$B$BВ общем, отдай ей свой купон, и получишь бесплатную праздничную кружку. Кроме того, именно Белби занимается прочей праздничной торговлей.",
     ["O"] = "Отоварьте свой купон на праздничную кружку у Бликса Чиништукса в лагере Хмельного фестиваля.",
     ["T"] = "А не будет ли сувенирчика в нынешнем году?",
   },
   [12194] = {
-    ["D"] = "Not only are we supplying brew to everyone, we also have steins to give out! Beautiful, commemorative steins all obtained by the most legal of means! Here\'s a voucher for one.$B$BTalk to Blix near the back of the Brewfest camp. He\'s pretty strange, even more so now that he\'s always wearing those goggles. He\'ll handle the voucher for you, and any other Brewfest transaction.",
+    ["D"] = "Мы не только поим всех подряд, но и дарим пивные кружки! Красивые, памятные кружки, полученные совершенно законным образом! Вот тебе купон на такую кружку.$B$BПоговори с Бликсом рядом с лагерем Хмельного фестиваля. Он довольно странный тип, тем более, что очки эти никогда не снимает. Он и отоварит твой купон. Он же занимается прочей праздничной торговлей.",
     ["O"] = "Отоварьте свой купон на праздничную кружку у Бликса Чиништукса в лагере Хмельного фестиваля.",
     ["T"] = "А не будет ли сувенирчика в нынешнем году?",
   },
@@ -19245,7 +19169,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Клуб \"Пиво месяца\"",
   },
   [12318] = {
-    ["D"] = "$N, наши шпионы обнаружили, что дворфы Черного Железа замышляют сорвать Хмельной фестиваль!$B$BДворфов из Глубин Черной горы возглавляет пивовар-отступник Корен Худовар. Нас беспрестанно атакуют их буровые машины!$B$BНаш шпион сейчас прячется в \"Угрюмом Обжоре\", таверне в Глубинах Черной горы. Он располагает наиболее свежей информацией о замыслах Худовара.$B$BНайди нашего шпиона и спаси Хмельной фестиваль!",
+    ["D"] = "Поговорите со шпионом Хмельного фестиваля в таверне \"Угрюмый обжора\" в Глубинах Черной горы.",
     ["O"] = "Поговорите со шпионом Хмельного фестиваля в таверне \"Угрюмый обжора\" в Глубинах Черной горы.",
     ["T"] = "Спасем Хмельной фестиваль!",
   },
@@ -19260,7 +19184,7 @@ pfDB["quests"]["ruRU-tbc"] = {
     ["T"] = "Худое варево Худовара",
   },
   [12513] = {
-    ["D"] = "Сам того не желая, Дон Карлос сподвиг вас сразиться с ним молодым в Старом Хилсбраде. Принесите ему шляпу Дона Карлоса в доказательство вашей победы. Он будет ждать вас в Танарисе.",
+    ["D"] = "Тебе нравится моя шляпа? Да, она и впрямь необычная. Настоящий антиквариат... теперь уже никто и не помнит, как шить такие головные уборы.$B$BЭх, когда я был молод и горяч, я обещал отдать ее тому, кто сможет одолеть меня в битве. Многие пытались выиграть эту шляпу... но, как видишь, она все еще на мне. $B$BУвы, времена эти давно канули в Лету. Старый я стал; пью да рыбачу, но больше уже не дерусь.",
     ["O"] = "Сам того не желая, Дон Карлос сподвиг вас сразиться с ним молодым в Старом Хилсбраде. Принесите ему шляпу Дона Карлоса в доказательство вашей победы. Он будет ждать вас в Танарисе.",
     ["T"] = "Милая шляпка...",
   },
