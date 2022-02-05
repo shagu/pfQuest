@@ -1,9 +1,8 @@
+name: Upload Release Assets
 on:
   push:
     tags:
-    - '*'
-
-name: Upload Release Assets
+      - '*'
 
 jobs:
   build:
