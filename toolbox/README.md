@@ -56,7 +56,6 @@ Clone the latest CMaNGOS TBC database and the translations of the Mangos-Extras 
     git clone https://github.com/cmangos/mangos-tbc.git
     git clone https://github.com/cmangos/tbc-db.git
     git clone https://github.com/MangosExtras/MangosOne_Localised.git
-    cd MangosOne_Localised && git checkout ae4f4e102f747e36b4064afe8166d89586b981b6 && cd ..
 
     mysql -u mangos -p"mangos" cmangos-tbc < mangos-tbc/sql/base/mangos.sql
     mysql -u mangos -p"mangos" cmangos-tbc < tbc-db/Full_DB/*.sql
