@@ -67,7 +67,7 @@ Clone the latest CMaNGOS TBC database and the translations of the Mangos-Extras 
 
     sed -i "/locales_command/d" MangosOne_Localised/1_LocaleTablePrepare.sql
     mysql -u mangos -p"mangos" cmangos-tbc < MangosOne_Localised/1_LocaleTablePrepare.sql
-    for file in MangosOne_Localised/1_LocaleTablePrepare.sql MangosOne_Localised/Translations/*/*.sql; echo "$file"; do mysql -u mangos -p"mangos" cmangos-tbc < "$file"; done
+    for file in MangosOne_Localised/1_LocaleTablePrepare.sql MangosOne_Localised/Translations/*/*.sql; do echo "$file"; mysql -u mangos -p"mangos" cmangos-tbc < "$file"; done
 
 ## Run the Extractor
 
