@@ -12,6 +12,9 @@ pfQuestCompat.itemsuffix = client > 11200 and ":0:0:0:0:0:0:0" or ":0:0:0"
 pfQuestCompat.rotateMinimap = client > 11200 and GetCVar("rotateMinimap") ~= "0" and true or nil
 pfQuestCompat.client = client
 
+-- use and cache the original function if CTMod overwrites global API calls
+local GetQuestLogTitle = CT_QuestLevels_oldGetQuestLogTitle or GetQuestLogTitle
+
 pfQuestCompat.GetQuestLogTitle = function(id)
   local title, level, tag, group, header, collapsed, complete, daily, _
   if client <= 11200 then -- vanilla
