@@ -810,7 +810,7 @@ function pfMap:UpdateMinimap()
 
   -- hide nodes and skip further processing in dungeons
   local xPlayer, yPlayer = GetPlayerMapPosition("player")
-  if xPlayer == 0 and yPlayer == 0 or GetCurrentMapZone() == 0 then
+  if xPlayer == 0 and yPlayer == 0 then
     for pins, pin in pairs(pfMap.mpins) do pin:Hide() end
     return
   end
