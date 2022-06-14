@@ -410,8 +410,14 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
     end
 
     -- update arrow texts
-    this.title:SetText(color..target[3].title.."|r")
-    this.description:SetText(target[3].description or "")
+    local level = target[3].qlvl and "[" .. target[3].qlvl .. "] " or ""
+    this.title:SetText(color..level..target[3].title.."|r")
+    local desc = target[3].description or ""
+    if not pfUI or not pfUI.uf then
+      this.description:SetTextColor(1,.9,.7,1)
+      desc = string.gsub(desc, "ff33ffcc", "ffffffff")
+    end
+    this.description:SetText(desc.."|r.")
   end
 
   -- only refresh distance text on change
@@ -439,7 +445,7 @@ pfQuest.route.arrow.model:SetAllPoints()
 pfQuest.route.arrow.title = pfQuest.route.arrow:CreateFontString("pfQuestRouteText", "HIGH", "GameFontWhite")
 pfQuest.route.arrow.title:SetPoint("TOP", pfQuest.route.arrow.model, "BOTTOM", 0, -10)
 pfQuest.route.arrow.title:SetFont(pfUI.font_default, pfUI_config.global.font_size+1, "OUTLINE")
-pfQuest.route.arrow.title:SetTextColor(1,.8,.2)
+pfQuest.route.arrow.title:SetTextColor(1,.8,0)
 pfQuest.route.arrow.title:SetJustifyH("CENTER")
 
 pfQuest.route.arrow.description = pfQuest.route.arrow:CreateFontString("pfQuestRouteText", "HIGH", "GameFontWhite")
