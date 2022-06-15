@@ -199,6 +199,9 @@ pfMap.tooltip:SetScript("OnShow", function()
 end)
 
 function pfMap.tooltip:GetColor(min, max)
+  local max = max or 1
+  local min = min or max or 1
+
   local perc = min / max
   local r1, g1, b1, r2, g2, b2
   if perc <= 0.5 then
