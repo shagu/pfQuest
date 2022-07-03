@@ -62,6 +62,40 @@ function pfQuestCompat.GetPlayerFacing()
 end
 
 if client <= 11200 then
+  -- overwrite the out-of-memory popup on vanilla clients, to provide some help
+  -- on how to increase the limits, and also displaying a link to an example.
+  local memlimit = "The user interface is using more than %dMB of memory.\n\n" ..
+    "Set '|cffffee55Script Memory|r' to '|cffffee550|r' in the character selection screen:"
+
+  local striptex = function(frame)
+    for _,v in ipairs({frame:GetRegions()}) do
+      if v.GetTexture and string.find(v:GetTexture(), "ChatInputBorder") then v:Hide() end
+    end
+  end
+
+  _G.StaticPopupDialogs["MEMORY_EXHAUSTED"] = {
+    text = TEXT(memlimit),
+    button1 = TEXT(QUIT_NOW),
+    button2 = TEXT(CANCEL),
+    hasEditBox = 1,
+    showAlert = 1,
+    OnShow = function()
+      pfUI.api.CreateBackdrop(getglobal(this:GetName().."EditBox"), 3, true)
+      getglobal(this:GetName().."EditBox"):SetText("https://i.imgur.com/rZXwaK0.jpg")
+      getglobal(this:GetName().."EditBox"):SetTextInsets(5, 5, 5, 5)
+      getglobal(this:GetName().."EditBox"):SetJustifyH("CENTER")
+      getglobal(this:GetName().."EditBox"):SetWidth(220)
+      getglobal(this:GetName().."EditBox"):SetFocus()
+      getglobal(this:GetName().."Button2"):Disable()
+      striptex(getglobal(this:GetName().."EditBox"))
+    end,
+    OnAccept = function()
+      ForceQuit()
+    end,
+    timeout = 0,
+    whileDead = 1,
+  }
+
   -- add colors to quest links
   local ParseQuestLevels = function(frame, text, a1, a2, a3, a4, a5)
     if text then
