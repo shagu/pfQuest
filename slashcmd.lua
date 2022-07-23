@@ -26,7 +26,9 @@ SlashCmdList["PFDB"] = function(input, editbox)
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff taxi [faction]|cffcccccc - " .. pfQuest_Loc["Show all taxi nodes of [faction]"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff rares [min, [max]]|cffcccccc - " .. pfQuest_Loc["Show all rare mobs of Level [min] to [max]"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff mines [min, [max]] |cffcccccc - " .. pfQuest_Loc["Show mines with skill range of [min] to [max]"])
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff mines auto |cffcccccc - " .. pfQuest_Loc["Show mines with an appropriate skill level for your character"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff herbs [min, [max]] |cffcccccc - " .. pfQuest_Loc["Show herbs with skill range of [min] to [max]"])
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff herbs auto |cffcccccc - " .. pfQuest_Loc["Show herbs with an appropriate skill level for your character"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff scan |cffcccccc - " .. pfQuest_Loc["Scan the server for custom items"])
     return
   end
@@ -130,6 +132,11 @@ SlashCmdList["PFDB"] = function(input, editbox)
 
   -- argument: mines
   if (arg1 == "mines") then
+    if (arg2 == "auto") then
+      -- id 186 is Mining
+      commandlist[3] = pfDatabase:GetPlayerSkill(186) or 0
+      commandlist[2] = commandlist[3] - 100
+    end
     local maps = pfDatabase:SearchMetaRelation({ commandlist[1], commandlist[2], commandlist[3] }, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
@@ -137,6 +144,11 @@ SlashCmdList["PFDB"] = function(input, editbox)
 
   -- argument: herbs
   if (arg1 == "herbs") then
+    if (arg2 == "auto") then
+      -- id 182 is Herbalism
+      commandlist[3] = pfDatabase:GetPlayerSkill(182) or 0
+      commandlist[2] = commandlist[3] - 100
+    end
     local maps = pfDatabase:SearchMetaRelation({ commandlist[1], commandlist[2], commandlist[3] }, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return

@@ -442,14 +442,15 @@ function pfDatabase:ShowExtendedTooltip(id, tooltip, parent, anchor, offx, offy)
   tooltip:Show()
 end
 
--- PlayerHasSkill
--- Returns false if the player has the required skill
-function pfDatabase:PlayerHasSkill(skill)
+-- GetPlayerSkill
+-- Returns false if the player doesn't have the required skill, or their rank if they do
+function pfDatabase:GetPlayerSkill(skill)
   if not professions[skill] then return false end
 
   for i=0,GetNumSkillLines() do
-    if GetSkillLineInfo(i) == professions[skill] then
-      return true
+    local skillName, _, _, skillRank = GetSkillLineInfo(i)
+    if skillName == professions[skill] then
+      return skillRank
     end
   end
 
@@ -1265,7 +1266,7 @@ function pfDatabase:QuestFilter(id, plevel, pclass, prace)
   if quests[id]["class"] and not ( bit.band(quests[id]["class"], pclass) == pclass ) then return end
 
   -- hide non-available quests for your profession
-  if quests[id]["skill"] and not pfDatabase:PlayerHasSkill(quests[id]["skill"]) then return end
+  if quests[id]["skill"] and not pfDatabase:GetPlayerSkill(quests[id]["skill"]) then return end
 
   -- hide lowlevel quests
   if quests[id]["lvl"] and quests[id]["lvl"] < plevel - 4 and pfQuest_config["showlowlevel"] == "0" then return end
