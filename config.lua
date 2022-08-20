@@ -255,6 +255,11 @@ pfQuestConfig:SetScript("OnEvent", function()
     pfQuest_config = pfQuest_config or {}
     pfBrowser_fav = pfBrowser_fav or {["units"] = {}, ["objects"] = {}, ["items"] = {}, ["quests"] = {}}
 
+    -- clear quest history on new characters
+    if UnitXP("player") == 0 and UnitLevel("player") == 1 then
+      pfQuest_history = {}
+    end
+
     if pfBrowserIcon and pfQuest_config["minimapbutton"] == "0" then
       pfBrowserIcon:Hide()
     end
