@@ -38,6 +38,7 @@ local debugsql = {
   ["quests_events"] = { "Using mangos data to detect event quests" },
   ["quests_eventscreature"] = { "Using mangos data to detect event quests based on creature" },
   ["quests_prequests"] = { "Using mangos data to detect pre-quests based on other quests next entries" },
+  ["quests_prequestchain"] = { "Using mangos data to detect quest-chains based on other quests next entries" },
   ["quests_questspellobject"] = { "Using mangos data find objects associated with quest_template spell requirements" },
   ["quests_credit"] = { "Only applies to CMaNGOS(TBC) to find units that give shared credit to the quest" },
   ["quests_item"] = { "Using mangos data to scan through all items with spell requirements" },
@@ -1092,6 +1093,13 @@ for _, expansion in pairs(config.expansions) do
       local query = mysql:execute('SELECT quest_template.entry FROM quest_template WHERE NextQuestId = ' .. entry .. ' AND ExclusiveGroup < 0')
       while query:fetch(prequests, "a") do
         if debug("quests_prequests") then break end
+        pre[tonumber(prequests["entry"])] = true
+      end
+
+      -- add pre quests from quest chains
+      local query = mysql:execute('SELECT quest_template.entry FROM quest_template WHERE NextQuestInChain = ' .. entry)
+      while query:fetch(prequests, "a") do
+        if debug("quests_prequestchain") then break end
         pre[tonumber(prequests["entry"])] = true
       end
 
