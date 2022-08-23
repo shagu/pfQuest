@@ -1094,7 +1094,6 @@ for _, expansion in pairs(config.expansions) do
       pfDB["quests"][data][entry]["class"] = class ~= 0 and class
       pfDB["quests"][data][entry]["race"] = race ~= 0 and race
       pfDB["quests"][data][entry]["skill"] = skill ~= 0 and skill
-      pfDB["quests"][data][entry]["next"] = chain ~= 0 and chain
       pfDB["quests"][data][entry]["event"] = event ~= 0 and event
 
       -- quest objectives
