@@ -37,6 +37,7 @@ local debugsql = {
   ["quests"] = { "Using mangos data to iterate over all quests" },
   ["quests_events"] = { "Using mangos data to detect event quests" },
   ["quests_eventscreature"] = { "Using mangos data to detect event quests based on creature" },
+  ["quests_eventsobjects"] = { "Using mangos data to detect event quests based on objects" },
   ["quests_prequests"] = { "Using mangos data to detect pre-quests based on other quests next entries" },
   ["quests_prequestchain"] = { "Using mangos data to detect quest-chains based on other quests next entries" },
   ["quests_questspellobject"] = { "Using mangos data find objects associated with quest_template spell requirements" },
@@ -1066,6 +1067,22 @@ for _, expansion in pairs(config.expansions) do
         while query:fetch(game_event_creature, "a") do
           if debug("quests_eventscreature") then break end
           event = tonumber(game_event_creature.event)
+          break
+        end
+      end
+
+      -- try to detect event by gameobject event
+      if not event then
+        local game_event_gameobject = {}
+        local sql = [[
+          SELECT game_event_gameobject.event as event FROM gameobject, game_event_gameobject, gameobject_questrelation
+          WHERE gameobject.guid = game_event_gameobject.guid
+          AND gameobject.id = gameobject_questrelation.id
+          AND gameobject_questrelation.quest = ]] .. quest_template.entry
+        local query = mysql:execute(sql)
+        while query:fetch(game_event_gameobject, "a") do
+          if debug("quests_eventsobjects") then break end
+          event = tonumber(game_event_gameobject.event)
           break
         end
       end
