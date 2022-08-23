@@ -2090,7 +2090,6 @@ pfDB["objects"]["esES-tbc"] = {
   [180611] = "Doodad_GeneralChairLoEnd05",
   [180640] = "Aura azul, columna corta",
   [180643] = "La saga de los sin\'dorei",
-  [180659] = "Drop-Off Point",
   [180663] = "Banco de sabiolas inferior",
   [180664] = "(DEPRECATED) Banco de bocanegras grasos inferior",
   [180671] = "_",

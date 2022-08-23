@@ -3314,7 +3314,6 @@ pfDB["objects"]["deDE-tbc"] = {
   [180643] = "Sage der Sin\'dorei",
   [180657] = "Wimmelnder Feuerflossenschnapperschwarm",
   [180658] = "Deviatfischschwarm",
-  [180659] = "Drop-Off Point",
   [180660] = "Abfall Punkt",
   [180662] = "Schwimmende Wrackteile",
   [180664] = "Wimmelnder Schwarm öliger Schwarzmaulfische",

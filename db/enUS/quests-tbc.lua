@@ -275,6 +275,9 @@ pfDB["quests"]["enUS-tbc"] = {
     ["O"] = "Missing text",
     ["T"] = "[Not Used] BETA Oops, We Killed Them Again.",
   },
+  [1447] = {
+    ["D"] = " Yeah, you\'re obviously not the smartest $c to come into Stormwind, but you\'re about to be one of the dumbest to never leave.$B$BHave you met me friends?",
+  },
   [1459] = {
     ["O"] = "Bring 7 vials of Scorpashi Venom and 3 Aged Kodo Hides to Kreldig Ungor in Desolace.",
   },

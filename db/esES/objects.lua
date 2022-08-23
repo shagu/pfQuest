@@ -8221,6 +8221,7 @@ pfDB["objects"]["esES"] = {
   [180656] = "Banco de sabiolas inferior",
   [180657] = "(DEPRECATED) Banco de pargos de fuego escaso",
   [180658] = "Banco de peces descarriados",
+  [180659] = "Drop-Off Point",
   [180660] = "Saco de oro",
   [180661] = "Vertido de petróleo",
   [180662] = "Restos de goleta",

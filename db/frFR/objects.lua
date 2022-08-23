@@ -8220,6 +8220,7 @@ pfDB["objects"]["frFR"] = {
   [180656] = "Banc de sagerelles",
   [180657] = "Banc clairsemé de lutjans de nagefeu",
   [180658] = "Banc de poissons déviants",
+  [180659] = "Drop-Off Point",
   [180660] = "Sac d\'or",
   [180661] = "Nappe de naphte",
   [180662] = "Débris de goélette",

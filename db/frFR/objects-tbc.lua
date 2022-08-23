@@ -2407,7 +2407,6 @@ pfDB["objects"]["frFR-tbc"] = {
   [180651] = "Pelle",
   [180653] = "Marqueur du trésor",
   [180656] = "Petit banc de sagerelles",
-  [180659] = "Drop-Off Point",
   [180663] = "Petit banc de sagerelles",
   [180664] = "Petit banc de bouches-noires huileux",
   [180669] = "Maelström tourbillonnant",

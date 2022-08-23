@@ -8231,6 +8231,7 @@ pfDB["objects"]["deDE"] = {
   [180656] = "Weisenfischschwarm",
   [180657] = "Ein spärlicher Schwarm Feuerflossenschnapper",
   [180658] = "Ein Schwarm Deviatfische",
+  [180659] = "Drop-Off Point",
   [180660] = "Säckchen voller Gold",
   [180661] = "Ölfleck",
   [180662] = "Schiffswrackteile",

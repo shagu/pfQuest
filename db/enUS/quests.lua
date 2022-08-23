@@ -6270,7 +6270,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Jammal\'an the Prophet",
   },
   [1447] = {
-    ["D"] = " Yeah, you\'re obviously not the smartest $c to come into Stormwind, but you\'re about to be one of the dumbest to never leave.$B$BHave you met me friends?",
+    ["D"] = "Yeah, you\'re obviously not the smartest $c to come into Stormwind, but you\'re about to be one of the dumbest to never leave.$b$bHave you met me friends?",
     ["O"] = "Defeat Dashel Stonefist in Stormwind.",
     ["T"] = "The Missing Diplomat",
   },

@@ -998,7 +998,6 @@ pfDB["objects"]["enUS-tbc"] = {
   [180611] = "Doodad_GeneralChairLoEnd05",
   [180640] = "Blue aura, short column",
   [180643] = "Saga of the Sin\'dorei",
-  [180659] = "Drop-Off Point",
   [180671] = "_",
   [180673] = "High Chief Winterfall Cave Mouth Spell Focus",
   [180779] = "Barrel",

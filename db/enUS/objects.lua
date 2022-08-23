@@ -8220,6 +8220,7 @@ pfDB["objects"]["enUS"] = {
   [180656] = "Sagefish School",
   [180657] = "Firefin Snapper School",
   [180658] = "School of Deviate Fish",
+  [180659] = "Drop-Off Point",
   [180660] = "Sack of Gold",
   [180661] = "Oil Spill",
   [180662] = "Floating Wreckage",
