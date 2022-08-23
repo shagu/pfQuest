@@ -1102,10 +1102,10 @@ for _, expansion in pairs(config.expansions) do
 
       -- add single pre-quests
       if tonumber(quest_template.PrevQuestId) ~= 0 then
-        pre[tonumber(quest_template.PrevQuestId)] = true
+        pre[math.abs(tonumber(quest_template.PrevQuestId))] = true
       end
 
-      -- add multiple pre-quests
+      -- add required pre-quests
       local prequests = {}
       local query = mysql:execute('SELECT quest_template.entry FROM quest_template WHERE NextQuestId = ' .. entry .. ' AND ExclusiveGroup < 0')
       while query:fetch(prequests, "a") do
