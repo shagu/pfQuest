@@ -5,6 +5,7 @@ local _, _, _, client = GetBuildInfo()
 client = client or 11200
 
 pfQuest = CreateFrame("Frame")
+pfQuest.icons = {}
 
 function pfQuest:Debug(msg)
   -- only show debug output if enabled
