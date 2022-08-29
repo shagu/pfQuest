@@ -46,7 +46,7 @@ pfQuest_defconfig = {
   },
   ["mindropchance"] = { -- Minimum Item Drop Chance
     text = pfQuest_Loc["Minimum Item Drop Chance"],
-    default = "1", type = "text", pos = { 1, 9 },
+    default = 1, type = "text", pos = { 1, 9 }, min = 0, max = 100,
   },
   ["showtooltips"] = { -- Show Tooltips
     text = pfQuest_Loc["Show Tooltips"],
@@ -87,15 +87,15 @@ pfQuest_defconfig = {
   },
   ["worldmaptransp"] = { -- World Map Node Transparency
     text = pfQuest_Loc["World Map Node Transparency"],
-    default = "1.0", type = "text", pos = { 1, 20 },
+    default = 100, type = "text", pos = { 1, 20 }, min = 0, max = 100,
   },
   ["minimaptransp"] = { -- Minimap Node Transparency
     text = pfQuest_Loc["Minimap Node Transparency"],
-    default = "1.0", type = "text", pos = { 1, 21 },
+    default = 10, type = "text", pos = { 1, 21 }, min = 0, max = 100,
   },
   ["nodefade"] = { -- Node Fade Transparency
     text = pfQuest_Loc["Node Fade Transparency"],
-    default = "0.3", type = "text", pos = { 1, 22 },
+    default = 30, type = "text", pos = { 1, 22 }, min = 0, max = 100,
   },
   ["mouseover"] = { -- Highlight Nodes On Mouseover
     text = pfQuest_Loc["Highlight Nodes On Mouseover"],
@@ -108,11 +108,11 @@ pfQuest_defconfig = {
   },
   ["trackeralpha"] = { -- Unified Quest Location Markers
     text = pfQuest_Loc["Quest Tracker Visibility"],
-    default = "0", type = "text", pos = { 2, 2 },
+    default = 0, type = "text", pos = { 2, 2 }, min = 0, max = 100,
   },
   ["trackerfontsize"] = { -- Unified Quest Location Markers
     text = pfQuest_Loc["Quest Tracker Font Size"],
-    default = "12", type = "text", pos = { 2, 3 },
+    default = 12, type = "text", pos = { 2, 3 }, min = 1, max = 20,
   },
   ["showcluster"] = { -- Unified Quest Location Markers
     text = pfQuest_Loc["Unified Quest Location Markers"],
@@ -242,6 +242,7 @@ pfQuestConfig:SetPoint("CENTER", 0, 0)
 pfQuestConfig:SetFrameStrata("HIGH")
 pfQuestConfig:SetMovable(true)
 pfQuestConfig:EnableMouse(true)
+pfQuestConfig:RegisterForDrag("LeftButton", "RightButton", "MiddleButton", "Button4", "Button5")
 pfQuestConfig:RegisterEvent("ADDON_LOADED")
 pfQuestConfig:SetScript("OnEvent", function()
   if arg1 == "pfQuest" or arg1 == "pfQuest-tbc" or arg1 == "pfQuest-wotlk" then
@@ -266,11 +267,10 @@ pfQuestConfig:SetScript("OnEvent", function()
   end
 end)
 
-pfQuestConfig:SetScript("OnMouseDown", function()
+pfQuestConfig:SetScript("OnDragStart", function()
   this:StartMoving()
 end)
-
-pfQuestConfig:SetScript("OnMouseUp", function()
+pfQuestConfig:SetScript("OnDragStop", function()
   this:StopMovingOrSizing()
 end)
 
@@ -322,7 +322,10 @@ pfQuestConfig.save = CreateFrame("Button", "pfQuestConfigReload", pfQuestConfig)
 pfQuestConfig.save:SetWidth(160)
 pfQuestConfig.save:SetHeight(28)
 pfQuestConfig.save:SetPoint("BOTTOM", 0, 10)
-pfQuestConfig.save:SetScript("OnClick", ReloadUI)
+pfQuestConfig.save:SetScript("OnClick", function()
+  this:GetParent():Hide() -- clear current editbox focus for save value
+  ReloadUI()
+end)
 pfQuestConfig.save.text = pfQuestConfig.save:CreateFontString("Caption", "LOW", "GameFontWhite")
 pfQuestConfig.save.text:SetAllPoints(pfQuestConfig.save)
 pfQuestConfig.save.text:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
@@ -419,6 +422,8 @@ function pfQuestConfig:CreateConfigEntries(config)
       elseif data.type == "text" then
         -- input field
         frame.input = CreateFrame("EditBox", nil, frame)
+        frame.input:SetNumeric(true)
+        frame.input:SetMaxLetters(3)
         frame.input:SetTextColor(.2,1,.8,1)
         frame.input:SetJustifyH("RIGHT")
         frame.input:SetTextInsets(5,5,5,5)
@@ -427,7 +432,19 @@ function pfQuestConfig:CreateConfigEntries(config)
         frame.input:SetPoint("RIGHT", -20, 0)
         frame.input:SetFontObject(GameFontNormal)
         frame.input:SetAutoFocus(false)
+        frame.input:SetScript("OnEnter", function(self)
+          GameTooltip:SetOwner(this, "ANCHOR_TOP")
+          local line = string.format("Accepted values: [%d, %d]", pfQuest_defconfig[this.config].min, pfQuest_defconfig[this.config].max)
+          GameTooltip:AddLine(line)
+          GameTooltip:Show()
+        end)
+        frame.input:SetScript("OnLeave", function(self)
+          GameTooltip:Hide()
+        end)
         frame.input:SetScript("OnEscapePressed", function(self)
+          this:ClearFocus()
+        end)
+        frame.input:SetScript("OnEnterPressed", function(self)
           this:ClearFocus()
         end)
 
@@ -435,7 +452,24 @@ function pfQuestConfig:CreateConfigEntries(config)
         frame.input:SetText(pfQuest_config[entry])
 
         frame.input:SetScript("OnTextChanged", function(self)
-          pfQuest_config[this.config] = this:GetText()
+          local input = this:GetNumber()
+          if not input or input == "" then return end
+
+          if input > pfQuest_defconfig[this.config].max then
+            this:SetNumber(pfQuest_defconfig[this.config].max)
+          elseif input < pfQuest_defconfig[this.config].min then
+            this:SetNumber(pfQuest_defconfig[this.config].min)
+          end
+        end)
+        frame.input:SetScript("OnEditFocusLost", function(self)
+          this:HighlightText(0, 0)
+          local input = this:GetNumber()
+          pfQuest_config[this.config] = input and input ~= "" and input or this.last_input
+          this.last_input = nil
+        end)
+        frame.input:SetScript("OnEditFocusGained", function(self)
+          this:HighlightText()
+          this.last_input = this:GetNumber()
         end)
 
         pfUI.api.CreateBackdrop(frame.input, nil, true)
@@ -491,7 +525,7 @@ function pfQuestConfig:UpdateConfigEntries()
       if data.type == "checkbox" then
         configframes[entry].input:SetChecked((pfQuest_config[entry] == "1" and true or nil))
       elseif data.type == "text" then
-        configframes[entry].input:SetText(pfQuest_config[entry])
+        configframes[entry].input:SetNumber(pfQuest_config[entry])
       end
     end
   end
