@@ -6313,6 +6313,7 @@ pfDB["objects"]["frFR-tbc"] = {
   [187232] = "Demon Teleporter Focus",
   [187235] = "Dressé, Extérieur, Moyen - Noël",
   [187236] = "Cadeau du Voile d\'hiver",
+  [187254] = "Parchemin enroulé",
   [187260] = "Boite aux lettres",
   [187264] = "Coffre de minerai sombréchine",
   [187265] = "Parasol romantique",
