@@ -369,6 +369,7 @@ for _, expansion in pairs(config.expansions) do
   local dbtype = config[expansion][2]
   local C = config[config[expansion][2]]
 
+  local idcolumns = dbtype == "vmangos" and { "id", "id2", "id3", "id4" } or { "id" }
   local exp = expansion == "vanilla" and "" or "-"..expansion
   local data = "data".. exp
 
@@ -496,33 +497,35 @@ for _, expansion in pairs(config.expansions) do
       local creature = {}
       local ret = {}
 
-      local sql = [[
-        SELECT * FROM creature LEFT JOIN pfquest.WorldMapArea_]]..expansion..[[
-        ON ( pfquest.WorldMapArea_]]..expansion..[[.mapID = creature.map
-          AND pfquest.WorldMapArea_]]..expansion..[[.x_min < creature.position_x
-          AND pfquest.WorldMapArea_]]..expansion..[[.x_max > creature.position_x
-          AND pfquest.WorldMapArea_]]..expansion..[[.y_min < creature.position_y
-          AND pfquest.WorldMapArea_]]..expansion..[[.y_max > creature.position_y
-          AND pfquest.WorldMapArea_]]..expansion..[[.areatableID > 0)
-        WHERE creature.id = ]] .. id .. [[ ORDER BY areatableID, position_x, position_y, spawntimesecsmin ]]
+      for _, column in pairs(idcolumns) do
+        local sql = [[
+          SELECT * FROM creature LEFT JOIN pfquest.WorldMapArea_]]..expansion..[[
+          ON ( pfquest.WorldMapArea_]]..expansion..[[.mapID = creature.map
+            AND pfquest.WorldMapArea_]]..expansion..[[.x_min < creature.position_x
+            AND pfquest.WorldMapArea_]]..expansion..[[.x_max > creature.position_x
+            AND pfquest.WorldMapArea_]]..expansion..[[.y_min < creature.position_y
+            AND pfquest.WorldMapArea_]]..expansion..[[.y_max > creature.position_y
+            AND pfquest.WorldMapArea_]]..expansion..[[.areatableID > 0)
+          WHERE creature.]] .. column  .. [[ = ]] .. id .. [[ ORDER BY areatableID, position_x, position_y, spawntimesecsmin ]]
 
-      local query = mysql:execute(sql)
-      while query:fetch(creature, "a") do
-        local zone = creature.areatableID
-        local x = creature.position_x
-        local y = creature.position_y
-        local x_max = creature.x_max
-        local x_min = creature.x_min
-        local y_max = creature.y_max
-        local y_min = creature.y_min
-        local px, py = 0, 0
+        local query = mysql:execute(sql)
+        while query:fetch(creature, "a") do
+          local zone = creature.areatableID
+          local x = creature.position_x
+          local y = creature.position_y
+          local x_max = creature.x_max
+          local x_min = creature.x_min
+          local y_max = creature.y_max
+          local y_min = creature.y_min
+          local px, py = 0, 0
 
-        if x and y and x_min and y_min then
-          px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
-          py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
-          if isValidMap(zone, round(px), round(py)) then
-            local coord = { px, py, tonumber(zone), ( tonumber(creature.spawntimesecsmin) > 0 and tonumber(creature.spawntimesecsmin) or 0) }
-            table.insert(ret, coord)
+          if x and y and x_min and y_min then
+            px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
+            py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
+            if isValidMap(zone, round(px), round(py)) then
+              local coord = { px, py, tonumber(zone), ( tonumber(creature.spawntimesecsmin) > 0 and tonumber(creature.spawntimesecsmin) or 0) }
+              table.insert(ret, coord)
+            end
           end
         end
       end
