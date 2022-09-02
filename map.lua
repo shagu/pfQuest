@@ -55,15 +55,21 @@ local function IsEmpty(tabl)
 end
 
 local layers = {
-  [pfQuestConfig.path.."\\img\\available"]    = 1,
-  [pfQuestConfig.path.."\\img\\available_c"]  = 2,
-  [pfQuestConfig.path.."\\img\\complete"]     = 3,
-  [pfQuestConfig.path.."\\img\\complete_c"]   = 4,
-  [pfQuestConfig.path.."\\img\\icon_vendor"]  = 5,
-  [pfQuestConfig.path.."\\img\\fav"]          = 6,
-  [pfQuestConfig.path.."\\img\\cluster_item"] = 9,
-  [pfQuestConfig.path.."\\img\\cluster_mob"]  = 9,
-  [pfQuestConfig.path.."\\img\\cluster_misc"] = 9,
+  -- regular icons
+  [pfQuestConfig.path.."\\img\\available"]          = 1,
+  [pfQuestConfig.path.."\\img\\available_c"]        = 2,
+  [pfQuestConfig.path.."\\img\\complete"]           = 3,
+  [pfQuestConfig.path.."\\img\\complete_c"]         = 4,
+  [pfQuestConfig.path.."\\img\\icon_vendor"]        = 5,
+  [pfQuestConfig.path.."\\img\\fav"]                = 6,
+
+  -- cluster textures
+  [pfQuestConfig.path.."\\img\\cluster_item"]       = 9,
+  [pfQuestConfig.path.."\\img\\cluster_mob"]        = 9,
+  [pfQuestConfig.path.."\\img\\cluster_misc"]       = 9,
+  [pfQuestConfig.path.."\\img\\cluster_mob_mono"]   = 9,
+  [pfQuestConfig.path.."\\img\\cluster_item_mono"]  = 9,
+  [pfQuestConfig.path.."\\img\\cluster_misc_mono"]  = 9,
 }
 
 local function GetLayerByTexture(tex)
@@ -722,7 +728,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
   local highlight = frame.texture and pfMap.highlightdb[frame][pfMap.highlight] and true or nil
   local target = frame.texture and pfQuest.route and pfQuest.route.IsTarget(frame) or nil
 
-  -- set default size for node
+  -- set default sizes for different node types
   frame.defsize = (frame.cluster or frame.layer == 4) and 22 or 16
 
   -- make the current route target visible
@@ -955,7 +961,7 @@ pfMap:SetScript("OnUpdate", function()
       elseif not highlight and pfMap.highlight then
         -- fade node
         transition = frame:Animate(frame.defsize, tonumber(pfQuest_config["nodefade"]), fps) or transition
-      elseif frame.texture then
+      elseif frame.texture or frame.cluster then
         -- defaults for textured nodes
         transition = frame:Animate(frame.defsize, 1, fps) or transition
       else

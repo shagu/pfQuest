@@ -1206,17 +1206,19 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           meta["cluster"] = true
           meta["zone"]  = map
 
+          local icon = pfQuest_config["clustermono"] == "1" and "_mono" or ""
+
           if meta.item then
             meta["x"], meta["y"], meta["priority"] = getcluster(data.coords, meta["quest"]..hash..map)
-            meta["texture"] = pfQuestConfig.path.."\\img\\cluster_item"
+            meta["texture"] = pfQuestConfig.path.."\\img\\cluster_item" .. icon
             pfMap:AddNode(meta, true)
           elseif meta.spawntype and meta.spawntype == pfQuest_Loc["Unit"] and meta.spawn and not meta.itemreq then
             meta["x"], meta["y"], meta["priority"] = getcluster(data.coords, meta["quest"]..hash..map)
-            meta["texture"] = pfQuestConfig.path.."\\img\\cluster_mob"
+            meta["texture"] = pfQuestConfig.path.."\\img\\cluster_mob" .. icon
             pfMap:AddNode(meta, true)
           else
             meta["x"], meta["y"], meta["priority"] = getcluster(data.coords, meta["quest"]..hash..map)
-            meta["texture"] = pfQuestConfig.path.."\\img\\cluster_misc"
+            meta["texture"] = pfQuestConfig.path.."\\img\\cluster_misc" .. icon
             pfMap:AddNode(meta, true)
           end
         end
