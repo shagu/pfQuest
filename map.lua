@@ -771,7 +771,10 @@ function pfMap:UpdateNodes()
         end
 
         -- hide cluster nodes if set
-        if pfMap.pins[i].cluster and pfQuest_config.showcluster == "0" then
+        if pfQuest_config["showcluster"] == "0" and pfMap.pins[i].cluster then
+          pfMap.pins[i]:Hide()
+        -- hide individual quest spawns
+        elseif pfQuest_config["showspawn"] == "0" and addon == "PFQUEST" and not pfMap.pins[i].texture then
           pfMap.pins[i]:Hide()
         else
           -- populate quest list on map

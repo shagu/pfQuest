@@ -73,33 +73,37 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Enable Minimap Nodes"],
     default = "1", type = "checkbox", pos = { 1, 16 },
   },
+  ["clustermono"] = { -- Use Monochrome Cluster Icons
+    text = pfQuest_Loc["Use Monochrome Cluster Icons"],
+    default = "1", type = "checkbox", pos = { 1, 17 },
+  },
   ["cutoutminimap"] = { -- Use Cut-Out Minimap Node Icons
     text = pfQuest_Loc["Use Cut-Out Minimap Node Icons"],
-    default = "1", type = "checkbox", pos = { 1, 17 },
+    default = "1", type = "checkbox", pos = { 1, 18 },
   },
   ["cutoutworldmap"] = { -- Use Cut-Out World Map Node Icons
     text = pfQuest_Loc["Use Cut-Out World Map Node Icons"],
-    default = "0", type = "checkbox", pos = { 1, 18 },
+    default = "0", type = "checkbox", pos = { 1, 19 },
   },
   ["spawncolors"] = { -- Color Map Nodes By Spawn
     text = pfQuest_Loc["Color Map Nodes By Spawn"],
-    default = "0", type = "checkbox", pos = { 1, 19 },
+    default = "0", type = "checkbox", pos = { 1, 20 },
   },
   ["worldmaptransp"] = { -- World Map Node Transparency
     text = pfQuest_Loc["World Map Node Transparency"],
-    default = "1.0", type = "text", pos = { 1, 20 },
+    default = "1.0", type = "text", pos = { 1, 21 },
   },
   ["minimaptransp"] = { -- Minimap Node Transparency
     text = pfQuest_Loc["Minimap Node Transparency"],
-    default = "1.0", type = "text", pos = { 1, 21 },
+    default = "1.0", type = "text", pos = { 1, 22 },
   },
   ["nodefade"] = { -- Node Fade Transparency
     text = pfQuest_Loc["Node Fade Transparency"],
-    default = "0.3", type = "text", pos = { 1, 22 },
+    default = "0.3", type = "text", pos = { 1, 23 },
   },
   ["mouseover"] = { -- Highlight Nodes On Mouseover
     text = pfQuest_Loc["Highlight Nodes On Mouseover"],
-    default = "1", type = "checkbox", pos = { 1, 23 },
+    default = "1", type = "checkbox", pos = { 1, 24 },
   },
 
   ["_Questing_"] = {
@@ -115,7 +119,7 @@ pfQuest_defconfig = {
     default = "12", type = "text", pos = { 2, 3 },
   },
   ["showcluster"] = { -- Unified Quest Location Markers
-    text = pfQuest_Loc["Unified Quest Location Markers"],
+    text = pfQuest_Loc["Display Objective Location Clusters"],
     default = "1", type = "checkbox", pos = { 2, 4 },
   },
   ["allquestgivers"] = { -- Display Available Quest Givers
@@ -138,6 +142,7 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Display Event & Daily Quests"],
     default = "0", type = "checkbox", pos = { 2, 9 },
   },
+
 
   ["_Routes_"] = {
     text = pfQuest_Loc["Routes"],
