@@ -58,7 +58,7 @@ pfQuest_defconfig = {
   },
   ["trackerlevel"] = { -- Show Level On Quest Tracker
     text = pfQuest_Loc["Show Level On Quest Tracker"],
-    default = "0", type = "checkbox", pos = { 1, 12},
+    default = "1", type = "checkbox", pos = { 1, 12},
   },
   ["questloglevel"] = { -- Show Level On Quest Log
     text = pfQuest_Loc["Show Level On Quest Log"],
@@ -75,7 +75,7 @@ pfQuest_defconfig = {
   },
   ["clustermono"] = { -- Use Monochrome Cluster Icons
     text = pfQuest_Loc["Use Monochrome Cluster Icons"],
-    default = "1", type = "checkbox", pos = { 1, 17 },
+    default = "0", type = "checkbox", pos = { 1, 17 },
   },
   ["cutoutminimap"] = { -- Use Cut-Out Minimap Node Icons
     text = pfQuest_Loc["Use Cut-Out Minimap Node Icons"],
