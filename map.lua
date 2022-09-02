@@ -117,13 +117,14 @@ local function str2rgb(text)
   return unpack(rgbcache[text])
 end
 
-local fpsmod
+local fpsmod, step
 local function NodeAnimate(self, zoom, alpha, fps)
   local cur_zoom = self:GetWidth()
   local cur_alpha = self:GetAlpha()
   local change = nil
   self:EnableMouse(true)
   fpsmod = math.min(2/fps, 2)
+  step = fpsmod/10
 
   -- update size
   if math.abs(cur_zoom - zoom) < 3 then
@@ -140,7 +141,7 @@ local function NodeAnimate(self, zoom, alpha, fps)
   end
 
   -- update alpha
-  if math.abs(cur_alpha - alpha) < .3 then
+  if math.abs(cur_alpha - alpha) < step then
     self:SetAlpha(alpha)
 
     -- disable mouse on hidden
@@ -148,10 +149,10 @@ local function NodeAnimate(self, zoom, alpha, fps)
       self:EnableMouse(nil)
     end
   elseif cur_alpha < alpha then
-    self:SetAlpha(cur_alpha + fpsmod/10)
+    self:SetAlpha(cur_alpha + step)
     change = true
   elseif cur_alpha > alpha then
-    self:SetAlpha(cur_alpha - fpsmod/10)
+    self:SetAlpha(cur_alpha - step)
     change = true
   end
 
