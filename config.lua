@@ -118,12 +118,12 @@ pfQuest_defconfig = {
     text = pfQuest_Loc["Quest Tracker Font Size"],
     default = "12", type = "text", pos = { 2, 3 },
   },
-  ["showspawn"] = { -- Display Individual Objective Spawn Points
-    text = pfQuest_Loc["Display Individual Objective Spawn Points"],
+  ["showspawn"] = { -- Show Individual Spawn Points
+    text = pfQuest_Loc["Show Individual Spawn Points"],
     default = "1", type = "checkbox", pos = { 2, 4 },
   },
   ["showcluster"] = { -- Unified Quest Location Markers
-    text = pfQuest_Loc["Display Objective Location Clusters"],
+    text = pfQuest_Loc["Unified Quest Location Markers"],
     default = "1", type = "checkbox", pos = { 2, 5 },
   },
   ["allquestgivers"] = { -- Display Available Quest Givers
