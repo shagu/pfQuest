@@ -107,10 +107,13 @@ local function DrawLine(path,x,y,nx,ny,hl,minimap)
       path[nline]:SetHeight(4)
       path[nline]:SetTexture(pfQuestConfig.path.."\\img\\route")
       if hl and minimap then
-        path[nline]:SetVertexColor(1,1,1,.5)
+        path[nline]:SetVertexColor(.6,.4,.2,.5)
       elseif hl then
-        path[nline]:SetVertexColor(.3,1,.8,1)
+        path[nline]:SetVertexColor(1,.8,.4,1)
+      else
+        path[nline]:SetVertexColor(.6,.4,.2,1)
       end
+
       path[nline]:ClearAllPoints()
 
       if minimap then -- draw minimap
