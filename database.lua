@@ -703,6 +703,7 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
          ( not faction or string.find(skill, faction))
       then
         if id < 0 then
+		  meta["level"] = skill
           pfDatabase:SearchObjectID(math.abs(id), meta, maps)
         else
           pfDatabase:SearchMobID(id, meta, maps)
@@ -799,7 +800,7 @@ function pfDatabase:SearchObjectID(id, meta, maps, prio)
       meta["x"]     = x
       meta["y"]     = y
 
-      meta["level"] = nil
+      -- meta["level"] =  nil
       meta["spawntype"] = pfQuest_Loc["Object"]
       meta["respawn"] = respawn and SecondsToTime(respawn)
 

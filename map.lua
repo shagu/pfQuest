@@ -679,7 +679,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
       frame.quest       = tab.quest
       frame.qlvl        = tab.qlvl
       frame.itemreq     = tab.itemreq
-
+	  frame.showcut		= tab.spawntype == pfQuest_Loc["Object"] or nil
       if pfQuest_config["spawncolors"] == "1" then
         frame.color = tab.spawn or tab.title
       else
@@ -731,8 +731,12 @@ function pfMap:UpdateNode(frame, node, color, obj)
 
   -- set default sizes for different node types
   frame.defsize = (frame.cluster or frame.layer == 4) and 22 or 16
-
-  -- make the current route target visible
+  if obj == "minimap" then	--LaYt
+	frame.defsize = frame.defsize/MinimapCluster:GetScale()
+  else
+	frame.defsize = frame.defsize/WorldMapFrame:GetScale()
+  end
+    -- make the current route target visible
   if target then frame.hl:Show() else frame.hl:Hide() end
 
   -- reset frame size except for highlights
@@ -884,11 +888,14 @@ function pfMap:UpdateMinimap()
         end
 
         local display = nil
-        if pfUI.minimap then
-          display = ( abs(xPos) + 8 < pfMap.drawlayer:GetWidth() / 2 and abs(yPos) + 8 < pfMap.drawlayer:GetHeight()/2 ) and true or nil
+		local objW = pfMap.drawlayer:GetWidth() / 2 --LaYt
+		local objH = pfMap.drawlayer:GetHeight() / 2
+		
+        if pfUI.minimap or (Squeenix or (simpleMinimap_Skins and simpleMinimap_Skins:GetShape() == "square")) then 
+          display = ( abs(xPos) + 4 < objW and abs(yPos) + 4 < objH ) and true or nil
         else
           local distance = sqrt(xPos * xPos + yPos * yPos)
-          display = ( distance + 8 < pfMap.drawlayer:GetWidth() / 2 ) and true or nil
+          display = ( distance + 4 < objW ) and true or nil
         end
 
         if display then
@@ -897,7 +904,13 @@ function pfMap:UpdateMinimap()
           end
 
           pfMap:UpdateNode(pfMap.mpins[i], node, color, "minimap")
-
+		  -- LaYt
+		  if (abs(xPos)  < objW * 0.7 and abs(yPos)  < objH * 0.7) and pfQuest_config["cutoutworldmap"] ~= "1" and pfMap.mpins[i].showcut then 
+			local r,g,b = str2rgb(pfMap.mpins[i].color)
+			pfMap.mpins[i].tex:SetTexture(pfQuestConfig.path.."\\img\\nodecut")
+			pfMap.mpins[i].tex:SetVertexColor(r,g,b,1)
+		  end
+		  -- /LaYt
           pfMap.mpins[i].hl:Hide()
 
           if pfMap.mpins[i].cluster then
