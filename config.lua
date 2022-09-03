@@ -7,183 +7,141 @@ pfQuest_config = {}
 
 -- default config
 pfQuest_defconfig = {
-  ["trackingmethod"] = {
-    -- 1: All Quests; 2: Tracked; 3: Manual; 4: Hide
-    text = nil, default = 1, type = nil, pos = nil,
+  { -- 1: All Quests; 2: Tracked; 3: Manual; 4: Hide
+    config = "trackingmethod",
+    text = nil, default = 1, type = nil
   },
 
-  ["_General_"] = {
+  { -- General
     text = pfQuest_Loc["General"],
-    default = nil, type = "header", pos = { 1, 1 },
-  },
-  ["worldmapmenu"] = { -- Enable World Map Menu
+    default = nil, type = "header" },
+  { config = "worldmapmenu",
     text = pfQuest_Loc["Enable World Map Menu"],
-    default = "1", type = "checkbox", pos = { 1, 2 },
-  },
-  ["minimapbutton"] = { -- Enable Minimap Button
+    default = "1", type = "checkbox" },
+  { config = "minimapbutton",
     text = pfQuest_Loc["Enable Minimap Button"],
-    default = "1", type = "checkbox", pos = { 1, 3 },
-  },
-  ["showtracker"] = { -- Enable Quest Tracker
+    default = "1", type = "checkbox" },
+  { config = "showtracker",
     text = pfQuest_Loc["Enable Quest Tracker"],
-    default = "1", type = "checkbox", pos = { 1, 4},
-  },
-  ["questlogbuttons"] = { -- Enable Quest Log Buttons
+    default = "1", type = "checkbox" },
+  { config = "questlogbuttons",
     text = pfQuest_Loc["Enable Quest Log Buttons"],
-    default = "1", type = "checkbox", pos = { 1, 5},
-  },
-  ["questlinks"] = { -- Enable Quest Link Support
+    default = "1", type = "checkbox" },
+  { config = "questlinks",
     text = pfQuest_Loc["Enable Quest Link Support"],
-    default = "1", type = "checkbox", pos = { 1, 6},
-  },
-  ["showids"] = { -- Show Database IDs
+    default = "1", type = "checkbox" },
+  { config = "showids",
     text = pfQuest_Loc["Show Database IDs"],
-    default = "0", type = "checkbox", pos = { 1, 7},
-  },
-  ["favonlogin"] = { -- Draw Favorites On Login
+    default = "0", type = "checkbox" },
+  { config = "favonlogin",
     text = pfQuest_Loc["Draw Favorites On Login"],
-    default = "0", type = "checkbox", pos = { 1, 8 },
-  },
-  ["mindropchance"] = { -- Minimum Item Drop Chance
+    default = "0", type = "checkbox" },
+  { config = "mindropchance",
     text = pfQuest_Loc["Minimum Item Drop Chance"],
-    default = "1", type = "text", pos = { 1, 9 },
-  },
-  ["showtooltips"] = { -- Show Tooltips
+    default = "1", type = "text" },
+  { config = "showtooltips",
     text = pfQuest_Loc["Show Tooltips"],
-    default = "1", type = "checkbox", pos = { 1, 10 },
-  },
-  ["tooltiphelp"] = { -- Show Help On Tooltips
+    default = "1", type = "checkbox" },
+  { config = "tooltiphelp",
     text = pfQuest_Loc["Show Help On Tooltips"],
-    default = "1", type = "checkbox", pos = { 1, 11 },
-  },
-  ["trackerlevel"] = { -- Show Level On Quest Tracker
+    default = "1", type = "checkbox" },
+  { config = "trackerlevel",
     text = pfQuest_Loc["Show Level On Quest Tracker"],
-    default = "1", type = "checkbox", pos = { 1, 12},
-  },
-  ["questloglevel"] = { -- Show Level On Quest Log
+    default = "1", type = "checkbox" },
+  { config = "questloglevel",
     text = pfQuest_Loc["Show Level On Quest Log"],
-    default = "0", type = "checkbox", pos = { 1, 13},
-  },
+    default = "0", type = "checkbox" },
 
-  ["_Map & Minimap_"] = {
+  { -- Map & Minimap
     text = pfQuest_Loc["Map & Minimap"],
-    default = nil, type = "header", pos = { 1, 15 },
-  },
-  ["minimapnodes"] = { -- Enable Minimap Nodes
+    default = nil, type = "header" },
+  { config = "minimapnodes",
     text = pfQuest_Loc["Enable Minimap Nodes"],
-    default = "1", type = "checkbox", pos = { 1, 16 },
-  },
-  ["clustermono"] = { -- Use Monochrome Cluster Icons
+    default = "1", type = "checkbox" },
+  { config = "clustermono",
     text = pfQuest_Loc["Use Monochrome Cluster Icons"],
-    default = "0", type = "checkbox", pos = { 1, 17 },
-  },
-  ["cutoutminimap"] = { -- Use Cut-Out Minimap Node Icons
+    default = "0", type = "checkbox" },
+  { config = "cutoutminimap",
     text = pfQuest_Loc["Use Cut-Out Minimap Node Icons"],
-    default = "1", type = "checkbox", pos = { 1, 18 },
-  },
-  ["cutoutworldmap"] = { -- Use Cut-Out World Map Node Icons
+    default = "1", type = "checkbox" },
+  { config = "cutoutworldmap",
     text = pfQuest_Loc["Use Cut-Out World Map Node Icons"],
-    default = "0", type = "checkbox", pos = { 1, 19 },
-  },
-  ["spawncolors"] = { -- Color Map Nodes By Spawn
+    default = "0", type = "checkbox" },
+  { config = "spawncolors",
     text = pfQuest_Loc["Color Map Nodes By Spawn"],
-    default = "0", type = "checkbox", pos = { 1, 20 },
-  },
-  ["worldmaptransp"] = { -- World Map Node Transparency
+    default = "0", type = "checkbox" },
+  { config = "worldmaptransp",
     text = pfQuest_Loc["World Map Node Transparency"],
-    default = "1.0", type = "text", pos = { 1, 21 },
-  },
-  ["minimaptransp"] = { -- Minimap Node Transparency
+    default = "1.0", type = "text" },
+  { config = "minimaptransp",
     text = pfQuest_Loc["Minimap Node Transparency"],
-    default = "1.0", type = "text", pos = { 1, 22 },
-  },
-  ["nodefade"] = { -- Node Fade Transparency
+    default = "1.0", type = "text" },
+  { config = "nodefade",
     text = pfQuest_Loc["Node Fade Transparency"],
-    default = "0.3", type = "text", pos = { 1, 23 },
-  },
-  ["mouseover"] = { -- Highlight Nodes On Mouseover
+    default = "0.3", type = "text" },
+  { config = "mouseover",
     text = pfQuest_Loc["Highlight Nodes On Mouseover"],
-    default = "1", type = "checkbox", pos = { 1, 24 },
-  },
+    default = "1", type = "checkbox" },
 
-  ["_Questing_"] = {
+  { -- Questing
     text = pfQuest_Loc["Questing"],
-    default = nil, type = "header", pos = { 2, 1 },
-  },
-  ["trackeralpha"] = { -- Unified Quest Location Markers
+    default = nil, type = "header" },
+  { config = "trackeralpha",
     text = pfQuest_Loc["Quest Tracker Visibility"],
-    default = "0", type = "text", pos = { 2, 2 },
-  },
-  ["trackerfontsize"] = { -- Unified Quest Location Markers
+    default = "0", type = "text" },
+  { config = "trackerfontsize",
     text = pfQuest_Loc["Quest Tracker Font Size"],
-    default = "12", type = "text", pos = { 2, 3 },
-  },
-  ["showspawn"] = { -- Show Individual Spawn Points
+    default = "12", type = "text" },
+  { config = "showspawn",
     text = pfQuest_Loc["Show Individual Spawn Points"],
-    default = "1", type = "checkbox", pos = { 2, 4 },
-  },
-  ["showcluster"] = { -- Unified Quest Location Markers
+    default = "1", type = "checkbox" },
+  { config = "showcluster",
     text = pfQuest_Loc["Unified Quest Location Markers"],
-    default = "1", type = "checkbox", pos = { 2, 5 },
-  },
-  ["allquestgivers"] = { -- Display Available Quest Givers
+    default = "1", type = "checkbox" },
+  { config = "allquestgivers",
     text = pfQuest_Loc["Display Available Quest Givers"],
-    default = "1", type = "checkbox", pos = { 2, 6 },
-  },
-  ["currentquestgivers"] = { -- Display Current Quest Givers
+    default = "1", type = "checkbox" },
+  { config = "currentquestgivers",
     text = pfQuest_Loc["Display Current Quest Givers"],
-    default = "1", type = "checkbox", pos = { 2, 7 },
-  },
-  ["showlowlevel"] = { -- Display Low Level Quest Givers
+    default = "1", type = "checkbox" },
+  { config = "showlowlevel",
     text = pfQuest_Loc["Display Low Level Quest Givers"],
-    default = "0", type = "checkbox", pos = { 2, 8 },
-  },
-  ["showhighlevel"] = { -- Display Level+3 Questgivers
+    default = "0", type = "checkbox" },
+  { config = "showhighlevel",
     text = pfQuest_Loc["Display Level+3 Quest Givers"],
-    default = "0", type = "checkbox", pos = { 2, 9 },
-  },
-  ["showfestival"] = { -- Display Event & Daily Quests
+    default = "0", type = "checkbox" },
+  { config = "showfestival",
     text = pfQuest_Loc["Display Event & Daily Quests"],
-    default = "0", type = "checkbox", pos = { 2, 10 },
-  },
+    default = "0", type = "checkbox" },
 
-
-  ["_Routes_"] = {
+  { -- Routes
     text = pfQuest_Loc["Routes"],
-    default = nil, type = "header", pos = { 2, 12 },
-  },
-  ["routes"] = { -- Show Route Between Objects
+    default = nil, type = "header" },
+  { config = "routes",
     text = pfQuest_Loc["Show Route Between Objects"],
-    default = "1", type = "checkbox", pos = { 2, 13 },
-  },
-  ["routecluster"] = { -- Include Unified Quest Locations
+    default = "1", type = "checkbox" },
+  { config = "routecluster",
     text = pfQuest_Loc["Include Unified Quest Locations"],
-    default = "1", type = "checkbox", pos = { 2, 14 },
-  },
-  ["routeender"] = { -- Include Quest Enders
+    default = "1", type = "checkbox" },
+  { config = "routeender",
     text = pfQuest_Loc["Include Quest Enders"],
-    default = "1", type = "checkbox", pos = { 2, 15 },
-  },
-  ["routestarter"] = { -- Include Quest Starters
+    default = "1", type = "checkbox" },
+  { config = "routestarter",
     text = pfQuest_Loc["Include Quest Starters"],
-    default = "0", type = "checkbox", pos = { 2, 16 },
-  },
-  ["routeminimap"] = { -- Show Route On Minimap
+    default = "0", type = "checkbox" },
+  { config = "routeminimap",
     text = pfQuest_Loc["Show Route On Minimap"],
-    default = "0", type = "checkbox", pos = { 2, 17 },
-  },
-  ["arrow"] = { -- Show Arrow Along Routes
+    default = "0", type = "checkbox" },
+  { config = "arrow",
     text = pfQuest_Loc["Show Arrow Along Routes"],
-    default = "1", type = "checkbox", pos = { 2, 18 },
-  },
+    default = "1", type = "checkbox" },
 
-  ["_User Data_"] = {
+  { -- User Data
     text = pfQuest_Loc["User Data"],
-    default = nil, type = "header", pos = { 2, 20 },
-  },
-  ["btn_settings"] = {
+    default = nil, type = "header" },
+  { config = "btn_settings",
     text = pfQuest_Loc["Reset Configuration"],
-    default = "1", type = "button", pos = { 2, 21 }, func = function()
+    default = "1", type = "button", func = function()
       local dialog = StaticPopupDialogs["PFQUEST_RESET"]
       dialog.text = pfQuest_Loc["Do you really want to reset the configuration?"]
       dialog.OnAccept = function()
@@ -192,11 +150,10 @@ pfQuest_defconfig = {
       end
 
       StaticPopup_Show("PFQUEST_RESET")
-    end
-  },
-  ["btn_history"] = {
+    end },
+  { config = "btn_history",
     text = pfQuest_Loc["Reset Quest History"],
-    default = "1", type = "button", pos = { 2, 22 }, func = function()
+    default = "1", type = "button", func = function()
       local dialog = StaticPopupDialogs["PFQUEST_RESET"]
       dialog.text = pfQuest_Loc["Do you really want to reset the quest history?"]
       dialog.OnAccept = function()
@@ -205,11 +162,10 @@ pfQuest_defconfig = {
       end
 
       StaticPopup_Show("PFQUEST_RESET")
-    end
-  },
-  ["btn_everything"] = {
+    end },
+  { config = "btn_everything",
     text = pfQuest_Loc["Reset Everything"],
-    default = "1", type = "button", pos = { 2, 23 }, func = function()
+    default = "1", type = "button", func = function()
       local dialog = StaticPopupDialogs["PFQUEST_RESET"]
       dialog.text = pfQuest_Loc["Do you really want to reset everything?"]
       dialog.OnAccept = function()
@@ -218,11 +174,10 @@ pfQuest_defconfig = {
       end
 
       StaticPopup_Show("PFQUEST_RESET")
-    end
-  },
-  ["btn_cache"] = {
+    end },
+  { config = "btn_cache",
     text = pfQuest_Loc["Reset Cache"],
-    default = "1", type = "button", pos = { 2, 24 }, func = function()
+    default = "1", type = "button", func = function()
       local dialog = StaticPopupDialogs["PFQUEST_RESET"]
       dialog.text = pfQuest_Loc["Do you really want to reset the caches?"]
       dialog.OnAccept = function()
@@ -231,8 +186,7 @@ pfQuest_defconfig = {
       end
 
       StaticPopup_Show("PFQUEST_RESET")
-    end
-  },
+    end },
 }
 
 StaticPopupDialogs["PFQUEST_RESET"] = {
@@ -251,6 +205,7 @@ pfQuestConfig:SetPoint("CENTER", 0, 0)
 pfQuestConfig:SetFrameStrata("HIGH")
 pfQuestConfig:SetMovable(true)
 pfQuestConfig:EnableMouse(true)
+pfQuestConfig:SetClampedToScreen(true)
 pfQuestConfig:RegisterEvent("ADDON_LOADED")
 pfQuestConfig:SetScript("OnEvent", function()
   if arg1 == "pfQuest" or arg1 == "pfQuest-tbc" or arg1 == "pfQuest-wotlk" then
@@ -340,9 +295,9 @@ pfUI.api.SkinButton(pfQuestConfig.save)
 
 function pfQuestConfig:LoadConfig()
   if not pfQuest_config then pfQuest_config = {} end
-  for opt, data in pairs(pfQuest_defconfig) do
-    if not pfQuest_config[opt] then
-      pfQuest_config[opt] = data.default
+  for id, data in pairs(pfQuest_defconfig) do
+    if data.config and not pfQuest_config[data.config] then
+      pfQuest_config[data.config] = data.default
     end
   end
 end
@@ -377,13 +332,12 @@ local maxtext = 130
 local configframes = {}
 function pfQuestConfig:CreateConfigEntries(config)
   local count = 1
-  for entry, data in pairs(config) do
-    if data.pos and data.type then
-      local spacer = (data.pos[1]-1)*20
 
+  for _, data in pairs(config) do
+    if data.type then
       -- basic frame
       local frame = CreateFrame("Frame", "pfQuestConfig" .. count, pfQuestConfig)
-      configframes[entry] = frame
+      configframes[data.text] = frame
 
       -- caption
       frame.caption = frame:CreateFontString("Status", "LOW", "GameFontWhite")
@@ -411,8 +365,8 @@ function pfQuestConfig:CreateConfigEntries(config)
         frame.input:SetHeight(16)
         frame.input:SetPoint("RIGHT" , -20, 0)
 
-        frame.input.config = entry
-        if pfQuest_config[entry] == "1" then
+        frame.input.config = data.config
+        if pfQuest_config[data.config] == "1" then
           frame.input:SetChecked()
         end
 
@@ -440,8 +394,8 @@ function pfQuestConfig:CreateConfigEntries(config)
           this:ClearFocus()
         end)
 
-        frame.input.config = entry
-        frame.input:SetText(pfQuest_config[entry])
+        frame.input.config = data.config
+        frame.input:SetText(pfQuest_config[data.config])
 
         frame.input:SetScript("OnTextChanged", function(self)
           pfQuest_config[this.config] = this:GetText()
@@ -471,18 +425,29 @@ function pfQuestConfig:CreateConfigEntries(config)
         end
       end
 
-      maxw, maxh = max(maxw, data.pos[1]), max(maxh, data.pos[2])
       count = count + 1
     end
   end
 
-  -- update sizes
+  -- update sizes / positions
   width = maxtext + 100
-  for entry, data in pairs(config) do
-    if data.pos and data.type then
-      local spacer = (data.pos[1]-1)*20
-      local x, y = (data.pos[1]-1)*width, -(data.pos[2]-1)*height
-      local frame = configframes[entry]
+  local column, row = 1, 0
+
+  for _, data in pairs(config) do
+    if data.type then
+      -- empty line for headers, next column for > 20 entries
+      row = row + ( data.type == "header" and row > 1 and 2 or 1 )
+      if row > 20 and data.type == "header" then
+        column, row = column + 1, 1
+      end
+
+      -- update max size values
+      maxw, maxh = max(maxw, column), max(maxh, row)
+
+      -- align frames to sizings
+      local spacer = (column-1)*20
+      local x, y = (column-1)*width, -(row-1)*height
+      local frame = configframes[data.text]
       frame:SetWidth(width)
       frame:SetHeight(height)
       frame:SetPoint("TOPLEFT", pfQuestConfig, "TOPLEFT", x + spacer + 10, y - 40)
@@ -495,12 +460,12 @@ function pfQuestConfig:CreateConfigEntries(config)
 end
 
 function pfQuestConfig:UpdateConfigEntries()
-  for entry, data in pairs(pfQuest_defconfig) do
-    if data.pos and data.type and configframes[entry] then
+  for _, data in pairs(pfQuest_defconfig) do
+    if data.type and configframes[data.text] then
       if data.type == "checkbox" then
-        configframes[entry].input:SetChecked((pfQuest_config[entry] == "1" and true or nil))
+        configframes[data.text].input:SetChecked((pfQuest_config[data.config] == "1" and true or nil))
       elseif data.type == "text" then
-        configframes[entry].input:SetText(pfQuest_config[entry])
+        configframes[data.text].input:SetText(pfQuest_config[data.config])
       end
     end
   end
