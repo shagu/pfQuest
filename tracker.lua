@@ -493,12 +493,12 @@ function tracker.ButtonAdd(title, node)
   -- skip duplicate titles
   for bid, button in pairs(tracker.buttons) do
     if button.title and button.title == title then
-      if node.dummy or ( not node.texture and button.node.texture ) then
+      if node.dummy or not node.texture then
         -- We found a node icon (1st prio)
         -- use the ID and update the button
         id = bid
         break
-      elseif node.cluster then
+      elseif node.cluster and ( not button.node or button.node.texture ) then
         -- We found a cluster icon (2nd prio)
         -- set the id, but still try to find a node icon
         id = bid
