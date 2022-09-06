@@ -242,7 +242,7 @@ pfQuestConfig.close.texture:SetPoint("BOTTOMRIGHT", pfQuestConfig.close, "BOTTOM
 pfQuestConfig.close.texture:SetVertexColor(1,.25,.25,1)
 pfUI.api.SkinButton(pfQuestConfig.close, 1, .5, .5)
 pfQuestConfig.close:SetScript("OnClick", function()
- this:GetParent():Hide()
+  this:GetParent():Hide()
 end)
 
 pfQuestConfig.save = CreateFrame("Button", "pfQuestConfigReload", pfQuestConfig)
@@ -432,4 +432,174 @@ function pfQuestConfig:UpdateConfigEntries()
       end
     end
   end
+end
+
+do -- welcome/init popup dialog
+  local config_stage = {
+    arrow = 1,
+    mode = 2
+  }
+
+  -- create welcome/init window
+  pfQuestInit = CreateFrame("Frame", "pfQuestInit", UIParent)
+  pfQuestInit:Hide()
+  pfQuestInit:SetWidth(400)
+  pfQuestInit:SetHeight(270)
+  pfQuestInit:SetPoint("CENTER", 0, 0)
+  pfQuestInit:RegisterEvent("PLAYER_ENTERING_WORLD")
+  pfQuestInit:SetScript("OnEvent", function()
+    if pfQuest_config.welcome ~= "1" then
+      -- parse current config
+      if pfQuest_config["showspawn"] == "0" and pfQuest_config["showcluster"] == "1" then
+        config_stage.mode = 1
+      elseif pfQuest_config["showspawn"] == "1" and pfQuest_config["showcluster"] == "0" then
+        config_stage.mode = 3
+      end
+
+      if pfQuest_config["arrow"] == "0" then
+        config_stage.arrow = nil
+      end
+
+      -- reload ui elements
+      pfQuestInit[1].bg:SetDesaturated(true)
+      pfQuestInit[2].bg:SetDesaturated(true)
+      pfQuestInit[3].bg:SetDesaturated(true)
+      pfQuestInit[config_stage.mode].bg:SetDesaturated(false)
+      pfQuestInit.checkbox:SetChecked(config_stage.arrow)
+
+      pfQuestInit:Show()
+    end
+    this:UnregisterAllEvents()
+  end)
+
+  pfUI.api.CreateBackdrop(pfQuestInit, nil, true, 0.85)
+
+  -- welcome title
+  pfQuestInit.title = pfQuestInit:CreateFontString("Status", "LOW", "GameFontWhite")
+  pfQuestInit.title:SetPoint("TOP", pfQuestInit, "TOP", 0, -17)
+  pfQuestInit.title:SetJustifyH("LEFT")
+  pfQuestInit.title:SetText(L["Please select your preferred |cff33ffccpf|cffffffffQuest|r mode:"])
+
+  -- questing mode
+  local buttons = {
+    { caption = L["Simple Markers"], texture = "\\img\\init\\simple", position = { "TOPLEFT", 10, -40 },
+      tooltip = L["Only show cluster icons with summarized objective locations based on spawn points"] },
+    { caption = L["Combined"], texture = "\\img\\init\\combined", position = { "TOP", 0, -40 },
+      tooltip = L["Show cluster icons with summarized locations and also display all spawn points of each quest objective"] },
+    { caption = L["Spawn Points"], texture = "\\img\\init\\spawns", position = { "TOPRIGHT", -10, -40 },
+      tooltip = L["Display all spawn points of each quest objective and hide summarized cluster icons."] },
+  }
+
+  for i, button in pairs(buttons) do
+    pfQuestInit[i] = CreateFrame("Button", "pfQuestInitLeft", pfQuestInit)
+    pfQuestInit[i]:SetWidth(120)
+    pfQuestInit[i]:SetHeight(160)
+    pfQuestInit[i]:SetPoint(unpack(button.position))
+    pfQuestInit[i]:SetID(i)
+
+    pfQuestInit[i].bg = pfQuestInit[i]:CreateTexture(nil, "NORMAL")
+    pfQuestInit[i].bg:SetWidth(200)
+    pfQuestInit[i].bg:SetHeight(200)
+    pfQuestInit[i].bg:SetPoint("CENTER", 0, 0)
+    pfQuestInit[i].bg:SetTexture(pfQuestConfig.path..button.texture)
+
+    pfQuestInit[i].caption = pfQuestInit:CreateFontString("Status", "LOW", "GameFontWhite")
+    pfQuestInit[i].caption:SetPoint("TOP", pfQuestInit[i], "BOTTOM", 0, -5)
+    pfQuestInit[i].caption:SetJustifyH("LEFT")
+    pfQuestInit[i].caption:SetText(button.caption)
+
+    pfUI.api.SkinButton(pfQuestInit[i])
+
+    pfQuestInit[i]:SetScript("OnClick", function()
+      pfQuestInit[1].bg:SetDesaturated(true)
+      pfQuestInit[2].bg:SetDesaturated(true)
+      pfQuestInit[3].bg:SetDesaturated(true)
+      pfQuestInit[this:GetID()].bg:SetDesaturated(false)
+
+      config_stage.mode = this:GetID()
+    end)
+
+    local OnEnter = pfQuestInit[i]:GetScript("OnEnter")
+    pfQuestInit[i]:SetScript("OnEnter", function()
+      if OnEnter then OnEnter() end
+      GameTooltip_SetDefaultAnchor(GameTooltip, this)
+
+      GameTooltip:SetText(this.caption:GetText())
+      GameTooltip:AddLine(buttons[this:GetID()].tooltip, 1, 1, 1, true)
+      GameTooltip:SetWidth(100)
+      GameTooltip:Show()
+    end)
+
+    local OnLeave = pfQuestInit[i]:GetScript("OnLeave")
+    pfQuestInit[i]:SetScript("OnLeave", function()
+      if OnLeave then OnLeave() end
+      GameTooltip:Hide()
+    end)
+  end
+
+  -- show arrows
+  pfQuestInit.checkbox = CreateFrame("CheckButton", nil, pfQuestInit, "UICheckButtonTemplate")
+  pfQuestInit.checkbox:SetPoint("BOTTOMLEFT", 10, 10)
+  pfQuestInit.checkbox:SetNormalTexture("")
+  pfQuestInit.checkbox:SetPushedTexture("")
+  pfQuestInit.checkbox:SetHighlightTexture("")
+  pfQuestInit.checkbox:SetWidth(22)
+  pfQuestInit.checkbox:SetHeight(22)
+  pfUI.api.CreateBackdrop(pfQuestInit.checkbox, nil, true)
+
+  pfQuestInit.checkbox.caption = pfQuestInit:CreateFontString("Status", "LOW", "GameFontWhite")
+  pfQuestInit.checkbox.caption:SetPoint("LEFT", pfQuestInit.checkbox, "RIGHT", 5, 0)
+  pfQuestInit.checkbox.caption:SetJustifyH("LEFT")
+  pfQuestInit.checkbox.caption:SetText(L["Show Navigation Arrow"])
+  pfQuestInit.checkbox:SetScript("OnClick", function()
+    config_stage.arrow = this:GetChecked()
+  end)
+
+  pfQuestInit.checkbox:SetScript("OnEnter", function()
+    GameTooltip_SetDefaultAnchor(GameTooltip, this)
+    GameTooltip:SetText(L["Navigation Arrow"])
+    GameTooltip:AddLine(L["Show navigation arrow that points you to the nearest quest location."], 1, 1, 1, true)
+    GameTooltip:SetWidth(100)
+    GameTooltip:Show()
+  end)
+
+  pfQuestInit.checkbox:SetScript("OnLeave", function()
+    GameTooltip:Hide()
+  end)
+
+  -- save button
+  pfQuestInit.save = CreateFrame("Button", nil, pfQuestInit)
+  pfQuestInit.save:SetWidth(100)
+  pfQuestInit.save:SetHeight(24)
+  pfQuestInit.save:SetPoint("BOTTOMRIGHT", -10, 10)
+  pfQuestInit.save.text = pfQuestInit.save:CreateFontString("Caption", "LOW", "GameFontWhite")
+  pfQuestInit.save.text:SetAllPoints(pfQuestInit.save)
+  pfQuestInit.save.text:SetText("Save & Close")
+
+  pfUI.api.SkinButton(pfQuestInit.save)
+
+  pfQuestInit.save:SetScript("OnClick", function()
+    -- write current config
+    if config_stage.mode == 1 then
+      pfQuest_config["showspawn"] = "0"
+      pfQuest_config["showcluster"] = "1"
+    elseif config_stage.mode == 2 then
+      pfQuest_config["showspawn"] = "1"
+      pfQuest_config["showcluster"] = "1"
+    elseif config_stage.mode == 3 then
+      pfQuest_config["showspawn"] = "1"
+      pfQuest_config["showcluster"] = "0"
+    end
+
+    if config_stage.arrow then
+      pfQuest_config["arrow"] = "1"
+    else
+      pfQuest_config["arrow"] = "0"
+    end
+
+    -- save welcome flag and reload
+    pfQuest_config["welcome"] = "1"
+    pfQuest:ResetAll()
+    pfQuestInit:Hide()
+  end)
 end
