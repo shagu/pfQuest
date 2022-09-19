@@ -262,7 +262,7 @@ function pfMap:ShowTooltip(meta, tooltip)
             if type == "monster" then
               -- kill
               local i, j, monsterName, objNum, objNeeded = strfind(text, pfUI.api.SanitizePattern(QUEST_MONSTERS_KILLED))
-              if meta["spawn"] == monsterName then
+              if monsterName and meta["spawn"] == monsterName then
                 catch_obj = true
                 local r,g,b = pfMap.tooltip:GetColor(objNum, objNeeded)
                 tooltip:AddLine("|cffaaaaaa- |r" .. monsterName .. ": " .. objNum .. "/" .. objNeeded, r, g, b)
