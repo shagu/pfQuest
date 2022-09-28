@@ -47,6 +47,11 @@ local minimap_zoom = {
 
 local unifiedcache = {}
 
+-- used to store/cache combined meta data across nodes of
+-- the same kind to avoid duplicating data for each pin
+-- the objects here get directly attached to the pfMap nodes
+local similar_nodes = {}
+
 local function IsEmpty(tabl)
   for k,v in pairs(tabl) do
     return false
@@ -429,6 +434,9 @@ function pfMap:AddNode(meta)
   local spawn = meta["spawn"]
   local item = meta["item"]
 
+  local sindex = string.format("%s:%s:%s:%s:%s:%s",
+    addon, map, coords, title, layer, spawn, item)
+
   -- use prioritized clusters
   if layer >= 9 and meta["priority"] then
     layer = layer + (10 - min(meta["priority"], 10))
@@ -438,61 +446,63 @@ function pfMap:AddNode(meta)
   if not pfMap.nodes[addon][map] then pfMap.nodes[addon][map] = {} end
   if not pfMap.nodes[addon][map][coords] then pfMap.nodes[addon][map][coords] = {} end
 
-  if item and pfMap.nodes[addon][map][coords][title] and table.getn(pfMap.nodes[addon][map][coords][title].item) > 0 then
-    -- check if item exists
-    for id, name in pairs(pfMap.nodes[addon][map][coords][title].item) do
-      if name == item then
-        return
+  -- skip early on existing nodes
+  if pfMap.nodes[addon][map][coords][title] then
+    if item and table.getn(pfMap.nodes[addon][map][coords][title].item) > 0 then
+      -- check if item already exists
+      for id, name in pairs(pfMap.nodes[addon][map][coords][title].item) do
+        if name == item then return end
       end
+
+      -- add new item and exit
+      table.insert(pfMap.nodes[addon][map][coords][title].item, item)
+      return
     end
-    table.insert(pfMap.nodes[addon][map][coords][title].item, item)
+
+    if pfMap.nodes[addon][map][coords][title] and pfMap.nodes[addon][map][coords][title].layer and layer and
+     pfMap.nodes[addon][map][coords][title].layer >= layer then
+      -- identical node already exists, exit here
+      return
+    end
   end
 
-  if pfMap.nodes[addon][map][coords][title] and pfMap.nodes[addon][map][coords][title].layer and layer and
-   pfMap.nodes[addon][map][coords][title].layer >= layer then
-    -- identical node already exists, exit here
-    return
+  -- create new combined data node from given meta data
+  if not similar_nodes[sindex] then
+    similar_nodes[sindex] = {}
+    for key, val in pairs(meta) do similar_nodes[sindex][key] = val end
+    similar_nodes[sindex].item = { [1] = item }
   end
 
-  -- create new node from meta data
-  local node = {}
-  for key, val in pairs(meta) do
-    node[key] = val
-  end
-  node.item = { [1] = item }
+  -- set current node to combined node
+  pfMap.nodes[addon][map][coords][title] = similar_nodes[sindex]
 
   -- add node to unified cluster cache
   if not meta["cluster"] and not meta["texture"] then
-    local node_index
+    local node_index = meta.item or meta.spawn or UNKNOWN
     local x, y = tonumber(meta.x), tonumber(meta.y)
-    local node_meta = {}
 
-    if meta.item then
-      node_index = meta.item
-    elseif meta.spawn then
-      node_index = meta.spawn
-    else
-      node_index = UNKNOWN
-    end
-
-    -- clone node
-    for key, val in pairs(meta) do
-      node_meta[key] = val
-    end
-
+    -- create prerequisite table structure
     unifiedcache[title] = unifiedcache[title] or {}
     unifiedcache[title][map] = unifiedcache[title][map] or {}
-    unifiedcache[title][map][node_index] = unifiedcache[title][map][node_index] or { meta = node_meta, coords = {} }
+
+    if not unifiedcache[title][map][node_index] then
+      -- create new unified node from given meta data
+      local unified_meta = {}
+      for key, val in pairs(meta) do unified_meta[key] = val end
+
+      -- save node to unified cache
+      unifiedcache[title][map][node_index] = { meta = unified_meta, coords = {} }
+    end
+
+    -- append new coords to unified cache unified cache
     table.insert(unifiedcache[title][map][node_index].coords, { x, y })
   end
-
-  pfMap.nodes[addon][map][coords][title] = node
 
   -- add to gametooltips
   if spawn and title then
     pfMap.tooltips[spawn] = pfMap.tooltips[spawn] or {}
     pfMap.tooltips[spawn][title] = pfMap.tooltips[spawn][title] or {}
-    pfMap.tooltips[spawn][title][map] = pfMap.tooltips[spawn][title][map] or node
+    pfMap.tooltips[spawn][title][map] = pfMap.tooltips[spawn][title][map] or similar_nodes[sindex]
   end
 
   pfMap.queue_update = true

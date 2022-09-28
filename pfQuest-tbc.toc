@@ -1,7 +1,7 @@
 ## Interface: 20400
 ## Title: |cff33ffccpf|cffffffffQuest
 ## Author: Shagu
-## Notes: A lightweight Questhelper and Database
+## Notes: A Questhelper and Database
 ## Notes-ruRU: Облегченный помощник заданий и база данных
 ## Version: GIT
 ## OptionalDeps: pfUI-tbc

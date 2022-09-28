@@ -215,8 +215,10 @@ pfQuest:SetScript("OnUpdate", function()
   end
 end)
 
+local questlog_flip, questlog_flop = {}, {}
 function pfQuest:UpdateQuestlog()
-  pfQuest.questlog_tmp = {}
+  -- initialize flip flop if not yet defined
+  pfQuest.questlog_tmp = pfQuest.questlog_tmp or questlog_flip
 
   local _, numQuests = GetNumQuestLogEntries()
   local found = 0
@@ -282,8 +284,20 @@ function pfQuest:UpdateQuestlog()
     end
   end
 
-  -- set new questlog
+  -- set questlog to current flip flop
   pfQuest.questlog = pfQuest.questlog_tmp
+
+  -- switch tmp to the other flip flop
+  if pfQuest.questlog_tmp == questlog_flip then
+    pfQuest.questlog_tmp = questlog_flop
+  else
+    pfQuest.questlog_tmp = questlog_flip
+  end
+
+  -- clear next temporary questlog entries
+  for k, v in pairs(pfQuest.questlog_tmp) do
+    pfQuest.questlog_tmp[k] = nil
+  end
 
   return change
 end
