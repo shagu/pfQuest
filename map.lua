@@ -435,7 +435,7 @@ function pfMap:AddNode(meta)
   local item = meta["item"]
 
   local sindex = string.format("%s:%s:%s:%s:%s:%s",
-    addon, map, coords, title, layer, spawn, item)
+    (addon or ""), (map or ""), (coords or ""), (title or ""), (layer or ""), (spawn or ""), (item or ""))
 
   -- use prioritized clusters
   if layer >= 9 and meta["priority"] then
