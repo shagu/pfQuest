@@ -137,8 +137,8 @@ pfQuest:SetScript("OnUpdate", function()
     then
       local meta = { ["addon"] = "PFQUEST" }
       pfDatabase:SearchQuests(meta)
-      this.updateQuestGivers = false
     end
+    this.updateQuestGivers = false
   end
 
   if tsize(this.queue) == 0 then return end
