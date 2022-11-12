@@ -137,7 +137,6 @@ pfQuest:SetScript("OnUpdate", function()
     then
       local meta = { ["addon"] = "PFQUEST" }
       pfDatabase:SearchQuests(meta)
-      pfMap:UpdateNodes()
       this.updateQuestGivers = false
     end
   end
@@ -166,8 +165,6 @@ pfQuest:SetScript("OnUpdate", function()
         if entry[2] and pfDB["quests"]["loc"][entry[2]] and pfDB["quests"]["loc"][entry[2]].T then
           pfMap:DeleteNode("PFQUEST", pfDB["quests"]["loc"][entry[2]].T)
         end
-
-        pfMap:UpdateNodes()
       end
 
       pfQuest.abandon = ""
@@ -308,7 +305,6 @@ function pfQuest:ResetAll()
   pfQuest.questlog = {}
   pfQuest.updateQuestLog = true
   pfQuest.updateQuestGivers = true
-  pfMap:UpdateNodes()
 end
 
 -- register popup dialog to copy urls
@@ -458,7 +454,6 @@ function pfQuest:AddQuestLogIntegration()
     if header then return end
 
     pfMap:DeleteNode("PFQUEST", title)
-    pfMap:UpdateNodes()
   end)
 
   pfQuest.buttonClean = pfQuest.buttonClean or CreateFrame("Button", "pfQuestClean", dockFrame, "UIPanelButtonTemplate")
@@ -468,7 +463,6 @@ function pfQuest:AddQuestLogIntegration()
   pfQuest.buttonClean:SetPoint("TOP", dockTitle, "TOP", 37, 0)
   pfQuest.buttonClean:SetScript("OnClick", function()
     pfMap:DeleteNode("PFQUEST")
-    pfMap:UpdateNodes()
   end)
 
   pfQuest.buttonReset = pfQuest.buttonReset or CreateFrame("Button", "pfQuestReset", dockFrame, "UIPanelButtonTemplate")
