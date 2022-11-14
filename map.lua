@@ -505,7 +505,7 @@ function pfMap:AddNode(meta)
     pfMap.tooltips[spawn][title][map] = pfMap.tooltips[spawn][title][map] or similar_nodes[sindex]
   end
 
-  pfMap.queue_update = true
+  pfMap.queue_update = GetTime()
 end
 
 function pfMap:DeleteNode(addon, title)
@@ -540,7 +540,7 @@ function pfMap:DeleteNode(addon, title)
     end
   end
 
-  pfMap.queue_update = true
+  pfMap.queue_update = GetTime()
 end
 
 function pfMap:NodeClick()
@@ -551,7 +551,6 @@ function pfMap:NodeClick()
     end
 
     pfMap:DeleteNode(this.node[this.title].addon, this.title)
-    pfMap:UpdateNodes()
     pfQuest.updateQuestGivers = true
   elseif this.texture and pfQuest.route and
    (( pfQuest_config["routecluster"] == "1" and this.layer >= 9 ) or
@@ -561,11 +560,11 @@ function pfMap:NodeClick()
   then
     -- set as arrow target priority
     pfQuest.route.SetTarget((not pfQuest.route.IsTarget(this) and this))
-    pfMap:UpdateNodes()
+    pfMap.queue_update = GetTime()
   else
     -- switch color
     pfQuest_colors[this.color] = { str2rgb(this.color .. GetTime()) }
-    pfMap:UpdateNodes()
+    pfMap.queue_update = GetTime()
   end
 end
 
@@ -759,6 +758,8 @@ function pfMap:UpdateNode(frame, node, color, obj)
 end
 
 function pfMap:UpdateNodes()
+  pfQuest:Debug("Update Nodes")
+
   local color = pfQuest_config["spawncolors"] == "1" and "spawn" or "title"
   local map = pfMap:GetMapID(GetCurrentMapContinent(), GetCurrentMapZone())
   local i = 1
@@ -999,7 +1000,8 @@ pfMap:SetScript("OnUpdate", function()
   if ( this.throttle or .2) > GetTime() then return else this.throttle = GetTime() + .05 end
 
   -- process node updates if required
-  if pfMap.queue_update then
+  if pfMap.queue_update and pfMap.queue_update + .25 < GetTime() then
+    pfMap.queue_update = nil
     pfMap:UpdateNodes()
   end
 
@@ -1021,5 +1023,4 @@ pfMap:SetScript("OnUpdate", function()
     hidecluster = nil
   end
 
-  pfMap.queue_update = nil
 end)
