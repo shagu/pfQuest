@@ -700,6 +700,9 @@ pfDB["quests"]["esES-tbc"] = {
   [226] = {
     ["D"] = "A Sven y a mí nos esperan días peligrosos, con el nigromántico al este... y aquí solos... tenemos que cazar nuestra propia comida. Y cada vez que vuelvo al campamento con algo de carne, aparecen lobos hambrientos o rabiosos buscando un bocado. ¡Vivir aquí es peligroso, no hace falta que lo jure!$B$BPero si consiguieras librarnos de algunos de esos lobos, nos facilitarías mucho la cosa. Se concentran sobre todo al norte y al este de aquí, cerca del río.",
   },
+  [227] = {
+    ["T"] = "Morgan Ladimore",
+  },
   [228] = {
     ["D"] = "Por lo que me dicen los exploradores, Mor\'Ladim deambula por el Bosque del Ocaso; recorre un extraño y serpenteante camino por el cementerio. Lo enterramos pasada la casa de la colina, ¿sabes dónde digo?$B$BNo hay nada que pueda hacer para ayudarte, pero te deseo buena suerte.",
   },
@@ -2682,6 +2685,7 @@ pfDB["quests"]["esES-tbc"] = {
   [909] = {
     ["D"] = "El elemental de agua derrotado ha dejado tras de sí un extraño globo de agua. Supones que el objeto de alguna forma alimentaba la energía de la bestia. En el interior del globo chapotea masa líquida repulsiva. El propio globo parece impermeable a todo tipo de fuerza física.$B$BSi alguien es capaz de interpretar este artilugio, es Je\'neu Sancrea del Anillo de la Tierra.",
     ["O"] = "Llévale el extraño globo de agua a Je\'neu Sancrea en las Cavernas de Brazanegra.",
+    ["T"] = "OLD Baron Aquanis",
   },
   [911] = {
     ["D"] = "Dicen que Vallefresno es la nueva frontera y que La Empalizada de Mor\'shan en Los Baldíos es su puerta de entrada. ¡Sería una pasada ser uno de los pioneros y coger todo lo que necesitas de la naturaleza virgen! Dicen que ese será el principal campo de batalla entre la Horda y la Alianza ¡y yo quiero verlo, $N!$B$B¿Querrás llevarme a La Empalizada de Mor\'shan para que pueda ver cómo es la frontera, por favor? ¡Quiero ver el sitio donde la Horda está combatiendo a esos apestosos elfos de la noche!",
@@ -2809,6 +2813,7 @@ pfDB["quests"]["esES-tbc"] = {
   [948] = {
     ["D"] = "Onus, un anciano del Conocimiento del Páramo de los Ancianos, ha sabido de tu viaje a Salto de Fonroca y desea hablar contigo. El Páramo se encuentra hacia el sur, cerca de las montañas.$B$BLos ancianos son pacientes y sabios, $N. Si Onus busca tu consejo sobre lo que viste en el Salto, temo que la cosa es urgente.",
     ["O"] = "Ve al Páramo de los Ancianos y habla con Onus.",
+    ["T"] = "Onu",
   },
   [949] = {
     ["D"] = "No se sabe qué motivos han llevado al Martillo Crepuscular a La Espada del Maestro. Pero sus motivos son, sin duda, oscuros.$B$BDebes ir a su campamento de La Espada. Busca algo que pueda arrojar un poco de luz sobre sus intenciones.$B$BPorque debemos saber cuáles son antes de preparar un plan.",
@@ -4803,7 +4808,6 @@ pfDB["quests"]["esES-tbc"] = {
   [2300] = {
     ["D"] = "Renzik te estaba buscando, pescadito.$B$BYo no haría esperar al segundo de Mathias si fuera tú.|n",
     ["O"] = "Viaja a Ventormenta y busca a Renzik \"Chafarote\".",
-    ["T"] = "IV:7",
   },
   [2318] = {
     ["D"] = "Llegados a este punto, sabes que necesitarás la traducción del libro en un idioma que puedas comprender. Son muchos los que podrían hacerlo y el lugar más cercano en el que podrás encontrar a alguien que te ayude es, sin embargo, la Avanzada de Kargath en las Tierras Inhóspitas. Quizás sea un buen lugar para comenzar.|n",
@@ -6083,9 +6087,6 @@ pfDB["quests"]["esES-tbc"] = {
     ["D"] = "Si lo que quieres es crear aparatos fantásticos, has venido al lugar adecuado. Puedo ver tu destreza en ingeniería, pero quiero algunas muestras de tu trabajo. Me gustaría ver si te puedo orientar hacia técnicas más gnómicas para el futuro. Necesito lo siguiente: 6 tubos de mitril, una mira de precisión y 2 muñecos-diana avanzados.$B$B¡Dame todo esto y te convertirás en $Gun ingeniero gnómico:una ingeniera gnómica; con acceso a todos los esquemas!",
     ["O"] = "Lleva 6 tubos de mitril, 1 mira de precisión y 2 muñecos-diana avanzados a Oglethorpe Obnoticus en la Bahía del Botín.",
   },
-  [3646] = {
-    ["D"] = "|n",
-  },
   [3661] = {
     ["D"] = "Los lechúcicos salvajes son muy impredecibles, $N. Pueden ser muy mansos, pero si se sienten amenazados se vuelven extremadamente feroces.$B$BSe dice que fueron creados por Elune; me gustaría saber si es verdad.$B$BHe oído que hay lechúcicos salvajes en las Tierras del Interior: las lechubestias feroces, primitivas y salvajes. Las encontrarás con el resto de la fauna local. ¿Me traerás unas cuantas plumas?",
     ["O"] = "Recoge 15 plumas de lechúcico salvaje de las Tierras del Interior y llévaselas a Erelas Cieloámbar a la Aldea Rut\'theran.",
@@ -6306,7 +6307,6 @@ pfDB["quests"]["esES-tbc"] = {
   [4005] = {
     ["D"] = "Lleva esta bolsa de suministros a Tanaris. Dirígete a la Cala del Aparejo Perdido y busca un círculo de piedras.$B$BEl secreto reside en la península más oriental...$B$BSolo cuando te encuentres en el círculo, lee el Libro de Aquor e invoca la única criatura que puede transformar los objetos que has reunido en un tótem que te ayudará a combatir a Correfuego.$B$BA Aquamentas no le gustará que lo despierten, pero recuerda, debes permanecer en el círculo para poder transformar los objetos.",
     ["O"] = "Lleva el Libro de Aquor, las zarpas plateadas y el corazón de Troncoferro a Tanaris.$B$BUtiliza el Libro de Aquor para invocar Aquamentas.$B$BCuando tengas el tótem completo llévaselo a J.D. Collie en el Refugio de Marshal.",
-    ["T"] = "Aquamentas",
   },
   [4021] = {
     ["D"] = "La Horda elogia tu éxito frente a los Kolkar pero estos están enfurecidos. Según varios informes, un contingente Kolkar ha viajado hasta Los Baldíos desde sus dominios en Desolace en busca de venganza. Las últimas noticias eran que, ahora mismo, ¡se dirigen a estos búnkeres desde el oeste!$B$BHaz frente a los invasores Kolkar y pon fin a esa amenaza en Los Baldíos. Mátalos hasta que aparezca su jefe, el señor de la guerra Krom\'zar. Derrótalo y tráeme un pedazo de su estandarte como prueba.$B$BContamos contigo, $N.",
@@ -7087,7 +7087,6 @@ pfDB["quests"]["esES-tbc"] = {
   [5056] = {
     ["D"] = "En la parte norte de Cuna del Invierno, los grandes felinos se reúnen en torno a un lugar conocido como Roca Sable de Hielo. La líder de los felinos responde al nombre de Shi-Rotam. Si derrotaras a la matriarca de los sables de hielo ganarías mucho respeto a ojos de cualquier $R.$B$BVuelve a esas inhóspitas tierras y, cuando estés allí, recoge carne de sable de hielo sacra. Encuentra la Piedra de Shi-Rotam y colócala allí. Cuando pongas la carne de sus prójimos en la piedra, invocarás a Shi-Rotam, estará furiosa.$B$BDebes estar $Gpreparado:preparada; para su ira y derrotarla.",
     ["O"] = "Ventisca Pezuña Umbría de Vista Eterna, en Cuna del Invierno, quiere que acabes con Shi-Rotam.",
-    ["T"] = "Shi-Rotam",
   },
   [5057] = {
     ["D"] = "Antes de que hablaras conmigo, $N, ya había oído hablar de tus esfuerzos... que tenías un deseo irrefrenable de ponerte a prueba, que tenías un enorme talento como $C y ahora sé que todo era cierto.$B$BQuien sobresale tanto como tú merece reconocimiento. Lleva esta Señal a un amigo mío de Cima del Trueno llamado Melor Pezuña Pétrea. Seguro que se acordará de ti y de lo que hiciste hace ya tanto tiempo. Habla con él de tus logros más recientes, sin olvidar lo que has hecho hoy.",
@@ -8895,6 +8894,7 @@ pfDB["quests"]["esES-tbc"] = {
   [6922] = {
     ["D"] = "El elemental de agua derrotado ha dejado tras de sí un extraño globo de agua. Supones que el objeto de alguna forma alimentaba la energía de la bestia. En el interior del globo chapotea masa líquida repulsiva. El propio globo parece impermeable a todo tipo de fuerza física.$B$BSi alguien es capaz de interpretar este artilugio, es Je\'neu Sancrea del Anillo de la Tierra.",
     ["O"] = "Llévale el extraño globo de agua a Je\'neu Sancrea en las Cavernas de Brazanegra.",
+    ["T"] = "Baron Aquanis",
   },
   [6961] = {
     ["D"] = "¡Feliz Festival de Invierno! ¡No dejes de saludar al Gran Padre Invierno! Si te has portado bien, recibirás regalos magníficos el día del festín del Festival de Invierno. ¡No te olvides de decirle lo que quieres!$B$BY asegúrate de tener regalitos para los que se han portado bien. Disponemos de una estupenda selección. De la granja a la mesa, ¡todo lo bueno de los Pastos de Bosquehumeante!",
@@ -10039,6 +10039,7 @@ pfDB["quests"]["esES-tbc"] = {
   },
   [8303] = {
     ["D"] = "Te debo una disculpa, $N.$B$BSiento haber mantenido tantas cosas en secreto; hay muchos enemigos, incluso entre nosotros. Lee este libro y aprende; acepta el conocimiento que te doy y busca a nuestro maestro.",
+    ["T"] = "Anachronos",
   },
   [8304] = {
     ["D"] = "Mi querida Natalia ha desaparecido.$B$BLa verdad es que llevaba unas semanas muy rara; la pillé hablando sola más de una vez. Pero decía que estaba bien y que quería seguir investigando.$B$BFue vista por última vez de camino al campamento Barbabronce, al sur de aquí.$B$BMis soldados están dispersos, $N. Tienes que ir al campamento e interrogar a los enanos.",
@@ -11086,6 +11087,9 @@ pfDB["quests"]["esES-tbc"] = {
   },
   [8726] = {
     ["T"] = "Lanza Reluciente el ancestro",
+  },
+  [8728] = {
+    ["D"] = "Vaya, ha llevado más tiempo del que esperaba. Ahora deja que vea qué dice este libro de contabilidad.$B$B<Narain lee el libro en silencio y murmura de vez en cuando.>$B$BLa buena noticia es que estoy seguro al 99%de que podré crear una boya de arcanita que funcionará como tú quieres. Eso, claro está, depende de la mala noticia...$B$BLa mala noticia es que voy a necesitar mucha arcanita, elementium y unas gemas raras.$B$BTráeme lo que necesito y te haré la boya.",
   },
   [8730] = {
     ["O"] = "Mata a Nefarian y recupera del fragmento de cetro rojo. Llévaselo a Anacronos a las Cavernas del Tiempo, en Tanaris.$B$B Tienes 5 horas para completar esta tarea.",
@@ -19121,7 +19125,7 @@ pfDB["quests"]["esES-tbc"] = {
   [10709] = {
     ["D"] = "¿Así que vienes del mundo que está más allá del Portal? Y conoces a Rexxar. Oh, sí, yo también le conozco.$B$BVerás, es mi hijo.$B$BPero hace mucho tiempo tomó su decisión. Ya no es uno de nosotros y no es bienvenido aquí. Tenemos bastantes problemas con los ogros Machacasangre.$B$BTienes que saber que haber nacido mestizo no te convierte en un Mok\'Nathal.",
     ["O"] = "Return to Rexxar at Thunderlord Stronghold in Blade\'s Edge Mountains.",
-    ["T"] = "Reunión",
+    ["T"] = "Reunion",
   },
   [10710] = {
     ["D"] = "¡He estado trabajando en el Cefirium Capacitorium y estoy preparado para probarlo de nuevo! ¿Quieres ayudarme?$B$BEl próximo vuelo debería ser corto, ¡pero rápido!$B$BMmm... y aunque seguro que no hay peligro... tengo esta renuncia que quiero que firmes. Es solo una formalidad, ¡no te preocupes!$B$B¡Mucha suerte! Habla con Rally para el lanzamiento y vuelve cuando termine el experimento.",
@@ -20161,7 +20165,7 @@ pfDB["quests"]["esES-tbc"] = {
   [10921] = {
     ["D"] = "Has matado a muchas de las viudas Colminferno, pero seguirán desovando y pronto nos volverán a atacar. En las profundidades de Cresta Red Abisal se encuentra la guardia de la Terokkarántula, la madre de esas espantosas criaturas. Si queremos estar a salvo, debe morir.",
     ["O"] = "El vindicador Haylen quiere que mates a la Terokkarántula y, después, vuelvas con él, al oeste de Cresta Red Abisal.",
-    ["T"] = "Terokkarántula",
+    ["T"] = "Terokkarantula",
   },
   [10922] = {
     ["D"] = "Escolta a Letoll y a sus hombres y protégelos mientras excavan. Vuelve a ver a Enaniski al Campamento Sha\'tari si tienes éxito.|n",
@@ -23038,6 +23042,11 @@ pfDB["quests"]["esES-tbc"] = {
     ["O"] = "Llévale el formulario de socio del Club de la \"Cerveza del Mes\" a Larkin Cebatruenos en la Taberna Roca de Fuego en Forjaz.",
     ["T"] = "Club de la Cerveza del Mes",
   },
+  [12286] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
   [12306] = {
     ["D"] = "La unión hace la fuerza, $N. Formar parte del Club de la \"Cerveza del Mes\" significa saber que tú y los tuyos podréis conseguir siempre la mejor cerveza.$B$BLlévale tu formulario de socio del Club de la \"Cerveza del Mes\" a Ray\'ma en Orgrimmar.",
     ["O"] = "Llévale el formulario de socio del Club de la \"Cerveza del Mes\" a Ray\'ma en Orgrimmar.",
@@ -23047,6 +23056,401 @@ pfDB["quests"]["esES-tbc"] = {
     ["D"] = "Habla con el espía de la Fiesta de la Cerveza en el Tragapenas de las Profundidades de Roca Negra.|n",
     ["O"] = "Habla con el espía de la Fiesta de la Cerveza en el Tragapenas de las Profundidades de Roca Negra.|n",
     ["T"] = "¡Salva la Fiesta de la Cerveza!",
+  },
+  [12331] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12332] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12333] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12334] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12335] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12336] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12337] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12338] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12339] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12340] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12341] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12342] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12343] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12344] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12345] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12346] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12347] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12348] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12349] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12350] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12351] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12352] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12353] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12354] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12355] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12356] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12357] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12358] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12359] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12360] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12361] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12362] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12363] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12364] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12365] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12366] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12367] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12368] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12369] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12370] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12371] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12373] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12374] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12375] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12376] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12377] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12378] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12379] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12380] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12381] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12382] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12383] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12384] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12385] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12386] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12387] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12388] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12389] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12390] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12391] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12392] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12393] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12394] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12395] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12396] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12397] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12398] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12399] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12400] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12401] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12402] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12403] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12404] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12405] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12406] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12407] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12408] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12409] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12410] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
   },
   [12491] = {
     ["D"] = "En el cadáver de Coren Cerveza Temible encontramos esta pequeña barrica, firmemente atada a su cuello. ¡Esta debe de ser su infame cerveza temible!",

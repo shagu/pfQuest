@@ -3420,6 +3420,7 @@ pfDB["quests"]["frFR-tbc"] = {
   [909] = {
     ["D"] = "Sur l\'élémentaire d\'eau vaincu, vous trouvez un étrange globe d\'eau. Vous avez la nette impression que l\'objet a absorbé l\'énergie de la créature. À l\'intérieur du globe, vous discernez une eau aux reflets malsains. Le globe lui-même semble insensible à toute forme d\'action physique.$B$BS\'il y a une personne qui puisse comprendre ce qu\'est cet objet, cela ne peut être que Je\'neu Sancrea du Cercle terrestre.",
     ["O"] = "Apportez le Globe d\'eau étrange à Je\'neu Sancrea, dans les Profondeurs de Brassenoire.",
+    ["T"] = "OLD Baron Aquanis",
   },
   [910] = {
     ["D"] = "J\'ai entendu parler des grands bateaux qui naviguent entre Cabestan et Baie-du-Butin ! C\'est génial de voyager sur l\'océan et de faire de grandes batailles navales. Peut-être que je serai un puissant marin de la Horde quand je serai grand ! Ouais !$B$BVous voulez bien m\'emmener voir les quais de Cabestan, s\'il vous plaît ? Je vous promets que je sauterai pas dans l\'eau et que je ne ferai pas de bêtise. Je veux juste voir les grands bateaux et sentir l\'eau salée de la mer ! Ouais !",
@@ -7513,9 +7514,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Si vous vous sentez $Gprêt:prête; à fabriquer des objets vraiment faramineux, vous êtes au bon endroit. Je vois bien que vous êtes déjà un ingénieur compétent. Cependant, je souhaite analyser votre travail pour savoir comment introduire les techniques gnomes dans vos travaux futurs. J\'ai besoin des échantillons suivants : six tubes en mithril, une lunette de précision et deux leurres perfectionnés.$B$BSoumettez-moi ces objets et je ferai de vous un ingénieur gnome officiel, ayant accès à tous les schémas !",
     ["O"] = "Apportez 6 Tubes en mithril, 1 Lunette de précision et 2 Leurres perfectionnés à Orguignard Odipnoticus à Baie-du-Butin.",
   },
-  [3646] = {
-    ["D"] = "Nous devons concentrer nos pensées sur le Cercle des appels si nous voulons que vienne le seigneur de la forêt. Nous devons nous dépêcher ! Concentrez vos énergies !",
-  },
   [3661] = {
     ["D"] = "Les indomptables sont des créatures tout à fait imprévisibles, $N. Capables d\'une douceur incroyable, elles sont féroces si on menace ce qui est important à leurs yeux.$B$BOn dit que ces bêtes auraient été créées par Élune, et j\'aimerais savoir si c\'est vraiment le cas.$B$BJ\'ai récemment entendu parler d\'une population d\'indomptables vivant dans les Hinterlands ; des chouettards vicieux, des chouettards primitifs et des chouettards sauvages. Ils hantent les terres sauvages, là-bas. Pourriez-vous aller collecter quelques-unes de leurs plumes pour moi ?",
     ["O"] = "Collecter 15 Plumes d\'Indomptable dans les Hinterlands, pour Erelas Ambreciel au village de Rut\'theran.",
@@ -9855,7 +9853,7 @@ pfDB["quests"]["frFR-tbc"] = {
   [5762] = {
     ["D"] = "J\'ai un colis pour un nouveau client. C\'est un nain qui répond au nom de Hemet Nesingwary junior... Le colis a mis des semaines à arriver, et Hemet est déjà reparti depuis longtemps. Il a dit qu\'il allait à Strangleronce pour y prendre la place de son père et chasser ; il a toutefois pris soin de laisser un peu d\'argent pour que je lui fasse livrer son colis, dès que celui-ci arriverait.$B$BHemet junior est un nain fortuné ; il est bon de garder de bonnes relations avec les riches, non ? Alors... acceptez-vous de lui livrer son colis pour moi ?$B$BJ\'ai entendu dire qu\'il possède un camp à Strangleronce, au nord de Grom\'gol.",
     ["O"] = "Take Kravel\'s Crate to Hemet Nesingwary Jr. in Stranglethorn.",
-    ["T"] = "Hemet Nesingwary junior",
+    ["T"] = "Hemet Nesingwary Jr.",
   },
   [5763] = {
     ["D"] = "Il y a longtemps de cela, un nain arriva dans cette contrée. Il s\'appelait Hemet et voulait chasser des créatures puissantes. Son maniement du fusil était excellent, et nous passâmes de nombreux jours à chasser ensemble. Même l\'animosité entre nos deux peuples avait été oubliée.$B$BQuand il partit pour Strangleronce, j\'ai juré qu\'un jour je l\'accueillerais de nouveau. Il est à présent parti chasser dans des terres inconnues, mais son fils a pris sa place.$B$BApportez cette corne de kodo à Hemet junior. Vous le trouverez à Strangleronce, au nord du Campement Grom\'gol.",
@@ -14114,7 +14112,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "L\'Ancien Murmeloin",
   },
   [8728] = {
-    ["D"] = "Eh bien, cela a pris un peu plus de temps que je ne le croyais. Voyons voir maintenant ce que dit ce livre.$B$B<Narain lit silencieusement le grimoire, marmonnant de temps en temps dans sa barbe.>$B$BLa bonne nouvelle est que je suis certain à 99% d\'être en mesure de créer une bouée d\'arcanite qui fonctionnera selon vos spécifications. Cela dépend, bien sûr, complètement de la mauvaise nouvelle. La mauvaise nouvelle est que je vais avoir besoin de beaucoup de minerai d\'arcanite et d\'élémentium, et de pierres précieuses rares.$B$BApportez-moi tout ce dont j\'ai besoin et je fabriquerai votre bouée.",
+    ["D"] = "Eh bien, cela a pris un peu plus de temps que je ne le croyais. Voyons voir maintenant ce que dit ce livre.$B$B<Narain lit silencieusement le grimoire, marmonnant de temps en temps dans sa barbe.>$B$BLa bonne nouvelle est que je suis certain à 99%d\'être en mesure de créer une bouée d\'arcanite qui fonctionnera selon vos spécifications. Cela dépend, bien sûr, complètement de la mauvaise nouvelle. La mauvaise nouvelle est que je vais avoir besoin de beaucoup de minerai d\'arcanite et d\'élémentium, et de pierres précieuses rares.$B$BApportez-moi tout ce dont j\'ai besoin et je fabriquerai votre bouée.",
     ["O"] = "Narain Divinambolesque, en Tanaris, veut que vous lui apportiez 20 Barres d\'arcanite, 10 Minerais d\'élémentium, 10 Diamants d\'Azeroth et 10 Saphirs bleus.",
   },
   [8729] = {
@@ -22679,7 +22677,7 @@ pfDB["quests"]["frFR-tbc"] = {
   [10709] = {
     ["D"] = "Alors vous venez du monde qui se trouve de l\'autre côté de la Porte ? Et vous connaissez Rexxar. Oh oui, son nom m\'est très familier.$B$BC\'est mon fils, voyez-vous.$B$BIl a fait son choix il y a très longtemps. Il n\'est pas l\'un d\'entre nous, et il n\'est pas le bienvenu ici. Nous avons déjà assez d\'ennuis, avec les ogres Masse-sanglante.$B$BSachez ceci : être un sang-mêlé ne fait pas de vous un Mok\'Nathal.",
     ["O"] = "Return to Rexxar at Thunderlord Stronghold in Blade\'s Edge Mountains.",
-    ["T"] = "Réunion",
+    ["T"] = "Reunion",
   },
   [10710] = {
     ["D"] = "J\'ai effectué quelques réglages sur le Zephyrium Capacitorium, et je suis prêt à effectuer un autre essai ! Vous voulez vous rendre utile ?$B$BLe prochain vol devrait être court, mais intense !$B$BHum... et même si je suis certain qu\'il n\'y a aucun danger... J\'ai ce, heu, cette décharge qu\'il faudrait que vous signiez. C\'est juste une formalité, je vous assure !$B$BQue la chance soit avec vous ! Allez voir Rally pour vous faire envoyer en l\'air, et revenez me voir quand l\'expérience sera terminée !",
@@ -26596,6 +26594,11 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apporter le Bulletin d\'adhésion du club de la « Bière du mois » à Larkin Tonnebière à la Taverne de Brûlepierre, à Forgefer.",
     ["T"] = "Le club de la Bière du mois",
   },
+  [12286] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
   [12306] = {
     ["D"] = "L\'union fait la boisson, $N. Adhérez au club de la « Bière du mois » et vous et vos camarades aurez toujours accès à la meilleure des bières. Apportez votre bulletin d\'adhésion du club de la « Bière du mois » à Ray\'ma à Orgrimmar.",
     ["O"] = "Apporter le Bulletin d\'adhésion du club de la « Bière du mois » à Ray\'ma, à Orgrimmar.",
@@ -26605,6 +26608,401 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Parlez avec l\'Espion de la fête des Brasseurs, au Sinistre écluseur dans les Profondeurs de Rochenoire.",
     ["O"] = "Parlez avec l\'Espion de la fête des Brasseurs, au Sinistre écluseur dans les Profondeurs de Rochenoire.",
     ["T"] = "Sauvez la fête des Brasseurs !",
+  },
+  [12331] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12332] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12333] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12334] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12335] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12336] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12337] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12338] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12339] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12340] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12341] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12342] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12343] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12344] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12345] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12346] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12347] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12348] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12349] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12350] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12351] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12352] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12353] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12354] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12355] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12356] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12357] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12358] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12359] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12360] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12361] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12362] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12363] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12364] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12365] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12366] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12367] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12368] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12369] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12370] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12371] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12373] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12374] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12375] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12376] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12377] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12378] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12379] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12380] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12381] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12382] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12383] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12384] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12385] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12386] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12387] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12388] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12389] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12390] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12391] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12392] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12393] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12394] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12395] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12396] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12397] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12398] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12399] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12400] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12401] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12402] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12403] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12404] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12405] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12406] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12407] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12408] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12409] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12410] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
   },
   [12491] = {
     ["D"] = "Même dans la mort, Coren Navrebière continue de s\'agripper à un baril. Ça doit être sa fameuse navre-bière !",

@@ -67,6 +67,9 @@ pfDB["quests"]["enUS-tbc"] = {
   [335] = {
     ["D"] = "Lord Wishock is causing quite a stir amongst the House of Nobles.  He was made aware of our little \"establishment\" down here and is lobbying for a full investigation.  I have a plan to keep Wishock \"preoccupied\", but I\'ll need your help. $B$BThere is a flower growing in the Garden of Stalvan on the outskirts of Darkshire.  This small white flower is known as the Tear of Tilloa.  I will also need a Musquash Root, found only at the very base of the falls far beneath the Stonewrought Dam in the Wetlands.",
   },
+  [341] = {
+    ["O"] = "Bring pages 18, 20, 21 and 24 of Nesingwary\'s The Green Hills of Stranglethorn to Barnil Stonepot in order to complete Chapter III.",
+  },
   [348] = {
     ["O"] = "Seek out Witch Doctor Unbagwa and have him summon Mokk the Savage. Bring the Heart of Mokk to Fin Fizracket.",
   },
@@ -274,9 +277,6 @@ pfDB["quests"]["enUS-tbc"] = {
     ["D"] = "Missing text",
     ["O"] = "Missing text",
     ["T"] = "[Not Used] BETA Oops, We Killed Them Again.",
-  },
-  [1447] = {
-    ["D"] = " Yeah, you\'re obviously not the smartest $c to come into Stormwind, but you\'re about to be one of the dumbest to never leave.$B$BHave you met me friends?",
   },
   [1459] = {
     ["O"] = "Bring 7 vials of Scorpashi Venom and 3 Aged Kodo Hides to Kreldig Ungor in Desolace.",
@@ -12366,6 +12366,11 @@ pfDB["quests"]["enUS-tbc"] = {
     ["O"] = "Bring the \"Brew of the Month\" club membership form to Larkin Thunderbrew in the Stonefire Tavern in Ironforge.",
     ["T"] = "Brew of the Month Club",
   },
+  [12286] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
   [12306] = {
     ["D"] = "There is strength in numbers, $n.  Being part of the \"Brew of the Month\" club means knowing you and your brethren will always have access to the best brew.$b$bBring your \"Brew of the Month\" club membership form to Ray\'ma in the Darkbriar Lodge in Orgrimmar\'s Valley of Spirits.",
     ["O"] = "Bring the \"Brew of the Month\" club membership form to Ray\'ma in the Darkbriar Lodge in Orgrimmar\'s Valley of Spirits.",
@@ -12375,6 +12380,401 @@ pfDB["quests"]["enUS-tbc"] = {
     ["D"] = "$n, our spies have discovered a fiendish plot!  The Dark Iron dwarves want our beloved Brewfest destroyed!$B$BCoren Direbrew, head of a renegade family of brewers, has marshaled the dwarves of Blackrock Depths.  Their vile mole machines attack us constantly.$B$BOur spy is in the Grim Guzzler, a tavern in the bowels of Blackrock Depths.  He\'ll know more of Direbrew\'s plot.$B$BFind our spy.  Save Brewfest!",
     ["O"] = "Speak with the Brewfest Spy in the Grim Guzzler of Blackrock Depths.",
     ["T"] = "Save Brewfest!",
+  },
+  [12331] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12332] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12333] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12334] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12335] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12336] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12337] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12338] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12339] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12340] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12341] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12342] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12343] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12344] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12345] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12346] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12347] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12348] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12349] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12350] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12351] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12352] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12353] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12354] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12355] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12356] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12357] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12358] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12359] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12360] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12361] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12362] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12363] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12364] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12365] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12366] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12367] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12368] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12369] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12370] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12371] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12373] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12374] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12375] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12376] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12377] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12378] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12379] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12380] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12381] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12382] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12383] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12384] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12385] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12386] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12387] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12388] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12389] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12390] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12391] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12392] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12393] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12394] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12395] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12396] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12397] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12398] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12399] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12400] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12401] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12402] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12403] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12404] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12405] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12406] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12407] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12408] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12409] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12410] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
   },
   [12491] = {
     ["D"] = "Coren Direbrew\'s corpse clutched this small cask tightly to its gut.  This must be his infamous Dire Brew!",

@@ -60,6 +60,7 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [19] = {
     ["D"] = "검은바위 길잡이와 검은바위 보초병들이 이곳과 돌망루 요새 사이에 매복하고 있네. 길잡이들의 우두머리는 타릴준이라는 오크인데 우린 이 오크를 처치하려고 하네. 그의 머리카락을 내게 가져오게나!",
+    ["T"] = "Tharil\'zun",
   },
   [20] = {
     ["D"] = "불타는 평원에서 온 검은바위 오크들이 북쪽의 돌망루 요새를 장악했네. 오크들은 그곳을 본거지로 삼아 호숫골의 북쪽 지역을 약탈하고 마을의 주민들을 우리 안의 가축처럼 가두어 놓고 있다네.$B$B호숫골에서 오크의 위협을 제거할 수 있게 도와 주게나. 검은바위 오크들을 처치하고 내게 그들의 마모된 도끼 10개를 증거로 가져 오게.$B$B돌망루 요새를 장악한 오크뿐만 아니라 붉은마루 산맥 남동쪽의 고립 지대에서도 오크들의 위협에 대한 보고가 들어오고 있네. 그곳에서도 검은바위 부족을 발견하면 처치해 주게나.",
@@ -717,6 +718,7 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [206] = {
     ["D"] = "쿠르젠이 죽었을지 모르지만 그를 악의 세력으로 몰아넣은 자는 아직 살아 있습니다! 이번 연구를 통해 몇 가지 알아낸 것이 있는데 가시덤불 골짜기 동쪽 산 내의 오우거 소굴에 마이조스라는 오우거 마법사가 살고 있습니다. 마이조스는 정신을 지배하는 마법을 사용한다고 알려져 있는데, 나는 그 오우거가 쿠르젠을 타락시켰다고 확신하고 있습니다.$B$B마이조스를 살려두면 다른 이들에게까지 악한 영향력을 행사할 테고, 제2의 쿠르젠이 나타날 수도 있을 겁니다.$B$B그러니 녀석을 처치하고 녀석이 다른 이를 타락시키는 데 사용하는 마음의 눈을 가져오십시오.",
+    ["T"] = "Mai\'Zoth",
   },
   [207] = {
     ["D"] = "대령 쿠르젠은 한때 훌륭하고 고귀한 존재였습니다. 그랬던 그가 왜 타락해 버렸는지 반드시 알아내야 합니다! 어쩌면 트롤의 마법에 조종당하고 있는지도 모르겠습니다. 그걸 확인하려면 그들의 전설에 대해 연구해 볼 필요가 있습이다.$B$B가시덤불 골짜기의 트롤 폐허에는 서판이 네 개 숨겨져 있습니다. 그 서판에 쓰인 내용을 확인해야 하니 서판의 내용을 필사하여 가져오시기 바랍니다.$B$B첫 번째 서판은 발랄 폐허에 있고, 두 번째는 썩은내 산호초에 그리고 세 번째와 네 번째 서판은 줄쿤다의 폐허에 있습니다.",
@@ -800,11 +802,11 @@ pfDB["quests"]["koKR-tbc"] = {
   [227] = {
     ["D"] = "<책장 선반을 뒤져 가죽 표지의 책을 찾아내는 시라>$B$B더 자세히 알고 싶다면 알시아님께 물어보십시오. 최근 그의... 문제를... 처리한 게 알시아님이니 말입니다.",
     ["O"] = "어둠골의 사령관 알시아 에본로크와 대화해야 합니다.",
-    ["T"] = "모건 래디모어",
   },
   [228] = {
     ["D"] = "우리 정찰병의 보고에 따르면 모르라딤은 묘지 옆의 낯설고 굽은 길을 따라 그늘숲 여기저기를 돌아다니고 있다고 하오. 우린 그를 언덕 위의 집을 지나서 묻었는데, 당신 그 집이 어디 있는지 알고 있소?$B$B행운을 빌어 주는 것밖에는 내가 도울 수 있는 일이 없는 것 같군.",
     ["O"] = "모르라딤을 처치한 다음 그의 해골을 어둠골의 사령관 알시아 에본로크에게 가져가야 합니다.",
+    ["T"] = "Mor\'Ladim",
   },
   [229] = {
     ["D"] = "전에 이 말씀도 드렸어야 했는데... 아, 어떻게 말씀드려야 할지...$B$B모건 래디모어는 가족이 모두 죽었다고 생각했는지 모르지만, 실은 그의 딸인 사라 래디모어가 지금 순찰대원으로 일하고 있습니다. 그녀는 아버지의 죽음과 관련된 여러... 사건 때문에 많은 어려움을 겪었어요. 그러니 당신이 가서 이 소식을 알려 주는 게 좋을 것 같습니다.",
@@ -1319,6 +1321,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [389] = {
     ["D"] = "밴클리프와 난 석공 길드의 회원이었습니다. 우리의 주요 계획은 전쟁 후의 스톰윈드를 재건하는 것이었지요.$B$B그런데 맡은 일을 완수한 후 사기를 당하고 말았습니다. 귀족들이 작업에 대한 정당한 대가를 지급하지 않으려고 한 것이지요. 이후 국가에서 석공 길드의 몇몇 수석 건축가에게 일을 맡기려 했으나 밴클리프는 석공 길드에 대한 신의를 지키기 위해 이를 거절했습니다. 그 후 그는 한바탕 소동을 일으킨 후에 복수를 맹세하며 도시를 떠났지요.$B$B밴클리프의 부관인 바질 스레드가 그의 자세한 계획을 알고 있을 겁니다. 바질 스레드는 현재 지하감옥에 죄수로 감금되어 있습니다.",
     ["O"] = "스톰윈드 지하감옥에 있는 교도소장 델워터와 대화해야 합니다.",
+    ["T"] = "Bazil Thredd",
   },
   [391] = {
     ["D"] = "한 가지는 분명히 밝히지. 난 자넬 믿지 않아. 하지만 상황이 이렇다 보니 말이야, 자네 하나 때문에 일이 더 악화될 리는 없겠지만...$B$B자, 그러면 이렇게 하세. 저리 내려가서 스레드와 얘기를 하게. 그리고 정말 자네가 진정 우리 편이라면 그를 처치하고 머리카락을 내게 가져오게.$B$B만에 하나 자네가 스레드와 한패라면 돌아오지 않겠지만... 대신 나중에 만나면 나머지 친구들과 자네는 저 세상 구경을 할 테니 명심하게.",
@@ -2365,9 +2368,6 @@ pfDB["quests"]["koKR-tbc"] = {
   [738] = {
     ["D"] = "발굴조사단장 아그몬드는 여기서 남서쪽에 있는 황야의 땅에서 발굴현장을 지휘하고 있었소. 있었다고 말한 건... 그게, 몇 주째 그에게서 아무 소식도 듣지 못해서요. 난 그의 보고를 받아야 하니 아그몬드를 찾아주시오.$B$B들은 바로는 아그몬드는 황야의 땅의 고통의 요새를 지나 최남단에 있는 조그마한 발굴현장에 마지막으로 있었다고 하오. 우선 거기서부터 그를 찾아보시오.",
   },
-  [739] = {
-    ["T"] = "멀달록",
-  },
   [741] = {
     ["T"] = "정신없는 발굴조사단장",
   },
@@ -2465,6 +2465,7 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [766] = {
     ["D"] = "우리 할아버지께서는 내게 마즈라나체라는 타조 녀석과 싸웠던 얘기를 해 주시곤 했지. 할아버지는 마즈라나체의 악마 같은 붉은 눈과 면도날처럼 날카로운 발톱, 독을 뿜는 이빨에 대해 얘기해 주셨어.$B$B그런데 마치 그게 예언이었던 것처럼 평야를 여행하다 우연히 놈과 마주쳤고 놈에게 어깨를 물리고 말았네. 놈은 할아버지께서 말씀하신 그대로 정말 끔찍한 놈이었지. 놈에게 물린 상처의 감염을 막으려면 몇 가지 재료가 필요한데 좀처럼 얻기 힘든 것들이지. 늑대 심장, 퓨마의 다리뼈, 초원타조 비늘, 그리고 검독수리 내장이 필요하다네.$B$B시간이 부족하니 서둘러 주게.",
+    ["T"] = "Mazzranache",
   },
   [767] = {
     ["D"] = "대지모신의 의식 중 하나인 예언의 의식은 썬더 블러프 장로들의 신임을 얻는 데 도움이 될 걸세.$B$B우리 타우렌들은 대지가 우리의 가장 신성한 부양자라는 사실을 배워 왔지. 의식에서 예언을 직접 얻으려면 마을의 정신적 지도자인 잘만 투문을 만나야 할 게야.",
@@ -2559,6 +2560,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [790] = {
     ["D"] = "오, $C 친구를 만나다니! 여기서 저 혼자 아무도 모르게 죽게 되는 줄만 알았는데... 아까 골짜기에서 전갈을 사냥하던 중에 유난히 사악해 보이는 녀석을 하나 발견했습니다. 그래서 놈에게 뛰어들어 녀석의 발톱을 힘껏 내리쳤지만 곧 내 다리 가까이로 기어오더군요.$B$B그놈의 독침에 대해서는 무방비 상태였던 터라, 녀석이 순식간에 다가와 가슴을 찌르는 바람에 피를 많이 흘리고 말았습니다. 제발 절 위해 그 전갈 녀석을 처치해 주십시오! 그래서 반드시 제 잃어버린 명예를 되찾아 주었으면 합니다. 여기에서 남쪽에 있는 언덕에서 녀석과 싸웠었습니다.",
     ["O"] = "사르코스를 처치하고 그 발톱을 하나주아에게 가져가야 합니다.",
+    ["T"] = "Sarkoth",
   },
   [791] = {
     ["D"] = "세월은 내 전투 능력을 앗아가고 기력도 쇠해 이제 나는 다른 일을 맡고 있다네.$B$B바로 이 고지에서 침략자가 없는지 감시하는 일이지. 이곳에서 우리의 세력이 커짐에 따라 내가 전쟁 나팔을 부는 횟수도 나날이 줄고 있네.$B$B그래서 우리 땅을 지키는 젊은이들을 돕기 위한 장비를 만들며 무료함을 달래고 있지.$B$B내 자네를 위해 소지품을 보관할 수 있는 가방을 만들어 주도록 하지. 그러려면 약간의 천 조각이 필요하니 좀 가지고 오게. 천 조각은 인간과 켄타우로스들이 즐겨 사용하니, 그들에게 구할 수 있을 거야.",
@@ -2579,6 +2581,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [804] = {
     ["D"] = "Seeing the deed you have done for me steels my heart. I cannot fall so easily! I must endure!$b$bBut it remains that I cannot make the trek back to the Den unassisted. Please, $n, return to the Den and tell Gornek of my situation. Perhaps he can help me.",
     ["O"] = "Bring the news of Hana\'zua\'s plight to Gornek at the Den.",
+    ["T"] = "Sarkoth",
   },
   [805] = {
     ["D"] = "불타는 칼난단에 맞서는 자네의 시험은 이제 끝났네... 적어도 이곳 시험의 골짜기에선 말이야. 하지만, 자네가 발견한 사실을 보고해주었으면 하네.$B$B센진의 트롤 마을로 가서 장로 가드린을 찾게. 센진 마을은 골짜기에서 동쪽으로 간 후에 갈림길에서 오른쪽으로 꺾으면 있지.$B$B가르딘에게 시험의 골짜기에서 불타는 칼날단을 발견했다는 사실과 함께 혹시 센진에서도 놈들이 손아귀를 뻗쳤는지 알아내게.$B$B어서 움직이게, $N. 불타는 칼날단 소굴에서 발견한 악의 세력이 더욱 큰 위협의 전주곡에 불과한 건 아닐지 걱정되니까...",
@@ -2591,6 +2594,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [809] = {
     ["D"] = "불타는 군단이 패한 최후의 대전쟁 이후, 나는 오크 사회 내에서 마력이 불러온 타락과 부정을 연구해 왔네. 자네가 가져온 이글거리는 목걸이를 통해 그동안 걱정해왔던 것이 사실이었음을 확인했지.$B$B이 목걸이는 악마의 씨앗이라고 하는 마력의 물건을 중심으로 결성된 불타는 칼날단 이교도 집단의 것이야. 그 씨앗은 반드시 파괴되어야만 하네! 불모의 땅, 공포안개 봉우리 꼭대기에 있지.$B$B여기서 서쪽으로 가면 불모의 땅 경계 부근에 천리길 경비초소가 보일 거야. 그곳에서 내 조수인 아크젤로스를 만나 보게. 앞으로 당신이 할 일을 알려줄 게야.",
     ["O"] = "불모의 땅에 있는 아크젤로스와 대화해야 합니다.",
+    ["T"] = "Ak\'Zeloth",
   },
   [813] = {
     ["T"] = "해독약 재료 구하기",
@@ -2631,6 +2635,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [826] = {
     ["D"] = "의술사 잘라제인은 동쪽의 메아리 섬에 살고 있네. 그 섬들은 바로 우리의 고향이지.$B$B거기에서 그는 육지로 트롤들을 보내 우리 주민들에게 마법을 걸어 노예로 삼기 위해 납치해 가고 있네.$B$B놈을 막아야 하네.$B$B잘라제인과 이젠 그의 앞잡이가 된 검은창 트롤들을 처치하게. 그리고 악의 지배가 끝났음을 확인할 수 있도록 그 증거를 가져오게.",
     ["O"] = "잘라제인을 처치해야 합니다.$B$B부두교 트롤 8명과 사술에 걸린 트롤 8명을 처치해야 합니다.$B$B가드린에게 잘라제인의 머리카락을 가져가야 합니다.",
+    ["T"] = "Zalazane",
   },
   [827] = {
     ["D"] = "$N, 오그리마 동쪽에 있는 해골 바위굴이라는 동굴에 불타는 칼날단이 출몰하고 있소. 놈들은 이글거리는 목걸이로 자신들의 살을 태우며, 그 동굴 안에서 고약한 의식을 거행하고 있지.$B$B내 생각에 놈들은 그 목걸이를 착용함으로써 악마의 힘을 얻는 것 같소. 하지만 그 목걸이를 가져다 직접 연구해 보기 전까지는 단정할 수 없겠지.$B$B해골 바위굴로 가서 놈들을 처치하고 이글거리는 목걸이를 모아 오시오. 그러면 놈들의 비밀을 밝혀내는 데 큰 도움이 될 거요.",
@@ -2639,6 +2644,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [828] = {
     ["D"] = "우리 주술사 마르고즈가 불타는 칼날단의 음모에 대한 새로운 사실을 하나 알고 있네. 그가 오그리마 외곽의 산 속에 있는 해골 바위굴에 대해 알려 주었지. 그곳에는 수많은 불타는 칼날단 이교도들이 숨어 있다고 하네.$B$B해골 바위굴로 가기 전에 마르고즈를 만나 얘기해 보도록 하게. 그는 현명한 자이니까 분명 도움이 될만한 조언을 얻을 수 있을 거야.$B$B지금 북쪽에 있는 모래바람 협곡과 해안가 사이에서 야영을 하고 있네.$B$B그의 조언을 따르게, 하지만 그가 뭐라고 하든 자네가 그 숭배자 놈들을 처치해야 한다는 사실은 변함이 없네!",
     ["O"] = "마르고즈와 대화해야 합니다.",
+    ["T"] = "Margoz",
   },
   [829] = {
     ["T"] = "네루 파이어블레이드",
@@ -2757,6 +2763,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [873] = {
     ["D"] = "The grand Isha Awak is lord of these waters.  Great is his strength, and solemn his pride.  The humans on the coast fear him, for he has consumed many of their number.$B$BBut I do not fear him.  I am grateful he is here.  He is a worthy challenge, and honorable prey.$B$BIf you are ready, then swim out and search for Isha Awak, the Deep Doom.$B$BHis spirit dwells in his heart, and to hear its beat is to know your fate.",
     ["O"] = "Bring the Heart of Isha Awak to Mahren Skyseer.",
+    ["T"] = "Isha Awak",
   },
   [874] = {
     ["D"] = "지금껏 불모의 땅의 짐승들을 사냥한 것을 보면 자네는 기백이 상당한 친구일세. 하지만 진정한 $R|1은;는; 항상 어떠한 곳에서도 사냥감을 쫓을 수 있는 준비가 되어 있어야 하네. 험한 산이라도, 깊은 늪도 문제가 되어서는 안 되지. 심지어 바다까지도 쫓아가야 해.$B$B내 누이인 마렌을 찾아가게. 그녀는 해안을 따라 물에 사는 짐승들을 사냥하고 있지. 누이가 녀석들을 어떻게 사냥하는지 방법을 알려줄 거야.$B$B그런데 누이를 찾아가는 동안 조심해야 할 거야. 불모의 땅의 해안은 인간들이 장악하고 있으니까 말이야.",
@@ -2777,21 +2784,26 @@ pfDB["quests"]["koKR-tbc"] = {
   [881] = {
     ["D"] = "Whitemist, Echeyakee in the Tauren tongue, is the king of the savannah cats.  He hunts with such stealth, they say he\'s like a thin, white mist on the earth.  And he kills so fast his prey have no time for fear, or pain.$B$BThe Tauren say he is both mercy and death.$B$BYou will learn if that\'s true, for I now set you on the path to hunt Echeyakee.  His lair is northeast of the Crossroads, among the bones of giant Kodo$B$BGo.  Blow this horn when you reach his lair.  Blow the horn, and he will come.",
     ["O"] = "Bring Echeyakee\'s Hide to Sergra Darkthorn at the Crossroads.",
+    ["T"] = "Echeyakee",
   },
   [882] = {
     ["D"] = "강철이빨 이샤무헤일은 불모의 땅에서 가장 사나운 해비늘랩터일세. 놈이 사냥을 하는 이유는 먹기 위한 것도 재미를 위해서도 아니지. 순수한 사냥에 대한 열정 때문이야. 그것이 놈의 본성이기 때문에 다른 생물들을 죽이는 거야.$B$B이샤무헤일을 쫓다 보면 자네도 놈의 본성을 알게 될 걸세.$B$B어서 사냥을 떠나게. 그가 가장 좋아하는 먹이인 얼룩말을 처치하고, 그 시체를 톱니항 북서쪽에 있는 고목으로 가져가게. 이샤무헤일은 시체의 냄새를 맡고 나타날 거야.$B$B그가 나타나면 마음의 준비를 하도록 하게.",
+    ["T"] = "Ishamuhale",
   },
   [883] = {
     ["D"] = "The Hoof of Lakota\'mani is a symbol of the strength of the great kodo.",
     ["O"] = "Bring the Hoof of Lakota\'mani to Jorn at Camp Taurajo.",
+    ["T"] = "Lakota\'mani",
   },
   [884] = {
     ["D"] = "When touched, sparks fly from the tailspike of Owatanka.",
     ["O"] = "Bring Owatanka\'s Tailspike to Jorn at Camp Taurajo.",
+    ["T"] = "Owatanka",
   },
   [885] = {
     ["D"] = "The feather of Washte Pawne is painful to the touch.",
     ["O"] = "Bring Washte Pawne\'s Feather to Jorn Skyseer at Camp Taurajo.",
+    ["T"] = "Washte Pawne",
   },
   [886] = {
     ["D"] = "썬더 블러프의 드루이드들이 멀고어 동쪽, 불모의 땅으로 흘러들어오는 이상한 기운을 느끼고 있네.$B$B그 힘의 근원을 찾기 위해 통가 룬토템을 보냈지만 그에게 도움이 필요한 것 같네.$B$B불모의 땅에 있는 통가를 찾아가게. 그는 아마 십자로에 있을 걸세. 그곳으로 가려면 블러드후프 마을에서 바깥으로 이어지는 동쪽 길을 따라가다가, 불모의 땅에 들어선 후 갈림길이 나오면 북쪽 길로 계속 가게. 그러다 보면 십자로에 다다르게 될 거네.$B$B불모의 땅은 험난한 지역이니 길을 벗어나지 않도록 조심해야 하네.",
@@ -2994,6 +3006,9 @@ pfDB["quests"]["koKR-tbc"] = {
   [947] = {
     ["D"] = "내가 연구 중인 물약에는 특정한 동굴에서만 자라는 희귀한 버섯이 필요하오. 그 동굴은 여기서 동쪽으로 가면 나오는 산맥의 약간 북쪽에 위치한 절벽 폭포 뒤에 있소.$B$B그곳에 직접 가보려 했지만 고대정령의 숲이 그곳에 가까이 가지 말라고 충고하더군. 우리의 오랜 친구인 그들은 느꼈나 보오. 그 동굴이 어둠해안에 새로이 생겨난 악의 세력이 숨어 있는 은신처라는 걸 ...$B$B부디 날 위해 버섯을 좀 모아 주시오. 그리고 동굴을 정찰하여 고대정령이 우려하는 바가 사실인지 확인해주기 바라오.",
   },
+  [948] = {
+    ["T"] = "Onu",
+  },
   [951] = {
     ["D"] = "The parchment you found at the Master\'s Glaive is a page from an ancient text...written by elves!  It is heavily cursed and tainted by the corruption of the Twilight\'s Hammer, but it seems the cult is using ancient elven magic to bring their old masters back to our world.$B$BTravel to the ruins of Mathystra to the northeast, and search for ancient relics among the grass and broken stones.  Through their study, we may divine how the Twilight\'s Hammer intends to exploit the magic of the elves.",
     ["O"] = "Bring 6 Mathystra Relics to Onu at the Grove of the Ancients.",
@@ -3179,6 +3194,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [1009] = {
     ["D"] = "I fear the ancient statuette\'s secrets will remain forever hidden unless you find the key to its ancient lock.$B$BThat key is a ring, the Ring of Zoram.  It belonged to the rulers of this city before the waves of the Sundering drowned it.$B$BFor years the ring was lost, but the naga have recently found it.$B$BTheir leader, Ruuzel, dwells on an isle on the northern edge of Zoram.  Please, $N, retrieve the ring for me!",
     ["O"] = "Bring the Ring of Zoram to Talen near the Zoram Strand.",
+    ["T"] = "Ruuzel",
   },
   [1011] = {
     ["D"] = "언데드 호드 군대인 포세이큰이 잿빛 골짜기로 숨어들어와 이곳 폐허와 언덕을 어슬렁거리고 있소. 우리 생각엔 그들이 나이트 엘프의 땅에 질병을 퍼뜨리려는 것 같소. 이건 꼭 확인해 봐야 할 문제요.$B$B포세이큰들은 남쪽의 도르다닐 지하굴 근처에 야영지를 설치하고 독약과 질병을 만들어 병 안에다 담고 있소. 그 야영지로 들어가 역병 견본을 훔쳐 가져다주시오. 그러면 내가 실험을 통해 그 용도를 밝혀내겠소.",
@@ -3518,9 +3534,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring Kravel\'s Scheme to Crank Fizzlebub in Booty Bay.",
     ["T"] = "Back to Booty Bay",
   },
-  [1123] = {
-    ["T"] = "라빈 사투르나",
-  },
   [1124] = {
     ["D"] = "West of Un\'Goro Crater, via the northwestern ridge, is a harsh wasteland - Silithus.  Few know that an ancient war was waged there between the night elves and a malign, alien power.  The evil was sealed, but now we suspect that forces work to stir this... unspeakable horror.$B$BSeek out Layo Starstrike, one of our agents in Silithus; look for him at Valor\'s Rest, the final resting spot for the fallen of the wastes.  Give him this letter, and he will give you his trust accordingly.",
     ["O"] = "Speak with Layo Starstrike near the Valor\'s Rest graveyard of Silithus, showing him Rabine\'s Letter.",
@@ -3634,7 +3647,7 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [1169] = {
     ["D"] = "그 겁 많은 바보 모크모로크는 권력의 맛에 흥청대고 타르그는 슬픔과 복수의 악마들과 악전고투하며 부족의 지도권을 얻기를 바라지. 우리 옛 고향을 침략한 무리가 어떤 녀석들인지 어디서 온 건지 알아내려고 하는 건 나 혼자뿐인 것 같군.$B$B어째서 어리둥절한 얼굴을 하고 있지? 내가 오우거라고 해서 거친 난봉꾼 같은 말투를 쓸 거로 생각했나?$B$B뭐, 어쨌거나 다시 본론으로 돌아가지. 화염 새끼용류 녀석들의 심장과 혓바닥을 내게 가져와라. 난 이 악의 뿌리를 추적해야 한다...",
-    ["O"] = "Draz\'Zilb in Brackenwall Village would like you to bring him 7 Searing Tongues and 7 Searing Hearts.",
+    ["O"] = "담쟁이 마을에 있는 드자리블이 화염 혓바닥 7개와 화염 심장 7개를 가져다 달라고 했습니다.",
   },
   [1170] = {
     ["D"] = "돌망치 마을이 오닉시아 일당에게 침략당했다. 하지만 왜 검은용군주 데스윙의 딸이 우리 땅에 내려온 거지?$B$B이건 정말 큰일이다. 분명 오닉시아가 겨우 오우거 몇 마리를 포위 공격하러 여기 온 건 아닐 거고 그 이상의 뭔가가 있다.$B$B즉시 모크모로크에게 알려야 한다! 반드시 조치를 취해야 해.",
@@ -3960,6 +3973,7 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [1365] = {
     ["D"] = "잊혀진 땅엔 콜카르 켄타우로스만 있는 게 아닐세. 수많은 부족이 이 메마른 평원을 누비고 다니며 서로 싸우고 죽이곤 하지. 워낙 강하고 거친 녀석들이라 자기들끼리 싸우는 게 천만다행이야. 만약 녀석들이 손을 잡고 우리를 공격한다면 아주 끔찍한 적이 될 테니까 말일세. 녀석들이 뭉치기 전에 손봐 놓아야만 하지.$B$B당신이 해줘야 할 첫 번째 임무는 콜카르 일족을 분열시키는 걸세. 그러려면 녀석들의 우두머리인 칸 데즈헤파를 처치하면 될 테고.$B$B콜카르 마을은 여기서 북동쪽에 있으니 어서 가게. 행운을 빌겠네.",
+    ["T"] = "Khan Dez\'hepah",
   },
   [1366] = {
     ["D"] = "Now that you scared the centaur clans, it\'s time to bleed them.  When traveling Desolace, hunt centaur.  I don\'t care which clan you hunt.  Just gather ears.  A hoard of ears.$B$BBy weakening their numbers you will weaken their resolve, and stamp out any thoughts of expansion.$B$BGood hunting, $N.",
@@ -3980,21 +3994,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "우리 원정 부대는 바리마트라스 님의 명령으로 아제로스 저지대를 조사하기 위해 파견되었네.$B$B정찰 중에 나는 인간 침투요원이 부랑자 소굴을 염탐하고 있는 것을 발견했지. 내가 녀석을 잡기도 전에 우리 오크 형제 중 한 명이 그를 스토나드의 슬픔의 늪에 있는 요새로 끌고 갔네.$B$B우리의 오크 동맹군을... 돕고... 싶다네. 그들은 이곳에 우리가 야영하고 있는 것을 보지 못했지만 어쨌든 그들을 돕고 싶네.$B$B이곳에 있는 파우스틴을 도와 스토나드의 우리 친구들을 위해... 그... 진실의 물약을 만들도록 하게.",
     ["O"] = "부랑자 소굴에 있는 연금술사 파우스틴과 대화해야 합니다.",
   },
-  [1373] = {
-    ["T"] = "온게쿠",
-  },
   [1374] = {
     ["D"] = "땅이 내게 말을 하고 있어. 마그람이 약해져 가고 있다는군. 지금이 바로 그들의 우두머리를 처치할 때야!$B$B마그람의 우두머리 칸 젠의 머리띠를 가져와!",
     ["O"] = "칸 젠을 처치하고 그 증거로 그의 머리띠를 잊혀진 땅의 겔키스 마을에 있는 현자 우텍에게 가져가야 합니다.",
-  },
-  [1375] = {
-    ["T"] = "칸 샤카",
-  },
-  [1380] = {
-    ["T"] = "칸 흐라사",
-  },
-  [1381] = {
-    ["T"] = "칸 흐라사",
+    ["T"] = "Khan Jehn",
   },
   [1382] = {
     ["D"] = "켄타우로스 부족들이 자기들끼리 서로 싸운다는 것이 우리에겐 행운이 아닐 수 없군. 저들이 하나의 군대로 뭉치면 아무도 막을 수 없을 테니 말이오. 그렇소, 정말 운이 좋은 거지. 그러니 반드시 이 사실을 잘 이용해야 하오.$B$B켄타우로스 부족의 하나인 겔키스 일족이 마그람 일족과 격렬한 전쟁을 치르고 있소. 우리가 마그람을 공격한다면 겔키스와 동맹을 맺을 수 있게 될 거요.$B$B잊혀진 땅 남서쪽의 겔키스 야영지 외곽에 있는 현자 우텍을 만나 보시오. 아마 그녀를 통해 겔키스와 동맹을 맺을 수 있을 거요.",
@@ -4406,9 +4409,6 @@ pfDB["quests"]["koKR-tbc"] = {
   [1667] = {
     ["T"] = "썩은니 잭",
   },
-  [1678] = {
-    ["T"] = "베즈렉",
-  },
   [1679] = {
     ["T"] = "무렌 스톰파이크",
   },
@@ -4420,12 +4420,6 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [1683] = {
     ["T"] = "볼루스 바일후프",
-  },
-  [1684] = {
-    ["T"] = "엘라나리아",
-  },
-  [1688] = {
-    ["T"] = "슈레나 캘리돈",
   },
   [1689] = {
     ["T"] = "균열 봉합",
@@ -4443,12 +4437,6 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [1698] = {
     ["T"] = "요루스 발리브루",
-  },
-  [1700] = {
-    ["T"] = "그리만트 엘모어",
-  },
-  [1703] = {
-    ["T"] = "메시엘",
   },
   [1704] = {
     ["T"] = "클락몰트 스패너스판",
@@ -4581,9 +4569,6 @@ pfDB["quests"]["koKR-tbc"] = {
   [1858] = {
     ["T"] = "으스러진 손",
   },
-  [1859] = {
-    ["T"] = "테르조크",
-  },
   [1860] = {
     ["D"] = "우리 마법사들이 꼭 해야 할 임무가 있소. 스톰윈드와 엘윈 숲의 안전을 위해 아주 중요한 임무지.$B$B자세한 내용은 제니아 캐논이 알고 있소. 스톰윈드의 마법사 지구에 있는 마법사의 성소에서 공부를 하고 있으니 서둘러 찾아가 보시오.",
     ["O"] = "스톰윈드에 있는 제니아 캐논과 대화해야 합니다.",
@@ -4615,9 +4600,6 @@ pfDB["quests"]["koKR-tbc"] = {
   [1884] = {
     ["D"] = "메아리 섬에 사는 흑마법사 잘라제인이 듀로타의 정상적인 마법 흐름을 흐트러뜨려 놓았네. 그는 주주 해골이라는 오염된 우상으로 이런 일을 벌이고 있는데 메아리 섬의 오두막에 그 우상을 두었다네.$B$B그 우상은 야생의 동물과 식물을 타락시키고 어둡고 외진 곳에 사는 흑마법사와 지옥의 생물에게 힘을 부여하고 있지.$B$B그 주주 해골을 파괴해야 하네. 마법의 흐름이 영원히 바뀌어버리기 전에...",
     ["O"] = "주주 해골 4개를 파괴하고 센진 마을에 있는 운투와에게 가야 합니다.",
-  },
-  [1885] = {
-    ["T"] = "메넷 칼카드",
   },
   [1886] = {
     ["T"] = "죽음추적자",
@@ -4704,9 +4686,6 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [1978] = {
     ["T"] = "죽음추적자",
-  },
-  [1998] = {
-    ["T"] = "펜윅 타트로스",
   },
   [1999] = {
     ["T"] = "거래의 도구",
@@ -4821,9 +4800,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "그 보석들이 울다만 어딘가에 있는 건 멍청이 말톤도 알고 있을 만큼 확실한 사실이오. 다시 돌아가서 찾아보도록 하시오.$B$B전에도 말했지만 우리가 입수한 정보가 정확하다면 이 목걸이에는 루비, 사파이어, 토파즈가 붙어있었소. 보석들을 찾아서 목걸이에 다시 붙이도록 하시오.$B$B보석들이 어디 있는 지야 누가 알겠소? 운이 좋으면 그 성기사의 유해에서 찾을 수 있을지도 모르지. 벌써 모두 털려버리지 않았다면 시체에 보석들이 남아 있지 않겠소?",
     ["O"] = "울다만 깊은 곳에서 보석의 행방에 대한 단서를 찾아야 합니다.",
   },
-  [2300] = {
-    ["T"] = "SI: 7",
-  },
   [2339] = {
     ["D"] = "일지 여기 있네. 번역도 다 됐지.$B$B내용을 보니 루비는 드워프가, 토파즈는 트로그가, 그리고 사파이어는 그림로크라는 트로그가 가지고 있다는군.$B$B목걸이의 효력을 되찾으려면 마력원천이 필요한데, 드란 드로퍼스는 이 사실을 모르고 있지. 마력원천을 찾으려면 이렇게 하게. 울다만 깊숙이 들어가 강력해 보인다 싶은 피조물들은 모조리 물리치게. 그러다 보면 분명히 마력원천을 얻을 수 있을 걸세.$B$B모든 걸 다 찾거든 내게 가지고 오고.",
     ["O"] = "울다만에서 목걸이에 필요한 보석 3개와 마력원천을 회수한 후 카르가스에 있는 자칼 모스멜드에게 가져가야 합니다. 자칼의 말에 의하면 울다만에서 가장 강한 피조물을 처치하면 마력원천을 얻을 수 있다고 합니다.$B$B일지의 내용을 보니 루비는 어둠괴철로 방어진에 숨겨져 있습니다.$B$B토파즈는 얼라이언스 드워프 근처에 있는 트로그 구역 중 하나에 있는 항아리에 숨겨져 있습니다.$B$B사파이어는 트로그의 우두머리인 그림로크가 가지고 있습니다.$B$B마력원천은 울다만에서 가장 강한 피조물을 처치하면 얻을 수 있습니다.",
@@ -4841,9 +4817,6 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [2361] = {
     ["T"] = "목걸이 복원",
-  },
-  [2379] = {
-    ["T"] = "잔도잔",
   },
   [2383] = {
     ["D"] = "자네가 없는 동안 양피지가 하나 도착했네, $N.$B$B시간이 있다면 읽어보게. 내가 착각한 것이 아니라면 이건 상급 전사, 프랑이 보낸 걸세. 준비되는 대로 그에게 가보게. 이야기를 나누고 싶어할 테니... 동굴 밖에 있는 그늘에서 자네를 기다리고 있을 거야.",
@@ -5038,6 +5011,7 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [2770] = {
     ["D"] = "타나리스에는 줄파락이라고 하는 트롤들의 모래 도시가 있죠. 깊숙이 들어가면 신성한 웅덩이가 하나 있어요. 트롤 녀석들은 이 웅덩이에서 커다란 괴물을 소환한답니다! 가즈릴라! 이 광포한 녀석은 비늘조차도 힘이 넘쳐 흘러요. 바로 그 힘을 제 차에 이용하고 싶어요!$B$B가즈릴라의 전기 비늘을 가져와 주세요!$B$B가즈릴라를 소환하는 법은 트롤이 철저히 비밀로 지키고 있으니 녀석과 맞서려면 먼저 트롤에게서 비밀을 캐내야 할 거예요.",
+    ["T"] = "Gahz\'rilla",
   },
   [2781] = {
     ["D"] = "범죄자 칼리프 스콜피드스팅을 현상 수배한다.$B$B타나리스의 가젯잔 수자원개발회사는 사막유랑단 무법자들의 두목인 칼리프 스콜피드스팅을 처치하는 자에게 두둑한 현상금을 지급할 것이다. 범죄자 칼리프 스콜피드스팅을 아래 죄목으로 현상 수배하는 바이다.$B$B1. 가젯잔 수자원개발회사 직원 살해!$B2. 가젯잔 수자원개발회사 자원 탈취!$B3. 가젯잔 수자원개발회사 자산 불법 점유!$B$B칼리프 스콜피드스팅의 머리카락을 선임기술자 빌지위즐에게 가져오는 자에게는 엄청난 현상금을 지급할 것이다.",
@@ -5105,6 +5079,7 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [2864] = {
     ["D"] = "내 사촌, 트란렉이 곤경에 빠졌어요. 왕쇠똥구리 껍질을 한 짐 보내겠다고 약속한 지가 벌써 몇 주나 됐는데 아직 도착하지 않았거든요. 사촌이라 가젯잔으로 누구를 보내서 독촉을 하기가 좀 그런데...$B$B나 대신 트란렉과 얘기해 볼래요? 내가 허튼짓을 하기 전에 빨리 보내라고 했다고 말에요.$B$B가젯잔은 칼림도어의 타나리스 북부에 있어요.",
+    ["T"] = "Tran\'rek",
   },
   [2866] = {
     ["D"] = "To our south are the Ruins of Solarsal; this is an area that far pre-dates modern times.  We explored the ruins initially and found nothing of note; as such, we left it in peace.$B$BVery recently, the Hatecrest naga have occupied these ruins in alarming numbers.  At first, we considered it as the precursor for an attack.  Though that threat is still possible, we believe there might be something else going on.$B$BGo there, explore the ruins, and look for anything that stands out to you. Good luck, $n.",
@@ -5885,9 +5860,6 @@ pfDB["quests"]["koKR-tbc"] = {
   [3643] = {
     ["O"] = "무법항에 있는 오글소프 오브노티쿠스에게 미스릴관 6개, 정밀한 조준경 1개, 고급 표적 허수아비 2개를 가져가야 합니다.",
   },
-  [3646] = {
-    ["D"] = "자네가 한 일에 대한 대가를 원하는 것 같은데, 그런가? 내 생애를 떠올려 보라고? 흥. 내가 가진 거나 가져가고 날 혼자 내버려 두게나.",
-  },
   [3661] = {
     ["D"] = "올빼미야수는 정말 예측할 수 없는 생물이오. 한없이 순하다가도 자신들이 중요하게 여기는 것이 위협을 받으면 극도로 포악해지거든.$B$B들리는 소문에 의하면 올빼미야수는 엘룬이 창조했다고 하오. 난 그게 사실인지 정말 궁금하다오.$B$B동부 내륙지에 올빼미야수 무리가 서식한다는 소리를 최근에 들었는데 그들에 대해서 좀 더 알고 싶소. 가서 올빼미야수 깃털 15개를 모아 내게 가져다주지 않겠소?",
     ["O"] = "에렐라스 앰버스카이에게 동부 내륙지에 있는 올빼미야수 깃털 15개를 가져가야 합니다.",
@@ -5976,7 +5948,6 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [3822] = {
     ["D"] = "전체 소대원이 체포되었습니다. $N. 모두는 죽임을 당했다. $B$B그들의 지도자 인 Krom\'Grul은 일종의 의식을 위해 나를 구하고 싶어했다. $B$BI는이 제단에 묶여 짐승에 의해 야만적이었다. 이 고문 1 시간 후에 신체 활동이 중단되었습니다. 그 짐승은 내 결혼식 코 고리를 내 얼굴에서 찢어 내 손가락에 붙였습니다. 나는 그런 야만인을 결코 보지 못했다! $B$BCrrom\'Grul을 찾아 그를 죽인다! Thal\'trak. $B$BAnd $N에 다시 우리의 반지를 가져 가서 우리가 다시 만날 것이라고 ... 다른 삶에서.",
-    ["T"] = "크롬그룰",
   },
   [3823] = {
     ["D"] = "적이 우리를 공격하기 전에 적을 쳐야 해요!$B$B간단히 설명하도록 할게요.$B$B불타는 평원의 불자루 오우거들이 검은바위 오크들과 동맹을 맺었어요. 그 사악한 오크들과 손을 잡은 이 오우거들은 광석이 풍부한 우레망치 바위굴을 지키고 보급로를 항상 열어 두고 있지요.$B$B가서 본때를 보여줘야 해요. 녀석들의 세력을 꺾어 버리고 일이 끝나면 제게 다시 돌아오세요.$B$B<공기를 움켜쥐고 목이 멘듯한 몸짓을 보이는 오랄리우스>$B$B없애주마, 윙키!",
@@ -6014,9 +5985,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "You there!  If you\'re looking for something to make yourself useful, then listen up!$B$BWe need fresh out-of-the-ground recruits to head into Deathknell and search for any sort of useful equipment.  Most likely, they\'ll be in stacks of boxes.  We expect more recruits to be rising soon, and unless we want them to stumble about naked we had better get to scavenging!$B$BWell get to work, you miserable bag of bones!  I\'m not going to reward those without some hustle.",
     ["O"] = "Search Deathknell and the vicinity for 6 pieces of Scavenged Goods, and return them to Deathguard Saltain.",
     ["T"] = "Scavenging Deathknell",
-  },
-  [3903] = {
-    ["T"] = "밀리 오스워스",
   },
   [3904] = {
     ["D"] = "A gang of brigands, the Defias, moved into the Northshire Vineyards while I was harvesting!  I reported it to the Northshire guards and they assured me they\'d take care of things, but... I\'m afraid for my crop of grapes!  If the Defias don\'t steal them then I fear our guards will trample them when they chase away the thugs.$B$BPlease, you must help me!  I gathered most of my grapes into buckets, but I left them in the vineyards to the southeast.$B$BBring me those buckets!  Save my harvest!",
@@ -6102,6 +6070,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [4005] = {
     ["D"] = "Take this bag of supplies with you to Tanaris. Travel to Lost Rigger Cove, and look for a circle of stones.$B$BThe eastmost peninsula is the secret...$B$BFrom this circle only, read from the book of Aquor; summon the only creature that can transform the items you collected into a totem to fight Blazerunner.$B$BAquementas will not be pleased to be awakened, but remember, you must remain in the circle for him to transform the items.",
     ["O"] = "Take the Book of Aquor, the Silvery Claws, and the Irontree Heart to Tanaris.$B$BUse the Book of Aquor to summon Aquementas.$B$BAfter you have the completed totem, take it to J.D. Collie in Marshal\'s Refuge.",
+    ["T"] = "Aquementas",
   },
   [4021] = {
     ["D"] = "콜카르 일족에 맞서서 거두어낸 자네의 공적에 대해 호드에서 크게 치하하는 바일세. 하지만 살아남은 콜카르 일족이 완전히 미쳐 버렸다네. 콜카르 파견대가 복수를 위해 그들의 고향인 잊혀진 땅을 떠나 불모의 땅으로 왔다는 보고가 들어왔네. 최근에 받은 보고에 의하면 녀석들이 지금 서쪽에서 이곳 감시탑 쪽을 향해 몰려오는 중이라더군!$B$B콜카르 침입자들에 맞서 불모의 땅을 지켜내야만 하네. 놈들을 계속 처치하다 보면 그들의 우두머리인 장군 크롬자르가 나타날 걸세. 그를 해치우고 증거로 내게 크롬자르의 깃발 조각을 가져오게.$B$B우린 자네를 믿네, $N.",
@@ -6148,9 +6117,6 @@ pfDB["quests"]["koKR-tbc"] = {
   [4120] = {
     ["D"] = "난 사냥꾼으로서 내 적들에게서 힘으로 우열을 다투는데 지지 않으려고 애쓴다네. 단지 적을 잘 아는 것만으로 전투의 승기를 잡을 수도 있지.$B$B잿빛 골짜기의 북쪽에 악령숲이라고 하는 곳이 있는데, 그곳의 생물들은 악이라 불리는 물질에 의해 오염되었다네. 그곳에 사는 곰과 늑대들이 그것 때문에 미쳐 버렸는데 내 생각에는 힘도 더욱 세진 것 같네.$B$B자, 가게나. 악령숲으로 가서 이 야수들과 직접 맞서 보게. 녀석들이 정말 내가 생각하는 것만큼 강한지 자네 힘으로 직접 알아보게.",
     ["O"] = "페랄라스의 모자케 야영지에 있는 탈로 쏜후프가 악령숲에 있는 성난발톱불곰 12마리와 갈퀴발톱 악령발늑대 12마리를 처치해 달라고 했습니다.",
-  },
-  [4122] = {
-    ["T"] = "그랄크 로크럽",
   },
   [4123] = {
     ["D"] = "나는 수년 동안 어떤 특별한 보석을 찾아다녔지. 산의 정수라는 보석인데, 크기가 당신 주먹만하다고! 검은무쇠 드워프 녀석들이 자기들 금고에 그 보석을 넣고 금고를 잠가 버렸지. 내가 아무리 사정을 해도 내게 팔려고 하지를 않을 것이라서 힘으로라도 빼앗을 작정이오.$B$B검은바위 나락의 지하층까지 싸워 내려가서 비밀 금고를 열고 산의 정수를 손에 넣으시오. 그러려면 보초 둠그립을 처치해야 하는데 녀석은 검은 금고의 유물 상자를 모조리 열어 보기 전에는 나타나지 않을 것이오!$B$B행운을 빌겠소이다.",
@@ -6814,6 +6780,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [5056] = {
     ["D"] = "여명의 설원 북부, 눈호랑이 바위란 곳에 거대한 호랑이들이 모인다네. 호랑이들의 우두머리는 바로 샤이로탐이라는 녀석인데, 이놈을 해치우면 자네 동료 $R들 사이에서 꽤 자랑거리가 될 걸세.$B$B거친 설원으로 가서 눈호랑이들을 처치하고 신성한 눈호랑이 고기를 하나 구하게. 샤이로탐의 돌을 찾아 그곳에 고기를 놓게. 그러면 동족의 피 냄새를 맡고 분노한 샤이로탐이 나타날 걸세.$B$B각오 단단히 하고 성난 호랑이를 물리치게나.",
     ["O"] = "여명의 설원의 눈망루 마을에 있는 스톰 섀도후프가 샤이로탐을 처치해 달라고 했습니다.",
+    ["T"] = "Shy-Rotam",
   },
   [5060] = {
     ["T"] = "잠긴 화장실",
@@ -7339,9 +7306,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "은빛 여명회에서는 최근에 스컬지가 역병 걸린 용군단을 만들고 있다는 사실을 알아냈어요! 우린 반드시 그들을 저지해야 해요! 스컬지 녀석들이 용군단을 만들어내면 아제로스를 마음대로 휩쓸고 다니게 될 거예요!$B$B녀석들의 강령술사들이 다로우미어 호수 한가운데에 있는 스칼로맨스에서 역병 걸린 용들을 기르고 있어요.$B$B스칼로맨스로 가서 새끼용들이 더 성장하기 전에 되도록 많은 새끼용을 처치해 주세요!",
     ["O"] = "역병 걸린 작은 새끼용 20마리를 처치한 후 희망의 빛 예배당에 있는 베티나 비글징크에게 가야 합니다.",
   },
-  [5531] = {
-    ["T"] = "베티나 비글징크",
-  },
   [5533] = {
     ["T"] = "스칼로맨스",
   },
@@ -7550,7 +7514,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [5762] = {
     ["D"] = "I have a package for a new customer of mine, a dwarf named Hemet Nesingwary Jr..  The package took weeks to arrive, and Hemet\'s long gone by now.  He said he was going to Stranglethorn to take his father\'s place and hunt the beasts there, but he left me some money to send his delivery when I could.  $B$BJunior\'s a rich dwarf and it\'s a good idea to keep up relations with the rich ones, yeah?  So... you want to deliver the package for me?$B$BI heard he has a camp in Stranglethorn, north of Grom\'gol.",
     ["O"] = "Take Kravel\'s Crate to Hemet Nesingwary Jr. in Stranglethorn.",
-    ["T"] = "헤멧 네싱워리 2세",
+    ["T"] = "Hemet Nesingwary Jr.",
   },
   [5763] = {
     ["D"] = "Long ago, a dwarf came to this land.  His name was Hemet and he wished to hunt great beasts.  His skills with the rifle were uncanny, and we spent many days hunting together.  Even the enmity between our peoples was forgotten.$B$BWhen he left for Stranglethorn, I vowed to one day welcome him back.  Now he has gone on to hunt in lands unknown, but his son has taken his place.$B$BTake this kodo horn as a gift to Hemet Jr..  You will find him in Stranglethorn, north of the Grom\'gol Base camp.",
@@ -7945,6 +7909,7 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [6322] = {
     ["O"] = "고든의 상자를 마이클 가레트에게 가져가야 합니다.",
+    ["T"] = "Michael Garrett",
   },
   [6344] = {
     ["T"] = "네사 섀도송",
@@ -7973,6 +7938,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [6388] = {
     ["D"] = "Here are the honorary picks for Brock\'s students.  If you\'ve already been to Thelsamar, then you should fly a gryphon back there!$B$BTake the picks to our gryphon master, Gryth Thurden, and speak with him about a ride back to Thelsamar.",
     ["O"] = "Bring the Honorary Picks to Gryth Thurden in Ironforge.",
+    ["T"] = "Gryth Thurden",
   },
   [6389] = {
     ["D"] = "You look around the lumber mill for something suitable to open the barrel with. You find a crowbar that looks like it will do the trick.$B$BYou set your feet and pray that you\'ll be able to get out of the mill before the termites get to you.",
@@ -8219,9 +8185,6 @@ pfDB["quests"]["koKR-tbc"] = {
   [6761] = {
     ["D"] = "I have relegated my second, Mathrengyl Bearwalker, to deal with Moonglade\'s call for aid.  Speak to him on this matter - NOT me.$B$BLet me give you some... friendly... advice.  It is I who led us out of the darkness - NOT the Cenarion Circle in Moonglade - when all was lost for our race.  Teldrassil gives us all new life!  They would have you believe otherwise, and to believe their propaganda would be a fool\'s task.$B$BI\'ll leave it to you to decide whether or not you\'re a fool.",
     ["O"] = "Speak with Mathrengyl Bearwalker at the Cenarion Enclave of Darnassus.",
-  },
-  [6762] = {
-    ["T"] = "라빈 사투르나",
   },
   [6804] = {
     ["D"] = "정령 정찰부대 하나를 로데론 동부 역병지대로 보냈는데, 그 지역의 역병에 감염되고 말았다. 물의 군주들은 우리의 순결함에 이런 모욕을 가해지는 것을 묵인할 수 없노라!$B$B이 유리병을 받으라. 그 안에는 넵튤론의 상이 많이 들어 있다. 역병에 걸린 정령들에게 사용하면 그 몸속에 든 독과 싸워 말끔히 치유해 줄 것이다! 하지만 몸속에서 일어나는 충돌로 인해 정령들이 갑자기 광폭해질 것이다.$B$B그 불협의 광기를 물리치고 결속의 팔보호구를 가져와다오.",
@@ -9590,9 +9553,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Collect 200 Silithid Carapace Fragments and return to Baristolth.",
     ["T"] = "The Hand of the Righteous",
   },
-  [8303] = {
-    ["T"] = "아나크로노스",
-  },
   [8304] = {
     ["D"] = "내 아내 여군주 나탈리아가 실종됐소.$B$B사실 몇 주간 이상한 행동을 하더니 사라졌소이다. 주위에 아무도 없는데 그녀 혼자서 중얼거리는 걸 목격한 적도 여러 번 있었소. 그녀는 모든 게 정상이고 연구를 계속해야 한다고 고집했었소.$B$B그녀를 마지막으로 본 건 남쪽에 있는 브론즈비어드 야영지로 가는 모습이었소.$B$B내 병사들은 워낙 넓은 지역을 방어하느라 여력이 없소. 그대가 브론즈비어드 야영지로 가서 그 드워프들에게 그녀의 행방에 대해 알아봐 주시오.",
     ["O"] = "Commander Mar\'alith at Cenarion Hold in Silithus wants you to question the inhabitants of Bronzebeard\'s Encampment. You will find Bronzebeard\'s Encampment south of Cenarion Hold.$B$BOnce you have gathered the requested information, return to Commander Mar\'alith.",
@@ -10220,6 +10180,9 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "이 전쟁의 득실을 따져 보겠다면 그렇게 하시오, $C|1이여;여;. 하지만 전쟁은 이미 시작되었소. 주위의 가족과 친구들을 둘러보시오. 그리고 피할 수 없는 전쟁이라면 그들이 전쟁에서 살아남을 수 있도록 그대가 도울 수 있는 최선의 길이 무엇인지 잘 생각해 보시기 바라오.$B$B난 그러기 위해 이곳에서 수단과 방법을 가리지 않고 룬무늬 붕대를 모으고 있소이다. 어떻소, 그대도 룬무늬 붕대를 기부해 주시겠소?",
     ["O"] = "아이언포지의 군사 지구에 있는 수호자 문셰이드에게 룬무늬 붕대 20개를 가져가야 합니다.",
     ["T"] = "얼라이언스에 룬무늬 붕대 조달!",
+  },
+  [8524] = {
+    ["D"] = "안녕하세요? 제가 만약 \'병사들이라고 해서 먹지 않고 살 수 있을까요?\'라고 묻는다면 물론 아니라고 대답하시겠죠? 네, 저도 110%동의합니다! 그럼 우리는 의견이 같다고 할 수 있겠군요. 제가 부탁 드리고 싶은 것은 밖으로 나가 싱싱한 무지개날개다랑어를 낚은 다음 맛있게 요리를 해서 여기로 가져다 달라는 것입니다. 흠, 벌써 군침이 도는군요.",
   },
   [8526] = {
     ["D"] = "잘 지내시나요, $C님? 곧 벌어질 안퀴라즈 전쟁에 필요한 식량을 모으는 일에 관심이 있으실 걸로 아는데요... 제 아버지께서는 이곳을 돕는 일에 자원 봉사하는 것이 제게 아주 좋은 경험이 될 거라고 생각하셨답니다. 크게 실수하신 거죠. 저는 육식을 좋아하지 않거든요.$B$B어쨌든 괜찮으시다면 랩터 숯불구이를 많이 가져다주시면 좋겠어요. 틀림없이 모든 병사들이 좋아할 테니까요.",
@@ -14988,7 +14951,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["T"] = "다시 사라진 코르키!",
   },
   [9925] = {
-    ["D"] = "게제는 우리 본부를 오슈군에 최대한 가깝게 두기로 결정했다. 우리 보안 문제는 전혀 고려하지 않고. 왜 그런지 아나? 남쪽 산맥 대신 이곳에 상점을 세워 생산성을 10% 높일 계획을 세웠기 때문이지.$B$B바로 3미터 근방에서 돌아다니는 미친 공허의 피조물은 신경도 안 쓴 거지. 그건 보안 담당자의 문제이지 게제의 문제는 아니니까.$B$B날 위해 공허의 피조물을 해치워 주면 우리 보안 예산의 10%를 지급하겠다. 너무 좋아하지는 마라. 예산이라고 해봐야 얼마 되지도 않으니까.",
+    ["D"] = "게제는 우리 본부를 오슈군에 최대한 가깝게 두기로 결정했다. 우리 보안 문제는 전혀 고려하지 않고. 왜 그런지 아나? 남쪽 산맥 대신 이곳에 상점을 세워 생산성을 10%높일 계획을 세웠기 때문이지.$B$B바로 3미터 근방에서 돌아다니는 미친 공허의 피조물은 신경도 안 쓴 거지. 그건 보안 담당자의 문제이지 게제의 문제는 아니니까.$B$B날 위해 공허의 피조물을 해치워 주면 우리 보안 예산의 10%를 지급하겠다. 너무 좋아하지는 마라. 예산이라고 해봐야 얼마 되지도 않으니까.",
     ["O"] = "Zerid at Aeris Landing in Nagrand wants you to kill 12 Voidspawn near Oshu\'gun.",
     ["T"] = "보안 문제",
   },
@@ -22752,6 +22715,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "\"맥주 사랑 동호회\" 가입 신청서를 아이언포지의 부싯돌 선술집에 있는 라르킨 썬더브루에게 가져가야 합니다.",
     ["T"] = "맥주 사랑 동호회",
   },
+  [12286] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
   [12306] = {
     ["D"] = "There is strength in numbers, $n.  Being part of the \"Brew of the Month\" club means knowing you and your brethren will always have access to the best brew.$b$bBring your \"Brew of the Month\" club membership form to Ray\'ma in the Darkbriar Lodge in Orgrimmar\'s Valley of Spirits.",
     ["O"] = "Bring the \"Brew of the Month\" club membership form to Ray\'ma in the Darkbriar Lodge in Orgrimmar\'s Valley of Spirits.",
@@ -22761,6 +22729,401 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "$n, our spies have discovered a fiendish plot!  The Dark Iron dwarves want our beloved Brewfest destroyed!$B$BCoren Direbrew, head of a renegade family of brewers, has marshaled the dwarves of Blackrock Depths.  Their vile mole machines attack us constantly.$B$BOur spy is in the Grim Guzzler, a tavern in the bowels of Blackrock Depths.  He\'ll know more of Direbrew\'s plot.$B$BFind our spy.  Save Brewfest!",
     ["O"] = "Speak with the Brewfest Spy in the Grim Guzzler of Blackrock Depths.",
     ["T"] = "가을 축제를 구해라!",
+  },
+  [12331] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12332] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12333] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12334] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12335] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12336] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12337] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12338] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12339] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12340] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12341] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12342] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12343] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12344] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12345] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12346] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12347] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12348] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12349] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12350] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12351] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12352] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12353] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12354] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12355] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12356] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12357] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12358] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12359] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12360] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12361] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12362] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12363] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12364] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12365] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12366] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12367] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12368] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12369] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12370] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12371] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12373] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12374] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12375] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12376] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12377] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12378] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12379] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12380] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12381] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12382] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12383] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12384] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12385] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12386] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12387] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12388] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12389] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12390] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12391] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12392] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12393] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12394] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12395] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12396] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12397] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12398] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12399] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12400] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12401] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12402] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12403] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12404] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12405] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12406] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12407] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12408] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12409] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12410] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
   },
   [12491] = {
     ["D"] = "코렌 다이어브루의 시체는 이 작은 술통을 꼭 껴안고 있습니다. 악명이 자자한 그 \'독한 맥주\'임이 분명합니다!",

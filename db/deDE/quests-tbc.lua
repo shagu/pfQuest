@@ -2976,6 +2976,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [909] = {
     ["D"] = "Der besiegte Wasserelementar hat eine seltsame Wasserkugel zurückgelassen. Ihr vermutet, dass das Objekt die Kreatur irgendwie mit Energie versorgt hat. In der Kugel schwappt faulig aussehendes Wasser herum. Die Kugel selbst zeigt sich unbeeindruckt von jeder äußerlichen Krafteinwirkung.$B$BWenn irgendwer aus diesem Gegenstand schlau werden kann, ist das wohl Je\'neu Sancrea vom Irdenen Ring. Er befindet sich beim Außenposten von Zoram\'gar der Horde im Eschental.",
     ["O"] = "Bringt die seltsame Wasserkugel zu Je\'neu Sancrea beim Außenposten von Zoram\'gar im Eschental.",
+    ["T"] = "OLD Baron Aquanis",
   },
   [913] = {
     ["D"] = "Der Donnerfalke, $N, ist ein ungestümes Wildtier. Es ist an der Zeit für Euch, ihm gegenüberzutreten. Ihr müsst herausfinden, wo er umherstreift, und mir seine Flügel als Beweis für Eure erfolgreiche Jagd bringen.$B$BWenn Ihr das tut, wird Eure Zeit mit mir sich ihrem Ende nähern.",
@@ -6648,9 +6649,6 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Bringt 6 Mithrilrohre, 1 genaues Zielfernrohr und 2 hochentwickelte Zielattrappen zu Glotz Widrikus in Beutebucht.",
     ["O"] = "Bringt 6 Mithrilrohre, 1 genaues Zielfernrohr und 2 hochentwickelte Zielattrappen zu Glotz Widrikus in Beutebucht.",
   },
-  [3646] = {
-    ["D"] = "wird beim Anblick eines sterbenden Jungtiers wütend!",
-  },
   [3661] = {
     ["D"] = "Wildekin sind unberechenbare Kreaturen, $N. Sie sind zu einer außerordentlichen Zärtlichkeit fähig, aber diese Kreaturen können auch eine enorme Wildheit an den Tag legen, wenn etwas für sie sehr Wichtiges bedroht wird.$B$BDiese Kreaturen wurden angeblich von Elune geschaffen und ich bin daran interessiert herauszufinden, ob dies wirklich der Wahrheit entspricht.$B$BVor Kurzem habe ich etwas von einer Population von Wildekin gehört, die im Hinterland leben - heimtückische, primitive und wilde Eulenbestien. Man findet sie unter den wild lebenden Tieren dort. Würdet Ihr einige Wildekinfedern für mich sammeln?",
     ["O"] = "Sammelt 15 Wildekinfedern aus dem Hinterland für Erelas Himmelsbern in Rut\'theran.",
@@ -6810,7 +6808,6 @@ pfDB["quests"]["deDE-tbc"] = {
   [3903] = {
     ["D"] = "Ihr habt Euch als verlässlich erwiesen, $N. Verlässlich und ohne Angst, Euch auch mal die Hände schmutzig zu machen, wie?$B$BTja, eine Freundin von mir, Milly Geltmark, hat ein paar Probleme. Sie ist mit ihrem Wagen auf der anderen Seite der Abtei, in der Nähe des Stalls. Ich bin mir sicher, sie könnte Eure Hilfe gut gebrauchen.",
     ["O"] = "Sprecht mit Milly Geltmark.",
-    ["T"] = "Milly Geltmark",
   },
   [3904] = {
     ["D"] = "Eine Bande von Briganten, die Defias, sind in das Weingut von Nordhain eingedrungen, als ich gerade bei der Weinlese war! Ich habe es den Wachen von Nordhain gemeldet und sie haben mir auch versprochen, dass sie sich darum kümmern würden, aber... Ich habe Angst um meine Traubenernte! Selbst wenn die Defias sie nicht stehlen, befürchte ich, dass unsere Wachen beim Vertreiben der Rohlinge alles zertrampeln.$B$BBitte, Ihr müsst mir helfen! Die meisten Trauben sind schon in Eimern gesammelt, aber ich habe sie bei den Weinstöcken im Südosten zurückgelassen.$B$BBringt mir diese Kübel! Rettet meine Ernte!",
@@ -8294,7 +8291,6 @@ pfDB["quests"]["deDE-tbc"] = {
   [5531] = {
     ["D"] = "Die Eier, die Ihr gebracht habt, sollten in Experimenten der Geißel verwendet werden, um einen verseuchten Drachenschwarm zu erschaffen. Diese gefrorenen schwarzen Dracheneier wären für ihre Studien unersetzlich gewesen und hätten ihren Zeitplan sicherlich beschleunigt.$B$BNun ist es an der Zeit, dass wir ihre Forschung beenden.$B$BBringt die gefrorenen Eier zu Betina Moppelzink da draußen. Sie ist in Wissenschaft und Alchemie sehr bewandert und hat eine Waffe hergestellt, die wir gegen die Geißel einsetzen können. Mit Eurer Hilfe werden wir ihnen einen schweren Schlag versetzen.",
     ["O"] = "Bringt die gefrorenen Eier zu Betina Moppelzink.",
-    ["T"] = "Betina Moppelzink",
   },
   [5533] = {
     ["D"] = "Auf der Insel Darrowehr liegt die Scholomance - ein elendes Zentrum der Totenbeschwörung und des Bösen der Geißel. Unser Feind lebt im Inneren und führt unaussprechliche Taten der Verderbtheit an nichts ahnenden Opfern aus... zumindest vermuten wir das. Eine Tür versperrt den Weg, und ganz gleich was wir versuchen, der Zutritt ist nur mit dem richtigen Schlüssel möglich.$B$BAlchemist Arbington weiß viel über die Scholomance und hat eine Idee, wie ein Schlüssel zu erlangen ist. Ihr habt mir Euren Wert bewiesen und nun vertraue ich Euch diese Aufgabe an. Sprecht mit ihm über diese Angelegenheit.",
@@ -10913,6 +10909,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Wir treffen also erneut aufeinander, um wichtige Angelegenheiten zu besprechen, $C. Ich möchte Euch noch einmal für Eure bisherigen Bemühungen danken; nicht jeder ist so selbstlos wie Ihr. Es gibt jedoch noch mehr zu tun.$B$BWürdet Ihr noch einmal Runenstoffverbände für mich sammeln gehen und sie dann zu mir bringen, $N?",
   },
   [8524] = {
+    ["D"] = "Hey, Ihr da! Wenn ich zu Euch sagen würde \'Sollten Soldaten nicht etwas zu essen haben, wie jeder andere auch?\', dann würdet Ihr natürlich \'Ja!\' sagen. Da stimme ich 110%mit Euch überein! Schön, dass wir uns einig sind. Es gibt nur eine Sache, um die ich Euch gerne bitten würde: zieht los, fischt eine ordentliche Menge Regenbogenflossenthunfische, kocht diese dann und bringt sie zu mir zurück. Mmm, mmm, ich kann es bereits schmecken.",
     ["O"] = "Bringt 20 Regenbogenflossenthunfische zu Gastronom Glitschko im Militärviertel in Eisenschmiede.",
   },
   [8526] = {
@@ -11318,6 +11315,9 @@ pfDB["quests"]["deDE-tbc"] = {
   },
   [8727] = {
     ["T"] = "Urahne Fernwisper",
+  },
+  [8728] = {
+    ["D"] = "Das hat ein wenig länger gedauert als erwartet. Nun lasst mich sehen, was dieses Buch zu berichten hat.$B$B<Leise vor sich hermurmelnd beginnt Narain das Buch zu lesen.>$B$BDie gute Nachricht ist, dass ich mir zu 99%sicher bin, eine Arkanitboje konstruieren zu können, die voll und ganz Euren Anforderungen entspricht. Kommen wir zur schlechten Nachricht: Ich brauche eine gehörige Menge Arkanit, Elementiumerz und Edelsteine.$B$BSobald Ihr mir diese Materialien gebracht habt, kann ich mit der Konstruktion der Boje beginnen.",
   },
   [8730] = {
     ["O"] = "Tötet Nefarian und bringt den roten Szeptersplitter wieder in Euren Besitz. Bringt den roten Szeptersplitter zu Anachronos in den Höhlen der Zeit in Tanaris. Euch bleiben 5 Stunden, um diese Aufgabe zu erfüllen.",
@@ -22877,6 +22877,11 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Bringt Euren Mitgliedschaftsantrag für den \"Bier des Monats e.V.\" zu Larkin Donnerbräu in der Steinfeuertaverne in Eisenschmiede.",
     ["T"] = "Bier des Monats e.V.",
   },
+  [12286] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
   [12306] = {
     ["D"] = "Gemeinsam ist man stark, $N. Ein Mitglied des \"Bier des Monats e.V.\" hat immer das beste Bier zur Hand.$B$BBringt noch heute Euren Mitgliedschaftsantrag für den \"Bier des Monats e.V.\" zu Ray\'ma in Orgrimmar.",
     ["O"] = "Bringt Euren Mitgliedschaftsantrag für den \"Bier des Monats e.V.\" zu Ray\'ma in Orgrimmar.",
@@ -22886,6 +22891,401 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Sprecht mit dem Spion des Braufests im Grimmigen Säufer in den Schwarzfelstiefen.",
     ["O"] = "Sprecht mit dem Spion des Braufests im Grimmigen Säufer in den Schwarzfelstiefen.",
     ["T"] = "Rettet das Braufest!",
+  },
+  [12331] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12332] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12333] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12334] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12335] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12336] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12337] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12338] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12339] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12340] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12341] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12342] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12343] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12344] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12345] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12346] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12347] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12348] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12349] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12350] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12351] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12352] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12353] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12354] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12355] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12356] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12357] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12358] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12359] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12360] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12361] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12362] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12363] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12364] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12365] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12366] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12367] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12368] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12369] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12370] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12371] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12373] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12374] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12375] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12376] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12377] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12378] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12379] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12380] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12381] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12382] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12383] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12384] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12385] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12386] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12387] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12388] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12389] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12390] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12391] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12392] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12393] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12394] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12395] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12396] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12397] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12398] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12399] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12400] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12401] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12402] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12403] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12404] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12405] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12406] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12407] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12408] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12409] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
+  },
+  [12410] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Candy Bucket",
   },
   [12491] = {
     ["D"] = "Coren Düsterbräus Leiche hielt dieses fest an seinen Bauch gedrückte Fass umklammert. Hierbei muss es sich um sein berüchtigtes Düsterbräu handeln!",
