@@ -1379,7 +1379,7 @@ function pfDatabase:FormatQuestText(questText)
   questText = string.gsub(questText, "$[Bb]", "\n")
   -- UnitSex("player") returns 2 for male and 3 for female
   -- that's why there is an unused capture group around the $[Gg]
-  return string.gsub(questText, "($[Gg])(.+):(.+);", "%"..UnitSex("player"))
+  return string.gsub(questText, "($[Gg])([^:]+):([^;]+);", "%"..UnitSex("player"))
 end
 
 -- GetQuestIDs
