@@ -550,7 +550,11 @@ function pfMap:NodeClick()
       pfQuest_history[this.questid] = { time(), UnitLevel("player") }
     end
 
-    pfMap:DeleteNode(this.node[this.title].addon, this.title)
+    if this.node and this.title then
+      -- delete node from map
+      pfMap:DeleteNode(this.node[this.title].addon, this.title)
+    end
+
     pfQuest.updateQuestGivers = true
   elseif this.texture and pfQuest.route and
    (( pfQuest_config["routecluster"] == "1" and this.layer >= 9 ) or
