@@ -32,7 +32,7 @@ local function ShowTooltip()
         if objectives and objectives > 0 then
           for i=1, objectives, 1 do
             local text, _, done = GetQuestLogLeaderBoard(i, qlogid)
-            local _, _, obj, cur, req = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
+            local _, _, obj, cur, req = strfind(gsub(text, "\239\188\154", ":"), "(.*):%s*([%d]+)%s*/%s*([%d]+)")
             if done then
               GameTooltip:AddLine(" - " .. text, 0,1,0)
             elseif cur and req then
@@ -349,7 +349,7 @@ function tracker.ButtonEvent(self)
     if objectives and objectives > 0 then
       for i=1, objectives, 1 do
         local text, _, done = GetQuestLogLeaderBoard(i, qlogid)
-        local _, _, obj, objNum, objNeeded = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
+        local _, _, obj, objNum, objNeeded = strfind(gsub(text, "\239\188\154", ":"), "(.*):%s*([%d]+)%s*/%s*([%d]+)")
         if objNum and objNeeded then
           max = max + objNeeded
           cur = cur + objNum
@@ -372,7 +372,7 @@ function tracker.ButtonEvent(self)
 
       for i=1, objectives, 1 do
         local text, _, done = GetQuestLogLeaderBoard(i, qlogid)
-        local _, _, obj, objNum, objNeeded = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
+        local _, _, obj, objNum, objNeeded = strfind(gsub(text, "\239\188\154", ":"), "(.*):%s*([%d]+)%s*/%s*([%d]+)")
 
         if not self.objectives[i] then
           self.objectives[i] = self:CreateFontString(nil, "HIGH", "GameFontNormal")
