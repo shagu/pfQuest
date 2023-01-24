@@ -410,9 +410,10 @@ function pfMap:SetMapByID(id)
   end
 end
 
-customids = {
+local customids = {
   ["AlteracValley"] = 2597,
 }
+
 function pfMap:GetMapID(cid, mid)
   cid = cid or GetCurrentMapContinent()
   mid = mid or GetCurrentMapZone()
