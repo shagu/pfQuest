@@ -210,6 +210,12 @@ pfMap.tooltip:SetScript("OnShow", function()
   end
 end)
 
+-- dummy function that can be used by extensions
+-- to avoid drawing the minimap at some locations
+function pfMap:HasMinimap()
+  return true
+end
+
 function pfMap.tooltip:GetColor(min, max)
   local max = max or 1
   local min = min or max or 1
@@ -875,7 +881,7 @@ function pfMap:UpdateMinimap()
   -- refresh all nodes
   for addon, data in pairs(pfMap.nodes) do
     -- hide minimap nodes in continent view
-    if data[mapID] and minimap_sizes[mapID] and GetCurrentMapContinent() < 3 then
+    if data[mapID] and minimap_sizes[mapID] and pfMap:HasMinimap(mapID) then
       for coords, node in pairs(data[mapID]) do
         local x, y
         if coord_cache[coords] then
