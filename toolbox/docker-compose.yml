@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  extract:
+    build:
+      dockerfile: ./extract.Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ./:/toolbox
+      - ../db:/db
+    network_mode: host
+
+  package:
+    build:
+      dockerfile: ./package.Dockerfile
+    volumes:
+      - ../:/src
