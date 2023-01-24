@@ -874,7 +874,8 @@ function pfMap:UpdateMinimap()
 
   -- refresh all nodes
   for addon, data in pairs(pfMap.nodes) do
-    if data[mapID] and minimap_sizes[mapID] then
+    -- hide minimap nodes in continent view
+    if data[mapID] and minimap_sizes[mapID] and GetCurrentMapContinent() < 3 then
       for coords, node in pairs(data[mapID]) do
         local x, y
         if coord_cache[coords] then
