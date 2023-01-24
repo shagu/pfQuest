@@ -317,6 +317,9 @@ if pfQuestCompat.client > 11200 then
   bitraces[1024] = "Draenei"
 end
 
+-- make it public for extensions
+pfDB.bitraces = bitraces
+
 local bitclasses = {
   [1] = "WARRIOR",
   [2] = "PALADIN",
@@ -328,6 +331,9 @@ local bitclasses = {
   [256] = "WARLOCK",
   [1024] = "DRUID"
 }
+
+-- make it public for extensions
+pfDB.bitclasses = bitclasses
 
 function pfDatabase:BuildQuestDescription(meta)
   if not meta.title or not meta.quest or not meta.QTYPE then return end
