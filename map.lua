@@ -24,6 +24,17 @@ compatnamefake:SetScript("OnEvent", function()
   end
 end)
 
+-- checking for control key is very time expensive in 1.12
+-- this loop puts it into one place and only updates it every .2 seconds
+-- it also only updates the key if the mouse is over a relevant frame
+local controlkey = CreateFrame("Frame", "pfQuestControlKey", UIParent)
+controlkey:SetScript("OnUpdate", function()
+  if ( this.throttle or .2) > GetTime() then return else this.throttle = GetTime() + .2 end
+  if WorldMapFrame:IsShown() and MouseIsOver(WorldMapFrame) or MouseIsOver(pfMap.drawlayer) then
+    controlkey.pressed = IsControlKeyDown()
+  end
+end)
+
 local validmaps = setmetatable({},{__mode="kv"})
 local rgbcache = setmetatable({},{__mode="kv"})
 local minimap_sizes = pfDB["minimap"]
@@ -839,7 +850,7 @@ function pfMap:UpdateMinimap()
   end
 
   -- hide all minimap nodes while shift is pressed
-  if IsControlKeyDown() and MouseIsOver(pfMap.drawlayer) then
+  if controlkey.pressed and MouseIsOver(pfMap.drawlayer) then
     this.xPlayer = nil
 
     for id, pin in pairs(pfMap.mpins) do
@@ -1016,10 +1027,9 @@ pfMap:SetScript("OnUpdate", function()
   pfMap:UpdateMinimap()
 
   -- update hidecluster detection
-  if IsControlKeyDown() then
+  if controlkey.pressed then
     hidecluster = MouseIsOver(WorldMapFrame)
   else
     hidecluster = nil
   end
-
 end)
