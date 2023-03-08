@@ -176,9 +176,7 @@ pfQuest:SetScript("OnUpdate", function()
       end
 
       -- update quest nodes
-      if pfQuest_config["trackingmethod"] ~= 4 and
-        (pfQuest_config["trackingmethod"] ~= 2 or IsQuestWatched(entry[3]))
-      then
+      if pfQuest_config["trackingmethod"] ~= 4 then
         -- delete node by title
         pfMap:DeleteNode("PFQUEST", entry[1])
 
@@ -187,8 +185,10 @@ pfQuest:SetScript("OnUpdate", function()
           pfMap:DeleteNode("PFQUEST", pfDB["quests"]["loc"][entry[2]].T)
         end
 
-        -- skip quest objective detection on manual mode
-        if pfQuest_config["trackingmethod"] ~= 3 then
+        -- skip quest objective detection on manual and tacked mode
+        if pfQuest_config["trackingmethod"] ~= 3 and
+          (pfQuest_config["trackingmethod"] ~= 2 or IsQuestWatched(entry[3]))
+        then
           local meta = { ["addon"] = "PFQUEST", ["qlogid"] = entry[3] }
           pfDatabase:SearchQuestID(entry[2], meta)
         end
