@@ -934,7 +934,9 @@ function pfMap:UpdateMinimap()
 
           pfMap.mpins[i].hl:Hide()
 
-          if pfMap.mpins[i].cluster then
+          if pfQuest_config["showclustermini"] == "0" and pfMap.mpins[i].cluster then
+            pfMap.mpins[i]:Hide()
+          elseif pfQuest_config["showspawnmini"] == "0" and addon == "PFQUEST" and not pfMap.mpins[i].texture then
             pfMap.mpins[i]:Hide()
           else
             pfMap.mpins[i]:ClearAllPoints()

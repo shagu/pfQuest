@@ -83,6 +83,31 @@ pfQuest_defconfig = {
   { text = L["Show Level On Quest Log"],
     default = "0", type = "checkbox", config = "questloglevel" },
 
+  { text = L["Questing"],
+    default = nil, type = "header" },
+  { text = L["Quest Tracker Visibility"],
+    default = "0", type = "text", config = "trackeralpha" },
+  { text = L["Quest Tracker Font Size"],
+    default = "12", type = "text", config = "trackerfontsize", },
+  { text = L["Quest Objective Spawn Points (World Map)"],
+    default = "1", type = "checkbox", config = "showspawn" },
+  { text = L["Quest Objective Spawn Points (Mini Map)"],
+    default = "1", type = "checkbox", config = "showspawnmini" },
+  { text = L["Quest Objective Icons (World Map)"],
+    default = "1", type = "checkbox", config = "showcluster" },
+  { text = L["Quest Objective Icons (Mini Map)"],
+    default = "0", type = "checkbox", config = "showclustermini" },
+  { text = L["Display Available Quest Givers"],
+    default = "1", type = "checkbox", config = "allquestgivers" },
+  { text = L["Display Current Quest Givers"],
+    default = "1", type = "checkbox", config = "currentquestgivers" },
+  { text = L["Display Low Level Quest Givers"],
+    default = "0", type = "checkbox", config = "showlowlevel" },
+  { text = L["Display Level+3 Quest Givers"],
+    default = "0", type = "checkbox", config = "showhighlevel" },
+  { text = L["Display Event & Daily Quests"],
+    default = "0", type = "checkbox", config = "showfestival" },
+
   { text = L["Map & Minimap"],
     default = nil, type = "header" },
   { text = L["Enable Minimap Nodes"],
@@ -103,27 +128,6 @@ pfQuest_defconfig = {
     default = "0.3", type = "text", config = "nodefade" },
   { text = L["Highlight Nodes On Mouseover"],
     default = "1", type = "checkbox", config = "mouseover" },
-
-  { text = L["Questing"],
-    default = nil, type = "header" },
-  { text = L["Quest Tracker Visibility"],
-    default = "0", type = "text", config = "trackeralpha" },
-  { text = L["Quest Tracker Font Size"],
-    default = "12", type = "text", config = "trackerfontsize", },
-  { text = L["Show Individual Spawn Points"],
-    default = "1", type = "checkbox", config = "showspawn" },
-  { text = L["Unified Quest Location Markers"],
-    default = "1", type = "checkbox", config = "showcluster" },
-  { text = L["Display Available Quest Givers"],
-    default = "1", type = "checkbox", config = "allquestgivers" },
-  { text = L["Display Current Quest Givers"],
-    default = "1", type = "checkbox", config = "currentquestgivers" },
-  { text = L["Display Low Level Quest Givers"],
-    default = "0", type = "checkbox", config = "showlowlevel" },
-  { text = L["Display Level+3 Quest Givers"],
-    default = "0", type = "checkbox", config = "showhighlevel" },
-  { text = L["Display Event & Daily Quests"],
-    default = "0", type = "checkbox", config = "showfestival" },
 
   { text = L["Routes"],
     default = nil, type = "header" },
@@ -582,13 +586,19 @@ do -- welcome/init popup dialog
     -- write current config
     if config_stage.mode == 1 then
       pfQuest_config["showspawn"] = "0"
+      pfQuest_config["showspawnmini"] = "0"
       pfQuest_config["showcluster"] = "1"
+      pfQuest_config["showclustermini"] = "1"
     elseif config_stage.mode == 2 then
       pfQuest_config["showspawn"] = "1"
+      pfQuest_config["showspawnmini"] = "1"
       pfQuest_config["showcluster"] = "1"
+      pfQuest_config["showclustermini"] = "0"
     elseif config_stage.mode == 3 then
       pfQuest_config["showspawn"] = "1"
+      pfQuest_config["showspawnmini"] = "1"
       pfQuest_config["showcluster"] = "0"
+      pfQuest_config["showclustermini"] = "0"
     end
 
     if config_stage.arrow then
