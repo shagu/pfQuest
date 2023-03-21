@@ -750,7 +750,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
   end
 
   if frame.updateLayer then
-    frame:SetFrameLevel((obj == "minimap" and 1 or 112) + frame.layer)
+    frame:SetFrameLevel((obj == "minimap" and 4 or 112) + frame.layer)
   end
 
   if frame.updateTexture or frame.updateVertex or frame.updateColor or frame.updateLayer then
