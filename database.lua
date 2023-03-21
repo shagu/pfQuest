@@ -783,11 +783,27 @@ function pfDatabase:SearchZone(obj, meta, partial)
   return maps
 end
 
+function pfDatabase:SearchObjectSkill(id)
+  if not id or not tonumber(id) then return end
+  local skill, caption = nil, nil
+
+  if (pfDB["meta"]["herbs"][-id]) then
+    skill = pfDB["meta"]["herbs"][-id]
+    caption = pfQuest_Loc["Herbalism"]
+  elseif (pfDB["meta"]["mines"][-id]) then
+    skill = pfDB["meta"]["mines"][-id]
+    caption = pfQuest_Loc["Mining"]
+  end
+
+  return skill, caption
+end
+
 -- Scans for all objects with a specified ID
 -- Adds map nodes for each and returns its map table
 function pfDatabase:SearchObjectID(id, meta, maps, prio)
   if not objects[id] or not objects[id]["coords"] then return maps end
 
+  local skill, caption = pfDatabase:SearchObjectSkill(id)
   local maps = maps or {}
   local prio = prio or 1
 
@@ -805,7 +821,7 @@ function pfDatabase:SearchObjectID(id, meta, maps, prio)
       meta["x"]     = x
       meta["y"]     = y
 
-      meta["level"] = nil
+      meta["level"] = skill and string.format("%s [%s]", skill, caption) or nil
       meta["spawntype"] = pfQuest_Loc["Object"]
       meta["respawn"] = respawn and SecondsToTime(respawn)
 
