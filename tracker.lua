@@ -52,7 +52,7 @@ local function ShowTooltip()
   end
 end
 
-local unfolded = {}
+local expand_states = {}
 
 tracker = CreateFrame("Frame", "pfQuestMapTracker", UIParent)
 tracker:Hide()
@@ -274,11 +274,11 @@ function tracker.ButtonClick()
     -- switch color
     pfQuest_colors[this.title] = { pfMap.str2rgb(this.title .. GetTime()) }
     pfMap:UpdateNodes()
-  elseif not unfolded[this.title] then
-    unfolded[this.title] = true
+  elseif expand_states[this.title] == 0 then
+    expand_states[this.title] = 1
     tracker.ButtonEvent(this)
-  elseif unfolded[this.title] then
-    unfolded[this.title] = nil
+  elseif expand_states[this.title] == 1 then
+    expand_states[this.title] = 0
     tracker.ButtonEvent(this)
   end
 end
@@ -346,6 +346,13 @@ function tracker.ButtonEvent(self)
     local cur,max = 0,0
     local percent = 0
 
+    -- write expand state
+    if not expand_states[title] then
+      expand_states[title] = pfQuest_config["trackerexpand"] == "1" and 1 or 0
+    end
+
+    local expanded = expand_states[title] == 1 and true or nil
+
     if objectives and objectives > 0 then
       for i=1, objectives, 1 do
         local text, _, done = GetQuestLogLeaderBoard(i, qlogid)
@@ -367,7 +374,7 @@ function tracker.ButtonEvent(self)
     end
 
     -- expand button to show objectives
-    if objectives and (unfolded[title] or ( percent > 0 and percent < 100 )) then
+    if objectives and (expanded or ( percent > 0 and percent < 100 )) then
       self:SetHeight(entryheight + objectives * fontsize)
 
       for i=1, objectives, 1 do

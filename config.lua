@@ -89,6 +89,8 @@ pfQuest_defconfig = {
     default = "0", type = "text", config = "trackeralpha" },
   { text = L["Quest Tracker Font Size"],
     default = "12", type = "text", config = "trackerfontsize", },
+  { text = L["Quest Tracker Unfold Objectives"],
+    default = "0", type = "checkbox", config = "trackerexpand" },
   { text = L["Quest Objective Spawn Points (World Map)"],
     default = "1", type = "checkbox", config = "showspawn" },
   { text = L["Quest Objective Spawn Points (Mini Map)"],
