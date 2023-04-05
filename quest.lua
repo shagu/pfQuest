@@ -114,6 +114,8 @@ end)
 
 pfQuest:SetScript("OnUpdate", function()
   if this.lock and this.lock > GetTime() then return end
+  if not pfDatabase.localized then return end
+
   if ( this.tick or .05) > GetTime() then return else this.tick = GetTime() + .05 end
 
   -- check questlog each second
