@@ -241,16 +241,22 @@ CreateFrame("Frame", "pfQuestLocaleCheck", UIParent):SetScript("OnUpdate", funct
   -- throttle to to one item per second
   if ( this.tick or 0) > GetTime() then return else this.tick = GetTime() + .1 end
 
-  this.iteration = this.iteration or 0
-  if this.iteration < 2 then
+  if not this.dryrun then
     -- give the server one iteration to return the itemname.
     -- this is required for clients that use a clean wdb folder.
-    ItemRefTooltip:Hide()
     ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
     ItemRefTooltip:SetHyperlink("item:6948:0:0:0")
-    this.iteration = this.iteration + 1
+    ItemRefTooltip:Hide()
+    this.dryrun = true
     return
-  elseif ItemRefTooltip:IsShown() and ItemRefTooltipTextLeft1 and ItemRefTooltipTextLeft1:IsVisible() then
+  end
+
+  -- try to load hearthstone into tooltip
+  ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
+  ItemRefTooltip:SetHyperlink("item:6948:0:0:0")
+
+  -- check tooltip for results
+  if ItemRefTooltip:IsShown() and ItemRefTooltipTextLeft1 and ItemRefTooltipTextLeft1:IsVisible() then
     -- once the tooltip shows up, read the name and hide it
     local name = ItemRefTooltipTextLeft1:GetText()
     ItemRefTooltip:Hide()
