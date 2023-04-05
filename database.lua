@@ -5,7 +5,7 @@ pfDatabase = {}
 
 local loc = GetLocale()
 local dbs = { "items", "quests", "quests-itemreq", "objects", "units", "zones", "professions", "areatrigger", "refloot" }
-local noloc = { "items", "quests", "objects", "units" }
+local noloc = { items = true, quests = true, objects = true, units = true }
 
 pfDB.locales = {
   ["enUS"] = "English",
@@ -237,39 +237,45 @@ end)
 
 -- check for unlocalized servers and fallback to enUS databases when the server
 -- returns item names that are different to the database ones. (check via. Hearthstone)
-CreateFrame("Frame"):SetScript("OnUpdate", function()
+CreateFrame("Frame", "pfQuestLocaleCheck", UIParent):SetScript("OnUpdate", function()
   -- throttle to to one item per second
-  if ( this.tick or 0) > GetTime() then return else this.tick = GetTime() + 1 end
+  if ( this.tick or 0) > GetTime() then return else this.tick = GetTime() + .1 end
 
-  -- give the server one iteration to return the itemname.
-  -- this is required for clients that use a clean wdb folder.
-  if not this.sentquery then
+  this.iteration = this.iteration or 0
+  if this.iteration < 2 then
+    -- give the server one iteration to return the itemname.
+    -- this is required for clients that use a clean wdb folder.
+    ItemRefTooltip:Hide()
     ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
     ItemRefTooltip:SetHyperlink("item:6948:0:0:0")
-    ItemRefTooltip:Hide()
-    this.sentquery = true
+    this.iteration = this.iteration + 1
     return
-  end
-
-  ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
-  ItemRefTooltip:SetHyperlink("item:6948:0:0:0")
-  if ItemRefTooltipTextLeft1 and ItemRefTooltipTextLeft1:IsVisible() then
+  elseif ItemRefTooltip:IsShown() and ItemRefTooltipTextLeft1 and ItemRefTooltipTextLeft1:IsVisible() then
+    -- once the tooltip shows up, read the name and hide it
     local name = ItemRefTooltipTextLeft1:GetText()
     ItemRefTooltip:Hide()
 
     -- check for noloc
     if name and name ~= "" and pfDB["items"][loc][6948] then
       if not strfind(name, pfDB["items"][loc][6948], 1) then
-        for id, db in pairs(noloc) do
-          pfDB[db]["loc"] = pfDB[db]["enUS"] or {}
+        pfDatabase.dbstring = ""
+        for id, db in pairs(dbs) do
+          -- assign existing locale and update dbstring
+          pfDB[db]["loc"] = noloc[db] and pfDB[db]["enUS"] or pfDB[db][loc] or {}
+          pfDatabase.dbstring = pfDatabase.dbstring .. " |cffcccccc[|cffffffff" .. db .. "|cffcccccc:|cff33ffcc" .. ( noloc[db] and "enUS" or loc ) .. "|cffcccccc]"
         end
       end
+
+      pfDatabase.localized = true
       this:Hide()
     end
   end
 
   -- set a detection timeout to 15 seconds
-  if GetTime() > 15 then this:Hide() end
+  if GetTime() > 15 then
+    pfDatabase.localized = true
+    this:Hide()
+  end
 end)
 
 -- sanity check the databases
@@ -1457,11 +1463,18 @@ function pfDatabase:GetQuestIDs(qid)
       end
     end
 
-    -- set title to new title
     if not ttitle then
-      pfQuest_questcache[identifier] = { title }
-      return
+      -- return early on unknown quests.
+      if not pfDatabase.localized then
+        -- skip cache if locale-checks are still running
+        return { title }
+      else
+        -- flag quest as unknown and return
+        pfQuest_questcache[identifier] = { title }
+        return pfQuest_questcache[identifier]
+      end
     else
+      -- set title to best result
       title = ttitle
     end
   end
