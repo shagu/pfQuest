@@ -7,6 +7,14 @@ local _G = client == 11200 and getfenv(0) or _G
 pfQuest = CreateFrame("Frame")
 pfQuest.icons = {}
 
+if client > 11200 then
+  -- tbc
+  pfQuest.dburl = "https://tbc-twinhead.twinstar.cz/?quest="
+else
+  -- vanilla
+  pfQuest.dburl = "https://vanilla-twinhead.twinstar.cz/?quest="
+end
+
 function pfQuest:Debug(msg)
   -- only show debug output if enabled
   if not pfQuest_config.debug and pfQuest.debugwin then
@@ -353,17 +361,11 @@ function pfQuest:AddQuestLogIntegration()
   pfQuest.buttonOnline:SetHeight(15)
   pfQuest.buttonOnline:SetPoint("TOPRIGHT", dockFrame, "TOPRIGHT", -12, -10)
   pfQuest.buttonOnline:SetScript("OnClick", function()
-
-    local questurl = "https://vanilla-twinhead.twinstar.cz/?quest="
-    if client > 11200 then
-      questurl = "https://tbc-twinhead.twinstar.cz/?quest="
-    end
-
     if pfUI and pfUI.chat then
-      pfUI.chat.urlcopy.text:SetText(questurl .. (this:GetID() or 0))
+      pfUI.chat.urlcopy.text:SetText(pfQuest.dburl .. (this:GetID() or 0))
       pfUI.chat.urlcopy:Show()
     else
-      StaticPopupDialogs["PFQUEST_URLCOPY"].data = questurl .. (this:GetID() or 0)
+      StaticPopupDialogs["PFQUEST_URLCOPY"].data = pfQuest.dburl .. (this:GetID() or 0)
       local dialog = StaticPopup_Show("PFQUEST_URLCOPY")
       _G[dialog:GetName().."Button1"]:ClearAllPoints()
       _G[dialog:GetName().."Button1"]:SetPoint("BOTTOM", dialog, "BOTTOM", 0, 16)
