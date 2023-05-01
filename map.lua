@@ -568,7 +568,7 @@ function pfMap:NodeClick()
       pfQuest_history[this.questid] = { time(), UnitLevel("player") }
     end
 
-    if this.node and this.title then
+    if this.node and this.title and this.node[this.title] then
       -- delete node from map
       pfMap:DeleteNode(this.node[this.title].addon, this.title)
     end
