@@ -3,6 +3,13 @@
 -- map pngs with alpha channel generated with:
 -- `convert $file  -transparent white -resize '100x100!' $file`
 
+-- load db login info from env
+local connectionInfo = { USERNAME = 'mangos', PASSWORD = 'mangos', HOST = '127.0.0.1' }
+for _, key in pairs({ 'USERNAME', 'PASSWORD', 'HOST', 'PORT' }) do
+  local v =  os.getenv('DB_' .. key);
+  if v then connectionInfo[key] = v end
+end
+
 local debugsql = {
   ["areatrigger"] = { "Using only client-data to find areatrigger locations" },
   --
@@ -320,7 +327,7 @@ do -- helper functions
     local file = type(file) == "string" and io.open(file, "w") or file
     local spacing = spacing or ""
 
-    if tblsize(tbl) == 0 then
+    if not tbl or tblsize(tbl) == 0 then
       file:write(spacing .. name .. " = {},\n")
     else
       file:write(spacing .. name .. " = {\n")
@@ -361,8 +368,23 @@ do -- helper functions
   end
 end
 
+local connections = {};
+for i, expansion in pairs(config.expansions) do
+  print("Setting up: " .. expansion)
+
+  -- database connection
+  local db = config[expansion][1]
+  local luasql = require("luasql.mysql").mysql()
+  local mysql = luasql:connect(db, connectionInfo.USERNAME, connectionInfo.PASSWORD, connectionInfo.HOST, connectionInfo.PORT)
+  if not mysql then 
+    print('Couldn\'t connect to ' .. connectionInfo.USERNAME .. '@' .. connectionInfo.HOST .. (connectionInfo.PORT and ':' .. connectionInfo.PORT or '') .. '/' .. db)
+  else
+    connections[expansion] = mysql
+  end
+end
+
 local pfDB = {}
-for _, expansion in pairs(config.expansions) do
+for expansion, mysql in pairs(connections) do
   print("Extracting: " .. expansion)
 
   local db = config[expansion][1]
@@ -372,11 +394,6 @@ for _, expansion in pairs(config.expansions) do
   local idcolumns = dbtype == "vmangos" and { "id", "id2", "id3", "id4" } or { "id" }
   local exp = expansion == "vanilla" and "" or "-"..expansion
   local data = "data".. exp
-
-  do -- database connection
-    luasql = require("luasql.mysql").mysql()
-    mysql = luasql:connect(db, "mangos", "mangos", "127.0.0.1")
-  end
 
   do -- database query functions
     function GetAreaTriggerCoords(id)
@@ -1412,7 +1429,7 @@ for _, expansion in pairs(config.expansions) do
     pfDB["zones"][data] = {}
 
     local zones = {}
-    local query = mysql:execute('SELECT * FROM pfquest.WorldMapOverlay_'..expansion..' LEFT JOIN pfquest.AreaTable_'..expansion..' ON pfquest.WorldMapOverlay_'..expansion..'.areaID = pfquest.AreaTable_'..expansion..'.id')
+    local query = mysql:execute('SELECT * FROM pfquest.WorldMapOverlay_'..expansion..' INNER JOIN pfquest.AreaTable_'..expansion..' ON pfquest.WorldMapOverlay_'..expansion..'.areaID = pfquest.AreaTable_'..expansion..'.id')
     while query:fetch(zones, "a") do
       if debug("zones") then break end
       local entry = tonumber(zones.id)
@@ -1538,11 +1555,11 @@ for _, expansion in pairs(config.expansions) do
     -- load unit locales
     local units_loc = {}
     local locales_creature = {}
-    local query = mysql:execute('SELECT * FROM creature_template LEFT JOIN locales_creature ON locales_creature.entry = creature_template.entry GROUP BY creature_template.entry ORDER BY creature_template.entry ASC')
+    local query = mysql:execute('SELECT creature_template.entry as id, creature_template.name as `name`, locales_creature.* FROM creature_template LEFT JOIN locales_creature ON creature_template.entry = locales_creature.entry GROUP BY creature_template.entry ORDER BY creature_template.entry ASC')
     while query:fetch(locales_creature, "a") do
       if debug("locales_unit") then break end
 
-      local entry = tonumber(locales_creature[C.Entry])
+      local entry = tonumber(locales_creature.id)
       local name  = locales_creature[C.Name]
 
       if entry then
@@ -1561,12 +1578,16 @@ for _, expansion in pairs(config.expansions) do
 
   do -- objects locales
     local locales_gameobject = {}
-    local query = mysql:execute('SELECT * FROM gameobject_template LEFT JOIN locales_gameobject ON locales_gameobject.entry = gameobject_template.entry GROUP BY gameobject_template.entry ORDER BY gameobject_template.entry ASC')
+    local query = mysql:execute('SELECT gameobject_template.entry as id, gameobject_template.name as `name`, locales_gameobject.* FROM gameobject_template LEFT JOIN locales_gameobject ON locales_gameobject.entry = gameobject_template.entry GROUP BY gameobject_template.entry ORDER BY gameobject_template.entry ASC')
     while query:fetch(locales_gameobject, "a") do
       if debug("locales_object") then break end
 
-      local entry = tonumber(locales_gameobject.entry)
+      local entry = tonumber(locales_gameobject.id)
       local name  = locales_gameobject.name
+
+      if not entry or not name then
+        print(dump(locales_gameobject))
+      end
 
       if entry then
         for loc in pairs(locales) do
@@ -1585,11 +1606,11 @@ for _, expansion in pairs(config.expansions) do
   do -- items locales
     local items_loc = {}
     local locales_item = {}
-    local query = mysql:execute('SELECT * FROM item_template LEFT JOIN locales_item ON locales_item.entry = item_template.entry GROUP BY item_template.entry ORDER BY item_template.entry ASC')
+    local query = mysql:execute('SELECT item_template.entry as id, item_template.name as `name`, locales_item.* FROM item_template LEFT JOIN locales_item ON locales_item.entry = item_template.entry GROUP BY item_template.entry ORDER BY item_template.entry ASC')
     while query:fetch(locales_item, "a") do
       if debug("locales_item") then break end
 
-      local entry = tonumber(locales_item.entry)
+      local entry = tonumber(locales_item.id)
       local name  = locales_item.name
 
       if entry then
@@ -1608,12 +1629,12 @@ for _, expansion in pairs(config.expansions) do
 
   do -- quests locales
     local locales_quest = {}
-    local query = mysql:execute('SELECT * FROM quest_template LEFT JOIN locales_quest ON locales_quest.entry = quest_template.entry GROUP BY quest_template.entry ORDER BY quest_template.entry ASC')
+    local query = mysql:execute('SELECT quest_template.entry as id, quest_template.Title as Title, quest_template.Details as Details, quest_template.Objectives as Objectives, locales_quest.* FROM quest_template LEFT JOIN locales_quest ON locales_quest.entry = quest_template.entry GROUP BY quest_template.entry ORDER BY quest_template.entry ASC')
     while query:fetch(locales_quest, "a") do
       if debug("locales_quest") then break end
 
       for loc in pairs(locales) do
-        local entry = tonumber(locales_quest.entry)
+        local entry = tonumber(locales_quest.id)
 
         if entry then
           local locale = loc .. ( expansion ~= "vanilla"  and "-" .. expansion or "" )
@@ -1650,6 +1671,7 @@ for _, expansion in pairs(config.expansions) do
       if entry then
         for loc in pairs(locales) do
           local name = locales_professions["name_loc" .. locales[loc]]
+          if not name or name == "" then name = locales_professions["name_loc0"] or "" end
           if name and name ~= "" then
             local locale = loc .. ( expansion ~= "vanilla"  and "-" .. expansion or "" )
             pfDB["professions"][locale] = pfDB["professions"][locale] or {}
@@ -1671,6 +1693,7 @@ for _, expansion in pairs(config.expansions) do
       if entry then
         for loc in pairs(locales) do
           local name = locales_zones["name_loc" .. locales[loc]]
+          if not name or name == "" then name = locales_zones["name_loc0"] or "" end
           if name and name ~= "" then
             local locale = loc .. ( expansion ~= "vanilla"  and "-" .. expansion or "" )
             pfDB["zones"][locale] = pfDB["zones"][locale] or {}

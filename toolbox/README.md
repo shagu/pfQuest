@@ -1,6 +1,7 @@
 # pfQuest-toolbox
 
 ## Setup Dependencies
+
 ### Archlinux
 
     # pacman -S mariadb mariadb-clients luarocks
@@ -9,6 +10,7 @@
     # luarocks install luasql-mysql MYSQL_INCDIR=/usr/include/mysql
 
 ## Prepare Databases
+
 The pfQuest extractor supports VMaNGOS and CMaNGOS databases. By default, VMaNGOS is used vanilla and CMaNGOS is used for TBC. For CMaNGOS translations, the Mangos-Extras project is used.
 
 ### Create Users And Permissions
@@ -34,7 +36,6 @@ The pfQuest extractor supports VMaNGOS and CMaNGOS databases. By default, VMaNGO
 Import the game client data SQL files:
 
     mysql -u mangos -p"mangos" pfquest < ../client-data.sql
-
 
 ### Vanilla (VMaNGOS)
 
@@ -76,7 +77,9 @@ Start the database extractor
     $ make
 
 ## Optional: Build Client-Data
+
 ### Copy CSVs to DBC/
+
 You additionally need to extract the `dbc` files from your gameclients.
 Those can be obtained via the `ad` tool within the CMaNGOS tools.
 The DBC files then need to be converted into `.csv` and placed as followed:
@@ -90,21 +93,38 @@ The DBC files then need to be converted into `.csv` and placed as followed:
     WorldMapArea.dbc.csv
 
 ### Required DBCs
+
 #### WorldMapArea.dbc [enUS]
+
 Required to obtain the map-sizes which are used for
-  1. calculating the minimap offset
-  2. calculating the objects possible maps during extraction
+
+1. calculating the minimap offset
+2. calculating the objects possible maps during extraction
 
 #### Lock.dbc [enUS]
+
 Used to get a list of all skill requirements which are used during the
 meta-list extraction
 
 #### AreaTable.dbc [all]
+
 The `AreaTable.dbc` is used to build the zones table. The zone table is required
 to tell the gameclient which map should be shown when searching for an object.
 It's basically a map-id to mape-name translation table.
 
 #### SkillLine.dbc [all]
+
 The `SkillLine.db` is used to build the professions table. The profession table is
 required to check the players professions against quest requirements. It's
 basically a profession-id to profession-name translation table.
+
+## Running with docker
+
+You can run this extractor in docker and point it to an external database. Only dependency is having docker installed and running.
+
+### Instructions
+
+1. Populate your DB according to steps above ('pfquest', 'vmangos' etc.).
+1. Create `.env` file from `.env.example` and enter your DB connection info
+1. Run `docker compose build` to build the container (needed once)
+1. Run `docker compose up` to extract data from database to the `../db` addon data folder (can be run without repeating previous steps)
