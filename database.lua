@@ -13,6 +13,7 @@ pfDB.locales = {
   ["frFR"] = "French",
   ["deDE"] = "German",
   ["zhCN"] = "Chinese",
+  ["zhTW"] = "Taiwanese",
   ["esES"] = "Spanish",
   ["ruRU"] = "Russian",
 }
