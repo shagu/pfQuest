@@ -203,18 +203,22 @@ EOF
 
   index=0
   for loc in $locales; do
-    if [ "$loc" = "ruRU" ] && [ "$v" == "vanilla" ]; then index=0; fi
+    # locale fixes
+    if [ "$loc" = "ruRU" ] && [ "$v" == "vanilla" ]; then
+      dbcslot=0 # there's no index for ruRU in 1.12, using enUS index
+    else
+      dbcslot=$index
+    fi
+
     if [ -d $root/$v ] && [ -f $root/$v/$loc/SkillLine.dbc.csv ]; then
       tail -n +2 $root/$v/$loc/SkillLine.dbc.csv | while read line; do
         id=$(echo $line | cut -d , -f 1)
-        entry=$(echo $line | cut -d , -f $(expr 4 + $index))
+        entry=$(echo $line | cut -d , -f $(expr 4 + $dbcslot))
 
         if [ "$loc" = "enUS" ]; then
           echo "INSERT INTO \`SkillLine_${v}\` VALUES ($id, $entry, '', '', '', '', '', '', '', '');" >> $rootsql
         else
-          nameloc="name_loc$index"
-          if [ "$loc" = "ruRU" ]; then nameloc="name_loc8"; fi
-          echo "UPDATE \`SkillLine_${v}\` SET $nameloc = $entry WHERE id = $id;" >> $rootsql
+          echo "UPDATE \`SkillLine_${v}\` SET name_loc$index = $entry WHERE id = $id;" >> $rootsql
         fi
       done
     fi
@@ -241,21 +245,36 @@ CREATE TABLE \`AreaTable_${v}\` (
 
 EOF
 
+
   index=0
   for loc in $locales; do
-    if [ "$loc" = "ruRU" ] && [ "$v" == "vanilla" ]; then index=0; fi
+    # locale fixes
+    if [ "$loc" = "ruRU" ] && [ "$v" == "vanilla" ]; then
+      dbcslot=0 # there's no index for ruRU in 1.12, using enUS index
+    else
+      dbcslot=$index
+    fi
+
     if [ -d $root/$v ] && [ -f $root/$v/$loc/AreaTable.dbc.csv ]; then
       tail -n +2 $root/$v/$loc/AreaTable.dbc.csv | while read line; do
         id=$(echo $line | cut -d , -f 1)
         zoneID=$(echo $line | cut -d , -f 3)
-        entry=$(echo $line | cut -d , -f $(expr 12 + $index) | sed 's/""/\\"/g')
+        entry=$(echo $line | cut -d , -f $(expr 12 + $dbcslot) | sed 's/""/\\"/g')
+
+        # some zones must be flagged with UNUSED for some locales
+        unused_zones="55 276 394 407 470 474 476 696 697 698 699 1196"
+        if [ "$loc" = "zhCN" ]; then
+          for unused in $unused_zones; do
+            if [ "$unused" == "$id" ]; then
+              entry="\"$(echo ${entry} | sed 's/"//g')UNUSED\""
+            fi
+          done
+        fi
 
         if [ "$loc" = "enUS" ]; then
           echo "INSERT INTO \`AreaTable_${v}\` VALUES ($id, $zoneID, $entry, '', '', '', '', '', '', '', '');" >> $rootsql
         else
-          nameloc="name_loc$index"
-          if [ "$loc" = "ruRU" ]; then nameloc="name_loc8"; fi
-          echo "UPDATE \`AreaTable_${v}\` SET $nameloc = $entry WHERE id = $id;" >> $rootsql
+          echo "UPDATE \`AreaTable_${v}\` SET name_loc$index = $entry WHERE id = $id;" >> $rootsql
         fi
       done
     fi
