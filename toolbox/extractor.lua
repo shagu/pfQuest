@@ -135,6 +135,7 @@ local locales = {
   ["frFR"] = 2,
   ["deDE"] = 3,
   ["zhCN"] = 4,
+  ["zhTW"] = 5,
   ["esES"] = 6,
   ["ruRU"] = 8,
 }
