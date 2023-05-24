@@ -1,7 +1,7 @@
 #!/bin/bash
 root="DBC"
 rootsql="client-data.sql"
-versions="vanilla tbc wotlk"
+versions="vanilla turtle tbc wotlk"
 locales="enUS koKR frFR deDE zhCN zhTW esES esMX ruRU"
 
 # delete old extraction
@@ -206,6 +206,8 @@ EOF
     # locale fixes
     if [ "$loc" = "ruRU" ] && [ "$v" == "vanilla" ]; then
       dbcslot=0 # there's no index for ruRU in 1.12, using enUS index
+    elif [ "$v" == "turtle" ]; then
+      dbcslot=0
     else
       dbcslot=$index
     fi
@@ -251,6 +253,8 @@ EOF
     # locale fixes
     if [ "$loc" = "ruRU" ] && [ "$v" == "vanilla" ]; then
       dbcslot=0 # there's no index for ruRU in 1.12, using enUS index
+    elif [ "$v" == "turtle" ]; then
+      dbcslot=0
     else
       dbcslot=$index
     fi

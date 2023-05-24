@@ -94,13 +94,28 @@ function debug_statistics()
   end
 end
 
+-- local associations
+local all_locales = {
+  ["enUS"] = 0,
+  ["koKR"] = 1,
+  ["frFR"] = 2,
+  ["deDE"] = 3,
+  ["zhCN"] = 4,
+  ["zhTW"] = 5,
+  ["esES"] = 6,
+  ["ruRU"] = 8,
+}
+
+-- export turtle-wow data
+local turtle = false
+
 local config = {
   -- expansions to generate databases
   expansions = { "vanilla", "tbc" },
 
-  -- set databases to use { database, core-type }
-  vanilla = { "vmangos", "vmangos" },
-  tbc = { "cmangos-tbc", "cmangos" },
+  -- set databases to use { database, core-type, locales }
+  vanilla = { "vmangos", "vmangos", all_locales },
+  tbc = { "cmangos-tbc", "cmangos", all_locales },
 
   -- core-type database column glue tables
   cmangos = setmetatable({}, { __index = function(tab,key)
@@ -128,17 +143,18 @@ local config = {
   },
 }
 
--- local associations
-local locales = {
-  ["enUS"] = 0,
-  ["koKR"] = 1,
-  ["frFR"] = 2,
-  ["deDE"] = 3,
-  ["zhCN"] = 4,
-  ["zhTW"] = 5,
-  ["esES"] = 6,
-  ["ruRU"] = 8,
-}
+if TURTLE then
+  -- add turtle to expansions
+  table.insert(config.expansions, "turtle")
+
+  -- set turtle config based on vmangos
+  config.turtle = {
+    "turtle",
+    "vmangos",
+    { ["enUS"] = 0 },
+  }
+end
+
 
 do -- map lookup functions
   maps = {}
@@ -369,6 +385,7 @@ for _, expansion in pairs(config.expansions) do
   local db = config[expansion][1]
   local dbtype = config[expansion][2]
   local C = config[config[expansion][2]]
+  local locales = config[expansion][3]
 
   local idcolumns = dbtype == "vmangos" and { "id", "id2", "id3", "id4" } or { "id" }
   local exp = expansion == "vanilla" and "" or "-"..expansion
@@ -1684,24 +1701,20 @@ for _, expansion in pairs(config.expansions) do
 
   if expansion ~= "vanilla" then
     print("- compress DB")
-    local prev_exp = expansion == "tbc" and "" or "-tbc"
-    local prev_data = "data".. prev_exp
-
-    pfDB["areatrigger"][data] = tablesubstract(pfDB["areatrigger"][data], pfDB["areatrigger"][prev_data])
-    pfDB["units"][data] = tablesubstract(pfDB["units"][data], pfDB["units"][prev_data])
-    pfDB["objects"][data] = tablesubstract(pfDB["objects"][data], pfDB["objects"][prev_data])
-    pfDB["items"][data] = tablesubstract(pfDB["items"][data], pfDB["items"][prev_data])
-    pfDB["refloot"][data] = tablesubstract(pfDB["refloot"][data], pfDB["refloot"][prev_data])
-    pfDB["quests"][data] = tablesubstract(pfDB["quests"][data], pfDB["quests"][prev_data])
-    pfDB["quests-itemreq"][data] = tablesubstract(pfDB["quests-itemreq"][data], pfDB["quests-itemreq"][prev_data])
-    pfDB["zones"][data] = tablesubstract(pfDB["zones"][data], pfDB["zones"][prev_data])
-    pfDB["minimap"..exp] = tablesubstract(pfDB["minimap"..exp], pfDB["minimap"..prev_exp])
-    pfDB["meta"..exp] = tablesubstract(pfDB["meta"..exp], pfDB["meta"..prev_exp])
-
+    pfDB["areatrigger"][data] = tablesubstract(pfDB["areatrigger"][data], pfDB["areatrigger"]["data"])
+    pfDB["units"][data] = tablesubstract(pfDB["units"][data], pfDB["units"]["data"])
+    pfDB["objects"][data] = tablesubstract(pfDB["objects"][data], pfDB["objects"]["data"])
+    pfDB["items"][data] = tablesubstract(pfDB["items"][data], pfDB["items"]["data"])
+    pfDB["refloot"][data] = tablesubstract(pfDB["refloot"][data], pfDB["refloot"]["data"])
+    pfDB["quests"][data] = tablesubstract(pfDB["quests"][data], pfDB["quests"]["data"])
+    pfDB["quests-itemreq"][data] = tablesubstract(pfDB["quests-itemreq"][data], pfDB["quests-itemreq"]["data"])
+    pfDB["zones"][data] = tablesubstract(pfDB["zones"][data], pfDB["zones"]["data"])
+    pfDB["minimap"..exp] = tablesubstract(pfDB["minimap"..exp], pfDB["minimap"])
+    pfDB["meta"..exp] = tablesubstract(pfDB["meta"..exp], pfDB["meta"])
 
     for loc in pairs(locales) do
       local locale = loc .. exp
-      local prev_locale = loc .. prev_exp
+      local prev_locale = loc
 
       os.execute("mkdir -p output/" .. loc)
       pfDB["units"][locale] = tablesubstract(pfDB["units"][locale], pfDB["units"][prev_locale])
@@ -1717,7 +1730,9 @@ for _, expansion in pairs(config.expansions) do
   print("- writing database...")
 
   os.execute("mkdir -p output")
-  serialize("output/init.lua", "pfDB", pfDB, nil, true)
+  if expansion == "vanilla" or expansion == "tbc" then
+    serialize("output/init.lua", "pfDB", pfDB, nil, true)
+  end
   serialize(string.format("output/areatrigger%s.lua", exp), "pfDB[\"areatrigger\"][\""..data.."\"]", pfDB["areatrigger"][data])
   serialize(string.format("output/units%s.lua", exp), "pfDB[\"units\"][\""..data.."\"]", pfDB["units"][data])
   serialize(string.format("output/objects%s.lua", exp), "pfDB[\"objects\"][\""..data.."\"]", pfDB["objects"][data])
