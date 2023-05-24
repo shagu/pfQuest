@@ -1124,6 +1124,11 @@ pfDB["quests"]["ruRU"] = {
     ["O"] = "Поговорите с Сенани Громосерд на заставе Расщепленного Древа в Ясеневом лесу.",
     ["T"] = "Большая охота",
   },
+  [236] = {
+    ["D"] = "A few weeks ago, I dispatched Watcher Callahan and a few others to the northern border of Duskwood to deal with the wolf infestation. I haven\'t heard word from him for quite some time. If he followed my instructions, he\'ll be camped out on the road north from Darkshire. $B$BIf it\'s on your way, please check up on him and inform him that I am awaiting a progress report from him.",
+    ["O"] = "Speak with Watcher Callahan.",
+    ["T"] = "Awaiting Word",
+  },
   [237] = {
     ["D"] = "Горный пехотинец Кремневик превозносит тебя до небес, $r. Поэтому я хочу доверить тебе очень важное задание. Мы не должны ослаблять натиск на троггов, пока наши братья-дворфы не вернутся с войны.$b$bОтправляйся в южные холмы и убей 10 головоломов из племени Камнедробов и 10 ясновидцев из племени Камнедробов. Это поможет нам выиграть время. Когда выполнишь задание, возвращайся.",
     ["O"] = "Горный пехотинец Булыжный Карьер просит вас убить 10 головоломов из племени Камнедробов и 10 ясновидцев из племени Камнедробов.",
@@ -5464,6 +5469,21 @@ pfDB["quests"]["ruRU"] = {
     ["O"] = "Найдите книгу \"Наследие Аспектов\" и вернитесь к Браугу Тусклому Духу ко входу в Туннель Когтя.",
     ["T"] = "Испытание знаний",
   },
+  [1156] = {
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<NYI> <TXT> speak to alchemist pestlezugg",
+  },
+  [1157] = {
+    ["D"] = "TODO",
+    ["O"] = "TODO",
+    ["T"] = "Alexstrasza",
+  },
+  [1158] = {
+    ["D"] = "TODO",
+    ["O"] = "TODO",
+    ["T"] = "Malygos",
+  },
   [1159] = {
     ["D"] = "Отличная работа, $N. Ты $gпрошел:прошла; первую часть испытания знаний, но еще один вопрос остался без ответа. Правда, задавать его буду не я.$B$BПоговори с Парквелом Финталласом в Лордероне – до того как пасть жертвой Чумы, он был великим историком среди людей. Он до сих пор стремится к просвещению, но уже по-другому.$B$BОн даст тебе задание, и только потом задаст вопрос – но до сих пор ты $gсправлялся:справлялась; хорошо, и, я уверен, трудностей у тебя не возникнет.",
     ["O"] = "Найдите Парквела Финталласа в Подгороде.",
@@ -6098,6 +6118,11 @@ pfDB["quests"]["ruRU"] = {
     ["D"] = "Заблудшие, живущие в Болотном пристанище, на вид ничем от нас не отличаются, но на самом деле это чудовища... лишившиеся рассудка в пути до Азерота. Когда-то они были нашими братьями. Теперь они живут в Болотном пристанище, к востоку отсюда, захватывая и убивая любого, кто попадется под руку.$B$BСейчас они украли одну из наших святынь – кристаллы дренейского аметиста.$B$BУ нас не хватает сил ворваться в Святилище и вернуть себе нашу реликвию, но без нее... мы тоже вскоре утратим свой путь.",
     ["O"] = "Принесите 6 кристаллов дренейского аметиста Магтуру в Убежище в Болоте Печали.",
     ["T"] = "Кристаллы дренейского аметиста",
+  },
+  [1390] = {
+    ["D"] = "Missing text",
+    ["O"] = "Missing text",
+    ["T"] = "Oops, We Killed Them Again.",
   },
   [1391] = {
     ["D"] = "Мы должны действовать тайно. В конце концов ты же не можешь войти и заставить этого олуха выпить состав Фаустина?$B$BНо от выпивки ни один человек не откажется. Я возьму сыворотку Фаустина и замешаю ее в эль. Сомнений нет, бедняга без колебаний выпьет предложенную бурду.$B$BСпеши в Каменор на Болото Печали, $N. И никому не рассказывай о нашем задании...",
@@ -9029,6 +9054,11 @@ pfDB["quests"]["ruRU"] = {
     ["O"] = "Изучите благословенную руну. Найдите в Старой Наковальне Бранстока Халдера и поговорите с ним.",
     ["T"] = "Благословенная руна",
   },
+  [3111] = {
+    ["D"] = "Long ago high elves taught us the secrets of magic along with our human allies. They preached to us about rules and how magic can make ya go mad! But don\'t believe it. We\'re not like the elves; we don\'t have the same weaknesses. Just keep yourself on the right path and you\'ll find magic is as powerful a tool as it is a weapon.$B$BWhen you\'re ready, come find me inside Anvilmar. I\'ll be waiting for ya!",
+    ["O"] = "Speak to Marryk Nurribit inside Anvilmar.",
+    ["T"] = "Glyphic Rune",
+  },
   [3112] = {
     ["D"] = "Меня тут попросили передать тебе благодарность за помощь и вот эту записку. Прочти ее, когда будет время. Думаю, записку прислал Тран, наставник воинов. Если представится случай, отыщи его в Старой Наковальне.",
     ["O"] = "Прочитайте записку и поговорите с Траном Корманом в Старой Наковальне.",
@@ -9593,6 +9623,11 @@ pfDB["quests"]["ruRU"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Разносчик заразы",
+  },
+  [3581] = {
+    ["D"] = "Imagine yourself racing across the plains, through forests and over mountains, the wind in your face... Traveling over unseen territory",
+    ["O"] = "Speak to Saern Priderunner again to learn the Plainsrunning skill.",
+    ["T"] = "Plainsrunning",
   },
   [3601] = {
     ["D"] = "Ким\'джаель оскорблен до глубины души! Знаешь, что на самом деле Ким\'джаель значит для эльфов крови, $N? Я для них всего лишь букашка! Маленькое безвредное создание, на которое можно и наступить – не жалко! $B$BОни наняли меня, чтобы я обшарил для них место, где, как они сказали, спрятано сокровище. Ну ты понимаешь, при слове \"сокровище\" я утратил бдительность и купился на их посулы! Конечно же, они предали меня и даже пытались прикончить! $B$BНикогда нельзя верить мерзким эльфам крови! $B$BМне удалось уйти живым, но у негодяев осталось все мое снаряжение! Пожалуйста, забери его у них!",
@@ -12814,6 +12849,11 @@ pfDB["quests"]["ruRU"] = {
     ["O"] = "Поговорите с Верховной жрицей Лореной в Штормграде.",
     ["T"] = "Волшебное искажение",
   },
+  [5678] = {
+    ["D"] = "It is time for you to return to Stormwind, young one. Your superiors there have called you back for more training. And although it disturbs me some, your race and mine are allies and I would not betray that.$b$bI do not mean to be so coy with you--my distrust of arcane magics, be they divine inspired or not, is still strong within me.$b$bYou will know of what I speak after you return to your Cathedral of Light. Speak to High Priestess Laurena when you arrive.",
+    ["O"] = "Speak to High Priestess Laurena in Stormwind.",
+    ["T"] = "Arcane Feedback",
+  },
   [5679] = {
     ["D"] = "Эльталисте оказывает нашему народу величайшую честь, принимая учеников и помогая их костям, обрасти мясом познания... фигурально выражаясь, конечно. Теперь я окажу ее племени ту же услугу.$B$BВозвращайся в Подгород, $N. Там, в Квартал Воинов она будет готова научить тебя новым знаниям про твой народ и его пути. Следуй туда!",
     ["O"] = "Поговорите с Эльталисте в Подгороде.",
@@ -13168,6 +13208,11 @@ pfDB["quests"]["ruRU"] = {
     ["D"] = "Около четырех тысяч лет назад Тиранда Шелест Ветра спасла жизнь королевы ледопардов, вырвав ее из рук жестоких великанов. С тех самых пор ледопарды стали союзниками ночных эльфов. $B$BТе самые великаны, что когда-то представляли опасность для ледопардов, и поныне живут не очень далеко отсюда. Их называют кланом Ледяного Молота, и они обосновались в большой долине к югу отсюда.$B$BДокажите вашу лояльность – убейте этих великанов во имя королевы ледопардов, Ши-Ротам!",
     ["O"] = "По просьбе Риверна Холодного Ветра убейте 4 великанов и 4 оберегателей ледяного молота.",
     ["T"] = "Истребление великанов",
+  },
+  [6000] = {
+    ["D"] = "$N! I would not have expected to see you in the area were however instructed to hold after you look out.$B$BHighest one time of your training is continued. With the next attendance in Stormwind should you with Gakin clean-look. $B$BIt will expect you.",
+    ["O"] = "Announces you to Gakin the Darkbinder in the Magic quarter of Stormwind.",
+    ["T"] = "Swearing to Gakin",
   },
   [6001] = {
     ["D"] = "Прямо к востоку от Аубердина находятся пещеры лунных совухов. В той, что ближе всего к Аубердину, находится камень лунного совуха. Лунокоготь, страж камня, появится перед тобой только тогда, когда ты воспользуешься лунной пылью Кенария. Лунокоготь таит в себе силу, которой ты, как $gодин:одна; из друидов-медведей, должен овладеть.$B$BТы $Gзаслужил:заслужила; право пользоваться этой лунной пылью Кенария, $N... теперь покажи мне, что также $gзаслужил:заслужила; право обладать силами тела и духа, необходимыми друиду!",
@@ -13533,6 +13578,11 @@ pfDB["quests"]["ruRU"] = {
     ["D"] = "Пожалуй, я готов открыть лавку...$B$BО нет! Моя книга рецептов! Мне не обойтись без нее!$B$BКажется я оставил ее где-то в городе... да, видимо, в таверне, в которой останавливался!$B$BПринеси мне мою книгу, о умоляю, принеси мне ее! Ты увидишь, цены у меня СУМАСШЕДШИЕ!",
     ["O"] = "Принесите Августу Помешанному в Долину Ужаса его книгу рецептов.",
     ["T"] = "Книга рецептов Августа",
+  },
+  [6165] = {
+    ["D"] = "The details about this quest are missing",
+    ["O"] = "The description of this quest is missing",
+    ["T"] = "Archmage Timolain\'s Remains",
   },
   [6181] = {
     ["D"] = "Хотя мы не получаем серьезной помощи напрямую из Штормграда, у меня в городе есть знакомый, снабжающий нас доспехами. Зовут его Озрик Штранг. Его магазин, \"Ограниченная неуязвимость\", находится в Старом городе.$B$BНаши запасы доспехов заканчиваются, и я должен связаться с Озриком, чтобы попросить еще. Можете ли вы передать ему эту записку?$BБыстрее всего добраться до Штормграда можно с помощью Тора, нашего укротителя грифонов. Он находится прямо у подножия этого холма. Приходите к нему с моей запиской, а затем летите на грифоне в Штормград.",
@@ -14764,6 +14814,21 @@ pfDB["quests"]["ruRU"] = {
     ["O"] = "Ступайте в Квартал Криводревов Забытого Города и убейте элементаля воды Гидротварь. Вернитесь в Читальню к сказителю Лидросу и принесите ему сущность Гидротвари.",
     ["T"] = "Магический напиток",
   },
+  [7478] = {
+    ["D"] = "Master Winthalus lost the Libram of Rapidity in the east wing. The Libram will allow for a minor haste cantrip to be placed upon your equipment. Parlor tricks, really...$B$BRegardless, if you are interested, you will need to present the Libram along with some basic reagents.$B$BHrm... I believe it also requires blood of heroes, a pristine black diamond, and large brilliant shards. I could be wrong!$B$B<Lydros shrugs.>",
+    ["O"] = "Bring a Libram of Rapidity, 1 Pristine Black Diamond, 2 Large Brilliant Shards, and 2 Blood of Heroes to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Rapidity.",
+    ["T"] = "Libram of Rapidity",
+  },
+  [7479] = {
+    ["D"] = "This libram almost aroused interest in one of the younger Lorekeeper\'s familiars. Poor thing, it was only a few weeks old.$B$BThose among you who are more magically inclined might find this item interesting.$B$BThe Libram of Focus was lost in this wing. I can only assume one of the Highborne spirits holds it in their possession.$B$BBring the Libram along with some large brilliant shards, skin of shadow, and a pristine black diamond and I shall conjure the Arcanum.",
+    ["O"] = "Bring a Libram of Focus, 1 Pristine Black Diamond, 4 Large Brilliant Shards, and 2 Skin of Shadow to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Focus.",
+    ["T"] = "Libram of Focus",
+  },
+  [7480] = {
+    ["D"] = "He wept like an infant at the loss of this libram. Mind you, I myself have wept over texts - there is no greater loss than that of knowledge and history - but to cry over this nearly useless jumbling of incantations? Preposterous! It left me to believe that the Prince was doing him a favor in flaying the flesh from his bones.$B$BBring the Libram along with a pristine black diamond, large brilliant shards, and a frayed abomination stitching and I shall recreate the Arcanum.$B$BOh, and check the north wing.",
+    ["O"] = "Bring a Libram of Protection, 1 Pristine Black Diamond, 2 Large Brilliant Shards, and 1 Frayed Abomination Stitching to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Protection.",
+    ["T"] = "Libram of Protection",
+  },
   [7481] = {
     ["D"] = "Несколько лет тому назад одинокий эльфийский мастер по имени Кариэль Винтхалус бежал из своей разоренной родной земли, унеся с собой несколько древних эльфийских артефактов.$B$BПоиски пропавшего мастера привели нас из руин Кель\'Таласа через Пылающие степи и морские просторы в Фералас.$B$BМы подозреваем, что эльф искал убежища в залах Эльдре\'Таласа (ныне известного как Забытый Город).$B$BОтыщи его, $gстранник:странница;! Жив он или мертв, а знания, которые он унес с собой, отыскать необходимо!",
     ["O"] = "Попытайтесь найти в Забытом Городе Кариэля Винтхалуса. Вернитесь в Лагерь Мохаче к ведуну Королуску и сообщите ему все, что вам удалось узнать.",
@@ -15203,6 +15268,16 @@ pfDB["quests"]["ruRU"] = {
     ["D"] = "$n, у меня есть срочное дело, и надеюсь, ты сумеешь мне помочь. Разреши, я объясню.$B$BВ глубине Некроситета в Лордероне есть здание, которое называется Главный склеп. Мне нужно изготовить устройство, которое позволит развеять зловещие тени этого жуткого места. Но чтобы его завершить, мне нужны два алмаза, азеротский и безупречный черный. Найти их не так-то просто, я знаю, но самому мне их раздобыть не под силу.$B$BНе согласишься ли ты добыть для меня эти камни?",
     ["O"] = "Принесите Сагорну Гребнестраннику в Аллею Мудрости в Оргриммаре азеротский алмаз и безупречный черный алмаз.",
     ["T"] = "Существенная помощь",
+  },
+  [7668] = {
+    ["D"] = "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to call forth Darkreaver\'s spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage done to the spirit realm!",
+    ["O"] = "Use the Divination Scryer in the heart of the Great Ossuary\'s basement in the Scholomance.  Doing so will bring forth spirits you must fight.  Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.$B$BBring Darkreaver\'s Head to Sagorne Creststrider in the Valley of Wisdom, Orgrimmar.",
+    ["T"] = "The Darkreaver Menace",
+  },
+  [7670] = {
+    ["D"] = "The time has come, $N, for you to learn about what it will take for you to acquire something you have no doubt waited on for some time... your charger.$B$BSpeak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.  It is he who will guide you not only though the legerdemain of a Paladin\'s most trusted mount, but the tasks before you to acquire one of your own.$B$BI wish you the best in this trial.  For the Light, noble $G brother : sister;!",
+    ["O"] = "Speak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.",
+    ["T"] = "Lord Grayson Shadowbreaker",
   },
   [7671] = {
     ["D"] = "",
@@ -16023,6 +16098,11 @@ pfDB["quests"]["ruRU"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "1200 билетов – амулет Новолуния",
+  },
+  [8001] = {
+    ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
+    ["O"] = "Kill 5 Wretched Zombies",
+    ["T"] = "Zombie Cleansing",
   },
   [8041] = {
     ["D"] = "",
@@ -21093,6 +21173,11 @@ pfDB["quests"]["ruRU"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Гигантский флакон с зельем маны",
+  },
+  [9321] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Major Healing Potion",
   },
   [9322] = {
     ["D"] = "Праздник Огненного солнцеворота отмечается повсюду в Азероте, и различные регионы Калимдора – не исключение. Похоже, тебе приходилось много путешествовать, и у тебя есть опыт в странствиях. $b$bПраздник Середины лета нельзя оценить должным образом, пока не увидишь горячие огни синего цвета. Зажигаются костры в холодных западных регионах Зимних Ключей, в северо-восточной Азшаре, возле Покоя Доблестных в пустошах Силитуса и у входа в обширный ркатер Ун\'Горо. Возвращайся по завершении путешествия.",

@@ -725,6 +725,7 @@ pfDB["quests"]["esES-tbc"] = {
     ["D"] = "¡Atención, jóvenes aventureros! ¡Los páramos de Vallefresno os esperan!$B$BLa Horda ha aumentado su presencia en las tierras al norte de Los Baldíos. Nuestras dos avanzadas, Puesto del Hachazo y La Ensenada de Zoram, se esfuerzan por traer gloria a la Horda. Aquellos que deseen demostrar su valía deben buscar ayuda allí. Nota: Senani Corazón Atronador del Puesto del Hachazo, al norte de Los Baldíos, busca a aventureros que deseen participar en la gran Caza de Vallefresno.",
     ["O"] = "Habla con Senani Corazón Atronador en Puesto del Hachazo, en Vallefresno.",
   },
+  [236] = "_",
   [237] = {
     ["D"] = "El montaraz Pedernal habla muy bien de ti, $R. Por eso he decidido confiarte una misión de extrema importancia. Tenemos que mantener a raya a los troggs invasores hasta que nuestros hermanos regresen de luchar por la Alianza.$B$BDirígete a las colinas del sur y mata a diez aplastacráneos y diez videntes Rompecantos. Eso nos hará ganar tiempo. Regresa cuando termines la misión.",
     ["O"] = "El montaraz Gravagau, de la torre de vigilancia sur, quiere que mates a 10 aplastacráneos y 10 videntes Rompecantos. Luego ve a informarle.",
@@ -3479,6 +3480,9 @@ pfDB["quests"]["esES-tbc"] = {
   [1154] = {
     ["O"] = "Encuentra el Legado de los Aspectos y devuélveselo a Braug Espíritu Tenue que se encuentra cerca de la entrada de El Paso del Espolón en Sierra Espolón.",
   },
+  [1156] = "_",
+  [1157] = "_",
+  [1158] = "_",
   [1159] = {
     ["D"] = "Bien hecho, $N. Has superado la primera parte de la prueba de conocimiento pero aún hay otra pregunta que debes responder. Sin embargo, no seré yo quien te la haga.$B$BBusca a Parqual Fintallas en Entrañas de Lordaeron. Él era un gran historiador al servicio de los humanos antes de que la Plaga lo sorprendiera. Ahora sigue persiguiendo el conocimiento, pero de un modo distinto.$B$BAntes de formularte ninguna pregunta, te asignará otro encargo. Lo has hecho tan bien hasta el momento que no tengo ninguna duda de que superarás este obstáculo sin problemas.",
   },
@@ -3845,8 +3849,6 @@ pfDB["quests"]["esES-tbc"] = {
     ["O"] = "Llévale 6 cristales draenetistas a Magtoor que está en El Puerto del Pantano de las Penas.",
   },
   [1390] = {
-    ["D"] = "Missing text",
-    ["O"] = "Missing text",
     ["T"] = "&lt;nyi&gt; Ups, les hemos matado de otra vez",
   },
   [1391] = {
@@ -5656,6 +5658,7 @@ pfDB["quests"]["esES-tbc"] = {
     ["O"] = "Lee la runa sacralizada, luego ve a Yunquemar y habla con Silo Khalder.",
     ["T"] = "Runa sacralizada",
   },
+  [3111] = "_",
   [3114] = {
     ["O"] = "Lee el memorándum glífico, luego ve a hablar con Marryk Nurribit, dentro de Yunquemar, sobre el Valle de Crestanevada.",
     ["T"] = "Memorándum glífico",
@@ -5999,6 +6002,7 @@ pfDB["quests"]["esES-tbc"] = {
     ["D"] = "Dale esto a Thersa. Quizás la cure... o quizás no. No lo sabremos hasta que se lo tome.",
     ["O"] = "Dale el elixir de Cuely a Thersa Son del Viento, que está en Entrañas.",
   },
+  [3581] = "_",
   [3601] = {
     ["D"] = "¡¡Kim\'jael, claro!! ¿Sabes lo que significa Kim\'jael para los elfos de sangre, $N? Ratita... o algo parecido. ¡Abusones!$B$BMe contrataron para que los ayudara a rastrear el área en busca de algún tipo de tesoro perdido. Por supuesto, no me lo pensé un momento cuando mencionaron el \"tesoro\" y el dinero que me iban a pagar pero claro, se volvieron contra mí e intentaron matarme... ¡A MÍ!$B$BToma prueba, un elfo de sangre no es de fiar.$B$BEl problema es que aún tienen mi equipo y no puedo recuperarlo. ¿Me ayudas?",
     ["O"] = "Busca en el Campamento base thalassiano la brújula de Kim\'jael, la mira, el pollo relleno y el cachivache y llévaselo todo a Azshara.",
@@ -7879,6 +7883,7 @@ pfDB["quests"]["esES-tbc"] = {
   [5677] = {
     ["D"] = "Por mucho que quisiera mostrarte nuestras enseñanzas especiales de la Luz, no es nuestro lugar. Tu lugar está en Ventormenta, con los tuyos, $N... al menos por ahora. Créeme, no pretendo ofenderte. Cuando vuelvas a ver a la suma sacerdotisa Laurena en la Catedral de la Luz, comprenderás lo que te estoy diciendo. Ha llegado el momento de que tu raza te prepare para el futuro, de que te separes de otros que siguen un camino similar.",
   },
+  [5678] = "_",
   [5679] = {
     ["D"] = "Aelthalyste show our people great respect by sending them back to me for more training, and now I do the same for her tribe.$B$BYou return to the Undercity, $N. There, in the War Quarter, she be ready to teach you more \'bout your people and their ways. Go there, and do not wait long.",
     ["O"] = "Speak to Aelthalyste in the Undercity.",
@@ -8112,6 +8117,7 @@ pfDB["quests"]["esES-tbc"] = {
     ["D"] = "Hace unos 4000 años, Tyrande Susurravientos salvó la vida de la reina de los Sables de Hielo, de manos de unos gigantes enloquecidos. Desde entonces los Sables de Hielo han estado aliados a los elfos de la noche.$B$BLos mismos gigantes que en su día amenazaron a los Sables de Hielo siguen presentes no lejos de aquí. Son los llamados Machacahielo y se han apoderado del valle del Sur.$B$BDemuestra tu lealtad a los Sables de Hielo. ¡Mata a esos gigantes en nombre de Shi-Rotam, la reina de los Sables de Hielo!",
     ["O"] = "Rivern Ventogélido quiere que mates 4 gigantes Machacahielo y 4 valedores Machacahielo.",
   },
+  [6000] = "_",
   [6001] = {
     ["D"] = "Al este de Auberdine hay muchas cuevas de lechúcicos lunares. La que está más cerca de Auberdine alberga una piedra de lechúcico lunar en su interior. Garraluna, el guardián de la piedra, solo se enfrentará a ti cuando le apliques polvo de luna Cenarion. Garraluna posee una fuerza que debes usar como miembro de la zarpa.$B$BTe has ganado el derecho a usar este polvo de luna Cenarion, $N... ¡Ahora demuéstrame que también te has ganado el derecho a poseer la fuerza física y de corazón que necesitas como druida!",
     ["O"] = "Utiliza el polvo de luna Cenarion en la piedra de lechúcico lunar de Auberdine para invocar a Garraluna. Luego tendrás que enfrentarte a Garraluna y ganar la fuerza física y de corazón que posee. $B$BCuando hayas acabado, vuelve a Darnassus y habla con Mathrengyl Garroso.",
@@ -8389,6 +8395,7 @@ pfDB["quests"]["esES-tbc"] = {
   [6164] = {
     ["O"] = "Consigue el libro de entradas de Augustus en la posada del Valle del Terror.",
   },
+  [6165] = "_",
   [6182] = {
     ["D"] = "Nathanos Marris fue el primer y último Señor forestal Discípulo de Sylvanas Brisaveloz, ahora la Reina alma en pena de los Renegados.$B$BHabíamos creído que Nathanos había caído en acción, en la defensa de Lordaeron cinco años atrás. Si bien nunca se recuperó su cadáver, se creyó que no consiguió salir de las Tierras de la Peste del Este.$B$BMathias Shaw ha estado investigando la desaparición, y quizás tenga nueva información. Preséntate ante él inmediatamente. Vive en el Casco Antiguo, en los Cuarteles.",
   },
@@ -9137,6 +9144,9 @@ pfDB["quests"]["esES-tbc"] = {
   [7463] = {
     ["D"] = "¡Vaya, $Gun mago:una maga; $R! Esto es increíble. No he visto a nadie de tu clase en... ¿cuánto? ¡500 años!$B$BTengo algo que saciará tu sed, pero primero tienes que hacer algo por mí.$B$B<Lydros se ríe.>$B$BHay una anomalía en Eldre\'Thalas. Un elemental de agua se ha instalado en el ala este. ¡Hay que catalogar su presencia!$B$BVe al Barrio Alabeo y extrae una porción de esencia elemental del Hidromilecio. Devuélvemela y te enseñaré un conjuro útil.",
   },
+  [7478] = "_",
+  [7479] = "_",
+  [7480] = "_",
   [7483] = {
     ["T"] = "Tratado sobre rapidez",
   },
@@ -9662,8 +9672,6 @@ pfDB["quests"]["esES-tbc"] = {
     ["T"] = "¡Estos conejos no paran!",
   },
   [8001] = {
-    ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
-    ["O"] = "Kill 5 Wretched Zombies",
     ["T"] = "Avanzados Grito de Guerra <NYI> <TXT>",
   },
   [8002] = {
@@ -12629,8 +12637,6 @@ pfDB["quests"]["esES-tbc"] = {
     ["T"] = "Poción de maná sublime",
   },
   [9321] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "Poción de sanación sublime",
   },
   [9322] = {

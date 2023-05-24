@@ -1124,6 +1124,11 @@ pfDB["quests"]["zhTW"] = {
     ["O"] = "與梣谷碎木崗哨的塞娜尼·雷心談話。",
     ["T"] = "梣谷狩獵",
   },
+  [236] = {
+    ["D"] = "A few weeks ago, I dispatched Watcher Callahan and a few others to the northern border of Duskwood to deal with the wolf infestation. I haven\'t heard word from him for quite some time. If he followed my instructions, he\'ll be camped out on the road north from Darkshire. $B$BIf it\'s on your way, please check up on him and inform him that I am awaiting a progress report from him.",
+    ["O"] = "Speak with Watcher Callahan.",
+    ["T"] = "Awaiting Word",
+  },
   [237] = {
     ["D"] = "巡山人庫伯弗林特總是在我面前稱讚你，$c。因此現在我要交給你一個極其重要的任務，你必須不斷給那些入侵的穴居人施加壓力，直到我們的兄弟們從聯盟前線回來。$b$b到南部的丘陵去，殺掉10個碎石怪擊顱者和10個碎石怪先知。你的行動可以為我們贏得一點時間，完成任務後就回來向我報告。",
     ["O"] = "南部警戒塔的巡山人格拉維戈要你殺掉10個碎石怪擊顱者和10個碎石怪先知，然後回去向他彙報。",
@@ -5464,6 +5469,21 @@ pfDB["quests"]["zhTW"] = {
     ["O"] = "Find the Legacy of the Aspects and return it to Braug Dimspirit near the entrance to Talondeep Path in Stonetalon Mountains.",
     ["T"] = "Test of Lore",
   },
+  [1156] = {
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<NYI> <TXT> speak to alchemist pestlezugg",
+  },
+  [1157] = {
+    ["D"] = "TODO",
+    ["O"] = "TODO",
+    ["T"] = "Alexstrasza",
+  },
+  [1158] = {
+    ["D"] = "TODO",
+    ["O"] = "TODO",
+    ["T"] = "Malygos",
+  },
   [1159] = {
     ["D"] = "Well done, $N. You have passed the first portion of the Test of Lore, but there is still another question to be answered. But that question is not mine to ask.$B$BSeek out Parqual Fintallas in Lordaeron City. He was a great historian for the humans before the Plague overtook him. Now he continues to seek enlightenment, but of a different nature.$B$BHe will have another requirement of you before he asks you anything, but you have done masterfully thus far--I\'m sure you will overcome his obstacle.",
     ["O"] = "Find Parqual Fintallas in Undercity.",
@@ -6098,6 +6118,11 @@ pfDB["quests"]["zhTW"] = {
     ["D"] = "農田避難所裡的那些失落者和我們是同族，但他們已經是瘋狂的怪物了……在我們來到艾澤拉斯的那段殘酷的征途把他們活活逼瘋了！他們現在就住在東邊的農田避難所裡，任何在附近徘徊的人都有可能被他們抓住或殺掉……$B$B他們還偷走了我們的聖物——德萊尼水晶。$B$B我們沒有足夠的力量進入農田避難所去奪回那些被他們扔在小屋和營火附近的水晶，但是失去了那些水晶……我們就會迷失自己的方向。",
     ["O"] = "給悲傷沼澤避難營地裡的瑪格圖爾帶去6塊德萊尼水晶。",
     ["T"] = "德萊尼水晶",
+  },
+  [1390] = {
+    ["D"] = "Missing text",
+    ["O"] = "Missing text",
+    ["T"] = "Oops, We Killed Them Again.",
   },
   [1391] = {
     ["D"] = "We need to operate with a certain amount of discretion. After all, it\'s not like you\'re going to waltz in there and convince the fool to drink Faustin\'s concoction here, right?$b$bBut if there\'s one thing those humans cannot deny it\'s the booze. I\'ll take Faustin\'s serum and mix it into this ale. I guarantee the poor sap will show no reluctance when it comes to chug-a-lugging a brew.$b$bMake haste to Stonard in the Swamp of Sorrows, $n. And keep our little mission nice and quiet...",
@@ -9029,6 +9054,11 @@ pfDB["quests"]["zhTW"] = {
     ["O"] = "Read the Hallowed Rune and speak to Branstock Khalder in Anvilmar.",
     ["T"] = "Hallowed Rune",
   },
+  [3111] = {
+    ["D"] = "Long ago high elves taught us the secrets of magic along with our human allies. They preached to us about rules and how magic can make ya go mad! But don\'t believe it. We\'re not like the elves; we don\'t have the same weaknesses. Just keep yourself on the right path and you\'ll find magic is as powerful a tool as it is a weapon.$B$BWhen you\'re ready, come find me inside Anvilmar. I\'ll be waiting for ya!",
+    ["O"] = "Speak to Marryk Nurribit inside Anvilmar.",
+    ["T"] = "Glyphic Rune",
+  },
   [3112] = {
     ["D"] = "While you were helping me out, this memorandum was given to me to pass on to you. Take some time to read it when you have a chance. I\'m thinkin\' it came from the warrior trainer Thran. Take a gander at it and go find him inside Anvilmar when you\'ve a chance.",
     ["O"] = "Read the Simple Memorandum and speak to Thran Khorman in Coldridge Valley.",
@@ -9593,6 +9623,11 @@ pfDB["quests"]["zhTW"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Seeping Corruption",
+  },
+  [3581] = {
+    ["D"] = "Imagine yourself racing across the plains, through forests and over mountains, the wind in your face... Traveling over unseen territory",
+    ["O"] = "Speak to Saern Priderunner again to learn the Plainsrunning skill.",
+    ["T"] = "Plainsrunning",
   },
   [3601] = {
     ["D"] = "本人就是基姆加爾！！你知道基姆加爾對血精靈意味著什麼嗎，$N？一隻小老鼠……或者其他類似老鼠的東西，那些只會欺凌弱小的傢伙！$B$B他們雇用我來幫他們在這裡搜尋某種失落的寶物，當他們告訴我寶物的數量和願意付給我多少錢時，我就決定去做了，他們卻馬上翻臉，還想殺死我……我！$B$B所以，你看，永遠都不要相信血精靈。$B$B問題是，我的裝備還在他們手裡，我自己是拿不回來了。你能幫幫我嗎？",
@@ -12814,6 +12849,11 @@ pfDB["quests"]["zhTW"] = {
     ["O"] = "Speak to High Priestess Laurena in Stormwind.",
     ["T"] = "Arcane Feedback",
   },
+  [5678] = {
+    ["D"] = "It is time for you to return to Stormwind, young one. Your superiors there have called you back for more training. And although it disturbs me some, your race and mine are allies and I would not betray that.$b$bI do not mean to be so coy with you--my distrust of arcane magics, be they divine inspired or not, is still strong within me.$b$bYou will know of what I speak after you return to your Cathedral of Light. Speak to High Priestess Laurena when you arrive.",
+    ["O"] = "Speak to High Priestess Laurena in Stormwind.",
+    ["T"] = "Arcane Feedback",
+  },
   [5679] = {
     ["D"] = "",
     ["O"] = "",
@@ -13168,6 +13208,11 @@ pfDB["quests"]["zhTW"] = {
     ["D"] = "Around 4,000 years ago, Tyrande Whisperwind saved the life of the frostsaber queen, at the hands of rampaging giants. Since then, the frostsabers have been allies of the night elves.$B$BThese same giants that once were a danger to the frostsabers, still exist not too far from here. They are called the frostmaul, and they have taken over the large valley to the south.$B$BProve your loyalty to the frostsabers; kill these giants in the name of the frostsaber queen, Shy-Rotam!",
     ["O"] = "Rivern Frostwind wants you to kill 4 Frostmaul Giants and 4 Frostmaul Preservers.",
     ["T"] = "Rampaging Giants",
+  },
+  [6000] = {
+    ["D"] = "$N! I would not have expected to see you in the area were however instructed to hold after you look out.$B$BHighest one time of your training is continued. With the next attendance in Stormwind should you with Gakin clean-look. $B$BIt will expect you.",
+    ["O"] = "Announces you to Gakin the Darkbinder in the Magic quarter of Stormwind.",
+    ["T"] = "Swearing to Gakin",
   },
   [6001] = {
     ["D"] = "Directly east of Auberdine lay many moonkin caves.  The one closest to Auberdine has a Moonkin Stone inside it.  Lunaclaw, the defender of the stone, will face you only when Cenarion Moondust is applied to it.  Lunaclaw possesses within it a strength that you must use as one of the Claw.$B$BYou\'ve earned the right to use this Cenarion Moondust, $N... now show me that you\'ve earned the right to possess the strength of body and the strength of heart needed as a druid!",
@@ -13533,6 +13578,11 @@ pfDB["quests"]["zhTW"] = {
     ["D"] = "準備開張！你想要點什麼？$B$B啊，等等……沒有收據冊，我就不能開張。沒有收據冊的話，我怎麼能搞清楚帳目呢？$B$B我一定是把它丟在鎮裡了。我在旅店裡住過，一定是在那裡。$B$B把我的收據冊拿回來吧。請把它交給我！我要儘快開張營業，而你會看到我的價格完全出乎你的意料！",
     ["O"] = "把奧古斯圖斯的收據冊交給恐懼谷中精神失常的奧古斯圖斯。",
     ["T"] = "奧古斯圖斯的收據冊",
+  },
+  [6165] = {
+    ["D"] = "The details about this quest are missing",
+    ["O"] = "The description of this quest is missing",
+    ["T"] = "Archmage Timolain\'s Remains",
   },
   [6181] = {
     ["D"] = "Although we don\'t get much aid from Stormwind directly, I do have a contact in the city who helps supply us with armor.  His name is Osric Strang.  His shop, Limited Immunity, is in the Old Town of Stormwind.$B$BOur supply of armor dwindles, and I must contact Osric for more.  Can you take him this note?$B$BThe fastest way to Stormwind is through Thor, our gryphon master.  He\'s just down the hill; bring him my note, and then take a gryphon to Stormwind.",
@@ -14764,6 +14814,21 @@ pfDB["quests"]["zhTW"] = {
     ["O"] = "Travel to the Warpwood Quarter of Dire Maul and slay the water elemental, Hydrospawn. Return to Lorekeeper Lydros in the Athenaeum with the Hydrospawn Essence.",
     ["T"] = "Arcane Refreshment",
   },
+  [7478] = {
+    ["D"] = "Master Winthalus lost the Libram of Rapidity in the east wing. The Libram will allow for a minor haste cantrip to be placed upon your equipment. Parlor tricks, really...$B$BRegardless, if you are interested, you will need to present the Libram along with some basic reagents.$B$BHrm... I believe it also requires blood of heroes, a pristine black diamond, and large brilliant shards. I could be wrong!$B$B<Lydros shrugs.>",
+    ["O"] = "Bring a Libram of Rapidity, 1 Pristine Black Diamond, 2 Large Brilliant Shards, and 2 Blood of Heroes to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Rapidity.",
+    ["T"] = "Libram of Rapidity",
+  },
+  [7479] = {
+    ["D"] = "This libram almost aroused interest in one of the younger Lorekeeper\'s familiars. Poor thing, it was only a few weeks old.$B$BThose among you who are more magically inclined might find this item interesting.$B$BThe Libram of Focus was lost in this wing. I can only assume one of the Highborne spirits holds it in their possession.$B$BBring the Libram along with some large brilliant shards, skin of shadow, and a pristine black diamond and I shall conjure the Arcanum.",
+    ["O"] = "Bring a Libram of Focus, 1 Pristine Black Diamond, 4 Large Brilliant Shards, and 2 Skin of Shadow to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Focus.",
+    ["T"] = "Libram of Focus",
+  },
+  [7480] = {
+    ["D"] = "He wept like an infant at the loss of this libram. Mind you, I myself have wept over texts - there is no greater loss than that of knowledge and history - but to cry over this nearly useless jumbling of incantations? Preposterous! It left me to believe that the Prince was doing him a favor in flaying the flesh from his bones.$B$BBring the Libram along with a pristine black diamond, large brilliant shards, and a frayed abomination stitching and I shall recreate the Arcanum.$B$BOh, and check the north wing.",
+    ["O"] = "Bring a Libram of Protection, 1 Pristine Black Diamond, 2 Large Brilliant Shards, and 1 Frayed Abomination Stitching to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Protection.",
+    ["T"] = "Libram of Protection",
+  },
   [7481] = {
     ["D"] = "幾年前，一個名叫卡里爾·溫薩魯斯的精靈領主獨自帶著幾件上古精靈的神器逃離了他那飽經戰亂的家鄉。$B$B為了尋找這位失蹤的領主，我們離開了奎爾薩拉斯的廢墟，穿過燃燒平原以及廣闊的海洋，最終來到了菲拉斯。$B$B我們認為他就躲在埃德薩拉斯（現在被稱為厄運之槌）的大廳裡。$B$B你必須找到他，冒險者。無論他是死是活，我們必須拿回那些他所帶走的東西！",
     ["O"] = "到厄運之槌去尋找卡里爾·溫薩魯斯。向莫沙徹營地的先知科魯拉克報告你所找到的資訊。",
@@ -15203,6 +15268,16 @@ pfDB["quests"]["zhTW"] = {
     ["D"] = "$N, there is a pressing matter I hope you can help with... both materially and spiritually.  Allow me to explain.$B$BWithin the depths of the Scholomance in Lordaeron is a chamber called the Great Ossuary.  I need to complete a device that would pierce the shadows of this horrid room.  To finish what I have started, I need two diamonds: an Azerothian and a Pristine Black.  These are not trivial items, I know - I just don\'t have the resources myself.$B$BCould you provide me with one of each?",
     ["O"] = "If you are interested in helping Sagorne Crestrider in Orgrimmar\'s Valley of Wisdom, bring him an Azerothian Diamond and a Pristine Black Diamond.",
     ["T"] = "Material Assistance",
+  },
+  [7668] = {
+    ["D"] = "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to call forth Darkreaver\'s spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage done to the spirit realm!",
+    ["O"] = "Use the Divination Scryer in the heart of the Great Ossuary\'s basement in the Scholomance.  Doing so will bring forth spirits you must fight.  Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.$B$BBring Darkreaver\'s Head to Sagorne Creststrider in the Valley of Wisdom, Orgrimmar.",
+    ["T"] = "The Darkreaver Menace",
+  },
+  [7670] = {
+    ["D"] = "The time has come, $N, for you to learn about what it will take for you to acquire something you have no doubt waited on for some time... your charger.$B$BSpeak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.  It is he who will guide you not only though the legerdemain of a Paladin\'s most trusted mount, but the tasks before you to acquire one of your own.$B$BI wish you the best in this trial.  For the Light, noble $G brother : sister;!",
+    ["O"] = "Speak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.",
+    ["T"] = "Lord Grayson Shadowbreaker",
   },
   [7671] = {
     ["D"] = "",
@@ -16023,6 +16098,11 @@ pfDB["quests"]["zhTW"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "1200 Tickets - Amulet of the Darkmoon",
+  },
+  [8001] = {
+    ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
+    ["O"] = "Kill 5 Wretched Zombies",
+    ["T"] = "Zombie Cleansing",
   },
   [8041] = {
     ["D"] = "",
@@ -21093,6 +21173,11 @@ pfDB["quests"]["zhTW"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Major Mana Potion",
+  },
+  [9321] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Major Healing Potion",
   },
   [9322] = {
     ["D"] = "艾澤拉斯到處都在慶祝仲夏火焰節慶，而卡林多這塊多變的土地也不例外。你看起來很適合旅行 - 或許已經安排好一個旅程了。$b$b如果你沒有看過世界各處猛烈的藍色火焰就不算真的體驗了仲夏。司儀們在冷颼颼的西冬泉谷，艾薩拉東北邊，希利蘇斯荒地的勇士之墓附近，和通往繁茂安戈洛的入口都點燃了火焰。等你的旅行完成了再回來。",

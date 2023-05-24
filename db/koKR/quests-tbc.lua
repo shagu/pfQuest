@@ -831,6 +831,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "젊은 모험가들이여, 내 말을 잘 들으시오! 잿빛 골짜기의 야생이 당신을 기다리고 있소!$B$B우리 호드는 불모의 땅 북쪽에 튼튼한 기지를 세웠소. 토막나무 주둔지와 조람 해안 주둔지는 호드의 이름을 빛내려고 고군분투하고 있소! 자신을 증명하고 싶은 이는 모두 그곳으로 가서 길을 찾으시오. 불모의 땅 바로 북쪽에 있는 토막나무 주둔지의 세나니 썬더하트가 잿빛 골짜기 사냥 대회에 참가할 모험가를 모집하고 있다오!",
     ["O"] = "잿빛 골짜기의 토막나무 주둔지에 있는 세나니 썬더하트와 대화해야 합니다.",
   },
+  [236] = "_",
   [237] = {
     ["D"] = "산악경비대 코블플린트가 당신에 대해 입에 침이 마르도록 칭찬하더군, $C 친구. 그럼 당신을 믿고 아주 중대한 임무를 맡기도록 하겠소. 드워프 형제들이 얼라이언스 최전선으로부터 돌아올 때까지 침략자 트로그들을 계속 밀어붙여야 하오.$B$B남쪽 언덕으로 가서 가루바위 망치잡이 10마리와 가루바위 점쟁이 10마리를 처치해 주시오. 그러면 얼마간의 시간을 벌 수 있을 테니까 말이오. 임무를 완수하면 내게 돌아와 알려 주시오.",
     ["O"] = "남쪽 경비탑의 산악경비대 그래블고가 가루바위 망치잡이와 가루바위 점쟁이를 각각 10마리씩 처치한 후 그에게 돌아와 보고해 달라고 했습니다.",
@@ -3622,6 +3623,9 @@ pfDB["quests"]["koKR-tbc"] = {
   [1154] = {
     ["T"] = "지혜의 시험",
   },
+  [1156] = "_",
+  [1157] = "_",
+  [1158] = "_",
   [1159] = {
     ["T"] = "지혜의 시험",
   },
@@ -4022,8 +4026,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 6 Draenethyst crystals to Magtoor at The Harborage in the Swamp of Sorrows.",
   },
   [1390] = {
-    ["D"] = "Missing text",
-    ["O"] = "Missing text",
     ["T"] = "[Not Used] BETA Oops, We Killed Them Again.",
   },
   [1391] = {
@@ -5449,6 +5451,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [3110] = {
     ["T"] = "성스러운 룬",
   },
+  [3111] = "_",
   [3112] = {
     ["T"] = "간결한 쪽지",
   },
@@ -5805,6 +5808,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [3570] = {
     ["T"] = "스며드는 타락",
   },
+  [3581] = "_",
   [3601] = {
     ["D"] = "블러드 엘프들이 이 킴야엘을 어떻게 생각하는지 아시오? 겨우 쥐새끼 정도로 생각하지. 덩치만 커다란 깡패들 같으니라고!$B$B놈들은 나를 고용해서 무슨 잃어버린 \"보물\"을 찾아 지역을 정찰하는 일을 도와 달라고 했소. 나야 물론 보물에다 넉넉한 보수 얘기에 귀가 솔깃해 뛰어들었지만, 녀석들은 날 배신하고 죽이려고 했지. 감히 이 킴야엘을!$B$B이건 정말 블러드 엘프란 못 믿을 족속이라는 걸 단적으로 보여 주는 거요.$B$B그런데 문제는, 녀석들이 아직도 내 장비들을 가지고 있는데 나 혼자서는 그걸 되찾아올 수가 없다는 거요. 날 좀 도와주지 않겠소?",
     ["O"] = "탈라시안 주둔지에서 킴야엘의 나침반, 망원경, 박제한 닭, 땅콩까개를 찾은 후, 아즈샤라에 있는 킴야엘에게 돌려줘야 합니다.",
@@ -7460,6 +7464,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [5677] = {
     ["O"] = "스톰윈드에 있는 대여사제 로레나와 대화해야 합니다.",
   },
+  [5678] = "_",
   [5679] = {
     ["D"] = "Aelthalyste show our people great respect by sending them back to me for more training, and now I do the same for her tribe.$B$BYou return to the Undercity, $N. There, in the War Quarter, she be ready to teach you more \'bout your people and their ways. Go there, and do not wait long.",
     ["O"] = "Speak to Aelthalyste in the Undercity.",
@@ -7675,6 +7680,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "약 4000년 전, 티란데 위스퍼윈드께서 미친 거인들의 손아귀에서 눈호랑이의 여왕을 살려내셨다네. 그때부터 눈호랑이들은 나이트 엘프의 동맹군이 되었네.$B$B눈호랑이를 위협했던 그 거인들이 아직도 먼 곳에서 살고 있다네. 서리망치거인이라고 불리는 그들은 남쪽에 있는 거대한 계곡에 살고 있네.$B$B눈호랑이에게 자네의 충성심을 증명해 보이게. 눈호랑이의 여왕, 샤이로탐의 이름으로 그 거인들을 해치우게.",
     ["O"] = "리베른 프로스트윈드가 서리망치거인 4명과 서리망치거인 수호자 4명을 처치해 달라고 했습니다.",
   },
+  [6000] = "_",
   [6002] = {
     ["D"] = "On land west of Taurajo in the Barrens - just before it turns into Mulgore - lies a Moonkin Stone.  The moonkin are special beasts, not native to these parts.  Lunaclaw, the stone\'s defender, will face you when Cenarion Lunardust is applied to it.  Lunaclaw possesses within it a strength that you must use as one of the Claw.$B$BYou\'ve earned the right to use this Cenarion Lunardust, $N... now show me that you\'ve earned the right to possess the strength of body and the strength of heart needed as a druid!",
     ["O"] = "Use the Cenarion Lunardust on the Moonkin Stone between Mulgore and the Barrens to bring forth Lunaclaw.  From there, you must face Lunaclaw and earn the strength of body and heart it possesses.$B$BSpeak with Turak Runetotem in Thunder Bluff when you are done.",
@@ -7856,6 +7862,7 @@ pfDB["quests"]["koKR-tbc"] = {
   [6164] = {
     ["O"] = "Bring Augustus\' Receipt Book to Augustus the Touched in Terrordale.",
   },
+  [6165] = "_",
   [6181] = {
     ["T"] = "긴급 전갈",
   },
@@ -8541,6 +8548,9 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "$R 마법사로군! 정말 신기해. 마법사를 본 지가... 500년은 된 것 같군! 그래, 요즘은 어떻게 지내시오?$B$B당신의 갈증을 해소해줄 만한 게 있긴 하오만 먼저 내 부탁을 하나 들어줘야겠소.$B$B<킬킬거리는 리드로스>$B$B엘드레탈라스에 이례적인 사건이 하나 발생했소. 물의 정령 하나가 도서관 동쪽 서고에 거처를 잡았지 뭐요. 녀석의 출현 사실을 기록해야 하오이다!$B$B굽이나무 지구로 가서 히드로스폰의 정수를 추출해 오시오. 그걸 내게 가지고 오면 아주 유용한 주문을 하나 가르쳐 주도록 하지.",
     ["O"] = "혈투의 전장에 있는 굽이나무 지구로 가서 물의 정령인 히드로스폰을 처치하십시오. 히드로스폰의 정수를 가지고 도서관에 있는 현자 리드로스에게 가야 합니다.",
   },
+  [7478] = "_",
+  [7479] = "_",
+  [7480] = "_",
   [7481] = {
     ["D"] = "Several years ago, a lone elven master named Kariel Winthalus fled the devastation of his homeland with several ancient elven artifacts in tow.$B$BOur search for this lost master lead us from the ruins of Quel\'Thalas, through the Burning Steppes, across the great expanses of the sea, to Feralas.$B$BWe suspect that the elf sought sanctuary in the halls of Eldre\'Thalas (what is now known as Dire Maul).$B$BYou must find him, adventurer. Whether alive or dead, the knowledge he carried must be recovered!",
     ["O"] = "혈투의 전장을 뒤져 카리엘 윈탈루스를 찾으십시오. 찾을 수 있는 정보는 모두 찾아 모자케 야영지에 있는 현자 코로루스크에게 보고해야 합니다.",
@@ -8754,8 +8764,6 @@ pfDB["quests"]["koKR-tbc"] = {
   },
   [7668] = {
     ["D"] = "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to call forth Darkreaver\'s spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage dome to the spirit realm!",
-    ["O"] = "Use the Divination Scryer in the heart of the Great Ossuary\'s basement in the Scholomance.  Doing so will bring forth spirits you must fight.  Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.$B$BBring Darkreaver\'s Head to Sagorne Creststrider in the Valley of Wisdom, Orgrimmar.",
-    ["T"] = "The Darkreaver Menace",
   },
   [7669] = {
     ["D"] = "",
@@ -8763,8 +8771,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["T"] = "Again Into the Great Ossuary",
   },
   [7670] = {
-    ["D"] = "The time has come, $N, for you to learn about what it will take for you to acquire something you have no doubt waited on for some time... your charger.$B$BSpeak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.  It is he who will guide you not only though the legerdemain of a Paladin\'s most trusted mount, but the tasks before you to acquire one of your own.$B$BI wish you the best in this trial.  For the Light, noble $G brother : sister;!",
-    ["O"] = "Speak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.",
     ["T"] = "그레이슨 섀도브레이커 경",
   },
   [7677] = {
@@ -9101,8 +9107,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["T"] = "지긋지긋한 토끼 떼!",
   },
   [8001] = {
-    ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
-    ["O"] = "Kill 5 Wretched Zombies",
     ["T"] = "Warsong Outriders <NYI> <TXT>",
   },
   [8002] = {
@@ -12264,8 +12268,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["T"] = "일급 마나 물약",
   },
   [9321] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "일급 치유 물약",
   },
   [9322] = {

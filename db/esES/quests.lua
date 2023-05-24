@@ -1124,6 +1124,11 @@ pfDB["quests"]["esES"] = {
     ["O"] = "Habla con Senani Truenozón en Puesto del Hachazo, en Vallefresno.",
     ["T"] = "La Caza de Vallefresno",
   },
+  [236] = {
+    ["D"] = "A few weeks ago, I dispatched Watcher Callahan and a few others to the northern border of Duskwood to deal with the wolf infestation. I haven\'t heard word from him for quite some time. If he followed my instructions, he\'ll be camped out on the road north from Darkshire. $B$BIf it\'s on your way, please check up on him and inform him that I am awaiting a progress report from him.",
+    ["O"] = "Speak with Watcher Callahan.",
+    ["T"] = "Awaiting Word",
+  },
   [237] = {
     ["D"] = "El montaraz Pedernal habla muy bien de ti, $r. Por eso he decidido confiarte una misión de extrema importancia. Tenemos que mantener a raya a los trogg invasores hasta que nuestros hermanos regresen de luchar por la Alianza.$b$bDirígete a las colinas del sur y mata a diez aplastacráneos y diez profetas Rompecantos. Eso nos hará ganar tiempo. Regresa cuando termines la misión.",
     ["O"] = "El montaraz Gravagau, de la torre de vigilancia sur, quiere que mates a 10 aplastacráneos y 10 profetas Rompecantos. Luego ve a informarle.",
@@ -5464,6 +5469,21 @@ pfDB["quests"]["esES"] = {
     ["O"] = "Encuentra el Legado de los Aspectos y devuélveselo a Braug Espiritoscuro que se encuentra cerca de la entrada de El Paso del Espolón en Sierra Espolón.",
     ["T"] = "Prueba de conocimiento",
   },
+  [1156] = {
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<NYI> <TXT> speak to alchemist pestlezugg",
+  },
+  [1157] = {
+    ["D"] = "TODO",
+    ["O"] = "TODO",
+    ["T"] = "Alexstrasza",
+  },
+  [1158] = {
+    ["D"] = "TODO",
+    ["O"] = "TODO",
+    ["T"] = "Malygos",
+  },
   [1159] = {
     ["D"] = "Bien hecho, $N. Has superado la primera parte de la prueba de conocimiento pero aún hay otra pregunta que debes responder. Sin embargo, no seré yo quien te la haga.$B$BBusca a Parqual Fintallas en la ciudad de Lordaeron. Él era un gran historiador al servicio de los humanos antes de que la Plaga lo sorprendiera. Ahora sigue persiguiendo el conocimiento, pero de un modo distinto.$B$BAntes de formularte ninguna pregunta, te asignará otro encargo. Lo has hecho tan bien hasta el momento que no tengo ninguna duda de que superarás este obstáculo sin problemas.",
     ["O"] = "Encuentra a Parqual Fintallas en Entrañas.",
@@ -6098,6 +6118,11 @@ pfDB["quests"]["esES"] = {
     ["D"] = "Los Perdidos que habitan en Retiro Fangoso son como nosotros en apariencia pero, en realidad, son monstruos que enloquecieron debido a los rigores sufridos durante nuestro viaje a Azeroth. En su día hermanos nuestros, viven ahora en Retiro Fangoso hacia el este, donde atrapan o matan a todo aquel que vague por la zona.$B$BAdemás, nos han robado algo sagrado para nosotros: los cristales draenetistas.$B$BCarecemos de la fuerza necesaria para aventurarnos en Retiro Fangoso y recuperar los cristales que nos han sido robados de entre sus cabañas y hogueras, pero sin ellos... quizás perdamos nosotros también nuestro camino.",
     ["O"] = "Llévale 6 cristales draenetistas a Magtoor que está en El Malecón del Pantano de las Penas.",
     ["T"] = "Cristales draenetistas",
+  },
+  [1390] = {
+    ["D"] = "Missing text",
+    ["O"] = "Missing text",
+    ["T"] = "Oops, We Killed Them Again.",
   },
   [1391] = {
     ["D"] = "Tenemos que actuar con una cierta discreción. Después de todo, no puedes entrar ahí tal cual y esperar que ese loco se tome el suero de Faustin sin más, ¿no te parece?$B$BPero si hay una cosa a la que los humanos no se resisten es... la bebida. Voy a mezclar el suero de Faustin con esta cerveza. Te garantizo que ese infeliz se beberá la cerveza sin pensárselo dos veces.$B$BCorre hasta Rocal. Recuerda que está en el Pantano de las Penas. Y mantén nuestra misión en secreto...",
@@ -9029,6 +9054,11 @@ pfDB["quests"]["esES"] = {
     ["O"] = "Lee la runa sagrada, luego ve a Yunquemar y habla con  Branstock Khalder.",
     ["T"] = "Runa sagrada",
   },
+  [3111] = {
+    ["D"] = "Long ago high elves taught us the secrets of magic along with our human allies. They preached to us about rules and how magic can make ya go mad! But don\'t believe it. We\'re not like the elves; we don\'t have the same weaknesses. Just keep yourself on the right path and you\'ll find magic is as powerful a tool as it is a weapon.$B$BWhen you\'re ready, come find me inside Anvilmar. I\'ll be waiting for ya!",
+    ["O"] = "Speak to Marryk Nurribit inside Anvilmar.",
+    ["T"] = "Glyphic Rune",
+  },
   [3112] = {
     ["D"] = "Mientras me estabas ayudando, me fue confiado este memorándum para que te lo entregara. Cuando tengas la oportunidad, léelo. Creo que es de Thran, el instructor de guerreros. Échale un vistazo y, cuando puedas, ve a buscar a Thran a Yunquemar.",
     ["O"] = "Lee el memorándum simple, luego ve al Valle de Crestanevada y habla con Thran Khorman.",
@@ -9593,6 +9623,11 @@ pfDB["quests"]["esES"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "La filtración de la corrupción",
+  },
+  [3581] = {
+    ["D"] = "Imagine yourself racing across the plains, through forests and over mountains, the wind in your face... Traveling over unseen territory",
+    ["O"] = "Speak to Saern Priderunner again to learn the Plainsrunning skill.",
+    ["T"] = "Plainsrunning",
   },
   [3601] = {
     ["D"] = "¡¡Kim\'jael, claro!! ¿Sabes lo que significa Kim\'jael para los elfos de sangre, $n? Ratita... o algo parecido. ¡Abusones!$B$BMe contrataron para que los ayudara a rastrear el área en busca de algún tipo de tesoro perdido. Por supuesto, no me lo pensé un momento cuando mencionaron el \"tesoro\" y el dinero que me iban a pagar pero claro, se volvieron contra mí e intentaron matarme... ¡A MÍ!$B$BToma prueba, un elfo de sangre no es de fiar.$B$BEl problema es que aún tienen mi equipo y no puedo recuperarlo. ¿Me ayudas?",
@@ -12814,6 +12849,11 @@ pfDB["quests"]["esES"] = {
     ["O"] = "Habla con la suma sacerdotisa Laurena en Ventormenta.",
     ["T"] = "La reacción Arcana",
   },
+  [5678] = {
+    ["D"] = "It is time for you to return to Stormwind, young one. Your superiors there have called you back for more training. And although it disturbs me some, your race and mine are allies and I would not betray that.$b$bI do not mean to be so coy with you--my distrust of arcane magics, be they divine inspired or not, is still strong within me.$b$bYou will know of what I speak after you return to your Cathedral of Light. Speak to High Priestess Laurena when you arrive.",
+    ["O"] = "Speak to High Priestess Laurena in Stormwind.",
+    ["T"] = "Arcane Feedback",
+  },
   [5679] = {
     ["D"] = "",
     ["O"] = "",
@@ -13168,6 +13208,11 @@ pfDB["quests"]["esES"] = {
     ["D"] = "Hace unos 4.000 años, Tyrande Susurravientos salvó la vida de la reina de los sables de hielo, de manos de unos gigantes enloquecidos. Desde entonces los sables de hielo han estado aliados a los elfos de la noche.$B$BLos mismos gigantes que en su día amenazaron a los Sables de Hielo siguen presentes no lejos de aquí. Son los llamados Machacahielo y se han apoderado del valle del Sur.$B$BDemuestra tu lealtad a los sables de hielo. ¡Mata a esos gigantes en nombre de Shy-Rotam, la reina de los sables de hielo!",
     ["O"] = "Rivern Ventogélido quiere que mates 4 gigantes Machacahielo y 4 presertores Machacahielo.",
     ["T"] = "Gigantes arrasadores",
+  },
+  [6000] = {
+    ["D"] = "$N! I would not have expected to see you in the area were however instructed to hold after you look out.$B$BHighest one time of your training is continued. With the next attendance in Stormwind should you with Gakin clean-look. $B$BIt will expect you.",
+    ["O"] = "Announces you to Gakin the Darkbinder in the Magic quarter of Stormwind.",
+    ["T"] = "Swearing to Gakin",
   },
   [6001] = {
     ["D"] = "Al este de Auberdine hay muchas cuevas de lechúcicos lunares. La que está más cerca de Auberdine alberga una piedra de lechúcico lunar en su interior. Garraluna, el guardián de la piedra, solo se enfrentará a ti cuando le apliques polvo de luna Cenarion. Garraluna posee una fuerza que debes usar como miembro de la zarpa.$B$BTe has ganado el derecho a usar este polvo de luna Cenarion, $n... ¡Ahora demuéstrame que también te has ganado el derecho a poseer la fuerza física y de corazón que necesitas como druida!",
@@ -13533,6 +13578,11 @@ pfDB["quests"]["esES"] = {
     ["D"] = "¡Ya estoy! ¿Qué quieres?$B$BAy, espera... No puedo abrir la tienda sin mi libro de entradas. ¿Cómo voy a hacer nada sin registrarlo en mi libro de entradas?$B$BHe debido de dejarlo en la ciudad, en alguna parte. En mi habitación de la posada... debe de estar allí.$B$BTráeme mi libro. ¡Por favor, tráemelo! ¡Tráeme mi libro y verás! ¡Montaré la tienda y verás mis precios! ¡Son DE LOCOS!",
     ["O"] = "Lleva el libro de entradas de Augustus a Augustus el Agraciado a Valle del Terror.",
     ["T"] = "Libro de entradas de Augustus",
+  },
+  [6165] = {
+    ["D"] = "The details about this quest are missing",
+    ["O"] = "The description of this quest is missing",
+    ["T"] = "Archmage Timolain\'s Remains",
   },
   [6181] = {
     ["D"] = "Aunque no tenemos mucha ayuda directa desde Ventormenta, tengo un contacto en la ciudad que nos ayuda con los suministros de armaduras. Su nombre es Osric Strang. Su tienda, Inmunidad Limitada, está en el Casco Antiguo de Ventormenta.$B$BNuestro suministro se está agotando y debemos contactar con Osric para pedirle más. ¿Puedes llevarle esta nota?$B$BEl camino más rápido hasta Ventormenta es con Thor, nuestro maestro de grifos. Está justo bajo la colina, llévale mi nota y coge un grifo hasta Ventormenta.",
@@ -14764,6 +14814,21 @@ pfDB["quests"]["esES"] = {
     ["O"] = "Viaja al Barrio Alabeo de La Masacre y mata al elemental de agua, Hidromilecio. Lleva la esencia de Hidromilecio al Tradicionalista Lydros que está en El Athenaeum.",
     ["T"] = "El refresco arcano",
   },
+  [7478] = {
+    ["D"] = "Master Winthalus lost the Libram of Rapidity in the east wing. The Libram will allow for a minor haste cantrip to be placed upon your equipment. Parlor tricks, really...$B$BRegardless, if you are interested, you will need to present the Libram along with some basic reagents.$B$BHrm... I believe it also requires blood of heroes, a pristine black diamond, and large brilliant shards. I could be wrong!$B$B<Lydros shrugs.>",
+    ["O"] = "Bring a Libram of Rapidity, 1 Pristine Black Diamond, 2 Large Brilliant Shards, and 2 Blood of Heroes to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Rapidity.",
+    ["T"] = "Libram of Rapidity",
+  },
+  [7479] = {
+    ["D"] = "This libram almost aroused interest in one of the younger Lorekeeper\'s familiars. Poor thing, it was only a few weeks old.$B$BThose among you who are more magically inclined might find this item interesting.$B$BThe Libram of Focus was lost in this wing. I can only assume one of the Highborne spirits holds it in their possession.$B$BBring the Libram along with some large brilliant shards, skin of shadow, and a pristine black diamond and I shall conjure the Arcanum.",
+    ["O"] = "Bring a Libram of Focus, 1 Pristine Black Diamond, 4 Large Brilliant Shards, and 2 Skin of Shadow to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Focus.",
+    ["T"] = "Libram of Focus",
+  },
+  [7480] = {
+    ["D"] = "He wept like an infant at the loss of this libram. Mind you, I myself have wept over texts - there is no greater loss than that of knowledge and history - but to cry over this nearly useless jumbling of incantations? Preposterous! It left me to believe that the Prince was doing him a favor in flaying the flesh from his bones.$B$BBring the Libram along with a pristine black diamond, large brilliant shards, and a frayed abomination stitching and I shall recreate the Arcanum.$B$BOh, and check the north wing.",
+    ["O"] = "Bring a Libram of Protection, 1 Pristine Black Diamond, 2 Large Brilliant Shards, and 1 Frayed Abomination Stitching to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Protection.",
+    ["T"] = "Libram of Protection",
+  },
   [7481] = {
     ["D"] = "Hace varios años, un solitario maestro elfo llamado Kariel Winthalus huyó de la devastación de su tierra con su remolque lleno de antiguos artefactos élficos.$B$BSeguimos su rastro desde las ruinas de Quel\'Thalas hasta Feralas, a través de Las Estepas Ardientes y del ancho mar.$B$BSospechamos que buscó refugio en las salas de Eldre\'Thalas (que ahora se conocen como La Masacre).$B$BDebes encontrarlo. Esté vivo o muerto, es necesario recuperar los conocimientos que llevaba consigo.",
     ["O"] = "Busca a Kariel Winthalus en La Masacre. Vuelve al Campamento Mojache e informa al Sabio Korolusk de cualquier cosa que encuentres.",
@@ -15203,6 +15268,16 @@ pfDB["quests"]["esES"] = {
     ["D"] = "$n, hay un asunto urgente que creo que te interesará material y espiritualmente.$b$bEscondida en Scholomance, en Lordaeron, hay una cámara que se llama El Gran Osario. Quiero ultimar un instrumento que ahuyente las sombras de esa horrible sala. Para eso, necesito dos diamantes: uno de Azeroth y uno negro prístino. Sé que lo que pido no es fácil, pero no puedo hacerlo por mí mismo.$b$b¿Puedes traérmelos tú?",
     ["O"] = "Si te interesa ayudar a Sagorne Montacresta, llévale 1 diamante de Azeroth y 1 diamante negro prístino al Valle de la Sabiduría, en Orgrimmar.",
     ["T"] = "Asistencia material",
+  },
+  [7668] = {
+    ["D"] = "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to call forth Darkreaver\'s spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage done to the spirit realm!",
+    ["O"] = "Use the Divination Scryer in the heart of the Great Ossuary\'s basement in the Scholomance.  Doing so will bring forth spirits you must fight.  Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.$B$BBring Darkreaver\'s Head to Sagorne Creststrider in the Valley of Wisdom, Orgrimmar.",
+    ["T"] = "The Darkreaver Menace",
+  },
+  [7670] = {
+    ["D"] = "The time has come, $N, for you to learn about what it will take for you to acquire something you have no doubt waited on for some time... your charger.$B$BSpeak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.  It is he who will guide you not only though the legerdemain of a Paladin\'s most trusted mount, but the tasks before you to acquire one of your own.$B$BI wish you the best in this trial.  For the Light, noble $G brother : sister;!",
+    ["O"] = "Speak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.",
+    ["T"] = "Lord Grayson Shadowbreaker",
   },
   [7671] = {
     ["D"] = "",
@@ -16023,6 +16098,11 @@ pfDB["quests"]["esES"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "1200 vales: amuleto de la Luna Negra",
+  },
+  [8001] = {
+    ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
+    ["O"] = "Kill 5 Wretched Zombies",
+    ["T"] = "Zombie Cleansing",
   },
   [8041] = {
     ["D"] = "",
@@ -21093,6 +21173,11 @@ pfDB["quests"]["esES"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Superpoción de maná",
+  },
+  [9321] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Major Healing Potion",
   },
   [9322] = {
     ["D"] = "El Festival del Solsticio se celebra en todo Azeroth y las ricas tierras de Kalimdor no son una excepción. Parece que te gusta viajar; voy a darte un motivo para hacerlo.$b$bNo apreciarás realmente el solsticio de verano hasta que hayas visto las hogueras azules que arden por todas partes. Se han encendido hogueras en la helada Cuna del Invierno, al nordeste de Azshara, cerca de Sosiego del Valor en los eriales de Silithus y junto a la entrada del exuberante Un\'Goro. Regresa cuando hayas completado tu viaje.",

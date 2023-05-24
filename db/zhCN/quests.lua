@@ -1124,6 +1124,11 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "与灰谷碎木哨岗的塞娜尼·雷心谈一谈。",
     ["T"] = "灰谷狩猎",
   },
+  [236] = {
+    ["D"] = "A few weeks ago, I dispatched Watcher Callahan and a few others to the northern border of Duskwood to deal with the wolf infestation. I haven\'t heard word from him for quite some time. If he followed my instructions, he\'ll be camped out on the road north from Darkshire. $B$BIf it\'s on your way, please check up on him and inform him that I am awaiting a progress report from him.",
+    ["O"] = "Speak with Watcher Callahan.",
+    ["T"] = "Awaiting Word",
+  },
   [237] = {
     ["D"] = "巡山人库伯弗林特总是在我面前称赞你，$c。因此现在我要交给你一个极其重要的任务，你必须不断给那些入侵的穴居人施加压力，直到我们的兄弟们从联盟前线回来。$b$b到南部的丘陵去，杀掉10个碎石怪击颅者和10个碎石怪先知。你的行动可以为我们赢得一点时间，完成任务后就回来向我报告。",
     ["O"] = "南部警戒塔的巡山人格拉维戈要你杀掉10个碎石怪击颅者和10个碎石怪先知，然后回去向他汇报。",
@@ -5464,6 +5469,21 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "找到《巨龙的遗产》，把它还给位于灰谷和石爪山之间的石爪小径里的布劳格·幽魂。",
     ["T"] = "知识试炼",
   },
+  [1156] = {
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<NYI> <TXT> speak to alchemist pestlezugg",
+  },
+  [1157] = {
+    ["D"] = "TODO",
+    ["O"] = "TODO",
+    ["T"] = "Alexstrasza",
+  },
+  [1158] = {
+    ["D"] = "TODO",
+    ["O"] = "TODO",
+    ["T"] = "Malygos",
+  },
   [1159] = {
     ["D"] = "干得好，$N。你已经通过了知识的试炼的第一部分，但是此外还有一个问题要你回答，这个问题将由别人来提出。$B$B去找洛丹伦城的帕科瓦·芬塔拉斯。在被瘟疫控制之前，他曾是一个伟大的人类历史学家。现在他依然继续寻求着启迪，虽然那是一种不同性质的启迪。$B$B他在向你提问之前会另有一个要求。到目前为止你都能对各种情况应付自如——因此我也相信你能越过这个障碍。",
     ["O"] = "找到幽暗城的帕科瓦·芬塔拉斯。",
@@ -6098,6 +6118,11 @@ pfDB["quests"]["zhCN"] = {
     ["D"] = "农田避难所里的那些失落者和我们是同族，但他们已经是疯狂的怪物了……在我们来到艾泽拉斯的那段残酷的征途把他们活活逼疯了！他们现在就住在东边的农田避难所里，任何在附近徘徊的人都有可能被他们抓住或杀掉……$B$B他们还偷走了我们的圣物——德莱尼水晶。$B$B我们没有足够的力量进入农田避难所去夺回那些被他们扔在小屋和营火附近的水晶，但是失去了那些水晶……我们就会迷失自己的方向。",
     ["O"] = "给悲伤沼泽避难营地里的玛格图尔带去6块德莱尼水晶。",
     ["T"] = "德莱尼水晶",
+  },
+  [1390] = {
+    ["D"] = "Missing text",
+    ["O"] = "Missing text",
+    ["T"] = "Oops, We Killed Them Again.",
   },
   [1391] = {
     ["D"] = "要办成这事，我们还得想点办法。毕竟你不可能大摇大摆地走进去，然后说服那个傻瓜喝下法奥斯丁配制的药水，对吧？$b$b不过有一样东西是这些人类肯定不会拒绝的，那就是酒。我会把法奥斯丁的药水和这瓶麦酒混合在一起，那个可怜的傻瓜肯定会毫不犹豫地一饮而尽。$b$b赶紧去悲伤沼泽的斯通纳德要塞，$n。什么都不要告诉别人……",
@@ -9029,6 +9054,11 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "阅读神圣符文，然后与安威玛尔的布兰斯托·卡尔德谈一谈。",
     ["T"] = "神圣符文",
   },
+  [3111] = {
+    ["D"] = "Long ago high elves taught us the secrets of magic along with our human allies. They preached to us about rules and how magic can make ya go mad! But don\'t believe it. We\'re not like the elves; we don\'t have the same weaknesses. Just keep yourself on the right path and you\'ll find magic is as powerful a tool as it is a weapon.$B$BWhen you\'re ready, come find me inside Anvilmar. I\'ll be waiting for ya!",
+    ["O"] = "Speak to Marryk Nurribit inside Anvilmar.",
+    ["T"] = "Glyphic Rune",
+  },
   [3112] = {
     ["D"] = "你刚才在外面忙碌的时候，有人让我把这个备忘录交给你。如果你有时间的话就看一下吧，好像是战士训练师斯兰·库尔曼写给你的，他就在安威玛尔里面。",
     ["O"] = "阅读简易备忘录，然后与寒脊山谷的斯兰·库尔曼谈一谈。",
@@ -9593,6 +9623,11 @@ pfDB["quests"]["zhCN"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "堕落之水",
+  },
+  [3581] = {
+    ["D"] = "Imagine yourself racing across the plains, through forests and over mountains, the wind in your face... Traveling over unseen territory",
+    ["O"] = "Speak to Saern Priderunner again to learn the Plainsrunning skill.",
+    ["T"] = "Plainsrunning",
   },
   [3601] = {
     ["D"] = "我就是基姆加尔！你知道基姆加尔对血精灵意味着什么吗，$N？我对他们来说不过是一只小老鼠……或者其它类似老鼠的东西，那些该死的欺凌弱小的家伙！$B$B他们雇佣我来帮他们在这里搜寻一些失落的宝物，当然，在他们告诉我要找什么东西以及他们愿意付给我多少钱之后，我就决定单干了。他们马上翻脸，还想干掉我……干掉我！$B$B所以，你看，永远都不要相信血精灵。$B$B问题是，我的一些东西还在他们手里，看样子我自己是拿不回来了。你能帮帮我吗？",
@@ -12814,6 +12849,11 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "与暴风城的高阶牧师劳瑞娜谈一谈。",
     ["T"] = "奥术回馈者",
   },
+  [5678] = {
+    ["D"] = "It is time for you to return to Stormwind, young one. Your superiors there have called you back for more training. And although it disturbs me some, your race and mine are allies and I would not betray that.$b$bI do not mean to be so coy with you--my distrust of arcane magics, be they divine inspired or not, is still strong within me.$b$bYou will know of what I speak after you return to your Cathedral of Light. Speak to High Priestess Laurena when you arrive.",
+    ["O"] = "Speak to High Priestess Laurena in Stormwind.",
+    ["T"] = "Arcane Feedback",
+  },
   [5679] = {
     ["D"] = "",
     ["O"] = "",
@@ -13168,6 +13208,11 @@ pfDB["quests"]["zhCN"] = {
     ["D"] = "大约四千年前，泰兰德·语风从狂暴的巨人手中救了霜刃豹女王的命。从那个时候开始，霜刃豹就是暗夜精灵的盟友。$B$B那些对霜刃豹造成极大威胁的巨人依然在这附近徘徊——霜槌巨人占据了这里南边的一处山谷。$B$B向霜刃豹证明你的忠诚吧；以霜刃豹女王希洛塔姆的名义杀死那些巨人！",
     ["O"] = "雷沃·霜翼要你去杀死4个霜槌巨人和4个霜槌保卫者。",
     ["T"] = "狂暴的巨人",
+  },
+  [6000] = {
+    ["D"] = "$N! I would not have expected to see you in the area were however instructed to hold after you look out.$B$BHighest one time of your training is continued. With the next attendance in Stormwind should you with Gakin clean-look. $B$BIt will expect you.",
+    ["O"] = "Announces you to Gakin the Darkbinder in the Magic quarter of Stormwind.",
+    ["T"] = "Swearing to Gakin",
   },
   [6001] = {
     ["D"] = "在奥伯丁的正东方有很多月夜枭兽的洞穴，离奥伯丁最近的洞穴内有一块月夜枭兽之石。月爪枭兽是这块石头的守护者，只有当塞纳里奥月尘洒在石头上的时候它才会出现。月爪枭兽的体内有一种力量，你必须得到这种力量，才能成为真正的利爪德鲁伊。$B$B你已经获得了使用塞纳里奥月尘的权力，$N……现在向我证明你已经赢得了拥有身心之力的权力！",
@@ -13533,6 +13578,11 @@ pfDB["quests"]["zhCN"] = {
     ["D"] = "准备开张！你想要点什么？$B$B啊，等等……没有收据册，我就不能开张。没有收据册的话，我怎么能搞清楚帐目呢？$B$B我一定是把它丢在镇子里了。我在旅店里住过，一定是在那里。$B$B把我的收据册拿回来吧。请把它交给我！我要尽快开张营业，而你会看到我的价格完全出乎你的意料！",
     ["O"] = "把奥古斯图斯的收据册交给恶蛛隧道中的被感动的奥古斯图斯。",
     ["T"] = "奥古斯图斯的收据册",
+  },
+  [6165] = {
+    ["D"] = "The details about this quest are missing",
+    ["O"] = "The description of this quest is missing",
+    ["T"] = "Archmage Timolain\'s Remains",
   },
   [6181] = {
     ["D"] = "尽管我没有直接从暴风城得到很多帮助，但是城里有个好心人一直在为我提供护具。他的名字叫做奥斯瑞克·斯图恩，他在暴风城的旧城区里开了一家名叫“有限防护”的店。$B$B现在我们的护甲供应短缺，所以我必须联系到奥斯瑞克以得到更多的装备。你能把这张便笺交给他吗？$B$B到暴风城去的最快捷的办法就是通过索尔，我们的狮鹫管理员。他就在山脚下，把我的便笺拿给他看看，然后从他那里租一头狮鹫飞到暴风城去吧。",
@@ -14764,6 +14814,21 @@ pfDB["quests"]["zhCN"] = {
     ["O"] = "到厄运之槌的扭木广场去杀掉水元素海多斯博恩。把海多斯博恩精华交给图书馆的博学者莱德罗斯。",
     ["T"] = "久违的法师",
   },
+  [7478] = {
+    ["D"] = "Master Winthalus lost the Libram of Rapidity in the east wing. The Libram will allow for a minor haste cantrip to be placed upon your equipment. Parlor tricks, really...$B$BRegardless, if you are interested, you will need to present the Libram along with some basic reagents.$B$BHrm... I believe it also requires blood of heroes, a pristine black diamond, and large brilliant shards. I could be wrong!$B$B<Lydros shrugs.>",
+    ["O"] = "Bring a Libram of Rapidity, 1 Pristine Black Diamond, 2 Large Brilliant Shards, and 2 Blood of Heroes to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Rapidity.",
+    ["T"] = "Libram of Rapidity",
+  },
+  [7479] = {
+    ["D"] = "This libram almost aroused interest in one of the younger Lorekeeper\'s familiars. Poor thing, it was only a few weeks old.$B$BThose among you who are more magically inclined might find this item interesting.$B$BThe Libram of Focus was lost in this wing. I can only assume one of the Highborne spirits holds it in their possession.$B$BBring the Libram along with some large brilliant shards, skin of shadow, and a pristine black diamond and I shall conjure the Arcanum.",
+    ["O"] = "Bring a Libram of Focus, 1 Pristine Black Diamond, 4 Large Brilliant Shards, and 2 Skin of Shadow to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Focus.",
+    ["T"] = "Libram of Focus",
+  },
+  [7480] = {
+    ["D"] = "He wept like an infant at the loss of this libram. Mind you, I myself have wept over texts - there is no greater loss than that of knowledge and history - but to cry over this nearly useless jumbling of incantations? Preposterous! It left me to believe that the Prince was doing him a favor in flaying the flesh from his bones.$B$BBring the Libram along with a pristine black diamond, large brilliant shards, and a frayed abomination stitching and I shall recreate the Arcanum.$B$BOh, and check the north wing.",
+    ["O"] = "Bring a Libram of Protection, 1 Pristine Black Diamond, 2 Large Brilliant Shards, and 1 Frayed Abomination Stitching to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Protection.",
+    ["T"] = "Libram of Protection",
+  },
   [7481] = {
     ["D"] = "几年前，一个名叫卡里尔·温萨鲁斯的精灵领主独自带着几件上古精灵的神器逃离了他那饱经战乱的家乡。$B$B为了寻找这位失踪的领主，我们离开了奎尔萨拉斯的废墟，穿过燃烧平原以及广阔的海洋，最终来到了菲拉斯。$B$B我们认为他就躲在埃雷萨拉斯（现在被称为厄运之槌）的大厅里。$B$B你必须找到他，冒险者。无论他是死是活，我们必须拿回那些他所带走的东西！",
     ["O"] = "到厄运之槌去寻找卡里尔·温萨鲁斯。向莫沙彻营地的先知科鲁拉克报告你所找到的信息。",
@@ -15203,6 +15268,16 @@ pfDB["quests"]["zhCN"] = {
     ["D"] = "$N，这是一件我希望能得到你帮助的事情，一件重要的事情……请允许我解释一下。$B$B在洛丹伦的通灵学院中有一个被称为尸骨储藏所的房间。我要制造一个能够洞穿那个房间中的邪恶力量的装置，因此我需要两块钻石：一块艾泽拉斯钻石和一块原始黑钻石。我知道这两样东西都不是那么容易得到的，而且我自己没有办法得到。$B$B你能帮我拿来这两样东西吗？",
     ["O"] = "如果你愿意帮助奥格瑞玛智慧谷的萨格尼，就将一块艾泽拉斯钻石和一块原始黑钻石交给他。",
     ["T"] = "收集材料",
+  },
+  [7668] = {
+    ["D"] = "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to call forth Darkreaver\'s spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage done to the spirit realm!",
+    ["O"] = "Use the Divination Scryer in the heart of the Great Ossuary\'s basement in the Scholomance.  Doing so will bring forth spirits you must fight.  Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.$B$BBring Darkreaver\'s Head to Sagorne Creststrider in the Valley of Wisdom, Orgrimmar.",
+    ["T"] = "The Darkreaver Menace",
+  },
+  [7670] = {
+    ["D"] = "The time has come, $N, for you to learn about what it will take for you to acquire something you have no doubt waited on for some time... your charger.$B$BSpeak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.  It is he who will guide you not only though the legerdemain of a Paladin\'s most trusted mount, but the tasks before you to acquire one of your own.$B$BI wish you the best in this trial.  For the Light, noble $G brother : sister;!",
+    ["O"] = "Speak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.",
+    ["T"] = "Lord Grayson Shadowbreaker",
   },
   [7671] = {
     ["D"] = "The details about this quest are missing",
@@ -16023,6 +16098,11 @@ pfDB["quests"]["zhCN"] = {
     ["D"] = "Step right up, step right up! If you have tickets from the Darkmoon Faire you\'d like redeemed, then just say so! You can redeem tickets in various denominations for wondrous and fantastic prizes. Don\'t be shy, give it a try!",
     ["O"] = "Redeem 1200 Darkmoon Faire Prize Tickets for an Amulet of the Darkmoon.",
     ["T"] = "1200张彩票 - 暗月护符",
+  },
+  [8001] = {
+    ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
+    ["O"] = "Kill 5 Wretched Zombies",
+    ["T"] = "Zombie Cleansing",
   },
   [8041] = {
     ["D"] = "",
@@ -21093,6 +21173,11 @@ pfDB["quests"]["zhCN"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "极效法力药水",
+  },
+  [9321] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Major Healing Potion",
   },
   [9322] = {
     ["D"] = "艾泽拉斯世界上的每一处地方都会庆祝仲夏的来临，广袤的卡利姆多大陆也是如此，或许你会有兴趣那那边看一看。$b$b若你没有真正地感受过那些熊熊燃烧着的火焰，那么你是无法彻底了解仲夏的。庆祝者已经在寒冷的冬泉谷西部、艾萨拉东北部、希利苏斯废土上的勇士之墓附近，以及富饶美丽的安戈洛环行山入口处都点起了火焰，去看看吧。你的旅程结束以后，别忘了回来找我。",

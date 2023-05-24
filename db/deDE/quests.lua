@@ -1124,6 +1124,11 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Sprecht mit Seneni Thunderheart im Splintertreeposten in Ashenvale.",
     ["T"] = "Die Jagd in Ashenvale",
   },
+  [236] = {
+    ["D"] = "A few weeks ago, I dispatched Watcher Callahan and a few others to the northern border of Duskwood to deal with the wolf infestation. I haven\'t heard word from him for quite some time. If he followed my instructions, he\'ll be camped out on the road north from Darkshire. $B$BIf it\'s on your way, please check up on him and inform him that I am awaiting a progress report from him.",
+    ["O"] = "Speak with Watcher Callahan.",
+    ["T"] = "Awaiting Word",
+  },
   [237] = {
     ["D"] = "Gebirgsjäger Cobbleflint hat nur Gutes über Euch zu berichten gehabt, $R. Daher werde ich Euch eine Mission von äußerster Wichtigkeit anvertrauen. Wir müssen den Druck auf die eindringenden Trogg-Streitkräfte aufrechterhalten, bis unsere Brüder, die Zwerge, von der Front der Allianz zurückkehren.$b$bBegebt Euch in die südlichen Hügel und tötet 10 Stonesplitter-Schädelhauer und 10 Stonesplitter-Seher. Eure Angriffe werden uns etwas Zeit verschaffen. Erstattet Bericht, sobald Ihr die Aufgabe erfüllt habt.",
     ["O"] = "Gebirgsjäger Gravelgaw im südlichen Wachturm möchte, dass Ihr 10 Stonesplitter-Schädelhauer und 10 Stonesplitter-Seher tötet und ihm anschließend Bericht erstattet.",
@@ -5464,6 +5469,21 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Sucht das \'Vermächtnis der Aspekte\' und bringt es zu Braug Dimspirit in der Nähe des Eingangs zum Steinkrallenpfad im Steinkrallengebirge zurück.",
     ["T"] = "Test der Lehre",
   },
+  [1156] = {
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<NYI> <TXT> speak to alchemist pestlezugg",
+  },
+  [1157] = {
+    ["D"] = "TODO",
+    ["O"] = "TODO",
+    ["T"] = "Alexstrasza",
+  },
+  [1158] = {
+    ["D"] = "TODO",
+    ["O"] = "TODO",
+    ["T"] = "Malygos",
+  },
   [1159] = {
     ["D"] = "Gut gemacht, $n. Ihr habt den ersten Teil des Tests der Lehren bestanden, aber es bleibt noch eine Frage zu beantworten. Aber es ist nicht an mir, diese Frage zu stellen.$B$BBesucht Parqual Fintallas in Lordaeron. Er war ein bedeutender Historiker der Menschen, bevor die Seuche ihn erwischte. Jetzt sucht er immer noch Erleuchtung, freilich einer ganz anderen Art.$B$BEr wird eine weitere Forderung an Euch stellen, bevor er Euch etwas fragt, aber Ihr habt Euch bisher meisterhaft geschlagen - ich bin sicher, Ihr werdet dieses Hindernis überwinden.",
     ["O"] = "Sucht Parqual Fintallas in Undercity.",
@@ -6098,6 +6118,11 @@ pfDB["quests"]["deDE"] = {
     ["D"] = "Die Verirrten, die im Fallow Heiligtum leben, sehen aus wie wir, aber sie sind Monster... die üblen Unbilden auf unserem Trek nach Azeroth haben sie wahnsinnig gemacht. Einst waren sie unsere Brüder, doch nun leben sie im Fallow Heiligtum im Osten und fangen oder töten alle, die sich in die Nähe wagen.$B$BUnd sie haben uns etwas Heiliges gestohlen - Draenethystkristalle.$B$BUns fehlt die Kraft, das Fallow Heiligtum zu betreten und unseren gestohlenen Draenethyst von ihren Hütten und Lagerfeuern zu holen, aber ohne diese Kristalle... könnten auch wir vom rechten Weg abkommen.",
     ["O"] = "Bringt 6 Draenethystkristalle zu Magtoor im Sicheren Hafen in den Sümpfen des Elends.",
     ["T"] = "Draenethystkristalle",
+  },
+  [1390] = {
+    ["D"] = "Missing text",
+    ["O"] = "Missing text",
+    ["T"] = "Oops, We Killed Them Again.",
   },
   [1391] = {
     ["D"] = "Wir müssen mit einer gewissen Diskretion vorgehen. Immerhin werdet Ihr nicht da reinspazieren und den Narren überzeugen, Faustins Gebräu zu trinken, richtig?$b$bAber wenn es eines gibt, zu dem die Menschen nicht nein sagen können, dann ist es Fusel. Ich nehme Faustins Serum und mische es in dieses Bier. Der arme Kerl wird garantiert keine Hemmungen haben, wenn es darum geht, ein Gebräu zu kippen.$b$bGeht hastig nach Stonard in den Sümpfen des Elends, $n. Und schweigt schön stille über unsere kleine Mission ...",
@@ -9029,6 +9054,11 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Lest die geheiligte Rune und sprecht mit Branstock Khalder in Anvilmar.",
     ["T"] = "Geheiligte Rune",
   },
+  [3111] = {
+    ["D"] = "Long ago high elves taught us the secrets of magic along with our human allies. They preached to us about rules and how magic can make ya go mad! But don\'t believe it. We\'re not like the elves; we don\'t have the same weaknesses. Just keep yourself on the right path and you\'ll find magic is as powerful a tool as it is a weapon.$B$BWhen you\'re ready, come find me inside Anvilmar. I\'ll be waiting for ya!",
+    ["O"] = "Speak to Marryk Nurribit inside Anvilmar.",
+    ["T"] = "Glyphic Rune",
+  },
   [3112] = {
     ["D"] = "Während Ihr unterwegs wart, um mir zu helfen, wurde mir dieses Memorandum für Euch gegeben. Nehmt Euch die Zeit, es zu lesen, wenn Ihr die Gelegenheit dazu habt. Ich glaube, es kommt vom Kriegerlehrer Thran. Werft einen Blick darauf und sucht ihn dann in Anvilmar auf, sobald Ihr die Gelegenheit dazu habt.",
     ["O"] = "Lest das einfache Memorandum und sprecht mit Thran Khorman im Coldridgetal.",
@@ -9593,6 +9623,11 @@ pfDB["quests"]["deDE"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Verbreitete Verderbnis",
+  },
+  [3581] = {
+    ["D"] = "Imagine yourself racing across the plains, through forests and over mountains, the wind in your face... Traveling over unseen territory",
+    ["O"] = "Speak to Saern Priderunner again to learn the Plainsrunning skill.",
+    ["T"] = "Plainsrunning",
   },
   [3601] = {
     ["D"] = "Kim\'jael, fürwahr! Wisst Ihr, was Kim\'jael für die Blutelfen bedeutet, $N? Kleine Ratte... oder so etwas in der Art. Diese großen Angeber!$B$BSie haben mich angeworben, damit ich ihnen helfe, das Gebiet auszukundschaften und nach einer Art verlorenen Schatz zu suchen. Natürlich habe ich sofort zugegriffen, als sie das Wort \'Schatz\' erwähnten und die Summe, die sie mir bezahlen wollten. Aber dann haben sie sich gegen mich gewandt und versucht, mich zu töten... MICH!$B$BDas zeigt einmal mehr, dass einem Blutelfen nicht zu trauen ist.$B$BMein Problem ist: Sie haben immer noch meine Ausrüstung, und ich kann sie nicht wiederbekommen. Helft Ihr mir?",
@@ -12814,6 +12849,11 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Sprecht mit der Hohepriesterin Laurena in Stormwind.",
     ["T"] = "Arkane Rückkopplung",
   },
+  [5678] = {
+    ["D"] = "It is time for you to return to Stormwind, young one. Your superiors there have called you back for more training. And although it disturbs me some, your race and mine are allies and I would not betray that.$b$bI do not mean to be so coy with you--my distrust of arcane magics, be they divine inspired or not, is still strong within me.$b$bYou will know of what I speak after you return to your Cathedral of Light. Speak to High Priestess Laurena when you arrive.",
+    ["O"] = "Speak to High Priestess Laurena in Stormwind.",
+    ["T"] = "Arcane Feedback",
+  },
   [5679] = {
     ["D"] = "",
     ["O"] = "",
@@ -13168,6 +13208,11 @@ pfDB["quests"]["deDE"] = {
     ["D"] = "Vor rund 4000 Jahren rettete Tyrande Whisperwind die Frostsäblerkönigin aus den Händen tobender Riesen. Seither sind die Frostsäbler Verbündete der Nachtelfen.$B$BDoch die Riesen, die einst eine Gefahr für die Frostsäbler waren, gibt es noch immer, und das nicht allzu weit von hier entfernt. Man nennt sie Frosthagelriesen und sie haben das große Tal südlich von hier für sich beansprucht.$B$BBeweist Eure Treue zu den Frostsäblern. Tötet diese Riesen im Namen der Frostsäblerkönigin Shy-Rotam!",
     ["O"] = "Rivern Frostwind möchte, dass Ihr 4 Frosthagelriesen und 4 Frosthagelbewahrer besiegt.",
     ["T"] = "Tobende Riesen",
+  },
+  [6000] = {
+    ["D"] = "$N! I would not have expected to see you in the area were however instructed to hold after you look out.$B$BHighest one time of your training is continued. With the next attendance in Stormwind should you with Gakin clean-look. $B$BIt will expect you.",
+    ["O"] = "Announces you to Gakin the Darkbinder in the Magic quarter of Stormwind.",
+    ["T"] = "Swearing to Gakin",
   },
   [6001] = {
     ["D"] = "Unmittelbar östlich von Auberdine liegen viele Moonkinhöhlen. In der Auberdine am nächsten gelegenen Höhle befindet sich ein Moonkinstein. Mondklaue, der Verteidiger des Steins, stellt sich Euch nur, wenn Mondstaub des Cenarius darauf angewendet wird. Mondklaue besitzt eine innere Stärke, die Ihr als einer der Klaue benutzen müsst.$B$BIhr habt Euch das Recht verdient, diesen Mondstaub des Cenarius zu benutzen, $N... jetzt zeigt mir, dass Ihr Euch das Recht verdient habt, die Kraft des Körpers und des Herzens zu besitzen, die man als Druide braucht!",
@@ -13533,6 +13578,11 @@ pfDB["quests"]["deDE"] = {
     ["D"] = "Ich bin jetzt bereit für\'s Geschäftliche! Was wollt Ihr?$B$BOh, Moment mal... ohne mein Quittungsbuch kann ich kein Geschäft eröffnen. Wie soll ich ohne mein Quittungsbuch den Überblick behalten?$B$BIch muss es in der Stadt gelassen haben. Ich hatte ein Zimmer im Gasthaus... dort muss das Buch sein.$B$BBringt mir mein Buch. Bitte, bringt es mir! Bringt mir mein Buch und Ihr werdet sehen! Ich eröffne mein Geschäft und Ihr werdet sehen, dass meine Preise der WAHNSINN sind!",
     ["O"] = "Bringt Augustus\' Quittungsbuch zu Augustus dem Meschuggenen im Schreckenstal.",
     ["T"] = "Augustus\' Rezeptbuch",
+  },
+  [6165] = {
+    ["D"] = "The details about this quest are missing",
+    ["O"] = "The description of this quest is missing",
+    ["T"] = "Archmage Timolain\'s Remains",
   },
   [6181] = {
     ["D"] = "Wir bekommen zwar nicht viel Unterstützung von Stormwind direkt, aber ich habe einen Kontaktmann in der Stadt, der uns mit Rüstungen versorgt. Sein Name ist Osric Strang. Sein Geschäft, Begrenzte Immunität, liegt in der Altstadt von Stormwind.$B$BUnser Vorrat an Rüstung schwindet, ich muss bei Osric mehr bestellen. Könnt Ihr ihm diese Notiz bringen?$B$BDer schnellste Weg nach Stormwind führt über Thor, unseren Greifenmeister. Er ist unten am Hügel; bringt ihm meine Notiz und nehmt dann einen Greifen nach Stormwind.",
@@ -14764,6 +14814,21 @@ pfDB["quests"]["deDE"] = {
     ["O"] = "Reist nach Düsterbruch in das Wucherborkenviertel und besiegt den Wasserelementar Hydrobrut. Kehrt anschließend mit der Hydrobrutessenz zum Wissenshüter Lydros im Athenaeum zurück.",
     ["T"] = "Arkane Erfrischung",
   },
+  [7478] = {
+    ["D"] = "Master Winthalus lost the Libram of Rapidity in the east wing. The Libram will allow for a minor haste cantrip to be placed upon your equipment. Parlor tricks, really...$B$BRegardless, if you are interested, you will need to present the Libram along with some basic reagents.$B$BHrm... I believe it also requires blood of heroes, a pristine black diamond, and large brilliant shards. I could be wrong!$B$B<Lydros shrugs.>",
+    ["O"] = "Bring a Libram of Rapidity, 1 Pristine Black Diamond, 2 Large Brilliant Shards, and 2 Blood of Heroes to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Rapidity.",
+    ["T"] = "Libram of Rapidity",
+  },
+  [7479] = {
+    ["D"] = "This libram almost aroused interest in one of the younger Lorekeeper\'s familiars. Poor thing, it was only a few weeks old.$B$BThose among you who are more magically inclined might find this item interesting.$B$BThe Libram of Focus was lost in this wing. I can only assume one of the Highborne spirits holds it in their possession.$B$BBring the Libram along with some large brilliant shards, skin of shadow, and a pristine black diamond and I shall conjure the Arcanum.",
+    ["O"] = "Bring a Libram of Focus, 1 Pristine Black Diamond, 4 Large Brilliant Shards, and 2 Skin of Shadow to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Focus.",
+    ["T"] = "Libram of Focus",
+  },
+  [7480] = {
+    ["D"] = "He wept like an infant at the loss of this libram. Mind you, I myself have wept over texts - there is no greater loss than that of knowledge and history - but to cry over this nearly useless jumbling of incantations? Preposterous! It left me to believe that the Prince was doing him a favor in flaying the flesh from his bones.$B$BBring the Libram along with a pristine black diamond, large brilliant shards, and a frayed abomination stitching and I shall recreate the Arcanum.$B$BOh, and check the north wing.",
+    ["O"] = "Bring a Libram of Protection, 1 Pristine Black Diamond, 2 Large Brilliant Shards, and 1 Frayed Abomination Stitching to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Protection.",
+    ["T"] = "Libram of Protection",
+  },
   [7481] = {
     ["D"] = "Vor vielen Jahren entkam ein einzelner Elfenmeister namens Kariel Winthalus der Vernichtung seines Heimatlandes. Bei sich trug er einige uralte Artefakte der Elfen.$B$BUnsere Suche nach dem verschwundenen Meister führte uns von den Ruinen Quel\'Thalas, durch die Brennende Steppe, über die großen Weiten der See, hinüber nach Feralas.$B$BWir nehmen an, dass der Elf in den Hallen von Eldre\'Thalas, die nun als Düsterbruch bekannt sind, Schutz suchte.$B$BIhr müsst ihn finden, Abenteurer. Ob er nun lebt oder schon lange tot ist, das Wissen, welches er bei sich trug, muss gerettet werden!",
     ["O"] = "Sucht in Düsterbruch nach Kariel Winthalus. Meldet Euch anschließend bei dem Weisen Korolusk in Camp Mojache.",
@@ -15203,6 +15268,16 @@ pfDB["quests"]["deDE"] = {
     ["D"] = "$n, es gibt da eine dringliche Angelegenheit und ich hoffe, dass Ihr mir dabei helfen könnt... im materiellen und geistigen Sinne. Lasst mich bitte erklären.$B$BTief in Scholomance in Lordaeron gibt es ein Gewölbe, das das Große Ossuarium genannt wird. Ich muss eine Vorrichtung fertigstellen, die die Schatten dieses entsetzlichen Raums durchbohren kann. Um zu beenden, womit ich begonnen habe, brauche ich zwei Diamanten: einen azerothischen und einen makellosen schwarzen Diamanten. Dies sind keine gewöhnlichen Objekte, ich weiß - aber ich verfüge nun einmal nicht selbst über die entsprechenden Mittel.$B$BKönntet Ihr mir jeweils einen von beiden beschaffen?",
     ["O"] = "Wenn Ihr Sagorne Gratläufer im Tal der Weisheit von Orgrimmar helfen wollt, so bringt ihm einen azerothischen und einen makellosen schwarzen Diamanten.",
     ["T"] = "Materielle Unterstützung",
+  },
+  [7668] = {
+    ["D"] = "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to call forth Darkreaver\'s spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage done to the spirit realm!",
+    ["O"] = "Use the Divination Scryer in the heart of the Great Ossuary\'s basement in the Scholomance.  Doing so will bring forth spirits you must fight.  Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.$B$BBring Darkreaver\'s Head to Sagorne Creststrider in the Valley of Wisdom, Orgrimmar.",
+    ["T"] = "The Darkreaver Menace",
+  },
+  [7670] = {
+    ["D"] = "The time has come, $N, for you to learn about what it will take for you to acquire something you have no doubt waited on for some time... your charger.$B$BSpeak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.  It is he who will guide you not only though the legerdemain of a Paladin\'s most trusted mount, but the tasks before you to acquire one of your own.$B$BI wish you the best in this trial.  For the Light, noble $G brother : sister;!",
+    ["O"] = "Speak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.",
+    ["T"] = "Lord Grayson Shadowbreaker",
   },
   [7671] = {
     ["D"] = "",
@@ -16023,6 +16098,11 @@ pfDB["quests"]["deDE"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "1200 Lose - Amulett des Dunkelmonds",
+  },
+  [8001] = {
+    ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
+    ["O"] = "Kill 5 Wretched Zombies",
+    ["T"] = "Zombie Cleansing",
   },
   [8041] = {
     ["D"] = "",
@@ -21093,6 +21173,11 @@ pfDB["quests"]["deDE"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Erstklassiger Manatrank",
+  },
+  [9321] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Major Healing Potion",
   },
   [9322] = {
     ["D"] = "Die Freudenfeuer des Sonnenwendfests werden überall in Azeroth gefeiert, die mannigfaltigen Länder Kalimdors sind dabei keine Ausnahme. Ihr scheint mir tauglich für eine Reise -- wie wäre es mit einem Ausflug?$b$bDas Sonnenwendfest ist erst dann ein Ereignis, wenn man die blau glühenden Feuer in der Welt gesehen hat. Die Feiernden haben Feuer im eisigen Westen von Winterspring, im Nordosten von Azshara, in der Nähe der Heldenwacht in Silithus und beim Eingang zum üppigen Un\'Goro-Krater entzündet. Kehrt zu mir zurück, sobald Ihr die Reise beendet habt.",

@@ -1124,6 +1124,11 @@ pfDB["quests"]["koKR"] = {
     ["O"] = "잿빛 골짜기 토막나무 주둔지에 있는 세나니 썬더하트를 만나야 합니다.",
     ["T"] = "잿빛 골짜기 사냥 대회",
   },
+  [236] = {
+    ["D"] = "A few weeks ago, I dispatched Watcher Callahan and a few others to the northern border of Duskwood to deal with the wolf infestation. I haven\'t heard word from him for quite some time. If he followed my instructions, he\'ll be camped out on the road north from Darkshire. $B$BIf it\'s on your way, please check up on him and inform him that I am awaiting a progress report from him.",
+    ["O"] = "Speak with Watcher Callahan.",
+    ["T"] = "Awaiting Word",
+  },
   [237] = {
     ["D"] = "산악경비대 코블플린트가 당신에 대해 입에 침이 마르도록 칭찬하더군, $C 친구. 그럼 당신을 믿고 아주 중대한 임무를 맡기도록 하겠소. 드워프 형제들이 얼라이언스 최전선으로부터 돌아올 때까지 침략자 트로그들을 계속 밀어붙여야 하오.$b$b남쪽 언덕으로 가서 가루바위일족 망치잡이 10마리와 가루바위일족 점쟁이 10마리를 처치해 주시오. 그러면 얼마간의 시간을 벌 수 있을 테니까 말이오. 임무를 완수하면 내게 돌아와 알려 주시오.",
     ["O"] = "남쪽 경비탑의 산악경비대 그레이블고가 가루바위일족 망치잡이와 가루바위일족 점쟁이를 각각 10마리씩 처치한 후 그에게 돌아와 보고해 달라고 부탁했습니다.",
@@ -5464,6 +5469,21 @@ pfDB["quests"]["koKR"] = {
     ["O"] = "Find the Legacy of the Aspects and return it to Braug Dimspirit near the entrance to Talondeep Path in Stonetalon Mountains.",
     ["T"] = "Test of Lore",
   },
+  [1156] = {
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<NYI> <TXT> speak to alchemist pestlezugg",
+  },
+  [1157] = {
+    ["D"] = "TODO",
+    ["O"] = "TODO",
+    ["T"] = "Alexstrasza",
+  },
+  [1158] = {
+    ["D"] = "TODO",
+    ["O"] = "TODO",
+    ["T"] = "Malygos",
+  },
   [1159] = {
     ["D"] = "Well done, $N. You have passed the first portion of the Test of Lore, but there is still another question to be answered. But that question is not mine to ask.$B$BSeek out Parqual Fintallas in Lordaeron City. He was a great historian for the humans before the Plague overtook him. Now he continues to seek enlightenment, but of a different nature.$B$BHe will have another requirement of you before he asks you anything, but you have done masterfully thus far--I\'m sure you will overcome his obstacle.",
     ["O"] = "Find Parqual Fintallas in Undercity.",
@@ -6098,6 +6118,11 @@ pfDB["quests"]["koKR"] = {
     ["D"] = "드레노어 성역에 사는 드레나이들의 겉모습은 우리와 같지만 아제로스에 이르는 고된 여정으로 인해 미쳐 버렸소. 한때는 우리 형제였지만 지금은 동쪽의 드레노어 성역에 살면서 주위에 나타나는 이들은 전부 잡아가거나 죽이고 있다오.$B$B그리고 우리에게 매우 신성한 물건인 드레니시스트 수정을 훔쳐 간 적도 있지.$B$B드레노어 성역으로 들어가 그들의 오두막과 모닥불 사이에서 도난 당한 드레니시스트 수정을 되찾아 오기에는 우리 병력이 부족하오. 하지만 그 수정이 없으면... 우리까지 미쳐 버릴지도 모르오.",
     ["O"] = "슬픔의 늪의 피난처에 있는 막투르에게 드레니시스트 수정 6개를 가져가야 합니다.",
     ["T"] = "드레니시스트 수정",
+  },
+  [1390] = {
+    ["D"] = "Missing text",
+    ["O"] = "Missing text",
+    ["T"] = "Oops, We Killed Them Again.",
   },
   [1391] = {
     ["D"] = "We need to operate with a certain amount of discretion. After all, it\'s not like you\'re going to waltz in there and convince the fool to drink Faustin\'s concoction here, right?$b$bBut if there\'s one thing those humans cannot deny it\'s the booze. I\'ll take Faustin\'s serum and mix it into this ale. I guarantee the poor sap will show no reluctance when it comes to chug-a-lugging a brew.$b$bMake haste to Stonard in the Swamp of Sorrows, $n. And keep our little mission nice and quiet...",
@@ -9029,6 +9054,11 @@ pfDB["quests"]["koKR"] = {
     ["O"] = "Read the Hallowed Rune and speak to Branstock Khalder in Anvilmar.",
     ["T"] = "Hallowed Rune",
   },
+  [3111] = {
+    ["D"] = "Long ago high elves taught us the secrets of magic along with our human allies. They preached to us about rules and how magic can make ya go mad! But don\'t believe it. We\'re not like the elves; we don\'t have the same weaknesses. Just keep yourself on the right path and you\'ll find magic is as powerful a tool as it is a weapon.$B$BWhen you\'re ready, come find me inside Anvilmar. I\'ll be waiting for ya!",
+    ["O"] = "Speak to Marryk Nurribit inside Anvilmar.",
+    ["T"] = "Glyphic Rune",
+  },
   [3112] = {
     ["D"] = "While you were helping me out, this memorandum was given to me to pass on to you. Take some time to read it when you have a chance. I\'m thinkin\' it came from the warrior trainer Thran. Take a gander at it and go find him inside Anvilmar when you\'ve a chance.",
     ["O"] = "Read the Simple Memorandum and speak to Thran Khorman in Coldridge Valley.",
@@ -9593,6 +9623,11 @@ pfDB["quests"]["koKR"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Seeping Corruption",
+  },
+  [3581] = {
+    ["D"] = "Imagine yourself racing across the plains, through forests and over mountains, the wind in your face... Traveling over unseen territory",
+    ["O"] = "Speak to Saern Priderunner again to learn the Plainsrunning skill.",
+    ["T"] = "Plainsrunning",
   },
   [3601] = {
     ["D"] = "블러드 엘프들이 이 킴야엘을 어떻게 생각하는지 아시오? 겨우 쥐새끼 정도로 생각하지. 덩치만 커다란 깡패들 같으니라고!$B$B놈들은 나를 고용해서 무슨 잃어버린 \"보물\"을 찾아 지역을 정찰하는 일을 도와 달라고 했소. 나야 물론 보물에다 넉넉한 보수 얘기에 귀가 솔깃해 뛰어들었지만, 녀석들은 날 배신하고 죽이려고 했지. 감히 이 킴야엘을!$B$B이건 정말 블러드 엘프란 못 믿을 족속이라는 걸 단적으로 보여 주는 거요.$B$B그런데 문제는, 녀석들이 아직도 내 장비들을 가지고 있는데 나 혼자서는 그걸 되찾아올 수가 없다는 거요. 날 좀 도와 주지 않겠소?",
@@ -12814,6 +12849,11 @@ pfDB["quests"]["koKR"] = {
     ["O"] = "Speak to High Priestess Laurena in Stormwind.",
     ["T"] = "Arcane Feedback",
   },
+  [5678] = {
+    ["D"] = "It is time for you to return to Stormwind, young one. Your superiors there have called you back for more training. And although it disturbs me some, your race and mine are allies and I would not betray that.$b$bI do not mean to be so coy with you--my distrust of arcane magics, be they divine inspired or not, is still strong within me.$b$bYou will know of what I speak after you return to your Cathedral of Light. Speak to High Priestess Laurena when you arrive.",
+    ["O"] = "Speak to High Priestess Laurena in Stormwind.",
+    ["T"] = "Arcane Feedback",
+  },
   [5679] = {
     ["D"] = "",
     ["O"] = "",
@@ -13168,6 +13208,11 @@ pfDB["quests"]["koKR"] = {
     ["D"] = "Around 4,000 years ago, Tyrande Whisperwind saved the life of the frostsaber queen, at the hands of rampaging giants. Since then, the frostsabers have been allies of the night elves.$B$BThese same giants that once were a danger to the frostsabers, still exist not too far from here. They are called the frostmaul, and they have taken over the large valley to the south.$B$BProve your loyalty to the frostsabers; kill these giants in the name of the frostsaber queen, Shy-Rotam!",
     ["O"] = "Rivern Frostwind wants you to kill 4 Frostmaul Giants and 4 Frostmaul Preservers.",
     ["T"] = "광란의 거인",
+  },
+  [6000] = {
+    ["D"] = "$N! I would not have expected to see you in the area were however instructed to hold after you look out.$B$BHighest one time of your training is continued. With the next attendance in Stormwind should you with Gakin clean-look. $B$BIt will expect you.",
+    ["O"] = "Announces you to Gakin the Darkbinder in the Magic quarter of Stormwind.",
+    ["T"] = "Swearing to Gakin",
   },
   [6001] = {
     ["D"] = "Directly east of Auberdine lay many moonkin caves.  The one closest to Auberdine has a Moonkin Stone inside it.  Lunaclaw, the defender of the stone, will face you only when Cenarion Moondust is applied to it.  Lunaclaw possesses within it a strength that you must use as one of the Claw.$B$BYou\'ve earned the right to use this Cenarion Moondust, $N... now show me that you\'ve earned the right to possess the strength of body and the strength of heart needed as a druid!",
@@ -13533,6 +13578,11 @@ pfDB["quests"]["koKR"] = {
     ["D"] = "이제 장사를 시작할 준비가 됐소! 당신은 뭐야?$B$B앗, 잠깐... 내 회계장부가 없이는 가게를 열 수가 없지. 회계장부가 없으면 기록을 남길 수가 없잖아.$B$B이런... 마을 어딘가에 두고 온 모양이야. 여관에 방을 빌려놨는데, 아무래도 거기 있는 것 같군.$B$B내 회계장부를 가져다주게. 제발 부탁이니 좀 가져다 달라고! 내 회계장부를 가져오면 알게 될 거야! 내가 가게를 차리면 가격이 완전히 미친 듯이 날뛰고 있다는 걸 알 수 있을 거란 말이야!",
     ["O"] = "테러데일에 있는 정신나간 아우구스투스에게 아우구스투스의 회계장부를 가져가야 합니다.",
     ["T"] = "아우구스투스의 회계장부",
+  },
+  [6165] = {
+    ["D"] = "The details about this quest are missing",
+    ["O"] = "The description of this quest is missing",
+    ["T"] = "Archmage Timolain\'s Remains",
   },
   [6181] = {
     ["D"] = "Although we don\'t get much aid from Stormwind directly, I do have a contact in the city who helps supply us with armor.  His name is Osric Strang.  His shop, Limited Immunity, is in the Old Town of Stormwind.$B$BOur supply of armor dwindles, and I must contact Osric for more.  Can you take him this note?$B$BThe fastest way to Stormwind is through Thor, our gryphon master.  He\'s just down the hill; bring him my note, and then take a gryphon to Stormwind.",
@@ -14764,6 +14814,21 @@ pfDB["quests"]["koKR"] = {
     ["O"] = "Travel to the Warpwood Quarter of Dire Maul and slay the water elemental, Hydrospawn. Return to Lorekeeper Lydros in the Athenaeum with the Hydrospawn Essence.",
     ["T"] = "신비의 원기 회복 주문",
   },
+  [7478] = {
+    ["D"] = "Master Winthalus lost the Libram of Rapidity in the east wing. The Libram will allow for a minor haste cantrip to be placed upon your equipment. Parlor tricks, really...$B$BRegardless, if you are interested, you will need to present the Libram along with some basic reagents.$B$BHrm... I believe it also requires blood of heroes, a pristine black diamond, and large brilliant shards. I could be wrong!$B$B<Lydros shrugs.>",
+    ["O"] = "Bring a Libram of Rapidity, 1 Pristine Black Diamond, 2 Large Brilliant Shards, and 2 Blood of Heroes to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Rapidity.",
+    ["T"] = "Libram of Rapidity",
+  },
+  [7479] = {
+    ["D"] = "This libram almost aroused interest in one of the younger Lorekeeper\'s familiars. Poor thing, it was only a few weeks old.$B$BThose among you who are more magically inclined might find this item interesting.$B$BThe Libram of Focus was lost in this wing. I can only assume one of the Highborne spirits holds it in their possession.$B$BBring the Libram along with some large brilliant shards, skin of shadow, and a pristine black diamond and I shall conjure the Arcanum.",
+    ["O"] = "Bring a Libram of Focus, 1 Pristine Black Diamond, 4 Large Brilliant Shards, and 2 Skin of Shadow to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Focus.",
+    ["T"] = "Libram of Focus",
+  },
+  [7480] = {
+    ["D"] = "He wept like an infant at the loss of this libram. Mind you, I myself have wept over texts - there is no greater loss than that of knowledge and history - but to cry over this nearly useless jumbling of incantations? Preposterous! It left me to believe that the Prince was doing him a favor in flaying the flesh from his bones.$B$BBring the Libram along with a pristine black diamond, large brilliant shards, and a frayed abomination stitching and I shall recreate the Arcanum.$B$BOh, and check the north wing.",
+    ["O"] = "Bring a Libram of Protection, 1 Pristine Black Diamond, 2 Large Brilliant Shards, and 1 Frayed Abomination Stitching to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Protection.",
+    ["T"] = "Libram of Protection",
+  },
   [7481] = {
     ["D"] = "몇 년 전, 카리엘 윈탈루스라는 엘프 스승이 고대 엘프 유물 몇 개를 가지고 폐허가 된 고향을 피해 달아났소.$B$B이 사라진 엘프 스승을 쫓다 보니 쿠엘탈라스의 폐허에서 불타는 평원을 지나 망망대해를 건너 페랄라스에 도착하게 됐지.$B$B윈탈루스는 오늘날 혈투의 전장으로 알려진 엘드레탈라스의 전당에서 은신처를 찾은 것으로 추측하고 있소이다.$B$B그 자를 찾아야 하오, 모험가여. 그자가 살았든 죽었든 그가 가지고 간 유물은 반드시 되찾아야 하오이다!",
     ["O"] = "혈투의 전장을 뒤져 카리엘 윈탈루스를 찾으십시오. 찾을 수 있는 정보는 모두 찾아 모자케 야영지에 있는 현자 코로루스크에게 돌아가야 합니다.",
@@ -15203,6 +15268,16 @@ pfDB["quests"]["koKR"] = {
     ["D"] = "$N, there is a pressing matter I hope you can help with... both materially and spiritually.  Allow me to explain.$B$BWithin the depths of the Scholomance in Lordaeron is a chamber called the Great Ossuary.  I need to complete a device that would pierce the shadows of this horrid room.  To finish what I have started, I need two diamonds: an Azerothian and a Pristine Black.  These are not trivial items, I know - I just don\'t have the resources myself.$B$BCould you provide me with one of each?",
     ["O"] = "If you are interested in helping Sagorne Crestrider in Orgrimmar\'s Valley of Wisdom, bring him an Azerothian Diamond and a Pristine Black Diamond.",
     ["T"] = "물질적인 부탁",
+  },
+  [7668] = {
+    ["D"] = "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to call forth Darkreaver\'s spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage done to the spirit realm!",
+    ["O"] = "Use the Divination Scryer in the heart of the Great Ossuary\'s basement in the Scholomance.  Doing so will bring forth spirits you must fight.  Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.$B$BBring Darkreaver\'s Head to Sagorne Creststrider in the Valley of Wisdom, Orgrimmar.",
+    ["T"] = "The Darkreaver Menace",
+  },
+  [7670] = {
+    ["D"] = "The time has come, $N, for you to learn about what it will take for you to acquire something you have no doubt waited on for some time... your charger.$B$BSpeak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.  It is he who will guide you not only though the legerdemain of a Paladin\'s most trusted mount, but the tasks before you to acquire one of your own.$B$BI wish you the best in this trial.  For the Light, noble $G brother : sister;!",
+    ["O"] = "Speak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.",
+    ["T"] = "Lord Grayson Shadowbreaker",
   },
   [7671] = {
     ["D"] = "",
@@ -16023,6 +16098,11 @@ pfDB["quests"]["koKR"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "상품권 1200 매 - 다크문의 아뮬렛",
+  },
+  [8001] = {
+    ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
+    ["O"] = "Kill 5 Wretched Zombies",
+    ["T"] = "Zombie Cleansing",
   },
   [8041] = {
     ["D"] = "",
@@ -21093,6 +21173,11 @@ pfDB["quests"]["koKR"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "특급 마나 물약",
+  },
+  [9321] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Major Healing Potion",
   },
   [9322] = {
     ["D"] = "아제로스 전역에 한여름 불꽃축제가 한창입니다. 칼림도어의 여러 지역도 예외는 아니죠. 당신은 여행자 같군요. 이번 여행은 순조로울 것입니다.$b$b이 축제의 진정한 의미는 당신처럼 두발로 세계를 여행하는 분들이 곳곳에서 맹렬히 타오르는 푸른 불꽃을 두 눈으로 확인하는 데 있답니다. 쌀쌀한 여명의 설원 서부, 아즈샤라 북동부, 실리더스 황무지의 용사의 안식처 근처, 그리고 수풀이 무성한 운고로 입구까지 축제를 축하하는 이들이 환하게 불을 밝혔답니다. 그곳을 방문하십시오. 여행이 끝나면 다시 뵙도록 하죠.",

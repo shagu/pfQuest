@@ -862,6 +862,7 @@ pfDB["quests"]["zhTW-tbc"] = {
     ["O"] = "Speak with Senani Thunderheart at Splintertree Post, Ashenvale.",
     ["T"] = "The Ashenvale Hunt",
   },
+  [236] = "_",
   [237] = {
     ["D"] = "Mountaineer Cobbleflint had nothing but good things to say about you, $r.  For that reason I am going to entrust upon you a mission of utmost importance.  We need to keep pressure on the invading Trogg forces until our Dwarven brethren return from the Alliance front.$b$bSet forth into the southern hills and kill 10 Stonesplinter Skullthumpers and 10 Stonesplinter Seers.  Your attacks will buy us some time.  Report back when your mission is complete.",
     ["O"] = "Mountaineer Gravelgaw in the southern guard tower wants you to kill 10 Stonesplinter Skullthumpers and 10 Stonesplinter Seers and report back to him.",
@@ -3582,6 +3583,9 @@ pfDB["quests"]["zhTW-tbc"] = {
     ["O"] = "Bring Grenka\'s Claw to Dorn Plainstalker in Thousand Needles.",
     ["T"] = "Test of Endurance",
   },
+  [1156] = "_",
+  [1157] = "_",
+  [1158] = "_",
   [1164] = {
     ["D"] = "The harlot! The swine! Kenata still lives; her family healthy and prospering while I suffer. Forsaken indeed!$B$BMy family is gone, taken by the plague. Our estate also forfeit; looted and burned during the war. And after all that, her and her lousy children had the audacity to steal the only precious belongings I had left.$B$BI don\'t care about the things they stole any more. What I want now are their heads!$B$BKill them for me! Go to the Dabyrie Farmstead in Arathi, northeast of Refuge Point.",
     ["O"] = "Bring Kenata, Fardel, and Marcel Dabyrie\'s Heads to Genavie Callow in Undercity.",
@@ -3932,8 +3936,6 @@ pfDB["quests"]["zhTW-tbc"] = {
     ["O"] = "Bring 6 Draenethyst crystals to Magtoor at The Harborage in the Swamp of Sorrows.",
   },
   [1390] = {
-    ["D"] = "Missing text",
-    ["O"] = "Missing text",
     ["T"] = "[Not Used] BETA Oops, We Killed Them Again.",
   },
   [1392] = {
@@ -5229,6 +5231,7 @@ pfDB["quests"]["zhTW-tbc"] = {
   [3110] = {
     ["T"] = "神聖符文",
   },
+  [3111] = "_",
   [3112] = {
     ["T"] = "簡易備忘錄",
   },
@@ -5557,6 +5560,7 @@ pfDB["quests"]["zhTW-tbc"] = {
   [3567] = {
     ["T"] = "To the Top",
   },
+  [3581] = "_",
   [3601] = {
     ["D"] = "Kim\'jael indeed!! Do you know what Kim\'jael means to the Blood elves, $N? Little rat... or something like that. The big bullies!$B$BThey hired me to help them scout the area looking for some sort of lost treasures. Of course I jumped aboard the moment they said \"treasure\" and the amount they were willing to pay, but of course, they turned on me and tried to kill me... ME!$B$BGoes to show you, you can\'t trust a Blood elf.$B$BThe problem is, they still have my equipment and I can\'t get it back. Help me out?",
     ["O"] = "Search the Thalassian Base Camp for Kim\'jael\'s Compass, Scope, Stuffed Chicken and Wizzlegoober, then return them to him in Azshara.",
@@ -7120,6 +7124,7 @@ pfDB["quests"]["zhTW-tbc"] = {
     ["D"] = "It is time for you to return to Stormwind, young one. Your superiors there have called you back for more training. And although it disturbs me some, your race and mine are allies and I would not betray that.$B$B I do not mean to be so coy with you--my distrust of arcane magics, be they divine inspired or not, is still strong within me.$B$B You will know of what I speak after you return to your Cathedral of Light. Speak to High Priestess Laurena when you arrive.",
     ["O"] = "Speak to High Priestess Laurena in Stormwind.",
   },
+  [5678] = "_",
   [5679] = {
     ["D"] = "Aelthalyste show our people great respect by sending them back to me for more training, and now I do the same for her tribe.$B$BYou return to the Undercity, $N. There, in the War Quarter, she be ready to teach you more \'bout your people and their ways. Go there, and do not wait long.",
     ["O"] = "Speak to Aelthalyste in the Undercity.",
@@ -7322,6 +7327,7 @@ pfDB["quests"]["zhTW-tbc"] = {
     ["O"] = "Speak with Nathanos Blightcaller in the Eastern Plaguelands. He is said to have taken up residence at the Marris Stead.",
     ["T"] = "The Champion of the Banshee Queen",
   },
+  [6000] = "_",
   [6002] = {
     ["D"] = "On land west of Taurajo in the Barrens - just before it turns into Mulgore - lies a Moonkin Stone.  The moonkin are special beasts, not native to these parts.  Lunaclaw, the stone\'s defender, will face you when Cenarion Lunardust is applied to it.  Lunaclaw possesses within it a strength that you must use as one of the Claw.$B$BYou\'ve earned the right to use this Cenarion Lunardust, $N... now show me that you\'ve earned the right to possess the strength of body and the strength of heart needed as a druid!",
     ["O"] = "Use the Cenarion Lunardust on the Moonkin Stone between Mulgore and the Barrens to bring forth Lunaclaw.  From there, you must face Lunaclaw and earn the strength of body and heart it possesses.$B$BSpeak with Turak Runetotem in Thunder Bluff when you are done.",
@@ -7469,6 +7475,7 @@ pfDB["quests"]["zhTW-tbc"] = {
     ["O"] = "Bring Augustus\' Receipt Book to Augustus the Touched in Terrordale.",
     ["T"] = "奧古斯圖斯的帳本",
   },
+  [6165] = "_",
   [6182] = {
     ["D"] = "Nathanos Marris was the first and last of the human ranger lords. A disciple of Sylvanas Windrunner, now the Banshee Queen of the Forsaken.$B$BWe had thought that Nathanos had been killed in action in the defense of Lordaeron five years ago. Although his corpse was never recovered, it was assumed that he did not make it out of the Eastern Plaguelands.$B$BMathias Shaw has been investigating the disappearance and may have some new information. Report to him at once. He resides in Old Town, at the Barracks.",
     ["O"] = "Speak with Mathias Shaw in Old Town Stormwind. He resides in the Barracks.",
@@ -8058,6 +8065,9 @@ pfDB["quests"]["zhTW-tbc"] = {
     ["O"] = "Travel to Dire Maul and locate the Imp, Pusillin. Convince Pusillin to give you Azj\'Tordin\'s Book of Incantations through any means necessary.$B$BReturn to Azj\'Tordin at the Lariss Pavilion in Feralas should you recover the Book of Incantations.",
     ["T"] = "Pusillin and the Elder Azj\'Tordin",
   },
+  [7478] = "_",
+  [7479] = "_",
+  [7480] = "_",
   [7481] = {
     ["D"] = "Several years ago, a lone elven master named Kariel Winthalus fled the devastation of his homeland with several ancient elven artifacts in tow.$B$BOur search for this lost master lead us from the ruins of Quel\'Thalas, through the Burning Steppes, across the great expanses of the sea, to Feralas.$B$BWe suspect that the elf sought sanctuary in the halls of Eldre\'Thalas (what is now known as Dire Maul).$B$BYou must find him, adventurer. Whether alive or dead, the knowledge he carried must be recovered!",
     ["O"] = "Search Dire Maul for Kariel Winthalus. Report back to Sage Korolusk at Camp Mojache with whatever information that you may find.",
@@ -8242,8 +8252,6 @@ pfDB["quests"]["zhTW-tbc"] = {
   },
   [7668] = {
     ["D"] = "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to call forth Darkreaver\'s spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage dome to the spirit realm!",
-    ["O"] = "Use the Divination Scryer in the heart of the Great Ossuary\'s basement in the Scholomance.  Doing so will bring forth spirits you must fight.  Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.$B$BBring Darkreaver\'s Head to Sagorne Creststrider in the Valley of Wisdom, Orgrimmar.",
-    ["T"] = "The Darkreaver Menace",
   },
   [7669] = {
     ["D"] = "",
@@ -8251,8 +8259,6 @@ pfDB["quests"]["zhTW-tbc"] = {
     ["T"] = "Again Into the Great Ossuary",
   },
   [7670] = {
-    ["D"] = "The time has come, $N, for you to learn about what it will take for you to acquire something you have no doubt waited on for some time... your charger.$B$BSpeak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.  It is he who will guide you not only though the legerdemain of a Paladin\'s most trusted mount, but the tasks before you to acquire one of your own.$B$BI wish you the best in this trial.  For the Light, noble $G brother : sister;!",
-    ["O"] = "Speak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.",
     ["T"] = "格雷森·破影者領主",
   },
   [7677] = {
@@ -8596,8 +8602,6 @@ pfDB["quests"]["zhTW-tbc"] = {
     ["T"] = "Waskily Wabbits!",
   },
   [8001] = {
-    ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
-    ["O"] = "Kill 5 Wretched Zombies",
     ["T"] = "Warsong Outriders <NYI> <TXT>",
   },
   [8002] = {
@@ -11775,8 +11779,6 @@ pfDB["quests"]["zhTW-tbc"] = {
     ["T"] = "極效法力藥水",
   },
   [9321] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "極效治療藥水",
   },
   [9322] = {

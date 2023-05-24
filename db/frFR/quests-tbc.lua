@@ -929,6 +929,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Parler à Senani Cœur-de-tonnerre, au Poste de Bois-Brisé, en Orneval.",
     ["T"] = "La Chasse d\'Orneval",
   },
+  [236] = "_",
   [237] = {
     ["D"] = "Le montagnard Pave-silex n\'a pas tari d\'éloges à votre égard, $R. Aussi, je vais vous confier une mission de la plus haute importance. Nous devons maintenir la pression sur les forces d\'invasion des troggs jusqu\'à ce que les nains, nos frères, reviennent du front de l\'Alliance.$B$BMettez-vous en route pour les collines méridionales et tuez 10 Brise-crâne et 10 Prophètes Brisepierre. Vos attaques nous feront gagner un temps précieux. Revenez me voir une fois votre mission menée à bien.",
     ["O"] = "Le Montagnard Gravegalle de la Tour de garde méridionale veut que vous tuiez 10 Brise-crâne et 10 Prophètes Brisepierre, puis que vous retourniez le voir.",
@@ -4361,6 +4362,9 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Vous avez réussi les épreuves de Dorn et vous cherchez à présent le défi suivant. Ce que vous avez réussi, un enfant aurait pu le réussir. Il est facile de mettre son corps à l\'épreuve. Pour l\'esprit, c\'est tout autre chose.$B$BJe vais m\'expliquer simplement : trouvez le livre dont je vais vous parler, étudiez-le et répondez à mes questions sur son contenu.$B$BQuel livre ? « L\'Héritage des aspects ». On peut le trouver au pied de Dor\'danil au sud d\'Orneval, protégé par les druides morts et leurs assassins.",
     ["O"] = "Trouver l\'Héritage des Aspects et l\'apporter à Braug Esprit-troublé, à côté de l\'entrée de la Perce des Serres, dans les Serres-Rocheuses.",
   },
+  [1156] = "_",
+  [1157] = "_",
+  [1158] = "_",
   [1159] = {
     ["D"] = "Bien joué, $N. Vous avez passé la première partie de l\'Épreuve de la Connaissance, mais il reste une question à laquelle vous devez répondre. Cette question, je ne puis la poser.$B$BCherchez Parqual Fintallas dans la cité de Lordaeron. C\'était un grand historien parmi les humains, avant d\'être emporté par la Peste. Il continue sa quête du savoir, mais un savoir d\'une nature différente.$B$BIl exigera de vous une certaine tâche avant d\'accepter de vous tester, mais vous avez superbement mené à bien les épreuves jusqu\'ici... Je suis sûr que vous surmonterez cet obstacle.",
     ["O"] = "Trouver Parqual Fintallas à Fossoyeuse.",
@@ -4839,8 +4843,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Les Perdus qui vivent dans le Sanctuaire des friches nous ressemblent physiquement, mais ce sont des monstres… rendus fous par les rigueurs de notre voyage vers Azeroth. Nos anciens frères attrapent et tuent quiconque s\'approche du Sanctuaire des friches, à l\'est.$B$BEt ils nous ont volé quelque chose de sacré à nos yeux : des cristaux de draenéthyste.$B$BNous n\'avons pas la force suffisante pour pénétrer dans le Sanctuaire des friches et reprendre nos draenéthystes volées dans leurs huttes et près des feux de camp. Mais sans ces cristaux... nous pourrions également perdre la voie, tout comme eux.",
   },
   [1390] = {
-    ["D"] = "Missing text",
-    ["O"] = "Missing text",
     ["T"] = "&lt;nyi&gt; Oups, on les a encore tués !",
   },
   [1391] = {
@@ -6999,6 +7001,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Pendant que vous m\'aidiez, on m\'a donné cette rune pour vous, $N. Prenez le temps de la lire. Je pense qu\'elle provient du maître des prêtres, Branstock. Jetez-y un coup d\'œil et allez le retrouver à l\'intérieur de Courbenclume.",
     ["O"] = "Lisez la Rune bénie, et parlez à Branstock Khalder, à Courbenclume.",
   },
+  [3111] = "_",
   [3112] = {
     ["D"] = "Pendant que vous m\'aidiez, on m\'a donné cette note de service pour vous. Prenez le temps de la lire. Je pense qu\'elle provient du Maître des guerriers, Thran. Jetez-y un coup d\'œil et allez le retrouver, à l\'intérieur de Courbenclume, quand vous en aurez le temps.",
   },
@@ -7422,6 +7425,7 @@ pfDB["quests"]["frFR-tbc"] = {
   [3570] = {
     ["T"] = "Corruption suintante",
   },
+  [3581] = "_",
   [3601] = {
     ["D"] = "Kim\'jael, effectivement ! Savez-vous ce que Kim\'jael signifie chez les elfes de sang, $N ? Petit rat... ou quelque chose comme ça. Quels imbéciles !$B$BIls m\'ont embauché pour aider à reconnaître le secteur et pour chercher des genres de trésors perdus. Je me suis évidemment précipité lorsque j\'ai entendu le mot \"trésor\" et le montant qu\'ils allaient me payer, mais ils m\'ont bien entendu trahi et ont essayé de me tuer... MOI !$B$BC\'est pour vous dire, on ne peut jamais faire confiance à un elfe de sang.$B$BMaintenant, le problème, c\'est qu\'ils sont en possession de mon équipement et que je ne peux pas le récupérer. Vous voulez m\'aider ?",
     ["O"] = "Fouiller le Camp de base thalassien pour trouver la Boussole, la Lunette, le Poulet farci et le Wizzlegoober de Kim\'Jael, puis les lui rapporter en Azshara.",
@@ -9786,6 +9790,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "J\'aimerais vous faire profiter de nos propres enseignements spéciaux de la Lumière, mais ça n\'est pas notre rôle. Votre place est à Hurlevent parmi ceux de votre espèce, $N… pour le moment. Croyez-moi, je ne veux pas vous offenser. Quand vous rejoindrez la grande prêtresse Laurena dans la cathédrale de la Lumière, vous comprendrez de quoi je parle. Le temps est venu pour votre race de vous préparer pour l\'avenir ; de vous séparer des autres qui suivent un chemin similaire.",
     ["O"] = "Parler à la grande prêtresse Laurena à Hurlevent.",
   },
+  [5678] = "_",
   [5679] = {
     ["D"] = "Aelthalyste show our people great respect by sending them back to me for more training, and now I do the same for her tribe.$B$BYou return to the Undercity, $N. There, in the War Quarter, she be ready to teach you more \'bout your people and their ways. Go there, and do not wait long.",
     ["O"] = "Speak to Aelthalyste in the Undercity.",
@@ -10038,6 +10043,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Il y a environ quatre mille ans, Tyrande Murmevent a sauvé la reine des sabres-de-givre, aux prises avec des géants déchaînés. Depuis, les sabres-de-givre sont les alliés des elfes de la nuit.$B$BCes géants, qui étaient autrefois un danger pour les sabres-de-givre, existent toujours. Ce sont les géants Cognegivre et ils sont installés dans la grande vallée au sud, pas très loin d\'ici.$B$BProuvez votre fidélité aux sabres-de-givre : tuez-en au nom de leur reine, Shy-Rotam !",
     ["O"] = "Rivern Givrevent voudrait que vous tuiez 4 Géants Cognegivre et 4 Protecteurs Cognegivre.",
   },
+  [6000] = "_",
   [6001] = {
     ["D"] = "A l\'est d\'Auberdine se trouvent plusieurs grottes de séléniens. Celle qui est la plus proche d\'Auberdine contient une pierre des séléniens. Lunegriffe, le défenseur de la pierre, ne vous affrontera que si la poussière de lune cénarienne est appliquée sur la pierre. Lunegriffe possède une force que vous devez vous approprier, comme doivent le faire tous les druides de la Griffe.$B$BVous avez gagné le droit d\'utiliser cette poussière de lune cénarienne, $N... Maintenant, montrez-moi que vous avez aussi gagné celui d\'acquérir la force physique et spirituelle que tout druide digne de ce nom se doit de posséder !",
     ["O"] = "Utiliser la Poussière de lune cénarienne sur la Pierre des séléniens d\'Auberdine pour invoquer Lunegriffe. Affronter Lunegriffe, et gagner la force physique et spirituelle qu\'il possède.$B$BQuand cela est fait, parler à Mathrengyl Pasdelours, à Darnassus.",
@@ -10312,6 +10318,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Trouver le Livre de compte d\'Augustus à l\'Auberge, au Val-terreur.",
     ["T"] = "Livre de compte d\'Augustus",
   },
+  [6165] = "_",
   [6181] = {
     ["D"] = "Bien que Hurlevent ne nous aide pas beaucoup directement, j\'ai quand même un contact dans la ville qui nous permet de nous procurer des armures. Son nom est Osric Strang. Son magasin, « Immunité limitée », est dans la Vieille ville de Hurlevent.$B$BNotre réserve d\'armures diminue et je dois entrer en contact avec Osric pour en obtenir. Pouvez-vous lui porter cette note ?$B$BLa façon la plus rapide d\'aller à Hurlevent est de demander à Thor, notre Maître des griffons. Il est juste en bas de la colline, apportez-lui ma note et prenez ensuite un griffon pour Hurlevent.",
     ["O"] = "Apportez la Note de Lewis à Thor, le Maître des griffons.",
@@ -11212,6 +11219,9 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "$GUn:Une:r; $R mage ! C\'est merveilleux ! Je n\'avais vu personne de votre espèce depuis… attendez, laissez-moi réfléchir… cinq cents ans !$B$BJ\'ai quelque chose qui pourrait apaiser votre soif, mais vous devrez d\'abord me rendre un service.$B$B<Lydros ricane.>$B$BUne anomalie hante Eldre\'Thalas. Un élémentaire d\'eau s\'est installé dans l\'aile est. Sa présence doit être cataloguée !$B$BRendez-vous dans le quartier de Crochebois et emparez-vous d\'une partie de l\'essence élémentaire de l\'Hydrogénos. Revenez me voir ensuite et je vous apprendrai un sort utile.",
     ["O"] = "Rendez-vous dans le quartier de Crochebois de Hache-Tripes et tuez Hydrogénos, l\'élémentaire de l\'eau. Retournez voir le Gardien du savoir Lydros à l\'Athenaeum avec l\'Essence d\'Hydrogénos.",
   },
+  [7478] = "_",
+  [7479] = "_",
+  [7480] = "_",
   [7481] = {
     ["D"] = "Il y a plusieurs années, un maître elfe solitaire du nom de Kariel Winthalus a fui la destruction de sa terre natale avec plusieurs anciens objets magiques elfiques.$B$BNos recherches nous ont conduits aux ruines de Quel\'Thalas, de l\'autre côté des steppes Ardentes, à travers l\'océan, jusqu\'en Féralas.$B$BNous pensons que cet elfe a cherché refuge dans les salles d\'Eldre\'Thalas, que l\'on appelle aujourd\'hui Hache-Tripes.$B$BVous devez le trouver, aventurier. Qu\'il soit mort ou vif, les connaissances qu\'il portait avec lui doivent être retrouvées !",
     ["O"] = "Fouillez Hache-Tripes à la recherche de Kariel Winthalus. Lorsque vous aurez des informations, donnez-les au Sage Korolusk de Camp Mojache.",
@@ -11890,8 +11900,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["T"] = "Gwedins de lapins !",
   },
   [8001] = {
-    ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
-    ["O"] = "Kill 5 Wretched Zombies",
     ["T"] = "Voltigeurs Chanteguerre <NYI> <TXT>",
   },
   [8002] = {
@@ -16145,8 +16153,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Trouvez et touchez les feux de joie situés au pic Rochenoire, à Hache-Tripes, dans la Scholomance et à Stratholme. Puis retournez voir le gardien des flammes de la fête.",
   },
   [9321] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "Potion de soins majeure",
   },
   [9323] = {

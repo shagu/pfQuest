@@ -51,6 +51,7 @@ pfDB["quests"]["enUS-tbc"] = {
   [216] = {
     ["O"] = "Take down 8 Thistlefur Avengers and 8 Thistlefur Shaman; most are located east of Zoram Strand in Thistlefur Village.  Once completed, return to Karang Amakkar at Zoram\'gar Outpost, Ashenvale.",
   },
+  [236] = "_",
   [255] = {
     ["D"] = "Two months just to hear from Ironforge that we\'ll be spared a handful of soldiers for our own defense, and another two months until they arrive! Bad enough that our town goes unprotected, but the excavation and the dam--the dam!--are open to attacks as well.$b$bI\'ve no choice then, it seems. I\'ll need hired arms.$b$bHow about you? You seem a likely sort, $c. A group of ogres has set up camp on the northeast of the lake. Perhaps you will be the one to remove the threat to our town?",
   },
@@ -206,6 +207,9 @@ pfDB["quests"]["enUS-tbc"] = {
   [1150] = {
     ["D"] = "I\'m pleased to see your courage remains steadfast in light of what you\'ve already done. Since your faith is intact, the time has come to test your body.$B$BFirst is a test of endurance. Go to the Roguefeather Den west of Freewind Post. Make your way to the depths of their lair and destroy their foodstuffs. By then you should have provoked their fury, and if you are able to survive long enough, Grenka Bloodscreech herself will come for you--kill her and bring me her claw to complete your test.",
   },
+  [1156] = "_",
+  [1157] = "_",
+  [1158] = "_",
   [1168] = {
     ["O"] = "Tharg in Brackenwall Village wants you to kill 10 Firemane Scouts, 10 Firemane Ash Tails, and 5 Firemane Scalebanes.",
   },
@@ -274,8 +278,6 @@ pfDB["quests"]["enUS-tbc"] = {
     ["O"] = "Apothecary Faustin at Beggar\'s Haunt needs 5 Shadow Panther Hearts, Mire Lord Fungus and some Green Whelp Blood.",
   },
   [1390] = {
-    ["D"] = "Missing text",
-    ["O"] = "Missing text",
     ["T"] = "[Not Used] BETA Oops, We Killed Them Again.",
   },
   [1459] = {
@@ -355,6 +357,7 @@ pfDB["quests"]["enUS-tbc"] = {
   [2941] = {
     ["D"] = "I have studied many subjects in my time, and my latest fascination is with the snapjaw that occupy the beach in the Hinterlands. There\'s one in particular I\'d like to see, a giant snapjaw named Gammerita. I\'d like to go myself, but my research keeps me here. I think a picture of her would be the next best thing.$B$BTake this letter to Curgle Cranklehop in Tanaris. She has created an invention for me that can capture a picture. She called it a \"snapshot\", I think...",
   },
+  [3111] = "_",
   [3161] = {
     ["D"] = "$N, I\'m a scientist, but also a treasure hunter at heart!$B$BLong ago, when trolls used to occupy this land, they created large amounts of ornaments modeled after Gahz\'rilla, a hydra they worshipped as a deity. These ornaments are carved out of an element that I call \"Gahz\'ridian\", after the hydra god.$B$BI did find some myself, but I\'d like to have some more to study -- maybe you can find some?$B$BI even invented a detector that makes finding the Gahz\'ridian a snap! Just put it on, and the search begins! ",
   },
@@ -376,6 +379,7 @@ pfDB["quests"]["enUS-tbc"] = {
   [3504] = {
     ["O"] = "Deliver the Sealed Letter to Ag\'tor Bloodfist in Azshara.",
   },
+  [3581] = "_",
   [3631] = {
     ["T"] = "OLD Summon Felsteed",
   },
@@ -489,6 +493,7 @@ pfDB["quests"]["enUS-tbc"] = {
     ["D"] = "It is time for you to return to Stormwind, young one. Your superiors there have called you back for more training. And although it disturbs me some, your race and mine are allies and I would not betray that.$B$B I do not mean to be so coy with you--my distrust of arcane magics, be they divine inspired or not, is still strong within me.$B$B You will know of what I speak after you return to your Cathedral of Light. Speak to High Priestess Laurena when you arrive.",
     ["O"] = "Speak to High Priestess Laurena in Stormwind.",
   },
+  [5678] = "_",
   [5679] = {
     ["D"] = "Aelthalyste show our people great respect by sending them back to me for more training, and now I do the same for her tribe.$B$BYou return to the Undercity, $N. There, in the War Quarter, she be ready to teach you more \'bout your people and their ways. Go there, and do not wait long.",
     ["O"] = "Speak to Aelthalyste in the Undercity.",
@@ -509,6 +514,7 @@ pfDB["quests"]["enUS-tbc"] = {
   [5863] = {
     ["D"] = "Just recently, a large band of nomadic ogres arrived in Tanaris. South of here, they have taken over a large area of the desert and formed a compound. Several smaller bands are currently wandering the desert, some of which have invaded the old troll ruins.$B$BThe Dunemaul Compound must be destroyed! We cannot allow these ogres to build up a force.$B$BThe leader of this band is named Gor\'marok the Ravager; I believe that putting an end to his leadership will be the beginning of the end for the ogres.",
   },
+  [6000] = "_",
   [6081] = {
     ["D"] = "You now have the power to tame a pet, but you must also gain the skills to train it.$B$BTravel to Orgrimmar. There you must speak to one of our most revered hunters, Ormak Grimshot. He will give you the ability to train your new pet. You will find him in the Valley of Honor.$B$BGood luck, $N.",
   },
@@ -523,6 +529,7 @@ pfDB["quests"]["enUS-tbc"] = {
   [6143] = {
     ["T"] = "Other Fish to Fry ",
   },
+  [6165] = "_",
   [6183] = {
     ["D"] = "Five of my best field agents were assigned the Marris case. One returned, only to end up dead in his sleep three days later.$B$BWhat little information we did manage to get out of him was incoherent gibberish. We made out two words: \"Nathanos\", and \"Blightcaller.\"$B$BI do not have the available manpower to continue this investigation and Ravenholdt will not assist us. We must get to the bottom of this; if only to provide closure to the families of the deceased. Will you help?",
   },
@@ -678,6 +685,9 @@ pfDB["quests"]["enUS-tbc"] = {
   [7428] = {
     ["T"] = "OLD Wanted: MORE ORCS!",
   },
+  [7478] = "_",
+  [7479] = "_",
+  [7480] = "_",
   [7487] = {
     ["D"] = "Rifts stir, tear, and collapse all around us, $r. Not two paces from where I stand is a tear leading through the depths of Blackrock Mountain, into the maw of the Firelord.$B$BSurprised? Pity... The mortal races cannot comprehend that which they cannot see, touch, or feel.$B$BI assure you, the portal is there and access is possible.$B$BI\'ve piqued your interest? Attunement is simple. Venture into Blackrock Depths and retrieve a core fragment. Return it to me and I shall attune your essence with the portal.",
     ["O"] = "Venture to the Molten Core entry portal in Blackrock Depths and recover a Core Fragment. Return to Lothos Riftwaker in Blackrock Mountain when you have recovered the Core Fragment.",
@@ -704,18 +714,11 @@ pfDB["quests"]["enUS-tbc"] = {
   },
   [7668] = {
     ["D"] = "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to call forth Darkreaver\'s spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage dome to the spirit realm!",
-    ["O"] = "Use the Divination Scryer in the heart of the Great Ossuary\'s basement in the Scholomance.  Doing so will bring forth spirits you must fight.  Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.$B$BBring Darkreaver\'s Head to Sagorne Creststrider in the Valley of Wisdom, Orgrimmar.",
-    ["T"] = "The Darkreaver Menace",
   },
   [7669] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Again Into the Great Ossuary",
-  },
-  [7670] = {
-    ["D"] = "The time has come, $N, for you to learn about what it will take for you to acquire something you have no doubt waited on for some time... your charger.$B$BSpeak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.  It is he who will guide you not only though the legerdemain of a Paladin\'s most trusted mount, but the tasks before you to acquire one of your own.$B$BI wish you the best in this trial.  For the Light, noble $G brother : sister;!",
-    ["O"] = "Speak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.",
-    ["T"] = "Lord Grayson Shadowbreaker",
   },
   [7677] = {
     ["D"] = "If you bring me your white stallion, I\'ll trade you for one from the new herd. The new horse will be just as fast as your old one, but have a different look to it. You can look at the swift steeds here to see what it will look like.$B$B$BMUST PAY 500 Gold too....",
@@ -823,8 +826,6 @@ pfDB["quests"]["enUS-tbc"] = {
     ["T"] = "Waskily Wabbits!",
   },
   [8001] = {
-    ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
-    ["O"] = "Kill 5 Wretched Zombies",
     ["T"] = "Warsong Outriders <NYI> <TXT>",
   },
   [8002] = {
@@ -1998,11 +1999,6 @@ pfDB["quests"]["enUS-tbc"] = {
     ["D"] = "Come closer, I am ... dying.$B$BI was sent here ... to slay these nerubians, but Vandril didn\'t ... know that they have a leader.$B$B<The dying blood elf coughs up a good amount of blood.>$B$BYou must find and ... slay Anok\'suten.  Get help.  She wanders around ... Suncrown Village.",
     ["O"] = "Slay Anok\'suten and return to Arcanist Vandril at Tranquillien in the Ghostlands.",
     ["T"] = "Anok\'suten",
-  },
-  [9321] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Major Healing Potion",
   },
   [9327] = {
     ["D"] = "I know it seems strange, but these Forsaken are here to help. You should speak with their leader, High Executor Mavren. He\'s in the tower on the west side of town.$B$BAnd, $c, when you\'re done talking with him return to me; I have something dire that needs to be dealt with immediately!",

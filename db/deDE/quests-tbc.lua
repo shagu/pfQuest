@@ -777,6 +777,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Sprecht mit Senani Donnerherz im Splitterholzposten im Eschental.",
     ["T"] = "Die Jagd im Eschental",
   },
+  [236] = "_",
   [237] = {
     ["D"] = "Gebirgsjäger Feuerkiesel hat nur Gutes über Euch zu berichten gehabt, $R. Daher werde ich Euch eine Mission von äußerster Wichtigkeit anvertrauen. Wir müssen den Druck auf die eindringenden Troggstreitkräfte aufrechterhalten, bis unsere Brüder, die Zwerge, von der Front der Allianz zurückkehren.$B$BBegebt Euch in die südlichen Hügel und tötet 10 Schädelhauer der Splittersteintroggs und 10 Seher der Splittersteintroggs. Eure Angriffe werden uns etwas Zeit verschaffen. Erstattet Bericht, sobald Ihr die Aufgabe erfüllt habt.",
     ["O"] = "Gebirgsjäger Kieselwut im südlichen Wachturm möchte, dass Ihr 10 Schädelhauer der Splittersteintroggs und 10 Seher der Splittersteintroggs tötet und ihm anschließend Bericht erstattet.",
@@ -3847,6 +3848,9 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Ihr habt Dorns Tests bestanden und wollt jetzt Eure nächste Prüfung absolvieren. Sehr gut. Bisher sind alle Eure Herausforderungen kindisch gewesen. Es ist leicht, Euren Körper zu testen - bei Eurem Verstand sieht das schon anders aus.$B$BIch werde es mit einfachen Worten erklären: sucht das Buch, das ich Euch nenne, lest es und beantwortet meine Fragen nach seinem Inhalt.$B$BWas für ein Buch, werdet Ihr fragen? Das \'Vermächtnis der Aspekte\'. Man findet es in den Tiefen des Grabhügels von Dor\'Danil im südlichen Eschental, wo es von den toten Druiden und deren Tötern bewacht wird.",
     ["O"] = "Sucht das \'Vermächtnis der Aspekte\' und bringt es zu Braug Dämmergeist in der Nähe des Eingangs zum Steinkrallenpfad im Steinkrallengebirge zurück.",
   },
+  [1156] = "_",
+  [1157] = "_",
+  [1158] = "_",
   [1159] = {
     ["D"] = "Gut gemacht, $N. Ihr habt den ersten Teil des Tests der Lehren bestanden, aber es bleibt noch eine Frage zu beantworten. Aber es ist nicht an mir, diese Frage zu stellen.$B$BBesucht Parqual Fintallas in Lordaeron. Er war ein bedeutender Historiker der Menschen, bevor die Seuche ihn erwischte. Jetzt sucht er immer noch Erleuchtung, freilich einer ganz anderen Art.$B$BEr wird eine weitere Forderung an Euch stellen, bevor er Euch etwas fragt, aber Ihr habt Euch bisher meisterhaft geschlagen - ich bin sicher, Ihr werdet dieses Hindernis überwinden.",
     ["O"] = "Sucht Parqual Fintallas in Unterstadt.",
@@ -4302,8 +4306,6 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "Die Verirrten, die in der Zuflucht der Verirrten leben, sehen aus wie wir, aber sie sind Monster... die üblen Unbilden auf unserem Treck nach Azeroth haben sie wahnsinnig gemacht. Einst waren sie unsere Brüder, doch nun leben sie in der Zuflucht der Verirrten im Osten und fangen oder töten alle, die sich in die Nähe wagen.$B$BUnd sie haben uns etwas Heiliges gestohlen - Draenethystkristalle.$B$BUns fehlt die Kraft, um die Zuflucht der Verirrten zu betreten und unseren gestohlenen Draenethyst von ihren Hütten und Lagerfeuern zu holen, aber ohne diese Kristalle... könnten auch wir vom rechten Weg abkommen.",
   },
   [1390] = {
-    ["D"] = "Missing text",
-    ["O"] = "Missing text",
     ["T"] = "&lt;nyi&gt; Upps, wir haben sie schon wieder ins Jenseits geschickt.",
   },
   [1391] = {
@@ -6210,6 +6212,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "$N, diese Rune wurde mir gegeben, damit ich sie an Euch weitergebe. Nehmt Euch einen Moment Zeit, sie zu lesen, wenn Ihr könnt. Ich denke mal, es kommt von dem Priesterlehrer Branstock. Werft doch am besten ein Blick darauf und sucht ihn in Ambossar auf.",
     ["O"] = "Lest die geheiligte Rune und sprecht mit Branstock Khalder in Ambossar.",
   },
+  [3111] = "_",
   [3112] = {
     ["D"] = "Während Ihr unterwegs wart, um mir zu helfen, wurde mir dieses Memorandum für Euch gegeben. Nehmt Euch die Zeit, es zu lesen, wenn Ihr die Gelegenheit dazu habt. Ich glaube, es kommt vom Kriegerlehrer Thran. Werft einen Blick darauf und sucht ihn dann in Ambossar auf, sobald Ihr die Gelegenheit dazu habt.",
     ["O"] = "Lest das einfache Memorandum und sprecht mit Thran Khorman im Eisklammtal.",
@@ -6564,6 +6567,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [3569] = {
     ["O"] = "Gebt Miesmuts Elixier Thersa Windweise in Unterstadt.",
   },
+  [3581] = "_",
   [3601] = {
     ["D"] = "Kim\'jael, fürwahr! Wisst Ihr, was Kim\'jael für die Blutelfen bedeutet, $N? Kleine Ratte... oder so etwas in der Art. Diese großen Angeber!$B$BSie haben mich angeworben, damit ich ihnen helfe, das Gebiet auszukundschaften und nach einer Art verlorenen Schatz zu suchen. Natürlich habe ich sofort zugegriffen, als sie das Wort \'Schatz\' erwähnten und die Summe, die sie mir bezahlen wollten. Aber dann haben sie sich gegen mich gewandt und versucht, mich zu töten... MICH!$B$BDas zeigt einmal mehr, dass einem Blutelfen nicht zu trauen ist.$B$BMein Problem ist: Sie haben immer noch meine Ausrüstung und ich kann sie nicht wiederbekommen. Helft Ihr mir?",
     ["O"] = "Durchsucht den thalassischen Stützpunkt nach Kim\'jaels Kompass, Zielfernrohr, ausgestopftem Huhn und Knobelwizz und bringt ihm dann alles nach Azshara zurück.",
@@ -8484,6 +8488,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["D"] = "So gern ich Euch auch unsere eigenen speziellen Lehren des Lichts zeigen würde, so ist dies doch nicht an uns. Ihr müsst zurück nach Sturmwind, zu Eurer eigenen Art, $N... zumindest vorerst. Glaubt mir, es war nicht böse gemeint. Wenn Ihr zur Hohepriesterin Laurena in die Kathedrale des Lichts zurückkehrt, werdet Ihr verstehen, worüber ich spreche... Die Zeit ist für Euer Volk gekommen, Euch auf die Zukunft vorzubereiten, Euch von den anderen abzuheben, die einem ähnlichen Weg folgen.",
     ["O"] = "Sprecht mit der Hohepriesterin Laurena in Sturmwind.",
   },
+  [5678] = "_",
   [5679] = {
     ["D"] = "Aelthalyste show our people great respect by sending them back to me for more training, and now I do the same for her tribe.$B$BYou return to the Undercity, $N. There, in the War Quarter, she be ready to teach you more \'bout your people and their ways. Go there, and do not wait long.",
     ["O"] = "Speak to Aelthalyste in the Undercity.",
@@ -8716,6 +8721,7 @@ pfDB["quests"]["deDE-tbc"] = {
   [5981] = {
     ["D"] = "Vor rund 4.000 Jahren rettete Tyrande Wisperwind die Frostsäblerkönigin aus den Händen tobender Riesen. Seither sind die Frostsäbler Verbündete der Nachtelfen.$B$BDoch die Riesen, die einst eine Gefahr für die Frostsäbler waren, gibt es noch immer, und das nicht allzu weit von hier entfernt. Man nennt sie Frosthagelriesen und sie haben das große Tal südlich von hier für sich beansprucht.$B$BBeweist Eure Treue zu den Frostsäblern. Tötet diese Riesen im Namen der Frostsäblerkönigin Shy-Rotam!",
   },
+  [6000] = "_",
   [6001] = {
     ["D"] = "Unmittelbar östlich von Auberdine liegen viele Mondkinhöhlen. In der Auberdine am nächsten gelegenen Höhle befindet sich ein Mondkinstein. Mondklaue, der Verteidiger des Steins, stellt sich Euch nur, wenn Mondstaub des Cenarius darauf angewendet wird. Mondklaue besitzt eine innere Stärke, die Ihr als einer der Klaue benutzen müsst.$B$BIhr habt Euch das Recht verdient, diesen Mondstaub des Cenarius zu benutzen, $N... jetzt zeigt mir, dass Ihr Euch das Recht verdient habt, die Kraft des Körpers und des Herzens zu besitzen, die man als Druide braucht!",
     ["O"] = "Benutzt den Mondstaub des Cenarius mit dem Mondkinstein, um Mondklaue herauszulocken. Danach müsst Ihr Euch Mondklaue stellen und Euch die Kraft des Körpers und des Herzens verdienen, die er besitzt.$B$BSprecht mit Mathrengyl Bärenfährte in Darnassus, wenn Ihr fertig seid.",
@@ -8946,6 +8952,7 @@ pfDB["quests"]["deDE-tbc"] = {
     ["O"] = "Beschafft Euch Augustus\' Quittungsbuch aus dem Gasthaus im Schreckenstal.",
     ["T"] = "Augustus\' Quittungsbuch",
   },
+  [6165] = "_",
   [6181] = {
     ["D"] = "Wir bekommen zwar nicht viel Unterstützung von Sturmwind direkt, aber ich habe einen Kontaktmann in der Stadt, der uns mit Rüstungen versorgt. Sein Name ist Osric Strang. Sein Geschäft, Begrenzte Immunität, liegt in der Altstadt von Sturmwind.$B$BUnser Vorrat an Rüstung schwindet, ich muss bei Osric mehr bestellen. Könnt Ihr ihm diese Notiz bringen?$B$BDer schnellste Weg nach Sturmwind führt über Thor, unseren Greifenmeister. Er ist unten am Hügel; bringt ihm meine Notiz und nehmt dann einen Greifen nach Sturmwind.",
   },
@@ -9616,6 +9623,9 @@ pfDB["quests"]["deDE-tbc"] = {
   [7463] = {
     ["D"] = "$GEin:Eine:r; $R und dazu noch $GMagier:Magierin;! Wie wunderbar. Ich habe jemanden wie Euch schon seit... wie lange ist es nun schon her?... 500 Jahren nicht mehr gesehen!$B$BIch habe da etwas, das Euren Durst zu löschen vermag, doch zuerst müsst Ihr etwas für mich erledigen.$B$B<Lydros kichert.>$B$BEs gibt eine Anomalie in Eldre\'Thalas. Ein Wasserelementar hat sich im östlichen Flügel niedergelassen. Seine Anwesenheit muss unbedingt katalogisiert werden!$B$BReist nach Düsterbruch in das Wucherborkenviertel und sammelt etwas von der elementaren Essenz der Hydrobrut. Bringt Sie anschließend zu mir zurück und ich werde Euch einen äußerst nützlichen Zauberspruch beibringen.",
   },
+  [7478] = "_",
+  [7479] = "_",
+  [7480] = "_",
   [7481] = {
     ["D"] = "Vor vielen Jahren entkam ein einzelner Elfenmeister namens Kariel Winthalus der Vernichtung seines Heimatlandes. Bei sich trug er einige uralte Artefakte der Elfen.$B$BUnsere Suche nach dem verschwundenen Meister führte uns von den Ruinen von Quel\'Thalas durch die Brennende Steppe über die großen Weiten der See hinüber nach Feralas.$B$BWir nehmen an, dass der Elf in den Hallen von Eldre\'Thalas, die nun als Düsterbruch bekannt sind, Schutz suchte.$B$BIhr müsst ihn finden, Abenteurer. Ob er nun lebt oder schon lange tot ist, das Wissen, welches er bei sich trug, muss gerettet werden!",
   },
@@ -10029,8 +10039,6 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Verdammte Kaninchen!",
   },
   [8001] = {
-    ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
-    ["O"] = "Kill 5 Wretched Zombies",
     ["T"] = "Vorhut des Kriegshymnenklans",
   },
   [8002] = {
@@ -12461,8 +12469,6 @@ pfDB["quests"]["deDE-tbc"] = {
     ["T"] = "Erheblicher Manatrank",
   },
   [9321] = {
-    ["D"] = "",
-    ["O"] = "",
     ["T"] = "Erheblicher Heiltrank",
   },
   [9322] = {

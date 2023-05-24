@@ -1539,11 +1539,11 @@ for _, expansion in pairs(config.expansions) do
     -- load unit locales
     local units_loc = {}
     local locales_creature = {}
-    local query = mysql:execute('SELECT * FROM creature_template LEFT JOIN locales_creature ON locales_creature.entry = creature_template.entry GROUP BY creature_template.entry ORDER BY creature_template.entry ASC')
+    local query = mysql:execute('SELECT *, creature_template.'..C.Entry..' AS _entry FROM creature_template LEFT JOIN locales_creature ON locales_creature.entry = creature_template.entry GROUP BY creature_template.entry ORDER BY creature_template.entry ASC')
     while query:fetch(locales_creature, "a") do
       if debug("locales_unit") then break end
 
-      local entry = tonumber(locales_creature[C.Entry])
+      local entry = tonumber(locales_creature["_entry"])
       local name  = locales_creature[C.Name]
 
       if entry then
@@ -1562,11 +1562,11 @@ for _, expansion in pairs(config.expansions) do
 
   do -- objects locales
     local locales_gameobject = {}
-    local query = mysql:execute('SELECT * FROM gameobject_template LEFT JOIN locales_gameobject ON locales_gameobject.entry = gameobject_template.entry GROUP BY gameobject_template.entry ORDER BY gameobject_template.entry ASC')
+    local query = mysql:execute('SELECT *, gameobject_template.entry AS _entry FROM gameobject_template LEFT JOIN locales_gameobject ON locales_gameobject.entry = gameobject_template.entry GROUP BY gameobject_template.entry ORDER BY gameobject_template.entry ASC')
     while query:fetch(locales_gameobject, "a") do
       if debug("locales_object") then break end
 
-      local entry = tonumber(locales_gameobject.entry)
+      local entry = tonumber(locales_gameobject["_entry"])
       local name  = locales_gameobject.name
 
       if entry then
@@ -1586,11 +1586,11 @@ for _, expansion in pairs(config.expansions) do
   do -- items locales
     local items_loc = {}
     local locales_item = {}
-    local query = mysql:execute('SELECT * FROM item_template LEFT JOIN locales_item ON locales_item.entry = item_template.entry GROUP BY item_template.entry ORDER BY item_template.entry ASC')
+    local query = mysql:execute('SELECT *, item_template.entry AS _entry FROM item_template LEFT JOIN locales_item ON locales_item.entry = item_template.entry GROUP BY item_template.entry ORDER BY item_template.entry ASC')
     while query:fetch(locales_item, "a") do
       if debug("locales_item") then break end
 
-      local entry = tonumber(locales_item.entry)
+      local entry = tonumber(locales_item["_entry"])
       local name  = locales_item.name
 
       if entry then
@@ -1609,12 +1609,12 @@ for _, expansion in pairs(config.expansions) do
 
   do -- quests locales
     local locales_quest = {}
-    local query = mysql:execute('SELECT * FROM quest_template LEFT JOIN locales_quest ON locales_quest.entry = quest_template.entry GROUP BY quest_template.entry ORDER BY quest_template.entry ASC')
+    local query = mysql:execute('SELECT *, quest_template.entry AS _entry FROM quest_template LEFT JOIN locales_quest ON locales_quest.entry = quest_template.entry GROUP BY quest_template.entry ORDER BY quest_template.entry ASC')
     while query:fetch(locales_quest, "a") do
       if debug("locales_quest") then break end
 
       for loc in pairs(locales) do
-        local entry = tonumber(locales_quest.entry)
+        local entry = tonumber(locales_quest["_entry"])
 
         if entry then
           local locale = loc .. ( expansion ~= "vanilla"  and "-" .. expansion or "" )
