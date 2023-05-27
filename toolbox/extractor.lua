@@ -180,21 +180,30 @@ do -- map lookup functions
     return true
   end
 
-  function isValidMap(map,x,y)
+  function isValidMap(map,x,y,expansion)
+    local id = map..expansion
+
     -- load map if required
-    if not maps[map] and isFile("maps/" .. map .. ".png") then
-      maps[map] = pngImage("maps/" .. map .. ".png")
+    if not maps[id] then
+      local preferred = string.format("maps/%s/%s.png", expansion, map)
+      local fallback = string.format("maps/%s.png", map)
+
+      if isFile(preferred) then
+        maps[id] = pngImage(preferred)
+      elseif isFile(fallback) then
+        maps[id] = pngImage(fallback)
+      end
     end
 
     -- no mapfile means valid map
-    if not maps[map] then return true end
+    if not maps[id] then return true end
 
     -- error handling
-    if not maps[map].getPixel then return false end
+    if not maps[id].getPixel then return false end
     if x == 0 or y == 0 then return false end
 
     -- check pixel alpha
-    local pixel = maps[map]:getPixel(x,y)
+    local pixel = maps[id]:getPixel(x,y)
     if pixel and pixel.A and pixel.A > 0 then
       return true
     else
@@ -458,7 +467,7 @@ for id, settings in pairs(config.expansions) do
         if x and y and x_min and y_min then
           px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
           py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
-          if isValidMap(zone, round(px), round(py)) then
+          if isValidMap(zone, round(px), round(py), expansion) then
             local coord = { px, py, tonumber(zone) }
             table.insert(ret, coord)
           end
@@ -494,7 +503,7 @@ for id, settings in pairs(config.expansions) do
         if x and y and x_min and y_min then
           px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
           py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
-          if isValidMap(zone, round(px), round(py)) then
+          if isValidMap(zone, round(px), round(py), expansion) then
             local coord = { px, py, tonumber(zone), 0 }
             table.insert(ret, coord)
           end
@@ -534,7 +543,7 @@ for id, settings in pairs(config.expansions) do
         if x and y and x_min and y_min then
           px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
           py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
-          if isValidMap(zone, round(px), round(py)) then
+          if isValidMap(zone, round(px), round(py), expansion) then
             local coord = { px, py, tonumber(zone), ( tonumber(creature.spawntimesecsmin) > 0 and tonumber(creature.spawntimesecsmin) or 0) }
             table.insert(ret, coord)
           end
@@ -573,7 +582,7 @@ for id, settings in pairs(config.expansions) do
           if x and y and x_min and y_min then
             px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
             py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
-            if isValidMap(zone, round(px), round(py)) then
+            if isValidMap(zone, round(px), round(py), expansion) then
               local coord = { px, py, tonumber(zone), ( tonumber(creature.spawntimesecsmin) > 0 and tonumber(creature.spawntimesecsmin) or 0) }
               table.insert(ret, coord)
             end
@@ -612,7 +621,7 @@ for id, settings in pairs(config.expansions) do
         if x and y and x_min and y_min then
           px = round(100 - (y - y_min) / ((y_max - y_min)/100),1)
           py = round(100 - (x - x_min) / ((x_max - x_min)/100),1)
-          if isValidMap(zone, round(px), round(py)) then
+          if isValidMap(zone, round(px), round(py), expansion) then
             local coord = { px, py, tonumber(zone), ( tonumber(gameobject.spawntimesecsmin) > 0 and tonumber(gameobject.spawntimesecsmin) or 0) }
             table.insert(ret, coord)
           end
