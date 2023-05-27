@@ -21,9 +21,7 @@ pfDB.locales = {
 -- Patch databases to further expansions
 local function patchtable(base, diff)
   for k, v in pairs(diff) do
-    if base[k] and type(v) == "table" then
-      patchtable(base[k], v)
-    elseif type(v) == "string" and v == "_" then
+    if type(v) == "string" and v == "_" then
       base[k] = nil
     else
       base[k] = v
