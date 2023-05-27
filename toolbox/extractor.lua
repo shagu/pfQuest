@@ -106,55 +106,65 @@ local all_locales = {
   ["ruRU"] = 8,
 }
 
--- export turtle-wow data
-local turtle = false
-
 local config = {
-  -- expansions to generate databases
-  expansions = { "vanilla", "tbc" },
-
-  -- set databases to use { database, core-type, locales }
-  vanilla = { "vmangos", "vmangos", all_locales },
-  tbc = { "cmangos-tbc", "cmangos", all_locales },
+  -- known expansions and their config
+  expansions = {
+    {
+      name = "vanilla",
+      core = "vmangos",
+      database = "vmangos",
+      locales = all_locales,
+      custom = false,
+    },
+    {
+      name = "tbc",
+      core = "cmangos",
+      database = "cmangos-tbc",
+      locales = all_locales,
+      custom = false,
+    },
+  },
 
   -- core-type database column glue tables
-  cmangos = setmetatable({}, { __index = function(tab,key)
-    local value = tostring(key)
-    rawset(tab,key,value)
-    return value
-  end }),
+  -- every table column name that differs
+  -- from cmangos should be listed here
+  cores = {
+    ["cmangos"] = setmetatable({}, { __index = function(tab,key)
+      local value = tostring(key)
+      rawset(tab,key,value)
+      return value
+    end }),
 
-  vmangos = {
-    ["Id"] = "entry",
-    ["Entry"] = "entry",
-    ["Faction"] = "faction",
-    ["Name"] = "name",
-    ["MinLevel"] = "level_min",
-    ["MaxLevel"] = "level_max",
-    ["Rank"] = "rank",
-    ["RequiresSpellFocus"] = "requiresSpellFocus",
-    ["dbscripts_on_event"] = "event_scripts",
-    ["VendorTemplateId"] = "vendor_id",
-    ["NpcFlags"] = "npc_flags",
-    ["EffectTriggerSpell"] = "effectTriggerSpell",
-    ["Map"] = "map_bound",
-    ["startquest"] = "start_quest",
-    ["targetEntry"] = "target_entry",
-  },
+    ["vmangos"] = {
+      ["Id"] = "entry",
+      ["Entry"] = "entry",
+      ["Faction"] = "faction",
+      ["Name"] = "name",
+      ["MinLevel"] = "level_min",
+      ["MaxLevel"] = "level_max",
+      ["Rank"] = "rank",
+      ["RequiresSpellFocus"] = "requiresSpellFocus",
+      ["dbscripts_on_event"] = "event_scripts",
+      ["VendorTemplateId"] = "vendor_id",
+      ["NpcFlags"] = "npc_flags",
+      ["EffectTriggerSpell"] = "effectTriggerSpell",
+      ["Map"] = "map_bound",
+      ["startquest"] = "start_quest",
+      ["targetEntry"] = "target_entry",
+    },
+  }
 }
 
-if TURTLE then
-  -- add turtle to expansions
-  table.insert(config.expansions, "turtle")
-
-  -- set turtle config based on vmangos
-  config.turtle = {
-    "turtle",
-    "vmangos",
-    { ["enUS"] = 0 },
-  }
+if false then
+  -- add turtle settings to expansions
+  table.insert(config.expansions, {
+    name = "turtle",
+    core = "vmangos",
+    database = "turtle",
+    locales = { ["enUS"] = 0 },
+    custom = true,
+  })
 end
-
 
 do -- map lookup functions
   maps = {}
@@ -400,21 +410,23 @@ do -- helper functions
 end
 
 local pfDB = {}
-for _, expansion in pairs(config.expansions) do
-  print("Extracting: " .. expansion)
+for id, settings in pairs(config.expansions) do
+  print("Extracting: " .. settings.name)
 
-  local db = config[expansion][1]
-  local dbtype = config[expansion][2]
-  local C = config[config[expansion][2]]
-  local locales = config[expansion][3]
+  local expansion = settings.name
+  local db = settings.database
+  local core = settings.core
+  local locales = settings.locales
 
-  local idcolumns = dbtype == "vmangos" and { "id", "id2", "id3", "id4" } or { "id" }
+  local C = config.cores[core]
+
+  local idcolumns = core == "vmangos" and { "id", "id2", "id3", "id4" } or { "id" }
   local exp = expansion == "vanilla" and "" or "-"..expansion
   local data = "data".. exp
 
   do -- database connection
     luasql = require("luasql.mysql").mysql()
-    mysql = luasql:connect(db, "mangos", "mangos", "127.0.0.1")
+    mysql = luasql:connect(settings.database, "mangos", "mangos", "127.0.0.1")
   end
 
   do -- database query functions
@@ -691,7 +703,7 @@ for _, expansion in pairs(config.expansions) do
           table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
         end
 
-        if dbtype ~= "vmangos" then
+        if core ~= "vmangos" then
           for id, coords in pairs(GetCreatureCoordsPool(entry)) do
             local x, y, zone, respawn = table.unpack(coords)
             if debug("units_coords_pool") then break end
@@ -782,7 +794,7 @@ for _, expansion in pairs(config.expansions) do
         -- search for AI summons (fixed position)
         -- [Verog Derwisch:3395]
         local creature_ai_scripts = {}
-        local query = mysql:execute(dbtype == "vmangos" and [[
+        local query = mysql:execute(core == "vmangos" and [[
           SELECT creature.map AS map, x AS x, y AS y FROM creature_ai_scripts, creature_ai_events, creature
           WHERE creature.id = creature_ai_events.creature_id
             AND creature_ai_scripts.command = 10
@@ -809,7 +821,7 @@ for _, expansion in pairs(config.expansions) do
         -- search for AI summons (summoner position)
         -- [Darrowshire Spirit:11064]
         local creature_ai_scripts = {}
-        local query = mysql:execute(dbtype == "vmangos" and [[
+        local query = mysql:execute(core == "vmangos" and [[
           SELECT creature_ai_events.creature_id AS summoner FROM creature_ai_scripts, creature_ai_events
           WHERE creature_ai_scripts.command = 10
             AND creature_ai_scripts.id = creature_ai_events.id
@@ -827,7 +839,7 @@ for _, expansion in pairs(config.expansions) do
             table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
           end
 
-          if dbtype ~= "vmangos" then
+          if core ~= "vmangos" then
             for id, coords in pairs(GetCreatureCoordsPool(tonumber(creature_ai_scripts.summoner))) do
               local x, y, zone, respawn = table.unpack(coords)
               table.insert(pfDB["units"][data][entry]["coords"], { x, y, zone, respawn })
@@ -1194,7 +1206,7 @@ for _, expansion in pairs(config.expansions) do
       end
 
       -- add all units that give kill credit for one of the known units
-      if dbtype ~= "vmangos" then
+      if core ~= "vmangos" then
         for id in pairs(units) do
           local creature_template = {}
           local query = mysql:execute('SELECT * FROM creature_template WHERE KillCredit1 = ' .. id .. ' or KillCredit2 = ' .. id)
@@ -1737,7 +1749,6 @@ for _, expansion in pairs(config.expansions) do
       local locale = loc .. exp
       local prev_locale = loc
 
-      os.execute("mkdir -p output/" .. loc)
       pfDB["units"][locale] = tablesubstract(pfDB["units"][locale], pfDB["units"][prev_locale])
       pfDB["objects"][locale] = tablesubstract(pfDB["objects"][locale], pfDB["objects"][prev_locale])
       pfDB["items"][locale] = tablesubstract(pfDB["items"][locale], pfDB["items"][prev_locale])
@@ -1749,32 +1760,34 @@ for _, expansion in pairs(config.expansions) do
 
   -- write down tables
   print("- writing database...")
+  local output = settings.custom and "output/custom/" or "output/"
 
-  os.execute("mkdir -p output")
-  if expansion == "vanilla" or expansion == "tbc" then
-    serialize("output/init.lua", "pfDB", pfDB, nil, true)
-  end
-  serialize(string.format("output/areatrigger%s.lua", exp), "pfDB[\"areatrigger\"][\""..data.."\"]", pfDB["areatrigger"][data])
-  serialize(string.format("output/units%s.lua", exp), "pfDB[\"units\"][\""..data.."\"]", pfDB["units"][data])
-  serialize(string.format("output/objects%s.lua", exp), "pfDB[\"objects\"][\""..data.."\"]", pfDB["objects"][data])
-  serialize(string.format("output/items%s.lua", exp), "pfDB[\"items\"][\""..data.."\"]", pfDB["items"][data])
-  serialize(string.format("output/refloot%s.lua", exp), "pfDB[\"refloot\"][\""..data.."\"]", pfDB["refloot"][data])
-  serialize(string.format("output/quests%s.lua", exp), "pfDB[\"quests\"][\""..data.."\"]", pfDB["quests"][data])
-  serialize(string.format("output/quests-itemreq%s.lua", exp), "pfDB[\"quests-itemreq\"][\""..data.."\"]", pfDB["quests-itemreq"][data])
-  serialize(string.format("output/zones%s.lua", exp), "pfDB[\"zones\"][\""..data.."\"]", pfDB["zones"][data])
-  serialize(string.format("output/minimap%s.lua", exp), "pfDB[\"minimap"..exp.."\"]", pfDB["minimap"..exp])
-  serialize(string.format("output/meta%s.lua", exp), "pfDB[\"meta"..exp.."\"]", pfDB["meta"..exp])
+  os.execute("mkdir -p " .. output)
+  serialize(output .. string.format("areatrigger%s.lua", exp), "pfDB[\"areatrigger\"][\""..data.."\"]", pfDB["areatrigger"][data])
+  serialize(output .. string.format("units%s.lua", exp), "pfDB[\"units\"][\""..data.."\"]", pfDB["units"][data])
+  serialize(output .. string.format("objects%s.lua", exp), "pfDB[\"objects\"][\""..data.."\"]", pfDB["objects"][data])
+  serialize(output .. string.format("items%s.lua", exp), "pfDB[\"items\"][\""..data.."\"]", pfDB["items"][data])
+  serialize(output .. string.format("refloot%s.lua", exp), "pfDB[\"refloot\"][\""..data.."\"]", pfDB["refloot"][data])
+  serialize(output .. string.format("quests%s.lua", exp), "pfDB[\"quests\"][\""..data.."\"]", pfDB["quests"][data])
+  serialize(output .. string.format("quests-itemreq%s.lua", exp), "pfDB[\"quests-itemreq\"][\""..data.."\"]", pfDB["quests-itemreq"][data])
+  serialize(output .. string.format("zones%s.lua", exp), "pfDB[\"zones\"][\""..data.."\"]", pfDB["zones"][data])
+  serialize(output .. string.format("minimap%s.lua", exp), "pfDB[\"minimap"..exp.."\"]", pfDB["minimap"..exp])
+  serialize(output .. string.format("meta%s.lua", exp), "pfDB[\"meta"..exp.."\"]", pfDB["meta"..exp])
 
   for loc in pairs(locales) do
     local locale = loc .. ( expansion ~= "vanilla"  and "-" .. expansion or "" )
 
-    os.execute("mkdir -p output/" .. loc)
-    serialize(string.format("output/%s/units%s.lua", loc, exp), "pfDB[\"units\"][\""..locale.."\"]", pfDB["units"][locale])
-    serialize(string.format("output/%s/objects%s.lua", loc, exp), "pfDB[\"objects\"][\""..locale.."\"]", pfDB["objects"][locale])
-    serialize(string.format("output/%s/items%s.lua", loc, exp), "pfDB[\"items\"][\""..locale.."\"]", pfDB["items"][locale])
-    serialize(string.format("output/%s/quests%s.lua", loc, exp), "pfDB[\"quests\"][\""..locale.."\"]", pfDB["quests"][locale])
-    serialize(string.format("output/%s/professions%s.lua", loc, exp), "pfDB[\"professions\"][\""..locale.."\"]", pfDB["professions"][locale])
-    serialize(string.format("output/%s/zones%s.lua", loc, exp), "pfDB[\"zones\"][\""..locale.."\"]", pfDB["zones"][locale])
+    os.execute("mkdir -p " .. output .. loc)
+    serialize(output .. string.format("%s/units%s.lua", loc, exp), "pfDB[\"units\"][\""..locale.."\"]", pfDB["units"][locale])
+    serialize(output .. string.format("%s/objects%s.lua", loc, exp), "pfDB[\"objects\"][\""..locale.."\"]", pfDB["objects"][locale])
+    serialize(output .. string.format("%s/items%s.lua", loc, exp), "pfDB[\"items\"][\""..locale.."\"]", pfDB["items"][locale])
+    serialize(output .. string.format("%s/quests%s.lua", loc, exp), "pfDB[\"quests\"][\""..locale.."\"]", pfDB["quests"][locale])
+    serialize(output .. string.format("%s/professions%s.lua", loc, exp), "pfDB[\"professions\"][\""..locale.."\"]", pfDB["professions"][locale])
+    serialize(output .. string.format("%s/zones%s.lua", loc, exp), "pfDB[\"zones\"][\""..locale.."\"]", pfDB["zones"][locale])
+  end
+
+  if not settings.custom then
+    serialize(output .. "init.lua", "pfDB", pfDB, nil, true)
   end
 
   debug_statistics()
