@@ -378,7 +378,7 @@ do -- helper functions
     local spacing = spacing or ""
 
     if tblsize(tbl) == 0 then
-      file:write(spacing .. name .. " = {},\n")
+      file:write(string.format("%s%s = {}%s\n", spacing, name, (spacing == "" and "" or ",")))
     else
       file:write(spacing .. name .. " = {\n")
 
