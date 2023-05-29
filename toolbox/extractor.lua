@@ -1496,7 +1496,9 @@ for id, settings in pairs(config.expansions) do
       local cx = (hitRectLeft+hitRectRight)/2
       local cy = (hitRectTop+hitRectBottom)/2
 
-      pfDB["zones"][data][entry] = { zone, round(width,2), round(height,2), round(cx,2), round(cy,2)}
+      if entry then
+        pfDB["zones"][data][entry] = { zone, round(width,2), round(height,2), round(cx,2), round(cy,2)}
+      end
     end
   end
 
