@@ -1538,7 +1538,7 @@ for id, settings in pairs(config.expansions) do
     }
 
     do -- flightmasters
-      local mask = expansion == "vanilla" and 8 or 8192
+      local mask = core == "vmangos" and 8 or 8192
       local creature_template = {}
       local query = mysql:execute([[
         SELECT Entry, A, H FROM `creature_template`, `pfquest`.FactionTemplate_]]..expansion..[[
