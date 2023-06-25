@@ -261,7 +261,7 @@ CreateFrame("Frame", "pfQuestLocaleCheck", UIParent):SetScript("OnUpdate", funct
     ItemRefTooltip:Hide()
 
     -- check for noloc
-    if name and name ~= "" and pfDB["items"][loc][6948] then
+    if name and name ~= "" and pfDB["items"][loc] and pfDB["items"][loc][6948] then
       if not strfind(name, pfDB["items"][loc][6948], 1) then
         pfDatabase.dbstring = ""
         for id, db in pairs(dbs) do
