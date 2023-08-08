@@ -996,7 +996,9 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   meta["qmin"] = quests[id]["min"]
 
   -- clear previous unified quest nodes
-  pfMap.unifiedcache[meta.quest] = {}
+  if meta.quest then
+    pfMap.unifiedcache[meta.quest] = {}
+  end
 
   if pfQuest_config["currentquestgivers"] == "1" then
     -- search quest-starter
@@ -1232,7 +1234,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
   local addon = meta["addon"] or "PFDB"
   if pfMap.nodes[addon] then
     for map in pairs(pfMap.nodes[addon]) do
-      if pfMap.unifiedcache[meta.quest] and pfMap.unifiedcache[meta.quest][map] then
+      if meta.quest and pfMap.unifiedcache[meta.quest] and pfMap.unifiedcache[meta.quest][map] then
         for hash, data in pairs(pfMap.unifiedcache[meta.quest][map]) do
           meta = data.meta
           meta["title"] = meta["quest"]
