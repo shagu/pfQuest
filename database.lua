@@ -446,12 +446,12 @@ function pfDatabase:ShowExtendedTooltip(id, tooltip, parent, anchor, offx, offy)
     end
     if data["lvl"] then
       local questlevel = tonumber(data["lvl"])
-      local color = GetDifficultyColor(questlevel)
+      local color = pfQuestCompat.GetDifficultyColor(questlevel)
       tooltip:AddLine("|cffffffff" .. pfQuest_Loc["Quest Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
     end
     if data["min"] then
       local questlevel = tonumber(data["min"])
-      local color = GetDifficultyColor(questlevel)
+      local color = pfQuestCompat.GetDifficultyColor(questlevel)
       tooltip:AddLine("|cffffffff" .. pfQuest_Loc["Required Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
     end
   end
@@ -500,7 +500,7 @@ function pfDatabase:GetHexDifficultyColor(level, force)
   if force and UnitLevel("player") < level then
     return "|cffff5555"
   else
-    local c = GetDifficultyColor(level)
+    local c = pfQuestCompat.GetDifficultyColor(level)
     return string.format("|cff%02x%02x%02x", c.r*255, c.g*255, c.b*255)
   end
 end

@@ -27,22 +27,6 @@ pfQuestCompat.GetQuestLogTitle = function(id)
   return title, level, tag, header, collapsed, complete
 end
 
--- vanilla+tbc+wotlk: base function to insert quest links to the chat
-pfQuestCompat.InsertQuestLink = function(questid, name)
-  local questid = questid or 0
-  local fallback = name or UNKNOWN
-  local level = pfDB["quests"]["data"][questid] and pfDB["quests"]["data"][questid]["lvl"] or 0
-  local name = pfDB["quests"]["loc"][questid] and pfDB["quests"]["loc"][questid]["T"] or fallback
-  local hex = pfUI.api.rgbhex(GetDifficultyColor(level))
-
-  ChatFrameEditBox:Show()
-  if pfQuest_config["questlinks"] == "1" then
-    ChatFrameEditBox:Insert(hex .. "|Hquest:" .. questid .. ":" .. level .. "|h[" .. name .. "]|h|r")
-  else
-    ChatFrameEditBox:Insert("[" .. name .. "]")
-  end
-end
-
 -- wotlk: changed from GetDifficultyColor to GetQuestDifficultyColor in 3.2
 pfQuestCompat.GetDifficultyColor = GetQuestDifficultyColor or GetDifficultyColor
 
@@ -54,6 +38,22 @@ pfQuestCompat.QuestLogQuestTitle = QuestLogQuestTitle or QuestInfoTitleHeader
 pfQuestCompat.QuestLogObjectivesText = QuestLogObjectivesText or QuestInfoObjectivesText
 pfQuestCompat.QuestLogQuestDescription = QuestLogQuestDescription or QuestInfoDescriptionText
 pfQuestCompat.QuestLogDescriptionTitle = QuestLogDescriptionTitle or QuestInfoDescriptionHeader
+
+-- vanilla+tbc+wotlk: base function to insert quest links to the chat
+pfQuestCompat.InsertQuestLink = function(questid, name)
+  local questid = questid or 0
+  local fallback = name or UNKNOWN
+  local level = pfDB["quests"]["data"][questid] and pfDB["quests"]["data"][questid]["lvl"] or 0
+  local name = pfDB["quests"]["loc"][questid] and pfDB["quests"]["loc"][questid]["T"] or fallback
+  local hex = pfUI.api.rgbhex(pfQuestCompat.GetDifficultyColor(level))
+
+  ChatFrameEditBox:Show()
+  if pfQuest_config["questlinks"] == "1" then
+    ChatFrameEditBox:Insert(hex .. "|Hquest:" .. questid .. ":" .. level .. "|h[" .. name .. "]|h|r")
+  else
+    ChatFrameEditBox:Insert("[" .. name .. "]")
+  end
+end
 
 -- vanilla+tbc: do the best to detect the minimap arrow
 local minimaparrow = ({Minimap:GetChildren()})[9]
@@ -124,7 +124,7 @@ if client <= 11200 then
         end
 
         if level and level > 0 then
-          local newhex = pfUI.api.rgbhex(GetDifficultyColor(level))
+          local newhex = pfUI.api.rgbhex(pfQuestCompat.GetDifficultyColor(level))
           text = string.gsub(text, oldhex .. "|Hquest:"..questid, newhex.."|Hquest:"..questid)
         end
       end

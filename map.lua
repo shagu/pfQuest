@@ -253,7 +253,7 @@ function pfMap:HexDifficultyColor(level, force)
   if force and UnitLevel("player") < level then
     return "|cffff5555"
   else
-    local c = GetDifficultyColor(level)
+    local c = pfQuestCompat.GetDifficultyColor(level)
     return string.format("|cff%02x%02x%02x", c.r*255, c.g*255, c.b*255)
   end
 end
