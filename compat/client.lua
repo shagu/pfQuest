@@ -39,6 +39,14 @@ pfQuestCompat.QuestLogObjectivesText = QuestLogObjectivesText or QuestInfoObject
 pfQuestCompat.QuestLogQuestDescription = QuestLogQuestDescription or QuestInfoDescriptionText
 pfQuestCompat.QuestLogDescriptionTitle = QuestLogDescriptionTitle or QuestInfoDescriptionHeader
 
+-- wotlk: tooltips won't show on worldmap after login without this
+if client >= 30300 then
+  ShowUIPanel(WorldMapFrame)
+  WorldMapQuestShowObjectives:Click()
+  WorldMapQuestShowObjectives:Click()
+  HideUIPanel(WorldMapFrame)
+end
+
 -- vanilla+tbc+wotlk: base function to insert quest links to the chat
 pfQuestCompat.InsertQuestLink = function(questid, name)
   local questid = questid or 0
