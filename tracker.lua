@@ -342,7 +342,7 @@ function tracker.ButtonEvent(self)
     if not qlogid or not qtitle then return end
     local objectives = GetNumQuestLeaderBoards(qlogid)
     local watched = IsQuestWatched(qlogid)
-    local color = GetDifficultyColor(level)
+    local color = pfQuestCompat.GetDifficultyColor(level)
     local cur,max = 0,0
     local percent = 0
 
@@ -414,7 +414,7 @@ function tracker.ButtonEvent(self)
     self.tooltip = pfQuest_Loc["|cff33ffcc<Click>|r Unfold/Fold Objectives\n|cff33ffcc<Right-Click>|r Show In QuestLog\n|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"]
   elseif tracker.mode == "GIVER_TRACKING" then
     local level = node.qlvl or node.level or UnitLevel("player")
-    local color = GetDifficultyColor(level)
+    local color = pfQuestCompat.GetDifficultyColor(level)
 
     -- red quests
     if node.qmin and node.qmin > UnitLevel("player") then

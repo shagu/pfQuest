@@ -693,7 +693,7 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
       -- read and set title
       if id and id > 0 and pfDB["quests"]["loc"][id] then
         local questlevel = tonumber(pfDB["quests"]["data"][id]["lvl"])
-        local color = GetDifficultyColor(questlevel)
+        local color = pfQuestCompat.GetDifficultyColor(questlevel)
         ItemRefTooltip:AddLine(pfDB["quests"]["loc"][id].T, color.r, color.g, color.b)
       elseif hasTitle then
         ItemRefTooltip:AddLine(questTitle, 1,1,0)
@@ -731,13 +731,13 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
 
         if pfDB["quests"]["data"][id]["min"] then
           local questlevel = tonumber(pfDB["quests"]["data"][id]["min"])
-          local color = GetDifficultyColor(questlevel)
+          local color = pfQuestCompat.GetDifficultyColor(questlevel)
           ItemRefTooltip:AddLine("|cffffffff" .. pfQuest_Loc["Required Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
         end
 
         if pfDB["quests"]["data"][id]["lvl"] then
           local questlevel = tonumber(pfDB["quests"]["data"][id]["lvl"])
-          local color = GetDifficultyColor(questlevel)
+          local color = pfQuestCompat.GetDifficultyColor(questlevel)
           ItemRefTooltip:AddLine("|cffffffff" .. pfQuest_Loc["Quest Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
         end
       end
@@ -764,7 +764,7 @@ else
     -- adjust text color to level color
     if id and id > 0 and pfDB["quests"]["loc"][id] then
       local questlevel = tonumber(pfDB["quests"]["data"][id]["lvl"])
-      local color = GetDifficultyColor(questlevel)
+      local color = pfQuestCompat.GetDifficultyColor(questlevel)
       ItemRefTooltipTextLeft1:SetTextColor(color.r, color.g, color.b)
     end
 
@@ -774,13 +774,13 @@ else
 
       if pfDB["quests"]["data"][id]["min"] then
         local questlevel = tonumber(pfDB["quests"]["data"][id]["min"])
-        local color = GetDifficultyColor(questlevel)
+        local color = pfQuestCompat.GetDifficultyColor(questlevel)
         ItemRefTooltip:AddLine("|cffffffff" .. pfQuest_Loc["Required Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
       end
 
       if pfDB["quests"]["data"][id]["lvl"] then
         local questlevel = tonumber(pfDB["quests"]["data"][id]["lvl"])
-        local color = GetDifficultyColor(questlevel)
+        local color = pfQuestCompat.GetDifficultyColor(questlevel)
         ItemRefTooltip:AddLine("|cffffffff" .. pfQuest_Loc["Quest Level"] .. ": |r" .. questlevel, color.r, color.g, color.b)
       end
     end

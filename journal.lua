@@ -26,7 +26,7 @@ local function OnEnter()
     -- add level of completion
     if pfQuest_history[this.id] and pfQuest_history[this.id][2] then
       local level = pfQuest_history[this.id][2]
-      local color = GetDifficultyColor(level)
+      local color = pfQuestCompat.GetDifficultyColor(level)
       GameTooltip:AddLine("|cffffffff" .. pfQuest_Loc["Completed Level"] .. ": |r" .. level, color.r, color.g, color.b)
     end
     GameTooltip:Show()
