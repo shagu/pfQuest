@@ -9,3 +9,7 @@ database:
 install:
 	cp -rf output/* ../db/
 	rm -rf output
+
+turtle:
+	cp -rf ../db/custom/* ../../pfQuest-turtle/db/
+	rm -rf ../db/custom
