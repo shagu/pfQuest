@@ -601,15 +601,16 @@ QuestLog_Update = function()
   pfHookQuestLog_Update()
 
   if pfQuest_config["questloglevel"] == "1" then
-    for i=1, QUESTS_DISPLAYED, 1 do
-      local display = i + FauxScrollFrame_GetOffset(QuestLogListScrollFrame)
-      local entries = GetNumQuestLogEntries()
+    for i = 1, GetNumQuestLogEntries() do
+      local title, level, tag, header = compat.GetQuestLogTitle(i)
+      local button = _G["QuestLogTitle"..i] or _G["QuestLogScrollFrameButton" .. i]
 
-      if display <= entries then
-        local title, level, tag, header = compat.GetQuestLogTitle(display)
-        if not header then
-          _G["QuestLogTitle"..i]:SetText(" [" .. ( level or "??" ) .. ( tag and "+" or "") .. "] " .. title)
-        end
+      if not header then
+        button:SetText(" [" .. ( level or "??" ) .. ( tag and "+" or "") .. "] " .. title)
+      end
+
+      if QuestLogTitleButton_Resize then
+        QuestLogTitleButton_Resize(button)
       end
     end
   end
