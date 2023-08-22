@@ -478,10 +478,10 @@ end
 
 local function SelectView(view)
   for id, frame in pairs(pfBrowser.tabs) do
-    frame.button:SetTextColor(1,1,1,.7)
+    pfUI.api.SetButtonFontColor(frame.button, 1,1,1,.7)
     frame:Hide()
   end
-  view.button:SetTextColor(.2,1,.8,1)
+  pfUI.api.SetButtonFontColor(view.button, .2,1,.8,1)
   view.button:Hide()
   view.button:Show()
   view:Show()

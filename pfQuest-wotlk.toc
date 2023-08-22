@@ -1,0 +1,31 @@
+## Interface: 30300
+## Title: |cff33ffccpf|cffffffffQuest |cffff5555[BETA]
+## Author: Shagu
+## Notes: A Questhelper and Database
+## Notes-ruRU: Облегченный помощник заданий и база данных
+## Version: GIT
+## OptionalDeps: pfUI-wotlk
+## SavedVariables: pfQuest_questcache
+## SavedVariablesPerCharacter: pfQuest_config, pfBrowser_fav, pfQuest_history, pfQuest_colors, pfQuest_server
+
+init\data.xml
+init\enUS.xml
+init\koKR.xml
+init\frFR.xml
+init\deDE.xml
+init\zhCN.xml
+init\zhTW.xml
+init\esES.xml
+init\ruRU.xml
+
+init\data-tbc.xml
+init\enUS-tbc.xml
+init\koKR-tbc.xml
+init\frFR-tbc.xml
+init\deDE-tbc.xml
+init\zhCN-tbc.xml
+init\zhTW-tbc.xml
+init\esES-tbc.xml
+init\ruRU-tbc.xml
+
+init\addon.xml

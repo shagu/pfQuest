@@ -7,12 +7,12 @@ local _G = client == 11200 and getfenv(0) or _G
 pfQuest = CreateFrame("Frame")
 pfQuest.icons = {}
 
-if client > 11200 then
-  -- tbc
-  pfQuest.dburl = "https://tbc-twinhead.twinstar.cz/?quest="
+if client >= 30300 then
+  pfQuest.dburl = "https://www.wowhead.com/wotlk/quest="
+elseif client >= 20400 then
+  pfQuest.dburl = "https://www.wowhead.com/tbc/quest="
 else
-  -- vanilla
-  pfQuest.dburl = "https://vanilla-twinhead.twinstar.cz/?quest="
+  pfQuest.dburl = "https://www.wowhead.com/classic/quest="
 end
 
 function pfQuest:Debug(msg)
@@ -351,7 +351,7 @@ function pfQuest:AddQuestLogIntegration()
   if pfQuest_config["questlogbuttons"] ==  "0" then return end
 
   local dockFrame = EQL3_QuestLogDetailScrollChildFrame or ShaguQuest_QuestLogDetailScrollChildFrame or QuestLogDetailScrollChildFrame
-  local dockTitle = EQL3_QuestLogDescriptionTitle or ShaguQuest_QuestLogDescriptionTitle or QuestLogDescriptionTitle
+  local dockTitle = EQL3_QuestLogDescriptionTitle or ShaguQuest_QuestLogDescriptionTitle or pfQuestCompat.QuestLogDescriptionTitle
 
   dockTitle:SetHeight(dockTitle:GetHeight() + 30)
   dockTitle:SetJustifyV("BOTTOM")
@@ -421,10 +421,11 @@ function pfQuest:AddQuestLogIntegration()
     end
 
     if id and pfDB["quests"][lang] and pfDB["quests"][lang][id] then
-      local QuestLogQuestTitle = EQL3_QuestLogQuestTitle or QuestLogQuestTitle
-      local QuestLogObjectivesText = EQL3_QuestLogObjectivesText or QuestLogObjectivesText
-      local QuestLogQuestDescription = EQL3_QuestLogQuestDescription or QuestLogQuestDescription
-      local QuestLogDetailScrollFrame = EQL3_QuestLogDetailScrollFrame or QuestLogDetailScrollFrame
+      local QuestLogQuestTitle = EQL3_QuestLogQuestTitle or pfQuestCompat.QuestLogQuestTitle
+      local QuestLogObjectivesText = EQL3_QuestLogObjectivesText or pfQuestCompat.QuestLogObjectivesText
+      local QuestLogQuestDescription = EQL3_QuestLogQuestDescription or pfQuestCompat.QuestLogQuestDescription
+      local QuestLogDetailScrollFrame = EQL3_QuestLogDetailScrollFrame or pfQuestCompat.QuestLogDetailScrollFrame
+
       QuestLogQuestTitle:SetText(pfDatabase:FormatQuestText(pfDB["quests"][lang][id]["T"]))
       QuestLogObjectivesText:SetText(pfDatabase:FormatQuestText(pfDB["quests"][lang][id]["O"]))
       QuestLogQuestDescription:SetText(pfDatabase:FormatQuestText(pfDB["quests"][lang][id]["D"]))
@@ -548,9 +549,15 @@ function pfQuest:AddWorldMapIntegration()
     end
 
     UIDropDownMenu_Initialize(pfQuest.mapButton, CreateEntries)
-    UIDropDownMenu_SetWidth(120, pfQuest.mapButton)
-    UIDropDownMenu_SetButtonWidth(125, pfQuest.mapButton)
-    UIDropDownMenu_JustifyText("RIGHT", pfQuest.mapButton)
+    if client >= 30300 then
+      UIDropDownMenu_SetWidth(pfQuest.mapButton, 120)
+      UIDropDownMenu_SetButtonWidth(pfQuest.mapButton, 125)
+      UIDropDownMenu_JustifyText(pfQuest.mapButton, "RIGHT")
+    else
+      UIDropDownMenu_SetWidth(120, pfQuest.mapButton)
+      UIDropDownMenu_SetButtonWidth(125, pfQuest.mapButton)
+      UIDropDownMenu_JustifyText("RIGHT", pfQuest.mapButton)
+    end
     UIDropDownMenu_SetSelectedID(pfQuest.mapButton, pfQuest.mapButton.current)
   end
 end
