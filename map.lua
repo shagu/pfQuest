@@ -208,10 +208,14 @@ pfMap.tooltip:SetScript("OnShow", function()
   -- abort if tooltips are disabled
   if pfQuest_config.showtooltips == "0" then return end
 
-  local name = getglobal("GameTooltipTextLeft1") and getglobal("GameTooltipTextLeft1"):GetText()
+  local name = getglobal("GameTooltipTextLeft1") and getglobal("GameTooltipTextLeft1"):GetText() or "__NONE__"
   local zone = pfMap:GetMapID(GetCurrentMapContinent(), GetCurrentMapZone())
 
-  if name and pfMap.tooltips[name] and pfMap.tooltips[name] then
+  -- remove all colors from received tooltip text
+  name = string.gsub(name, "|c%x%x%x%x%x%x%x%x", "")
+  name = string.gsub(name, "|r", "")
+
+  if pfMap.tooltips[name] and pfMap.tooltips[name] then
     for title, obj in pairs(pfMap.tooltips[name]) do
       if obj[zone] then
         pfMap:ShowTooltip(obj[zone], GameTooltip)
