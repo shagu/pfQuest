@@ -638,6 +638,13 @@ QuestLog_Update = function()
   end
 end
 
+-- refresh language and url on quest selection
+local pfHookQuestLogTitleButton_OnClick = QuestLogTitleButton_OnClick
+QuestLogTitleButton_OnClick = function(self, button)
+  pfHookQuestLogTitleButton_OnClick(self, button)
+  QuestLog_Update()
+end
+
 if not GetQuestLink then -- Allow to send questlinks from questlog
   local pfHookQuestLogTitleButton_OnClick = QuestLogTitleButton_OnClick
   QuestLogTitleButton_OnClick = function(button)
