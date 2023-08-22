@@ -33,6 +33,37 @@ if not pfUI then
   }
 end
 
+-- Helpers to be moved into pfUI API maybe..
+function pfUI.api.SetButtonFont(button, font, size, flags)
+  if button.SetFont then
+    -- vanilla + tbc
+    button:SetFont(font, size, flags)
+  else
+    -- wotlk
+    local buttonText = button:GetFontString()
+    if buttonText then
+      buttonText:SetFont(font, size, flags)
+    else
+      -- create new font string if not existing
+      buttonText = button:CreateFontString(nil, "OVERLAY")
+      buttonText:SetFont(font, size, flags)
+      buttonText:SetPoint("CENTER", button, "CENTER")
+      button:SetFontString(buttonText)
+    end
+  end
+end
+
+function pfUI.api.SetButtonFontColor(button, r, g, b, a)
+  if button.SetTextColor then
+    -- vanilla + tbc
+    button:SetTextColor(r, g, b, a)
+  else
+    -- wotlk
+    local buttonText = button:GetFontString()
+    if buttonText then buttonText:SetTextColor(r, g, b, a) end
+  end
+end
+
 -- Add API support non-pfUI environments and for old pfUI versions:
 -- strsplit, SanitizePattern, CreateBackdrop, SkinButton, CreateScrollFrame, CreateScrollChild
 if pfUI.api and pfUI.api.strsplit and pfUI.api.CreateBackdrop and
@@ -152,7 +183,7 @@ function pfUI.api.SkinButton(button, cr, cg, cb)
     if funcl then funcl() end
     pfUI.api.CreateBackdrop(b, nil, true)
   end)
-  b:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
+  pfUI.api.SetButtonFont(b, pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
 end
 
 function pfUI.api.CreateScrollFrame(name, parent)
@@ -168,9 +199,13 @@ function pfUI.api.CreateScrollFrame(name, parent)
   f.slider.thumb:SetHeight(50)
   f.slider.thumb:SetTexture(.3,1,.8,.5)
 
+  local selfevent = false
   f.slider:SetScript("OnValueChanged", function()
+    if selfevent then return end
+    selfevent = true
     f:SetVerticalScroll(this:GetValue())
     f.UpdateScrollState()
+    selfevent = false
   end)
 
   f.UpdateScrollState = function()

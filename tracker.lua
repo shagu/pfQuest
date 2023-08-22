@@ -106,8 +106,8 @@ tracker:SetScript("OnUpdate", function()
     this.backdrop:SetAlpha(alpha + ((goal - alpha) > 0 and .1 or (goal - alpha) < 0 and -.1 or 0))
   end
 
-  if QuestWatchFrame:IsShown() then
-    QuestWatchFrame:Hide()
+  if pfQuestCompat.QuestWatchFrame:IsShown() then
+    pfQuestCompat.QuestWatchFrame:Hide()
   end
 end)
 
