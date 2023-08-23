@@ -1049,3 +1049,35 @@ pfMap:SetScript("OnUpdate", function()
     hidecluster = nil
   end
 end)
+
+-- Highlight Map Quest Log Selection Nodes
+if compat.client >= 30300 then
+  -- Initialize a variable to track the previous clicked title
+  local previousTitle = nil
+
+  local function Hooked_WorldMapQuestFrame_OnMouseUp(self, ...)
+    WorldMapBlobFrame:Hide()
+    WorldMapFrame_ClearQuestPOIs()
+    if not IsShiftKeyDown()then
+      pfMap.highlight = nil
+      local questLogIndex = GetQuestLogSelection()
+      local title = GetQuestLogTitle(questLogIndex)
+
+      if title then
+        if previousTitle == title then
+          -- Reset the highlight if the same title is clicked again
+          pfMap.highlight = nil
+          previousTitle = nil
+        else
+          -- Logic for highlighting nodes associated with the clicked quest
+          pfMap.highlight = title
+          previousTitle = title
+          pfMap.queue_update = GetTime()
+        end
+      end
+    end
+  end
+
+  hooksecurefunc("WorldMapQuestFrame_OnMouseUp", Hooked_WorldMapQuestFrame_OnMouseUp)
+end
+
