@@ -39,12 +39,14 @@ pfQuestCompat.QuestLogObjectivesText = QuestLogObjectivesText or QuestInfoObject
 pfQuestCompat.QuestLogQuestDescription = QuestLogQuestDescription or QuestInfoDescriptionText
 pfQuestCompat.QuestLogDescriptionTitle = QuestLogDescriptionTitle or QuestInfoDescriptionHeader
 
--- wotlk: tooltips won't show on worldmap after login without this
+-- wotlk: tooltips won't show on worldmap after login without this.
+-- a better solution is appreciated, this is just a workaround.
 if client >= 30300 then
-  ShowUIPanel(WorldMapFrame)
-  WorldMapQuestShowObjectives:Click()
-  WorldMapQuestShowObjectives:Click()
-  HideUIPanel(WorldMapFrame)
+  CreateFrame("Frame", nil, WorldMapFrame):SetScript("OnUpdate", function()
+    WorldMapQuestShowObjectives:Click()
+    WorldMapQuestShowObjectives:Click()
+    this:Hide()
+  end)
 end
 
 -- vanilla+tbc+wotlk: base function to insert quest links to the chat
