@@ -595,22 +595,27 @@ AbandonQuest = function()
   HookAbandonQuest()
 end
 
+local function UpdateQuestLevel(button, id)
+  local title, level, tag, header = compat.GetQuestLogTitle(id)
+  if header or not title then return end
+  button:SetText(" [" .. ( level or "??" ) .. ( tag and "+" or "") .. "] " .. title)
+  if not QuestLogTitleButton_Resize then return end
+  QuestLogTitleButton_Resize(button)
+end
+
 -- Update quest id button
 local pfHookQuestLog_Update = QuestLog_Update
 QuestLog_Update = function()
   pfHookQuestLog_Update()
 
   if pfQuest_config["questloglevel"] == "1" then
-    for i = 1, GetNumQuestLogEntries() do
-      local title, level, tag, header = compat.GetQuestLogTitle(i)
-      local button = _G["QuestLogTitle"..i] or _G["QuestLogScrollFrameButton" .. i]
-
-      if not header then
-        button:SetText(" [" .. ( level or "??" ) .. ( tag and "+" or "") .. "] " .. title)
+    if client >= 30300 then
+      for i, button in pairs(QuestLogScrollFrame.buttons) do
+        UpdateQuestLevel(button, button:GetID())
       end
-
-      if QuestLogTitleButton_Resize then
-        QuestLogTitleButton_Resize(button)
+    else
+      for i=1, QUESTS_DISPLAYED, 1 do
+        UpdateQuestLevel(_G["QuestLogTitle"..i], i + FauxScrollFrame_GetOffset(QuestLogListScrollFrame))
       end
     end
   end
@@ -637,6 +642,11 @@ QuestLog_Update = function()
       pfQuest.buttonHide:Disable()
     end
   end
+end
+
+-- attach the new function to the scroll frame
+if QuestLogScrollFrame then
+  QuestLogScrollFrame.update = QuestLog_Update
 end
 
 -- refresh language and url on quest selection
