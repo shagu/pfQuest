@@ -617,6 +617,11 @@ function pfMap:NodeClick()
 end
 
 function pfMap:NodeEnter()
+  -- wotlk: need to disable blop tooltips first
+  if compat.client >= 30300 then
+    WorldMapPOIFrame.allowBlobTooltip = false
+  end
+
   local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
   tooltip:SetOwner(this, "ANCHOR_LEFT")
   this.spawn = this.spawn or UNKNOWN
@@ -652,6 +657,11 @@ function pfMap:NodeEnter()
 end
 
 function pfMap:NodeLeave()
+  -- wotlk: re-enable blop tooltips
+  if compat.client >= 30300 then
+    WorldMapPOIFrame.allowBlobTooltip = true
+  end
+
   local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
   tooltip:Hide()
   pfMap.highlight = nil

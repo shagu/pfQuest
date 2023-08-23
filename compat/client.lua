@@ -39,16 +39,6 @@ pfQuestCompat.QuestLogObjectivesText = QuestLogObjectivesText or QuestInfoObject
 pfQuestCompat.QuestLogQuestDescription = QuestLogQuestDescription or QuestInfoDescriptionText
 pfQuestCompat.QuestLogDescriptionTitle = QuestLogDescriptionTitle or QuestInfoDescriptionHeader
 
--- wotlk: tooltips won't show on worldmap after login without this.
--- a better solution is appreciated, this is just a workaround.
-if client >= 30300 then
-  CreateFrame("Frame", nil, WorldMapFrame):SetScript("OnUpdate", function()
-    WorldMapQuestShowObjectives:Click()
-    WorldMapQuestShowObjectives:Click()
-    this:Hide()
-  end)
-end
-
 -- wotlk: disable builtin quest progress tooltips
 if client >= 30300 then
   SetCVar("showQuestTrackingTooltips", 0)
