@@ -1050,15 +1050,17 @@ pfMap:SetScript("OnUpdate", function()
   end
 end)
 
--- Highlight Map Quest Log Selection Nodes
+-- only hook for 3.3.5
 if compat.client >= 30300 then
   -- Initialize a variable to track the previous clicked title
   local previousTitle = nil
-
-  local function Hooked_WorldMapQuestFrame_OnMouseUp(self, ...)
+  -- Highlight Map Quest Log Selection Nodes
+  local pfHookWorldMapQuestFrame_OnMouseUp = WorldMapQuestFrame_OnMouseUp
+  WorldMapQuestFrame_OnMouseUp = function(self)
+    pfHookWorldMapQuestFrame_OnMouseUp(self)
     WorldMapBlobFrame:Hide()
     WorldMapFrame_ClearQuestPOIs()
-    if not IsShiftKeyDown()then
+    if not IsShiftKeyDown() then
       pfMap.highlight = nil
       local questLogIndex = GetQuestLogSelection()
       local title = GetQuestLogTitle(questLogIndex)
@@ -1077,7 +1079,4 @@ if compat.client >= 30300 then
       end
     end
   end
-
-  hooksecurefunc("WorldMapQuestFrame_OnMouseUp", Hooked_WorldMapQuestFrame_OnMouseUp)
 end
-
