@@ -346,6 +346,19 @@ local bitclasses = {
 -- make it public for extensions
 pfDB.bitclasses = bitclasses
 
+function pfDatabase:IsFriendly(id)
+  if id and units[id] and units[id].fac then
+    local faction = string.lower(UnitFactionGroup("player"))
+    faction = faction == "horde" and "H" or faction == "alliance" and "A" or "UNKNOWN"
+
+    if string.find(units[id].fac, faction) then
+      return true
+    end
+  end
+
+  return false
+end
+
 function pfDatabase:BuildQuestDescription(meta)
   if not meta.title or not meta.quest or not meta.QTYPE then return end
 
@@ -358,7 +371,11 @@ function pfDatabase:BuildQuestDescription(meta)
   elseif meta.QTYPE == "OBJECT_END" then
     return string.format(pfQuest_Loc["Interact with |cff33ffcc%s|r to complete |cffffcc00[?]|cff33ffcc %s|r"], (meta.spawn or UNKNOWN), (meta.quest or UNKNOWN))
   elseif meta.QTYPE == "UNIT_OBJECTIVE" then
-    return string.format(pfQuest_Loc["Kill |cff33ffcc%s|r"], (meta.spawn or UNKNOWN))
+    if pfDatabase:IsFriendly(meta.spawnid) then
+      return string.format(pfQuest_Loc["Talk to |cff33ffcc%s|r"], (meta.spawn or UNKNOWN))
+    else
+      return string.format(pfQuest_Loc["Kill |cff33ffcc%s|r"], (meta.spawn or UNKNOWN))
+    end
   elseif meta.QTYPE == "UNIT_OBJECTIVE_ITEMREQ" then
     return string.format(pfQuest_Loc["Use |cff33ffcc%s|r on |cff33ffcc%s|r"], (meta.itemreq or UNKNOWN), (meta.spawn or UNKNOWN))
   elseif meta.QTYPE == "OBJECT_OBJECTIVE" then
