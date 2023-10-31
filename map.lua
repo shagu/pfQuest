@@ -399,7 +399,9 @@ end
 
 function pfMap:ShowMapID(map)
   if map then
-    WorldMapFrame:Show()
+    if not WorldMapFrame:IsShown() then
+      ToggleWorldMap()
+    end
     pfMap:SetMapByID(map)
     pfMap:UpdateNodes()
     return true
