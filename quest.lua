@@ -560,10 +560,15 @@ end
 local pfHookRemoveQuestWatch = RemoveQuestWatch
 RemoveQuestWatch = function(questIndex)
   local ret = pfHookRemoveQuestWatch(questIndex)
-  local title, _, _, header, _, complete = compat.GetQuestLogTitle(questIndex)
-  pfMap:DeleteNode("PFQUEST", title)
+
+  if questIndex then
+    local title, _, _, header, _, complete = compat.GetQuestLogTitle(questIndex)
+    pfMap:DeleteNode("PFQUEST", title)
+  end
+
   pfQuest.updateQuestLog = true
   pfQuest.updateQuestGivers = true
+
   return ret
 end
 
