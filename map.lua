@@ -351,6 +351,12 @@ function pfMap:ShowTooltip(meta, tooltip)
       end
 
       if not catchFallback and meta["texture"] and meta["qlvl"] then
+        local texts = meta["questid"] and pfDB["quests"]["loc"][meta["questid"]] or nil
+
+        if texts and texts["O"] and texts["O"] ~= "" then
+          tooltip:AddLine(pfDatabase:FormatQuestText(texts["O"]),1,1,.9,true)
+        end
+
         local qlvlstr = pfQuest_Loc["Level"] .. ": " .. pfMap:HexDifficultyColor(meta["qlvl"]) .. meta["qlvl"] .. "|r"
         local qminstr = meta["qmin"] and " / " .. pfQuest_Loc["Required"] .. ": " .. pfMap:HexDifficultyColor(meta["qmin"], true) .. meta["qmin"] .. "|r"  or ""
         tooltip:AddLine("|cffaaaaaa- |r" .. qlvlstr .. qminstr , .8,.8,.8)
