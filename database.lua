@@ -1729,3 +1729,34 @@ end)
 function pfDatabase:ScanServer()
   pfServerScan:Show()
 end
+
+function pfDatabase:QueryServer()
+  QueryQuestsCompleted()  -- Send the request to the server
+
+  local frame = CreateFrame("Frame")  -- Create a new frame
+  frame:RegisterEvent("QUEST_QUERY_COMPLETE")  -- Register the event on the frame
+
+  local function OnQuestQueryComplete()
+    frame:UnregisterEvent("QUEST_QUERY_COMPLETE")  -- Unregister the event once it's triggered
+
+    -- Retrieve completed quests after the QUEST_QUERY_COMPLETE event
+    local completedQuests = GetQuestsCompleted()
+
+    if type(completedQuests) == "table" then
+      for questID, _ in pairs(completedQuests) do
+        pfQuest_history[questID] = { time(), UnitLevel("player") }
+      end
+
+      -- Reset all quest markers after processing completed quests
+      pfQuest:ResetAll()
+    elseif completedQuests == nil then
+      -- Handle the case where GetQuestsCompleted() returned nil
+      print("Error: GetQuestsCompleted() returned nil.")
+    else
+      -- Handle the case where GetQuestsCompleted() did not return a valid table
+      print("Error: GetQuestsCompleted() did not return a valid table. Value: ", completedQuests)
+    end
+  end
+
+  frame:SetScript("OnEvent", OnQuestQueryComplete)  -- Set the event handler
+end
