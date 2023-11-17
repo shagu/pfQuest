@@ -328,6 +328,9 @@ local defcolor = "|cffffcc00"
 local r, g, b
 
 pfQuest.route.arrow:SetScript("OnUpdate", function()
+  -- abort if the frame is not initialized yet
+  if not this.parent then return end
+
   xplayer, yplayer = GetPlayerMapPosition("player")
   wrongmap = xplayer == 0 and yplayer == 0 and true or nil
   target = this.parent.coords and this.parent.coords[1] and this.parent.coords[1][4] and this.parent.coords[1] or nil
