@@ -1455,6 +1455,9 @@ function pfDatabase:GetQuestIDs(qid)
   if header or not title then return end
   local identifier = title .. ":" .. ( level or "") .. ":" .. ( objective or "") .. ":" .. ( text or "")
 
+  -- always make sure the quest-cache exists
+  pfQuest_questcache = pfQuest_questcache or {}
+
   if pfQuest_questcache[identifier] and pfQuest_questcache[identifier][1] then
     return pfQuest_questcache[identifier]
   end
