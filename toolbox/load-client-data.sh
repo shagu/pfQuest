@@ -232,7 +232,7 @@ function AreaTable() {
   cat >> $rootsql << EOF
 DROP TABLE IF EXISTS \`AreaTable_${v}\`;
 CREATE TABLE \`AreaTable_${v}\` (
-\`id\` smallint(3) unsigned NOT NULL,
+\`id\` int(3) unsigned NOT NULL,
 \`zoneID\` smallint(3) unsigned NOT NULL,
 \`name_loc0\` varchar(255) NOT NULL,
 \`name_loc1\` varchar(255) NOT NULL,

@@ -2583,7 +2583,7 @@ UPDATE `SkillLine_vanilla` SET name_loc8 = "Питомец - управлени�
 UPDATE `SkillLine_vanilla` SET name_loc8 = "Верховая езда" WHERE id = 762;
 DROP TABLE IF EXISTS `AreaTable_vanilla`;
 CREATE TABLE `AreaTable_vanilla` (
-`id` smallint(3) unsigned NOT NULL,
+`id` int(3) unsigned NOT NULL,
 `zoneID` smallint(3) unsigned NOT NULL,
 `name_loc0` varchar(255) NOT NULL,
 `name_loc1` varchar(255) NOT NULL,
@@ -14216,7 +14216,7 @@ UPDATE `SkillLine_turtle` SET name_loc8 = "ZMounts" WHERE id = 1006;
 UPDATE `SkillLine_turtle` SET name_loc8 = "ZzzGlyphs" WHERE id = 1007;
 DROP TABLE IF EXISTS `AreaTable_turtle`;
 CREATE TABLE `AreaTable_turtle` (
-`id` smallint(3) unsigned NOT NULL,
+`id` int(3) unsigned NOT NULL,
 `zoneID` smallint(3) unsigned NOT NULL,
 `name_loc0` varchar(255) NOT NULL,
 `name_loc1` varchar(255) NOT NULL,
@@ -29213,7 +29213,7 @@ UPDATE `SkillLine_tbc` SET name_loc8 = "Питомец: змей" WHERE id = 768
 UPDATE `SkillLine_tbc` SET name_loc8 = "Внутренний" WHERE id = 769;
 DROP TABLE IF EXISTS `AreaTable_tbc`;
 CREATE TABLE `AreaTable_tbc` (
-`id` smallint(3) unsigned NOT NULL,
+`id` int(3) unsigned NOT NULL,
 `zoneID` smallint(3) unsigned NOT NULL,
 `name_loc0` varchar(255) NOT NULL,
 `name_loc1` varchar(255) NOT NULL,
@@ -42439,7 +42439,7 @@ CREATE TABLE `SkillLine_wotlk` (
 
 DROP TABLE IF EXISTS `AreaTable_wotlk`;
 CREATE TABLE `AreaTable_wotlk` (
-`id` smallint(3) unsigned NOT NULL,
+`id` int(3) unsigned NOT NULL,
 `zoneID` smallint(3) unsigned NOT NULL,
 `name_loc0` varchar(255) NOT NULL,
 `name_loc1` varchar(255) NOT NULL,
