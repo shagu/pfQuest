@@ -263,7 +263,10 @@ EOF
       tail -n +2 $root/$v/$loc/AreaTable.dbc.csv | while read line; do
         id=$(echo $line | cut -d , -f 1)
         zoneID=$(echo $line | cut -d , -f 3)
-        entry=$(echo $line | cut -d , -f $(expr 12 + $dbcslot) | sed 's/""/\\"/g')
+        entry=$(echo $line | cut -d , -f $(expr 12 + $dbcslot))
+        if ! [ -z "$entry" ] && [ "$entry" != "\"\"" ]; then
+          entry=$(echo $entry | sed 's/""/\\"/g')
+        fi
 
         # some zones must be flagged with UNUSED for some locales
         unused_zones="55 276 394 407 470 474 476 696 697 698 699 1196"
