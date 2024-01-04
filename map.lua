@@ -532,6 +532,22 @@ function pfMap:AddNode(meta)
   pfMap.queue_update = GetTime()
 end
 
+function pfMap:GetNodes(addon, title)
+  local nodes = {}
+
+  if title and pfMap.nodes[addon] then
+    for map, foo in pairs(pfMap.nodes[addon]) do
+      for coords, node in pairs(pfMap.nodes[addon][map]) do
+        if pfMap.nodes[addon][map][coords][title] then
+          table.insert(nodes, pfMap.nodes[addon][map][coords][title])
+        end
+      end
+    end
+  end
+
+  return nodes
+end
+
 function pfMap:DeleteNode(addon, title)
   -- remove tooltips
   if not addon then
