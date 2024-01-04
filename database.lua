@@ -360,7 +360,7 @@ function pfDatabase:IsFriendly(id)
 end
 
 function pfDatabase:BuildQuestDescription(meta)
-  if not meta.title or not meta.quest or not meta.QTYPE then return end
+  if not meta.title or not meta.quest or not meta.QTYPE then return meta.description end
 
   if meta.QTYPE == "NPC_START" then
     return string.format(pfQuest_Loc["Speak with |cff33ffcc%s|r to obtain |cffffcc00[!]|cff33ffcc %s|r"], (meta.spawn or UNKNOWN), (meta.quest or UNKNOWN))
