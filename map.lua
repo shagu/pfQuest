@@ -716,6 +716,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
       frame.quest       = tab.quest
       frame.qlvl        = tab.qlvl
       frame.itemreq     = tab.itemreq
+      frame.arrow       = tab.arrow
 
       if pfQuest_config["spawncolors"] == "1" then
         frame.color = tab.spawn or tab.title
@@ -811,7 +812,8 @@ function pfMap:UpdateNodes()
         if ( pfQuest_config["routecluster"] == "1" and pfMap.pins[i].layer >= 9 ) or
           ( pfQuest_config["routeender"] == "1" and pfMap.pins[i].layer == 4) or
           ( pfQuest_config["routestarter"] == "1" and pfMap.pins[i].layer == 1 and pfMap.pins[i].texture) or
-          ( pfQuest_config["routestarter"] == "1" and pfMap.pins[i].layer == 2)
+          ( pfQuest_config["routestarter"] == "1" and pfMap.pins[i].layer == 2) or
+          pfMap.pins[i].arrow == true
         then
           pfQuest.route:AddPoint({ x, y, pfMap.pins[i] })
         end
