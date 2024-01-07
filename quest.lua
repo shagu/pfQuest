@@ -694,7 +694,7 @@ if not GetQuestLink then -- Allow to send questlinks from questlog
 
       -- scan for active quests
       local queststate = pfQuest_history[id] and 2 or 0
-      queststate = pfQuest.questlog[id] and 1 or nil
+      queststate = pfQuest.questlog[id] and 1 or queststate
 
       if queststate == 0 then
         ItemRefTooltip:AddLine(pfQuest_Loc["You don't have this quest."] .. "\n\n", 1, .5, .5)
