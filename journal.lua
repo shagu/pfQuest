@@ -21,7 +21,7 @@ end
 local function OnEnter()
   if this.id then
     -- show extended quest tooltip
-    pfDatabase:ShowExtendedTooltip(this.id, tooltip, parent, anchor, offx, offy)
+    pfDatabase:ShowExtendedTooltip(this.id, GameTooltip, this, "ANCHOR_LEFT", 0, -10)
 
     -- add level of completion
     if pfQuest_history[this.id] and pfQuest_history[this.id][2] then
