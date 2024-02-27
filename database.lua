@@ -1731,6 +1731,12 @@ function pfDatabase:ScanServer()
 end
 
 function pfDatabase:QueryServer()
+  -- break here on incompatible versions
+  if not QueryQuestsCompleted then
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest: Option is not available on your server.")
+    return
+  end
+
   QueryQuestsCompleted()  -- Send the request to the server
 
   local frame = CreateFrame("Frame")  -- Create a new frame
