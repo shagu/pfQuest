@@ -718,8 +718,7 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
 
   if pfDB["meta"] and pfDB["meta"][relname] then
     if relname == "flight" then
-      meta["texture"] = pfQuestConfig.path.."\\img\\available_c"
-      meta["vertex"] = { .4, 1, .4 }
+      meta["texture"] = "Interface\\TaxiFrame\\UI-Taxi-Icon-White"
 
       if relmins then
         faction = string.lower(relmins)
