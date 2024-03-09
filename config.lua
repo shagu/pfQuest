@@ -440,6 +440,12 @@ function pfQuestConfig:UpdateConfigEntries()
   end
 end
 
+function pfQuestConfig:ResetConfigFrames(config)
+  configframes = {}
+  pfQuestConfig:CreateConfigEntries(config)
+  pfQuestConfig:UpdateConfigEntries()
+end
+
 do -- welcome/init popup dialog
   local config_stage = {
     arrow = 1,
