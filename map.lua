@@ -409,9 +409,16 @@ end
 
 function pfMap:ShowMapID(map)
   if map then
-    if not WorldMapFrame:IsShown() then
-      ToggleWorldMap()
+    if ToggleWorldMap then
+      -- vanilla & tbc
+      if not WorldMapFrame:IsShown() then
+        ToggleWorldMap()
+      end
+    else
+      -- wotlk
+      WorldMapFrame:Show()
     end
+
     pfMap:SetMapByID(map)
     pfMap:UpdateNodes()
     return true
