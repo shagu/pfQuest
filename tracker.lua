@@ -269,7 +269,13 @@ function tracker.ButtonClick()
     pfQuest.updateQuestGivers = true
   elseif IsControlKeyDown() and not WorldMapFrame:IsShown() then
     -- show world map
-    ToggleWorldMap()
+    if ToggleWorldMap then
+      -- vanilla & tbc
+      ToggleWorldMap()
+    else
+      -- wotlk
+      WorldMapFrame:Show()
+    end
   elseif IsControlKeyDown() and pfQuest_config["spawncolors"] == "0" then
     -- switch color
     pfQuest_colors[this.title] = { pfMap.str2rgb(this.title .. GetTime()) }
