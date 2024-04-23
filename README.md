@@ -39,6 +39,28 @@ You can check the [[Latest Changes]](https://github.com/shagu/pfQuest/commits/ma
 [Spanish](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-esES-tbc.zip),
 [Russian](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-ruRU-tbc.zip)*
 
+## World of Warcraft: **Wrath of the Lich King**
+
+> [!IMPORTANT]
+>
+> **This is a BETA version of pfQuest**
+>
+> It is able to run on a WotLK (3.3.5a) client, but does not yet ship a WotLK database.
+> Every available content is limited to Vanilla & TBC as of now.
+
+1. **[[Download pfQuest]](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-full-wotlk.zip)** (\*)
+2. Unpack the Zip-file
+3. Move the `pfQuest-wotlk` folder into `Wow-Directory\Interface\AddOns`
+4. Restart Wow
+
+\*) *You can optionally pick one of the slim version downloads instead. Those version are limited to only one specific language: [English](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-enUS-wotlk.zip),
+[Korean](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-koKR-wotlk.zip),
+[French](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-frFR-wotlk.zip),
+[German](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-deDE-wotlk.zip),
+[Chinese](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-zhCN-wotlk.zip),
+[Spanish](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-esES-wotlk.zip),
+[Russian](https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-ruRU-wotlk.zip)*
+
 ## Development Version
 The development version includes databases of all languages and client expansions. Based on the folder name, this will launch in both vanilla and tbc mode. Due to the amount of included data, this snapshot will lead to a higher RAM/Disk-Usage and slightly increased loading times.
 
