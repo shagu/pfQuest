@@ -444,11 +444,19 @@ local customids = {
   ["AlteracValley"] = 2597,
 }
 
+local map_zone_cache = { }
 function pfMap:GetMapID(cid, mid)
   cid = cid or GetCurrentMapContinent()
   mid = mid or GetCurrentMapZone()
 
-  local list = {GetMapZones(cid)}
+  -- GetMapZones() should always return the same amount
+  -- of zones for each continent, so we can cache it to
+  -- avoid further creations of the same table.
+  if not map_zone_cache[cid] then
+    map_zone_cache[cid] = { GetMapZones(cid) }
+  end
+
+  local list = map_zone_cache[cid]
   local name = list[mid]
   local id = pfMap:GetMapIDByName(name)
   id = id or customids[GetMapInfo()]
