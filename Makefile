@@ -1,7 +1,7 @@
 VERSION = $(shell git describe --abbrev=0 --tags)
 GITREV = $(shell git describe --tags)
 
-all: clean stripdb full enUS koKR frFR deDE zhCN esES ruRU full-tbc enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc
+all: clean stripdb full enUS koKR frFR deDE zhCN esES ruRU full-tbc enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc full-wotlk enUS-wotlk koKR-wotlk frFR-wotlk deDE-wotlk zhCN-wotlk esES-wotlk ruRU-wotlk
 
 clean:
 	rm -rfv release
@@ -17,6 +17,8 @@ full:
 
 	# generate new toc file
 	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
+	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest/pfQuest-tbc.toc
+	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest/pfQuest-wotlk.toc
 	echo $(GITREV) > release/$@/pfQuest/gitrev.txt
 
 	# remove tbc data
@@ -32,8 +34,22 @@ full-tbc:
 	# generate new toc file
 	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-tbc/pfQuest.toc
 	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-tbc/pfQuest-tbc.toc
+	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-tbc/pfQuest-wotlk.toc
 	echo $(GITREV) > release/$@/pfQuest-tbc/gitrev.txt
 	( cd release/$@; zip -qr ../pfQuest-$@.zip pfQuest-tbc )
+
+full-wotlk:
+	$(eval LOCALE := $(shell echo $@))
+	@echo "===== building ${LOCALE} ====="
+	mkdir -p release/$@/pfQuest-wotlk/
+	cp -rf compat db img init *.toc *.lua LICENSE README.md release/$@/pfQuest-wotlk/
+
+	# generate new toc file
+	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-wotlk/pfQuest.toc
+	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-wotlk/pfQuest-tbc.toc
+	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
+	echo $(GITREV) > release/$@/pfQuest-wotlk/gitrev.txt
+	( cd release/$@; zip -qr ../pfQuest-$@.zip pfQuest-wotlk )
 
 enUS koKR frFR deDE zhCN esES ruRU:
 	$(eval LOCALE := $(shell echo $@))
@@ -87,6 +103,34 @@ enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc:
 
 	echo $(GITREV) > release/$@/pfQuest-tbc/gitrev.txt
 	( cd release/$@; zip -qr ../pfQuest-$@.zip pfQuest-tbc )
+
+enUS-wotlk koKR-wotlk frFR-wotlk deDE-wotlk zhCN-wotlk esES-wotlk ruRU-wotlk:
+	$(eval LOCALE := $(shell echo $@ | sed 's/-wotlk//g'))
+	@echo "===== building ${LOCALE} ====="
+	mkdir -p release/$@/pfQuest-wotlk/init release/$@/pfQuest-wotlk/db/enUS release/$@/pfQuest-wotlk/db/${LOCALE}
+	cp -rf compat img release/$@/pfQuest-wotlk/
+
+	cp -f $(shell ls db/*.lua) release/$@/pfQuest-wotlk/db
+	cp -f $(shell ls db/enUS/*.lua) release/$@/pfQuest-wotlk/db/enUS
+	cp -f $(shell ls db/${LOCALE}/*.lua) release/$@/pfQuest-wotlk/db/${LOCALE}
+	cp -f *.lua LICENSE README.md release/$@/pfQuest-wotlk/
+	cp -f init/addon.xml init/data.xml init/data-tbc.xml init/enUS.xml init/enUS-tbc.xml init/${LOCALE}.xml init/${LOCALE}-tbc.xml release/$@/pfQuest-wotlk/init
+	cp -f pfQuest-wotlk.toc release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
+
+	# generate new toc file
+	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
+	sed -i '/init\\/d' release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
+	sed -i '/^[[:space:]]*$$/d' release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
+	/bin/echo 'init\data.xml' >> release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
+	/bin/echo 'init\data-tbc.xml' >> release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
+	/bin/echo 'init\enUS.xml' >> release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
+	/bin/echo 'init\enUS-tbc.xml' >> release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
+	/bin/echo 'init\$(LOCALE).xml' >> release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
+	/bin/echo 'init\${LOCALE}-tbc.xml' >> release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
+	/bin/echo 'init\addon.xml' >> release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
+
+	echo $(GITREV) > release/$@/pfQuest-wotlk/gitrev.txt
+	( cd release/$@; zip -qr ../pfQuest-$@.zip pfQuest-wotlk )
 
 database:
 	$(MAKE) -C toolbox/ all
