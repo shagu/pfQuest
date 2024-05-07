@@ -636,7 +636,7 @@ function pfDatabase:SearchAreaTriggerID(id, meta, maps, prio)
   for _, data in pairs(areatrigger[id]["coords"]) do
     local x, y, zone = unpack(data)
 
-    if zone > 0 then
+    if zone and zone > 0 then
       -- add all gathered data
       meta = meta or {}
       meta["spawn"] = pfQuest_Loc["Exploration Mark"]
