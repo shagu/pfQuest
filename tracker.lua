@@ -106,8 +106,8 @@ tracker:SetScript("OnUpdate", function()
     this.backdrop:SetAlpha(alpha + ((goal - alpha) > 0 and .1 or (goal - alpha) < 0 and -.1 or 0))
   end
 
-  if QuestWatchFrame:IsShown() then
-    QuestWatchFrame:Hide()
+  if pfQuestCompat.QuestWatchFrame:IsShown() then
+    pfQuestCompat.QuestWatchFrame:Hide()
   end
 end)
 
@@ -269,7 +269,13 @@ function tracker.ButtonClick()
     pfQuest.updateQuestGivers = true
   elseif IsControlKeyDown() and not WorldMapFrame:IsShown() then
     -- show world map
-    WorldMapFrame:Show()
+    if ToggleWorldMap then
+      -- vanilla & tbc
+      ToggleWorldMap()
+    else
+      -- wotlk
+      WorldMapFrame:Show()
+    end
   elseif IsControlKeyDown() and pfQuest_config["spawncolors"] == "0" then
     -- switch color
     pfQuest_colors[this.title] = { pfMap.str2rgb(this.title .. GetTime()) }
@@ -342,7 +348,7 @@ function tracker.ButtonEvent(self)
     if not qlogid or not qtitle then return end
     local objectives = GetNumQuestLeaderBoards(qlogid)
     local watched = IsQuestWatched(qlogid)
-    local color = GetDifficultyColor(level)
+    local color = pfQuestCompat.GetDifficultyColor(level)
     local cur,max = 0,0
     local percent = 0
 
@@ -414,7 +420,7 @@ function tracker.ButtonEvent(self)
     self.tooltip = pfQuest_Loc["|cff33ffcc<Click>|r Unfold/Fold Objectives\n|cff33ffcc<Right-Click>|r Show In QuestLog\n|cff33ffcc<Ctrl-Click>|r Show Map / Toggle Color\n|cff33ffcc<Shift-Click>|r Hide Nodes"]
   elseif tracker.mode == "GIVER_TRACKING" then
     local level = node.qlvl or node.level or UnitLevel("player")
-    local color = GetDifficultyColor(level)
+    local color = pfQuestCompat.GetDifficultyColor(level)
 
     -- red quests
     if node.qmin and node.qmin > UnitLevel("player") then

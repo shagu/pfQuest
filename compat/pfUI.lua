@@ -31,19 +31,42 @@ if not pfUI then
       ["minimap"] = "1"
     }
   }
+
+  pfUI.api.emulated = true
 end
 
--- Add API support non-pfUI environments and for old pfUI versions:
--- strsplit, SanitizePattern, CreateBackdrop, SkinButton, CreateScrollFrame, CreateScrollChild
-if pfUI.api and pfUI.api.strsplit and pfUI.api.CreateBackdrop and
-   pfUI.api.SkinButton and pfUI.api.CreateScrollFrame and
-   pfUI.api.CreateScrollChild and pfUI.api.SanitizePattern then
-     return
+pfUI.api.SetButtonFont = pfUI.api.SetButtonFont or function(button, font, size, flags)
+  if button.SetFont then
+    -- vanilla + tbc
+    button:SetFont(font, size, flags)
+  else
+    -- wotlk
+    local buttonText = button:GetFontString()
+    if buttonText then
+      buttonText:SetFont(font, size, flags)
+    else
+      -- create new font string if not existing
+      buttonText = button:CreateFontString(nil, "OVERLAY")
+      buttonText:SetFont(font, size, flags)
+      buttonText:SetPoint("CENTER", button, "CENTER")
+      button:SetFontString(buttonText)
+    end
+  end
 end
 
-pfUI.api.emulated = true
+pfUI.api.SetButtonFontColor = pfUI.api.SetButtonFontColor or function(button, r, g, b, a)
+  if button.SetTextColor then
+    -- vanilla + tbc
+    button:SetTextColor(r, g, b, a)
+  else
+    -- wotlk
+    local buttonText = button:GetFontString()
+    if buttonText then buttonText:SetTextColor(r, g, b, a) end
+  end
+end
 
-function pfUI.api.strsplit(delimiter, subject)
+
+pfUI.api.strsplit = pfUI.api.strsplit or function(delimiter, subject)
   if not subject then return nil end
   local delimiter, fields = delimiter or ":", {}
   local pattern = string.format("([^%s]+)", delimiter)
@@ -52,7 +75,7 @@ function pfUI.api.strsplit(delimiter, subject)
 end
 
 local sanitize_cache = {}
-function pfUI.api.SanitizePattern(pattern, dbg)
+pfUI.api.SanitizePattern = pfUI.api.SanitizePattern or function(pattern, dbg)
   if not sanitize_cache[pattern] then
     local ret = pattern
     -- escape magic characters
@@ -74,7 +97,7 @@ end
 
 local er, eg, eb, ea = .4,.4,.4,1
 local br, bg, bb, ba = 0,0,0,1
-function pfUI.api.CreateBackdrop(f, inset, legacy, transp)
+pfUI.api.CreateBackdrop = pfUI.api.CreateBackdrop or function(f, inset, legacy, transp)
   -- exit if now frame was given
   if not f then return end
 
@@ -127,7 +150,7 @@ function pfUI.api.CreateBackdrop(f, inset, legacy, transp)
   b:SetBackdropBorderColor(er, eg, eb , ea)
 end
 
-function pfUI.api.SkinButton(button, cr, cg, cb)
+pfUI.api.SkinButton = pfUI.api.SkinButton or function(button, cr, cg, cb)
   local b = getglobal(button)
   if not b then b = button end
   if not b then return end
@@ -152,10 +175,10 @@ function pfUI.api.SkinButton(button, cr, cg, cb)
     if funcl then funcl() end
     pfUI.api.CreateBackdrop(b, nil, true)
   end)
-  b:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
+  pfUI.api.SetButtonFont(b, pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
 end
 
-function pfUI.api.CreateScrollFrame(name, parent)
+pfUI.api.CreateScrollFrame = pfUI.api.CreateScrollFrame or function(name, parent)
   local f = CreateFrame("ScrollFrame", name, parent)
 
   -- create slider
@@ -168,9 +191,13 @@ function pfUI.api.CreateScrollFrame(name, parent)
   f.slider.thumb:SetHeight(50)
   f.slider.thumb:SetTexture(.3,1,.8,.5)
 
+  local selfevent = false
   f.slider:SetScript("OnValueChanged", function()
+    if selfevent then return end
+    selfevent = true
     f:SetVerticalScroll(this:GetValue())
     f.UpdateScrollState()
+    selfevent = false
   end)
 
   f.UpdateScrollState = function()
@@ -216,7 +243,7 @@ function pfUI.api.CreateScrollFrame(name, parent)
   return f
 end
 
-function pfUI.api.CreateScrollChild(name, parent)
+pfUI.api.CreateScrollChild = pfUI.api.CreateScrollChild or function(name, parent)
   local f = CreateFrame("Frame", name, parent)
 
   -- dummy values required
@@ -238,7 +265,7 @@ end
 -- 'input'      [float]         the number that should be rounded.
 -- 'places'     [int]           amount of places after the comma.
 -- returns:     [float]         rounded number.
-function pfUI.api.round(input, places)
+pfUI.api.round = pfUI.api.round or function(input, places)
   if not places then places = 0 end
   if type(input) == "number" and type(places) == "number" then
     local pow = 1
@@ -255,7 +282,7 @@ end
 -- 'a'          [number] optional alpha component
 -- returns color string in the form of '|caaxxyyzz'
 local hexcolor_cache = {}
-function pfUI.api.rgbhex(r, g, b, a)
+pfUI.api.rgbhex = pfUI.api.rgbhex or function(r, g, b, a)
   local key
   if type(r)=="table" then
     local _r,_g,_b,_a
@@ -284,7 +311,7 @@ end
 -- 'perc'     percentage (0-1)
 -- return r,g,b and hexcolor
 local gradientcolors = {}
-function pfUI.api.GetColorGradient(perc)
+pfUI.api.GetColorGradient = pfUI.api.GetColorGradient or function(perc)
   perc = perc > 1 and 1 or perc
   perc = perc < 0 and 0 or perc
   perc = floor(perc*100)/100
@@ -326,7 +353,7 @@ end
 -- Returns the best anchor of a frame, based on its position
 -- 'self'       [frame]        the frame that should be checked
 -- returns:     [string]       the name of the best anchor
-function pfUI.api.GetBestAnchor(self)
+pfUI.api.GetBestAnchor = pfUI.api.GetBestAnchor or function(self)
   local scale = self:GetScale()
   local x, y = self:GetCenter()
   local a = GetScreenWidth()  / scale / 3
@@ -361,7 +388,7 @@ end
 -- 'self'       [frame]        the frame that should get another anchor.
 -- 'anchor'     [string]       the new anchor that shall be used
 -- returns:     anchor, x, y   can directly be used in SetPoint()
-function pfUI.api.ConvertFrameAnchor(self, anchor)
+pfUI.api.ConvertFrameAnchor = pfUI.api.ConvertFrameAnchor or function(self, anchor)
   local scale, x, y, _ = self:GetScale(), nil, nil, nil
 
   if anchor == "CENTER" then

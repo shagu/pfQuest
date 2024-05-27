@@ -1,6 +1,7 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
   <Include file="..\compat\pfUI.lua"/>
   <Include file="..\compat\client.lua"/>
+  <Include file="..\overwrites.lua"/>
   <Include file="..\locales.lua"/>
   <Include file="..\config.lua"/>
   <Include file="..\slashcmd.lua"/>

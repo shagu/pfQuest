@@ -208,10 +208,14 @@ pfMap.tooltip:SetScript("OnShow", function()
   -- abort if tooltips are disabled
   if pfQuest_config.showtooltips == "0" then return end
 
-  local name = getglobal("GameTooltipTextLeft1") and getglobal("GameTooltipTextLeft1"):GetText()
+  local name = getglobal("GameTooltipTextLeft1") and getglobal("GameTooltipTextLeft1"):GetText() or "__NONE__"
   local zone = pfMap:GetMapID(GetCurrentMapContinent(), GetCurrentMapZone())
 
-  if name and pfMap.tooltips[name] and pfMap.tooltips[name] then
+  -- remove all colors from received tooltip text
+  name = string.gsub(name, "|c%x%x%x%x%x%x%x%x", "")
+  name = string.gsub(name, "|r", "")
+
+  if pfMap.tooltips[name] and pfMap.tooltips[name] then
     for title, obj in pairs(pfMap.tooltips[name]) do
       if obj[zone] then
         pfMap:ShowTooltip(obj[zone], GameTooltip)
@@ -253,7 +257,7 @@ function pfMap:HexDifficultyColor(level, force)
   if force and UnitLevel("player") < level then
     return "|cffff5555"
   else
-    local c = GetDifficultyColor(level)
+    local c = pfQuestCompat.GetDifficultyColor(level)
     return string.format("|cff%02x%02x%02x", c.r*255, c.g*255, c.b*255)
   end
 end
@@ -405,7 +409,16 @@ end
 
 function pfMap:ShowMapID(map)
   if map then
-    WorldMapFrame:Show()
+    if ToggleWorldMap then
+      -- vanilla & tbc
+      if not WorldMapFrame:IsShown() then
+        ToggleWorldMap()
+      end
+    else
+      -- wotlk
+      WorldMapFrame:Show()
+    end
+
     pfMap:SetMapByID(map)
     pfMap:UpdateNodes()
     return true
@@ -431,11 +444,19 @@ local customids = {
   ["AlteracValley"] = 2597,
 }
 
+local map_zone_cache = { }
 function pfMap:GetMapID(cid, mid)
   cid = cid or GetCurrentMapContinent()
   mid = mid or GetCurrentMapZone()
 
-  local list = {GetMapZones(cid)}
+  -- GetMapZones() should always return the same amount
+  -- of zones for each continent, so we can cache it to
+  -- avoid further creations of the same table.
+  if not map_zone_cache[cid] then
+    map_zone_cache[cid] = { GetMapZones(cid) }
+  end
+
+  local list = map_zone_cache[cid]
   local name = list[mid]
   local id = pfMap:GetMapIDByName(name)
   id = id or customids[GetMapInfo()]
@@ -532,6 +553,22 @@ function pfMap:AddNode(meta)
   pfMap.queue_update = GetTime()
 end
 
+function pfMap:GetNodes(addon, title)
+  local nodes = {}
+
+  if title and pfMap.nodes[addon] then
+    for map, foo in pairs(pfMap.nodes[addon]) do
+      for coords, node in pairs(pfMap.nodes[addon][map]) do
+        if pfMap.nodes[addon][map][coords][title] then
+          table.insert(nodes, pfMap.nodes[addon][map][coords][title])
+        end
+      end
+    end
+  end
+
+  return nodes
+end
+
 function pfMap:DeleteNode(addon, title)
   -- remove tooltips
   if not addon then
@@ -597,6 +634,11 @@ function pfMap:NodeClick()
 end
 
 function pfMap:NodeEnter()
+  -- wotlk: need to disable blop tooltips first
+  if compat.client >= 30300 then
+    WorldMapPOIFrame.allowBlobTooltip = false
+  end
+
   local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
   tooltip:SetOwner(this, "ANCHOR_LEFT")
   this.spawn = this.spawn or UNKNOWN
@@ -632,6 +674,11 @@ function pfMap:NodeEnter()
 end
 
 function pfMap:NodeLeave()
+  -- wotlk: re-enable blop tooltips
+  if compat.client >= 30300 then
+    WorldMapPOIFrame.allowBlobTooltip = true
+  end
+
   local tooltip = this:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
   tooltip:Hide()
   pfMap.highlight = nil
@@ -716,6 +763,7 @@ function pfMap:UpdateNode(frame, node, color, obj)
       frame.quest       = tab.quest
       frame.qlvl        = tab.qlvl
       frame.itemreq     = tab.itemreq
+      frame.arrow       = tab.arrow
 
       if pfQuest_config["spawncolors"] == "1" then
         frame.color = tab.spawn or tab.title
@@ -811,7 +859,8 @@ function pfMap:UpdateNodes()
         if ( pfQuest_config["routecluster"] == "1" and pfMap.pins[i].layer >= 9 ) or
           ( pfQuest_config["routeender"] == "1" and pfMap.pins[i].layer == 4) or
           ( pfQuest_config["routestarter"] == "1" and pfMap.pins[i].layer == 1 and pfMap.pins[i].texture) or
-          ( pfQuest_config["routestarter"] == "1" and pfMap.pins[i].layer == 2)
+          ( pfQuest_config["routestarter"] == "1" and pfMap.pins[i].layer == 2) or
+          pfMap.pins[i].arrow == true
         then
           pfQuest.route:AddPoint({ x, y, pfMap.pins[i] })
         end
@@ -1041,3 +1090,34 @@ pfMap:SetScript("OnUpdate", function()
     hidecluster = nil
   end
 end)
+
+-- only hook for 3.3.5
+if compat.client >= 30300 then
+  -- Initialize a variable to track the previous clicked title
+  local previousTitle = nil
+  -- Highlight Map Quest Log Selection Nodes
+  local pfHookWorldMapQuestFrame_OnMouseUp = WorldMapQuestFrame_OnMouseUp
+  WorldMapQuestFrame_OnMouseUp = function(self)
+    pfHookWorldMapQuestFrame_OnMouseUp(self)
+    WorldMapBlobFrame:Hide()
+    WorldMapFrame_ClearQuestPOIs()
+    if not IsShiftKeyDown() then
+      pfMap.highlight = nil
+      local questLogIndex = GetQuestLogSelection()
+      local title = GetQuestLogTitle(questLogIndex)
+
+      if title then
+        if previousTitle == title then
+          -- Reset the highlight if the same title is clicked again
+          pfMap.highlight = nil
+          previousTitle = nil
+        else
+          -- Logic for highlighting nodes associated with the clicked quest
+          pfMap.highlight = title
+          previousTitle = title
+          pfMap.queue_update = GetTime()
+        end
+      end
+    end
+  end
+end

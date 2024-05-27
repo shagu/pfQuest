@@ -24,6 +24,15 @@ jobs:
           release_name: ${{ github.ref }}
           draft: false
           prerelease: false
+      - name: Upload pfQuest-deDE-wotlk.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-deDE-wotlk.zip
+          asset_name: pfQuest-deDE-wotlk.zip
+          asset_content_type: application/zip
       - name: Upload pfQuest-deDE-tbc.zip
         uses: actions/upload-release-asset@v1
         env:
@@ -41,6 +50,15 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: release/pfQuest-deDE.zip
           asset_name: pfQuest-deDE.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-enUS-wotlk.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-enUS-wotlk.zip
+          asset_name: pfQuest-enUS-wotlk.zip
           asset_content_type: application/zip
       - name: Upload pfQuest-enUS-tbc.zip
         uses: actions/upload-release-asset@v1
@@ -60,6 +78,15 @@ jobs:
           asset_path: release/pfQuest-enUS.zip
           asset_name: pfQuest-enUS.zip
           asset_content_type: application/zip
+      - name: Upload pfQuest-esES-wotlk.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-esES-wotlk.zip
+          asset_name: pfQuest-esES-wotlk.zip
+          asset_content_type: application/zip
       - name: Upload pfQuest-esES-tbc.zip
         uses: actions/upload-release-asset@v1
         env:
@@ -77,6 +104,15 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: release/pfQuest-esES.zip
           asset_name: pfQuest-esES.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-frFR-wotlk.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-frFR-wotlk.zip
+          asset_name: pfQuest-frFR-wotlk.zip
           asset_content_type: application/zip
       - name: Upload pfQuest-frFR-tbc.zip
         uses: actions/upload-release-asset@v1
@@ -96,6 +132,15 @@ jobs:
           asset_path: release/pfQuest-frFR.zip
           asset_name: pfQuest-frFR.zip
           asset_content_type: application/zip
+      - name: Upload pfQuest-full-wotlk.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-full-wotlk.zip
+          asset_name: pfQuest-full-wotlk.zip
+          asset_content_type: application/zip
       - name: Upload pfQuest-full-tbc.zip
         uses: actions/upload-release-asset@v1
         env:
@@ -113,6 +158,15 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: release/pfQuest-full.zip
           asset_name: pfQuest-full.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-koKR-wotlk.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-koKR-wotlk.zip
+          asset_name: pfQuest-koKR-wotlk.zip
           asset_content_type: application/zip
       - name: Upload pfQuest-koKR-tbc.zip
         uses: actions/upload-release-asset@v1
@@ -132,6 +186,15 @@ jobs:
           asset_path: release/pfQuest-koKR.zip
           asset_name: pfQuest-koKR.zip
           asset_content_type: application/zip
+      - name: Upload pfQuest-ruRU-wotlk.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-ruRU-wotlk.zip
+          asset_name: pfQuest-ruRU-wotlk.zip
+          asset_content_type: application/zip
       - name: Upload pfQuest-ruRU-tbc.zip
         uses: actions/upload-release-asset@v1
         env:
@@ -149,6 +212,15 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: release/pfQuest-ruRU.zip
           asset_name: pfQuest-ruRU.zip
+          asset_content_type: application/zip
+      - name: Upload pfQuest-zhCN-wotlk.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-zhCN-wotlk.zip
+          asset_name: pfQuest-zhCN-wotlk.zip
           asset_content_type: application/zip
       - name: Upload pfQuest-zhCN-tbc.zip
         uses: actions/upload-release-asset@v1

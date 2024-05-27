@@ -12,26 +12,45 @@ pfQuestCompat.itemsuffix = client > 11200 and ":0:0:0:0:0:0:0" or ":0:0:0"
 pfQuestCompat.rotateMinimap = client > 11200 and GetCVar("rotateMinimap") ~= "0" and true or nil
 pfQuestCompat.client = client
 
--- use and cache the original function if CTMod overwrites global API calls
+-- addon-compat: use and cache the original function if CTMod overwrites global API calls
 local GetQuestLogTitle = CT_QuestLevels_oldGetQuestLogTitle or GetQuestLogTitle
 
+-- tbc+wotlk: change behaviour of later expansions to the vanilla one
 pfQuestCompat.GetQuestLogTitle = function(id)
   local title, level, tag, group, header, collapsed, complete, daily, _
   if client <= 11200 then -- vanilla
     title, level, tag, header, collapsed, complete = GetQuestLogTitle(id)
-  elseif client > 11200 then -- tbc
+  elseif client > 11200 then -- tbc & wotlk
     title, level, tag, group, header, collapsed, complete, daily = GetQuestLogTitle(id)
   end
 
   return title, level, tag, header, collapsed, complete
 end
 
+-- wotlk: changed from GetDifficultyColor to GetQuestDifficultyColor in 3.2
+pfQuestCompat.GetDifficultyColor = GetQuestDifficultyColor or GetDifficultyColor
+
+-- wotlk: changed from QuestWatchFrame to WatchFrame in 3.3
+pfQuestCompat.QuestWatchFrame = QuestWatchFrame or WatchFrame
+
+-- wotlk: changed questlog related frame names in 3.3
+pfQuestCompat.QuestLogQuestTitle = QuestLogQuestTitle or QuestInfoTitleHeader
+pfQuestCompat.QuestLogObjectivesText = QuestLogObjectivesText or QuestInfoObjectivesText
+pfQuestCompat.QuestLogQuestDescription = QuestLogQuestDescription or QuestInfoDescriptionText
+pfQuestCompat.QuestLogDescriptionTitle = QuestLogDescriptionTitle or QuestInfoDescriptionHeader
+
+-- wotlk: disable builtin quest progress tooltips
+if client >= 30300 then
+  SetCVar("showQuestTrackingTooltips", 0)
+end
+
+-- vanilla+tbc+wotlk: base function to insert quest links to the chat
 pfQuestCompat.InsertQuestLink = function(questid, name)
   local questid = questid or 0
   local fallback = name or UNKNOWN
   local level = pfDB["quests"]["data"][questid] and pfDB["quests"]["data"][questid]["lvl"] or 0
   local name = pfDB["quests"]["loc"][questid] and pfDB["quests"]["loc"][questid]["T"] or fallback
-  local hex = pfUI.api.rgbhex(GetDifficultyColor(level))
+  local hex = pfUI.api.rgbhex(pfQuestCompat.GetDifficultyColor(level))
 
   ChatFrameEditBox:Show()
   if pfQuest_config["questlinks"] == "1" then
@@ -41,7 +60,7 @@ pfQuestCompat.InsertQuestLink = function(questid, name)
   end
 end
 
--- do the best to detect the minimap arrow on vanilla and tbc
+-- vanilla+tbc: do the best to detect the minimap arrow
 local minimaparrow = ({Minimap:GetChildren()})[9]
 for k, v in pairs({Minimap:GetChildren()}) do
   if v:IsObjectType("Model") and not v:GetName() then
@@ -52,8 +71,8 @@ for k, v in pairs({Minimap:GetChildren()}) do
   end
 end
 
--- return the player facing based on the minimap arrow
-function pfQuestCompat.GetPlayerFacing()
+-- vanilla+tbc: return the player facing based on the minimap arrow
+pfQuestCompat.GetPlayerFacing = GetPlayerFacing or function()
   if pfQuestCompat.rotateMinimap then
     return (MiniMapCompassRing:GetFacing() * -1)
   else
@@ -61,9 +80,9 @@ function pfQuestCompat.GetPlayerFacing()
   end
 end
 
+-- vanilla: overwrite the out-of-memory popup on vanilla clients, to provide some help
+-- on how to increase the limits, and also displaying a link to an example.
 if client <= 11200 then
-  -- overwrite the out-of-memory popup on vanilla clients, to provide some help
-  -- on how to increase the limits, and also displaying a link to an example.
   local memlimit = "The user interface is using more than %dMB of memory.\n\n" ..
     "Set '|cffffee55Script Memory|r' to '|cffffee550|r' in the character selection screen:"
 
@@ -95,8 +114,10 @@ if client <= 11200 then
     timeout = 0,
     whileDead = 1,
   }
+end
 
-  -- add colors to quest links
+-- vanilla: add colors to quest links
+if client <= 11200 then
   local ParseQuestLevels = function(frame, text, a1, a2, a3, a4, a5)
     if text then
       for oldhex, questid, level in gfind(text, "(|c%x+)|Hquest:(.-):(.-)|h") do
@@ -108,7 +129,7 @@ if client <= 11200 then
         end
 
         if level and level > 0 then
-          local newhex = pfUI.api.rgbhex(GetDifficultyColor(level))
+          local newhex = pfUI.api.rgbhex(pfQuestCompat.GetDifficultyColor(level))
           text = string.gsub(text, oldhex .. "|Hquest:"..questid, newhex.."|Hquest:"..questid)
         end
       end
