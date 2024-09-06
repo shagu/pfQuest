@@ -414,6 +414,18 @@ function pfDatabase:ShowExtendedTooltip(id, tooltip, parent, anchor, offx, offy)
   end
 
   if data then
+    -- scan for active quests
+    local queststate = pfQuest_history[id] and 2 or 0
+    queststate = pfQuest.questlog[id] and 1 or queststate
+
+    if queststate == 0 then
+      tooltip:AddLine(pfQuest_Loc["You don't have this quest."] .. "\n\n", 1, .5, .5)
+    elseif queststate == 1 then
+      tooltip:AddLine(pfQuest_Loc["You are on this quest."] .. "\n\n", 1, 1, .5)
+    elseif queststate == 2 then
+      tooltip:AddLine(pfQuest_Loc["You already did this quest."] .. "\n\n", .5, 1, .5)
+    end
+
     -- quest start
     if data["start"] then
       for key, db in pairs({["U"]="units", ["O"]="objects", ["I"]="items"}) do
