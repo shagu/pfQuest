@@ -8,6 +8,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
 
   if (input == "" or input == nil) then
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest (v" .. pfQuestConfig.version .. "):")
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff lock |cffcccccc - " .. pfQuest_Loc["Lock map tracker"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff tracker |cffcccccc - " .. pfQuest_Loc["Show map tracker"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff journal |cffcccccc - " .. pfQuest_Loc["Show quest journal"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff arrow |cffcccccc - " .. pfQuest_Loc["Show quest arrow"])
@@ -177,6 +178,13 @@ SlashCmdList["PFDB"] = function(input, editbox)
   -- argument: tracker
   if (arg1 == "tracker") then
     if pfQuest.tracker then pfQuest.tracker:Show() end
+    return
+  end
+
+  -- argument: lock
+  if (arg1 == "lock") then
+    pfQuest_config.lock = not pfQuest_config.lock
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffccpf|cffffffffQuest Tracker: " .. ( pfQuest_config.lock and "Locked" or "Unlocked" ))
     return
   end
 
