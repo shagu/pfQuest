@@ -603,7 +603,6 @@ pfBrowserIcon:SetScript("OnLeave", function()
   GameTooltip:Hide()
 end)
 
-pfBrowserIcon:SetFrameStrata('LOW')
 pfBrowserIcon:SetWidth(31)
 pfBrowserIcon:SetHeight(31)
 pfBrowserIcon:SetFrameLevel(9)
