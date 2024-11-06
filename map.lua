@@ -688,10 +688,10 @@ function pfMap:BuildNode(name, parent)
   local f = CreateFrame("Button", name, parent)
 
   if parent == WorldMapButton then
-    f.defalpha = pfQuest_config["worldmaptransp"] + 0
+    f.defalpha = tonumber(pfQuest_config["worldmaptransp"]) or 1
     f.defsize = 16
   else
-    f.defalpha = pfQuest_config["minimaptransp"] + 0
+    f.defalpha = tonumber(pfQuest_config["minimaptransp"]) or 1
     f.defsize = 16
     f.minimap = true
   end
@@ -1052,7 +1052,7 @@ pfMap:SetScript("OnUpdate", function()
         transition = frame:Animate((frame.texture and frame.defsize + 4 or frame.defsize), 1, fps) or transition
       elseif not highlight and pfMap.highlight then
         -- fade node
-        transition = frame:Animate(frame.defsize, tonumber(pfQuest_config["nodefade"]), fps) or transition
+        transition = frame:Animate(frame.defsize, tonumber(pfQuest_config["nodefade"]) or 0.3, fps) or transition
       elseif frame.texture or frame.cluster then
         -- defaults for textured nodes
         transition = frame:Animate(frame.defsize, 1, fps) or transition
