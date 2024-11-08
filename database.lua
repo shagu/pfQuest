@@ -349,7 +349,7 @@ pfDB.bitclasses = bitclasses
 
 function pfDatabase:IsFriendly(id)
   if id and units[id] and units[id].fac then
-    local faction = string.lower(UnitFactionGroup("player"))
+    local faction = string.lower(UnitFactionGroup("player") or "")
     faction = faction == "horde" and "H" or faction == "alliance" and "A" or "UNKNOWN"
 
     if string.find(units[id].fac, faction) then
