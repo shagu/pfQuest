@@ -466,16 +466,18 @@ do -- welcome/init popup dialog
         config_stage.arrow = nil
       end
 
-      -- reload ui elements
-      pfQuestInit[1].bg:SetDesaturated(true)
-      pfQuestInit[2].bg:SetDesaturated(true)
-      pfQuestInit[3].bg:SetDesaturated(true)
-      pfQuestInit[config_stage.mode].bg:SetDesaturated(false)
-      pfQuestInit.checkbox:SetChecked(config_stage.arrow)
-
       pfQuestInit:Show()
     end
     this:UnregisterAllEvents()
+  end)
+
+  pfQuestInit:SetScript("OnShow", function()
+    -- reload ui elements
+    pfQuestInit[1].bg:SetDesaturated(true)
+    pfQuestInit[2].bg:SetDesaturated(true)
+    pfQuestInit[3].bg:SetDesaturated(true)
+    pfQuestInit[config_stage.mode].bg:SetDesaturated(false)
+    pfQuestInit.checkbox:SetChecked(config_stage.arrow)
   end)
 
   pfUI.api.CreateBackdrop(pfQuestInit, nil, true, 0.85)
