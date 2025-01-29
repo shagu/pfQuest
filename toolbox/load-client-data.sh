@@ -33,7 +33,7 @@ CREATE TABLE \`WorldMapOverlay_${v}\` (
 EOF
 
   if [ -d $root/$v ] && [ -f $root/$v/WorldMapOverlay.dbc.csv ]; then
-    cat $root/$v/WorldMapOverlay.dbc.csv | tail -n +2 | sort -nt ',' -k3 | while read line; do
+    cat $root/$v/WorldMapOverlay.dbc.csv | tail -n +2 | sort -nt ',' -k3,3 | while read line; do
       areaID=$(echo $line | cut -d "," -f 3)
       zoneID=$(echo $line | cut -d "," -f 2)
       texture=$(echo $line | cut -d "," -f 9)
@@ -67,7 +67,7 @@ CREATE TABLE \`AreaTrigger_${v}\` (
 EOF
 
   if [ -d $root/$v ] && [ -f $root/$v/AreaTrigger.dbc.csv ]; then
-    cat $root/$v/AreaTrigger.dbc.csv | tail -n +2 | sort -nt ',' -k3 | while read line; do
+    cat $root/$v/AreaTrigger.dbc.csv | tail -n +2 | sort -nt "," -k1,1 | while read line; do
       id=$(echo $line | cut -d "," -f 1)
       map=$(echo $line | cut -d "," -f 2)
       x=$(echo $line | cut -d "," -f 3)
@@ -97,7 +97,7 @@ CREATE TABLE \`WorldMapArea_${v}\` (
 EOF
 
   if [ -d $root/$v ] && [ -f $root/$v/WorldMapArea.dbc.csv ]; then
-    cat $root/$v/WorldMapArea.dbc.csv | tail -n +2 | sort -nt ',' -k3 | while read line; do
+    cat $root/$v/WorldMapArea.dbc.csv | tail -n +2 | sort -nt ',' -k3,3 | while read line; do
       zone=$(echo $line | cut -d "," -f 1)
       map=$(echo $line | cut -d "," -f 2)
       area=$(echo $line | cut -d "," -f 3)

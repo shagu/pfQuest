@@ -251,15 +251,26 @@ pfQuestConfig.close:SetScript("OnClick", function()
   this:GetParent():Hide()
 end)
 
+pfQuestConfig.welcome = CreateFrame("Button", "pfQuestConfigWelcome", pfQuestConfig)
+pfQuestConfig.welcome:SetWidth(160)
+pfQuestConfig.welcome:SetHeight(28)
+pfQuestConfig.welcome:SetPoint("BOTTOMLEFT", 10, 10)
+pfQuestConfig.welcome:SetScript("OnClick", function() pfQuestConfig:Hide(); pfQuestInit:Show() end)
+pfQuestConfig.welcome.text = pfQuestConfig.welcome:CreateFontString("Caption", "LOW", "GameFontWhite")
+pfQuestConfig.welcome.text:SetAllPoints(pfQuestConfig.welcome)
+pfQuestConfig.welcome.text:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
+pfQuestConfig.welcome.text:SetText(L["Welcome Screen"])
+pfUI.api.SkinButton(pfQuestConfig.welcome)
+
 pfQuestConfig.save = CreateFrame("Button", "pfQuestConfigReload", pfQuestConfig)
 pfQuestConfig.save:SetWidth(160)
 pfQuestConfig.save:SetHeight(28)
-pfQuestConfig.save:SetPoint("BOTTOM", 0, 10)
+pfQuestConfig.save:SetPoint("BOTTOMRIGHT", -10, 10)
 pfQuestConfig.save:SetScript("OnClick", ReloadUI)
 pfQuestConfig.save.text = pfQuestConfig.save:CreateFontString("Caption", "LOW", "GameFontWhite")
 pfQuestConfig.save.text:SetAllPoints(pfQuestConfig.save)
 pfQuestConfig.save.text:SetFont(pfUI.font_default, pfUI_config.global.font_size, "OUTLINE")
-pfQuestConfig.save.text:SetText(L["Close & Reload"])
+pfQuestConfig.save.text:SetText(L["Save & Close"])
 pfUI.api.SkinButton(pfQuestConfig.save)
 
 function pfQuestConfig:LoadConfig()
@@ -466,16 +477,18 @@ do -- welcome/init popup dialog
         config_stage.arrow = nil
       end
 
-      -- reload ui elements
-      pfQuestInit[1].bg:SetDesaturated(true)
-      pfQuestInit[2].bg:SetDesaturated(true)
-      pfQuestInit[3].bg:SetDesaturated(true)
-      pfQuestInit[config_stage.mode].bg:SetDesaturated(false)
-      pfQuestInit.checkbox:SetChecked(config_stage.arrow)
-
       pfQuestInit:Show()
     end
     this:UnregisterAllEvents()
+  end)
+
+  pfQuestInit:SetScript("OnShow", function()
+    -- reload ui elements
+    pfQuestInit[1].bg:SetDesaturated(true)
+    pfQuestInit[2].bg:SetDesaturated(true)
+    pfQuestInit[3].bg:SetDesaturated(true)
+    pfQuestInit[config_stage.mode].bg:SetDesaturated(false)
+    pfQuestInit.checkbox:SetChecked(config_stage.arrow)
   end)
 
   pfUI.api.CreateBackdrop(pfQuestInit, nil, true, 0.85)
