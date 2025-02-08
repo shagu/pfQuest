@@ -83,6 +83,24 @@ pfQuest_defconfig = {
   { text = L["Show Level On Quest Log"],
     default = "0", type = "checkbox", config = "questloglevel" },
 
+  { text = L["Quest Sharing"],
+    default = nil, type = "header" },
+  { text = L["Enable Quest Progress Sharing"],
+    config = "questprogress",
+    default = "1", type = "checkbox",
+    tooltip = L["Automatically share quest progress with your party members."]
+  },
+  { text = L["Colored Quest Progress Messages"],
+    config = "coloredquestprogress",
+    default = "1", type = "checkbox",
+    tooltip = L["Show quest progress messages in color (green for completed, red for incomplete objectives)."]
+  },
+  { text = L["Only Share Changed Objectives"],
+    config = "shareonlychanged",
+    default = "1", type = "checkbox",
+    tooltip = L["Only share quest objectives that have changed since the last update."]
+  },
+
   { text = L["Questing"],
     default = nil, type = "header" },
   { text = L["Quest Tracker Visibility"],

@@ -69,6 +69,7 @@ pfQuest.queue = {}
 pfQuest.abandon = ""
 pfQuest.questlog = {}
 pfQuest.questlog_tmp = {}
+pfQuest.objective_status = {} -- New table for quest objective status
 
 local function tsize(tbl)
   if not tbl or not type(tbl) == "table" then return 0 end
@@ -85,6 +86,7 @@ pfQuest:RegisterEvent("PLAYER_LEVEL_UP")
 pfQuest:RegisterEvent("PLAYER_ENTERING_WORLD")
 pfQuest:RegisterEvent("SKILL_LINES_CHANGED")
 pfQuest:RegisterEvent("ADDON_LOADED")
+pfQuest:RegisterEvent("VARIABLES_LOADED")
 pfQuest:SetScript("OnEvent", function()
   if event == "ADDON_LOADED" then
     if arg1 == "pfQuest" or arg1 == "pfQuest-tbc" or arg1 == "pfQuest-wotlk" then
@@ -94,6 +96,10 @@ pfQuest:SetScript("OnEvent", function()
     else
       return
     end
+  elseif event == "VARIABLES_LOADED" then
+    -- Initialize saved variables
+    pfQuest_objective_status = pfQuest_objective_status or {}
+    pfQuest.objective_status = pfQuest_objective_status
   elseif event == "SKILL_LINES_CHANGED" then
     local skills = ""
     for i=0, GetNumSkillLines() do
@@ -116,6 +122,14 @@ pfQuest:SetScript("OnEvent", function()
     -- lock initial scan during incoming events
     if this.lock and this.lock > GetTime() then
       this.lock = GetTime() + 1.5
+    end
+  end
+
+  if event == "QUEST_FINISHED" then
+    -- Quest was completed or abandoned
+    local questTitle = GetAbandonQuestName()
+    if questTitle then
+      pfQuest:ResetQuestObjectiveStatus(questTitle)
     end
   end
 end)
@@ -222,7 +236,6 @@ pfQuest:SetScript("OnUpdate", function()
   end
 end)
 
-local questlog_flip, questlog_flop = {}, {}
 function pfQuest:UpdateQuestlog()
   -- initialize flip flop if not yet defined
   pfQuest.questlog_tmp = pfQuest.questlog_tmp or questlog_flip
@@ -249,6 +262,17 @@ function pfQuest:UpdateQuestlog()
           local text, _, done = GetQuestLogLeaderBoard(i, qlogid)
           state = state .. i .. (done and "done" or "todo")
         end
+      end
+
+      -- Check the detailed quest status
+      local currentStatus = pfQuest:GetQuestObjectiveStatus(qlogid)
+      local previousStatus = pfQuest.objective_status[questid]
+      
+      -- Share progress only for new quests or when the status changes
+      if not previousStatus or currentStatus ~= previousStatus then
+        pfQuest:ShareQuestProgress(qlogid)
+        pfQuest.objective_status[questid] = currentStatus
+        pfQuest_objective_status[questid] = currentStatus -- Save to SavedVariables
       end
 
       -- add new quest to the questlog
@@ -287,26 +311,141 @@ function pfQuest:UpdateQuestlog()
   for questid, data in pairs(pfQuest.questlog) do
     if not pfQuest.questlog_tmp[questid] then
       table.insert(pfQuest.queue, { data.title, questid, nil, "REMOVE" })
+      -- Remove status from both storage locations
+      pfQuest.objective_status[questid] = nil
+      pfQuest_objective_status[questid] = nil
       change = true
     end
   end
 
-  -- set questlog to current flip flop
-  pfQuest.questlog = pfQuest.questlog_tmp
-
-  -- switch tmp to the other flip flop
-  if pfQuest.questlog_tmp == questlog_flip then
-    pfQuest.questlog_tmp = questlog_flop
-  else
-    pfQuest.questlog_tmp = questlog_flip
+  -- clear old data
+  for k in pairs(pfQuest.questlog) do
+    pfQuest.questlog[k] = nil
   end
 
-  -- clear next temporary questlog entries
+  -- write new data
   for k, v in pairs(pfQuest.questlog_tmp) do
+    pfQuest.questlog[k] = v
+  end
+
+  -- clear temporary quest log
+  for k in pairs(pfQuest.questlog_tmp) do
     pfQuest.questlog_tmp[k] = nil
   end
 
   return change
+end
+
+-- Function to create a detailed quest status
+function pfQuest:GetQuestObjectiveStatus(qlogid)
+  local status = ""
+  local numObjectives = GetNumQuestLeaderBoards(qlogid)
+  
+  if numObjectives and numObjectives > 0 then
+    for i = 1, numObjectives do
+      local text, _, done = GetQuestLogLeaderBoard(i, qlogid)
+      if text then
+        local _, _, obj, cur, req = strfind(text, "(.*):%s*([%d]+)%s*/%s*([%d]+)")
+        if cur and req then
+          status = status .. cur .. "/" .. req .. ";"
+        else
+          status = status .. (done and "1" or "0") .. ";"
+        end
+      end
+    end
+  end
+  
+  return status
+end
+
+function pfQuest:ShareQuestProgress(questIndex)
+  -- Check if the feature is enabled
+  if pfQuest_config["questprogress"] ~= "1" then return end
+  
+  -- Check if the player is in a group
+  if GetNumPartyMembers() == 0 then return end
+
+  -- Get quest details
+  local questTitle = GetQuestLogTitle(questIndex)
+  if not questTitle then return end
+
+  local numObjectives = GetNumQuestLeaderBoards(questIndex)
+  if numObjectives == 0 then return end
+
+  -- Colors for messages
+  local useColors = pfQuest_config["coloredquestprogress"] == "1"
+  local colorComplete = "|cff00ff00"  -- Green
+  local colorIncomplete = "|cffff0000"  -- Red
+  local colorReset = "|r"
+
+  -- Check if only changed objectives should be shown
+  local onlyChanged = pfQuest_config["shareonlychanged"] == "1"
+
+  -- Initialize status for this quest if not yet exists
+  if not pfQuest.objective_status[questTitle] then
+    pfQuest.objective_status[questTitle] = {}
+    onlyChanged = false  -- Always show all objectives on first time
+  end
+
+  -- Collect all current objectives and check for changes
+  local objectives = {}
+  local hasChanges = false
+
+  -- Check each objective
+  for i = 1, numObjectives do
+    local text, type, finished = GetQuestLogLeaderBoard(i, questIndex)
+    if text then
+      -- Determine status key based on text
+      local status_key = text
+
+      -- Extract numbers from text using strfind
+      local _, _, current, total = strfind(text, "(%d+)/(%d+)")
+      
+      -- If we found numbers, use them as status
+      if current and total then
+        status_key = current .. "/" .. total
+      -- Otherwise check for other known formats
+      elseif type == "monster" then
+        -- For monster kill quests
+        local _, _, progress = strfind(text, ": (%d+)")
+        if progress then
+          status_key = progress
+        end
+      end
+
+      -- Check if status has changed
+      local changed = pfQuest.objective_status[questTitle][i] ~= status_key
+      if changed then
+        hasChanges = true
+      end
+
+      -- Update stored status
+      pfQuest.objective_status[questTitle][i] = status_key
+
+      -- Format text for display
+      if useColors then
+        text = (finished and colorComplete or colorIncomplete) .. text .. colorReset
+      end
+
+      -- Add objective if it has changed or if all objectives should be shown
+      if not onlyChanged or changed then
+        table.insert(objectives, text)
+      end
+    end
+  end
+
+  -- Send a message with objectives if there were changes
+  if hasChanges and table.getn(objectives) > 0 then
+    local message = "[" .. questTitle .. "] " .. table.concat(objectives, " - ")
+    SendChatMessage(message, "PARTY")
+  end
+end
+
+-- Add a function to reset the status when a quest is completed or abandoned
+function pfQuest:ResetQuestObjectiveStatus(questTitle)
+  if questTitle and pfQuest.objective_status[questTitle] then
+    pfQuest.objective_status[questTitle] = nil
+  end
 end
 
 function pfQuest:ResetAll()

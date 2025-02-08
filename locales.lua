@@ -571,6 +571,8 @@ local locales = {
     ["You already did this quest."] = nil,
     ["You are on this quest."] = nil,
     ["You don't have this quest."] = nil,
+    ["Share Quest Progress"] = "Questfortschritt teilen",
+    ["Automatically share quest progress with your party members."] = "Teilt den Questfortschritt automatisch mit deinen Gruppenmitgliedern.",
   },
   ["zhCN"] = {
     ["Alliance"] = "联盟",
