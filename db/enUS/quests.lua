@@ -1,4 +1,9 @@
 pfDB["quests"]["enUS"] = {
+  [1] = {
+    ["D"] = "$Tpunk;!  Kill Kobold Vermin, 2 of em. NEW TEST AGAIN",
+    ["O"] = "Kill Kobold Vermin, 2 of em.",
+    ["T"] = "The \"Chow\" Quest (123)aa",
+  },
   [2] = {
     ["D"] = "The mighty hippogryph Sharptalon has been slain, with the claw of the felled beast serving as a testament to your victory.  Senani Thunderheart at the Splintertree Post will no doubt be interested in seeing this trophy as proof of your deeds.",
     ["O"] = "Bring Sharptalon\'s Claw to Senani Thunderheart at Splintertree Post, Ashenvale.",
@@ -324,6 +329,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Search through the packed up possessions for a clue.",
     ["T"] = "The Legend of Stalvan",
   },
+  [73] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<TXT> No Reward",
+  },
   [74] = {
     ["D"] = "Inside the crate you find various objects: musty heirlooms, a family portrait, a few hunting trophies and some old books.  Near the bottom, underneath a ceramic vase, you uncover A Torn Journal Page.",
     ["O"] = "The Torn Journal page you discovered provides your next clue.",
@@ -480,7 +490,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Coastal Menace",
   },
   [105] = {
-    ["D"] = "Alas, the time to attack Andorhal and drive out the lich that controls it is upon us!$B$BInside the ruins of the city is where the lich - Araj the Summoner - holds dominion.  He is guarded by numerous Scourge surrounding the remains of city\'s center, and his personal retinue of guardians attached to him directly is formidable.  You will need numerous allies to even stand a chance of facing him successfully.$B$BDestroy Araj, $N, and bring me a shard from his phylactery as proof!",
+    ["D"] = "Alas, the time to attack Andorhal and drive out the lich that controls it is upon us!$B$BYou may have noticed a summoning crystal inside the watchtowers you marked.  We believe these feed the lich power needed to dominate the city.  You must take down all four of them; destroying one will no doubt summon more of the lich\'s troops.  If all four are down, the lich itself should arise to defend the heart of the city.$B$BDestroy the lich, $N, and bring me a shard from its phylactery as proof!",
     ["O"] = "Bring Araj\'s Phylactery Shard to High Executor Derrington at the Bulwark, Western Plaguelands.",
     ["T"] = "Alas, Andorhal",
   },
@@ -493,6 +503,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "I bet William Pestle has a potion to unite our two young lovers!$B$BHere, take this note to William.  He\'s staying at the Lion\'s Pride Inn in Goldshire.",
     ["O"] = "Take Gramma Stonefield\'s Note to William Pestle.",
     ["T"] = "Note to William",
+  },
+  [108] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<TXT> Mystery Reward",
   },
   [109] = {
     ["D"] = "Looks to me you\'ve seen quite a bit of combat in your time, $c.  If you haven\'t already, you should report to Gryan Stoutmantle.  He heads up the People\'s Militia, aimed at protecting the farmlands of Westfall.  I bet he could use your help.  You can usually find him in the stone tower on Sentinel Hill, just off the road in the middle of Westfall.",
@@ -633,6 +648,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "If ye be readin\' this, it means that Ol\' Captain Sanders is in a watery grave.  So my treasure is yours now, ye jest need to follow the clues. $b$bFirst ye need to find me footlocker.  It\'s probably half-buried in sand by now, along the Western Coast of Westfall near the shipwreck.  There be lots of shipwrecks but only one rusty anchor on the coast.  Find that anchor and you\'ll find me locker!  Look in there for the next clue.",
     ["O"] = "Find Captain Sanders\' footlocker and search it for the next clue.",
     ["T"] = "Captain Sander\'s Hidden Treasure",
+  },
+  [137] = {
+    ["D"] = "If you earn a commendation from one of our Marshals, then bring it to me.  It will be good for one of our Lion Emblem gloves.",
+    ["O"] = "General Marcus Jonathan in Stormwind will accept a commendation from Elwynn Forest.  Bringing him such a document will reward you with a choice of armor.",
+    ["T"] = "<NYI> <TXT> Stormwind Commendation",
   },
   [138] = {
     ["D"] = "The clue to the treasure reads: Good work, matey!  Now ye need to head due east.  East up the bluffs, east to the road.  Look for the ol\' chimney ruins near the side of the road.  There you\'ll find an old barrel with your next clue.",
@@ -1000,7 +1020,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Krazek\'s Cookery",
   },
   [211] = {
-    ["D"] = "Alas, the time to attack Andorhal and drive out the lich that controls it is upon us!$B$BInside the ruins of the city is where the lich - Araj the Summoner - holds dominion.  He is guarded by numerous Scourge surrounding the remains of city\'s center, and his personal retinue of guardians attached to him directly is formidable.  You will need numerous allies to even stand a chance of facing him successfully.$B$BDestroy Araj, $N, and bring me a shard from his phylactery as proof!",
+    ["D"] = "Alas, the time to attack Andorhal and drive out the lich that controls it is upon us!$B$BYou may have noticed a summoning crystal inside the watchtowers you marked.  We believe these feed the lich power needed to dominate the city.  You must take down all four of them; destroying one will no doubt summon more of the lich\'s troops.  If all four are down, the lich itself should arise to defend the heart of the city.$B$BDestroy the lich, $N, and bring me a shard from its phylactery as proof!",
     ["O"] = "Bring Araj\'s Phylactery Shard to Commander Ashlam Valorfist at Chillwind Camp, Western Plaguelands.",
     ["T"] = "Alas, Andorhal",
   },
@@ -1149,6 +1169,16 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Return to Jitters with the Dusky Crab Cakes.",
     ["T"] = "Return to Jitters",
   },
+  [241] = {
+    ["D"] = "Description",
+    ["O"] = "Log",
+    ["T"] = "<TEST> HEY MISTER WILSON!",
+  },
+  [242] = {
+    ["D"] = "Throm-ka, $c. There is no time to waste. Orcs of the Dragonmaw clan have fortified themselves in the valley to the south of here. $b$bThey have denied the Warchief\'s mandate, leaving us only one course of action. We will eliminate them so that they will no longer dirty the name of the Horde.",
+    ["O"] = "Kill 8 Dragonmaw Raiders, 3 Dragonmaw Bonewarders, and a Dragonmaw Battlemaster.",
+    ["T"] = "<UNUSED>",
+  },
   [243] = {
     ["D"] = "You will be headed to the Tanaris desert, testing the tissue consistency of the basilisks, scorpids, and hyena native there.  Obtain tissue samples and use them with the testing kit in tow; expect a chunk of the samples to fail.  I need eight acceptable samples of each creature type.$B$BIn addition, the goblins of Gadgetzan have a power source that must be used with this kind of modified kit.  Speak to Chief Engineer Bilgewhizzle and acquire one for the kit.$B$BReturn to me only when you are successful.",
     ["O"] = "Speak to Chief Engineer Bilgewhizzle in Gadgetzan about getting a power source for the testing kit.",
@@ -1228,6 +1258,16 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "$nath, is it? I can tell you\'re bursting with pride over completing the first test, hm? As I told you before, it\'s no large feat.$b$bYou should try your hand at boar hunting. Trust me, this is no Coldridge Valley boar hunt, so you\'d best have a care with them. I\'ll give you just twelve minutes this time.$b$bDon\'t feel bad if you fail. I\'d give you the shirt off my back if you succeeded!$b$bHave I ever related to you the story of how I received my famous scar? No? It was two years ago...",
     ["O"] = "Kill 5 Elder Mountain Boars and return to Daryl the Youngling in the Farstrider Lodge within 12 minutes.",
     ["T"] = "A Hunter\'s Challenge",
+  },
+  [259] = {
+    ["D"] = "Hello there, $n. I\'ve heard much about your exploits, and must say I\'m honored to meet you. I don\'t suppose you\'ve heard the story of Ol\' Kelt? Ah, well, Ol\' Kelt--Kelt Thomasin, that is--was once considered one of the finest hunters in all the realm. There wasn\'t much he hadn\'t done, but then, one day, he became obsessed with an ancient story... a myth, really. Well, as the stories go, a huge threshadon lives in the waters of the lake. Hogwash, if you ask me. If you\'re interested, you might talk to Kelt.",
+    ["O"] = "Talk to Kelt Thomasin.",
+    ["T"] = "<UNUSED>",
+  },
+  [260] = {
+    ["D"] = "Now, this will no doubt convince you that I am, as they say--and don\'t deny it, I know what they say--of an addled mind, obsessed with an impossible legend. An old dwarven legend, it is, of an enormous monster that lives in the depths of the Loch. I spent a good bit of my life trying to track it down, and I believe I got close, but alas, I fear old age has caught up to me. If you would like to try hunting down the monster of the Loch, bring me some treshadon teeth and claws.$B$B<He smiles mysteriously.>",
+    ["O"] = "Collect 5 Threshadon Teeth and 5 Threshadon Claws, then bring them to Kelt Thomasin.",
+    ["T"] = "<UNUSED>",
   },
   [261] = {
     ["D"] = "I will be frank.  We are at war with the Scourge.  It is an evil that corrupts our people and infects our land.  It must be stopped before it overwhelms us and drags our world into shadow.  We of the Scarlet Crusade have sworn to fight the Scourge with body and soul.$B$BIf you are with us, then gather your courage and prove your allegiance--destroy the undead ravagers of Desolace, in the Valley of Bones to the south.$B$BDo this, and the Crusade will embrace you.",
@@ -1320,7 +1360,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "A Dark Threat Looms",
   },
   [279] = {
-    ["D"] = "Murlocs are crawling out from the deep waters and building their villages on the coastline.  They are harassing our fishers and merchants and must be stopped.$B$BOne of these murlocs, Gobbler, skulks with other bluegill murlocs and harries merchants along the road, always then retreating to the safety of the nearby murloc hovels.  Our merchants are in jeopardy, and we will pay to secure them.$B$BGobbler prowls the river inlet north of here.  Find him, slay his kin, and bring me his head.",
+    ["D"] = "Murlocs are crawling out from the deep waters and building their villages on the coastline.  They are harassing our fishers and merchants and must be stopped.$B$BOne of these Murlocs, Gobbler, skulks with other Bluegill Murlocs and harries merchants along the road, always then retreating to the safety of the nearby Murloc hovels.  Our merchants are in jeopardy, and we will pay to secure them.$B$BGobbler prowls the river inlet north of here.  Find him, slay his kin, and bring me his head.",
     ["O"] = "Kill 12 Bluegill Murlocs.$B$BSlay Gobbler and take his head.$B$BBring Gobbler\'s Head to Karl Boran in Menethil Harbor.",
     ["T"] = "Claws from the Deep",
   },
@@ -1499,6 +1539,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Bring 6 Shimmerweeds to Rejold Barleybrew in the Brewnall Village.",
     ["T"] = "The Perfect Stout",
   },
+  [316] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [317] = {
     ["D"] = "I\'m preparing to start a mission for the Siege Brigade.  It\'s a long one, and I need to stock Jetsteam with a month\'s worth of supplies.  So while Steelgrill is working on my tank, can you do some hunting for me?$B$BI\'ll need some fur for bedding, and boar meat for food.  You can get meat from boars and fur from the bears... you can find them both in the snow fields south of the Grizzled Den.",
     ["O"] = "Gather 4 Chunks of Boar Meat and 2 Thick Bear Furs, and deliver them to Pilot Bellowfiz at Steelgrill\'s Depot.",
@@ -1663,6 +1708,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "You have uncovered some sort of strange, egg-shaped device made from metal.  Fiddling with one of its knobs springs the egg to life, as it opens up into some sort of gnomish robotic contraption!  A voice from inside the robotic egg crackles to life.$B$B\"The name\'s Oglethorpe, and my homing robot has gone missing!  I will reward you for its recovery!  Please take this beacon to the robot.  Excellent, I now have computed the coordinates for you!  It crashed near the Gaping Chasm in Tanaris!\"",
     ["O"] = "Bring the distress beacon to Oglethorpe\'s homing robot.",
     ["T"] = "Find OOX-17/TN!",
+  },
+  [352] = {
+    ["D"] = "Great Mammoda. Enormous, she was, with claws and teeth like swords. Now, I was caught off my guard, but I don\'t think being ready would have helped my cause much. One swipe and poof! Darkness. They say I\'m lucky to walk now...$b$bWell, not much enjoyment to be had in hearing that old story now, is there? Anyways, $n, if you\'d like to try yourself against her, the Lady of the Loch,",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
   },
   [353] = {
     ["D"] = "The Stormpikes are a respected dwarven clan, and are well known for their fine and discerning tastes.  So it\'s no wonder that Gringer Stormpike, a Mountaineer of Ironforge, commissioned me to craft him a weapon.$B$BThe weapon is finished, but... Mountaineer Stormpike is far away, in distant Loch Modan.  If you plan on traveling to the north, can you deliver this package to him?$B$BMy last message from Mountaineer Stormpike said he\'s stationed at the northern guard tower in Loch Modan.",
@@ -1849,6 +1899,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Speak with Warden Thelwater in the Stockade.",
     ["T"] = "Bazil Thredd",
   },
+  [390] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [391] = {
     ["D"] = "Let\'s get one thing straight, $N: I don\'t trust you. But, with the situation as it is, you probably won\'t make a difference.$B$BSo here\'s how it\'s going to be: go down there and have your talk with Thredd. If you\'re really on our side, then kill him and bring me his head when the job\'s done. And if it turns out you\'re on his side, and don\'t come out... when we find you, you\'ll die along with the rest of the maggots.",
     ["O"] = "Kill Bazil Thredd and bring his head back to Warden Thelwater at the Stockade.",
@@ -1918,6 +1973,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Bethor Iceshard, a high-ranking and powerful mage in the Undercity to the south, commands me to send him an agent with proven worth against the Scourge.  You, $N, will be that agent.$B$BPresent these orders to Bethor.  He will then instruct you on your mission.  I don\'t know its details, but it deals with recruiting a wayward Lich.  And it will be dangerous.$B$BSo ready yourself, $C.  You must not fail.$B$BYou may find Bethor in the Magic Quarter of the Undercity.",
     ["O"] = "Present Sevren\'s Orders to Bethor Iceshard in the Undercity.",
     ["T"] = "The Prodigal Lich",
+  },
+  [406] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
   },
   [407] = {
     ["D"] = "Harmless pumpkins, right?  Or so it would seem.  If we are to defeat Arthas\'s advances from the North and the Human infestation from the South we need to start realizing the full potential of our gift of undeath.$b$bWith a little ingenuity a simple pumpkin becomes an agent for our Dark Lady.  This pumpkin, laced with my latest formula, will prove to be quite a treat.$b$bYet another Scarlet Zealot has been captured and is being kept in the cellar of the Gallow\'s End Tavern.  Take this pumpkin to the fool.",
@@ -2194,6 +2254,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Take Alaric to the hidden alcove.",
     ["T"] = "The Hidden Niche",
   },
+  [462] = {
+    ["D"] = "Other than you, we sent two scouts through Algaz.  Only one returned.  Here\'s what he discovered:$B$BThe Dragonmaws sent one of their Lieutenants, Maruk Wyrmscale, to organize a crew of orcs in Algaz and cut off the land route to Menethil Harbor!$B$BWe have to stop this, now.  Take out Maruk, and then report to Valstag Ironjaw in Menethil Harbor.$B$BMaruk is headquartered in a small cave, across a pond between the second and third tunnels of Algaz.  Menethil is through Algaz, then west along the road.",
+    ["O"] = "Kill Maruk Wyrmscale$B$BReport to Valstag Ironjaw in Menethil Harbor.",
+    ["T"] = "<UNUSED>",
+  },
   [463] = {
     ["D"] = "You\'ve heard of the Greenwarden?  You\'re not looking for him, are you?  Well I say you\'re crazy if you are, but who am I to keep a fool from $ghis:her; death?$B$BIf you are seeking that beast, then I hear he is in the marsh, east of the road where it forks to Dun Modr.  He\'s lurking there among the crocs...and worse!$B$BAnd leave your money here.  You won\'t need it where you\'re going...and you don\'t want to chip ol\' Greenie\'s tooth on your gold when he bites you in half, do you?",
     ["O"] = "Find the Greenwarden.",
@@ -2329,6 +2394,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Collect 3 Fel Cones and give them to Zenn Foulhoof outside of Dolanaar.",
     ["T"] = "Seek Redemption!",
   },
+  [490] = {
+    ["D"] = "By strict orders from the Council of Darnassus, I am commissioning a bounty on the Gnarlpine Tribe. They are no longer friends of the forest. Their corruption has left them mindless threats to our people and the creatures of the glade.$b$bAs decreed by the Council, you shall be rewarded for removing the furbolg menaces from Kalidar. Bring to me their fangs as proof of your deeds.",
+    ["O"] = "Shayla Nightbreeze outside of Darnassus wants you to bring her 20 Gnarlpine Fangs.",
+    ["T"] = "<UNUSED>",
+  },
   [491] = {
     ["D"] = "Thule once told me that, long ago, he and two colleagues created a magic wand, woven together from the apprentice wands each mage possessed.  This wand was a symbol of their friendship, and although Thule came to despise it he could not part with it, nor could he let the others have it.  So he stole the wand, and hid it in Fenris Keep.$B$BHere.  Take the wand to Bethor Iceshard, one of Thule\'s friends from years past.  I\'m sure he will want it.",
     ["O"] = "Take the Woven Wand to Bethor Iceshard in the Magic Quarter of the Undercity.",
@@ -2358,6 +2428,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Ah, another wretched day in Tarren Mill.  All of this clean air puts me in such a foul mood, $N.$b$bThe sooner we can plague the humans here, the better.  I\'ve been conducting intense studies on possible killing agents to use in my concoctions but I haven\'t the time to collect them all.$b$bIf you want to make yourself of use, procure the following items for me:  10 Gray Bear Tongues and the very rare and hard to find, Creeper Ichor.  You\'ll find both bears and creepers just outside of Tarren Mill.",
     ["O"] = "Apothecary Lydon of Tarren Mill wants 10 Gray Bear Tongues and some Creeper Ichor.",
     ["T"] = "Elixir of Suffering",
+  },
+  [497] = {
+    ["D"] = "As a child, raised as a gladiator at Durnholde Keep, I was befriended by Taretha, the daughter of my wet nurse and mistress of the damned bastard Blackmoore.$b$bThe past is the past, $n, but reports of human movements in Hillsbrad reminded me of that time. I dispatched a small party to the area to investigate and to retrieve an... item... given to me by Taretha, if they could.$b$bA fruitless task, no doubt, but perhaps...$b$bThey should have returned by now, I want you to go to Tarren Mill to investigate.",
+    ["O"] = "Go to Tarren Mill and find out the status of the party sent by Thrall.",
+    ["T"] = "<UNUSED>",
   },
   [498] = {
     ["D"] = "Me and some other warriors were sent by the Warchief to retrieve an object from Durnholde and to investigate this so-called Syndicate.$b$bWe went to Durnholde to take a look around, but we were taken by surprise by a large number of the humans. We fought bravely, but their sheer numbers were enough to defeat us. They took a few of us captive, but I was able to escape.$b$bDurnholde is just southeast of here, across the river. Drull and Tog\'thar are being held there, you must go and rescue them.",
@@ -2539,6 +2614,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Retrieve information about Gol\'dir\'s whereabouts for Krusk in Tarren Mill.",
     ["T"] = "Infiltration",
   },
+  [534] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [535] = {
     ["D"] = "Urrgh... Injured and dying and confronted with the enemy.$b$bNo doubt you\'ll kill me anyway, but if you bring me some Southshore stout--your kind does drink, don\'t they?--I\'ll tell you what you want to know.",
     ["O"] = "Bring a mug of Southshore Stout to Valik in the Syndicate camp.",
@@ -2603,6 +2683,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "High Executor Darthalia sent me to keep watch of Dun Garok from a distance.  I had set up camp just out of sight.  But when morning came and I had to boil water, I left to gather firewood.$b$bWhen I returned to camp, I discovered my gear was missing.$b$bApparently some dwarven scouts from Dun Garok had passed by and made off with it.  I need my sword!  If you can get it back for me I would be so grateful.  So many dwarves there...it will be quite difficult to find the dirty little thief who stole it.",
     ["O"] = "Retrieve Deathguard Humbert\'s sword from Dun Garok and return it to him in Tarren Mill.",
     ["T"] = "Humbert\'s Sword",
+  },
+  [548] = {
+    ["D"] = "This will start the Bloodstone Pendant quest line...<NYI>",
+    ["O"] = "",
+    ["T"] = "<NYI> <TXT> Bloodstone Pendant",
   },
   [549] = {
     ["D"] = "By the authority of Lady Sylvanas, all members of the organization known as the Syndicate are wanted dead. Those brought into custody or taken prisoner will be summarily executed. They are currently known to be amassing in the ruins of Durnholde Keep, to the southeast of Tarren Mill.$b$bA handsome reward is offered to all who bring proof of their deeds to High Executor Darthalia.",
@@ -2953,6 +3038,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Enticing Negolash",
+  },
+  [620] = {
+    ["D"] = "This fine sash has the letters \"HS\" embroidered along its hem.",
+    ["O"] = "Return the Monogrammed Sash to its owner.",
+    ["T"] = "The Monogrammed Sash",
   },
   [621] = {
     ["D"] = "Zanzil the Outcast dwells with his followers in the Jubuwai and Aboraz Ruins, northeast of Booty Bay.  He is exiled from his tribe.  Why? Well...$B$BZanzil has methods of bending the minds of others, and his leaders fear him.  He uses a mixture of jungle plants on his followers to suppress their will and strengthen their bodies.$B$BHis mixture would be worth much to those who wish to control others.$B$BBring me samples of his mixture, and I will find a use for them.",
@@ -3714,6 +3804,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Travel to Red Rocks east of Thunder Bluff and speak with the Ancestral Spirit.",
     ["T"] = "Rite of Wisdom",
   },
+  [774] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [775] = {
     ["D"] = "You will now be revered within our great city. Any $r worthy of completing the Rites of the Earthmother earns that honor.$b$bFor your final quest, seek out our noble leader, Cairne Bloodhoof, who dwells atop the highest mesa in Thunder Bluff.",
     ["O"] = "Speak with Cairne Bloodhoof in Thunder Bluff.",
@@ -3763,6 +3858,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Led by Admiral Proudmoore, the humans of Kul Tiras encroached on Durotar, violating the Warchief\'s pact made with Jaina Proudmoore in order to defeat Archimonde years ago.$b$bThe human aggression was repelled and Tiragarde Keep fell. But recently, the Admiral\'s reserves, led by Lieutenant Benedict, have retaken the keep and once again pose a threat to our homeland. These humans show no respect for diplomacy.$b$bProve your honor and travel south to Tiragarde Keep to eliminate the human invaders.",
     ["O"] = "Kill 10 Kul Tiras Sailors, 8 Kul Tiras Marines and Lieutenant Benedict and return to Gar\'Thok in Razor Hill.",
     ["T"] = "Vanquish the Betrayers",
+  },
+  [785] = {
+    ["D"] = "Thrall is a most wise and noble leader. His tenacity on the battlefield is matched only by his diplomatic tact.$b$bThe Darkspear Trolls have proven to be invaluable allies to orckind. Out of loyalty and honor we have sworn a pact of protection with them.$b$bThe Warchief has sent orders to make sure our Darkspear friends in Sen\'jin Village are not under any direct threat. One of their most trusted scouts, Lar Prowltusk is keeping a close watch on their western flank.$b$bSeek out Lar and assist as needed.",
+    ["O"] = "Seek out Lar Prowltusk on the western flank of Sen\'jin Village.",
+    ["T"] = "A Strategic Alliance",
   },
   [786] = {
     ["D"] = "Lower your voice, $c. The Kolkar centaurs lie just over the ridge to the west in Kolkar Crag.$b$bLast night while they were raiding, I snuck into their village and discovered that the dirty beasts have a three-tiered attack planned on the trolls and orcs of Durotar.$b$bWe mustn\'t let their invasion come to fruition. Perhaps you can muster the might needed to infiltrate Kolkar Crag and destroy their attack plans.$b$bLast I saw, they had divided them up amongst three of their leaders.",
@@ -3814,6 +3914,46 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["T"] = "Seal of the Earth",
   },
+  [796] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [797] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [798] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [799] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [800] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [801] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [802] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [803] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [804] = {
     ["D"] = "Seeing the deed you have done for me steels my heart. I cannot fall so easily! I must endure!$b$bBut it remains that I cannot make the trek back to the Den unassisted. Please, $n, return to the Den and tell Gornek of my situation. Perhaps he can help me.",
     ["O"] = "Bring the news of Hana\'zua\'s plight to Gornek at the Den.",
@@ -3839,6 +3979,16 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Speak with Ak\'Zeloth in the Barrens.",
     ["T"] = "Ak\'Zeloth",
   },
+  [810] = {
+    ["D"] = "You would do well to learn how dangerous this land can be, $c.$B$BThe wildlife here can teach us such things... if we are wise and observant.$B$BThe scorpids are a perfect example of survival in Durotar. If you are to survive, it would be wise to take on some of their characteristics as your own. Their hardened carapaces can protect you from the harshness of the sun, or even a deadly weapon.$B$BBring me 6 Small Scorpid Carapaces from the Clattering Scorpids, $N, and I shall see about rewarding you justly.",
+    ["O"] = "Bring 6 Small Scorpid Carapaces to Kor\'ghan in Sen\'jin Village.",
+    ["T"] = "<UNUSED>",
+  },
+  [811] = {
+    ["D"] = "One of the other traits of the scorpids is their fierce loyalty. They will protect one another if they are in danger--you\'ve probably already seen this behavior in your first scorpid hunt.$B$BYou would do well to heed that lesson and adapt it for yourself: we are stronger as one; we are weak when we are divided into many.$B$BBring me 8 Large Scorpid Carapaces from the Armored Scorpids and I shall reward you for learning this wisdom.",
+    ["O"] = "Bring 8 Large Scorpid Carapaces to Kor\'ghan in Sen\'jin Village.",
+    ["T"] = "<UNUSED>",
+  },
   [812] = {
     ["D"] = "$N... your timing is perfect. I just hope I can compliment your haste as well.$B$BI was careless while fighting a few of the venomtails nearby, and one of them stung me deeply. I can feel its poison weakening me even as we speak. At this rate, I got maybe an hour left to live. But I\'ll need your help if I\'m to do so...$B$BKor\'ghan in Orgrimmar knows how to make the antidote. Find him... and hurry, $N. I won\'t be able to last much longer. He should be in the Cleft of Shadow.",
     ["O"] = "Find Kor\'ghan in Orgrimmar and get the Venomtail Antidote. Then bring the antidote to Rhinag near the northwestern border of Durotar.",
@@ -3848,6 +3998,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Venomtails are some of the deadliest scorpids in Durotar. It was unwise for Rhinag to hunt them without having some of the antidote with him, but right now, chastising is the last thing he needs.$B$BBring me a few venomtail poison sacs from any of the venomtails near the entrance of Orgrimmar and I\'ll make an antidote for him.$B$BMake haste, $N. One of our own needs your help.",
     ["O"] = "Bring 4 Venomtail Poison Sacs to Kor\'ghan in Orgrimmar.",
     ["T"] = "Finding the Antidote",
+  },
+  [814] = {
+    ["D"] = "Cook and clean--that\'s all I do!$B$BYou want to eat, you get me some more meat! I don\'t have all day to hunt and prepare food for all these louses. You got to learn to pull your own weight around here if you wanna be treated equal.$B$BGet me some Chunks of Boar Meat if you want to make yourself useful... or you don\'t want to starve to death.",
+    ["O"] = "Bring 10 Chunks of Boar Meat to Cook Torka in Razor Hill.",
+    ["T"] = "<UNUSED>",
   },
   [815] = {
     ["D"] = "Bah! I almost forgot I need to get breakfast ready.$B$B$N, get yourself movin\' and get me some taillasher eggs. I\'ll need at least three of them if I\'m going to have enough for tomorrow\'s meal.$B$BThe Bloodtalon taillashers can be fierce, and protect their eggs to the death more often than not. They sometimes bury their eggs too deep in the earth to uncover safely, but if you head to the Echo Isles to the southeast of Sen\'jin Village, you can usually find them all over those islands.",
@@ -3964,6 +4119,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Speak with Apothecary Dithers at the Bulwark, Western Plaguelands.",
     ["T"] = "Scholomance",
   },
+  [839] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [840] = {
     ["D"] = "Hmm, you look pretty strong.$B$BListen, my good friend Kargal needs some new recruits for Barrens duty. I know you want to do what\'s right for the Horde. Well, this is your chance.$B$BTake this recruitment letter to Kargal and see if he\'ll sign it.",
     ["O"] = "Follow the western road from Razor Hill to the Barrens over a bridge.$B$BStop at the orc outpost across the bridge.$B$BGive Kargal Battlescar at the Barrens outpost your recruitment letter.",
@@ -4043,6 +4203,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "The Kolkar are a threat to the Horde\'s claims in the Barrens; we must reduce the numbers of their troops.  And so, I have a bounty task for you.$B$BWhile in Kolkar territories, slay their warriors and collect centaur bracers.  Return when you have a heap of bracers and the Horde will reward you well.",
     ["O"] = "Bring 15 Centaur Bracers to Regthar Deathgate, west of the Crossroads.",
     ["T"] = "Centaur Bracers",
+  },
+  [856] = {
+    ["D"] = "Though you have reached the Barrens, your journey is not complete. You must continue on to the Crossroads, where you are needed most.$B$BFollow the road as you were, and turn left where the path gives you the choice. Follow it North until you see the walls of the Crossroads.$B$BJust before you enter, you should see the Ancestral Sage, he will have words of wisdom for you.",
+    ["O"] = "Continue down the road from Camp Taurajo.$B$BTurn left at the T intersection and continue North.$B$BFollow the path to the Ancestral Sage outside the Crossroads.",
+    ["T"] = "<UNUSED>",
   },
   [857] = {
     ["D"] = "The power was mine! In my very hands! And I want it back! Back I say!$b$bThose dirty excavators uncovered it... so beautiful it was. Deemed the Tear of the Moons, it was the first great discovery we made at Bael Modan.$b$bIt should have been mine! Mine I say!$b$bGeneral Twinbraid grew jealous of the power it gave me. He locked it away in the Keep. Called it cursed, he did! The fool!$b$bOthers wanted it and they had to be stopped! That bastard Twinbraid drove me off.$b$bNow I want it back. Back I say!",
@@ -4274,6 +4439,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Collect 7 Prowler Claws from Savannah Prowlers for Sergra Darkthorn in the Crossroads.",
     ["T"] = "Prowlers of the Barrens",
   },
+  [904] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [905] = {
     ["D"] = "Now, $N, the hunt deepens.  Now you must defeat your prey, and then find your way to its lair.$B$BHunt the sunscale raptors to the south.  Slay them and remove the feathers they wear.  Place the feathers on the scytheclaw nests southwest of the Stagnant Oasis. Show their brethren you do not fear them!",
     ["O"] = "Kill Sunscale raptors and collect their feathers. Use the feathers on the 3 Scytheclaw nests. Return to Sergra Darkthorn in the Crossroads.",
@@ -4308,6 +4478,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "They say that Ashenvale is the new frontier, and that the Mor\'shan Rampart in the Barrens is the gateway to it.  That would be so cool to be a pioneer, carving everything you need out of the untamed wilds!  They say that this is where the Horde and Alliance will clash the most in the future, and I want to be there $N!$B$BWould you take me to the Mor\'shan Rampart so I can see what the frontier looks like, please?  I wanna see where the Horde is driving out those smelly night elves!",
     ["O"] = "Take your ward to the Mor\'shan Rampart in the northern part of the Barrens, just before entering Ashenvale.",
     ["T"] = "Gateway to the Frontier",
+  },
+  [912] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Stonesplinter Trogg Disguise",
   },
   [913] = {
     ["D"] = "The thunderhawk, $N, is a fierce beast.  It is time for you to face them.  You must find where it roams, and bring me its wings as proof of your successful hunt.$B$BDo this, and your time with me will near its end.",
@@ -4473,6 +4648,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Help!$B$BI was wandering around the Master\'s Glaive, and these dirty cultists surrounded me.  Lucky I\'m good at hiding!!$B$BCan you help me out of here?  And I need to send word to my sister Therysil that I\'m all right.  She\'s in Ashenvale to the south, at the Shrine of Aessina.",
     ["O"] = "Help Therylune escape, then tell Therysil at the Shrine of Aessina that her sister is safe.",
     ["T"] = "Therylune\'s Escape",
+  },
+  [946] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
   },
   [947] = {
     ["D"] = "I am devising a potion that requires rare mushrooms, mushrooms that grow only in a certain cave.  The cave lies behind Cliffspring Falls, to the east and slightly north along the mountains.$B$BI would go there myself, but I was advised by the Grove of the Ancients to stay away from that place.  Our venerable allies sense that the cave is the hiding place for a new evil in Darkshore.$B$BPlease, $N, gather the mushrooms for me.  And while doing so, scout the cave to confirm the Ancients\' fears.",
@@ -4674,6 +4854,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Find 5 Fine Moonstalker Pelts and return them to Terenthis in Auberdine.",
     ["T"] = "A Lost Master",
   },
+  [987] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [990] = {
     ["D"] = "$N, my mistress, Raene Wolfrunner, awaits you in the city of Astranaar within Ashenvale. With your help, perhaps we can at least ease some of the corruption that\'s taken hold there.$B$BHead south from here and stay close to the road--you\'ll find your way there without issue if you follow those directions.",
     ["O"] = "Find Raene Wolfrunner in Ashenvale.",
@@ -4719,6 +4904,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["T"] = "Corrupted Windblossom",
   },
+  [999] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "When Dreams Turn to Nightmares",
+  },
   [1000] = {
     ["D"] = "Attention, heroes!$B$BThe Cenarion Circle seeks able bodied individuals to assist them in exploring the vast new frontiers of Kalimdor!  A forbidden wasteland of unimaginable dangers lies far to the west of Tanaris and Gadgetzan, and the Circle needs willing and honorable proxies to act in their stead.$B$BAll interested individuals should seek audience with the Cenarion Circle.  Speak with the Arch Druid Hamuul Runetotem on the Elder\'s Rise of Thunder Bluff for more information!",
     ["O"] = "Speak with Arch Druid Hamuul Runetotem on the Elder Rise of Thunder Bluff about the Cenarion Circle\'s call to explore the frontiers of Kalimdor.",
@@ -4743,6 +4933,16 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Attention, heroes!$B$BThe Cenarion Circle seeks able bodied individuals to assist them in exploring the vast new frontiers of Kalimdor!  A forbidden wasteland of unimaginable dangers lies far to the west of Tanaris and Gadgetzan, and the Circle needs willing and honorable proxies to act in their stead.$B$BAll interested individuals should seek audience with the Cenarion Circle.  Speak with the Arch Druid Hamuul Runetotem on the Elder\'s Rise of Thunder Bluff for more information!",
     ["O"] = "Speak with Arch Druid Hamuul Runetotem on the Elder Rise of Thunder Bluff about the Cenarion Circle\'s call to explore the frontiers of Kalimdor.",
     ["T"] = "The New Frontier",
+  },
+  [1005] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "What Lurks Beyond",
+  },
+  [1006] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "What Lies Beyond",
   },
   [1007] = {
     ["D"] = "I would charge you with a task, $N.$B$BI was on my small vessel, skimming over the submerged ruins of Zoram, when naga attacked me, surging from the water and tearing at me with their claws!  I fled, carrying what supplies I could to make this meager camp.$B$BBut when I reached the shore and ran... my prized possession was lost.$B$BPlease, $N, find the site of my ambush, along the coast to the north, and search for an ancient statuette.  It is the reason I have braved the dangers of the Zoram Strand.",
@@ -5204,6 +5404,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Find the Deathstalker Adamant and Deathstalker Vincent.",
     ["T"] = "Deathstalkers in Shadowfang",
   },
+  [1099] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Goblins Win!",
+  },
   [1100] = {
     ["D"] = "You slowly open the weathered journal of Henrig Lonebrow....",
     ["O"] = "Read Henrig Lonebrow\'s Journal.",
@@ -5469,20 +5674,25 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Find the Legacy of the Aspects and return it to Braug Dimspirit near the entrance to Talondeep Path in Stonetalon Mountains.",
     ["T"] = "Test of Lore",
   },
+  [1155] = {
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<NYI> <TXT> bug crystal side quest",
+  },
   [1156] = {
     ["D"] = "x",
     ["O"] = "x",
     ["T"] = "<NYI> <TXT> speak to alchemist pestlezugg",
   },
   [1157] = {
-    ["D"] = "TODO",
-    ["O"] = "TODO",
-    ["T"] = "Alexstrasza",
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<NYI> <TXT> pestlezugg needs items",
   },
   [1158] = {
-    ["D"] = "TODO",
-    ["O"] = "TODO",
-    ["T"] = "Malygos",
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<NYI> <TXT> speak to rabine saturna",
   },
   [1159] = {
     ["D"] = "Well done, $N. You have passed the first portion of the Test of Lore, but there is still another question to be answered. But that question is not mine to ask.$B$BSeek out Parqual Fintallas in Lordaeron City. He was a great historian for the humans before the Plague overtook him. Now he continues to seek enlightenment, but of a different nature.$B$BHe will have another requirement of you before he asks you anything, but you have done masterfully thus far--I\'m sure you will overcome his obstacle.",
@@ -5493,6 +5703,21 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "I will tell you what you must seek, and I will even ask you my question, but not because you wish to prove yourself. Knowledge is far more important than strength. Even as others seem to pass you by in ability, your knowledge of the world will be more valuable.$B$BGo to the Monastery in the north of Tirisfal Glades. In the library there, a book called Beginnings of the Undead Threat resides. It was used by the now-corrupt paladins there to train them to fight my kind.$B$BBring it to me.",
     ["O"] = "Find The Beginnings of the Undead Threat, and return it to Parqual Fintallas in Undercity.",
     ["T"] = "Test of Lore",
+  },
+  [1161] = {
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<NYI> <TXT> gossip shade of ambermoon",
+  },
+  [1162] = {
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<NYI> <TXT> speak to hamuul runetotem",
+  },
+  [1163] = {
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<NYI> <TXT> speak to tyrande whisperwind",
   },
   [1164] = {
     ["D"] = "The harlot! The swine! Kenata still lives; her family healthy and prospering while I suffer. Forsaken indeed!$B$BMy family is gone, taken by the plague. Our estate also forfeit; looted and burned during the war. And after all that, her and her lousy children had the audacity to steal the only precious belongings I had left.$B$BI don\'t care about the things they stole any more. What I want now are their heads!$B$BKill them for me! Go to the Dabyrie Farmstead in Arathi, northeast of Refuge Point.",
@@ -5538,6 +5763,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "You dare challenge Overlord Mok\'Morokk?$b$bHaw!$b$bMe crush tiny $r!$b$bYou tell me when ready for good beating.",
     ["O"] = "Defeat Mok\'Morokk and report the news to Draz\'Zilb in Brackenwall Village.",
     ["T"] = "Challenge Overlord Mok\'Morokk",
+  },
+  [1174] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Gnomes Win!",
   },
   [1175] = {
     ["D"] = "After the big crash with the goblins\' Red Thunder racer and a basilisk, Kronkrider hired me on to take care of the track. I don\'t know what all the animals out on the flats are feeding on to grow so big, but we have to be careful to thin them out so they won\'t wander onto the track when a race is going on.$b$bTell you what. If you want to go out and make a little profit, go out and remove the basilisks from the area.",
@@ -5792,7 +6022,7 @@ pfDB["quests"]["enUS"] = {
   [1251] = {
     ["D"] = "An iron shield, blackened by the fire that raged through the inn, is affixed to the crumbling chimney, one of the few remaining parts of the structure that once made up the Shady Rest Inn.$b$bThe shield can be removed from the brick of the chimney.",
     ["O"] = "Bring the Blackened Iron Shield to Krog in Brackenwall Village.",
-    ["T"] = "The Black Shield",
+    ["T"] = "The Black Shield ",
   },
   [1252] = {
     ["D"] = "A glint of light on the ground catches your eye from underneath the rubble. Brushing away debris and ash caked onto the object reveals the insignia of a gold anchor on white enameled on the surface: the sign of Theramore.$b$bUnderneath the anchor is embossed the name \"Lieutenant Paval Reethe\".",
@@ -5828,6 +6058,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "It is strange that the pendant Marg stole was in the hands of common soldiers.  Perhaps its owner was in disguise, or perhaps the soldiers themselves stole it!$B$BRegardless of which is true, this is a noble\'s pendant and we must discover its true owner if we are to unravel its mystery.$B$BTake the pendant to Zor Lonetree in Orgrimmar.  He is well schooled in Alliance politics, and will know if this pendant has a history among the nobles of Stormwind.",
     ["O"] = "Bring the Jeweled Pendant to Zor Lonetree in Orgrimmar.",
     ["T"] = "Report to Zor",
+  },
+  [1263] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Burning Inn <CHANGE TO GOSSIP>",
   },
   [1264] = {
     ["D"] = "The beginning of every month the Kul Tiras Marines all get paid and usually leave Theramore for somewhere else. A lot of them come here to womanize, carouse, and just have a good time. One of those groups I\'d consider regulars here at the tavern, and I believe this Hendel is among them.$B$BCommander Samaul in Theramore would be able to help you find him if Hendel\'s still stationed there. He\'s completely loyal to Proudmoore, but if you drop Elling\'s name, he should help you out... discretely.",
@@ -5889,10 +6124,40 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Show the Blackened Iron Shield to Mosarn in Thunder Bluff.",
     ["T"] = "The Black Shield",
   },
+  [1277] = {
+    ["D"] = "Kagoro has revealed that the centaur hoofprints belong to some chumps in Mauradon.",
+    ["O"] = "Beat down.",
+    ["T"] = "<nyi> <TXT> The Centaur Hoofprints",
+  },
+  [1278] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<nyi> <TXT> The Grim Totem Clan",
+  },
+  [1279] = {
+    ["D"] = "Finish one of the three.",
+    ["O"] = "",
+    ["T"] = "<nyi> <TXT>The Centaur Hoofprints",
+  },
+  [1280] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<nyi> <TXT>The Centaur Hoofprints",
+  },
+  [1281] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Jim\'s Song <CHANGE TO GOSSIP>",
+  },
   [1282] = {
     ["D"] = "I can\'t help it if I feel sorry for ol\' Jim there. He wasn\'t always like that. Ran an inn out in the marsh for a while, wonderful place.$b$bLook, I don\'t really want to talk about it. Bring it up with Captain Vimes if you really have to.",
     ["O"] = "Speak with Captain Garran Vimes in Theramore.",
     ["T"] = "They Call Him Smiling Jim",
+  },
+  [1283] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Fire at the Shady Rest <CHANGE TO GOSSIP>",
   },
   [1284] = {
     ["D"] = "Rows of hoofprints lead away from the still-smoking skeleton of the Shady Rest Inn. There are at least a few visible impressions, with more rows of prints almost imperceptible in the soft mud of the marsh.",
@@ -5923,6 +6188,41 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Well. judging from Captain Vimes\'s report. you\'ve been a huge help to his investigation. and for that I thank you.$B$BI can put my mind more at ease knowing that the matter is in such capable hands. If you would. I would request that you return to Captain Vimes and help him in getting to the bottom of this mystery.",
     ["O"] = "Return to Captain Garran Vimes in Theramore.",
     ["T"] = "Vimes\'s Report",
+  },
+  [1293] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<nyi> <TXT> Centaur Hoofprints",
+  },
+  [1294] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<nyi> <TXT>Centaur Sympathies",
+  },
+  [1295] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<nyi> <TXT> Course of Action",
+  },
+  [1296] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<nyi> <TXT> Course of Action",
+  },
+  [1297] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<nyi> <TXT> Course of Action",
+  },
+  [1299] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<nyi> <TXT> Thrall\'s Dirty Work",
+  },
+  [1300] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<nyi> <TXT> Lorn Grim Totem",
   },
   [1301] = {
     ["D"] = "Before working here at the Blue Recluse, I was trained by one of the best chefs and innkeepers I\'d ever met. His name was James Hyal. Everything I have and everywhere I\'ve gotten in life is thanks to him.$b$bI wonder how he\'s doing. His brother Vincent and he went to work in a tavern in Menethil Harbor, but I haven\'t heard from him recently.$b$bIf you ever happen to be headed in that direction, maybe you could say hello to him for me?",
@@ -6085,7 +6385,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Strange Alliance",
   },
   [1383] = {
-    ["D"] = "I have just the right serum in mind. It will deal with the truth in precisely the way the truth should be dealt with.$B$BFor this concoction I will need several Shadow Panther hearts from the Swamp. I also require the enchanted fungus off of the Mire Lord who resides there. I am sure one as able as you, $N, can persuade him to part with some.$B$BNow the hard part will be locating a Deepstrider tumor from far-off Desolace. Very rarely the giants there become ill and a tumor forms.$B$BNow, off you go!",
+    ["D"] = "I have just the right serum in mind. It will deal with the truth in precisely the way the truth should be dealt with.$b$bFor this concoction I will need several Shadow Panther hearts from the Swamp. I also require the enchanted fungus off of the Mire Lord who resides there. I am sure one as able as you, $n, can persuade him to part with some.$b$bNow the hard part will be locating a Deepstrider tumor from far-off Desolace. Very rarely the giants there become ill and a tumor forms.$b$bNow, off you go!",
     ["O"] = "Apothecary Faustin at Beggar\'s Haunt needs 5 Shadow Panther Hearts, Mire Lord Fungus and a Deep Strider Tumor.",
     ["T"] = "Nothing But The Truth",
   },
@@ -6274,6 +6574,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Escort Dalinda Malem from Thunder Axe Fortress and then return to Vahlarriel Demonslayer in Desolace.",
     ["T"] = "Return to Vahlarriel",
   },
+  [1441] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [1442] = {
     ["D"] = "Greetings, $N. What can I do for one who follows a holy path?$B$BAh, yes, Stilwell, the blacksmith... from long ago. I remember him well, though, I have not heard his name in some time.$B$BHe never struck me as an impudent man, so I can only assume his desire for a Kor gem is noble.$B$BIf you truly wish for one of the gems, then you must head to the northwest of Ashenvale. You will find Blackfathom Deeps there within some ancient ruins. The naga who still use the gems are down below. Do not go alone, $c.",
     ["O"] = "Bring a Kor Gem to Thundris Windweaver in Darkshore.",
@@ -6295,7 +6600,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Jammal\'an the Prophet",
   },
   [1447] = {
-    ["D"] = "Yeah, you\'re obviously not the smartest $c to come into Stormwind, but you\'re about to be one of the dumbest to never leave.$b$bHave you met me friends?",
+    ["D"] = " Yeah, you\'re obviously not the smartest $c to come into Stormwind, but you\'re about to be one of the dumbest to never leave.$B$BHave you met me friends?",
     ["O"] = "Defeat Dashel Stonefist in Stormwind.",
     ["T"] = "The Missing Diplomat",
   },
@@ -6359,14 +6664,24 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Bring 10 vials of Scorpashi Venom and 3 Aged Kodo Hides to Kreldig Ungor in Desolace.",
     ["T"] = "Reagents for Reclaimers Inc.",
   },
-  [1462] = {
+  [1460] = {
     ["D"] = "",
     ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [1461] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [1462] = {
+    ["D"] = "",
+    ["O"] = "Speak to Seer Ravenfeather for another Earth Sapta.",
     ["T"] = "Earth Sapta",
   },
   [1463] = {
     ["D"] = "",
-    ["O"] = "",
+    ["O"] = "Speak to Canaga Earthcaller for another Earth Sapta.",
     ["T"] = "Earth Sapta",
   },
   [1464] = {
@@ -6405,7 +6720,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Piercing the Veil",
   },
   [1471] = {
-    ["D"] = "Surely you have seen the circle of summoning below us? Only there will you be able to draw forth an unbound voidwalker.$B$BUsing these runes, you will be able to draw it forth, and then you must dominate it through strength of arms and magic.$B$BWhen it is subdued, it will be indentured to you. Come to me then, and I will elucidate the spell of summoning, so that it may serve you to whatever end you wish.",
+    ["D"] = "Surely you have seen the circle of summoning below us? Only there will you be able to draw forth an unbound voidwalker.$b$bUsing these runes, you will be able to draw it forth, and then you must dominate it through strength of arms and magic.$b$bWhen it is subdued, it will be indentured to you. Come to me then, and I will elucidate the spell of summoning, so that it may serve you to whatever end you wish.",
     ["O"] = "Using the Runes of Summoning, summon and subdue a voidwalker, then return the Runes of Summoning to Carendin Halgar in the Magic Quarter of the Undercity.",
     ["T"] = "The Binding",
   },
@@ -6523,6 +6838,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Zureetha has been sending novices like yourself to help cull the numbers of the creatures in the cave near where you fought the vile familiars.$b$bI think it would be good for you to gain experience by assisting her. Be sure to tell her that you assisted with the imp problem, she\'ll probably have a reward for you.",
     ["O"] = "Speak with Zureetha Fargaze.",
     ["T"] = "Vile Familiars",
+  },
+  [1500] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Waking Naralex",
   },
   [1501] = {
     ["D"] = "So few warlocks remain... We risk much, but the risks are warranted. You must quickly reach maturity in your ability if you are to be of use to the Horde and to the Warchief.$b$bIt is time that you learned a new summoning spell.$b$bFirst, you must recover the Tablet of Verga, which was stolen by warlocks of the Burning Blade and is now kept at their lair in Skull Rock to the east of the city. With the tablet, I will show you the runes necessary to summoning a voidwalker.",
@@ -6858,6 +7178,16 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "I need brave individuals to head up to Tirisfal Glade and check out the Wickerman Festival.  I\'m not going to lie - heading up there will be dangerous.  The guards at the festival will be exceptionally vicious.  Still, we need to know how big the festival is this year, and how much trouble the Forsaken are going to cause us during Hallow\'s End.$B$BIf you\'re up for it, head to Tirisfal and scout out the festival.  Return to me with the information, and I\'ll make sure you\'re well compensated.",
     ["O"] = "Locate the Forsaken\'s Wickerman Festival in Tirisfal Glade.  Return to Sergeant Hartman in Southshore once you\'ve done so.",
     ["T"] = "Crashing the Wickerman Festival",
+  },
+  [1659] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [1660] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
   },
   [1661] = {
     ["D"] = "I greet you once again, $N. I am more proud to call you $g brother:sister; than ever before--your dedication is a tribute to us all.$B$BThe time has come for me to bestow a great gift upon you. But know this, for now I give you this freely, but later, when time permits, this will be a much greater challenge to all paladins who choose to undertake my quest.$B$BSpeak to me again and I shall grant you a great boon.",
@@ -8101,7 +8431,7 @@ pfDB["quests"]["enUS"] = {
   },
   [2741] = {
     ["D"] = "",
-    ["O"] = " ",
+    ["O"] = "",
     ["T"] = "The Super Egg-O-Matic",
   },
   [2742] = {
@@ -8434,6 +8764,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Return to Shandris Feathermoon in the Feathermoon Stronghold and report your findings.",
     ["T"] = "Return to Feathermoon Stronghold",
   },
+  [2868] = {
+    ["D"] = "Turn this badboy into some troll tomb in the Sunken Temple, and get something cool!",
+    ["O"] = "",
+    ["T"] = "<TXT> The Shriveled Heart",
+  },
   [2869] = {
     ["D"] = "The best course of action at this point is to assume that, regardless of what the naga are up to, they will eventually move to secure the island for their own.  We need to take aggressive steps to counter that threat before it is too late.$B$BBring me ten Hatecrest Scales that are in good condition; it should be obvious to you how to acquire them.  You\'ll cut your teeth on the naga for the first time, and we\'ll have a weakened naga presence on Sardor Isle - both are prospects that play to our advantage.",
     ["O"] = "Bring 10 Hatecrest Naga Scales to Latronicus Moonspear in Feathermoon Stronghold.",
@@ -8729,6 +9064,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Kill 12 Grimtotem Naturalists, 10 Grimtotem Raiders, and 6 Grimtotem Shamans before returning to Jer\'kai Moonweaver in Feralas.",
     ["T"] = "Doling Justice",
   },
+  [2971] = {
+    ["D"] = "[PH] Description",
+    ["O"] = "[PH] Log Description",
+    ["T"] = "<UNUSED>",
+  },
   [2972] = {
     ["D"] = "Out here in the wilderness, Kindal and I have meager means to reward your help, but we don\'t want you to feel unappreciated. Take my signet ring. If you ever find yourself in the boughs of Teldrassil, go to the Temple of the Moon in the heart of Darnassus. There you will find my High Priestess Tyrande Whisperwind. The ring will let her know that we are well and give credit to your story.$B$BWe both thank you, $N.",
     ["O"] = "Take Jer\'kai\'s Signet Ring to High Priestess Tyrande Whisperwind in Darnassus.",
@@ -8903,6 +9243,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "In my day, I was a seasoned hunter. There wasn\'t any creature around that I feared. Until...$B$BI was out in the forest, sharpening my blade after a tough battle, when I was ambushed. Harpies surrounded me, and I barely managed to drag myself to safety.$B$BEven now, I can still hear their cries echoing...$B$BI was never the same after that. But the hate boils inside of me -- I must get even, after all these years.$B$BThe Northspring harpies can be found to the west of here. $N, get my revenge. ",
     ["O"] = "Talo Thornhoof wants you to kill 4 Northspring Harpies, 4 Northspring Roguefeathers, 4 Northspring Windcallers, and 4 Northspring Slayers.",
     ["T"] = "Vengeance on the Northspring",
+  },
+  [3064] = {
+    ["D"] = "I need pirate hats for my shop.  Get me lots!",
+    ["O"] = "Bring 20 Untorn Pirate Hats to Yorba Screwspigot.",
+    ["T"] = "<NYI> <TXT> Pirate Hats",
   },
   [3065] = {
     ["D"] = "Ah, while you were gone a parchment came for you, $N.$B$BRead it when you have time. If I\'m not mistaken, it came from the warrior trainer Frang. He would have words with you when you\'re ready. You\'ll find him outside the Den, taking cover in the shade.",
@@ -9184,6 +9529,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Speak with Apothecary Renferrel at the Sepulcher.",
     ["T"] = "Speak with Renferrel",
   },
+  [3241] = {
+    ["D"] = "Collect the totems from Dreadmist Peak, because it\'s icky there now and no place for shiny clean totems.",
+    ["O"] = "Bring them to Tonga Runetotem.",
+    ["T"] = "<NYI> <TXT><redux> Dreadmist Peak",
+  },
   [3261] = {
     ["D"] = "Your time with me is over, $N.  To learn more, you must go to Camp Taurajo to the south and speak with Jorn Skyseer.  He will continue your guidance.",
     ["O"] = "Speak with Jorn Skyseer at Camp Taurajo.",
@@ -9319,20 +9669,70 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Defend Captain Vanessa Beltis, her crew and the Horizon Scout\'s passengers against the naga attack. Captain Vanessa Beltis must survive.",
     ["T"] = "A Crew Under Fire",
   },
+  [3383] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [3384] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [3385] = {
     ["D"] = "They call themselves the Undermarket: Cutthroat traders that will sell, move, trade and do just about anything for the right price.$B$BIt gets worse, $N. They have set up a base of operations here in the Searing Gorge. Trade Master Kovic is heading up the operation and has close ties with the Dark Iron dwarves of the region.$B$BWe must strike hard and send a message to their leadership. Slay Trade Master Kovic and his minion Clunk. Bring back his trader\'s satchel when the job is done.$B$BTo the Cauldron!",
     ["O"] = "Slay Trade Master Kovic and his minion Clunk. Retrieve the Trader\'s Satchel from his corpse and return it to Nilith.",
     ["T"] = "The Undermarket",
+  },
+  [3401] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
   },
   [3402] = {
     ["D"] = "I want you to personally deliver the news of Kovic\'s defeat to Vizzklick in Gadgetzan. He will be so happy to hear that Kovic is dead that I\'m certain he\'ll give you some grand reward.",
     ["O"] = "Speak with Vizzklick in Gadgetzan.",
     ["T"] = "The Undermarket",
   },
+  [3403] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [3404] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [3405] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [3421] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Return Trip",
+  },
+  [3422] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [3423] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [3424] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [3425] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
   },
   [3441] = {
     ["D"] = "Hear my tale, adventurer.",
@@ -9504,6 +9904,16 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Kill the leader of the Talon Den, Rynthariel the Keymaster.",
     ["T"] = "Horde Presence",
   },
+  [3515] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
+  [3516] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [3517] = {
     ["D"] = "I admit, $N, I\'ve made the most of my situation in Azshara. Belgrom\'s punishment has had its share of benefits.$B$BBefore I left, I did some research and you would be surprised how many valuable items are lying around.$B$BI\'ll tell you more about my deals, and even give you a cut of the profits, if you help me gather some of them.$B$BThere are tablets throughout the Ruins of Eldarath to the east that I need. All four are named after Highborne wizards. Get them for me and we\'ll talk some more.",
     ["O"] = "Find the Tablet of Beth\'Amara, the Tablet of Jin\'yael, the Tablet of Markri, and the Tablet of Sael\'hai before returning to Jediga in Azshara.",
@@ -9563,6 +9973,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Now it is time to capture the essence of the avatar of Hakkar.$B$BTake the Egg of Hakkar to the Sanctum of the Fallen God in the Sunken Temple in Azeroth.  Invoke the egg\'s power to stir the dead god.$B$BHe will send his minions against you.  Defeat his bloodrinkers and take their Hakkari blood, then use the blood to dowse the eternal flames that hold Hakkar\'s spirit.  When all the flames go out, the avatar of Hakkar will enter our world.$B$BDefeat him, and place his essence within the egg of Hakkar.",
     ["O"] = "Bring the Filled Egg of Hakkar to Yeh\'kinya in Tanaris.",
     ["T"] = "The God Hakkar",
+  },
+  [3529] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
   },
   [3541] = {
     ["D"] = "I have a fence in Orgrimmar. He resides in The Drag. He\'s difficult to nail down if you don\'t know where to look, but if you go looking in one of the highest buildings there you should have no problem finding him.$B$BDo me a favor though, don\'t go shouting to all of Kalimdor that he\'s there and what his business is--it\'d be bad for both of us.$B$BHe\'ll give us more than a fair price for the Tablet of Jin\'yael. I\'m not sure why, but you should have seen how excited he was to hear about its whereabouts.",
@@ -9643,6 +10058,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "The weapons are ready to be forged. You must take the tempered azsharite to one with the ability to harness fel energy.$B$BIn Stranglethorn Vale such a blacksmith exists. Galvan the Ancient, leader of the Mithril Order, will craft the weapons to your specifications. You will find his encampment between Zul\'Gurub and the Mosh\'Ogg ogre mound.$B$BMay your determination and faith carry you through this ordeal. Should you fail, know that your God smiles down upon you, mortal.",
     ["O"] = "Take the Shipment to Galvan the Ancient in Stranglethorn Vale.",
     ["T"] = "The Formation of Felbane",
+  },
+  [3622] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
   },
   [3625] = {
     ["D"] = "$N, the creation of each weapon will take some time.$B$BAdditionally, you may only use the power of the Felcurse once per three minutes. Its weakening properties against Razelikh the Defiler and his minions may be variable in duration. This is why you must release the Felcurse only when the moment is right!$B$BNow give me a moment to craft your weapon, $N.",
@@ -9969,6 +10389,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Return the journal to Williden Marshal somewhere in Un\'Goro Crater.",
     ["T"] = "Williden\'s Journal",
   },
+  [3885] = {
+    ["D"] = "Escort Me and Dadanga!",
+    ["O"] = "Escort Petra and Dadanga!",
+    ["T"] = "<NYI> <TXT> The Gadgetzan Run",
+  },
   [3901] = {
     ["D"] = "You\'ve shown your potential to the Forsaken under normal circumstances $N - now let\'s see you under pressure.$B$BThe Rattlecage skeletons, more mindless minions of the Lich King, are a tougher foe than the zombies you have faced thus far.  Again, thin their numbers and prove yourself to the Forsaken.  Do not tarry - when you are done, speak to me again.",
     ["O"] = "Kill 12 Rattlecage Skeletons, and then return to Shadow Priest Sarvis in Deathknell when you are done.",
@@ -10013,6 +10438,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Now, what\'s this? Linken... FORGOT?$B$BOh, I see... Lost his memory...$B$BWell, here is his sword. It\'s not complete, though. I know of the one that can finish it, but... speaking with him may prove difficult.$B$BListen, I know of someone that will be able to help you. It\'s too much to explain right now, but you must somehow acquire a Videre Elixir. The only one I know that can help you with that is Gregan Brewspewer. He\'s hard to track down, but last I knew he was camping in the wilds of Feralas.",
     ["O"] = "Seek out Gregan Brewspewer in northern Feralas. From him, learn how you may acquire the Videre Elixir, then return to Donova Snowden in Winterspring.",
     ["T"] = "The Videre Elixir",
+  },
+  [3911] = {
+    ["D"] = "There is work to be had for those venturing into the depths, $N.$B$BThe Dark Irons have mastered creation of extremely powerful golems.$B$BInitial reports from our spies indicate that the dwarves use a unique power source to give their creations incomparable killing power.$B$BJust imagine what we could do with our abominations if we could get our hands on this essence of the elements! Turn that city upside down if you must, but do not return until you have found the essence! Payment will be worth the risk.",
+    ["O"] = "Travel to Blackrock Depths and recover 10 Essence of the Elements. Your first inclination is to search the golems and golem makers. You remember Vivian Lagrave also muttering something about elementals.",
+    ["T"] = "The Last Element",
   },
   [3912] = {
     ["D"] = "This elixir will allow you to speak with one that you would not normally even see...$B$BTake the Videre elixir, along with Linken\'s sword, to the graveyard just outside Gadgetzan in Tanaris. Once there, drink the potion. You may be quite surprised at the results, but do not be alarmed.$B$BIn your \"other\" form, head due north until you reach the mountains. You\'ll find the one you need to speak with in one of the rocky crevices. His name is Gaeriyan.$B$BRemember, he will only speak to you in that form...",
@@ -10490,9 +10920,9 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "A Crumpled Up Note",
   },
   [4265] = {
-    ["D"] = "The pod splits opens some when you touch it, revealing a night elven male who is surprisingly still alive.  He seems to be in good health, though deeply stunned.  As you help him down from the pod, he stirs to life.$B$B\"Thank Elune - you\'ve saved me, friend!  I... I\'m Raschal, and I awoke paralyzed inside this pod after these bugs overwhelmed me.  Were you sent by the Stronghold?\"$B$BIt would seem that you\'ve found the missing courier!",
-    ["O"] = "Free Raschal from the Zukk\'ash hive.$B$BReturn to Ginro Hearthkindle in Feathermoon Stronghold and let him know that Raschal is alive and well.",
-    ["T"] = "Freed from the Hive",
+    ["D"] = "The pod splits opens some when you touch it, revealing a night elven male who is surprisingly still alive.  He seems to be in good health, though deeply stunned.  As you help him down from the pod, he stirs to life.$B$B\"Thank Elune - you\'ve saved me, friend! I... I\'m Raschal, and I awoke paralyzed inside this pod after these bugs overwhelmed me. I could use a hand getting out of here; after that, would you let the Stronghold know that I am all right? I\'ll be fine - we just need to leave, and fast!\"",
+    ["O"] = "Escort Raschal safely out of the Zukk\'ash hive.$B$BReturn to Ginro Hearthkindle in Feathermoon Stronghold and let him know that Raschal is alive and well.",
+    ["T"] = "Escaping the Hive",
   },
   [4266] = {
     ["D"] = "$N, General Shandris Feathermoon would like to speak with you personally.  No doubt she wants to thank you for your service to the Stronghold, but I do know that she also wants to talk to you about the insect creatures that you and Raschal faced in southern Feralas.  The reports of those Zukk\'ash insects are... frightening, to say the least.$B$BGeneral Feathermoon is waiting for you in the main compound.",
@@ -10594,6 +11024,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Speak to Agnar Beastamer in the Hinterlands.",
     ["T"] = "Becoming a Parent",
   },
+  [4299] = {
+    ["D"] = "Find the Tomb of the Seven, and place this PX83-Enigmatron there.  ",
+    ["O"] = "Place the PX83-Enigmatron in the Tomb of the Seven, then return to Maxwort Uberglint.",
+    ["T"] = "<NYI> <TXT>The Tomb of the Seven",
+  },
   [4300] = {
     ["D"] = "Hmm, maybe there be somethin\' you can do for the Hand now that me think \'bout it. Yes, Jes\'rimon could use your help for sure.$B$BIn Un\'Goro Crater there be raptors with deadly claws. Some of those raptors sometimes have white claws instead of ones black like death. The Hand have... clients... that like weapons crafted from these claws. Bring me many of those white claws, and me pay you good coin. Do it fast enough, and maybe me help you in other ways.",
     ["O"] = "Bring 8 White Ravasaur Claws to Jes\'rimon in Orgrimmar.",
@@ -10613,6 +11048,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "We need to get out of here, $N. Help me get my gear back from the supply area and free my friends. If we make it out of here, you are to proceed to Morgan\'s Vigil and speak with Marshal Maxwell. He will give you further instruction.",
     ["O"] = "Help Marshal Windsor get his gear back and free his friends. Return to Marshal Maxwell if you succeed.",
     ["T"] = "Jail Break!",
+  },
+  [4323] = {
+    ["D"] = "I want some Hyena Pelts, and only the best will do!  Get me spotted Hyena pelts and I\'ll give you phat lewtz, yo.",
+    ["O"] = "Bring 7 Spotted Hyena Pelts to TESTTAUREN at Freewind Post.",
+    ["T"] = "<NYI> <TXT> Get those Hyenas!!!",
   },
   [4324] = {
     ["D"] = "Although my little brother Ribbly has been worthless his whole life, I think, finally, he has some value!  But... we might need your help to capitalize on Ribbly\'s newfound worth.$B$BMy sister Yuka has been looking for him for weeks, and tracked him to the Burning Steppes.  She sent word to me, asking for some hired hands.$B$BSo, what do you say?  Want to help?  If so, then speak with my sister.  You\'ll find her holed up in Flame Crest, a cave northwest of Dreadmaul Rock.",
@@ -11379,6 +11819,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Escort Lakota Windsong from the Darkcloud Pinnacle, and then talk to Thalia Amberhide at Freewind Post.",
     ["T"] = "Free at Last",
   },
+  [4905] = {
+    ["D"] = "Defend Kanati Greycloud against the Centaur Assassins.",
+    ["O"] = "Defend Kanati Greycloud",
+    ["T"] = "<UNUSED>",
+  },
   [4906] = {
     ["D"] = "A second encampment of satyrs threatens the land of Felwood towards the north, led by the cruel Xavaric. The vile betrayers and tricksters feed upon the corruption of the native creatures of Felwood.$B$BXavathras and his minions were only part of a larger plan -- to cultivate a corrupted moonwell, and then provide the spoils to Xavaric.$B$BNow that Xavathras is out of the way, finish this task, $N. Head to the north and defeat Xavaric.",
     ["O"] = "Eridan Bluewind in Felwood wants you to kill 8 Jadefire Hellcallers, 8 Jadefire Betrayers, 8 Jadefire Tricksters, and Xavaric. Return to Eridan when the task is completed.",
@@ -11599,6 +12044,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Bring a Blood Shard to Mangletooth in Camp Taurajo in the Barrens.$B$BCollect more Blood Shards if you want him to bless you with Agamaggan\'s power.",
     ["T"] = "Blood Shards of Agamaggan",
   },
+  [5053] = {
+    ["D"] = "This quest will send you mail to your mail box. Just hit complete.",
+    ["O"] = "Test quest to see if mail is sent to your mailbox. Just hit complete, then go check your mail.$B$BHave a nice day.",
+    ["T"] = "<UNUSED>",
+  },
   [5054] = {
     ["D"] = "In the snowy mountains of Winterspring, a skilled hunter stalks his prey... I speak of Ursius of the shardtooth bears, an agile and clever beast.$B$BI send you now against him. He roams the sloping hills to the west of Everlook. Find and hunt him, before he discovers your intent.$B$BAll that have gone up against Ursius have quickly found themselves to be the prey, and he, the hunter. Stay on your guard.",
     ["O"] = "Storm Shadowhoof at Bloodvenom Post in Felwood wants you to kill Ursius.",
@@ -11764,6 +12214,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Using the Beacon Torch, mark each tower in Andorhal; you will need to stand in the doorway of the tower to successfully mark it.$B$BOnce all four towers are marked, return the Beacon Torch to High Executor Derrington at the Bulwark, Western Plaguelands.",
     ["T"] = "All Along the Watchtowers",
   },
+  [5101] = {
+    ["D"] = "Bah! What do think this is, some kind of Test Quest? I be there even be typos in it!$B$BIf ya be thinkin\' my quest is goin\' ta be easy, then ya got another thing coming!$B$BKill me ten sheep (1933) and don\'t come back until you do!",
+    ["O"] = "Kill 6 sheep for Benny and then run like hell!$B$B$B$B$BJust kidding... about the running part.",
+    ["T"] = "Lee\'s Ultimate Test Quest... of Doom!",
+  },
   [5102] = {
     ["D"] = "We battle against these beasts on two fronts: From our capital of Stormwind we fight them from the inside out and here, in the Burning Steppes, we take the battle to their doorstep. We must be vigilant, $N. None should be spared our wrath as none of our own were spared when they struck at our homes and families.$B$BFind this General Drakkisath and destroy him!$B$BThe task certainly will not be a simple one, but the rewards shall be extravagant.",
     ["O"] = "Travel to Blackrock Spire and destroy General Drakkisath. Return to Marshal Maxwell when the job is done.",
@@ -11831,7 +12286,7 @@ pfDB["quests"]["enUS"] = {
   },
   [5144] = {
     ["D"] = "Elemental leatherworking is what I know, and if you\'re willing to open your mind to the greater powers of substance, I will share with you all there is to learn.$B$BKnow this, $c: by choosing this path you agree never to learn dragonscale or tribal leatherworking; there is only room for practice of one of the three arts.  Furthermore, I\'ll need adequate proof that you are in tune with the elements of nature; to that end, bring me the purest essences of fire, water, earth, and wind.",
-    ["O"] = "Bring 2 Heart of Fire, 2 Globe of Water, 2 Core of Earth, and 2 Breath of Wind to Sarah Tanner in Searing Gorge.$B$BCompleting this quest will give you access to the Elemental Leatherworking arts.$B$BThe completion of this quest will prevent you from learning Dragonscale Leatherworking and Tribal Leatherworking; be sure this is the path you wish to follow before doing so.",
+    ["O"] = "Bring 4 Heart of Fire, 4 Globe of Water, 4 Core of Earth, and 4 Breath of Wind to Sarah Tanner in Searing Gorge.$B$BCompleting this quest will give you access to the Elemental Leatherworking arts.$B$BThe completion of this quest will prevent you from learning Dragonscale Leatherworking and Tribal Leatherworking; be sure this is the path you wish to follow before doing so.",
     ["T"] = "Elemental Leatherworking",
   },
   [5145] = {
@@ -11841,7 +12296,7 @@ pfDB["quests"]["enUS"] = {
   },
   [5146] = {
     ["D"] = "Elemental leatherworking is what I know, and if you\'re willing to open your mind to the greater powers of substance, I will share with you all there is to learn.$B$BKnow this, $c: by choosing this path you agree never to learn dragonscale or tribal leatherworking; there is only room for practice of one of the three arts.  Furthermore, I\'ll need adequate proof that you are in tune with the elements of nature; to that end, bring me the purest essences of fire, water, earth, and wind.",
-    ["O"] = "Bring 2 Heart of Fire, 2 Globe of Water, 2 Core of Earth, and 2 Breath of Wind to Brumn Winterhoof in the Arathi Mountains.$B$BCompleting this quest will give you access to the Elemental Leatherworking arts.$B$BThe completion of this quest will prevent you from learning Dragonscale Leatherworking and Tribal Leatherworking; be sure this is the path you wish to follow before doing so.",
+    ["O"] = "Bring 4 Heart of Fire, 4 Globe of Water, 4 Core of Earth, and 4 Breath of Wind to Brumn Winterhoof in the Arathi Mountains.$B$BCompleting this quest will give you access to the Elemental Leatherworking arts.$B$BThe completion of this quest will prevent you from learning Dragonscale Leatherworking and Tribal Leatherworking; be sure this is the path you wish to follow before doing so.",
     ["T"] = "Elemental Leatherworking",
   },
   [5147] = {
@@ -11979,10 +12434,30 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Return to Jaedenar and kill the succubus Rakaiah before finding the Remains of Trey Lightforge.",
     ["T"] = "Retribution of the Light",
   },
+  [5205] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [5206] = {
     ["D"] = "Chromie said the relics you gathered are reagents to a powerful spell, and one more is required: skulls from the scourge who took part in the battle of Darrowshire.$B$BTake this crystal and hunt scourge champions for their skulls.  The crystal is enchanted; if a champion took part in the battle, then when you pass the crystal over its skull it will resonate.  Bring me those resonating skulls.$B$BGo, $N.  You\'ll find scourge champions in the Noxious Glade to the north and the Fungal Vale to the west.",
     ["O"] = "Bring 5 Resonating Skulls and the Mystic Crystal to Carlin Redpath in Eastern Plaguelands.",
     ["T"] = "Marauders of Darrowshire",
+  },
+  [5207] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<NYI> <TXT> The True Summoner",
+  },
+  [5208] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<NYI> <TXT> The Blessing of Evil",
+  },
+  [5209] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
   },
   [5210] = {
     ["D"] = "The Annals of Darrowshire, through my magic, has gained pages at its end, and now it extends its history beyond the battle.  One of the extra passages tells of another Redpath, Carlin, who survived Joseph\'s betrayal.  Carlin\'s now in the Plaguelands to the east, at the Light\'s Hope Chapel.$B$BTake the book and speak with him.",
@@ -12304,6 +12779,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Find Doctor Theolen Krastinov inside the Scholomance. Destroy him, then burn the Remains of Eva Sarkhoff and the Remains of Lucien Sarkhoff. Return to Eva Sarkhoff when the task is complete.",
     ["T"] = "Doctor Theolen Krastinov, the Butcher",
   },
+  [5383] = {
+    ["D"] = "You open the bag to discover various instruments of torture. Amidst the paraphernalia, an odd object catches your eye: A vial of blood - still warm to the touch.$B$BYou think that the Sarkhoff\'s might be interested in your discovery.",
+    ["O"] = "Take the Bag of Horrors to Eva Sarkhoff on Caer Darrow.",
+    ["T"] = "Krastinov\'s Bag of Horrors",
+  },
   [5384] = {
     ["D"] = "This is it, $N.$B$B<Eva points to the vial inside the bag.>$B$BThe blood of innocents. The purest blood, used to appease Krastinov\'s master.$B$BIt is with this blood that Kirtonos may be summoned. It is with this blood, then, that Kirtonos must be destroyed.$B$BTake the blood to the porch. Place it upon the brazier. Kirtonos will come - he cannot resist. When he appears, unleash the fury and wrath of a thousand innocent deaths upon him.$B$BShould you succeed, you will earn more than just our gratitude.",
     ["O"] = "Return to the Scholomance with the Blood of Innocents. Find the porch and place the Blood of Innocents in the brazier. Kirtonos will come to feast upon your soul.$B$BFight valiantly, do not give an inch! Destroy Kirtonos and return to Eva Sarkhoff.",
@@ -12434,6 +12914,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["T"] = "The Key to Scholomance",
   },
+  [5506] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [5507] = {
     ["D"] = "Your service to the Argent Dawn is to be commended, $N.  You are truly revered amongst us.  I have been authorized to make available for you to purchase one of the Dawn\'s most valued items - our magic resistance mantles.$B$BApplication of a mantle to your existing shoulder piece will enhance your resistance to the powers of magic in one of five potential ways.  As a sign of continued dedication to our cause, I ask for no less than ten of our valor tokens in exchange for access to these mantles.",
     ["O"] = "Bring 10 Argent Dawn Valor Tokens to Quartermaster Lightspark at Chillwind Camp, Western Plaguelands.",
@@ -12459,6 +12944,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["T"] = "The Key to Scholomance",
   },
+  [5512] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [5513] = {
     ["D"] = "Your service to the Argent Dawn is to be commended, $N.  You are truly revered amongst us.  I have been authorized to make available for you to purchase one of the Dawn\'s most valued items - our magic resistance mantles.$B$BApplication of a mantle to your existing shoulder piece will enhance your resistance to the powers of magic in one of five potential ways.  As a sign of continued dedication to our cause, I ask for no less than ten of our valor tokens in exchange for access to these mantles.",
     ["O"] = "Bring 10 Argent Dawn Valor Tokens to Quartermaster Breechlock at Light\'s Hope Chapel, Eastern Plaguelands.",
@@ -12473,6 +12963,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "A great weight has been lifted from our hearts, $N, but your task is not yet complete. Krastinov\'s master, Kirtonos, still lives.$B$BBefore you may face Kirtonos, however, you must first secure a method in which to summon him.$B$BIt is said that Jandice Barov stewards the blood of innocents from Krastinov to Kirtonos.$B$BFind her in the sunken catacombs of Scholomance and strike her down. Bring back any clues that you may find.",
     ["O"] = "Locate Jandice Barov in the Scholomance and destroy her. From her corpse recover Krastinov\'s Bag of Horrors. Return the bag to Eva Sarkhoff.",
     ["T"] = "Krastinov\'s Bag of Horrors",
+  },
+  [5516] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
   },
   [5517] = {
     ["D"] = "$G Brother : Sister; $N - your deeds on behalf of the Argent Dawn are far too numerous to be recounted easily.  As a fitting tribute, I\'ll part with one of our special Chromatic Mantles of the Dawn - a version that protects the wearer from all forms of resistible magic simultaneously.  Chromatic Mantles of the Dawn are reserved for only the mightiest of the Dawn\'s heroes!$B$BBring to me twenty-five valor tokens as a sign of tribute, and I\'ll give you the finest of all our mantles.",
@@ -12489,6 +12984,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["T"] = "The Gordok Ogre Suit",
   },
+  [5520] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [5521] = {
     ["D"] = "$G Brother : Sister; $N - your deeds on behalf of the Argent Dawn are far too numerous to be recounted easily.  As a fitting tribute, I\'ll part with one of our special Chromatic Mantles of the Dawn - a version that protects the wearer from all forms of resistible magic simultaneously.  Chromatic Mantles of the Dawn are reserved for only the mightiest of the Dawn\'s heroes!$B$BBring to me twenty-five valor tokens as a sign of tribute, and I\'ll give you the finest of all our mantles.",
     ["O"] = "Bring 25 Argent Dawn Valor Tokens to Quartermaster Lightspark at Chillwind Camp, Western Plaguelands.",
@@ -12499,9 +12999,14 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Bring the Frozen Eggs to Leonid Barthalomew in the Eastern Plaguelands.",
     ["T"] = "Leonid Barthalomew",
   },
+  [5523] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [5524] = {
     ["D"] = "$G Brother : Sister; $N - your deeds on behalf of the Argent Dawn are far too numerous to be recounted easily.  As a fitting tribute, I\'ll part with one of our special Chromatic Mantles of the Dawn - a version that protects the wearer from all forms of resistible magic simultaneously.  Chromatic Mantles of the Dawn are reserved for only the mightiest of the Dawn\'s heroes!$B$BBring to me twenty-five valor tokens as a sign of tribute, and I\'ll give you the finest of all our mantles.",
-    ["O"] = "Bring 25 Argent Dawn Valor Tokens to Quartermaster Hasana at the Bulwark or Quartermaster Lightspark at Chillwind Camp, Western Plaguelands or Quartermaster Breechlock at Light\'s Hope Chapel, Eastern Plaguelands.",
+    ["O"] = "Bring 25 Argent Dawn Valor Tokens to Quartermaster Hasana at the Bulwark, Western Plaguelands.",
     ["T"] = "Chromatic Mantle of the Dawn",
   },
   [5525] = {
@@ -12529,10 +13034,20 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Kill 20 Plagued Hatchlings, then return to Betina Bigglezink at the Light\'s Hope Chapel.",
     ["T"] = "Plagued Hatchlings",
   },
+  [5530] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<NYI> <TXT> Necklace of the Dawn",
+  },
   [5531] = {
     ["D"] = "The eggs you brought were to be used in Scourge experiments to create a plagued dragonflight.  These frozen black dragon eggs would have been invaluable in their studies, and would have assuredly quickened their timetable.$B$BNow, it is time we ended their research.$B$BTake the frozen eggs to Betina Bigglezink outside.  She is well-learned in science and alchemy, and has produced a weapon we can use against the Scourge.  With your help, we will deal them a heavy blow.",
     ["O"] = "Bring the Frozen Eggs to Betina Bigglezink.",
     ["T"] = "Betina Bigglezink",
+  },
+  [5532] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<NYI> <TXT> Ring of the Dawn",
   },
   [5533] = {
     ["D"] = "On the island of Caer Darrow lies Scholomance - a wretched center of Scourge necromancy and evil.  Our enemy dwells within, conducting unspeakable acts of depravity on unwitting victims... at least, we surmise as much.  A door bars the way, and try as we might no entry is to be had without a proper key.$B$BAlchemist Arbington is well versed on Scholomance, and has an idea how to obtain a key.  You have proved your worth to me, and now I entrust this task to you.  Speak with him on this matter.",
@@ -12705,7 +13220,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Desperate Prayer",
   },
   [5640] = {
-    ["D"] = "Praise be to Elune, and to your Light, $n.$b$bAbout this time, many of our order learn abilities reflecting their faith in Elune. If knowledge serves me, I believe the same holds true for your order also.$b$bWhen your business in Darnassus is complete, I would seek out one of your High Priestesses for further training., and may the Light be with you.",
+    ["D"] = "Praise be to Elune, and to your Light, $N.$B$BAbout this time, many of our order learn abilities reflecting their faith in Elune. If knowledge serves me, I believe the same holds true for your order also.$B$BWhen your business in Darnassus is complete, I would seek out one of your High Priestesses for further training.",
     ["O"] = "Speak to High Priestess Laurena in Stormwind.",
     ["T"] = "Desperate Prayer",
   },
@@ -12740,7 +13255,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Devouring Plague",
   },
   [5647] = {
-    ["D"] = "Your race is so very strong, $n. We are proud to call you allies. And as each day\'s sun sets, you and your kin grow closer to not only finding your true origins, but find great confidence that you are on the right path in so many things. That feeling must make you feel so triumphant.$b$bWord came from Ironforge just recently. It asked that you return there and speak to High Priest Rohan in the Mystic Ward. I would not keep him waiting. May Elune guide your travels.",
+    ["D"] = "Your race is so very strong, $N. We are proud to call you allies. And as each day\'s sun sets, you and your kin grow closer to not only finding your true origins, but find great confidence that you are on the right path in so many things. That feeling must make you feel so triumphant.$B$BWord came from Ironforge just recently. It asked that you return there and speak to High Priest Rohan in the Mystic Ward. I would not keep him waiting. May Elune guide your travels.",
     ["O"] = "Speak to High Priest Rohan in Ironforge.",
     ["T"] = "A Lack of Fear",
   },
@@ -12960,13 +13475,13 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Fire Plume Forged",
   },
   [5803] = {
-    ["D"] = "Araj the Summoner lords over Andorhal from the ruined city\'s heart.  We know that he was the former leader of Scholomance before claiming the city as his own.  To finish the key, we will need his signet - called a scarab - mounted as the head of the key.$B$BMake your way into the heart of Andorhal, and break his hold on the city now that he is drawn into the open.  Once destroyed, seize his scarab from his fallen phylactery!$B$BThe Key to Scholomance awaits, $N!",
-    ["O"] = "Destroy Araj the Summoner and bring Araj\'s Scarab to Alchemist Arbington at Chillwind Point, Western Plaguelands.",
+    ["D"] = "Araj the Summoner lords over Andorhal from an obfuscated vantage.  We know that he was the former leader of Scholomance before claiming the city as his own.  To finish the key, we will need his signet - called a scarab - mounted as the head of the key.$B$BIn the city are four summoning crystals, one in each tower you marked for us previously.  Destroy all four crystals and break his hold on the city, drawing him into the open.  Once destroyed, seize his scarab from his fallen phylactery!",
+    ["O"] = "Destroy the four Scourge Summoning Crystals inside Andorhal to call forth Araj the Summoner.  Destroy Araj the Summoner and bring Araj\'s Scarab to Alchemist Arbington at Chillwind Point, Western Plaguelands.",
     ["T"] = "Araj\'s Scarab",
   },
   [5804] = {
-    ["D"] = "Araj the Summoner lords over Andorhal from the ruined city\'s heart.  We know that he was the former leader of Scholomance before claiming the city as his own.  To finish the key, we will need his signet - called a scarab - mounted as the head of the key.$B$BMake your way into the heart of Andorhal, and break his hold on the city now that he is drawn into the open.  Once destroyed, seize his scarab from his fallen phylactery!$B$BThe Key to Scholomance awaits, $N!",
-    ["O"] = "Destroy Araj the Summoner and bring Araj\'s Scarab to Apothecary Dithers at the Bulwark, Western Plaguelands.",
+    ["D"] = "Araj the Summoner lords over Andorhal from an obfuscated vantage.  We know that he was the former leader of Scholomance before claiming the city as his own.  To finish the key, we will need his signet - called a scarab - mounted as the head of the key.$B$BIn the city are four summoning crystals, one in each tower you marked for us previously.  Destroy all four crystals and break his hold on the city, drawing him into the open.  Once destroyed, seize his scarab from his fallen phylactery!",
+    ["O"] = "Destroy the four Scourge Summoning Crystals inside Andorhal to call forth Araj the Summoner.  Destroy Araj the Summoner and bring Araj\'s Scarab to Apothecary Dithers at the Bulwark, Western Plaguelands.",
     ["T"] = "Araj\'s Scarab",
   },
   [5805] = {
@@ -13532,7 +14047,7 @@ pfDB["quests"]["enUS"] = {
   [6143] = {
     ["D"] = "Maybe you heard or maybe you haven\'t... my crew and I was out fishing near Ranazjar Isle, north of the wrecked ship off the coast up north. We used to fish there all the time; now all I do is think of a way to seek revenge for my fallen comrades.$B$BThe naga attacked us one morning, killing everyone except me.$B$BMe conscience can\'t handle the guilt, $c; I need you to go and fry them naga for me. I\'ll make the effort worth your while; you think you can help me with that?",
     ["O"] = "Slay 7 Slitherblade Myrmidon, 7 Slitherblade Naga, and 5 Slitherblade Sorceresses, and then talk to Drulzegar at Shadowprey in Desolace.",
-    ["T"] = "Other Fish to Fry",
+    ["T"] = "Other Fish to Fry ",
   },
   [6144] = {
     ["D"] = "The order has come down, $c. Varimathras himself has requested that I send my most \'capable\' agents back to the Undercity for a highly sensitive tactical operation.$B$BUnfortunately, my most capable agents were killed over three years ago. In their stead I have a collection of brain dead riff-raff.$B$B<Nathanos stares coldly at you.>$B$BTravel to the Undercity at once and report to Varimathras. Do not embarrass me, $c!",
@@ -13580,9 +14095,9 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Augustus\' Receipt Book",
   },
   [6165] = {
-    ["D"] = "The details about this quest are missing",
-    ["O"] = "The description of this quest is missing",
-    ["T"] = "Archmage Timolain\'s Remains",
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<NYI> <TXT> Archmage Timolain\'s Remains",
   },
   [6181] = {
     ["D"] = "Although we don\'t get much aid from Stormwind directly, I do have a contact in the city who helps supply us with armor.  His name is Osric Strang.  His shop, Limited Immunity, is in the Old Town of Stormwind.$B$BOur supply of armor dwindles, and I must contact Osric for more.  Can you take him this note?$B$BThe fastest way to Stormwind is through Thor, our gryphon master.  He\'s just down the hill; bring him my note, and then take a gryphon to Stormwind.",
@@ -13618,6 +14133,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Do you know how many ranger lords exist in this world? How many human ranger lords have ever existed?$B$BNathanos\' accomplishments were unprecedented. He was a tactical genius, responsible for Alliance victories spanning a decade of conflict.$B$BAnd now... the champion of the Forsaken.$B$BNo. This cannot be. Order must be restored.$B$BGather an army, $N. Return to the Plagues with your army and destroy the Blightcaller.$B$BI wish you luck, $N. Truly, you will need it for this battle.",
     ["O"] = "Assemble an army and travel to the Eastern Plaguelands. Launch a full assault on Nathanos Blightcaller and any Horde filth that may attempt to protect him.$B$BKeep your wits about you, $N. The Horde will defend the ranger lord with their very lives.",
     ["T"] = "Order Must Be Restored",
+  },
+  [6201] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED> The Legacy of the Ashbringer",
   },
   [6221] = {
     ["D"] = "There is a camp of Deadwood furbolgs directly to our southwest.  Corruption permeates the camp, and I wish to put an end to it before they become a problem.$B$BThe Deadwood tribe is evil, but it is the effects of the fel that pollutes their minds.  Their hostility is not truly an innate quality, yet they cannot be helped.  For this reason, I am deeply saddened by having to fight my own brethren.$B$BPlease, $N, do what must be done, and do not mention the details; they upset me far too much.",
@@ -13820,7 +14340,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Great Masquerade",
   },
   [6421] = {
-    ["D"] = "Something is amiss here in Stonetalon. Can you feel the tension in the air, $N?$B$BSoutheast of here lies a deep cave in Boulderslide Ravine. The kobolds there are frantically mining a rare crystal called Resonite. I need you to bring back some ore samples so that I can understand what\'s happening in that cave.  I also need you to investigate the depth of that cave.$B$BGo young $c, it\'s imperative I know what evil lurks under these mountains.",
+    ["D"] = "Something is amiss here in Stonetalon. Can you feel the tension in the air, $N?$B$BSouth of here lies a deep cave in Boulderslide Ravine. The kobolds there are frantically mining a rare crystal called Resonite. I need you to bring back some ore samples so that I can understand what\'s happening in that cave.  I also need you to investigate the depth of that cave.$B$BGo young $c, it\'s imperative I know what evil lurks under these mountains.",
     ["O"] = "Explore deep into the cave at Boulderslide Ravine and bring back 10 Resonite Crystals for Mor\'rogal at Sun Rock Retreat to investigate.",
     ["T"] = "Boulderslide Ravine",
   },
@@ -14244,6 +14764,16 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["T"] = "Call of Air - Mulverick\'s Fleet",
   },
+  [6841] = {
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<UNUSED>",
+  },
+  [6842] = {
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<UNUSED>",
+  },
   [6844] = {
     ["D"] = "There\'s plenty to do here still, but I think taking this back to the Circle for analysis is key.  Trust me - the work will still be here once this is all said and done.  If it\'s a journal inside this sticky chitin, then the Circle would finally have a window into the past!$B$BTake this to the Circle\'s archivist in Nighthaven.  His name is Umber, and the man\'s brilliant.  Touched, sure, but brilliant nonetheless!  Umber\'s salvaged tomes in far worse shape than this.  If it can be saved, he can do it.",
     ["O"] = "Take the Encrusted Silithid Object to Umber - the Cenarion Circle\'s archivist - in the village of Nighthaven, Moonglade.",
@@ -14270,13 +14800,13 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Master Ryson\'s All Seeing Eye",
   },
   [6861] = {
-    ["D"] = "",
-    ["O"] = "",
+    ["D"] = "I\'m as anxious as you are to try out my portable shredder unit, $r, but before I can make the kit, I\'m going to need materials - lots of materials!$B$BTo be exact, I\'m going to need a mountain of thorium, mithril, and iron. I will also need one steamsaw per unit. You\'ll have to get those at the lumber mill.$B$BWhen I was nosing around in here (before my capture) I noticed a pile of steamsaws at the Stormpike lumber camp.",
+    ["O"] = "Master Engineer Zinfizzlex wants you to bring him the following:$B$B*30 Thorium Bars.$B$B*50 Mithril Bars.$B$B*75 Iron bars.$B$B*1 Steamsaw.",
     ["T"] = "Zinfizzlex\'s Portable Shredder Unit",
   },
   [6862] = {
-    ["D"] = "",
-    ["O"] = "",
+    ["D"] = "I\'m as anxious as you are to try out my portable shredder unit, $r, but before I can make the kit, I\'m going to need materials - lots of materials!$B$BTo be exact, I\'m going to need a mountain of thorium, mithril, and iron. I will also need one steamsaw per unit. You\'ll have to get those at the lumber mill.$B$BWhen I was nosing around in here (before my capture) I noticed a pile of steamsaws at the Frostwolf lumber camp.",
+    ["O"] = "Master Engineer Zinfizzlex wants you to bring him the following:$B$B*30 Thorium Bars.$B$B*50 Mithril Bars.$B$B*75 Iron bars.$B$B*1 Steamsaw.",
     ["T"] = "Zinfizzlex\'s Portable Shredder Unit",
   },
   [6881] = {
@@ -14352,7 +14882,7 @@ pfDB["quests"]["enUS"] = {
   [6984] = {
     ["D"] = "We at Smokywood Pastures appreciate the recovery of the stolen treats, $N.  For that, we\'d like to offer you a special gift... presented by none other than Great-father Winter himself!$B$BPlease, speak with Great-father Winter, and he will give you your Feast of Winter Veil gift from us here at Smokywood Pastures.  From our farm to your plate, it\'s always Smokywood Pastures wholesome goodness... thanks to you, of course!",
     ["O"] = "Speak with Great-father Winter in Orgrimmar.",
-    ["T"] = "A Smokywood Pastures Thank You!",
+    ["T"] = "A Smokywood Pastures\' Thank You!",
   },
   [6985] = {
     ["D"] = "The Stormpike dwarves are using the Irondeep mine as a storage depot.  I want you to raid that mine and bring me its supplies.  This will curtail the Stormpikes\' efforts in Alterac Valley, and will provide us with needed equipment!$B$BBe wary, $N.  The Irondeep mine is deep in Alliance territory, and control of the mine is as shifting as the snows of Alterac.",
@@ -14365,8 +14895,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Empty Stables",
   },
   [7002] = {
-    ["D"] = "While some of our soldiers are busy capturing wolves for the stable master, others must provide for the simple necessities that riding requires. I am speaking of riding harnesses, of course.$B$BYou must strike at the indigenous rams of the region. The very same rams that the Stormpike cavalry uses as mounts!$B$BSlay them and return to me with their hides. Once we have gathered enough hides, we will fashion harnesses for the riders. The Frostwolf Wolf Riders will ride once more!",
-    ["O"] = "null",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Ram Hide Harnesses",
   },
   [7003] = {
@@ -14401,7 +14931,7 @@ pfDB["quests"]["enUS"] = {
   },
   [7026] = {
     ["D"] = "",
-    ["O"] = "null",
+    ["O"] = "",
     ["T"] = "Ram Riding Harnesses",
   },
   [7027] = {
@@ -14442,7 +14972,7 @@ pfDB["quests"]["enUS"] = {
   [7045] = {
     ["D"] = "We at Smokywood Pastures appreciate the recovery of the stolen treats, $N.  For that, we\'d like to offer you a special gift... presented by none other than Greatfather Winter himself!$B$BPlease, speak with Greatfather Winter, and he will give you your Feast of Winter Veil gift from us here at Smokywood Pastures.  From our farm to your plate, it\'s always Smokywood Pastures wholesome goodness... thanks to you, of course!",
     ["O"] = "Speak with Greatfather Winter in Ironforge.",
-    ["T"] = "A Smokywood Pastures Thank You!",
+    ["T"] = "A Smokywood Pastures\' Thank You!",
   },
   [7046] = {
     ["D"] = "My scepter was once a source of hope for me. Its power allowed me the freedom to travel quickly through these caverns. I had hoped to bring peace to the spirit of my uncle... It is a task that I now pass to you.$B$BFor the two parts to once again become one, I will need your assistance in performing the ritual. Please follow me, and listen to my instructions while I channel the energy required to reunite the rod with the diamond.$B$BTogether, we shall create the Scepter of Celebras once again!",
@@ -14488,6 +15018,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Strong magics be found in the centaur holy place... the holy place of Maraudon. The Desolace tribes of centaur protect that place wit\' their lives, but they canna stop us from takin\' what we need.$B$BYou, you head to this Maraudon place and find the rock creatures made of shadowshard. You bring me the purple crystals, and Uthel\'nay make you somethin\' for your time.$B$BThe place be dangerous, so maybe you be bringing some friends.",
     ["O"] = "Collect 10 Shadowshard Fragments from Maraudon and return them to Uthel\'nay in Orgrimmar.",
     ["T"] = "Shadowshard Fragments",
+  },
+  [7069] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
   },
   [7070] = {
     ["D"] = "I\'ve recently begun testing various crystals and their arcane properties. Lady Proudmoore has given me leave to ask travelers heading into Desolace to seek out a place called Maraudon. Within the ruined temple are great elementals composed of purplish stones I\'ve named shadowshards.$B$BIf you decide to head that direction and find some of the crystals, I would be very thankful. I could even fashion you a trinket from them if you so desired.",
@@ -14619,6 +15154,16 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "According to legend, the leader of the mighty Winterax trolls appears at will to wreak havoc on the denizens of Alterac Valley.$B$BShould Korrak make himself known, destroy him and return to Lieutenant Haggerdin in the Alterac Mountains.",
     ["T"] = "Korrak the Bloodrager",
   },
+  [7221] = {
+    ["D"] = "Ah, $N, reporting for duty are you?  Great, the Stormpikes can use everyone we can muster!$B$BSpeak with Prospector Stonehewer in Dun Baldar.  She\'s recruiting for a vital mission into enemy territory.  You\'ll find Stonehewer in the bottom of the Dun Baldar garrison.$B$BAnd keep an eye out as you go through Dun Baldar.  There\'s plenty to do for a hardworking $c who\'s not afraid to get $ghis:her; hands dirty.",
+    ["O"] = "Speak with Prospector Stonehewer in the Dun Baldar garrison.",
+    ["T"] = "Speak with Prospector Stonehewer",
+  },
+  [7222] = {
+    ["D"] = "A $c?  Good!  We are glad to see you in Alterac, $N.  Interloping dwarves and their allies invade our valley, and we welcome all in the Horde to join us in righteous slaughter!$B$BSpeak with Voggah Deathgrip.  He is looking for agents for an important mission into the Alliance\'s stronghold in Alterac Valley!$B$BYou will find Voggah in Frostwolf Keep.",
+    ["O"] = "Speak with Voggah in Frostwolf Keep.",
+    ["T"] = "Speak with Voggah Deathgrip",
+  },
   [7223] = {
     ["D"] = "Battles rage constantly in Alterac Valley, and the supplies we get from Ironforge are not enough to outfit our experienced troops.$B$BIf you find armor scraps from the battlefield, aid the war effort and bring those scraps to me!",
     ["O"] = "Bring 20 Armor Scraps to Murgot Deepforge in Dun Baldar.",
@@ -14725,18 +15270,18 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Korrak the Everliving",
   },
   [7383] = {
-    ["D"] = "All was not well with Teldrassil, however. Staghelm\'s carefully made plans for the new World Tree had borne out as he had hoped, but there was one small problem, a problem to which many of the troubles on Teldrassil may be attributed.$B$BHowever, I will not get into that yet. You must visit the last moonwell, to the northwest in the Oracle Glade. Under the boughs of the Oracle Tree lies the first and most powerful of our wells. Retrieve a phial of its water and return to me.",
+    ["D"] = "All was not well with Teldrassil, however. Staghelm\'s carefully made plans for the new World Tree had borne out as he had hoped, but there was one small problem, a problem to which many of the troubles on Teldrassil may be attributed.$b$bHowever, I will not get into that yet. You must visit the last moonwell, to the northwest in the Oracle Glade. Under the boughs of the Oracle Tree lies the first and most powerful of our wells. Retrieve a phial of its water and return to me.",
     ["O"] = "Fill the Amethyst Phial and bring it back to Corithras Moonrage in Dolanaar.",
     ["T"] = "Crown of the Earth",
   },
   [7385] = {
-    ["D"] = "You have the option of offering larger quantities of the blood taken from our enemies. I will be glad to accept gallon sized offerings, $N.",
-    ["O"] = "null",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "A Gallon of Blood",
   },
   [7386] = {
-    ["D"] = "There are times which you may be entrenched in battle for days or weeks on end. During those longer periods of activity you may end up collecting large clusters of the Frostwolf\'s storm crystals.$B$BThe Circle accepts such offerings, $N.",
-    ["O"] = "null",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Crystal Cluster",
   },
   [7401] = {
@@ -15270,9 +15815,14 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Material Assistance",
   },
   [7668] = {
-    ["D"] = "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to call forth Darkreaver\'s spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage done to the spirit realm!",
+    ["D"] = "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to call forth Darkreaver\'s spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage dome to the spirit realm!",
     ["O"] = "Use the Divination Scryer in the heart of the Great Ossuary\'s basement in the Scholomance.  Doing so will bring forth spirits you must fight.  Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.$B$BBring Darkreaver\'s Head to Sagorne Creststrider in the Valley of Wisdom, Orgrimmar.",
     ["T"] = "The Darkreaver Menace",
+  },
+  [7669] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Again Into the Great Ossuary",
   },
   [7670] = {
     ["D"] = "The time has come, $N, for you to learn about what it will take for you to acquire something you have no doubt waited on for some time... your charger.$B$BSpeak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.  It is he who will guide you not only though the legerdemain of a Paladin\'s most trusted mount, but the tasks before you to acquire one of your own.$B$BI wish you the best in this trial.  For the Light, noble $G brother : sister;!",
@@ -15319,6 +15869,16 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["T"] = "Palomino Exchange",
   },
+  [7681] = {
+    ["D"] = "Cast feed pet on your pet.",
+    ["O"] = "Feed your pet, then talk to your questgiver.",
+    ["T"] = "Hunter test quest",
+  },
+  [7682] = {
+    ["D"] = "Cast feed pet on your pet.",
+    ["O"] = "Feed your pet, then talk to your questgiver.",
+    ["T"] = "Hunter test quest2",
+  },
   [7701] = {
     ["D"] = "By order o\' \'is eminence, Overseer Oilfist, the rogue Thorium Brotherhood agent an\' newly hired commander o\' the Dark Iron Slag Pit crew o\' the Cauldron, Overseer Maltorius, is to be killed an\' \'is head brung back as proof o\' the deed.$B$BSee Lookout Captan Lolo Longstriker fer the reward on this bounty.",
     ["O"] = "Deep within the Slag Pit of the Cauldron, in the Searing Gorge, you will find the traitorous Dark Iron dwarf named Overseer Maltorius.$B$BSlay Overseer Maltorius and take his head. Return the head to Lookout Captain Lolo Longstriker in the Searing Gorge for your reward.",
@@ -15328,6 +15888,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Now you da king, so maybe you get prized Gordok artifact back from creepy elf who calls himself Prince!  Da king before you failed, just like all da other kings since Tortheldrin - da creepy elf - stole it from old timey Gordok king!$B$BArtifact is called da Gauntlet of Gordok Might.  Old timey stories say only da one true king da Gordok can get it back.  Old timey story also say creepy elf is still around here - you find it and it will become mighty gauntlet you wear forever!  Yar, I show you!",
     ["O"] = "Find the Gauntlet of Gordok Might and return it to Captain Kromcrush in Dire Maul.$B$BAccording to Kromcrush, the \"old timey story\" says that Tortheldrin - a \"creepy\" elf who called himself a prince - stole it from one of the Gordok kings.",
     ["T"] = "Unfinished Gordok Business",
+  },
+  [7704] = {
+    ["D"] = "Well, well, well... Isn\'t this a surprise. The Chambermaid had a gigantic ornate pillow and now it\'s yours. Evonice Sootsmoker will definitely want to get her grubby little hands all over this item. Take it to her and see if she\'ll offer you any goodies for your trouble.",
+    ["O"] = "Take Chambermaid Pillaclencher\'s Pillow to Evonice Sootsmoker in the Searing Gorge.",
+    ["T"] = "Look at the Size of It!",
   },
   [7721] = {
     ["D"] = "If I bet against my own better judgment and stay to run an engineering shop along the Forgotten Coast, I will need to deal with these pesky elementals.  Curse the powers of elementalism unchecked, I say!$B$BFortunately for me, and now for you my hopeful agent provocateur, the elementals represent an ideal source of raw power for my Ultra-Shrinker refinement - give them the what-for I say!  When doing this though, be sure to save me the water elemental cores!",
@@ -15469,6 +16034,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
     ["T"] = "Quell the Silverwing Usurpers",
   },
+  [7790] = {
+    ["D"] = "Defeat the Warsong Mill, then return to me.",
+    ["O"] = "",
+    ["T"] = "REUSE",
+  },
   [7791] = {
     ["D"] = "",
     ["O"] = "",
@@ -15490,14 +16060,19 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "A Donation of Mageweave",
   },
   [7795] = {
-    ["D"] = "",
-    ["O"] = "",
+    ["D"] = "$N, you\'ve been a tremendous contributor to our cloth drive. As we work hard to replenish our reserves, I must impart news upon you the most severe of our deficiencies - runecloth. We are in absolutely dire need of runecloth, and we hope that you will be able to help us as you have in the past.$BIf you are willing, please bring me what runecloth you can spare. We\'ll initially accept a single donation of sixty, and then we\'ll go from there.",
+    ["O"] = "Deliver 60 runecloth to Clavicus Knavingham.",
     ["T"] = "A Donation of Runecloth",
   },
   [7796] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Additional Runecloth",
+  },
+  [7797] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Dimensional Ripper - Everlook",
   },
   [7798] = {
     ["D"] = "",
@@ -15510,8 +16085,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "A Donation of Mageweave",
   },
   [7800] = {
-    ["D"] = "",
-    ["O"] = "",
+    ["D"] = "$N, you\'ve been a tremendous contributor to our cloth drive. As we work hard to replenish our reserves, I must impart news upon you the most severe of our deficiencies - runecloth. We are in absolutely dire need of runecloth, and we hope that you will be able to help us as you have in the past.$BIf you are willing, please bring me what runecloth you can spare. We\'ll initially accept a single donation of sixty, and then we\'ll go from there.",
+    ["O"] = "Deliver 60 runecloth to Raedon Duskstriker.",
     ["T"] = "A Donation of Runecloth",
   },
   [7801] = {
@@ -15535,8 +16110,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "A Donation of Mageweave",
   },
   [7805] = {
-    ["D"] = "",
-    ["O"] = "",
+    ["D"] = "$N, you\'ve been a tremendous contributor to our cloth drive. As we work hard to replenish our reserves, I must impart news upon you the most severe of our deficiencies - runecloth. We are in absolutely dire need of runecloth, and we hope that you will be able to help us as you have in the past.$BIf you are willing, please bring me what runecloth you can spare. We\'ll initially accept a single donation of sixty, and then we\'ll go from there.",
+    ["O"] = "Deliver 60 runecloth to Mistina Steelshield.",
     ["T"] = "A Donation of Runecloth",
   },
   [7806] = {
@@ -15565,8 +16140,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Arena Master",
   },
   [7811] = {
-    ["D"] = "",
-    ["O"] = "",
+    ["D"] = "$N, you\'ve been a tremendous contributor to our cloth drive. As we work hard to replenish our reserves, I must impart news upon you the most severe of our deficiencies - runecloth. We are in absolutely dire need of runecloth, and we hope that you will be able to help us as you have in the past.$BIf you are willing, please bring me what runecloth you can spare. We\'ll initially accept a single donation of sixty, and then we\'ll go from there.",
+    ["O"] = "Deliver 60 runecloth to Bubulo Acerbus.",
     ["T"] = "A Donation of Runecloth",
   },
   [7812] = {
@@ -15600,8 +16175,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "A Donation of Mageweave",
   },
   [7818] = {
-    ["D"] = "",
-    ["O"] = "",
+    ["D"] = "$N, you\'ve been a tremendous contributor to our cloth drive. As we work hard to replenish our reserves, I must impart news upon you the most severe of our deficiencies - runecloth. We are in absolutely dire need of runecloth, and we hope that you will be able to help us as you have in the past.$BIf you are willing, please bring me what runecloth you can spare. We\'ll initially accept a single donation of sixty, and then we\'ll go from there.",
+    ["O"] = "Deliver 60 runecloth to Ralston Farnsley.",
     ["T"] = "A Donation of Runecloth",
   },
   [7819] = {
@@ -15625,13 +16200,13 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "A Donation of Mageweave",
   },
   [7823] = {
-    ["D"] = "",
-    ["O"] = "",
+    ["D"] = "$N, you\'ve been a tremendous contributor to our cloth drive. As we work hard to replenish our reserves, I must impart news upon you the most severe of our deficiencies - runecloth. We are in absolutely dire need of runecloth, and we hope that you will be able to help us as you have in the past.$BIf you are willing, please bring me what runecloth you can spare. We\'ll initially accept a single donation of sixty, and then we\'ll go from there.",
+    ["O"] = "Deliver 60 runecloth to Rumstag Proudstrider.",
     ["T"] = "A Donation of Runecloth",
   },
   [7824] = {
-    ["D"] = "",
-    ["O"] = "",
+    ["D"] = "$N, you\'ve been a tremendous contributor to our cloth drive. As we work hard to replenish our reserves, I must impart news upon you the most severe of our deficiencies - runecloth. We are in absolutely dire need of runecloth, and we hope that you will be able to help us as you have in the past.$BIf you are willing, please bring me what runecloth you can spare. We\'ll initially accept a single donation of sixty, and then we\'ll go from there.",
+    ["O"] = "Deliver 60 runecloth to Vehena.",
     ["T"] = "A Donation of Runecloth",
   },
   [7825] = {
@@ -15690,8 +16265,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "A Donation of Mageweave",
   },
   [7836] = {
-    ["D"] = "",
-    ["O"] = "",
+    ["D"] = "$N, you\'ve been a tremendous contributor to our cloth drive. As we work hard to replenish our reserves, I must impart news upon you the most severe of our deficiencies - runecloth. We are in absolutely dire need of runecloth, and we hope that you will be able to help us as you have in the past.$BIf you are willing, please bring me what runecloth you can spare. We\'ll initially accept a single donation of sixty, and then we\'ll go from there.",
+    ["O"] = "Deliver 60 runecloth to Rashona Straglash.",
     ["T"] = "A Donation of Runecloth",
   },
   [7837] = {
@@ -15954,6 +16529,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["T"] = "Evil Bat Eyes",
   },
+  [7904] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>",
+  },
   [7905] = {
     ["D"] = "The Darkmoon Faire is coming!  Be sure to experience all the wonders and excitement of it when it comes to town!$B$BIf you act right now, you can redeem this voucher for free prize tickets!  Just hand your voucher to Gelvas Grimgate located inside the carnival.$B$BRight now, the Faire is outside Goldshire, in the Elwynn Forest.  Don\'t miss out!  Go today!",
     ["O"] = "Deliver the Free Ticket Voucher to Gelvas Grimgate, located inside the Darkmoon Faire carnival.",
@@ -15963,6 +16543,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "Now that you have gathered all of the Beast cards together into a deck, a ninth card mysteriously appears with the same backing as the first eight.   On this card is inscribed, \"Return these cards to the Darkmoon Faire and be rewarded.\"   You have heard that this faire alternately stops at Mulgore and Goldshire every few months, so you will have to wait until they are here next.",
     ["O"] = "Return the Beast Deck to the Darkmoon Faire when it comes to town.",
     ["T"] = "Darkmoon Beast Deck",
+  },
+  [7908] = {
+    ["D"] = "There must be more to being a master of the arena than this!   Perhaps the Pirate who runs the event at Gurubashi will know!",
+    ["O"] = "Speak with Short John Mithril in the Stranglethorn Arena.",
+    ["T"] = "Arena Master",
   },
   [7921] = {
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
@@ -16094,6 +16679,16 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["T"] = "Spawn of Jubjub",
   },
+  [7961] = {
+    ["D"] = "These rabbits are breeding uncontrollably.  Something must be done!$b$bHelp us $n, you\'re our only hope.",
+    ["O"] = "Kill 5 rabbits and return to Jon LeCraft by the forge on Designer Island.",
+    ["T"] = "Waskily Wabbits!",
+  },
+  [7962] = {
+    ["D"] = "I want LeCrafty rabbit pelts.  Get me some from LeCrafty Rabbits.$b$bThis is important!",
+    ["O"] = "Bring 3 LeCrafty Rabbit Pelts to Jon LeCraft.",
+    ["T"] = "Wabbit Pelts",
+  },
   [7981] = {
     ["D"] = "",
     ["O"] = "",
@@ -16103,6 +16698,36 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
     ["O"] = "Kill 5 Wretched Zombies",
     ["T"] = "Zombie Cleansing",
+  },
+  [8021] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Redeem iCoke Prize Voucher",
+  },
+  [8022] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Redeem iCoke Prize Voucher",
+  },
+  [8023] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Redeem iCoke Prize Voucher",
+  },
+  [8024] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Redeem iCoke Prize Voucher",
+  },
+  [8025] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Redeem iCoke Prize Voucher",
+  },
+  [8026] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Redeem iCoke Prize Voucher",
   },
   [8041] = {
     ["D"] = "",
@@ -16122,7 +16747,7 @@ pfDB["quests"]["enUS"] = {
   [8044] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "The Rage of Mount Mugamba",
+    ["T"] = "The Rage of Mugamba",
   },
   [8045] = {
     ["D"] = "",
@@ -16380,7 +17005,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Control Four Bases",
   },
   [8115] = {
-    ["D"] = "$N, battling for the resources of Arathi Basin is a bloody undertaking.  Your services to the League of Arathor are as needed as they are appreciated.$B$BAnd we have one more task for you.$B$BThe League wishes to make one strong push against the Defilers\' occupation of Arathi Basin.  We want them driven out of every strategic point on the battlefield!$B$BIt will not be easy, but if anyone can get it done, it is you.",
+    ["D"] = "$N, battling for the resources of Arathi Basin is a bloody undertaking.  Your services to the League of Arathor are are needed as they are appreciated.$B$BAnd we have one more task for you.$B$BThe League wishes to make one strong push against the Defilers\' occupation of Arathi Basin.  We want them driven out of every strategic point on the battlefield!$B$BIt will not be easy, but if anyone can get it done, it is you.",
     ["O"] = "Control 5 bases in Arathi Basin at the same time, then return to Field Marshal Oslight at Refuge Pointe.",
     ["T"] = "Control Five Bases",
   },
@@ -16432,22 +17057,22 @@ pfDB["quests"]["enUS"] = {
   [8141] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "Zandalrian Shadow Talisman",
+    ["T"] = "Zandalarian Shadow Talisman",
   },
   [8142] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "Zandalrian Shadow Talisman",
+    ["T"] = "Zandalarian Shadow Talisman",
   },
   [8143] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "Zandalrian Shadow Talisman",
+    ["T"] = "Zandalarian Shadow Talisman",
   },
   [8144] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "Zandalrian Shadow Mastery Talisman",
+    ["T"] = "Zandalarian Shadow Mastery Talisman",
   },
   [8145] = {
     ["D"] = "",
@@ -16467,7 +17092,7 @@ pfDB["quests"]["enUS"] = {
   [8148] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "The Maelstrom\'s Wrath",
+    ["T"] = "Maelstrom\'s Wrath",
   },
   [8149] = {
     ["D"] = "During the Harvest Festival of Azeroth, we give thanks to heroes for the sacrifices - in some cases ultimate sacrifices - they have given on our behalf.  The Alliance acknowledges many heroes, but none weave a more tragic tale than that of Uther Lightbringer.$B$BHelp us honor Uther by taking this offering to his tomb in the Western Plaguelands.  Place it at his statue, and then return to me.  I\'ll only be here through the end of the festival, so waste no time in giving Uther his tribute.",
@@ -16595,48 +17220,48 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Heart of Hakkar",
   },
   [8184] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-    ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Presence of Might",
   },
   [8185] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-    ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Syncretist\'s Sigil",
   },
   [8186] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-    ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Death\'s Embrace",
   },
   [8187] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-    ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Falcon\'s Call",
   },
   [8188] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-    ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Vodouisant\'s Vigilant Embrace",
   },
   [8189] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-    ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Presence of Sight",
   },
   [8190] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-    ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Hoodoo Hex",
   },
   [8191] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-    ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Prophetic Aura",
   },
   [8192] = {
-    ["D"] = "Zanza can create the ancient troll enchantments with the right components. $B$BThe first is a primal token that must be taken from the most powerful of the Hakkari.$B$BThe second is a punctured voodoo doll. These can be found in the piles of refuse that litter this foul place. Look inside the jinxed hoodoo piles.$B$BThe last is the high elven facsimile of troll magic known as the Arcanum. I do not know where they can be found.",
-    ["O"] = "Bring me all three and I will create a powerful enchantment for you!",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Animist\'s Caress",
   },
   [8193] = {
@@ -16650,7 +17275,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Apprentice Angler",
   },
   [8195] = {
-    ["D"] = "I seek the Paragons of Power known as the Coins of the Tribes.  They are the currency used by the various denizens of Zul\'Gurub, and each is imbued with subtle but powerful mojo.$B$BThere are nine distinct kinds to be found.  Some are sought after by my compatriots for various armors they offer Zandalar heroes.  Should you have any extra, I will trade you one of our Honor Tokens for a set of three.  You may use the Tokens with Rin\'wosho the Trader; he offers our heroes special items for them.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "Zulian, Razzashi, and Hakkari Coins",
   },
@@ -16725,7 +17350,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Sealed Azure Bag",
   },
   [8235] = {
-    ["D"] = "Lord Ravenholdt has asked a favor of us both.  He wishes to remove the enchantment from this bag.$b$bUnfortunately, some of my books on the subject of dispelling were taken recently, only to be destroyed by savages.  The remains of my books are still valuable to me.$b$bIf you can bring me enough of the encoded fragments, I can piece them back together.  Your best chance is to kill the beasts of Azshara, since they have a tendency to pick up just about anything.",
+    ["D"] = "Lord Ravenholdt has asked a favor of us both.  He wishes to remove the enchantment from this bag.$b$bUnfortunately, some of my books on the subject of dispelling were taken recently, only to be destroyed by savages.  The remains of my books are still valuable to me.$b$bIf you can bring me enough of the encoded fragments, I can piece them back together.  Your best chance is to kill forest oozes, since they have a tendency to pick up just about anything.  You\'ll find them in northeast Azshara.",
     ["O"] = "Bring 10 Encoded Fragments to Archmage Xylem in Azshara.",
     ["T"] = "Encoded Fragments",
   },
@@ -16734,13 +17359,18 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Return the Azure Key to Lord Jorach Ravenholdt.",
     ["T"] = "The Azure Key",
   },
+  [8237] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "REUSE",
+  },
   [8238] = {
-    ["D"] = "I seek the Paragons of Power known as the Coins of the Tribes.  They are the currency used by the various denizens of Zul\'Gurub, and each is imbued with subtle but powerful mojo.$B$BThere are nine distinct kinds to be found.  Some are sought after by my compatriots for various armors they offer Zandalar heroes.  Should you have any extra, I will trade you one of our Honor Tokens for a set of three.  You may use the Tokens with Rin\'wosho the Trader; he offers our heroes special items for them.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "Gurubashi, Vilebranch, and Witherbark Coins",
   },
   [8239] = {
-    ["D"] = "I seek the Paragons of Power known as the Coins of the Tribes.  They are the currency used by the various denizens of Zul\'Gurub, and each is imbued with subtle but powerful mojo.$B$BThere are nine distinct kinds to be found.  Some are sought after by my compatriots for various armors they offer Zandalar heroes.  Should you have any extra, I will trade you one of our Honor Tokens for a set of three.  You may use the Tokens with Rin\'wosho the Trader; he offers our heroes special items for them.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "Sandfury, Skullsplitter, and Bloodscalp Coins",
   },
@@ -16819,6 +17449,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Use the Divination Scryer in the heart of the Great Ossuary\'s basement in the Scholomance.  Doing so will bring forth spirits you must fight.  Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.$B$BBring Darkreaver\'s Head to Sagorne Creststrider in the Valley of Wisdom, Orgrimmar.",
     ["T"] = "The Darkreaver Menace",
   },
+  [8259] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "A More Fitting Reward",
+  },
   [8260] = {
     ["D"] = "",
     ["O"] = "",
@@ -16850,8 +17485,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Defiler\'s Advanced Care Package",
   },
   [8266] = {
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Sentinels may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-    ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Ribbons of Sacrifice",
   },
   [8267] = {
@@ -16860,8 +17495,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Ribbons of Sacrifice",
   },
   [8268] = {
-    ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
-    ["O"] = "Bring the Ribbons of Sacrifice to Captain Shatterskull so that the Outriders may reward you for acting on our behalf.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Ribbons of Sacrifice",
   },
   [8269] = {
@@ -16883,6 +17518,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Oran\'s Gratitude",
+  },
+  [8274] = {
+    ["D"] = "Got some time to spare?  Kill me some Murlocs and I\'ll give you something shiny!",
+    ["O"] = "Kill 5 Murlocs and come back to the test character.",
+    ["T"] = "Test Kill Quest",
   },
   [8275] = {
     ["D"] = "Attention, heroes of the Alliance!  The silithid menace has been left unchecked for too long.  Unfettered by any real opposition, they\'ve been preparing all this time for a large-scale expansion.  $B$BCenarion Circle forces are gathering in Silithus to take the fight to these wretched creatures and all able-bodied adventurers are hereby called to join us!$B$BDon\'t wait until it\'s too late!  Aid us in the defense of Azeroth! Report to Windcaller Proudhorn at Cenarion Hold for specific instructions!",
@@ -16959,6 +17599,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["T"] = "Talismans of Merit",
   },
+  [8290] = {
+    ["D"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a talisman of merit.  Bring me such a talisman, $N, and I shall reward you.",
+    ["O"] = "Enter Warsong Gulch and defeat the Horde, obtain a Warsong Gulch Mark of Honor, and return to Sentinel Farsong at the Silverwing Grove.",
+    ["T"] = "Vanquish the Invaders",
+  },
   [8291] = {
     ["D"] = "Beyond this tunnel you will find a field of strife and turmoil, young $c. The Horde continue to decimate our sacred forest, cutting down the evergreen foliage to power their machines of war.$B$BEnter Warsong Gulch and defend Silverwing Hold. Push back the invading Horde forces!$B$BDo this, and earn a talisman of merit.  Bring me such a talisman, $N, and I shall reward you.",
     ["O"] = "Enter Warsong Gulch and defeat the Horde, obtain a Silverwing Talisman of Merit, and return to Sentinel Farsong at the Silverwing Grove.",
@@ -16977,6 +17622,11 @@ pfDB["quests"]["enUS"] = {
   [8294] = {
     ["D"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Warsong mark of honor.  Return to me with such a mark, $N, and you will be rewarded.",
     ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
+    ["T"] = "Quell the Silverwing Usurpers",
+  },
+  [8295] = {
+    ["D"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Warsong mark of honor.  Return to me with such a mark, $N, and you will be rewarded.",
+    ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
     ["T"] = "Quell the Silverwing Usurpers",
   },
   [8296] = {
@@ -17030,7 +17680,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Long Forgotten Memories",
   },
   [8306] = {
-    ["D"] = "I need you to venture into Hive\'Regal and find what became of my dearest Natalia, $N. This will be no easy task for you. Before you dive headlong into the maw of madness, make sure that you go back and speak with those dwarves. They might be able to give you some tips on dealing with the silithid that inhabit that hive.$B$BAnd $N, if she truly is as mad as they say... do what you must.$B$B<Commander Mar\'alith turns away from you.>",
+    ["D"] = "I need you to venture into Hive\'Regal and find what became of my dearest Natalia, $N. This will be no easy task for you to do alone. I recommend that you bring some friends along. Before you dive headlong into the maw of madness, make sure that you go back and speak with those dwarves. They might be able to give you some tips on dealing with the silithid that inhabit that hive.$B$BAnd $N, if she truly is as mad as they say... do what you must.$B$B<Commander Mar\'alith turns away from you.>",
     ["O"] = "Commander Mar\'alith at Cenarion Hold in Silithus wants you to find his beloved Natalia. The information that you gathered points to Hive\'Regal in the south as being the area in which you may find Mistress Natalia Mar\'alith.$B$BDo not forget to visit the dwarves at Bronzebeard\'s camp before venturing into the hive. They might have some additional work and advice for you.$B$BAnd $N, remember the Commander\'s words: \"Do what you must...\"",
     ["T"] = "Into The Maw of Madness",
   },
@@ -17045,7 +17695,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Brann Bronzebeard\'s Lost Letter",
   },
   [8309] = {
-    ["D"] = "After our initial foray into the hives and Mistress Mar\'alith\'s subsequent madness the three hives have been spewing out bugs! The increased activity might be tied into the glyphs covering those strange crystals.$B$BWe must get a rubbing from crystals in all three hives. If we can get those rubbings, we might be able to make sense of this madness.$B$BTake this transcription set  and hit those hives, $N. Don\'t come back until you\'ve gotten copies from each hive.",
+    ["D"] = "After our initial foray into the hives and Mistress Mar\'alith\'s subsequent madness the three hives have been spewing out bugs! The increased activity might be tied into the glyphs covering those strange crystals.$B$BWe must get a rubbing from crystals in all three hives. If we can get those rubbings, we might be able to make sense of this madness.$B$BTake this transcription set and some buddies and hit those hives, $N. Don\'t come back until you\'ve gotten copies from each hive.",
     ["O"] = "Rutgar Glyphshaper at Bronzebeard\'s Encampment in Silithus wants you to venture to Hive\'Ashi, Hive\'Zora, and Hive\'Regal and recover Glyphed Rubbings from the Glyphed Crystals of each hive.$B$BUse the Geologist\'s Transcription Kit to make a reasonable facsimile of the ancient glyphs. Return to Rutgar Glyphshaper when you complete this task.",
     ["T"] = "Glyph Chasing",
   },
@@ -17072,7 +17722,7 @@ pfDB["quests"]["enUS"] = {
   [8314] = {
     ["D"] = "We\'re on the verge of a breakthrough, $N! The rubbings you recovered have allowed us to recreate the glyphs on this crystalline prism. They are apparently a means for the Qiraji and other unknown entities to communicate various messages to the silithid.$B$BUnfortunately, that is all we could get out of the glyphs. We need to find a way to unlock the messages hidden within the crystals.$B$BTake the glyphed crystal prism to Geologist Larksbane at Cenarion Hold.  She might be able to help.",
     ["O"] = "Rutgar Glyphshaper at Bronzebeard\'s Encampment wants you to deliver the Glyphed Crystal Prism to Geologist Larksbane at the Cenarion Hold in Silithus.",
-    ["T"] = "Unraveling the Mystery (Elite)",
+    ["T"] = "Unraveling the Mystery",
   },
   [8315] = {
     ["D"] = "The glyphs illustrate an emissary of the Qiraji meeting with three silithid at the bones of a large dragon. Above the glyphs is what I can only assume to be a code of some sort. This code might very well be the key to summoning the emissary.$B$BI will create a copy of the glyph code that you must use in the sand at the Bones of Grakkarond. If I am right, the Overlords will come thinking that new data is ready for transmission. Strike them down and confront the emissary. He holds the key to the crystals...",
@@ -17245,8 +17895,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Southsea Shakedown",
   },
   [8367] = {
-    ["D"] = "Serving the Horde in one of the great battles against the Alliance is a source of great honor! The few however, that have served the Horde in ALL of our active battlefronts are our truly great fighters. We shall vanquish our opponents, not by fighting isolated skirmishes, but by waging a well-coordinated war.$B$BGo forth and crush the Alliance in Arathi Basin, Alterac Valley and Warsong Gulch! For Honor! For the Horde!",
-    ["O"] = " Bring 3 Alterac Valley Marks of Honor, 3 Arathi Basin Marks of Honor and 3 Warsong Gulch Marks of Honor to a Horde Warbringer outside the battlegrounds. ",
+    ["D"] = "Serving the Horde in one of the great battles against the Alliance is a source of great honor!  The few however, that have served the Horde in ALL of our active battlefronts are our truly great fighters.  We shall vanquish our opponents, not by fighting isolated skirmishes, but by waging a well-coordinated war.$B$BGo forth and crush the Alliance in Arathi Basin, Alterac Valley and Warsong Gulch!  For Honor!  For the Horde!",
+    ["O"] = "Bring 3 Alterac Valley Marks of Honor, 3 Arathi Basin Marks of Honor and 3 Warsong Gulch Marks of Honor to a Horde Warbringer outside the battlegrounds.",
     ["T"] = "For Great Honor",
   },
   [8368] = {
@@ -17325,53 +17975,53 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Armaments of War",
   },
   [8383] = {
-    ["D"] = "The Battle in Alterac Valley rages on, $N! Have you done your part as of late, $N?",
-    ["O"] = "Bring 3 Alterac Valley Marks of Honor to an Alliance Brigadier General outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Remember Alterac Valley!",
   },
   [8384] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
-    ["O"] = "Bring 3 Arathi Basin Marks of Honor to an Alliance Brigadier General outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Claiming Arathi Basin",
   },
   [8385] = {
-    ["D"] = "Ah, $N. I hope you continue to lend your experience to the different battlefronts. A lot of our lads and lasses in the field look up to seasoned veterans like you.",
-    ["O"] = "Bring 3 Alterac Valley Mark of Honor, 3 Arathi Basin Mark of Honor and 3 Warsong Gulch Mark of Honor to an Alliance Brigadier General outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Concerted Efforts",
   },
   [8386] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
-    ["O"] = "Bring 3 Warsong Gulch Marks of Honor to an Alliance Brigadier General outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Fight for Warsong Gulch",
   },
   [8387] = {
-    ["D"] = "The battle for Alterac rages on! You must return to Alterac Valley and once more drive the invaders out of Frostwolf territory, $N!",
-    ["O"] = "Bring 3 Alterac Valley Marks of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Invaders of Alterac Valley",
   },
   [8388] = {
-    ["D"] = "Many brave fighters look up to you, $N. You continue to be an example for all in the fight against the Alliance. What news do you bring from your journeys?",
-    ["O"] = "Bring 3 Alterac Valley Marks of Honor, 3 Arathi Basin Marks of Honor and 3 Warsong Gulch Marks of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "For Great Honor",
   },
   [8389] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
-    ["O"] = "Bring 3 Warsong Marks of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Battle of Warsong Gulch",
   },
   [8390] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
-    ["O"] = "Bring 3 Arathi Basin Mark of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Conquering Arathi Basin",
   },
   [8391] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
-    ["O"] = "Bring 3 Arathi Basin Marks of Honor to an Alliance Brigadier General outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Claiming Arathi Basin",
   },
   [8392] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
-    ["O"] = "Bring 3 Arathi Basin Marks of Honor to an Alliance Brigadier General outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Claiming Arathi Basin",
   },
   [8393] = {
@@ -17395,13 +18045,13 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Claiming Arathi Basin",
   },
   [8397] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
-    ["O"] = "Bring 3 Arathi Basin Marks of Honor to an Alliance Brigadier General outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Claiming Arathi Basin",
   },
   [8398] = {
-    ["D"] = "Winning a war is about more than just outsmarting and outfighting your opponent. Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it\'ll mean more swords and pikes for our troops. If the Horde were to win, those swords and pikes would still get made, they\'d just be pointed at us! Now is the time to help the Alliance in Arathi Basin, $N.",
-    ["O"] = "Bring 3 Arathi Basin Marks of Honor to an Alliance Brigadier General outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Claiming Arathi Basin",
   },
   [8399] = {
@@ -17430,28 +18080,28 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Fight for Warsong Gulch",
   },
   [8404] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
-    ["O"] = "Bring 3 Warsong Gulch Marks of Honor to an Alliance Brigadier General outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Fight for Warsong Gulch",
   },
   [8405] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
-    ["O"] = "Bring 3 Warsong Gulch Marks of Honor to an Alliance Brigadier General outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Fight for Warsong Gulch",
   },
   [8406] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
-    ["O"] = "Bring 3 Warsong Gulch Marks of Honor to an Alliance Brigadier General outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Fight for Warsong Gulch",
   },
   [8407] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
-    ["O"] = "Bring 3 Warsong Gulch Marks of Honor to an Alliance Brigadier General outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Fight for Warsong Gulch",
   },
   [8408] = {
-    ["D"] = "The Silverwing Sentinels are at war with the Warsong Outriders due to the destruction the Orcs are causing to the forest. There are, however, more reasons to defend this particular forest than plain love for nature.$B$BThe forest forms a strategic barrier that makes Ashenvale defendable against a large-scale attack. Without it, Astranaar would last a day or two before being annexed to the Barrens.$B$BDo your part in fighting the Warsong Outriders, $N! For the Alliance!",
-    ["O"] = "Bring 3 Warsong Gulch Marks of Honor to an Alliance Brigadier General outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Fight for Warsong Gulch",
   },
   [8409] = {
@@ -17465,7 +18115,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Elemental Mastery",
   },
   [8411] = {
-    ["D"] = "Welcome, $c.  You bring me the elements and then we do the talkin\'.$b$bThe fire, the air, the water, and the earth I be needin\' before I trust ya, mon.  I gots to know you be knowledgeable.",
+    ["D"] = "Welcome, mon.  You bring me the elements and then we do the talkin\'.",
     ["O"] = "Bring the elements earth, air, fire and water to Bath\'rah the Windwatcher.",
     ["T"] = "Mastering the Elements",
   },
@@ -17485,8 +18135,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Dispelling Evil",
   },
   [8415] = {
-    ["D"] = "Commander Ashlam Valorfist has sent out a call for a paladin of your purity and valor, $n.  You can find him at Chillwind Camp in the southern part of the Western Plaguelands.  Seek him and aid in his cause for the Light!",
-    ["O"] = "Speak to Commander Ashlam Valorfist at Chillwind Camp.",
+    ["D"] = "Commander Ashlam Valorfist has sent out a call for a paladin of your purity and valor, $n.  You can find him at Chillwind Point in the southern part of the Western Plaguelands.  Seek him and aid in his cause for the Light!",
+    ["O"] = "Speak to Commander Ashlam Valorfist at Chillwind Point.",
     ["T"] = "Chillwind Point",
   },
   [8416] = {
@@ -17541,52 +18191,52 @@ pfDB["quests"]["enUS"] = {
   },
   [8426] = {
     ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance.  Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N!  Come back to me with proof of serving the Horde in a worthy manner!",
-    ["O"] = "Bring 3 Warsong Marks of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["O"] = "Bring 3 Warsong Gulch Marks of Honor to a Horde Warbringer outside the battlegrounds.",
     ["T"] = "Battle of Warsong Gulch",
   },
   [8427] = {
     ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance.  Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N!  Come back to me with proof of serving the Horde in a worthy manner!",
-    ["O"] = "Bring 3 Warsong Marks of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["O"] = "Bring 3 Warsong Gulch Marks of Honor to a Horde Warbringer outside the battlegrounds.",
     ["T"] = "Battle of Warsong Gulch",
   },
   [8428] = {
     ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance.  Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N!  Come back to me with proof of serving the Horde in a worthy manner!",
-    ["O"] = "Bring 3 Warsong Marks of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["O"] = "Bring 3 Warsong Gulch Marks of Honor to a Horde Warbringer outside the battlegrounds.",
     ["T"] = "Battle of Warsong Gulch",
   },
   [8429] = {
     ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance.  Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N!  Come back to me with proof of serving the Horde in a worthy manner!",
-    ["O"] = "Bring 3 Warsong Marks of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["O"] = "Bring 3 Warsong Gulch Marks of Honor to a Horde Warbringer outside the battlegrounds.",
     ["T"] = "Battle of Warsong Gulch",
   },
   [8430] = {
     ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance.  Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N!  Come back to me with proof of serving the Horde in a worthy manner!",
-    ["O"] = "Bring 3 Warsong Marks of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["O"] = "Bring 3 Warsong Gulch Marks of Honor to a Horde Warbringer outside the battlegrounds.",
     ["T"] = "Battle of Warsong Gulch",
   },
   [8431] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
-    ["O"] = "Bring 3 Warsong Marks of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Battle of Warsong Gulch",
   },
   [8432] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
-    ["O"] = "Bring 3 Warsong Marks of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Battle of Warsong Gulch",
   },
   [8433] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
-    ["O"] = "Bring 3 Warsong Marks of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Battle of Warsong Gulch",
   },
   [8434] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
-    ["O"] = "Bring 3 Warsong Marks of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Battle of Warsong Gulch",
   },
   [8435] = {
-    ["D"] = "The battle in Warsong Gulch against the Silverwing Sentinels is of great importance. Under the guise of protecting a forest that doesn\'t belong to them, the Alliance seeks to deny the Horde one of our largest sources for lumber.$B$BDo not let this happen, $N! Come back to me with proof of serving the Horde in a worthy manner!",
-    ["O"] = "Bring 3 Warsong Marks of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Battle of Warsong Gulch",
   },
   [8436] = {
@@ -17610,24 +18260,34 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Conquering Arathi Basin",
   },
   [8440] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
-    ["O"] = "Bring 3 Arathi Basin Mark of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Conquering Arathi Basin",
   },
   [8441] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
-    ["O"] = "Bring 3 Arathi Basin Mark of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Conquering Arathi Basin",
   },
   [8442] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
-    ["O"] = "Bring 3 Arathi Basin Mark of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Conquering Arathi Basin",
   },
   [8443] = {
-    ["D"] = "Our conflict with the Alliance has escalated to a true war. No longer are false pretenses to enter into battle used or expected by either side at this point.$B$BThe battle for the Arathi Basin is one of resources, plain and simple. Either the Alliance gets the resources and uses them against us or we get them and use them to keep our war efforts going. Help the Defilers maintain the flow of resources we need, $N!",
-    ["O"] = "Bring 3 Arathi Basin Mark of Honor to a Horde Warbringer outside the battlegrounds.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "Conquering Arathi Basin",
+  },
+  [8444] = {
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<NYI> <TXT> gossip shade of ambermoon",
+  },
+  [8445] = {
+    ["D"] = "x",
+    ["O"] = "x",
+    ["T"] = "<NYI> <TXT> gossip shade of ambermoon",
   },
   [8446] = {
     ["D"] = "Corruption seeps from this object.$B$BThere may be a link between this object and the dragons coming forth from the Dream. You must find someone that can decipher the meaning of this item. Perhaps the druids of the Moonglade or Cenarion Hold could assist you further.",
@@ -17638,6 +18298,16 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "The waters of Lake Elune\'ara should dissolve the nightmares engulfing this object. Give me a moment to perform the cleansing, $N.",
     ["O"] = "Wait for Keeper Remulos at the Moonglade to cleanse the Nightmare Engulfed Object.",
     ["T"] = "Waking Legends",
+  },
+  [8458] = {
+    ["D"] = "I believe I can find this demon lord given the proper reagents.$B$BIf he is indeed as powerful as I suspect, I will need items gathered from deadly creatures. But you act in the Warchief\'s name, so I am sure you will accept my task.$B$BFirst, I will have to break any wards he has against scrying. For this, I will need the scalp from a satyr--but not any satyr. The scalp must come from a Hatefury shadowstalker.$B$BSearch for them among the ancient ruins in the northeast of Desolace.",
+    ["O"] = "Bring a Shadowstalker Scalp to Maurin Bonesplitter in Desolace.",
+    ["T"] = "<UNUSED>",
+  },
+  [8459] = {
+    ["D"] = "Description",
+    ["O"] = "Log",
+    ["T"] = "<UNUSED>",
   },
   [8460] = {
     ["D"] = "The Timbermaw are the only furbolg tribe to escape the corruption. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.$B$BAre you interested in proving yourself? Drive back the corrupted Deadwood tribe of Felwood and we may one day consider you an ally. You\'ll find the first Deadwood tribe - warriors, pathfinders and gardeners - to my west.",
@@ -17894,6 +18564,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Bring 20 spotted yellowtail to Huntress Swiftriver at the airfield in Dun Morogh.",
     ["T"] = "The Alliance Needs More Spotted Yellowtail!",
   },
+  [8530] = {
+    ["D"] = "$C, I need your help. In the Molten Core there are these stones, singed Corestones to be precise, that we need to harvest for the Ahn\'Qiraj war effort. I\'m told that our blacksmiths and engineers can put them to good use, so that\'s where you come in. I need you to go into the Molten Core and gather up as many of these corestones as you can. Of course, you\'ll want to talk thirty-nine of your closest friends along with you.",
+    ["O"] = "Bring 50 singed corestones to Commander Stronghammer at the airfield in Dun Morogh.",
+    ["T"] = "The Alliance Needs Singed Corestones!",
+  },
   [8532] = {
     ["D"] = "So glad that you\'ve decided to help out here. Not everyone would, so I need to make sure you understand what it is that I need. Copper bars, not copper ore. We don\'t have the time or people to do all of the smelting ourselves, so if you would be so kind as to take care of that, your efforts will be duly noted. Is that something that you can handle, $c?",
     ["O"] = "Bring 20 Copper Bars to Miner Cromwell at the Valley of Spirits in Orgrimmar.",
@@ -17965,8 +18640,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Horde Needs Mithril Bars!",
   },
   [8546] = {
-    ["D"] = "Yup, I be glad you\'re here, mon. You helped me before, and now I need your help again. We still lookin\' ta bring in more mithril bars for the war effort; gonna build lots of armor and weapons and things to go squish them bugs at Ahn\'Qiraj.$B$BSo if you be a true friend, you bring me back more stacks of mithril bars. I take all you got until we hit our quota. You have some for me now?",
-    ["O"] = "Bring 20 Mithril Bars to Senior Sergeant T\'kelah at the Valley of Spirits in Orgrimmar.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "The Horde Needs More Mithril Bars!",
   },
   [8548] = {
@@ -17980,8 +18655,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Horde Needs Peacebloom!",
   },
   [8550] = {
-    ["D"] = "Hello again, Abyssmal. I am glad that you wish to speak to me once more concerning our neverending need for peacebloom. The war effort continues, and with it our production of potions and elixirs to aid in the battles to come. Will you help us again, $C? I am in need of the same amount of peacebloom as before, so if you can gather it up and return it to me here I would be most grateful. Of course, if you already have it on your person, I will be more than happy to accept it from you now",
-    ["O"] = "Bring 20 Peacebloom to Herbalist Proudfeather at the Valley of Spirits in Orgrimmar.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "The Horde Needs More Peacebloom!",
   },
   [8551] = {
@@ -18120,8 +18795,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Horde Needs Firebloom!",
   },
   [8581] = {
-    ["D"] = "Pele\'keiki know you come to help. Bring many firebloom and make him very happy. Pele\'keiki might make big bombs with firebloom. Drop them on insects from his bat over Ahn\'Qiraj when war come. But Pele\'keiki need more firebloom, $C!$B$BYou gonna bring Pele\'keiki that firebloom, real quick now. Come back with at least as much as last time, and Pele\'keiki be pleased.",
-    ["O"] = "Bring 20 Firebloom to Batrider Pele\'keiki at the Valley of Spirits in Orgrimmar.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "The Horde Needs More Firebloom!",
   },
   [8582] = {
@@ -18130,8 +18805,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Horde Needs Purple Lotus!",
   },
   [8583] = {
-    ["D"] = "In fact it does appear that we are in need of even more purple lotus, $C. While my own studies have yet to determine a new useful application for the herb, there are tried and true methodologies yet to be employed.$B$BI need you to once again go out into the field and collect at least twenty purple lotus samples. Return them to me here.",
-    ["O"] = "Bring 20 Purple Lotus to Apothecary Jezel at the Valley of Spirits in Orgrimmar.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "The Horde Needs More Purple Lotus!",
   },
   [8584] = {
@@ -18141,7 +18816,7 @@ pfDB["quests"]["enUS"] = {
   },
   [8585] = {
     ["D"] = "Legend has it that the chimaerok of the Isle of Dread in Feralas have the most succulent and tender vittles in existence! Now these chimaerok also have a daddy who, with proper preparation, may or may not look like a 500 pound chicken.$B$BHead to the Isle of Dread and kill Lord Lakmaeran and bring me his fresh carcass. That should satisfy the gnome. To satisfy me, you\'ll need to get your hands on some chimaerok tenderloin.$B$BDo this and you\'ll have your 500 pound chicken and a little something extra.",
-    ["O"] = "Recover Lakmaeran\'s Carcass and 20 Chimaerok Tenderloins for Dirge Quikcleave in Tanaris.",
+    ["O"] = "Recover Lakmaeran\'s Carcass and 20 Chimaerok Tenderloins for Dirge Quickcleave in Tanaris.",
     ["T"] = "The Isle of Dread!",
   },
   [8586] = {
@@ -18160,8 +18835,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Horde Needs Heavy Leather!",
   },
   [8589] = {
-    ["D"] = "It\'s true, $C, I still need more heavy leather. The requests from the generals and their quartermasters seem endless. And that\'s nothing compared to what the zeppelin masters are asking for!$B$BI need to get my quota collected on the double. Baekun, bring me more stacks of heavy leather as soon as you can!",
-    ["O"] = "Bring 10 Heavy Leather to Skinner Jamani at the Valley of Spirits in Orgrimmar.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "The Horde Needs More Heavy Leather!",
   },
   [8590] = {
@@ -18170,8 +18845,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Horde Needs Thick Leather!",
   },
   [8591] = {
-    ["D"] = "Druid, as you can see I still need to gather up more thick leather. Once again I ask your help with this task, and promise that if you complete it, you will be recognized for your efforts.$B$BTime is of the essence! Return to me with the thick leather so that we can finish our preparations and go to war, hero!",
-    ["O"] = "Bring 10 Thick Leather to Sergeant Umala at the Valley of Spirits in Orgrimmar.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "The Horde Needs More Thick Leather!",
   },
   [8592] = {
@@ -18220,8 +18895,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Horde Needs Rugged Leather!",
   },
   [8601] = {
-    ["D"] = "Preparations for the impending war at Ahn\'Qiraj are proceeding, $C. However, to ensure that we do not fall behind, or at least that I am not the one that causes us to fall behind, I want for you to bring back another stack of rugged leather. Your prompt attention to this matter will be greatly appreciated, $N.",
-    ["O"] = "Bring 10 Rugged Leather to Doctor Serratus at the Valley of Spirits in Orgrimmar.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "The Horde Needs More Rugged Leather!",
   },
   [8602] = {
@@ -18240,8 +18915,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Horde Needs Wool Bandages!",
   },
   [8605] = {
-    ["D"] = "Good to see you again, $C. We are still working on preparations here for the war effort, and I can still use all of the help that you can give in gathering up wool bandaging. Any assistance at all will be greatly appreciated. I only hope that our efforts will be good enough. I\'ve lost too many noble souls on the battlefields of yesterday to not do everything in my power to see to it that doesn\'t happen again.",
-    ["O"] = "Bring 20 Wool Bandages to Healer Longrunner at the Valley of Spirits in Orgrimmar.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "The Horde Needs More Wool Bandages!",
   },
   [8606] = {
@@ -18255,8 +18930,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Horde Needs Mageweave Bandages!",
   },
   [8608] = {
-    ["D"] = "You returned? Interesting. As you can see I am still collecting for the Ahn\'Qiraj \'war effort\'. Which means that I need you to once again go out and collect a stack of mageweave bandages for me. I look forward to your return, $C.",
-    ["O"] = "Bring 20 Mageweave Bandages to Lady Callow at the Valley of Spirits in Orgrimmar.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "The Horde Needs More Mageweave Bandages!",
   },
   [8609] = {
@@ -18265,8 +18940,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Horde Needs Runecloth Bandages!",
   },
   [8610] = {
-    ["D"] = "Ever does the time grow nearer when we shall launch ourselves headlong into the conflagration at Ahn\'Qiraj, priest. But first we must gather our strength and prepare so that we can survive the onslaught of the insects and their masters.$B$BIf you are here again, then surely you wish to make another contribution of runecloth bandages to the war effort? Please do so as soon as you can and return to me once more.",
-    ["O"] = "Bring 20 Runecloth Bandages to Stoneguard Clayhoof at the Valley of Spirits in Orgrimmar.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "The Horde Needs More Runecloth Bandages!",
   },
   [8611] = {
@@ -18275,8 +18950,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Horde Needs Lean Wolf Steaks!",
   },
   [8612] = {
-    ["D"] = "As you can see, $C, we still need to pack away more food for the soldiers. I don\'t know if you\'ve ever been in a war before, but once you get past the initial shock of the battlefield, you can get pretty hungry. You did a good job last time, so I expect that you\'ll do as well, if not a little quicker, in getting me another stack of those lean wolf steaks.",
-    ["O"] = "Bring 20 Lean Wolf Steaks to Bloodguard Rawtar at the Valley of Spirits in Orgrimmar.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "The Horde Needs More Lean Wolf Steaks!",
   },
   [8613] = {
@@ -18285,8 +18960,8 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Horde Needs Spotted Yellowtail!",
   },
   [8614] = {
-    ["D"] = "So as you can see, we still be needin\' a lot of the fishies. The combatants in the upcomin\' Ahn\'Qiraj War gonna be needin\' a lot to eat, so I needin\' to get all the spotted yellowtail that I can. You catch \'em, cook \'em, and bringin\' \'em back to me here, and I be givin\' you thanks, and the thanks of the Horde.",
-    ["O"] = "Bring 20 Spotted Yellowtail to Fisherman Lin\'do at the Valley of Spirits in Orgrimmar.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "The Horde Needs More Spotted Yellowtail!",
   },
   [8615] = {
@@ -18295,9 +18970,14 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Horde Needs Baked Salmon!",
   },
   [8616] = {
-    ["D"] = "The last batch of baked salmon that you donated to the war effort looked very delicious, $C. I must admit that I was tempted to take a few for myself. As you can tell, we have not yet reached our quota here. I am hoping you have returned because you have another stack of baked salmon with you",
-    ["O"] = "Bring 20 Baked Salmon to Chief Sharpclaw at the Valley of Spirits in Orgrimmar.",
+    ["D"] = "",
+    ["O"] = "",
     ["T"] = "The Horde Needs More Baked Salmon!",
+  },
+  [8617] = {
+    ["D"] = "The time has come for you to contribute to the Ahn\'Qiraj war effort, $c. Gone are the halcyon days of whiling away your time in leisure. Now it is time to serve me and the Horde, and I assure you that I am not as forgiving as the Warchief.$B$BYou will gather your forces, a guild if you have one, and invade the Molten Core. Inside you will find that the denizens of the place have singed corestones. Bring these back to me in large quantities.",
+    ["O"] = "Bring 50 singed corestones to General Zog in Durotar.",
+    ["T"] = "The Horde Needs Singed Corestones!",
   },
   [8619] = {
     ["D"] = "",
@@ -18331,7 +19011,7 @@ pfDB["quests"]["enUS"] = {
   },
   [8625] = {
     ["D"] = "It is said among us that the ornate shoulder armor worn by the mortal races started as an attempt to emulate the wings of a dragon.$B$BBring me the bindings worn by the highest Qiraji leaders and I shall shape them into a set of pauldrons more dreadful than even the wings of Nefarian himself!",
-    ["O"] = "Bring the Qiraji Bindings of Dominance, 2 Idols of Death, 5 Stone Scarabs and 5 Bronze Scarabs to Andorgos in Ahn\'Qiraj.  You must also attain Neutral reputation with the Brood of Nozdormu to complete this quest.",
+    ["O"] = "Bring the Qiraji Bindings of Dominance, 2 Idols of Rebirth, 5 Silver Scarabs and 5 Ivory Scarabs to Andorgos in Ahn\'Qiraj.  You must also attain Neutral reputation with the Brood of Nozdormu to complete this quest.",
     ["T"] = "Enigma Shoulderpads",
   },
   [8626] = {
@@ -18906,7 +19586,7 @@ pfDB["quests"]["enUS"] = {
   },
   [8740] = {
     ["D"] = "Bands of mounted Twilight\'s Hammer cultists have been spotted riding outside the reach of our forces in Cenarion Hold, picking off our smaller patrols and caravans.$B$BFind and defeat the twilight marauders along with their leader, a terrible warrior by the name of Morna.  Report to Windcaller Proudhorn after completing the task.",
-    ["O"] = "Slay Twilight Marauder Morna and 2 Twilight Marauders.  Report to Windcaller Proudhorn when your task is finished.  You must also bring Tactical Task Briefing IX in order to complete this quest.",
+    ["O"] = "Slay Twilight Marauder Morna and 5 Twilight Marauders.  Report to Windcaller Proudhorn when your task is finished.  You must also bring Tactical Task Briefing IX in order to complete this quest.",
     ["T"] = "Twilight Marauders",
   },
   [8741] = {
@@ -19015,7 +19695,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Grand Invoker",
   },
   [8762] = {
-    ["D"] = "DISASTER has struck!  Metzen the Reindeer has been kidnapped!$B$BMetzen is one of Great-father Winter\'s eight reindeer - and property of Smokywood Pastures.  We\'ve received not one but TWO ransom letters from groups claiming to have Metzen.  With the holiday season well under way, we\'re strapped to the coin box here!  Please - find Metzen and return him to us!$B$BCheck out the ransom letters for clues, and sprinkle this reindeer dust on him - it will free him from any of his bonds!$B$BPlease, hurry!",
+    ["D"] = "DISASTER has struck!  Metzen the Reindeer has been kidnapped!$B$BMetzen is one of Greatfather Winter\'s eight reindeer - and property of Smokywood Pastures.  We\'ve received not one but TWO ransom letters from groups claiming to have Metzen.  With the holiday season well under way, we\'re strapped to the coin box here!  Please - find Metzen and return him to us!$B$BCheck out the ransom letters for clues, and sprinkle this reindeer dust on him - it will free him from any of his bonds!$B$BPlease, hurry!",
     ["O"] = "Find Metzen the Reindeer.  Use the notes provided to you for clues as to where he is being held.$B$BWhen you find Metzen, have the Pouch of Reindeer Dust in your possession so you can sprinkle some of the dust on him; this should free Metzen from his bonds of captivity.$B$BReturn the Pouch of Reindeer Dust to Wulmort Jinglepocket in Ironforge once Metzen is freed.",
     ["T"] = "Metzen the Reindeer",
   },
@@ -19436,12 +20116,12 @@ pfDB["quests"]["enUS"] = {
   },
   [8846] = {
     ["D"] = "",
-    ["O"] = "Well then, it\'s settled; here are your supplies, $c. If you wish to do an additional exchange, then I am prepared to authorize it. Just give me the word and I\'ll make it happen.$B$BKeep up the good work, $N. We need all the materiel we can muster if we\'re going to win this thing. If we all do our part, then victory shall be ours for the taking!",
+    ["O"] = "",
     ["T"] = "Five Signets for War Supplies",
   },
   [8847] = {
     ["D"] = "",
-    ["O"] = "Well then, it\'s settled; here are your supplies, $c. If you wish to do an additional exchange, then I am prepared to authorize it. Just give me the word and I\'ll make it happen.$B$BKeep up the good work, $N. We need all the materiel we can muster if we\'re going to win this thing. If we all do our part, then victory shall be ours for the taking!",
+    ["O"] = "",
     ["T"] = "Ten Signets for War Supplies",
   },
   [8848] = {
@@ -19451,22 +20131,22 @@ pfDB["quests"]["enUS"] = {
   },
   [8849] = {
     ["D"] = "",
-    ["O"] = "Well then, it\'s settled; here are your supplies, $c. If you wish to do an additional exchange, then I am prepared to authorize it. Just give me the word and I\'ll make it happen.$B$BKeep up the good work, $N. We need all the materiel we can muster if we\'re going to win this thing. If we all do our part, then victory shall be ours for the taking!",
+    ["O"] = "",
     ["T"] = "Twenty Signets for War Supplies",
   },
   [8850] = {
     ["D"] = "",
-    ["O"] = "Well then, it\'s settled; here are your supplies, $c. If you wish to do an additional exchange, then I am prepared to authorize it. Just give me the word and I\'ll make it happen.$B$BKeep up the good work, $N. We need all the materiel we can muster if we\'re going to win this thing. If we all do our part, then victory shall be ours for the taking!",
+    ["O"] = "",
     ["T"] = "Thirty Signets for War Supplies",
   },
   [8851] = {
     ["D"] = "",
-    ["O"] = "Well then, it\'s settled; here are your supplies, $c. If you wish to do an additional exchange, then I am prepared to authorize it. Just give me the word and I\'ll make it happen.$B$BKeep up the good work, $N. We need all the materiel we can muster if we\'re going to win this thing. If we all do our part, then victory shall be ours for the taking!",
+    ["O"] = "",
     ["T"] = "Five Signets for War Supplies",
   },
   [8852] = {
     ["D"] = "",
-    ["O"] = "Well then, it\'s settled; here are your supplies, $c. If you wish to do an additional exchange, then I am prepared to authorize it. Just give me the word and I\'ll make it happen.$B$BKeep up the good work, $N. We need all the materiel we can muster if we\'re going to win this thing. If we all do our part, then victory shall be ours for the taking!",
+    ["O"] = "",
     ["T"] = "Ten Signets for War Supplies",
   },
   [8853] = {
@@ -19476,13 +20156,18 @@ pfDB["quests"]["enUS"] = {
   },
   [8854] = {
     ["D"] = "",
-    ["O"] = "Well then, it\'s settled; here are your supplies, $c. If you wish to do an additional exchange, then I am prepared to authorize it. Just give me the word and I\'ll make it happen.$B$BKeep up the good work, $N. We need all the materiel we can muster if we\'re going to win this thing. If we all do our part, then victory shall be ours for the taking!",
+    ["O"] = "",
     ["T"] = "Twenty Signets for War Supplies",
   },
   [8855] = {
     ["D"] = "",
-    ["O"] = "Well then, it\'s settled; here are your supplies, $c. If you wish to do an additional exchange, then I am prepared to authorize it. Just give me the word and I\'ll make it happen.$B$BKeep up the good work, $N. We need all the materiel we can muster if we\'re going to win this thing. If we all do our part, then victory shall be ours for the taking!",
+    ["O"] = "",
     ["T"] = "Thirty Signets for War Supplies",
+  },
+  [8856] = {
+    ["D"] = "With the arrival of fresh recruits to Cenarion Hold comes the problem of keeping them alive in the desert.  Dehydration as well as numerous poisonous creatures present a serious threat to inexperienced volunteers.  Gather the supplies necessary for a desert survival kit and bring them to Calandrath in Cenarion Hold.",
+    ["O"] = "Bring 4 Globes of Water, 4 Powerful Anti-Venom and 4 Baked Salmon to Calandrath at the inn in Cenarion Hold in Silithus.",
+    ["T"] = "Desert Survival Kits",
   },
   [8857] = {
     ["D"] = "I\'m looking for battle hardened adventurers willing and able to get a fresh husk sample from the fallen Colossus of Ashi to Oglethorpe in Booty Bay. No, no, I wouldn\'t want you to go anywhere near that thing\'s corpse. Just take one of my samples and make it snappy. These things are no good to him rotten!",
@@ -19543,6 +20228,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "The beast Omen was once a hero of this world.  A wolf of great strength and fortune, Omen fought beside the heroes of the War of the Ancients until he succumbed to demonic magics.  Turning against his allies, he raged across Azeroth and carried death and terror in his wake.$B$BFinally defeated here, in Moonglade, Omen now sleeps among the silt of Lake Elune\'ara.  But each new year, during the festival, he stirs...$B$BGather cohorts, $N, and summon and defeat the beast Omen.  Earn the blessing of Elune!",
     ["O"] = "Summon Omen, defeat him and gain Elune\'s Blessing.  Return to Valadar Starsong in Nighthaven",
     ["T"] = "Elune\'s Blessing",
+  },
+  [8869] = {
+    ["D"] = "Within the confines of the Scarlet Bastion lies sweet Serenity. The Crimson Hammersmith guards the recipe with his life. Defeat him and bring me his apron. For that, I shall train you to become a hammersmith.$B$BUnderstand this: Once you have chosen the path of the hammersmith, the paths of the swordsmith and axesmith will no longer be available.",
+    ["O"] = "Travel to Stratholme and kill the Crimson Hammersmith. Recover the Crimson Hammersmith\'s Apron and return to Lilith.",
+    ["T"] = "Sweet Serenity",
   },
   [8870] = {
     ["D"] = "It\'s that time of the year, $N!  The Cenarion Circle invites all denizens of Azeroth to partake in our celebration of the Lunar Festival.  You will find the Lunar Festival Harbinger in this very city at a location marked by a blessed circle of moonlight.  She can tell you more about the holiday.",
@@ -19655,7 +20345,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Dangerous Love",
   },
   [8904] = {
-    ["D"] = "There\'s something unnatural about this epidemic of love. It\'s disgusting, and as it lowers our defenses, it could be a threat to the all of us.$B$BIt\'s bad enough that so many of our people are caught up in this ridiculous behavior. But I think that it has spread even to our guardians, who should be immune to such things.$B$BFind one of our guardians and see if they\'ve been caught up in this foolishness.",
+    ["D"] = "There\'s something unnatural about this epidemic of love. It\'s disgusting, and as it lowers our defenses, it could be a threat to the all of us.$b$bIt\'s bad enough that so many of our people are caught up in this ridiculous behavior. But I think that it has spread even to our guardians, who should be immune to such things.$b$bFind one of our guardians and see if they\'ve been caught up in this foolishness.",
     ["O"] = "Get a Guardian\'s Moldy Card and bring it to Fenstad Argyle in the Undercity.",
     ["T"] = "Dangerous Love",
   },
@@ -19726,7 +20416,7 @@ pfDB["quests"]["enUS"] = {
   },
   [8918] = {
     ["D"] = "Hail, $c!  I can tell by your demeanor that you\'ve seen and done much in this world.  Yet I\'m willing to wager you haven\'t seen a piece of armor like this.$B$BPerform a small favor for me and I\'ll be willing to trade it to you for an ordinary set of bracers.$B$BI\'m in need of a sizeable sample of venom drawn from the spiders and scorpions that inhabit Silithus.  Bring this to me along with a few gold coins and I\'ll perform the exchange.",
-    ["O"] = "Acquire 15 Silithus Venom Samples and 20 gold and bring them along with a set of Bindings of Elements to Mokvar in Orgrimmar.",
+    ["O"] = "Acquire 15 Silithus Venom Samples and 20 gold and bring them along with a set of Bindings of the Elements to Mokvar in Orgrimmar.",
     ["T"] = "An Earnest Proposition",
   },
   [8919] = {
@@ -19846,7 +20536,7 @@ pfDB["quests"]["enUS"] = {
   },
   [8942] = {
     ["D"] = "You\'ve proven to be a very reliable individual, $N.  As much as I trust that you\'ll help me through this predicament, it would be wise of me to reward you according to your performance.$B$BFor now I will exchange your belt and gauntlets.  If we both see this through I shall make the rest of the pieces available to you.",
-    ["O"] = "Bring a Cord of Elements and a set of Gauntlets of Elements to Mokvar in Orgrimmar.",
+    ["O"] = "Bring a Cord of the Elements and a set of Gauntlets of the Elements to Mokvar in Orgrimmar.",
     ["T"] = "Just Compensation",
   },
   [8943] = {
@@ -19975,7 +20665,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Left Piece of Lord Valthalak\'s Amulet",
   },
   [8968] = {
-    ["D"] = "The siblings, Jarien and Sothos, decided to join the Scarlet Crusade upon the disbanding of our mercenary company. They took the left piece of Lord Valthalak\'s amulet with them. Good riddance, I say, but we need that piece back.$B$BFrom what we could gather, they were actually slain by Grand Crusader Dathrohan himself for failing the initiation rites inside his chamber in the Scarlet Bastion.$B$BIn any case, we... meaning you, are still going to need to retrieve that piece of the amulet.",
+    ["D"] = "The siblings, Jarien and Sothos, decided to join the Scarlet Crusade upon the disbanding of our mercenary company. They took the Left Piece of Lord Valthalak\'s Amulet with them. Good riddance, I say, but we need that piece back.$B$BFrom what we could gather, they were actually slain by Grand Crusader Dathrohan himself for failing the initiation rites inside his chamber in the Scarlet Bastion.$B$BIn any case, we... meaning you, are still going to need to retrieve that piece of the amulet.",
     ["O"] = "Use the Brazier of Beckoning to summon forth Jarien and Sothos and slay them. Return to Bodley inside Blackrock Mountain with the Left Piece of Lord Valthalak\'s Amulet and the Brazier of Beckoning.",
     ["T"] = "The Left Piece of Lord Valthalak\'s Amulet",
   },
@@ -19988,6 +20678,36 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "As I was saying, $c, in my living years I flirted with becoming a diviner. But, there really wasn\'t as much profit in it as you might imagine, mostly because it\'s dangerous and the reagents are rare and expensive. However, I do know enough to be able to pinpoint the final piece of the amulet, and the spirit of my former comrade along with it.$B$BThis is where you come in, $N. I need you to go to Alcaz Island off the coast of Dustwallow Marsh and collect Bloodkelp from the Strashaz naga that live there.",
     ["O"] = "Gather 20 Bloodkelp from the Strashaz naga and then return to Bodley inside Blackrock Mountain.",
     ["T"] = "I See Alcaz Island In Your Future...",
+  },
+  [8971] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "REUSE",
+  },
+  [8972] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "REUSE",
+  },
+  [8973] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "REUSE",
+  },
+  [8974] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "REUSE",
+  },
+  [8975] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "REUSE",
+  },
+  [8976] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "REUSE",
   },
   [8977] = {
     ["D"] = "It\'s been great working with you, $N.  Here is the finished product.$B$BI hope it helps you in your current endeavors.  And hey, if you don\'t mind, help spread the word.  I wouldn\'t mind having more customers!",
@@ -20060,7 +20780,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "The Right Piece of Lord Valthalak\'s Amulet",
   },
   [8991] = {
-    ["D"] = "The siblings, Jarien and Sothos, decided to join the Scarlet Crusade upon the disbanding of our mercenary company. They took the right piece of Lord Valthalak\'s amulet with them. Good riddance, I say, but we need that piece back.$B$BFrom what we could gather, they were actually slain by Grand Crusader Dathrohan himself for failing the initiation rites inside his chamber in the Scarlet Bastion.$B$BIn any case, we... meaning you, are still going to need to retrieve that piece of the amulet.",
+    ["D"] = "The siblings, Jarien and Sothos, decided to join the Scarlet Crusade upon the disbanding of our mercenary company. They took the Right Piece of Lord Valthalak\'s Amulet with them. Good riddance, I say, but we need that piece back.$B$BFrom what we could gather, they were actually slain by Grand Crusader Dathrohan himself for failing the initiation rites inside his chamber in the Scarlet Bastion.$B$BIn any case, we... meaning you, are still going to need to retrieve that piece of the amulet.",
     ["O"] = "Use the Brazier of Beckoning to summon forth Jarien and Sothos and slay them. Return to Bodley inside Blackrock Mountain with the recombined Lord Valthalak\'s Amulet and the Brazier of Beckoning.",
     ["T"] = "The Right Piece of Lord Valthalak\'s Amulet",
   },
@@ -20254,10 +20974,15 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["T"] = "A Bubbling Cauldron",
   },
+  [9030] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the medallion back together.  Return to Deliana and tell her that Bodley is her only hope for finding the remaining pieces.$B$BI, for once, shall rest in peace.  I wish you the best of luck, and you shall need it!",
+    ["O"] = "Speak to Deliana in Ironforge.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
   [9032] = {
-    ["D"] = "The medallion contained Valthalaks soul? Its no surprise it was guarded by such a powerful curse.$B$BLocating Bodley presents a bit of a problem. Last time I heard of him, he was preparing to venture back into Blackrock Spire. He was never heard of again.$B$BSeek him out in Blackrock Mountain, though Im afraid to say hes probably dead by now. I suggest taking the goblins device with you, friend. ",
+    ["D"] = "The medallion contained Valthalak\'s soul?  It\'s no surprise it was guarded by such a powerful curse.$B$BLocating Bodley presents a bit of a problem.  Last time I heard of him, he was preparing to venture back into Blackrock Spire.  He was never heard of again.$B$BSeek him out in Blackrock Mountain, though I\'m afraid to say he\'s probably dead by now.  I suggest taking the goblin\'s device with you, friend.",
     ["O"] = "Travel to Blackrock Mountain and use the Extra-Dimensional Ghost Revealer to find Bodley near Blackrock Spire.",
-    ["T"] = "Bodleys Unfortunate Fate",
+    ["T"] = "Bodley\'s Unfortunate Fate",
   },
   [9033] = {
     ["D"] = "Five years since the last war...$B$BTens of thousands of lives were lost and for what? The threat was never fully extinguished.$B$BAnd so the Lich King stirs once more... His yes-man, Kel\'Thuzad, amassing for another attack upon our lands.$B$BWe will not allow it! Prove your dedication. Prove that you are willing to risk life and limb to stop this madness and the combined might of the Dawn and the Crusade will be at your beck and call.$B$BEnter Naxxramas and destroy the Scourge within...",
@@ -20350,7 +21075,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Toxic Test",
   },
   [9052] = {
-    ["D"] = "I would ask you to help me create a toxin of sorts, to pacify a great creature living here in the crater.  It is not deadly, and only the keen eyes of a $c can hope to collect the ingredients.$b$bYou can find the bloodcap mushrooms growing within the bloodpetal sprouts all across the crater.  Gorishi stings are from the insects inside and around the Slithering Scar, located in the southern part of the crater.",
+    ["D"] = "I would ask you to help me create a toxin of sorts, to pacify a great creature living here in the crater.  It is not deadly, and only the keen eyes of a $c can hope to collect the ingredients.$b$bYou can find the bloodcap mushrooms growing within the bloodpetal sprouts all across the crater.  Gorishi stings are from the giant flying wasps inside and around the Slithering Scar, located in the southern part of the crater.",
     ["O"] = "Collect 8 Bloodcap and 8 Gorishi Stings, and return to Torwa Pathfinder in Un\'Goro Crater.",
     ["T"] = "Bloodpetal Poison",
   },
@@ -20403,6 +21128,11 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "A hunter by the name of Torwa Pathfinder has requested the help of a druid.  He said only we would possess the necessary skills and respect for nature to help him.$b$bThere is a road that connects the Un\'Goro Crater and the desert of Tanaris.  As that road enters the crater, you will find Torwa close by.",
     ["O"] = "Speak with Torwa Pathfinder in Un\'Goro Crater.",
     ["T"] = "Torwa Pathfinder",
+  },
+  [9065] = {
+    ["D"] = "$Tpunk;!  Kill Kobold Vermin, 2 of em.",
+    ["O"] = "Kill Kobold Vermin, 2 of em.",
+    ["T"] = "The \"Chow\" Quest (123)aa",
   },
   [9068] = {
     ["D"] = "Would you honor me by returning the armor of those that fell in the defense of these lands?$B$BThe armor has been desecrated and is undoubtedly being used for evil; however, with wartorn armor scraps, the desecrated armor can be renewed and worn for battle once more.$B$BBring me the remnants of the fallen along with purification materials and Earthshatter shall be yours to don.$B$BSearch Naxxramas.",
@@ -20730,7 +21460,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "They Call Me \"The Rooster\"",
   },
   [9142] = {
-    ["D"] = "You know the drill, kid. One valor token gets you a craftsman\'s writ.",
+    ["D"] = "",
     ["O"] = "",
     ["T"] = "Craftsman\'s Writ",
   },
@@ -20740,7 +21470,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Under the Shadow",
   },
   [9154] = {
-    ["D"] = "The Scourge have returned in greater numbers than we have seen before. The Argent Dawn is recruiting all willing and capable men and women to defend our lands. If we share common cause, take this document to the Keeper of the Rolls at Light\'s Hope Chapel in the Eastern Plaguelands.",
+    ["D"] = "The Scourge have returned in greater numbers than we have seen before. The Argent Dawn is recruiting all willing and capable men and women to defend our lands.$b$bIf we share common cause, take this document to the Keeper of the Rolls at Light\'s Hope Chapel in the Eastern Plaguelands.",
     ["O"] = "Deliver the Call to Arms Announcement to the Keeper of the Rolls at Light\'s Hope Chapel in the Eastern Plaguelands.",
     ["T"] = "Light\'s Hope Chapel",
   },
@@ -21029,6 +21759,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "Aurel Goldleaf at Cenarion Hold in Silithus wants you to bring her 1 Abyssal Scepter. You must also be Honored with the Cenarion Circle.",
     ["T"] = "A Humble Offering",
   },
+  [9249] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "40 Tickets - Schematic: Steam Tonk Controller",
+  },
   [9250] = {
     ["D"] = "With the frame formed, Atiesh is nearly whole. Only the head and base of the staff are now missing. There is also a minor issue regarding the staff being a conduit for Sargeras\'s evil.$B$BFind someone that can assist you in locating the remaining pieces and exorcising the evil from the staff.",
     ["O"] = "Find someone that will help you in recovering the last two pieces of the staff and ridding it of evil.",
@@ -21050,17 +21785,17 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "Traitor to the Bloodsail",
   },
   [9260] = {
-    ["D"] = "The Lich King has sent his undead upon our very doorstep; we cannot remain idle! Surely you will step up to defend Stormwind from these accursed invaders?$B$BThere are strange runic circles outside, glowing with the same energy that surrounds the undead and the Necropolis above. They have significance, I\'m certain, and I want you to find out what. Thin the numbers of those aberrations while you\'re at it; bring me proof of their death along with your results, and I will reward you. Go!",
+    ["D"] = "The Scourge is camped upon our very doorstep; we cannot remain idle! Surely you will step up to defend Stormwind from these accursed invaders? $b $bThere are strange runic circles outside, glowing with the same energy that surrounds the undead and the Necropolis above. They have significance, I\'m certain, and I want you to find out what. Thin the numbers of those aberrations while you\'re at it; bring me proof of their death along with your results, and I will reward you.  Go!",
     ["O"] = "Collect three Dim Necrotic Stones from the Scourge outside Stormwind and investigate the glowing runic circles nearby their encampment.",
     ["T"] = "Investigate the Scourge of Stormwind",
   },
   [9261] = {
-    ["D"] = "The Lich King has sent his undead upon our very doorstep; we cannot remain idle! Surely you will step up to defend Ironforge from these accursed invaders?$B$BThere are strange runic circles outside, glowing with the same energy that surrounds the undead and the Necropolis above. They have significance, I\'m certain, and I want you to find out what. Thin the numbers of those aberrations while you\'re at it; bring me proof of their death along with your results, and I will reward you. Go!",
+    ["D"] = "The Scourge is camped upon our very doorstep; we cannot remain idle! Surely you will step up to defend Ironforge from these accursed invaders? $b $bThere are strange runic circles outside, glowing with the same energy that surrounds the undead and the Necropolis above. They have significance, I\'m certain, and I want you to find out what. Thin the numbers of those aberrations while you\'re at it; bring me proof of their death along with your results, and I will reward you.  Go!",
     ["O"] = "Collect three Dim Necrotic Stones from the Scourge outside Ironforge and investigate the glowing runic circles nearby their encampment.",
     ["T"] = "Investigate the Scourge of Ironforge",
   },
   [9262] = {
-    ["D"] = "The Lich King has sent his undead upon our very doorstep; we cannot remain idle! Surely you will step up to defend Darnassus from these accursed invaders?$B$BThere are strange runic circles outside, glowing with the same energy that surrounds the undead and the Necropolis above. They have significance, I\'m certain, and I want you to find out what. Thin the numbers of those aberrations while you\'re at it; bring me proof of their death along with your results, and I will reward you. Go!",
+    ["D"] = "The Scourge is camped upon our very doorstep; we cannot remain idle! Surely you will step up to defend Darnassus from these accursed invaders? $b $bThere are strange runic circles outside, glowing with the same energy that surrounds the undead and the Necropolis above. They have significance, I\'m certain, and I want you to find out what. Thin the numbers of those aberrations while you\'re at it; bring me proof of their death along with your results, and I will reward you.  Go!",
     ["O"] = "Collect three Dim Necrotic Stones from the Scourge outside Darnassus and investigate the glowing runic circles nearby their encampment.",
     ["T"] = "Investigate the Scourge of Darnassus",
   },
@@ -21114,6 +21849,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["T"] = "Dressing the Part",
   },
+  [9273] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Redeem iCoke Prize Voucher",
+  },
   [9292] = {
     ["D"] = "On the corpse of the fallen abomination, you discover a cracked crystal, slowly pulsing with necrotic energy.",
     ["O"] = "Bring the Cracked Necrotic Crystal to Lieutenant Orrin outside the gates of Stormwind.",
@@ -21123,6 +21863,21 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "You found this letter on one of the many Scourge minions you\'ve slain. From its appearance and smell, it has been with the undead for some time. Perhaps someone at Light\'s Hope Chapel would be interested in examining it further...",
     ["O"] = "Take the Torn Letter to the Keeper of the Rolls at Light\'s Hope Chapel in the Eastern Plaguelands.",
     ["T"] = "Letter from the Front",
+  },
+  [9296] = {
+    ["D"] = "This stone radiates a dark energy. You should deliver it to SOMEONE.",
+    ["O"] = "Deliver the Dim Necrotic Stone to SOMEONE.",
+    ["T"] = "reuse",
+  },
+  [9297] = {
+    ["D"] = "This stone radiates a dark energy. You should deliver it to SOMEONE.",
+    ["O"] = "Deliver the Dim Necrotic Stone to SOMEONE.",
+    ["T"] = "reuse",
+  },
+  [9298] = {
+    ["D"] = "This stone radiates a dark energy. You should deliver it to SOMEONE.",
+    ["O"] = "Deliver the Dim Necrotic Stone to SOMEONE.",
+    ["T"] = "reuse",
   },
   [9299] = {
     ["D"] = "You found this letter on one of the many Scourge minions you\'ve slain. From its appearance and smell, it has been with the undead for some time. Perhaps someone at Light\'s Hope Chapel would be interested in examining it further...",
@@ -21264,6 +22019,11 @@ pfDB["quests"]["enUS"] = {
     ["O"] = "",
     ["T"] = "Tabard of the Argent Dawn",
   },
+  [9353] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Redeem iCoke Gift Box Voucher",
+  },
   [9362] = {
     ["D"] = "There isn\'t much time, $n!  My scrying spells have revealed a powerful source of magic.  I cannot leave the tower, and would ask you to kill the vile creature in possession of this artifact.$b$bThe pathetic little cretin is known as Warlord Krellian, hiding behind his guards in the Temple of Zin-Malor.  Burn him to ashes and take the prismatic shell he covets so dearly.",
     ["O"] = "Retrieve the Prismatic Shell for Archmage Xylem.  The Archmage resides in a tower atop the cliffs of Azshara.",
@@ -21280,7 +22040,7 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "A Thief\'s Reward",
   },
   [9367] = {
-    ["D"] = "Midsummer is upon us once again!$B$BEach year, as tradition dictates, Flamekeepers are chosen to tend the bonfires within our capitals. While fires are burning throughout Azeroth, it is imperative that ours be the hottest and brightest, to properly pay homage to the season.$B$BIn fact, I have a task for you, if you don\'t mind. I\'ve not yet heard if the fires in all capitals are properly burning. Travel there yourself and warm yourself by the fires--make sure they\'re hot!",
+    ["D"] = "Midsummer is upon us once again!$b$bEach year, as tradition dictates, Flamekeepers are chosen to tend the bonfires within our capitals. While fires are burning throughout Azeroth, it is imperative that ours be the hottest and brightest, to properly pay homage to the season.$b$bIn fact, I have a task for you, if you don\'t mind. I\'ve not yet heard if the fires in all capitals are properly burning. Travel there yourself and warm yourself by the fires--make sure they\'re hot!",
     ["O"] = "Touch the bonfires within Stormwind, Ironforge, and Darnassus, then speak to a Festival Loremaster within the capital cities.",
     ["T"] = "The Festival of Fire",
   },
@@ -21300,14 +22060,34 @@ pfDB["quests"]["enUS"] = {
     ["T"] = "A Light in Dark Places",
   },
   [9388] = {
-    ["D"] = "There are many flames burning throughout the world today, $n. The trickiest fires to tend are those that burn green; they do not stay lit long without supervision. Make certain the emerald fires still burn on Kalimdor for our Flamekeeper, eh?$B$BYou will find them near Ratchet in the Barrens, close to the Master\'s Glaive in Darkshore, in the forest of Ashenvale by the bridge near Silverwing Outpost, and near the road to Windshear Crag along the main road in Stonetalon Mountains.",
+    ["D"] = "There are many flames burning throughout the world today, $n. The trickiest fires to tend are those that burn green; they do not stay lit long without supervision. Make certain the emerald fires still burn on Kalimdor for our Flamekeeper, eh?$b$bYou will find them near Ratchet in the Barrens, close to the Master\'s Glaive in Darkshore, in the forest of Ashenvale by the bridge near Silverwing Outpost, and near the road to Windshear Crag along the main road in Stonetalon Mountains.",
     ["O"] = "Visit the bonfires within Ashenvale, the Barrens, Darkshore, and Stonetalon Mountains, then speak with the Festival Flamekeeper.",
     ["T"] = "Flickering Flames in Kalimdor",
   },
   [9389] = {
-    ["D"] = "The Midsummer Fire Festival traditionally lights up the land with a myriad of flames. Some argue that the green fires are the finest, as they are the hardest to maintain and have such a distinctive hue.$B$BMake sure they still burn in the Eastern Kingdoms for our Flamekeeper. They sit near Dun Modr in the Wetlands, close to Pyrewood Village within Silverpine Forest, on the cliffs overlooking the lighthouse in Westfall, and by the ruined tower in Hillsbrad Foothills.",
+    ["D"] = "The Midsummer Fire Festival traditionally lights up the land with a myriad of flames. Some argue that the green fires are the finest, as they are the hardest to maintain and have such a distinctive hue.$b$bMake sure they still burn in the Eastern Kingdoms for our Flamekeeper. They sit near Dun Modr in the Wetlands, close to Pyrewood Village within Silverpine Forest, on the cliffs overlooking the lighthouse in Westfall, and by the ruined tower in Hillsbrad Foothills.",
     ["O"] = "Visit the bonfires within Hillsbrad Foothills, Silverpine Forest, Westfall, and the Wetlands, then speak with the Festival Flamekeeper.",
     ["T"] = "Flickering Flames in the Eastern Kingdoms",
+  },
+  [9411] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>Infused Bandages",
+  },
+  [9412] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>Crystal Flake Throat Lozenge",
+  },
+  [9413] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>Crystal Flake Throat Lozenge",
+  },
+  [9414] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>Infused Bandages",
   },
   [9415] = {
     ["D"] = "Are you Marshal Bluewall\'s new recruits? Of course you are.$b$bWhat are you waiting for? Good soldiers are dying in the desert. Aren\'t you excited to join them?$b$bNow, get going and don\'t dry out on the way.",
@@ -21328,6 +22108,51 @@ pfDB["quests"]["enUS"] = {
     ["D"] = "For some time now, we have been tapping the crystal resources of the Silithus desert. The only dangers we faced were from the creatures that made this place their home and the oppressive sand and dust and heat.$b$bBut now the Alliance seems to have caught on to what we have found here. It is now a race between us to capture the natural resources, and keep them from the other.$b$bI need every set of hands that is available. I hope I have yours.",
     ["O"] = "Find and deliver Silithyst to the Silithyst Extractor then speak with General Kirika at the Horde encampment near Hive\'Regal.",
     ["T"] = "Scouring the Desert",
+  },
+  [9458] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>Potion of Heightened Senses",
+  },
+  [9459] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>Anti-crit Potion",
+  },
+  [9477] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>Potion of Nature\'s Armor",
+  },
+  [9478] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>Portable Healing Font",
+  },
+  [9479] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>Glorious Standard of the Alliance",
+  },
+  [9480] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>Debuff Banner",
+  },
+  [9481] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>Light Consumable",
+  },
+  [9482] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "<UNUSED>Nature Resist Potion",
+  },
+  [9556] = {
+    ["D"] = "You\'ve no doubt been fighting long and hard among the towers, $r. We would like to give something back to you in return for your defense of these lands, but first, you must prove to us you understand the weight of the tragedies that took place here.$b$bWalk the streets of Stratholme and find a vial of the holy water. Once you have it, travel to the mage quarter of Stormwind or the Undercity... There, if you are victorious within these lands, you will find my colleague.",
+    ["O"] = "Collect a bottle of Stratholme Holy Water from within the city of Stratholme and deliver it to the Lordaeron Mage within the Mage Quarter of Stormwind or the Undercity when your side is victorious in the Eastern Plaguelands.",
+    ["T"] = "To The Victor...",
   },
   [9664] = {
     ["D"] = "Welcome to the Plaguelands, $n. As you know, the Forsaken and their allies hold the lands to the west of here against our best efforts. The Alliance commanders have decided that here in the east, we will establish new fortifications to tighten the noose around our enemies.$b$bTowers long abandoned since the days of Lordaeron are to be seized and rebuilt for this purpose. These lands are dangerous, and we could use your help.",
