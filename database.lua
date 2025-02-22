@@ -567,7 +567,7 @@ function pfDatabase:GetRaceMaskByID(id, db)
       end
 
       -- apply starter faction as racemask
-      if questStartRaceMask > 0 and questStartRaceMask ~= raceMask then
+      if raceMask == 0 and questStartRaceMask > 0 and questStartRaceMask ~= raceMask then
         raceMask = questStartRaceMask
       end
     end
