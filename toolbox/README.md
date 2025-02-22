@@ -36,7 +36,6 @@ Import the game client data SQL files:
 
     mariadb -u mangos -p"mangos" pfquest < ../client-data.sql
 
-
 ### Vanilla (VMaNGOS)
 
 Manually download the latest [VMaNGOS Database](https://github.com/vmangos/core/releases/tag/db_latest) and unzip it.
@@ -49,6 +48,65 @@ Clone the VMaNGOS core repository to obtain all SQL updates.
 
     cd core/sql/migrations
     for file in *_world.sql; do mariadb -u mangos -p"mangos" vmangos < $file; done
+    cd -
+
+Create `_loc10` entries to VMaNGOS translation tables for `ptBR`:
+
+    mariadb -u mangos -p"mangos" vmangos <<< '
+        # select database
+        USE vmangos;
+
+        # locales_creature
+        ALTER TABLE locales_creature ADD name_loc10 varchar(100);
+        ALTER TABLE locales_creature ADD subname_loc10 varchar(100);
+
+        # locales_gameobject
+        ALTER TABLE locales_gameobject ADD name_loc10 varchar(100);
+
+        # locales_item
+        ALTER TABLE locales_item ADD name_loc10 varchar(100);
+        ALTER TABLE locales_item ADD description_loc10 varchar(255);
+
+        # locales_quest
+        ALTER TABLE locales_quest ADD Title_loc10 TEXT;
+        ALTER TABLE locales_quest ADD Details_loc10 TEXT;
+        ALTER TABLE locales_quest ADD Objectives_loc10 TEXT;
+        ALTER TABLE locales_quest ADD ObjectiveText1_loc10 TEXT;
+        ALTER TABLE locales_quest ADD ObjectiveText2_loc10 TEXT;
+        ALTER TABLE locales_quest ADD ObjectiveText3_loc10 TEXT;
+        ALTER TABLE locales_quest ADD ObjectiveText4_loc10 TEXT;
+        ALTER TABLE locales_quest ADD OfferRewardText_loc10 TEXT;
+        ALTER TABLE locales_quest ADD RequestItemsText_loc10 TEXT;
+        ALTER TABLE locales_quest ADD EndText_loc10 TEXT;
+    '
+
+Use the current `ptBR` localizations from the vmangos core repo and patch them into `_loc10` entries.
+
+    cd core/sql/translations/ptBR
+    git checkout .
+    sed -i 's/`name`/`name_loc10`/g' *.sql
+    sed -i 's/`subname`/`subname_loc10`/g' *.sql
+    sed -i 's/`description`/`description_loc10`/g' *.sql
+    sed -i 's/`Title`/`Title_loc10`/g' *.sql
+    sed -i 's/`Details`/`Details_loc10`/g' *.sql
+    sed -i 's/`Objectives`/`Objectives_loc10`/g' *.sql
+    sed -i 's/`ObjectiveText1`/`ObjectiveText1_loc10`/g' *.sql
+    sed -i 's/`ObjectiveText2`/`ObjectiveText2_loc10`/g' *.sql
+    sed -i 's/`ObjectiveText3`/`ObjectiveText3_loc10`/g' *.sql
+    sed -i 's/`ObjectiveText4`/`ObjectiveText4_loc10`/g' *.sql
+    sed -i 's/`OfferRewardText`/`OfferRewardText_loc10`/g' *.sql
+    sed -i 's/`RequestItemsText`/`RequestItemsText_loc10`/g' *.sql
+    sed -i 's/`EndText`/`EndText_loc10`/g' *.sql
+
+    sed -i 's/`creature_template`/`locales_creature`/' *.sql
+    sed -i 's/`gameobject_template`/`locales_gameobject`/' *.sql
+    sed -i 's/`item_template`/`locales_item`/' *.sql
+    sed -i 's/`quest_template`/`locales_quest`/' *.sql
+
+    mariadb -u mangos -p"mangos" vmangos < creature_template.sql
+    mariadb -u mangos -p"mangos" vmangos < gameobject_template.sql
+    mariadb -u mangos -p"mangos" vmangos < item_template.sql
+    mariadb -u mangos -p"mangos" vmangos < quest_template.sql
     cd -
 
 ### The Burning Crusade (CMaNGOS)
