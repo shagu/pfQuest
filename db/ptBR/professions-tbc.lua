@@ -1,0 +1,1 @@
+pfDB["professions"]["ptBR-tbc"] = {}

@@ -16,6 +16,7 @@ pfDB.locales = {
   ["zhTW"] = "Taiwanese",
   ["esES"] = "Spanish",
   ["ruRU"] = "Russian",
+  ["ptBR"] = "Portuguese",
 }
 
 -- Patch databases to further expansions

@@ -17,5 +17,6 @@ init\zhCN.xml
 init\zhTW.xml
 init\esES.xml
 init\ruRU.xml
+init\ptBR.xml
 
 init\addon.xml
