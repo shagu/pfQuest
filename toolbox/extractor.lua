@@ -104,6 +104,7 @@ local all_locales = {
   ["zhTW"] = 5,
   ["esES"] = 6,
   ["ruRU"] = 8,
+  ["ptBR"] = 10,
 }
 
 local config = {
