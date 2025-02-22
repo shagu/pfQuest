@@ -129,6 +129,50 @@ Clone the latest CMaNGOS TBC database and the translations of the Mangos-Extras 
     mariadb -u mangos -p"mangos" cmangos-tbc < database/Translations/1_LocaleTablePrepare.sql
     for file in database/Translations/1_LocaleTablePrepare.sql database/Translations/Translations/*/*.sql; do echo "$file"; mariadb -u mangos -p"mangos" cmangos-tbc < "$file"; done
 
+
+## Optimize Database Performance
+
+Run the following commands to improve extractor performance by indexing the sql entries:
+
+    mariadb <<< '
+        use 'vmangos';
+        # creatures
+        CREATE INDEX idx_cse_guid ON creature_spawn_entry(guid);
+        CREATE INDEX idx_cse_entry ON creature_spawn_entry(entry);
+        CREATE INDEX idx_guid_map_position ON creature(guid, map, position_x, position_y);
+        # gameobjects
+        CREATE INDEX idx_gse_guid ON gameobject_spawn_entry(guid);
+        CREATE INDEX idx_gse_entry ON gameobject_spawn_entry(entry);
+        # items
+        CREATE INDEX idx_got_data1 ON gameobject_template(data1);
+        CREATE INDEX idx_golt_entry ON gameobject_loot_template(entry);
+        CREATE INDEX idx_npcvt_entry ON npc_vendor_template(entry);
+        CREATE INDEX idx_ct_entry ON creature_template(Entry);
+
+        use 'cmangos-tbc';
+        # creatures
+        CREATE INDEX idx_cse_guid ON creature_spawn_entry(guid);
+        CREATE INDEX idx_cse_entry ON creature_spawn_entry(entry);
+        CREATE INDEX idx_guid_map_position ON creature(guid, map, position_x, position_y);
+        # gameobjects
+        CREATE INDEX idx_gse_guid ON gameobject_spawn_entry(guid);
+        CREATE INDEX idx_gse_entry ON gameobject_spawn_entry(entry);
+        # items
+        CREATE INDEX idx_got_data1 ON gameobject_template(data1);
+        CREATE INDEX idx_golt_entry ON gameobject_loot_template(entry);
+        CREATE INDEX idx_npcvt_entry ON npc_vendor_template(entry);
+        CREATE INDEX idx_ct_entry ON creature_template(Entry);
+
+        use 'pfquest';
+        # worldmap
+        CREATE INDEX idx_wma_vanilla_sizes ON pfquest.WorldMapArea_vanilla(x_min, x_max, y_min, y_max);
+        CREATE INDEX idx_wma_vanilla_mapid ON pfquest.WorldMapArea_vanilla(mapID);
+        CREATE INDEX idx_wma_vanilla_area ON pfquest.WorldMapArea_vanilla(areatableID);
+        CREATE INDEX idx_wma_tbc_sizes ON pfquest.WorldMapArea_tbc(x_min, x_max, y_min, y_max);
+        CREATE INDEX idx_wma_tbc_mapid ON pfquest.WorldMapArea_tbc(mapID);
+        CREATE INDEX idx_wma_tbc_area ON pfquest.WorldMapArea_tbc(areatableID);
+    '
+
 ## Run the Extractor
 
 Start the database extractor
