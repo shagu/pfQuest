@@ -462,8 +462,18 @@ do -- welcome/init popup dialog
   pfQuestInit:Hide()
   pfQuestInit:SetWidth(400)
   pfQuestInit:SetHeight(270)
+  pfQuestInit:SetMovable(true)
+  pfQuestInit:EnableMouse(true)
   pfQuestInit:SetPoint("CENTER", 0, 0)
   pfQuestInit:RegisterEvent("PLAYER_ENTERING_WORLD")
+  pfQuestInit:SetScript("OnMouseDown", function()
+    this:StartMoving()
+  end)
+
+  pfQuestInit:SetScript("OnMouseUp", function()
+    this:StopMovingOrSizing()
+  end)
+
   pfQuestInit:SetScript("OnEvent", function()
     if pfQuest_config.welcome ~= "1" then
       -- parse current config
