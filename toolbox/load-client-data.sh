@@ -209,8 +209,22 @@ EOF
       dbcslot=0 # there's no index for ruRU in 1.12, using enUS index
     elif [ "$loc" = "ptBR" ] && [ "$v" == "vanilla" ]; then
       dbcslot=0 # there's no index for ptBR in 1.12, using enUS index
-    elif [ "$v" == "turtle" ]; then
-      dbcslot=0
+    elif [ "$loc" = "deDE" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "esMX" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "frFR" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "jaJP" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "koKR" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "ruRU" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "zhTW" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "ptBR" ] && [ "$v" == "turtle" ]; then
+      dbcslot=7 # turtle uses xxYY (loc7) for ptBR
     else
       dbcslot=$index
     fi
@@ -259,8 +273,22 @@ EOF
       dbcslot=0 # there's no index for ruRU in 1.12, using enUS index
     elif [ "$loc" = "ptBR" ] && [ "$v" == "vanilla" ]; then
       dbcslot=0 # there's no index for ptBR in 1.12, using enUS index
-    elif [ "$v" == "turtle" ]; then
-      dbcslot=0
+    elif [ "$loc" = "deDE" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "esMX" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "frFR" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "jaJP" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "koKR" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "ruRU" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "zhTW" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "ptBR" ] && [ "$v" == "turtle" ]; then
+      dbcslot=7 # turtle uses xxYY (loc7) for ptBR
     else
       dbcslot=$index
     fi
