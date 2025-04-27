@@ -84,7 +84,7 @@ end
 -- on how to increase the limits, and also displaying a link to an example.
 if client <= 11200 then
   local memlimit = "The user interface is using more than %dMB of memory.\n\n" ..
-    "Set '|cffffee55Script Memory|r' to '|cffffee550|r' in the character selection screen:"
+    "Set '|cffffee55Script Memory|r' to '|cffffee550|r' in the addon selection of your character login screen:"
 
   local striptex = function(frame)
     for _,v in ipairs({frame:GetRegions()}) do
@@ -100,7 +100,7 @@ if client <= 11200 then
     showAlert = 1,
     OnShow = function()
       pfUI.api.CreateBackdrop(getglobal(this:GetName().."EditBox"), 3, true)
-      getglobal(this:GetName().."EditBox"):SetText("https://i.imgur.com/rZXwaK0.jpg")
+      getglobal(this:GetName().."EditBox"):SetText("https://shagu.org/script-memory.jpg")
       getglobal(this:GetName().."EditBox"):SetTextInsets(5, 5, 5, 5)
       getglobal(this:GetName().."EditBox"):SetJustifyH("CENTER")
       getglobal(this:GetName().."EditBox"):SetWidth(220)
