@@ -475,13 +475,34 @@ do -- welcome/init popup dialog
     mode = 2
   }
 
+  local desaturate = function(texture, state)
+    local supported = texture:SetDesaturated(state)
+    if not supported then
+      if state then
+        texture:SetVertexColor(0.5, 0.5, 0.5)
+      else
+        texture:SetVertexColor(1.0, 1.0, 1.0)
+      end
+    end
+  end
+
   -- create welcome/init window
   pfQuestInit = CreateFrame("Frame", "pfQuestInit", UIParent)
   pfQuestInit:Hide()
   pfQuestInit:SetWidth(400)
   pfQuestInit:SetHeight(270)
+  pfQuestInit:SetMovable(true)
+  pfQuestInit:EnableMouse(true)
   pfQuestInit:SetPoint("CENTER", 0, 0)
   pfQuestInit:RegisterEvent("PLAYER_ENTERING_WORLD")
+  pfQuestInit:SetScript("OnMouseDown", function()
+    this:StartMoving()
+  end)
+
+  pfQuestInit:SetScript("OnMouseUp", function()
+    this:StopMovingOrSizing()
+  end)
+
   pfQuestInit:SetScript("OnEvent", function()
     if pfQuest_config.welcome ~= "1" then
       -- parse current config
@@ -502,10 +523,10 @@ do -- welcome/init popup dialog
 
   pfQuestInit:SetScript("OnShow", function()
     -- reload ui elements
-    pfQuestInit[1].bg:SetDesaturated(true)
-    pfQuestInit[2].bg:SetDesaturated(true)
-    pfQuestInit[3].bg:SetDesaturated(true)
-    pfQuestInit[config_stage.mode].bg:SetDesaturated(false)
+    desaturate(pfQuestInit[1].bg, true)
+    desaturate(pfQuestInit[2].bg, true)
+    desaturate(pfQuestInit[3].bg, true)
+    desaturate(pfQuestInit[config_stage.mode].bg, false)
     pfQuestInit.checkbox:SetChecked(config_stage.arrow)
   end)
 
@@ -548,11 +569,10 @@ do -- welcome/init popup dialog
     pfUI.api.SkinButton(pfQuestInit[i])
 
     pfQuestInit[i]:SetScript("OnClick", function()
-      pfQuestInit[1].bg:SetDesaturated(true)
-      pfQuestInit[2].bg:SetDesaturated(true)
-      pfQuestInit[3].bg:SetDesaturated(true)
-      pfQuestInit[this:GetID()].bg:SetDesaturated(false)
-
+      desaturate(pfQuestInit[1].bg, true)
+      desaturate(pfQuestInit[2].bg, true)
+      desaturate(pfQuestInit[3].bg, true)
+      desaturate(pfQuestInit[this:GetID()].bg, false)
       config_stage.mode = this:GetID()
     end)
 

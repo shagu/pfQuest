@@ -104,6 +104,7 @@ local all_locales = {
   ["zhTW"] = 5,
   ["esES"] = 6,
   ["ruRU"] = 8,
+  ["ptBR"] = 10,
 }
 
 local config = {
@@ -1760,12 +1761,12 @@ for id, settings in pairs(config.expansions) do
       local locale = loc .. exp
       local prev_locale = loc
 
-      pfDB["units"][locale] = tablesubstract(pfDB["units"][locale], pfDB["units"][prev_locale])
-      pfDB["objects"][locale] = tablesubstract(pfDB["objects"][locale], pfDB["objects"][prev_locale])
-      pfDB["items"][locale] = tablesubstract(pfDB["items"][locale], pfDB["items"][prev_locale])
-      pfDB["quests"][locale] = tablesubstract(pfDB["quests"][locale], pfDB["quests"][prev_locale])
-      pfDB["zones"][locale] = tablesubstract(pfDB["zones"][locale], pfDB["zones"][prev_locale])
-      pfDB["professions"][locale] = tablesubstract(pfDB["professions"][locale], pfDB["professions"][prev_locale])
+      pfDB["units"][locale] = pfDB["units"][locale] and tablesubstract(pfDB["units"][locale], pfDB["units"][prev_locale]) or {}
+      pfDB["objects"][locale] = pfDB["objects"][locale] and tablesubstract(pfDB["objects"][locale], pfDB["objects"][prev_locale]) or {}
+      pfDB["items"][locale] = pfDB["items"][locale] and tablesubstract(pfDB["items"][locale], pfDB["items"][prev_locale]) or {}
+      pfDB["quests"][locale] = pfDB["quests"][locale] and tablesubstract(pfDB["quests"][locale], pfDB["quests"][prev_locale]) or {}
+      pfDB["zones"][locale] = pfDB["zones"][locale] and tablesubstract(pfDB["zones"][locale], pfDB["zones"][prev_locale]) or {}
+      pfDB["professions"][locale] = pfDB["professions"][locale] and tablesubstract(pfDB["professions"][locale], pfDB["professions"][prev_locale]) or {}
     end
   end
 

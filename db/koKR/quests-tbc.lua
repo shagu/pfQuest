@@ -1,9 +1,4 @@
 pfDB["quests"]["koKR-tbc"] = {
-  [1] = {
-    ["D"] = "$Tpunk;!  Kill Kobold Vermin, 2 of em. NEW TEST AGAIN",
-    ["O"] = "Kill Kobold Vermin, 2 of em.",
-    ["T"] = "The \"Chow\" Quest (123)aa",
-  },
   [2] = {
     ["D"] = "The mighty hippogryph Sharptalon has been slain, with the claw of the felled beast serving as a testament to your victory.  Senani Thunderheart at the Splintertree Post will no doubt be interested in seeing this trophy as proof of your deeds.",
     ["O"] = "Bring Sharptalon\'s Claw to Senani Thunderheart at Splintertree Post, Ashenvale.",
@@ -79,6 +74,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "호숫골에 있는 치안대장 매리스에게 마모된 도끼 10개를 가져가야 합니다.",
     ["T"] = "검은바위 부족의 위협",
   },
+  [21] = {
+    ["D"] = "Your previous investigations are proof that the Echo Ridge Mine needs purging.  Return to the mine and help clear it of kobolds.$B$BWaste no time, $N.  The longer the kobolds are left unmolested in the mine, the deeper a foothold they gain in Northshire.",
+    ["O"] = "Kill 12 Kobold Laborers, then return to Marshal McBride at Northshire Abbey.",
+    ["T"] = "메아리 광산 전투",
+  },
   [23] = {
     ["D"] = "The paw of the mighty bear Ursangous is your trophy for this part of the Ashenvale Hunt.  On the paw is a small quarter-crescent emblem; the significance of the emblem remains a mystery.$B$BThe paw should be brought to Senani Thunderheart in Splintertree Post to prove that you have bested the mighty creature and completed this portion of the hunt.",
     ["O"] = "Bring Ursangous\'s Paw to Senani Thunderheart at Splintertree Post, Ashenvale.",
@@ -99,10 +99,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "달숲의 밤의 안식처에 있는 덴드리트 스타블레이즈와 대화해야 합니다.",
     ["T"] = "꼭 배워야 할 교훈",
   },
-  [27] = {
-    ["D"] = "나는 지금까지 죽 그대가 발전하는 모습을 아주 기쁜 마음으로 지켜봐 왔네. 확실히 그대는 소중한 자연의 수호자로 성장해 가고 있군.$B$B이제 세나리우스의 축복으로 우리가 그 형상을 취할 수 있게 된 여러 가지 동물의 상 중 하나에 대해 더 자세히 배워야 할 때가 되었네. 바로 수중 형상을 통달하는 것이지. 이를 배우려면 달숲에 있는 밤의 안식처으로 가서 그곳에 있는 세나리온 의회의 일원인 덴드리트 스타블레이즈와 얘기해 보시게. 그가 더 자세히 가르쳐 줄 걸세.",
-    ["O"] = "달숲의 밤의 안식처에 있는 덴드리트 스타블레이즈와 대화해야 합니다.",
-    ["T"] = "꼭 배워야 할 교훈",
+  [28] = {
+    ["D"] = "For your first trial, search the depths of Lake Elune\'ara to locate a Shrine Bauble.  It decays rapidly, so proceed with it to the Shrine of Remulos post haste.  Use the bauble at the shrine, and then speak with Tajarri there; she is one of Moonglade\'s most trusted wardens.$B$BYou only have a set amount of time to complete the task, and you may be competing against other druids searching for baubles themselves.  Mental and physical dexterity will be critical to your success.$B$BGood luck, $N.",
+    ["O"] = "Find a Shrine Bauble in Lake Elune\'ara, and take it to the Shrine of Remulos in northwestern Moonglade.  Once there, use the Shrine Bauble.$B$BYou must speak with Tajarri at the shrine afterwards in order to complete the trial.",
+    ["T"] = "Trial of the Lake",
+  },
+  [29] = {
+    ["D"] = "For your first trial, search the depths of Lake Elune\'ara to locate a Shrine Bauble.  It decays rapidly, so proceed with it to the Shrine of Remulos post haste.  Use the bauble at the shrine, and then speak with Tajarri there; she is one of Moonglade\'s most trusted wardens.$B$BYou only have a set amount of time to complete the task, and you may be competing against other druids searching for baubles themselves.  Mental and physical dexterity will be critical to your success.$B$BGood luck, $N.",
+    ["O"] = "Find a Shrine Bauble in Lake Elune\'ara, and take it to the Shrine of Remulos in northwestern Moonglade.  Once there, use the Shrine Bauble.$B$BYou must speak with Tajarri at the shrine afterwards in order to complete the trial.",
+    ["T"] = "Trial of the Lake",
   },
   [30] = {
     ["D"] = "이제 두 번째 시험으로 두 개로 쪼개진 바다표범의 펜던트를 찾아야 합니다. 하나는 물에서 미끄러지듯 움직이는 바다표범의 민첩성을, 다른 하나는 엄청난 지구력과 인내로부터 힘을 그러모으죠. 우리 드루이드는 이 두 가지 힘을 모아 바다표범으로 변신합니다.$B$B펜던트 조각들이 있는 곳을 알아보려면 달숲 주민들에게 여쭤보세요. 두 조각을 이곳으로 가져와서 하나로 합친 다음, 완성된 바다표범의 펜던트를 덴드리트 스타블레이즈에게 가져가도록 하세요.",
@@ -139,20 +144,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "베르나 펄브라우가 살마 살딘에게 서부정통 스튜 조리법을 전해 달라고 했습니다.",
     ["T"] = "서부정통 스튜",
   },
-  [37] = {
-    ["D"] = "며칠 전 강 주변 정찰을 위해 롤프와 말라카이를 파견했는데 아직 돌아오질 않았습니다. 이들에게 무슨 일이 일어났는지를 알아야 보고를 할 수 있는데 말입니다.$B$B강을 따라 북쪽으로 가서 그 두 경비병을 찾아봐 주시겠습니까? 하다못해 시체라도 말입니다.",
-    ["O"] = "경비병 토마스가 강 북쪽으로 가서 사라진 두 경비병, 롤프와 말라카이를 찾아달라고 했습니다.",
-    ["T"] = "사라진 경비병 수색",
-  },
   [38] = {
     ["D"] = "서부정통 스튜 만드는 데 재료가 좀 필요한데 좀 도와주세요! $B $B 질깃한 독수리 고기 3개 $B 뿔엄니멧돼지 주둥이 3개 $B 멀록 눈알 3개 $B 오크라 3개를 가져다주세요.",
     ["O"] = "살마 살딘이 질깃한 독수리 고기 3개, 뿔엄니멧돼지 주둥이 3개, 멀록 눈알 3개, 그리고 오크라 3개를 구해 달라고 했습니다.",
     ["T"] = "서부정통 스튜",
-  },
-  [39] = {
-    ["D"] = "더그한 치안대장님께 말라카이와 롤프의 죽음을 말씀드려 주십시오. 그리고 엘윈 숲 동쪽에 있는 멀록들을 견제하기엔 현재 병력만으로는 무리라고 보고해 주시기 바랍니다.$B$B이쪽에 충분한 병력을 배치할 만큼 상황이 여의치 않다는 것은 알지만 더그한님께서 이 지역에 희망이 되어 줄 누군가를 보내주시리라 믿습니다.",
-    ["O"] = "황금골에 있는 치안대장 더그한에게 보고해야 합니다.",
-    ["T"] = "토마스의 보고 전달",
   },
   [40] = {
     ["D"] = "에... 엘윈 숲에 위험이 닥쳐오고 있어요! 멀록들이 엘윈 숲 동쪽에 있는 가... 강가를 거슬러 올라가며 무... 물고기를 겁주고 선량한 사람들을 해... 해치고 있어요!$B$B제가 더... 더그한 치안대장님께 분명히 말씀드렸지만 그분은 노... 놀과 도둑을 더 걱정하고 계세요. 그분은 머... 멀록들이 위협이라는 걸 미... 믿지 않으세요.$B$B부디 더... 더그한님께 동쪽으로 병력을 더 보내달라고 서... 설득해 주세요!",
@@ -234,11 +229,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "황금골에 있는 윌리엄 페슬에게 큰 양초 8개를 가져가야 합니다.",
     ["T"] = "코볼트 양초",
   },
-  [61] = {
-    ["D"] = "우리 형 모건이 스톰윈드에서 양초가 배달되기를 기다리고 있는데 제가 거기까지 갈 시간이 없답니다. 제 대신 이 짐을 운반해 주시면 형이 충분히 사례해 드릴 겁니다.$B$B지금까지 모은 양초를 다 포장했으니 이걸 가지고 스톰윈드 상업 지구에 있는 우리 상점인 페슬의 약제상에서 형 모건을 찾으시기 바랍니다.",
-    ["O"] = "스톰윈드 상업 지구에 있는 모건 페슬에게 윌리엄의 뱃짐을 가져가야 합니다.",
-    ["T"] = "스톰윈드로의 배달",
-  },
   [62] = {
     ["D"] = "북녘골에 있는 광산에만 문제가 있는 게 아닙니다! 엘윈의 개미굴 광산도 코볼트의 소굴이 되어 버렸다는 보고를 받았습니다.$B$B광산을 정찰하여 보고 내용이 사실인지 확인한 후 제게 돌아오십시오. 개미굴 광산은 황금골에서 남쪽 방향, 스톤필드 농장과 매클루어 포도밭 사이에 있습니다.",
     ["O"] = "개미굴 광산을 조사하고 황금골에 있는 치안대장 더그한에게 가야 합니다.",
@@ -284,16 +274,12 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Retrieve Stalvan\'s Undelivered Letter from the chest and deliver it to the Canal District in Stormwind.",
     ["T"] = "스탈반의 전설",
   },
-  [71] = {
-    ["D"] = "발견한 두 목걸이를 다리에서 근무하고 있는 경비병 토마스에게 가져다주고 부하 경비병들이 살해되었음을 알려야 합니다.",
-    ["O"] = "엘윈 숲 동쪽 다리에 있는 경비병 토마스에게 롤프와 말라카이의 목걸이를 가져가야 합니다.",
-    ["T"] = "토마스에게 보고",
-  },
   [72] = {
     ["D"] = "My father was the caretaker of the estate long before I was.  He had to mop the blood up after the massacre.  But that\'s neither here nor there.$b$bThe last funds of the Flintridge trust have dried up.  Now the last of the family possessions are headed for auction.  Blame the tax vultures.  I guess if you\'re really itching to learn more you\'re free to look through this junk.  Who knows what you might find.",
     ["O"] = "Search through the packed up possessions for a clue.",
     ["T"] = "스탈반의 전설",
   },
+  [73] = "_",
   [75] = {
     ["D"] = "There was a bundle of parchments in the chest upstairs when I moved into this place.  I looked at them once when I first arrived but I gave up once the fog hazed over my peepers. $b$bDo an old, nearly-blind man a favor and check the chest upstairs for anything that might help you in your quest to discover more about this Stalvan character.  I\'m pretty sure there\'s a faded journal page that might be of interest to you.  Bring it to me and I\'ll help in anyway I can.",
     ["O"] = "Marshal Haggard wants you to check the chest upstairs for the Faded Journal Page.",
@@ -303,6 +289,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "당신 덕분에 개미굴 광산에 코볼트들이 우글거린다는 사실을 확인했으니, 이번에는 좀 더 멀리 있는 벽옥맥 광산을 조사해 봐야겠습니다.$B$B벽옥맥 광산을 탐색하여 코볼트가 있는지 확인해 주십시오. 벽옥맥 광산에 가려면 일단 길을 따라 동쪽으로 가다가 아조라의 탑이 나오면 거기서 북쪽으로 가시면 됩니다. 그러면 구릉에 있는 광산을 발견할 수 있습니다.",
     ["O"] = "벽옥맥 광산을 탐색한 다음 황금골에 있는 치안대장 더그한에게 보고해야 합니다.",
     ["T"] = "벽옥맥 광산",
+  },
+  [77] = {
+    ["D"] = "I possess original packaging materials for the ripple Dran Droffers seeks.  I will assist you in packaging the ripple for Malton\'s abrasive father... for a fee of two additional bottles of said ripple.  They are located in crates found in the abandoned Horde base near Skulk Rock.$B$BIt will be an arduous task, to wit; foul slimes and oozes will be found sticking to the ruins; rumor has it they are led by some sort of master ooze.  Regardless, procure the ripple and return to me here for packaging.",
+    ["O"] = "Recover 10 bottles of Hinterlands Honey Ripple from the crates located around the abandoned Horde base in Skulk Rock.",
+    ["T"] = "A Sticky Situation",
   },
   [78] = {
     ["D"] = "I know of someone who might be able to assist you.  Back when I was leading the Stormwind Guard, we used to get drinks at the Scarlet Raven Tavern in Darkshire.  The Innkeeper there, Smitts, was quite an expert on the local lore.  Show him this page and see what he has to say about it.",
@@ -318,6 +309,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "I have had my eye on that creep, Stalvan, for quite sometime.  But if this page was written by the same hand it proves his guilt beyond a shadow of a doubt.$b$bIn all his days keeping the Town Registry, Clerk Daltry has become an expert at identifying handwriting.  Show him this page and see if the writing matches that of the registry signature.",
     ["O"] = "Show Clerk Daltry the Bloodstained Journal Page.",
     ["T"] = "스탈반의 전설",
+  },
+  [81] = {
+    ["D"] = "I have taken the extra step of securing not only Dran\'s packaged ripple in the barrel, but also the extra bottles of ripple he is purloining.  While I may not hold Dran very highly, there is nothing worse than jostled ripple.  You\'re welcome.$B$BNow, deliver yon barrel to Dran Droffers in his salvage emporium in Orgrimmar.  Pray tell, please extend my warmest greetings to Malton; let him know that should he ever thirst for fine drink and finer drinking companions, we would be honored with his visit.",
+    ["O"] = "Deliver the barrel to Dran Droffers in Orgrimmar.",
+    ["T"] = "Ripple Delivery",
   },
   [82] = {
     ["D"] = "그럼, 그간 들어온 보고에 대해서 얘기해 주겠소. 녀석들이 한때 맹독의 둥지가 있던 물웅덩이에서 물을 모조리 빨아먹고 있다고 하오. 또... 다른 건 아무것도 아는 게 없소.$B$B그러니... 먼저 녀석들에 대해 좀 더 자세히 파악하는 것이 급선무요! 맹독의 둥지로 가서 그 생물들의 신체 기관을 좀 갖다주시오. 센티파르 기관 5개를 구해 연금술사 페슬저그에게 조사를 부탁하시오. 그 친구라면 분명 녀석들의 정체를 알아낼 수 있을 거요!",
@@ -338,6 +334,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "I lost my necklace, and think that guttersnipe Billy Maclure took it!  He\'s usually scuttling like a rat around the Maclure vineyards east of here. $B$BGet my necklace back for me, and you\'ll warm an old widow\'s heart.",
     ["O"] = "빌리 매클루어와 대화해야 합니다.",
     ["T"] = "잃어버린 목걸이",
+  },
+  [86] = {
+    ["D"] = "Maybe if I got a pie, I could tell you who has that necklace.  And you know, I think that old Bernice lady at that other farm makes great Pork Belly Pies... $B$BMaybe if you gave her some chunks of boar meat from the boars that hang around our farms, and told her what it was for, she\'d bake up a pie for you.",
+    ["O"] = "Bring 4 Chunks of Boar Meat to Auntie Bernice Stonefield at the Stonefield\'s Farm.",
+    ["T"] = "빌리를 위한 파이",
   },
   [87] = {
     ["D"] = "I was playing near the Fargodeep Mine, and I think I dropped, er...I mean I saw, the old lady\'s necklace.  Don\'t ask me how it got there...it wasn\'t me!$B$BWell anyway, I saw this big, gold-toothed kobold pick up the necklace and run into the mine.  Go find that kobold and you\'ll find the necklace, I swear!",
@@ -439,6 +440,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "윌리엄 페슬에게 스톤필드 할머니의 쪽지를 전달해야 합니다.",
     ["T"] = "윌리엄에게 보내는 쪽지",
   },
+  [108] = "_",
   [110] = {
     ["D"] = "I\'m going to spend some time taking a look at Scrimshank\'s surveying gear... as well as putting his personal effects in order.  I get the sneaking feeling behind my ears that this isn\'t the last loss we\'ll be facing against these bugs.$B$BI\'d like for you to check in with Alchemist Pestlezugg to see if he has had a chance to process the insect parts we sent him.  If they\'re ready, bring them to me.",
     ["O"] = "Check in Gadgetzan for Alchemist Pestlezugg and his analysis of the insect parts.",
@@ -574,6 +576,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "선장 샌더스의 사물함에서 다음 단서를 찾아야 합니다.",
     ["T"] = "선장 샌더스의 숨겨진 보물",
   },
+  [137] = "_",
   [138] = {
     ["D"] = "보물의 단서에는 다음과 같이 쓰여 있습니다. \"제법이군그래, 친구! 이제 정동쪽을 향해 갈 차례요. 동쪽 절벽 위의 길을 따라 동쪽으로 가시오. 길가에서 낡은 굴뚝의 잔해를 발견하면 다음 단서가 들어 있는 낡은 통을 발견할 것이오.\"",
     ["O"] = "다음 단서를 얻기 위해 굴뚝 잔해 근처에서 낡은 통을 찾아야 합니다.",
@@ -598,6 +601,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "데피아즈단의 은신처가 어디인지 알아내야 하네. 우리 정찰병의 보고에 따르면 달빛시내 마을, 황금해안 채석장, 그리고 장고로드 광산 사이의 길에서 데피아즈단 전령이 지나가는 것을 목격했다고 하네. 귀관이 가서 놈을 좀 잡아 주게나. 놈이 저항할 경우 처치한 다음 놈이 전하려던 전갈을 내게 가져오게.",
     ["O"] = "서부 몰락지대에서 데피아즈단 전령을 추적하여 그가 전하려던 전갈을 스타우트맨틀에게 전해야 합니다.",
     ["T"] = "데피아즈 결사단",
+  },
+  [143] = {
+    ["D"] = "Something odd is afoot with the Stormwind Army.  They should have been here in force by now.  Time is a luxury we don\'t have, however.  I will not stand by and watch the people of Lakeshire give their lives without trying to enlist more help.  I\'ve heard word of a people\'s militia forming in Westfall.$b$bTake this plea to their leader, Gryan Stoutmantle.  Perhaps Stoutmantle\'s men can lend some support here until the King sends reserves.",
+    ["O"] = "Magistrate Solomon wants you to take his written plea to Gryan Stoutmantle in Westfall.",
+    ["T"] = "Messenger to Westfall",
+  },
+  [144] = {
+    ["D"] = "Magistrate Solomon\'s note pains me to read.  But it is obvious he knows not the war which is waged in Westfall or else he would know better than to expect aid from the Militia.  If Stormwind had not deserted us as well, we would not have the need for the Militia.$b$bTake this response to your master in Redridge, $c.  And let him know that my heart is heavy with the loss of good men.",
+    ["O"] = "Return to Magistrate Solomon with Gryan Stoutmantle\'s response.",
+    ["T"] = "Messenger to Westfall",
   },
   [145] = {
     ["D"] = "염치없으나 다시 당신에게 도움을 청해야겠소. 이본로크 경에게 그늘숲의 정예 병력인 어둠의 순찰대를 파병하여 호숫골의 방어를 도와 달라는 탄원서를 작성하였소. 무엇보다도 이 서신을 그에게 빨리 전달하는 것이 중요하오. 한순간이라도 긴장의 끈을 놓지 마시오. 이본로크 경은 그늘숲의 중심에 있는 어둠골이라는 도시의 시장이오. 절대 길을 벗어나지 않도록 주의하시오.",
@@ -728,6 +741,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "우리를 좀 도와주실 수 있으신가요? 지난번 트로그가 습격한 이후로 경비대의 인원이 부족해서 말입니다. 우릴 도울 생각이 있는 사람이라면 누구든 대환영입니다.$B$B요즘엔 망할 놈의 트로그들이 사방팔방에서 나타나고 있다던데 여기 눈마루 골짜기도 예외는 아닙니다. 트로그는 주로 남동쪽 언덕 근처나 얼어붙은 호수 근방에 출몰하고 있습니다.$B$B그뿐만이 아닙니다. 며칠 전엔 서쪽에 있는 야영지까지 습격했다고 하더군요... 지금 우리만으론 역부족이니 트로그놈들을 좀 처치해 주시겠습니까?",
     ["O"] = "발리르 프로스트해머가 바위턱트로그 6마리와 힘센 바위턱트로그 6마리를 처치해 달라고 했습니다.",
     ["T"] = "새로운 위협",
+  },
+  [171] = {
+    ["D"] = "You have been so very kind to me, $N.  I never dreamed that I\'d have so much fun during Children\'s Week.  Thank you.  I don\'t wanna be sad about what\'s happened to me and all - my folks always told me to rise above anything bad that happens.  You know, when I grow up I wanna be a hero... just like you.$B$BI\'m sad to say this, but it\'s time for me to go home.  Let\'s go back and I\'ll tell the matron what an awesome person you are!",
+    ["O"] = "Return your ward to the Stormwind orphanage by handing in the Human Orphan Whistle to Orphan Matron Nightingale in the Cathedral District.",
+    ["T"] = "얼라이언스 보육원",
   },
   [172] = {
     ["D"] = "여기 보육원 일을 돕고 싶으시다고요? 어린이 주간 동안 저희를 도와주신다면 너무 감사할 거예요. 당신에게 신의 축복이 있기를!$B$B이 호루라기를 받으세요. 이것은 짧은 시간, 그러니까 어린이 주간에만 사용할 수 있어요. 호루라기를 한 번 불면 당신이 돌볼 아이와 얘기를 나눌 수 있고 한 번 더 불면 그 아이를 보낼 수 있죠.$B$B부디 이 호루라기를 불어 당신이 돌볼 아이를 만나보세요! 우리 아이가 당신의 온정을 기다리고 있으니까요.",
@@ -984,11 +1002,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Mountaineer Cobbleflint of the southern guard tower wants you to kill 10 Stonesplinter Troggs and 10 Stonesplinter Scouts.",
     ["T"] = "결정적인 공격",
   },
-  [225] = {
-    ["D"] = "이 오래된 무덤의 비석에는 다음과 같은 글이 새겨져 있습니다.$B$B모건 래디모어$B$B<좀 더 자세히 살펴보면 무덤 위의 흙이 최근 파헤쳐졌으며 상당한 양의 흙이 옮겨졌다는 사실을 확인할 수 있습니다...>",
-    ["O"] = "어둠골의 시라 본인디와 대화해야 합니다.",
-    ["T"] = "오래된 무덤",
-  },
   [226] = {
     ["D"] = "스벤과 저는 동쪽에 있는 강령술사들의 공격으로 하루하루가 위험의 연속이랍니다. 게다가 이곳에는 우리 둘밖에 없기 때문에 먹고살려면 직접 사냥을 해야 하는 형편이지요. 그런데 짐승의 고기나 물고기를 가지고 야영지로 돌아올 때마다 굶주린 그늘숲늑대와 광포한 그늘숲늑대가 숲에서 튀어나와 마치 고기를 내 놓으라는 듯 위협한답니다. 어쩌겠어요, 살려면 고기를 내줄 수밖에요. 이곳에서 지내는 게 이렇게 위험하답니다.$B$B저희를 위해 늑대를 몇 마리 없애 준다면 이곳에서 훨씬 편하게 생활할 수 있을 겁니다. 늑대들은 주로 이곳의 북쪽과 동쪽 강 근처에 자주 출몰합니다.",
     ["O"] = "굶주린 그늘숲늑대 12마리와 광포한 그늘숲늑대 8마리를 처치한 다음 그늘숲의 서쪽 변경의 스벤의 야영지에 있는 라스에게 가야 합니다.",
@@ -1009,15 +1022,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "어둠골의 순찰대원 사라 래디모어와 대화해야 합니다.",
     ["T"] = "살아남은 딸",
   },
+  [230] = {
+    ["D"] = "Digging through the mound, you find a small, dirt-stained book.$B$BThe book has no title, but...it has information Sven would like to know.",
+    ["O"] = "Bring the Book from Sven\'s Farm to Sven.",
+    ["T"] = "Sven\'s Camp",
+  },
   [231] = {
     ["D"] = "자요, 이걸 가져다가 아버지의 무덤에 놓아 주세요. 그러면... 아마 아버지께서도 제가 무사하다는 사실을 아실 거예요. 그리고 지금까지 있었던 일에 대해서 아무도 아버지를 원망하지 않는다는 사실도요...$B$B<눈물이 가득 고인 채 손가락에서 반지를 빼서 건네주는 사라>$B$B그리고... 정말 감사합니다.",
     ["O"] = "사라 래디모어의 반지를 모건 래디모어의 무덤으로 가져가야 합니다.",
     ["T"] = "딸의 사랑",
-  },
-  [232] = {
-    ["D"] = "왕립 연금술 학회에서 당신의 도움을 필요로 하고 있습니다. 내 계획대로라면 우리 둘 다 득을 볼 수 있을 것이니 잘 들으세요.$B$B옆방에 있는 연금술사 키버는 좀... 정신이 이상...할진 몰라도 그의 연구는 똑똑한 연구자의 손에 맡기면 좋은 결과를 얻을 수 있을 겁니다. 다행히도 내가 바로 그런 연구자랍니다. 이 구입주문서를 푸른달 골동품점의 주인, 알렉산드로 루카에게 가져다주세요. 그러면 그가 분석 도구를 하나 줄 것이니 그걸 받으면 내게 가져오세요. 그러면 그때 당신의 임무를 더 자세히 설명해 주도록 하겠습니다.",
-    ["O"] = "언더시티에 있는 알렉산드로 루카에게 진게의 구입주문서를 가져가야 합니다.",
-    ["T"] = "연금술사 진게의 심부름",
   },
   [233] = {
     ["D"] = "흠... 이 부탁을 들어줄지는 모르겠지만. 시간이 없어서 오늘 들어온 편지 뭉치를 배달 못했네.$B$B어디 보자, 받는 사람이 탈린 킨아이 앞으로 되어 있군. 탈린 킨아이는 여기서 서쪽 길을 따라 내려가다 보면 나오는 얼어붙은 호수 옆에서 야영을 하고 있을 걸세.$B$B나 대신 편지를 좀 배달해주겠나?",
@@ -1055,6 +1068,13 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Return to Jitters with the Dusky Crab Cakes.",
     ["T"] = "Return to Jitters",
   },
+  [241] = "_",
+  [242] = "_",
+  [243] = {
+    ["D"] = "You will be headed to the Tanaris desert, testing the tissue consistency of the basilisks, scorpids, and hyena native there.  Obtain tissue samples and use them with the testing kit in tow; expect a chunk of the samples to fail.  I need eight acceptable samples of each creature type.$B$BIn addition, the goblins of Gadgetzan have a power source that must be used with this kind of modified kit.  Speak to Chief Engineer Bilgewhizzle and acquire one for the kit.$B$BReturn to me only when you are successful.",
+    ["O"] = "Speak to Chief Engineer Bilgewhizzle in Gadgetzan about getting a power source for the testing kit.",
+    ["T"] = "Into the Field",
+  },
   [244] = {
     ["D"] = "안녕하십니까. 전 이 도로를 순찰하는 임무를 맡고 있습니다. 아직까진 별 탈 없었는데 며칠 전 북쪽과 동쪽에서 놀 야영지를 목격했습니다.$B$B놀이 병력을 소집하고 있다는 것을 호숫골에 알려야 합니다! 호숫골의 펠던님께 이 사실을 보고해 주시기 바랍니다. 대의원님께서 정찰병 임금 정도는 지급해 주실 테니 걱정하지 마시고요.$B$B펠턴님은 주로 호숫골 다리의 남쪽 지역을 순찰하고 계십니다.",
     ["O"] = "Report to Deputy Feldon.",
@@ -1070,6 +1090,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "붉은마루 싸움꾼 10마리, 붉은마루 밀렵꾼 6마리를 처치하고 호숫골에 있는 부관 펠던에게 돌아가 보고해야 합니다.",
     ["T"] = "탐색전",
   },
+  [247] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Hunt Completed",
+  },
   [248] = {
     ["D"] = "I have been watching the Tower of Ilgalar, and can detect that Morganth is in conflict with the Orcs in Stonewatch Keep.  I do not know the reason behind their contention, but you may aid me in unraveling this mystery.$B$BTake another Glyph of Azora, then go to the top of the intact watch tower beside Stonewatch Keep.$B$BFind a suitable object on which to place the Glyph.  A chest or a jar -- some place where the glyph will not be noticed -- will suit my purpose.",
     ["O"] = "Climb the intact watch tower beside Stonewatch Keep.$B$BFind a suitable container to place the Glyph of Azora.",
@@ -1084,6 +1109,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "우리 댐의 안전을 걱정해 주는 이가 있다니 얼마나 반가운지 모르겠네. 처음엔 탄돌 교각이 파괴되더니 다음엔 던 모드르가 약탈당하고... 검은무쇠 드워프의 다음 목표는 분명 댐일 거야. 불행히도 내 상관인 감독관님을 포함해서 방어 병력 대부분이 얼라이언스 최전선에 배치되어 있는 상황이네.$B$B그래서 자네의 도움이 절실히 필요해. 며칠 전 검은무쇠 공병들이 댐의 동쪽 사면을 굴착하는 것을 보았네. 그 지역을 정찰하고 뭔가 수상한 것이 있으면 가져다주게.",
     ["O"] = "댐의 동쪽 사면 근처를 정찰하고 검은무쇠 드워프의 음모를 밝힐만한 단서를 찾아 선임기술자 힌더바이르에게 가져가야 합니다.",
     ["T"] = "어둠의 전조",
+  },
+  [251] = {
+    ["D"] = "Take the note you gave me to Sirra Von\'Indi.  He\'s very learned in languages and ancient arts - if anyone here can translate this message, it\'s he.",
+    ["O"] = "Bring the Letter to Ello to Sirra Von\'Indi.",
+    ["T"] = "Translate Abercrombie\'s Note",
+  },
+  [252] = {
+    ["D"] = "Oh my!  If what is written on this note is true, then Abercrombie\'s done something...unspeakable.$B$BYou better bring the translated note back to Ello.$B$BAnd do so quickly, for I fear a doom already lumbers toward our town...",
+    ["O"] = "Bring the Translated Letter to Lord Ello Ebonlocke",
+    ["T"] = "Translation to Ello",
   },
   [253] = {
     ["D"] = "The Embalmer is a name told in one of our children\'s stories.  He was a kindly alchemist, driven mad by the death of his wife, Eliza.  To restore her, he used dark magic to place his own heart within the bosom of his dead spouse.$B$BThis revived Eliza...but it cursed her with a hunger for human flesh, forcing the Embalmer to keep her buried.$B$BHis heart is his power.  Find his wife\'s grave, retrieve his heart, and bring it to me while it still beats.  Do this and his power will be broken.",
@@ -1105,10 +1140,27 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Kill Chok\'sul and bring his head to Magistrate Bluntnose of Thelsamar.",
     ["T"] = "현상 수배: 초크술",
   },
+  [257] = {
+    ["D"] = "Think you can match wits with Daryl the Bold, huh? I should think not! Of course, you\'re more than welcome to try. Here\'s a challenge that should prove to be above your abilities, so don\'t feel too bad if you can\'t face up to it.$b$bA flock of buzzards has nested here in Loch Modan. Why don\'t you try to take down some of the beasts? Tell you what, if you meet my challenge in fifteen minutes, I\'ll give you my bow or gun.$b$b<He looks you over dismissively.>$b$bIt seems you haven\'t much to lose, anyways.",
+    ["O"] = "Kill 6 Mountain Buzzards and return to Daryl the Youngling in the Farstrider Lodge within 15 minutes.",
+    ["T"] = "사냥꾼의 허세",
+  },
+  [258] = {
+    ["D"] = "$nath, is it? I can tell you\'re bursting with pride over completing the first test, hm? As I told you before, it\'s no large feat.$b$bYou should try your hand at boar hunting. Trust me, this is no Coldridge Valley boar hunt, so you\'d best have a care with them. I\'ll give you just twelve minutes this time.$b$bDon\'t feel bad if you fail. I\'d give you the shirt off my back if you succeeded!$b$bHave I ever related to you the story of how I received my famous scar? No? It was two years ago...",
+    ["O"] = "Kill 5 Elder Mountain Boars and return to Daryl the Youngling in the Farstrider Lodge within 12 minutes.",
+    ["T"] = "사냥꾼의 도전",
+  },
+  [259] = "_",
+  [260] = "_",
   [261] = {
     ["D"] = "$C|1이여;여;, 할 얘기가 있으니 이리 가까이 오십시오. 흠... 솔직히 얘기하도록 하겠습니다. 지금 우리는 우리 주민을 타락시키고 우리의 땅을 오염시키는 악의 무리, 스컬지와 전쟁 중입니다. 스컬지가 우리를 괴멸시키고 이 세상을 암흑으로 끌고 가기 전에 막아야 합니다. 우리, 붉은십자군은 몸과 마음을 다해 스컬지와 싸울 것을 맹세했습니다.$B$B$G형제:자매;도 우리와 함께하겠다면 용기를 내어 충의를 증명해 보여주십시오. 잊혀진 땅 남쪽에 있는 뼈의 골짜기에서 언데드 약탈자들을 처치해 주시면 됩니다.$B$B이를 수행하면 붉은십자군에서 당신을 기꺼이 받아들일 것입니다.",
     ["O"] = "언데드 약탈자 30마리를 처치한 후 나이젤의 야영지에 있는 수사 안톤에게 가야 합니다.",
     ["T"] = "붉은십자군의 길",
+  },
+  [262] = {
+    ["D"] = "I must know who was that skulker in the shadows I saw the night my family was killed!$B$BPlease, $N, you have shown your resourcefulness.  Please find that shadowy figure.  I must learn what secrets he holds!$B$BI do not have clues that you do not already know, but here - take the book you found at my farm.  Perhaps some of the townsfolk can link this book with its owner.",
+    ["O"] = "Take the book you found at Sven\'s farm and show it to townsfolk in Darkshire.",
+    ["T"] = "The Shadowy Figure",
   },
   [263] = {
     ["D"] = "The Mountaineers tell me you are quite brave and capable, $N.  We need a $r like you around here.  The Trogg problem isn\'t getting any better.  The reserves have been called to the front and we\'re all alone out here.  But now that we have a seasoned $c here, let\'s see what you can do.$b$bGo out and kill 10 Stonesplinter Shaman and 10 Stonesplinter Bonesnappers.  Let\'s see if you live up to your reputation, Trogg-Slayer.",
@@ -1120,10 +1172,25 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "은빛소나무 숲에 있는 유리브의 무덤에 클라리스의 펜던트를 가져다 놓아야 합니다.",
     ["T"] = "영원한 이별",
   },
+  [265] = {
+    ["D"] = "Here is your book back, $N, and I bid you fortune with your search.  If you ask others in town, perhaps they can offer you more clues.$B$BAnd here is one more for you - although the author of this book is a stranger to Darkshire, the book itself was purchased here.",
+    ["O"] = "See if other townsfolk have clues about the shadowy figure.",
+    ["T"] = "The Shadowy Search Continues",
+  },
+  [266] = {
+    ["D"] = "Here is your book, and good luck with your inquiries.$B$BYou might want to expand your search to the inn.  If the person whom you seek spent time in town, then chances are someone saw him there.",
+    ["O"] = "Search the inn for clues about the shadowy figure.",
+    ["T"] = "Inquire at the Inn",
+  },
   [267] = {
     ["D"] = "$C, you may or may not be aware of the Trogg threat looming over Dwarven lands.  With the Ironforge Reserve called up to the Alliance Front, we are left with a fraction of the defense forces needed to keep these lands safe.  My regiment is assigned to watch over the Gate here and we cannot leave our post for fear of invasion.$b$bBut we need some pressure put on those damned Troggs lurking in the hills.  If you\'re up to the task, wage an assault on the Troggs.  Bring me back 8 Trogg Stone Teeth as proof.",
     ["O"] = "남쪽 경비탑에 있는 경비대장 루겔퍼스에게 트로그의 단단한 이빨 8개를 가져가야 합니다.",
     ["T"] = "트로그의 위협",
+  },
+  [268] = {
+    ["D"] = "The book you found was only half finished.  I had to leave it at Sven\'s farm when I fled there...$B$BHere.  Take my completed journal to Sven.  It describes more fully what happened at his farm.$B$BAlthough this journal has been my only company these past weeks, if giving it up keeps me from having to face Sven and his wrath, then I do it willingly!",
+    ["O"] = "Return to Sven with Jitters\' completed journal.",
+    ["T"] = "Return to Sven",
   },
   [269] = {
     ["D"] = "Go to the city of Stormwind and speak with Bishop Farthing in the Cathedral of Light.  Give him Jitters\' journal and tell him you mean to face Morbent Fel.$B$BAlthough Stormwind has forsaken Darkshire, Farthing is a kind soul and very wise.  He may help you on your quest to save us.$B$BYour mission is perilous, but hurry, $N.  With each passing hour, the shadows of Duskwood grow ever darker.",
@@ -1164,6 +1231,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "이끼가죽 놀들은 저습지에서 오랫동안 평화롭게 지내왔지만 요즘 그 수가 너무 늘어나고 있다. 이들은 늪의 덤불과 꽃들을 짓밟고 그 고약한 도끼로 수없이 많은 나무를 땔감으로 베어내고 있다.$B$B그 놀은 더 이상 이 땅과 조화를 이루지 못하고 있으니 저습지를 지키려면 놀의 숫자를 줄여야만 할 것이다.$B$B이끼가죽 놀 15마리와 이끼가죽 싸움꾼 10마리를 처치하라. 남쪽에 있는 알가즈라는 드워프 관문 근처에 놈들이 있을 것이다. 임무를 완수하고 내게 돌아오너라.",
     ["O"] = "이끼가죽 놀 15마리와 이끼가죽 싸움꾼 10마리를 처치한 다음 저습지에 있는 신록수호자 레시엘에게 가야 합니다.",
     ["T"] = "파괴의 손길",
+  },
+  [277] = {
+    ["D"] = "The Mosshides are cutting the trees of the Wetlands, using the trees\' flesh to warm themselves with fire.  I will suffer this pain no longer!$B$BRid the Mosshides of their crude flints, the tools they use to make fire.  The flints are borne by all Mosshides except the smaller Mosshide gnolls and Mosshide mongrels.",
+    ["O"] = "Bring Rethiel the Greenwarden 9 Crude Flints.",
+    ["T"] = "Fire Taboo",
   },
   [278] = {
     ["D"] = "Begin collecting the disarming materials immediately, $N.  Lurker Venom can be found on the indigenous spiders in Loch Modan.  Crocolisk tears are found here in the Loch as well.  But a Mo\'Grosh crystal will be very difficult to procure.  The ogres to the northeast mine them but the crystals are a very rare commodity.$b$bWe need to be prepared to defuse a Dark Iron attack!  Return to me once you\'ve collected the needed items and I will prepare the mixture.",
@@ -1260,11 +1332,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring Magmar Fellhew 8 Carved Stone Idols.",
     ["T"] = "조각상 모으기",
   },
-  [298] = {
-    ["D"] = "텔사마에 발굴 상황에 대한 보고를 해야 하오. 화약 지원 요청도 해야 하고 말이오. 보고서는 여기 있소. 이걸 텔사마의 연락 담당인 예른 혼헬름에게 갖다주시겠소?$B$B매우 중대한 일이오. 힘든 일은 아니니 꼭 좀 부탁하겠소!",
-    ["O"] = "텔사마의 예른 혼헬름에게 아이언밴드의 상황 보고서를 가져가야 합니다.",
-    ["T"] = "발굴 상황 보고서",
-  },
   [299] = {
     ["D"] = "저 랩터들의 침략이 있기 직전에 고아즈석이라는 큰 석판을 발견했다네. 석판의 내용은 모두 4부분으로 나뉘어 있네. 그 내용을 보면 \"신성한 계획\"과 \"운명의 예언\"에 대해 말하고 있다네.$B$B시간이 별로 없네. 내가 직접 가서 저 짐승들을 상대하기엔 너무 늙었지만 자네는 강하고 젊지 않은가.$B$B발굴현장을 정리하고 사라진 4개의 석판 조각을 찾아 주게나. 그 석판 조각들은 각각 아도스, 모드르, 골름, 네루라고 한다네. 고대 유물이나 흙이 팬 곳에서 찾아보면 될 거야. 의문을 풀 수 있도록 내게 그 석판 조각들을 가져다주게!",
     ["O"] = "발굴조사단장 웰가르가 발굴현장을 정리하고 사라진 아도스 조각, 모드르 조각, 골름 조각, 네루 조각을 가져다 달라고 했습니다.",
@@ -1274,11 +1341,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "아이언밴드에게 화약을 더 보내려면 승인을 받아야 하오. 그러려면 그 보고서를 아이언포지 탐험가 연맹 본부로 가져가야 하오.$B$B여기 보고서를 받으시오. 이걸 발굴조사단장 스톰파이크에게 주면 처리해 줄 거요. 그 사람도 아이언밴드에서 발굴 작업이 지연되는 걸 원치 않을 테니까...$B$B스톰파이크는 탐험가 총회에 가면 만날 수 있소.",
     ["O"] = "발굴조사단장 스톰파이크에게 아이언밴드의 상황 보고서를 가져가야 합니다.",
     ["T"] = "아이언포지에 보고",
-  },
-  [302] = {
-    ["D"] = "그래도 아이언밴드가 화약이 필요하다고 하면 보내 줘야겠지. 이미 전령을 통해 텔사마에 있는 예른 혼헬름에게 승인서를 보냈으니 그가 아이언밴드에게 보낼 화약과 다른 물품들을 준비해 줄 게요.$B$B그리고 한 가지 부탁이 더 있는데, 화약이 제대로 전달되는지 잘 감시해 주시오. 지난번에 보낸 화약은 아이언밴드에게 전달되지 않았으니 철저히 감시해 주길 바라오.",
-    ["O"] = "텔사마에 있는 예른 혼헬름과 대화해야 합니다.",
-    ["T"] = "아이언밴드에게 화약 지원",
   },
   [303] = {
     ["D"] = "나라 안팎으로 전쟁이 번지고 있소. 강력한 드워프 병사들이 먼 타향에서 얼라이언스의 이름으로 죽어가는 동안, 정작 우리 조국은 검은무쇠 드워프에게 짓밟히고 있으니... 탄돌 교각에서 우리 병사들이 희생되는 바람에 던 모드르가 그리 허무하게 함락되고 만 거요.$B$B당신도 우리를 도와 병력을 소집해 놈들을 저지해 주었으면 하오. 검은무쇠 드워프 10명과 채굴꾼, 투사, 폭파병 각각 5명씩을 처치해 준다면 예비 병력이 도착해 놈들을 몰아낼 때까지 버틸 수 있을 거요.$B$B어서 서두르시오!",
@@ -1310,6 +1372,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "Distracting Jarven",
   },
+  [309] = {
+    ["D"] = "Ready to go, $n?$b$bFirst, we need to get this powder to Ironband. It\'ll be a lot for me to carry, and these parts can get dangerous -- and who knows what else the Dark Irons might have in store for me.$b$bI\'ll feel a lot better with you coming along.",
+    ["O"] = "Ensure Miran and the shipment arrive at the excavation site, then inform Prospector Ironband.",
+    ["T"] = "화약을 지켜라",
+  },
   [310] = {
     ["D"] = "썬더브루의 술이 훌륭하다는 건 저도 인정합니다. 하지만, 자기네들만 좋은 술을 만드는 건 아니라는 걸 가르쳐 주고 싶군요! 그래서 말인데 도움이 좀 필요합니다.$B$B자, 여기 발리브루 스칼더 맥주통을 가지고 카라노스에 있는 썬더브루 양조장 지하실로 숨어들어가세요. 그리고 이걸 썬더 에일 맥주통 중 하나와 바꿔 놓으세요. 어디, 그 집 단골들이 누구 맥주를 더 좋아하는지 한번 지켜보고 싶군요.$B$B혹시 누군가 그 맥주통을 지키고 있다면 그자의 주의를 다른 곳으로 돌려야 할 겁니다.",
     ["O"] = "카라노스에 있는 썬더브루 양조장의 지하실로 가서 썬더 에일 맥주통을 발리브루 스칼더 맥주통으로 바꿔 놓아야 합니다.",
@@ -1340,6 +1407,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 6 Shimmerweeds to Rejold Barleybrew in the Brewnall Village.",
     ["T"] = "최고급 스타우트 맥주",
   },
+  [316] = "_",
   [317] = {
     ["D"] = "난 이번에 증기 전차 부대에서 맡은 임무를 곧 시작할 계획이네. 시간이 오래 걸리는 임무라 증기 전차에 한 달치 정도의 보급품을 비축해 둬야 하지. 스틸그릴이 내 탱크를 손보고 있는 동안 날 위해 사냥을 좀 해 주겠나?$B$B깔고 잘 수 있는 것과 우리의 주식인 멧돼지 고기가 필요하다네. 가죽은 멧돼지, 표범, 곰 등을 사냥해서 구하면 되고, 고기는 물론 멧돼지에게서 얻으면 되지... 은빛 동굴 남쪽의 눈 덮인 벌판에 가면 사냥감이 많이 있을 거야.",
     ["O"] = "멧돼지 고기 4개와 두꺼운 곰 모피 2개를 모아서 스틸그릴의 정비소에 있는 조종사 벨로우피즈에게 전달해야 합니다.",
@@ -1455,6 +1523,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "북녘골 수도원에 있는 수사 팩스턴과 대화해야 합니다.",
     ["T"] = "수사 팩스턴",
   },
+  [345] = {
+    ["D"] = "I\'ve been meaning to finish my copy of The Stresses of Iron, but...$B$BWell you see, I make my own ink for books I copy.  It\'s my own recipe; it doesn\'t run or smear, and it dries very quickly  Unfortunately, it dries too quickly!  My last batch dried up before I could finish the copying job, and I haven\'t had the chance to make more ink!$B$BTo make more I need Rethban Iron Ore from the Redridge Mountains.  Foreman Oslow in Lakeshire is my usual supplier.",
+    ["O"] = "Speak with Foreman Oslow in Lakeshire and ask him for Rethban Iron Ore.",
+    ["T"] = "Ink Supplies",
+  },
   [346] = {
     ["D"] = "Now that I\'ve finished copying the book, here\'s the original Stresses of Iron.  Thank you for your patience, and if you see Milton please tell him I\'m sorry for the long delay.",
     ["O"] = "Return to Brother Kristoff in the Cathedral Square.  Give him the book The Stresses of Iron.",
@@ -1470,11 +1543,22 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "의술사 운바그와를 찾아 흉포한 모크를 불러내도록 해야 합니다. 핀 피즈라켓에게 모크의 심장을 가져가야 합니다.",
     ["T"] = "가시덤불 골짜기의 열병",
   },
+  [349] = {
+    ["D"] = "temp text 02 - description",
+    ["O"] = "temp text 02 - log",
+    ["T"] = "가시덤불 골짜기의 열병",
+  },
+  [350] = {
+    ["D"] = "That Marzon would be contacting a member of the Defias and have ties to Lescovar...$B$BHaving killed VanCleef and Thredd, it would be hard to see Lescovar brought to proper justice, as your evidence is nothing without their testimonies. That is not even considering the fact that Lescovar is a noble and well connected. It effectively makes him above the law.$B$BYou\'ll need other help. I loathe to do so, but there is someone I know that will aid us. You\'ll find Trias in the Trade District of the city.",
+    ["O"] = "Speak to Elling Trias in Stormwind.",
+    ["T"] = "Look to an Old Friend",
+  },
   [351] = {
     ["D"] = "금속으로 만들어진 이상한 알처럼 생긴 장치를 찾았습니다. 손잡이 하나를 만지작거리다 보니 장치가 열리면서 노움 로봇 장치가 들어있는 것이 보입니다! 그 속에서 누군가의 목소리가 잡음에 섞여서 들립니다.$B$B\"제 이름은 오글소프... 제 유도 로봇이 불시착했는데 찾아주면 사례를 할게요! 이 탐지기를 로봇에게 가져가세요. 다행이네요, 방금 로봇의 현재 위치를 산출해 보았는데 타나리스에 있는 모래지옥 협곡 부근에 추락한 것 같아요!\"",
     ["O"] = "오글소프의 유도 로봇에게 조난 탐지기를 가져가야 합니다.",
     ["T"] = "OOX-17/TN 수색",
   },
+  [352] = "_",
   [353] = {
     ["D"] = "스톰파이크 씨는 존경받는 드워프 일원이며 전투 감각이 뛰어나고 무기를 고르는 안목도 대단한 것으로 유명하다오. 이렇다 보니 아이언포지에서 그링거 스톰파이크 씨가 내게 무기를 만들어 달라고 주문한 것도 전혀 놀랄 일이 아니지.$B$B무기는 다 만들었는데... 스톰파이크 씨가 저 멀리 모단 호수에 있어서 말이오. 혹시 북쪽으로 여행할 계획이 있으면 이 물건을 나 대신 배달해 주지 않겠소?$B$B스톰파이크 씨에게 받은 마지막 전갈에 의하면 모단 호수의 북쪽 경비탑에서 근무하고 있다고 하오.",
     ["O"] = "모단 호수에 있는 산악경비대 스톰파이크에게 스톰파이크의 소포를 전달해야 합니다.",
@@ -1600,6 +1684,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "던 모드르에 있는 모틀리 가마슨이 캄 딥퓨리의 머리카락을 가져다 달라고 했습니다.",
     ["T"] = "격노",
   },
+  [379] = {
+    ["D"] = "You want a power source.  I can help you with that.  Know what I want?  I want something to drink!  Bring me five Wastewander Water Pouches, and I\'ll give you the 4711-FTZ.$B$BNow... guess where you can find Wastewander Water Pouches!  Why don\'t you walk up to one of the Wastewander nomads to the east of here and ask them for one.  Let me know how that works out for you.",
+    ["O"] = "Bring 5 Wastewander Water Pouches to Chief Engineer Bilgewhizzle in Gadgetzan.",
+    ["T"] = "Slake That Thirst",
+  },
   [380] = {
     ["D"] = "One of our greatest struggles is obtaining the natural resources we need to survive. Gold was scarce even in the height of the Alliance\'s power.$b$bThere is a gold mine to the northwest that has been overrun with spiders. We need gold from the mine, but we can\'t very well get it while the spiders are crawling around in there. I\'ve not much manpower to commit to the task, so we\'ll just have to do it little by little.$B$BGet up there and see what you can do for us, $n.",
     ["O"] = "Executor Arren wants you to kill 10 Young Night Web Spiders and 8 Night Web Spiders.",
@@ -1650,15 +1739,41 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "스톰윈드 지하감옥에 있는 교도소장 델워터와 대화해야 합니다.",
     ["T"] = "Bazil Thredd",
   },
+  [390] = "_",
   [391] = {
     ["D"] = "한 가지는 분명히 밝히지. 난 자넬 믿지 않아. 하지만 상황이 이렇다 보니 말이야, 자네 하나 때문에 일이 더 악화될 리는 없겠지만...$B$B자, 그러면 이렇게 하세. 저리 내려가서 스레드와 얘기를 하게. 그리고 정말 자네가 진정 우리 편이라면 그를 처치하고 머리카락을 내게 가져오게.$B$B만에 하나 자네가 스레드와 한패라면 돌아오지 않겠지만... 대신 나중에 만나면 나머지 친구들과 자네는 저 세상 구경을 할 테니 명심하게.",
     ["O"] = "바질 스레드를 처치하고 그 증거로 그의 머리카락을 감옥에 있는 교도소장 델워터에게 가져가야 합니다.",
     ["T"] = "감옥 폭동",
   },
+  [392] = {
+    ["D"] = "During the first years of Thredd\'s imprisonment, he never had any visitors. I figured that he was no longer of use to the Brotherhood, so they abandoned him.$B$BAnyway, a few months ago, that all changed; he started to get regular visits... once, maybe twice a week. It was a strange man--the quiet type. I had my suspicions, but all his papers checked out.$B$BHis documents claimed his name was Maelik; here\'s his description. I don\'t think he\'ll be coming to visit Thredd anymore.",
+    ["O"] = "Bring the Sealed Description of Thredd\'s Visitor to Baros Alexston in Stormwind.",
+    ["T"] = "The Curious Visitor",
+  },
   [393] = {
     ["D"] = "I really haven\'t a clue, $N. There is someone else who might be able to help you, and it so happens that he owes me a favor for--well, let\'s not get into that. Master Mathias Shaw of SI:7 can be found in the barracks in Old Town. Shaw has his thumb on most of the shady, or underhanded dealings of the city.$B$BIf anyone knows, it\'d be him.",
     ["O"] = "Bring the Sealed Description of Thredd\'s Visitor to Master Mathias Shaw in Stormwind.",
     ["T"] = "과거의 그림자",
+  },
+  [394] = {
+    ["D"] = "Find Shaw in Old Town. Let him know that the Lescovar threat has been dealt with and about your involvement in the Lord\'s plots against the city. I\'m sure he\'ll be proud to have another hero among Stormwind\'s citizens.$B$BHe\'ll more than likely send you off to meet with the Prince or some other noble. Don\'t let it get to your head, $N. The nobles can think they rule the city all they want, but some things remain out of their hands.",
+    ["O"] = "Speak to Mathias Shaw in Stormwind.",
+    ["T"] = "The Head of the Beast",
+  },
+  [395] = {
+    ["D"] = "Ah, I almost forgot. Alexston came while you were away, he wished to speak with you. No doubt he wishes to report the goings-on of the Defias Brotherhood to the nobles.$B$BA bit of advice, $N: if anyone should ask, I would provide all details but that it was your hand that slew Lescovar. Trust me. I am... acquainted... with the ways of such things.$B$BAnd as far as Trias goes, well, speak to no one of him... ever... if you can help it.",
+    ["O"] = "Speak with Baros Alexston in Stormwind.",
+    ["T"] = "Brotherhood\'s End",
+  },
+  [396] = {
+    ["D"] = "I have prepared a report for the King. I believe you should be the one to deliver it to him, along with an account of your findings. Do not worry, there is no doubt that he will commend you for doing your duty to the people of Stormwind.$B$BYour audience is scheduled soon, so you\'d best hurry, it\'s a bit of a ways to Stormwind Keep.",
+    ["O"] = "Deliver Baros Alexston\'s report on the Defias Brotherhood to King Varian Wrynn in Stormwind Keep.",
+    ["T"] = "An Audience with the King",
+  },
+  [397] = {
+    ["D"] = "I hear Lord Wishock enjoyed his beverage.  $b$bYou have served us well, $N.  The Warlocks of Stormwind will be able to practice our ways without disturbance, thanks to you.  For your efforts, I have prepared a special gift for you.  Speak with my servant, Zggi, and claim your reward.",
+    ["O"] = "Speak with Zggi, the servant of Zardeth the Blackclaw, to claim your reward.",
+    ["T"] = "You Have Served Us Well",
   },
   [398] = {
     ["D"] = "구더기눈 현상 수배!$B$B저 사악한 짐승인 놀 종족의 구더기눈은 우리에게 저지른 범죄의 대가로 처단 받아 마땅하다. 이 비열한 악당은 리치 왕의 군대에 사용할 시체들을 훔치고 있다. 그가 마지막으로 목격된 곳은 브릴 북쪽의 가렌의 흉가 근처이다.$B$B브릴 마을에서는 구더기눈을 처치하는 자에게 현상금을 지급할 것이다. 이 악당을 처치한 자는 그의 앞발을 집행관 자이건드에게 제출하면 된다.$B$B자비는 약자를 위한 것일 뿐임을 명심하라.",
@@ -1674,6 +1789,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "벨딘 스틸그릴이라는 친구가 있는데 드워프 최고의 증기 전차 기술자라고 할 수 있지. 그 친구는 정비소를 하나 운영하고 있는데 공구를 워낙 험하게 다루어서 내 속을 좀 썩인다네. 만능 스패너를 보내주는 족족 망가뜨려서 말이야.$B$B그 친구가 최근 주문한 공구를 이제 겨우 다 만들었네. 이 물건을 그에게 배달해 주면 분명히 사례를 할 거야.$B$B스틸그릴의 정비소는 카라노스의 북동쪽에 있네. 노련한 증기 전차 조종사들이 자주 출입하는 곳이니까 그곳에 가면 다른 일을 구할 수도 있을 거야.",
     ["O"] = "벨딘 스틸그릴에게 스틸그릴의 공구를 전달해야 합니다.",
     ["T"] = "스틸그릴이 주문한 공구",
+  },
+  [401] = {
+    ["D"] = "I\'m almost finished translating that note.  If you come back in a few moments I should be done.",
+    ["O"] = "Wait a moment, then speak with Sirra Von\'Indi again.",
+    ["T"] = "Wait for Sirra to Finish",
   },
   [402] = {
     ["D"] = "I\'m sorry, but with the town in the state it\'s in I\'m afraid have other duties to attend to.  Perhaps later, if we survive, I can finish this translation.",
@@ -1695,6 +1815,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "언더시티에 있는 베소르 아이스샤드에게 세브렌의 명령서를 보여 줘야 합니다.",
     ["T"] = "회개한 마술사",
   },
+  [406] = "_",
   [407] = {
     ["D"] = "Harmless pumpkins, right?  Or so it would seem.  If we are to defeat Arthas\'s advances from the North and the Human infestation from the South we need to start realizing the full potential of our gift of undeath.$b$bWith a little ingenuity a simple pumpkin becomes an agent for our Dark Lady.  This pumpkin, laced with my latest formula, will prove to be quite a treat.$b$bYet another Scarlet Zealot has been captured and is being kept in the cellar of the Gallow\'s End Tavern.  Take this pumpkin to the fool.",
     ["O"] = "Take the Laced Pumpkin to the Captured Scarlet Zealot who is being held in the cellar of the Gallow\'s End Tavern.",
@@ -1734,6 +1855,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "내 동생이 만든 아지랑이 스타우트 맥주, 좀 마셔보니 이거 정말 물건이군! 동료 산악경비원에게도 맛보여 줬으면 좋겠소. 그 친구 이름은 카드렐인데, 주로 모단 호수에서 텔사마를 통과하는 도로를 순찰하고 있소.$B$B텔사마로 가려면 동굴을 따라 남동쪽으로 간 다음 길이 갈라지는 곳에서 북동쪽으로 가시오.$B$B산악경비대 카드렐에게 이 아지랑이 스타우트 맥주통을 전해주고 맛이 어떤지 한번 물어봐 주시오!",
     ["O"] = "산악경비대 카드렐에게 아지랑이 스타우트 맥주통을 가져가야 합니다.",
     ["T"] = "카드렐에게 맥주 배달하기",
+  },
+  [415] = {
+    ["D"] = "Rejold Barleybrew at Brewnall Village has been asking for you.$B$BHe wants to talk to you about a new drink he\'s been brewing...said something about you helping him with it.  You might want to head back to Brewnall Village and see what he has to say.$B$BThere could be some free booze in it for you...",
+    ["O"] = "Speak with Rejold Barleybrew.",
+    ["T"] = "Rejold\'s New Brew",
   },
   [416] = {
     ["D"] = "We have a real infestation problem to the west.  Tunnel rat kobolds have moved into the foothills, setting up dens and fouling our land with their filth!$B$BWe want them eliminated.  Hunt them, bring me their ears and earn their bounty.$B$BYou can find tunnel rat kobolds and their dens west of Thelsamar, littered along the mountainside.",
@@ -1805,6 +1931,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "변색된 검은늑대 심장 6개를 모아 공동묘지에 있는 연금술사 렌퍼럴에게 가져가야 합니다.",
     ["T"] = "늑대의 심장",
   },
+  [430] = {
+    ["D"] = "Here is the potion to aid in Quinn Yorick\'s recovery.$B$BNow if you will excuse me, I have very important work to continue...",
+    ["O"] = "Bring Quinn\'s potion to Quinn Yorick at the Ivar Patch, north of the Sepulcher.",
+    ["T"] = "Return to Quinn",
+  },
   [431] = {
     ["D"] = "",
     ["O"] = "",
@@ -1819,6 +1950,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "As a member of the Senate and the Explorers\' League, I\'ve taken it upon myself to take care of this part of the trogg infestation that has gripped our lands.$b$bThey\'ve certainly made a mess of Gol\'Bolar quarry, and for no reason. As we dug deep into the earth, they poured out, destroying our equipment and driving the miners out. There\'s not much for us to do but to exterminate the lot of them, rebuild, then get back to work.$b$bIf you help me with the troggs, I\'ll gladly recompense you for your time.",
     ["O"] = "Kill 10 Rockjaw Bonesnappers for Senator Mehr Stonehallow at the Gol\'Bolar quarry.",
     ["T"] = "공무 수행",
+  },
+  [434] = {
+    ["D"] = "After I put on Spybot\'s disguise, he\'ll head in to talk to Lescovar. The guards should let him pass no problem.$B$BWhile you were getting materials for me, I took care of informing Marzon that it was time for him and Lescovar to meet again. I even dropped some false information.$B$BLescovar will dismiss his guards and wait for Marzon out here in the garden. After you catch wind of talk about the Defias, make your move. You need to kill them both before the guards return! When you\'re done, speak to Trias.",
+    ["O"] = "Remain in the garden until Lord Gregor Lescovar and Marzon the Silent Blade have had their conversation. Afterwards, kill them both before returning to Elling Trias in Stormwind.",
+    ["T"] = "The Attack!",
   },
   [435] = {
     ["D"] = "밖에 있는 늑대들은 떠날 생각을 하지 않고 날 사납게 노려보고 있소. 내가 저 문으로 한 발짝이라도 내딛으면 놈들이 덤벼들 거요. 놈들은 너무 굶주린 나머지 나를 맛있는 먹잇감으로 보고 있는 것이 분명하오.$B$B동료인 레인 요릭에게 보고서를 가져다줘야 하는데, 그러려면 아무래도 누군가 날 좀 보호해 줘야 할 것 같소.$B$B당신이 날 좀 도와주겠소? 늑대들이 너무 많아서 혼자서는 힘들지도 모르니 친구들이 더 있다면 도움이 될 것이오.",
@@ -1835,15 +1971,35 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "죽음의 농장에서 썩은가죽 놀들을 처치하십시오. 나이트래쉬가 나타나면 그녀를 처치하십시오.$B$B공동묘지에 있는 고위집행관 하드렉에게 나이트래쉬의 정수를 가져가야 합니다.",
     ["T"] = "죽음의 농장",
   },
-  [442] = {
-    ["D"] = "이제 은빛소나무 숲에 있는 스컬지의 본거지인 펜리스 섬을 공격할 때가 되었네.$B$B다시 펜리스 섬으로 돌아가 까마귀발톱 쑤울을 처치해야 하네. 그리고 그의 머리카락을 가져오게! 이번 임무는 매우 중요한 만큼 위험도 커. 반드시 성공해야 하네.",
-    ["O"] = "공동묘지에 있는 고위집행관 하드렉에게 쑤울의 머리카락을 가져가야 합니다.",
-    ["T"] = "펜리스 섬 공격",
+  [438] = {
+    ["D"] = "$N, we\'ve discovered a new hive for the Scourge: the Decrepit Ferry.  The ferry lies east of the Sepulcher, and is heavily patrolled by rot hides and other undead.$B$BThere must be a reason for the Scourge\'s occupation of the area.  Go to the Decrepit Ferry and find out why the Scourge are there.",
+    ["O"] = "Go to the Decrepit Ferry.$B$BSearch for the reason the Scourge are there.",
+    ["T"] = "The Decrepit Ferry",
+  },
+  [439] = {
+    ["D"] = "Among the corpses a hand protrudes, unwrapped.  It is the hand of a woman, pockmarked from the plague but relatively fresh.  $B$BOn the hand is a ring.  Removing the ring and inspecting it reveals an engraving:$B$B\"For Deliah\"",
+    ["O"] = "Bring Deliah\'s Ring to High Executor Hadrec at the Sepulcher.",
+    ["T"] = "Rot Hide Clues",
+  },
+  [440] = {
+    ["D"] = "If you want to find the husband or beloved who gave Deliah her ring... then speak with Magistrate Sevren in Brill.  He should have records of recent deaths and, with luck, can discover who Deliah is.$B$BBut I wouldn\'t hope.  Whoever gave her the ring is probably dead.  Or if he\'s undead he probably no longer cares about Deliah.",
+    ["O"] = "Bring Deliah\'s Ring to Magistrate Sevren in Brill.",
+    ["T"] = "The Engraved Ring",
+  },
+  [441] = {
+    ["D"] = "Deliah had a husband, Raleigh, who now dwells in the Undercity.  If the Deliah who lived in Brill is the one who owned this ring, then Raleigh will know.$B$BRaleigh is in the Trade Quarter of the Undercity.",
+    ["O"] = "Bring Deliah\'s Ring to Raleigh.",
+    ["T"] = "Raleigh and the Undercity",
   },
   [443] = {
     ["D"] = "Before we launch an assault on Fenris Isle, we must determine who is behind the rot hide gnolls.  Our apothecaries believe their origin lies within the strange fluid that flows through their bodies.$B$BGo to Fenris Isle, east of the Decrepit Ferry, and collect rot hide ichor from the gnolls you find there.  Bring it to Apothecary Renferrel, stationed outside the Sepulcher.",
     ["O"] = "Bring 8 bottles of rot hide ichor to Apothecary Renferrel at the Sepulcher.",
     ["T"] = "썩은가죽 영액",
+  },
+  [444] = {
+    ["D"] = "I have reduced the ichor you brought me and separated it into its base components.  My findings are not conclusive, but I have determined that warlock and necromantic magics were used in the ichor\'s creation.$B$BWhile I continue to study the ichor, I want you to take a sample to Bethor Iceshard in the Undercity.  Bethor is not an apothecary, but his knowledge of magic may help to unravel the mystery of the rot hides.$B$BGo.  You will find Bethor in the Magic Quarter of the Undercity.",
+    ["O"] = "Bring the Sample Ichor to Bethor Iceshard in the Undercity.",
+    ["T"] = "Rot Hide Origins",
   },
   [445] = {
     ["D"] = "지금쯤이면 자네도 확실히 알겠지만 실바나스 여왕님을 모시며 일하는 우리에게는 시간이 무엇보다 중요하네.$B$B왕립 연금술 학회의 회원으로서 내가 알아낸 지식을 동료와 교환해야 하는 것이 내 의무지. 그래야만 언젠가 어둠의 여왕님이 그토록 원하시는 새로운 역병을 만들어낼 수 있을 테니까 말일세.$B$B은빛소나무 숲의 공동묘지에 있는 연금술사 렌퍼럴에게 이 연구 결과를 전달해 주게. 공동묘지로 가려면 브릴에서 길을 따라 남쪽으로 가다가 언더시티가 나오면 거기서 남서쪽으로 가면 되네.",
@@ -1855,10 +2011,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring Bethor\'s Scroll to Apothecary Renferrel at the Silverpine Sepulcher.",
     ["T"] = "까마귀발톱 쑤울",
   },
-  [447] = {
-    ["D"] = "아서스의 군대는 병력면에서 압도적인 우위를 차지하고 있네. 하지만 새로운 역병을 사용한다면 스컬지 군대와 인간의 영토를 모두 초토화할 수 있지. 내 연구 결과에 따르면 거미의 피와 불곰 심장에서 뽑아낸 독을 혼합하면 치명적인 비약을 만들 수 있다네.$B$B북서쪽에 위치한 암흑 땅거미굴의 거미와 은빛소나무 숲 전역에 돌아다니는 곰에게서 표본을 모아오도록 하게. 그리고 그 재료들을 언더시티에 있는 왕립 연금술 학회의 수석 연금술사 파라넬님께 전해 주게.",
-    ["O"] = "불곰 심장 6개와 땅거미 점액 6개를 모아 언더시티에 있는 수석 연금술사 파라넬에게 가져가야 합니다.",
-    ["T"] = "죽음의 비법",
+  [448] = {
+    ["D"] = "Before you launch an assault on Fenris Isle, report to High Executor Hadrec.  He may have additional information or equipment you\'ll need.",
+    ["O"] = "Report to High Executor Hadrec at the Sepulcher.",
+    ["T"] = "Report to Hadrec",
+  },
+  [449] = {
+    ["D"] = "Although Quinn\'s wounds are mending, I want to get our report to High Executor Hadrec as quickly as possible.  It has information that is vital to the Forsaken\'s occupation of Silverpine.",
+    ["O"] = "Bring the Deathstalker Report to High Executor Hadrec at the Sepulcher.",
+    ["T"] = "The Deathstalkers\' Report",
   },
   [450] = {
     ["D"] = "You can be of further service to the Royal Apothecary Society, $N.$b$bWhen Arugal cast his wretched magic on the forest, he cursed one of our most promising members, Apothecary Berard.  Now a mindless servant of Arugal, Berard is useless to us.  But his findings might prove to be of worth.  He was studying an ancient plague that killed off all the aquatic life in Lake Lordamere ages ago.$b$bRetrieve Berard\'s Journal from his study in the Pyrewood Village Inn and take it to Apothecary Renferrel.",
@@ -1879,6 +2040,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "행운이 있기를... 그 사람을 꼭 찾으시기 바랍니다. 그 친구가 살아 있어야 할 텐데... $B$B어둠골의 안전한 울타리를 벗어났으니 야생 짐승들의 먹이가 되었을 수도 있거든요.",
     ["O"] = "의문의 남자를 찾아야 합니다. 지금까지 얻은 단서는 다음과 같습니다.$B$B어둠골에서 태어난 사람이 아닙니다.$B$B신경질적이고 신경과민인 사람입니다.$B$B어둠골을 떠나 서쪽으로 갔습니다.",
     ["T"] = "의문의 남자 찾기",
+  },
+  [454] = {
+    ["D"] = "We\'d been hauling the barrels of powder back and forth in trips before this... business. Now we have to split up the work, Miran\'s taking the barrels and I\'m watching over the other ones.$b$bI don\'t feel safe letting Miran haul the rest of the shipment by himself. When he\'s ready to go, maybe you could escort him on his next trip?",
+    ["O"] = "Speak with Miran.",
+    ["T"] = "After the Ambush",
   },
   [455] = {
     ["D"] = "용아귀 오크들이 저습지를 차지한 것도 모자라, 이제 던 알가즈에까지 손을 뻗어오고 있소! 이곳에 있는 놈들의 거점을 제거하지 않으면 저습지에 있는 우리의 항만 시설과 요새인, 메네실 항구에서 모단 호수에 이르는 길목을 차단당하게 되오.$B$B던 알가즈를 가로질러 저습지 너머로 이동하시오. 그리고 가는 길에 오크 녀석들도 좀 처치해 주시오. 그런 다음 메네실 항구에 있는 발스탁 아이언조에게 보고하도록 하시오.$B$B메네실은 던 알가즈를 지나 길을 따라 북쪽으로 간 다음 갈림길에서 서쪽으로 가면 되오.$B$B우린 당신만 믿겠으니 우릴 실망시키지 마시오.",
@@ -1910,6 +2076,12 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring Alaric\'s Head to his grave.",
     ["T"] = "Resting in Pieces",
   },
+  [461] = {
+    ["D"] = "I know of a hidden niche within the keep that holds an item dear to Thule, and his old colleagues.  It also holds something you might find useful.  Take me there!$B$BThe alcove is in the southwestern tower of the keep, behind a dusty shelf.$B$BTake my body, but leave my boots.  They never fit me anyway...",
+    ["O"] = "Take Alaric to the hidden alcove.",
+    ["T"] = "The Hidden Niche",
+  },
+  [462] = "_",
   [463] = {
     ["D"] = "신록수호자에 대해 들어봤나? 혹시 그 짐승을 찾고 있는 건가? 흠, 그렇다면 당신 정신 나간게야. 뭐, 목숨 아까운 줄 모르는 바보를 구태여 내가 뜯어말릴 필요는 없겠지.$B$B그 짐승을 찾고 있다면 던 모드르 쪽으로 갈라지는 길 동쪽에 있는 습지 근처에 산다고 하니까 그쪽으로 가 보라고. 악어 사이에 숨어 있다고 하는 친구도 있었지... 그보다 더할 수도 있지!$B$B그리고 참, 돈은 여기 놓고 가라고. 거기 가 봤자 필요 없을 테니까 말이야. 그 늙은 녹색 짐승이 당신을 두 동강 내서 씹어 먹을 때 금화에 그 이빨 자국이 남게 되는 걸 바라지 않겠지?",
     ["O"] = "신록수호자를 찾아야 합니다.",
@@ -1925,20 +2097,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Destroy the Dragonmaw catapults.",
     ["T"] = "Nek\'rosh\'s Gambit",
   },
-  [466] = {
-    ["D"] = "저습지의 알가즈 관문 북서쪽에 있는 동굴에서 발연 광석이라는 희귀한 광석이 발견되었다고 들었네. 발연 광석은 휘발성 물질이라 자칫 잘못 사용하면 폭발 사고를 당할 수 있지만, 제대로 용해한다면 엄청난 화력을 자랑하는 포탄을 만들 수 있을 걸세!$B$B내게 발연 광석을 가져다주면 그 광석으로 실험을 할 용감한 사람을 찾아보도록 하지.$B$B아, 광맥에서 광석을 추출하려면 채광 기술이 있어야 한다네. 자네가 기술을 익히지 않았다면 채광 기술을 익힌 동료를 데려가도록 하게나.",
-    ["O"] = "던 모로에 있는 조종사 스톤기어에게 발연 광석 6개를 가져가야 합니다.",
-    ["T"] = "발연 광석을 찾아서",
-  },
   [467] = {
     ["D"] = "조종사 스톤기어는 여느 조종사들과 마찬가지로 자신의 증기 전차에 대한 애착이 무척 강하다오. 항상 전차의 화력을 올릴 수 있는 새로운 방법을 찾으려고 열심이지.$B$B지금 그는 어떤 희귀한 광석에 대한 소문을 듣고는 자신을 위해 그 광석을 찾아다 줄 이를 구하고 있소. 생각이 있다면 던 모로에 있는 스틸그릴의 정비소로 가서 스톤기어를 만나 그가 뭘 원하는지 알아보도록 하시오.",
     ["O"] = "조종사 스톤기어와 대화해야 합니다.",
     ["T"] = "스톤기어의 광석",
-  },
-  [468] = {
-    ["D"] = "산악경비대 록가르가 던 알가즈와 저습지에서 임무를 수행해 줄 지원자를 찾고 있다네.$B$B그 질퍽거리는 북쪽 지역에서 임무를 수행할 의향이 있다면 던 알가즈로 가서 록가르와 한번 얘기해 보게. 길을 따라 북쪽으로 가다 보면 경비탑이 나오는데 던 알가즈는 그 북쪽 경비탑 너머에 있네.",
-    ["O"] = "산악경비대 록가르와 대화해야 합니다.",
-    ["T"] = "산악경비대 록가르에게 보고",
   },
   [469] = {
     ["D"] = "안녕하시오!$B$B메네실 쪽으로 가는 것 같아 보이지는 않는군... 여유가 있다면 메네실에 한번 들러 보시기 바라오. 필요한 물건을 구입하는 건 물론이고 맥주 한 잔 하면서 쉬어가기에도 더할 나위 없이 좋은 곳이지.$B$B메네실 쪽으로 갈 거라면 무두장이 제임스 할로란에게 이 악어 껍질 한 묶음을 가져다주지 않겠소?$B$B내가 직접 가고 싶지만 요즘 우리 집사람 심기가 상당히 불편한 것 같아서 얼굴을 마주치기가 좀 그렇소이다.",
@@ -1960,6 +2122,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "던 모드르 마을 근처에서 롱브레이드를 찾아야 합니다.",
     ["T"] = "던 모드르의 함락",
   },
+  [473] = {
+    ["D"] = "$N.  The Dragonmaw orc clan is showing its strength in more than just Algaz.  Captain Stoutfist has asked to speak with those willing to offer aid against these orcs.  He is inside the keep, in the war room.",
+    ["O"] = "Speak with Captain Stoutfist.",
+    ["T"] = "Report to Captain Stoutfist",
+  },
   [475] = {
     ["D"] = "숲에 혼란의 바람이 불고 있소.$B$B게롤라스 탈베드렌은 위대한 감시자의 역할을 맡아 바네실 지하굴에서 갈퀴발톱의 드루이드를 지킨다오. 게롤라스는 수면을 보호하도록 선택된 자로서, 이세라와 드루이드 사이에 맺은 협정이 유지되도록 드루이드를 안전하게 지킬 임무가 있소.$B$B그런데 최근 게롤라스에게서 연락이 늦어져 초조해지고 있소. 동쪽 별바람 마을로 가서 게롤라스의 보고서를 가지고 오시오. 우리 동족들이 무사하다는 사실을 확인하고 나면 나도 안심할 수 있소.",
     ["O"] = "별바람 마을에서 게롤라스 탈베드렌을 찾아야 합니다.",
@@ -1975,10 +2142,30 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "달라란 마술사의 상자 중 하나의 내용물을 찾아 와야 합니다. 장작나무 마을은 남쪽에서 찾을 수 있습니다.",
     ["T"] = "마법사의 상자",
   },
+  [478] = {
+    ["D"] = "<You quickly remove the pendant from the crate and replace the lid.>",
+    ["O"] = "Bring the strange pendant to Shadow Priest Allister at the Sepulcher.",
+    ["T"] = "Maps and Runes",
+  },
   [479] = {
     ["D"] = "달라는 그 마법사들이 사용하는 마법의 원천을 찾고 있네. 그리고 지금 우리는 모든 방법을 동원하여 놈들의 계획을 지연시켜야 해.$B$B분명히 마법사와 수호병들이 펜던트를 운반하고 있을 걸세.$B$B그 펜던트를 빼앗아 와야 하네. 길을 따라 남쪽으로 간 다음 길이 갈라지는 곳에서 호박색 농장으로 이어지는 동쪽으로 가게.",
     ["O"] = "공동묘지의 어둠의 사제 알리스터가 달라란 펜던트 8개를 가져와 달라고 했습니다.",
     ["T"] = "호박색 농장 조사",
+  },
+  [480] = {
+    ["D"] = "An archmage of great power is overseeing the reactivation of the ley energy node. With the progress they have made, our only hope of stopping them is by killing him. It will be difficult, he is no doubt protected by many other mages and warders.$b$bYou must go, and you must dispatch him quickly. When he is dead, retrieve his staff for me. Go now.",
+    ["O"] = "Kill the Dalaran archmage, then retrieve his staff for Shadow Priest Allister at the Sepulcher.",
+    ["T"] = "The Weaver",
+  },
+  [481] = {
+    ["D"] = "Take the pendant to Dalar Dawnweaver, perhaps he can shed some light on the wizards\' plans.",
+    ["O"] = "Take the rune-inscribed pendant to Dalar Dawnweaver at the Sepulcher.",
+    ["T"] = "Dalar\'s Analysis",
+  },
+  [482] = {
+    ["D"] = "Of course! How could I have forgotten?$b$bAmbermill was one of the sites earmarked by the Kirin Tor, noted because it houses a dormant ley energy node. The wizards must be planning to reactivate the node and use its energies for some greater purpose.$b$bWe cannot allow this to happen...$b$bIt will take a great amount of power to activate the area\'s ley energies, we can stall them by taking the pendants away from the wizards.$b$bRelay this information to Allister, he will decide a course of action.",
+    ["O"] = "Speak with Shadow Priest Allister at the Sepulcher.",
+    ["T"] = "Dalaran\'s Intentions",
   },
   [483] = {
     ["D"] = "Gnarlpine invaders were seen ravaging the Ban\'ethil Barrow Den to the west.$b$bThe slumbering druids will be trapped in the Emerald Dream for eternity, unaware of their fate, unless we help. The delicate hibernation ritual cannot be broken without the Relics of Wakening.$b$bJourney to the Den and retrieve the Raven Claw Talisman, Black Feather Quill, Sapphire of Sky, and Rune of Nesting. The druids store them in sacred chests.  Return them to me and I will prepare the awakening ritual.",
@@ -1995,6 +2182,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "굼벵이 바위굴 근처, 동부 내륙지의 강이 시작되는 곳에 추락한 오글소프의 유도 로봇에게 조난 탐지기를 가져가야 합니다.",
     ["T"] = "OOX-09/HL 수색",
   },
+  [486] = {
+    ["D"] = "Now the time has come to save the Druids of the Talon. If we fail now, $N, they will be forever lost in sleep.$b$bI shall prepare the Relics of Wakening and perform the ritual. For my work to take effect, the cursed beast responsible for this horrible situation must be slain.  Only then will the ritual be complete.$b$bIt was Ursal the Mauler who meddled with our brethren\'s calling and it is Ursal the Mauler who must now pay so they can be freed.  Travel to Gnarlpine Hold in the southwest and slay him.",
+    ["O"] = "Kill Ursal the Mauler and return to Athridas Bearmantle in Dolanaar.",
+    ["T"] = "투사 우르살",
+  },
   [487] = {
     ["D"] = "The road to Darnassus must be kept safe.  Travelers heading from Dolanaar to Darnassus have been reporting ruthless attacks by corrupted furbolgs from the Gnarlpine tribe.$b$bImportant news and commerce travels to and from Darnassus by way of this road daily.  We cannot afford to have a rogue band of heathens terrorizing people.$b$bTake up arms in the name of the sacred forest, $c.  Their den lies somewhere below this vantage point.  Slay 6 of these Gnarlpine ambushers and report back to me.",
     ["O"] = "Slay 6 Gnarlpine Ambushers and return to Sentinel Amara Nightwalker outside of Dolanaar.",
@@ -2010,6 +2202,12 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Collect 3 Fel Cones and give them to Zenn Foulhoof outside of Dolanaar.",
     ["T"] = "신뢰 회복!",
   },
+  [490] = "_",
+  [491] = {
+    ["D"] = "Thule once told me that, long ago, he and two colleagues created a magic wand, woven together from the apprentice wands each mage possessed.  This wand was a symbol of their friendship, and although Thule came to despise it he could not part with it, nor could he let the others have it.  So he stole the wand, and hid it in Fenris Keep.$B$BHere.  Take the wand to Bethor Iceshard, one of Thule\'s friends from years past.  I\'m sure he will want it.",
+    ["O"] = "Take the Woven Wand to Bethor Iceshard in the Magic Quarter of the Undercity.",
+    ["T"] = "Wand to Bethor",
+  },
   [492] = {
     ["D"] = "According to the Deathguard, another one of those foolish Dwarven Mountaineers has just been captured.  The Deathguard likes to use the cellar of the Gallows End Tavern as a holding cell until prisoners can be \"properly\" dealt with.$b$bWhy don\'t you go see how the Captured Mountaineer enjoys this special drink I made for him?  It contains a subtle hint of what The Dark Lady has planned for the rest of Azeroth.",
     ["O"] = "Bring Johaan\'s Special Drink to the Captured Mountaineer.",
@@ -2020,15 +2218,46 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "언덕마루 구릉지의 타렌 제분소에 있는 연금술사 라이던에게 렐퍼럴의 연구 결과를 전달해야 합니다.",
     ["T"] = "언덕마루 구릉지로의 여정",
   },
+  [494] = {
+    ["D"] = "Be silent and pay attention, $c.$b$bI was sent to this position in order to survey the town of Hillsbrad.  My mission is one of reconnaissance.  It is imperative that you send word to High Executor Darthalia in Tarren Mill at once.  Let her know that I, Deathstalker Lesh, send the following message:$b$b\"The raven\'s cry from the west doth beckon.\"$b$bFollow the road to the east and pay close attention to the signs.  Now, hurry!  Off you go to Tarren Mill, and with urgency I might add!",
+    ["O"] = "Travel to Tarren Mill to deliver Deathstalker Lesh\'s message to High Executor Darthalia.",
+    ["T"] = "공격 개시",
+  },
   [495] = {
     ["D"] = "무그톨과 그의 오우거 부대가 실바나스 여왕님을 위해 의지의 왕관을 찾는 임무를 띠고 알터랙으로 떠났었지. 그런데 공교롭게 그 바보 같은 자들이 왕관을 찾아오는 대신에 소유욕에 불타오르고 말았어. 오우거들은 값져 보이는 것만 보면 사족을 못 쓰는 모양이더군.$B$B녀석의 바보 같은 행동이 결국 큰 문제를 일으키고 말았지. 의지의 왕관을 가지려는 욕심 때문에 자신의 직분을 잊고 감히 실바나스 여왕님께 대항했던 것이야.$B$B어둠의 여왕님께서는 그자를 여왕님께 반하는 자들에게 본보기로 삼으려 하고 계시다. 언덕마루의 타렌 제분소로 가서 나의 부관인 멜리사라에게 이 사태를 전하라.",
     ["O"] = "언덕마루 구릉지의 타렌 제분소에 있는 멜리사라에게 보고해야 합니다.",
     ["T"] = "의지의 왕관",
   },
+  [496] = {
+    ["D"] = "Ah, another wretched day in Tarren Mill.  All of this clean air puts me in such a foul mood, $N.$b$bThe sooner we can plague the humans here, the better.  I\'ve been conducting intense studies on possible killing agents to use in my concoctions but I haven\'t the time to collect them all.$b$bIf you want to make yourself of use, procure the following items for me:  10 Gray Bear Tongues and the very rare and hard to find, Creeper Ichor.  You\'ll find both bears and creepers just outside of Tarren Mill.",
+    ["O"] = "Apothecary Lydon of Tarren Mill wants 10 Gray Bear Tongues and some Creeper Ichor.",
+    ["T"] = "괴로움의 비약",
+  },
+  [497] = "_",
+  [498] = {
+    ["D"] = "Me and some other warriors were sent by the Warchief to retrieve an object from Durnholde and to investigate this so-called Syndicate.$b$bWe went to Durnholde to take a look around, but we were taken by surprise by a large number of the humans. We fought bravely, but their sheer numbers were enough to defeat us. They took a few of us captive, but I was able to escape.$b$bDurnholde is just southeast of here, across the river. Drull and Tog\'thar are being held there, you must go and rescue them.",
+    ["O"] = "Krusk in Tarren Mill needs you to free Drull and Tog\'thar from Durnholde Keep.",
+    ["T"] = "포로 구출",
+  },
+  [499] = {
+    ["D"] = "It will take but a moment for me to mix these components into what I have deemed an Elixir of Suffering.$b$bThere we go!  Ah, nothing brightens a gloomy day in these miserable foothills like bringing a little suffering into the world.$b$bLet us see if our little potion has achieved its desired effect.$b$bGive my assistant Umpi a taste of what the Dark Lady has planned for both humans and Scourge alike.",
+    ["O"] = "Give Umpi the Elixir of Suffering.",
+    ["T"] = "괴로움의 비약",
+  },
   [500] = {
     ["D"] = "Crushridge ogres have dug an ogre mound up in the Alterac Mountains near the ruined city of Alterac.  And my scouts tell me they\'ve taken over those ruins as well.$B$BWe can\'t let them get cozy up there; if they think they\'re safe where they are, then their next step will be to move down into the foothills, which will put them right at our front door!$B$BGo north to the Alterac Mountains and hunt ogres.  Bring me the Dirty Knucklebones they carry and you will earn a nice bounty.",
     ["O"] = "Gather 9 Dirty Knucklebones from Crushridge ogres in the Alterac Mountains.  Bring them to Marshal Redpath in Southshore.",
     ["T"] = "산사태 일족 현상금",
+  },
+  [501] = {
+    ["D"] = "Oh, $N. . .the flowers are blooming in Hillsbrad and the air is so fresh and brisk.  I can\'t help but to wallow in the misery of it all.  I look out my grimy window and long for the day when our New Plague brings this world the death it deserves.$b$bAs much as I would love to sit and brood all day, my duty to the Dark Lady calls.  Help me, would you?  My research leads me to believe I can make the most splendid death-brew with the blood of a Mountain Lion.  Bring some to me and we\'ll have a little fun.",
+    ["O"] = "Bring 10 vials of Mountain Lion Blood to Apothecary Lydon in Tarren Mill.",
+    ["T"] = "고통의 비약",
+  },
+  [502] = {
+    ["D"] = "Ah, nothing like the smell of fresh blood in the foothills!$b$bNow we\'ll mix in a touch of this and a little of that and let the real fun begin!  What I have created with this blood, I like to call an Elixir of Pain.  If my calculations are correct this concoction could be the start of something very beautiful for Lady Sylvanas.  But what we need is a test.$b$bTake this elixir out to the northern farm in Hillsbrad Fields to the southwest.  Let\'s see how Farmer Ray\'s little dog Stanley likes this \"treat.\"",
+    ["O"] = "Feed the Elixir of Pain to Stanley.",
+    ["T"] = "고통의 비약",
   },
   [503] = {
     ["D"] = "From what I can tell of the documents you procured, Gol\'dir is being held in a large Syndicate base to the north, most likely in the Alterac Mountains. He has been held captive far too long and must be freed.",
@@ -2045,10 +2274,25 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Kill 12 Syndicate Footpads and 8 Syndicate Thieves, then return to Magistrate Henry Maleb in Southshore.",
     ["T"] = "비밀결사대 암살자",
   },
+  [506] = {
+    ["D"] = "A day or two ago, I was visited by the leader of this Syndicate. His name was Aliden Perenolde, and styled himself lord of this land. He confided in me his plans to take the orcs that stood against him as slaves, just as his father and his mentor, the despised Blackmoore, had planned.$b$bMore important was that he brought his mistress, a wisp of a girl named Elysa. Around her neck was the pendant the Warchief desires.$b$bNow go, I will make my own way, after I have settled my business here.",
+    ["O"] = "Return the information gathered by Gol\'dir to Krusk in Tarren Mill.",
+    ["T"] = "Blackmoore\'s Legacy",
+  },
   [507] = {
     ["D"] = "It is clear that Perenolde must be killed, his foulness removed from the world. His manor lies a ways to the north of here, on the shores of Lordamere Lake. Do your duty, $n, then retrieve the pendant that the Warchief desires, and return here.",
     ["O"] = "Kill Lord Aliden Perenolde and ask his mistress, Elysa, about Taretha\'s pendant.",
     ["T"] = "앨리덴 페레놀드 경",
+  },
+  [508] = {
+    ["D"] = "The pendant? Of course you can have it... Take it! I want no memory of him... just please, please leave in peace...",
+    ["O"] = "Return Taretha\'s pendant to Krusk in Tarren Mill.",
+    ["T"] = "Taretha\'s Gift",
+  },
+  [509] = {
+    ["D"] = "Another day, another elixir to be made. If it were up to me, I\'d just let the pathetic humans and Scourge fight it out.  They seem bent on killing each other as is.$b$bAlas, our Dark Lady wants to help speed up the process a tad so why not pass these morbid days by spreading a little death and disease across the land?$b$bHere\'s the plan, $N: you go out to Nethander Stead, south of Tarren Mill and east of the river and Southshore. Collect for me 6 Mudsnout Blossoms from the field for my next elixir.",
+    ["O"] = "Bring 6 Mudsnout Blossoms to Apothecary Lydon in Tarren Mill.",
+    ["T"] = "죽음의 비약",
   },
   [510] = {
     ["D"] = "Among these documents is a list of requested supplies.  These include mundane items (food, weapons, clothing) as well as more exotic gear (masks, oil, poison).$B$BBut what is most notable is the urgency of the request - these supplies were needed soon in order to undertake what is described in the document as an \"important mission against Southshore.\"",
@@ -2064,6 +2308,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "I fear the leadership behind the Syndicate is bent on Southshore\'s ruin.  We must strike hard at these leaders before their plans are realized.$B$BEnter the ruins of Strahnbrad, in the Alterac Mountains to the north.  We think the Syndicate is using the area as a headquarters.$B$BWe know this gang of cutthroats is run by former Alterac nobles.  They may be hiding as normal Syndicate agents, but you\'ll know you\'ve killed a noble by the signet ring he wears.$B$BBring me those signet rings.",
     ["O"] = "Bring 7 Alterac Signet Rings to Magistrate Maleb in Southshore.",
     ["T"] = "지휘부 처치",
+  },
+  [513] = {
+    ["D"] = "Just when I thought another day was going to pass devoid of any joy, you brought me those marvelous Mudsnout Blossoms.$b$bFirst I will mix them down into a fine composite.  We\'ll then need Master Apothecary Faranell in the Undercity to apply his colloid of decay to it and then we\'ll be ready for some good fun indeed!$b$bHere, take this Mudsnout Composite and run it off to Master Faranell at once, $N.",
+    ["O"] = "Take the Mudsnout Composite to Master Apothecary Faranell in the Undercity.",
+    ["T"] = "죽음의 비약",
   },
   [514] = {
     ["D"] = "I have a colleague in Ironforge who may be able to help decrypt this letter.  Go to the Library in the Hall of Explorers in Ironforge and speak with Prospector Stormpike.  Tell him I sent you and show him the letter.  If there\'s anyone north of Blackrock Spire who can read this, it is he.",
@@ -2130,6 +2379,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "이 퀘스트는 블리자드에 의해 구식으로 지정되어 더 이상 받거나 완료할 수 없습니다.</b>[Gather 5 lightforge ingots, then return to Glorin Steelbrow in the Wetlands.]",
     ["T"] = "Lightforge Ingots",
   },
+  [527] = {
+    ["D"] = "Stand at attention while addressing me, $c.$b$bI am under direct command of Varimathras.  We are to quell the human infestation until our apothecaries can develop the new plague.$b$bOur information leads us to believe that the town of Hillsbrad is vulnerable to attack.  Your first assignment is aimed at disrupting their food supply and infrastructure.$b$bTravel west.  Raid the northernmost farms of Hillsbrad Fields.  Make sure that the landowners, Farmer Ray and Farmer Getz, are executed as well.",
+    ["O"] = "Kill 6 Hillsbrad Farmhands, 6 Hillsbrad Farmers, Farmer Ray and Farmer Getz and report back to Darthalia in Tarren Mill.",
+    ["T"] = "언덕마루 전투",
+  },
+  [528] = {
+    ["D"] = "Word of the attack on the northern farms has the townsfolk panicked.  Most excellent.$b$bOur Deathstalkers report peasants fleeing to the fields in southern Hillsbrad.  The fools think they can hide in the orchards and escape their doom.$b$bProve them wrong, $N.  Return to Hillsbrad Fields and seek out the cowering peasants.  Lay waste to them in the name of our Dark Lady.$b$bDismissed!",
+    ["O"] = "Kill 15 Hillsbrad Peasants and report back to Darthalia in Tarren Mill.",
+    ["T"] = "언덕마루 전투",
+  },
   [529] = {
     ["D"] = "The humans of Hillsbrad have been putting up unexpected resistance.  The problem appears to be that the townsfolk are being armed by the local blacksmith.  We need to shut down all supply lines.$b$bYour mission will be to execute Blacksmith Verringtan.  Slay his apprentices as well.  While there, bring back a shipment of iron from their stockpile.  The supplies will come in handy when we are done with the conquering of Hillsbrad and begin razing Southshore.",
     ["O"] = "Kill Blacksmith Verringtan and 4 Hillsbrad Apprentice Blacksmiths.$b$bRetrieve a shipment of iron and report back to Darthalia in Tarren Mill.",
@@ -2150,6 +2409,12 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Kill Magistrate Burnside and 4 Hillsbrad Councilmen.  Destroy the Hillsbrad Proclamation.  Steal the Hillsbrad Town Registry.  Report back to Darthalia in Tarren Mill afterwards.",
     ["T"] = "언덕마루 전투",
   },
+  [533] = {
+    ["D"] = "At last we begin to hear word and rumor, find evidence of Gol\'dir\'s whereabouts. The humans have been moving him around, but we are narrowing down our search and focusing on the large Syndicate camp just north of here.$b$bGo there, $n, and bring back whatever information you can get your hands on.",
+    ["O"] = "Retrieve information about Gol\'dir\'s whereabouts for Krusk in Tarren Mill.",
+    ["T"] = "침투",
+  },
+  [534] = "_",
   [535] = {
     ["D"] = "으... 부상으로 다 죽어가는 마당에 적까지 만나는군.$B$B어쨌든 당신은 날 죽이겠지만, 그 전에 당신네 종족이 마시는 남녘해안 스타우트 맥주를 좀 가져다준다면 당신이 원하는 정보를 주겠소.",
     ["O"] = "이 퀘스트는 블리자드에 의해 구식으로 지정되어 더 이상 받거나 완료할 수 없습니다.</b>비밀결사대 야영지에 있는 발릭에게 남녘해안의 스타우트 맥주 한 잔을 가져가야 합니다.",
@@ -2185,25 +2450,61 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Travel to Dun Garok and kill 8 Mountaineers, 4 Riflemen, 2 Priests and Captain Ironhill and report back to Darthalia in Tarren Mill.",
     ["T"] = "언덕마루 전투",
   },
+  [542] = {
+    ["D"] = "I need to spend some time studying the Arm of Gri\'lek book you brought me, though I\'m sure Milton is eager to get the other recovered books into Stormwind\'s collection.$B$BHere are the books you gathered from the Ruins of Alterac, packed and catalogued.  Take them back to Milton Sheaf in Stormwind and I\'m sure he\'ll be grateful.",
+    ["O"] = "Bring the Tomes of Alterac to Milton Sheaf in Stormwind.",
+    ["T"] = "Return to Milton",
+  },
   [543] = {
     ["D"] = "오, 자네로군. 내 자네에게 맡길 일이 하나 있어 기다리고 있던 참일세.$B$B자네 페레놀드 티아라라고 들어봤는가? 페레놀드 티아라는 알터랙 왕국이 폐허가 되기 전에 알터랙을 다스렸던 페레놀드 귀족 가문의 오래된 가보일세. 아이언포지의 보석세공 장인이 만들었다고 전해지며 최고의 에메랄드가 박혀 있지.$B$B알터랙이 파괴될 때 티아라도 사라졌지만 최근에 오우거 마법사, 욕심쟁이 그렐볼그가 발견했고 현재 또 다른 보물을 찾아 알터랙 폐허를 방황하고 있다고 하는데 말이야.$B$B자네가 우리를 위해 그 티아라를 찾아 왔으면 하네.",
     ["O"] = "페레놀드 티아라를 회수해야 합니다.",
     ["T"] = "페레놀드 티아라",
+  },
+  [544] = {
+    ["D"] = "I came to Tarren Mill to research, but now must resolve a crisis.  You see, four Forsaken fled the Undercity a few months ago.  They turned their backs on their brethren, but what\'s worse...they stole from the Dark Lady.$B$BThese thieves broke into a secure vault and stole four artifacts, items our apothecaries required in certain studies.  Sylvanas would have these artifacts returned.$B$BThe thieves fled the Undercity to Dalaran, and those wizards quarantined them in the Lordamere Internment Camp.",
+    ["O"] = "Find the traitors and recover their artifacts, then return to Magus Voidglare in Tarren Mill.",
+    ["T"] = "감옥 습격",
   },
   [545] = {
     ["D"] = "The wizards of Dalaran constructed a vast, magical dome around the heart of their city.  Some believe it was for protection from the violence of these times, while others say they merely wanted solitude, to study and plot.$B$BI don\'t care what the reason was.  I do care that the ruined outskirts of their city, outside the dome, may hide valuable magical treasures.$B$BBut the area is patrolled by the wizards and their elemental slaves.$B$BSo hunt them, and return when their numbers are sufficiently reduced.",
     ["O"] = "Kill 6 Dalaran Summoners and 12 Elemental Slaves, then return to Magus Voidglare in Tarren Mill.",
     ["T"] = "달라란 순찰",
   },
+  [546] = {
+    ["D"] = "I hear you were enlisted by Darthalia to wage war on the humans of Hillsbrad.  So jealous I am. . .$b$bWhile you\'re off having all the fun -- slaying humans, pillaging the town, terrorizing innocent people -- I am stuck standing guard here in Tarren Mill.$b$bPerhaps you\'ll take pity on an old Deathguard like myself?  You see I am collecting human skulls.  And you will be fighting humans for quite some time.  Over the course of your long battle, bring me 30 skulls and I will make it worth your while.",
+    ["O"] = "Deathguard Samsa of Tarren Mill wants 30 Hillsbrad Human Skulls.",
+    ["T"] = "죽음의 전리품",
+  },
   [547] = {
     ["D"] = "High Executor Darthalia sent me to keep watch of Dun Garok from a distance.  I had set up camp just out of sight.  But when morning came and I had to boil water, I left to gather firewood.$b$bWhen I returned to camp, I discovered my gear was missing.$b$bApparently some dwarven scouts from Dun Garok had passed by and made off with it.  I need my sword!  If you can get it back for me I would be so grateful.  So many dwarves there...it will be quite difficult to find the dirty little thief who stole it.",
     ["O"] = "Retrieve Deathguard Humbert\'s sword from Dun Garok and return it to him in Tarren Mill.",
     ["T"] = "험버트의 검",
   },
+  [548] = "_",
+  [549] = {
+    ["D"] = "By the authority of Lady Sylvanas, all members of the organization known as the Syndicate are wanted dead. Those brought into custody or taken prisoner will be summarily executed. They are currently known to be amassing in the ruins of Durnholde Keep, to the southeast of Tarren Mill.$b$bA handsome reward is offered to all who bring proof of their deeds to High Executor Darthalia.",
+    ["O"] = "Kill 10 Syndicate Rogues and 10 Syndicate Watchmen. Return to High Executor Darthalia in Tarren Mill for your reward.",
+    ["T"] = "비밀결사대원 현상 수배",
+  },
+  [550] = {
+    ["D"] = "Because you fought with such valor and perseverance in the Battle of Hillsbrad, I have written this commendation, extolling your heroics in combat for the high command to recognize.$b$bTake this sealed commendation to Varimathras in the Undercity.  Go with pride, $c.",
+    ["O"] = "Take Darthalia\'s Sealed Commendation to Varimathras in the Undercity.",
+    ["T"] = "언덕마루 전투",
+  },
   [551] = {
     ["D"] = "This parchment is enchanted with a spell, rendering it indecipherable.  But one word at the top of the paper can be read:$B$B$B      Nagaz$B$B",
     ["O"] = "Take the Ensorcelled Parchment to Loremaster Dibbs in Southshore.",
     ["T"] = "마법의 양피지",
+  },
+  [552] = {
+    ["D"] = "Master Helcular was almost complete with his transformation into a Lich when a human lynch mob discovered his ritual lair in the hills and brutally killed him.  To make matters worse they buried his corpse in the Southshore cemetery.$b$bSuch disregard for the great wizard is unacceptable.  As his apprentice I shall see to it that the rains of vengeance fall upon the town of Southshore.$b$bWe will need Helcular\'s Rod first.  Yeti overtook his ritual lair.  Undoubtedly one of the beasts has it.",
+    ["O"] = "Retrieve Helcular\'s Rod from the Yeti and bring it back to Novice Thaivand in Tarren Mill.",
+    ["T"] = "헬쿨라의 복수",
+  },
+  [553] = {
+    ["D"] = "Here, take the Rod of Helcular. You will need it.$b$bHelcular fashioned 3 ceremonial pyres as part of his most powerful spell.  The Flame of Azel and the Flame of Veraz lie within the Foothill Caverns. The Flame of Uzel lies in a cave above the caverns, further north in the mountains.$b$bThe Rod of Helcular must be charged from each of the three flames. Once the ritual is complete, drive the rod into Helcular\'s grave in Southshore, the heavily guarded human town to the south.  Vengeance shall be ours!",
+    ["O"] = "Charge the Rod of Helcular with the powers of the Flame of Azel, Flame of Veraz and the Flame of Uzel.$b$bDrive the charged rod into Helcular\'s grave in Southshore.",
+    ["T"] = "헬쿨라의 복수",
   },
   [554] = {
     ["D"] = "Prospector Stormpike is a master of decryption and deciphering.  If you take the parchment you found to him, then with luck he can make sense of it.  Stormpike is currently studying in the Prospector headquarters in Ironforge.$B$BAnd when you see him tell him you spoke with me - I\'ve been sending him quite a lot of business lately.",
@@ -2214,6 +2515,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "If there\'s one thing you\'ll learn about Southshore it\'s that we have some of the best cuisine north of Stormwind!$b$bTake my secret recipe for Turtle Bisque, for example. I\'ve known folks to travel from as far as Darkshire just to enjoy a bowl.  Speaking of which, I haven\'t been able to make any lately.  I used to head up past Dalaran to Lake Lordamere myself to hunt Snapjaws but it\'s just too dangerous now. If you bring me some Turtle Meat from the Snapjaws up north and Soothing Spices, I\'ll whip some up!",
     ["O"] = "Bring 10 pieces of Turtle Meat and some Soothing Spices to Chef Jessen in Southshore.",
     ["T"] = "독특한 거북이 비스크",
+  },
+  [556] = {
+    ["D"] = "A notable talent of the wizards of Dalaran is their familiarity with elementals: powerful creatures from other dimensions.  The wizards use magical tokens as a means to control these elementals.  Magus Voidglare would like some of these tokens to study.$B$BEnter the territories of the Dalaran wizards, west of Hillsbrad, and gather the tokens.$B$BYou might find the tokens on any citizen of Dalaran, but I suggest hunting at the internment camp.  It\'s safer than Dalaran itself.",
+    ["O"] = "Bring 10 Worn Stone Tokens to Keeper Bel\'varil in Tarren Mill.",
+    ["T"] = "징표의 돌",
   },
   [557] = {
     ["D"] = "The Magus will be busy studying those stone tokens you gathered, but I know he\'ll eventually want examples of their counterpart: bracers of binding.  These are set around the wrists of actual elementals, and bind them into the mage\'s service.$B$BHunt elementals in the ruins of Dalaran and gather their Bracers of Earth Binding, and the Magus will be pleased.",
@@ -2390,6 +2696,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "이 퀘스트는 블리자드에 의해 구식으로 지정되어 더 이상 받거나 완료할 수 없습니다.</b>님보야에게 충만한 영혼의 보석을 가져가야 합니다.",
     ["T"] = "예니쿠 구출",
   },
+  [593] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Filling the Soul Gem",
+  },
   [594] = {
     ["D"] = "상당히 좋은 필체의 쪽지에는 다음과 같이 적혀 있습니다.$B$B- 누구든 저를 도와 주실 수 있는 분께-$B$B전 지금 도움이 절실히 필요합니다. 거대한 하늘갈기 고릴라가 남해에 있는 한 섬에 절 잡아 두고 있습니다.$B$B밤하늘의 별도 저에겐 낯설고 정글의 숲에 가려 잘 보이지 않지만, 아주 맑은 날에는 북서쪽에 거친 해안이 보입니다. 그리고 남서쪽에는 거대한 배로 보이는 것이 있습니다.$B$B제 구세주가 되어 주실 분께 간절히 부탁 드립니다. 부디 절 도와주십시오.",
     ["O"] = "이 퀘스트는 블리자드에 의해 구식으로 지정되어 더 이상 받거나 완료할 수 없습니다.</b>쪽지가 든 병의 장본인을 찾아야 합니다.<h2 class=\"heading-size-3\">서술</h2>상당히 좋은 필체의 쪽지에는 다음과 같이 적혀 있습니다.$B$B- 누구든 저를 도와 주실 수 있는 분께-$B$B전 지금 도움이 절실히 필요합니다. 거대한 하늘갈기 고릴라가 남해에 있는 한 섬에 절 잡아 두고 있습니다.$B$B밤하늘의 별도 저에겐 낯설고 정글의 숲에 가려 잘 보이지 않지만, 아주 맑은 날에는 북서쪽에 거친 해안이 보입니다. 그리고 남서쪽에는 거대한 배로 보이는 것이 있습니다.$B$B제 구세주가 되어 주실 분께 간절히 부탁 드립니다. 부디 절 도와주십시오.<h2 class=\"heading-size-3\"><a href=\"javascript:;\" class=\"disclosure-off\" onclick=\"return WH.disclose(WH.ge(\'lknlksndgg-completion\'), this)\">완료</a></h2>Have you come to free me?<h2 class=\"heading-size-3\">획득</h2>퀘스트 완료 시 보상:<ul><li>",
@@ -2500,6 +2811,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "무법항에 있는 남작 레빌가즈와 대화해야 합니다.",
     ["T"] = "유령의 섬",
   },
+  [618] = {
+    ["D"] = "Negolash is a hungry giant.$B$BWhen the giants destroyed our ship, Negolash went straight for my kitchen.  He wasn\'t hungry for crew like the other giants.  Negolash wanted wine...and my Barbecued Buzzard Wings.  They\'re my specialty, and I had to go all the way to the Badlands for the recipe!$B$BIf you want to lure the giant, then get some wine and a heap of buzzard wings.  Put them in our old lifeboat, southeast of here along the coast.  When Negolash smells all that food, he\'ll come for sure!",
+    ["O"] = "Bring 10 Barbecued Buzzard Wings and 5 bottles of Junglevine Wine to Captain Smotts\' Lifeboat.$B$BKill Negolash, and bring Smotts\' Cutlass to Captain Smotts in Stranglethorn.",
+    ["T"] = "Facing Negolash",
+  },
+  [619] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Enticing Negolash",
+  },
   [620] = {
     ["D"] = "이 멋진 머리띠에는 가장자리를 따라 \"HS\" 라는 머리글자가 수놓아져 있습니다.",
     ["O"] = "이니셜이 새겨진 머리띠를 주인에게 돌려줘야 합니다.",
@@ -2565,10 +2886,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Destroy the cache of explosives.",
     ["T"] = "탄돌 교각",
   },
+  [634] = {
+    ["D"] = "I ask of you one more small favor, $c.  We await the reserves of Ironforge.  However, Roggo has knowledge of an Alliance camp to the north in Arathi Highlands at Refuge Pointe.$b$bTravel there and seek out Captain Nials.  Ask the good Captain if the Alliance can spare some soldiers to help us reclaim Dun Modr and the Thandol Span.",
+    ["O"] = "Seek out Captain Nials at Refuge Pointe.",
+    ["T"] = "Plea To The Alliance",
+  },
   [635] = {
     ["D"] = "수정을 손에 쥐자 고동치기 시작합니다.$B$B마치 도움이 필요한 누군가가 자신의 의사를 전달하려 애쓰는 것처럼 수정에서는 간절한 애원이 느껴집니다.$B$B마음속에 아라시 고원 북쪽 산악 지역과 그곳의 땅속에서 튀어나온 빛나는 수정에 대한 환영이 보입니다.$B$B그곳으로 끌려가는 듯한 느낌이 듭니다.",
     ["O"] = "Find the crystal from your vision.",
     ["T"] = "산 속의 수정",
+  },
+  [636] = {
+    ["D"] = "This book tells the tale of an elemental princess, Myzrael, and of her imprisonment deep underneath the Arathi Highlands.$B$BIt also tells of a secret outcropping of crystals in the highlands.  These crystals, the Shards of Myzrael, are a window to the princess\' prison.$B$BIf a brave soul found the Shards of Myzrael, the perhaps $ghe:she; could speak with her...",
+    ["O"] = "Find the Shards of Myzrael.",
+    ["T"] = "대지의 전설",
   },
   [637] = {
     ["D"] = "편지 봉투 안에는 공들여 쓰인 편지 몇 장이 들어 있는데, 물에 젖은데다 전쟁의 모진 상처들로 인해 다 낡아 버려서 편지의 몇 장이 손에 쥐자마자 녹아 없어져 버립니다.$B$B편지는 아이언포지의 사라 발루 부인 앞으로 보내진 것이며 \"사랑하는 사라에게...\"로 시작하고 있습니다.",
@@ -2650,6 +2981,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak with Gerrig Bonegrip in the Forlorn Cavern of Ironforge.",
     ["T"] = "Myzrael\'s Allies",
   },
+  [654] = {
+    ["D"] = "Activating the power source makes the field testing kit start to glow and vibrate.  It would seem to be working as planned.$B$BAccording to Chief Engineer Bilgewhizzle, you now have two hours to collect the data you need in the Tanaris desert.  If you do not collect it within two hours, all the data will be lost and you will need to buy another power source from him.$B$BReturn to him when you have completed the task.",
+    ["O"] = "Acquire acceptable samples for 8 basilisks, 8 hyenas, and 8 scorpions.  Bring the testing kit back to Chief Engineer Bilgewhizzle in Gadgetzan before the power source runs out.",
+    ["T"] = "Tanaris Field Sampling",
+  },
   [655] = {
     ["D"] = "It is still clear to me, like yesterday... So many years without hope, with wood and steel to bind me to this terrible place. Then finally, finally! There was the Warchief. Doomhammer in his midnight plate, his warhammer held high.$b$bIt was... too terrible... That the blow of a coward would strike down our greatest hero. From behind he charged on his horse, and then his lance ran him through... I fell to my knees. What hope was there? What hope is there...",
     ["O"] = "Speak with Tor\'gan in Hammerfall.",
@@ -2679,6 +3015,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "I\'ve seen Kinelory look way worse after a night in the tavern than she does now. You obviously did a good job protecting her.$B$BThese items she brought back from the farm should at least let Phin get an idea of what\'s going on out here in Arathi. Just to make sure there\'s no retaliation after your attack, we\'re going to stay here for a bit longer. Would you be willing to head back to Southshore and talk to Phin?",
     ["O"] = "Find Phin Odelic in Southshore.",
     ["T"] = "새로운 역병의 징조?",
+  },
+  [662] = {
+    ["D"] = "O\'Breen led the ships into the cove.  We were certain this is where the treasure could be found.  The Harbinger docked safely but as the Maiden\'s Folly and Spirit of Silverpine approached the tides began to lower.  Strangest thing I\'ve ever seen!$b$bThose two ships ran aground into something... some sort of temple in the reef.  They sank so quickly, was quite a tragedy.$b$bWe need to retrieve their Logs as well as their Charts before we leave.  We can\'t leave that information behind for prying eyes!",
+    ["O"] = "First Mate Nilzlix wants you to retrieve the Charts and Logs from the Maiden\'s Folly and the Spirit of Silverpine.",
+    ["T"] = "Deep Sea Salvage",
   },
   [663] = {
     ["D"] = "롤로 눈에 작은 $R|1이;가; 보인다! 롤로 항상 망 보고 있다!$B$B팔디르의 만에 온 걸 환영한다. 오브린 선장이 여기 몇 시간만 있으면 된다고 했다. 보물을 모아서 무법항으로 가져가기만 하면 된다고 했다.$B$B하지만 롤로 생각하기에는 시간이 더 오래 걸릴 것 같다. 우리 함대에서 배 두 개 잃었다. 불쌍한 은빛소나무의 영혼호와 처녀의 망상호... 지금은 저 바다 밑에 자고 있을 거다!$B$B여기서 쉴 거면 오브린 선장과 얘기해 보는 게 좋을 거다.",
@@ -2805,6 +3146,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Find Theldurin the Lost.",
     ["T"] = "실성한 텔두린",
   },
+  [688] = {
+    ["D"] = "<Myzrael speaks.>$B$BFree!  I AM FREE!  I am free to gather strength, hidden from my captors.  For if they faced me now they would surely overpower and again imprison me.$B$BBut in time I will confront the giants, and they will regret their wardship of me!$B$BYou are a noble ally, $N.  I will need your help again in time.  When I am ready, I will need you to summon me to the surface$B$BSpeak with Zaruk in Hammerfall.  He knows how I can be summoned.",
+    ["O"] = "Speak with Zaruk in Hammerfall.",
+    ["T"] = "Myzrael\'s Allies",
+  },
   [689] = {
     ["D"] = "그러니까 우리의 위대하신 국왕께서 설리 발루라는 병사를 위해 기념비를 세웠으면 하신단 말이오? 그 불쌍한 젊은이가 탄돌 교각 참사에서 죽었단 말이지?$B$B도대체 이 동부 왕국에는 언제쯤 평화가 찾아올는지...$B$B휴, 왕께서 내리신 명령이니 우선 다른 작업은 뒤로 미뤄야겠군. 후세에까지 길이 남을 진정한 영웅의 기념비를 만들려면 최상급 돌이 필요하오. 언덕마루의 다로우 언덕으로 가서 알터랙 화강암을 좀 가져 오시오.",
     ["O"] = "아이언포지의 대석공 마블스텐이 알터랙 화강암 5개를 가져다 달라고 했습니다.",
@@ -2835,6 +3181,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "푸른색 마노를 찾아서 임시 주둔지에 있는 수습마법사 크리텐에게 가져가야 합니다.",
     ["T"] = "트렐레인의 방어 장치",
   },
+  [695] = {
+    ["D"] = "Here you are, $N. The gem only needs to be pressed against one of the pedestals near the base of the tower to activate its defenses. Use it when you\'re ready to enter the tower and find Trelane\'s remaining items. $B$BGood luck to you. I\'ll be awaiting your return here at the camp. Oh, and speak to Skuerto before you leave. He\'ll give you the rest of the details you\'ll need.",
+    ["O"] = "Speak to Skuerto.",
+    ["T"] = "An Apprentice\'s Enchantment",
+  },
   [696] = {
     ["D"] = "당신이 찾아야 할 물건은 트렐레인의 부적, 트렐레인의 수정구, 그리고 트렐레인의 잿불 마노라오.$B$B세 가지 모두 탑 안의 상자에 들어 있는데, 상자를 여는 데는 별문제가 없을 테고... 조심해야 할 건 오우거들이오.$B$B탑의 방어 기능으로는 오우거를 직접 처리할 수 있는 게 없기 때문에 무기를 쓸 준비를 하고 있어야 할 것이오. 당신이 물건을 훔치러 왔다는 걸 오우거들이 알면 분명히 공격해 올 것이오.$B$B조심하고 당신에게 행운이 있기를 바라오.",
     ["O"] = "트렐레인의 부적, 트렐레인의 수정구, 트렐레인의 잿불 마노를 찾아 임시 주둔지에 있는 스쿼토에게 가져가야 합니다.",
@@ -2844,6 +3195,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Take this letter back to Stormwind and let Malin know that Kryten an\' I\'ll be home soon. He\'ll reward you well for helping us here, $N, of that I\'ve no doubt.$B$BTravel safely.",
     ["O"] = "Take the Sealed Letter to Archmage Malin in the Mage Quarter of Stormwind.",
     ["T"] = "말린의 요청",
+  },
+  [698] = {
+    ["D"] = "I\'m working on getting some supplies together for our outpost near the beach to the east--Tok\'kar does what he can, but between shifts of guard duty and cooking for his soldiers there\'s not much time left in the day.$B$BThey do enjoy cooking up some sawtooth meat when they can, but I haven\'t had time to get them another shipment. Would you mind helping them out?$B$BThe young sawtooths aren\'t as tasty as the older ones, so stay clear of those; give them a year or two to get to full size.",
+    ["O"] = "Bring 8 Unprepared Sawtooth Flanks to Tok\'Kar in Swamp of Sorrows.",
+    ["T"] = "보급품 보충",
   },
   [699] = {
     ["D"] = "With the threat of murlocs along the coast, we\'re stationed out here to protect--or warn if the force is too large--of any coming threats to Stonard. It doesn\'t give us much time for relaxation, and we could use some more help if you\'re able.$B$BThe sawtooth snappers\' claws make for fine weapons when properly prepared. Bring me some of their claws and I\'ll see you\'re rewarded with one of our weapons in thanks for the fresh meat and the good company.",
@@ -2895,25 +3251,25 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "황야의 땅에 있는 로트윌 베리아투스에게 작은 돌조각 10개를 가져가야 합니다.",
     ["T"] = "바위의 정령 연구",
   },
-  [711] = {
-    ["D"] = "당신이 보여준 실력이 내 수습생 모두를 합친 것보다도 낫군요.$B$B다음으로 부탁할 일은 큰 돌조각을 구해와야 하는 좀 더 힘든 일이에요. 충분히 주의한다면 바위 정령에게서 돌조각을 얻을 수 있을 거예요. 아무래도 바위 정령은 몸이 크고 강하기 때문에 내 실험에 사용할 만큼 큰 돌조각이 있을 가능성이 커요. 이곳에서 서쪽으로 더 가거나 산기슭을 따라 남동쪽으로 가면 바위 정령들을 찾을 수 있을 거예요.$B$B당신이 가져온 작은 돌조각을 시험해 보려면 시간이 좀 걸릴 테니 서두르진 않아도 돼요.",
-    ["O"] = "황야의 땅에 있는 로트윌 베리아투스에게 큰 돌조각 3개를 가져가야 합니다.",
-    ["T"] = "바위의 정령 연구",
-  },
-  [712] = {
-    ["D"] = "이곳 황야의 땅에 있는 정령에게서 필요한 것이 한 가지 더 있어요. 상급 바위 정령들에게서 바위 결속의 팔보호구를 구해다 주었으면 하거든요. 내 계산에 따르면 그 팔보호구는 내가 만든 족쇄의 힘을 측정하기에 충분해요.$B$B내가 수정점을 쳐 보니 거대한 바위 정령은 여기서 남서쪽에 있는 것으로 나왔어요. 아마 내 기억으론 오우거 근처에 있었던 것 같단 말이죠.$B$B여분까지 해서 팔보호구를 5개만 가져다주세요. 내 조수 세르보가 내 연구 재료와 결과물을 어디 뒀는지 곧잘 잊어버리니... 만일을 대비해서 말이에요.",
-    ["O"] = "황야의 땅에 있는 로트윌 베리아투스에게 바위 결속의 팔보호구 5개를 가져가야 합니다.",
-    ["T"] = "바위의 정령 연구",
-  },
   [713] = {
     ["D"] = "냉기 기름에 대해 가르쳐 줄까요? 엔진이나 기어의 가열을 식히는 데는 냉기 기름 만한 게 없어요.$B$B그 냉각 능력은 놀라울 정도고 윤활유로서의 수명은 그 어떤 것도 따라오지 못하죠. 하지만 이게 전부가 아니에요. 마법이 걸린 물건에 마법 능력을 오래 유지시켜주는 기능도 있다니까요.$B$B내가 소환해낸 정령이 우리 모두를 공격하지 못하게 제어할 수 있을 정도의 족쇄 마법 능력을 높이기 위해서는 냉기 기름 한 병이 필요해요. 알터랙에 있는 내 고블린 친구, 브로킨이 냉기 기름 만드는 법을 가르쳐 줄 거예요.",
     ["O"] = "황야의 땅에 있는 로트윌 베리아투스에게 냉기 기름을 가져가야 합니다.",
     ["T"] = "최고의 냉각제",
   },
+  [714] = {
+    ["D"] = "$N, you\'ve done your job well beyond all standards.$B$B<Lotwil\'s obviously distracted by his work.>$B$BIf we ever meet in Kharanos, feel free to come apply for work.$B$BWhoops! Quick, grab the... yes, that. Thanks.$B$BNow I just need one more thing. It\'s a small part, but rather crucial, I\'m afraid: a gyrochronatom.$B$BIf you could just go grab one and bring it to me, I should be ready to complete this.",
+    ["O"] = "Bring a Gyrochronatom to Lotwil Veriatus in the Badlands.",
+    ["T"] = "Gyro... What?",
+  },
   [715] = {
     ["D"] = "I\'m thinking those items you acquired for Lotwil are going to be the least of our worries, $N. On the other hand, you\'ve proven more than adept at the sciences Lotwil holds sacred, so how about helping me out?$B$BI need an invisibility potion and a healing potion; both might come in handy real soon if he pulls this off.$B$BIn return, I\'ll give you this recipe for a potion I\'ve been developing while learning from Lotwil. It\'s based on some of the research he\'s been doing here in the Badlands.",
     ["O"] = "Bring a Healing Potion and a Lesser Invisibility Potion to Lucien Tosselwrench in the Badlands.",
     ["T"] = "Liquid Stone",
+  },
+  [716] = {
+    ["D"] = "I know how cheap Lotwil can be, $N, so let me make you something for all your troubles. Maybe it\'ll even help protect you from the coming atrocity that is Lotwil\'s newest invention.$B$BI\'ve been working with all the extra stones you collected for him, and I can make some nice bracers that you might want to use. They\'re enchanted, of course.$B$BI\'ll just need patterned bronze bracers crafted by a blacksmith so I can complete the bracers I\'m making for you.",
+    ["O"] = "Bring some Patterned Bronze Bracers to Lucien Tosselwrench in the Badlands.",
+    ["T"] = "Stone Is Better than Cloth",
   },
   [717] = {
     ["D"] = "블랙래쉬와 헤마투스를 계속 레슬로 협곡에 봉인할 수 있을 거라고는 누구도 보장할 수 없는 상황일세. 그 검은용 두 마리는 그곳에 본거지를 마련했고 오우거들은 봉인까지 훔쳤으니 더욱 강력한 조치를 취해야 할 때야.$B$B비룡의 감옥을 유지하고 있는 마법석 세 개는 대지의 봉인을 사용해야만 가져올 수 있네. 그리고 그 마법석들을 사용하면 그들을 가두고 있는 봉인을 깨뜨릴 수 있다네.$B$B그들의 꿈이 영원히 헛된 망상으로 끝나게 해 주게.",
@@ -2934,6 +3290,41 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "$N, can ye find him? Can you find Hammertoe in Uldaman?$B$BIf those dirty Shadowforge are holdin\' him hostage to figure out what he knows about the titan excavations, then all of Ironforge could be in huge trouble.$B$BFor a long time now those Dark Irons have been lookin\' for magics to make more powerful golems. Hammertoe was doin\' the same, of course, but only to stop them.$B$BThey\'re probably keepin\' him alive until they learn what he knows.Ye\'ve got to hurry if you\'re gonna save him!",
     ["O"] = "Find Hammertoe Grez in Uldaman.",
     ["T"] = "희망의 전조",
+  },
+  [722] = {
+    ["D"] = "Ye\'re brave... <cough>... to come into Uldaman fer me, $c.$B$BIf ye\'re really here to help... ol\' Hammertoe, then... <cough>... you\'ll need to find... me amulet.$B$BDeepshadow\'s got it... Magregan Deepshadow. He\'s \'round here... in the ruins fer sure. That amulet\'ll lead \'em... <cough>...  right to the scrolls if he ain\'t stopped. It\'s up to you, $N. Please... get that amulet.$B$BThe scrolls will surely help the Dark Irons create even more powerful golems. I just know it. I can feel it in me bones.",
+    ["O"] = "Find Hammertoe\'s Amulet and return it to him in Uldaman.",
+    ["T"] = "Amulet of Secrets",
+  },
+  [723] = {
+    ["D"] = "<Hammertoe holds his wounds and takes a moment to regain his composure before speaking again.>$B$BFind Ryedol, $N. Bring \'im me amulet. <cough cough> He\'ll... <cough> figure out what to do. He knows I was seeking the origins of our people, and he... <cough>... knows it was also my mission to stop the Shadowforge clan. They must not be allowed to find the scrolls... <cough>",
+    ["O"] = "Take Hammertoe\'s Amulet to Prospector Ryedol in the Badlands.",
+    ["T"] = "Prospect of Faith",
+  },
+  [724] = {
+    ["D"] = "Okay, okay... who would know what to do?$B$BHistorian Karnik! That\'s it!$B$BHe\'s in Ironforge. He\'ll be able to help. He and Hammertoe were workin\' together to find the lost artifacts in Uldaman.$B$BGuess the Shadowforge found out the two of them knew more than they were lettin\' on.$B$BTell Karnik what\'s happened to Hammertoe and give him the amulet--he\'ll tell you what needs to be done next.",
+    ["O"] = "Take Hammertoe\'s Amulet to Historian Karnik in Ironforge.",
+    ["T"] = "Prospect of Faith",
+  },
+  [725] = {
+    ["D"] = "$N, run and find Advisor Belgrum as quickly as you can. Tell him what you\'ve witnessed and ask him how he wants us to proceed. This note will explain more to him.$B$BIn the meantime, I will take the time to speak to Hammertoe\'s spirit. Maybe he knows something that will help us put a stop to those Shadowforge cretins\' activities in the Badlands. We can only pray.",
+    ["O"] = "Find Advisor Belgrum and give him his note.",
+    ["T"] = "Passing Word of a Threat",
+  },
+  [726] = {
+    ["D"] = "<Advisor Belgrum reaches the end of the note, and his eyes widen for a moment.>$B$BOch, these are evil tidings.$B$B$N, please return to Historian Karnik and tell him on the king\'s authority to act on this information swiftly and decisively. He must halt the Shadowforge\'s activities in the Badlands.",
+    ["O"] = "Speak to Historian Karnik.",
+    ["T"] = "Passing Word of a Threat",
+  },
+  [727] = {
+    ["D"] = "The Tablet tells much.  But not enough!  Not nearly enough!$B$BThere is a book, a digest that Yagyin wrote in ages past.  The ... people I fled ... they keep this book in many places.  And their most learned study it.  It holds vast knowledge.  Knowledge to protect us!$B$BGo to Gerrig Bonegrip.  He is in a shop in Ironforge, in the Forlorn Cavern.  Show him this sigil and he\'ll think you one of them.  Ask him for Yagyin\'s Digest ... and bring it to me!",
+    ["O"] = "Give the Sigil of the Hammer to Gerrig Bonegrip in the Forlorn Cavern of Ironforge.",
+    ["T"] = "To Ironforge for Yagyin\'s Digest",
+  },
+  [728] = {
+    ["D"] = "The tablet tells much.  But not enough!  Not nearly enough!$B$BThere is a book, a digest that Yagyin wrote in ages past.  The... people I fled from... they keep this book in many places.  And their most learned study it.  It holds vast knowledge.  Knowledge to protect us!$B$BGo to Keeper Bel\'dugur in the Undercity of Lordaeron.  Show him this sigil and he\'ll think you one of them.  Ask him for Yagin\'s Digest...and bring it to me!",
+    ["O"] = "Bring the Sigil of the Hammer to Keeper Bel\'dugur in the Undercity.",
+    ["T"] = "To the Undercity for Yagyin\'s Digest",
   },
   [729] = {
     ["D"] = "수석고고학자 그레이위스커 님께서 절 위대한 발굴조사단장 렘트래블 님 밑에서 일하게 해 주셨으니 이 얼마나 영광인지 모릅니다. 아이언포지의 학교에서는 렘트래블 님의 위대한 발견에 대해 모르는 이가 없죠.$B$B하지만 이 저명한 발굴조사단장께서는 주위 상황에는... 음... 그다지 신경 쓰지 않는 것 같아요.$B$B우리는 위대한 고대 문화의 흔적을 찾아냈어요. 그런데 땅에서 끔찍한 골렘들이 나와서 현장을 덮치고 말았죠. 렘트래블 님께서는 이 사실을 모르고 계신 것 같아요. 전 도움을 요청하러 아우버다인으로 달려왔답니다.$B$B남쪽으로 가서 렘트래블 님께서 무사한지 좀 봐 주세요.",
@@ -2984,6 +3375,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "발굴조사단장 아그몬드는 여기서 남서쪽에 있는 황야의 땅에서 발굴현장을 지휘하고 있었소. 있었다고 말한 건... 그게, 몇 주째 그에게서 아무 소식도 듣지 못해서요. 난 그의 보고를 받아야 하니 아그몬드를 찾아주시오.$B$B들은 바로는 아그몬드는 황야의 땅의 고통의 요새를 지나 최남단에 있는 조그마한 발굴현장에 마지막으로 있었다고 하오. 우선 거기서부터 그를 찾아보시오.",
     ["O"] = "아그몬드를 찾아야 합니다.",
     ["T"] = "아그몬드 찾기",
+  },
+  [739] = {
+    ["D"] = "Agmond\'s tracks lead from the west.  It is easy to tell from the bloody smears across rock and sand that the dwarf crawled some distance.$B$BAnd here he died.$B$BUpon close inspection, the word \"Murdaloc\" is roughly scrawled in a patch of Badlands sandstone.$B$BScrawled next to Agmond\'s dead hand.",
+    ["O"] = "Slay Agmond\'s killer, Murdaloc.$B$BSlay 12 Stonevault Bonesnappers.$B$BReport to Prospector Ironband in Loch Modan.",
+    ["T"] = "Murdaloc",
   },
   [741] = {
     ["D"] = "So the prospector wants to send the mysterious fossil to the Explorers\' League in Darnassus? I don\'t feel right leaving Darkshore without him.$b$bHere, $n, deliver the mysterious fossil to Chief Archaeologist Greywhisker in Darnassus.",
@@ -3075,11 +3471,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Use the Thunderhorn Cleansing Totem at the Thunderhorn Water Well, then return to Mull.",
     ["T"] = "썬더혼 정화",
   },
-  [759] = {
-    ["D"] = "이제 남은 우물 하나, 와일드메인 부족의 이름을 딴 우물을 정화하는 일만 남았소. 이 우물을 깨끗이 정화하려면 이 땅의 난폭한 포식자인 우두머리 초원늑대 이빨이 필요하오. 북쪽에서 우두머리 초원늑대를 찾아 사냥해 돌아오시오.$B$B우두머리 초원늑대들은 종종 위대한 도시 썬더 블러프의 기슭을 돌아다니곤 하오.",
-    ["O"] = "블러드후프 마을에 있는 멀 썬더혼에게 우두머리 초원늑대 이빨 8개를 가져가야 합니다.",
-    ["T"] = "와일드메인 토템",
-  },
   [760] = {
     ["D"] = "Your cleansing of the Winterhoof and Thunderhorn wells is spoken among the spirits, young $N.  The Wildmane Totem is made, and your last task lies ahead.$B$BThe Wildmane Water Well lies north of Thunder Bluff.  Perform the ritual!  Heal the land of the goblins\' poisons!  Let clean water flow once again!",
     ["O"] = "Use the Wildmane Cleansing Totem at the Wildmane Water Well, then return to Mull Thunderhorn.",
@@ -3150,11 +3541,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "썬더 블러프 동쪽에 있는 붉은 바위 언덕으로 가서 고대의 영혼과 대화해야 합니다.",
     ["T"] = "지혜의 의식",
   },
-  [775] = {
-    ["D"] = "이제 우리의 위대한 도시에서 그대는 존경과 찬양을 받게 될 것이로다. 대지모신의 의식을 완수할 만한 능력이 있는 $R|1이라면;라면; 그 영광을 얻을 자격이 있음이 틀림없도다.$B$B그대에게 마지막 임무를 부여하노니, 썬더 블러프의 가장 높은 벼랑 꼭대기에 기거하는 고귀한 지도자 케른 블러드후프를 찾도록 하라.",
-    ["O"] = "썬더 블러프에 있는 케른 블러드후프와 대화해야 합니다.",
-    ["T"] = "썬더 블러프로의 여정",
-  },
+  [774] = "_",
   [776] = {
     ["D"] = "그대는 대지모신의 의식을 충실히 수행하여 썬더 블러프에서 당당한 지위를 얻었네.$B$B그러나 애써 얻은 지위를 유지하려면, 형제들에게 그대의 능력을 계속 증명해 보여야만 하네.$B$B그대도 알다시피 우리는 사냥꾼이지 않은가, $N. 저 아래 멀고어에 알라치아라는 강력한 코도가 살지. 알라치아를 추적해 처치하고 알라치아의 뿔을 내게 가져와 그대의 능력을 보여주게나.",
     ["O"] = "썬더 블러프에 있는 케른 블러드후프가 알라치아의 뿔을 가져다 달라고 했습니다.",
@@ -3250,6 +3637,19 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "동굴 막사 외부에 있는 주리타 파게이즈에게 불타는 칼날단 메달을 가져가야 합니다.",
     ["T"] = "불타는 칼날단 메달",
   },
+  [795] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Seal of the Earth",
+  },
+  [796] = "_",
+  [797] = "_",
+  [798] = "_",
+  [799] = "_",
+  [800] = "_",
+  [801] = "_",
+  [802] = "_",
+  [803] = "_",
   [804] = {
     ["D"] = "Seeing the deed you have done for me steels my heart. I cannot fall so easily! I must endure!$b$bBut it remains that I cannot make the trek back to the Den unassisted. Please, $n, return to the Den and tell Gornek of my situation. Perhaps he can help me.",
     ["O"] = "Bring the news of Hana\'zua\'s plight to Gornek at the Den.",
@@ -3270,11 +3670,14 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "불모의 땅에 있는 아크젤로스와 대화해야 합니다.",
     ["T"] = "Ak\'Zeloth",
   },
+  [810] = "_",
+  [811] = "_",
   [813] = {
     ["D"] = "맹독전갈은 듀로타에 서식하는 가장 위험한 전갈 중 하나지. 해독약 없이 놈들을 사냥하러 나간 것 자체가 리나그의 잘못이지만, 지금 그를 탓해 봤자 아무 소용없는 일이고...$B$B오그리마 입구 근처에서 맹독전갈 독주머니 몇 개를 구해오면 내가 해독약을 만들어 주도록 하지.$B$B서둘러 움직이라고. 호드의 일원이 도움을 필요로 하고 있으니.",
     ["O"] = "오그리마에 있는 코간에게 맹독전갈 독주머니 4개를 가져가야 합니다.",
     ["T"] = "해독약 재료 구하기",
   },
+  [814] = "_",
   [816] = {
     ["D"] = "제발, 제발 저를 도와 주세요. 내 아들 크론이 며칠 전 사냥을 나가서 아직 돌아오지 않고 있어요. 크론은 불모의 땅 서쪽의 성난남녘 강으로 악어 사냥을 떠났어요. 제발 아무 일도 없어야 할 텐데...$B$B강한 아이지만 겁도 없고 고집도 세서 늘 문제랍니다.$B$B악어는 힘도 세고 포악하다고 그렇게도 주의를 줬건만... 원래 거친 아이라서 제 말은 잘 듣지 않는다니까요.$B$B그 아이의 흔적이라도 찾아다 주세요. 성난남녘 강 강둑에 있는 악어를 다 죽여서라도...",
     ["O"] = "칼바위 언덕의 북서쪽 농장에 있는 미샤 톨크렌에게 크론의 흔적을 가져가야 합니다.",
@@ -3360,6 +3763,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Retrieve 5 Sacks of Supplies and return them to Rezlak near Orgrimmar.",
     ["T"] = "사막의 바람",
   },
+  [835] = {
+    ["D"] = "Gazlowe told me once, \"Rezlak. There\'s one thing you need to know in life, and that\'s if you want something done well, do it yourself.\"$b$bI can\'t deal with losing all our caravans, so I\'m just going to take matters into my own hands. Drygulch Ravine lies through the eastern part of Razorwind Canyon. If we kill all the harpies there, the routes will be safe.$b$bOf course, there was one other thing that Gazlowe taught me, and that\'s \"You can get anything done for a price.\" So, going to help me out, $n?",
+    ["O"] = "Kill 12 Dustwind Savages and 8 Dustwind Storm Witches for Rezlak near Drygulch Ravine.",
+    ["T"] = "보급로 확보",
+  },
+  [836] = {
+    ["D"] = "The gnome\'s voice crackles once again from the robot:$B$B\"I need to move OOX-09/HL to an open, safe place so it can begin a lengthy take-off procedure.  It has built-in cloaking, but I need time on my end to make it operational again.  Escort the robot from its current location to, let\'s say, the shoreline beyond Overlook Cliff!  That should be a perfect place, and long enough, to get things online!\"$B$B\"Escort it safely to the shore, and then come talk to me in Booty Bay!  Oglethorpe Obnoticus - out!\"",
+    ["O"] = "Escort OOX-09/HL to the shoreline beyond Overlook Cliff, then report to Oglethorpe Obnoticus in Booty Bay.",
+    ["T"] = "OOX-09/HL 구출 작전",
+  },
   [837] = {
     ["D"] = "우리가 이 땅에 도착했을 때 서슬갈기 가시멧돼지들이 대부분을 점령하고 있었지. 우리 입장에서 놈들은 눈엣가시 같은 존재였어. 각고의 노력 끝에 대부분 몰아냈지만, 아직 일부 지역에 살아남은 것들이 완강히 저항하고 있네.$B$B이런 상황이 너무 오래 지속되고 있는 것도 문제고, 또 전략적인 측면으로 봤을 때도 더 이상 서슬갈기 일족이 우리 땅에 남아 있는 걸 용납할 수 없지. 여기에서 서쪽으로 가면 놈들의 야영지가 있네. 가시덤불이 보이는 곳에서 놈들을 찾을 수 있을 걸세. 지금은 듀로타에 있는 놈들만 상대해야 하지만 나중엔 칼림도어 전지역에서 놈들을 섬멸해야 할 걸세.",
     ["O"] = "칼바위 언덕의 가르톡을 위해 서슬갈기 가시멧돼지 4 마리와 서슬갈기 정찰병 4 마리, 서슬갈기 사막길잡이 4 마리, 서슬갈기 전투호위병 4 마리를 처치해야 합니다.",
@@ -3370,15 +3783,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak with Apothecary Dithers at the Bulwark, Western Plaguelands.",
     ["T"] = "스칼로맨스",
   },
+  [839] = "_",
   [840] = {
     ["D"] = "흠, 꽤 강해 보이는 친구로군.$B$B내 둘도 없는 친구인 카르갈이 불모의 땅에서 임무를 수행할 신병을 모집 중이오. 호드를 위해 정의로운 일을 하고 싶지 않소? 지금이 좋은 기회라오.$B$B이 징병 추천서를 카르갈에게 가져가서 그의 서명을 받을 수 있을지 알아보시오.",
     ["O"] = "Follow the western road from Razor Hill to the Barrens over a bridge.$B$BStop at the orc outpost across the bridge.$B$BGive Kargal Battlescar at the Barrens outpost your recruitment letter.",
     ["T"] = "호드의 징병",
-  },
-  [841] = {
-    ["D"] = "내가 한번 맞혀 보지. 어디... 당신이 하려던 그 무슨 세계 종말적인 사악한 일을 시간 안에 마치지 못한 거 아닌가? 아니지, 그게 아니라, 아마... 모래 속에 떨어뜨려 버렸겠지! 뭐, 이유야 어쨌든 당신에게 팔 여분의 동력원이 있긴 한데, 이번에는 열 개. 그렇지, 사막유랑단 물주머니 10개가 필요하다고!$B$B요즘은 모두 사정이 좋지 않은데다 동력원이 나무에서 자라는 것도 아니라서 말이야. 흠, 하지만 정말로 나무에서 자란다면 어떨까? 아예 동력원 나무를 만들어 버릴까...",
-    ["O"] = "가젯잔에 있는 선임기술자 빌지위즐에게 사막유랑단 물주머니 10개를 가져가 다른 동력원과 맞바꿔야 합니다.",
-    ["T"] = "추가 동력원 필요?",
   },
   [842] = {
     ["D"] = "Take this signed recruitment letter to the Crossroads.$B$BSergra Darkthorn, curse her hide, is in charge there. She\'s a nasty shaman who will talk your head in circles before she lets you do anything useful. Thrall is convinced she\'s something special, but I\'m not so sure.$B$BYou\'ll just have to decide for yourself, pup...",
@@ -3395,6 +3804,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Collect 7 Plainstrider Beaks and return them to Sergra Darkthorn in the Crossroads.",
     ["T"] = "초원타조의 위협",
   },
+  [845] = {
+    ["D"] = "The zhevra, although not the fiercest beast in the Barrens, are a shade tougher than the plainstriders.  Don\'t worry -- we\'ll send you against bigger prey in good time, but for now your teeth could use a little more cutting.$B$BHunt the zhevra to the north and south, and collect their hooves.  Bring them to me and perhaps we\'ll next send you against something tougher.",
+    ["O"] = "Slay Zhevra Runners to collect 4 Zhevra Hooves for Sergra Darkthorn in the Crossroads.",
+    ["T"] = "얼룩말",
+  },
   [846] = {
     ["D"] = "지금도 저들이 폭약과 시끄러운 기계를 이용해 땅을 파헤치고 있다는 것은 명백한 사실입니다. 곧 새로 부임할 현장감독이 잔인한 파괴를 계속하겠지...$B$B저는 저 괘씸한 드워프 놈들에게도 폭발의 맛을 제대로 한번 보여주고 싶군요. 그러려면 니트로글리세린과 나무 펄프, 질산나트륨을 혼합하여 폭발물을 만들어야 하지요. 요새에 있는 소총병, 병사, 그리고 장교들에게 이 재료가 있다는군요.$B$B이 물건들을 모아 제게 가져오십시오. 그러면 드워프들에게 잊지 못할 선물을 안겨 주겠습니다!",
     ["O"] = "갠 스톤스파이어가 니트로글리세린 6병, 나무 펄프 6묶음, 질산나트륨 표본 6개를 가져다 달라고 했습니다.",
@@ -3404,6 +3818,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "This... this power.... Is this the power of the shamans that Tor\'gan tried to show me? I must say, it is interesting. Tell Tor\'gan that he has convinced me... for the time being. I will listen to what he has to say.",
     ["O"] = "Speak with Tor\'gan.",
     ["T"] = "랩터의 기민함",
+  },
+  [848] = {
+    ["D"] = "The oases of the Barrens hide a mystery.  Life energy flows from their waters, invigorating the plants and beasts that drink it.$B$BInvigorating, and altering.$B$BThere is a mushroom that grows near these oases.  Its spores hold properties that we, the apothecaries of Lordaeron, find useful.$B$BBring me these spores and you will earn our gratitude.",
+    ["O"] = "Bring 4 Fungal Spores to Apothecary Helbrim at the Crossroads.",
+    ["T"] = "버섯 포자",
   },
   [849] = {
     ["D"] = "Following Khazgorm\'s plans it should be no problem to fashion an explosive charge$b$bAh, there we go.$b$bNow, $n, I am going to entrust you with a special task. Take this explosive stick and use it to blow up the flying machine at Bael Modan.$b$bNot only is the flying machine a key part of the site\'s infrastructure it also serves as a weapon of war. More importantly it is an icon of power and an insult to the memory of my tribe.$b$bMake me proud by completing this heroic task and you shall be rewarded.",
@@ -3415,16 +3834,32 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring Barak\'s Head to Regthar Deathgate, west of the Crossroads.",
     ["T"] = "콜카르 지도자",
   },
+  [851] = {
+    ["D"] = "The centaur Verog the Dervish wanders the Barrens, and will be difficult to find.  But he is based at the centaur command tent at the Stagnant Oasis to the southeast.  It may be possible to draw him to you.$B$BTravel to the Stagnant Oasis to the southeast and attack centaur near the command tent.  It will be dangerous, but if you can kill enough centaur then they should raise an alarm.  And Verog will come.$B$BBring me his head and I will place it with Barak Kodobane\'s.",
+    ["O"] = "Bring Verog\'s Head to Regthar Deathgate, west of the Crossroads.",
+    ["T"] = "광신자 베로그",
+  },
   [852] = {
     ["D"] = "Hezrul Bloodmark is the leader of the Kolkar centaurs in the Barrens.  He is fierce, brutal and cunning.  Defeating him would disrupt and fracture the Kolkars, greatly reducing their threat to us.$B$BSo kill him.  As with Barak and Verog, bring me Hezrul\'s Head.$B$BHe leads his people from the Lushwater Oasis, to the south.",
     ["O"] = "Bring Hezrul\'s Head to Regthar Deathgate, west of the Crossroads.",
     ["T"] = "헤즈룰 블러드마크",
+  },
+  [853] = {
+    ["D"] = "I have rendered the spores you gave me into an emulsion.  I must now send it to my associate, Apothecary Zamah.  If you were to carry this to her, she can offer you something from our stores of alchemical goods.$B$BShe is in the Pools of Vision, a cave beneath the shamans of Thunder Bluff.  The path to this cave is well hidden, but you may find it on the Spirit Rise bluff.$B$BDo hurry.  This emulsion will maintain its potency for only a short time, and must be resealed and processed before then.",
+    ["O"] = "Bring the Rendered Spores to Apothecary Zamah in Thunder Bluff, before the time limit is up.",
+    ["T"] = "연금술사 자마",
+  },
+  [854] = {
+    ["D"] = "I have foreseen your arrival, young $c. Though perhaps you are not so young anymore.$B$BI think that it is time for you to move deeper into this land. I can sense that you are destined for great things.$B$BIt is the Crossroads that you must seek out, for our lives with the orcs have become intertwined and they need assistance. Continue down this road towards the east and follow it north to the Crossroads. Find Thork within its walls, he has the Earthmother\'s blessing.",
+    ["O"] = "Speak with Thork at the Crossroads in the Barrens.",
+    ["T"] = "Journey to the Crossroads",
   },
   [855] = {
     ["D"] = "The Kolkar are a threat to the Horde\'s claims in the Barrens; we must reduce the numbers of their troops.  And so, I have a bounty task for you.$B$BWhile in Kolkar territories, slay their warriors and collect centaur bracers.  Return when you have a heap of bracers and the Horde will reward you well.",
     ["O"] = "Bring 15 Centaur Bracers to Regthar Deathgate, west of the Crossroads.",
     ["T"] = "켄타우로스의 팔보호구",
   },
+  [856] = "_",
   [857] = {
     ["D"] = "The power was mine! In my very hands! And I want it back! Back I say!$b$bThose dirty excavators uncovered it... so beautiful it was. Deemed the Tear of the Moons, it was the first great discovery we made at Bael Modan.$b$bIt should have been mine! Mine I say!$b$bGeneral Twinbraid grew jealous of the power it gave me. He locked it away in the Keep. Called it cursed, he did! The fool!$b$bOthers wanted it and they had to be stopped! That bastard Twinbraid drove me off.$b$bNow I want it back. Back I say!",
     ["O"] = "추방자 피글리가 달의 눈물을 되찾아 달라고 했습니다.",
@@ -3434,6 +3869,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "I don\'t suppose Sputtervalve sent you? I\'m in a bind here. I hopped in without realizing that I need a key to unlock the shredder\'s movement column. One of the other shredder operators asked me if everything was okay, and I panicked! Instead of telling him that I was missing my key, I told him there was some sort of mechanical problem.$b$bWe need to get out of here on the double! Go up to the control room at the top of the derrick, the supervisor should have a key for this shredder.$b$bHelp me out here!",
     ["O"] = "Get the Ignition Key and bring it to Wizzlecrank.",
     ["T"] = "점화",
+  },
+  [860] = {
+    ["D"] = "If you wish to walk the hunter\'s path, then your journey leads to the Barrens.  Its beasts are strong-willed and fierce.  You will learn much by hunting there, and your spirit will grow.$B$BSpeak with Sergra Darkthorn.  She will be your first guide in the Barrens.$B$BSergra is at the Crossroads.  To reach her, travel east from Bloodhoof Village into the Barrens, then north as the road forks.  And have care as you travel--the Barrens holds great danger for the unprepared and unwary.",
+    ["O"] = "Speak with Sergra Darkthorn at the Crossroads.",
+    ["T"] = "셀그라 다크쏜",
   },
   [861] = {
     ["D"] = "You are eager to explore, I can tell.  I too had the lust to wander, once...$B$BWander, and hunt.  For hunting is a Tauren\'s greatest honor.$B$BIf you truly wish to follow the ways of the hunter, then Melor Stonehoof can show you the path.  He is in Thunder Bluff, on the Hunter\'s Rise.$B$BAnd to show him your skill and resolve, bring him the claws of the flatland prowlers of Mulgore.  They are tough and cunning -- fitting prey for a young $c on the hunter\'s path.",
@@ -3449,6 +3889,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "톱니항으로 가는 동안 사용법을 죄다 알아낼 수 있을 거야... 뭐, 그리 어렵진 않을 것 같은데... 여기에 단추 몇 개랑 지렛대 한두 개를... 흠, 어쨌든 떠날 준비는 다 된 거지?",
     ["O"] = "Protect Wizzlecrank and the stolen goblin shredder on the way to Sputtervalve in Ratchet.",
     ["T"] = "탈출",
+  },
+  [864] = {
+    ["D"] = "\"Here you go, the power source is safely removed and the data is preserved.  Well, safe journeys and all that.  Hope the nefarious science experiment worked out for you and all.\"$B$BThe goblin turns away from you to attend to the demands of the Gadgetzan Water Company.  You secure the sealed testing kit for the journey back to the Undercity.  Apothecary Zinge waits for you and the sealed field testing kit there.",
+    ["O"] = "Bring the Sealed Field Testing Kit to Apothecary Zinge in the Undercity.",
+    ["T"] = "Return to Apothecary Zinge",
   },
   [865] = {
     ["D"] = "The raptors of the Barrens are smarter than raptors in other lands.  And I think all that smarts is hiding in their horns!  If so, then I could grind their horns into powder and use it to make \"smart drinks.\"  I could sell them for a fortune!!!$B$BAnd you can help me.  Find me intact raptor horns from sunscale scytheclaws.  They roam in the southern Barrens, and in the northern Barrens near the border of Ashenvale Forest.",
@@ -3470,10 +3915,25 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "십자로에 있는 코란에게 실리시드의 알 12개와 발굴용 갈퀴를 가져가야 합니다.",
     ["T"] = "알 사냥",
   },
+  [869] = {
+    ["D"] = "Not long ago, a shipment of silver was stolen from our guard tower.  It was meant as payroll to the Crossroads\' guards, and we want that silver back.$B$BThe strange thing is... we caught one of the thieves on the night of the theft.  And... it was a raptor!  Unbelievable!$B$BI don\'t know what raptors would want with silver.  But I don\'t care -- I want the raptors dead so they won\'t steal from us again!$B$BHunt raptors in the Barrens.  Collect for me their heads!",
+    ["O"] = "Bring 12 Raptor Heads to Gazrog at the Crossroads.",
+    ["T"] = "도둑 추적",
+  },
   [870] = {
     ["D"] = "Long ago, the Barrens was a lush place, teeming with life.  But war and cataclysm raged across the land, scorching it and leaving a dry husk.  Such is the way of things, and it saddens my heart.$B$BBut within the past few years, new oases have formed in the Barrens, and life stirs.  And deep down, we druids sense a power leaking its way to the surface.$B$BWe must find its source.  Travel to the Forgotten Pools, northwest of the Crossroads.  Search its waters for a source of power, then return here.",
     ["O"] = "Report back to Tonga Runetotem with your findings.",
     ["T"] = "잊혀진 웅덩이",
+  },
+  [871] = {
+    ["D"] = "All the quilboars are our enemies, $N. Some just prove to be more of a nuisance than others.$B$BThe Razormane tribe has been attacking our supply lines from Durotar, causing us no end of annoyance. I have scouts seeking the leader of these raids, but until then, any losses you can inflict on the filthy pig men would aid us.$B$BStart in the northeast towards Durotar. You can always tell their dens from the huge thorny vines that come up from the earth. Seek them out, and slay them.",
+    ["O"] = "Of the Razormane tribe, kill 8 Water Seekers, 8 Thornweavers and 3 Hunters, and then return to Thork in the Crossroads.",
+    ["T"] = "서슬갈기 방어 작전",
+  },
+  [872] = {
+    ["D"] = "One of my scouts witnessed an attack on a caravan from Durotar, $N. The culprits are indeed the Razormane tribe of quilboars. One of the quilboars in particular is leading the raids: Kreenig Snarlsnout. He was seen northeast of here, just south of the road from Durotar. If the threat is to be ended, then Kreenig must die.$B$BTo be sure the attacks cease, though, I say we add insult to their injury. Kill Kreenig along with more of their tribe, and return to me when you have his tusk.",
+    ["O"] = "Kill 8 Razormane Geomancers, 8 Razormane Defenders, and Kreenig Snarlsnout.$B$BThen bring Kreenig Snarlsnout\'s Tusk to Thork at the Crossroads.",
+    ["T"] = "서슬갈기 공격 작전",
   },
   [873] = {
     ["D"] = "The grand Isha Awak is lord of these waters.  Great is his strength, and solemn his pride.  The humans on the coast fear him, for he has consumed many of their number.$B$BBut I do not fear him.  I am grateful he is here.  He is a worthy challenge, and honorable prey.$B$BIf you are ready, then swim out and search for Isha Awak, the Deep Doom.$B$BHis spirit dwells in his heart, and to hear its beat is to know your fate.",
@@ -3485,10 +3945,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "마렌 스카이시어와 대화해야 합니다.",
     ["T"] = "마렌 스카이시어",
   },
+  [875] = {
+    ["D"] = "Hahaha, $n. Back for more? Good, I like to hear that.$B$BThis time I want you to assassinate some of the harpy lieutenants in the Dry Hills. Only Witchwing Slayers can be lieutenants, and you can tell them apart by the rings they carry. They are a nasty bunch, but they lead some of the underlings in that area. Taking out 6 of them will be a decisive strike against their matriarchy.$B$BMake sure they die painfully, $n. We want those harpy wenches to know the idiocy of picking fights with the Horde.",
+    ["O"] = "Collect 6 Harpy Lieutenant Rings from Witchwing Slayers and return them to Darsok Swiftdagger at the Crossroads.",
+    ["T"] = "하피 부대장",
+  },
   [876] = {
     ["D"] = "You did so well with the lieutenants and underlings that I\'d like you to do one last thing for me.$B$BSerena Bloodfeather is the sister of a harpy named Bloodfeather who was slain by Rexxar quite a while ago. Apparently, these attacks on the Horde caravans are revenge for her sister\'s death.$B$BI need you to slit her throat and bring me back her head. I want to place it on the next caravan we send out... Give those harpies something to think about.",
     ["O"] = "Slay Serena Bloodfeather and return her head to Darsok Swiftdagger at the Crossroads.",
     ["T"] = "붉은깃털 세레나",
+  },
+  [877] = {
+    ["D"] = "Like the one you found at the Forgotten Pools, there may be fissures at the other oases in the Barrens.  If so, then perhaps the fissures are the oases\' source of life.$B$BWe must test this.$B$BHere, take these seeds.  They are dead and infertile, but take them to the Stagnant Oasis to the southeast.  If there is a fissure there, then place the seeds within it...and observe.",
+    ["O"] = "Return to Tonga at The Crossroads, after investigating the Stagnant Oasis.",
+    ["T"] = "죽은 오아시스",
   },
   [878] = {
     ["D"] = "적을 처치해주게. <킁> 이 뻐드렁니와 서슬갈기 일족을 도와 뾰족털 일족을 공격해줘. 두 부족 모두 신앙심이 아주 깊어서 땅의 힘을 부릴 수 있지. <킁킁> 땅은 언제나 우리에게 큰 힘을 주지. 특히 전쟁에서!$B$B이 뻐드렁니를 도와 주면 톨크와 <킁> 호드의 고민이 뭔지 알 수 있을걸! 북쪽으로 가서 뾰족털 일족의 정신적 지도자들을 처치해. 그때 우리 서슬갈기 일족은 이 불모의 땅을 지배할 수 있네.",
@@ -3499,6 +3969,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "일족 세 명이 감옥에서 탈출해 약탈을 일삼고 있어. <킁킁> 잔인하고 교활하기 짝이 없는 녀석들... 처치할 수만 있다면 십자로뿐만 아니라 불모의 땅 전체가 평화로워질 거야... <킁> 최소한 우리 서슬갈기 일족이라도 말이지. <킁킁>$B$B자네가 처리해야 할 놈들은 나크와 쿠즈, 로크 일행이야. 불모의 땅에서 남쪽으로 멀리 떨어진 곳에서 찾을 수 있을 거야. 한 놈은 마법사이고 다른 놈은 사냥꾼, 그리고 우두머리 로크는, <킁킁> 전사야. $R, 그들에게 쓴맛을 보여주게. 마지막 눈을 감으며 우리 일족에게 저지른 끔찍한 짓을 후회하도록...",
     ["O"] = "나크와 쿠즈, 로크를 처단하여 그들의 해골을 불모의 땅의 타우라조 야영지에 있는 뻐드렁니에게 가져가야 합니다.",
     ["T"] = "내부의 배반자",
+  },
+  [880] = {
+    ["D"] = "Your findings are incredible, $N.  These oases hold properties that must come from an outside source.  Or perhaps an inside one.$B$BI want to know how these fissures are affecting the beasts who drink from the oases\' water.$B$BHunt oasis snapjaws at the Lushwater and Stagnant Oases.  Bring me their shells so I may examine them.",
+    ["O"] = "Bring 8 Altered Snapjaw Shells to Tonga Runetotem at the Crossroads.",
+    ["T"] = "변화된 생물",
   },
   [881] = {
     ["D"] = "Whitemist, Echeyakee in the Tauren tongue, is the king of the savannah cats.  He hunts with such stealth, they say he\'s like a thin, white mist on the earth.  And he kills so fast his prey have no time for fear, or pain.$B$BThe Tauren say he is both mercy and death.$B$BYou will learn if that\'s true, for I now set you on the path to hunt Echeyakee.  His lair is northeast of the Crossroads, among the bones of giant Kodo$B$BGo.  Blow this horn when you reach his lair.  Blow the horn, and he will come.",
@@ -3545,10 +4020,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "Spirit of the Wind",
   },
+  [890] = {
+    ["D"] = "I\'ve been waiting forever for my last shipment of goods from Booty Bay! I\'m pretty sure that it must have been stolen by the Freebooters, but just to make sure, will you go down to the dockside and ask Dizzywig if my goods were already put into my warehouse without my knowledge?$b$bHere, take my ledger down to Dizzywig and have him double check my inventory records against his logs.",
+    ["O"] = "Bring Gazlowe\'s Ledger to Wharfmaster Dizzywig.",
+    ["T"] = "The Missing Shipment",
+  },
   [891] = {
     ["D"] = "Yet another ship from my fleet has been lost to those overzealous humans at Northwatch Hold!$b$bThose bastards must be dealt with. Their paranoia has them in a state of frenzy. Trigger happy, reckless louts are shooting at anything in their sights.$b$bTravel south along the Merchant Coast to the Hold and lay siege to their forces. Bring me the medals of their soldiers as proof. And for the love of my fleet, slay Captain Fairmount and her overzealous cannoneers!",
     ["O"] = "Captain Thalo\'thas Brightsun of Ratchet wants you to collect 10 Theramore Medals and slay Captain Fairmount, Cannoneer Whessan and Cannoneer Smythe.",
     ["T"] = "선장의 복수",
+  },
+  [892] = {
+    ["D"] = "Everything looks square from my records, $n. Go on back and tell Gazlowe he\'s out of luck. I wouldn\'t be surprised if it was the pirates that nabbed his goodies.$b$bNothing else I can do for him. Oh... though you could tell him that I\'ve got some things from Undermine for him, when he has the time to come pick them up.",
+    ["O"] = "Return Gazlowe\'s Ledger to Gazlowe in Ratchet.",
+    ["T"] = "The Missing Shipment",
   },
   [893] = {
     ["D"] = "거인의 들판 너머 남쪽 지역에 사는 서슬갈기 가시멧돼지 중에는 솜씨 좋은 대장장이가 없는 것으로 아는데, 최근 들어 꽤 괜찮은 무기들을 생산하기 시작했단 말이야. 가능하다면 그들의 무기를 몇 가지 살펴보고 그 기술을 배웠으면 좋겠소.$B$B호드에 충성을 바치고 싶다면 그들의 무기를 몇 개 구하여 내게 가져오시오. 서슬갈기 정찰꾼에게서 단검을, 점쟁이에게서 마법봉을, 그리고 광전사에게서는 방패를 구해오시오. 뭐, 그 정도면 충분할 것 같소!",
@@ -3575,6 +4060,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring the Harvester\'s Head to Jorn Skyseer.",
     ["T"] = "The Harvester",
   },
+  [898] = {
+    ["D"] = "Finally! Someone to rescue me!$b$bI can\'t believe you got past the guards. These zealots from Theramore are out of their minds. They sank our ship and imprisoned me, the only survivor. I was called an enemy and threat to the Alliance.$b$bMe! A threat to their great sham of an Alliance? I was a deckhand on a moonshine transport between Ratchet and Booty Bay.$b$bEnough talk. Help me get back to Ratchet will you? Let me know when you\'re ready and we\'ll make our break.",
+    ["O"] = "Safely escort Gilthares Firebough back to Captain Brightsun in Ratchet.",
+    ["T"] = "Free From the Hold",
+  },
   [899] = {
     ["D"] = "Perhaps you know the pain of uncertainty, perhaps not, $c. But know this: I stand here every day, from the sun\'s rising till its decline, scouring the horizon for more of those monsters. I\'ve killed every pig man I\'ve come across since, but my thirst for their blood is far from quenched. Perhaps instead of heading north to the Crossroads I should have headed to Taurajo.$B$BYou, $c--you  could help me.$B$BKill them. Kill as many as you can. Bring me their tusks, and we will celebrate their deaths together.",
     ["O"] = "Bring 60 Bristleback Quilboar Tusks to Mankrik at the Crossroads.",
@@ -3595,6 +4085,12 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Return the Samophlange to Sputtervalve in Ratchet.",
     ["T"] = "사모플랜지",
   },
+  [903] = {
+    ["D"] = "Now it\'s time to go after something that really bites.  The prowlers of the Barrens are a tough breed.  Tough, resourceful, sly... and deadly.  You\'ll find them among the tall grasses.  You\'ll find many to the southwest of the Crossroads.$B$BBe wary as you hunt them, $n, or you may find yourself no longer the predator, but instead the prey.",
+    ["O"] = "Collect 7 Prowler Claws from Savannah Prowlers for Sergra Darkthorn in the Crossroads.",
+    ["T"] = "암사자 사냥",
+  },
+  [904] = "_",
   [905] = {
     ["D"] = "Now, $N, the hunt deepens.  Now you must defeat your prey, and then find your way to its lair.$B$BHunt the sunscale raptors to the south.  Slay them and remove the feathers they wear.  Place the feathers on the scytheclaw nests southwest of the Stagnant Oasis. Show their brethren you do not fear them!",
     ["O"] = "Kill Sunscale raptors and collect their feathers. Use the feathers on the 3 Scytheclaw nests. Return to Sergra Darkthorn in the Crossroads.",
@@ -3605,6 +4101,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring Lok\'s Skull to Thork at the Crossroads in the Barrens.",
     ["T"] = "내부의 배반자",
   },
+  [907] = {
+    ["D"] = "Now, $N, you must face the great thunder lizards.  So large are the beasts, the ground rumbles as they stomp across the plains.  Take care as you fight them, for one false step and you may find yourself beneath their feet.$B$BYou will find the thunder lizards in the southern Barrens.  They are known as Stormsnouts, Stormhides and Thunderheads.  Return to me after you have bested them.",
+    ["O"] = "Bring 3 Thunder Lizard Blood to Jorn Skyseer at Camp Taurajo.",
+    ["T"] = "Enraged Thunder Lizards",
+  },
   [908] = {
     ["D"] = "황혼의 망치단은 검은심연 나락에 있는 달의 제단 폐허로 이동했소. 그들로 인해 그곳의 정령들도 우리에게 반기를 들고 있소. 아무것도 하지 않으면 이 지역이 영원히 그들의 손아귀에 들어가게 될 것이오.$B$B검은심연에서 심연의 돌을 찾으시오. 아마 물 가까이에 있을 것이오. 제대로 읽어내기가 쉽진 않겠지만 심연의 돌에는 모든 정령들의 역사와 관련된 심연의 핵이 들어 있소. 내게 그걸 가져오면 대지 고리회의 힘을 빌려 황혼의 망치단을 저지할 수 있을게요.",
     ["O"] = "잿빛 골짜기의 조람가르 전초기지에 있는 제네우 생크리에게 심연의 핵을 가져가야 합니다.",
@@ -3614,6 +4115,22 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "The defeated water elemental has left behind a strange water globe.  You surmise that the object somehow fed the beast energy.  Inside the globe, a putrid-looking form of water sloshes about.  The globe itself seems impervious to any sort of physical force.$B$BIf anyone can make any sense of this item, it would be Je\'neu Sancrea of the Earthen Ring.  He is located at the Horde\'s Zoram\'gar Outpost in Ashenvale.",
     ["O"] = "Bring the Strange Water Globe to Je\'neu Sancrea at Zoram\'gar Outpost, Ashenvale.",
     ["T"] = "OLD Baron Aquanis",
+  },
+  [910] = {
+    ["D"] = "I have heard tales of the mighty ships that sail between Ratchet and Booty Bay!  That would be so cool to sail on the ocean and fight in many great sea battles.  Maybe I will be a mighty Horde sailor when I grow up!  Yeah!$B$BWould you take me to see the Ratchet docks, please?  I promise I won\'t get into the water or cause any trouble - I just want to see the big boats and smell the salty sea water!  Yeah!",
+    ["O"] = "Take your ward to the docks of Ratchet in the Barrens.",
+    ["T"] = "Down at the Docks",
+  },
+  [911] = {
+    ["D"] = "They say that Ashenvale is the new frontier, and that the Mor\'shan Rampart in the Barrens is the gateway to it.  That would be so cool to be a pioneer, carving everything you need out of the untamed wilds!  They say that this is where the Horde and Alliance will clash the most in the future, and I want to be there $N!$B$BWould you take me to the Mor\'shan Rampart so I can see what the frontier looks like, please?  I wanna see where the Horde is driving out those smelly night elves!",
+    ["O"] = "Take your ward to the Mor\'shan Rampart in the northern part of the Barrens, just before entering Ashenvale.",
+    ["T"] = "Gateway to the Frontier",
+  },
+  [912] = "_",
+  [913] = {
+    ["D"] = "The thunderhawk, $N, is a fierce beast.  It is time for you to face them.  You must find where it roams, and bring me its wings as proof of your successful hunt.$B$BDo this, and your time with me will near its end.",
+    ["O"] = "Find and slay a Thunderhawk, return its wings to Jorn Skyseer at Camp Taurajo.",
+    ["T"] = "Cry of the Thunderhawk",
   },
   [914] = {
     ["D"] = "통곡의 동굴에 있는 송곳니의 드루이드들은 미쳐버렸습니다. 처음에는 불모의 땅을 치유하려던 드루이드 귀족이었지만, 지금은 자신들의 비뚤어진 야망을 채우기 위해 이 땅의 판을 새로 짜려하고 있습니다.$B$B송곳니의 드루이드들은 4명의 지도자가 이끌고 있으며, 각기 꿈의 보석을 지니고 있습니다. 꿈에서 본 그들의 얼굴이 지금도 생생합니다! 그들을 처치하고 꿈의 보석을 제게 가져오면 불모의 땅에 다시금 평화를 가져올 수 있을 겁니다.$B$B통곡의 동굴 깊은 곳으로 가세요. 그들을 발견할 수 있을 겁니다. 어서 떠나세요.",
@@ -3675,11 +4192,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Travel to Thunder Bluff to see about getting Cairne Bloodhoof\'s hoofprint for your ward.",
     ["T"] = "케른의 발굽도장",
   },
-  [926] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "혼란의 마법석",
-  },
   [927] = {
     ["D"] = "악취나는 검은이끼괴물의 심장은 끈적끈적한 검은색 이끼로 덮여 있습니다. 느리지만 일정한 박동이 느껴지는 것으로 보아 이것이 심장이라는 것만 간신히 알아볼 수 있을 뿐입니다. 심장의 박동은 지금까지도 멎지 않고 있습니다.$B$B데날란이 이 심장을 보고 싶어할지도 모릅니다.",
     ["O"] = "이끼로 덮인 심장을 알아메스 호수에 있는 데날란에게 가져가야 합니다.",
@@ -3715,11 +4227,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Fill the Tourmaline Phial and bring it back to Corithras Moonrage in Dolanaar.",
     ["T"] = "Crown of the Earth",
   },
-  [934] = {
-    ["D"] = "하지만 텔드랏실은 모든 면에서 문제가 많았소. 세계수에 대한 스태그헬름 님의 신중한 계획은 그분이 바라는 대로 실행됐지만 작은 문제가 있었소. 그리고 그 문제로 인해 텔드랏실에 또 다른 문제들이 꼬리를 물고 발생하게 된 것이오.$B$B지금은 다른 문제들은 제쳐 두겠소. 우선 그대는 북서쪽 신탁의 숲에 위치한 마지막 달샘으로 가도록 하시오. 신탁의 나무 가지 아래 우리의 최초의 달샘이자 가장 강력한 샘이 하나 있소. 그 물을 이 약병에 담아 내게 가져오시오.",
-    ["O"] = "자수정 약병을 채운 다음 돌라나르에 있는 코리드라스 문레이지에게 가져가야 합니다.",
-    ["T"] = "대지의 왕관",
-  },
   [935] = {
     ["D"] = "Without the blessings of Alexstrasza the Life-Binder and Nozdormu the Timeless, Teldrassil\'s growth has not been without flaw. Strange beasts have been reported arising from the very ground of the tree, and crazed furbolgs attack passing travelers.$b$bI can only hope that the solution the Arch Druid is looking for will be found quickly. I will pour all the phials you brought into this vessel, for you to deliver to Darnassus.$b$bBring it to Fandral Staghelm, you will find him in the druid grove.",
     ["O"] = "Bring the Filled Vessel to Arch Druid Fandral Staghelm in Darnassus.",
@@ -3739,6 +4246,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "이 퓨마의 털은 특이한 회색빛이라 주변의 숲과 조화를 이룹니다. 누워 있는 퓨마의 등과 배 전체에 심하게 깊이 찢긴 상처가 보입니다.$B$B머리를 들고 당신을 바라보는 퓨마의 푸른 눈에 총명함이 번뜩입니다. 퓨마는 당신을 따라가고 싶어하는 것 같습니다.",
     ["O"] = "신탁의 나무 근처의 달샘에 있는 파수꾼 아리니아 클라우즈브레이크에게 미스트를 데려가야 합니다.",
     ["T"] = "미스트",
+  },
+  [939] = {
+    ["D"] = "You study the simple wooden flute you picked up after defeating Xavaric.$B$BThe knotted wood feels solid, but it seems as if the spirals and patterns in the surface begin to spin and move as you turn it over in your hands. Suddenly, you feel a sense of dread...$B$BYou shake your head, sure that your mind is playing tricks on you.$B$BIt\'s possible that other satyrs carry clues as to what you have found. Bring your findings to the druid, Eridan Bluewind, that lives in southern Felwood.",
+    ["O"] = "Bring the Flute of Xavaric and 5 Jadefire Felbind samples to Eridan Bluewind in southern Felwood.",
+    ["T"] = "사바릭의 플룻",
   },
   [940] = {
     ["D"] = "The forest whispers of your feats of valor, $n. As I felt the harpies forced from their nests, a greater calm spread across the forest, its creatures once again feeling safe. I have feared sending another messenger to the Arch Druid, but I know that you will see my message safely to him.$b$bDeliver this to him and know that the forest will see you safely along its paths to the forest of stone.",
@@ -3770,6 +4282,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "테리루네의 탈출을 도운 다음 아에시나의 제단에 있는 테리실에게 그녀가 무사하다는 사실을 알려야 합니다.",
     ["T"] = "테리루네의 탈출",
   },
+  [946] = "_",
   [947] = {
     ["D"] = "내가 연구 중인 물약에는 특정한 동굴에서만 자라는 희귀한 버섯이 필요하오. 그 동굴은 여기서 동쪽으로 가면 나오는 산맥의 약간 북쪽에 위치한 절벽 폭포 뒤에 있소.$B$B그곳에 직접 가보려 했지만 고대정령의 숲이 그곳에 가까이 가지 말라고 충고하더군. 우리의 오랜 친구인 그들은 느꼈나 보오. 그 동굴이 어둠해안에 새로이 생겨난 악의 세력이 숨어 있는 은신처라는 걸 ...$B$B부디 날 위해 버섯을 좀 모아 주시오. 그리고 동굴을 정찰하여 고대정령이 우려하는 바가 사실인지 확인해주기 바라오.",
     ["O"] = "아우버다인에 있는 바리스라스 문셰이드에게 껄껄이그물버섯 5개와 알광대버섯 1개를 가져가야 합니다.",
@@ -3779,6 +4292,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Onu, an Ancient of Lore at the Grove of the Ancients, knows of your journey to Cliffwater Falls and wishes to speak with you.  The grove lies to the south, nestled near the mountains.$B$BThe Ancients are patient and wise, $N.  But if Onu seeks your counsel concerning what you saw in the falls, then I fear it is urgent.",
     ["O"] = "Speak with Onu at the Grove of the Ancients.",
     ["T"] = "Onu",
+  },
+  [949] = {
+    ["D"] = "The Twilight\'s Hammer\'s purpose at the Master\'s Glaive is not known.  But it must be dark.$B$BSearch through their camp at the Glaive... Search for some thing that may teach us their intentions.$B$BFor we must learn their intentions before a plan is made.",
+    ["O"] = "Find a clue in the Twilight\'s Hammer camp at the Master\'s Glaive.",
+    ["T"] = "The Twilight Camp",
+  },
+  [950] = {
+    ["D"] = "Peering into the Twilight Tome is maddening.  Text begins to swim and dance after only a moment\'s glance, and once beautiful scrollwork twists into grotesque shapes.$B$BTearing away one page of insane scribbles is all that is possible before a swoon overtakes you.",
+    ["O"] = "Bring Onu the recovered Insane Scribbles.",
+    ["T"] = "Return to Onu",
   },
   [951] = {
     ["D"] = "The parchment you found at the Master\'s Glaive is a page from an ancient text...written by elves!  It is heavily cursed and tainted by the corruption of the Twilight\'s Hammer, but it seems the cult is using ancient elven magic to bring their old masters back to our world.$B$BTravel to the ruins of Mathystra to the northeast, and search for ancient relics among the grass and broken stones.  Through their study, we may divine how the Twilight\'s Hammer intends to exploit the magic of the elves.",
@@ -3830,6 +4353,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "Onu is meditating",
   },
+  [961] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Onu is meditating",
+  },
   [962] = {
     ["D"] = "로데론의 위대한 도시 언더시티에 있는 왕립 연금술 학회에서 매우 특별한 임무를 위해 날 이곳으로 보냈소. 아마 당신은 포세이큰의 발전을 위해 노력 중인 나와 어둠의 여왕님을 도와줄 거라고 생각하오.$B$B최근에 나는 불뱀꽃이라는 희귀한 식물의 표본에 대해 연구했소. 이 향초의 잠재력은 아주 크다고 믿소.$B$B하지만 불행하게도 불뱀꽃은 불모의 땅에 있는 위험한 동굴인 통곡의 동굴의 가장 어둡고 깊은 곳에서만 자라오. 통곡의 동굴로 가서 불뱀꽃을 구해다 주시오.",
     ["O"] = "썬더 블러프에 있는 연금술사 자마가 불뱀꽃 10개를 모아 달라고 했습니다.",
@@ -3860,11 +4388,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "잿빛 골짜기에 있는 수호자 델그렌에게 발툴의 편지를 전해야 합니다.",
     ["T"] = "알살락스의 탑",
   },
-  [968] = {
-    ["D"] = "워낙 낡은데다 심하게 긁히긴 했지만 이 책의 표지에 적힌 제목은 아직 읽을 수 있습니다.$B$B\'힘의 저편\'$B$B펼쳐보니 어떻게 읽어야 할지 아리송한 이름들과 함께 예언의 제목, 경배 의식의 절차, 희생 제물들의 순위가 적혀 있습니다. 그림을 보니, 희생 제물의 대부분은 인간과 비슷한 형상을 한 살아있는 생명체들입니다.$B$B책 표지 안쪽에는 \'아이언포지의 쓸쓸한 뒷골목, 본그립의 룬과 운명 서점, 소유자: 게릭 본그립\'이라는 글귀가 찍혀 있습니다.$B$B본그립의 서점에서 이런 종류의 책을 취급한다면 이 책을 다시 사들일지도 모릅니다.",
-    ["O"] = "아이언포지에 있는 게릭 본그립에게 \'힘의 저편\'이라는 책을 가져가야 합니다.",
-    ["T"] = "힘의 저편",
-  },
   [969] = {
     ["D"] = "Ah, I can tell just by lookin\' at ya -- you be wantin\' to make a lucky charm. Mau\'ari always knows!$B$BTo da south. you\'ll find a canyon, an\' giants made a\' solid ice. The giants sometimes be carryin\' dem, but ya can always gather da shards yerself from da canyon. These shards have a powerful reflective quality.$B$BBring back 4 frostmaul shards, and my lucky charm will be yours.",
     ["O"] = "Collect 4 Frostmaul Shards for Witch Doctor Mau\'ari in Everlook.",
@@ -3879,11 +4402,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "As you might know, I collect lore.  Old lore.  Powerful lore.  Lore that opens doorways, and lore that can awaken Those Who Sleep.$B$BThere are rumors of an old piece of lore, the Lorgalis Manuscript, at the bottom of Blackfathom Deeps in Ashenvale.  That place is the old dwelling of long-dead elves.  Elves who held great knowledge before their city fell to ruin.$B$BSearch Blackfathom Deeps for the manuscript.  Do this, and I will not forget it.  Not even after ... the end days.",
     ["O"] = "Bring the Lorgalis Manuscript to Gerrig Bonegrip in the Forlorn Cavern in Ironforge.",
     ["T"] = "심연의 지식",
-  },
-  [972] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "물의 정기",
   },
   [973] = {
     ["D"] = "Ilkrud Magthrull. Yes, I have knowledge of him. He is a powerful orc warlock that makes his residence at the Fire Scar Shrine,  a place of great evil in southwestern Ashenvale.$b$bHe had been little more than an annoyance until now, and I had not dealt with him, but it seems that his time has come.",
@@ -3900,15 +4418,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak to Witch Doctor Mau\'ari again in a moment to receive the lucky charm.",
     ["T"] = "마우아리의 부적",
   },
+  [976] = {
+    ["D"] = "Delgren has asked me to deliver messages and supplies to Sentinel Starbreeze in Auberdine, but I am loathe to leave on my own. Dangerous foes operate in the forest, and I do not wish to risk letting these supplies and information fall into the wrong hands.$b$bIf you and others could act as my guards, I could leave now. With your protection, I have no doubt that we can see these goods safely to Auberdine.",
+    ["O"] = "Speak with Delgren the Purifier at Maestra\'s Post after seeing Feero safely through Ashenvale Forest.",
+    ["T"] = "Supplies to Auberdine",
+  },
   [977] = {
     ["D"] = "Now that I have what I need to cover the mechanical moving parts, I only need one other thing. Well, actually two. Two horns!$B$BThe ice thistle patriarchs and matriarchs have the largest horns, so of course, those are the ones I want. That type of yeti inhabits a cave to the southeast. There are plenty of them there; you shouldn\'t have any problem finding them.$B$BRemember, I only want the best looking ones -- no beat up or broken horns, please!",
     ["O"] = "Collect 2 Pristine Yeti Horns for Umi Rumplesnicker in Everlook.",
     ["T"] = "아직 멀었어요?",
   },
-  [980] = {
-    ["D"] = "여기서 북쪽 멀리 여명의 설원이라는 곳에도 온천이 있다고 들었는데, 한가지 이상한 점은 그 근처 어디에도 화산이 없다는 거지. 꽤 재미있지 않나?$B$B더 자세히 알고 싶으면 여명의 설원으로 가서 내 친구와 얘기해 보게나. 도노바 스노우덴이라는 이름의 여자인데, 지금 그 온천 옆에서 지내고 있네.$B$B참, 온도를 재는 걸 도와줘서 고마웠수! 그럼, 또 보세!",
-    ["O"] = "여명의 설원으로 가서 도노바 스노우덴과 대화해야 합니다.",
-    ["T"] = "새로운 온천",
+  [978] = {
+    ["D"] = "Wildkin feathers from the Hinterlands appear to contain traces of magical qualities. These powers... they don\'t seem to be wielded by the creatures, it\'s more like they are simply inherent to the species -- part of their very essence.$B$BDuring my studies, I heard that a large population of wildkin inhabit the snowy lands of Winterspring. Could these creatures have the same powers? Please help me find an answer, $N. Go to Winterspring and gather feathers that have dropped to the ground, then return to me.",
+    ["O"] = "Collect 10 Moontouched Feathers from Winterspring, then return to Erelas Ambersky in Rut\'theran Village.",
+    ["T"] = "Moontouched Wildkin",
   },
   [981] = {
     ["D"] = "For all the work that you have done, you deserve to be well rewarded. Return to Delgren and tell him that Athrikus Narassin lies stilled by your hand, and the Cult of the Dark Strand is beaten and scattered.",
@@ -3940,11 +4463,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "고급 달표범 모피 5필을 찾아 아우버다인에 있는 테렌디스에게 가져가야 합니다.",
     ["T"] = "사라진 주인",
   },
-  [990] = {
-    ["D"] = "반갑습니다. 레이네 울프러너님께서 잿빛 골짜기 내의 도시 아스트라나르에서 그대를 기다리고 계십니다. 그곳의 상황이 그대의 도움으로 조금은 나아졌으면 합니다.$B$B남쪽으로 길을 잘 따라가시면 문제없이 아스트라나르를 찾아갈 수 있을 것입니다.",
-    ["O"] = "잿빛 골짜기에 있는 레이네 울프러너를 찾아가야 합니다.",
-    ["T"] = "잿빛 골짜기로의 여정",
-  },
+  [987] = "_",
   [991] = {
     ["D"] = "$N, a longtime friend of mine is also aiding the Sentinels here in Ashenvale, but he has yet to return.$B$BHe had leads on finding an item that he thought could slow the furbolg attacks on our people--a rod created by a now-dead, evil wizard.$B$BBefore he left here, he mentioned seeking out a gem for the rod.$B$BHe mentioned the gem possibly being hidden at the shrine in Lake Falathim at the base of the mountain to the west. The gem was being held there before it was overrun.$B$BFind my friend, $N, please.",
     ["O"] = "Find Teronis in Ashenvale.",
@@ -3980,25 +4499,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "꿈이 악몽으로 바뀌면",
   },
-  [1000] = {
-    ["D"] = "주목하시오!$B$B세나리온 의회에서는 칼림도어의 광활한 미개척지를 탐험할 건장하고 능력 있는 자들을 찾고 있소! 타나리스와 가젯잔에서 서쪽으로 멀리 떨어진 곳에는 상상도 못할 위험이 도사리는 금단의 황무지가 펼쳐져 있는데, 세나리온 의회에서는 그 일을 대신해줄 명예롭고 뜻있는 지원자들을 찾고 있는 것이오.$B$B관심이 있는 자들은 모두 세나리온 의회에 알현을 요청하도록 하시오. 더 자세한 얘기를 듣고 싶은 자는 썬더 블러프의 장로의 봉우리에 있는 대드루이드 하뮬 룬토템을 찾아가 보시오!",
-    ["O"] = "썬더 블러프의 장로의 봉우리에 있는 대드루이드 하뮬 룬토템을 찾아가 세나리온 의회의 칼림도어 미개척지 탐험 지원자 모집에 대해 대화해야 합니다.",
-    ["T"] = "새로운 미개척지",
-  },
   [1001] = {
     ["D"] = "A tiny voice crackles from deep within the machine.$B$B\"Wizbang here! The next Buzzbox is north of Auberdine, on the beach$B$BSo, that Buzzbox is number 411 and it needs 3 Thresher Eyes for its repairs. They\'re just off the coast! The darkshore threshers... *Hic*... Sorry about that...$B$BJust like last time, when you give the Buzzbox the goods, it\'ll spit out your reward. *Hic*... What? No, I\'m fine!\"",
     ["O"] = "Collect 3 Thresher Eyes from Darkshore Threshers in the deep sea near Buzzbox 411.",
     ["T"] = "윙윙상자 411",
   },
+  [1002] = {
+    ["D"] = "The Buzzbox gives a burst of static as you hear Wizbang begin to speak.$B$B\"The next Buzzbox is number 323. Ish north of Auberdine but... where\'s the ale? Wha? Oh, ish on the road sho ya shouldn\'t have trouble finding it near the bridge.\"$B$BWizbang mumbles something incoherent before you hear a loud gulping sound.$B$B\"Thish one needs Moonstalker Fangs... 6 of \'em.\"",
+    ["O"] = "Collect 6 Moonstalker Fangs and place them in Buzzbox 323.",
+    ["T"] = "Buzzbox 323",
+  },
   [1003] = {
     ["D"] = "Over the boiling noises and dripping sounds coming from the machine, you hear Wizbang\'s wavering voice call out.$B$B\"Nexsht onesh far south down the road. Shouldn\'t be hard to find... jusht off to the shide... near a fensh. I think I hid it in shum bushesh... Bushessh. Hehehe... Yesh, Buzzbox 525 takes grizzled scalps from thoshe grizzled thistle bears. Boy thash a mouthful. Grizzshled... Hehehe...\"$B$BYou hear more gulping sounds as the machine cuts out. Then, suddenly, it bursts back to life.$B$B\"4!\"",
     ["O"] = "Collect 4 Grizzled Scalps from Grizzled Thistle Bears to the south of Auberdine and place them in Buzzbox 525.",
     ["T"] = "윙윙상자 525",
-  },
-  [1004] = {
-    ["D"] = "주목하시오!$B$B세나리온 의회에서는 칼림도어의 광활한 미개척지를 탐험할 건장하고 능력 있는 자들을 찾고 있소! 타나리스와 가젯잔에서 서쪽으로 멀리 떨어진 곳에는 상상도 못할 위험이 도사리는 금단의 황무지가 펼쳐져 있는데, 세나리온 의회에서는 그 일을 대신해줄 명예롭고 뜻있는 지원자들을 찾고 있는 것이오.$B$B관심이 있는 자들은 모두 세나리온 의회에 알현을 요청하도록 하시오. 더 자세한 얘기를 듣고 싶은 자는 썬더 블러프의 장로의 봉우리에 있는 대드루이드 하뮬 룬토템을 찾아가 보시오!",
-    ["O"] = "썬더 블러프의 장로의 봉우리에 있는 대드루이드 하뮬 룬토템을 찾아가 세나리온 의회의 칼림도어 미개척지 탐험 지원자 모집에 대해 대화해야 합니다.",
-    ["T"] = "새로운 미개척지",
   },
   [1005] = {
     ["D"] = "",
@@ -4010,6 +4524,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "문밖의 적",
   },
+  [1007] = {
+    ["D"] = "I would charge you with a task, $N.$B$BI was on my small vessel, skimming over the submerged ruins of Zoram, when naga attacked me, surging from the water and tearing at me with their claws!  I fled, carrying what supplies I could to make this meager camp.$B$BBut when I reached the shore and ran... my prized possession was lost.$B$BPlease, $N, find the site of my ambush, along the coast to the north, and search for an ancient statuette.  It is the reason I have braved the dangers of the Zoram Strand.",
+    ["O"] = "Bring the Ancient Statuette to Talen, in his camp near the Zoram Strand.",
+    ["T"] = "고대 조각상",
+  },
   [1008] = {
     ["D"] = "조람 해안으로 알려진 북서쪽 바닷가에 악당들이 숨어 있습니다.$B$B그곳은 대륙이 분리되는 동안 파괴되어 바다 밑에 가라앉은 도시, 조람이 잠들어 있는 곳이랍니다. 오랜 세월 동안 나이트 엘프는 조람을 생각하지 못하고 지내 왔습니다. 아니, 조람이라는 도시에 대해 거의 잊어버렸었다고 할 수 있겠군요.$B$B그런데 지금, 무슨 이유에서인지 모르지만 나가들이 다시 돌아왔습니다. 그들이 돌아온 이유는 별로 중요하지 않습니다만 반드시 그들을 섬멸해 버려야 합니다!$B$B임무를 완수한 후 내게 돌아와 주십시오.",
     ["O"] = "아스트라나르에 있는 신드렐 스위프트파이어에게 성난지느러미 머리 20개를 가져가야 합니다.",
@@ -4020,10 +4539,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring the Ring of Zoram to Talen near the Zoram Strand.",
     ["T"] = "Ruuzel",
   },
-  [1011] = {
-    ["D"] = "언데드 호드 군대인 포세이큰이 잿빛 골짜기로 숨어들어와 이곳 폐허와 언덕을 어슬렁거리고 있소. 우리 생각엔 그들이 나이트 엘프의 땅에 질병을 퍼뜨리려는 것 같소. 이건 꼭 확인해 봐야 할 문제요.$B$B포세이큰들은 남쪽의 도르다닐 지하굴 근처에 야영지를 설치하고 독약과 질병을 만들어 병 안에다 담고 있소. 그 야영지로 들어가 역병 견본을 훔쳐 가져다주시오. 그러면 내가 실험을 통해 그 용도를 밝혀내겠소.",
-    ["O"] = "숲의 노래에 있는 케이네스 스틸윈드에게 역병 견본 하나를 가져가야 합니다.",
-    ["T"] = "포세이큰의 역병",
+  [1010] = {
+    ["D"] = "There is a plant that once grew in the old ruins of Bathran\'s Haunt to the north.  The plant was called Bathran\'s Hair and was known to cure ailments of the spirit.$B$BThere is a sick child in the village, and I believe it is more than just a physical illness.  Will you go to Bathran\'s Haunt and search it for Bathran\'s Hair?  I may need it to properly treat the child.$B$BBathran\'s Haunt lies north of Maestra\'s Post and just south of the border to Darkshore.",
+    ["O"] = "Bring 5 Bathran\'s Hair to Orendil Broadleaf in Ashenvale.",
+    ["T"] = "배스랜모초",
   },
   [1012] = {
     ["D"] = "When I struggled with the Forsaken\'s poisons, I had a vision.  I had a vision of the druids in the Dor\'danil Barrow Den, poisoned... murdered by the undead!  They are now errant ghosts, severed from their bodies and driven mad.$B$BSo that the druids\' spirits might some day find peace, you must enter the Dor\'danil Barrow Den and destroy its once great leaders: Taneel Darkwood, Uthil Mooncall and Mavoris Cloudsbreak.$B$BDo this, then return to me.",
@@ -4040,15 +4559,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "다르나서스의 세나리온 자치령에 있는 대드루이드 판드랄 스태그헬름을 찾아가 세나리온 의회의 칼림도어 미개척지 탐험 지원자 모집에 대해 대화해야 합니다.",
     ["T"] = "새로운 미개척지",
   },
-  [1018] = {
-    ["D"] = "주목하시오!$B$B세나리온 의회에서는 칼림도어의 광활한 미개척지를 탐험할 건장하고 능력 있는 자들을 찾고 있소! 타나리스와 가젯잔에서 서쪽으로 멀리 떨어진 곳에는 상상도 못할 위험이 도사리는 금단의 황무지가 펼쳐져 있는데, 세나리온 의회에서는 그 일을 대신해줄 명예롭고 뜻있는 지원자들을 찾고 있는 것이오.$B$B관심이 있는 자들은 모두 세나리온 의회에 알현을 요청하도록 하시오. 더 자세한 얘기를 듣고 싶은 자는 썬더 블러프의 장로의 봉우리에 있는 대드루이드 하뮬 룬토템을 찾아가 보시오!",
-    ["O"] = "썬더 블러프의 장로의 봉우리에 있는 대드루이드 하뮬 룬토템을 찾아가 세나리온 의회의 칼림도어 미개척지 탐험 지원자 모집에 대해 대화해야 합니다.",
-    ["T"] = "새로운 미개척지",
+  [1016] = {
+    ["D"] = "Take this divining scroll--it can determine the creator of these elementals. But you will need something from them to use as a reagent to focus scroll\'s magic--their bracers should do nicely.$B$BA few intact bracers from the creatures should be enough. The other bracers will be useless for our purposes, but they may be worth something to a merchant if you wish to sell them. Once you have the intact bracers attempt to use the scroll. Return to me with the results and we shall proceed from there.",
+    ["O"] = "Collect 5 Intact Elemental Bracers and use the Divining Scroll on them. Afterwards, bring the Divined Scroll to Sentinel Velene Starstrike at the Silverwind Refuge.",
+    ["T"] = "미스트랄 호수 수복",
   },
-  [1019] = {
-    ["D"] = "영웅은 들으십시오!$B$B세나리온 의회에서는 칼림도어의 광활한 땅을 개척할 건장하고 실력 있는 모험가들을 찾고 있습니다! 타나리스와 가젯잔에서 서쪽으로 멀리 떨어진 곳에 펼쳐져 있는 금단의 황무지에는 상상도 못할 위험이 도사리고 있습니다. 세나리온 의회를 대신해 개척 임무를 맡아줄 용맹스럽고 뜻있는 지원자들을 찾고 있습니다.$B$B관심이 있는 이들은 모두 세나리온 의회에 알현을 청하십시오. 다르나서스에 있는 대드루이드 판드랄 스태그헬름을 찾아가면 자세한 얘기를 들을 수 있습니다!",
-    ["O"] = "다르나서스의 세나리온 자치령에 있는 대드루이드 판드랄 스태그헬름을 찾아가 세나리온 의회의 칼림도어 미개척지 탐험 지원자 모집에 대해 대화해야 합니다.",
-    ["T"] = "새로운 미개척지",
+  [1017] = {
+    ["D"] = "There\'s only one undead mage in the Barrens capable of defiling this many water elementals. He\'s also the only one foolish enough to try. Sarilus Foulborne is probably sitting at the top of Dreadmist Peak, laughing at me.$B$B$n, you must go into enemy territory and destroy this miscreant. I have had enough of his idiocy and we must show him what happens to those who annoy the Sentinels.$B$BDestroy him and bring me his head. Be wary though, the Horde may be watching for you.",
+    ["O"] = "Slay Sarilus Foulborne and bring his head to Sentinel Velene Starstrike in Silverwind Refuge.",
+    ["T"] = "Mage Summoner",
   },
   [1020] = {
     ["D"] = "$N, I have created a cure that I believe will help the afflicted child.  Take it to Astranaar and give it to the child\'s parent, Pelturas Whitemoon.$B$BTo reach Astranaar, follow the road south, then east.",
@@ -4185,11 +4704,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring Ran Bloodtooth\'s Skull and Dartol\'s Rod of Transformation to Raene Wolfrunner in Astranaar.",
     ["T"] = "Raene\'s Cleansing",
   },
-  [1047] = {
-    ["D"] = "영웅은 들으십시오!$B$B세나리온 의회에서는 칼림도어의 광활한 땅을 개척할 건장하고 실력 있는 모험가들을 찾고 있습니다! 타나리스와 가젯잔에서 서쪽으로 멀리 떨어진 곳에 펼쳐져 있는 금단의 황무지에는 상상도 못할 위험이 도사리고 있습니다. 세나리온 의회를 대신해 개척 임무를 맡아줄 용맹스럽고 뜻있는 지원자들을 찾고 있습니다.$B$B관심이 있는 이들은 모두 세나리온 의회에 알현을 청하십시오. 다르나서스에 있는 대드루이드 판드랄 스태그헬름을 찾아가면 자세한 얘기를 들을 수 있습니다!",
-    ["O"] = "다르나서스의 세나리온 자치령에 있는 대드루이드 판드랄 스태그헬름을 찾아가 세나리온 의회의 칼림도어 미개척지 탐험 지원자 모집에 대해 대화해야 합니다.",
-    ["T"] = "새로운 미개척지",
-  },
   [1048] = {
     ["D"] = "어둠의 여왕님께서는 북쪽으로 전진해 오고 있는 리치 왕의 군대에 대한 급박한 상황에 신경을 쏟고 계시다. 난 그동안 좀 포세이큰 내적인 일들을 돌보고 있지.$B$B두말할 것 없이, 자칭 붉은십자군이라는 말썽꾸러기 인간들이 우리 지역 내에서 가장 큰 골칫거리가 되고 있단 말이야. 티리스팔 숲은 말 그대로 이 조그만 불개미 같은 녀석들로 우글거리고 있어.$B$B수도원으로 가라, $C|1이여;여;. 가서 종교재판관 화이트메인과 그녀의 고위 부관들을 제거하도록 하라.",
     ["O"] = "종교재판관 화이트메인, 붉은십자군 사령관 모그레인, 붉은십자군 용사 헤로드와 사냥개조련사 록시를 처치한 후 언더시티에 있는 바리마트라스에게 돌아가 보고해야 합니다.",
@@ -4270,6 +4784,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak with Magatha in Thunder Bluff.",
     ["T"] = "대모",
   },
+  [1064] = {
+    ["D"] = "The tauren have a bond with the land, and it pains me to hear of Stonetalon\'s plight.  But I fear that to heal the land, we must first remove the disease upon it.$B$BIs it not fortunate, then, that the Forsaken are allied with us?  They know much of disease.  I believe they can aid us, and by doing so they will strengthen the trust between our people.$B$BSpeak with Apothecary Zamah.  She is a scholar and an emissary of the Forsaken.  You will find her in the Pools of Vision below the Spirit Rise.",
+    ["O"] = "Speak with Apothecary Zamah in the Pools of Vision in Thunder Bluff.",
+    ["T"] = "Forsaken Aid",
+  },
   [1065] = {
     ["D"] = "To rid Stonetalon of the Venture Company, we must take extreme measures.  Extreme, but without bloodshed.$B$BA colleague of mine may have just the tool we need.  His name is Lydon; he dwells in the town of Tarren Mill in the Hillsbrad Foothills, in the distant land of Lordaeron.$B$BTo reach Hillsbrad, travel by zeppelin to our capital, the Undercity.  Then go north to Tirisfal Glades, southwest to Silverpine, and south to Hillsbrad.$B$BSeek Lydon and bring him this note.  It details our needs to him.",
     ["O"] = "Bring Zamah\'s Note to Apothecary Lydon in Tarren Mill.",
@@ -4279,6 +4798,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "I will create a toxin to bleed the violence from the Venture Company, rendering them weak and docile.  That should fix the Horde\'s problem in Stonetalon, yes?$B$BBut to create the toxin, I will need the blood of innocents, a difficult ingredient to obtain.$B$BFortunately the Syndicate, a group of human brigands in this area, employ shadow mages... and those mages collect innocent blood for their own, unsavory purposes.$B$BYou can find the Syndicate shadow mages in Durnholde Keep to the southeast.",
     ["O"] = "Bring 5 Vials of Innocent Blood to Apothecary Lydon in Tarren Mill.",
     ["T"] = "순결한 피",
+  },
+  [1067] = {
+    ["D"] = "Here is the toxin.  If you use it against the Venture Company it should produce favorable, perhaps even contagious, results.  I must say, it is quite exciting to see my work applied in the field!$B$BBut before using it, take it to Apothecary Zamah.  She must create a delivery method for the toxin to maximize its effect.",
+    ["O"] = "Bring Lydon\'s Toxin to Apothecary Zamah in Thunder Bluff.",
+    ["T"] = "Return to Thunder Bluff",
   },
   [1068] = {
     ["D"] = "There is a relation to the spiritual magic of shaman and the natural magic of druids.  This is why we shaman can hear the plea of the spirits of Stonetalon.  Many of their whisperings are lost to me, but one message, one vision, is clear...$B$BI saw a vision of two man-shaped machines in Windshear Crag, northwest of Greatwood Vale, felling trees with impossible speed.  These metal beasts must be stopped!$B$BIn my vision, the machines were marked with strange symbols:$B$BXT:4 and XT:9.",
@@ -4290,20 +4814,85 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 15 Deepmoss Eggs to Mebok Mizzyrix in Ratchet.",
     ["T"] = "[미사용]동굴이끼거미알",
   },
+  [1071] = {
+    ["D"] = "You see, $N, I\'m a member of the Enlightened Assembly of Arcanology, Alchemy and Engineering Sciences, and it\'s my goal... nay, my DUTY! to show the night elves that a blend of magic, mixtures, and mechanisms can help save their forests.$B$BBut it\'s a hard fought war, and the goblins reproduce like rabbits it seems. I haven\'t even had time to build my newest inventions!$B$BI need some time to plan and organize. But to do that, I need your help keeping the goblins at bay in Windshear Crag to the east...",
+    ["O"] = "Kill 10 Venture Co. Loggers, and 10 Venture Co. Deforesters and return to Gaxim Rustfizzle in Stonetalon.",
+    ["T"] = "A Gnome\'s Respite",
+  },
+  [1072] = {
+    ["D"] = "The device I\'m thinking about is my most advanced version to date. But we\'ll need a special potion if it\'s to work. I\'m thinking we might as well get the good stuff since this mission could be your last.$B$BAnd for that, we\'re going to need some potent explosives: Nitromirglyceronium.$B$BThe only person who can make NG-5 is an old friend of mine: Lomac Gearstrip. Look for him in Tinker Town.$B$BYou talk him into making us some NG-5, I\'ll get to work on placement for my devices.",
+    ["O"] = "Speak to Lomac Gearstrip in Ironforge.",
+    ["T"] = "An Old Colleague",
+  },
   [1073] = {
     ["D"] = "Hahaha... you need Nitromirglyceronium to stop goblins from destroying a forest?!$B$BI don\'t care if you know Gaxim or not... I\'ll give you the stuff just to see you or them explode into itty bitty pieces.$B$BThere\'s a problem though: I\'m all out.$B$BBut I\'ll tell you what, you bring me the correct potions, and I\'ll make some up for you right away.$B$BThe least you can do is prove you\'ve got some skill as an alchemist before I just give you a sample of my greatest creation.",
     ["O"] = "Bring 4 Minor Mana Potions and 2 Elixirs of Minor Fortitude to Lomac Gearstrip in Ironforge.",
     ["T"] = "Ineptitude + Chemicals = Fun",
+  },
+  [1074] = {
+    ["D"] = "Here you go, stranger. Take heed with it though... it\'s volatile stuff.$B$BIf you\'re really a friend of Gaxim\'s, then tell him I say hello. If you\'re not, then have fun blowin\' yerself up.",
+    ["O"] = "Bring the Nitromirglyceronium back to Gaxim Rustfizzle in Stonetalon.",
+    ["T"] = "Ineptitude + Chemicals = Fun",
+  },
+  [1075] = {
+    ["D"] = "Okay, now for the remote detonation part of my plan... oh, I haven\'t explained that yet, have I?$B$BOkay, so the short of it is this: with a little magic, I can make it so the explosives go off while you\'re not around. I\'m putting together a device that\'ll allow you to push just one button and have the NG-5 explode when you\'re ready.$B$BBut I need a spell from a friend in Stormwind--Collin Mauren is his name. You can find him in the mage quarter there. He\'s human, so he shouldn\'t be hard to miss.",
+    ["O"] = "Find Collin Mauren in Stormwind.",
+    ["T"] = "A Scroll from Mauren",
+  },
+  [1076] = {
+    ["D"] = "Ah, I think I have it. A messaging spell... I believe that\'s the effect he\'s looking for.$B$BI\'ll have to create a scroll with the spell impressed upon it. To do that I\'ll need debris from a dust devil.$B$BWhile I gather the rest of the components, why don\'t you head to Westfall and find one of the foul creatures? They are dangerous, but I\'m sure it\'s nothing you can\'t handle if you\'re willing to subject yourself to one of Gaxim\'s experiments.$B$BI\'ll be here when you return.",
+    ["O"] = "Bring Dust Devil Debris to Collin Mauren in Stormwind.",
+    ["T"] = "Devils in Westfall",
+  },
+  [1077] = {
+    ["D"] = "Here you are, $N. This should do nicely.$B$BPlease give my regards to Gaxim when next you see him. I look forward to hearing about this adventure when it sees its completion.$B$BFare well.",
+    ["O"] = "Bring the Scroll of Messaging to Gaxim Rustfizzle in Stonetalon.",
+    ["T"] = "Special Delivery for Gaxim",
   },
   [1078] = {
     ["D"] = "여행자들이 계속 내게 돌발톱 산맥에 대해 묻는 걸 보니 모험가들에게는 유명한 곳인가 본데... 와이번을 찾는 이, 정령을 찾는 이, 아니면 투자개발회사에 볼일이 있는 이, 정말 다양하답니다.$B$B예전에 돌발톱 산맥 깊은 곳, 잿더미 계곡에 바실리스크들이 살았는데 그 비늘을 가루로 만들면 내가 만든 몇 가지 주문에 맞는 훌륭한 시약이 될 겁니다. 아직 그 바실리스크들이 살고 있다면 내게 그 비늘을 좀 구해다 주십시오.$B$B급할 건 없으니 서두르지 않아도 됩니다만 사례는 후하게 해 드리도록 하죠.",
     ["O"] = "스톰윈드에 있는 콜린 마우렌에게 비늘 결정체 8개를 가져가야 합니다.",
     ["T"] = "마우렌 돕기",
   },
+  [1079] = {
+    ["D"] = "This is it, $N. Pay close attention. The devices are done, and ready to be used.$B$BTake these pages--they\'ll explain more about the detonators and explosives, and where you should place them.$B$BRemember, the success of your mission doesn\'t depend on how much destruction you cause. Plan Alpha\'s success depends on you bringing back the Venture Co.\'s engineering plans from inside the lumber mill south of Cragpool Lake.",
+    ["O"] = "Retrieve the Venture Co.\'s Engineering Plans from the lumber mill in Windshear Crag.",
+    ["T"] = "Covert Ops - Alpha",
+  },
+  [1080] = {
+    ["D"] = "Plan Beta\'s just like Plan Alpha, $N.$B$BWe cause a distraction and then steal their precious letters.$B$BThe key is to get their letters... remember that.$B$BThe pages I gave you already will tell you where to plant the explosives. Just get back here alive and with those letters....",
+    ["O"] = "Retrieve the Venture Co. Letters from Windshear Mine at the east end of Windshear Crag.",
+    ["T"] = "Covert Ops - Beta",
+  },
+  [1081] = {
+    ["D"] = "$N, I am sure Tyrande Whisperwind herself would like to thank you for taking part in this mission.$B$BIt may not appear so on the surface, but what you\'ve helped start could very well strengthen our foothold in the Stonetalon Mountains.$B$BIf you consider yourself our ally against these atrocities, go see Tyrande in the Temple of the Moon in Darnassus.",
+    ["O"] = "Find Tyrande Whisperwind in Darnassus.",
+    ["T"] = "Reception from Tyrande",
+  },
+  [1082] = {
+    ["D"] = "$N, you have done a great deed by lending a hand here.$B$BThe Sentinels of Ashenvale will reward you well if you informed them that Gaxim and I are alive. Tell them we are well on our way to stopping the Venture Co. and healing the lands.$B$BFind Tara Thenysil in Astranaar; she will be pleased to see you\'ve returned with good news.",
+    ["O"] = "Return to Sentinel Thenysil in Ashenvale.",
+    ["T"] = "Update for Sentinel Thenysil",
+  },
+  [1083] = {
+    ["D"] = "I\'m unsure what the Venture Co. did to the Vale, but it\'s obvious they were overpowered by the creatures there.$B$BThey set the forest aflame, and used their inventions of destruction to decimate as much of the Vale as possible.$B$BBut in their ignorance they also released something else: burning spirits, elementals of flame, stone and rage.$B$BThe land has no chance to see Elune\'s smile while these creatures roam free.$B$BBring me their smoldering embers to show you\'ve reduced their numbers.",
+    ["O"] = "Bring 8 Smoldering Embers from any of the fire elementals in the Charred Vale to Kaela Shadowspear in Stonetalon.",
+    ["T"] = "Enraged Spirits",
+  },
+  [1084] = {
+    ["D"] = "It seems obvious to me that the protectors of the Vale--the treants--had something to do with the Venture Co. being driven back. Unfortunately, even those once great guardians have now become corrupt.$B$BGaxim thinks their corruption is somehow linked to the weapons the goblins used during their retreat.$B$BI told him I\'d collect a sample from a wounded treant and allow him to study it in order to figure out if that\'s true.$B$BBring me some of the shrapnel so the gnome can tell me more...",
+    ["O"] = "Bring a piece of Corroded Shrapnel to Kaela Shadowspear in Stonetalon.",
+    ["T"] = "Wounded Ancients",
+  },
   [1085] = {
     ["D"] = "The situation here in Stonetalon is obviously grave for a night elf and gnome to be working together.$B$BThe Venture Co. has devastated these lands and I\'ve spent most of my time putting an end to the destruction.$B$BDo not judge Gaxim prematurely; he understands the need for us to work together.$B$BIf you wish to aid us, then start by speaking to Gaxim.$B$BI\'m sorry I cannot send you back to Tara with good news yet. Perhaps soon.",
     ["O"] = "Speak to Gaxim.",
     ["T"] = "돌발톱 산맥에서의 임무",
+  },
+  [1086] = {
+    ["D"] = "The toxin is ready.  All that remains is its delivery.  You, $N, must make that delivery.$B$BThe Venture Company must have a means of sending messages and light cargo between its headquarters and its operations in Stonetalon.  It is likely a small sky port -- not big enough for a zeppelin, but perhaps for a flying machine.  You must search the areas in Stonetalon under control of the Venture Company and find this sky port, if it exists.  If you find it, then place the toxin there.$B$BPlace it, and run.",
+    ["O"] = "Bring the Toxic Fogger to the Venture Co. sky port, then return to Apothecary Zamah.",
+    ["T"] = "The Flying Machine Airport",
   },
   [1087] = {
     ["D"] = "제가 이 비참한 땅을 얼마나 혐오스러워하는지 모를 거예요. 산봉우리에 있는 세나리우스 일족과 칼도레이 드루이드들이 그 알량한 힘으로 마법의 흐름을 막고 있어요. 그들이 그렇게도 아끼는 저 남쪽 멀리 있는 숲에 이르기까지 말이에요.$B$B직접 제데나르로 돌아가서 그 녀석들을 처리하고 싶지만, 임무를 완수하지 못하면 돌아올 생각은 꿈에도 꾸지 말라는 스승님 말씀 때문에 발길이 떨어지질 않네요.$B$B당신도 나만큼이나 나이트 엘프와 그 동맹을 미워하는 것 같으니, 날 도와서 이 임무를 좀 완수해주세요.",
@@ -4325,6 +4914,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "피즈닉이 캐낸 미확인 광석을 받아야 합니다.",
     ["T"] = "게렌조의 지시",
   },
+  [1091] = {
+    ["D"] = "$N, take these letters to Kaela. I\'m sure she\'ll want to know about this. Or at least the Sentinels will.$B$BMake sure you tell her how successful we were and how we couldn\'t have done it without a little bit of magic.",
+    ["O"] = "Bring the Venture Co. Letters to Kaela Shadowspear.",
+    ["T"] = "Kaela\'s Update",
+  },
   [1092] = {
     ["D"] = "I guess I\'d better think about getting out of here, also. It won\'t take long for word of what happened here to spread to the higher ups, and I\'m sure they wouldn\'t take too kindly to meeting me again.$b$bI\'ll sneak out and meet with Ziz. Hopefully, he\'ll be able to find me a new job!$b$bI\'ll try and clean up this mess a little, but you should take the ore sample to Ziz right away. He told me that he\'d set up camp somewhere on the western side of Windshear Crag. Good luck.",
     ["O"] = "Deliver the Unidentified Ore to Ziz Fizziks in the Stonetalon Mountains.",
@@ -4334,6 +4928,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "투자개발회사가 이곳에 한 짓은 정말 끔찍하지 않나? 고블린 조합에서 노움을 고용하다니 말이야! 대체 무슨 생각을 하고 있었던 건지...$B$B천재를 알아보는 안목을 갖추신 스퍼터밸브님을 만난 건 정말 행운이었어. 해고된 날 바로 고용해 주셨으니까 말이야!$B$B스퍼터밸브께서 투자개발회사 놈들이 거대한 벌목 기계를 만들었으니 그 설계도를 훔쳐내 달라고 부탁하셨지. 하지만 게렌조, 그 괘씸한 놈이 내 목숨을 노리고 있으니 갈 수가 있어야 말이지... 당신이 날 위해 놈들의 그걸 좀 훔쳐다 주겠나? 아마 운전수 중 누군가 가지고 있을 거야.",
     ["O"] = "돌발톱 산맥에 있는 지즈 피직스를 위해 슈퍼 절단기 6000 설계도를 입수해야 합니다.",
     ["T"] = "슈퍼 절단기 6000",
+  },
+  [1094] = {
+    ["D"] = "This envelope has all the information I was able to snatch as they booted me out the door... Venture Company internal documents, some manuals, technical things... Oh, and of course the Super Reaper 6000 blueprints.$b$bSputtervalve has taken up residence at Ratchet in the Barrens. Shouldn\'t have much trouble finding him, he\'s a little green fellow.",
+    ["O"] = "Deliver the Sealed Envelope to Sputtervalve in the Barrens.",
+    ["T"] = "Further Instructions",
   },
   [1095] = {
     ["D"] = "The matter of this gnome that has been hired by the Venture Company has caused a bit of a stir in Undermine. The trade princes do not approve of Razdunk\'s consorting with this Gerenzo.$b$bRiddlevox has asked me to take care of the problem, and I\'m sure he was instructed to do so by one or more of the trade princes. Of course, the Director didn\'t tell me that. Let\'s just say I have a hunch.$b$bWhatever the case, Gerenzo must be removed, and it would be a fitting test to have Fizziks take care of him.",
@@ -4369,11 +4968,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "불쌍한 헤랄라스! 그리고 이 드워프, 론브라우... 정말 용감했는데...$B$B이들의 용맹스러운 죽음을 헛되이 할 수는 없소. 서슬깃 차를가라는 대모를 처치해야만 하오.$B$B두말할 필요도 없이, 가시덩굴 우리에 침투하는 것은 위험한 일일 것이오. 하지만 다르나서스로 소식을 전할 시간이 없소. 병력을 좀 모아서 대모를 처치해 주시오.$B$B그리고 그 증거로 차를가의 메달을 내게 가져오시오.",
     ["O"] = "탈라나르에 있는 팔핀델 웨이워더에게 차를가의 메달을 가져가야 합니다.",
     ["T"] = "가시덩굴 우리의 대모",
-  },
-  [1102] = {
-    ["D"] = "이곳 썬더 블러프에서 우리 종족을 단결시킨 케른님이야말로 훌륭한 지도자시지.$B$B하지만 우리 조상들의 땅에서 우릴 몰아낸 자들은 용서할 수가 없네. 우리 타우렌들은 불모의 땅 남부에서 수십 년 동안 살아왔지. 우리에게는 신성한 땅이었지만 여러 적들에 의해 쫓겨나고 말았다네.$B$B가시덩굴 우리 내에서 사악한 군단의 병력을 모으고 있는 노파, 서슬깃 차를가에게는 반드시 복수를 해주어야만 해.$B$B내가 죽더라도 두 눈을 편히 감을 수 있도록 차를가의 심장을 내게 가져다주게.",
-    ["O"] = "썬더 블러프에 있는 아울드 스톤스파이어에게 차를가의 심장을 가져가야 합니다.",
-    ["T"] = "운명의 복수",
   },
   [1103] = {
     ["D"] = "만나서 반갑네! 그대도 이곳의 물을 정화하여 이슬렌에게 능력을 증명해 보이려고 왔나?$B$B방금 내 손으로 타락한 물의 정령을 물리치고 팔보호구와 순수한 물의 나머지 분량을 화로에 넣으려던 참이었지.$B$B뭐라고? 이 티에브는 뭔가 잘못되면 바로바로 알 수 있지. 기꺼이 도와줌세. 하급 물의 현신을 다시 불러내야 할 거야.$B$B자네는 이슬렌에게서 물의 정기를 다시 받아오게. 그러면 나도 내 몫을 하지.",
@@ -4440,6 +5034,31 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring Kravel\'s Scheme to Crank Fizzlebub in Booty Bay.",
     ["T"] = "Back to Booty Bay",
   },
+  [1119] = {
+    ["D"] = "I figured out how to use Zanzil\'s mixture with stout to make a powerful libation.  A Fool\'s Stout.  I think it\'ll be just what Kravel needs, but try it out and let me know how it works.$B$BAnd $N, don\'t keep this stuff too long without using it.  Zanzil\'s mixture has a weird effect on the stout\'s yeast, kicking it into high gear.  So it won\'t stay fresh forever.",
+    ["O"] = "Bring the Fool\'s Stout back to Kravel in the Shimmering Flats.",
+    ["T"] = "Zanzil\'s Mixture and a Fool\'s Stout",
+  },
+  [1120] = {
+    ["D"] = "We need to try the Fool\'s Stout on one of the pit crews.  If you want to try it on the gnomes, then here -- take the stout and give it to the gnome pit boss.$B$BAnd don\'t wait too long.  This stout will go bad eventually.",
+    ["O"] = "Bring the Fool\'s Stout to the Gnome Pit Boss.",
+    ["T"] = "Get the Gnomes Drunk",
+  },
+  [1121] = {
+    ["D"] = "We need to try the Fool\'s Stout on one of the pit crews.  If you want to try it on the goblins, then here -- take the stout and give it to the goblin pit boss.$B$BAnd don\'t wait too long.  This stout will go bad eventually.",
+    ["O"] = "Bring the Fool\'s Stout to the Goblin Pit Boss.",
+    ["T"] = "Get the Goblins Drunk",
+  },
+  [1122] = {
+    ["D"] = "That Fool\'s Stout worked great!  I placed a bet on the next race, and... let\'s hope the crew you got drunk did a number on their car!$B$BThere\'s only one more task for you -- take this note back to Crank Fizzlebub in Booty Bay.  He\'ll want to know of the successful test.$B$BAnd hopefully we can get more of that Fool\'s Stout for future races!",
+    ["O"] = "Bring the Fool\'s Stout report to Crank Fizzlebub in Booty Bay.",
+    ["T"] = "Report Back to Fizzlebub",
+  },
+  [1123] = {
+    ["D"] = "For this task, Keeper Remulos\' majordomo in Moonglade - Rabine Saturna - seeks aid in exploring the vast wastelands far to the west of Tanaris and Un\'Goro.  He is located in Nighthaven, the main village of Moonglade.$B$BI want to impart on you the importance of your presence.  There are growing tensions between the night elves of Darnassus and the Cenarion Circle in Moonglade.  Look beyond racial boundaries and tap into the wisdom of your ancestors in dealings with the Circle there, $N.  Good luck.",
+    ["O"] = "Speak with Rabine Saturna in the village of Nighthaven, Moonglade.  Moonglade lies between Felwood and Winterspring, accessible through a path out of Timbermaw Hold.",
+    ["T"] = "Rabine Saturna",
+  },
   [1124] = {
     ["D"] = "West of Un\'Goro Crater, via the northwestern ridge, is a harsh wasteland - Silithus.  Few know that an ancient war was waged there between the night elves and a malign, alien power.  The evil was sealed, but now we suspect that forces work to stir this... unspeakable horror.$B$BSeek out Layo Starstrike, one of our agents in Silithus; look for him at Valor\'s Rest, the final resting spot for the fallen of the wastes.  Give him this letter, and he will give you his trust accordingly.",
     ["O"] = "Speak with Layo Starstrike near the Valor\'s Rest graveyard of Silithus, showing him Rabine\'s Letter.",
@@ -4479,6 +5098,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "We are not in open war with the Horde, but our peace is fragile.  We often find their agents moving against us, but they do so covertly.$B$BOne such advance was revealed to us from hidden sources in Theramore, claiming that the orcs collect venom from the pridewings near Mirkfallon Lake, in the Stonetalon Mountains to the south.  Orc assassins then use the venom on their secret death raids against the Alliance!$B$BIf this is true, then we must stop them, $N.  We must deny them their source of venom.",
     ["O"] = "Bring 12 Pridewing Venom Sacs to Shindrell Swiftfire in Astranaar.",
     ["T"] = "Pridewings of Stonetalon",
+  },
+  [1136] = {
+    ["D"] = "$N, it is now time for you to travel to far-off lands.  You are ready.$B$BYou now hunt Frostmaw, a yeti in the Alterac Mountains.  He is elusive, his white coat blending into the snows of his mountain home.  He rarely shows himself.$B$BBut I will show you how to entice a creature such as he.  Here, take this scroll.  On it I have written how Frostmaw may be lured.$B$BNow go, $N.  Your journey is long and many challenges lay waiting.  When you return with Frostmaw\'s mane, only then is your task complete.",
+    ["O"] = "Bring Frostmaw\'s Mane to Melor Stonehoof in Thunder Bluff.",
+    ["T"] = "서리갈기 설인",
   },
   [1137] = {
     ["D"] = "인듀리움은 열에 아주 강하오! 틀림없이 피즐의 엔진 피스톤에 쓸 수 있을 거요. 하지만 이 조각들만으로는 부족하고 알짜배기 인듀리움 광석이 필요할 거요.$B$B그 광석은 황야의 땅의 북쪽 경계에 있는 울다만의 깊숙한 곳에서 캐내야만 하오. 그곳이 인듀리움의 진짜 원산지니까.$B$B피즐 브라스볼츠에게 내 안부를 좀 전해 주시오. 그리고 내가 당신에게 해준 말도 전해주고.$B$B부디 안전한 여행 되길 바라오. 그리고 아마 우리는 다시 만나게 될지도 모르오. 피즐이 인듀리움에 대해 알면 분명히 당신을 울다만으로 보내 그걸 가져오게 할 테니까!",
@@ -4530,6 +5154,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "탐색꾼 실리시드 5마리, 일꾼 실리시드 5마리, 병정 실리시드 5마리를 처치하고 버섯구름 봉우리에 있는 목타르 크린에게 가야 합니다.",
     ["T"] = "곤충 떼의 위협",
   },
+  [1148] = {
+    ["D"] = "You inspect the carapace carefully. As you turn it over in your hands you realize that the chitinous plating is interlaced in such a way that makes it incredibly strong. It\'s unlike anything you\'ve ever seen. You inspect the rest of the corpse further and realize that these creatures are very powerful and highly evolved.$B$BLooking down at the carapace again, you think that Korran would enjoy studying more of these creatures. It could help him figure out what these creatures are, and where they come from.",
+    ["O"] = "Bring 1 Silithid Heart, 5 Silithid Talons, and 3 Intact Silithid Carapaces, to Korran at the Crossroads.",
+    ["T"] = "Parts of the Swarm",
+  },
   [1149] = {
     ["D"] = "나를 일부러 찾아온 건가, 아니면 그저 운명에 이끌려 나한테까지 오게 된 건가? 뭐, 상관없네. 그대가 지금 여기 있고 이제 새로운 여정이 시작되려 한다는 사실이 중요한 거니까...$B$B육체와 정신, 그리고 영혼이라는 여러 요소가 합쳐져 하나의 존재를 이루지. 이중 일부는 한 문화의 전통에 의해 가늠될 수 있네. 하지만 일부는 그저 우리 안에 존재하길 바라는 수밖에... 만약 내 말이 맞다고 생각한다면 그대의 내면을 시험해 보게.$B$B이 시험에 통과한다면 더욱 강해질 것이고 실패한다면 지옥이 얼마나 광대한지를 깨닫게 될 것이네. 첫 번째는 믿음의 시험일세.",
     ["O"] = "믿음이 있다면 버섯구름 봉우리가 내려다보이는 높은 곳에서 판자 아래로 뛰어내려야 합니다.",
@@ -4539,6 +5168,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "시험을 통해 그대의 변치 않는 용기를 확인하니 내 마음이 기쁘군. 그대의 확고한 믿음은 확인했으니 이제 육체의 힘을 시험할 때가 됐네.$B$B첫 번째는 인내의 시험이지. 높새바람 봉우리 서쪽 하피 동굴 깊은 곳까지 들어가서 보급품을 파괴하게. 그러면 놈들의 화를 돋우게 될 테고 살아남는다면 끝으로 그렌카 블러드스크리치가 직접 자네를 상대하러 나타날 걸세. 그녀를 처치하고 그 발톱을 가져오면 이번 시험은 끝나지.",
     ["O"] = "버섯구름 봉우리에 있는 도른 플레인스토커에게 그렌카의 발톱을 가져가야 합니다.",
     ["T"] = "인내의 시험",
+  },
+  [1151] = {
+    ["D"] = "During the time of the Old Gods, elementals inhabited much of this world. They worshipped the Old Gods, and the Gods, through their power, kept the elementals bound to this world. When the Old Gods were banished, the elementals faded from our world and now only return at the bidding of powerful mages.$B$BThere are exceptions though. Some elementals were powerful enough to remain here on their own. One such elemental is Rok\'Alim.$B$BTo test your strength, find Rok\'Alim in Thousand Needles and slay him.",
+    ["O"] = "Bring Fragments of Rok\'Alim to Dorn Plainstalker in Thousand Needles.",
+    ["T"] = "Test of Strength",
   },
   [1152] = {
     ["D"] = "Your time with me is just about finished. I am knowledgeable, but the Test of Lore is not mine to give. There are lessons to be learned and places to visit that others claim domain over.$B$BIf you are prepared, then seek out Braug Dimspirit--he is a shaman of great wisdom. He will test you further, so heed his words, $N.$B$BWhen you are ready, find the tunnel that connects the Stonetalon Mountains with Ashenvale: Braug dwells near there. And be careful, $N, the night elves may wish to impede your test.",
@@ -4555,6 +5189,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Find the Legacy of the Aspects and return it to Braug Dimspirit near the entrance to Talondeep Path in Stonetalon Mountains.",
     ["T"] = "지혜의 시험",
   },
+  [1155] = "_",
   [1156] = "_",
   [1157] = "_",
   [1158] = "_",
@@ -4563,11 +5198,9 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Find Parqual Fintallas in Undercity.",
     ["T"] = "지혜의 시험",
   },
-  [1160] = {
-    ["D"] = "그럼 자네가 찾아야 할 것을 말해 주지. 질문은 그것을 찾아온 후에 할 거야. 힘보다 지식이 훨씬 중요하지. 세상엔 자네보다 더 뛰어난 능력을 갖춘 이들도 많이 있겠지. 하지만 이 세상에 대한 지식을 쌓아 간다면 그게 훨씬 더 가치 있는 일이야.$B$B티리스팔 숲 북쪽에 있는 수도원으로 가게. 그곳 도서관에는 \'언데드 위협의 기원\'라는 책이 있지. 그 책은 지금은 타락해 버린 성기사들이 우리 종족과 싸우기 위한 훈련에 사용하던 교본일세.$B$B그걸 내게 가져오도록 하게.",
-    ["O"] = "언데드 위협의 기원을 찾아 언더시티에 있는 파쿠알 핀탈라스에게 가져가야 합니다.",
-    ["T"] = "지혜의 시험",
-  },
+  [1161] = "_",
+  [1162] = "_",
+  [1163] = "_",
   [1164] = {
     ["D"] = "케나타! 그 돼지 같은 계집이 아직도 살아 있다니! 고통 속에 보낸 그 세월 동안 그 계집의 가족은 잘 먹고 잘살고 있다네!$B$B난 역병으로 가족을 잃고 전쟁 중에 재산도 도둑맞거나 불타 버렸지. 그 후 케나타 그 계집과 그 악랄한 자식들은 뻔뻔스럽게도 내게 남은 유일한 귀중품마저 훔쳐갔어.$B$B훔쳐간 물건에는 더는 관심이 없으니 그들을 처치해 주게! 아라시 고원에 있는 임시 주둔지 북동쪽의 다비리 농장으로 가면 될 걸세.",
     ["O"] = "언더시티에 있는 지나비 칼로에게 케나타, 파델, 마르셀 다비리의 머리카락을 가져가야 합니다.",
@@ -4613,6 +5246,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "모크모로크에게 이긴 후 담쟁이 마을에 있는 드자리블에게 이 소식을 보고해야 합니다.",
     ["T"] = "대군주 모크모로크에게 도전",
   },
+  [1174] = "_",
   [1175] = {
     ["D"] = "고블린의 경주용차 붉은 번개호와 바실리스크가 충돌하는 큰 사고가 일어난 후 크론크라이더가 경주로 관리를 위해 날 고용했네. 도대체 소금 평원의 모든 짐승들이 뭘 먹고 그렇게 거대해졌는지 모르지만, 어쨌든 우리는 놈들의 수를 최대한 줄여 경주가 진행되는 동안 경주로에 들어오는 일이 없도록 해야 하네.$B$B돈벌이를 찾고 있다면 이 지역에 있는 바실리스크를 좀 처치해 주시게나.",
     ["O"] = "소금 평원에 있는 경주로관리인 제린을 위해 소금바위 바실리스크 10 마리, 소금바위 수정바실리스크 10 마리 및 소금바위 큰눈바실리스크 6 마리를 처치해야 합니다.",
@@ -4658,6 +5292,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "소금 평원에 있는 포직에게 연료조절장치 설계도를 전해야 합니다.",
     ["T"] = "고블린 후원",
   },
+  [1184] = {
+    ["D"] = "Head back to Belgrom in Orgrimmar and tell him Moktar be doing his bidding well out in the Thousand Needles. Tell him also, that me studies progress, and I hope to be havin\' learned more soon. That should please him greatly.",
+    ["O"] = "Return to Belgrom Rockmaul in Orgrimmar.",
+    ["T"] = "Parts of the Swarm",
+  },
   [1185] = {
     ["D"] = "",
     ["O"] = "",
@@ -4672,6 +5311,31 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "포직은 훌륭한 기술자죠. 저도 그건 인정하지만 원체 겁이 많아서 저 엄청난 출력을 자랑하는 차에 한번 타보지도 못하고 있다니까요. 하지만 난 달라요.$B$B보통 포직이 완성한 경주용차를 제가 약간 손보곤 해요. 제어장치를 좀 느슨하게 풀고, 차체의 군더더기를 제거해서 속력을 빠르게 만들지요!$B$B가젯잔의 기즈모리움에 있는 쉬리브에게 시포리움 부스터를 주문해 두었어요. 그런데 그걸 싣고 오던 비행선이 먼지진흙 습지대에서 추락한 것 같아요. 그게 꼭 필요해요.",
     ["O"] = "소금 평원에 있는 래저릭을 위해 시포리움 부스터를 입수해야 합니다.",
     ["T"] = "래저릭의 호기",
+  },
+  [1188] = {
+    ["D"] = "But wait, what\'s this? Shreev left the safety on. That will limit the amount of power I can draw from the booster at any time. I told him I wanted it off! This is no good.$b$bYou have to take this to the Gadgetzan Gizmorium in the Tanaris Desert and have Shreev remove this.",
+    ["O"] = "Bring the Seaforium Booster to Shreev in Gadgetzan.",
+    ["T"] = "Safety First",
+  },
+  [1189] = {
+    ["D"] = "There, I did what Razzeric wanted. Just tell him to be careful when he sets this off. If he makes the slightest mistake, he won\'t be moving forward, he\'ll just be a burnt spot on the track.$b$bWould be a shame, too, if that happened. Who knows if our nineteenth driver would be any good?",
+    ["O"] = "Return the Modified Seaforium Booster to Razzeric on the Shimmering Flats.",
+    ["T"] = "Safety First",
+  },
+  [1190] = {
+    ["D"] = "The Brassbolts brothers have discovered a new building material, that\'s the only explanation that makes sense. Their cars have been operating faster than before, but their designs, and all the other data we\'ve gathered from their runs is identical.$b$bWhat we do know, is that Rizzle Brassbolts has been focused on the plans for this new discovery almost constantly.$b$bZamek can create a diversion for you, so that you can steal those plans from them.",
+    ["O"] = "Have Zamek create a diversion, then steal Rizzle\'s plans for Pozzik on the Shimmering Flats.",
+    ["T"] = "Keeping Pace",
+  },
+  [1191] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Zamek\'s Distraction",
+  },
+  [1194] = {
+    ["D"] = "Rizzle\'s schematics describe the process of the refinement of indurium ore. From his scrawls, it is apparent that indurium ore is being obtained from the dwarven excavation site of Uldaman in the Badlands.$b$bMuch of the other notes relate to the heat resistant properties.$b$bUsed as a paperweight for the plans is a hunk of what appears to be unrefined indurium ore.",
+    ["O"] = "Bring the Sample of Indurium Ore to Pozzik on the Shimmering Flats.",
+    ["T"] = "Rizzle\'s Schematics",
   },
   [1195] = {
     ["D"] = "버섯구름 봉우리에 있는 갈라크 켄타우로스들은 켄타우로스가 창조되던 시기의 유물을 보호하고 있네. 우린 그걸 찾고 싶어! 그러려면 나이트 엘프의 달샘에서 떠온 물 한 병이 필요하다네.$B$B샘물을 모으려면 잿빛 골짜기 숲 중심부에 있는 레인나무 은신처 근처의 드리아드들이 가지고 다니는 병 중 하나를 손에 넣어야 하네. 약병을 채울 수 있는 달샘은 대로 남쪽에 있는 팔파렌 강의 서쪽 둑 근처에 있네.",
@@ -4688,6 +5352,21 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Retrieve the Cloven Hoof for Rau Cliffrunner at the Freewind Post.",
     ["T"] = "신성한 불꽃",
   },
+  [1198] = {
+    ["D"] = "Many rumors circulate these days about the union of the Twilight\'s Hammer and the naga in Blackfathom Deeps on the coasts of Ashenvale.$b$bMy role here with the Argent Dawn is to collect as much information as I can, so we know when and where help is needed.$b$bIt has been weeks now since I sent a scout to check on the activity at Blackfathom Deeps. Argent Guard Thaelrid has not yet reported back.$b$bMy other scouts are preoccupied with pressing matters.$b$bSeek out and aid Thaelrid for me, $n.",
+    ["O"] = "Seek out Argent Guard Thaelrid in Blackfathom Deeps.",
+    ["T"] = "타엘리드 찾기",
+  },
+  [1199] = {
+    ["D"] = "Empowered by the ancient rites of the chaotic Old Gods the members of the Twilight\'s Hammer strive to bring about the return of their dark patrons and spread death and terror across the world.$b$bWe believe that the Twilight\'s Hammer has allied with the naga and are amassing in Blackfathom Deeps on the coast of Ashenvale.$b$bWhatever evil plan brews in the depths of the old temple must be thwarted.$b$bWage war on the Hammer and bring back proof of your deeds. Your efforts will be rewarded handsomely.",
+    ["O"] = "Bring 10 Twilight Pendants to Argent Guard Manados in Darnassus.",
+    ["T"] = "황혼의 망치단의 몰락",
+  },
+  [1200] = {
+    ["D"] = "Strength has left me. Your help is needed!$b$bLong ago this site was a great temple of Elune. But misfortune led to ruin when the corruption of an Old God seeped up from beneath the earth and tainted the sacred Moon Well.$b$bAku\'Mai, servant of the Old God, rose from the waters.$b$bThe Twilight\'s Hammer cultists have allied with the naga to occupy these grounds. The cultists, led by Kelris, sacrifice innocents to Aku\'Mai for power.$b$bSlay Kelris and bring his head to Selgorm in Darnassus, $N, please.",
+    ["O"] = "Bring the head of Twilight Lord Kelris to Dawnwatcher Selgorm in Darnassus.",
+    ["T"] = "검은심연의 음모",
+  },
   [1201] = {
     ["D"] = "호드와 얼라이언스는 불안정한 휴전 협정을 맺고 있네. 서로 외진 곳에서 접전을 벌이고 은밀한 공작을 펼치고 있는 이러한 시기에 호드의 승리를 확고히 하는 것이 바로 우리 임무라네. 지금이 바로 그 임무를 위한 절호의 기회라 할 수 있지!$B$B얼라이언스 침투요원들이 담쟁이 마을 동쪽 지역을 장악하고 있네. 녀석들은 마을을 염탐하고 우리의 움직임을 테라모어에 보고하고 있지. 이건 용납할 수 없는 행위야.$B$B놈들을 찾아 처치하도록 하게. 침투요원 따위가 활개치는 것을 그냥 보고만 있지 않을 거란 걸 놈들의 지휘관들에게 똑똑히 보여 주게!",
     ["O"] = "테라모어 침투요원 9명을 처치한 다음 담쟁이 마을에 있는 나지르 블러드파이크에게 가야 합니다.",
@@ -4702,11 +5381,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "내가 뭘 좀 잘라야 하는데... 뭘 자를 건지는 말해 줄 수 없지만... 아무튼 난 검이 좀 필요하오. 좀 특별한 검인데...$B$B어떤 이들은 그냥 검이라고 부르지만 난 흔들검이라고 부른다오.$B$B어쨌거나 날 좀 도와주겠소? 그 물고기같이 생긴 녀석들 있잖소, 멀록인지 뭔지 말이오. 멀록들 사이에서 서슬돌기라고 큰 검을 지니고 다니는 녀석이 있는데 이곳에서 북쪽에 해안 근처에 살고 있소. 녀석이 지닌 그 검이 바로 내게 필요한 검이라오!$B$B하지만 시간을 너무 지체하지 마시오. 내가 자르려는 게 영원히 그대로 있지는 않을 테니까...",
     ["O"] = "Bring Razorspine\'s Sword to \"Swamp Eye\" Jarl at Swamplight Manor.",
     ["T"] = "자를의 검",
-  },
-  [1205] = {
-    ["D"] = "이제 먼지진흙 습지대에 살고 있는 고대 악어인 붉은눈늪지악어를 처치할 때가 되었소.$B$B녀석이 늪 속에서 거대한 몸을 움직일 때마다 녀석의 늙은 뼈들이 삐걱거리며 갈리고 있소. 녀석은 젊었을 때처럼 여전히 힘이 넘치고 빠르지만, 점점 늙어가는 몸이 그 안에 있는 위대한 영혼을 괴롭히고 있소이다. 영원히 꺼지지 않을 불꽃 같은 영혼을 말이오.$B$B아직도 그는 미칠 듯한 고통 속에 살고 있소. 그대가 붉은눈늪지악어가 안식을 얻을 수 있도록 이끌어 줘야 하오. 이 고귀한 생명의 삶을 끝내고 내게 그의 이빨을 가져 오시오.",
-    ["O"] = "썬더 블러프에 있는 멜로르에게 붉은눈늪지악어 이빨을 가져가야 합니다.",
-    ["T"] = "붉은눈늪지악어",
   },
   [1206] = {
     ["D"] = "눈알 주스는 좋은 음료랍니다. 대부분의 동물에게 눈이 두 개밖에 없다는 게 참으로 애석할 뿐이지요.$B$B하지만 거미는 눈이 많지요. 엄청나게 많답니다. 그리고 암흑안개거미 눈 주스는 맛이 가장 좋답니다. 부드럽고 짭짤하지요! 터지지 않은 거미의 눈... 전 이미 맛본 적이 있습니다.$B$B암흑안개거미는 서쪽에 있는 암흑안개거미 굴에 서식하고 있습니다. 그 굴에서 거미 이름을 따왔다는 걸 눈치챘겠죠. 아니면... 반대로 거미 이름에서 굴 이름을 따왔나요?",
@@ -4728,11 +5402,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "사령관 개런 바임스에게 밀정의 보고서를 가져가야 합니다.",
     ["T"] = "사령관 바임스",
   },
-  [1221] = {
-    ["D"] = "청엽수 줄기는 세계적인 별미지! 하지만 희귀해. 아주 희귀해. 청엽수 줄기는 불모의 땅 깊숙한 곳에 있는 가시덩굴 우리에서만 찾을 수 있어.$B$B그곳에서도 청엽수 줄기가 있는 곳을 정확히 알지 못하면 하늘에서 별 따기라니까! 내가 이 땅다람쥐를 조련하는 것도 바로 그 때문이지. 후각이 워낙 뛰어나 오십보 밖에서도 청엽수 줄기 냄새를 맡을 수 있거든.$B$B쉽지는 않을 테지만 내게 청엽수 줄기를 좀 가져다주면 후하게 보답할 거야.",
-    ["O"] = "구멍 난 상자를 집어야 합니다.$B땅다람쥐 지휘봉도 챙겨야 합니다.$B땅다람쥐 설명서를 찾아서 읽어야 합니다.$B$B가시덩굴 우리에서 구멍 난 상자를 사용해 땅다람쥐를 소환하고 지휘봉을 사용해 땅다람쥐에게 청엽수 줄기를 찾아내도록 해야 합니다.$B$B톱니항에 있는 메보크 미지릭스에게 청엽수 줄기 6개와 사용한 땅다람쥐 지휘봉과 구멍 난 상자를 가져가야 합니다.",
-    ["T"] = "청엽수 줄기",
-  },
   [1222] = {
     ["D"] = "오, 감사합니다. 이제야 날 잡아먹으려 들지 않는 이를 만나다니!$B$B이 주변에 있는 짐승들을 처리하는 일을 도와줄 이가 필요한데, 마침 당신이 이 일에 안성맞춤일 것 같군요.$B$B요리사 모건 스턴이 새로운 조리법을 연구하고 있는데, 그가 진흙콩 잎을 모아오라고 날 여기로 보냈지요. 아마 그 잎이 요리에 안성맞춤이라고 생각하는 것 같아요.$B$B아무튼, 진흙콩 식물을 찾던 중... 그만 포위되어 버리고 말았지 뭡니까! 여기서 탈출하도록 날 좀 도와주겠어요? 그리고 내가 진흙콩을 찾는 동안 내 뒤를 좀 지켜 주세요!",
     ["O"] = "\"말썽꾼\" 이그나츠를 호위한 다음 테라모어에 있는 모건 스턴과 대화해야 합니다.",
@@ -4742,6 +5411,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "푸석푸석한 흙 사이로 삐져나온 오크의 손이 보입니다. 꽉 쥔 손에는 뼈를 깎아 만든 원통이 쥐어 있습니다. 그리고 원통 안에는 흙 묻은 양피지 문서가 들어 있습니다.$B$B양피지 문서는 몇 주 동안 테라모어 도시를 염탐한 오크가 작성한 보고서입니다.$B$B양피지 문서를 자세히 살펴본 결과, 담쟁이 마을에 있는 오크, 나지르 블러드파이크에게 전달해야 할 보고서임이 분명합니다.",
     ["O"] = "담쟁이 마을에 있는 나지르 블러드파이크에게 밀정의 보고서를 가져가야 합니다.",
     ["T"] = "사라진 보고서",
+  },
+  [1239] = {
+    ["D"] = "Vigorous digging reveals the head of a male orc, raggedly severed at the neck.  His lips are frozen in a snarl, and its dark eyes stare defiantly.",
+    ["O"] = "Bring the Defiant Orc Head to Nazeer Bloodpike in Brackenwall Village.",
+    ["T"] = "The Severed Head",
   },
   [1240] = {
     ["D"] = "반드시 마그의 죽음을 둘러싼 사건들에 대해 알아내야 하네! 트롤의 마법을 통해서만 가능할 거야.$B$B마그의 가면을 가시덤불 골짜기의 그롬골 주둔지에 있는 킨윌레이에게 가져가게.$B$B킨윌레이는 검은창 트롤 중 가장 강력한 의술사일세. 마그 나이트아이의 영혼과 이야기할 수 있는 자가 있다면 바로 그 친구일 거야.",
@@ -4823,6 +5497,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak with Morgan Stern in Theramore.",
     ["T"] = "모건 스턴",
   },
+  [1261] = {
+    ["D"] = "Cursed muckshell!  You can\'t kill Marg!  Ah, but I am dead.  So it must have slain me...$B$BBut my mission!  My mission!  You, $N, must complete it.$B$BWhile near Theramore, I spied a group of Alliance soldiers camped on the beach.  And one soldier wore a pendant... a pendant laden with more gems than any soldier could afford!$B$BThat night I snuck into their camp and stole the pendant, but on my return to base a muckshell crab-man killed me!$B$B$N, you must find that muckshell and recover the pendant!",
+    ["O"] = "Bring the Jeweled Pendant to Nazeer in Brackenwall Village.",
+    ["T"] = "Marg Speaks",
+  },
+  [1262] = {
+    ["D"] = "It is strange that the pendant Marg stole was in the hands of common soldiers.  Perhaps its owner was in disguise, or perhaps the soldiers themselves stole it!$B$BRegardless of which is true, this is a noble\'s pendant and we must discover its true owner if we are to unravel its mystery.$B$BTake the pendant to Zor Lonetree in Orgrimmar.  He is well schooled in Alliance politics, and will know if this pendant has a history among the nobles of Stormwind.",
+    ["O"] = "Bring the Jeweled Pendant to Zor Lonetree in Orgrimmar.",
+    ["T"] = "Report to Zor",
+  },
   [1263] = {
     ["D"] = "",
     ["O"] = "",
@@ -4843,20 +5527,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak to Jaina Proudmore in Dustwallow Swamp.",
     ["T"] = "실종된 사신",
   },
-  [1268] = {
-    ["D"] = "아직도 연기가 피어나는, 잔해만 남은 그늘 쉼터 여관에서 나와 이어져 있는 발굽 자국이 있습니다. 최소한 몇 개는 눈으로 확인할 수 있지만 다른 자국들은 습지의 부드러운 흙에 묻혀 알아보기 어렵습니다.",
-    ["O"] = "담쟁이 마을에 있는 크로그에게 그늘 쉼터 여관의 수상한 흔적에 대해 보고해야 합니다.",
-    ["T"] = "수상한 발굽 자국",
-  },
   [1269] = {
     ["D"] = "잔해 밑에서 뭔가가 반짝이는 것이 눈에 띕니다. 그 물건을 덮고 있는 잔해와 재를 털어내자 표면에 에나멜을 입힌 흰색 바탕에 황금 닻이 그려진 배지가 드러납니다. 바로 테라모어의 상징입니다.$B$B닻 아래에는 \'부관 파발 리테\'라는 이름이 새겨져 있습니다.",
     ["O"] = "담쟁이 마을에 있는 크로그에게 리테의 배지를 가져가야 합니다.",
     ["T"] = "부관 파발 리테",
-  },
-  [1270] = {
-    ["D"] = "오, 감사합니다. 이제야 날 잡아먹으려 들지 않는 이를 만나다니!$B$B이 주변에 있는 짐승들을 처리하는 일을 도와줄 이가 필요한데, 마침 당신이 이 일에 안성맞춤일 것 같군요.$B$B톱니항에서 온 메보크 미지릭스라는 고블린이 진흙콩 잎이 필요하다더군요. 물약을 만드는 데 쓴다나 뭐라나... 뭐, 솔직히 나야 뭘 위한 거든 상관없고... 그가 꽤 넉넉히 돈을 쳐주는데다가 내가 이 늪지 지리에는 밝거든요. 그래서 여기 온 거랍니다.$B$B그런데 안타깝게도 진흙콩을 찾기도 전에 온통 짐승들에 둘러싸여 버렸답니다! 내가 메보크에게 가져다줄 잎을 찾는 동안 내 뒤를 좀 지켜 주지 않겠어요?",
-    ["O"] = "\"말썽꾼\" 이그나츠를 호위한 다음 톱니항에 있는 메보크 미지릭스와 대화해야 합니다.",
-    ["T"] = "말썽꾼의 탈출",
   },
   [1272] = {
     ["D"] = "",
@@ -4883,6 +5557,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "썬더 블러프에 있는 모사른에게 검은 철제 방패를 보여줘야 합니다.",
     ["T"] = "검은 방패",
   },
+  [1277] = "_",
+  [1278] = "_",
+  [1279] = "_",
+  [1280] = "_",
   [1281] = {
     ["D"] = "",
     ["O"] = "",
@@ -4893,6 +5571,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "거점 요새의 최상층에 있는 사령관 개런 바임스와 대화해야 합니다.",
     ["T"] = "유쾌한 짐이라 불리는 사나이",
   },
+  [1283] = "_",
   [1284] = {
     ["D"] = "아직도 연기가 피어나는, 잔해만 남은 그늘 쉼터 여관에서 나와 이어져 있는 발굽 자국이 있습니다. 최소한 몇 개는 눈으로 확인할 수 있지만 다른 자국들은 습지의 부드러운 흙에 묻혀 알아보기 어렵습니다.",
     ["O"] = "테라모어에 있는 사령관 개런 바임스에게 그늘 쉼터 여관의 수상한 흔적에 대해 보고해야 합니다.",
@@ -4923,6 +5602,13 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Return to Captain Garran Vimes in Theramore.",
     ["T"] = "BETA Vimes\'s Report",
   },
+  [1293] = "_",
+  [1294] = "_",
+  [1295] = "_",
+  [1296] = "_",
+  [1297] = "_",
+  [1299] = "_",
+  [1300] = "_",
   [1301] = {
     ["D"] = "Before working here at the Blue Recluse, I was trained by one of the best chefs and innkeepers I\'d ever met. His name was James Hyal. Everything I have and everywhere I\'ve gotten in life is thanks to him.$b$bI wonder how he\'s doing. His brother Vincent and he went to work in a tavern in Menethil Harbor, but I haven\'t heard from him recently.$b$bIf you ever happen to be headed in that direction, maybe you could say hello to him for me?",
     ["O"] = "Speak with Vincent Hyal in Menethil Harbor.",
@@ -4932,11 +5618,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "My brother James went with Lady Proudmoore across the sea. Last I heard, the fighting had settled down over there, and James was setting up an inn somewhere on the continent. Wherever he is, I\'m sure he\'s doing good business. Damn fine cook he was.$b$bI haven\'t heard from him for a while now--too busy with his inn, I\'d wager--but the clerk in Theramore could probably point you to him. Look for him on the top floor of that keep near the middle of the city. What\'s it called... Foothold Citadel, that\'s it.",
     ["O"] = "Speak with Clerk Lendry at Foothold Citadel in Theramore.",
     ["T"] = "제임스 하이얄",
-  },
-  [1318] = {
-    ["D"] = "이제 당신 새 왕이다, 토르텔드린이라고 하는 기분 나쁜 엘프에게서 소중한 고르독 유물 빼앗아줘! 이전 왕은 실패했고, 토르텔드린이 아주 오래전 왕에게서 유물 훔쳐간 뒤로 다른 임금들 다 실패했다!$B$B그 유물은 권력의 고르독 건틀릿이라고 한다. 옛날 얘기에는 진짜 고르독 왕만이 갖고 올 수 있다고 한다. 옛날 얘기에는 기분 나쁜 엘프가 아직도 이 근처에 있다고 한다. 그 유물 찾으면 평생 왕이 끼고 있게 될 거다! 그래, 내가 보여준다!",
-    ["O"] = "권력의 고르독 건틀릿을 찾아 혈투의 전장에 있는 대장 크롬크러쉬에게 가져가야 합니다.$B$B크롬크러쉬의 \"옛날 얘기\"에 따르면 자칭 왕자라는 토르텔드린이라는 이름의 \"기분 나쁜\" 엘프가 고르독 왕에게서 빼앗아갔다고 합니다.",
-    ["T"] = "고르독 일 마무리",
   },
   [1319] = {
     ["D"] = "크게 도움을 주지 못해 미안하네, $N. 하지만 내가 도움이 될 만한 이를 알려 주지. 이곳에서 가장 뛰어난 대장장이 중에 카즈 투스프로켓이라는 자가 있는데, 가열로 근처에서 일하고 있네.$B$B그에게 그 방패를 가져가 보게. 그 친구라면 뭔가 알고 있을 걸세.",
@@ -4978,6 +5659,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "불모의 땅에 있는 연금술사 헬브림에게 늑대 심장 견본을 가져가야 합니다.",
     ["T"] = "헬브림에게 가져갈 견본",
   },
+  [1359] = {
+    ["D"] = "The wolf hearts you acquired possess a quality unseen in similar specimens.  There is a toxicity to them that should be deadly to the very wolves in which the hearts beat!$B$BIt\'s quite incredible, and we must study it further.  I kept a few samples of the hearts acquired.  Take them to my colleague, Apothecary Zinge.  You will find her in our headquarters in the Undercity.",
+    ["O"] = "Bring the Wolf Heart Samples to Apothecary Zinge in the Undercity.",
+    ["T"] = "Zinge\'s Delivery",
+  },
   [1360] = {
     ["D"] = "한때 나는 황야의 땅에 있는 울다만 발굴현장에서 꽤 이름난 채굴꾼으로 일했지... 그 몹쓸 트로그놈들이 나타나기 전까지는 말이오. 난리통에 겨우 목숨만 건져서 나오는 바람에 가장 아끼는 물건을 두고 왔지 뭐요! 그 물건은 놈들이 우글대는 곳에 있소! 단단히 잠긴 궤짝 안에 있어서 트로그 놈들, 아직 보물 구경도 못했을 거야...$B$B그걸 찾아와 준다면 당신에게 큰 빚을 지는 거지! 북쪽 대전당의 끝에 가면 내 이름이 적힌 궤짝이 있는데 그 속에 보물이 들어 있소.",
     ["O"] = "울다만의 북쪽 대전당에 있는 궤짝에서 크롬 스타우트암의 보물을 찾아서 아이언포지에 있는 크롬 스타우트암에게 가져가야 합니다.",
@@ -4987,11 +5673,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "명예로운 호드의 전사인 렉타르 데스게이트가 잊혀진 땅에서 임무를 수행할 대원을 모집하고 있소. 그는 불모의 땅에 있는 십자로의 서쪽 언덕 감시탑 아래에 있소.$B$B잊혀진 땅은 전쟁으로 고통받고 있는 곳이니 준비를 단단히 해 가도록 하시오.",
     ["O"] = "렉타르 데스게이트와 대화해야 합니다.",
     ["T"] = "렉타르 데스게이트",
-  },
-  [1362] = {
-    ["D"] = "콜카르 켄타우로스는 잊혀진 땅에 살고 있으며 그들의 군대는 불모의 땅 전역에 퍼져 있네. 이 때문에 우리 호드 대원들이 놈들을 상대하고 있는 것이지.$B$B하지만 잊혀진 땅에서 켄타우로스가 힘을 행사하는 이상, 놈들은 항상 위협적인 존재가 될 것이야. 이제 그 위협을 제거할 때가 되었네.$B$B잊혀진 땅의 침묵의 초소에 있는 펠굴 투커츠를 만나 보게. 그는 켄타우로스에 대한 정보를 수집하기 위해 파견되었으니 잊혀진 땅의 콜카르를 처리할 최선의 방법을 알고 있을 거야.",
-    ["O"] = "잊혀진 땅의 침묵의 초소에 있는 펠굴 투커츠와 대화해야 합니다.",
-    ["T"] = "잊혀진 땅의 콜카르",
   },
   [1363] = {
     ["D"] = "이곳 비전술 학회의 도서관 관리인으로서, 모든 마법 서적과 두루마리들을 항상 잘 관리하는 것이 내 임무요. 이 마법 문서 중 일부가 나쁜 자들 손에 들어가는 어리석은 일이 일어나지 말란 법도 없잖소?$B$B내 조수 델리스가 지난주에 저지른 끔찍한 실수가 다시 떠오르는군... 그는 도서관 일은 꽤 잘해내고 있지만 스톰윈드 성문 밖으로만 나가면 무능해져 버린다오. 당신이 델리스를 돕는 영웅이 되어 주지 않으시겠소?",
@@ -5028,15 +5709,45 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Maintain your reputation with the Magram, and bring 3 Broken Tears to Warug in the Magram Village.",
     ["T"] = "눈물의 파편",
   },
+  [1370] = {
+    ["D"] = "When we are not at war, we hunt for meat.  Meat gives us strength, and full bellies fight harder than empty ones.$B$BIt is the same with the Magram.  They store extra meat so they may fight longer between hunts.  If you raid their village to the east and take their stores of meat, then their strength will fail.",
+    ["O"] = "Bring 6 bags of Crudely Dried Meat to Uthek the Wise in the Gelkis Village.",
+    ["T"] = "Stealing Supplies",
+  },
+  [1371] = {
+    ["D"] = "Long ago, a little gnome came to Desolace.  He had horses and a cart, and the cart held strange things.  Funny things.  Things that burned different colors.  Things that moved and weren\'t alive.  I killed the little gnome, but before that... he made me laugh.$B$BI kept my favorite thing from his cart.  It was a human made of wood and it waved at me until I hit it and broke it.$B$BI want a new one.  Get me a new one!",
+    ["O"] = "Maintain your reputation with the Magram, and bring an Advanced Target Dummy to Warug in the Magram Village in Desolace.",
+    ["T"] = "Gizmo for Warug",
+  },
   [1372] = {
     ["D"] = "우리 원정 부대는 바리마트라스 님의 명령으로 아제로스 저지대를 조사하기 위해 파견되었네.$B$B정찰 중에 나는 인간 침투요원이 부랑자 소굴을 염탐하고 있는 것을 발견했지. 내가 녀석을 잡기도 전에 우리 오크 형제 중 한 명이 그를 스토나드의 슬픔의 늪에 있는 요새로 끌고 갔네.$B$B우리의 오크 동맹군을... 돕고... 싶다네. 그들은 이곳에 우리가 야영하고 있는 것을 보지 못했지만 어쨌든 그들을 돕고 싶네.$B$B이곳에 있는 파우스틴을 도와 스토나드의 우리 친구들을 위해... 그... 진실의 물약을 만들도록 하게.",
     ["O"] = "부랑자 소굴에 있는 연금술사 파우스틴과 대화해야 합니다.",
     ["T"] = "진실의 물약",
   },
+  [1373] = {
+    ["D"] = "You have more to prove, and your next task will take you far, so for now the Gelkis will fight the Magram without you.$B$BThe earth whispers many secrets to those who listen.  One secret I hear is of a red crystal.  It is called draenethyst, and it is new to our earth.  It comes from a place where mountains fly, and where demons rule.$B$BBring me a shard of draenethyst, and it will make my magic strong!  The shard is in a place called the Swamp of Sorrows, held by the lost one Ongeku.",
+    ["O"] = "Maintain your reputation with the Gelkis, and bring a Draenethyst Shard to Uthek the Wise in the Gelkis Village in Desolace.",
+    ["T"] = "Ongeku",
+  },
   [1374] = {
     ["D"] = "땅이 내게 말을 하고 있어. 마그람이 약해져 가고 있다는군. 지금이 바로 그들의 우두머리를 처치할 때야!$B$B마그람의 우두머리 칸 젠의 머리띠를 가져와!",
     ["O"] = "칸 젠을 처치하고 그 증거로 그의 머리띠를 잊혀진 땅의 겔키스 마을에 있는 현자 우텍에게 가져가야 합니다.",
     ["T"] = "Khan Jehn",
+  },
+  [1375] = {
+    ["D"] = "You help the Magram, and I like you.  Now, kill the Khan of the Gelkis!  He is Khan Shaka, and I want his head!  I want to stare at his head and laugh at him!",
+    ["O"] = "Maintain your reputation with the Magram, and bring the Head of Khan Shaka to Warug in the Magram Village in Desolace.",
+    ["T"] = "Khan Shaka",
+  },
+  [1380] = {
+    ["D"] = "$N, you helped us against the Magram.  Now, help us beat the Maraudine!  Kill the head of their clan, Khan Hratha!$B$BTo face him, blow the Maraudine War Horn.  It is atop a high bluff in the Valley of Spears.$B$BBut to blow the horn, you must gain a warhorn mouthpiece.  These are rare, carried only by trusted Maraudine centaur.$B$BAfter the horn is blown, centaur will come.  Kill them until Hratha appears.$B$BKhan Hratha holds the piece of... a key.  Bring it to me...",
+    ["O"] = "Maintain your reputation with the Gelkis, and bring the Maraudine Key Fragment to Uthek the Wise in the Gelkis Village.",
+    ["T"] = "Khan Hratha",
+  },
+  [1381] = {
+    ["D"] = "The Gelkis Khan is dead, and now the Maraudine will fall!  Kill the Maraudine Khan, Hratha!$B$BTo face him, blow the horn on the high bluff in the Valley of Spears.  But to blow the horn, you need a mouthpiece.  To get a mouthpiece, kill Maraudine centaur.  Keep killing until you find a mouthpiece.  Then blow the horn.$B$BDo this and Maraudine centaur will come to the tower.  Kill them until Khan Hratha appears.  Hratha holds the piece of a key.  Give this piece to me...",
+    ["O"] = "Maintain your Magram reputation, and bring the Maraudine Key Fragment to Warug in the Magram Village in Desolace.",
+    ["T"] = "Khan Hratha",
   },
   [1382] = {
     ["D"] = "켄타우로스 부족들이 자기들끼리 서로 싸운다는 것이 우리에겐 행운이 아닐 수 없군. 저들이 하나의 군대로 뭉치면 아무도 막을 수 없을 테니 말이오. 그렇소, 정말 운이 좋은 거지. 그러니 반드시 이 사실을 잘 이용해야 하오.$B$B켄타우로스 부족의 하나인 겔키스 일족이 마그람 일족과 격렬한 전쟁을 치르고 있소. 우리가 마그람을 공격한다면 겔키스와 동맹을 맺을 수 있게 될 거요.$B$B잊혀진 땅 남서쪽의 겔키스 야영지 외곽에 있는 현자 우텍을 만나 보시오. 아마 그녀를 통해 겔키스와 동맹을 맺을 수 있을 거요.",
@@ -5048,10 +5759,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Apothecary Faustin at Beggar\'s Haunt needs 5 Shadow Panther Hearts, Mire Lord Fungus and some Green Whelp Blood.",
     ["T"] = "진실의 물약",
   },
+  [1384] = {
+    ["D"] = "The Kolkar centaurs think their magic is strong.  They do not know magic!  They would not know magic if it bit them!$B$BYou will show them their magic is weak.  Go to the Kolkar  to the northeast and kill them.  Take their charms.  Bring me the charms and I will throw them in the fire and laugh!",
+    ["O"] = "Maintain your reputation with the Gelkis, and bring 10 Crude Charms to Uthek the Wise in the Gelkis Village in Desolace.",
+    ["T"] = "Raid on the Kolkar",
+  },
   [1385] = {
     ["D"] = "잊혀진 땅은 전쟁에 휩싸여 있소. 켄타우로스들이 서로 전쟁을 벌이고 있고 그들 중 승리하는 쪽이 세를 확장해 우리 본거지를 위협하게 될 거요. 그런 일이 일어나도록 내버려둬서는 안 되오.$B$B우리는 켄타우로스를 격퇴할 방법을 찾아야 하오. 그리고 그러기 위해서는... 놈들 부족 중 하나와 동맹을 맺어야 하오. 마그람 켄타우로스들이 겔키스와 전쟁을 벌이고 있소. 당신이 겔키스에 대항해 싸운다면 마그람이 동맹을 고려할지도 모르오.$B$B마그람의 호감을 산 다음 잊혀진 땅 남동쪽의 마그람 마을에 있는 와루그를 만나 보시오.",
     ["O"] = "마그람에게 우호적인 평판을 얻은 다음 와루그와 대화해야 합니다.",
     ["T"] = "야비한 정책",
+  },
+  [1386] = {
+    ["D"] = "The Kolkar think they are strong, but we laugh at them!  We laugh and we kill them!  You kill them too.  Show me you can kill Kolkar like we do. Head north and slay them all!",
+    ["O"] = "Maintain your reputation with the Magram. Kill 12 Kolkar Centaurs, 12 Kolkar Scouts and 6 Kolkar Maulers, then return to Warug in the Magram Village in Desolace.",
+    ["T"] = "Assault on the Kolkar",
   },
   [1387] = {
     ["D"] = "켄타우로스는 여러 부족으로 이루어져 있소. 각 부족마다 우두머리가 있고 자기들만의 방식이 있지만, 그들 모두 잔인하다는 공통점이 한 가지 있지.$B$B우리가 평화를 되찾으려면 반드시 켄타우로스들을 제거해야만 하오. 그리고 바로 이 일을 당신에게 맡기려고 하오.$B$B잊혀진 땅을 두루 돌아다니며 켄타우로스 녀석들을 처치하고 녀석들의 귀걸이를 가져오시오. 많으면 많을수록 좋소.$B$B얼라이언스를 위해 이 일을 해주시기 바라오. 그러면 전쟁의 끝에 한 걸음 더 가까워지게 될 거요.",
@@ -5083,6 +5804,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "슬픔의 늪에 있는 피난처의 우두머리에게 노보루의 곤봉을 가져가야 합니다.",
     ["T"] = "곤봉잡이 노보루",
   },
+  [1394] = {
+    ["D"] = "You have done well, $N. You have passed my test, and the tests before mine. Return to Dorn in Thousand Needles. He will sense the change within you, and see that your mind, body and spirit are strong enough that you should be rewarded for your efforts.$B$BStay true to the balance you\'ve shown throughout these trials, $N. Dorn will test you again in the future if you do.",
+    ["O"] = "Speak to Dorn Plainstalker in Thousand Needles.",
+    ["T"] = "Final Passage",
+  },
   [1395] = {
     ["D"] = "마법석이 들어있는 이 상자를 저주받은 땅에 있는 네더가드 요새로 가져가야 하네. 마법석은 오랫동안 그 힘을 유지하지 못할 테니 다음 짐마차가 올 때까지 기다릴 수는 없네.$B$B자네가 마법석을 빨리 가져가야해. 이걸 네더가드 요새에 있는 병참장교 룬겔츠에게 전해주게.$B$B요새에 가려면 동쪽의 저승바람 고개를 통과한 후 또 동쪽으로 슬픔의 늪에서 남쪽에 있는 저주받은 땅으로 들어서야 하네.$B$B자네가 가는 길은 위험이 도사리고 있으니 조심하게나. 그렇지 않으면 실패할 거야.",
     ["O"] = "마법석의 힘이 다하기 전에 병참장교 룬겔츠에게 마법석 상자를 가져가야 합니다.",
@@ -5113,20 +5839,45 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Find the Caravan Chest in the Fallow Sanctuary, obtain the Wizards\' Reagents and bring to Watcher Biggs.",
     ["T"] = "The Lost Caravan",
   },
+  [1422] = {
+    ["D"] = "While I begin work on your weapon, why don\'t you talk to Katar? He mentioned needing help with patrols along the beach, and I\'d rather see you keep your wits and weapons prepared instead of getting drunk with some of the other louses I share this camp with.",
+    ["O"] = "Speak to Katar in the Swamp of Sorrows.",
+    ["T"] = "Threat From the Sea",
+  },
+  [1424] = {
+    ["D"] = "The Warchief sent us to investigate strange happenings at The Temple of Atal\'Hakkar.$b$bThe Atal\'ai trolls are a tribe of dark casters, known for practicing forbidden magic. You can imagine how astonished we were when we arrived here to discover the temple had been sunk.$b$bThe green dragons now guard the site, claiming to be protectors of Azeroth.$b$bWe need to discover what happened. Explore around the Pool of Tears and gather Atal\'ai artifacts. From those I can begin to piece together this puzzle.",
+    ["O"] = "Fel\'zerul in Stonard wants you to gather 10 Atal\'ai Artifacts.",
+    ["T"] = "눈물의 연못",
+  },
   [1425] = {
     ["D"] = "While I fix this wagon, $N, I have one last task for you.$B$BI have packed the most vital supplies saved from the ogre attacks.  Take them to Nethergarde Keep.  The keep is nestled in the northern hills of the Blasted Lands, keeping watch over the Dark Portal.$B$BTo reach Nethergard, follow the road east.  When it branches head south into the Blasted Lands, then turn left at the next fork.  Follow the road, $N, and be wary.",
     ["O"] = "Bring the Shipment to Nethergarde to Quartermaster Lungertz in Nethergarde Keep.",
     ["T"] = "Deliver the Shipment",
   },
-  [1431] = {
-    ["D"] = "목소리를 낮추시오. 우리 주민과 관련된 중요한 얘기를 당신과 나누고 싶소. 아직 분명한 계획은 아니지만...$B$B우리는 긍지를 지닌 종족이오. 그런데 인간과의 전쟁이 이제 위대한 스랄 님의 인내심까지 시험에 들게 하고 있소. 당신도 알다시피, 우리 대족장님께서는 현명하고 신중한 분이시오. 항상 자신의 백성들을 먼저 생각하고 계시오. 그분은 외교의 직무도 맡으셨기에 오랜 기간 인간을 대하면서 결국 그들의 방식을 알게 되셨지.$B$B내 이야기에 관심이 있다면 이 도시의 서쪽 출구 근처에 있는 켈드란을 만나 보시오. 그곳에 그의 오두막집이 있소.",
-    ["O"] = "오그리마에 있는 켈드란과 대화해야 합니다.",
-    ["T"] = "동맹 관계",
+  [1426] = {
+    ["D"] = "I have no love for the sea, nor any creature I\'ve seen come from its depths. It is a powerful but blind mistress; callous and brutal. It would bring me great pleasure to slay the fish men by the hundreds if it were within my power. But I garner some pleasure from watching their deaths at the hands of any who do the Horde\'s will.$B$BWhich brings us to you, $c. How many can you slay? Would you test yourself against their most powerful kind?",
+    ["O"] = "Kill 10 Marsh Murlocs, 10 Marsh Inkspewer, and 10 Marsh Flesheater, then return to Katar in the Swamp of Sorrows.",
+    ["T"] = "Threat From the Sea",
   },
-  [1432] = {
-    ["D"] = "얼라이언스가 칼림도어로 세력을 점점 확장함에 따라 호드가 맺은 불타는 군단과의 조약이 불행한 결과를 낳을 수도 있소. 대족장님께서는 그런 일이 일어나도록 용납하지 않으실 것이오. 그리고 나는 그분의 은혜로 지휘관을 맡아 그들을 제거하는 일을 하게 되었지.$B$B나는 대원들을 잊혀진 땅의 거대한 코도 무덤에서 북쪽으로 가면 있는 침묵의 초소에 배치해 두었소. 돌발톱 산맥의 잿더미 계곡에서 남쪽으로 가면 그곳에 다다르게 될 거요. 도착하면 타카타 스틸블레이드를 찾도록 하시오.",
-    ["O"] = "잊혀진 땅에 있는 타카타 스틸블레이드와 대화해야 합니다.",
-    ["T"] = "동맹 관계",
+  [1427] = {
+    ["D"] = "Before you take rest, speak to Tok\'Kar again. While you were gone I believe he finished a few weapons. For your help here, he would offer one of them to you. You would do well to test its strength against the fish men when you are ready... but only to please me further.",
+    ["O"] = "Speak with Tok\'Kar in the Swamp of Sorrows.",
+    ["T"] = "Threat From the Sea",
+  },
+  [1428] = {
+    ["D"] = "It pleases me to see your hatred for the fish men grows with mine.$B$BFind more of their kind along the beach, and when you\'ve had your fill of combat, return to me. We shall speak then of a reward for your diligence.",
+    ["O"] = "Kill 10 Marsh Inkspewers, 10 Marsh Flesheaters, and 10 Marsh Oracles, then return to Katar in the Swamp of Sorrows.",
+    ["T"] = "Continued Threat",
+  },
+  [1429] = {
+    ["D"] = "While you were braving the dangers of the Pool of Tears, one of my scouts returned with a scroll written in blood on dried flesh. It seems to be a judicial sentence against a priest of the Atal\'ai tribe.$b$bThis priest was sentenced to a fate worse than death amongst the Atal\'ai.$b$bHe was exiled to live far north in the Hinterlands, with the Witherbark trolls.$b$bI will bundle these artifacts. You are to seek out the exile and discover their true use. Return to me once your journey is complete.",
+    ["O"] = "Bring the Bundle of Atal\'ai Artifacts to the Atal\'ai Exile in the Hinterlands.",
+    ["T"] = "The Atal\'ai Exile",
+  },
+  [1430] = {
+    ["D"] = "There\'s a high demand for the succulent taste of crawler meat among my customers; especially the meat from the monstrous crawlers.$B$BIf you plan on heading to the coast, then I could easily make it worth your while to bring me back some of their legs to have transported back to Orgrimmar.$B$BThe coast is to the east from here, and you should have no problem finding the creatures scurrying along the beaches and under the sea.",
+    ["O"] = "Bring 10 Monstrous Crawler Legs to Dar in the Swamp of Sorrows.",
+    ["T"] = "싱싱한 고기",
   },
   [1433] = {
     ["D"] = "The Burning Blade have many agendas, but know that they are evil to their core, their spirits corrupted, and their destruction is the only way to thwart their objectives.$B$BKeldran sent Maurin with me because of his knowledge of the Blade and their warlock ways.$B$BHe has control of our plots against the Blade while I deal with the other demonic threats here in Desolace.$B$BSpeak to him, and he will guide you in his designs.",
@@ -5168,6 +5919,22 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Escort Dalinda Malem from Thunder Axe Fortress and then return to Vahlarriel Demonslayer in Desolace.",
     ["T"] = "Return to Vahlarriel",
   },
+  [1441] = "_",
+  [1442] = {
+    ["D"] = "Greetings, $N. What can I do for one who follows a holy path?$B$BAh, yes, Stilwell, the blacksmith... from long ago. I remember him well, though, I have not heard his name in some time.$B$BHe never struck me as an impudent man, so I can only assume his desire for a Kor gem is noble.$B$BIf you truly wish for one of the gems, then you must head to the northwest of Ashenvale. You will find Blackfathom Deeps there within some ancient ruins. The naga who still use the gems are down below. Do not go alone, $c.",
+    ["O"] = "Bring a Kor Gem to Thundris Windweaver in Darkshore.",
+    ["T"] = "Seeking the Kor Gem",
+  },
+  [1444] = {
+    ["D"] = "Jammal\'an the Prophet sentenced me to exile from The Temple of Atal\'Hakkar. I once felt the high priest was a worthy leader.$b$bHis unyielding faith in his prophecy will bring about the destruction of the Atal\'ai. If it hasn\'t already.$b$bWhen I expressed my concerns, I was labeled an infidel and ousted from the temple.$b$bThose artifacts you brought to me are harmless. But if Jammal\'an has found the proper fetish enchantment for the summoning ritual, the world lies in great peril....",
+    ["O"] = "Return to Fel\'Zerul in Stonard.",
+    ["T"] = "Return to Fel\'Zerul",
+  },
+  [1445] = {
+    ["D"] = "So he spoke of Jammal\'an\'s prophecy?$b$bThe Atal\'ai spiritual leader believes once Hakkar returns to Azeroth from the Nether, the god will grant the Atal\'ai tribe immortality.$b$bFoolish trickery to bring about a premature doomsday if you ask me.$b$bBut you say the exile spoke of enchanted fetishes? This concerns me greatly. If these are in fact the key to the Atal\'ai ritual which caused this mess, we must understand their intrinsic powers.$b$bVenture into the Temple, and seize the fetishes!",
+    ["O"] = "Collect 20 Fetishes of Hakkar and bring them to Fel\'Zerul in Stonard.",
+    ["T"] = "아탈학카르 신전",
+  },
   [1446] = {
     ["D"] = "우리 마른나무껍질 부족은 자기 집에 이방인이 들락거리는 걸 싫어한다.$B$B나? 난 이제 고향이 없어. 난 우리 부족인 슬픔의 늪의 위대한 아탈라이 부족으로부터 추방당했다.$B$B우리 부족의 영적 지도자 잠말란이 자칭 예언이란 걸 받았다고 주장했는데, 학카르를 소환해 아탈라이 부족을 불사의 존재로 만들 수 있다고 하더군.$B$B하지만 나는 부족 주민들에게 경고했다. 혹시 그 예언이 조작된 것이라면...$B$B내가 왜 추방당해야 했지? 난 복수를 하고 싶다. 잠말란을 처치하고 그의 머리카락을 가져와. 그렇게만 하면 우리 부족은 그의 압제에서 해방될 거야.",
     ["O"] = "동부 내륙지에 있는 추방된 아탈라이트롤이 잠말란의 머리카락을 가져다 달라고 했습니다.",
@@ -5182,6 +5949,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "나도 자네처럼 젊고 혈기 왕성했던 시절이 있었지, $C 친구. 하지만 지금은 나이가 들어 예전처럼 자유롭게 세상을 탐험할 수는 없다네. 아, 정말 많은 것들을 봤었는데 말이야!$B$B그런데 아직도 해결하지 못한 일이 하나 있네. 탐험가 연맹에서는 마지막 임무로 내게 아탈학카르 신전을 찾을 것을 지시했었지. 소문에 의하면 그 신전은 슬픔의 늪에 있다고 전해지고 있네.$B$B내 몸이 허약해졌기에 그리핀을 타고 하늘을 날며 신전을 찾아 다녀봤지만 결국 찾지 못했네.$B$B이 늙은 드워프를 좀 도와주겠나? 직접 걸어다니면서 찾아보면 찾을 수 있을지도 모르니까 말이야.",
     ["O"] = "스톰윈드에 있는 브로한 캐스크벨리가 아탈학카르 신전을 찾아 달라고 했습니다.",
     ["T"] = "신전을 찾아서",
+  },
+  [1449] = {
+    ["D"] = "As I mentioned earlier, I attempted to scout the temple on my own from the air. Well, I wasn\'t exactly alone.$b$bI traveled to the renowned gryphon aviary at Aerie Peak in The Hinterlands. There I enlisted the aid of one of their finest pilots. The pilot fell off his mount, down into the swamp...$b$bIn my old age the poor fellow\'s name eludes me. The master of the aviary would remember, no doubt.$b$bJourney there and seek out Falstad Wildhammer.$b$bWe need to find out what happened to that pilot.",
+    ["O"] = "Speak with High Thane Falstad Wildhammer at Aerie Peak in the Hinterlands.",
+    ["T"] = "To The Hinterlands",
   },
   [1450] = {
     ["D"] = "So you\'re a glorified errand $g boy:girl; for some old Explorers\' League geezer, eh?$b$bWell you listen to me, $c. I don\'t know who your old buddy was flying around with down in Azeroth. Do I look like Gryphon Master Talonaxe to you? Do I?$b$bIf you\'re so interested in the flight assignments why don\'t you ask the gryphon master? If I catch you idling around here for much longer, I\'m going to put you to some real work.$b$bNow get a move on.",
@@ -5233,16 +6005,8 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 7 vials of Scorpashi Venom and 3 Aged Kodo Hides to Kreldig Ungor in Desolace.",
     ["T"] = "회수전문회사를 위한 재료",
   },
-  [1462] = {
-    ["D"] = "",
-    ["O"] = "Speak to Seer Ravenfeather for another Earth Sapta.",
-    ["T"] = "대지의 정기",
-  },
-  [1463] = {
-    ["D"] = "",
-    ["O"] = "Speak to Canaga Earthcaller for another Earth Sapta.",
-    ["T"] = "대지의 정기",
-  },
+  [1460] = "_",
+  [1461] = "_",
   [1464] = {
     ["D"] = "",
     ["O"] = "Speak to Telf Joolam for another Fire Sapta.",
@@ -5268,10 +6032,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Use the Human Orphan Whistle to talk with the child you will be looking after during Children\'s Week.",
     ["T"] = "어린이 주간",
   },
-  [1470] = {
-    ["D"] = "어서 오세요. 흑마법사치고는 아직 미숙해 보이는군요. 아직 흑마법의 힘을 자기 것으로 만들지 못했으니 당연한 겁니다. 배우고자 하는 열의가 대단하군요. 이제 곧 흑마법의 힘을 제대로 배우게 될 겁니다.$B$B무지한 자는 힘을 가질 수 없으며 지식이야말로 우리의 가장 큰 힘입니다. 지식을 사용해 혼란스러운 마법과 허공에 떠도는 존재들을 제어하고 우리 의지대로 조종할 수 있게 되는 것이지요.$B$B자, 그럼 이제 종복을 자신의 의지대로 조종하는 방법을 보여 주겠어요. 하지만 먼저 버려진 대장간 근처에서 덜그럭거리는 해골 세 개를 내게 가져와야 합니다.",
-    ["O"] = "벤야 말선드에게 덜그럭거리는 해골 3개를 가져가야 합니다.",
-    ["T"] = "저 너머의 세계",
+  [1469] = {
+    ["D"] = "Before the flight, I drank me a whole keg of stout. Hiccup!$b$bAnd what a flight it was. Zipping around with Brohann following me. Didn\'t see no temple though. Hiccup!$b$bWell, didn\'t see no temple till I got a little too tipsy and fell off my mount. I plunged right into the water and was sucked down. Found myself surrounded by a bunch of creepy trolls. Sure swam out of there fast! Even made off with this troll souvenir. Here, take it to Brohann and let him know his temple is down there, indeed. Hiccup!",
+    ["O"] = "Bring the Atal\'ai Tablet Fragment to Brohann Caskbelly in Stormwind.",
+    ["T"] = "Rhapsody\'s Tale",
   },
   [1471] = {
     ["D"] = "Surely you have seen the circle of summoning below us? Only there will you be able to draw forth an unbound voidwalker.$B$BUsing these runes, you will be able to draw it forth, and then you must dominate it through strength of arms and magic.$B$BWhen it is subdued, it will be indentured to you. Come to me then, and I will elucidate the spell of summoning, so that it may serve you to whatever end you wish.",
@@ -5283,6 +6047,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak with Godrick Farsan in the Temple of the Damned.",
     ["T"] = "영혼의 포식자",
   },
+  [1473] = {
+    ["D"] = "It seems the consensus that you are ready to learn to summon a voidwalker.$b$bA being created of the chaos that lies beyond, if you summon one but cannot control it, you will be torn asunder.$b$bThe first voidwalker was summoned by Egalin, and in his grimoire is the process explained.$b$bUnfortunately, it was stolen from us by an agent of the Scarlet Crusade who has it secreted away in his base at a tower to the west. Bring it to me, and I will impart the knowledge to you.",
+    ["O"] = "Recover Egalin\'s Grimoire and bring it to Carendin Halgar in the Temple of the Damned.",
+    ["T"] = "Creature of the Void",
+  },
   [1474] = {
     ["D"] = "Using these hearts, cast a spell at the summoning circle to open a doorway for the succubus to come through. Your powers are greater now, and you will need all of them to defeat the succubus. $b$bBeware its charms, $n, many a strong mind has been bound to its will. When overcome, the succubus will be returned to the void, and I will teach you the spell to summon it forth at your command.",
     ["O"] = "Using the Pure Hearts, summon and subdue a succubus, then return the Pure Hearts to Carendin Halgar in the Magic Quarter of the Undercity.",
@@ -5293,10 +6062,25 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "스톰윈드에 있는 브로한 캐스크벨리에게 아탈라이 서판 10개를 가져가야 합니다.",
     ["T"] = "아탈학카르 신전으로",
   },
+  [1476] = {
+    ["D"] = "Men of honor and goodness? Does such a man exist?$b$bIt took much research, but through bits of overheard stories, I managed to find two men that should do.$b$bThe first is Dalin Forgewright, who has dedicated himself to the care of the Lordaeron refugees, whom are refused by their kin at the Greymane Wall.$b$bThe other is Comar Villard, a man who remains faithful to his lost love, wandering the Wetlands for a sign of his wife.$b$bDeliver their hearts to Carendin. But first, let me show you your quarry.",
+    ["O"] = "Bring the hearts of Dalin Forgewright and Comar Villard to Carendin Halgar in the Temple of the Damned.",
+    ["T"] = "Hearts of the Pure",
+  },
   [1477] = {
     ["D"] = "내 밑의 마법사들을 저주받은 땅으로 보냈네. 거기서 네더가드 요새를 탐색하여 어둠의 문에 대한 비밀을 밝히는 데 반드시 필요한 정보를 찾으라고 지시했지. 그들에게 보급품을 지속적으로 보내줘야 하는데... 요즘은 네더가드 요새로 가는 이를 구하기가 하늘의 별 따기란 말이지.$B$B흠, 자네라면 네더가드 요새로 보급품을 전달해줄 수도 있을 듯하네만. 어둠골의 순찰대장 소리갈을 찾아서 보고하게. 아마 그가 직접 자네에게 지시를 내릴 거야. $N, 그곳에는 적들이 득실거리고 있으니 정신 바짝 차려야 하네.",
     ["O"] = "Speak with Watchmaster Sorigal.",
     ["T"] = "중요한 보급품",
+  },
+  [1478] = {
+    ["D"] = "Ah, $n! I just received word from Carendin Halgar that he would like to see you for further training.$b$bYou should be proud of yourself, $n. It\'s not every day that Master Halgar personally sees fit to instruct a young warlock.$b$bYou\'ll be able to find him in the Magic Quarter of the Undercity, near the Temple of the Damned.",
+    ["O"] = "Speak with Carendin Halgar in the Undercity.",
+    ["T"] = "Halgar\'s Summons",
+  },
+  [1479] = {
+    ["D"] = "I\'ve heard stories about how the night elves have their bank in a tree - one that looks like a bear!  That\'s so cool!  Night elves are neat how they like nature and stuff, but bears are just totally awesome!$B$BWould you take me to see the bear-tree in Darnassus, please?  There\'s a boat that will take us close to there, and it shouldn\'t take very long.  Please, please, please!",
+    ["O"] = "Take the orphan to the bank of Darnassus.  The bank itself is hollowed out of a tree known as the Bough of the Eternals.",
+    ["T"] = "The Bough of the Eternals",
   },
   [1480] = {
     ["D"] = "The torn skin smells rotten, and is remarkably pliable for something that appears to be dry and fragile.$B$BAs you unroll it, you can clearly see the red markings of some kind of language on one side. At the bottom of the skin is a very clear symbol that you guess is a signature of some kind.$B$BPerhaps it is something Maurin could tell you more about?",
@@ -5306,6 +6090,11 @@ pfDB["quests"]["koKR-tbc"] = {
   [1481] = {
     ["D"] = "I believe I can find this demon lord given the proper reagents.$B$BIf he is indeed as powerful as I suspect, I will need items gathered from deadly creatures. But you act in the Warchief\'s name, so I am sure you will accept my task.$B$BFirst, I will have to break any wards he has against scrying. For this, I will need the scalp from a satyr--but not any satyr. The scalp must come from a Hatefury shadowstalker.$B$BSearch for them among the ancient ruins in the northeast of Desolace.",
     ["O"] = "Bring a Shadowstalker Scalp to Maurin Bonesplitter in Desolace.",
+    ["T"] = "The Corrupter",
+  },
+  [1482] = {
+    ["D"] = "An oracle crystal would do nicely. They are crafted by the naga for their oracles to use.$B$BNorthwest of here, along the coast, is a vast coral reef that the naga have taken as their home when this close to the shore. You can find their oracles there. The Slitherblade are deadly and will not react kindly to your intrusions, so be careful and make haste.$B$BWhen you return, we shall see about finding this demon lord Azrethoc.",
+    ["O"] = "Bring an Oracle Crystal to Maurin Bonesplitter in Desolace.",
     ["T"] = "The Corrupter",
   },
   [1483] = {
@@ -5333,6 +6122,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "통곡의 동굴에 있는 에브루가 돌연변이 약탈자랩터 7마리, 돌연변이 독사 7마리, 돌연변이 늪괴물 7마리, 돌연변이 송곳니천둥매 7마리를 처치해 달라고 했습니다.",
     ["T"] = "돌연변이 짐승 섬멸",
   },
+  [1488] = {
+    ["D"] = "Although I have no knowledge of this Lord Azrethoc, I agree with Maurin, he must be stopped; especially if he is attempting to gain influence over the Burning Blade to further his goals.$B$BYou have already shown you wish to aid the Warchief, and I would trust you to gather a party to slay the demon lord and his warlock servant.$B$BWhen you are ready, head directly south,  and return to me when the threat has been ended.",
+    ["O"] = "Slay Lord Azrethoc and Jugkar Grim\'rod and return to Takata Steelblade in Desolace.",
+    ["T"] = "The Corrupter",
+  },
   [1489] = {
     ["D"] = "자네가 가져온 등껍질에 한 번도 본 적 없는 오염된 자국이 있었네. 분명 오아시스의 물이 원인일 거야. 그 물이 이 땅에 혼란을 일으키고 있다는 것을 느낄 수 있어. 마치 땅이 깨어날 수 없는 악몽을 꾸고 있는듯해.$B$B그 오염의 근원은 틀림없이 통곡의 동굴일 걸세. 하지만 그곳으로 가기 전에 하뮬 룬토템이라는 드루이드 원로를 만나 보게나. 불모의 땅에서 일어나는 일들에 대한 소식을 전해 들어 알고 있을 거야. 지혜로운 자이니 조언을 구할 수 있을 걸세.$B$B썬더 블러프에 있는 장로의 봉우리로 가면 만날 수 있을 걸세.",
     ["O"] = "하뮬 룬토템과 대화해야 합니다.",
@@ -5353,6 +6147,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring the Secure Crate to Wharfmaster Dizzywig in Ratchet.",
     ["T"] = "부두주임 디지위그",
   },
+  [1498] = {
+    ["D"] = "As a warrior, one of our most crucial tasks is... protection.  We are the shield of the Horde, and we keep our weaker brethren safe.  If you are to join in our ranks, then you must prove your mettle to me.$B$BGo to Thunder Ridge in Durotar, where live the lightning hides and thunder lizards.  Hunt the beasts!  Show me you are tougher than they!  Brave their assaults and bring me a stack of their singed scales as proof.$B$BDo this, and then I will teach you.",
+    ["O"] = "Bring 5 Singed Scales to Uzzek at Far Watch Post in the Barrens.",
+    ["T"] = "Path of Defense",
+  },
   [1499] = {
     ["D"] = "Zureetha has been sending novices like yourself to help cull the numbers of the creatures in the cave near where you fought the vile familiars.$b$bI think it would be good for you to gain experience by assisting her. Be sure to tell her that you assisted with the imp problem, she\'ll probably have a reward for you.",
     ["O"] = "Speak with Zureetha Fargaze.",
@@ -5363,10 +6162,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "깨어나는 나랄렉스",
   },
+  [1501] = {
+    ["D"] = "So few warlocks remain... We risk much, but the risks are warranted. You must quickly reach maturity in your ability if you are to be of use to the Horde and to the Warchief.$b$bIt is time that you learned a new summoning spell.$b$bFirst, you must recover the Tablet of Verga, which was stolen by warlocks of the Burning Blade and is now kept at their lair in Skull Rock to the east of the city. With the tablet, I will show you the runes necessary to summoning a voidwalker.",
+    ["O"] = "Retrieve the Tablet of Verga for Gan\'rul Bloodeye in Orgrimmar.",
+    ["T"] = "Creature of the Void",
+  },
   [1502] = {
     ["D"] = "전사에게는 훌륭한 무기가 필수적이지. 툰그림 파이어게이즈라는 오크가 있는데 이 시대에 보기 드문 장인이지. 그는 십자로 동쪽 언덕 꼭대기에서 은둔 생활을 하고 있어.$B$B쓸만한 무기를 찾고 있다면 툰그림을 만나 보게. 서쪽의 십자로로 간 다음 동쪽 언덕으로 곧장 가게. 언덕 위에 그의 야영지가 있을 거야.",
     ["O"] = "불모의 땅에 있는 툰그림 파이어게이즈와 대화해야 합니다.",
     ["T"] = "툰그림 파이어게이즈",
+  },
+  [1503] = {
+    ["D"] = "I will give you a weapon, $N, but first you must aid me.  The Razormanes to the northwest came into my camp a few nights past.  They would not meet me in combat, but they know my eyes are bad--a few distracted me with snorts while others stole from me!  The cowards!$B$BThey took an iron chest, and within it were some forged steel bars.  If you can recover them then I will give you the weapon you seek.$B$BSearch for the iron box within the quilboar camps, and return with the forged steel bars.",
+    ["O"] = "Bring the Forged Steel Bars to Thun\'grim Firegaze in the Barrens.",
+    ["T"] = "Forged Steel",
   },
   [1504] = {
     ["D"] = "Now, observe the Tablet of Verga, for it contains the glyphs you will need for the summoning. Take them to the circle in Neeru Fireblade\'s tent on the other side of the cavern. There you will be able to call for the voidwalker.$b$bYou must defeat it using whatever physical and magical means you have at your disposal. When this is completed, return to me with the glyphs of summoning and I will demonstrate how you may bind the creature to your will.",
@@ -5378,10 +6187,25 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "천리길 경비초소에 있는 우제크과 대화해야 합니다.",
     ["T"] = "노련한 우제크",
   },
+  [1506] = {
+    ["D"] = "You there. $n, right?$b$bI hope your schedule isn\'t busy, because Gan\'rul wants to see you right away. You\'ll find him with the senior warlocks in the Cleft of Shadow.$b$bBased on my past dealings with Gan\'rul, your summons is either a very good thing or a very bad thing.",
+    ["O"] = "Speak with Gan\'rul Bloodeye in Orgrimmar.",
+    ["T"] = "Gan\'rul\'s Summons",
+  },
   [1507] = {
     ["D"] = "The time has come for you to learn more of the summoning magics. You will learn to summon a succubus, a creature of incredible mental powers. It can lull those of weak minds into its servitude--but have no fear! I feel certain that you will be equal to the challenge.$b$bA succubus can only be summoned when baited with an item that represents great devotion and love. I leave it to you to find such an object.$b$bA suggestion? Speak with Cazul... There seems to be little the ancient warlock does not know.",
     ["O"] = "Speak with Cazul in the Cleft of Shadow.",
     ["T"] = "영혼의 포식자",
+  },
+  [1508] = {
+    ["D"] = "Hmm... But, of course, that is not why you have come to speak with me.$b$bIf Gan\'rul has sent you to me, it must be that you are to summon a succubus, and need an object to use for enticement.$b$bHmm... If you trust a blind man to lead you, $n, then listen. In the bluffs of Orgrimmar, west of the wind rider tower, lives Zankaja. She waits for the return of her mate.$b$bGo to her.",
+    ["O"] = "Speak with Zankaja in Orgrimmar.",
+    ["T"] = "Blind Cazul",
+  },
+  [1509] = {
+    ["D"] = "My mate, Dogran, was recently sent to the Crossroads for duty. It was a promotion, and he was very proud.$b$bI was sad, of course, but I didn\'t let him know that. And worried, too. The Barrens is a more dangerous place than Orgrimmar, and I feared the worst.$b$bNow it\'s been a week after he should have returned, and I have received no word from him...$b$bPerhaps you could go to the Crossroads and see if they have any news? He worked with Gazrog, who should still be stationed there.",
+    ["O"] = "Speak with Gazrog at the Crossroads.",
+    ["T"] = "News of Dogran",
   },
   [1510] = {
     ["D"] = "He was stationed at Camp Taurajo, where we\'ve been trying to weed out the quilboar. He led a few grunts to one of their camps, where he was hurt bad. The others made it back and tried to rescue him. He was in bad shape, his wounds festered, so they were afraid to move him without patching him up first.$b$bThey sent a message here, requesting a healing draught from the trolls at the Malaka\'jin at the base of the Stonetalon Mountains. We sent someone to get it, but they haven\'t returned yet.",
@@ -5393,10 +6217,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring Ken\'zigla\'s Draught to Grunt Logmar at Camp Taurajo.",
     ["T"] = "켄지글라의 술",
   },
+  [1512] = {
+    ["D"] = "Zankaja is young and beautiful. To be chained to an invalid... I will not allow her to suffer that injustice.$b$bLeave me, $n. And thank you. I may end my life in glorious battle, instead of a lifeless husk.$b$bAnd please, I would ask you not to tell my mate of this... I do not want guilt on her conscience.",
+    ["O"] = "Bring the Dirt-caked Pendant to Gan\'rul Bloodeye in Orgrimmar.",
+    ["T"] = "Love\'s Gift",
+  },
   [1513] = {
     ["D"] = "Take this to the summoning circle in Neeru\'s tent, $n. Summon forth a foul succubus, then show it your mastery. I believe in the strength of your magic. As always, though, be wary, for pride and overconfidence has overcome many a promising warlock.$b$bWhen you have defeated it, return the pendant to me so that I might deliver the news to Zankaja.",
     ["O"] = "Using Dogran\'s Pendant, summon and subdue a succubus, then return Dogran\'s Pendant to Gan\'rul Bloodeye in Orgrimmar.",
     ["T"] = "균열 봉합",
+  },
+  [1515] = {
+    ["D"] = "You\'ve made it this far, so if you want to see this through to the end, I won\'t stop you. I can\'t spare you any additional manpower though, you\'ll be on your own.$b$bDogran is being held in a quilboar camp to the north of here. Look for a group of two huts. He\'ll be heavily guarded--that is, if they haven\'t killed him yet, or he hasn\'t succumbed to his wounds.$b$bGood luck.",
+    ["O"] = "Bring Ken\'zigla\'s Draught to Dogran in the Barrens.",
+    ["T"] = "Dogran\'s Captivity",
   },
   [1516] = {
     ["D"] = "The time is now, young $c. You\'ve grown strong and your spirit endures like the earth. Following the shaman\'s path shows you have wisdom before even proving yourself.$B$BThe element of earth will guide your destiny, becoming part of you if you are ready. But you must stand before the earth itself. If you are ready, then you will see things only shaman know of.$B$BSeek out the Felstalkers to the north, and take from them two of their hooves. Return to me then, and we shall speak more of your future.",
@@ -5438,11 +6272,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Find Kranal Fiss in the Barrens.",
     ["T"] = "불의 부름",
   },
-  [1524] = {
-    ["D"] = "자네는 불의 토템을 사용할 수 있을 정도로 강하지만 아직 준비가 덜 되었네.$B$B듀로타의 성난남녘 강을 따라가다 보면 대해에 못 미쳐서 숨겨진 오솔길이 있는데, 그 길을 따라 올라가면 이 땅에서 가장 높은 봉우리 중 하나에 이르게 된다네. 그 꼭대기까지 올라가게. 그러면 텔프 줄람이 지키는 희미한 불꽃의 제단이라는 성지를 발견하게 될 거야.$B$B자네가 불을 길들이려 한다는 표시로 이 횃불을 그에게 주게. 제단에 있는 화로를 타오르게 하여 내게 가져오면 불의 토템을 주겠네.",
-    ["O"] = "듀로타에 있는 텔프 줄람에게 희미한 불씨의 횃불을 가져가야 합니다.",
-    ["T"] = "불의 부름",
-  },
   [1525] = {
     ["D"] = "But you did not come here for a history lesson, did you? You came for the Eternal Flame and fire totem.$B$BThe first step is to create a sapta and bind you to the flame.$B$BI can create the fire sapta for you if you bring me two items. The first is fire tar, a simple item usually carried by Razormane spellcasters in eastern Barrens.$B$BThe second item will be more dangerous: a reagent pouch from one of the cultists of the Burning Blade. You can find them in a cave above the ravines northeast of Razor Hill.",
     ["O"] = "Bring 1 Fire Tar and 1 Reagent Pouch to Telf Joolam in Durotar.",
@@ -5473,6 +6302,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Find Brine in Southern Barrens.",
     ["T"] = "물의 부름",
   },
+  [1531] = {
+    ["D"] = "You be makin\' headway now, mon. Your be ready to prove yerself worthy of the air totem, but first, ya must fin\' Prate Cloudseer in Thousand Needles. She be willin\' ta tell ya how to get yer air totem if ya treat her wit enough respect.$B$BHead south through the Barrens, and after ya reach Thousand Needles, head east. You\'ll find her hiddin\' in a hole wit\' her boyfriend--haha, don\' tell her I be dissin\' her none--she not take it too kindly.",
+    ["O"] = "Find Prate Cloudseer in Thousand Needles.",
+    ["T"] = "Call of Air",
+  },
+  [1532] = {
+    ["D"] = "The winds of Kalimdor rush to meet you and you shall be counted among some of our most powerful $g brothers:sisters;. I am proud to see you have come this far and have such a promising future.$B$BThe element of air is a difficult one to control, but I have faith that your skills will overcome any obstacles that are placed in front of you.$B$BHead to the very south of the Barrens, and enter Thousand Needles. It is there, far to the east, that you will find Prate Cloudseer. She will teach you more.",
+    ["O"] = "Find Prate Cloudseer in Thousand Needles.",
+    ["T"] = "Call of Air",
+  },
   [1534] = {
     ["D"] = "Take this waterskin and head deep into the lush forest the night elves call Ashenvale. It is to the far north of the Barrens.$B$BOnce you\'ve entered the forest, travel west. Along the mountains that separate Stonetalon and Ashenvale, and beyond Lake Mystral, you will find a holy place: the Ruins of Stardust. At the center of the lake you will find a small fountain.$B$BBring me a sample of the fountain\'s water. It will be the final component you\'ll need before I send you back to Islen.",
     ["O"] = "Fill the Empty Blue Waterskin at the Ruins of Stardust in Ashenvale and return to Brine in the Barrens.",
@@ -5488,6 +6327,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Fill the Empty Red Waterskin at the well in Tarren Mill and return to Brine in the Barrens.",
     ["T"] = "물의 부름",
   },
+  [1558] = {
+    ["D"] = "Ironforge is where all the dwarves and gnomes live.  Near there is a place called Loch Modan, and the dwarves built a HUGE dam there.  They say it\'s one of the biggest things anyone\'s ever made.  Wow!$B$BCould you take me to Loch Modan and see the dam there, please?  I think it is the Stone... um... Stonewrench Dam?  Stonewrought?  It\'s big - that\'s for sure.  I\'d like to look out over the big waterfall.  I promise I won\'t lean over too far!",
+    ["O"] = "Take the orphan to the Stonewrought Dam in Loch Modan.  You should take him to the middle of the dam so he can see out over the giant waterfall.",
+    ["T"] = "The Stonewrought Dam",
+  },
+  [1559] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Flash Bomb Recipe",
+  },
   [1560] = {
     ["D"] = "길을 잃어버렸어요!$B$B제 아내 토르타가 저녁거리를 구해 오라고 보냈는데 어디에선가 길을 잘못 든 것 같아요.$B$B저를 토르타에게 데려다 주시지 않으시겠어요? 스팀휘들 항구 바로 남쪽에서 저를 기다리고 있답니다.",
     ["O"] = "투가를 아내 토르타에게 데려다 줘야 합니다.",
@@ -5498,20 +6347,30 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "모단 호수 남쪽 방어탑에 있는 토르발트에게 구리 도끼 6개와 구리 사슬 허리띠 6개를 가져가야 합니다.",
     ["T"] = "전방 보급품 조달",
   },
+  [1579] = {
+    ["D"] = "I came to Auberdine because of the quiet.  I want to invent my inventions where it\'s quiet, because after a night of drinking I don\'t like all the noise of Ironforge!$B$BSo I took a ship to Auberdine and had a little too much to drink on the way.  I dropped my box of gaffer jacks overboard!  I need my gaffer jacks!$B$BI don\'t know exactly where I dropped them, but if you fish for them in the ocean you might get lucky...",
+    ["O"] = "Bring 8 Gaffer Jacks to Wizbang Cranktoggle in Auberdine.",
+    ["T"] = "Gaffer Jacks",
+  },
+  [1580] = {
+    ["D"] = "We know you\'re lucky, but... just how lucky are you, $N?$B$BOne night I was wandering the roads of Darkshore.  I was looking for a good river or lake to try my new self-propelled, exploding duck decoy and I think I was a little tipsy... because I passed out and awoke hours later in Auberdine.  My hair was singed and my bag of electropellers was gone!  I must have dropped them in the water!$B$BI need those electropellers!  Maybe you can fish them out of some lake or stream in Darkshore...",
+    ["O"] = "Bring 12 Electropellers to Wizbang Cranktoggle in Auberdine.",
+    ["T"] = "Electropellers",
+  },
   [1581] = {
     ["D"] = "요즘 우리 약초 가게와 연금술 가게가 아주 호황이랍니다. 하지만 남편은 물약을 만드느라 너무 바빠서 서로 도와줄 시간이 없어요. 그래서 말인데 좀 도와주시지 않겠어요?$B$B미리 조제된 비약을 좀 가져오시면 기꺼이 거래하겠어요. 요긴하게 쓰실 만한 희귀 약초가 좀 있거든요.",
     ["O"] = "돌라나르에 있는 시랄 블레이드리프에게 사자의 힘 비약 6개와 최하급 방어의 비약 2개를 가져가야 합니다.",
     ["T"] = "블레이드리프를 위한 비약",
   },
-  [1582] = {
-    ["D"] = "다르나서스에 사는 우리 장인들은 아주 바쁘답니다. 열성이 대단한 젊은 모험가들이 자신의 능력을 시험해보고 싶어 황야로 모여들고 있습니다. 그들은 꾸준히 우리의 보급품을 필요로 하고 있답니다.$B$B이번에 주문받은 가죽 제품을 보충할 수 있도록 도와준다면 고급 가죽세공술을 가르쳐 드리도록 하죠.",
-    ["O"] = "다르나서스에 있는 로서리아스에게 새김무늬 가죽 장갑 1개, 새김무늬 가죽 장화 5개, 새김무늬 가죽 망토 5개를 가져가야 합니다.",
-    ["T"] = "달빛 조끼",
-  },
   [1598] = {
     ["D"] = "You there! $n, right?$b$bI hope you\'re sure about becoming a warlock, because if you can\'t hold your own, you\'re likely to get pulled under.$b$bI\'m to teach you, but I need to make sure you\'re strong enough first.$b$bThere was a novice studying at the Abbey who ran off to join the Defias Brotherhood. Why do I care? Well, he stole some important books.$b$bOne of those happens to be a book I\'ve wanted for myself, the Powers of the Void. Steal it for me, they have it hidden at their tent in the Vineyards.",
     ["O"] = "Retrieve the Powers of the Void for Drusilla La Salle.",
     ["T"] = "The Stolen Tome",
+  },
+  [1599] = {
+    ["D"] = "You must be the new warlock everyone\'s been whispering about. Must be someone\'s taken a liking to you if they\'ve asked me to take time away from my research to start your training.$b$bDon\'t worry, I won\'t hold it against you.$b$bThe simplest of the summoning spells you will learn is that of the imp. Before I impart this to you, however, you must prove that you have the necessary magical and physical ability.$b$bBring me three feather charms from the frostmane novices from the cave to the southwest.",
+    ["O"] = "Bring 3 Feather Charms to Alamar Grimm in Anvilmar.",
+    ["T"] = "Beginnings",
   },
   [1618] = {
     ["D"] = "요새는 우리 드워프들 뿐만 아니라 얼라이언스의 일원인 인간들도 바빠 죽을 지경이지!$B$B붉은마루 산맥은 검은바위 오크들로부터 지속적으로 공격받고 있어 항상 장비가 부족한 형편이오. 당신이 이 물건들을 가져다준다면 붉은마루 산맥에 있는 인간 대장장이 베르너 오스구드가 쓸만한 기술을 몇 가지 가르쳐 줄 거요.",
@@ -5522,6 +6381,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "당신은 꽤 솜씨 좋은 전사로군요. 하지만 아직은 젊고 배워야 할 것이 많이 남아 있습니다.$B$B해리 벌가드에게 가서 얘기를 나눠 보시기 바랍니다. 그는 보통 스톰윈드의 구 시가지에 있는 돼지와 휘파람 선술집에 있습니다. 해리는 경험이 풍부한 좋은 스승이니 전장에서 목숨을 구해줄 기술을 몇 가지 가르쳐 줄 겁니다.",
     ["O"] = "Speak with Harry Burlguard.",
     ["T"] = "전사 훈련",
+  },
+  [1639] = {
+    ["D"] = "Yeah, I can teach you.  But first I wanna see what moves you have already.$B$BSee that drunk over there at the end of the bar?  Bartleby?  I want you to get his mug.$B$BHah, and if you know Bartleby then you know he won\'t just give it to you.",
+    ["O"] = "Speak with Bartleby.",
+    ["T"] = "Bartleby the Drunk",
+  },
+  [1640] = {
+    ["D"] = "You want what??  You\'re crazy!$B$BThe only way you\'ll get this mug is if you pry it from my cold, dead fingers...",
+    ["O"] = "Beat Bartleby, then talk to him.",
+    ["T"] = "Beat Bartleby",
   },
   [1641] = {
     ["D"] = "",
@@ -5543,6 +6412,31 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 10 Linen Cloth to Stephanie Turner in Stormwind.",
     ["T"] = "The Tome of Divinity",
   },
+  [1645] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Tome of Divinity",
+  },
+  [1646] = {
+    ["D"] = "In all things, a paladin must reflect the Light which supplements our strength. To strive to be divine for one of our kind does not mean we strive for godhood--we strive to be good in all actions.$B$BAlthough called upon to smite evil in these harsh times, you must always remember that it\'s aiding others that will truly set you apart from the citizens of Azeroth. Compassion, patience, bravery--these things mean as much to a paladin as strength in battle.$B$BKnow this well, and never forget it.",
+    ["O"] = "Speak to Tiza Battleforge in Ironforge.",
+    ["T"] = "The Tome of Divinity",
+  },
+  [1647] = {
+    ["D"] = "Your task then, $N, is to find someone here in Ironforge that is in need of aid. Someone who is pure of heart and motive. Perhaps someone helping others. Perhaps someone in need of a guide. Regardless, the person must have noble intent and be relying on your kindness.$B$BDo this, and return to me when you are finished. Then, we shall discuss more of your path and what it means to be a paladin of the Light. I will remain here in the temple for your return. Other paladins will need my guidance also.",
+    ["O"] = "Search the outer ring of Ironforge for John Turner.",
+    ["T"] = "The Tome of Divinity",
+  },
+  [1648] = {
+    ["D"] = "My wife and I run an orphanage in Stormwind, mostly for children who have lost parents due to the attacks by the Scourge in the last decade. I come to Ironforge every month or so to see about collecting more supplies from the citizens here, and talk to the various groups to see if they can do anything to help.$B$BThis trip\'s been agonizingly slow, and not very productive.$B$BIf I could just get some more linen for my wife to make some clothes, I could finally send a shipment home.",
+    ["O"] = "Bring 10 Linen Cloth to John Turner in Ironforge.",
+    ["T"] = "The Tome of Divinity",
+  },
+  [1649] = {
+    ["D"] = "Valor, and all the virtues that go along with it, are like rare minerals: you must cherish them when you find them because of their value, but you must also take time to harvest them... refine them. When mixed together properly, a strong alloy is formed, sometimes unbreakable by even the most powerful blows.$B$BThis strength, your faith, your bravery, must be tested. You must learn to never lose faith and realize that with the power of the Light, you can overcome things that most others cannot.",
+    ["O"] = "Speak to Duthorian Rall in Stormwind.",
+    ["T"] = "The Tome of Valor",
+  },
   [1650] = {
     ["D"] = "Good! Your lack of hesitation is a sure sign that you are prepared and eager to test yourself. So be it.$B$BAt the very ends of Westfall\'s Longshore, a small house overlooks the ocean. There, a couple lives, the Stilwells. Jordan is an incredible smith, and he\'s gone to Ironforge to meet with the dwarves for a while. But this has left Daphne, his wife, alone and unprotected.$B$BReports suggest that the Defias have all but taken over the area, Daphne may need some protection from the villains. Go there.",
     ["O"] = "Find Daphne Stilwell in Westfall.",
@@ -5563,6 +6457,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak to Jordan Stilwell in Ironforge",
     ["T"] = "정의의 시험",
   },
+  [1655] = {
+    ["D"] = "Ach, ya startled me, $G man:woman;! Can\'t ya see I was lost in thought?$B$BWhat\'s that? Jordan\'s shipment... fer Ironforge. Ahhh, yeah, I know whatcha speak of. Mo\'grosh ogres... dat\'s who took me ol\' friend\'s ore shipment. Caravan was headin\' here from the Wetlands and was ambushed. The guard who survived their attack just passed away a few days ago--healer couldn\'t get to \'em fast enough.$B$BIf you want the shipment, you\'ll have to head northeast across the Loch. It\'s got to be there somewhere.",
+    ["O"] = "Bring Jordan\'s Ore Shipment to Bailor Stonehand in Loch Modan.",
+    ["T"] = "Bailor\'s Ore Shipment",
+  },
   [1656] = {
     ["D"] = "여행자분, 절 좀 도와주실 수 있으신가요? 제발, 간곡히 부탁드려요. 지금 힘의 의식을 수행하는 중인데 아직 이곳 고원에서 임무를 마치지 못했답니다. 그런데 아버지께서 제게 이 모피를 블러드후프에 있는 여관에 가져다주라고 하셨지 뭐예요.$B$B지금 이렇게 지친 몸으로는 의식도 마치고 아버지의 심부름까지 하기엔 역부족이랍니다. 제 대신 모피를 전해주시겠어요?$B$B그 여관은 아주 편안한 곳이라서 오랜 여행 중에 휴식을 취하기엔 그만이랍니다. 여관에 가 보시면 분명 그렇게 느끼실 거예요.",
     ["O"] = "블러드후프 마을에 있는 여관주인 카우스에게 모피 묶음을 가져가야 합니다.",
@@ -5573,6 +6472,13 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "언덕마루에 있는 남녘해안 한가운데에 3개의 포세이큰 구린내 폭탄을 던진 후, 티리스팔 숲의 밀짚인형 축제가 열리는 곳에 있는 암흑의 소환사 얀카에게 가야 합니다.",
     ["T"] = "남녘해안에 구린내 폭탄 투하",
   },
+  [1658] = {
+    ["D"] = "I need brave individuals to head up to Tirisfal Glade and check out the Wickerman Festival.  I\'m not going to lie - heading up there will be dangerous.  The guards at the festival will be exceptionally vicious.  Still, we need to know how big the festival is this year, and how much trouble the Forsaken are going to cause us during Hallow\'s End.$B$BIf you\'re up for it, head to Tirisfal and scout out the festival.  Return to me with the information, and I\'ll make sure you\'re well compensated.",
+    ["O"] = "Locate the Forsaken\'s Wickerman Festival in Tirisfal Glade.  Return to Sergeant Hartman in Southshore once you\'ve done so.",
+    ["T"] = "밀짚인형 축제 정탐",
+  },
+  [1659] = "_",
+  [1660] = "_",
   [1661] = {
     ["D"] = "I greet you once again, $N. I am more proud to call you $g brother:sister; than ever before--your dedication is a tribute to us all.$B$BThe time has come for me to bestow a great gift upon you. But know this, for now I give you this freely, but later, when time permits, this will be a much greater challenge to all paladins who choose to undertake my quest.$B$BSpeak to me again and I shall grant you a great boon.",
     ["O"] = "Speak to Duthorian Rall in Stormwind.",
@@ -5593,6 +6499,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Retrieve Haggard\'s Badge from Dead-tooth Jack\'s camp, and return to Marshal Haggard.",
     ["T"] = "썩은니 잭",
   },
+  [1678] = {
+    ["D"] = "If you want to rise in the ranks of the warriors, then you better be tough.  I can teach you new moves but before that, prove to me you can handle yourself against real foes.$B$BVejrek is the toughest troll you\'ll find in these parts, and he\'s who you have to beat.  He has a hut in the foothills just south of Frostmane Hold$B$BBring me Vejrek\'s head and I\'ll know you have mettle.",
+    ["O"] = "Bring Vejrek\'s Head to Muren Stormpike in Ironforge.",
+    ["T"] = "Vejrek",
+  },
   [1679] = {
     ["D"] = "Hello, warrior!  You show a lot of promise, but you still need to learn some tricks and Muren Stormpike is just the dwarf to teach you.$B$BYou can find Muren at the Hall of Arms in the Military Ward of Ironforge.  Talk to him when you\'re ready to learn what it is to be a warrior.",
     ["O"] = "Speak with Muren Stormpike.",
@@ -5608,10 +6519,40 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring a load of Umbral Ore to Tormus Deepforge in Ironforge.",
     ["T"] = "아이언밴드 야영지",
   },
+  [1682] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Grey Iron Weapons",
+  },
   [1683] = {
     ["D"] = "Before I can teach you, you must show me your resolve.$B$BThe satyr Vorlus Vilehoof has found one of our remote moonwells, southeast of the Ban\'ethil Barrow Den.  He now splashes within it, defiling its pure waters with his filth.$B$BFind Vorlus at the moonwell and destroy him.  Bring me his horn as proof and I will begin your advanced training as a warrior.$B$BThe path to the moonwell is hidden well, $N, but stay focused and alert and you will find it.",
     ["O"] = "Bring the Horn of Vorlus to Elanaria in Darnassus.",
     ["T"] = "볼루스 바일후프",
+  },
+  [1684] = {
+    ["D"] = "Greetings, warrior.  Your skill grows, but there is more to your profession than you may believe.  To further progress, you must soon find a teacher.$B$BThe warrior Elanaria dwells in Darnassus, at the Warrior\'s Terrace.  She can instruct you.",
+    ["O"] = "Speak with Elanaria.",
+    ["T"] = "Elanaria",
+  },
+  [1685] = {
+    ["D"] = "Isn\'t that how it always works? Was looking for you all day and couldn\'t find you, now when I\'m not expecting it, you come and walk right up to me.$b$bI\'ve wasted enough time trying to find you, so I won\'t delay you any longer. Master Gakin\'s summoned you for additional training. Seems to me you should seek him out as soon as possible.$b$bYou\'ll find him in the basement of the Slaughtered Lamb tavern. By the way, you might want to keep that particular location quiet. Don\'t want word spreading about it.",
+    ["O"] = "Report to Gakin the Darkbinder in the Mage Quarter of Stormwind.",
+    ["T"] = "Gakin\'s Summons",
+  },
+  [1686] = {
+    ["D"] = "You have learned much, $N.  Now we will craft you a weapon.  A warrior\'s weapon.$B$BTo do this, you must travel to Darkshore.$B$BLong ago a ship crashed upon the rocks near the Auberdine lighthouse, scattering many crates of elunite ore along the ocean floor.$B$BFirst, you must defeat the elunite\'s guardian, the Shade of Elura.  Once the ship\'s captain, she cursed herself to roam the deeps and protect her shipment for all time.  Defeat her, gain her medallion, and gather the crates of lost Elunite.",
+    ["O"] = "Bring 8 loads of Elunite Ore and the Medallion of Elura to Elanaria in Darnassus.",
+    ["T"] = "The Shade of Elura",
+  },
+  [1687] = {
+    ["D"] = "Sometimes late at night, our matrons at the orphanage will tell us spooky stories.  Those RULE!  There\'s one about a ghost that haunts a lighthouse in Westfall.  They say he was a pirate captain who had his ship taken from him by other pirates.  Wow!$B$BCould you please take me to the lighthouse in Westfall?  I wanna see if the ghost of that captain is there!  I promise to stay close to you; I won\'t run off or anything!",
+    ["O"] = "Take the orphan to see the lighthouse off the coast of Westfall.",
+    ["T"] = "Spooky Lighthouse",
+  },
+  [1688] = {
+    ["D"] = "I had a student named Surena Caledon. She stood where you stand now, eager to learn of warlock magic, and possessing no small bit of talent. More than that she was young and pleasing to the eye. Had I seen it then, the traitorous trollop!$b$bThe thieving wench ran off with one of the Defias, Erlan Drudgemoor. While her loss is of little importance, I gifted her a bloodstone choker that I must have.$b$bHer life means nothing to me now. You will find her at the Brackwell Pumpkin Patch. Retrieve what is mine.",
+    ["O"] = "Retrieve Surena\'s Choker for Gakin the Darkbinder in Stormwind.",
+    ["T"] = "Surena Caledon",
   },
   [1689] = {
     ["D"] = "By retrieving my choker and besting Surena, you\'ve proven that you\'re at least as capable as she was.$b$bWith that said, I can tell you\'re direly in need of training. You can manage the flows of magic, yes, but being a warlock is much more than that.$b$bI will show you how to command a voidwalker, but before I can, you must call one forth at a summoning circle and subdue it using whatever weapons--physical and magical--you have at your disposal. Use the magic of this choker at the summoning circle below.",
@@ -5633,10 +6574,35 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "[Bring the Case of Elunite to Smith Mathiel. ]",
     ["T"] = "Smith Mathiel",
   },
+  [1693] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Weapons of Elunite",
+  },
   [1698] = {
     ["D"] = "Yorus Barleybrew has issued a challenge to all able warriors of the Alliance.  He waits at the Lakeshire Inn, in Redridge, and pledges a grand reward to anyone able to pass his trial.",
     ["O"] = "Speak with Yorus Barleybrew.",
     ["T"] = "요루스 발리브루",
+  },
+  [1699] = {
+    ["D"] = "I call my challenge the Rethban Gauntlet.  To pass the trial, all you must do is enter the Rethban Caverns, to the first fork, then return here.  Easy!  Except there are a few wrinkles...$B$BYou have to return within an hour.$B$BThere are whole heaps of Redridge Gnolls in the way.$B$BBefore you start, you have to take a swig of my family\'s signature drink: Barleybrew Scalder!$B$BSo what do you say?  The Rethban Caverns are in the foothills north of Lakeshire.  Are you ready to run the Rethban Gauntlet?",
+    ["O"] = "Enter the Rethban Caverns, reach the first fork, and return to Yorus Barleybrew within the time allowed.$B$BYou must not die and release your spirit.",
+    ["T"] = "The Rethban Gauntlet",
+  },
+  [1700] = {
+    ["D"] = "I made a copy of my notes on the techniques I learned while making your armor, and I need them sent to Grimand Elmore.  He\'s here in the Dwarven District, in the weapon shop.$B$BAnd duck when you give these to him.  He\'s fiercely proud of his skills, and won\'t like the idea of learning something from me...",
+    ["O"] = "Bring Furen\'s Notes to Grimand Elmore.",
+    ["T"] = "Grimand Elmore",
+  },
+  [1702] = {
+    ["D"] = "You really showed what you were made of when you ran the Rethban Gauntlet, $N.  And I\'m true to my word.  I\'ll get you the reward I promised...$B$BExcept it\'s in Stormwind.$B$BTalk to my friend, Furen Longbeard, in the Dwarven District of Stormwind.  He\'s the best shieldsmith you\'ll ever meet, and he owes me a big favor.$B$BHere, take Furen this cask of Barleybrew Scalder and ask him for a shield.  He\'ll give you a nice one.",
+    ["O"] = "Bring the Cask of Scalder to Furen Longbeard.",
+    ["T"] = "The Shieldsmith",
+  },
+  [1703] = {
+    ["D"] = "I made a copy of my notes on the techniques I learned while making your armor, and need them sent to the blacksmith Mathiel.  He lives in Darnassus which is quite a long way off, but I\'m sure he\'ll be very grateful to learn what I\'ve learned.",
+    ["O"] = "Bring Furen\'s Notes to Mathiel.",
+    ["T"] = "Mathiel",
   },
   [1704] = {
     ["D"] = "I made a copy of my notes on the techniques I learned while making your armor, and need someone to take them to Klockmort Spannerspan.  He\'s a gnomish blacksmith in Ironforge and when he learns what I\'ve learned... I bet he\'ll pull off his own beard in excitement.",
@@ -5648,10 +6614,30 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 20 vials of Burning Blood and 1 Burning Rock to Grimand Elmore in Stormwind.",
     ["T"] = "불타는 혈액",
   },
+  [1706] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Grimand\'s Armor",
+  },
   [1708] = {
     ["D"] = "I want to try Furen Longbeard\'s new techniques on my own piece of armor.  And because you helped Furen and he helped me, you\'re welcome to the armor after I make it!$B$BTo finish the piece, I need a special coral, searing coral.  It grows in only one place--along the coast south of Menethil Harbor in the Wetlands.$B$BBring me enough searing coral and I\'ll get right to work on the armor.  And hurry, $N.  I\'m so eager to get started it\'s making my toes twist!",
     ["O"] = "Bring 20 loads of Searing Coral to Klockmort Spannerspan in Ironforge.",
     ["T"] = "철산호",
+  },
+  [1709] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Klockmort\'s Creation",
+  },
+  [1710] = {
+    ["D"] = "My colleague, Furen Longbeard, made a discovery which I am eager to test.  I wish to try it on a new armor that I am researching, for I believe Furen\'s techniques will produce superior results.$B$BWill you help me?  If you gather what I need to make the armor, then I will make an extra piece for you.$B$BI need the sunscorched egg shells of the Highperch Wyverns who dwell at Highperch, in Thousand Needles.  Search for the shells below their nests, and return to me when you have a sufficient amount.",
+    ["O"] = "Bring 20 Sunscorched Shells to Mathiel in Darnassus.",
+    ["T"] = "Sunscorched Shells",
+  },
+  [1711] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Mathiel\'s Armor",
   },
   [1712] = {
     ["D"] = "I have spent ages watching this site.  I watch, so that one day I might see the great Cyclonian fall.  But I have not yet found a champion to defeat the wind lord.$B$BPerhaps you are that champion.$B$BProve it to me.  Gather the items I need to summon Cyclonian, and I will know you are a great warrior.  Perhaps then you can defeat him and gain his whirlwind heart.$B$BIf so, then I will infuse the heart\'s power in a weapon, and I will give that weapon to you.$B$BHere is a parchment with the items I need.",
@@ -5673,6 +6659,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak with Takar the Seer in the Barrens.",
     ["T"] = "영혼의 포식자",
   },
+  [1717] = {
+    ["D"] = "$n! Didn\'t expect to see you around these parts, but I was instructed to keep an eye out for you.$b$bIt\'s past time you got some more training, so you should stop in to see Gakin the next time you\'re in Stormwind. He\'ll be waiting for you.",
+    ["O"] = "Report to Gakin the Darkbinder in the Mage Quarter of Stormwind.",
+    ["T"] = "Gakin\'s Summons",
+  },
   [1718] = {
     ["D"] = "Your renown as a warrior grows, $N.  Now it is time to pit yourself against your peers and see where you stand.$B$BThere is an island off the coast of the Barrens, south of Ratchet.  It is called Fray Island and it is a place where warriors meet.$B$BMeet, and fight.$B$BSpeak with the chief warrior of Fray Island, Klannoc Macleod.  If he finds you worthy, then Klannoc will lead you further down the warrior\'s path.$B$BTo reach Fray Island, search for the sand bar shallows along the Merchant Coast.",
     ["O"] = "Speak with Klannoc Macleod.",
@@ -5693,10 +6684,25 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Using the Heartswood Core, summon and subdue a succubus, then return the Heartswood Core to Gakin the Darkbinder in the Slaughtered Lamb.",
     ["T"] = "균열 봉합",
   },
+  [1740] = {
+    ["D"] = "When demons of the Legion fall out of favor, their spirits are imprisoned within orbs and distributed to their mages and warlocks.$b$bMany were carried by their servants in Azeroth. Even fragmented, they still possess the powers of the demons trapped inside.$b$bThe orb of Soran\'ruk was broken into two pieces, one was further broken to be used by the acolytes of the Twilight\'s Hammer in Blackfathom Deeps. The other, larger piece, was possessed by a wizard in Shadowfang Keep. Find them and I can reform it.",
+    ["O"] = "Find 3 Soran\'ruk Fragments and 1 Large Soran\'ruk Fragment and return them to Doan Karhan in the Barrens.",
+    ["T"] = "The Orb of Soran\'ruk",
+  },
   [1758] = {
     ["D"] = "It will take more than a simple summoning circle to bring forth a felhunter for you to challenge.$b$bMy three acolytes and I will assist in creating the magic circles. You require a copy of the Tome of the Cabal, which has been lost to us for some time. It was written by the first group of warlocks to summon a felhunter unaided.$b$bPerhaps Krom Stoutarm can help you with this. An itinerant warlock these days, he spends his days hoarding ancient texts and skulking about the library in Ironforge.",
     ["O"] = "Speak with Krom Stoutarm in Ironforge.",
     ["T"] = "비밀의 고서",
+  },
+  [1778] = {
+    ["D"] = "I\'m going to see about making plans to return home soon. Hopefully, Stephanie is doing well back in Stormwind. I can\'t wait to see her again. Till next we meet, $c.",
+    ["O"] = "Speak to Tiza Battleforge in Ironforge.",
+    ["T"] = "The Tome of Divinity",
+  },
+  [1779] = {
+    ["D"] = "I want you to take this, $N. It is called the Symbol of Life.$B$BYou\'ve proven charitable and patient, and now I want you to prove just how adept you\'ve become in both combat, and power.$B$BMy husband Muiredon returned recently from an encounter with some Dark Iron dwarves, and he barely escaped with his life--he\'s over there having his wounds healed by one of our priests.$B$BTake the Symbol and speak to him. If you can help him, then we will speak again soon. May the Light shine upon you.",
+    ["O"] = "Take the Symbol of Life and speak to Muiredon Battleforge in Ironforge.",
+    ["T"] = "The Tome of Divinity",
   },
   [1780] = {
     ["D"] = "I\'ll take these to the children this very day. Please be safe, good $c. It is not often $G men:women; of your character show their faces in the city, but you\'ve proven that the paladins here in Stormwind shall never turn their backs on those in need.$B$BFarewell.",
@@ -5706,6 +6712,26 @@ pfDB["quests"]["koKR-tbc"] = {
   [1781] = {
     ["D"] = "Take this, $N. It is called the Symbol of Life.$B$BYou\'ve proven charitable and patient, and now the time has come to see if you\'re powerful enough to focus one of the Light\'s greatest gifts.$B$BMy friend Gazin returned recently from an encounter with some Defias in Elwynn near Heroes\' Vigil--he barely escaped with his life. He\'s near the altar having his wounds healed by our priests.$B$BTake the Symbol and speak to him. If you can help him, then we will speak again soon. May you bask in the Light\'s glory.",
     ["O"] = "Take the Symbol of Life to Gazin Tenorm in Stormwind.",
+    ["T"] = "The Tome of Divinity",
+  },
+  [1782] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Furen\'s Armor",
+  },
+  [1783] = {
+    ["D"] = "We was spyin\' on some of the Dark Iron dwarves that\'ve bunkered down south of Helm\'s Bed Lake. We knew they was up to no good, so Narm an\' me thought we\'d take a closer look--got ta see their leader given orders to some o\' his men.$B$BNarm an\' me took the chance to kill a few of \'em, but they proved tougher than we thought, an\' more of \'em got the jump on us. Narm tol\' me to run an\' get support, so \'ere I am.$B$BNarm needs help, an\' I\'ll not rest till he gets it.$B$BC\'n ya help, $N?",
+    ["O"] = "Take the Symbol of Life and resurrect Narm Faulk in Dun Morogh.",
+    ["T"] = "The Tome of Divinity",
+  },
+  [1784] = {
+    ["D"] = "Before I fell in battle, Muiredon and I had almost defeated one of the Dark Iron spies near that small house. We witnessed their captain passing orders to them, and sought to kill him and take the orders.$B$BSome of the council in Ironforge do not yet believe the presence of Dark Iron dwarves exists in Dun Morogh. By attaining one of those scripts, we\'ll not only have proof of their movements, but possibly an idea of what they\'re planning.$B$BGet one of those scripts and take it back to Muiredon, $N.",
+    ["O"] = "Retrieve a Dark Iron Script from the Dark Iron dwarves near Helm\'s Bed, and return to Muiredon Battleforge in Ironforge.",
+    ["T"] = "The Tome of Divinity",
+  },
+  [1785] = {
+    ["D"] = "I c\'n see me wife\'s o\'er there beamin\' wit pride already. Ya better get yer tuchus o\'er there pronto. I be thinkin\' she\'d have some words wit ya.$B$BLight be witcha, mighty $c. I\'ll be lookin\' fer ya on the battlefield against the Scourge and dem Dark Irons when the time comes.",
+    ["O"] = "Speak to Tiza Battleforge in Ironforge.",
     ["T"] = "The Tome of Divinity",
   },
   [1786] = {
@@ -5723,15 +6749,45 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak to Duthorian Rall in Stormwind.",
     ["T"] = "The Tome of Divinity",
   },
+  [1789] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Symbol of Life",
+  },
+  [1790] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Symbol of Life",
+  },
   [1791] = {
     ["D"] = "Now that you\'ve learned your berserker\'s stance, you\'ll want a nice weapon to use it with.$B$BTalk to Bath\'rah the Windwatcher, a troll hermit who lives between the Alterac Mountains and the Western Plaguelands.  He is a skilled weapon maker and a powerful shaman.$B$BTo find Bath\'rah, go to the river that flows along Tarren Mill\'s eastern flank.  Follow it north--Bath\'rah is camped near ruins that rest along the river\'s eastern bank.",
     ["O"] = "Speak with Bath\'rah the Windwatcher.",
     ["T"] = "The Windwatcher",
   },
+  [1792] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Whirlwind Weapon",
+  },
+  [1793] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Tome of Valor",
+  },
+  [1794] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Tome of Valor",
+  },
   [1795] = {
     ["D"] = "If you are sufficiently prepared, then we should begin. Let me explain the process to you.$b$bI will begin by creating the basic summoning circle. When that is finished, my acolytes will use the rods of channeling to create the greater circle.$b$bOnce that is done, read the incantation from the Tome of the Cabal, and the felhunter will be pulled forth. Be careful, $n. A felhunter is a powerful foe, and I\'d like to see you keep your head on your shoulders.",
     ["O"] = "Using the Tome of the Cabal, summon and subdue a felhunter, then return the Tome of the Cabal to Strahad Farsan in Ratchet.",
     ["T"] = "균열 봉합",
+  },
+  [1800] = {
+    ["D"] = "The orphan matrons at my home tell mighty stories of battle and lore at night if we are good and do our chores.  One story was about how Lordaeron fell, and about how the evil Arthas took his own father\'s life to become ruler.$B$BHe had no honor, $N!  When I grow up and become a mighty Horde warrior, my blade will be guided by honor - never evil!$B$BWould you take me to see the throne room, please?  It is just before where you would go down into the Undercity.",
+    ["O"] = "Take your ward to the old Lordaeron Throne Room that lies just before descending into the Undercity.",
+    ["T"] = "Lordaeron Throne Room",
   },
   [1801] = {
     ["D"] = "It will take more than a simple summoning circle to bring forth a felhunter for you to challenge.$b$bMy three acolytes and I will assist in creating the magic circles. You require a copy of the Tome of the Cabal, which has been lost to us for some time. It was written by the first group of warlocks to summon a felhunter unaided.$b$bPerhaps Jorah Annison can help you with this. He\'s employed as a cartographer in the Undercity these days, but still knows more of ancient texts than any I know.",
@@ -5778,80 +6834,85 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "콜만 파딩과 대화해야 합니다.",
     ["T"] = "콜만과의 대화",
   },
+  [1821] = {
+    ["D"] = "The Agamand family were my employers in life, and they were the cause of my death!  It is fitting that the Agamands are now mindless minions of the Lich King.$B$BNow I would have their last vestiges of honor.  Go into their family crypt and rob them of their family heirlooms: a sword, an axe, a dagger and a mace.  Bring them to me!$B$BThe Agamand family crypt is at the north end of the Agamand mills, protected by lurking scourge and dead Agamands.",
+    ["O"] = "Bring Coleman Farthing the Agamand Family Axe, the Agamand Family Sword, the Agamand Family Mace and the Agamand Family dagger.",
+    ["T"] = "Agamand Heirlooms",
+  },
+  [1823] = {
+    ["D"] = "You are a warrior of skill and growing renown.  Perhaps you are ready for Ruga Ragetotem\'s trial?  If so, then find Ruga in Camp Taurajo in the Barrens.$B$BHe awaits those warriors who answer his call.",
+    ["O"] = "Speak with Ruga Ragetotem.",
+    ["T"] = "Speak with Ruga",
+  },
+  [1824] = {
+    ["D"] = "To pass this trial, you must travel south to the Field of Giants.  There you will find a host of crawling, insect creatures.  They are new to the Barrens and I do not like what they herald.$B$BBring me their still-twitching antennae, and waste no time, $N, for harvested antennae will not twitch for long.  Bring me the antennae in the time allowed, and you will pass the trial.",
+    ["O"] = "Bring 5 twitching antennae to Ruga Ragetotem at Camp Taurajo",
+    ["T"] = "Trial at the Field of Giants",
+  },
   [1825] = {
     ["D"] = "Thun\'grim Firegaze, an orc blacksmith of renown, has heard of your continued deeds of valor in service of the Horde.  He would like to fashion for you a suit of armor, and bids you speak with him immediately.$B$BThun\'grim is camped east of the Crossroads in the Barrens.",
     ["O"] = "불모의 땅에 있는 툰그림 파이어게이즈와 대화해야 합니다.",
     ["T"] = "Speak with Thun\'grim",
+  },
+  [1838] = {
+    ["D"] = "I have heard tales of your strength and valor, and wish to make for you a suit of armor, a companion to aid you as tales of your great deeds grow.$B$BBut the fashioning of this armor will be a quest unto itself, $N.  I will need your help, and the help of other smiths of the Horde.$B$BHere, take this scroll.  I spent many nights, struggling with near-blind eyes, writing that which I need for the armor.  Bring me the items on this scroll and I will create for you the first piece of the suit.",
+    ["O"] = "Bring to Thun\'grim Firegaze 15 Smoky Iron Ingots, 10 Powdered Azurite, 10 Iron Bars and a Vial of Phlogiston.",
+    ["T"] = "Brutal Armor",
+  },
+  [1839] = {
+    ["D"] = "The troll smith Ula\'elek will craft for you the brutal gauntlets.  He dwells in Durotar, in Sen\'jin Village with his Darkspear brethren, and he awaits your coming.",
+    ["O"] = "Speak with Ula\'elek in Durotar.",
+    ["T"] = "Ula\'elek and the Brutal Gauntlets",
+  },
+  [1840] = {
+    ["D"] = "Orm Stonehoof is respected greatly for his skill.  He will make for you the brutal helm.$B$BSeek him out in Thunder Bluff, near the pool by the city\'s great, central totem.",
+    ["O"] = "Speak with Orm Stonehoof in Thunder Bluff.",
+    ["T"] = "Orm Stonehoof and the Brutal Helm",
+  },
+  [1841] = {
+    ["D"] = "It is said that, before her death, Velora Nitely was one of the finest armorsmiths in Lordaeron.  Death, it seems, has not decreased her talents.  Speak with Velora--she will make your brutal legguards.$B$BVelora plies her trade in the Undercity of Lordaeron, in the trade quarter.",
+    ["O"] = "Speak with Velora Nitely in the Undercity.",
+    ["T"] = "Velora Nitely and the Brutal Legguards",
   },
   [1842] = {
     ["D"] = "I can make you a pair of brutal gauntlets, and great magic will they hold.  But first, you must collect this magic and bring it to me.$B$BThe satyrs dwell in northeastern Ashenvale because of the forest\'s power.  They feed off its purity, leeching and corrupting.  You can tell which satyrs have drawn the most of Ashenvale\'s magic by their swollen, uncloven hooves.$B$BThese hooves hold great power.  I will need them for your gauntlets\' crafting.",
     ["O"] = "Bring 7 Uncloven Satyr Hooves to Ula\'elek at Sen\'jin Village in Durotar.",
     ["T"] = "Satyr Hooves",
   },
-  [1843] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "투사 건틀릿",
+  [1844] = {
+    ["D"] = "I will make you the helm, but you must show me you are worthy of it.$B$BNestled in the northwestern reaches of the Stonetalon Mountains there lies the Charred Vale.  It was once a verdant place, but is now defiled and ashen, and what creatures remain there are mad with pain and despair.$B$BThat place is where I send you, $N.$B$BYou must go to the Charred Vale and find a chimaera matriarch.  Slay her, free her of her misery.  Bring me her galvanized horn as proof, and I shall make for you the helm. ",
+    ["O"] = "Bring a Galvanized Horn to Orm Stonehoof in Thunder Bluff.",
+    ["T"] = "Chimaeric Horn",
   },
-  [1845] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "투사 투구",
+  [1846] = {
+    ["D"] = "To make the brutal leg guards, I need a brace of sturdy shinbones.  The Dragonmaw orcs of the Wetlands have nice, thick shinbones.  I\'ll need theirs.$B$BBut they must be sturdy.  Be sure to test the shinbones as you collect them.  If you can break them with your bare hands, then they won\'t be sturdy enough to work with.",
+    ["O"] = "Bring 8 Sturdy Dragonmaw Shinbones to Velora Nitely in the Undercity.",
+    ["T"] = "Dragonmaw Shinbones",
   },
   [1847] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "투사 다리보호대",
   },
-  [1848] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "투사 갑옷",
-  },
   [1858] = {
     ["D"] = "I\'ll leave it to you to get Tazan\'s satchel open, and return to me with its contents. The locking mechanism is complex, so it would probably be easiest if you obtained the key.$b$bAs you didn\'t find it on Tazan\'s body, I can only assume that he left the key in the care of another... Ah, yes, that\'s right. He had an assistant named Gamon. A drunkard, you\'ll most likely find him at the tavern. Perhaps you could quietly relieve him of the key.",
     ["O"] = "Steal Tazan\'s key, then use it to open his Satchel and deliver its contents to Therzok in the Cleft of Shadow in Orgrimmar.",
     ["T"] = "으스러진 손",
   },
-  [1860] = {
-    ["D"] = "우리 마법사들이 꼭 해야 할 임무가 있소. 스톰윈드와 엘윈 숲의 안전을 위해 아주 중요한 임무지.$B$B자세한 내용은 제니아 캐논이 알고 있소. 스톰윈드의 마법사 지구에 있는 마법사의 성소에서 공부를 하고 있으니 서둘러 찾아가 보시오.",
-    ["O"] = "스톰윈드에 있는 제니아 캐논과 대화해야 합니다.",
-    ["T"] = "제니아와의 대화",
-  },
-  [1861] = {
-    ["D"] = "이 세계는 거대하고 신비로운 힘들간의 전쟁에 피해를 받았습니다. 이 전쟁으로 인해 한때는 안정적이던 마법의 흐름에 커다란 문제가 생겼답니다. 우리는 이러한 변화가 가져온 결과를 알아내기 위해 노력하고 있는데 일부 마법사들은 최악의 결과가 아닐까 우려하고 있습니다!$B$B지금은 정보를 모아야 하니 자세한 얘기는 나중에 하도록 하겠습니다.$B$B자, 이 물통을 받으세요. 스톰윈드 성문의 남서쪽에 거울 호수 폭포 밑으로 가서 물을 담아 오세요. 그 물을 내게 가져오면 나쁜 마법에 오염되지 않았는지 실험해 보도록 하겠습니다.",
-    ["O"] = "스톰윈드에 있는 제니아 캐논에게 거울 호수 견본을 가져가야 합니다.",
-    ["T"] = "거울 호수",
-  },
-  [1879] = {
-    ["D"] = "이보시오! 아이언포지에 있는 빙크라는 노움 친구가 소식을 전해왔소. 해야 할 임무가 있다는데 마법사가 아니면 맡기질 않겠다고 하오! 당신은 마법사지 않소?$B$B그렇다면 빙크와 대화해 보시오. 그녀는 아이언포지의 마법 지구에 있는 신비의 전당에서 주로 시간을 보내니 그쪽으로 가면 만날 수 있을 것이오.",
-    ["O"] = "아이언포지에 있는 빙크와 대화해야 합니다.",
-    ["T"] = "빙크와의 대화",
-  },
-  [1880] = {
-    ["D"] = "우리 마법사들은 손가락 하나 까딱거린다고 화려한 마법을 쓸 수 있는 게 아니에요! 이 세계를 이루는 기본 요소인 마법을 제어하는 것이죠! 그러려면 아주 신중해야 하고 굳건한 의지와 방대한 지식이 필요하지요!$B$B내 장치 중 마법사의 기억장치는 이처럼 방대한 양의 지식을 수집하고 보관할 수 있답니다! 그런데 그 장치를 잃어버렸지 뭐예요! 고향인 놈리건에서 도망 나오다 도시 외곽에 있는 숙소의 연장통 속에 숨겨 놨어요. 하지만 지금 그곳엔 오염된 노움들이 득실거리고 있어서 찾기가 어렵답니다!$B$B부탁이에요. 내 기억장치를 찾아주세요!",
-    ["O"] = "빙크에게 마법사의 기억장치를 가져가야 합니다.",
-    ["T"] = "마법사의 기억장치",
-  },
-  [1881] = {
-    ["D"] = "아나스타샤 하트웰이 당신 같은 재능을 지닌 마법사에게 맡길 임무가 있다고 합니다. 언더시티의 마법 지구에서 그녀와 얘기를 나누고 포세이큰의 마법사들을 위한 첫 임무를 준비하도록 하시기 바랍니다.",
-    ["O"] = "아나스타샤 하트웰과 대화해야 합니다.",
-    ["T"] = "아나스타샤와의 대화",
-  },
-  [1882] = {
-    ["D"] = "동쪽에 있는 역병지대는 오염 정도가 심각해요. 리치 왕이 만들어낸 마법이 땅속에 퍼지면서 살아있는 것들을 모조리 오염시키고 죽이고 있어요. 역병의 파괴력을 막아주는 주문이 있긴 하지만 우리 포세이큰의 마법사들도 그 주문을 통제하기가 어려워 주문의 힘을 줄여야 한다고 생각하고 있지요.$B$B하지만 먼저 역병이 티리스팔에 얼마나 깊숙이 침투했는지 알아야 해요. 티리스팔 동쪽에 있는 발니르 농장에 가면 정원에 금어초가 있을 거예요. 그것들을 모아서 가져오세요.",
-    ["O"] = "언더시티의 마법 지구에 있는 아나스타샤 하트웰에게 발니르 금어초를 가져가야 합니다.",
-    ["T"] = "발니르 농장",
-  },
-  [1883] = {
-    ["D"] = "센진 마을의 부족 마법사인 운투와가 듀로타의 마법 흐름을 방해하는 요소가 있다면서 도움을 요청하고 있습니다. 운투와와 대화를 하고 어떻게 해서든 그를 도와주도록 하십시오.$B$B그렇게 하면 머잖아 더 많은 비밀을 알게 될 것입니다.",
-    ["O"] = "운투와와 대화해야 합니다.",
-    ["T"] = "운투와와의 대화",
+  [1859] = {
+    ["D"] = "Lower your voice, $n. Yeah, I know your name. Was told to keep an eye out for an orc by your description.$b$bFrom what we\'ve heard about you, you can handle yourself in combat, and aren\'t opposed to a little sneakery from time to time.$b$bAm I right?$b$bAnyways, you should go see Therzok in Orgrimmar. He\'s got an offer for you to hear.",
+    ["O"] = "Speak with Therzok in the Cleft of Shadow in Orgrimmar.",
+    ["T"] = "Therzok",
   },
   [1884] = {
     ["D"] = "메아리 섬에 사는 흑마법사 잘라제인이 듀로타의 정상적인 마법 흐름을 흐트러뜨려 놓았네. 그는 주주 해골이라는 오염된 우상으로 이런 일을 벌이고 있는데 메아리 섬의 오두막에 그 우상을 두었다네.$B$B그 우상은 야생의 동물과 식물을 타락시키고 어둡고 외진 곳에 사는 흑마법사와 지옥의 생물에게 힘을 부여하고 있지.$B$B그 주주 해골을 파괴해야 하네. 마법의 흐름이 영원히 바뀌어버리기 전에...",
     ["O"] = "주주 해골 4개를 파괴하고 센진 마을에 있는 운투와에게 가야 합니다.",
     ["T"] = "주주 해골",
+  },
+  [1885] = {
+    ["D"] = "$n? Not quite what I was expecting, considering Carkad himself has taken an interest to you. Looks can be deceiving though, right?$b$bEither way, you should go see him as soon as possible. You wouldn\'t want to know what happened to the last few that chose to ignore his summons.",
+    ["O"] = "Speak with Mennet Carkad in the Rogues\' Quarter of the Undercity.",
+    ["T"] = "Mennet Carkad",
   },
   [1886] = {
     ["D"] = "If you wish to join the Deathstalkers, Lord Varimathras\' elite guard, you will have to prove your worth.$b$bI will not lie to you, $n, this task could mean your death.$b$bI have some things that need attending to. I require the personal effects of Astor Hadren, a messenger who travels between Silverpine and the Undercity. I will leave the method of procurement to your discretion.$b$bIt will be better for you if you know less of the nature of this business. Succeed and I shall tell you more.",
@@ -5872,11 +6933,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "The slain elemental has produced an intensely glowing globe of water.  The contents of the globe are, at best, disgusting.  It would be safe to assume that whatever has befouled the water of Mystral Lake is most likely present in the water of the globe.$B$BIt\'s not exactly common knowledge who might be interested in such a find; perhaps the person who originally sent you out to the lake, Mastok Wrilehiss at Splintertree Post, might have an idea.",
     ["O"] = "잿빛 골짜기 토막나무 주둔지에 있는 마스토크 윌리히스에게 더럽혀진 물구슬을 가져가야 합니다.",
     ["T"] = "타락한 정령",
-  },
-  [1919] = {
-    ["D"] = "마법에 대한 지식이 점점 늘어가고 있군, 젊은 마법사여. 이제 진짜 훈련을 시작할 준비가 되었소? 우리가 치르고 있는 비밀 전쟁에 동참할 준비가 되었는가 말이오?$B$B그렇다면 스톰윈드 마법사 지구의 마법사의 성소에 있는 제니아 캐논과 대화하도록 하시오. 그녀가 보이지 않는 세계의 첫 창문을 열어 줄 임무를 알려줄 것이오.",
-    ["O"] = "스톰윈드에 있는 제니아 캐논과 대화해야 합니다.",
-    ["T"] = "제니아에게 보고",
   },
   [1920] = {
     ["D"] = "마법사 지구에 있는 고독한 은둔자 선술집에서 소란이 있었다는 보고가 들어왔습니다. 눈에 보이지 않는 괴이한 생물들이 선술집을 어슬렁거린다는데 그곳에 마력의 균열이 생긴 게 아닌지 걱정입니다.$B$B가서 선술집을 조사해보고 그 생물들을 잡아오도록 하세요. 선술집에서 현신의 주문서를 사용해 생물들이 보이게 해서 제압한 다음 속박의 상자를 사용해 붙잡으세요. 충분히 잡았으면 정령이 든 속박의 상자와 빈 상자, 그리고 주문서를 가지고 제게 돌아오도록 하세요.",
@@ -5903,35 +6959,35 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 8 Pristine Spider Silk to Wynne Larson in Stormwind.",
     ["T"] = "온전한 거미줄",
   },
-  [1941] = {
+  [1942] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "마나매듭 로브",
+    ["T"] = "Astral Knot Garment",
   },
-  [1943] = {
-    ["D"] = "트롤 마법사 다이노가 당신의 도움이 필요합니다. 그녀는 오그리마의 검은장미 오두막에 있으니 찾아가 보도록 하세요.",
-    ["O"] = "다이노와 대화해야 합니다.",
-    ["T"] = "다이노와의 대화",
+  [1945] = {
+    ["D"] = "For your services, I have arranged for the creation of your new robes, provided you can gather the needed materials...$B$BFor these robes, you must return to Ashenvale for the locks of hair from laughing sisters--dryads who gather near the Raynewood Retreat.$B$BWhen you have their hair, bring it to Kil\'hala, a troll tailor at the Crossroads in the Barrens.  He will be expecting you, and will fashion your robes.",
+    ["O"] = "Bring 12 Laughing Sister\'s Hairs to Kil\'hala at the Crossroads.",
+    ["T"] = "Laughing Sisters",
   },
-  [1944] = {
-    ["D"] = "전설적인 사비안 도시는 잿빛 골짜기 동부 깊은 곳에 자리 잡고 있습니다. 학식이 있는 자들 사이에서는 사비안의 고대 지식에 대한 이야기가 잘 알려졌죠. 전해지는 바로는 사비안의 물에는 거대한 마법의 힘이 있다고 합니다.$B$B그 물의 근원지를 찾아 견본을 가져와야 합니다. 이 병을 가지고 사비안으로 가세요. 폭포의 가장 높은 곳에서 가장 낮은 곳까지 물을 담아 내게 가지고 오도록 하세요. 그 고대 도시를 돌아다닐 때는 조심해야 합니다. 현재 폐허가 된 그곳을 점령한 사티로스는 자신들의 일에 간섭하는 마법사를 싫어하니 말입니다.",
-    ["O"] = "오그리마에 있는 다이노에게 사비안 폭포수 견본을 가져가야 합니다.",
-    ["T"] = "사비안의 폭포수",
+  [1946] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Nether-lace Garment",
   },
   [1947] = {
     ["D"] = "이제 마법사의 지팡이를 받을 때가 된 것 같군요. 이 임무를 시작하기 전에 먼저 먼지진흙 습지대에 사는 인간 은둔자 타베사와 얘기를 나누어보도록 하세요. 테라모어 서쪽, 습지대 깊숙한 곳에 있는 오두막집에 있을 겁니다.$B$B그녀는 지식이 아주 풍부한 사람이니 얘기를 나누면 도움이 될 거예요. 돌망치 폐허의 바로 북쪽, 테라모어 서쪽에 타베사의 작은 집을 찾을 수 있을 겁니다.",
     ["O"] = "타베사와 대화해야 합니다.",
     ["T"] = "습지대로의 여행",
   },
-  [1948] = {
-    ["D"] = "마법사의 지팡이를 만드는 건 쉬운 일이 아니죠. 다량의 희귀한 재료가 필요하고 많은 양의 마법력을 담을 수 있는 용기도 만들어야 한답니다. 이런 것들을 모아서 내게 가져오도록 하세요.$B$B이 양피지에 필요한 물건의 이름과 구하는 방법을 적어놓았어요. 이 목록에 적은 물건들을 그대로 가져오고 지시사항도 반드시 따르도록 하세요. 그렇지 않으면 지팡이를 만들 때 일이... 잘못될 수도 있으니...",
-    ["O"] = "먼지진흙 습지대에 있는 타베사에게 비취 1개와 벼락 맞은 나뭇가지를 가져가야 합니다.",
-    ["T"] = "강력한 물건",
+  [1950] = {
+    ["D"] = "I can help you with the book, but first you have to help me!$B$BThe tome you seek is in my magically locked strongbox.  To open it a special phrase must be uttered, and I can\'t remember the phrase!  Normally my assistant helps me remember these things but he\'s nowhere to be found.$B$BIf you want my book, then find my apprentice!  Ask around the race track--if you\'re lucky then someone has seen him.  Either drag him back here, or at least get my magic phrase from him so we can open my box!",
+    ["O"] = "Find the phrase to Tirth\'s strongbox, then return to Tirth.",
+    ["T"] = "Get the Scoop",
   },
-  [1949] = {
-    ["D"] = "당신에게 줄 지팡이를 만들려면 어떤 책에서 중요한 구절을 읽어야 합니다. 학자 틸스가 쓴 마력의 의식이라는 책이지요.$B$B이 세계의 거대한 도서관에도 없으며 내게도 이 책의 사본이 없답니다. 그래서 학자 틸스에게 직접 얘기를 하고 받아와야 해요.$B$B행운을 빌겠어요. 틸스는 한때 훌륭한 마법사이자 학자였는데 지금은 소금 평원에 있는 노움과 고블린 경주장에서 술과 노름에 빠져 지내고 있답니다.",
-    ["O"] = "소금 평원에 있는 학자 틸스와 대화해야 합니다.",
-    ["T"] = "숨겨진 비밀",
+  [1952] = {
+    ["D"] = "I\'ll go make the wands now.",
+    ["O"] = "Speak with Tabetha after her ritual.",
+    ["T"] = "Mage\'s Wand",
   },
   [1953] = {
     ["D"] = "이제 먼지진흙 습지대의 은둔자 타베사와 얘기를 나눌 때가 되었군요. 타베사가 강력한 마법사의 도구를 만드는 법을 가르쳐줄 겁니다.$B$B타베사의 오두막집은 테라모어 서쪽, 먼지진흙 습지대 깊은 곳에 있습니다.",
@@ -5943,10 +6999,25 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "먼지진흙 습지대에 있는 타베사에게 지옥의 보주를 가져가야 합니다.",
     ["T"] = "지옥의 보주",
   },
+  [1955] = {
+    ["D"] = "Now that we have a summoner\'s orb, we must exorcise the demon within it.  I can do that.  That\'s the easy part.$B$BYou\'re the one who has the hard job.  You\'re the one who has to kill the demon once it\'s out.$B$BAnd you\'ll have to be quick.  If you take too long then he\'ll jump back in the orb and we\'ll have to start over!$B$BSo get yourself ready.  Prepare your strongest spells and keep your potions handy, and go get a friend if you have one.  Because this isn\'t going to be pretty.",
+    ["O"] = "Kill the Demon of the Orb, then speak with Tabetha.",
+    ["T"] = "The Exorcism",
+  },
   [1956] = {
     ["D"] = "이제 악마를 제거했으니 마력원천을 찾아야 하겠군요. 유감스럽게도 마력의 원천의 힘이 셀수록 대개 오래되고 얻기가 어렵답니다. 운명의 장난이란 게 때론 참 웃기지, 그렇지 않나요?$B$B울다만으로 가서 흑요석 파수꾼을 물리치도록 하세요. 녀석은 덩치도 크고 힘도 장사인데다가 녀석의 마력원천에는 엄청난 마력이 들어있습니다!$B$B행운을 빌겠어요. 운이 없다면, 뭐... 다시 볼 수 없겠네요. 만나서 반가웠어요.",
     ["O"] = "흑요석 마력원천을 구해서 먼지진흙 습지대에 있는 타베사에게 가져가야 합니다.",
     ["T"] = "울다만의 마력원천",
+  },
+  [1957] = {
+    ["D"] = "We are almost finished, but this last step is the most perilous, $N.$B$BI have the empty summoner\'s orb and am ready to empower it.  We will do this by harnessing the energy of a mana rift.  I\'ll cast a spell that will temporarily open a rift, from which creatures, mana surges, will pour out.  You must defeat the mana surges and their power will be released, which I will then collect.$B$BKill enough mana surges before the rift closes and I will place all their collected energy in your orb.",
+    ["O"] = "Kill 12 Mana Surges in the allowed time limit.",
+    ["T"] = "Mana Surges",
+  },
+  [1958] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Celestial Power",
   },
   [1959] = {
     ["D"] = "언더시티의 마법사들이 도시 내에 마법 장애가 발생했다면서 이를 조사해 줄 호드의 마법사를 찾고 있다고 전갈을 보내왔습니다.$B$B자세한 내용은 언더시티의 마법 지구에 있는 아나스타샤 하트웰이 얘기해 줄 겁니다. 그녀를 찾아가 보시기 바랍니다.",
@@ -5963,6 +7034,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "조셉 그레고리안에게 리넨 옷감 10장과 달라란 마나석 6개를 가져가야 합니다.",
     ["T"] = "재료 수집",
   },
+  [1962] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Spellfire Robes",
+  },
   [1963] = {
     ["D"] = "The Warchief is too subtle in his methods. He is cautious to unleash the might of the Horde. Once we were stronger, mighty conquerors all. That pride we must regain, and the Shattered Hand will do so.$b$bWe build strength from the shadows and strike at the exposed, secretly laying our enemies low. A task you must complete for me, to prove your worth.$b$bThe troll Tazan trades with the pirates near Ratchet. He has information I must have. Kill him and bring me his satchel.",
     ["O"] = "Kill Tazan and bring his Satchel to Therzok in the Cleft of Shadow in Orgrimmar.",
@@ -5972,6 +7048,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "The Syndicate? I would never have suspected. It seems the lords of Alterac have fallen far in the years since their betrayal.$b$bLord Varimathras will be pleased to learn of this, and as you were so instrumental in this discovery, it would be fitting if you were the one to deliver it to him.$b$bAh, and how could I forget?$b$bWelcome to the Deathstalkers.",
     ["O"] = "Deliver Andron\'s Ledger to Varimathras in the Hall of the Dark Lady in the Undercity.",
     ["T"] = "죽음추적자",
+  },
+  [1998] = {
+    ["D"] = "Lord Varimathras has just sent me a missive about a threat to the Forsaken that must be immediately removed. His name is Fenwick Thatros, one whom Lord Varimathras believes is a leader of the undead that have taken root in Silverpine Forest.$b$bYour name came to mind immediately, $n. I have faith enough in your abilities that you will carry out this mission flawlessly.$b$bThe latest reports from the Deathstalkers in Silverpine indicate that Thatros can be found near the decrepit dock on Lordamere.",
+    ["O"] = "Kill Fenwick Thatros and bring his head back to Mennet Carkad in the Rogues\' Quarter of the Undercity.",
+    ["T"] = "Fenwick Thatros",
   },
   [1999] = {
     ["D"] = "The wizards of the Kirin Tor at Ambermill have stored away important documents pertaining to the current state of Dalaran. This we know from the admissions of one of our prisoners. Lord Varimathras has placed the duty of recovering them in the hands of the Deathstalkers.$b$bThis task falls to you, $n. You will need some equipment, however, and the knowledge of lockpicking. Speak with Estelle Gendry, our outfitter, and ask her for a set of tools before you set out.",
@@ -6023,10 +7104,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "광포한 엉겅퀴곰을 생포해 타나리운에게 데려가야 합니다.$B$B광포한 엉겅퀴곰을 생포하는 데 실패하고 덫을 잃으면, 타나리운 트리텐더에게 돌아가 다른 덫을 받아야만 합니다.",
     ["T"] = "역병에 걸린 땅",
   },
-  [2139] = {
-    ["D"] = "우리 종족은 이 땅에서 생존을 위해 너무나 큰 희생을 치르고 있소.$B$B자연의 수하들, 수많은 병든 동물들이 그대의 손에 피를 흘리며 죽어갔소. 그래도 아우버다인의 주민들은 그대에게 은혜를 입은 셈이지. 비록 잠시 동안이긴 했지만 숲의 고통을 덜어주었으니 말이오.$B$B그대의 마지막 임무가 하나 남았소만 또 살생을 해야 한다는 것을 미리 말해 두겠소. 이런 일로 그대를 부르는 것이 마지막이었으면 하는 바람이오.$B$B바샬아란 근처의 북동쪽 동굴에 우두머리 엉겅퀴곰이 살고 있소. 그 곰을 처치해주시오.",
-    ["O"] = "우두머리 엉겅퀴곰을 찾아서 처치해야 합니다.",
-    ["T"] = "타나리운의 희망",
+  [2138] = {
+    ["D"] = "As I had feared, the cure does not work.$B$BIt saddens me greatly to order the death of any of nature\'s beasts, but the sick and tainted thistle bears must be put down.$B$BReturn to the forest and destroy 20 rabid thistle bears, $N. It will most certainly not put a stop to the plague but it will slow down the damage the animals are doing to our forest and its inhabitants for a short time.",
+    ["O"] = "Cleanse the forest of 20 Rabid Thistle Bears and return to Tharnariun Treetender in Darkshore.",
+    ["T"] = "Cleansing of the Infected",
   },
   [2159] = {
     ["D"] = "안녕하십니까, 젊은 $C님. 저 좀 도와주지 않으시겠습니까? 돌라나르 마을로 가져다줘야 하는 약초 보따리가 있는데, 그늘 협곡에서 드루이드와 볼일이 남아 아직 떠날 수가 없습니다.$B$B저 대신 이 배달물을 좀 전해주지 않으시겠습니까? 돌라나르 여관주인 켈다미르에게 전달해야 하는 물건입니다. 돌라나르 여관은 남쪽으로 가는 길에 있습니다.",
@@ -6078,6 +7159,21 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Deliver Keryn Sylvius\'s package to Master Mathias Shaw at the Stormwind Barracks.",
     ["T"] = "Seek out SI: 7",
   },
+  [2206] = {
+    ["D"] = "Our operatives in the field are reporting heavy Defias activity south of Goldshire. The reports indicate that the Defias have taken over Jerod\'s Landing and are now using it as a way to smuggle large quantities of contraband from Redridge to Westfall.$B$BI need you to infiltrate the dock house and get me that shipping schedule, $N. You will probably find it buried deep in the pockets of the Dockmaster.$B$B...and $N, should you be discovered, SI:7 will disavow all knowledge of your existence.",
+    ["O"] = "Find the Defias Dockmaster and recover the Shipping Schedule for Master Mathias Shaw.",
+    ["T"] = "선적 일정 입수",
+  },
+  [2218] = {
+    ["D"] = "Another lost soul looking for guidance, eh? I suppose you want to find a purpose - your purpose. I\'ve seen it a thousand times, another hero looking for work.$B$BWell, today\'s your lucky day, friend. Hogral\'s got the cure for your ailment.$B$BHere\'s what you do: Take this road here up to Ironforge and make your way to the Forlorn Cavern. Once there, locate the thieves\' guild and speak with Hulfdan Blackbeard. He\'ll put you on the road to salvation.",
+    ["O"] = "Speak with Hulfdan Blackbeard in Ironforge.",
+    ["T"] = "Road to Salvation",
+  },
+  [2238] = {
+    ["D"] = "Ye see, the King be strip mining the quarry fer ore and gems. More riches than any one dwarf should see in ten lifetimes.$B$BThe Hidden Circle has values, $N. We value valuables. Can ye understand?$B$BNow we feels the King should be sharing some of that booty, but we don\'t want ol\' \'Stinkbeard\' to know he\'s sharin\' - if ye catch me drift.$B$BWe needs ye to speak with Onin MacHammar over by Gnomeregan and bring back a report. The crafty dwarf has hidden hisself amongst the lepers. Be careful.",
+    ["O"] = "Find Onin MacHammar by Gnomeregan.",
+    ["T"] = "Simple Subterfugin\'",
+  },
   [2239] = {
     ["D"] = "The Quarry? Yap, I see those monstrous armored steam tanks come by this post near every day.$B$BMy contacts to the east tell me that the tank starts off at Ironforge, makes a pickup at the Gol\'Bolar Quarry, stops over at Kharanos to refuel and then for some blasted reason, it takes the long way around past Gnomeregan, before reaching Ironforge to drop off the shipment.$B$BIt\'s all in the report, $r. Take it back to Hulfdan so he can plan the next step.",
     ["O"] = "Take Onin\'s Report back to Hulfdan in Ironforge.",
@@ -6087,6 +7183,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "자, 그럼 임무 얘기를 하지.$B$B카즈뮬의 석실이라는 비밀 석실이 있는데 그곳을 조사해야 하네. 문제는 이 방으로 들어가는 커다란 문이 잠겨져 있다는 것인데, 다행히 내가 그 문을 여는 방법을 안다네.$B$B내가 이 탁자 위에 있는 일지에 모두 적어뒀지. 지금 나와 내 동료는 이곳에서 꼼짝할 수가 없어서 말이야... 그러니 자네가 우리를 대신해 카즈뮬의 석실을 찾아야 하네!$B$B내 일지를 읽고 그 석실을 조사한 후 아이언포지에 있는 탐험가 연맹으로 가서 발굴조사단장 스톰파이크에게 보고하도록 하게.",
     ["O"] = "밸로그의 일지를 읽고 비밀 석실을 조사한 후 발굴조사단장 스톰파이크에게 보고해야 합니다.",
     ["T"] = "비밀 석실",
+  },
+  [2241] = {
+    ["D"] = "They say I\'m \'lovestruck,\' whatever that means.$B$BSure, I spend my every waking moment thinking about Syurna. Sure, my home is full of paintings and drawings of Syurna. Sure, I often go days without eating, sleeping, or drinking, while I lament about the love we could have had. Is that so wrong?$B$BNow she won\'t see me! ME! I\'ve tried sending her messages but she won\'t even talk to another person unless they are a rogue.$B$BCould you deliver this flower to her? Don\'t forget to tell her it\'s from Jannok.",
+    ["O"] = "Take Jannok\'s Rose to Syurna in Darnassus.",
+    ["T"] = "The Apple Falls",
+  },
+  [2242] = {
+    ["D"] = "We believe there is one being that may be able to help us understand what is happening to the forests of Teldrassil. Unfortunately, getting the creature to cooperate has proven disastrous.$B$BHe hides on a branch at the outskirts of the Oracle Glade. All who have so far approached the satyr, whether through force or diplomacy, have met with doom. Perhaps stealth is the answer, $N.$B$BFind what Sethir the Ancient carries in his packs and report back to me.",
+    ["O"] = "Find Sethir the Ancient and bring back any clues that you may discover to Syurna.",
+    ["T"] = "Destiny Calls",
   },
   [2258] = {
     ["D"] = "이보게, 자네만 괜찮다면 도움이 좀 필요하네. 나는 이름이 좀 알려진 연금술사인데 자네가 황야의 땅에서 재료 찾는 일을 도와주었으면 하네.$B$B재료를 넉넉히 비축해 두어야 하는데 몇 가지가 부족해서 말이야. 대머리수리 모래주머니 5개, 바위산코요테 송곳니 10개, 바위 정령 파편 5개가 필요하네. 물론 짐승들에게서 직접 얻어와야 하는 것도 있으니 자네가 싸움에 익숙한 체질이 아니라면 싸울 줄 아는 친구들을 찾아보도록 하게나.$B$B이 물건들을 가져오면 돈을 좀 주겠네. 해보겠나?",
@@ -6098,6 +7204,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Contact Erion Shadewhisper in Darnassus.",
     ["T"] = "에리온 셰이드위스퍼",
   },
+  [2260] = {
+    ["D"] = "Word of your deeds has spread far and wide, $N. So far, in fact, that Stormwind Intelligence has asked for you by name.$B$BThe journey is taxing and not without peril, but an opportunity to train under SI:7 should not be taken lightly.$B$BA new world awaits you, $N. Make your way to Old Town in Stormwind and speak with Renzik \"The Shiv\" at SI:7 headquarters.",
+    ["O"] = "Travel to Stormwind City and seek council with Renzik \"The Shiv.\"",
+    ["T"] = "Erion\'s Behest",
+  },
   [2278] = {
     ["D"] = "이 보물의 방 중앙에는 네 개의 거대한 백금 원반이 놓여 있는데, 각 원반은 근원을 알 수 없는 무수한 인장으로 꾸며져 있습니다. 이 원반을 손으로 건드리면 따끔거리는 느낌이 전해지면서 거대한 바위감시자의 모습이 앞으로 튀어나옵니다.$B$B\"안녕하십니까. 저는 지식의 파수꾼입니다. 창조주의 토석인 창조와 관련된 정보가 이 노르간논의 원반에 기록되고 보관되어 있습니다.\"$B$B당신은 이 세상에서 일찍이 발견된 적 없는 지식을 알게 된 것입니다!",
     ["O"] = "바위감시자와 대화하고 그가 알고 있는 고대의 지식을 배워야 합니다. 지식을 배운 후에는 노르간논의 원반을 가동해야 합니다.",
@@ -6107,6 +7218,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Touching the Discs of Norgannon once again makes your hand tingle.  This time, however, a strange grinding noise is heard from inside the discs.$B$BYour backpack suddenly becomes heavier than it was before.  Inside, you discover a miniature version of the discs!$B$BNo doubt, an item of this sort would be invaluable for someone interested in the ancient history of Azeroth.  The Explorers\' League in Ironforge is such a group, known throughout the Alliance; perhaps they can make good use of it.",
     ["O"] = "Take the miniature version of the Discs of Norgannon to the Explorers\' League in Ironforge.",
     ["T"] = "백금 원반",
+  },
+  [2280] = {
+    ["D"] = "Touching the Discs of Norgannon once again makes your hand tingle.  This time, however, a strange grinding noise is heard from inside the discs.$B$BYour backpack suddenly becomes heavier than it was before.  Inside, you discover a miniature version of the discs!$B$BNo doubt, an item of this sort would be invaluable for someone interested in the ancient history of Azeroth.  The sages of Thunder Bluff are such historians, known throughout the Horde; perhaps they can make good use of it.",
+    ["O"] = "Take the miniature version of the Discs of Norgannon to the one of the sages in Thunder Bluff.",
+    ["T"] = "백금 원반",
+  },
+  [2281] = {
+    ["D"] = "Sending you out in the field now would be suicide. Renzik doesn\'t need another dead rogue on his hands. Don\'t fret, though, $N - Renzik is going to get you up to speed.$B$BMake your way to the Redridge Mountains and speak with an associate of SI:7 named Lucius. You will find him hanging around the docks of Lakeshire with the other shady good-for-nothings.",
+    ["O"] = "Venture forth to Lakeshire in the Redridge Mountains and speak with Lucius.",
+    ["T"] = "Redridge Rendezvous",
   },
   [2282] = {
     ["D"] = "We\'ve been training thieves here for years! After all, not every rapscallion is born with the grace and finesse of old Lucius.$B$BUp off the road here you\'ll find Alther\'s Mill. I got a chest up there with something important inside. Go get it for me! Bring back that token and you\'ll receive your Certificate of Thievery!",
@@ -6118,15 +7239,45 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "울다만 발굴현장에서 값진 목걸이를 찾아 오그리마에 있는 드란 드로퍼스에게 가져가야 합니다. 목걸이는 파손된 것이라도 괜찮습니다.",
     ["T"] = "목걸이 회수",
   },
-  [2284] = {
-    ["D"] = "그 보석들이 울다만 어딘가에 있는 건 멍청이 말톤도 알고 있을 만큼 확실한 사실이오. 다시 돌아가서 찾아보도록 하시오.$B$B전에도 말했지만 우리가 입수한 정보가 정확하다면 이 목걸이에는 루비, 사파이어, 토파즈가 붙어있었소. 보석들을 찾아서 목걸이에 다시 붙이도록 하시오.$B$B보석들이 어디 있는 지야 누가 알겠소? 운이 좋으면 그 성기사의 유해에서 찾을 수 있을지도 모르지. 벌써 모두 털려버리지 않았다면 시체에 보석들이 남아 있지 않겠소?",
-    ["O"] = "울다만 깊은 곳에서 보석의 행방에 대한 단서를 찾아야 합니다.",
-    ["T"] = "목걸이 회수 - 2차 시도",
+  [2298] = {
+    ["D"] = "So there we were, about to start plottin\' out phase III when a couple o\' Magni\'s blockheads come bargin\' in here talkin\' bout some kind o\' heist and arresting some o\' the Hidden Circle.$B$BWell nobody puts the iron on old Blackbeard! The argumentations got heavy and thick and somehow yer name weres blurted out!$B$BMe advice? Take the first Gryphon out o\' Ironforge and get to Stormwind. Get yerself to Old Town and once there, talk to an old friend o\' mine named Renzik \"The Shiv.\"",
+    ["O"] = "Travel to Stormwind and seek out Renzik \"The Shiv.\"",
+    ["T"] = "Kingly Shakedown",
+  },
+  [2299] = {
+    ["D"] = "Where have you been, $N? Hulfdan\'s been looking all over the place for you. We thought the king may have put you in irons.$B$BGet to Ironforge as soon as possible and speak with Hulfdan!",
+    ["O"] = "Travel to Ironforge and speak with Hulfdan Blackbeard.",
+    ["T"] = "To Hulfdan!",
+  },
+  [2300] = {
+    ["D"] = "Renzik was looking for you, fish.$B$BI wouldn\'t keep Mathias\'s second in command waiting if I were you.",
+    ["O"] = "Travel to Stormwind and seek out Renzik \"The Shiv.\"",
+    ["T"] = "SI:7",
+  },
+  [2318] = {
+    ["D"] = "At an impasse of sorts, you know that you will need the book translated into a language you can understand.  There certainly are a number of people in the world who could do it; the closest location that might have someone who could, however, is the Kargath outpost in the Badlands.  Perhaps that is a good place to start.",
+    ["O"] = "Find someone who can translate the paladin\'s journal.  The closest location that might have someone is Kargath, in the Badlands.",
+    ["T"] = "Translating the Journal",
+  },
+  [2338] = {
+    ["D"] = "Droffers and Son Salvage aren\'t smart enough to restore the magic in the necklace, but I am.  All I want to do is study the necklace so I can learn to make them myself.  To do that, I will need your necklace.  Let me borrow it, and in exchange for the time I get to study it I will translate the journal for you.  While you are searching for the gems, I should have enough time to learn what I need to.$B$BIt\'s a simple deal, and no one else will be the wiser.  Whatcha wanna do?",
+    ["O"] = "Let Jarkal borrow the necklace.  In exchange, he will translate the journal for you.",
+    ["T"] = "Translating the Journal",
   },
   [2339] = {
     ["D"] = "일지 여기 있네. 번역도 다 됐지.$B$B내용을 보니 루비는 드워프가, 토파즈는 트로그가, 그리고 사파이어는 그림로크라는 트로그가 가지고 있다는군.$B$B목걸이의 효력을 되찾으려면 마력원천이 필요한데, 드란 드로퍼스는 이 사실을 모르고 있지. 마력원천을 찾으려면 이렇게 하게. 울다만 깊숙이 들어가 강력해 보인다 싶은 피조물들은 모조리 물리치게. 그러다 보면 분명히 마력원천을 얻을 수 있을 걸세.$B$B모든 걸 다 찾거든 내게 가지고 오고.",
     ["O"] = "울다만에서 목걸이에 필요한 보석 3개와 마력원천을 회수한 후 카르가스에 있는 자칼 모스멜드에게 가져가야 합니다. 자칼의 말에 의하면 울다만에서 가장 강한 피조물을 처치하면 마력원천을 얻을 수 있다고 합니다.$B$B일지의 내용을 보니 루비는 어둠괴철로 방어진에 숨겨져 있습니다.$B$B토파즈는 얼라이언스 드워프 근처에 있는 트로그 구역 중 하나에 있는 항아리에 숨겨져 있습니다.$B$B사파이어는 트로그의 우두머리인 그림로크가 가지고 있습니다.$B$B마력원천은 울다만에서 가장 강한 피조물을 처치하면 얻을 수 있습니다.",
     ["T"] = "보석과 마력원천 찾기",
+  },
+  [2340] = {
+    ["D"] = "Any necklace setting and gem will work, so long as they are the same material.  This power source, however, is what will bring the magic back to the necklace... I hope.$B$BI\'ll gladly supply the gems needed for your version of the necklace, so long as the power source actually works.$B$BHead to Orgrimmar and keep your end of the bargain with Droffers and Son Salvage.  Just keep your mouth shut about our deal, and when you get back I might have a wonderful surprise for you.",
+    ["O"] = "Deliver the Necklace and Gem Salvage to Dran Droffers in Orgrimmar.",
+    ["T"] = "Deliver the Gems",
+  },
+  [2341] = {
+    ["D"] = "As Dran and Malton Droffers begin to squabble over their new salvage, half of the deal is now complete.  A trip to the Badlands is now in order to finish things up, as Jarkal Mossmeld in Kargath might have a special reward waiting for you there.",
+    ["O"] = "Visit Jarkal Mossmeld in Kargath to see if he was successful.",
+    ["T"] = "Necklace Recovery, Take 3",
   },
   [2342] = {
     ["D"] = "가레트 가문의 사람이 이런 빗자루로 박쥐 우리나 쓸고 있다니 말도 안 돼요! 이 지긋지긋한 일로 모은 몇 푼 안 되는 돈을 당신에게 투자하겠으니 제 신분을 좀 올려 주세요.$B$B우리 가레트 가문이 채굴꾼으로 열심히 일했을 때부터 울다만의 남쪽 대전당에는 가레트 가문의 무기가 든 궤짝이 있어요. 그게 없으면 전 영원히 이곳에서 이 지긋지긋한 박쥐들을 따라다니며 청소나 하게 될 거예요.$B$B우리 가문의 보물을 찾아 제게 가져와 주세요! 제가 타고난 권리를 회복하도록 도와주세요!",
@@ -6138,15 +7289,40 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Return the Horns of Nez\'ra to Arantir\'s Shadow in Lakeshire.",
     ["T"] = "OLD Horns of Nez\'ra",
   },
+  [2359] = {
+    ["D"] = "I\'ve been staking out this tower for weeks, $N. Recently a major shipment came through from Duskwood, and along with it came those guards.$B$BWhat are they? Your guess is as good as mine. I can tell you one thing - they aren\'t human.$B$BAnyhow, the shipment had a chest - which is what I assume those abominations are guarding. The zombie with the spikes holds a key we\'ll need.$B$BGet that key, get in the tower, and uncover whatever is in that chest. Take your findings back to Mathias.",
+    ["O"] = "Steal the Defias Tower Key, break into the Defias Tower and uncover the contents of the Duskwood Chest. Take whatever information you find back to Mathias Shaw in Stormwind. Read Kearnen\'s Journal to gain insight about the tower.",
+    ["T"] = "Klaven\'s Tower",
+  },
   [2360] = {
     ["D"] = "너무 일찍, $N. SI : Westfall의 비정상적으로 무거운 Defias 활동을보고하는 7 건의 정찰. Defias가 Sentinel Hill 남동쪽에있는 버려진 연합 감시탑을 인수하여 Redridge의 물건을 밀입국시키는 데 사용하고있는 것으로 보입니다. $B$BWestfall에 연락하여 귀하의 브리핑을 위해 Kearnen 요원에게 연락하십시오. 당신은 그녀가 타워 근처에 숨어있는 것을 발견 할 것입니다. $B$B... 그리고 $N, 당신은 발견되어야합니다, SI : 7은 당신의 존재에 대한 모든 지식을 부인할 것입니다.",
     ["O"] = "Travel to Westfall and find Agent Kearnen for your debriefing.",
     ["T"] = "Mathias and the Defias",
   },
-  [2361] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "목걸이 복원",
+  [2378] = {
+    ["D"] = "You have served the Deathstalkers well, $N, but perhaps it is time for you to venture outward. While you have shown aptitude in the ways of stealth and deception, you still require much training.$B$BThe Deathstalkers have allies within the Shattered Hand. Seek out those that would assist us - find Shenthul in Orgrimmar.",
+    ["O"] = "Journey to Orgrimmar and speak with Shenthul at the Cleft of Shadow.",
+    ["T"] = "Find the Shattered Hand",
+  },
+  [2379] = {
+    ["D"] = "Your determination alone is not enough to overcome the obstacles that lay ahead of us.$B$BSpeak with Zando\'zan to begin your training as an operative of the Shattered Hand.$B$BIt is only when you have mastered the practices of stealth and thievery that you may take the next step towards your destiny.",
+    ["O"] = "Speak with Zando\'zan at the Cleft of Shadow.",
+    ["T"] = "Zando\'zan",
+  },
+  [2380] = {
+    ["D"] = "A master of stealth and deception you are not, however, all of that can and will change. You\'ve obviously impressed those in charge with your meager skills, as the great Shenthul has asked for you by name.$B$BTake the road north of here to Orgrimmar and speak with Shenthul in the Cleft of Shadow.",
+    ["O"] = "Speak with Shenthul at the Cleft of Shadow in Orgrimmar.",
+    ["T"] = "To Orgrimmar!",
+  },
+  [2381] = {
+    ["D"] = "I don\'t mean to scare you, $N, but the last five thieves I sent to steal the southsea treasure came back to me in pieces.$B$BSouth along the coast you\'ll find Tide Razor, the southsea freebooter\'s ship. Nestled in the hold is the payoff - the southsea treasure. On the second level of that ship is the pirate\'s den, a place where they train all of their thieves.$B$BBoard that ship, steal the treasure, and bring it back to me. Use the pirate\'s den if you need to practice your thievery, but be careful!",
+    ["O"] = "Bring the Southsea Treasure back to Wrenix the Wretched in Ratchet. Do not forget to get an E.C.A.C. and Thieves\' Tools from Wrenix\'s Gizmotronic Apparatus. You will need both of these items to complete your mission.$B$BShould you be attacked by any unusually hostile parrots, use your E.C.A.C.!",
+    ["T"] = "Plundering the Plunderers",
+  },
+  [2382] = {
+    ["D"] = "Zando\'zan has seen it! Yes, the day comes! Thrall\'s death... the dagger in his back, poison seeping through to his every vein... Zando\'zan has said too much.$B$B$N! Zando\'zan has a task for $N! $N must travel to Ratchet, east of the Crossroads, and speak with Wrenix the Wretched. Go!",
+    ["O"] = "Travel to Ratchet and speak with Wrenix the Wretched.",
+    ["T"] = "Wrenix of Ratchet",
   },
   [2383] = {
     ["D"] = "자네가 없는 동안 양피지가 하나 도착했네, $N.$B$B시간이 있다면 읽어보게. 내가 착각한 것이 아니라면 이건 상급 전사, 프랑이 보낸 걸세. 준비되는 대로 그에게 가보게. 이야기를 나누고 싶어할 테니... 동굴 밖에 있는 그늘에서 자네를 기다리고 있을 거야.",
@@ -6173,15 +7349,35 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Take the reward voucher to Bena Winterhoof in Thunder Bluff.",
     ["T"] = "백금 원반",
   },
+  [2458] = {
+    ["D"] = "The Venture Company... Perhaps you have heard of them?$B$BFor one year we have worked on planting an agent deep within their ranks. Through much hard work and careful planning, we succeeded.$B$BRecently we received word that the Venture Co. are planning something on a grand scale. Go north of the Sludge Fen to the Venture Co. tower and contact our undercover agent, Taskmaster Fizzule.$B$BWhen you find the tower, use this flare gun, then approach Fizzule and show him the salute of the Shattered Hand.",
+    ["O"] = "Travel to the Venture Co. Tower, north of the Sludge Fen and contact the Shattered Hand\'s covert operative, Taskmaster Fizzule.$B$BWhen the tower is in sight, use the Flare Gun to signal your arrival to Taskmaster Fizzule. Fire off TWO flares, then approach Taskmaster Fizzule and perform the Shattered /Salute.$B$BThese actions must be performed in the correct order, as Fizzule will attack and terminate any person he does not recognize.",
+    ["T"] = "Deep Cover",
+  },
   [2459] = {
     ["D"] = "The emerald... It is missing! My dreamcatcher has been damaged!$B$BThere is a band of Gnarlpine mystics located to the north of Starbreeze. I have heard reports that their leader, Ferocitas the Dream Eater has been wearing a necklace that glows green in the night. Now seeing my dreamcatcher, I am sure that he has stolen my emerald... He would never realize that its power is useless to him.$B$BFind this missing jewel, $N. And, while you\'re there, clear out some of the corrupted mystics as well.",
     ["O"] = "Tallonkai Swiftroot in Dolanaar wants you to kill 7 Gnarlpine Mystics and find the Missing Jewel.",
     ["T"] = "꿈을 먹어치우는 페로시타스",
   },
+  [2460] = {
+    ["D"] = "As a rogue of the Shattered Hand, it is imperative that you learn the Shattered Salute. It is the only way to truly identify another member of the Hand.$B$BWatch, learn, repeat.",
+    ["O"] = "Perform the Shattered Salute on Shenthul.",
+    ["T"] = "The Shattered Salute",
+  },
   [2478] = {
     ["D"] = "현장감독 실릭시즈에게서 탑 열쇠를 훔쳐내시오. 나중에 꼭 필요할 테니 열쇠를 손에 넣으면 잘 지니고 있으시오.$B$B이 탑에는 독이 퍼져 모든 것이 약해져 있다는 사실을 잊지 말고 이 탑에 사는 놈들을 인정사정 볼 것도 없이 처치하시오!$B$B반드시 갤리윅스를 암살하고 그 증거로 머리카락을 가져오시오. 그런 다음 그의 금고를 열고 잔질의 혼합물을 훔치시오. 갤리윅스의 머리카락과 혼합물을 오그리마에 있는 셴툴에게 가져가시오.",
     ["O"] = "현장감독 실릭시즈에게서 실릭시즈의 탑 열쇠를 훔쳐낸 다음, 돌연변이 투자개발회사 일꾼 2명과 투자개발회사 순찰대원 2명, 그리고 투자개발회사 망꾼 2명을 처치해야 합니다.$B$B총감독 갤리윅스를 암살하고 그의 머리카락을 손에 넣은 후, 갤리윅스의 금고를 열고 잔질의 변화된 혼합물을 훔쳐야 합니다. 그 혼합물과 갤리윅스의 머리카락을 오그리마에 있는 셴툴에게 가져다주고 다음 지시를 받으십시오.",
     ["T"] = "미션 임파서블: 잘하면 가능",
+  },
+  [2479] = {
+    ["D"] = "Take a sample of the mixture to Serge Hinott in Tarren Mill.$B$BIf anyone can cure you, it\'s Serge. Live long enough and Serge will show you the ways of poison creation and use.",
+    ["O"] = "Travel to Tarren Mill in Hillsbrad Foothills and deliver the Sample of Zanzil\'s Mixture to Serge Hinott.$B$BTo get to Tarren Mill, take the Zeppelin to the Undercity and follow the road south through Silverpine and towards Hillsbrad. Follow the signs!",
+    ["T"] = "Hinott\'s Assistance",
+  },
+  [2480] = {
+    ["D"] = "I have never seen such wondrous results from a poison! Zanzil you say? Never heard of him, however, I must commend him on the creation of this concoction.$B$BSo, I am to cure you of this and then teach you how to make use of the poison?$B$BGive me a few moments to examine the toxin, $N.",
+    ["O"] = "Wait for Serge Hinott to complete the cure.",
+    ["T"] = "Hinott\'s Assistance",
   },
   [2498] = {
     ["D"] = "I have just received word that  Denalan at Lake Al\'Ameth has discovered what may be the cause of the tumors that plague the timberlings. Please speak with him, and tell him I sent you.$B$BMake haste, $N; he needs our help.",
@@ -6232,6 +7428,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "이곳에 사는 나무옹이 주술사가 잠자는 드루이드의 영혼과 육체를 분리하는 방법을 발견했소. 그래서 펄볼그들이 내 육체를 마음대로 조종해 바네실 지하굴에 들어오는 자들을 공격한다오. 지금 나는 에메랄드의 꿈에 갇혀 이들을 막을 힘이 없다오.$B$B나를 도와줘야만 하오. 나무옹이 주술사들이 지니고 다니는 기이한 부적이 이 의식에 사용되는데, 그걸 한번 살펴보고 싶소. $N, 부탁이니 그 부적을 하나 가져다 주시오.",
     ["O"] = "바네실 지하굴에 있는 오벤 레이지클로에게 부두교 주술사 부적을 가져가야 합니다.",
     ["T"] = "잠자는 드루이드",
+  },
+  [2561] = {
+    ["D"] = "After examining this charm, $N, I see now what must be done. Please take it, and do as I ask.$B$BYou are to explore the deepest areas of the Ban\'ethil Barrow Den. There, you will find my soulless body... Although I regret what I am about to tell you, I see no other way to free myself from the control of the Gnarlpine.$B$BIn order for me to escape them, you must kill my physical form.  Once that is done, use the voodoo charm on my fallen body. After you have completed this task, please return to me.",
+    ["O"] = "Oben Rageclaw wants you to kill his soulless body, and then use the Voodoo Charm.",
+    ["T"] = "발톱의 드루이드",
   },
   [2582] = {
     ["D"] = "Ah, $N, welcome back. It seems you enjoyed the effect of the robust, operational imbue, derived from snickerfang. Be warned, while the immediate effect is a titanic burst of strength, the long term effects on your spirit and intelligence could be hazardous.$B$BWith that said, do you require more? If so, bring me another three snickerfang jowls, two blasted boar lungs, and one scorpok pincer.",
@@ -6288,15 +7489,45 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Marin Noggenfogger wants you to speak with Sprinkle in Gadgetzan.",
     ["T"] = "In Good Taste",
   },
+  [2607] = {
+    ["D"] = "It appears as if you\'ve brought back more information than even I expected. This certainly is a strange turn of events, $N.$B$BA cure? Hrm... Go down to the cellar and speak with Doc Mixilpixil - he may be able to help.",
+    ["O"] = "Speak with Doc Mixilpixil in the cellar of the Barracks.",
+    ["T"] = "The Touch of Zanzil",
+  },
+  [2608] = {
+    ["D"] = "Oh my, you look like death. Correction - I\'ve seen death, you look worse than death. You, $g sir:miss;, would be what death coughed up at his last physical.$B$BHah! You hear that Noarm? Write that one down!$B$B*Cough* Hrm yes, in order for me to help you, I\'ll need to draw some blood. Don\'t worry, it only hurts the first few... fifty times or so... /lay down when you\'re ready for the treatment, $N.",
+    ["O"] = "/Lay down to be examined by Doc Mixilpixil. How can he find the cure if he can\'t find the cause?",
+    ["T"] = "The Touch of Zanzil",
+  },
   [2609] = {
     ["D"] = "It\'s unanimous, $N. You\'ve got the \'itis.\'$B$BLuckily, I have a cure for the \'itis.\'$B$BHere\'s what I need: One bundle of simple wildflowers, one leaded vial, one bronze tube, and last but certainly not least, one spool of light chartreuse silk thread. Ol\' Emma left a spool of it for me at \'The Finest Thread.\' You can find the shop along the canals.$B$BHurry along now, $N, and try not to touch anyone until you\'re cured. Oh, and Dr. Montgomery says you need a shower -- his words, not mine.",
     ["O"] = "Bring Doc Mixilpixil one bundle of Simple Wildflowers, one Leaded Vial, one Bronze Tube, and one Spool of Light Chartreuse Silk Thread. The \'itis\' doesn\'t cure itself, young $g fella:lady;. ",
     ["T"] = "The Touch of Zanzil",
   },
+  [2621] = {
+    ["D"] = "Regret. It is all I have now. One bad decision resulting in several horrible outcomes. If only I had waited for those orders. Maybe they would have detailed the horrors that awaited us in those cursed lands! Maybe they were to redirect us to another detail? Ultimately, it was my fault. All of it was my fault.$B$BSo here I stand, awaiting orders. I must know. I must have those orders.$B$BDispatch Commander Ruag resides in Stonard. Find him and find out what became of the orders.",
+    ["O"] = "Speak to Dispatch Commander Ruag in Stonard.",
+    ["T"] = "The Disgraced One",
+  },
+  [2622] = {
+    ["D"] = "The orders? What could you possibly want with the orders?$B$BWhat are you implying, $N? Of course I relayed those orders! The soldiers I sent the orders with were ambushed and brutally beaten by murlocs. Only one survived, if you can call that surviving. He can hardly speak, cannot walk, and must be fed through a tube. If you want to know what happened to those orders, speak with Bengor. I\'m sure he is around here somewhere... and, $N, be mindful of what you stick your nose into - it may get bitten off.",
+    ["O"] = "Speak to Bengor.",
+    ["T"] = "The Missing Orders",
+  },
+  [2623] = {
+    ["D"] = "Orders were given by the dispatch commander. We took... took orders. On way to Blasted Lands, ambushed.$B$BMurlocs... Many murlocs... One named Swamp Talker. Took orders from my hands as spear thrust into my skull. East... cave....$B$B<Bengor passes out.>",
+    ["O"] = "Retrieve the Warchief\'s Orders and return them to the Fallen Hero of the Horde.",
+    ["T"] = "The Swamp Talker",
+  },
   [2641] = {
     ["D"] = "제가 꼬마였을 때는 언니가 요리를 도맡아 했었죠. 그런데 얼마나 맛이 없던지... 아예 먹을 수도 없는 음식도 있었어요. 저는 참다 못해 이른바 저만의 \"비밀\" 재료를 찾게 됐죠! 그걸 집어넣기만 하면 무엇이든지... 음, 정말 기절할 정도로 맛있어진다고요!$B$B그게 뭐냐고요? 바로 제비수염버섯이에요. 이 구역질 나는 음료를 마실 만한 걸로 만들고 싶다면 동부 내륙지로 가서 작은 호수를 찾아보세요.$B$B참! 제비수염버섯은 물속에서만 자란다는 것도 기억하시고요.",
     ["O"] = "가젯잔에 있는 스프링클이 제비수염버섯을 하나 구해 가지고 와 달라고 했습니다.",
     ["T"] = "스프링클의 비밀 재료",
+  },
+  [2661] = {
+    ["D"] = "Here\'s the Violet Powder, $N. Take it to Marin and tell him he owes me a favor!",
+    ["O"] = "Sprinkle wants to you take the Violet Powder to Marin Noggenfogger in Gadgetzan.",
+    ["T"] = "Delivery for Marin",
   },
   [2662] = {
     ["D"] = "Now, to mix this powder in with the dew.$B$BCome back and talk to me in a minute... after I have perfected the fabulous Noggenfogger Elixir!",
@@ -6308,6 +7539,21 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "라젤리크의 하수인 9명, 세바인의 하수인 3명, 알리스타즈의 하수인 3명, 그롤의 하수인 3명을 해방시킨 후, 호드 영웅의 넋에게 가야 합니다. 돌 가까이 있지 않으면 임무에 실패하게 됩니다.",
     ["T"] = "속박의 돌",
   },
+  [2701] = {
+    ["D"] = "Please, take from this a relic of old. We no longer have a use for the item.$B$BMay it serve you well in your fight against the legion.",
+    ["O"] = "Open the chest and claim your reward.",
+    ["T"] = "Heroes of Old",
+  },
+  [2702] = {
+    ["D"] = "You have honored me with your nobility and heroism, $N.$B$BYou have also honored them...",
+    ["O"] = "Speak to Corporal Thund Splithoof.",
+    ["T"] = "Heroes of Old",
+  },
+  [2721] = {
+    ["D"] = "As one chapter of your adventure closes, another one begins, $N.$B$BOne of my men is still unaccounted for, lost somewhere in the Blasted Lands. I am talking about Lieutenant Kirith, of course.$B$BAs I had mentioned earlier, we were both imprisoned and tortured by Allistarj, but poor Kirith, his strength of will faltered. I could hear the experiments from my cage; the tortured screams rang through the halls of the cave. That was the last I saw or heard of Kirith.",
+    ["O"] = "Find out what became of Lieutenant Kirith.",
+    ["T"] = "Kirith",
+  },
   [2741] = {
     ["D"] = "",
     ["O"] = "",
@@ -6318,15 +7564,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "린지를 호위해 쿠엘다닐 오두막을 빠져나간 후 그가 동쪽 전망대 절벽에 숨겨두었다는 비밀 물건을 찾아야 합니다.",
     ["T"] = "갇혀 있는 린지",
   },
-  [2745] = {
-    ["D"] = "흠. 재미있는 얘기지만 가볍게 여겨서는 안 될 얘기로군요. 좋습니다, 당신을 도와드리도록 하지요. 그런데 당신이 해야 할 일은 정의로운 행동이지만, 그러니까... 합법적이지 못하게 정의를 실현하는 것입니다. 끝까지 해내려고 한다면 말입니다.$B$B라스코발과 마르존을 신속하게 처리해야 합니다. 할 수 있을 것 같습니까?$B$B자, 결정하시기 바랍니다. 이 일을 하시겠다면 서둘러 성으로 가서 내 오랜 노움 친구 티리온을 찾으시기 바랍니다. 그 친구는 지금 2주째 라스코발을 감시하고 있답니다. 그 친구라면 당신을 도와줄 수 있을 겁니다.",
-    ["O"] = "스톰윈드 성에 있는 티리온과 대화해야 합니다.",
-    ["T"] = "성 잠입",
+  [2743] = {
+    ["D"] = "Let us not mince words, $r; my time here is limited.$B$BYou must destroy the triad of power which protects the demon lord, Razelikh. Doing so will not be as simple a task as freeing a damned soul.$B$B<Kirith grins.>$B$BYou see, each of Razelikh\'s underlings wears a third of an amulet of Razelikh\'s creation around their neck. The very same amulet you will need in order to summon the arch demon.$B$BReturn to Trebor and tell him what is required to summon Razelikh. He will be able to instruct you further.",
+    ["O"] = "Return to the Fallen Hero of the Horde with your findings.",
+    ["T"] = "The Cover of Darkness",
   },
-  [2746] = {
-    ["D"] = "티리아스가 일을 더 빨리 진행하기를 원하는 거군? 좋아. 그렇게 하도록 하지. 하지만 난 아직 준비가 안 됐고 이건 알아두라고. 어려운 일은 내가 하겠지만 손을 더럽히는 일을 하는 건 당신이오. 알겠소? 좋아.$B$B자, 계획을 실행하기 전에 우선 당신이 가지고 와야 할 물건이 몇 가지 있지. 난 저 첩보로봇을 이용해 근위병을 지나갈 수 있을만한 완벽한 변장술의 대가요.$B$B비단이랑 사과 두 개를 가지고 오시오. 비단을 구하는 건 당신 몫이지만, 도시를 막 벗어나면 클라라의 조그만 농장이 있는데 그곳에 딱 알맞은 용도의 사과가 있다오.",
-    ["O"] = "스톰윈드에 있는 티리온에게 비단 옷감 3개와 클라라의 싱싱한 사과 2개를 가져가야 합니다.",
-    ["T"] = "변장에 필요한 물건",
+  [2744] = {
+    ["D"] = "The triad is protected by Razelikh.$B$BIn exchange for their servitude, Razelikh granted each of them nearly unlimited power within the Blasted Lands. The amulet pieces are each attuned to the lifeforce of their owner, granting them immortality. As long as they remain within the Blasted Lands, they cannot be slain, their life spans extended until the end of days.$B$BThere is one who may be able to assist you further, $N. Travel to Azshara and find the demon hunter, Loramus Thalipedes. Search the islands.",
+    ["O"] = "Speak with Loramus Thalipedes in Azshara.",
+    ["T"] = "The Demon Hunter",
   },
   [2747] = {
     ["D"] = "",
@@ -6368,10 +7614,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "오그리마에 있는 오로크 오모쉬에게 튼튼한 철제 마울 2개, 은도금한 청동 장화 2개, 그리고 은도금한 청동 건틀릿 2개를 가져가야 합니다.",
     ["T"] = "광란의 뿔",
   },
-  [2755] = {
-    ["D"] = "이 오로크는 우는 게 아니오. 눈에 먼지가 들어갔을 뿐.$B$B<눈물을 훔쳐내는 오로크>$B$B이 오로크가 당신에게 가르쳐줄 오모쉬 집안의 마지막 비밀이 하나 남았소. 덕분에 이 오로크 행복하게 눈을 감을 수 있겠소.$B$B오모쉬 집안에 대대로 내려오는 기쁨의 춤을 따라하면 철제 장갑을 만드는 법을 가르쳐 주리다!",
-    ["O"] = "오모쉬가 추는 기쁨의 춤을 보고 배워야 합니다.",
-    ["T"] = "오모쉬의 기쁨",
+  [2756] = {
+    ["D"] = "In the time of legends, Aturk would crush the skulls of his enemies and grind the bone into a fine powder for use in filament. Long gone are those days, $r. The Warchief calls for peace among the clans. Old enemies are now only watched with weary eyes!$B$BUnbelievable, I know, but such is the will of Thrall.$B$BEnough lamenting! You are here to learn, and learn you will! Bring me four steel breastplates and four steel helms and you will gain a taste of war!",
+    ["O"] = "Bring four Steel Breastplates and four Steel Plate Helms to Aturk the Anvil in Orgrimmar.",
+    ["T"] = "The Old Ways",
+  },
+  [2757] = {
+    ["D"] = "Listen, kid, you\'re not gonna learn anything hanging around here.$B$BI know a guy who knows a guy. He hangs around the smithy in Booty Bay. If you show him this insignia, he\'ll tell you all about mithril.$B$BSo whadd\'ya say? Leave this kid stuff to the babies in diapers, $N -- it\'s time to move on.$B$BIf you\'re interested, his name\'s McGavan. Show him this trinket and he\'ll recognize your commitment.",
+    ["O"] = "Speak with McGavan in Booty Bay.",
+    ["T"] = "Booty Bay or Bust!",
   },
   [2758] = {
     ["D"] = "When I was about your age, a dwarf by the name of Galvan took me under his wing and trained me in the ways of the armorsmith. Before he left for Booty Bay, he made me promise to train all those with the desire and determination to advance in the craft of blacksmithing -- so here I am -- all these years later.$B$BSo, now it\'s time for you to learn a little something. Make me six golden scale bracers and you will learn where smithing comes from, $N.",
@@ -6387,6 +7638,31 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Most of our recruits never make it to Booty Bay, $N. The shine of the insignia is enough to trigger the loot lust in even the staunchest of blacksmiths. Fools they be, as the insignia is a drop in the bucket compared to the wealth of items you\'ll see!$B$BFind Galvan the Ancient and show him this pin. His residence is far to the north, between Zul Gurub and the Mosh\'Ogg ogre mound.",
     ["O"] = "Speak with Galvan the Ancient in Stranglethorn Vale.",
     ["T"] = "미스릴 대장조합",
+  },
+  [2761] = {
+    ["D"] = "Many blacksmiths believe that mining and smithing are separate, independent jobs; but can there be blacksmithing without mining? Ah ha -- it is an impossibility! The accomplished blacksmith must also be an accomplished miner.$B$BShow Galvan that you are capable, $N. Bring me forty bars of iron and forty bars of mithril. For this, Galvan will teach you the ways of the ornate mithril pants!",
+    ["O"] = "Bring forty Mithril Bars and forty Iron Bars to Galvan the Ancient in Stranglethorn.",
+    ["T"] = "Smelt On, Smelt Off",
+  },
+  [2762] = {
+    ["D"] = "It is said that truesilver is stronger and more durable than mithril. Galvan does not disagree with this assessment of the minerals, but contrary to its name, truesilver is not true! Mithril is a far nobler mineral! HAH! Regardless, for this lesson you will need to find the great silver deceiver, $N.$B$BBring me forty bars of mithril and five bars of truesilver. In exchange, you will be taught the secret of ornate mithril gloves and more importantly, learn that truesilver is a liar!",
+    ["O"] = "Bring forty Mithril Bars and five Truesilver Bars to Galvan the Ancient in Stranglethorn.",
+    ["T"] = "The Great Silver Deceiver",
+  },
+  [2763] = {
+    ["D"] = "The harvesting of precious gems is of utmost importance to our craft, $N. Few gems are more precious than the citrine. The magical properties we imbue into our goods are amplified greatly by the presence of citrine.$B$BFor this lesson, we will fortify forty bars of mithril with four citrines. The result will be a better understanding of magical gemology and the knowledge to create ornate mithril shoulders.",
+    ["O"] = "Bring forty Mithril Bars and four Citrines to Galvan the Ancient in Stranglethorn.",
+    ["T"] = "The Art of the Imbue",
+  },
+  [2764] = {
+    ["D"] = "If you are ready to conclude your training with Galvan, you should journey to Gadgetzan.$B$BThere, you will find my finest pupil: Trenton Lighthammer. He has much to teach you in the ways of ornate mithril. Otherwise, remain here and learn!$B$BOh, Gadgetzan is in Tanaris, of course!",
+    ["O"] = "Speak with Trenton Lighthammer in Gadgetzan.",
+    ["T"] = "Galvan\'s Finest Pupil",
+  },
+  [2765] = {
+    ["D"] = "When you first came to me, I knew that you would turn out to be one of my finest pupils! It was without hesitancy that you gave up a trinket of some power to McGavan. You did this only so that you could meet me. Such blind faith and devotion to the craft should be rewarded.$B$BYou have attained expertise over blacksmithing, $N. Reap the rewards!",
+    ["O"] = "Claim your reward from Galvan the Ancient!",
+    ["T"] = "Expert Blacksmith!",
   },
   [2766] = {
     ["D"] = "금속으로 만들어진 이상한 알 모양의 장치를 찾았습니다. 손잡이 하나를 만지작거리다 보니 알이 작동하면서 노움 로봇 장치로 변합니다! 로봇 알 속에서 소음과 함께 목소리가 들려옵니다.$B$B\"전 오글소프 오브노티쿠스라고 해요. 제 유도 로봇이 불시착했는데 로봇을 찾아주면 사례를 할게요. 이 탐지기를 로봇에게 가져가 주세요!\"$B$B\"방금 로봇의 현재 위치를 산출해 봤는데 거친흉터 골짜기 근처의 동굴에 있네요!\"",
@@ -6413,6 +7689,21 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "소금 평원에 있는 위즐 브라스볼츠에게 가즈릴라의 전기 비늘을 가져가야 합니다.",
     ["T"] = "Gahz\'rilla",
   },
+  [2771] = {
+    ["D"] = "It seems as if master had this planned from the start. I was not taught to create the items which you learned to create and you were not taught the items which I learned to create.$B$BThe master is wise, $N. We shall teach each other!$B$BShow me how to make a mithril coif and ornate mithril shoulders and I shall show you how to create an ornate mithril helm.",
+    ["O"] = "Bring two Mithril Coifs and one Ornate Mithril Shoulder to Trenton Lighthammer.",
+    ["T"] = "A Good Head On Your Shoulders",
+  },
+  [2772] = {
+    ["D"] = "At last year\'s All-Valley Blacksmithing Championship, all those who watched saw my leg get swept from under me by a cowardly dog from the Venture Co. Foundry. What they didn\'t know, however, was the reason I was able to continue and ultimately win the tournament: That\'s right, ornate mithril boots!$B$BI will need to learn how to craft ornate mithril pants for this year\'s tournament, however, as a Venture Co. shredder is an entrant! Teach me the way of the pants and learn the way of the boot!",
+    ["O"] = "Bring two Heavy Mithril Boots and one Ornate Mithril Pants to Trenton Lighthammer.",
+    ["T"] = "The World At Your Feet",
+  },
+  [2773] = {
+    ["D"] = "Around these parts I am known as the Mithril Kid. I supply ornate mithril to adventurers from around the world.$B$B<Trenton whispers.>$B$BLittle do they know that I do not know the technique to fashion ornate mithril gloves. Shhhh! This will be our little secret.$B$BTeach me the technique to create ornate mithril gloves, $N, and in exchange, I will show you the resultant of the culmination of my training under Galvan: the ornate mithril breastplate.",
+    ["O"] = "Bring two Heavy Mithril Breastplates and one Ornate Mithril Gloves to Trenton Lighthammer.",
+    ["T"] = "The Mithril Kid",
+  },
   [2781] = {
     ["D"] = "범죄자 칼리프 스콜피드스팅을 현상 수배한다.$B$B타나리스의 가젯잔 수자원개발회사는 사막유랑단 무법자들의 두목인 칼리프 스콜피드스팅을 처치하는 자에게 두둑한 현상금을 지급할 것이다. 범죄자 칼리프 스콜피드스팅을 아래 죄목으로 현상 수배하는 바이다.$B$B1. 가젯잔 수자원개발회사 직원 살해!$B2. 가젯잔 수자원개발회사 자원 탈취!$B3. 가젯잔 수자원개발회사 자산 불법 점유!$B$B칼리프 스콜피드스팅의 머리카락을 선임기술자 빌지위즐에게 가져오는 자에게는 엄청난 현상금을 지급할 것이다.",
     ["O"] = "칼리프 스콜피드스팅을 처치하고 그 증거로 그의 머리카락을 가젯잔에 있는 선임기술자 빌지위즐에게 가져가야 합니다.",
@@ -6428,6 +7719,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "저주받은 땅과 늪의 경계에 있는 호드 영웅의 넋과 대화해야 합니다.",
     ["T"] = "사소한 말다툼",
   },
+  [2784] = {
+    ["D"] = "Hear my story, $r.",
+    ["O"] = "Listen to the Fallen Hero of the Horde tell his story.",
+    ["T"] = "Fall From Grace",
+  },
+  [2801] = {
+    ["D"] = "Before we may continue, you must hear my story.",
+    ["O"] = "Listen to the Fallen Hero of the Horde tell his story.",
+    ["T"] = "A Tale of Sorrow",
+  },
   [2822] = {
     ["D"] = "나는 내 가죽세공술에 자부심이 있으며 내 기술이 증명되고 있다고 생각하네. 품질에 타협이란 절대 있을 수 없지. 품질이 중요하지 않다고 말하는 자는 대지가 비밀을 지킬 줄 모른다고 우기는 자나 마찬가지네!$B$B얼마 전 고품질 재료를 찾다가 두꺼운 설인 가죽을 발견하게 되었지. 거친흉터 설인은 페랄라스의 토착민으로 대게 이곳의 서쪽, 거친흉터 골짜기에서 발견할 수 있네. 두꺼운 설인 가죽 10개를 가져다주면 내 가죽세공품 중 하나를 주겠네. 조건이 마음에 든다면 거래는 성립된 걸세!",
     ["O"] = "모자케 야영지에 있는 장도르 스위프트스트라이더에게 두꺼운 설인 가죽 10개를 가져가야 합니다.",
@@ -6438,10 +7739,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "놈리건에서 장치 설계도와 텔마플러그의 금고 암호를 찾아서 오그리마에 있는 노그에게 가져가야 합니다.",
     ["T"] = "기술 전쟁",
   },
-  [2842] = {
-    ["D"] = "케르노비에게서 새 노움 장치에 대한 소식을 듣자마자 스쿠티와 나는 순간이동기 6000을 만들기 시작했습니다. 순간이동기 6000은 가장 빠르고 안전하게 놈리건에 가는 방법이랍니다.$B$B드디어 승객들을 태울 준비가 됐군요. 한번 타보고 싶으시다면 무법항으로 가서 와이번 횃대에 있는 스쿠티와 얘기를 나눠보시기 바랍니다. 무법항으로 가려면 톱니항에서 배를 타야 한답니다.$B$B물론 드워프가 득실거리는 던 모로의 산맥을 지나서 놈리건까지 뛰어가도 상관없지만요!",
-    ["O"] = "무법항에 있는 스쿠티와 대화해야 합니다.",
-    ["T"] = "선임기술자 스쿠티",
+  [2843] = {
+    ["D"] = "As long as you have the transponder in your possession, all you need to do is step on the pad and you\'ll be teleported to Gnomeregan.$B$BYou may experience some unusual side effects, but none of those should be permanent... anymore.$B$BI almost forgot the most important part - getting back. When you\'re ready to come back, just step on the transpolyporter pad in Gnomeregan!$B$BNow to calibrate the transponder to your size and weight.",
+    ["O"] = "Wait for Scooty to calibrate the Goblin Transponder.",
+    ["T"] = "Gnomer-gooooone!",
+  },
+  [2845] = {
+    ["D"] = "Do you think you could help me find my way back to my friend, Rockbiter? He was supposed to be watching me... But I do have a tendency to wander off now and then. There are just so many things to see, and I get so distracted.$B$BThere is one thing that will always work to get my attention, though.$B$BInside this chest, you\'ll find a bell that is very precious to me. I just love the sound of it. You have my word, if I wander off, all you have to do is ring it and I\'ll come running back.",
+    ["O"] = "Pick up Shay\'s Bell from the chest.$B$BEscort Shay Leafrunner to Rockbiter\'s camp.",
+    ["T"] = "Wandering Shay",
+  },
+  [2847] = {
+    ["D"] = "$n, you\'re becoming quite skilled as a leatherworker!  I know some patterns you might be interested in... Wild Leather armor!  Wild Leather taps into the potent and chaotic properties of wildvines, found in areas of lush vegetation and on some of the creatures there.  The armor made using it is second to none for people of your skill, guaranteed.$B$BI\'ll teach this to you, but you\'ll be working for me for a while.  The first cost is simply ten pieces of thick leather.  After this, we\'ll talk specifics.",
+    ["O"] = "Bring 10 Thick Leather to Pratt McGrubben in Feathermoon Stronghold.",
+    ["T"] = "Wild Leather Armor",
   },
   [2848] = {
     ["D"] = "Wild Leather shoulders support the wearer\'s frame extremely well, offering top notch protection of the upper arms and the shoulders themselves.  As with all Wild Leather armor, a potent but random benefit is applied to the item as the wildvine is stitched in.$B$BFor this pattern, I will require six thick armor kits and a wildvine.  That shouldn\'t be too tall of an order for you to fill.",
@@ -6468,6 +7779,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 2 Turtle Scale Helms, 2 Turtle Scale Bracers, and 2 Wildvines to Pratt McGrubben in Feathermoon Stronghold.",
     ["T"] = "야생 가죽 다리보호구",
   },
+  [2853] = {
+    ["D"] = "Well $n, you are the definition of diligence.  There is one pattern left for Wild Leather armor; you\'ve mastered the others.  I won\'t require you to toil needlessly for the pattern.  You\'ve earned it outright, and then some... but I cannot give it to you myself.  My teacher, the one who brought me into the craft, is the one who must reward you.$B$BTake this letter to Telonis; he teaches leatherworking in Darnassus.  Show him the letter, and let him acknowledge you as an equal, as I do.",
+    ["O"] = "Give Pratt\'s Letter to Telonis, the master leatherworker of Darnassus.",
+    ["T"] = "Master of the Wild Leather",
+  },
+  [2854] = {
+    ["D"] = "$n, your skill as a leatherworker precedes you.  I possess leatherworking lore you would be wise to acquire... Wild Leather armor!  Wild Leather taps into the potent and chaotic properties of wildvines, found in areas of lush vegetation and on some of the creatures there.  Armor made using it is second to none for a crafter of your skill, guaranteed.$B$BI\'ll teach you, but you\'ll be working for me for a while.  The first cost is simply ten pieces of thick leather.  After this, we\'ll talk specifics.",
+    ["O"] = "Bring 10 Thick Leather to Jangdor Swiftstrider in Camp Mojache.",
+    ["T"] = "Wild Leather Armor",
+  },
   [2855] = {
     ["D"] = "Wild Leather shoulders support a wearer\'s frame extremely well, offering superior protection of the upper arms as well as the shoulders.  As with all Wild Leather armor, a random yet very potent enhancement is imbued within the item as the wildvine is stitched in.$B$BFor this pattern, I will require six thick armor kits and a wildvine.  That shouldn\'t be too tall of an order for you to fill.",
     ["O"] = "Bring 6 Thick Armor Kits and a Wildvine to Jangdor Swiftstrider in Camp Mojache.",
@@ -6492,6 +7813,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "You are ready to master more complex lessons, $n.  Wild Leather leggings are some of the sturdiest and powerful leather gear around.  The waist, thighs, calves, and the vitals - all are given tremendous protection.  Coupled with the enhancement that the wildvine provides, adventurers who own it will thank you each time they see you.$B$BFor you to gain this pattern, I need two Turtle Scale helms, two Turtle Scale bracers, and two wildvines.",
     ["O"] = "Bring 2 Turtle Scale Helms, 2 Turtle Scale Bracers, and 2 Wildvines to Jangdor Swiftstrider in Camp Mojache.",
     ["T"] = "야생 가죽 다리보호구",
+  },
+  [2860] = {
+    ["D"] = "$n, you have learned all I am able to teach you.  There is, however, one remaining pattern for Wild Leather armor.  I will not require you to toil needlessly for this; you\'ve earned it outright, and then some.  This pattern, however, is one that I cannot freely share with you.$B$BMy teacher, the one who brought me into the craft, is the one who must reward you.  Take this note to Una; she teaches leatherworking in Thunder Bluff.  Show her the letter, and let her acknowledge you as an equal, as I do.",
+    ["O"] = "Give Jangdor\'s Letter to Una, the master leatherworker of Thunder Bluff.",
+    ["T"] = "Master of the Wild Leather",
   },
   [2861] = {
     ["D"] = "듣자 하니, 먼지진흙 습지대 깊은 곳에 사는 동료 마법사 타베사가 줄파락에 사는 어떤 트롤과 해결할 문제가 있다고 해요. 타베사에게 가면 더 자세히 얘기해 줄 거예요.$B$B참, 친구도 몇 명 데리고 가세요, $N. 타베사가 당신을 줄파락으로 보낼지도 몰라요. 그렇다면 혼자 가는 것은 바람직하지 않아요.$B$B타베사의 오두막은 테라모어 서쪽, 돌망치 폐허의 바로 북쪽에 있어요.",
@@ -6523,6 +7849,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Return to Shandris Feathermoon in the Feathermoon Stronghold and report your findings.",
     ["T"] = "Return to Feathermoon Stronghold",
   },
+  [2868] = "_",
   [2869] = {
     ["D"] = "The best course of action at this point is to assume that, regardless of what the naga are up to, they will eventually move to secure the island for their own.  We need to take aggressive steps to counter that threat before it is too late.$B$BBring me ten Hatecrest Scales that are in good condition; it should be obvious to you how to acquire them.  You\'ll cut your teeth on the naga for the first time, and we\'ll have a weakened naga presence on Sardor Isle - both are prospects that play to our advantage.",
     ["O"] = "Bring 10 Hatecrest Naga Scales to Latronicus Moonspear in Feathermoon Stronghold.",
@@ -6548,11 +7875,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "스팀휘들 항구에 있는 스톨리에게 뱃짐을 가져가야 합니다.",
     ["T"] = "스톨리의 뱃짐",
   },
-  [2874] = {
-    ["D"] = "다시 한번 도와줘서 고맙다는 말을 하고 싶소. 여기 스팀휘들 럼주가 한 병 있소. 이걸 맥킨리에게 갖다주면 그 친구도 마침내 무법항 술에 대한 그 맹목적인 믿음을 버릴 수 있을 거요.",
-    ["O"] = "무법항에 있는 \"바다늑대\" 맥킨리에게 칼림도어산 럼주가 든 스톨리의 병을 가져가야 합니다.",
-    ["T"] = "맥킨리에게 배달",
-  },
   [2875] = {
     ["D"] = "스팀휘들 항구와 가젯잔을 휩쓸고 다니는 사악한 해적 앙드레 파이어비어드를 현상 수배한다.$B$B이 글을 읽는 모든 이에게 허가한다! 의회의 판결에 따라 앙드레와 공범들을 체포할 때 죽음을 불러올 정도의 힘을 사용해도 좋다.$B$B앙드레가 죽거나, 심하게 다쳐서 보안과장 빌지위즐에게 호송하지 못할 경우 그의 머리카락을 잘라서 증거로 가져가도 현상금을 받을 수 있다.",
     ["O"] = "앙드레를 처치하고 그 증거로 그의 머리카락을 스팀휘들 항구에 있는 보안과장 빌지위즐에게 가져가야 합니다.",
@@ -6567,6 +7889,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "우리 와일드해머는 아이언포지의 형제들보다 과거를 더 잘 기억한다네. 여기서 친구를 사귀고 싶다면 우리 대신 지저분한 일을 좀 맡아 줘야겠어!$B$B동부 내륙지에 있는 굼벵이 바위굴에서 호드가 물러났네. 이제 그곳은 고약한 녹괴물과 수액괴물이 득실거리지. 우리에게 그 지역에 대한 계획이 있네. 우리가 그곳으로 가기 전에 일꾼을 시켜 먼저 청소를 해놓는 거지.$B$B바로 자네가 적임자일 것 같군! 그곳으로 가서 녹색 녹괴물 10마리와 비취 수액괴물 10마리를 제거한 후에 돌아와 내게 보고하게. 출발!",
     ["O"] = "녹색 녹괴물 10마리와 비취 수액괴물 10마리를 처치한 후 맹금의 봉우리에 있는 프라가르 썬더맨틀에게 돌아와 보고해야 합니다.",
     ["T"] = "굼벵이 바위굴 청소",
+  },
+  [2879] = {
+    ["D"] = "This stave might be the Stave of Equinex! The Stave of Equinex is actually a key, used to unlock the Equinex Monolith in the Ruins of Ravenwind, on the mainland west of the Dream Bough.$B$BFind the four flames that still burn in those ruins: Samha, Imbel, Byltan, and Lahassa. Retrieve their essence and then while standing by the Equinex Monolith, use the essences to energize the stave. If this is truly is the Stave of Equinex, you will be able to unlock the Monolith and gather a sacred artifact from it.",
+    ["O"] = "Energize Troyas\' Stave and find the Equinex Monolith.",
+    ["T"] = "The Stave of Equinex",
   },
   [2880] = {
     ["D"] = "이것만은 분명히 알아두게. 우리는 엄밀히 말해서, 얼라이언스의 일원이 아니야! 와일드해머 부족은 독립된 부족으로서 개인의 가치를 행동과 업적으로 평가하지. 실제로는 아무 일도 안 하면서 실속 없이 입만 살아있는 자들은 쳐주지 않는단 말일세!$B$B우리의 친구가 되고 싶다면 먼저 자네의 가치를 증명해 보이게! 동부 내륙지의 언덕 부근에 득실거리는 더러운 트롤 녀석들은 종종 전통 목걸이를 지녔다네. 내게 그 목걸이 5개를 가져오게. 그러면 한 단계 통과한 것으로 인정해 주지.",
@@ -6602,11 +7929,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "필수 인공장치라는 부품은 다양한 곳에 두루 사용되기 때문에 놈리건 땜장이와 대장장이들에게는 없어서는 안 될 물건이죠. 그런데 고향에서 정신없이 탈출해 나올 때 모두 깜박 잊고 그 장치들을 놓고 나온 거예요! 곧 착수해야 하는 일에 그 장치가 많이 필요하답니다.$B$B제발 부탁이에요. 놈리건으로 가서 필수 인공장치를 좀 가져다주세요. 깊숙이 들어가면 인공장치 검출기라는 것에서 꺼낼 수 있을 거예요.$B$B부디 서둘러 주세요. 도움을 주시면 감사하겠어요!",
     ["O"] = "아이언포지에 있는 클락몰트 스패너스판에게 필수 인공장치 12개를 가져가야 합니다.",
     ["T"] = "필수 인공장치",
-  },
-  [2925] = {
-    ["D"] = "내 노움 친구, 클락몰트 스패너스판이 아이언포지에서 소식을 전해 왔소. 극히 중요한 임무를 수행하기 위해 놈리건으로 위험을 무릎 쓰고 떠나는데 도움이 필요하다는 거요. 놈리건은 한때 위대한 노움 도시였지만 지금은 오염되어 버렸고 제정신이 아닌 노움들과 여러 가지 기괴한 장치들로 가득 차 있소.$B$B나는 이곳을 떠날 수 없지만 내 친구를 꼭 도와 주고 싶소. 당신이 나 대신 가 준다면 정말로 고맙겠소.$B$B클락몰트는 아이언포지의 땜장이 마을에 있소.",
-    ["O"] = "아이언포지에 있는 클락몰트 스패너스판과 대화해야 합니다.",
-    ["T"] = "클락몰트에게 꼭 필요한 것",
   },
   [2926] = {
     ["D"] = "그 사고가 난 뒤부터 노아른은 놈리건에 남아 있는 트로그 녀석들을 쫓아내고 그곳에 퍼진 질병을 치료할 방법을 찾는 데만 온 신경이 쏠려 있소.$B$B다행히도 라즐과 내가 치료약 비슷한 걸 만들어 냈지. 잘 되면 치료약이 될 테고 못해도 독한 럼주가 되는 액체인데 실험을 해보기 전까지는 아무것도 알 수 없소! 따라서 우리 가설을 확인해보려면 몇 가지 물건이 필요하오. 우선 놈리건에 있는 오염된 트로그들에게서 녹색 방사성 폐기물을 채취해 이 병에 채워다 주시오!",
@@ -6658,6 +7980,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "샤드라알로 제단에서 샤드라를 물리친 후, 그녀의 독을 타렌 제분소에 있는 연금술사 라이던에게 가져가야 합니다.",
     ["T"] = "샤드라 소환",
   },
+  [2938] = {
+    ["D"] = "The venom you gathered from the Witherbark\'s spider god is quite a find!  I\'ve been able to kill nearly two dozen rabbits with just a drop of the stuff.  Granted, some of those rabbits were very young and small enough to fit in the palm of one\'s hand so I\'m certain their resistance to toxins was low, but it can\'t be denied that this poison is powerful!$B$BI\'d like a sample sent to my superior, Apothecary Faranell in the Apothecarium of the Undercity.  I am positive he would want to test this himself.",
+    ["O"] = "Bring Faranell\'s Parcel to Master Apothecary Faranell in the Undercity.",
+    ["T"] = "Venom to the Undercity",
+  },
   [2940] = {
     ["D"] = "This book looks as if no one has opened it for quite a long time. Its covers are quite worn, and its pages yellowed, but after examining it, you notice that it might be just what Troyas is looking for.$B$BYou pick it up, but realize you should probably ask before borrowing it.",
     ["O"] = "Ask Daryn Lightwind if you may borrow her book.",
@@ -6673,6 +8000,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "[Return the Sparkling Stone and the Stave of Equinex to Troyas Moonbreeze in Feathermoon Stronghold. ]",
     ["T"] = "The Morrow Stone",
   },
+  [2943] = {
+    ["D"] = "Here it is, $N. Please, take care of my book.$B$BNow, hurry along. I\'m sure Troyas is eager for your return.",
+    ["O"] = "Deliver the book to Troyas Moonbreeze in Feathermoon Stronghold.",
+    ["T"] = "Return to Troyas",
+  },
   [2944] = {
     ["D"] = "제가 새로 발명한 물건을 한번 보세요. 사진을 찍고 싶은 대상을 선택하고 단추를 누르기만 하면 돼요.$B$B동부 내륙지에서 찾겠다던 그 생물 이름이 뭐라고 했죠? 감메리타? 뭐, 잘 찾아보세요. 즉석사진을 찍어서 가져가면 다린이 아주 기뻐할 거예요.$B$B어쨌든, 슈퍼 찰칵이 여기 있어요. 잘 쓰세요!",
     ["O"] = "슈퍼 찰칵이 FX로 감메리타의 즉석사진을 찍은 후, 루테란 마을에 있는 다린 라이트윈드에게 가야 합니다.",
@@ -6682,6 +8014,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "검은무쇠 드워프 한 놈의 시체에서 반지처럼 보이는 것을 찾았습니다. 하지만 흙과 단단하게 굳은 찌꺼기가 완전히 뒤덮고 있어 어떤 종류의 반지인지 알아보기 어렵고 끼어 볼 수도 없습니다. 찌꺼기 밑에서 무언가 귀한 금속의 광택이 살짝 보이며 보석이 반짝이는 것 같기도 합니다.$B$B이 반지를 사용하려면 단단하게 굳은 찌꺼기를 제거해야 합니다.",
     ["O"] = "꼬질꼬질한 반지에서 찌꺼기를 제거할 방법을 찾아야 합니다.",
     ["T"] = "꼬질꼬질한 반지",
+  },
+  [2946] = {
+    ["D"] = "We want you to take the miniature discs you found to the sealed gates of Uldum.  We... we aren\'t sure what will happen when you do this.$B$BThis sounds risky, sure, we acknowledge that.  It might, however, do nothing.  You might need to use the discs on something.  Perhaps the doors unlock when you have the discs in your possession.  Be open to try anything, and be ready for anything to happen.$B$BWhen you\'ve found out what happens, return to Ironforge.  We\'ll have a lot to analyze when you\'re done!",
+    ["O"] = "Bring the miniature platinum discs to the gates of Uldum in Tanaris and look for clues as to the connection between the two.",
+    ["T"] = "Seeing What Happens",
   },
   [2947] = {
     ["D"] = "빤질빤질세척기 5200에서 나온 상자를 열자 생각했던 대로 반짝이는 반지가 들어 있습니다! 반지를 끼자 마법의 힘이 몸 전체를 휩쓰는 것이 느껴집니다.$B$B반지 안쪽 면에는 아이언포지의 봉인 자국이 작지만 읽을 수 있을 정도로 깨끗이 새겨져 있습니다. 그 옆에는 \'탈바쉬\'라는 세 글자가 조그맣게 새겨져 있습니다. 아마 예전 주인이나 이 반지를 만든 사람의 이름인 듯합니다. 반지를 간직하거나... 이 사람에게 돌려주어야 합니다. 또다시 결정의 시간이 돌아왔습니다.",
@@ -6693,11 +8030,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "아이언포지에 있는 탈바쉬 델 키젤에게 은괴 1개, 태마노 1개와 반짝이는 금반지와 30실버를 가져가야 합니다.",
     ["T"] = "노움의 품질 개선",
   },
-  [2949] = {
-    ["D"] = "빤질빤질세척기 5200에서 나온 상자를 열자, 생각했던 대로 반짝이는 반지가 들어 있습니다! 반지를 끼자 마법의 힘이 온몸을 휩쓸고 내려가는 게 느껴집니다.$B$B반지 안쪽에는 오그리마의 봉인 자국이 새겨져 있습니다. 작지만 읽을 수 있을 정도로 깨끗합니다. 그 옆에 새겨진 내용에서는 \'노...\'라는 맨 앞글자만 알아볼 수 있습니다.$B$B아마 예전 주인이나 이 반지를 만든 사람의 이름인 듯합니다. 반지를 간직하거나... 이름이 \'노\'로 시작하는 이에게 돌려주어야 합니다. 또다시 결정의 시간이 돌아왔습니다.",
-    ["O"] = "반지를 그냥 가지거나, 반지 안쪽 부분에 새겨진 인장 자국의 주인을 찾아야 합니다.",
-    ["T"] = "반지의 귀환",
-  },
   [2950] = {
     ["D"] = "아니, 아니, 아니, 그 반지가 내 거라고 하는 게 아니고... 보통 이런 일은 잘 하지 않지만 당신이 주신 검은무쇠 드워프에 대한 정보가 아주 유용해서 그 보답으로 반지를 더 멋지게 만들어주려는 겁니다. 이 작고 단순한 모양의 반지를 누가 만들었는지는 모르지만 훨씬 멋지게 만들어 줄게요. 아마 노움이 만든 게 아닐까 싶지만...$B$B은괴 1개, 태마노 1개, 그리고 수고비로 30실버를 가져오면 반지에 격자 모양으로 은을 붙여 마법을 더 강화시켜 주도록 하죠. 어때요... 해보고 싶으시죠?",
     ["O"] = "오그리마에 있는 노그에게 반짝이는 금반지, 은괴 1개, 태마노 1개, 30실버를 가져가야 합니다.",
@@ -6707,6 +8039,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "완강히 저항하고 있는 노움들 사이에서 이 장치가 눈에 띕니다. 장치에 붙은 작은 판에는 \"빤질빤질세척기 5200\"이라는 이름과 함께 다음과 같은 글귀가 적혀 있습니다.$B$B\"귀중품에 찌꺼기가 끼었습니까? 빤질빤질세척기 5200이 말끔히 닦아 드립니다! 세척할 물건을 장치에 넣고 투입구에 3실버를 넣으십시오. 잠시만 기다리시면, 짜잔! 당신의 귀중품이 깨끗한 모습으로 반짝이게 됩니다!\"",
     ["O"] = "빤질빤질세척기 5200에 꼬질꼬질한 물건을 넣으십시오. 3실버를 투입하면 작동할 것입니다.",
     ["T"] = "빤질빤질세척기 5200!",
+  },
+  [2954] = {
+    ["D"] = "\"Salutations - I am a guardian of entry.  Unless you have the Plates of Uldum already integrated with your disc set, I will not allow for entry into the Uldum compound.\"$B$BThe appearance of the Stone Watcher of Norgannon must be the reaction that was hoped for in sending you out to the Tanaris desert with the platinum discs.  As instructed, you will need to find out what the story behind the Stone Watcher is before continuing on.",
+    ["O"] = "Learn the purpose of the Stone Watcher of Norgannon, and then interact with the Uldum Pedestal in the Tanaris desert.",
+    ["T"] = "The Stone Watcher",
   },
   [2962] = {
     ["D"] = "Not only was your sample insufficient in quantity, it was also impure.$B$BWhat we require is more green glow. The troggs are obviously not irradiated sufficiently to fulfill our needs. You will have to go into Gnomeregan and bring back some radioactive fallout, straight from the tap. I am speaking of the irradiated slimes, lurkers and horrors. Be warned, the containment of this type of fallout is difficult. You may need to make several attempts with the phial until a suitable sampling is recovered.",
@@ -6718,15 +8055,46 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "아이언포지의 탐험가의 전당에 있는 역사가 카르닉과 대화해야 합니다.",
     ["T"] = "울둠의 전조",
   },
+  [2964] = {
+    ["D"] = "Well $n... we seem to be at a temporary dead end here.  We know what we need - the Plates of Uldum - but we have no idea where they might be.  We\'ll need to do quite a bit of research on this to come up with a solid plan of attack.  I have a couple ideas where to start looking; I have high hopes that soon, we\'ll be asking you to head out and recover them.$B$BThe High Explorer needs to be informed on this, $n; no doubt, he also wants to thank you personally for once again aiding the League.",
+    ["O"] = "Speak with High Explorer Magellas in Ironforge.",
+    ["T"] = "A Future Task",
+  },
   [2965] = {
     ["D"] = "Ah, $n, it is fortuitous that you have come to me again.  Your revelations at the Uldaman dig site have certainly given us sages much discuss.  I was doing just that with one of the druids, Nara Wildmane, when it dawned on me that her past adventuring experiences may have some great importance as to the next step we need to take.$B$BI would like for you to speak with her concerning her travels to the Valley of the Watchers in the Tanaris desert.  She waits for you on the Elder Rise.",
     ["O"] = "Speak with Nara Wildmane on the Elder Rise in Thunder Bluff.",
     ["T"] = "울둠의 전조",
   },
+  [2966] = {
+    ["D"] = "Sage Truthseeker and I would like you to take the miniature discs you found to the sealed gates of Uldum.  We... we aren\'t sure what will happen when you do this.$B$BThis sounds risky, sure, we acknowledge that.  It might, however, do nothing.  You might need to use the discs on something.  Perhaps the doors unlock when you have the discs in your possession.  Be open to try anything, and be ready for anything to happen.$B$BLearn what you can, then return to me. We will have much to discuss.",
+    ["O"] = "Bring the miniature platinum discs to the gates of Uldum in Tanaris and look for clues as to the connection between the two.",
+    ["T"] = "Seeing What Happens",
+  },
+  [2967] = {
+    ["D"] = "You access the pedestal again; the platinum discs suddenly appear once more in your backpack.$B$BWith the knowledge of the stone watcher learned and the discs returned to your possession, the time has come to return to Thunder Bluff and inform the Nara Wildmane of your discovery.",
+    ["O"] = "Speak with Nara Wildmane in Thunder Bluff.",
+    ["T"] = "Return to Thunder Bluff",
+  },
+  [2968] = {
+    ["D"] = "Well $n... we seem to be at an unfortunate impasse.  We know what we need - the Plates of Uldum - but we have no idea where they might be.  We will research this, and then devise a solid plan of attack.  I have a couple ideas where to start looking; I have high hopes that soon, we\'ll be asking you to rejoin our efforts to discover the truth.$B$BSage Truthseeker needs to be informed on this, $n; no doubt, he also wants to thank you personally for once again heeding the call.",
+    ["O"] = "Speak with Sage Truthseeker in Thunder Bluff.",
+    ["T"] = "A Future Task",
+  },
   [2969] = {
     ["D"] = "쉿, 조용히 하고 저 밑을 좀 보세요. 저 더러운 그림토템 부족 녀석이 요정용을 잡아들이고 있어요. 저들이 무슨 일을 저지르려는 건지 정확히는 모르겠지만 분명 못된 짓을 벌이려는 속셈일 겁니다.$B$B우리 힘만으로는 야영지로 쳐들어가 붙잡힌 용들을 풀어줄 수가 없지만 그대가 도와준다면 혹시...$B$B친구들 몇 명과 함께 이 일을 맡아볼 생각이 있다면, 이 열쇠로 우리에 갇힌 용들을 풀어주고 살아서 도망칠 수 있도록 도와주세요. 제가 옆에서 지원하죠. 그리고 만약에 대비해 제르카이는 여기 남을 겁니다.",
     ["O"] = "대나무 우리 열쇠를 사용하여 그림토템 야영지의 우리에 갇힌 화살요정용들을 풀어줘야 합니다. 최소 6마리의 화살요정용과 킨달 문위버가 살아남아야 합니다.$B$B6분이 지나면 킨달이 후퇴할 때가 되었다고 할 것이며 임무에 실패하게 됩니다.",
     ["T"] = "모든 생명에 자유를",
+  },
+  [2970] = {
+    ["D"] = "As she\'s already told you, Kindal and I will now take the fight to the Grimtotem. Together, we should still be able to pick off some of the tauren without much threat to ourselves, but we\'d love some help if you\'re willing and able.$B$BYou\'ve seen the camp below us, but there are more to the east. Using your own tactics, deal as much damage to the tauren as you can. We can all meet back here after they\'ve felt the sting of Kindal\'s arrows and your own weapons.",
+    ["O"] = "Kill 12 Grimtotem Naturalists, 10 Grimtotem Raiders, and 6 Grimtotem Shamans before returning to Jer\'kai Moonweaver in Feralas.",
+    ["T"] = "Doling Justice",
+  },
+  [2971] = "_",
+  [2972] = {
+    ["D"] = "Out here in the wilderness, Kindal and I have meager means to reward your help, but we don\'t want you to feel unappreciated. Take my signet ring. If you ever find yourself in the boughs of Teldrassil, go to the Temple of the Moon in the heart of Darnassus. There you will find my High Priestess Tyrande Whisperwind. The ring will let her know that we are well and give credit to your story.$B$BWe both thank you, $N.",
+    ["O"] = "Take Jer\'kai\'s Signet Ring to High Priestess Tyrande Whisperwind in Darnassus.",
+    ["T"] = "Doling Justice",
   },
   [2973] = {
     ["D"] = "만나서 반갑네, $C|1이여;여;. 난 오그리마 지도자 분들의 명을 받아 동료와 함께 이곳 페랄라스까지 왔다네.$B$B내 아내 코린은 새 옷을 정말 좋아한다네... 하늘하늘한 요정용의 날개로 장식한 새 망토를 만들어줄까 하는데 날 좀 도와줄 수 있겠나? 모자케 야영지에서 서쪽에 멋들어진 날개를 단 화살요정용들이 있으니 날개를 좀 구해다 주게.",
@@ -6747,6 +8115,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "What?!$B$BAh, so I did mention a bounty, didn\'t I? Well, that\'ll teach me to open my mouth, won\'t it?$B$BYou did the work, so I suppose it is only right you reap the greatest reward from it. Take the horns, I\'ll have them put in a crate for you. Find Belgrom Rockmaul in the Valley of Honor, he\'ll want to know what you saw and he\'ll reward you for your hard work.$B$BBe well, $c, and thank you again for everything you\'ve done.",
     ["O"] = "Bring the Crate of Grimtotem Horns to Belgrom Rockmaul in Orgrimmar.",
     ["T"] = "불길한 발견",
+  },
+  [2977] = {
+    ["D"] = "You access the pedestal again; the platinum discs suddenly appear once more in your backpack.$B$BWith the knowledge of the stone watcher learned and the discs returned to your possession, the time has come to return to Ironforge and inform the Explorers\' League of your discovery.",
+    ["O"] = "Speak with Historian Karnik in Ironforge.",
+    ["T"] = "Return to Ironforge",
   },
   [2978] = {
     ["D"] = "더럽혀진 두루마리를 주워 읽어 보니 이것이 어떤 회합이나 의식을 묘사하고 있는 두루마리 같습니다. 로크 올한이 이 두루마리가 골두니 일족에게 어떤 의미가 있는지를 알고 싶어할 것입니다.",
@@ -6818,10 +8191,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "네크룸의 메달을 저주받은 땅에 있는 샤디우스 그림셰이드에게 가져가야 합니다.",
     ["T"] = "네크룸의 메달",
   },
-  [2993] = {
-    ["D"] = "뾰족부리는 동부 내륙지, 진타알로 꼭대기에 있는 절벽 위 우리 안에 갇혀 있네. 그런데 그 우리를 열 수 있는 열쇠는 타락한 여사제 헥스라는 썩은가지 트롤 부족의 대사제가 가지고 있지.$B$B자, 이제 약속을 지켰군. 자네가 임무를 완수할 수 있도록 행운을 빌겠네.",
-    ["O"] = "그리핀 조련사 탈론액스와 대화해야 합니다.",
-    ["T"] = "동부 내륙지로 돌아가기",
+  [2992] = {
+    ["D"] = "Give me room while I perform a ritual of divination.  I will find the connection between the feather you brought me and its owner, and follow that connection to Sharpbeak himself.$B$BThat is... I will if all goes according to plan.  If it does not, then... you better close your eyes.",
+    ["O"] = "Wait until Grimshade performs the ritual of divination.",
+    ["T"] = "The Divination",
+  },
+  [2994] = {
+    ["D"] = "We must save Sharpbeak!$B$BFight your way to the top of Jintha\'Alor in the heart of Vilebranch territory, gain the key to Sharpbeak\'s cage from the vile Priestess Hexx, and then find and save Sharpbeak!",
+    ["O"] = "Fight to the top of Jintha\'Alor, kill Vile Priestess Hexx for the key to Sharpbeak\'s cage, and save Sharpbeak.",
+    ["T"] = "Saving Sharpbeak",
   },
   [2995] = {
     ["D"] = "쿠엘다닐 오두막은 동부 내륙지 하이 엘프들의 연락 장소입니다. 하이 엘프 사절들은 다른 종족과 유대 관계를 쌓기 위해 노력하면서 동부 내륙지 남부에 사는 마른나무껍질 트롤에 대한 정보를 공유하고 있죠. 연락 정보와 관련된 모든 문서들이 그 오두막에 보관되어 있어요.$B$B깊은골짜기 일족이 다른 종족과 동맹을 맺는 걸 그냥 두고 볼 수만은 없습니다. 깊은골짜기 일족의 문서를 모두 없애버리세요. 그들의 연락망을 완전히 끊어놓아야 합니다.",
@@ -6883,6 +8261,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "탈로 쏜후프가 바람계곡 하피 4마리, 바람계곡 약탈자 4마리, 바람계곡 바람소환사 4마리, 그리고 바람계곡 암살자 4마리를 처치해 달라고 했습니다.",
     ["T"] = "바람계곡 일족에 대한 복수",
   },
+  [3064] = "_",
   [3065] = {
     ["D"] = "자네가 없는 동안 양피지가 하나 도착했네, $N.$B$B시간이 있다면 읽어보게. 내가 착각한 것이 아니라면 이건 상급 전사, 프랑이 보낸 걸세. 준비되는 대로 그에게 가보게. 이야기를 나누고 싶어할 테니... 동굴 밖에 있는 그늘에서 자네를 기다리고 있을 거야.",
     ["O"] = "Read the Simple Tablet and speak to Frang in the Valley of Trials.",
@@ -6913,6 +8292,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Read the Glyphic Tablet and speak with Mai\'ah near the entrance to the Den in the Valley of Trials.",
     ["T"] = "상형 문자로 된 서판",
   },
+  [3087] = {
+    ["D"] = "Ah, while you were gone a parchment came for you, $N.$B$BRead it when you have time. If I\'m not mistaken, it came from the hunter trainer Jen\'shan. She would have words with you when you\'re ready.",
+    ["O"] = "Read the Etched Parchment and speak to Jen\'shan in the Valley of Trials.",
+    ["T"] = "글이 새겨진 양피지",
+  },
   [3088] = {
     ["D"] = "$N, 자네가 자리를 비운 사이, 양피지가 하나 도착했네.$B$B시간이 날 때 한번 읽어보게. 내 기억이 맞는다면 상급 도적, 르와그가 보냈을 거야. 자네만 준비되면 이야기를 나누고 싶어하는 것 같네.",
     ["O"] = "암호화된 양피지를 읽어보고 시험의 골짜기에 있는 르와그와 대화해야 합니다.",
@@ -6932,6 +8316,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Just a moment ago a messenger was looking for you, $N. I believe she was sent by the warrior trainer Harutt. If this note is from Harutt, I wouldn\'t take long in reading it\'s contents.",
     ["O"] = "간결한 글쪽지를 읽고 나라체 야영지에 있는 하루트 썬더혼과 대화해야 합니다.",
     ["T"] = "간결한 글쪽지",
+  },
+  [3092] = {
+    ["D"] = "Just a moment ago a messenger was looking for you, $N. I believe she was sent by the hunter trainer Lanka. If this note is from Lanka, I wouldn\'t take long in reading it\'s contents.",
+    ["O"] = "Read the Etched Note and speak to Lanka Farshot in Red Cloud Mesa.",
+    ["T"] = "글이 새겨진 쪽지",
   },
   [3093] = {
     ["D"] = "Just a moment ago a messenger was looking for you, $N. I believe she was sent by the shaman trainer Meela. If this note is from Meela, I wouldn\'t take long in reading it\'s contents.",
@@ -7003,6 +8392,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "간결한 룬을 읽어보고 눈마루 골짜기에 있는 스란 코르만과 대화해야 합니다.",
     ["T"] = "간결한 룬",
   },
+  [3107] = {
+    ["D"] = "While you were helping me out, this rune was given to me to pass on to you. Take some time to read it when you have a chance. I\'m thinkin\' it came from the paladin trainer Bromos. Take a gander at it and go find him inside Anvilmar when you\'ve a chance.",
+    ["O"] = "Read the Consecrated Rune and speak to Bromos Grummner in Coldridge Valley.",
+    ["T"] = "신성한 룬",
+  },
   [3108] = {
     ["D"] = "While you were helping me out, this rune was given to me to pass on to you. Take some time to read it when you have a chance. I\'m thinkin\' it came from the hunter trainer Thorgas. Take a gander at it and go find him inside Anvilmar when you\'ve a chance.",
     ["O"] = "Read the Etched Rune and speak to Thorgas Grimson in Coldridge Valley.",
@@ -7034,6 +8428,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "상형 문자로 된 쪽지를 읽어보고 눈마루 골짜기 위 앤빌마에 있는 마릭 너리빗과 대화해야 합니다.",
     ["T"] = "상형 문자로 된 쪽지",
   },
+  [3115] = {
+    ["D"] = "While you were helping me out, this memorandum was given to me to pass on to you. Take some time to read it when you have a chance. I\'m thinkin\' it came from the warlock trainer Alamar. Take a gander at it and go find him inside Anvilmar when you\'ve a chance.$B$BAnd watch yerself, $N, your kind ain\'t too trusted \'round these parts.",
+    ["O"] = "Read the Tainted Memorandum and speak to Alamar Grimm inside Anvilmar above Coldridge Valley.",
+    ["T"] = "오염된 룬",
+  },
   [3116] = {
     ["D"] = "이 도장은 상급 전사 알리시아께서 전령을 통해 전달한 것입니다. 시간이 날 때 한번 도장을 읽어보고 그분을 찾아가 보십시오. 알리시아께서 하실 말씀이 있는 것 같습니다.",
     ["O"] = "Read the Simple Sigil and speak to Alyissia in Shadowglen.",
@@ -7059,6 +8458,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Read the Verdant Sigil and speak to Mardant Strongoak, in the tree Aldrassil in Shadowglen.",
     ["T"] = "풀빛 도장",
   },
+  [3121] = {
+    ["D"] = "Neeru Fireblade in Orgrimmar has what I need to get started here! He has mixed up a concoction that I need for my... well, you\'ll see.$B$BOff with you now -- to Orgrimmar. Here, take this with you. It\'s a shrunken head that I promised Neeru in exchange for the herbs. It\'s the head of some poor dwarf I ventured across in the forest. I\'m sure Neeru will be pleased.$B$BYou\'ll find Neeru in the Cleft of Shadow.",
+    ["O"] = "Take the Shrunken Head to Neeru Fireblade in Orgrimmar.",
+    ["T"] = "이상한 부탁",
+  },
   [3122] = {
     ["D"] = "Here are the herbs, $N. Take them to Witch Doctor Uzer\'i.$B$BPlease let him know that I am satisfied with the shrunken head.",
     ["O"] = "Deliver Neeru\'s Herb Pouch to Witch Doctor Uzer\'i in Feralas.",
@@ -7083,11 +8487,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "The wandering forest walkers that can be found meandering through the forest are our next target, $N. Night elves have enlisted treants as allies to fight against the horde. Their movement may be slow, but their role as protectors is undeniable.$B$BSoon we will be able to use this power for our own benefit.$B$BFind 3 wandering forest walkers; kill them, and use the muisek vessel to shrink and capture them.",
     ["O"] = "떠도는 나무정령 3마리를 처치하고 뮤세크 단지를 이용하여 그들을 갈무리해야 합니다.",
     ["T"] = "나무정령 뮤세크",
-  },
-  [3127] = {
-    ["D"] = "마지막으로 자네에게 부탁할 일은 북서쪽으로 가서 마지막 적을 찾아내는 것일세.$B$B산악거인들은 불타는 군단이 이 세계에 나타났을 때 나이트 엘프 녀석들을 돕기 위해 산을 떠나 내려왔지. 자네가 그들의 암석투성이인 땅을 돌아다니다가 땅이 흔들리기 시작하는 걸 보면 거대한 덩치의 산악거인을 알아볼 수 있을 걸세.$B$B그 거대한 덩치의 힘을 손에 넣고 싶다네. 산악거인 7마리를 죽이고 뮤세크 단지를 사용해 그들의 강력한 뮤세크를 담아 오게나.",
-    ["O"] = "평지거인이나 절벽거인 7마리를 처치하여 뮤세크 단지를 이용해 죽은 산악거인을 갈무리해서 담아와야 합니다.",
-    ["T"] = "산악거인 뮤세크",
   },
   [3128] = {
     ["D"] = "내가 하던 일을 마치려면 특정 재료가 필요하다네... 내가 자네에게 맡길 다른 일들과 함께해도 좋아.$B$B페랄라스의 나무정령에게서 쪼개진 통나무를 하나 가져와야 하고, 서쪽에 있는 산악거인과 요정용에게서 보석 박힌 광석도 가져와야 하네. 그리고 동부 내륙지의 올빼미야수나 페랄라스의 히포그리프에게서 질긴 힘줄도 구해다 주게. 마지막으로, 내가 언급한 이 생물들 중 어느 것에게서나 얻을 수 있는 금속 파편을 많이 가져오게.",
@@ -7129,6 +8528,12 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Take the Proof of Deed back to Mountaineer Pebblebitty.",
     ["T"] = "At Last!",
   },
+  [3221] = {
+    ["D"] = "While you were out helping our deathstalkers, Apothecary Renferrel sent you a summons.  He did not give me details, but he wanted to speak with you about the wolf hearts you had given him.",
+    ["O"] = "Speak with Apothecary Renferrel at the Sepulcher.",
+    ["T"] = "Speak with Renferrel",
+  },
+  [3241] = "_",
   [3261] = {
     ["D"] = "Your time with me is over, $N.  To learn more, you must go to Camp Taurajo to the south and speak with Jorn Skyseer.  He will continue your guidance.",
     ["O"] = "Speak with Jorn Skyseer at Camp Taurajo.",
@@ -7143,6 +8548,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "내 동료인 무라 룬토템은 우리의 동맹인 언데드를 돕고자 은빛소나무 숲으로 갔소. 그녀는 병들어 죽어가는 은빛소나무 숲을 되살리는 데 도움을 주고자 했다오. 그러니 여기 불모의 땅에 사는 기이한 생명체를 가져가면 무라가 은빛소나무 숲에서 하는 일에 도움이 될 것이오.$B$B그대가 모아온 등껍질의 견본을 은빛소나무 숲에 있는 무라에게 가져다주시오. 그녀는 아마 공동묘지에 있을 것이오. 운이 좋다면 무라가 등껍질을 연구해 죽어가는 숲을 살리는 데 필요한 것을 알아낼 수 있을 것이오.",
     ["O"] = "Speak with Mura Runetotem in the Sepulcher.",
     ["T"] = "무라 룬토템",
+  },
+  [3321] = {
+    ["D"] = "You have done much for the Order, $N. The sheer dedication it takes to get this far would have turned away any ordinary person. There is no doubt in my mind, or in the mind of Galvan, that you are one of us.$B$BWhich is why I think you deserve a little reward. It is nothing really, just a trinket. You may be familiar with its properties, as I do believe it is what brought you to us in the first place.",
+    ["O"] = "Wait for Trenton to finish his work.",
+    ["T"] = "Did You Lose This?",
   },
   [3341] = {
     ["D"] = "불모의 땅에는 가시덩굴 구릉이라고 불리는 끔찍한 덩굴 지대가 있소. 그곳을 처음 조사했을 때는 그다지 큰 위협이랄 것이 없었는데, 최근에 조사한 바로는 훨씬 심각한 조짐을 보이고 있소...$B$B가시덩굴 구릉에 사는 가시멧돼지들이 스컬지와 동맹을 맺었소. 혹한의 암네나르라는 리치가 거대한 의식을 이용해 가시멧돼지들의 모든 행동을 지배하고 있는 것이오.$B$B암네나르는 넬쥴과 텔레파시로 직접 연결되어 있는데, 이 연결을 끊어놓아야만 하오. 혹한의 암네나르를 끝장내 주시오.",
@@ -7187,6 +8597,11 @@ pfDB["quests"]["koKR-tbc"] = {
   [3369] = {
     ["D"] = "이 파편은 위대한 비밀을 가지고 있습니다; 그것은 에메랄드의 순수한 본질입니다. 그러나이 파편에서 보는 것은 꿈이 아닙니다. 이런 종류의 비전을 악몽이라고 부릅니다. $B$B당신을 놀라게하고 싶지는 않지만, 가능한 한 빨리이 조각을 현명한 드루이드의 손에 넘겨주는 것이 최선이라고 생각합니다. 라이즈 장로님에 대한 bHamuul Runetotem이 누구인지 찾아야합니다. Thunder Bluff로 향하십시오. 나는 더 말할 수 없다.",
     ["O"] = "Bring the Nightmare Shard to Hamuul Runetotem on Elder Rise.",
+    ["T"] = "In Nightmares",
+  },
+  [3370] = {
+    ["D"] = "This shard holds great secrets; it is the pure essence of the Emerald Dream. However, what I see in this shard is not a dream; one would call this sort of a vision a nightmare.$B$BI do not wish to alarm you, $N, but I think it is best if you deliver this shard into the hands of a wise druid as soon as you can... $B$BMathrengyl Bearwalker in the Cenarion Circle is who you need to find. Head to Darnassus. I cannot say more.",
+    ["O"] = "Bring the Nightmare Shard to Mathrengyl Bearwalker in Darnassus.",
     ["T"] = "In Nightmares",
   },
   [3371] = {
@@ -7234,26 +8649,36 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Kill the group of Shadow Silk Poachers that wander the Searing Gorge. Nilith has reason to believe that there are five of them that need to be exterminated. Return to Nilith in the Searing Gorge when this task is complete.",
     ["T"] = "Shadoweaver",
   },
-  [3380] = {
-    ["D"] = "이 세계에는 편히 쉬지 못하는 영혼들이 있다네. 아주 오래전부터 악에 속박되고 고립되어 오염된 영혼들이지. 전에 땅속 깊은 곳에 어떤 사원이 묻혀있다는 얘기를 들은 적이 있네. 지금까지 내가 보지 못한 강력한 존재들에 의해 추방되었다고 하더군.$B$B가라앉은 사원이라고 불리는 이곳에 대해 더 알고 싶으면 마본 리벳시커라는 고블린을 찾아가보게. 그 친구는 이 세계의 수많은 고대 유적지를 조사했지. 최근에는 톱니항에 있는 집을 떠나 타나리스의 트롤 유적지를 조사하러 갔다고 하니 그를 찾아가보게.",
-    ["O"] = "타나리스에서 마본 리벳시커를 찾아야 합니다.",
-    ["T"] = "가라앉은 사원",
+  [3381] = {
+    ["D"] = "Ah, a young $r come to speak to Sanath. What a wonderful day! I am so honored to have you grace me with your presence. Thank you!$B$BPlease... do not be so arrogant to assume my sarcasm was a compliment. Let us get one thing straight: I don\'t like you. But this little conversation doesn\'t have anything to do with us--it has to do with my master.$B$BBring me a couple hippogryph feathers for my arrows and I\'ll give you leave to see him. He\'s asked that I send adventurers to him if they proved worthy enough.",
+    ["O"] = "Bring 2 Undamaged Hippogryph Feathers to Sanath Lim-yo in Azshara if you wish to speak to his master.",
+    ["T"] = "사나스의 스승",
   },
   [3382] = {
     ["D"] = "우리는 해안에서 정박할 만한 안전한 곳을 찾고 있었죠. 그런데 해가 떨어진 지 한 시간도 채 안 돼 그 괘씸한... 나가 녀석들이 우리를 공격했어요!$B$B녀석들이 뭘 가지러 온 것인지는 모르겠지만 찾지 못한 건 분명해요. 벌써 한번 되돌아왔었거든요. 또 공격하러 올 경우를 대비해 계곡 입구에 정찰병 두 명을 배치해 뒀어요.$B$B하필 당신이 지금 같은 때에 나타난 건 안타까운 일이지만 목숨을 걸고 싸울 준비를 하시는 게 좋겠네요.",
     ["O"] = "선장 바네사 벨티스와 그녀의 선원들, 지평선 정찰함의 승객들을 나가의 공격으로부터 보호해야 합니다. 적어도 선장 바네사 벨티스는 반드시 살아남아야 합니다.",
     ["T"] = "위험에 처한 선원",
   },
+  [3383] = "_",
+  [3384] = "_",
   [3385] = {
     ["D"] = "They call themselves the Undermarket: Cutthroat traders that will sell, move, trade and do just about anything for the right price.$B$BIt gets worse, $N. They have set up a base of operations here in the Searing Gorge. Trade Master Kovic is heading up the operation and has close ties with the Dark Iron dwarves of the region.$B$BWe must strike hard and send a message to their leadership. Slay Trade Master Kovic and his minion Clunk. Bring back his trader\'s satchel when the job is done.$B$BTo the Cauldron!",
     ["O"] = "Slay Trade Master Kovic and his minion Clunk. Retrieve the Trader\'s Satchel from his corpse and return it to Nilith.",
     ["T"] = "암거래상단",
   },
+  [3401] = "_",
   [3402] = {
     ["D"] = "I want you to personally deliver the news of Kovic\'s defeat to Vizzklick in Gadgetzan. He will be so happy to hear that Kovic is dead that I\'m certain he\'ll give you some grand reward.",
     ["O"] = "Speak with Vizzklick in Gadgetzan.",
     ["T"] = "암거래상단",
   },
+  [3403] = "_",
+  [3404] = "_",
+  [3405] = "_",
+  [3422] = "_",
+  [3423] = "_",
+  [3424] = "_",
+  [3425] = "_",
   [3441] = {
     ["D"] = "모험가여, 내 얘기를 좀 들어 보시오.",
     ["O"] = "칼라란 윈드블레이드가 하는 이야기를 들어야 합니다.",
@@ -7339,6 +8764,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Open the chest.",
     ["T"] = "Trinkets...",
   },
+  [3482] = {
+    ["D"] = "This is the horde version of the black box quest.",
+    ["O"] = "Take this box to Kravel.",
+    ["T"] = "[번역 미완성] The Pocked Black Box",
+  },
   [3483] = {
     ["D"] = "",
     ["O"] = "",
@@ -7353,11 +8783,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Well, after that display of voracious greed, I feel nauseous.$B$BRegardless, I shall not dwell too long on your material addiction.$B$BFor each imperfect draenethyst fragment you turn in, I shall reward you with more junk. My junk heap gets smaller while your junk heap gets larger. On Draenor we call this a \'win-win\' situation.",
     ["O"] = "Bring Kum\'isha Imperfect Draenethyst Fragments. Any form of monster in the Blasted Lands could be carrying a fragment.",
     ["T"] = "어느 드레나이의 잡동사니...",
-  },
-  [3504] = {
-    ["D"] = "배신자, 도둑! 나는 그녀를 그렇게 부르지. 그 정도밖에 안 되는 여자니까 말이오!$B$B블러드 엘프를 믿은 내 잘못도 크지만 그보다 더한 건 여자를 믿었다는 거겠지!$B$B그녀의 말만 믿은 내가 바보지! 아즈샤라에 엄청난 재물과 귀한 물건들이 있으니 그녀를 보호할 전사 몇을 보내면 그 대가로 보상을 받기로 했었단 말이오. 이런, 그녀가 그 전사들을 모조리 죽여 버렸으니!$B$B복수를 해야겠소. 하지만 병력을 보낼 여력은 없소이다. 할다르 야영지의 북쪽에 있는 발로르모크에서 아그토르를 찾아보시오. 그 친구가 더 자세한 얘기를 해줄 거요.",
-    ["O"] = "아즈샤라에 있는 아그토르 블러드피스트에게 아그토르에게 보내는 봉인된 편지를 전해야 합니다.",
-    ["T"] = "배신",
   },
   [3505] = {
     ["D"] = "I thought as much.$B$BWe start our crusade against her workers along the southern bluffs on the northern peninsula of Azshara. Kill them with bloody rage--let them know they\'ve betrayed the wrong allies.$B$BDo not concern yourself with her yet--she spends most of her time with her bodyguards searching Azshara. It would be prudent after you\'ve slain her workers to find her personal camp. Scouting out where we can attack her would be wise. Perhaps there is something there we can use to provoke her.",
@@ -7374,9 +8799,24 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak to Belgrom Rockmaul in Orgrimmar.",
     ["T"] = "배신",
   },
+  [3508] = {
+    ["D"] = "You are foolhardy, $N. It is an admirable quality of your kind - to blindly enter battle when you have little to no chance of success. I will assist you, if only to see just one of Razelikh\'s minions fall.$B$BTo break the ward placed over Razelikh\'s subordinates will take time and require the acquisition of rare artifacts.$B$BBe still, I must first perform the enlightenment ritual. The information I gather will assist me in forging weapons of great power.",
+    ["O"] = "Wait for Loramus to complete the enlightenment spell.",
+    ["T"] = "Breaking the Ward",
+  },
   [3509] = {
     ["D"] = "악마 군주와 부하들에게 해를 입힐 수있는 유일한 길은 하나뿐입니다. 권력의 무기는 그의 진짜 이름을 지닌 위조 된 것이어야한다. $B$B그러한 무기가 만들어지면 악마와 그의 명령하에있는 모든 것이 약하다. $B$B아샤 사라 : 아 크코 록 (Arkkoroc)에 더 적은 신이있다. 당신은 그를 찾아야 만하지만주의를 기울여야합니다. 당신이 발견된다면 그의 부하들은 당신을 파멸시키지 않을 것입니다. $B$B의심 할 여지없이 그러한 정보에 대해 가격을 지불해야합니다.",
     ["O"] = "Speak with Lord Arkkoroc in Azshara. Begin your search at the waters edge to find the Temple of Arkkoran.",
+    ["T"] = "The Name of the Beast",
+  },
+  [3510] = {
+    ["D"] = "She kills my children, mortal. She that calls herself the ruler of these oceans. A false god, nothing more. Crush her and bring back all of her heads.$B$BFor that, you will be given the name that you seek and something else of equal importance.$B$BShe roams the clutch... Hetaera she is called.$B$B<Lord Arkkoroc points to the southwest.>$B$BGo!",
+    ["O"] = "Slay Hetaera and bring back Hetaera\'s Bloodied Head, Hetaera\'s Beaten Head, and Hetaera\'s Bruised Head to Lord Arkkoroc.",
+    ["T"] = "The Name of the Beast",
+  },
+  [3511] = {
+    ["D"] = "As promised, I will reveal the name of the demon lord, Razelikh the Defiler. First, however, I must prepare something of utmost importance for your journey.$B$BThe weapon you seek to create requires a temper. Give me a moment to drain the blood from these heads.$B$B<Lord Arkkoroc squeezes the heads in between his gigantic fists, draining them of their blood.>$B$BTake the temper back to Loramus along with the name of the beast: Rakh\'likh.",
+    ["O"] = "Take the temper back to Loramus Thalipedes.",
     ["T"] = "The Name of the Beast",
   },
   [3512] = {
@@ -7389,15 +8829,17 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "불모의 땅의 북쪽 방어탑으로 룬새김 두루마리를 가져가야 합니다.",
     ["T"] = "룬새김 두루마리",
   },
+  [3514] = {
+    ["D"] = "This scroll is from that scheming dryad Rynthariel, Keymaster of the Talon Den on Stonetalon Peak.$B$BShe\'ll not be making any more contact with the messenger you looted this from, heh, but we must stand our ground here. The Horde will not tolerate her outrunners here.$B$B$N, travel to the Talon Den. Kill Rynthariel, and then put up a symbol for all to see. Take this Horde flag, $N. Put it up in the Talon Den so that they will not be so rash as to send another messenger through our territory again.",
+    ["O"] = "Kill the leader of the Talon Den, Rynthariel the Keymaster.",
+    ["T"] = "Horde Presence",
+  },
+  [3515] = "_",
+  [3516] = "_",
   [3517] = {
     ["D"] = "이 아즈샤라에서 나도 내 나름대로 최선을 다했습니다. 벨그롬의 처벌도 나름대로 도움이 됐지요.$B$B내가 떠나기 전에 몇 가지 조사를 했었는데 주위에 값진 물건들이 얼마나 많이 널려 있는지 알면 놀랄 거예요.$B$B내 제안에 대해 더 얘기하도록 하죠. 그 물건 중 일부를 모아오면 조금 나누어 주도록 하죠.$B$B여기서 동쪽으로 가면 엘다라스 폐허라는 곳이 있는데, 그곳에 내게 필요한 서판들이 있습니다. 네 개 모두 명가의 마법사들의 이름을 딴 서판들이지요. 일단은 그것들을 가지고 온 후에 더 얘기하기로 하죠.",
     ["O"] = "베스아마라 서판, 진야엘 서판, 마크리 서판, 샤엘하이 서판을 찾아 아즈샤라에 있는 제디가에게 가야 합니다.",
     ["T"] = "서판 훔치기",
-  },
-  [3518] = {
-    ["D"] = "첫 번째 서판은 마가타라는 타우렌에게 가져가야 해요. 마가타는 썬더 블러프 장로 중 한 명이며, 타우렌과 포세이큰 간 동맹을 지지하는 자 중 하나이기도 하죠. 다른 어떤 장로들보다도 그녀는 타우렌과 타우렌의 방식이 포세이큰이 다시 인간으로 돌아가는 길을 찾는 데 도움을 줄 것이라 믿고 있습니다.$B$B그녀에게 베스아마라 서판을 가져다주세요. 이 서판은 그녀가 포세이큰을 도울 방법을 찾는 데 실마리가 될 거예요. 적어도 그녀 말로는 그렇다고 해요.",
-    ["O"] = "썬더 블러프에 있는 마가타에게 베스아마라 서판을 가져가야 합니다.",
-    ["T"] = "마가타에게 전달",
   },
   [3519] = {
     ["D"] = "Ughhh... I was bitten very badly by a spider named Githyiss the Vile while exploring the spider cave very close to here. I am sure I have been seriously poisoned; you must help me.$B$BPlease tell Dirania Silvershine. She will be able to help me.$B$BHurry... I\'m so dizzy...",
@@ -7434,11 +8876,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Escort Belnistrasz to the Quilboar\'s idol in Razorfen Downs.$B$BProtect Belnistrasz while he performs the ritual to shut down the idol.",
     ["T"] = "우상 진화",
   },
-  [3526] = {
-    ["D"] = "고급 기계공학은 두 갈래로 분류된다오. 바로 노움 기계공학과 고블린 기계공학이지. 단연코, 뛰어난 기술자라면 누구나 고블린 기계공학을 선택한다오. 엄청난 화력의 폭발물과 뛰어난 장비를 사용해서 세계를 완전히 장악할 수 있으니 말이오!$B$B이 설명서를 읽어 보시오. 고블린 기계공학을 배우고 싶거든 가젯잔에 있는 닉스 스프로켓스프링에게 이 설명서를 가져가시오. 하지만 명심하시오. 회원 가입은 영구적이고, 일단 가입하면 다른 갈래의 기계공학은 배우지 못한다오. 그러니까 그가 주는 임무를 완료하기 전에 확실히 마음의 결정을 내리도록 하시오!",
-    ["O"] = "고블린 기계공학에 대해 더 알고 싶으면 가젯잔에 있는 닉스 스프로켓스프링에게 기계공학 설명서를 가져가야 합니다.",
-    ["T"] = "고블린 기계공학",
-  },
   [3527] = {
     ["D"] = "The ancient prophecy of Mosh\'aru speaks of a way to contain the god Hakkar\'s essence.  It was written on two tablets and taken to the troll city of Zul\'Farrak, west of Gadgetzan.$B$BBring me the Mosh\'aru tablets!$B$BThe first tablet is held by the long-dead troll Theka the Martyr.  It is said his persecutors were cursed into scarabs and now scuttle about his shrine.$B$BThe second tablet is held by the hydromancer Velratha, near the sacred pool of Gahz\'rilla.$B$BWhen you have the tablets, bring them to me.",
     ["O"] = "Bring the First and Second Mosh\'aru Tablets to Yeh\'kinya in Tanaris.",
@@ -7448,6 +8885,42 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "이제 학카르 화신의 정수를 모을 차례야.$B$B이 학카르의 알을 동부 왕국의 가라앉은 사원에 있는 죽은 신의 성소로 가지고 가게. 그리고 알의 힘으로 죽은 신을 깨우게.$B$B아마 학카르는 졸개들을 보내 당신을 처치하려 할 거야. 그들을 물리치고 학카르의 피를 반드시 손에 넣게. 그 피로 학카르의 영혼이 깃든 영원의 불꽃들을 꺼야 하니까. 불꽃이 모두 꺼지면 학카르의 화신이 나타날 거야.$B$B그를 물리치고 학카르의 알에 그의 정수를 담아오게.",
     ["O"] = "타나리스에 있는 예킨야에게 충만한 학카르의 알을 가져가야 합니다.",
     ["T"] = "학카르의 화신",
+  },
+  [3529] = "_",
+  [3541] = {
+    ["D"] = "I have a fence in Orgrimmar. He resides in The Drag. He\'s difficult to nail down if you don\'t know where to look, but if you go looking in one of the highest buildings there you should have no problem finding him.$B$BDo me a favor though, don\'t go shouting to all of Kalimdor that he\'s there and what his business is--it\'d be bad for both of us.$B$BHe\'ll give us more than a fair price for the Tablet of Jin\'yael. I\'m not sure why, but you should have seen how excited he was to hear about its whereabouts.",
+    ["O"] = "Bring the Tablet of Jin\'yael to Jes\'rimon in Orgrimmar.",
+    ["T"] = "Delivery to Jes\'rimon",
+  },
+  [3542] = {
+    ["D"] = "Andron Gant is my next contact. He usually holds himself up in the Undercity... right near the Apothecarium.$B$BHe was a little more loose-lipped when it came to speaking about what he wanted the Tablet for. Apparently some of the mages of Undercity are looking to study some of the arcane spells the highborne used. They think this tablet will help them. Markri was adept at summoning creatures; especially elementals.$B$BTake the Tablet of Markri and return to me for your part of the reward.",
+    ["O"] = "Bring the Tablet of Markri to Andron Gant in Undercity.",
+    ["T"] = "Delivery to Andron Gant",
+  },
+  [3561] = {
+    ["D"] = "This final tablet goes to someone very dangerous, $N. Heed me when I tell you that I trust this person far less than anyone else I\'ve asked you to meet with.$B$BArchmage Xylem has a tower up in the hills overlooking Azshara. He\'s human, but he acts like no human I\'ve met... or killed. He exudes power, and I dare not ask him what he plans on doing with the tablet.$B$BHe came to me, but told me that his bodyguard Sanath would help me get to the tower when I was ready to meet him. Look north for Sanath.",
+    ["O"] = "Bring the Tablet of Sael\'hai to Archmage Xylem in Azshara.",
+    ["T"] = "Delivery to Archmage Xylem",
+  },
+  [3562] = {
+    ["D"] = "Take this note to Jediga. Tell her the payment will be here for her when she returns. And tell her I am pleased with her work.$B$BGo swiftly, $N. Tell your master I will be awaiting her here.",
+    ["O"] = "Deliver Magatha\'s Note to Jediga in Azshara.",
+    ["T"] = "Magatha\'s Payment to Jediga",
+  },
+  [3563] = {
+    ["D"] = "Take this letter to Jediga. Let her know that our deal has been beneficial and I be pleased with her work.$B$BYou tell her she come back to Orgrimmar fast and Jes\'rimon make sure he take good care of her.$B$BTell her that, and maybe in the future I have need of your services again, $N.",
+    ["O"] = "Deliver Jes\'rimon\'s Note to Jediga in Azshara.",
+    ["T"] = "Jes\'rimon\'s Payment to Jediga",
+  },
+  [3564] = {
+    ["D"] = "Here... take... <hic> this to Jediga. Good luck to ya!",
+    ["O"] = "Deliver Andron\'s Note to Jediga in Azshara.",
+    ["T"] = "Andron\'s Payment to Jediga",
+  },
+  [3565] = {
+    ["D"] = "What is it? Oh yes, your payment. Of course.$B$BTake this and be off with you. I\'m sure Jediga is awaiting oh so patiently for your return.",
+    ["O"] = "Deliver Xylem\'s Note to Jediga in Azshara.",
+    ["T"] = "Xylem\'s Payment to Jediga",
   },
   [3566] = {
     ["D"] = "It... It... It was all a trap.$B$BForgive... me.$B$BKill the bastard... Kill him for us... for Thorius.",
@@ -7464,16 +8937,32 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Give Cuely\'s Elixir to Thersa Windsong in Undercity.",
     ["T"] = "스며드는 타락",
   },
-  [3570] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "스며드는 타락",
-  },
   [3581] = "_",
   [3601] = {
     ["D"] = "블러드 엘프들이 이 킴야엘을 어떻게 생각하는지 아시오? 겨우 쥐새끼 정도로 생각하지. 덩치만 커다란 깡패들 같으니라고!$B$B놈들은 나를 고용해서 무슨 잃어버린 \"보물\"을 찾아 지역을 정찰하는 일을 도와 달라고 했소. 나야 물론 보물에다 넉넉한 보수 얘기에 귀가 솔깃해 뛰어들었지만, 녀석들은 날 배신하고 죽이려고 했지. 감히 이 킴야엘을!$B$B이건 정말 블러드 엘프란 못 믿을 족속이라는 걸 단적으로 보여 주는 거요.$B$B그런데 문제는, 녀석들이 아직도 내 장비들을 가지고 있는데 나 혼자서는 그걸 되찾아올 수가 없다는 거요. 날 좀 도와주지 않겠소?",
     ["O"] = "탈라시안 주둔지에서 킴야엘의 나침반, 망원경, 박제한 닭, 땅콩까개를 찾은 후, 아즈샤라에 있는 킴야엘에게 돌려줘야 합니다.",
     ["T"] = "킴야엘",
+  },
+  [3602] = {
+    ["D"] = "The ancient cliff giants of the southern region of Azshara consume the rock and buildings of the land for sustenance. The excrement from their consumption is a highly malleable and extremely strong crystal known as Azsharite.$B$BThe formations litter the southern arc, but few are ever recovered due to the extremely violent nature of the giants.$B$BYou are to venture south and recover enough of the Azsharite for the creation of the weapon\'s body. My felhounds will aid in the recovery of the crystal.",
+    ["O"] = "Recover twenty Crystallized Azsharite from southern Azshara. You may use the Felhound to assist you in \'sniffing\' out the location of cleverly hidden deposits.$B$BReturn to Loramus when the task is complete.",
+    ["T"] = "Azsharite",
+  },
+  [3621] = {
+    ["D"] = "The weapons are ready to be forged. You must take the tempered azsharite to one with the ability to harness fel energy.$B$BIn Stranglethorn Vale such a blacksmith exists. Galvan the Ancient, leader of the Mithril Order, will craft the weapons to your specifications. You will find his encampment between Zul\'Gurub and the Mosh\'Ogg ogre mound.$B$BMay your determination and faith carry you through this ordeal. Should you fail, know that your God smiles down upon you, mortal.",
+    ["O"] = "Take the Shipment to Galvan the Ancient in Stranglethorn Vale.",
+    ["T"] = "The Formation of Felbane",
+  },
+  [3622] = "_",
+  [3625] = {
+    ["D"] = "$N, the creation of each weapon will take some time.$B$BAdditionally, you may only use the power of the Felcurse once per three minutes. Its weakening properties against Razelikh the Defiler and his minions may be variable in duration. This is why you must release the Felcurse only when the moment is right!$B$BNow give me a moment to craft your weapon, $N.",
+    ["O"] = "Wait for Galvan to finish forging the weaponry.",
+    ["T"] = "Enchanted Azsharite Fel Weaponry",
+  },
+  [3626] = {
+    ["D"] = "The hour of redemption is near, $N. You must return to the Blasted Lands with your new-found weaponry and speak with the Fallen Hero of the Horde to receive your final objective.",
+    ["O"] = "Return to the Fallen Hero of the Horde.",
+    ["T"] = "Return to the Blasted Lands",
   },
   [3627] = {
     ["D"] = "To reach the Defiler, you must first destroy the triad of power and recover the amulet pieces. When you recover all three pieces, return to me and I shall give you further instruction.$B$BGo $N! To the Blasted Lands! Sevine, Allistarj, and Grol must fall!",
@@ -7490,11 +8979,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "고블린 기계공학에 대해 더 알고 싶으면 가젯잔에 있는 닉스 스프로켓스프링에게 기계공학 설명서를 가져가야 합니다.",
     ["T"] = "고블린 기계공학",
   },
-  [3630] = {
-    ["D"] = "고급 기계공학은 두 가지 학문으로 분류된답니다. 바로 노움기계공학과 고블린 기계공학인데, 물론 이 둘 중에서도 노움기계공학이 훨씬 더 우수하죠! 삶을 더 편리하게 하는 멋진 도구와 장치를 만드니까 말이죠!$B$B이 설명서를 읽어 보세요. 노움 기계공학에 대해 더 배우고 싶거든 이 설명서를 아이언포지에 있는 수석땜장이 오버스파크님께 가져다주세요. 아, 회원 가입은 영구적이며 다른 학문을 배우지 못하게 한다는 사실을 명심하세요. 그러니까 그분이 주는 임무를 완료하기 전에 확실한 마음의 결정을 내리도록 하세요!",
-    ["O"] = "노움 기계공학에 대해 더 배우고자 한다면 아이언포지에 있는 수석땜장이 오버스파크에게 기계공학 설명서를 가져가야 합니다.",
-    ["T"] = "노움 기계공학",
-  },
   [3631] = {
     ["D"] = "Hmph. I say you\'re not prepared, but that is not my decision. Strahad feels otherwise, and it is his decision to make... this time.$B$BHe wishes to speak to you, and quickly. You\'ll find him still above Ratchet in the Barrens, at his little tower there with his acolytes.$B$BDo not dawdle long.",
     ["O"] = "Speak to Strahad Farsan in the Barrens.",
@@ -7504,11 +8988,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Engineering at the expert level breaks into two disciplines: gnome and goblin.  Gnome engineering represents by far the superior of the two!  It\'s about the construction of wonderful gadgets and devices that make life better!$B$B$N, read this manual.  If you want to learn more on gnome engineering, then take that manual to Tinkmaster Overspark here in Ironforge.   Remember - membership is permanent and prevents joining the other discipline, so make sure you are sure before finishing his task!",
     ["O"] = "노움 기계공학에 대해 더 배우고자 한다면 아이언포지에 있는 수석땜장이 오버스파크에게 기계공학 설명서를 가져가야 합니다.",
     ["T"] = "노움 기계공학",
-  },
-  [3633] = {
-    ["D"] = "고급 기계공학은 두 갈래로 분류된다오. 바로 노움 기계공학과 고블린 기계공학이지. 단연코, 뛰어난 기술자라면 누구나 고블린 기계공학을 선택한다오. 엄청난 화력의 폭발물과 뛰어난 장비를 사용해서 세계를 완전히 장악할 수 있으니 말이오!$B$B이 설명서를 읽어 보시오. 고블린 기계공학을 배우고 싶거든 가젯잔에 있는 닉스 스프로켓스프링에게 이 설명서를 가져가시오. 하지만 명심하시오. 회원 가입은 영구적이고, 일단 가입하면 다른 갈래의 기계공학은 배우지 못한다오. 그러니까 그가 주는 임무를 완료하기 전에 확실히 마음의 결정을 내리도록 하시오!",
-    ["O"] = "고블린 기계공학에 대해 더 알고 싶으면 가젯잔에 있는 닉스 스프로켓스프링에게 기계공학 설명서를 가져가야 합니다.",
-    ["T"] = "고블린 기계공학",
   },
   [3634] = {
     ["D"] = "Engineering at the expert level breaks into two disciplines: gnome and goblin.  While I think it is a waste, you should be aware of gnome specialization.  They make items and gadgets that claim to change the world, but rarely often work.$B$B$N, read this manual.  If you wish to learn how to make metal paper weights, then take that manual to Tinkmaster Overspark in Ironforge.   Remember - membership is permanent and prevents joining the other discipline, so make sure you are sure before finishing his task!",
@@ -7530,20 +9009,55 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "If you wish to learn more about Gnome Engineering, take the Manual of Engineering Disciplines to Oglethorpe Obnoticus in Booty Bay.",
     ["T"] = "노움 기계공학",
   },
+  [3638] = {
+    ["D"] = "Goblin engineering is about practical uses for high profit and higher explosive power!  Our schemata allow us to make powerful bombs and mighty weaponry; the manual you read covered this.$B$BThe manual also covered our ages old oath of secrecy on our schemata.  Once you become a goblin engineer, that\'s that.  There is no access to gnome engineering at all.$B$BIf you still want to become a goblin engineer, sign this document pledging life-long secrecy and speak with me again.  Think about it carefully, $N.",
+    ["O"] = "If you agree to become a Goblin Engineer, then right-click on the Pledge of Secrecy and speak once more with Nixx Sprocketspring in Gadgetzan.",
+    ["T"] = "The Pledge of Secrecy",
+  },
   [3639] = {
     ["D"] = "As your mentor, I want samples of your work.  You\'re a skilled engineer; there is no question of this, $N.  What I hope to do though is analyze them for ways to emphasize goblin-oriented techniques in your future efforts.  I need the following: twenty big iron bombs, twenty sticks of solid dynamite, and five explosive sheep - and keep the safeties armed!$B$BSubmit these items to me and I will issue you your own Goblin Engineer Membership Card; it is required for access to all goblin engineering trainers!",
     ["O"] = "가젯잔에 있는 닉스 스프로켓스프링에게 대형 철제 폭탄 20개, 조밀한 다이너마이트 20개, 그리고 양 폭탄 5개를 가져가야 합니다.",
     ["T"] = "직접 만든 물건",
+  },
+  [3640] = {
+    ["D"] = "Gnome engineering is about engineering theory shaped to serve our needs!  Our schemata allow us to make devices that control the world around us; the manual you read covered this.$B$BThe manual also covered our ages old oath of secrecy on our schemata.  Once you become a gnome engineer, that\'s that.  There is no access to goblin engineering at all.$B$BIf you still want to become a gnome engineer, sign this document pledging life-long secrecy and speak with me again.  Think about it carefully, $N.",
+    ["O"] = "If you agree to become a Gnome Engineer, then right-click on the Pledge of Secrecy and speak once more with Tinkmaster Overspark in Ironforge.",
+    ["T"] = "The Pledge of Secrecy",
   },
   [3641] = {
     ["D"] = "As your mentor, I want some samples of your work.  You\'re a skilled engineer; there is no question of this, $N.  What I hope to do though is to analyze your work for ways to emphasize gnome-oriented techniques in your future efforts.  I need the following samples: six mithril tubes, an accurate scope, and two advanced target dummies.$B$BSubmit these items to me and I will issue you your own Gnome Engineer Membership Card; it is required for access to all gnome engineering trainers!",
     ["O"] = "Bring 6 Mithril Tubes, an Accurate Scope, and 2 Advanced Target Dummies to Tinkmaster Overspark in Ironforge.",
     ["T"] = "직접 만든 물건",
   },
+  [3642] = {
+    ["D"] = "Gnome engineering is about engineering theory shaped to serve our needs!  Our schemata allow us to make devices that control the world around us; the manual you read covered this.$B$BThe manual also covered our ages old oath of secrecy on our schemata.  Once you become a gnome engineer, that\'s that.  There is no access to goblin engineering at all.$B$BIf you still want to become a gnome engineer, sign this document pledging life-long secrecy and speak with me again.  Think about it carefully, $N.",
+    ["O"] = "If you agree to become a Gnome Engineer, then right-click on the Pledge of Secrecy and speak once more with Oglethrope Obnoticus in Booty bay.",
+    ["T"] = "The Pledge of Secrecy",
+  },
   [3643] = {
     ["D"] = "As your mentor, I want some samples of your work.  You\'re a skilled engineer; there is no question of this, $N.  What I hope to do though is to analyze your work for ways to emphasize gnome-oriented techniques in your future efforts.  I need the following samples: six mithril tubes, an accurate scope, and two advanced target dummies.$B$BSubmit these items to me and I will issue you your own Gnome Engineer Membership Card; it is required for access to all gnome engineering trainers!",
     ["O"] = "무법항에 있는 오글소프 오브노티쿠스에게 미스릴관 6개, 정밀한 조준경 1개, 고급 표적 허수아비 2개를 가져가야 합니다.",
     ["T"] = "직접 만든 물건",
+  },
+  [3644] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Membership Card Renewal",
+  },
+  [3645] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Membership Card Renewal",
+  },
+  [3646] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Membership Card Renewal",
+  },
+  [3647] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Membership Card Renewal",
   },
   [3661] = {
     ["D"] = "올빼미야수는 정말 예측할 수 없는 생물이오. 한없이 순하다가도 자신들이 중요하게 여기는 것이 위협을 받으면 극도로 포악해지거든.$B$B들리는 소문에 의하면 올빼미야수는 엘룬이 창조했다고 하오. 난 그게 사실인지 정말 궁금하다오.$B$B동부 내륙지에 올빼미야수 무리가 서식한다는 소리를 최근에 들었는데 그들에 대해서 좀 더 알고 싶소. 가서 올빼미야수 깃털 15개를 모아 내게 가져다주지 않겠소?",
@@ -7600,6 +9114,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Take the Arch Druid\'s Seed Voucher to Mathrengyl Bearwalker in the Cenarion Enclave of Darnassus.",
     ["T"] = "Morrowgrain Research",
   },
+  [3782] = {
+    ["D"] = "With what we call an Evergreen Pouch, we have cultivated Tharlendris seeds in the soil from Un\'Goro Crater.  These seeds have blossomed into an array of random, potent herbs.  One result is morrowgrain, a mysterious herb we know little about; I very much hope to unravel this mystery for the Circle.$B$BTake this voucher over to my daughter Bashana, and she will give you some seeds so you may assist us.  If you run out, you will need to purchase more from her.",
+    ["O"] = "Take the Seed Voucher to Bashana Runetotem in Thunder Bluff.",
+    ["T"] = "Morrowgrain Research",
+  },
   [3783] = {
     ["D"] = "My friends are always coming up with great ideas. I\'ve never felt like I could match them... until today! I just drew up the plans for something great! If you promise not to tell, I\'ll let you in on the secret... $B$BI\'m going to make a mechanical yeti! Not only are my friends sure to be freaked out when they see it, but when they get over that, I know they\'ll be impressed!$B$BI need thick yeti fur from the ice thistle yeti to start with. Will you help? You\'ll find them to the southeast.",
     ["O"] = "Collect 10 Thick Yeti Furs for Umi Rumplesnicker in Everlook.",
@@ -7614,6 +9133,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Here\'s your Evergreen Pouch that you\'ll need to use the Tharlendis seeds with.  You also need to have Un\'Goro soil samples on hand to use as fertilizer for the seeds.  Just use the pouch when you have everything; the pouch will take care of the rest.$B$BWhen you have enough morrowgrain, bring them here to me in the enclave.  Please don\'t bother the Arch Druid; he\'s a very busy man, and he doesn\'t need to be disturbed every time someone returns with another batch of morrowgrain!",
     ["O"] = "Use an Evergreen Pouch with a Packet of Tharlendis Seeds and two Un\'Goro Soil samples to try and cultivate samples of Morrowgrain.$B$BBring 10 Morrowgrain to Mathrengyl Bearwalker in Darnassus.",
     ["T"] = "Morrowgrain Research",
+  },
+  [3786] = {
+    ["D"] = "Here\'s your Evergreen Pouch that you\'ll need to use the Tharlendis seeds with.  You also need to have Un\'Goro soil samples on hand to use as fertilizer for the seeds.  Just use the pouch when you have everything; the pouch will take care of the rest.$B$BWhen you have enough morrowgrain, bring them to me here on Elder Rise.  Please don\'t bother the Arch Druid; he\'ll be very busy with the research, as well as the multitude of concerns he has!",
+    ["O"] = "Use an Evergreen Pouch with a Packet of Tharlendis Seeds and two Un\'Goro Soil samples to try and cultivate samples of Morrowgrain.$B$BBring 10 Morrowgrain to Bashana Runetotem in Thunder Bluff.",
+    ["T"] = "Morrowgrain Research",
+  },
+  [3787] = {
+    ["D"] = "Excuse me, friend...$B$BA colleague of mine would like to speak with you about the research you are doing in conjunction with the Cenarion Circle.  He is a druid by the name of Quintis Jonespyre, and he resides in Feathermoon Stronghold, Feralas.  He would like to confer with you about morrowgrain... and he very much would like for you to keep our discussion from the ears of the Arch Druid.$B$BIf you\'re interested, speak with him; no doubt, all will be revealed once you do.",
+    ["O"] = "Speak with Quintis Jonespyre in Feathermoon Stronghold.",
+    ["T"] = "Jonespyre\'s Request",
   },
   [3788] = {
     ["D"] = "Excuse me, friend...$B$BA colleague of mine would like to speak with you about the research you are doing in conjunction with the Cenarion Circle.  He is a druid by the name of Quintis Jonespyre, and he resides here in Feathermoon Stronghold.  He would like to confer with you about morrowgrain... and he very much would like for you to keep our discussion from the ears of the Arch Druid.$B$BIf you\'re interested, speak with him; no doubt, all will be revealed once you do.",
@@ -7635,6 +9164,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 10 Morrowgrain to Quintis Jonespyre in Feathermoon Stronghold.",
     ["T"] = "The Mystery of Morrowgrain",
   },
+  [3792] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Morrowgrain to Feathermoon Stronghold",
+  },
   [3801] = {
     ["D"] = "안녕하시오. 나는 프랑클론 포지라이트라고 하오. 그렇소, 돌다지 건축 방식을 개발한 바로 그 프랑클론 포지라이트라오. 틀림없이 당신도 이 전쟁으로 상처 입은 세계를 여행하며 돌아다니던 중에 내가 만든 건축물을 스쳐 지나갔거나 그 위에 서 본 적이 있었을 거요.$B$B아마 내가 왜 여기에 있고 당신에게 무엇을 바라는지 궁금해 하고 있겠지? 물론 둘 다 당연한 궁금증이오.$B$B나는 당신의 도움이 절실히 필요하오. 당신이 도와주는 대가로 내 저주받은 도시 깊은 곳으로 들어갈 수 있는 열쇠를 주리다.",
     ["O"] = "Speak with Franclorn Forgewright if you are interested in obtaining a key to the city major.",
@@ -7650,10 +9184,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "Morrowgrain to Darnassus",
   },
-  [3821] = {
-    ["D"] = "샤니가 불타는 평원의 불자루 오우거들이 이상한 의식을 하고 있다는 보고를 듣고 이를 조사하기 위해 떠난 지 3주가 훨씬 지났소.$B$B고어투스 장군께서는 떠난 우리 소대의 누구에게서도 아무런 소식도 듣지 못했다시며 그 일은 잊어버리고 주어진 임무에나 열중하라고 하시지만, 그게 말이나 되오? 샤니는 내 아내란 말이오!$B$B나는 주둔지를 떠날 수 없지만 샤니에게 무슨 일이 일어났는지 꼭 알아야만 하오. 불타는 평원으로 가서 그녀를 찾아봐 주시오.",
-    ["O"] = "불타는 평원으로 가서 샤니 프라우드터스크에게 무슨 일이 있었는지 확인해야 합니다.",
-    ["T"] = "우레망치 바위굴",
+  [3804] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Morrowgrain to Thunder Bluff",
   },
   [3822] = {
     ["D"] = "전체 소대원이 체포되었습니다. $N. 모두는 죽임을 당했다. $B$B그들의 지도자 인 Krom\'Grul은 일종의 의식을 위해 나를 구하고 싶어했다. $B$BI는이 제단에 묶여 짐승에 의해 야만적이었다. 이 고문 1 시간 후에 신체 활동이 중단되었습니다. 그 짐승은 내 결혼식 코 고리를 내 얼굴에서 찢어 내 손가락에 붙였습니다. 나는 그런 야만인을 결코 보지 못했다! $B$BCrrom\'Grul을 찾아 그를 죽인다! Thal\'trak. $B$BAnd $N에 다시 우리의 반지를 가져 가서 우리가 다시 만날 것이라고 ... 다른 삶에서.",
@@ -7664,6 +9198,31 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "적이 우리를 공격하기 전에 적을 쳐야 해요!$B$B간단히 설명하도록 할게요.$B$B불타는 평원의 불자루 오우거들이 검은바위 오크들과 동맹을 맺었어요. 그 사악한 오크들과 손을 잡은 이 오우거들은 광석이 풍부한 우레망치 바위굴을 지키고 보급로를 항상 열어 두고 있지요.$B$B가서 본때를 보여줘야 해요. 녀석들의 세력을 꺾어 버리고 일이 끝나면 제게 다시 돌아오세요.$B$B<공기를 움켜쥐고 목이 멘듯한 몸짓을 보이는 오랄리우스>$B$B없애주마, 윙키!",
     ["O"] = "Slay 15 Firegut Ogre-Mages, 7 Firegut Ogres, and 7 Firegut Ogre Brutes, and return to Oralius when you are finished.",
     ["T"] = "불자루 진화",
+  },
+  [3824] = {
+    ["D"] = "They\'re reeling I tell you! Our next strike must be decisive.$B$BThe brute lord, Gor\'tesh, must be slain. More importantly, his head must be returned to me so that I may prepare the third phase of our attack on the Firegut ogres.$B$BBe warned, soldier, Gor\'tesh rules not from Dreadmaul Rock but from a Blackrock orc structure to the west of Dreadmaul Rock.$B$BYour orders, then, are simple. Find Gor\'tesh and chop off his fat head. Return to me when the job is done.$B$BSHUT UP, WINKY!",
+    ["O"] = "Find Gor\'tesh, somewhere to the west of Dreadmaul Rock. Kill Gor\'tesh and then take Gor\'tesh\'s Lopped Off Head back to Oralius in Burning Steppes.",
+    ["T"] = "Gor\'tesh the Brute Lord",
+  },
+  [3825] = {
+    ["D"] = "Just one last thing you must do, soldier.$B$BI\'ve taken the liberty of putting Gor\'tesh\'s head on a pike. Now all you have to do is take this head to the top of Dreadmaul Rock and stick it into the ground. Once you do that, watch as those cowardly ogres run for their lives! After you\'ve had your fun, come back to me and I\'ll reward you for all of your hard work.$B$B<Oralius seems to be losing touch with reality.>",
+    ["O"] = "Take Gor\'tesh\'s Lopped Off Head and place it at the top of Dreadmaul Rock. Look for a soft dirt mound to plant the pike.",
+    ["T"] = "Ogre Head On A Stick = Party",
+  },
+  [3841] = {
+    ["D"] = "Oh, hello, $N. I\'m so glad to see you again. How was your trip to Darnassus?$B$BWell, you\'ll be happy to know that we\'ve made quite a bit of progress while you\'ve been gone. We even saved a nest full of eggs. Unfortunately, the mother died before we got to her.$B$BSay, would you want one for a pet? They look to hatch soon, so they\'ll need a good $Gfather:mother;. What do you say?$B$BIf you\'re really interested, take one of the eggs to Quentin at the race tracks in Shimmering Flats. He\'ll tell you more.",
+    ["O"] = "Speak to Quentin in Thousand Needles.",
+    ["T"] = "An Orphan Looking For a Home",
+  },
+  [3842] = {
+    ["D"] = "The Moonweavers, huh? Most intriguing. I wish the sprite darters could truly appreciate what it means to have those two look after them. They are both quite capable.$B$BSo, they gave you the egg as a gift. Well, then you should be responsible for it for as long as you desire. It appears it\'s almost ready to hatch, but we should ensure it\'s healthy and no damage has been done to it.$B$BI only need two elixirs of fortitude for a small spell to protect the egg. I have the rest of the components here with me.",
+    ["O"] = "Bring 2 Elixir of Fortitudes to Quentin in Thousand Needles.",
+    ["T"] = "A Short Incubation",
+  },
+  [3843] = {
+    ["D"] = "A magnificent specimen, $N. If this creature survives gestation, then it\'ll be a healthy pet indeed!$B$BThere is one last thing I would suggest doing if you plan on following through with this--head to Aerie Peak in the Hinterlands. Speak to a dwarf there named Agnar Beastamer, he\'s a master animal handler and should be able to guide you in the final steps of incubation.$B$BBut hurry, $N, this egg is fragile and will not last long without proper care.",
+    ["O"] = "Take your Fragile Sprite Darter Egg to the Hinterlands and speak to Agnar Beastamer, but hurry, you only have 1 hour to find him before the hatchling within the egg dies.",
+    ["T"] = "The Newest Member of the Family",
   },
   [3845] = {
     ["D"] = "그걸 잡으면, 그 짐을 해안으로 다시 가져옵니다. 아마도 팩 안의 물건을 살펴보면 속한 사람에 대해 더 많은 것을 알 수 있습니다. $B$B마샬\'s 피난소에있는 외딴 여행자가 있습니다. 아마 더 많은 것을 알게 될 것입니다.",
@@ -7695,6 +9254,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "운고로 분화구 어딘가에 있는 윌리덴 마샬에게 일지를 전해야 합니다.",
     ["T"] = "윌리덴의 일지",
   },
+  [3885] = "_",
   [3901] = {
     ["D"] = "You\'ve shown your potential to the Forsaken under normal circumstances $N - now let\'s see you under pressure.$B$BThe Rattlecage skeletons, more mindless minions of the Lich King, are a tougher foe than the zombies you have faced thus far.  Again, thin their numbers and prove yourself to the Forsaken.  Do not tarry - when you are done, speak to me again.",
     ["O"] = "Kill 12 Rattlecage Skeletons, and then return to Shadow Priest Sarvis in Deathknell when you are done.",
@@ -7704,6 +9264,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "You there!  If you\'re looking for something to make yourself useful, then listen up!$B$BWe need fresh out-of-the-ground recruits to head into Deathknell and search for any sort of useful equipment.  Most likely, they\'ll be in stacks of boxes.  We expect more recruits to be rising soon, and unless we want them to stumble about naked we had better get to scavenging!$B$BWell get to work, you miserable bag of bones!  I\'m not going to reward those without some hustle.",
     ["O"] = "Search Deathknell and the vicinity for 6 pieces of Scavenged Goods, and return them to Deathguard Saltain.",
     ["T"] = "Scavenging Deathknell",
+  },
+  [3903] = {
+    ["D"] = "You\'ve shown yourself a dependable $c, $N.  Dependable, and not afraid to get your hands dirty, eh?$B$BI have a friend, Milly Osworth, who\'s in some trouble.  She\'s over with her wagon on the other side of the abbey, near the stable.  I\'m sure she could use a pair of hands like yours.",
+    ["O"] = "Speak with Milly Osworth.",
+    ["T"] = "Milly Osworth",
   },
   [3904] = {
     ["D"] = "A gang of brigands, the Defias, moved into the Northshire Vineyards while I was harvesting!  I reported it to the Northshire guards and they assured me they\'d take care of things, but... I\'m afraid for my crop of grapes!  If the Defias don\'t steal them then I fear our guards will trample them when they chase away the thugs.$B$BPlease, you must help me!  I gathered most of my grapes into buckets, but I left them in the vineyards to the southeast.$B$BBring me those buckets!  Save my harvest!",
@@ -7720,20 +9285,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "검은바위 산에 있는 채석장으로 가서 멸망의 파이론을 처치해야 합니다. 이 임무를 완수한 후 썬더하트에게 돌아가십시오.",
     ["T"] = "화염의 부조화",
   },
-  [3908] = {
-    ["D"] = "보시다시피 전 제가 어떻게 여기까지 오게 됐는지 전혀 모르겠어요. 아무도 몰라요. 모두에게 비밀이거든요! 아무것도 기억할 수 없어요...$B$B그렇지만 당신이 가져온 물건을 보니... 뭔가 기억이 나네요.$B$B제 칼. 제 칼을 어떻게든 연마하려고 했던 것 같은데, 왜 그랬는지는 확실히 기억이 나질 않네요. 더 자세한 얘기를 못 해드려서 죄송하지만 도저히 기억이 나질 않아요!$B$B어쨌든 이 칼을 가져가야 할 곳은 알고 있어요. 여명의 설원에 있는 도노바 스노우덴을 찾아가세요. 온천 근처에 있을 텐데 도노바가 그곳에서 칼을 손질할 수 있을 겁니다.",
-    ["O"] = "여명의 설원에 있는 도노바 스노우덴에게 링쿠의 훈련용 검을 가져가야 합니다.",
-    ["T"] = "아무도 모르는 비밀",
+  [3907] = {
+    ["D"] = "I can taste the foulness in the air that surrounds you, $N. There is another, hidden in the depths of Blackrock, who does control this foulness.$B$BThe wind and earth cry his name: Lord Incendius... but someone... something... commands this being. He is merely an emissary.$B$BFind him and discover where his master hides. Return to me when you have collected this information.",
+    ["O"] = "Enter Blackrock Depths and track down Lord Incendius. Slay him and return any source of information you may find to Thunderheart.",
+    ["T"] = "Disharmony of Fire",
   },
   [3909] = {
     ["D"] = "Now, what\'s this? Linken... FORGOT?$B$BOh, I see... Lost his memory...$B$BWell, here is his sword. It\'s not complete, though. I know of the one that can finish it, but... speaking with him may prove difficult.$B$BListen, I know of someone that will be able to help you. It\'s too much to explain right now, but you must somehow acquire a Videre Elixir. The only one I know that can help you with that is Gregan Brewspewer. He\'s hard to track down, but last I knew he was camping in the wilds of Feralas.",
     ["O"] = "Seek out Gregan Brewspewer in northern Feralas. From him, learn how you may acquire the Videre Elixir, then return to Donova Snowden in Winterspring.",
     ["T"] = "The Videre Elixir",
-  },
-  [3911] = {
-    ["D"] = "There is work to be had for those venturing into the depths, $N.$B$BThe Dark Irons have mastered creation of extremely powerful golems.$B$BInitial reports from our spies indicate that the dwarves use a unique power source to give their creations incomparable killing power.$B$BJust imagine what we could do with our abominations if we could get our hands on this essence of the elements! Turn that city upside down if you must, but do not return until you have found the essence! Payment will be worth the risk.",
-    ["O"] = "Travel to Blackrock Depths and recover 10 Essence of the Elements. Your first inclination is to search the golems and golem makers. You remember Vivian Lagrave also muttering something about elementals.",
-    ["T"] = "The Last Element",
   },
   [3912] = {
     ["D"] = "This elixir will allow you to speak with one that you would not normally even see...$B$BTake the Videre elixir, along with Linken\'s sword, to the graveyard just outside Gadgetzan in Tanaris. Once there, drink the potion. You may be quite surprised at the results, but do not be alarmed.$B$BIn your \"other\" form, head due north until you reach the mountains. You\'ll find the one you need to speak with in one of the rocky crevices. His name is Gaeriyan.$B$BRemember, he will only speak to you in that form...",
@@ -7754,6 +9314,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "I think I might have broken that Samophlange.  That\'s not good, because I already told some colleagues in Undermine about it and they were very intrigued.  We must find a way to fix it!$B$BTake the broken samophlange to Wenikee Boltbucket, just south of Mor\'shan Rampart, the horde outpost between the Barrens and Ashenvale.  She is very clever and inquisitive.  If you show her the samophlange I bet she\'d jump at the chance to fix it.",
     ["O"] = "Bring the Broken Samophlange to Wenikee Boltbucket.",
     ["T"] = "웨니키 볼트버킷",
+  },
+  [3922] = {
+    ["D"] = "I want to fix this samophlange, but to do that I\'m going to need some supplies.  I ran out of seventeen-point-five gauge nugget slugs and I\'m going to need a bunch of those for the work ahead.$B$BThe closest place to get them is the Sludge Fen to the east.  The Venture Company usually keeps them in their tool buckets.  Go to the Sludge Fen and look in the tool buckets you find there, then return to me when you\'ve gathered enough nugget slugs.",
+    ["O"] = "Bring 15 Nugget Slugs to Wenikee Boltbucket in the Barrens.",
+    ["T"] = "용접용 철괴",
   },
   [3923] = {
     ["D"] = "Well, that didn\'t work.  I put some extra gauges on the samophlange to measure its structural integrity, and they read the integrity at an all-time low.  I could add some more dials and maybe a lever or two to try and fix it, but... I think that might make things even worse.$B$BYou should take the samophlange to Rilli Greasygob.  He used to work for the Venture Company -- if anyone knows how to fix it, it\'s Rilli.$B$BYou can find him at Nogg\'s Machine Shop in Orgrimmar, in the Valley of Honor.",
@@ -7800,10 +9365,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak with Kharan Mighthammer and gather information about Princess Moira Bronzebeard\'s kidnapping. Take that information to Thrall in Orgrimmar.$B$BYou recall Gor\'shak mentioning that Kharan is being held in a cell nearby.",
     ["T"] = "이게 대체 무슨 일이죠?",
   },
+  [4002] = {
+    ["D"] = "You bring excellent information, $N.$B$BAs Warchief, it is my duty to do what is best for the Horde. To ensure that the generations that come after us are not forced into a hopeless existence.$B$BThe opportunity to shape our future alliances has fallen into our collective laps. A move to help the dwarves could greatly strengthen our relationships in the Eastern Kingdoms. This, then, is why you must not fail!$B$BAre you prepared?",
+    ["O"] = "Speak with Thrall if you are prepared to take on the mission he has planned.",
+    ["T"] = "The Eastern Kingdoms",
+  },
   [4003] = {
     ["D"] = "This strike against the Dark Iron dwarves, if successful, will send a shockwave throughout their entire kingdom.$B$BPrincess Bronzebeard is under the control of Emperor Thaurissan. To free her, you must kill the Emperor. Be warned, your task is doubly dangerous, as Bronzebeard will attack you without question while under the control of the Emperor.$B$BDO NOT HARM HER!",
     ["O"] = "[Slay Emperor Dagran Thaurissan and free Princess Moira Bronzebeard from his evil spell. ]",
     ["T"] = "공주 구출",
+  },
+  [4004] = {
+    ["D"] = "You have slain my husband, $r! My child will be born into this world without a father.$B$B<Princess Moira points directly at you.>$B$BI assure you, this child will be the next ruler of the kingdom of Ironforge. You and your kind shall be hunted down until the end of days for this wrongful act.$B$B<You think that Princess Moira may be suffering from the residual effect of Thaurissan\'s spell.>$B$BLeave me be, $r. I am certain your warchief will be eager to hear the results of his meddling.",
+    ["O"] = "Return to Thrall!",
+    ["T"] = "The Princess Saved?",
   },
   [4005] = {
     ["D"] = "Take this bag of supplies with you to Tanaris. Travel to Lost Rigger Cove, and look for a circle of stones.$B$BThe eastmost peninsula is the secret...$B$BFrom this circle only, read from the book of Aquor; summon the only creature that can transform the items you collected into a totem to fight Blazerunner.$B$BAquementas will not be pleased to be awakened, but remember, you must remain in the circle for him to transform the items.",
@@ -7830,11 +9405,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "The Videre Elixir",
   },
-  [4061] = {
-    ["D"] = "우리가 이글거리는 협곡에 처음 급습했을 때 기계들이 나타났었네. 더 자세히 조사한 결과, 그 기계들이 불타는 평원에서 수입되고 있다는 사실을 알게 됐지. 아마 검은바위 나락에서 오는걸게야. 바로 이 때문에 자네가 필요한 것일세.$B$B자네의 첫 임무는 불타는 평원으로 가서 그 지역의 바위 골렘류나 하급 바위 정령류에게서 원소 파편을 구해 오는 것이야. 충분한 양을 모아 내게 가져오면 녀석들의 근원을 파악할 수 있을 것일세.",
-    ["O"] = "불타는 평원으로 가서 제사장 테오도라 뮬바다니아에게 가져갈 부서진 원소 파편 10개를 모아야 합니다.$B$B그 지역의 골렘과 정령들에게서 이 파편을 구할 수 있을 거라고 테오도라가 말했던 것이 기억납니다.",
-    ["T"] = "기계들의 봉기",
-  },
   [4062] = {
     ["D"] = "G.L.A.$B$BThose are the \'initials\' imprinted on the elemental shards. Below the initials are a rank marking of some sort. The machinations you destroyed in the Burning Steppes were of \'Rank IV.\' I assume that this is a lowly rank.$B$BTake this shard sample to Lotwil Veriatus in the camp to the east. He is a scholar of some renown in the field of elemental sciences. He may be able to assist us in our search.",
     ["O"] = "Take the Elemental Shard Sample to Lotwil Veriatus.$B$BYou recall Theodora saying that Lotwil was stationed in a camp to the east.",
@@ -7849,6 +9419,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "카르가스 원정대의 사령관, 장군 고어투스의 명령:$B$B검은바위 나락 내에서 사령관 앵거포지의 세력을 섬멸하라.$B$B앵거포지의 부하들은 무자비한 살인마들로, 카르가스 원정대의 제 109 사단을 대량 학살한 장본인들이다. 영웅들은 이 짐승 같은 놈들을 상대할 때 극히 조심하기 바란다.$B$B검은바위 나락에 있는 사령관 앵거포지의 부대의 최전선을 무너뜨리는 자에게는 포상을 내릴 것이다.",
     ["O"] = "검은바위 나락으로 가서 사악한 침략자들을 쳐부수십시오!$B$B장군 고어투스가 성난모루 보초 15명, 성난모루 교도관 10명, 성난모루 보병 5명을 처치해 달라고 했습니다. 임무를 완수하면 장군 고어투스에게 가야 합니다.",
     ["T"] = "죽음의 본보기: 검은무쇠 드워프",
+  },
+  [4082] = {
+    ["D"] = "By order of Warlord Goretooth, commander of the Kargath Expeditionary Force:$B$BHead of the K.E.F. reconnaissance division, Grandmaster Lexlort, has returned with news of the whereabouts of high ranking Dark Iron officials. Through locked gate, near the heart of the city, they train their forces to snuff out our men. Travel to Blackrock Depths and destroy them!$B$BCompletion of this mission will result in a tribute.",
+    ["O"] = "Venture to Blackrock Depths and destroy the vile aggressors!$B$BWarlord Goretooth wants you to kill 10 Anvilrage Medics, 10 Anvilrage Soldiers and 10 Anvilrage Officers. Return to him once your task is complete.",
+    ["T"] = "KILL ON SIGHT: High Ranking Dark Iron Officials",
   },
   [4084] = {
     ["D"] = "I do not know the one you speak of, $N.$B$BBut worry not; if your friend was on a journey to find me, I do know what it was he desired.$B$BIn the heart of Un\'Goro Crater dwells evil of the purest form. This evil takes the shape of an elemental called Blazerunner... protected by an aura that none can dispel...$B$BNone... except those with enough power to do so. I can teach you of this power, $N.$B$BFirst, do as I ask. Collect 11 Silvery Claws and 1 Irontree Heart from the creatures in Felwood, then return.",
@@ -7865,10 +9440,70 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 15 Blood Amber to Maybess Riverbreeze in Felwood.",
     ["T"] = "악령숲 정화",
   },
+  [4103] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Hunting",
+  },
+  [4104] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Mining",
+  },
+  [4105] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Gathering",
+  },
+  [4106] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Skinning",
+  },
+  [4107] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Disenchanting",
+  },
+  [4108] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Hunting",
+  },
+  [4109] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Mining",
+  },
+  [4110] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Gathering",
+  },
+  [4111] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Skinning",
+  },
+  [4112] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Disenchanting",
+  },
   [4120] = {
     ["D"] = "난 사냥꾼으로서 내 적들에게서 힘으로 우열을 다투는데 지지 않으려고 애쓴다네. 단지 적을 잘 아는 것만으로 전투의 승기를 잡을 수도 있지.$B$B잿빛 골짜기의 북쪽에 악령숲이라고 하는 곳이 있는데, 그곳의 생물들은 악이라 불리는 물질에 의해 오염되었다네. 그곳에 사는 곰과 늑대들이 그것 때문에 미쳐 버렸는데 내 생각에는 힘도 더욱 세진 것 같네.$B$B자, 가게나. 악령숲으로 가서 이 야수들과 직접 맞서 보게. 녀석들이 정말 내가 생각하는 것만큼 강한지 자네 힘으로 직접 알아보게.",
     ["O"] = "페랄라스의 모자케 야영지에 있는 탈로 쏜후프가 악령숲에 있는 성난발톱불곰 12마리와 갈퀴발톱 악령발늑대 12마리를 처치해 달라고 했습니다.",
     ["T"] = "타락의 힘",
+  },
+  [4121] = {
+    ["D"] = "Do you truly believe that you will make it to your rendezvous point with me in custody? You actually expected to break into a heavily fortified Blackrock fortress to capture a prized asset of theirs without alerting anyone or anything to your presence?$B$BYou will be destroyed!",
+    ["O"] = "Escort your prisoner, Grark Lorkrub, through Burning Steppes and through Blackrock Mountain to the Searing Gorge.$B$BYou recall Lexlort mentioning that he would have his men waiting on the other side to take Grark into custody.$B$BYou will also be required to hand over your Thorium Shackles to Lexlort.",
+    ["T"] = "Precarious Predicament",
+  },
+  [4122] = {
+    ["D"] = "I tracked him across the Searing Gorge, through the mountain, and into the Burning Steppes. That traitor was caught red-handed giving the Blackrock orcs vital information about our day to day operations. I\'m speaking of Grark Lorkrub.$B$BHe now sits in the Burning Steppes, safely under their protection - or so he thinks.$B$BTake these shackles, $N. Find Grark, place the shackles on him and lead him through Blackrock Mountain. Do this and a tribute is yours.",
+    ["O"] = "Travel to the Burning Steppes and find Grark Lorkrub. You recall Lexlort mentioning that he was last seen in a massive Blackrock fortress.$B$BWhen you find Grark Lorkrub, use the Thorium Shackles to bind him and then lead him back through Blackrock Mountain to the Searing Gorge. Lexlort will have his men waiting on the other side to take Grark into custody.",
+    ["T"] = "Grark Lorkrub",
   },
   [4123] = {
     ["D"] = "나는 수년 동안 어떤 특별한 보석을 찾아다녔지. 산의 정수라는 보석인데, 크기가 당신 주먹만하다고! 검은무쇠 드워프 녀석들이 자기들 금고에 그 보석을 넣고 금고를 잠가 버렸지. 내가 아무리 사정을 해도 내게 팔려고 하지를 않을 것이라서 힘으로라도 빼앗을 작정이오.$B$B검은바위 나락의 지하층까지 싸워 내려가서 비밀 금고를 열고 산의 정수를 손에 넣으시오. 그러려면 보초 둠그립을 처치해야 하는데 녀석은 검은 금고의 유물 상자를 모조리 열어 보기 전에는 나타나지 않을 것이오!$B$B행운을 빌겠소이다.",
@@ -7905,15 +9540,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "페랄라스 남부에 있는 덩굴발 놀 야영지를 수색해 안내원이나 그의 소지품에 대한 증거를 찾아야 합니다.",
     ["T"] = "덩굴발 놀",
   },
+  [4132] = {
+    ["D"] = "You have done an exemplary job, $N. It is now time to send you on your last mission.$B$BGeneral Angerforge, the Dark Iron responsible for coordinating the attacks on the 109th division of the K.E.F. and the mass slaughter of our forces must be brought to justice.$B$BThis will undoubtedly be your most grueling mission, but should you succeed, you will be richly rewarded.",
+    ["O"] = "Travel to Blackrock Depths and slay General Angerforge! Return to Warlord Goretooth when the task is complete.",
+    ["T"] = "Operation: Death to Angerforge",
+  },
   [4133] = {
     ["D"] = "어둠마법사 비비안 라그레이브가 당신의 도움을 필요로 하고 있습니다. 그녀는 황야의 땅에 있는 오크 전초기지, 카르가스에서 검은바위 나락에 사는 검은무쇠 드워프들이 어떤 술을 만들고 있다는 소문을 쫓고 있어요.$B$B비비안이 당신을 기다리고 있을 것이니 가서 그녀와 얘기해 보세요.",
     ["O"] = "카르가스에 있는 비비안 라그레이브와 대화해야 합니다.",
     ["T"] = "비비안 라그레이브",
-  },
-  [4134] = {
-    ["D"] = "소문에 의하면 헐레이 블랙브레스라는 검은무쇠 드워프가 맥주 제조법을 훔쳤다고 해요. 이 썬더브루 맥주는 마시는 사람에게 엄청난 힘과 용기를 준다고 하는군요. 우리는 이 술을 연구하고자 합니다. 어쩌면 이 술의 효력을 다른 곳에 응용할 수 있을지도 몰라요... 포세이큰의 목적에 부합하는 그런 곳 말입니다.$B$B검은바위 나락에 침입해 헐레이를 찾은 다음 썬더브루 맥주 제조법을 빼앗아 내게 가지고 오세요.$B$B헐레이를 찾으려면 녀석이 아끼는 술로 위협해서 유인해내야 할 거예요.",
-    ["O"] = "카르가스에 있는 비비안 라그레이브에게 잃어버린 썬더브루 제조법을 가져가야 합니다.",
-    ["T"] = "잃어버린 썬더브루 제조법",
   },
   [4135] = {
     ["D"] = "Inside the backpacks are two items: the first is a parcel of goods that was bound for Thalanaar, and the second is a note hastily penned to an unknown reader.$B$BThe note tells of discovering insidious bug-like creatures south of the gnoll camps in a place called the Writhing Deep.  The author felt the need to investigate it personally, as though it was a serious threat to all of Feralas.  The note is signed, \"Raschal of Feathermoon\".$B$BIt would seem that you have located where Raschal ultimately went.",
@@ -7925,15 +9560,30 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "붉은꽃잎 15개를 모아 무이긴에게 가야 합니다.",
     ["T"] = "무이긴과 라리온",
   },
+  [4142] = {
+    ["D"] = "I\'m not quite sure what to make of this, $N. The plants... they seem to have some minimal intelligence.$B$BI\'m no expert, though. But, I do know someone that is!$B$BHead to northern Feralas, and look for a buddy of mine named Gregan Brewspewer. He\'s an expert on this sort of thing.$B$BI\'m sure Gregan can help us out here. You\'ll find him out in the wilderness; he\'s not the type to live in a big city.",
+    ["O"] = "Take a Bloodpetal to Gregan Brewspewer in Feralas.",
+    ["T"] = "A Visit to Gregan",
+  },
   [4143] = {
     ["D"] = "솔직히 말하면 여행을 다니면서 이런 식물을 본 건 처음이오. 아무래도 운고로 분화구에 한번 가봐야겠군...$B$B어쨌든, 무이긴이 뭘 찾는지 알 것 같소. 아탈라이 아지랑이라는 건데, 아주 고약한 물질이지. 모으기가 쉽진 않지만 그 조그만 괴물들을 조종하려면 꼭 필요한 것이라오.$B$B슬픔의 늪에 있는 아탈학카르 신전으로 가시오. 그곳에서 지하껍질괴물, 진흙구렁이, 진흙괴물을 처치하면 아탈라이 아지랑이를 구할 수 있을 거요. 행운을 빌겠소!",
     ["O"] = "아탈라이 아지랑이 5개를 모은 후 운고로 분화구에 있는 무이긴에게 가야 합니다.",
     ["T"] = "악의 아지랑이",
   },
+  [4144] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Bloodpetal Sprouts",
+  },
   [4145] = {
     ["D"] = "저기 무이긴이 보이십니까? 우리가 길을 잃은 건 저 친구 잘못입니다!$B$B나는 길을 분명히 알고 있었는데 계속해서 자기가 지름길을 안다며 우기다가 결국 이곳으로 오게 된 겁니다!$B$B설상가상으로 이제는 이상한 식물 괴물을 보내서 나를 괴롭히고 있습니다. 얼마나 화가 나는지 저 친구랑 한동안 얘기도 하지 않을 생각이지만 이 괴물들은 가만히 참고 내버려두지 못하겠군요.$B$B먼저 저 친구의 보급 물자를 좀 끊어보는 게 어떻겠습니까? 가서 붉은꽃잎덩굴손 녀석들을 좀 사냥하고 내게 돌아와 주십시오.",
     ["O"] = "마샬의 야영지에 있는 라리온이 채찍줄기 붉은꽃잎덩굴손 5마리, 덩이줄기 붉은꽃잎덩굴손 5마리, 칼날가시 붉은꽃잎덩굴손 5마리, 질긴뿌리 붉은꽃잎덩굴손 5마리를 처치해 달라고 했습니다.",
     ["T"] = "라리온과 무이긴",
+  },
+  [4147] = {
+    ["D"] = "I managed to spy on what Muigin was doing, and he\'s actually growing the darn things over there!$B$BI think the only solution here is to... no, not go talk to him... What are you thinking? The solution is to fight back!$B$BWe\'ll need the help of my friend, Marvon, who has a workshop in Ratchet.  I\'m sure he\'ll be able to create some sort of gadget that will help us.",
+    ["O"] = "Travel to Marvon Rivetseeker\'s workshop in Ratchet.",
+    ["T"] = "Marvon\'s Workshop",
   },
   [4148] = {
     ["D"] = "",
@@ -7950,15 +9600,55 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "고블린 기계공학에 대해 더 알고 싶으면 가젯잔에 있는 닉스 스프로켓스프링에게 기계공학 설명서를 가져가야 합니다.",
     ["T"] = "고블린 기계공학",
   },
+  [4182] = {
+    ["D"] = "Life in the Burning Steppes is rife with conflict.$B$BJust look at this place! We know very little of what happened to these buildings, but we do know that at one time, before the great explosion, this was all part of the Redridge mountain range.$B$BEnough lamenting! We have a problem, $N. You may have noticed the dragonkin below this ridge. We need assistance in pushing them back. Kill as many as you can and return to me. Succeed and perhaps we can talk of other things.",
+    ["O"] = "Slay 15 Black Broodlings, 10 Black Dragonspawn, 4 Black Wyrmkin and 1 Black Drake. Return to Helendis Riverhorn when the task is complete.",
+    ["T"] = "Dragonkin Menace",
+  },
+  [4183] = {
+    ["D"] = "We had always assumed that the Blackrock orcs were a product of their savage upbringing. What we have found here, in their homeland, tells us another story.$B$BIndeed, it is bloodlust and thirst for conflict that empowers them, but the black dragonflight are the beings whom control the orcs of Blackrock. We suspect that it is the black dragonflight that fuels them with rage and hostility.$B$BTake this letter to Magistrate Solomon. He will know what must be done.$B$B<Helendis hands you a sealed letter.>",
+    ["O"] = "Travel to Lakeshire and deliver Helendis Riverhorn\'s Letter to Magistrate Solomon. ",
+    ["T"] = "The True Masters",
+  },
+  [4184] = {
+    ["D"] = "This is grim news, $N. To discover that our mortal enemies are merely pawns of a much greater threat is disheartening. There is no possible way that Lakeshire could survive an attack from both the Blackrock orcs and the black dragonflight. Should Lakeshire fall to this menace, Darkshire would fall next, and then what? Goldshire? Stormwind itself?$B$BYou must take this information to Highlord Bolvar Fordragon in Stormwind at once! If this does not merit the aid of Stormwind, nothing will and all is lost.",
+    ["O"] = "Travel to Stormwind and deliver Solomon\'s Plea to Highlord Bolvar Fordragon.$B$BBolvar resides in Stormwind Keep. ",
+    ["T"] = "The True Masters",
+  },
+  [4185] = {
+    ["D"] = "Solomon paints a dreary picture. Still, we cannot afford to send our thinly spread troops to the aid of Lakeshire on speculation. I will need proof of these claims before I can act.$B$BSpeak with Lady Prestor, $N. She is a learned woman and knows much of dragons and dragonkin. She may be able to shed some light on this situation.",
+    ["O"] = "Speak with Highlord Bolvar Fordragon after speaking with Lady Katrana Prestor.",
+    ["T"] = "The True Masters",
+  },
+  [4186] = {
+    ["D"] = "I am going to empower you as an acting deputy of Stormwind, $N.$B$BReturn to Magistrate Solomon in Lakeshire and deliver this decree.",
+    ["O"] = "Take Bolvar\'s Decree to Magistrate Solomon in Lakeshire.",
+    ["T"] = "The True Masters",
+  },
   [4201] = {
     ["D"] = "아. 사랑의 고통이란! 나의 매력이 사랑스러운 락노트에게는 아무런 힘도 쓰지 못하나봐요. 내가 퇴짜를 맞다니! 미칠 것 같아요!$B$B절 좀 도와주세요! 우리 서큐버스는 사랑에 대해 잘 알고 있죠. 저는 락노트의 마음을 둘러싸고 있는 철벽을 무너뜨릴 물약을 만들 수 있답니다. 그 물약을 만들려면 그롬의 피, 아즈샤라에 사는 절벽거인에게서 얻을 수 있는 거대한 은 광석, 그리고 운고로에 있는 골락카 간헐천의 물이 필요해요. 물은 이 약병에 담아와 주세요.$B$B부디 행복을 찾아 헤매는 이 불쌍한 영혼을 구해주세요.",
     ["O"] = "검은바위 나락에 있는 지배인 나그마라에게 그롬의 피 4개, 거대한 은 광석 10개, 가득 찬 나그마라의 약병을 가져가야 합니다.",
     ["T"] = "사랑의 묘약",
   },
+  [4223] = {
+    ["D"] = "<Magistrate Solomon sighs.>$B$BYou must return to the Burning Steppes, $N. As a deputy of Stormwind, you will be required to report to Marshal Maxwell. Good luck.",
+    ["O"] = "Speak with Marshal Maxwell in the Burning Steppes.",
+    ["T"] = "The True Masters",
+  },
+  [4224] = {
+    ["D"] = "What? You thought you were the first? How many soldiers must we lose before Stormwind acts?$B$BWe had accumulated enormous amounts of intelligence pertaining to the Blackrock menace before we lost our commanding officer, Marshal Windsor. With Marshal Windsor went all of our precious information.$B$BWhat we need is that documentation. Speak with Ragged John, $N. He was with Windsor when they were attacked by a Blackrock raiding party.  He was last seen in a cave to the north.",
+    ["O"] = "Speak with Ragged John to learn of Marshal Windsor\'s fate and return to Marshal Maxwell when you have completed this task.$B$BYou recall Marshal Maxwell telling you to search for him in a cave to the north.",
+    ["T"] = "The True Masters",
+  },
   [4241] = {
     ["D"] = "그러니까 아무짝에도 쓸모없는 그 겁쟁이 녀석이 윈저 님께서 아직 살아계신다고 했단 말이오?$B$B준비하시오, 부관 대리. 당신이 윈저 님을 찾아야 하오. 윈저 님께서 살아계신다면 당신이 구출해오고, 죽었다면 증거를 가져오시오.$B$B<웃는 맥스웰>$B$B이 말을 듣는 것도 이젠 지겹지 않소?",
     ["O"] = "북서쪽에 있는 검은바위 산으로 가서 검은바위 나락으로 들어가십시오. 치안대장 윈저에게 무슨 일이 있었는지 알아내야 합니다.$B$B털보 존은 윈저가 감옥으로 끌려갔다고 했습니다.",
     ["T"] = "치안대장 윈저",
+  },
+  [4242] = {
+    ["D"] = "Bolvar is a fool. I was gathering his precious \'proof\' so that I could shove it down his throat.$B$BHe is a blind buffoon. Proof stands two feet away from him and he does not see.$B$BAs for my data, it\'s lost. Gone. Unrecoverable.$B$BShould I ever find Ironfoe and make it out of this labyrinth, my first stop will be Stormwind, to place my hammer in between that reptile\'s eyes.$B$BLeave me, $N.",
+    ["O"] = "Give Marshal Maxwell the bad news.",
+    ["T"] = "Abandoned Hope",
   },
   [4244] = {
     ["D"] = "더 조사해보니 미닫이 형식의 계기판이 보입니다. 전깃줄 위에는 \"미스릴 형틀을 갈아 끼우고 전원을 껐다가 켜십시오\"라고 쓰여 있습니다.$B$B계기판을 교체하면서, 에이미 01을 수리한 다음 마샬의 야영지 근처에 있는 카르나 렘트래블에게 데려가는 것이 과연 쉬운 일일까 생각해 봅니다.$B$B시도를 해봐야 알 것 같습니다.",
@@ -7969,6 +9659,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Checking to see if you\'re prepared to lead A-Me 01 back to Karna Remtravel, you flip the switch to the \"Off\" position. Glancing around once again to make sure none of the gorillas are coming, you prepare to see what happens when you flip the switch back to the \"On\" position.$B$BThis is your last chance... are you sure this is what you want to do?",
     ["O"] = "Escort A-Me 01 back to Karna Remtravel in Un\'Goro Crater.",
     ["T"] = "에이미 01 추적",
+  },
+  [4261] = {
+    ["D"] = "Felwood was once a peaceful and serene land... Until the legion took hold. The infernals, destruction, chaos...$B$BThe skull of Gul\'dan ensured that none were spared here. All fell to the corruption.$B$BEven now, as a spirit, I still find myself trapped, bearing the suffering of this land. Help me find my way home. Please, $N, tell me you will lead an ancient spirit away from here, where I may finally rest.$B$BOnce I am free, seek out Kayneth Stillwind, a druid that resides in Forest Song, to the east.",
+    ["O"] = "Escort Arei to safety, then speak with Kayneth Stillwind in Forest Song, in eastern Ashenvale.",
+    ["T"] = "고대의 정령",
   },
   [4262] = {
     ["D"] = "검은바위 산을 염탐하러 갔던 내 마지막 마법사 다섯이 주황색 파마 머리를 해서 돌아왔더군요. 아니면 그보다 더 심한 일을 당했던가.$B$B<땅에서 재를 한 줌 집어 공중에 뿌리는 잘린다>$B$B멸망의 파이론이라는 녀석은 특히 고약한데, 꽤 문제를 일으키는 모양이에요. 우리 원정대가 검은바위 나락에 들어갈 수 있도록 그 정령을 처치해야만 해요!$B$B녀석은 검은바위 채석장 입구를 지키고 있어요.",
@@ -7985,11 +9680,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "You may have just stumbled on to something that Marshal Windsor would be interested in seeing. There may be hope, after all.",
     ["T"] = "꼬깃꼬깃한 쪽지",
   },
-  [4265] = {
-    ["D"] = "고치에 손을 대자 고치가 갈라져 열립니다. 그 안에는 놀랍게도 아직 살아 있는 나이트 엘프 남자가 들어 있습니다. 그는 심히 멍해진 것 같기는 하지만 건강은 양호해 보입니다. 고치에서 내려오는 것을 도와 주자 그가 정신을 차립니다.$B$B\"엘룬께 감사를. 당신이 날 구해 주었소, 친구. 나... 나는 라스칼이라고 하는데 이 곤충들이 나를 덮친 후 깨어나 보니 마비된 채로 이 고치 안에 갇혀 있었소. 당신 페더문 요새에서 온 거요?\"$B$B실종된 급사를 찾은 거 같습니다!",
-    ["O"] = "주크애쉬 소굴에서 라스칼을 풀어줘야 합니다.$B$B페더문 요새에 있는 긴로 하트킨들에게 돌아가 라스칼이 무사히 살아 있다는 소식을 전해 주십시오.",
-    ["T"] = "고치 탈출",
-  },
   [4266] = {
     ["D"] = "$N, General Shandris Feathermoon would like to speak with you personally.  No doubt she wants to thank you for your service to the Stronghold, but I do know that she also wants to talk to you about the insect creatures that you and Raschal faced in southern Feralas.  The reports of those Zukk\'ash insects are... frightening, to say the least.$B$BGeneral Feathermoon is waiting for you in the main compound.",
     ["O"] = "Speak with Shandris Feathermoon in Feathermoon Stronghold.",
@@ -8005,6 +9695,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "탈라나르에 있는 팔핀델 웨이워더에게 배달되지 않은 꾸러미를 가져가야 합니다.",
     ["T"] = "탈라나르 배달",
   },
+  [4282] = {
+    ["D"] = "<Marshal Windsor shakes the note excitedly.>$B$BDo you realize what this means, $N?$B$BPerhaps all is not lost! From what I can ascertain, the information is being held by two Dark Iron dwarves: General Angerforge and the golem lord, Argelmach. I have a feeling that they won\'t just hand over the information if we ask nicely.$B$BI hope you are ready to battle.$B$BVenture forth and find these two villains! Destroy them and return my lost information.",
+    ["O"] = "Return Marshal Windsor\'s Lost Information.$B$BMarshal Windsor believes that the information is being held by Golem Lord Argelmach and General Angerforge.",
+    ["T"] = "A Shred of Hope",
+  },
   [4283] = {
     ["D"] = "한 가지 작은 비밀을 알려 드리죠. 좀 더 가까이 와 오세요.$B$B저는 여기서 유일하게 제정신이랍니다!$B$B이 사람들을 한번 보라고요! 다들 미쳤다면 믿겠어요? 다들 미쳤다니까요! 돌았죠! 제정신이 아니에요!$B$B<목소리를 낮추는 오랄리우스>$B$B우리끼리만 아는 걸로 하죠. 저, 당신, 그리고 제 친구 윙키 선장, 이렇게만 말이에요.$B$B<허공을 붙들고 쥐어짜는 오랄리우스>$B$B어쨌든... 제 오우거 귀 수집품에 어울릴 만한 메달을 모으고 있는데요. 오늘은 오크 메달이니까 50개만 가져오세요. 자, 시작!$B$B<뿔피리를 부는 오랄리우스>$B$B가져오라니까요!",
     ["O"] = "Oralius wants 50 Blackrock Medallions. Chances are high that these medallions can be found on the orcs in the Burning Steppes.",
@@ -8015,20 +9710,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "붉은 마력의 수정, 푸른 마력의 수정, 노란 마력의 수정, 녹색 마력의 수정을 각각 7개씩 모아 마샬의 야영지에 있는 J.D. 콜리에게 가져가야 합니다.",
     ["T"] = "마력의 수정",
   },
-  [4285] = {
-    ["D"] = "무엇에 쓰이는 걸까? 도저히 생각을 떨쳐버릴 수 없네요!$B$B악! 미쳐버릴 거 같아요! 수정탑에 대한 소문은 분명 사실이라고요. 순진한 노움이라고 불러도 좋아요. 난 사람들이 하는 말은 죄다 믿거든요.$B$B그거야 어쨌든 여기서 꽤 가까운 곳에 수정탑이 하나 있다고 들었어요. 북쪽 어딘가에 있다던데... 그 위치를 찾아주세요. 분명히 있다니까요.",
-    ["O"] = "운고로 분화구에 있는 북쪽 수정탑의 위치를 알아내야 합니다.",
-    ["T"] = "북쪽 수정탑",
-  },
   [4286] = {
     ["D"] = "윙키 선장이 그러는데, 검은바위 나락에 있는 검은무쇠 부족이 좋은 물건을 온통 다 차지하고 있다고 하는군요. 그렇지, 윙키?$B$B<나름대로 최선을 다해 해적 흉내를 내는 오랄리우스>$B$B어이, 친구! 그럼, 물론이지!$B$B제가 말하는 거 봤죠? 검은바위 나락에 들어가서 그 좋은 물건을 좀 가져오세요.$B$B그리 가서 돈을 잔뜩 벌어 오시란 말이에요!",
     ["O"] = "Travel to Blackrock Depths and recover 20 Dark Iron Fanny Packs. Return to Oralius when you have completed this task. You assume that the Dark Iron dwarves inside Blackrock Depths carry these \'fanny pack\' contraptions.",
     ["T"] = "좋은 물건",
-  },
-  [4287] = {
-    ["D"] = "이곳에서 지내는 동안 분화구 외곽에 있는 수수께끼의 수정탑에 대한 이상한 소문을 들었어요. 수정탑 내부에 수정이 늘어서 있는 상당히 큰 수정탑인가 봐요.$B$B직접 본 적은 없지만 이 소문이 사실이라는 생각이 자꾸 드는군요. 그리고 그 수정탑이 우리가 찾은 수정과 관련이 있다는 생각이 드네요.$B$B내 궁금증을 해소하도록 좀 도와주지 않겠어요? 듣자 하니 분화구의 동쪽 지역에 수정탑이 하나 있는 것 같아요. 그걸 찾을 수 있겠어요?",
-    ["O"] = "운고로 분화구에 있는 동쪽 수정탑의 위치를 알아내야 합니다.",
-    ["T"] = "동쪽 수정탑",
   },
   [4288] = {
     ["D"] = "내 실험이 아직 성공하지 못했는데 말이죠. 소문으로 들은 수정탑 하나를 찾을 수만 있으면 실험에 성공할 수 있을지도 모르겠다는 생각이 자꾸 드네요.$B$B혹시 특정 색을 조합한다면... 내가 너무 성급한 판단을 내리는 것 같군요. 수정탑부터 찾도록 하죠!$B$B분화구의 서쪽 지역에서 찾아보세요. 소문에 의하면 그 지역 어딘가에 있다고 해요.",
@@ -8060,16 +9745,22 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "악령숲에 있는 진흙괴물에게서 악령숲 진흙괴물 견본을 모은 후 언더시티의 연금술사 퓰리 옆에 있는 실험 기구를 사용해 어느 견본이 가장 부패한 것들인지 알아내야 합니다. 부패한 악령숲 견본 5개를 찾으면 연금술사 퓰리에게 가져가야 합니다.",
     ["T"] = "진흙괴물 견본...",
   },
-  [4294] = {
-    ["D"] = "운고로 분화구라고 들어본 적 있소? 타나리스 사막 근처에 있는데 아주 화려한 곳이지. 푸르고 활기가 넘쳐 각종 동식물이 서식하는 곳이오.$B$B당신이 그곳에 가줘야겠소. 그곳은 외부의 손길이 닿지 않은 순수한 곳이라고 들었소. 탐험가들도 이제 막 그 비밀을 밝혀내기 시작했지.$B$B그곳에 서식하는 진흙괴물과 수액괴물을 실험해보고 싶소. 타락되지 않는 게 사실이라면 어떻게 그런 생물들이 진화하게 되었는지 알고 싶소이다.",
-    ["O"] = "운고로 분화구에 있는 진흙괴물과 수액괴물에게서 운고로 진흙괴물 견본을 모은 후 언더시티의 연금술사 퓰리 옆에 있는 실험 기구를 사용해 어느 견본이 가장 순수한 것인지 알아내야 합니다. 순수한 운고로 견본 5개를 찾으면 연금술사 퓰리에게 가져가야 합니다.",
-    ["T"] = "... 그리고 한 무리의 수액괴물",
-  },
   [4296] = {
     ["D"] = "나는 일곱 현자의 전설을 쫓아 불타는 평원에 왔지. 그들은 대단한 힘과 지식을 지닌 드워프들이었는데, 당신에게도 힘과 지식이 있으면 부도 따라오는 법이라구.$B$B내가 원하는 게 바로 그거야. 부자 말이지!$B$B일곱 현자에 대해 더 알아낼 수 있다면 우리 둘 다 부자가 될 수 있을 거요. 타우릿산의 폐허에 이 고대 드워프들의 지식이 기록되어 있는 일곱 현자의 서판이 있다는 소문이 있지. 이 서판을 찾아 거기에 쓰여 있는 글의 사본을 내게 가져와. 그 서판의 비밀을 함께 알아내자고!",
     ["O"] = "Bring the Tablet Transcript to Maxwort Uberglint in the Burning Steppes.",
     ["T"] = "일곱 현자의 서판",
   },
+  [4297] = {
+    ["D"] = "Sprite darters are omnivores--that means they eat both meat and vegetation. If your egg here\'s gonna hatch, we best be prepared. Some good eats for these little guys are flanks of meat, raw and juicy, believe it or not. I was never able to find out why, but it has somethin\' to do with Elune\'s plan for the elves... maybe they were to be protectors or somethin\', I don\'t know.$B$BI\'ll take care of the egg for now, why don\'t you get me some good Silvermane stalker flanks for \'em to eat when he\'s hatched.",
+    ["O"] = "Bring 5 Silvermane Stalker Flanks to Agnar Beastamer in Hinterlands.",
+    ["T"] = "Food for Baby",
+  },
+  [4298] = {
+    ["D"] = "Whoa, it was a lot more ready than I thought...",
+    ["O"] = "Speak to Agnar Beastamer in the Hinterlands.",
+    ["T"] = "Becoming a Parent",
+  },
+  [4299] = "_",
   [4300] = {
     ["D"] = "흠, 지금 생각해 보니 당신이 으스러진 손을 위해 할 만한 일이 있겠군. 그래, 이 제스리몬이 자네의 도움을 꼭 얻었으면 해.$B$B운고로 분화구에 가보면 아주 날카로운 발톱을 지닌 랩터들이 살고 있지. 그런데 새까만 발톱만이 아니라, 어떤 놈들은 흰색 발톱을 하고 있다네. 으스러진 손의 고객 중에는... 이 흰색 발톱으로 만든 무기를 아주 좋아하는 이들이 있다네. 그 발톱을 많이 가져오면 아주 짭짤하게 값을 쳐주지. 일을 빨리 해치우면 내가 다른 일을 도와 줄 수도 있고 말이지.",
     ["O"] = "오그리마에 있는 제스리몬에게 라바사우루스의 흰색 발톱 8개를 가져가야 합니다.",
@@ -8080,10 +9771,31 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "운고로 분화구 입구에 있는 토르와 패스파인더에게 우차의 모피를 가져가야 합니다.",
     ["T"] = "강대한 우차",
   },
+  [4321] = {
+    ["D"] = "The information you have given me about the pylons is very interesting...$B$BGive me a moment to do some calculations, $N. Speak to me again in a moment and I should be able to give you the answer we have been looking for.",
+    ["O"] = "Speak with J.D. Collie in a moment.",
+    ["T"] = "Making Sense of It",
+  },
+  [4322] = {
+    ["D"] = "We need to get out of here, $N. Help me get my gear back from the supply area and free my friends. If we make it out of here, you are to proceed to Morgan\'s Vigil and speak with Marshal Maxwell. He will give you further instruction.",
+    ["O"] = "Help Marshal Windsor get his gear back and free his friends. Return to Marshal Maxwell if you succeed.",
+    ["T"] = "Jail Break!",
+  },
+  [4323] = "_",
   [4341] = {
     ["D"] = "연기가 피어오르는 타우릿산의 폐허에 가 보았다고? 혹시 카란 마이트해머라는 한심한 녀석을 만나지 못했나? 그는 사랑스러운 우리 딸을 지키기로 했던 드워프였지!$B$B<흐느끼는 국왕>$B$B그런데 지금 우리 딸이 사라져 버렸어!$B$B병사들을 보내 불타는 평원을 샅샅이 뒤져 보았지만, 그 아이의 행방에 대해 얻은 유일한 단서는 검은바위 나락 안에 있을지도 모른다는 것뿐이야. 이... 이미 죽었을지도 몰라!$B$B카란은 그곳에 포로로 잡혀 있는 것 같네. 가서 그를 찾게! 어떻게 된 것인지 내 꼭 알아야겠네!",
     ["O"] = "검은바위 나락으로 가서 카란 마이트해머를 찾아야 합니다.$B$B국왕은 카란이 그곳에 포로로 잡혀 있을 것이라고 말했습니다. 그곳 감옥을 찾아보는 것이 좋겠습니다.",
     ["T"] = "카란 마이트해머",
+  },
+  [4342] = {
+    ["D"] = "Please, hear me out before passing judgement!",
+    ["O"] = "Listen as Kharan Mighthammer tells his story.",
+    ["T"] = "Kharan\'s Tale",
+  },
+  [4361] = {
+    ["D"] = "You must take this information back to King Magni, $N. He will know what to do!",
+    ["O"] = "Return to Ironforge and deliver the bad news to King Magni Bronzebeard.",
+    ["T"] = "The Bearer of Bad News",
   },
   [4362] = {
     ["D"] = "It would seem as if my old adversary, Dagran Thaurissan, has me and the kingdom of Ironforge at his mercy.$B$BYou may be my last hope, $N. You must rescue my dear daughter, Moira!$B$BThere is only one way to make sure that the spell Thaurissan has cast on Moira is broken: Kill him.$B$BAnd $N, do not harm her! Remember, she is being controlled by Thaurissan! The things she may do or say are a result of Thaurissan\'s evil spell!",
@@ -8094,36 +9806,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Thaurissan was a great and honorable dwarf. You ruined my life and the life of my unborn child!$B$B<You think that Princess Bronzebeard may still be suffering from the residual effect of the Emperor\'s spell.>$B$BReturn to Ironforge and tell my father that the heir to the Kingdom of Ironforge will be a Dark Iron dwarf.$B$BWhether he approves or not, it shall be.",
     ["O"] = "Return to Ironforge and speak with King Magni Bronzebeard.",
     ["T"] = "The Princess\'s Surprise",
-  },
-  [4381] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "회복의 수정",
-  },
-  [4382] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "정신력의 수정",
-  },
-  [4383] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "수호의 수정",
-  },
-  [4384] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "굴복의 수정",
-  },
-  [4385] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "발화의 수정",
-  },
-  [4386] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "돌기의 수정",
   },
   [4402] = {
     ["D"] = "It sure gets hot out here in the Valley of Trials.$B$B<Galgar wipes his brow.>$B$BIf only I had some cactus apples, I could make my famous cactus apple surprise! Nothing cools you off faster than a piece of that delicious treat.$B$BI\'ll tell you what, $N. If you bring me 10 cactus apples, I\'ll make you a few portions of cactus apple surprise to take with you on your adventures. If you\'re interested, you can find cactus apples growing near the cactus plants around here.",
@@ -8140,15 +9822,35 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Travel to Darnassus and use Eridan\'s Vial to collect a Vial of Blessed Water from the Temple of the Moon. Return to Eridan with the filled vial.",
     ["T"] = "Felbound Ancients",
   },
+  [4442] = {
+    ["D"] = "Using the water of Elune, I will attempt to purify the flute. We must end this suffering...$B$BMay Elune guide my hands and heart.$B$BSpeak with me again in a moment.",
+    ["O"] = "Speak to Eridan again in a moment.",
+    ["T"] = "Purified!",
+  },
   [4449] = {
     ["D"] = "Hey! Hey, you! Get over here!$B$BYa gotta help me out. I was runnin\' from them Dark Iron dwarves, and I hid in here to get out of sight. Damn bastard geologists and their magic ways! They musta seen me hide, cause next thing I knew, they locked the door and stuck me in here.$B$BTeach them geologists a lesson! Oh... an\' can ya get me some pieces of silk cloth for... for... nothin\'.",
     ["O"] = "검은무쇠 지질학자 8명을 처치하고 이글거리는 협곡의 화장실에 갇힌 사람에게 비단 옷감 15개를 가져가야 합니다.",
     ["T"] = "화장실에 갇힌 사람",
   },
+  [4450] = {
+    ["D"] = "Oh, you know what? That reminds me.$B$BYou wanna finish up a little job I took up while I was in Tanaris? It\'s easy...$B$BKrinkle Goodsteel in Gadgetzan was lookin\' for some stuff found here in Searing Gorge and a few other places. Maybe you could take a look at the list and then bring it all to him?$B$BI\'ll just slide his ledger under the door if you\'re interested. Take that, and the stuff he wants back to him after ya collected it all.",
+    ["O"] = "Take the copy of Goodsteel\'s Ledger and then find the items listed in it before seeking Krinkle Goodsteel in Tanaris.",
+    ["T"] = "Ledger from Tanaris",
+  },
   [4451] = {
     ["D"] = "이 작은 놋쇠 열쇠는 굉장히 단순해 보입니다. 특별히 눈에 띄는 것이라곤 열쇠 머릿부분에 새겨진 글뿐입니다.$B$B\"검은무쇠 부족 간이 화장실용 - 복제 금지.\"$B$B이게 무슨 뜻이고 앞으로 어떤 일이 생길지 전혀 알 수 없습니다.",
     ["O"] = "이글거리는 협곡을 탐색해서 검댕가루 화장실 열쇠의 용도를 알아내야 합니다.",
     ["T"] = "자유의 열쇠",
+  },
+  [4485] = {
+    ["D"] = "Hello, $N. I see your dedication remains strong, as does your faith.$B$BI think it is time you spoke with Duthorian Rall in Stormwind. There are some more lessons for you to learn, and I feel you are prepared.$B$BSeek him out in the Cathedral of Light, and $N, take these lessons seriously. You\'ve attained your status through humility and hard work, do not disappoint us by becoming arrogant.$B$BBe well.",
+    ["O"] = "Speak to Duthorian Rall in Stormwind.",
+    ["T"] = "The Tome of Nobility",
+  },
+  [4486] = {
+    ["D"] = "Well, well, well, look at the mighty paladin in all $ghis:her; regality.$B$BSorry, $N, I meant no offense... I just get a little jealous sometimes when I see some of the feats you\'ve accomplished. Tiza tells me it\'s my weakness, and I swore to her I\'d work on it. It\'s just hard sometimes, you know?$B$BBut the reason I wanted to talk to you was because Duthorian Rall in Stormwind sent word for you to meet him in the Cathedral of Light when you\'re ready. Sounded important. Sounded like something\'s going on.",
+    ["O"] = "Speak to Duthorian Rall in Stormwind.",
+    ["T"] = "The Tome of Nobility",
   },
   [4487] = {
     ["D"] = "Ah, good, you\'re here. I sent a $g succubus:infernal; after you to get your attention, but it seems you were able to get here before it found you. No matter.$B$BThere has been some talk lately of your growing power--that is good for you, possibly bad for others. But those are irrelevant points. The point is, I feel you\'ve proven yourself and therefore are deserving of... hehe... a blessing of sorts.$B$BAbove Ratchet in the Barrens you\'ll find a man named Strahad. I believe you\'ve crossed paths before.",
@@ -8195,6 +9897,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "북쪽의 동굴 근처에서 이베론을 찾아야 합니다.",
     ["T"] = "죽마고우",
   },
+  [4501] = {
+    ["D"] = "Wanted: A skilled fighter to deal with the threat of the Pterrordax that inhabit the Un\'Goro Crater. Their numbers are growing, and they are becoming a menace to travelers in the area.$B$BDecrease the population by slaying 10 pterrordax and 15 frenzied pterrordax.$B$BSpeak with Spraggle Frock after completing the task for a reward.",
+    ["O"] = "Kill 10 Pterrordax and 15 Frenzied Pterrordax, then speak to Spraggle Frock at Marshal\'s Refuge.",
+    ["T"] = "테러닥스 주의",
+  },
   [4503] = {
     ["D"] = "난 지금 비행선을 만들고 있지!$B$B난 여기서 오도 가도 못하게 된 상황인데 워낙 길눈이 어두워서 말이야. 그리핀이나 박쥐를 타고 가젯잔으로 돌아갔으면 하는데, 그 녀석들을 타면 죽을까 무서워서 원...$B$B그래서 말인데 좀 도와주지 않겠나? 이제 날개만 만들면 되는데 테러닥스와 디메트로돈의 갈퀴 달린 비늘이면 딱 좋겠단 말이야. 나는 녀석들과 싸울만한 실력이 전혀 없지만 당신은 잘 싸울 수 있을 것 같으니 당신이 한 번 시도해 보지 않겠나?",
     ["O"] = "갈퀴 달린 디메트로돈 비늘 8개와 갈퀴 달린 테러닥스 비늘 8개를 모아 마샬의 야영지에 있는 쉬즐에게 가져가야 합니다.",
@@ -8220,6 +9927,26 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Defeat the Gorishi Hive Queen once she is summoned.$B$BBring the Gorishi Queen\'s Brain to Alchemist Pestlezugg in Gadgetzan.",
     ["T"] = "Pawn Captures Queen",
   },
+  [4508] = {
+    ["D"] = "My recent findings and the knowledge we have gained here today needs to reach hands that can quite possibly do something with it.  As resourceful as we are here in Gadgetzan, we can\'t do this alone.$B$BTake my latest report back to Gracina Spiritmight in Darnassus; she\'s still at the Temple of the Moon, is she not?  She\'s got friends who are Alliance bigwigs; if we can get them involved in this $N, then we just might make it out of this alive.",
+    ["O"] = "Bring Pestlezugg\'s Un\'Goro Report to Gracina Spiritmight in Darnassus.",
+    ["T"] = "Calm Before the Storm",
+  },
+  [4509] = {
+    ["D"] = "My recent findings and the knowledge we have gained here today needs to reach hands that can quite possibly do something with it.  As resourceful as we are here in Gadgetzan, we can\'t do this alone.$B$BTake my latest report back to Zilzibin Drumlore in Orgrimmar; he\'s still in his place on the upper part of the Drag, is he not?  He\'s got friends who are high within the Horde; if we can get them involved in this $N, then we just might make it out of this alive.",
+    ["O"] = "Bring Pestlezugg\'s Un\'Goro Report to Zilzibin Drumlore in Orgrimmar.",
+    ["T"] = "Calm Before the Storm",
+  },
+  [4510] = {
+    ["D"] = "$N, your help has been immeasurable.  The time will come, no doubt, when I\'ll ask for your assistance against the silithid once more.  We must absorb what we have learned in Un\'Goro; I fear that my assumptions that the silithid originated from Un\'Goro are now wrong... that indeed there is a far stronger presence somewhere.$B$BTake this note to Idriana at the bank.  She\'ll give you something from my vault that should be viewed as a token of my gratitude.  Thank you for your assistance, brave $c.",
+    ["O"] = "Bring the Bank Voucher to Idriana in the bank of Darnassus.",
+    ["T"] = "Calm Before the Storm",
+  },
+  [4511] = {
+    ["D"] = "$N, we could not have gotten this far without you.  The time will come soon, no doubt, when I\'ll ask for your help against the silithid once more.  We must absorb what we have learned in Un\'Goro; I fear that my assumptions that the silithid originated from Un\'Goro are now wrong... that indeed there is a far stronger presence somewhere.$B$BTake this note to Karus at the bank.  He\'ll give you something from my vault that should be viewed as a token of my gratitude.  Thank you for your assistance, mighty $c.",
+    ["O"] = "Bring the Bank Voucher to Karus in the bank of Orgrimmar.",
+    ["T"] = "Calm Before the Storm",
+  },
   [4512] = {
     ["D"] = "이상하게 들리겠지만 내가 가장 깊이 연구한 생물은 수액괴물이오. 온 천지에 깔린 걸!$B$B얼마 전 메네실에서 잃어 버린 가방을 찾는 한 아가씨를 도와 주었소. 수액괴물이 먹어버렸더군. 언더시티의 왕립 연금술 학회에서도 수액괴물 견본을 모으는 걸 봤소. 그 이유가 뭘까? 그리고 도대체 어디서 모아 온 걸까?$B$B악령숲에도 수액괴물이 있다고 들은 적이 있소. 연구를 더 진행하는데 쓸 수액괴물의 견본이 필요하오. 내가 주는 병에다 죽은 수액괴물의 견본을 모아주시오.",
     ["O"] = "아이언포지에 있는 라리스 기어더들에게 가득 찬 저주받은 수액괴물 병 6개와 가득 찬 부패한 수액괴물 병 6개를 가져가야 합니다.",
@@ -8240,6 +9967,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "긴급 전갈을 높새바람 봉우리에 있는 절벽파수꾼 롱혼에게 가져가야 합니다.",
     ["T"] = "높새바람 봉우리",
   },
+  [4561] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Testing for Impurities - Un\'Goro Crater",
+  },
   [4601] = {
     ["D"] = "완강히 저항하고 있는 노움들 사이에서 이 장치가 눈에 띕니다. 장치에 붙은 작은 판에는 \"빤질빤질세척기 5200\"이라는 이름과 함께 다음과 같은 글귀가 적혀 있습니다.$B$B\"귀중품에 찌꺼기가 끼었습니까? 빤질빤질세척기 5200이 말끔히 닦아 드립니다! 세척할 물건을 장치에 넣고 투입구에 3실버를 넣으십시오. 잠시만 기다리시면, 짜잔! 당신의 귀중품이 깨끗한 모습으로 반짝이게 됩니다!\"",
     ["O"] = "빤질빤질세척기 5200에 꼬질꼬질한 물건을 넣으십시오. 3실버를 투입하면 작동할 것입니다.",
@@ -8259,6 +9991,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Finally, you are of age, $N... of age to battle in the name of the Horde. To conquer for the glory of the Warchief.$B$BYes...$B$B<Kaltunk looks you over.>$B$BYou will do nicely.$B$BNo doubt you wish to find a great dragon or demon and strangle it with your bare hands, but perhaps it would be wise to start on something less... dangerous.$B$B<Kaltunk laughs.>$B$BReport to Gornek, he should be able to assign a task better suited to a young $c. You will find Gornek in the Den, to the west.",
     ["O"] = "Speak with Gornek. You recall Kaltunk marking your map with his location and mentioning that Gornek resided in the Den, a building to the west. ",
     ["T"] = "할 일 찾기",
+  },
+  [4642] = {
+    ["D"] = "Here is some encased ooze created from the Felwood samples you recovered. Take the case to Un\'Goro Crater and find a pure ooze... the primal variety will do nicely. When you get close enough, release the ooze in the case, and let us see what the two think of one another.$B$BAfter the experiment concludes, bring me a sample of whatever is left over. I will await you here in the Apothecarium.",
+    ["O"] = "Bring a Merged Ooze Sample to Chemist Fuely in Undercity.",
+    ["T"] = "Melding of Influences",
+  },
+  [4661] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Testing for Corruption - Felwood",
   },
   [4681] = {
     ["D"] = "바다 생물들이 해변에 올라와 죽는 일은 이곳 어둠해안만의 문제가 아닙니다. 해안선을 따라, 그리고 심지어 물속에도 많아요. 한 마리를 더 조사해 주셨으면 합니다. 이번 생물은 아우버다인에서 정서쪽, 침몰한 배 근처의 물속에 있다는 보고를 받았어요. 우리 조사에 도움될 만한 거라면 뭐든지 가져와 주세요.$B$B그리고 가는 길에 마주치는 다른 생물에서도 뭐든 발견하면 꼭 가져와 주십시오!",
@@ -8345,11 +10087,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "불모의 땅에 있는 미네라 보이드렌더와 대화해야 합니다.",
     ["T"] = "미네라 보이드렌더를 찾아서",
   },
-  [4737] = {
-    ["D"] = "흥, 아직도 더 강해지려고 기를 쓰는군. 내가 보기에는 당신이 정복하려고 하는 타락에 오히려 중독되어 노예가 되고 마는 건 시간문제일 거요.$B$B쳇! 바보 같으니! 시간이 지나야만 내 말이 옳다는 걸 알게 되겠지... 시간이 지나야...$B$B하지만 이 제브로스트의 말에 다들 찬성하는 건 아닌 것 같소. 미네라에 가면 당신이 더욱 강하게 해줄 도구를 만들어줄 거요. 관심이 있다면 불모의 땅에 있는 톱니항으로 가 보시오. 미네라는 마을이 내려다보이는 높은 곳에 있을 거요.",
-    ["O"] = "불모의 땅에 있는 미네라 보이드렌더와 대화해야 합니다.",
-    ["T"] = "미네라 보이드렌더를 찾아서",
-  },
   [4738] = {
     ["D"] = "Let us be clear about one thing, $N: I don\'t feel you are ready for such responsibilities. I don\'t think aiding in the creation of any item of power is something a novice should ever be involved in; especially one so untested.$B$BBut that\'s not my decision. The powers that be, or at least the ones that do wish to impart such gifts upon you get to decide that.$B$BIf you\'re interested in learning more, I suggest you seek out Menara Voidrender in Ratchet. She usually resides in the tower above the port town.",
     ["O"] = "Speak with Menara Voidrender in the Barrens.",
@@ -8385,6 +10122,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak with Thundris Windweaver in Auberdine.",
     ["T"] = "툰드리스 윈드위버",
   },
+  [4762] = {
+    ["D"] = "The Cliffspring River has begun turning foul and corrupted.  It empties into the Mist\'s Edge, and I fear the wash will affect Auberdine soon.  I suspect the Blackwood furbolgs up-river are the cause of the taint, but I also suspect that they aren\'t the true root of it.$B$BTake this sampling tube and go to the mouth of the river to our north.  Proceed inland to the first waterfall and draw a sample from the pool there.  You\'ll see a bridge overhead.  Once you have a sample, return to me in Auberdine.",
+    ["O"] = "Travel north of Auberdine to the first waterfall along the Cliffspring River and draw a sample from the pool there.$B$BReturn to Thundris Windweaver in Auberdine with the Cliffspring River Sample.",
+    ["T"] = "The Cliffspring River",
+  },
   [4763] = {
     ["D"] = "펄볼그를 타락시킨 장본인 중 하나가 사티로스라는 것을 알아냈소. 그들은 마법의 부적을 이용해 펄볼그들을 지배하고 있소. 펄볼그들을 정화하기 위해서는 사티로스 타락자를 유인해 그 부적을 빼앗아야만 하오!$B$B달샘의 신성한 물을 이 그릇에 담고 펄볼그 북부 야영지에서 음식 견본을 채취한 후, 그 둘을 섞어 강가에 있는 화톳불 근처에 두시오. 펄볼그들이 그 음식을 먹으면 잠시나마 정화될 테고 그동안 사티로스 타락자를 유인해낼 수 있을 거요... 그때 사티로스를 처치해야 하오!",
     ["O"] = "아우버다인 달샘의 물로 빈 정화의 그릇을 채워야 합니다.$B$B검은나무 펄볼그 북부 야영지에서 검은나무 과일 견본, 검은나무 열매 견본, 검은나무 곡식 견본을 모으십시오.$B$B물과 음식을 한데 섞어 북부 야영지의 폭포수 강에서 가장 가까운 화톳불 근처에 두면 사티로스 타락자를 불러낼 수 있습니다.$B$B부패의 부적을 손에 넣은 후 아우버다인에 있는 툰드리스 윈드위버에게 가져가야 합니다.",
@@ -8395,6 +10137,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "불타는 평원에 있는 마야라 브라이트윙에게 파멸의 기념물을 가져가야 합니다.",
     ["T"] = "파멸의 기념물",
   },
+  [4765] = {
+    ["D"] = "I have packaged Doomriggers Clasp into a crate, suitable for shipment to Stormwind.  $N, you have been extremely helpful -- can I ask you for one last favor?$B$BDeliver the crate to Count Remington Ridgewell.  You will find him in the Keep of Stormwind.  I am sure he\'ll be very pleased to see what you have for him.",
+    ["O"] = "Bring Ridgewell\'s Crate to Remington Ridgewell in Stormwind.",
+    ["T"] = "Delivery to Ridgewell",
+  },
   [4766] = {
     ["D"] = "폐허가 된 타우릿산 도시를 탐색하기 위해 불타는 평원으로 마야라 브라이트윙이라는 내 개인 요원을 한 명 보냈다네. 그 파괴된 검은무쇠 드워프 도시에 아주 값진 물건들이 숨겨져 있을지도 모르지... 우리 가족 박물관에 꼭 들어맞을 만한 물건들 말일세.$B$B마야라 얘기로는 뭔가를 찾았다고 하는데, 그 물건을 가져오려면 도움이 필요할 거라고 전해왔네. 그런데 그 물건이 타우릿산에 있는 게 아니라, 검은바위 첨탑으로 쳐들어가야 하는 모양이야.$B$B나는 자세한 내용을 모르겠네만 혹시 관심이 있거든 불타는 평원으로 가서 마야라와 얘기해 보게.",
     ["O"] = "Speak with Mayara Brightwing in the Burning Steppes.",
@@ -8404,16 +10151,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "저는 와이번 조련사들을 위해 와이번을 모으는 임무를 맡았습니다. 언젠가는 저도 와이번을 타보고 싶어요. 와이번이 점점 늘고는 있지만 당장 탈 수 있는 와이번의 수요는 따라가지 못하고 있어요. 조련할 시간이 필요하거든요. 저를 좀 도와주세요.$B$B마루둥지로 가서 와이번 알을 좀 구해다 주세요. 여기서 북서쪽으로 협곡 절벽을 따라가다 보면 마루둥지로 올라가는 길이 보일 거예요. 와이번은 침입자에게 호락호락하지 않은데다 자기 알에 대한 보호 본능이 아주 강하니 조심하셔야 해요.",
     ["O"] = "높새바람 봉우리에 있는 엘루에게 마루둥지 와이번 알 10개를 가져가야 합니다.",
     ["T"] = "와이번",
-  },
-  [4768] = {
-    ["D"] = "다크스톤 서판에는 이미 오래전에 죽은 우르헬트 다크스톤이라는 드워프의 글이 기록되어 있어요. 우르헬트 다크스톤은 솜씨가 아주 뛰어난 연금술사였는데 그와 동시대를 살았던 이들은 그가 미쳤다고 생각했기에 그의 연구 내용을 아무에게도 알리지 않았답니다.$B$B하지만 그는 그 내용을 서판에 새겨 놓았어요. 난 그런 서판 중 하나가 검은바위 첨탑 안, 한때 운명의 전당으로 불리던 방에 있다고 생각합니다. 검은바위 첨탑에 들어갔다 돌아오는 이가 거의 없어서 지금은 그 방을 뭐라고 부르는지 모르겠군요.$B$B하지만 위험을 무릅쓰고 내게 서판을 가져다주실 의사가 있다면 후하게 보상하도록 하겠습니다.",
-    ["O"] = "카르가스에 있는 어둠마법사 비비안 라그레이브에게 다크스톤 서판을 가져가야 합니다.",
-    ["T"] = "다크스톤 서판",
-  },
-  [4769] = {
-    ["D"] = "황야의 땅에 있는 카르가스에서 비비안 라그레이브가 소식을 전해 왔어요. 비비안이 연구한 바에 의하면, 우리 연구 조사에 도움이 될 만한 고대 기록이 검은바위 첨탑 내부에 있는 것 같다고 하더군요. 이 사실을 확인하기 위해서는 검은바위 첨탑에서 그 기록을 빼내올 이가 필요할 거라고 합니다. $B$B쉬운 일이 아니지만 혹시 관심이 있다면 카르가스로 가서 비비안과 얘기해 보세요.",
-    ["O"] = "어둠마법사 비비안 라그레이브와 대화해야 합니다.",
-    ["T"] = "비비안 라그레이브와 다크스톤 서판",
   },
   [4770] = {
     ["D"] = "제발 저를 좀 도와주세요. 여기 마루둥지에 숨어 있는 동안 $R의 얼굴을 본 지도 며칠이나 되었습니다. 저는 와이번을 조사하러 이곳에 왔는데 너무 가까이 다가갔던 모양입니다. 와이번 둥지에서 쫓겨난 후로 길을 잃고 말았지요.$B$B백사장 야영지로 돌아가야 합니다. 모테가는 제가 없어진 줄 모르고 있어요. 제가 혼자서 마루둥지에 간 걸 알면 엄청 화를 낼 거예요.$B$B백사장 야영지는 바로 동쪽에 있습니다. 저를 좀 데려다 주세요.",
@@ -8435,20 +10172,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Return to Menara Voidrender in the Barrens.",
     ["T"] = "흑마법사의 로브",
   },
-  [4783] = {
-    ["D"] = "다음 재료는 불모의 땅에서 서쪽으로 멀리 떨어진, 돌발톱 산맥을 넘어야 보이는 잊혀진 땅에서 구할 수 있어요.$B$B그곳은 세계가 분리된 이후에도 여전히 혼돈이 지배하고 있는 곳이죠. 당신의 힘과 재치가 모두 필요할 겁니다. 영혼이 증오로 가득 찬 생물들뿐만 아니라 불타는 군단까지도 만나게 될 테니까요.$B$B북동부에 있는 서릿발분노 사티로스의 피를 가져오세요. 그리고 만노로크 소굴에 있는 하급 지옥불정령에게서 하급 지옥정령석을 가져오시고요.$B$B당신의 로브를 만드는 데 이 두 가지 물건을 모두 사용할 거예요.",
-    ["O"] = "불모의 땅에 있는 미네라 보이드렌더에게 서릿발분노의 사티로스 피 10병과 하급 지옥정령석 1개를 가져가야 합니다.",
-    ["T"] = "흑마법사의 로브",
-  },
   [4784] = {
     ["D"] = "I need only three things now, $N, then we can finish your robe.$B$BFirst, the fine gold thread Xizk is making for you. Return to him in Booty Bay and get it.$B$BSecond, bring me two smoldering coals from the fire elementals in the Arathi Highlands. If I recall correctly, they are to the west, near Thoradin\'s Wall.$B$BFinally, a soul shard created by you.$B$BAfter you have all the components, return here to the tower and I will complete the robe for you.",
     ["O"] = "Bring some Fine Gold Thread, 2 Smoldering Coals, and a Soul Shard to Menara Voidrender in the Barrens.",
     ["T"] = "흑마법사의 로브",
   },
-  [4785] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "고급 금빛 실타래",
+  [4786] = {
+    ["D"] = "I will put the robe together for you now. It will take but a few moments. Do not go far.",
+    ["O"] = "Wait for Menara Voidrender to complete your robe and then speak to her again.",
+    ["T"] = "The Completed Robe",
   },
   [4787] = {
     ["D"] = "모쉬아루의 예언서에는 어떤 고대의 알에 대해 적혀 있는데, 이 알은 트롤족이 거대한 제국을 다스리던 때의 유물로 학카르의 정수를 담을 힘이 있다고 하네. 어쩌면 학카르의 마수에서 아제로스를 지킬 수 있는 유일한 방법일지도 몰라.$B$B그 고대의 알을 가져다주게, $N. 동부 내륙지 진타알로 깊숙한 곳에 숨겨져 있다고 하네. 도시 꼭대기에 있는 원형 제단 뒤에 있는 동굴 안을 조사해 보는 게 좋을 거야.",
@@ -8460,40 +10192,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "다섯 번째와 여섯 번째 모쉬아루 서판을 타나리스에 있는 발굴조사단장 아이언부트에게 가져가야 합니다.",
     ["T"] = "마지막 서판",
   },
-  [4801] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "눈호랑이의 에코",
-  },
   [4802] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "겨울눈 에코",
-  },
-  [4803] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "톱니이빨곰의 에코",
-  },
-  [4804] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "서리바람 키메라의 에코",
-  },
-  [4805] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "얼음엉겅퀴설인의 에코",
-  },
-  [4806] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "서리망치거인의 에코",
-  },
-  [4807] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "올빼미야수의 에코",
   },
   [4808] = {
     ["D"] = "당신에게 부탁하고 싶은 것이 있어요.$B$B당신이 가져다준 정수를 연구한 결과, 새끼용의 알도 냉동 보관할 수 있을 것 같아요! 이 가설을 실험해 보고 싶지만, 특별 제작한 기계 부품이 필요할 것 같네요. 내 동기인 펠노크 스틸스프링이 그것들을 만들 수 있을 거예요.$B$B여기, 이 편지를 펠노크에게 가져다주세요. 거기에 내가 필요한 게 뭔지 적혀있어요. 여명의 설원에 있는 눈망루 마을에서 펠노크를 만날 수 있을 거예요.",
@@ -8505,6 +10207,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 8 Uncracked Chillwind Horns to Felnok Steelspring.",
     ["T"] = "서리바람 키메라의 뿔",
   },
+  [4810] = {
+    ["D"] = "Ok, everything is prepared and packed and ready for transport!  Good luck in your journey, and make sure you tell Tinkee that she owes me!",
+    ["O"] = "Bring Felnok\'s Package to Tinkee Steamboil in the Burning Steppes.",
+    ["T"] = "Return to Tinkee",
+  },
   [4811] = {
     ["D"] = "이곳에서 동쪽에 난폭한 달빛야수들이 출몰하고 있는데 그 수가 계속 늘어나고 있습니다. 한 때 달빛야수는 온화하고 신성한 동물로 여겨지기도 했습니다. 일부에서는 달빛야수를 여전히 신성시하고 있지만 저는 아우버다인의 안전을 위해 좀 더 현실적인 판단을 내려야 합니다.$B$B보고에 의하면 달빛야수들이 어둠해안, 동쪽 산맥을 따라 거대한 붉은 수정으로 향하고 있다고 합니다. 그런데 어느 누구도 그 수정이 어떤 물건인지, 심지어 실제로 존재하는지조차 모르고 있습니다. 그곳으로 가서 수정을 찾아 저에게 보고해 주셨으면 합니다.",
     ["O"] = "어둠해안의 동쪽 산맥을 따라 아우버다인 동쪽으로 가서 거대한 붉은 수정을 찾은 다음 아우버다인에 있는 파수꾼 글린다 날셰에게 보고해야 합니다.",
@@ -8515,10 +10222,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "빈 시험관에 아우버다인의 달샘 물을 채운 후 어둠해안의 동쪽 산에 있는 붉은 수정을 찾아 조사해야 합니다.",
     ["T"] = "수정에 물이 흐르면",
   },
-  [4821] = {
-    ["D"] = "이곳 버섯구름 봉우리에 괴상한 알이 있다는 소문이 돌기 시작했소. 그런데 이 알을 봤다는 자들도 가까이 접근하지는 못했기 때문에 자세히 살펴본 이는 아무도 없다고 하는군. 독사들이 마치 자기가 낳은 알인 양 보호하고 있기 때문이지.$B$B내가 조사를 좀 해볼 수 있게 그 괴상한 알을 가져와 주시오. 보고에 의하면 이 알은 뱀 동굴에 있다고 하오. 높새바람 봉우리의 남쪽으로, 그리고 북동쪽과 절벽을 따라가다 보면 그 밑부분에 뱀 동굴이 몇 개 있을 거요.",
-    ["O"] = "높새바람 봉우리에 있는 하가르 라이트닝후프에게 괴상한 알을 가져가야 합니다.",
-    ["T"] = "괴상한 알",
+  [4813] = {
+    ["D"] = "The moonwell water has revealed that embedded inside the crystal are a few small fragments of bone, as well as half of a jawbone.  The jawbone appears to be from a humanoid, but it is unclear without breaking open the crystal - a feat that even the strongest of magic would find near impossible.$B$BWith the task at hand complete, all that remains is to report back to Sentinel Glynda Nal\'Shea in Auberdine.",
+    ["O"] = "Report back what you have found to Sentinel Glynda Nal\'Shea in Auberdine.",
+    ["T"] = "The Fragments Within",
   },
   [4822] = {
     ["D"] = "ICE CREAM!  Oh please please please could you get me some ice cream?!  Strawberry is my favorite flavor, and there\'s no better strawberry ice cream in the world than Tigule and Foror\'s Strawberry Ice Cream!  It\'s my favorite ice cream in the whole wide world!$B$BI had it once a long time ago when I was at the Shimmering Flats race track, but I heard that they might be selling them in town now!  Please?  Pretty please?  With Tigule and Foror\'s Strawberry Ice Cream on top??!?!",
@@ -8554,6 +10261,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "After inspecting the contents of the box, you decide that Jaron could make use of the tools and other items inside. However, there is no sign of the amulet.$B$BIt appears that the wildkin inhabit the lands to the north and east of here, so you decide that the next step is to face the creatures and reclaim the amulet from them.",
     ["O"] = "Pick up Jaron\'s Supplies from the snow, then find the wildkin that stole the amulet Jaron spoke of.$B$BBring Jaron\'s Supplies and the Blue-feathered Amulet to Jaron Stoneshaper at the lodge in Winterspring.",
     ["T"] = "성난 올빼미야수",
+  },
+  [4865] = {
+    ["D"] = "If I did not see that with my own eyes I would never have believed it to be true. Vengeance has come to Thousand Needles!$B$B<Hagar wipes his brow.>$B$B$N, you must act quickly! Go now and seek out Motega Firemane; he is located at Whitereach Post just northwest of Freewind Post along the road. He will know what to do!",
+    ["O"] = "Report your findings to Motega Firemane.",
+    ["T"] = "Serpent Wild",
   },
   [4866] = {
     ["D"] = "그건 세상에서 가장 강력한 독 중에 하나라고 할 수 있지!$B$B내가 첨탑에 갔을 때 검은바위 부족 녀석들이 이 독의 위력에 대해서 얘기하고 있던 것을 엿들었소. 그들은 그것을 그물걸이 통로의 거대하고 흉포한 여왕 불그물거미의 이름을 따서 \'여왕의 독\'이라고 부른다오.$B$B당신이 내게 구해다 주어야 할 것이 바로 그거요. 당신의 혈관에 \'흐르는\' 살아 있는 독 표본이지. 그저 분비물만으로는 충분하지 않을 테니까! 그 여왕 거미의 독에 걸린 상태로 내게 돌아오시오!$B$B그럼 그 독을 짜내도록 하지!$B$B<기대에 차서 손을 비비는 존>",
@@ -8595,6 +10307,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "라코타 윈드송을 먹구름 봉우리에서 구출한 후, 높새바람 봉우리에 있는 탈리아 앰버하이드와 대화해야 합니다.",
     ["T"] = "마침내 자유를",
   },
+  [4905] = "_",
   [4906] = {
     ["D"] = "A second encampment of satyrs threatens the land of Felwood towards the north, led by the cruel Xavaric. The vile betrayers and tricksters feed upon the corruption of the native creatures of Felwood.$B$BXavathras and his minions were only part of a larger plan -- to cultivate a corrupted moonwell, and then provide the spoils to Xavaric.$B$BNow that Xavathras is out of the way, finish this task, $N. Head to the north and defeat Xavaric.",
     ["O"] = "Eridan Bluewind in Felwood wants you to kill 8 Jadefire Hellcallers, 8 Jadefire Betrayers, 8 Jadefire Tricksters, and Xavaric. Return to Eridan when the task is completed.",
@@ -8610,15 +10323,40 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "십자로에 있는 만크릭을 위해 그의 아내의 흔적을 찾아가야 합니다.",
     ["T"] = "전쟁으로 잃은 아내",
   },
+  [4941] = {
+    ["D"] = "Rend lives?$B$BImpossible!$B$BIt had been thought that Rend  was slain decades ago.$B$BSeek out the wisdom of Eitrigg, $N. None know the workings of the Blackrock better than he and if what is written here bares truth, Eitrigg should be informed. No person should be denied the right of vengeance.$B$BYou will find him in Orgrimmar.$B$BOnce you have spoken with Eitrigg, confer with the Warchief to find out what he wishes to do about this problem.",
+    ["O"] = "Speak with Eitrigg in Orgrimmar. When you have discussed matters with Eitrigg, seek council from Thrall.$B$BYou recall having seen Eitrigg in Thrall\'s chamber.",
+    ["T"] = "Eitrigg\'s Wisdom",
+  },
+  [4961] = {
+    ["D"] = "Ah, a summoner\'s orb--this is where the taint must be coming from. We must exorcise the demon within it if you\'re to use it. That I can do easily.$B$BYou\'re the one who has the hard job.  You must kill the demon once I release it.$B$BAnd you\'ll have to be quick.  If you take too long then he\'ll return to the orb and we\'ll have to start over!$B$BSo get yourself ready, $N.  Prepare your strongest spells and keep your potions handy, and go get a friend if you have one.  Because this isn\'t going to be pretty.",
+    ["O"] = "Kill the Demon of the Orb, then speak with Tabetha.",
+    ["T"] = "Cleansing of the Orb of Orahil",
+  },
   [4962] = {
     ["D"] = "So, you have chosen to capture the soul of a felhound, good.$B$BTake this ruby--with it, you will be able to capture the creature\'s soul. It works very similar to spells you already know: when the creature is close to dying, use the gem and it should do the rest of the work for you.$B$BI would suggest going to Desolace and trying your hand at any of the felhounds there. Those should do nicely.$B$BAfter you\'re successful, take both the captured spirit and your ruby to Menara.",
     ["O"] = "Take the Felhas Ruby and use it on one of the Felhounds found in Desolace. After successful, bring the Felhas Ruby and the Imprisoned Felhound Spirit back to Menara Voidrender in the Barrens.",
     ["T"] = "Shard of a Felhound",
   },
+  [4963] = {
+    ["D"] = "So, you have chosen to capture the soul of an infernal, good.$B$BTake this emerald--with it, you will be able to capture the creature\'s soul. It works very similar to spells you already know: when the creature is close to dying, use the gem and it should do the rest of the work for you.$B$BI would suggest going to Desolace and trying your hand at any of the infernals there. Those should do nicely.$B$BAfter you\'re successful, take both the captured spirit and your emerald to Menara.",
+    ["O"] = "Take the Infus Emerald and use it on one of the Infernals found in Desolace. After successful, bring the Infus Emerald and the Imprisoned Infernal Spirit back to Menara Voidrender in the Barrens.",
+    ["T"] = "Shard of an Infernal",
+  },
+  [4964] = {
+    ["D"] = "I will get started immediately on crafting your orb and infusing your new demon into it. When done, you will have the choice of having it in the form of a staff or orb. I always felt it was important to cater to a warlock\'s chosen weapon... I see no reason not to continue that practice.",
+    ["O"] = "Wait for Menara Voidrender to complete the Orb of Dar\'Orahil and then speak to her again.",
+    ["T"] = "The Completed Orb of Dar\'Orahil",
+  },
   [4965] = {
     ["D"] = "Well, well, well... a pleasure to see you\'re growing in power, $N. I\'d wager you\'d be about ready to speak to Menara Voidrender in the Barrens. If you haven\'t spoken to her before, then let me tell you, I don\'t think I\'ve ever met another expert in the creation of items--orbs specifically--that can inprison even a demon to serve our will so easily.$B$BIf you\'re interested, she\'s in Strahad\'s tower above Ratchet in the Barrens.",
     ["O"] = "불모의 땅에 있는 미네라 보이드렌더와 대화해야 합니다.",
     ["T"] = "Knowledge of the Orb of Orahil",
+  },
+  [4966] = {
+    ["D"] = "But, there may be more centaur than I thought, I ask you, $n, to fight with me against these vile assassins.",
+    ["O"] = "Protect Kanati Greycloud from the centaur attack.",
+    ["T"] = "Protect Kanati Greycloud",
   },
   [4967] = {
     ["D"] = "Still a fool, and still seeking the trappings of mortals. Yes, I speak to you with arrogance. I see you before me and I laugh. You\'re pathetic!$B$BBut it matters not what I think. It only matters what those willing to deal with you thinks!  And in this case, against my better judgment, those with some portion of power feel you deserve more.$B$BIf this is something you strive for then you should speak with Menara Voidrender in the tower above Ratchet. I believe you have met her before some time ago.",
@@ -8654,6 +10392,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Rend dares make such grand claims because of the protection he is afforded by the black flight.$B$BYou, $N, will find a way to pass through the Halls of Ascension. You will then find \'Warchief\' Rend Blackhand and you will destroy him - FOR THE HORDE!$B$B<Thrall slams a fist down upon his throne.>$B$BThe next time you return to my chambers, you will hold his head high in triumph and then you shall present it to your Warchief. Do this and be honored as a hero of the Horde.",
     ["O"] = "Travel to Blackrock Spire and slay Warchief Rend Blackhand. Take his head and return to Orgrimmar.",
     ["T"] = "호드를 위하여!",
+  },
+  [4975] = {
+    ["D"] = "I will get started immediately on crafting your orb and infusing your new demon into it. When done, you will have the choice of having it in the form of a staff or orb. I always felt it was important to cater to a warlock\'s chosen weapon... I see no reason not to continue that practice.",
+    ["O"] = "Wait for Menara Voidrender to complete the Orb of Noh\'Orahil and then speak to her again.",
+    ["T"] = "The Completed Orb of Noh\'Orahil",
+  },
+  [4976] = {
+    ["D"] = "Take the cleansed orb back to Menara in Ratchet, $N. Give her my regards and be safe. I truly hope you are able to withstand the temptation and corruption that is sure to come as you follow your path.$B$BGood luck.",
+    ["O"] = "Return the Cleansed Infernal Orb to Menara Voidrender in the Barrens.",
+    ["T"] = "Returning the Cleansed Orb",
   },
   [4981] = {
     ["D"] = "고블린을 믿지 말게. 고블린을 믿는다는 건 몰락의 지름길이야.$B$B우리의 사고뭉치 요원 중 한 명의 이름은 비쥬라네. 난 그녀가 불타는 평원 출신의 희귀종 애완동물 암거래상인 키블러의 사주를 받아 일한다는 걸 알아냈네. 말하자면 우리를 배신했을 뿐만 아니라 그녀는 자기 활동 자금으로 호드의 공금을 빼돌리고 있었다네.$B$B그녀를 생포해서 여기로 데려오게. 그녀는 검은바위 첨탑으로 들어가는 모습을 끝으로 종적을 감추었다네. 첨탑으로 가서 그녀를 찾아서 데려오게.$B$B그리고 말이네. 그녀의 사탕발림에 넘어가지 말게나.",
@@ -8695,6 +10443,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "비쥬의 소지품을 찾아 그녀에게 돌려줘야 합니다!",
     ["T"] = "비쥬의 소지품",
   },
+  [5002] = {
+    ["D"] = "I\'m a goblin of my word, $r. Now listen closely:$B$BThese orcs are used primarily as beasts of burden and cannon fodder for the black dragonflight!$B$BTheir true leader is none other than Nefarian, brood of Deathwing. I\'ve also discovered the location of Nefarian\'s subordinates in this part of the citadel.$B$BTake this map to Marshal Maxwell in the Burning Steppes. It has the location of these fiends marked for easy identification.",
+    ["O"] = "Travel to the Burning Steppes and give Bijou\'s Information to Marshal Maxwell.",
+    ["T"] = "Message to Maxwell",
+  },
   [5022] = {
     ["D"] = "You pick up the package, wiping off a small layer of dust and grime that had settled on it.  It is addressed in a hurried hand to an Emma Felstone of Stormwind; the delivery of the package is dated for well over four years ago.$B$BThough it is unclear if Emma Felstone is even alive, it is widely known that the Stormwind City Hall keep records on the populace of the city.  This is handled through the Royal Factors of the Stormwind Census.",
     ["O"] = "Check with the Royal Factors of Stormwind to learn the whereabouts of an Emma Felstone.  There is usually a census officer located in City Hall.",
@@ -8704,6 +10457,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "You pick up the package, wiping off a small layer of dust and grime that had settled on it.  It is addressed in a hurried hand to a Jeremiah Felstone of Lordaeron; the delivery of the package is dated for well over four years ago.$B$BThough it is unclear if Jeremiah Felstone is even alive, it is widely known that the Undercity, formerly known as Lordaeron, keeps records on the populace of the city.  This is handled through the Royal Overseers of the Undercity Census.",
     ["O"] = "Check with the Royal Overseers of the Undercity to learn the whereabouts of a Jeremiah Felstone.  There is usually a census officer located near guild and tabard registration.",
     ["T"] = "늦어버린 소포 배달",
+  },
+  [5041] = {
+    ["D"] = "That attack on the caravan contained supplies we desperately needed.$B$BYou\'ve been brave enough to take on the Razormane tribe so far, and I will ask you to do so again, but this time, I wonder if I could ask you to keep your eyes open for some of our lost supplies. You can probably find them throughout their camps, the quilboar getting fat off their dishonorable acts.$B$BThe people of the Crossroads would be in your debt.",
+    ["O"] = "Find and return Crossroads\' Supply Crates to Thork in the Barrens.",
+    ["T"] = "십자로의 보급품",
   },
   [5042] = {
     ["D"] = "",
@@ -8755,6 +10513,12 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Locate the other half of the Good Luck Charm somewhere on the Felstone Farm in Western Plaguelands and reassemble it.$B$BGive the Good Luck Charm to Janice Felstone on the Felstone Farm, Western Plaguelands.",
     ["T"] = "Two Halves Become One",
   },
+  [5052] = {
+    ["D"] = "Along with the thorns, the blood affected <snort> other aspects of the earth: blood red stones mixed in with other minerals. The Bristleback dig up these shards and carry them as totems <snort> for strength in battle and as totems for their magics. <snort>$B$BI know the secrets of that magic.$B$BBring Mangletooth one of these blood shards to show you understand. Bring Mangletooth many of the shards, and he will bless you with quilboar magic--the magic of Agamaggan! <snort>",
+    ["O"] = "Bring a Blood Shard to Mangletooth in Camp Taurajo in the Barrens.$B$BCollect more Blood Shards if you want him to bless you with Agamaggan\'s power.",
+    ["T"] = "Blood Shards of Agamaggan",
+  },
+  [5053] = "_",
   [5054] = {
     ["D"] = "여기서 북서쪽으로 눈 덮인 여명의 설원의 산맥에서는 솜씨가 아주 뛰어난 사냥꾼이 지금도 먹이를 쫓고 있다네... 톱니이빨곰 우르시우스라는 놈인데, 아주 재빠르고 영리한 짐승이지.$B$B이제 자네를 녀석에게 보내겠네. 눈망루 마을 북서쪽에 있는 경사진 언덕에서 돌아다니고 있을 테니 녀석을 찾아 살금살금 다가가 처치하게.$B$B지금까지 우르시우스와 대적하려고 한 자들은 모두 녀석의 사냥감이 되어 쫓기게 됐지. 그러니 항상 경계를 늦추지 말게나.",
     ["O"] = "여명의 설원 눈망루 마을에 있는 스톰 섀도후프가 우르시우스를 처치해 달라고 했습니다.",
@@ -8770,6 +10534,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "여명의 설원의 눈망루 마을에 있는 스톰 섀도후프가 샤이로탐을 처치해 달라고 했습니다.",
     ["T"] = "Shy-Rotam",
   },
+  [5057] = {
+    ["D"] = "Before you spoke to me, $N, I had heard of your endeavors... that you had an unyielding desire to prove yourself, that you had an exceptional ability as a $c, and I now know these things to be the truth.$B$BThose that excel as you do are worthy of recognition. Take this marker to a friend of mine in Thunder Bluff named Melor Stonehoof. I\'m sure he will remember you, and what you accomplished so long ago. Speak to him of you recent victories, and do not ever forget what you have accomplished today.",
+    ["O"] = "Bring Storm Shadowhoof\'s Marker to Melor Stonehoof in Thunder Bluff.",
+    ["T"] = "Past Endeavors",
+  },
   [5060] = {
     ["D"] = "",
     ["O"] = "",
@@ -8779,6 +10548,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "You have completed the necessary lessons all young druids are taught before they can adopt an aquatic aspect.  Go now back to your trainer, Mathrengyl Bearwalker, in Darnassus.  Show him your pendant and prove to him you are ready to learn what he has to teach you.  He will complete your training, allowing you to become one with the water.$B$BGoodbye, young druid.  We shall speak again.",
     ["O"] = "Return to Darnassus and show Mathrengyl Bearwalker the Pendant of the Sea Lion.",
     ["T"] = "바다표범 형상 (나이트 엘프 드루이드)",
+  },
+  [5062] = {
+    ["D"] = "Arikara is a deadly creature that must be dealt with swiftly. In order to hunt her down you will need to light the sacred fire of life - this will summon Arikara.$B$BGo now and harvest the rare Incendia agave plant. Once you have harvested enough agave, seek council with Magatha Grimtotem on Elder Rise in Thunder Bluff. She is a powerful shaman that can enchant the agave plant to create a powder that will light the fire.$B$BTravel northeast to the Boiling Pool and gather Incendia Agave.",
+    ["O"] = "Gather 10 bushels of Incendia Agave, and then consult Magatha Grimtotem on Elder Rise in Thunderbluff.",
+    ["T"] = "Sacred Fire",
   },
   [5063] = {
     ["D"] = "A finer cap you may never see. From the pristine hide of the beast, our expert crafters will create the most phenomenal hat a prestidigitator could ever hope to don!$B$BFifty gold pieces along with the listed items and your head shall be graced with the Cap of the Scarlet Savant:$B$B*The pristine hide of the Beast.$B$B*Frayed abomination stitchings.$B$B*Arcane crystals.$B$B*Enchanted scarlet thread.$B$BBEHOLD!",
@@ -8835,6 +10609,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "발견한 사실을 도노바 스노우덴에게 보고해야 합니다.",
     ["T"] = "신비한 액체",
   },
+  [5086] = {
+    ["D"] = "I\'ve studied the sample you returned with, and while I can\'t say for sure, I believe it contains traces of toxic elements. However, the only way to know for sure is to gather some as a comparison.$B$BI believe that the Deadwood furbolg may be gathering these elements from other corrupted creatures in Felwood; in particular, the elementals living in the Irontree Woods, called toxic horrors.$B$BCollect a few samples for me to compare, but be careful -- it\'s very dangerous there!",
+    ["O"] = "Collect 3 Toxic Horror Droplets for Donova Snowden in Winterspring.",
+    ["T"] = "Toxic Horrors",
+  },
   [5087] = {
     ["D"] = "매우 흥미롭군요...$B$B이 독성 물질에 온천수를 섞으니 유독 성분이 사라져요. 이걸 마시는 이에게만 일시적으로 효과가 나타나기는 하지만요. 그래서 겨울눈 일족이 온천을 그렇게 맹렬히 지키는가 봐요. 화주를 정화하는 데 필요할 테니까요.$B$B이 사태는 당장 막아야 해요. 겨울눈 일족과 마른가지 일족 간의 접촉을 끊어야 해요. 겨울눈 정찰꾼이 겨울눈 마을과 악령숲을 지나다니곤 하는데, 이놈을 처치하고 가지고 있는 물건을 빼앗아오세요.",
     ["O"] = "Find the Winterfall Runners and stop them from delivering their shipment to Winterfall Village.",
@@ -8885,6 +10664,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "펠스톤 농장과 달슨의 눈물 사이에 있는 붉은십자군의 야영지로 가서 지휘 막사를 파괴하십시오.$B$B기지에 스컬지 깃발을 세운 후, 서부 역병지대의 보루에 있는 고위집행관 데링턴에게 가야 합니다.",
     ["T"] = "붉은십자군의 주의 끌기",
   },
+  [5097] = {
+    ["D"] = "Through the use of a magical device known as a beacon torch, we can mark targets of our choosing for future actions by our troops.  To that end, we think the Scourge are using Andorhal\'s watchtowers as a means to control their troop movements.$B$BYour mission: breach Andorhal\'s defenses to plant beacons at all four watchtowers.  You\'ll need to be in the doorway of each tower to plant the beacon; it will then proceed to mark the tower.  There are only five charges on the beacon torch, so use them wisely!",
+    ["O"] = "Using the Beacon Torch, mark each tower in Andorhal; you will need to stand in the doorway of the tower to successfully mark it.$B$BOnce all four towers are marked, return the Beacon Torch to Commander Ashlam Valorfist in Chillwind Camp, Western Plaguelands.",
+    ["T"] = "All Along the Watchtowers",
+  },
   [5098] = {
     ["D"] = "Through the use of a magical device known as a beacon torch, we can mark targets of our choosing for future actions by our troops.  To that end, we think the Scourge are using Andorhal\'s watchtowers as a means to control their troop movements.$B$BYour mission: breach Andorhal\'s defenses to plant beacons at all four watchtowers.  You\'ll need to be in the doorway of each tower to plant the beacon; it will then proceed to mark the tower.  There are only five charges on the beacon torch, so use them wisely!",
     ["O"] = "Using the Beacon Torch, mark each tower in Andorhal; you will need to stand in the doorway of the tower to successfully mark it.$B$BOnce all four towers are marked, return the Beacon Torch to High Executor Derrington at the Bulwark, Western Plaguelands.",
@@ -8899,6 +10683,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "우리는 두 지역에서 그 괴물들을 상대할 작정이오. 우리의 수도인 스톰윈드의 안과 밖에서, 이곳 불타는 평원에서는 그들의 앞마당에서 상대할 것이오. 신중해야 하오. 저들이 우리의 고향과 가족들을 하나도 살려두지 않은 것처럼 누구도 살려두지 않을 것이야.$B$B드라키사스 사령관을 찾아서 처단하시오!$B$B이번 임무는 물론 쉽지 않을 테지만, 보상은 엄청날 것이오.",
     ["O"] = "Travel to Blackrock Spire and destroy General Drakkisath. Return to Marshal Maxwell when the job is done.",
     ["T"] = "사령관 드라키사스 처치",
+  },
+  [5103] = {
+    ["D"] = "The only thing that remains of this human are some charred bones. He seems to have died within arms reach of what he was after - unfired plate gauntlets.$B$BPerhaps you should grab the gauntlets and get out of the fire?",
+    ["O"] = "Someone in this world must know what to do with these gauntlets. Good luck!",
+    ["T"] = "Hot Fiery Death",
   },
   [5121] = {
     ["D"] = "While we still know very little about why the furbolg have been ingesting this strange substance, I do think it\'s best that we put a stop to it before it gets out of hand.$B$BThe Winterfall furbolg are not a normally aggressive tribe, and this change in their behavior leads me to think that they must be under orders from their chief. We most likely can\'t undo the damage that has already been done, but I think that if their leader is slain, they will not get any worse.$B$BHead east to Winterfall Village.",
@@ -8915,6 +10704,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring Malyfous Darkhammer 6 Enchanted Thorium Bars, 2 Essence of Fire, and 4 Star Rubies. You will also need to turn in your Unfired Plate Gauntlets.",
     ["T"] = "불꽃의 판금 건틀릿",
   },
+  [5126] = {
+    ["D"] = "The Satyr paces about and talks to himself. Do you wish to question him?",
+    ["O"] = "Speak with Lorax. Listen to what he has to say.",
+    ["T"] = "Lorax\'s Tale",
+  },
   [5127] = {
     ["D"] = "Lorax makes deals, he does not accept them from insignificant mortals.$B$BA deal I shall make with you, however... take this pike, it is imbued with powerful Fel energies. When you find Goraluk Anvilcrack, slay him and drive this pike through his dying heart. His soul he bartered, his soul I shall have. Return the pike and return the breastplate that the thief stole and I shall teach you what it is that he was to learn.",
     ["O"] = "Travel to Blackrock Spire and find Goraluk Anvilcrack. Slay him and then use the Blood Stained Pike upon his corpse. After his soul has been siphoned, the pike will be Soul Stained.$B$BYou must also find the Unforged Rune Covered Breastplate.$B$BReturn both the Soul Stained Pike and the Unforged Rune Covered Breastplate to Lorax in Winterspring.",
@@ -8925,20 +10719,45 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Take the Crudely-written Log to Kelek Skykeeper in southern Felwood.",
     ["T"] = "대족장의 기록",
   },
+  [5141] = {
+    ["D"] = "Dragonscale leatherworking isn\'t easy, but it\'s extremely rewarding.  I\'ll teach you how to make this fine mail armor, but only if you agree to certain conditions.$B$BBy choosing this path, you agree never to learn elemental or tribal leatherworking; there is only room for one of the three at the apex of the craft.  Furthermore, I\'ll need some samples of your best work involving scorpid armor.  Finally, I\'ll need proof of your ability to acquire the staple of the trade: scales of the dragonkin.",
+    ["O"] = "Bring 2 Tough Scorpid Breastplates, 2 Tough Scorpid Gloves, and 10 Worn Dragonscales to Peter Galen in Azshara.$B$BCompleting this quest will give you access to the Dragonscale Leatherworking arts.$B$BThe completion of this quest will prevent you from learning Elemental Leatherworking and Tribal Leatherworking; be sure this is the path you wish to follow before doing so.",
+    ["T"] = "Dragonscale Leatherworking",
+  },
   [5142] = {
     ["D"] = "다로우골 전투에서 많은 가족들이 죽었답니다. 정말 많이 죽었죠.$B$B그런데 더 안타까운 것은 전투가 시작될 때 내 조카 파멜라를 숨겨 놨었는데, 그 아이에게 무슨 일이 생겼는지 모르겠어요. 전 이러저리 떠돌아 다닐 수밖에 없는 원혼이지만, 그래도 파멜라의 행방을 알고 싶어요.$B$B제발, 관대하신 $C님. 다로우골로 가서 그녀를 찾아 주시겠어요? 다로우골은 가론의 흉가를 지나서 동쪽으로 가면 됩니다.",
     ["O"] = "Find Pamela Redpath.",
     ["T"] = "꼬마 파멜라",
+  },
+  [5143] = {
+    ["D"] = "To learn tribal leatherworking demands an understanding of how primal nature truly is; I know that you have already mastered the art of making wild leather armor, and I am willing to complete your training.$B$BKnow this, $c: by choosing this path you agree never to learn dragonscale or elemental leatherworking; there is only room for practice of one of the three arts.  Furthermore, bring to me the finest samples of your wild leather armor.  From there, we will begin your mastery.",
+    ["O"] = "Bring a Wild Leather Vest and a Wild Leather Helmet to Caryssia Moonhunter in Feralas.$B$BCompleting this quest will give you access to the Tribal Leatherworking arts.$B$BThe completion of this quest will prevent you from learning Dragonscale Leatherworking and Elemental Leatherworking; be sure this is the path you wish to follow before doing so.",
+    ["T"] = "Tribal Leatherworking",
   },
   [5144] = {
     ["D"] = "Elemental leatherworking is what I know, and if you\'re willing to open your mind to the greater powers of substance, I will share with you all there is to learn.$B$BKnow this, $c: by choosing this path you agree never to learn dragonscale or tribal leatherworking; there is only room for practice of one of the three arts.  Furthermore, I\'ll need adequate proof that you are in tune with the elements of nature; to that end, bring me the purest essences of fire, water, earth, and wind.",
     ["O"] = "Bring 2 Heart of Fire, 2 Globe of Water, 2 Core of Earth, and 2 Breath of Wind to Sarah Tanner in Searing Gorge.$B$BCompleting this quest will give you access to the Elemental Leatherworking arts.$B$BThe completion of this quest will prevent you from learning Dragonscale Leatherworking and Tribal Leatherworking; be sure this is the path you wish to follow before doing so.",
     ["T"] = "Elemental Leatherworking",
   },
+  [5145] = {
+    ["D"] = "Dragonscale leatherworking isn\'t easy, but it\'s extremely rewarding.  I\'ll teach you how to make this fine mail armor, but only if you agree to certain conditions.$B$BBy choosing this path, you agree never to learn elemental or tribal leatherworking; there is only room for one of the three at the apex of the craft.  Furthermore, I\'ll need some samples of your best work involving scorpid armor.  Finally, I\'ll need proof of your ability to acquire the staple of the trade: scales of the dragonkin.",
+    ["O"] = "Bring 2 Tough Scorpid Breastplates, 2 Tough Scorpid Gloves, and 10 Worn Dragonscales to Thorkaf Dragoneye in the Badlands.$B$BCompleting this quest will give you access to the Dragonscale Leatherworking arts.$B$BThe completion of this quest will prevent you from learning Elemental Leatherworking and Tribal Leatherworking; be sure this is the path you wish to follow before doing so.",
+    ["T"] = "Dragonscale Leatherworking",
+  },
+  [5146] = {
+    ["D"] = "Elemental leatherworking is what I know, and if you\'re willing to open your mind to the greater powers of substance, I will share with you all there is to learn.$B$BKnow this, $c: by choosing this path you agree never to learn dragonscale or tribal leatherworking; there is only room for practice of one of the three arts.  Furthermore, I\'ll need adequate proof that you are in tune with the elements of nature; to that end, bring me the purest essences of fire, water, earth, and wind.",
+    ["O"] = "Bring 2 Heart of Fire, 2 Globe of Water, 2 Core of Earth, and 2 Breath of Wind to Brumn Winterhoof in the Arathi Mountains.$B$BCompleting this quest will give you access to the Elemental Leatherworking arts.$B$BThe completion of this quest will prevent you from learning Dragonscale Leatherworking and Tribal Leatherworking; be sure this is the path you wish to follow before doing so.",
+    ["T"] = "Elemental Leatherworking",
+  },
   [5147] = {
     ["D"] = "현상 수배: 아르낙 그림토템$B$B추방자 아르낙을 극악무도한 살상과 납치 혐의로 현상 수배한다. 이 범죄자에게 정의의 처단을 내리는 용감한 자에게는 후한 보상을 내릴 것이다.$B$B아르낙을 마지막으로 목격한 장소는 먹구름 봉우리다. 그를 처치한 증거물을 들고 높새바람 봉우리에 있는 절벽파수꾼 롱혼에게 가서 보상을 받기 바란다.",
     ["O"] = "아르낙 그림토템을 처치하고 높새바람 봉우리에 있는 절벽파수꾼 롱혼에게 그 증거물을 가져가야 합니다.",
     ["T"] = "현상 수배 - 아르낙 그림토템",
+  },
+  [5148] = {
+    ["D"] = "To learn tribal leatherworking demands an understanding of how primal nature truly is; I know that you have already mastered the art of making wild leather armor, and I am willing to complete your training.$B$BKnow this, $c: by choosing this path you agree never to learn dragonscale or elemental leatherworking; there is only room for practice of one of the three arts.  Furthermore, bring to me the finest samples of your wild leather armor.  From there, we will begin your mastery.",
+    ["O"] = "Bring a Wild Leather Vest and a Wild Leather Helmet to Se\'Jib in Stranglethorn Vale.$B$BCompleting this quest will give you access to the Tribal Leatherworking arts.$B$BThe completion of this quest will prevent you from learning Dragonscale Leatherworking and Elemental Leatherworking; be sure this is the path you wish to follow before doing so.",
+    ["T"] = "Tribal Leatherworking",
   },
   [5149] = {
     ["D"] = "말레네 고모가요, 저한테요, 우리 아빠는 나가서 싸워야 하니까 나더러 여기 있으라고 했어요. 우리 아빠는 전세계에서 가장 용감한 사람이라고요!$B$B근데 아무리 여기서 기다려도 아직 안 오시고요, 가끔 나쁜 사람들이 와서 내게 귓속말을 하거든요. 아빠가 그들을 좀 쫓아냈으면 좋겠는데, 아빠는 아직도 돌아오지 않았어요!$B$B가끔 어두워질 때면 내 인형하고 놀고 싶은데, 마을에 두고 와서 그러지도 못하고 있어요.$B$B제 인형 좀 찾아다 주실래요?",
@@ -8975,6 +10794,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Seek out and destroy 2 Entropic Beasts and 2 Entropic Horrors while exploring Shatter Scar Vale. After checking to see if the craters there are still filled with corrupt fel water, return to Taronn Redfeather in Felwood.",
     ["T"] = "오염 확인",
   },
+  [5157] = {
+    ["D"] = "Deep within Jaedenar lies Shadow Hold--the main fortress of their corruption and evil.$B$BThe Shadow Council has protective spells surrounding their lair in the form of braziers. If I am to find out any more information about our enemy through scrying, then those braziers must be extinguished. By doing so, I should be able to spy on the Council and find out who leads them.$B$BIf you can, take this canteen and fill it at the Moon Well in the center of Jaedenar. Return to me afterwards.",
+    ["O"] = "Take the Empty Canteen to the Moon Well in the center of Jaedenar and fill it before returning to Greta Mosshoof in Felwood.",
+    ["T"] = "부패한 물 채취",
+  },
+  [5158] = {
+    ["D"] = "Take the corrupt water to the Barrens, $N. South of Ratchet, hidden along the shore, is an old friend of mine, a shaman named Islen Waterseer. She is a powerful shaman who will help us. Her relationship with the spirits of water has always been strong. Our task being a noble one should be enough to persuade her and the spirits of water to aid us in this task.$B$BYou should find her at a small camp right along the water\'s edge. And, $N, ignore the pirates... they are but a nuisance and no threat to you.",
+    ["O"] = "Take the Corrupt Moon Well Water to Islen Waterseer in the Barrens.",
+    ["T"] = "Seeking Spiritual Aid",
+  },
   [5159] = {
     ["D"] = "Thank the spirits, $N. They are the ones that have come to your aid, not me.$B$BI give this purified water to you now. Please give my regards to Greta and my best wishes. She is tackling something greater than many of us... as I\'m sure she will soon find out.$B$BThe Shadow Council is not a force to be trifled with, $N. Remember that.$B$BGo now. Take the water and return to Greta.",
     ["O"] = "Take the Purified Moon Well Water to Greta Mosshoof in Felwood.",
@@ -8984,6 +10813,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "칼림도어로 가세요. 여명의 설원의 지독한 추위도 우리의 비행을 방해할 수는 없을 거예요. 여명의 설원에 다다르면 마즈소릴의 동굴을 찾으세요.$B$B마즈소릴의 빙판 마루 위에서 코볼트 룬들을 찾을 수 있을 거예요. 그 위에 서서 저의 비늘을 쥐고 있으면 우리의 대섭정이신 헬레님께로 이동하게 될 거예요.$B$B그분께 비늘을 건네주면 비늘로 저주받은 곳에서 무엇을 보고 느꼈는지 점칠 수 있을 거예요.",
     ["O"] = "여명의 설원으로 가서 헬레를 찾아 아우비의 비늘을 전해야 합니다.",
     ["T"] = "대섭정",
+  },
+  [5161] = {
+    ["D"] = "We understand what the cursed brood of Deathwing attempts to do and we know that it cannot be allowed.$B$BBecause of the protection Blackrock mountain affords Nefarian, it has become increasingly difficult for us to intercede.$B$BWe can, however, empower you, mortal - should you so choose.$B$BThe path before you is one full of peril. You must decide whether to accept our help. Ponder this and speak with me again when a decision has been made.",
+    ["O"] = "Speak with Haleh if you wish to continue.",
+    ["T"] = "Wrath of the Blue Flight",
   },
   [5162] = {
     ["D"] = "It is the arcane that I control and the arcane which will send you to your next destination.$B$BWhen you are ready, the journey will begin. To the Plaguelands you will go and to Jeziba you will speak.$B$BHe is a mortal as wise as the ancients and as patient as the immovable earth. Find him in Andorhal.",
@@ -8999,6 +10833,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "A finer instrument of justice, Haleh could not have chosen. Read from the catalogue of the wayward and be enlightened.$B$BShould you persist... should you do what is asked of you... should you survive... a hero you will make.",
     ["O"] = "Read from the Catalogue of the Wayward.",
     ["T"] = "무법의 시대 일람",
+  },
+  [5165] = {
+    ["D"] = "Now, you must return to Jaedenar. The braziers are more than likely spread throughout Shadow Hold. Douse each of their flames and the protections the Council has set up will fall for at least a short period of time. I will be waiting for that to happen. When it does, I will look deep within the Hold and try to find out who the head of this beast is. Then, and only then, will we see about attacking them directly.",
+    ["O"] = "Using the Purified Moon Well Water, douse the flames of the four braziers of protection within Shadow Hold in Felwood, then return to Greta Mosshoof in the Emerald Sanctuary.",
+    ["T"] = "방어막 파괴",
   },
   [5166] = {
     ["D"] = "오색용군단의 무자비한 공격을 막아낼 가슴보호갑은 아이러니하게 만들어졌다.$B$B우리가 상대하는 바로 그 야수들의 비늘을 나이 든 오색비룡이나 오색용의 껍질에 꿰매야 하는데, 이 나이 든 용들은 이제 이 세상에 존재하지 않는 것으로 알려져 있고 앞으로도 존재해서는 안 된다.$B$B마지막으로 필요한 재료는 영웅의 피로 아마도 가장 구하기 어려운 것일 것이다.$B$B가슴보호갑은 조각사가 만들어야 한다.",
@@ -9025,11 +10864,30 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "리베른 프로스트윈드가 겨울눈 주술사 5마리와 겨울눈 펄볼그 5마리를 처치해 달라고 했습니다.",
     ["T"] = "겨울눈 일족의 침략",
   },
+  [5202] = {
+    ["D"] = "The small red key seems to be made of some kind of bone material. It is heavy in your hand, but appears very fragile. Why would a member of the Shadow Council have such a thing? Perhaps there is something within Jaedenar that this strange key unlocks.",
+    ["O"] = "Search through Jaedenar to discover what the Blood Red Key is used for.",
+    ["T"] = "[재사용]이상한 붉은 열쇠",
+  },
+  [5203] = {
+    ["D"] = "But, as much as it pains me, there is one thing that must be done first: I have to find Trey\'s sword Lightforge and escape Shadow Hold to tell my superiors what\'s happening here. Can you help me, $N?$B$BOur equipment isn\'t far from here, and you\'ve already proven you can survive the path to the top.$B$BAfter we escape, I\'ll head to Darnassus if you can find my friend Jessir near the Ashenvale border. She was to meet us at the Emerald Circle\'s camp near there.$B$BWhat do you say, $N? Can you help me again?",
+    ["O"] = "Escort Arko\'narin to where Lightforge and her equipment are being held, and then protect her as you escape Shadow Hold. Afterwards, seek out Jessir Moonbow in Felwood to let her know what\'s happened to her friends.",
+    ["T"] = "Rescue From Jaedenar",
+  },
+  [5204] = {
+    ["D"] = "She would like to pretend that she\'s fine. She\'d love for me to think that she\'s strong enough to deal with all of this on her own, but I know better than that. Trey\'s death and hearing the torture he was put through is going to haunt her for a long time, and there\'s nothing we can do to stop that. But we can give her some peace!$B$B$N, return to Shadow Hold, kill Trey\'s torturer and find his remains. There is no reason we can\'t tie off all these loose ends while Arko\'narin mourns in her own private way.",
+    ["O"] = "Return to Jaedenar and kill the succubus Rakaiah before finding the Remains of Trey Lightforge.",
+    ["T"] = "정의의 복수",
+  },
+  [5205] = "_",
   [5206] = {
     ["D"] = "크로미가 말하길 당신이 가져온 유물은 강력한 마법에 반응을 보이는데 한 가지가 더 필요하다고 하오. 바로 다로우골 전투에 참전했던 스컬지의 해골이라는군.$B$B이 수정을 가지고 가서 스컬지 용사를 사냥해 해골을 가져 오시오. 이 수정에는 마법이 걸려 있어 전투에 참전한 용사의 해골 위에 비추면 소리가 공명할 것이니 공명하는 해골을 나에게 가져오시오.$B$B자, 출발하시오. 북쪽의 맹독의 숲과 서쪽의 곰팡이 계곡에 가면 스컬지 용사 녀석들을 볼 수 있을 것이오.",
     ["O"] = "Bring 5 Resonating Skulls and the Mystic Crystal to Carlin Redpath in Eastern Plaguelands.",
     ["T"] = "다로우골의 약탈자들",
   },
+  [5207] = "_",
+  [5208] = "_",
+  [5209] = "_",
   [5210] = {
     ["D"] = "The Annals of Darrowshire, through my magic, has gained pages at its end, and now it extends its history beyond the battle.  One of the extra passages tells of another Redpath, Carlin, who survived Joseph\'s betrayal.  Carlin\'s now in the Plaguelands to the east, at the Light\'s Hope Chapel.$B$BTake the book and speak with him.",
     ["O"] = "Bring the Extended Annals of Darrowshire to Carlin Redpath in Eastern Plaguelands.",
@@ -9055,20 +10913,50 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "스트라솔름에서 샤비의 최고급 담배를 회수하여 스모키 라루에게 가져가야 합니다.",
     ["T"] = "위대한 프라스 샤비",
   },
+  [5215] = {
+    ["D"] = "Within the lands of former Lordaeron are eight cauldrons - four here in the west, and four more ensconced in the east.  These cauldrons spew poisons into the air, propagating the plague throughout the land for the Scourge.$B$BThe necromantic might of Kel\'Thuzad is too strong to outright shut down these cauldrons, but we think we might have a way to subvert them to our advantage.  My second, High Priestess MacDonnell, will be your point on this assignment; she\'ll continue the briefing from here.",
+    ["O"] = "Speak with High Priestess MacDonnell at Chillwind Point, Western Plaguelands.",
+    ["T"] = "The Scourge Cauldrons",
+  },
   [5216] = {
     ["D"] = "Of the four cauldrons here in the west, the one located at Felstone Field may be the easiest one in obtaining access to.  The Scourge have greener troops positioned here, though they should not be underestimated.$B$BGo to Felstone Field, northwest of Andorhal, and engage the cauldron lord there.  We think it has a key that will unlock access to the cauldron.  When unlocked, use this bottle to obtain a sample of the poisons inside the cauldron; we\'ll need it for study in developing a counter agent.",
     ["O"] = "Go to Felstone Field in Western Plaguelands to locate and defeat the Cauldron Lord present there.  It may have a key that will allow access to the cauldron.  You must have the Empty Felstone Field Bottle with you to secure a sample of the poisons used inside the cauldron.",
     ["T"] = "Target: Felstone Field",
+  },
+  [5217] = {
+    ["D"] = "You fill the bottle with enough of the cauldron\'s poisonous concoction for a suitable sample to be studied.$B$BWith the poison in hand, it is time to return to High Priestess MacDonnell at Chillwind Camp to complete the mission.",
+    ["O"] = "Bring the Filled Felstone Field Bottle to High Priestess MacDonnell at Chillwind Camp, Western Plaguelands.",
+    ["T"] = "Return to Chillwind Camp",
   },
   [5218] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Felstone Field Cauldron",
   },
+  [5219] = {
+    ["D"] = "One of the plague cauldrons is located in the field of a former farmhouse now referred to as Dalson\'s Tears.  Well, we shall shed no tears this day as we thwart the Scourge and have them choke on their own fumes!$B$BGo to Dalson\'s Tears, almost due north of Andorhal, and eliminate the cauldron lord there.  It should have a key like the last one did, allowing you into the cauldron.  Use this bottle to obtain a sample from inside the cauldron; each cauldron has its own distinct brew of toxins it uses.",
+    ["O"] = "Go to Dalson\'s Tears in Western Plaguelands to locate and defeat the Cauldron Lord present there, and use its key to gain access to the cauldron.  You must have the Empty Dalson\'s Tears Bottle with you to secure a sample of the poisons used inside the cauldron.",
+    ["T"] = "Target: Dalson\'s Tears",
+  },
+  [5220] = {
+    ["D"] = "You carefully fill the bottle with enough of the cauldron\'s ichors for what you consider to be suitably sized sample.$B$BWith the poison in hand, it is time to return to High Priestess MacDonnell at Chillwind Camp to complete the mission.",
+    ["O"] = "Bring the Filled Dalson\'s Tears Bottle to High Priestess MacDonnell at Chillwind Camp, Western Plaguelands.",
+    ["T"] = "Return to Chillwind Camp",
+  },
   [5221] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Dalson\'s Tears Cauldron",
+  },
+  [5222] = {
+    ["D"] = "Two cauldrons have been successfully opened; while you will be able to access them indefinitely, we still want to open up the other two that remain.  This will provide all of us with more options to introduce the counter agent!$B$BThis time, you\'ll be hitting the Writhing Haunt\'s cauldron.  It is almost due east of Andorhal, relatively close to the ruined city walls; again, eliminate the cauldron lord present there for its key.  Use this bottle to obtain the sample from the cauldron.$B$BGood hunting, $N!",
+    ["O"] = "Go to the Writhing Haunt in Western Plaguelands to locate and defeat the Cauldron Lord present there, and use its key to gain access to the cauldron.  You must have the Empty Writhing Haunt Bottle with you to secure a sample of the poisons used inside the cauldron.",
+    ["T"] = "Target: Writhing Haunt",
+  },
+  [5223] = {
+    ["D"] = "You delicately top off the empty bottle; a sample of the foul substance that churns under the platform of the cauldron now oozes back and forth inside the fragile glass container.$B$BWith the poison in hand, it is time to return to High Priestess MacDonnell at Chillwind Camp to complete the mission.",
+    ["O"] = "Bring the Filled Writhing Haunt Bottle to High Priestess MacDonnell at Chillwind Camp, Western Plaguelands.",
+    ["T"] = "Return to Chillwind Camp",
   },
   [5224] = {
     ["D"] = "",
@@ -9079,6 +10967,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "The last cauldron that remains is located on a farm now called Gahrron\'s Withering.  It is guarded by some of the Scourge\'s tougher minions - specifically, wraiths and ghosts.  They are not to be trifled with, $N.$B$BGahrron\'s Withering is due northeast of our position here, close to where the Eastern Plaguelands begin; again, eliminate the cauldron lord present there for its key.  Here is your empty sample bottle; bring it to me filled.  May the Light protect you in this dangerous mission, $c.",
     ["O"] = "Go to Gahrron\'s Withering in Western Plaguelands to locate and defeat the Cauldron Lord present there, and use its key to gain access to the cauldron.  You must have the Empty Gahrron\'s Withering Bottle with you to secure a sample of the poisons used inside the cauldron.",
     ["T"] = "Target: Gahrron\'s Withering",
+  },
+  [5226] = {
+    ["D"] = "You carefully close the spigot in the control panel, watching the cauldron\'s putrid ichors drip into the empty bottle.$B$BWith the poison in hand, it is time to return to High Priestess MacDonnell at Chillwind Camp to complete the mission.",
+    ["O"] = "Bring the Filled Gahrron\'s Withering Bottle to High Priestess MacDonnell at Chillwind Camp, Western Plaguelands.",
+    ["T"] = "Return to Chillwind Camp",
   },
   [5227] = {
     ["D"] = "",
@@ -9130,25 +11023,30 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring the Filled Gahrron\'s Withering Bottle to Shadow Priestess Vandis at the Bulwark, Western Plaguelands.",
     ["T"] = "Return to the Bulwark",
   },
-  [5237] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "임무 완료!",
-  },
-  [5238] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "임무 완료!",
-  },
   [5241] = {
     ["D"] = "Sometimes, when it\'s nighttime, I can hear my Uncle Carlin crying.  It sounds like he\'s far away, to the east.$B$BI hope he\'s not crying for me!  $N, will you find my uncle and tell him I\'m alright?$B$BIf you find him say I\'m waiting for him, and I want to hear the story he used to tell... the one about the rabbits and the berry jam!  That story\'s so funny!",
     ["O"] = "Find Carlin Redpath.",
     ["T"] = "카를린 삼촌",
   },
+  [5242] = {
+    ["D"] = "Unfortunately, I see the only way to stop this threat to Felwood is a frontal attack. There are no other ways into Shadow Hold, and I have no means to teleport you inside. The straight path down to the bottom is the only way... and I also know who you should seek out. His name is Fel\'dan... Shadow Lord Fel\'dan. He is the mortal in power down below... he is the head of the serpent. Kill him and his two succubus servants and return to me. Fel\'dan is the one making pacts with the Legion. He must be stopped.",
+    ["O"] = "Kill Moora and Salia, and bring Shadow Lord Fel\'dan\'s Head to Greta Mosshoof in Felwood.",
+    ["T"] = "A Final Blow",
+  },
   [5243] = {
     ["D"] = "난 내가 언데드로 살아난 걸 단지 질병으로 생각한다네. 치료하면 낫는 질병 같은 것으로 생각하지만 이것은 은빛 여명회에 있어서도 커다란 축복이라고 할 수 있네. 스컬지의 이방인들을 처단할 수 있는 더 나은 수단이 있을 거라 생각하나?$B$B동지들은 내 희생을 보고 나를 경외하고 있지만, 내게 영예 따윈 아무 의미가 없네.$B$B은빛 여명회를 돕고 싶다면 내 일거리를 주도록 하지. 스트라솔름으로 가서 보급품 상자를 찾아 남은 성수를 가져다주게나.",
     ["O"] = "북쪽에 있는 스트라솔름으로 가서 도시 어딘가에 흩어진 보급품 상자를 찾아 스트라솔름 성수 5병을 가져가야 합니다. 성수를 충분히 모으고 나면 존경받는 리어니드 바돌로매에게 가야 합니다.",
     ["T"] = "성스러운 집",
+  },
+  [5244] = {
+    ["D"] = "The story behind Kel\'Theril is one of a cursed race, bound to the place where they attempted an unfortunate ritual...$B$BThe highborne that you will find there once stole a sacred artifact, believing that they could siphon its power for themselves, becoming even more powerful. In their efforts, the relic shattered in a huge explosion, driving the pieces below the ice of the lake...$B$BSpeak with Jaron Stoneshaper if you\'d like to learn more; he has recently visited the area and can tell you more.",
+    ["O"] = "Speak with Jaron Stoneshaper in Starfall Village.",
+    ["T"] = "켈테릴의 폐허",
+  },
+  [5245] = {
+    ["D"] = "The highborne spirits are miserable creatures, that\'s for sure. They are still searching for pieces of the very thing that has cursed them to Kel\'Theril forever -- the stolen relic.$B$BIf you are that interested, take my pick and go south to the lake, see if you can gather the pieces of it from within the ice.$B$BNow, I can\'t tell you a thing about what you find, but I do know of someone who might... Aurora Skycaller; she dwells near the Northpass Tower in the northern part of Eastern Plaguelands.",
+    ["O"] = "Use Jaron\'s Pick to find the four Highborne Relic Fragments. Bring them to Aurora Skycaller in Eastern Plaguelands.",
+    ["T"] = "켈테릴의 고통받는 영혼",
   },
   [5246] = {
     ["D"] = "선조를 돕기 위해 오신 분인 줄 몰랐습니다. 제가 말이 지나쳤군요.$B$B선조의 잘못에 엮이고 싶지는 않지만 그대의 요청에 진정 거짓이 없다면 도와드리겠습니다.$B$B<유물 조각을 조사해보는 아우로라>$B$B이건 진말로의 수정인 것 같군요. 여기에 강력한 신비의 힘을 담아서 쓸 수 있어요. 선한 일에 사용하면 괜찮지만 이걸 훔친 자들은 사악한 의도로 쓰려고 했기 때문에 깨져버린 거예요.$B$B아즈샤라에 있는 진말로의 신전으로 가보세요. 그 책이 아직 그곳에 있었으면 좋겠군요.",
@@ -9185,6 +11083,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak with Wynd Nightchaser in Starfall Village, and ask about the proper place for the Crystal of Zin-Malor.",
     ["T"] = "한 맺힌 명가의 원혼",
   },
+  [5253] = {
+    ["D"] = "Quite impressive, $N.$B$BThe crystal of Zin-Malor can never be returned to the temple which, as you know, lies in ruin. But I believe that your effort to undo the evil of the past should not go unrewarded.$B$BSeek out Arch Druid Fandral Staghelm in Darnassus, and bring the crystal to him, $N. It should be in the hands of those that will not abuse its power. From the looks of it, only a handful of the strongest magic users would be able to control such a power. ",
+    ["O"] = "Deliver the Crystal of Zin-Malor to Arch Druid Fandral Staghelm in Darnassus.",
+    ["T"] = "The Crystal of Zin-Malor",
+  },
   [5261] = {
     ["D"] = "Eagan Peltskinner is looking for someone to hunt wolves for him.  That\'s good news, because we\'re seeing a lot more wolves in Northshire Valley lately.$B$BIf you\'re interested then speak with Eagan.  He\'s around the side of the abbey, to the left.",
     ["O"] = "Speak with Eagan Peltskinner.",
@@ -9218,6 +11121,16 @@ pfDB["quests"]["koKR-tbc"] = {
   [5283] = {
     ["D"] = "So ye made the smart decision.$B$BThere ain\'t no love lost betwixt me an old Ironus here. That good for nothing toy maker knows who the true craftsmen round here be.$B$BThe truly great wars are won with a good defense. When it be go time, no offense is gonna be helping ye out.$B$BRight, so let\'s get to work. All ye need to do is show me that ye\'ve got some raw talent. After that, I\'ll yank whatever impurities be left in ye and mold ye into an armorsmith. Ye do know how to make ornate mithril, don\'t ye?",
     ["O"] = "To become an Armorsmith, you must make the following items and return them to Grumnus: 4 Ornate Mithril Helms, 2 Ornate Mithril Boots, 1 Ornate Mithril Breastplate.",
+    ["T"] = "The Art of the Armorsmith",
+  },
+  [5284] = {
+    ["D"] = "As a weaponsmith you\'ll find that more often than not, heroes and adventurers will be coming to you for gear. While the workload can be unbearable at times, the riches more than make up for the back strain and ash lung.$B$BOh yes, $N, weaponsmiths are the ones with all the gold!$B$BIf you wish to join our ranks, you\'ll need to show me that you can make me a silver or two - I mean, show me that you\'ve got what it takes to be the go to $g guy:girl; when people need superior quality weapons. Get to work!",
+    ["O"] = "To become a Weaponsmith, you must make the following items and return them to Ironus: 4 Moonsteel Broadswords, 4 Massive Iron Axes, 2 Heavy Mithril Axes, and 2 Big Black Maces.",
+    ["T"] = "The Way of the Weaponsmith",
+  },
+  [5301] = {
+    ["D"] = "Satisfaction. It is what I draw from the hammer and the anvil. To see a proud Horde warrior protected under my steel reminds me of what it is to be alive. It is an addiction that I dare never give up, $N.$B$BI can not grant you this satisfaction, merely set you upon the path. As with all of life\'s endeavors, the path of the armorsmith is a journey.$B$BIf you wish to be one of the select few, you need only to ask and I shall train, but, a task you must first complete.",
+    ["O"] = "To become an armorsmith, you must make the following items and return them to Okothos: 4 Ornate Mithril Helms, 2 Ornate Mithril Boots, 1 Ornate Mithril Breastplate.",
     ["T"] = "The Art of the Armorsmith",
   },
   [5302] = {
@@ -9290,10 +11203,30 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Return to the Scholomance with the Blood of Innocents. Find the porch and place the Blood of Innocents in the brazier. Kirtonos will come to feast upon your soul.$B$BFight valiantly, do not give an inch! Destroy Kirtonos and return to Eva Sarkhoff.",
     ["T"] = "사자 키르토노스",
   },
+  [5385] = {
+    ["D"] = "You pick up the sack carefully and prepare to make your way back to Jessir Moonbow on the border of Felwood and Ashenvale. Hopefully the paladin will be given the proper respects once you\'ve passed his remains on to his friends.",
+    ["O"] = "Return the Remains of Trey Lightforge to Jessir Moonbow in Felwood.",
+    ["T"] = "The Remains of Trey Lightforge",
+  },
   [5386] = {
     ["D"] = "이곳 침묵의 초소에 있으면 생선 요리 냄새가 정말 그립답니다. 그늘수렵 마을의 트롤들이 고기를 낚는 데는 최고지요... 그런데 안타깝게도 켄타우로스들이 여기 저기 활동하고 있어 트롤 마을로 여행할 시간이 거의 없습니다. 흠...$B$B제 부탁 좀 들어주십시오. 그늘수렵 마을의 지나르질렌이라는 어부에게서 제가 좋아하는 붉은복어를 가져다주십시오. 여기서 남쪽 길을 따라가면 트롤 마을 서쪽에 도착할 수 있을 겁니다.",
     ["O"] = "그늘수렵 마을에 있는 지나르질렌과 대화한 후 나타카 롱혼에게 붉은복어 2마리를 가져가야 합니다.",
     ["T"] = "낚시하는 날",
+  },
+  [5402] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Minion\'s Scourgestones",
+  },
+  [5403] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Invader\'s Scourgestones",
+  },
+  [5404] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Corruptor\'s Scourgestones",
   },
   [5406] = {
     ["D"] = "",
@@ -9360,6 +11293,27 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "초보연금술사 홀랜드에게 죽음풀 10개를 모아서 가져가야 합니다.",
     ["T"] = "죽음풀",
   },
+  [5502] = {
+    ["D"] = "You have been so very kind to me, $N.  I never dreamed that I\'d have so much fun during Children\'s Week.  Thank you.  I won\'t be sad about what\'s happened to me - my parents always told me to rise above anything bad that happens.  I\'ll be a hero... just like you.$B$BI\'m sad to say this, but it\'s time for me to go home.  Let\'s go back and I\'ll tell the matron what an awesome person you are!",
+    ["O"] = "Return your ward to the Orgrimmar orphanage by handing in the Orcish Orphan Whistle to Orphan Matron Battlewail in the Valley of Honor.",
+    ["T"] = "A Warden of the Horde",
+  },
+  [5504] = {
+    ["D"] = "Your service to the Argent Dawn is to be commended, $N.  You are truly revered amongst us.  I have been authorized to make available for you to purchase one of the Dawn\'s most valued items - our magic resistance mantles.$B$BApplication of a mantle to your existing shoulder piece will enhance your resistance to the powers of magic in one of five potential ways.  As a sign of continued dedication to our cause, I ask for no less than ten of our valor tokens in exchange for access to these mantles.",
+    ["O"] = "Bring 10 Argent Dawn Valor Tokens to Quartermaster Hasana at the Bulwark, Western Plaguelands.",
+    ["T"] = "Mantles of the Dawn",
+  },
+  [5505] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Key to Scholomance",
+  },
+  [5506] = "_",
+  [5507] = {
+    ["D"] = "Your service to the Argent Dawn is to be commended, $N.  You are truly revered amongst us.  I have been authorized to make available for you to purchase one of the Dawn\'s most valued items - our magic resistance mantles.$B$BApplication of a mantle to your existing shoulder piece will enhance your resistance to the powers of magic in one of five potential ways.  As a sign of continued dedication to our cause, I ask for no less than ten of our valor tokens in exchange for access to these mantles.",
+    ["O"] = "Bring 10 Argent Dawn Valor Tokens to Quartermaster Lightspark at Chillwind Camp, Western Plaguelands.",
+    ["T"] = "Mantles of the Dawn",
+  },
   [5508] = {
     ["D"] = "",
     ["O"] = "",
@@ -9375,6 +11329,12 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "Minion\'s Scourgestones",
   },
+  [5511] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Key to Scholomance",
+  },
+  [5512] = "_",
   [5513] = {
     ["D"] = "Your service to the Argent Dawn is to be commended, $N.  You are truly revered amongst us.  I have been authorized to make available for you to purchase one of the Dawn\'s most valued items - our magic resistance mantles.$B$BApplication of a mantle to your existing shoulder piece will enhance your resistance to the powers of magic in one of five potential ways.  As a sign of continued dedication to our cause, I ask for no less than ten of our valor tokens in exchange for access to these mantles.",
     ["O"] = "Bring 10 Argent Dawn Valor Tokens to Quartermaster Breechlock at Light\'s Hope Chapel, Eastern Plaguelands.",
@@ -9390,6 +11350,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Locate Jandice Barov in the Scholomance and destroy her. From her corpse recover Krastinov\'s Bag of Horrors. Return the bag to Eva Sarkhoff.",
     ["T"] = "소름끼치는 크라스티노브의 가방",
   },
+  [5516] = "_",
   [5517] = {
     ["D"] = "$G Brother : Sister; $N - your deeds on behalf of the Argent Dawn are far too numerous to be recounted easily.  As a fitting tribute, I\'ll part with one of our special Chromatic Mantles of the Dawn - a version that protects the wearer from all forms of resistible magic simultaneously.  Chromatic Mantles of the Dawn are reserved for only the mightiest of the Dawn\'s heroes!$B$BBring to me twenty-five valor tokens as a sign of tribute, and I\'ll give you the finest of all our mantles.",
     ["O"] = "Bring 25 Argent Dawn Valor Tokens to Quartermaster Breechlock at Light\'s Hope Chapel, Eastern Plaguelands.",
@@ -9400,16 +11361,18 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "룬무늬 두루마리 4개, 튼튼한 가죽 8장, 룬 실타래 2개, 그리고 오우거 타닌을 노트 팀블잭에게 가져가야 합니다. 노트 팀블잭은 혈투의 전장에 있는 고르독 은신처 구석에 족쇄에 묶여 있습니다.",
     ["T"] = "고르독 오우거 위장복",
   },
-  [5519] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "고르독 오우거 위장복",
-  },
+  [5520] = "_",
   [5521] = {
     ["D"] = "$G Brother : Sister; $N - your deeds on behalf of the Argent Dawn are far too numerous to be recounted easily.  As a fitting tribute, I\'ll part with one of our special Chromatic Mantles of the Dawn - a version that protects the wearer from all forms of resistible magic simultaneously.  Chromatic Mantles of the Dawn are reserved for only the mightiest of the Dawn\'s heroes!$B$BBring to me twenty-five valor tokens as a sign of tribute, and I\'ll give you the finest of all our mantles.",
     ["O"] = "Bring 25 Argent Dawn Valor Tokens to Quartermaster Lightspark at Chillwind Camp, Western Plaguelands.",
     ["T"] = "여명의 오색 장막",
   },
+  [5522] = {
+    ["D"] = "I received a message from my master, Vectus.  Well, the message wasn\'t really from Vectus...it was from someone named Leonid Barthalomew.  I don\'t know Leonid, but he knew my master, and no one knows my master unless he allows it.$B$BLeonid says Vectus wants the dragon eggs.  He wants you to deliver them to him at the Light\'s Hope Chapel in the Eastern Plaguelands.$B$BThat hurts!  Why you?  Doesn\'t Vectus trust me?  Oh, never mind... just take the eggs and tell Leonid that I did what our master commanded.",
+    ["O"] = "Bring the Frozen Eggs to Leonid Barthalomew in the Eastern Plaguelands.",
+    ["T"] = "Leonid Barthalomew",
+  },
+  [5523] = "_",
   [5524] = {
     ["D"] = "$G Brother : Sister; $N - your deeds on behalf of the Argent Dawn are far too numerous to be recounted easily.  As a fitting tribute, I\'ll part with one of our special Chromatic Mantles of the Dawn - a version that protects the wearer from all forms of resistible magic simultaneously.  Chromatic Mantles of the Dawn are reserved for only the mightiest of the Dawn\'s heroes!$B$BBring to me twenty-five valor tokens as a sign of tribute, and I\'ll give you the finest of all our mantles.",
     ["O"] = "Bring 25 Argent Dawn Valor Tokens to Quartermaster Hasana at the Bulwark, Western Plaguelands.",
@@ -9430,6 +11393,13 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "역병 걸린 작은 새끼용 20마리를 처치한 후 희망의 빛 예배당에 있는 베티나 비글징크에게 가야 합니다.",
     ["T"] = "역병 걸린 작은 새끼용",
   },
+  [5530] = "_",
+  [5531] = {
+    ["D"] = "The eggs you brought were to be used in Scourge experiments to create a plagued dragonflight.  These frozen black dragon eggs would have been invaluable in their studies, and would have assuredly quickened their timetable.$B$BNow, it is time we ended their research.$B$BTake the frozen eggs to Betina Bigglezink outside.  She is well-learned in science and alchemy, and has produced a weapon we can use against the Scourge.  With your help, we will deal them a heavy blow.",
+    ["O"] = "Bring the Frozen Eggs to Betina Bigglezink.",
+    ["T"] = "Betina Bigglezink",
+  },
+  [5532] = "_",
   [5533] = {
     ["D"] = "On the island of Caer Darrow lies Scholomance - a wretched center of Scourge necromancy and evil.  Our enemy dwells within, conducting unspeakable acts of depravity on unwitting victims... at least, we surmise as much.  A door bars the way, and try as we might no entry is to be had without a proper key.$B$BAlchemist Arbington is well versed on Scholomance, and has an idea how to obtain a key.  You have proved your worth to me, and now I entrust this task to you.  Speak with him on this matter.",
     ["O"] = "Speak with Alchemist Arbington at Chillwind Point, Western Plaguelands.",
@@ -9495,6 +11465,21 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "다로우골에 있는 파멜라 레드패스를 찾아야 합니다.",
     ["T"] = "여동생 파멜라",
   },
+  [5621] = {
+    ["D"] = "I need your help, $N. I am needed here to train the other students, but you, you can help one of our injured Sentinels just south of Dolanaar. She was hurt patrolling the town and could use our aid. Her name is Shaya.$B$BWhen you find her, heal her wounds, and then fortify her body with your spells. This will at least protect her from harm longer if she finds trouble. Return to me here after you\'ve done your duty to Elune.",
+    ["O"] = "Find Sentinel Shaya and heal her wounds using Lesser Heal (Rank 2). Afterwards, grant her Power Word: Fortitude and then return to Laurna Morninglight in Dolanaar.",
+    ["T"] = "Garments of the Moon",
+  },
+  [5622] = {
+    ["D"] = "$N, you must travel to Dolanaar when your business here in Shadowglen is done. There, you will find Laurna Morninglight. She will instruct you further in the ways of Elune, and it is with her that you will earn your first garments denoting your station as a $gpriest:priestess; of Elune.$B$BTake care, and may you be protected in your journeys.",
+    ["O"] = "Speak to Laurna Morninglight in Teldrassil.",
+    ["T"] = "In Favor of Elune",
+  },
+  [5623] = {
+    ["D"] = "Hello again, young $gpriest:priestess;. The time has come for you to learn more about our religion. After you\'ve completed whatever tasks you have here in Northshire, please seek out Priestess Josetta in Goldshire. She has more to teach you and has heard that you are growing strong in the ways of the Light. She looks forward to tutoring you more.",
+    ["O"] = "Speak to Priestess Josetta in Elwynn Forest.",
+    ["T"] = "In Favor of the Light",
+  },
   [5624] = {
     ["D"] = "보통 전 새로운 빛의 추종자들을 첫 로브를 입을 자격이 있는지 확인해 보기 위해 작은 과제를 낸답니다. 로브는 대성당에서 그 $G사제:여사제;를 인정하고 후원한다는 것을 외부에 나타내는 표시지요.$B$B하지만 이번 시험은 기존 상황과 좀 다릅니다. 황금골의 시민들 중 하나가 여기서 동쪽에 있는 호수 근처에서 부상당한 경비병을 봤다고 해요. 이름은 로버츠라고 하는데, 그를 찾아서 치유를 한 다음, 몸을 강화시켜 주고 이곳으로 돌아오도록 하세요. 그렇게 하면 당신이 시험을 마친 것으로 간주하도록 하겠습니다.",
     ["O"] = "Find Guard Roberts and heal his wounds using Lesser Heal (Rank 2). Afterwards, grant him Power Word: Fortitude and then return to Priestess Josetta in Goldshire.",
@@ -9504,6 +11489,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "It\'s usually about this time that one of your power is tested to see if they\'re worthy of wearing robes denoting their place in the church. But to be honest, I got more pressing matters to look into. Citizen of Kharanos\' just came in here and told me \'bout a hurt mountaineer just outside town to the south--name\'s Dolf.$B$BYou heal Dolf and give him Fortitude, and I\'ll consider you done with proving yourself. How\'s that sound?",
     ["O"] = "Find Mountaineer Dolf and heal his wounds using Lesser Heal (Rank 2). Afterwards, grant him Power Word: Fortitude and then return to Maxan Anvol in Kharanos.",
     ["T"] = "성스러운 빛의 로브",
+  },
+  [5626] = {
+    ["D"] = "Hey! $N! Got a minute?!$B$BYa been following the Light now for long enough that you find your way to Maxan Anvol in Kharanos. He\'ll teach ya more about the path yer following, and if you prove worthy, give ya yer first set of robes to denote your station as a $gpriest:priestess;.$B$BNow get goin\'! As soon as yer done here, head through the tunnel--he\'ll be waitin\' for ya.",
+    ["O"] = "Speak to Maxan Anvol in Dun Morogh.",
+    ["T"] = "In Favor of the Light",
   },
   [5627] = {
     ["D"] = "",
@@ -9576,15 +11566,45 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "OLD A Lack of Fear",
   },
+  [5642] = {
+    ["D"] = "Something important is up in Orgrimmar, $N.$B$BThe normal messengers that come through here looking for troll priests usually are very casual. This time, they seemed to be in much more a hurry. Don\'t dally too long in Thunder Bluff. I\'d return to the Valley of Spirits as soon as possible.",
+    ["O"] = "Speak to Ur\'kyo in Orgrimmar.",
+    ["T"] = "Shadowguard",
+  },
+  [5643] = {
+    ["D"] = "Like many of our own priests, your own tribe puts you through rites of passage. These rites often teach priests special abilities that are vital to their survival. I sense that time is upon you even as we speak. You must return to the Valley of Spirits in Orgrimmar and speak to Ur\'kyo. What he teaches you might be very important for the future.",
+    ["O"] = "Speak to Ur\'kyo in Orgrimmar.",
+    ["T"] = "Shadowguard",
+  },
+  [5644] = {
+    ["D"] = "Ah, a wonderful day for you, $N. I can see by the lessons you\'ve learned that the time has come to send you back to Aelthalyste. There are things only she can teach you, and even then, only if you prove worthy.$B$BI will not spoil the surprise for you, but I remember when I was a young priest learning about true power... divine power. Yes, those were the days.$B$BGo back to Aelthalyste in the Undercity, $N. She will be awaiting you in the War Quarter.",
+    ["O"] = "Speak to Aelthalyste in the Undercity.",
+    ["T"] = "Devouring Plague",
+  },
   [5645] = {
     ["D"] = "$N, your High Priest Rohan would have an audience with you in Ironforge. Make haste, my strong friend, your next test quickly approaches. Although I wish I could bear witness to your race\'s own special rites, my place is here. But may the Light go with you in your travels. Rohan should still be in the Mystic Ward once you reach the city. He will be waiting.",
     ["O"] = "Speak to High Priest Rohan in Ironforge.",
     ["T"] = "OLD A Lack of Fear",
   },
+  [5646] = {
+    ["D"] = "Aelthalyste show our people great respect by sending them back to me for more training, and now I do the same for her tribe.$B$BYou return to the Undercity, $N. There, in the War Quarter, she be ready to teach you more \'bout your people and their ways. Go there, and do not wait long.",
+    ["O"] = "Speak to Aelthalyste in the Undercity.",
+    ["T"] = "Devouring Plague",
+  },
   [5647] = {
     ["D"] = "Your race is so very strong, $N. We are proud to call you allies. And as each day\'s sun sets, you and your kin grow closer to not only finding your true origins, but find great confidence that you are on the right path in so many things. That feeling must make you feel so triumphant.$B$BWord came from Ironforge just recently. It asked that you return there and speak to High Priest Rohan in the Mystic Ward. I would not keep him waiting. May Elune guide your travels.",
     ["O"] = "Speak to High Priest Rohan in Ironforge.",
     ["T"] = "OLD A Lack of Fear",
+  },
+  [5648] = {
+    ["D"] = "You be ready for your first test, $N. South of Razor Hill, just outta town, one of our grunts be hurt fightin\' off some o\' Proudmoore\'s old troops. She not doin\' too well, an\' she benefit much if one of our kind could help her. Find her--her name be Kor\'ja--heal her wounds, an\' give her the blessin\' of our ancestors.$B$BYou do this, an\' me thinks that be sufficient proof that you ready to move on in our ways.",
+    ["O"] = "Find Grunt Kor\'ja and heal her wounds using Lesser Heal (Rank 2). Afterwards, grant her Power Word: Fortitude and then return to Tai\'jin at Razor Hill.",
+    ["T"] = "Garments of Spirituality",
+  },
+  [5649] = {
+    ["D"] = "Aye, mon. Our kind have joined the Horde because they be good for us. They loyal, and they teach us much \'bout tings like honor. But our old ways die hard. The orcs may not approve of all our traditions, but that not mean we can\'t continue to practice some them in secret.$B$BYou know this, an\' that\'s why I send you to Tai\'jin in Razor Hill. She teach you more \'bout our history. She teach you the ways of our tribe. Go to her when you be ready.",
+    ["O"] = "Speak to Tai\'jin in Durotar.",
+    ["T"] = "In Favor of Spirituality",
   },
   [5650] = {
     ["D"] = "Our power comes from darkness and shadow, $N, but that is not your only role. You have acknowledged that there is merit in knowing the healing arts. This is wise. But before you can know the dark, you must also know the light. And for this, I have a test for you.$B$BNorth of the cemetery is a wounded Deathguard--Deathguard Kel. He has protected us from gnolls for some time, and needs healing. But, you must also fortify his body before he can return to duty. Do both with your spells, and then return to me.",
@@ -9601,12 +11621,52 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak to Ur\'kyo in Orgrimmar.",
     ["T"] = "Hex of Weakness",
   },
+  [5654] = {
+    ["D"] = "It be time for you to meet with Ur\'kyo, $N. He be in the Valley of Spirits in the orc city. Go there and speak to him. It is time you learn more of the old ways of our kind. It time you be brought into the circle and made a true priest of our tribe.",
+    ["O"] = "Speak to Ur\'kyo in Orgrimmar.",
+    ["T"] = "Hex of Weakness",
+  },
+  [5655] = {
+    ["D"] = "I sent here to make sure that you not wander too far from home, $N. They send me to make sure you return home because Ur\'kyo, greatest of our priests, wish to speak to you. You go there. You go to the Valley of Spirits in the orc city and you speak to Ur\'kyo. He wait for you now.",
+    ["O"] = "Speak to Ur\'kyo in Orgrimmar.",
+    ["T"] = "Hex of Weakness",
+  },
+  [5656] = {
+    ["D"] = "It always warms my undying heart to see priests from all cultures wander the world. To know that power exists that is not arcane and well within our grasp. That\'s why it is my honor to direct you home, $N.$B$BUr\'kyo, your great priest in Orgrimmar, has asked for your presence. You can find him in the Valley of Spirits.",
+    ["O"] = "Speak to Ur\'kyo in Orgrimmar.",
+    ["T"] = "Hex of Weakness",
+  },
+  [5657] = {
+    ["D"] = "Home. Return home, young $r.$B$BYour spiritual leader Ur\'kyo begs you to return to him and speak about the path you travel.$B$BGo to the Valley of Spirits in the great Horde city of Orgrimmar. You will find him there.",
+    ["O"] = "Speak to Ur\'kyo in Orgrimmar.",
+    ["T"] = "Hex of Weakness",
+  },
   [5658] = {
     ["D"] = "You be far from home, $C. You be needed there, back in your city under the ground. Your mistress, the one you be callin\' Aelthalyste be needin\' you back there. Like my tribe, there things you must learn only from her. Don\'t be stayin\' here too long. You should be headin\' to the War Quarter as fast as a zeppelin can carry you.",
     ["O"] = "Speak to Aelthalyste in the Undercity.",
     ["T"] = "Touch of Weakness",
   },
   [5659] = "_",
+  [5660] = {
+    ["D"] = "You be far from home, $c. You be needed there, back in your city under the ground. Your mistress, the one you be callin\' Aelthalyste be needin\' you back there. Like my tribe, there things you must learn only from her. Don\'t be stayin\' here too long. You should be headin\' to the War Quarter as fast as a zeppelin can carry you.",
+    ["O"] = "Speak to Aelthalyste in the Undercity.",
+    ["T"] = "Touch of Weakness",
+  },
+  [5661] = {
+    ["D"] = "You be far from home out here in the Bloodhoof Village, $N. I be sent here to find priests of my own tribe to send back to speak to our leaders, but that not mean I cannot help you too.$B$BI hear word that your head priestess spirit want all Forsaken to come to her--there are things you must learn.$B$BGo to meet Aelthalyste in the War Quarter in that city of yours.",
+    ["O"] = "Speak to Aelthalyste in the Undercity.",
+    ["T"] = "Touch of Weakness",
+  },
+  [5662] = {
+    ["D"] = "My respect to you and your kind, $N. I normally teach only those of my own tribe. Your lessons come from Aelthalyste in the city once called Lordaeron.$B$BYou should return to her if you\'re to learn those abilities that set you apart from other faiths.$B$BGo to the War Quarter in the Undercity and find your mistress there.",
+    ["O"] = "Speak to Aelthalyste in the Undercity.",
+    ["T"] = "Touch of Weakness",
+  },
+  [5663] = {
+    ["D"] = "Aelthalyste sent word out to all her priests. We\'re to direct the younger of our order to the Undercity for more training. If you truly count yourself among our faithful, then you should return there also.$B$BYou can find Aelthalyste in the War Quarter deep in the Undercity.",
+    ["O"] = "Speak to Aelthalyste in the Undercity.",
+    ["T"] = "Touch of Weakness",
+  },
   [5672] = {
     ["D"] = "A wonderful day has come, $N. You\'ve reached the age in which our <priests or priestesses> are trained in abilities only Night elves know. But it is not for me to train you. You must return to the Temple of the Moon and speak to Priestess Alathea as soon as your business here is concluded. She will test you to ensure you\'re prepared, and only then will she teach you Elune\'s Grace.",
     ["O"] = "Speak to Priestess Alathea in Darnassus.",
@@ -9668,6 +11728,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "오그리마에 있는 성난불길 협곡을 찾아 성난불길 트로그 8마리와 성난불길 주술사 8마리를 처치하고 썬더 블러프에 있는 라하우로에게 가야 합니다.",
     ["T"] = "성난불길 협곡의 트로그",
   },
+  [5724] = {
+    ["D"] = "You find a satchel under the body of the tauren. It is still gripped tightly in his arms as though he was trying to protect it while being attacked by the troggs.$B$BRemoving the satchel from his vice-like grip, you stow it with your own equipment and prepare to make your way out of the tunnels and back to Rahauro in Thunder Bluff.",
+    ["O"] = "Take the Grimtotem Satchel to Rahauro in Thunder Bluff.",
+    ["T"] = "Returning the Lost Satchel",
+  },
   [5726] = {
     ["D"] = "우리 중 배신자가 있다는 건 절대 참을 수 없다... 하지만, 내가 직접 나서서 성급하게 실력을 행사하는 일은 현명하지 못해... 이 땅의 타락을 막기는커녕 오히려 악화시키고 말 것이다.$B$B하지만, 그대와 같이 혈기왕성한 모험가라면 나의 부관들이 갈 수 없는 곳까지 들어가서 진실을 밝혀내고 사나운 악마를 물리칠 수 있을 것이다.$B$B용기가 있다면 오그리마 동쪽의 해골 바위굴로 가서 불타는 칼날단 부관의 휘장을 찾아오라.",
     ["O"] = "오그리마에 있는 스랄에게 부관의 휘장을 가져가야 합니다.",
@@ -9726,6 +11791,11 @@ pfDB["quests"]["koKR-tbc"] = {
   [5801] = {
     ["D"] = "You need two bars of thorium and a powerfully hot heat source to forge the key stem.  You\'re on your own for the thorium, but I can help with the heat.$B$BTo our west in Un\'Goro Crater is Fire Plume Ridge - a simmering volcano.  The lava lake up top is hot enough to fuse thorium and bone together.  Your gold has bought you a mold that simply requires you to dip it in the lake up top; the lava will take care of the rest.$B$BThat\'s it on my end.  To finish your key, you\'ll need to talk to Arbington again.",
     ["O"] = "Take the Skeleton Key Mold and 2 Thorium Bars to the top of Fire Plume Ridge in Un\'Goro Crater.  Use the Skeleton Key Mold by the lava lake to forge the Unfinished Skeleton Key.$B$BBring the Unfinished Skeleton Key to Alchemist Arbington at Chillwind Point, Western Plaguelands.",
+    ["T"] = "Fire Plume Forged",
+  },
+  [5802] = {
+    ["D"] = "You need two bars of thorium and a powerfully hot heat source to forge the key stem.  You\'re on your own for the thorium, but I can help with the heat.$B$BTo our west in Un\'Goro Crater is Fire Plume Ridge - a simmering volcano.  The lava lake up top is hot enough to fuse thorium and bone together.  Your gold has bought you a mold that simply requires you to dip it in the lake up top; the lava will take care of the rest.$B$BThat\'s it on my end.  To finish your key, you\'ll need to talk to Dithers again.",
+    ["O"] = "Take the Skeleton Key Mold and 2 Thorium Bars to the top of Fire Plume Ridge in Un\'Goro Crater.  Use the Skeleton Key Mold by the lava lake to forge the Unfinished Skeleton Key.$B$BBring the Unfinished Skeleton Key to Apothecary Dithers at the Bulwark, Western Plaguelands.",
     ["T"] = "Fire Plume Forged",
   },
   [5803] = {
@@ -9788,6 +11858,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Travel to Stratholme, in the northern part of the Plaguelands. It is in the Scarlet Bastion that you will find the painting \'Of Love and Family,\' hidden behind another painting depicting the twin moons of our world.$B$BReturn the painting to Tirion Fordring.",
     ["T"] = "가족과 사랑",
   },
+  [5861] = {
+    ["D"] = "$N, you have done all that I have asked thus far. Only one step remains in your quest of redemption.$B$BYou must deliver the items you have collected to Taelan. Unfortunately, Taelan and his Scarlet Crusaders will attack you on sight.$B$BThere is only one way in which to deliver my message and that is through a guise of deception.$B$BTo the south you will find Uther\'s tomb. An old and trusted confidant of mine, Myranda, now resides there - seek her out. Show her the items and she will assist you.",
+    ["O"] = "Travel to Uther\'s Tomb, located in the southern Plaguelands. Show Myranda the Hag Tirion\'s Gift.",
+    ["T"] = "Find Myranda",
+  },
   [5862] = {
     ["D"] = "I am what you would call, an illusionist. Though I may be able to create an illusion to allow you entry into Hearthglen, be warned; my powers have their limitations.$B$BShould you travel too far from these lands, the effects of the illusion will cease. The spell itself takes a great amount of concentration and power from me, and thus, I can only sustain the effect for a short time.$B$BSpeak to me again when you are ready.",
     ["O"] = "Speak to Myranda to gain the Scarlet Illusion. Travel to Hearthglen while under the Scarlet Illusion and deliver Tirion\'s Gift to Highlord Taelan Fordring.$B$BHearthglen is to the north, Taelan should be inside of Mardenholde Keep.",
@@ -9802,6 +11877,56 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "위대한 호드의 군대는 아주 훌륭하게 유지되고 있네. 대전쟁 이후 우리는 다시 이곳 칼림도어에서 번영의 시기를 만들어 가고 있지.$B$B자네에게 부탁 하나 하겠네. 불모의 땅 남부에 있는 구름 승강장에서 경비 임무를 담당하고 있는 그리쉬 롱러너라는 친구가 있네. 그에게 이 통지서를 좀 갖다주게. 통지서의 내용은 그가 가족을 만날 수 있도록 그의 임무를 대신할 예비 전사를 보내겠다는 것일세. 휴가를 요청한 게 꽤 오래전이니 이 소식을 들으면 무척 기뻐할 거야.",
     ["O"] = "마그그랜이 불모의 땅 구름 승강장에 있는 그리쉬 롱러너에게 통지서를 전해달라고 했습니다.",
     ["T"] = "휴가 통지서",
+  },
+  [5882] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Hunting",
+  },
+  [5883] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Mining",
+  },
+  [5884] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Gathering",
+  },
+  [5885] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Skinning",
+  },
+  [5886] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Disenchanting",
+  },
+  [5887] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Hunting",
+  },
+  [5888] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Mining",
+  },
+  [5889] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Gathering",
+  },
+  [5890] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Skinning",
+  },
+  [5891] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Salve via Disenchanting",
   },
   [5892] = {
     ["D"] = "우리는 싸움이 시작되기 전, 던 발다르에서 쓸 보급품을 깊은무쇠 광산에 비축해 두었소. 광산 경비를 설 만큼 병력에 여유가 있을 때는 광산에 트로그들이 출현해도 별문제가 되지 않았지만, 지금은 호드와 싸우고 있다 보니 깊은무쇠 광산을 계속 관리할 수가 없소이다.$B$B깊은무쇠 광산에 있는 보급품이 필요하오. 광산에 들어가 보급품을 내게 가져다주시오.",
@@ -9858,6 +11983,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak with Mathrengyl Bearwalker in the Cenarion Enclave, Darnassus.",
     ["T"] = "Heeding the Call",
   },
+  [5926] = {
+    ["D"] = "Excuse me, friend...$B$BIt has come to my attention that Turak Runetotem has put out word that he wishes to speak with you.  It seems that your training as a druid is about to take on a new life, and he will be training you personally.  Turak is one of the Arch Druid\'s assistants; he is known as a wise and patient druid, and he should teach you well.$B$BHe is located in Thunder Bluff, inside the Cenarion Circle\'s main tent on the Elder Rise.",
+    ["O"] = "Speak with Turak Runetotem on the Elder Rise of Thunder Bluff.",
+    ["T"] = "Heeding the Call",
+  },
+  [5927] = {
+    ["D"] = "Excuse me, friend...$B$BIt has come to my attention that Turak Runetotem has put out word that he wishes to speak with you.  It seems that your training as a druid is about to take on a new life, and he will be training you personally.  Turak is one of the Arch Druid\'s assistants; he is known as a wise and patient druid, and he should teach you well.$B$BHe is located in Thunder Bluff, inside the Cenarion Circle\'s main tent on the Elder Rise.",
+    ["O"] = "Speak with Turak Runetotem on the Elder Rise of Thunder Bluff.",
+    ["T"] = "Heeding the Call",
+  },
   [5928] = {
     ["D"] = "Excuse me, friend...$B$BIt has come to my attention that Turak Runetotem has put out word that he wishes to speak with you.  It seems that your training as a druid is about to take on a new life, and he will be training you personally.  Turak is one of the Arch Druid\'s assistants; he is known as a wise and patient druid, and he should teach you well.$B$BHe is located in Thunder Bluff, inside the Cenarion Circle\'s main tent on the Elder Rise.",
     ["O"] = "Speak with Turak Runetotem on the Elder Rise of Thunder Bluff.",
@@ -9873,10 +12008,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Seek out the Great Bear Spirit in northwestern Moonglade and learn what it has to share with you about the nature of the bear.  When finished, return to Dendrite Starblaze in Nighthaven, Moonglade.",
     ["T"] = "거대한 곰의 혼",
   },
+  [5931] = {
+    ["D"] = "The time has come for us to part ways, young one, as the application of your lessons takes you back to whom that sent you to me.  Mathrengyl Bearwalker walks truly in balance with nature, even as he dwells precariously close to where the balance has faltered.  Listen to his instructions, and you will soon complete your first lessons into your role as a protector of balance.$B$BGo now, young one.  We shall meet again.",
+    ["O"] = "Return to Darnassus and speak with Mathrengyl Bearwalker in the Cenarion Enclave.",
+    ["T"] = "Back to Darnassus",
+  },
   [5932] = {
     ["D"] = "The time has come for us to part ways, young one, as the application of your lessons takes you back to whom that sent you to me.  Though the tauren are thought to be young in the ways of Cenarius, Turak Runetotem walks with much balance in the presence of nature.  Listen to his instructions, and you will soon complete your first lessons into your role as a protector of balance.$B$BGo now, young one.  We shall meet again.",
     ["O"] = "Return to Thunder Bluff and speak with Turak Runetotem on the Elder Rise.",
     ["T"] = "Back to Thunder Bluff",
+  },
+  [5941] = {
+    ["D"] = "You have gathered many relics of the battle of Darrowshire.  Each time you returned with more, my heart yearned for my village... yearned to protect it from its fate.$B$BI know that cannot be, but Chromie, that strange gnome in Andorhal, tells me it is possible.  She says you can save Darrowshire!$B$BShe asked me to gather together the relics, and to have you bring them to her.  She said that she awaits you in the ruined inn of Andorhal.",
+    ["O"] = "Take the Bundle of Relics to Chromie in Andorhal.",
+    ["T"] = "Return to Chromie",
   },
   [5942] = {
     ["D"] = "아빠가 $N 님께 이 열쇠를 드리랬어요. 아빠 말씀으로는 집 뒤쪽에 있는 상자를 여는 열쇠래요.$B$B아, 그리고 고맙다는 말도 전해 드리래요. 아빠 부탁을 들어주셨어요? 제 인형을 찾아주셨다고 아빠한테 얘기하셨나요?$B$B아참, 열쇠 여기 있어요. 그리고 정말 정말 고맙습니다. $N 님은 정말 좋은 분이세요!",
@@ -9887,6 +12032,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "당신은 꽤 실력 있는 $R인 거 같군요. 혹시 돈 좀 벌어 볼 생각 없나요? 코르크와 나는 돈을 많이 벌려고 이 짐마차 일을 시작했는데, 돈 한 푼 벌기가 이렇게 위험할 줄은 정말 몰랐어요!$B$B저기 앞에 만노로크 소굴이 있어요. 보통 때라면 악마들이 우릴 그냥 무시하는데, 이번에는 뭔가가 코도들을 놀라게 했나 봐요. 만노로크 소굴을 무사히 지나갈 수 있도록 호위를 해 주시면 사례를 하도록 하죠. 무사히 지나간 후에 스크래블스크류의 야영지에 있는 우리 동업자, 스미드에게서 보상을 받도록 하세요.",
     ["O"] = "만노로크 소굴을 지나가는 기젤톤 대상단을 호위하고 스크래블스크류의 야영지에 있는 스미드와 대화하여 보상을 받아야 합니다.",
     ["T"] = "기젤톤 대상단",
+  },
+  [5944] = {
+    ["D"] = "For so long, I have been a puppet of the Grand Crusader. What reason was there to fight against what the Scarlet Crusade had become? It has been decades, yet the memories of my father; those precious memories, they are what have kept me alive.$B$BI have dreams, stranger. In these dreams my father is with me. He stands proudly at my side as I am inducted into the Order. We battle legion of Scourge, side by side. We bring honor to the Alliance, to Lordaeron.$B$BI want not to dream anymore.$B$BTake me to him.",
+    ["O"] = "Escort Taelan Fordring out of Hearthglen.",
+    ["T"] = "In Dreams",
   },
   [5961] = {
     ["D"] = "우리의 목적을 달성하기 위한 전투에 임하게 되어 너무나 기쁘군. 우리 포세이큰의 규모와 힘은 나날이 커지고 있다. 그대의 용기를 시험할 준비는 되어 있겠지?$B$B지금은 블라이트콜러로 알려진 나타노스도 내 용사 중 하나였지. 그처럼 헌신적이고 활력있는 용사는 찾아보기 어렵지.$B$B나타노스는 매리스 농장에 살고 있는데 폐허를 돌아다니며 타락한 스컬지와 얼라이언스를 만나는 대로 처치하기도 하니 동부 역병지대에서 그를 찾도록 하라.",
@@ -9899,6 +12049,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["T"] = "광란의 거인",
   },
   [6000] = "_",
+  [6001] = {
+    ["D"] = "Directly east of Auberdine lay many moonkin caves.  The one closest to Auberdine has a Moonkin Stone inside it.  Lunaclaw, the defender of the stone, will face you only when Cenarion Moondust is applied to it.  Lunaclaw possesses within it a strength that you must use as one of the Claw.$B$BYou\'ve earned the right to use this Cenarion Moondust, $N... now show me that you\'ve earned the right to possess the strength of body and the strength of heart needed as a druid!",
+    ["O"] = "Use the Cenarion Moondust on the Moonkin Stone of Auberdine to bring forth Lunaclaw.  From there, you must face Lunaclaw and earn the strength of body and heart it possesses.$B$BSpeak with Mathrengyl Bearwalker in Darnassus when you are done.",
+    ["T"] = "Body and Heart",
+  },
   [6002] = {
     ["D"] = "On land west of Taurajo in the Barrens - just before it turns into Mulgore - lies a Moonkin Stone.  The moonkin are special beasts, not native to these parts.  Lunaclaw, the stone\'s defender, will face you when Cenarion Lunardust is applied to it.  Lunaclaw possesses within it a strength that you must use as one of the Claw.$B$BYou\'ve earned the right to use this Cenarion Lunardust, $N... now show me that you\'ve earned the right to possess the strength of body and the strength of heart needed as a druid!",
     ["O"] = "Use the Cenarion Lunardust on the Moonkin Stone between Mulgore and the Barrens to bring forth Lunaclaw.  From there, you must face Lunaclaw and earn the strength of body and heart it possesses.$B$BSpeak with Turak Runetotem in Thunder Bluff when you are done.",
@@ -9933,11 +12088,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "내 자네를 믿고 뱀의 보석을 맡기겠네. 이곳에서 북서쪽 작은 섬인 라나즈자르 섬에 있는 뱀 석상의 손에 이 보석을 올려놓게. 그러면 고대의 책을 수호하는 자가 나타날 것일세. 그 책에는 수백 년 동안 지켜져 온 나가의 비밀이 담겨 있지. 그 책을 내게 가져오면 비늘로 뒤덮인 우리 적들에 대해 많은 것을 알게 될 것이야!",
     ["O"] = "고대의 책을 입수한 다음 에텔 레소르의 탑에 있는 아조레 알다모트에게 가져가야 합니다.",
     ["T"] = "고대의 책",
-  },
-  [6028] = {
-    ["D"] = "그다지 중요하지는 않은 일은 아니지만 책임지고 날 도와줄 자를 찾고 있소. 난 은빛 여명회를 대표하여 이곳에서 눈망루 마을에 투자를 하고 있소. 지금 그 보고서를 은빛장교 퓨어하트에게 보내야 하오. 서부 역병지대 남쪽 변방에 있는 서리바람 야영지로 가면 만날 수 있지...$B$B아, 내가 조금만 더 용감했더라도... 그래, 어쩌면 당신에게는 좋은 기회라고 할 수 있지! 우리 상관의 눈에도 띄고 일거리도 좀 얻을 수 있을 거요!",
-    ["O"] = "서부 역병지대, 서리바람 야영지에 있는 은빛장교 퓨어하트에게 눈망루 마을 보고서를 전달해야 합니다.",
-    ["T"] = "눈망루 마을 보고서",
   },
   [6031] = {
     ["D"] = "나무구렁에서 사는 우리는 낯선 자들을 별로 좋아하지 않소. 그게 유리하니까. 하지만 거래에는 도움이 안 되더군.$B$B얼마 전 어느 나이트 엘프 친구가 나무구렁에 찾아왔었는데 룬무늬 망토를 걸치고 있었소. 룬무늬 옷감도 희귀한데 망토는 어찌나 멋지던지... 그걸 보고 내 동족들이 룬무늬 옷을 만들어 달라고 했소.$B$B룬무늬 옷감을 갖다주시겠소? 충분히 가져오시면 뭔가를 드리리다.",
@@ -10079,6 +12229,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Use the Taming Rod to tame a Swoop. Practice your skills, then return the Taming Rod to Yaw Sharpmane in Bloodhoof Village.",
     ["T"] = "야수 길들이기",
   },
+  [6089] = {
+    ["D"] = "You now have the power to tame a pet, but you must also gain the skills to train it.$B$BTravel to Thunder Bluff. There you must speak to one of our most revered hunters, Holt Thunderhorn. If he deems you worthy, he will give you the ability to train your new pet.$B$BHolt has bested the most powerful and feared beasts of Azeroth, and commands many strong creatures of his own. His ties to the Earthmother are strong, and you can learn much from him. Good luck, $N.",
+    ["O"] = "Speak with Holt Thunderhorn on Hunter Rise in Thunder Bluff.",
+    ["T"] = "Training the Beast",
+  },
   [6101] = {
     ["D"] = "The variance of nature is something that can be relied upon, $N. It is predictable in the way that it never remains the same; it is always changing.$B$BThe tasks I give to you will help you to see and appreciate the vast differences of the creatures you may choose as your companion.$B$BTake this taming rod and use it to tame a nightsaber stalker, found to the south. Practice your skills as a hunter. Then you will begin to understand the similarities and differences of nature.",
     ["O"] = "Use the Taming Rod to tame a Nightsaber Stalker. Practice your skills, then return the Taming Rod to Dazalar in Dolanaar.",
@@ -10089,15 +12244,50 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Use the Taming Rod to tame a Strigid Screecher. Practice your skills, then return the Taming Rod to Dazalar in Dolanaar.",
     ["T"] = "야수 길들이기",
   },
-  [6121] = {
-    ["D"] = "이제 자네는 우리 드루이드들이 가진 독약과 능력에 대해 배울 준비가 되었네. 세나리우스는 우리에게 단순한 주문으로 가장 사악한 독도 정화할 수 있는 능력을 주셨다네. 이 선물은 쉽게 받을 수 없으며 배우기 위해 노력해야 하네. 그러면 비전문가인 자네도 독을 치유할 수 있어.$B$B달숲으로 가서 자네를 가르치기 위해 기다리고 있는 덴드리트 스타블레이즈와 대화해 보게.",
-    ["O"] = "달숲으로 가서 밤의 안식처 마을에 있는 덴드리트 스타블레이즈와 대화해야 합니다.",
-    ["T"] = "새로운 가르침",
+  [6103] = {
+    ["D"] = "You now have the power to tame a pet, but you must also gain the skills to train it.$B$BTravel to Darnassus. There you must speak to one of our most revered hunters, Jocaste. She will give you the ability to train your new pet, so make haste.$B$BWhile Jocaste may seem stern, she is always pleased to see another hunter rising through the ranks. Treat her with respect and she will return in kind. Good luck, $N.",
+    ["O"] = "Speak to Jocaste in the Cenarion Enclave, in Darnassus.",
+    ["T"] = "Training the Beast",
   },
-  [6126] = {
-    ["D"] = "이제 자네는 우리 드루이드들이 가진 독약과 능력에 대해 배울 준비가 되었네. 세나리우스는 우리에게 단순한 주문으로 가장 사악한 독도 정화할 수 있는 능력을 주셨다네. 이 선물은 쉽게 받을 수 없으며 배우기 위해 노력해야 하네. 그러면 비전문가인 자네도 독을 치유할 수 있어.$B$B달숲으로 가서 자네를 가르치기 위해 기다리고 있는 덴드리트 스타블레이즈와 대화해 보게.",
-    ["O"] = "달숲으로 가서 밤의 안식처 마을에 있는 덴드리트 스타블레이즈와 대화해야 합니다.",
-    ["T"] = "새로운 가르침",
+  [6122] = {
+    ["D"] = "The Cliffspring Falls in Darkshore serves as the principal source of drinking water for the region, and now I suspect it is the principal source of the poison that is harming the local fauna - deer specifically.  Use this sampler to draw some water from the mouth of the cave; be careful, as dangerous naga now reside in a cave by the falls.$B$BOnce filled, deliver it to Alanndarian Nightsong in Auberdine.  She is the one that requested our aid, and you will work with her to address this malady.",
+    ["O"] = "Use the Empty Cliffspring Falls Sampler to draw a sample of water from the mouth of the cave by the falls.$B$BDeliver the Filled Cliffspring Falls Sampler to Alanndarian Nightsong in Auberdine, Darkshore.",
+    ["T"] = "The Principal Source",
+  },
+  [6123] = {
+    ["D"] = "The water will serve as the base of the curative salve I\'ll make for the deer.  For curative properties, I need some earthroot.  Herbalists know how to find it, so if we\'re unlucky and you aren\'t one then you\'ll need to find one to help us out.$B$BFinally for potency, I need some lunar fungus.  Finding lunar fungal blooms is easy enough; they\'re all over the place in caves just to the east of here.  Moonkin reside in the caves and they\'re irritable as of late, so be careful.",
+    ["O"] = "Bring 5 Earthroot and 12 Lunar Funguses to Alanndarian Nightsong in Auberdine so she may make a curative salve.",
+    ["T"] = "Gathering the Cure",
+  },
+  [6124] = {
+    ["D"] = "The amount of salve made out of the reagents you brought me is good enough for ten doses, $N.  While I work with the village to try and make some more salve, I\'d like for you to help us get a head start.  All around Darkshore are sickly deer; use the salve on them and cure their malaise.$B$BDendrite Starblaze in Moonglade will want to talk to you when you\'re done, I\'m sure.  Please extend Auberdine\'s thanks to the Cenarion Circle there... and let me say thanks to you directly for the help you\'ve given!",
+    ["O"] = "Use the Curative Animal Salve on 10 Sickly Deer that are located throughout Darkshore; doing so should cure them.  Sickly Deer have been reported starting south of the Cliffspring River to the north of Auberdine and extending all the way into southern Darkshore where the edge of Ashenvale begins.",
+    ["T"] = "Curing the Sick",
+  },
+  [6125] = {
+    ["D"] = "You\'ve learned what it means to cure poison without the benefit of spiritual aid.  Remember what others must endure in fighting poisonous afflictions as you soon embrace your newfound power over poison.$B$BYou should now return to Mathrengyl Bearwalker in Darnassus, $N.  He, no doubt, has a very important spell to teach you now that the student understands the lesson given unto $g him : her;.$B$BFarewell, young druid.  We shall speak again.",
+    ["O"] = "Return to Mathrengyl Bearwalker in the Cenarion Enclave, Darnassus.",
+    ["T"] = "Power over Poison",
+  },
+  [6127] = {
+    ["D"] = "Dreadmist Peak to the northwest of the Crossroads is most likely a primary candidate as to the source of the spread of the poison.  Its airy peaks have pools of water that influence the weather patterns.  I suspect the water is now tainted by the demon-worshipping Burning Blade.$B$BUse this sampler to draw water from the pool at the very top of the peak.  Once filled, deliver it to Tonga Runetotem at the Crossroads.  He is the one that requested our aid, and you will work with him to address this malady.",
+    ["O"] = "Use the Empty Dreadmist Peak Sampler to draw a sample of water from a pool at the top of the peak.$B$BDeliver the Filled Dreadmist Peak Sampler to Tonga Runetotem at the Crossroads, Barrens.",
+    ["T"] = "The Principal Source",
+  },
+  [6128] = {
+    ["D"] = "The water will serve as the base of the curative salve I shall make for the gazelles.  For curative properties, I need some earthroot.  Herbalists know how to find it, so if you are not familiar with this skill you\'ll need to find one to help us out.$B$BFinally for potency, I need kodo horns - mere chips and fragments will not suffice.  Kodos you can handle wander the northern part of the Barrens; bring some down for the greater good of the balance $N, and fetch the horns for me.",
+    ["O"] = "Bring 5 Earthroot and 5 Kodo Horns to Tonga Runetotem at the Crossroads so he may make a curative salve.",
+    ["T"] = "Gathering the Cure",
+  },
+  [6129] = {
+    ["D"] = "I was able to make enough salve for ten doses of curing, $N.  While I work with local authorities to try and make some more salve, I\'d like for you to help us get a head start.  All around the northern Barrens are sickly gazelles; use the salve on them and cure their malaise.$B$BDendrite Starblaze in Moonglade will want to talk to you when you\'re done, I\'m sure.  Please extend our thanks to the Cenarion Circle there... and let me say thanks to you directly for the help you\'ve given!",
+    ["O"] = "Use the Curative Animal Salve on 10 Sickly Gazelles that are located throughout the northern part of the Barrens; doing so should cure them.  Sickly Gazelles have been reported north of the east-west road that runs through the Crossroads.",
+    ["T"] = "Curing the Sick",
+  },
+  [6130] = {
+    ["D"] = "You\'ve learned what it means to cure poison without the benefit of spiritual aid.  Remember what others must endure in fighting poisonous afflictions as you soon embrace your newfound power over poison.$B$BYou should now return to Turak Runetotem in Thunder Bluff, $N.  He, no doubt, has a very important spell to teach you now that the student understands the lesson given unto $g him : her;.$B$BFarewell, young druid.  We shall speak again.",
+    ["O"] = "Return to Turak Runetotem on the Elder Rise, Thunder Bluff.",
+    ["T"] = "Power over Poison",
   },
   [6131] = {
     ["D"] = "나무구렁 일족은 유일하게 타락을 피해간 펄볼그 부족이오. 하지만 많은 이들이 적인지 친구인지 알아보려 하지도 않고, 펄볼그다 싶으면 맹목적으로 죽이고 있소. 상황이 이러하니 우리 나무구렁 일족은 남을 잘 믿지 않게 되었소.$B$B당신이 우리의 친구임을 증명하고 싶다면, 먼저 악령숲에서 타락한 마른가지 일족을 몰아내 주시오. 그러면 언젠가 당신을 우리 동료로 인정하겠소. 먼저 서쪽으로 가면 마른가지 전사, 길잡이, 정원사를 찾을 수 있을 거요.",
@@ -10119,6 +12309,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 8 Ghost-o-plasms and the Crate of Ghost Magnets to Hornizz Brimbuzzle in Desolace.",
     ["T"] = "유령의 플라스마 모으기",
   },
+  [6135] = {
+    ["D"] = "Up until now, you have completed the missions I have assigned; even if not in the most timely manner.$B$BI suppose you think that you are ready for a challenge. Yes... Yes, imbecile, perhaps you are ready for a more involved set of missions.$B$BThe albino demon bat, Duskwing, roams the countryside just north of here. Track him down and destroy him. Return to me with a patch of his white fur and you shall be rewarded.",
+    ["O"] = "Find Duskwing and slay him. From the corpse, recover a Patch of Duskwing\'s Fur and return it to Nathanos Blightcaller.$B$BIt is said that Duskwing roams the countryside to the north of Marris Stead.",
+    ["T"] = "Duskwing, Oh How I Hate Thee...",
+  },
   [6136] = {
     ["D"] = "Past the Argent Dawn encampment of Light\'s Hope and west of Northdale, you will find the corpulent maggot beast, Borelgore.$b$bI\'ve lost entire regiments to that monster. His size knows no bounds! The more he eats the greater his girth becomes...$B$BWhile I would not suffer any emotional harm should the beast devour you, I would prefer that you were the victor. Borelgore has been known to devour others who tried to hunt him.",
     ["O"] = "Find Borelgore in the northern wastes of Eastern Plaguelands and destroy him. Return to Nathanos Blightcaller when the mission is complete.",
@@ -10139,10 +12334,45 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Slay 7 Slitherblade Myrmidon, 7 Slitherblade Naga, and 5 Slitherblade Sorceresses, and then talk to Drulzegar at Shadowprey in Desolace.",
     ["T"] = "나가 퇴치",
   },
+  [6144] = {
+    ["D"] = "The order has come down, $c. Varimathras himself has requested that I send my most \'capable\' agents back to the Undercity for a highly sensitive tactical operation.$B$BUnfortunately, my most capable agents were killed over three years ago. In their stead I have a collection of brain dead riff-raff.$B$B<Nathanos stares coldly at you.>$B$BTravel to the Undercity at once and report to Varimathras. Do not embarrass me, $c!",
+    ["O"] = "Travel to the Undercity and speak with Varimathras.",
+    ["T"] = "The Call to Command",
+  },
+  [6145] = {
+    ["D"] = "Just as the body cannot survive without the head, the head cannot survive without the body. The defenses of the Scarlet Crusade\'s command inside Stratholme are almost impenetrable. We must, instead, cut the body out from under the head.$B$BMy Deathstalkers have been collecting data on the activity of the Crusade outside of Stratholme. Each day, a report is sent from their central command to Tyr\'s Hand. This report is the key, $r! Find the Crimson Courier and recover that report. Return it to Nathanos.",
+    ["O"] = "Return to Eastern Plaguelands and track down the Crimson Courier. Kill the Courier and recover the Grand Crusader\'s Command.$B$BTake the command to Nathanos Blightcaller for further instruction.",
+    ["T"] = "The Crimson Courier",
+  },
+  [6146] = {
+    ["D"] = "I have made some adjustments to this command. Should our little ruse work, they will expose the Scarlet Oracle and we shall strike!$B$BNow pay attention, $c. You are to deliver this command to the Crusader Lord, Valdelmar.$B$BHow? You are going to hand it to him, imbecile.$B$BTake the command and this rotten apple to Tyr\'s Hand. When you cross into the city, eat the apple. You will transform into something more... palatable to the humans. Take the command and hand it to the Crusader Lord, Valdelmar.",
+    ["O"] = "Travel to Tyr\'s Hand, southeast of the Marris Stead. Once there, take a bite of the Rotten Apple. While under the guise of the Scarlet Crusade, deliver the Grand Crusader\'s Command to Crusader Lord Valdelmar.",
+    ["T"] = "Nathanos\' Ruse",
+  },
+  [6147] = {
+    ["D"] = "The Grand Crusader makes an unusual request. Hrm, regardless... what he asks will be done. Return to the Scarlet Bastion and notify him that the Oracle will be en route shortly.$B$BWe will take every precaution to ensure that she makes it to Stratholme unharmed.",
+    ["O"] = "Return to Nathanos Blightcaller with the new information.",
+    ["T"] = "Return to Nathanos",
+  },
+  [6148] = {
+    ["D"] = "Demetria is chief advisor to the Grand Crusader. She is called the Oracle due to her \'otherworldly\' senses. She has successfully assisted the Crusade in several of their victories against the Scourge.$B$BWhile this ruse was successful in exposing her, if she truly does possess psychic powers, she will undoubtedly be expecting some sort of trouble. You are going to provide that \'trouble.\'$B$BTrack down the Oracle and terminate her. They should be moving out of Tyr\'s Hand as we speak. Make me proud, worm.",
+    ["O"] = "The Scarlet Crusade is on the move. Somewhere along the road from Tyr\'s Hand to Stratholme you will find the Oracle, Demetria, and her entourage. Hunt her down and slay her. Return to Nathanos Blightcaller should you succeed.",
+    ["T"] = "The Scarlet Oracle, Demetria",
+  },
   [6161] = {
     ["D"] = "랙모어의 기록에는 페더문 요새를 향해 항해하던 그의 배가 바다 생물들에게 공격을 받았던 당시의 상황이 적혀 있습니다. 그는 자신의 보물이 적의 손에 넘어가지 않도록 하기 위해 라나즈자르 섬에 그의 궤짝을 숨겨 놓았습니다.$B$B그 궤짝을 열려면 은색과 금색의 두 열쇠가 필요합니다. 이 두 열쇠를 잃어버렸지만 열쇠와 궤짝을 찾으면 보물을 손에 넣을 수 있습니다!",
     ["O"] = "랙모어의 은열쇠와 랙모어의 황금열쇠를 찾아 랙모어의 궤짝을 열어야 합니다.",
     ["T"] = "랙모어의 보물을 찾아라!",
+  },
+  [6162] = {
+    ["D"] = "My husband traveled Felwood for the honor of our clan, doing battle against the Shadow Council and other corrupt atrocities!$B$BAfter he escaped death numerous times, I received a letter from him saying that a druid asked him for help against a great befouled furbolg named Overlord Ror--the two were never heard from again.$B$BI want this Ror\'s clawed hand, $N. I want it to pay for leaving me a widow! I believe the creature is to the south... near the Ashenvale border.",
+    ["O"] = "Kill Overlord Ror and return his claw to Dreka\'Sur at Bloodvenom Post in Felwood.",
+    ["T"] = "남편의 마지막 전투",
+  },
+  [6163] = {
+    ["D"] = "I was overwhelmed. On this very stead, I stood... held my ground in defense of Lordaeron. The farm and all on it were waylaid by a gigantic wave of Scourge.$B$BThe wretch. The filth. It hovered above me, entrails hanging from its gaping chest cavity.$B$BI woke as Scourge. For so long I was helpless. My mind had coalesced with the Lich King\'s.$B$BShe came for me... somewhere, somehow, I knew she would. Free.$B$BAnd now, I must have my vengeance - my vengeance on that which took from me my life. Destroy it.",
+    ["O"] = "Travel to Stratholme and slay Ramstein the Gorger. Take his head as a souvenir for Nathanos.",
+    ["T"] = "Ramstein",
   },
   [6164] = {
     ["D"] = "이제 장사를 시작할 준비가 됐소! 당신은 뭐야?$B$B앗, 잠깐... 내 회계장부가 없이는 가게를 열 수가 없지. 회계장부가 없으면 기록을 남길 수가 없잖아.$B$B이런... 마을 어딘가에 두고 온 모양이야. 여관에 방을 빌려놨는데, 아무래도 거기 있는 것 같군.$B$B내 회계장부를 가져다주게. 제발 부탁이니 좀 가져다 달라고! 내 회계장부를 가져오면 알게 될 거야! 내가 가게를 차리면 가격이 완전히 미친 듯이 날뛰고 있다는 걸 알 수 있을 거란 말이야!",
@@ -10175,11 +12405,17 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "동부 역병지대에서 \"블라이트콜러\"와 실종된 SI:7 요원들에 대한 단서를 찾아야 합니다. SI:7 배지를 찾으면 서리바람 야영지에 있는 플린트 섀도모어에게 가져가야 합니다.",
     ["T"] = "동부 역병지대 정찰",
   },
+  [6186] = {
+    ["D"] = "<The blood appears to have completely drained from Flint\'s face.>$B$BNa... Nathanos did this? Nathanos is the Blightcaller?$B$BWhy? He was... was so noble - a ranger lord respected by all. The only human ever allowed to train under the high elves. Now a ruthless agent of the Forsaken?$B$BI... I am sorry to ask this of you, $N, but Highlord Fordragon must be informed of this turn of events at once. Please, return to Stormwind and deliver the news.",
+    ["O"] = "Return to Stormwind and inform Highlord Bolvar Fordragon of the fate of Nathanos Marris.",
+    ["T"] = "The Blightcaller Cometh",
+  },
   [6187] = {
     ["D"] = "이 세계에 순찰대장이 몇이나 되는지 아는가? 인간으로서 순찰대장 자리를 오른 사람이 몇이나 있었는지 아는가?$B$B나타노스는 전례 없이 훌륭한 업적을 이루었지. 십 년이나 계속된 전쟁 속에서 얼라이언스를 승리로 이끈 천재적인 전략가였어.$B$B하지만 지금은... 포세이큰의 투사가 되어버렸다니... 아니야. 이건 말도 안 돼. 질서를 회복해야 한다.$B$B군대를 소집하라. 군대를 이끌고 역병지대로 돌아가 이 블라이트콜러라는 자를 처치하도록 하라.$B$B행운을 빌겠도다. 이번 싸움에는 행운이 필요할 테니 말이야.",
     ["O"] = "군대를 동원해 동부 역병지대로 가서 나타노스 블라이트콜러 및 그를 보호하려는 호드와 전면전을 벌이십시오.$B$B호드는 죽을 힘을 다해 자신들의 순찰대장을 보호하려고 할 테니 정신을 바짝 차려야 합니다.",
     ["T"] = "질서 회복",
   },
+  [6201] = "_",
   [6221] = {
     ["D"] = "There is a camp of Deadwood furbolgs directly to our southwest.  Corruption permeates the camp, and I wish to put an end to it before they become a problem.$B$BThe Deadwood tribe is evil, but it is the effects of the fel that pollutes their minds.  Their hostility is not truly an innate quality, yet they cannot be helped.  For this reason, I am deeply saddened by having to fight my own brethren.$B$BPlease, $N, do what must be done, and do not mention the details; they upset me far too much.",
     ["O"] = "Nafien would like you to kill 5 Deadwood Den Watchers, 5 Deadwood Avengers, and 5 Deadwood Shamans.",
@@ -10194,11 +12430,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "$N, I gathered into this crate everything Lewis asked for.  Can you take it to him?$B$BIf you\'ve already spoken to Thor in Westfall, then you can take a gryphon back to him.  Dungar Longdrink is our gryphon master, over in the trade district.$B$BSpeak with Dungar, then get this crate to Lewis as fast as you can.  We don\'t want our fighting men and women in Westfall to go without fresh equipment!",
     ["O"] = "그리핀 조련사 덩가 롱드링크에게 오스릭의 상자를 가져가야 합니다.",
     ["T"] = "덩가 롱드링크",
-  },
-  [6281] = {
-    ["D"] = "요금을 조금만 내시면 그리핀을 타고 스톰윈드로 가서 루이스의 쪽지를 오스릭에게 전할 수 있습니다. 다른 방법으론 이렇게 빨리 못 가실 겁니다.$B$B괜찮다 싶으면 준비를 끝내신 후 저에게 다시 오시기 바랍니다. 그리 비싸지 않은데다가 그만한 값어치는 될 겁니다!",
-    ["O"] = "그리핀 조련사 토르에게 요금을 지급하고 그리핀을 탄 다음 루이스의 쪽지를 스톰윈드에 있는 오스릭 스트랑에게 가져가야 합니다. 오스릭은 스톰윈드의 구 시가지에 있는 품질보증 갑옷 상점에 있습니다.",
-    ["T"] = "스톰윈드로 이동",
   },
   [6282] = {
     ["D"] = "타우렌은 이 땅의 수호자 역할을 매우 자랑스러워하지. 그런 의미에서 자네는 내가 왜 돌발톱 산맥에 서식하는 하피의 숫자가 늘어나고 있는 것에 민감한지 이유를 알 수 있을 걸세.$B$B칼림도어에서 그 수가 점차 느는 하피 중 가장 많은 것은 혈폭풍 일족이지. 그들이 모든 생물들을 해치는 형편이라 죄 없는 생물들이 둥지에 숨어서 밖으로 나오지도 못할 지경이라네.$B$B자네가 이 골칫덩이들을 좀 처리해주지 않겠나?",
@@ -10215,45 +12446,95 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Kill Besseleth and bring Besseleth\'s Fang to Maggran at Sun Rock Retreat.",
     ["T"] = "거미의 공포",
   },
+  [6285] = {
+    ["D"] = "The gryphon master in Westfall is Thor.  If you\'ve spoken to him before, then you can take one of my gryphons to him.$B$BThat\'s a good lesson to know: gryphons are always trained to fly to their capital city, but they\'ll only take you to a remote gryphon master after you\'ve already been there.$B$BYou\'ve already been to Thor, so just speak with me again when you\'re ready to take a gryphon to Westfall.  Once there, you can deliver Osric\'s Crate to Quartermaster Lewis.",
+    ["O"] = "Buy a gryphon ride to Sentinel Hill from the gryphon master Dungar Longdrink, then take Osric\'s Crate to Lewis at Sentinel Hill.",
+    ["T"] = "Return to Lewis",
+  },
   [6301] = {
     ["D"] = "헛된 개발 야욕과 끊임없는 전쟁으로 돌발톱 산맥의 땅이 처참하게 파괴됐어요. 그 상처는 오직 대지모신의 축복만이 치유할 수 있답니다.$B$B$N, 특별한 씨앗을 찾아 주세요. 이곳 돌발톱 산맥에서만 구할 수 있는 가이아 씨앗이라고 하는 물건인데, 해바위 야영지 북쪽의 땅거미 호수로 가서 물가를 찾아보세요.$B$B그 씨앗들을 가져오면 주술의 힘을 부여해 바로 이 자리에서 싹을 틔우겠어요.",
     ["O"] = "해바위 야영지에 있는 탐라 윈드필드가 가이아 씨앗 10개를 모아다 달라고 했습니다.",
     ["T"] = "생태계의 순환",
+  },
+  [6321] = {
+    ["D"] = "Executor Hadrec asked me to take stock of our equipment at the Sepulcher.  With the Scourge, and worse, lurking in the woods, he doesn\'t want the Deathguards to lack gear they might need.$B$BI found that we are, in general, well stocked, but we do need more weapons to replace those lost in the field.$B$BHere is a requisition order of what is needed, for the weapon dealer Gordon Wendham in the Undercity.  Take the order to our bat master, Karos Razok, and speak with him about transport to the Undercity.",
+    ["O"] = "Bring Podrig\'s Order to Karos Razok.",
+    ["T"] = "브릴 물자 조달",
   },
   [6322] = {
     ["D"] = "I have placed the Sepulcher\'s supplies into this crate.  If you have already visited the Sepulcher and spoken with their bat master, then you may ride a bat back to him.$B$BSpeak with the Undercity\'s bat master, Michael Garrett.  He can provide you with a bat to the Sepulcher.",
     ["O"] = "고든의 상자를 마이클 가레트에게 가져가야 합니다.",
     ["T"] = "Michael Garrett",
   },
+  [6323] = {
+    ["D"] = "One of my bats can take you to the Undercity, for a small fee.  Speak with me again when you are ready so that we may arrange your transport.$B$BYou will find Gordon Wendham in the Trade Quarter of the Undercity.  That is the same quarter where my bat will land.",
+    ["O"] = "Buy a bat ride to the Undercity from the bat master Karos Razok, then take Podrig\'s Order to Gordon Wendham in the Undercity.",
+    ["T"] = "언더시티로 날아가기",
+  },
+  [6324] = {
+    ["D"] = "The bat master in the Sepulcher is Karos Razok.  If you have already met him, then I can give you a bat to fly back to him.$B$BOur bats will always fly to the Undercity, but to travel to more remote locales their rider must first visit the area and speak with its bat master.$B$BYou have met Karos in the Sepulcher, so you may now fly bats there.  Speak with me again when you are ready.",
+    ["O"] = "Buy a bat ride to the Sepulcher from the bat master Michael Garrett, then bring Gordon\'s Crate to Deathguard Podrig in the Sepulcher.",
+    ["T"] = "모리스에게 돌아가기",
+  },
+  [6341] = {
+    ["D"] = "The fishermen of Rut\'theran village do very well, for the fish here are extremely large and abundant.  I would like to compare the bounty here with that of the mainland.$B$BI have a collection of fish bones and scales that I would like taken to a colleague of mine in Darkshore.  His name is Laird, he is a fish vendor in the village of Auberdine.$B$BBring my collection to our hippogryph master, Vesprystus, and speak to him about traveling to Auberdine.",
+    ["O"] = "Bring Nessa\'s Collection to Vesprystus.",
+    ["T"] = "다르나서스로",
+  },
+  [6342] = {
+    ["D"] = "From Rut\'theran, there are two methods of travel to Auberdine: by ferry and by hippogryph.  Both are quick and reliable, but if you have not yet flown to Auberdine by hippogryph, then I suggest you do.$B$BIt is sound advice to speak with the hippogryph master in every town that has one.  Once you speak to the master, you can then fly there from other towns.$B$BHere is Nessa\'s collection.  Speak with me again when you are ready to fly to Auberdine and deliver Nessa\'s collection to Laird.",
+    ["O"] = "Ride a hippogryph to Auberdine from the hippogryph master Vesprystus, then bring Nessa\'s Collection to Laird.",
+    ["T"] = "깜짝 선물",
+  },
+  [6343] = {
+    ["D"] = "I must send a response to Nessa.  She\'ll be very interested to know how different the fish here are from those along Teldrassil\'s coastline.  We can only guess the cause, but it is my suspicion that the world tree itself is affecting the wildlife around it!$B$BPlease, take this response to Nessa.  If you wish to take a hippogryph back to Rut\'theran then speak with the hippogryph master Caylais Moonfeather.  If you wish to take the ferry, then one regularly departs from the dock to the northwest.",
+    ["O"] = "Bring Laird\'s Response to Nessa Shadowsong.",
+    ["T"] = "니오마에게 돌아가기",
+  },
   [6344] = {
     ["D"] = "A friend of mine, Nessa Shadowsong, is a fishing merchant in Rut\'theran Village.  She needs a parcel taken to Darkshore, and is looking for someone to help her.$B$BIf you\'re interested, then to reach Nessa you must take the portal in Darnassus to Rut\'theran Village.  You will find the portal west of the Temple Gardens.",
     ["O"] = "Speak with Nessa Shadowsong.",
     ["T"] = "네사 섀도송",
+  },
+  [6361] = {
+    ["D"] = "I have a bundle of hides from the animals of the Barrens, and must get them to Thunder Bluff.  A colleague there, Ahanu, will use the hides to create leather goods.$B$BWill you take the hides to him for me?$B$BThe quickest way to Thunder Bluff is on the back of a wind rider.  Bring the bundle of hides to Devrak, our wind rider master in the Crossroads, and speak to him about transport to Thunder Bluff.",
+    ["O"] = "Bring the Bundle of Hides to the wind rider master Devrak in the Crossroads.",
+    ["T"] = "가죽 묶음",
   },
   [6362] = {
     ["D"] = "저렴한 가격에 썬더 블러프로 가는 와이번을 태워 드리죠. 썬더 블러프로 가는 가장 빠른 방법입니다!$B$B가격이 괜찮다 싶으면 떠날 준비를 하고 다시 말씀하십시오.$B$B그리고 말입니다, 그 가죽 묶음을 아하누에게 가져가야 한다면 썬더 블러프 와이번 탑의 제일 아래층에 있는 헤와의 방어구점으로 가보십시오. 아하누는 아마 거기 있을 겁니다. 마침 와이번이 도착할 장소도 바로 거기고요!",
     ["O"] = "Buy a wind rider to Thunder Bluff from the wind rider master Devrak, then bring the Bundle of Hides to Ahanu in Thunder Bluff.",
     ["T"] = "썬더 블러프로 날아가기",
   },
-  [6363] = {
-    ["D"] = "I have prepared leather goods for Jahan to sell at the Crossroads.  Will you bring them to him?$B$BIf you have already been to the Crossroads and spoken to their wind rider master, then you can fly one of our Thunder Bluff wind riders back to him.$B$BTake the leather goods to Tal, our wind rider master in Thunder Bluff, and speak with him to arrange transport to the Crossroads.",
-    ["O"] = "아하누의 가죽용품을 썬더 블러프에 있는 탈에게 가져가야 합니다.",
-    ["T"] = "와이번 조련사 탈",
+  [6364] = {
+    ["D"] = "In order to fly to a town, you must have already been there and spoken with the wind rider master of that town.  You have been to the Crossroads and spoken to their wind rider master Devrak, so for a small fee you can take a wind rider to him from here.$B$BSpeak with me again when you are ready.  Once at the Crossroads, you can then deliver the leather goods to Jahan Hawkwing.",
+    ["O"] = "Buy a wind rider to the Crossroads from the wind rider master Tal, then bring Ahanu\'s Leather Goods to Jahan Hawkwing.",
+    ["T"] = "자안에게 돌아가기",
+  },
+  [6365] = {
+    ["D"] = "I have some choice cuts of meat that I want to send to a friend.  Her name is Gryshka, the innkeeper in Orgrimmar.  Will you deliver the meat for me?$B$BThe fastest way to Orgrimmar is on a wind rider.  Take the meats to the Crossroads wind rider master, Devrak, and speak with him about transport to Orgrimmar.",
+    ["O"] = "Bring Zargh\'s Meats to Devrak in the Crossroads.",
+    ["T"] = "오그리마로 고기 배달",
   },
   [6381] = {
     ["D"] = "$C|1이여;여;, 당신이 보신 것처럼 고통받는 이 땅에서도 생태계의 힘은 아주 강력하게 순환하며 생명을 틔울 수 있답니다. 이러한 생명의 순환을 돕기 위해 우리는 맡은 소임을 다해야 해요. 서쪽에 있는 파괴의 중심지, 잿더미 계곡에 이 씨앗들을 심어야만 합니다. 아직까지 상처를 받고 있는 그땅에는 하피와 성난 불의 정령들이 몰려 다니고 있을 테니 조심하세요.$B$B자, 제가 마법을 부여한 이 가이아 씨앗들을 가지고 가서 비옥한 가이아 흙더미에 심도록 하세요. 생명의 순환은 반드시 계속돼야만 해요!",
     ["O"] = "가이아 흙더미에 가이아 씨앗 10개를 심은 후, 마력 깃든 가이아 씨앗을 해바위 야영지에 있는 탐라에게 가져가야 합니다.",
     ["T"] = "새로운 생명",
   },
-  [6382] = {
-    ["D"] = "$C|1이여;여;, 그대의 강인함에 깊은 감동을 받았네. 사냥에 대한 열정을 보니 이제 더 큰 사냥감... 그러니까 더욱더 어려운 도전을 해도 되겠다는 확신이 드네.$B$B잿빛 골짜기의 숲에는 야생동물들이 방대하게 서식하고 있는데 호드에서는 정치적, 영적 목적으로 그들을 조종하려고 하지. 아직 이렇다 할 영웅이 배출되지 않은 곳에서 자신을 증명해 보이고 싶다면 토막나무 주둔지에 있는 세나니 썬더하트의 인도를 받게. 불모의 땅에서 나오는 길을 따라 똑바로 북쪽으로 가면 된다네.",
-    ["O"] = "잿빛 골짜기의 토막나무 주둔지에 있는 세나니 썬더하트와 대화해야 합니다.",
-    ["T"] = "잿빛 골짜기 사냥 대회",
+  [6384] = {
+    ["D"] = "For just a few coins I will have a wind rider bring you to Orgrimmar.  When you get there, you can take Zargh\'s Meats to Gryshka.  Her inn is in the Valley of Strength, not far from the Skytower, where my wind rider will drop you off.$B$BSpeak with me again when you are ready for the journey.",
+    ["O"] = "Buy a wind rider to Orgrimmar from the wind rider master Devrak, then bring Zargh\'s Meats to Gryshka in Orgrimmar.",
+    ["T"] = "오그리마로 날아가기",
   },
   [6385] = {
     ["D"] = "I\'ve written a letter of thanks to Zargh.  Will you deliver it for me?  If you\'ve already been to the Crossroads and spoken with their wind rider master, then you can fly a wind rider back there.$B$BTake my letter to Doras, the wind rider master of Orgrimmar, and speak with him about transport to the Crossroads.",
     ["O"] = "그리쉬카의 편지를 오그리마에 있는 도라스에게 가져가야 합니다.",
     ["T"] = "와이번 조련사 도라스",
+  },
+  [6386] = {
+    ["D"] = "My wind riders are trained to fly to many different places, as long as you have already been to that place and spoken with the wind rider master there.$B$BYou have been to the Crossroads and spoken to their wind rider master Devrak, so now you can fly directly to him from here.  Once you\'re at the Crossroads, you can deliver Gryshka\'s letter to Zargh.$B$BSpeak with me when you are ready to go.",
+    ["O"] = "Buy a wind rider to the Crossroads from the wind rider master Doras, then bring Gryshka\'s Letter to Zargh at the Crossroads.",
+    ["T"] = "칼바위 언덕으로 돌아가기",
   },
   [6387] = {
     ["D"] = "I see a lot of young dwarves at my door, eager to learn the trade of mining.  And if there\'s one thing a miner needs more than anything, it\'s a pick!$B$BI have a list of mining students who scored high in their lessons and earned an honorary pick.  Take my list to Golnir Bouldertoe in Ironforge.  He\'ll get the picks ready.$B$BThe fastest way to Ironforge is on a gryphon, so bring the list to our gryphon master, Thorgrum Borrelson, and speak with him about transport to Ironforge.",
@@ -10300,15 +12581,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "사무엘 핍스를 처치하고 그의 유골을 말라의 묘로 옮긴 다음 수련사제 엘레스에게 가야 합니다.",
     ["T"] = "말라의 마지막 소원",
   },
+  [6401] = {
+    ["D"] = "Tell Tammra Windfield, Kaya\'s aunt who\'s at Sun Rock Retreat, about the good news! Kaya is alive! We had thought she was lost after the brutal attack on our village. Follow the path to the west to get to Sun Rock Retreat.",
+    ["O"] = "Tell Tammra Windfield in Sun Rock Retreat the good news.",
+    ["T"] = "Kaya\'s Alive",
+  },
   [6402] = {
     ["D"] = "당신은 스톰윈드의 문에서 윈저를 만나야합니다. $B$B윈저가 공개하려고하는 것은 왕국의 기초를 뒤 흔들어 놓을 것입니다! $B$혼자서 벤처하려고하지 마십시오. $N. 당신은 군대를 모아야합니다! 당신의 동포들을 모으십시오. 팔에!",
     ["O"] = "Travel to Stormwind City and venture to the city gates. Speak with Squire Rowe so that he may let Marshal Windsor know that you have arrived.",
     ["T"] = "Stormwind Rendezvous",
   },
-  [6421] = {
-    ["D"] = "이곳 돌발톱 산맥에 뭔가 수상한 일이 벌어지고 있는 것 같아. 바람에 실려 전해져 오는 이 긴장을 자네도 느낄 수 있나?$B$B여기서 남동쪽으로 구릉바위 협곡에는 깊은 동굴이 하나 있네. 그곳에선 코볼트들이 리조나이트라는 희귀한 수정을 미친 듯이 캐고 있지. 그 표본이 좀 필요하네. 그리고, 동굴 깊숙한 곳까지 들어가서 뭐가 있는지 좀 조사해 주게.$B$B어서 떠나게. 난 이 산맥 깊은 곳에 어떤 악의 무리가 숨어 있는지 반드시 알아내야만 해.",
-    ["O"] = "구릉바위 협곡에 있는 동굴을 탐사한 다음 해바위 야영지에 있는 모르로갈에게 리조나이트 수정 10개를 가져가야 합니다.",
-    ["T"] = "구릉바위 협곡",
+  [6403] = {
+    ["D"] = "It has been quite the adventure, friend. I owe you a great debt of gratitude. Perhaps, when all is said and done...$B$BAs you have no doubt ascertained by now, Lady Prestor is Onyxia: Brood of Deathwing, twin to the tyrant of the Spire, Nefarian.$B$BFor too long she has held our kingdom in her captivating gaze. Even the Highlord is controlled by her trickery - a puppet. It all ends today... The spell will be broken.$B$BWorry not, for together, we shall be victorious!$B$BAre you ready?",
+    ["O"] = "Follow Reginald Windsor through Stormwind. Protect him from harm!",
+    ["T"] = "The Great Masquerade",
   },
   [6441] = {
     ["D"] = "안녕하세요! 전 잿빛 골짜기를 지나 톱니항으로 가던 길에 이곳 토막나무 주둔지에 잠깐 들렀지요. 돈벌이가 될 만한 걸 늘 찾아보는데, 요즘 톱니항에서는 사티로스 뿔의 수요가 아주 큰가 봐요.$B$B이 주변에서 물어봤더니 어둠의 터, 사티르나르, 그리고 사비안의 사티로스들이 제가 찾고 있는 뿔을 갖고 있는 것 같더군요. 전 그런 사티로스들의 상대로는 어림도 없지만... 당신은 해볼 만 할 것 같네요!$B$B제게 그 뿔을 모아주시면 후하게 사례를 하겠어요.",
@@ -10324,6 +12610,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "이곳 말라카진에 사는 우리 트롤은 대지의 축복으로 번성해 왔습니다. 돌발톱 산맥은 자원을 넉넉히 공급해주는 거대한 사냥터였고요.$B$B그런데 최근 들어 저녁 식사 때쯤이면 어김없이 초대도 받지 않은 손님들이 나타난답니다. 돌발톱 산맥의 거미들이 어둑어둑해질 때만 되면 우리가 사냥해 놓은 음식을 노리고 공격하지 뭐예요.$B$B이 불쾌한 놈들을 좀 없애주신다면 우리 말라카진 트롤들이 충분한 보답을 하겠습니다. 돌발톱 산맥 어디를 가나 그 징글징글한 거미들을 쉽게 찾을 수 있답니다. 여기서 북쪽으로 조금만 가면 제 말이 사실이라는 걸 확인할 수 있을 거예요.",
     ["O"] = "말라카진에 있는 젠질라가 동굴이끼 땅거미 10마리와 동굴이끼 독거미 7마리를 처치해 달라고 했습니다.",
     ["T"] = "식탐꾼들",
+  },
+  [6462] = {
+    ["D"] = "My kinfolk were traveling here with many sacred troll charms, but the Thistlefur furbolgs attacked and killed them before they reached Zoram\'gar!  Those vile Furbolgs!$B$BI miss my brothers and sisters who were killed, but we will meet again in the afterlife.  However, their troll charms hold great value in this world.  It is an outrage that the furbolgs have them!$B$B$N, you must retrieve the charms!  They are in chests in Thistlefur Hold, a cave at the end of Thistlefur Village, north of Astranaar.",
+    ["O"] = "Bring 8 Troll Charms to Mitsuwa at the Zoram\'gar Outpost.",
+    ["T"] = "트롤 부적",
   },
   [6481] = {
     ["D"] = "You have uncovered a dark threat to the land, $c. The Resonite cask you have found in that cave houses a slumbering Earthen by the name of Goggeroc.$B$BI have changed the mixture of the Resonite crystals that you gathered with my shamanistic powers. Take the enchanted Resonite crystal and smash open the Resonite cask, which houses the Earthen.$B$BWhen awakened, Goggeroc will be weakened... Slay him, $N!",
@@ -10366,11 +12657,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["T"] = "사악한 동맹",
   },
   [6541] = {
-    ["D"] = "자네, 북쪽에 있는 잿빛 골짜기에 가 본 적이 있나? 호드에서는 최근 그곳 조람 해안에 전초기지를 세웠지. 우린 늘 새로운 전선을 지킬 신병들이 필요하다네.$B$B관심이 있거든 불모의 땅 북부에 있는 카드라크를 찾아가보게. 감시탑에 있을 걸세. 그가 잿빛 골짜기 공격을 주도하고 있으니 자네에게 자세한 내용을 알려 줄 수도 있지.",
-    ["O"] = "불모의 땅의 북부 감시탑에 있는 카드라크에게 보고해야 합니다.",
-    ["T"] = "카드라크에게 보고",
-  },
-  [6542] = {
     ["D"] = "자네, 북쪽에 있는 잿빛 골짜기에 가 본 적이 있나? 호드에서는 최근 그곳 조람 해안에 전초기지를 세웠지. 우린 늘 새로운 전선을 지킬 신병들이 필요하다네.$B$B관심이 있거든 불모의 땅 북부에 있는 카드라크를 찾아가보게. 감시탑에 있을 걸세. 그가 잿빛 골짜기 공격을 주도하고 있으니 자네에게 자세한 내용을 알려 줄 수도 있지.",
     ["O"] = "불모의 땅의 북부 감시탑에 있는 카드라크에게 보고해야 합니다.",
     ["T"] = "카드라크에게 보고",
@@ -10425,6 +12711,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "잿빛 골짜기에 있는 제네우 생크리에게 축축한 쪽지를 가져가야 합니다.",
     ["T"] = "고대 신들에 대한 충성",
   },
+  [6565] = {
+    ["D"] = "This Twilight\'s Hammer follower cannot be allowed to complete his plan. The Twilight\'s Hammer do not understand the spirits of nature. They believe in the Old Gods--creatures of chaos and destruction that were long ago defeated. This Lorgus cannot be allowed to succeed. You must stop him, $N. I cannot do it myself--I am too weak.$B$BGo into Blackfathom Deeps, find him, and kill him. Return to me here at Zoram\'gar when it\'s done.",
+    ["O"] = "Kill Lorgus Jett in Blackfathom Deeps and then return to Je\'neu Sancrea in Ashenvale.",
+    ["T"] = "고대 신들에 대한 충성",
+  },
   [6566] = {
     ["D"] = "$N을 다시 만나서 반갑습니다. 바람은 동부 왕국 소식을 전해줍니다. $B$BSit, 들어 봐.",
     ["O"] = "Listen to Thrall.",
@@ -10460,6 +12751,26 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "전쟁노래 톱날",
   },
+  [6582] = {
+    ["D"] = "We are Deathwing\'s children, whelp. Our dominance over the lesser Aspects must be enforced.$B$BIf you are truly worthy of ascension, the lesser dragonflight will wilt in your presence.$B$BFind their champions and lay waste to them in the name of our Father!$B$BTravel to Winterspring and track down the mighty blue drake, Scryer. Crush him and any of the Blue Flight that stand in your path. Tear out his skull and return it to me.",
+    ["O"] = "You must find the blue dragonflight drake champion, Scryer, and slay him. Pry his skull from his corpse and return it to Emberstrife.$B$BYou know that Scryer can be found in Winterspring.",
+    ["T"] = "The Test of Skulls, Scryer",
+  },
+  [6583] = {
+    ["D"] = "Just as our Father crushes the Aspects themselves, so too must we strive to bring chaos and destruction to their children.$B$BYou must test your battle prowess against the sleepless dreamers: The children of the Green Flight.$B$BTravel to the Swamp of Sorrows and track down Somnus, drake champion of the Green Flight. Let flow your hatred; dominate the insect... Return to me with his skull...",
+    ["O"] = "Destroy the drake champion of the Green Flight, Somnus. Take his skull and return it to Emberstrife.",
+    ["T"] = "The Test of Skulls, Somnus",
+  },
+  [6584] = {
+    ["D"] = "The time watchers, children of Nozdormu - Lord of the Centuriesss...$B$BIt is three that guard the Caverns of Time, but only one that holds the interests of the Black Flight: The Time Shifter, Chronalis, favored drakeling of Nozdormu.$B$BSsstrike at this champion, a blow to make even the stoic sands of time weep. Return to me with his skull.",
+    ["O"] = "Guarding the Caverns of Time in the Tanaris Desert is Chronalis, child of Nozdormu. Destroy him and return his skull to Emberstrife.",
+    ["T"] = "The Test of Skulls, Chronalis",
+  },
+  [6585] = {
+    ["D"] = "It was over the mountains of Grim Batol that our Father raged against the combined might of the Aspects. The cowardly act of the betrayer, Alexstrasza, bought the other Aspects enough time to escape from Father\'s wrath.$B$BSssuch a shameful act...$B$BThe Red Flight now guards Grim Batol, their lieutenant, Axtroz, must be destroyed. Return the skull of Axtroz to me. For Father, whelp!",
+    ["O"] = "Travel to Grim Batol and track down Axtroz, drake champion of the Red Flight. Destroy him and take his skull. Return the skull to Emberstrife.",
+    ["T"] = "The Test of Skulls, Axtroz",
+  },
   [6601] = {
     ["D"] = "From the skulls of our enemies is shaped a medallion. You know this medallion, yesss? You have no doubt seen it worn by your elders.$B$BTake it, whelp. Return to the Spire and present it to General Drakkisath. The General will place the final enchantment upon the medallion, attuning the trinket to your spirit.$B$BYou will wear the finished medallion as a badge of honor, symbolizing your ascension to one of our most guarded ranks: Guardian to the brood mother.$B$BGo!",
     ["O"] = "It would appear as if the charade is over. You know that the Amulet of Draconic Subversion that Myranda the Hag created for you will not function inside Blackrock Spire. Perhaps you should find Rokaro and explain your predicament. Show him the Dull Drakefire Amulet. Hopefully he will know what to do next.",
@@ -10470,15 +12781,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Travel to Blackrock Spire and slay General Drakkisath. Gather his blood and return it to Rokaro.",
     ["T"] = "검은용 용사의 피",
   },
-  [6603] = {
-    ["D"] = "여명의 설원에 문제가 생겼어요!$B$B야생에서 오래 지내다 보면 이런 것에 대해 당연히 알게 되지만... 전 야생에 대해 얘기할 때면 정말 뿌듯해요. 언덕에서 보내는 시간은 정말 황금만큼이나 귀중하다고요. 반사 신경도 빠르게 해주죠. 그리고 머리도 맑게 해주고, 눈까지 예리해진다니까요.$B$B야생을 제대로 만끽하려면 머리가 좋아야 함은 물론 성숙하기도 해야 한다고요. 바로 제가 그렇듯이 말이죠.$B$B아, 그런데 무슨 얘길 하고 있었죠?$B$B맞다. 문제가 있었어요. 간헐천 부근에 있는 도노바 스노우덴을 찾아가면 자세한 내막을 말해 줄 거예요.",
-    ["O"] = "여명의 설원 간헐천 부근에 있는 도노바 스노우덴을 찾아가야 합니다.",
-    ["T"] = "여명의 설원에 생긴 문제!",
-  },
-  [6604] = {
-    ["D"] = "여기서 남쪽에 있는 버려진 야영지에 가보았나? 올빼미야수들이 미쳐서 눈에 보이는 것은 모조리 부수는 것 같던데!$B$B소문에 의하면 올빼미야수의 공격에서 살아남은 자가 여기서 서쪽에 있는 별똥별 마을에서 쉬고 있다고 하더라고. 무슨 일이 일어났던 건지 정말 궁금한데... 자네는 궁금하지 않은가?",
-    ["O"] = "별똥별 마을에 있는 야론 스톤셰이퍼와 대화해야 합니다.",
-    ["T"] = "성난 올빼미야수",
+  [6605] = {
+    ["D"] = "I just got back from Felwood, $N. On my way through, I stopped at Bloodvenom Post and I met a very odd character... She seemed intent on one thing, and I suppose I could tell you what that is, but I think she\'d like to explain it to you herself.$B$BIf you\'re interested, head to Bloodvenom Post in western Felwood and look for Winna Hazzard.$B$BWho knows, she might need your help...",
+    ["O"] = "Speak with Winna Hazzard in Felwood.",
+    ["T"] = "A Strange One",
   },
   [6606] = {
     ["D"] = "We can always use a little luck, eh? A small advantage is all it takes to turn things in your favor...$B$BI happened to make the acquaintance of a rather eccentric witch doctor some time back. She made me a lucky charm... for a price. Believe me, though, it was well worth it!$B$BMaybe you\'d be interested in one of your own? Find Witch Doctor Mau\'ari in Everlook. I\'m not giving mine up!",
@@ -10490,6 +12796,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "아래 물고기들을 모두 잡아 내트 페이글에게 가야 합니다.$B$B슬픔의 늪의 안개갈대 해안에 사는 안개갈대 황새치$B$B잊혀진 땅의 살데리스 해안에 사는 살데리스 아귀$B$B페랄라스의 베르단티스 강에 사는 페랄라스 참치$B$B가시덤불 골짜기의 폭풍 해안에 사는 폭풍 해안 푸른도루묵$B$B위 물고기를 모두 얻고 내트 페이글에게 돌아가십시오.",
     ["T"] = "낚시의 달인 내트 페이글",
   },
+  [6608] = {
+    ["D"] = "Lumak no can teach $N no more. You too good! Find Lumak friend, Nat Pagle. Is human but no eat! Is Lumak friend! Nat teach you fish gooder.$B$BYou find Nat in Dustwallow Marsh, south of Humie town, Thermorosomethinglikedat. Nat probably fishing. Go now!",
+    ["O"] = "You think Lumak is trying to tell you that he can no longer help you improve your fishing skill. You may want to try to find his friend, Nat Pagle, a human fishing off one of the islands south of Theramore (at least that\'s what you think Lumak said).",
+    ["T"] = "청출어람",
+  },
   [6609] = {
     ["D"] = "빌어먹을... 난 드워프란 말이오! 낚시나 할 몸이 아니라고! 이 튼튼한 팔뚝 좀 보시오! 난 채광을 하려고 태어난 몸이란 말이오.$B$B이젠 남은 게 없소이다. 전부 다 당신한테 줬다는 말입니다. 이미 제가 아는 모든 걸 가르쳐 줬지 않습니까?!$B$B이해가 안 갑니까? 음, 좋습니다. 칼림도어에 당신을 도와줄 만한 친구가 있소이다. 내트 페이글이라고 아주 괜찮은 녀석입니다. 테라모어 남쪽에 있는 섬에서 찾아보십시오. 어서 출발하지 않고 뭐 하십니까?!",
     ["O"] = "칼림도어로 가서 해안 도시인 테라모어로 가야 합니다. 그곳 마을에서 남쪽에 있는 섬을 찾아야 합니다. 내트 페이글이 당신을 기다리고 있습니다!",
@@ -10499,11 +12810,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "자네 조개 별미라고 들어 봤나? 분명히 생전 처음 들어봤겠지! 내가 최근에 개발한 최고의 요리라고. 흠... 생각만 해도 군침이 도는군.$B$B그런데 문제는 재료가 없단 말이야! 나랑 거래 하나 할까? 조개 별미 재료를 구해다 주면 진귀한 요리 비법을 전수해 주지. 조개 별미도 몇 개 덤으로 주고 말이야! 어때? 꽤 구미가 당기지 않나?$B$B필요한 재료를 일러 줌세.",
     ["O"] = "Dirge Quikcleave wants you to get the following items:$B$B12 Giant Eggs. You will find those on the Rocs wandering Tanaris or any other species of large bird.$B$B10 pieces of Zesty Clam Meat. You can find those in clams, naturally!$B$B20 pieces of Alterac Swiss. Get thee to a cheesery!$B$BGather all of the items and return to Dirge.",
     ["T"] = "조개 별미",
-  },
-  [6611] = {
-    ["D"] = "이 잠자에게 뭘 더 가르쳐 달라는 거예요? 제 요리 비법을 죄다 뽑아냈으면서 더 알려줄 게 없느냐고요?$B$B이런 욕심쟁이 양반, 저는 더 이상 도와줄 수 없어요. 가젯잔으로 가세요. 거기 더지라는 조그만 고블린을 찾으세요. 그라면 도와줄 수 있을 거예요.$B$B당신이 거기서 대단한 요리사가 되면 다시 돌아와서 잠자에게 뭐라도 좀 가르쳐 줘요. 알았죠? 자, 이제 출발하세요!",
-    ["O"] = "타나리스 사막에 있는 가젯잔으로 가서 더지 퀵클레이브를 만나 당신의 요리 실력 향상에 대해 대화를 나누어야 합니다.",
-    ["T"] = "가젯잔으로 출발!",
   },
   [6612] = {
     ["D"] = "당신이 든 요리용 칼을 보니 자질이 좀 있어 보이는군요? 불행하게도 전 아무것도 가르쳐 줄 수 없지만 말입니다.$B$B대신 제가 아는 고블린이 하나 있는데 칼림도어 최고의 요리사랍니다.$B$B먼 길을 가야 한다는 단점이 있긴 하지만... 지금 가젯잔으로 가서 더지 퀵클레이브를 만나십시오. 그 친구가 요리의 길을 제대로 가르쳐 줄 겁니다.",
@@ -10590,6 +12896,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak with Mathrengyl Bearwalker at the Cenarion Enclave of Darnassus.",
     ["T"] = "새로운 미개척지",
   },
+  [6762] = {
+    ["D"] = "For this task, Keeper Remulos\' majordomo in Moonglade - Rabine Saturna - seeks aid in exploring the vast wastelands far to the west of Tanaris... and even further west of Un\'Goro.  You should find him in Nighthaven, the main village of Moonglade.$B$BWhile your work will no doubt be of tremendous benefit to us all, I advise you to tread gingerly.  There are tensions between Darnassus and Moonglade... ones that may grow over the course of time.",
+    ["O"] = "Speak with Rabine Saturna in the village of Nighthaven, Moonglade.  Moonglade lies between Felwood and Winterspring, accessible through a path out of Timbermaw Hold.",
+    ["T"] = "Rabine Saturna",
+  },
   [6804] = {
     ["D"] = "정령 정찰부대 하나를 로데론 동부 역병지대로 보냈는데, 그 지역의 역병에 감염되고 말았다. 물의 군주들은 우리의 순결함에 이런 모욕을 가해지는 것을 묵인할 수 없노라!$B$B이 유리병을 받으라. 그 안에는 넵튤론의 상이 많이 들어 있다. 역병에 걸린 정령들에게 사용하면 그 몸속에 든 독과 싸워 말끔히 치유해 줄 것이다! 하지만 몸속에서 일어나는 충돌로 인해 정령들이 갑자기 광폭해질 것이다.$B$B그 불협의 광기를 물리치고 결속의 팔보호구를 가져와다오.",
     ["O"] = "동부 역병지대에 있는 역병에 걸린 정령들에게 넵튤론의 상을 사용하십시오. 아즈샤라에 있는 군주 히드락시스에게 불협의 팔보호구 12개와 넵튤론의 상을 가져가야 합니다.",
@@ -10610,11 +12921,18 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "불의 군주 1마리, 용암거인 1마리, 고대의 심장부 사냥개 1마리, 굽이치는 용암 정령 1마리를 처치한 후 아즈샤라에 있는 군주 히드락시스에게 가야 합니다.",
     ["T"] = "화산 심장부",
   },
+  [6823] = {
+    ["D"] = "If you truly wish an allegiance with us, then I invite you to wage war on our foes, the servants of air and earth and fire.  Each defeat you heap upon them will weaken their foothold here, and further prove your adherence to our cause.$B$BThe campaign will be long, but if you persevere then your glory and honor will be great.",
+    ["O"] = "Earn an Honored faction with the Hydraxian Waterlords, then talk to Duke Hydraxis in Azshara.",
+    ["T"] = "Agent of Hydraxis",
+  },
   [6824] = {
     ["D"] = "$N, your service is of great value to us, so we are reluctant to send you on this last mission for we do not want to lose such a useful agent.$B$BBut its success would further our war efforts tremendously and... it was deemed worth risking you.$B$BWe want these captains in the Molten Core destroyed: Lucifron, Sulfuron, Gehennas and Shazzrah.  Kill them and bring me their hands!$B$BThis task will take every resource you possess, $N, but if you can do it then the Firelords will be dealt a terrible blow.",
     ["O"] = "Bring the Hands of Lucifron, Sulfuron, Gehennas and Shazzrah to Duke Hydraxis in Azshara.",
     ["T"] = "Hands of the Enemy",
   },
+  [6841] = "_",
+  [6842] = "_",
   [6843] = {
     ["D"] = "",
     ["O"] = "",
@@ -10629,16 +12947,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Anyway, you should check back with me relatively soon... that is if you want to know what was in here.  As soon as I find out what it is, and if it\'s indeed a book, I\'d be happy to share that information with you.$B$BIn the meantime, I\'d check in with the den mother of this little bear camp, Rabine.  No doubt he\'ll want to know what crazy antics you\'ve been up to.  Never leave the den mother waiting, $N... that is, unless you want to be doused in honey.$B$BIt\'s happened, trust me.",
     ["O"] = "Speak with Rabine Saturna in the village of Nighthaven, Moonglade.",
     ["T"] = "Uncovering Past Secrets",
-  },
-  [6847] = {
-    ["D"] = "자네들이 알터랙의 심장부에서 전쟁을 치른다 해도 비밀결사대는 아랑곳하지도 않네. 우리는 언제나 그래왔듯이 이 광기의 잿더미와 폐허 속에서 확실한 승자가 일어서길 기다렸다가 공격할 뿐이지.$B$B하지만 오늘 여기에 모인 이유는 그 때문이 아닐세. 이 지역의 겨울도끼 트롤들이 천리안을 빼앗아갔네.$B$B천리안을 가지고 오면 자네와 자네 동료에게 얼마의 시간이 남든 끝까지 도와주도록 하지.$B$B눈을 가지고 즉시 내게 돌아오면 자네가 임무를 완수했는지 확인할 수 있을 것일세.<씩 웃는 비밀결사대장 라이슨>",
-    ["O"] = "겨울도끼 동굴에서 천리안을 회수한 후, 비밀결사대장 라이슨에게 가져가야 합니다.$B$B비밀결사대장 라이슨의 천리안은 끔찍한 저주를 불러들인다고 전해지니 조심해야 합니다!",
-    ["T"] = "비밀결사대장 라이슨의 천리안",
-  },
-  [6848] = {
-    ["D"] = "자네들이 알터랙의 심장부에서 전쟁을 치른다 해도 비밀결사대는 아랑곳하지도 않네. 우리는 언제나 그래왔듯이 이 광기의 잿더미와 폐허 속에서 확실한 승자가 일어서길 기다렸다가 공격할 뿐이지.$B$B하지만 오늘 여기에 모인 이유는 그 때문이 아닐세. 이 지역의 겨울도끼 트롤들이 천리안을 빼앗아갔네.$B$B천리안을 가지고 오면 자네와 자네 동료에게 얼마의 시간이 남든 끝까지 도와주도록 하지.$B$B눈을 가지고 즉시 내게 돌아오면 자네가 임무를 완수했는지 확인할 수 있을 것일세.<씩 웃는 비밀결사대장 라이슨>",
-    ["O"] = "겨울도끼 동굴에서 천리안을 회수한 후, 비밀결사대장 라이슨에게 가져가야 합니다.$B$B비밀결사대장 라이슨의 천리안은 끔찍한 저주를 불러들인다고 전해지니 조심해야 합니다!",
-    ["T"] = "비밀결사대장 라이슨의 천리안",
   },
   [6861] = {
     ["D"] = "I\'m as anxious as you are to try out my portable shredder unit, $r, but before I can make the kit, I\'m going to need materials - lots of materials!$B$BTo be exact, I\'m going to need a mountain of thorium, mithril, and iron. I will also need one steamsaw per unit. You\'ll have to get those at the lumber mill.$B$BWhen I was nosing around in here (before my capture) I noticed a pile of steamsaws at the Stormpike lumber camp.",
@@ -10670,20 +12978,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "오그리마의 겨울 할아버지에게 생강 과자빵 5개와 시원한 우유 한 잔을 가져가야 합니다.",
     ["T"] = "겨울 할아버지 대접하기",
   },
-  [6964] = {
-    ["D"] = "선물이나 주고받고 흥청거리다니... 바보들!$B$B경박한 고블린들이 겨울맞이 축제의 진정한 의미를 퇴색시키고 있네. 겨울맞이는 곧 부활과 회복을 뜻하지. 대지는 겨울 할아버지께서 내리신 포근한 눈을 덮고 깊고 조용한 잠을 자는 거야. 저기 우스꽝스러운 빨간 옷을 입고 있는 멍청이가 진짜 겨울 할아버지일 리가 없잖아!$B$B축제의 진정한 의미를 알고 싶거든 사고른 크레스트스트라이더를 찾아가도록! 선물에 정신 팔린 놈들이 천지인 이 시기에 역사가 주는 진정한 교훈에 관심을 가진 자네 같은 이도 있다는 걸 알면 분명 놀랄 거야.",
-    ["O"] = "오그리마의 지혜의 골짜기에 있는 사고른 크레스트스트라이더와 겨울맞이 축제에 대해 대화해야 합니다.",
-    ["T"] = "축제의 유래",
+  [6963] = {
+    ["D"] = "Listen... not to shatter the magic of the season here, but Smokywood Pastures could use some assistance - the kind you adventuring types are known to give.$B$BWe\'re missing an important shipment of treats that was restocking us for the season, and now we\'re missing the agent of Smokywood Pastures that we sent out to the field to find it!  Please - the shipment was last reported in the Alterac Mountains, and that\'s where our man went to look for it.$B$BSee if both are out there, safe and sound!",
+    ["O"] = "Locate the Smokywood Pastures investigator that has gone missing in the snowy regions of the Alterac Mountains.",
+    ["T"] = "Stolen Winter Veil Treats",
   },
-  [6981] = {
-    ["D"] = "이 조각은 밝은 녹색을 띠고 있습니다. 겉은 단단해 보이지만 수정 안에는 연기 같은 것이 소용돌이치고 있습니다. 그 연기는 눈길을 끌며 뭔가 굉장히 불길한 예감이 듭니다.$B$B혹시 이 이상한 조각에 대한 얘기를 해줄 이가 있는지 톱니항에서 찾아보는 게 좋을 것 같습니다.",
-    ["O"] = "톱니항으로 가서 빛나는 조각에 대해 자세히 얘기해 줄 수 있는 이를 찾으십시오.$B$B그에게 지시를 받아, 빛나는 조각을 전달해야 합니다.",
-    ["T"] = "빛나는 조각",
+  [6983] = {
+    ["D"] = "A c-c-creature called \"The Abominable Greench\" is the one w-w-who stole our shipment of t-t-treats, $N.  Be c-c-careful though!  He is t-t-the one who turned me into this s-s-snowy mess!$B$BYou\'re g-g-gonna need some help in f-f-facing him.  I\'ve seen him w-w-wander all around where the y-y-yeti are; he\'s s-s-surely here s-s-somewhere!  F-f-find the treats $N, take them b-b-back to Smokywood Pastures in Orgrimmar, and t-t-tell them I n-n-need to be unfrozen!",
+    ["O"] = "Locate and return the Stolen Treats to Kaymard Copperpinch in Orgrimmar.  It was last thought to be in the possession of the Abominable Greench, found somewhere in the snowy regions of the Alterac Mountains.",
+    ["T"] = "고약한 녀석...",
   },
-  [6985] = {
-    ["D"] = "스톰파이크 드워프들이 깊은무쇠 광산을 보급품 창고로 이용하고 있소. 그곳을 습격해 그 안에 있는 보급품을 가져오도록 하시오. 그렇게 하면 우린 알터랙 계곡에서 스톰파이크 경비대의 활동을 저지할 수 있을 뿐 아니라 필요한 물건들을 얻을 수도 있지!$B$B조심하시오, $N. 깊은무쇠 광산은 얼라이언스 영토 깊숙한 곳에 있는데다, 그 광산의 지배자는 알터랙 산맥에 쌓인 무수한 눈송이만큼이나 자주 바뀌니까 말이오.",
-    ["O"] = "서리늑대 요새에 있는 서리늑대 병참장교에게 깊은무쇠 광산 보급품 10개를 가져가야 합니다.",
-    ["T"] = "깊은무쇠 광산 보급품",
+  [6984] = {
+    ["D"] = "We at Smokywood Pastures appreciate the recovery of the stolen treats, $N.  For that, we\'d like to offer you a special gift... presented by none other than Great-father Winter himself!$B$BPlease, speak with Great-father Winter, and he will give you your Feast of Winter Veil gift from us here at Smokywood Pastures.  From our farm to your plate, it\'s always Smokywood Pastures wholesome goodness... thanks to you, of course!",
+    ["O"] = "Speak with Great-father Winter in Orgrimmar.",
+    ["T"] = "굴뚝나무 목장조합의 선물!",
   },
   [7001] = {
     ["D"] = "알터랙 계곡에서의 전투로 인해 우리 병사들 중 상당수가 희생되었습니다. 새롭게 전의를 북돋워줘야 할 때입니다!$B$B빈 우리를 가득 채울 수만 있다면 기병대가 다시 한번 전장에 나가 싸울 수 있을 겁니다!$B$B이 재갈을 가지고 가서 이 근방 숲에 살고 있는 서리늑대들을 찾아 길들이십시오. 길들인 서리늑대를 데리고 오면 제가 우리에 맡아 두겠습니다.$B$B우리에 서리늑대가 충분히 모이면 우리 기병대가 다시 한 번 출전하여 최전선에서 정찰을 돌고 있을 병력과 합류할 수 있을 겁니다.",
@@ -10700,6 +13008,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "페랄라스에서 눈에 띄는 아무 거인에게나 조르빈의 형상축소기를 사용해 좀 더 다루기 쉬운 형태로 변환하십시오. 페랄라스의 잊혀진 해안 부두에 있는 조르빈 팬대즐에게 변형된 거인들에게서 얻을 수 있는 축소화 잔류물 15개를 가져가야 합니다.",
     ["T"] = "변형된 거인",
   },
+  [7021] = {
+    ["D"] = "Have a wondrous Winter Veil, friend!  Be sure to say hello to Greatfather Winter, who\'s currently in Orgrimmar!  If you\'ve been nice this year, you\'ll receive wondrous treats on the day of the Feast of Winter Veil.  Be sure to tell him what you hope to get this year!$B$BAlso, be sure to stock up on treats to give those who\'ve been nice this year.  We have a great selection to choose from.  Fresh from our farm to your plate - it\'s Smokywood Pastures wholesome goodness!",
+    ["O"] = "Speak with Greatfather Winter; he is located near the Smokywood Pastures vendor area in Orgrimmar.",
+    ["T"] = "겨울 할아버지, 우리 마을에 오셨네!",
+  },
   [7022] = {
     ["D"] = "즐거운 겨울맞이 축제가 되길! 겨울 할아버지에게 꼭 인사하는 것 잊지 말고! 올해 착한 일을 많이 했으면 겨울맞이 축제에 선물을 받게 될 거야. 겨울 할아버지에게 올해 갖고 싶은 게 뭔지 꼭 얘기하라고!$B$B참, 올 한해 고마웠던 친구들에게 한턱 내는 건 어때? 마침 내게 선물용으로 아주 괜찮은 물건이 있는데 말이야. 굴뚝나무 목장조합에서 직접 재배한 신선한 음식을 맛보게! 맛도 그만이지만 몸에도 아주 좋지!",
     ["O"] = "아이언포지 굴뚝나무 목장조합상인 근처에 있는 겨울 할아버지를 만나 대화해야 합니다.",
@@ -10708,6 +13021,11 @@ pfDB["quests"]["koKR-tbc"] = {
   [7023] = {
     ["D"] = "즐거운 겨울맞이가 되라고! 지금 아이언포지에 와 계신 겨울 할아버지에게 인사하는 것도 잊지 말아야 해! 올 한해 동안 착하게 살았다면 겨울맞이 축제 날 선물을 많이 받게 될 거야. 올해엔 뭘 받고 싶은지 겨울 할아버지에게 꼭 이야기하고!$B$B그리고 올 한해 동안 착하게 지낸 사람들에게 줄 음식도 준비해야 겠지? 우리 가게에선 아주 다양한 음식을 팔고 있어. 농장에서 식탁 위 접시까지 신선하게! 굴뚝나무 목장조합의 영양 만점 요리를 맛보라고!",
     ["O"] = "아이언포지 굴뚝나무 목장조합상인 근처에 있는 겨울 할아버지를 만나 대화해야 합니다.",
+    ["T"] = "겨울 할아버지, 우리 마을에 오셨네!",
+  },
+  [7024] = {
+    ["D"] = "Have a wondrous Winter Veil, friend!  Be sure to say hello to Greatfather Winter, who\'s currently in Orgrimmar!  If you\'ve been nice this year, you\'ll receive wondrous treats on the day of the Feast of Winter Veil.  Be sure to tell him what you hope to get this year!$B$BAlso, be sure to stock up on treats to give those who\'ve been nice this year.  We have a great selection to choose from.  Fresh from our farm to your plate - it\'s Smokywood Pastures wholesome goodness!",
+    ["O"] = "Speak with Greatfather Winter; he is located near the Smokywood Pastures vendor area in Orgrimmar.",
     ["T"] = "겨울 할아버지, 우리 마을에 오셨네!",
   },
   [7025] = {
@@ -10740,6 +13058,36 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Locate the Smokywood Pastures investigator that has gone missing in the snowy regions of the Alterac Mountains.",
     ["T"] = "Stolen Winter Veil Treats",
   },
+  [7043] = {
+    ["D"] = "A c-c-creature called \"The Abominable Greench\" is the one w-w-who stole our shipment of t-t-treats, $N.  Be c-c-careful though!  He is t-t-the one who turned me into this s-s-snowy mess!$B$BYou\'re g-g-gonna need some help in f-f-facing him.  I\'ve seen him w-w-wander all around where the y-y-yeti are; he\'s s-s-surely here s-s-somewhere!  F-f-find the treats $N, take them b-b-back to Smokywood Pastures in Ironforge, and t-t-tell them I n-n-need to be unfrozen!",
+    ["O"] = "Locate and return the Stolen Treats to Wulmort Jinglepocket in Ironforge.  It was last thought to be in the possession of the Abominable Greench, found somewhere in the snowy regions of the Alterac Mountains.",
+    ["T"] = "고약한 녀석...",
+  },
+  [7045] = {
+    ["D"] = "We at Smokywood Pastures appreciate the recovery of the stolen treats, $N.  For that, we\'d like to offer you a special gift... presented by none other than Greatfather Winter himself!$B$BPlease, speak with Greatfather Winter, and he will give you your Feast of Winter Veil gift from us here at Smokywood Pastures.  From our farm to your plate, it\'s always Smokywood Pastures wholesome goodness... thanks to you, of course!",
+    ["O"] = "Speak with Greatfather Winter in Ironforge.",
+    ["T"] = "굴뚝나무 목장조합의 선물!",
+  },
+  [7046] = {
+    ["D"] = "My scepter was once a source of hope for me. Its power allowed me the freedom to travel quickly through these caverns. I had hoped to bring peace to the spirit of my uncle... It is a task that I now pass to you.$B$BFor the two parts to once again become one, I will need your assistance in performing the ritual. Please follow me, and listen to my instructions while I channel the energy required to reunite the rod with the diamond.$B$BTogether, we shall create the Scepter of Celebras once again!",
+    ["O"] = "Assist Celebras the Redeemed while he creates the Scepter of Celebras.$B$BSpeak with him when the ritual is complete.",
+    ["T"] = "The Scepter of Celebras",
+  },
+  [7061] = {
+    ["D"] = "Here - if you are interested in learning more about the Feast of Winter Veil, read this book.  While I think our recognition of the legend is the appropriate one, I\'m enough of a student of legends to appreciate the collection of all information into a single source.$B$BWhen you\'re done, take the book to Cairne Bloodhoof in Thunder Bluff.  I know for a fact he\'d be interested in hearing that others have taken an interest in the lore of our people.  ",
+    ["O"] = "Feel free to read the book, \"The Feast of Winter Veil\", to learn more about the holiday.  When you are finished with the book, deliver it to Cairne Bloodhoof in Thunder Bluff.",
+    ["T"] = "겨울맞이 축제",
+  },
+  [7062] = {
+    ["D"] = "Gifts, treats, presents... bah, I say!$B$BThose goblins pollute the true meaning of this season - the Feast of Winter Veil.  This is a time of renewal; the land slumbers under a blanket of snow brought forth by Greatfather Winter, who is NOT the bumbling fool over there in the red suit!$B$BIf you\'re interested in learning what the Feast is all about for yourself, ask Historian Karnik at the Explorer\'s League.  I\'m sure he\'ll be surprised that someone cares about history rather than getting presents.",
+    ["O"] = "Speak with Historian Karnik at the Explorer\'s League in Ironforge about the Feast of Winter Veil.",
+    ["T"] = "축제의 유래",
+  },
+  [7063] = {
+    ["D"] = "Here - if you are interested in learning more about the Feast of Winter Veil, read this book.  While I think our recognition of the legend is the appropriate one, I\'m enough of a scholar to appreciate the collection of all information into a single source.$B$BWhen you\'re done, take the book to King Magni Bronzebeard.  I know for a fact he\'d be interested in hearing that others have taken an interest in the older legends.  ",
+    ["O"] = "Feel free to read the book, \"The Feast of Winter Veil\", to learn more about the holiday.  When you are finished with the book, deliver it to King Magni Bronzebeard in Ironforge.",
+    ["T"] = "겨울맞이 축제",
+  },
   [7064] = {
     ["D"] = "Deep in Maraudon lives an evil creature of chaos--Princess Theradras is an elemental force of earth related to the Old Gods. Ages ago, she and Zaetar, first son of Cenarius, began a relationship. The offspring of their time together became known to the people of Kalimdor as centaur. Ever-thankful creatures, the centaur killed Zaetar, and now hold Zaetar\'s remains. My quest here is to find those powerful enough to slay Theradras so we may recover Zaetar\'s remains before returning to Stonetalon.",
     ["O"] = "Slay Princess Theradras and return to Selendra near Shadowprey Village in Desolace.",
@@ -10760,6 +13108,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "추방자의 지시서를 읽은 다음 마라우돈에서 결합의 아뮬렛을 획득해서 잊혀진 땅 남부에 있는 켄타우로스 추방자에게 가져가야 합니다.",
     ["T"] = "추방자의 지시서",
   },
+  [7069] = "_",
   [7070] = {
     ["D"] = "최근 난 다양한 수정과 수정의 신비한 성질에 대해 실험을 하고 있습니다. 프라우드무어 님께서 내게 마라우돈을 찾기 위해 잊혀진 땅으로 가는 여행자들에게 부탁을 할 수 있는 권한을 주셨습니다. 폐허가 된 신전들 사이에 보라색 수정으로 만들어진 엄청난 정령이 있습니다. 난 이 수정을 음영석이라고 이름 지었습니다.$B$B그곳으로 가서 수정을 찾아주신다면 정말 고맙겠습니다. 원한다면 수정으로 장신구를 만들어 드릴 수도 있습니다.",
     ["O"] = "마라우돈에서 음영석 조각 10개를 모아서 먼지진흙 습지대의 해안에 위치한 테라모어에 있는 대마법사 테르보쉬에게 가져가야 합니다.",
@@ -10789,11 +13138,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "알터랙 계곡의 광산에는 광물만 있는 것이 아니네. 서리늑대 부족과 스톰파이크 경비대 모두가 남은 보급품을 깊은무쇠 광산과 얼음이빨 광산에 숨겨두고 있네. 그것도 나쁜 생각은 아니지... 우리가 그 광산을 점령할 수 있다면 말이야.$B$B광산을 하나 점령한 뒤 내게 돌아오게. 광산을 점령하려면 우리가 점령하지 않은 광산에 들어가 그 지휘자를 처치하면 되네. 그러면 광산은 우리 차지가 되니까 경비대를 보내 방어하면 될 것이야!",
     ["O"] = "스톰파이크 경비대가 점령하지 않은 광산을 점령한 후 알터랙 산맥에 있는 하사관 두르겐 스톰파이크에게 가야 합니다.",
     ["T"] = "광산 점령",
-  },
-  [7123] = {
-    ["D"] = "지금 서리늑대 병참장교가 알터랙 계곡의 광산과 관련된 임무가 있다며 신병을 찾고 있네. 더 자세한 얘기를 듣고 싶거든 가서 그와 얘기해 보게.$B$B서쪽으로 길을 따라가면 나오는 참호 안으로 들어가게. 바로 오른쪽 출구로 나가면 우리 병참장교를 만날 수 있을 걸세.",
-    ["O"] = "서리늑대 병참장교와 대화해야 합니다.",
-    ["T"] = "병참장교와의 대화",
   },
   [7124] = {
     ["D"] = "알터랙 계곡 전체가 전쟁에 휩쓸리면서 얼음이빨 광산과 깊은무쇠 광산도 흔들리고 있네. 두 광산 모두 풍부한 광물의 산지일 뿐만 아니라 보급품 저장고로 쓰이고 있지. 그러니까 그 광산들을 그토록 높이 평가하는 건 당연한 일이지!$B$B우리를 도와 주게! 호드의 명예를 위해 전쟁에 참전하여 광산 중 하나를 점령하게! 아직 우리 것이 아닌 광산에 들어가 거기 지도자를 처치하라는 말이야. 그러면 그 광산은 우리 차지가 되는 것이니 부대를 보내 그곳을 방어하도록 하겠네!",
@@ -10875,6 +13219,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "전설에 의하면 겨울도끼 트롤들의 막강한 지도자가 나타나면, 그것은 알터랙 계곡에 사는 모든 생명체들을 학살하기 위해서라고 합니다.$B$B콜라크가 나타나면 그를 처치한 후 전투대장 락그론드에게 가야 합니다.",
     ["T"] = "콜라크의 전설",
   },
+  [7201] = {
+    ["D"] = "There is work to be had for those venturing into the depths, $N.$B$BThe Dark Irons have mastered creation of extremely powerful golems.$B$BInitial reports from our spies indicate that the dwarves use a unique power source to give their creations incomparable killing power.$B$BJust imagine what we could do with our abominations if we could get our hands on this essence of the elements! Turn that city upside down if you must, but do not return until you have found the essence! Payment will be worth the risk.",
+    ["O"] = "Travel to Blackrock Depths and recover 10 Essence of the Elements. Your first inclination is to search the golems and golem makers. You remember Vivian Lagrave also muttering something about elementals.",
+    ["T"] = "The Last Element",
+  },
   [7202] = {
     ["D"] = "이 지역 토착 부족인 겨울도끼 트롤은 우리 뼈를 자기들 상에 오르는 고약한 스튜에 넣어 먹으려고 하는 잔인한 야만족이오.$B$B놈들에게 우리의 힘을 보여줘야 하오!$B$B놈들이 사는 동굴에서 놈들의 지도층 계급 구조에 대해 적은 책을 찾아냈소. 이 책에 의하면 녀석들의 우두머리인 피의 광전사 콜라크는 자기가 나타날 이유가 있을 때까지는 모습을 드러내지 않는다 하오이다.$B$B콜라크의 죽음은 곧 겨울도끼 부족의 죽음을 뜻하는 것! 녀석을 처치하고 돌아오시오.",
     ["O"] = "전설에 의하면 겨울도끼 트롤들의 막강한 지도자가 나타나면, 그것은 알터랙 계곡에 사는 모든 생명체들을 학살하기 위해서라고 합니다.$B$B콜라크가 나타나면 그를 처치한 후 알터랙 산맥에 있는 부관 해거딘에게 가야 합니다.",
@@ -10930,21 +13279,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 10 pieces of Turtle Meat and some Soothing Spices to Christoph Jeffcoat in Tarren Mill.",
     ["T"] = "독특한 거북이 비스크",
   },
-  [7361] = {
-    ["D"] = "<이빨을 갈며 분을 삭이는 나자크>$B$B우리 트롤은 나이트 엘프들이 이 세계에 존재하기 전부터 있었어. 사실 나이트 엘프들도 우리에게서 나온 종족이라고...$B$B그런데 우리에게 이런 반역적인 공격을 해오다니 용서할 수 없어! 스태그헬름 녀석은 우리 트롤의 뿌리를 뽑아버리려 하지. 자기 종족을 이 세상에 있게 해준 우리를 흔적까지 없애려 한단 말일세. 그건 절대로 있어서는 안 될 일이지 않은가?!$B$B나이트 엘프를 하나씩 처치할 때마다 우리 검은창 부족의 호의를 살 수 있도록 이 나자크가 도와주겠네. 자네의 업적에 대한 소문이 칼림도어, 아니 동부 왕국 전체에 퍼질 거야. 어서 가서 우리 검은창 부족을 도와 줘!",
-    ["O"] = "알터랙 계곡에 있는 얼라이언스 진영의 나이트 엘프 플레이어를 쓰러뜨리라는 임무를 받았습니다.$B$B나이트 엘프를 처치하고 서리늑대 요새에 있는 나자크 헥센에게 나이트 엘프 머리카락을 가져가야 합니다.",
-    ["T"] = "검은창 부족의 호의",
-  },
-  [7362] = {
-    ["D"] = "대모 마가타님께서는 다른 종족을 연구하라면서 저를 이 전쟁터로 보내셨습니다. 더 정확히 말하자면 노움의 견본을 구하는 것이지요. 마가타님께서는 노움의 생존 능력에 관심이 많으십니다. 노움은 처량 맞을 정도로 작고 나약하지만 전투 중일 때나 아닐 때나 엄청난 회복력을 자랑하거든요.$B$B당신은 참 운이 좋으신 분이로군요. 제가 지금 마가타님의 명령을 수행할 분을 하나 찾던 중이거든요. 노움 머리카락 뭉치를 하나 가져 오면 우리 타우렌의 동지로 인정받게 될 겁니다.",
-    ["O"] = "알터랙 계곡에 있는 얼라이언스 진영의 노움 플레이어를 쓰러뜨리라는 임무를 받았습니다.$B$B노움을 처치하고 서리늑대 요새에 있는 라바크 그림토템에게 노움 머리카락 뭉치를 가져가야 합니다.",
-    ["T"] = "타우렌의 동지",
-  },
-  [7363] = {
-    ["D"] = "인간이란 참으로 가증스러운 것들이오.$B$B<인상을 찌푸리는 호드 사령관 필립스>$B$B내가 서리늑대 부족의 사령관이기는 하나 그 전에 실바나스 님의 미천한 종이라오.$B$B나는 여기 임무를 수행하면서 언더시티의 연금술 실험실에서 비밀리에 맡긴 일도 하고 있소.$B$B바로 인간 뼛조각을 수집하는 일 말이지... 그 뼛조각은 인간의 본질을 치유하는 데 쓰인다오.$B$B나는 이 임무를 부하에게 위임할 수 있도록 허가를 받았소.$B$B인간을 찾아 처치하고 그 뼛조각을 내게 가지고 오시오.",
-    ["O"] = "알터랙 계곡에 있는 얼라이언스 진영의 인간 플레이어를 쓰러뜨리라는 임무를 받았습니다.$B$B인간을 처치하고 지휘관 루이스 필립스에게 인간 뼛조각 하나를 가져가야 합니다. 지휘관 루이스 필립스는 최전선과 서리늑대 요새 사이를 거닐고 있을 것입니다.$B$B인간의 본질을 치유할 날이 얼마 남지 않았습니다!",
-    ["T"] = "인간의 본질",
-  },
   [7364] = {
     ["D"] = "The High Tinkerer himself has sent me to this field of battle to defend my gnomish brothers and sisters. We have received word that the tauren are singling out and slaying gnomes. Worst of all, they are removing tufts of glorious gnome hair from the corpses of the fallen. These atrocities must be stopped. We must reciprocate!$B$BI want them de-hoofed, $c. Bring me their hooves! Show yourself as an ally of the gnomes.",
     ["O"] = "You have been tasked with slaying opposing tauren players in Alterac Valley.$B$BKill a tauren and return to Dirk Swindle at Dun\'Baldar with a  Tauren Hoof.",
@@ -10954,11 +13288,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Staghelm has given the order. All trolls on the field of battle must be exterminated. Their preposterous claims of birthing night elves must be met with force and due prejudice.$B$BSlay them and return to me with their mojo. To reiterate: I want you to steal their mojo.",
     ["O"] = "You have been tasked with slaying opposing troll players in Alterac Valley.$B$BKill a troll and return to Athramanis at Dun\'Baldar with Darkspear Troll Mojo.",
     ["T"] = "OLD Staghelm\'s Requiem",
-  },
-  [7366] = {
-    ["D"] = "대주교님은 현명하신 만큼 인자하시기도 하시오. 그런 쓰레기 같은 녀셕들을 자비의 눈길로 바라보시다니...$B$B<믿지 못하겠다는 듯이 고개를 흔드는 지휘관 칼 필립스>$B$B너무 인자하셔... 정말이지 너무 인자하시단 말이야. 대주교님께서 우리에게 언데드를 불쌍히 여기고 신속하고도 영구적인 죽음을 베풀어주라 명하셨소. 이 위대한 자비의 표시로 우리는 검고 병에 찌든 심장이 필요하오.$B$B내게 포세이큰의 심장을 가져오면 빛의 대성당에서 의식에 따라 태우게 될 것이오. 자, 서둘러 가시오!",
-    ["O"] = "알터랙 계곡에 있는 호드 진영의 언데드 플레이어를 쓰러뜨리라는 임무를 받았습니다.$B$B언데드를 처치하고 포세이큰 심장을 얼라이언스 지휘관 칼 필립스에게 가져가야 합니다. 얼라이언스 사령관 칼 필립스는 벌목지와 광산 사이를 정찰하고 있습니다.",
-    ["T"] = "대주교의 자비",
   },
   [7367] = {
     ["D"] = "서리늑대 부족 녀석들이 최전방과 기지 주위에 지뢰를 설치해 두었으니 적진에 침투할 때는 발 밑을 조심해야 할 걸세.$B$B귀관이 녀석들을 제대로 한방 먹이려면 대인 무기의 근원을 제거해야 할 거야. 바로 녀석들의 폭파 전문가를 말하는 것일세. 그 녀석만 처치하면 안전하게 지뢰를 제거할 수 있고, 그 녀석이 쓰러지면 지뢰도 사라지는 것이지.$B$B얼음피 주둔지 근처에 있는 탑에서 그를 찾을 수 있을 걸세. 행운을 빌겠네!",
@@ -10970,10 +13299,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "스톰파이크 폭파 전문가를 찾아서 처치해야 합니다. 임무를 완수하면 서리늑대 폭파 전문가에게 돌아가십시오.",
     ["T"] = "지뢰 제거",
   },
-  [7381] = {
-    ["D"] = "콜라크가 죽은 것은 확실하지만 한 가지 의문이 남는군. 과연 그가 완전히 죽었느냐는 것이지. 트롤 부족은 저승을 넘나드는 마술로 악명이 높아서 말이야. 죽은 지도자를 되살려 다시 자기 부족을 통치하게 한다 해도 그리 놀랄 일은 아닐 걸세.$B$B정말 그런 일이 발생한다면 어찌해야 하는지 알겠지.$B$B<손가락으로 목을 긋는 시늉을 하는 전투대장 락그론드>$B$B다시 녀석을 만나면 이번에는 놈의 해골을 가져 오게. 항상 경계를 늦추지 말도록...$B$B이만 해산!",
-    ["O"] = "피의 광전사 콜라크가 투쟁의 벌판에 다시 나타나면 그를 찾아 처치하십시오.$B$B언덕마루 구릉지에 있는 전투대장 락그론드에게 콜라크의 해골을 가져가야 합니다.",
-    ["T"] = "콜라크의 귀환",
+  [7382] = {
+    ["D"] = "There\'s something not quite right about all of this... Did anybody think to burn Korrak\'s corpse? Those trolls will stop at nothing to revive their fallen leader - as blue skinned pagan man-beasts often do.$B$BJust keep your eyes out, $N. Don\'t be alarmed if Korrak makes a surprise appearance; and if he does, I want him executed - his corpse burned to ashes.$B$BFor good measure, lop off his head and bring me his skull before you ignite the lifeless mass.",
+    ["O"] = "Should Korrak the Bloodrager make a return to the Field of Strife, seek him out and destroy him.$B$BReturn the Skull of Korrak to Lieutenant Haggerdin in the Hillsbrad Foothills.",
+    ["T"] = "Korrak the Everliving",
   },
   [7383] = {
     ["D"] = "하지만 텔드랏실은 모든 면에서 문제가 많았소. 세계수에 대한 스태그헬름 님의 신중한 계획은 그분이 바라는 대로 실행됐지만 작은 문제가 있었소. 그리고 그 문제로 인해 텔드랏실에 또 다른 문제들이 꼬리를 물고 발생하게 된 것이오.$B$B지금은 다른 문제들은 제쳐 두겠소. 우선 그대는 북서쪽 신탁의 숲에 위치한 마지막 달샘으로 가도록 하시오. 신탁의 나무 가지 아래 우리의 최초의 달샘이자 가장 강력한 샘이 하나 있소. 그 물을 이 약병에 담아 내게 가져오시오.",
@@ -10994,11 +13323,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "By order of Sergeant Yazra Bloodsnarl, all dwarves on the field of battle are to be killed on sight.$B$BShould you slay a dwarf in combat, rip out their spine, leaving a spineless heap of stink and rot to serve as a warning to any and all that dare oppose the might of the Frostwolf.$B$BReturn to Sergeant Yazra Bloodsnarl with proof of your heroics.",
     ["O"] = "You have been tasked with slaying opposing Dwarf players in Alterac Valley.$B$BKill a Dwarf and rip out their spine. Take the Dwarf Spine to Sergeant Yazra Bloodsnarl at Frostwolf Keep.",
     ["T"] = "현상 수배: 드워프!",
-  },
-  [7402] = {
-    ["D"] = "노레그 스톰파이크 하사관의 명으로 건장한 신체를 지닌 모든 스톰파이크 병사들은 전장에서 마주치는 오크를 모조리 처치하라.$B$B병사들은 적의 이빨을 가져와 임무를 완수한 증거로 제출하기 바란다.$B$B오크를 잡기 전에 보호용 장갑을 착용하도록 하라.",
-    ["O"] = "알터랙 계곡에 있는 호드 진영의 오크 플레이어를 쓰러뜨리라는 임무를 받았습니다.$B$B오크를 처치하고 던 발다르에 있는 하사관 노레그 스톰파이크에게 오크 엄니를 가져가야 합니다.",
-    ["T"] = "현상 수배: 오크!",
   },
   [7421] = {
     ["D"] = "",
@@ -11040,11 +13364,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "OLD Wanted: MORE ORCS!",
   },
-  [7429] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "노트 구출 대작전",
-  },
   [7441] = {
     ["D"] = "타락한 왕자의 손아귀에서 벗어나려고 서두르다가 잠깐 방심하여 그만 좀도둑을 만났다오, 이방인 친구. 사악하기 짝이 없는 푸실린이라는 임프가 내 마법서와 이제는 몰락해버린 엘드레탈라스의 전당으로 통하는 열쇠를 훔쳐가버렸소.$B$B내 불멸의 생명력은 자유와 바꿔버렸으니 그 열쇠는 어떻게 되든 상관없지만 마법서는 내게 꼭 필요한 것이오.$B$B혈투의 전장에 있는 굽이나무 지구에서 푸실린을 찾아내 책을 되찾아 주시오.",
     ["O"] = "혈투의 전장으로 가서 푸실린이라는 임프를 찾으십시오. 어떤 수단을 써서라도 아즈토르딘의 마법서를 돌려받아야 합니다.$B$B마법서를 회수하면 페랄라스의 라리스 정자에 있는 아즈토르딘에게 가야 합니다.",
@@ -11054,11 +13373,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "충분히 들으셨나요? 그대는 말보다 실천을 중요하게 생각하는지요?$B$B이 광란은 끝나야 합니다. 불멸의 생명체가 지배하던 시대는 이미 오래전에 흘러가버렸습니다. 수정탑을 둘러싼 수호자들을 물리쳐 마법진의 힘을 약하게 하고 이몰타르를 처치하십시오. 토르텔드린 왕자의 힘이 많이 쇠약해져 있는 이 때에 녀석을 쳐서 없애야 합니다. 이 도시의 영혼들이 안식을 취할 수 있도록 도와주십시오.",
     ["O"] = "이몰타르의 감옥에 힘을 공급하는 다섯 개의 수정탑을 둘러싼 수호자들을 처치해야 합니다. 수정탑의 마력이 약해지면 이몰타르를 둘러싼 마법진도 분산될 것입니다.$B$B이몰타르의 감옥에 들어가 그 심장부에 서 있는 사악한 이몰타르를 처치하고, 마지막으로 도서관에 있는 토르텔드린 왕자와 맞서 싸우십시오.$B$B이 임무를 완수하면 명가의 궁정에 있는 셴드랄라 고대인에게 가야 합니다.",
     ["T"] = "내면의 광기",
-  },
-  [7462] = {
-    ["D"] = "도서관에 가면 계단 밑에 오래된 궤짝이 하나 있는데, 그 안에서 원하는 걸 골라가세요.",
-    ["O"] = "도서관으로 되돌아가 셴드랄라의 보물을 찾아야 합니다. 임무 완수에 대한 보상을 받으십시오!",
-    ["T"] = "셴드랄라의 보물",
   },
   [7463] = {
     ["D"] = "$R 마법사로군! 정말 신기해. 마법사를 본 지가... 500년은 된 것 같군! 그래, 요즘은 어떻게 지내시오?$B$B당신의 갈증을 해소해줄 만한 게 있긴 하오만 먼저 내 부탁을 하나 들어줘야겠소.$B$B<킬킬거리는 리드로스>$B$B엘드레탈라스에 이례적인 사건이 하나 발생했소. 물의 정령 하나가 도서관 동쪽 서고에 거처를 잡았지 뭐요. 녀석의 출현 사실을 기록해야 하오이다!$B$B굽이나무 지구로 가서 히드로스폰의 정수를 추출해 오시오. 그걸 내게 가지고 오면 아주 유용한 주문을 하나 가르쳐 주도록 하지.",
@@ -11093,6 +13407,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring a Libram of Protection, 1 Pristine Black Diamond, 2 Large Brilliant Shards, and 1 Frayed Abomination Stitching to Lorekeeper Lydros in Dire Maul to receive an Arcanum of Protection.",
     ["T"] = "보호의 성서",
   },
+  [7486] = {
+    ["D"] = "$N, your services to the Warlords surpassed all we could expect from the denizens of this world.$B$BWe do not understand your people\'s notions of gratitude, or rewarding good works, but in this case... perhaps a reward is warranted.$B$BUnder the surf at the southern base of this island, you will find a coffer.  In it you will find your... reward.$B$BGo, $N.  Claim your reward.",
+    ["O"] = "Claim your reward from Hydraxis\' Coffer.",
+    ["T"] = "A Hero\'s Reward",
+  },
   [7487] = {
     ["D"] = "$R|1이여;여;, 우리 주변의 모든 것에는 균열이 생기고 흔들리며 무너져갑니다. 여기서 불과 두 발짝도 떨어지지 않은 곳에 검은바위 산의 심연으로 통하는 균열이 있다면 믿어지십니까? 바로 불의 군주의 입으로 통하지요.$B$B놀라셨나요? 애석한 일이로군요... 필멸의 생명체들은 자신이 보고, 만지고 느낄 수 있는 것이 아니면 전혀 이해하지 못하니 말입니다.$B$B분명히 말해두는데, 차원문은 정말로 존재하며 안으로 들어갈 수도 있습니다.$B$B귀가 솔깃해지셨나요? 방법은 간단합니다. 검은바위 나락으로 가서 핵 조각을 하나 가져오기만 하면 되죠. 제게 돌아오시면 그대의 정기를 차원문과 조화시켜 드리겠습니다.",
     ["O"] = "검은바위 나락의 화산 심장부 입구에 있는 차원문으로 가서 핵 조각을 입수해야 합니다. 핵 조각을 가지고 검은바위 산에 있는 로소스 리프트웨이커에게로 돌아가십시오.",
@@ -11103,25 +13422,30 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "페랄라스의 모자케 야영지에 있는 탈로 쏜후프에게 레스텐드리스의 그물을 가져가야 합니다.",
     ["T"] = "레스텐드리스의 그물",
   },
-  [7492] = {
-    ["D"] = "페랄라스의 타우렌 장로인 탈로 쏜후프께서 도움을 요청하고 계시오. 자세한 얘기는 별로 없으셨지만 아주 민감하면서도... 끔찍한 문제 때문에 요원이 한 명 필요하다고 하셨소.$B$B호드를 받들어 모자케 야영지로 가서 탈로님과 이야기를 나눠보도록 하시오.",
-    ["O"] = "페랄라스의 모자케 야영지에 있는 탈로 쏜후프와 대화해야 합니다.",
-    ["T"] = "모자케 야영지",
+  [7490] = {
+    ["D"] = "You have accomplished the impossible. The brood mother of the Black Dragonflight lies dead at your feet. Take her head and present it to your Warchief.",
+    ["O"] = "Take the Head of Onyxia to Thrall in Orgrimmar.",
+    ["T"] = "호드의 승리",
+  },
+  [7491] = {
+    ["D"] = "Overlord Runthak awaits your arrival in the Valley of Strength.$B$B<Thrall salutes you.>$B$BDo not keep your public waiting, hero.",
+    ["O"] = "Seek out Overlord Runthak in the Valley of Strength.",
+    ["T"] = "승리의 축제",
   },
   [7494] = {
     ["D"] = "페랄라스에서 당신의 도움을 필요로 하고 있습니다!$B$B레스텐드리스라는 사악한 마법사가 지금은 혈투의 전장이라 불리는 고대 엘프 유적지, 엘드레탈라스로 도망쳤습니다. 아주 위험한 마법의 힘이 깃든 물건을 갖고 있는 걸로 알고 있는데, 그 물건을 반드시 찾아야만 합니다.$B$B라트로니쿠스 문스피어 님이 혈투의 전장으로 가서 레스텐드리스에게서 그 물건을 회수해올 요원을 요청하셨습니다.$B$B얼라이언스를 받들어 페랄라스에 있는 페더문 요새에서 라트로니쿠스 님을 만나 보도록 하십시오!",
     ["O"] = "페랄라스의 페더문 요새에 있는 라트로니쿠스 문스피어와 대화해야 합니다.",
     ["T"] = "페더문 요새",
   },
+  [7495] = {
+    ["D"] = "You have accomplished the impossible. The brood mother of the Black Dragonflight lies dead at your feet. Take her head and present it to the Highlord.",
+    ["O"] = "Take the Head of Onyxia to Highlord Bolvar Fordragon in Stormwind.",
+    ["T"] = "얼라이언스의 승리",
+  },
   [7496] = {
     ["D"] = "영웅의 계곡으로 가서 상사 매팅리를 찾아보십시오, $N. 그대를 기다리고 있을 것입니다...",
     ["O"] = "영웅의 계곡에서 상사 매팅리를 찾아야 합니다.",
     ["T"] = "대축제",
-  },
-  [7497] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "모험은 이제부터",
   },
   [7498] = {
     ["D"] = "이 책에는 도서관의 인장이 찍혀있습니다.",
@@ -11193,10 +13517,25 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "환생의 관을 조사한 후, 대영주 데미트리안에게 가져가야 합니다.",
     ["T"] = "결정 조사",
   },
+  [7541] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Service to the Horde",
+  },
   [7562] = {
     ["D"] = "$N, your delvings into the dark arts are deep.  Your mastery over otherworldly denizens has grown so strong... perhaps you are ready to bind to you one of the infamous dreadsteeds.$B$BThe ritual to summon the beast from its home requires great power and resources, but if you desire to dominate that epic mount, then speak with Mor\'zul Bloodbringer.  He is camped near the Altar of Storms in the Burning Steppes.$B$BGo, $N.  This quest will be perilous, but a Warlock of your stature does not shy from danger!",
     ["O"] = "Speak with Mor\'zul Bloodbringer in the Burning Steppes.",
     ["T"] = "모르줄 블러드브링어",
+  },
+  [7563] = {
+    ["D"] = "The dreadsteeds dwell on another world, on the fiery Plains of Xoroth, and to bind one of those famed beasts you must invoke powerful glyphs.  I can scribe the glyphs on a parchment for you, but first I will need a special ink.$B$BIn distant Winterspring there dwells a race of owl beasts.  Once pure creatures, they were turned mad by the demonic emanations of the Darkwhisper Gorge and now roam the snows in a frenzy.$B$BTheir blood is what I need to ink your parchment.  Bring it to me.",
+    ["O"] = "Bring 30 bottles of Raging Beast\'s Blood to Mor\'zul Bloodbringer in the Burning Steppes.",
+    ["T"] = "Rage of Blood",
+  },
+  [7564] = {
+    ["D"] = "My servant, Gorzeeki, is an alchemist of some skill.  He can prepare the ink I will need for your parchment.  I gathered together the blood you acquired; take it to Gorzeeki so that he can begin his work.",
+    ["O"] = "Bring the Case of Blood to Gorzeeki Wildeyes in the Burning Steppes.",
+    ["T"] = "Wildeyes",
   },
   [7581] = {
     ["D"] = "You must retrieve bindings for the prison of the Doomguard from lesser demons.$B$BThe blood of the Wildspawn satyr that occupy Dire Maul should do nicely. The coagulated blood will bond the Hederine shards and power the crystal prison.",
@@ -11218,15 +13557,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak with Impsy in Felwood.",
     ["T"] = "What Niby Commands",
   },
+  [7602] = {
+    ["D"] = "If you\'re going to reanimate Kroshius, you\'re going to need Fel fire. I can make Fel fire but it\'s going to require some components.$B$BYou need to bring me flawless Fel essences from three distinct regions of the world.$B$BThe Legashi Satyrs of Azshara will have the first essence type; the Jaedenar legionnaires of Jaedenar the second type and the felguard sentries of the Blasted Lands the third.$B$BBring me back one of each essence type and I will create the Fel fire, allowing you to reanimate Kroshius.",
+    ["O"] = "Impsy in Felwood has asked that you bring him three Flawless Fel Essences originating from three distinct locations.$B$BThe Legashi Satyrs of Azshara hold the Flawless Fel Essence of their region. The Jaedenar Legionnaires of Jaedenar hold the Flawless Fel Essence of their region. The Felguard Sentries of the Blasted Lands hold the Flawless Fel Essence of their region.$B$BRecover the Flawless Fel Essences and return  to Impsy in Felwood.",
+    ["T"] = "Flawless Fel Essence",
+  },
   [7603] = {
     ["D"] = "Kroshius lays in a heap to the northeast, in the Shatter Scar Vale. Take this Fel fire and use it on his remains. The fire should reanimate the fallen infernal.$B$BAt this point, I fully expect him to kill you and your minion.$B$BIf by some miracle you happen to kill Kroshius, take his infernal core and return it to Niby.",
     ["O"] = "Search Shatter Scar Vale in Felwood for the remains of Kroshius. When you locate the remains, use the Fel Fire near them and await Kroshius\' return. When the infernal has awoken, slay him and take from his corpse Kroshius\' Infernal Core.$B$BReturn Kroshius\' Infernal Core to Niby the Almighty in Felwood.",
     ["T"] = "크로쉬우스의 지옥핵",
-  },
-  [7604] = {
-    ["D"] = "이하 서명인은 이에 토륨 대장조합(이하 토대 조합)에 배달되는 설퍼론 주괴가 모조품이 아닌 진품임을 선언하고, 또한 설퍼라스의 제작, 제조, 주조, 수색, 판매, 식음을 시도하다 발생할 수 있는 모든 손해에 대해서 토대 조합의 책임 또는 잘못이 아님을 알립니다.$B$B본 계약에 서명하는 것은 여기 나열된 모든 조항에 동의한다는 것을 의미합니다.$B$B_________________$B$B서명",
-    ["O"] = "설퍼론 도면을 받으려면 설퍼론 주괴와 토륨 대장조합 계약서를 로크토스 다크바게이너에게 가져가야 합니다.",
-    ["T"] = "대장조합 계약서",
   },
   [7621] = {
     ["D"] = "",
@@ -11242,6 +13581,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Mor\'zul says that you want to open a portal to Xoroth.  To do that, you\'ll need Xorothian stardust.  That\'s not easy to find on Azeroth!$B$BThere is one being who might have some: Lord Banehollow in Jaedenar, the seat of the Shadow Council!  Speak with him and he might part with the stardust.$B$BBut if you\'re going to Jaedenar, then you\'ll need to cloak yourself in the Shadow Council\'s own flavor of evil.  That will require some of my shadowy potions, and that will cost you...",
     ["O"] = "Purchase Shadowy Potions from Gorzeeki in the Burning Steppes.$B$BUse the potions to travel through Jaedenar, and speak with Lord Banehollow.",
     ["T"] = "군주 베인할로우",
+  },
+  [7624] = {
+    ["D"] = "You wish to enter my good graces?  Then kill for me.$B$BMy servant, Ulathek, is pathetic how he grovels before me, all the while plotting with Lord Hel\'nurath on Xoroth.  Hel\'nurath plans to usurp my power here, and Ulathek is his spy...$B$BProve that you serve me and not my rivals.  Confront Ulathek in his quarters, in the Shadow Hold to the west.  Tell him that I know his secret and watch as fear grips him.  Then, bring me the traitor\'s heart!",
+    ["O"] = "Confront Ulathek, then bring The Traitor\'s Heart to Lord Banehollow in Jaedenar.",
+    ["T"] = "Ulathek the Traitor",
   },
   [7625] = {
     ["D"] = "So you come to me seeking Xorothian stardust?  You wish to open a portal to Xoroth, the domain of Hel\'nurath my rival?  Perhaps you plan to steal from him one of his precious dreadsteeds?$B$BVery well.  My servant Ur\'dan has a supply of Xorothian stardust.  You may obtain it from him... if you can pay the price.",
@@ -11263,6 +13607,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 3 Black Dragonscales to Gorzeeki Wildeyes in the Burning Steppes.",
     ["T"] = "심판의 양초",
   },
+  [7629] = {
+    ["D"] = "There is one more process required for Mor\'zul\'s parchment; I need paper infused with Xorothian stardust.  And... I\'m afraid I can\'t do that here.  I don\'t have the equipment!$B$BThere is an alchemy lab, however, with everything needed.  It\'s in the Scholomance, on the isle of Caer Darrow in the Plaguelands.$B$BI can\'t make the trip, but here - take this jar.  There\'s an imp inside who is quite clever.  Let him out at the alchemy lab and he\'ll infuse the parchment.",
+    ["O"] = "Bring the Imp in a Jar to the alchemy lab in the Scholomance.  After the parchment is created, return the jar to Gorzeeki Wildeyes.",
+    ["T"] = "Imp Delivery",
+  },
   [7630] = {
     ["D"] = "Now that the Bell, Wheel and Candle are made, I should make a black lodestone.  During your ritual, you\'ll need that lodestone to maintain the other ritual objects if they should fail.$B$BTo make the lodestone, I require arcanite.  Do you have any?  If not, then... you\'ll have to get the arcanite from an alchemist.$B$BReturn to me when you have the arcanite, and then I\'ll make the black lodestone.",
     ["O"] = "Bring 1 Arcanite Bar to Gorzeeki in the Burning Steppes.",
@@ -11272,6 +13621,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "All the preparations are made.  Now, you must perform the ritual to create a Circle of Greater Summoning, then use the parchment infused with Xorothian stardust... to open a portal to Xoroth.$B$BI have written the instructions for the ritual onto a scroll.  Study it closely, for you must perform each step exactly if you wish to succeed.$B$BFortune to you, $N.  And may the souls of your enemies swiftly find their way into your shard pouch.",
     ["O"] = "Read Mor\'zul\'s Instructions.  Summon a Xorothian Dreadsteed, defeat it, then bind its spirit to you.",
     ["T"] = "소로스의 공포마",
+  },
+  [7632] = {
+    ["D"] = "The epidermis of the leaf glows a bright green. The surface is extremely rugose, exposing several veins and wrinkles.$B$BIf you had to take a guess, you would say this leaf came from something ancient and powerful.$B$BMaybe you should find the original owner of this leaf?",
+    ["O"] = "Find the owner of the Ancient Petrified Leaf. Good luck, $N; It\'s a big world.",
+    ["T"] = "The Ancient Leaf",
+  },
+  [7633] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "An Introduction",
   },
   [7634] = {
     ["D"] = "Greetings, $c. I am Hastat, Ancient of Lore. I hold knowledge lost eons ago.$B$BWith the proper binding, one of my leaves can serve as a quiver the likes of which has not been seen in 10,000 years. A quiver that when accompanied by a bow of Ancients, could grant untold powers.$B$BReturn here with sinew from an adult blue dragon and this quiver shall be yours.",
@@ -11283,10 +13642,40 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Stoma the Ancient has asked that you bring him a Mature Black Dragon Sinew. Should you find this sinew, return it to Stoma in Felwood.",
     ["T"] = "최고의 활시위",
   },
+  [7636] = {
+    ["D"] = "Agents of the Burning Legion are still active in our world, $c. These agents corrupt all that they touch. Nature wilts and weeps in their presence.$B$BYou must track down these demonic corrupters and destroy them, $N. Be warned, you must engage them by yourself or they will flee. As long as you are alone, they will try and destroy you. You must strike at them, turning their arrogance into misery.$B$BI grant you a piece of my bark, the inscriptions shall lead you to your targets. Retrieve their heads.",
+    ["O"] = "You must find and destroy these four demonic corrupters:$B$BSimone the Seductress.$B$BKlinfran the Crazed.$B$BSolenor the Slayer.$B$BArtorius the Doombringer.$B$BDestroy these creatures and return to Vartrus the Ancient in Felwood with their heads.$B$BRefer to the Petrified Bark in your inventory for clues as to their whereabouts.$B$BYou MUST complete this task by yourself.",
+    ["T"] = "Stave of the Ancients",
+  },
+  [7637] = {
+    ["D"] = "In order to prepare yourself for this task, you must first show due sacrifice and judgment... with an emphasis on sacrifice.$B$BYou must acquire High Priest Rohan\'s exorcism censer for your task.  Even though its use will be for good and just reasons, due compensation must be given for it.$B$BProceed to Ironforge and speak with the High Priest.  By bringing ample coin with you to help offset the loss of his censer, it will show your due sacrifice.$B$BGo now $N, time is of the essence.",
+    ["O"] = "Travel to Ironforge and get High Priest Rohan\'s Exorcism Censer.  You will need to make a donation of 150 gold in order to secure it.",
+    ["T"] = "Emphasis on Sacrifice",
+  },
   [7638] = {
     ["D"] = "The time has come, $N, for you to learn about what it will take for you to acquire something you have no doubt waited on for some time... your charger.$B$BSpeak with Lord Grayson Shadowbreaker here in Stormwind\'s Cathedral District.  It is he who will guide you not only though the legerdemain of a Paladin\'s most trusted mount, but the tasks before you to acquire one of your own.$B$BI wish you the best in this trial.  For the Light, noble $G brother : sister;!",
     ["O"] = "Speak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.",
     ["T"] = "그레이슨 섀도브레이커 경",
+  },
+  [7639] = {
+    ["D"] = "With my blessings, take the censer.  I myself have used it in several exorcisms, and it should serve you well for the arduous tasks that lie ahead.$B$BReturn now to Lord Grayson Shadowbreaker in Stormwind, $N.  Your quest continues with him.",
+    ["O"] = "Return the Exorcism Censer to Lord Grayson Shadowbreaker in the Cathedral District of Stormwind.",
+    ["T"] = "To Show Due Judgment",
+  },
+  [7640] = {
+    ["D"] = "I have added a pinch of dirt from the tainted ground of Terrordale in the Eastern Plaguelands to the censer.  You will now use this censer to find areas there that show signs of spiritual turmoil and disturbance.  Look for green auras that permeate the ground as the physical world buckles under the torment of the spirit realm and use the censer to drive out the evil spirits.$B$BWhen you have passed sufficient judgment on the spirits there, you will be ready to proceed.",
+    ["O"] = "Use the Exorcism Censer to drive out the spirits that torment Terrordale.  When you have slain 25 Terrordale Spirits, return to Lord Grayson Shadowbreaker in the Cathedral District of Stormwind.",
+    ["T"] = "Exorcising Terrordale",
+  },
+  [7641] = {
+    ["D"] = "A paladin\'s charger is nothing more than a pack animal without proper barding for it.  The barding used by your charger not only needs to be of the finest materials possible, but because of the circumstances involved it must also be sufficiently attuned to the spirit realm.$B$BFirst things first, $N - let\'s get your barding made.  In Stormwind\'s Dwarven District is one of the finest craftsmen living today, Grimand Elmore.  His work will not be cheap, but his quality is what we seek.  Speak with him.",
+    ["O"] = "Speak with Grimand Elmore in Stormwind\'s Dwarven District.",
+    ["T"] = "The Work of Grimand Elmore",
+  },
+  [7642] = {
+    ["D"] = "You\'ll need four things for the barding - runecloth for the lining, arcanite bars for the plating, Arthas\' Tears for the spiritual attunement, and Stratholme holy water for the spiritual imbuement.  Actually, you need five things... gold for my fee.  That fee includes all labor as well as a handcrafted saddle and stirrups.$B$BOnce you\'ve got all that, I\'ll be able to finish your barding.  Until then, there are some things I can get started on for you while you assemble your collection of goods.",
+    ["O"] = "Bring 40 Runecloth, 6 Arcanite Bars, 10 Arthas\' Tears, 5 Stratholme Holy Water vials, and 150 gold to Grimand Elmore in the Dwarven District of Stormwind.",
+    ["T"] = "Collection of Goods",
   },
   [7643] = {
     ["D"] = "Your barding needs a special form of blessing, one from an appropriate spirit.  In Dire Maul is such a spirit, the Ancient Equine Spirit.  It is currently held by a corrupt treant, Tendris Warpwood.  Pass judgment upon this foul beast, $N.$B$BKnow this - freedom alone is not enough.  You must soothe the spirit before receiving its blessing.  For that, special horse feed is needed.  Travel to Southshore first and speak with Merideth Carlson on this... and prepare for more sacrifice.",
@@ -11303,10 +13692,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Retrieve 20 Enriched Manna Biscuits - the key ingredient in making Manna-Enriched Horse Feed - for Merideth Carlson at Southshore in the Hillsbrad Foothills.  The Argent Dawn is known as the sole purveyor of the biscuits.$B$BYou also need to give her 50 gold to soothe her ruffled sensibilities.",
     ["T"] = "맛좋은 만나 사료",
   },
+  [7646] = {
+    ["D"] = "We now must assemble a Divination Scryer - this will begin the trial that will allow you to redeem the fallen charger.  Your scryer, actually, is almost done.  The exorcism censer used in Terrordale is the catalyst for it, and I will fashion a suitable housing for the device.$B$BThe last components needed, though, are two diamonds.  They must be as juxtaposed in brilliance as they are in purpose - an Azerothian and a Pristine Black.  These two will be the beacon by which the scryer will pierce the shadows!",
+    ["O"] = "Bring an Azerothian Diamond and a Pristine Black Diamond to Lord Grayson Shadowbreaker in the Cathedral District of Stormwind.",
+    ["T"] = "The Divination Scryer",
+  },
   [7647] = {
     ["D"] = "Take this satchel - in it are the items you will need for your task.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to bring forth accursed spirits that must be judged.  Use your judgments wisely during this trial - they will prove more potent than you realize.  After the spirits, the death knight will appear; defeat him and reclaim the lost soul of the charger.  Only then $N, will you be able to redeem it and place your barding upon your new steed!$B$BGood luck!",
     ["O"] = "Use the Divination Scryer in the heart of the Great Ossuary\'s basement in the Scholomance.  Doing so will bring forth the spirits you must judge.  Defeating these spirits will summon forth Death Knight Darkreaver.  Defeat him and reclaim the lost soul of the fallen charger.$B$BGive the Charger\'s Redeemed Soul and the Blessed Enchanted Barding to Darkreaver\'s Fallen Charger.",
     ["T"] = "심판과 구원의 손길",
+  },
+  [7648] = {
+    ["D"] = "<Grimand wipes sweat from his brow, beaming with a sense of pride.>$B$BThere you are, my friend.  This is some of my finest work - as good as the barding I personally made for Lord Shadowbreaker when he went for his own charger.  I thank you for your trust in me to provide for you the best.$B$BNo doubt Grayson will want to see the work for himself as well.  Take your barding to him, and give him my thanks for his honorable business.",
+    ["O"] = "Take the Arcanite Barding to Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District for his inspection.",
+    ["T"] = "Grimand\'s Finest Work",
   },
   [7649] = {
     ["D"] = "이 책에는 도서관의 인장이 찍혀있습니다.",
@@ -11323,47 +13722,47 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "주인에게 책을 돌려줘야 합니다.",
     ["T"] = "Enchanted Thorium Platemail: Volume III",
   },
-  [7653] = {
+  [7652] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "황제의 판금 허리띠",
+    ["T"] = "A Blue Light Bargain",
   },
-  [7654] = {
+  [7655] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "황제의 판금 장화",
+    ["T"] = "Imperial Plate Bracer",
   },
-  [7656] = {
+  [7660] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "황제의 판금 흉갑",
+    ["T"] = "Wolf Swapping - Arctic Wolf",
   },
-  [7657] = {
+  [7661] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "황제의 판금 투구",
+    ["T"] = "Wolf Swapping - Red Wolf",
   },
-  [7658] = {
+  [7662] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "황제의 판금 다리보호구",
+    ["T"] = "New Kodo - Teal",
   },
-  [7659] = {
+  [7663] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "황제의 판금 어깨보호구",
+    ["T"] = "New Kodo - Green",
   },
-  [7667] = {
-    ["D"] = "급한 문제가 생겼소. 도와줄 거라 믿고 무슨 일인지 지금부터 설명하겠소이다.$B$B로데론의 스칼로맨스 깊은 곳에는 대형 납골당이라고 부르는 방이 있소. 난 그 등골까지 오싹해지는 방의 칠흑 같은 어둠을 뚫고 들어갈 예언의 탐지기를 완성해야 하오. 그러려면 두 개의 다이아몬드가 필요하지. 아제로스 다이아몬드와 온전한 검은 다이아몬드 말이오. 내가 알기로 그것들은 쉽게 구할 수 있는 물건이 절대 아니오. 내게 그렇게 귀한 걸 구할 뾰족한 방법이 있는 것도 아니고...$B$B$N, 날 위해 다이아몬드를 좀 구해다주겠소?",
-    ["O"] = "오그리마, 지혜의 골짜기에 있는 사고른 크레스트스트라이더의 일을 도우려면 그에게 아제로스 다이아몬드와 온전한 검은 다이아몬드를 가져가야 합니다.",
-    ["T"] = "물질적인 부탁",
+  [7664] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Ivory Raptor Replacement",
   },
-  [7668] = {
-    ["D"] = "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to call forth Darkreaver\'s spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage dome to the spirit realm!",
-    ["O"] = "Use the Divination Scryer in the heart of the Great Ossuary\'s basement in the Scholomance.  Doing so will bring forth spirits you must fight.  Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.$B$BBring Darkreaver\'s Head to Sagorne Creststrider in the Valley of Wisdom, Orgrimmar.",
-    ["T"] = "The Darkreaver Menace",
+  [7665] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Red Raptor Replacement",
   },
-  [7669] = {
+  [7666] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Again Into the Great Ossuary",
@@ -11373,20 +13772,45 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak with Lord Grayson Shadowbreaker in Stormwind\'s Cathedral District.",
     ["T"] = "그레이슨 섀도브레이커 경",
   },
+  [7671] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Frostsaber Replacement",
+  },
+  [7672] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Nightsaber Replacement",
+  },
+  [7673] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Frost Ram Exchange",
+  },
+  [7674] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Black Ram Exchange",
+  },
+  [7675] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Icy Blue Mechanostrider Replacement",
+  },
+  [7676] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "White Mechanostrider Replacement",
+  },
   [7677] = {
     ["D"] = "If you bring me your white stallion, I\'ll trade you for one from the new herd. The new horse will be just as fast as your old one, but have a different look to it. You can look at the swift steeds here to see what it will look like.$B$B$BMUST PAY 500 Gold too....",
     ["O"] = "If you bring me your white stallion, I\'ll trade you for one from the new herd. The new horse will be just as fast as your old one, but have a different look to it. You can look at the swift steeds here to see what it will look like.$B$BMUST PAY 500 Gold too....",
     ["T"] = "White Stallion Exchange",
   },
-  [7681] = {
-    ["D"] = "Cast feed pet on your pet.",
-    ["O"] = "Feed your pet, then talk to your questgiver.",
-    ["T"] = "Hunter test quest",
-  },
-  [7682] = {
-    ["D"] = "Cast feed pet on your pet.",
-    ["O"] = "Feed your pet, then talk to your questgiver.",
-    ["T"] = "Hunter test quest2",
+  [7678] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Palomino Exchange",
   },
   [7701] = {
     ["D"] = "고귀하신 감독관 오일피스트 님의 명에 따라, 토륨 대장조합의 요원이자 새로 고용된 용광로의 검은무쇠 잿가루 채석장 일꾼들의 지휘관인 감독관 말토류스를 처치하고 그 증거를 가져오도록 하라.$B$B현상금에 대한 사항은 감시대장 롤로 롱스트라이커에게 문의하기 바란다.",
@@ -11398,6 +13822,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "권력의 고르독 건틀릿을 찾아 혈투의 전장에 있는 대장 크롬크러쉬에게 가져가야 합니다.$B$B크롬크러쉬의 \"옛날 얘기\"에 따르면 자칭 왕자라는 토르텔드린이라는 이름의 \"기분 나쁜\" 엘프가 고르독 왕에게서 빼앗아갔다고 합니다.",
     ["T"] = "고르독 일 마무리",
   },
+  [7704] = "_",
   [7721] = {
     ["D"] = "바보 같은 결정일지는 몰라도 잊혀진 해안에 머무르면서 기계공학 작업장을 운영한다 치면 저 성가신 정령들을 좀 손봐야 할 겁니다. 그놈들, 정령술을 남용한 대가를 치르게 될 겁니다!$B$B하지만 이 정령들은 제가 만든 형상축소기에 이상적인 천연 동력원이니 저나 제 밀정이라 할 수 있을 당신에게는 다행스러운 일이지요. 가서 녀석들을 처치하십시오! 하지만 녀석들을 처치하더라도 물의 정령 핵은 꼭 가져오셔야 해요!",
     ["O"] = "페랄라스의 잊혀진 해안에 있는 바다 정령과 바다 물보라 정령에게서 물의 정령 핵 10개를 모아 부두 근처에 있는 조르빈 팬대즐에게 가져가야 합니다.",
@@ -11417,6 +13842,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "늘 이런 식이지. 이 늙은 한셀이 잠깐 쉬면서 내 인생을 회고해 보려고만 하면 위에서 다른 할 일이 떨어진단 말이지.$B$B이것 참! 이리 와 보게. 어서 이리 와 보라고...$B$B그러니까, 거대한 용암거미들이 무슨 소동을 벌이고 있다고 하는데, 오일피스트 말로는 녀석들이 뒤꽁무니 한가운데에 있는... 뭐 어쨌든, 구멍에서 불을 뿜어 대며 어린 아이들을 놀래킨다는군.$B$B우리가 녀석들을 처치해야 할 모양이야. 아니지, 우리라기보다는 자네가 좀 처치해 주게.",
     ["O"] = "이글거리는 협곡의 고원과 용암 지대에서 서식하는 거대한 용암거미 20마리를 처치한 후, 이글거리는 협곡에 있는 한셀 헤비핸드에게 가야 합니다.",
     ["T"] = "뒤꽁무니에서 불을 뿜는 거미",
+  },
+  [7725] = {
+    ["D"] = "I know you\'ve gathered residue for me already... but should you find yourself for want of an encore performance to a fun-time activity, I can always use more residue.$B$BWhile I can\'t offer nearly as much in the way of compensation again, I\'ll be more than happy to spread the good word of your service to all my goblin friends with ears.$B$BBelieve me $g sir : madam; when I say that these goblins have quite large ears.",
+    ["O"] = "Use Zorbin\'s Ultra-Shrinker to zap any kind of giant found in Feralas into a more manageable form.  Bring 10 Miniaturization Residues found on the zapped versions of these giants to Zorbin Fandazzle at the docks of the Forgotten Coast, Feralas.",
+    ["T"] = "Again With the Zapped Giants",
   },
   [7726] = {
     ["D"] = "More work, you say?  Did my heroic mission of collecting bits of goo found inside elemental beings not slake your thirst for adventure?  Perhaps more of the same will vainly try to fill the bottomless well of questing you possess...$B$BOK, melodrama aside, I do need more water elemental cores.  I\'m trying desperately to set up shop here, so the rewards won\'t be as great... but I promise you I\'ll tell everyone in earshot how you\'ve helped me.  Trust me on this - I know people in the Cartel!",
@@ -11448,6 +13878,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "고통의 구덩이에서 채찍쐐기를 물리치고 페랄라스의 모자케 야영지에 있는 아도겐 스위프트스트라이더에게 채찍쐐기의 분비선을 가져가야 합니다.",
     ["T"] = "채찍쐐기",
   },
+  [7732] = {
+    ["D"] = "You\'ve done doubly well in addressing the threat that the Zukk\'ash insects pose to Camp Mojache.  The threat these things pose is far from over, and I\'d like to ask you for one last task on behalf of the Horde.$B$BThis is a document that details all the information we have learned about these Zukk\'ash insects.  I want you to deliver it to Zilzibin Drumlore in the Drag of Orgrimmar.  He\'s an expert on alien creatures like these; I hope he can do something with the lore we\'ve obtained.",
+    ["O"] = "Deliver the Camp Mojache Zukk\'ash Report to Zilzibin Drumlore.  He resides in the Drag of Orgrimmar.",
+    ["T"] = "Zukk\'ash Report",
+  },
   [7733] = {
     ["D"] = "I have a lead on an even BETTER source of hides, if that\'s even possible to believe!  In the northern parts of Feralas - deep within Rage Scar Hold - are another throng of yetis.  They\'re much tougher than the ones you dealt with before, so if you\'re up for a bigger challenge you\'d best be on your toes!$B$BI would reward you handsomely for a stack of ten of their hides; bring them to me here, and we\'ll finish our business.",
     ["O"] = "Bring 10 Rage Scar Yeti Hides to Pratt McGrubben at Feathermoon Stronghold, Feralas.",
@@ -11457,11 +13892,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "I have a lead on an even BETTER source of hides, if that\'s even possible to believe!  In the northern parts of Feralas - deep within Rage Scar Hold - are another throng of yetis.  They\'re much tougher than the ones you dealt with before, so if you\'re up for a bigger challenge you\'d best be on your toes!$B$BI would reward you handsomely for a stack of ten of their hides; bring them to me here, and we\'ll finish our business.",
     ["O"] = "Bring 10 Rage Scar Yeti Hides to Jangdor Swiftstrider at Camp Mojache, Feralas.",
     ["T"] = "품질 향상",
-  },
-  [7735] = {
-    ["D"] = "유별나게 두껍고 튼튼해 보이는 온전한 설인 가죽을 찾았습니다. 무쇠설인 소굴에 사는 설인들의 가죽보다도 더 두껍고 튼튼합니다.$B$B페더문 요새에 있는 프랫 맥그루벤이 설인 가죽을 취급하니 이 가죽에 상당히 관심을 가질 것 같습니다.",
-    ["O"] = "페랄라스의 페더문 요새에 있는 프랫 맥그루벤에게 온전한 설인 가죽을 가져가야 합니다.",
-    ["T"] = "온전한 설인 가죽",
   },
   [7736] = {
     ["D"] = "",
@@ -11483,9 +13913,24 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "Praise from the Emerald Circle <NYI> <TXT>",
   },
+  [7781] = {
+    ["D"] = "The old feeling returns. The welcome pangs of victory reverberate throughout your being. Before you lies the monolithic, battle scarred head of Nefarian. Return it to your Highlord, champion.",
+    ["O"] = "Return the Head of Nefarian to Highlord Bolvar Fordragon in Stormwind.",
+    ["T"] = "검은바위의 군주",
+  },
   [7782] = {
     ["D"] = "영웅의 계곡으로 가서 야전사령관 아프라샤비와 얘기하십시오.",
     ["O"] = "스톰윈드에 있는 영웅의 계곡으로 가서 야전사령관 아프라샤비와 대화해야 합니다.",
+    ["T"] = "검은바위의 군주",
+  },
+  [7783] = {
+    ["D"] = "The old feeling returns. The welcome pangs of victory reverberate throughout your being. Before you lies the monolithic, battle scarred head of Nefarian. Return it to your Warchief, champion.",
+    ["O"] = "Return the Head of Nefarian to Thrall in Orgrimmar.",
+    ["T"] = "검은바위의 군주",
+  },
+  [7784] = {
+    ["D"] = "Seek out High Overlord Saurfang in the Valley of Strength.",
+    ["O"] = "Speak with High Overlord Saurfang in Orgrimmar. He stands waiting for you in the Valley of Strength.",
     ["T"] = "검은바위의 군주",
   },
   [7785] = {
@@ -11513,30 +13958,36 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
     ["T"] = "Quell the Silverwing Usurpers",
   },
+  [7790] = "_",
+  [7795] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "A Donation of Runecloth",
+  },
   [7797] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "차원 분할기 : 눈망루 마을",
   },
-  [7801] = {
+  [7800] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "룬무늬 옷감 추가 기부",
+    ["T"] = "A Donation of Runecloth",
   },
   [7805] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "A Donation of Runecloth",
   },
-  [7806] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "룬무늬 옷감 추가 기부",
-  },
   [7810] = {
     ["D"] = "검투사가 되는 게 이렇게 간단할 리 없습니다!구루바시에서 행사를 운영하는 해적단원이 더 알지도 모릅니다.",
     ["O"] = "Speak with Short John Mithril in the Stranglethorn Arena.",
     ["T"] = "전문 검투사의 징표",
+  },
+  [7811] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "A Donation of Runecloth",
   },
   [7815] = {
     ["D"] = "녀석들의 커다란 눈망울에 속지 말게! 바닷물 무쇠턱거북 녀석들은 위협적인 놈들이야. 저 덩치만 큰 녀석들이 내 미끼를 계속 훔쳐가는 통에 적어도 5분에 하나씩 낚싯줄을 갈아 끼워야 하거든.$B$B나와 깨진엄니 마을 주민들을 도와주는 셈치고 녀석들을 처치해 주게. 녀석들의 무리 전체를 처치해 버리게나!",
@@ -11553,10 +14004,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "A Donation of Runecloth",
   },
-  [7825] = {
+  [7823] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "룬무늬 옷감 추가 기부",
+    ["T"] = "A Donation of Runecloth",
+  },
+  [7824] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "A Donation of Runecloth",
   },
   [7828] = {
     ["D"] = "많은 용감한 트롤들이 동부 내륙지의 사나운 야생동물들에게 목숨을 잃었소. 은빛갈기늑대들은 우리 사냥꾼들에게 가장 큰 위협 중 하나지. 녀석들은 덤불이나 지형을 이용해 숨어 기다리다가 기회가 생기면 습격하곤 한다오.$B$B이런 포악한 것들을 그냥 내버려둬서는 안 되오!$B$B은빛갈기늑대를 잡으려면 은빛갈기늑대처럼 생각해야 하오. 놈들을 추적하여 모두 처치해 버리시오!",
@@ -11573,15 +14029,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "동부 내륙지의 깨진엄니 마을에 있는 사냥꾼 마코르가 우두머리 뾰족부리그리핀 한 마리를 처치하고 그 우두머리 그리핀의 깃털을 가져다 달라고 했습니다$B$B우두머리 뾰족부리그리핀은 주로 동부 내륙지의 황야에 서식하는 희귀종이라고 합니다.",
     ["T"] = "트롤의 복수",
   },
-  [7832] = {
+  [7836] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "룬무늬 옷감 추가 기부",
-  },
-  [7837] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "룬무늬 옷감 추가 기부",
+    ["T"] = "A Donation of Runecloth",
   },
   [7838] = {
     ["D"] = "Avast Lubber!   Bring me 12 trinkets of the Arena Master and then ye shall be a Grandmaster of the Gurubashi Arena!   Arrrr!",
@@ -11603,6 +14054,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Otho Moji\'ko at Revantusk Village in the Hinterlands wants you to slaughter 15 Highvale Outrunners, 15 Highvale Scouts, 15 Highvale Marksman and 15 Highvale Rangers. Return to him when this task is complete.$B$BYou can find the Highvale high elves at the Quel\'Danil Lodge in the northwestern region of the Hinterlands.",
     ["T"] = "와일드해머일족에게 보내는 통첩장",
   },
+  [7842] = {
+    ["D"] = "They say the Wildhammer and gryphon are as close to each other as troll and mate. Disgusting, but we be able to use this to our advantage, mon. We send them another message.$B$BKill all the gryphons you see in the Hinterlands, collect their feathers. From this we make the final message.",
+    ["O"] = "Otho Moji\'ko at Revantusk Village in the Hinterlands wants you to bring him 10 Long Elegant Feathers from the gryphons that inhabit the Hinterlands. Return to him once this task is complete.$B$BGryphons are known to inhabit every region of the Hinterlands.",
+    ["T"] = "Another Message to the Wildhammer",
+  },
+  [7843] = {
+    ["D"] = "<Otho hands you a long, blood drenched spear, wrapped in several gryphon feathers.>$B$BYou take this, mon. You take this to Aerie Peak, dead center of town by the well. You plant it! Drive it right into the ground! Show those dwarves that troll mean business! Come back when you do this. Hopefully you come back alive.",
+    ["O"] = "Otho Moji\'ko at Revantusk Village in the Hinterlands wants you to travel to Aerie Peak in the western region of the Hinterlands and place the Final Message to the Wildhammer by the well in the center of town. Return to him once this task is complete.$B$BBeware of angry Wildhammer dwarves and unruly members of the Alliance.",
+    ["T"] = "The Final Message to the Wildhammer",
+  },
   [7844] = {
     ["D"] = "동부 내륙지에는 서로 다른 세 트롤 부족이 산답니다. 세 부족 간의 닮은 점이라고는 모두 트롤족이고 사는 곳이 동부 내륙지라는 것밖엔 없답니다.$B$B썩은가지 부족이라 불리는 트롤들은 그 이름에서 잘 드러나듯이 아주 타락한 집단입니다. 그들은 다른 트롤들과 인간형 생물들을 잡아먹고 살거든요.$B$B줄진 님께서 여기 계셨더라면 손목 한번 까딱하는 것만으로도 녀석들을 모두 쓸어버렸을 텐데... 안타깝게도 줄진 님께서 아직 돌아오시지 않았으니 우리가 어떻게든 알아서 해결할 수밖에 없답니다.$B$B이 지역의 쓰레기 같은 녀석들을 처리하는 일을 당신에게 맡기겠어요!",
     ["O"] = "Mystic Yayo\'jin at Revantusk Village in the Hinterlands wants you to kill 15 Vilebranch Scalpers and 10 Vilebranch Soothsayers. Return to her when this task is complete.$B$BYayo\'jin indicated that these trolls could be found near the Shaol\'watha and Agol\'watha temples in the north by northeastern region of the Hinterlands.",
@@ -11617,6 +14078,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "The key to my bindings is held by Hitah\'ya the Keeper. She is in the nearby cave. Be careful, $c, for she is guarded well.$B$BKill her and bring the key back to loosen my shackles. Only then will I be free to return home.",
     ["O"] = "Elder Torntusk at Jintha\'alor wants you to kill Hitah\'ya the Keeper to get the Shackle Key to his bindings. Return to Elder Torntusk when you have recovered the key.",
     ["T"] = "Recover the Key!",
+  },
+  [7847] = {
+    ["D"] = "Return to my mate, Primal Torntusk at Revantusk Village. Tell her that I am coming home! She is sure to reward you.",
+    ["O"] = "Elder Torntusk at Jintha\'alor wants you to return to Primal Torntusk at Revantusk Village with news of his rescue.",
+    ["T"] = "Return to Primal Torntusk",
   },
   [7848] = {
     ["D"] = "$R|1이여;여;, 우리 주변의 모든 것에는 균열이 생기고 흔들리며 무너져갑니다. 여기서 불과 두 발짝도 떨어지지 않은 곳에 검은바위 산의 심연으로 통하는 균열이 있다면 믿어지십니까? 바로 불의 군주의 입으로 통하지요.$B$B놀라셨나요? 애석한 일이로군요... 필멸의 생명체들은 자신이 보고, 만지고 느낄 수 있는 것이 아니면 전혀 이해하지 못하니 말입니다.$B$B분명히 말해두는데, 차원문은 정말로 존재하며 안으로 들어갈 수도 있습니다.$B$B귀가 솔깃해지셨나요? 방법은 간단합니다. 검은바위 나락으로 가서 핵 조각을 하나 가져오기만 하면 되죠. 제게 돌아오시면 그대의 정기를 차원문과 조화시켜 드리겠습니다.",
@@ -11642,31 +14108,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "경비대장이었던 말코르의 죽음으로 현재 깨진엄니의 경비대장 자리가 공석으로 남아있다. 깨진엄니의 경비대장을 맡고 싶은 자는 다음 시험을 통과한 다음 주술사 톤터스크 님에게 신청서를 제출하도록 하라.$B$B썩은가지 광전사 처치$B썩은가지 어둠사냥꾼 처치$B썩은가지 혈투사 처치$B썩은가지 영혼사냥꾼 처치",
     ["O"] = "You have been tasked with the decimation of 10 Vilebranch Berserkers, 5 Vilebranch Shadow Hunters, 5 Vilebranch Blood Drinkers, and 5 Vilebranch Soul Eaters.$B$BShould you complete this task, return to Primal Torntusk at Revantusk Village in the Hinterlands.",
     ["T"] = "구인광고: 깨진엄니 마을의 경비대장",
-  },
-  [7863] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "기본 파수대 구급품",
-  },
-  [7864] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "일반 파수대 구급품",
-  },
-  [7866] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "기본 정찰대 구급품",
-  },
-  [7867] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "일반 정찰대 구급품",
-  },
-  [7868] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "고급 정찰대 구급품",
   },
   [7871] = {
     ["D"] = "젊은 $C|1이여;여;, 이 터널 너머에서 그대는 투쟁과 동요의 현장을 경험하게 될 것입니다. 호드는 신성한 숲을 더럽히고 울창한 푸른 나무들을 베어내며 자신들의 전쟁 기계를 가동시키는 동력으로 사용하고 있습니다.$B$B이 길을 따라 전쟁노래 협곡으로 가서 은빛날개 요새를 지켜 주십시오. 침략자인 호드 군대를 이 땅에서 몰아내 주십시오!$B$B호드를 몰아내고 무공 훈장을 얻으십시오. 훈장을 가져오시면 보상을 지급하겠습니다.",
@@ -11703,6 +14144,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "도서관으로 되돌아가 셴드랄라의 보물을 찾아야 합니다. 임무 완수에 대한 보상을 받으십시오!",
     ["T"] = "셴드랄라의 보물",
   },
+  [7886] = {
+    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
+    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
+    ["T"] = "Talismans of Merit",
+  },
   [7887] = {
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
     ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
@@ -11718,6 +14164,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "부서진 변조기",
   },
+  [7904] = "_",
   [7905] = {
     ["D"] = "The Darkmoon Faire is coming!  Be sure to experience all the wonders and excitement of it when it comes to town!$B$BIf you act right now, you can redeem this voucher for free prize tickets!  Just hand your voucher to Gelvas Grimgate located inside the carnival.$B$BRight now, the Faire is outside Goldshire, in the Elwynn Forest.  Don\'t miss out!  Go today!",
     ["O"] = "Deliver the Free Ticket Voucher to Gelvas Grimgate, located inside the Darkmoon Faire carnival.",
@@ -11737,6 +14184,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "검투사가 되는 게 이렇게 간단할 리 없습니다!구루바시에서 행사를 운영하는 해적단원이 더 알지도 모릅니다.",
     ["O"] = "Speak with Short John Mithril in the Stranglethorn Arena.",
     ["T"] = "전문 검투사의 징표",
+  },
+  [7921] = {
+    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to aid the cause and bring me more talismans of merit. Do this, and you will earn even more of our trust.",
+    ["O"] = "You obtained a Silverwing Talisman of Merit for your last task, talk to me again, and you gain your reward.",
+    ["T"] = "Talismans of Merit",
+  },
+  [7922] = {
+    ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
+    ["O"] = "You obtained a Warsong Mark of Honor for your last task, talk to me again, and you gain your reward.",
+    ["T"] = "Mark of Honor",
   },
   [7923] = {
     ["D"] = "You have proven your value to our efforts in Warsong Gulch. Continue to rage against the Silverwing Sentinels! Bring me more marks of honor!",
@@ -11783,10 +14240,25 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "서부 몰락지대의 죽음의 폐광으로 가서 당신의 행운을 찾아야 합니다.",
     ["T"] = "당신을 기다리는 행운...",
   },
-  [7944] = {
-    ["D"] = "\"통곡의 동굴로 가서 당신의 행운을 맞이하라.\"$B$B세이지가 건네 준 점괘를 만지자 약간 따뜻한 기운이 느껴집니다. 점괘를 손에 꼭 쥐자 불모의 땅의 십자로 남서쪽에 있는 동굴의 환영이 나타납니다. 그 환영에 좀 더 집중하자 구불구불한 통로를 지나 희미하게 빛나는 차원문 앞에 도달합니다... 이 차원문은 이 동굴의 중심부로 연결됩니다. 차원문을 통과하자 어디에선가 이상한 궤짝이 나타납니다.",
-    ["O"] = "불모의 땅에 있는 통곡의 동굴로 가서 당신의 행운을 찾아야 합니다.",
-    ["T"] = "당신을 기다리는 행운...",
+  [7939] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "More Dense Grinding Stones",
+  },
+  [7941] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "More Armor Kits",
+  },
+  [7942] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "More Thorium Widgets",
+  },
+  [7943] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "More Bat Eyes",
   },
   [7945] = {
     ["D"] = "\"회색갈기 바위굴로 가서 당신의 행운을 맞이하라.\"$B$B세이지가 건네 준 점괘를 만지자 약간 따뜻한 기운이 느껴집니다. 점괘를 손에 꼭 쥐자 멀고어에 있는 회색갈기 바위굴의 환영이 나타납니다. 그 환영에 좀 더 집중하자 동굴 입구 근처에 있는 나무 그루터기가 보입니다.",
@@ -11798,6 +14270,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Kill 5 rabbits and return to Jon LeCraft by the forge on Designer Island.",
     ["T"] = "지긋지긋한 토끼 떼!",
   },
+  [7962] = "_",
   [8001] = {
     ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
     ["O"] = "Kill 5 Wretched Zombies",
@@ -11808,90 +14281,73 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "Silverwing Sentinels <NYI> <TXT>",
   },
-  [8021] = {
+  [8022] = "_",
+  [8024] = "_",
+  [8025] = "_",
+  [8041] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "Redeem iCoke Prize Voucher",
+    ["T"] = "Strength of Mount Mugamba",
   },
-  [8023] = {
+  [8042] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "Redeem iCoke Prize Voucher",
+    ["T"] = "Strength of Mount Mugamba",
   },
-  [8026] = {
+  [8043] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "Redeem iCoke Prize Voucher",
+    ["T"] = "Strength of Mount Mugamba",
   },
   [8044] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "The Rage of Mugamba",
   },
-  [8049] = {
+  [8045] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "줄다자르의 눈",
+    ["T"] = "The Heathen\'s Brand",
   },
-  [8050] = {
+  [8046] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "줄다자르의 눈",
+    ["T"] = "The Heathen\'s Brand",
   },
-  [8051] = {
+  [8047] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "줄다자르의 눈",
+    ["T"] = "The Heathen\'s Brand",
   },
-  [8052] = {
+  [8048] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "줄다자르의 천리안",
-  },
-  [8053] = {
-    ["D"] = "자네는 이교도로군. 이교도들은 우리 부족의 한 부분을 차지하지. 이교도들은 잔달라의 자유사상가들이야. 자유사상가는 억압을 두려워하지 않고, 자신의 신념을 위해 죽음도 감수하지. 자네도 자네의 믿음 때문에 죽음도 감수할 거라는 걸 알고 있네. 그건 우리 부족의 인정을 받을 만한 일이자, 자네 스스로 자신의 가치를 입증할 기회를 얻을 만한 일이지.$B$B우리에게는 마력의 보물이 반드시 필요하다네. 줄구룹으로 가서 학카르의 졸개들을 처치한 후, 내가 찾고 있는 물건인 잔달라 자유사상가의 전투 장비를 가져오게.$B$B어서 가 보게나.",
-    ["O"] = "줄구룹에서 고대 학카리 팔보호구를 구해 가시덤불 골짜기의 요잠바 섬에 있는 파괴자 진로크에게 가져가야 합니다.$B$B잔달라 부족에게 약간 우호적 이상의 평판이어야 합니다.",
-    ["T"] = "마력의 보물: 자유사상가의 손목보호대",
-  },
-  [8054] = {
-    ["D"] = "자네가 믿는 바는 우리에겐 아주 낯선 것일세, 이교도여. 고대 잔달라 부족에게는 한때 이교도라는 낙인이 찍혔었지. 당시는 구루바시 제국이 강대했을 때였다네. 이교도들은 감히 학카르의 사제들에게 덤벼들었고, 그 때문에 마치 하찮은 벌레처럼 쫓겨 죽임을 당했다네. 하지만 그 이교도들은 혈신과 대적한 자신들의 싸움에서 결코 흔들리지 않았지. 우리는 바로 그 자유사상가들이 치른 대가를 명예롭게 여긴다네.$B$B줄구룹에서 학카르의 졸개들을 처치하고 내가 찾는 마력의 보물을 가져오게. 성공하면 큰 보상을 받게 될 것이야.$B$B자, 어서 가 보게.",
-    ["O"] = "줄구룹에서 고대 학카리 어깨걸이를 구해 가시덤불 골짜기의 요잠바 섬에 있는 파괴자 진로크에게 가져가야 합니다.$B$B잔달라 부족에게 우호적 이상의 평판이어야 합니다.",
-    ["T"] = "마력의 보물: 자유사상가의 허리띠",
-  },
-  [8055] = {
-    ["D"] = "전투를 위한 방어구가 있으면 부족 내에서 힘을 갖게 된다네. 광신도들인 자유사상가들은 이런 식으로 명예를 누렸지. 그들은 자신들의 가슴보호갑에 강력한 모조를 부여했다네. 적과 맞섰을 때 자신들의 믿음은 흔들릴지언정 자신들의 가슴보호갑은 흔들리지 않도록 말이야.$B$B그런 가슴보호갑을 소유하려면 부족민들 사이에서 존경을 받아야만 하네. 줄구룹으로 가서 내가 필요로 하는 마력의 보물을 구해 오게. 줄구룹 내의 멍청이들에게 가장 큰 고통을 안기고 빼앗아서 내게 가져오게나. 자유사상가로서의 자네 가치를 아주 확고히 입증해 보여주게나.",
-    ["O"] = "줄구룹에서 고대 학카리 휘장을 구해 가시덤불 골짜기의 요잠바 섬에 있는 파괴자 진로크에게 가져가야 합니다.$B$B잔달라 부족에게 매우 우호적 이상의 평판이어야 합니다.",
-    ["T"] = "마력의 보물: 자유사상가의 가슴보호갑",
+    ["T"] = "The Hero\'s Brand",
   },
   [8056] = {
     ["D"] = "우리 지파의 추모는 신성한 광경의 은사에 대한 경의를 표합니다. 그들은 마녀 의사가 아닙니다. 그들은 시간을 보내고 뼈를 캐스팅하거나 통찰력을 얻기 위해 나뭇잎을 읽는다. 무당으로서, 당신은 이미 오구리의 힘에 대해 어떤 것을 알고 있습니다. 우리는 잔 달라가 그들이 부족에게주는 통찰력을 표창합니다. $B$BZul\'Gurub 내부에서 Paragon of Power의 제물을 가져 와서 우리에게 당신의 가치를 증명해주십시오. 우리를 위해 이것을해라. 그러면 우리는 다른 모든 것보다 우리의 상을받는 팔 브레이커를 줄 것이다.",
     ["O"] = "Bring Maywiki of Zuldazar a Primal Hakkari Armsplint.  You must also have a reputation equal to or greater than Friendly with the Zandalar Tribe.$B$BMaywiki of Zuldazar is located on Yojamba Isle, Stranglethorn Vale.",
     ["T"] = "Paragons of Power: The Augur\'s Bracers",
   },
-  [8057] = {
-    ["D"] = "제사장은 우리 부족의 핵심적인 일원이에요. 그들이 얘기하는 징후를 귀담아듣는 게 현명하죠. 동물들과 교감하고, 필요한 경우 그 동물들을 영혼에게 바치기도 하면서 우리에게 하늘의 뜻을 알려 주죠. 옛날에는 제사장의 통찰력과 지혜 덕에 우리 부족에서 분리된 구루바시 부족과의 전쟁에서 우리가 우세할 수 있었어요.$B$B줄구룹 내에서 마력의 보물을 구해 돌아와, 우리 부족에게 당신의 가치를 입증해 보이세요. 그러면 잔달라의 제사장이 갖고 싶어할 팔보호구를 주겠어요.",
-    ["O"] = "줄구룹에서 고대 학카리 손목갑옷을 구해 가시덤불 골짜기의 요잠바 섬에 있는 줄다자르의 메이위키에게 가져가야 합니다.$B$B잔달라 부족의 평판이 우호적 이상이어야만 합니다.",
-    ["T"] = "마력의 보물: 제사장의 팔보호구",
-  },
-  [8058] = {
-    ["D"] = "복수는 곧 힘이지. 잔달라 구원자가 바로 그 힘일세. 우리 부족에게는 많은 적들이 있는데, 구원자가 그들에게 정확한 복수를 행하지. 적이 우리에게 행한 죄를 응징하지 않고 넘어가는 일은 절대 없네. 구원자가 바로 그 응징을 맡는다네. 적들은 우리의 복수를 두려워하네. 당연히 그래야지. 영원히 그렇게 두려워할 거야.$B$B우리의 구원자가 되게나. 줄구룹 내에서 마력의 보물을 찾아오게. 부족의 이름으로 학카르의 졸개들을 처치하고 복수를 하면 자네에게 상을 내리겠네.",
-    ["O"] = "줄구룹에서 고대 학카리 어깨갑옷을 구해 가시덤불 골짜기의 요잠바 섬에 있는 파괴자 진로크에게 가져가야 합니다.$B$B잔달라 부족에게 약간 우호적 이상의 평판이어야 합니다.",
-    ["T"] = "마력의 보물: 구원자의 손목보호대",
-  },
-  [8060] = {
-    ["D"] = "우리 부족의 마법사들은 환영술사들로 알려져 있다네. 주문을 외울 때 강력한 모조를 사용하는데, 종종 부족의 적들을 현혹시키거나 혼란스럽게 만들지!$B$B<사악하게 웃는 알타빔>$B$B적들을 그들 스스로 자신의 광기로 인해 무릎 꿇게 만드는 강한 환영술사를 보면 그야말로 장관일세!$B$B환영술사의 도를 배우고 싶거든 줄구룹으로 가서 내가 원하는 마력의 보물을 가져오게. 그러면 우리 환영술사들이 마법 주문을 사용할 때 착용하는 손목띠를 주도록 하지.",
-    ["O"] = "줄구룹에서 고대 학카리 팔보호구를 구해 가시덤불 골짜기의 요잠바 섬에 있는 천리안 알타빔에게 가져가야 합니다.$B$B잔달라 부족에게 약간 우호적 이상의 평판이어야 합니다.",
-    ["T"] = "마력의 보물: 환영술사의 손목띠",
+  [8059] = {
+    ["D"] = "Warlocks tread dangerous ground in dealing with demons, but our demoniacs take this one step further.  Through an ancient and arcane ritual, they allow a demon to enter their being.  Rather than let it possess them though, they enslave the demon from the inside, absorbing the power of the beast for their own command.  It is a feat few are ever able to master.$B$BFor you to learn of the power of the demoniac, I must have Paragons of Power from Zul\'Gurub.  Go there and retrieve that which we seek.",
+    ["O"] = "Bring Al\'tabim the All-Seeing a Primal Hakkari Stanchion.  You must also have a reputation equal to or greater than Friendly with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
+    ["T"] = "Paragons of Power: The Demoniac\'s Wraps",
   },
   [8061] = {
     ["D"] = "We Zandalar invest power in those who speak with the authority of divinity.  Our priests are more than just healers - they are our confessors.  Evil comes both from outside threats - such as Hakkar - and from within the tribe.  Our confessors act as the judges amongst us, preserving us from the same evil that devoured the Gurubashi from inside itself.$B$BGo to Zul\'Gurub and bring back the Paragons of Power from the Gurubashi.  Learn what it means to be the confessor, and preserve us from evil.",
     ["O"] = "Bring Al\'tabim the All-Seeing a Primal Hakkari Stanchion.  You must also have a reputation equal to or greater than Friendly with the Zandalar Tribe.$B$BAl\'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
     ["T"] = "Paragons of Power: The Confessor\'s Wraps",
   },
-  [8064] = {
-    ["D"] = "우리 잔달라 부족은 드루이드의 도를 알지 못해요. 자연은 우리가 필요에 의해 개척해 나가야 하는 것이지 그 반대가 되어서는 안 되죠. 그래도 자연의 법칙과 가장 잘 조화를 이루는 건 아마 제사장일 텐데, 거기에는 그럴 만한 이유가 있어요. 짐승의 영혼을 바침으로써 곧 그들 중 하나가 된다는 것이 어떠한 것인가를 알게 되죠. 바로 그것이 자연의 진정한 힘이랍니다.$B$B줄구룹 내에서 마력의 보물을 구해 와서 당신의 가치를 입증해 보이세요. 그러면 강력한 물건을 주겠어요. 바로 많은 잔달라 제사장들이 사용하는 허리띠예요. 그래요, 아주 강한 모조를 갖고 있죠! 야 몬!",
-    ["O"] = "줄구룹에서 고대 학카리 장식띠를 구해 가시덤불 골짜기의 요잠바 섬에 있는 줄다자르의 메이위키에게 가져가야 합니다. 또한 잔달라 부족에게 우호적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "마력의 보물: 제사장의 허리띠",
+  [8062] = {
+    ["D"] = "In the dark times after the fall of the Gurubashi Empire, Zandalar predators used their prowess to provide sustenance for the tribe.  Hunters claim to be much like our tribe\'s predators - to seek the hunt is to embody the essence of the predator, yes.  Your hunt in Zul\'Gurub, however, will show us how you truly rate amongst our finest predators.$B$BBring to me a sampling of the Paragons of Power from within Zul\'Gurub.  Do so, and you\'ll take first steps in becoming the penultimate predator.",
+    ["O"] = "Bring the following Paragons of Power from Zul\'Gurub to Falthir the Sightless: A Primal Hakkari Bindings.  You must also have a reputation equal to or greater than Friendly with the Zandalar Tribe.$B$BFalthir the Sightless is located on Yojamba Isle, Stranglethorn Vale.",
+    ["T"] = "Paragons of Power: The Predator\'s Bracers",
+  },
+  [8063] = {
+    ["D"] = "The madcaps of Zandalar are similar to rogues, but above all else they embrace madness... chaos... the unpredictability of existence.  A terror to behold on the battlefield, they sowed the seeds of confusion and mayhem amongst our enemies in the savage times after the tribes splintered.  We would not be here today without them.$B$BBring to me the Paragons of Power from Zul\'Gurub that I seek, and I will grant you the first of the madcap\'s prized armors.  Embrace the madness!",
+    ["O"] = "Bring Falthir the Sightless a Primal Hakkari Armsplint.  You must also have a reputation equal to or greater than Friendly with the Zandalar Tribe.$B$BFalthir the Sightless is located on Yojamba Isle, Stranglethorn Vale.",
+    ["T"] = "Paragons of Power: The Madcap\'s Bracers",
   },
   [8065] = {
     ["D"] = "제사장의 힘의 궁극적 상징은 그들이 무엇을 입느냐는 것이죠. 그중에서도 튜닉은 그들 자신과 그들이 추구하는 천상의 지혜 사이의 연결을 상징한답니다. 흔히 제물로 바친 야수들의 여러 부위를 엮어 튜닉을 만들곤 하는데, 이로써 자신들이 가진 천부적 재능과의 연결을 기억하게 되죠.$B$B줄구룹 내에서 마력의 보물을 구해 와서 당신의 가치를 입증해 보이세요. 그러면 제사장의 진정한 힘을 발휘하는 튜닉이 당신 것이 될 것입니다.",
@@ -11963,50 +14419,35 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
     ["T"] = "Arathi Basin Resources!",
   },
+  [8081] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["T"] = "More Resource Crates",
+  },
+  [8101] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Pebble of Kajaro",
+  },
+  [8102] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Pebble of Kajaro",
+  },
+  [8103] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Pebble of Kajaro",
+  },
+  [8104] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Jewel of Kajaro",
+  },
   [8105] = {
     ["D"] = "아라시 분지에서는 자원과 영토를 놓고 전투를 벌이고 있소. 우리 부대에 필요한 보급품을 대려면 그곳 거점을 반드시 확보해야 하오. 아라시 분지 기지에서 멀리 떨어진 거점들을 공격하는 임무를 맡기겠소이다.$B$B적이 점령하고 있는 금광, 제재소, 대장간, 그리고 농장을 공격하시오. 적의 깃발을 찾아서 모두 뽑아 버리는 거요!$B$B네 곳의 깃발을 모두 뽑은 다음 돌아와 보고하시오.",
     ["O"] = "금광, 제재소, 대장간, 그리고 농장을 공격한 후 임시 주둔지에 있는 야전사령관 오슬라이트에게 가야 합니다.",
     ["T"] = "아라시 분지의 전투",
-  },
-  [8106] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "케잔의 타락",
-  },
-  [8107] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "케잔의 타락",
-  },
-  [8108] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "케잔의 타락",
-  },
-  [8109] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "케잔의 멈출 수 없는 타락",
-  },
-  [8110] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "마력 깃든 남쪽바다 해초",
-  },
-  [8111] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "마력 깃든 남쪽바다 해초",
-  },
-  [8112] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "마력 깃든 남쪽바다 해초",
-  },
-  [8113] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "마력 깃든 온전한 남쪽바다 해초",
   },
   [8114] = {
     ["D"] = "$N, 아라시 분지의 전투에서 펼친 놀라운 위업으로 당신은 큰 명예를 얻었소. 스스로 훌륭한 $C임을 입증해 보였고, 우리가 결코 무릎 꿇지 않을 거란 사실을 똑똑히 가르쳐 주었소!$B$B이번에는 좀 어려운 임무를 맡겼으면 하는데... 아라시 분지에 있는 거점을 적어도 네 곳 확보해 주시오. 그럴 수만 있다면 자원을 얻을 수 있을 뿐만 아니라 호드 놈들에게 우리 힘이 더 세다는 걸 보여줄 수 있을 것이오!$B$B어서 가시오, $N. 행운이 함께하기를!",
@@ -12018,20 +14459,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "아라시 분지에서 동시에 다섯 곳의 거점을 점령하는 임무를 완수한 다음 임시 주둔지에 있는 야전사령관 오슬라이트에게 가야 합니다.",
     ["T"] = "거점 다섯 곳 점령",
   },
-  [8116] = {
+  [8119] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "부드리스의 환영",
-  },
-  [8117] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "부드리스의 환영",
-  },
-  [8118] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "부드리스의 환영",
+    ["T"] = "The Unmarred Vision of Voodress",
   },
   [8120] = {
     ["D"] = "자네도 들었겠지만, 아라소르 연맹이 아라시 분지에 대규모 병력을 파견하고 있다고 한다. 식량과 보급품이 필요한 얼라이언스 바보들이 그곳의 풍부한 자원을 확보하려는 것이지. 놈들에게 아라시 분지는 절대로 다시 인간의 손에 넘어가지 않을 것이라는 걸 가르쳐 줘야 한다!$B$B아라시 분지로 가서 금광, 제재소, 대장간, 마구간을 공격하라. 놈들의 깃발을 끌어내려 그곳이 호드의 것임을 천명하라.$B$B어서 가라, $N... 임무를 완수한 후 돌아와서 보고하도록!",
@@ -12043,40 +14474,30 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "아라시 분지로 가서 네 곳의 거점을 동시에 확보하는 임무를 완수한 다음 망치 주둔지에 있는 죽음의경비대장 드와이어에게 가야 합니다.",
     ["T"] = "거점 네 곳 점령",
   },
-  [8122] = {
-    ["D"] = "워낙 전황이 어지러워서 확실치는 않지만, 첩보원의 보고에 의하면 아라소르 연맹의 결의가 약해진 것 같다는군. 이 틈을 이용해 놈들에게 일격을 가해야 한다! 아라시 분지로 돌아가서 전면전을 시작하라. 놈들을 모조리 처치하고 다섯 곳의 전략 요충지를 모두 점령하라! 적의 최전방 병력을 처참히 쓸어서 앞으로 자네의 잔혹함에 치를 떨게 하도록!$B$B어서 가서 파멸단의 위대한 승리를 이루라!",
-    ["O"] = "아라시 분지로 가서 다섯 곳의 거점을 동시에 확보하는 임무를 완수한 다음 망치 주둔지에 있는 죽음의경비대장 드와이어에게 가야 합니다.",
-    ["T"] = "거점 다섯 곳 점령",
+  [8123] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["T"] = "Cut Arathor Supply Lines",
   },
-  [8141] = {
+  [8124] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["T"] = "More Resource Crates",
+  },
+  [8145] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "잔달라 그림자 부적",
+    ["T"] = "The Maelstrom\'s Tendril",
   },
-  [8142] = {
+  [8146] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "잔달라 그림자 부적",
-  },
-  [8143] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "잔달라 그림자 부적",
-  },
-  [8144] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "잔달라 밤그림자 부적",
+    ["T"] = "The Maelstrom\'s Tendril",
   },
   [8147] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "The Maelstrom\'s Tendril",
-  },
-  [8148] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "혼돈의 소용돌이의 격노",
   },
   [8149] = {
     ["D"] = "우리는 아제로스의 추수절 기간 동안 우리를 대신해 희생을 감수한 영웅들에게 감사를 표하고 있습니다. 그러한 영웅 중엔 최후의 희생까지 마다하지 않은 경우도 있답니다. 얼라이언스에서 인정하는 영웅들은 많이 있지만, 빛의 수호자 우서 경의 일화만큼 비극적인 건 없지요.$B$B우서 경께 경의를 표할 수 있도록 우리를 도와 서부 역병지대에 있는 그분의 무덤으로 이 공물을 가져가 주십시오. 그분의 석상에 공물을 바친 다음 내게 돌아오십시오. 저는 추수절이 끝날 때까지만 이곳에 머무를 예정이니, 어서 우서 경께 공물을 바치고 돌아와 주시기 바랍니다.",
@@ -12087,6 +14508,76 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "우리는 아제로스의 추수절 기간에 우리를 대신해 희생을 감수한 영웅들에게 감사를 표하고 있소. 이러한 영웅 중엔 최후의 희생까지 마다하지 않은 일도 있지. 호드에서 인정하는 영웅들은 많이 있지만, 그롬 헬스크림님만큼 힘과 희생의 모범을 보인 자는 없소이다.$B$B그롬님께 경의를 표할 수 있도록 잿빛 골짜기의 악마벼락 협곡에 있는 그분의 기념비로 이 공물을 가져가 주시오. 기념비 아래쪽에 이 공물을 바친 다음 내게 돌아오시오. 나는 추수절이 끝날 때까지만 이곳에 머무를 예정이니, 시간 낭비하지 말고 어서 그롬에게 공물을 바치고 오도록 하시오.",
     ["O"] = "잿빛 골짜기의 악마벼락 협곡에 있는 그롬 헬스크림의 기념비로 가서 기념비 아래쪽에 그롬의 공물을 사용한 후, 추수절이 끝나기 전에 오그리마 바깥에 있는 야브니르 나샤크에게 가야 합니다.",
     ["T"] = "영웅 기념",
+  },
+  [8151] = {
+    ["D"] = "Ogtinc of Azshara has sent out a call for seasoned hunters such as yourself.  He is a furbolg hunter who has left his tribe to aid the Cenarion Circle.  His teachings are meant to enrich the wisdom of others who share his craft, and guide them toward maintaining a balance.  You would do well to speak with him.$b$bOgtinc resides atop the cliffs of Azshara, northeast from the Ruins of Eldarath.",
+    ["O"] = "Speak to Ogtinc in Azshara.",
+    ["T"] = "The Hunter\'s Charm",
+  },
+  [8153] = {
+    ["D"] = "The courser wears the mightiest antlers in the known lands.  Such antlers are used to defend the courser, goring an attacker and often damaging the points.  Perfect, natural antlers are the sign of an animal spirit with supreme confidence.$b$bTo hold such antlers will bestow the same confidence in you.$b$bHunt the mosshoof courser, find the perfect antlers and bring them to me.",
+    ["O"] = "Bring a pair of Perfect Courser Antlers to Ogtinc in Azshara.  Ogtinc resides atop the cliffs northeast of the Ruins of Eldarath.",
+    ["T"] = "Courser Antlers",
+  },
+  [8154] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["T"] = "Arathi Basin Resources!",
+  },
+  [8155] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["T"] = "Arathi Basin Resources!",
+  },
+  [8156] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["T"] = "Arathi Basin Resources!",
+  },
+  [8157] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["T"] = "More Resource Crates",
+  },
+  [8158] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["T"] = "More Resource Crates",
+  },
+  [8159] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you. They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important. There are key areas in the basin that hold essential resources. Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N. Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["T"] = "More Resource Crates",
+  },
+  [8160] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["T"] = "Cut Arathor Supply Lines",
+  },
+  [8161] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["T"] = "Cut Arathor Supply Lines",
+  },
+  [8162] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["T"] = "Cut Arathor Supply Lines",
+  },
+  [8163] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["T"] = "More Resource Crates",
+  },
+  [8164] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["T"] = "More Resource Crates",
+  },
+  [8165] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi. They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe. We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N. Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman. Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["T"] = "More Resource Crates",
   },
   [8166] = {
     ["D"] = "아라시 분지에서는 자원과 영토를 놓고 전투를 벌이고 있소. 우리 부대에 필요한 보급품을 대려면 그곳 거점을 반드시 확보해야 하오. 아라시 분지 기지에서 멀리 떨어진 거점들을 공격하는 임무를 맡기겠소이다.$B$B적이 점령하고 있는 금광, 제재소, 대장간, 그리고 농장을 공격하시오. 적의 깃발을 찾아서 모두 뽑아 버리는 거요!$B$B네 곳의 깃발을 모두 뽑은 다음 돌아와 보고하시오.",
@@ -12117,6 +14608,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "자네도 들었겠지만, 아라소르 연맹이 아라시 분지에 대규모 병력을 파견하고 있다고 한다. 식량과 보급품이 필요한 얼라이언스 바보들이 그곳의 풍부한 자원을 확보하려는 것이지. 놈들에게 아라시 분지는 절대로 다시 인간의 손에 넘어가지 않을 것이라는 걸 가르쳐 줘야 한다!$B$B아라시 분지로 가서 금광, 제재소, 대장간, 마구간을 공격하라. 놈들의 깃발을 끌어내려 그곳이 호드의 것임을 천명하라.$B$B어서 가라, $N... 임무를 완수한 후 돌아와서 보고하도록!",
     ["O"] = "아라시 분지의 금광, 제재소, 대장간, 그리고 마구간을 공격한 다음 망치 주둔지에 있는 죽음의경비대장 드와이어에게 가야 합니다.",
     ["T"] = "아라시 분지의 전투",
+  },
+  [8181] = {
+    ["D"] = "My delvings into the Mosh\'aru Tablets bear grim news, $N.  Hakkar\'s true form, the god himself, can be born again through the very egg into which you captured him.  Yeh\'kinya told you it was to contain his evil, but it is to recreate it!  The troll has led you astray!$B$BGo to Yeh\'kinya and demand the egg from him.  Pray that it is not too late to stop Hakkar\'s return!",
+    ["O"] = "Speak with Yeh\'kinya.",
+    ["T"] = "Confront Yeh\'kinya",
   },
   [8182] = {
     ["D"] = "$N, our worst fears have come.  Legend speaks of the Soulflayer ruling the ancient troll world through evil and terror, and his power was absolute.  If he cannot be stopped now, then his new reign may spread across all of Azeroth!$B$BThere is a contingent of Zandalarian trolls who may help us stem this tide of darkness.  They have camped on Yojamba Isle, off the coast of Stranglethorn, west of the ruins of Zul\'Kunda.  Speak with their leader, Molthor, and pray he knows how to defeat Hakkar.",
@@ -12178,20 +14674,35 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "대상",
   },
+  [8195] = {
+    ["D"] = "I seek the Paragons of Power known as the Coins of the Tribes.  They are the currency used by the various denizens of Zul\'Gurub, and each is imbued with subtle but powerful mojo.$B$BThere are nine distinct kinds to be found.  Some are sought after by my compatriots for various armors they offer Zandalar heroes.  Should you have any extra, I will trade you one of our Honor Tokens for a set of three.  You may use the Tokens with Rin\'wosho the Trader; he offers our heroes special items for them.",
+    ["O"] = "",
+    ["T"] = "줄리안, 래즈자쉬, 학카리부족 주화",
+  },
+  [8196] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Essence Mangoes",
+  },
   [8201] = {
     ["D"] = "사실일세. 학카르는 이제 줄구룹에 살면서 우리 신들의 힘을 뒤집어쓰고 있어. 이에 매혹된 대사제들이 우리가 섬기는 가장 신성한 신들의 힘을 학카르에게 쏟아붓고 있다네. 학카르는 곧 아제로스의 그 누구보다도 큰 힘을 지니게 될 걸세! 그를 멈추어야만 해!$B$B이 신성한 굴레를 가져가서 우리 신들의 힘을 학카르에게 집중시키고 있는 대사제들의 머리카락을 묶어 오게.$B$B이 일을 마치거든 다시 내게 오게나.",
     ["O"] = "역술사의 머리카락 5개를 신성한 굴레에 묶은 후, 요잠바 섬에 있는 엑잘에게 구루바시 부족 머리카락으로 된 전리품을 가져가야 합니다.",
     ["T"] = "머리카락 수집",
   },
-  [8227] = {
-    ["D"] = "이리저리 흩어져 있는 미끼와 낚시 도구들 사이에 돌돌 말아 놓은 비단 줄자가 있습니다. 줄자에 붙어 있는 꼬리표에 다음과 같이 쓰여 있습니다.$B$B\"내트 페이글, 먼지진흙 습지대.\"",
-    ["O"] = "먼지진흙 습지대에 있는 내트 페이글에게 내트의 줄자를 돌려줘야 합니다.",
-    ["T"] = "내트의 줄자",
+  [8223] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "More Glowing Scorpid Blood",
   },
   [8230] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Collin\'s Test Quest",
+  },
+  [8231] = {
+    ["D"] = "The wavethrasher is an amphibious beast living only here in Azshara.  They are powerful and resilient.$b$bThe tough, reflective scales from a wavethrasher mirror the strength of the hunter.$b$bTrack and hunt wavethrashers along the coast of Azshara, and bring me their scales.",
+    ["O"] = "Bring 6 Wavethrasher Scales to Ogtinc in Azshara.  Ogtinc resides atop the cliffs northeast the Ruins of Eldarath.",
+    ["T"] = "Wavethrashing",
   },
   [8232] = {
     ["D"] = "Now I set you on a dangerous hunt to slay the green drake, Morphaz, and bring his tooth to me.  Morphaz dwells deep in Temple of Atal\'Hakkar, the entrance to which lies in Swamp of Sorrows.$b$bIf you wish to defeat him, you must not go alone.  This drake is an enemy of many -- seek others who wish to destroy him.$b$bThe drake\'s tooth represents the power a hunter will find in the company of others.  Bring it to me and you will have learned much.",
@@ -12208,6 +14719,27 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Retrieve the Sealed Azure Bag from the Timbermaw Shaman in Azshara.  Then take the bag to Archmage Xylem, also found in Azshara.",
     ["T"] = "봉인된 하늘색 자루",
   },
+  [8235] = {
+    ["D"] = "Lord Ravenholdt has asked a favor of us both.  He wishes to remove the enchantment from this bag.$b$bUnfortunately, some of my books on the subject of dispelling were taken recently, only to be destroyed by savages.  The remains of my books are still valuable to me.$b$bIf you can bring me enough of the encoded fragments, I can piece them back together.  Your best chance is to kill the beasts of Azshara, since they have a tendency to pick up just about anything.",
+    ["O"] = "Bring 10 Encoded Fragments to Archmage Xylem in Azshara.",
+    ["T"] = "Encoded Fragments",
+  },
+  [8236] = {
+    ["D"] = "It will take some time to decipher the fragments and remove the enchantment.  When I am complete, I\'ll deliver the bag to Lord Ravenholdt personally.$b$bThere is still the matter of the key, said to be held by a green drake known as Morphaz.  The drake has made its home deep in the Temple of Atal\'Hakkar, the entrance to which lies in the Swamp of Sorrows.$b$bGather your friends and venture to his lair.  Lord Ravenholdt will await your return with the key.",
+    ["O"] = "Return the Azure Key to Lord Jorach Ravenholdt.",
+    ["T"] = "The Azure Key",
+  },
+  [8237] = "_",
+  [8238] = {
+    ["D"] = "I seek the Paragons of Power known as the Coins of the Tribes.  They are the currency used by the various denizens of Zul\'Gurub, and each is imbued with subtle but powerful mojo.$B$BThere are nine distinct kinds to be found.  Some are sought after by my compatriots for various armors they offer Zandalar heroes.  Should you have any extra, I will trade you one of our Honor Tokens for a set of three.  You may use the Tokens with Rin\'wosho the Trader; he offers our heroes special items for them.",
+    ["O"] = "",
+    ["T"] = "구루바시, 썩은가지, 마른나무껍질 주화",
+  },
+  [8239] = {
+    ["D"] = "I seek the Paragons of Power known as the Coins of the Tribes.  They are the currency used by the various denizens of Zul\'Gurub, and each is imbued with subtle but powerful mojo.$B$BThere are nine distinct kinds to be found.  Some are sought after by my compatriots for various armors they offer Zandalar heroes.  Should you have any extra, I will trade you one of our Honor Tokens for a set of three.  You may use the Tokens with Rin\'wosho the Trader; he offers our heroes special items for them.",
+    ["O"] = "",
+    ["T"] = "성난모래, 백골가루, 붉은머리 주화",
+  },
   [8241] = {
     ["D"] = "",
     ["O"] = "",
@@ -12217,6 +14749,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Restoring Fiery Flux Supplies via Heavy Leather",
+  },
+  [8243] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Zanza\'s Potent Potables",
+  },
+  [8246] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Signets of the Zandalar",
   },
   [8250] = {
     ["D"] = "대마법사 실렘이 최근 당신과 같이 경험이 풍부한 자를 찾고 있었소이다.$B$B그를 찾을 생각이라면 아즈샤라로 가면 될 것이오. 그의 탑은 절벽 꼭대기에 있고 그리로 올라갈 방법은 대마법사의 거만한 하인이 시전하는 순간이동으로만 가능하오이다.$B$B사나스는 대마법사의 탑 아래 야영지를 꾸리고 있지. 그를 찾으려면 아즈샤라의 큰길로 가서 엘다라스 폐허의 입구에 갈림길로 가면 되오. 그곳에서 절벽이 나올 때까지 쭉 북쪽으로 가시오.",
@@ -12233,45 +14775,25 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Retrieve the Arcane Shard from Morphaz and return to Archmage Xylem.",
     ["T"] = "Destroy Morphaz",
   },
-  [8254] = {
-    ["D"] = "하늘은 스스로 돕는 자를 돕는다고 하던가요... 방법은 중요하지 않아요. 이유가 더 중요한 법이지요.$B$B지금 세나리온 의회에서 도움의 손길을 절실하게 필요로 하고 있습니다. 오그틴크를 찾아가 보십시오. 아즈샤라의 엘다라스 폐허에서 북동쪽에 있는 절벽 꼭대기로 가세요.",
-    ["O"] = "아즈샤라에서 오그틴크를 찾아야 합니다.",
-    ["T"] = "세나리온 의회 지원",
-  },
   [8255] = {
     ["D"] = "The mosshoof coursers of Azshara are magnificent animals who once lived in Felwood.  They naturally resist disease and poison, and were unaffected by the corruption there.  In their ancestral wisdom, they simply chose to leave that sickened place.$b$bIt saddens my heart, but I must ask you to hunt these mighty beasts for me.  Gather four courser glands as the first ingredient for a restorative salve -- a salve we will use to heal Felwood.",
     ["O"] = "Acquire 4 Healthy Courser Glands and bring them to Ogtinc in Azshara.  Ogtinc resides atop the cliffs northeast the Ruins of Eldarath.",
     ["T"] = "Of Coursers We Know",
+  },
+  [8256] = {
+    ["D"] = "For this restorative salve, you must use a simple formula: one part poison, two parts cure.  You have acquired one cure, now you must gather the poison.$b$bPowerful undead, such as the lingering highborne who wander the Ruins of Eldarath, are sometimes so infused with evil that it coalesces into a sickly greenish goo.  To the living, this substance is known as ichor of undeath.$b$bDue to the potency of this vile element, I require only a single ichor.",
+    ["O"] = "Acquire an Ichor of Undeath for Ogtinc in Azshara.  Ogtinc resides atop the cliffs northeast the Ruins of Eldarath.",
+    ["T"] = "The Ichor of Undeath",
   },
   [8257] = {
     ["D"] = "Now the last part, the second cure.$b$bThe green drake Morphaz is known to be immune to all forms of poison and disease -- many druids died to bring us this information.  There is no doubt his blood is potent for our needs.$b$bA courier from the Cenarion Circle will take the parts you have already collected while you gather the last.  Summon your allies and seek out the drake\'s lair in the sunken temple of Atal\'Hakkar.  Bring his blood to Greta Mosshoof in Felwood.",
     ["O"] = "Kill Morphaz in the sunken temple of Atal\'Hakkar, and return his blood to Greta Mosshoof in Felwood.  The entrance to the sunken temple can be found in the Swamp of Sorrows.",
     ["T"] = "몰파즈의 피",
   },
-  [8259] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "A More Fitting Reward",
-  },
-  [8260] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "기본 아라소르 구급품",
-  },
-  [8261] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "일반 아라소르 구급품",
-  },
-  [8263] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "기본 파멸단 구급품",
-  },
-  [8264] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "일반 파멸단 구급품",
+  [8258] = {
+    ["D"] = "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary\'s basement to call forth Darkreaver\'s spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage done to the spirit realm!",
+    ["O"] = "Use the Divination Scryer in the heart of the Great Ossuary\'s basement in the Scholomance.  Doing so will bring forth spirits you must fight.  Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.$B$BBring Darkreaver\'s Head to Sagorne Creststrider in the Valley of Wisdom, Orgrimmar.",
+    ["T"] = "The Darkreaver Menace",
   },
   [8266] = {
     ["D"] = "I understand that it can be difficult at times to come out on top in Warsong Gulch. Still, your effort on our behalf - even when victory is not achieved - is important.$B$BShould you complete one of the trials inside Warsong Gulch and not achieve victory, you will still receive a Ribbons of Sacrifice. Bring it to me so that the Outriders may reward you for acting on our behalf... even if you weren\'t able to win this time.",
@@ -12293,13 +14815,19 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
     ["T"] = "희생의 기장",
   },
+  [8271] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Hero of the Stormpike",
+  },
+  [8273] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Oran\'s Gratitude",
+  },
+  [8274] = "_",
   [8275] = {
     ["D"] = "얼라이언스의 영웅들이여, 잠시 주목해 주십시오! 그동안 우리는 실리시드라는 위협적인 존재를 너무도 오랫동안 그대로 방치해 두었습니다. 우리의 적에 의해 자유를 되찾은 녀석들은 대대적인 세력 확장을 위해 꾸준히 준비해 왔습니다.$B$B지금 실리더스에서는 세나리온 의회의 군대가 저 흉측한 생물과 맞서 싸울 용사들을 모집하고 있습니다. 여기 모이신 용감한 모험가들도 동참해 주시기 바랍니다!$B$B너무 늦기 전에 서두르십시오! 아제로스를 지킬 수 있도록 도와주십시오! 실리더스로 가 세나리온 요새에 있는 바람소환사 프라우드혼을 찾아가면 임무를 알려줄 것입니다!",
-    ["O"] = "실리더스의 세나리온 요새에 있는 바람소환사 프라우드혼과 대화해야 합니다.",
-    ["T"] = "실리더스 탈환",
-  },
-  [8276] = {
-    ["D"] = "호드의 용사들은 들으시오! 오랜 시간 방치해 뒀던 존재들이 큰 위협이 되어 다가오고 있습니다. 아제로스에서 실리시드 곤충 집 근처의 땅이 진동하는 것으로 보아 녀석들이 대규모로 이동하는 것 같습니다. 이는 세력 확장을 위한 준비 과정이라고 할 수 있습니다.$B$B지금 실리더스에서는 세나리온 의회의 군대가 실리시드와 맞서 싸울 용사들을 모집하고 있습니다. 너무 늦기 전에 서두르십시오! 더 이상 놈들이 우리의 땅을 더럽히게 놔둘 수는 없습니다!$B$B용감한 투사들은 세나리온 요새에 있는 바람소환사 프라우드혼을 찾아가십시오! 실리시드를 무찌릅시다!",
     ["O"] = "실리더스의 세나리온 요새에 있는 바람소환사 프라우드혼과 대화해야 합니다.",
     ["T"] = "실리더스 탈환",
   },
@@ -12378,10 +14906,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
     ["T"] = "Quell the Silverwing Usurpers",
   },
-  [8295] = {
-    ["D"] = "The wilds of the Ashenvale forest will succumb to the might of the Horde, $r. Nothing the Silverwing say or do can stop our sovereign imperative. Kalimdor belongs to the Horde. How dare they attempt to prevent us from harvesting what is rightfully ours!$B$BLet the pride swell in your chest as you cut down their weak attempts at slowing our progress. Destroy the Silverwing Sentinels, and earn a Warsong mark of honor.  Return to me with such a mark, $N, and you will be rewarded.",
-    ["O"] = "Enter Warsong Gulch and defeat the Alliance, gain a Warsong Gulch Mark of Honor, and bring it to Captain Shatterskull at the Mor\'shan Base Camp.",
-    ["T"] = "Quell the Silverwing Usurpers",
+  [8297] = {
+    ["D"] = "War must be fought with soldiers, any soldier will tell you.  They\'ll also say that a battle fought with poor gear or on an empty stomach is lost before it starts!$B$BThat is why Arathi Basin is important.  There are key areas in the basin that hold essential resources.  Metals, weapons, food, lumber - all are needed, and all can be gained there.$B$BThat is what I want from you, $N.  Enter Arathi Basin, win the battle by holding more bases than the enemy, and return to me with a crate of resources.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Sergeant Maclear at Refuge Pointe.",
+    ["T"] = "Arathi Basin Resources!",
+  },
+  [8299] = {
+    ["D"] = "The League of Arathor is sparing no expense in their move to retake Arathi.  They, and all the races of the Alliance, now stream to this distant region, intent on expanding their hold from Refuge Pointe.  We must stop them, and the best means to stop them is to take their supplies.$B$BYou can help us, $N.  Enter Arathi Basin, known for its rich mines, fertile land and skilled craftsman.  Capture and control every base you can, win the battle, and return to me with the resources you gain.",
+    ["O"] = "Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.",
+    ["T"] = "Cut Arathor Supply Lines",
   },
   [8301] = {
     ["D"] = "The Brood of Nozdormu are naturally distrusting of the lesser races. While it is true that you have proven to me that you have the potential makings of a hero, the time has come to prove this to my master.$B$BHive\'Ashi, Hive\'Zora, Hive\'Regal: All swarming with activity and all a threat to our existence. Slay silithid at these hives and take from them a fragment of their carapace. When you can carry no more, return to me and I shall strengthen your resolve.",
@@ -12393,10 +14926,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Collect 200 Silithid Carapace Fragments and return to Baristolth.",
     ["T"] = "The Hand of the Righteous",
   },
+  [8303] = {
+    ["D"] = "It is time, $N.$B$BI must apologize for keeping so much in secret. Enemies abound, even under our very noses. Please, read from this tome and learn. Take the knowledge I give to you and seek out our master.",
+    ["O"] = "Seek out Anachronos at the Caverns of Time in Tanaris.",
+    ["T"] = "Anachronos",
+  },
   [8304] = {
     ["D"] = "내 아내 여군주 나탈리아가 실종됐소.$B$B사실 몇 주간 이상한 행동을 하더니 사라졌소이다. 주위에 아무도 없는데 그녀 혼자서 중얼거리는 걸 목격한 적도 여러 번 있었소. 그녀는 모든 게 정상이고 연구를 계속해야 한다고 고집했었소.$B$B그녀를 마지막으로 본 건 남쪽에 있는 브론즈비어드 야영지로 가는 모습이었소.$B$B내 병사들은 워낙 넓은 지역을 방어하느라 여력이 없소. 그대가 브론즈비어드 야영지로 가서 그 드워프들에게 그녀의 행방에 대해 알아봐 주시오.",
     ["O"] = "Commander Mar\'alith at Cenarion Hold in Silithus wants you to question the inhabitants of Bronzebeard\'s Encampment. You will find Bronzebeard\'s Encampment south of Cenarion Hold.$B$BOnce you have gathered the requested information, return to Commander Mar\'alith.",
     ["T"] = "사랑하는 여군주 나탈리아",
+  },
+  [8305] = {
+    ["D"] = "In the southern desert of Silithus, near the sacred barrier, exists a single crystalline tear. This tear serves as a symbol of the great losses beset upon us during the War of the Shifting Sands. Locate this tear and gaze into its depths to gain enlightenment.",
+    ["O"] = "Locate the Crystalline Tear in Silithus and gaze into its depths.",
+    ["T"] = "Long Forgotten Memories",
   },
   [8306] = {
     ["D"] = "I need you to venture into Hive\'Regal and find what became of my dearest Natalia, $N. This will be no easy task for you. Before you dive headlong into the maw of madness, make sure that you go back and speak with those dwarves. They might be able to give you some tips on dealing with the silithid that inhabit that hive.$B$BAnd $N, if she truly is as mad as they say... do what you must.$B$B<Commander Mar\'alith turns away from you.>",
@@ -12423,15 +14966,35 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Frankal Stonebridge at Bronzebeard\'s Encampment in Silithus wants you to recover a Hive\'Zora Silithid Brain, Hive\'Ashi Silithid Brain, and a Hive\'Regal Silithid Brain. Return to Frankal when you have completed this task.",
     ["T"] = "상형 문자 판독",
   },
+  [8311] = {
+    ["D"] = "I want to go trick-or-treating, but I can\'t because I\'m sick.  If you go for me, I\'d trade you the candy you get for some I already have!  I think you\'d like this candy - it makes you turn into things both funny and scary!$B$BEach of the innkeepers in the big cities have candy they give for Hallow\'s End - talk to them and do the tricks they ask for!  Also, a little gnome named Talvash in Ironforge is handing out candy as well.  When you have all the candy, bring them back to me here!",
+    ["O"] = "Speak with the innkeepers of Stormwind, Ironforge, and Darnassus, as well as Talvash del Kissel in Ironforge.  Perform the tricks they ask of you in exchange for the treats they offer.$B$BReturn to Jesper at the Stormwind Orphanage with a Darnassus Marzipan, Gnomeregan Gumdrop, Stormwind Nougat, and Ironforge Mint.",
+    ["T"] = "제스퍼를 위해 할로윈 축제 사탕 모으기!",
+  },
+  [8312] = {
+    ["D"] = "I want to go trick-or-treating, but I can\'t because I\'m sick.  If you go for me, I\'d trade you the candy you get for some I already have!  I think you\'d like this candy - it makes you turn into things both funny and scary!$B$BEach of the innkeepers in the big cities have candy they give for Hallow\'s End - talk to them and do the tricks they ask for!  Also, a troll named Kali Remik in Sen\'jin Village is handing out candy as well.  When you have all the candy, bring them back to me here!",
+    ["O"] = "Speak with the innkeepers of Orgrimmar, Undercity, and Thunder Bluff, as well as Kali Remik in Sen\'jin Village.  Perform the tricks they ask of you in exchange for the treats they offer.$B$BReturn to Spoops at the Orgrimmar Orphanage with a Thunder Bluff Marzipan, Darkspear Gumdrop, Orgrimmar Nougat, and Undercity Mint.",
+    ["T"] = "스풉스를 위해 할로윈 축제 사탕 모으기!",
+  },
   [8313] = {
     ["D"] = "미늘벌레 고기 조리법이 나온 부분은 확실히 보이지만 한 번도 들어 보지 못한 약초와 양념에 대한 내용이 나옵니다. 캘랜드라스라면 사막에서 자라는 식물에 대해 잘 알고 있을 테니 이 부분을 설명해 줄 수 있을 겁니다.",
     ["O"] = "세나리온 요새 여관에 있는 캘랜드라스에게 찢어낸 조리법 페이지를 가져가야 합니다.",
     ["T"] = "지식 공유",
   },
+  [8314] = {
+    ["D"] = "We\'re on the verge of a breakthrough, $N! The rubbings you recovered have allowed us to recreate the glyphs on this crystalline prism. They are apparently a means for the Qiraji and other unknown entities to communicate various messages to the silithid.$B$BUnfortunately, that is all we could get out of the glyphs. We need to find a way to unlock the messages hidden within the crystals.$B$BTake the glyphed crystal prism to Geologist Larksbane at Cenarion Hold.  She might be able to help.",
+    ["O"] = "Rutgar Glyphshaper at Bronzebeard\'s Encampment wants you to deliver the Glyphed Crystal Prism to Geologist Larksbane at the Cenarion Hold in Silithus.",
+    ["T"] = "밝혀지는 비밀",
+  },
   [8315] = {
     ["D"] = "The glyphs illustrate an emissary of the Qiraji meeting with three silithid at the bones of a large dragon. Above the glyphs is what I can only assume to be a code of some sort. This code might very well be the key to summoning the emissary.$B$BI will create a copy of the glyph code that you must use in the sand at the Bones of Grakkarond. If I am right, the Overlords will come thinking that new data is ready for transmission. Strike them down and confront the emissary. He holds the key to the crystals...",
     ["O"] = "Geologist Larksbane at Cenarion Hold in Silithus wants you to recover the Crystal Unlocking Mechanism from the Qiraji Emissary.$B$BYou have been instructed to take the Glyphs of Calling to the Bones of Grakkarond, south of Cenarion Hold, and draw them in the sand. Should the Qiraji Emissary appear, slay it and recover the Crystal Unlocking Mechanism. Return to Geologist Larksbane if you succeed.$B$BAssemble an army for this task, $N!",
     ["T"] = "The Calling",
+  },
+  [8316] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Armaments of War",
   },
   [8317] = {
     ["D"] = "이 조리법은 아주 간단해 보이네요. 훈제 사막 경단을 만들어 먹을 준비를 슬슬 시작해야겠군요. 절 좀 도와주지 않겠어요?",
@@ -12503,6 +15066,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 1 Large Brilliant Shard and 3 Abyssal Crests to Aurel Goldleaf in Cenarion Hold.",
     ["T"] = "Dukes of the Council",
   },
+  [8333] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Medallion of Station",
+  },
   [8334] = {
     ["D"] = "그대를 마법학회로 보내기 전에 급한 임무를 먼저 맡기겠습니다. 한때 선스트라이더 섬의 정원을 돌보던 뜰지기들이 우리의 통제를 벗어나 야수가 되어버렸습니다. 서둘러 처리해 주십시오. 녀석들은 통제력이 풀려 아주 공격적이니 조심해야 합니다. 비록 예전에는 우리의 충직한 하인이자 친구였지만 이제 공격성이 도를 지나치기에 놈들을 없애려는 것입니다.$B$B이런 부탁을 하는 제 마음도 편치만은 않군요. 하지만, 무엇보다 우리가 살아남는 것이 중요하지 않겠습니까? 애도는 나중에 해도 충분할 겁니다.",
     ["O"] = "뜰지기와 사나운 뜰지기를 각각 7마리씩 해치운 후, 선스트라이더 섬에 있는 란단 페릴론에게 가야 합니다.",
@@ -12538,6 +15106,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 5 Large Brilliant Shards and 3 Abyssal Signets to Aurel Goldleaf in Cenarion Hold.",
     ["T"] = "Lords of the Council",
   },
+  [8342] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Twilight Ring of Lordship",
+  },
+  [8343] = {
+    ["D"] = "$N, Aurel Goldleaf thinks she\'s found a way to summon and defeat a ruling member of the Abyssal Council!  Such a task will be dangerous, but you have earned great respect amongst the Cenarion Circle.  We know that if anyone can do it, you can.$B$BMay fortune go with you, $N.  Speak with Aurel when you are ready.",
+    ["O"] = "Speak with Aurel Goldleaf in Cenarion Hold.",
+    ["T"] = "Goldleaf\'s Discovery",
+  },
   [8344] = {
     ["D"] = "Heed my words, young one - there is a taint about this island, and it is far more potent than the remnants of the Scourge.$B$BI believe there is a true demonic presence on the isle.$B$BWest of here are the spires of Falthrien Academy.  The arcane wraiths that infest it are a window to the source of demonic power.  You are to bring me the essences of tainted and untainted wraiths.$B$BIn exchange for your obedience, I\'ll teach you how to summon an imp companion - your first of many as a warlock.",
     ["O"] = "Bring 4 Wraith Essences and 1 Tainted Wraith Essence to Summoner Teli\'Larien at the Sunspire on Sunstrider Isle.",
@@ -12572,6 +15150,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "또 다른 길잡이의 죽음은 정말 비극이에요. 하지만, 우리가 이 일을 선택했다면 그 정도 위험은 감수해야지요. 태양 첨탑에 있는 마법학자 이로나가 이 소포를 매날개 광장에 있는 여관으로 최대한 빨리 배달해 달라고 했어요.$B$B우리는 일손도 달리고 이런 일을 처리해 줄 사람도 마땅히 없어요.$B$B그대에게 거짓말은 하지 않겠습니다. 새벽길은 안전합니다만, 그 길을 벗어나면 매날개 광장에 이르는 여정이 대단히 험난할 수 있습니다. 자, 임무를 완수할 준비가 되셨나요?",
     ["O"] = "영원노래 숲의 매날개 광장의 여관에 있는 여관주인 델라니엘에게 이로나의 소포를 전달해야 합니다.",
     ["T"] = "소포 배달",
+  },
+  [8351] = {
+    ["D"] = "Now that you can disguise yourself as a ruling member of the Twilight Council, I am certain Bor Wildmane will want to speak with you.  Go see him, and prepare yourself for a very difficult mission...",
+    ["O"] = "Speak with Bor Wildmane in Cenarion Hold.",
+    ["T"] = "Bor Wishes to Speak",
   },
   [8352] = {
     ["D"] = "마침 후움과 당신 얘기를 하던 중이었습니다. 심연의 군주들에게 맞설 준비가 되셨다고요!$B$B미리 말씀드리지만 이번 일은 몹시 위험하기 때문에 지원 병력이 꼭 필요할 겁니다. 친구 한두 명이 아니라, 최고의 전투 전문가들로 구성된 정예 부대 말이지요. 구성원들이 당신만큼 강하다면 승산이 훨씬 높을 겁니다!$B$B성공할 경우 항상 그렇듯이 증거를 가지고 제게 돌아오십시오. 당신이 깜짝 놀랄 만한 보상을 드리겠습니다.",
@@ -12623,6 +15206,21 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "실리더스의 세나리온 요새에 있는 보르 와일드메인이 심연의 기사단을 처치하고 그 증거로 심연의 인장을 가져다 달라고 했습니다.",
     ["T"] = "심연의 의회와의 교신",
   },
+  [8362] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Abyssal Crests",
+  },
+  [8363] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Abyssal Signets",
+  },
+  [8364] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Abyssal Scepters",
+  },
   [8365] = {
     ["D"] = "무역회사에서 보내서 오셨나요? 당신이라면 절 도와 줄 수 있을 것 같군요. 잘 들으세요. 저는 아제로스 상류층 사교계에 최신 유행 의류를 공급하고 있답니다. 국왕과 왕비, 대족장과... 호드가 왕비를 뭐라고 하는지는 잘 모르지만, 아무튼 대족장 부인까지 모두 제 까다로운 안목으로 고른 옷을 입죠. 그리고 제일 마음에 드는 점은 그들 모두 터무니없이 높은 가격에 옷을 사간다는 거예요.$B$B그러니까... 당신이 도와 줄 일은 해적단 소굴로 가서 어떤 수를 써서든지 해적 모자를 많이 가지고 오는 거예요. 할 수 있겠어요?",
     ["O"] = "타나리스의 스팀휘들 항구에 있는 거만한 의류상이 남쪽바다 해적 모자 20개를 가져다 달라고 했습니다.",
@@ -12672,6 +15270,41 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "난 실수는 용납하지 않아! 사실 호드의 주장대로 알터랙 계곡은 서리늑대 부족의 영토라네.$B$B자네도 알겠지만 스톰파이크 원정대는 광석과 유물을 찾기 위한 평화적인 목적으로 계곡에 왔다네. 그런데 서리늑대 부족은 매우 잔인하고 야만적이기 짝이 없는 방법으로 그들을 살해한 거야.$B$B결코 잊어서는 안 되네! 예고도 없이 기습 공격을 한 비열한 놈들 손에 희생된 용감한 드워프들을! 지금 당장 알터랙 계곡 전장으로 달려가게. 얼라이언스를 위하여!",
     ["O"] = "전장 밖에 있는 얼라이언스 준장에게 알터랙 계곡 명예 훈장 3개를 가져가야 합니다.",
     ["T"] = "잊지 말자, 알터랙 계곡!",
+  },
+  [8376] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Armaments of War",
+  },
+  [8377] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Armaments of War",
+  },
+  [8378] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Armaments of War",
+  },
+  [8379] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Armaments of War",
+  },
+  [8380] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Armaments of War",
+  },
+  [8381] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Armaments of War",
+  },
+  [8382] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Armaments of War",
   },
   [8383] = {
     ["D"] = "The Battle in Alterac Valley rages on, $N! Have you done your part as of late, $N?",
@@ -12753,17 +15386,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "전장 밖에 있는 얼라이언스 준장에게 아라시 분지 명예 훈장 3개를 가져가야 합니다.",
     ["T"] = "OLD Claiming Arathi Basin",
   },
-  [8399] = {
-    ["D"] = "오크들이 숲을 파괴하는 것을 막기 위해 지금 은빛날개 파수대가 전쟁노래 정찰대와 교전 중일세. 은빛날개 파수대가 특별히 이 숲을 지키려는 이유는 자연을 사랑하기 때문만은 아니라네.$B$B이 숲은 대규모 공격으로부터 잿빛 골짜기를 방어할 수 있는 울타리를 이루고 있네. 이 숲이 없다면 아스트라나르는 단 하루나 이틀 만에 불모의 땅으로 병합될 수밖에 없지.$B$B전쟁노래 정찰대와의 전투에 참여해 최선을 다해 주게! 얼라이언스를 위해!",
-    ["O"] = "전장 밖에 있는 얼라이언스 준장에게 전쟁노래 협곡 명예 훈장 3개를 가져가야 합니다.",
-    ["T"] = "전쟁노래 협곡 전투",
-  },
   [8400] = {
-    ["D"] = "오크들이 숲을 파괴하는 것을 막기 위해 지금 은빛날개 파수대가 전쟁노래 정찰대와 교전 중일세. 은빛날개 파수대가 특별히 이 숲을 지키려는 이유는 자연을 사랑하기 때문만은 아니라네.$B$B이 숲은 대규모 공격으로부터 잿빛 골짜기를 방어할 수 있는 울타리를 이루고 있네. 이 숲이 없다면 아스트라나르는 단 하루나 이틀 만에 불모의 땅으로 병합될 수밖에 없지.$B$B전쟁노래 정찰대와의 전투에 참여해 최선을 다해 주게! 얼라이언스를 위해!",
-    ["O"] = "전장 밖에 있는 얼라이언스 준장에게 전쟁노래 협곡 명예 훈장 3개를 가져가야 합니다.",
-    ["T"] = "전쟁노래 협곡 전투",
-  },
-  [8402] = {
     ["D"] = "오크들이 숲을 파괴하는 것을 막기 위해 지금 은빛날개 파수대가 전쟁노래 정찰대와 교전 중일세. 은빛날개 파수대가 특별히 이 숲을 지키려는 이유는 자연을 사랑하기 때문만은 아니라네.$B$B이 숲은 대규모 공격으로부터 잿빛 골짜기를 방어할 수 있는 울타리를 이루고 있네. 이 숲이 없다면 아스트라나르는 단 하루나 이틀 만에 불모의 땅으로 병합될 수밖에 없지.$B$B전쟁노래 정찰대와의 전투에 참여해 최선을 다해 주게! 얼라이언스를 위해!",
     ["O"] = "전장 밖에 있는 얼라이언스 준장에게 전쟁노래 협곡 명예 훈장 3개를 가져가야 합니다.",
     ["T"] = "전쟁노래 협곡 전투",
@@ -12798,10 +15421,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "전장 밖에 있는 얼라이언스 준장에게 전쟁노래 협곡 명예 훈장 3개를 가져가야 합니다.",
     ["T"] = "전쟁노래 협곡 전투",
   },
-  [8410] = {
-    ["D"] = "바람의감시자 바스라가 지혜로운 주술사를 찾고 있다는 전갈이 왔소. 그런데 원소들을 모아 가져가야 대화상대로 인정하겠다는군.$B$B타렌 제분소 동쪽에 있는 강을 따라 북쪽으로 올라가다 보면 바스라를 찾을 수 있을 거요. 폐허가 나올 때까지 강을 거슬러 올라가야 하오.",
-    ["O"] = "물, 불, 대지, 바람의 샘플을 수집하여 바람의감시자 바스라에게 가져가야 합니다.",
-    ["T"] = "원소에 대한 깨달음",
+  [8409] = {
+    ["D"] = "The rotten eggs have been successfully placed inside the keg.  Future batches of ale from the Southshore Inn are sure to be ruined!$B$BYou should now report back to Darkcaller Yanka at the Wickerman Festival in Tirisfal Glade and report your success.",
+    ["O"] = "Return to Darkcaller Yanka at the Wickerman Festival in Tirisfal Glade.",
+    ["T"] = "Ruined Kegs",
   },
   [8411] = {
     ["D"] = "Welcome, $c.  You bring me the elements and then we do the talkin\'.$b$bThe fire, the air, the water, and the earth I be needin\' before I trust ya, mon.  I gots to know you be knowledgeable.",
@@ -12813,10 +15436,35 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring the pieces for the spirit totem to Bath\'rah the Windwatcher.",
     ["T"] = "정기의 토템",
   },
+  [8413] = {
+    ["D"] = "The spirit totem just isn\'t enough.  We be needin\' some voodoo magic to make it work jus\' right.$b$bThe trolls in the sunken temple have feathers strong with voodoo magics.  Go there and kill Gasher, Mijan, Zolo, Hukku, Zul\'lor, and Loro.  Then we have magic enough for a real spirit totem.",
+    ["O"] = "Bring the voodoo feathers to Bath\'rah the Windwatcher.",
+    ["T"] = "Da Voodoo",
+  },
+  [8414] = {
+    ["D"] = "Greetings, $c.  Crusaders like you are a welcome sight in these desolate reaches.$b$bYour holy strength is needed to help fight the endless undead here.  We need you to collect a large number of scourgestones and bring them to High Priest Thel\'danis.  The high priest can be found guarding Uther\'s Tomb in Sorrow Hill, not far from here.$b$bOnly one with an Argent Dawn Commission can hope to find scourgestones, so speak to Officer Pureheart if you haven\'t already.",
+    ["O"] = "Collect 20 Minion\'s Scourgestones and bring them to High Priest Thel\'danis in the Western Plaguelands.",
+    ["T"] = "Dispelling Evil",
+  },
   [8415] = {
     ["D"] = "Commander Ashlam Valorfist has sent out a call for a paladin of your purity and valor, $n.  You can find him at Chillwind Camp in the southern part of the Western Plaguelands.  Seek him and aid in his cause for the Light!",
     ["O"] = "Speak to Commander Ashlam Valorfist at Chillwind Camp.",
     ["T"] = "서리바람 야영지",
+  },
+  [8416] = {
+    ["D"] = "The evil has been purged from the stones, $n.$b$bI am aware of Commander Ashlam\'s plans, and he will require only a single inert stone.  Bring it to him so we may bathe the Scourge in righteous fire.",
+    ["O"] = "Bring the Inert Scourgestone to Commander Ashlan Valorfist in Chillwind Point.",
+    ["T"] = "Inert Scourgestones",
+  },
+  [8417] = {
+    ["D"] = "In the Blasted Lands, there is a troubled spirit who was once a great hero of the horde.  A warrior\'s honor does not die with the body, and it would serve you well to speak with him.",
+    ["O"] = "Speak with the Fallen Hero of the Horde at the entrance to the Blasted Lands.",
+    ["T"] = "A Troubled Spirit",
+  },
+  [8418] = {
+    ["D"] = "Now we must combine the inert scourgestones and create a weapon to shatter the ranks of undead.  This is no trivial task, $n.  Only the trolls of the sunken temple carry the kind of rare magic able to turn the evil of something against itself.$b$bIn the temple, the trolls are known as Gasher, Mijan, Zolo, Hukku, Zul\'lor, and Loro.  Do not feel remorse for their corrupt souls... they are not without evil.",
+    ["O"] = "Bring the voodoo feathers to Ashlam Valorfist.",
+    ["T"] = "Forging the Mightstone",
   },
   [8419] = {
     ["D"] = "악령숲에 사는 임프시라는 임프가 당신에게 부탁이 있답니다. 좀 수상하긴 하지만 어쨌든 \"신뢰 관계\"의 증표로 지옥 옷감을 한 장 가져오라더군요. 흑마법사로서 당신의 능력을 보아하니, 악령숲에서 지옥 옷감을 갖고 다니는 사티로스에 대해서 잘 알고 있을 것 같군요.$B$B피멍울 폭포 바로 위쪽에서 임프시를 찾을 수 있을 겁니다. 그곳은 매년 이맘 때쯤이면 무척이나 아름다운 경치를 뽐내지요.",
@@ -12828,15 +15476,25 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "악령숲에 있는 임프시에게 지옥 옷감을 한 장 가져가야 합니다.",
     ["T"] = "Hot and Itchy",
   },
+  [8421] = {
+    ["D"] = "Now that I have my felcloth, I can really begin making *my* pet.$b$bIt\'s going to need some eyes though.  Perhaps you could rip some rotting wood from the irontree folk for me, so I can carve out some lovely eyes.  They\'re up north in the Irontree Woods.$b$bI\'ll also need some bloodvenom essence to give it that new demon smell.  The tainted oozes carry the essence, and they hang out right here near Niby and me.",
+    ["O"] = "Bring 10 Rotting Wood and 4 Bloodvenom Essence to Impsy in Felwood.",
+    ["T"] = "The Wrong Stuff",
+  },
+  [8422] = {
+    ["D"] = "My pet is almost done.  Now I just need something to stuff it with.$b$bOnly the voodoo feathers from the trolls in the sunken temple will do.  They go by the names Gasher, Mijan, Zolo, Hukku, Zul\'lor, and Loro.  Kill them.  Kill them all.$b$bThis is no trivial task $n, so I\'ll make it worth your while by giving you something of Niby\'s -- he probably doesn\'t need it anyhow.",
+    ["O"] = "Bring a total of 6 Voodoo Feathers from the trolls in sunken temple.",
+    ["T"] = "Trolls of a Feather",
+  },
+  [8423] = {
+    ["D"] = "<The Hero looks you over.>$b$bYou are a $c, no doubt.  I would ask an honorable task of you, but I must test your strength.$b$bIt is said that Rexxar would measure the sharpness of his blades by killing a helboar with a single, swift strike.  Now I will measure your strength by killing them.",
+    ["O"] = "Kill 7 Helboar in the Blasted Lands and return to the Fallen Hero of the Horde.",
+    ["T"] = "Warrior Kinship",
+  },
   [8424] = {
     ["D"] = "The continued presence of the shadowsworn in the Blasted Lands bring great pain to me.  Their dark rituals and spells cause agony unlike any I felt while alive.$b$bThrough you I can deliver my own message of pain.  Go forth and deliver my wrath.",
     ["O"] = "Slaughter the Shadowsworn in the Blasted Lands and return to the Fallen Hero of the Horde.",
     ["T"] = "War on the Shadowsworn",
-  },
-  [8425] = {
-    ["D"] = "당신 덕분에 안식을 취할 수 있게 되었소. 당신은 보상을 받아야 할 자격이 충분하오.$B$B살아생전 내가 사용하던 무기와 갑옷은 최고라고 자부하오. 나에게는 더 이상 쓸모가 없으니 당신이 사용하는 것이 좋겠소.$B$B슬픔의 늪에 있는 가라앉은 사원으로 가서 트롤 수호자인 게이셔, 마이잔, 졸로, 후쿠, 줄로, 로로를 해치우시오. 그들이 가지고 있는 마법의 깃털을 사용하면 잠시 동안 내 육체를 만들어 내 무기와 갑옷을 당신에게 건넬 수 있는 시간을 벌 수 있소.",
-    ["O"] = "호드 영웅의 넋에게 가라앉은 사원에 있는 트롤들에게서 황색 부두 깃털, 청색 부두 깃털, 녹색 부두 깃털을 빼앗아 각 2개씩 가져가야 합니다.",
-    ["T"] = "부두 깃털",
   },
   [8426] = {
     ["D"] = "전쟁노래 협곡에서 벌어지는 은빛날개 파수대와의 전투는 대단히 중요하오. 얼라이언스는 자기들 소유도 아닌 숲을 보호한다는 구실로 우리 호드 최대의 목재 공급원을 빼앗고 오히려 본래 주인인 우리를 쫓아내려 하고 있소.$B$B절대로 내버려둬서는 안 되오! 당신이 위대한 호드의 용사라는 증거를 가지고 내게 돌아오시오!",
@@ -12928,11 +15586,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 3 Arathi Basin Mark of Honor to a Horde Warbringer outside the battlegrounds.",
     ["T"] = "OLD Conquering Arathi Basin",
   },
-  [8446] = {
-    ["D"] = "이 물건 때문에 세상이 오염되는 것입니다.$B$B이 물건과 에메랄드의 꿈에서 나타난 4마리 용 사이에 어떤 관련이 있는 것 같습니다. 이 물건의 숨겨진 용도를 알 수 있는 인물을 찾아야만 합니다. 달숲이나 세나리온 요새에 있는 드루이드가 도움을 줄 수 있을 것입니다.",
-    ["O"] = "악몽이 깃든 물건에 숨겨진 의미를 해석할 수 있는 이를 찾아야 합니다.$B$B강력한 힘을 가진 드루이드가 도움을 줄 수 있을 것입니다.",
-    ["T"] = "악몽 속의 장막",
+  [8444] = "_",
+  [8445] = "_",
+  [8447] = {
+    ["D"] = "The waters of Lake Elune\'ara should dissolve the nightmares engulfing this object. Give me a moment to perform the cleansing, $N.",
+    ["O"] = "Wait for Keeper Remulos at the Moonglade to cleanse the Nightmare Engulfed Object.",
+    ["T"] = "Waking Legends",
   },
+  [8458] = "_",
+  [8459] = "_",
   [8460] = {
     ["D"] = "나무구렁 일족은 유일하게 타락을 피해간 펄볼그 부족이오. 하지만 많은 이들이 적인지 친구인지 알아보려 하지도 않고, 펄볼그다 싶으면 맹목적으로 죽이고 있소. 상황이 이러하니 우리 나무구렁 일족은 남을 잘 믿지 않게 되었소.$B$B당신이 우리의 친구임을 증명하고 싶다면, 먼저 악령숲에서 타락한 마른가지 일족을 몰아내 주시오. 그러면 언젠가 당신을 우리 동료로 인정하겠소. 먼저 서쪽으로 가면 마른가지 전사, 길잡이, 정원사를 찾을 수 있을 거요.",
     ["O"] = "Grazle wants you to prove yourself by killing 6 Deadwood Warriors, 6 Deadwood Pathfinders, and 6 Deadwood Gardeners.  Return to him in southern Felwood near the Emerald Sanctuary when you are done.",
@@ -12942,6 +15604,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "여기서 곧장 남서쪽으로 가면 마른가지 펄볼그들의 야영지가 있소. 지금 사악한 기운이 야영지까지 침투했는데, 문제가 되기 전에 그들을 끝장내고 싶소.$B$B마른가지 일족은 사악하지만, 이는 악마의 영향으로 영혼이 타락했기 때문이오. 본래부터 사악했던 것은 아니지만 이제 어찌할 방법이 없소. 동족과 싸워야 한다는 사실이 너무나도 슬프다오.$B$B부디 이 일을 맡아주시오, $N. 돌아오면 자세한 얘기는 들려주지 않아도 되오. 내 가슴만 무너질 테니까...",
     ["O"] = "Nafien would like you to kill 6 Deadwood Den Watchers, 6 Deadwood Avengers, and 6 Deadwood Shamans.  Return to him in northern Felwood near the entrance to Timbermaw Hold.",
     ["T"] = "북방의 마른가지 일족",
+  },
+  [8462] = {
+    ["D"] = "Perhaps you are capable of handling a larger threat that we Timbermaw face.  You certainly have shown yourself capable here...$B$BAnother of my kind stands guard outside the entrance to Timbermaw Hold, along this road far to the north.  His name is Nafien; while he may appear to be a feral and unsavory beast, fear him not.  He only seeks aid against the malign forces that threaten our home.",
+    ["O"] = "Travel north along the main road in Felwood and speak with the furbolg named Nafien.  He stands guard outside the entrance to Timbermaw Hold.",
+    ["T"] = "Speak to Nafien",
   },
   [8463] = {
     ["D"] = "최근에 버림받은 자들이 우리 비전 성소 중 한 곳에서 불안정한 마나 수정을 훔쳐갔습니다. 그 수정들을 잘못 다루면 도시를 둘러싼 벽을 뚫을 만큼 강력한 폭발이 일어날 수도 있습니다.$B$B사실 녀석들이 불안정한 비전 마력의 원천에 손을 댔다가 죽는다고 해도 별로 신경이 쓰이지는 않습니다만, 전체적인 영향을 고려하면 바람직한 일은 아니죠.$B$B그들이 훔쳐 간 불안정한 마나 수정 중 남아 있는 것을 가지고 오십시오. 원래 수정을 보관하던 상자 안에 그대로 있을 겁니다.",
@@ -12953,20 +15620,25 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Salfa wants you to kill 8 Winterfall Shaman, 8 Winterfall Den Watchers, and 8 Winterfall Ursa.  Salfa is located just outside the entrance to Timbermaw Hold in Winterspring.",
     ["T"] = "겨울눈 일족의 동태",
   },
-  [8465] = {
-    ["D"] = "The threat of corruption comes not only from the Deadwood furbolgs to the south, but also from the east and the Winterfall furbolgs of Winterspring.  If you wish to further aid us, speak with Salfa on the other side of the Hold, by the Winterspring entrance.  Follow the path to the left to reach it.$B$BBe warned - if my kind inside considers you hostile or hated, they will attack.  Travel as quick as you can, avoiding conflict.  To kill a Timbermaw - even in self defense - will only alienate you further.",
-    ["O"] = "나무구렁 요새를 통과하여 여명의 설원으로 가서 나무구렁 요새 입구를 지키고 서 있는 살파와 대화해야 합니다.",
-    ["T"] = "살파와 대화하기",
-  },
   [8466] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Feathers for Grazle",
   },
+  [8467] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Feathers for Nafien",
+  },
   [8468] = {
     ["D"] = "실버문에서 악명 높은 버림받은 자들의 우두머리인 욕망의 탤리스를 현상 수배하는 바입니다. 그는 실버문의 선량한 시민들을 상대로 연쇄 범죄를 저질러 왔으며, 도시 경비병 두 명을 살해한 죄목이 있습니다.$B$B그를 처치하고 경비대장 칸렌에게 보고하는 이에게는 현상금이 있을 것입니다.",
     ["O"] = "영원노래 숲의 매날개 광장에 있는 경비대장 칸렌에게 탤리스를 처치한 증거를 가져가야 합니다.",
     ["T"] = "현상 수배: 욕망의 탤리스",
+  },
+  [8469] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Beads for Salfa",
   },
   [8470] = {
     ["D"] = "당신이 발견한 것은 마른가지 펄볼그들이 사용하는 의식의 토템 중 하나입니다. 겉으론 특별할 것이 없어 보이지만 내부에서 뿜어져 나오는 절망감을 생생하게 느낄 수 있습니다. 마른가지 펄볼그가 겪고 있는 타락을 가장 잘 설명해 줄 수 있는 것이 있다면 틀림없이 바로 이 물건일 것입니다.$B$B나무구렁 요새 안에 있는 펄볼그 중 하나가 이 토템의 용도에 대해 알아낼 수 있을 것 같기는 한데... 그들이 당신과의 대화에 응할지는 그들의 신뢰를 얼마나 얻어내는가에 달렸습니다.",
@@ -13023,6 +15695,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "영원노래 숲에 있는 벨렌드리스 화이트몬에게 신도레이 무기 8개를 가져가야 합니다.",
     ["T"] = "잃어버린 무기 수집",
   },
+  [8481] = {
+    ["D"] = "$N, thanks to you we have devised a way to summon forth the root of all evil for the Winterfall tribe - the corrupting demon that dominates them!$B$BTake this torch to the mouth of High Chief Winterfall\'s personal cave and plant it there.  Doing so will force the demon to reveal itself and investigate.  This is when you and your allies must strike it down!  Only the essence of the fallen demon will begin the lengthy healing process of the Winterfall tribe... and the salvation of Timbermaw Hold.",
+    ["O"] = "Plant the Demon Summoning Torch in the mouth of High Chief Winterfall\'s cave in the Winterfall furbolg village.  Defeat the demon and retrieve the Essence of Xandivious for Gorn One Eye in Timbermaw Hold.",
+    ["T"] = "모든 악의 근원",
+  },
   [8482] = {
     ["D"] = "이 문서에는 영원노래 숲에 있는 전략적으로 중요한 건물들의 위치가 자세히 기록된 지도가 들어있습니다. 비전 성소의 약도 역시 자세하게 그려져 있습니다. 또한 알아볼 수 없는 언어로 기록된 설명도 잔뜩 있습니다.$B$B다르나서스에서 온 첩자가 이 문서를 지니고 있었으니 앨돈 선브랜드 경비대장에게 보고하는 것이 좋겠습니다.",
     ["O"] = "영원노래 숲의 매날개 광장에 있는 앨돈 선브랜드에게 첩보 문서를 가져가야 합니다.",
@@ -13032,6 +15709,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "잘 들으십시오. 비록 첩자의 정체를 밝혀내기는 했지만 공개적으로 처치할 수 없는 미묘한 상황입니다. 놈이 달아날 가능성도 매우 크기 때문에 사로잡지 못할 수도 있습니다.$B$B북부 성소에 있는 조사단 앤빌워드를 찾아서 세상의 쓴맛을 보여 주십시오. 우리 도시에 첩자가 침투했다는 사실이 외부에 알려지는 일은 원치 않으니 조용히 처리해 주시기 바랍니다.$B$B그런 다음 놈이 죽었다는 증거를 가져오시기 바랍니다. 이번 일로 아이언포지에서도 신도레이의 일에 간섭하면 어떻게 되는지 분명히 깨닫게 될 겁니다.",
     ["O"] = "조사단 앤빌워드를 제거한 다음 영원노래 숲의 매날개 광장에 있는 앨돈 선브랜드에게 그 증거를 가져가야 합니다.",
     ["T"] = "드워프 첩자",
+  },
+  [8484] = {
+    ["D"] = "Your deeds go beyond the tale of a simple hero, $N.  If you are a representative of your people, then your people are ones we would work to make peace with.$B$BPlease - take this offering to the dwarven king that resides in a mountain of iron; I believe you call this city Ironforge.  In times past, he had tried to make contact with us on behalf of his Alliance.  It is now only fitting to acknowledge you as the key in your Alliance\'s efforts in brokering peace.",
+    ["O"] = "Bring the Timbermaw Offering of Peace to King Magni Bronzebeard in Ironforge.",
+    ["T"] = "The Brokering of Peace",
+  },
+  [8485] = {
+    ["D"] = "Your deeds go beyond the tale of a simple hero, $N.  If you are a representative of your people, then your people are ones we would work to make peace with.$B$BPlease - take this offering to the orcish warchief that resides in the lands of Durotar; I believe you call this city Orgrimmar.  In times past, he had tried to make contact with us on behalf of his Horde.  It is now only fitting to acknowledge you as the key in your Horde\'s efforts in brokering peace.",
+    ["O"] = "Bring the Timbermaw Offering of Peace to Thrall in Orgrimmar.",
+    ["T"] = "The Brokering of Peace",
   },
   [8486] = {
     ["D"] = "멍청이 케이다니스가 이쪽으로 누군가를 보낼 때가 됐구나 싶었죠.$B$B서부 성소의 부하를 늘리면 위험하다고 경고했건만! 지금 동력 전환기 중 한 대가 파괴되어 서부 성소에서 비전 망령들이 쏟아져 나오고 있답니다!$B$B수리공을 보내기 전에 먼저 그대가 가서 그 망령들을 해치워 주십시오. 서두르시기 바랍니다!",
@@ -13068,6 +15755,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "아이언포지의 군사 지구에 있는 하사관 스톤브라우에게 구리 주괴 20개를 가져가야 합니다.",
     ["T"] = "얼라이언스에 구리 주괴 조달!",
   },
+  [8493] = {
+    ["D"] = "Back again $c? Outstanding! We still need more stacks of copper bars if you can procure them for the Ahn\'Qiraj war effort.  Will you help us out?",
+    ["O"] = "Bring 20 copper bars to Sergeant Stonebrow at the airfield in Dun Morogh.",
+    ["T"] = "The Alliance Needs More Copper Bars!",
+  },
+  [8495] = {
+    ["D"] = "Back so soon? Stop making me re-evaluate my low opinion of you $c, you\'re making me feel all gooey inside. So, as you can tell we still don\'t have enough iron bars for all of the weapons, armor, steam tanks and whatnot that need building for the bug hunt. Think you have it in you to bring back another stack of twenty iron bars in between all of those trips to Zul\'Gurub, or wherever it is that you kids hang out these days?",
+    ["O"] = "Bring 20 iron bars to Corporal Carnes at the airfield in Dun Morogh.",
+    ["T"] = "The Alliance Needs More Iron Bars!",
+  },
   [8496] = {
     ["D"] = "최근 발생한 부상자로 인해 전장에서 붕대가 많이 부족하다고 합니다. 응급치료에 쓰는 붕대를 구해 세나리온 요새에 있는 바람소환사 프라우드혼에게 전달해 주십시오.",
     ["O"] = "실리더스 세나리온 요새에 있는 바람소환사 프라우드혼에게 두꺼운 룬무늬 붕대, 두꺼운 마법 붕대, 두꺼운 비단 붕대를 각각 30개씩 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 병참 임무 지령 X도 함께 가져가야 합니다.",
@@ -13083,6 +15780,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "황혼의 전투명령서를 획득하여 실리더스의 세나리온 요새에 있는 지휘관 마랄리스에게 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 전술 임무 지령 X도 함께 가져가야 합니다.",
     ["T"] = "황혼의 전투명령서",
   },
+  [8500] = {
+    ["D"] = "It is so good to see you again $N. I hope that you\'ve been doing well. It\'s true that we are still in need of thorium bars. If you have them to spare I am collecting them for the Ahn\'Qiraj war effort.",
+    ["O"] = "Bring 20 thorium bars to Dame Twinbraid at the airfield in Dun Morogh.",
+    ["T"] = "The Alliance Needs More Thorium Bars!",
+  },
   [8501] = {
     ["D"] = "전쟁을 위한 준비가 한창인 지금, 실리더스 지역에 나타나는 실리시드의 존재는 우리 일에 커다란 위협으로 떠오르고 있습니다. 당신은 하이브아쉬 공격을 위한 지원군으로 선택되었습니다. 주요 목표는 날아다니는 독침 하이브아쉬입니다.$B$B임무를 마치면 지휘관 마랄리스에게 돌아가서 보고하십시오.",
     ["O"] = "독침 하이브아쉬 30마리를 처치한 후 실리더스 세나리온 요새에 있는 지휘관 마랄리스에게 보고해야 합니다. 이 임무를 완료하려면 전투 임무 지령 XII를 가져가야 합니다.",
@@ -13092,6 +15794,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "전쟁 준비가 한창인 지금, 실리더스 지역에 출몰하는 실리시드 무리의 존재는 우리 일에 점점 더 커다란 위협으로 떠오르고 있습니다. 당신은 하이브아쉬 공격을 위한 지원군으로 선택되었습니다. 주요 목표는 일꾼 하이브아쉬입니다.$B$B임무를 마치면 지휘관 마랄리스에게 돌아가서 보고하십시오.",
     ["O"] = "일꾼 하이브아쉬 30마리를 처치해야 한 다음 실리더스 세나리온 요새에 있는 지휘관 마랄리스에게 보고해야 합니다. 또한, 이 퀘스트를 완료하려면 전투 임무 지령 III도 함께 가져가야 합니다.",
     ["T"] = "목표: 일꾼 하이브아쉬",
+  },
+  [8504] = {
+    ["D"] = "Well hello again there... what was it? Ah yes, $N! Come to see if I still need more stranglekelp have you? Well, it\'s your lucky day, because the answer to that very important question is a very affirmative YES! Think you could gather up twenty more?",
+    ["O"] = "Bring 20 stranglekelp to Private Draxlegauge at the airfield in Dun Morogh.",
+    ["T"] = "The Alliance Needs More Stranglekelp!",
+  },
+  [8506] = {
+    ["D"] = "Welcome back $c. Our collection grows, but even now we have a need for additional purple lotus. If it is still within your power to gather more of the herb, I entreat you to do so and return them to me here.",
+    ["O"] = "Bring 20 purple lotus to Master Nightsong at the airfield in Dun Morogh.",
+    ["T"] = "The Alliance Needs More Purple Lotus!",
   },
   [8507] = {
     ["D"] = "반갑소, $N. 전쟁에서 중요한 역할을 맡으려면 우선 그대 몫의 야전 임무를 완수해야 하오.$B$B하이브조라 외곽으로 가면 블랙앤빌 연대장이 이끄는 아이언포지 여단이 있을 거요.$B$B연대장이나 부관인 자넬라 스타우트해머에게 보고한 후 돌아오시오. 더욱 중요한 임무를 준비해 놓고 기다리겠소.$B$B아, 한 가지 당부할 것은 오그리마 군단에 절대 가까이 가지 마시오. 양진영의 군대는 뿌리 깊은 적개심 때문에 적당히 떨어져 있을 수밖에 없는 상황이외다.",
@@ -13118,20 +15830,60 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "아이언포지의 군사 지구에 있는 보니 스톤플레이어에게 얇은 가죽 10개를 가져가야 합니다.",
     ["T"] = "얼라이언스에 얇은 가죽 공급!",
   },
+  [8512] = {
+    ["D"] = "Good to see you again $N. It does appear that we need more light leather for the creation of the various war materiel. If you could bring me a stack of ten that would be just perfect.",
+    ["O"] = "Bring 10 light leather to Bonnie Stoneflayer at the airfield in Dun Morogh.",
+    ["T"] = "The Alliance Needs More Light Leather!",
+  },
+  [8514] = {
+    ["D"] = "Yes $g sir : ma\'am;, looks like we\'ve collected $2063w pieces of medium leather to date. I know it\'s a lot to ask, but if you\'re still willing, I could use your help in attempting to put a dent in the rest of my quota.",
+    ["O"] = "Bring 10 medium leather to Private Porter at the airfield in Dun Morogh.",
+    ["T"] = "The Alliance Needs More Medium Leather!",
+  },
+  [8516] = {
+    ["D"] = "Yep, the stack\'s still not high enough. $N, we still haven\'t reached our goal of $2071w thick leather. Just think of all the things that we can make with all of that leather! All kinds of armor and weapons. Stuff for inside the steam tanks and rifle scopes! Engineering goggles, and I bet if it ends up that we collect too much we could give the rest to the Horde for their zeppelins!$B$BYou gonna bring me back some more thick leather?",
+    ["O"] = "Bring 10 thick leather to Marta Finespindle at the airfield in Dun Morogh.",
+    ["T"] = "The Alliance Needs More Thick Leather!",
+  },
+  [8518] = {
+    ["D"] = "Ever am I amazed by the selflessness exhibited when so many would instead turn to selfishness instead. $C, I am still in need of a number of linen bandages before my assignment here is fulfilled. Will you aid me once more in the collection of those bandages?",
+    ["O"] = "Bring 20 linen bandages to Sentinel Silversky at the airfield in Dun Morogh.",
+    ["T"] = "The Alliance Needs More Linen Bandages!",
+  },
+  [8519] = {
+    ["D"] = "As you regain your composure and focus your gaze, you notice that something stirs within the crystal. Upon closer inspection, you realize that you are looking into the past... a memory... long forgotten.",
+    ["O"] = "Learn all that you can of the past, then speak with Anachronos at the Caverns of Time in Tanaris.",
+    ["T"] = "A Pawn on the Eternal Board",
+  },
   [8520] = {
     ["D"] = "안퀴라즈 전쟁이 임박함에 따라 우리 병사들에게 필요한 물자가 부족하지 않도록 모든 조치를 취해야 합니다. 우리는 여기서 바로 그런 일을 하고 있지요. 그중에서 저는 비단 붕대를 모으는 일을 맡고 있습니다.$B$B저를 좀 도와주시겠어요?",
     ["O"] = "아이언포지의 군사 지구에 있는 간호사 스톤필드에게 비단 붕대 20개를 가져가야 합니다.",
     ["T"] = "얼라이언스에 비단 붕대 조달!",
+  },
+  [8521] = {
+    ["D"] = "It is very kind of you to offer to help me again $c. It looks like we\'ve collected $2082w silk bandages, so we\'ll need more.",
+    ["O"] = "Bring 20 silk bandages to Nurse Stonefield at the airfield in Dun Morogh.",
+    ["T"] = "The Alliance Needs More Silk Bandages!",
   },
   [8522] = {
     ["D"] = "이 전쟁의 득실을 따져 보겠다면 그렇게 하시오, $C|1이여;여;. 하지만 전쟁은 이미 시작되었소. 주위의 가족과 친구들을 둘러보시오. 그리고 피할 수 없는 전쟁이라면 그들이 전쟁에서 살아남을 수 있도록 그대가 도울 수 있는 최선의 길이 무엇인지 잘 생각해 보시기 바라오.$B$B난 그러기 위해 이곳에서 수단과 방법을 가리지 않고 룬무늬 붕대를 모으고 있소이다. 어떻소, 그대도 룬무늬 붕대를 기부해 주시겠소?",
     ["O"] = "아이언포지의 군사 지구에 있는 수호자 문셰이드에게 룬무늬 붕대 20개를 가져가야 합니다.",
     ["T"] = "얼라이언스에 룬무늬 붕대 조달!",
   },
+  [8523] = {
+    ["D"] = "So it is that we come to discuss pressing matters yet again $c. Once more I thank you for your previous efforts; it is not everyone who would give so selflessly. But there is still more work to do.$B$B$N, will you once more collect runecloth bandages and return them to me here?",
+    ["O"] = "Bring 20 runecloth bandages to Keeper Moonshade at the airfield in Dun Morogh.",
+    ["T"] = "The Alliance Needs More Runecloth Bandages!",
+  },
   [8524] = {
     ["D"] = "안녕하세요? 제가 만약 \'병사들이라고 해서 먹지 않고 살 수 있을까요?\'라고 묻는다면 물론 아니라고 대답하시겠죠? 네, 저도 110%동의합니다! 그럼 우리는 의견이 같다고 할 수 있겠군요. 제가 부탁 드리고 싶은 것은 밖으로 나가 싱싱한 무지개날개다랑어를 낚은 다음 맛있게 요리를 해서 여기로 가져다 달라는 것입니다. 흠, 벌써 군침이 도는군요.",
     ["O"] = "아이언포지의 군사 지구에 있는 슬리키 개스트로놈에게 무지개날개다랑어 구이 20마리를 가져가야 합니다.",
     ["T"] = "얼라이언스에 무지개날개다랑어 구이 공급!",
+  },
+  [8525] = {
+    ["D"] = "What! You again? Well I\'ll be a monkey\'s uncle... except that I\'m a gnome. Slicky Gastronome to be precise! So you\'re back to help out again eh? Well, I can\'t say as I blame you. Don\'t you just love the smell of all of that food? <drool>$B$BEnough loitering! Get out there and bring me back more rainbow fin albacore!",
+    ["O"] = "Bring 20 rainbow fin albacore to Slicky Gastronome at the airfield in Dun Morogh.",
+    ["T"] = "The Alliance Needs More Rainbow Fin Albacore!",
   },
   [8526] = {
     ["D"] = "잘 지내시나요, $C님? 곧 벌어질 안퀴라즈 전쟁에 필요한 식량을 모으는 일에 관심이 있으실 걸로 아는데요... 제 아버지께서는 이곳을 돕는 일에 자원 봉사하는 것이 제게 아주 좋은 경험이 될 거라고 생각하셨답니다. 크게 실수하신 거죠. 저는 육식을 좋아하지 않거든요.$B$B어쨌든 괜찮으시다면 랩터 숯불구이를 많이 가져다주시면 좋겠어요. 틀림없이 모든 병사들이 좋아할 테니까요.",
@@ -13148,6 +15900,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "아이언포지의 군사 지구에 있는 여사냥꾼 스위프트리버에게 점박이놀래기 구이 20개를 가져가야 합니다.",
     ["T"] = "얼라이언스에 점박이놀래기 공급!",
   },
+  [8529] = {
+    ["D"] = "If you\'re still willing I\'d like to send you back out to bring in another haul of spotted yellowtail, $N. I\'d imagine with the expertise you gained the first time out that this catch should be much faster and easier. Are you game?",
+    ["O"] = "Bring 20 spotted yellowtail to Huntress Swiftriver at the airfield in Dun Morogh.",
+    ["T"] = "The Alliance Needs More Spotted Yellowtail!",
+  },
   [8530] = {
     ["D"] = "$C, I need your help. In the Molten Core there are these stones, singed Corestones to be precise, that we need to harvest for the Ahn\'Qiraj war effort. I\'m told that our blacksmiths and engineers can put them to good use, so that\'s where you come in. I need you to go into the Molten Core and gather up as many of these corestones as you can. Of course, you\'ll want to talk thirty-nine of your closest friends along with you.",
     ["O"] = "Bring 50 singed corestones to Commander Stronghammer at the airfield in Dun Morogh.",
@@ -13157,6 +15914,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "여기 일을 돕겠다니 정말 기쁘기 그지없소. 당신 같은 자는 흔치 않은데... 우선 필요한 게 무엇인지부터 말하겠소. 바로 구리 주괴요! 구리 광석과는 다른 것이지... 직접 제련할 시간도 인력도 부족해서 부탁하는 거요. 우리를 도와주면 당신의 노고가 널리 알려질 거요. 그런데 $C 당신, 이 일을 처리할 능력은 있는 거요?",
     ["O"] = "오그리마 정기의 골짜기에 있는 광부 크롬웰에게 구리 주괴 20개를 가져가야 합니다.",
     ["T"] = "호드에 구리 주괴 조달!",
+  },
+  [8533] = {
+    ["D"] = "Back so soon? You\'ll be a real miner in no time $c. So, you already know the drill; I need you to go out, mine up a mess of copper ore, smelt it into bars and bring it back to me here. I know that\'s something you\'re capable of, the question is, are you willing?",
+    ["O"] = "Bring 20 copper bars to Miner Cromwell in Durotar.",
+    ["T"] = "The Horde Needs More Copper Bars!",
   },
   [8534] = {
     ["D"] = "우리는 최고의 정찰병들을 실리시드 곤충 집으로 침투시켰습니다. 그중 정찰병 아제넬이 지금까지 며칠 동안 하이브조라에서 실리시드의 동태를 감시해 왔습니다. 그녀를 찾아 그동안의 경과를 기록해 놓은 보고서를 입수해 오십시오. 우린 그 정보를 바탕으로 최대한 신속하게 행동을 취해야 합니다.",
@@ -13203,6 +15965,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "오그리마, 정기의 골짜기에 있는 그런트 마우그에게 주석 주괴 20개를 가져가야 합니다.",
     ["T"] = "호드에 주석 주괴 조달!",
   },
+  [8543] = {
+    ["D"] = "Very good, I see that you are serious about the war. I\'m a little edgy waiting for it to start though, which means I\'m going to get angry if you don\'t start bringing in the goods faster. Maybe I can just practice on you instead.$B$BHar! Maybe not, \'cuz then who would bring me back the tin bars?",
+    ["O"] = "Bring 20 tin bars to Grunt Maug in Durotar.",
+    ["T"] = "The Horde Needs More Tin Bars!",
+  },
   [8544] = {
     ["D"] = "필멸의 종족들이 착용하는 화려한 어깨갑옷이 용의 날개를 본뜨려고 한 시도에서 유래했다는 소문이 있더군요.$B$B퀴라지 최고 지휘관들이 차고 있는 팔보호구를 가지고 오세요. 그럼 네파리안의 날개보다도 무시무시한 견갑으로 만들어 드릴게요!",
     ["O"] = "노즈도르무 혈족에게 중립적 평판을 얻고, 안퀴라즈에 있는 안도르고스에게 지휘의 퀴라지 팔보호구, 밤의 우상 2개, 돌 스카라베 5개, 찰흙 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
@@ -13238,11 +16005,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "이 퀘스트는 블리자드에 의해 구식으로 지정되어 더 이상 받거나 완료할 수 없습니다.</b>무법항에 있는 허클베리 스모츠에게 스모츠의 상자를 가져가야 합니다.",
     ["T"] = "선장의 상자",
   },
-  [8552] = {
-    ["D"] = "이 멋진 머리띠에는 가장자리를 따라 \"HS\" 라는 머리글자가 수놓아져 있습니다.",
-    ["O"] = "이니셜이 새겨진 머리띠를 주인에게 돌려줘야 합니다.",
-    ["T"] = "이니셜이 새겨진 머리띠",
-  },
   [8553] = {
     ["D"] = "After I lost my first ship to those giants, I bought another.  Named Smotts\' Revenge, I filled it with supplies and crew, and set out to find the villains.  I found them, but...they beat me.  They smashed Smotts\' Revenge, killed my second crew and set me on another lifeboat.$B$BThis time another of the giants, Negolash, stole my cutlass.$B$BFace Negolash and bring me my cutlass!$B$BSpeak with Sprogger.  He was my cook on the Smotts\' Revenge, and survived the last attack.  He can help you find the giant.",
     ["O"] = "이 퀘스트는 블리자드에 의해 구식으로 지정되어 더 이상 받거나 완료할 수 없습니다.</b>[Speak with Sprogger.]<h2 class=\"heading-size-3\">서술</h2>[After I lost my first ship to those giants, I bought another. Named Smotts\' Revenge, I filled it with supplies and crew, and set out to find the villains. I found them, but...they beat me. They smashed Smotts\' Revenge, killed my second crew and set me on another lifeboat.$B$BThis time another of the giants, Negolash, stole my cutlass.$B$BFace Negolash and bring me my cutlass!$B$BSpeak with Sprogger. He was my cook on the Smotts\' Revenge, and survived the last attack. He can help you find the giant.]<h2 class=\"heading-size-3\">획득</h2>퀘스트 완료 시 보상:<ul><li>",
@@ -13253,10 +16015,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring 10 Barbecued Buzzard Wings and 5 bottles of Junglevine Wine to Captain Smotts\' Lifeboat.$B$BKill Negolash, and bring Smotts\' Cutlass to Captain Smotts in Stranglethorn.",
     ["T"] = "Facing Negolash",
   },
-  [8556] = {
-    ["D"] = "퀴라지 부관들이 끼고 있는 반지가 그들에게 가공할 능력을 준다는 소문이 있어요. 이론상 그들이 끼고 있는 오염된 보석을 보다 순수한 재료로 바꾸면 오염되지 않은 반지를 만들 수 있을 겁니다.$B$B질이 좋아야 하니까, 음... 퀴라지 우상을 장식하고 있는 보석이 가장 적당할 것 같아요.$B$B제게 반지와 우상을 가져다주시면 그대에게 강력한 반지를 만들어 드리도록 하지요.",
-    ["O"] = "실리더스에 있는 바람소환사 예센드라에게 권위의 퀴라지 반지 1개, 미명석 우상 2개, 청동 스카라베 5개, 상아 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 세나리온 의회에 우호적 평판을 얻어야 합니다.",
-    ["T"] = "굴하지 않는 힘의 인장",
+  [8555] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Charge of the Dragonflights",
   },
   [8558] = {
     ["D"] = "퀴라지와 그들의 부하들은 매우 희귀하고 가장 우수한 재료들로 만든 무기를 사용합니다. 그 재료란 거대한 고대 생물의 뼈, 땅속 깊은 곳에서 채취한 보석, 순수하고 강한 금속이죠.$B$B퀴라지의 유물은 보기만 해도 그 부서지고 용해된 잔해들을 이용해 제 솜씨를 마음껏 발휘하고 싶은 충동이 느껴집니다. 세나리온 의회에 대한 당신의 충성을 증명해 보인다면 최고의 퀴라지 재료들로 강력한 무기를 만들어 드리겠습니다.",
@@ -13313,10 +16075,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Deliver Azuregos\'s Magical Ledger to Narain Soothfancy in Tanaris.",
     ["T"] = "Azuregos\'s Magical Ledger",
   },
+  [8576] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Translating the Ledger",
+  },
   [8577] = {
     ["D"] = "If I am to translate anything, I will need my scrying goggles. Unfortunately, those were stolen quite some time ago by my ex-best friend forever, Stewvul. He broke my heart in five places and then left me here to rot.$B$BWith the help of my trusty crystal ball, I\'ve isolated his whereabouts to either the Greymane Wall in Silverpine or what appears to be a portal world in the Outland that is currently being overrun by the Burning Legion. You\'re going to have to track him down and get my goggles back, $N!",
     ["O"] = "Narain Soothfancy wants you to find his ex-best friend forever (BFF), Stewvul, and take back the scrying goggles that Stewvul stole from him.",
     ["T"] = "Stewvul, Ex-B.F.F.",
+  },
+  [8578] = {
+    ["D"] = "<You hear a sigh of relief escape the crate.>$B$BYou just want his scrying goggles? Great! That will be no problem... Just give me a minute to... Hey! Where the... Dagnabbit!$B$BWell, there\'s some bad news and some worse news. The bad news is that I lost the goggles. The worse news is that I lost them when I was nosing around in the Molten Core last month. Yep, the Molten Core... I guess that concludes our business! Bye!",
+    ["O"] = "Find Narain\'s Scrying Goggles and return them to Narain Soothfancy in Tanaris.",
+    ["T"] = "Scrying Goggles? No Problem!",
   },
   [8580] = {
     ["D"] = "이봐, $C! 이번 안퀴라즈 전쟁에서 호드에 필요한 게 뭔지 아나? 바로 화염초라네. 꽝하고 터지는 멋진 물건에 사용하려는 걸까, 아니면 증기 전차 연료로 쓰라고 얼라이언스에게 주려는 걸까? 누가 알겠나? 이 펠레케이키도 모르지!$B$B내가 알고 있는 건... 자네가 펠레케이키를 도와 화염초를 아주 많이 가져다줄 거라는 거지. 어때, 맞지?",
@@ -13338,6 +16110,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "오그리마의 정기의 골짜기에 있는 연금술사 제젤에게 보라 연꽃 20개를 가져가야 합니다.",
     ["T"] = "The Horde Needs More Purple Lotus!",
   },
+  [8584] = {
+    ["D"] = "If there is one thing that you should know about me, it is this: NEVER ask me about my business! I work with things you simply cannot understand. Like for example: Do you know what a psychotronic muzzledorf is? Of course you don\'t! And that\'s why we leave the planning to me and the fetching to you.$B$BAs I said earlier, if this is going to work, we\'re going to need a 500 pound chicken.$B$BHead to Gadgetzan and speak with Dirge Quikcleave - he\'ll get you started on finding a suitable specimen.",
+    ["O"] = "Narain Soothfancy in Tanaris wants you to speak with Dirge Quikcleave in Gadgetzan.",
+    ["T"] = "Never Ask Me About My Business",
+  },
   [8585] = {
     ["D"] = "Legend has it that the chimaerok of the Isle of Dread in Feralas have the most succulent and tender vittles in existence! Now these chimaerok also have a daddy who, with proper preparation, may or may not look like a 500 pound chicken.$B$BHead to the Isle of Dread and kill Lord Lakmaeran and bring me his fresh carcass. That should satisfy the gnome. To satisfy me, you\'ll need to get your hands on some chimaerok tenderloin.$B$BDo this and you\'ll have your 500 pound chicken and a little something extra.",
     ["O"] = "Recover Lakmaeran\'s Carcass and 20 Chimaerok Tenderloins for Dirge Quikcleave in Tanaris.",
@@ -13347,6 +16124,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "My recipe is complete! What I need from you now is some rocket fuel and deeprock salt. I\'ll handle the spices and the meat you brought me will cover the rest.$B$BAfter you bring me what I asked for, the chicken will be ready to take back to Narain.",
     ["O"] = "Dirge Quikcleave in Gadgetzan wants you to bring him 20 Goblin Rocket Fuel and 20 Deeprock Salt.",
     ["T"] = "더지의 기똥찬 키메로크 찹스테이크",
+  },
+  [8587] = {
+    ["D"] = "I\'m a goblin of my word, kid. Here\'s your 500 pound chicken.$B$BWhat a gnome wants with a 500 pound chicken, I\'ll never know...$B$B<Dirge grumbles something unintelligible.>$B$BProbably to sleep in it... Dirty gnomes...",
+    ["O"] = "Deliver the 500 Pound Chicken to Narain Soothfancy in Tanaris.",
+    ["T"] = "Return to Narain",
   },
   [8589] = {
     ["D"] = "It\'s true, $C, I still need more heavy leather. The requests from the generals and their quartermasters seem endless. And that\'s nothing compared to what the zeppelin masters are asking for!$B$BI need to get my quota collected on the double. Baekun, bring me more stacks of heavy leather as soon as you can!",
@@ -13363,25 +16145,20 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "안퀴라즈에 있는 안도르고스에게 베크닐라쉬의 관, 현자의 우상 2개, 은 스카라베 5개, 뼈 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 약간 우호적 평판도 얻어야 합니다.",
     ["T"] = "신탁의 티아라",
   },
-  [8593] = {
-    ["D"] = "필멸의 존재여, 우리 혈족에게 당신의 가치를 증명해 보이기를 원하십니까? 잘 됐군요. 우리는 서로에게 도움이 될 수 있을 것 같군요.$B$B고대의 미늘벌레 아우로는 전설적인 힘을 가진 존재입니다. 고대 신이 생명을 조롱하기 위해 직접 아우로를 만들었다는 소문도 있습니다.$B$B아우로의 가죽은 정말 불가사의합니다... 거의 무적이라 할 만큼 두껍지만 유연하기도 해서 아주 작은 생물처럼 민첩하고 우아하게 움직일 수 있죠.$B$B저에게 거대한 미늘벌레의 가죽과 몇 가지 다른 재료를 가져다주시면 강력한 다리보호구로 만들어 드리겠습니다.",
-    ["O"] = "안퀴라즈 안에 있는 칸드로스트라즈에게 온전한 아우로의 가죽, 생명의 우상 2개, 황금 스카라베 5개, 찰흙 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 약간 우호적 이상의 평판도 얻어야 합니다.",
-    ["T"] = "신탁의 바지",
-  },
-  [8594] = {
-    ["D"] = "필멸의 종족들이 착용하는 화려한 어깨갑옷이 용의 날개를 본뜨려고 한 시도에서 유래했다는 소문이 있더군요.$B$B퀴라지 최고 지휘관들이 차고 있는 팔보호구를 가지고 오세요. 그럼 네파리안의 날개보다도 무시무시한 견갑으로 만들어 드릴게요!",
-    ["O"] = "안퀴라즈에 있는 안도르고스에게 지휘의 퀴라지 팔보호구, 환생의 우상 2개, 은 스카라베 5개, 상아 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "신탁의 어깨덧옷",
-  },
-  [8596] = {
-    ["D"] = "퀴라지 마법은 고대로부터 전해오는 강력한 마법입니다. 그러한 마법이 걸린 퀴라지 무기 중에는 용조차 놀라게 할 만큼 강력한 것도 있지요.$B$B저에게 지휘의 퀴라지 팔보호구와 몇 가지 다른 재료를 가져다주시면 강력한 장화 한 켤레를 만들어 드리겠습니다.$B$B적과 싸울 때 아주 유용할 것입니다.",
-    ["O"] = "안퀴라즈에 있는 칸드로스트라즈에게 지휘의 퀴라지 팔보호구, 죽음의 우상 2개, 청동 스카라베 5개, 황금 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판도 얻어야 합니다.",
-    ["T"] = "신탁의 발등싸개",
-  },
   [8597] = {
     ["D"] = "I knew that book would come in handy some day! Thankfully, I had the wit and foresight to stow it somewhere safe.$B$BDon\'t worry, it\'s in a place that nobody could ever hope to find it! I needed a gyrocopter just to get there the first time. Unfortunately I crashed it on the beach on my way back. It was through that accident that I gained these super-gnomish psychic powers!$B$BLook for my crashed gyrocopter somewhere on Land\'s End Beach and swim south from there! You\'ll know the spot when you see it!",
     ["O"] = "Find Narain Soothfancy\'s book, buried on an island in the South Seas.",
     ["T"] = "왕초보를 위한 용언 완전정복",
+  },
+  [8598] = {
+    ["D"] = "<The text on this note is made up of various typefaces glued onto the parchment\'s surface.>$B$BWe\'ve got your precious book, gnome. If you ever want to see it again, you\'ll do exactly as we ask.$B$B<A detailed set of instructions is listed, spanning 3 pages.>$B$BBring the money and come alone!",
+    ["O"] = "Return the Ransom Letter to Narain Soothfancy in Tanaris.",
+    ["T"] = "rAnS0m",
+  },
+  [8599] = {
+    ["D"] = "It isn\'t often that I get visitors. As a matter of fact, the last time I had a visitor was when I rescued that dear, sweet gnome from the wreckage of the crashed flying machine.$B$B<Meridith gazes into nothingness, lost in a memory.>$B$BDo you know him? Narain? Narain Soothfancy? Oh it would mean so much to me if somebody would deliver a message to him for me. I must tell him how I feel! I know it\'s love! I just know it!$B$BCould you possibly deliver a message to Narain? I would be forever indebted to you!",
+    ["O"] = "Take Meridith\'s Love Letter to Narain Soothfancy in Tanaris.",
+    ["T"] = "Love Song for Narain",
   },
   [8600] = {
     ["D"] = "난 자네가 들고 있는 손칼이 손에 얼마나 잘 맞느냐가 칼끝이 얼마나 날카로운가 보다 더 중요하다고 생각해. 아무리 무딘 칼이라도 적절한 압력을 주면 가죽 베기에는 충분하지. $C|1이여;여;, 자네 생각은 어떤가? 자네나 나나 칼날 걱정을 하고 있을 필요는 없지 않은가? 문제가 될 거 같다고?$B$B음, 문제없을 걸세. 참, 자네에게 맡길 일이 하나 있네. 호드를 위해 봉사하고 안퀴라즈 전쟁에 대비해 자네의 역할을 다하는 일이지. 튼튼한 가죽을 좀 구해다 주게. 이 정도 일은 해 줄 수 있지 않은가? 안 그래?",
@@ -13392,11 +16169,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Preparations for the impending war at Ahn\'Qiraj are proceeding, $C. However, to ensure that we do not fall behind, or at least that I am not the one that causes us to fall behind, I want for you to bring back another stack of rugged leather. Your prompt attention to this matter will be greatly appreciated, $N.",
     ["O"] = "오그리마의 정기의 골짜기에 있는 의사 세라투스에게 튼튼한 가죽 10장을 가져가야 합니다.",
     ["T"] = "The Horde Needs More Rugged Leather!",
-  },
-  [8602] = {
-    ["D"] = "필멸의 종족들이 착용하는 화려한 어깨갑옷이 용의 날개를 본뜨려고 한 시도에서 유래했다는 소문이 있더군요.$B$B퀴라지 최고 지휘관들이 차고 있는 팔보호구를 가지고 오세요. 그럼 네파리안의 날개보다도 무시무시한 견갑으로 만들어 드릴게요!",
-    ["O"] = "안퀴라즈에 있는 안도르고스에게 지배의 퀴라지 팔보호구, 생명의 우상 2개, 황금 스카라베 5개, 수정 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "폭풍소환사의 견갑",
   },
   [8603] = {
     ["D"] = "안퀴라즈 지하에는 입에 담기조차 두려운 고대 신이 하나 잠들어 있어요. 지금 그가 서서히 깨어나고 있습니다. 이제 아제로스를 기다리는 끔찍한 운명이 찾아올 겁니다. 며칠이 됐든 몇 년이 됐든 고대의 힘을 지닌 존재들에게 시간은 아무 의미가 없습니다.$B$B별들의 항로가 고대 신의 운명과 함께하는 날, 그는 이 세계의 살아 있는 모든 존재를 향해 무시무시한 분노를 터뜨릴 겁니다. 그날이 오기 전에 그를 제거할 방법을 찾아야 합니다.$B$B고대 신을 없애고 그 껍질 한 조각을 제게 가져다주세요. 지금까지 그 어떤 필멸의 존재도 입어보지 못한... 신을 처단한 이에게 걸맞은 그런 갑옷으로 만들어 드리겠습니다!",
@@ -13463,6 +16235,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "오그리마 정기의 골짜기에 있는 족장 샤프클로에게 훈제 연어 20개를 가져가야 합니다.",
     ["T"] = "The Horde Needs More Baked Salmon!",
   },
+  [8617] = "_",
   [8618] = {
     ["D"] = "",
     ["O"] = "",
@@ -13488,45 +16261,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "안퀴라즈 안에 있는 베스세라에게 고대 신의 껍질, 현자의 우상 2개, 은 스카라베 5개, 뼈 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 우호적 이상의 평판을 얻어야 합니다.",
     ["T"] = "폭풍소환사의 갑옷",
   },
-  [8623] = {
-    ["D"] = "쌍둥이 제왕... 그들의 끝없는 속삭임이 저의 정신을 천천히 갉아먹고 있어요. 언제나 날 조롱하지요. 자신들의 영역에 다가갈 수 없어 아리고스 오빠를 구해주지 못하는 이 비참한 날...$B$B강력한 마력의 왕관을 쓰고 소름끼치는 웃음을 띤 그들의 얼굴이 보입니다. 반드시 복수하고 말 거예요... 전 퀴라지의 힘을 상징하는 물건들을 우리가 쓸 수 있는 것으로 바꾸려고 합니다.$B$B제가 부탁하는 재료들을 가져다주세요. 당신의 머리에 그 무엇과도 비교할 수 없는 강력한 힘을 실어 드리겠어요.",
-    ["O"] = "안퀴라즈에 있는 안도르고스에게 베클로어의 관, 환생의 우상 2개, 돌 스카라베 5개, 수정 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 약간 우호적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "폭풍소환사의 머리관",
-  },
-  [8624] = {
-    ["D"] = "필멸의 존재여, 우리 혈족에게 당신의 가치를 증명해 보이기를 원하십니까? 잘 됐군요. 우리는 서로에게 도움이 될 수 있을 것 같군요.$B$B고대의 미늘벌레 아우로는 전설적인 힘을 가진 존재입니다. 고대 신이 생명을 조롱하기 위해 직접 아우로를 만들었다는 소문도 있습니다.$B$B아우로의 가죽은 정말 불가사의합니다... 거의 무적이라 할 만큼 두껍지만 유연하기도 해서 아주 작은 생물처럼 민첩하고 우아하게 움직일 수 있죠.$B$B저에게 거대한 미늘벌레의 가죽과 몇 가지 다른 재료를 가져다주시면 강력한 다리보호구로 만들어 드리겠습니다.",
-    ["O"] = "안퀴라즈 안에 있는 칸드로스트라즈에게 거대한 미늘벌레의 가죽, 투쟁의 우상 2개, 상아 스카라베 5개, 청동 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 약간 우호적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "폭풍소환사의 다리보호구",
-  },
   [8625] = {
     ["D"] = "필멸의 종족들이 착용하는 화려한 어깨갑옷이 용의 날개를 본뜨려고 한 시도에서 유래했다는 소문이 있더군요.$B$B퀴라지 최고 지휘관들이 차고 있는 팔보호구를 가지고 오세요. 그럼 네파리안의 날개보다도 무시무시한 견갑으로 만들어 드릴게요!",
     ["O"] = "안퀴라즈 안에 있는 안도르고스에게 지배의 퀴라지 팔보호구, 죽음의 우상 2개, 돌 스카라베 5개, 청동 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족에 대한 중립적 이상의 평판을 얻어야 합니다.",
     ["T"] = "불가사의의 어깨덧대",
   },
-  [8626] = {
-    ["D"] = "퀴라지 마법은 고대로부터 전해오는 강력한 마법입니다. 그러한 마법이 걸린 퀴라지 무기 중에는 용조차 놀라게 할 만큼 강력한 것도 있지요.$B$B저에게 지휘의 퀴라지 팔보호구와 몇 가지 다른 재료를 가져다주시면 강력한 장화 한 켤레를 만들어 드리겠습니다.$B$B적과 싸울 때 아주 유용할 것입니다.",
-    ["O"] = "안퀴라즈에 있는 칸드로스트라즈에게 지휘의 퀴라지 팔보호구, 생명의 우상 2개, 돌 스카라베 5개, 뼈 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "관통의 발등덮개",
-  },
   [8627] = {
     ["D"] = "안퀴라즈 지하에는 입에 담기조차 두려운 고대 신이 하나 잠들어 있어요. 지금 그가 서서히 깨어나고 있습니다. 이제 아제로스를 기다리는 끔찍한 운명이 찾아올 겁니다. 며칠이 됐든 몇 년이 됐든 고대의 힘을 지닌 존재들에게 시간은 아무 의미가 없습니다.$B$B별들의 항로가 고대 신의 운명과 함께하는 날, 그는 이 세계의 살아 있는 모든 존재를 향해 무시무시한 분노를 터뜨릴 겁니다. 그날이 오기 전에 그를 제거할 방법을 찾아야 합니다.$B$B고대 신을 없애고 그 껍질 한 조각을 제게 가져다주세요. 지금까지 그 어떤 필멸의 존재도 입어보지 못한... 신을 처단한 이에게 걸맞은 그런 갑옷으로 만들어 드리겠습니다!",
     ["O"] = "Bring the the Carapace of the Old God, 2 Idols of the Sage, 5 Silver Scarabs and 5 Bone Scarabs to Vethsera inside Ahn\'Qiraj.  You must also attain Honored reputation with the Brood of Nozdormu to complete this quest.",
     ["T"] = "응징의 가슴보호갑",
-  },
-  [8628] = {
-    ["D"] = "쌍둥이 제왕... 그들의 끝없는 속삭임이 저의 정신을 천천히 갉아먹고 있어요. 언제나 날 조롱하지요. 자신들의 영역에 다가갈 수 없어 아리고스 오빠를 구해주지 못하는 이 비참한 날...$B$B강력한 마력의 왕관을 쓰고 소름끼치는 웃음을 띤 그들의 얼굴이 보입니다. 반드시 복수하고 말 거예요... 전 퀴라지의 힘을 상징하는 물건들을 우리가 쓸 수 있는 것으로 바꾸려고 합니다.$B$B제가 부탁하는 재료들을 가져다주세요. 당신의 머리에 그 무엇과도 비교할 수 없는 강력한 힘을 실어 드리겠어요.",
-    ["O"] = "안퀴라즈에 있는 안도르고스에게 베클로어의 관, 환생의 우상 2개, 돌 스카라베 5개, 수정 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 약간 우호적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "응징의 왕관",
-  },
-  [8629] = {
-    ["D"] = "필멸의 존재여, 우리 혈족에게 당신의 가치를 증명해 보이기를 원하십니까? 잘 됐군요. 우리는 서로에게 도움이 될 수 있을 것 같군요.$B$B고대의 미늘벌레 아우로는 전설적인 힘을 가진 존재입니다. 고대 신이 생명을 조롱하기 위해 직접 아우로를 만들었다는 소문도 있습니다.$B$B아우로의 가죽은 정말 불가사의합니다... 거의 무적이라 할 만큼 두껍지만 유연하기도 해서 아주 작은 생물처럼 민첩하고 우아하게 움직일 수 있죠.$B$B저에게 거대한 미늘벌레의 가죽과 몇 가지 다른 재료를 가져다주시면 강력한 다리보호구로 만들어 드리겠습니다.",
-    ["O"] = "안퀴라즈 안에 있는 칸드로스트라즈에게 거대한 미늘벌레의 가죽, 투쟁의 우상 2개, 상아 스카라베 5개, 청동 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 약간 우호적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "응징의 다리보호대",
-  },
-  [8630] = {
-    ["D"] = "필멸의 종족들이 착용하는 화려한 어깨갑옷이 용의 날개를 본뜨려고 한 시도에서 유래했다는 소문이 있더군요.$B$B퀴라지 최고 지휘관들이 차고 있는 팔보호구를 가지고 오세요. 그럼 네파리안의 날개보다도 무시무시한 견갑으로 만들어 드릴게요!",
-    ["O"] = "안퀴라즈에 있는 안도르고스에게 지배의 퀴라지 팔보호구, 생명의 우상 2개, 황금 스카라베 5개, 수정 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "응징의 견갑",
   },
   [8631] = {
     ["D"] = "필멸의 존재여, 우리 혈족에게 당신의 가치를 증명해 보이기를 원하십니까? 잘 됐군요. 우리는 서로에게 도움이 될 수 있을 것 같군요.$B$B고대의 미늘벌레 아우로는 전설적인 힘을 가진 존재입니다. 고대 신이 생명을 조롱하기 위해 직접 아우로를 만들었다는 소문도 있습니다.$B$B아우로의 가죽은 정말 불가사의합니다... 거의 무적이라 할 만큼 두껍지만 유연하기도 해서 아주 작은 생물처럼 민첩하고 우아하게 움직일 수 있죠.$B$B저에게 거대한 미늘벌레의 가죽과 몇 가지 다른 재료를 가져다주시면 강력한 다리보호구로 만들어 드리겠습니다.",
@@ -13548,110 +16291,30 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "안퀴라즈에 있는 칸드로스트라즈에게 지배의 퀴라지 팔보호구 1개, 태양의 우상 2개, 은 스카라베 5개, 수정 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완수하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
     ["T"] = "불가사의의 장화",
   },
-  [8637] = {
-    ["D"] = "퀴라지 마법은 고대로부터 전해오는 강력한 마법입니다. 그러한 마법이 걸린 퀴라지 무기 중에는 용조차 놀라게 할 만큼 강력한 것도 있지요.$B$B저에게 지휘의 퀴라지 팔보호구와 몇 가지 다른 재료를 가져다주시면 강력한 장화 한 켤레를 만들어 드리겠습니다.$B$B적과 싸울 때 아주 유용할 것입니다.",
-    ["O"] = "안퀴라즈에 있는 칸드로스트라즈에게 지휘의 퀴라지 팔보호구 1개, 투쟁의 우상 2개, 수정 스카라베 5개, 뼈 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "죽음의 선고자 장화",
-  },
   [8638] = {
     ["D"] = "안퀴라즈 지하에는 입에 담기조차 두려운 고대 신이 하나 잠들어 있어요. 지금 그가 서서히 깨어나고 있습니다. 이제 아제로스를 기다리는 끔찍한 운명이 찾아올 겁니다. 며칠이 됐든 몇 년이 됐든 고대의 힘을 지닌 존재들에게 시간은 아무 의미가 없습니다.$B$B별들의 항로가 고대 신의 운명과 함께하는 날, 그는 이 세계의 살아 있는 모든 존재를 향해 무시무시한 분노를 터뜨릴 겁니다. 그날이 오기 전에 그를 제거할 방법을 찾아야 합니다.$B$B고대 신을 없애고 그 껍질 한 조각을 제게 가져다주세요. 지금까지 그 어떤 필멸의 존재도 입어보지 못한... 신을 처단한 이에게 걸맞은 그런 갑옷으로 만들어 드리겠습니다!",
     ["O"] = "Bring the the Carapace of the Old God, 2 Idols of Strife, 5 Bronze Scarabs and 5 Ivory Scarabs to Vethsera inside Ahn\'Qiraj.  You must also attain Honored reputation with the Brood of Nozdormu to complete this quest.",
     ["T"] = "죽음의 선고자 조끼",
-  },
-  [8639] = {
-    ["D"] = "쌍둥이 제왕... 그들의 끝없는 속삭임이 저의 정신을 천천히 갉아먹고 있어요. 언제나 날 조롱하지요. 자신들의 영역에 다가갈 수 없어 아리고스 오빠를 구해주지 못하는 이 비참한 날...$B$B강력한 마력의 왕관을 쓰고 소름끼치는 웃음을 띤 그들의 얼굴이 보입니다. 반드시 복수하고 말 거예요... 전 퀴라지의 힘을 상징하는 물건들을 우리가 쓸 수 있는 것으로 바꾸려고 합니다.$B$B제가 부탁하는 재료들을 가져다주세요. 당신의 머리에 그 무엇과도 비교할 수 없는 강력한 힘을 실어 드리겠어요.",
-    ["O"] = "안퀴라즈에 있는 안도르고스에게 베클로어의 관, 전쟁의 우상 2개, 찰흙 스카라베 5개, 황금 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 약간 우호적 이상의 평판도 얻어야 합니다.",
-    ["T"] = "죽음의 선고자 투구",
-  },
-  [8640] = {
-    ["D"] = "필멸의 존재여, 우리 혈족에게 당신의 가치를 증명해 보이기를 원하십니까? 잘 됐군요. 우리는 서로에게 도움이 될 수 있을 것 같군요.$B$B고대의 미늘벌레 아우로는 전설적인 힘을 가진 존재입니다. 고대 신이 생명을 조롱하기 위해 직접 아우로를 만들었다는 소문도 있습니다.$B$B아우로의 가죽은 정말 불가사의합니다... 거의 무적이라 할 만큼 두껍지만 유연하기도 해서 아주 작은 생물처럼 민첩하고 우아하게 움직일 수 있죠.$B$B저에게 거대한 미늘벌레의 가죽과 몇 가지 다른 재료를 가져다주시면 강력한 다리보호구로 만들어 드리겠습니다.",
-    ["O"] = "안퀴라즈 안에 있는 칸드로스트라즈에게 온전한 아우로의 가죽, 밤의 우상 2개, 돌 스카라베 5개, 수정 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 약간 우호적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "죽음의 선고자 다리보호구",
-  },
-  [8641] = {
-    ["D"] = "필멸의 종족들이 착용하는 화려한 어깨갑옷이 용의 날개를 본뜨려고 한 시도에서 유래했다는 소문이 있더군요.$B$B퀴라지 최고 지휘관들이 차고 있는 팔보호구를 가지고 오세요. 그럼 네파리안의 날개보다도 무시무시한 견갑으로 만들어 드릴게요!",
-    ["O"] = "안퀴라즈에 있는 안도르고스에게 지휘의 퀴라지 팔보호구, 태양의 우상 2개, 은 스카라베 5개, 찰흙 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "죽음의 선고자 어깨덮개",
   },
   [8649] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "장로 스톰브라우",
   },
-  [8655] = {
-    ["D"] = "고대 퀴라지 마법의 힘이 깃든 퀴라지 무기 중에는 용조차 놀라게 할 만큼 강력한 것들도 있지요.$B$B지배의 퀴라지 팔보호구와 몇 가지 다른 재료를 가져다주시면 강력한 신발 한 켤레를 만들어 드리겠습니다.$B$B일단 그걸 받아 신으면 적과 싸울 때 아주 유용하다는 사실을 알 겁니다.",
-    ["O"] = "안퀴라즈에 있는 칸드로스트라즈에게 지배의 퀴라지 팔보호구 1개, 현자의 우상 2개, 청동 스카라베 5개, 찰흙 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "응징의 경갑",
-  },
   [8656] = {
     ["D"] = "안퀴라즈 지하에는 입에 담기조차 두려운 고대 신이 하나 잠들어 있어요. 지금 그가 서서히 깨어나고 있습니다. 이제 아제로스를 기다리는 끔찍한 운명이 찾아올 겁니다. 며칠이 됐든 몇 년이 됐든 고대의 힘을 지닌 존재들에게 시간은 아무 의미가 없습니다.$B$B별들의 항로가 고대 신의 운명과 함께하는 날, 그는 이 세계의 살아 있는 모든 존재를 향해 무시무시한 분노를 터뜨릴 겁니다. 그날이 오기 전에 그를 제거할 방법을 찾아야 합니다.$B$B고대 신을 없애고 그 껍질 한 조각을 제게 가져다주세요. 지금까지 그 어떤 필멸의 존재도 입어보지 못한... 신을 처단한 이에게 걸맞은 그런 갑옷으로 만들어 드리겠습니다!",
     ["O"] = "Bring the the Carapace of the Old God, 2 Idols of Life, 5 Gold Scarabs and 5 Clay Scarabs to Vethsera inside Ahn\'Qiraj.  You must also attain Honored reputation with the Brood of Nozdormu to complete this quest.",
     ["T"] = "관통의 갑옷",
-  },
-  [8657] = {
-    ["D"] = "쌍둥이 제왕... 그들의 끝없는 속삭임이 저의 정신을 천천히 갉아먹고 있어요. 그들은 날 조롱하고 있죠. 자신들의 영역에 다가갈 수조차 없어 아리고스 오빠를 구해내지 못하는 비참한 날...$B$B제 눈에는 강력한 마력의 왕관을 쓰고 소름끼치는 웃음을 띤 그들의 얼굴이 보입니다. 반드시 복수하고 말 거예요... 전 퀴라지의 힘을 상징하는 물건들을 우리가 쓸 수 있도록 바꾸려고 합니다.$B$B제가 부탁하는 재료들을 가져다주세요. 그 무엇과도 비교할 수 없는 강력한 힘을 지닌 머리관으로 만들어 드리겠어요.",
-    ["O"] = "안퀴라즈에 있는 안도르고스에게 베클로어의 관, 투쟁의 우상 2개, 청동 스카라베 5개, 상아 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 약간 우호적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "관통의 머리관",
-  },
-  [8658] = {
-    ["D"] = "필멸의 존재여, 우리 혈족에게 당신의 가치를 증명해 보이기를 원하십니까? 잘 됐군요. 우리는 서로에게 도움이 될 수 있을 것 같군요.$B$B고대의 미늘벌레 아우로는 전설적인 힘을 가진 존재입니다. 고대 신이 생명을 조롱하기 위해 직접 아우로를 만들었다는 소문도 있습니다.$B$B아우로의 가죽은 정말 불가사의합니다... 거의 무적이라 할 만큼 두껍지만 유연하기도 해서 아주 작은 생물처럼 민첩하고 우아하게 움직일 수 있죠.$B$B저에게 거대한 미늘벌레의 가죽과 몇 가지 다른 재료를 가져다주시면 강력한 다리보호구로 만들어 드리겠습니다.",
-    ["O"] = "안퀴라즈 안에 있는 칸드로스트라즈에게 거대한 미늘벌레의 가죽, 태양의 우상 2개, 은 스카라베 5개, 뼈 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 약간 우호적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "관통의 다리보호구",
-  },
-  [8659] = {
-    ["D"] = "필멸의 종족들이 착용하는 화려한 어깨갑옷이 용의 날개를 본뜨려고 한 시도에서 유래했다는 소문이 있더군요.$B$B퀴라지 최고 지휘관들이 차고 있는 팔보호구를 가지고 오세요. 그럼 네파리안의 날개보다도 무시무시한 견갑으로 만들어 드릴게요!",
-    ["O"] = "안퀴라즈에 있는 안도르고스에게 지휘의 퀴라지 팔보호구, 전쟁의 우상 2개, 수정 스카라베 5개, 상아 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "관통의 견갑",
-  },
-  [8660] = {
-    ["D"] = "고대 퀴라지 마법의 힘이 깃든 퀴라지 무기 중에는 용조차 놀라게할 만큼 강력한 것들도 있지요.$B$B저에게 지배의 퀴라지 팔보호구와 몇 가지 다른 재료를 가져다주시면 강력한 신발 한 켤레를 만들어 드리겠습니다.$B$B일단 그걸 받아 신으면 적과 싸울 때 아주 유용하다는 사실을 아실 겁니다.",
-    ["O"] = "안퀴라즈에 있는 칸드로스트라즈에게 지배의 퀴라지 팔보호구 1개, 밤의 우상 2개, 찰흙 스카라베 5개, 상아 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "파멸의 소환사 발등싸개",
   },
   [8661] = {
     ["D"] = "안퀴라즈 지하에는 입에 담기조차 두려운 고대 신이 하나 잠들어 있어요. 지금 그가 서서히 깨어나고 있습니다. 이제 아제로스를 기다리는 끔찍한 운명이 찾아올 겁니다. 며칠이 됐든 몇 년이 됐든 고대의 힘을 지닌 존재들에게 시간은 아무 의미가 없습니다.$B$B별들의 항로가 고대 신의 운명과 함께하는 날, 그는 이 세계의 살아 있는 모든 존재를 향해 무시무시한 분노를 터뜨릴 겁니다. 그날이 오기 전에 그를 제거할 방법을 찾아야 합니다.$B$B고대 신을 없애고 그 껍질 한 조각을 제게 가져다주세요. 지금까지 그 어떤 필멸의 존재도 입어보지 못한... 신을 처단한 이에게 걸맞은 그런 갑옷으로 만들어 드리겠습니다!",
     ["O"] = "Bring the the Husk of the Old God, 2 Idols of Night, 5 Stone Scarabs and 5 Crystal Scarabs to Vethsera inside Ahn\'Qiraj.  You must also attain Honored reputation with the Brood of Nozdormu to complete this quest.",
     ["T"] = "파멸의 소환사 로브",
   },
-  [8662] = {
-    ["D"] = "쌍둥이 제왕... 그들의 끝없는 속삭임이 저의 정신을 천천히 갉아먹고 있어요. 언제나 날 조롱하지요. 자신들의 영역에 다가갈 수 없어 아리고스 오빠를 구해주지 못하는 이 비참한 날...$B$B강력한 마력의 왕관을 쓰고 소름끼치는 웃음을 띤 그들의 얼굴이 보입니다. 반드시 복수하고 말 거예요... 전 퀴라지의 힘을 상징하는 물건들을 우리가 쓸 수 있는 것으로 바꾸려고 합니다.$B$B제가 부탁하는 재료들을 가져다주세요. 당신의 머리에 그 무엇과도 비교할 수 없는 강력한 힘을 실어 드리겠어요.",
-    ["O"] = "안퀴라즈에 있는 안도르고스에게 베크닐라쉬의 관, 죽음의 우상 2개, 은 스카라베 5개, 뼈 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 약간 우호적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "파멸의 소환사 머리장식",
-  },
-  [8663] = {
-    ["D"] = "필멸의 존재여, 우리 혈족에게 당신의 가치를 증명해 보이기를 원하십니까? 잘 됐군요. 우리는 서로에게 도움이 될 수 있을 것 같군요.$B$B고대의 미늘벌레 아우로는 전설적인 힘을 가진 존재입니다. 고대 신이 생명을 조롱하기 위해 직접 아우로를 만들었다는 소문도 있습니다.$B$B아우로의 가죽은 정말 불가사의합니다... 거의 무적이라 할 만큼 두껍지만 유연하기도 해서 아주 작은 생물처럼 민첩하고 우아하게 움직일 수 있죠.$B$B저에게 거대한 미늘벌레의 가죽과 몇 가지 다른 재료를 가져다주시면 강력한 다리보호구로 만들어 드리겠습니다.",
-    ["O"] = "안퀴라즈 안에 있는 칸드로스트라즈에게 거대한 미늘벌레의 가죽, 환생의 우상 2개, 황금 스카라베 5개, 찰흙 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 약간 우호적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "파멸의 소환사 바지",
-  },
-  [8664] = {
-    ["D"] = "필멸의 종족들이 착용하는 화려한 어깨갑옷이 용의 날개를 본뜨려고 한 시도에서 유래했다는 소문이 있더군요.$B$B퀴라지 최고 지휘관들이 차고 있는 팔보호구를 가지고 오세요. 그럼 네파리안의 날개보다도 무시무시한 견갑으로 만들어 드릴게요!",
-    ["O"] = "안퀴라즈에 있는 안도르고스에게 지배의 퀴라지 팔보호구, 현자의 우상 2개, 청동 스카라베 5개, 뼈 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "파멸의 소환사 어깨덧옷",
-  },
-  [8665] = {
-    ["D"] = "고대 퀴라지 마법의 힘이 깃든 퀴라지 무기 중에는 용조차 놀라게할 만큼 강력한 것들도 있지요.$B$B저에게 지배의 퀴라지 팔보호구와 몇 가지 다른 재료를 가져다주시면 강력한 신발 한 켤레를 만들어 드리겠습니다.$B$B일단 그걸 받아 신으면 적과 싸울 때 아주 유용하다는 사실을 아실 겁니다.",
-    ["O"] = "안퀴라즈에 있는 칸드로스트라즈에게 지배의 퀴라지 팔보호구 1개, 환생의 우상 2개, 돌 스카라베 5개, 은 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "태초의 장화",
-  },
   [8666] = {
     ["D"] = "안퀴라즈 지하에는 입에 담기조차 두려운 고대 신이 하나 잠들어 있어요. 지금 그가 서서히 깨어나고 있습니다. 이제 아제로스를 기다리는 끔찍한 운명이 찾아올 겁니다. 며칠이 됐든 몇 년이 됐든 고대의 힘을 지닌 존재들에게 시간은 아무 의미가 없습니다.$B$B별들의 항로가 고대 신의 운명과 함께하는 날, 그는 이 세계의 살아 있는 모든 존재를 향해 무시무시한 분노를 터뜨릴 겁니다. 그날이 오기 전에 그를 제거할 방법을 찾아야 합니다.$B$B고대 신을 없애고 그 껍질 한 조각을 제게 가져다주세요. 지금까지 그 어떤 필멸의 존재도 입어보지 못한... 신을 처단한 이에게 걸맞은 그런 갑옷으로 만들어 드리겠습니다!",
     ["O"] = "Bring the the Husk of the Old God, 2 Idols of Rebirth, 5 Bronze Scarabs and 5 Ivory Scarabs to Vethsera inside Ahn\'Qiraj.  You must also attain Honored reputation with the Brood of Nozdormu to complete this quest.",
     ["T"] = "태초의 조끼",
-  },
-  [8667] = {
-    ["D"] = "쌍둥이 제왕... 그들의 끝없는 속삭임이 저의 정신을 천천히 갉아먹고 있어요. 언제나 날 조롱하지요. 자신들의 영역에 다가갈 수 없어 아리고스 오빠를 구해주지 못하는 이 비참한 날...$B$B강력한 마력의 왕관을 쓰고 소름끼치는 웃음을 띤 그들의 얼굴이 보입니다. 반드시 복수하고 말 거예요... 전 퀴라지의 힘을 상징하는 물건들을 우리가 쓸 수 있는 것으로 바꾸려고 합니다.$B$B제가 부탁하는 재료들을 가져다주세요. 당신의 머리에 그 무엇과도 비교할 수 없는 강력한 힘을 실어 드리겠어요.",
-    ["O"] = "안퀴라즈에 있는 안도르고스에게 베클로어의 관, 생명의 우상 2개, 황금 스카라베 5개, 찰흙 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 약간 우호적 이상의 평판도 얻어야 합니다.",
-    ["T"] = "태초의 투구",
-  },
-  [8668] = {
-    ["D"] = "필멸의 존재여, 우리 혈족에게 당신의 가치를 증명해 보이기를 원하십니까? 잘 됐군요. 우리는 서로에게 도움이 될 수 있을 것 같군요.$B$B고대의 미늘벌레 아우로는 전설적인 힘을 가진 존재입니다. 고대 신이 생명을 조롱하기 위해 직접 아우로를 만들었다는 소문도 있습니다.$B$B아우로의 가죽은 정말 불가사의합니다... 거의 무적이라 할 만큼 두껍지만 유연하기도 해서 아주 작은 생물처럼 민첩하고 우아하게 움직일 수 있죠.$B$B저에게 거대한 미늘벌레의 가죽과 몇 가지 다른 재료를 가져다주시면 강력한 다리보호구로 만들어 드리겠습니다.",
-    ["O"] = "안퀴라즈 안에 있는 칸드로스트라즈에게 거대한 미늘벌레의 가죽, 전쟁의 우상 2개, 돌 스카라베 5개, 수정 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 약간 우호적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "태초의 바지",
-  },
-  [8669] = {
-    ["D"] = "필멸의 종족들이 착용하는 화려한 어깨갑옷이 용의 날개를 본뜨려고 한 시도에서 유래했다는 소문이 있더군요.$B$B퀴라지 최고 지휘관들이 차고 있는 팔보호구를 가지고 오세요. 그럼 네파리안의 날개보다도 무시무시한 견갑으로 만들어 드릴게요!",
-    ["O"] = "안퀴라즈에 있는 안도르고스에게 지배의 퀴라지 팔보호구, 투쟁의 우상 2개, 황금 스카라베 5개, 뼈 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 노즈도르무 혈족으로부터 중립적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "태초의 어깨덧대",
   },
   [8678] = {
     ["D"] = "",
@@ -13673,31 +16336,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "실리더스에 있는 케일 스위프트클로에게 제왕의 퀴라지 망토 1개, 흑요석 우상 2개, 황금 스카라베 5개, 찰흙 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 세나리온 의회에서 매우 우호적 평판도 얻어야 합니다.",
     ["T"] = "휘몰아치는 폭풍의 망토",
   },
-  [8692] = {
-    ["D"] = "우리의 안퀴라즈 공격을 도와주고 있다니 정말 기쁘오. 당신에게 적의 공격을 방어하는 데 도움이 될 만한 물건을 주고 싶소.$B$B퀴라지 망토가 필요하오. 물론 당신에게 맞게 크기를 조절해 주리다. 그리고 그에 어울리는 걸쇠를 만드는 데 사용할 우상과 스카라베도 있어야 하오.$B$B절대 실망시키지 않겠다고 약속하겠소.",
-    ["O"] = "실리더스에 있는 케일 스위프트클로에게 제왕의 퀴라지 망토 1개, 단사 우상 2개, 은 스카라베 5개, 뼈 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 세나리온 의회에서 매우 우호적 평판도 얻어야 합니다.",
-    ["T"] = "영원한 삶의 망토",
-  },
-  [8693] = {
-    ["D"] = "우리의 안퀴라즈 공격을 도와주고 있다니 정말 기쁘오. 당신에게 적의 공격을 방어하는 데 도움이 될 만한 물건을 주고 싶소.$B$B퀴라지 망토가 필요하오. 물론 당신에게 맞게 크기를 조절해 주리다. 그리고 그에 어울리는 걸쇠를 만드는 데 사용할 우상과 스카라베도 있어야 하오.$B$B절대 실망시키지 않겠다고 약속하겠소.",
-    ["O"] = "실리더스에 있는 케일 스위프트클로에게 전쟁의 퀴라지 망토 1개, 청금석 우상 2개, 청동 스카라베 5개, 상아 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 세나리온 의회에서 매우 우호적 평판도 얻어야 합니다.",
-    ["T"] = "어두운 그림자의 망토",
-  },
-  [8695] = {
-    ["D"] = "우리의 안퀴라즈 공격을 도와주고 있다니 정말 기쁘오. 당신에게 적의 공격을 방어하는 데 도움이 될 만한 물건을 주고 싶소.$B$B퀴라지 망토가 필요하오. 물론 당신에게 맞게 크기를 조절해 주리다. 그리고 그에 어울리는 걸쇠를 만드는 데 사용할 우상과 스카라베도 있어야 하오.$B$B절대 실망시키지 않겠다고 약속하겠소.",
-    ["O"] = "실리더스에 있는 케일 스위프트클로에게 제왕의 퀴라지 망토 1개, 흑요석 우상 2개, 황금 스카라베 5개, 찰흙 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 세나리온 의회에서 매우 우호적 평판도 얻어야 합니다.",
-    ["T"] = "영원한 정의의 망토",
-  },
-  [8698] = {
-    ["D"] = "퀴라지 부관들이 끼고 있는 반지가 그들에게 가공할 능력을 준다는 소문이 있어요. 이론상 그들이 끼고 있는 오염된 보석을 보다 순수한 재료로 바꾸면 오염되지 않은 반지를 만들 수 있을 겁니다.$B$B질이 좋아야 하니까, 음... 퀴라지 우상을 장식하고 있는 보석이 가장 적당할 것 같아요.$B$B제게 반지와 우상을 가져다주시면 그대에게 강력한 반지를 만들어 드리도록 하지요.",
-    ["O"] = "실리더스에 있는 바람소환사 예센드라에게 권위의 퀴라지 반지 1개, 단사 우상 2개, 은 스카라베 5개, 뼈 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 세나리온 의회에 우호적 평판을 얻어야 합니다.",
-    ["T"] = "휘몰아치는 폭풍의 반지",
-  },
-  [8700] = {
-    ["D"] = "퀴라지 부관들이 끼고 있는 반지가 그들에게 가공할 능력을 준다는 소문이 있어요. 이론상 그들이 끼고 있는 오염된 보석을 보다 순수한 재료로 바꾸면 오염되지 않은 반지를 만들 수 있을 겁니다.$B$B질이 좋아야 하니까, 음... 퀴라지 우상을 장식하고 있는 보석이 가장 적당할 것 같아요.$B$B제게 반지와 우상을 가져다주시면 그대에게 강력한 반지를 만들어 드리도록 하지요.",
-    ["O"] = "실리더스에 있는 바람소환사 예센드라에게 권위의 퀴라지 반지 1개, 설화석 우상 2개, 청동 스카라베 5개, 상아 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 세나리온 의회로부터 우호적 이상의 평판을 얻어야 합니다.",
-    ["T"] = "영원한 삶의 고리",
-  },
   [8703] = {
     ["D"] = "퀴라지 부관들이 끼고 있는 반지가 그들에게 가공할 능력을 준다는 소문이 있어요. 이론상 그들이 끼고 있는 오염된 보석을 보다 순수한 재료로 바꾸면 오염되지 않은 반지를 만들 수 있을 겁니다.$B$B질이 좋아야 하니까, 음... 퀴라지 우상을 장식하고 있는 보석이 가장 적당할 것 같아요.$B$B제게 반지와 우상을 가져다주시면 그대에게 강력한 반지를 만들어 드리도록 하지요.",
     ["O"] = "실리더스에 있는 바람소환사 예센드라에게 권위의 퀴라지 반지 1개, 단사 우상 2개, 은 스카라베 5개, 뼈 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 세나리온 의회에 우호적 평판을 얻어야 합니다.",
@@ -13717,11 +16355,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "퀴라지와 그들의 부하들은 매우 희귀하고 가장 우수한 재료들로 만든 무기를 사용합니다. 그 재료란 거대한 고대 생물의 뼈, 땅속 깊은 곳에서 채취한 보석, 순수하고 강한 금속이죠.$B$B퀴라지의 유물은 보기만 해도 그 부서지고 용해된 잔해들을 이용해 제 솜씨를 마음껏 발휘하고 싶은 충동이 느껴집니다. 세나리온 의회에 대한 당신의 충성을 증명해 보인다면 최고의 퀴라지 재료들로 강력한 무기를 만들어 드리겠습니다.",
     ["O"] = "실리더스에 있는 감시자 하로에게 화려한 퀴라지 자루 1개, 흑요석 우상 2개, 은 스카라베 5개, 뼈 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 세나리온 의회에서 확고한 동맹의 평판을 얻어야 합니다.",
     ["T"] = "밝혀진 비밀의 칼날",
-  },
-  [8708] = {
-    ["D"] = "퀴라지와 그들의 부하들은 매우 희귀하고 가장 우수한 재료들로 만든 무기를 사용합니다. 그 재료란 거대한 고대 생물의 뼈, 땅속 깊은 곳에서 채취한 보석, 순수하고 강한 금속이죠.$B$B퀴라지의 유물은 보기만 해도 그 부서지고 용해된 잔해들을 이용해 제 솜씨를 마음껏 발휘하고 싶은 충동이 느껴집니다. 세나리온 의회에 대한 당신의 충성을 증명해 보인다면 최고의 퀴라지 재료들로 강력한 무기를 만들어 드리겠습니다.",
-    ["O"] = "실리더스에 있는 감시자 하로에게 화려한 퀴라지 자루 1개, 벽옥 우상 2개, 수정 스카라베 5개, 돌 스카라베 5개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 세나리온 의회에서 확고한 동맹의 평판을 얻어야 합니다.",
-    ["T"] = "영원한 삶의 철퇴",
   },
   [8709] = {
     ["D"] = "퀴라지와 그들의 부하들은 매우 희귀하고 가장 우수한 재료들로 만든 무기를 사용합니다. 그 재료란 거대한 고대 생물의 뼈, 땅속 깊은 곳에서 채취한 보석, 순수하고 강한 금속이죠.$B$B퀴라지의 유물은 보기만 해도 그 부서지고 용해된 잔해들을 이용해 제 솜씨를 마음껏 발휘하고 싶은 충동이 느껴집니다. 세나리온 의회에 대한 당신의 충성을 증명해 보인다면 최고의 퀴라지 재료들로 강력한 무기를 만들어 드리겠습니다.",
@@ -13748,6 +16381,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "장로 메도런",
   },
+  [8728] = {
+    ["D"] = "Well that took a little longer than expected. Now let me see what this ledger says.$B$B<Narain silently reads the ledger, periodically mumbling under his breath.>$B$B The good news is that I am 99% certain that I am capable of creating an arcanite buoy that will function to your specifications. This is, of course, wholly dependant on the bad news.$B$BThe bad news is that I\'m going to need a lot of arcanite, elementium ore, and rare gemstones.$B$BBring me what I need and I will craft the buoy.",
+    ["O"] = "Narain Soothfancy in Tanaris wants you to bring him 20 Arcanite Bars, 10 Elementium Ore, 10 Azerothian Diamonds, and 10 Blue Sapphires.",
+    ["T"] = "The Good News and The Bad News",
+  },
+  [8729] = {
+    ["D"] = "Did I mention the bad news yet? Its name is Maws: 100 feet of death and destruction. I guess I may have forgotten that little tidbit.$B$BAccording to my superior psycho-psionic clairvoyance, you\'ll find that the best spot to cast this buoy is off the coast of Azshara, in the Bay of Storms.$B$BLook for a swirling maelstrom, most likely cluttered with wreckage.$B$BBy the by, I hope you have friends.$B$BNow if you somehow miraculously succeed, take the scepter shard to Anachronos.",
+    ["O"] = "Use the Arcanite Buoy at the Swirling Maelstrom at the Bay of Storms in Azshara.",
+    ["T"] = "The Wrath of Neptulon",
+  },
   [8730] = {
     ["D"] = "Champion, is it you? A thousand years it has been since I was entrusted the shard and it is at my darkest hour that one should rise to relieve me of it... But what would tragedy be without cruelty?$B$B<Vaelastrasz coughs weakly.>$B$BNe... Nefarius now holds the scepter shard.$B$BTime is of the essence. Nefarius plans to destroy the shard. You must hurry!",
     ["O"] = "Slay Nefarian and recover the Red Scepter Shard. Return the Red Scepter Shard to Anachronos at the Caverns of Time in Tanaris. You have 5 hours to complete this task.",
@@ -13757,6 +16400,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Greetings, $N.  Before I assign you to more involved tasks in the war, you\'ll need to do your share of field duty.  $B$BYou will find Captain Skullsplit\'s Orgrimmar Legion outside Hive\'Regal.$B$BReport to him and come back to me with proof of your field service.  I shall have a more advanced assignment ready for you.$B$BOh, please do your best to stay away from the Ironforge Brigade.  Tensions are high among our Alliance and Horde volunteers.",
     ["O"] = "Report to Krug Skullsplit at the Orgrimmar Legion post in front of Hive\'Regal.  Prepare your Unsigned Field Duty Papers, obtain Signed Field Duty Papers and bring them to Windcaller Kaldon in Cenarion Hold.$B$BNote: Healing or casting beneficial spells on a member of the Orgrimmar Legion will flag you for PvP.",
     ["T"] = "야전 임무",
+  },
+  [8732] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Field Duty Papers",
   },
   [8733] = {
     ["D"] = "This is a journey of redemption, hero. Would it be that I was slain today, I would have died for a just and righteous cause. You must recover the green scepter shard. You must cleanse Eranikus of the taint placed upon him by the Old Gods.$B$BTravel to Darnassus. Just outside the city walls you will find one of my agents. This agent will set things in motion for us and inform Tyrande of our plans without alerting Staghelm.$B$B<Malfurion sighs.>$B$BA fall from grace a thousand years in the making...",
@@ -13772,6 +16420,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "You must travel to the four dream portals of Azeroth. From each you must draw a fragment of the Nightmare\'s corruption. The dragonkin that inhabit these areas will hold such fragments. Return to me when you have gathered these fragments.",
     ["O"] = "Travel to the four Emerald Dream portals in Azeroth and collect a Fragment of the Nightmare\'s Corruption from each. Return to Keeper Remulos in the Moonglade when you have completed this task.",
     ["T"] = "오염된 악몽",
+  },
+  [8736] = {
+    ["D"] = "We must use restraint against Eranikus. We are to redeem him not destroy him.$B$BTyrande is already en route to assist us in this task. We must weather the dragon\'s blows and save Nighthaven from certain destruction.$B$BBe on guard! You and your allies are our only hope.",
+    ["O"] = "Defend Nighthaven from Eranikus. Do not let Keeper Remulos perish. Do not slay Eranikus. Defend yourself. Await Tyrande.",
+    ["T"] = "The Nightmare Manifests",
   },
   [8737] = {
     ["D"] = "황혼의 망치단과 이들이 숭배하는 고위 정령들이 실리더스에서 수행 중인 우리 작전에 큰 위협이 되고 있습니다. 우리는 안퀴라즈 내부의 새로운 적과 대치 중인 상황이기 때문에 외부의 적에게 병력을 돌릴 여력이 없습니다.$B$B청명 기사단을 소환하여 이들을 해치운 후 보르 와일드메인에게 보고하십시오.",
@@ -13793,25 +16446,35 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "황혼의 약탈자 2명과 황혼의 약탈자 모르나를 처치한 후, 바람소환사 프라우드혼에게 보고해야 합니다. 또한, 이 퀘스트를 완료하려면 전술 임무 지령 IX도 함께 가져가야 합니다.",
     ["T"] = "황혼의 약탈자",
   },
+  [8741] = {
+    ["D"] = "The keeper awaits your return, $N. Take the green scepter shard to Anachronos at the Caverns of Time.",
+    ["O"] = "Take the Green Scepter Shard to Anachronos at the Caverns of Time in Tanaris.",
+    ["T"] = "The Champion Returns",
+  },
   [8742] = {
     ["D"] = "A thousand years has passed and just as it was fated, one stands before me. One who shall lead their people to a new age.$B$BThe Old God trembles, $N. Oh yes, it fears your faith. Shatter the prophecy of C\'Thun.$B$BIt knows you come, champion - and with you comes the might of Kalimdor. You have only to let me know when you are prepared and I shall grant you The Scepter of the Shifting Sands.",
     ["O"] = "",
     ["T"] = "The Might of Kalimdor",
+  },
+  [8743] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Bang a Gong!",
+  },
+  [8745] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Treasure of the Timeless One",
   },
   [8746] = {
     ["D"] = "DISASTER has struck!  Metzen the Reindeer has been kidnapped!$B$BMetzen is one of Great-father Winter\'s eight reindeer - and property of Smokywood Pastures.  We\'ve received not one but TWO ransom letters from groups claiming to have Metzen.  With the holiday season well under way, we\'re strapped to the coin box here!  Please - find Metzen and return him to us!$B$BCheck out the ransom letters for clues, and sprinkle this reindeer dust on him - it will free him from any of his bonds!$B$BPlease, hurry!",
     ["O"] = "Find Metzen the Reindeer.  Use the notes provided to you for clues as to where he is being held.$B$BWhen you find Metzen, have the Pouch of Reindeer Dust in your possession so you can sprinkle some of the dust on him; this should free Metzen from his bonds of captivity.$B$BReturn the Pouch of Reindeer Dust to Kaymard Copperpinch in Orgrimmar once Metzen is freed.",
     ["T"] = "순록 멧젠",
   },
-  [8759] = {
+  [8761] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "기원사의 길",
-  },
-  [8760] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "기원사의 길",
+    ["T"] = "The Grand Invoker",
   },
   [8762] = {
     ["D"] = "DISASTER has struck!  Metzen the Reindeer has been kidnapped!$B$BMetzen is one of Greatfather Winter\'s eight reindeer - and property of Smokywood Pastures.  We\'ve received not one but TWO ransom letters from groups claiming to have Metzen.  With the holiday season well under way, we\'re strapped to the coin box here!  Please - find Metzen and return him to us!$B$BCheck out the ransom letters for clues, and sprinkle this reindeer dust on him - it will free him from any of his bonds!$B$BPlease, hurry!",
@@ -13822,6 +16485,21 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "흠, 내가 이런 비밀을 자네에게 밝히리라고는 생각지도 않았는데... 그래도 자네가 오늘의 영웅이니까!$B$B매년 이맘때쯤엔 어디서나 싱싱한 호랑가시나무를 볼 수 있지만 오래가지는 못하지. 굴뚝나무 목장조합에서는 호랑가시나무가 절대 상하지 않도록 보존하는 기계를 이용해서 겨울맞이 축제의 분위기를 살리고 여름내 돈벌이를 하지!$B$B자네가 요리의 대가라면 보존기를 쓸 수 있게 해 주지. 단, 깊은바위 소금이 필요할 거야. 그리고 사용료는 1, 2, 3... 5골드로 하지. 싱싱하게 보존된 호랑가시나무 한 묶음을 얻을 수 있을 걸세.",
     ["O"] = "깊은바위 소금 1줌과 5골드를 호랑가시나무 보존기에 넣으면, 보존된 호랑가시나무를 받게 될 것입니다.",
     ["T"] = "오늘의 영웅",
+  },
+  [8764] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Changing of Paths - Protector No More",
+  },
+  [8765] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Changing of Paths - Invoker No More",
+  },
+  [8766] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "The Changing of Paths - Conqueror No More",
   },
   [8770] = {
     ["D"] = "전쟁 준비가 진행되면서 이 지역에 존재하는 실리시드가 우리의 작전에 아주 큰 위협이 되고 있습니다. 당신은 하이브아쉬 공격 작전에 선발되었으며 당신의 주요 목표는 병정 하이브아쉬입니다.$B$B임무를 완수하면 지휘관 마랄리스에게 보고하십시오.",
@@ -13893,20 +16571,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "실리더스의 세나리온 요새에 있는 바르구스에게 마력 깃든 토륨 주괴 2개, 마력 깃든 가죽 2개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 병참 임무 지령 IX도 함께 가져가야 합니다.",
     ["T"] = "특별한 재료",
   },
-  [8784] = {
-    ["D"] = "당신이 발견한 것은 고대 퀴라지 유물입니다! 신전의 입구 근처에 있는 용들 중 하나가 이 유물의 사용법을 알고 있을 겁니다.",
-    ["O"] = "신전 입구 근처에 숨어 있는 용족에게 고대 퀴라지 유물을 가져가야 합니다.",
-    ["T"] = "퀴라지의 비밀",
-  },
   [8785] = {
     ["D"] = "오그리마 군단에서 몇 가지 특이한 재료를 요청했습니다. 현재 그들이 실리더스에서 수행하는 임무를 고려해 볼 때 최대한 신속하게 요청을 들어주는 것이 좋을 것 같습니다. 재료를 모아서 샤이라는 트롤에게 가져다주십시오.",
     ["O"] = "실리더스의 하이브레갈 근처에 있는 어둠의여사제 샤이에게 제물의 기름 8개, 왕모조 물약 6개, 강력한 모조 6개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 병참 임무 지령 IV도 함께 가져가야 합니다.",
     ["T"] = "오그리마 군단에 모조 공급!",
-  },
-  [8786] = {
-    ["D"] = "오그리마 군단에서 무기를 추가로 공급해 달라고 요청했을 때는 우리가 그럴 수 있는 형편이 아니었습니다. 이제 그들이 요청한 무기를 구하여 하이브레갈 외곽에 있는 메로크 롱스트라이드에게 가져다주십시오.",
-    ["O"] = "하이브레갈 외곽 오그리마 군단 주둔지에 있는 메로크 롱스트라이드에게 큰 철제 도끼 3개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 병참 임무 지령 VI도 함께 가져가야 합니다.",
-    ["T"] = "전장에 무기 공급",
   },
   [8787] = {
     ["D"] = "오그리마 군단의 용감한 지원자들이 우리를 도와 대업을 달성하기 위해 실리더스에 도착했습니다. 그런데 여행 중에 그만 방어구 강화도구를 분실했다고 합니다. 방어구 강화도구를 모아 오그리마 군단 주둔지에 있는 메로크 롱스트라이드에게 가져다주십시오.",
@@ -13958,6 +16626,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "아이언포지의 군사 지구에 있는 야전사령관 스노우폴과 대화해야 합니다.",
     ["T"] = "얼라이언스 지원자 모집!",
   },
+  [8798] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "A Yeti of Your Own",
+  },
   [8799] = {
     ["D"] = "흠, 내가 이런 비밀을 자네에게 밝히리라고는 생각지도 않았는데... 그래도 자네가 오늘의 영웅이니까!$B$B매년 이맘때쯤엔 어디서나 싱싱한 호랑가시나무를 볼 수 있지만 오래가지는 못하지. 굴뚝나무 목장조합에서는 호랑가시나무가 절대 상하지 않도록 보존하는 기계를 이용해서 겨울맞이 축제의 분위기를 살리고 여름내 돈벌이를 하지!$B$B자네가 요리의 대가라면 보존기를 쓸 수 있게 해 주지. 단, 깊은바위 소금이 필요할 거야. 그리고 사용료는 1, 2, 3... 5골드로 하지. 싱싱하게 보존된 호랑가시나무 한 묶음을 얻을 수 있을 걸세.",
     ["O"] = "호랑가시나무 보존기에 깊은바위 소금 한 줌과 5골드를 넣으면 보존된 호랑가시나무를 받게 될 것입니다.",
@@ -13978,35 +16651,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "시간의 동굴에 있는 아나크로노스에게 크툰의 눈을 가져가야 합니다.",
     ["T"] = "칼림도어의 구세주",
   },
-  [8804] = {
-    ["D"] = "세나리온 요새에 지금 신병들이 도착했는데 과연 사막에서 살아남을 수 있느냐가 문제입니다. 경험이 부족한 신병들에게는 맹독을 가진 다양한 생물뿐 아니라 탈수증도 심각한 위협이 될 수 있습니다. 사막 긴급구호 물자로 쓸만한 물건들을 모아서 세나리온 요새에 있는 캘랜드라스에게 가져가십시오.",
-    ["O"] = "실리더스의 세나리온 요새 여관에 있는 캘랜드라스에게 물의 보주, 강력한 해독제, 훈제 사막 경단을 각각 4개씩 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 병참 임무 지령 I도 함께 가져가야 합니다.",
-    ["T"] = "사막 긴급구호 물자",
-  },
-  [8805] = {
-    ["D"] = "세나리온 요새를 수호하는 기병대에 화려한 미스릴 장화가 부족하다고 합니다. 화려한 미스릴 장화를 구하는 즉시 세나리온 요새의 경비대장 비쉬 코주스에게 전달해 주십시오.",
-    ["O"] = "실리더스의 세나리온 요새에 있는 경비대장 비쉬 코주스에게 화려한 미스릴 장화 3개와 병참 임무 지령 II를 가져가야 합니다.",
-    ["T"] = "경비대에 장화 공급",
-  },
-  [8806] = {
-    ["D"] = "세나리온 요새 경비대에 연마석이 부족하다고 합니다. 연마석을 구하는 즉시 세나리온 요새의 경비대장 비쉬 코주스에게 전달해 주십시오.",
-    ["O"] = "실리더스의 세나리온 요새에 있는 경비대장 비쉬 코주스에게 강도 높은 연마석, 견고한 연마석, 단단한 연마석을 각각 10개씩 모아서 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 병참 임무 지령 III도 함께 가져가야 합니다.",
-    ["T"] = "경비대에 연마석 공급",
-  },
   [8807] = {
     ["D"] = "지질학자 락스베인의 연구가 실리더스에서 우리가 수행하는 작전에 엄청난 도움이 된다는 것이 입증되었습니다. 최근에 그녀는 수정점 연구에 사용할 재료를 요청했습니다.$B$B그녀가 연구를 계속할 수 있도록 재료를 모으는 즉시 가져다주십시오.",
     ["O"] = "실리더스의 세나리온 요새에 있는 지질학자 락스베인에게 눈부신 큰 결정, 찬란하게 빛나는 큰 결정, 거대 에메랄드를 각각 1개씩 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 병참 임무 지령 V도 함께 가져가야 합니다.",
     ["T"] = "수정점 재료",
-  },
-  [8808] = {
-    ["D"] = "최근에 들어온 지원자들에게 지급할 제복이 부족합니다. 제복을 만들 재료를 구해서 바람소환사 프라우드혼에게 가져다주십시오.",
-    ["O"] = "바람소환사 프라우드혼에게 달빛 옷감 1개, 룬무늬 두루마리 2개, 강철그물 거미줄 1개를 가져가야 합니다. 또한, 이 임무를 완료하려면 병참 임무 지령 VIII도 함께 가져가야 합니다.",
-    ["T"] = "제복 공급",
-  },
-  [8809] = {
-    ["D"] = "세나리온 요새의 대장장이 바르구스가 우리 군대가 쓸 강력한 무기에 마력을 부여할 재료를 요청했습니다. 세나리온 요새의 군대가 완전히 무장할 수 있도록 이 재료들을 구하는 즉시 바르구스에게 가져다주십시오.",
-    ["O"] = "실리더스의 세나리온 요새에 있는 바르구스에게 마력 깃든 토륨 주괴 2개, 마력 깃든 가죽 2개를 가져가야 합니다. 또한, 이 퀘스트를 완료하려면 병참 임무 지령 IX도 함께 가져가야 합니다.",
-    ["T"] = "특별한 재료",
   },
   [8810] = {
     ["D"] = "최근 발생한 부상자로 인해 전장에서 붕대가 많이 부족하다고 합니다. 응급치료에 쓰는 붕대를 구해 세나리온 요새에 있는 바람소환사 프라우드혼에게 전달해 주십시오.",
@@ -14038,6 +16686,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "Ten Signets for War Supplies",
   },
+  [8848] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Fifteen Signets for War Supplies",
+  },
   [8849] = {
     ["D"] = "",
     ["O"] = "",
@@ -14058,6 +16711,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "Ten Signets for War Supplies",
   },
+  [8853] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Fifteen Signets for War Supplies",
+  },
   [8854] = {
     ["D"] = "",
     ["O"] = "",
@@ -14073,20 +16731,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "실리더스의 세나리온 요새 여관에 있는 캘랜드라스에게 물의 보주, 강력한 해독제, 훈제 연어를 각각 4개씩 가져가야 합니다.",
     ["T"] = "사막 긴급구호 물자",
   },
-  [8857] = {
-    ["D"] = "저는 아쉬 거대괴수의 시체에서 채취한 신선한 껍질 표본을 무법항에 있는 오글소프에게 가져다줄 의지와 능력을 갖춘 전투에 강한 모험가들을 찾고 있습니다. 아니, 아니, 당신보고 그 시체에서 표본을 채취하라는 것이 아닙니다. 당신은 제 표본 중에 하나를 가지고 가시면 됩니다. 이것들이 썩어 버리면 소용없어지니까요!",
-    ["O"] = "무법항에 있는 오글소프 오브노티쿠스에게 아쉬 거대괴수의 껍질을 가져가야 합니다.",
-    ["T"] = "거대괴수의 비밀 - 아쉬",
-  },
   [8858] = {
     ["D"] = "오일피스트에게 이 벌레 껍질을 꼭 전달해야 합니다. 그것 말고는 더 바랄 게 없는데 말입니다. 저는 여기 있으면서 성장한 벌레의 표본을 수집해야 해서 직접 갈 수가 없습니다. 벌레가 그 정도로 성장하려면 이른 아침까지 여기서 기다려야 하거든요.$B$B제 대신 이 표본을 오일피스트에게 속히 전해 주시면 그가 큰 보상을 해 줄 것입니다!$B$B네, 맞습니다. 오일피스트는 이글거리는 협곡 안의 토륨 거점에 있을 겁니다.",
     ["O"] = "이글거리는 협곡에 있는 감독관 오일피스트에게 레갈 거대괴수의 껍질을 가져가야 합니다.",
     ["T"] = "거대괴수의 비밀 - 레갈",
-  },
-  [8859] = {
-    ["D"] = "제 부하들이 이 표본을 구하느라 거의 죽을 뻔했습니다. 맥스웰 티로서스 경이 신선한 껍질 표본을 눈이 빠져라 기다리고 있으니 서둘러야 합니다! 그는 이 거대괴수의 비밀이 스컬지와의 전쟁에서 도움이 될 거라 믿고 있습니다!$B$B아직도 안 가고 뭐 하십니까!? 희망의 빛 예배당으로 가십시오! 예, 이 일만 잘해 주시면 후한 보상이 있을 겁니다...",
-    ["O"] = "동부 역병지대의 희망의 빛 예배당에 있는 맥스웰 티로서스 경에게 조라 거대괴수의 껍질을 가져가야 합니다.",
-    ["T"] = "거대괴수의 비밀 - 조라",
   },
   [8860] = {
     ["D"] = "Stormwind is holding a celebration for the new year!  All day long today you can get free booze, and at night they\'ll put on a firework show!  It should be pretty nice... but Booty Bay is also having a party today; I bet it\'ll be even better!$B$BWell anyway, Innkeeper Allison in Stormwind needs a supply of Smoky Wood Pasture fare to help feed all the party goers.  Can you do me a favor and deliver it!$B$BThanks, $N!  Innkeeper Allison is in the Gilded Rose, in the Trade District of Stormwind.",
@@ -14122,11 +16770,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "야수 오멘은 한때 이 세계의 영웅이었습니다. 원래는 대단한 힘과 행운을 지닌 늑대로서 고대의 전쟁에서 영웅들과 함께 싸웠지만, 악마의 마법에 굴복하고 말았지요. 오멘은 동지들에게 등을 돌리고 아제로스를 휩쓸며, 자신이 지나간 자리에 죽음과 공포만을 남겼습니다.$B$B마침내 이곳 달숲에서 오멘은 패배했고, 지금 엘룬아라 호수 바닥에 잠들어 있습니다. 그러나 매 새해 축제 기간이 되면 그가 움직인답니다...$B$B동료를 모아 야수 오멘을 소환하여 처치하십시오. 엘룬 여신의 축복을 얻으십시오!",
     ["O"] = "Summon Omen, defeat him and gain Elune\'s Blessing.  Return to Valadar Starsong in Nighthaven",
     ["T"] = "엘룬의 축복호",
-  },
-  [8869] = {
-    ["D"] = "Within the confines of the Scarlet Bastion lies sweet Serenity. The Crimson Hammersmith guards the recipe with his life. Defeat him and bring me his apron. For that, I shall train you to become a hammersmith.$B$BUnderstand this: Once you have chosen the path of the hammersmith, the paths of the swordsmith and axesmith will no longer be available.",
-    ["O"] = "Travel to Stratholme and kill the Crimson Hammersmith. Recover the Crimson Hammersmith\'s Apron and return to Lilith.",
-    ["T"] = "Sweet Serenity",
   },
   [8870] = {
     ["D"] = "한 해의 시작을 맞이하는 날이 돌아왔습니다! 세나리온 의회에서는 아제로스의 모든 친구를 달의 축제에 초대합니다. 그대는 이 도시 안에 달빛의 축복을 받은 원이 그려진 곳에서 달의 축제 사절을 만나게 될 겁니다. 그녀가 축제에 대해서 더 자세히 말해줄 수 있을 겁니다.",
@@ -14253,11 +16896,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "스톰윈드 은행 밖에 있는 콜라라 딘에게 반으로 접힌 편지를 전달해야 합니다.",
     ["T"] = "친애하는 콜라라",
   },
-  [8899] = {
-    ["D"] = "그녀의 아름다움을 어찌 말로 형용할 수 있으리오? 세상의 말로는 도무지 표현할 수가 없소.$B$B내 마음을 온통 뒤흔드는 그녀 앞에서 나는 말 더듬는 바보가 되어 버린다오.$B$B내 가슴속에 이 말들을 너무 오래 간직하고 있었소. 이보다 더 좋은 표현을 짜낼 수가 없소이다. 더 이상은 안 되겠소. 이제는 그녀에게 내 마음을 전해야 하오. 아니면 다른 누군가가 먼저 그녀의 마음을 가로챌지도 모르오. 날 좀 도와주시겠소?",
-    ["O"] = "스톰윈드 은행 밖에 있는 콜라라 딘에게 깔끔한 장식의 편지를 전해야 합니다.",
-    ["T"] = "친애하는 콜라라",
-  },
   [8900] = {
     ["D"] = "그녀의 눈망울은 정말 슬퍼 보였소. 그녀의 과거를 알았을 때 아픔이 있으리란 사실을 느낄 수 있었지...$B$B그녀와 이야기를 나누어 보니 우리에겐 뭔가 통하는 것이 있었소. 아무도 나를 이해하지 못할 거라 생각했는데 그녀는 달랐거든.$B$B다른 이들은 날 보고 비웃더군. 그래서 그녀와 다시 이야기를 나누지 못했소. 하지만, 그녀가 그리워... 이 편지를 좀 전해 주시겠소? 그녀의 가녀린 두 손에 꼭 쥐여주면 좋겠소이다.",
     ["O"] = "언더시티의 은행 근처에 있는 엘레니아 헤이돈에게 살짝 접힌 쪽지를 전해야 합니다.",
@@ -14373,9 +17011,64 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring the Sealed Blood Container to Mux Manascrambler inside Gadgetzan in Tanaris.",
     ["T"] = "A Supernatural Device",
   },
+  [8923] = {
+    ["D"] = "You must be quite brave to have stuck around after that.  That or I\'ve piqued your interest with the piece of armor I gave you.  There is more from where that came from, if you\'re still interested in aiding me.$B$BThe venom samples you collected are for an acquaintance of mine, Mux Manascrambler, an engineer with an interest in the supernatural.  His latest project consists of a device that allows you to communicate with the dead!  My last hope is to contact Anthion and find out more about my situation.",
+    ["O"] = "Take the Sealed Venom Container to Mux Manascrambler in Gadgetzan.",
+    ["T"] = "A Supernatural Device",
+  },
+  [8924] = {
+    ["D"] = "A fine piece of engineering, if I do say so myself!  You will need to travel a bit, I\'m afraid, in order to find the incorporeal undead we require.$B$BYou see, different climates lend different consistencies to the spectral fabric of the dead.  The tortured night elves of Silithus, the spirits of the highborne from Winterspring and the ghosts and banshees of the Eastern Plaguelands should give us the different types of ectoplasm we need.  Be sure to place the distiller nearby before you harvest them!",
+    ["O"] = "Use the Ectoplasmic Distiller near incorporeal undead to collect 12 Scorched Ectoplasms in Silithus, 12 Frozen Ectoplasms in Winterspring and 12 Stable Ectoplasms in the Eastern Plaguelands.  Bring them along with the Ectoplasmic Distiller back to Mux Manascrambler in Gadgetzan.",
+    ["T"] = "Hunting for Ectoplasm",
+  },
+  [8925] = {
+    ["D"] = "Next we shall need to find a stable and portable source of energy to keep the ectoplasm active.  I\'ve heard rumors of a mighty elemental called Magma Lord Bokk, whose heart is a powerful magma core - an endless supply of heat!$B$BIt\'s said he can be found in the Burning Steppes, south of Blackrock Mountain.  Bring the magma core to me and we shall have enough juice to power the extra-dimensional ghost revealer!",
+    ["O"] = "Find Magma Lord Bokk in the Burning Steppes, obtain his Magma Core and bring it to Mux Manascrambler in Gadgetzan.",
+    ["T"] = "A Portable Power Source",
+  },
+  [8926] = {
+    ["D"] = "You kept your word and brought the device built by Mux.  I believe a reward is in order if I\'m to keep you interested in saving my skin.  Bring me the belt and set of gloves that you wish to upgrade.  I promise the ones I give you in return will be far superior.",
+    ["O"] = "Bring a Wildheart Belt and a set of Wildheart Gloves Deliana in Ironforge.",
+    ["T"] = "Just Compensation",
+  },
+  [8927] = {
+    ["D"] = "You\'ve proven to be a very reliable individual, $N.  As much as I trust that you\'ll help me through this predicament, it would be wise of me to reward you according to your performance.$B$BFor now I will exchange your belt and gloves.  If we both see this through I shall make the rest of the pieces available to you.",
+    ["O"] = "Bring a Wildheart Belt and a set of Wildheart Gloves to Mokvar in Orgrimmar.",
+    ["T"] = "Just Compensation",
+  },
+  [8928] = {
+    ["D"] = "The core will provide us with enough juice to power our device; now we just have to build a rod that can channel that energy without melting.$B$BI met an imp in Winterspring that sold all manner of exotic goods.  He had an elemental rod that would do perfectly.  I\'m kicking myself in the head right now for not having bought it.$B$BHe lives inside a cave in the entrance to Darkwhisper Gorge.  Sneak in there and try to find him.$B$BMake sure he only charges you forty gold; that\'s the price he quoted me!",
+    ["O"] = "Search for an imp inside a cave at the entrance of Darkwhisper Gorge in southern Winterspring, purchase a Fel Elemental Rod and return to Mux Manascrambler in Gadgetzan.",
+    ["T"] = "A Shifty Merchant",
+  },
+  [8929] = {
+    ["D"] = "Well, nothing left for us to do but try out the goblin\'s invention.  Word has it that Anthion was mowed down by the undead legions of Stratholme as he tried to enter its gates.$B$BTry using the device there and find out whatever Anthion knew.",
+    ["O"] = "Use the Extra-Dimensional Ghost Revealer at the entrance to Stratholme and speak with the ghost of Anthion Harmon.",
+    ["T"] = "In Search of Anthion",
+  },
+  [8930] = {
+    ["D"] = "Very well, $N.  All that remains is to put the goblin\'s invention to the test.  Word has it that Anthion was slain by the undead legions of Stratholme as he tried to enter its gates.$B$BTry using the device there and see if, indeed, you can speak with the dead!",
+    ["O"] = "Use the Extra-Dimensional Ghost Revealer at the entrance to Stratholme and speak with the ghost of Anthion Harmon.",
+    ["T"] = "In Search of Anthion",
+  },
   [8931] = {
     ["D"] = "You kept your word and brought the device built by Mux.  I believe a reward is in order if I\'m to keep you interested in saving my skin.  Bring me an ordinary belt and a set of gloves that you wish to upgrade.",
     ["O"] = "Bring a Beaststalker\'s Belt and a set of Beaststalker\'s Gloves to Deliana in Ironforge.",
+    ["T"] = "Just Compensation",
+  },
+  [8932] = {
+    ["D"] = "You kept your word and brought the device built by Mux.  I believe a reward is in order if I\'m to keep you interested in saving my skin.  Bring me an ordinary belt and a set of gloves that you wish to upgrade.",
+    ["O"] = "Bring a Magister\'s Belt and a set of Magister\'s Gloves to Deliana in Ironforge.",
+    ["T"] = "Just Compensation",
+  },
+  [8933] = {
+    ["D"] = "You kept your word and brought the device built by Mux.  I believe a reward is in order if I\'m to keep you interested in saving my skin.  Bring me the belt and set of gauntlets that you wish to upgrade.  I promise the ones I give you in return will be far superior.",
+    ["O"] = "Bring a Lightforge Belt and a set of Lightforge Gauntlets to Deliana in Ironforge.",
+    ["T"] = "Just Compensation",
+  },
+  [8934] = {
+    ["D"] = "You kept your word and brought the device built by Mux.  I believe a reward is in order if I\'m to keep you interested in saving my skin.  Bring me the belt and set of gloves that you wish to upgrade.  I promise the ones I give you in return will be far superior.",
+    ["O"] = "Bring a Devout Belt and a set of Devout Gloves to Deliana in Ironforge.",
     ["T"] = "Just Compensation",
   },
   [8935] = {
@@ -14388,19 +17081,109 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Bring a Dreadmist Belt and a set of Dreadmist Wraps to Deliana in Ironforge.",
     ["T"] = "Just Compensation",
   },
+  [8937] = {
+    ["D"] = "You kept your word and brought the device built by Mux.  I believe a reward is in order if I\'m to keep you interested in saving my skin.  Bring me the belt and set of gauntlets that you wish to upgrade.  I promise the ones I give you in return will be far superior.",
+    ["O"] = "Bring a Belt of Valor and a set of Gauntlets of Valor to Deliana in Ironforge.",
+    ["T"] = "Just Compensation",
+  },
+  [8938] = {
+    ["D"] = "You\'ve proven to be a very reliable individual, $N.  As much as I trust that you\'ll help me through this predicament, it would be wise of me to reward you according to your performance.$B$BFor now I will exchange your belt and gloves.  If we both see this through I shall make the rest of the pieces available to you.",
+    ["O"] = "Bring a Beaststalker\'s Belt and a set of Beaststalker\'s Gloves to Mokvar in Orgrimmar.",
+    ["T"] = "Just Compensation",
+  },
+  [8939] = {
+    ["D"] = "You\'ve proven to be a very reliable individual, $N.  As much as I trust that you\'ll help me through this predicament, it would be wise of me to reward you according to your performance.$B$BFor now I will exchange your belt and gloves.  If we both see this through I shall make the rest of the pieces available to you.",
+    ["O"] = "Bring a Magister\'s Belt and a set of Magister\'s Gloves to Mokvar in Orgrimmar.",
+    ["T"] = "Just Compensation",
+  },
+  [8940] = {
+    ["D"] = "You\'ve proven to be a very reliable individual, $N.  As much as I trust that you\'ll help me through this predicament, it would be wise of me to reward you according to your performance.$B$BFor now I will exchange your belt and gloves.  If we both see this through I shall make the rest of the pieces available to you.",
+    ["O"] = "Bring a Devout Belt and a set of Devout Gloves to Mokvar in Orgrimmar.",
+    ["T"] = "Just Compensation",
+  },
+  [8941] = {
+    ["D"] = "You\'ve proven to be a very reliable individual, $N.  As much as I trust that you\'ll help me through this predicament, it would be wise of me to reward you according to your performance.$B$BFor now I will exchange your belt and gloves.  If we both see this through I shall make the rest of the pieces available to you.",
+    ["O"] = "Bring a Shadowcraft Belt and a set of Shadowcraft Gloves to Mokvar in Orgrimmar.",
+    ["T"] = "Just Compensation",
+  },
+  [8942] = {
+    ["D"] = "You\'ve proven to be a very reliable individual, $N.  As much as I trust that you\'ll help me through this predicament, it would be wise of me to reward you according to your performance.$B$BFor now I will exchange your belt and gauntlets.  If we both see this through I shall make the rest of the pieces available to you.",
+    ["O"] = "Bring a Cord of Elements and a set of Gauntlets of Elements to Mokvar in Orgrimmar.",
+    ["T"] = "Just Compensation",
+  },
+  [8943] = {
+    ["D"] = "You\'ve proven to be a very reliable individual, $N.  As much as I trust that you\'ll help me through this predicament, it would be wise of me to reward you according to your performance.$B$BFor now I will exchange your belt and gloves.  If we both see this through I shall make the rest of the pieces available to you.",
+    ["O"] = "Bring a Dreadmist Belt and a set of Dreadmist Wraps to Mokvar in Orgrimmar.",
+    ["T"] = "Just Compensation",
+  },
+  [8944] = {
+    ["D"] = "You\'ve proven to be a very reliable individual, $N.  As much as I trust that you\'ll help me through this predicament, it would be wise of me to reward you according to your performance.$B$BFor now I will exchange your belt and gauntlets.  If we both see this through I shall make the rest of the pieces available to you.",
+    ["O"] = "Bring a Belt of Valor and a set of Gauntlets of Valor to Mokvar in Orgrimmar.",
+    ["T"] = "Just Compensation",
+  },
   [8945] = {
     ["D"] = "당신이 원하는 정보를 알려주겠소만 더 급한 문제가 있소이다.$B$B사랑하는 내 아내가 리븐데어의 언데드 놈들에게 잡혀갔소.$B$B난 내 아내가 은빛 여명회의 멍청한 십자군에 들어가는 것을 강력하게 반대했었소. 이제 와서 말해봤자 아무 소용없는 얘기겠지만... 내가 하려던 일을 당신이 마무리해 주시기 바라오. 남작의 손아귀에서 이시다를 구해 주시오!",
     ["O"] = "스트라솔름으로 가서 남작 리븐데어로부터 이시다 하몬을 구출해야 합니다.",
     ["T"] = "죽은 자의 부탁",
+  },
+  [8946] = {
+    ["D"] = "It is the cruelest of fates that my beloved has perished while trying to rescue me.  Yet, you claim to possess the ability to converse with him.$B$BBring him this locket as proof that I am well.  He must not linger in this world; my heart would not be able to bear it.$B$BFarewell, $N.  I shall be in your debt always.",
+    ["O"] = "Bring Ysida\'s Locket to Anthion Harmon in Eastern Plaguelands.",
+    ["T"] = "Proof of Life",
+  },
+  [8947] = {
+    ["D"] = "We didn\'t realize the importance of Valthalak\'s medallion, so it was divided along with the rest of the spoils.  The first piece was taken by a dwarf named Theldren.  I tried to retrieve it from him and he beat me within an inch of my life.  You shall have to take the fragment by force.$B$BLast I heard of him, he\'d become a gladiator for the Dark Iron dwarves.  Getting him to fight you is going to present a bit of a challenge, though.$B$BGather the following materials for me.  You\'re going to need them.",
+    ["O"] = "Bring 3 Dark Iron Bars, 20 Enchanted Leather, 3 Mooncloth and 4 Cured Rugged Hides to Anthion Harmon in the Eastern Plaguelands.",
+    ["T"] = "Anthion\'s Strange Request",
+  },
+  [8948] = {
+    ["D"] = "Theldren is not one to willingly participate in a fair fight.  I\'ve shaped this banner to display his family colors.$B$BWith some additional sorcery, this banner shall provoke him in a way he won\'t be able to resist.$B$BAn old acquaintance of mine named Falrin knows the exact procedure required.  He has a particular way of... aggravating people.  You shall find him at the library in Dire Maul.",
+    ["O"] = "Take the incomplete Banner of Provocation to Falrin Treeshaper at the library in Dire Maul.",
+    ["T"] = "Anthion\'s Old Friend",
   },
   [8949] = {
     ["D"] = "Yes, it is true that I am familiar with this enchantment you require, $c.  Yet I\'m not one to give out favors freely, even if you were sent here by an old friend.$B$BI hold nothing but hatred and contempt for our brutish ogre neighbors.  And not only them, I hate the followers of Omokk just as much as I hate those that follow King Gordok.$B$BI want you to kill them.  Kill lots of them!  Bring me the beads they carry around their neck as proof of your work.  Do this and we shall talk about your request.",
     ["O"] = "Collect 25 Ogre Warbeads from Ogres inside Dire Maul or Blackrock Spire and return to Falrin Treeshaper inside the Athenaeum in Dire Maul.",
     ["T"] = "Falrin\'s Vendetta",
   },
+  [8950] = {
+    ["D"] = "I can place the enchantment you require on the banner quite easily, $N.  Unfortunately I don\'t have the materials I need as it is very rarely that someone asks for this sort of charm.$B$BI will require the essence of one of the Eldreth ghosts that haunt these halls, a handful of Scholomance dark runes and some large brilliant shards.  Bring me these reagents and I shall perform this task for you.",
+    ["O"] = "Bring the following to Falrin Treeshaper inside Dire Maul: 1 Jeering Spectre\'s Essence, 4 Dark Runes and 8 Large Brilliant Shards.",
+    ["T"] = "The Instigator\'s Enchantment",
+  },
+  [8951] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the medallion back together.  Return to Deliana and tell her that Bodley is her only hope for finding the remaining pieces.  Speak to her about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
+    ["O"] = "Return to Deliana in Ironforge with a set of Wildheart Boots, a Wildheart Kilt and Wildheart Spaulders.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
+  [8952] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the medallion back together.  Return to Deliana and tell her that Bodley is her only hope for finding the remaining pieces.  Speak to her about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
+    ["O"] = "Return to Deliana in Ironforge with a set of Beaststalker\'s Boots, Beaststalker\'s Pants and Beaststalker\'s Mantle.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
+  [8953] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the medallion back together.  Return to Deliana and tell her that Bodley is her only hope for finding the remaining pieces.  Speak to her about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
+    ["O"] = "Return to Deliana in Ironforge with a set of Magister\'s Boots, Magister\'s Leggings and Magister\'s Mantle.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
+  [8954] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the medallion back together.  Return to Deliana and tell her that Bodley is her only hope for finding the remaining pieces.  Speak to her about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
+    ["O"] = "Return to Deliana in Ironforge with a set of Lightforge Boots, Lightforge Legplates and Lightforge Spaulders.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
+  [8955] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the medallion back together.  Return to Deliana and tell her that Bodley is her only hope for finding the remaining pieces.  Speak to her about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
+    ["O"] = "Return to Deliana in Ironforge with a set of Devout Sandals, Devout Skirt and Devout Mantle.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
   [8956] = {
     ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the medallion back together.  Return to Deliana and tell her that Bodley is her only hope for finding the remaining pieces.  Speak to her about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
     ["O"] = "Return to Deliana in Ironforge with a set of Shadowcraft Boots, Shadowcraft Pants and Shadowcraft Spaulders.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
+  [8957] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the amulet back together.  Return to Mokvar and tell him that Bodley is his only hope for finding the remaining pieces.  Speak to him about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
+    ["O"] = "Return to Mokvar in Orgimmar with a set of Boots of Elements, Kilt of Elements and Pauldrons of Elements.",
     ["T"] = "Anthion\'s Parting Words",
   },
   [8958] = {
@@ -14408,10 +17191,86 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Return to Deliana in Ironforge with a set of Dreadmist Sandals, Dreadmist Leggings and Dreadmist Mantle.",
     ["T"] = "Anthion\'s Parting Words",
   },
-  [8979] = {
-    ["D"] = "이런 사태가 벌어진 원인을 알 것 같아. 자네도 최근 바람에 실려 흐르는 새로운 향기를 맡아봤겠지. 혹시 용수로의 악취일까? 아니면 새로운 향수라도 유행하는 건가?$B$B그도 아니면 더러운 연금술로 우리의 사고력이 흐려지는 건 아닐까 하는 생각이 드는군.$B$B확실히 알 수 있는 방법은 하나뿐일세. 내 친구 연금술사 진게에게 은은한 향수와 매혹적인 향수를 한 병씩 가져가게. 왕립 연금술 학회에서 진실을 밝혀줄 거야.$B$B돌아오면 향수 구입 비용은 갚아주겠어.",
-    ["O"] = "언더시티 연금술 실험실에 있는 연금술사 진게에게 은은한 향수와 매혹적인 향수를 한 병씩 가져가야 합니다.",
-    ["T"] = "펜스타드의 육감",
+  [8959] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the medallion back together.  Return to Deliana and tell her that Bodley is her only hope for finding the remaining pieces.  Speak to her about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
+    ["O"] = "Return to Deliana in Ironforge with a set of Boots of Valor, Legplates of Valor and Spaulders of Valor.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
+  [8960] = {
+    ["D"] = "So we need to recover the rest of the medallion?  Finding Bodley\'s going to be a bit of a headache.  He went back to Blackrock Mountain to attempt to re-enter Blackrock Spire and never came back.$B$BI\'d suggest taking the goblin\'s ghost revealing device with you, as I fear the worst might have happened.",
+    ["O"] = "Travel to Blackrock Mountain and use the Extra-Dimensional Ghost Revealer to find Bodley near Blackrock Spire.",
+    ["T"] = "Bodley\'s Unfortunate Fate",
+  },
+  [8961] = {
+    ["D"] = "In order to summon Lord Valthalak we\'re first going to need to gather the other two-thirds of the amulet. To do that we need to get a brazier and some special coals to burn in it.$B$BThere are three nobles of fire, Lord Incedius in Blackrock Depths, Pyroguard Emberseer in Blackrock Spire and The Duke of Cynders in Silithus, with what we need. Collect from each a piece of their remains, and then return to me with a Hallowed Brazier, which can be purchased from the Argent Dawn if you are honored by them.",
+    ["O"] = "Gather the Incendicite of Incendius, the Ember of Emberseer and the Cinder of Cynders, along with a Hallowed Brazier, and return them to Bodley inside Blackrock Mountain.",
+    ["T"] = "Three Kings of Flame",
+  },
+  [8962] = {
+    ["D"] = "$C, listen closely. Now that we have the brazier, and the means to light it, we still need another component to suffuse it with; something that will provide a focus strong enough to entice the spirit of my deceased, former comrade.$B$BMor Grayhoof, our most prominent druid, had many close friends amongst the Cenarion Circle, some of which have fallen to the silithid. I need you to retrieve some Druidical Remains from the silithid that inhabit the environs of Hive\'Regal in southeastern Silithus.",
+    ["O"] = "Acquire Druidical Remains and return them to Bodley inside Blackrock Mountain.",
+    ["T"] = "Components of Importance",
+  },
+  [8963] = {
+    ["D"] = "$C, listen closely. Now that we have the brazier, and the means to light it, we still need another component to suffuse it with; something that will provide a focus strong enough to entice the spirit of my deceased, former comrade.$B$BIsalien, our priestess, grew up in Winterspring at Starbreeze Village. I need you to gather a Starbreeze Village Relic from the Frostmaul giants of Frostwhisper Gorge in southern Winterspring, who are known for raiding to the north from time to time.",
+    ["O"] = "Acquire a Starbreeze Village Relic and return it to Bodley inside Blackrock Mountain.",
+    ["T"] = "Components of Importance",
+  },
+  [8964] = {
+    ["D"] = "$C, listen closely. Now that we have the brazier, and the means to light it, we still need another component to suffuse it with; something that will provide a focus strong enough to summon the remains of my deceased, former comrades.$B$BThe siblings, Jarien and Sothos, were believers in the way of the Scarlet Crusade. They aspired to knighthood within that vile organization. Go to Tyr\'s Hand in Eastern Plaguelands and retrieve a Brilliant Sword of Zealotry from the praetorians there.",
+    ["O"] = "Retrieve a Brilliant Sword of Zealotry and return it to Bodley inside Blackrock Mountain.",
+    ["T"] = "Components of Importance",
+  },
+  [8965] = {
+    ["D"] = "$C, listen closely. Now that we have the brazier, and the means to light it, we still need another component to suffuse it with; something that will provide a focus strong enough to entice the spirit of my deceased, former comrade.$B$BAn ogre necromancer that traveled with us, Kormok, delighted in summoning forth the souls of the banished dead of Purgation Isle, off the south coast of the Hillsbrad Foothills. Go there and retrieve some Soul Ashes of the Banished from their remains.",
+    ["O"] = "Obtain Soul Ashes of the Banished and return them to Bodley inside Blackrock Mountain.",
+    ["T"] = "Components of Importance",
+  },
+  [8966] = {
+    ["D"] = "My friend, Mor Grayhoof, was the first to fall victim to possession of a piece of Lord Valthalak\'s amulet, and the corrupting spirit fragment that it contains. After stealing Valthalak\'s spellbook and amulet, we fled for our lives from the upper portion of Blackrock Spire. Along the way, Mor fell into the lower portion of the spire.$B$BLater, we discovered that he survived the fall, only to be captured and tortured by War Master Voone. A few spectral assassins snuck in and slew him right in front of Voone.",
+    ["O"] = "Use the Brazier of Beckoning to summon forth the spirit of Mor Grayhoof and slay him. Return to Bodley inside Blackrock Mountain with the Left Piece of Lord Valthalak\'s Amulet and the Brazier of Beckoning.",
+    ["T"] = "The Left Piece of Lord Valthalak\'s Amulet",
+  },
+  [8967] = {
+    ["D"] = "It became known to us in later days, as we were doing what we could ourselves to survive, that Isalien, a night elf priestess of our company, had gone to the night elvic ancestral city, now known as Dire Maul. From what we gathered, she went there both for personal reasons and also to unlock the secrets of the piece of the amulet that she had in her possession.$B$BShe didn\'t quite make it, though. Word got back to us that she was ambushed at the Shrine of Eldretharr by Alzzin the Wildshaper and his forces.",
+    ["O"] = "Use the Brazier of Beckoning to summon forth the spirit of Isalien and slay her. Return to Bodley inside Blackrock Mountain with the Left Piece of Lord Valthalak\'s Amulet and the Brazier of Beckoning.",
+    ["T"] = "The Left Piece of Lord Valthalak\'s Amulet",
+  },
+  [8968] = {
+    ["D"] = "The siblings, Jarien and Sothos, decided to join the Scarlet Crusade upon the disbanding of our mercenary company. They took the left piece of Lord Valthalak\'s amulet with them. Good riddance, I say, but we need that piece back.$B$BFrom what we could gather, they were actually slain by Grand Crusader Dathrohan himself for failing the initiation rites inside his chamber in the Scarlet Bastion.$B$BIn any case, we... meaning you, are still going to need to retrieve that piece of the amulet.",
+    ["O"] = "Use the Brazier of Beckoning to summon forth Jarien and Sothos and slay them. Return to Bodley inside Blackrock Mountain with the Left Piece of Lord Valthalak\'s Amulet and the Brazier of Beckoning.",
+    ["T"] = "The Left Piece of Lord Valthalak\'s Amulet",
+  },
+  [8969] = {
+    ["D"] = "Now we have what we need, so it\'s time to discuss who it is that you\'ll be summoning.$B$BKormok was ok for an ogre, right up until he turned to necromancy. After that, things got creepy for just about everyone in the outfit. It was no surprise then when he took his piece of the amulet and returned to his new home, Scholomance.$B$BBut even there, or perhaps especially there, he was not safe from the spectral assassins. They slew him right in front of his master, Ras Frostwhisper.",
+    ["O"] = "Use the Brazier of Beckoning to summon forth the spirit of Kormok and slay him. Return to Bodley inside Blackrock Mountain with the Left Piece of Lord Valthalak\'s Amulet and the Brazier of Beckoning.",
+    ["T"] = "The Left Piece of Lord Valthalak\'s Amulet",
+  },
+  [8970] = {
+    ["D"] = "As I was saying, $c, in my living years I flirted with becoming a diviner. But, there really wasn\'t as much profit in it as you might imagine, mostly because it\'s dangerous and the reagents are rare and expensive. However, I do know enough to be able to pinpoint the final piece of the amulet, and the spirit of my former comrade along with it.$B$BThis is where you come in, $N. I need you to go to Alcaz Island off the coast of Dustwallow Marsh and collect Bloodkelp from the Strashaz naga that live there.",
+    ["O"] = "Gather 20 Bloodkelp from the Strashaz naga and then return to Bodley inside Blackrock Mountain.",
+    ["T"] = "I See Alcaz Island In Your Future...",
+  },
+  [8971] = "_",
+  [8972] = "_",
+  [8973] = "_",
+  [8974] = "_",
+  [8975] = "_",
+  [8976] = "_",
+  [8977] = {
+    ["D"] = "It\'s been great working with you, $N.  Here is the finished product.$B$BI hope it helps you in your current endeavors.  And hey, if you don\'t mind, help spread the word.  I wouldn\'t mind having more customers!",
+    ["O"] = "Bring the Extra-Dimensional Ghost Revealer  to Deliana in Ironforge.",
+    ["T"] = "Return to Deliana",
+  },
+  [8978] = {
+    ["D"] = "It\'s been great working with you, $N.  Here is the finished product.$B$BI hope it helps you in your current endeavors.  And hey, if you don\'t mind, help spread the word.  I wouldn\'t mind having more customers!",
+    ["O"] = "Return to Mokvar in Orgrimmar with the Extra-Dimensional Ghost Revealer.",
+    ["T"] = "Return to Mokvar",
+  },
+  [8980] = {
+    ["D"] = "This is unexpected. It looks like Fenstad might be on to something after all. I found traces of substances used in mind control potions.$b$bIt isn\'t unheard of for perfumes to have some of this, but a few of the ingredients I detected... This is serious alchemy, along the abilities of a member of the Royal Apothecary Society.",
+    ["O"] = "Return to Fenstad Argyle outside the bank in the Undercity.",
+    ["T"] = "Zinge\'s Assessment",
   },
   [8982] = {
     ["D"] = "We must find who the supplier is. I noticed Apothecary Katrina with a bottle of the perfume tucked in her pack. She told me that she purchased it from Norman, the innkeeper.",
@@ -14423,10 +17282,70 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Speak with Mara Rennick at the tailor\'s shop in the Undercity\'s Mage Quarter.",
     ["T"] = "향기의 근원 추적",
   },
-  [8984] = {
-    ["D"] = "Look, the actions of a rogue apothecary are not my concern. If he\'s undermining our efforts, then let me be the first to point you in the right direction$b$bIf he\'s innocent, then he\'s got nothing to hide, right?$b$bI purchased the goods from Apothecary Staffron Lerent. He\'s working in a secluded area past Ravenholdt Manor in the hills over Hillsbrad. To be honest with you, I thought he was a little odd.",
-    ["O"] = "라벤홀트 장원을 지나 언덕마루 구릉지에 있는 연금술사 스태프론 리런트를 찾아가야 합니다.",
-    ["T"] = "밝혀진 향기의 근원",
+  [8985] = {
+    ["D"] = "$C, listen closely. Now that we have the location of the last amulet piece, we still need another component to suffuse the brazier with; something that will provide a focus strong enough to entice the spirit of my deceased, former comrade.$B$BIsalien, our priestess, grew up in Winterspring at Starbreeze Village. I need you to gather a Starbreeze Village Relic from the Frostmaul giants of Frostwhisper Gorge in southern Winterspring, who are known for raiding to the north from time to time.",
+    ["O"] = "Acquire a Starbreeze Village Relic and return it to Bodley inside Blackrock Mountain.",
+    ["T"] = "More Components of Importance",
+  },
+  [8986] = {
+    ["D"] = "$C, listen closely. Now that we have the location of the last amulet piece, we still need another component to suffuse the brazier with; something that will provide a focus strong enough to entice the spirit of my deceased, former comrade.$B$BMor Grayhoof, our most prominent druid, had many close friends amongst the Cenarion Circle, some of which have fallen to the silithid. I need you to retrieve some Druidical Remains from the silithid that inhabit the environs of Hive\'Regal in southeastern Silithus.",
+    ["O"] = "Acquire Druidical Remains and return them to Bodley inside Blackrock Mountain.",
+    ["T"] = "More Components of Importance",
+  },
+  [8987] = {
+    ["D"] = "$C, listen closely. Now that we have the location of the last amulet piece, we still need another component to suffuse the brazier with; something that will provide a focus strong enough to summon the remains of my deceased, former comrades.$B$BThe siblings, Jarien and Sothos, were believers in the way of the Scarlet Crusade. They aspired to knighthood within that vile organization. Go to Tyr\'s Hand in Eastern Plaguelands and retrieve a Brilliant Sword of Zealotry from the praetorians there.",
+    ["O"] = "Retrieve a Brilliant Sword of Zealotry and return it to Bodley inside Blackrock Mountain.",
+    ["T"] = "More Components of Importance",
+  },
+  [8988] = {
+    ["D"] = "$C, listen closely. Now that we have the location of the last amulet piece, we still need another component to suffuse the brazier with; something that will provide a focus strong enough to entice the spirit of my deceased, former comrade.$B$BAn ogre necromancer that traveled with us, Kormok, delighted in summoning forth the souls of the banished dead of Purgation Isle, off the south coast of the Hillsbrad Foothills. Go there and retrieve some Soul Ashes of the Banished from their remains.",
+    ["O"] = "Obtain Soul Ashes of the Banished and return them to Bodley inside Blackrock Mountain.",
+    ["T"] = "More Components of Importance",
+  },
+  [8989] = {
+    ["D"] = "My friend, Mor Grayhoof, was the first to fall victim to possession of a piece of Lord Valthalak\'s amulet, and the corrupting spirit fragment that it contains. After stealing Valthalak\'s spellbook and amulet, we fled for our lives from the upper portion of Blackrock Spire. Along the way, Mor fell into the lower portion of the spire.$B$BLater, we discovered that he survived the fall, only to be captured and tortured by War Master Voone. A few spectral assassins snuck in and slew him right in front of Voone.",
+    ["O"] = "Use the Brazier of Beckoning to summon forth the spirit of Mor Grayhoof and slay him. Return to Bodley inside Blackrock Mountain with the recombined Lord Valthalak\'s Amulet and the Brazier of Beckoning.",
+    ["T"] = "The Right Piece of Lord Valthalak\'s Amulet",
+  },
+  [8990] = {
+    ["D"] = "It became known to us in later days, as we were doing what we could ourselves to survive, that Isalien, a night elf priestess of our company, had gone to the night elvic ancestral city, now known as Dire Maul. From what we gathered, she went there both for personal reasons and also to unlock the secrets of the piece of the amulet that she had in her possession.$B$BShe didn\'t quite make it, though. Word got back to us that she was ambushed at the Shrine of Eldretharr by Alzzin the Wildshaper and his forces.",
+    ["O"] = "Use the Brazier of Beckoning to summon forth the spirit of Isalien and slay her. Return to Bodley inside Blackrock Mountain with the recombined Lord Valthalak\'s Amulet and the Brazier of Beckoning.",
+    ["T"] = "The Right Piece of Lord Valthalak\'s Amulet",
+  },
+  [8991] = {
+    ["D"] = "The siblings, Jarien and Sothos, decided to join the Scarlet Crusade upon the disbanding of our mercenary company. They took the right piece of Lord Valthalak\'s amulet with them. Good riddance, I say, but we need that piece back.$B$BFrom what we could gather, they were actually slain by Grand Crusader Dathrohan himself for failing the initiation rites inside his chamber in the Scarlet Bastion.$B$BIn any case, we... meaning you, are still going to need to retrieve that piece of the amulet.",
+    ["O"] = "Use the Brazier of Beckoning to summon forth Jarien and Sothos and slay them. Return to Bodley inside Blackrock Mountain with the recombined Lord Valthalak\'s Amulet and the Brazier of Beckoning.",
+    ["T"] = "The Right Piece of Lord Valthalak\'s Amulet",
+  },
+  [8992] = {
+    ["D"] = "Now we have what we need, so it\'s time to discuss who it is that you\'ll be summoning next.$B$BKormok was ok for an ogre, right up until he turned to necromancy. After that, things got creepy for just about everyone in the outfit. It was no surprise then when he took his piece of the amulet and returned to his new home, Scholomance.$B$BBut even there, or perhaps especially there, he was not safe from the spectral assassins. They slew him right in front of his master, Ras Frostwhisper.",
+    ["O"] = "Use the Brazier of Beckoning to summon forth the spirit of Kormok and slay him. Return to Bodley inside Blackrock Mountain with the recombined Lord Valthalak\'s Amulet and the Brazier of Beckoning.",
+    ["T"] = "The Right Piece of Lord Valthalak\'s Amulet",
+  },
+  [8994] = {
+    ["D"] = "We\'re nearly there, $c. All that is left is to retrieve a few more components so that I can attune the brazier and enable it to beckon forth Lord Valthalak.$B$BTo begin I must ask you to journey forth into Blackrock Spire and slay the orcs therein. They wear bracers that contain trace metals that I will need, so I\'ll need more than a few to extract the right amount out of them. Then, to complete the imbuing process, you\'ll need to bring me a Flask of Supreme Power.$B$BGood luck, $N!",
+    ["O"] = "Gather 40 Blackrock Bracers and acquire a Flask of Supreme Power. Return them to Bodley inside Blackrock Mountain.",
+    ["T"] = "Final Preparations",
+  },
+  [8995] = {
+    ["D"] = "All is now ready, $N.$B$BWhen alive, Lord Valthalak used to inhabit what is now The Beast\'s chamber. Go there and use the Brazier of Beckoning to summon forth Lord Valthalak. It will reincorporate him, so he\'ll have to be killed again. I\'d take care of The Beast first, and be sure take enough friends along to survive the upper portion of Blackrock Spire.$B$BOnce you\'ve dispatched Valthalak, use the amulet on his corpse. With his spirit reunified, he\'ll likely want his amulet back, as well.$B$BGood luck!",
+    ["O"] = "Use the Brazier of Beckoning to summon Lord Valthalak. Dispatch him, and use Lord Valthalak\'s Amulet on the corpse. Then, return Lord Valthalak\'s Amulet to the Spirit of Lord Valthalak.",
+    ["T"] = "Mea Culpa, Lord Valthalak",
+  },
+  [8996] = {
+    ["D"] = "I will ignore your impertinence this time, $c, because you have done a noble thing today; returning the rest of my stolen spirit to me. Despite your obviously weak nature, $r, you have shown courage where those that stole from me did not, and probably never could!$B$BReturn to them, before I change my mind and slay you where you stand. Go back and tell them that they are safe... for now.",
+    ["O"] = "Return to Bodley inside Blackrock Mountain and give him the Brazier of Beckoning.",
+    ["T"] = "Return to Bodley",
+  },
+  [8997] = {
+    ["D"] = "I suppose that this is goodbye then, my friend. But, I\'ll always be here if you want to come back and talk with me from time to time. Probably while you\'re loitering around waiting for your buddies to join you for a raid on Blackrock Spire.$B$BGo, before I start to cry. Go back to Deliana in Ironforge and tell her what\'s happened.",
+    ["O"] = "Speak with Deliana at The High Seat in Ironforge.",
+    ["T"] = "Back to the Beginning",
+  },
+  [8998] = {
+    ["D"] = "I suppose that this is goodbye then, my friend. But, I\'ll always be here if you want to come back and talk with me from time to time. Probably while you\'re loitering around waiting for your buddies to join you for a raid on Blackrock Spire.$B$BGo, before I start to cry. Go back to Mokvar in Orgrimmar and tell him what\'s happened.",
+    ["O"] = "Speak with Mokvar at Grommash Hold in Orgrimmar\'s Valley of Wisdom.",
+    ["T"] = "Back to the Beginning",
   },
   [8999] = {
     ["D"] = "That\'s an amazing story, $N! You have my thanks, and the heartfelt gratitude of all who were involved. Now maybe I\'ll be able to sleep at night with both eyes shut.$B$BAs to your reward, I believe I have a few things that you\'ll really enjoy.",
@@ -14513,6 +17432,41 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Travel to the Ring of the Law in Blackrock Depths and place the Banner of Provocation in its center as you are sentenced by High Justice Grimstone.  Slay Theldren and his gladiators and return to Anthion Harmon in the Eastern Plaguelands with the first piece of Lord Valthalak\'s amulet.",
     ["T"] = "The Challenge",
   },
+  [9016] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the amulet back together.  Return to Mokvar and tell him that Bodley is his only hope for finding the remaining pieces.  Speak to him about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
+    ["O"] = "Return to Mokvar in Orgimmar with a set of Wildheart Boots, a Wildheart Kilt and Wildheart Spaulders.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
+  [9017] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the amulet back together.  Return to Mokvar and tell him that Bodley is his only hope for finding the remaining pieces.  Speak to him about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
+    ["O"] = "Return to Mokvar in Orgimmar with a set of Beaststalker\'s Boots, Beaststalker\'s Pants and Beaststalker\'s Mantle.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
+  [9018] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the amulet back together.  Return to Mokvar and tell him that Bodley is his only hope for finding the remaining pieces.  Speak to him about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
+    ["O"] = "Return to Mokvar in Orgimmar with a set of Magister\'s Boots, Magister\'s Leggings and Magister\'s Mantle.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
+  [9019] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the amulet back together.  Return to Mokvar and tell him that Bodley is his only hope for finding the remaining pieces.  Speak to him about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
+    ["O"] = "Return to Mokvar in Orgimmar with a set of Devout Sandals, Devout Skirt and Devout Mantle.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
+  [9020] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the amulet back together.  Return to Mokvar and tell him that Bodley is his only hope for finding the remaining pieces.  Speak to him about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
+    ["O"] = "Return to Mokvar in Orgimmar with a set of  Shadowcraft Boots, Shadowcraft Pants and Shadowcraft Spaulders.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
+  [9021] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the amulet back together.  Return to Mokvar and tell him that Bodley is his only hope for finding the remaining pieces.  Speak to him about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
+    ["O"] = "Return to Mokvar in Orgimmar with a set of Dreadmist Sandals, Dreadmist Leggings and Dreadmist Mantle.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
+  [9022] = {
+    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the amulet back together.  Return to Mokvar and tell him that Bodley is his only hope for finding the remaining pieces.  Speak to him about any rewards you\'ve arranged for.$B$BI, for once, shall rest in peace.  I wish you the best of luck; you shall need every bit of it!",
+    ["O"] = "Return to Mokvar in Orgimmar with a set of Boots of Valor, Legplates of Valor and Spaulders of Valor.",
+    ["T"] = "Anthion\'s Parting Words",
+  },
   [9023] = {
     ["D"] = "우리 형제는 라벤홀트 장원에서 독을 다루는 일을 맡고 있지요.$B$B라벤홀트 경께서 저에게 새로운 독성 화합물을 찾으라는 지시를 하나 내리셨습니다. 줄구룹과 안퀴라즈 폐허에 사는 생명체에게서 추출한 독주머니로 만들 수 있지요.$B$B저주받은 그곳의 두 짐승이 우리가 찾는 특별한 독을 지니고 있습니다. 쿠린낙스와 베녹시스의 독주머니를 가져다주시면 그 은혜 평생 잊지 않겠습니다.",
     ["O"] = "세나리온 요새에 있는 더크 썬더우드가 베녹시스의 독주머니와 쿠린낙스의 독주머니를 가져다 달라고 했습니다.",
@@ -14523,14 +17477,14 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "스톰윈드 상업 지구에 있는 모건 페슬에게 은은한 향수와 매혹적인 향수를 각 한 병씩 가져가야 합니다.",
     ["T"] = "아리스탄의 예감",
   },
+  [9025] = {
+    ["D"] = "Well, I\'ll be. It looks like Aristan might be on to something after all. I found traces of substances used in love potions and insidious mind-altering draughts.$b$bIt isn\'t unheard of for perfumes to have some of them, but a few of the ingredients I detected... Smells funny.",
+    ["O"] = "Return to Aristan Mottar outside the bank in Stormwind\'s Trade District.",
+    ["T"] = "Morgan\'s Discovery",
+  },
   [9026] = {
     ["D"] = "We\'ve got to find the source. I\'ve seen a lot more people than usual - guards included - going in and out of The Gilded Rose. Talk to Allison. If she\'s selling them, she can tell you where they came from.",
     ["O"] = "Speak with Innkeeper Allison at The Gilded Rose in Stormwind\'s Trade District.",
-    ["T"] = "향기의 근원 추적",
-  },
-  [9027] = {
-    ["D"] = "은은한 향기에 대해 뭔가 기묘한 것이요? 있을 수 없어요. 향수를 사 가신 손님 중에서 기묘한 모습을 보인 분은 많이 보지 못했거든요.$B$B보세요, 향수에 뭔가 잘못된 것이 있다면 저도 알고 싶어요. 이 향수 재고품을 에버트 소리삼이라고 마을에 새로운 상인에게 구입했답니다.$B$B그는 최고급 실타래로 향수 재고를 배달하러 갈 거라고 했었어요.",
-    ["O"] = "스톰윈드 운하 지구 근처에 최고급 실타래 상점에 있는 에버트 소리삼과 대화해야 합니다.",
     ["T"] = "향기의 근원 추적",
   },
   [9028] = {
@@ -14538,10 +17492,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "라벤홀트 장원을 지나 언덕마루 구릉지에서 연금술사 스태프론 리런트를 찾아야 합니다.",
     ["T"] = "밝혀진 향기의 근원",
   },
-  [9030] = {
-    ["D"] = "Valthalak\'s soul was stored in this amulet.  In our greed we foolishly split it into three parts, not knowing the curse that would await us.$B$BThe only way to stop Valthalak\'s spell is to put the medallion back together.  Return to Deliana and tell her that Bodley is her only hope for finding the remaining pieces.$B$BI, for once, shall rest in peace.  I wish you the best of luck, and you shall need it!",
-    ["O"] = "Speak to Deliana in Ironforge.",
-    ["T"] = "Anthion\'s Parting Words",
+  [9029] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "A Bubbling Cauldron",
   },
   [9032] = {
     ["D"] = "The medallion contained Valthalak\'s soul?  It\'s no surprise it was guarded by such a powerful curse.$B$BLocating Bodley presents a bit of a problem.  Last time I heard of him, he was preparing to venture back into Blackrock Spire.  He was never heard of again.$B$BSeek him out in Blackrock Mountain, though I\'m afraid to say he\'s probably dead by now.  I suggest taking the goblin\'s device with you, friend.",
@@ -14638,6 +17592,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Commander Eligor Dawnbringer at Light\'s Hope Chapel in the Eastern Plaguelands will make Redemption Wristguards if you bring him the following: 1 Desecrated Wristguards, 6 Wartorn Plate Scraps, 1 Arcanite Bar and 2 Cured Rugged Hides.",
     ["T"] = "구원의 손목보호대",
   },
+  [9051] = {
+    ["D"] = "The toxin you helped me create is for a special purpose.  The great devilsaurs of the crater make it dangerous to hunt and difficult for me to survive.  Even if I possessed the necessary strength, killing a devilsaur simply allows another to move into its territory.$b$bTake this poisoned barb and stab it deep into a living devilsaur.  The toxin should pacify the creature, though I do not know how quickly...",
+    ["O"] = "Stab a Devilsaur with the Devilsaur Barb. Return to Torwa Pathfinder in Un\'Goro Crater when you have completed this task.",
+    ["T"] = "Toxic Test",
+  },
+  [9052] = {
+    ["D"] = "I would ask you to help me create a toxin of sorts, to pacify a great creature living here in the crater.  It is not deadly, and only the keen eyes of a $c can hope to collect the ingredients.$b$bYou can find the bloodcap mushrooms growing within the bloodpetal sprouts all across the crater.  Gorishi stings are from the insects inside and around the Slithering Scar, located in the southern part of the crater.",
+    ["O"] = "Collect 8 Bloodcap and 8 Gorishi Stings, and return to Torwa Pathfinder in Un\'Goro Crater.",
+    ["T"] = "Bloodpetal Poison",
+  },
   [9053] = {
     ["D"] = "It is as I feared -- the toxin is simply too weak for such a powerful creature.$b$bIf we are to create a toxin of high enough potency, you must venture to the bottom of the Temple of Atal\'Hakkar, unlock the secrets of the altar and recover a putrid vine from the guardian there.  The temple is dangerous, and it would behoove you to bring friends.$b$bReturn to me when this is done.",
     ["O"] = "Retrieve a Putrid Vine from the guardian at the bottom of the Sunken Temple and return to Torwa Pathfinder.",
@@ -14697,11 +17661,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "책이 훼손되었다는 사실을 아시면 안시올님께서 펄쩍 뛰실 텐데 큰일이군. 그대에게 한 가지 제안이 있소. 답례는 할 테니 걱정하지 마시오.$B$B이 책을 그분께 가져다주고 이번 일에 대해서는 아무 얘기도 하지 마시오. 그분께서 왜 책이 이 모양이냐고 물으시거든 그대가 웅덩이에 떨어뜨렸다고만 얘기하시오. 안시올님께선 그대를 직접 처분할 권한이 없으니 아무리 스승이시라지만 별수 없을 거요.$B$B안시올님께서는 잔잔한 속삭임 연못에서 강의를 하시는데 실버문에서 남동쪽에 있소이다. 우리를 위해 이 일을 해 주겠지? 이번 호의에 대해서는 크게 보답하겠소이다!",
     ["O"] = "영원노래 숲의 잔잔한 속삭임 연못에 있는 스승 안시올에게 안시올의 원소 마법서를 가져가야 합니다.",
     ["T"] = "들통날 거짓말",
-  },
-  [9065] = {
-    ["D"] = "$Tpunk;!  Kill Kobold Vermin, 2 of em.",
-    ["O"] = "Kill Kobold Vermin, 2 of em.",
-    ["T"] = "The \"Chow\" Quest (123)aa",
   },
   [9066] = {
     ["D"] = "오늘 소중한 교훈을 얻었기를 바라네. 자네에게 거짓말을 시키는 자를 절대 믿지 말게.$B$B이제 얼빠진 내 두 제자에게 돌아가서 이 지도봉으로 그들을 벌해주게. 내 마법이 이르길 자네가 죽음의 흉터의 다른 쪽으로 난 서쪽 길을 따라가면 그들을 찾을 수 있을 거라고 하는군.$B$B일을 마치면 돌아오게나. 자네에게 번거로운 심부름을 맡겼으니 작은 보상이라도 해야 하지 않겠나?",
@@ -14973,11 +17932,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "영원노래 숲의 서부 성소에 있는 맥지기 벨라니아와 대화해야 합니다.",
     ["T"] = "고장난 서부 성소",
   },
-  [9120] = {
-    ["D"] = "이 성물함은 낙스라마스의 주인이 남긴 유일한 물건입니다. 이 성물함을 파괴해서 리치가 다시는 부활하지 못하도록 막는 것이 더 현명한 판단이라고 생각됩니다. 감사하게도 당신은 마음속을 울리는 그 이유에 대해 반문하지 않습니다.$B$B희망의 빛 예배당에 있는 누군가가 이 성물함을 가져다주는 대가로 크게 보답할 것입니다. 켈투자드가 모든 힘을 되찾아 부활한다고 해도 누가 신경이나 쓰겠습니까?",
-    ["O"] = "동부 역병지대에 있는 희망의 빛 예배당에 켈투자드의 성물함을 가져가야 합니다.",
-    ["T"] = "켈투자드의 죽음",
-  },
   [9121] = {
     ["D"] = "두껍게 펼쳐진 역병숲 속에 공포의 요새 낙스라마스로 가는 입구가 있어요. 지금까지 낙스라마스로 들어가려는 시도가 수차례 있었지만 룬 차원문에 설치된 마법 수호물 때문에 모두 실패하고 말았었죠. 지금까진 말이에요.$B$B지금은 비전 마법을 통한 은신술로 낙스라마스로 들어갈 수 있어요. 제가 키린 토의 고대 주문을 약간 수정하여 고안해 낸 것이죠. 하지만 은빛 여명회를 위한 당신의 헌신이 다소 부족한 것 같군요. 이 방법은 돈이 상당히 많이 들어갑니다. 이번 제안을 거절하고 은빛 여명회로부터 매우 우호적 또는 확고한 동맹의 평판을 얻으신 후에 다시 오셔도 괜찮아요. 그러면 비용이 좀 줄어들 거예요.",
     ["O"] = "동부 역병지대의 희망의 빛 예배당에 있는 대마법사 안젤라 도산토스가 신비한 수정 5개, 마력의 결정체 2개, 정의의 보주 1개, 60골드를 가져다 달라고 했습니다. 또한 은빛 여명회의 평판이 우호적이어야 합니다.",
@@ -14998,30 +17952,15 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Huntsman Leopold at Light\'s Hope Chapel in the Eastern Plaguelands wants 30 Crypt Fiend Parts.",
     ["T"] = "Cryptstalker Armor Doesn\'t Make Itself...",
   },
-  [9125] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "지하마귀 발톱",
-  },
   [9126] = {
     ["D"] = "Don Julio\'s Bonescythe armor pattern requires bone fragments - a lot of bone fragments. While those crazy enough to venture into Naxxramas provide me with enough of the core materials to make the armor, I\'m always looking for more Scourge bone fragments.$B$BSo what do you think? Interested in getting your hands dirty and destroying some Scourge at the same time? It\'s a win-win situation.",
     ["O"] = "Rohan the Assassin at Light\'s Hope Chapel in the Eastern Plaguelands wants 30 Bone Fragments.",
     ["T"] = "Bonescythe Digs",
   },
-  [9127] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "해골 조각",
-  },
   [9128] = {
     ["D"] = "Greetings, adventurer! Are you interested in some work? I pay those under my employ with insignias. These insignias can be used at the Quartermaster to purchase items of power.$B$BAll I need you to do is bring me as many core of elements as you can carry. The more the better!$B$BYou\'ll find them on elementals of varying shapes and sizes that exist across our world.",
     ["O"] = "Archmage Angela Dosantos at Light\'s Hope Chapel in the Eastern Plaguelands wants 30 Core of Elements.",
     ["T"] = "The Elemental Equation",
-  },
-  [9129] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "정령의 정수",
   },
   [9130] = {
     ["D"] = "Welcome volunteer!  We\'re running low on supplies here, but the blood elves have promised us materiel assistance.  That\'s where you come in.$B$BTake this bill of lading over to Skymaster Sunwing. He\'ll have further instructions for you on how best to get up to Silvermoon City.",
@@ -15032,11 +17971,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "Have you ever seen Dreadnaught armor, $c? No, of course you haven\'t. You\'re still a $g boy:girl; - a tyke. Let me tell you, it is glorious.$B$BYou\'re probably asking yourself what any of this has to do with you, right? I\'ll tell you what, scrub; I need Dark Iron scraps and I\'m willing to pay to get my hands on as many as possible.$B$BI need the scraps to put together sets of Dreadnaught for our champions. Bring me scraps and get paid.",
     ["O"] = "Korfax at Light\'s Hope Chapel in the Eastern Plaguelands wants 30 Dark Iron Scraps.",
     ["T"] = "Binding the Dreadnaught",
-  },
-  [9132] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "검은무쇠 조각",
   },
   [9133] = {
     ["D"] = "아주 약간의 요금만 내면 이 근사한 녀석들 중 하나를 타고 하늘을 날아 순식간에 실버문에 도착할 수 있습니다. 거기까지 걸어가는 것보다 훨씬 안전하다고 자신 있게 말할 수 있지요!$B$B실버문에 도착하거든 시장에 있는 사스렌 아주어돈을 찾아보시죠.$B$B하늘 높이 날아오를 마음의 준비가 되면 다시 말씀해주십시오.",
@@ -15058,6 +17992,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Rayne at Light\'s Hope Chapel in the Eastern Plaguelands wants 30 Savage Fronds.",
     ["T"] = "Savage Flora",
   },
+  [9137] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Savage Fronds",
+  },
   [9138] = {
     ["D"] = "We\'re surrounded here, $c.  The outlying villages have all been overrun by the Scourge!$B$BYou must head northeast to Suncrown Village immediately and deal with the nerubian Scourge menace.  You can\'t miss them - they\'re spider-like creatures.$B$BThere\'s no time to waste.... Quel\'Thalas must be reclaimed!",
     ["O"] = "네루비스 경비병 10마리를 해치운 후 유령의 땅의 트랜퀼리엔에 있는 비전술사 반드릴에게 가야 합니다.",
@@ -15072,6 +18011,16 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "$N, 유령의 땅에 있는 마을에서 마지막으로 펼칠 전투의 승패는 모두 그대에게 달렸습니다. 남서쪽에 있는 윈드러너 마을은 강력한 스컬지 돌격병인 망령과 가고일에게 침략당했습니다. 그대가 공격의 선봉을 맡아 그들의 숫자를 줄여주십시오.$B$B근처 태양의 성소에 있는 마술사들이 이번에 특별한 요청을 했습니다. 스컬지에 대항할 새로운 방법을 찾기 위해 망령과 가고일의 잔해를 받고 싶다고 하네요.$B$B그럼, 즐거운 사냥 되십시오!",
     ["O"] = "실체 없는 잔여물 6개, 가고일 파편 4개를 모아, 유령의 땅, 트랜퀼리엔에 있는 비전술사 반드릴에게 가져가야 합니다.",
     ["T"] = "윈드러너 마을",
+  },
+  [9141] = {
+    ["D"] = "You want a writ? What? Do you expect me to hand you a highly sought after work order just for showing up? I think not, scrub. Crafters from around the world bid for jobs here at the front lines.$B$BIf you want a work order, you\'ll have to show me that you\'re willing to bleed for the cause. Bring me a valor token and we\'ll talk.$B$BAnd there\'s only one way to get your grubby little scrub mitts on those - get to killin\'.",
+    ["O"] = "Dispatch Commander Metz at Light\'s Hope Chapel in the Eastern Plaguelands wants an Argent Dawn Valor Token.",
+    ["T"] = "They Call Me \"The Rooster\"",
+  },
+  [9142] = {
+    ["D"] = "You know the drill, kid. One valor token gets you a craftsman\'s writ.",
+    ["O"] = "",
+    ["T"] = "Craftsman\'s Writ",
   },
   [9143] = {
     ["D"] = "부관은 정찰도 하지 않고 우리를 호수 건너 트롤들과 싸우게 했습니다. 저 멍청한 부관 때문에 엄청난 피해를 봤습니다! 내 말 들려요, 토마스렌? 이 바보 천치 같은 양반아!$B$B$C|1이여;여;, 우리를 좀 도와주세요. 무슨 일이 있어도 트롤들을 제거해야 합니다. 저는 여기 남아서 부관을 돌봐야 합니다. 정신이 살짝 나간 것 같거든요.$B$B동쪽으로 가십시오. 호수 반대편에 가서 제브소라로 들어가면 됩니다. 놈들을 처치하고 복수의 증거를 가져다주십시오. 수집하면 멋진 기념품이 될 것입니다!",
@@ -15463,15 +18412,60 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "데솔름에서 다르칸의 눈 5마리, 네루비스 백인대장 6마리, 통곡하는 원혼 6마리를 해치운 후 유령의 땅, 태양의 성소에 있는 마법학자 이도니스에게 가야 합니다.",
     ["T"] = "데솔름 전쟁",
   },
+  [9221] = {
+    ["D"] = "Greetings, friend. Have you insignias of the Dawn or the Crusade that you would like to redeem for items of power?$B$BI must warn you; purchases made at a friendly reputation with the Dawn come with a hefty surcharge. I would advise that you gain a better reputation with the Dawn before moving forward with your plans.",
+    ["O"] = "For 30 Insignias of the Dawn and 30 Insignias of the Crusade you may choose an item from the Argent Dawn\'s treasure cache.",
+    ["T"] = "Superior Armaments of Battle - Friend of the Dawn",
+  },
+  [9222] = {
+    ["D"] = "Greetings, friend. Have you insignias of the Dawn or the Crusade that you would like to redeem for items of great power?$B$BI must warn you; purchases made at a friendly reputation with the Dawn come with an extremely hefty surcharge. I would advise that you gain a better reputation with the Dawn before moving forward with your plans.",
+    ["O"] = "For 110 Insignias of the Dawn and 110 Insignias of the Crusade you may choose an item from the Argent Dawn\'s treasure cache.",
+    ["T"] = "Epic Armaments of Battle - Friend of the Dawn",
+  },
+  [9223] = {
+    ["D"] = "Greetings, friend. Have you insignias of the Dawn or the Crusade that you would like to redeem for items of power?$B$BI must warn you; purchases made at honored reputation with the Dawn come with a fairly prohibitive surcharge. I would advise that you gain a better reputation with the Dawn before moving forward with your plans.",
+    ["O"] = "For 20 Insignias of the Dawn and 20 Insignias of the Crusade you may choose an item from the Argent Dawn\'s treasure cache.",
+    ["T"] = "Superior Armaments of Battle - Honored Amongst the Dawn",
+  },
+  [9224] = {
+    ["D"] = "Greetings, friend. Have you insignias of the Dawn or the Crusade that you would like to redeem for items of great power?$B$BI must warn you; purchases made at honored reputation with the Dawn come with an extremely hefty surcharge. I would advise that you gain a better reputation with the Dawn before moving forward with your plans.",
+    ["O"] = "For 75 Insignias of the Dawn and 75 Insignias of the Crusade you may choose an item from the Argent Dawn\'s treasure cache.",
+    ["T"] = "Epic Armaments of Battle - Honored Amongst the Dawn",
+  },
+  [9225] = {
+    ["D"] = "Greetings, friend. Have you insignias of the Dawn or the Crusade that you would like to redeem for items of great power?$B$BI must warn you; epic purchases made at revered reputation with the Dawn are still quite expensive. I would advise that you gain a better reputation with the Dawn before moving forward with your plans.",
+    ["O"] = "For 45 Insignias of the Dawn and 45 Insignias of the Crusade you may choose an item from the Argent Dawn\'s treasure cache.",
+    ["T"] = "Epic Armaments of Battle - Revered Amongst the Dawn",
+  },
   [9226] = {
     ["D"] = "Greetings, friend. Have you insignias of the Dawn or the Crusade that you would like to redeem for items of power?$B$BItems offered to those revered amongst the Dawn are priced quite reasonably. I encourage you to make a purchase!",
     ["O"] = "For 7 Insignias of the Dawn and 7 Insignias of the Crusade you may choose an item from the Argent Dawn\'s treasure cache.",
     ["T"] = "Superior Armaments of Battle - Revered Amongst the Dawn",
   },
+  [9227] = {
+    ["D"] = "Greetings, friend. Have you insignias of the Dawn or the Crusade that you would like to redeem for items of power?$B$BItems offered to those exalted amongst the Dawn are discounted. I encourage you to make a purchase!",
+    ["O"] = "For 6 Insignias of the Dawn and 6 Insignias of the Crusade you may choose an item from the Argent Dawn\'s treasure cache.",
+    ["T"] = "Superior Armaments of Battle - Exalted Amongst the Dawn",
+  },
+  [9228] = {
+    ["D"] = "Greetings, friend. Have you insignias of the Dawn or the Crusade that you would like to redeem for items of great power?$B$BThose exalted amongst the Dawn receive our greatest discounts! I encourage you to make a purchase.",
+    ["O"] = "For 27 Insignias of the Dawn and 27 Insignias of the Crusade you may choose an item from the Argent Dawn\'s treasure cache.",
+    ["T"] = "Epic Armaments of Battle - Exalted Amongst the Dawn",
+  },
+  [9229] = {
+    ["D"] = "Ramaladni was a warrior of the Brotherhood - a pupil of Highlord Mograine before the Dawn even existed! When news of Mograine\'s death reached him, hatred and anger took over.$B$BUnderstand this, $N, when rage and retribution take the reins, a man ceases to be a man. The man personifies the emotions that control him instead. And so it would be that Ramaladni, the spirit of retribution, would enter Naxxramas to exact vengeance... and never return.$B$BEnter Naxxramas and find what became of Ramaladni.",
+    ["O"] = "Enter Naxxramas and uncover the Fate of Ramaladni.",
+    ["T"] = "The Fate of Ramaladni",
+  },
   [9230] = {
     ["D"] = "Fixing this band may prove to be quite challenging, $N. You see, it was made from the very runes that form inside Scourge structures - like Naxxramas. Additional materials are also required but your main concern should be getting those frozen runes. Bring me what I need and I will restore the ring to its former glory.",
     ["O"] = "Korfax at Light\'s Hope Chapel in the Eastern Plaguelands wants you to bring him 1 Frozen Rune, 1 Blue Sapphire and 1 Arcanite Bar.",
     ["T"] = "라말라드니의 얼음 고리",
+  },
+  [9232] = {
+    ["D"] = "You fancy yourself a hero of the Dawn, eh? I\'ve seen our greatest soldiers get rolled over by Kel\'Thuzad\'s plebes! How well could someone so clueless possibly fare in Naxxramas?$B$B<Wilhelm sighs.>$B$BBah, what choice do I got? You\'re the best I can do; I may as well help you.$B$BOmarion left me with one recipe. It\'s the only song I know... I can make a few variations of these pants; you just gotta supply the materials.",
+    ["O"] = "Craftsman Wilhelm at Light\'s Hope Chapel in the Eastern Plaguelands wants you to bring him 2 Frozen Runes, 2 Essence of Water, 2 Blue Sapphires and 30 gold pieces.",
+    ["T"] = "The Only Song I Know...",
   },
   [9233] = {
     ["D"] = "Wilhelm,$B$BIf you are reading this, I have perished - finally. I want you to know that my dying thoughts revolved around you and your ineptitude when it comes to tradeskills. Unfortunately, the bearer of this handbook is in even worse shape than you in regards to crafting.$B$BAbout the book: These are the rest of my recipes. Make the bearer of this book whatever they request. I\'m sure you will charge a hefty fee for your services because you are, after all, a bastard.$B$BIn Disdain,$B$BOmarion",
@@ -15558,16 +18552,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "",
     ["T"] = "상품권 40매 - 설계도: 통통 전차 조종기",
   },
-  [9250] = {
-    ["D"] = "몸체가 구성됐으니 아티쉬는 거의 완성된 것입니다. 이제 지팡이의 윗부분과 아랫부분만 있으면 됩니다. 그리고 지팡이가 살게라스의 악마를 불러내는 통로 역할을 한다는 사소한 문제가 있습니다.$B$B지팡이의 나머지 두 부분을 찾고 지팡이의 악마를 퇴치하도록 도와줄 조력자를 찾아야 합니다.",
-    ["O"] = "지팡이의 나머지 두 부분을 되찾고 지팡이의 악마를 퇴치하도록 도와줄 자를 찾아야 합니다.",
-    ["T"] = "아티쉬의 몸통",
-  },
-  [9251] = {
-    ["D"] = "그대가 왜 아직도 살아 있는지 궁금할 것이다. 그대가 마침내 손에 넣게 된 것은 지독하게도 사악한 물건이다. 명확하게 대답할 수는 없다. 나는 내 할 일을 할 뿐...$B$B켈투자드는 낙스라마스에 있는 자신의 왕좌에 앉아 음모를 계획하고 있다... 그는 그대가 지니고 있는 것을 찾고 있으며, 그대가 찾고 있는 것을 지니고 있는 장본인이다.$B$B지팡이의 아랫부분은 브란 브론즈비어드라고 하는 드워프가 안퀴라즈로 들어갈 때 지니고 있었느니라. 그는 안퀴라즈를 떠났지만 아티쉬의 나머지 조각들은 그곳에 남아 있다.$B$B아티쉬의 아랫부분을 찾으면 내게 돌아오너라.",
-    ["O"] = "타나리스의 시간의 동굴에 있는 아나크로노스가 아티쉬의 지팡이 머리와 아티쉬의 밑동을 가져다 달라고 했습니다.",
-    ["T"] = "아티쉬, 저주받은 지팡이",
-  },
   [9252] = {
     ["D"] = "확실히 스컬지의 공격 횟수가 늘어났습니다. 가까스로 방어선을 유지하는 상황인데 실버문에서는 지원군이 도착할 기미도 안 보입니다. 마을을 지킬 수 있도록 도와주십시오. 죽음의 흉터 근처를 돌아다니는 언데드의 숫자를 줄이면 됩니다.",
     ["O"] = "썩은다리 약탈자와 어둠의 망령을 각각 4마리씩 해치운 후 영원노래 숲의 산들바람 마을에 있는 순찰자 사레인에게 가야 합니다.",
@@ -15592,6 +18576,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "그대에게 다른 임무를 맡기겠습니다. 순찰자 데골리엔은 인근 해돋이 부두에서 발생한 버림받은 자들의 습격 사건에 대해서 좀 더 자세히 알아보라는 임무를 받고 산들바람 마을로 파견되었습니다. 그가 지원을 요청했지만 아직 상황이 여의치 않습니다. 그를 찾아서 최대한 지원해 주십시오.$B$B매날개 광장 바깥에 있는 길을 따라 남쪽으로 가면 산들바람 마을에 도착할 겁니다. 행운을 빌겠습니다!",
     ["O"] = "영원노래 숲의 산들바람 마을에 있는 순찰자 데골리엔과 대화해야 합니다.",
     ["T"] = "산들바람 마을",
+  },
+  [9257] = {
+    ["D"] = "This final task will be the most difficult of all, $N. You have faced and defeated both an Old God and the Lich King\'s General, but now you must face the hand of Sargeras.$B$BTake the staff to Stratholme. It is there that you will find a piece of consecrated earth: ground where the greatest knights of Lordaeron were murdered. Place the befouled staff upon the holy ground and prepare for an entity of immense power to break from within... Defeat the demonic being that controls the staff and return to me.",
+    ["O"] = "Anachronos at the Caverns of Time in Tanaris wants you to take Atiesh, Greatstaff of the Guardian to Stratholme and use it on Consecrated Earth. Defeat the entity that is exorcised from the staff and return to him.",
+    ["T"] = "아티쉬 - 수호자의 지팡이",
   },
   [9258] = {
     ["D"] = "스컬지는 새로운 지역으로 세력을 확장하기에 앞서 토양을 오염시킵니다. 우리는 과거의 오염을 막기 위해 유령의 땅 경계를 따라 보호의 마법석을 설치했습니다.$B$B그러나 스컬지의 공격으로 서쪽 끝에 설치된 마법석이 파괴되는 바람에 우리는 오염의 확산을 막기 위해 땅에 불을 질러야 했습니다.$B$B제 여동생 라리아나 리버윈드가 불타버린 숲을 감시하고 있습니다. 동생을 찾아가십시오. 그대에게 뭔가 부탁드릴 것입니다.",
@@ -15628,6 +18617,22 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "언더시티 바깥의 스컬지 요새 근처에서 빛나는 마법진을 조사해야 합니다. 그리고 스컬지를 처치하여 희미하게 빛나는 죽음의 돌 3개를 모아야 합니다.",
     ["T"] = "언더시티의 스컬지 조사",
   },
+  [9269] = {
+    ["D"] = "This final task will be the most difficult of all, $N. You have faced and defeated both an Old God and the Lich King\'s General, but now you must face the hand of Sargeras.$B$BTake the staff to Stratholme. It is there that you will find a piece of consecrated earth: ground where the greatest knights of Lordaeron were murdered. Place the befouled staff upon the holy ground and prepare for an entity of immense power to break from within... Defeat the demonic being that controls the staff and return to me.",
+    ["O"] = "Anachronos at the Caverns of Time in Tanaris wants you to take Atiesh, Greatstaff of the Guardian to Stratholme and use it on Consecrated Earth. Defeat the entity that is exorcised from the staff and return to him.",
+    ["T"] = "아티쉬 - 수호자의 지팡이",
+  },
+  [9270] = {
+    ["D"] = "This final task will be the most difficult of all, $N. You have faced and defeated both an Old God and the Lich King\'s General, but now you must face the hand of Sargeras.$B$BTake the staff to Stratholme. It is there that you will find a piece of consecrated earth: ground where the greatest knights of Lordaeron were murdered. Place the befouled staff upon the holy ground and prepare for an entity of immense power to break from within... Defeat the demonic being that controls the staff and return to me.",
+    ["O"] = "Anachronos at the Caverns of Time in Tanaris wants you to take Atiesh, Greatstaff of the Guardian to Stratholme and use it on Consecrated Earth. Defeat the entity that is exorcised from the staff and return to him.",
+    ["T"] = "아티쉬 - 수호자의 지팡이",
+  },
+  [9271] = {
+    ["D"] = "This final task will be the most difficult of all, $N. You have faced and defeated both an Old God and the Lich King\'s General, but now you must face the hand of Sargeras.$B$BTake the staff to Stratholme. It is there that you will find a piece of consecrated earth: ground where the greatest knights of Lordaeron were murdered. Place the befouled staff upon the holy ground and prepare for an entity of immense power to break from within... Defeat the demonic being that controls the staff and return to me.",
+    ["O"] = "Anachronos at the Caverns of Time in Tanaris wants you to take Atiesh, Greatstaff of the Guardian to Stratholme and use it on Consecrated Earth. Defeat the entity that is exorcised from the staff and return to him.",
+    ["T"] = "아티쉬 - 수호자의 지팡이",
+  },
+  [9273] = "_",
   [9274] = {
     ["D"] = "$N, 제가 기억하기로 북쪽 호수는 저희 선조의 유령으로 가득합니다. 그 가엾은 영혼들은 대부분 비극적인 사건 때문에 호수 바닥에서 익사했죠.$B$B그 사건의 자세한 내용은 대부분 기억나지 않지만 유령들의 끔찍한 비명소리를 들을 때마다 그들에게 걸린 저주가 계속해서 생각납니다.$B$B$N, 이 일을 맡을 준비가 되셨으면 호수로 가서 그들의 고통에 마침표를 찍어주십시오. 저도 그렇지만 그들도 고맙게 생각할 것입니다. 틀림없이...",
     ["O"] = "유령의 땅, 원정순찰대 초소에 있는 순찰자 크렌안이 인근 호수에서 굶주린 원혼과 복수심에 불타는 원혼을 각각 8명씩 해치워 달라고 했습니다.",
@@ -15728,40 +18733,13 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "방사능에 오염된 마력의 수정에 중화제를 뿌린 다음 암멘 골짜기의 추락 지점에 있는 식물학자 태릭스에게 가야 합니다.",
     ["T"] = "호수 정화",
   },
-  [9295] = {
-    ["D"] = "수많은 스컬지 앞잡이들의 시체 중 하나에서 편지를 발견했습니다. 편지의 상태나 냄새로 보아 언데드가 꽤 오랫동안 지니고 있었던 것 같습니다. 희망의 빛 예배당에는 이 편지를 좀 더 조사하려는 사람이 있을 것입니다.",
-    ["O"] = "동부 역병지대의 희망의 빛 예배당에 있는 기록 보관원에게 찢어진 편지를 가져가야 합니다.",
-    ["T"] = "전방에서 온 편지",
-  },
-  [9299] = {
-    ["D"] = "수많은 스컬지 앞잡이들의 시체 중 하나에서 편지를 발견했습니다. 편지의 상태나 냄새로 보아 언데드가 꽤 오랫동안 지니고 있었던 것 같습니다. 희망의 빛 예배당에는 이 편지를 좀 더 조사하려는 사람이 있을 것입니다.",
-    ["O"] = "동부 역병지대의 희망의 빛 예배당에 있는 기록 보관원에게 근심 가득한 쪽지를 가져가야 합니다.",
-    ["T"] = "전방에서 온 쪽지",
-  },
-  [9300] = {
-    ["D"] = "수많은 스컬지 앞잡이들의 시체 중 하나에서 편지를 발견했습니다. 편지의 상태나 냄새로 보아 언데드가 꽤 오랫동안 지니고 있었던 것 같습니다. 희망의 빛 예배당에는 이 편지를 좀 더 조사하려는 사람이 있을 것입니다.",
-    ["O"] = "동부 역병지대의 희망의 빛 예배당에 있는 기록 보관원에게 찢어진 페이지를 가져가야 합니다.",
-    ["T"] = "전방에서 온 찢어진 페이지",
-  },
-  [9301] = {
-    ["D"] = "수많은 스컬지 앞잡이들의 시체 중 하나에서 편지를 발견했습니다. 편지의 상태나 냄새로 보아 언데드가 꽤 오랫동안 지니고 있었던 것 같습니다. 희망의 빛 예배당에는 이 편지를 좀 더 조사하려는 사람이 있을 것입니다.",
-    ["O"] = "동부 역병지대의 희망의 빛 예배당에 있는 기록 보관원에게 피로 물든 봉투를 가져가야 합니다.",
-    ["T"] = "전방에서 온 봉투",
-  },
-  [9302] = {
-    ["D"] = "수많은 스컬지 앞잡이들의 시체 중 하나에서 편지를 발견했습니다. 편지의 상태나 냄새로 보아 언데드가 꽤 오랫동안 지니고 있었던 것 같습니다. 희망의 빛 예배당에는 이 편지를 좀 더 조사하려는 사람이 있을 것입니다.",
-    ["O"] = "동부 역병지대의 희망의 빛 예배당에 있는 기록 보관원에게 구겨진 서한을 가져가야 합니다.",
-    ["T"] = "전방에서 온 서한",
-  },
+  [9296] = "_",
+  [9297] = "_",
+  [9298] = "_",
   [9303] = {
     ["D"] = "자나가 엑소다르에서 부품을 찾으려면 우리의 도움이 필요하네. 태릭스가 폐품이 많은 지역에 사는 다닥나무 올빼미야수에게 예방 접종할 재료를 준비했지.$B$B돌연변이가 시작되지 않은 다닥나무 올빼미야수에게 가까이 가서 수정을 사용하게나. 유감스럽게도 다른 다닥나무 올빼미야수들은 모두 처치해야 할 걸세. 남동쪽의 다닥나무 숲과 다닥나무 언덕에 가면 그 올빼미야수들을 찾을 수 있을 게야.",
     ["O"] = "다닥나무 올빼미야수 6마리에게 예방의 수정을 사용한 후 암멘 골짜기의 추락 지점에 있는 구원자 알다르에게 가야 합니다.",
     ["T"] = "예방 접종",
-  },
-  [9304] = {
-    ["D"] = "수많은 스컬지 앞잡이들의 시체 중 하나에서 편지를 발견했습니다. 편지의 상태나 냄새로 보아 언데드가 꽤 오랫동안 지니고 있었던 것 같습니다. 희망의 빛 예배당에는 이 편지를 좀 더 조사하려는 사람이 있을 것입니다.",
-    ["O"] = "동부 역병지대의 희망의 빛 예배당에 있는 기록 보관원에게 흐릿해진 문서를 가져가야 합니다.",
-    ["T"] = "전방에서 온 문서",
   },
   [9305] = {
     ["D"] = "우린 추락할 때 부서진 홀로그램 영사기를 간신히 되찾았답니다. 이 영사기를 수리하면, 암멘 골짜기 외곽에 다른 생존자가 있는지 확인할 수 있을 거예요.$B$B비행선에 남은 장비가 좀 있었지만, 가 보니 이곳의 토착 올빼미야수가 이미 싹 쓸어 가 버린 뒤였지 뭐예요.$B$B남쪽에 있는 다닥나무 숲과 언덕으로 가서 도난당한 장비를 되찾아 주세요!",
@@ -15943,6 +18921,7 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "매날개 광장 남서쪽에 있는 서부 성소로 가서 그곳을 침입한 수상한 자를 처치한 다음, 맥지기 벨라니아에게 가서 발견한 사실을 보고해야 합니다.",
     ["T"] = "나이트 엘프의 침입",
   },
+  [9353] = "_",
   [9355] = {
     ["D"] = "$C|1이여;여;, 만나서 반갑네. 드디어 지원 병력이 도착하고 있으니 어느 정도는 일상적인 임무로 복귀할 수 있겠군.$B$B우리의 첫 번째 목표 중 하나는 남서쪽 길을 따라서 인력과 물자의 소통이 원활하게 이루어지도록 하는 것인데, 그러려면 그 지역을 침범한 바위갈이 미늘벌레를 처치해야 하네.$B$B이 위기를 벗어나도록 도와준다면 로서의 후예들이 그 은혜를 잊지 않을 것이야. 녀석들이 발자국을 남긴 어지러운 지역을 잘 살펴보면 녀석들을 찾을 수 있을 게야.",
     ["O"] = "명예의 요새에 있는 현장감독 비굼스가 약탈자 바위갈이 미늘벌레 15마리를 처치해 달라고 했습니다.",
@@ -15987,6 +18966,11 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "산들바람 마을로 가서 순찰자 데골리엔에게 아마니 침공 계획서에 대해 알려주십시오. 줄마로쉬가 죽었다고는 하지만 산들바람 마을은 트롤의 공격에 대비해야 합니다. 데골리엔에게 최대한 빨리 제가 지원군을 보내겠다고 전해 주십시오.",
     ["O"] = "영원노래 숲의 산들바람 마을로 가서 순찰자 데골리엔과 대화해야 합니다.",
     ["T"] = "산들바람 마을에 경고 전하기",
+  },
+  [9364] = {
+    ["D"] = "My research has revealed a unique purpose for the prismatic shell.$b$bCarry the shell and cast your polymorph spell on the Spitelash in Azshara.  If you wait a few moments, the chaotic aura of the shell will cause them to split into several smaller clones for a few moments.  Kill these clones as quickly as possible, and the shell will collect their essence.$b$bWhen the shell is full, return it to me.",
+    ["O"] = "Polymorph the Spitelash of Azshara and kill the clones that appear several seconds later.  When you have slain 50 Polymorph Clones, return to Archmage Xylem in Azshara.",
+    ["T"] = "Fragmented Magic",
   },
   [9365] = {
     ["D"] = "This flame, stolen from the heart of Stormwind itself, floods you with warmth. This raw power is foreign to you, but the (NAME) might know more...",
@@ -16047,11 +19031,6 @@ pfDB["quests"]["koKR-tbc"] = {
     ["D"] = "저 부상당한 순례자가 짐 어쩌고 하면서 소리를 지르는 것 같군.$B$B그녀를 발견했을 때 그 근처에서 짐 보따리 하나 못 보셨소? 흠...$B$B그녀가 습격하던 자들에게서 달아날 때 그 물건을 두고 온 게 틀림없소. 이곳에서 남쪽으로 녀석들의 골짜기에 서식하는 깃송곳니 갈퀴발톱은 단독 여행자를 공격하는 걸로 알려져 있소이다.$B$B그녀가 그 짐 때문에 진정하지 않으면 내가 상처를 돌볼 수가 없소이다. 그녀의 완고함이 그녀의 목숨을 앗아갈 것이라는 거요.$B$B먼지깃 협곡으로 가서 그녀가 머물렀던 야영지를 찾아보시오. 그곳에 짐이 있을 것이오이다.",
     ["O"] = "부상당한 블러드 엘프 순례자가 먼지깃 협곡에서 야영할 때 깃송곳니 갈퀴발톱에게 공격받았습니다. 그녀의 야영지를 찾아서 잃어버린 짐이 있는지 수색해봐야 합니다.",
     ["T"] = "순례자의 잃어버린 짐",
-  },
-  [9378] = {
-    ["D"] = "두껍게 펼쳐진 역병숲 속에 공포의 요새 낙스라마스로 가는 입구가 있어요. 지금까지 낙스라마스로 들어가려는 시도가 수차례 있었지만 룬 차원문에 설치된 마법 수호물 때문에 모두 실패하고 말았었죠. 지금까진 말이에요.$B$B지금은 비전 마법을 통한 은신술로 낙스라마스로 들어갈 수 있어요. 제가 키린 토의 고대 주문을 약간 수정하여 고안해 낸 것이죠. 키린 토의 고대 주문을 제가 약간 수정하는 것이랍니다. 이 방법은 돈이 상당히 많이 들어갑니다. 하지만 은빛 여명회를 위해 헌신하고자 하는 당신의 마음이 확고하니 이번 일에 필요한 비용을 일체 받지 않겠습니다!",
-    ["O"] = "동부 역병지대의 희망의 빛 예배당에 있는 대마법사 안젤라 도산토스가 비전 은신 마법으로 낙스라마스로 들어갈 수 있도록 해 줄 것입니다. 은빛 여명회의 평판이 확고한 동맹이어야 합니다.",
-    ["T"] = "공포의 요새 낙스라마스",
   },
   [9380] = {
     ["D"] = "I swear, if I get one more letter from Ironforge...$B$BHave you ever tried to explain something to someone who just wouldn\'t listen, $c? I sent the boys in Ironforge the warp hound they asked for, and they had the gall to write back saying they wanted a \"pack\" of the things! A pack!$B$BSo, I tried to tell \'em that warp hounds are solitary creatures, but they\'d have none of it. I\'ve given up on setting \'em straight. Grab 6 of the best ones from the area east of the hold, and brimg \'em back here?",
@@ -16203,6 +19182,10 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "크룬 스파인브레이커의 시체를 발견한 장소에서 토템을 사용한 후, 고대의 늑대 정령을 따라가야 합니다.",
     ["T"] = "정령 길잡이",
   },
+  [9411] = "_",
+  [9412] = "_",
+  [9413] = "_",
+  [9414] = "_",
   [9415] = {
     ["D"] = "블루월 치안대장의 신병입니까? 물론 그렇겠죠.$B$B뭘 기다리죠? 훌륭한 병사들이 사막에서 죽어 가고 있습니다. 그들과 함께 싸울 생각을 하니 흥분되지 않습니까?$B$B가는 도중에 탈수증에 걸리지 않도록 조심하고 이제 치안대장에게로 가보십시오.",
     ["O"] = "하이브조라 근처의 얼라이언스 야영지에 있는 치안대장 블루월과 대화해야 합니다.",
@@ -16413,6 +19396,8 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "나이아스의 제단 근처에서 나이아스의 선물을 사용하여 물의 정령 나이아스를 소환해야 합니다. 나이아스를 물리친 후 나이아스의 심장을 가지고 그롬골 주둔지에 있는 네메스 호크아이에게 돌아가십시오.",
     ["T"] = "예상치 못한 방문객",
   },
+  [9458] = "_",
+  [9459] = "_",
   [9460] = {
     ["D"] = "Keltus Darkleaf reporting for duty!$b$bOh... who are you, anyhow?  If you are here for my report, I insist you help me first.$b$bI am planning to attack the sentinel spies, but I intend to send in my faithful Whisper as a first strike.  She just needs a scent to hone in on them.$b$bSurely someone of your skill could sneak in and steal something from the sentinel leader?",
     ["O"] = "Keltus Darkleaf wants you to pickpocket the Lacy Handkerchief from the Sentinel Leader and bring it to him.",
@@ -16498,6 +19483,12 @@ pfDB["quests"]["koKR-tbc"] = {
     ["O"] = "Travel to Shadra\'Alor and search for traces of Featherbeard.",
     ["T"] = "In Pursuit of Featherbeard",
   },
+  [9477] = "_",
+  [9478] = "_",
+  [9479] = "_",
+  [9480] = "_",
+  [9481] = "_",
+  [9482] = "_",
   [9483] = {
     ["D"] = "",
     ["O"] = "",

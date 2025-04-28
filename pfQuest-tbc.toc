@@ -17,6 +17,7 @@ init\zhCN.xml
 init\zhTW.xml
 init\esES.xml
 init\ruRU.xml
+init\ptBR.xml
 
 init\data-tbc.xml
 init\enUS-tbc.xml
@@ -27,5 +28,6 @@ init\zhCN-tbc.xml
 init\zhTW-tbc.xml
 init\esES-tbc.xml
 init\ruRU-tbc.xml
+init\ptBR-tbc.xml
 
 init\addon.xml

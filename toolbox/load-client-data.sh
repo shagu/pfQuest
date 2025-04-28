@@ -2,7 +2,7 @@
 root="DBC"
 rootsql="client-data.sql"
 versions="vanilla turtle tbc wotlk"
-locales="enUS koKR frFR deDE zhCN zhTW esES esMX ruRU"
+locales="enUS koKR frFR deDE zhCN zhTW esES esMX ruRU jaJP ptBR"
 
 # delete old extraction
 if [ -f "$rootsql" ]; then
@@ -196,7 +196,8 @@ CREATE TABLE \`SkillLine_${v}\` (
 \`name_loc5\` varchar(255) NOT NULL,
 \`name_loc6\` varchar(255) NOT NULL,
 \`name_loc7\` varchar(255) NOT NULL,
-\`name_loc8\` varchar(255) NOT NULL
+\`name_loc8\` varchar(255) NOT NULL,
+\`name_loc10\` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='SkillLine';
 
 EOF
@@ -206,8 +207,24 @@ EOF
     # locale fixes
     if [ "$loc" = "ruRU" ] && [ "$v" == "vanilla" ]; then
       dbcslot=0 # there's no index for ruRU in 1.12, using enUS index
-    elif [ "$v" == "turtle" ]; then
-      dbcslot=0
+    elif [ "$loc" = "ptBR" ] && [ "$v" == "vanilla" ]; then
+      dbcslot=0 # there's no index for ptBR in 1.12, using enUS index
+    elif [ "$loc" = "deDE" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "esMX" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "frFR" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "jaJP" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "koKR" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "ruRU" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "zhTW" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "ptBR" ] && [ "$v" == "turtle" ]; then
+      dbcslot=7 # turtle uses xxYY (loc7) for ptBR
     else
       dbcslot=$index
     fi
@@ -218,7 +235,7 @@ EOF
         entry=$(echo $line | cut -d , -f $(expr 4 + $dbcslot))
 
         if [ "$loc" = "enUS" ]; then
-          echo "INSERT INTO \`SkillLine_${v}\` VALUES ($id, $entry, '', '', '', '', '', '', '', '');" >> $rootsql
+          echo "INSERT INTO \`SkillLine_${v}\` VALUES ($id, $entry, '', '', '', '', '', '', '', '', '');" >> $rootsql
         else
           echo "UPDATE \`SkillLine_${v}\` SET name_loc$index = $entry WHERE id = $id;" >> $rootsql
         fi
@@ -242,7 +259,8 @@ CREATE TABLE \`AreaTable_${v}\` (
 \`name_loc5\` varchar(255) NOT NULL,
 \`name_loc6\` varchar(255) NOT NULL,
 \`name_loc7\` varchar(255) NOT NULL,
-\`name_loc8\` varchar(255) NOT NULL
+\`name_loc8\` varchar(255) NOT NULL,
+\`name_loc10\` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='AreaTable';
 
 EOF
@@ -253,8 +271,24 @@ EOF
     # locale fixes
     if [ "$loc" = "ruRU" ] && [ "$v" == "vanilla" ]; then
       dbcslot=0 # there's no index for ruRU in 1.12, using enUS index
-    elif [ "$v" == "turtle" ]; then
-      dbcslot=0
+    elif [ "$loc" = "ptBR" ] && [ "$v" == "vanilla" ]; then
+      dbcslot=0 # there's no index for ptBR in 1.12, using enUS index
+    elif [ "$loc" = "deDE" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "esMX" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "frFR" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "jaJP" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "koKR" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "ruRU" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "zhTW" ] && [ "$v" == "turtle" ]; then
+      dbcslot=0 # no turtle client for that language, falling back to enUS
+    elif [ "$loc" = "ptBR" ] && [ "$v" == "turtle" ]; then
+      dbcslot=7 # turtle uses xxYY (loc7) for ptBR
     else
       dbcslot=$index
     fi
@@ -279,7 +313,7 @@ EOF
         fi
 
         if [ "$loc" = "enUS" ]; then
-          echo "INSERT INTO \`AreaTable_${v}\` VALUES ($id, $zoneID, $entry, '', '', '', '', '', '', '', '');" >> $rootsql
+          echo "INSERT INTO \`AreaTable_${v}\` VALUES ($id, $zoneID, $entry, '', '', '', '', '', '', '', '', '');" >> $rootsql
         else
           echo "UPDATE \`AreaTable_${v}\` SET name_loc$index = $entry WHERE id = $id;" >> $rootsql
         fi

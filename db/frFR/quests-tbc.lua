@@ -324,6 +324,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Recherchez un indice dans le tas d\'affaires.",
     ["T"] = "La légende de Stalvan",
   },
+  [73] = "_",
   [74] = {
     ["D"] = "Vous trouvez dans la caisse diverses choses : quelques objets moisis, un portrait de famille, des trophées de chasse et de vieux livres. Dans le fond, sous un vase en céramique, vous découvrez une page de journal déchirée.",
     ["O"] = "La Page de journal déchirée que vous avez découverte est votre deuxième indice.",
@@ -494,6 +495,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Portez la Note de Mamie Champierreux à William Pilon.",
     ["T"] = "Note pour William",
   },
+  [108] = "_",
   [109] = {
     ["D"] = "J\'ai l\'impression que vous êtes $Grompu:rompue; au combat, $C. Si vous ne l\'avez pas déjà fait, vous devriez aller voir Gryan Roidemantel. Il dirige la milice du peuple, dont le but est de défendre les fermes de la marche de l\'Ouest. Je suis sûr qu\'il aurait besoin de vous. Il se trouve généralement dans la tour de pierre sur la colline des Sentinelles, près de la route au centre de la marche de l\'Ouest.",
     ["O"] = "Parlez à Gryan Roidemantel. Il se trouve dans la tour de pierre sur la Colline des Sentinelles, près de la route au centre de la marche de l\'Ouest.",
@@ -634,6 +636,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Trouvez le Coffre du capitaine Sanders. Fouillez-le pour trouver l\'indice suivant.",
     ["T"] = "Le trésor caché du capitaine Sanders",
   },
+  [137] = "_",
   [138] = {
     ["D"] = "L\'indice que vous trouvez est le suivant : « Bon travail, matelot ! Maintenant il va falloir cingler vers l\'est. À l\'est, vers le haut des falaises, à l\'est vers la route. Cherchez les ruines des vieilles cheminées, au bord de la route. Là, vous trouverez un vieux tonneau qui contient l\'indice suivant. »",
     ["O"] = "Trouvez le Tonneau à côté des cheminées en ruine. Fouillez-le pour trouver l\'indice suivant.",
@@ -1140,6 +1143,8 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Retourner voir la Tremblote avec des Tourtes au crabe de la Pénombre.",
     ["T"] = "Retour vers la Tremblote",
   },
+  [241] = "_",
+  [242] = "_",
   [243] = {
     ["D"] = "Vous allez vous rendre dans le désert de Tanaris, pour tester la consistance des tissus des basilics, des scorpides et des hyènes de la région. Récupérez des échantillons de tissus et placez-les dans la trousse d\'analyse ; certains ne conviendront sans doute pas. Il me faut huit échantillons corrects pour chacun des trois types de créatures.$B$BDe plus, les gobelins de Gadgetzan ont une source d\'énergie utilisable avec ce genre de trousse modifiée. Allez parler à l\'ingénieur en chef Vizisanie et récupérez-en pour la trousse.$B$BNe revenez me voir que si vous réussissez.",
     ["O"] = "Parler à l\'Ingénieur en chef Vizisanie à Gadgetzan afin d\'obtenir une source d\'énergie pour la trousse d\'analyse.",
@@ -1210,6 +1215,8 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Tuez 10 Anciens sangliers des montagnes et retournez auprès de Daryl le Jeune au Pavillon des Pérégrins.",
     ["T"] = "Le défi d\'un chasseur",
   },
+  [259] = "_",
+  [260] = "_",
   [261] = {
     ["D"] = "Je serai franc. Nous sommes en guerre contre le Fléau. C\'est un mal qui corrompt notre peuple et pollue nos terres. Il faut l\'arrêter avant qu\'il ne nous prenne de vitesse et n\'entraîne notre monde dans l\'obscurité. Nous, la Croisade écarlate, avons juré de combattre le Fléau de toutes nos forces et de toute notre âme.$B$BSi vous êtes de notre bord, faites montre de votre courage et prouvez-nous votre allégeance en détruisant les Ravageurs morts-vivants de Désolace, dans la vallée des Ossements, plus au sud.$B$BFaites cela et la Croisade vous portera en haute estime.",
     ["O"] = "Détruire 30 Ravageurs morts-vivants, puis retourner voir Frère Anton, à la Combe de Nijel.",
@@ -1465,6 +1472,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apportez 7 brins de Chatoyante à Rejold Brasselorge, à Kharanos.",
     ["T"] = "La bière brune parfaite",
   },
+  [316] = "_",
   [317] = {
     ["D"] = "Je me prépare à entamer une mission pour la brigade des Sapeurs. C\'est une longue mission et j\'ai besoin de ravitailler le Crache-vapeur avec l\'équivalent d\'un mois de provisions. Alors pendant que Grillacier travaille sur mon réservoir, pouvez-vous aller chasser pour moi ?$B$BJ\'ai besoin de fourrure pour nos lits et de viande pour nous nourrir. Vous pouvez rapporter de la viande de sanglier et de la fourrure d\'ours... Vous trouverez l\'un et l\'autre dans les terrains enneigés au sud de l\'antre Gris.",
     ["O"] = "Réunir 4 morceaux de Viande de sanglier et 2 Fourrures d\'ours épaisses et les livrer au pilote Claquesoufflet au dépôt de Grillacier.",
@@ -1625,6 +1633,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apportez la balise de détresse au robot guidé d\'Orguignard.",
     ["T"] = "Trouvez OOX-17/TN !",
   },
+  [352] = "_",
   [353] = {
     ["D"] = "Les Foudrepiques sont un clan nain respecté et connu pour ses goûts raffinés et subtils. Ce n\'est donc pas surprenant que Gringer Foudrepique, un montagnard de Forgefer, m\'ait demandé de lui fabriquer une arme.$B$BL\'arme est terminée, mais Gringer vit loin d\'ici, près du Loch Modan. Si vous projetez de voyager vers le nord, pouvez-vous lui livrer ce paquet ?$B$BSon dernier message disait qu\'il se trouvait à la Tour de garde nord du Loch Modan.",
     ["O"] = "Livrer le Paquet au montagnard Foudrepique au Loch Modan.",
@@ -1800,6 +1809,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Parler au Gardien Thelwater à la Prison.",
     ["T"] = "Bazil Thredd",
   },
+  [390] = "_",
   [391] = {
     ["D"] = "Qu\'une chose soit bien claire, $N : je n\'ai pas confiance en vous. Mais la situation étant ce qu\'elle est, ça ne change pas grand-chose.$B$BAlors voilà comment on va faire : descendez là-bas et parlez à Thredd. Et si vous êtes vraiment de notre côté, tuez-le et rapportez-moi sa tête. Et s\'il se trouve que vous êtes de son côté, et que vous ne revenez pas... Je vous retrouve et vous périrez comme un rat. Compris ?",
     ["O"] = "Tuez Bazil Thredd et rapportez sa tête au Gardien Thelwater, à la Prison.",
@@ -1870,6 +1880,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Présenter les ordres de Sevren à Bethor Glacéclat à Fossoyeuse.",
     ["T"] = "La liche prodigue",
   },
+  [406] = "_",
   [407] = {
     ["D"] = "D\'inoffensifs potirons n\'est-ce pas ? À ce qu\'il semble... Si nous voulons stopper l\'avance d\'Arthas au nord et l\'infestation humaine venant du sud, nous devons commencer à exploiter toute l\'étendue de notre potentiel de morts-vivants.$B$BAvec un peu d\'ingéniosité, un simple potiron va devenir un agent de la Dame noire. Ce potiron, traité avec ma dernière formule, sera une menace sérieuse.$B$BUn autre zélote écarlate a été capturé et est gardé prisonnier dans le cellier de la taverne des Pendus. Prenez ce potiron et donnez-le-lui.",
     ["O"] = "Donner le Potiron arrosé au Zélote écarlate capturé qui est gardé dans le cellier de la taverne des Pendus.",
@@ -2120,6 +2131,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Amener Alaric à l\'alcôve secrète.",
     ["T"] = "L\'alcôve secrète",
   },
+  [462] = "_",
   [463] = {
     ["D"] = "Avez-vous entendu parler du Gardien vert ? Vous ne le cherchez pas, n\'est-ce pas ? Je dirais que vous êtes $Gfou:folle; si c\'est le cas, mais qui suis-je pour empêcher $Gun illuminé:une illuminée; de courir à sa mort ?$B$BSi vous cherchez le monstre, je crois qu\'il hante les marécages à l\'est de la route où il y a l\'embranchement pour Dun Modr. Il est tapi là-bas, parmi les crocilisques et de choses pires encore !$B$BEt puis, laissez donc votre argent ici ; il ne vous servira à rien où vous allez. Vous ne voulez pas non plus que le Verdâtre s\'ébrèche les dents sur votre or quand il vous coupera en deux ?",
     ["O"] = "Trouver le Gardien vert.",
@@ -2255,6 +2267,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Collectez 3 Gangrenoix.",
     ["T"] = "En quête de rédemption !",
   },
+  [490] = "_",
   [491] = {
     ["D"] = "Thule m\'a raconté qu\'il y a longtemps, lui et deux de ses confrères créèrent une baguette magique, la fusion des trois baguettes que les mages possédaient alors. Cette baguette devint le symbole de leur amitié, et bien que Thule se mît peu à peu à la mépriser il ne put se résoudre à s\'en séparer ou à la laisser aux deux autres. Alors il vola la baguette et la cacha dans le donjon de Fenris.$B$BVoilà. Apportez la baguette à Bethor Glacéclat, l\'un des anciens amis de Thule. Je suis sûr qu\'il appréciera.",
     ["O"] = "Apporter la Baguette tressée à Bethor Glacéclat dans le Quartier de la Magie à Fossoyeuse.",
@@ -2285,6 +2298,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apporter 10 Langues d\'ours gris et de l\'Ichor de Rampant à l\'Apothicaire Lydon à Moulin-de-Tarren.",
     ["T"] = "Elixir de souffrance",
   },
+  [497] = "_",
   [498] = {
     ["D"] = "Moi et d\'autres guerriers avons été envoyés par le Chef de guerre pour récupérer un objet à Fort-de-Durn et enquêter sur ce prétendu Syndicat.$B$BNous sommes allés à Fort-de-Durn pour jeter un coup d\'œil, mais nous avons été surpris par un grand nombre d\'humains. Nous nous sommes bravement battus, mais ils étaient plus nombreux. Ils se sont emparés de nous, mais je suis parvenu à m\'échapper.$B$BFort-de-Durn est au sud-est, de l\'autre côté de la rivière. Drull et Tog\'thar sont retenus là-bas, vous devez aller leur porter secours.",
     ["O"] = "Selon les ordres de Krusk à Moulin-de-Tarren, libérer Drull et Tog\'thar du donjon de Fort-de-Durn.",
@@ -2465,6 +2479,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Rapportez des informations sur l\'emplacement de Gol\'dir pour Krusk, à Moulin-de-Tarren.",
     ["T"] = "L\'épée d\'HumbertInfiltration",
   },
+  [534] = "_",
   [535] = {
     ["D"] = "Eurrgh… Blessé et mourant, me voilà en face de l\'ennemi.$B$BVous me tuerez sans doute de toute façon, mais si vous m\'apportez de la bière brune d\'Austrivage... Les gens de votre race ne boivent pas, non ? Je vous dirai ce que vous voulez savoir.",
     ["O"] = "Apporter une Chope de bière brune d\'Austrivage à Valik, au Camp du Syndicat.",
@@ -2530,6 +2545,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Retrouvez l\'Épée du Nécrogarde Humbert à Dun Garok, et la lui rapporter à Moulin-de-Tarren.",
     ["T"] = "Epée d\'Humbert",
   },
+  [548] = "_",
   [549] = {
     ["D"] = "Au nom de l\'autorité de dame Sylvanas, tous les membres de l\'organisation connue sous le nom du Syndicat sont recherchés. Ceux conduits à la garde ou faits prisonniers seront sommairement exécutés. Nous savons qu\'actuellement ils se rassemblent dans les ruines du donjon de Fort-de-Durn, au sud-est de Moulin-de-Tarren.$B$BUne récompense est offerte à quiconque apporte la preuve de ses actions à la grande exécutrice Darthalia.",
     ["O"] = "Tuez 10 Voleurs et 10 Gardiens du Syndicat, puis allez voir la Grande exécutrice Darthalia à Moulin-de-Tarren pour votre récompense.",
@@ -3625,6 +3641,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Voyager aux Rochers rouges, à l\'est des Pitons-du-Tonnerre et parler à l\'Esprit ancestral.",
     ["T"] = "Le rite de sagesse",
   },
+  [774] = "_",
   [775] = {
     ["D"] = "Vous allez maintenant être $Grévéré:révérée; dans notre grande ville. Chaque $R qui passe avec succès les Rites de la Terre-mère a droit à cet honneur.$B$BPour votre quête finale, trouvez notre noble chef, Cairne Sabot-de-Sang, qui demeure au sommet de la plus haute mesa des Pitons-du-Tonnerre.",
     ["O"] = "Parler à Cairne Sabot-de-Sang aux Pitons-du-Tonnerre.",
@@ -3715,6 +3732,14 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apportez le Médaillon de la Lame ardente à Zureetha Mireloin, à l\'extérieur de l\'Antre.",
     ["T"] = "Médaillon de la Lame ardente",
   },
+  [796] = "_",
+  [797] = "_",
+  [798] = "_",
+  [799] = "_",
+  [800] = "_",
+  [801] = "_",
+  [802] = "_",
+  [803] = "_",
   [804] = {
     ["D"] = "Ce que vous avez fait pour moi remplit mon cœur de courage. Je ne peux pas me laisser mourir comme ça, je dois me battre !$B$BJe ne puis, cependant, regagner l\'Antre sans assistance. S\'il vous plaît, $N, retournez à l\'Antre et informez Gornek de ma situation. Peut-être saura-t-il m\'aider.",
     ["O"] = "Informer Gornek, à l\'Antre, de la situation critique dans laquelle se trouve Hana\'zua.",
@@ -3740,11 +3765,14 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Parlez à Ak\'Zeloth, dans les Tarides.",
     ["T"] = "Ak\'Zeloth",
   },
+  [810] = "_",
+  [811] = "_",
   [812] = {
     ["D"] = "$N... votre minutage est parfait. J\'espère que je pourrai en dire autant de votre célérité.$B$BJ\'ai manqué d\'attention en combattant des Queues-venin aux alentours, et j\'ai été piqué par l\'un d\'entre eux. Le poison m\'affaiblit au moment même où je parle. A ce rythme, il me reste peut-être une heure à vivre. Mais je vais avoir besoin de vous...$B$BKor\'ghan, à Orgrimmar, sait comment confectionner l\'antidote. Trouvez-le... et faites vite, $N. Je ne vais pas pouvoir tenir beaucoup plus longtemps. Il devrait se trouver dans la Faille de l\'Ombre.",
     ["O"] = "Trouver Kor\'ghan à Orgrimmar et obtenir l\'Antidote du Queue-venin. L\'apporter ensuite à Rhinag près de la frontière nord-ouest de Durotar.",
     ["T"] = "Besoin d\'un remède",
   },
+  [814] = "_",
   [815] = {
     ["D"] = "Bah ! J\'allais presque oublier... faut qu\'je ficelle le p\'tit déjeuner$B$B$N, bougez- vous l\'train et allez m\'trouver quelques œufs de fouette-queue. M\'en faut au moins trois si j\'veux en avoir aussi pour le déjeuner de demain.$B$BLe fouette-queue Griffesang peut être farouche et protège ses œufs jusqu\'à la mort, ça oui. Ils les enfouissent parfois bien trop profondément pour pouvoir les déterrer ; mais, bon, si vous fouinez un peu du côté des îles de l\'Écho, au sud-est du village de Sen\'jin, vous en trouverez d\'accessibles à foison, partout sur ces îles.",
     ["O"] = "Rapporter 3 Œufs de fouette-queue au cuisinier Torka, à Tranchecolline.",
@@ -3860,6 +3888,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Parler à l\'Apothicaire Dithers à la Barricade, dans les Maleterres de l\'Ouest.",
     ["T"] = "Scholomance",
   },
+  [839] = "_",
   [840] = {
     ["D"] = "Hum ! Vous avez l\'air plutôt $Gfort:forte;.$B$BÉcoutez, mon bon ami Kargal a besoin de nouvelles recrues pour servir dans les Tarides. Je sais que vous voulez faire ce qui est bon pour la Horde. Eh bien, voici votre chance !$B$BApportez cette lettre de recrutement à Kargal et voyez s\'il la signe...",
     ["O"] = "Donner votre Lettre de recrutement à Kargal Balafre-glorieuse, à l\'Avant-poste des Tarides.",
@@ -3940,6 +3969,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Récupérez 10 Bracelets de centaure sur des Maraudeurs et des Prophètes-tempête kolkars.",
     ["T"] = "Bracelets de centaure",
   },
+  [856] = "_",
   [857] = {
     ["D"] = "La puissance était mienne ! Dans mes propres mains ! Et je veux la retrouver ! La retrouver, je vous dis !$B$BCes fichus excavateurs l\'ont découverte… Elle était tellement belle. Avoir trouvé la Larme des lunes, c\'était la première grande découverte qu\'on avait faite à Bael Modan.$B$BElle aurait dû être mienne ! Mienne je vous dis !$B$BMais le général Doublenattes devint jaloux de la puissance qu\'elle me donnait. Il l\'a enfermée à clé dans le donjon. L\'a traitée de maudite, il l\'a fait ! L\'imbécile !$B$BD\'autres la voulaient et ils devaient être arrêtés ! Ce bâtard de Doublenattes m\'a chassé.$B$BMaintenant, je la veux à nouveau ! Je la veux je vous dis !",
     ["O"] = "Feegly l\'Exilé veut que vous retrouviez pour lui la Larme des lunes.",
@@ -4160,6 +4190,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Prélevez 5 Griffes de chasseresse sur des Chasseresses des savanes.",
     ["T"] = "La chasse aux chasseresses",
   },
+  [904] = "_",
   [905] = {
     ["D"] = "La chasse s\'intensifie, $N. Maintenant, vous devez trouver et vaincre votre proie dans son antre.$B$BPourchassez les raptors solécailles au sud, où ils ont bâti un terrier parmi les collines, tout près de la route. Massacrez-les et arrachez-leur des plumes. Vous déposerez ces plumes dans les nids des autres raptors solécailles pour leur montrer qu\'ils ne vous font pas peur !$B$BSoyez $Gprudent:prudente:c;, $C. Les raptors chassent en meute et si vous n\'y prenez pas garde, ils auront vite fait de vous submerger.",
     ["O"] = "Tuez des Raptors solécailles et récupérez leurs plumes. Déposez-les dans les 3 Nids de Solécaille.",
@@ -4190,6 +4221,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Emmenez votre protégé sur les quais de Cabestan, dans les Tarides.",
     ["T"] = "Un tour sur les quais",
   },
+  [912] = "_",
   [913] = {
     ["D"] = "Le faucon-tonnerre, $N, est une bête féroce. Il est temps pour vous d\'en affronter. Vous devez trouver où il rôde, puis m\'apporter ses ailes comme preuve de votre chasse fructueuse.$B$BParvenez-y, et l\'heure de notre séparation sonnera bientôt.",
     ["O"] = "Trouver et tuer un faucon-tonnerre, et rapporter ses ailes à Jorn Oeil-des-cieux, au Camp Taurajo.",
@@ -4345,6 +4377,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Aider Therylune à s\'échapper, puis dire à Therysil au Sanctuaire d\'Aessina que sa sœur est saine et sauve.",
     ["T"] = "L\'évasion de Therylune",
   },
+  [946] = "_",
   [947] = {
     ["D"] = "Je prépare une potion qui nécessite des champignons rares, des champignons qui ne poussent que dans une certaine caverne. La caverne en question se trouve au-delà des Chutes de la Bondissante, à l\'est et légèrement au nord le long des montagnes.$B$BJ\'irais bien moi-même, mais le Bosquet des Anciens m\'a conseillé de me tenir à l\'écart de cet endroit. Nos vénérables alliés pressentent que cette caverne est l\'antre d\'une nouvelle créature maléfique, ici à Sombrivage.$B$BS\'il vous plaît, $N, ramassez ces champignons pour moi. Et pendant que vous y êtes, explorez la caverne pour confirmer le pressentiment des Anciens.",
     ["O"] = "Apporter 5 Pédoncules d\'Amanite et 1 Amanite phalloïde à Barithras Lunombrage à Auberdine.",
@@ -4525,6 +4558,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Trouver 5 Belles peaux de traquelune et les apporter à Terenthis, à Auberdine.",
     ["T"] = "Un maître perdu",
   },
+  [987] = "_",
   [990] = {
     ["D"] = "$N, ma maîtresse, Raene Mène-loup, vous attend à la cité d\'Astranaar dans Orneval. Peut-être que grâce à vous, nous pourrons réduire la corruption qui y règne.$B$BEn partant d\'ici, vous devez prendre plein sud en restant près de la route ; vous trouverez sans problème votre chemin en suivant cette direction.",
     ["O"] = "Trouvez Raene Mène-loup dans Orneval.",
@@ -5335,6 +5369,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Trouver l\'Héritage des Aspects et l\'apporter à Braug Esprit-troublé, à côté de l\'entrée de la Perce des Serres, dans les Serres-Rocheuses.",
     ["T"] = "L\'épreuve de la Connaissance",
   },
+  [1155] = "_",
   [1156] = "_",
   [1157] = "_",
   [1158] = "_",
@@ -5348,6 +5383,9 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Trouver « Les commencements de la menace des morts-vivants » et le rapporter à Parqual Fintallas à Fossoyeuse.",
     ["T"] = "L\'épreuve de la Connaissance",
   },
+  [1161] = "_",
+  [1162] = "_",
+  [1163] = "_",
   [1164] = {
     ["D"] = "La traînée ! La truie ! Kenata vit toujours ; sa famille est riche et prospère tandis que je souffre, comme une Réprouvée que je suis !$B$BMa famille a disparu, emportée par la peste. Notre domaine a disparu, lui aussi, détruit et brûlé pendant la guerre. Et malgré cela, aidée de ses misérables enfants, elle a l\'audace de voler le seul bien qui me reste.$B$BJe n\'attache plus d\'importance aux choses qui m\'ont été volées. Ce que je veux à présent c\'est leurs têtes !$B$BTuez-les pour moi ! Rendez-vous à la ferme des Dabyrie en Arathi, au nord-est du Refuge de l\'Ornière.",
     ["O"] = "Apporter la Tête de Kenata, Fardel et Marcel Dabyrie à Genavie Callow à Fossoyeuse.",
@@ -5393,6 +5431,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Défaire Mok\'Morokk en combat singulier et rapporter la nouvelle à Draz\'Zilb au village de Mur-de-Fougères.",
     ["T"] = "Défier le Seigneur Mok\'Morokk",
   },
+  [1174] = "_",
   [1175] = {
     ["D"] = "Après le gros accrochage entre le Tonnerre rouge gobelin et un basilic, Kronkenfourche m\'a embauché pour surveiller la piste. Je ne sais pas ce que mangent les animaux d\'ici pour grossir comme ça, mais il faut réduire leur nombre si nous voulons éviter qu\'ils ne se baladent sur la piste pendant une course.$B$BJe vais vous dire : si vous voulez gagner un peu d\'argent sortez d\'ici et faites dégager les basilics de la zone.",
     ["O"] = "Tuez 10 Basilics du sel gemme, 10 Peau-de-cristal du sel gemme et 6 Contemplateurs du sel gemme pour le maître pisteur Zherin des Salines.",
@@ -5723,6 +5762,10 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Montrer le Bouclier en fer noirci à Mosarn aux Pitons-du-Tonnerre.",
     ["T"] = "Le bouclier noir",
   },
+  [1277] = "_",
+  [1278] = "_",
+  [1279] = "_",
+  [1280] = "_",
   [1281] = {
     ["D"] = "",
     ["O"] = "",
@@ -5733,6 +5776,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Parler au Capitaine Garran Vimaire au dernier étage de la citadelle de Theramore.",
     ["T"] = "Ils l\'appellent Jim le Souriant",
   },
+  [1283] = "_",
   [1284] = {
     ["D"] = "Des lignes d\'empreintes de sabots partent des ruines encore fumantes de l\'auberge du Repos ombragé. Il y a au moins quelques traces visibles avec d\'autres empreintes peu marquées dans la boue du marais.",
     ["O"] = "Rapporter la présence des empreintes suspectes à l\'auberge du Repos ombragé au capitaine Vimaire à Theramore.",
@@ -5763,6 +5807,13 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Retourner voir le capitaine Garran Vimaire à Theramore.",
     ["T"] = "&lt;nyi&gt; Rapport de Vimaire",
   },
+  [1293] = "_",
+  [1294] = "_",
+  [1295] = "_",
+  [1296] = "_",
+  [1297] = "_",
+  [1299] = "_",
+  [1300] = "_",
   [1301] = {
     ["D"] = "Avant de travailler ici, au Solitaire bleu, j\'ai été formé par l\'un des meilleurs chefs cuisiniers et aubergistes que je connaisse. Il s\'appelait James Hyal. Tout ce que j\'ai et tout ce que j\'ai appris, je le lui dois.$B$BJe me demande ce qu\'il devient. Son frère Vincent et lui sont allés travailler dans une auberge du port de Menethil, mais je suis sans nouvelles depuis longtemps.$B$BSi vous passez dans le coin, donnez-lui le bonjour de ma part, d\'accord ?",
     ["O"] = "Allez voir Vincent Hyal au Port de Menethil.",
@@ -6098,6 +6149,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Escorter Dalinda Malem depuis la forteresse de Hache-Tonnerre et retourner voir Vahlarriel Tueur-de-démons, en Désolace.",
     ["T"] = "Le retour vers Vahlarriel",
   },
+  [1441] = "_",
   [1442] = {
     ["D"] = "Salutations, $N. Que puis-je faire pour quelqu\'un qui suit la voie sacrée ?$B$BAh oui ! Morpuits, le forgeron… d\'il y a longtemps. Je me souviens bien de lui, mais cela fait quelque temps que je n\'ai pas entendu parler de lui.$B$BIl ne m\'a jamais paru impudent, aussi je ne peux que supposer que son désir d\'une gemme de Kor est noble.$B$BSi vous souhaitez réellement l\'une de ces gemmes, alors vous devez vous diriger vers le nord-ouest d\'Orneval. Vous y trouverez les Profondeurs de Brassenoire à l\'intérieur de ruines anciennes. Les nagas qui utilisent toujours ces gemmes se trouvent en bas. Ne partez pas $Gseul:seule;, $C.",
     ["O"] = "Apporter une Gemme de Kor à Thundris Tissevent à Sombrivage.",
@@ -6183,6 +6235,8 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apporter 7 Fioles de venin de scorpashi et 3 Cuirs de vieux kodo à Kreldig Ungor, en Désolace.",
     ["T"] = "Des réactifs pour les Récupérateurs",
   },
+  [1460] = "_",
+  [1461] = "_",
   [1462] = {
     ["D"] = "",
     ["O"] = "Parler à la Prophétesse Plume-de-corbeau pour obtenir un autre Sapta de terre.",
@@ -6663,6 +6717,8 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Allez voir la Fête de l\'homme d\'osier des Réprouvés dans les clairières de Tirisfal. Revenez voir le Sergent Hartman à Austrivage quand ce sera fait.",
     ["T"] = "Un intrus à la Fête de l\'homme d\'osier",
   },
+  [1659] = "_",
+  [1660] = "_",
   [1661] = {
     ["D"] = "Encore bonjour, $N. Je suis encore plus fier de vous appeler $Gfrère:sœur; qu\'avant ; votre dévouement est une bénédiction pour nous tous.$B$BLe temps est venu de vous accorder une grande récompense. Sachez que je vous donne cela gratuitement, mais que plus tard, les défis qu\'auront à accomplir les paladins qui voudront réaliser mes quêtes seront autrement plus exigeants.$B$BReparlez-moi plus tard et je vous accorderai une grande faveur.",
     ["O"] = "Parler à Duthorian Rall à Hurlevent.",
@@ -8083,6 +8139,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Retourner voir Shandris Pennelune au bastion de Pennelune et lui rendre compte de vos découvertes.",
     ["T"] = "Retourner au bastion de Pennelune",
   },
+  [2868] = "_",
   [2869] = {
     ["D"] = "La meilleure approche est de penser, indépendamment du projet réel des nagas, qu\'ils tentent de prendre possession de l\'île. Nous devons réagir énergiquement avant qu\'il ne soit trop tard.$B$BRapportez-moi dix écailles de Hainecrête en bon état ; pas besoin de vous expliquer comment vous les procurer. Vous diminuerez leur puissance et affaiblirez leur présence sur l\'île de Sardor, ce qui joue en notre faveur.",
     ["O"] = "Rapporter 10 Écailles de naga hainecrête à Latronicus Lancelune au bastion de Pennelune.",
@@ -8373,6 +8430,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Tuer 12 Naturalistes du Totem-sinistre, 10 Écumeurs du Totem-sinistre et 6 Chamans du Totem-sinistre avant de retourner voir Jer\'kai Tisselune, en Féralas.",
     ["T"] = "Justice de châtiment",
   },
+  [2971] = "_",
   [2972] = {
     ["D"] = "Ici, dans les terres sauvages, Kindal et moi n\'avons pas grand-chose à vous offrir, mais nous voulons récompenser votre aide. Prenez ma chevalière. Si un jour vous êtes dans les environs de Teldrassil, allez au temple de la Lune au cœur de Darnassus. Là, vous trouverez ma Grande prêtresse Tyrande Murmevent. L\'anneau lui dira que nous allons bien et que votre histoire est vraie.$B$BNous vous remercions toutes les deux, $N.",
     ["O"] = "Apporter la Chevalière de Jer\'kai à la Grande prêtresse Tyrande Murmevent, à Darnassus.",
@@ -8548,6 +8606,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Tuer 4 Harpies ruissenord, 4 Volplumes ruissenord, 4 Imploratrices célestes ruissenord et 4 Pourfendeuses ruissenord pour Talo Sabot-de-ronce.",
     ["T"] = "Se venger des Ruissenord",
   },
+  [3064] = "_",
   [3065] = {
     ["D"] = "Ah, pendant que vous n\'étiez pas là un parchemin est arrivé pour vous, $N.$B$BLisez-le quand vous en aurez le temps. Si je ne me trompe pas, il provient du Maître des guerriers Frang. Il souhaiterait s\'entretenir avec vous, quand vous jugerez le moment venu. Vous le trouverez à l\'extérieur de l\'Antre, dissimulé dans l\'ombre.",
     ["O"] = "Lire la Tablette simple, et parler à Frang, dans la Vallée des Épreuves.",
@@ -8809,6 +8868,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Parler à l\'apothicaire Renferrel au Sépulcre.",
     ["T"] = "Parler à Renferrel",
   },
+  [3241] = "_",
   [3261] = {
     ["D"] = "Nos routes se séparent, $N. Pour en apprendre plus, vous devrez aller au Camp Taurajo, vers le sud et parler à Jorn Oeil-des-cieux. Il continuera de vous guider.",
     ["O"] = "Parler à Jorn Oeil-des-cieux, au Camp Taurajo.",
@@ -8944,11 +9004,21 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Défendre le capitaine Vanessa Beltis, son équipage et les passagers de “l\'Horizon” contre l\'attaque des nagas. Le capitaine Vanessa Beltis doit survivre.",
     ["T"] = "Doux whisky",
   },
+  [3383] = "_",
+  [3384] = "_",
   [3385] = {
     ["D"] = "Ils se sont donnés le nom de Sous-marché : des commerçants sans vergogne qui vendront, intimideront, commerceront, ou feront à peu près n\'importe quoi contre la bonne somme d\'argent.$B$BMais les choses empirent, $N. Ils ont établi une base d\'opérations ici dans la gorge des Vents brûlants. Kovic dirige les opérations et entretient des liens étroits avec les nains sombrefers dans la région.$B$BNous devons frapper fort et envoyer un message clair à leurs dirigeants. Tuez Kovic, ainsi que son agent Clonk. Apportez-moi sa sacoche du marchand lorsque vous en aurez terminé.$B$BPartez pour le Chaudron à présent !",
     ["O"] = "Tuer le Maître d\'artisanat Kovic et son agent Clonk. Récupérer sur son corps la Sacoche du marchand et l\'apporter à Nilith.",
     ["T"] = "Le Sous-marché",
   },
+  [3401] = "_",
+  [3403] = "_",
+  [3404] = "_",
+  [3405] = "_",
+  [3422] = "_",
+  [3423] = "_",
+  [3424] = "_",
+  [3425] = "_",
   [3441] = {
     ["D"] = "Écoutez mon récit, $Gaventurier:aventurière;.",
     ["O"] = "Écouter le récit de Kalaran Lamevent.",
@@ -9094,6 +9164,8 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Tuer le chef de l\'Antre des Serres, Rynthariel le Maître des clés.",
     ["T"] = "Présence de la Horde",
   },
+  [3515] = "_",
+  [3516] = "_",
   [3517] = {
     ["D"] = "J\'admets avoir profité de ma situation en Azshara, $N. La punition de Belgrom a eu de bons côtés.$B$BJ\'y ai fait des recherches et vous seriez $Gétonné:étonnée; de voir combien il y a d\'objets de valeur ici.$B$BJe vous en dirai plus sur mes affaires et vous ferai participer aux profits, si vous m\'aidez à les récupérer.$B$BJ\'ai besoin de tablettes disposées partout dans les ruines d\'Eldarath, à l\'est d\'ici. Les quatre portent le nom de sorciers bien-nés. Trouvez-les pour moi et nous discuterons.",
     ["O"] = "Trouver la Tablette de Beth\'Amara, la Tablette de Jin\'yael, la Tablette de Markri et la Tablette de Sael\'hai puis retourner voir Jediga en Azshara.",
@@ -9154,6 +9226,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apportez l\'Œuf d\'Hakkar rempli à Yeh\'kinya dans Tanaris.",
     ["T"] = "Le dieu Hakkar",
   },
+  [3529] = "_",
   [3541] = {
     ["D"] = "J\'ai un copain à Orgrimmar. Il réside dans la rue principale. Il est difficile à trouver si vous ne savez pas où regarder, mais allez voir dans les bâtiments les plus hauts et vous devriez sans peine tomber sur lui.$B$BFaites-moi une faveur, n\'allez pas répéter à tout Kalimdor qu\'il est là : ce serait mauvais pour lui comme pour moi.$B$BIl nous donnera un prix plus qu\'honnête pour la Tablette de Jin\'yael. Je ne sais pas pourquoi, mais vous auriez dû voir comme il était excité quand je lui en ai parlé.",
     ["O"] = "Apportez la Tablette de Jin\'yael à Jes\'rimon à Orgrimmar.",
@@ -9225,6 +9298,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apporter la cargaison à Galvan l\'Ancien dans la vallée de Strangleronce.",
     ["T"] = "La formation du gangreplaie",
   },
+  [3622] = "_",
   [3625] = {
     ["D"] = "$N, la création de chaque arme va prendre un peu de temps.$B$BDe plus, vous ne pourrez utiliser le pouvoir de la Malédiction gangreneuse qu\'une fois toutes les trois minutes. Ses propriétés d\'affaiblissement contre Razelikh le Souilleur et ses sbires peuvent varier dans la durée. C\'est pourquoi vous devez prendre garde d\'utiliser la Malédiction gangreneuse au bon moment !$B$BÀ présent, donnez-moi une minute pour terminer votre arme, $N.",
     ["O"] = "Attendre que Galvan ait fini de forger les armes.",
@@ -9319,6 +9393,11 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Si vous vous sentez $Gprêt:prête; à fabriquer des objets vraiment faramineux, vous êtes au bon endroit. Je vois bien que vous êtes déjà un ingénieur compétent. Cependant, je souhaite analyser votre travail pour savoir comment introduire les techniques gnomes dans vos travaux futurs. J\'ai besoin des échantillons suivants : six tubes en mithril, une lunette de précision et deux leurres perfectionnés.$B$BSoumettez-moi ces objets et je ferai de vous un ingénieur gnome officiel, ayant accès à tous les schémas !",
     ["O"] = "Apportez 6 Tubes en mithril, 1 Lunette de précision et 2 Leurres perfectionnés à Orguignard Odipnoticus à Baie-du-Butin.",
     ["T"] = "Montrez votre travail",
+  },
+  [3646] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Le renouvellement de la Carte de membre",
   },
   [3661] = {
     ["D"] = "Les indomptables sont des créatures tout à fait imprévisibles, $N. Capables d\'une douceur incroyable, elles sont féroces si on menace ce qui est important à leurs yeux.$B$BOn dit que ces bêtes auraient été créées par Élune, et j\'aimerais savoir si c\'est vraiment le cas.$B$BJ\'ai récemment entendu parler d\'une population d\'indomptables vivant dans les Hinterlands ; des chouettards vicieux, des chouettards primitifs et des chouettards sauvages. Ils hantent les terres sauvages, là-bas. Pourriez-vous aller collecter quelques-unes de leurs plumes pour moi ?",
@@ -9520,6 +9599,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Rapporter le Journal à Williden Marshal quelque part dans le Cratère d\'Un\'Goro.",
     ["T"] = "Le journal de Williden",
   },
+  [3885] = "_",
   [3901] = {
     ["D"] = "Vous avez prouvé votre valeur aux Réprouvés dans des conditions normales, $N. À présent, voyons ce que vous pouvez faire lorsque vous êtes sous pression.$B$BLes squelettes cliquethorax, des sbires décérébrés extrêmement dangereux, sont plus résistants que les zombies auxquels vous avez eu affaire jusqu\'à présent. Réduisez leur nombre et démontrez à nouveau votre appartenance aux Réprouvés. Quand vous aurez fini, ne vous attardez pas, revenez me voir.",
     ["O"] = "Tuez 8 Squelettes cliquethorax.",
@@ -10080,6 +10160,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Parler à Agnar Domptebêtes dans les Hinterlands.",
     ["T"] = "L\'amour d\'un parent",
   },
+  [4299] = "_",
   [4300] = {
     ["D"] = "Hmm… Maintenant qu\'j\'y pense, y\'a ptêt\' que\'qu\'chose qu\'vous pourriez faire pour la Main. Oui, vous pourriez aider Jes\'rimon, c\'est sûr.$B$BIl existe des raptors armés de griffes mortelles dans l\'Cratère d\'Un\'Goro. Certains d\'ces raptors ont des griffes blanches au lieu de noires comme la mort. La Main a des… clients… qui apprécient les armes fabriquées à partir d\'ces griffes. Apportez-moi quelques-unes d\'ces griffes blanches, et j\'vous paierai bien. Agissez vite, et j\'vous aiderai p\'têt\' d\'aut\' manières.",
     ["O"] = "Apporter 8 Griffes blanches de ravasaure à Jes\'rimon à Orgrimmar.",
@@ -10100,6 +10181,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Aider le maréchal Windsor à récupérer son équipement et à libérer ses amis. Ensuite, retourner voir le maréchal Maxwell.",
     ["T"] = "Évasion !",
   },
+  [4323] = "_",
   [4324] = {
     ["D"] = "Bien que mon petit frère, Ribbly, soit un bon à rien, je crois qu\'il ne s\'est pas montré complètement incompétent cette fois ! Mais… il se peut que nous ayons besoin de votre aide pour exploiter sa récente découverte.$B$BMa sœur, Yuka, l\'a cherché durant des semaines, et ses recherches l\'ont conduite jusqu\'aux steppes Ardentes. Elle m\'a envoyé un message, demandant de l\'aide afin de poursuivre ses recherches.$B$BAlors, qu\'en dites-vous ? Voulez-vous nous aider ? Si oui, allez parler à ma sœur. Vous la trouverez cachée dans la corniche des flammes, une caverne au nord-ouest du rocher des Cognepeurs.",
     ["O"] = "Parlez à Yuka Fermevanne, dans les Steppes Ardentes.",
@@ -10785,6 +10867,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Escorter Lakota Chant-du-vent hors de la Cime de Noir-Nuage, puis parler à Thalia Peau-d\'ambre au Poste de Librevent.",
     ["T"] = "Libre, enfin !",
   },
+  [4905] = "_",
   [4906] = {
     ["D"] = "Un second campement de satyres menace Gangrebois, au nord. Menés par le cruel Xavaric, ces maudits traîtres se servent de la corruption qui afflige les créatures locales de Gangrebois.$B$BXavathras et ses sbires ne représentaient qu\'une partie d\'un plan beaucoup plus vaste : la mise en place d\'un puits de lune corrompu, puis l\'acheminement des butins à Xavaric.$B$BMaintenant que Xavathras n\'est plus de la partie, finissez cette mission, $N. Marchez vers le nord et tuez Xavaric.",
     ["O"] = "Eridan Ventebleu de Gangrebois veut que vous tuiez 8 Implorateurs de l\'enfer Jadefeu, 8 Traîtres Jadefeu, 8 Entourloupeurs Jadefeu et Xavaric. Revenez auprès d\'Eridan une fois la tâche accomplie.",
@@ -10985,6 +11068,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apportez un Joyau de sang à Mutiledent, au Camp Taurajo, dans les Tarides.$B$BRécupérez plus de Joyaux de sang si vous souhaitez qu\'il vous gratifie de la puissance d\'Agamaggan.",
     ["T"] = "Joyaux de sang d\'Agammagan",
   },
+  [5053] = "_",
   [5054] = {
     ["D"] = "Dans les montagnes neigeuses du Berceau-de-l\'Hiver, au nord-ouest, un chasseur traque sa proie… Je parle d\'Ursius, des ours Crocs acérés, une bête agile et rusée.$B$BJe vous envoie le combattre. Il erre sur les collines au nord-ouest de Long-Guet. Trouvez-le et tuez-le avant qu\'il ne s\'aperçoive que vous êtes sur ses traces.$B$BTout ce qui s\'est dressé contre Ursius est rapidement devenu la proie, et lui le chasseur. Restez sur vos gardes.",
     ["O"] = "Orage Sabot-d\'ombre, à Long-Guet au Berceau-de-l\'Hiver, veut que vous tuiez Ursius.",
@@ -11350,11 +11434,15 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Revenir à Jaedenar et tuer la succube Rakaiah avant de trouver le Cadavre de Trey Sancteforge.",
     ["T"] = "Le châtiment de la Lumière",
   },
+  [5205] = "_",
   [5206] = {
     ["D"] = "Chromie a dit que les reliques que vous avez ramassées sont des réactifs pour un charme puissant, mais il en manque encore un : des crânes appartenant aux troupes du Fléau qui ont participé à la bataille de Comté-de-Darrow.$B$BPrenez ce cristal et chassez les champions du Fléau pour prendre leurs crânes. Le cristal est enchanté : lorsque vous le passerez sur le crâne d\'un champion, il résonnera si celui-ci a participé à la bataille. Apportez-moi les crânes qui résonnent.$B$BAllez, $N. Vous trouverez les champions du Fléau dans la Clairière nocive au nord et dans la vallée des Fongus à l\'ouest.",
     ["O"] = "Apporter 5 Crânes résonnants et le Cristal mystique à Carlin Senterouge, dans les Maleterres de l\'Est.",
     ["T"] = "Les maraudeurs de Comté-de-Darrow",
   },
+  [5207] = "_",
+  [5208] = "_",
+  [5209] = "_",
   [5210] = {
     ["D"] = "Les annales de Comté-de-Darrow, grâce à ma magie, ont gagné des pages et vont maintenant au-delà de la bataille. L\'un des passages supplémentaires parle d\'un autre Senterouge, Carlin, qui a survécu à la trahison de Joseph. Carlin est maintenant dans les Maleterres de l\'Est, dans la chapelle de l\'Espoir de Lumière.$B$BPrenez le livre et parlez-lui.",
     ["O"] = "Apportez les Annales complètes de Comté-de-Darrow à Carlin Senterouge dans les Maleterres de l\'Est.",
@@ -11755,11 +11843,13 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apporter 10 Marques de valeur de l\'Aube d\'argent au Quartier-maître Hasana à la Barricade, dans les Maleterres de l\'Ouest.",
     ["T"] = "Les mantelets de l\'Aube",
   },
+  [5506] = "_",
   [5507] = {
     ["D"] = "Vos services envers l\'Aube d\'argent méritent d\'être salués, $N. Vous êtes vraiment $Grévéré:révérée; parmi nous. J\'ai été autorisé à vous laisser acheter l\'un des objets les plus précieux de l\'Aube d\'argent - nos mantelets de résistance à la magie.$B$BPoser l\'un de ces mantelets sur une pièce d\'épaule existante améliore l\'une de vos cinq résistances à la magie. En signe de votre dévotion à notre cause, je vous demande de me ramener dix marques de valeur. En échange, vous aurez le mantelet.",
     ["O"] = "Apporter 10 Marques de valeur de l\'Aube d\'argent au quartier-maître Feuzopoudre au camp du Noroît, dans les Maleterres de l\'Ouest.",
     ["T"] = "Les mantelets de l\'Aube",
   },
+  [5512] = "_",
   [5513] = {
     ["D"] = "Vos services envers l\'Aube d\'argent méritent d\'être salués, $N. Vous êtes vraiment $Grévéré:révérée; parmi nous. J\'ai été autorisé à vous laisser acheter l\'un des objets les plus précieux de l\'Aube d\'argent - nos mantelets de résistance à la magie.$B$BPoser l\'un de ces mantelets sur une pièce d\'épaule existante améliore l\'une de vos cinq résistances à la magie. En signe de votre dévotion à notre cause, je vous demande de me ramener dix marques de valeur. En échange, vous aurez le mantelet.",
     ["O"] = "Apporter 10 Marques de valeur de l\'Aube d\'argent à l\'intendante Coinceculasse, à la chapelle de l\'Espoir de Lumière, dans les Maleterres de l\'Est.",
@@ -11775,6 +11865,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Trouver Jandice Barov dans Scholomance et la tuer. Sur son cadavre, récupérer le Sac des horreurs de Krastinov. Rapporter le sac à Eva Sarkhoff.",
     ["T"] = "Sac des horreurs de Krastinov",
   },
+  [5516] = "_",
   [5517] = {
     ["D"] = "$GFrère:Sœur; $N. Les services que vous avez rendus à l\'Aube d\'argent sont trop nombreux pour être résumés facilement. En récompense, je vais me séparer de l\'un de nos mantelets de l\'Aube chromatique. C\'est une version qui protège le porteur de toutes les formes de magie auxquelles il est possible de résister. Les mantelets chromatiques ne sont octroyés qu\'aux plus grands héros de notre organisation ! Rapportez-moi vingt-cinq marques de valeur de l\'Aube d\'argent en signe de tribut et je vous donnerai le meilleur de nos mantelets.",
     ["O"] = "Apportez 25 Marques de valeur de l\'Aube d\'argent à l\'Intendante Coinceculasse, à la Chapelle de l\'Espoir de Lumière, dans les Maleterres de l\'Est.",
@@ -11785,6 +11876,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apportez 4 Rouleaux d\'étoffe runique, 8 Cuirs robustes, 2 Fils runiques et du Tanin ogre à Noué Dédodevie. Il est actuellement enchaîné dans l\'aile gordok de Hache-Tripes.",
     ["T"] = "La tenue d\'ogre gordok",
   },
+  [5520] = "_",
   [5521] = {
     ["D"] = "$GFrère:Sœur; $N. Les services que vous avez rendus à l\'Aube d\'argent sont trop nombreux pour être résumés facilement. En récompense, je vais me séparer de l\'un de nos mantelets de l\'Aube chromatique. C\'est une version qui protège le porteur de toutes les formes de magie auxquelles il est possible de résister. Les mantelets chromatiques ne sont octroyés qu\'aux plus grands héros de notre organisation ! Rapportez-moi vingt-cinq marques de valeur de l\'Aube d\'argent en signe de tribut et je vous donnerai le meilleur de nos mantelets.",
     ["O"] = "Apportez 25 Marques de valeur de l\'Aube d\'argent au Quartier-maître Feuzopoudre au camp du Noroît, dans les Maleterres de l\'Ouest.",
@@ -11795,6 +11887,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apportez les Œufs congelés à Leonid Barthalomew dans les Maleterres de l\'Est.",
     ["T"] = "Leonid Barthalomew",
   },
+  [5523] = "_",
   [5524] = {
     ["D"] = "$GFrère:Sœur; $N. Les services que vous avez rendus à l\'Aube d\'argent sont trop nombreux pour être résumés facilement. En récompense, je vais me séparer de l\'un de nos mantelets de l\'Aube chromatique. C\'est une version qui protège le porteur de toutes les formes de magie auxquelles il est possible de résister. Les mantelets chromatiques ne sont octroyés qu\'aux plus grands héros de notre organisation ! Rapportez-moi vingt-cinq marques de valeur de l\'Aube d\'argent en signe de tribut et je vous donnerai le meilleur de nos mantelets.",
     ["O"] = "Apportez 25 Marques de valeur de l\'Aube d\'argent au Quartier-maître Hasana à la Barricade, dans les Maleterres de l\'Ouest.",
@@ -11815,11 +11908,13 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Tuer 20 Jeunes pestiférés, puis retourner auprès de Betina Bigglezink à la Chapelle de l\'Espoir de Lumière.",
     ["T"] = "Portée contaminée",
   },
+  [5530] = "_",
   [5531] = {
     ["D"] = "Les œufs que vous avez apportés devaient faire l\'objet de recherches par le Fléau pour créer des dragons pestiférés. Ces œufs congelés de dragons noirs auraient été d\'une grande valeur pour leurs études et leur auraient fait gagner du temps.$B$BIl est temps pour nous de mettre fin à leurs recherches.$B$BApportez les œufs congelés à Betina Bigglezink, à l\'extérieur. C\'est une spécialiste en sciences et en alchimie. Elle a fabriqué une arme que nous pouvons utiliser contre le Fléau. Grâce à votre aide, nous leur porterons un coup sévère.",
     ["O"] = "Apportez les Œufs congelés à Betina Bigglezink.",
     ["T"] = "Betina Bigglezink",
   },
+  [5532] = "_",
   [5533] = {
     ["D"] = "Sur l\'île de Caer Darrow, se trouve Scholomance, un centre de nécromancie maléfique du Fléau. Notre ennemi y est installé, perpétuant des actes infâmes sur des victimes innocentes… du moins, c\'est ce que nous croyons. Une porte barre le chemin, et malgré tous nos efforts, si nous n\'avons pas la bonne clé, nous ne pourrons pas entrer.$B$BArbington l\'alchimiste connaît bien Scholomance et il sait comment obtenir une clé. Puisque vous avez fait vos preuves, je vous confie cette mission. Parlez-lui de cette affaire.",
     ["O"] = "Parlez à l\'Alchimiste Arbington à la Pointe du Noroît, dans les Maleterres de l\'Ouest.",
@@ -11991,11 +12086,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Parlez à Ur\'kyo à Orgrimmar.",
     ["T"] = "Garde de l\'ombre",
   },
-  [5644] = {
-    ["D"] = "Ah, quel beau jour pour vous, $N. Je vois que les leçons ont été profitables mais qu\'il est temps de vous renvoyer à Aelthalyste. Il y a des choses qu\'elle seule peut vous apprendre, si vous en valez la peine.$B$BJe ne vais pas vous gâcher la surprise mais je me souviens quand j\'étais un jeune prêtre, étudiant le vrai pouvoir... le pouvoir divin. Eh oui, des sacrés souvenirs.$B$BRetournez voir Aelthalyste à Fossoyeuse, $N. Elle vous attendra dans le quartier de la Guerre.",
-    ["O"] = "Parler à Aelthalyste à Fossoyeuse.",
-    ["T"] = "Peste dévorante",
-  },
   [5645] = {
     ["D"] = "$N, votre grand prêtre Rohan souhaite s\'entretenir avec vous à Forgefer. Faites vite, $Gmon puissant ami:ma puissante amie;, car votre prochaine mise à l\'épreuve approche. Bien que j\'aimerais être témoin des rites de votre race, ma place est ici. Mais que la Lumière vous accompagne dans vos voyages. Rohan sera à la garde Mystique une fois que vous aurez atteint la ville. Il vous attendra.",
     ["O"] = "Parler au grand prêtre Rohan à Forgefer.",
@@ -12005,11 +12095,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Aelthalyste respecte énormément ceux de notre peuple ; c\'est pour cela qu\'elle me les envoie pour que je les entraîne davantage. Et désormais, je fais de même pour sa tribu.$B$BVous devez retourner à Fossoyeuse, $N. Là, dans le quartier de la Guerre, elle est disposée à vous en apprendre plus sur votre peuple et leurs coutumes. Allez-y, n\'attendez pas…",
     ["O"] = "Parler à Aelthalyste à Fossoyeuse.",
     ["T"] = "Peste dévorante",
-  },
-  [5647] = {
-    ["D"] = "Votre race est puissante, $N. Nous sommes fiers d\'être vos alliés. Et à chaque fois qu\'un nouveau jour se lève, vous et votre peuple êtes plus prêts de la vérité. Non seulement vous réussirez à trouver vos origines mais vous découvrirez que vous êtes sur le bon chemin pour bien d\'autres choses. Ce sentiment doit vous remplir de joie.$B$BUn message vient d\'arriver de Forgefer. Il faut que vous retourniez là-bas à la Garde mystique et que vous parliez au grand prêtre Rohan. Ne le faites pas attendre et qu\'Élune vous guide.",
-    ["O"] = "Parler au grand prêtre Rohan à Forgefer.",
-    ["T"] = "Un manque de peur",
   },
   [5648] = {
     ["D"] = "V\'là votre premier test, $N. Au sud de Tranchecolline, juste à l\'extérieur de la ville, un d\'nos fantassins a été blessé en s\'battant contre les troupes de Portvaillant. Elle s\'trouve pas trop bien, et faudrait qu\'un d\'nous aille l\'aider. Trouvez-la – son nom c\'est Kor\'ja – soignez ses blessures et donnez-lui la bénédiction d\'nos ancêtres.$B$BQuand vous aurez fait ça, ce s\'ra la meilleure preuve que vous pouvez commencer à suivre notre trace.",
@@ -12810,6 +12895,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Montez une armée et portez-vous vers les Maleterres de l\'Est. Lancez un assaut total sur Nathanos le Flétrisseur et détruisez tout misérable élément de la Horde qui tenterait de le défendre.$B$BGardez votre présence d\'esprit, $N : la Horde le défendra jusqu\'à la mort.",
     ["T"] = "L\'ordre doit être rétabli",
   },
+  [6201] = "_",
   [6241] = {
     ["D"] = "Les Grumegueules ont tendance à rester entre eux, $N. Bien que nous laissions passer ceux en qui nous avons toute confiance, nous essayons d\'éviter les autres tribus de furbolgs, si cela est possible.$B$BDernièrement, j\'ai remarqué que la tribu Tombe-hiver montrait des signes d\'hostilité à notre égard. Ils semblent être dans un étrange état de rage, rendus furieux par tout ce qui les effraie et qu\'ils ne comprennent pas.$B$BSi vous pouviez en réduire le nombre, cela nous aiderait grandement, $N.",
     ["O"] = "Salfa voudrait que vous tuiez 6 Totémiques, 6 Gardes et 6 Guides de la tribu Tombe-hiver.",
@@ -13370,6 +13456,8 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apportez les Mains de Lucifron, de Sulfuron, de Gehennas et de Shazzrah au duc Hydraxis, en Azshara.",
     ["T"] = "Les mains de l\'ennemi",
   },
+  [6841] = "_",
+  [6842] = "_",
   [6843] = {
     ["D"] = "",
     ["O"] = "",
@@ -13600,6 +13688,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Récupérez 10 Fragments d\'Ombréclats dans Maraudon, et rapportez-les à Uthel\'nay, à Orgrimmar.",
     ["T"] = "Fragments d\'Ombréclat",
   },
+  [7069] = "_",
   [7070] = {
     ["D"] = "J\'ai dernièrement commencé à tester différents cristaux et leurs propriétés arcaniques. Dame Portvaillant m\'a laissé pour consigne de demander aux voyageurs faisant route vers Désolace de rechercher un endroit appelé Maraudon. À l\'intérieur du temple en ruine vivent de grands élémentaires composés de ces pierres rougeâtres que j\'ai appelés « Ombréclats ».$B$BSi vous décidiez de prendre cette direction et de trouver ces cristaux, je saurais vous montrer ma reconnaissance. Je pourrais même vous élaborer un bijou à partir de l\'un d\'entre eux, si vous le désiriez.",
     ["O"] = "Récupérez 10 Fragments d\'Ombréclats à Maraudon, et les apporter à l\'archimage Tervosh, dans le marécage d\'Âprefange.",
@@ -13855,45 +13944,10 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Vous avez été chargé de tuer les personnages orcs présents dans la Vallée d\'Alterac.$B$BTuez un orc et remettez les Dents d\'orc au caporal Noreg Foudrepique à Dun Baldar.",
     ["T"] = "On recherche : ORCS !",
   },
-  [7421] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "La défense des Sombrelances",
-  },
-  [7422] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Pour une poignée de cheveux",
-  },
-  [7423] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Toujours plus de bouts d\'os !",
-  },
   [7424] = {
     ["D"] = "J\'ai hâte de faire l\'essai de mon déchiqueteur portatif, $R, mais avant que je ne puisse fabriquer le kit, j\'ai besoin de beaucoup de matériel !$B$BPour être précis, il me faut une montagne de thorium, de mithril et de fer. J\'aurai également besoin d\'une scie à vapeur par unité. Vous les trouverez à la scierie.$B$BAlors que je traînais dans les environs (avant ma capture) j\'ai remarqué une pile de scies à vapeur, au Camp de bûcherons des Foudrepiques.",
     ["O"] = "",
     ["T"] = "Chasse aux sabots !",
-  },
-  [7425] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "La collection de mojos de Forteramure",
-  },
-  [7426] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "L\'amour d\'un homme",
-  },
-  [7427] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "On recherche : PLUS DE NAINS !",
-  },
-  [7428] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "On recherche : PLUS D\'ORCS !",
   },
   [7441] = {
     ["D"] = "J\'ai baissé ma garde pendant un moment, $Gétranger:étrangère;. Dans ma hâte d\'échapper aux griffes du prince déchu, j\'ai été volé. Un très abject démon, le diablotin Pusillin, s\'est emparé de mon livre d\'incantations et de la clé qui ouvre les grandes salles d\'Eldre\'Thalas.$B$BLa clé ne m\'intéresse plus, car j\'ai échangé l\'immortalité contre la liberté, mais j\'ai désespérément besoin de mon livre d\'incantations.$B$BTrouvez le diablotin, Pusillin, et retrouvez mon livre.$B$BFouillez le quartier de Crochebois de Hache-Tripes pour trouver Pusillin.",
@@ -14318,6 +14372,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Trouvez le Gantelet de puissance gordok et rendez-le au Capitaine Kromcrabouille à Hache-Tripes.$B$BSelon Kromcrabouille, les histoires des « vieux » racontent que Tortheldrin – un « vilain » elfe qui se fait appeler prince – l\'a volé à l\'un des rois gordok.",
     ["T"] = "Affaires inachevées chez les Gordok",
   },
+  [7704] = "_",
   [7721] = {
     ["D"] = "Si je dois rester ici à gérer cette boutique en pleine côte Oubliée, j\'aurai besoin que l\'on s\'occupe de ces fichus élémentaires. La puissance déchaînée des éléments, quelle plaie !$B$BHeureusement pour moi, et aussi pour vous, mon cher et nouvel agent provocateur, les élémentaires représentent une source d\'énergie idéale pour mon ultra-réducteur perfectionné ! Donnez-leur ce qu\'ils méritent ! Sans oublier de me garder leurs noyaux élémentaires, bien sûr !",
     ["O"] = "Récupérez 10 Noyaux élémentaires d\'eau sur les Elémentaires marins et les Embruns le long de la Côte Oubliée de Féralas, et rapportez-les à Zorbin Poudrozieu, près du quai là-bas.",
@@ -14458,25 +14513,36 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Entrez dans le goulet des Chanteguerres, triomphez de l\'Alliance et obtenez une Marque d\'honneur du goulet des Chanteguerres. Puis revenez voir le capitaine Fracasse-crâne au campement de Mor\'shan.",
     ["T"] = "Écrasez les usurpateurs d\'Aile-argent",
   },
-  [7792] = {
+  [7790] = "_",
+  [7795] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "Un don de laine",
+    ["T"] = "Un don d\'étoffe runique",
   },
   [7797] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Déchiqueteur dimensionnel - Long-Guet",
   },
-  [7798] = {
+  [7800] = {
     ["D"] = "",
     ["O"] = "",
-    ["T"] = "Un don de soie",
+    ["T"] = "Un don d\'étoffe runique",
+  },
+  [7805] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Un don d\'étoffe runique",
   },
   [7810] = {
     ["D"] = "Être le maître d\'une arène, ça ne doit pas se limiter à ça ! Le pirate qui anime celle des Gurubashi aura peut-être des conseils à me donner.",
     ["O"] = "Parler à Court John Mithril dans l\'arène de Strangleronce.",
     ["T"] = "Maître de l\'arène",
+  },
+  [7811] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Un don d\'étoffe runique",
   },
   [7815] = {
     ["D"] = "Faut pas se laisser prendre à leurs grands yeux, v\'savez ? Ces gueules d\'acier des mers, c\'est la plaie des plaies ! Je peux pas pêcher cinq minutes sans qu\'un de ces gros aspirateurs à poissons me vole mes appâts.$B$BRendez-nous service, à moi et tous les gens du village des Vengebroches, tuez-les.$B$BTuez-les, tous autant qu\'ils sont !",
@@ -14487,6 +14553,21 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Yo ! Y a une tortue qu\'est pas comme les autres. Elle, c\'est la Gammerita, la patronne des gueules d\'aciers des mers – un sale reptile voleur.$B$BLà, elle s\'est sauvée avec mon meilleur appât. L\'a tranché la ligne, comme ça, net ! Et depuis, les poissons, y mordent plus pareil.$B$BTrouvez Gammerita et récupérez mon appât. Oui, dans son estomac.",
     ["O"] = "Katoom le pêcheur, du village des Vengebroches dans les Hinterlands, veut que vous tuiez Gammerita et que vous récupériez le Meilleur appât de Katoom sur son cadavre.$B$BKatoom a mentionné que Gammerita rôdait sur la côte, avec d\'autres tortues.",
     ["T"] = "Gammerita, l\'ami !",
+  },
+  [7818] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Un don d\'étoffe runique",
+  },
+  [7823] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Un don d\'étoffe runique",
+  },
+  [7824] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Un don d\'étoffe runique",
   },
   [7828] = {
     ["D"] = "Les Hinterlands sont un endroit dur, $R. On y a perdu beaucoup de braves trolls. Les loups Crins-d\'argent sont l\'une des pires menaces qu\'affrontent nos chasseurs. Ces animaux se cachent dans les buissons et les fourrés, attendant l\'occasion de bondir.$B$BCette férocité ne doit pas rester impunie !$B$BVous devez penser comme les Crins-d\'argent. Traquez les Traqueurs ! Tuez-les tous !",
@@ -14502,6 +14583,11 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Ces infects Marteaux-hardis dressent des griffons pour tuer des trolls. C\'est horrible, je sais, mais ne vous faites pas de souci, justice sera faite.$B$BPour le moment, je veux que vous vous concentriez sur l\'éradication des vieux griffons de la région. On les appelle des Seigneurs du ciel.$B$BTuez-en un et ramenez-moi une plume.",
     ["O"] = "Le veneur Markhor, du village des Vengebroches des Hinterlands, veut que vous tuiez un Seigneur du ciel Bec-rasoir et que vous récupériez une Plume de Seigneur du ciel. Revenez le voir lorsque vous aurez terminé votre tâche.$B$BD\'après Markhor, les Seigneurs du ciel Bec-rasoir sont des créatures rares qui vivent dans les régions sauvages des Hinterlands.",
     ["T"] = "Venger les victimes",
+  },
+  [7836] = {
+    ["D"] = "",
+    ["O"] = "",
+    ["T"] = "Un don d\'étoffe runique",
   },
   [7838] = {
     ["D"] = "Avast Lubber!   Bring me 12 trinkets of the Arena Master and then ye shall be a Grandmaster of the Gurubashi Arena!   Arrrr!",
@@ -14678,6 +14764,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "",
     ["T"] = "De petites pattes en fourrure",
   },
+  [7904] = "_",
   [7905] = {
     ["D"] = "La foire de Sombrelune approche ! Participez à nos jeux palpitants, remportez des prix fabuleux, faites-vous dire la bonne aventure !$B$BSi vous agissez maintenant, vous pourrez échanger ce coupon contre des bons gratuits, ainsi qu\'un exemplaire du mondialement célèbre Guide pratique de Sombrelune, qui vous aidera à identifier certains trésors lors de vos voyages !$B$BIl vous suffira de donner ce coupon à Gelvas Crasseporte, à la foire.$B$BActuellement, l\'entrée de la foire se trouve juste à côté de Comté-de-l\'Or, dans la forêt d\'Elwynn.",
     ["O"] = "Donnez le Coupon pour des bons gratuits à Gelvas Crasseporte, qui se trouve à la foire de Sombrelune.",
@@ -14768,6 +14855,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Kill 5 rabbits and return to Jon LeCraft by the forge on Designer Island.",
     ["T"] = "Gwedins de lapins !",
   },
+  [7962] = "_",
   [8001] = {
     ["D"] = "I am Corpus and you are a wretched speciman, YES! You will do nicely, It has become overcrowded in this town and it is getting harder to find a empty grave. Can you help me get rid of some of the filthy zombies investing my graves, 5 should be enough to guarantee me a resting space.",
     ["O"] = "Kill 5 Wretched Zombies",
@@ -14783,11 +14871,14 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "",
     ["T"] = "Echanger les bons iCoke",
   },
+  [8022] = "_",
   [8023] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Echanger les bons iCoke",
   },
+  [8024] = "_",
+  [8025] = "_",
   [8026] = {
     ["D"] = "",
     ["O"] = "",
@@ -15253,10 +15344,10 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "",
     ["T"] = "Le grand prix",
   },
-  [8196] = {
-    ["D"] = "",
+  [8195] = {
+    ["D"] = "I seek the Paragons of Power known as the Coins of the Tribes.  They are the currency used by the various denizens of Zul\'Gurub, and each is imbued with subtle but powerful mojo.$B$BThere are nine distinct kinds to be found.  Some are sought after by my compatriots for various armors they offer Zandalar heroes.  Should you have any extra, I will trade you one of our Honor Tokens for a set of three.  You may use the Tokens with Rin\'wosho the Trader; he offers our heroes special items for them.",
     ["O"] = "",
-    ["T"] = "Mangues d\'essence",
+    ["T"] = "Pièces zuliennes, razzashi et hakkari",
   },
   [8201] = {
     ["D"] = "C\'est vrai. Hakkar réside désormais dans Zul\'Gurub, où il baigne dans le pouvoir de nos dieux. Des grands-prêtres asservis canalisent les énergies de nos plus puissantes divinités dans l\'Écorcheur d\'âmes. Il sera bientôt plus redoutable que toutes les créatures d\'Azeroth. Il faut l\'arrêter !$B$BPrenez cette corde sacrée, et attachez-la aux têtes des grands-prêtres qui canalisent les énergies de nos dieux.$B$BLorsque ce sera fait, revenez me voir.",
@@ -15308,6 +15399,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Rendre la Clé d\'azur au seigneur Jorach Ravenholdt.",
     ["T"] = "La clé d\'azur",
   },
+  [8237] = "_",
   [8238] = {
     ["D"] = "I seek the Paragons of Power known as the Coins of the Tribes.  They are the currency used by the various denizens of Zul\'Gurub, and each is imbued with subtle but powerful mojo.$B$BThere are nine distinct kinds to be found.  Some are sought after by my compatriots for various armors they offer Zandalar heroes.  Should you have any extra, I will trade you one of our Honor Tokens for a set of three.  You may use the Tokens with Rin\'wosho the Trader; he offers our heroes special items for them.",
     ["O"] = "",
@@ -15413,6 +15505,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Bring the Ribbons of Sacrifice to Sentinel Farsong so that the Sentinels may reward you for acting on our behalf.",
     ["T"] = "Les rubans de sacrifice",
   },
+  [8274] = "_",
   [8275] = {
     ["D"] = "Votre attention, héros de l\'Alliance ! La menace représentée par les silithides a été ignorée pendant trop longtemps. Faute d\'une réelle opposition, ils ont utilisé ce délai pour se préparer à une expansion à grande échelle.$B$BLes forces du Cercle cénarien se rassemblent à Silithus pour aller combattre ces misérables créatures et tous les aventuriers valides sont invités par le présent appel à nous rejoindre !$B$BN\'attendez pas qu\'il soit trop tard ! Aidez-nous à défendre Azeroth ! Adressez-vous à l\'imploratrice céleste Corne-fière au Fort cénarien pour recevoir des instructions détaillées !",
     ["O"] = "Parlez à l\'Imploratrice céleste Corne-fière au Fort cénarien, en Silithus.",
@@ -16183,6 +16276,8 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apportez 3 Marques d\'honneur du bassin Arathi à l\'un des porteguerres de la Horde, devant les champs de bataille.",
     ["T"] = "La conquête du bassin Arathi",
   },
+  [8444] = "_",
+  [8445] = "_",
   [8446] = {
     ["D"] = "La corruption suinte de cet objet.$B$BIl doit exister un lien entre lui et les dragons qui ont surgi du Rêve. Vous devez trouver quelqu\'un qui pourra comprendre la signification de cet objet. Peut-être que les druides de Reflet-de-Lune ou du Fort cénarien pourront vous aider plus avant.",
     ["O"] = "Trouver quelqu\'un capable de comprendre la signification de l\'Objet noyé dans les cauchemars.$B$BPeut-être qu\'un druide de grande puissance pourra vous aider.",
@@ -16193,6 +16288,8 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Attendre que le gardien Remulos de Reflet-de-Lune ait purifié l\'Objet noyé dans les cauchemars.",
     ["T"] = "L\'éveil des légendes",
   },
+  [8458] = "_",
+  [8459] = "_",
   [8460] = {
     ["D"] = "Les Grumegueules sont les seuls furbolgs à avoir résisté à la corruption. Pourtant, de nombreuses races exécutent maintenant tous les furbolgs, sans distinction, sans même prendre le temps de s\'assurer qu\'ils sont amis ou des ennemis. Pour cette raison, les Grumegueules sont devenus farouches et ne font plus confiance à personne.$B$BVoulez-vous faire vos preuves et faire montre de courage ? Si vous forcez la tribu corrompue des Mort-bois à battre en retraite, nous vous considérerons peut-être comme un être digne de confiance. Vous trouverez les guerriers, les guides et les jardiniers Mort-bois plus bas vers le sud.",
     ["O"] = "Grifleur veut que vous prouviez votre valeur en tuant 6 Guerriers Mort-bois, 6 Guides Mort-bois et 6 Jardiniers Mort-bois. Lorsque ce sera fait, retournez le voir dans le sud de Gangrebois, près du Sanctuaire d\'émeraude.",
@@ -16683,16 +16780,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Parlez à la matrone Arène, le maître des prêtres, à l\'intérieur de la Flèche solaire de l\'île de Haut-Soleil.",
     ["T"] = "La formation de prêtre",
   },
-  [8565] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Victoires passées en Arathi",
-  },
-  [8566] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Victoires passées en Arathi",
-  },
   [8567] = {
     ["D"] = "",
     ["O"] = "",
@@ -16918,6 +17005,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apportez 20 Pains de saumon au chef Griffe-tranchante dans la Vallée des Esprits d\'Orgrimmar.",
     ["T"] = "La Horde a besoin de plus de pains de saumon !",
   },
+  [8617] = "_",
   [8618] = {
     ["D"] = "",
     ["O"] = "",
@@ -17568,11 +17656,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Placer 1 Sel de Fonderoc et 5 pièces d\'or dans un Préservateur de houx, et vous recevrez 5 Houx préservés.",
     ["T"] = "Le héros du jour",
   },
-  [8767] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Un cadeau secoué doucement",
-  },
   [8770] = {
     ["D"] = "L\'effort de guerre progresse, mais la présence des silithides dans la région représente une menace de plus en plus importante pour nos opérations. Vous avez été $Gchoisi:choisie; pour participer à l\'assaut sur la Ruche\'Ashi. Vos cibles prioritaires seront les défenseurs de la Ruche\'Ashi.$B$BÀ la fin de la mission, présentez-vous au rapport devant le commandant Mar\'alith.",
     ["O"] = "Tuez 30 Défenseurs de la Ruche\'Ashi, et revenez faire votre rapport au commandant Mar\'alith au Fort cénarien, en Silithus. Vous devez aussi apporter le Briefing de combat I pour terminer cette quête.",
@@ -17758,16 +17841,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "",
     ["T"] = "Cinq chevalières pour des fournitures militaires",
   },
-  [8847] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Dix chevalières pour des fournitures militaires",
-  },
-  [8849] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Vingt chevalières pour des fournitures militaires",
-  },
   [8850] = {
     ["D"] = "",
     ["O"] = "",
@@ -17777,11 +17850,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Cinq chevalières pour des fournitures militaires",
-  },
-  [8852] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Dix chevalières pour des fournitures militaires",
   },
   [8854] = {
     ["D"] = "",
@@ -18313,6 +18381,12 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Récupérez 20 Varechs de sang sur les nagas Strashaz, puis retournez voir Bodley au mont Rochenoire.",
     ["T"] = "Votre avenir passe par l\'île d\'Alcaz",
   },
+  [8971] = "_",
+  [8972] = "_",
+  [8973] = "_",
+  [8974] = "_",
+  [8975] = "_",
+  [8976] = "_",
   [8977] = {
     ["D"] = "Travailler avec vous était très agréable, $N. Voici le produit fini.$B$BJ\'espère qu\'il vous rendra service dans vos activités présentes. Oh… Et si cela ne vous dérange pas trop, parlez de moi autour de vous. J\'aimerais bien avoir davantage de clients.",
     ["O"] = "Apportez le Révélateur de fantômes extradimensionnel à Deliana à Forgefer.",
@@ -18382,11 +18456,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Maintenant que nous avons tout ce qu\'il nous faut, il est temps que nous parlions de notre prochaine invocation.$B$BPour un ogre, Kormok n\'était pas désagréable, jusqu\'à ce qu\'il se mette à la nécromancie. Après… après, il donnait la chair de poule à tous les membres de la compagnie. Personne n\'a été étonné qu\'il emmène son morceau d\'amulette dans son nouveau foyer, la Scholomance. Même là, ou peut-être « surtout là », il n\'était pas à l\'abri des assassins spectraux. Ils l\'ont tué devant son maître, Ras Murmegivre.",
     ["O"] = "Utilisez le Brasero de signal pour invoquer l\'esprit de Kormok, puis tuez-le. Retournez voir Bodley, à l\'intérieur du mont Rochenoire, avec l\'Amulette du seigneur Valthalak reconstituée et le Brasero de signal.",
     ["T"] = "Le morceau droit de l\'amulette du seigneur Valthalak",
-  },
-  [8993] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Faire des cadeaux",
   },
   [8995] = {
     ["D"] = "Tout est prêt, $N.$B$BLes appartements du seigneur Valthalak se trouvaient dans ce qui est devenu depuis la chambre de la Bête. Allez-y et servez-vous du Brasero de signal pour faire apparaître le seigneur Valthalak. Lorsqu\'il redeviendra matériel, vous devrez le tuer une nouvelle fois. Si j\'étais vous, je commencerais par m\'occuper de la Bête, et je veillerais à emmener assez d\'ami pour survivre aux dangers du sommet du pic Rochenoire.$B$BLorsque vous aurez réglé son compte à Valthalak, utilisez l\'amulette sur son cadavre. Lorsque son esprit sera réunifié, il voudra probablement la récupérer.$B$BBonne chance !",
@@ -18557,11 +18626,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Comment ça, une trahison ? Non, je vous assure que mes intentions sont complètement innocentes.$B$BQuel mal y a-t-il à aider ceux qui souhaitent simplifier les rites complexes de la séduction ? Cela n\'a rien d\'un crime !$B$BTenez, pour vous prouver que je ne voulais de mal à personne, je vais même vous indiquer ma source.$B$BTous ces produits venaient d\'un certain Staffron Lerent, un apothicaire ou quelque chose de ce genre. Je ne l\'ai jamais vu.$B$BL\'intermédiaire, un gobelin, m\'a dit qu\'il travaillait dans les contreforts de Hautebrande, derrière le mystérieux manoir de Ravenholdt. Si vous voulez aller le voir, je vous souhaite bonne chance !",
     ["O"] = "Trouver l\'apothicaire Staffron Lerent dans les contreforts de Hautebrande, derrière le manoir de Ravenholdt.",
     ["T"] = "La source est découverte !",
-  },
-  [9029] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Un chaudron bouillonnant",
   },
   [9030] = {
     ["D"] = "L\'âme de Valthalak était conservée dans cette amulette.$B$BAveuglés par la cupidité, nous l\'avons brisée en trois, sans savoir que nous allions être maudits pour cela.$B$BLe seul moyen d\'arrêter le sort lancé par Valthalak est de réunir le médaillon. Retournez voir Mokvar et dites-lui que Bodley est sa seule chance de retrouver les morceaux manquants. Voyez avec lui pour les récompenses.$B$BQuant à moi, pour une fois, je vais reposer en paix. Je vous souhaite bonne chance, vous en aurez bien besoin !",
@@ -19097,6 +19161,11 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Vous voulez une commission d\'artisan ? Quoi ? Vous vous imaginez que je vais vous donner une de ces commissions si vivement recherchées juste parce que vous vous êtes $Gmontré:montrée; ici ? Sûrement pas, feignasse. Des artisans du monde entier cherchent du travail ici sur le front.$B$BSi vous voulez une commission, vous allez devoir me montrer que vous êtes $Gprêt:prête; à verser du sang pour la cause. Apportez-moi une marque de valeur et nous reparlerons.$B$BEt pour mettre vos petites mains poisseuses de $Gbon à rien:bonne à rien; sur une de ces marques, vous n\'avez qu\'une chose à faire - commencez le carnage.",
     ["O"] = "Le commandant d\'ordonnance Metz, à la chapelle de l\'Espoir de Lumière dans les Maleterres de l\'est, veut une Marque de valeur de l\'Aube d\'argent.",
     ["T"] = "On m\'appelle « Le Coq »",
+  },
+  [9142] = {
+    ["D"] = "You know the drill, kid. One valor token gets you a craftsman\'s writ.",
+    ["O"] = "",
+    ["T"] = "Commission d\'artisan",
   },
   [9143] = {
     ["D"] = "Le lieutenant s\'est dépêché de nous envoyer nous battre avec les trolls qui vivent de l\'autre côté du lac. Il n\'a pas pensé à déployer des éclaireurs. Nous avons payé sa sottise très cher ! Vous m\'entendez, Tomathren ? Vous êtes un crétin !$B$BVoulez-vous m\'aider, $C ? Il faut toujours que nous nous occupions de ces trolls. Je vais rester là et lui servir de nourrice – j\'ai l\'impression qu\'il a perdu l\'esprit.$B$BPartez vers l\'est, traversez le lac et entrez dans Zeb\'Sora. Je veux me venger ! Amenez-moi leurs oreilles, que je me fabrique un collier !",
@@ -19658,11 +19727,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Parler au forestier Degolien, au village de Brise-Clémente, dans le bois des Chants éternels.",
     ["T"] = "Le village de Brise-Clémente",
   },
-  [9257] = {
-    ["D"] = "Cette dernière besogne sera la plus difficile de toutes, $N. Vous avez déjà affronté et vaincu un Dieu très ancien et le général du roi-liche, mais vous devez maintenant faire face à la main de Sargeras.$B$BApportez le bâton à Stratholme. C\'est là-bas que vous trouverez une étendue de terre consacrée : le sol sur lequel les plus grands chevaliers du Lordaeron ont été abattus. Placez le bâton souillé sur le sol sacré et préparez-vous à ce qu\'une entité au pouvoir immense s\'en échappe... Exécutez l\'être démoniaque qui contrôle le bâton, puis revenez me trouver.",
-    ["O"] = "Anachronos, aux Grottes du temps en Tanaris, veut que vous emportiez Atiesh, le grand bâton du Gardien, à Stratholme et que vous le placiez sur la Terre consacrée. Abattez l\'entité qui sera extraite du bâton et retournez le voir.",
-    ["T"] = "Atiesh, grand bâton du Gardien",
-  },
   [9258] = {
     ["D"] = "Une arrivée du Fléau dans une nouvelle région est toujours précédée d\'une infâme corruption qui gagne le sol. Par le passé, les pierres runiques dressées le long de la frontière avec les Terres fantômes protégeaient la terre de cette corruption.$B$BLa pierre runique située le plus à l\'ouest fut détruite lors d\'un assaut du Fléau, ce qui nous a forcé à brûler la terre qui l\'entoure pour éviter l\'avancée de la pourriture.$B$BMa sœur, Larianna Ruissevent, veille sur le Bosquet incendié. Allez la voir, elle aura peut-être du travail pour vous.",
     ["O"] = "Trouver Larianna Ruissevent près du Bosquet incendié, au sud-ouest du bois des Chants éternels.",
@@ -19713,6 +19777,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Anachronos, aux Grottes du temps en Tanaris, veut que vous emportiez Atiesh, le grand bâton du Gardien, à Stratholme et que vous le placiez sur la Terre consacrée. Abattez l\'entité qui sera extraite du bâton et retournez le voir.",
     ["T"] = "Atiesh, grand bâton du Gardien",
   },
+  [9273] = "_",
   [9274] = {
     ["D"] = "D\'aussi loin que je me souvienne, le lac au nord a toujours été hanté par les fantômes de mes ancêtres, $N. Ces pauvres gens ont été victimes d\'un accident tragique au cours duquel des dizaines d\'entre eux se sont noyés au fond du lac.$B$BLes détails de l\'événement ont été oubliés depuis, mais leurs cris tourmentés nous rappellent sans cesse la malédiction qui les frappe.$B$BSi vous vous en sentez capable, j\'apprécierais que vous alliez au lac pour mettre un terme à leurs souffrances, $N. Vous gagneriez ma gratitude, et aussi la leur... je pense.",
     ["O"] = "Le forestier Krenn\'an, à l\'enclave des Pérégrins dans les Terres fantômes, veut que vous tuiez 8 Apparitions vengeresses et 8 Apparitions voraces dans le lac voisin.",
@@ -19823,6 +19888,9 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Apportez la Lettre déchirée au gardien des registres à la chapelle de l\'Espoir de Lumière dans les Maleterres de l\'Est.",
     ["T"] = "Lettre du front",
   },
+  [9296] = "_",
+  [9297] = "_",
+  [9298] = "_",
   [9299] = {
     ["D"] = "Vous avez trouvé cette lettre sur l\'un des nombreux serviteurs du Fléau que vous avez tués. À en juger par son apparence et son odeur, elle a longtemps été en la possession de morts-vivants. Peut-être que quelqu\'un à la chapelle de l\'Espoir de Lumière souhaiterait l\'examiner plus attentivement...",
     ["O"] = "Apportez la Note détériorée au gardien des registres à la chapelle de l\'Espoir de Lumière dans les Maleterres de l\'Est.",
@@ -19933,30 +20001,10 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Allez parler au Grand exécuteur Mavren à Tranquillien, dans les Terres fantômes.",
     ["T"] = "Les Réprouvés",
   },
-  [9333] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Les gants de l\'Aube d\'argent",
-  },
   [9334] = {
     ["D"] = "",
     ["O"] = "",
     ["T"] = "Huile de sorcier bénie",
-  },
-  [9335] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Pierre à aiguiser consacrée",
-  },
-  [9336] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Potion de soins majeure",
-  },
-  [9337] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Potion de mana majeure",
   },
   [9339] = {
     ["D"] = "This flame, stolen from the heart of Stormwind itself, floods you with warmth. This raw power is foreign to you, but the (NAME) might know more...",
@@ -19968,20 +20016,10 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Le capitaine des forestiers Venn\'ren du Guet de l\'épervier veut que vous tuiez 8 Jeunes fauchepierre et 3 Alphas fauchepierre à la Grande fissure, à l\'est du Guet de l\'épervier.",
     ["T"] = "La Grande fissure",
   },
-  [9341] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Tabard de l\'Aube d\'argent",
-  },
   [9342] = {
     ["D"] = "Comme si l\'invasion des mines par les gan\'arg ne suffisait pas, nous avons maintenant une infestation de vers géants de l\'autre côté !$B$BLa garnison de Thrallmar est trop occupée à nous défendre contre la Légion ardente et à soigner ses blessés, c\'est donc à moi et aux mineurs qu\'il revient de régler nos problèmes.$B$B<Le contremaître indique les péons endormis.>$B$BEt comme vous pouvez le voir, ils se rendent très utiles...$B$BJe serais bien content de vous verser leur salaire pour l\'élimination de certains de ces vers.",
     ["O"] = "Le contremaître Razelcraz, des mines près de Thrallmar, veut que vous tuiez 15 Perceurs de croûte maraudeurs. Les vers ont tendance à attaquer brutalement à partir de leurs tunnels souterrains.",
     ["T"] = "Les perceurs de croûte maraudeurs",
-  },
-  [9343] = {
-    ["D"] = "",
-    ["O"] = "",
-    ["T"] = "Tabard de l\'Aube d\'argent",
   },
   [9344] = {
     ["D"] = "Je vous salue, $N. L\'Outreterre est un endroit dangereux, comme bien des membres de notre expédition l\'ont appris à leurs dépens. J\'ai bien peur que le jeune Grelag n\'en ait fait directement l\'expérience.$B$BGrelag est un étudiant prometteur, mais il doit apprendre la patience ! Il étudie avec passion l\'histoire de son peuple, mais il oublie parfois les menaces des temps présents.$B$BIl est parti pour le poste de Brise-échine, oublieux de la présence de la Légion et des gangr\'orcs. Je crains que quelque chose ne lui soit arrivé.",
@@ -20013,6 +20051,7 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Rendez-vous au Sanctum occidental, au sud-ouest de la Place de l\'Épervier, et tuez les intrus s\'il y en a. Ensuite, allez faire votre rapport à la telluriste Velania.",
     ["T"] = "Les intrusions darnassiennes",
   },
+  [9353] = "_",
   [9355] = {
     ["D"] = "Salutations, $C. Maintenant que des renforts arrivent enfin, nous allons pouvoir revenir à une semblance de vie normale.$B$BL\'un de nos premiers objectifs sera de rétablir la circulation des personnes et des marchandises sur la route du sud-ouest, que nous devons reprendre aux perceurs de croûte qui ont envahi la zone.$B$BSi vous acceptez de nous aider à éradiquer cette menace, la gratitude des Fils vous sera acquise. Faites attention à la terre remuée qu\'ils laissent dans leurs sillages.",
     ["O"] = "Tuer 15 Perceurs de croûte maraudeurs, puis retourner voir le contremaître Biggums au bastion de l\'Honneur.",
@@ -20122,11 +20161,6 @@ pfDB["quests"]["frFR-tbc"] = {
     ["D"] = "Notre pèlerin blessé réclame son sac à cor et à cri.$B$BLorsque vous l\'avez rencontrée, avez-vous vu un sac aux alentours ? Hmmm...$B$BElle a dû l\'abandonner lorsqu\'elle a fui ses agresseurs. Les ravageurs Plumecroc, dans leur ravin au sud, sont connus pour attaquer les voyageurs solitaires.$B$BSi elle ne se calme pas, je ne pourrai pas soigner ses blessures. Son entêtement risque de lui coûter la vie.$B$BAllez dans le ravin des Plumecroc et voyez si vous pouvez trouver son campement. Je parie qu\'elle a laissé son sac là-bas",
     ["O"] = "Le Pèlerin elfe de sang blessé a été attaqué par des Ravageurs Plumecroc alors qu\'il se trouvait dans le ravin de Plumepoussière. Trouvez son campement et fouillez-le à la recherche de son sac manquant.",
     ["T"] = "Les souffrances du pèlerin",
-  },
-  [9378] = {
-    ["D"] = "Dans les profondeurs de Pestebois se trouve l\'entrée de la citadelle de l\'effroi, Naxxramas. Toutes les tentatives pour y pénétrer ont échoué en raison des balises magiques placées sur le portail runique - jusqu\'à présent.$B$BNous avons mis au point un moyen d\'entrer grâce à une sorte d\'occultation arcanique permanente, un vieux sortilège du Kirin Tor avec quelques modifications personnelles. Cela étant dit, l\'occultation est coûteuse. Cependant, votre dévouement à la cause de l\'Aube est indéfectible ! Nous prendrons en charge toutes les dépenses.",
-    ["O"] = "L\'archimage Angela Dosantos à la chapelle de l\'Espoir de Lumière dans les Maleterres de l\'Est vous accordera gratuitement l\'Occultation arcanique. Vous devez être $GExalté:Exaltée; auprès de l\'Aube d\'argent.",
-    ["T"] = "DND FLAG Naxxramas, la citadelle de l\'effroi",
   },
   [9380] = {
     ["D"] = "Bon sang, si je reçois encore une lettre de Forgefer…$B$BAvez-vous déjà essayé d\'expliquer quelque chose à quelqu\'un qui refuse d\'écouter, $C ? J\'ai envoyé aux gars de Forgefer le spécimen de molosse dimensionnel qu\'ils m\'avaient demandé. Ils ont eu le culot de m\'en demander une « meute » par retour du courrier ! Une meute !$B$BJ\'ai essayé de leur expliquer que les molosses dimensionnels étaient des solitaires, mais ils ne veulent rien savoir. J\'ai renoncé à leur faire comprendre. Prenez 6 des meilleurs spécimens à l\'est du bastion, et rapportez-les-moi ici.",
@@ -20278,6 +20312,10 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Utilisez le Totem du loup à l\'endroit où vous avez trouvé le corps de Krun Brise-échine et suivez l\'Esprit ancestral du loup.",
     ["T"] = "Un guide spirituel",
   },
+  [9411] = "_",
+  [9412] = "_",
+  [9413] = "_",
+  [9414] = "_",
   [9415] = {
     ["D"] = "Vous êtes les nouvelles recrues du maréchal Murbleu ? Évidemment que c\'est vous.$B$BQu\'est-ce que vous attendez ? De bons soldats meurent dans le désert. N\'êtes-vous pas contents de les rejoindre ?$B$BAllez, bougez-vous, et tâchez de ne pas mourir d\'insolation en route.",
     ["O"] = "Parlez au maréchal Murbleu au campement de l\'Alliance, près de la Ruche\'Zora.",
@@ -20488,6 +20526,8 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Servez-vous du Cadeau de Naïas près de l\'Autel de Naïas pour invoquer l\'élémentaire d\'eau Naïas. Lorsque vous l\'aurez vaincu, retournez voir Nemeth Œil-de-faucon au campement Grom\'gol avec le Cœur de Naïas.",
     ["T"] = "Un protecteur inhabituel",
   },
+  [9458] = "_",
+  [9459] = "_",
   [9460] = {
     ["D"] = "Keltus Sombrefeuille, au rapport !$B$BHeu… qui êtes-vous, au fait ? Si vous voulez que je vous fasse un rapport, vous allez d\'abord devoir m\'aider.$B$BJ\'ai l\'intention d\'attaquer ces Sentinelles espionnes, mais j\'ai l\'intention de laisser ma fidèle Murmure frapper la première. Elle a besoin d\'une odeur pour repérer ses proies.$B$BQuelqu\'un d\'aussi doué que vous pourrait sûrement se faufiler là-bas et voler quelque chose au chef des Sentinelles ?",
     ["O"] = "Keltus Sombrefeuille veut que vous fassiez les poches du Chef des Sentinelles, que vous y récupériez un Mouchoir en dentelle et que vous le lui remettiez.",
@@ -20573,6 +20613,12 @@ pfDB["quests"]["frFR-tbc"] = {
     ["O"] = "Rendez-vous à Shadra\'Alor et cherchez-y les traces de Barbe-de-plumes.",
     ["T"] = "À la poursuite de Barbe-de-plumes",
   },
+  [9477] = "_",
+  [9478] = "_",
+  [9479] = "_",
+  [9480] = "_",
+  [9481] = "_",
+  [9482] = "_",
   [9483] = {
     ["D"] = "",
     ["O"] = "",
