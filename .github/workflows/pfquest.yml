@@ -213,6 +213,15 @@ jobs:
           asset_path: release/pfQuest-ruRU.zip
           asset_name: pfQuest-ruRU.zip
           asset_content_type: application/zip
+      - name: Upload pfQuest-ptBR.zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/pfQuest-ptBR.zip
+          asset_name: pfQuest-ptBR.zip
+          asset_content_type: application/zip
       - name: Upload pfQuest-zhCN-wotlk.zip
         uses: actions/upload-release-asset@v1
         env:
