@@ -41,7 +41,7 @@ local reset = {
     local dialog = StaticPopupDialogs["PFQUEST_RESET"]
     dialog.text = L["Do you really want to reset everything?"]
     dialog.OnAccept = function()
-      pfQuest_config, pfBrowser_fav, pfQuest_history, pfQuest_colors, pfQuest_server = nil
+      pfQuest_config, pfBrowser_fav, pfQuest_history, pfQuest_colors, pfQuest_server, pfQuest_questcache = nil
       ReloadUI()
     end
 
