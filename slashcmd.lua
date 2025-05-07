@@ -120,14 +120,24 @@ SlashCmdList["PFDB"] = function(input, editbox)
 
   -- argument: chests
   if (arg1 == "chests") then
-    local maps = pfDatabase:SearchMetaRelation({ name = commandlist[1] }, meta)
+    local query = {
+      name = commandlist[1],
+    }
+
+    local maps = pfDatabase:SearchMetaRelation(query, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
 
   -- argument: taxi
   if (arg1 == "taxi") then
-    local maps = pfDatabase:SearchMetaRelation({ name = commandlist[1], faction = commandlist[2] }, meta)
+    local query = {
+      name = commandlist[1],
+      faction = commandlist[2],
+    }
+
+    meta["texture"] = "Interface\\TaxiFrame\\UI-Taxi-Icon-White"
+    local maps = pfDatabase:SearchMetaRelation(query, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
@@ -140,6 +150,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
       max = commandlist[3],
     }
 
+    meta["texture"] = pfQuestConfig.path.."\\img\\fav"
     local maps = pfDatabase:SearchMetaRelation(query, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
