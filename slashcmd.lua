@@ -106,52 +106,77 @@ SlashCmdList["PFDB"] = function(input, editbox)
 
   -- argument: meta
   if (arg1 == "meta") then
-    local maps = pfDatabase:SearchMetaRelation({ commandlist[2], commandlist[3], commandlist[4] }, meta)
+    local query = {
+      name = commandlist[2],
+      min = commandlist[3],
+      max = commandlist[4],
+      faction = commandlist[3],
+    }
+
+    local maps = pfDatabase:SearchMetaRelation(query, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
 
   -- argument: chests
   if (arg1 == "chests") then
-    local maps = pfDatabase:SearchMetaRelation({ commandlist[1] }, meta)
+    local maps = pfDatabase:SearchMetaRelation({ name = commandlist[1] }, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
 
   -- argument: taxi
   if (arg1 == "taxi") then
-    local maps = pfDatabase:SearchMetaRelation({ commandlist[1], commandlist[2] }, meta)
+    local maps = pfDatabase:SearchMetaRelation({ name = commandlist[1], faction = commandlist[2] }, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
 
   -- argument: rares
   if (arg1 == "rares") then
-    local maps = pfDatabase:SearchMetaRelation({ commandlist[1], commandlist[2], commandlist[3] }, meta)
+    local query = {
+      name = "rares",
+      min = commandlist[2],
+      max = commandlist[3],
+    }
+
+    local maps = pfDatabase:SearchMetaRelation(query, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
 
   -- argument: mines
   if (arg1 == "mines") then
+    local query = {
+      name = "mines",
+      min = commandlist[2],
+      max = commandlist[3],
+    }
+
     if (arg2 == "auto") then
-      -- id 186 is Mining
-      commandlist[3] = pfDatabase:GetPlayerSkill(186) or 0
-      commandlist[2] = commandlist[3] - 100
+      query.max = pfDatabase:GetPlayerSkill(186) or 0
+      query.min = query.max - 100
     end
-    local maps = pfDatabase:SearchMetaRelation({ commandlist[1], commandlist[2], commandlist[3] }, meta)
+
+    local maps = pfDatabase:SearchMetaRelation(query, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
 
   -- argument: herbs
   if (arg1 == "herbs") then
+    local query = {
+      name = "herbs",
+      min = commandlist[2],
+      max = commandlist[3],
+    }
+
     if (arg2 == "auto") then
-      -- id 182 is Herbalism
-      commandlist[3] = pfDatabase:GetPlayerSkill(182) or 0
-      commandlist[2] = commandlist[3] - 100
+      query.max = pfDatabase:GetPlayerSkill(182) or 0
+      query.min = query.max - 100
     end
-    local maps = pfDatabase:SearchMetaRelation({ commandlist[1], commandlist[2], commandlist[3] }, meta)
+
+    local maps = pfDatabase:SearchMetaRelation(query, meta)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end

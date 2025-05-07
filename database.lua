@@ -719,40 +719,40 @@ local alias = {
   ["raremobs"] = "rares",
 }
 
+local skill = {
+  ["herbs"] = true,
+  ["mines"] = true,
+  ["rares"] = true,
+  ["chests"] = true,
+}
+
 function pfDatabase:SearchMetaRelation(query, meta, show)
   local maps = {}
 
-  local faction
-  local relname = query[1] -- search name (chests)
-  local relmins = query[2] -- min skill level
-  local relmaxs = query[3] -- max skill level
+  -- abort on invalid queries
+  if not query.name then return end
 
-  relname = alias[relname] or relname
+  -- convert track name aliases
+  local track = alias[query.name] or query.name
 
-  if pfDB["meta"] and pfDB["meta"][relname] then
-    if relname == "flight" then
-      meta["texture"] = "Interface\\TaxiFrame\\UI-Taxi-Icon-White"
+  if pfDB["meta"] and pfDB["meta"][track] then
+    -- check which faction should be searched
+    local faction = query.faction and string.lower(query.faction) or string.lower(UnitFactionGroup("player"))
+    faction = faction == "horde" and "H" or faction == "alliance" and "A" or ""
 
-      if relmins then
-        faction = string.lower(relmins)
+    -- iterate over all tracking entries
+    for entry, value in pairs(pfDB["meta"][track]) do
+      if skill[track] and tonumber(query.min) and tonumber(value) < tonumber(query.min) then
+        -- required skill is lower than the queried one
+      elseif skill[track] and tonumber(query.max) and tonumber(value) > tonumber(query.max) then
+        -- required skill is lower than the queried one
+      elseif not skill[track] and not string.find(value, faction) then
+        -- faction is different from the queried one
       else
-        faction = string.lower(UnitFactionGroup("player"))
-      end
-
-      faction = faction == "horde" and "H" or faction == "alliance" and "A" or ""
-    elseif relname == "rares" then
-      meta["texture"] = pfQuestConfig.path.."\\img\\fav"
-    end
-
-    for id, skill in pairs(pfDB["meta"][relname]) do
-      if ( not tonumber(relmins) or tonumber(relmins) <= skill ) and
-         ( not tonumber(relmaxs) or tonumber(relmaxs) >= skill ) and
-         ( not faction or string.find(skill, faction))
-      then
-        if id < 0 then
-          pfDatabase:SearchObjectID(math.abs(id), meta, maps)
+        if entry < 0 then
+          pfDatabase:SearchObjectID(math.abs(entry), meta, maps)
         else
-          pfDatabase:SearchMobID(id, meta, maps)
+          pfDatabase:SearchMobID(entry, meta, maps)
         end
       end
     end
