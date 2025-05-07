@@ -17,6 +17,7 @@ The pfQuest extractor supports VMaNGOS and CMaNGOS databases. By default, VMaNGO
         DROP DATABASE IF EXISTS `pfquest`;
         DROP DATABASE IF EXISTS `vmangos`;
         DROP DATABASE IF EXISTS `cmangos-tbc`;
+        DROP DATABASE IF EXISTS `turtle`;
 
         CREATE USER 'mangos'@'localhost' IDENTIFIED BY 'mangos';
 
@@ -28,6 +29,9 @@ The pfQuest extractor supports VMaNGOS and CMaNGOS databases. By default, VMaNGO
 
         CREATE DATABASE `cmangos-tbc` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
         GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `cmangos-tbc`.* TO 'mangos'@'localhost';
+
+        CREATE DATABASE `turtle` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+        GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON `turtle`.* TO 'mangos'@'localhost';
     '
 
 ### Import Client Data
@@ -109,6 +113,12 @@ Use the current `ptBR` localizations from the vmangos core repo and patch them i
     mariadb -u mangos -p"mangos" vmangos < quest_template.sql
     cd -
 
+### TurtleWoW (Optional)
+
+Obtain and download the latest TurtleWoW database and unzip it.
+
+    mariadb -u mangos -p"mangos" turtle < turtle/*.sql
+
 ### The Burning Crusade (CMaNGOS)
 
 Clone the latest CMaNGOS TBC database and the translations of the Mangos-Extras project:
@@ -136,6 +146,20 @@ Run the following commands to improve extractor performance by indexing the sql 
 
     mariadb <<< '
         use 'vmangos';
+        # creatures
+        CREATE INDEX idx_cse_guid ON creature_spawn_entry(guid);
+        CREATE INDEX idx_cse_entry ON creature_spawn_entry(entry);
+        CREATE INDEX idx_guid_map_position ON creature(guid, map, position_x, position_y);
+        # gameobjects
+        CREATE INDEX idx_gse_guid ON gameobject_spawn_entry(guid);
+        CREATE INDEX idx_gse_entry ON gameobject_spawn_entry(entry);
+        # items
+        CREATE INDEX idx_got_data1 ON gameobject_template(data1);
+        CREATE INDEX idx_golt_entry ON gameobject_loot_template(entry);
+        CREATE INDEX idx_npcvt_entry ON npc_vendor_template(entry);
+        CREATE INDEX idx_ct_entry ON creature_template(Entry);
+
+        use 'turtle';
         # creatures
         CREATE INDEX idx_cse_guid ON creature_spawn_entry(guid);
         CREATE INDEX idx_cse_entry ON creature_spawn_entry(entry);
