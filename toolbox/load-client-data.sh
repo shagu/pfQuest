@@ -236,6 +236,8 @@ EOF
 
         if [ "$loc" = "enUS" ]; then
           echo "INSERT INTO \`SkillLine_${v}\` VALUES ($id, $entry, '', '', '', '', '', '', '', '', '');" >> $rootsql
+        elif [ "$loc" = "ptBR" ] && [ "$v" == "turtle" ]; then
+          echo "UPDATE \`SkillLine_${v}\` SET name_loc7 = $entry WHERE id = $id;" >> $rootsql
         else
           echo "UPDATE \`SkillLine_${v}\` SET name_loc$index = $entry WHERE id = $id;" >> $rootsql
         fi
@@ -314,6 +316,8 @@ EOF
 
         if [ "$loc" = "enUS" ]; then
           echo "INSERT INTO \`AreaTable_${v}\` VALUES ($id, $zoneID, $entry, '', '', '', '', '', '', '', '', '');" >> $rootsql
+        elif [ "$loc" = "ptBR" ] && [ "$v" == "turtle" ]; then
+          echo "UPDATE \`AreaTable_${v}\` SET name_loc7 = $entry WHERE id = $id;" >> $rootsql
         else
           echo "UPDATE \`AreaTable_${v}\` SET name_loc$index = $entry WHERE id = $id;" >> $rootsql
         fi
