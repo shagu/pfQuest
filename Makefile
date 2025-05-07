@@ -1,7 +1,7 @@
 VERSION = $(shell git describe --abbrev=0 --tags)
 GITREV = $(shell git describe --tags)
 
-all: clean stripdb full enUS koKR frFR deDE zhCN esES ruRU full-tbc enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc full-wotlk enUS-wotlk koKR-wotlk frFR-wotlk deDE-wotlk zhCN-wotlk esES-wotlk ruRU-wotlk
+all: clean stripdb full enUS koKR frFR deDE zhCN esES ruRU ptBR full-tbc enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc full-wotlk enUS-wotlk koKR-wotlk frFR-wotlk deDE-wotlk zhCN-wotlk esES-wotlk ruRU-wotlk
 
 clean:
 	rm -rfv release
@@ -51,7 +51,7 @@ full-wotlk:
 	echo $(GITREV) > release/$@/pfQuest-wotlk/gitrev.txt
 	( cd release/$@; zip -qr ../pfQuest-$@.zip pfQuest-wotlk )
 
-enUS koKR frFR deDE zhCN esES ruRU:
+enUS koKR frFR deDE zhCN esES ruRU ptBR:
 	$(eval LOCALE := $(shell echo $@))
 	@echo "===== building ${LOCALE} ====="
 	mkdir -p release/$@/pfQuest/init release/$@/pfQuest/db/enUS release/$@/pfQuest/db/${LOCALE}
