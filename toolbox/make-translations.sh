@@ -1,13 +1,13 @@
 #!/bin/bash
 TMPFILE=".locales.lua"
-locales="koKR frFR deDE zhCN esES ruRU"
+locales="koKR frFR deDE zhCN zhTW esES ruRU"
 
 echo 'local locales = {' > $TMPFILE
 for loc in $locales; do
   echo -n "Language: $loc "
 
   echo "  [\"$loc\"] = {" >> $TMPFILE
-  cat *.lua | sed "s/\(pfQuest_Loc\[\"\)/\n\1/" | grep -oP "pfQuest_Loc\[\".*?\"]" | sed 's/pfQuest_Loc\["\(.*\)"\]/\1/' | sort | uniq | while read -r entry; do
+  (cat *.lua | sed "s/\(L\[\"\)/\n\1/" | grep -oP "L\[\".*?\"]" | sed 's/L\["\(.*\)"\]/\1/' && cat *.lua | sed "s/\(pfQuest_Loc\[\"\)/\n\1/" | grep -oP "pfQuest_Loc\[\".*?\"]" | sed 's/pfQuest_Loc\["\(.*\)"\]/\1/') | sort | uniq | while read -r entry; do
     writable="    [\"$entry\"] = nil,"
 
     echo -n "."
@@ -22,6 +22,7 @@ for loc in $locales; do
       fi
     done && echo "$writable" >> $TMPFILE
   done
+
   echo "  }," >> $TMPFILE
   echo
 done
