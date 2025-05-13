@@ -613,7 +613,7 @@ do -- welcome/init popup dialog
   pfQuestInit.save:SetPoint("BOTTOMRIGHT", -10, 10)
   pfQuestInit.save.text = pfQuestInit.save:CreateFontString("Caption", "LOW", "GameFontWhite")
   pfQuestInit.save.text:SetAllPoints(pfQuestInit.save)
-  pfQuestInit.save.text:SetText("Save & Close")
+  pfQuestInit.save.text:SetText(L["Save & Close"])
 
   pfUI.api.SkinButton(pfQuestInit.save)
 
