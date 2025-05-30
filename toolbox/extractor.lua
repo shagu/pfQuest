@@ -904,7 +904,7 @@ for id, settings in pairs(config.expansions) do
         local fac = ""
         local faction = {}
         local sql = [[
-          SELECT A FROM gameobject_template, pfquest.FactionTemplate_]]..expansion..[[
+          SELECT A, H FROM gameobject_template, pfquest.FactionTemplate_]]..expansion..[[
           WHERE pfquest.FactionTemplate_]]..expansion..[[.factiontemplateID = gameobject_template.faction
           AND gameobject_template.entry = ]] .. gameobject_template.entry
 
