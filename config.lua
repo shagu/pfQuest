@@ -186,6 +186,7 @@ pfQuestConfig:SetScript("OnEvent", function()
     pfQuest_history = pfQuest_history or {}
     pfQuest_colors = pfQuest_colors or {}
     pfQuest_config = pfQuest_config or {}
+    pfQuest_track = pfQuest_track or {}
     pfBrowser_fav = pfBrowser_fav or {["units"] = {}, ["objects"] = {}, ["items"] = {}, ["quests"] = {}}
 
     -- clear quest history on new characters

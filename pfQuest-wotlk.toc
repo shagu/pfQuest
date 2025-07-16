@@ -6,7 +6,7 @@
 ## Version: GIT
 ## OptionalDeps: pfUI-wotlk
 ## SavedVariables: pfQuest_questcache
-## SavedVariablesPerCharacter: pfQuest_config, pfBrowser_fav, pfQuest_history, pfQuest_colors, pfQuest_server
+## SavedVariablesPerCharacter: pfQuest_config, pfBrowser_fav, pfQuest_history, pfQuest_colors, pfQuest_server, pfQuest_track
 
 init\data.xml
 init\enUS.xml
