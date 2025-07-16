@@ -163,6 +163,22 @@ for id, db in pairs(dbs) do
   pfDatabase.dbstring = pfDatabase.dbstring .. " |cffcccccc[|cffffffff" .. db .. "|cffcccccc:|cff33ffcc" .. ( pfDB[db][loc] and loc or "enUS" ) .. "|cffcccccc]"
 end
 
+-- track all previous meta selections on login
+pfDatabase.tracking = CreateFrame("Frame", "pfDatabaseMetaTracking", UIParent)
+pfDatabase.tracking:RegisterEvent("PLAYER_ENTERING_WORLD")
+pfDatabase.tracking:SetScript("OnEvent", function()
+  -- break on empty config
+  if not pfQuest_track then return end
+
+  -- enable all tracked
+  for name, data in pairs(pfQuest_track) do
+    pfDatabase:SearchMetaRelation(data[1], data[2])
+  end
+
+  -- remove events
+  this:UnregisterAllEvents()
+end)
+
 -- track questitems to maintain object requirements
 pfDatabase.itemlist = CreateFrame("Frame", "pfDatabaseQuestItemTracker", UIParent)
 pfDatabase.itemlist.update = 0
