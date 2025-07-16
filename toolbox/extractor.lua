@@ -60,9 +60,10 @@ local debugsql = {
   --
   ["minimap"] = { "Using client data to read minimap zoom levels" },
   --
-  ["meta_taxi"] = { "Using client and mangos data to find flight masters" },
   ["meta_rares"] = { "Using client and mangos data to find rare mobs" },
-  ["meta_farm"] = { "Using client and mangos data to find chests, herbs and mines" },
+  ["meta_npcs"] = { "Using client and mangos data to find npcs" },
+  ["meta_objects"] = { "Using client and mangos data to find objects" },
+  ["meta_openable"] = { "Using client and mangos data to find chests, herbs and mines" },
   --
   ["locales_unit"] = { "Using mangos data to find unit translations" },
   ["locales_object"] = { "Using mangos data to find object translations" },
@@ -1538,26 +1539,6 @@ for id, settings in pairs(config.expansions) do
       ["flight"] = {},
     }
 
-    do -- flightmasters
-      local mask = core == "vmangos" and 8 or 8192
-      local creature_template = {}
-      local query = mysql:execute([[
-        SELECT Entry, A, H FROM `creature_template`, `pfquest`.FactionTemplate_]]..expansion..[[
-        WHERE pfquest.FactionTemplate_]]..expansion..[[.factiontemplateID = creature_template.]] .. C.Faction .. [[
-        AND ( ]] .. C.NpcFlags .. [[ & ]]..mask..[[) > 1
-      ]])
-
-      while query:fetch(creature_template, "a") do
-        if debug("meta_taxi") then break end
-        local fac = ""
-        local entry = tonumber(creature_template.Entry)
-        local A = tonumber(creature_template.A)
-        local H = tonumber(creature_template.H)
-        if A >= 0 then fac = fac .. "A" end
-        if H >= 0 then fac = fac .. "H" end
-        pfDB["meta"..exp]["flight"][entry] = fac
-      end
-    end
 
     do -- raremobs
       local creature_template = {}
@@ -1573,7 +1554,88 @@ for id, settings in pairs(config.expansions) do
       end
     end
 
-    do -- gameobject relations
+    do -- npcs
+      local creature_flags = {
+        [4] = "vendor",
+        [8] = "flight",
+        [32] = "spirithealer",
+        [64] = "spirithealer",
+        [128] = "innkeeper",
+        [256] = "banker",
+        [2048] = "battlemaster",
+        [4096] = "auctioneer",
+        [8192] = "stablemaster",
+        [16384] = "repair",
+      }
+
+      local tbc_flag_map = {
+        [4] = 128, [8] = 8192, [32] = 16384, [64] = 32768,
+        [128] = 65536, [256] = 20000, [2048] = 1048576,
+        [4096] = 2097152, [8192] = 4194304, [16384] = 4096,
+      }
+
+      for mask, name in pairs(creature_flags) do
+        -- create meta relation table if not existing
+        pfDB["meta"..exp][name] = pfDB["meta"..exp][name] or {}
+
+        local mask = core == "vmangos" and mask or tbc_flag_map[mask]
+
+        local creature_template = {}
+        local query = mysql:execute([[
+          SELECT Entry, A, H FROM `creature_template`, `pfquest`.FactionTemplate_]]..expansion..[[
+          WHERE pfquest.FactionTemplate_]]..expansion..[[.factiontemplateID = creature_template.]] .. C.Faction .. [[
+          AND ( ]] .. C.NpcFlags .. [[ & ]]..mask..[[) > 0
+        ]])
+
+        while query:fetch(creature_template, "a") do
+          if debug("meta_npcs") then break end
+          local fac = ""
+          local entry = tonumber(creature_template.Entry)
+          local A = tonumber(creature_template.A)
+          local H = tonumber(creature_template.H)
+          if A >= 0 then fac = fac .. "A" end
+          if H >= 0 then fac = fac .. "H" end
+          pfDB["meta"..exp][name][entry] = fac
+        end
+      end
+    end
+
+    do -- objects
+      local gameobject_flags = {
+        [19] = "mailbox",
+        [23] = "meetingstone",
+        [25] = "fish",
+      }
+
+      for flag, name in pairs(gameobject_flags) do
+        -- create meta relation table if not existing
+        pfDB["meta"..exp][name] = pfDB["meta"..exp][name] or {}
+
+        -- gameobject_template.type
+        local gameobject_template = {}
+        local query = mysql:execute([[
+          SELECT * FROM `gameobject_template`
+          LEFT JOIN pfquest.FactionTemplate_]]..expansion..[[
+          ON pfquest.FactionTemplate_]]..expansion..[[.factiontemplateID = gameobject_template.faction
+          WHERE `type` = ]]..flag..[[
+        ]])
+
+        while query:fetch(gameobject_template, "a") do
+          if debug("meta_objects") then break end
+          local entry = tonumber(gameobject_template.entry) * -1
+          local A = tonumber(gameobject_template.A)
+          local H = tonumber(gameobject_template.H)
+          local fac = ""
+
+          if not A or A >= 0 then fac = fac .. "A" end
+          if not H or H >= 0 then fac = fac .. "H" end
+
+          pfDB["meta"..exp][name][entry] = fac
+        end
+      end
+    end
+
+    do -- openables
       local gameobject_template = {}
       local query = mysql:execute([[
         SELECT * FROM `gameobject_template`, pfquest.Lock_]]..expansion..[[
@@ -1581,7 +1643,7 @@ for id, settings in pairs(config.expansions) do
       ]])
 
       while query:fetch(gameobject_template, "a") do
-        if debug("meta_farm") then break end
+        if debug("meta_openable") then break end
         local entry   = tonumber(gameobject_template.entry) * -1
         local data = tonumber(gameobject_template.data)
         local skill = tonumber(gameobject_template.skill)
