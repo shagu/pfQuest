@@ -761,6 +761,52 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
   return maps
 end
 
+-- Search TrackMeta
+-- Scans for all entries within the specified list
+-- Adds map nodes for each, saves it to the persistent
+-- tracking variable per character and returns a map table
+function pfDatabase:TrackMeta(list, state)
+  local list = alias[list] and alias[list] or list
+  local identifier = "TRACK_"..string.upper(list)
+
+  local meta = {
+    ["addon"] = identifier,
+    ["icon"] = pfQuestConfig.path.."\\img\\tracking\\"..list,
+  }
+
+  local query = {
+    name = list
+  }
+
+  local maps = nil
+
+  -- hide previous tracks
+  pfQuest_track[list] = nil
+  pfMap:DeleteNode(identifier)
+  pfMap:UpdateNodes()
+
+  -- break here if nothing should be tracked
+  if not state then return end
+
+  -- add extended state values to query
+  -- this is used for min/max values
+  if type(state) == "table" then
+    for k, v in pairs(state) do
+      query[k] = v
+    end
+  end
+
+  -- save and perform the actual meta tracking
+  pfQuest_track[list] = { query, meta }
+  local maps = pfDatabase:SearchMetaRelation(query, meta)
+
+  -- remove invalid results
+  if not maps then pfQuest_track[list] = nil end
+
+  -- return map results
+  return maps
+end
+
 -- SearchMob
 -- Scans for all mobs with a specified name
 -- Adds map nodes for each and returns its map table
