@@ -104,90 +104,109 @@ SlashCmdList["PFDB"] = function(input, editbox)
     return
   end
 
-  -- argument: meta
-  if (arg1 == "meta") then
-    local query = {
-      name = commandlist[2],
+  -- argument: track (deprecated: meta)
+  if (arg1 == "track" or arg1 == "meta") then
+    local list = commandlist[2]
+
+    local state = {
       min = commandlist[3],
       max = commandlist[4],
       faction = commandlist[3],
     }
 
-    local maps = pfDatabase:SearchMetaRelation(query, meta)
+    if commandlist[3] == "clean" then
+      state = nil
+    end
+
+    local maps = pfDatabase:TrackMeta(list, state)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
 
   -- argument: chests
   if (arg1 == "chests") then
-    local query = {
-      name = commandlist[1],
-    }
+    local state = true
 
-    local maps = pfDatabase:SearchMetaRelation(query, meta)
+    if commandlist[2] == "clean" then
+      state = nil
+    end
+
+    local maps = pfDatabase:TrackMeta("chests", state)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
 
   -- argument: taxi
-  if (arg1 == "taxi") then
-    local query = {
-      name = commandlist[1],
+  if (arg1 == "flights" or arg1 == "taxi") then
+    local state = {
       faction = commandlist[2],
     }
 
-    meta["texture"] = "Interface\\TaxiFrame\\UI-Taxi-Icon-White"
-    local maps = pfDatabase:SearchMetaRelation(query, meta)
+    if commandlist[2] == "clean" then
+      state = nil
+    end
+
+    local maps = pfDatabase:TrackMeta("flight", state)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
 
   -- argument: rares
   if (arg1 == "rares") then
-    local query = {
-      name = "rares",
+    local state = {
       min = commandlist[2],
       max = commandlist[3],
     }
 
-    meta["texture"] = pfQuestConfig.path.."\\img\\fav"
-    local maps = pfDatabase:SearchMetaRelation(query, meta)
+    if commandlist[2] == "clean" then
+      state = nil
+    end
+
+    local maps = pfDatabase:TrackMeta("rares", state)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
 
   -- argument: mines
   if (arg1 == "mines") then
-    local query = {
-      name = "mines",
+    local state = {
       min = commandlist[2],
       max = commandlist[3],
     }
 
     if (arg2 == "auto") then
-      query.max = pfDatabase:GetPlayerSkill(186) or 0
-      query.min = query.max - 100
+      state.max = pfDatabase:GetPlayerSkill(186) or 0
+      state.min = state.max - 100
     end
 
-    local maps = pfDatabase:SearchMetaRelation(query, meta)
+    if commandlist[2] == "clean" then
+      state = nil
+    end
+
+    state = commandlist[2] == "clean" and nil or state
+    local maps = pfDatabase:TrackMeta("mines", state)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
 
   -- argument: herbs
   if (arg1 == "herbs") then
-    local query = {
-      name = "herbs",
+    local state = {
       min = commandlist[2],
       max = commandlist[3],
     }
 
     if (arg2 == "auto") then
-      query.max = pfDatabase:GetPlayerSkill(182) or 0
-      query.min = query.max - 100
+      state.max = pfDatabase:GetPlayerSkill(182) or 0
+      state.min = state.max - 100
     end
 
-    local maps = pfDatabase:SearchMetaRelation(query, meta)
+    if commandlist[2] == "clean" then
+      state = nil
+    end
+
+    state = commandlist[2] == "clean" and nil or state
+    local maps = pfDatabase:TrackMeta("herbs", state)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
   end
