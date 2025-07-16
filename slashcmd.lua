@@ -114,6 +114,16 @@ SlashCmdList["PFDB"] = function(input, editbox)
       faction = commandlist[3],
     }
 
+    if (list == "mines" and commandlist[3] == "auto") then
+      state.max = pfDatabase:GetPlayerSkill(186) or 0
+      state.min = state.max - 100
+    end
+
+    if (list == "herbs" and commandlist[3] == "auto") then
+      state.max = pfDatabase:GetPlayerSkill(182) or 0
+      state.min = state.max - 100
+    end
+
     if commandlist[3] == "clean" then
       state = nil
     end
@@ -123,7 +133,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
     return
   end
 
-  -- argument: chests
+  -- argument: chests (deprecated)
   if (arg1 == "chests") then
     local state = true
 
@@ -136,7 +146,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
     return
   end
 
-  -- argument: taxi
+  -- argument: taxi (deprecated)
   if (arg1 == "flights" or arg1 == "taxi") then
     local state = {
       faction = commandlist[2],
@@ -151,7 +161,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
     return
   end
 
-  -- argument: rares
+  -- argument: rares (deprecated)
   if (arg1 == "rares") then
     local state = {
       min = commandlist[2],
@@ -167,7 +177,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
     return
   end
 
-  -- argument: mines
+  -- argument: mines (deprecated)
   if (arg1 == "mines") then
     local state = {
       min = commandlist[2],
@@ -189,7 +199,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
     return
   end
 
-  -- argument: herbs
+  -- argument: herbs (deprecated)
   if (arg1 == "herbs") then
     local state = {
       min = commandlist[2],
