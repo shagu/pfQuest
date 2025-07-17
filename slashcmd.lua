@@ -15,6 +15,7 @@ SlashCmdList["PFDB"] = function(input, editbox)
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff show |cffcccccc - " .. pfQuest_Loc["Show database interface"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff config |cffcccccc - " .. pfQuest_Loc["Show configuration interface"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff locale |cffcccccc - " .. pfQuest_Loc["Display addon locales"])
+    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff track <list>|cffcccccc - " .. pfQuest_Loc["Show available tracking lists"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff unit <unit> |cffcccccc - " .. pfQuest_Loc["Search unit"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff object <gameobject> |cffcccccc - " .. pfQuest_Loc["Search object"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff item <item> |cffcccccc - " .. pfQuest_Loc["Search loot"])
@@ -100,6 +101,26 @@ SlashCmdList["PFDB"] = function(input, editbox)
   -- argument: track
   if (arg1 == "track" or arg1 == "meta") then
     local list = commandlist[2]
+
+    -- show available lists
+    if not list or list == "" then
+      local available = nil
+      for list in pairs(pfDB["meta"]) do
+        available = (available and available .. ", " or "") .. "\"|cff33ffcc"..list.."|r\""
+      end
+
+      DEFAULT_CHAT_FRAME:AddMessage(string.format(pfQuest_Loc["Available tracking targets are: %s. Or type \"|cff33ffcc/db track clean|r\" to untrack all."], available))
+      return
+    end
+
+    -- clean all tracking results
+    if commandlist[2] == "clean" then
+      for list in pairs(pfDB["meta"]) do
+        pfDatabase:TrackMeta(list, false)
+      end
+
+      return
+    end
 
     -- load arguments into state
     local state = {
