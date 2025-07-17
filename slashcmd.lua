@@ -23,13 +23,6 @@ SlashCmdList["PFDB"] = function(input, editbox)
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff quests |cffcccccc - " .. pfQuest_Loc["Show all quests on map"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff clean |cffcccccc - " .. pfQuest_Loc["Clean Map"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff reset |cffcccccc - " .. pfQuest_Loc["Reset Map"])
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff chests |cffcccccc - " .. pfQuest_Loc["Show all chests on map"])
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff taxi [faction]|cffcccccc - " .. pfQuest_Loc["Show all taxi nodes of [faction]"])
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff rares [min, [max]]|cffcccccc - " .. pfQuest_Loc["Show all rare mobs of Level [min] to [max]"])
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff mines [min, [max]] |cffcccccc - " .. pfQuest_Loc["Show mines with skill range of [min] to [max]"])
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff mines auto |cffcccccc - " .. pfQuest_Loc["Show mines with an appropriate skill level for your character"])
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff herbs [min, [max]] |cffcccccc - " .. pfQuest_Loc["Show herbs with skill range of [min] to [max]"])
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff herbs auto |cffcccccc - " .. pfQuest_Loc["Show herbs with an appropriate skill level for your character"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff scan |cffcccccc - " .. pfQuest_Loc["Scan the server for custom items"])
     DEFAULT_CHAT_FRAME:AddMessage("|cff33ffcc/db|cffffffff query |cffcccccc - " .. pfQuest_Loc["Query the server for completed quests"])
     return
@@ -104,33 +97,47 @@ SlashCmdList["PFDB"] = function(input, editbox)
     return
   end
 
-  -- argument: track (deprecated: meta)
+  -- argument: track
   if (arg1 == "track" or arg1 == "meta") then
     local list = commandlist[2]
 
+    -- load arguments into state
     local state = {
       min = commandlist[3],
       max = commandlist[4],
       faction = commandlist[3],
     }
 
+    -- read skill for auto mines
     if (list == "mines" and commandlist[3] == "auto") then
       state.max = pfDatabase:GetPlayerSkill(186) or 0
       state.min = state.max - 100
     end
 
+    -- read skill for auto herbs
     if (list == "herbs" and commandlist[3] == "auto") then
       state.max = pfDatabase:GetPlayerSkill(182) or 0
       state.min = state.max - 100
     end
 
+    -- clean specific list
     if commandlist[3] == "clean" then
       state = nil
     end
 
+    -- perform tracking
     local maps = pfDatabase:TrackMeta(list, state)
     pfMap:ShowMapID(pfDatabase:GetBestMap(maps))
     return
+  end
+
+  -- warn about deprecated arguments
+  local deprecated = {
+    ["chests"] = true, ["taxi"] = true, ["flights"] = true, ["rares"] = true, ["mines"] = true, ["herbs"] = true
+  }
+
+  if deprecated[arg1] then
+    DEFAULT_CHAT_FRAME:AddMessage(string.format(pfQuest_Loc["|cffffcc00WARNING:|r The command \"|cff33ffcc/db %s|r\" is deprecated and will be removed soon. Please use the \"|cff33ffcc/db track %s|r\" instead to achieve the same functionality."], arg1, arg1))
   end
 
   -- argument: chests (deprecated)
