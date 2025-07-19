@@ -6,6 +6,7 @@
   <Include file="..\config.lua"/>
   <Include file="..\slashcmd.lua"/>
   <Include file="..\database.lua"/>
+  <Include file="..\icons.lua"/>
   <Include file="..\map.lua"/>
   <Include file="..\quest.lua"/>
   <Include file="..\route.lua"/>
