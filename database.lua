@@ -1,7 +1,7 @@
 -- multi api compat
 local compat = pfQuestCompat
 
-pfDatabase = {}
+pfDatabase = { icons = {} }
 
 local loc = GetLocale()
 local dbs = { "items", "quests", "quests-itemreq", "objects", "units", "zones", "professions", "areatrigger", "refloot" }
@@ -765,11 +765,25 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
       elseif not skill[track] and not string.find(value, faction) then
         -- faction is different from the queried one
       else
+        local prev_icon = meta.icon
+        local object = pfDB["objects"]["loc"][math.abs(entry)]
+        local unit = pfDB["units"]["loc"][entry]
+
+        if object and pfDatabase.icons[object] then
+          meta.icon = pfDatabase.icons[object]
+        elseif unit and pfDatabase.icons[unit] then
+          meta.icon = pfDatabase.icons[unit]
+        end
+
         if entry < 0 then
+          meta.icon = pfDatabase.icons[object] or meta.icon
           pfDatabase:SearchObjectID(math.abs(entry), meta, maps)
         else
+          meta.icon = pfDatabase.icons[unit] or meta.icon
           pfDatabase:SearchMobID(entry, meta, maps)
         end
+
+        meta.icon = prev_icon
       end
     end
   end
@@ -1496,6 +1510,26 @@ function pfDatabase:SearchQuests(meta, maps)
         end
       end
     end
+  end
+end
+
+-- AddCustomIcon
+-- Helper function to add custom tracking node icons
+--   id: negative for objects, positive for units
+--   img: path to the image that is appended to root
+--   root: optional, default: "Interface\\AddOns\\pfQuest"
+function pfDatabase:AddCustomIcon(id, img, root)
+  if not id or not img then return end
+
+  root = root and root .. "\\" or pfQuestConfig.path .. "\\"
+
+  local object = pfDB["objects"]["loc"][math.abs(id)]
+  local unit = pfDB["units"]["loc"][math.abs(id)]
+
+  if id < 0 and object then
+    pfDatabase.icons[object] = root .. img
+  elseif id > 0 and unit then
+    pfDatabase.icons[unit] = root .. img
   end
 end
 
