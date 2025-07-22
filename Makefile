@@ -1,4 +1,3 @@
-VERSION = $(shell git describe --abbrev=0 --tags)
 GITREV = $(shell git describe --tags)
 
 all: clean stripdb full enUS koKR frFR deDE zhCN esES ruRU ptBR full-tbc enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc full-wotlk enUS-wotlk koKR-wotlk frFR-wotlk deDE-wotlk zhCN-wotlk esES-wotlk ruRU-wotlk
@@ -16,9 +15,6 @@ full:
 	cp -rf compat db img init *.toc *.lua LICENSE README.md release/$@/pfQuest/
 
 	# generate new toc file
-	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
-	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest/pfQuest-tbc.toc
-	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest/pfQuest-wotlk.toc
 	echo $(GITREV) > release/$@/pfQuest/gitrev.txt
 
 	# remove tbc data
@@ -32,9 +28,6 @@ full-tbc:
 	cp -rf compat db img init *.toc *.lua LICENSE README.md release/$@/pfQuest-tbc/
 
 	# generate new toc file
-	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-tbc/pfQuest.toc
-	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-tbc/pfQuest-tbc.toc
-	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-tbc/pfQuest-wotlk.toc
 	echo $(GITREV) > release/$@/pfQuest-tbc/gitrev.txt
 	( cd release/$@; zip -qr ../pfQuest-$@.zip pfQuest-tbc )
 
@@ -45,9 +38,6 @@ full-wotlk:
 	cp -rf compat db img init *.toc *.lua LICENSE README.md release/$@/pfQuest-wotlk/
 
 	# generate new toc file
-	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-wotlk/pfQuest.toc
-	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-wotlk/pfQuest-tbc.toc
-	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
 	echo $(GITREV) > release/$@/pfQuest-wotlk/gitrev.txt
 	( cd release/$@; zip -qr ../pfQuest-$@.zip pfQuest-wotlk )
 
@@ -65,7 +55,6 @@ enUS koKR frFR deDE zhCN esES ruRU ptBR:
 	cp -f pfQuest.toc release/$@/pfQuest/pfQuest.toc
 
 	# generate new toc file
-	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest/pfQuest.toc
 	sed -i '/init\\/d' release/$@/pfQuest/pfQuest.toc
 	sed -i '/^[[:space:]]*$$/d' release/$@/pfQuest/pfQuest.toc
 	/bin/echo 'init\data.xml' >> release/$@/pfQuest/pfQuest.toc
@@ -90,7 +79,6 @@ enUS-tbc koKR-tbc frFR-tbc deDE-tbc zhCN-tbc esES-tbc ruRU-tbc:
 	cp -f pfQuest-tbc.toc release/$@/pfQuest-tbc/pfQuest-tbc.toc
 
 	# generate new toc file
-	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-tbc/pfQuest-tbc.toc
 	sed -i '/init\\/d' release/$@/pfQuest-tbc/pfQuest-tbc.toc
 	sed -i '/^[[:space:]]*$$/d' release/$@/pfQuest-tbc/pfQuest-tbc.toc
 	/bin/echo 'init\data.xml' >> release/$@/pfQuest-tbc/pfQuest-tbc.toc
@@ -118,7 +106,6 @@ enUS-wotlk koKR-wotlk frFR-wotlk deDE-wotlk zhCN-wotlk esES-wotlk ruRU-wotlk:
 	cp -f pfQuest-wotlk.toc release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
 
 	# generate new toc file
-	sed -i "s/GIT/$(VERSION)/g" release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
 	sed -i '/init\\/d' release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
 	sed -i '/^[[:space:]]*$$/d' release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
 	/bin/echo 'init\data.xml' >> release/$@/pfQuest-wotlk/pfQuest-wotlk.toc
