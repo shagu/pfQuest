@@ -23,10 +23,10 @@ do -- minimap icon
   end)
 
   pfQuestIcon:SetScript("OnClick", function()
-    if arg1 == "RightButton" then
-      if pfBrowser:IsShown() then pfBrowser:Hide() else pfBrowser:Show() end
+    if pfQuestMenu:IsShown() then
+      pfQuestMenu:Hide()
     else
-      if pfQuestMenu:IsShown() then pfQuestMenu:Hide() else pfQuestMenu:Show() end
+      pfQuestMenu:Show()
     end
   end)
 
@@ -34,7 +34,6 @@ do -- minimap icon
     GameTooltip:SetOwner(this, ANCHOR_BOTTOMLEFT)
     GameTooltip:SetText("|cff33ffccpf|rQuest", 1, 1, 1, 1)
     GameTooltip:AddDoubleLine(pfQuest_Loc["Left-Click"], pfQuest_Loc["Shortcut Menu"], 1, 1, 1, 1, 1, 1)
-    GameTooltip:AddDoubleLine(pfQuest_Loc["Right-Click"], pfQuest_Loc["Open Database"], 1, 1, 1, 1, 1, 1)
     GameTooltip:AddDoubleLine(pfQuest_Loc["Shift-Click"], pfQuest_Loc["Move Button"], 1, 1, 1, 1, 1, 1)
     GameTooltip:Show()
   end)
