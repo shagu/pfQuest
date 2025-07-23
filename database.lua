@@ -769,17 +769,18 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
         local object = pfDB["objects"]["loc"][math.abs(entry)]
         local unit = pfDB["units"]["loc"][entry]
 
-        if object and pfDatabase.icons[object] then
+        -- handle custom tracking icons
+        if pfQuest_config.trackingicons == "0" then
+          meta.icon = nil
+        elseif entry < 0 and object and pfDatabase.icons[object] then
           meta.icon = pfDatabase.icons[object]
-        elseif unit and pfDatabase.icons[unit] then
+        elseif entry > 0 and unit and pfDatabase.icons[unit] then
           meta.icon = pfDatabase.icons[unit]
         end
 
         if entry < 0 then
-          meta.icon = pfDatabase.icons[object] or meta.icon
           pfDatabase:SearchObjectID(math.abs(entry), meta, maps)
         else
-          meta.icon = pfDatabase.icons[unit] or meta.icon
           pfDatabase:SearchMobID(entry, meta, maps)
         end
 

@@ -114,6 +114,8 @@ pfQuest_defconfig = {
     default = nil, type = "header" },
   { text = L["Enable Minimap Nodes"],
     default = "1", type = "checkbox", config = "minimapnodes" },
+  { text = L["Use Icons For Tracking Nodes"],
+    default = "1", type = "checkbox", config = "trackingicons" },
   { text = L["Use Monochrome Cluster Icons"],
     default = "0", type = "checkbox", config = "clustermono" },
   { text = L["Use Cut-Out Minimap Node Icons"],
