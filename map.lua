@@ -792,36 +792,30 @@ function pfMap:UpdateNode(frame, node, color, obj, distance)
   end
 
   if ( frame.updateColor or frame.updateTexture or not frame.tex:GetTexture() ) and not frame.texture then
-    local r, g, b, node_fade = .5, .5, .5, 1
+    local r, g, b = str2rgb(frame.color)
 
     if (frame.title and pfQuest.icons[frame.title]) or frame.icon then
       local texture = (frame.title and pfQuest.icons[frame.title]) or frame.icon
       frame.pic:SetTexture(texture)
       frame.pic:Show()
 
-      if distance then
-        distance = distance + 25
-        distance = math.min(distance, 100)
-        frame.pic:SetAlpha(distance/125)
-        node_fade = 1 - distance/75
-      else
-        frame.pic:SetAlpha(1)
-        node_fade = 0
-      end
+      local alpha = ((distance or 56) - 48) / 8
+      alpha = math.max(alpha, 0)
+      alpha = math.min(alpha, 1)
+      frame.pic:SetAlpha(alpha)
     else
-      r, g, b = str2rgb(frame.color)
       frame.pic:Hide()
     end
 
     if obj == "minimap" and pfQuest_config["cutoutminimap"] == "1" then
       frame.tex:SetTexture(pfQuestConfig.path.."\\img\\nodecut")
-      frame.tex:SetVertexColor(r,g,b,node_fade)
+      frame.tex:SetVertexColor(r,g,b,1)
     elseif obj ~= "minimap" and pfQuest_config["cutoutworldmap"] == "1" then
       frame.tex:SetTexture(pfQuestConfig.path.."\\img\\nodecut")
-      frame.tex:SetVertexColor(r,g,b,node_fade)
+      frame.tex:SetVertexColor(r,g,b,1)
     else
       frame.tex:SetTexture(pfQuestConfig.path.."\\img\\node")
-      frame.tex:SetVertexColor(r,g,b,node_fade)
+      frame.tex:SetVertexColor(r,g,b,1)
     end
   end
 
