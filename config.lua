@@ -420,7 +420,7 @@ function pfQuestConfig:CreateConfigEntries(config)
     if data.type then
       -- empty line for headers, next column for > 20 entries
       row = row + ( data.type == "header" and row > 1 and 2 or 1 )
-      if row > 20 and data.type == "header" then
+      if row > 22 and data.type == "header" then
         column, row = column + 1, 1
       end
 
