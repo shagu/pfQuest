@@ -799,10 +799,18 @@ function pfMap:UpdateNode(frame, node, color, obj, distance)
       frame.pic:SetTexture(texture)
       frame.pic:Show()
 
-      local alpha = ((distance or 56) - 48) / 8
-      alpha = math.max(alpha, 0)
-      alpha = math.min(alpha, 1)
-      frame.pic:SetAlpha(alpha)
+      if obj == "minimap" then
+        -- Start fading the icon at 72% and have the icon fully
+        -- translucent at 80% of half the minimap size.
+        -- Fade animation range between 72% and 80%.
+        local halfsize = pfMap.drawlayer:GetWidth()/2
+        local fade_in = halfsize/100*72
+        local fade_out = halfsize/100*80
+        local alpha = ((distance or fade_out) - fade_in) / (fade_out - fade_in)
+        alpha = math.max(alpha, 0)
+        alpha = math.min(alpha, 1)
+        frame.pic:SetAlpha(alpha)
+      end
     else
       frame.pic:Hide()
     end
