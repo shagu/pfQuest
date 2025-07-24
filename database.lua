@@ -778,6 +778,15 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
           meta.icon = pfDatabase.icons[unit]
         end
 
+        -- set custom fade range for skill-trackables
+        if meta.icon and skill[track] then
+          meta.fade_range = 64
+        elseif meta.icon then
+          meta.fade_range = 8
+        else
+          meta.fade_range = nil
+        end
+
         if entry < 0 then
           pfDatabase:SearchObjectID(math.abs(entry), meta, maps)
         else
