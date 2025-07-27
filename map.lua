@@ -689,10 +689,10 @@ function pfMap:BuildNode(name, parent)
 
   if parent == WorldMapButton then
     f.defalpha = tonumber(pfQuest_config["worldmaptransp"]) or 1
-    f.defsize = 16
+    f.defsize = 14
   else
     f.defalpha = tonumber(pfQuest_config["minimaptransp"]) or 1
-    f.defsize = 16
+    f.defsize = 14
     f.minimap = true
   end
 
@@ -838,7 +838,7 @@ function pfMap:UpdateNode(frame, node, color, obj, distance)
   local target = frame.texture and pfQuest.route and pfQuest.route.IsTarget(frame) or nil
 
   -- set default sizes for different node types
-  frame.defsize = (frame.cluster or frame.layer == 4) and 22 or 16
+  frame.defsize = (frame.cluster or frame.layer == 4) and 18 or 14
 
   -- make the current route target visible
   if target then frame.hl:Show() else frame.hl:Hide() end
