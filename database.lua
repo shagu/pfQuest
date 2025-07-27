@@ -780,9 +780,9 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
 
         -- set custom fade range for skill-trackables
         if meta.icon and skill[track] then
-          meta.fade_range = 64
+          meta.fade_range = 75
         elseif meta.icon then
-          meta.fade_range = 8
+          meta.fade_range = 10
         else
           meta.fade_range = nil
         end
