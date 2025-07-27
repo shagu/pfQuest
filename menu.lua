@@ -42,6 +42,15 @@ do -- minimap icon
     GameTooltip:Hide()
   end)
 
+  pfQuestIcon:RegisterEvent("PLAYER_ENTERING_WORLD")
+  pfQuestIcon:SetScript("OnEvent", function()
+    if pfQuest_config["minimapbutton"] == "0" then
+      this:Hide()
+    else
+      this:Show()
+    end
+  end)
+
   pfQuestIcon.icon = pfQuestIcon:CreateTexture(nil, 'BACKGROUND')
   pfQuestIcon.icon:SetWidth(20)
   pfQuestIcon.icon:SetHeight(20)
