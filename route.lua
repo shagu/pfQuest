@@ -331,6 +331,44 @@ pfQuest.route.arrow:SetScript("OnUpdate", function()
   -- abort if the frame is not initialized yet
   if not this.parent then return end
 
+  -- if dead/ghost: point arrow at corpse instead of quest target
+  if UnitIsDead("player") or UnitIsGhost("player") then
+    local cx, cy = GetCorpseMapPosition()
+    -- corpse coords are 0–1; ignore if invalid (0,0)
+    if cx and cy and (cx > 0 or cy > 0) then
+      -- convert to same scale as world coords
+      local xplayer, yplayer = GetPlayerMapPosition("player")
+      local dx = (cx - xplayer) * 100 * 1.5
+      local dy = (cy - yplayer) * 100
+      local dir = atan2(dx, -dy)
+      dir = dir > 0 and (2*math.pi) - dir or -dir
+      if dir < 0 then dir = dir + 360 end
+      local angle = math.rad(dir) - pfQuestCompat.GetPlayerFacing()
+
+      -- pick an “X marks the spot” icon (or any corpse icon you like)
+      this.model:SetTexCoord(0,1,0,1)
+      this.texture:SetTexture("Interface\\Icons\\INV_Misc_Skull_01")
+      this.texture:SetVertexColor(1,0.2,0.2,1)
+
+      -- rotate the arrow model to point at corpse
+      local cell = modulo(floor(angle / (2*math.pi) * 108 + .5), 108)
+      local col = modulo(cell, 9)
+      local row = floor(cell / 9)
+      this.model:SetTexCoord(
+        (col    * 56)/512, ((col+1)*56)/512,
+        (row    * 42)/512, ((row+1)*42)/512
+      )
+
+      -- update text
+      this.title:SetText("|cffff0000Corpse|r")
+      this.description:SetText("")
+      this.distance:SetText("")
+
+      this:Show()
+      return
+    end
+  end
+
   xplayer, yplayer = GetPlayerMapPosition("player")
   wrongmap = xplayer == 0 and yplayer == 0 and true or nil
   target = this.parent.coords and this.parent.coords[1] and this.parent.coords[1][4] and this.parent.coords[1] or nil
