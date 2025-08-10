@@ -137,4 +137,52 @@ The "Reset" button will restore the default visibility of icons to match the set
 # Chat/Macro CLI
 <img src="https://raw.githubusercontent.com/shagu/ShaguAddons/master/_img/pfQuest/chat-cli.png">
 
-The addon features a CLI interface which allows you to easilly create macros to show your favourite herb or mining-veins. Let's say you want to display all **Iron Deposit** deposits, then type in chat or create a macro with the text: `/db object Iron Deposit`. You can also display all mines on the map by typing: `/db mines`. This can be extended by giving the minimum and maximum required skill as paramter, like: `/db mines 150 225` to display all ores between skill 150 and 225. The `mines` parameter can also be replaced by `herbs`, `rares`, `chests` or `taxi` in order to show those instead. If `/db` doesn't work for you, there are also some other aliases available like `/shagu`, `pfquest` and `/pfdb`.
+The addon features a CLI interface which allows you to easilly create macros to show your favourite herb or mining-veins. Let's say you want to display all **Iron Deposit** deposits, then type in chat or create a macro with the text: `/db object Iron Deposit`. You can also display all mines on the map by typing: `/db track mines`. This can be extended by giving the minimum and maximum required skill as paramter, like: `/db track mines 150 225` to display all ores between skill 150 and 225. The `mines` parameter can also be replaced by `herbs`, `rares`, `chests`, `taxi` and many more in order to show those instead. If `/db` doesn't work for you, there are also some other aliases available like `/shagu`, `pfquest` and `/pfdb`.
+
+### Basic Commands
+```
+/db lock                Lock map tracker
+/db tracker             Show map tracker
+/db journal             Show quest journal
+/db arrow               Show quest arrow
+/db show                Show database interface
+/db config              Show configuration interface
+/db locale              Display addon locales
+/db scan                Scan the server for custom items
+```
+
+### Questing
+```
+/db reset               Reload all quests on map
+/db query               Query the server for completed quests
+```
+
+### Database
+```
+/db unit <unit>         Search for specific units by name (e.g Thrall)
+/db object <object>     Search for gameobjects by name (e.g Iron Deposit)
+/db item <item>         Search for units and objects dropping an item (e.g Runecloth)
+/db vendor <item>       Search for vendors that sell a specific item (e.g Jagged Arrow)
+/db quest <questname>   Search for a specific quest by name
+/db clean               Clean all database search results from map
+```
+
+### Tracking
+```
+/db track               Shows an overview of all trackable lists
+/db track clean         Cleans all tracked lists at once
+/db track <list>        Shows all objects of <list> on the map
+/db track <list> clean  Removes all objects of <list> from the map
+```
+
+**Examples:**
+```
+/db track mines         Shows all mines on the map
+/db track mines auto    Shows all mines that are in the characters current skill range
+/db track mines 50 150  Shows all mines that require skill 50 to 150
+/db track mines clean   Cleans all mines from the map
+```
+
+*Currently available tracking lists are: `repair`, `mines`, `vendor`, `herbs`, `fish`,
+`meetingstone`, `rares`, `auctioneer`, `battlemaster`, `banker`, `chests`,
+`flight`, `stablemaster`, `innkeeper`, `spirithealer`, `mailbox`*
