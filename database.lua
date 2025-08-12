@@ -753,7 +753,7 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
 
   if pfDB["meta"] and pfDB["meta"][track] then
     -- check which faction should be searched
-    local faction = query.faction and string.lower(query.faction) or string.lower(UnitFactionGroup("player"))
+    local faction = query.faction and string.lower(query.faction) or (UnitFactionGroup("player") and string.lower(UnitFactionGroup("player")))
     faction = faction == "horde" and "H" or faction == "alliance" and "A" or ""
 
     -- iterate over all tracking entries
