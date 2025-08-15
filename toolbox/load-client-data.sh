@@ -209,8 +209,6 @@ EOF
       dbcslot=0 # there's no index for ruRU in 1.12, using enUS index
     elif [ "$loc" = "ptBR" ] && [ "$v" == "vanilla" ]; then
       dbcslot=0 # there's no index for ptBR in 1.12, using enUS index
-    elif [ "$loc" = "deDE" ] && [ "$v" == "turtle" ]; then
-      dbcslot=0 # no turtle client for that language, falling back to enUS
     elif [ "$loc" = "esMX" ] && [ "$v" == "turtle" ]; then
       dbcslot=0 # no turtle client for that language, falling back to enUS
     elif [ "$loc" = "frFR" ] && [ "$v" == "turtle" ]; then
@@ -275,8 +273,6 @@ EOF
       dbcslot=0 # there's no index for ruRU in 1.12, using enUS index
     elif [ "$loc" = "ptBR" ] && [ "$v" == "vanilla" ]; then
       dbcslot=0 # there's no index for ptBR in 1.12, using enUS index
-    elif [ "$loc" = "deDE" ] && [ "$v" == "turtle" ]; then
-      dbcslot=0 # no turtle client for that language, falling back to enUS
     elif [ "$loc" = "esMX" ] && [ "$v" == "turtle" ]; then
       dbcslot=0 # no turtle client for that language, falling back to enUS
     elif [ "$loc" = "frFR" ] && [ "$v" == "turtle" ]; then
