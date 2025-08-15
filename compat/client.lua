@@ -71,6 +71,11 @@ for k, v in pairs({Minimap:GetChildren()}) do
   end
 end
 
+-- always keep player arrow on top
+if minimaparrow then
+  minimaparrow:SetFrameLevel(8)
+end
+
 -- vanilla+tbc: return the player facing based on the minimap arrow
 pfQuestCompat.GetPlayerFacing = GetPlayerFacing or function()
   if pfQuestCompat.rotateMinimap then
