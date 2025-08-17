@@ -1109,7 +1109,19 @@ for id, settings in pairs(config.expansions) do
       local chain = tonumber(quest_template.NextQuestInChain)
       local srcitem = tonumber(quest_template.SrcItemId)
       local repeatable = tonumber(quest_template.SpecialFlags) & 1
+      local exclusive = tonumber(quest_template.ExclusiveGroup)
+      local close = nil
       local event = nil
+
+      -- seach for quests closed by this one
+      if exclusive and exclusive > 0 then
+        close = close or {}
+        local exclusive_template = {}
+        local query = mysql:execute('SELECT entry, ExclusiveGroup FROM quest_template WHERE ExclusiveGroup = ' .. exclusive .. ' GROUP BY quest_template.entry')
+        while query:fetch(exclusive_template, "a") do
+          table.insert(close, tonumber(exclusive_template.entry))
+        end
+      end
 
       -- try to detect event by quest event entry
       local game_event_quest = {}
@@ -1160,6 +1172,7 @@ for id, settings in pairs(config.expansions) do
       pfDB["quests"][data][entry]["race"] = race ~= 0 and race
       pfDB["quests"][data][entry]["skill"] = skill ~= 0 and skill
       pfDB["quests"][data][entry]["event"] = event ~= 0 and event
+      pfDB["quests"][data][entry]["close"] = close and close
 
       -- quest objectives
       local units, objects, items, itemreq, areatrigger, zones, pre = {}, {}, {}, {}, {}, {}, {}
