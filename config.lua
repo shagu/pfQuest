@@ -147,6 +147,10 @@ pfQuest_defconfig = {
     default = "0", type = "checkbox", config = "routeminimap" },
   { text = L["Show Arrow Along Routes"],
     default = "1", type = "checkbox", config = "arrow" },
+  { text = L["Route By Current Zone Only"],
+    default = "0", type = "checkbox", config = "routebyzone" },
+  { text = L["Route By Quest Level"],
+    default = "0", type = "checkbox", config = "routebylevel" },
 
   { text = L["User Data"],
     default = nil, type = "header" },

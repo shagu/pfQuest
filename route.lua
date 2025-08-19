@@ -172,7 +172,26 @@ pfQuest.route.IsTarget = function(node)
 end
 
 local lastpos, completed = 0, 0
-local function sortfunc(a,b) return a[4] < b[4] end
+local function sortfunc(a,b) 
+  if pfQuest_config["routebylevel"] == "1" then
+    local aNode, bNode = a[3], b[3]
+    local aLevel = tonumber(aNode.qlvl) or 999
+    local bLevel = tonumber(bNode.qlvl) or 999
+    
+    -- Priority 1: Quest turn-ins always first (layer 4)
+    if aNode.layer == 4 and bNode.layer ~= 4 then return true end
+    if bNode.layer == 4 and aNode.layer ~= 4 then return false end
+    
+    -- Priority 2: Quest level (lower first)
+    if aLevel ~= bLevel then return aLevel < bLevel end
+    
+    -- Priority 3: Distance tiebreaker
+    return a[4] < b[4]
+  else
+    -- Default distance-based sorting
+    return a[4] < b[4] 
+  end
+end
 pfQuest.route:SetScript("OnUpdate", function()
   local xplayer, yplayer = GetPlayerMapPosition("player")
   local wrongmap = xplayer == 0 and yplayer == 0 and true or nil
@@ -197,7 +216,29 @@ pfQuest.route:SetScript("OnUpdate", function()
 
   -- sort all coords by distance only once per second
   if not this.recalculate or this.recalculate < GetTime() then
-    table.sort(this.coords, sortfunc)
+    -- filter by current zone if enabled
+    local filteredCoords = this.coords
+    if pfQuest_config["routebyzone"] == "1" then
+      local currentZone = GetRealZoneText()
+      local zoneFilteredCoords = {}
+      
+      for id, data in pairs(this.coords) do
+        if data[3] and data[3].zone then
+          local nodezone = pfMap:GetMapNameByID(data[3].zone)
+          if nodezone == currentZone then
+            table.insert(zoneFilteredCoords, data)
+          end
+        end
+      end
+      
+      -- fallback to all coords if current zone is empty
+      if table.getn(zoneFilteredCoords) > 0 then
+        filteredCoords = zoneFilteredCoords
+      end
+    end
+    
+    table.sort(filteredCoords, sortfunc)
+    this.coords = filteredCoords
 
     -- order list on custom targets
     if targetTitle and this.coords[1] and not pfQuest.route.IsTarget(this.coords[1][3]) then
