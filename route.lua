@@ -237,6 +237,52 @@ pfQuest.route:SetScript("OnUpdate", function()
       end
     end
     
+    -- pfQuest - Start of changes for manual quest handling
+    if pfQuest_config["routebylevel"] == "1" and next(pfQuest.questlog) ~= nil then
+      local lowestLevel = 999
+      local lowestQuestId = nil
+
+      -- Find the lowest level quest in the log
+      for questid, qdata in pairs(pfQuest.questlog) do
+        if pfDB and pfDB.quests and pfDB.quests.data[questid] then
+          local qlvl = tonumber(pfDB.quests.data[questid].lvl) or 999
+          if qlvl < lowestLevel then
+            lowestLevel = qlvl
+            lowestQuestId = questid
+          end
+        end
+      end
+
+      if lowestQuestId then
+        local foundNode = false
+        for _, coord in ipairs(this.coords) do
+          if coord[3] and coord[3].questid == lowestQuestId then
+            foundNode = true
+            break
+          end
+        end
+
+        if not foundNode then
+          -- Lowest level quest has no coordinates, engage manual mode
+          local q_log_info = pfQuest.questlog[lowestQuestId]
+          this.manual_quest_info = {
+            title = q_log_info and q_log_info.title or "Unknown Quest",
+            qlvl = lowestLevel,
+          }
+          this.coords = {} -- Clear all other routes
+          filteredCoords = {}
+        else
+          -- Lowest level quest has coordinates, proceed normally
+          this.manual_quest_info = nil
+        end
+      else
+        this.manual_quest_info = nil
+      end
+    else
+      this.manual_quest_info = nil
+    end
+    -- pfQuest - End of changes
+
     table.sort(filteredCoords, sortfunc)
     this.coords = filteredCoords
 
@@ -371,6 +417,26 @@ local r, g, b
 pfQuest.route.arrow:SetScript("OnUpdate", function()
   -- abort if the frame is not initialized yet
   if not this.parent then return end
+
+  -- pfQuest - Start of changes for manual quest handling
+  if this.parent.manual_quest_info then
+    this:Show()
+    this.model:Hide()
+    this.texture:Hide()
+    this.title:SetText(pfQuest_Loc["Manual Quest"])
+    local desc = string.format("%s [%s]", this.parent.manual_quest_info.title, this.parent.manual_quest_info.qlvl)
+    this.description:SetText(desc)
+    this.distance:SetText(pfQuest_Loc["No location data available"])
+
+    -- Make sure the texts are visible
+    this.title:SetAlpha(1)
+    this.description:SetAlpha(1)
+    this.distance:SetAlpha(1)
+    return
+  else
+    this.model:Show()
+  end
+  -- pfQuest - End of changes
 
   xplayer, yplayer = GetPlayerMapPosition("player")
   wrongmap = xplayer == 0 and yplayer == 0 and true or nil
