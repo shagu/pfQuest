@@ -769,6 +769,9 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
         local object = pfDB["objects"]["loc"][math.abs(entry)]
         local unit = pfDB["units"]["loc"][entry]
 
+        -- set node as tracking result
+        meta.tracking = true
+
         -- handle custom tracking icons
         if pfQuest_config.trackingicons == "0" then
           meta.icon = nil
@@ -780,7 +783,7 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
 
         -- set custom fade range for skill-trackables
         if meta.icon and skill[track] then
-          meta.fade_range = 75
+          meta.fade_range = 85
         elseif meta.icon then
           meta.fade_range = 10
         else
@@ -793,7 +796,9 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
           pfDatabase:SearchMobID(entry, meta, maps)
         end
 
+        -- reset meta table
         meta.icon = prev_icon
+        meta.tracking = false
       end
     end
   end
