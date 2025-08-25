@@ -1156,7 +1156,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           if meta["qlogid"] then
             local _, _, _, _, _, complete = compat.GetQuestLogTitle(meta["qlogid"])
             complete = complete or GetNumQuestLeaderBoards(meta["qlogid"]) == 0 and true or nil
-            if complete then
+            if complete == true or complete == 1 then
               meta["texture"] = pfQuestConfig.path.."\\img\\complete_c"
             else
               meta["texture"] = pfQuestConfig.path.."\\img\\complete"
